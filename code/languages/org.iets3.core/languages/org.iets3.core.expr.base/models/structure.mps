@@ -155,14 +155,14 @@
     <property role="3GE5qa" value="binary.p0900" />
     <property role="TrG5h" value="LessExpression" />
     <property role="34LRSv" value="&lt;" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MP0j">
     <property role="1pbfSe" value="842364080" />
     <property role="3GE5qa" value="binary.p0900" />
     <property role="TrG5h" value="LessEqualsExpression" />
     <property role="34LRSv" value="&lt;=" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MXJB">
     <property role="1pbfSe" value="842328284" />
