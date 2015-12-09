@@ -2,8 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/sandboxes/org.iets3.core.expr.sandbox/org.iets3.core.expr.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core.base" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/tests/testlang.core.expr/testlang.core.expr.mpl" folder="expr" />
     </projectModules>
   </component>
 </project>

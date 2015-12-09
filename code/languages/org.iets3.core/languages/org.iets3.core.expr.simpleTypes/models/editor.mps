@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)">
+<model ref="r:6d94c93d-1ff8-4e1f-8fca-b92e9d42f070(org.iets3.core.expr.simpleTypes.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -33,12 +33,12 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="6sdnDbSlMTc">
-    <ref role="1XX52x" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
-    <node concept="PMmxH" id="6sdnDbSlMTe" role="2wV5jI">
+  <node concept="24kQdi" id="6sdnDbSlcHM">
+    <ref role="1XX52x" to="5qo5:6sdnDbSlcHm" resolve="BooleanLiteral" />
+    <node concept="PMmxH" id="6sdnDbSlcHO" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="3Xmtl4" id="4rZeNQ6MfS9" role="3F10Kt">
-        <node concept="1wgc9g" id="4rZeNQ6MfSf" role="3XvnJa">
+      <node concept="3Xmtl4" id="4rZeNQ6MfT7" role="3F10Kt">
+        <node concept="1wgc9g" id="4rZeNQ6MfTc" role="3XvnJa">
           <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="keyword" />
         </node>
       </node>
