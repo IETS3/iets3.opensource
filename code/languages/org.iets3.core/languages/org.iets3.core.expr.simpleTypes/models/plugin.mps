@@ -9,7 +9,7 @@
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -207,7 +207,6 @@
       </node>
     </node>
     <node concept="qq9P1" id="uGVYUijbnx" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
       <node concept="3dA_Gj" id="uGVYUijbCO" role="3vQZUl">
         <node concept="9aQIb" id="uGVYUijbCQ" role="3vcmbn">
@@ -531,12 +530,38 @@
       <node concept="qpFDx" id="uGVYUik088" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
         <node concept="rxStX" id="uGVYUik089" role="rajlz">
-          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
       <node concept="qpFDx" id="uGVYUik08a" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
         <node concept="rxStX" id="uGVYUik08b" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="uGVYUilOht" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
+      <node concept="3vetai" id="uGVYUilOhu" role="3vQZUl">
+        <node concept="3cpWs3" id="uGVYUilOhv" role="3vdyny">
+          <node concept="rqRoa" id="uGVYUilOhw" role="3uHU7B">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
+          </node>
+          <node concept="rqRoa" id="uGVYUilOhx" role="3uHU7w">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilOhy" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
+        <node concept="rxStX" id="uGVYUilOhz" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilOh$" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
+        <node concept="rxStX" id="uGVYUilOh_" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>
@@ -557,12 +582,38 @@
       <node concept="qpFDx" id="uGVYUik0PO" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
         <node concept="rxStX" id="uGVYUik0PP" role="rajlz">
-          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
       <node concept="qpFDx" id="uGVYUik0PQ" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
         <node concept="rxStX" id="uGVYUik0PR" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="uGVYUilPwR" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
+      <node concept="3vetai" id="uGVYUilPwS" role="3vQZUl">
+        <node concept="3cpWsd" id="uGVYUilPwT" role="3vdyny">
+          <node concept="rqRoa" id="uGVYUilPwU" role="3uHU7B">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
+          </node>
+          <node concept="rqRoa" id="uGVYUilPwV" role="3uHU7w">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilPwW" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
+        <node concept="rxStX" id="uGVYUilPwX" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilPwY" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
+        <node concept="rxStX" id="uGVYUilPwZ" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>
@@ -583,12 +634,38 @@
       <node concept="qpFDx" id="uGVYUik1mU" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
         <node concept="rxStX" id="uGVYUik1mV" role="rajlz">
-          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
       <node concept="qpFDx" id="uGVYUik1mW" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
         <node concept="rxStX" id="uGVYUik1mX" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="uGVYUilQNw" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
+      <node concept="3vetai" id="uGVYUilQNx" role="3vQZUl">
+        <node concept="17qRlL" id="uGVYUilQNy" role="3vdyny">
+          <node concept="rqRoa" id="uGVYUilQNz" role="3uHU7B">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
+          </node>
+          <node concept="rqRoa" id="uGVYUilQN$" role="3uHU7w">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilQN_" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
+        <node concept="rxStX" id="uGVYUilQNA" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilQNB" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
+        <node concept="rxStX" id="uGVYUilQNC" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>
@@ -596,25 +673,51 @@
     <node concept="qq9P1" id="uGVYUik1Tx" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
-      <node concept="3vetai" id="uGVYUik1Ty" role="3vQZUl">
-        <node concept="FJ1c_" id="uGVYUik3oN" role="3vdyny">
-          <node concept="rqRoa" id="uGVYUik1T$" role="3uHU7B">
-            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
-          </node>
-          <node concept="rqRoa" id="uGVYUik1T_" role="3uHU7w">
-            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
-          </node>
-        </node>
-      </node>
       <node concept="qpFDx" id="uGVYUik1TA" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
         <node concept="rxStX" id="uGVYUik1TB" role="rajlz">
-          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
       <node concept="qpFDx" id="uGVYUik1TC" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
         <node concept="rxStX" id="uGVYUik1TD" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+      <node concept="3vetai" id="6QjJGtXld8h" role="3vQZUl">
+        <node concept="FJ1c_" id="uGVYUik3oN" role="3vdyny">
+          <node concept="rqRoa" id="6QjJGtXlb8S" role="3uHU7B">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
+          </node>
+          <node concept="rqRoa" id="6QjJGtXlbc8" role="3uHU7w">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="uGVYUilS8D" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
+      <node concept="3vetai" id="uGVYUilS8E" role="3vQZUl">
+        <node concept="FJ1c_" id="uGVYUilS8F" role="3vdyny">
+          <node concept="rqRoa" id="uGVYUilS8G" role="3uHU7B">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" />
+          </node>
+          <node concept="rqRoa" id="uGVYUilS8H" role="3uHU7w">
+            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilS8I" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" />
+        <node concept="rxStX" id="uGVYUilS8J" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="uGVYUilS8K" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" />
+        <node concept="rxStX" id="uGVYUilS8L" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>
