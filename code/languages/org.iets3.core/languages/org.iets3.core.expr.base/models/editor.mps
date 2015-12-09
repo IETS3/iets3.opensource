@@ -30,6 +30,9 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
+      </concept>
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
@@ -240,11 +243,17 @@
           <node concept="11LMrY" id="7qeMuaSK1ID" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="3mYdg7" id="4rZeNQ6Qcmg" role="3F10Kt">
+            <property role="1413C4" value="parens" />
+          </node>
         </node>
         <node concept="3F0ifn" id="3xDNhgd3xV3" role="drBAZ">
           <property role="3F0ifm" value=")" />
           <node concept="11L4FC" id="7qeMuaSK1Jv" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3mYdg7" id="4rZeNQ6Qcmk" role="3F10Kt">
+            <property role="1413C4" value="parens" />
           </node>
         </node>
       </node>
