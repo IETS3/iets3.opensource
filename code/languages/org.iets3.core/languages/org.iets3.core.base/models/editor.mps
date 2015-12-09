@@ -54,6 +54,26 @@
         <property role="34GvKv" value="Reserved Words in IETS3 models" />
       </node>
     </node>
+    <node concept="14StLt" id="4rZeNQ6OesJ" role="V601i">
+      <property role="TrG5h" value="number" />
+      <node concept="VechU" id="4rZeNQ6OesL" role="3F10Kt">
+        <property role="Vb096" value="magenta" />
+      </node>
+      <node concept="1Ex9Rl" id="4rZeNQ6OesM" role="lGtFl">
+        <property role="34HCRG" value="Number" />
+        <property role="34GvKv" value="Numbers (integer and real) in IETS3 models" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4rZeNQ6OYRX" role="V601i">
+      <property role="TrG5h" value="string" />
+      <node concept="VechU" id="4rZeNQ6OYRY" role="3F10Kt">
+        <property role="Vb096" value="DARK_GREEN" />
+      </node>
+      <node concept="1Ex9Rl" id="4rZeNQ6OYRZ" role="lGtFl">
+        <property role="34HCRG" value="String" />
+        <property role="34GvKv" value="Strings in IETS3 models" />
+      </node>
+    </node>
   </node>
 </model>
 

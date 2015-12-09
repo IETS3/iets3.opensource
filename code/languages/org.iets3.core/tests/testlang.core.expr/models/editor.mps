@@ -13,6 +13,10 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -37,6 +41,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -79,6 +84,22 @@
         <node concept="11L4FC" id="4rZeNQ6M4XX" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4rZeNQ6O9Fa">
+    <ref role="1XX52x" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+    <node concept="3EZMnI" id="4rZeNQ6O9Ff" role="2wV5jI">
+      <node concept="2iRkQZ" id="4rZeNQ6O9Fg" role="2iSdaV" />
+      <node concept="3F0ifn" id="4rZeNQ6O9Fc" role="3EZMnx">
+        <property role="3F0ifm" value="expression tests" />
+      </node>
+      <node concept="3F0ifn" id="4rZeNQ6O9Fu" role="3EZMnx">
+        <property role="3F0ifm" value="--------------------------------" />
+      </node>
+      <node concept="3F2HdR" id="4rZeNQ6O9Fo" role="3EZMnx">
+        <ref role="1NtTu8" to="2qy0:6sdnDbSla1g" />
+        <node concept="2iRkQZ" id="4rZeNQ6O9Fq" role="2czzBx" />
       </node>
     </node>
   </node>

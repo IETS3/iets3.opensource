@@ -236,5 +236,17 @@
     <property role="34LRSv" value="-" />
     <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="4rZeNQ6OJ4v">
+    <property role="1pbfSe" value="841864100" />
+    <property role="TrG5h" value="ParensExpressions" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4rZeNQ6OJ5M" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
