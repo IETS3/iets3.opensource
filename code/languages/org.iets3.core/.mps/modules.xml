@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/sandboxes/org.iets3.core.expr.sandbox/org.iets3.core.expr.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
