@@ -21,7 +21,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="4rZeNQ6MGmY">
-    <property role="3GE5qa" value="p1000" />
+    <property role="3GE5qa" value="binary.p1000" />
     <ref role="1M2myG" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
   </node>
 </model>

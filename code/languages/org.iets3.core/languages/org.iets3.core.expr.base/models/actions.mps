@@ -40,6 +40,7 @@
         <reference id="1112058088712" name="applicableConcept" index="3FOWKa" />
       </concept>
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
+        <property id="1215605257730" name="side" index="7I3sp" />
         <property id="1140829165817" name="transformTag" index="2uHTBK" />
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
       </concept>
@@ -57,6 +58,7 @@
     <property role="TrG5h" value="GeneratedSideTransformActions" />
     <node concept="2bVX_k" id="4rZeNQ6Mq3M" role="3UOs0v">
       <property role="2uHTBK" value="default_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq3N" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq3O" role="3dQV3f">
@@ -70,6 +72,7 @@
     </node>
     <node concept="2bVX_k" id="4rZeNQ6Mq3T" role="3UOs0v">
       <property role="2uHTBK" value="ext_1_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq3U" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq3V" role="3dQV3f">
@@ -83,6 +86,7 @@
     </node>
     <node concept="2bVX_k" id="4rZeNQ6Mq3Z" role="3UOs0v">
       <property role="2uHTBK" value="ext_2_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq40" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq41" role="3dQV3f">
@@ -96,6 +100,7 @@
     </node>
     <node concept="2bVX_k" id="4rZeNQ6Mq45" role="3UOs0v">
       <property role="2uHTBK" value="ext_3_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq46" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq47" role="3dQV3f">
@@ -109,6 +114,7 @@
     </node>
     <node concept="2bVX_k" id="4rZeNQ6Mq4b" role="3UOs0v">
       <property role="2uHTBK" value="ext_4_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq4c" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq4d" role="3dQV3f">
@@ -122,6 +128,7 @@
     </node>
     <node concept="2bVX_k" id="4rZeNQ6Mq4h" role="3UOs0v">
       <property role="2uHTBK" value="ext_5_RTransform" />
+      <property role="7I3sp" value="both" />
       <ref role="3UNGvu" to="tpck:gw2VY9q" resolve="BaseConcept" />
       <node concept="22UdGu" id="4rZeNQ6Mq4i" role="22Ud4d">
         <node concept="3dQ6bb" id="4rZeNQ6Mq4j" role="3dQV3f">
