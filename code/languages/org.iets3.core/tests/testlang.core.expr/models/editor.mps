@@ -202,8 +202,14 @@
     <ref role="1XX52x" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
     <node concept="3EZMnI" id="4rZeNQ6O9Ff" role="2wV5jI">
       <node concept="2iRkQZ" id="4rZeNQ6O9Fg" role="2iSdaV" />
-      <node concept="3F0ifn" id="4rZeNQ6O9Fc" role="3EZMnx">
-        <property role="3F0ifm" value="expression tests" />
+      <node concept="3EZMnI" id="4tXyFaWv2cf" role="3EZMnx">
+        <node concept="l2Vlx" id="4tXyFaWv2cg" role="2iSdaV" />
+        <node concept="3F0ifn" id="4rZeNQ6O9Fc" role="3EZMnx">
+          <property role="3F0ifm" value="expression tests" />
+        </node>
+        <node concept="3F0A7n" id="4tXyFaWv2cr" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4rZeNQ6O9Fu" role="3EZMnx">
         <property role="3F0ifm" value="--------------------------------" />
