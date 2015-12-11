@@ -101,6 +101,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -391,6 +392,29 @@
         <node concept="3clFbF" id="4Etk_BWmSRW" role="3cqZAp">
           <node concept="Xl_RD" id="4Etk_BWmSRV" role="3clFbG">
             <property role="Xl_RC" value="Fill With Text" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4Etk_BWsaOu">
+    <property role="TrG5h" value="DeleteRequirement" />
+    <ref role="2ZfgGC" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+    <node concept="2Sbjvc" id="4Etk_BWsaOv" role="2ZfgGD">
+      <node concept="3clFbS" id="4Etk_BWsaOw" role="2VODD2">
+        <node concept="3clFbF" id="4Etk_BWsaZu" role="3cqZAp">
+          <node concept="2OqwBi" id="4Etk_BWsb1Q" role="3clFbG">
+            <node concept="2Sf5sV" id="4Etk_BWsaZt" role="2Oq$k0" />
+            <node concept="1PgB_6" id="4Etk_BWsb7R" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="4Etk_BWsaOx" role="2ZfVej">
+      <node concept="3clFbS" id="4Etk_BWsaOy" role="2VODD2">
+        <node concept="3clFbF" id="4Etk_BWsaQ2" role="3cqZAp">
+          <node concept="Xl_RD" id="4Etk_BWsaQ1" role="3clFbG">
+            <property role="Xl_RC" value="Delete" />
           </node>
         </node>
       </node>

@@ -325,5 +325,26 @@
     <property role="3GE5qa" value="rel" />
     <property role="TrG5h" value="IReqRefCtx" />
   </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxl">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyAddChildReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/addChild.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxv">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyAddSiblingReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/addSibling.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxD">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyDeleteReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/delete.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

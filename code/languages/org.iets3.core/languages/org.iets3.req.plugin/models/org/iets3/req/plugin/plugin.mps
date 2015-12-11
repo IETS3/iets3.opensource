@@ -174,6 +174,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="6870613620391345436" name="jetbrains.mps.lang.smodel.structure.ConceptShortDescriptionOperation" flags="ng" index="3neUYN" />
+      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
+        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -227,6 +230,7 @@
       </concept>
       <concept id="8009069486209215732" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource_Compact" flags="ng" index="3_N$aR">
         <child id="8009069486209215751" name="intentionId" index="3_N$d4" />
+        <child id="8009069486209215752" name="icon" index="3_N$db" />
       </concept>
       <concept id="8009069486207462978" name="com.mbeddr.mpsutil.contextactions.structure.ActionSourceWithCondition" flags="ng" index="3_Xg01">
         <child id="8009069486207463378" name="sources" index="3_Xg6h" />
@@ -269,10 +273,36 @@
         <node concept="2p1MsB" id="4tXyFaWyEzd" role="3_N$d4">
           <ref role="2p1Luo" to="m4ta:4tXyFaWyCnG" resolve="AddChildRequirement" />
         </node>
+        <node concept="2YIFZM" id="4Etk_BWsaBB" role="3_N$db">
+          <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
+          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+          <node concept="3nh3qo" id="4Etk_BWsaCl" role="37wK5m">
+            <ref role="3nh3qp" to="plfp:4Etk_BWsaxl" resolve="IconDummyAddChildReq" />
+          </node>
+        </node>
       </node>
       <node concept="3_N$aR" id="7Dcax7Agm1L" role="3_Xtdj">
         <node concept="2p1MsB" id="7Dcax7Agm25" role="3_N$d4">
           <ref role="2p1Luo" to="m4ta:7Dcax7Agh7q" resolve="AddSiblingRequirement" />
+        </node>
+        <node concept="2YIFZM" id="4Etk_BWsaIB" role="3_N$db">
+          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+          <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
+          <node concept="3nh3qo" id="4Etk_BWsaIC" role="37wK5m">
+            <ref role="3nh3qp" to="plfp:4Etk_BWsaxv" resolve="IconDummyAddSiblingReq" />
+          </node>
+        </node>
+      </node>
+      <node concept="3_N$aR" id="4Etk_BWsbo0" role="3_Xtdj">
+        <node concept="2p1MsB" id="4Etk_BWsbpq" role="3_N$d4">
+          <ref role="2p1Luo" to="m4ta:4Etk_BWsaOu" resolve="DeleteRequirement" />
+        </node>
+        <node concept="2YIFZM" id="4Etk_BWsbo2" role="3_N$db">
+          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+          <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
+          <node concept="3nh3qo" id="4Etk_BWsbo3" role="37wK5m">
+            <ref role="3nh3qp" to="plfp:4Etk_BWsaxD" resolve="IconDummyDeleteReq" />
+          </node>
         </node>
       </node>
     </node>
