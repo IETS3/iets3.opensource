@@ -32,6 +32,9 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
+      </concept>
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -139,6 +142,12 @@
       <node concept="1Ex9Rl" id="3_9S6lia_nr" role="lGtFl">
         <property role="34HCRG" value="Passive Text" />
         <property role="34GvKv" value="Reserved Words in IETS3 models" />
+      </node>
+    </node>
+    <node concept="14StLt" id="3_9S6licv32" role="V601i">
+      <property role="TrG5h" value="iets3BraceMatch" />
+      <node concept="3mYdg7" id="3_9S6licv3n" role="3F10Kt">
+        <property role="1413C4" value="braces" />
       </node>
     </node>
   </node>

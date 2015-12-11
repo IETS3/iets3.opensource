@@ -22,6 +22,9 @@
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
+      <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
+        <property id="1075375595204" name="text" index="1xolSY" />
+      </concept>
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -39,9 +42,21 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="3Xmtl4" id="4rZeNQ6MfS9" role="3F10Kt">
         <node concept="1wgc9g" id="4rZeNQ6MfSf" role="3XvnJa">
-          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="keyword" />
+          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3_9S6lidhbL">
+    <ref role="1XX52x" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1xolST" id="3_9S6lidhbN" role="2wV5jI">
+      <property role="1xolSY" value="&lt;no type&gt;" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3_9S6lidhPd">
+    <ref role="1XX52x" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1xolST" id="3_9S6lidhPf" role="2wV5jI">
+      <property role="1xolSY" value="&lt;no expression&gt;" />
     </node>
   </node>
 </model>
