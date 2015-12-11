@@ -271,6 +271,7 @@
       </concept>
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
+        <property id="2704268044258142829" name="placeholderText" index="1YXhso" />
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
@@ -2056,6 +2057,7 @@
           </node>
         </node>
         <node concept="2reSaE" id="3FGEpLFjzZH" role="2reCL6">
+          <property role="1YXhso" value="&lt;add child requirements&gt;" />
           <ref role="2reCK$" to="plfp:4tXyFaWxWA_" />
         </node>
       </node>
