@@ -1366,5 +1366,18 @@
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
+  <node concept="33ghlw" id="4Etk_BWuy4j">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="requirementsAsTablesDetails" />
+    <node concept="33gmoH" id="4Etk_BWuy4k" role="2hfSGL">
+      <property role="33g7Lv" value="Requirements Table with Details" />
+      <ref role="33glcW" to="2j3g:4Etk_BWn_aw" resolve="requirementsHints" />
+      <ref role="33glcY" to="2j3g:4Etk_BWudyK" resolve="tableWithDetails" />
+    </node>
+    <node concept="tT9cl" id="4Etk_BWuy4l" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+  </node>
 </model>
 
