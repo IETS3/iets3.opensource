@@ -7,11 +7,15 @@
   </languages>
   <imports>
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" implicit="true" />
     <import index="bemq" ref="r:4cfa8b0a-7754-4d3d-9e06-0ce9d427860c(org.iets3.req.core.behavior)" implicit="true" />
+    <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -25,19 +29,40 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -79,6 +104,12 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -86,6 +117,11 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
@@ -216,6 +252,145 @@
               </node>
               <node concept="34oBXx" id="7Dcax7Agh7K" role="2OqNvi" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4Etk_BWmSQz">
+    <property role="TrG5h" value="FillWithText" />
+    <ref role="2ZfgGC" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
+    <node concept="2Sbjvc" id="4Etk_BWmSQ$" role="2ZfgGD">
+      <node concept="3clFbS" id="4Etk_BWmSQ_" role="2VODD2">
+        <node concept="3cpWs8" id="4Etk_BWmThp" role="3cqZAp">
+          <node concept="3cpWsn" id="4Etk_BWmThq" role="3cpWs9">
+            <property role="TrG5h" value="li" />
+            <node concept="17QB3L" id="4Etk_BWmTho" role="1tU5fm" />
+            <node concept="Xl_RD" id="4Etk_BWmThr" role="33vP2m">
+              <property role="Xl_RC" value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   \n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   \n\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   \n\nNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   \n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Etk_BWmTE4" role="3cqZAp">
+          <node concept="3cpWsn" id="4Etk_BWmTE5" role="3cpWs9">
+            <property role="TrG5h" value="length" />
+            <node concept="10Oyi0" id="4Etk_BWmTE2" role="1tU5fm" />
+            <node concept="2OqwBi" id="4Etk_BWmTE6" role="33vP2m">
+              <node concept="37vLTw" id="4Etk_BWmTE7" role="2Oq$k0">
+                <ref role="3cqZAo" node="4Etk_BWmThq" resolve="li" />
+              </node>
+              <node concept="liA8E" id="4Etk_BWmTE8" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Etk_BWmYKX" role="3cqZAp">
+          <node concept="3cpWsn" id="4Etk_BWmYKY" role="3cpWs9">
+            <property role="TrG5h" value="r" />
+            <node concept="10Oyi0" id="4Etk_BWmYKW" role="1tU5fm" />
+            <node concept="2OqwBi" id="4Etk_BWmYKZ" role="33vP2m">
+              <node concept="2ShNRf" id="4Etk_BWmYL0" role="2Oq$k0">
+                <node concept="1pGfFk" id="4Etk_BWmYL1" role="2ShVmc">
+                  <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
+                  <node concept="2YIFZM" id="4Etk_BWnzL7" role="37wK5m">
+                    <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4Etk_BWmYL3" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                <node concept="37vLTw" id="4Etk_BWnvJO" role="37wK5m">
+                  <ref role="3cqZAo" node="4Etk_BWmTE5" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4Etk_BWnutq" role="3cqZAp" />
+        <node concept="3clFbF" id="4Etk_BWmZci" role="3cqZAp">
+          <node concept="2OqwBi" id="4Etk_BWn0DM" role="3clFbG">
+            <node concept="2OqwBi" id="4Etk_BWmZ_Q" role="2Oq$k0">
+              <node concept="2OqwBi" id="4Etk_BWmZg6" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4Etk_BWmZcg" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4Etk_BWmZoj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="plfp:4tXyFaWy3Jw" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="4Etk_BWmZSj" role="2OqNvi">
+                <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="4Etk_BWn40N" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Etk_BWnc42" role="3cqZAp">
+          <node concept="3cpWsn" id="4Etk_BWnc43" role="3cpWs9">
+            <property role="TrG5h" value="tp" />
+            <node concept="3Tqbb2" id="4Etk_BWnc40" role="1tU5fm">
+              <ref role="ehGHo" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
+            </node>
+            <node concept="2ShNRf" id="4Etk_BWnc44" role="33vP2m">
+              <node concept="3zrR0B" id="4Etk_BWnc45" role="2ShVmc">
+                <node concept="3Tqbb2" id="4Etk_BWnc46" role="3zrR0E">
+                  <ref role="ehGHo" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Etk_BWneLC" role="3cqZAp">
+          <node concept="2OqwBi" id="4Etk_BWnfXi" role="3clFbG">
+            <node concept="37vLTw" id="4Etk_BWneLA" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Etk_BWnc43" resolve="tp" />
+            </node>
+            <node concept="2qgKlT" id="4Etk_BWnhhn" role="2OqNvi">
+              <ref role="37wK5l" to="4gky:519ky_SnQaO" resolve="addString" />
+              <node concept="2OqwBi" id="4Etk_BWmY5E" role="37wK5m">
+                <node concept="37vLTw" id="4Etk_BWmY35" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4Etk_BWmThq" resolve="li" />
+                </node>
+                <node concept="liA8E" id="4Etk_BWmYbY" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                  <node concept="3cmrfG" id="4Etk_BWmYeL" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="4Etk_BWmZ0m" role="37wK5m">
+                    <ref role="3cqZAo" node="4Etk_BWmYKY" resolve="r" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Etk_BWn7in" role="3cqZAp">
+          <node concept="2OqwBi" id="4Etk_BWn9Q7" role="3clFbG">
+            <node concept="2OqwBi" id="4Etk_BWn8JU" role="2Oq$k0">
+              <node concept="2OqwBi" id="4Etk_BWn8k7" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4Etk_BWn7il" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4Etk_BWn8z8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="plfp:4tXyFaWy3Jw" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="4Etk_BWn92n" role="2OqNvi">
+                <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="4Etk_BWnaWB" role="2OqNvi">
+              <node concept="37vLTw" id="4Etk_BWnc47" role="25WWJ7">
+                <ref role="3cqZAo" node="4Etk_BWnc43" resolve="tp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="4Etk_BWmSQA" role="2ZfVej">
+      <node concept="3clFbS" id="4Etk_BWmSQB" role="2VODD2">
+        <node concept="3clFbF" id="4Etk_BWmSRW" role="3cqZAp">
+          <node concept="Xl_RD" id="4Etk_BWmSRV" role="3clFbG">
+            <property role="Xl_RC" value="Fill With Text" />
           </node>
         </node>
       </node>

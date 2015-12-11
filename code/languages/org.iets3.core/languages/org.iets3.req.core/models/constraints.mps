@@ -8,9 +8,9 @@
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,6 +102,11 @@
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="4tXyFaWyA7S">
     <ref role="1M2myG" to="plfp:4tXyFaWy3Jz" resolve="RequirementsDocSection" />
@@ -132,43 +137,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="7Dcax7A9Lsr">
-    <ref role="1M2myG" to="plfp:7Dcax7A9LmB" resolve="PlainReqRefWord" />
-    <node concept="1N5Pfh" id="7Dcax7A9Lss" role="1Mr941">
-      <ref role="1N5Vy1" to="plfp:7Dcax7A9LmE" />
-      <node concept="1MUpDS" id="7Dcax7A9Lsu" role="1N6uqs">
-        <node concept="3clFbS" id="7Dcax7A9Lsv" role="2VODD2">
-          <node concept="3clFbF" id="7Dcax7A9Lt8" role="3cqZAp">
-            <node concept="2OqwBi" id="7Dcax7A9Mhg" role="3clFbG">
-              <node concept="2OqwBi" id="7Dcax7A9LDr" role="2Oq$k0">
-                <node concept="2OqwBi" id="7Dcax7A9LwW" role="2Oq$k0">
-                  <node concept="21POm0" id="7Dcax7A9Lt7" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="7Dcax7A9L$M" role="2OqNvi">
-                    <node concept="1xMEDy" id="7Dcax7A9L$O" role="1xVPHs">
-                      <node concept="chp4Y" id="7Dcax7A9LA9" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="7Dcax7A9LJe" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="7Dcax7A9LM6" role="37wK5m">
-                    <ref role="3TV0OU" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-                  </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="7Dcax7A9MYk" role="2OqNvi">
-                <node concept="chp4Y" id="7Dcax7A9N0R" role="v3oSu">
-                  <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="7Dcax7AgAPG">
     <ref role="1M2myG" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
     <node concept="Um2eU" id="7Dcax7AgAPK" role="1kkKnR">
@@ -185,7 +153,7 @@
             <node concept="otxO1" id="7Dcax7AgAS7" role="2Oq$k0" />
             <node concept="2Zo12i" id="7Dcax7AgB17" role="2OqNvi">
               <node concept="chp4Y" id="7Dcax7AgB39" role="2Zo12j">
-                <ref role="cht4Q" to="plfp:7Dcax7AgAPg" resolve="IReqDocParagraph" />
+                <ref role="cht4Q" to="plfp:7Dcax7AgAPg" resolve="IReqDocContent" />
               </node>
             </node>
           </node>
@@ -261,6 +229,44 @@
         <node concept="3cpWs6" id="7Dcax7AgCEH" role="3cqZAp">
           <node concept="3clFbT" id="7Dcax7AgCHD" role="3cqZAk">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Zn2KFQSRxT">
+    <property role="3GE5qa" value="rel" />
+    <ref role="1M2myG" to="plfp:5Zn2KFQSRwo" resolve="ReqRef" />
+    <node concept="1N5Pfh" id="5Zn2KFQSRxU" role="1Mr941">
+      <ref role="1N5Vy1" to="plfp:5Zn2KFQSRwp" />
+      <node concept="1MUpDS" id="5Zn2KFQSRxW" role="1N6uqs">
+        <node concept="3clFbS" id="5Zn2KFQSRxX" role="2VODD2">
+          <node concept="3clFbF" id="5Zn2KFQSRyA" role="3cqZAp">
+            <node concept="2OqwBi" id="5Zn2KFQSSka" role="3clFbG">
+              <node concept="2OqwBi" id="5Zn2KFQSRKQ" role="2Oq$k0">
+                <node concept="2OqwBi" id="5Zn2KFQSR$V" role="2Oq$k0">
+                  <node concept="21POm0" id="5Zn2KFQSRy_" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="5Zn2KFQSRD5" role="2OqNvi">
+                    <node concept="1xMEDy" id="5Zn2KFQSRD7" role="1xVPHs">
+                      <node concept="chp4Y" id="5Zn2KFQSRFG" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="5Zn2KFQSROR" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="5Zn2KFQSS2o" role="37wK5m">
+                    <ref role="3TV0OU" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="5Zn2KFQSSst" role="2OqNvi">
+                <node concept="chp4Y" id="5Zn2KFQSSvo" role="v3oSu">
+                  <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
