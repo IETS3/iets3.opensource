@@ -1197,6 +1197,9 @@
         </node>
         <node concept="3F0A7n" id="7Dcax7Ahwt2" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="7mG7sQPqLnJ" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
+          </node>
         </node>
         <node concept="2iRfu4" id="7Dcax7Ahwt3" role="2iSdaV" />
         <node concept="3EZMnI" id="7Dcax7Ahwt4" role="3EZMnx">
