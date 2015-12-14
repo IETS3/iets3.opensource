@@ -23,6 +23,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -157,6 +158,9 @@
     <node concept="PrWs8" id="4tXyFaWy_TJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="7Dcax7AgRv3" role="PzmwI">
+      <ref role="PrY4T" node="7Dcax7AgAPg" resolve="IReqDocContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4tXyFaWylGs">
     <property role="1pbfSe" value="67560910" />
@@ -201,6 +205,7 @@
     <property role="3GE5qa" value="tag" />
     <property role="TrG5h" value="PriorityTag" />
     <property role="34LRSv" value="priority" />
+    <property role="R4oN_" value="the priority of the requirement" />
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
     <node concept="1TJgyi" id="7Ip2X68Nu6H" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -225,16 +230,121 @@
     <property role="1pbfSe" value="1618165688" />
     <property role="TrG5h" value="PlainReqRefWord" />
     <property role="34LRSv" value="@req" />
+    <property role="3GE5qa" value="words" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7Dcax7A9LmE" role="1TKVEi">
+    <node concept="1TJgyj" id="5Zn2KFQSS_B" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Zn2KFQSRwo" resolve="ReqRef" />
+    </node>
+    <node concept="PrWs8" id="7Dcax7A9LmC" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="PrWs8" id="3wHxcnxC6C_" role="PzmwI">
+      <ref role="PrY4T" node="3wHxcnxC3W5" resolve="IReqRefCtx" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7Dcax7AgAPg">
+    <property role="1pbfSe" value="1619957601" />
+    <property role="TrG5h" value="IReqDocContent" />
+  </node>
+  <node concept="PlHQZ" id="5Zn2KFQSRwl">
+    <property role="1pbfSe" value="1455063839" />
+    <property role="TrG5h" value="IRequirementsRelation" />
+    <property role="3GE5qa" value="rel" />
+    <node concept="1TJgyj" id="5Zn2KFQSUiY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Zn2KFQSUik" resolve="RelationKind" />
+    </node>
+    <node concept="1TJgyj" id="5Zn2KFQSS$4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Zn2KFQSRwo" resolve="ReqRef" />
+    </node>
+    <node concept="PrWs8" id="3wHxcnxC3WV" role="PrDN$">
+      <ref role="PrY4T" node="3wHxcnxC3W5" resolve="IReqRefCtx" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Zn2KFQSRwo">
+    <property role="1pbfSe" value="1455063842" />
+    <property role="3GE5qa" value="rel" />
+    <property role="TrG5h" value="ReqRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5Zn2KFQSRwp" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="req" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
     </node>
-    <node concept="PrWs8" id="7Dcax7A9LmC" role="PzmwI">
+  </node>
+  <node concept="1TIwiD" id="5Zn2KFQSUik">
+    <property role="1pbfSe" value="1455075230" />
+    <property role="3GE5qa" value="rel" />
+    <property role="TrG5h" value="RelationKind" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5Zn2KFQSUiX">
+    <property role="1pbfSe" value="1455075271" />
+    <property role="3GE5qa" value="rel" />
+    <property role="TrG5h" value="RelKindConflicts" />
+    <property role="34LRSv" value="conflicts with" />
+    <ref role="1TJDcQ" node="5Zn2KFQSUik" resolve="RelationKind" />
+  </node>
+  <node concept="1TIwiD" id="5Zn2KFQSUqC">
+    <property role="1pbfSe" value="1455075762" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="ReqRelWord" />
+    <property role="34LRSv" value="@rel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Zn2KFQSUqD" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+    <node concept="PrWs8" id="5Zn2KFQSUqK" role="PzmwI">
+      <ref role="PrY4T" node="5Zn2KFQSRwl" resolve="IRequirementsRelation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Zn2KFQTtnV">
+    <property role="1pbfSe" value="1455218949" />
+    <property role="3GE5qa" value="tag" />
+    <property role="TrG5h" value="RelTag" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="relationship with another requirement" />
+    <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
+    <node concept="PrWs8" id="5Zn2KFQTtnW" role="PzmwI">
+      <ref role="PrY4T" node="5Zn2KFQSRwl" resolve="IRequirementsRelation" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3wHxcnxC3W5">
+    <property role="1pbfSe" value="432915402" />
+    <property role="3GE5qa" value="rel" />
+    <property role="TrG5h" value="IReqRefCtx" />
+  </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxl">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyAddChildReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/addChild.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxv">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyAddSiblingReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/addSibling.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4Etk_BWsaxD">
+    <property role="1pbfSe" value="1192098478" />
+    <property role="TrG5h" value="IconDummyDeleteReq" />
+    <property role="3GE5qa" value="icons" />
+    <property role="MwhBj" value="${module}/icons/delete.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
