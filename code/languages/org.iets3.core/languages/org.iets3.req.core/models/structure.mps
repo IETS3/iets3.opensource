@@ -269,7 +269,7 @@
     <node concept="1TJgyj" id="5Zn2KFQSS$4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targets" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5Zn2KFQSRwo" resolve="ReqRef" />
     </node>
     <node concept="PrWs8" id="3wHxcnxC3WV" role="PrDN$">
@@ -286,6 +286,9 @@
       <property role="20kJfa" value="req" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
+    </node>
+    <node concept="PrWs8" id="7mG7sQPv0tF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Zn2KFQSUik">
@@ -320,7 +323,6 @@
     <property role="1pbfSe" value="1455218949" />
     <property role="3GE5qa" value="tag" />
     <property role="TrG5h" value="RelTag" />
-    <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="relationship with another requirement" />
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
     <node concept="PrWs8" id="5Zn2KFQTtnW" role="PzmwI">
@@ -340,14 +342,14 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4Etk_BWsaxv">
-    <property role="1pbfSe" value="1192098478" />
+    <property role="1pbfSe" value="1192098488" />
     <property role="TrG5h" value="IconDummyAddSiblingReq" />
     <property role="3GE5qa" value="icons" />
     <property role="MwhBj" value="${module}/icons/addSibling.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4Etk_BWsaxD">
-    <property role="1pbfSe" value="1192098478" />
+    <property role="1pbfSe" value="1192098498" />
     <property role="TrG5h" value="IconDummyDeleteReq" />
     <property role="3GE5qa" value="icons" />
     <property role="MwhBj" value="${module}/icons/delete.png" />
