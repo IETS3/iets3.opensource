@@ -2,11 +2,16 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core.base" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr/test.ex.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/testlang.core.expr/testlang.core.expr.mpl" folder="expr" />
     </projectModules>

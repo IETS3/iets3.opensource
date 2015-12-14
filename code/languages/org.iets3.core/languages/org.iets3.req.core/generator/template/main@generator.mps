@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:475b4525-09ec-4d58-a14d-59f8694e7a4f(testlang.core.expr.generator.template.main@generator)">
+<model ref="r:bc065c10-a2b1-4bab-a028-6f5f893d7a56(org.iets3.req.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="bf5521a5-2fb2-4b25-bd67-c5ea4c6e0e2c" name="testlang.core.expr" version="-1" />
+    <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
@@ -19,7 +19,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="6sdnDbSla1d">
+  <node concept="bUwia" id="4tXyFaWwpir">
     <property role="TrG5h" value="main" />
   </node>
 </model>
