@@ -355,5 +355,18 @@
     <property role="MwhBj" value="${module}/icons/delete.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="7mG7sQPy9qR">
+    <property role="1pbfSe" value="724874372" />
+    <property role="3GE5qa" value="tag" />
+    <property role="TrG5h" value="CCTag" />
+    <property role="34LRSv" value="CC" />
+    <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
+    <node concept="1TJgyj" id="7mG7sQPy9qS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="users" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="cayy:7mG7sQPpUfB" resolve="UserRef" />
+    </node>
+  </node>
 </model>
 
