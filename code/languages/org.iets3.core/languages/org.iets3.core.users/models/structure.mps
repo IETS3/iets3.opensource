@@ -7,12 +7,10 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -76,12 +74,11 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1ognOHjxMSe">
-    <property role="1pbfSe" value="1771539801" />
-    <property role="TrG5h" value="OwnerTag" />
-    <property role="34LRSv" value="owner" />
-    <ref role="1TJDcQ" to="plfp:4tXyFaWylGs" resolve="Tag" />
-    <node concept="1TJgyj" id="1ognOHjxMZa" role="1TKVEi">
+  <node concept="1TIwiD" id="7mG7sQPpUfB">
+    <property role="1pbfSe" value="722715060" />
+    <property role="TrG5h" value="UserRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7mG7sQPpUfC" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="user" />
       <property role="20lbJX" value="1" />

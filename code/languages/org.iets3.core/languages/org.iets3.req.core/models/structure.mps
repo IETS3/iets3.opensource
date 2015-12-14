@@ -10,6 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -127,6 +128,12 @@
       <property role="20kJfa" value="doc" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4tXyFaWy3Jz" resolve="RequirementsDocSection" />
+    </node>
+    <node concept="1TJgyj" id="7mG7sQPpWEb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="owner" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="cayy:7mG7sQPpUfB" resolve="UserRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="4tXyFaWwpmP">
