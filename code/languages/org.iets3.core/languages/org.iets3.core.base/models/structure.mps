@@ -43,8 +43,8 @@
   <node concept="PlHQZ" id="6LfBX8YlYGS">
     <property role="1pbfSe" value="1431860470" />
     <property role="TrG5h" value="ISpecRoot" />
-    <node concept="PrWs8" id="6LfBX8Ym2Lq" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5Tp0" role="PrDN$">
+      <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
@@ -56,8 +56,8 @@
   <node concept="PlHQZ" id="cJpacq4087">
     <property role="1pbfSe" value="490694314" />
     <property role="TrG5h" value="IOptionallyNamed" />
-    <node concept="PrWs8" id="cJpacq4088" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5WSG" role="PrDN$">
+      <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="cJpacq40jC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -72,6 +72,13 @@
     <node concept="1TJgyi" id="cJpacq408b" role="1TKVEl">
       <property role="TrG5h" value="optionalName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="cJpacq5T0O">
+    <property role="1pbfSe" value="491189463" />
+    <property role="TrG5h" value="IValidNamedConcept" />
+    <node concept="PrWs8" id="cJpacq5T0Y" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

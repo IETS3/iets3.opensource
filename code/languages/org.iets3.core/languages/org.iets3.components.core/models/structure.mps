@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -80,14 +80,17 @@
       <property role="TrG5h" value="fragment" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="PrWs8" id="6LfBX8Yi4o2" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5ToM" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="6LfBX8Yl7xY" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yl7sG" resolve="IKindContext" />
     </node>
     <node concept="PrWs8" id="6LfBX8YiQma" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yivpj" resolve="IComponentsChunkContent" />
+    </node>
+    <node concept="PrWs8" id="cJpacq5MCT" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yi4pr">
@@ -131,8 +134,8 @@
     <property role="1pbfSe" value="1432775131" />
     <property role="TrG5h" value="IComponentsChunkContent" />
     <property role="3GE5qa" value="chunk" />
-    <node concept="PrWs8" id="6LfBX8Yivpk" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5ToW" role="PrDN$">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="7Zvsa54xokp" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />

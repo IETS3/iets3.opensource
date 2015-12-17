@@ -61,8 +61,8 @@
     <property role="1pbfSe" value="722548625" />
     <property role="TrG5h" value="User" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7mG7sQPphB5" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5Tp7" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyi" id="7mG7sQPphB7" role="1TKVEl">
       <property role="TrG5h" value="firstName" />
@@ -89,8 +89,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7mG7sQPphB4" resolve="User" />
     </node>
-    <node concept="PrWs8" id="7mG7sQPphCZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq5Tp3" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="6LfBX8YlYHb" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
