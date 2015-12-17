@@ -205,8 +205,8 @@
     <node concept="PrWs8" id="6LfBX8YkpdX" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
-    <node concept="PrWs8" id="6LfBX8Ykpe2" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq4lZp" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
     <node concept="1TJgyj" id="6LfBX8YlAdM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -276,8 +276,8 @@
     <node concept="PrWs8" id="6LfBX8YlosE" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
-    <node concept="PrWs8" id="6LfBX8Ylot_" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
     <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
