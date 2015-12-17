@@ -72,7 +72,7 @@
     <property role="1pbfSe" value="67051342" />
     <property role="TrG5h" value="RequirementsChunk" />
     <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/RequirementsChunkCharIcon.png" />
+    <property role="MwhBj" value="${module}/icons/reqchunk.png" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="4tXyFaWxW_o" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
@@ -94,6 +94,7 @@
     <property role="TrG5h" value="AbstractRequirement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="MwhBj" value="${module}/icons/req.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4tXyFaWylGu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
