@@ -108,6 +108,7 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
         <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
@@ -153,6 +154,7 @@
   <node concept="2DaZZR" id="6LfBX8YlYHy" />
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="SpecExplorer" />
+    <property role="3aPfAI" value="1" />
     <node concept="14aYG3" id="6LfBX8YgRgl" role="14aYEy">
       <property role="TrG5h" value="specModel" />
       <node concept="14aYG3" id="1ognOHjyj2a" role="1DVp44">
