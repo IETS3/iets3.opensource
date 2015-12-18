@@ -197,7 +197,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7Zvsa54vvCe">
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:7Zvsa54vnWD" resolve="InstanceRef" />
     <node concept="1N5Pfh" id="7Zvsa54vvCr" role="1Mr941">
       <ref role="1N5Vy1" to="w9y2:7Zvsa54vnWQ" />
@@ -216,8 +216,8 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2qgKlT" id="7Zvsa54vw2H" role="2OqNvi">
-                  <ref role="37wK5l" to="3eba:7Zvsa54vnYI" resolve="allContents" />
+                <node concept="2qgKlT" id="siw10Fn_TR" role="2OqNvi">
+                  <ref role="37wK5l" to="3eba:siw10FnrMt" resolve="allSubstructure" />
                 </node>
               </node>
               <node concept="v3k3i" id="7Zvsa54vwid" role="2OqNvi">
@@ -232,7 +232,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="cJpacq1txe">
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:7Zvsa54vnWq" resolve="AssemblyConnector" />
     <node concept="1N5Pfh" id="cJpacq1txK" role="1Mr941">
       <ref role="1N5Vy1" to="w9y2:cJpacq1tk2" />
@@ -368,7 +368,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="cJpacq1VCQ">
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:cJpacq1tb1" resolve="ImportConnector" />
     <node concept="1N5Pfh" id="cJpacq1VD0" role="1Mr941">
       <ref role="1N5Vy1" to="w9y2:cJpacq1tbb" />
@@ -470,7 +470,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="cJpacq2_Ch">
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:cJpacq2_os" resolve="ExportConnector" />
     <node concept="1N5Pfh" id="cJpacq2_CE" role="1Mr941">
       <ref role="1N5Vy1" to="w9y2:cJpacq2_ov" />
@@ -572,7 +572,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4UgzZxsGCOe">
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
     <node concept="1N5Pfh" id="3NBP8_O3XAU" role="1Mr941">
       <ref role="1N5Vy1" to="w9y2:4UgzZxsF_xI" />

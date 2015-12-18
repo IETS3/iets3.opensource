@@ -280,7 +280,7 @@
   </node>
   <node concept="18kY7G" id="7Zvsa54vmld">
     <property role="TrG5h" value="check_ComponentInstance" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="7Zvsa54vmle" role="18ibNy">
       <node concept="3clFbJ" id="7Zvsa54vmlA" role="3cqZAp">
         <node concept="3clFbS" id="7Zvsa54vmlB" role="3clFbx">
@@ -501,7 +501,7 @@
   </node>
   <node concept="18kY7G" id="7Zvsa54wO$a">
     <property role="TrG5h" value="check_AssemblyConnector" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="7Zvsa54wO$b" role="18ibNy">
       <node concept="3clFbJ" id="7Zvsa54wO$n" role="3cqZAp">
         <node concept="3clFbS" id="7Zvsa54wO$o" role="3clFbx">
@@ -989,7 +989,7 @@
   </node>
   <node concept="18kY7G" id="cJpacq1X91">
     <property role="TrG5h" value="check_ImportConnector" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="cJpacq1X92" role="18ibNy">
       <node concept="3clFbJ" id="cJpacq1X9h" role="3cqZAp">
         <node concept="3clFbS" id="cJpacq1X9i" role="3clFbx">
@@ -1044,7 +1044,7 @@
   </node>
   <node concept="18kY7G" id="cJpacq2Ar$">
     <property role="TrG5h" value="check_ExportConnector" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="cJpacq2Ar_" role="18ibNy">
       <node concept="3clFbJ" id="cJpacq3Qaa" role="3cqZAp">
         <node concept="3clFbS" id="cJpacq3Qac" role="3clFbx">
@@ -1167,7 +1167,7 @@
   </node>
   <node concept="1YbPZF" id="3NBP8_O4aKp">
     <property role="TrG5h" value="typeof_ParameterValue" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="3NBP8_O4aKq" role="18ibNy">
       <node concept="1Z5TYs" id="3NBP8_O4aNc" role="3cqZAp">
         <node concept="mw_s8" id="3NBP8_O4aNt" role="1ZfhKB">
@@ -1219,7 +1219,7 @@
   </node>
   <node concept="18kY7G" id="3NBP8_O5pBd">
     <property role="TrG5h" value="check_ParameterValue" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <node concept="3clFbS" id="3NBP8_O5pBe" role="18ibNy">
       <node concept="3clFbJ" id="3NBP8_O5pBn" role="3cqZAp">
         <node concept="3clFbS" id="3NBP8_O5pBo" role="3clFbx">

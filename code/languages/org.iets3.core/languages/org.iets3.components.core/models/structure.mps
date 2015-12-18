@@ -78,6 +78,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
+    <node concept="1TJgyj" id="siw10Fjg04" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="substructure" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="siw10FjeBd" resolve="ComponentSubstructure" />
+    </node>
     <node concept="1TJgyi" id="6LfBX8Yi4o4" role="1TKVEl">
       <property role="TrG5h" value="fragment" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -274,7 +280,7 @@
   </node>
   <node concept="1TIwiD" id="6LfBX8YlosD">
     <property role="1pbfSe" value="1432017157" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="instance" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -290,8 +296,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
     </node>
-    <node concept="PrWs8" id="6LfBX8YlosE" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    <node concept="PrWs8" id="siw10FiR6l" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
     <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
@@ -313,12 +319,12 @@
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWq">
     <property role="1pbfSe" value="1000542277" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="AssemblyConnector" />
     <property role="34LRSv" value="connect" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7Zvsa54vnWB" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    <node concept="PrWs8" id="siw10FiR6h" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
     <node concept="PrWs8" id="4A8SzOV88Hn" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
@@ -350,7 +356,7 @@
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWD">
     <property role="1pbfSe" value="1000542262" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="InstanceRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7Zvsa54vnWQ" role="1TKVEi">
@@ -362,13 +368,13 @@
   </node>
   <node concept="1TIwiD" id="cJpacq1taR">
     <property role="1pbfSe" value="490026842" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="DelegationConnector" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="cJpacq2TIV" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    <node concept="PrWs8" id="siw10FiR6d" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
     <node concept="PrWs8" id="4A8SzOV88Gw" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
@@ -376,7 +382,7 @@
   </node>
   <node concept="1TIwiD" id="cJpacq1tb1">
     <property role="1pbfSe" value="490026852" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ImportConnector" />
     <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
@@ -401,7 +407,7 @@
   </node>
   <node concept="1TIwiD" id="cJpacq2_os">
     <property role="1pbfSe" value="490322623" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ExportConnector" />
     <property role="34LRSv" value="export" />
     <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
@@ -453,7 +459,7 @@
   </node>
   <node concept="1TIwiD" id="4UgzZxsF_xB">
     <property role="1pbfSe" value="1421940641" />
-    <property role="3GE5qa" value="components.instances" />
+    <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ParameterValue" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4UgzZxsF_xC" role="1TKVEi">
@@ -567,6 +573,35 @@
     <property role="TrG5h" value="IConnectorAttribute" />
     <node concept="PrWs8" id="3NBP8_OhYPM" role="PrDN$">
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="siw10FiR6c">
+    <property role="1pbfSe" value="845017500" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="ISubstructureContent" />
+  </node>
+  <node concept="1TIwiD" id="siw10FjaPn">
+    <property role="1pbfSe" value="845098343" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="EmptySubstructureContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="siw10FjaPo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+    <node concept="PrWs8" id="siw10FjaPt" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="siw10FjeBd">
+    <property role="1pbfSe" value="845113821" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="ComponentSubstructure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="siw10FjeBe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
   </node>
 </model>
