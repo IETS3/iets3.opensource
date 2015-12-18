@@ -777,6 +777,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="cJpacq6wuV">
+    <property role="3GE5qa" value="components.param" />
     <ref role="1XX52x" to="w9y2:cJpacq6wur" resolve="Parameter" />
     <node concept="3EZMnI" id="cJpacq6wv0" role="2wV5jI">
       <node concept="l2Vlx" id="cJpacq6wv1" role="2iSdaV" />
@@ -829,6 +830,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3NBP8_O5trd">
+    <property role="3GE5qa" value="components.param" />
     <ref role="1XX52x" to="w9y2:3NBP8_O5tqM" resolve="ParamRef" />
     <node concept="1iCGBv" id="3NBP8_O5trf" role="2wV5jI">
       <ref role="1NtTu8" to="w9y2:3NBP8_O5tqN" />

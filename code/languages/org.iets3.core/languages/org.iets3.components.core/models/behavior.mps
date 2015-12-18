@@ -736,6 +736,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3NBP8_O3NQm">
+    <property role="3GE5qa" value="components.param" />
     <ref role="13h7C2" to="w9y2:cJpacq6wur" resolve="Parameter" />
     <node concept="13i0hz" id="3NBP8_O3NQF" role="13h7CS">
       <property role="TrG5h" value="isOptional" />
@@ -760,6 +761,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3NBP8_O5tB6">
+    <property role="3GE5qa" value="components.param" />
     <ref role="13h7C2" to="w9y2:3NBP8_O5tqM" resolve="ParamRef" />
     <node concept="13hLZK" id="3NBP8_O5tB7" role="13h7CW">
       <node concept="3clFbS" id="3NBP8_O5tB8" role="2VODD2" />

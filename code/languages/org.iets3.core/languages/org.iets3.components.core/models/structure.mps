@@ -410,6 +410,7 @@
     <property role="1pbfSe" value="491351102" />
     <property role="TrG5h" value="Parameter" />
     <property role="34LRSv" value="param" />
+    <property role="3GE5qa" value="components.param" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="cJpacq6wuw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -450,6 +451,7 @@
   <node concept="1TIwiD" id="3NBP8_O5tqM">
     <property role="1pbfSe" value="1325552837" />
     <property role="TrG5h" value="ParamRef" />
+    <property role="3GE5qa" value="components.param" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3NBP8_O5tqN" role="1TKVEi">
       <property role="20lmBu" value="reference" />

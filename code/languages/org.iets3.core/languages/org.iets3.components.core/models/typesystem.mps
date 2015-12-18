@@ -1099,6 +1099,7 @@
   </node>
   <node concept="1YbPZF" id="cJpacq6wwx">
     <property role="TrG5h" value="typeof_Parameter" />
+    <property role="3GE5qa" value="components.param" />
     <node concept="3clFbS" id="cJpacq6wwy" role="18ibNy">
       <node concept="1Z5TYs" id="cJpacq6xbg" role="3cqZAp">
         <node concept="mw_s8" id="cJpacq6xbO" role="1ZfhKB">
@@ -1260,6 +1261,7 @@
   </node>
   <node concept="1YbPZF" id="3NBP8_O5trQ">
     <property role="TrG5h" value="typeof_ParamRef" />
+    <property role="3GE5qa" value="components.param" />
     <node concept="3clFbS" id="3NBP8_O5trR" role="18ibNy">
       <node concept="1Z5TYs" id="3NBP8_O5tud" role="3cqZAp">
         <node concept="mw_s8" id="3NBP8_O5tux" role="1ZfhKB">
