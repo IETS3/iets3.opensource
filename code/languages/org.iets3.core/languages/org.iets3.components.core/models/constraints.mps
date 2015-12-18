@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+    <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -270,28 +270,28 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="cJpacq1tJ6" role="3cqZAp">
-            <node concept="2OqwBi" id="cJpacq1tJ7" role="3clFbG">
-              <node concept="2OqwBi" id="cJpacq1tJ8" role="2Oq$k0">
-                <node concept="2OqwBi" id="cJpacq1tJ9" role="2Oq$k0">
-                  <node concept="2OqwBi" id="cJpacq1tJa" role="2Oq$k0">
-                    <node concept="37vLTw" id="cJpacq1tJb" role="2Oq$k0">
+          <node concept="3clFbF" id="siw10F_zKF" role="3cqZAp">
+            <node concept="2OqwBi" id="siw10F_wqs" role="3clFbG">
+              <node concept="2OqwBi" id="siw10F_wqt" role="2Oq$k0">
+                <node concept="2OqwBi" id="siw10F_wqu" role="2Oq$k0">
+                  <node concept="2OqwBi" id="siw10F_wqv" role="2Oq$k0">
+                    <node concept="37vLTw" id="siw10F_wqw" role="2Oq$k0">
                       <ref role="3cqZAo" node="cJpacq1tIR" resolve="i" />
                     </node>
-                    <node concept="3TrEf2" id="cJpacq1tJc" role="2OqNvi">
+                    <node concept="3TrEf2" id="siw10F_wqx" role="2OqNvi">
                       <ref role="3Tt5mk" to="w9y2:6LfBX8YlosG" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="cJpacq1tJd" role="2OqNvi">
+                  <node concept="3TrEf2" id="siw10F_wqy" role="2OqNvi">
                     <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="cJpacq1tJe" role="2OqNvi">
+                <node concept="2qgKlT" id="siw10F_wqz" role="2OqNvi">
                   <ref role="37wK5l" to="3eba:7Zvsa54vnYI" resolve="allContents" />
                 </node>
               </node>
-              <node concept="v3k3i" id="cJpacq1tJf" role="2OqNvi">
-                <node concept="chp4Y" id="cJpacq1tJg" role="v3oSu">
+              <node concept="v3k3i" id="siw10F_wq$" role="2OqNvi">
+                <node concept="chp4Y" id="siw10F_wq_" role="v3oSu">
                   <ref role="cht4Q" to="w9y2:6LfBX8Ykpe7" resolve="RequiredPort" />
                 </node>
               </node>
