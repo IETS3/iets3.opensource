@@ -89,6 +89,7 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
       </concept>
@@ -200,6 +201,7 @@
   </node>
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="ComponentsExplorer" />
+    <property role="3aPfAI" value="1" />
     <ref role="14aYEx" to="h587:1ognOHjyiuQ" resolve="SpecExplorer" />
     <node concept="14aYG3" id="1ognOHjyj2a" role="14aYEy">
       <property role="TrG5h" value="componentsModule" />

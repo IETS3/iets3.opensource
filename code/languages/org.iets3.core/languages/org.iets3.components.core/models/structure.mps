@@ -9,6 +9,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -276,6 +278,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
     </node>
+    <node concept="1TJgyj" id="4UgzZxsF_yT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
+    </node>
     <node concept="PrWs8" id="6LfBX8YlosE" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
@@ -396,6 +404,58 @@
       <property role="20kJfa" value="sourceInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cJpacq6wur">
+    <property role="1pbfSe" value="491351102" />
+    <property role="TrG5h" value="Parameter" />
+    <property role="34LRSv" value="param" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="cJpacq6wuw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultValue" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="cJpacq6wuu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="cJpacq6wus" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="cJpacq6wvp" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UgzZxsF_xB">
+    <property role="1pbfSe" value="1421940641" />
+    <property role="3GE5qa" value="components.instances" />
+    <property role="TrG5h" value="ParameterValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4UgzZxsF_xC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4UgzZxsF_xI" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3NBP8_O5tqM">
+    <property role="1pbfSe" value="1325552837" />
+    <property role="TrG5h" value="ParamRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3NBP8_O5tqN" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
     </node>
   </node>
 </model>

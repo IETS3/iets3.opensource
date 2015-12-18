@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.components.devkit" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.functionalcomponenets/org.iets3.functionalcomponenets.devkit" folder="comp" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.design/org.iets3.components.design.mpl" folder="comp" />
