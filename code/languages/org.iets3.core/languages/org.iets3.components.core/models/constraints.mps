@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -59,10 +60,13 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
+      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
+        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
       <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -82,6 +86,9 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -596,6 +603,178 @@
                 <node concept="chp4Y" id="3NBP8_O3YUB" role="v3oSu">
                   <ref role="cht4Q" to="w9y2:cJpacq6wur" resolve="Parameter" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9m57">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMTx" resolve="IAssemblyConnectorAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9m58" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9m59" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9m6e" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9m8H" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9m6d" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9mcT" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9meZ" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:7Zvsa54vnWq" resolve="AssemblyConnector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9mhP">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMSI" resolve="IComponentAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9mhT" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9mhU" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9mhV" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9mhW" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9mhX" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9mhY" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9mkR" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9mo$">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OhYPL" resolve="IConnectorAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9mpK" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9mpL" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9mpM" role="3cqZAp">
+          <node concept="22lmx$" id="4A8SzOV9mwR" role="3clFbG">
+            <node concept="2OqwBi" id="4A8SzOV9mpN" role="3uHU7B">
+              <node concept="nLn13" id="4A8SzOV9mpO" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="4A8SzOV9mpP" role="2OqNvi">
+                <node concept="chp4Y" id="4A8SzOV9msI" role="cj9EA">
+                  <ref role="cht4Q" to="w9y2:7Zvsa54vnWq" resolve="AssemblyConnector" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4A8SzOV9mzA" role="3uHU7w">
+              <node concept="nLn13" id="4A8SzOV9mzB" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="4A8SzOV9mzC" role="2OqNvi">
+                <node concept="chp4Y" id="4A8SzOV9mAV" role="cj9EA">
+                  <ref role="cht4Q" to="w9y2:cJpacq1taR" resolve="DelegationConnector" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9mEU">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMUJ" resolve="IExportConnectorAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9mF4" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9mF5" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9mF6" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9mF8" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9mF9" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9mFa" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9mXn" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:cJpacq2_os" resolve="ExportConnector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9mQY">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMUk" resolve="IImportConnectorAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9mSd" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9mSe" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9mSf" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9mSg" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9mSh" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9mSi" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9mSj" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:cJpacq1tb1" resolve="ImportConnector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9n0s">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMO7" resolve="IInstanceAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9n0A" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9n0B" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9n0C" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9n0D" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9n0E" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9n0F" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9n3n" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9n6M">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMVa" resolve="IParameterAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9n84" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9n85" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9n86" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9n87" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9n88" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9n89" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9naP" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:cJpacq6wur" resolve="Parameter" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9ne8">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMNk" resolve="IPortAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9neo" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9nep" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9neq" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9ner" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9nes" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9net" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9njY" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4A8SzOV9nnh">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="1M2myG" to="w9y2:3NBP8_OgMRV" resolve="IPortTypeAttribute" />
+    <node concept="nKS2y" id="4A8SzOV9nn$" role="1MLUbF">
+      <node concept="3clFbS" id="4A8SzOV9nn_" role="2VODD2">
+        <node concept="3clFbF" id="4A8SzOV9nnA" role="3cqZAp">
+          <node concept="2OqwBi" id="4A8SzOV9nnB" role="3clFbG">
+            <node concept="nLn13" id="4A8SzOV9nnC" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4A8SzOV9nnD" role="2OqNvi">
+              <node concept="chp4Y" id="4A8SzOV9nql" role="cj9EA">
+                <ref role="cht4Q" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
               </node>
             </node>
           </node>

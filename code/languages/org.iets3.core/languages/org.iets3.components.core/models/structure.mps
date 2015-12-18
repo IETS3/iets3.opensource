@@ -94,6 +94,9 @@
     <node concept="PrWs8" id="cJpacq5MCT" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="3NBP8_OgMVm" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yi4pr">
     <property role="1pbfSe" value="1432885715" />
@@ -213,6 +216,9 @@
     <node concept="PrWs8" id="cJpacq4lZp" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
+    <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
     <node concept="1TJgyj" id="6LfBX8YlAdM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
@@ -293,11 +299,17 @@
     <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
     </node>
+    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8YlAdL">
     <property role="1pbfSe" value="1431960765" />
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IPortType" />
+    <node concept="PrWs8" id="4A8SzOV9V0X" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWq">
     <property role="1pbfSe" value="1000542277" />
@@ -307,6 +319,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7Zvsa54vnWB" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SzOV88Hn" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="1TJgyj" id="7Zvsa54vwqx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -354,6 +369,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cJpacq2TIV" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SzOV88Gw" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
     </node>
   </node>
   <node concept="1TIwiD" id="cJpacq1tb1">
@@ -426,6 +444,9 @@
     <node concept="PrWs8" id="cJpacq6wus" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
+    <node concept="PrWs8" id="4A8SzOV9V1o" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
     <node concept="PrWs8" id="cJpacq6wvp" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
@@ -458,6 +479,94 @@
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMyV">
+    <property role="1pbfSe" value="1322582716" />
+    <property role="TrG5h" value="IAttribute" />
+    <property role="3GE5qa" value="attributes" />
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMNk">
+    <property role="1pbfSe" value="1322581667" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IPortAttribute" />
+    <node concept="PrWs8" id="3NBP8_OgMO5" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMO7">
+    <property role="1pbfSe" value="1322581616" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IInstanceAttribute" />
+    <node concept="PrWs8" id="3NBP8_OgMOS" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMRV">
+    <property role="1pbfSe" value="1322581372" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IPortTypeAttribute" />
+    <node concept="PrWs8" id="3NBP8_OgMSG" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMSI">
+    <property role="1pbfSe" value="1322581321" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IComponentAttribute" />
+    <node concept="PrWs8" id="3NBP8_OgMTv" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMTx">
+    <property role="1pbfSe" value="1322581270" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IAssemblyConnectorAttribute" />
+    <node concept="PrWs8" id="3NBP8_OhYPU" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OhYPL" resolve="IConnectorAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMUk">
+    <property role="1pbfSe" value="1322581219" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IImportConnectorAttribute" />
+    <node concept="PrWs8" id="3NBP8_OhYPO" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OhYPL" resolve="IConnectorAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMUJ">
+    <property role="1pbfSe" value="1322581192" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IExportConnectorAttribute" />
+    <node concept="PrWs8" id="3NBP8_OhYPR" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OhYPL" resolve="IConnectorAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMVa">
+    <property role="1pbfSe" value="1322581165" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IParameterAttribute" />
+    <node concept="PrWs8" id="3NBP8_OgMVb" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OgMVd">
+    <property role="1pbfSe" value="1322581162" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IAttributed" />
+    <node concept="1TJgyj" id="3NBP8_OgMVe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3NBP8_OhYPL">
+    <property role="1pbfSe" value="1322270214" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IConnectorAttribute" />
+    <node concept="PrWs8" id="3NBP8_OhYPM" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
 </model>
