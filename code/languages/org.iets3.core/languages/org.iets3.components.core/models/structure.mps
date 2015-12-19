@@ -247,24 +247,6 @@
       <ref role="20lvS9" node="6LfBX8YlAdL" resolve="IPortType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6LfBX8Ykpe6">
-    <property role="1pbfSe" value="1432276136" />
-    <property role="3GE5qa" value="components.ports" />
-    <property role="TrG5h" value="ProvidedPort" />
-    <property role="34LRSv" value="provide" />
-    <ref role="1TJDcQ" node="6LfBX8YkpdW" resolve="Port" />
-  </node>
-  <node concept="1TIwiD" id="6LfBX8Ykpe7">
-    <property role="1pbfSe" value="1432276135" />
-    <property role="3GE5qa" value="components.ports" />
-    <property role="TrG5h" value="RequiredPort" />
-    <property role="34LRSv" value="require" />
-    <ref role="1TJDcQ" node="6LfBX8YkpdW" resolve="Port" />
-    <node concept="1TJgyi" id="cJpacpZUKt" role="1TKVEl">
-      <property role="TrG5h" value="optional" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6LfBX8Yk_s_">
     <property role="1pbfSe" value="1432226057" />
     <property role="3GE5qa" value="components.interface" />
