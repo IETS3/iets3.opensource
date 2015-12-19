@@ -1509,6 +1509,14 @@
       <node concept="10P_77" id="mIQkxf$s4b" role="3clF45" />
       <node concept="3clFbS" id="mIQkxf$s3M" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="mIQkxgI2fs" role="13h7CS">
+      <property role="TrG5h" value="categoryString" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="mIQkxgI2ft" role="1B3o_S" />
+      <node concept="17QB3L" id="mIQkxgI2im" role="3clF45" />
+      <node concept="3clFbS" id="mIQkxgI2fv" role="3clF47" />
+    </node>
     <node concept="13i0hz" id="mIQkxfpv6J" role="13h7CS">
       <property role="TrG5h" value="oppositeCategory" />
       <property role="13i0it" value="true" />
@@ -1543,12 +1551,6 @@
                     <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
                   </node>
                   <node concept="3Tm1VV" id="mIQkxgj4vf" role="1B3o_S" />
-                  <node concept="37vLTG" id="mIQkxgj4vh" role="3clF46">
-                    <property role="TrG5h" value="graphics" />
-                    <node concept="3uibUv" id="mIQkxgj4vi" role="1tU5fm">
-                      <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-                    </node>
-                  </node>
                   <node concept="37vLTG" id="mIQkxgj4vj" role="3clF46">
                     <property role="TrG5h" value="bounds" />
                     <node concept="3uibUv" id="mIQkxgj4vk" role="1tU5fm">
@@ -1756,6 +1758,21 @@
       </node>
       <node concept="10P_77" id="mIQkxfpvga" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="mIQkxgI2jE" role="13h7CS">
+      <property role="TrG5h" value="categoryString" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="mIQkxgI2fs" resolve="categoryString" />
+      <node concept="3Tm1VV" id="mIQkxgI2jF" role="1B3o_S" />
+      <node concept="3clFbS" id="mIQkxgI2jI" role="3clF47">
+        <node concept="3clFbF" id="mIQkxgI2jV" role="3cqZAp">
+          <node concept="Xl_RD" id="mIQkxgI2jU" role="3clFbG">
+            <property role="Xl_RC" value="data" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="mIQkxgI2jJ" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="mIQkxfpvjq">
     <property role="3GE5qa" value="components.ports.data" />
@@ -1866,12 +1883,6 @@
                     <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
                   </node>
                   <node concept="3Tm1VV" id="mIQkxgj09r" role="1B3o_S" />
-                  <node concept="37vLTG" id="mIQkxgj09s" role="3clF46">
-                    <property role="TrG5h" value="graphics" />
-                    <node concept="3uibUv" id="mIQkxgj09t" role="1tU5fm">
-                      <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-                    </node>
-                  </node>
                   <node concept="37vLTG" id="mIQkxgj09u" role="3clF46">
                     <property role="TrG5h" value="bounds" />
                     <node concept="3uibUv" id="mIQkxgj09v" role="1tU5fm">
@@ -2202,12 +2213,6 @@
                     <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
                   </node>
                   <node concept="3Tm1VV" id="mIQkxgiYFL" role="1B3o_S" />
-                  <node concept="37vLTG" id="mIQkxgiYFN" role="3clF46">
-                    <property role="TrG5h" value="graphics" />
-                    <node concept="3uibUv" id="mIQkxgiYFO" role="1tU5fm">
-                      <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-                    </node>
-                  </node>
                   <node concept="37vLTG" id="mIQkxgiYFP" role="3clF46">
                     <property role="TrG5h" value="bounds" />
                     <node concept="3uibUv" id="mIQkxgiYFQ" role="1tU5fm">
@@ -2410,6 +2415,21 @@
       </node>
       <node concept="10P_77" id="mIQkxfKjkk" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="mIQkxgI2kR" role="13h7CS">
+      <property role="TrG5h" value="categoryString" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="mIQkxgI2fs" resolve="categoryString" />
+      <node concept="3Tm1VV" id="mIQkxgI2kS" role="1B3o_S" />
+      <node concept="3clFbS" id="mIQkxgI2kV" role="3clF47">
+        <node concept="3clFbF" id="mIQkxgI2l8" role="3cqZAp">
+          <node concept="Xl_RD" id="mIQkxgI2l7" role="3clFbG">
+            <property role="Xl_RC" value="service" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="mIQkxgI2kW" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="mIQkxfKjjz" role="13h7CW">
       <node concept="3clFbS" id="mIQkxfKjj$" role="2VODD2" />
     </node>
@@ -2522,12 +2542,6 @@
                     <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
                   </node>
                   <node concept="3Tm1VV" id="mIQkxgqi$w" role="1B3o_S" />
-                  <node concept="37vLTG" id="mIQkxgqi$x" role="3clF46">
-                    <property role="TrG5h" value="graphics" />
-                    <node concept="3uibUv" id="mIQkxgqi$y" role="1tU5fm">
-                      <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-                    </node>
-                  </node>
                   <node concept="37vLTG" id="mIQkxgqi$z" role="3clF46">
                     <property role="TrG5h" value="bounds" />
                     <node concept="3uibUv" id="mIQkxgqi$$" role="1tU5fm">
@@ -2820,12 +2834,6 @@
                     <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
                   </node>
                   <node concept="3Tm1VV" id="mIQkxgqiLz" role="1B3o_S" />
-                  <node concept="37vLTG" id="mIQkxgqiL$" role="3clF46">
-                    <property role="TrG5h" value="graphics" />
-                    <node concept="3uibUv" id="mIQkxgqiL_" role="1tU5fm">
-                      <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-                    </node>
-                  </node>
                   <node concept="37vLTG" id="mIQkxgqiLA" role="3clF46">
                     <property role="TrG5h" value="bounds" />
                     <node concept="3uibUv" id="mIQkxgqiLB" role="1tU5fm">
@@ -3454,12 +3462,6 @@
       </node>
       <node concept="3Tm1VV" id="mIQkxgiWBK" role="1B3o_S" />
       <node concept="3clFbS" id="mIQkxgiWBL" role="3clF47" />
-      <node concept="37vLTG" id="mIQkxgiXty" role="3clF46">
-        <property role="TrG5h" value="graphics" />
-        <node concept="3uibUv" id="mIQkxgiXtx" role="1tU5fm">
-          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
-        </node>
-      </node>
       <node concept="37vLTG" id="mIQkxgiXue" role="3clF46">
         <property role="TrG5h" value="bounds" />
         <node concept="3uibUv" id="mIQkxgiXwU" role="1tU5fm">
