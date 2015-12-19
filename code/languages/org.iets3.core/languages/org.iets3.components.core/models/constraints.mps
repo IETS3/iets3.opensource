@@ -736,9 +736,7 @@
                       <ref role="3Tt5mk" to="w9y2:mIQkxfpv7_" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="mIQkxfCHMP" role="2OqNvi">
-                    <ref role="37wK5l" to="3eba:mIQkxfpv6J" resolve="oppositeCategory" />
-                  </node>
+                  <node concept="2yIwOk" id="mIQkxfCWVO" role="2OqNvi" />
                 </node>
               </node>
             </node>
