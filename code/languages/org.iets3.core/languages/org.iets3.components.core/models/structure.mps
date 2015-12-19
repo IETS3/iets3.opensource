@@ -14,6 +14,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -213,7 +222,7 @@
     <property role="1pbfSe" value="1432276146" />
     <property role="3GE5qa" value="components.ports" />
     <property role="TrG5h" value="Port" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6LfBX8YkpdX" role="PzmwI">
@@ -224,6 +233,12 @@
     </node>
     <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="1TJgyj" id="mIQkxfpv7_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="category" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="siw10H0or2" resolve="PortCategory" />
     </node>
     <node concept="1TJgyj" id="6LfBX8YlAdM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -345,13 +360,13 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="sourcePort" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe7" resolve="RequiredPort" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
     <node concept="1TJgyj" id="cJpacq1tkk" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="targetPort" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe6" resolve="ProvidedPort" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWD">
@@ -378,56 +393,6 @@
     </node>
     <node concept="PrWs8" id="4A8SzOV88Gw" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="cJpacq1tb1">
-    <property role="1pbfSe" value="490026852" />
-    <property role="3GE5qa" value="components.substructure" />
-    <property role="TrG5h" value="ImportConnector" />
-    <property role="34LRSv" value="import" />
-    <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
-    <node concept="1TJgyj" id="cJpacq1V$l" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="targetInstance" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
-    </node>
-    <node concept="1TJgyj" id="cJpacq1tbb" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="outerRequiredPort" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe7" resolve="RequiredPort" />
-    </node>
-    <node concept="1TJgyj" id="cJpacq1V$o" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="targetPort" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe7" resolve="RequiredPort" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="cJpacq2_os">
-    <property role="1pbfSe" value="490322623" />
-    <property role="3GE5qa" value="components.substructure" />
-    <property role="TrG5h" value="ExportConnector" />
-    <property role="34LRSv" value="export" />
-    <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
-    <node concept="1TJgyj" id="cJpacq2_ov" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="outerProvidedPort" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe6" resolve="ProvidedPort" />
-    </node>
-    <node concept="1TJgyj" id="cJpacq2_ow" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sourcePort" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8Ykpe6" resolve="ProvidedPort" />
-    </node>
-    <node concept="1TJgyj" id="cJpacq2_ot" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sourceInstance" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="cJpacq6wur">
@@ -602,6 +567,112 @@
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="siw10FiR6c" resolve="ISubstructureContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="siw10H0or2">
+    <property role="1pbfSe" value="873727698" />
+    <property role="3GE5qa" value="components.ports" />
+    <property role="TrG5h" value="PortCategory" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="AxPO7" id="siw10H0ozv">
+    <property role="3GE5qa" value="components.ports" />
+    <property role="TrG5h" value="PortCategoryKind" />
+    <property role="PDuV0" value="false" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="siw10H0ozw" role="M5hS2">
+      <property role="1uS6qv" value="left" />
+      <property role="1uS6qo" value="left" />
+    </node>
+    <node concept="M4N5e" id="siw10H0ozT" role="M5hS2">
+      <property role="1uS6qo" value="right" />
+      <property role="1uS6qv" value="right" />
+    </node>
+    <node concept="M4N5e" id="siw10H0ozW" role="M5hS2">
+      <property role="1uS6qv" value="top" />
+      <property role="1uS6qo" value="top" />
+    </node>
+    <node concept="M4N5e" id="siw10H0o$0" role="M5hS2">
+      <property role="1uS6qv" value="bottom" />
+      <property role="1uS6qo" value="bottom" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mIQkxfpv7c">
+    <property role="1pbfSe" value="1427426068" />
+    <property role="3GE5qa" value="components.ports.data" />
+    <property role="TrG5h" value="DataPortCategory" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
+  </node>
+  <node concept="1TIwiD" id="mIQkxfpv9A">
+    <property role="1pbfSe" value="1427426222" />
+    <property role="3GE5qa" value="components.ports.data" />
+    <property role="TrG5h" value="ConsumesPortCategory" />
+    <property role="34LRSv" value="consumes" />
+    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
+    <node concept="1TJgyi" id="mIQkxfrzIk" role="1TKVEl">
+      <property role="TrG5h" value="optional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mIQkxfpvaK">
+    <property role="1pbfSe" value="1427426296" />
+    <property role="3GE5qa" value="components.ports.data" />
+    <property role="TrG5h" value="ProducesPortCategory" />
+    <property role="34LRSv" value="produces" />
+    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
+  </node>
+  <node concept="1TIwiD" id="cJpacq1tb1">
+    <property role="1pbfSe" value="490026852" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="ImportConnector" />
+    <property role="34LRSv" value="import" />
+    <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
+    <node concept="1TJgyj" id="cJpacq1V$l" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
+    </node>
+    <node concept="1TJgyj" id="cJpacq1tbb" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outerPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="1TJgyj" id="cJpacq1V$o" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="targetPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cJpacq2_os">
+    <property role="1pbfSe" value="490322623" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="ExportConnector" />
+    <property role="34LRSv" value="export" />
+    <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
+    <node concept="1TJgyj" id="cJpacq2_ov" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outerPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="1TJgyj" id="cJpacq2_ow" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sourcePort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="1TJgyj" id="cJpacq2_ot" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
     </node>
   </node>
 </model>
