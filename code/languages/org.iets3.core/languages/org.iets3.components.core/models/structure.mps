@@ -196,20 +196,6 @@
       <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6LfBX8YiZB3">
-    <property role="1pbfSe" value="1432643179" />
-    <property role="3GE5qa" value="components.interface" />
-    <property role="TrG5h" value="Interface" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6LfBX8YiZBg" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yivpj" resolve="IComponentsChunkContent" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8Yl8fb" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6LfBX8Yj9nw">
     <property role="1pbfSe" value="1432603214" />
     <property role="3GE5qa" value="components" />
@@ -234,6 +220,9 @@
     <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
     </node>
+    <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
     <node concept="1TJgyj" id="mIQkxfpv7_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="category" />
@@ -245,24 +234,6 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YlAdL" resolve="IPortType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6LfBX8Yk_s_">
-    <property role="1pbfSe" value="1432226057" />
-    <property role="3GE5qa" value="components.interface" />
-    <property role="TrG5h" value="InterfaceRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6LfBX8Yk_sM" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8YiZB3" resolve="Interface" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8Yl7HI" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8YlAdR" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8YlAdL" resolve="IPortType" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yl7sG">
@@ -319,13 +290,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="AssemblyConnector" />
     <property role="34LRSv" value="connect" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="siw10FiR6h" role="PzmwI">
-      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
-    </node>
-    <node concept="PrWs8" id="4A8SzOV88Hn" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
+    <ref role="1TJDcQ" node="mIQkxg5ZSA" resolve="AbstractConnector" />
     <node concept="1TJgyj" id="7Zvsa54vwqx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sourceInstance" />
@@ -369,13 +334,7 @@
     <property role="TrG5h" value="DelegationConnector" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="siw10FiR6d" role="PzmwI">
-      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
-    </node>
-    <node concept="PrWs8" id="4A8SzOV88Gw" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
+    <ref role="1TJDcQ" node="mIQkxg5ZSA" resolve="AbstractConnector" />
   </node>
   <node concept="1TIwiD" id="cJpacq6wur">
     <property role="1pbfSe" value="491351102" />
@@ -655,6 +614,46 @@
       <property role="20kJfa" value="sourceInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mIQkxfKjiq">
+    <property role="1pbfSe" value="1433406946" />
+    <property role="3GE5qa" value="components.ports.service" />
+    <property role="TrG5h" value="ServicePortCategory" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
+  </node>
+  <node concept="1TIwiD" id="mIQkxfKjkw">
+    <property role="1pbfSe" value="1433407080" />
+    <property role="3GE5qa" value="components.ports.service" />
+    <property role="TrG5h" value="ProvidesPortCategory" />
+    <property role="34LRSv" value="provides" />
+    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
+  </node>
+  <node concept="1TIwiD" id="mIQkxfKjnz">
+    <property role="1pbfSe" value="1433407275" />
+    <property role="3GE5qa" value="components.ports.service" />
+    <property role="TrG5h" value="UsesPortCategory" />
+    <property role="34LRSv" value="uses" />
+    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
+    <node concept="1TJgyi" id="mIQkxfKjuV" role="1TKVEl">
+      <property role="TrG5h" value="optional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mIQkxg5ZSA">
+    <property role="1pbfSe" value="1439094638" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="AbstractConnector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="mIQkxg5ZSB" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
+    </node>
+    <node concept="PrWs8" id="mIQkxg5ZSC" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
     </node>
   </node>
 </model>

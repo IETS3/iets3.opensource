@@ -159,44 +159,6 @@
     <property role="3GE5qa" value="components.ports" />
     <ref role="1M2myG" to="w9y2:6LfBX8YkpdW" resolve="Port" />
   </node>
-  <node concept="1M2fIO" id="6LfBX8Yk_zq">
-    <property role="3GE5qa" value="components.interface" />
-    <ref role="1M2myG" to="w9y2:6LfBX8Yk_s_" resolve="InterfaceRef" />
-    <node concept="1N5Pfh" id="6LfBX8Yk_zr" role="1Mr941">
-      <ref role="1N5Vy1" to="w9y2:6LfBX8Yk_sM" />
-      <node concept="1MUpDS" id="6LfBX8Yk_zt" role="1N6uqs">
-        <node concept="3clFbS" id="6LfBX8Yk_zu" role="2VODD2">
-          <node concept="3clFbF" id="6LfBX8Yk$vQ" role="3cqZAp">
-            <node concept="2OqwBi" id="6LfBX8Yk$Wp" role="3clFbG">
-              <node concept="2OqwBi" id="6LfBX8Yk$FB" role="2Oq$k0">
-                <node concept="2OqwBi" id="6LfBX8Yk$yO" role="2Oq$k0">
-                  <node concept="21POm0" id="6LfBX8Yk$vP" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="6LfBX8Yk$AE" role="2OqNvi">
-                    <node concept="1xMEDy" id="6LfBX8Yk$AG" role="1xVPHs">
-                      <node concept="chp4Y" id="6LfBX8Yk$C1" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="6LfBX8Yk$Lq" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="6LfBX8Yk$Ot" role="37wK5m">
-                    <ref role="3TV0OU" to="w9y2:6LfBX8YiZB3" resolve="Interface" />
-                  </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="6LfBX8Yk_5w" role="2OqNvi">
-                <node concept="chp4Y" id="6LfBX8Yk_b$" role="v3oSu">
-                  <ref role="cht4Q" to="w9y2:6LfBX8YiZB3" resolve="Interface" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="7Zvsa54vvCe">
     <property role="3GE5qa" value="components.substructure" />
     <ref role="1M2myG" to="w9y2:7Zvsa54vnWD" resolve="InstanceRef" />
