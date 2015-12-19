@@ -2557,9 +2557,6 @@
           <node concept="PMmxH" id="siw10FzUzb" role="3EZMnx">
             <ref role="PMmxG" node="4A8SzOVasuR" resolve="summary" />
           </node>
-          <node concept="3F0ifn" id="siw10FzU$T" role="3EZMnx">
-            <property role="3F0ifm" value="P:" />
-          </node>
           <node concept="3F0A7n" id="siw10FzU$D" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
@@ -2600,9 +2597,6 @@
           <node concept="2iRfu4" id="siw10G6Tlz" role="2iSdaV" />
           <node concept="PMmxH" id="siw10FzUBv" role="3EZMnx">
             <ref role="PMmxG" node="4A8SzOVasuR" resolve="summary" />
-          </node>
-          <node concept="3F0ifn" id="siw10FzUB_" role="3EZMnx">
-            <property role="3F0ifm" value="R:" />
           </node>
           <node concept="3F0A7n" id="siw10FzUBA" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
