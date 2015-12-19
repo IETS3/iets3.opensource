@@ -17,7 +17,6 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -57,10 +56,6 @@
     <node concept="PrWs8" id="6sdnDbSlaol" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="6sdnDbSlcHl">
-    <property role="1pbfSe" value="1600268775" />
-    <property role="TrG5h" value="ILIteral" />
   </node>
   <node concept="1TIwiD" id="6sdnDbSlMSN">
     <property role="1pbfSe" value="1600425157" />
@@ -247,6 +242,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7halHeUzscN">
+    <property role="1pbfSe" value="785914374" />
+    <property role="TrG5h" value="AbstractLiteral" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
 

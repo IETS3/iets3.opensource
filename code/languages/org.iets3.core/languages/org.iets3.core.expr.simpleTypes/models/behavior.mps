@@ -21,11 +21,7 @@
         <child id="1225194240801" name="constructor" index="13h7CW" />
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
-      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472832" name="isVirtual" index="13i0it" />
-        <property id="1225194472834" name="isAbstract" index="13i0iv" />
-        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
-      </concept>
+      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -56,9 +52,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -289,21 +282,6 @@
     <node concept="13hLZK" id="4rZeNQ6OfoH" role="13h7CW">
       <node concept="3clFbS" id="4rZeNQ6OfoI" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="3NBP8_O4f4t" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="3NBP8_O4f4u" role="1B3o_S" />
-      <node concept="3clFbS" id="3NBP8_O4f4x" role="3clF47">
-        <node concept="3clFbF" id="3NBP8_O4f6Z" role="3cqZAp">
-          <node concept="3clFbT" id="3NBP8_O4f6Y" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3NBP8_O4f4y" role="3clF45" />
-    </node>
   </node>
   <node concept="13h7C7" id="3NBP8_O4f1c">
     <property role="3GE5qa" value="bool" />
@@ -311,42 +289,12 @@
     <node concept="13hLZK" id="3NBP8_O4f1d" role="13h7CW">
       <node concept="3clFbS" id="3NBP8_O4f1e" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="3NBP8_O4f1x" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="3NBP8_O4f1y" role="1B3o_S" />
-      <node concept="3clFbS" id="3NBP8_O4f1_" role="3clF47">
-        <node concept="3clFbF" id="3NBP8_O4f1T" role="3cqZAp">
-          <node concept="3clFbT" id="3NBP8_O4f1S" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3NBP8_O4f1A" role="3clF45" />
-    </node>
   </node>
   <node concept="13h7C7" id="3NBP8_O4fqj">
     <property role="3GE5qa" value="string" />
     <ref role="13h7C2" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
     <node concept="13hLZK" id="3NBP8_O4fqk" role="13h7CW">
       <node concept="3clFbS" id="3NBP8_O4fql" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3NBP8_O4fqm" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="3NBP8_O4fqn" role="1B3o_S" />
-      <node concept="3clFbS" id="3NBP8_O4fqq" role="3clF47">
-        <node concept="3clFbF" id="3NBP8_O4fqI" role="3cqZAp">
-          <node concept="3clFbT" id="3NBP8_O4fqH" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3NBP8_O4fqr" role="3clF45" />
     </node>
   </node>
 </model>
