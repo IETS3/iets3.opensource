@@ -96,7 +96,7 @@
     <node concept="1TJgyj" id="1MFobPstYO8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="icon" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
     </node>
     <node concept="1TJgyi" id="6LfBX8Yi4o4" role="1TKVEl">
@@ -117,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="3NBP8_OgMVm" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="PrWs8" id="7Atos1y6Hyx" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yi4pr">
@@ -257,6 +260,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="instance" />
+    <property role="MwhBj" value="${module}/icons/instance.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6LfBX8YlosG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -282,6 +286,9 @@
     <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
     </node>
+    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8YlAdL">
     <property role="1pbfSe" value="1431960765" />
@@ -296,6 +303,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="AssemblyConnector" />
     <property role="34LRSv" value="connect" />
+    <property role="MwhBj" value="${module}/icons/connect.png" />
     <ref role="1TJDcQ" node="mIQkxg5ZSA" resolve="AbstractConnector" />
     <node concept="1TJgyj" id="7Zvsa54vwqx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -577,6 +585,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ImportConnector" />
     <property role="34LRSv" value="import" />
+    <property role="MwhBj" value="${module}/icons/import.png" />
     <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
     <node concept="1TJgyj" id="cJpacq1V$l" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -602,6 +611,7 @@
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ExportConnector" />
     <property role="34LRSv" value="export" />
+    <property role="MwhBj" value="${module}/icons/export.png" />
     <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
     <node concept="1TJgyj" id="cJpacq2_ov" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -660,6 +670,9 @@
     </node>
     <node concept="PrWs8" id="mIQkxg5ZSC" role="PzmwI">
       <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="PrWs8" id="7Atos1yb6hI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
   </node>
 </model>
