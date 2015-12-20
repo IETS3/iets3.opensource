@@ -881,6 +881,60 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7Atos1xKgck" role="13h7CS">
+      <property role="TrG5h" value="iconPath" />
+      <node concept="3Tm1VV" id="7Atos1xKgcl" role="1B3o_S" />
+      <node concept="17QB3L" id="7Atos1xKgcm" role="3clF45" />
+      <node concept="3clFbS" id="7Atos1xKgcn" role="3clF47">
+        <node concept="3cpWs8" id="7Atos1xKgco" role="3cqZAp">
+          <node concept="3cpWsn" id="7Atos1xKgcp" role="3cpWs9">
+            <property role="TrG5h" value="icon" />
+            <node concept="3Tqbb2" id="7Atos1xKgcq" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+            </node>
+            <node concept="2OqwBi" id="7Atos1xKgcr" role="33vP2m">
+              <node concept="13iPFW" id="7Atos1xKgcu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7Atos1xKgcx" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:1MFobPstYO8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7Atos1xKgcy" role="3cqZAp">
+          <node concept="3clFbS" id="7Atos1xKgcz" role="3clFbx">
+            <node concept="3cpWs6" id="7Atos1xKgc$" role="3cqZAp">
+              <node concept="2OqwBi" id="7Atos1xKgc_" role="3cqZAk">
+                <node concept="37vLTw" id="7Atos1xKgcA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Atos1xKgcp" resolve="icon" />
+                </node>
+                <node concept="2qgKlT" id="7Atos1xKgcB" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="7Atos1xKgcC" role="3clFbw">
+            <node concept="2OqwBi" id="7Atos1xKgcD" role="3uHU7w">
+              <node concept="37vLTw" id="7Atos1xKgcE" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Atos1xKgcp" resolve="icon" />
+              </node>
+              <node concept="2qgKlT" id="7Atos1xKgcF" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:5lKnBeAufga" resolve="isValidFile" />
+              </node>
+            </node>
+            <node concept="3y3z36" id="7Atos1xKgcG" role="3uHU7B">
+              <node concept="37vLTw" id="7Atos1xKgcH" role="3uHU7B">
+                <ref role="3cqZAo" node="7Atos1xKgcp" resolve="icon" />
+              </node>
+              <node concept="10Nm6u" id="7Atos1xKgcI" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Atos1xKgcJ" role="3cqZAp">
+          <node concept="10Nm6u" id="7Atos1xKgcK" role="3clFbG" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6LfBX8Yl7Hw">
     <property role="3GE5qa" value="components" />
@@ -1159,6 +1213,31 @@
         <property role="TrG5h" value="cat" />
         <node concept="3bZ5Sz" id="mIQkxfteou" role="1tU5fm">
           <ref role="3bZ5Sy" to="w9y2:siw10H0or2" resolve="PortCategory" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1MFobPs_HJR" role="13h7CS">
+      <property role="TrG5h" value="iconPath" />
+      <node concept="3Tm1VV" id="1MFobPs_HJS" role="1B3o_S" />
+      <node concept="17QB3L" id="1MFobPs_HVZ" role="3clF45" />
+      <node concept="3clFbS" id="1MFobPs_HJU" role="3clF47">
+        <node concept="3clFbF" id="7Atos1xKhJH" role="3cqZAp">
+          <node concept="2OqwBi" id="7Atos1xKhUg" role="3clFbG">
+            <node concept="2OqwBi" id="1MFobPs_IMl" role="2Oq$k0">
+              <node concept="2OqwBi" id="1MFobPs_IMm" role="2Oq$k0">
+                <node concept="13iPFW" id="1MFobPs_IMn" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1MFobPs_IMo" role="2OqNvi">
+                  <ref role="3Tt5mk" to="w9y2:6LfBX8YlosG" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="1MFobPs_IMp" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7Atos1xKi97" role="2OqNvi">
+              <ref role="37wK5l" node="7Atos1xKgck" resolve="iconPath" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
