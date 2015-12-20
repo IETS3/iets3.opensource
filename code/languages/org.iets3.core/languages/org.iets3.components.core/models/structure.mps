@@ -523,6 +523,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
+    <node concept="PrWs8" id="7Atos1ycc1Q" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
   </node>
   <node concept="1TIwiD" id="siw10H0or2">
     <property role="1pbfSe" value="873727698" />
