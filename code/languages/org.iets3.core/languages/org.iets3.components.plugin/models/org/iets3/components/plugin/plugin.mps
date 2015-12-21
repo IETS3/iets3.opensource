@@ -16,6 +16,7 @@
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="aku0" ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -277,15 +278,16 @@
             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
-        <node concept="2YIFZM" id="1ognOHjzfBX" role="3actZa">
-          <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-          <node concept="14b0Wr" id="1ognOHjzo69" role="37wK5m">
-            <ref role="14b0Uw" node="1ognOHjzeue" resolve="content" />
-          </node>
-        </node>
         <node concept="3clFbT" id="1ognOHjzNg2" role="2q6PdT">
           <property role="3clFbU" value="false" />
+        </node>
+        <node concept="2OqwBi" id="2JYumEA$y7D" role="3actZa">
+          <node concept="14b0Wr" id="2JYumEA$y1U" role="2Oq$k0">
+            <ref role="14b0Uw" node="1ognOHjzeue" resolve="content" />
+          </node>
+          <node concept="2qgKlT" id="2JYumEA$ykP" role="2OqNvi">
+            <ref role="37wK5l" to="3eba:2JYumEA$tiF" resolve="getIcon" />
+          </node>
         </node>
       </node>
       <node concept="2YIFZM" id="1ognOHjypwX" role="14bQOc">

@@ -1310,6 +1310,26 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2JYumEA$wqo" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getIcon" />
+      <ref role="13i0hy" node="2JYumEA$tiF" resolve="getIcon" />
+      <node concept="3Tm1VV" id="2JYumEA$wqp" role="1B3o_S" />
+      <node concept="3clFbS" id="2JYumEA$wqv" role="3clF47">
+        <node concept="3clFbF" id="2JYumEA$xpN" role="3cqZAp">
+          <node concept="2OqwBi" id="2JYumEA$xvN" role="3clFbG">
+            <node concept="13iPFW" id="2JYumEA$xpI" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2JYumEA$xGq" role="2OqNvi">
+              <ref role="37wK5l" node="7jwD7MQjeSk" resolve="getComponentIconSmall" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2JYumEA$wqw" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6LfBX8Yl7Hw">
     <property role="3GE5qa" value="components" />
@@ -5152,6 +5172,31 @@
     </node>
     <node concept="2tJIrI" id="7jwD7MQeYs0" role="jymVt" />
     <node concept="3Tm1VV" id="7jwD7MQeYr7" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="2JYumEA$tiC">
+    <property role="3GE5qa" value="chunk" />
+    <ref role="13h7C2" to="w9y2:6LfBX8Yivpj" resolve="IComponentsChunkContent" />
+    <node concept="13i0hz" id="2JYumEA$tiF" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getIcon" />
+      <node concept="3Tm1VV" id="2JYumEA$tiG" role="1B3o_S" />
+      <node concept="3uibUv" id="2JYumEA$tiN" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+      </node>
+      <node concept="3clFbS" id="2JYumEA$tiI" role="3clF47">
+        <node concept="3clFbF" id="2JYumEA$tiT" role="3cqZAp">
+          <node concept="2YIFZM" id="2JYumEA$tkt" role="3clFbG">
+            <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
+            <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+            <node concept="13iPFW" id="2JYumEA$tkJ" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="2JYumEA$tiD" role="13h7CW">
+      <node concept="3clFbS" id="2JYumEA$tiE" role="2VODD2" />
+    </node>
   </node>
 </model>
 
