@@ -75,7 +75,7 @@
     <node concept="14StLt" id="4rZeNQ6OesJ" role="V601i">
       <property role="TrG5h" value="number" />
       <node concept="VechU" id="4rZeNQ6OesL" role="3F10Kt">
-        <property role="Vb096" value="magenta" />
+        <property role="Vb096" value="DARK_MAGENTA" />
       </node>
       <node concept="1Ex9Rl" id="4rZeNQ6OesM" role="lGtFl">
         <property role="34HCRG" value="Number" />
