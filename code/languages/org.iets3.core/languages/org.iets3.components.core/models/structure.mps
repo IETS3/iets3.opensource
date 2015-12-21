@@ -163,6 +163,10 @@
     <property role="1pbfSe" value="1432775131" />
     <property role="TrG5h" value="IComponentsChunkContent" />
     <property role="3GE5qa" value="chunk" />
+    <node concept="1TJgyi" id="5kXA14mWc_G" role="1TKVEl">
+      <property role="TrG5h" value="public" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="cJpacq5ToW" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
