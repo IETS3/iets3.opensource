@@ -158,6 +158,9 @@
     <node concept="PrWs8" id="6LfBX8YlYHw" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
     </node>
+    <node concept="PrWs8" id="1k3knzd5BTM" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yivpj">
     <property role="1pbfSe" value="1432775131" />

@@ -248,5 +248,12 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1k3knzd4P65">
+    <property role="1pbfSe" value="501832963" />
+    <property role="3GE5qa" value="binary.p0500" />
+    <property role="TrG5h" value="LogicalImpliesExpression" />
+    <property role="34LRSv" value="=&gt;" />
+    <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 

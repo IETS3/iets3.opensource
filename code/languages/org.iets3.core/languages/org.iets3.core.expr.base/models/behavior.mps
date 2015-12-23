@@ -512,5 +512,28 @@
       <node concept="10P_77" id="3NBP8_O4f8b" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="1k3knzd4P6H">
+    <property role="3GE5qa" value="binary.p0500" />
+    <ref role="13h7C2" to="hm2y:1k3knzd4P65" resolve="ImpliesExpression" />
+    <node concept="13hLZK" id="1k3knzd4P6I" role="13h7CW">
+      <node concept="3clFbS" id="1k3knzd4P6J" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1k3knzd4P6Z" role="13h7CS">
+      <property role="TrG5h" value="priority" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="4rZeNQ6MpZB" resolve="priority" />
+      <node concept="3Tm1VV" id="1k3knzd4P70" role="1B3o_S" />
+      <node concept="3clFbS" id="1k3knzd4P73" role="3clF47">
+        <node concept="3clFbF" id="1k3knzd4P7a" role="3cqZAp">
+          <node concept="3cmrfG" id="1k3knzd4P79" role="3clFbG">
+            <property role="3cmrfH" value="600" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="1k3knzd4P74" role="3clF45" />
+    </node>
+  </node>
 </model>
 
