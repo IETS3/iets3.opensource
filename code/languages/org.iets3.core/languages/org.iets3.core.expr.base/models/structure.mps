@@ -255,5 +255,22 @@
     <property role="34LRSv" value="=&gt;" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
   </node>
+  <node concept="1TIwiD" id="7NJy08a3O99">
+    <property role="1pbfSe" value="2030122421" />
+    <property role="TrG5h" value="DotExpression" />
+    <property role="3GE5qa" value="unary.p3000" />
+    <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="7NJy08a3O9b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7NJy08a3O9a">
+    <property role="1pbfSe" value="2030122420" />
+    <property role="TrG5h" value="IDotTarget" />
+    <property role="3GE5qa" value="unary.p3000" />
+  </node>
 </model>
 

@@ -232,5 +232,36 @@
       <ref role="1YaFvo" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7NJy08a3OfA">
+    <property role="TrG5h" value="typeof_DotExpression" />
+    <property role="3GE5qa" value="unary.p3000" />
+    <node concept="3clFbS" id="7NJy08a3OfB" role="18ibNy">
+      <node concept="1Z5TYs" id="7NJy08a3OhQ" role="3cqZAp">
+        <node concept="mw_s8" id="7NJy08a3Oi7" role="1ZfhKB">
+          <node concept="1Z2H0r" id="7NJy08a3Oi3" role="mwGJk">
+            <node concept="2OqwBi" id="7NJy08a3OkD" role="1Z2MuG">
+              <node concept="1YBJjd" id="7NJy08a3Oir" role="2Oq$k0">
+                <ref role="1YBMHb" node="7NJy08a3OfD" resolve="de" />
+              </node>
+              <node concept="3TrEf2" id="7NJy08a3OpM" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7NJy08a3OhT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7NJy08a3OfK" role="mwGJk">
+            <node concept="1YBJjd" id="7NJy08a3Og0" role="1Z2MuG">
+              <ref role="1YBMHb" node="7NJy08a3OfD" resolve="de" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7NJy08a3OfD" role="1YuTPh">
+      <property role="TrG5h" value="de" />
+      <ref role="1YaFvo" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+    </node>
+  </node>
 </model>
 
