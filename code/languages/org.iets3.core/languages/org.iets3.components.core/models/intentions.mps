@@ -119,6 +119,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="44XoW1puDS_" role="lGtFl">
+      <property role="1SWRpm" value="COMPONENTS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5kXA14n1owK">
     <property role="3GE5qa" value="chunk" />
