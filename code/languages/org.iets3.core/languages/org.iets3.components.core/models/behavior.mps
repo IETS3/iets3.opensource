@@ -23,8 +23,8 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -48,6 +48,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -2719,6 +2720,30 @@
         </node>
       </node>
       <node concept="10P_77" id="3NBP8_O5tBe" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2ft7KAXZWrz" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="2ft7KAXZWsF" role="1B3o_S" />
+      <node concept="3clFbS" id="2ft7KAXZWsG" role="3clF47">
+        <node concept="3clFbF" id="2ft7KAXZYMX" role="3cqZAp">
+          <node concept="2OqwBi" id="2ft7KAXZZ0a" role="3clFbG">
+            <node concept="2OqwBi" id="2ft7KAXZYOV" role="2Oq$k0">
+              <node concept="13iPFW" id="2ft7KAXZYMS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2ft7KAXZYS_" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:3NBP8_O5tqN" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="2ft7KAXZZ8y" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2ft7KAXZWsH" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4A8SzOVam5v">
