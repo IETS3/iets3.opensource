@@ -749,11 +749,8 @@
           <ref role="1NtTu8" to="w9y2:5kXA14mWc_G" resolve="public" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
         </node>
-        <node concept="1kIj98" id="siw10FrZ_y" role="3EZMnx">
-          <node concept="3F1sOY" id="siw10FrZ_z" role="1kIj9b">
-            <property role="1$x2rV" value="&lt;kind&gt;" />
-            <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" />
-          </node>
+        <node concept="3F1sOY" id="XuQINkjJP5" role="3EZMnx">
+          <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" />
         </node>
         <node concept="3F0ifn" id="siw10FrZ_$" role="3EZMnx">
           <property role="3F0ifm" value="component" />
