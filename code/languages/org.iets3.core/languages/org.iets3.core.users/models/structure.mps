@@ -60,6 +60,7 @@
   <node concept="1TIwiD" id="7mG7sQPphB4">
     <property role="1pbfSe" value="722548625" />
     <property role="TrG5h" value="User" />
+    <property role="MwhBj" value="${module}/icons/user.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cJpacq5Tp7" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -81,7 +82,7 @@
     <property role="1pbfSe" value="722548747" />
     <property role="TrG5h" value="UserDirectory" />
     <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/UserDirectoryCharIcon.png" />
+    <property role="MwhBj" value="${module}/icons/userDirectory.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mG7sQPphD1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

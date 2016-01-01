@@ -2,7 +2,7 @@
 <model ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -48,7 +48,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -328,6 +328,9 @@
       </node>
       <node concept="3gn64h" id="4rZeNQ6P$_V" role="32tDTA">
         <ref role="3gnhBz" to="hm2y:4rZeNQ6MXMV" resolve="LogicalOrExpression" />
+      </node>
+      <node concept="3gn64h" id="1k3knzd6tZV" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:1k3knzd4P65" resolve="LogicalImpliesExpression" />
       </node>
       <node concept="2pJPEk" id="4rZeNQ6PuLA" role="3ciSnv">
         <node concept="2pJPED" id="4rZeNQ6PuLB" role="2pJPEn">

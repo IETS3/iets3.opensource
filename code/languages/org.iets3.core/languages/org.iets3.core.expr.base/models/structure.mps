@@ -2,7 +2,7 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -249,6 +250,30 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="7NJy08a3O9a">
+    <property role="1pbfSe" value="2030122420" />
+    <property role="TrG5h" value="IDotTarget" />
+    <property role="3GE5qa" value="unary.p3000" />
+  </node>
+  <node concept="1TIwiD" id="7NJy08a3O99">
+    <property role="1pbfSe" value="2030122421" />
+    <property role="TrG5h" value="DotExpression" />
+    <property role="3GE5qa" value="unary.p3000" />
+    <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="7NJy08a3O9b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1k3knzd4P65">
+    <property role="1pbfSe" value="501832963" />
+    <property role="3GE5qa" value="binary.p0500" />
+    <property role="TrG5h" value="LogicalImpliesExpression" />
+    <property role="34LRSv" value="=&gt;" />
+    <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
   </node>
 </model>
 
