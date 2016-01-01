@@ -47,7 +47,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="bool" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHp">
     <property role="1pbfSe" value="1600268779" />
@@ -82,7 +82,7 @@
     <property role="1pbfSe" value="841997801" />
     <property role="3GE5qa" value="numeric" />
     <property role="TrG5h" value="NumberLiteral" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
     <node concept="1TJgyi" id="4rZeNQ6Oert" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -107,7 +107,7 @@
     <property role="3GE5qa" value="string" />
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
     <node concept="1TJgyi" id="4rZeNQ6OYRb" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
