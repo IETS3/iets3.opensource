@@ -675,6 +675,12 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4KDeVD8s9U_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectorType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4KDeVD8s9RL" resolve="IConnectorType" />
+    </node>
     <node concept="PrWs8" id="mIQkxg5ZSB" role="PzmwI">
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
@@ -684,6 +690,11 @@
     <node concept="PrWs8" id="7Atos1yb6hI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4KDeVD8s9RL">
+    <property role="1pbfSe" value="1801856597" />
+    <property role="TrG5h" value="IConnectorType" />
+    <property role="3GE5qa" value="components" />
   </node>
 </model>
 
