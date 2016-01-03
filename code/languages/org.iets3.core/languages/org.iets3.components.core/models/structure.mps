@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -695,6 +695,69 @@
     <property role="1pbfSe" value="1801856597" />
     <property role="TrG5h" value="IConnectorType" />
     <property role="3GE5qa" value="components" />
+  </node>
+  <node concept="1TIwiD" id="2Q7cX_iyKnT">
+    <property role="1pbfSe" value="2146289198" />
+    <property role="TrG5h" value="Behavior" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="if" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2Q7cX_iyKtq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2Q7cX_iyKtp" resolve="Trigger" />
+    </node>
+    <node concept="1TJgyj" id="2Q7cX_iyKnZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2Q7cX_iyKnY" resolve="AbstractAction" />
+    </node>
+    <node concept="PrWs8" id="2Q7cX_iyKnU" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Q7cX_iyKtp">
+    <property role="1pbfSe" value="2146288846" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="Trigger" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2Q7cX_iyKnY">
+    <property role="1pbfSe" value="2146289193" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="AbstractAction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2Q7cX_iyKre">
+    <property role="1pbfSe" value="2146288985" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="EmptyAction" />
+    <ref role="1TJDcQ" node="2Q7cX_iyKnY" resolve="AbstractAction" />
+    <node concept="PrWs8" id="2Q7cX_iyKtm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="426GYJ1_saM">
+    <property role="1pbfSe" value="35419805" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="PortRefExpr" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="426GYJ1_sL0" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
   </node>
 </model>
 
