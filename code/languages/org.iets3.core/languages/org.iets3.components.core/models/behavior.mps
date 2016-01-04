@@ -2293,6 +2293,16 @@
       </node>
       <node concept="3clFbS" id="mIQkxg4rmF" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="4KDeVD8s9TJ" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="createConnectorType" />
+      <node concept="3Tm1VV" id="4KDeVD8s9TK" role="1B3o_S" />
+      <node concept="3clFbS" id="4KDeVD8s9TL" role="3clF47" />
+      <node concept="3Tqbb2" id="4KDeVD8s9Uy" role="3clF45">
+        <ref role="ehGHo" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
+      </node>
+    </node>
     <node concept="13i0hz" id="cJpacq4Df4" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -5250,6 +5260,28 @@
     </node>
     <node concept="13hLZK" id="2JYumEA$tiD" role="13h7CW">
       <node concept="3clFbS" id="2JYumEA$tiE" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="426GYJ1_sbf">
+    <property role="3GE5qa" value="behavior" />
+    <ref role="13h7C2" to="w9y2:426GYJ1_saM" resolve="PortRefExpr" />
+    <node concept="13hLZK" id="426GYJ1_sbg" role="13h7CW">
+      <node concept="3clFbS" id="426GYJ1_sbh" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="426GYJ1AVI_" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="426GYJ1AVIA" role="1B3o_S" />
+      <node concept="3clFbS" id="426GYJ1AVID" role="3clF47">
+        <node concept="3clFbF" id="426GYJ1AVIX" role="3cqZAp">
+          <node concept="3clFbT" id="426GYJ1AVIW" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="426GYJ1AVIE" role="3clF45" />
     </node>
   </node>
 </model>
