@@ -698,12 +698,12 @@
   </node>
   <node concept="1TIwiD" id="2Q7cX_iyKnT">
     <property role="1pbfSe" value="2146289198" />
-    <property role="TrG5h" value="Behavior" />
+    <property role="TrG5h" value="SimpleBehavior" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="if" />
-    <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="behavior.simple" />
+    <ref role="1TJDcQ" node="3RyTuhdwoZO" resolve="AbstractBehavior" />
     <node concept="1TJgyj" id="2Q7cX_iyKtq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="trigger" />
@@ -715,9 +715,6 @@
       <property role="20kJfa" value="actions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2Q7cX_iyKnY" resolve="AbstractAction" />
-    </node>
-    <node concept="PrWs8" id="2Q7cX_iyKnU" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Q7cX_iyKtp">
@@ -757,6 +754,157 @@
       <property role="20kJfa" value="port" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdwoZL">
+    <property role="1pbfSe" value="1956350507" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="StateMachine" />
+    <property role="34LRSv" value="statemachine" />
+    <ref role="1TJDcQ" node="3RyTuhdwoZO" resolve="AbstractBehavior" />
+    <node concept="1TJgyj" id="3RyTuhdxh3F" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3RyTuhdxh3H" resolve="IStateMachineContent" />
+    </node>
+    <node concept="PrWs8" id="3RyTuhd_IKp" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdwoZO">
+    <property role="1pbfSe" value="1956350504" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="AbstractBehavior" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RyTuhdwoZP" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdx1Px">
+    <property role="1pbfSe" value="1956183227" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="AbstractState" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RyTuhdx1Py" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="3RyTuhdxh3L" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3H" resolve="IStateMachineContent" />
+    </node>
+    <node concept="1TJgyj" id="3RyTuhdxh3_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdx1P$">
+    <property role="1pbfSe" value="1956183224" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="SimpleState" />
+    <property role="34LRSv" value="state" />
+    <ref role="1TJDcQ" node="3RyTuhdx1Px" resolve="AbstractState" />
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdx1PE">
+    <property role="1pbfSe" value="1956183218" />
+    <property role="3GE5qa" value="behavior" />
+    <property role="TrG5h" value="ActionBlock" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3RyTuhdx1PF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2Q7cX_iyKnY" resolve="AbstractAction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdxh3z">
+    <property role="1pbfSe" value="1956120889" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="EntryActionBlock" />
+    <property role="34LRSv" value="entry" />
+    <ref role="1TJDcQ" node="3RyTuhdx1PE" resolve="ActionBlock" />
+    <node concept="PrWs8" id="3RyTuhdxh3B" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3RyTuhdxh3$">
+    <property role="1pbfSe" value="1956120888" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="IStateContent" />
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdxh3D">
+    <property role="1pbfSe" value="1956120883" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="ExitActionBlock" />
+    <property role="34LRSv" value="exit" />
+    <ref role="1TJDcQ" node="3RyTuhdx1PE" resolve="ActionBlock" />
+    <node concept="PrWs8" id="3RyTuhdxh3E" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3RyTuhdxh3H">
+    <property role="1pbfSe" value="1956120879" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="IStateMachineContent" />
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdxh5i">
+    <property role="1pbfSe" value="1956120778" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="EmptyStatemachineContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RyTuhdxh5j" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3H" resolve="IStateMachineContent" />
+    </node>
+    <node concept="PrWs8" id="3RyTuhdxh5o" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdxicg">
+    <property role="1pbfSe" value="1956116236" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="EmptyStateContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RyTuhdxich" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+    <node concept="PrWs8" id="3RyTuhdxicm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhd$iuY">
+    <property role="1pbfSe" value="1955328606" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="DoActionBlock" />
+    <property role="34LRSv" value="do" />
+    <ref role="1TJDcQ" node="3RyTuhdx1PE" resolve="ActionBlock" />
+    <node concept="PrWs8" id="3RyTuhd$iuZ" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RyTuhdDutj">
+    <property role="1pbfSe" value="1953968841" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="Transition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3RyTuhdDuto" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3RyTuhdx1Px" resolve="AbstractState" />
+    </node>
+    <node concept="1TJgyj" id="3RyTuhdDutm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2Q7cX_iyKtp" resolve="Trigger" />
+    </node>
+    <node concept="PrWs8" id="3RyTuhdDutk" role="PzmwI">
+      <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
     </node>
   </node>
 </model>

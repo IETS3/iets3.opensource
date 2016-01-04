@@ -1040,14 +1040,42 @@
               <node concept="nLn13" id="426GYJ1_sNe" role="2Oq$k0" />
               <node concept="2Xjw5R" id="426GYJ1_sRM" role="2OqNvi">
                 <node concept="1xMEDy" id="426GYJ1_sRO" role="1xVPHs">
-                  <node concept="chp4Y" id="426GYJ1_sTs" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:2Q7cX_iyKnT" resolve="Behavior" />
+                  <node concept="chp4Y" id="3RyTuhdET7J" role="ri$Ld">
+                    <ref role="cht4Q" to="w9y2:3RyTuhdwoZO" resolve="AbstractBehavior" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="426GYJ1_tcr" role="1xVPHs" />
               </node>
             </node>
             <node concept="3x8VRR" id="426GYJ1_t7W" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3RyTuhdDutN">
+    <property role="3GE5qa" value="behavior.sm" />
+    <ref role="1M2myG" to="w9y2:3RyTuhdDutj" resolve="Transition" />
+    <node concept="1N5Pfh" id="3RyTuhdDutO" role="1Mr941">
+      <ref role="1N5Vy1" to="w9y2:3RyTuhdDuto" />
+      <node concept="1MUpDS" id="3RyTuhdDuuh" role="1N6uqs">
+        <node concept="3clFbS" id="3RyTuhdDuuj" role="2VODD2">
+          <node concept="3clFbF" id="3RyTuhdDuuX" role="3cqZAp">
+            <node concept="2OqwBi" id="3RyTuhdDuYc" role="3clFbG">
+              <node concept="2OqwBi" id="3RyTuhdDuxF" role="2Oq$k0">
+                <node concept="21POm0" id="3RyTuhdDuuW" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3RyTuhdDu_x" role="2OqNvi">
+                  <node concept="1xMEDy" id="3RyTuhdDu_z" role="1xVPHs">
+                    <node concept="chp4Y" id="3RyTuhdDuAS" role="ri$Ld">
+                      <ref role="cht4Q" to="w9y2:3RyTuhdwoZL" resolve="StateMachine" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3RyTuhdDv77" role="2OqNvi">
+                <ref role="37wK5l" to="3eba:3RyTuhdDuF_" resolve="allStates" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
