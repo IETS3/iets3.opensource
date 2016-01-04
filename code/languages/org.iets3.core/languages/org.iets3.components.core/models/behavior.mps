@@ -5291,6 +5291,16 @@
       </node>
       <node concept="10P_77" id="426GYJ1AVIE" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2Df8LH1ib7L" role="13h7CS">
+      <property role="TrG5h" value="textColor" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2Df8LH1ib7M" role="1B3o_S" />
+      <node concept="3clFbS" id="2Df8LH1ib7N" role="3clF47" />
+      <node concept="3uibUv" id="2Df8LH1ib7Z" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3RyTuhdDuFm">
     <property role="3GE5qa" value="behavior.sm" />
