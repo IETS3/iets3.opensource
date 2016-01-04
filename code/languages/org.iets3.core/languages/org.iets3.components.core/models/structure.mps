@@ -801,13 +801,6 @@
       <ref role="20lvS9" node="3RyTuhdxh3$" resolve="IStateContent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3RyTuhdx1P$">
-    <property role="1pbfSe" value="1956183224" />
-    <property role="3GE5qa" value="behavior.sm" />
-    <property role="TrG5h" value="SimpleState" />
-    <property role="34LRSv" value="state" />
-    <ref role="1TJDcQ" node="3RyTuhdx1Px" resolve="AbstractState" />
-  </node>
   <node concept="1TIwiD" id="3RyTuhdx1PE">
     <property role="1pbfSe" value="1956183218" />
     <property role="3GE5qa" value="behavior" />
@@ -906,6 +899,13 @@
     <node concept="PrWs8" id="3RyTuhdDutk" role="PzmwI">
       <ref role="PrY4T" node="3RyTuhdxh3$" resolve="IStateContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2Df8LH1bloy">
+    <property role="1pbfSe" value="1803319613" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="SimpleState" />
+    <property role="34LRSv" value="state" />
+    <ref role="1TJDcQ" node="3RyTuhdx1Px" resolve="AbstractState" />
   </node>
 </model>
 
