@@ -907,5 +907,17 @@
     <property role="34LRSv" value="state" />
     <ref role="1TJDcQ" node="3RyTuhdx1Px" resolve="AbstractState" />
   </node>
+  <node concept="1TIwiD" id="6UxFDrx2zsb">
+    <property role="1pbfSe" value="1336665505" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="StateRefExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6UxFDrx2zsc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="state" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3RyTuhdx1Px" resolve="AbstractState" />
+    </node>
+  </node>
 </model>
 

@@ -5415,5 +5415,25 @@
       <node concept="3clFbS" id="2Df8LH1gI13" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6UxFDrx3XNP">
+    <property role="3GE5qa" value="behavior.sm" />
+    <ref role="13h7C2" to="w9y2:6UxFDrx2zsb" resolve="StateRefExpr" />
+    <node concept="13hLZK" id="6UxFDrx3XNQ" role="13h7CW">
+      <node concept="3clFbS" id="6UxFDrx3XNR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6UxFDrx3XNS" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="6UxFDrx3XNT" role="1B3o_S" />
+      <node concept="3clFbS" id="6UxFDrx3XNW" role="3clF47">
+        <node concept="3clFbF" id="6UxFDrx3XNZ" role="3cqZAp">
+          <node concept="3clFbT" id="6UxFDrx3XNY" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6UxFDrx3XNX" role="3clF45" />
+    </node>
+  </node>
 </model>
 

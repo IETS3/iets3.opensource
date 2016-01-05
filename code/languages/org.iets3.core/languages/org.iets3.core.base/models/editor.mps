@@ -60,7 +60,7 @@
   <node concept="V5hpn" id="4rZeNQ6MfR4">
     <property role="TrG5h" value="IETS3Styles" />
     <node concept="14StLt" id="4rZeNQ6MfR7" role="V601i">
-      <property role="TrG5h" value="keyword" />
+      <property role="TrG5h" value="IETS3Keyword" />
       <node concept="Vb9p2" id="4rZeNQ6MfRa" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
@@ -73,7 +73,7 @@
       </node>
     </node>
     <node concept="14StLt" id="4rZeNQ6OesJ" role="V601i">
-      <property role="TrG5h" value="number" />
+      <property role="TrG5h" value="IETS3Number" />
       <node concept="VechU" id="4rZeNQ6OesL" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
       </node>
@@ -83,7 +83,7 @@
       </node>
     </node>
     <node concept="14StLt" id="4rZeNQ6OYRX" role="V601i">
-      <property role="TrG5h" value="string" />
+      <property role="TrG5h" value="IETS3String" />
       <node concept="VechU" id="4rZeNQ6OYRY" role="3F10Kt">
         <property role="Vb096" value="DARK_GREEN" />
       </node>
