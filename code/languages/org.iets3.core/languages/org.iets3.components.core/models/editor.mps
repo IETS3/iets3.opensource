@@ -476,6 +476,7 @@
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
+        <child id="3073973028676889051" name="anySideAllowed" index="3XKxJP" />
       </concept>
       <concept id="4254343767716913574" name="de.itemis.mps.editor.diagram.structure.CellModel_Compartment" flags="ng" index="3S8TqV" />
     </language>
@@ -4679,6 +4680,9 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbT" id="7wKyBbV1DH3" role="3XKxJP">
+          <property role="3clFbU" value="true" />
+        </node>
       </node>
       <node concept="1PNbMa" id="siw10F__cr" role="1PN8qh">
         <node concept="23hSXV" id="siw10F__nf" role="ljJml">
@@ -4962,6 +4966,9 @@
               <property role="Xl_RC" value="port_" />
             </node>
           </node>
+        </node>
+        <node concept="3clFbT" id="7wKyBbV1DSK" role="3XKxJP">
+          <property role="3clFbU" value="true" />
         </node>
       </node>
       <node concept="238au4" id="siw10F_CDn" role="3kqczz">
