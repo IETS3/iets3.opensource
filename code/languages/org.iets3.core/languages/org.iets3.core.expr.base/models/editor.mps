@@ -41,6 +41,9 @@
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
@@ -141,7 +144,7 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="3Xmtl4" id="4rZeNQ6MfS9" role="3F10Kt">
         <node concept="1wgc9g" id="4rZeNQ6MfSf" role="3XvnJa">
-          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="keyword" />
+          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="IETS3Keyword" />
         </node>
       </node>
     </node>
@@ -341,6 +344,7 @@
     <node concept="3EZMnI" id="6UxFDrx4drS" role="2wV5jI">
       <node concept="3F0ifn" id="6UxFDrx4drZ" role="3EZMnx">
         <property role="3F0ifm" value="alt" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="IETS3Keyword" />
       </node>
       <node concept="3F2HdR" id="6UxFDrx4ds5" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:6UxFDrx4dra" />
