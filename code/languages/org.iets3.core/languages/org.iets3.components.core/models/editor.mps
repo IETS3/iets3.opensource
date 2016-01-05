@@ -6524,5 +6524,31 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6UxFDrx2zsA">
+    <property role="3GE5qa" value="behavior.sm" />
+    <ref role="1XX52x" to="w9y2:6UxFDrx2zsb" resolve="StateRefExpr" />
+    <node concept="1iCGBv" id="6UxFDrx2zsF" role="2wV5jI">
+      <ref role="1NtTu8" to="w9y2:6UxFDrx2zsc" />
+      <node concept="1sVBvm" id="6UxFDrx2zsH" role="1sWHZn">
+        <node concept="1HlG4h" id="6UxFDrx2zsR" role="2wV5jI">
+          <ref role="1k5W1q" node="2Df8LH1eizQ" resolve="componentsState" />
+          <node concept="1HfYo3" id="6UxFDrx2zsT" role="1HlULh">
+            <node concept="3TQlhw" id="6UxFDrx2zsV" role="1Hhtcw">
+              <node concept="3clFbS" id="6UxFDrx2zsX" role="2VODD2">
+                <node concept="3clFbF" id="6UxFDrx2zw6" role="3cqZAp">
+                  <node concept="2OqwBi" id="6UxFDrx2zzB" role="3clFbG">
+                    <node concept="pncrf" id="6UxFDrx2zw5" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6UxFDrx2zFy" role="2OqNvi">
+                      <ref role="37wK5l" to="3eba:2Df8LH1gI18" resolve="qualifiedName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

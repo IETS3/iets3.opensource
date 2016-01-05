@@ -275,5 +275,36 @@
     <property role="TrG5h" value="IDotTarget" />
     <property role="3GE5qa" value="unary.p3000" />
   </node>
+  <node concept="1TIwiD" id="6UxFDrx4dp4">
+    <property role="1pbfSe" value="1337099482" />
+    <property role="TrG5h" value="AlternativesExpression" />
+    <property role="34LRSv" value="alt" />
+    <property role="3GE5qa" value="alt" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6UxFDrx4dra" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternatives" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6UxFDrx4dpr" resolve="AltOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6UxFDrx4dpr">
+    <property role="1pbfSe" value="1337099505" />
+    <property role="3GE5qa" value="alt" />
+    <property role="TrG5h" value="AltOption" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6UxFDrx4dpI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="when" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6UxFDrx4dpK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
