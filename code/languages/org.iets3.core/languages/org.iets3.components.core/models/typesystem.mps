@@ -10,6 +10,7 @@
     <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -20,6 +21,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -132,6 +136,9 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -1426,6 +1433,34 @@
     <node concept="1YaCAy" id="7Atos1y6epo" role="1YuTPh">
       <property role="TrG5h" value="ci" />
       <ref role="1YaFvo" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6UxFDrx2zNS">
+    <property role="TrG5h" value="typeof_StateRefExpr" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <node concept="3clFbS" id="6UxFDrx2zNT" role="18ibNy">
+      <node concept="1Z5TYs" id="6UxFDrx2zQi" role="3cqZAp">
+        <node concept="mw_s8" id="6UxFDrx2zQA" role="1ZfhKB">
+          <node concept="2ShNRf" id="6UxFDrx2zQy" role="mwGJk">
+            <node concept="3zrR0B" id="6UxFDrx2$Wd" role="2ShVmc">
+              <node concept="3Tqbb2" id="6UxFDrx2$Wf" role="3zrR0E">
+                <ref role="ehGHo" to="5qo5:6sdnDbSlaon" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6UxFDrx2zQl" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6UxFDrx2zO8" role="mwGJk">
+            <node concept="1YBJjd" id="6UxFDrx2zOo" role="1Z2MuG">
+              <ref role="1YBMHb" node="6UxFDrx2zNV" resolve="sre" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6UxFDrx2zNV" role="1YuTPh">
+      <property role="TrG5h" value="sre" />
+      <ref role="1YaFvo" to="w9y2:6UxFDrx2zsb" resolve="StateRefExpr" />
     </node>
   </node>
 </model>
