@@ -788,6 +788,8 @@
     <property role="1pbfSe" value="1956350504" />
     <property role="3GE5qa" value="behavior" />
     <property role="TrG5h" value="AbstractBehavior" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RyTuhdwoZP" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />

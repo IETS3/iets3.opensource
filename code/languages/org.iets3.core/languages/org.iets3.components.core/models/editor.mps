@@ -454,6 +454,7 @@
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
         <child id="1019014873656210396" name="navigationTargets" index="3zeBtW" />
         <child id="1566844231766602492" name="ports2" index="3DrZTU" />
+        <child id="6160055369549989399" name="allowScaling" index="3RJMYJ" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
@@ -3532,6 +3533,9 @@
             <node concept="Vb9p2" id="siw10FwKln" role="3F10Kt">
               <property role="Vbekb" value="BOLD" />
             </node>
+            <node concept="VPxyj" id="5tAZxwQWJvu" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
           </node>
           <node concept="3EZMnI" id="siw10FuWpL" role="3EZMnx">
             <node concept="l2Vlx" id="siw10FuWpM" role="2iSdaV" />
@@ -4189,6 +4193,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFbT" id="5tAZxwQYcoo" role="3RJMYJ">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
   </node>
