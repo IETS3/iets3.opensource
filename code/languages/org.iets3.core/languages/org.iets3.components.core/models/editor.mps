@@ -407,6 +407,8 @@
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="8377729485182319155" name="de.itemis.mps.editor.diagram.structure.PaletteSource_EntryQuery" flags="ig" index="gQ1qB" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
+        <child id="7188630757225274921" name="navigationTargets" index="1i7NIZ" />
+        <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
@@ -4414,6 +4416,28 @@
       <ref role="2$4xQ3" node="siw10FuTec" resolve="wiringDiagram" />
     </node>
     <node concept="2ZMJ7s" id="siw10FuZy4" role="2wV5jI">
+      <node concept="2OqwBi" id="5k34DtTg62p" role="1i7NIZ">
+        <node concept="2OqwBi" id="5k34DtTg5$O" role="2Oq$k0">
+          <node concept="1Pxb5l" id="5k34DtTg5s3" role="2Oq$k0" />
+          <node concept="3TrEf2" id="5k34DtTg5MI" role="2OqNvi">
+            <ref role="3Tt5mk" to="w9y2:cJpacq1tk2" />
+          </node>
+        </node>
+        <node concept="3TrEf2" id="5k34DtTg6wg" role="2OqNvi">
+          <ref role="3Tt5mk" to="w9y2:6LfBX8YlAdM" />
+        </node>
+      </node>
+      <node concept="2OqwBi" id="5k34DtTg6yb" role="1i7NIZ">
+        <node concept="2OqwBi" id="5k34DtTg6yc" role="2Oq$k0">
+          <node concept="1Pxb5l" id="5k34DtTg6yd" role="2Oq$k0" />
+          <node concept="3TrEf2" id="5k34DtTg6Kt" role="2OqNvi">
+            <ref role="3Tt5mk" to="w9y2:cJpacq1tkk" />
+          </node>
+        </node>
+        <node concept="3TrEf2" id="5k34DtTg6yf" role="2OqNvi">
+          <ref role="3Tt5mk" to="w9y2:6LfBX8YlAdM" />
+        </node>
+      </node>
       <node concept="3C0NmK" id="mIQkxg7PZH" role="3F10Kt">
         <property role="Vb096" value="darkGray" />
         <node concept="3ZlJ5R" id="mIQkxg7PZI" role="VblUZ">
@@ -4524,6 +4548,11 @@
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="238au4" id="5k34DtTcYXk" role="3kqczz">
+        <node concept="PMmxH" id="5k34DtTcZMu" role="2wV5jI">
+          <ref role="PMmxG" node="4A8SzOVasuR" resolve="summary" />
         </node>
       </node>
     </node>
@@ -5120,6 +5149,11 @@
           </node>
         </node>
       </node>
+      <node concept="238au4" id="5k34DtTcZUr" role="3kqczz">
+        <node concept="PMmxH" id="5k34DtTd01N" role="2wV5jI">
+          <ref role="PMmxG" node="4A8SzOVasuR" resolve="summary" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="cJpacq1V$O">
@@ -5378,6 +5412,11 @@
       </node>
       <node concept="3C0lA2" id="siw10FR4R9" role="3F10Kt">
         <property role="3DY1wP" value="DASHED" />
+      </node>
+      <node concept="238au4" id="5k34DtTd0bU" role="3kqczz">
+        <node concept="PMmxH" id="5k34DtTd0ji" role="2wV5jI">
+          <ref role="PMmxG" node="4A8SzOVasuR" resolve="summary" />
+        </node>
       </node>
     </node>
   </node>
