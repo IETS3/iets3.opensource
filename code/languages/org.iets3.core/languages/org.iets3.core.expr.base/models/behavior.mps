@@ -90,6 +90,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -785,27 +786,6 @@
       <node concept="17QB3L" id="2ft7KAXZZLL" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="7halHeUzsde">
-    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="Literal" />
-    <node concept="13hLZK" id="7halHeUzsdf" role="13h7CW">
-      <node concept="3clFbS" id="7halHeUzsdg" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7halHeUzsdh" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="7halHeUzsdi" role="1B3o_S" />
-      <node concept="3clFbS" id="7halHeUzsdl" role="3clF47">
-        <node concept="3clFbF" id="7halHeUzsdo" role="3cqZAp">
-          <node concept="3clFbT" id="7halHeUzsdn" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="7halHeUzsdm" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6UxFDrx4ehx">
     <property role="3GE5qa" value="alt" />
     <ref role="13h7C2" to="hm2y:6UxFDrx4dp4" resolve="AlternativesExpression" />
@@ -891,6 +871,41 @@
     </node>
     <node concept="13hLZK" id="6UxFDrx4fGg" role="13h7CW">
       <node concept="3clFbS" id="6UxFDrx4fGh" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7halHeUzsde">
+    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <node concept="13hLZK" id="7halHeUzsdf" role="13h7CW">
+      <node concept="3clFbS" id="7halHeUzsdg" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7halHeUzsdh" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="7halHeUzsdi" role="1B3o_S" />
+      <node concept="3clFbS" id="7halHeUzsdl" role="3clF47">
+        <node concept="3clFbF" id="7halHeUzsdo" role="3cqZAp">
+          <node concept="3clFbT" id="7halHeUzsdn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7halHeUzsdm" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6rGLT0TevFa">
+    <ref role="13h7C2" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    <node concept="13i0hz" id="6rGLT0TevFd" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="target" />
+      <node concept="3Tm1VV" id="6rGLT0TevFe" role="1B3o_S" />
+      <node concept="3clFbS" id="6rGLT0TevFf" role="3clF47" />
+      <node concept="3Tqbb2" id="6rGLT0TevFl" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6rGLT0TevFb" role="13h7CW">
+      <node concept="3clFbS" id="6rGLT0TevFc" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -155,6 +155,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6LfBX8Yivpj" resolve="IComponentsChunkContent" />
     </node>
+    <node concept="1TJgyj" id="7nsgDAXznlY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    </node>
     <node concept="PrWs8" id="6LfBX8YlYHw" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
     </node>
@@ -412,6 +418,9 @@
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
+    </node>
+    <node concept="PrWs8" id="6rGLT0TezKA" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMyV">
@@ -755,6 +764,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
+    <node concept="PrWs8" id="6rGLT0TezX8" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3RyTuhdwoZL">
     <property role="1pbfSe" value="1956350507" />
@@ -776,6 +788,8 @@
     <property role="1pbfSe" value="1956350504" />
     <property role="3GE5qa" value="behavior" />
     <property role="TrG5h" value="AbstractBehavior" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RyTuhdwoZP" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
@@ -799,6 +813,10 @@
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3RyTuhdxh3$" resolve="IStateContent" />
+    </node>
+    <node concept="1TJgyi" id="4yxRvktmK7b" role="1TKVEl">
+      <property role="TrG5h" value="initial" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3RyTuhdx1PE">
@@ -917,6 +935,9 @@
       <property role="20kJfa" value="state" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3RyTuhdx1Px" resolve="AbstractState" />
+    </node>
+    <node concept="PrWs8" id="6rGLT0TevFW" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
 </model>
