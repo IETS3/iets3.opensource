@@ -2432,20 +2432,6 @@
           </node>
           <node concept="9aQIb" id="mIQkxg5Zu2" role="9aQIa">
             <node concept="3clFbS" id="mIQkxg5Zu3" role="9aQI4">
-              <node concept="3clFbF" id="mIQkxg5ZzC" role="3cqZAp">
-                <node concept="2OqwBi" id="mIQkxg5Zz_" role="3clFbG">
-                  <node concept="10M0yZ" id="mIQkxg5ZzA" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="mIQkxg5ZzB" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="Xl_RD" id="mIQkxg5Z$5" role="37wK5m">
-                      <property role="Xl_RC" value="ERROR: either both or none of the ports is governing" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs6" id="mIQkxg5ZFh" role="3cqZAp">
                 <node concept="37vLTw" id="mIQkxg629Z" role="3cqZAk">
                   <ref role="3cqZAo" node="mIQkxg6148" resolve="p1" />
