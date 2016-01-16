@@ -2,7 +2,7 @@
 <model ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -55,7 +55,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -871,6 +871,27 @@
     </node>
     <node concept="13hLZK" id="6UxFDrx4fGg" role="13h7CW">
       <node concept="3clFbS" id="6UxFDrx4fGh" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7halHeUzsde">
+    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <node concept="13hLZK" id="7halHeUzsdf" role="13h7CW">
+      <node concept="3clFbS" id="7halHeUzsdg" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7halHeUzsdh" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="7halHeUzsdi" role="1B3o_S" />
+      <node concept="3clFbS" id="7halHeUzsdl" role="3clF47">
+        <node concept="3clFbF" id="7halHeUzsdo" role="3cqZAp">
+          <node concept="3clFbT" id="7halHeUzsdn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7halHeUzsdm" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6rGLT0TevFa">
