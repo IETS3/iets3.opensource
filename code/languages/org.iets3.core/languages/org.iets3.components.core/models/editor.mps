@@ -1993,6 +1993,24 @@
                             <node concept="2pJPEk" id="mIQkxf_g_z" role="25WWJ7">
                               <node concept="2pJPED" id="mIQkxf_g_$" role="2pJPEn">
                                 <ref role="2pJxaS" to="w9y2:cJpacq1tb1" resolve="ImportConnector" />
+                                <node concept="2pIpSj" id="7Anl4pgd97k" role="2pJxcM">
+                                  <ref role="2pIpSl" to="w9y2:4KDeVD8s9U_" />
+                                  <node concept="36biLy" id="7Anl4pgd9dz" role="2pJxcZ">
+                                    <node concept="2OqwBi" id="7Anl4pgd9FC" role="36biLW">
+                                      <node concept="2OqwBi" id="7Anl4pgd9j1" role="2Oq$k0">
+                                        <node concept="37vLTw" id="7Anl4pgd9dY" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="mIQkxf_d5q" resolve="fromPort" />
+                                        </node>
+                                        <node concept="3TrEf2" id="7Anl4pgd9uC" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="w9y2:6LfBX8YlAdM" />
+                                        </node>
+                                      </node>
+                                      <node concept="2qgKlT" id="7Anl4pgd9Nm" role="2OqNvi">
+                                        <ref role="37wK5l" to="3eba:4KDeVD8s9TJ" resolve="createConnectorType" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
                                 <node concept="2pIpSj" id="mIQkxf_g__" role="2pJxcM">
                                   <ref role="2pIpSl" to="w9y2:cJpacq1tbb" />
                                   <node concept="36biLy" id="mIQkxf_g_A" role="2pJxcZ">
@@ -2066,6 +2084,24 @@
                               <node concept="2pJPEk" id="mIQkxf_hkv" role="25WWJ7">
                                 <node concept="2pJPED" id="mIQkxf_hkw" role="2pJPEn">
                                   <ref role="2pJxaS" to="w9y2:cJpacq2_os" resolve="ExportConnector" />
+                                  <node concept="2pIpSj" id="7Anl4pgd9Us" role="2pJxcM">
+                                    <ref role="2pIpSl" to="w9y2:4KDeVD8s9U_" />
+                                    <node concept="36biLy" id="7Anl4pgd9Zw" role="2pJxcZ">
+                                      <node concept="2OqwBi" id="7Anl4pgd9Zx" role="36biLW">
+                                        <node concept="2OqwBi" id="7Anl4pgd9Zy" role="2Oq$k0">
+                                          <node concept="37vLTw" id="7Anl4pgd9Zz" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="mIQkxf_d5q" resolve="fromPort" />
+                                          </node>
+                                          <node concept="3TrEf2" id="7Anl4pgd9Z$" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="w9y2:6LfBX8YlAdM" />
+                                          </node>
+                                        </node>
+                                        <node concept="2qgKlT" id="7Anl4pgd9Z_" role="2OqNvi">
+                                          <ref role="37wK5l" to="3eba:4KDeVD8s9TJ" resolve="createConnectorType" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node concept="2pIpSj" id="mIQkxf_hkx" role="2pJxcM">
                                     <ref role="2pIpSl" to="w9y2:cJpacq2_ov" />
                                     <node concept="36biLy" id="mIQkxf_hky" role="2pJxcZ">
