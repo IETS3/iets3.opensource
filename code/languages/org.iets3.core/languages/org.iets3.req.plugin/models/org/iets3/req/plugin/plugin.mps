@@ -1320,7 +1320,7 @@
   </node>
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="RequirementsExplorer" />
-    <property role="3aPfAI" value="1" />
+    <property role="3aPfAI" value="5" />
     <ref role="14aYEx" to="h587:1ognOHjyiuQ" resolve="SpecExplorer" />
     <node concept="14aYG3" id="1ognOHjyj2a" role="14aYEy">
       <property role="TrG5h" value="requirementsModule" />
