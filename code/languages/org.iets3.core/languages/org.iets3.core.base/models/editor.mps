@@ -37,7 +37,11 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <child id="1221064706952" name="query" index="1d8cEk" />
+      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
@@ -74,21 +78,36 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -99,6 +118,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -168,6 +191,102 @@
       <property role="TrG5h" value="iets3BraceMatch" />
       <node concept="3mYdg7" id="3_9S6licv3n" role="3F10Kt">
         <property role="1413C4" value="braces" />
+      </node>
+    </node>
+    <node concept="14StLt" id="6zaFu4oPVZQ" role="V601i">
+      <property role="TrG5h" value="iets3ChunkHeader" />
+      <node concept="VSNWy" id="6zaFu4oPW0n" role="3F10Kt">
+        <node concept="1cFabM" id="6zaFu4oPW0q" role="1d8cEk">
+          <node concept="3clFbS" id="6zaFu4oPW0r" role="2VODD2">
+            <node concept="3clFbF" id="6zaFu4oPW36" role="3cqZAp">
+              <node concept="1eOMI4" id="6zaFu4oPWEX" role="3clFbG">
+                <node concept="10QFUN" id="6zaFu4oPWEY" role="1eOMHV">
+                  <node concept="1eOMI4" id="6zaFu4oPWEZ" role="10QFUP">
+                    <node concept="17qRlL" id="6zaFu4oPWES" role="1eOMHV">
+                      <node concept="3b6qkQ" id="6zaFu4oPWET" role="3uHU7w">
+                        <property role="$nhwW" value="1.4" />
+                      </node>
+                      <node concept="2OqwBi" id="6zaFu4oPWEU" role="3uHU7B">
+                        <node concept="2YIFZM" id="6zaFu4oPWEV" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        </node>
+                        <node concept="liA8E" id="6zaFu4oPWEW" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Oyi0" id="6zaFu4oPWKK" role="10QFUM" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="6zaFu4oRq4Q" role="V601i">
+      <property role="TrG5h" value="iets3Bigger" />
+      <node concept="VSNWy" id="6zaFu4oRq4R" role="3F10Kt">
+        <node concept="1cFabM" id="6zaFu4oRq4S" role="1d8cEk">
+          <node concept="3clFbS" id="6zaFu4oRq4T" role="2VODD2">
+            <node concept="3clFbF" id="6zaFu4oRq4U" role="3cqZAp">
+              <node concept="1eOMI4" id="6zaFu4oRq4V" role="3clFbG">
+                <node concept="10QFUN" id="6zaFu4oRq4W" role="1eOMHV">
+                  <node concept="1eOMI4" id="6zaFu4oRq4X" role="10QFUP">
+                    <node concept="17qRlL" id="6zaFu4oRq4Y" role="1eOMHV">
+                      <node concept="3b6qkQ" id="6zaFu4oRq4Z" role="3uHU7w">
+                        <property role="$nhwW" value="1.2" />
+                      </node>
+                      <node concept="2OqwBi" id="6zaFu4oRq50" role="3uHU7B">
+                        <node concept="2YIFZM" id="6zaFu4oRq51" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        </node>
+                        <node concept="liA8E" id="6zaFu4oRq52" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Oyi0" id="6zaFu4oRq53" role="10QFUM" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="6zaFu4oRqi5" role="V601i">
+      <property role="TrG5h" value="iets3Smaller" />
+      <node concept="VSNWy" id="6zaFu4oRqi6" role="3F10Kt">
+        <node concept="1cFabM" id="6zaFu4oRqi7" role="1d8cEk">
+          <node concept="3clFbS" id="6zaFu4oRqi8" role="2VODD2">
+            <node concept="3clFbF" id="6zaFu4oRqi9" role="3cqZAp">
+              <node concept="1eOMI4" id="6zaFu4oRqia" role="3clFbG">
+                <node concept="10QFUN" id="6zaFu4oRqib" role="1eOMHV">
+                  <node concept="1eOMI4" id="6zaFu4oRqic" role="10QFUP">
+                    <node concept="17qRlL" id="6zaFu4oRqid" role="1eOMHV">
+                      <node concept="3b6qkQ" id="6zaFu4oRqie" role="3uHU7w">
+                        <property role="$nhwW" value="0.85" />
+                      </node>
+                      <node concept="2OqwBi" id="6zaFu4oRqif" role="3uHU7B">
+                        <node concept="2YIFZM" id="6zaFu4oRqig" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        </node>
+                        <node concept="liA8E" id="6zaFu4oRqih" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Oyi0" id="6zaFu4oRqii" role="10QFUM" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="14StLt" id="4rZeNQ6OesJ" role="V601i">
