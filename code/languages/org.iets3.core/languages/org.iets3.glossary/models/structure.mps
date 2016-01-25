@@ -152,5 +152,49 @@
     <property role="3GE5qa" value="attributes" />
     <ref role="1TJDcQ" node="6zaFu4oS5HT" resolve="TermRefTermAttribute" />
   </node>
+  <node concept="1TIwiD" id="6zaFu4oSzVX">
+    <property role="1pbfSe" value="2119373602" />
+    <property role="TrG5h" value="FindGlossaryRefAssQuery" />
+    <property role="34LRSv" value="find glossary words" />
+    <property role="3GE5qa" value="assessments" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+  </node>
+  <node concept="1TIwiD" id="6zaFu4oS_ac">
+    <property role="1pbfSe" value="2119368595" />
+    <property role="3GE5qa" value="assessments" />
+    <property role="TrG5h" value="FoundWordAssResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyi" id="6zaFu4oS_bz" role="1TKVEl">
+      <property role="TrG5h" value="position" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="lp3OKvg8mt" role="1TKVEl">
+      <property role="TrG5h" value="foundAlias" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6zaFu4oSAXF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="term" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zaFu4oPODn" resolve="GlossaryTerm" />
+    </node>
+    <node concept="1TJgyj" id="6zaFu4oS_bx" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="word" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEBMSc" resolve="Word" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="lp3OKvfWZi">
+    <property role="1pbfSe" value="613998366" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="AliasAttribute" />
+    <property role="34LRSv" value="alias" />
+    <ref role="1TJDcQ" node="6zaFu4oQ9na" resolve="TermAttribute" />
+    <node concept="1TJgyi" id="lp3OKvfWZj" role="1TKVEl">
+      <property role="TrG5h" value="aliasText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
