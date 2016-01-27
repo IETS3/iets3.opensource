@@ -55,7 +55,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -737,7 +737,7 @@
       <node concept="3clFbS" id="7NJy08a4aSB" role="3clF47">
         <node concept="3clFbF" id="7NJy08a4aSI" role="3cqZAp">
           <node concept="3cmrfG" id="7NJy08a4aSH" role="3clFbG">
-            <property role="3cmrfH" value="3000" />
+            <property role="3cmrfH" value="30000" />
           </node>
         </node>
       </node>
@@ -874,7 +874,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7halHeUzsde">
-    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="Literal" />
+    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
     <node concept="13hLZK" id="7halHeUzsdf" role="13h7CW">
       <node concept="3clFbS" id="7halHeUzsdg" role="2VODD2" />
     </node>

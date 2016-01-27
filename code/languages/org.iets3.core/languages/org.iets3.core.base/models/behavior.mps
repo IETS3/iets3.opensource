@@ -17,6 +17,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
       </concept>
@@ -31,6 +32,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -60,6 +62,21 @@
     </node>
     <node concept="13hLZK" id="cJpacq409B" role="13h7CW">
       <node concept="3clFbS" id="cJpacq409C" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1YPoVR7Fay9">
+    <ref role="13h7C2" to="4kwy:1YPoVR7Faxf" resolve="ICustomRemoteCreateSupport" />
+    <node concept="13hLZK" id="1YPoVR7Faya" role="13h7CW">
+      <node concept="3clFbS" id="1YPoVR7Fayb" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1YPoVR7Fayf" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="2Ki8OM" value="false" />
+      <property role="TrG5h" value="setupNode" />
+      <node concept="3Tm1VV" id="1YPoVR7Fayg" role="1B3o_S" />
+      <node concept="3clFbS" id="1YPoVR7Fayh" role="3clF47" />
+      <node concept="3cqZAl" id="1YPoVR7Faz3" role="3clF45" />
     </node>
   </node>
 </model>

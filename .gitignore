@@ -41,3 +41,4 @@ test_gen.caches
 code/languages/*/*.iws
 code/languages/*/build.properties
 code/languages/*/TEST*.xml
+code/languages/org.iets3.core/build/tmp
