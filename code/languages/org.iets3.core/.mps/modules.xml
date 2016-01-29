@@ -15,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
