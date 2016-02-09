@@ -16,7 +16,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
@@ -29,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr/test.ex.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.solversupport/test.ts.analysis.solversupport.msd" folder="analysis" />
