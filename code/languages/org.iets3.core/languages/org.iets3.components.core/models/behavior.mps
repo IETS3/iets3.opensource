@@ -235,9 +235,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
-        <child id="1144104376918" name="parameter" index="1xVPHs" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
@@ -247,7 +244,6 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -266,9 +262,6 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
-      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
-        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
         <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
@@ -5504,14 +5497,17 @@
       <property role="TrG5h" value="allStates" />
       <node concept="3Tm1VV" id="3RyTuhdDuFA" role="1B3o_S" />
       <node concept="3clFbS" id="3RyTuhdDuFB" role="3clF47">
-        <node concept="3clFbF" id="3RyTuhdDuFQ" role="3cqZAp">
-          <node concept="2OqwBi" id="3RyTuhdDuJB" role="3clFbG">
-            <node concept="13iPFW" id="3RyTuhdDuFP" role="2Oq$k0" />
-            <node concept="2Rf3mk" id="3RyTuhdDuR9" role="2OqNvi">
-              <node concept="1xMEDy" id="3RyTuhdDuRb" role="1xVPHs">
-                <node concept="chp4Y" id="3RyTuhdDuTz" role="ri$Ld">
-                  <ref role="cht4Q" to="w9y2:3RyTuhdx1Px" resolve="AbstractState" />
-                </node>
+        <node concept="3clFbF" id="45f0X_J35qp" role="3cqZAp">
+          <node concept="2OqwBi" id="45f0X_J35Xa" role="3clFbG">
+            <node concept="2OqwBi" id="45f0X_J35tI" role="2Oq$k0">
+              <node concept="13iPFW" id="45f0X_J35qn" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="45f0X_J35_B" role="2OqNvi">
+                <ref role="3TtcxE" to="w9y2:3RyTuhdxh3F" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="45f0X_J38k4" role="2OqNvi">
+              <node concept="chp4Y" id="45f0X_J38lZ" role="v3oSu">
+                <ref role="cht4Q" to="w9y2:3RyTuhdx1Px" resolve="AbstractState" />
               </node>
             </node>
           </node>
