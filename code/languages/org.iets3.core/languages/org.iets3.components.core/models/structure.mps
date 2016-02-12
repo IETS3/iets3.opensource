@@ -432,32 +432,32 @@
     <property role="1pbfSe" value="1322581667" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IPortAttribute" />
-    <node concept="PrWs8" id="3NBP8_OgMO5" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1CHP" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMO7">
     <property role="1pbfSe" value="1322581616" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IInstanceAttribute" />
-    <node concept="PrWs8" id="3NBP8_OgMOS" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1CRe" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMRV">
     <property role="1pbfSe" value="1322581372" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IPortTypeAttribute" />
-    <node concept="PrWs8" id="3NBP8_OgMSG" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1ChN" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMSI">
     <property role="1pbfSe" value="1322581321" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IComponentAttribute" />
-    <node concept="PrWs8" id="3NBP8_OgMTv" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1D9v" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMTx">
@@ -472,7 +472,7 @@
     <property role="1pbfSe" value="1322581219" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IImportConnectorAttribute" />
-    <node concept="PrWs8" id="3NBP8_OhYPO" role="PrDN$">
+    <node concept="PrWs8" id="1WCh2th1DiM" role="PrDN$">
       <ref role="PrY4T" node="3NBP8_OhYPL" resolve="IConnectorAttribute" />
     </node>
   </node>
@@ -480,7 +480,7 @@
     <property role="1pbfSe" value="1322581192" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IExportConnectorAttribute" />
-    <node concept="PrWs8" id="3NBP8_OhYPR" role="PrDN$">
+    <node concept="PrWs8" id="1WCh2th1DiJ" role="PrDN$">
       <ref role="PrY4T" node="3NBP8_OhYPL" resolve="IConnectorAttribute" />
     </node>
   </node>
@@ -488,8 +488,8 @@
     <property role="1pbfSe" value="1322581165" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IParameterAttribute" />
-    <node concept="PrWs8" id="3NBP8_OgMVb" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1CMB" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMVd">
@@ -507,8 +507,8 @@
     <property role="1pbfSe" value="1322270214" />
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IConnectorAttribute" />
-    <node concept="PrWs8" id="3NBP8_OhYPM" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    <node concept="PrWs8" id="1WCh2th1D48" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="siw10FiR6c">
@@ -938,6 +938,14 @@
     </node>
     <node concept="PrWs8" id="6rGLT0TevFW" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1WCh2th1BnT">
+    <property role="1pbfSe" value="1882110496" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IConceptSpecificAttribute" />
+    <node concept="PrWs8" id="1WCh2th1Bo3" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
 </model>

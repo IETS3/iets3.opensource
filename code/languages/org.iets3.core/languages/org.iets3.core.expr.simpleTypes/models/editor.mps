@@ -2,7 +2,7 @@
 <model ref="r:6d94c93d-1ff8-4e1f-8fca-b92e9d42f070(org.iets3.core.expr.simpleTypes.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -82,7 +82,7 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="3Xmtl4" id="4rZeNQ6MfT7" role="3F10Kt">
         <node concept="1wgc9g" id="4rZeNQ6MfTc" role="3XvnJa">
-          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="keyword" />
+          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
       </node>
     </node>
@@ -96,7 +96,7 @@
         <node concept="1kIj98" id="1Ia5rYltMfn" role="3EZMnx">
           <node concept="2lNzut" id="D5oLwMtubt" role="1kIj9b">
             <ref role="1NtTu8" to="5qo5:4rZeNQ6Oert" resolve="value" />
-            <ref role="1k5W1q" to="itrz:4rZeNQ6OesJ" resolve="number" />
+            <ref role="1k5W1q" to="itrz:4rZeNQ6OesJ" resolve="IETS3Number" />
             <node concept="bYqod" id="D5oLwMT$B9" role="2lD6_D" />
           </node>
         </node>
@@ -112,19 +112,19 @@
       <node concept="3EZMnI" id="5jmmCdx$f6n" role="1LiK7o">
         <node concept="3F0ifn" id="5jmmCdx$f6o" role="3EZMnx">
           <property role="3F0ifm" value="&quot;" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="string" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="IETS3String" />
           <node concept="11LMrY" id="5jmmCdx$f6p" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
         <node concept="2lNzut" id="1cHKpSpcSrZ" role="3EZMnx">
           <ref role="1NtTu8" to="5qo5:4rZeNQ6OYRb" resolve="value" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="string" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="IETS3String" />
           <node concept="bYqrx" id="1cHKpSpdbs5" role="2lD6_D" />
         </node>
         <node concept="3F0ifn" id="5jmmCdx$f6s" role="3EZMnx">
           <property role="3F0ifm" value="&quot;" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="string" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6OYRX" resolve="IETS3String" />
           <node concept="11L4FC" id="5jmmCdx$f6t" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

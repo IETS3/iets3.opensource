@@ -44,7 +44,7 @@
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
         <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" fqName="org.iets3.core.base" version="0" />
-        <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" fqName="org.iets3.glossary" version="-1" />
+        <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" fqName="org.iets3.glossary" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
