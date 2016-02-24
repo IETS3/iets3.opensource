@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.doors.plugin/org.iets3.req.doors.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.tools.z3/org.iets3.tools.z3.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.components/sandbox.components.msd" folder="comp" />
@@ -30,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr/test.ex.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.solversupport/test.ts.analysis.solversupport.msd" folder="analysis" />
