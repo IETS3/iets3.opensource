@@ -24,9 +24,5 @@
     <property role="3GE5qa" value="binary.p1000" />
     <ref role="1M2myG" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
   </node>
-  <node concept="1M2fIO" id="3DYDRw0N_8K">
-    <property role="3GE5qa" value="dectab" />
-    <ref role="1M2myG" to="hm2y:3DYDRw0K4c8" resolve="DecTab" />
-  </node>
 </model>
 
