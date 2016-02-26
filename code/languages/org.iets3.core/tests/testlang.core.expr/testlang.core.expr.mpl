@@ -126,8 +126,8 @@
     <module reference="bf5521a5-2fb2-4b25-bd67-c5ea4c6e0e2c(testlang.core.expr)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
     <extendedLanguage>1c897ba5-9d43-4035-ac7f-0306495743ac(com.mbeddr.mpsutil.interpreter.test)</extendedLanguage>
+    <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 
