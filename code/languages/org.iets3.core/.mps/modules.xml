@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="markus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.util/org.iets3.core.expr.util.mpl" folder="markus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
@@ -32,6 +33,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.runtime/org.iets3.core.units.runtime.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="analysis" />
