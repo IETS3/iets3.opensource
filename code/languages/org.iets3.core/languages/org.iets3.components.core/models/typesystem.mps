@@ -1548,5 +1548,38 @@
       <ref role="1YaFvo" to="w9y2:6LfBX8Yivpj" resolve="IComponentsChunkContent" />
     </node>
   </node>
+  <node concept="18kY7G" id="1HqphBIBJzg">
+    <property role="TrG5h" value="check_IComputedValueAttribute" />
+    <property role="3GE5qa" value="attributes" />
+    <node concept="3clFbS" id="1HqphBIBJzh" role="18ibNy">
+      <node concept="3clFbJ" id="1HqphBIBJzz" role="3cqZAp">
+        <node concept="3clFbS" id="1HqphBIBJz$" role="3clFbx">
+          <node concept="2MkqsV" id="1HqphBIBKbH" role="3cqZAp">
+            <node concept="Xl_RD" id="1HqphBIBKbT" role="2MkJ7o">
+              <property role="Xl_RC" value="no value specified or computed" />
+            </node>
+            <node concept="1YBJjd" id="1HqphBIBKcI" role="2OEOjV">
+              <ref role="1YBMHb" node="1HqphBIBJzj" resolve="icv" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="1HqphBIBK6Y" role="3clFbw">
+          <node concept="10Nm6u" id="1HqphBIBK7R" role="3uHU7w" />
+          <node concept="2OqwBi" id="1HqphBIBJXY" role="3uHU7B">
+            <node concept="1YBJjd" id="1HqphBIBJVj" role="2Oq$k0">
+              <ref role="1YBMHb" node="1HqphBIBJzj" resolve="icv" />
+            </node>
+            <node concept="2qgKlT" id="1HqphBJ7Gxe" role="2OqNvi">
+              <ref role="37wK5l" to="3eba:1HqphBICm56" resolve="getEffectiveValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1HqphBIBJzj" role="1YuTPh">
+      <property role="TrG5h" value="icv" />
+      <ref role="1YaFvo" to="w9y2:1HqphBIwaPk" resolve="IComputedValueAttribute" />
+    </node>
+  </node>
 </model>
 

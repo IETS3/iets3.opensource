@@ -948,5 +948,34 @@
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
+  <node concept="PlHQZ" id="1HqphBIwaPk">
+    <property role="1pbfSe" value="165352045" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IComputedValueAttribute" />
+    <node concept="PrWs8" id="1HqphBIxQHb" role="PrDN$">
+      <ref role="PrY4T" node="1HqphBIxQFX" resolve="IValueAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1HqphBIxQFX">
+    <property role="1pbfSe" value="165793814" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IValueAttribute" />
+    <node concept="1TJgyj" id="1HqphBIBJyQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="1HqphBI_m86" resolve="AttributeValue" />
+    </node>
+    <node concept="PrWs8" id="1HqphBIxQGh" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1HqphBI_m86">
+    <property role="1pbfSe" value="166709023" />
+    <property role="TrG5h" value="AttributeValue" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="attributes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
