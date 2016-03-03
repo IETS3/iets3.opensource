@@ -371,5 +371,35 @@
       <ref role="1YaFvo" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="71dSyJVqZT6">
+    <property role="TrG5h" value="typeof_TracerExpression" />
+    <node concept="3clFbS" id="71dSyJVqZT7" role="18ibNy">
+      <node concept="1Z5TYs" id="71dSyJVqZWO" role="3cqZAp">
+        <node concept="mw_s8" id="71dSyJVqZX8" role="1ZfhKB">
+          <node concept="1Z2H0r" id="71dSyJVqZX4" role="mwGJk">
+            <node concept="2OqwBi" id="71dSyJVr00K" role="1Z2MuG">
+              <node concept="1YBJjd" id="71dSyJVqZXp" role="2Oq$k0">
+                <ref role="1YBMHb" node="71dSyJVqZT9" resolve="te" />
+              </node>
+              <node concept="3TrEf2" id="71dSyJVr08i" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:71dSyJVqZSf" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="71dSyJVqZWR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="71dSyJVqZTg" role="mwGJk">
+            <node concept="1YBJjd" id="71dSyJVqZTw" role="1Z2MuG">
+              <ref role="1YBMHb" node="71dSyJVqZT9" resolve="te" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="71dSyJVqZT9" role="1YuTPh">
+      <property role="TrG5h" value="te" />
+      <ref role="1YaFvo" to="hm2y:71dSyJVqZSe" resolve="TracerExpression" />
+    </node>
+  </node>
 </model>
 
