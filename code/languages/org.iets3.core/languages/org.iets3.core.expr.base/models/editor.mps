@@ -22,6 +22,7 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -51,6 +52,9 @@
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -210,6 +214,31 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="7n2dBDQ3B$B" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="pkWqt" id="7n2dBDQ3B_l" role="pqm2j">
+          <node concept="3clFbS" id="7n2dBDQ3B_m" role="2VODD2">
+            <node concept="3clFbF" id="7n2dBDQ3B_X" role="3cqZAp">
+              <node concept="2OqwBi" id="7n2dBDQ3BTb" role="3clFbG">
+                <node concept="2OqwBi" id="7n2dBDQ3BD0" role="2Oq$k0">
+                  <node concept="pncrf" id="7n2dBDQ3B_W" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7n2dBDQ3BLI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="7n2dBDQ3C1r" role="2OqNvi">
+                  <node concept="chp4Y" id="7n2dBDQ3C6z" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11LMrY" id="7n2dBDQ3Cmk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="1kIj98" id="5WBKiSs7W35" role="3EZMnx">
         <node concept="3F1sOY" id="3kEjc_WIG$p" role="1kIj9b">
           <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" />
@@ -229,6 +258,31 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7n2dBDQ3B_5" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="pkWqt" id="7n2dBDQ3CcG" role="pqm2j">
+          <node concept="3clFbS" id="7n2dBDQ3CcH" role="2VODD2">
+            <node concept="3clFbF" id="7n2dBDQ3CdL" role="3cqZAp">
+              <node concept="2OqwBi" id="7n2dBDQ3CdM" role="3clFbG">
+                <node concept="2OqwBi" id="7n2dBDQ3CdN" role="2Oq$k0">
+                  <node concept="pncrf" id="7n2dBDQ3CdO" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7n2dBDQ3CdP" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="7n2dBDQ3CdQ" role="2OqNvi">
+                  <node concept="chp4Y" id="7n2dBDQ3CdR" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11L4FC" id="7n2dBDQ3Cia" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
