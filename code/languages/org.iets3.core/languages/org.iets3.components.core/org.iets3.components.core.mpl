@@ -92,6 +92,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">25797606-3fb6-47b8-bc3c-b4384df7da44(org.iets3.components.functional)</dependency>
+    <dependency reexport="false">64cec9cf-f998-418c-830c-383b6bfdadb0(org.iets3.analysis.solversupport)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
