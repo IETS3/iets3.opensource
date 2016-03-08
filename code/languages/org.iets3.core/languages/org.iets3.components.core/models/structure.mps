@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="hknx" ref="r:4df5de9d-c793-4b8c-9d89-32508bcd7b9c(org.iets3.analysis.solversupport.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -16,6 +17,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -342,6 +344,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
+    <node concept="PrWs8" id="1YmHO72HCNH" role="PzmwI">
+      <ref role="PrY4T" to="hknx:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWD">
     <property role="1pbfSe" value="1000542262" />
@@ -555,6 +560,7 @@
     <property role="3GE5qa" value="components.ports" />
     <property role="TrG5h" value="PortCategoryKind" />
     <property role="PDuV0" value="false" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="siw10H0ozw" role="M5hS2">
       <property role="1uS6qv" value="left" />
@@ -947,6 +953,35 @@
     <node concept="PrWs8" id="1WCh2th1Bo3" role="PrDN$">
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="1HqphBIwaPk">
+    <property role="1pbfSe" value="165352045" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IComputedValueAttribute" />
+    <node concept="PrWs8" id="1HqphBIxQHb" role="PrDN$">
+      <ref role="PrY4T" node="1HqphBIxQFX" resolve="IValueAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1HqphBIxQFX">
+    <property role="1pbfSe" value="165793814" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IValueAttribute" />
+    <node concept="1TJgyj" id="1HqphBIBJyQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="1HqphBI_m86" resolve="AttributeValue" />
+    </node>
+    <node concept="PrWs8" id="1HqphBIxQGh" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1HqphBI_m86">
+    <property role="1pbfSe" value="166709023" />
+    <property role="TrG5h" value="AttributeValue" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="attributes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
