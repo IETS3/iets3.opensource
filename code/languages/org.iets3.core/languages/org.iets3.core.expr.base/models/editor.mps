@@ -333,12 +333,6 @@
       <node concept="2ElW$n" id="3xDNhgd45f1" role="2El2Yn" />
     </node>
   </node>
-  <node concept="24kQdi" id="cJpacq6VM8">
-    <ref role="1XX52x" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    <node concept="1xolST" id="cJpacq6VMa" role="2wV5jI">
-      <property role="1xolSY" value="&lt;type&gt;" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7NJy08a3Oar">
     <property role="3GE5qa" value="unary.p3000" />
     <ref role="1XX52x" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
