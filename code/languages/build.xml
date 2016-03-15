@@ -1,0 +1,63 @@
+<project name="build iets3" default="clean-and-build" >
+ 	<!-- import properties -->
+	<property file="build.properties"/>  
+
+	<!-- validations -->
+	<property name="plugins.folder.name" value="plugins"/>
+	<fail unless="mps.home">mps.home must be set in your build.properties</fail>
+	<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
+	<fail unless="iets3.github.core.home">iets3.github.core.home must be set in your build.properties</fail>	
+	<fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
+		<condition>
+			<not>
+				<resourcecount count="1">
+					<dirset dir="${mps.home}" >
+						<include name="${plugins.folder.name}"/>
+					</dirset> 
+				</resourcecount>
+			</not>
+		</condition>
+	</fail>
+	
+	<!-- tasks -->
+	<property name="clean-plugins.task" value="clean" />
+	<property name="generate-code.task" value="generate" /> 
+	<property name="build-plugin.task" value="assemble" /> 
+
+	<!-- scripts -->
+	<property name="iets3.script.location" value="${iets3.github.core.home}/build/iets3.core"/>	
+	<property name="iets3.build.script" value="${iets3.script.location}/build.xml"/>
+	<property name="iets3.distro.script" value="${iets3.script.location}/distro.xml"/>
+
+	<property name="z3.script.location" value="${iets3.github.core.home}/build/z3.lib"/>	
+	<property name="z3.script" value="${z3.script.location}/build.xml"/>	
+	
+	
+	<!--targets -->
+	<target name="clean-and-build" >
+		<antcall target="clean" />
+		<antcall target="build-z3"/>
+		<antcall target="build-iets3-core"/>
+		<antcall target="assemble"/>
+	</target>
+	
+	<target name="clean" >
+		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${clean-plugins.task}" />
+		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${clean-plugins.task}" />
+		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${clean-plugins.task}" />
+	</target>
+	
+	<target name="build-z3" >
+		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${generate-code.task}" />
+		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${build-plugin.task}" />
+	</target>
+	
+	<target name="build-iets3-core">
+		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${generate-code.task}" />
+		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
+	</target>
+	
+	<target name="assemble">
+		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
+	</target>
+</project>
