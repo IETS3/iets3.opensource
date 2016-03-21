@@ -977,5 +977,44 @@
     <property role="3GE5qa" value="attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="9D0IlqBDp0">
+    <property role="1pbfSe" value="1560779045" />
+    <property role="TrG5h" value="ComponentRefExpr" />
+    <property role="3GE5qa" value="expr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="9D0IlqBDp1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="9D0IlqBErS">
+    <property role="1pbfSe" value="1560783325" />
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ComponentType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="9D0IlqBEs5" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="9D0IlqBEBR">
+    <property role="1pbfSe" value="1560784092" />
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ComponentInstanceTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="9D0IlqBEC6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+    </node>
+    <node concept="PrWs8" id="9D0IlqBEC4" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 
