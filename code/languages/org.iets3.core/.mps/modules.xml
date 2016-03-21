@@ -28,6 +28,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.doors.plugin/org.iets3.req.doors.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench/org.iets3.simbench.mpl" folder="simbench" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench/sandbox/org.iets3.simbench.sandbox.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.tools.z3/org.iets3.tools.z3.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.components/sandbox.components.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
