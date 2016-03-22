@@ -1016,5 +1016,17 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3k_9K2Ovuaj">
+    <property role="1pbfSe" value="375191149" />
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="InstanceRefExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3k_9K2Ovuak" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+    </node>
+  </node>
 </model>
 
