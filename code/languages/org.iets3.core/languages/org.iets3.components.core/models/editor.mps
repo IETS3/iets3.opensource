@@ -2,7 +2,7 @@
 <model ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
@@ -7261,6 +7261,32 @@
       </node>
       <node concept="3F1sOY" id="1HqphBIQDAI" role="3EZMnx">
         <ref role="1NtTu8" to="w9y2:1HqphBIBJyQ" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3k_9K2OvuaI">
+    <property role="3GE5qa" value="expr" />
+    <ref role="1XX52x" to="w9y2:3k_9K2Ovuaj" resolve="InstanceRefExpr" />
+    <node concept="1iCGBv" id="3k_9K2OvuaK" role="2wV5jI">
+      <ref role="1NtTu8" to="w9y2:3k_9K2Ovuak" />
+      <node concept="1sVBvm" id="3k_9K2OvuaM" role="1sWHZn">
+        <node concept="3F0A7n" id="3k_9K2OvuaW" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3k_9K2OydqG">
+    <property role="3GE5qa" value="expr" />
+    <ref role="1XX52x" to="w9y2:9D0IlqBEBR" resolve="ComponentInstanceTarget" />
+    <node concept="1iCGBv" id="3k_9K2OydqI" role="2wV5jI">
+      <ref role="1NtTu8" to="w9y2:9D0IlqBEC6" />
+      <node concept="1sVBvm" id="3k_9K2OydqK" role="1sWHZn">
+        <node concept="3F0A7n" id="3k_9K2OydqX" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
     </node>
   </node>

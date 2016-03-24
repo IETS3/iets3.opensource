@@ -3,13 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/iets3-allScripts" />
   <property name="build.layout" location="${build.dir}/artifacts/iets3-allScripts" />
-  <property name="artifacts.root" location="" />
   <property name="mps.home" location="${basedir}/../../../../../.." />
   <property name="iets3.github.core.home" location="${basedir}/../.." />
   <property name="mbeddr.github.core.home" location="${basedir}/../../../../mbeddr-split/mps33/mbeddr.core" />
-  <property name="mbeddr.artifacts.root" location="${mbeddr.github.core.home}/artifacts" />
-  <property name="mbeddr.artifacts.platform" location="${mbeddr.artifacts.root}/com.mbeddr.platform" />
-  <property name="sl-all.artifacts.root" location="${mbeddr.artifacts.root}/mps-sl-all" />
+  <property name="artifacts.root" location="${mbeddr.github.core.home}/artifacts" />
+  <property name="mbeddr.artifacts.platform" location="${artifacts.root}/com.mbeddr.platform" />
+  <property name="sl-all.artifacts.root" location="${artifacts.root}/mps-sl-all" />
   <property name="mbeddr-allScripts.artifacts" location="${artifacts.root}/com.mbeddr.allScripts.build" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mps-sl-all" location="${sl-all.artifacts.root}" />
@@ -147,11 +146,10 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mps.home" path="${mps.home}" />
       <macro name="iets3.github.core.home" path="${iets3.github.core.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
-      <macro name="mbeddr.artifacts.root" path="${mbeddr.artifacts.root}" />
+      <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mbeddr.artifacts.platform" path="${mbeddr.artifacts.platform}" />
       <macro name="sl-all.artifacts.root" path="${sl-all.artifacts.root}" />
       <macro name="mbeddr-allScripts.artifacts" path="${mbeddr-allScripts.artifacts}" />

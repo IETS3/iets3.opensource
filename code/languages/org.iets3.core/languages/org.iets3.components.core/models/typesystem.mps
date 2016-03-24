@@ -83,6 +83,24 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -1579,6 +1597,55 @@
     <node concept="1YaCAy" id="1HqphBIBJzj" role="1YuTPh">
       <property role="TrG5h" value="icv" />
       <ref role="1YaFvo" to="w9y2:1HqphBIwaPk" resolve="IComputedValueAttribute" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3k_9K2OvOmY">
+    <property role="TrG5h" value="typeof_InstanceRefExpr" />
+    <property role="3GE5qa" value="expr" />
+    <node concept="3clFbS" id="3k_9K2OvOmZ" role="18ibNy">
+      <node concept="1Z5TYs" id="3k_9K2OvOpR" role="3cqZAp">
+        <node concept="mw_s8" id="3k_9K2OvOqb" role="1ZfhKB">
+          <node concept="2pJPEk" id="3k_9K2OvOqw" role="mwGJk">
+            <node concept="2pJPED" id="3k_9K2OvOqG" role="2pJPEn">
+              <ref role="2pJxaS" to="w9y2:9D0IlqBErS" resolve="ComponentType" />
+              <node concept="2pIpSj" id="3k_9K2OvOrh" role="2pJxcM">
+                <ref role="2pIpSl" to="w9y2:9D0IlqBEs5" />
+                <node concept="36biLy" id="3k_9K2OvOrF" role="2pJxcZ">
+                  <node concept="2OqwBi" id="3k_9K2OvP2k" role="36biLW">
+                    <node concept="2OqwBi" id="3k_9K2OvOEI" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3k_9K2OvOtP" role="2Oq$k0">
+                        <node concept="1YBJjd" id="3k_9K2OvOrQ" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3k_9K2OvOn1" resolve="ire" />
+                        </node>
+                        <node concept="3TrEf2" id="3k_9K2OvOxS" role="2OqNvi">
+                          <ref role="3Tt5mk" to="w9y2:3k_9K2Ovuak" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="3k_9K2OvOQ0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="w9y2:6LfBX8YlosG" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="3k_9K2OvP5G" role="2OqNvi">
+                      <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3k_9K2OvOpU" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3k_9K2OvOnA" role="mwGJk">
+            <node concept="1YBJjd" id="3k_9K2OvOnQ" role="1Z2MuG">
+              <ref role="1YBMHb" node="3k_9K2OvOn1" resolve="ire" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3k_9K2OvOn1" role="1YuTPh">
+      <property role="TrG5h" value="ire" />
+      <ref role="1YaFvo" to="w9y2:3k_9K2Ovuaj" resolve="InstanceRefExpr" />
     </node>
   </node>
 </model>
