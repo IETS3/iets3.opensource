@@ -3137,12 +3137,18 @@
     <property role="3GE5qa" value="components" />
     <ref role="13h7C2" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
     <node concept="13i0hz" id="cJpacq1kKx" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="isCompatibleWithGoverningType" />
       <node concept="3Tm1VV" id="cJpacq1kKy" role="1B3o_S" />
       <node concept="10P_77" id="cJpacq1kKD" role="3clF45" />
-      <node concept="3clFbS" id="cJpacq1kK$" role="3clF47" />
+      <node concept="3clFbS" id="cJpacq1kK$" role="3clF47">
+        <node concept="3clFbF" id="7Kc02r7QnGD" role="3cqZAp">
+          <node concept="3clFbT" id="7Kc02r7QnGC" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
       <node concept="37vLTG" id="cJpacq1kKH" role="3clF46">
         <property role="TrG5h" value="governingPortType" />
         <node concept="3Tqbb2" id="cJpacq1kKG" role="1tU5fm">
@@ -3151,21 +3157,29 @@
       </node>
     </node>
     <node concept="13i0hz" id="mIQkxg4rmC" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="characteristicColor" />
       <node concept="3Tm1VV" id="mIQkxg4rmD" role="1B3o_S" />
       <node concept="3uibUv" id="mIQkxg4rnn" role="3clF45">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="3clFbS" id="mIQkxg4rmF" role="3clF47" />
+      <node concept="3clFbS" id="mIQkxg4rmF" role="3clF47">
+        <node concept="3clFbF" id="7Kc02r7QnGl" role="3cqZAp">
+          <node concept="10Nm6u" id="7Kc02r7QnGk" role="3clFbG" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="4KDeVD8s9TJ" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="createConnectorType" />
       <node concept="3Tm1VV" id="4KDeVD8s9TK" role="1B3o_S" />
-      <node concept="3clFbS" id="4KDeVD8s9TL" role="3clF47" />
+      <node concept="3clFbS" id="4KDeVD8s9TL" role="3clF47">
+        <node concept="3clFbF" id="7Kc02r7QnGv" role="3cqZAp">
+          <node concept="10Nm6u" id="7Kc02r7QnGu" role="3clFbG" />
+        </node>
+      </node>
       <node concept="3Tqbb2" id="4KDeVD8s9Uy" role="3clF45">
         <ref role="ehGHo" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
       </node>
@@ -3185,12 +3199,16 @@
       </node>
     </node>
     <node concept="13i0hz" id="siw10GjEcX" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getReferencedNode" />
       <node concept="3Tm1VV" id="siw10GjEcY" role="1B3o_S" />
       <node concept="3Tqbb2" id="siw10GjEfJ" role="3clF45" />
-      <node concept="3clFbS" id="siw10GjEd0" role="3clF47" />
+      <node concept="3clFbS" id="siw10GjEd0" role="3clF47">
+        <node concept="3clFbF" id="7Kc02r7PGeu" role="3cqZAp">
+          <node concept="10Nm6u" id="7Kc02r7PGet" role="3clFbG" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="siw10Ggnmt" role="13h7CS">
       <property role="13i0iv" value="false" />
