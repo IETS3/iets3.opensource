@@ -979,5 +979,39 @@
     <property role="3GE5qa" value="attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="7kdj6EM27c1">
+    <property role="1pbfSe" value="655736683" />
+    <property role="3GE5qa" value="behavior.simple" />
+    <property role="TrG5h" value="Variable" />
+    <property role="34LRSv" value="var" />
+    <ref role="1TJDcQ" node="3RyTuhdwoZO" resolve="AbstractBehavior" />
+    <node concept="1TJgyj" id="7kdj6EM27d4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7kdj6EM27d6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7kdj6EM27eU" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7kdj6EM4KIW">
+    <property role="1pbfSe" value="656431142" />
+    <property role="3GE5qa" value="behavior.simple" />
+    <property role="TrG5h" value="VarRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7kdj6EM4KJZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7kdj6EM27c1" resolve="Variable" />
+    </node>
+  </node>
 </model>
 
