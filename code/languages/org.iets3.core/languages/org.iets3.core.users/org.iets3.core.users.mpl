@@ -49,7 +49,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
