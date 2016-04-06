@@ -8,6 +8,7 @@
   <imports>
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,6 +41,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -98,10 +102,15 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -299,6 +308,44 @@
     <node concept="1YaCAy" id="6zmBjqUiFK7" role="1YuTPh">
       <property role="TrG5h" value="ie" />
       <ref role="1YaFvo" to="700h:6zmBjqUiFJs" resolve="IsEmptyDotTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6zmBjqUiIex">
+    <property role="TrG5h" value="typeof_IExtractElement" />
+    <node concept="3clFbS" id="6zmBjqUiIey" role="18ibNy">
+      <node concept="1Z5TYs" id="6zmBjqUiIh0" role="3cqZAp">
+        <node concept="mw_s8" id="6zmBjqUiIhk" role="1ZfhKB">
+          <node concept="2OqwBi" id="6zmBjqUiIQ8" role="mwGJk">
+            <node concept="1PxgMI" id="6zmBjqUiIKi" role="2Oq$k0">
+              <ref role="1PxNhF" to="700h:6zmBjqUily5" resolve="CollectionType" />
+              <node concept="1Z2H0r" id="6zmBjqUiIhg" role="1PxMeX">
+                <node concept="2OqwBi" id="6zmBjqUiIzC" role="1Z2MuG">
+                  <node concept="1YBJjd" id="6zmBjqUiIxh" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6zmBjqUiIe$" resolve="iee" />
+                  </node>
+                  <node concept="2qgKlT" id="6zmBjqUiIHm" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6zmBjqUiIX7" role="2OqNvi">
+              <ref role="3Tt5mk" to="700h:6zmBjqUily6" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6zmBjqUiIh3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6zmBjqUiIeU" role="mwGJk">
+            <node concept="1YBJjd" id="6zmBjqUiIfa" role="1Z2MuG">
+              <ref role="1YBMHb" node="6zmBjqUiIe$" resolve="iee" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6zmBjqUiIe$" role="1YuTPh">
+      <property role="TrG5h" value="iee" />
+      <ref role="1YaFvo" to="700h:6zmBjqUiIds" resolve="IExtractElement" />
     </node>
   </node>
 </model>
