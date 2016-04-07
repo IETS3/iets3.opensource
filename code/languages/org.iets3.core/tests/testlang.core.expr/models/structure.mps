@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -53,6 +54,12 @@
       <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6sdnDbSla1f" resolve="Variable" />
+    </node>
+    <node concept="1TJgyj" id="49WTic8feOi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="functions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="49WTic8f4iz" resolve="Function" />
     </node>
     <node concept="PrWs8" id="4tXyFaWv2cd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -103,6 +110,32 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla1f" resolve="Variable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="49WTic8f4iz">
+    <property role="1pbfSe" value="1253648838" />
+    <property role="TrG5h" value="Function" />
+    <property role="34LRSv" value="function" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="49WTic8f4nK" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="49WTic8gFfG">
+    <property role="1pbfSe" value="1254070543" />
+    <property role="TrG5h" value="FunctionCall" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="49WTic8gFfH" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:49WTic8gvys" resolve="IFunctionCall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="49WTic8hwXW">
+    <property role="1pbfSe" value="1254290591" />
+    <property role="TrG5h" value="FunRef" />
+    <property role="34LRSv" value=":" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="49WTic8hwXX" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:49WTic8hm1E" resolve="IFunctionRef" />
     </node>
   </node>
 </model>

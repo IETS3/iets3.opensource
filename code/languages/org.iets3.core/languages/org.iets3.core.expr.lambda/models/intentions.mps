@@ -141,6 +141,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -160,6 +163,7 @@
   </registry>
   <node concept="2S6QgY" id="49WTic8ewUk">
     <property role="TrG5h" value="transformIntoExplicitVersion" />
+    <property role="3GE5qa" value="lambda" />
     <ref role="2ZfgGC" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
     <node concept="2S6ZIM" id="49WTic8ewUl" role="2ZfVej">
       <node concept="3clFbS" id="49WTic8ewUm" role="2VODD2">
@@ -332,6 +336,7 @@
   </node>
   <node concept="2S6QgY" id="49WTic8eH3P">
     <property role="TrG5h" value="transformIntoShortVersion" />
+    <property role="3GE5qa" value="lambda" />
     <ref role="2ZfgGC" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
     <node concept="2S6ZIM" id="49WTic8eH3Q" role="2ZfVej">
       <node concept="3clFbS" id="49WTic8eH3R" role="2VODD2">

@@ -9,6 +9,7 @@
     <import index="2qy0" ref="r:2212f9f6-5422-47b7-82d4-fa8d24e9f124(testlang.core.expr.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -110,6 +111,60 @@
               </node>
               <node concept="3Tsc0h" id="6zmBjqUizs6" role="2OqNvi">
                 <ref role="3TtcxE" to="2qy0:6sdnDbSla1g" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="49WTic8gFlP">
+    <ref role="1M2myG" to="2qy0:49WTic8gFfG" resolve="FunctionCall" />
+    <node concept="1N5Pfh" id="49WTic8gFlQ" role="1Mr941">
+      <ref role="1N5Vy1" to="zzzn:49WTic8gvyC" />
+      <node concept="1MUpDS" id="49WTic8gFlS" role="1N6uqs">
+        <node concept="3clFbS" id="49WTic8gFlT" role="2VODD2">
+          <node concept="3clFbF" id="49WTic8gFmy" role="3cqZAp">
+            <node concept="2OqwBi" id="49WTic8gFxj" role="3clFbG">
+              <node concept="2OqwBi" id="49WTic8gFoR" role="2Oq$k0">
+                <node concept="21POm0" id="49WTic8gFmx" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="49WTic8gFrm" role="2OqNvi">
+                  <node concept="1xMEDy" id="49WTic8gFro" role="1xVPHs">
+                    <node concept="chp4Y" id="49WTic8gFsH" role="ri$Ld">
+                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="49WTic8gFFh" role="2OqNvi">
+                <ref role="3TtcxE" to="2qy0:49WTic8feOi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="49WTic8hx03">
+    <ref role="1M2myG" to="2qy0:49WTic8hwXW" resolve="FunRef" />
+    <node concept="1N5Pfh" id="49WTic8hx04" role="1Mr941">
+      <ref role="1N5Vy1" to="zzzn:49WTic8hm1F" />
+      <node concept="1MUpDS" id="49WTic8hx06" role="1N6uqs">
+        <node concept="3clFbS" id="49WTic8hx07" role="2VODD2">
+          <node concept="3clFbF" id="49WTic8hx0K" role="3cqZAp">
+            <node concept="2OqwBi" id="49WTic8hxbu" role="3clFbG">
+              <node concept="2OqwBi" id="49WTic8hx35" role="2Oq$k0">
+                <node concept="21POm0" id="49WTic8hx0J" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="49WTic8hx5b" role="2OqNvi">
+                  <node concept="1xMEDy" id="49WTic8hx5d" role="1xVPHs">
+                    <node concept="chp4Y" id="49WTic8hx6S" role="ri$Ld">
+                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="49WTic8hxh7" role="2OqNvi">
+                <ref role="3TtcxE" to="2qy0:49WTic8feOi" />
               </node>
             </node>
           </node>
