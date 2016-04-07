@@ -148,5 +148,45 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6zmBjqUm9Yi">
+    <ref role="1M2myG" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+    <node concept="nKS2y" id="6zmBjqUm9Yj" role="1MLUbF">
+      <node concept="3clFbS" id="6zmBjqUm9Yk" role="2VODD2">
+        <node concept="3clFbF" id="6zmBjqUm9Zp" role="3cqZAp">
+          <node concept="2OqwBi" id="6zmBjqUma1a" role="3clFbG">
+            <node concept="nLn13" id="6zmBjqUm9Zo" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="6zmBjqUma5m" role="2OqNvi">
+              <node concept="chp4Y" id="6zmBjqUma6j" role="cj9EA">
+                <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6zmBjqUmswn">
+    <ref role="1M2myG" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
+    <node concept="nKS2y" id="6zmBjqUmswo" role="1MLUbF">
+      <node concept="3clFbS" id="6zmBjqUmswp" role="2VODD2">
+        <node concept="3clFbF" id="6zmBjqUmsxu" role="3cqZAp">
+          <node concept="2OqwBi" id="6zmBjqUmsGw" role="3clFbG">
+            <node concept="2OqwBi" id="6zmBjqUmszf" role="2Oq$k0">
+              <node concept="nLn13" id="6zmBjqUmsxt" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6zmBjqUmsBr" role="2OqNvi">
+                <node concept="1xMEDy" id="6zmBjqUmsBt" role="1xVPHs">
+                  <node concept="chp4Y" id="6zmBjqUmsD5" role="ri$Ld">
+                    <ref role="cht4Q" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="6zmBjqUmsSj" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6zmBjqUmsP7" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -14,6 +14,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -63,6 +64,7 @@
     <property role="1pbfSe" value="589866044" />
     <property role="TrG5h" value="LambdaExpression" />
     <property role="34LRSv" value="#{" />
+    <property role="R4oN_" value="lambda expression with explicit arguments" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUkws7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -133,6 +135,29 @@
     <node concept="PrWs8" id="6zmBjqUln6g" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUlmbK" resolve="ILambdaDotTarget" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6zmBjqUm7Mf">
+    <property role="1pbfSe" value="590289349" />
+    <property role="TrG5h" value="IPushDownLambdaArgType" />
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUm7MQ">
+    <property role="1pbfSe" value="590289388" />
+    <property role="TrG5h" value="ShortLambdaExpression" />
+    <property role="34LRSv" value="#{" />
+    <property role="R4oN_" value="lambda with implicit argument &quot;it&quot;" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6zmBjqUm7MR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUmsuo">
+    <property role="1pbfSe" value="590374094" />
+    <property role="TrG5h" value="ShortLambdaItExpression" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
 
