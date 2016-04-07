@@ -36,6 +36,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -45,6 +48,7 @@
     <property role="1pbfSe" value="589297083" />
     <property role="TrG5h" value="CollectionType" />
     <property role="34LRSv" value="collection" />
+    <property role="3GE5qa" value="collection" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="6zmBjqUily6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -57,6 +61,7 @@
     <property role="1pbfSe" value="589304918" />
     <property role="TrG5h" value="ListType" />
     <property role="34LRSv" value="list" />
+    <property role="3GE5qa" value="list" />
     <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
     <node concept="PrWs8" id="6zmBjqUiHHH" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHH7" resolve="IOrderedCollection" />
@@ -66,6 +71,7 @@
     <property role="1pbfSe" value="589306893" />
     <property role="TrG5h" value="ListLiteral" />
     <property role="34LRSv" value="list" />
+    <property role="3GE5qa" value="ordered" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUinVo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,78 +82,143 @@
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
     <property role="1pbfSe" value="589338032" />
-    <property role="TrG5h" value="ICollectionDotTarget" />
+    <property role="TrG5h" value="ICollectionOp" />
+    <property role="3GE5qa" value="collection" />
     <node concept="PrWs8" id="6zmBjqUiwKr" role="PrDN$">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUiwKw">
     <property role="1pbfSe" value="589343062" />
-    <property role="TrG5h" value="SimpleCollectionTarget" />
+    <property role="TrG5h" value="NoArgCollectionOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6zmBjqUiwKE" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionDotTarget" />
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUix6N">
     <property role="1pbfSe" value="589344489" />
-    <property role="TrG5h" value="SizeDotTarget" />
+    <property role="TrG5h" value="SizeOp" />
     <property role="34LRSv" value="size" />
-    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="SimpleCollectionTarget" />
+    <property role="3GE5qa" value="collection" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="6zmBjqUiFJs">
     <property role="1pbfSe" value="589388050" />
-    <property role="TrG5h" value="IsEmptyDotTarget" />
+    <property role="TrG5h" value="IsEmptyOp" />
     <property role="34LRSv" value="isEmpty" />
-    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="SimpleCollectionTarget" />
+    <property role="3GE5qa" value="collection" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHH7">
     <property role="1pbfSe" value="589396093" />
     <property role="TrG5h" value="IOrderedCollection" />
+    <property role="3GE5qa" value="ordered" />
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHHJ">
     <property role="1pbfSe" value="589396133" />
-    <property role="TrG5h" value="IOrderedCollectionDotTarget" />
+    <property role="TrG5h" value="IOrderedCollectionOp" />
+    <property role="3GE5qa" value="ordered" />
     <node concept="PrWs8" id="6zmBjqUiLl1" role="PrDN$">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionDotTarget" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6zmBjqUiIad">
-    <property role="1pbfSe" value="589397955" />
-    <property role="TrG5h" value="SimpleOrderedCollectionTarget" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6zmBjqUiIau" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionDotTarget" />
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUiIdc">
     <property role="1pbfSe" value="589398146" />
-    <property role="TrG5h" value="FirstDotTarget" />
+    <property role="TrG5h" value="FirstOp" />
     <property role="34LRSv" value="first" />
-    <ref role="1TJDcQ" node="6zmBjqUiIad" resolve="SimpleOrderedCollectionTarget" />
+    <property role="3GE5qa" value="ordered" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUiIZG" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IExtractElement" />
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+    <node concept="PrWs8" id="6zmBjqUjAcF" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUiIds">
     <property role="1pbfSe" value="589398162" />
-    <property role="TrG5h" value="IExtractElement" />
+    <property role="TrG5h" value="IElementTyped" />
     <node concept="PrWs8" id="6zmBjqUiIe6" role="PrDN$">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionDotTarget" />
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUiIZI">
     <property role="1pbfSe" value="589401380" />
-    <property role="TrG5h" value="LastDotTarget" />
+    <property role="TrG5h" value="LastOp" />
     <property role="34LRSv" value="last" />
-    <ref role="1TJDcQ" node="6zmBjqUiIad" resolve="SimpleOrderedCollectionTarget" />
+    <property role="3GE5qa" value="ordered" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUiIZJ" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IExtractElement" />
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
     </node>
+    <node concept="PrWs8" id="6zmBjqUjAJi" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHH7" resolve="IOrderedCollection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUjjRq">
+    <property role="1pbfSe" value="589552400" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="AtOp" />
+    <property role="34LRSv" value="at" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="6zmBjqUjjRN" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+    <node concept="PrWs8" id="6zmBjqUj$FM" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUjnKs">
+    <property role="1pbfSe" value="589568338" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="OneArgCollectionOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6zmBjqUjnKt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6zmBjqUjnKv" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUjnKy">
+    <property role="1pbfSe" value="589568344" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AddOp" />
+    <property role="34LRSv" value="add" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="6zmBjqUjo1i" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6zmBjqUjnPd">
+    <property role="1pbfSe" value="589568643" />
+    <property role="TrG5h" value="ICollectionTyped" />
+    <node concept="PrWs8" id="6zmBjqUjnPe" role="PrDN$">
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUlJ2s">
+    <property role="1pbfSe" value="590187986" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="MapOp" />
+    <property role="34LRSv" value="map" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="6zmBjqUm1me">
+    <property role="1pbfSe" value="590262980" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="WhereOp" />
+    <property role="34LRSv" value="where" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
   </node>
 </model>
 

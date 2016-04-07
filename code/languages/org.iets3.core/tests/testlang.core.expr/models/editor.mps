@@ -109,6 +109,9 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -122,11 +125,10 @@
   <node concept="24kQdi" id="6sdnDbSlcFT">
     <ref role="1XX52x" to="2qy0:6sdnDbSla1f" resolve="Variable" />
     <node concept="3EZMnI" id="6sdnDbSlcFV" role="2wV5jI">
-      <node concept="3F0ifn" id="6sdnDbSlcG2" role="3EZMnx">
-        <property role="3F0ifm" value="var" />
-      </node>
-      <node concept="3F1sOY" id="6sdnDbSlcG8" role="3EZMnx">
-        <ref role="1NtTu8" to="2qy0:6sdnDbSlcFu" />
+      <node concept="1kIj98" id="6zmBjqUjrVh" role="3EZMnx">
+        <node concept="3F1sOY" id="6sdnDbSlcG8" role="1kIj9b">
+          <ref role="1NtTu8" to="2qy0:6sdnDbSlcFu" />
+        </node>
       </node>
       <node concept="3F0A7n" id="6sdnDbSlcGl" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

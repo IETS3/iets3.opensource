@@ -78,7 +78,7 @@
   <node concept="1TIwiD" id="4rZeNQ6Oerp">
     <property role="1pbfSe" value="841997802" />
     <property role="TrG5h" value="IntegerType" />
-    <property role="34LRSv" value="integer" />
+    <property role="34LRSv" value="int" />
     <property role="3GE5qa" value="numeric" />
     <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
   </node>
