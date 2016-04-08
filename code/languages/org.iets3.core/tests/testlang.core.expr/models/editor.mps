@@ -31,6 +31,10 @@
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -170,19 +174,19 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6sdnDbSlcH9" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <node concept="11L4FC" id="4rZeNQ6M4XX" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="uGVYUik90R" role="3EZMnx">
         <property role="3F0ifm" value="==&gt;" />
+        <node concept="VechU" id="6_XmR63ozoj" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
         <node concept="VPM3Z" id="uGVYUik9j2" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="1HlG4h" id="uGVYUik91G" role="3EZMnx">
+        <node concept="VechU" id="6_XmR63ozpB" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
         <node concept="1HfYo3" id="uGVYUik91I" role="1HlULh">
           <node concept="3TQlhw" id="uGVYUik91K" role="1Hhtcw">
             <node concept="3clFbS" id="uGVYUik91M" role="2VODD2">
@@ -264,9 +268,15 @@
       <node concept="3F0ifn" id="uGVYUilnIg" role="3EZMnx">
         <property role="3F0ifm" value="expected:" />
         <ref role="1ERwB7" node="6_XmR63ohfU" resolve="deleteAnnotation" />
+        <node concept="VechU" id="6_XmR63oFMe" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
       </node>
       <node concept="3F1sOY" id="uGVYUilnIt" role="3EZMnx">
         <ref role="1NtTu8" to="2qy0:uGVYUilnBW" />
+        <node concept="VechU" id="6_XmR63oFMg" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
       </node>
     </node>
   </node>
