@@ -17,6 +17,8 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="ee4m" ref="r:ec16a486-a272-478d-85f5-e180f179098d(testlang.core.expr.plugin)" />
+    <import index="dc0y" ref="r:8df617af-5f5f-45a6-8691-2aa535b4748e(org.iets3.core.expr.util.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -258,17 +260,69 @@
       <node concept="3clFbS" id="uGVYUilo0f" role="3clF47">
         <node concept="3clFbJ" id="uGVYUilo0g" role="3cqZAp">
           <node concept="3clFbS" id="uGVYUilo0h" role="3clFbx">
+            <node concept="3cpWs8" id="49WTic8mg6Q" role="3cqZAp">
+              <node concept="3cpWsn" id="49WTic8mg6R" role="3cpWs9">
+                <property role="TrG5h" value="simpleTypes" />
+                <node concept="3uibUv" id="49WTic8mg6O" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="49WTic8mg6S" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="49WTic8mg6T" role="37wK5m">
+                    <ref role="3B5MYn" to="9mim:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="49WTic8mg8y" role="3cqZAp">
+              <node concept="3cpWsn" id="49WTic8mg8z" role="3cpWs9">
+                <property role="TrG5h" value="testlang" />
+                <node concept="3uibUv" id="49WTic8mg8$" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="49WTic8mg8_" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="49WTic8mg8A" role="37wK5m">
+                    <ref role="3B5MYn" to="ee4m:uGVYUiiVGW" resolve="TestlangInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6_XmR63orjc" role="3cqZAp">
+              <node concept="3cpWsn" id="6_XmR63orjd" role="3cpWs9">
+                <property role="TrG5h" value="util" />
+                <node concept="3uibUv" id="6_XmR63orje" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="6_XmR63orjf" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="6_XmR63orjg" role="37wK5m">
+                    <ref role="3B5MYn" to="dc0y:vI4mpo41lz" resolve="ExprUtilInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="uGVYUilo0i" role="3cqZAp">
               <node concept="37vLTI" id="uGVYUilo0j" role="3clFbG">
                 <node concept="10M0yZ" id="uGVYUilo0k" role="37vLTJ">
                   <ref role="1PxDUh" node="3xDNhgd53E_" resolve="EvalHelper" />
                   <ref role="3cqZAo" node="3xDNhgd53F9" resolve="interpreter" />
                 </node>
-                <node concept="2YIFZM" id="uGVYUilo0l" role="37vLTx">
-                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                  <node concept="3B5_sB" id="uGVYUilo0m" role="37wK5m">
-                    <ref role="3B5MYn" to="9mim:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
+                <node concept="2ShNRf" id="49WTic8mgh7" role="37vLTx">
+                  <node concept="1pGfFk" id="49WTic8mgrt" role="2ShVmc">
+                    <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
+                    <node concept="37vLTw" id="49WTic8mgsg" role="37wK5m">
+                      <ref role="3cqZAo" node="49WTic8mg6R" resolve="simpleTypes" />
+                    </node>
+                    <node concept="37vLTw" id="49WTic8mgub" role="37wK5m">
+                      <ref role="3cqZAo" node="49WTic8mg8z" resolve="testlang" />
+                    </node>
+                    <node concept="37vLTw" id="6_XmR63ornz" role="37wK5m">
+                      <ref role="3cqZAo" node="6_XmR63orjd" resolve="util" />
+                    </node>
                   </node>
                 </node>
               </node>
