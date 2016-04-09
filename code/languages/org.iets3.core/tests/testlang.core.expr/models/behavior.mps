@@ -20,6 +20,7 @@
     <import index="ee4m" ref="r:ec16a486-a272-478d-85f5-e180f179098d(testlang.core.expr.plugin)" />
     <import index="dc0y" ref="r:8df617af-5f5f-45a6-8691-2aa535b4748e(org.iets3.core.expr.util.plugin)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -278,7 +279,7 @@
           <node concept="3clFbS" id="uGVYUilo0h" role="3clFbx">
             <node concept="3cpWs8" id="49WTic8mg6Q" role="3cqZAp">
               <node concept="3cpWsn" id="49WTic8mg6R" role="3cpWs9">
-                <property role="TrG5h" value="simpleTypes" />
+                <property role="TrG5h" value="base" />
                 <node concept="3uibUv" id="49WTic8mg6O" role="1tU5fm">
                   <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
                 </node>
@@ -286,6 +287,21 @@
                   <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                   <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                   <node concept="3B5_sB" id="49WTic8mg6T" role="37wK5m">
+                    <ref role="3B5MYn" to="oq0c:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="$yb$20fO1T" role="3cqZAp">
+              <node concept="3cpWsn" id="$yb$20fO1U" role="3cpWs9">
+                <property role="TrG5h" value="simpleTypes" />
+                <node concept="3uibUv" id="$yb$20fO1V" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="$yb$20fO1W" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="$yb$20fO1X" role="37wK5m">
                     <ref role="3B5MYn" to="9mim:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
                   </node>
                 </node>
@@ -346,7 +362,10 @@
                   <node concept="1pGfFk" id="49WTic8mgrt" role="2ShVmc">
                     <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
                     <node concept="37vLTw" id="49WTic8mgsg" role="37wK5m">
-                      <ref role="3cqZAo" node="49WTic8mg6R" resolve="simpleTypes" />
+                      <ref role="3cqZAo" node="49WTic8mg6R" resolve="base" />
+                    </node>
+                    <node concept="37vLTw" id="$yb$20fOsF" role="37wK5m">
+                      <ref role="3cqZAo" node="$yb$20fO1U" resolve="simpleTypes" />
                     </node>
                     <node concept="37vLTw" id="49WTic8mgub" role="37wK5m">
                       <ref role="3cqZAo" node="49WTic8mg8z" resolve="testlang" />
