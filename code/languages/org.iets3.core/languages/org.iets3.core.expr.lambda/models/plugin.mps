@@ -203,6 +203,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -626,6 +627,41 @@
             </node>
           </node>
           <node concept="TvHiN" id="$yb$20hNg9" role="3ElQJh" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="$yb$20ixNC" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
+      <node concept="3vetai" id="$yb$20iy2s" role="3vQZUl">
+        <node concept="qpA2v" id="$yb$20izE7" role="3vdyny">
+          <node concept="2OqwBi" id="$yb$20iyBN" role="3SLO0q">
+            <node concept="2OqwBi" id="$yb$20iy4B" role="2Oq$k0">
+              <node concept="oxGPV" id="$yb$20iy2E" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="$yb$20iy9M" role="2OqNvi">
+                <ref role="3TtcxE" to="zzzn:49WTic8ig5E" />
+              </node>
+            </node>
+            <node concept="1yVyf7" id="$yb$20izCs" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="$yb$20izUI" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+      <node concept="3vetai" id="$yb$20i$9E" role="3vQZUl">
+        <node concept="rqRoa" id="$yb$20i$9S" role="3vdyny">
+          <ref role="rqRob" to="zzzn:49WTic8ix6L" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="$yb$20i$qw" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="zzzn:49WTic8iHUx" resolve="ValRef" />
+      <node concept="3vetai" id="$yb$20i$Dv" role="3vQZUl">
+        <node concept="rqRoa" id="$yb$20i$DH" role="3vdyny">
+          <ref role="rqRob" to="zzzn:49WTic8iI9_" />
         </node>
       </node>
     </node>
