@@ -21,6 +21,7 @@
     <import index="dc0y" ref="r:8df617af-5f5f-45a6-8691-2aa535b4748e(org.iets3.core.expr.util.plugin)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="y6bu" ref="r:3549c9a9-0be5-4059-955f-f0d4bbef8dae(org.iets3.core.expr.collections.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -352,6 +353,21 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="$yb$20iCdZ" role="3cqZAp">
+              <node concept="3cpWsn" id="$yb$20iCe0" role="3cpWs9">
+                <property role="TrG5h" value="collections" />
+                <node concept="3uibUv" id="$yb$20iCe1" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="$yb$20iCe2" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="$yb$20iCe3" role="37wK5m">
+                    <ref role="3B5MYn" to="y6bu:uGVYUiiVGW" resolve="ExprCollectionsInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="uGVYUilo0i" role="3cqZAp">
               <node concept="37vLTI" id="uGVYUilo0j" role="3clFbG">
                 <node concept="10M0yZ" id="uGVYUilo0k" role="37vLTJ">
@@ -375,6 +391,9 @@
                     </node>
                     <node concept="37vLTw" id="3ejdIQ11yHV" role="37wK5m">
                       <ref role="3cqZAo" node="3ejdIQ11xJz" resolve="lambda" />
+                    </node>
+                    <node concept="37vLTw" id="$yb$20iCHM" role="37wK5m">
+                      <ref role="3cqZAo" node="$yb$20iCe0" resolve="collections" />
                     </node>
                   </node>
                 </node>
