@@ -19,6 +19,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="ee4m" ref="r:ec16a486-a272-478d-85f5-e180f179098d(testlang.core.expr.plugin)" />
     <import index="dc0y" ref="r:8df617af-5f5f-45a6-8691-2aa535b4748e(org.iets3.core.expr.util.plugin)" />
+    <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -222,6 +223,21 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="3xDNhgd54ro" role="3clF47">
+        <node concept="3clFbF" id="3ejdIQ10tZe" role="3cqZAp">
+          <node concept="37vLTI" id="3ejdIQ10tZf" role="3clFbG">
+            <node concept="2ShNRf" id="3ejdIQ10tZg" role="37vLTx">
+              <node concept="1pGfFk" id="3ejdIQ10tZh" role="2ShVmc">
+                <ref role="37wK5l" to="2ahs:27SkbdzdAWl" resolve="ContextImpl" />
+                <node concept="37vLTw" id="3ejdIQ10tZn" role="37wK5m">
+                  <ref role="3cqZAo" node="3xDNhgd53F9" resolve="interpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3ejdIQ10tZs" role="37vLTJ">
+              <ref role="3cqZAo" node="3xDNhgd54Pk" resolve="context" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3xDNhgd54Ih" role="3cqZAp">
           <node concept="2OqwBi" id="3xDNhgd54JJ" role="3clFbG">
             <node concept="1rXfSq" id="uGVYUilobM" role="2Oq$k0">
@@ -305,6 +321,21 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3ejdIQ11xJy" role="3cqZAp">
+              <node concept="3cpWsn" id="3ejdIQ11xJz" role="3cpWs9">
+                <property role="TrG5h" value="lambda" />
+                <node concept="3uibUv" id="3ejdIQ11xJ$" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2YIFZM" id="3ejdIQ11xJ_" role="33vP2m">
+                  <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="3B5_sB" id="3ejdIQ11xJA" role="37wK5m">
+                    <ref role="3B5MYn" to="sxpq:uGVYUiiVGW" resolve="ExprLambdaInterpeter" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="uGVYUilo0i" role="3cqZAp">
               <node concept="37vLTI" id="uGVYUilo0j" role="3clFbG">
                 <node concept="10M0yZ" id="uGVYUilo0k" role="37vLTJ">
@@ -322,6 +353,9 @@
                     </node>
                     <node concept="37vLTw" id="6_XmR63ornz" role="37wK5m">
                       <ref role="3cqZAo" node="6_XmR63orjd" resolve="util" />
+                    </node>
+                    <node concept="37vLTw" id="3ejdIQ11yHV" role="37wK5m">
+                      <ref role="3cqZAo" node="3ejdIQ11xJz" resolve="lambda" />
                     </node>
                   </node>
                 </node>

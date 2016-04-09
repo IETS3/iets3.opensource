@@ -87,6 +87,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -104,6 +105,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -208,6 +212,16 @@
                 </node>
                 <node concept="TDmWw" id="uGVYUilWsO" role="TEbGg">
                   <node concept="3clFbS" id="uGVYUilWsQ" role="TDEfX">
+                    <node concept="3clFbF" id="3ejdIQ10QqC" role="3cqZAp">
+                      <node concept="2OqwBi" id="3ejdIQ10QsG" role="3clFbG">
+                        <node concept="37vLTw" id="3ejdIQ10QqA" role="2Oq$k0">
+                          <ref role="3cqZAo" node="uGVYUilWsS" resolve="ex" />
+                        </node>
+                        <node concept="liA8E" id="3ejdIQ10Qzu" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3cpWs6" id="uGVYUilWS4" role="3cqZAp">
                       <node concept="Xl_RD" id="uGVYUilWTi" role="3cqZAk">
                         <property role="Xl_RC" value="invalid" />
