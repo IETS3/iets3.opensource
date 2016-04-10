@@ -67,9 +67,9 @@
   <node concept="1TIwiD" id="6zmBjqUkws6">
     <property role="1pbfSe" value="589866044" />
     <property role="TrG5h" value="LambdaExpression" />
-    <property role="34LRSv" value="#{" />
     <property role="R4oN_" value="lambda expression with explicit arguments" />
     <property role="3GE5qa" value="lambda" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUkws7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -80,7 +80,7 @@
     <node concept="1TJgyj" id="6zmBjqUkwH3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="6zmBjqUkMAU" role="PzmwI">
@@ -154,9 +154,9 @@
   <node concept="1TIwiD" id="6zmBjqUm7MQ">
     <property role="1pbfSe" value="590289388" />
     <property role="TrG5h" value="ShortLambdaExpression" />
-    <property role="34LRSv" value="#{" />
     <property role="R4oN_" value="lambda with implicit argument &quot;it&quot;" />
     <property role="3GE5qa" value="lambda" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUm7MR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

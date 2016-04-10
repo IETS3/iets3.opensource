@@ -141,6 +141,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1226,6 +1227,39 @@
     <node concept="1YaCAy" id="49WTic8jgL5" role="1YuTPh">
       <property role="TrG5h" value="vr" />
       <ref role="1YaFvo" to="zzzn:49WTic8iHUx" resolve="ValRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2rOWEwsAvCk">
+    <property role="TrG5h" value="check_LambdaExpression" />
+    <property role="3GE5qa" value="lambda" />
+    <node concept="3clFbS" id="2rOWEwsAvCl" role="18ibNy">
+      <node concept="3clFbJ" id="2rOWEwsAvCu" role="3cqZAp">
+        <node concept="3clFbS" id="2rOWEwsAvCv" role="3clFbx">
+          <node concept="2MkqsV" id="2rOWEwsAvWw" role="3cqZAp">
+            <node concept="Xl_RD" id="2rOWEwsAvWA" role="2MkJ7o">
+              <property role="Xl_RC" value="expression must be specified" />
+            </node>
+            <node concept="1YBJjd" id="2rOWEwsAvX6" role="2OEOjV">
+              <ref role="1YBMHb" node="2rOWEwsAvCn" resolve="le" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2rOWEwsAvPE" role="3clFbw">
+          <node concept="2OqwBi" id="2rOWEwsAvF3" role="2Oq$k0">
+            <node concept="1YBJjd" id="2rOWEwsAvCE" role="2Oq$k0">
+              <ref role="1YBMHb" node="2rOWEwsAvCn" resolve="le" />
+            </node>
+            <node concept="3TrEf2" id="2rOWEwsAvJL" role="2OqNvi">
+              <ref role="3Tt5mk" to="zzzn:6zmBjqUkwH3" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="2rOWEwsAvVV" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2rOWEwsAvCn" role="1YuTPh">
+      <property role="TrG5h" value="le" />
+      <ref role="1YaFvo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
     </node>
   </node>
 </model>

@@ -29,7 +29,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -263,7 +262,7 @@
       </node>
       <node concept="3F2HdR" id="4rZeNQ6O9Fo" role="3EZMnx">
         <ref role="1NtTu8" to="2qy0:6sdnDbSla1g" />
-        <node concept="2EHx9g" id="uGVYUikx4B" role="2czzBx" />
+        <node concept="2iRkQZ" id="77bOUKde2M6" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="49WTic8feNZ" role="3EZMnx">
         <property role="3F0ifm" value="---" />
@@ -277,21 +276,29 @@
   <node concept="24kQdi" id="uGVYUilnHV">
     <ref role="1XX52x" to="2qy0:uGVYUilnwU" resolve="InterpreterTestAnnotation" />
     <node concept="3EZMnI" id="uGVYUilnHX" role="2wV5jI">
+      <node concept="3F0ifn" id="77bOUKddUab" role="3EZMnx">
+        <node concept="VPM3Z" id="77bOUKddUb8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="77bOUKddplb" role="3EZMnx">
+        <node concept="2iRfu4" id="77bOUKddplc" role="2iSdaV" />
+        <node concept="3F0ifn" id="uGVYUilnIg" role="3EZMnx">
+          <property role="3F0ifm" value="expected:" />
+          <ref role="1ERwB7" node="6_XmR63ohfU" resolve="deleteAnnotation" />
+          <node concept="VechU" id="6_XmR63oFMe" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="uGVYUilnIt" role="3EZMnx">
+          <ref role="1NtTu8" to="2qy0:uGVYUilnBW" />
+          <node concept="VechU" id="6_XmR63oFMg" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+      </node>
       <node concept="2SsqMj" id="uGVYUilnI7" role="3EZMnx" />
-      <node concept="2iRfu4" id="uGVYUilnI0" role="2iSdaV" />
-      <node concept="3F0ifn" id="uGVYUilnIg" role="3EZMnx">
-        <property role="3F0ifm" value="expected:" />
-        <ref role="1ERwB7" node="6_XmR63ohfU" resolve="deleteAnnotation" />
-        <node concept="VechU" id="6_XmR63oFMe" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="uGVYUilnIt" role="3EZMnx">
-        <ref role="1NtTu8" to="2qy0:uGVYUilnBW" />
-        <node concept="VechU" id="6_XmR63oFMg" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-      </node>
+      <node concept="2iRkQZ" id="77bOUKddpkO" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6zmBjqUiyYn">

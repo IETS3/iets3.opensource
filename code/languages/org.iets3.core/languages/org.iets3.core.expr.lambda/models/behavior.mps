@@ -192,13 +192,13 @@
         <node concept="3clFbF" id="6zmBjqUkwO3" role="3cqZAp">
           <node concept="3cpWs3" id="$yb$20nbCQ" role="3clFbG">
             <node concept="Xl_RD" id="$yb$20nbCT" role="3uHU7w">
-              <property role="Xl_RC" value="}" />
+              <property role="Xl_RC" value="|" />
             </node>
             <node concept="3cpWs3" id="$yb$20naHa" role="3uHU7B">
               <node concept="3cpWs3" id="$yb$20nan$" role="3uHU7B">
                 <node concept="3cpWs3" id="$yb$20n3gA" role="3uHU7B">
                   <node concept="Xl_RD" id="6zmBjqUkwO2" role="3uHU7B">
-                    <property role="Xl_RC" value="#{" />
+                    <property role="Xl_RC" value="|" />
                   </node>
                   <node concept="2OqwBi" id="$yb$20n41S" role="3uHU7w">
                     <node concept="2OqwBi" id="$yb$20n3jh" role="2Oq$k0">
