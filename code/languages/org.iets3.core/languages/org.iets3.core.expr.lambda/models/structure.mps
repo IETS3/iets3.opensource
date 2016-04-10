@@ -132,7 +132,7 @@
   </node>
   <node concept="1TIwiD" id="6zmBjqUln66">
     <property role="1pbfSe" value="590089916" />
-    <property role="TrG5h" value="ExecDotTarget" />
+    <property role="TrG5h" value="ExecOp" />
     <property role="34LRSv" value="exec" />
     <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -289,6 +289,22 @@
       <property role="20kJfa" value="val" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49WTic8ix6I" resolve="ValExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsAzV1">
+    <property role="1pbfSe" value="1133457769" />
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="BindOp" />
+    <property role="34LRSv" value="bind" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2rOWEwsAzV4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2rOWEwsAzV2" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUlmbK" resolve="ILambdaDotTarget" />
     </node>
   </node>
 </model>
