@@ -11,6 +11,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -49,6 +50,12 @@
     <property role="TrG5h" value="ExprTestContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2rOWEwsDN0H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typedefs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2rOWEwsDAx9" resolve="Typedef" />
+    </node>
     <node concept="1TJgyj" id="6sdnDbSla1g" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variables" />
@@ -136,6 +143,32 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="49WTic8hwXX" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8hm1E" resolve="IFunctionRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsDAx9">
+    <property role="1pbfSe" value="1134254833" />
+    <property role="TrG5h" value="Typedef" />
+    <property role="34LRSv" value="typedef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2rOWEwsDAxa" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2rOWEwsDAxc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsDANr">
+    <property role="1pbfSe" value="1134256003" />
+    <property role="TrG5h" value="TypedefType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="2rOWEwsDANs" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="typedef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2rOWEwsDAx9" resolve="Typedef" />
     </node>
   </node>
 </model>

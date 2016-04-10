@@ -260,6 +260,13 @@
       <node concept="3F0ifn" id="4rZeNQ6O9Fu" role="3EZMnx">
         <property role="3F0ifm" value="--------------------------------" />
       </node>
+      <node concept="3F2HdR" id="2rOWEwsDN1X" role="3EZMnx">
+        <ref role="1NtTu8" to="2qy0:2rOWEwsDN0H" />
+        <node concept="2iRkQZ" id="2rOWEwsDN1Y" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="2rOWEwsDN15" role="3EZMnx">
+        <property role="3F0ifm" value="---" />
+      </node>
       <node concept="3F2HdR" id="4rZeNQ6O9Fo" role="3EZMnx">
         <ref role="1NtTu8" to="2qy0:6sdnDbSla1g" />
         <node concept="2iRkQZ" id="77bOUKde2M6" role="2czzBx" />
@@ -445,6 +452,36 @@
               <node concept="1PgB_6" id="6_XmR63ohoO" role="2OqNvi" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2rOWEwsDAxA">
+    <ref role="1XX52x" to="2qy0:2rOWEwsDAx9" resolve="Typedef" />
+    <node concept="3EZMnI" id="2rOWEwsDAxF" role="2wV5jI">
+      <node concept="2iRfu4" id="2rOWEwsDAxG" role="2iSdaV" />
+      <node concept="3F0ifn" id="2rOWEwsDAxC" role="3EZMnx">
+        <property role="3F0ifm" value="typedef" />
+      </node>
+      <node concept="3F0A7n" id="2rOWEwsDAxO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2rOWEwsDAxW" role="3EZMnx">
+        <property role="3F0ifm" value=":&lt;=:" />
+      </node>
+      <node concept="3F1sOY" id="2rOWEwsDAy6" role="3EZMnx">
+        <ref role="1NtTu8" to="2qy0:2rOWEwsDAxc" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2rOWEwsDYM9">
+    <ref role="1XX52x" to="2qy0:2rOWEwsDANr" resolve="TypedefType" />
+    <node concept="1iCGBv" id="2rOWEwsDYMb" role="2wV5jI">
+      <ref role="1NtTu8" to="2qy0:2rOWEwsDANs" />
+      <node concept="1sVBvm" id="2rOWEwsDYMd" role="1sWHZn">
+        <node concept="3F0A7n" id="2rOWEwsDYMn" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
