@@ -68,6 +68,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -173,8 +174,16 @@
     <node concept="2S6ZIM" id="4tXyFaWyCnJ" role="2ZfVej">
       <node concept="3clFbS" id="4tXyFaWyCnK" role="2VODD2">
         <node concept="3clFbF" id="4tXyFaWyCvA" role="3cqZAp">
-          <node concept="Xl_RD" id="4tXyFaWyCv_" role="3clFbG">
-            <property role="Xl_RC" value="Add Child Requirement" />
+          <node concept="3cpWs3" id="7gL8KYmPLEI" role="3clFbG">
+            <node concept="2OqwBi" id="7gL8KYmPLJY" role="3uHU7w">
+              <node concept="2Sf5sV" id="7gL8KYmPLFD" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7gL8KYmPLTy" role="2OqNvi">
+                <ref role="37wK5l" to="bemq:7gL8KYmPHWW" resolve="getDisplayName" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4tXyFaWyCv_" role="3uHU7B">
+              <property role="Xl_RC" value="Add Child " />
+            </node>
           </node>
         </node>
       </node>
@@ -277,8 +286,16 @@
     <node concept="2S6ZIM" id="7Dcax7Agh7x" role="2ZfVej">
       <node concept="3clFbS" id="7Dcax7Agh7y" role="2VODD2">
         <node concept="3clFbF" id="7Dcax7Agh7z" role="3cqZAp">
-          <node concept="Xl_RD" id="7Dcax7Agh7$" role="3clFbG">
-            <property role="Xl_RC" value="Add Sibling Requirement" />
+          <node concept="3cpWs3" id="7gL8KYmPMnR" role="3clFbG">
+            <node concept="Xl_RD" id="7Dcax7Agh7$" role="3uHU7B">
+              <property role="Xl_RC" value="Add Sibling " />
+            </node>
+            <node concept="2OqwBi" id="7gL8KYmPMoM" role="3uHU7w">
+              <node concept="2Sf5sV" id="7gL8KYmPMoN" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7gL8KYmPMoO" role="2OqNvi">
+                <ref role="37wK5l" to="bemq:7gL8KYmPHWW" resolve="getDisplayName" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
