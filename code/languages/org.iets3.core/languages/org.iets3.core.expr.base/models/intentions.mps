@@ -61,6 +61,24 @@
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
@@ -69,6 +87,9 @@
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -130,6 +151,41 @@
               </node>
               <node concept="3TrEf2" id="71dSyJVpq5X" role="2OqNvi">
                 <ref role="3Tt5mk" to="hm2y:71dSyJVppgy" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6LLGpXIARFu">
+    <property role="TrG5h" value="wrapWithParens" />
+    <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="2S6ZIM" id="6LLGpXIARFv" role="2ZfVej">
+      <node concept="3clFbS" id="6LLGpXIARFw" role="2VODD2">
+        <node concept="3clFbF" id="6LLGpXIARGR" role="3cqZAp">
+          <node concept="Xl_RD" id="6LLGpXIARGQ" role="3clFbG">
+            <property role="Xl_RC" value="Wrap with Parens (..)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6LLGpXIARFx" role="2ZfgGD">
+      <node concept="3clFbS" id="6LLGpXIARFy" role="2VODD2">
+        <node concept="3clFbF" id="6LLGpXIARN_" role="3cqZAp">
+          <node concept="2OqwBi" id="6LLGpXIAROS" role="3clFbG">
+            <node concept="2Sf5sV" id="6LLGpXIARN$" role="2Oq$k0" />
+            <node concept="1P9Npp" id="6LLGpXIARRM" role="2OqNvi">
+              <node concept="2pJPEk" id="6LLGpXIARSz" role="1P9ThW">
+                <node concept="2pJPED" id="6LLGpXIARTk" role="2pJPEn">
+                  <ref role="2pJxaS" to="hm2y:4rZeNQ6OJ4v" resolve="ParensExpression" />
+                  <node concept="2pIpSj" id="6LLGpXIARUJ" role="2pJxcM">
+                    <ref role="2pIpSl" to="hm2y:4rZeNQ6OJ5M" />
+                    <node concept="36biLy" id="6LLGpXIARVV" role="2pJxcZ">
+                      <node concept="2Sf5sV" id="6LLGpXIARWA" role="36biLW" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
