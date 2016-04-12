@@ -88,10 +88,6 @@
     <property role="3GE5qa" value="binary.p1000" />
     <ref role="1M2myG" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
   </node>
-  <node concept="1M2fIO" id="7jlPi2BQaOa">
-    <property role="3GE5qa" value="option" />
-    <ref role="1M2myG" to="hm2y:7jlPi2BQaNi" resolve="OptionValueTarget" />
-  </node>
   <node concept="1M2fIO" id="UN2ftLUydc">
     <property role="3GE5qa" value="option" />
     <ref role="1M2myG" to="hm2y:UN2ftLUxmN" resolve="SomeValExpr" />

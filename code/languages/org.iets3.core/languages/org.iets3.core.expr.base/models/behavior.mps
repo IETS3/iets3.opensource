@@ -1769,28 +1769,6 @@
       <node concept="3clFbS" id="7jlPi2BQ7aQ" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="5X0$sg396ax">
-    <property role="3GE5qa" value="option" />
-    <ref role="13h7C2" to="hm2y:7jlPi2BQaNi" resolve="OptionValueTarget" />
-    <node concept="13hLZK" id="5X0$sg396ay" role="13h7CW">
-      <node concept="3clFbS" id="5X0$sg396az" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="5X0$sg396a$" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="renderReadable" />
-      <ref role="13i0hy" node="6kR0qIbI2yi" resolve="renderReadable" />
-      <node concept="3Tm1VV" id="5X0$sg396a_" role="1B3o_S" />
-      <node concept="3clFbS" id="5X0$sg396aC" role="3clF47">
-        <node concept="3clFbF" id="5X0$sg396aJ" role="3cqZAp">
-          <node concept="Xl_RD" id="5X0$sg396aI" role="3clFbG">
-            <property role="Xl_RC" value="val" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="5X0$sg396aD" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="5X0$sg39ARZ">
     <property role="3GE5qa" value="option" />
     <ref role="13h7C2" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />

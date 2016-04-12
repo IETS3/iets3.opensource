@@ -100,6 +100,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -281,6 +284,34 @@
               </node>
               <node concept="3Tsc0h" id="2rOWEwsDWpj" role="2OqNvi">
                 <ref role="3TtcxE" to="2qy0:2rOWEwsDN0H" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6LLGpXJ2Yhl">
+    <property role="3GE5qa" value="entities" />
+    <ref role="1M2myG" to="2qy0:6LLGpXJ2YgU" resolve="EntityType" />
+    <node concept="1N5Pfh" id="6LLGpXJ2Yhm" role="1Mr941">
+      <ref role="1N5Vy1" to="2qy0:6LLGpXJ2YgV" />
+      <node concept="1MUpDS" id="6LLGpXJ2Yho" role="1N6uqs">
+        <node concept="3clFbS" id="6LLGpXJ2Yhp" role="2VODD2">
+          <node concept="3clFbF" id="6LLGpXJ2Yi2" role="3cqZAp">
+            <node concept="2OqwBi" id="6LLGpXJ2YtM" role="3clFbG">
+              <node concept="2OqwBi" id="6LLGpXJ2Ykn" role="2Oq$k0">
+                <node concept="21POm0" id="6LLGpXJ2Yi1" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6LLGpXJ2Yod" role="2OqNvi">
+                  <node concept="1xMEDy" id="6LLGpXJ2Yof" role="1xVPHs">
+                    <node concept="chp4Y" id="6LLGpXJ2Yp$" role="ri$Ld">
+                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="6LLGpXJ2YzN" role="2OqNvi">
+                <ref role="3TtcxE" to="2qy0:6LLGpXJ2Y8b" />
               </node>
             </node>
           </node>

@@ -1032,13 +1032,6 @@
       <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
-  <node concept="24kQdi" id="7jlPi2BQaNH">
-    <property role="3GE5qa" value="option" />
-    <ref role="1XX52x" to="hm2y:7jlPi2BQaNi" resolve="OptionValueTarget" />
-    <node concept="3F0ifn" id="7jlPi2BQaNJ" role="2wV5jI">
-      <property role="3F0ifm" value="val" />
-    </node>
-  </node>
   <node concept="24kQdi" id="UN2ftLSIsR">
     <property role="3GE5qa" value="option" />
     <ref role="1XX52x" to="hm2y:UN2ftLSIrE" resolve="WithSomeExpression" />

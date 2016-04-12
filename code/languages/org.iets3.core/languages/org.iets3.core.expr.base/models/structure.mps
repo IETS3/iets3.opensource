@@ -410,16 +410,6 @@
     <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
-  <node concept="1TIwiD" id="7jlPi2BQaNi">
-    <property role="1pbfSe" value="481198578" />
-    <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="OptionValueTarget" />
-    <property role="34LRSv" value="val" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7jlPi2BQaNj" role="PzmwI">
-      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="UN2ftLSIrE">
     <property role="1pbfSe" value="2137657375" />
     <property role="3GE5qa" value="option" />
