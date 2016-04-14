@@ -195,7 +195,7 @@
     <property role="3GE5qa" value="collection" />
     <property role="TrG5h" value="AddOp" />
     <property role="34LRSv" value="add" />
-    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUjo1i" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
     </node>
@@ -225,6 +225,41 @@
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="49WTic8ehl$" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2r4g1">
+    <property role="1pbfSe" value="1032644068" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="DistinctOp" />
+    <property role="34LRSv" value="distinct" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="7GwCuf2r4g4" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2y0gW">
+    <property role="1pbfSe" value="1034462751" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AsListOp" />
+    <property role="34LRSv" value="toList" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2AdVY">
+    <property role="1pbfSe" value="1035567329" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="ContainsOp" />
+    <property role="34LRSv" value="contains" />
+    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2AkLs">
+    <property role="1pbfSe" value="1035595327" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="OneCollBaseTypedArgCollectionOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="7GwCuf2AkLu" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
   </node>
 </model>
