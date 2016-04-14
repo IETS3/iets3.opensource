@@ -72,7 +72,7 @@
     <property role="1pbfSe" value="589306893" />
     <property role="TrG5h" value="ListLiteral" />
     <property role="34LRSv" value="list" />
-    <property role="3GE5qa" value="ordered" />
+    <property role="3GE5qa" value="list" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUinVo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -286,6 +286,33 @@
     <property role="TrG5h" value="AllOp" />
     <property role="34LRSv" value="all" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2Wbm7">
+    <property role="1pbfSe" value="1041323882" />
+    <property role="TrG5h" value="SetType" />
+    <property role="34LRSv" value="set" />
+    <property role="3GE5qa" value="set" />
+    <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2WbAd">
+    <property role="1pbfSe" value="1041324912" />
+    <property role="TrG5h" value="SetLiteral" />
+    <property role="34LRSv" value="set" />
+    <property role="3GE5qa" value="set" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7GwCuf2WbAe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GwCuf34jB6">
+    <property role="1pbfSe" value="1034462751" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AsSetOp" />
+    <property role="34LRSv" value="toSet" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
 </model>
 
