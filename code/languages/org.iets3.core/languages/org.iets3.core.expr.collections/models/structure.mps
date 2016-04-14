@@ -222,9 +222,9 @@
     <property role="3GE5qa" value="collection" />
     <property role="TrG5h" value="WhereOp" />
     <property role="34LRSv" value="where" />
-    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="PrWs8" id="49WTic8ehl$" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+    <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2r4g1">
@@ -261,6 +261,31 @@
     <node concept="PrWs8" id="7GwCuf2AkLu" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2E2W0">
+    <property role="1pbfSe" value="1036570851" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="OneArgPredicateCollectionOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="7GwCuf2HFo$" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2Fanr">
+    <property role="1pbfSe" value="1036863422" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AnyOp" />
+    <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="7GwCuf2RfRi">
+    <property role="1pbfSe" value="1040031669" />
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AllOp" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
 </model>
 
