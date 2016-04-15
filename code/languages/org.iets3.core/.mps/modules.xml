@@ -23,6 +23,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.util/org.iets3.core.expr.util.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.simplestatemachine/org.iets3.core.simplestatemachine.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
@@ -35,6 +36,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/solutions/Levis_sandbox/Levis_sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />

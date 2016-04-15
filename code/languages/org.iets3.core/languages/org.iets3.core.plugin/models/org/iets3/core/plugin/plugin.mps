@@ -4,7 +4,7 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -108,6 +108,10 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
+        <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
+        <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
+        <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
         <child id="5782973724855443006" name="icon" index="37b278" />
@@ -155,6 +159,10 @@
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="SpecExplorer" />
     <property role="3aPfAI" value="1" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <node concept="14aYG3" id="6LfBX8YgRgl" role="14aYEy">
       <property role="TrG5h" value="specModel" />
       <node concept="14aYG3" id="1ognOHjyj2a" role="1DVp44">
