@@ -1565,5 +1565,35 @@
       <ref role="1YaFvo" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="22hm_0$0feP">
+    <property role="TrG5h" value="typeof_CapturedValue" />
+    <node concept="3clFbS" id="22hm_0$0feQ" role="18ibNy">
+      <node concept="1Z5TYs" id="22hm_0$0fjl" role="3cqZAp">
+        <node concept="mw_s8" id="22hm_0$0fjD" role="1ZfhKB">
+          <node concept="1Z2H0r" id="22hm_0$0fj_" role="mwGJk">
+            <node concept="2OqwBi" id="22hm_0$0fm8" role="1Z2MuG">
+              <node concept="1YBJjd" id="22hm_0$0fjU" role="2Oq$k0">
+                <ref role="1YBMHb" node="22hm_0$0feS" resolve="cv" />
+              </node>
+              <node concept="3TrEf2" id="22hm_0$0frh" role="2OqNvi">
+                <ref role="3Tt5mk" to="zzzn:22hm_0$0c7L" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="22hm_0$0fjo" role="1ZfhK$">
+          <node concept="1Z2H0r" id="22hm_0$0ff2" role="mwGJk">
+            <node concept="1YBJjd" id="22hm_0$0ffu" role="1Z2MuG">
+              <ref role="1YBMHb" node="22hm_0$0feS" resolve="cv" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="22hm_0$0feS" role="1YuTPh">
+      <property role="TrG5h" value="cv" />
+      <ref role="1YaFvo" to="zzzn:22hm_0zJHU7" resolve="CapturedValue" />
+    </node>
+  </node>
 </model>
 
