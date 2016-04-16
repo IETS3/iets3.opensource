@@ -24,6 +24,7 @@
     <import index="y6bu" ref="r:3549c9a9-0be5-4059-955f-f0d4bbef8dae(org.iets3.core.expr.collections.plugin)" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -35,6 +36,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -88,7 +90,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -508,6 +512,40 @@
         </node>
       </node>
       <node concept="10P_77" id="6zmBjqUjiVO" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="22hm_0z_UjA" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="target" />
+      <ref role="13i0hy" to="pbu6:6rGLT0TevFd" resolve="target" />
+      <node concept="3Tm1VV" id="22hm_0z_UjB" role="1B3o_S" />
+      <node concept="3clFbS" id="22hm_0z_UjE" role="3clF47">
+        <node concept="3clFbF" id="22hm_0z_Uk7" role="3cqZAp">
+          <node concept="2OqwBi" id="22hm_0z_Umg" role="3clFbG">
+            <node concept="13iPFW" id="22hm_0z_Uk6" role="2Oq$k0" />
+            <node concept="3TrEf2" id="22hm_0z_UqS" role="2OqNvi">
+              <ref role="3Tt5mk" to="2qy0:6zmBjqUiyX_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="22hm_0z_UjF" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="22hm_0z_UrO" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="targetStateIsMutable" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="pbu6:22hm_0z$OVu" resolve="concept_targetStateIsMutable" />
+      <node concept="3Tm1VV" id="22hm_0z_UrP" role="1B3o_S" />
+      <node concept="3clFbS" id="22hm_0z_UrU" role="3clF47">
+        <node concept="3clFbF" id="22hm_0z_Ut0" role="3cqZAp">
+          <node concept="3clFbT" id="22hm_0z_UsZ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="22hm_0z_UrV" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8gOWj">

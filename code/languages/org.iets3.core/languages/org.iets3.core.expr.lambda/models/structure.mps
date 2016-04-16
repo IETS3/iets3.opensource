@@ -121,6 +121,9 @@
       <property role="20kJfa" value="arg" />
       <ref role="20lvS9" node="6zmBjqUkwse" resolve="LambdaArg" />
     </node>
+    <node concept="PrWs8" id="22hm_0zvy$r" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUlmbK">
     <property role="1pbfSe" value="590086182" />
@@ -221,6 +224,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6zmBjqUkws9" resolve="IArgument" />
     </node>
+    <node concept="PrWs8" id="22hm_0zvyXw" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="49WTic8gvys">
     <property role="1pbfSe" value="1254022591" />
@@ -238,6 +244,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="22hm_0zvyQo" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="49WTic8hm1E">
     <property role="1pbfSe" value="1254245773" />
@@ -248,6 +257,9 @@
       <property role="20kJfa" value="fun" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49WTic8eSCJ" resolve="IFunctionLike" />
+    </node>
+    <node concept="PrWs8" id="22hm_0zvyIM" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8ig5D">
@@ -305,6 +317,14 @@
     </node>
     <node concept="PrWs8" id="2rOWEwsAzV2" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUlmbK" resolve="ILambdaDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="22hm_0zJHU7">
+    <property role="1pbfSe" value="1146108119" />
+    <property role="TrG5h" value="CapturedValue" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="22hm_0zJHV1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>

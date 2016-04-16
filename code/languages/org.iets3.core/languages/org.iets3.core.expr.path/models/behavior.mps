@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -143,6 +143,24 @@
         </node>
       </node>
       <node concept="17QB3L" id="6LLGpXJ527i" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="22hm_0zvUPp" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="target" />
+      <ref role="13i0hy" to="pbu6:6rGLT0TevFd" resolve="target" />
+      <node concept="3Tm1VV" id="22hm_0zvUPq" role="1B3o_S" />
+      <node concept="3clFbS" id="22hm_0zvUPt" role="3clF47">
+        <node concept="3clFbF" id="22hm_0zwiqp" role="3cqZAp">
+          <node concept="2OqwBi" id="22hm_0zwisz" role="3clFbG">
+            <node concept="13iPFW" id="22hm_0zwiqo" role="2Oq$k0" />
+            <node concept="3TrEf2" id="22hm_0zwixb" role="2OqNvi">
+              <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="22hm_0zvUPu" role="3clF45" />
     </node>
   </node>
 </model>
