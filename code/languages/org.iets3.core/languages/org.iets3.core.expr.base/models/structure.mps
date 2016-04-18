@@ -370,39 +370,6 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2rOWEwsEjcg">
-    <property role="1pbfSe" value="1134437816" />
-    <property role="TrG5h" value="OptionType" />
-    <property role="34LRSv" value="option" />
-    <property role="3GE5qa" value="option" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="baseType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2rOWEwsEji_">
-    <property role="1pbfSe" value="1134438221" />
-    <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="NoneType" />
-    <property role="34LRSv" value="none" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-  </node>
-  <node concept="1TIwiD" id="2rOWEwsF5w0">
-    <property role="1pbfSe" value="1134643880" />
-    <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="SomeExpression" />
-    <property role="34LRSv" value="some" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2rOWEwsFyNP">
     <property role="1pbfSe" value="1134763933" />
     <property role="3GE5qa" value="option" />
@@ -441,6 +408,13 @@
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2rOWEwsEji_">
+    <property role="1pbfSe" value="1134438221" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="NoneType" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
   <node concept="1TIwiD" id="UN2ftLUxmN">
     <property role="1pbfSe" value="2137186646" />
     <property role="3GE5qa" value="option" />
@@ -451,6 +425,32 @@
       <property role="20kJfa" value="with" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="UN2ftLSIrE" resolve="WithSomeExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsEjcg">
+    <property role="1pbfSe" value="1134437816" />
+    <property role="TrG5h" value="OptionType" />
+    <property role="34LRSv" value="option" />
+    <property role="3GE5qa" value="option" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsF5w0">
+    <property role="1pbfSe" value="1134643880" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="SomeExpression" />
+    <property role="34LRSv" value="some" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
