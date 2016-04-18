@@ -30,7 +30,6 @@
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" fqName="org.iets3.core.base" version="0" />
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" fqName="org.iets3.core.expr.base" version="0" />
     <language id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" fqName="org.iets3.core.expr.math" version="0" />
-    <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" fqName="org.iets3.core.expr.path" version="0" />
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" fqName="org.iets3.core.expr.simpleTypes" version="0" />
     <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" fqName="org.iets3.core.expr.util" version="0" />
     <language id="bf5521a5-2fb2-4b25-bd67-c5ea4c6e0e2c" fqName="testlang.core.expr" version="0" />
