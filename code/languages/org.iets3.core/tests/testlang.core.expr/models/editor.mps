@@ -165,13 +165,18 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -241,11 +246,14 @@
                   <property role="TrG5h" value="auto" />
                   <node concept="10P_77" id="5zG5$LyBV1y" role="1tU5fm" />
                   <node concept="2OqwBi" id="5zG5$LyBV1_" role="33vP2m">
-                    <node concept="1PxgMI" id="5zG5$LyBV1A" role="2Oq$k0">
-                      <ref role="1PxNhF" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
-                      <node concept="2OqwBi" id="5zG5$LyBV1B" role="1PxMeX">
-                        <node concept="pncrf" id="5zG5$LyBV1C" role="2Oq$k0" />
-                        <node concept="2Rxl7S" id="5zG5$LyBV1D" role="2OqNvi" />
+                    <node concept="2OqwBi" id="7TU$2foi3Yn" role="2Oq$k0">
+                      <node concept="pncrf" id="7TU$2foi3SY" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="7TU$2foi49p" role="2OqNvi">
+                        <node concept="1xMEDy" id="7TU$2foi49r" role="1xVPHs">
+                          <node concept="chp4Y" id="7TU$2foi4eH" role="ri$Ld">
+                            <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="3TrcHB" id="5zG5$LyBV1E" role="2OqNvi">

@@ -158,9 +158,18 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -274,11 +283,14 @@
         <node concept="3clFbF" id="5zG5$LyBTzf" role="3cqZAp">
           <node concept="3fqX7Q" id="5zG5$LyBTYI" role="3clFbG">
             <node concept="2OqwBi" id="5zG5$LyBTYK" role="3fr31v">
-              <node concept="1PxgMI" id="5zG5$LyBTYL" role="2Oq$k0">
-                <ref role="1PxNhF" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
-                <node concept="2OqwBi" id="5zG5$LyBTYM" role="1PxMeX">
-                  <node concept="13iPFW" id="5zG5$LyBTYN" role="2Oq$k0" />
-                  <node concept="2Rxl7S" id="5zG5$LyBTYO" role="2OqNvi" />
+              <node concept="2OqwBi" id="3HmE5WaU445" role="2Oq$k0">
+                <node concept="13iPFW" id="3HmE5WaU41_" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3HmE5WaU4f8" role="2OqNvi">
+                  <node concept="1xMEDy" id="3HmE5WaU4fa" role="1xVPHs">
+                    <node concept="chp4Y" id="3HmE5WaU4gq" role="ri$Ld">
+                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3TrcHB" id="5zG5$LyBTYP" role="2OqNvi">
