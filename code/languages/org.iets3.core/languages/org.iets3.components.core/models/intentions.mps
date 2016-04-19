@@ -239,7 +239,7 @@
       <node concept="3clFbS" id="1WCh2thd8FA" role="2VODD2">
         <node concept="3clFbF" id="1WCh2thd8GX" role="3cqZAp">
           <node concept="Xl_RD" id="1WCh2thd8GW" role="3clFbG">
-            <property role="Xl_RC" value="Autowire all substructure instances" />
+            <property role="Xl_RC" value="Autowire All Substructure Instances" />
           </node>
         </node>
       </node>

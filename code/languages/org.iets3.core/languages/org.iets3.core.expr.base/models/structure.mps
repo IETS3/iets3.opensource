@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -367,6 +368,89 @@
     </node>
     <node concept="PrWs8" id="6kR0qIbwJhJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsFyNP">
+    <property role="1pbfSe" value="1134763933" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="NoneExpression" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="UN2ftLSIrE">
+    <property role="1pbfSe" value="2137657375" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="WithSomeExpression" />
+    <property role="34LRSv" value="with some" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="UN2ftLSIrF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="optionExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="UN2ftLSItR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="UN2ftLSIvt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="UN2ftLSIs5" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="UN2ftLTRyS" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsEji_">
+    <property role="1pbfSe" value="1134438221" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="NoneType" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="UN2ftLUxmN">
+    <property role="1pbfSe" value="2137186646" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="SomeValExpr" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="UN2ftLUxmO" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="with" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="UN2ftLSIrE" resolve="WithSomeExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsEjcg">
+    <property role="1pbfSe" value="1134437816" />
+    <property role="TrG5h" value="OptionType" />
+    <property role="34LRSv" value="option" />
+    <property role="3GE5qa" value="option" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rOWEwsF5w0">
+    <property role="1pbfSe" value="1134643880" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="SomeExpression" />
+    <property role="34LRSv" value="some" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>

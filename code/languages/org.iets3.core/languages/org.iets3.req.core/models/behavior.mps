@@ -109,6 +109,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -368,7 +369,7 @@
                   <node concept="3cpWs3" id="7Dcax7AehYf" role="3uHU7B">
                     <node concept="2OqwBi" id="7Dcax7AehYg" role="3uHU7B">
                       <node concept="1PxgMI" id="7Dcax7AehYh" role="2Oq$k0">
-                        <ref role="1PxNhF" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+                        <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         <node concept="2OqwBi" id="7Dcax7AehYi" role="1PxMeX">
                           <node concept="13iPFW" id="7Dcax7AehYj" role="2Oq$k0" />
                           <node concept="1mfA1w" id="7Dcax7AehYk" role="2OqNvi" />
@@ -459,8 +460,8 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="3cpWs3" id="7Dcax7AeRs4" role="3uHU7B">
-                <node concept="Xl_RD" id="7Dcax7AeRs7" role="3uHU7B">
-                  <property role="Xl_RC" value="R" />
+                <node concept="BsUDl" id="7Kc02r7ViA8" role="3uHU7B">
+                  <ref role="37wK5l" node="7Kc02r7ViA5" resolve="getNameFirstLetter" />
                 </node>
                 <node concept="1eOMI4" id="4Etk_BWsCKr" role="3uHU7w">
                   <node concept="3cpWs3" id="4Etk_BWsE0n" role="1eOMHV">
@@ -550,8 +551,8 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="3cpWs3" id="4Etk_BWsEGZ" role="3uHU7B">
-                <node concept="Xl_RD" id="4Etk_BWsEH0" role="3uHU7B">
-                  <property role="Xl_RC" value="R" />
+                <node concept="BsUDl" id="7Kc02r7VjgY" role="3uHU7B">
+                  <ref role="37wK5l" node="7Kc02r7ViA5" resolve="getNameFirstLetter" />
                 </node>
                 <node concept="1eOMI4" id="4Etk_BWsEH1" role="3uHU7w">
                   <node concept="3cpWs3" id="4Etk_BWsEH2" role="1eOMHV">
@@ -737,6 +738,33 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="7Kc02r7ViA5" role="13h7CS">
+      <property role="2Ki8OM" value="false" />
+      <property role="TrG5h" value="getNameFirstLetter" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tmbuc" id="7Kc02r7ViA6" role="1B3o_S" />
+      <node concept="17QB3L" id="7Kc02r7ViA7" role="3clF45" />
+      <node concept="3clFbS" id="7Kc02r7Vi_V" role="3clF47">
+        <node concept="3cpWs6" id="7Kc02r7Vi_Z" role="3cqZAp">
+          <node concept="Xl_RD" id="7Kc02r7ViA0" role="3cqZAk">
+            <property role="Xl_RC" value="R" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7gL8KYmPHWW" role="13h7CS">
+      <property role="TrG5h" value="getDisplayName" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7gL8KYmPHWX" role="1B3o_S" />
+      <node concept="3clFbS" id="7gL8KYmPHWY" role="3clF47">
+        <node concept="3cpWs6" id="7gL8KYmPI$l" role="3cqZAp">
+          <node concept="Xl_RD" id="7gL8KYmPI$t" role="3cqZAk">
+            <property role="Xl_RC" value="Requirement" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7gL8KYmPI$g" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4tXyFaWylOq">
