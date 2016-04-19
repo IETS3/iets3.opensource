@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -35,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -87,6 +90,31 @@
   <node concept="PlHQZ" id="1YPoVR7Faxf">
     <property role="1pbfSe" value="413004788" />
     <property role="TrG5h" value="ICustomRemoteCreateSupport" />
+  </node>
+  <node concept="PlHQZ" id="3R3AIvuMXwK">
+    <property role="1pbfSe" value="479163159" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="ICanStoreCheckResult" />
+  </node>
+  <node concept="PlHQZ" id="3R3AIvumrSU">
+    <property role="1pbfSe" value="471685409" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="ICanRunCheckManually" />
+    <node concept="PrWs8" id="3R3AIvuMXwL" role="PrDN$">
+      <ref role="PrY4T" node="3R3AIvuMXwK" resolve="ICanStoreCheckResult" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6MJy$PGsrHl">
+    <property role="1pbfSe" value="652130910" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IDetectNeedToRunManually" />
+    <node concept="1TJgyi" id="6MJy$PGsrHL" role="1TKVEl">
+      <property role="TrG5h" value="__hash" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="6MJy$PGsrHm" role="PrDN$">
+      <ref role="PrY4T" node="3R3AIvumrSU" resolve="ICanRunCheckManually" />
+    </node>
   </node>
 </model>
 
