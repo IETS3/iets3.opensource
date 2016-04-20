@@ -99,6 +99,7 @@
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)</dependency>
+    <dependency reexport="false">60d83b73-dffa-464a-b97b-211f46ec8ca4(org.iets3.core.simplestatemachine)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -154,6 +155,7 @@
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" fqName="org.iets3.core.base" version="0" />
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" fqName="org.iets3.core.expr.base" version="0" />
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" fqName="org.iets3.core.expr.simpleTypes" version="0" />
+    <language id="60d83b73-dffa-464a-b97b-211f46ec8ca4" fqName="org.iets3.core.simplestatemachine" version="0" />
     <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" fqName="org.iets3.glossary" version="0" />
     <language id="a3c6f642-41b7-44cb-951b-463b8427a245" fqName="org.iets3.req.core" version="0" />
   </languageVersions>
@@ -200,6 +202,7 @@
     <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+    <module reference="60d83b73-dffa-464a-b97b-211f46ec8ca4(org.iets3.core.simplestatemachine)" version="0" />
     <module reference="f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
