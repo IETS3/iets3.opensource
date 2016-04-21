@@ -48,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.featuremodel.sandbox/org.iets3.featuremodel.sandbox.msd" folder="fm" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="etc" />
+      <modulePath path="$PROJECT_DIR$/solutions/sandbox.core.expr.os/sandbox.core.expr.os.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr/test.ex.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.int.core.expr/test.in.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.modelcheckersupport/test.ts.analysis.modelcheckersupport.msd" folder="analysis" />
