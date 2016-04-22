@@ -100,6 +100,7 @@
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)</dependency>
     <dependency reexport="false">60d83b73-dffa-464a-b97b-211f46ec8ca4(org.iets3.core.simplestatemachine)</dependency>
+    <dependency reexport="false">25797606-3fb6-47b8-bc3c-b4384df7da44(org.iets3.components.functional)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -199,9 +200,12 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
+    <module reference="64cec9cf-f998-418c-830c-383b6bfdadb0(org.iets3.analysis.solversupport)" version="0" />
     <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="0" />
+    <module reference="25797606-3fb6-47b8-bc3c-b4384df7da44(org.iets3.components.functional)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
     <module reference="60d83b73-dffa-464a-b97b-211f46ec8ca4(org.iets3.core.simplestatemachine)" version="0" />
     <module reference="f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
