@@ -70,6 +70,9 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -637,7 +640,22 @@
       <node concept="3Tm1VV" id="5zG5$LyexiO" role="1B3o_S" />
       <node concept="17QB3L" id="5zG5$Lyexiu" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="5zG5$LyyJxU" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getDescription" />
+      <node concept="3clFbS" id="5zG5$LyyJxX" role="3clF47" />
+      <node concept="3Tm1VV" id="5zG5$LyyJxY" role="1B3o_S" />
+      <node concept="3uibUv" id="5zG5$LyyJxr" role="3clF45">
+        <ref role="3uigEE" node="5zG5$LyyJpW" resolve="AbstractResultDescription" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="5zG5$Lyex1H" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5zG5$LyyJpW">
+    <property role="TrG5h" value="AbstractResultDescription" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3Tm1VV" id="5zG5$LyyJpX" role="1B3o_S" />
   </node>
 </model>
 

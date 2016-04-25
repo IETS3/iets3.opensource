@@ -18,6 +18,9 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="sxp1" ref="r:14d19f45-b1ff-401e-875c-62c48d110e0a(org.iets3.core.expr.path.plugin)" />
+    <import index="1mh9" ref="r:899817f1-f456-4577-b6b9-bcd4e083d15f(org.iets3.analysis.solversupport.util)" />
+    <import index="d18" ref="r:4f2c8f75-cbed-4908-bd6d-7c9ed438331f(org.iets3.analysis.solversupport.plugin)" />
+    <import index="49t2" ref="r:7d7e0467-5b27-40da-a0fe-625bb68dad40(testlang.core.expr.accessory)" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" implicit="true" />
   </imports>
   <registry>

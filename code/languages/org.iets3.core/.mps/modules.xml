@@ -27,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.featuremodel/org.iets3.featuremodel.mpl" folder="fm" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.hardware/org.iets3.hardware.mpl" folder="hardware" />
@@ -48,11 +49,13 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.runtime/org.iets3.core.units.runtime.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.sandbox/org.iets3.core.units.sandbox.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.featuremodel.sandbox/org.iets3.featuremodel.sandbox.msd" folder="fm" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.examples.ivi/org.iets3.simbench.examples.ivi.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.plugin/org.iets3.simbench.plugin.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.simbench.basic/test.ts.simbench.basic.msd" folder="simbench" />
+      <modulePath path="$PROJECT_DIR$/solutions/sandbox.core.expr.os/sandbox.core.expr.os.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core.expr/test.ex.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.int.core.expr/test.in.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.modelcheckersupport/test.ts.analysis.modelcheckersupport.msd" folder="analysis" />
