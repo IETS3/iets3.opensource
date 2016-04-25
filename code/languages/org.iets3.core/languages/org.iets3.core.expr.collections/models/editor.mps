@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -77,6 +78,11 @@
       </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -332,6 +338,36 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="54HsVvNUXe_">
+    <property role="3GE5qa" value="ordered" />
+    <ref role="1XX52x" to="700h:54HsVvNUXea" resolve="BracketOp" />
+    <node concept="3EZMnI" id="54HsVvNUXeB" role="2wV5jI">
+      <node concept="1kIj98" id="54HsVvNUXeI" role="3EZMnx">
+        <node concept="3F1sOY" id="54HsVvNUXeO" role="1kIj9b">
+          <ref role="1NtTu8" to="700h:54HsVvO0nq$" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54HsVvNUXeV" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="54HsVvNUXiu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="54HsVvNUXjq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="54HsVvNUXjD" role="3EZMnx">
+        <ref role="1NtTu8" to="700h:54HsVvNUXeb" />
+      </node>
+      <node concept="3F0ifn" id="54HsVvNUXf5" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="54HsVvNUXfZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="54HsVvNUXeE" role="2iSdaV" />
     </node>
   </node>
 </model>
