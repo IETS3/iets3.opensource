@@ -82,7 +82,7 @@
   </registry>
   <node concept="1M2fIO" id="6zmBjqUivQw">
     <property role="3GE5qa" value="collection" />
-    <ref role="1M2myG" to="700h:6zmBjqUivxU" resolve="ICollectionDotTarget" />
+    <ref role="1M2myG" to="700h:6zmBjqUivxU" resolve="ICollectionOp" />
     <node concept="nKS2y" id="6zmBjqUivQx" role="1MLUbF">
       <node concept="3clFbS" id="6zmBjqUivQy" role="2VODD2">
         <node concept="3clFbF" id="6zmBjqUivRB" role="3cqZAp">
@@ -111,7 +111,7 @@
   </node>
   <node concept="1M2fIO" id="6zmBjqUiHIt">
     <property role="3GE5qa" value="ordered" />
-    <ref role="1M2myG" to="700h:6zmBjqUiHHJ" resolve="IOrderedCollectionDotTarget" />
+    <ref role="1M2myG" to="700h:6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     <node concept="nKS2y" id="6zmBjqUiHIH" role="1MLUbF">
       <node concept="3clFbS" id="6zmBjqUiHII" role="2VODD2">
         <node concept="3cpWs8" id="6zmBjqUiHN$" role="3cqZAp">
@@ -152,6 +152,35 @@
                 <node concept="chp4Y" id="6zmBjqUiHIS" role="cj9EA">
                   <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7kYh9Ws$zBT">
+    <property role="3GE5qa" value="map" />
+    <ref role="1M2myG" to="700h:7kYh9Ws$zzv" resolve="OneArgKeyTypeMapModifier" />
+    <node concept="nKS2y" id="7kYh9Ws$zBU" role="1MLUbF">
+      <node concept="3clFbS" id="7kYh9Ws$zBV" role="2VODD2">
+        <node concept="3clFbF" id="7kYh9Ws$zD0" role="3cqZAp">
+          <node concept="2OqwBi" id="7kYh9Ws$$bc" role="3clFbG">
+            <node concept="2OqwBi" id="7kYh9Ws$$0W" role="2Oq$k0">
+              <node concept="2OqwBi" id="7kYh9Ws$zKr" role="2Oq$k0">
+                <node concept="1PxgMI" id="7kYh9Ws$zEM" role="2Oq$k0">
+                  <ref role="1PxNhF" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="7kYh9Ws$zCZ" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="7kYh9Ws$zRC" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="7kYh9Ws$$6l" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="7kYh9Ws$$fP" role="2OqNvi">
+              <node concept="chp4Y" id="7kYh9Ws$$kM" role="cj9EA">
+                <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
               </node>
             </node>
           </node>
