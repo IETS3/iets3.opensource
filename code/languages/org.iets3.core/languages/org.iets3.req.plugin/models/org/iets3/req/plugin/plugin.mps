@@ -12,7 +12,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
@@ -203,6 +203,10 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
+        <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
+        <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
+        <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
@@ -1318,6 +1322,10 @@
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="RequirementsExplorer" />
     <property role="3aPfAI" value="5" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <ref role="14aYEx" to="h587:1ognOHjyiuQ" resolve="SpecExplorer" />
     <node concept="14aYG3" id="1ognOHjyj2a" role="14aYEy">
       <property role="TrG5h" value="requirementsModule" />
