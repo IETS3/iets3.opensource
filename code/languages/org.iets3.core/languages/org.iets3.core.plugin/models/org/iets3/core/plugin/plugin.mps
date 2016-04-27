@@ -105,6 +105,9 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -167,6 +170,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -499,7 +503,7 @@
   </node>
   <node concept="sE7Ow" id="5E4c7udm420">
     <property role="TrG5h" value="showLastResult" />
-    <property role="2uzpH1" value="Show Last Result" />
+    <property role="2uzpH1" value="Show Last Result Detaiös" />
     <property role="3GE5qa" value="view" />
     <node concept="tnohg" id="5E4c7udm421" role="tncku">
       <node concept="3clFbS" id="5E4c7udm422" role="2VODD2">
@@ -857,6 +861,26 @@
               <ref role="3cqZAo" node="5E4c7udmbfW" resolve="result" />
             </node>
           </node>
+          <node concept="9aQIb" id="11$QSsSRwAe" role="9aQIa">
+            <node concept="3clFbS" id="11$QSsSRwAf" role="9aQI4">
+              <node concept="3clFbF" id="11$QSsSRwB6" role="3cqZAp">
+                <node concept="2OqwBi" id="11$QSsSRwB8" role="3clFbG">
+                  <node concept="2OqwBi" id="11$QSsSRwB9" role="2Oq$k0">
+                    <node concept="2WthIp" id="11$QSsSRwBa" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="11$QSsSRwBb" role="2OqNvi">
+                      <ref role="2WH_rO" node="5E4c7udmHvq" resolve="area" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="11$QSsSRwBc" role="2OqNvi">
+                    <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+                    <node concept="Xl_RD" id="11$QSsSRx_l" role="37wK5m">
+                      <property role="Xl_RC" value="&lt;no detailed description available&gt;" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3cqZAl" id="5E4c7udmbfR" role="3clF45" />
@@ -889,7 +913,7 @@
             <node concept="liA8E" id="5E4c7udmi18" role="2OqNvi">
               <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String):void" resolve="setTitle" />
               <node concept="Xl_RD" id="5E4c7udmi3c" role="37wK5m">
-                <property role="Xl_RC" value="Last Result" />
+                <property role="Xl_RC" value="Last Result Details" />
               </node>
             </node>
           </node>
