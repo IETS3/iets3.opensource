@@ -15,8 +15,12 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -139,6 +143,9 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1260,6 +1267,25 @@
             <node concept="1mIQ4w" id="3k_9K2OzXTW" role="2OqNvi">
               <node concept="chp4Y" id="3k_9K2OzXVI" role="cj9EA">
                 <ref role="cht4Q" to="w9y2:9D0IlqBErS" resolve="ComponentType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4Gpiys7gtX8">
+    <property role="3GE5qa" value="behavior.sm" />
+    <ref role="1M2myG" to="w9y2:4Gpiys7bw9g" resolve="SimpleStateGlossary" />
+    <node concept="1N5Pfh" id="4Gpiys7gtX9" role="1Mr941">
+      <ref role="1N5Vy1" to="w9y2:4Gpiys7bwaE" />
+      <node concept="1MUpDS" id="4Gpiys7gtXc" role="1N6uqs">
+        <node concept="3clFbS" id="4Gpiys7gtXd" role="2VODD2">
+          <node concept="3clFbF" id="4Gpiys7gu0g" role="3cqZAp">
+            <node concept="2OqwBi" id="4Gpiys7gu25" role="3clFbG">
+              <node concept="1Q6Npb" id="4Gpiys7gu0f" role="2Oq$k0" />
+              <node concept="1j9C0f" id="4Gpiys7gu3C" role="2OqNvi">
+                <ref role="1j9C0d" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               </node>
             </node>
           </node>

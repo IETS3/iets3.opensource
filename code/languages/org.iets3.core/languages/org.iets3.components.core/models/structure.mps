@@ -8,6 +8,7 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -24,6 +25,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -1026,6 +1028,20 @@
       <property role="20kJfa" value="instance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Gpiys7bw9g">
+    <property role="1pbfSe" value="1380404343" />
+    <property role="3GE5qa" value="behavior.sm" />
+    <property role="TrG5h" value="SimpleStateGlossary" />
+    <property role="34LRSv" value="simple state from glossary" />
+    <property role="R4oN_" value="glossary term names the state" />
+    <ref role="1TJDcQ" node="3RyTuhdx1Px" resolve="AbstractState" />
+    <node concept="1TJgyj" id="4Gpiys7bwaE" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="glossaryTerm" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
     </node>
   </node>
 </model>
