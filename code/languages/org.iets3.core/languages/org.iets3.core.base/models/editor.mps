@@ -289,6 +289,38 @@
         </node>
       </node>
     </node>
+    <node concept="14StLt" id="7Nu9WvXzjcf" role="V601i">
+      <property role="TrG5h" value="iets3MuchSmaller" />
+      <node concept="VSNWy" id="7Nu9WvXzjcg" role="3F10Kt">
+        <node concept="1cFabM" id="7Nu9WvXzjch" role="1d8cEk">
+          <node concept="3clFbS" id="7Nu9WvXzjci" role="2VODD2">
+            <node concept="3clFbF" id="7Nu9WvXzjcj" role="3cqZAp">
+              <node concept="1eOMI4" id="7Nu9WvXzjck" role="3clFbG">
+                <node concept="10QFUN" id="7Nu9WvXzjcl" role="1eOMHV">
+                  <node concept="1eOMI4" id="7Nu9WvXzjcm" role="10QFUP">
+                    <node concept="17qRlL" id="7Nu9WvXzjcn" role="1eOMHV">
+                      <node concept="3b6qkQ" id="7Nu9WvXzjco" role="3uHU7w">
+                        <property role="$nhwW" value="0.75" />
+                      </node>
+                      <node concept="2OqwBi" id="7Nu9WvXzjcp" role="3uHU7B">
+                        <node concept="2YIFZM" id="7Nu9WvXzjcq" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        </node>
+                        <node concept="liA8E" id="7Nu9WvXzjcr" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Oyi0" id="7Nu9WvXzjcs" role="10QFUM" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="14StLt" id="4rZeNQ6OesJ" role="V601i">
       <property role="TrG5h" value="IETS3Number" />
       <node concept="VechU" id="4rZeNQ6OesL" role="3F10Kt">
