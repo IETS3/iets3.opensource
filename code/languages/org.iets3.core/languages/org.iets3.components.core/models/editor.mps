@@ -7309,7 +7309,7 @@
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
         </node>
         <node concept="3F0ifn" id="4yxRvktmJOs" role="3EZMnx">
-          <property role="3F0ifm" value="state (as in glossary)" />
+          <property role="3F0ifm" value="state" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
         </node>
         <node concept="1j7BWu" id="2Df8LH1gLdE" role="3EZMnx">
