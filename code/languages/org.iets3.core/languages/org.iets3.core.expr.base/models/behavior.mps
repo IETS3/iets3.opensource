@@ -2176,5 +2176,28 @@
       <node concept="10P_77" id="5X0$sg39ASd" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="7kYh9Wsvdvl">
+    <property role="3GE5qa" value="binary.p0500" />
+    <ref role="13h7C2" to="hm2y:7kYh9WsvduW" resolve="LogicalIffExpression" />
+    <node concept="13i0hz" id="7kYh9Wsvdvo" role="13h7CS">
+      <property role="TrG5h" value="priority" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="4rZeNQ6MpZB" resolve="priority" />
+      <node concept="3Tm1VV" id="7kYh9Wsvdvp" role="1B3o_S" />
+      <node concept="3clFbS" id="7kYh9Wsvdvq" role="3clF47">
+        <node concept="3clFbF" id="7kYh9Wsvdvr" role="3cqZAp">
+          <node concept="3cmrfG" id="7kYh9Wsvdvs" role="3clFbG">
+            <property role="3cmrfH" value="600" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7kYh9Wsvdvt" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7kYh9Wsvdvm" role="13h7CW">
+      <node concept="3clFbS" id="7kYh9Wsvdvn" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

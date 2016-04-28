@@ -6,8 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -50,7 +48,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -535,6 +533,19 @@
       <ref role="1YaFvo" to="hm2y:71dSyJVqZSe" resolve="TracerExpression" />
     </node>
   </node>
+  <node concept="35pCF_" id="2rOWEwsEkgn">
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="ierr_NoneType" />
+    <node concept="3clFbS" id="2rOWEwsEkgo" role="2sgrp5" />
+    <node concept="1YaCAy" id="2rOWEwsEkg$" role="35pZ6h">
+      <property role="TrG5h" value="optionType" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+    </node>
+    <node concept="1YaCAy" id="2rOWEwsEkgr" role="1YuTPh">
+      <property role="TrG5h" value="noneType" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
+    </node>
+  </node>
   <node concept="1YbPZF" id="2rOWEwsF5Ah">
     <property role="TrG5h" value="typeof_SomeExpression" />
     <property role="3GE5qa" value="option" />
@@ -590,17 +601,32 @@
       <ref role="1YaFvo" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
     </node>
   </node>
-  <node concept="35pCF_" id="2rOWEwsEkgn">
+  <node concept="1YbPZF" id="2rOWEwsFyP3">
+    <property role="TrG5h" value="typeof_NoneExpression" />
     <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="ierr_NoneType" />
-    <node concept="3clFbS" id="2rOWEwsEkgo" role="2sgrp5" />
-    <node concept="1YaCAy" id="2rOWEwsEkg$" role="35pZ6h">
-      <property role="TrG5h" value="optionType" />
-      <ref role="1YaFvo" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+    <node concept="3clFbS" id="2rOWEwsFyP4" role="18ibNy">
+      <node concept="1Z5TYs" id="2rOWEwsFyRv" role="3cqZAp">
+        <node concept="mw_s8" id="2rOWEwsFyRN" role="1ZfhKB">
+          <node concept="2ShNRf" id="2rOWEwsFyRJ" role="mwGJk">
+            <node concept="3zrR0B" id="2rOWEwsFz6Q" role="2ShVmc">
+              <node concept="3Tqbb2" id="2rOWEwsFz6S" role="3zrR0E">
+                <ref role="ehGHo" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2rOWEwsFyRy" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2rOWEwsFyPa" role="mwGJk">
+            <node concept="1YBJjd" id="2rOWEwsFyPA" role="1Z2MuG">
+              <ref role="1YBMHb" node="2rOWEwsFyP6" resolve="noneExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="1YaCAy" id="2rOWEwsEkgr" role="1YuTPh">
-      <property role="TrG5h" value="noneType" />
-      <ref role="1YaFvo" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
+    <node concept="1YaCAy" id="2rOWEwsFyP6" role="1YuTPh">
+      <property role="TrG5h" value="noneExpression" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="UN2ftLSIvm">
@@ -701,34 +727,6 @@
     <node concept="1YaCAy" id="UN2ftLSIvp" role="1YuTPh">
       <property role="TrG5h" value="withSome" />
       <ref role="1YaFvo" to="hm2y:UN2ftLSIrE" resolve="WithSomeExpression" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="2rOWEwsFyP3">
-    <property role="TrG5h" value="typeof_NoneExpression" />
-    <property role="3GE5qa" value="option" />
-    <node concept="3clFbS" id="2rOWEwsFyP4" role="18ibNy">
-      <node concept="1Z5TYs" id="2rOWEwsFyRv" role="3cqZAp">
-        <node concept="mw_s8" id="2rOWEwsFyRN" role="1ZfhKB">
-          <node concept="2ShNRf" id="2rOWEwsFyRJ" role="mwGJk">
-            <node concept="3zrR0B" id="2rOWEwsFz6Q" role="2ShVmc">
-              <node concept="3Tqbb2" id="2rOWEwsFz6S" role="3zrR0E">
-                <ref role="ehGHo" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="2rOWEwsFyRy" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2rOWEwsFyPa" role="mwGJk">
-            <node concept="1YBJjd" id="2rOWEwsFyPA" role="1Z2MuG">
-              <ref role="1YBMHb" node="2rOWEwsFyP6" resolve="noneExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2rOWEwsFyP6" role="1YuTPh">
-      <property role="TrG5h" value="noneExpression" />
-      <ref role="1YaFvo" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="UN2ftLUxoV">

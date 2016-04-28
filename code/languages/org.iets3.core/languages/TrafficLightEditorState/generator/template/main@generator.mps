@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bc065c10-a2b1-4bab-a028-6f5f893d7a56(org.iets3.req.core.generator.template.main@generator)">
+<model ref="r:23a9a8c9-ec53-4ce6-8bee-319481504b08(TrafficLightEditorState.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="6bcc7756-ce3a-4cd5-aeda-58fe78af2a55" name="TrafficLightEditorState" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
@@ -19,7 +19,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="4tXyFaWwpir">
+  <node concept="bUwia" id="1loYG4M8HWP">
     <property role="TrG5h" value="main" />
   </node>
 </model>

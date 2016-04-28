@@ -2,11 +2,9 @@
 <model ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
+    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -292,6 +290,10 @@
       <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
+      <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
+        <child id="1235573175711" name="elementType" index="2HTBi0" />
+        <child id="1235573187520" name="singletonValue" index="2HTEbv" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
@@ -1737,6 +1739,50 @@
       <node concept="37vLTG" id="$yb$20kWdb" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="$yb$20kWAV" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="v9lBEVh79P" role="jymVt" />
+    <node concept="3clFb_" id="v9lBEVh6mc" role="jymVt">
+      <property role="TrG5h" value="executeEvaluatedOneArg" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="3uibUv" id="v9lBEVh6md" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="v9lBEVh6me" role="1B3o_S" />
+      <node concept="3clFbS" id="v9lBEVh6mf" role="3clF47">
+        <node concept="3clFbF" id="v9lBEVh7_x" role="3cqZAp">
+          <node concept="1rXfSq" id="v9lBEVh7_w" role="3clFbG">
+            <ref role="37wK5l" node="$yb$20kUvn" resolve="executeEvaluated" />
+            <node concept="2OqwBi" id="v9lBEVkJaN" role="37wK5m">
+              <node concept="2ShNRf" id="v9lBEVh7BS" role="2Oq$k0">
+                <node concept="2HTt$P" id="v9lBEVhmiw" role="2ShVmc">
+                  <node concept="37vLTw" id="v9lBEVhmu4" role="2HTEbv">
+                    <ref role="3cqZAo" node="v9lBEVh6Oj" resolve="theOneArg" />
+                  </node>
+                  <node concept="3uibUv" id="v9lBEVhmpI" role="2HTBi0">
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="v9lBEVkJmw" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="v9lBEVhmCS" role="37wK5m">
+              <ref role="3cqZAo" node="v9lBEVh6mj" resolve="context" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="v9lBEVh6Oj" role="3clF46">
+        <property role="TrG5h" value="theOneArg" />
+        <node concept="3uibUv" id="v9lBEVh74S" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="v9lBEVh6mj" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="v9lBEVh6mk" role="1tU5fm">
           <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
         </node>
       </node>
