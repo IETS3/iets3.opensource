@@ -4,21 +4,13 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
-    <import index="aku0" ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)" />
-    <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
     <import index="know" ref="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachines.editor)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
-    <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
     <import index="t6s3" ref="r:0536a67a-fabb-4cde-b3e1-191fe5421028(org.iets3.core.simplestatemachine.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -279,7 +271,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="4EPvHGkCzY5">
-    <ref role="1XX52x" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachine" />
+    <ref role="1XX52x" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachineChunk" />
     <node concept="3EZMnI" id="4EPvHGkCCf8" role="2wV5jI">
       <node concept="3EZMnI" id="4EPvHGkCJfz" role="3EZMnx">
         <node concept="2iRfu4" id="4EPvHGkCJf$" role="2iSdaV" />
@@ -363,7 +355,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4EPvHGkCLnz">
-    <ref role="1XX52x" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachine" />
+    <ref role="1XX52x" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachineChunk" />
     <node concept="3EZMnI" id="7$cwLzjn8uL" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="l2Vlx" id="7$cwLzjn8uM" role="2iSdaV" />
@@ -470,7 +462,7 @@
                                 <node concept="2OqwBi" id="4EPvHGkD7Av" role="33vP2m">
                                   <node concept="2OqwBi" id="4EPvHGkD6YO" role="2Oq$k0">
                                     <node concept="1PxgMI" id="4EPvHGkD6O_" role="2Oq$k0">
-                                      <ref role="1PxNhF" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachine" />
+                                      <ref role="1PxNhF" to="t6s3:4EPvHGkCzT3" resolve="SimpleStateMachineChunk" />
                                       <node concept="2OqwBi" id="4EPvHGkDa2p" role="1PxMeX">
                                         <node concept="1PxgMI" id="4EPvHGkD6G4" role="2Oq$k0">
                                           <ref role="1PxNhF" to="t6s3:7IM3imbrBia" resolve="State" />
