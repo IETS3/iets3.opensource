@@ -28,7 +28,6 @@
     <use id="25797606-3fb6-47b8-bc3c-b4384df7da44" name="org.iets3.components.functional" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="0" />
     <use id="64cec9cf-f998-418c-830c-383b6bfdadb0" name="org.iets3.analysis.solversupport" version="0" />
-    <use id="60d83b73-dffa-464a-b97b-211f46ec8ca4" name="org.iets3.core.simplestatemachine" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -38,7 +37,6 @@
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="bemq" ref="r:4cfa8b0a-7754-4d3d-9e06-0ce9d427860c(org.iets3.req.core.behavior)" />
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
-    <import index="t6s3" ref="r:0536a67a-fabb-4cde-b3e1-191fe5421028(org.iets3.core.simplestatemachine.structure)" />
     <import index="874t" ref="r:9e305a48-41d6-450d-b02f-7d9ad145eac2(org.iets3.components.functional.structure)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
