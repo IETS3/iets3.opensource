@@ -323,5 +323,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="22hm_0z$KiE">
+    <property role="3GE5qa" value="lambda" />
+    <ref role="1M2myG" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+  </node>
 </model>
 
