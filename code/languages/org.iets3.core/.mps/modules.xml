@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${iets3.github.core.home}/code/examples/org.iets3.examples/solutions/org.iets3.examples.trafficlight/org.iets3.examples.trafficlight.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.components/org.iets3.components.devkit" folder="comp" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.functionalcomponenets/org.iets3.functionalcomponenets.devkit" folder="comp" />
@@ -12,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.solversupport/org.iets3.analysis.solversupport.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.design/org.iets3.components.design.mpl" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.functional.req/org.iets3.components.functional.req.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.functional/org.iets3.components.functional.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
@@ -52,7 +54,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr.util/test.ts.core.expr.util.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/testlang.core.expr/testlang.core.expr.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/../../examples/org.iets3.examples/solutions/org.iets3.examples.trafficlight/org.iets3.examples.trafficlight.msd" folder="" />
     </projectModules>
   </component>
 </project>
