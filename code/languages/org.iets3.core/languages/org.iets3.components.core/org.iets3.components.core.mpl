@@ -44,6 +44,7 @@
         <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" fqName="org.iets3.components.core" version="0" />
         <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" fqName="org.iets3.core.base" version="0" />
         <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" fqName="org.iets3.core.expr.base" version="0" />
+        <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" fqName="org.iets3.core.expr.path" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -78,6 +79,7 @@
         <module reference="67d267be-0b8c-4abc-b09c-4f514397ea65(org.iets3.components.core#7804632404593231268)" version="0" />
         <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
         <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+        <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -171,12 +173,14 @@
     <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+    <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>
     <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
+    <extendedLanguage>f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)</extendedLanguage>
   </extendedLanguages>
 </language>
 
