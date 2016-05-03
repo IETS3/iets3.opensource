@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -246,6 +247,9 @@
     <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="435Eqf9hFgz" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    </node>
     <node concept="1TJgyj" id="mIQkxfpv7_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="category" />
@@ -302,6 +306,9 @@
     </node>
     <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
+    <node concept="PrWs8" id="435Eqf999cJ" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8YlAdL">
@@ -855,20 +862,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="9D0IlqBEBR">
-    <property role="1pbfSe" value="1560784092" />
-    <property role="3GE5qa" value="expr" />
-    <property role="TrG5h" value="ComponentInstanceTarget" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="9D0IlqBEC6" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="instance" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
-    </node>
-    <node concept="PrWs8" id="9D0IlqBEC4" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    <node concept="PrWs8" id="435Eqf9c0k0" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
     </node>
   </node>
   <node concept="1TIwiD" id="3k_9K2Ovuaj">
