@@ -22,8 +22,8 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -836,10 +836,10 @@
           <node concept="2OqwBi" id="mIQkxfv1VU" role="3clFbG">
             <node concept="2OqwBi" id="mIQkxfv1VV" role="2Oq$k0">
               <node concept="2OqwBi" id="mIQkxfv1VW" role="2Oq$k0">
-                <node concept="13iPFW" id="mIQkxfv42G" role="2Oq$k0" />
-                <node concept="2qgKlT" id="mIQkxfv1W2" role="2OqNvi">
+                <node concept="2qgKlT" id="2MSk9$ZzA4b" role="2OqNvi">
                   <ref role="37wK5l" node="7Zvsa54vnYI" resolve="allContents" />
                 </node>
+                <node concept="13iPFW" id="mIQkxfv42G" role="2Oq$k0" />
               </node>
               <node concept="v3k3i" id="mIQkxfv1W3" role="2OqNvi">
                 <node concept="chp4Y" id="mIQkxfv1W4" role="v3oSu">
@@ -7336,6 +7336,23 @@
     </node>
     <node concept="13hLZK" id="435Eqf9c0kr" role="13h7CW">
       <node concept="3clFbS" id="435Eqf9c0ks" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3DZSCm583y2">
+    <property role="3GE5qa" value="components" />
+    <ref role="13h7C2" to="w9y2:3DZSCm583xq" resolve="IComponentExtender" />
+    <node concept="13i0hz" id="3DZSCm583yk" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getComponent" />
+      <node concept="3Tm1VV" id="3DZSCm583yl" role="1B3o_S" />
+      <node concept="3clFbS" id="3DZSCm583ym" role="3clF47" />
+      <node concept="3Tqbb2" id="3DZSCm583ys" role="3clF45">
+        <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="3DZSCm583y3" role="13h7CW">
+      <node concept="3clFbS" id="3DZSCm583y4" role="2VODD2" />
     </node>
   </node>
 </model>

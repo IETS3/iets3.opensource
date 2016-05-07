@@ -912,5 +912,10 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3DZSCm583xq">
+    <property role="1pbfSe" value="1080026401" />
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="IComponentExtender" />
+  </node>
 </model>
 
