@@ -496,7 +496,7 @@
   </node>
   <node concept="24kQdi" id="7kYh9Ws$z$k">
     <property role="3GE5qa" value="map" />
-    <ref role="1XX52x" to="700h:7kYh9Ws$zzv" resolve="OneArgKeyTypeMapModifier" />
+    <ref role="1XX52x" to="700h:7kYh9Ws$zzv" resolve="OneArgMapModifier" />
     <node concept="3EZMnI" id="7kYh9Ws$z$o" role="2wV5jI">
       <node concept="2iRfu4" id="7kYh9Ws$z$p" role="2iSdaV" />
       <node concept="PMmxH" id="7kYh9Ws$z$m" role="3EZMnx">
@@ -520,6 +520,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Q4DxjDbyqy">
+    <property role="3GE5qa" value="collection.numeric" />
+    <ref role="1XX52x" to="700h:4Q4DxjDbyq9" resolve="MaxOp" />
+    <node concept="3F0ifn" id="4Q4DxjDbyq$" role="2wV5jI">
+      <property role="3F0ifm" value="max" />
     </node>
   </node>
 </model>

@@ -407,5 +407,25 @@
     <property role="34LRSv" value="remove" />
     <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="OneArgMapModifier" />
   </node>
+  <node concept="1TIwiD" id="4Q4DxjDbyq9">
+    <property role="1pbfSe" value="917687453" />
+    <property role="3GE5qa" value="collection.numeric" />
+    <property role="TrG5h" value="MaxOp" />
+    <property role="34LRSv" value="max" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="4Q4DxjDbyr0" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Q4DxjD$qtz">
+    <property role="1pbfSe" value="924208503" />
+    <property role="3GE5qa" value="collection.numeric" />
+    <property role="TrG5h" value="SumOp" />
+    <property role="34LRSv" value="sum" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="4Q4DxjD$qt$" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+  </node>
 </model>
 
