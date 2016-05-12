@@ -12,12 +12,21 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
@@ -28,6 +37,9 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -451,6 +463,36 @@
     </node>
     <node concept="PrWs8" id="4Q4DxjDLg_v" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Lrty7CKcZT">
+    <property role="1pbfSe" value="182696422" />
+    <property role="3GE5qa" value="ordered.numeric" />
+    <property role="TrG5h" value="SimpleSortOp" />
+    <property role="34LRSv" value="sort" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="1TJgyi" id="Lrty7CKd0h" role="1TKVEl">
+      <property role="TrG5h" value="order" />
+      <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
+    </node>
+    <node concept="PrWs8" id="Lrty7CKd02" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+    </node>
+    <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="Lrty7CKd06">
+    <property role="3GE5qa" value="ordered.numeric" />
+    <property role="TrG5h" value="SortOrder" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="Lrty7CKd07" role="M5hS2">
+      <property role="1uS6qv" value="ASC" />
+      <property role="1uS6qo" value="ASC" />
+    </node>
+    <node concept="M4N5e" id="Lrty7CKd0e" role="M5hS2">
+      <property role="1uS6qv" value="DESC" />
+      <property role="1uS6qo" value="DESC" />
     </node>
   </node>
 </model>
