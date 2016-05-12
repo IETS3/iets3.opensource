@@ -427,5 +427,31 @@
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4Q4DxjDGLlO">
+    <property role="1pbfSe" value="926399368" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="HeadOp" />
+    <property role="34LRSv" value="head" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="4Q4DxjDXktS" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+    </node>
+    <node concept="PrWs8" id="4Q4DxjDGLmA" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Q4DxjDLg_t">
+    <property role="1pbfSe" value="927575921" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="TailOp" />
+    <property role="34LRSv" value="tail" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="4Q4DxjDXktY" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+    </node>
+    <node concept="PrWs8" id="4Q4DxjDLg_v" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
 </model>
 
