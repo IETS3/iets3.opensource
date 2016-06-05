@@ -14,6 +14,7 @@
   <property name="iets3.lang.core" location="${iets3.github.core.home}/code/languages/org.iets3.core" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr.artifacts.platform}" />
+  <property name="artifacts.mpsBuild" location="${mps.home}" />
   <property name="artifacts.org.iets3.analysis.z3" location="${iets3.artifacts.z3Lib}" />
   <property name="artifacts.mps-sl-all" location="${sl-all.artifacts.root}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -900,6 +901,8 @@
         <name>org.iets3.build</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
+        <depends>com.mbeddr.platform.build</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -908,30 +911,55 @@
     </echoxml>
     <mkdir dir="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages" />
     <mkdir dir="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build" />
-    <mkdir dir="${build.tmp}/default/org.iets3.allScripts.build.jar" />
-    <mkdir dir="${build.tmp}/default/org.iets3.allScripts.build.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/org.iets3.allScripts.build.jar/META-INF/module.xml">
-      <module namespace="org.iets3.allScripts.build" type="solution" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610482">
+    <mkdir dir="${build.tmp}/default/org.iets3.core.build.jar" />
+    <mkdir dir="${build.tmp}/default/org.iets3.core.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.iets3.core.build.jar/META-INF/module.xml">
+      <module namespace="org.iets3.core.build" type="solution" uuid="bf6914ec-737d-4231-8e8d-94477f17fdcf">
         <dependencies />
-        <sources jar="org.iets3.allScripts.build-src.jar" descriptor="org.iets3.allScripts.build.msd" />
+        <sources jar="org.iets3.core.build-src.jar" descriptor="org.iets3.core.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.allScripts.build.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/org.iets3.allScripts.build" />
-      <fileset dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build" includes="icons/**, resources/**" />
-      <fileset dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/org.iets3.allScripts.build.jar" />
+    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.core.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.iets3.core.build" />
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.core.build" includes="icons/**, resources/**" />
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.iets3.core.build.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.allScripts.build-models">
-      <fileset dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.core.build-models">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.core.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.allScripts.build-src.jar" duplicate="preserve">
-      <fileset dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen">
+    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.core.build-src.jar" duplicate="preserve">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
       </fileset>
-      <zipfileset file="${iets3.lang.core}/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.allScripts.build-models" prefix="module/models" />
+      <zipfileset file="${iets3.lang.core}/solutions/org.iets3.core.build/org.iets3.core.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.core.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/org.iets3.tools.z3.build.jar" />
+    <mkdir dir="${build.tmp}/default/org.iets3.tools.z3.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.iets3.tools.z3.build.jar/META-INF/module.xml">
+      <module namespace="org.iets3.tools.z3.build" type="solution" uuid="3da7eb9f-8dcb-4f5f-9b48-0209463416c3">
+        <dependencies />
+        <sources jar="org.iets3.tools.z3.build-src.jar" descriptor="org.iets3.tools.z3.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.tools.z3.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.iets3.tools.z3.build" />
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build" includes="icons/**, resources/**" />
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.iets3.tools.z3.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.tools.z3.build-models">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/org.iets3.core.os.zip/org.iets3.build/languages/iets3.build/org.iets3.tools.z3.build-src.jar" duplicate="preserve">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.tools.z3.build-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/org.iets3.core.os.zip">
       <zipfileset dir="${iets3.lang.core}/languages/org.iets3.core.expr.collections/lib" prefix="org.iets3.core.os/lib" />
@@ -1713,16 +1741,16 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -1732,7 +1760,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.sandbox.core.expr.os, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.java.modules.cycle.1, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.allScripts.build" />
+  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.sandbox.core.expr.os, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.java.modules.cycle.1, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.core.build, java.compile.org.iets3.tools.z3.build" />
   
   <target name="processResources" />
   
@@ -1753,12 +1781,14 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip/mbeddr.doc" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform.build" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.layout" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.widgets" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips" />
+      <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks" />
       <plugin path="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons" />
@@ -1843,6 +1873,8 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <library file="${artifacts.mps}/plugins/mps-vcs/languages/jetbrains.mps.ide.vcs.modelmetadata.jar" />
       <library file="${artifacts.mps}/plugins/mps-vcs/languages/jetbrains.mps.vcs.mergehints.jar" />
@@ -1896,6 +1928,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.treenotation/com.mbeddr.mpsutil.treenotation.styles.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.runtime.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" />
@@ -1918,6 +1951,7 @@
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
+      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -1934,7 +1968,6 @@
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
       <library file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
       <chunk>
-        <module file="${iets3.lang.core}/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" />
         <module file="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/org.iets3.analysis.modelchecksupport.mpl" />
         <module file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/org.iets3.analysis.solversupport.mpl" />
         <module file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/org.iets3.analysis.solversupport.temporal.mpl" />
@@ -1945,6 +1978,7 @@
         <module file="${iets3.lang.core}/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" />
         <module file="${iets3.lang.core}/languages/org.iets3.components.req/org.iets3.components.req.mpl" />
         <module file="${iets3.lang.core}/languages/org.iets3.core.base/org.iets3.core.base.mpl" />
+        <module file="${iets3.lang.core}/solutions/org.iets3.core.build/org.iets3.core.build.msd" />
         <module file="${iets3.lang.core}/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" />
         <module file="${iets3.lang.core}/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" />
         <module file="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" />
@@ -1964,6 +1998,7 @@
         <module file="${iets3.lang.core}/languages/org.iets3.simbench/org.iets3.simbench.mpl" />
         <module file="${iets3.lang.core}/solutions/org.iets3.simbench.plugin/org.iets3.simbench.plugin.msd" />
         <module file="${iets3.lang.core}/devkits/org.iets3.solver/org.iets3.solver.devkit" />
+        <module file="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" />
         <module file="${iets3.lang.core}/tests/testlang.core.expr/testlang.core.expr.mpl" />
       </chunk>
       <chunk>
@@ -5195,23 +5230,41 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.allScripts.build">
-    <mkdir dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/org.iets3.allScripts.build" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.allScripts.build" fork="false" includeantruntime="false" source="1.8" target="1.8">
+  <target name="java.compile.org.iets3.core.build" depends="java.compile.org.iets3.tools.z3.build, fetchDependencies">
+    <mkdir dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.iets3.core.build" />
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.build" fork="false" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen" />
+        <path location="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.iets3.tools.z3.build" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.iets3.core.build">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.org.iets3.tools.z3.build">
+    <mkdir dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.iets3.tools.z3.build" />
+    <javac destdir="${build.tmp}/java/out/org.iets3.tools.z3.build" fork="false" includeantruntime="false" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" />
       </src>
       <classpath />
     </javac>
-    <copy todir="${build.tmp}/java/out/org.iets3.allScripts.build">
-      <fileset dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen" excludes="**/*.java" />
+    <copy todir="${build.tmp}/java/out/org.iets3.tools.z3.build">
+      <fileset dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${iets3.lang.core}/solutions/org.iets3.allScripts.build/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/generator/source_gen" />
@@ -5222,6 +5275,7 @@
     <delete dir="${iets3.lang.core}/languages/org.iets3.components.plugin/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.components.req/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.core.base/source_gen" />
+    <delete dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.core.expr.base/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.core.expr.collections/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/source_gen" />
@@ -5239,6 +5293,7 @@
     <delete dir="${iets3.lang.core}/languages/org.iets3.req.plugin/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.simbench/source_gen" />
     <delete dir="${iets3.lang.core}/solutions/org.iets3.simbench.plugin/source_gen" />
+    <delete dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" />
     <delete dir="${iets3.lang.core}/tests/testlang.core.expr/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/generator/source_gen" />
     <delete dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/generator/source_gen" />
