@@ -8,16 +8,23 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+    <import index="gsp2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference.util(MPS.Core/)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -38,6 +45,13 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -50,6 +64,21 @@
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213106463729" name="canBeChild" index="1MLUbF" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -161,7 +190,7 @@
   </node>
   <node concept="1M2fIO" id="7kYh9Ws$zBT">
     <property role="3GE5qa" value="map" />
-    <ref role="1M2myG" to="700h:7kYh9Ws$zzv" resolve="OneArgKeyTypeMapModifier" />
+    <ref role="1M2myG" to="700h:7kYh9Ws$zzv" resolve="OneArgMapModifier" />
     <node concept="nKS2y" id="7kYh9Ws$zBU" role="1MLUbF">
       <node concept="3clFbS" id="7kYh9Ws$zBV" role="2VODD2">
         <node concept="3clFbF" id="7kYh9Ws$zD0" role="3cqZAp">
@@ -181,6 +210,207 @@
             <node concept="1mIQ4w" id="7kYh9Ws$$fP" role="2OqNvi">
               <node concept="chp4Y" id="7kYh9Ws$$kM" role="cj9EA">
                 <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="Lrty7CISsz">
+    <property role="3GE5qa" value="collection.numeric" />
+    <ref role="1M2myG" to="700h:4Q4DxjDbyq9" resolve="MaxOp" />
+    <node concept="nKS2y" id="Lrty7CISs$" role="1MLUbF">
+      <node concept="3clFbS" id="Lrty7CISs_" role="2VODD2">
+        <node concept="3cpWs8" id="4Q4DxjDjzn6" role="3cqZAp">
+          <node concept="3cpWsn" id="34jcEXBmwVg" role="3cpWs9">
+            <property role="TrG5h" value="mgr" />
+            <node concept="3uibUv" id="34jcEXBmwVh" role="1tU5fm">
+              <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
+            </node>
+            <node concept="2OqwBi" id="34jcEXBmwVi" role="33vP2m">
+              <node concept="2YIFZM" id="34jcEXBmwVj" role="2Oq$k0">
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="34jcEXBmwVk" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="Lrty7CITwM" role="3cqZAp">
+          <node concept="3cpWsn" id="Lrty7CITwN" role="3cpWs9">
+            <property role="TrG5h" value="ct" />
+            <node concept="3Tqbb2" id="Lrty7CITwJ" role="1tU5fm" />
+            <node concept="2OqwBi" id="Lrty7CITwO" role="33vP2m">
+              <node concept="2OqwBi" id="Lrty7CITwP" role="2Oq$k0">
+                <node concept="1PxgMI" id="Lrty7CITwQ" role="2Oq$k0">
+                  <ref role="1PxNhF" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="Lrty7CITwR" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="Lrty7CITwS" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="Lrty7CITwT" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Lrty7CIVjV" role="3cqZAp">
+          <node concept="2OqwBi" id="Lrty7CIVlH" role="3clFbG">
+            <node concept="37vLTw" id="Lrty7CIVjT" role="2Oq$k0">
+              <ref role="3cqZAo" node="34jcEXBmwVg" resolve="mgr" />
+            </node>
+            <node concept="liA8E" id="Lrty7CIVo8" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="Lrty7CIVpS" role="37wK5m">
+                <ref role="3cqZAo" node="Lrty7CITwN" resolve="ct" />
+              </node>
+              <node concept="2pJPEk" id="Lrty7CIVw4" role="37wK5m">
+                <node concept="2pJPED" id="Lrty7CIVy_" role="2pJPEn">
+                  <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  <node concept="2pIpSj" id="Lrty7CIV_7" role="2pJxcM">
+                    <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                    <node concept="2pJPED" id="Lrty7CIVHy" role="2pJxcZ">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="Lrty7CIVOM">
+    <property role="3GE5qa" value="collection.numeric" />
+    <ref role="1M2myG" to="700h:4Q4DxjD$qtz" resolve="SumOp" />
+    <node concept="nKS2y" id="Lrty7CIVOQ" role="1MLUbF">
+      <node concept="3clFbS" id="Lrty7CIVOR" role="2VODD2">
+        <node concept="3cpWs8" id="Lrty7CIVPV" role="3cqZAp">
+          <node concept="3cpWsn" id="Lrty7CIVPW" role="3cpWs9">
+            <property role="TrG5h" value="mgr" />
+            <node concept="3uibUv" id="Lrty7CIVPX" role="1tU5fm">
+              <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
+            </node>
+            <node concept="2OqwBi" id="Lrty7CIVPY" role="33vP2m">
+              <node concept="2YIFZM" id="Lrty7CIVPZ" role="2Oq$k0">
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="Lrty7CIVQ0" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="Lrty7CIVQ1" role="3cqZAp">
+          <node concept="3cpWsn" id="Lrty7CIVQ2" role="3cpWs9">
+            <property role="TrG5h" value="ct" />
+            <node concept="3Tqbb2" id="Lrty7CIVQ3" role="1tU5fm" />
+            <node concept="2OqwBi" id="Lrty7CIVQ4" role="33vP2m">
+              <node concept="2OqwBi" id="Lrty7CIVQ5" role="2Oq$k0">
+                <node concept="1PxgMI" id="Lrty7CIVQ6" role="2Oq$k0">
+                  <ref role="1PxNhF" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="Lrty7CIVQ7" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="Lrty7CIVQ8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="Lrty7CIVQ9" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Lrty7CIVQa" role="3cqZAp">
+          <node concept="2OqwBi" id="Lrty7CIVQb" role="3clFbG">
+            <node concept="37vLTw" id="Lrty7CIVQc" role="2Oq$k0">
+              <ref role="3cqZAo" node="Lrty7CIVPW" resolve="mgr" />
+            </node>
+            <node concept="liA8E" id="Lrty7CIVQd" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="Lrty7CIVQe" role="37wK5m">
+                <ref role="3cqZAo" node="Lrty7CIVQ2" resolve="ct" />
+              </node>
+              <node concept="2pJPEk" id="Lrty7CIVQf" role="37wK5m">
+                <node concept="2pJPED" id="Lrty7CIVQg" role="2pJPEn">
+                  <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  <node concept="2pIpSj" id="Lrty7CIVQh" role="2pJxcM">
+                    <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                    <node concept="2pJPED" id="Lrty7CIVQi" role="2pJxcZ">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="Lrty7CKd5T">
+    <property role="3GE5qa" value="ordered.numeric" />
+    <ref role="1M2myG" to="700h:Lrty7CKcZT" resolve="SimpleSortOp" />
+    <node concept="nKS2y" id="Lrty7CKd5X" role="1MLUbF">
+      <node concept="3clFbS" id="Lrty7CKd5Y" role="2VODD2">
+        <node concept="3cpWs8" id="Lrty7CKd6$" role="3cqZAp">
+          <node concept="3cpWsn" id="Lrty7CKd6_" role="3cpWs9">
+            <property role="TrG5h" value="mgr" />
+            <node concept="3uibUv" id="Lrty7CKd6A" role="1tU5fm">
+              <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
+            </node>
+            <node concept="2OqwBi" id="Lrty7CKd6B" role="33vP2m">
+              <node concept="2YIFZM" id="Lrty7CKd6C" role="2Oq$k0">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+              </node>
+              <node concept="liA8E" id="Lrty7CKd6D" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="Lrty7CKd6E" role="3cqZAp">
+          <node concept="3cpWsn" id="Lrty7CKd6F" role="3cpWs9">
+            <property role="TrG5h" value="ct" />
+            <node concept="3Tqbb2" id="Lrty7CKd6G" role="1tU5fm" />
+            <node concept="2OqwBi" id="Lrty7CKd6H" role="33vP2m">
+              <node concept="2OqwBi" id="Lrty7CKd6I" role="2Oq$k0">
+                <node concept="1PxgMI" id="Lrty7CKd6J" role="2Oq$k0">
+                  <ref role="1PxNhF" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="Lrty7CKd6K" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="Lrty7CKd6L" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="Lrty7CKd6M" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Lrty7CKd6N" role="3cqZAp">
+          <node concept="2OqwBi" id="Lrty7CKd6O" role="3clFbG">
+            <node concept="37vLTw" id="Lrty7CKd6P" role="2Oq$k0">
+              <ref role="3cqZAo" node="Lrty7CKd6_" resolve="mgr" />
+            </node>
+            <node concept="liA8E" id="Lrty7CKd6Q" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="Lrty7CKd6R" role="37wK5m">
+                <ref role="3cqZAo" node="Lrty7CKd6F" resolve="ct" />
+              </node>
+              <node concept="2pJPEk" id="Lrty7CKd6S" role="37wK5m">
+                <node concept="2pJPED" id="Lrty7CKd6T" role="2pJPEn">
+                  <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  <node concept="2pIpSj" id="Lrty7CKd6U" role="2pJxcM">
+                    <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                    <node concept="2pJPED" id="Lrty7CKda$" role="2pJxcZ">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

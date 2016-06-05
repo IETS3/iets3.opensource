@@ -197,7 +197,7 @@
     <property role="1pbfSe" value="612843687" />
     <property role="TrG5h" value="Entity" />
     <property role="3GE5qa" value="entities" />
-    <property role="34LRSv" value="entity" />
+    <property role="34LRSv" value="data" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6LLGpXJ1KQV" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
