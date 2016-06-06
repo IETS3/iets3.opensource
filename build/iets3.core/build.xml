@@ -1741,16 +1741,16 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
-    <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
+    <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -2029,7 +2029,7 @@
   <target name="java.compile.org.iets3.core.expr.util" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.util/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.util" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.util" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.util" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.util/source_gen" />
@@ -2100,7 +2100,7 @@
   <target name="java.compile.org.iets3.core.expr.util#571413333984379598" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.util, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.util/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.util#571413333984379598" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.util#571413333984379598" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.util#571413333984379598" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.util/generator/source_gen" />
@@ -2169,7 +2169,7 @@
   <target name="java.compile.org.iets3.core.expr.math" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.math/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.math" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.math" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.math" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.math/source_gen" />
@@ -2232,7 +2232,7 @@
   <target name="java.compile.org.iets3.core.expr.math#4944417823362075229" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.math/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.math#4944417823362075229" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.math#4944417823362075229" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.math#4944417823362075229" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.math/generator/source_gen" />
@@ -2300,7 +2300,7 @@
   <target name="java.compile.org.iets3.core.expr.collections" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.collections/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.collections" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.collections" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.collections" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.collections/source_gen" />
@@ -2366,7 +2366,7 @@
   <target name="java.compile.org.iets3.core.expr.collections#7554398283339749507" depends="java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.collections, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.collections/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.collections#7554398283339749507" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.collections#7554398283339749507" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.collections#7554398283339749507" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.collections/generator/source_gen" />
@@ -2409,7 +2409,7 @@
   <target name="java.compile.org.iets3.core.expr.path" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.collections, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.path/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.path" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.path" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.path" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.path/source_gen" />
@@ -2454,7 +2454,7 @@
   <target name="java.compile.org.iets3.core.expr.path#7814222126783751586" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.path/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.path#7814222126783751586" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.path#7814222126783751586" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.path#7814222126783751586" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.path/generator/source_gen" />
@@ -2497,7 +2497,7 @@
   <target name="java.compile.org.iets3.core.expr.lambda" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.lambda" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.lambda" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/source_gen" />
@@ -2560,7 +2560,7 @@
   <target name="java.compile.org.iets3.core.expr.lambda#7554398283340208180" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.lambda#7554398283340208180" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.lambda#7554398283340208180" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.lambda#7554398283340208180" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/generator/source_gen" />
@@ -2627,7 +2627,7 @@
   <target name="java.compile.org.iets3.core.base" depends="fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.base" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.base" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.base" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.base/source_gen" />
@@ -2674,7 +2674,7 @@
   <target name="java.compile.org.iets3.core.base#5115872837156535746" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.base/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.base#5115872837156535746" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.base#5115872837156535746" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.base#5115872837156535746" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.base/generator/source_gen" />
@@ -2715,7 +2715,7 @@
   <target name="java.compile.org.iets3.core.users" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.users/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.users" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.users" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.users" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.users/source_gen" />
@@ -2777,7 +2777,7 @@
   <target name="java.compile.org.iets3.core.users#8479184967780604354" depends="java.compile.org.iets3.core.users, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.users/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.users#8479184967780604354" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.users#8479184967780604354" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.users#8479184967780604354" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.users/generator/source_gen" />
@@ -2818,7 +2818,7 @@
   <target name="java.compile.testlang.core.expr" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/tests/testlang.core.expr/source_gen" />
     <mkdir dir="${build.tmp}/java/out/testlang.core.expr" />
-    <javac destdir="${build.tmp}/java/out/testlang.core.expr" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/testlang.core.expr" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/tests/testlang.core.expr/source_gen" />
@@ -2888,7 +2888,7 @@
   <target name="java.compile.testlang.core.expr#7425695345928347724" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.testlang.core.expr, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/tests/testlang.core.expr/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/testlang.core.expr#7425695345928347724" />
-    <javac destdir="${build.tmp}/java/out/testlang.core.expr#7425695345928347724" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/testlang.core.expr#7425695345928347724" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/tests/testlang.core.expr/generator/source_gen" />
@@ -2934,7 +2934,7 @@
   <target name="java.compile.org.iets3.core.expr.base" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.base" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.base" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.base" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.base/source_gen" />
@@ -2989,7 +2989,7 @@
   <target name="java.compile.org.iets3.core.expr.base#7425695345928347648" depends="java.compile.org.iets3.core.expr.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.base/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.base#7425695345928347648" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.base#7425695345928347648" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.base#7425695345928347648" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.base/generator/source_gen" />
@@ -3030,7 +3030,7 @@
   <target name="java.compile.org.iets3.core.expr.simpleTypes" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/source_gen" />
@@ -3095,7 +3095,7 @@
   <target name="java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202" depends="java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes#7425695345928349202" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes#7425695345928349202" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes#7425695345928349202" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/generator/source_gen" />
@@ -3161,7 +3161,7 @@
   <target name="java.compile.org.iets3.core.plugin" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.plugin" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.plugin" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.core.plugin/source_gen" />
@@ -3207,7 +3207,7 @@
   <target name="java.compile.sandbox.core.expr.os" depends="fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/sandbox.core.expr.os/source_gen" />
     <mkdir dir="${build.tmp}/java/out/sandbox.core.expr.os" />
-    <javac destdir="${build.tmp}/java/out/sandbox.core.expr.os" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/sandbox.core.expr.os" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/solutions/sandbox.core.expr.os/source_gen" />
@@ -3251,7 +3251,7 @@
   <target name="java.compile.org.iets3.components.plugin" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.plugin, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.plugin" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.plugin" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.plugin/source_gen" />
@@ -3323,7 +3323,7 @@
   <target name="java.compile.org.iets3.components.core" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.core" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.core" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.core" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.core/source_gen" />
@@ -3405,7 +3405,7 @@
   <target name="java.compile.org.iets3.components.core#7804632404593231268" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.core/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.core#7804632404593231268" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.core#7804632404593231268" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.core#7804632404593231268" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.core/generator/source_gen" />
@@ -3475,7 +3475,7 @@
   <target name="java.compile.org.iets3.components.design" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.design/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.design" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.design" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.design" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.design/source_gen" />
@@ -3539,7 +3539,7 @@
   <target name="java.compile.org.iets3.components.design#7804632404594099635" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.components.design, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.design/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.design#7804632404594099635" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.design#7804632404594099635" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.design#7804632404594099635" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.design/generator/source_gen" />
@@ -3610,7 +3610,7 @@
   <target name="java.compile.org.iets3.components.functional" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.functional" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.functional" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
@@ -3687,7 +3687,7 @@
   <target name="java.compile.org.iets3.components.functional#7804632404593474002" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.components.core, java.compile.org.iets3.components.functional, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.functional/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional#7804632404593474002" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.functional#7804632404593474002" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.functional#7804632404593474002" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.functional/generator/source_gen" />
@@ -3760,7 +3760,7 @@
   <target name="java.compile.org.iets3.components.req" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.req.core, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.req/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.req" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.req" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.req" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.req/source_gen" />
@@ -3827,7 +3827,7 @@
   <target name="java.compile.org.iets3.components.req#229512757699399834" depends="java.compile.org.iets3.components.req, java.compile.org.iets3.req.core, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.req/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.req#229512757699399834" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.components.req#229512757699399834" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.components.req#229512757699399834" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.req/generator/source_gen" />
@@ -3896,7 +3896,7 @@
   <target name="java.compile.org.iets3.simbench" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.components.core, java.compile.org.iets3.components.functional, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.hardware, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.simbench/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.simbench" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.simbench" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.simbench" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.simbench/source_gen" />
@@ -3977,7 +3977,7 @@
   <target name="java.compile.org.iets3.simbench#6209909044671225035" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.hardware, java.compile.org.iets3.simbench, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.simbench/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.simbench#6209909044671225035" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.simbench#6209909044671225035" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.simbench#6209909044671225035" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.simbench/generator/source_gen" />
@@ -4051,7 +4051,7 @@
   <target name="java.compile.org.iets3.simbench.plugin" depends="java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.hardware, java.compile.org.iets3.simbench, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.simbench.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.simbench.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.simbench.plugin" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.simbench.plugin" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/solutions/org.iets3.simbench.plugin/source_gen" />
@@ -4124,7 +4124,7 @@
   <target name="java.compile.org.iets3.hardware" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.components.core, java.compile.org.iets3.components.functional, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.hardware/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.hardware" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.hardware" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.hardware" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.hardware/source_gen" />
@@ -4191,7 +4191,7 @@
   <target name="java.compile.org.iets3.hardware#6654311517970965062" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.hardware, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.hardware/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.hardware#6654311517970965062" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.hardware#6654311517970965062" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.hardware#6654311517970965062" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.hardware/generator/source_gen" />
@@ -4259,7 +4259,7 @@
   <target name="java.compile.org.iets3.featuremodel" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.featuremodel/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.featuremodel" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.featuremodel" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.featuremodel" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.featuremodel/source_gen" />
@@ -4339,7 +4339,7 @@
   <target name="java.compile.org.iets3.featuremodel#3989254429232883105" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.featuremodel, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.featuremodel/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.featuremodel#3989254429232883105" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.featuremodel#3989254429232883105" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.featuremodel#3989254429232883105" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.featuremodel/generator/source_gen" />
@@ -4408,7 +4408,7 @@
   <target name="java.compile.org.iets3.analysis.solversupport" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
@@ -4481,7 +4481,7 @@
   <target name="java.compile.org.iets3.analysis.solversupport#5657098766103854246" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport#5657098766103854246" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport#5657098766103854246" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport#5657098766103854246" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/generator/source_gen" />
@@ -4542,7 +4542,7 @@
   
   <target name="java.compile.java.modules.cycle.1" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
@@ -4613,7 +4613,7 @@
   <target name="java.compile.org.iets3.analysis.solversupport.temporal" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
@@ -4687,7 +4687,7 @@
   <target name="java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal#6396090229488181105" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal#6396090229488181105" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal#6396090229488181105" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/generator/source_gen" />
@@ -4756,7 +4756,7 @@
   <target name="java.compile.org.iets3.analysis.modelchecksupport" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
@@ -4821,7 +4821,7 @@
   <target name="java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport#5802976567601750482" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport#5802976567601750482" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport#5802976567601750482" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/generator/source_gen" />
@@ -4890,7 +4890,7 @@
   <target name="java.compile.org.iets3.glossary" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.glossary/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.glossary" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.glossary" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.glossary" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.glossary/source_gen" />
@@ -4954,7 +4954,7 @@
   <target name="java.compile.org.iets3.glossary#7551038907536064983" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.glossary, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.glossary/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.glossary#7551038907536064983" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.glossary#7551038907536064983" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.glossary#7551038907536064983" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.glossary/generator/source_gen" />
@@ -5023,7 +5023,7 @@
   <target name="java.compile.org.iets3.req.core" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.users, java.compile.org.iets3.glossary, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.req.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.req.core" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.req.core" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.req.core" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.req.core/source_gen" />
@@ -5100,7 +5100,7 @@
   <target name="java.compile.org.iets3.req.core#5151426049053136026" depends="java.compile.org.iets3.req.core, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.req.core/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.req.core#5151426049053136026" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.req.core#5151426049053136026" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.req.core#5151426049053136026" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.req.core/generator/source_gen" />
@@ -5161,7 +5161,7 @@
   <target name="java.compile.org.iets3.req.plugin" depends="java.compile.org.iets3.core.plugin, java.compile.org.iets3.req.core, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.req.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.req.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.req.plugin" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.req.plugin" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.req.plugin/source_gen" />
@@ -5233,7 +5233,7 @@
   <target name="java.compile.org.iets3.core.build" depends="java.compile.org.iets3.tools.z3.build, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.build" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.build" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.build" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/solutions/org.iets3.core.build/source_gen" />
@@ -5252,7 +5252,7 @@
   <target name="java.compile.org.iets3.tools.z3.build">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.tools.z3.build" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.tools.z3.build" fork="false" includeantruntime="false" source="1.8" target="1.8">
+    <javac destdir="${build.tmp}/java/out/org.iets3.tools.z3.build" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/solutions/org.iets3.tools.z3.build/source_gen" />
