@@ -5,7 +5,7 @@
 .DS_Store
 .metadata
 .svn
-build
+/build
 
 # -----------------------------------------------------------
 # Model Checkig Results
