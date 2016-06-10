@@ -126,7 +126,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -956,18 +956,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3clFb_" id="XL3MIq5YeF" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="writeToFile" />
-      <node concept="3Tm1VV" id="XL3MIq5YeH" role="1B3o_S" />
-      <node concept="3cqZAl" id="XL3MIq5YeI" role="3clF45" />
-      <node concept="37vLTG" id="XL3MIq5YeJ" role="3clF46">
-        <property role="TrG5h" value="fileName" />
-        <node concept="17QB3L" id="XL3MIq5YeK" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="XL3MIq5YeL" role="3clF47" />
     </node>
   </node>
   <node concept="312cEu" id="5zG5$Ly_Kxj">
