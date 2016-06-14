@@ -50,6 +50,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.plugin/org.iets3.analysis.modelchecksupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.runtime/org.iets3.analysis.modelchecksupport.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.temporal.runtime/org.iets3.analysis.solversupport.temporal.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.runtime/org.iets3.core.units.runtime.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.sandbox/org.iets3.core.units.sandbox.msd" folder="units" />
