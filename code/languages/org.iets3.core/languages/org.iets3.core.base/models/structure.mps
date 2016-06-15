@@ -116,5 +116,18 @@
       <ref role="PrY4T" node="3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
   </node>
+  <node concept="PlHQZ" id="2HplpPDjsPc">
+    <property role="1pbfSe" value="1800985879" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="ICanStorePersistentResult" />
+    <node concept="PrWs8" id="3I6_jFIZNlA" role="PrDN$">
+      <ref role="PrY4T" node="3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3I6_jFIZNl_">
+    <property role="1pbfSe" value="713411231" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="ICanReadPersistentResult" />
+  </node>
 </model>
 
