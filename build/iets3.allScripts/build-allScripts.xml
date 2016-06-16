@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/org.iets3.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/org.iets3.allScripts.build" />
-  <property name="mps.home" location="${basedir}/../../../../../../../Applications/MPS33.app/Contents" />
+  <property name="mps.home" location="${basedir}/../../../../../../abugariu/Desktop/MPS 3.3.app/Contents" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../../mbeddr.core" />
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
   <property name="iets3.home" location="${basedir}/../../code/languages/org.iets3.core" />
@@ -353,7 +353,7 @@
   <target name="java.compile.de.slisson.mps.all.build" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.all.build" />
-    <javac destdir="${build.tmp}/java/out/de.slisson.mps.all.build" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.all.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
@@ -372,7 +372,7 @@
   <target name="java.compile.com.mbeddr.platform" depends="java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.platform" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
@@ -389,7 +389,7 @@
   <target name="java.compile.jetbrains.mps.minimal">
     <mkdir dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.minimal" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.minimal" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
@@ -406,7 +406,7 @@
   <target name="java.compile.com.mbeddr.build" depends="java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.build" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
@@ -426,7 +426,7 @@
   <target name="java.compile.org.iets3.tools.z3.build">
     <mkdir dir="${iets3.home}/solutions/org.iets3.tools.z3.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.tools.z3.build" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.tools.z3.build" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/org.iets3.tools.z3.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.home}/solutions/org.iets3.tools.z3.build/source_gen" />
@@ -440,16 +440,15 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build, java.compile.org.iets3.tools.z3.build">
+  <target name="java.compile.org.iets3.core.build" depends="java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build, java.compile.org.iets3.tools.z3.build">
     <mkdir dir="${iets3.home}/solutions/org.iets3.core.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.build" />
-    <javac destdir="${build.tmp}/java/out/org.iets3.core.build" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/org.iets3.core.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.home}/solutions/org.iets3.core.build/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
         <pathelement path="${build.tmp}/java/out/org.iets3.tools.z3.build" />
