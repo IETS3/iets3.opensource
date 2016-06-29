@@ -25,6 +25,7 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="874t" ref="r:9e305a48-41d6-450d-b02f-7d9ad145eac2(org.iets3.components.functional.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -7353,6 +7354,33 @@
     </node>
     <node concept="13hLZK" id="3DZSCm583y3" role="13h7CW">
       <node concept="3clFbS" id="3DZSCm583y4" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6TRSMhPOfC4">
+    <property role="3GE5qa" value="components" />
+    <ref role="13h7C2" to="w9y2:6TRSMhPOfBF" resolve="IComponentCreator" />
+    <node concept="13i0hz" id="6TRSMhPOfC7" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="createNewComponent" />
+      <node concept="3Tm1VV" id="6TRSMhPOfC8" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6TRSMhPOfFp" role="3clF45">
+        <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+      </node>
+      <node concept="3clFbS" id="6TRSMhPOfCa" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="6TRSMhPUVZy" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="createDataItem" />
+      <node concept="3Tm1VV" id="6TRSMhPUVZz" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6TRSMhPUVZQ" role="3clF45">
+        <ref role="ehGHo" to="874t:6LfBX8YiZDo" resolve="DataItem" />
+      </node>
+      <node concept="3clFbS" id="6TRSMhPUVZ_" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6TRSMhPOfC5" role="13h7CW">
+      <node concept="3clFbS" id="6TRSMhPOfC6" role="2VODD2" />
     </node>
   </node>
 </model>
