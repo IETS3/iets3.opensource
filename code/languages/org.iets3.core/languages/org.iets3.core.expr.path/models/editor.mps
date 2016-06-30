@@ -16,12 +16,19 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -33,6 +40,7 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -70,6 +78,20 @@
                     <node concept="pncrf" id="6LLGpXJ52xx" role="2Oq$k0" />
                     <node concept="2qgKlT" id="6LLGpXJ52GC" role="2OqNvi">
                       <ref role="37wK5l" to="1zby:6LLGpXJ4YES" resolve="getPathLabel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="VechU" id="2U5Q01Ug$Ga" role="3F10Kt">
+            <node concept="3ZlJ5R" id="2U5Q01Ug$IE" role="VblUZ">
+              <node concept="3clFbS" id="2U5Q01Ug$IF" role="2VODD2">
+                <node concept="3clFbF" id="2U5Q01UgBBs" role="3cqZAp">
+                  <node concept="2OqwBi" id="2U5Q01UgBEO" role="3clFbG">
+                    <node concept="pncrf" id="2U5Q01UgBBr" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2U5Q01UgBMY" role="2OqNvi">
+                      <ref role="37wK5l" to="1zby:2U5Q01Ug$y6" resolve="getColor" />
                     </node>
                   </node>
                 </node>
