@@ -595,6 +595,7 @@
     <property role="3GE5qa" value="components.ports.data" />
     <property role="TrG5h" value="ConsumesPortCategory" />
     <property role="34LRSv" value="consumes" />
+    <property role="MwhBj" value="${module}/icons/consumesPort.png" />
     <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
     <node concept="1TJgyi" id="mIQkxfrzIk" role="1TKVEl">
       <property role="TrG5h" value="optional" />
@@ -606,6 +607,7 @@
     <property role="3GE5qa" value="components.ports.data" />
     <property role="TrG5h" value="ProducesPortCategory" />
     <property role="34LRSv" value="produces" />
+    <property role="MwhBj" value="${module}/icons/producesPort.png" />
     <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
   </node>
   <node concept="1TIwiD" id="cJpacq1tb1">
