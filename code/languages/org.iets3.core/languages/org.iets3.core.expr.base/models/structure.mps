@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
@@ -426,6 +427,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="UN2ftLSIrE" resolve="WithSomeExpression" />
     </node>
+    <node concept="PrWs8" id="6XENO0HbV5" role="PzmwI">
+      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
+    </node>
+    <node concept="PrWs8" id="6XENO0HiDh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEjcg">
     <property role="1pbfSe" value="1134437816" />
@@ -459,6 +466,20 @@
     <property role="TrG5h" value="LogicalIffExpression" />
     <property role="34LRSv" value="&lt;=&gt;" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+  </node>
+  <node concept="PlHQZ" id="6XENO0rLj7">
+    <property role="1pbfSe" value="36487172" />
+    <property role="TrG5h" value="IIsSingleSymbol" />
+  </node>
+  <node concept="1TIwiD" id="6XENO0ys2n">
+    <property role="1pbfSe" value="38235092" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="SomeValueTarget" />
+    <property role="34LRSv" value="value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6XENO0ys2o" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
   </node>
 </model>
 
