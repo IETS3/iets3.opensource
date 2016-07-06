@@ -2206,12 +2206,12 @@
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -4105,6 +4105,11 @@
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-math3-3.3.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-primitives-1.0.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-csv-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" />
@@ -4155,6 +4160,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
@@ -4206,6 +4212,11 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.glossary" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-math3-3.3.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-primitives-1.0.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-csv-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" />
@@ -4256,6 +4267,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
