@@ -169,6 +169,9 @@
     <node concept="PrWs8" id="1k3knzd5BTM" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="4r4cpWQN4NT" role="PzmwI">
+      <ref role="PrY4T" node="6o3TlxuctuA" resolve="IAnimatable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yivpj">
     <property role="1pbfSe" value="1432775131" />
@@ -923,6 +926,11 @@
     <property role="1pbfSe" value="464986865" />
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IComponentCreator" />
+  </node>
+  <node concept="PlHQZ" id="6o3TlxuctuA">
+    <property role="1pbfSe" value="1003111170" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatable" />
   </node>
 </model>
 

@@ -2206,16 +2206,16 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
-    <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
+    <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -2225,7 +2225,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.sandbox.core.expr.os, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.java.modules.cycle.1, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.functional.runtime, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport.plugin, java.compile.java.modules.cycle.2, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.java.modules.cycle.3, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.analysis.modelchecksupport.plugin, java.compile.java.modules.cycle.4, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.core.build, java.compile.org.iets3.tools.z3.build" />
+  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.java.modules.cycle.1, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.sandbox.core.expr.os, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.java.modules.cycle.2, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.functional.runtime, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport.plugin, java.compile.java.modules.cycle.3, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.java.modules.cycle.4, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.analysis.modelchecksupport.plugin, java.compile.java.modules.cycle.5, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.core.build, java.compile.org.iets3.tools.z3.build" />
   
   <target name="processResources" />
   
@@ -2774,7 +2774,73 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.collections" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.lang.core}/languages/org.iets3.core.expr.collections/source_gen" />
+        <path location="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${iets3.lang.core}/languages/org.iets3.core.expr.collections/lib/pcollections/pcollections-28apr2016.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.org.iets3.core.expr.collections" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.collections/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.collections" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.collections" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -2797,7 +2863,6 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
-        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.core.expr.collections/lib/pcollections/pcollections-28apr2016.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -2833,6 +2898,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.collections">
@@ -2971,7 +3037,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.lambda" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.lambda" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.lambda/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.lambda" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -2994,6 +3060,7 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <fileset file="${iets3.lang.core}/languages/org.iets3.core.expr.collections/lib/pcollections/pcollections-28apr2016.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -3031,6 +3098,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.lambda">
@@ -4103,9 +4171,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.org.iets3.analysis.modelchecksupport.runtime, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.2" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.org.iets3.analysis.modelchecksupport.runtime, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.2" />
+    <javac destdir="${build.tmp}/java.modules.cycle.2" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
@@ -4199,7 +4267,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.components.functional" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.org.iets3.components.functional" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional" />
     <javac destdir="${build.tmp}/java/out/org.iets3.components.functional" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -4290,7 +4358,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.components.functional">
@@ -4375,7 +4443,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.components.functional.runtime" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.org.iets3.components.functional.runtime" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.components.functional.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.components.functional.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -4439,7 +4507,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.components.functional.runtime">
@@ -5163,9 +5231,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.2" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.2" />
-    <javac destdir="${build.tmp}/java.modules.cycle.2" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.3" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.3" />
+    <javac destdir="${build.tmp}/java.modules.cycle.3" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
@@ -5234,7 +5302,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.3, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5298,7 +5366,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
+        <pathelement path="${build.tmp}/java.modules.cycle.3" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport">
@@ -5368,7 +5436,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.runtime" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.2, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.runtime" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.3, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5429,7 +5497,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.2" />
+        <pathelement path="${build.tmp}/java.modules.cycle.3" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime">
@@ -5437,9 +5505,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.3" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.3" />
-    <javac destdir="${build.tmp}/java.modules.cycle.3" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.4" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.4" />
+    <javac destdir="${build.tmp}/java.modules.cycle.4" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
@@ -5510,7 +5578,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.temporal" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.3, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.temporal" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5573,7 +5641,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.3" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal">
@@ -5655,7 +5723,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.temporal.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.3, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.temporal.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.temporal.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5721,7 +5789,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.3" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime">
@@ -5729,7 +5797,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport.plugin" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport.plugin" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.modelchecksupport.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.plugin" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.plugin" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5754,16 +5822,18 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
-        <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.core" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.functional" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.functional.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
-        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
-        <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -5803,9 +5873,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.4" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.4" />
-    <javac destdir="${build.tmp}/java.modules.cycle.4" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.5" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.5" />
+    <javac destdir="${build.tmp}/java.modules.cycle.5" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
@@ -5824,6 +5894,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -5835,6 +5906,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
@@ -5865,24 +5937,20 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-math3-3.3.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-primitives-1.0.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-csv-1.0.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.core" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5907,8 +5975,11 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.core" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
@@ -5921,6 +5992,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
@@ -5951,7 +6023,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.4" />
+        <pathelement path="${build.tmp}/java.modules.cycle.5" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport">
@@ -5959,7 +6031,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482" depends="java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport#5802976567601750482" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport#5802976567601750482" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5985,8 +6057,11 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.core" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -5999,6 +6074,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
@@ -6032,7 +6108,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.modelchecksupport.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6057,16 +6133,14 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
         <pathelement path="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.components.core" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <fileset file="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/lib/modelchecker.jar" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/jars/opencsv-2.1-1.0.0.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-math3-3.3.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-primitives-1.0.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/lib/commons-csv-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -6076,6 +6150,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
@@ -6097,8 +6172,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.4" />
+        <pathelement path="${build.tmp}/java.modules.cycle.5" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime">
