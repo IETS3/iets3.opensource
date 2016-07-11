@@ -38,8 +38,8 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tc27" ref="r:92d28f3c-6acc-431a-94ba-30cd184d2da4(de.itemis.mps.editor.diagram.runtime.substitute)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
   </imports>
@@ -554,9 +554,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
-        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
-      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -4075,9 +4073,7 @@
                           <node concept="3cpWs8" id="iZR4$vQ8yj" role="3cqZAp">
                             <node concept="3cpWsn" id="iZR4$vQ8yk" role="3cpWs9">
                               <property role="TrG5h" value="componentConcept" />
-                              <node concept="3bZ5Sz" id="iZR4$vQ8xz" role="1tU5fm">
-                                <ref role="3bZ5Sy" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                              </node>
+                              <node concept="3bZ5Sz" id="iZR4$vQ8xz" role="1tU5fm" />
                               <node concept="2OqwBi" id="iZR4$vQ8yl" role="33vP2m">
                                 <node concept="2OqwBi" id="iZR4$vQ8ym" role="2Oq$k0">
                                   <node concept="37vLTw" id="iZR4$vQ8yn" role="2Oq$k0">
@@ -4141,24 +4137,27 @@
                               <node concept="3Tqbb2" id="6TRSMhPHlZw" role="1tU5fm">
                                 <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
                               </node>
-                              <node concept="2YIFZM" id="iZR4$vQazE" role="33vP2m">
-                                <ref role="37wK5l" to="zce0:~NodeFactoryManager.createNode(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SModel):org.jetbrains.mps.openapi.model.SNode" resolve="createNode" />
-                                <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
-                                <node concept="37vLTw" id="iZR4$vQboO" role="37wK5m">
-                                  <ref role="3cqZAo" node="iZR4$vQ8yk" resolve="componentConcept" />
-                                </node>
-                                <node concept="10Nm6u" id="iZR4$vQbPf" role="37wK5m" />
-                                <node concept="2OqwBi" id="iZR4$vQdqK" role="37wK5m">
-                                  <node concept="37vLTw" id="iZR4$vQcUv" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="iZR4$vQHGn" resolve="existingComponent" />
+                              <node concept="1PxgMI" id="3sKE3ts86oW" role="33vP2m">
+                                <ref role="1PxNhF" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                                <node concept="2YIFZM" id="iZR4$vQazE" role="1PxMeX">
+                                  <ref role="37wK5l" to="zce0:~NodeFactoryManager.createNode(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SModel):org.jetbrains.mps.openapi.model.SNode" resolve="createNode" />
+                                  <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
+                                  <node concept="37vLTw" id="iZR4$vQboO" role="37wK5m">
+                                    <ref role="3cqZAo" node="iZR4$vQ8yk" resolve="componentConcept" />
                                   </node>
-                                  <node concept="1mfA1w" id="iZR4$vQdQp" role="2OqNvi" />
-                                </node>
-                                <node concept="2OqwBi" id="iZR4$vQfe6" role="37wK5m">
-                                  <node concept="37vLTw" id="iZR4$vQeGJ" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="iZR4$vQHGn" resolve="existingComponent" />
+                                  <node concept="10Nm6u" id="iZR4$vQbPf" role="37wK5m" />
+                                  <node concept="2OqwBi" id="iZR4$vQdqK" role="37wK5m">
+                                    <node concept="37vLTw" id="iZR4$vQcUv" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="iZR4$vQHGn" resolve="existingComponent" />
+                                    </node>
+                                    <node concept="1mfA1w" id="iZR4$vQdQp" role="2OqNvi" />
                                   </node>
-                                  <node concept="I4A8Y" id="iZR4$vQfE3" role="2OqNvi" />
+                                  <node concept="2OqwBi" id="iZR4$vQfe6" role="37wK5m">
+                                    <node concept="37vLTw" id="iZR4$vQeGJ" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="iZR4$vQHGn" resolve="existingComponent" />
+                                    </node>
+                                    <node concept="I4A8Y" id="iZR4$vQfE3" role="2OqNvi" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
