@@ -588,6 +588,7 @@
     <property role="TrG5h" value="DataPortCategory" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="MwhBj" value="${module}/icons/dataPort.png" />
     <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="mIQkxfpv9A">
@@ -668,6 +669,7 @@
     <property role="TrG5h" value="ServicePortCategory" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="MwhBj" value="${module}/icons/servicePort.png" />
     <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
   </node>
   <node concept="1TIwiD" id="mIQkxfKjkw">
@@ -675,6 +677,7 @@
     <property role="3GE5qa" value="components.ports.service" />
     <property role="TrG5h" value="ProvidesPortCategory" />
     <property role="34LRSv" value="provides" />
+    <property role="MwhBj" value="${module}/icons/providesPort.png" />
     <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
   </node>
   <node concept="1TIwiD" id="mIQkxfKjnz">
@@ -682,6 +685,7 @@
     <property role="3GE5qa" value="components.ports.service" />
     <property role="TrG5h" value="UsesPortCategory" />
     <property role="34LRSv" value="uses" />
+    <property role="MwhBj" value="${module}/icons/usesPort.png" />
     <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
     <node concept="1TJgyi" id="mIQkxfKjuV" role="1TKVEl">
       <property role="TrG5h" value="optional" />
