@@ -932,5 +932,10 @@
     <property role="3GE5qa" value="analysis.animator" />
     <property role="TrG5h" value="IAnimatable" />
   </node>
+  <node concept="PlHQZ" id="1Zi765Epcf">
+    <property role="1pbfSe" value="2044142720" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatableElement" />
+  </node>
 </model>
 
