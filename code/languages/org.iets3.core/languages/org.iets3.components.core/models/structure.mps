@@ -923,10 +923,5 @@
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IComponentExtender" />
   </node>
-  <node concept="PlHQZ" id="6TRSMhPOfBF">
-    <property role="1pbfSe" value="464986865" />
-    <property role="3GE5qa" value="components" />
-    <property role="TrG5h" value="IComponentCreator" />
-  </node>
 </model>
 
