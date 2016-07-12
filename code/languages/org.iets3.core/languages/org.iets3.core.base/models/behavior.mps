@@ -477,6 +477,20 @@
                   <property role="3SKdUp" value="happens after classes are reloaded" />
                 </node>
               </node>
+              <node concept="3clFbF" id="6P_KyRojSfE" role="3cqZAp">
+                <node concept="2OqwBi" id="6P_KyRojSfB" role="3clFbG">
+                  <node concept="10M0yZ" id="6P_KyRojSfC" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="6P_KyRojSfD" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
+                    <node concept="37vLTw" id="6P_KyRojSjW" role="37wK5m">
+                      <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1t8sHJlEcSC" role="3cqZAp">
                 <node concept="BsUDl" id="1t8sHJlEcSA" role="3clFbG">
                   <ref role="37wK5l" node="3R3AIvuq5Dp" resolve="storeLastResult" />

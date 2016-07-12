@@ -965,7 +965,7 @@
         <ref role="1NtTu8" to="hm2y:UN2ftLSItR" />
       </node>
       <node concept="3F0ifn" id="UN2ftLSIvT" role="3EZMnx">
-        <property role="3F0ifm" value="none" />
+        <property role="3F0ifm" value="else" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F1sOY" id="UN2ftLSIwb" role="3EZMnx">
@@ -987,6 +987,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6XENO0yCjZ">
+    <property role="3GE5qa" value="option" />
+    <ref role="1XX52x" to="hm2y:6XENO0ys2n" resolve="SomeValueTarget" />
+    <node concept="3F0ifn" id="6XENO0yCk1" role="2wV5jI">
+      <property role="3F0ifm" value="value" />
     </node>
   </node>
 </model>
