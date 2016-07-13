@@ -2,7 +2,7 @@
 <model ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -168,6 +168,9 @@
     </node>
     <node concept="PrWs8" id="1k3knzd5BTM" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="4r4cpWQN4NT" role="PzmwI">
+      <ref role="PrY4T" node="6o3TlxuctuA" resolve="IAnimatable" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yivpj">
@@ -922,6 +925,16 @@
     <property role="1pbfSe" value="1080026401" />
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IComponentExtender" />
+  </node>
+  <node concept="PlHQZ" id="1Zi765Epcf">
+    <property role="1pbfSe" value="2044142720" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatableElement" />
+  </node>
+  <node concept="PlHQZ" id="6o3TlxuctuA">
+    <property role="1pbfSe" value="1003111170" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatable" />
   </node>
 </model>
 
