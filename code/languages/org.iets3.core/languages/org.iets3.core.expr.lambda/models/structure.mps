@@ -230,6 +230,9 @@
     <node concept="PrWs8" id="22hm_0zvyXw" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
+    <node concept="PrWs8" id="gLftEcmb0$" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6XENO0rLj7" resolve="IIsSingleSymbol" />
+    </node>
   </node>
   <node concept="PlHQZ" id="49WTic8gvys">
     <property role="1pbfSe" value="1254022591" />
