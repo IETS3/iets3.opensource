@@ -160,14 +160,14 @@
                 <node concept="21POm0" id="49WTic8hx0J" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="49WTic8hx5b" role="2OqNvi">
                   <node concept="1xMEDy" id="49WTic8hx5d" role="1xVPHs">
-                    <node concept="chp4Y" id="49WTic8hx6S" role="ri$Ld">
-                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
+                    <node concept="chp4Y" id="55n4KvA21Em" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3Tsc0h" id="49WTic8hxh7" role="2OqNvi">
-                <ref role="3TtcxE" to="2qy0:49WTic8feOi" />
+              <node concept="2qgKlT" id="55n4KvA21Uj" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:2uR5X5ayxoJ" resolve="visibleFunctions" />
               </node>
             </node>
           </node>
