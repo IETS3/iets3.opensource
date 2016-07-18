@@ -759,6 +759,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="kYh4fkl663" role="PzmwI">
+      <ref role="PrY4T" node="1Zi765Epcf" resolve="IAnimatableElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2Q7cX_iyKre">
     <property role="1pbfSe" value="2146288985" />
@@ -897,6 +900,9 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7kdj6EM27c1" resolve="Variable" />
+    </node>
+    <node concept="PrWs8" id="kYh4fk$jxE" role="PzmwI">
+      <ref role="PrY4T" node="1Zi765Epcf" resolve="IAnimatableElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kdj6EM27c1">
