@@ -132,6 +132,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -501,6 +504,37 @@
             <node concept="1mIQ4w" id="gLftEcn7sq" role="2OqNvi">
               <node concept="chp4Y" id="gLftEcn7uG" role="cj9EA">
                 <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1Ez$z58T088">
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="simplify" />
+    <ref role="2ZfgGC" to="hm2y:1Ez$z58OXsS" resolve="AttemptJoinType" />
+    <node concept="2S6ZIM" id="1Ez$z58T089" role="2ZfVej">
+      <node concept="3clFbS" id="1Ez$z58T08a" role="2VODD2">
+        <node concept="3clFbF" id="1Ez$z58T08Z" role="3cqZAp">
+          <node concept="Xl_RD" id="1Ez$z58T08Y" role="3clFbG">
+            <property role="Xl_RC" value="Simplify" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Ez$z58T08b" role="2ZfgGD">
+      <node concept="3clFbS" id="1Ez$z58T08c" role="2VODD2">
+        <node concept="3clFbF" id="1Ez$z58T0eD" role="3cqZAp">
+          <node concept="2OqwBi" id="1Ez$z58T0h1" role="3clFbG">
+            <node concept="2Sf5sV" id="1Ez$z58T0eC" role="2Oq$k0" />
+            <node concept="1P9Npp" id="1Ez$z58T0mS" role="2OqNvi">
+              <node concept="2OqwBi" id="1Ez$z58T0pY" role="1P9ThW">
+                <node concept="2Sf5sV" id="1Ez$z58T0ng" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1Ez$z58T0w4" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:1Ez$z58QRJw" resolve="buildSupertype" />
+                </node>
               </node>
             </node>
           </node>

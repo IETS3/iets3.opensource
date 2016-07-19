@@ -9,6 +9,7 @@
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -476,6 +477,119 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6XENO0ys2o" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58DYVm">
+    <property role="1pbfSe" value="1665892615" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="ErrorLiteral" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1Ez$z58DYVn" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58Hu7K">
+    <property role="1pbfSe" value="1666806817" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="ErrorExpression" />
+    <property role="34LRSv" value="error" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1Ez$z58Hu7L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="error" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58JHsy">
+    <property role="1pbfSe" value="1667393875" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="SuccessExpression" />
+    <property role="34LRSv" value="success" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1Ez$z58JHsz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58L7Ek">
+    <property role="1pbfSe" value="1667763397" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="SuccessType" />
+    <property role="34LRSv" value="success" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="1Ez$z58L7El" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="1Ez$z58LP6j" role="PzmwI">
+      <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58L7Jd">
+    <property role="1pbfSe" value="1667763710" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="GenericErrorType" />
+    <property role="34LRSv" value="error" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="1Ez$z58LP6p" role="PzmwI">
+      <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58L7JG">
+    <property role="1pbfSe" value="1667763741" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="SpecificErrorType" />
+    <property role="34LRSv" value="error[" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="1Ez$z58L7JH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="error" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+    </node>
+    <node concept="PrWs8" id="1Ez$z58LP6m" role="PzmwI">
+      <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1Ez$z58LP6f">
+    <property role="1pbfSe" value="1667949504" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="IAttemptType" />
+  </node>
+  <node concept="1TIwiD" id="1Ez$z58OXsS">
+    <property role="1pbfSe" value="1668770153" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="AttemptJoinType" />
+    <property role="34LRSv" value="attempt-join" />
+    <ref role="1TJDcQ" to="tpd4:hausRW2" resolve="JoinType" />
+  </node>
+  <node concept="1TIwiD" id="5BNZGjBtUbJ">
+    <property role="1pbfSe" value="1097572787" />
+    <property role="TrG5h" value="AttemptType" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="34LRSv" value="attempt" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="5BNZGjBtUbK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="5BNZGjBtUbL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="errorLiterals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+    </node>
+    <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
+      <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
     </node>
   </node>
 </model>
