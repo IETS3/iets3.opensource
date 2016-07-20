@@ -592,5 +592,37 @@
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5BNZGjBvVgC">
+    <property role="1pbfSe" value="1098101484" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="TryExpression" />
+    <property role="34LRSv" value="try" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5BNZGjBvVh4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5BNZGjBxo8e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="success" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5BNZGjBxo6Z" resolve="TrySuccessClause" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5BNZGjBxo6Z">
+    <property role="1pbfSe" value="1098481795" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="TrySuccessClause" />
+    <property role="34LRSv" value="=&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5BNZGjBxo70" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

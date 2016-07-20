@@ -1175,18 +1175,18 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="replaceAttemptType" />
     <node concept="1YaCAy" id="1Ez$z58UvvK" role="35pZ6h">
-      <property role="TrG5h" value="at" />
-      <ref role="1YaFvo" to="hm2y:1Ez$z58DYVi" resolve="AttemptType" />
+      <property role="TrG5h" value="attemptType" />
+      <ref role="1YaFvo" to="hm2y:5BNZGjBtUbJ" resolve="AttemptType" />
     </node>
     <node concept="3clFbS" id="1Ez$z58Uvvr" role="2sgrp5">
       <node concept="1ZobV4" id="1Ez$z58VMM$" role="3cqZAp">
         <node concept="mw_s8" id="1Ez$z58VMNm" role="1ZfhKB">
           <node concept="2OqwBi" id="1Ez$z58VMQi" role="mwGJk">
             <node concept="1YBJjd" id="1Ez$z58VMNk" role="2Oq$k0">
-              <ref role="1YBMHb" node="1Ez$z58UvvK" resolve="at" />
+              <ref role="1YBMHb" node="1Ez$z58UvvK" resolve="attemptType" />
             </node>
-            <node concept="3TrEf2" id="1Ez$z58VMWP" role="2OqNvi">
-              <ref role="3Tt5mk" to="hm2y:1Ez$z58DYVj" />
+            <node concept="3TrEf2" id="5BNZGjBuEl5" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:5BNZGjBtUbK" />
             </node>
           </node>
         </node>
@@ -1216,12 +1216,56 @@
             <node concept="2qgKlT" id="1Ez$z58UxvB" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:1Ez$z58UwIV" resolve="areErrorsTheSame" />
               <node concept="1YBJjd" id="1Ez$z58UxFz" role="37wK5m">
-                <ref role="1YBMHb" node="1Ez$z58UvvK" resolve="at" />
+                <ref role="1YBMHb" node="1Ez$z58UvvK" resolve="attemptType" />
               </node>
             </node>
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="5BNZGjBvVil">
+    <property role="TrG5h" value="check_TryExpression" />
+    <property role="3GE5qa" value="error" />
+    <node concept="3clFbS" id="5BNZGjBvVim" role="18ibNy">
+      <node concept="3clFbJ" id="5BNZGjBvVjm" role="3cqZAp">
+        <node concept="3clFbS" id="5BNZGjBvVjo" role="3clFbx">
+          <node concept="2MkqsV" id="5BNZGjBvZd0" role="3cqZAp">
+            <node concept="Xl_RD" id="5BNZGjBvZdf" role="2MkJ7o">
+              <property role="Xl_RC" value="'try' can only be used with attempt[] types" />
+            </node>
+            <node concept="2OqwBi" id="5BNZGjBvZhS" role="2OEOjV">
+              <node concept="1YBJjd" id="5BNZGjBvZg1" role="2Oq$k0">
+                <ref role="1YBMHb" node="5BNZGjBvVio" resolve="te" />
+              </node>
+              <node concept="3TrEf2" id="5BNZGjBvZnx" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:5BNZGjBvVh4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="5BNZGjBvZc4" role="3clFbw">
+          <node concept="2OqwBi" id="5BNZGjBvZc6" role="3fr31v">
+            <node concept="2OqwBi" id="5BNZGjBvZc7" role="2Oq$k0">
+              <node concept="1YBJjd" id="5BNZGjBvZc8" role="2Oq$k0">
+                <ref role="1YBMHb" node="5BNZGjBvVio" resolve="te" />
+              </node>
+              <node concept="2qgKlT" id="5BNZGjBvZc9" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:5BNZGjBvVRi" resolve="effectiveType" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5BNZGjBvZca" role="2OqNvi">
+              <node concept="chp4Y" id="5BNZGjBvZcb" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:5BNZGjBtUbJ" resolve="AttemptType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5BNZGjBvVio" role="1YuTPh">
+      <property role="TrG5h" value="te" />
+      <ref role="1YaFvo" to="hm2y:5BNZGjBvVgC" resolve="TryExpression" />
     </node>
   </node>
 </model>
