@@ -188,12 +188,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="49WTic8eSD1" resolve="FunctionArgument" />
     </node>
-    <node concept="1TJgyj" id="49WTic8eSDj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
     <node concept="1TJgyj" id="49WTic8eSDm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -205,6 +199,9 @@
     </node>
     <node concept="PrWs8" id="49WTic8f4oE" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1Ga9o" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8eSD1">
@@ -295,6 +292,9 @@
     </node>
     <node concept="PrWs8" id="49WTic8ix6J" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1ELbM" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8iHUx">

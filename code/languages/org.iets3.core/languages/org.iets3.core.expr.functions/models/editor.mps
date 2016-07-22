@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -106,6 +107,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
@@ -198,6 +202,20 @@
           <property role="3F0ifm" value=")" />
           <node concept="11L4FC" id="49WTic8f4yr" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="69zaTr1GaRE" role="3EZMnx">
+        <node concept="3EZMnI" id="69zaTr1GaWu" role="_tjki">
+          <node concept="3F0ifn" id="69zaTr1GaWB" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F1sOY" id="69zaTr1GaWH" role="3EZMnx">
+            <ref role="1NtTu8" to="hm2y:69zaTr1EKHX" />
+          </node>
+          <node concept="2iRfu4" id="69zaTr1GaWx" role="2iSdaV" />
+          <node concept="VPM3Z" id="69zaTr1GaWy" role="3F10Kt">
+            <property role="VOm3f" value="false" />
           </node>
         </node>
       </node>

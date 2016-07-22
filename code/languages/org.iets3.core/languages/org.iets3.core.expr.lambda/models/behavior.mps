@@ -13,7 +13,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -51,6 +51,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -705,6 +706,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="69zaTr1GaKz" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="deriveType" />
+      <ref role="13i0hy" to="pbu6:69zaTr1EKIq" resolve="deriveType" />
+      <node concept="3Tm1VV" id="69zaTr1GaK$" role="1B3o_S" />
+      <node concept="3clFbS" id="69zaTr1GaKB" role="3clF47">
+        <node concept="3clFbF" id="69zaTr1GaMw" role="3cqZAp">
+          <node concept="10Nm6u" id="69zaTr1GaMv" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="69zaTr1GaKC" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="49WTic8fT6Q">
     <property role="3GE5qa" value="function" />
@@ -835,6 +851,21 @@
         </node>
       </node>
       <node concept="10P_77" id="49WTic8iGDq" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="69zaTr1FByd" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="deriveType" />
+      <ref role="13i0hy" to="pbu6:69zaTr1EKIq" resolve="deriveType" />
+      <node concept="3Tm1VV" id="69zaTr1FBye" role="1B3o_S" />
+      <node concept="3clFbS" id="69zaTr1FByh" role="3clF47">
+        <node concept="3clFbF" id="69zaTr1FByI" role="3cqZAp">
+          <node concept="10Nm6u" id="69zaTr1FByH" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="69zaTr1FByi" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8jevh">

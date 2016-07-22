@@ -567,6 +567,9 @@
     <property role="TrG5h" value="AttemptJoinType" />
     <property role="34LRSv" value="attempt-join" />
     <ref role="1TJDcQ" to="tpd4:hausRW2" resolve="JoinType" />
+    <node concept="PrWs8" id="69zaTr1EJnA" role="PzmwI">
+      <ref role="PrY4T" node="69zaTr1EJmZ" resolve="ISimplifiableType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="1pbfSe" value="1097572787" />
@@ -622,6 +625,20 @@
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="69zaTr1EJmZ">
+    <property role="1pbfSe" value="604905813" />
+    <property role="TrG5h" value="ISimplifiableType" />
+  </node>
+  <node concept="PlHQZ" id="69zaTr1EKHW">
+    <property role="1pbfSe" value="604911378" />
+    <property role="TrG5h" value="IOptionallyTyped" />
+    <node concept="1TJgyj" id="69zaTr1EKHX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
 </model>
