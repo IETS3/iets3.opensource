@@ -54,6 +54,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.runtime/org.iets3.analysis.solversupport.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.temporal.runtime/org.iets3.analysis.solversupport.temporal.runtime.msd" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.ui.plugin/org.iets3.analysis.ui.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.functional.runtime/org.iets3.components.functional.runtime.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.runtime/org.iets3.core.units.runtime.msd" folder="units" />
