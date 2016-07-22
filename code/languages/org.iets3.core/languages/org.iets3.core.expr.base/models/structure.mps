@@ -567,7 +567,10 @@
     <property role="TrG5h" value="AttemptJoinType" />
     <property role="34LRSv" value="attempt-join" />
     <ref role="1TJDcQ" to="tpd4:hausRW2" resolve="JoinType" />
-    <node concept="PrWs8" id="69zaTr1EJnA" role="PzmwI">
+    <node concept="PrWs8" id="34FVxARoF_q" role="PzmwI">
+      <ref role="PrY4T" node="34FVxARoFuh" resolve="IAttemptOrJoin" />
+    </node>
+    <node concept="PrWs8" id="34FVxARp26b" role="PzmwI">
       <ref role="PrY4T" node="69zaTr1EJmZ" resolve="ISimplifiableType" />
     </node>
   </node>
@@ -579,20 +582,17 @@
     <property role="3GE5qa" value="error.types" />
     <property role="34LRSv" value="attempt" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="5BNZGjBtUbK" role="1TKVEi">
+    <node concept="1TJgyj" id="34FVxARg57_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="baseType" />
+      <property role="20kJfa" value="joinType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="1TJgyj" id="5BNZGjBtUbL" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="errorLiterals" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+      <ref role="20lvS9" node="1Ez$z58OXsS" resolve="AttemptJoinType" />
     </node>
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+    <node concept="PrWs8" id="34FVxARoKou" role="PzmwI">
+      <ref role="PrY4T" node="34FVxARoFuh" resolve="IAttemptOrJoin" />
     </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBvVgC">
@@ -688,6 +688,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5BNZGjBvVgC" resolve="TryExpression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="34FVxARoFuh">
+    <property role="1pbfSe" value="393304662" />
+    <property role="3GE5qa" value="error.types" />
+    <property role="TrG5h" value="IAttemptOrJoin" />
   </node>
 </model>
 
