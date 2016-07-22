@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.functions/org.iets3.core.expr.functions.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.functions/org.iets3.core.expr.toplevel.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.path/org.iets3.core.expr.path.mpl" folder="expr" />

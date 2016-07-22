@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.functions.behavior)">
+<model ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
@@ -7,8 +7,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.functions.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -216,6 +217,30 @@
         </node>
       </node>
       <node concept="17QB3L" id="2uR5X5a$3mu" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="69zaTr1KhaJ">
+    <ref role="13h7C2" to="yv47:69zaTr1HgRc" resolve="Constant" />
+    <node concept="13hLZK" id="69zaTr1KhaK" role="13h7CW">
+      <node concept="3clFbS" id="69zaTr1KhaL" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="69zaTr1N3Q9">
+    <ref role="13h7C2" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
+    <node concept="13i0hz" id="69zaTr1N3Qc" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="visibleConstants" />
+      <node concept="3Tm1VV" id="69zaTr1N3Qd" role="1B3o_S" />
+      <node concept="A3Dl8" id="69zaTr1N3Qe" role="3clF45">
+        <node concept="3Tqbb2" id="69zaTr1N3Qf" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:69zaTr1HgRc" resolve="Constant" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="69zaTr1N3Qg" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="69zaTr1N3Qa" role="13h7CW">
+      <node concept="3clFbS" id="69zaTr1N3Qb" role="2VODD2" />
     </node>
   </node>
 </model>

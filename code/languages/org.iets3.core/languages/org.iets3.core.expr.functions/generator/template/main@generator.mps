@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7fe80431-29af-4716-afc5-4020ec790963(org.iets3.core.expr.functions.generator.template.main@generator)">
+<model ref="r:7fe80431-29af-4716-afc5-4020ec790963(org.iets3.core.expr.toplevel.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />

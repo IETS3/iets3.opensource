@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.functions.structure)">
+<model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
@@ -58,7 +58,7 @@
       <ref role="PrY4T" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
     <node concept="PrWs8" id="2uR5X5ayM8b" role="PzmwI">
-      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprStuff" />
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
@@ -84,7 +84,7 @@
   </node>
   <node concept="PlHQZ" id="2uR5X5ayM7T">
     <property role="1pbfSe" value="1916942794" />
-    <property role="TrG5h" value="IToplevelExprStuff" />
+    <property role="TrG5h" value="IToplevelExprContent" />
     <node concept="PrWs8" id="2uR5X5ayM8K" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -108,6 +108,28 @@
     <node concept="PrWs8" id="2uR5X5azSbo" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="69zaTr1HgRc">
+    <property role="1pbfSe" value="605567330" />
+    <property role="TrG5h" value="Constant" />
+    <property role="34LRSv" value="const" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69zaTr1HgRN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1HgRE" role="PzmwI">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1HgRJ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="69zaTr1N3PK">
+    <property role="1pbfSe" value="607086854" />
+    <property role="TrG5h" value="IConstantScopeProvider" />
   </node>
 </model>
 

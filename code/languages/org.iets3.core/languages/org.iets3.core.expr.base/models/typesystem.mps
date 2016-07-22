@@ -9,13 +9,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1266,6 +1264,33 @@
     <node concept="1YaCAy" id="5BNZGjBvVio" role="1YuTPh">
       <property role="TrG5h" value="te" />
       <ref role="1YaFvo" to="hm2y:5BNZGjBvVgC" resolve="TryExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="69zaTr1POgH">
+    <property role="TrG5h" value="typeof_EmptyExpression" />
+    <node concept="3clFbS" id="69zaTr1POgI" role="18ibNy">
+      <node concept="1Z5TYs" id="69zaTr1POjd" role="3cqZAp">
+        <node concept="mw_s8" id="69zaTr1POjx" role="1ZfhKB">
+          <node concept="2ShNRf" id="69zaTr1POjt" role="mwGJk">
+            <node concept="3zrR0B" id="69zaTr1POpK" role="2ShVmc">
+              <node concept="3Tqbb2" id="69zaTr1POpM" role="3zrR0E">
+                <ref role="ehGHo" to="tpee:fzcqZ_H" resolve="VoidType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="69zaTr1POjg" role="1ZfhK$">
+          <node concept="1Z2H0r" id="69zaTr1POgO" role="mwGJk">
+            <node concept="1YBJjd" id="69zaTr1POhg" role="1Z2MuG">
+              <ref role="1YBMHb" node="69zaTr1POgK" resolve="emptyExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="69zaTr1POgK" role="1YuTPh">
+      <property role="TrG5h" value="emptyExpression" />
+      <ref role="1YaFvo" to="hm2y:69zaTr1POec" resolve="EmptyExpression" />
     </node>
   </node>
 </model>
