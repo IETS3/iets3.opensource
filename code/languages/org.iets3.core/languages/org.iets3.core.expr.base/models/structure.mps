@@ -8,7 +8,6 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -561,19 +560,6 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="IAttemptType" />
   </node>
-  <node concept="1TIwiD" id="1Ez$z58OXsS">
-    <property role="1pbfSe" value="1668770153" />
-    <property role="3GE5qa" value="error.types" />
-    <property role="TrG5h" value="AttemptJoinType" />
-    <property role="34LRSv" value="attempt-join" />
-    <ref role="1TJDcQ" to="tpd4:hausRW2" resolve="JoinType" />
-    <node concept="PrWs8" id="34FVxARoF_q" role="PzmwI">
-      <ref role="PrY4T" node="34FVxARoFuh" resolve="IAttemptOrJoin" />
-    </node>
-    <node concept="PrWs8" id="34FVxARp26b" role="PzmwI">
-      <ref role="PrY4T" node="69zaTr1EJmZ" resolve="ISimplifiableType" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="1pbfSe" value="1097572787" />
     <property role="TrG5h" value="AttemptType" />
@@ -582,17 +568,20 @@
     <property role="3GE5qa" value="error.types" />
     <property role="34LRSv" value="attempt" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
-    <node concept="1TJgyj" id="34FVxARg57_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="joinType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1Ez$z58OXsS" resolve="AttemptJoinType" />
-    </node>
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
     </node>
-    <node concept="PrWs8" id="34FVxARoKou" role="PzmwI">
-      <ref role="PrY4T" node="34FVxARoFuh" resolve="IAttemptOrJoin" />
+    <node concept="1TJgyj" id="12WRc28Xz6j" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="successType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="12WRc28Xz6l" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="errorLiterals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBvVgC">
@@ -622,6 +611,9 @@
     <node concept="PrWs8" id="69zaTr1Xu7w" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
+    <node concept="PrWs8" id="12WRc291A_J" role="PzmwI">
+      <ref role="PrY4T" node="12WRc28VYGq" resolve="ITypeFromMultiple" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBxo6Z">
     <property role="1pbfSe" value="1098481795" />
@@ -635,10 +627,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="69zaTr1EJmZ">
-    <property role="1pbfSe" value="604905813" />
-    <property role="TrG5h" value="ISimplifiableType" />
   </node>
   <node concept="PlHQZ" id="69zaTr1EKHW">
     <property role="1pbfSe" value="604911378" />
@@ -689,10 +677,9 @@
       <ref role="20lvS9" node="5BNZGjBvVgC" resolve="TryExpression" />
     </node>
   </node>
-  <node concept="PlHQZ" id="34FVxARoFuh">
-    <property role="1pbfSe" value="393304662" />
-    <property role="3GE5qa" value="error.types" />
-    <property role="TrG5h" value="IAttemptOrJoin" />
+  <node concept="PlHQZ" id="12WRc28VYGq">
+    <property role="1pbfSe" value="1716729894" />
+    <property role="TrG5h" value="ITypeFromMultiple" />
   </node>
 </model>
 
