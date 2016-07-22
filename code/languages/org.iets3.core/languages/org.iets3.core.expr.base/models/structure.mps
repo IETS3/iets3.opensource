@@ -609,9 +609,18 @@
     </node>
     <node concept="1TJgyj" id="5BNZGjBxo8e" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="success" />
+      <property role="20kJfa" value="successClause" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5BNZGjBxo6Z" resolve="TrySuccessClause" />
+    </node>
+    <node concept="1TJgyj" id="69zaTr1V8r3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="errorClauses" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="69zaTr1V8fb" resolve="TryErrorClause" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1Xu7w" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBxo6Z">
@@ -647,6 +656,37 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="69zaTr1POeJ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69zaTr1V8fb">
+    <property role="1pbfSe" value="609202017" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="TryErrorClause" />
+    <property role="34LRSv" value="error" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69zaTr1V8fI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="69zaTr1Z623" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="errorLiteral" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69zaTr1Yk3m">
+    <property role="1pbfSe" value="610036844" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="SuccessValueExpr" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="69zaTr1Yk3n" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="try" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5BNZGjBvVgC" resolve="TryExpression" />
     </node>
   </node>
 </model>
