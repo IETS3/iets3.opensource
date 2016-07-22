@@ -154,6 +154,7 @@
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -2248,7 +2249,7 @@
     <node concept="2YIFZL" id="12WRc293zuo" role="jymVt">
       <property role="TrG5h" value="computeSupertype" />
       <node concept="3Tqbb2" id="12WRc293zyI" role="3clF45" />
-      <node concept="3Tm1VV" id="12WRc293zur" role="1B3o_S" />
+      <node concept="3Tm6S6" id="12WRc297mdy" role="1B3o_S" />
       <node concept="3clFbS" id="12WRc293zus" role="3clF47">
         <node concept="3cpWs8" id="12WRc293zz_" role="3cqZAp">
           <node concept="3cpWsn" id="12WRc293zzA" role="3cpWs9">
