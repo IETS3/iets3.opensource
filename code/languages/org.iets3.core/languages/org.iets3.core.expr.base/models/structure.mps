@@ -684,5 +684,22 @@
     <property role="1pbfSe" value="1716729894" />
     <property role="TrG5h" value="ITypeFromMultiple" />
   </node>
+  <node concept="1TIwiD" id="2Qbt$1tNGy4">
+    <property role="1pbfSe" value="1957019964" />
+    <property role="TrG5h" value="TypeCheckAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="2Qbt$1tNGy9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expectedType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="M6xJ_" id="2Qbt$1tNGy5" role="lGtFl">
+      <property role="Hh88m" value="typecheck" />
+      <node concept="trNpa" id="2Qbt$1tNGy7" role="EQaZv">
+        <ref role="trN6q" node="6sdnDbSla17" resolve="Expression" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -98,6 +98,8 @@
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" fqName="com.mbeddr.mpsutil.intentions" version="0" />
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" fqName="com.mbeddr.mpsutil.interpreter" version="0" />
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" fqName="de.itemis.mps.editor.celllayout" version="0" />
+    <language id="766348f7-6a67-4b85-9323-384840132299" fqName="de.itemis.mps.editor.math" version="0" />
+    <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" fqName="de.itemis.mps.editor.math.notations" version="0" />
     <language id="a0ab8c10-c118-4755-ba27-3853435cf524" fqName="de.itemis.mps.tooltips" version="0" />
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />

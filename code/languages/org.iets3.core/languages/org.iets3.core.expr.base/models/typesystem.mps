@@ -19,6 +19,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -265,6 +266,7 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -2370,6 +2372,93 @@
     <node concept="2tJIrI" id="12WRc28WG_D" role="jymVt" />
     <node concept="2tJIrI" id="12WRc28WG_H" role="jymVt" />
     <node concept="3Tm1VV" id="12WRc28WG_n" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="2Qbt$1tQLw$">
+    <property role="TrG5h" value="check_TypeCheckAnnotation" />
+    <node concept="3clFbS" id="2Qbt$1tQLw_" role="18ibNy">
+      <node concept="3cpWs8" id="2Qbt$1tQM6l" role="3cqZAp">
+        <node concept="3cpWsn" id="2Qbt$1tQM6m" role="3cpWs9">
+          <property role="TrG5h" value="actualType" />
+          <node concept="3Tqbb2" id="2Qbt$1tQM6j" role="1tU5fm" />
+          <node concept="2OqwBi" id="2Qbt$1tQSvW" role="33vP2m">
+            <node concept="2OqwBi" id="2Qbt$1tQM6n" role="2Oq$k0">
+              <node concept="1YBJjd" id="2Qbt$1tQM6o" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Qbt$1tQLwB" resolve="tca" />
+              </node>
+              <node concept="1mfA1w" id="2Qbt$1tQM6p" role="2OqNvi" />
+            </node>
+            <node concept="3JvlWi" id="2Qbt$1tQS_g" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="2Qbt$1tQM7u" role="3cqZAp">
+        <node concept="3cpWsn" id="2Qbt$1tQM7v" role="3cpWs9">
+          <property role="TrG5h" value="expectedType" />
+          <node concept="3Tqbb2" id="2Qbt$1tQM7w" role="1tU5fm" />
+          <node concept="2OqwBi" id="2Qbt$1tQMjH" role="33vP2m">
+            <node concept="2OqwBi" id="2Qbt$1tQM7x" role="2Oq$k0">
+              <node concept="1YBJjd" id="2Qbt$1tQM7y" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Qbt$1tQLwB" resolve="tca" />
+              </node>
+              <node concept="3TrEf2" id="2Qbt$1tQMcU" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:2Qbt$1tNGy9" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="2Qbt$1tQMo$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2Qbt$1tQMtW" role="3cqZAp">
+        <node concept="3clFbS" id="2Qbt$1tQMuc" role="3clFbx">
+          <node concept="2MkqsV" id="2Qbt$1tQMy4" role="3cqZAp">
+            <node concept="3cpWs3" id="2Qbt$1tQM_I" role="2MkJ7o">
+              <node concept="2OqwBi" id="2Qbt$1tQMBw" role="3uHU7w">
+                <node concept="37vLTw" id="2Qbt$1tQMA0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2Qbt$1tQM6m" resolve="actualType" />
+                </node>
+                <node concept="2qgKlT" id="2Qbt$1tQMEJ" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2Qbt$1tQMyg" role="3uHU7B">
+                <property role="Xl_RC" value="type constraint failed; actual type is " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2Qbt$1tQMJl" role="2OEOjV">
+              <node concept="1YBJjd" id="2Qbt$1tQMG0" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Qbt$1tQLwB" resolve="tca" />
+              </node>
+              <node concept="3TrEf2" id="2Qbt$1tQMVo" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:2Qbt$1tNGy9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="2Qbt$1tQMwW" role="3clFbw">
+          <node concept="2OqwBi" id="2Qbt$1tQMwY" role="3fr31v">
+            <node concept="2OqwBi" id="2Qbt$1tQMwZ" role="2Oq$k0">
+              <node concept="2QUAEa" id="2Qbt$1tQMx0" role="2Oq$k0" />
+              <node concept="liA8E" id="2Qbt$1tQMx1" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2Qbt$1tQMx2" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="2Qbt$1tQMx3" role="37wK5m">
+                <ref role="3cqZAo" node="2Qbt$1tQM6m" resolve="actualType" />
+              </node>
+              <node concept="37vLTw" id="2Qbt$1tQMx4" role="37wK5m">
+                <ref role="3cqZAo" node="2Qbt$1tQM7v" resolve="expectedType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Qbt$1tQLwB" role="1YuTPh">
+      <property role="TrG5h" value="tca" />
+      <ref role="1YaFvo" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckAnnotation" />
+    </node>
   </node>
 </model>
 
