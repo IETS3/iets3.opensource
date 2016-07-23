@@ -73,6 +73,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -169,6 +170,7 @@
         </node>
         <node concept="3F0A7n" id="49WTic8f4tF" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
           <node concept="Vb9p2" id="2uR5X5b1JP3" role="3F10Kt">
             <property role="Vbekb" value="QUERY" />
             <node concept="17KAyr" id="2uR5X5b1JP6" role="17MNgL">
@@ -182,9 +184,15 @@
                   </node>
                   <node concept="3clFbS" id="2uR5X5b1JRP" role="3clFbx">
                     <node concept="3cpWs6" id="2uR5X5b1Kt9" role="3cqZAp">
-                      <node concept="10M0yZ" id="2uR5X5b2ntE" role="3cqZAk">
-                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                        <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
+                      <node concept="pVOtf" id="ub9nkyQIFx" role="3cqZAk">
+                        <node concept="10M0yZ" id="ub9nkyQIJN" role="3uHU7w">
+                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
+                        </node>
+                        <node concept="10M0yZ" id="2uR5X5b2ntE" role="3uHU7B">
+                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -192,7 +200,7 @@
                 <node concept="3clFbF" id="2uR5X5b2FVf" role="3cqZAp">
                   <node concept="10M0yZ" id="2uR5X5b2FVe" role="3clFbG">
                     <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                    <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                    <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
                   </node>
                 </node>
               </node>
@@ -305,6 +313,7 @@
             <node concept="3F0A7n" id="49WTic8haCP" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
             </node>
           </node>
         </node>
@@ -435,6 +444,7 @@
       </node>
       <node concept="3F0A7n" id="69zaTr1HgS_" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
       </node>
       <node concept="_tjkj" id="69zaTr1HgSH" role="3EZMnx">
         <node concept="3EZMnI" id="69zaTr1HgSP" role="_tjki">

@@ -64,7 +64,7 @@
   <node concept="1TIwiD" id="ub9nkyHAb7">
     <property role="1pbfSe" value="708937788" />
     <property role="TrG5h" value="TestCase" />
-    <property role="34LRSv" value="testcase" />
+    <property role="34LRSv" value="test case" />
     <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ub9nkyHAcK" role="1TKVEi">

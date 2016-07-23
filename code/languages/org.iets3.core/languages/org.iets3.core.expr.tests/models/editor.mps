@@ -209,7 +209,7 @@
       <node concept="3EZMnI" id="ub9nkyHAdf" role="3EZMnx">
         <node concept="2iRfu4" id="ub9nkyHAdg" role="2iSdaV" />
         <node concept="3F0ifn" id="ub9nkyHAdc" role="3EZMnx">
-          <property role="3F0ifm" value="testcase" />
+          <property role="3F0ifm" value="test case" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="ub9nkyHAdo" role="3EZMnx">
@@ -445,6 +445,7 @@
         </node>
         <node concept="3F0A7n" id="ub9nkyK638" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
         </node>
       </node>
       <node concept="gc7cB" id="4tXyFaWwywB" role="3EZMnx">
