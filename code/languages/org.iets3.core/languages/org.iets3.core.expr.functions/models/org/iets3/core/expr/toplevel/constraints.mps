@@ -104,6 +104,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -121,6 +124,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="49WTic8gFlP">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:49WTic8gFfG" resolve="FunctionCall" />
     <node concept="1N5Pfh" id="49WTic8gFlQ" role="1Mr941">
       <ref role="1N5Vy1" to="zzzn:49WTic8gvyC" />
@@ -148,6 +152,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="49WTic8hx03">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:49WTic8hwXW" resolve="FunRef" />
     <node concept="1N5Pfh" id="49WTic8hx04" role="1Mr941">
       <ref role="1N5Vy1" to="zzzn:49WTic8hm1F" />
@@ -175,6 +180,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2uR5X5azSc3">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:2uR5X5azSbn" resolve="ExtensionFunctionCall" />
     <node concept="1N5Pfh" id="2uR5X5azSc4" role="1Mr941">
       <ref role="1N5Vy1" to="yv47:2uR5X5azSbC" />
@@ -288,6 +294,34 @@
                     <node concept="2jxLKc" id="2uR5X5azUhY" role="1tU5fm" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="ub9nkyGFQp">
+    <property role="3GE5qa" value="constant" />
+    <ref role="1M2myG" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
+    <node concept="1N5Pfh" id="ub9nkyGFQq" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:ub9nkyG$WU" />
+      <node concept="1MUpDS" id="ub9nkyGFQs" role="1N6uqs">
+        <node concept="3clFbS" id="ub9nkyGFQt" role="2VODD2">
+          <node concept="3clFbF" id="ub9nkyGFR6" role="3cqZAp">
+            <node concept="2OqwBi" id="ub9nkyGG1_" role="3clFbG">
+              <node concept="2OqwBi" id="ub9nkyGFTr" role="2Oq$k0">
+                <node concept="21POm0" id="ub9nkyGFR5" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="ub9nkyGFWW" role="2OqNvi">
+                  <node concept="1xMEDy" id="ub9nkyGFWY" role="1xVPHs">
+                    <node concept="chp4Y" id="ub9nkyGFYj" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="ub9nkyGG72" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:69zaTr1N3Qc" resolve="visibleConstants" />
               </node>
             </node>
           </node>

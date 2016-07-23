@@ -40,6 +40,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -49,6 +52,7 @@
     <property role="1pbfSe" value="1253648838" />
     <property role="TrG5h" value="Function" />
     <property role="34LRSv" value="fun" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
       <property role="TrG5h" value="extension" />
@@ -64,6 +68,7 @@
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="1pbfSe" value="1254070543" />
     <property role="TrG5h" value="FunctionCall" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="49WTic8gFfH" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8gvys" resolve="IFunctionCall" />
@@ -73,6 +78,7 @@
     <property role="1pbfSe" value="1254290591" />
     <property role="TrG5h" value="FunRef" />
     <property role="34LRSv" value=":" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="49WTic8hwXX" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8hm1E" resolve="IFunctionRef" />
@@ -81,6 +87,7 @@
   <node concept="PlHQZ" id="2uR5X5ayxoj">
     <property role="1pbfSe" value="1916874212" />
     <property role="TrG5h" value="IFunctionScopeProvider" />
+    <property role="3GE5qa" value="function" />
   </node>
   <node concept="PlHQZ" id="2uR5X5ayM7T">
     <property role="1pbfSe" value="1916942794" />
@@ -92,6 +99,7 @@
   <node concept="1TIwiD" id="2uR5X5azSbn">
     <property role="1pbfSe" value="1917229736" />
     <property role="TrG5h" value="ExtensionFunctionCall" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2uR5X5a$35n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -113,6 +121,7 @@
     <property role="1pbfSe" value="605567330" />
     <property role="TrG5h" value="Constant" />
     <property role="34LRSv" value="const" />
+    <property role="3GE5qa" value="constant" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="69zaTr1HgRN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -130,6 +139,19 @@
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="1pbfSe" value="607086854" />
     <property role="TrG5h" value="IConstantScopeProvider" />
+    <property role="3GE5qa" value="constant" />
+  </node>
+  <node concept="1TIwiD" id="ub9nkyG$WT">
+    <property role="1pbfSe" value="708670638" />
+    <property role="3GE5qa" value="constant" />
+    <property role="TrG5h" value="ConstantRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="ub9nkyG$WU" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="constant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="69zaTr1HgRc" resolve="Constant" />
+    </node>
   </node>
 </model>
 

@@ -128,8 +128,14 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="49WTic8f4oa">
+    <property role="3GE5qa" value="function" />
     <ref role="1XX52x" to="yv47:49WTic8f4iz" resolve="Function" />
     <node concept="3EZMnI" id="49WTic8f4ou" role="2wV5jI">
       <node concept="2iRfu4" id="1tPb0nslpIi" role="2iSdaV" />
@@ -228,6 +234,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="49WTic8gFg7">
+    <property role="3GE5qa" value="function" />
     <ref role="1XX52x" to="yv47:49WTic8gFfG" resolve="FunctionCall" />
     <node concept="1j7BWu" id="Lrty7CQUIM" role="2wV5jI">
       <node concept="s8t4o" id="Lrty7CQUJa" role="1j7ClA">
@@ -290,6 +297,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="49WTic8hwYn">
+    <property role="3GE5qa" value="function" />
     <ref role="1XX52x" to="yv47:49WTic8hwXW" resolve="FunRef" />
     <node concept="3EZMnI" id="49WTic8hwYs" role="2wV5jI">
       <node concept="2iRfu4" id="49WTic8hwYt" role="2iSdaV" />
@@ -311,6 +319,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2uR5X5a$35O">
+    <property role="3GE5qa" value="function" />
     <ref role="1XX52x" to="yv47:2uR5X5azSbn" resolve="ExtensionFunctionCall" />
     <node concept="1j7BWu" id="2uR5X5a$35Q" role="2wV5jI">
       <node concept="s8t4o" id="2uR5X5a$35R" role="1j7ClA">
@@ -376,6 +385,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="69zaTr1HgSd">
+    <property role="3GE5qa" value="constant" />
     <ref role="1XX52x" to="yv47:69zaTr1HgRc" resolve="Constant" />
     <node concept="3EZMnI" id="69zaTr1HgSo" role="2wV5jI">
       <node concept="3F0ifn" id="69zaTr1HgSv" role="3EZMnx">
@@ -406,6 +416,19 @@
         <ref role="1NtTu8" to="yv47:69zaTr1HgRN" />
       </node>
       <node concept="2iRfu4" id="69zaTr1HgSr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="ub9nkyGD9H">
+    <property role="3GE5qa" value="constant" />
+    <ref role="1XX52x" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
+    <node concept="1iCGBv" id="ub9nkyGD9J" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:ub9nkyG$WU" />
+      <node concept="1sVBvm" id="ub9nkyGD9L" role="1sWHZn">
+        <node concept="3F0A7n" id="ub9nkyGD9V" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
