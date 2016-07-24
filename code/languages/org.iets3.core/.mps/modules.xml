@@ -25,7 +25,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.path/org.iets3.core.expr.path.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.util/org.iets3.core.expr.util.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
@@ -45,7 +45,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.plugin/org.iets3.analysis.modelchecksupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.runtime/org.iets3.analysis.modelchecksupport.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
