@@ -1279,8 +1279,8 @@
       <node concept="3clFbS" id="2Qbt$1tTQbM" role="3clF47">
         <node concept="3clFbF" id="2Qbt$1tTVvj" role="3cqZAp">
           <node concept="2OqwBi" id="2Qbt$1tTVw0" role="3clFbG">
-            <node concept="37vLTw" id="2Qbt$1tTVvi" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
+            <node concept="1rXfSq" id="2Qbt$1tZaDS" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2Qbt$1tTVx$" role="2OqNvi">
               <ref role="37wK5l" node="2Qbt$1tSx3Q" resolve="createBooleanType" />
@@ -1301,8 +1301,8 @@
       <node concept="3clFbS" id="2Qbt$1tTQbQ" role="3clF47">
         <node concept="3clFbF" id="2Qbt$1tTV_2" role="3cqZAp">
           <node concept="2OqwBi" id="2Qbt$1tTV_L" role="3clFbG">
-            <node concept="37vLTw" id="2Qbt$1tTV_1" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
+            <node concept="1rXfSq" id="2Qbt$1tZaF9" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2Qbt$1tTVBn" role="2OqNvi">
               <ref role="37wK5l" node="2Qbt$1tSx20" resolve="createIntegerType" />
@@ -1323,8 +1323,8 @@
       <node concept="3clFbS" id="2Qbt$1tTQbU" role="3clF47">
         <node concept="3clFbF" id="2Qbt$1tTVEP" role="3cqZAp">
           <node concept="2OqwBi" id="2Qbt$1tTVFy" role="3clFbG">
-            <node concept="37vLTw" id="2Qbt$1tTVEO" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
+            <node concept="1rXfSq" id="2Qbt$1tZaGp" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2Qbt$1tTVIh" role="2OqNvi">
               <ref role="37wK5l" node="2Qbt$1tSx2j" resolve="createRealType" />
@@ -1345,8 +1345,8 @@
       <node concept="3clFbS" id="2Qbt$1tTQbY" role="3clF47">
         <node concept="3clFbF" id="2Qbt$1tTVLJ" role="3cqZAp">
           <node concept="2OqwBi" id="2Qbt$1tTVMs" role="3clFbG">
-            <node concept="37vLTw" id="2Qbt$1tTVLI" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
+            <node concept="1rXfSq" id="2Qbt$1tZaI2" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
             </node>
             <node concept="liA8E" id="2Qbt$1tTVO3" role="2OqNvi">
               <ref role="37wK5l" node="2Qbt$1tSx2E" resolve="createStringType" />
@@ -1395,8 +1395,9 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2Qbt$1tZaIG" role="jymVt" />
     <node concept="2YIFZL" id="2Qbt$1tU33e" role="jymVt">
-      <property role="TrG5h" value="iIntegerType" />
+      <property role="TrG5h" value="isIntegerType" />
       <node concept="10P_77" id="2Qbt$1tU33f" role="3clF45" />
       <node concept="3Tm1VV" id="2Qbt$1tU33g" role="1B3o_S" />
       <node concept="3clFbS" id="2Qbt$1tU33h" role="3clF47">
