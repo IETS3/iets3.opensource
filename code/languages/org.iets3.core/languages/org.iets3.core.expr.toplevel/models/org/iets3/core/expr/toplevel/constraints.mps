@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.functions.constraints)">
+<model ref="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
@@ -9,10 +9,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="2qy0" ref="r:2212f9f6-5422-47b7-82d4-fa8d24e9f124(testlang.core.expr.structure)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.functions.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.functions.behavior)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
@@ -105,6 +104,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -122,6 +124,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="49WTic8gFlP">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:49WTic8gFfG" resolve="FunctionCall" />
     <node concept="1N5Pfh" id="49WTic8gFlQ" role="1Mr941">
       <ref role="1N5Vy1" to="zzzn:49WTic8gvyC" />
@@ -149,6 +152,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="49WTic8hx03">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:49WTic8hwXW" resolve="FunRef" />
     <node concept="1N5Pfh" id="49WTic8hx04" role="1Mr941">
       <ref role="1N5Vy1" to="zzzn:49WTic8hm1F" />
@@ -176,6 +180,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2uR5X5azSc3">
+    <property role="3GE5qa" value="function" />
     <ref role="1M2myG" to="yv47:2uR5X5azSbn" resolve="ExtensionFunctionCall" />
     <node concept="1N5Pfh" id="2uR5X5azSc4" role="1Mr941">
       <ref role="1N5Vy1" to="yv47:2uR5X5azSbC" />
@@ -289,6 +294,34 @@
                     <node concept="2jxLKc" id="2uR5X5azUhY" role="1tU5fm" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="ub9nkyGFQp">
+    <property role="3GE5qa" value="constant" />
+    <ref role="1M2myG" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
+    <node concept="1N5Pfh" id="ub9nkyGFQq" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:ub9nkyG$WU" />
+      <node concept="1MUpDS" id="ub9nkyGFQs" role="1N6uqs">
+        <node concept="3clFbS" id="ub9nkyGFQt" role="2VODD2">
+          <node concept="3clFbF" id="ub9nkyGFR6" role="3cqZAp">
+            <node concept="2OqwBi" id="ub9nkyGG1_" role="3clFbG">
+              <node concept="2OqwBi" id="ub9nkyGFTr" role="2Oq$k0">
+                <node concept="21POm0" id="ub9nkyGFR5" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="ub9nkyGFWW" role="2OqNvi">
+                  <node concept="1xMEDy" id="ub9nkyGFWY" role="1xVPHs">
+                    <node concept="chp4Y" id="ub9nkyGFYj" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="ub9nkyGG72" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:69zaTr1N3Qc" resolve="visibleConstants" />
               </node>
             </node>
           </node>
