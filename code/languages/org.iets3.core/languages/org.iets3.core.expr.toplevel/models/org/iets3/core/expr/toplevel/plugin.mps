@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.functions.plugin)">
+<model ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
@@ -8,9 +8,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.functions.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -84,6 +83,9 @@
         <property id="8845772667389641968" name="cache" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
+      <concept id="5934114435582125873" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorInline" flags="ng" index="3vetai">
+        <child id="5934114435582660673" name="expression" index="3vdyny" />
+      </concept>
       <concept id="8511326569641889031" name="com.mbeddr.mpsutil.interpreter.structure.AbstractRecursionExpression" flags="ng" index="3SLKdG">
         <child id="8511326569641873009" name="node" index="3SLO0q" />
       </concept>
@@ -139,8 +141,27 @@
     </node>
     <node concept="d$4Dx" id="2uR5X5aLAVH" role="d$6nW">
       <node concept="BaHAS" id="2uR5X5aLAVI" role="cpn$n">
-        <property role="BaHAW" value="org.iets3.core.expr.functions.structure" />
+        <property role="BaHAW" value="org.iets3.core.expr.toplevel.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="ub9nkyP5II" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
+      <node concept="3vetai" id="ub9nkyP5LJ" role="3vQZUl">
+        <node concept="qpA2v" id="ub9nkyP5Or" role="3vdyny">
+          <node concept="2OqwBi" id="ub9nkyP62R" role="3SLO0q">
+            <node concept="2OqwBi" id="ub9nkyP5Qu" role="2Oq$k0">
+              <node concept="oxGPV" id="ub9nkyP5OH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ub9nkyP5Vn" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:ub9nkyG$WU" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="ub9nkyP6wJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:69zaTr1HgRN" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="2uR5X5aPgiA" role="qq9xR">

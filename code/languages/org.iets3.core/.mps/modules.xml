@@ -8,7 +8,6 @@
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.functionalcomponenets/org.iets3.functionalcomponenets.devkit" folder="comp" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.solver/org.iets3.solver.devkit" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/languages/TrafficLightEditorState/TrafficLightEditorState.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.modelchecksupport/org.iets3.analysis.modelchecksupport.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.solversupport.temporal/org.iets3.analysis.solversupport.temporal.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.solversupport/org.iets3.analysis.solversupport.mpl" folder="analysis" />
@@ -21,14 +20,14 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.functions/org.iets3.core.expr.functions.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.path/org.iets3.core.expr.path.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.util/org.iets3.core.expr.util.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.simplestatemachine/org.iets3.core.simplestatemachine.mpl" folder="simpleSM" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.featuremodel/org.iets3.featuremodel.mpl" folder="fm" />
@@ -46,8 +45,7 @@
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/Levis_sandbox/Levis_sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.plugin/org.iets3.analysis.modelchecksupport.plugin.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.runtime/org.iets3.analysis.modelchecksupport.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
