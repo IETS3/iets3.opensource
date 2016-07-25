@@ -9,6 +9,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -162,6 +163,85 @@
     </node>
     <node concept="PrWs8" id="ub9nkyKjdp" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7D7uZV2dYyQ">
+    <property role="1pbfSe" value="1014981812" />
+    <property role="TrG5h" value="RecordDeclaration" />
+    <property role="34LRSv" value="record" />
+    <property role="3GE5qa" value="record" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7D7uZV2dYzK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2dYyR" role="PzmwI">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2ybot" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7D7uZV2dYyT">
+    <property role="1pbfSe" value="1014981815" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="RecordMember" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2dYyU" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2iDVH" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7D7uZV2dYz2">
+    <property role="1pbfSe" value="1014981824" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="RecordType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="7D7uZV2dYz3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="record" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYyQ" resolve="RecordDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7D7uZV2eTZF">
+    <property role="1pbfSe" value="1015225321" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="IRecordScopeProvider" />
+  </node>
+  <node concept="1TIwiD" id="7D7uZV2iYAC">
+    <property role="1pbfSe" value="1016292774" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="RecordLiteral" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7D7uZV2iYAD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+    </node>
+    <node concept="1TJgyj" id="7D7uZV2iYAF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="memberValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2ptB0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
     </node>
   </node>
 </model>

@@ -304,8 +304,8 @@
     <node concept="PMmxH" id="6sdnDbSlMTe" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="3Xmtl4" id="4rZeNQ6MfS9" role="3F10Kt">
-        <node concept="1wgc9g" id="4rZeNQ6MfSf" role="3XvnJa">
-          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="1wgc9g" id="7D7uZV2hwIg" role="3XvnJa">
+          <ref role="1wgcnl" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         </node>
       </node>
     </node>

@@ -728,6 +728,35 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7D7uZV2fCPQ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="visibleRecords" />
+      <ref role="13i0hy" to="nu60:7D7uZV2eU0v" resolve="visibleRecords" />
+      <node concept="3Tm1VV" id="7D7uZV2fCPR" role="1B3o_S" />
+      <node concept="3clFbS" id="7D7uZV2fCPV" role="3clF47">
+        <node concept="3clFbF" id="7D7uZV2fCT4" role="3cqZAp">
+          <node concept="2OqwBi" id="7D7uZV2fCT5" role="3clFbG">
+            <node concept="2OqwBi" id="7D7uZV2fCT6" role="2Oq$k0">
+              <node concept="13iPFW" id="7D7uZV2fCT7" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7D7uZV2fCT8" role="2OqNvi">
+                <ref role="3TtcxE" to="2qy0:49WTic8feOi" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="7D7uZV2fCT9" role="2OqNvi">
+              <node concept="chp4Y" id="7D7uZV2fCWt" role="v3oSu">
+                <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7D7uZV2fCPW" role="3clF45">
+        <node concept="3Tqbb2" id="7D7uZV2fCPX" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6zmBjqUjiVA">
     <ref role="13h7C2" to="2qy0:6zmBjqUiyXx" resolve="VarRef" />

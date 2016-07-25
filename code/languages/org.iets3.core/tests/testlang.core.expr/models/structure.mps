@@ -76,7 +76,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="toplevel" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprStuff" />
+      <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
     <node concept="1TJgyj" id="6LLGpXJ2Y8b" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -93,6 +93,9 @@
     <node concept="PrWs8" id="2uR5X5ayxST" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
     </node>
+    <node concept="PrWs8" id="7D7uZV2fCPK" role="PzmwI">
+      <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSla1f">
     <property role="1pbfSe" value="1600257761" />
@@ -108,7 +111,7 @@
     <node concept="1TJgyj" id="6sdnDbSlcFu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="6sdnDbSlaod" role="1TKVEi">
@@ -220,7 +223,7 @@
     <property role="1pbfSe" value="611660248" />
     <property role="3GE5qa" value="entities" />
     <property role="TrG5h" value="EntityLiteral" />
-    <property role="34LRSv" value="#" />
+    <property role="34LRSv" value="$$" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6LLGpXJ6hOA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
