@@ -68,11 +68,6 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
-    </language>
   </registry>
   <node concept="1M2fIO" id="6sdnDbSlNjr">
     <ref role="1M2myG" to="2qy0:6sdnDbSla1f" resolve="Variable" />
@@ -115,61 +110,6 @@
               </node>
               <node concept="3Tsc0h" id="6zmBjqUizs6" role="2OqNvi">
                 <ref role="3TtcxE" to="2qy0:6sdnDbSla1g" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2rOWEwsDW6P">
-    <ref role="1M2myG" to="2qy0:2rOWEwsDANr" resolve="TypedefType" />
-    <node concept="1N5Pfh" id="2rOWEwsDW6Q" role="1Mr941">
-      <ref role="1N5Vy1" to="2qy0:2rOWEwsDANs" />
-      <node concept="1MUpDS" id="2rOWEwsDW6S" role="1N6uqs">
-        <node concept="3clFbS" id="2rOWEwsDW6T" role="2VODD2">
-          <node concept="3clFbF" id="2rOWEwsDW7y" role="3cqZAp">
-            <node concept="2OqwBi" id="2rOWEwsDWji" role="3clFbG">
-              <node concept="2OqwBi" id="2rOWEwsDW9R" role="2Oq$k0">
-                <node concept="21POm0" id="2rOWEwsDW7x" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="2rOWEwsDWdo" role="2OqNvi">
-                  <node concept="1xMEDy" id="2rOWEwsDWdq" role="1xVPHs">
-                    <node concept="chp4Y" id="2rOWEwsDWeJ" role="ri$Ld">
-                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3Tsc0h" id="2rOWEwsDWpj" role="2OqNvi">
-                <ref role="3TtcxE" to="2qy0:2rOWEwsDN0H" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="6LLGpXJ2Yhl">
-    <property role="3GE5qa" value="entities" />
-    <ref role="1M2myG" to="2qy0:6LLGpXJ2YgU" resolve="EntityType" />
-    <node concept="1N5Pfh" id="6LLGpXJ2Yhm" role="1Mr941">
-      <ref role="1N5Vy1" to="2qy0:6LLGpXJ2YgV" />
-      <node concept="1MUpDS" id="6LLGpXJ2Yho" role="1N6uqs">
-        <node concept="3clFbS" id="6LLGpXJ2Yhp" role="2VODD2">
-          <node concept="3clFbF" id="6LLGpXJ2Yi2" role="3cqZAp">
-            <node concept="2OqwBi" id="6LLGpXJ2YtM" role="3clFbG">
-              <node concept="2OqwBi" id="6LLGpXJ2Ykn" role="2Oq$k0">
-                <node concept="21POm0" id="6LLGpXJ2Yi1" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="6LLGpXJ2Yod" role="2OqNvi">
-                  <node concept="1xMEDy" id="6LLGpXJ2Yof" role="1xVPHs">
-                    <node concept="chp4Y" id="6LLGpXJ2Yp$" role="ri$Ld">
-                      <ref role="cht4Q" to="2qy0:6sdnDbSla1e" resolve="ExprTestContainer" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3Tsc0h" id="6LLGpXJ2YzN" role="2OqNvi">
-                <ref role="3TtcxE" to="2qy0:6LLGpXJ2Y8b" />
               </node>
             </node>
           </node>

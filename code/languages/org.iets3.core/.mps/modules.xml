@@ -69,7 +69,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.modelcheckersupport/test.ts.analysis.modelcheckersupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.solversupport/test.ts.analysis.solversupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.components.functional/test.ts.components.functional.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr.util/test.ts.core.expr.util.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/testlang.core.expr/testlang.core.expr.mpl" folder="expr" />
     </projectModules>
