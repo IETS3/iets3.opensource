@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.functions.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
@@ -74,9 +74,9 @@
     </node>
     <node concept="1TJgyj" id="49WTic8feOi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="functions" />
+      <property role="20kJfa" value="toplevel" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="yv47:49WTic8f4iz" resolve="Function" />
+      <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprStuff" />
     </node>
     <node concept="1TJgyj" id="6LLGpXJ2Y8b" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
