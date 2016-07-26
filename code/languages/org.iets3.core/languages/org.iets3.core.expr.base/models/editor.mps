@@ -27,6 +27,7 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -304,8 +305,8 @@
     <node concept="PMmxH" id="6sdnDbSlMTe" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="3Xmtl4" id="4rZeNQ6MfS9" role="3F10Kt">
-        <node concept="1wgc9g" id="4rZeNQ6MfSf" role="3XvnJa">
-          <ref role="1wgcnl" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="1wgc9g" id="7D7uZV2hwIg" role="3XvnJa">
+          <ref role="1wgcnl" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         </node>
       </node>
     </node>
@@ -1237,6 +1238,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="12WRc28Xzs5" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="hm2y:12WRc28Xz6l" />
           <node concept="2iRfu4" id="12WRc28Xzs7" role="2czzBx" />
         </node>

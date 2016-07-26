@@ -21,6 +21,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -29,6 +30,9 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -104,12 +108,23 @@
     <node concept="PrWs8" id="ub9nkyPQAV" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
+    <node concept="PrWs8" id="6HHp2WmRw6m" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyK62f">
     <property role="1pbfSe" value="709592580" />
     <property role="TrG5h" value="TestSuite" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7D7uZV2GoIG" role="1TKVEl">
+      <property role="TrG5h" value="executeAutomatically" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6HHp2WmWVi9" role="1TKVEl">
+      <property role="TrG5h" value="referenceOnlyLocalStuff" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="ub9nkyK62i" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -124,6 +139,33 @@
     </node>
     <node concept="PrWs8" id="ub9nkyO0EK" role="PzmwI">
       <ref role="PrY4T" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="6HHp2WmWZ9L" role="PzmwI">
+      <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HHp2WmRVXt">
+    <property role="1pbfSe" value="2108873844" />
+    <property role="TrG5h" value="NamedAssertRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6HHp2WmRVXx" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="item" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HHp2WneCKI">
+    <property role="1pbfSe" value="2102923171" />
+    <property role="TrG5h" value="CommentCondition" />
+    <property role="34LRSv" value=".." />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="6HHp2WneCKS" role="1TKVEl">
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
