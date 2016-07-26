@@ -46,11 +46,11 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -65,6 +65,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -98,8 +101,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -111,6 +117,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -163,6 +170,39 @@
       </node>
       <node concept="1Ex9Rl" id="4rZeNQ6MfRj" role="lGtFl">
         <property role="34HCRG" value="Keyword" />
+        <property role="34GvKv" value="Reserved Words in IETS3 models" />
+      </node>
+    </node>
+    <node concept="14StLt" id="ub9nkyQsN2" role="V601i">
+      <property role="TrG5h" value="iets3Identifier" />
+      <node concept="Vb9p2" id="ub9nkyQsN3" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="1Ex9Rl" id="ub9nkyQsN9" role="lGtFl">
+        <property role="34HCRG" value="Identifier" />
+        <property role="34GvKv" value="Reserved Words in IETS3 models" />
+      </node>
+    </node>
+    <node concept="14StLt" id="7D7uZV2g_XJ" role="V601i">
+      <property role="TrG5h" value="iets3Type" />
+      <node concept="Vb9p2" id="7D7uZV2g_XK" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="VechU" id="7D7uZV2gA7i" role="3F10Kt">
+        <property role="Vb096" value="DARK_BLUE" />
+        <node concept="3ZlJ5R" id="7D7uZV2gA7j" role="VblUZ">
+          <node concept="3clFbS" id="7D7uZV2gA7k" role="2VODD2">
+            <node concept="3cpWs6" id="7D7uZV2gA7l" role="3cqZAp">
+              <node concept="10M0yZ" id="7D7uZV2gA7m" role="3cqZAk">
+                <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="IETS3Colors" />
+                <ref role="3cqZAo" node="7D7uZV2gA03" resolve="TYPE" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Ex9Rl" id="7D7uZV2g_XL" role="lGtFl">
+        <property role="34HCRG" value="Type" />
         <property role="34GvKv" value="Reserved Words in IETS3 models" />
       </node>
     </node>
@@ -369,6 +409,27 @@
         <node concept="2YIFZM" id="3Ib5UJg40tX" role="2Oq$k0">
           <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
           <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance():jetbrains.mps.openapi.editor.style.StyleRegistry" resolve="getInstance" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7D7uZV2gA03" role="jymVt">
+      <property role="TrG5h" value="TYPE" />
+      <node concept="3Tm1VV" id="7D7uZV2gA04" role="1B3o_S" />
+      <node concept="3uibUv" id="7D7uZV2gA05" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2ShNRf" id="7D7uZV2hcri" role="33vP2m">
+        <node concept="1pGfFk" id="7D7uZV2hcqK" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <node concept="3cmrfG" id="7D7uZV2hctr" role="37wK5m">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="3cmrfG" id="7D7uZV2hcA2" role="37wK5m">
+            <property role="3cmrfH" value="115" />
+          </node>
+          <node concept="3cmrfG" id="7D7uZV2hcJt" role="37wK5m">
+            <property role="3cmrfH" value="191" />
+          </node>
         </node>
       </node>
     </node>
