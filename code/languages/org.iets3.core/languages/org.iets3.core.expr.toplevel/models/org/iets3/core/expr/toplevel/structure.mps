@@ -260,5 +260,38 @@
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6HHp2WngtTC">
+    <property role="1pbfSe" value="2102443369" />
+    <property role="TrG5h" value="Typedef" />
+    <property role="3GE5qa" value="typedef" />
+    <property role="34LRSv" value="typedef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6HHp2WngtTF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="originalType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="6HHp2WngtTD" role="PzmwI">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6HHp2WngtUK">
+    <property role="1pbfSe" value="1015225321" />
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="ITypedefScopeProvider" />
+  </node>
+  <node concept="1TIwiD" id="6HHp2WngtVm">
+    <property role="1pbfSe" value="2102443259" />
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="TypedefType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="6HHp2WngtVn" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="typedef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6HHp2WngtTC" resolve="Typedef" />
+    </node>
+  </node>
 </model>
 

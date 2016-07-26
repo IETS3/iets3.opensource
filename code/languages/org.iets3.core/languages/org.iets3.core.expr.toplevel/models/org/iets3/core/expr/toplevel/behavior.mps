@@ -511,5 +511,24 @@
       <node concept="3clFbS" id="6HHp2Wnchsq" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6HHp2WngtV9">
+    <property role="3GE5qa" value="typedef" />
+    <ref role="13h7C2" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
+    <node concept="13i0hz" id="6HHp2WngtVc" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="visibleTypedefs" />
+      <node concept="3Tm1VV" id="6HHp2WngtVd" role="1B3o_S" />
+      <node concept="A3Dl8" id="6HHp2WngtVe" role="3clF45">
+        <node concept="3Tqbb2" id="6HHp2WngtVf" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6HHp2WngtVg" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6HHp2WngtVa" role="13h7CW">
+      <node concept="3clFbS" id="6HHp2WngtVb" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
