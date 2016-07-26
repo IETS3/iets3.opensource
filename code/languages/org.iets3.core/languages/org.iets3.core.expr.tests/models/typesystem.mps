@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
@@ -24,6 +25,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -284,6 +288,30 @@
     <node concept="1YaCAy" id="6HHp2WmScby" role="1YuTPh">
       <property role="TrG5h" value="nar" />
       <ref role="1YaFvo" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6HHp2WneCLi">
+    <property role="TrG5h" value="typeof_CommentCondition" />
+    <node concept="3clFbS" id="6HHp2WneCLj" role="18ibNy">
+      <node concept="1Z5TYs" id="6HHp2WneCND" role="3cqZAp">
+        <node concept="mw_s8" id="6HHp2WneCUw" role="1ZfhKB">
+          <node concept="2YIFZM" id="6HHp2WneCVc" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6HHp2WneCNG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6HHp2WneCL_" role="mwGJk">
+            <node concept="1YBJjd" id="6HHp2WneCLP" role="1Z2MuG">
+              <ref role="1YBMHb" node="6HHp2WneCLl" resolve="cc" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6HHp2WneCLl" role="1YuTPh">
+      <property role="TrG5h" value="cc" />
+      <ref role="1YaFvo" to="av4b:6HHp2WneCKI" resolve="CommentCondition" />
     </node>
   </node>
 </model>

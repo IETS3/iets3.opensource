@@ -14,6 +14,7 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -496,6 +497,18 @@
     </node>
     <node concept="13hLZK" id="7D7uZV2iYHG" role="13h7CW">
       <node concept="3clFbS" id="7D7uZV2iYHH" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6HHp2Wn8tiV">
+    <ref role="13h7C2" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    <node concept="13hLZK" id="6HHp2Wn8tiW" role="13h7CW">
+      <node concept="3clFbS" id="6HHp2Wn8tiX" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6HHp2Wnchso">
+    <ref role="13h7C2" to="yv47:6HHp2Wn7mD6" resolve="SectionMarker" />
+    <node concept="13hLZK" id="6HHp2Wnchsp" role="13h7CW">
+      <node concept="3clFbS" id="6HHp2Wnchsq" role="2VODD2" />
     </node>
   </node>
 </model>

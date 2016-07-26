@@ -140,6 +140,9 @@
     <node concept="PrWs8" id="ub9nkyO0EK" role="PzmwI">
       <ref role="PrY4T" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
     </node>
+    <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
     <node concept="PrWs8" id="6HHp2WmWZ9L" role="PzmwI">
       <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
     </node>
@@ -153,6 +156,16 @@
       <property role="20kJfa" value="item" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HHp2WneCKI">
+    <property role="1pbfSe" value="2102923171" />
+    <property role="TrG5h" value="CommentCondition" />
+    <property role="34LRSv" value=".." />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="6HHp2WneCKS" role="1TKVEl">
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
