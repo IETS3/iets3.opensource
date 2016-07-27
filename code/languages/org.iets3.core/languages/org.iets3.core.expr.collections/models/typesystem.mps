@@ -235,7 +235,7 @@
             <ref role="1YBMHb" node="6zmBjqUinuk" resolve="lt" />
           </node>
           <node concept="2qgKlT" id="4Q4DxjDz1xv" role="2OqNvi">
-            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
           </node>
         </node>
       </node>
@@ -1130,7 +1130,7 @@
             <ref role="1YBMHb" node="7GwCuf2Wbvv" resolve="st" />
           </node>
           <node concept="2qgKlT" id="4Q4DxjDz1P_" role="2OqNvi">
-            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
           </node>
         </node>
       </node>
@@ -1854,7 +1854,7 @@
             <ref role="1YBMHb" node="4Q4DxjDz1zk" resolve="ct" />
           </node>
           <node concept="2qgKlT" id="4Q4DxjDz1zj" role="2OqNvi">
-            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
           </node>
         </node>
       </node>
@@ -1959,6 +1959,43 @@
     <node concept="1YaCAy" id="4Q4DxjDLg_Z" role="1YuTPh">
       <property role="TrG5h" value="tailOp" />
       <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="TailOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6HHp2Wnvl_f">
+    <property role="TrG5h" value="typeof_MinOp" />
+    <property role="3GE5qa" value="collection.numeric" />
+    <node concept="3clFbS" id="6HHp2Wnvl_g" role="18ibNy">
+      <node concept="1ZobV4" id="6HHp2Wnvl__" role="3cqZAp">
+        <node concept="mw_s8" id="6HHp2Wnvl_A" role="1ZfhKB">
+          <node concept="2pJPEk" id="6HHp2Wnvl_B" role="mwGJk">
+            <node concept="2pJPED" id="6HHp2Wnvl_C" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
+              <node concept="2pIpSj" id="6HHp2Wnvl_D" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                <node concept="2pJPED" id="6HHp2Wnvl_E" role="2pJxcZ">
+                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6HHp2Wnvl_F" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6HHp2Wnvl_G" role="mwGJk">
+            <node concept="2OqwBi" id="6HHp2Wnvl_H" role="1Z2MuG">
+              <node concept="1YBJjd" id="6HHp2WnvlE2" role="2Oq$k0">
+                <ref role="1YBMHb" node="6HHp2Wnvl_i" resolve="minOp" />
+              </node>
+              <node concept="2qgKlT" id="6HHp2Wnvl_J" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6HHp2Wnvl_i" role="1YuTPh">
+      <property role="TrG5h" value="minOp" />
+      <ref role="1YaFvo" to="700h:6HHp2WnvluK" resolve="MinOp" />
     </node>
   </node>
 </model>

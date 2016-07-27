@@ -479,7 +479,7 @@
     <ref role="1XX52x" to="yv47:69zaTr1HgRc" resolve="Constant" />
     <node concept="3EZMnI" id="69zaTr1HgSo" role="2wV5jI">
       <node concept="3F0ifn" id="69zaTr1HgSv" role="3EZMnx">
-        <property role="3F0ifm" value="const" />
+        <property role="3F0ifm" value="val" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F0A7n" id="69zaTr1HgS_" role="3EZMnx">

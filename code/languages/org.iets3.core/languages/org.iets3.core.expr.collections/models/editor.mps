@@ -61,6 +61,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -76,6 +77,10 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
@@ -328,14 +333,27 @@
           <node concept="2e7140" id="6HHp2Wnfd$i" role="2e1Fq_">
             <node concept="3clFbS" id="6HHp2Wnfd$j" role="2VODD2">
               <node concept="3clFbF" id="6HHp2WnfdAn" role="3cqZAp">
-                <node concept="2OqwBi" id="6HHp2WnfdRJ" role="3clFbG">
-                  <node concept="2OqwBi" id="6HHp2WnfdD5" role="2Oq$k0">
-                    <node concept="2e73FJ" id="6HHp2WnfdAm" role="2Oq$k0" />
-                    <node concept="3JvlWi" id="6HHp2WnfdNg" role="2OqNvi" />
+                <node concept="22lmx$" id="6HHp2WnuYHH" role="3clFbG">
+                  <node concept="2OqwBi" id="6HHp2WnfdRJ" role="3uHU7B">
+                    <node concept="2OqwBi" id="6HHp2WnfdD5" role="2Oq$k0">
+                      <node concept="2e73FJ" id="6HHp2WnfdAm" role="2Oq$k0" />
+                      <node concept="3JvlWi" id="6HHp2WnfdNg" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="6HHp2WnfdW_" role="2OqNvi">
+                      <node concept="chp4Y" id="6HHp2Wnfpeb" role="cj9EA">
+                        <ref role="cht4Q" to="700h:6zmBjqUiHH7" resolve="IOrderedCollection" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1mIQ4w" id="6HHp2WnfdW_" role="2OqNvi">
-                    <node concept="chp4Y" id="6HHp2Wnfpeb" role="cj9EA">
-                      <ref role="cht4Q" to="700h:6zmBjqUiHH7" resolve="IOrderedCollection" />
+                  <node concept="2OqwBi" id="6HHp2WnuYKK" role="3uHU7w">
+                    <node concept="2OqwBi" id="6HHp2WnuYKL" role="2Oq$k0">
+                      <node concept="2e73FJ" id="6HHp2WnuYKM" role="2Oq$k0" />
+                      <node concept="3JvlWi" id="6HHp2WnuYKN" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="6HHp2WnuYKO" role="2OqNvi">
+                      <node concept="chp4Y" id="6HHp2WnuYP_" role="cj9EA">
+                        <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -526,6 +544,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HHp2Wnvlvp">
+    <property role="3GE5qa" value="collection.numeric" />
+    <ref role="1XX52x" to="700h:6HHp2WnvluK" resolve="MinOp" />
+    <node concept="3F0ifn" id="6HHp2WnvlvE" role="2wV5jI">
+      <property role="3F0ifm" value="min" />
     </node>
   </node>
 </model>

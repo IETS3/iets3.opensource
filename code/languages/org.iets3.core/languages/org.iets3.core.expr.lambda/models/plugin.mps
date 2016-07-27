@@ -15,7 +15,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -60,9 +59,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -154,6 +150,12 @@
       <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -412,6 +414,7 @@
               <node concept="oxGPV" id="$yb$20fEwv" role="2Oq$k0" />
               <node concept="2qgKlT" id="$yb$20fEBz" role="2OqNvi">
                 <ref role="37wK5l" to="5s8v:$yb$20fCkw" resolve="makeExplicitLambda" />
+                <node concept="oxNuS" id="6ovbtsiW1rd" role="37wK5m" />
               </node>
             </node>
             <node concept="oxNuS" id="22hm_0zJz3I" role="37wK5m" />
@@ -618,15 +621,21 @@
     <node concept="qq9P1" id="$yb$20hN8F" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="zzzn:6zmBjqUkHal" resolve="LambdaArgRef" />
-      <node concept="3vetai" id="$yb$20hNfV" role="3vQZUl">
-        <node concept="3EllGN" id="$yb$20hNqW" role="3vdyny">
-          <node concept="2OqwBi" id="$yb$20hNtY" role="3ElVtu">
-            <node concept="oxGPV" id="$yb$20hNrC" role="2Oq$k0" />
-            <node concept="3TrEf2" id="$yb$20hNzb" role="2OqNvi">
-              <ref role="3Tt5mk" to="zzzn:6zmBjqUkHam" />
+      <node concept="3dA_Gj" id="6ovbtsiX_An" role="3vQZUl">
+        <node concept="9aQIb" id="6ovbtsiX_Ap" role="3vcmbn">
+          <node concept="3clFbS" id="6ovbtsiX_Ar" role="9aQI4">
+            <node concept="3cpWs6" id="6ovbtsiX_XL" role="3cqZAp">
+              <node concept="3EllGN" id="6ovbtsiX_CS" role="3cqZAk">
+                <node concept="2OqwBi" id="6ovbtsiX_CT" role="3ElVtu">
+                  <node concept="oxGPV" id="6ovbtsiX_CU" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6ovbtsiX_CV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="zzzn:6zmBjqUkHam" />
+                  </node>
+                </node>
+                <node concept="TvHiN" id="6ovbtsiX_CW" role="3ElQJh" />
+              </node>
             </node>
           </node>
-          <node concept="TvHiN" id="$yb$20hNg9" role="3ElQJh" />
         </node>
       </node>
     </node>
@@ -662,6 +671,44 @@
       <node concept="3vetai" id="$yb$20i$Dv" role="3vQZUl">
         <node concept="rqRoa" id="$yb$20i$DH" role="3vdyny">
           <ref role="rqRob" to="zzzn:49WTic8iI9_" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6ovbtsiVZZz" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
+      <node concept="3dA_Gj" id="6ovbtsiWeU3" role="3vQZUl">
+        <node concept="9aQIb" id="6ovbtsiWeU5" role="3vcmbn">
+          <node concept="3clFbS" id="6ovbtsiWeU7" role="9aQI4">
+            <node concept="3SKdUt" id="6ovbtsiWf2C" role="3cqZAp">
+              <node concept="3SKdUq" id="6ovbtsiWf2E" role="3SKWNk">
+                <property role="3SKdUp" value="makeExplicitLambda stores the first arg " />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="6ovbtsiWf7f" role="3cqZAp">
+              <node concept="3SKdUq" id="6ovbtsiWf7h" role="3SKWNk">
+                <property role="3SKdUp" value="in the env using the short lambda as the key" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="6ovbtsiWp7u" role="3cqZAp">
+              <node concept="3SKdUq" id="6ovbtsiWp7w" role="3SKWNk">
+                <property role="3SKdUp" value="I think this is a hack, but for now it works." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6ovbtsiWeY3" role="3cqZAp">
+              <node concept="qpA2v" id="6ovbtsiWfbq" role="3cqZAk">
+                <node concept="1eOMI4" id="6ovbtsiWlwO" role="3SLO0q">
+                  <node concept="10QFUN" id="6ovbtsiWlwP" role="1eOMHV">
+                    <node concept="3EllGN" id="6ovbtsiWlwL" role="10QFUP">
+                      <node concept="oxGPV" id="6ovbtsiWlwM" role="3ElVtu" />
+                      <node concept="TvHiN" id="6ovbtsiWlwN" role="3ElQJh" />
+                    </node>
+                    <node concept="3Tqbb2" id="6ovbtsiWlBE" role="10QFUM" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -843,25 +890,6 @@
                 <node concept="1P9Npp" id="22hm_0zJZlB" role="2OqNvi">
                   <node concept="37vLTw" id="22hm_0zJZqW" role="1P9ThW">
                     <ref role="3cqZAo" node="22hm_0zJZqT" resolve="cv" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="22hm_0zOafS" role="3cqZAp">
-              <node concept="2OqwBi" id="22hm_0zOafP" role="3clFbG">
-                <node concept="10M0yZ" id="22hm_0zOafQ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="22hm_0zOafR" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                  <node concept="2OqwBi" id="22hm_0zOaCN" role="37wK5m">
-                    <node concept="37vLTw" id="22hm_0zOaok" role="2Oq$k0">
-                      <ref role="3cqZAo" node="$yb$20fATA" resolve="lambda" />
-                    </node>
-                    <node concept="3TrEf2" id="22hm_0zOaR6" role="2OqNvi">
-                      <ref role="3Tt5mk" to="zzzn:6zmBjqUkwH3" />
-                    </node>
                   </node>
                 </node>
               </node>

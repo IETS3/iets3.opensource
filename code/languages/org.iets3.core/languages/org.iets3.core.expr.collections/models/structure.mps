@@ -504,5 +504,15 @@
       <property role="1uS6qo" value="DESC" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6HHp2WnvluK">
+    <property role="1pbfSe" value="2098545697" />
+    <property role="3GE5qa" value="collection.numeric" />
+    <property role="TrG5h" value="MinOp" />
+    <property role="34LRSv" value="min" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="6HHp2WnvluL" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+  </node>
 </model>
 

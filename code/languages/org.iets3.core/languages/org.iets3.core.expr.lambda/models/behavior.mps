@@ -14,6 +14,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -481,6 +483,12 @@
     </node>
     <node concept="13i0hz" id="$yb$20fCkw" role="13h7CS">
       <property role="TrG5h" value="makeExplicitLambda" />
+      <node concept="37vLTG" id="22hm_0zJz8c" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="22hm_0zJznV" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="$yb$20fCkx" role="1B3o_S" />
       <node concept="3clFbS" id="$yb$20fCky" role="3clF47">
         <node concept="3cpWs8" id="49WTic8ey5C" role="3cqZAp">
@@ -554,6 +562,25 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ovbtsiWelS" role="3cqZAp">
+          <node concept="2OqwBi" id="6ovbtsiWex3" role="3clFbG">
+            <node concept="2OqwBi" id="6ovbtsiWeoK" role="2Oq$k0">
+              <node concept="37vLTw" id="6ovbtsiWelQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="22hm_0zJz8c" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="6ovbtsiWeti" role="2OqNvi">
+                <ref role="37wK5l" to="2ahs:2X4$XGmeh8R" resolve="getEnvironment" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6ovbtsiWeI8" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="13iPFW" id="6ovbtsiWeKg" role="37wK5m" />
+              <node concept="37vLTw" id="6ovbtsiWeO1" role="37wK5m">
+                <ref role="3cqZAo" node="49WTic8eCUf" resolve="arg" />
               </node>
             </node>
           </node>
