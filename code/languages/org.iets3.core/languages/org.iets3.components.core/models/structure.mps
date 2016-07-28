@@ -2,7 +2,7 @@
 <model ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -58,6 +61,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -168,6 +172,9 @@
     </node>
     <node concept="PrWs8" id="1k3knzd5BTM" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="4r4cpWQN4NT" role="PzmwI">
+      <ref role="PrY4T" node="6o3TlxuctuA" resolve="IAnimatable" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8Yivpj">
@@ -585,31 +592,43 @@
   <node concept="1TIwiD" id="mIQkxfpv7c">
     <property role="1pbfSe" value="1427426068" />
     <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="DataPortCategory" />
+    <property role="TrG5h" value="DataPortCategory_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="MwhBj" value="${module}/icons/dataPort.png" />
     <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
+    <node concept="asaX9" id="3kiu$uWRY01" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="mIQkxfpv9A">
     <property role="1pbfSe" value="1427426222" />
     <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="ConsumesPortCategory" />
+    <property role="TrG5h" value="ConsumesPortCategory_old" />
     <property role="34LRSv" value="consumes" />
     <property role="MwhBj" value="${module}/icons/consumesPort.png" />
-    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
+    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory_old" />
     <node concept="1TJgyi" id="mIQkxfrzIk" role="1TKVEl">
-      <property role="TrG5h" value="optional" />
+      <property role="TrG5h" value="optional_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="3kiu$uWRY0g" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.components.functional.structure.ConsumesPortCategory&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="3kiu$uWRXZM" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="mIQkxfpvaK">
     <property role="1pbfSe" value="1427426296" />
     <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="ProducesPortCategory" />
+    <property role="TrG5h" value="ProducesPortCategory_old" />
     <property role="34LRSv" value="produces" />
     <property role="MwhBj" value="${module}/icons/producesPort.png" />
-    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory" />
+    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory_old" />
+    <node concept="asaX9" id="3kiu$uWRY0b" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="cJpacq1tb1">
     <property role="1pbfSe" value="490026852" />
@@ -666,30 +685,42 @@
   <node concept="1TIwiD" id="mIQkxfKjiq">
     <property role="1pbfSe" value="1433406946" />
     <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="ServicePortCategory" />
+    <property role="TrG5h" value="ServicePortCategory_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="MwhBj" value="${module}/icons/servicePort.png" />
     <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
+    <node concept="asaX9" id="3kiu$uWRXZR" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="mIQkxfKjkw">
     <property role="1pbfSe" value="1433407080" />
     <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="ProvidesPortCategory" />
+    <property role="TrG5h" value="ProvidesPortCategory_old" />
     <property role="34LRSv" value="provides" />
     <property role="MwhBj" value="${module}/icons/providesPort.png" />
-    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
+    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory_old" />
+    <node concept="asaX9" id="3kiu$uWRY06" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="mIQkxfKjnz">
     <property role="1pbfSe" value="1433407275" />
     <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="UsesPortCategory" />
+    <property role="TrG5h" value="UsesPortCategory_old" />
     <property role="34LRSv" value="uses" />
     <property role="MwhBj" value="${module}/icons/usesPort.png" />
-    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory" />
+    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory_old" />
     <node concept="1TJgyi" id="mIQkxfKjuV" role="1TKVEl">
-      <property role="TrG5h" value="optional" />
+      <property role="TrG5h" value="optional_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="3kiu$uWRY0l" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.components.functional.structure.UsesPortCategory&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="3kiu$uWRXZW" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="mIQkxg5ZSA">
@@ -756,6 +787,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="kYh4fkl663" role="PzmwI">
+      <ref role="PrY4T" node="1Zi765Epcf" resolve="IAnimatableElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2Q7cX_iyKre">
     <property role="1pbfSe" value="2146288985" />
@@ -895,6 +929,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7kdj6EM27c1" resolve="Variable" />
     </node>
+    <node concept="PrWs8" id="kYh4fk$jxE" role="PzmwI">
+      <ref role="PrY4T" node="1Zi765Epcf" resolve="IAnimatableElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kdj6EM27c1">
     <property role="1pbfSe" value="655736683" />
@@ -923,10 +960,15 @@
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IComponentExtender" />
   </node>
-  <node concept="PlHQZ" id="6TRSMhPOfBF">
-    <property role="1pbfSe" value="464986865" />
-    <property role="3GE5qa" value="components" />
-    <property role="TrG5h" value="IComponentCreator" />
+  <node concept="PlHQZ" id="1Zi765Epcf">
+    <property role="1pbfSe" value="2044142720" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatableElement" />
+  </node>
+  <node concept="PlHQZ" id="6o3TlxuctuA">
+    <property role="1pbfSe" value="1003111170" />
+    <property role="3GE5qa" value="analysis.animator" />
+    <property role="TrG5h" value="IAnimatable" />
   </node>
 </model>
 
