@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.iets3.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/org.iets3.allScripts.build" />
   <property name="mps.home" location="${basedir}/../../../../../../abugariu/Desktop/MPS 3.3.app/Contents" />
-  <property name="mbeddr.github.core.home" location="${basedir}/../../../mbeddr.core" />
+  <property name="mbeddr.github.core.home" location="${basedir}/../../../../mbeddr/mbeddr_github" />
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
   <property name="iets3.home" location="${basedir}/../../code/languages/org.iets3.core" />
   <property name="artifacts.mps" location="${mps.home}" />
