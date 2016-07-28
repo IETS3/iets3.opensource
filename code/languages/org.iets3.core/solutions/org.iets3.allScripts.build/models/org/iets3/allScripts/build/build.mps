@@ -466,8 +466,14 @@
             <property role="2Ry0Am" value=".." />
             <node concept="2Ry0Ak" id="1fXtMa7qk_7" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="1fXtMa7qkAg" role="2Ry0An">
-                <property role="2Ry0Am" value="mbeddr.core" />
+              <node concept="2Ry0Ak" id="6Y6Jk48g4tC" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="6Y6Jk48g4va" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr" />
+                  <node concept="2Ry0Ak" id="6Y6Jk48g4vv" role="2Ry0An">
+                    <property role="2Ry0Am" value="mbeddr_github" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
