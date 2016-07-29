@@ -4215,7 +4215,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfpvbz">
     <property role="3GE5qa" value="components.ports.data" />
-    <ref role="13h7C2" to="w9y2:mIQkxfpv7c" resolve="DataPortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfpv7c" resolve="DataPortCategory_old" />
     <node concept="13hLZK" id="mIQkxfpvb$" role="13h7CW">
       <node concept="3clFbS" id="mIQkxfpvb_" role="2VODD2" />
     </node>
@@ -4252,7 +4252,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfpvjq">
     <property role="3GE5qa" value="components.ports.data" />
-    <ref role="13h7C2" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory_old" />
     <node concept="13hLZK" id="mIQkxfpvjr" role="13h7CW">
       <node concept="3clFbS" id="mIQkxfpvjs" role="2VODD2" />
     </node>
@@ -4311,7 +4311,7 @@
       <node concept="3clFbS" id="mIQkxfpvkf" role="3clF47">
         <node concept="3clFbF" id="mIQkxfpvmq" role="3cqZAp">
           <node concept="35c_gC" id="mIQkxfpvmp" role="3clFbG">
-            <ref role="35c_gD" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory" />
+            <ref role="35c_gD" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory_old" />
           </node>
         </node>
       </node>
@@ -4581,7 +4581,7 @@
               <node concept="2OqwBi" id="7Atos1y4u2w" role="3K4Cdx">
                 <node concept="13iPFW" id="7Atos1y4tZQ" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7Atos1y4u7u" role="2OqNvi">
-                  <ref role="3TsBF5" to="w9y2:mIQkxfrzIk" resolve="optional" />
+                  <ref role="3TsBF5" to="w9y2:mIQkxfrzIk" resolve="optional_old" />
                 </node>
               </node>
             </node>
@@ -4614,7 +4614,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfpvnR">
     <property role="3GE5qa" value="components.ports.data" />
-    <ref role="13h7C2" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory_old" />
     <node concept="13i0hz" id="mIQkxfpvoi" role="13h7CS">
       <property role="TrG5h" value="kind" />
       <property role="13i0it" value="false" />
@@ -4674,7 +4674,7 @@
       <node concept="3clFbS" id="mIQkxfpvoB" role="3clF47">
         <node concept="3clFbF" id="mIQkxfpvoC" role="3cqZAp">
           <node concept="35c_gC" id="mIQkxfpvoD" role="3clFbG">
-            <ref role="35c_gD" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory" />
+            <ref role="35c_gD" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory_old" />
           </node>
         </node>
       </node>
@@ -4936,7 +4936,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfKjjy">
     <property role="3GE5qa" value="components.ports.service" />
-    <ref role="13h7C2" to="w9y2:mIQkxfKjiq" resolve="ServicePortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfKjiq" resolve="ServicePortCategory_old" />
     <node concept="13i0hz" id="mIQkxfKjkf" role="13h7CS">
       <property role="TrG5h" value="isDirectional" />
       <property role="13i0it" value="false" />
@@ -4973,7 +4973,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfKjlz">
     <property role="3GE5qa" value="components.ports.service" />
-    <ref role="13h7C2" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory_old" />
     <node concept="13hLZK" id="mIQkxfKjl$" role="13h7CW">
       <node concept="3clFbS" id="mIQkxfKjl_" role="2VODD2" />
     </node>
@@ -5034,7 +5034,7 @@
       <node concept="3clFbS" id="mIQkxfKjmM" role="3clF47">
         <node concept="3clFbF" id="mIQkxfKjse" role="3cqZAp">
           <node concept="35c_gC" id="mIQkxfKjsd" role="3clFbG">
-            <ref role="35c_gD" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory" />
+            <ref role="35c_gD" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory_old" />
           </node>
         </node>
       </node>
@@ -5285,7 +5285,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxfKjoA">
     <property role="3GE5qa" value="components.ports.service" />
-    <ref role="13h7C2" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory" />
+    <ref role="13h7C2" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory_old" />
     <node concept="13hLZK" id="mIQkxfKjoB" role="13h7CW">
       <node concept="3clFbS" id="mIQkxfKjoC" role="2VODD2" />
     </node>
@@ -5356,7 +5356,7 @@
               <node concept="2OqwBi" id="7Atos1y4uRc" role="3K4Cdx">
                 <node concept="13iPFW" id="7Atos1y4uOm" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7Atos1y4uWD" role="2OqNvi">
-                  <ref role="3TsBF5" to="w9y2:mIQkxfKjuV" resolve="optional" />
+                  <ref role="3TsBF5" to="w9y2:mIQkxfKjuV" resolve="optional_old" />
                 </node>
               </node>
             </node>
@@ -5380,7 +5380,7 @@
       <node concept="3clFbS" id="mIQkxfKjpP" role="3clF47">
         <node concept="3clFbF" id="mIQkxfKk2x" role="3cqZAp">
           <node concept="35c_gC" id="mIQkxfKk2w" role="3clFbG">
-            <ref role="35c_gD" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory" />
+            <ref role="35c_gD" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory_old" />
           </node>
         </node>
       </node>

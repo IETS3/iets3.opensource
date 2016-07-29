@@ -5642,7 +5642,7 @@
   </node>
   <node concept="24kQdi" id="mIQkxfpvhK">
     <property role="3GE5qa" value="components.ports.data" />
-    <ref role="1XX52x" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory" />
+    <ref role="1XX52x" to="w9y2:mIQkxfpv9A" resolve="ConsumesPortCategory_old" />
     <node concept="3EZMnI" id="mIQkxfrzIm" role="2wV5jI">
       <node concept="2iRfu4" id="mIQkxfrzIn" role="2iSdaV" />
       <node concept="3F0ifn" id="mIQkxfpvia" role="3EZMnx">
@@ -5650,14 +5650,14 @@
         <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
       </node>
       <node concept="1kHk_G" id="mIQkxfrzIv" role="3EZMnx">
-        <ref role="1NtTu8" to="w9y2:mIQkxfrzIk" resolve="optional" />
+        <ref role="1NtTu8" to="w9y2:mIQkxfrzIk" resolve="optional_old" />
         <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="mIQkxfpvi_">
     <property role="3GE5qa" value="components.ports.data" />
-    <ref role="1XX52x" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory" />
+    <ref role="1XX52x" to="w9y2:mIQkxfpvaK" resolve="ProducesPortCategory_old" />
     <node concept="3F0ifn" id="mIQkxfpviZ" role="2wV5jI">
       <property role="3F0ifm" value="produces" />
       <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
@@ -6223,7 +6223,7 @@
   </node>
   <node concept="24kQdi" id="mIQkxfKk3Y">
     <property role="3GE5qa" value="components.ports.service" />
-    <ref role="1XX52x" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory" />
+    <ref role="1XX52x" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory_old" />
     <node concept="3F0ifn" id="mIQkxfKk4E" role="2wV5jI">
       <property role="3F0ifm" value="provides" />
       <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
@@ -6231,7 +6231,7 @@
   </node>
   <node concept="24kQdi" id="mIQkxfKk55">
     <property role="3GE5qa" value="components.ports.service" />
-    <ref role="1XX52x" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory" />
+    <ref role="1XX52x" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory_old" />
     <node concept="3EZMnI" id="mIQkxfKk5O" role="2wV5jI">
       <node concept="l2Vlx" id="mIQkxfKk5P" role="2iSdaV" />
       <node concept="3F0ifn" id="mIQkxfKk5L" role="3EZMnx">
@@ -6239,7 +6239,7 @@
         <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
       </node>
       <node concept="1kHk_G" id="mIQkxfKk5X" role="3EZMnx">
-        <ref role="1NtTu8" to="w9y2:mIQkxfKjuV" resolve="optional" />
+        <ref role="1NtTu8" to="w9y2:mIQkxfKjuV" resolve="optional_old" />
         <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
       </node>
     </node>
