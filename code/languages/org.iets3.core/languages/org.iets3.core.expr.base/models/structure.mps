@@ -61,6 +61,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6iqfHNBPkk0" role="PzmwI">
+      <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
     <property role="1pbfSe" value="1600259238" />
@@ -701,6 +704,40 @@
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="1pbfSe" value="1017992628" />
     <property role="TrG5h" value="IStructuredSyntax" />
+  </node>
+  <node concept="1TIwiD" id="6iqfHNBNQFH">
+    <property role="1pbfSe" value="1281993161" />
+    <property role="TrG5h" value="CheckExpression" />
+    <property role="34LRSv" value="check" />
+    <property role="3GE5qa" value="check" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6iqfHNBNQFO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6iqfHNBNQFQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="6iqfHNBQSPS" role="1TKVEl">
+      <property role="TrG5h" value="stop" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6iqfHNBNSKz">
+    <property role="1pbfSe" value="1282001663" />
+    <property role="3GE5qa" value="check" />
+    <property role="TrG5h" value="CheckItExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="6iqfHNBPkjp">
+    <property role="1pbfSe" value="1282376629" />
+    <property role="TrG5h" value="IContainmentStackMember" />
   </node>
 </model>
 

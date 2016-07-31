@@ -586,7 +586,7 @@
           <node concept="3EZMnI" id="6HHp2WmWVkn" role="3EZMnx">
             <node concept="2iRfu4" id="6HHp2WmWVko" role="2iSdaV" />
             <node concept="3F0ifn" id="7D7uZV2GoKm" role="3EZMnx">
-              <property role="3F0ifm" value="execute assertions in type system:" />
+              <property role="3F0ifm" value="execute automatically  :" />
             </node>
             <node concept="3F0A7n" id="7D7uZV2GoKN" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:7D7uZV2GoIG" resolve="executeAutomatically" />
@@ -595,7 +595,7 @@
           <node concept="3EZMnI" id="6HHp2WmWVoa" role="3EZMnx">
             <node concept="2iRfu4" id="6HHp2WmWVob" role="2iSdaV" />
             <node concept="3F0ifn" id="6HHp2WmWVoc" role="3EZMnx">
-              <property role="3F0ifm" value="reference only local declarations:" />
+              <property role="3F0ifm" value="Only local declarations:" />
             </node>
             <node concept="3F0A7n" id="6HHp2WmWVod" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:6HHp2WmWVi9" resolve="referenceOnlyLocalStuff" />

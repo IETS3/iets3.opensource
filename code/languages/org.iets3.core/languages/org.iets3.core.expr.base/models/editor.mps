@@ -217,6 +217,7 @@
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
@@ -1630,6 +1631,47 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6iqfHNBNQGh">
+    <property role="3GE5qa" value="check" />
+    <ref role="1XX52x" to="hm2y:6iqfHNBNQFH" resolve="CheckExpression" />
+    <node concept="3EZMnI" id="6iqfHNBNQGm" role="2wV5jI">
+      <node concept="2iRfu4" id="6iqfHNBNQGn" role="2iSdaV" />
+      <node concept="3F0ifn" id="6iqfHNBNQGj" role="3EZMnx">
+        <property role="3F0ifm" value="check" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="1kHk_G" id="6iqfHNBQSQl" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:6iqfHNBQSPS" resolve="stop" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F1sOY" id="6iqfHNBNQGv" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:6iqfHNBNQFO" />
+      </node>
+      <node concept="_tjkj" id="6iqfHNBT9nU" role="3EZMnx">
+        <node concept="3EZMnI" id="6iqfHNBT9o5" role="_tjki">
+          <node concept="3F0ifn" id="6iqfHNBNQGB" role="3EZMnx">
+            <property role="3F0ifm" value="is" />
+            <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          </node>
+          <node concept="3F1sOY" id="6iqfHNBNQGV" role="3EZMnx">
+            <ref role="1NtTu8" to="hm2y:6iqfHNBNQFQ" />
+          </node>
+          <node concept="2iRfu4" id="6iqfHNBT9o8" role="2iSdaV" />
+          <node concept="VPM3Z" id="6iqfHNBT9o9" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6iqfHNBNSKW">
+    <property role="3GE5qa" value="check" />
+    <ref role="1XX52x" to="hm2y:6iqfHNBNSKz" resolve="CheckItExpr" />
+    <node concept="3F0ifn" id="6iqfHNBNSKY" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
 </model>
