@@ -573,6 +573,21 @@
         <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
       </node>
     </node>
+    <node concept="13i0hz" id="1KwU7TT__eQ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getContextComponent" />
+      <ref role="13i0hy" node="1KwU7TT_sqS" resolve="getContextComponent" />
+      <node concept="3Tm1VV" id="1KwU7TT__eR" role="1B3o_S" />
+      <node concept="3clFbS" id="1KwU7TT__eU" role="3clF47">
+        <node concept="3clFbF" id="1KwU7TT_FyI" role="3cqZAp">
+          <node concept="13iPFW" id="1KwU7TT_FyH" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1KwU7TT__eV" role="3clF45">
+        <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+      </node>
+    </node>
     <node concept="13i0hz" id="7Zvsa54vnYI" role="13h7CS">
       <property role="TrG5h" value="allContents" />
       <node concept="3Tm1VV" id="7Zvsa54vnYJ" role="1B3o_S" />
@@ -7573,21 +7588,21 @@
       <node concept="3clFbS" id="435Eqf9c0ks" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="3DZSCm583y2">
+  <node concept="13h7C7" id="1KwU7TT_sqA">
     <property role="3GE5qa" value="components" />
-    <ref role="13h7C2" to="w9y2:3DZSCm583xq" resolve="IComponentExtender" />
-    <node concept="13i0hz" id="3DZSCm583yk" role="13h7CS">
+    <ref role="13h7C2" to="w9y2:1KwU7TT_spY" resolve="IComponentContext" />
+    <node concept="13hLZK" id="1KwU7TT_sqB" role="13h7CW">
+      <node concept="3clFbS" id="1KwU7TT_sqC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1KwU7TT_sqS" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getComponent" />
-      <node concept="3Tm1VV" id="3DZSCm583yl" role="1B3o_S" />
-      <node concept="3clFbS" id="3DZSCm583ym" role="3clF47" />
-      <node concept="3Tqbb2" id="3DZSCm583ys" role="3clF45">
+      <property role="TrG5h" value="getContextComponent" />
+      <node concept="3Tm1VV" id="1KwU7TT_sqT" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1KwU7TT__ey" role="3clF45">
         <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
       </node>
-    </node>
-    <node concept="13hLZK" id="3DZSCm583y3" role="13h7CW">
-      <node concept="3clFbS" id="3DZSCm583y4" role="2VODD2" />
+      <node concept="3clFbS" id="1KwU7TT_sqV" role="3clF47" />
     </node>
   </node>
 </model>

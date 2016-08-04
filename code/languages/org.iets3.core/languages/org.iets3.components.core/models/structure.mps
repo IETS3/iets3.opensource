@@ -112,6 +112,9 @@
     <node concept="PrWs8" id="cJpacq5ToM" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="1KwU7TT__eH" role="PzmwI">
+      <ref role="PrY4T" node="1KwU7TT_spY" resolve="IComponentContext" />
+    </node>
     <node concept="PrWs8" id="6LfBX8Yl7xY" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yl7sG" resolve="IKindContext" />
     </node>
@@ -955,11 +958,6 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
-  <node concept="PlHQZ" id="3DZSCm583xq">
-    <property role="1pbfSe" value="1080026401" />
-    <property role="3GE5qa" value="components" />
-    <property role="TrG5h" value="IComponentExtender" />
-  </node>
   <node concept="PlHQZ" id="1Zi765Epcf">
     <property role="1pbfSe" value="2044142720" />
     <property role="3GE5qa" value="analysis.animator" />
@@ -969,6 +967,11 @@
     <property role="1pbfSe" value="1003111170" />
     <property role="3GE5qa" value="analysis.animator" />
     <property role="TrG5h" value="IAnimatable" />
+  </node>
+  <node concept="PlHQZ" id="1KwU7TT_spY">
+    <property role="1pbfSe" value="1783189764" />
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="IComponentContext" />
   </node>
 </model>
 
