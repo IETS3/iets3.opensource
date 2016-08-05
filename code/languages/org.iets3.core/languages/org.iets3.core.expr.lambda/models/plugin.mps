@@ -415,68 +415,6 @@
                 </node>
               </node>
             </node>
-            <node concept="2Gpval" id="KaZMgyhbii" role="3cqZAp">
-              <node concept="2GrKxI" id="KaZMgyhbij" role="2Gsz3X">
-                <property role="TrG5h" value="post" />
-              </node>
-              <node concept="2OqwBi" id="KaZMgyhbI7" role="2GsD0m">
-                <node concept="2OqwBi" id="KaZMgyhbik" role="2Oq$k0">
-                  <node concept="oxGPV" id="KaZMgyhbil" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="KaZMgyhbx_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="zzzn:49WTic8gvyC" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="KaZMgyhc8p" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:KaZMgyh1v9" resolve="postconditions" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="KaZMgyhbin" role="2LFqv$">
-                <node concept="3clFbF" id="KaZMgyhbio" role="3cqZAp">
-                  <node concept="37vLTI" id="KaZMgyhbip" role="3clFbG">
-                    <node concept="37vLTw" id="KaZMgyhcnX" role="37vLTx">
-                      <ref role="3cqZAo" node="6iqfHNC0zkA" resolve="res" />
-                    </node>
-                    <node concept="3EllGN" id="KaZMgyhbir" role="37vLTJ">
-                      <node concept="2OqwBi" id="KaZMgyhcdl" role="3ElVtu">
-                        <node concept="oxGPV" id="KaZMgyhbis" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="KaZMgyhcmw" role="2OqNvi">
-                          <ref role="3Tt5mk" to="zzzn:49WTic8gvyC" />
-                        </node>
-                      </node>
-                      <node concept="TvHiN" id="KaZMgyhbit" role="3ElQJh" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="KaZMgyhbiu" role="3cqZAp">
-                  <node concept="2YIFZM" id="KaZMgyhbiv" role="3clFbG">
-                    <ref role="37wK5l" to="oq0c:KaZMgyahWE" resolve="reportErrorIfFalse" />
-                    <ref role="1Pybhc" to="oq0c:6iqfHNCjc1z" resolve="ErrorOutputHelper" />
-                    <node concept="oxNuS" id="KaZMgyhbiw" role="37wK5m" />
-                    <node concept="qpA2v" id="KaZMgyhbix" role="37wK5m">
-                      <node concept="2OqwBi" id="KaZMgyhbiy" role="3SLO0q">
-                        <node concept="2GrUjf" id="KaZMgyhbiz" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="KaZMgyhbij" resolve="post" />
-                        </node>
-                        <node concept="3TrEf2" id="KaZMgyhbi$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="KaZMgyhbi_" role="37wK5m">
-                      <node concept="2GrUjf" id="KaZMgyhbiA" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="KaZMgyhbij" resolve="post" />
-                      </node>
-                      <node concept="3TrEf2" id="KaZMgyhbiB" role="2OqNvi">
-                        <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="KaZMgyhbiC" role="37wK5m">
-                      <property role="Xl_RC" value="Postcondition failed" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="6iqfHNC0HMS" role="3cqZAp">
               <node concept="2OqwBi" id="6iqfHNC0HPF" role="3clFbG">
                 <node concept="37vLTw" id="6iqfHNC0HMQ" role="2Oq$k0">
@@ -518,9 +456,119 @@
     <node concept="qq9P1" id="3ejdIQ11uNV" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
-      <node concept="3vetai" id="3ejdIQ11v2f" role="3vQZUl">
-        <node concept="rqRoa" id="3ejdIQ11v2t" role="3vdyny">
-          <ref role="rqRob" to="zzzn:49WTic8eSDm" />
+      <node concept="3dA_Gj" id="KaZMgyliNg" role="3vQZUl">
+        <node concept="9aQIb" id="KaZMgyliNj" role="3vcmbn">
+          <node concept="3clFbS" id="KaZMgyliNm" role="9aQI4">
+            <node concept="2Gpval" id="KaZMgylhnM" role="3cqZAp">
+              <node concept="2GrKxI" id="KaZMgylhnN" role="2Gsz3X">
+                <property role="TrG5h" value="pre" />
+              </node>
+              <node concept="2OqwBi" id="KaZMgylhnO" role="2GsD0m">
+                <node concept="oxGPV" id="KaZMgylhnQ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="KaZMgyljIB" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:KaZMgyh1or" resolve="preconditions" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="KaZMgylhnT" role="2LFqv$">
+                <node concept="3clFbF" id="KaZMgylho2" role="3cqZAp">
+                  <node concept="2YIFZM" id="KaZMgylho3" role="3clFbG">
+                    <ref role="37wK5l" to="oq0c:KaZMgyahWE" resolve="reportErrorIfFalse" />
+                    <ref role="1Pybhc" to="oq0c:6iqfHNCjc1z" resolve="ErrorOutputHelper" />
+                    <node concept="oxNuS" id="KaZMgylho4" role="37wK5m" />
+                    <node concept="qpA2v" id="KaZMgylho5" role="37wK5m">
+                      <node concept="2OqwBi" id="KaZMgylho6" role="3SLO0q">
+                        <node concept="2GrUjf" id="KaZMgylho7" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="KaZMgylhnN" resolve="pre" />
+                        </node>
+                        <node concept="3TrEf2" id="KaZMgylho8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="KaZMgylho9" role="37wK5m">
+                      <node concept="2GrUjf" id="KaZMgylhoa" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="KaZMgylhnN" resolve="pre" />
+                      </node>
+                      <node concept="3TrEf2" id="KaZMgylhob" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="KaZMgylhoc" role="37wK5m">
+                      <property role="Xl_RC" value="Precondition failed" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="KaZMgylk$l" role="3cqZAp">
+              <node concept="3cpWsn" id="KaZMgylk$m" role="3cpWs9">
+                <property role="TrG5h" value="res" />
+                <node concept="3uibUv" id="KaZMgylk$k" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="rqRoa" id="KaZMgylk$n" role="33vP2m">
+                  <ref role="rqRob" to="zzzn:49WTic8eSDm" />
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="KaZMgyhbii" role="3cqZAp">
+              <node concept="2GrKxI" id="KaZMgyhbij" role="2Gsz3X">
+                <property role="TrG5h" value="post" />
+              </node>
+              <node concept="2OqwBi" id="KaZMgyhbI7" role="2GsD0m">
+                <node concept="oxGPV" id="KaZMgylkU0" role="2Oq$k0" />
+                <node concept="2qgKlT" id="KaZMgyhc8p" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:KaZMgyh1v9" resolve="postconditions" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="KaZMgyhbin" role="2LFqv$">
+                <node concept="3clFbF" id="KaZMgyhbio" role="3cqZAp">
+                  <node concept="37vLTI" id="KaZMgyhbip" role="3clFbG">
+                    <node concept="37vLTw" id="KaZMgyhcnX" role="37vLTx">
+                      <ref role="3cqZAo" node="KaZMgylk$m" resolve="res" />
+                    </node>
+                    <node concept="3EllGN" id="KaZMgyhbir" role="37vLTJ">
+                      <node concept="oxGPV" id="KaZMgylkXE" role="3ElVtu" />
+                      <node concept="TvHiN" id="KaZMgyhbit" role="3ElQJh" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="KaZMgyhbiu" role="3cqZAp">
+                  <node concept="2YIFZM" id="KaZMgyhbiv" role="3clFbG">
+                    <ref role="1Pybhc" to="oq0c:6iqfHNCjc1z" resolve="ErrorOutputHelper" />
+                    <ref role="37wK5l" to="oq0c:KaZMgyahWE" resolve="reportErrorIfFalse" />
+                    <node concept="oxNuS" id="KaZMgyhbiw" role="37wK5m" />
+                    <node concept="qpA2v" id="KaZMgyhbix" role="37wK5m">
+                      <node concept="2OqwBi" id="KaZMgyhbiy" role="3SLO0q">
+                        <node concept="2GrUjf" id="KaZMgyhbiz" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="KaZMgyhbij" resolve="post" />
+                        </node>
+                        <node concept="3TrEf2" id="KaZMgyhbi$" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="KaZMgyhbi_" role="37wK5m">
+                      <node concept="2GrUjf" id="KaZMgyhbiA" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="KaZMgyhbij" resolve="post" />
+                      </node>
+                      <node concept="3TrEf2" id="KaZMgyhbiB" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="KaZMgyhbiC" role="37wK5m">
+                      <property role="Xl_RC" value="Postcondition failed" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="KaZMgyljpn" role="3cqZAp">
+              <node concept="37vLTw" id="KaZMgylk$o" role="3cqZAk">
+                <ref role="3cqZAo" node="KaZMgylk$m" resolve="res" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
