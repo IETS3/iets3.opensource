@@ -8,10 +8,10 @@
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
+    <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
-    <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -609,6 +609,14 @@
     <ref role="1XX52x" to="zzzn:KaZMgy7sW6" resolve="ValValueInContractExpr" />
     <node concept="3F0ifn" id="KaZMgy7sWN" role="2wV5jI">
       <property role="3F0ifm" value="it" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="KaZMgyeHzf">
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="zzzn:KaZMgyeHyQ" resolve="FunResExpr" />
+    <node concept="3F0ifn" id="KaZMgyeHzh" role="2wV5jI">
+      <property role="3F0ifm" value="res" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
 </model>

@@ -206,6 +206,9 @@
     <node concept="PrWs8" id="6iqfHNC0Hzk" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+    <node concept="PrWs8" id="KaZMgygrmg" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8eSD1">
     <property role="1pbfSe" value="1253601124" />
@@ -302,6 +305,9 @@
     <node concept="PrWs8" id="KaZMgy4KPG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
     </node>
+    <node concept="PrWs8" id="KaZMgykRO0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8iHUx">
     <property role="1pbfSe" value="1254605764" />
@@ -350,6 +356,13 @@
     <property role="3GE5qa" value="block" />
     <property role="TrG5h" value="ValValueInContractExpr" />
     <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
+  </node>
+  <node concept="1TIwiD" id="KaZMgyeHyQ">
+    <property role="1pbfSe" value="776329178" />
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="FunResExpr" />
+    <property role="34LRSv" value="res" />
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
   </node>
 </model>

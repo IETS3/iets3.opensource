@@ -3,14 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1789,6 +1792,41 @@
     <node concept="1YaCAy" id="KaZMgy7sXi" role="1YuTPh">
       <property role="TrG5h" value="vv" />
       <ref role="1YaFvo" to="zzzn:KaZMgy7sW6" resolve="ValValueInContractExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="KaZMgyeHzH">
+    <property role="TrG5h" value="typeof_FunResExpr" />
+    <property role="3GE5qa" value="function" />
+    <node concept="3clFbS" id="KaZMgyeHzI" role="18ibNy">
+      <node concept="1Z5TYs" id="KaZMgyeHA9" role="3cqZAp">
+        <node concept="mw_s8" id="KaZMgyeHA_" role="1ZfhKB">
+          <node concept="1Z2H0r" id="KaZMgyeHAx" role="mwGJk">
+            <node concept="2OqwBi" id="KaZMgyeHDU" role="1Z2MuG">
+              <node concept="1YBJjd" id="KaZMgyeHAT" role="2Oq$k0">
+                <ref role="1YBMHb" node="KaZMgyeHzK" resolve="fre" />
+              </node>
+              <node concept="2Xjw5R" id="KaZMgyeHL8" role="2OqNvi">
+                <node concept="1xMEDy" id="KaZMgyeHLa" role="1xVPHs">
+                  <node concept="chp4Y" id="KaZMgyhlan" role="ri$Ld">
+                    <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="KaZMgyeHAc" role="1ZfhK$">
+          <node concept="1Z2H0r" id="KaZMgyeHzU" role="mwGJk">
+            <node concept="1YBJjd" id="KaZMgyeH$d" role="1Z2MuG">
+              <ref role="1YBMHb" node="KaZMgyeHzK" resolve="fre" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="KaZMgyeHzK" role="1YuTPh">
+      <property role="TrG5h" value="fre" />
+      <ref role="1YaFvo" to="zzzn:KaZMgyeHyQ" resolve="FunResExpr" />
     </node>
   </node>
 </model>
