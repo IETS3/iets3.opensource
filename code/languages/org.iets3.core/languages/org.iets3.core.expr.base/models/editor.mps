@@ -1745,5 +1745,14 @@
       <node concept="2iRfu4" id="KaZMgy8$Jq" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="KaZMgylLmN">
+    <property role="3GE5qa" value="contract" />
+    <ref role="1XX52x" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
+    <node concept="1kIj98" id="KaZMgylLmV" role="2wV5jI">
+      <node concept="3F1sOY" id="KaZMgylLn3" role="1kIj9b">
+        <ref role="1NtTu8" to="hm2y:KaZMgy4Ilu" />
+      </node>
+    </node>
+  </node>
 </model>
 

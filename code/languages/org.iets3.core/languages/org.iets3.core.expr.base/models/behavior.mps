@@ -4251,6 +4251,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="KaZMgylLn7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canHavePlainConstraint" />
+      <node concept="3Tm1VV" id="KaZMgylLn8" role="1B3o_S" />
+      <node concept="10P_77" id="KaZMgylLn9" role="3clF45" />
+      <node concept="3clFbS" id="KaZMgylLna" role="3clF47">
+        <node concept="3clFbF" id="KaZMgylLnb" role="3cqZAp">
+          <node concept="3clFbT" id="KaZMgylLnc" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="KaZMgyh03Y" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -4377,6 +4391,34 @@
             <node concept="v3k3i" id="KaZMgyh1vj" role="2OqNvi">
               <node concept="chp4Y" id="KaZMgyh1Pp" role="v3oSu">
                 <ref role="cht4Q" to="hm2y:KaZMgy4InG" resolve="Postcondition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="KaZMgylLvI" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="plainConstraints" />
+      <node concept="3Tm1VV" id="KaZMgylLvJ" role="1B3o_S" />
+      <node concept="A3Dl8" id="KaZMgylLvK" role="3clF45">
+        <node concept="3Tqbb2" id="KaZMgylLvL" role="A3Ik2">
+          <ref role="ehGHo" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="KaZMgylLvM" role="3clF47">
+        <node concept="3clFbF" id="KaZMgylLvN" role="3cqZAp">
+          <node concept="2OqwBi" id="KaZMgylLvO" role="3clFbG">
+            <node concept="2OqwBi" id="KaZMgylLvP" role="2Oq$k0">
+              <node concept="13iPFW" id="KaZMgylLvQ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="KaZMgylLvR" role="2OqNvi">
+                <ref role="37wK5l" node="KaZMgyh03Y" resolve="allContractItems" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="KaZMgylLvS" role="2OqNvi">
+              <node concept="chp4Y" id="KaZMgylLKU" role="v3oSu">
+                <ref role="cht4Q" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
               </node>
             </node>
           </node>

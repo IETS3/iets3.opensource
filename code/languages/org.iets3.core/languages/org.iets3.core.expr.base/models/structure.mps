@@ -810,5 +810,11 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="KaZMgylLmk">
+    <property role="1pbfSe" value="778179768" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="PlainConstraint" />
+    <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
+  </node>
 </model>
 

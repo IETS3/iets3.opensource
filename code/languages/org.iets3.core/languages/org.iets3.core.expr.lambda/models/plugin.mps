@@ -916,12 +916,12 @@
             </node>
             <node concept="2Gpval" id="KaZMgyh2eU" role="3cqZAp">
               <node concept="2GrKxI" id="KaZMgyh2eW" role="2Gsz3X">
-                <property role="TrG5h" value="inv" />
+                <property role="TrG5h" value="con" />
               </node>
               <node concept="2OqwBi" id="KaZMgyh2r9" role="2GsD0m">
                 <node concept="oxGPV" id="KaZMgyh2mi" role="2Oq$k0" />
-                <node concept="2qgKlT" id="KaZMgyh2Bv" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:KaZMgygZub" resolve="invariants" />
+                <node concept="2qgKlT" id="KaZMgylMPX" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:KaZMgylLvI" resolve="plainConstraints" />
                 </node>
               </node>
               <node concept="3clFbS" id="KaZMgyh2f0" role="2LFqv$">
@@ -944,7 +944,7 @@
                     <node concept="qpA2v" id="KaZMgyahGI" role="37wK5m">
                       <node concept="2OqwBi" id="KaZMgyahID" role="3SLO0q">
                         <node concept="2GrUjf" id="KaZMgyahGY" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="KaZMgyh2eW" resolve="inv" />
+                          <ref role="2Gs0qQ" node="KaZMgyh2eW" resolve="con" />
                         </node>
                         <node concept="3TrEf2" id="KaZMgyhaBM" role="2OqNvi">
                           <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
@@ -953,14 +953,14 @@
                     </node>
                     <node concept="2OqwBi" id="KaZMgyamiO" role="37wK5m">
                       <node concept="2GrUjf" id="KaZMgyalJo" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="KaZMgyh2eW" resolve="inv" />
+                        <ref role="2Gs0qQ" node="KaZMgyh2eW" resolve="con" />
                       </node>
                       <node concept="3TrEf2" id="KaZMgyh6SD" role="2OqNvi">
                         <ref role="3Tt5mk" to="hm2y:KaZMgy4Ilu" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="KaZMgyalP$" role="37wK5m">
-                      <property role="Xl_RC" value="Invariant failed" />
+                      <property role="Xl_RC" value="Constraint failed" />
                     </node>
                   </node>
                 </node>

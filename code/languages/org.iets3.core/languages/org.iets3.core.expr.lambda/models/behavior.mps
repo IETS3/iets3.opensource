@@ -952,20 +952,20 @@
       </node>
       <node concept="10P_77" id="49WTic8iGDq" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="KaZMgy6mBb" role="13h7CS">
+    <node concept="13i0hz" id="KaZMgylM0Y" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="canHaveInvariant" />
-      <ref role="13i0hy" to="pbu6:KaZMgy4IiZ" resolve="canHaveInvariant" />
-      <node concept="3Tm1VV" id="KaZMgy6mBc" role="1B3o_S" />
-      <node concept="3clFbS" id="KaZMgy6mBh" role="3clF47">
-        <node concept="3clFbF" id="KaZMgy6mFi" role="3cqZAp">
-          <node concept="3clFbT" id="KaZMgy6mFh" role="3clFbG">
+      <property role="TrG5h" value="canHavePlainConstraint" />
+      <ref role="13i0hy" to="pbu6:KaZMgylLn7" resolve="canHavePlainConstraint" />
+      <node concept="3Tm1VV" id="KaZMgylM0Z" role="1B3o_S" />
+      <node concept="3clFbS" id="KaZMgylM14" role="3clF47">
+        <node concept="3clFbF" id="KaZMgylM7m" role="3cqZAp">
+          <node concept="3clFbT" id="KaZMgylM7l" role="3clFbG">
             <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="KaZMgy6mBi" role="3clF45" />
+      <node concept="10P_77" id="KaZMgylM15" role="3clF45" />
     </node>
     <node concept="13i0hz" id="KaZMgykROa" role="13h7CS">
       <property role="13i0iv" value="false" />
