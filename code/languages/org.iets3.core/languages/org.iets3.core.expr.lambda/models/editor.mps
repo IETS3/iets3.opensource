@@ -92,6 +92,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -113,7 +116,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -495,6 +500,20 @@
           </node>
         </node>
       </node>
+      <node concept="_tjkj" id="KaZMgy4KRG" role="3EZMnx">
+        <node concept="3F1sOY" id="KaZMgy4KS8" role="_tjki">
+          <ref role="1NtTu8" to="hm2y:KaZMgy4Ily" />
+        </node>
+        <node concept="ZYGn8" id="KaZMgy4KSc" role="ZWbT9">
+          <node concept="3clFbS" id="KaZMgy4KSd" role="2VODD2">
+            <node concept="3clFbF" id="KaZMgy4KSF" role="3cqZAp">
+              <node concept="Xl_RD" id="KaZMgy4KSE" role="3clFbG">
+                <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="49WTic8ix7x" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
@@ -583,6 +602,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="KaZMgy7sWC">
+    <property role="3GE5qa" value="block" />
+    <ref role="1XX52x" to="zzzn:KaZMgy7sW6" resolve="ValValueInContractExpr" />
+    <node concept="3F0ifn" id="KaZMgy7sWN" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
     </node>
   </node>
 </model>

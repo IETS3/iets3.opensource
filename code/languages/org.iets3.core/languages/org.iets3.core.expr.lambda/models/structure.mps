@@ -299,6 +299,9 @@
     <node concept="PrWs8" id="69zaTr1ELbM" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
+    <node concept="PrWs8" id="KaZMgy4KPG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8iHUx">
     <property role="1pbfSe" value="1254605764" />
@@ -341,6 +344,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgy7sW6">
+    <property role="1pbfSe" value="774426154" />
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="ValValueInContractExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
   </node>
 </model>
 

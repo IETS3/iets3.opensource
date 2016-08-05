@@ -2601,5 +2601,30 @@
       <ref role="1YaFvo" to="hm2y:6iqfHNBNSKz" resolve="CheckItExpr" />
     </node>
   </node>
+  <node concept="1YbPZF" id="KaZMgy51bZ">
+    <property role="TrG5h" value="typeof_ContractItem" />
+    <property role="3GE5qa" value="contract" />
+    <node concept="3clFbS" id="KaZMgy51c0" role="18ibNy">
+      <node concept="1Z5TYs" id="KaZMgy51ht" role="3cqZAp">
+        <node concept="mw_s8" id="KaZMgy51hR" role="1ZfhKB">
+          <node concept="2YIFZM" id="KaZMgy51it" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="KaZMgy51hw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="KaZMgy51ci" role="mwGJk">
+            <node concept="1YBJjd" id="KaZMgy51c_" role="1Z2MuG">
+              <ref role="1YBMHb" node="KaZMgy51c2" resolve="ci" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="KaZMgy51c2" role="1YuTPh">
+      <property role="TrG5h" value="ci" />
+      <ref role="1YaFvo" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+    </node>
+  </node>
 </model>
 
