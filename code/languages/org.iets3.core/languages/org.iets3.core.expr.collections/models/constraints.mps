@@ -424,5 +424,72 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6HHp2Wnvlwe">
+    <property role="3GE5qa" value="collection.numeric" />
+    <ref role="1M2myG" to="700h:6HHp2WnvluK" resolve="MinOp" />
+    <node concept="nKS2y" id="6HHp2Wnvlwx" role="1MLUbF">
+      <node concept="3clFbS" id="6HHp2Wnvlwy" role="2VODD2">
+        <node concept="3cpWs8" id="6HHp2Wnvlx8" role="3cqZAp">
+          <node concept="3cpWsn" id="6HHp2Wnvlx9" role="3cpWs9">
+            <property role="TrG5h" value="mgr" />
+            <node concept="3uibUv" id="6HHp2Wnvlxa" role="1tU5fm">
+              <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
+            </node>
+            <node concept="2OqwBi" id="6HHp2Wnvlxb" role="33vP2m">
+              <node concept="2YIFZM" id="6HHp2Wnvlxc" role="2Oq$k0">
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="6HHp2Wnvlxd" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6HHp2Wnvlxe" role="3cqZAp">
+          <node concept="3cpWsn" id="6HHp2Wnvlxf" role="3cpWs9">
+            <property role="TrG5h" value="ct" />
+            <node concept="3Tqbb2" id="6HHp2Wnvlxg" role="1tU5fm" />
+            <node concept="2OqwBi" id="6HHp2Wnvlxh" role="33vP2m">
+              <node concept="2OqwBi" id="6HHp2Wnvlxi" role="2Oq$k0">
+                <node concept="1PxgMI" id="6HHp2Wnvlxj" role="2Oq$k0">
+                  <ref role="1PxNhF" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="6HHp2Wnvlxk" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="6HHp2Wnvlxl" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="6HHp2Wnvlxm" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6HHp2Wnvlxn" role="3cqZAp">
+          <node concept="2OqwBi" id="6HHp2Wnvlxo" role="3clFbG">
+            <node concept="37vLTw" id="6HHp2Wnvlxp" role="2Oq$k0">
+              <ref role="3cqZAo" node="6HHp2Wnvlx9" resolve="mgr" />
+            </node>
+            <node concept="liA8E" id="6HHp2Wnvlxq" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="6HHp2Wnvlxr" role="37wK5m">
+                <ref role="3cqZAo" node="6HHp2Wnvlxf" resolve="ct" />
+              </node>
+              <node concept="2pJPEk" id="6HHp2Wnvlxs" role="37wK5m">
+                <node concept="2pJPED" id="6HHp2Wnvlxt" role="2pJPEn">
+                  <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  <node concept="2pIpSj" id="6HHp2Wnvlxu" role="2pJxcM">
+                    <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                    <node concept="2pJPED" id="6HHp2Wnvlxv" role="2pJxcZ">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

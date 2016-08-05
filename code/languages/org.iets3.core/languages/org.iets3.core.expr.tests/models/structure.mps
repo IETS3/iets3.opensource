@@ -146,6 +146,12 @@
     <node concept="PrWs8" id="6HHp2WmWZ9L" role="PzmwI">
       <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
     </node>
+    <node concept="PrWs8" id="6HHp2WngtW9" role="PzmwI">
+      <ref role="PrY4T" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WmRVXt">
     <property role="1pbfSe" value="2108873844" />
