@@ -27,7 +27,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -61,6 +63,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6iqfHNBPkk0" role="PzmwI">
+      <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
     <property role="1pbfSe" value="1600259238" />
@@ -701,6 +706,115 @@
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="1pbfSe" value="1017992628" />
     <property role="TrG5h" value="IStructuredSyntax" />
+  </node>
+  <node concept="1TIwiD" id="KaZMgy51iZ">
+    <property role="1pbfSe" value="773788643" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ExprInContract" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="KaZMgy4Iiz">
+    <property role="1pbfSe" value="773710791" />
+    <property role="TrG5h" value="IContracted" />
+    <property role="3GE5qa" value="contract" />
+    <node concept="1TJgyj" id="KaZMgy4Ily" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contract" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="KaZMgy4Ilx" resolve="Contract" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6iqfHNBNSKz">
+    <property role="1pbfSe" value="1282001663" />
+    <property role="3GE5qa" value="check" />
+    <property role="TrG5h" value="CheckItExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="6iqfHNBPkjp">
+    <property role="1pbfSe" value="1282376629" />
+    <property role="TrG5h" value="IContainmentStackMember" />
+    <node concept="PrWs8" id="6iqfHNCeQVX" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgy4InG">
+    <property role="1pbfSe" value="773711120" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Postcondition" />
+    <property role="34LRSv" value="post" />
+    <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
+  </node>
+  <node concept="1TIwiD" id="KaZMgy4InH">
+    <property role="1pbfSe" value="773711121" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Invariant" />
+    <property role="34LRSv" value="inv" />
+    <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
+  </node>
+  <node concept="1TIwiD" id="KaZMgy4Ilx">
+    <property role="1pbfSe" value="773710981" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Contract" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="KaZMgy4Il_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="KaZMgy4Ils" resolve="ContractItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgy4Ils">
+    <property role="1pbfSe" value="773710976" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ContractItem" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="KaZMgy4Ilu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgy4Ilt">
+    <property role="1pbfSe" value="773710977" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Precondition" />
+    <property role="34LRSv" value="pre" />
+    <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
+  </node>
+  <node concept="1TIwiD" id="6iqfHNBNQFH">
+    <property role="1pbfSe" value="1281993161" />
+    <property role="TrG5h" value="CheckExpression" />
+    <property role="34LRSv" value="check" />
+    <property role="3GE5qa" value="check" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6iqfHNBNQFO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6iqfHNBNQFQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="6iqfHNBQSPS" role="1TKVEl">
+      <property role="TrG5h" value="stop" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgylLmk">
+    <property role="1pbfSe" value="778179768" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="PlainConstraint" />
+    <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
   </node>
 </model>
 

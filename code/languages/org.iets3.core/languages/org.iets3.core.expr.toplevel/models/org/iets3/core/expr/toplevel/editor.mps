@@ -22,8 +22,8 @@
     <import index="rie3" ref="r:ec4fadfa-b752-42e1-9d44-ff41929cb381(org.iets3.core.expr.tests.editor)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -113,6 +113,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -152,7 +155,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -286,6 +291,20 @@
           <node concept="2iRfu4" id="69zaTr1GaWx" role="2iSdaV" />
           <node concept="VPM3Z" id="69zaTr1GaWy" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="KaZMgyebXJ" role="3EZMnx">
+        <node concept="3F1sOY" id="KaZMgyec5r" role="_tjki">
+          <ref role="1NtTu8" to="hm2y:KaZMgy4Ily" />
+        </node>
+        <node concept="ZYGn8" id="KaZMgyec5v" role="ZWbT9">
+          <node concept="3clFbS" id="KaZMgyec5w" role="2VODD2">
+            <node concept="3clFbF" id="KaZMgyec6b" role="3cqZAp">
+              <node concept="Xl_RD" id="KaZMgyec6a" role="3clFbG">
+                <property role="Xl_RC" value="where" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -479,7 +498,7 @@
     <ref role="1XX52x" to="yv47:69zaTr1HgRc" resolve="Constant" />
     <node concept="3EZMnI" id="69zaTr1HgSo" role="2wV5jI">
       <node concept="3F0ifn" id="69zaTr1HgSv" role="3EZMnx">
-        <property role="3F0ifm" value="const" />
+        <property role="3F0ifm" value="val" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F0A7n" id="69zaTr1HgS_" role="3EZMnx">
@@ -790,6 +809,41 @@
     </node>
     <node concept="2aJ2om" id="6HHp2Wn8yM6" role="CpUAK">
       <ref role="2$4xQ3" to="rie3:6HHp2WmZdFE" resolve="demoMode" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HHp2WngtU5">
+    <property role="3GE5qa" value="typedef" />
+    <ref role="1XX52x" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+    <node concept="3EZMnI" id="6HHp2WngtUa" role="2wV5jI">
+      <node concept="2iRfu4" id="6HHp2WngtUb" role="2iSdaV" />
+      <node concept="3F0ifn" id="6HHp2WngtU7" role="3EZMnx">
+        <property role="3F0ifm" value="typedef" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0A7n" id="6HHp2WngtUw" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+      </node>
+      <node concept="3F0ifn" id="6HHp2WngtUE" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="6HHp2WngtUj" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:6HHp2WngtTF" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HHp2WngtVL">
+    <property role="3GE5qa" value="typedef" />
+    <ref role="1XX52x" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    <node concept="1iCGBv" id="6HHp2WngtVN" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:6HHp2WngtVn" />
+      <node concept="1sVBvm" id="6HHp2WngtVP" role="1sWHZn">
+        <node concept="3F0A7n" id="6HHp2WngtVZ" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
