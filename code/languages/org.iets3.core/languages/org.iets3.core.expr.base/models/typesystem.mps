@@ -19,7 +19,6 @@
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
-    <import index="bult" ref="r:6a8da326-3135-4083-bdb9-cafc774ff4e8(com.syngrato.hypercon.expr.typesystem)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
@@ -2544,8 +2543,8 @@
             </node>
           </node>
         </node>
-        <node concept="1YBJjd" id="2U5Q01UkMpD" role="1ZmcU8">
-          <ref role="1YBMHb" to="bult:2U5Q01UkDTz" resolve="oneOfTarget" />
+        <node concept="1YBJjd" id="6ZqInqYQMGn" role="1ZmcU8">
+          <ref role="1YBMHb" node="2PhSkOgidtl" resolve="inTarget" />
         </node>
       </node>
     </node>
