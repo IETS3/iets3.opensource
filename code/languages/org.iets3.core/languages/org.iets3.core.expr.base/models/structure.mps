@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -726,13 +726,6 @@
       <ref role="20lvS9" node="KaZMgy4Ilx" resolve="Contract" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6iqfHNBNSKz">
-    <property role="1pbfSe" value="1282001663" />
-    <property role="3GE5qa" value="check" />
-    <property role="TrG5h" value="CheckItExpr" />
-    <property role="34LRSv" value="it" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-  </node>
   <node concept="PlHQZ" id="6iqfHNBPkjp">
     <property role="1pbfSe" value="1282376629" />
     <property role="TrG5h" value="IContainmentStackMember" />
@@ -787,34 +780,49 @@
     <property role="34LRSv" value="pre" />
     <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
   </node>
-  <node concept="1TIwiD" id="6iqfHNBNQFH">
-    <property role="1pbfSe" value="1281993161" />
-    <property role="TrG5h" value="CheckExpression" />
-    <property role="34LRSv" value="check" />
-    <property role="3GE5qa" value="check" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="6iqfHNBNQFO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr1" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="6iqfHNBNQFQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr2" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyi" id="6iqfHNBQSPS" role="1TKVEl">
-      <property role="TrG5h" value="stop" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="KaZMgylLmk">
     <property role="1pbfSe" value="778179768" />
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="PlainConstraint" />
     <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
+  </node>
+  <node concept="1TIwiD" id="2U5Q01UkDMQ">
+    <property role="1pbfSe" value="1462209354" />
+    <property role="TrG5h" value="InTarget" />
+    <property role="34LRSv" value="in" />
+    <property role="3GE5qa" value="targets" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2U5Q01UkDMZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2U5Q01UkDMW" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WCh2thoP2K">
+    <property role="1pbfSe" value="1888195799" />
+    <property role="TrG5h" value="RangeTarget" />
+    <property role="34LRSv" value="range" />
+    <property role="3GE5qa" value="targets" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1WCh2thoP3e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="min" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1WCh2thoP3f" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="max" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1WCh2thoP3c" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
   </node>
 </model>
 
