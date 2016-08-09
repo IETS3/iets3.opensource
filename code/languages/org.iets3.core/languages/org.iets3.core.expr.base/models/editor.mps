@@ -1960,6 +1960,9 @@
         <node concept="3vyZuw" id="71dSyJVnXjF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="VLuvy" id="1NRU0vcj$LI" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
         <node concept="3F1sOY" id="71dSyJVnXfT" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:71dSyJVnXek" />
         </node>
