@@ -2376,16 +2376,16 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -2395,7 +2395,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.java.modules.cycle.1, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.java.modules.cycle.2, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.toplevel#2861782275883405870, java.compile.org.iets3.core.expr.tests, java.compile.org.iets3.core.expr.tests#543569365052197681, java.compile.java.modules.cycle.3, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.java.modules.cycle.4, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.org.iets3.core.expr.lambda.plugin, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.java.modules.cycle.5, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.functional.runtime, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport.plugin, java.compile.java.modules.cycle.6, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.java.modules.cycle.7, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.analysis.modelchecksupport.plugin, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.ui.plugin, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.core.build, java.compile.org.iets3.tools.z3.build" />
+  <target name="compileJava" depends="java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util#571413333984379598, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math#4944417823362075229, java.compile.java.modules.cycle.1, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections#7554398283339749507, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path#7814222126783751586, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.lambda#7554398283340208180, java.compile.java.modules.cycle.2, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.toplevel#2861782275883405870, java.compile.org.iets3.core.expr.tests, java.compile.org.iets3.core.expr.tests#543569365052197681, java.compile.java.modules.cycle.3, java.compile.org.iets3.core.base, java.compile.org.iets3.core.base#5115872837156535746, java.compile.org.iets3.core.users, java.compile.org.iets3.core.users#8479184967780604354, java.compile.testlang.core.expr, java.compile.testlang.core.expr#7425695345928347724, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base#7425695345928347648, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes#7425695345928349202, java.compile.org.iets3.core.plugin, java.compile.org.iets3.core.expr.lambda.plugin, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core#7804632404593231268, java.compile.org.iets3.components.design, java.compile.org.iets3.components.design#7804632404594099635, java.compile.java.modules.cycle.4, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.functional#7804632404593474002, java.compile.org.iets3.components.functional.runtime, java.compile.org.iets3.components.req, java.compile.org.iets3.components.req#229512757699399834, java.compile.org.iets3.simbench, java.compile.org.iets3.simbench#6209909044671225035, java.compile.org.iets3.simbench.plugin, java.compile.org.iets3.hardware, java.compile.org.iets3.hardware#6654311517970965062, java.compile.org.iets3.featuremodel, java.compile.org.iets3.featuremodel#3989254429232883105, java.compile.org.iets3.analysis.solversupport.plugin, java.compile.java.modules.cycle.5, java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport#5657098766103854246, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.java.modules.cycle.6, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal#6396090229488181105, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.analysis.modelchecksupport.plugin, java.compile.org.iets3.analysis.modelchecksupport, java.compile.org.iets3.analysis.modelchecksupport#5802976567601750482, java.compile.org.iets3.analysis.modelchecksupport.runtime, java.compile.org.iets3.analysis.ui.plugin, java.compile.org.iets3.glossary, java.compile.org.iets3.glossary#7551038907536064983, java.compile.org.iets3.req.core, java.compile.org.iets3.req.core#5151426049053136026, java.compile.org.iets3.req.plugin, java.compile.org.iets3.core.build, java.compile.org.iets3.tools.z3.build" />
   
   <target name="processResources" />
   
@@ -2793,7 +2793,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -2857,7 +2856,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.runtime.jar" />
@@ -2926,7 +2924,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -3108,7 +3105,6 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections" />
         <fileset file="${iets3.lang.core}/languages/org.iets3.core.expr.collections/lib/pcollections/pcollections-28apr2016.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
@@ -3117,33 +3113,9 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.collections#7554398283339749507">
@@ -3185,28 +3157,10 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.path">
@@ -3239,7 +3193,6 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
@@ -3248,33 +3201,9 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.path#7814222126783751586">
@@ -3388,7 +3317,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -3598,7 +3526,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -3794,7 +3721,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/jaxen-1.1.6.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/xercesImpl.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/jdom2-2.0.6.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -3842,7 +3768,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/jaxen-1.1.6.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/xercesImpl.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/jdom2-2.0.6.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -4117,34 +4042,16 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.test.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/testlang.core.expr#7425695345928347724">
@@ -4152,90 +4059,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.4" depends="java.compile.org.iets3.core.base, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.4" />
-    <javac destdir="${build.tmp}/java.modules.cycle.4" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${iets3.lang.core}/languages/org.iets3.core.expr.base/source_gen" />
-        <path location="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/junit-4.12.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.3.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.3.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/server/javax.servlet-3.0.0.v201112011016.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/server/jetty-all-8.1.14.v20131031.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/server/slf4j-api-1.7.10.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/server/slf4j-log4j12-1.7.10.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.compare/com.mbeddr.mpsutil.comparator.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.infrastructure-support/com.mbeddr.mpsutil.nodeaccess.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-math-editor/languages/mps-math-editor/de.itemis.mps.editor.math.symbols.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-        <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.org.iets3.core.expr.base" depends="java.compile.org.iets3.core.base, java.compile.java.modules.cycle.4, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.base" depends="java.compile.org.iets3.core.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.base" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.base" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -4312,7 +4136,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.base">
@@ -4343,7 +4166,6 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
@@ -4352,33 +4174,9 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.base#7425695345928347648">
@@ -4386,7 +4184,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.simpleTypes" depends="java.compile.org.iets3.core.base, java.compile.java.modules.cycle.4, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.simpleTypes" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.simpleTypes/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -4408,6 +4206,7 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -4443,7 +4242,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes">
@@ -4490,7 +4288,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -4604,7 +4401,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
@@ -4675,7 +4471,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.runtime.jar" />
@@ -4751,7 +4546,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.runtime.jar" />
@@ -4831,7 +4625,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -4898,7 +4691,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -4968,7 +4760,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -4996,9 +4787,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.5" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.5" />
-    <javac destdir="${build.tmp}/java.modules.cycle.5" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.4" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.4" />
+    <javac destdir="${build.tmp}/java.modules.cycle.4" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
@@ -5050,7 +4841,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.compare/com.mbeddr.mpsutil.compare.pattern.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.margincell_review/com.mbeddr.mpsutil.margincell.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
@@ -5103,7 +4893,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.components.functional" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.java.modules.cycle.5, fetchDependencies">
+  <target name="java.compile.org.iets3.components.functional" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.glossary, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.components.functional/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional" />
     <javac destdir="${build.tmp}/java/out/org.iets3.components.functional" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5165,7 +4955,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.compare/com.mbeddr.mpsutil.compare.pattern.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.margincell_review/com.mbeddr.mpsutil.margincell.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
@@ -5195,7 +4984,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.5" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.components.functional">
@@ -5253,7 +5042,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -5281,7 +5069,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.components.functional.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
+  <target name="java.compile.org.iets3.components.functional.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.components.functional.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.components.functional.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.components.functional.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -5325,7 +5113,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -5344,7 +5131,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.5" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.components.functional.runtime">
@@ -5393,7 +5180,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.margincell_review/com.mbeddr.mpsutil.margincell.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
@@ -5524,7 +5310,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/jfreechart/jfreechart-1.0.19.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/jfreechart/jcommon-1.0.23.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/jaxen-1.1.6.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/lib/xercesImpl.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/lib/jdom2-2.0.6.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -5617,7 +5402,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -5692,7 +5476,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jfreechart/com.mbeddr.mpsutil.jfreechart.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
@@ -5828,7 +5611,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -5991,7 +5773,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -6058,7 +5839,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -6084,9 +5864,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.6" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.6" />
-    <javac destdir="${build.tmp}/java.modules.cycle.6" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.5" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.5" />
+    <javac destdir="${build.tmp}/java.modules.cycle.5" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
@@ -6121,7 +5901,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
@@ -6156,7 +5935,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.6, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6196,7 +5975,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
@@ -6221,7 +5999,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.6" />
+        <pathelement path="${build.tmp}/java.modules.cycle.5" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport">
@@ -6266,7 +6044,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -6292,7 +6069,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.runtime" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.6, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.runtime" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6332,7 +6109,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -6354,7 +6130,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.6" />
+        <pathelement path="${build.tmp}/java.modules.cycle.5" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.runtime">
@@ -6362,9 +6138,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.7" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.7" />
-    <javac destdir="${build.tmp}/java.modules.cycle.7" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.6" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.6" />
+    <javac destdir="${build.tmp}/java.modules.cycle.6" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
@@ -6399,7 +6175,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
@@ -6436,7 +6211,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.temporal" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.7, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.temporal" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.6, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.solversupport.temporal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6478,7 +6253,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
@@ -6500,7 +6274,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.7" />
+        <pathelement path="${build.tmp}/java.modules.cycle.6" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal">
@@ -6555,7 +6329,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -6583,7 +6356,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.solversupport.temporal.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.7, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.solversupport.temporal.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.6, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.solversupport.temporal.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6629,7 +6402,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -6650,7 +6422,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip/plugins/org.iets3.tools.z3/languages/org.iets3.core/org.iets3.tools.z3.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.7" />
+        <pathelement path="${build.tmp}/java.modules.cycle.6" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.solversupport.temporal.runtime">
@@ -6710,7 +6482,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.contextactions/com.mbeddr.mpsutil.contextactions.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -6736,7 +6507,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.analysis.modelchecksupport/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6784,7 +6555,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -6813,7 +6583,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.5" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport">
@@ -6867,7 +6637,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -6895,7 +6664,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.analysis.modelchecksupport.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.5, fetchDependencies">
+  <target name="java.compile.org.iets3.analysis.modelchecksupport.runtime" depends="java.compile.org.iets3.analysis.solversupport, java.compile.org.iets3.analysis.solversupport.runtime, java.compile.org.iets3.analysis.solversupport.temporal, java.compile.org.iets3.analysis.solversupport.temporal.runtime, java.compile.org.iets3.components.core, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.java.modules.cycle.4, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/solutions/org.iets3.analysis.modelchecksupport.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime" />
     <javac destdir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -6941,7 +6710,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
@@ -6960,7 +6728,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.5" />
+        <pathelement path="${build.tmp}/java.modules.cycle.4" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.analysis.modelchecksupport.runtime">
@@ -7019,7 +6787,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
