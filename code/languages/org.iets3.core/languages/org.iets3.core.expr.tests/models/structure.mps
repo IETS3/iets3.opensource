@@ -111,6 +111,9 @@
     <node concept="PrWs8" id="6HHp2WmRw6m" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
+    <node concept="PrWs8" id="252QIDyrGrE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyK62f">
     <property role="1pbfSe" value="709592580" />

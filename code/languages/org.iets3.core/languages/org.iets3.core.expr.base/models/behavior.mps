@@ -3829,9 +3829,7 @@
       </node>
       <node concept="37vLTG" id="3xDNhgd54rQ" role="3clF46">
         <property role="TrG5h" value="expr" />
-        <node concept="3Tqbb2" id="3xDNhgd54rP" role="1tU5fm">
-          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
-        </node>
+        <node concept="3Tqbb2" id="3xDNhgd54rP" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="uGVYUiloqA" role="1B3o_S" />
     </node>
