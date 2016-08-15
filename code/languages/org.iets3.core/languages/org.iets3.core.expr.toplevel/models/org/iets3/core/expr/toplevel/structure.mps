@@ -278,6 +278,12 @@
     <node concept="PrWs8" id="6HHp2WngtTD" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="2S3ZC$oyCq6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="PrWs8" id="2S3ZC$oziAP" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
     <property role="1pbfSe" value="1015225321" />
@@ -295,6 +301,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6HHp2WngtTC" resolve="Typedef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2S3ZC$oCfaF">
+    <property role="1pbfSe" value="1185214772" />
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="TypedefContractValExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
 

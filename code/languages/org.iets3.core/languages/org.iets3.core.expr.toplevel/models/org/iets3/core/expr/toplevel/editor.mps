@@ -826,9 +826,26 @@
       </node>
       <node concept="3F0ifn" id="6HHp2WngtUE" role="3EZMnx">
         <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="2S3ZC$oE6fi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="6HHp2WngtUj" role="3EZMnx">
         <ref role="1NtTu8" to="yv47:6HHp2WngtTF" />
+      </node>
+      <node concept="_tjkj" id="2S3ZC$oyCq_" role="3EZMnx">
+        <node concept="3F1sOY" id="2S3ZC$oyCyI" role="_tjki">
+          <ref role="1NtTu8" to="hm2y:KaZMgy4Ily" />
+        </node>
+        <node concept="ZYGn8" id="2S3ZC$oyCzk" role="ZWbT9">
+          <node concept="3clFbS" id="2S3ZC$oyCzl" role="2VODD2">
+            <node concept="3clFbF" id="2S3ZC$oyC$0" role="3cqZAp">
+              <node concept="Xl_RD" id="2S3ZC$oyCzZ" role="3clFbG">
+                <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -844,6 +861,13 @@
           <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2S3ZC$oCfba">
+    <property role="3GE5qa" value="typedef" />
+    <ref role="1XX52x" to="yv47:2S3ZC$oCfaF" resolve="TypedefContractValExpr" />
+    <node concept="3F0ifn" id="2S3ZC$oCfbi" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
     </node>
   </node>
 </model>
