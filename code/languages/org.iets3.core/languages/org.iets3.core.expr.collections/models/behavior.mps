@@ -304,7 +304,7 @@
       <property role="TrG5h" value="getAllSupertypes" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
       <node concept="3Tm1VV" id="4Q4DxjDuPdK" role="1B3o_S" />
       <node concept="3clFbS" id="4Q4DxjDuPeo" role="3clF47">
         <node concept="3cpWs8" id="4Q4DxjDjyd2" role="3cqZAp">
@@ -336,7 +336,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4Q4DxjDuQB3" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
               </node>
             </node>
           </node>
@@ -654,7 +654,7 @@
       <property role="TrG5h" value="getAllSupertypes" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
       <node concept="3Tm1VV" id="4Q4DxjDuS9U" role="1B3o_S" />
       <node concept="3clFbS" id="4Q4DxjDuS9V" role="3clF47">
         <node concept="3cpWs8" id="4Q4DxjDuS9W" role="3cqZAp">
@@ -714,7 +714,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4Q4DxjDuSa9" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
               </node>
             </node>
           </node>
@@ -887,7 +887,7 @@
       <property role="TrG5h" value="getAllSupertypes" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+      <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
       <node concept="3Tm1VV" id="4Q4DxjDuSvN" role="1B3o_S" />
       <node concept="3clFbS" id="4Q4DxjDuSvO" role="3clF47">
         <node concept="3cpWs8" id="4Q4DxjDuSvP" role="3cqZAp">
@@ -947,7 +947,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4Q4DxjDuSw2" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="getAllSupertypes" />
+                <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
               </node>
             </node>
           </node>
