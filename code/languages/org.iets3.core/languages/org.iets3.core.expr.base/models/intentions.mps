@@ -889,60 +889,44 @@
       <node concept="3clFbS" id="2Qbt$1tNHNb" role="2VODD2">
         <node concept="3clFbF" id="2Qbt$1tNHOy" role="3cqZAp">
           <node concept="Xl_RD" id="2Qbt$1tNHOx" role="3clFbG">
-            <property role="Xl_RC" value="Add Type Check Annotation" />
+            <property role="Xl_RC" value="Add Type Check" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2Sbjvc" id="2Qbt$1tNHNc" role="2ZfgGD">
       <node concept="3clFbS" id="2Qbt$1tNHNd" role="2VODD2">
-        <node concept="3clFbF" id="2Qbt$1tNIDn" role="3cqZAp">
-          <node concept="37vLTI" id="2Qbt$1tNJ2$" role="3clFbG">
-            <node concept="2pJPEk" id="2Qbt$1tNJ4D" role="37vLTx">
-              <node concept="2pJPED" id="2Qbt$1tNJ6b" role="2pJPEn">
-                <ref role="2pJxaS" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckAnnotation" />
-                <node concept="2pIpSj" id="2Qbt$1tNJ8V" role="2pJxcM">
-                  <ref role="2pIpSl" to="hm2y:2Qbt$1tNGy9" />
-                  <node concept="36biLy" id="2Qbt$1tNJam" role="2pJxcZ">
-                    <node concept="1PxgMI" id="2Qbt$1tNJoU" role="36biLW">
-                      <ref role="1PxNhF" to="hm2y:6sdnDbSlaok" resolve="Type" />
-                      <node concept="2OqwBi" id="2Qbt$1tNJje" role="1PxMeX">
-                        <node concept="2OqwBi" id="2Qbt$1tNJcK" role="2Oq$k0">
-                          <node concept="2Sf5sV" id="2Qbt$1tNJb6" role="2Oq$k0" />
-                          <node concept="3JvlWi" id="2Qbt$1tNJfy" role="2OqNvi" />
+        <node concept="3clFbF" id="252QIDzA0Hb" role="3cqZAp">
+          <node concept="2OqwBi" id="252QIDzA0JU" role="3clFbG">
+            <node concept="2Sf5sV" id="252QIDzA0H9" role="2Oq$k0" />
+            <node concept="1P9Npp" id="252QIDzA0R7" role="2OqNvi">
+              <node concept="2pJPEk" id="252QIDzA0U1" role="1P9ThW">
+                <node concept="2pJPED" id="252QIDzA0WV" role="2pJPEn">
+                  <ref role="2pJxaS" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckExpression" />
+                  <node concept="2pIpSj" id="252QIDzA131" role="2pJxcM">
+                    <ref role="2pIpSl" to="hm2y:252QIDzztQk" />
+                    <node concept="36biLy" id="252QIDzA16s" role="2pJxcZ">
+                      <node concept="2OqwBi" id="252QIDzA1am" role="36biLW">
+                        <node concept="2Sf5sV" id="252QIDzA17t" role="2Oq$k0" />
+                        <node concept="1$rogu" id="252QIDzA1hw" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="252QIDzA1ol" role="2pJxcM">
+                    <ref role="2pIpSl" to="hm2y:2Qbt$1tNGy9" />
+                    <node concept="36biLy" id="252QIDzA1si" role="2pJxcZ">
+                      <node concept="2OqwBi" id="252QIDzA1M9" role="36biLW">
+                        <node concept="2OqwBi" id="252QIDzA1zF" role="2Oq$k0">
+                          <node concept="2Sf5sV" id="252QIDzA1vU" role="2Oq$k0" />
+                          <node concept="3JvlWi" id="252QIDzA1Fi" role="2OqNvi" />
                         </node>
-                        <node concept="1$rogu" id="2Qbt$1tNJlf" role="2OqNvi" />
+                        <node concept="1$rogu" id="252QIDzA1Pp" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="2Qbt$1tNIEE" role="37vLTJ">
-              <node concept="2Sf5sV" id="2Qbt$1tNIDm" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="2Qbt$1tNIH$" role="2OqNvi">
-                <node concept="3CFYIy" id="2Qbt$1tNIHP" role="3CFYIz">
-                  <ref role="3CFYIx" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckAnnotation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="2Qbt$1tNHVo" role="2ZfVeh">
-      <node concept="3clFbS" id="2Qbt$1tNHVp" role="2VODD2">
-        <node concept="3clFbF" id="2Qbt$1tNHWx" role="3cqZAp">
-          <node concept="2OqwBi" id="2Qbt$1tNIs1" role="3clFbG">
-            <node concept="2OqwBi" id="2Qbt$1tNIjy" role="2Oq$k0">
-              <node concept="2Sf5sV" id="2Qbt$1tNHWw" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="2Qbt$1tNImP" role="2OqNvi">
-                <node concept="3CFYIy" id="2Qbt$1tNIoS" role="3CFYIz">
-                  <ref role="3CFYIx" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckAnnotation" />
-                </node>
-              </node>
-            </node>
-            <node concept="3w_OXm" id="2Qbt$1tNIB0" role="2OqNvi" />
           </node>
         </node>
       </node>

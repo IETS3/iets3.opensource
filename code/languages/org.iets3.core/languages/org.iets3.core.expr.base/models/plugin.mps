@@ -664,6 +664,48 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="252QIDzE2FO" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckExpression" />
+      <node concept="3dA_Gj" id="252QIDzE6lV" role="3vQZUl">
+        <node concept="9aQIb" id="252QIDzE6lX" role="3vcmbn">
+          <node concept="3clFbS" id="252QIDzE6lZ" role="9aQI4">
+            <node concept="3cpWs8" id="252QIDzE6mm" role="3cqZAp">
+              <node concept="3cpWsn" id="252QIDzE6mn" role="3cpWs9">
+                <property role="TrG5h" value="res" />
+                <node concept="3uibUv" id="252QIDzE6ml" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="rqRoa" id="252QIDzE6mo" role="33vP2m">
+                  <ref role="rqRob" to="hm2y:252QIDzztQk" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="252QIDym4fj" role="3cqZAp">
+              <node concept="2YIFZM" id="252QIDym4fk" role="3clFbG">
+                <ref role="1Pybhc" node="252QIDylZdO" resolve="TypeConstraintHelper" />
+                <ref role="37wK5l" node="252QIDylZkr" resolve="check" />
+                <node concept="2OqwBi" id="252QIDym4fl" role="37wK5m">
+                  <node concept="oxGPV" id="252QIDym4fm" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="252QIDzE7sW" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:2Qbt$1tNGy9" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="252QIDym4n1" role="37wK5m">
+                  <ref role="3cqZAo" node="252QIDzE6mn" resolve="res" />
+                </node>
+                <node concept="oxNuS" id="252QIDym4fp" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="252QIDzE6qE" role="3cqZAp">
+              <node concept="37vLTw" id="252QIDzE6qG" role="3cqZAk">
+                <ref role="3cqZAo" node="252QIDzE6mn" resolve="res" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="12WRc298Cwb" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:5BNZGjBvVgC" resolve="TryExpression" />
