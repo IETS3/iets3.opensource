@@ -165,6 +165,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -952,6 +953,46 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2S3ZC$oCfRD">
+    <property role="TrG5h" value="typeof_TypedefContractValExpr" />
+    <property role="3GE5qa" value="typedef" />
+    <node concept="3clFbS" id="2S3ZC$oCfRE" role="18ibNy">
+      <node concept="1Z5TYs" id="2S3ZC$oCfUc" role="3cqZAp">
+        <node concept="mw_s8" id="2S3ZC$oCfUC" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2S3ZC$oCfU$" role="mwGJk">
+            <node concept="2OqwBi" id="2S3ZC$oCgbA" role="1Z2MuG">
+              <node concept="2OqwBi" id="2S3ZC$oCfX$" role="2Oq$k0">
+                <node concept="1YBJjd" id="2S3ZC$oCfUW" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2S3ZC$oCfRG" resolve="ve" />
+                </node>
+                <node concept="2Xjw5R" id="2S3ZC$oCg3M" role="2OqNvi">
+                  <node concept="1xMEDy" id="2S3ZC$oCg3O" role="1xVPHs">
+                    <node concept="chp4Y" id="2S3ZC$oCg6k" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2S3ZC$oCgwM" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2S3ZC$oCfUf" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2S3ZC$oCfRZ" role="mwGJk">
+            <node concept="1YBJjd" id="2S3ZC$oCfSi" role="1Z2MuG">
+              <ref role="1YBMHb" node="2S3ZC$oCfRG" resolve="ve" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2S3ZC$oCfRG" role="1YuTPh">
+      <property role="TrG5h" value="ve" />
+      <ref role="1YaFvo" to="yv47:2S3ZC$oCfaF" resolve="TypedefContractValExpr" />
     </node>
   </node>
 </model>
