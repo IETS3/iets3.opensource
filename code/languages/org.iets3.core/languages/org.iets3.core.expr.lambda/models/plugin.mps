@@ -155,12 +155,6 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
@@ -1100,44 +1094,6 @@
       <node concept="3vetai" id="$yb$20i$Dv" role="3vQZUl">
         <node concept="rqRoa" id="$yb$20i$DH" role="3vdyny">
           <ref role="rqRob" to="zzzn:49WTic8iI9_" />
-        </node>
-      </node>
-    </node>
-    <node concept="qq9P1" id="6ovbtsiVZZz" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
-      <node concept="3dA_Gj" id="6ovbtsiWeU3" role="3vQZUl">
-        <node concept="9aQIb" id="6ovbtsiWeU5" role="3vcmbn">
-          <node concept="3clFbS" id="6ovbtsiWeU7" role="9aQI4">
-            <node concept="3SKdUt" id="6ovbtsiWf2C" role="3cqZAp">
-              <node concept="3SKdUq" id="6ovbtsiWf2E" role="3SKWNk">
-                <property role="3SKdUp" value="makeExplicitLambda stores the first arg " />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="6ovbtsiWf7f" role="3cqZAp">
-              <node concept="3SKdUq" id="6ovbtsiWf7h" role="3SKWNk">
-                <property role="3SKdUp" value="in the env using the short lambda as the key" />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="6ovbtsiWp7u" role="3cqZAp">
-              <node concept="3SKdUq" id="6ovbtsiWp7w" role="3SKWNk">
-                <property role="3SKdUp" value="I think this is a hack, but for now it works." />
-              </node>
-            </node>
-            <node concept="3cpWs6" id="6ovbtsiWeY3" role="3cqZAp">
-              <node concept="qpA2v" id="6ovbtsiWfbq" role="3cqZAk">
-                <node concept="1eOMI4" id="6ovbtsiWlwO" role="3SLO0q">
-                  <node concept="10QFUN" id="6ovbtsiWlwP" role="1eOMHV">
-                    <node concept="3EllGN" id="6ovbtsiWlwL" role="10QFUP">
-                      <node concept="oxGPV" id="6ovbtsiWlwM" role="3ElVtu" />
-                      <node concept="TvHiN" id="6ovbtsiWlwN" role="3ElQJh" />
-                    </node>
-                    <node concept="3Tqbb2" id="6ovbtsiWlBE" role="10QFUM" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
