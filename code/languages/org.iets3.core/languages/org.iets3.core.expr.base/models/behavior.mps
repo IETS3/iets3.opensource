@@ -2,12 +2,12 @@
 <model ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -154,7 +154,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5550,6 +5550,48 @@
         </node>
       </node>
       <node concept="17QB3L" id="2PhSkOg8M7R" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="252QIDzzE93">
+    <ref role="13h7C2" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckExpression" />
+    <node concept="13hLZK" id="252QIDzzE94" role="13h7CW">
+      <node concept="3clFbS" id="252QIDzzE95" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="252QIDzzE96" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="4Y0vh0cfqjE" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="252QIDzzE97" role="1B3o_S" />
+      <node concept="3clFbS" id="252QIDzzE9a" role="3clF47">
+        <node concept="3clFbF" id="252QIDzzE9A" role="3cqZAp">
+          <node concept="2OqwBi" id="252QIDzzEpZ" role="3clFbG">
+            <node concept="2OqwBi" id="252QIDzzEcC" role="2Oq$k0">
+              <node concept="13iPFW" id="252QIDzzE9N" role="2Oq$k0" />
+              <node concept="3TrEf2" id="252QIDzzEie" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:252QIDzztQk" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="252QIDzzEzt" role="2OqNvi">
+              <ref role="37wK5l" node="4Y0vh0cfqjE" resolve="renderReadable" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="252QIDzzE9b" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="252QIDzzE9c" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="252QIDzzE9d" role="1B3o_S" />
+      <node concept="3clFbS" id="252QIDzzE9g" role="3clF47">
+        <node concept="3clFbF" id="252QIDzzE9j" role="3cqZAp">
+          <node concept="3clFbT" id="252QIDzzE9i" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="252QIDzzE9h" role="3clF45" />
     </node>
   </node>
 </model>
