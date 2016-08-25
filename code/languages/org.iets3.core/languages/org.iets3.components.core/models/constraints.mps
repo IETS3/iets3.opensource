@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -58,7 +59,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -475,11 +476,11 @@
                 <node concept="2OqwBi" id="3NBP8_O3YbZ" role="2Oq$k0">
                   <node concept="2OqwBi" id="3NBP8_O3XQs" role="2Oq$k0">
                     <node concept="1PxgMI" id="3NBP8_O3XHV" role="2Oq$k0">
-                      <ref role="1PxNhF" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+                      <ref role="1PxNhF" to="w9y2:2Y$6Xot5kBu" resolve="AbstractComponentInstance" />
                       <node concept="21POm0" id="3NBP8_O3XB_" role="1PxMeX" />
                     </node>
                     <node concept="3TrEf2" id="3NBP8_O3Y0m" role="2OqNvi">
-                      <ref role="3Tt5mk" to="w9y2:6LfBX8YlosG" />
+                      <ref role="3Tt5mk" to="w9y2:2Y$6Xot5kGx" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="3NBP8_O3Yhh" role="2OqNvi">
@@ -1011,7 +1012,10 @@
             </node>
           </node>
           <node concept="2OqwBi" id="1WCh2th1BvW" role="2GsD0m">
-            <node concept="otxO1" id="1WCh2th7GTh" role="2Oq$k0" />
+            <node concept="1PxgMI" id="2Y$6Xot6C_L" role="2Oq$k0">
+              <ref role="1PxNhF" to="w9y2:1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
+              <node concept="otxO1" id="1WCh2th7GTh" role="1PxMeX" />
+            </node>
             <node concept="2qgKlT" id="1WCh2th1B$s" role="2OqNvi">
               <ref role="37wK5l" to="3eba:1WCh2th1Boz" resolve="canBeUsedUnder" />
             </node>
@@ -1300,7 +1304,7 @@
   </node>
   <node concept="1M2fIO" id="1WAg9Tzy1Qj">
     <property role="3GE5qa" value="expr.instanceselection" />
-    <ref role="1M2myG" to="w9y2:1WAg9Tzy1MA" resolve="InstancesTarget" />
+    <ref role="1M2myG" to="w9y2:1WAg9Tzy1MA" resolve="AbstractInstancesTarget" />
     <node concept="nKS2y" id="1WAg9Tzy1R4" role="1MLUbF">
       <node concept="3clFbS" id="1WAg9Tzy1R5" role="2VODD2">
         <node concept="3clFbF" id="1WAg9Tzy1RF" role="3cqZAp">

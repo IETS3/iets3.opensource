@@ -290,33 +290,27 @@
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="instance" />
     <property role="MwhBj" value="${module}/icons/instance.png" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2Y$6Xot5kBu" resolve="AbstractComponentInstance" />
     <node concept="1TJgyj" id="6LfBX8YlosG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="component" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="component_old" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
+      <node concept="asaX9" id="2Y$6Xot5kGG" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstance&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="4UgzZxsF_yT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameterValues" />
+      <property role="20kJfa" value="parameterValues_old" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
+      <node concept="asaX9" id="2Y$6Xot5kOz" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstance&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="siw10FiR6l" role="PzmwI">
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
-    </node>
-    <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
-    </node>
-    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
-    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8YlAdL">
@@ -1094,6 +1088,38 @@
       <property role="20kJfa" value="port" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Y$6Xot5kBu">
+    <property role="1pbfSe" value="1287218612" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="AbstractComponentInstance" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
+    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
+    </node>
+    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
+    <node concept="1TJgyj" id="2Y$6Xot5kGx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
+    </node>
+    <node concept="1TJgyj" id="2Y$6Xot5kOx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
     </node>
   </node>
 </model>
