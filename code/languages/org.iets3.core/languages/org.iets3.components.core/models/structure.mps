@@ -2,15 +2,14 @@
 <model ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -75,6 +74,11 @@
     <property role="3GE5qa" value="components" />
     <property role="MwhBj" value="${module}/icons/component.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1WAg9TyWDtQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expttest" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="6LfBX8Yj9rR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kind" />
@@ -257,9 +261,6 @@
     <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-    <node concept="PrWs8" id="435Eqf9hFgz" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
-    </node>
     <node concept="1TJgyj" id="mIQkxfpv7_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="category" />
@@ -316,9 +317,6 @@
     </node>
     <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-    <node concept="PrWs8" id="435Eqf999cJ" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
     </node>
   </node>
   <node concept="PlHQZ" id="6LfBX8YlAdL">
@@ -885,7 +883,7 @@
   <node concept="1TIwiD" id="9D0IlqBDp0">
     <property role="1pbfSe" value="1560779045" />
     <property role="TrG5h" value="ComponentRefExpr" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expr.nav" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="9D0IlqBDp1" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -896,7 +894,7 @@
   </node>
   <node concept="1TIwiD" id="9D0IlqBErS">
     <property role="1pbfSe" value="1560783325" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expr.nav" />
     <property role="TrG5h" value="ComponentType" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="9D0IlqBEs5" role="1TKVEi">
@@ -905,13 +903,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
     </node>
-    <node concept="PrWs8" id="435Eqf9c0k0" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3k_9K2Ovuaj">
     <property role="1pbfSe" value="375191149" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expr.nav" />
     <property role="TrG5h" value="InstanceRefExpr" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3k_9K2Ovuak" role="1TKVEi">
@@ -972,6 +967,134 @@
     <property role="1pbfSe" value="1783189764" />
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IComponentContext" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tz$HcG">
+    <property role="1pbfSe" value="2101799990" />
+    <property role="3GE5qa" value="expr.instanceselection" />
+    <property role="TrG5h" value="AllInstancesTarget" />
+    <property role="34LRSv" value="allinstances" />
+    <ref role="1TJDcQ" node="1WAg9Tzy1MA" resolve="AbstractInstancesTarget" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tzy1MA">
+    <property role="1pbfSe" value="2102502076" />
+    <property role="3GE5qa" value="expr.instanceselection" />
+    <property role="TrG5h" value="AbstractInstancesTarget" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1WAg9Tzy1Nk" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="1WAg9Tzy1No" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="9D0IlqBErS" resolve="ComponentType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WAg9TzeHcu">
+    <property role="1pbfSe" value="2107567172" />
+    <property role="3GE5qa" value="expr.portselection" />
+    <property role="TrG5h" value="GenericPortType" />
+    <property role="34LRSv" value="port" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tz6EaW">
+    <property role="1pbfSe" value="2109676710" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="ComponentInstanceRefTarget" />
+    <node concept="1TJgyj" id="1WAg9Tz6EaZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+    </node>
+    <node concept="PrWs8" id="1WAg9Tz6EaX" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WAg9TzeH4s">
+    <property role="1pbfSe" value="2107567686" />
+    <property role="3GE5qa" value="expr.portselection" />
+    <property role="TrG5h" value="PortsTarget" />
+    <property role="34LRSv" value="ports" />
+    <ref role="1TJDcQ" node="1WAg9TzgUyP" resolve="AbstractPortsTarget" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9TzjsPq">
+    <property role="1pbfSe" value="2106323464" />
+    <property role="3GE5qa" value="expr.portselection" />
+    <property role="TrG5h" value="AllPortsTarget" />
+    <property role="34LRSv" value="allports" />
+    <ref role="1TJDcQ" node="1WAg9TzgUyP" resolve="AbstractPortsTarget" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9TyYvdW">
+    <property role="1pbfSe" value="2111818726" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="ThisComponentExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tz$GOn">
+    <property role="1pbfSe" value="2101801547" />
+    <property role="3GE5qa" value="expr.instanceselection" />
+    <property role="TrG5h" value="InstancesTarget" />
+    <property role="34LRSv" value="instances" />
+    <ref role="1TJDcQ" node="1WAg9Tzy1MA" resolve="AbstractInstancesTarget" />
+  </node>
+  <node concept="1TIwiD" id="1WAg9TzgUyP">
+    <property role="1pbfSe" value="2106988205" />
+    <property role="3GE5qa" value="expr.portselection" />
+    <property role="TrG5h" value="AbstractPortsTarget" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1WAg9TzryC5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portType" />
+      <ref role="20lvS9" node="6LfBX8YlAdL" resolve="IPortType" />
+    </node>
+    <node concept="PrWs8" id="1WAg9TzgUz5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tzrz6d">
+    <property role="1pbfSe" value="2104200661" />
+    <property role="3GE5qa" value="expr.portselection" />
+    <property role="TrG5h" value="PortTypeSpecificPortType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="1WAg9Tzrz6g" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YlAdL" resolve="IPortType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tz2efG">
+    <property role="1pbfSe" value="2110839670" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="PortRefTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1WAg9Tz2efJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="PrWs8" id="1WAg9Tz2efH" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1WAg9Tz48Vs">
+    <property role="1pbfSe" value="2110337158" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="PortTypeForExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="1WAg9Tz48Vt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
   </node>
 </model>
 
