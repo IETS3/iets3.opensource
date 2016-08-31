@@ -331,6 +331,9 @@
     <node concept="PrWs8" id="12WRc298lvt" role="PzmwI">
       <ref role="PrY4T" node="12WRc28VYGq" resolve="ITypeFromMultiple" />
     </node>
+    <node concept="PrWs8" id="5ye9uPrgl8_" role="PzmwI">
+      <ref role="PrY4T" node="5ye9uPrgbPQ" resolve="IOptionDerefContext" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="1pbfSe" value="308203829" />
@@ -387,37 +390,6 @@
     <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
-  <node concept="1TIwiD" id="UN2ftLSIrE">
-    <property role="1pbfSe" value="2137657375" />
-    <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="WithSomeExpression" />
-    <property role="34LRSv" value="with some" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="UN2ftLSIrF" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="optionExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="UN2ftLSItR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="then" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="UN2ftLSIvt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="else" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="UN2ftLSIs5" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="UN2ftLTRyS" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2rOWEwsEji_">
     <property role="1pbfSe" value="1134438221" />
     <property role="3GE5qa" value="option" />
@@ -432,9 +404,9 @@
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="UN2ftLUxmO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="with" />
+      <property role="20kJfa" value="someQuery" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="UN2ftLSIrE" resolve="WithSomeExpression" />
+      <ref role="20lvS9" node="2rOWEwsF5w0" resolve="SomeExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEjcg">
@@ -462,6 +434,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="5ye9uPrilKY" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WsvduW">
     <property role="1pbfSe" value="1850008485" />
@@ -473,16 +448,6 @@
   <node concept="PlHQZ" id="6XENO0rLj7">
     <property role="1pbfSe" value="36487172" />
     <property role="TrG5h" value="IIsSingleSymbol" />
-  </node>
-  <node concept="1TIwiD" id="6XENO0ys2n">
-    <property role="1pbfSe" value="38235092" />
-    <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="SomeValueTarget" />
-    <property role="34LRSv" value="value" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6XENO0ys2o" role="PzmwI">
-      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1Ez$z58DYVm">
     <property role="1pbfSe" value="1665892615" />
@@ -967,6 +932,10 @@
     <node concept="PrWs8" id="2PhSkOg8M7I" role="PzmwI">
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5ye9uPrgbPQ">
+    <property role="1pbfSe" value="1278287005" />
+    <property role="TrG5h" value="IOptionDerefContext" />
   </node>
 </model>
 
