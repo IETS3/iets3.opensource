@@ -1749,7 +1749,7 @@
           <node concept="3clFbS" id="5ye9uPrglPI" role="3clFbx">
             <node concept="3cpWs6" id="5ye9uPrglTW" role="3cqZAp">
               <node concept="Xl_RD" id="5ye9uPrglU8" role="3cqZAk">
-                <property role="Xl_RC" value="can only be used as the single condition" />
+                <property role="Xl_RC" value="cannot be used here; only allowed as the single condition of 'if'" />
               </node>
             </node>
           </node>
