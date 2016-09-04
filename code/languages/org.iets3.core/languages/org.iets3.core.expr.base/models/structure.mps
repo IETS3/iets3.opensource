@@ -388,6 +388,11 @@
     <property role="TrG5h" value="NoneExpression" />
     <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7fOaqhhVEPk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="optionalBaseType" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEji_">
     <property role="1pbfSe" value="1134438221" />
@@ -411,7 +416,7 @@
   <node concept="1TIwiD" id="2rOWEwsEjcg">
     <property role="1pbfSe" value="1134437816" />
     <property role="TrG5h" value="OptionType" />
-    <property role="34LRSv" value="option" />
+    <property role="34LRSv" value="opt" />
     <property role="3GE5qa" value="option" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">

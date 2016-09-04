@@ -356,25 +356,6 @@
     <node concept="1SWQZ3" id="6iqfHNCkxjg" role="lGtFl">
       <property role="1SWRpm" value="EXPRESSIONS" />
     </node>
-    <node concept="2SaL7w" id="mM1quA8$Lt" role="2ZfVeh">
-      <node concept="3clFbS" id="mM1quA8$Lu" role="2VODD2">
-        <node concept="3clFbF" id="mM1quA8$VD" role="3cqZAp">
-          <node concept="3fqX7Q" id="mM1quA8_kU" role="3clFbG">
-            <node concept="2OqwBi" id="mM1quA8_kW" role="3fr31v">
-              <node concept="2OqwBi" id="mM1quA8_kX" role="2Oq$k0">
-                <node concept="2Sf5sV" id="mM1quA8_kY" role="2Oq$k0" />
-                <node concept="1mfA1w" id="mM1quA8_kZ" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="mM1quA8_l0" role="2OqNvi">
-                <node concept="chp4Y" id="mM1quA8_l1" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:6sdnDbSla17" resolve="Expression" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="2S6QgY" id="mM1quA5Cxu">
     <property role="TrG5h" value="extractIntoValue" />
