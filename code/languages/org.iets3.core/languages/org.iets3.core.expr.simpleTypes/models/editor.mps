@@ -34,6 +34,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1240253180846" name="jetbrains.mps.lang.editor.structure.IndentLayoutNoWrapClassItem" flags="ln" index="34QqEe" />
@@ -149,6 +150,9 @@
             <ref role="1NtTu8" to="5qo5:4rZeNQ6Oert" resolve="value" />
             <ref role="1k5W1q" to="itrz:4rZeNQ6OesJ" resolve="IETS3Number" />
             <node concept="bYqod" id="D5oLwMT$B9" role="2lD6_D" />
+            <node concept="VPRnO" id="2hkwq3QijM5" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
         </node>
         <node concept="2iRfu4" id="53_W9lll903" role="2iSdaV" />
