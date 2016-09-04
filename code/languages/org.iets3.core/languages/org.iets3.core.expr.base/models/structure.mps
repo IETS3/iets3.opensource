@@ -942,6 +942,7 @@
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
     <property role="1pbfSe" value="1278287005" />
     <property role="TrG5h" value="IOptionDerefContext" />
+    <property role="3GE5qa" value="option" />
     <node concept="PrWs8" id="3kzwyUOt$nO" role="PrDN$">
       <ref role="PrY4T" node="3kzwyUOs0Da" resolve="IScopeFilterer" />
     </node>
@@ -949,6 +950,7 @@
   <node concept="PlHQZ" id="3kzwyUOs05a">
     <property role="1pbfSe" value="376208520" />
     <property role="TrG5h" value="ISingleSymbolRef" />
+    <property role="3GE5qa" value="option" />
     <node concept="PrWs8" id="3kzwyUOs05d" role="PrDN$">
       <ref role="PrY4T" node="6XENO0rLj7" resolve="IIsSingleSymbol" />
     </node>
@@ -959,6 +961,33 @@
   <node concept="PlHQZ" id="3kzwyUOs0Da">
     <property role="1pbfSe" value="376206216" />
     <property role="TrG5h" value="IScopeFilterer" />
+    <property role="3GE5qa" value="option" />
+  </node>
+  <node concept="1TIwiD" id="3kzwyUOO0Yz">
+    <property role="1pbfSe" value="369913391" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="ValOfExpression" />
+    <property role="34LRSv" value="valof" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3kzwyUOO0Y$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="optionExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3kzwyUOO0YA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternative" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3kzwyUOQ$iE">
+    <property role="1pbfSe" value="369244456" />
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="OptionOrExpression" />
+    <property role="34LRSv" value="?:" />
+    <ref role="1TJDcQ" node="4rZeNQ6MpKl" resolve="BinaryExpression" />
   </node>
 </model>
 

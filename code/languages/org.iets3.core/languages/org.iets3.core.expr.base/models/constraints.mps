@@ -497,6 +497,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3kzwyUOs1vy">
+    <property role="3GE5qa" value="option" />
     <ref role="1M2myG" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
   </node>
 </model>
