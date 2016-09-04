@@ -864,8 +864,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable" />
     </node>
-    <node concept="PrWs8" id="22hm_0zwiyA" role="PzmwI">
-      <ref role="PrY4T" node="6rGLT0TevEL" resolve="IRef" />
+    <node concept="PrWs8" id="3kzwyUOJ5i$" role="PzmwI">
+      <ref role="PrY4T" node="3kzwyUOs05a" resolve="ISingleSymbolRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="71dSyJVnXcK">
