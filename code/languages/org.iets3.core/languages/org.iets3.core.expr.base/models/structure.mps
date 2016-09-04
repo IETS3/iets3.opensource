@@ -668,6 +668,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="3kzwyUOAjoT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="1pbfSe" value="1017992628" />
@@ -831,6 +834,9 @@
       <property role="TrG5h" value="index" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="PrWs8" id="3kzwyUOAjoX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="71dSyJVnXem">
     <property role="1pbfSe" value="1806546369" />
@@ -936,6 +942,23 @@
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
     <property role="1pbfSe" value="1278287005" />
     <property role="TrG5h" value="IOptionDerefContext" />
+    <node concept="PrWs8" id="3kzwyUOt$nO" role="PrDN$">
+      <ref role="PrY4T" node="3kzwyUOs0Da" resolve="IScopeFilterer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3kzwyUOs05a">
+    <property role="1pbfSe" value="376208520" />
+    <property role="TrG5h" value="ISingleSymbolRef" />
+    <node concept="PrWs8" id="3kzwyUOs05d" role="PrDN$">
+      <ref role="PrY4T" node="6XENO0rLj7" resolve="IIsSingleSymbol" />
+    </node>
+    <node concept="PrWs8" id="3kzwyUOs05i" role="PrDN$">
+      <ref role="PrY4T" node="6rGLT0TevEL" resolve="IRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3kzwyUOs0Da">
+    <property role="1pbfSe" value="376206216" />
+    <property role="TrG5h" value="IScopeFilterer" />
   </node>
 </model>
 

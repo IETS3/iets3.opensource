@@ -36,8 +36,18 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -84,6 +94,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -121,6 +134,23 @@
     <ref role="1M2myG" to="hm2y:UN2ftLUxmN" resolve="SomeValExpr" />
     <node concept="nKS2y" id="UN2ftLUydd" role="1MLUbF">
       <node concept="3clFbS" id="UN2ftLUyde" role="2VODD2">
+        <node concept="3clFbJ" id="3kzwyUOwwMi" role="3cqZAp">
+          <node concept="3clFbS" id="3kzwyUOwwMk" role="3clFbx">
+            <node concept="3cpWs6" id="3kzwyUOwwZ1" role="3cqZAp">
+              <node concept="3clFbT" id="3kzwyUOwx0D" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3kzwyUOwwP$" role="3clFbw">
+            <node concept="nLn13" id="3kzwyUOwwNB" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3kzwyUOwwUy" role="2OqNvi">
+              <node concept="chp4Y" id="3kzwyUOwwWo" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="UN2ftLV94y" role="3cqZAp">
           <node concept="3cpWsn" id="UN2ftLV94z" role="3cpWs9">
             <property role="TrG5h" value="deref" />
@@ -419,6 +449,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="3kzwyUOs1vy">
+    <ref role="1M2myG" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
   </node>
 </model>
 
