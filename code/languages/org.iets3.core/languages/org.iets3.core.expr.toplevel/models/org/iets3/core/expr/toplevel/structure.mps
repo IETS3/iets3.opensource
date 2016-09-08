@@ -56,7 +56,7 @@
     <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
-      <property role="TrG5h" value="extension" />
+      <property role="TrG5h" value="ext" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="49WTic8f4nK" role="PzmwI">
