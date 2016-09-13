@@ -19,6 +19,8 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -58,6 +60,10 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+        <child id="1220975211821" name="query" index="17MNgL" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -68,6 +74,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1220974635399" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontStyle" flags="in" index="17KAyr" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -152,6 +159,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -172,6 +182,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -1115,6 +1128,40 @@
           </node>
         </node>
       </node>
+      <node concept="Vb9p2" id="3KzlhPzQXzY" role="3F10Kt">
+        <property role="Vbekb" value="QUERY" />
+        <node concept="17KAyr" id="3KzlhPzQXFT" role="17MNgL">
+          <node concept="3clFbS" id="3KzlhPzQXFU" role="2VODD2">
+            <node concept="3clFbJ" id="3KzlhPzQXI_" role="3cqZAp">
+              <node concept="2OqwBi" id="3KzlhPzQY8r" role="3clFbw">
+                <node concept="2OqwBi" id="3KzlhPzQXIA" role="2Oq$k0">
+                  <node concept="pncrf" id="3KzlhPzQXIB" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3KzlhPzQXWC" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:UN2ftLUxmO" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3KzlhPzQYlY" role="2OqNvi">
+                  <ref role="37wK5l" to="gdgh:3KzlhPzQWyE" resolve="hasDefaultName" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="3KzlhPzQXID" role="3clFbx">
+                <node concept="3cpWs6" id="3KzlhPzQXIE" role="3cqZAp">
+                  <node concept="10M0yZ" id="3KzlhPzQXIF" role="3cqZAk">
+                    <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
+                    <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3KzlhPzQXIG" role="3cqZAp">
+              <node concept="10M0yZ" id="3KzlhPzQXIH" role="3clFbG">
+                <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1Ez$z58DYWa">
@@ -1558,6 +1605,35 @@
         <node concept="3F0A7n" id="69zaTr1Yk46" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="3KzlhPzPBel" role="3F10Kt">
+            <property role="Vbekb" value="QUERY" />
+            <node concept="17KAyr" id="3KzlhPzPBen" role="17MNgL">
+              <node concept="3clFbS" id="3KzlhPzPBeo" role="2VODD2">
+                <node concept="3clFbJ" id="3KzlhPzPBfL" role="3cqZAp">
+                  <node concept="2OqwBi" id="3KzlhPzPBnn" role="3clFbw">
+                    <node concept="pncrf" id="3KzlhPzPBhj" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3KzlhPzQXe0" role="2OqNvi">
+                      <ref role="37wK5l" to="gdgh:3KzlhPzQWyE" resolve="hasDefaultName" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="3KzlhPzPBfN" role="3clFbx">
+                    <node concept="3cpWs6" id="3KzlhPzPCa_" role="3cqZAp">
+                      <node concept="10M0yZ" id="3KzlhPzPGrJ" role="3cqZAk">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3KzlhPzPHmv" role="3cqZAp">
+                  <node concept="10M0yZ" id="3KzlhPzPHmu" role="3clFbG">
+                    <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                    <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
