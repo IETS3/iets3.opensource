@@ -390,7 +390,7 @@
       <node concept="3clFbS" id="69zaTr1ELcN" role="2VODD2">
         <node concept="3clFbF" id="69zaTr1ELe8" role="3cqZAp">
           <node concept="Xl_RD" id="69zaTr1ELe7" role="3clFbG">
-            <property role="Xl_RC" value="Derive Type" />
+            <property role="Xl_RC" value="(Re-)Derive Type" />
           </node>
         </node>
       </node>
@@ -403,7 +403,12 @@
               <ref role="1PxNhF" to="hm2y:6sdnDbSlaok" resolve="Type" />
               <node concept="2OqwBi" id="12WRc291R6J" role="1PxMeX">
                 <node concept="2OqwBi" id="12WRc291QZ9" role="2Oq$k0">
-                  <node concept="2Sf5sV" id="12WRc291QXs" role="2Oq$k0" />
+                  <node concept="2OqwBi" id="5aHkq2w4ncA" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="12WRc291QXs" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="5aHkq2w4nhw" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:5aHkq2w4m8L" resolve="getNodeFromWhichToDeriveType" />
+                    </node>
+                  </node>
                   <node concept="3JvlWi" id="12WRc297XvD" role="2OqNvi" />
                 </node>
                 <node concept="1$rogu" id="12WRc291RbP" role="2OqNvi" />
@@ -415,21 +420,6 @@
                 <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="69zaTr1EM35" role="2ZfVeh">
-      <node concept="3clFbS" id="69zaTr1EM36" role="2VODD2">
-        <node concept="3clFbF" id="69zaTr1EM6l" role="3cqZAp">
-          <node concept="2OqwBi" id="69zaTr1EMgQ" role="3clFbG">
-            <node concept="2OqwBi" id="69zaTr1EM8q" role="2Oq$k0">
-              <node concept="2Sf5sV" id="69zaTr1EM6k" role="2Oq$k0" />
-              <node concept="3TrEf2" id="69zaTr1EMbZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" />
-              </node>
-            </node>
-            <node concept="3w_OXm" id="69zaTr1EMpI" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -517,7 +507,7 @@
       <node concept="3clFbS" id="69zaTr1Z53X" role="2VODD2">
         <node concept="3clFbF" id="69zaTr1Z55m" role="3cqZAp">
           <node concept="Xl_RD" id="69zaTr1Z55l" role="3clFbG">
-            <property role="Xl_RC" value="Update Specific Error Clauses" />
+            <property role="Xl_RC" value="Add Missing Specific Error Clauses" />
           </node>
         </node>
       </node>

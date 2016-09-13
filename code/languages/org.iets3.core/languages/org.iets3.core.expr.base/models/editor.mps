@@ -218,6 +218,7 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
@@ -1427,6 +1428,10 @@
         <node concept="2iRfu4" id="5BNZGjBvVhB" role="2iSdaV" />
         <node concept="3F0ifn" id="5BNZGjBvVhz" role="3EZMnx">
           <property role="3F0ifm" value="try" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="1kHk_G" id="5aHkq2w0ZZT" role="3EZMnx">
+          <ref role="1NtTu8" to="hm2y:5aHkq2w0Y$e" resolve="complete" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F1sOY" id="5BNZGjBvVhT" role="3EZMnx">
