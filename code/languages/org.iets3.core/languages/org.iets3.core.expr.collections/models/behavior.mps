@@ -300,13 +300,13 @@
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
-    <node concept="13i0hz" id="4Q4DxjDuPdJ" role="13h7CS">
-      <property role="TrG5h" value="getAllSupertypes" />
+    <node concept="13i0hz" id="3KzlhPzMJ4A" role="13h7CS">
+      <property role="TrG5h" value="allSupertypes" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
-      <node concept="3Tm1VV" id="4Q4DxjDuPdK" role="1B3o_S" />
-      <node concept="3clFbS" id="4Q4DxjDuPeo" role="3clF47">
+      <node concept="3Tm1VV" id="3KzlhPzMJ4B" role="1B3o_S" />
+      <node concept="3clFbS" id="3KzlhPzMJ5e" role="3clF47">
         <node concept="3cpWs8" id="4Q4DxjDjyd2" role="3cqZAp">
           <node concept="3cpWsn" id="4Q4DxjDjyd5" role="3cpWs9">
             <property role="TrG5h" value="supertypes" />
@@ -390,7 +390,7 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="4Q4DxjDuPep" role="3clF45">
+      <node concept="2I9FWS" id="3KzlhPzMJ5f" role="3clF45">
         <ref role="2I9WkF" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
@@ -650,13 +650,13 @@
       </node>
       <node concept="17QB3L" id="49WTic8dFin" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="4Q4DxjDuS9T" role="13h7CS">
-      <property role="TrG5h" value="getAllSupertypes" />
+    <node concept="13i0hz" id="3KzlhPzMJrX" role="13h7CS">
+      <property role="TrG5h" value="allSupertypes" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
-      <node concept="3Tm1VV" id="4Q4DxjDuS9U" role="1B3o_S" />
-      <node concept="3clFbS" id="4Q4DxjDuS9V" role="3clF47">
+      <node concept="3Tm1VV" id="3KzlhPzMJrY" role="1B3o_S" />
+      <node concept="3clFbS" id="3KzlhPzMJs$" role="3clF47">
         <node concept="3cpWs8" id="4Q4DxjDuS9W" role="3cqZAp">
           <node concept="3cpWsn" id="4Q4DxjDuS9X" role="3cpWs9">
             <property role="TrG5h" value="supertypes" />
@@ -794,7 +794,7 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="4Q4DxjDuSav" role="3clF45">
+      <node concept="2I9FWS" id="3KzlhPzMJs_" role="3clF45">
         <ref role="2I9WkF" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>

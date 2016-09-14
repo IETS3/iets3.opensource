@@ -423,14 +423,14 @@
     <property role="TrG5h" value="ParamRef" />
     <property role="3GE5qa" value="components.param" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="3kzwyUOJ3aB" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
+    </node>
     <node concept="1TJgyj" id="3NBP8_O5tqN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
-    </node>
-    <node concept="PrWs8" id="6rGLT0TezKA" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMyV">
@@ -957,11 +957,6 @@
     <property role="3GE5qa" value="analysis.animator" />
     <property role="TrG5h" value="IAnimatable" />
   </node>
-  <node concept="PlHQZ" id="1KwU7TT_spY">
-    <property role="1pbfSe" value="1783189764" />
-    <property role="3GE5qa" value="components" />
-    <property role="TrG5h" value="IComponentContext" />
-  </node>
   <node concept="1TIwiD" id="1WAg9Tz$HcG">
     <property role="1pbfSe" value="2101799990" />
     <property role="3GE5qa" value="expr.instanceselection" />
@@ -1020,6 +1015,43 @@
     <property role="TrG5h" value="AllPortsTarget" />
     <property role="34LRSv" value="allports" />
     <ref role="1TJDcQ" node="1WAg9TzgUyP" resolve="AbstractPortsTarget" />
+  </node>
+  <node concept="PlHQZ" id="1KwU7TT_spY">
+    <property role="1pbfSe" value="1783189764" />
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="IComponentContext" />
+  </node>
+  <node concept="1TIwiD" id="2Y$6Xot5kBu">
+    <property role="1pbfSe" value="1287218612" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="AbstractComponentInstance" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
+    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
+    </node>
+    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
+    <node concept="1TJgyj" id="2Y$6Xot5kGx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
+    </node>
+    <node concept="1TJgyj" id="2Y$6Xot5kOx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1WAg9TyYvdW">
     <property role="1pbfSe" value="2111818726" />
@@ -1088,38 +1120,6 @@
       <property role="20kJfa" value="port" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2Y$6Xot5kBu">
-    <property role="1pbfSe" value="1287218612" />
-    <property role="3GE5qa" value="components.substructure" />
-    <property role="TrG5h" value="AbstractComponentInstance" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
-    </node>
-    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
-    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-    <node concept="1TJgyj" id="2Y$6Xot5kGx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="component" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
-    </node>
-    <node concept="1TJgyj" id="2Y$6Xot5kOx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameterValues" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
     </node>
   </node>
 </model>
