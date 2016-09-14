@@ -3535,7 +3535,7 @@
       <node concept="3clFbS" id="69zaTr1Xu7A" role="3clF47">
         <node concept="3clFbF" id="69zaTr1Xuex" role="3cqZAp">
           <node concept="Xl_RD" id="69zaTr1Xuew" role="3clFbG">
-            <property role="Xl_RC" value="val" />
+            <property role="Xl_RC" value="result" />
           </node>
         </node>
       </node>

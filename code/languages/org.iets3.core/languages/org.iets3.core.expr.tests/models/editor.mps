@@ -90,7 +90,9 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -265,6 +267,7 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="av4b:ub9nkyHAb7" resolve="TestCase" />
     <node concept="3EZMnI" id="ub9nkyHAd_" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="2iRkQZ" id="ub9nkyHAdA" role="2iSdaV" />
       <node concept="3EZMnI" id="ub9nkyHAdf" role="3EZMnx">
         <node concept="2iRfu4" id="ub9nkyHAdg" role="2iSdaV" />
@@ -289,6 +292,19 @@
       </node>
       <node concept="3F0ifn" id="ub9nkyHAdN" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="3EZMnI" id="3KzlhPzXwmd" role="AHCbl">
+        <node concept="2iRfu4" id="3KzlhPzXwme" role="2iSdaV" />
+        <node concept="3F0ifn" id="3KzlhPzXwmf" role="3EZMnx">
+          <property role="3F0ifm" value="test case" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0A7n" id="3KzlhPzXwmg" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="3KzlhPzXwmh" role="3EZMnx">
+          <property role="3F0ifm" value="{...}" />
+        </node>
       </node>
     </node>
   </node>
