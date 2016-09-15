@@ -4,7 +4,7 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -196,7 +196,7 @@
       </node>
     </node>
     <node concept="1N5Pfh" id="UN2ftLUyKp" role="1Mr941">
-      <ref role="1N5Vy1" to="hm2y:UN2ftLUxmO" />
+      <ref role="1N5Vy1" to="hm2y:UN2ftLUxmO" resolve="someQuery" />
       <node concept="1MUpDS" id="UN2ftLUyKu" role="1N6uqs">
         <node concept="3clFbS" id="UN2ftLUyKv" role="2VODD2">
           <node concept="3clFbF" id="UN2ftLUyL8" role="3cqZAp">
@@ -242,7 +242,7 @@
     <property role="3GE5qa" value="error" />
     <ref role="1M2myG" to="hm2y:69zaTr1Yk3m" resolve="SuccessValueExpr" />
     <node concept="1N5Pfh" id="69zaTr1Yk51" role="1Mr941">
-      <ref role="1N5Vy1" to="hm2y:69zaTr1Yk3n" />
+      <ref role="1N5Vy1" to="hm2y:69zaTr1Yk3n" resolve="try" />
       <node concept="1MUpDS" id="69zaTr1Yk53" role="1N6uqs">
         <node concept="3clFbS" id="69zaTr1Yk54" role="2VODD2">
           <node concept="3clFbF" id="69zaTr1Yk5H" role="3cqZAp">
@@ -441,7 +441,7 @@
       </node>
     </node>
     <node concept="1N5Pfh" id="71dSyJVnYbL" role="1Mr941">
-      <ref role="1N5Vy1" to="hm2y:71dSyJVnXlI" />
+      <ref role="1N5Vy1" to="hm2y:71dSyJVnXlI" resolve="var" />
       <node concept="1MUpDS" id="71dSyJVnYbQ" role="1N6uqs">
         <node concept="3clFbS" id="71dSyJVnYbR" role="2VODD2">
           <node concept="3cpWs8" id="3kzwyUOJ5jn" role="3cqZAp">
@@ -462,7 +462,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="3kzwyUOJ5jv" role="2OqNvi">
-                  <ref role="3TtcxE" to="hm2y:71dSyJVnXff" />
+                  <ref role="3TtcxE" to="hm2y:71dSyJVnXff" resolve="subs" />
                 </node>
               </node>
             </node>

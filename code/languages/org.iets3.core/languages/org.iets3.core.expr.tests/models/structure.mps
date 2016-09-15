@@ -2,7 +2,8 @@
 <model ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,10 +17,10 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -32,12 +33,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -51,30 +54,31 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="ub9nkyHAbg">
-    <property role="1pbfSe" value="708937797" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="TestOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="543569365052056272" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="ub9nkyHAbh">
-    <property role="1pbfSe" value="708937798" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="EqualsTestOp" />
     <property role="34LRSv" value="equals" />
+    <property role="EcuMT" value="543569365052056273" />
     <ref role="1TJDcQ" node="ub9nkyHAbg" resolve="TestOp" />
   </node>
   <node concept="1TIwiD" id="ub9nkyHAb7">
-    <property role="1pbfSe" value="708937788" />
     <property role="TrG5h" value="TestCase" />
     <property role="34LRSv" value="test case" />
     <property role="3GE5qa" value="" />
+    <property role="EcuMT" value="543569365052056263" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ub9nkyHAcK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="543569365052056368" />
       <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
     </node>
     <node concept="PrWs8" id="ub9nkyHAb8" role="PzmwI">
@@ -82,27 +86,30 @@
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyHAba">
-    <property role="1pbfSe" value="708937791" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="TestItem" />
     <property role="34LRSv" value="assert" />
+    <property role="EcuMT" value="543569365052056266" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ub9nkyHAbb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actual" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="543569365052056267" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="ub9nkyHAbd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expected" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="543569365052056269" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="ub9nkyHAbI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="op" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="543569365052056302" />
       <ref role="20lvS9" node="ub9nkyHAbg" resolve="TestOp" />
     </node>
     <node concept="PrWs8" id="ub9nkyPQAV" role="PzmwI">
@@ -116,22 +123,25 @@
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyK62f">
-    <property role="1pbfSe" value="709592580" />
     <property role="TrG5h" value="TestSuite" />
     <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="543569365052711055" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7D7uZV2GoIG" role="1TKVEl">
       <property role="TrG5h" value="executeAutomatically" />
+      <property role="IQ2nx" value="8811147530091989932" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="6HHp2WmWVi9" role="1TKVEl">
       <property role="TrG5h" value="referenceOnlyLocalStuff" />
+      <property role="IQ2nx" value="7740953487931061385" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="ub9nkyK62i" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="543569365052711058" />
       <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
     <node concept="PrWs8" id="ub9nkyK62g" role="PzmwI">
@@ -157,23 +167,25 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WmRVXt">
-    <property role="1pbfSe" value="2108873844" />
     <property role="TrG5h" value="NamedAssertRef" />
+    <property role="EcuMT" value="7740953487929753437" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6HHp2WmRVXx" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="item" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7740953487929753441" />
       <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WneCKI">
-    <property role="1pbfSe" value="2102923171" />
     <property role="TrG5h" value="CommentCondition" />
     <property role="34LRSv" value=".." />
+    <property role="EcuMT" value="7740953487935704110" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyi" id="6HHp2WneCKS" role="1TKVEl">
       <property role="TrG5h" value="label" />
+      <property role="IQ2nx" value="7740953487935704120" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

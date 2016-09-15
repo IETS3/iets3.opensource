@@ -2,8 +2,8 @@
 <model ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -128,11 +128,11 @@
             <node concept="2OqwBi" id="6HHp2WmSSrj" role="2Oq$k0">
               <node concept="oxGPV" id="6HHp2WmSSpz" role="2Oq$k0" />
               <node concept="3TrEf2" id="6HHp2WmSSwc" role="2OqNvi">
-                <ref role="3Tt5mk" to="av4b:6HHp2WmRVXx" />
+                <ref role="3Tt5mk" to="av4b:6HHp2WmRVXx" resolve="item" />
               </node>
             </node>
             <node concept="3TrEf2" id="6HHp2WmSSNO" role="2OqNvi">
-              <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" />
+              <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" resolve="actual" />
             </node>
           </node>
         </node>
@@ -178,7 +178,7 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="rqRoa" id="252QIDys56K" role="33vP2m">
-                  <ref role="rqRob" to="av4b:ub9nkyHAbb" />
+                  <ref role="rqRob" to="av4b:ub9nkyHAbb" resolve="actual" />
                 </node>
               </node>
             </node>
@@ -189,7 +189,7 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="rqRoa" id="252QIDys5ek" role="33vP2m">
-                  <ref role="rqRob" to="av4b:ub9nkyHAbd" />
+                  <ref role="rqRob" to="av4b:ub9nkyHAbd" resolve="expected" />
                 </node>
               </node>
             </node>
@@ -201,7 +201,7 @@
                   <node concept="2OqwBi" id="252QIDysjZb" role="2Oq$k0">
                     <node concept="oxGPV" id="252QIDysjZc" role="2Oq$k0" />
                     <node concept="3TrEf2" id="252QIDysjZd" role="2OqNvi">
-                      <ref role="3Tt5mk" to="av4b:ub9nkyHAbI" />
+                      <ref role="3Tt5mk" to="av4b:ub9nkyHAbI" resolve="op" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="252QIDysjZe" role="2OqNvi">

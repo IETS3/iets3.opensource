@@ -2,8 +2,8 @@
 <model ref="r:14d19f45-b1ff-401e-875c-62c48d110e0a(org.iets3.core.expr.path.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -251,7 +251,7 @@
                           <node concept="2OqwBi" id="2KEm7E5F62m" role="37wK5m">
                             <node concept="oxGPV" id="2KEm7E5F62n" role="2Oq$k0" />
                             <node concept="3TrEf2" id="2KEm7E5F62o" role="2OqNvi">
-                              <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" />
+                              <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" resolve="member" />
                             </node>
                           </node>
                         </node>
@@ -425,7 +425,7 @@
                                         <node concept="2OqwBi" id="2KEm7E5F635" role="37wK5m">
                                           <node concept="oxGPV" id="2KEm7E5F636" role="2Oq$k0" />
                                           <node concept="3TrEf2" id="2KEm7E5F637" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" />
+                                            <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" resolve="member" />
                                           </node>
                                         </node>
                                       </node>
@@ -503,7 +503,7 @@
                                       <node concept="2OqwBi" id="2KEm7E5F63_" role="37wK5m">
                                         <node concept="oxGPV" id="2KEm7E5F63A" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="2KEm7E5F63B" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" />
+                                          <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" resolve="member" />
                                         </node>
                                       </node>
                                     </node>

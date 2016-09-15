@@ -2,16 +2,22 @@
 <model ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -22,15 +28,17 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -44,42 +52,46 @@
     </language>
   </registry>
   <node concept="PlHQZ" id="6LfBX8YlYGS">
-    <property role="1pbfSe" value="1431860470" />
     <property role="TrG5h" value="ISpecRoot" />
+    <property role="EcuMT" value="7804632404594256696" />
     <node concept="PrWs8" id="cJpacq5Tp0" role="PrDN$">
       <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
-    <property role="1pbfSe" value="1431852556" />
     <property role="TrG5h" value="IETS3DummyIcon" />
-    <property role="MwhBj" value="${module}/icons/iets3.png" />
+    <property role="EcuMT" value="7804632404594264610" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="cEt5uj8NaR" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/iets3.png" />
+    </node>
   </node>
   <node concept="PlHQZ" id="cJpacq4087">
-    <property role="1pbfSe" value="490694314" />
     <property role="TrG5h" value="IOptionallyNamed" />
+    <property role="EcuMT" value="229512757698888199" />
     <node concept="PrWs8" id="cJpacq5WSG" role="PrDN$">
       <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="cJpacq40jC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="optionalName" />
+      <property role="IQ2ns" value="229512757698888936" />
       <ref role="20lvS9" node="cJpacq408a" resolve="OptionalNameSpecifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="cJpacq408a">
-    <property role="1pbfSe" value="490694317" />
     <property role="TrG5h" value="OptionalNameSpecifier" />
+    <property role="EcuMT" value="229512757698888202" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="cJpacq408b" role="1TKVEl">
       <property role="TrG5h" value="optionalName" />
+      <property role="IQ2nx" value="229512757698888203" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="PlHQZ" id="cJpacq5T0O">
-    <property role="1pbfSe" value="491189463" />
     <property role="TrG5h" value="IValidNamedConcept" />
+    <property role="EcuMT" value="229512757699383348" />
     <node concept="PrWs8" id="cJpacq5T0Y" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -88,28 +100,29 @@
     </node>
   </node>
   <node concept="PlHQZ" id="1YPoVR7Faxf">
-    <property role="1pbfSe" value="413004788" />
     <property role="TrG5h" value="ICustomRemoteCreateSupport" />
+    <property role="EcuMT" value="2284842052710344783" />
   </node>
   <node concept="PlHQZ" id="3R3AIvuMXwK">
-    <property role="1pbfSe" value="479163159" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanStoreCheckResult" />
+    <property role="EcuMT" value="4450571177438206000" />
   </node>
   <node concept="PlHQZ" id="3R3AIvumrSU">
-    <property role="1pbfSe" value="471685409" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanRunCheckManually" />
+    <property role="EcuMT" value="4450571177430728250" />
     <node concept="PrWs8" id="3R3AIvuMXwL" role="PrDN$">
       <ref role="PrY4T" node="3R3AIvuMXwK" resolve="ICanStoreCheckResult" />
     </node>
   </node>
   <node concept="PlHQZ" id="6MJy$PGsrHl">
-    <property role="1pbfSe" value="652130910" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="IDetectNeedToRunManually" />
+    <property role="EcuMT" value="7831630342157089621" />
     <node concept="1TJgyi" id="6MJy$PGsrHL" role="1TKVEl">
       <property role="TrG5h" value="__hash" />
+      <property role="IQ2nx" value="7831630342157089649" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="6MJy$PGsrHm" role="PrDN$">
@@ -117,17 +130,17 @@
     </node>
   </node>
   <node concept="PlHQZ" id="2HplpPDjsPc">
-    <property role="1pbfSe" value="1800985879" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanStorePersistentResult" />
+    <property role="EcuMT" value="3123621951123082572" />
     <node concept="PrWs8" id="3I6_jFIZNlA" role="PrDN$">
       <ref role="PrY4T" node="3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
     </node>
   </node>
   <node concept="PlHQZ" id="3I6_jFIZNl_">
-    <property role="1pbfSe" value="713411231" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanReadPersistentResult" />
+    <property role="EcuMT" value="4289279775467320677" />
   </node>
 </model>
 

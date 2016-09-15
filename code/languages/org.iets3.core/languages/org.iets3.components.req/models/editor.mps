@@ -2,7 +2,7 @@
 <model ref="r:b8720f64-e52a-4351-9b7f-489963d6cfdc(org.iets3.components.req.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -136,7 +136,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="cJpacq5XBM" role="3EZMnx">
-          <ref role="1NtTu8" to="sf4k:cJpacq5Xa8" />
+          <ref role="1NtTu8" to="sf4k:cJpacq5Xa8" resolve="contents" />
           <node concept="2iRkQZ" id="cJpacq5XBS" role="2czzBx" />
           <node concept="3F0ifn" id="cJpacq5XBV" role="2czzBI">
             <property role="3F0ifm" value="" />
