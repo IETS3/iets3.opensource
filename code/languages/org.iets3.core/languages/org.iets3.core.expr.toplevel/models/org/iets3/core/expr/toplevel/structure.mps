@@ -267,7 +267,7 @@
     <property role="1pbfSe" value="2102443369" />
     <property role="TrG5h" value="Typedef" />
     <property role="3GE5qa" value="typedef" />
-    <property role="34LRSv" value="typedef" />
+    <property role="34LRSv" value="type" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6HHp2WngtTF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
