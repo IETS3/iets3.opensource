@@ -1010,7 +1010,7 @@
     <node concept="3EZMnI" id="6HHp2WngtUa" role="2wV5jI">
       <node concept="2iRfu4" id="6HHp2WngtUb" role="2iSdaV" />
       <node concept="3F0ifn" id="6HHp2WngtU7" role="3EZMnx">
-        <property role="3F0ifm" value="typedef" />
+        <property role="3F0ifm" value="type" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F0A7n" id="6HHp2WngtUw" role="3EZMnx">
