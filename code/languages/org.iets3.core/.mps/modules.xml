@@ -19,6 +19,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.flavor.taint/org.iets3.core.expr.flavor.taint.mpl" folder="flavor" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.flavor/org.iets3.core.expr.flavor.mpl" folder="flavor" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.natlang/org.iets3.core.expr.natlang.mpl" folder="expr" />
@@ -72,6 +74,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.modelcheckersupport/test.ts.analysis.modelcheckersupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.solversupport/test.ts.analysis.solversupport.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.components.functional/test.ts.components.functional.msd" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr.flavor/test.ts.core.expr.flavor.msd" folder="flavor" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
     </projectModules>
   </component>
