@@ -2,13 +2,13 @@
 <model ref="r:ec4fadfa-b752-42e1-9d44-ff41929cb381(org.iets3.core.expr.tests.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
-    <use id="24c96a96-b7a1-4f30-82da-0f8e279a2661" name="de.itemis.mps.editor.celllayout.styles" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="-1" />
+    <use id="24c96a96-b7a1-4f30-82da-0f8e279a2661" name="de.itemis.mps.editor.celllayout.styles" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -90,7 +90,9 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -265,6 +267,20 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="av4b:ub9nkyHAb7" resolve="TestCase" />
     <node concept="3EZMnI" id="ub9nkyHAd_" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3EZMnI" id="3KzlhPzXwmd" role="AHCbl">
+        <node concept="2iRfu4" id="3KzlhPzXwme" role="2iSdaV" />
+        <node concept="3F0ifn" id="3KzlhPzXwmf" role="3EZMnx">
+          <property role="3F0ifm" value="test case" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0A7n" id="3KzlhPzXwmg" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="3KzlhPzXwmh" role="3EZMnx">
+          <property role="3F0ifm" value="{...}" />
+        </node>
+      </node>
       <node concept="2iRkQZ" id="ub9nkyHAdA" role="2iSdaV" />
       <node concept="3EZMnI" id="ub9nkyHAdf" role="3EZMnx">
         <node concept="2iRfu4" id="ub9nkyHAdg" role="2iSdaV" />

@@ -2,10 +2,10 @@
 <model ref="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -56,6 +56,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
@@ -104,6 +105,7 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -407,6 +409,88 @@
               </node>
             </node>
             <node concept="3x8VRR" id="2S3ZC$oCfOr" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2KGel$Stogl">
+    <property role="3GE5qa" value="typedef" />
+    <ref role="1M2myG" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    <node concept="1N5Pfh" id="2KGel$Stogv" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:6HHp2WngtVn" />
+      <node concept="1MUpDS" id="2KGel$Stogx" role="1N6uqs">
+        <node concept="3clFbS" id="2KGel$Stogy" role="2VODD2">
+          <node concept="3cpWs8" id="2KGel$StoxQ" role="3cqZAp">
+            <node concept="3cpWsn" id="2KGel$StoxR" role="3cpWs9">
+              <property role="TrG5h" value="all" />
+              <node concept="A3Dl8" id="2KGel$StoxE" role="1tU5fm">
+                <node concept="3Tqbb2" id="2KGel$StoxH" role="A3Ik2">
+                  <ref role="ehGHo" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2KGel$StoxS" role="33vP2m">
+                <node concept="2OqwBi" id="2KGel$StoxT" role="2Oq$k0">
+                  <node concept="21POm0" id="2KGel$StoxU" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="2KGel$StoxV" role="2OqNvi">
+                    <node concept="1xMEDy" id="2KGel$StoxW" role="1xVPHs">
+                      <node concept="chp4Y" id="2KGel$StoxX" role="ri$Ld">
+                        <ref role="cht4Q" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2KGel$StoxY" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:6HHp2WngtVc" resolve="visibleTypedefs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2KGel$Stpqc" role="3cqZAp">
+            <node concept="3cpWsn" id="2KGel$Stpqd" role="3cpWs9">
+              <property role="TrG5h" value="td" />
+              <node concept="3Tqbb2" id="2KGel$Stpq9" role="1tU5fm">
+                <ref role="ehGHo" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+              </node>
+              <node concept="2OqwBi" id="2KGel$Stpqe" role="33vP2m">
+                <node concept="21POm0" id="2KGel$Stpqf" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="2KGel$Stpqg" role="2OqNvi">
+                  <node concept="1xMEDy" id="2KGel$Stpqh" role="1xVPHs">
+                    <node concept="chp4Y" id="2KGel$Stpqi" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="2KGel$Stpqj" role="1xVPHs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="2KGel$Stohb" role="3cqZAp">
+            <node concept="2OqwBi" id="2KGel$StoBa" role="3clFbG">
+              <node concept="37vLTw" id="2KGel$StoxZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2KGel$StoxR" resolve="all" />
+              </node>
+              <node concept="3zZkjj" id="2KGel$StoGx" role="2OqNvi">
+                <node concept="1bVj0M" id="2KGel$StoGz" role="23t8la">
+                  <node concept="3clFbS" id="2KGel$StoG$" role="1bW5cS">
+                    <node concept="3clFbF" id="2KGel$StoLf" role="3cqZAp">
+                      <node concept="3y3z36" id="2KGel$StoTQ" role="3clFbG">
+                        <node concept="37vLTw" id="2KGel$Stpqk" role="3uHU7w">
+                          <ref role="3cqZAo" node="2KGel$Stpqd" resolve="td" />
+                        </node>
+                        <node concept="37vLTw" id="2KGel$StoLe" role="3uHU7B">
+                          <ref role="3cqZAo" node="2KGel$StoG_" resolve="it" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2KGel$StoG_" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2KGel$StoGA" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

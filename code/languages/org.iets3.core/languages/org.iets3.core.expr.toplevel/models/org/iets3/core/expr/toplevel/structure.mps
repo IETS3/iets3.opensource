@@ -2,7 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
@@ -278,7 +278,7 @@
   <node concept="1TIwiD" id="6HHp2WngtTC">
     <property role="TrG5h" value="Typedef" />
     <property role="3GE5qa" value="typedef" />
-    <property role="34LRSv" value="typedef" />
+    <property role="34LRSv" value="type" />
     <property role="EcuMT" value="7740953487936183912" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6HHp2WngtTF" role="1TKVEi">

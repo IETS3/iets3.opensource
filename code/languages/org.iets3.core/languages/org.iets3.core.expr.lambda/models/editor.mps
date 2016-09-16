@@ -2,8 +2,8 @@
 <model ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -75,7 +75,9 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -411,6 +413,10 @@
     <property role="3GE5qa" value="block" />
     <ref role="1XX52x" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
     <node concept="3EZMnI" id="49WTic8ig69" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3F0ifn" id="3KzlhPzWNYs" role="AHCbl">
+        <property role="3F0ifm" value="{...}" />
+      </node>
       <node concept="l2Vlx" id="49WTic8ig6a" role="2iSdaV" />
       <node concept="3F0ifn" id="49WTic8ig66" role="3EZMnx">
         <property role="3F0ifm" value="{" />
