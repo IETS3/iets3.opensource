@@ -1538,6 +1538,27 @@
       </node>
       <node concept="17QB3L" id="4CFLhrLY7$w" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6KxoTHgUYYN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="hasEffect" />
+      <ref role="13i0hy" node="6KxoTHgLvAa" resolve="hasEffect" />
+      <node concept="3Tm1VV" id="6KxoTHgUYYO" role="1B3o_S" />
+      <node concept="3clFbS" id="6KxoTHgUYYT" role="3clF47">
+        <node concept="3clFbF" id="6KxoTHgUYYY" role="3cqZAp">
+          <node concept="BsUDl" id="6KxoTHgUZ5h" role="3clFbG">
+            <ref role="37wK5l" node="6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="6KxoTHgUZ98" role="37wK5m">
+              <node concept="13iPFW" id="6KxoTHgUZ5r" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6KxoTHgUZi9" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6KxoTHgUYYU" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7halHeUzsde">
     <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
