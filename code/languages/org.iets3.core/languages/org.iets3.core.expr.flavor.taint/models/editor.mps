@@ -41,14 +41,14 @@
     </language>
   </registry>
   <node concept="24kQdi" id="1xEzHAktRFc">
-    <ref role="1XX52x" to="f3o0:1xEzHAktQh6" resolve="TaintExpression" />
+    <ref role="1XX52x" to="f3o0:1xEzHAktQh6" resolve="ReadDataFromURLExpression" />
     <node concept="3EZMnI" id="1xEzHAktRFh" role="2wV5jI">
       <node concept="l2Vlx" id="1xEzHAktRFi" role="2iSdaV" />
       <node concept="3F0ifn" id="1xEzHAktRFe" role="3EZMnx">
-        <property role="3F0ifm" value="taint" />
+        <property role="3F0ifm" value="read-from-url*" />
       </node>
       <node concept="3F0ifn" id="1xEzHAktRFq" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value="[" />
         <node concept="11L4FC" id="1xEzHAktRHq" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -60,8 +60,29 @@
         <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" />
       </node>
       <node concept="3F0ifn" id="1xEzHAktRFG" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value="]" />
         <node concept="11L4FC" id="1xEzHAktRK4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KxoTHgIT20">
+    <ref role="1XX52x" to="f3o0:6KxoTHgIT1B" resolve="SanitizeExpression" />
+    <node concept="3EZMnI" id="6KxoTHgIT25" role="2wV5jI">
+      <node concept="l2Vlx" id="6KxoTHgIT26" role="2iSdaV" />
+      <node concept="3F0ifn" id="6KxoTHgIT22" role="3EZMnx">
+        <property role="3F0ifm" value="sanitize[" />
+        <node concept="11LMrY" id="6KxoTHgJaRy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6KxoTHgIT2m" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:4rZeNQ6NgXF" />
+      </node>
+      <node concept="3F0ifn" id="6KxoTHgIT2e" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="6KxoTHgJaSo" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

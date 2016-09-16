@@ -12,6 +12,7 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -30,6 +31,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -69,6 +71,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
+        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -194,6 +197,11 @@
       <node concept="3F0ifn" id="6zmBjqUjGZH" role="3EZMnx">
         <property role="3F0ifm" value="=&gt;" />
       </node>
+      <node concept="_tjkj" id="6KxoTHgSIsJ" role="3EZMnx">
+        <node concept="3F1sOY" id="6KxoTHgSIsZ" role="_tjki">
+          <ref role="1NtTu8" to="zzzn:6KxoTHgSIsv" />
+        </node>
+      </node>
       <node concept="3F1sOY" id="6zmBjqUjGZT" role="3EZMnx">
         <ref role="1NtTu8" to="zzzn:6zmBjqUjGYT" />
       </node>
@@ -277,6 +285,24 @@
         <property role="3F0ifm" value="|" />
         <node concept="11L4FC" id="6zmBjqUkwN6" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6KxoTHgUbZ5" role="3EZMnx">
+        <property role="3F0ifm" value="*" />
+        <node concept="11L4FC" id="6KxoTHgUc8O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="6KxoTHgUc8Q" role="pqm2j">
+          <node concept="3clFbS" id="6KxoTHgUc8R" role="2VODD2">
+            <node concept="3clFbF" id="6KxoTHgUc9u" role="3cqZAp">
+              <node concept="2OqwBi" id="6KxoTHgUcdp" role="3clFbG">
+                <node concept="pncrf" id="6KxoTHgUc9t" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6KxoTHgUcl9" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -772,6 +798,15 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KxoTHgSIrx">
+    <ref role="1XX52x" to="zzzn:6KxoTHgSIr8" resolve="EffectTagOnFunctionType" />
+    <node concept="3F0ifn" id="6KxoTHgSIrz" role="2wV5jI">
+      <property role="3F0ifm" value="*" />
+      <node concept="11L4FC" id="6KxoTHgSIsq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>

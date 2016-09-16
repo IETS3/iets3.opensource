@@ -63,6 +63,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="6KxoTHgSIsv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="effect" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6KxoTHgSIr8" resolve="EffectTagOnFunctionType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUkws6">
     <property role="1pbfSe" value="589866044" />
@@ -85,6 +91,9 @@
     </node>
     <node concept="PrWs8" id="6zmBjqUkMAU" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="6KxoTHgTNGu" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUkws9">
@@ -209,6 +218,9 @@
     <node concept="PrWs8" id="KaZMgygrmg" role="PrDN$">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
     </node>
+    <node concept="PrWs8" id="6KxoTHgLymK" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8eSD1">
     <property role="1pbfSe" value="1253601124" />
@@ -256,6 +268,9 @@
     <node concept="PrWs8" id="22hm_0zvyQo" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
+    <node concept="PrWs8" id="6KxoTHgLxTy" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="49WTic8hm1E">
     <property role="1pbfSe" value="1254245773" />
@@ -282,6 +297,9 @@
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6KxoTHgLvIg" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8ix6I">
@@ -367,6 +385,12 @@
     <property role="TrG5h" value="FunResExpr" />
     <property role="34LRSv" value="res" />
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
+  </node>
+  <node concept="1TIwiD" id="6KxoTHgSIr8">
+    <property role="1pbfSe" value="1123792285" />
+    <property role="TrG5h" value="EffectTagOnFunctionType" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
