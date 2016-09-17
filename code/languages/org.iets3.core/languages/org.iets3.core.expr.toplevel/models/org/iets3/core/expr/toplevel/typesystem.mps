@@ -119,6 +119,9 @@
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -889,6 +892,35 @@
     <node concept="1YaCAy" id="2S3ZC$oCfRG" role="1YuTPh">
       <property role="TrG5h" value="ve" />
       <ref role="1YaFvo" to="yv47:2S3ZC$oCfaF" resolve="TypedefContractValExpr" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="JUiQTzbyai">
+    <property role="TrG5h" value="check_RecordMember" />
+    <property role="3GE5qa" value="record" />
+    <node concept="3clFbS" id="JUiQTzbyaj" role="18ibNy">
+      <node concept="2Mj0R9" id="JUiQTzbyau" role="3cqZAp">
+        <node concept="3y3z36" id="JUiQTzbyxx" role="2MkoU_">
+          <node concept="10Nm6u" id="JUiQTzbyy4" role="3uHU7w" />
+          <node concept="2OqwBi" id="JUiQTzbyeL" role="3uHU7B">
+            <node concept="1YBJjd" id="JUiQTzbyaM" role="2Oq$k0">
+              <ref role="1YBMHb" node="JUiQTzbyal" resolve="m" />
+            </node>
+            <node concept="3TrEf2" id="JUiQTzbymX" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:7D7uZV2dYz0" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="JUiQTzbyza" role="2MkJ7o">
+          <property role="Xl_RC" value="type required" />
+        </node>
+        <node concept="1YBJjd" id="JUiQTzby$T" role="2OEOjV">
+          <ref role="1YBMHb" node="JUiQTzbyal" resolve="m" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="JUiQTzbyal" role="1YuTPh">
+      <property role="TrG5h" value="m" />
+      <ref role="1YaFvo" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
     </node>
   </node>
 </model>

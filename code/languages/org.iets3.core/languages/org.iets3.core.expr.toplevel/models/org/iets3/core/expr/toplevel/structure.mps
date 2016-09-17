@@ -198,7 +198,7 @@
     <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="PrWs8" id="7D7uZV2dYyU" role="PzmwI">

@@ -117,7 +117,6 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -542,19 +541,7 @@
     <property role="3GE5qa" value="record" />
     <ref role="13h7C2" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
     <node concept="13hLZK" id="7D7uZV2fCZr" role="13h7CW">
-      <node concept="3clFbS" id="7D7uZV2fCZs" role="2VODD2">
-        <node concept="3clFbF" id="7D7uZV2fCZu" role="3cqZAp">
-          <node concept="2OqwBi" id="7D7uZV2fDJM" role="3clFbG">
-            <node concept="2OqwBi" id="7D7uZV2fD29" role="2Oq$k0">
-              <node concept="13iPFW" id="7D7uZV2fCZt" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7D7uZV2fD8H" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
-              </node>
-            </node>
-            <node concept="WFELt" id="7D7uZV2fEMp" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="7D7uZV2fCZs" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7D7uZV2ybqD" role="13h7CS">
       <property role="13i0iv" value="false" />
