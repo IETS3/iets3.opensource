@@ -66,6 +66,9 @@
     <node concept="PrWs8" id="6iqfHNBPkk0" role="PzmwI">
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+    <node concept="PrWs8" id="sflsE7bRNl" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
     <property role="1pbfSe" value="1600259238" />
@@ -1003,6 +1006,10 @@
   <node concept="PlHQZ" id="6KxoTHgLv_I">
     <property role="1pbfSe" value="1125688055" />
     <property role="TrG5h" value="IMayHaveEffect" />
+  </node>
+  <node concept="PlHQZ" id="sflsE7bZ0S">
+    <property role="1pbfSe" value="1908455934" />
+    <property role="TrG5h" value="IBlockLike" />
   </node>
 </model>
 

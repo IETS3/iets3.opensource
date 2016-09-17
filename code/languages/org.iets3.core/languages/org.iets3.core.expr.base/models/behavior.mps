@@ -23,6 +23,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1312,6 +1313,29 @@
         <property role="TrG5h" value="indent" />
         <node concept="17QB3L" id="6iqfHNBPsod" role="1tU5fm" />
       </node>
+    </node>
+    <node concept="13i0hz" id="sflsE7bYrm" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canActuallyHaveDoc" />
+      <ref role="13i0hy" to="hwgx:sflsE7bRQK" resolve="canActuallyHaveDoc" />
+      <node concept="3Tm1VV" id="sflsE7bYrn" role="1B3o_S" />
+      <node concept="3clFbS" id="sflsE7bYrs" role="3clF47">
+        <node concept="3clFbF" id="sflsE7bYFg" role="3cqZAp">
+          <node concept="2OqwBi" id="sflsE7bYUg" role="3clFbG">
+            <node concept="2OqwBi" id="sflsE7bYI6" role="2Oq$k0">
+              <node concept="13iPFW" id="sflsE7bYFb" role="2Oq$k0" />
+              <node concept="1mfA1w" id="sflsE7bYNG" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="sflsE7bYXA" role="2OqNvi">
+              <node concept="chp4Y" id="sflsE7bZ1X" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:sflsE7bZ0S" resolve="IBlockLike" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="sflsE7bYrt" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3NBP8_O4f7U">

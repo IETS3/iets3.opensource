@@ -99,6 +99,9 @@
     <node concept="PrWs8" id="6iqfHNBPkz0" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+    <node concept="PrWs8" id="sflsE7gfai" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
     <property role="1pbfSe" value="1917229736" />

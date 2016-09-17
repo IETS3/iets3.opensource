@@ -116,6 +116,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -1751,12 +1754,12 @@
       </node>
       <node concept="3clFbJ" id="22hm_0zqYup" role="3cqZAp">
         <node concept="3clFbS" id="22hm_0zqYur" role="3clFbx">
-          <node concept="2MkqsV" id="22hm_0zqY_a" role="3cqZAp">
-            <node concept="Xl_RD" id="22hm_0zqY_p" role="2MkJ7o">
-              <property role="Xl_RC" value="value never used" />
-            </node>
-            <node concept="1YBJjd" id="22hm_0zqYA0" role="2OEOjV">
+          <node concept="a7r0C" id="sflsE7lTYD" role="3cqZAp">
+            <node concept="1YBJjd" id="sflsE7lU8t" role="2OEOjV">
               <ref role="1YBMHb" node="22hm_0zqUsU" resolve="ve" />
+            </node>
+            <node concept="Xl_RD" id="22hm_0zqY_p" role="a7wSD">
+              <property role="Xl_RC" value="value never used" />
             </node>
           </node>
         </node>
