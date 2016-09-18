@@ -163,6 +163,9 @@
       <concept id="1174555732504" name="jetbrains.mps.baseLanguage.regexp.structure.PredefinedSymbolClassRegexp" flags="ng" index="1SYyG9">
         <reference id="1174555843709" name="symbolClass" index="1SYXPG" />
       </concept>
+      <concept id="1174557878319" name="jetbrains.mps.baseLanguage.regexp.structure.CharacterSymbolClassPart" flags="ng" index="1T6I$Y">
+        <property id="1174557887320" name="character" index="1T6KD9" />
+      </concept>
       <concept id="1174558301835" name="jetbrains.mps.baseLanguage.regexp.structure.IntervalSymbolClassPart" flags="ng" index="1T8lYq">
         <property id="1174558315290" name="start" index="1T8p8b" />
         <property id="1174558317822" name="end" index="1T8pRJ" />
@@ -307,9 +310,42 @@
                         </node>
                       </node>
                       <node concept="1OJ37Q" id="6Mx2TmozONf" role="1OLqdY">
-                        <node concept="1OCmVF" id="7fbn8D7pc2B" role="1OLqdY">
-                          <node concept="1SYyG9" id="7fbn8D7pc2D" role="1OLDsb">
-                            <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
+                        <node concept="1OJ37Q" id="1ISzG27H097" role="1OLqdY">
+                          <node concept="1SLe3L" id="1ISzG27H09F" role="1OLqdY">
+                            <node concept="1P8g2x" id="1ISzG27H09x" role="1OLDsb">
+                              <node concept="1OJ37Q" id="1ISzG27H0a7" role="1P8hpE">
+                                <node concept="1OClNT" id="1ISzG27H0an" role="1OLqdY">
+                                  <node concept="1SYyG9" id="1ISzG27H0ai" role="1OLDsb">
+                                    <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
+                                  </node>
+                                </node>
+                                <node concept="1OJ37Q" id="1ISzG27H0as" role="1OLpdg">
+                                  <node concept="1SLe3L" id="1ISzG27H0bd" role="1OLqdY">
+                                    <node concept="1SSJmt" id="1ISzG27H0aB" role="1OLDsb">
+                                      <node concept="1T6I$Y" id="1ISzG27H0aV" role="1T5LoC">
+                                        <property role="1T6KD9" value="+" />
+                                      </node>
+                                      <node concept="1T6I$Y" id="1ISzG27H0b8" role="1T5LoC">
+                                        <property role="1T6KD9" value="-" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1SSJmt" id="1ISzG27H09T" role="1OLpdg">
+                                    <node concept="1T6I$Y" id="1ISzG27H09W" role="1T5LoC">
+                                      <property role="1T6KD9" value="E" />
+                                    </node>
+                                    <node concept="1T6I$Y" id="1ISzG27H0a1" role="1T5LoC">
+                                      <property role="1T6KD9" value="e" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1OCmVF" id="7fbn8D7pc2B" role="1OLpdg">
+                            <node concept="1SYyG9" id="7fbn8D7pc2D" role="1OLDsb">
+                              <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
+                            </node>
                           </node>
                         </node>
                         <node concept="1OC9wW" id="6Mx2TmozONg" role="1OLpdg">
