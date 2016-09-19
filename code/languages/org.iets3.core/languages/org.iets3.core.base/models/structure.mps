@@ -52,7 +52,7 @@
   </node>
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
     <property role="1pbfSe" value="1431852556" />
-    <property role="TrG5h" value="IETS3DummyIcon" />
+    <property role="TrG5h" value="IETS3DummyIcon16" />
     <property role="MwhBj" value="${module}/icons/iets3-16.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
@@ -128,6 +128,18 @@
     <property role="1pbfSe" value="713411231" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanReadPersistentResult" />
+  </node>
+  <node concept="1TIwiD" id="4SjtGYzyERT">
+    <property role="1pbfSe" value="241294136" />
+    <property role="TrG5h" value="IETS3DummyIcon32" />
+    <property role="MwhBj" value="${module}/icons/iets3-32.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4SjtGYz$Car">
+    <property role="1pbfSe" value="240780950" />
+    <property role="TrG5h" value="IETS3DummyIcon24" />
+    <property role="MwhBj" value="${module}/icons/iets3-24.png" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
