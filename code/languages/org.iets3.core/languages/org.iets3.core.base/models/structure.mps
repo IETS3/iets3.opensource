@@ -53,7 +53,7 @@
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
     <property role="1pbfSe" value="1431852556" />
     <property role="TrG5h" value="IETS3DummyIcon" />
-    <property role="MwhBj" value="${module}/icons/iets3.png" />
+    <property role="MwhBj" value="${module}/icons/iets3-16.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="cJpacq4087">
