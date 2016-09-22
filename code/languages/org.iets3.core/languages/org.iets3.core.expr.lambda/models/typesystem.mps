@@ -31,7 +31,6 @@
       </concept>
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -137,10 +136,12 @@
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
-      <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
+      </concept>
+      <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
+        <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -1942,41 +1943,6 @@
           </node>
         </node>
       </node>
-      <node concept="2Gpval" id="sflsE7awZ8" role="3cqZAp">
-        <node concept="2GrKxI" id="sflsE7awZa" role="2Gsz3X">
-          <property role="TrG5h" value="argtype" />
-        </node>
-        <node concept="2OqwBi" id="sflsE7axoT" role="2GsD0m">
-          <node concept="1YBJjd" id="sflsE7axjg" role="2Oq$k0">
-            <ref role="1YBMHb" node="6KxoTHgTsIh" resolve="ft" />
-          </node>
-          <node concept="3Tsc0h" id="sflsE7axJK" role="2OqNvi">
-            <ref role="3TtcxE" to="zzzn:6zmBjqUjGYR" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="sflsE7awZe" role="2LFqv$">
-          <node concept="2Gpval" id="sflsE7azha" role="3cqZAp">
-            <node concept="2GrKxI" id="sflsE7azhc" role="2Gsz3X">
-              <property role="TrG5h" value="argSupertype" />
-            </node>
-            <node concept="3clFbS" id="sflsE7azhg" role="2LFqv$" />
-            <node concept="2OqwBi" id="sflsE7axO_" role="2GsD0m">
-              <node concept="2OqwBi" id="sflsE7axLx" role="2Oq$k0">
-                <node concept="2QUAEa" id="sflsE7axKC" role="2Oq$k0" />
-                <node concept="liA8E" id="sflsE7axNX" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
-                </node>
-              </node>
-              <node concept="liA8E" id="sflsE7axQ1" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~SubtypingManager.collectImmediateSupertypes(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.util.StructuralNodeSet" resolve="collectImmediateSupertypes" />
-                <node concept="2GrUjf" id="sflsE7axZg" role="37wK5m">
-                  <ref role="2Gs0qQ" node="sflsE7awZa" resolve="argtype" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbH" id="sflsE7az9A" role="3cqZAp" />
       <node concept="3cpWs6" id="6KxoTHgTtoz" role="3cqZAp">
         <node concept="37vLTw" id="sflsE7aknR" role="3cqZAk">
@@ -1986,6 +1952,30 @@
     </node>
     <node concept="1YaCAy" id="6KxoTHgTsIh" role="1YuTPh">
       <property role="TrG5h" value="ft" />
+      <ref role="1YaFvo" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="SRvqsMH7Kt">
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="functionType" />
+    <node concept="1YaCAy" id="SRvqsMH7KK" role="35pZ6h">
+      <property role="TrG5h" value="expected" />
+      <ref role="1YaFvo" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
+    </node>
+    <node concept="3clFbS" id="SRvqsMH7Kv" role="2sgrp5">
+      <node concept="3SKdUt" id="SRvqsMH7L5" role="3cqZAp">
+        <node concept="3SKdUq" id="SRvqsMH7L6" role="3SKWNk">
+          <property role="3SKdUp" value="if any of the arg types of &quot;actual&quot; is a subtype of the corresponding" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="SRvqsMH7Ld" role="3cqZAp">
+        <node concept="3SKdUq" id="SRvqsMH7Lf" role="3SKWNk">
+          <property role="3SKdUp" value="arg type of &quot;expected&quot;, then there should not be an error" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="SRvqsMH7Kx" role="1YuTPh">
+      <property role="TrG5h" value="actual" />
       <ref role="1YaFvo" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
     </node>
   </node>
