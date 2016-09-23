@@ -806,6 +806,14 @@
     <node concept="PrWs8" id="1WCh2thoP3c" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="1TJgyi" id="SRvqsMUlki" role="1TKVEl">
+      <property role="TrG5h" value="upperExcluding" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="SRvqsMUlkl" role="1TKVEl">
+      <property role="TrG5h" value="lowerExcluding" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="S$tO8ocniU">
     <property role="1pbfSe" value="643165180" />
