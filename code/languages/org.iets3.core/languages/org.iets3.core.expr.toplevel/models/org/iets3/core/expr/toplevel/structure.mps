@@ -195,6 +195,9 @@
     <node concept="PrWs8" id="7D7uZV2ybot" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="SRvqsN4Pgz" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
     <property role="1pbfSe" value="1014981815" />
@@ -314,6 +317,18 @@
     <property role="TrG5h" value="TypedefContractValExpr" />
     <property role="34LRSv" value="it" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="SRvqsNmWc8">
+    <property role="1pbfSe" value="1100169391" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="RecordMemberRefInConstraint" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="SRvqsNmWci" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
   </node>
 </model>
 

@@ -900,5 +900,36 @@
       <ref role="1YaFvo" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
     </node>
   </node>
+  <node concept="1YbPZF" id="SRvqsNmWdu">
+    <property role="TrG5h" value="typeof_RecordMemberRefInConstraint" />
+    <property role="3GE5qa" value="record" />
+    <node concept="3clFbS" id="SRvqsNmWdv" role="18ibNy">
+      <node concept="1Z5TYs" id="SRvqsNmWfM" role="3cqZAp">
+        <node concept="mw_s8" id="SRvqsNmWg6" role="1ZfhKB">
+          <node concept="1Z2H0r" id="SRvqsNmWg2" role="mwGJk">
+            <node concept="2OqwBi" id="SRvqsNmWje" role="1Z2MuG">
+              <node concept="1YBJjd" id="SRvqsNmWgn" role="2Oq$k0">
+                <ref role="1YBMHb" node="SRvqsNmWdx" resolve="c" />
+              </node>
+              <node concept="3TrEf2" id="SRvqsNmWqe" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:SRvqsNmWci" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="SRvqsNmWfP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="SRvqsNmWdL" role="mwGJk">
+            <node concept="1YBJjd" id="SRvqsNmWe1" role="1Z2MuG">
+              <ref role="1YBMHb" node="SRvqsNmWdx" resolve="c" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="SRvqsNmWdx" role="1YuTPh">
+      <property role="TrG5h" value="c" />
+      <ref role="1YaFvo" to="yv47:SRvqsNmWc8" resolve="RecordMemberRefInConstraint" />
+    </node>
+  </node>
 </model>
 
