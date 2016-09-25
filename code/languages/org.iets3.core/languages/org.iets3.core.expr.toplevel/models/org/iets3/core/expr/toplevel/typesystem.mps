@@ -1105,5 +1105,76 @@
       <ref role="1YaFvo" to="yv47:69zaTr1HgRc" resolve="Constant" />
     </node>
   </node>
+  <node concept="1YbPZF" id="HywGhj0iaw">
+    <property role="TrG5h" value="typeof_OldValueExpr" />
+    <property role="3GE5qa" value="record.change" />
+    <node concept="3clFbS" id="HywGhj0iax" role="18ibNy">
+      <node concept="1Z5TYs" id="HywGhj0icY" role="3cqZAp">
+        <node concept="mw_s8" id="HywGhj0id1" role="1ZfhK$">
+          <node concept="1Z2H0r" id="HywGhj0iaN" role="mwGJk">
+            <node concept="1YBJjd" id="HywGhj0ib3" role="1Z2MuG">
+              <ref role="1YBMHb" node="HywGhj0iaz" resolve="ove" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="HywGhj0iKn" role="1ZfhKB">
+          <node concept="1Z2H0r" id="HywGhj0iKl" role="mwGJk">
+            <node concept="2OqwBi" id="HywGhj0iYB" role="1Z2MuG">
+              <node concept="2OqwBi" id="HywGhj0iND" role="2Oq$k0">
+                <node concept="1YBJjd" id="HywGhj0iKC" role="2Oq$k0">
+                  <ref role="1YBMHb" node="HywGhj0iaz" resolve="ove" />
+                </node>
+                <node concept="2Xjw5R" id="HywGhj0iUN" role="2OqNvi">
+                  <node concept="1xMEDy" id="HywGhj0iUP" role="1xVPHs">
+                    <node concept="chp4Y" id="HywGhj0iVT" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:15mJ3JeHQzQ" resolve="NewValueSetter" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="HywGhj0j50" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:15mJ3JeHQzR" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="HywGhj0iaz" role="1YuTPh">
+      <property role="TrG5h" value="ove" />
+      <ref role="1YaFvo" to="yv47:HywGhj0hJO" resolve="OldValueExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="HywGhj6dxA">
+    <property role="TrG5h" value="typeof_OldMemberRef" />
+    <property role="3GE5qa" value="record.change" />
+    <node concept="3clFbS" id="HywGhj6dxB" role="18ibNy">
+      <node concept="1Z5TYs" id="HywGhj6d$6" role="3cqZAp">
+        <node concept="mw_s8" id="HywGhj6d$n" role="1ZfhKB">
+          <node concept="1Z2H0r" id="HywGhj6d$j" role="mwGJk">
+            <node concept="2OqwBi" id="HywGhj6dAD" role="1Z2MuG">
+              <node concept="1YBJjd" id="HywGhj6d$F" role="2Oq$k0">
+                <ref role="1YBMHb" node="HywGhj6dxD" resolve="omr" />
+              </node>
+              <node concept="3TrEf2" id="HywGhj6dEV" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:HywGhj4ZhR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="HywGhj6d$9" role="1ZfhK$">
+          <node concept="1Z2H0r" id="HywGhj6dxT" role="mwGJk">
+            <node concept="1YBJjd" id="HywGhj6dy9" role="1Z2MuG">
+              <ref role="1YBMHb" node="HywGhj6dxD" resolve="omr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="HywGhj6dxD" role="1YuTPh">
+      <property role="TrG5h" value="omr" />
+      <ref role="1YaFvo" to="yv47:HywGhj4ZhL" resolve="OldMemberRef" />
+    </node>
+  </node>
 </model>
 

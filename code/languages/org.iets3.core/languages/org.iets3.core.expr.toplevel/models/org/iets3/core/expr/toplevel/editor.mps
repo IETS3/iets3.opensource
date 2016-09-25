@@ -1157,7 +1157,7 @@
       <node concept="_tjkj" id="15mJ3JeHQ_z" role="3EZMnx">
         <node concept="3EZMnI" id="15mJ3JeHQ_I" role="_tjki">
           <node concept="3F0ifn" id="15mJ3JeHQ$L" role="3EZMnx">
-            <property role="3F0ifm" value=":=" />
+            <property role="3F0ifm" value="=" />
           </node>
           <node concept="3F1sOY" id="15mJ3JeHQ$X" role="3EZMnx">
             <ref role="1NtTu8" to="yv47:15mJ3JeHQzT" />
@@ -1204,8 +1204,28 @@
         <node concept="11L4FC" id="15mJ3JeHVfM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="11LMrY" id="15mJ3JeHVgF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="HywGhj0hKd">
+    <property role="3GE5qa" value="record.change" />
+    <ref role="1XX52x" to="yv47:HywGhj0hJO" resolve="OldValueExpr" />
+    <node concept="3F0ifn" id="HywGhj0hKf" role="2wV5jI">
+      <property role="3F0ifm" value="old" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="HywGhj4Zih">
+    <property role="3GE5qa" value="record.change" />
+    <ref role="1XX52x" to="yv47:HywGhj4ZhL" resolve="OldMemberRef" />
+    <node concept="1iCGBv" id="HywGhj4Zim" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:HywGhj4ZhR" />
+      <node concept="1sVBvm" id="HywGhj4Zio" role="1sWHZn">
+        <node concept="3F0A7n" id="HywGhj4Ziy" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="HywGhj6sT2" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
         </node>
       </node>
     </node>

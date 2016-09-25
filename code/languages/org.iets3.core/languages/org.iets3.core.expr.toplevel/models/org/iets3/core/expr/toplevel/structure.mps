@@ -364,5 +364,24 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="HywGhj0hJO">
+    <property role="1pbfSe" value="1583587000" />
+    <property role="3GE5qa" value="record.change" />
+    <property role="TrG5h" value="OldValueExpr" />
+    <property role="34LRSv" value="old" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="HywGhj4ZhL">
+    <property role="1pbfSe" value="1584822069" />
+    <property role="3GE5qa" value="record.change" />
+    <property role="TrG5h" value="OldMemberRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="HywGhj4ZhR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+  </node>
 </model>
 
