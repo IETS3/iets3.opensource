@@ -330,5 +330,39 @@
       <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
     </node>
   </node>
+  <node concept="1TIwiD" id="15mJ3JeHQzr">
+    <property role="1pbfSe" value="535943914" />
+    <property role="3GE5qa" value="record.change" />
+    <property role="TrG5h" value="RecordChangeTarget" />
+    <property role="34LRSv" value="with" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="15mJ3JeHVgR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="setters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="15mJ3JeHQzQ" resolve="NewValueSetter" />
+    </node>
+    <node concept="PrWs8" id="15mJ3JeHQzs" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="15mJ3JeHQzQ">
+    <property role="1pbfSe" value="535943887" />
+    <property role="3GE5qa" value="record.change" />
+    <property role="TrG5h" value="NewValueSetter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="15mJ3JeHQzR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+    <node concept="1TJgyj" id="15mJ3JeHQzT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="newValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

@@ -1874,25 +1874,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3kzwyUOBSv$" role="3cqZAp">
-          <node concept="2OqwBi" id="3kzwyUOBSvx" role="3clFbG">
-            <node concept="10M0yZ" id="3kzwyUOBSvy" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="3kzwyUOBSvz" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="3kzwyUOBSJf" role="37wK5m">
-                <node concept="37vLTw" id="3kzwyUOBSKA" role="3uHU7w">
-                  <ref role="3cqZAo" node="3kzwyUOBn$L" resolve="descendants" />
-                </node>
-                <node concept="Xl_RD" id="3kzwyUOBSC3" role="3uHU7B">
-                  <property role="Xl_RC" value="descs: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="3kzwyUOBkbG" role="3cqZAp">
           <node concept="3clFbS" id="3kzwyUOBkbI" role="3clFbx">
             <node concept="3cpWs6" id="3kzwyUOBpup" role="3cqZAp">
