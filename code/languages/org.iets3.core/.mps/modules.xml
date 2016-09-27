@@ -40,6 +40,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.doors.plugin/org.iets3.req.doors.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.safety/org.iets3.safety.mpl" folder="safety" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench.marker/org.iets3.simbench.marker.mpl" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench.marker/sandbox/org.iets3.simbench.marker.sandbox.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench/org.iets3.simbench.mpl" folder="simbench" />
@@ -64,6 +65,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.featuremodel.sandbox/org.iets3.featuremodel.sandbox.msd" folder="fm" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.runtime/org.iets3.safety.runtime.msd" folder="safety" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.sandbox/org.iets3.safety.sandbox.msd" folder="safety" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.examples.ivi/org.iets3.simbench.examples.ivi.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.plugin/org.iets3.simbench.plugin.msd" folder="simbench" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="etc" />

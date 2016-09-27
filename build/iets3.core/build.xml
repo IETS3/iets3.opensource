@@ -2595,14 +2595,14 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.platform.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
     <unzip src="${artifacts.org.iets3.analysis.z3}/org.iets3.analysis.z3.zip" dest="${build.tmp}/deps/org.iets3.analysis.z3/org.iets3.analysis.z3.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.com.mbeddr.platform}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.platform/com.mbeddr.doc.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -3409,7 +3409,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.typetags.taint" depends="java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.typetags, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.typetags.taint" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.typetags, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.typetags.taint/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.typetags.taint" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.typetags.taint" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -3430,8 +3430,12 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -3471,7 +3475,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.typetags.taint#1759375669591496129" depends="java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags.taint, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.typetags.taint#1759375669591496129" depends="java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags.taint, fetchDependencies">
     <mkdir dir="${iets3.lang.core}/languages/org.iets3.core.expr.typetags.taint/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.typetags.taint#1759375669591496129" />
     <javac destdir="${build.tmp}/java/out/org.iets3.core.expr.typetags.taint#1759375669591496129" fork="false" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
@@ -3492,7 +3496,11 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags.taint" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
