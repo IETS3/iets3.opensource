@@ -20,6 +20,15 @@
   <imports />
   <registry>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
+      <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
+        <child id="543569365052056368" name="items" index="_fkp5" />
+      </concept>
+      <concept id="543569365052056266" name="org.iets3.core.expr.tests.structure.TestItem" flags="ng" index="_fkuZ">
+        <child id="543569365052056302" name="op" index="_fkur" />
+        <child id="543569365052056269" name="expected" index="_fkuS" />
+        <child id="543569365052056267" name="actual" index="_fkuY" />
+      </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -33,6 +42,10 @@
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
       </concept>
+      <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
+        <reference id="543569365051789114" name="constant" index="_emDf" />
+      </concept>
+      <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -46,6 +59,19 @@
       <property role="TrG5h" value="f" />
       <node concept="30bXRB" id="6HHp2WmR4ne" role="2zPyp_">
         <property role="30bXRw" value="10" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="7UpNQq$X9WN" role="_iOnB" />
+    <node concept="_fkuM" id="7UpNQq$X9X5" role="_iOnB">
+      <property role="TrG5h" value="HelloWorld" />
+      <node concept="_fkuZ" id="7UpNQq$ZmON" role="_fkp5">
+        <node concept="_fku$" id="7UpNQq$ZmOO" role="_fkur" />
+        <node concept="_emDc" id="7UpNQq$ZtXa" role="_fkuY">
+          <ref role="_emDf" node="HywGhjqfS5" resolve="f" />
+        </node>
+        <node concept="30bXRB" id="7UpNQq$ZmPu" role="_fkuS">
+          <property role="30bXRw" value="11" />
+        </node>
       </node>
     </node>
   </node>
