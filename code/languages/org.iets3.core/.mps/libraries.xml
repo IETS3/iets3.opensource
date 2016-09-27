@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="webmps">
+          <value>
+            <Library>
+              <option name="name" value="webmps" />
+              <option name="path" value="${webmps.github.home}/mps/de.itemis.mps.web.langdef" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
