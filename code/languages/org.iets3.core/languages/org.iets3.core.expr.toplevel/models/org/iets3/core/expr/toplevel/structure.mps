@@ -390,6 +390,11 @@
     <property role="34LRSv" value="enum" />
     <property role="3GE5qa" value="enum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2MpPNJw_h8y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
     <node concept="PrWs8" id="67Y8mp$DMVe" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
@@ -402,12 +407,21 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
+    <node concept="1TJgyi" id="67Y8mp$M9cx" role="1TKVEl">
+      <property role="TrG5h" value="qualified" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DMVh">
     <property role="1pbfSe" value="962244553" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumLiteral" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Y6fbK15FM4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
@@ -439,6 +453,16 @@
       <property role="20kJfa" value="literal" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Y6fbK1h_yq">
+    <property role="1pbfSe" value="1087149398" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumValueAccessor" />
+    <property role="34LRSv" value="value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3Y6fbK1h_yR" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>
