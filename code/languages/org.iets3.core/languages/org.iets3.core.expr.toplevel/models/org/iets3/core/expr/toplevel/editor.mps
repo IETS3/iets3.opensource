@@ -1540,7 +1540,7 @@
       <node concept="_tjkj" id="3Y6fbK15FNp" role="3EZMnx">
         <node concept="3EZMnI" id="3Y6fbK15FNG" role="_tjki">
           <node concept="3F0ifn" id="3Y6fbK15FNX" role="3EZMnx">
-            <property role="3F0ifm" value="=" />
+            <property role="3F0ifm" value="-&gt;" />
           </node>
           <node concept="3F1sOY" id="3Y6fbK15FO9" role="3EZMnx">
             <ref role="1NtTu8" to="yv47:3Y6fbK15FM4" />
