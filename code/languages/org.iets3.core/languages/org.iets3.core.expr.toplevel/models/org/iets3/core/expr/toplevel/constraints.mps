@@ -18,6 +18,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -42,10 +45,18 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -816,11 +827,38 @@
       </node>
       <node concept="Bn3R3" id="67Y8mp$Hxb5" role="Bn3R6">
         <node concept="3clFbS" id="67Y8mp$Hxb6" role="2VODD2">
-          <node concept="3clFbF" id="67Y8mp$Hxfg" role="3cqZAp">
-            <node concept="2OqwBi" id="67Y8mp$HxiP" role="3clFbG">
-              <node concept="Bn53e" id="67Y8mp$Hxff" role="2Oq$k0" />
-              <node concept="3TrcHB" id="67Y8mp$KN31" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3clFbJ" id="67Y8mp$M9eL" role="3cqZAp">
+            <node concept="2OqwBi" id="67Y8mp$Macq" role="3clFbw">
+              <node concept="2OqwBi" id="67Y8mp$M9jy" role="2Oq$k0">
+                <node concept="Bn53e" id="67Y8mp$MbXh" role="2Oq$k0" />
+                <node concept="2qgKlT" id="67Y8mp$Ma6Y" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:67Y8mp$M9$v" resolve="enumDecl" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="67Y8mp$Map_" role="2OqNvi">
+                <ref role="3TsBF5" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="67Y8mp$M9eN" role="3clFbx">
+              <node concept="3cpWs6" id="67Y8mp$Mat5" role="3cqZAp">
+                <node concept="2OqwBi" id="67Y8mp$MaxU" role="3cqZAk">
+                  <node concept="Bn53e" id="67Y8mp$Mc1c" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="67Y8mp$Mb1f" role="2OqNvi">
+                    <ref role="37wK5l" to="nu60:67Y8mp$HuPC" resolve="nameWithEnum" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="67Y8mp$Mb58" role="9aQIa">
+              <node concept="3clFbS" id="67Y8mp$Mb59" role="9aQI4">
+                <node concept="3cpWs6" id="67Y8mp$Mb6l" role="3cqZAp">
+                  <node concept="2OqwBi" id="67Y8mp$Mbi_" role="3cqZAk">
+                    <node concept="Bn53e" id="67Y8mp$MceT" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="67Y8mp$MbLC" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
