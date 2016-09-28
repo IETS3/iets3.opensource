@@ -12,6 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -36,8 +37,8 @@
   <node concept="1TIwiD" id="7UpNQq_1Y0P">
     <property role="1pbfSe" value="597798811" />
     <property role="TrG5h" value="TestSuiteProxyForTypescript" />
-    <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/iets3-proxy-16.png" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UpNQq_1Y0T" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -45,6 +46,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="av4b:ub9nkyK62f" resolve="TestSuite" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="67Y8mp$AUrw">
+    <property role="1pbfSe" value="963000250" />
+    <property role="TrG5h" value="RunAllTestsInModel" />
+    <property role="34LRSv" value="run all tests" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

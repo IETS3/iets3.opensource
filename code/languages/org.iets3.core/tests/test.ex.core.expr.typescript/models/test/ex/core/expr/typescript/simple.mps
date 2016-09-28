@@ -22,6 +22,7 @@
   </imports>
   <registry>
     <language id="7a576135-973e-4d41-81cd-8f5cb0ac58a7" name="org.iets3.core.expr.gen.typescript">
+      <concept id="7061117989421819616" name="org.iets3.core.expr.gen.typescript.structure.RunAllTestsInModel" flags="ng" index="5pou6" />
       <concept id="9122550559978020917" name="org.iets3.core.expr.gen.typescript.structure.TestSuiteProxyForTypescript" flags="ng" index="3rByXj">
         <reference id="9122550559978020921" name="suite" index="3rByXv" />
       </concept>
@@ -33,5 +34,6 @@
   <node concept="3rByXj" id="67Y8mp$$UCB">
     <ref role="3rByXv" to="rsgd:67Y8mp$$UmJ" resolve="AdvancedTypes" />
   </node>
+  <node concept="5pou6" id="67Y8mp$AUCQ" />
 </model>
 
