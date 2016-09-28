@@ -2,7 +2,7 @@
 <model ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -156,6 +156,9 @@
     </node>
     <node concept="PrWs8" id="6HHp2WngtW9" role="PzmwI">
       <ref role="PrY4T" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="67Y8mp$Ixfy" role="PzmwI">
+      <ref role="PrY4T" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
     </node>
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
