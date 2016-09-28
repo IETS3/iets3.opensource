@@ -295,7 +295,7 @@
       <node concept="3Tm1VV" id="2uR5X5ayxoK" role="1B3o_S" />
       <node concept="A3Dl8" id="2uR5X5ayxoW" role="3clF45">
         <node concept="3Tqbb2" id="2uR5X5ayxp1" role="A3Ik2">
-          <ref role="ehGHo" to="yv47:49WTic8f4iz" resolve="Function" />
+          <ref role="ehGHo" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
         </node>
       </node>
       <node concept="3clFbS" id="2uR5X5ayxoM" role="3clF47" />
@@ -1623,6 +1623,28 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3Y6fbK1lTzW">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:3Y6fbK1h_yq" resolve="EnumValueAccessor" />
+    <node concept="13hLZK" id="3Y6fbK1lTzX" role="13h7CW">
+      <node concept="3clFbS" id="3Y6fbK1lTzY" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3Y6fbK1lT$B" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="3Y6fbK1lT$C" role="1B3o_S" />
+      <node concept="3clFbS" id="3Y6fbK1lT$F" role="3clF47">
+        <node concept="3clFbF" id="3Y6fbK1lT$U" role="3cqZAp">
+          <node concept="Xl_RD" id="3Y6fbK1lT$T" role="3clFbG">
+            <property role="Xl_RC" value="value" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3Y6fbK1lT$G" role="3clF45" />
     </node>
   </node>
 </model>

@@ -20,6 +20,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -923,7 +924,7 @@
                     <node concept="I4A8Y" id="6HHp2WmWYMk" role="2OqNvi" />
                   </node>
                   <node concept="1j9C0f" id="6HHp2WmWYMl" role="2OqNvi">
-                    <ref role="1j9C0d" to="yv47:49WTic8f4iz" resolve="Function" />
+                    <ref role="1j9C0d" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
                   </node>
                 </node>
               </node>
@@ -933,7 +934,7 @@
       </node>
       <node concept="A3Dl8" id="ub9nkyO0Fm" role="3clF45">
         <node concept="3Tqbb2" id="ub9nkyO0Fn" role="A3Ik2">
-          <ref role="ehGHo" to="yv47:49WTic8f4iz" resolve="Function" />
+          <ref role="ehGHo" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
         </node>
       </node>
     </node>
