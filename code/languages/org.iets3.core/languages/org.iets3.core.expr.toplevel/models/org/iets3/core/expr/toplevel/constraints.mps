@@ -63,6 +63,8 @@
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
+      <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
@@ -78,6 +80,7 @@
       <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
+        <child id="3906442776579556548" name="presentation" index="Bn3R6" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
@@ -750,6 +753,74 @@
               </node>
               <node concept="3Tsc0h" id="HywGhj529L" role="2OqNvi">
                 <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="67Y8mp$DN7W">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1M2myG" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+    <node concept="1N5Pfh" id="67Y8mp$DN8s" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:67Y8mp$DN3N" />
+      <node concept="1MUpDS" id="67Y8mp$DN8A" role="1N6uqs">
+        <node concept="3clFbS" id="67Y8mp$DN8B" role="2VODD2">
+          <node concept="3clFbF" id="67Y8mp$DN9i" role="3cqZAp">
+            <node concept="2OqwBi" id="67Y8mp$DNi$" role="3clFbG">
+              <node concept="2OqwBi" id="67Y8mp$DNbD" role="2Oq$k0">
+                <node concept="21POm0" id="67Y8mp$DN9h" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="67Y8mp$DNdO" role="2OqNvi">
+                  <node concept="1xMEDy" id="67Y8mp$DNdQ" role="1xVPHs">
+                    <node concept="chp4Y" id="67Y8mp$DNfe" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="67Y8mp$DNoh" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:67Y8mp$DN6t" resolve="visibleEnums" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="67Y8mp$DO5A">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1M2myG" to="yv47:67Y8mp$DNr5" resolve="EnumLiteralRef" />
+    <node concept="1N5Pfh" id="67Y8mp$DO6i" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:67Y8mp$DNs9" />
+      <node concept="1MUpDS" id="67Y8mp$DO6l" role="1N6uqs">
+        <node concept="3clFbS" id="67Y8mp$DO6m" role="2VODD2">
+          <node concept="3clFbF" id="67Y8mp$DO71" role="3cqZAp">
+            <node concept="2OqwBi" id="67Y8mp$DOgj" role="3clFbG">
+              <node concept="2OqwBi" id="67Y8mp$DO9o" role="2Oq$k0">
+                <node concept="21POm0" id="67Y8mp$DO70" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="67Y8mp$DObz" role="2OqNvi">
+                  <node concept="1xMEDy" id="67Y8mp$DOb_" role="1xVPHs">
+                    <node concept="chp4Y" id="67Y8mp$DOcX" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="67Y8mp$DOmm" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:67Y8mp$DNsc" resolve="visibleLiterals" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Bn3R3" id="67Y8mp$Hxb5" role="Bn3R6">
+        <node concept="3clFbS" id="67Y8mp$Hxb6" role="2VODD2">
+          <node concept="3clFbF" id="67Y8mp$Hxfg" role="3cqZAp">
+            <node concept="2OqwBi" id="67Y8mp$HxiP" role="3clFbG">
+              <node concept="Bn53e" id="67Y8mp$Hxff" role="2Oq$k0" />
+              <node concept="3TrcHB" id="67Y8mp$KN31" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>

@@ -17,6 +17,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
   </imports>
@@ -495,6 +496,23 @@
                 <ref role="3cqZAo" node="7D7uZV2sI73" resolve="rl" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="67Y8mp$K6Fz" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="yv47:67Y8mp$DNr5" resolve="EnumLiteralRef" />
+      <node concept="3vetai" id="67Y8mp$K71u" role="3vQZUl">
+        <node concept="2OqwBi" id="67Y8mp$K7w7" role="3vdyny">
+          <node concept="2OqwBi" id="67Y8mp$K74M" role="2Oq$k0">
+            <node concept="oxGPV" id="67Y8mp$K71I" role="2Oq$k0" />
+            <node concept="3TrEf2" id="67Y8mp$K7li" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:67Y8mp$DNs9" />
+            </node>
+          </node>
+          <node concept="2qgKlT" id="67Y8mp$K7BP" role="2OqNvi">
+            <ref role="37wK5l" to="nu60:67Y8mp$HuPC" resolve="nameWithEnum" />
           </node>
         </node>
       </node>

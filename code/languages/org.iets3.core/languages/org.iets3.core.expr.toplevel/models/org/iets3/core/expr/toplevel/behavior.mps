@@ -15,6 +15,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -119,6 +120,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1439,6 +1441,150 @@
         </node>
       </node>
       <node concept="10P_77" id="HywGhj6ojL" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="67Y8mp$DN5V">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
+    <node concept="13i0hz" id="67Y8mp$DN6t" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="visibleEnums" />
+      <node concept="3Tm1VV" id="67Y8mp$DN6u" role="1B3o_S" />
+      <node concept="A3Dl8" id="67Y8mp$DN6v" role="3clF45">
+        <node concept="3Tqbb2" id="67Y8mp$DN6w" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="67Y8mp$DN6x" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="67Y8mp$DNsc" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="visibleLiterals" />
+      <node concept="3Tm1VV" id="67Y8mp$DNsd" role="1B3o_S" />
+      <node concept="A3Dl8" id="67Y8mp$DNse" role="3clF45">
+        <node concept="3Tqbb2" id="67Y8mp$DNsf" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="67Y8mp$DNsg" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="67Y8mp$DN5W" role="13h7CW">
+      <node concept="3clFbS" id="67Y8mp$DN5X" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="67Y8mp$EFTX">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:67Y8mp$DNr5" resolve="EnumLiteralRef" />
+    <node concept="13hLZK" id="67Y8mp$EFTY" role="13h7CW">
+      <node concept="3clFbS" id="67Y8mp$EFTZ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="67Y8mp$EFUF" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="67Y8mp$EFUG" role="1B3o_S" />
+      <node concept="3clFbS" id="67Y8mp$EFUJ" role="3clF47">
+        <node concept="3clFbF" id="67Y8mp$EFVn" role="3cqZAp">
+          <node concept="2OqwBi" id="67Y8mp$EGew" role="3clFbG">
+            <node concept="2OqwBi" id="67Y8mp$EFYF" role="2Oq$k0">
+              <node concept="13iPFW" id="67Y8mp$EFVm" role="2Oq$k0" />
+              <node concept="3TrEf2" id="67Y8mp$EG5k" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:67Y8mp$DNs9" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="67Y8mp$EGkB" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="67Y8mp$EFUK" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="67Y8mp$EFUL" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="67Y8mp$EFUM" role="1B3o_S" />
+      <node concept="3clFbS" id="67Y8mp$EFUP" role="3clF47">
+        <node concept="3clFbF" id="67Y8mp$EFUS" role="3cqZAp">
+          <node concept="3clFbT" id="67Y8mp$EFUR" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="67Y8mp$EFUQ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="67Y8mp$Hxsm">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
+    <node concept="13i0hz" id="67Y8mp$HuPC" role="13h7CS">
+      <property role="TrG5h" value="nameWithEnum" />
+      <node concept="3Tm1VV" id="67Y8mp$HuPD" role="1B3o_S" />
+      <node concept="17QB3L" id="67Y8mp$HuRJ" role="3clF45" />
+      <node concept="3clFbS" id="67Y8mp$HuPF" role="3clF47">
+        <node concept="3clFbF" id="67Y8mp$HuSG" role="3cqZAp">
+          <node concept="3cpWs3" id="67Y8mp$HvOT" role="3clFbG">
+            <node concept="2OqwBi" id="67Y8mp$HvUT" role="3uHU7w">
+              <node concept="13iPFW" id="67Y8mp$HvQV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="67Y8mp$HwlZ" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="67Y8mp$HvGf" role="3uHU7B">
+              <node concept="2OqwBi" id="67Y8mp$Hvvb" role="3uHU7B">
+                <node concept="1PxgMI" id="67Y8mp$HvoD" role="2Oq$k0">
+                  <ref role="1PxNhF" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                  <node concept="2OqwBi" id="67Y8mp$HvbP" role="1PxMeX">
+                    <node concept="13iPFW" id="67Y8mp$HuSF" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="67Y8mp$HvhW" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="67Y8mp$HvDH" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="67Y8mp$HvGi" role="3uHU7w">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="67Y8mp$Hxsn" role="13h7CW">
+      <node concept="3clFbS" id="67Y8mp$Hxso" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="67Y8mp$HxYp">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+    <node concept="13hLZK" id="67Y8mp$HxYq" role="13h7CW">
+      <node concept="3clFbS" id="67Y8mp$HxYr" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="67Y8mp$HxZ7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getUniquelyNamedElements" />
+      <ref role="13i0hy" to="hwgx:4qSf1u1TRfj" resolve="getUniquelyNamedElements" />
+      <node concept="3Tm1VV" id="67Y8mp$HxZ8" role="1B3o_S" />
+      <node concept="3clFbS" id="67Y8mp$HxZc" role="3clF47">
+        <node concept="3clFbF" id="67Y8mp$HxZq" role="3cqZAp">
+          <node concept="2OqwBi" id="67Y8mp$Hy9H" role="3clFbG">
+            <node concept="13iPFW" id="67Y8mp$Hy0t" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="67Y8mp$Hyjv" role="2OqNvi">
+              <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="67Y8mp$HxZd" role="3clF45">
+        <node concept="3Tqbb2" id="67Y8mp$HxZe" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

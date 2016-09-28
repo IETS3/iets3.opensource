@@ -11,6 +11,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -381,6 +382,63 @@
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="67Y8mp$DMUI">
+    <property role="1pbfSe" value="962244588" />
+    <property role="TrG5h" value="EnumDeclaration" />
+    <property role="34LRSv" value="enum" />
+    <property role="3GE5qa" value="enum" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="67Y8mp$DMVe" role="PzmwI">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="67Y8mp$HxXI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="1TJgyj" id="67Y8mp$DMVO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="literals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="67Y8mp$DMVh">
+    <property role="1pbfSe" value="962244553" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumLiteral" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="67Y8mp$DN2V">
+    <property role="1pbfSe" value="962244063" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="enum" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67Y8mp$DMUI" resolve="EnumDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="67Y8mp$DN53">
+    <property role="1pbfSe" value="1015225321" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="IEnumScopeProvider" />
+  </node>
+  <node concept="1TIwiD" id="67Y8mp$DNr5">
+    <property role="1pbfSe" value="962242517" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumLiteralRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="67Y8mp$DNs9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
 </model>

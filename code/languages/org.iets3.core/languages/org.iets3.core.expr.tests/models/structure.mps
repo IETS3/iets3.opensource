@@ -154,6 +154,9 @@
     <node concept="PrWs8" id="6HHp2WngtW9" role="PzmwI">
       <ref role="PrY4T" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
     </node>
+    <node concept="PrWs8" id="67Y8mp$Ixfy" role="PzmwI">
+      <ref role="PrY4T" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
+    </node>
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>

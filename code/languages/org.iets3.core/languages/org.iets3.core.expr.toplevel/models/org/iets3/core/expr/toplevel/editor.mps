@@ -69,6 +69,7 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1220974635399" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontStyle" flags="in" index="17KAyr" />
@@ -1226,6 +1227,83 @@
           <node concept="Vb9p2" id="HywGhj6sT2" role="3F10Kt">
             <property role="Vbekb" value="ITALIC" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="67Y8mp$DMWf">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+    <node concept="3EZMnI" id="67Y8mp$DN0$" role="2wV5jI">
+      <node concept="3F0ifn" id="67Y8mp$DN0A" role="3EZMnx">
+        <property role="3F0ifm" value="enum" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0A7n" id="67Y8mp$DN0N" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+      </node>
+      <node concept="l2Vlx" id="67Y8mp$DN0B" role="2iSdaV" />
+      <node concept="3F0ifn" id="67Y8mp$DN10" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="67Y8mp$DN1h" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="yv47:67Y8mp$DMVO" />
+        <node concept="l2Vlx" id="67Y8mp$DN1j" role="2czzBx" />
+        <node concept="3F0ifn" id="67Y8mp$DN1u" role="2czzBI">
+          <property role="3F0ifm" value="" />
+          <node concept="VPxyj" id="67Y8mp$DN2l" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="67Y8mp$DN2D" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="67Y8mp$DN4e">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+    <node concept="1iCGBv" id="67Y8mp$DN4J" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:67Y8mp$DN3N" />
+      <node concept="1sVBvm" id="67Y8mp$DN4L" role="1sWHZn">
+        <node concept="3F0A7n" id="67Y8mp$DN4Z" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="67Y8mp$DNv9">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:67Y8mp$DNr5" resolve="EnumLiteralRef" />
+    <node concept="1iCGBv" id="67Y8mp$HxGR" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:67Y8mp$DNs9" />
+      <node concept="1sVBvm" id="67Y8mp$HxGT" role="1sWHZn">
+        <node concept="3F0A7n" id="67Y8mp$KM_D" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="67Y8mp$Lvkm" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+          <node concept="VechU" id="67Y8mp$Lvm6" role="3F10Kt">
+            <property role="Vb096" value="darkGray" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="67Y8mp$GkhK">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
+    <node concept="1kIj98" id="67Y8mp$Gkit" role="2wV5jI">
+      <node concept="3F0A7n" id="67Y8mp$GkiD" role="1kIj9b">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPRnO" id="67Y8mp$GTvX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

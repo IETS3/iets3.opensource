@@ -1176,5 +1176,53 @@
       <ref role="1YaFvo" to="yv47:HywGhj4ZhL" resolve="OldMemberRef" />
     </node>
   </node>
+  <node concept="1YbPZF" id="67Y8mp$DNwU">
+    <property role="TrG5h" value="typeof_EnumLiteralRef" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="67Y8mp$DNwV" role="18ibNy">
+      <node concept="1Z5TYs" id="67Y8mp$DNzY" role="3cqZAp">
+        <node concept="mw_s8" id="67Y8mp$DN_u" role="1ZfhKB">
+          <node concept="2pJPEk" id="67Y8mp$DN_k" role="mwGJk">
+            <node concept="2pJPED" id="67Y8mp$DN_G" role="2pJPEn">
+              <ref role="2pJxaS" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+              <node concept="2pIpSj" id="67Y8mp$DNAi" role="2pJxcM">
+                <ref role="2pIpSl" to="yv47:67Y8mp$DN3N" />
+                <node concept="36biLy" id="67Y8mp$DNAH" role="2pJxcZ">
+                  <node concept="2OqwBi" id="67Y8mp$DNUN" role="36biLW">
+                    <node concept="2OqwBi" id="67Y8mp$DNEe" role="2Oq$k0">
+                      <node concept="1YBJjd" id="67Y8mp$DNAU" role="2Oq$k0">
+                        <ref role="1YBMHb" node="67Y8mp$DNwX" resolve="elr" />
+                      </node>
+                      <node concept="3TrEf2" id="67Y8mp$DNLf" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yv47:67Y8mp$DNs9" />
+                      </node>
+                    </node>
+                    <node concept="2Xjw5R" id="67Y8mp$DO1X" role="2OqNvi">
+                      <node concept="1xMEDy" id="67Y8mp$DO1Z" role="1xVPHs">
+                        <node concept="chp4Y" id="67Y8mp$DO3x" role="ri$Ld">
+                          <ref role="cht4Q" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="67Y8mp$DN$1" role="1ZfhK$">
+          <node concept="1Z2H0r" id="67Y8mp$DNxP" role="mwGJk">
+            <node concept="1YBJjd" id="67Y8mp$DNy8" role="1Z2MuG">
+              <ref role="1YBMHb" node="67Y8mp$DNwX" resolve="elr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="67Y8mp$DNwX" role="1YuTPh">
+      <property role="TrG5h" value="elr" />
+      <ref role="1YaFvo" to="yv47:67Y8mp$DNr5" resolve="EnumLiteralRef" />
+    </node>
+  </node>
 </model>
 
