@@ -28,7 +28,10 @@
     </language>
   </registry>
   <node concept="3rByXj" id="7UpNQq_1ZJ4">
-    <ref role="3rByXv" to="rsgd:7UpNQq_1SVK" resolve="TSTest" />
+    <ref role="3rByXv" to="rsgd:7UpNQq_1SVK" resolve="BasicOperators" />
+  </node>
+  <node concept="3rByXj" id="67Y8mp$$UCB">
+    <ref role="3rByXv" to="rsgd:67Y8mp$$UmJ" resolve="AdvancedTypes" />
   </node>
 </model>
 
