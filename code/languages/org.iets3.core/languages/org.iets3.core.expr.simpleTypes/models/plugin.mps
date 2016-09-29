@@ -326,15 +326,20 @@
               </node>
             </node>
             <node concept="3cpWs6" id="uGVYUijiTv" role="3cqZAp">
-              <node concept="2ShNRf" id="1oYSzEGIyZu" role="3cqZAk">
-                <node concept="1pGfFk" id="1oYSzEGIz7C" role="2ShVmc">
-                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-                  <node concept="2OqwBi" id="uGVYUijj5H" role="37wK5m">
-                    <node concept="oxGPV" id="uGVYUijj39" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="uGVYUijjd3" role="2OqNvi">
-                      <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+              <node concept="2OqwBi" id="64rKhdU_aJO" role="3cqZAk">
+                <node concept="2ShNRf" id="1oYSzEGIyZu" role="2Oq$k0">
+                  <node concept="1pGfFk" id="1oYSzEGIz7C" role="2ShVmc">
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                    <node concept="2OqwBi" id="uGVYUijj5H" role="37wK5m">
+                      <node concept="oxGPV" id="uGVYUijj39" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="uGVYUijjd3" role="2OqNvi">
+                        <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                      </node>
                     </node>
                   </node>
+                </node>
+                <node concept="liA8E" id="64rKhdU_aY1" role="2OqNvi">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.stripTrailingZeros():java.math.BigDecimal" resolve="stripTrailingZeros" />
                 </node>
               </node>
             </node>
@@ -1105,6 +1110,26 @@
     </node>
     <node concept="lHU7p" id="uGVYUik4qz" role="qq9xR" />
     <node concept="lHU7p" id="2K1INuj_rcR" role="qq9xR" />
+    <node concept="qq9P1" id="64rKhdUrLOG" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
+      <node concept="3vetai" id="64rKhdUrLOH" role="3vQZUl">
+        <node concept="2OqwBi" id="64rKhdUrLOI" role="3vdyny">
+          <node concept="rqRoa" id="64rKhdUrLOJ" role="2Oq$k0">
+            <ref role="rqRob" to="hm2y:4rZeNQ6NgXF" />
+          </node>
+          <node concept="liA8E" id="64rKhdUrLOK" role="2OqNvi">
+            <ref role="37wK5l" to="xlxw:~BigInteger.negate():java.math.BigInteger" resolve="negate" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="64rKhdUrLOL" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6NgXF" />
+        <node concept="rxStX" id="64rKhdUrLOM" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="uGVYUik4PE" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
