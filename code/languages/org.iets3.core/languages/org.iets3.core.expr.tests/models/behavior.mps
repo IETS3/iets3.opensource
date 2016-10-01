@@ -1011,8 +1011,8 @@
                   </node>
                 </node>
                 <node concept="v3k3i" id="6HHp2WmWZn$" role="2OqNvi">
-                  <node concept="chp4Y" id="6HHp2WmWZrN" role="v3oSu">
-                    <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                  <node concept="chp4Y" id="xu7xcKlcrQ" role="v3oSu">
+                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                   </node>
                 </node>
               </node>
@@ -1033,7 +1033,7 @@
                     <node concept="I4A8Y" id="6HHp2WmWZnJ" role="2OqNvi" />
                   </node>
                   <node concept="1j9C0f" id="6HHp2WmWZnK" role="2OqNvi">
-                    <ref role="1j9C0d" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                    <ref role="1j9C0d" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                   </node>
                 </node>
               </node>
@@ -1043,7 +1043,7 @@
       </node>
       <node concept="A3Dl8" id="6HHp2WmWZ9X" role="3clF45">
         <node concept="3Tqbb2" id="6HHp2WmWZ9Y" role="A3Ik2">
-          <ref role="ehGHo" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+          <ref role="ehGHo" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
         </node>
       </node>
     </node>

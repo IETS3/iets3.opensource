@@ -561,7 +561,7 @@
       <node concept="3Tm1VV" id="7D7uZV2eU0w" role="1B3o_S" />
       <node concept="A3Dl8" id="7D7uZV2eU0x" role="3clF45">
         <node concept="3Tqbb2" id="7D7uZV2eU0y" role="A3Ik2">
-          <ref role="ehGHo" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+          <ref role="ehGHo" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
         </node>
       </node>
       <node concept="3clFbS" id="7D7uZV2eU0z" role="3clF47" />
@@ -587,7 +587,7 @@
           <node concept="2OqwBi" id="7D7uZV2ybBG" role="3clFbG">
             <node concept="13iPFW" id="7D7uZV2ybzS" role="2Oq$k0" />
             <node concept="3Tsc0h" id="7D7uZV2ybJj" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
             </node>
           </node>
         </node>
@@ -643,7 +643,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="7D7uZV2iEy5" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
             </node>
           </node>
         </node>

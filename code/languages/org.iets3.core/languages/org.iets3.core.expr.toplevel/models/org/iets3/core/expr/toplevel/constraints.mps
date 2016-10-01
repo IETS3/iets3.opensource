@@ -528,14 +528,14 @@
                 <node concept="21POm0" id="SRvqsNmX8e" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="SRvqsNmXcE" role="2OqNvi">
                   <node concept="1xMEDy" id="SRvqsNmXcG" role="1xVPHs">
-                    <node concept="chp4Y" id="SRvqsNmXe1" role="ri$Ld">
-                      <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                    <node concept="chp4Y" id="xu7xcKlcXc" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3Tsc0h" id="SRvqsNmXxG" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
               </node>
             </node>
           </node>
@@ -550,8 +550,8 @@
               <node concept="nLn13" id="SRvqsNmWtd" role="2Oq$k0" />
               <node concept="2Xjw5R" id="SRvqsNmWxg" role="2OqNvi">
                 <node concept="1xMEDy" id="SRvqsNmWxi" role="1xVPHs">
-                  <node concept="chp4Y" id="SRvqsNmWyU" role="ri$Ld">
-                    <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+                  <node concept="chp4Y" id="xu7xcKldck" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="SRvqsNmWBl" role="1xVPHs" />
@@ -650,7 +650,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="15mJ3JeHXGf" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
               </node>
             </node>
           </node>
@@ -764,7 +764,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="HywGhj529L" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" />
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
               </node>
             </node>
           </node>

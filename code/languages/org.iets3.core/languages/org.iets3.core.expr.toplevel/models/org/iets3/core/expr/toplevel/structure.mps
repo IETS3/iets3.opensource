@@ -15,6 +15,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
@@ -44,6 +47,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -186,18 +190,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7D7uZV2dYzK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="members" />
+      <property role="20kJfa" value="members_old" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
+      <node concept="asaX9" id="xu7xcKiozg" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordDeclaration&quot;" />
+      </node>
     </node>
-    <node concept="PrWs8" id="7D7uZV2dYyR" role="PzmwI">
-      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
-    </node>
-    <node concept="PrWs8" id="7D7uZV2ybot" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
-    </node>
-    <node concept="PrWs8" id="SRvqsN4Pgz" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    <node concept="PrWs8" id="xu7xcKiodX" role="PzmwI">
+      <ref role="PrY4T" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
@@ -207,15 +208,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
+      <property role="20kJfa" value="type_old" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="xu7xcKdRtq" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordMember&quot;" />
+      </node>
     </node>
-    <node concept="PrWs8" id="7D7uZV2dYyU" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="7D7uZV2iDVH" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    <node concept="PrWs8" id="xu7xcKdQCE" role="PzmwI">
+      <ref role="PrY4T" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYz2">
@@ -227,7 +228,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="record" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D7uZV2dYyQ" resolve="RecordDeclaration" />
+      <ref role="20lvS9" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
     <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
       <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
@@ -328,7 +329,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="15mJ3JeHQzr">
@@ -356,7 +357,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
     <node concept="1TJgyj" id="15mJ3JeHQzT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -381,7 +382,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D7uZV2dYyT" resolve="RecordMember" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DMUI">
@@ -463,6 +464,43 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Y6fbK1h_yR" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="xu7xcKdQCB">
+    <property role="1pbfSe" value="949323834" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="IRecordMember" />
+    <node concept="PrWs8" id="xu7xcKdQCC" role="PrDN$">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    </node>
+    <node concept="PrWs8" id="xu7xcKdRq0" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="xu7xcKdRtf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="xu7xcKinTJ">
+    <property role="1pbfSe" value="950508674" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="IRecordDeclaration" />
+    <node concept="PrWs8" id="7D7uZV2dYyR" role="PrDN$">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="7D7uZV2ybot" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="SRvqsN4Pgz" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
 </model>
