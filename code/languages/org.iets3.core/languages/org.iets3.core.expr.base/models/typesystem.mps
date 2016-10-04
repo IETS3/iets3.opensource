@@ -2,10 +2,10 @@
 <model ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -3640,110 +3640,6 @@
     <node concept="1YaCAy" id="3kzwyUOs0W7" role="1YuTPh">
       <property role="TrG5h" value="r" />
       <ref role="1YaFvo" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="3kzwyUOO18p">
-    <property role="TrG5h" value="typeof_ValOfExpression" />
-    <property role="3GE5qa" value="option" />
-    <node concept="3clFbS" id="3kzwyUOO18q" role="18ibNy">
-      <node concept="nvevp" id="3kzwyUOO18R" role="3cqZAp">
-        <node concept="3clFbS" id="3kzwyUOO18V" role="nvhr_">
-          <node concept="3clFbJ" id="3kzwyUOO1kJ" role="3cqZAp">
-            <node concept="2OqwBi" id="3kzwyUOO1m0" role="3clFbw">
-              <node concept="2X3wrD" id="3kzwyUOO1kV" role="2Oq$k0">
-                <ref role="2X3Bk0" node="3kzwyUOO193" resolve="optionType" />
-              </node>
-              <node concept="1mIQ4w" id="3kzwyUOO1pc" role="2OqNvi">
-                <node concept="chp4Y" id="3kzwyUOO1pH" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="3kzwyUOO1kL" role="3clFbx">
-              <node concept="1Z5TYs" id="3kzwyUOO1sO" role="3cqZAp">
-                <node concept="mw_s8" id="3kzwyUOO1t8" role="1ZfhKB">
-                  <node concept="1Z2H0r" id="3kzwyUOO1t4" role="mwGJk">
-                    <node concept="2OqwBi" id="3kzwyUOO1TI" role="1Z2MuG">
-                      <node concept="1PxgMI" id="3kzwyUOO1Nl" role="2Oq$k0">
-                        <ref role="1m5ApE" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
-                        <node concept="2X3wrD" id="3kzwyUOO1Em" role="1m5AlR">
-                          <ref role="2X3Bk0" node="3kzwyUOO193" resolve="optionType" />
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="3kzwyUOO210" role="2OqNvi">
-                        <ref role="3Tt5mk" to="hm2y:2rOWEwsEjch" resolve="baseType" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="mw_s8" id="3kzwyUOO1sR" role="1ZfhK$">
-                  <node concept="1Z2H0r" id="3kzwyUOO1qB" role="mwGJk">
-                    <node concept="1YBJjd" id="3kzwyUOO1qR" role="1Z2MuG">
-                      <ref role="1YBMHb" node="3kzwyUOO18s" resolve="voe" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1ZobV4" id="3kzwyUOO2lG" role="3cqZAp">
-                <node concept="mw_s8" id="3kzwyUOO2me" role="1ZfhKB">
-                  <node concept="1Z2H0r" id="3kzwyUOO2ma" role="mwGJk">
-                    <node concept="1YBJjd" id="3kzwyUOO2mv" role="1Z2MuG">
-                      <ref role="1YBMHb" node="3kzwyUOO18s" resolve="voe" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="mw_s8" id="3kzwyUOO2lJ" role="1ZfhK$">
-                  <node concept="1Z2H0r" id="3kzwyUOO24w" role="mwGJk">
-                    <node concept="2OqwBi" id="3kzwyUOO27p" role="1Z2MuG">
-                      <node concept="1YBJjd" id="3kzwyUOO24W" role="2Oq$k0">
-                        <ref role="1YBMHb" node="3kzwyUOO18s" resolve="voe" />
-                      </node>
-                      <node concept="3TrEf2" id="3kzwyUOO2gv" role="2OqNvi">
-                        <ref role="3Tt5mk" to="hm2y:3kzwyUOO0YA" resolve="alternative" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="9aQIb" id="3kzwyUORcLO" role="9aQIa">
-              <node concept="3clFbS" id="3kzwyUORcLP" role="9aQI4">
-                <node concept="2MkqsV" id="3kzwyUORcLS" role="3cqZAp">
-                  <node concept="Xl_RD" id="3kzwyUORcMJ" role="2MkJ7o">
-                    <property role="Xl_RC" value="option type required as the first argument" />
-                  </node>
-                  <node concept="2OqwBi" id="3kzwyUORcPX" role="2OEOjV">
-                    <node concept="1YBJjd" id="3kzwyUORcNt" role="2Oq$k0">
-                      <ref role="1YBMHb" node="3kzwyUOO18s" resolve="voe" />
-                    </node>
-                    <node concept="3TrEf2" id="3kzwyUORcZh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="hm2y:3kzwyUOO0Y$" resolve="optionExpr" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1Z2H0r" id="3kzwyUOO19P" role="nvjzm">
-          <node concept="2OqwBi" id="3kzwyUOO1dv" role="1Z2MuG">
-            <node concept="1YBJjd" id="3kzwyUOO1aK" role="2Oq$k0">
-              <ref role="1YBMHb" node="3kzwyUOO18s" resolve="voe" />
-            </node>
-            <node concept="3TrEf2" id="3kzwyUOO1jt" role="2OqNvi">
-              <ref role="3Tt5mk" to="hm2y:3kzwyUOO0Y$" resolve="optionExpr" />
-            </node>
-          </node>
-        </node>
-        <node concept="2X1qdy" id="3kzwyUOO193" role="2X0Ygz">
-          <property role="TrG5h" value="optionType" />
-          <node concept="2jxLKc" id="3kzwyUOO194" role="1tU5fm" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3kzwyUOO18s" role="1YuTPh">
-      <property role="TrG5h" value="voe" />
-      <ref role="1YaFvo" to="hm2y:3kzwyUOO0Yz" resolve="ValOfExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="3kzwyUORcn6">

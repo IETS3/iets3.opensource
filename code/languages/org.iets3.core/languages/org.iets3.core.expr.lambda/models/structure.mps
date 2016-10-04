@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,7 +18,6 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -72,6 +71,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="effect" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="7791618349055797023" />
       <ref role="20lvS9" node="6KxoTHgSIr8" resolve="EffectTagOnFunctionType" />
     </node>
   </node>
@@ -415,9 +415,9 @@
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
   </node>
   <node concept="1TIwiD" id="6KxoTHgSIr8">
-    <property role="1pbfSe" value="1123792285" />
     <property role="TrG5h" value="EffectTagOnFunctionType" />
     <property role="34LRSv" value="*" />
+    <property role="EcuMT" value="7791618349055796936" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

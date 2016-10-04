@@ -59,11 +59,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6LfBX8Ym0Cy">
-    <property role="TrG5h" value="IETS3DummyIcon" />
+    <property role="TrG5h" value="IETS3DummyIcon16" />
     <property role="EcuMT" value="7804632404594264610" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="cEt5uj8NaR" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/iets3.png" />
+    <node concept="1QGGSu" id="5$yCC4G$ycI" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="cJpacq4087">
@@ -141,6 +141,22 @@
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="ICanReadPersistentResult" />
     <property role="EcuMT" value="4289279775467320677" />
+  </node>
+  <node concept="1TIwiD" id="4SjtGYzyERT">
+    <property role="TrG5h" value="IETS3DummyIcon32" />
+    <property role="EcuMT" value="5625970993689964025" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="5$yCC4G$ycJ" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/iets3-32.png" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4SjtGYz$Car">
+    <property role="TrG5h" value="IETS3DummyIcon24" />
+    <property role="EcuMT" value="5625970993690477211" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="5$yCC4G$ycK" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/iets3-24.png" />
+    </node>
   </node>
 </model>
 
