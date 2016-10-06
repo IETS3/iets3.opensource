@@ -15,7 +15,6 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -588,7 +587,7 @@
           <node concept="2OqwBi" id="7D7uZV2ybBG" role="3clFbG">
             <node concept="13iPFW" id="7D7uZV2ybzS" role="2Oq$k0" />
             <node concept="3Tsc0h" id="7D7uZV2ybJj" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
             </node>
           </node>
         </node>
@@ -644,7 +643,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="7D7uZV2iEy5" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
             </node>
           </node>
         </node>
