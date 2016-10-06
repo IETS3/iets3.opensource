@@ -516,29 +516,168 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="67Y8mp$DN7W">
-    <property role="3GE5qa" value="enum" />
-    <ref role="1M2myG" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
-    <node concept="1N5Pfh" id="67Y8mp$DN8s" role="1Mr941">
-      <ref role="1N5Vy1" to="yv47:67Y8mp$DN3N" resolve="enum" />
-      <node concept="1MUpDS" id="67Y8mp$DN8A" role="1N6uqs">
-        <node concept="3clFbS" id="67Y8mp$DN8B" role="2VODD2">
-          <node concept="3clFbF" id="67Y8mp$DN9i" role="3cqZAp">
-            <node concept="2OqwBi" id="67Y8mp$DNi$" role="3clFbG">
-              <node concept="2OqwBi" id="67Y8mp$DNbD" role="2Oq$k0">
-                <node concept="21POm0" id="67Y8mp$DN9h" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="67Y8mp$DNdO" role="2OqNvi">
-                  <node concept="1xMEDy" id="67Y8mp$DNdQ" role="1xVPHs">
-                    <node concept="chp4Y" id="67Y8mp$DNfe" role="ri$Ld">
-                      <ref role="cht4Q" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
+  <node concept="1M2fIO" id="SRvqsNmWrY">
+    <property role="3GE5qa" value="record" />
+    <ref role="1M2myG" to="yv47:SRvqsNmWc8" resolve="RecordMemberRefInConstraint" />
+    <node concept="1N5Pfh" id="SRvqsNmX7w" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:SRvqsNmWci" resolve="member" />
+      <node concept="1MUpDS" id="SRvqsNmX7_" role="1N6uqs">
+        <node concept="3clFbS" id="SRvqsNmX7A" role="2VODD2">
+          <node concept="3clFbF" id="SRvqsNmX8f" role="3cqZAp">
+            <node concept="2OqwBi" id="SRvqsNmXl$" role="3clFbG">
+              <node concept="2OqwBi" id="SRvqsNmXa$" role="2Oq$k0">
+                <node concept="21POm0" id="SRvqsNmX8e" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="SRvqsNmXcE" role="2OqNvi">
+                  <node concept="1xMEDy" id="SRvqsNmXcG" role="1xVPHs">
+                    <node concept="chp4Y" id="xu7xcKlcXc" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2qgKlT" id="67Y8mp$DNoh" role="2OqNvi">
-                <ref role="37wK5l" to="nu60:67Y8mp$DN6t" resolve="visibleEnums" />
+              <node concept="3Tsc0h" id="SRvqsNmXxG" role="2OqNvi">
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="SRvqsNmWs8" role="1MLUbF">
+      <node concept="3clFbS" id="SRvqsNmWs9" role="2VODD2">
+        <node concept="3clFbF" id="SRvqsNmWte" role="3cqZAp">
+          <node concept="2OqwBi" id="SRvqsNmWHK" role="3clFbG">
+            <node concept="2OqwBi" id="SRvqsNmWuZ" role="2Oq$k0">
+              <node concept="nLn13" id="SRvqsNmWtd" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="SRvqsNmWxg" role="2OqNvi">
+                <node concept="1xMEDy" id="SRvqsNmWxi" role="1xVPHs">
+                  <node concept="chp4Y" id="xu7xcKldck" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="SRvqsNmWBl" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="SRvqsNmX4E" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="15mJ3JeCT9j">
+    <property role="3GE5qa" value="record" />
+    <ref role="1M2myG" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+    <node concept="1N5Pfh" id="15mJ3JeCT9k" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:7D7uZV2dYz3" resolve="record" />
+      <node concept="1MUpDS" id="15mJ3JeCT9m" role="1N6uqs">
+        <node concept="3clFbS" id="15mJ3JeCT9n" role="2VODD2">
+          <node concept="3clFbF" id="15mJ3JeCTa0" role="3cqZAp">
+            <node concept="2OqwBi" id="15mJ3JeCTsz" role="3clFbG">
+              <node concept="2OqwBi" id="15mJ3JeCTcI" role="2Oq$k0">
+                <node concept="21POm0" id="15mJ3JeCT9Z" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="15mJ3JeCTgf" role="2OqNvi">
+                  <node concept="1xMEDy" id="15mJ3JeCTgh" role="1xVPHs">
+                    <node concept="chp4Y" id="15mJ3JeCThA" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="15mJ3JeCTwj" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:7D7uZV2eU0v" resolve="visibleRecords" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="15mJ3JeHVik">
+    <property role="3GE5qa" value="record.change" />
+    <ref role="1M2myG" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+    <node concept="nKS2y" id="15mJ3JeHVil" role="1MLUbF">
+      <node concept="3clFbS" id="15mJ3JeHVim" role="2VODD2">
+        <node concept="3clFbF" id="15mJ3JeHVjr" role="3cqZAp">
+          <node concept="2OqwBi" id="15mJ3JeHW5H" role="3clFbG">
+            <node concept="2OqwBi" id="15mJ3JeHVP6" role="2Oq$k0">
+              <node concept="2OqwBi" id="15mJ3JeHVsE" role="2Oq$k0">
+                <node concept="1PxgMI" id="15mJ3JeHVld" role="2Oq$k0">
+                  <ref role="1m5ApE" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="15mJ3JeHVjq" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="15mJ3JeHVBN" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="15mJ3JeHVXP" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="15mJ3JeHWaq" role="2OqNvi">
+              <node concept="chp4Y" id="15mJ3JeHWel" role="cj9EA">
+                <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="15mJ3JeHWjn">
+    <property role="3GE5qa" value="record.change" />
+    <ref role="1M2myG" to="yv47:15mJ3JeHQzQ" resolve="NewValueSetter" />
+    <node concept="1N5Pfh" id="15mJ3JeHWjo" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:15mJ3JeHQzR" resolve="member" />
+      <node concept="1MUpDS" id="15mJ3JeHWjq" role="1N6uqs">
+        <node concept="3clFbS" id="15mJ3JeHWjr" role="2VODD2">
+          <node concept="3clFbF" id="15mJ3JeHWk4" role="3cqZAp">
+            <node concept="2OqwBi" id="15mJ3JeHXt1" role="3clFbG">
+              <node concept="2OqwBi" id="15mJ3JeHX6_" role="2Oq$k0">
+                <node concept="1PxgMI" id="15mJ3JeHWXa" role="2Oq$k0">
+                  <ref role="1m5ApE" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+                  <node concept="2OqwBi" id="15mJ3JeHWGF" role="1m5AlR">
+                    <node concept="2OqwBi" id="15mJ3JeHWx$" role="2Oq$k0">
+                      <node concept="1PxgMI" id="15mJ3JeHWrO" role="2Oq$k0">
+                        <ref role="1m5ApE" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+                        <node concept="21POm0" id="15mJ3JeHWk3" role="1m5AlR" />
+                      </node>
+                      <node concept="2qgKlT" id="15mJ3JeHWAw" role="2OqNvi">
+                        <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                      </node>
+                    </node>
+                    <node concept="3JvlWi" id="15mJ3JeHWNp" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="15mJ3JeHXfy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="15mJ3JeHXGf" role="2OqNvi">
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="HywGhj0hKE">
+    <property role="3GE5qa" value="record.change" />
+    <ref role="1M2myG" to="yv47:HywGhj0hJO" resolve="OldValueExpr" />
+    <node concept="nKS2y" id="HywGhj0hKF" role="1MLUbF">
+      <node concept="3clFbS" id="HywGhj0hKG" role="2VODD2">
+        <node concept="3clFbF" id="HywGhj0hLL" role="3cqZAp">
+          <node concept="2OqwBi" id="HywGhj0i1b" role="3clFbG">
+            <node concept="2OqwBi" id="HywGhj0hNy" role="2Oq$k0">
+              <node concept="nLn13" id="HywGhj0hLK" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="HywGhj0hQk" role="2OqNvi">
+                <node concept="1xMEDy" id="HywGhj0hQm" role="1xVPHs">
+                  <node concept="chp4Y" id="HywGhj0hRY" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:15mJ3JeHQzQ" resolve="NewValueSetter" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="HywGhj0hUV" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="HywGhj0i7V" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -626,7 +765,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="HywGhj529L" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" resolve="members" />
+                <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
               </node>
             </node>
           </node>
@@ -634,140 +773,29 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="15mJ3JeHWjn">
-    <property role="3GE5qa" value="record.change" />
-    <ref role="1M2myG" to="yv47:15mJ3JeHQzQ" resolve="NewValueSetter" />
-    <node concept="1N5Pfh" id="15mJ3JeHWjo" role="1Mr941">
-      <ref role="1N5Vy1" to="yv47:15mJ3JeHQzR" resolve="member" />
-      <node concept="1MUpDS" id="15mJ3JeHWjq" role="1N6uqs">
-        <node concept="3clFbS" id="15mJ3JeHWjr" role="2VODD2">
-          <node concept="3clFbF" id="15mJ3JeHWk4" role="3cqZAp">
-            <node concept="2OqwBi" id="15mJ3JeHXt1" role="3clFbG">
-              <node concept="2OqwBi" id="15mJ3JeHX6_" role="2Oq$k0">
-                <node concept="1PxgMI" id="15mJ3JeHWXa" role="2Oq$k0">
-                  <ref role="1m5ApE" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
-                  <node concept="2OqwBi" id="15mJ3JeHWGF" role="1m5AlR">
-                    <node concept="2OqwBi" id="15mJ3JeHWx$" role="2Oq$k0">
-                      <node concept="1PxgMI" id="15mJ3JeHWrO" role="2Oq$k0">
-                        <ref role="1m5ApE" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
-                        <node concept="21POm0" id="15mJ3JeHWk3" role="1m5AlR" />
-                      </node>
-                      <node concept="2qgKlT" id="15mJ3JeHWAw" role="2OqNvi">
-                        <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-                      </node>
-                    </node>
-                    <node concept="3JvlWi" id="15mJ3JeHWNp" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="15mJ3JeHXfy" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
-                </node>
-              </node>
-              <node concept="3Tsc0h" id="15mJ3JeHXGf" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" resolve="members" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="HywGhj0hKE">
-    <property role="3GE5qa" value="record.change" />
-    <ref role="1M2myG" to="yv47:HywGhj0hJO" resolve="OldValueExpr" />
-    <node concept="nKS2y" id="HywGhj0hKF" role="1MLUbF">
-      <node concept="3clFbS" id="HywGhj0hKG" role="2VODD2">
-        <node concept="3clFbF" id="HywGhj0hLL" role="3cqZAp">
-          <node concept="2OqwBi" id="HywGhj0i1b" role="3clFbG">
-            <node concept="2OqwBi" id="HywGhj0hNy" role="2Oq$k0">
-              <node concept="nLn13" id="HywGhj0hLK" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="HywGhj0hQk" role="2OqNvi">
-                <node concept="1xMEDy" id="HywGhj0hQm" role="1xVPHs">
-                  <node concept="chp4Y" id="HywGhj0hRY" role="ri$Ld">
-                    <ref role="cht4Q" to="yv47:15mJ3JeHQzQ" resolve="NewValueSetter" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="HywGhj0hUV" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="HywGhj0i7V" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="15mJ3JeHVik">
-    <property role="3GE5qa" value="record.change" />
-    <ref role="1M2myG" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
-    <node concept="nKS2y" id="15mJ3JeHVil" role="1MLUbF">
-      <node concept="3clFbS" id="15mJ3JeHVim" role="2VODD2">
-        <node concept="3clFbF" id="15mJ3JeHVjr" role="3cqZAp">
-          <node concept="2OqwBi" id="15mJ3JeHW5H" role="3clFbG">
-            <node concept="2OqwBi" id="15mJ3JeHVP6" role="2Oq$k0">
-              <node concept="2OqwBi" id="15mJ3JeHVsE" role="2Oq$k0">
-                <node concept="1PxgMI" id="15mJ3JeHVld" role="2Oq$k0">
-                  <ref role="1m5ApE" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-                  <node concept="nLn13" id="15mJ3JeHVjq" role="1m5AlR" />
-                </node>
-                <node concept="3TrEf2" id="15mJ3JeHVBN" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                </node>
-              </node>
-              <node concept="3JvlWi" id="15mJ3JeHVXP" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="15mJ3JeHWaq" role="2OqNvi">
-              <node concept="chp4Y" id="15mJ3JeHWel" role="cj9EA">
-                <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="SRvqsNmWrY">
-    <property role="3GE5qa" value="record" />
-    <ref role="1M2myG" to="yv47:SRvqsNmWc8" resolve="RecordMemberRefInConstraint" />
-    <node concept="1N5Pfh" id="SRvqsNmX7w" role="1Mr941">
-      <ref role="1N5Vy1" to="yv47:SRvqsNmWci" resolve="member" />
-      <node concept="1MUpDS" id="SRvqsNmX7_" role="1N6uqs">
-        <node concept="3clFbS" id="SRvqsNmX7A" role="2VODD2">
-          <node concept="3clFbF" id="SRvqsNmX8f" role="3cqZAp">
-            <node concept="2OqwBi" id="SRvqsNmXl$" role="3clFbG">
-              <node concept="2OqwBi" id="SRvqsNmXa$" role="2Oq$k0">
-                <node concept="21POm0" id="SRvqsNmX8e" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="SRvqsNmXcE" role="2OqNvi">
-                  <node concept="1xMEDy" id="SRvqsNmXcG" role="1xVPHs">
-                    <node concept="chp4Y" id="SRvqsNmXe1" role="ri$Ld">
-                      <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+  <node concept="1M2fIO" id="67Y8mp$DN7W">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1M2myG" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+    <node concept="1N5Pfh" id="67Y8mp$DN8s" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:67Y8mp$DN3N" resolve="enum" />
+      <node concept="1MUpDS" id="67Y8mp$DN8A" role="1N6uqs">
+        <node concept="3clFbS" id="67Y8mp$DN8B" role="2VODD2">
+          <node concept="3clFbF" id="67Y8mp$DN9i" role="3cqZAp">
+            <node concept="2OqwBi" id="67Y8mp$DNi$" role="3clFbG">
+              <node concept="2OqwBi" id="67Y8mp$DNbD" role="2Oq$k0">
+                <node concept="21POm0" id="67Y8mp$DN9h" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="67Y8mp$DNdO" role="2OqNvi">
+                  <node concept="1xMEDy" id="67Y8mp$DNdQ" role="1xVPHs">
+                    <node concept="chp4Y" id="67Y8mp$DNfe" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3Tsc0h" id="SRvqsNmXxG" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" resolve="members" />
+              <node concept="2qgKlT" id="67Y8mp$DNoh" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:67Y8mp$DN6t" resolve="visibleEnums" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="nKS2y" id="SRvqsNmWs8" role="1MLUbF">
-      <node concept="3clFbS" id="SRvqsNmWs9" role="2VODD2">
-        <node concept="3clFbF" id="SRvqsNmWte" role="3cqZAp">
-          <node concept="2OqwBi" id="SRvqsNmWHK" role="3clFbG">
-            <node concept="2OqwBi" id="SRvqsNmWuZ" role="2Oq$k0">
-              <node concept="nLn13" id="SRvqsNmWtd" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="SRvqsNmWxg" role="2OqNvi">
-                <node concept="1xMEDy" id="SRvqsNmWxi" role="1xVPHs">
-                  <node concept="chp4Y" id="SRvqsNmWyU" role="ri$Ld">
-                    <ref role="cht4Q" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="SRvqsNmWBl" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="SRvqsNmX4E" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -889,34 +917,6 @@
                 <node concept="chp4Y" id="3Y6fbK1itnC" role="cj9EA">
                   <ref role="cht4Q" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="15mJ3JeCT9j">
-    <property role="3GE5qa" value="record" />
-    <ref role="1M2myG" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
-    <node concept="1N5Pfh" id="15mJ3JeCT9k" role="1Mr941">
-      <ref role="1N5Vy1" to="yv47:7D7uZV2dYz3" resolve="record" />
-      <node concept="1MUpDS" id="15mJ3JeCT9m" role="1N6uqs">
-        <node concept="3clFbS" id="15mJ3JeCT9n" role="2VODD2">
-          <node concept="3clFbF" id="15mJ3JeCTa0" role="3cqZAp">
-            <node concept="2OqwBi" id="15mJ3JeCTsz" role="3clFbG">
-              <node concept="2OqwBi" id="15mJ3JeCTcI" role="2Oq$k0">
-                <node concept="21POm0" id="15mJ3JeCT9Z" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="15mJ3JeCTgf" role="2OqNvi">
-                  <node concept="1xMEDy" id="15mJ3JeCTgh" role="1xVPHs">
-                    <node concept="chp4Y" id="15mJ3JeCThA" role="ri$Ld">
-                      <ref role="cht4Q" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2qgKlT" id="15mJ3JeCTwj" role="2OqNvi">
-                <ref role="37wK5l" to="nu60:7D7uZV2eU0v" resolve="visibleRecords" />
               </node>
             </node>
           </node>

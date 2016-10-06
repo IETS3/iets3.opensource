@@ -2,8 +2,8 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -66,9 +66,6 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7425695345928347719" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6iqfHNBPkk0" role="PzmwI">
-      <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
-    </node>
     <node concept="PrWs8" id="sflsE7bRNl" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
@@ -831,16 +828,6 @@
     <property role="3GE5qa" value="targets" />
     <property role="EcuMT" value="2245119349904068784" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="SRvqsMUlki" role="1TKVEl">
-      <property role="TrG5h" value="upperExcluding" />
-      <property role="IQ2nx" value="1024425597317240082" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="SRvqsMUlkl" role="1TKVEl">
-      <property role="TrG5h" value="lowerExcluding" />
-      <property role="IQ2nx" value="1024425597317240085" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="1WCh2thoP3e" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="min" />
@@ -857,6 +844,16 @@
     </node>
     <node concept="PrWs8" id="1WCh2thoP3c" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyi" id="SRvqsMUlki" role="1TKVEl">
+      <property role="TrG5h" value="upperExcluding" />
+      <property role="IQ2nx" value="1024425597317240082" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="SRvqsMUlkl" role="1TKVEl">
+      <property role="TrG5h" value="lowerExcluding" />
+      <property role="IQ2nx" value="1024425597317240085" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="S$tO8ocniU">

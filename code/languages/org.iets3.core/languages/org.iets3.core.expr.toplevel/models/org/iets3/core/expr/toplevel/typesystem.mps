@@ -574,7 +574,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="7D7uZV2e2LI">
-    <property role="TrG5h" value="typeof_RecordMember" />
+    <property role="TrG5h" value="typeof_IRecordMember" />
     <property role="3GE5qa" value="record" />
     <node concept="3clFbS" id="7D7uZV2e2LJ" role="18ibNy">
       <node concept="1Z5TYs" id="7D7uZV2e2O0" role="3cqZAp">
@@ -585,7 +585,7 @@
                 <ref role="1YBMHb" node="7D7uZV2e2LL" resolve="rm" />
               </node>
               <node concept="3TrEf2" id="7D7uZV2e3WS" role="2OqNvi">
-                <ref role="3Tt5mk" to="yv47:7D7uZV2dYz0" resolve="type" />
+                <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" />
               </node>
             </node>
           </node>
@@ -601,11 +601,11 @@
     </node>
     <node concept="1YaCAy" id="7D7uZV2e2LL" role="1YuTPh">
       <property role="TrG5h" value="rm" />
-      <ref role="1YaFvo" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+      <ref role="1YaFvo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1YbPZF" id="7D7uZV2e3Y$">
-    <property role="TrG5h" value="typeof_RecordDeclaration" />
+    <property role="TrG5h" value="typeof_IRecordDeclaration" />
     <property role="3GE5qa" value="record" />
     <node concept="3clFbS" id="7D7uZV2e3Y_" role="18ibNy">
       <node concept="1Z5TYs" id="7D7uZV2e40W" role="3cqZAp">
@@ -635,7 +635,7 @@
     </node>
     <node concept="1YaCAy" id="7D7uZV2e3YB" role="1YuTPh">
       <property role="TrG5h" value="rd" />
-      <ref role="1YaFvo" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
+      <ref role="1YaFvo" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
   </node>
   <node concept="1YbPZF" id="7D7uZV2j1Jq">
@@ -668,7 +668,7 @@
         <node concept="3cpWsn" id="7D7uZV2ogue" role="3cpWs9">
           <property role="TrG5h" value="members" />
           <node concept="2I9FWS" id="7D7uZV2ogu5" role="1tU5fm">
-            <ref role="2I9WkF" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+            <ref role="2I9WkF" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
           </node>
           <node concept="2OqwBi" id="7D7uZV2oguf" role="33vP2m">
             <node concept="2OqwBi" id="7D7uZV2ogug" role="2Oq$k0">
@@ -685,7 +685,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="7D7uZV2ogul" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:7D7uZV2dYzK" resolve="members" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
             </node>
           </node>
         </node>
@@ -774,7 +774,7 @@
                     <property role="TrG5h" value="m" />
                     <property role="3TUv4t" value="true" />
                     <node concept="3Tqbb2" id="7D7uZV2p7hg" role="1tU5fm">
-                      <ref role="ehGHo" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+                      <ref role="ehGHo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
                     </node>
                     <node concept="2OqwBi" id="7D7uZV2p7hn" role="33vP2m">
                       <node concept="37vLTw" id="7D7uZV2p7ho" role="2Oq$k0">
@@ -1148,10 +1148,10 @@
           <node concept="10Nm6u" id="JUiQTzbyy4" role="3uHU7w" />
           <node concept="2OqwBi" id="JUiQTzbyeL" role="3uHU7B">
             <node concept="1YBJjd" id="JUiQTzbyaM" role="2Oq$k0">
-              <ref role="1YBMHb" node="JUiQTzbyal" resolve="m" />
+              <ref role="1YBMHb" node="JUiQTzbyal" resolve="rm" />
             </node>
             <node concept="3TrEf2" id="JUiQTzbymX" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:7D7uZV2dYz0" resolve="type" />
+              <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" />
             </node>
           </node>
         </node>
@@ -1159,13 +1159,13 @@
           <property role="Xl_RC" value="type required" />
         </node>
         <node concept="1YBJjd" id="JUiQTzby$T" role="2OEOjV">
-          <ref role="1YBMHb" node="JUiQTzbyal" resolve="m" />
+          <ref role="1YBMHb" node="JUiQTzbyal" resolve="rm" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="JUiQTzbyal" role="1YuTPh">
-      <property role="TrG5h" value="m" />
-      <ref role="1YaFvo" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+      <property role="TrG5h" value="rm" />
+      <ref role="1YaFvo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1YbPZF" id="3Y6fbK1h_$e">
