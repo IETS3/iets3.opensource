@@ -63,9 +63,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6iqfHNBPkk0" role="PzmwI">
-      <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
-    </node>
     <node concept="PrWs8" id="sflsE7bRNl" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
