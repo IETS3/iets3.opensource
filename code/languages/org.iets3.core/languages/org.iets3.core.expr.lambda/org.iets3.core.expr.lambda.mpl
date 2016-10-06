@@ -167,7 +167,7 @@
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="0" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
-    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="0" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>

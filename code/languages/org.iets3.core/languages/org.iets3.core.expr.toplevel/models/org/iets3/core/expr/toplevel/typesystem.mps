@@ -4,7 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -585,7 +585,7 @@
                 <ref role="1YBMHb" node="7D7uZV2e2LL" resolve="rm" />
               </node>
               <node concept="3TrEf2" id="7D7uZV2e3WS" role="2OqNvi">
-                <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" />
+                <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" resolve="type" />
               </node>
             </node>
           </node>
@@ -685,7 +685,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="7D7uZV2ogul" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
             </node>
           </node>
         </node>
@@ -1151,7 +1151,7 @@
               <ref role="1YBMHb" node="JUiQTzbyal" resolve="rm" />
             </node>
             <node concept="3TrEf2" id="JUiQTzbymX" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" />
+              <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" resolve="type" />
             </node>
           </node>
         </node>

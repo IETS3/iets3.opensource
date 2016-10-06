@@ -2,8 +2,8 @@
 <model ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -430,7 +430,7 @@
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="15mJ3JeE5UR" role="2OqNvi">
-                          <ref role="3TtcxE" to="yv47:xu7xcKioz5" />
+                          <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
                         </node>
                       </node>
                       <node concept="34jXtK" id="15mJ3JeE5US" role="2OqNvi">
@@ -498,7 +498,7 @@
                         <ref role="3cqZAo" node="15mJ3JeE5UJ" resolve="member" />
                       </node>
                       <node concept="3TrEf2" id="15mJ3JeE6j7" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" />
+                        <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" resolve="type" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="15mJ3JeE6kQ" role="37wK5m">

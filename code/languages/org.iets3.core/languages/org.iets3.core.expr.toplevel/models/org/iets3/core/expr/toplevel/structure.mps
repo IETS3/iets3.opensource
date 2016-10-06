@@ -2,8 +2,8 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
@@ -21,7 +21,6 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -494,9 +493,9 @@
     </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKdQCB">
-    <property role="1pbfSe" value="949323834" />
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="IRecordMember" />
+    <property role="EcuMT" value="602952467876375079" />
     <node concept="PrWs8" id="xu7xcKdQCC" role="PrDN$">
       <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
     </node>
@@ -507,15 +506,16 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="602952467876378447" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKinTJ">
-    <property role="1pbfSe" value="950508674" />
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="IRecordDeclaration" />
+    <property role="EcuMT" value="602952467877559919" />
     <node concept="PrWs8" id="7D7uZV2dYyR" role="PrDN$">
-      <ref role="PrY4T" node="2uR5X5ayM7T" />
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
     <node concept="PrWs8" id="7D7uZV2ybot" role="PrDN$">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
@@ -527,6 +527,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="602952467877562565" />
       <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
