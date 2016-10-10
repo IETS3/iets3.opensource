@@ -351,6 +351,7 @@
       <concept id="1235566831861" name="jetbrains.mps.baseLanguage.collections.structure.AllOperation" flags="nn" index="2HxqBE" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
+        <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
@@ -1911,18 +1912,9 @@
             <node concept="2ShNRf" id="12WRc28VqSq" role="33vP2m">
               <node concept="Tc6Ow" id="12WRc28VqSm" role="2ShVmc">
                 <node concept="3Tqbb2" id="12WRc28VqSn" role="HW$YZ" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="12WRc28VqTw" role="3cqZAp">
-          <node concept="2OqwBi" id="12WRc28VriC" role="3clFbG">
-            <node concept="37vLTw" id="12WRc28VqTu" role="2Oq$k0">
-              <ref role="3cqZAo" node="12WRc28VqQG" resolve="expressions" />
-            </node>
-            <node concept="X8dFx" id="12WRc28VrNH" role="2OqNvi">
-              <node concept="37vLTw" id="12WRc28WHG7" role="25WWJ7">
-                <ref role="3cqZAo" node="12WRc28WGAy" resolve="nodes" />
+                <node concept="37vLTw" id="7zUcYFGUko3" role="I$8f6">
+                  <ref role="3cqZAo" node="12WRc28WGAy" resolve="nodes" />
+                </node>
               </node>
             </node>
           </node>
@@ -2390,7 +2382,9 @@
       </node>
       <node concept="37vLTG" id="12WRc28WGAy" role="3clF46">
         <property role="TrG5h" value="nodes" />
-        <node concept="2I9FWS" id="12WRc28WGAx" role="1tU5fm" />
+        <node concept="A3Dl8" id="7zUcYFGUjDh" role="1tU5fm">
+          <node concept="3Tqbb2" id="7zUcYFGUjHQ" role="A3Ik2" />
+        </node>
       </node>
       <node concept="2AHcQZ" id="12WRc28WGLO" role="2AJF6D">
         <ref role="2AI5Lk" to="tpd5:hq1Hpmb" resolve="InferenceMethod" />
