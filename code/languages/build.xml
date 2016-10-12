@@ -19,6 +19,9 @@
 		</condition>
 	</fail>
 	
+	<!-- misc properties -->
+	<property name="build.dir" value="${iets3.github.core.home}" />
+
 	<!-- tasks -->
 	<property name="clean-plugins.task" value="clean" />
 	<property name="generate-code.task" value="generate" /> 

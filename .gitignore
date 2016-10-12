@@ -6,6 +6,8 @@
 .metadata
 .svn
 /build
+/artifacts/
+/tmp/
 
 # -----------------------------------------------------------
 # Model Checkig Results
