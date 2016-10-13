@@ -2,7 +2,7 @@
 <model ref="r:f8045cc5-6cf5-4276-a613-4dbbf3901919(org.iets3.core.expr.gen.typescript.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -49,7 +49,7 @@
         <property role="3F0ifm" value="proxy:" />
       </node>
       <node concept="1iCGBv" id="7UpNQq_1Y1o" role="3EZMnx">
-        <ref role="1NtTu8" to="smp2:7UpNQq_1Y0T" />
+        <ref role="1NtTu8" to="smp2:7UpNQq_1Y0T" resolve="suite" />
         <node concept="1sVBvm" id="7UpNQq_1Y1q" role="1sWHZn">
           <node concept="3F0A7n" id="7UpNQq_1Y1C" role="2wV5jI">
             <property role="1Intyy" value="true" />
