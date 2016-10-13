@@ -9,7 +9,6 @@
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
@@ -224,7 +223,7 @@
               <node concept="2OqwBi" id="49WTic8eIbq" role="2Oq$k0">
                 <node concept="2Sf5sV" id="49WTic8eI98" role="2Oq$k0" />
                 <node concept="3TrEf2" id="49WTic8eIgO" role="2OqNvi">
-                  <ref role="3Tt5mk" to="zzzn:6zmBjqUkwH3" />
+                  <ref role="3Tt5mk" to="zzzn:6zmBjqUkwH3" resolve="expression" />
                 </node>
               </node>
               <node concept="1$rogu" id="49WTic8eIrr" role="2OqNvi" />
@@ -234,7 +233,7 @@
                 <ref role="3cqZAo" node="49WTic8eHNn" resolve="sle" />
               </node>
               <node concept="3TrEf2" id="49WTic8eI3m" role="2OqNvi">
-                <ref role="3Tt5mk" to="zzzn:6zmBjqUm7MR" />
+                <ref role="3Tt5mk" to="zzzn:6zmBjqUm7MR" resolve="expression" />
               </node>
             </node>
           </node>
@@ -247,7 +246,7 @@
                   <ref role="3cqZAo" node="49WTic8eHNn" resolve="sle" />
                 </node>
                 <node concept="3TrEf2" id="49WTic8eIBz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="zzzn:6zmBjqUm7MR" />
+                  <ref role="3Tt5mk" to="zzzn:6zmBjqUm7MR" resolve="expression" />
                 </node>
               </node>
               <node concept="2Rf3mk" id="49WTic8eMt6" role="2OqNvi">
@@ -308,7 +307,7 @@
                 <node concept="2OqwBi" id="49WTic8eIUe" role="2Oq$k0">
                   <node concept="2Sf5sV" id="49WTic8eIQE" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="49WTic8eJ0Y" role="2OqNvi">
-                    <ref role="3TtcxE" to="zzzn:6zmBjqUkws7" />
+                    <ref role="3TtcxE" to="zzzn:6zmBjqUkws7" resolve="args" />
                   </node>
                 </node>
                 <node concept="34oBXx" id="49WTic8eL2b" role="2OqNvi" />

@@ -38,6 +38,9 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1240253180846" name="jetbrains.mps.lang.editor.structure.IndentLayoutNoWrapClassItem" flags="ln" index="34QqEe" />
@@ -47,6 +50,7 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
@@ -214,7 +218,7 @@
     <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="5qo5:7$oB3aVs63" resolve="EnumRefType" />
     <node concept="1iCGBv" id="2Q7cX_ixW2I" role="2wV5jI">
-      <ref role="1NtTu8" to="5qo5:7$oB3aVt7J" />
+      <ref role="1NtTu8" to="5qo5:7$oB3aVt7J" resolve="enum" />
       <node concept="1sVBvm" id="2Q7cX_ixW2K" role="1sWHZn">
         <node concept="1HlG4h" id="2Q7cX_ixW2R" role="2wV5jI">
           <node concept="1HfYo3" id="2Q7cX_ixW2T" role="1HlULh">
@@ -264,7 +268,7 @@
       </node>
       <node concept="3F2HdR" id="7$oB3aTXlK" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="5qo5:7$oB3aTXkz" />
+        <ref role="1NtTu8" to="5qo5:7$oB3aTXkz" resolve="literals" />
         <node concept="l2Vlx" id="7$oB3aTXlM" role="2czzBx" />
         <node concept="3F0ifn" id="7$oB3aTXoF" role="2czzBI">
           <property role="3F0ifm" value="" />
@@ -285,7 +289,7 @@
     <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="5qo5:7$oB3aUcMz" resolve="EnumLitRef" />
     <node concept="1iCGBv" id="7$oB3aUeIn" role="2wV5jI">
-      <ref role="1NtTu8" to="5qo5:7$oB3aUdzU" />
+      <ref role="1NtTu8" to="5qo5:7$oB3aUdzU" resolve="literal" />
       <node concept="1sVBvm" id="7$oB3aUeIp" role="1sWHZn">
         <node concept="1HlG4h" id="7$oB3aUeIz" role="2wV5jI">
           <node concept="1HfYo3" id="7$oB3aUeI_" role="1HlULh">
@@ -312,6 +316,12 @@
     <node concept="3F0A7n" id="7$oB3aTXkZ" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
+  </node>
+  <node concept="3p36aQ" id="cEt5uj8NJm">
+    <ref role="aqKnT" to="5qo5:2Q7cX_iyItL" resolve="AbstractEnumType" />
+  </node>
+  <node concept="3p36aQ" id="cEt5uj8NJn">
+    <ref role="aqKnT" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
   </node>
 </model>
 

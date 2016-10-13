@@ -14,7 +14,6 @@
     <import index="39al" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.serializer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="h587" ref="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
   </imports>
@@ -179,6 +178,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -186,10 +189,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -252,7 +252,7 @@
             <node concept="2OqwBi" id="3KzlhPzQW_E" role="3uHU7B">
               <node concept="13iPFW" id="3KzlhPzQWyT" role="2Oq$k0" />
               <node concept="3TrEf2" id="3KzlhPzQWF1" role="2OqNvi">
-                <ref role="3Tt5mk" to="4kwy:cJpacq40jC" />
+                <ref role="3Tt5mk" to="4kwy:cJpacq40jC" resolve="optionalName" />
               </node>
             </node>
           </node>
@@ -425,8 +425,8 @@
         <node concept="3cpWs6" id="2HplpPDjwjS" role="3cqZAp">
           <node concept="2OqwBi" id="2HplpPDjwz5" role="3cqZAk">
             <node concept="1PxgMI" id="2HplpPDjwru" role="2Oq$k0">
-              <ref role="1PxNhF" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
-              <node concept="13iPFW" id="2HplpPDjwo8" role="1PxMeX" />
+              <ref role="1m5ApE" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
+              <node concept="13iPFW" id="2HplpPDjwo8" role="1m5AlR" />
             </node>
             <node concept="2qgKlT" id="2HplpPDjwDS" role="2OqNvi">
               <ref role="37wK5l" node="3UrItPobuSV" resolve="hasPersistentResult" />
@@ -538,8 +538,8 @@
             <node concept="3cpWs6" id="3UrItPobvsv" role="3cqZAp">
               <node concept="2OqwBi" id="2HplpPDjxwb" role="3cqZAk">
                 <node concept="1PxgMI" id="2HplpPDjxoF" role="2Oq$k0">
-                  <ref role="1PxNhF" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
-                  <node concept="13iPFW" id="2HplpPDjx7R" role="1PxMeX" />
+                  <ref role="1m5ApE" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
+                  <node concept="13iPFW" id="2HplpPDjx7R" role="1m5AlR" />
                 </node>
                 <node concept="2qgKlT" id="2HplpPDjxBI" role="2OqNvi">
                   <ref role="37wK5l" node="3UrItPobvnj" resolve="getPersistentResult" />

@@ -2,7 +2,7 @@
 <model ref="r:6c11f335-ba0b-4b3d-96a4-48782e272e56(org.iets3.core.users.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -239,7 +239,7 @@
         </node>
         <node concept="2rfBfz" id="7mG7sQPptMV" role="3EZMnx">
           <node concept="2reSaE" id="7mG7sQPptUp" role="2rf8GZ">
-            <ref role="2reCK$" to="cayy:7mG7sQPphD1" />
+            <ref role="2reCK$" to="cayy:7mG7sQPphD1" resolve="users" />
           </node>
         </node>
       </node>
@@ -248,7 +248,7 @@
   <node concept="24kQdi" id="7mG7sQPpUg2">
     <ref role="1XX52x" to="cayy:7mG7sQPpUfB" resolve="UserRef" />
     <node concept="1iCGBv" id="7mG7sQPpUg4" role="2wV5jI">
-      <ref role="1NtTu8" to="cayy:7mG7sQPpUfC" />
+      <ref role="1NtTu8" to="cayy:7mG7sQPpUfC" resolve="user" />
       <node concept="1sVBvm" id="7mG7sQPpUg6" role="1sWHZn">
         <node concept="3F0A7n" id="7mG7sQPpUgg" role="2wV5jI">
           <property role="1Intyy" value="true" />

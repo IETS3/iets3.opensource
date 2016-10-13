@@ -2,7 +2,7 @@
 <model ref="r:0cfd3108-07f9-4d92-ba0c-a987e9441dd3(org.iets3.core.expr.path.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -67,7 +67,7 @@
   <node concept="24kQdi" id="6LLGpXJ4YEc">
     <ref role="1XX52x" to="lmd:6LLGpXJ4YDJ" resolve="PathElement" />
     <node concept="1iCGBv" id="6LLGpXJ4YEe" role="2wV5jI">
-      <ref role="1NtTu8" to="lmd:6LLGpXJ4YDM" />
+      <ref role="1NtTu8" to="lmd:6LLGpXJ4YDM" resolve="member" />
       <node concept="1sVBvm" id="6LLGpXJ4YEg" role="1sWHZn">
         <node concept="1HlG4h" id="6LLGpXJ52wa" role="2wV5jI">
           <node concept="1HfYo3" id="6LLGpXJ52wc" role="1HlULh">
@@ -91,7 +91,7 @@
                   <node concept="2OqwBi" id="2U5Q01UgBEO" role="3clFbG">
                     <node concept="pncrf" id="2U5Q01UgBBr" role="2Oq$k0" />
                     <node concept="2qgKlT" id="2U5Q01UgBMY" role="2OqNvi">
-                      <ref role="37wK5l" to="1zby:2U5Q01Ug$y6" resolve="getColor" />
+                      <ref role="37wK5l" to="1zby:2U5Q01Ug$y6" resolve="getPathColor" />
                     </node>
                   </node>
                 </node>

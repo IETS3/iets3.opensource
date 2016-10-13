@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
@@ -144,7 +143,7 @@
             <node concept="2OqwBi" id="ub9nkyPduT" role="2Oq$k0">
               <node concept="2Sf5sV" id="ub9nkyPds1" role="2Oq$k0" />
               <node concept="3Tsc0h" id="ub9nkyPd_$" role="2OqNvi">
-                <ref role="3TtcxE" to="av4b:ub9nkyHAcK" />
+                <ref role="3TtcxE" to="av4b:ub9nkyHAcK" resolve="items" />
               </node>
             </node>
             <node concept="2es0OD" id="ub9nkyPfpg" role="2OqNvi">

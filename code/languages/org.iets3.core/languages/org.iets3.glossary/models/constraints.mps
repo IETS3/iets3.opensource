@@ -56,14 +56,15 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -82,8 +83,8 @@
               </node>
               <node concept="2OqwBi" id="4tXyFaWyATX" role="3uHU7B">
                 <node concept="1PxgMI" id="4tXyFaWyANU" role="2Oq$k0">
-                  <ref role="1PxNhF" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
-                  <node concept="2OqwBi" id="4tXyFaWyAh7" role="1PxMeX">
+                  <ref role="1m5ApE" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
+                  <node concept="2OqwBi" id="4tXyFaWyAh7" role="1m5AlR">
                     <node concept="EsrRn" id="4tXyFaWyA97" role="2Oq$k0" />
                     <node concept="1mfA1w" id="4tXyFaWyAxW" role="2OqNvi" />
                   </node>
@@ -101,7 +102,7 @@
   <node concept="1M2fIO" id="6zaFu4oQdts">
     <ref role="1M2myG" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
     <node concept="1N5Pfh" id="6zaFu4oQdtw" role="1Mr941">
-      <ref role="1N5Vy1" to="tuf9:6zaFu4oQdt2" />
+      <ref role="1N5Vy1" to="tuf9:6zaFu4oQdt2" resolve="term" />
       <node concept="1MUpDS" id="6zaFu4oQdty" role="1N6uqs">
         <node concept="3clFbS" id="6zaFu4oQdtz" role="2VODD2">
           <node concept="3clFbF" id="6zaFu4oQdws" role="3cqZAp">
