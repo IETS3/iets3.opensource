@@ -1,4 +1,4 @@
-<project name="build iets3" default="clean-and-build" >
+<project name="build iets3" default="fetch-dependencies-and-clean-and-build" >
  	<!-- import properties -->
 	<property file="build.properties"/>  
 
@@ -19,6 +19,12 @@
 		</condition>
 	</fail>
 	
+	<!-- misc properties -->
+	<property name="build.dir" value="${iets3.github.core.home}" />
+	<property name="artifacts.root" value="${build.dir}/artifacts" />
+	<property name="iets3.artifacts.z3Lib" value="${artifacts.root}/org.iets3.analysis.z3" />
+	<property name="iets3.artifacts.core" value="${artifacts.root}/org.iets3.core" />
+
 	<!-- tasks -->
 	<property name="clean-plugins.task" value="clean" />
 	<property name="generate-code.task" value="generate" /> 
@@ -37,6 +43,11 @@
 	
 	
 	<!--targets -->
+	<target name="fetch-dependencies-and-clean-and-build">
+		<antcall target="fetch-dependencies" />
+		<antcall target="clean-and-build" />
+	</target>
+
 	<target name="clean-and-build" >
 		<antcall target="build-allScripts" />
 		<antcall target="clean" />
@@ -69,5 +80,11 @@
 	
 	<target name="assemble">
 		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
+	</target>
+
+	<target name="fetch-dependencies">
+        <copy todir="${artifacts.root}" verbose="false">
+            <fileset dir="${mbeddr.github.core.home}/artifacts/" />
+        </copy>
 	</target>
 </project>
