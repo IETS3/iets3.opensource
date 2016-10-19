@@ -216,9 +216,9 @@
   </node>
   <node concept="24kQdi" id="2Q7cX_ixW2G">
     <property role="3GE5qa" value="enum" />
-    <ref role="1XX52x" to="5qo5:7$oB3aVs63" resolve="EnumRefType" />
+    <ref role="1XX52x" to="5qo5:7$oB3aVs63" resolve="EnumRefType_old" />
     <node concept="1iCGBv" id="2Q7cX_ixW2I" role="2wV5jI">
-      <ref role="1NtTu8" to="5qo5:7$oB3aVt7J" resolve="enum" />
+      <ref role="1NtTu8" to="5qo5:7$oB3aVt7J" resolve="enum_old" />
       <node concept="1sVBvm" id="2Q7cX_ixW2K" role="1sWHZn">
         <node concept="1HlG4h" id="2Q7cX_ixW2R" role="2wV5jI">
           <node concept="1HfYo3" id="2Q7cX_ixW2T" role="1HlULh">
@@ -246,7 +246,7 @@
   </node>
   <node concept="24kQdi" id="7$oB3aTXlq">
     <property role="3GE5qa" value="enum" />
-    <ref role="1XX52x" to="5qo5:7$oB3aTXcI" resolve="EnumType" />
+    <ref role="1XX52x" to="5qo5:7$oB3aTXcI" resolve="EnumType_old" />
     <node concept="3EZMnI" id="7$oB3aTXlv" role="2wV5jI">
       <node concept="l2Vlx" id="7$oB3aTXlw" role="2iSdaV" />
       <node concept="3F0ifn" id="7$oB3aTXls" role="3EZMnx">
@@ -268,7 +268,7 @@
       </node>
       <node concept="3F2HdR" id="7$oB3aTXlK" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="5qo5:7$oB3aTXkz" resolve="literals" />
+        <ref role="1NtTu8" to="5qo5:7$oB3aTXkz" resolve="literals_old" />
         <node concept="l2Vlx" id="7$oB3aTXlM" role="2czzBx" />
         <node concept="3F0ifn" id="7$oB3aTXoF" role="2czzBI">
           <property role="3F0ifm" value="" />
@@ -287,9 +287,9 @@
   </node>
   <node concept="24kQdi" id="7$oB3aUeIl">
     <property role="3GE5qa" value="enum" />
-    <ref role="1XX52x" to="5qo5:7$oB3aUcMz" resolve="EnumLitRef" />
+    <ref role="1XX52x" to="5qo5:7$oB3aUcMz" resolve="EnumLitRef_old" />
     <node concept="1iCGBv" id="7$oB3aUeIn" role="2wV5jI">
-      <ref role="1NtTu8" to="5qo5:7$oB3aUdzU" resolve="literal" />
+      <ref role="1NtTu8" to="5qo5:7$oB3aUdzU" resolve="literal_old" />
       <node concept="1sVBvm" id="7$oB3aUeIp" role="1sWHZn">
         <node concept="1HlG4h" id="7$oB3aUeIz" role="2wV5jI">
           <node concept="1HfYo3" id="7$oB3aUeI_" role="1HlULh">
@@ -312,16 +312,31 @@
   </node>
   <node concept="24kQdi" id="7$oB3aTXkX">
     <property role="3GE5qa" value="enum" />
-    <ref role="1XX52x" to="5qo5:7$oB3aTXcJ" resolve="EnumLiteral" />
+    <ref role="1XX52x" to="5qo5:7$oB3aTXcJ" resolve="EnumLiteral_old" />
     <node concept="3F0A7n" id="7$oB3aTXkZ" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
   <node concept="3p36aQ" id="cEt5uj8NJm">
-    <ref role="aqKnT" to="5qo5:2Q7cX_iyItL" resolve="AbstractEnumType" />
+    <ref role="aqKnT" to="5qo5:2Q7cX_iyItL" resolve="AbstractEnumType_old" />
   </node>
   <node concept="3p36aQ" id="cEt5uj8NJn">
     <ref role="aqKnT" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
+  </node>
+  <node concept="3p36aQ" id="4kV9Ob9ytLf">
+    <ref role="aqKnT" to="5qo5:2Q7cX_iyItL" resolve="AbstractEnumType_old" />
+  </node>
+  <node concept="3p36aQ" id="4kV9Ob9ytLp">
+    <ref role="aqKnT" to="5qo5:7$oB3aUcMz" resolve="EnumLitRef_old" />
+  </node>
+  <node concept="3p36aQ" id="4kV9Ob9ytLz">
+    <ref role="aqKnT" to="5qo5:7$oB3aTXcJ" resolve="EnumLiteral_old" />
+  </node>
+  <node concept="3p36aQ" id="4kV9Ob9ytLH">
+    <ref role="aqKnT" to="5qo5:7$oB3aVs63" resolve="EnumRefType_old" />
+  </node>
+  <node concept="3p36aQ" id="4kV9Ob9ytLR">
+    <ref role="aqKnT" to="5qo5:7$oB3aTXcI" resolve="EnumType_old" />
   </node>
 </model>
 

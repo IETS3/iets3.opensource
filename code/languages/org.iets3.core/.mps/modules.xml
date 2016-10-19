@@ -35,6 +35,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.featuremodel/org.iets3.featuremodel.mpl" folder="fm" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.functiontree/org.iets3.functiontree.mpl" folder="functiontree" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.hardware/org.iets3.hardware.mpl" folder="hardware" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.hardware/sandbox/org.iets3.hardware.sandbox.msd" folder="hardware" />
@@ -65,6 +66,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.sandbox/org.iets3.core.units.sandbox.msd" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.featuremodel.sandbox/org.iets3.featuremodel.sandbox.msd" folder="fm" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.functiontree.sandbox/org.iets3.functiontree.sandbox.msd" folder="functiontree" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.runtime/org.iets3.safety.runtime.msd" folder="safety" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.sandbox/org.iets3.safety.sandbox.msd" folder="safety" />

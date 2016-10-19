@@ -125,6 +125,9 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1461,7 +1464,7 @@
       <node concept="3clFbS" id="67Y8mp$DN6x" role="3clF47" />
     </node>
     <node concept="13i0hz" id="67Y8mp$DNsc" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="visibleLiterals" />
       <node concept="3Tm1VV" id="67Y8mp$DNsd" role="1B3o_S" />
@@ -1470,7 +1473,21 @@
           <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
         </node>
       </node>
-      <node concept="3clFbS" id="67Y8mp$DNsg" role="3clF47" />
+      <node concept="3clFbS" id="67Y8mp$DNsg" role="3clF47">
+        <node concept="3clFbF" id="7zXSNv$jsBn" role="3cqZAp">
+          <node concept="2OqwBi" id="7zXSNv$jtsc" role="3clFbG">
+            <node concept="2OqwBi" id="7zXSNv$jt5b" role="2Oq$k0">
+              <node concept="13iPFW" id="7zXSNv$jsBm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7zXSNv$jtgw" role="2OqNvi">
+                <ref role="37wK5l" node="67Y8mp$DN6t" resolve="visibleEnums" />
+              </node>
+            </node>
+            <node concept="13MTOL" id="7zXSNv$jtAV" role="2OqNvi">
+              <ref role="13MTZf" to="yv47:67Y8mp$DMVO" resolve="literals" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="67Y8mp$DN5W" role="13h7CW">
       <node concept="3clFbS" id="67Y8mp$DN5X" role="2VODD2" />
