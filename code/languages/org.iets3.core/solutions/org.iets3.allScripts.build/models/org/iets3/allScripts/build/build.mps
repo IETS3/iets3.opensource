@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -173,7 +173,7 @@
     </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -438,13 +438,16 @@
                   <node concept="2Ry0Ak" id="5wLtKNeTahi" role="2Ry0An">
                     <property role="2Ry0Am" value=".." />
                     <node concept="2Ry0Ak" id="3r1yjRrrcPM" role="2Ry0An">
-                      <property role="2Ry0Am" value="abugariu" />
+                      <property role="2Ry0Am" value=".." />
                       <node concept="2Ry0Ak" id="3r1yjRrrd3H" role="2Ry0An">
-                        <property role="2Ry0Am" value="Desktop" />
+                        <property role="2Ry0Am" value=".." />
                         <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
-                          <property role="2Ry0Am" value="MPS 3.3.app" />
-                          <node concept="2Ry0Ak" id="3r1yjRrrd8n" role="2Ry0An">
-                            <property role="2Ry0Am" value="Contents" />
+                          <property role="2Ry0Am" value="Applications" />
+                          <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
+                            <property role="2Ry0Am" value="MPS34.app" />
+                            <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
+                              <property role="2Ry0Am" value="Contents" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -469,9 +472,21 @@
               <node concept="2Ry0Ak" id="6Y6Jk48g4tC" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="6Y6Jk48g4va" role="2Ry0An">
-                  <property role="2Ry0Am" value="mbeddr" />
-                  <node concept="2Ry0Ak" id="6Y6Jk48g4vv" role="2Ry0An">
-                    <property role="2Ry0Am" value="mbeddr_github" />
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="5$yCC4GB0wn" role="2Ry0An">
+                    <property role="2Ry0Am" value=".." />
+                    <node concept="2Ry0Ak" id="5$yCC4GB0x4" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps" />
+                      <node concept="2Ry0Ak" id="5$yCC4GB0xJ" role="2Ry0An">
+                        <property role="2Ry0Am" value="mbeddr-split" />
+                        <node concept="2Ry0Ak" id="5$yCC4GB0y6" role="2Ry0An">
+                          <property role="2Ry0Am" value="mps34" />
+                          <node concept="2Ry0Ak" id="5$yCC4GB0yt" role="2Ry0An">
+                            <property role="2Ry0Am" value="mbeddr.core" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
