@@ -202,5 +202,17 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4kV9Ob9XpO0">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="RealEqualsTestOp" />
+    <property role="34LRSv" value="real-equals" />
+    <property role="EcuMT" value="4988624180052598016" />
+    <ref role="1TJDcQ" node="ub9nkyHAbg" resolve="TestOp" />
+    <node concept="1TJgyi" id="4kV9Ob9YBYR" role="1TKVEl">
+      <property role="IQ2nx" value="4988624180052918199" />
+      <property role="TrG5h" value="decimals" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

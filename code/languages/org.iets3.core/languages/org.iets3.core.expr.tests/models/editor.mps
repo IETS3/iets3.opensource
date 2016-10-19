@@ -490,7 +490,7 @@
                     <node concept="3clFbS" id="6HHp2Wn5XE9" role="3clFbx">
                       <node concept="3cpWs6" id="6HHp2Wn5XEa" role="3cqZAp">
                         <node concept="Xl_RD" id="6HHp2Wn5XEb" role="3cqZAk">
-                          <property role="Xl_RC" value="" />
+                          <property role="Xl_RC" value="&lt;no result found&gt;" />
                         </node>
                       </node>
                     </node>
@@ -568,6 +568,15 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="9aQIb" id="4kV9Ob9Uudh" role="9aQIa">
+                            <node concept="3clFbS" id="4kV9Ob9Uudi" role="9aQI4">
+                              <node concept="3cpWs6" id="4kV9Ob9UuC$" role="3cqZAp">
+                                <node concept="Xl_RD" id="4kV9Ob9UvnC" role="3cqZAk">
+                                  <property role="Xl_RC" value="&lt;result.actual is null&gt;" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -580,12 +589,13 @@
                       <ref role="3uigEE" to="wyt6:~ClassCastException" resolve="ClassCastException" />
                     </node>
                   </node>
-                  <node concept="3clFbS" id="52ceVyxpH96" role="TDEfX" />
-                </node>
-              </node>
-              <node concept="3cpWs6" id="6ovbtsiWXPm" role="3cqZAp">
-                <node concept="Xl_RD" id="6ovbtsiWXPo" role="3cqZAk">
-                  <property role="Xl_RC" value="actual: null" />
+                  <node concept="3clFbS" id="52ceVyxpH96" role="TDEfX">
+                    <node concept="3cpWs6" id="6ovbtsiWXPm" role="3cqZAp">
+                      <node concept="Xl_RD" id="6ovbtsiWXPo" role="3cqZAk">
+                        <property role="Xl_RC" value="&lt;class cast exception&gt;" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -974,6 +984,29 @@
         </node>
       </node>
       <node concept="2iRfu4" id="6HHp2WneCWb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4kV9Ob9YBZl">
+    <property role="3GE5qa" value="" />
+    <ref role="1XX52x" to="av4b:4kV9Ob9XpO0" resolve="RealEqualsTestOp" />
+    <node concept="3EZMnI" id="4kV9Ob9YBZq" role="2wV5jI">
+      <node concept="2iRfu4" id="4kV9Ob9YBZr" role="2iSdaV" />
+      <node concept="3F0ifn" id="4kV9Ob9YBZn" role="3EZMnx">
+        <property role="3F0ifm" value="real-equals[" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11LMrY" id="4kV9Ob9ZbTt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4kV9Ob9YBZz" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:4kV9Ob9YBYR" resolve="decimals" />
+      </node>
+      <node concept="3F0ifn" id="4kV9Ob9ZbT$" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="4kV9Ob9ZbVM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

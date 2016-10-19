@@ -78,6 +78,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="4988624180052598016" name="org.iets3.core.expr.tests.structure.RealEqualsTestOp" flags="ng" index="2cNFD2">
+        <property id="4988624180052918199" name="decimals" index="2cKlzP" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -133,6 +136,13 @@
           <node concept="30bXRB" id="6HHp2WmR4ne" role="2zPyp_">
             <property role="30bXRw" value="10" />
           </node>
+        </node>
+        <node concept="2zPypq" id="4kV9Oba0XHb" role="_iOnB">
+          <property role="TrG5h" value="aReal" />
+          <node concept="30bXRB" id="4kV9Oba0XHc" role="2zPyp_">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="30bXLL" id="4kV9Oba0XR8" role="2zM23F" />
         </node>
         <node concept="2zPypq" id="7UpNQq_89W_" role="_iOnB">
           <property role="TrG5h" value="b" />
@@ -367,7 +377,6 @@
         <node concept="_fkuM" id="7UpNQq_ebz2" role="_iOnB">
           <property role="TrG5h" value="DoubleArith" />
           <node concept="_fkuZ" id="7UpNQq_eb$e" role="_fkp5">
-            <node concept="_fku$" id="7UpNQq_eb$f" role="_fkur" />
             <node concept="30dDTi" id="7UpNQq_eb$g" role="_fkuY">
               <node concept="30bXRB" id="7UpNQq_eb$h" role="30dEs_">
                 <property role="30bXRw" value="2" />
@@ -378,6 +387,9 @@
             </node>
             <node concept="30bXRB" id="7UpNQq_eb$j" role="_fkuS">
               <property role="30bXRw" value="6.283054" />
+            </node>
+            <node concept="2cNFD2" id="4kV9Ob9ZWz8" role="_fkur">
+              <property role="2cKlzP" value="5" />
             </node>
           </node>
           <node concept="_fkuZ" id="7UpNQq_f4tB" role="_fkp5">
@@ -419,6 +431,20 @@
               </node>
             </node>
             <node concept="30bXRB" id="7UpNQq__e$X" role="_fkuS">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="4kV9Oba1pXw" role="_fkp5">
+            <node concept="_fku$" id="4kV9Oba1pXx" role="_fkur" />
+            <node concept="30dvO6" id="4kV9Oba1pXy" role="_fkuY">
+              <node concept="_emDc" id="4kV9Oba1pXz" role="30dEs_">
+                <ref role="_emDf" node="7UpNQq_89W_" resolve="b" />
+              </node>
+              <node concept="_emDc" id="4kV9Oba1pYF" role="30dEsF">
+                <ref role="_emDf" node="4kV9Oba0XHb" resolve="aReal" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="4kV9Oba1pX_" role="_fkuS">
               <property role="30bXRw" value="0.5" />
             </node>
           </node>
