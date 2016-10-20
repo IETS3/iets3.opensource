@@ -454,7 +454,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumType" />
     <property role="EcuMT" value="7061117989422575803" />
-    <ref role="1TJDcQ" node="66pf9vFaGCT" resolve="AbstractEnumType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
