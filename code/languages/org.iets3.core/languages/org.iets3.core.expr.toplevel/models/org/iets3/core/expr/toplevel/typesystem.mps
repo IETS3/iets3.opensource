@@ -134,6 +134,10 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
+        <child id="1175147624276" name="body" index="2sgrp5" />
+      </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -1562,6 +1566,23 @@
     <node concept="1YaCAy" id="15mJ3JeQCjd" role="1YuTPh">
       <property role="TrG5h" value="c" />
       <ref role="1YaFvo" to="yv47:15mJ3JeHQzr" resolve="RecordChangeTarget" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="66pf9vFaGCU">
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="supertypeof_EnumType" />
+    <node concept="3clFbS" id="66pf9vFaGCV" role="2sgrp5">
+      <node concept="3clFbF" id="66pf9vFaGFg" role="3cqZAp">
+        <node concept="2pJPEk" id="66pf9vFaGFe" role="3clFbG">
+          <node concept="2pJPED" id="66pf9vFaGHf" role="2pJPEn">
+            <ref role="2pJxaS" to="yv47:66pf9vFaGCT" resolve="AbstractEnumType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="66pf9vFaGEP" role="1YuTPh">
+      <property role="TrG5h" value="enumType" />
+      <ref role="1YaFvo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
     </node>
   </node>
 </model>
