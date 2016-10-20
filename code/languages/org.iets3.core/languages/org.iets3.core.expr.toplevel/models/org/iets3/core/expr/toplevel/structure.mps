@@ -449,6 +449,9 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="78hTg1yOYGo" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />

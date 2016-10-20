@@ -6,6 +6,18 @@
   </languages>
   <imports />
   <registry>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="ng" index="2x4n5u">
+        <property id="6911370362349122519" name="conceptName" index="2x4mPI" />
+        <property id="6911370362349121516" name="conceptId" index="2x4n5l" />
+        <property id="6911370362349133804" name="isInterface" index="2x4o5l" />
+        <child id="6911370362349121514" name="languageIdentity" index="2x4n5j" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -17,7 +29,10 @@
     <language id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration">
       <concept id="3116305438947623353" name="jetbrains.mps.lang.migration.structure.MoveProperty" flags="ng" index="7a1rK" />
       <concept id="3116305438947623354" name="jetbrains.mps.lang.migration.structure.MoveContainmentLink" flags="ng" index="7a1rN" />
-      <concept id="3116305438947623350" name="jetbrains.mps.lang.migration.structure.MoveConcept" flags="ng" index="7a1rZ" />
+      <concept id="3116305438947623350" name="jetbrains.mps.lang.migration.structure.MoveConcept" flags="ng" index="7a1rZ">
+        <child id="8415841354030700269" name="targetId" index="HKsnM" />
+        <child id="8415841354030700266" name="sourceId" index="HKsnP" />
+      </concept>
       <concept id="3116305438947553624" name="jetbrains.mps.lang.migration.structure.RefactoringPart" flags="ng" index="7amoh">
         <property id="3628660716136424362" name="participant" index="hSBgo" />
         <child id="3628660716136424366" name="finalState" index="hSBgs" />
@@ -271,6 +286,196 @@
         <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
         <property role="2pBc3U" value="parameterValues" />
       </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="78hTg1yRkZM">
+    <property role="Z5qvQ" value="3" />
+    <property role="TrG5h" value="MigrationScript_3" />
+    <node concept="Z4OXk" id="78hTg1yRkZW" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRkZU" role="Z5P1v">
+        <property role="2pBcoG" value="1970998948979368454" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="AttributeValue_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRkZV" role="Z5P1t">
+        <property role="2pBcoG" value="1970998948979368454" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="AttributeValue" />
+      </node>
+      <node concept="7a1rZ" id="78hTg1yRkZT" role="7agGg">
+        <node concept="2x4n5u" id="78hTg1yRkZP" role="HKsnP">
+          <property role="2x4mPI" value="AttributeValue" />
+          <property role="2x4o5l" value="false" />
+          <property role="2x4n5l" value="ez38td2xint2" />
+          <node concept="2V$Bhx" id="78hTg1yRkZQ" role="2x4n5j">
+            <property role="2V$B1T" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
+            <property role="2V$B1Q" value="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="2x4n5u" id="78hTg1yRkZR" role="HKsnM">
+          <property role="2x4mPI" value="AttributeValue" />
+          <property role="2x4o5l" value="false" />
+          <property role="2x4n5l" value="ez38td2xint2" />
+          <node concept="2V$Bhx" id="78hTg1yRkZS" role="2x4n5j">
+            <property role="2V$B1T" value="583939be-ded0-4735-a055-a74f8477fc34" />
+            <property role="2V$B1Q" value="org.iets3.core.attributes" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl07" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl05" role="Z5P1v">
+        <property role="2pBcoG" value="4388710048722004155" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="IAttribute_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl06" role="Z5P1t">
+        <property role="2pBcoG" value="4388710048722004155" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="IAttribute" />
+      </node>
+      <node concept="7a1rZ" id="78hTg1yRl04" role="7agGg">
+        <node concept="2x4n5u" id="78hTg1yRl00" role="HKsnP">
+          <property role="2x4mPI" value="IAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="xcczvf69jmbf" />
+          <node concept="2V$Bhx" id="78hTg1yRl01" role="2x4n5j">
+            <property role="2V$B1T" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
+            <property role="2V$B1Q" value="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="2x4n5u" id="78hTg1yRl02" role="HKsnM">
+          <property role="2x4mPI" value="IAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="xcczvf69jmbf" />
+          <node concept="2V$Bhx" id="78hTg1yRl03" role="2x4n5j">
+            <property role="2V$B1T" value="583939be-ded0-4735-a055-a74f8477fc34" />
+            <property role="2V$B1Q" value="org.iets3.core.attributes" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl0i" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl0g" role="Z5P1v">
+        <property role="2pBcoG" value="4388710048722005709" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="IAttributed_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl0h" role="Z5P1t">
+        <property role="2pBcoG" value="4388710048722005709" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="IAttributed" />
+      </node>
+      <node concept="7a1rZ" id="78hTg1yRl0f" role="7agGg">
+        <node concept="2x4n5u" id="78hTg1yRl0b" role="HKsnP">
+          <property role="2x4mPI" value="IAttributed" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="xcczvf69jnil" />
+          <node concept="2V$Bhx" id="78hTg1yRl0c" role="2x4n5j">
+            <property role="2V$B1T" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
+            <property role="2V$B1Q" value="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="2x4n5u" id="78hTg1yRl0d" role="HKsnM">
+          <property role="2x4mPI" value="IAttributed" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="xcczvf69jnil" />
+          <node concept="2V$Bhx" id="78hTg1yRl0e" role="2x4n5j">
+            <property role="2V$B1T" value="583939be-ded0-4735-a055-a74f8477fc34" />
+            <property role="2V$B1Q" value="org.iets3.core.attributes" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl0t" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl0r" role="Z5P1v">
+        <property role="2pBcoG" value="1970998948978011476" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="IComputedValueAttribute_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl0s" role="Z5P1t">
+        <property role="2pBcoG" value="1970998948978011476" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="IComputedValueAttribute" />
+      </node>
+      <node concept="7a1rZ" id="78hTg1yRl0q" role="7agGg">
+        <node concept="2x4n5u" id="78hTg1yRl0m" role="HKsnP">
+          <property role="2x4mPI" value="IComputedValueAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="ez38td2wpkr8" />
+          <node concept="2V$Bhx" id="78hTg1yRl0n" role="2x4n5j">
+            <property role="2V$B1T" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
+            <property role="2V$B1Q" value="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="2x4n5u" id="78hTg1yRl0o" role="HKsnM">
+          <property role="2x4mPI" value="IComputedValueAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="ez38td2wpkr8" />
+          <node concept="2V$Bhx" id="78hTg1yRl0p" role="2x4n5j">
+            <property role="2V$B1T" value="583939be-ded0-4735-a055-a74f8477fc34" />
+            <property role="2V$B1Q" value="org.iets3.core.attributes" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl0C" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl0A" role="Z5P1v">
+        <property role="2pBcoG" value="1970998948978453245" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="IValueAttribute_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl0B" role="Z5P1t">
+        <property role="2pBcoG" value="1970998948978453245" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="IValueAttribute" />
+      </node>
+      <node concept="7a1rZ" id="78hTg1yRl0_" role="7agGg">
+        <node concept="2x4n5u" id="78hTg1yRl0x" role="HKsnP">
+          <property role="2x4mPI" value="IValueAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="ez38td2wz1ml" />
+          <node concept="2V$Bhx" id="78hTg1yRl0y" role="2x4n5j">
+            <property role="2V$B1T" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
+            <property role="2V$B1Q" value="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="2x4n5u" id="78hTg1yRl0z" role="HKsnM">
+          <property role="2x4mPI" value="IValueAttribute" />
+          <property role="2x4o5l" value="true" />
+          <property role="2x4n5l" value="ez38td2wz1ml" />
+          <node concept="2V$Bhx" id="78hTg1yRl0$" role="2x4n5j">
+            <property role="2V$B1T" value="583939be-ded0-4735-a055-a74f8477fc34" />
+            <property role="2V$B1Q" value="org.iets3.core.attributes" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl0H" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl0F" role="Z5P1v">
+        <property role="2pBcoG" value="4388710048722005710" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="attributes_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl0G" role="Z5P1t">
+        <property role="2pBcoG" value="4388710048722005710" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="attributes" />
+      </node>
+      <node concept="7a1rN" id="78hTg1yRl0E" role="7agGg" />
+    </node>
+    <node concept="Z4OXk" id="78hTg1yRl0M" role="Z5rET">
+      <node concept="2pBcaW" id="78hTg1yRl0K" role="Z5P1v">
+        <property role="2pBcoG" value="1970998948979996854" />
+        <property role="2pBcow" value="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+        <property role="2pBc3U" value="value_old" />
+      </node>
+      <node concept="2pBcaW" id="78hTg1yRl0L" role="Z5P1t">
+        <property role="2pBcoG" value="1970998948979996854" />
+        <property role="2pBcow" value="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+        <property role="2pBc3U" value="value" />
+      </node>
+      <node concept="7a1rN" id="78hTg1yRl0J" role="7agGg" />
     </node>
   </node>
 </model>

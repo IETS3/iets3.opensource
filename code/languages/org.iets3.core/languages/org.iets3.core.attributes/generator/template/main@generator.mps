@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e90f1815-2257-4e08-b5cd-2ae9592ec17c(org.iets3.components.core.generator.template.main@generator)">
+<model ref="r:684dd234-c374-47dc-be2c-2f785cb027c9(org.iets3.core.attributes.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="4" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes" version="-1" />
+    <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />
   <registry>
@@ -18,7 +16,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="6LfBX8Yi4m_">
+  <node concept="bUwia" id="78hTg1yRkTH">
     <property role="TrG5h" value="main" />
   </node>
 </model>

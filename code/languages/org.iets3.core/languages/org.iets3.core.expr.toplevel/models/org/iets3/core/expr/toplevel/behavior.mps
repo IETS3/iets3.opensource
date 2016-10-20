@@ -1635,6 +1635,24 @@
     <node concept="13hLZK" id="67Y8mp$Hxsn" role="13h7CW">
       <node concept="3clFbS" id="67Y8mp$Hxso" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="78hTg1yOYGs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="nodeThatMustNodeHaveASideEffect" />
+      <ref role="13i0hy" to="pbu6:3npF9QXr$4j" resolve="nodeThatMustNodeHaveASideEffect" />
+      <node concept="3Tm1VV" id="78hTg1yOYGt" role="1B3o_S" />
+      <node concept="3clFbS" id="78hTg1yOYGw" role="3clF47">
+        <node concept="3clFbF" id="78hTg1yOYSp" role="3cqZAp">
+          <node concept="2OqwBi" id="78hTg1yOZ0q" role="3clFbG">
+            <node concept="13iPFW" id="78hTg1yOYSo" role="2Oq$k0" />
+            <node concept="3TrEf2" id="78hTg1yOZb$" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:3Y6fbK15FM4" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="78hTg1yOYGx" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="67Y8mp$HxYp">
     <property role="3GE5qa" value="enum" />
