@@ -540,13 +540,5 @@
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="66pf9vFaGCT">
-    <property role="EcuMT" value="7032718916298918457" />
-    <property role="3GE5qa" value="enum" />
-    <property role="TrG5h" value="AbstractEnumType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-  </node>
 </model>
 

@@ -31,6 +31,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -70,6 +73,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -200,6 +206,9 @@
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -1572,12 +1581,32 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="supertypeof_EnumType" />
     <node concept="3clFbS" id="66pf9vFaGCV" role="2sgrp5">
-      <node concept="3clFbF" id="66pf9vFaGFg" role="3cqZAp">
-        <node concept="2pJPEk" id="66pf9vFaGFe" role="3clFbG">
-          <node concept="2pJPED" id="66pf9vFaGHf" role="2pJPEn">
-            <ref role="2pJxaS" to="yv47:66pf9vFaGCT" resolve="AbstractEnumType" />
+      <node concept="3clFbJ" id="78hTg1yNmET" role="3cqZAp">
+        <node concept="3clFbS" id="78hTg1yNmEV" role="3clFbx">
+          <node concept="3cpWs6" id="78hTg1yNnjm" role="3cqZAp">
+            <node concept="2ShNRf" id="78hTg1yNnjO" role="3cqZAk">
+              <node concept="3zrR0B" id="78hTg1yNopF" role="2ShVmc">
+                <node concept="3Tqbb2" id="78hTg1yNopH" role="3zrR0E">
+                  <ref role="ehGHo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
+        <node concept="3y3z36" id="78hTg1yNngQ" role="3clFbw">
+          <node concept="2OqwBi" id="78hTg1yNmMm" role="3uHU7B">
+            <node concept="1YBJjd" id="78hTg1yNmFv" role="2Oq$k0">
+              <ref role="1YBMHb" node="66pf9vFaGEP" resolve="enumType" />
+            </node>
+            <node concept="3TrEf2" id="78hTg1yNmSv" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
+            </node>
+          </node>
+          <node concept="10Nm6u" id="78hTg1yNneE" role="3uHU7w" />
+        </node>
+      </node>
+      <node concept="3clFbF" id="78hTg1yNoqU" role="3cqZAp">
+        <node concept="10Nm6u" id="78hTg1yNoqQ" role="3clFbG" />
       </node>
     </node>
     <node concept="1YaCAy" id="66pf9vFaGEP" role="1YuTPh">
