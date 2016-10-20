@@ -71,7 +71,7 @@
       <property role="20kJfa" value="effect" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7791618349055797023" />
-      <ref role="20lvS9" node="6KxoTHgSIr8" resolve="EffectTagOnFunctionType" />
+      <ref role="20lvS9" node="6KxoTHgSIr8" resolve="EffectTag" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUkws6">
@@ -217,6 +217,13 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4790956042240100950" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3npF9QX0lor" role="1TKVEi">
+      <property role="IQ2ns" value="3880322347437217307" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="effect" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6KxoTHgSIr8" resolve="EffectTag" />
     </node>
     <node concept="PrWs8" id="49WTic8eUku" role="PrDN$">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
@@ -414,7 +421,7 @@
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
   </node>
   <node concept="1TIwiD" id="6KxoTHgSIr8">
-    <property role="TrG5h" value="EffectTagOnFunctionType" />
+    <property role="TrG5h" value="EffectTag" />
     <property role="34LRSv" value="*" />
     <property role="EcuMT" value="7791618349055796936" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
