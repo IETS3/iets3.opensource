@@ -1,4 +1,56 @@
+apply plugin: 'maven-publish'
+
 task wrapper(type: Wrapper) {
     gradleVersion '3.1'
     distributionType 'all'
+}
+
+configurations {
+    mps
+    mpsArtifacts
+}
+
+dependencies {
+    mps 'com.jetbrains:mps:3.4'
+    mpsArtifacts 'com.mbeddr:allScripts:1.0-HEAD-SNAPSHOT'
+    mpsArtifacts 'com.mbeddr:platform:1.0-HEAD-SNAPSHOT'
+}
+
+ant.properties['iets3.github.core.home'] = projectDir
+ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/mps"
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/artifacts"
+}
+
+tasks['ant-clean-and-build'].configure {
+    dependsOn resolveMps
+    dependsOn resolveMpsArtifacts
+    doFirst {
+        ant.properties['mps.home'] = resolveMps.destinationDir
+        ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
+    }
+}
+
+repositories {
+    maven {
+        if(project.hasProperty('nexusUsername')) {
+            credentials {
+                username project.getProperty('nexusUsername')
+                password project.getProperty('nexusPassword')
+            }
+        }
+        url project.releaseRepository
+    }
 }
