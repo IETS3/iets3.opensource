@@ -1672,5 +1672,35 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="78hTg1zXhmM">
+    <property role="3GE5qa" value="typedef.valid" />
+    <ref role="1XX52x" to="yv47:78hTg1zXhmd" resolve="RangeIntType" />
+    <node concept="3EZMnI" id="78hTg1zXhmR" role="2wV5jI">
+      <node concept="l2Vlx" id="78hTg1zXhmS" role="2iSdaV" />
+      <node concept="3F0ifn" id="78hTg1zXhmO" role="3EZMnx">
+        <property role="3F0ifm" value="int[" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11LMrY" id="78hTg1zXhrT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="78hTg1zXhn8" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:78hTg1zXhme" resolve="lower" />
+      </node>
+      <node concept="3F0ifn" id="78hTg1zXhni" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+      </node>
+      <node concept="3F1sOY" id="78hTg1zXhno" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:78hTg1zXhmk" resolve="upper" />
+      </node>
+      <node concept="3F0ifn" id="78hTg1zXhn$" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11L4FC" id="78hTg1zXhpL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

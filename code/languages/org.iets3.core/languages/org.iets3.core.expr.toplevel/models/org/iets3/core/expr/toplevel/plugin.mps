@@ -15,6 +15,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
   </imports>
@@ -491,7 +493,7 @@
                 </node>
                 <node concept="3clFbF" id="15mJ3JeE5_4" role="3cqZAp">
                   <node concept="2YIFZM" id="15mJ3JeE5_5" role="3clFbG">
-                    <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="check" />
+                    <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="checkFatal" />
                     <ref role="1Pybhc" to="oq0c:252QIDylZdO" resolve="TypeConstraintHelper" />
                     <node concept="2OqwBi" id="15mJ3JeE68$" role="37wK5m">
                       <node concept="37vLTw" id="15mJ3JeE64g" role="2Oq$k0">
@@ -553,7 +555,7 @@
             </node>
             <node concept="3clFbF" id="15mJ3JeDKrx" role="3cqZAp">
               <node concept="2YIFZM" id="15mJ3JeDKry" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="check" />
+                <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="checkFatal" />
                 <ref role="1Pybhc" to="oq0c:252QIDylZdO" resolve="TypeConstraintHelper" />
                 <node concept="2OqwBi" id="15mJ3JeDKrz" role="37wK5m">
                   <node concept="oxGPV" id="15mJ3JeDKr$" role="2Oq$k0" />
@@ -647,7 +649,7 @@
             </node>
             <node concept="3clFbF" id="252QIDym2Xg" role="3cqZAp">
               <node concept="2YIFZM" id="252QIDym39n" role="3clFbG">
-                <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="check" />
+                <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="checkFatal" />
                 <ref role="1Pybhc" to="oq0c:252QIDylZdO" resolve="TypeConstraintHelper" />
                 <node concept="2OqwBi" id="252QIDym3en" role="37wK5m">
                   <node concept="oxGPV" id="252QIDym39z" role="2Oq$k0" />

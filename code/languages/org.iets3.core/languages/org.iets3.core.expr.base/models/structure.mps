@@ -8,6 +8,7 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1060,6 +1061,68 @@
   <node concept="PlHQZ" id="3npF9QXr$3G">
     <property role="EcuMT" value="3880322347444355308" />
     <property role="TrG5h" value="IDisallowSideEffect" />
+  </node>
+  <node concept="1TIwiD" id="78hTg1zmOGb">
+    <property role="EcuMT" value="8219602584757553931" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="CheckTypeConstraintsExpr" />
+    <property role="34LRSv" value="checkTypeConstraints" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="78hTg1zmOGc" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584757553932" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="78hTg1zmOGe" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584757553934" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1zmOHv">
+    <property role="EcuMT" value="8219602584757554015" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ValidityType" />
+    <property role="34LRSv" value="validity" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="78hTg1zpkG_">
+    <property role="EcuMT" value="8219602584758209317" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="OkTarget" />
+    <property role="34LRSv" value="ok" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="78hTg1zpkGA" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1zqzot">
+    <property role="EcuMT" value="8219602584758531613" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ErrorTarget" />
+    <property role="34LRSv" value="err" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="78hTg1zqzou" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1$943h">
+    <property role="EcuMT" value="8219602584770724049" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ImplicitValidityValExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="78hTg1$nXEV" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584774630075" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
 </model>
 

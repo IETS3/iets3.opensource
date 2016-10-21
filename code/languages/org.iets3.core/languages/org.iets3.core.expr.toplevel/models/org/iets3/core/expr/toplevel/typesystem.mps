@@ -11,6 +11,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
@@ -39,6 +40,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1612,6 +1616,72 @@
     <node concept="1YaCAy" id="66pf9vFaGEP" role="1YuTPh">
       <property role="TrG5h" value="enumType" />
       <ref role="1YaFvo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="78hTg1zXhsm">
+    <property role="TrG5h" value="typeof_RangeIntType" />
+    <property role="3GE5qa" value="typedef.valid" />
+    <node concept="3clFbS" id="78hTg1zXhsn" role="18ibNy">
+      <node concept="1Z5TYs" id="78hTg1zXhJ$" role="3cqZAp">
+        <node concept="mw_s8" id="78hTg1zXhJQ" role="1ZfhKB">
+          <node concept="2YIFZM" id="78hTg1zXhPo" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="78hTg1zXhJB" role="1ZfhK$">
+          <node concept="1Z2H0r" id="78hTg1zXhsw" role="mwGJk">
+            <node concept="2OqwBi" id="78hTg1zXhXL" role="1Z2MuG">
+              <node concept="1YBJjd" id="78hTg1zXhug" role="2Oq$k0">
+                <ref role="1YBMHb" node="78hTg1zXhsp" resolve="rit" />
+              </node>
+              <node concept="3TrEf2" id="78hTg1zXif6" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:78hTg1zXhme" resolve="lower" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="78hTg1zXhQ1" role="3cqZAp">
+        <node concept="mw_s8" id="78hTg1zXhQ2" role="1ZfhKB">
+          <node concept="2YIFZM" id="78hTg1zXhQ3" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="78hTg1zXhQ4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="78hTg1zXhQ5" role="mwGJk">
+            <node concept="2OqwBi" id="78hTg1zXioH" role="1Z2MuG">
+              <node concept="1YBJjd" id="78hTg1zXhQ6" role="2Oq$k0">
+                <ref role="1YBMHb" node="78hTg1zXhsp" resolve="rit" />
+              </node>
+              <node concept="3TrEf2" id="78hTg1zXi$8" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:78hTg1zXhmk" resolve="upper" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="78hTg1zXhsp" role="1YuTPh">
+      <property role="TrG5h" value="rit" />
+      <ref role="1YaFvo" to="yv47:78hTg1zXhmd" resolve="RangeIntType" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="78hTg1$nekK">
+    <property role="3GE5qa" value="typedef.valid" />
+    <property role="TrG5h" value="supertypeof_RangeIntType" />
+    <node concept="3clFbS" id="78hTg1$nekL" role="2sgrp5">
+      <node concept="3clFbF" id="78hTg1$nemk" role="3cqZAp">
+        <node concept="2YIFZM" id="78hTg1$nens" role="3clFbG">
+          <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
+          <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="78hTg1$nekN" role="1YuTPh">
+      <property role="TrG5h" value="rit" />
+      <ref role="1YaFvo" to="yv47:78hTg1zXhmd" resolve="RangeIntType" />
     </node>
   </node>
 </model>

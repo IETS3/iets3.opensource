@@ -543,5 +543,26 @@
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="78hTg1zXhmd">
+    <property role="EcuMT" value="8219602584767632781" />
+    <property role="3GE5qa" value="typedef.valid" />
+    <property role="TrG5h" value="RangeIntType" />
+    <property role="34LRSv" value="int[..]" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="78hTg1zXhme" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584767632782" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lower" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="78hTg1zXhmk" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584767632788" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
