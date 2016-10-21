@@ -4,21 +4,8 @@
 
 	<!-- validations -->
 	<property name="plugins.folder.name" value="plugins"/>
-	<fail unless="mps.home">mps.home must be set in your build.properties</fail>
-	<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
-	<fail unless="iets3.github.core.home">iets3.github.core.home must be set in your build.properties</fail>	
-	<fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
-		<condition>
-			<not>
-				<resourcecount count="1">
-					<dirset dir="${mps.home}" >
-						<include name="${plugins.folder.name}"/>
-					</dirset> 
-				</resourcecount>
-			</not>
-		</condition>
-	</fail>
-	
+	<fail unless="iets3.github.core.home">iets3.github.core.home must be set in your build.properties</fail>
+
 	<!-- misc properties -->
 	<property name="build.dir" value="${iets3.github.core.home}" />
 	<property name="artifacts.root" value="${build.dir}/artifacts" />
@@ -39,13 +26,27 @@
 	<property name="iets3.distro.script" value="${iets3.script.location}/distro.xml"/>
 
 	<property name="z3.script.location" value="${iets3.github.core.home}/build/z3.lib"/>	
-	<property name="z3.script" value="${z3.script.location}/build.xml"/>	
-	
+	<property name="z3.script" value="${z3.script.location}/build.xml"/>
 	
 	<!--targets -->
 	<target name="fetch-dependencies-and-clean-and-build">
 		<antcall target="fetch-dependencies" />
 		<antcall target="clean-and-build" />
+	</target>
+
+	<target name="check-mps-home">
+		<fail unless="mps.home">mps.home must be set in your build.properties</fail>
+		<fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
+			<condition>
+				<not>
+					<resourcecount count="1">
+						<dirset dir="${mps.home}" >
+							<include name="${plugins.folder.name}"/>
+						</dirset>
+					</resourcecount>
+				</not>
+			</condition>
+		</fail>
 	</target>
 
 	<target name="clean-and-build" >
@@ -62,27 +63,28 @@
 		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${clean-plugins.task}" />
 	</target>
 	
-	<target name="build-allScripts" >
+	<target name="build-allScripts" depends="check-mps-home">
 		<ant antfile="${iets3.build-all-scripts.script}" dir="${iets3.build-all-scripts.location}" target="${clean-plugins.task}" />
 		<ant antfile="${iets3.build-all-scripts.script}" dir="${iets3.build-all-scripts.location}" target="${generate-code.task}" />
 		<ant antfile="${iets3.build-all-scripts.script}" dir="${iets3.build-all-scripts.location}" target="${build-plugin.task}" />
 	</target>
 	
-	<target name="build-z3" >
+	<target name="build-z3" depends="check-mps-home">
 		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${generate-code.task}" />
 		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${build-plugin.task}" />
 	</target>
 	
-	<target name="build-iets3-core">
+	<target name="build-iets3-core" depends="check-mps-home">
 		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${generate-code.task}" />
 		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
 	</target>
 	
-	<target name="assemble">
+	<target name="assemble" depends="check-mps-home">
 		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
 	</target>
 
 	<target name="fetch-dependencies">
+		<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
         <copy todir="${artifacts.root}" verbose="false">
             <fileset dir="${mbeddr.github.core.home}/artifacts/" />
         </copy>
