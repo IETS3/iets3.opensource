@@ -9,8 +9,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -83,7 +83,7 @@
       <property role="20kJfa" value="items" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="543569365052056368" />
-      <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
+      <ref role="20lvS9" node="78hTg1$THIw" resolve="AbstractTestItem" />
     </node>
     <node concept="PrWs8" id="ub9nkyHAb8" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -91,10 +91,10 @@
   </node>
   <node concept="1TIwiD" id="ub9nkyHAba">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="TestItem" />
+    <property role="TrG5h" value="AssertTestItem" />
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="543569365052056266" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyj" id="ub9nkyHAbb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actual" />
@@ -115,15 +115,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="543569365052056302" />
       <ref role="20lvS9" node="ub9nkyHAbg" resolve="TestOp" />
-    </node>
-    <node concept="PrWs8" id="ub9nkyPQAV" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
-    </node>
-    <node concept="PrWs8" id="6HHp2WmRw6m" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
-    </node>
-    <node concept="PrWs8" id="252QIDyrGrE" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyK62f">
@@ -185,7 +176,7 @@
       <property role="20kJfa" value="item" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7740953487929753441" />
-      <ref role="20lvS9" node="ub9nkyHAba" resolve="TestItem" />
+      <ref role="20lvS9" node="ub9nkyHAba" resolve="AssertTestItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WneCKI">
@@ -197,6 +188,35 @@
       <property role="TrG5h" value="label" />
       <property role="IQ2nx" value="7740953487935704120" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1$THIv">
+    <property role="EcuMT" value="8219602584783477663" />
+    <property role="TrG5h" value="ConstraintFailedTestItem" />
+    <property role="34LRSv" value="constraint failure" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyj" id="78hTg1$TLJd" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584783494093" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actual" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1$THIw">
+    <property role="EcuMT" value="8219602584783477664" />
+    <property role="TrG5h" value="AbstractTestItem" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="78hTg1$THIx" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
+    </node>
+    <node concept="PrWs8" id="78hTg1$THIy" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
+    </node>
+    <node concept="PrWs8" id="78hTg1$THIz" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
   </node>
 </model>
