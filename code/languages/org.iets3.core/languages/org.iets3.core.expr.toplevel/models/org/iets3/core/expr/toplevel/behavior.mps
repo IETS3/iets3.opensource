@@ -1148,8 +1148,21 @@
                               <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
                             </node>
                           </node>
-                          <node concept="Xl_RD" id="78hTg1$t0ay" role="3uHU7B">
-                            <property role="Xl_RC" value="typedef constraint violated: " />
+                          <node concept="3cpWs3" id="78hTg1$OkvE" role="3uHU7B">
+                            <node concept="Xl_RD" id="78hTg1$OkvH" role="3uHU7w">
+                              <property role="Xl_RC" value=": " />
+                            </node>
+                            <node concept="3cpWs3" id="78hTg1$OiS3" role="3uHU7B">
+                              <node concept="Xl_RD" id="78hTg1$t0ay" role="3uHU7B">
+                                <property role="Xl_RC" value="constraint violated for type " />
+                              </node>
+                              <node concept="2OqwBi" id="78hTg1$Oja3" role="3uHU7w">
+                                <node concept="13iPFW" id="78hTg1$OiSe" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="78hTg1$OjHr" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
