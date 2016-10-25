@@ -1166,7 +1166,7 @@
                 <node concept="2OqwBi" id="3KzlhPzQXIA" role="2Oq$k0">
                   <node concept="pncrf" id="3KzlhPzQXIB" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3KzlhPzQXWC" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:UN2ftLUxmO" />
+                    <ref role="3Tt5mk" to="hm2y:UN2ftLUxmO" resolve="someQuery" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="3KzlhPzQYlY" role="2OqNvi">
@@ -2338,6 +2338,87 @@
   </node>
   <node concept="3p36aQ" id="cEt5uj8NAf">
     <ref role="aqKnT" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+  </node>
+  <node concept="24kQdi" id="78hTg1zmOGG">
+    <property role="3GE5qa" value="validity" />
+    <ref role="1XX52x" to="hm2y:78hTg1zmOGb" resolve="CheckTypeConstraintsExpr" />
+    <node concept="3EZMnI" id="78hTg1zmOGL" role="2wV5jI">
+      <node concept="2iRfu4" id="78hTg1zmOGM" role="2iSdaV" />
+      <node concept="3F0ifn" id="78hTg1zmOGI" role="3EZMnx">
+        <property role="3F0ifm" value="checkTypeConstraints" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11LMrY" id="78hTg1zojsk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="78hTg1$_Ekp" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="78hTg1$_Eog" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="78hTg1$_Erw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="78hTg1zmOHc" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:78hTg1zmOGe" resolve="tp" />
+      </node>
+      <node concept="3F0ifn" id="78hTg1$_EkX" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="78hTg1$_EuI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="78hTg1$_ExY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="78hTg1$_Eyj" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="78hTg1$_E_F" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="78hTg1$_ECU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="78hTg1zmOGU" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:78hTg1zmOGc" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="78hTg1zmOHo" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="78hTg1zojus" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="78hTg1zmOHV">
+    <property role="3GE5qa" value="validity" />
+    <ref role="1XX52x" to="hm2y:78hTg1zmOHv" resolve="ValidityType" />
+    <node concept="3F0ifn" id="78hTg1zmOHX" role="2wV5jI">
+      <property role="3F0ifm" value="validity" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="78hTg1zpkH3">
+    <property role="3GE5qa" value="validity" />
+    <ref role="1XX52x" to="hm2y:78hTg1zpkG_" resolve="OkTarget" />
+    <node concept="3F0ifn" id="78hTg1zpkH5" role="2wV5jI">
+      <property role="3F0ifm" value="ok" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="78hTg1zqzoU">
+    <property role="3GE5qa" value="validity" />
+    <ref role="1XX52x" to="hm2y:78hTg1zqzot" resolve="ErrorTarget" />
+    <node concept="3F0ifn" id="78hTg1zqzoW" role="2wV5jI">
+      <property role="3F0ifm" value="err" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="78hTg1$943H">
+    <property role="3GE5qa" value="validity" />
+    <ref role="1XX52x" to="hm2y:78hTg1$943h" resolve="ImplicitValidityValExpr" />
+    <node concept="3F0ifn" id="78hTg1$943J" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
+    </node>
   </node>
 </model>
 

@@ -8,6 +8,7 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -142,7 +143,7 @@
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
     <node concept="PrWs8" id="3NBP8_OgMVm" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="PrWs8" id="7Atos1y6Hyx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
@@ -279,7 +280,7 @@
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
     </node>
     <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -347,7 +348,7 @@
     <property role="TrG5h" value="IPortType" />
     <property role="EcuMT" value="7804632404594156401" />
     <node concept="PrWs8" id="4A8SzOV9V0X" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWq">
@@ -432,7 +433,7 @@
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>
     <node concept="PrWs8" id="4A8SzOV9V1o" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="PrWs8" id="cJpacq6wvp" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
@@ -475,9 +476,12 @@
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMyV">
-    <property role="TrG5h" value="IAttribute" />
+    <property role="TrG5h" value="IAttribute_old" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="4388710048722004155" />
+    <node concept="asaX9" id="78hTg1yRkZX" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.attributes&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMNk">
     <property role="3GE5qa" value="attributes.specific" />
@@ -545,14 +549,20 @@
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMVd">
     <property role="3GE5qa" value="attributes" />
-    <property role="TrG5h" value="IAttributed" />
+    <property role="TrG5h" value="IAttributed_old" />
     <property role="EcuMT" value="4388710048722005709" />
     <node concept="1TJgyj" id="3NBP8_OgMVe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="attributes" />
+      <property role="20kJfa" value="attributes_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4388710048722005710" />
-      <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute" />
+      <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute_old" />
+      <node concept="asaX9" id="78hTg1yRl0D" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.attributes.structure.IAttributed&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="78hTg1yRl08" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.attributes&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OhYPL">
@@ -803,7 +813,7 @@
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
     <node concept="PrWs8" id="mIQkxg5ZSC" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="PrWs8" id="7Atos1yb6hI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
@@ -914,38 +924,51 @@
     <property role="TrG5h" value="IConceptSpecificAttribute" />
     <property role="EcuMT" value="2245119349897983481" />
     <node concept="PrWs8" id="1WCh2th1Bo3" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+      <ref role="PrY4T" to="138:3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="1HqphBIwaPk">
     <property role="3GE5qa" value="attributes" />
-    <property role="TrG5h" value="IComputedValueAttribute" />
+    <property role="TrG5h" value="IComputedValueAttribute_old" />
     <property role="EcuMT" value="1970998948978011476" />
     <node concept="PrWs8" id="1HqphBIxQHb" role="PrDN$">
-      <ref role="PrY4T" node="1HqphBIxQFX" resolve="IValueAttribute" />
+      <ref role="PrY4T" to="138:1HqphBIxQFX" resolve="IValueAttribute" />
+    </node>
+    <node concept="asaX9" id="78hTg1yRl0j" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.attributes&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="1HqphBIxQFX">
     <property role="3GE5qa" value="attributes" />
-    <property role="TrG5h" value="IValueAttribute" />
+    <property role="TrG5h" value="IValueAttribute_old" />
     <property role="EcuMT" value="1970998948978453245" />
     <node concept="1TJgyj" id="1HqphBIBJyQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
+      <property role="20kJfa" value="value_old" />
       <property role="IQ2ns" value="1970998948979996854" />
-      <ref role="20lvS9" node="1HqphBI_m86" resolve="AttributeValue" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1HqphBI_m86" resolve="AttributeValue_old" />
+      <node concept="asaX9" id="78hTg1yRl0I" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.attributes.structure.IValueAttribute&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="1HqphBIxQGh" role="PrDN$">
-      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+      <ref role="PrY4T" to="138:3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+    <node concept="asaX9" id="78hTg1yRl0u" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.attributes&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HqphBI_m86">
-    <property role="TrG5h" value="AttributeValue" />
+    <property role="TrG5h" value="AttributeValue_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="attributes" />
     <property role="EcuMT" value="1970998948979368454" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="78hTg1yRkZN" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.attributes&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="9D0IlqBDp0">
     <property role="TrG5h" value="ComponentRefExpr" />
@@ -1116,7 +1139,7 @@
       <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
     </node>
     <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
-      <ref role="PrY4T" node="3NBP8_OgMVd" resolve="IAttributed" />
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
     <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />

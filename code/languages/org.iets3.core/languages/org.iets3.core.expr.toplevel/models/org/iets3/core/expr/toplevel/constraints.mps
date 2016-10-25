@@ -114,6 +114,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
@@ -235,19 +238,26 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="2uR5X5azTXq" role="33vP2m">
-                <node concept="2OqwBi" id="2uR5X5azTXr" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2uR5X5azTXs" role="2Oq$k0">
-                    <node concept="21POm0" id="2uR5X5azTXt" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="2uR5X5azTXu" role="2OqNvi">
-                      <node concept="1xMEDy" id="2uR5X5azTXv" role="1xVPHs">
-                        <node concept="chp4Y" id="2uR5X5azTXw" role="ri$Ld">
-                          <ref role="cht4Q" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
+                <node concept="2OqwBi" id="78hTg1$3uDn" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2uR5X5azTXr" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2uR5X5azTXs" role="2Oq$k0">
+                      <node concept="21POm0" id="2uR5X5azTXt" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="2uR5X5azTXu" role="2OqNvi">
+                        <node concept="1xMEDy" id="2uR5X5azTXv" role="1xVPHs">
+                          <node concept="chp4Y" id="2uR5X5azTXw" role="ri$Ld">
+                            <ref role="cht4Q" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
+                          </node>
                         </node>
                       </node>
                     </node>
+                    <node concept="2qgKlT" id="2uR5X5azTXx" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:2uR5X5ayxoJ" resolve="visibleFunctions" />
+                    </node>
                   </node>
-                  <node concept="2qgKlT" id="2uR5X5azTXx" role="2OqNvi">
-                    <ref role="37wK5l" to="nu60:2uR5X5ayxoJ" resolve="visibleFunctions" />
+                  <node concept="v3k3i" id="78hTg1$3v8p" role="2OqNvi">
+                    <node concept="chp4Y" id="78hTg1$3vqb" role="v3oSu">
+                      <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3zZkjj" id="2uR5X5azTXy" role="2OqNvi">

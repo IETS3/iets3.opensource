@@ -65,6 +65,9 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7425695345928347719" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3npF9QWRJdc" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="PrWs8" id="sflsE7bRNl" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
@@ -293,6 +296,9 @@
     </node>
     <node concept="PrWs8" id="6KxoTHgUYYJ" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="3npF9QXsos_" role="PzmwI">
+      <ref role="PrY4T" node="3npF9QXr$3G" resolve="IDisallowSideEffect" />
     </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
@@ -1050,6 +1056,72 @@
   <node concept="PlHQZ" id="sflsE7bZ0S">
     <property role="TrG5h" value="IBlockLike" />
     <property role="EcuMT" value="508719611255975992" />
+  </node>
+  <node concept="PlHQZ" id="3npF9QXr$3G">
+    <property role="EcuMT" value="3880322347444355308" />
+    <property role="TrG5h" value="IDisallowSideEffect" />
+  </node>
+  <node concept="1TIwiD" id="78hTg1zmOGb">
+    <property role="EcuMT" value="8219602584757553931" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="CheckTypeConstraintsExpr" />
+    <property role="34LRSv" value="checkTypeConstraints" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="78hTg1zmOGc" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584757553932" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="78hTg1zmOGe" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584757553934" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1zmOHv">
+    <property role="EcuMT" value="8219602584757554015" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ValidityType" />
+    <property role="34LRSv" value="validity" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="78hTg1zpkG_">
+    <property role="EcuMT" value="8219602584758209317" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="OkTarget" />
+    <property role="34LRSv" value="ok" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="78hTg1zpkGA" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1zqzot">
+    <property role="EcuMT" value="8219602584758531613" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ErrorTarget" />
+    <property role="34LRSv" value="err" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="78hTg1zqzou" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78hTg1$943h">
+    <property role="EcuMT" value="8219602584770724049" />
+    <property role="3GE5qa" value="validity" />
+    <property role="TrG5h" value="ImplicitValidityValExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="78hTg1$nXEV" role="1TKVEi">
+      <property role="IQ2ns" value="8219602584774630075" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
 </model>
 
