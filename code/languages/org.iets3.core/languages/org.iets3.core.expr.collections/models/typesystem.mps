@@ -43,6 +43,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -351,6 +352,7 @@
           <node concept="2YIFZM" id="2Qbt$1tU7Q5" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="3p6$WoECyJx" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -457,6 +459,7 @@
           <node concept="2YIFZM" id="2Qbt$1tU7Da" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="3p6$WoECy6t" role="37wK5m" />
           </node>
         </node>
         <node concept="mw_s8" id="6zmBjqUjlkL" role="1ZfhK$">
@@ -1351,6 +1354,7 @@
                   <node concept="2YIFZM" id="2Qbt$1tU7MH" role="mwGJk">
                     <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
                     <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="10Nm6u" id="3p6$WoECy$r" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1823,7 +1827,7 @@
                     <node concept="2pJPED" id="4Q4DxjDmbZC" role="2pJPEn">
                       <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
                       <node concept="2pIpSj" id="4Q4DxjDmbZV" role="2pJxcM">
-                        <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                        <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                         <node concept="2pJPED" id="4Q4DxjDmc0j" role="2pJxcZ">
                           <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
                         </node>
@@ -1905,7 +1909,7 @@
                     <node concept="2pJPED" id="14Aq$7qBg$C" role="2pJPEn">
                       <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
                       <node concept="2pIpSj" id="14Aq$7qBg$D" role="2pJxcM">
-                        <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                        <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                         <node concept="2pJPED" id="14Aq$7qBg$E" role="2pJxcZ">
                           <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
                         </node>
@@ -1974,6 +1978,7 @@
           <node concept="2YIFZM" id="2Qbt$1tU7OV" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="3p6$WoECyFq" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -2004,6 +2009,7 @@
           <node concept="2YIFZM" id="2Qbt$1tU7Sj" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="3p6$WoECyQw" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -2027,7 +2033,7 @@
                     <node concept="2pJPED" id="14Aq$7qA_RP" role="2pJPEn">
                       <ref role="2pJxaS" to="700h:6zmBjqUily5" resolve="CollectionType" />
                       <node concept="2pIpSj" id="14Aq$7qA_RQ" role="2pJxcM">
-                        <ref role="2pIpSl" to="700h:6zmBjqUily6" />
+                        <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                         <node concept="2pJPED" id="14Aq$7qA_RR" role="2pJxcZ">
                           <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
                         </node>

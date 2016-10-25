@@ -63,6 +63,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -90,24 +93,31 @@
   <node concept="1M2fIO" id="6HHp2WmRVYB">
     <ref role="1M2myG" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
     <node concept="1N5Pfh" id="6HHp2WmRVYF" role="1Mr941">
-      <ref role="1N5Vy1" to="av4b:6HHp2WmRVXx" />
+      <ref role="1N5Vy1" to="av4b:6HHp2WmRVXx" resolve="item" />
       <node concept="1MUpDS" id="6HHp2WmRVYH" role="1N6uqs">
         <node concept="3clFbS" id="6HHp2WmRVYI" role="2VODD2">
           <node concept="3clFbF" id="6HHp2WmRVZn" role="3cqZAp">
             <node concept="2OqwBi" id="6HHp2WmRXpf" role="3clFbG">
-              <node concept="2OqwBi" id="6HHp2WmRWbJ" role="2Oq$k0">
-                <node concept="2OqwBi" id="6HHp2WmRW1G" role="2Oq$k0">
-                  <node concept="21POm0" id="6HHp2WmRVZm" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="6HHp2WmRW4b" role="2OqNvi">
-                    <node concept="1xMEDy" id="6HHp2WmRW4d" role="1xVPHs">
-                      <node concept="chp4Y" id="6HHp2WmRW5y" role="ri$Ld">
-                        <ref role="cht4Q" to="av4b:ub9nkyHAb7" resolve="TestCase" />
+              <node concept="2OqwBi" id="78hTg1$XO5C" role="2Oq$k0">
+                <node concept="2OqwBi" id="6HHp2WmRWbJ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6HHp2WmRW1G" role="2Oq$k0">
+                    <node concept="21POm0" id="6HHp2WmRVZm" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6HHp2WmRW4b" role="2OqNvi">
+                      <node concept="1xMEDy" id="6HHp2WmRW4d" role="1xVPHs">
+                        <node concept="chp4Y" id="6HHp2WmRW5y" role="ri$Ld">
+                          <ref role="cht4Q" to="av4b:ub9nkyHAb7" resolve="TestCase" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="3Tsc0h" id="6HHp2WmRWpV" role="2OqNvi">
+                    <ref role="3TtcxE" to="av4b:ub9nkyHAcK" resolve="items" />
+                  </node>
                 </node>
-                <node concept="3Tsc0h" id="6HHp2WmRWpV" role="2OqNvi">
-                  <ref role="3TtcxE" to="av4b:ub9nkyHAcK" />
+                <node concept="v3k3i" id="78hTg1$XSWL" role="2OqNvi">
+                  <node concept="chp4Y" id="78hTg1$XT39" role="v3oSu">
+                    <ref role="cht4Q" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                  </node>
                 </node>
               </node>
               <node concept="3zZkjj" id="6HHp2WmS0ha" role="2OqNvi">
@@ -121,7 +131,7 @@
                             <ref role="3cqZAo" node="6HHp2WmS0he" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="6HHp2WmS0DY" role="2OqNvi">
-                            <ref role="3Tt5mk" to="4kwy:cJpacq40jC" />
+                            <ref role="3Tt5mk" to="4kwy:cJpacq40jC" resolve="optionalName" />
                           </node>
                         </node>
                       </node>

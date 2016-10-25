@@ -15,7 +15,7 @@
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -34,6 +34,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -188,10 +191,17 @@
       <node concept="3clFbJ" id="4rZeNQ6OhNY" role="3cqZAp">
         <node concept="3clFbS" id="4rZeNQ6OhNZ" role="3clFbx">
           <node concept="1Z5TYs" id="4rZeNQ6OimL" role="3cqZAp">
-            <node concept="mw_s8" id="4rZeNQ6Oin5" role="1ZfhKB">
-              <node concept="2pJPEk" id="4rZeNQ6Oin1" role="mwGJk">
-                <node concept="2pJPED" id="4rZeNQ6Oing" role="2pJPEn">
-                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+            <node concept="mw_s8" id="3p6$WoErKHT" role="1ZfhKB">
+              <node concept="2YIFZM" id="3p6$WoErKIN" role="mwGJk">
+                <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
+                <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                <node concept="2OqwBi" id="3p6$WoErPjJ" role="37wK5m">
+                  <node concept="1YBJjd" id="3p6$WoErP8r" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4rZeNQ6OhNR" resolve="l" />
+                  </node>
+                  <node concept="3TrcHB" id="3p6$WoErPCD" role="2OqNvi">
+                    <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -241,10 +251,17 @@
         <node concept="9aQIb" id="4rZeNQ6Oin$" role="9aQIa">
           <node concept="3clFbS" id="4rZeNQ6Oin_" role="9aQI4">
             <node concept="1Z5TYs" id="4rZeNQ6OipM" role="3cqZAp">
-              <node concept="mw_s8" id="4rZeNQ6OipN" role="1ZfhKB">
-                <node concept="2pJPEk" id="4rZeNQ6OipO" role="mwGJk">
-                  <node concept="2pJPED" id="4rZeNQ6Oiq$" role="2pJPEn">
-                    <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+              <node concept="mw_s8" id="3p6$WoErKKb" role="1ZfhKB">
+                <node concept="2YIFZM" id="3p6$WoErKKW" role="mwGJk">
+                  <ref role="37wK5l" to="oq0c:2Qbt$1tTQdc" resolve="createRealType" />
+                  <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="2OqwBi" id="3p6$WoErPWy" role="37wK5m">
+                    <node concept="1YBJjd" id="3p6$WoErPLe" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4rZeNQ6OhNR" resolve="l" />
+                    </node>
+                    <node concept="3TrcHB" id="3p6$WoErQtG" role="2OqNvi">
+                      <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                    </node>
                   </node>
                 </node>
               </node>
