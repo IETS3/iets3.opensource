@@ -1,0 +1,130 @@
+// Project version
+if (project.hasProperty('projectVersion')) {
+    version project.projectVersion
+} else {
+    def gitBranchCmd
+    if (System.getProperty('os.name').toLowerCase().contains('windows')) {
+        gitBranchCmd = 'cmd /c git rev-parse --abbrev-ref HEAD'
+    } else {
+        gitBranchCmd = 'git rev-parse --abbrev-ref HEAD'
+    }
+    def gitBranch = gitBranchCmd.execute().in.text.trim().toString().replace("/","-")
+
+    if (gitBranch == null || gitBranch.empty) {
+        gitBranch = 'HEAD'
+    }
+
+    version "0.1-$gitBranch-SNAPSHOT"
+}
+
+// Dependency versions
+ext.mpsVersion = '3.4'
+ext.mbeddrVersion = '1.0-master-SNAPSHOT'
+
+ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/iets3'
+ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/iets3_snapshots'
+ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
+
+ext.dependencyRepositories = [
+    'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+    'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+]
+
+ext.artifactsDir = new File(rootDir, 'artifacts')
+
+group 'org.iets3'
+
+apply plugin: 'maven-publish'
+apply plugin: 'java'
+
+task wrapper(type: Wrapper) {
+    gradleVersion '3.1'
+    distributionType 'all'
+}
+
+configurations {
+    mps
+    mpsArtifacts
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    mpsArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
+    mpsArtifacts "com.mbeddr:platform:$mbeddrVersion"
+}
+
+repositories {
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+}
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/mps"
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/artifacts"
+}
+
+ant.properties['iets3.github.core.home'] = projectDir
+ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
+
+tasks['ant-clean-and-build'].configure {
+    dependsOn resolveMps, resolveMpsArtifacts
+    doFirst {
+        ant.properties['mps.home'] = resolveMps.destinationDir
+        ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
+    }
+}
+
+task packageAllScripts(type: Zip, dependsOn: 'ant-clean-and-build') {
+    archiveName 'org.iets3.allScripts.build.zip'
+    from artifactsDir
+    include 'org.iets3.allScripts.build/**'
+}
+
+task packageCore(type: Zip, dependsOn: 'ant-clean-and-build') {
+    archiveName 'org.iets3.core.zip'
+    from artifactsDir
+    include 'org.iets3.core/**'
+}
+
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    publications {
+        allScripts(MavenPublication) {
+            artifactId 'allScripts'
+            artifact packageAllScripts
+        }
+        core(MavenPublication) {
+            artifactId 'core'
+            artifact packageCore
+        }
+    }
+}

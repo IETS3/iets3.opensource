@@ -10,7 +10,7 @@
 /tmp/
 
 # -----------------------------------------------------------
-# Model Checkig Results
+# Model Checking Results
 # -----------------------------------------------------------
 *.csv
 
@@ -50,3 +50,8 @@ code/languages/*/*.iws
 code/languages/*/build.properties
 code/languages/*/TEST*.xml
 code/languages/org.iets3.core/build/tmp
+
+# -----------------------------------------------------------
+# GRADLE
+# -----------------------------------------------------------
+/.gradle/
