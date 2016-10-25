@@ -2756,7 +2756,7 @@
     </node>
     <node concept="2tJIrI" id="12WRc28WG_D" role="jymVt" />
     <node concept="2YIFZL" id="7Xf3oOLUFUc" role="jymVt">
-      <property role="TrG5h" value="haveSuperType" />
+      <property role="TrG5h" value="hasSuperType" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
