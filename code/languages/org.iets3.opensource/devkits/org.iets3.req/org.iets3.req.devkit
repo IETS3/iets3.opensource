@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.req" uuid="cd0acf69-f314-47a5-88c9-372e5cd40dff">
+  <exported-language name="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" />
+  <exported-language name="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" />
+  <exported-language name="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <extendedDevKits>
+    <extendedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

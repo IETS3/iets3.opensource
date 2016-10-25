@@ -1,3 +1,3 @@
-mps.home=/Applications/MPS32.app/Contents/
-iets3.github.core.home=/Users/berndkolb/mps/iets3/iets3.core
-mbeddr.github.core.home=/Users/berndkolb/mps/mbeddr-split/mps33/mbeddr.core/
+mps.home=/Applications/MPS34.app/Contents/
+iets3.github.opensource.home=/Users/berndkolb/mps/_mps34/IETS3/iets3.opensource/
+mbeddr.github.core.home=/Users/berndkolb/mps/_mps34/mbeddr/mbeddr.core

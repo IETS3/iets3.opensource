@@ -4,12 +4,11 @@
 
 	<!-- validations -->
 	<property name="plugins.folder.name" value="plugins"/>
-	<fail unless="iets3.github.core.home">iets3.github.core.home must be set in your build.properties</fail>
+	<fail unless="iets3.github.opensource.home">iets3.github.opensource.home must be set in your build.properties</fail>
 
 	<!-- misc properties -->
-	<property name="build.dir" value="${iets3.github.core.home}" />
+	<property name="build.dir" value="${iets3.github.opensource.home}" />
 	<property name="artifacts.root" value="${build.dir}/artifacts" />
-	<property name="iets3.artifacts.z3Lib" value="${artifacts.root}/org.iets3.analysis.z3" />
 	<property name="iets3.artifacts.core" value="${artifacts.root}/org.iets3.core" />
 
 	<!-- tasks -->
@@ -18,15 +17,11 @@
 	<property name="build-plugin.task" value="assemble" /> 
 
 	<!-- scripts -->
-	<property name="iets3.build-all-scripts.location" value="${iets3.github.core.home}/build/iets3.allScripts"/>	
+	<property name="iets3.build-all-scripts.location" value="${iets3.github.opensource.home}/build/iets3.allScripts"/>	
 	<property name="iets3.build-all-scripts.script" value="${iets3.build-all-scripts.location}/build-allScripts.xml"/>
 	
-	<property name="iets3.script.location" value="${iets3.github.core.home}/build/iets3.core"/>	
+	<property name="iets3.script.location" value="${iets3.github.opensource.home}/build/iets3.opensource"/>	
 	<property name="iets3.build.script" value="${iets3.script.location}/build.xml"/>
-	<property name="iets3.distro.script" value="${iets3.script.location}/distro.xml"/>
-
-	<property name="z3.script.location" value="${iets3.github.core.home}/build/z3.lib"/>	
-	<property name="z3.script" value="${z3.script.location}/build.xml"/>
 	
 	<!--targets -->
 	<target name="fetch-dependencies-and-clean-and-build">
@@ -52,15 +47,11 @@
 	<target name="clean-and-build" >
 		<antcall target="build-allScripts" />
 		<antcall target="clean" />
-		<antcall target="build-z3"/>
 		<antcall target="build-iets3-core"/>
-		<antcall target="assemble"/>
 	</target>
 	
 	<target name="clean" >
-		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${clean-plugins.task}" />
 		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${clean-plugins.task}" />
-		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${clean-plugins.task}" />
 	</target>
 	
 	<target name="build-allScripts" depends="check-mps-home">
@@ -68,19 +59,10 @@
 		<ant antfile="${iets3.build-all-scripts.script}" dir="${iets3.build-all-scripts.location}" target="${generate-code.task}" />
 		<ant antfile="${iets3.build-all-scripts.script}" dir="${iets3.build-all-scripts.location}" target="${build-plugin.task}" />
 	</target>
-	
-	<target name="build-z3" depends="check-mps-home">
-		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${generate-code.task}" />
-		<ant antfile="${z3.script}" dir="${z3.script.location}" target="${build-plugin.task}" />
-	</target>
-	
+		
 	<target name="build-iets3-core" depends="check-mps-home">
 		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${generate-code.task}" />
 		<ant antfile="${iets3.build.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
-	</target>
-	
-	<target name="assemble" depends="check-mps-home">
-		<ant antfile="${iets3.distro.script}" dir="${iets3.script.location}" target="${build-plugin.task}" />
 	</target>
 
 	<target name="fetch-dependencies">
