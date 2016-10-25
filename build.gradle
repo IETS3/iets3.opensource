@@ -12,8 +12,8 @@ configurations {
 
 dependencies {
     mps 'com.jetbrains:mps:3.4'
-    mpsArtifacts 'com.mbeddr:allScripts:1.0-HEAD-SNAPSHOT'
-    mpsArtifacts 'com.mbeddr:platform:1.0-HEAD-SNAPSHOT'
+    mpsArtifacts 'com.mbeddr:allScripts:1.0-master-SNAPSHOT'
+    mpsArtifacts 'com.mbeddr:platform:1.0-master-SNAPSHOT'
 }
 
 ant.properties['iets3.github.core.home'] = projectDir
