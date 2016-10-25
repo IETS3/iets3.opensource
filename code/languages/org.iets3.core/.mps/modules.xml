@@ -3,17 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.components/org.iets3.components.devkit" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.functionalcomponenets/org.iets3.functionalcomponenets.devkit" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
-      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.solver/org.iets3.solver.devkit" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.modelchecksupport/org.iets3.analysis.modelchecksupport.mpl" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.solversupport.temporal/org.iets3.analysis.solversupport.temporal.mpl" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.solversupport/org.iets3.analysis.solversupport.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.design/org.iets3.components.design.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.functional.req/org.iets3.components.functional.req.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.functional/org.iets3.components.functional.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
@@ -21,67 +11,17 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr.os" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr.os" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr.os" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr.commercial" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.natlang/org.iets3.core.expr.natlang.mpl" folder="expr.commercial" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.path/org.iets3.core.expr.path.mpl" folder="expr.os" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr.os" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr.os" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr.os" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags.taint/org.iets3.core.expr.typetags.taint.mpl" folder="expr.commercial" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.typetags/org.iets3.core.expr.typetags.mpl" folder="expr.commercial" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.util/org.iets3.core.expr.util.mpl" folder="expr.commercial" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.units/org.iets3.core.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.featuremodel/org.iets3.featuremodel.mpl" folder="fm" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.franca/org.iets3.franca.mpl" folder="franca" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.functiontree/org.iets3.functiontree.mpl" folder="functiontree" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.hardware/org.iets3.hardware.mpl" folder="hardware" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.hardware/sandbox/org.iets3.hardware.sandbox.msd" folder="hardware" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.doors.plugin/org.iets3.req.doors.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.safety.attributes/org.iets3.safety.attributes.mpl" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.safety/org.iets3.safety.mpl" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench.marker/org.iets3.simbench.marker.mpl" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench.marker/sandbox/org.iets3.simbench.marker.sandbox.msd" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench/org.iets3.simbench.mpl" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simbench/sandbox/org.iets3.simbench.sandbox.msd" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.tools.z3/org.iets3.tools.z3.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.components/sandbox.components.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.franca/sandbox.franca.msd" folder="franca" />
-      <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.req/sandbox.req.msd" folder="req" />
-      <modulePath path="$PROJECT_DIR$/sandboxes/sandbox.solversupport/sandbox.solversupport.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="etc" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.plugin/org.iets3.analysis.modelchecksupport.plugin.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.modelchecksupport.runtime/org.iets3.analysis.modelchecksupport.runtime.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.plugin/org.iets3.analysis.solversupport.plugin.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.runtime/org.iets3.analysis.solversupport.runtime.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.solversupport.temporal.runtime/org.iets3.analysis.solversupport.temporal.runtime.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.analysis.ui.plugin/org.iets3.analysis.ui.plugin.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.functional.runtime/org.iets3.components.functional.runtime.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.build/org.iets3.core.build.msd" folder="etc" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.allScripts.build/org.iets3.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.runtime/org.iets3.core.units.runtime.msd" folder="units" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.units.sandbox/org.iets3.core.units.sandbox.msd" folder="units" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.editingguide/org.iets3.editingguide.msd" folder="etc" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.featuremodel.sandbox/org.iets3.featuremodel.sandbox.msd" folder="fm" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.functiontree.sandbox/org.iets3.functiontree.sandbox.msd" folder="functiontree" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.doors/org.iets3.req.doors.msd" folder="req" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.runtime/org.iets3.safety.runtime.msd" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.safety.sandbox/org.iets3.safety.sandbox.msd" folder="safety" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.examples.ivi/org.iets3.simbench.examples.ivi.msd" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.simbench.plugin/org.iets3.simbench.plugin.msd" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.tools.z3.build/org.iets3.tools.z3.build.msd" folder="etc" />
-      <modulePath path="$PROJECT_DIR$/solutions/sandbox.core.expr.os/sandbox.core.expr.os.msd" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.ts.simbench.basic/test.ts.simbench.basic.msd" folder="simbench" />
-      <modulePath path="$PROJECT_DIR$/tests/test.int.core.expr/test.in.core.expr.msd" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.modelcheckersupport/test.ts.analysis.modelcheckersupport.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.solversupport/test.ts.analysis.solversupport.msd" folder="analysis" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.components.functional/test.ts.components.functional.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr.typetags/test.ts.core.expr.typetags.msd" folder="expr.commercial" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.expr/test.ts.core.expr.msd" folder="expr" />
     </projectModules>
   </component>
 </project>
