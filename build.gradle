@@ -21,8 +21,8 @@ if (project.hasProperty('projectVersion')) {
 ext.mpsVersion = '3.4'
 ext.mbeddrVersion = '1.0-master-SNAPSHOT'
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/iets3'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/iets3_snapshots'
+ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
 
 ext.dependencyRepositories = [
