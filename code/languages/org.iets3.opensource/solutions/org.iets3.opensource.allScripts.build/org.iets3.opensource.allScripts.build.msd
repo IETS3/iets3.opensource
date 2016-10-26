@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.allScripts.build" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610482" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.opensource.allScripts.build" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610483" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -22,7 +22,7 @@
   <dependencyVersions>
     <module reference="752496a0-da43-4b5e-bd15-ea1a5aa211f6(com.mbeddr.allScripts)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="ed0abc8f-2bd9-460c-b01c-761f3a610482(org.iets3.allScripts.build)" version="0" />
+    <module reference="ed0abc8f-2bd9-460c-b01c-761f3a610483(org.iets3.opensource.allScripts.build)" version="0" />
   </dependencyVersions>
 </solution>
 

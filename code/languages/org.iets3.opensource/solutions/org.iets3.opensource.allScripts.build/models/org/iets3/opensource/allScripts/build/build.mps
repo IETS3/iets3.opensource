@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2dd6bcf7-29b5-4f7c-9303-3883db63b801(org.iets3.allScripts.build.build)">
+<model ref="r:2dd6bcf7-29b5-4f7c-9303-3883db63b802(org.iets3.opensource.allScripts.build.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -104,7 +104,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="5wLtKNeSRPl">
-    <property role="TrG5h" value="org.iets3.allScripts.build" />
+    <property role="TrG5h" value="org.iets3.opensource.allScripts.build" />
     <property role="2DA0ip" value="../../../../../build/iets3.allScripts" />
     <property role="turDy" value="build-allScripts.xml" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
