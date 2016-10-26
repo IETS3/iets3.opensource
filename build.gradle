@@ -32,10 +32,8 @@ ext.dependencyRepositories = [
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-group 'org.iets3'
-
 apply plugin: 'maven-publish'
-apply plugin: 'java'
+apply plugin: 'base'
 
 task wrapper(type: Wrapper) {
     gradleVersion '3.1'
@@ -82,7 +80,7 @@ task resolveMpsArtifacts(type: Copy) {
     into "$buildDir/artifacts"
 }
 
-ant.properties['iets3.github.core.home'] = projectDir
+ant.properties['iets3.github.opensource.home'] = projectDir
 ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
 
 tasks['ant-clean-and-build'].configure {
@@ -94,15 +92,15 @@ tasks['ant-clean-and-build'].configure {
 }
 
 task packageAllScripts(type: Zip, dependsOn: 'ant-clean-and-build') {
-    archiveName 'org.iets3.allScripts.build.zip'
+    baseName 'org.iets3.opensource.allScripts'
     from artifactsDir
-    include 'org.iets3.allScripts.build/**'
+    include 'org.iets3.opensource.allScripts.build/**'
 }
 
-task packageCore(type: Zip, dependsOn: 'ant-clean-and-build') {
-    archiveName 'org.iets3.core.zip'
+task packageOpenSource(type: Zip, dependsOn: 'ant-clean-and-build') {
+    baseName 'org.iets3.opensource'
     from artifactsDir
-    include 'org.iets3.core/**'
+    include 'org.iets3.opensource/**'
 }
 
 publishing {
@@ -119,12 +117,14 @@ publishing {
     }
     publications {
         allScripts(MavenPublication) {
+            groupId 'org.iets3.opensource'
             artifactId 'allScripts'
             artifact packageAllScripts
         }
-        core(MavenPublication) {
-            artifactId 'core'
-            artifact packageCore
+        openSource(MavenPublication) {
+            groupId 'org.iets3'
+            artifactId 'opensource'
+            artifact packageOpenSource
         }
     }
 }
