@@ -105,7 +105,7 @@
   </registry>
   <node concept="1l3spW" id="5wLtKNeSRPl">
     <property role="TrG5h" value="org.iets3.opensource.allScripts.build" />
-    <property role="2DA0ip" value="../../../../../build/iets3.allScripts" />
+    <property role="2DA0ip" value="../../../../../build/iets3.opensource.allScripts" />
     <property role="turDy" value="build-allScripts.xml" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
@@ -232,7 +232,7 @@
               <property role="2Ry0Am" value="code" />
               <node concept="2Ry0Ak" id="5wLtKNeTarv" role="2Ry0An">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4iO0KqxBPsX" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3HqKnf9K0kb" role="2Ry0An">
                   <property role="2Ry0Am" value="org.iets3.opensource" />
                 </node>
               </node>
