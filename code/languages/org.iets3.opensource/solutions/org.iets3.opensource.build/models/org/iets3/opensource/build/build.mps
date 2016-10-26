@@ -291,11 +291,11 @@
           <ref role="m_rDy" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
         </node>
         <node concept="m$_wl" id="34v_ns09Wnt" role="39821P">
-          <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build" />
+          <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.opensource" />
         </node>
         <node concept="3_J27D" id="5wLtKNeSRRO" role="Nbhlr">
           <node concept="3Mxwew" id="5wLtKNeSRRP" role="3MwsjC">
-            <property role="3MwjfP" value="org.iets3.core.os.zip" />
+            <property role="3MwjfP" value="org.iets3.opensource.zip" />
           </node>
         </node>
       </node>
@@ -371,7 +371,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="64GCIgM55Fn" role="3989C9">
-      <property role="m$_wk" value="org.iets3.build" />
+      <property role="m$_wk" value="org.iets3.build.opensource" />
       <node concept="3_J27D" id="64GCIgM55Fo" role="m$_yQ">
         <node concept="3Mxwew" id="64GCIgM55Fp" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.build" />
