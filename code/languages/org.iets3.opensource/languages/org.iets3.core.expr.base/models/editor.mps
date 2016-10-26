@@ -277,12 +277,6 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
-    <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
-      <concept id="8658283006837849469" name="de.itemis.mps.editor.math.notations.structure.PowerEditor" flags="ng" index="jtDJS">
-        <child id="8658283006839229766" name="superscript" index="jn6J3" />
-        <child id="8658283006839229761" name="nomal" index="jn6J4" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -1669,32 +1663,33 @@
   </node>
   <node concept="24kQdi" id="2Qbt$1tNGyz">
     <ref role="1XX52x" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckExpression" />
-    <node concept="jtDJS" id="2Qbt$1tNHHo" role="2wV5jI">
-      <node concept="3EZMnI" id="2Qbt$1tNHHX" role="jn6J4">
-        <node concept="3F0ifn" id="2Qbt$1tQXHt" role="3EZMnx">
-          <property role="3F0ifm" value="[" />
-          <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
-          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-          <node concept="11LMrY" id="2Qbt$1tQXJK" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F1sOY" id="252QIDzztQx" role="3EZMnx">
-          <ref role="1NtTu8" to="hm2y:252QIDzztQk" resolve="expr" />
-        </node>
-        <node concept="2iRfu4" id="2Qbt$1tNHHY" role="2iSdaV" />
-        <node concept="3F0ifn" id="2Qbt$1tQXK6" role="3EZMnx">
-          <property role="3F0ifm" value="]" />
-          <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
-          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-          <node concept="11L4FC" id="2Qbt$1tQXLm" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+    <node concept="3EZMnI" id="2NHHcg2$Pj3" role="2wV5jI">
+      <node concept="3F0ifn" id="2NHHcg2$Pj4" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        <node concept="11LMrY" id="2NHHcg2$Pj5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="2Qbt$1tNHHE" role="jn6J3">
-        <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
+      <node concept="3F1sOY" id="2NHHcg2$Pj6" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:252QIDzztQk" resolve="expr" />
+      </node>
+      <node concept="2iRfu4" id="2NHHcg2$Pj7" role="2iSdaV" />
+      <node concept="3F0ifn" id="2NHHcg2$Pj_" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="2NHHcg2$Pk2" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:2Qbt$1tNGy9" resolve="expectedType" />
+        <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
+      </node>
+      <node concept="3F0ifn" id="2NHHcg2$Pj8" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1ERwB7" node="2Qbt$1tOZ8b" resolve="typeCheckAnnotation" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        <node concept="11L4FC" id="2NHHcg2$Pj9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
