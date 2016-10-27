@@ -169,6 +169,7 @@
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
+        <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
       <concept id="1174663239020" name="jetbrains.mps.lang.typesystem.structure.CreateGreaterThanInequationStatement" flags="nn" index="1ZoDhX" />
@@ -629,6 +630,9 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="1YBJjd" id="2M9Ik4CRSXB" role="1ZmcU8">
+                        <ref role="1YBMHb" node="6zmBjqUlLnH" resolve="mapOp" />
+                      </node>
                     </node>
                     <node concept="3cpWs8" id="6zmBjqUlUK8" role="3cqZAp">
                       <node concept="3cpWsn" id="6zmBjqUlUK9" role="3cpWs9">
@@ -763,13 +767,8 @@
                     <node concept="Xl_RD" id="6zmBjqUm1mU" role="2MkJ7o">
                       <property role="Xl_RC" value="exactly one argument expected" />
                     </node>
-                    <node concept="2OqwBi" id="6zmBjqUm1mV" role="2OEOjV">
-                      <node concept="1YBJjd" id="6zmBjqUm1Qm" role="2Oq$k0">
-                        <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
-                      </node>
-                      <node concept="3TrEf2" id="6zmBjqUm1mX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
-                      </node>
+                    <node concept="1YBJjd" id="6zmBjqUm1Qm" role="2OEOjV">
+                      <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                     </node>
                   </node>
                 </node>
@@ -813,6 +812,7 @@
                       </node>
                     </node>
                     <node concept="1ZobV4" id="6zmBjqUm1nf" role="3cqZAp">
+                      <property role="3wDh2S" value="true" />
                       <node concept="mw_s8" id="6zmBjqUm1ng" role="1ZfhKB">
                         <node concept="2OqwBi" id="6zmBjqUm1nh" role="mwGJk">
                           <node concept="37vLTw" id="6zmBjqUm1ni" role="2Oq$k0">
@@ -838,6 +838,9 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="1YBJjd" id="2M9Ik4CLChU" role="1ZmcU8">
+                        <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
+                      </node>
                     </node>
                     <node concept="3clFbJ" id="2Qbt$1tTX8w" role="3cqZAp">
                       <node concept="3clFbS" id="2Qbt$1tTX8x" role="3clFbx">
@@ -845,13 +848,8 @@
                           <node concept="Xl_RD" id="2Qbt$1tTX8z" role="2MkJ7o">
                             <property role="Xl_RC" value="Boolean expression expected" />
                           </node>
-                          <node concept="2OqwBi" id="2Qbt$1tTX8$" role="2OEOjV">
-                            <node concept="1YBJjd" id="2Qbt$1tTX8_" role="2Oq$k0">
-                              <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
-                            </node>
-                            <node concept="3TrEf2" id="2Qbt$1tTX8A" role="2OqNvi">
-                              <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
-                            </node>
+                          <node concept="1YBJjd" id="2Qbt$1tTX8_" role="2OEOjV">
+                            <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                           </node>
                         </node>
                       </node>
@@ -890,13 +888,8 @@
                   <node concept="Xl_RD" id="6zmBjqUm1nS" role="2MkJ7o">
                     <property role="Xl_RC" value="Function type expected" />
                   </node>
-                  <node concept="2OqwBi" id="6zmBjqUm1nT" role="2OEOjV">
-                    <node concept="1YBJjd" id="6zmBjqUm2jh" role="2Oq$k0">
-                      <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
-                    </node>
-                    <node concept="3TrEf2" id="6zmBjqUm1nV" role="2OqNvi">
-                      <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
-                    </node>
+                  <node concept="1YBJjd" id="6zmBjqUm2jh" role="2OEOjV">
+                    <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                   </node>
                 </node>
               </node>
