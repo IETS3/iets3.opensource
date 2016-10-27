@@ -178,6 +178,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <child id="8219602584783494093" name="actual" index="mXJVd" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -1559,28 +1562,20 @@
         <node concept="_ixoA" id="KaZMgyeE5o" role="_iOnB" />
         <node concept="_fkuM" id="KaZMgyat_$" role="_iOnB">
           <property role="TrG5h" value="TestInvariant" />
-          <node concept="_fkuZ" id="KaZMgyatA8" role="_fkp5">
-            <node concept="_fku$" id="KaZMgyatA9" role="_fkur" />
-            <node concept="1af_rf" id="KaZMgyatAA" role="_fkuY">
+          <node concept="mXNUv" id="TuTPrv_uBP" role="_fkp5">
+            <node concept="1af_rf" id="TuTPrv_vNq" role="mXJVd">
               <ref role="1afhQb" node="KaZMgy6l9P" resolve="times2" />
-              <node concept="30bXRB" id="KaZMgyayR0" role="1afhQ5">
+              <node concept="30bXRB" id="TuTPrv_wpb" role="1afhQ5">
                 <property role="30bXRw" value="5" />
               </node>
             </node>
-            <node concept="30bXRB" id="KaZMgya$c0" role="_fkuS">
-              <property role="30bXRw" value="10" />
-            </node>
           </node>
-          <node concept="_fkuZ" id="KaZMgyfLqF" role="_fkp5">
-            <node concept="_fku$" id="KaZMgyfLqG" role="_fkur" />
-            <node concept="1af_rf" id="KaZMgyfN7k" role="_fkuY">
+          <node concept="mXNUv" id="TuTPrv_x1i" role="_fkp5">
+            <node concept="1af_rf" id="TuTPrv_ycU" role="mXJVd">
               <ref role="1afhQb" node="KaZMgyeFM5" resolve="times3" />
-              <node concept="30bXRB" id="KaZMgyfNXs" role="1afhQ5">
+              <node concept="30bXRB" id="TuTPrv_zu1" role="1afhQ5">
                 <property role="30bXRw" value="3" />
               </node>
-            </node>
-            <node concept="30bXRB" id="KaZMgyfPFh" role="_fkuS">
-              <property role="30bXRw" value="9" />
             </node>
           </node>
         </node>
@@ -1640,12 +1635,8 @@
         <node concept="_ixoA" id="15mJ3JeD_aS" role="_iOnB" />
         <node concept="_fkuM" id="15mJ3JeCLqZ" role="_iOnB">
           <property role="TrG5h" value="Persons" />
-          <node concept="_fkuZ" id="15mJ3JeCRdm" role="_fkp5">
-            <node concept="_fku$" id="15mJ3JeCRdn" role="_fkur" />
-            <node concept="_emDc" id="15mJ3JeE2fm" role="_fkuS">
-              <ref role="_emDf" node="15mJ3JeD_c3" resolve="invalidPair" />
-            </node>
-            <node concept="_emDc" id="15mJ3JeE2fC" role="_fkuY">
+          <node concept="mXNUv" id="TuTPrv_AJu" role="_fkp5">
+            <node concept="_emDc" id="TuTPrv_Blm" role="mXJVd">
               <ref role="_emDf" node="15mJ3JeD_c3" resolve="invalidPair" />
             </node>
           </node>
