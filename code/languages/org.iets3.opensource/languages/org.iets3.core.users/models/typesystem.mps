@@ -31,6 +31,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -133,42 +134,52 @@
           </node>
         </node>
       </node>
-      <node concept="2Mj0R9" id="7mG7sQPpj_f" role="3cqZAp">
-        <node concept="1YBJjd" id="7mG7sQPpjQN" role="2OEOjV">
-          <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
-        </node>
-        <node concept="Xl_RD" id="7mG7sQPpjJw" role="2MkJ7o">
-          <property role="Xl_RC" value="invalid email address" />
-        </node>
-        <node concept="2OqwBi" id="7mG7sQPpjCh" role="2MkoU_">
-          <node concept="37vLTw" id="7mG7sQPpj_L" role="2Oq$k0">
-            <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
+      <node concept="3clFbJ" id="76PiIP0IhKj" role="3cqZAp">
+        <node concept="3clFbS" id="76PiIP0IhKl" role="3clFbx">
+          <node concept="2Mj0R9" id="7mG7sQPpj_f" role="3cqZAp">
+            <node concept="1YBJjd" id="7mG7sQPpjQN" role="2OEOjV">
+              <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
+            </node>
+            <node concept="Xl_RD" id="7mG7sQPpjJw" role="2MkJ7o">
+              <property role="Xl_RC" value="invalid email address" />
+            </node>
+            <node concept="2OqwBi" id="7mG7sQPpjCh" role="2MkoU_">
+              <node concept="37vLTw" id="7mG7sQPpj_L" role="2Oq$k0">
+                <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
+              </node>
+              <node concept="liA8E" id="7mG7sQPpjHL" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <node concept="Xl_RD" id="7mG7sQPpjHO" role="37wK5m">
+                  <property role="Xl_RC" value="@" />
+                </node>
+              </node>
+            </node>
           </node>
-          <node concept="liA8E" id="7mG7sQPpjHL" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-            <node concept="Xl_RD" id="7mG7sQPpjHO" role="37wK5m">
-              <property role="Xl_RC" value="@" />
+          <node concept="2Mj0R9" id="7mG7sQPpjNb" role="3cqZAp">
+            <node concept="1YBJjd" id="7mG7sQPpjRU" role="2OEOjV">
+              <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
+            </node>
+            <node concept="Xl_RD" id="7mG7sQPpjNd" role="2MkJ7o">
+              <property role="Xl_RC" value="invalid email address" />
+            </node>
+            <node concept="2OqwBi" id="7mG7sQPpjNe" role="2MkoU_">
+              <node concept="37vLTw" id="7mG7sQPpjNf" role="2Oq$k0">
+                <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
+              </node>
+              <node concept="liA8E" id="7mG7sQPpjNg" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <node concept="Xl_RD" id="7mG7sQPpjNh" role="37wK5m">
+                  <property role="Xl_RC" value="." />
+                </node>
+              </node>
             </node>
           </node>
         </node>
-      </node>
-      <node concept="2Mj0R9" id="7mG7sQPpjNb" role="3cqZAp">
-        <node concept="1YBJjd" id="7mG7sQPpjRU" role="2OEOjV">
-          <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
-        </node>
-        <node concept="Xl_RD" id="7mG7sQPpjNd" role="2MkJ7o">
-          <property role="Xl_RC" value="invalid email address" />
-        </node>
-        <node concept="2OqwBi" id="7mG7sQPpjNe" role="2MkoU_">
-          <node concept="37vLTw" id="7mG7sQPpjNf" role="2Oq$k0">
+        <node concept="2OqwBi" id="76PiIP0Iiaf" role="3clFbw">
+          <node concept="37vLTw" id="76PiIP0IhPn" role="2Oq$k0">
             <ref role="3cqZAo" node="7mG7sQPpj$6" resolve="m" />
           </node>
-          <node concept="liA8E" id="7mG7sQPpjNg" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-            <node concept="Xl_RD" id="7mG7sQPpjNh" role="37wK5m">
-              <property role="Xl_RC" value="." />
-            </node>
-          </node>
+          <node concept="17RvpY" id="76PiIP0Ii_p" role="2OqNvi" />
         </node>
       </node>
     </node>
@@ -200,7 +211,7 @@
               <ref role="1YBMHb" node="7mG7sQPpknh" resolve="dir" />
             </node>
             <node concept="3Tsc0h" id="7mG7sQPpkuD" role="2OqNvi">
-              <ref role="3TtcxE" to="cayy:7mG7sQPphD1" />
+              <ref role="3TtcxE" to="cayy:7mG7sQPphD1" resolve="users" />
             </node>
           </node>
           <node concept="2es0OD" id="7mG7sQPplJl" role="2OqNvi">
