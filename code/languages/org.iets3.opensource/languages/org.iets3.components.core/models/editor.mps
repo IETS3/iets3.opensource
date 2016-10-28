@@ -7451,14 +7451,46 @@
     </node>
     <node concept="2xDzp1" id="2HR3cahcbYk" role="2xOiiv">
       <node concept="3clFbS" id="2HR3cahcbYl" role="2VODD2">
+        <node concept="3cpWs8" id="x8tpS_ttu8" role="3cqZAp">
+          <node concept="3cpWsn" id="x8tpS_ttu9" role="3cpWs9">
+            <property role="TrG5h" value="colorToUse" />
+            <node concept="3uibUv" id="x8tpS_ttua" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="1xnly_" id="x8tpS_ttB$" role="33vP2m">
+              <ref role="1xnlzC" node="mIQkxggHeB" resolve="color" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="x8tpS_trCy" role="3cqZAp">
+          <node concept="3clFbS" id="x8tpS_trC$" role="3clFbx">
+            <node concept="3clFbF" id="x8tpS_tsfq" role="3cqZAp">
+              <node concept="37vLTI" id="x8tpS_tstt" role="3clFbG">
+                <node concept="10M0yZ" id="x8tpS_tsxh" role="37vLTx">
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                </node>
+                <node concept="37vLTw" id="x8tpS_ttF$" role="37vLTJ">
+                  <ref role="3cqZAo" node="x8tpS_ttu9" resolve="colorToUse" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="x8tpS_ts8q" role="3clFbw">
+            <node concept="10Nm6u" id="x8tpS_tseZ" role="3uHU7w" />
+            <node concept="37vLTw" id="x8tpS_ttBQ" role="3uHU7B">
+              <ref role="3cqZAo" node="x8tpS_ttu9" resolve="colorToUse" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2HR3cahcbZ0" role="3cqZAp">
           <node concept="2OqwBi" id="2HR3cahcbZO" role="3clFbG">
             <node concept="2xDIQ0" id="2HR3cahcbYZ" role="2Oq$k0" />
             <node concept="liA8E" id="2HR3cahccdC" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
               <node concept="2OqwBi" id="7Atos1xTp$Y" role="37wK5m">
-                <node concept="1xnly_" id="mIQkxghQwW" role="2Oq$k0">
-                  <ref role="1xnlzC" node="mIQkxggHeB" resolve="color" />
+                <node concept="37vLTw" id="x8tpS_ttG1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="x8tpS_ttu9" resolve="colorToUse" />
                 </node>
                 <node concept="liA8E" id="7Atos1xTpG3" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Color.brighter():java.awt.Color" resolve="brighter" />
