@@ -848,10 +848,13 @@
                   </node>
                   <node concept="2OqwBi" id="HywGhj7OlQ" role="3uHU7w">
                     <node concept="2OqwBi" id="HywGhj7NZ3" role="2Oq$k0">
-                      <node concept="2OqwBi" id="HywGhj7NHd" role="2Oq$k0">
-                        <node concept="13iPFW" id="HywGhj7ND$" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="HywGhj7NOO" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yv47:7D7uZV2iYAD" resolve="type" />
+                      <node concept="1PxgMI" id="TuTPrvXSYq" role="2Oq$k0">
+                        <ref role="1m5ApE" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+                        <node concept="2OqwBi" id="HywGhj7NHd" role="1m5AlR">
+                          <node concept="13iPFW" id="HywGhj7ND$" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="HywGhj7NOO" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yv47:7D7uZV2iYAD" resolve="type" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3TrEf2" id="HywGhj7Obu" role="2OqNvi">

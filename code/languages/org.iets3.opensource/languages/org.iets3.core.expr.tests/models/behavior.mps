@@ -19,8 +19,9 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1463,6 +1464,28 @@
     <ref role="13h7C2" to="av4b:ub9nkyHAb7" resolve="TestCase" />
     <node concept="13hLZK" id="6HHp2Wn9vrG" role="13h7CW">
       <node concept="3clFbS" id="6HHp2Wn9vrH" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="TuTPrvSlUn" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="manuallyRunNodes" />
+      <ref role="13i0hy" to="gdgh:TuTPrvRoDG" resolve="manuallyRunNodes" />
+      <node concept="3Tm1VV" id="TuTPrvSlUo" role="1B3o_S" />
+      <node concept="3clFbS" id="TuTPrvSlUs" role="3clF47">
+        <node concept="3clFbF" id="TuTPrvSlUU" role="3cqZAp">
+          <node concept="2OqwBi" id="TuTPrvSm6D" role="3clFbG">
+            <node concept="13iPFW" id="TuTPrvSlUT" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="TuTPrvSmlU" role="2OqNvi">
+              <ref role="3TtcxE" to="av4b:ub9nkyHAcK" resolve="items" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="TuTPrvSlUt" role="3clF45">
+        <node concept="3Tqbb2" id="TuTPrvSlUu" role="A3Ik2">
+          <ref role="ehGHo" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6HHp2WneNQc">

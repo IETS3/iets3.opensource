@@ -721,9 +721,6 @@
       <property role="IQ2ns" value="3281846772293355657" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="3kzwyUOAjoT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="TrG5h" value="IStructuredSyntax" />

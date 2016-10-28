@@ -18,6 +18,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1759,7 +1760,7 @@
   </node>
   <node concept="35pCF_" id="3p6$WoEz$43">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="compareNumberTypes" />
+    <property role="TrG5h" value="replaceNumberTypes" />
     <node concept="1YaCAy" id="3p6$WoEz$5y" role="35pZ6h">
       <property role="TrG5h" value="exp" />
       <ref role="1YaFvo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
@@ -2116,8 +2117,8 @@
                   <node concept="37vLTw" id="2M9Ik4CWKV7" role="2Oq$k0">
                     <ref role="3cqZAo" node="7DTWJ$8lsDM" resolve="nt" />
                   </node>
-                  <node concept="2qgKlT" id="2M9Ik4CXmCY" role="2OqNvi">
-                    <ref role="37wK5l" to="b1h1:2M9Ik4CWLoX" resolve="simplify" />
+                  <node concept="2qgKlT" id="46cplYw$0dm" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:46cplYwxszL" resolve="simplify" />
                   </node>
                 </node>
               </node>
