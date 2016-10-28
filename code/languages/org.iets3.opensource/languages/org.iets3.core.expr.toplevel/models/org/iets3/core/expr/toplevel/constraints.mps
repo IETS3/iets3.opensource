@@ -364,7 +364,7 @@
                 <node concept="21POm0" id="ub9nkyGFR5" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="ub9nkyGFWW" role="2OqNvi">
                   <node concept="1xMEDy" id="ub9nkyGFWY" role="1xVPHs">
-                    <node concept="chp4Y" id="ub9nkyGFYj" role="ri$Ld">
+                    <node concept="chp4Y" id="6NHlpK$xzCG" role="ri$Ld">
                       <ref role="cht4Q" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
                     </node>
                   </node>
@@ -539,14 +539,14 @@
                 <node concept="21POm0" id="SRvqsNmX8e" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="SRvqsNmXcE" role="2OqNvi">
                   <node concept="1xMEDy" id="SRvqsNmXcG" role="1xVPHs">
-                    <node concept="chp4Y" id="xu7xcKlcXc" role="ri$Ld">
-                      <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                    <node concept="chp4Y" id="6NHlpK$oc1p" role="ri$Ld">
+                      <ref role="cht4Q" to="yv47:6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3Tsc0h" id="SRvqsNmXxG" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+              <node concept="2qgKlT" id="6NHlpK$ocHt" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:6NHlpK$oaBU" resolve="visibleMembers" />
               </node>
             </node>
           </node>
@@ -561,8 +561,8 @@
               <node concept="nLn13" id="SRvqsNmWtd" role="2Oq$k0" />
               <node concept="2Xjw5R" id="SRvqsNmWxg" role="2OqNvi">
                 <node concept="1xMEDy" id="SRvqsNmWxi" role="1xVPHs">
-                  <node concept="chp4Y" id="xu7xcKldck" role="ri$Ld">
-                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                  <node concept="chp4Y" id="6NHlpK$yWh0" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="SRvqsNmWBl" role="1xVPHs" />

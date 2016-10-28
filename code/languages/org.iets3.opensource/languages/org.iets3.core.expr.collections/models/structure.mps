@@ -210,18 +210,8 @@
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6zmBjqUjnKy">
-    <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="AddOp" />
-    <property role="34LRSv" value="add" />
-    <property role="EcuMT" value="7554398283340020770" />
-    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
-    <node concept="PrWs8" id="6zmBjqUjo1i" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="6zmBjqUjnPd">
-    <property role="TrG5h" value="ICollectionTyped" />
+    <property role="TrG5h" value="IContextTypedCollOp" />
     <property role="EcuMT" value="7554398283340021069" />
     <node concept="PrWs8" id="6zmBjqUjnPe" role="PrDN$">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
@@ -244,7 +234,7 @@
     <property role="EcuMT" value="7554398283340715406" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2r4g1">
@@ -254,7 +244,7 @@
     <property role="EcuMT" value="8872269265511400449" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2r4g4" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2y0gW">
@@ -468,7 +458,7 @@
     <property role="EcuMT" value="5585772046596642164" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktS" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
     <node concept="PrWs8" id="4Q4DxjDGLmA" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
@@ -481,7 +471,7 @@
     <property role="EcuMT" value="5585772046597818717" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktY" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
     <node concept="PrWs8" id="4Q4DxjDLg_v" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
@@ -499,7 +489,7 @@
       <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
     </node>
     <node concept="PrWs8" id="Lrty7CKd02" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="ICollectionTyped" />
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
     <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
@@ -527,6 +517,56 @@
     <node concept="PrWs8" id="6HHp2WnvluL" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1RHynufnBSS">
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="OneArgListModifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="2156530943179783736" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1RHynufnBST" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="1RHynufnBSU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2156530943179783738" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1RHynufnBSV">
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="ListAddOp" />
+    <property role="34LRSv" value="add" />
+    <property role="EcuMT" value="2156530943179783739" />
+    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
+  </node>
+  <node concept="1TIwiD" id="1RHynufnSPh">
+    <property role="3GE5qa" value="set" />
+    <property role="TrG5h" value="OneArgSetModifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="2156530943179853137" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1RHynufnSPi" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="1RHynufnSPj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2156530943179853139" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1RHynufnTnz">
+    <property role="3GE5qa" value="set" />
+    <property role="TrG5h" value="SetAddOp" />
+    <property role="34LRSv" value="add" />
+    <property role="EcuMT" value="2156530943179855331" />
+    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
   </node>
 </model>
 

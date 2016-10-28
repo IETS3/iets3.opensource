@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
   </imports>
@@ -97,7 +98,7 @@
   <node concept="2S6QgY" id="ub9nkyP9Oe">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="evaluateTestItem" />
-    <ref role="2ZfgGC" to="av4b:ub9nkyHAba" resolve="TestItem" />
+    <ref role="2ZfgGC" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
     <node concept="2S6ZIM" id="ub9nkyP9Of" role="2ZfVej">
       <node concept="3clFbS" id="ub9nkyP9Og" role="2VODD2">
         <node concept="3clFbF" id="ub9nkyPa_c" role="3cqZAp">
@@ -196,7 +197,7 @@
               <node concept="2Rf3mk" id="ub9nkyPgas" role="2OqNvi">
                 <node concept="1xMEDy" id="ub9nkyPgau" role="1xVPHs">
                   <node concept="chp4Y" id="ub9nkyPgcu" role="ri$Ld">
-                    <ref role="cht4Q" to="av4b:ub9nkyHAba" resolve="TestItem" />
+                    <ref role="cht4Q" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
                   </node>
                 </node>
               </node>
