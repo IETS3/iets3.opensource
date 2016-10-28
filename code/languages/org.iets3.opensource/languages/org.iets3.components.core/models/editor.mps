@@ -8539,29 +8539,6 @@
       <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
     </node>
   </node>
-  <node concept="24kQdi" id="mIQkxfKk3Y">
-    <property role="3GE5qa" value="components.ports.service" />
-    <ref role="1XX52x" to="w9y2:mIQkxfKjkw" resolve="ProvidesPortCategory_old" />
-    <node concept="3F0ifn" id="mIQkxfKk4E" role="2wV5jI">
-      <property role="3F0ifm" value="provides" />
-      <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="mIQkxfKk55">
-    <property role="3GE5qa" value="components.ports.service" />
-    <ref role="1XX52x" to="w9y2:mIQkxfKjnz" resolve="UsesPortCategory_old" />
-    <node concept="3EZMnI" id="mIQkxfKk5O" role="2wV5jI">
-      <node concept="l2Vlx" id="mIQkxfKk5P" role="2iSdaV" />
-      <node concept="3F0ifn" id="mIQkxfKk5L" role="3EZMnx">
-        <property role="3F0ifm" value="uses" />
-        <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
-      </node>
-      <node concept="1kHk_G" id="mIQkxfKk5X" role="3EZMnx">
-        <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
-        <ref role="1NtTu8" to="w9y2:mIQkxfKjuV" resolve="optional_old" />
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="5$bT90ZdOUA">
     <property role="TrG5h" value="PortShapeCell" />
     <property role="3GE5qa" value="components.substructure" />
