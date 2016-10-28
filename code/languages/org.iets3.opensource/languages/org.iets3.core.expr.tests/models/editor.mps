@@ -621,11 +621,11 @@
               <node concept="3clFbF" id="2NHHcg2J0IF" role="3cqZAp">
                 <node concept="3cpWs3" id="2NHHcg2J4nT" role="3clFbG">
                   <node concept="Xl_RD" id="2NHHcg2J4nZ" role="3uHU7w">
-                    <property role="Xl_RC" value="]" />
+                    <property role="Xl_RC" value="&gt;" />
                   </node>
                   <node concept="3cpWs3" id="2NHHcg2J4YL" role="3uHU7B">
                     <node concept="Xl_RD" id="2NHHcg2J4YR" role="3uHU7B">
-                      <property role="Xl_RC" value="[" />
+                      <property role="Xl_RC" value="&lt;" />
                     </node>
                     <node concept="2OqwBi" id="2NHHcg2J3qY" role="3uHU7w">
                       <node concept="2OqwBi" id="2NHHcg2J2qB" role="2Oq$k0">
@@ -1060,7 +1060,7 @@
     <node concept="3EZMnI" id="78hTg1$TLIY" role="2wV5jI">
       <node concept="2iRfu4" id="78hTg1_1BHP" role="2iSdaV" />
       <node concept="3F0ifn" id="78hTg1$TLIU" role="3EZMnx">
-        <property role="3F0ifm" value="constraint failure" />
+        <property role="3F0ifm" value="confail" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F1sOY" id="78hTg1$TLJg" role="3EZMnx">

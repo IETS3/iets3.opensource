@@ -265,7 +265,7 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8811147530085329321" />
-      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="7D7uZV2iYAF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -310,6 +310,9 @@
     </node>
     <node concept="PrWs8" id="2S3ZC$oziAP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="6NHlpK$p_fF" role="PzmwI">
+      <ref role="PrY4T" node="6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
@@ -525,6 +528,9 @@
     <node concept="PrWs8" id="SRvqsN4Pgz" role="PrDN$">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
     </node>
+    <node concept="PrWs8" id="6NHlpK$oaDx" role="PrDN$">
+      <ref role="PrY4T" node="6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
@@ -542,6 +548,11 @@
     <node concept="PrWs8" id="7zXSNv$jGoL" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6NHlpK$oaAP">
+    <property role="EcuMT" value="7849023854690216373" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="IRecordMemberScopeProvider" />
   </node>
 </model>
 

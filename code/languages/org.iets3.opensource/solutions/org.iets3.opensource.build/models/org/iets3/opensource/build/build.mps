@@ -2,9 +2,9 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -291,7 +291,7 @@
           <ref role="m_rDy" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
         </node>
         <node concept="m$_wl" id="34v_ns09Wnt" role="39821P">
-          <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.opensource" />
+          <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
         </node>
         <node concept="m$_wl" id="1PzuxQOWHfM" role="39821P">
           <ref role="m_rDy" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
@@ -401,10 +401,10 @@
       </node>
     </node>
     <node concept="m$_wf" id="64GCIgM55Fn" role="3989C9">
-      <property role="m$_wk" value="org.iets3.build.opensource" />
+      <property role="m$_wk" value="org.iets3.build.os" />
       <node concept="3_J27D" id="64GCIgM55Fo" role="m$_yQ">
         <node concept="3Mxwew" id="64GCIgM55Fp" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.build" />
+          <property role="3MwjfP" value="org.iets3.build.os" />
         </node>
       </node>
       <node concept="3_J27D" id="64GCIgM55Fq" role="m$_w8">
@@ -426,7 +426,7 @@
       </node>
       <node concept="3_J27D" id="64GCIgM55Fw" role="m_cZH">
         <node concept="3Mxwew" id="64GCIgM55Fx" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.build" />
+          <property role="3MwjfP" value="org.iets3.build.os" />
         </node>
       </node>
     </node>

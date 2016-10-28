@@ -190,7 +190,9 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -219,6 +221,9 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
@@ -1123,6 +1128,25 @@
     </node>
     <node concept="13hLZK" id="3I6_jFIZNmd" role="13h7CW">
       <node concept="3clFbS" id="3I6_jFIZNme" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="TuTPrvRoDx">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="13h7C2" to="4kwy:TuTPrvRoD5" resolve="IContainsStuffToRunManually" />
+    <node concept="13i0hz" id="TuTPrvRoDG" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="manuallyRunNodes" />
+      <node concept="3Tm1VV" id="TuTPrvRoDH" role="1B3o_S" />
+      <node concept="A3Dl8" id="TuTPrvRoE0" role="3clF45">
+        <node concept="3Tqbb2" id="TuTPrvRoEf" role="A3Ik2">
+          <ref role="ehGHo" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="TuTPrvRoDJ" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="TuTPrvRoDy" role="13h7CW">
+      <node concept="3clFbS" id="TuTPrvRoDz" role="2VODD2" />
     </node>
   </node>
 </model>

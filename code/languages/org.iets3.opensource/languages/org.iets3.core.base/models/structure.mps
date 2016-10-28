@@ -157,5 +157,10 @@
       <property role="1iqoE4" value="${module}/icons/iets3-24.png" />
     </node>
   </node>
+  <node concept="PlHQZ" id="TuTPrvRoD5">
+    <property role="EcuMT" value="1035519324650834501" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IContainsStuffToRunManually" />
+  </node>
 </model>
 
