@@ -220,8 +220,8 @@
   <node concept="1TIwiD" id="7DTWJ$8khf9">
     <property role="EcuMT" value="8825352096209507273" />
     <property role="3GE5qa" value="numeric.number.convert" />
-    <property role="TrG5h" value="CutRoundingMode" />
-    <property role="34LRSv" value="cut" />
+    <property role="TrG5h" value="TruncateRoundingMode" />
+    <property role="34LRSv" value="truncate" />
     <ref role="1TJDcQ" node="7DTWJ$8kg8g" resolve="RoundingMode" />
   </node>
   <node concept="1TIwiD" id="7DTWJ$8nSWK">
