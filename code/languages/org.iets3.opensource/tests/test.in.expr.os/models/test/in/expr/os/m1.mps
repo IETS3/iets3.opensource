@@ -1272,6 +1272,41 @@
               <property role="pfQqC" value="stringSet4" />
             </node>
           </node>
+          <node concept="_fkuZ" id="46cplYxjwaI" role="_fkp5">
+            <node concept="_fku$" id="46cplYxjwaJ" role="_fkur" />
+            <node concept="1QScDb" id="46cplYxmSvH" role="_fkuY">
+              <node concept="2TEanv" id="46cplYxmSzg" role="1QScD9" />
+              <node concept="1QScDb" id="46cplYxl4ZL" role="30czhm">
+                <node concept="3iw6QE" id="46cplYxl93l" role="1QScD9">
+                  <node concept="3izI60" id="46cplYxl93m" role="3iAY4F">
+                    <node concept="30dDZf" id="46cplYxl94s" role="3izI61">
+                      <node concept="30bdrP" id="46cplYxlbLA" role="30dEs_">
+                        <property role="30bdrQ" value="X" />
+                      </node>
+                      <node concept="3izPEI" id="46cplYxl93n" role="30dEsF" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1XGHHM" id="46cplYxk3j8" role="30czhm">
+                  <ref role="1XGHHe" node="6HHp2WmV0Cp" resolve="stringSet" />
+                </node>
+              </node>
+            </node>
+            <node concept="3iBYfx" id="46cplYxlfRu" role="_fkuS">
+              <node concept="30bdrP" id="46cplYxlhdn" role="3iBYfI">
+                <property role="30bdrQ" value="1X" />
+              </node>
+              <node concept="30bdrP" id="46cplYxllfc" role="3iBYfI">
+                <property role="30bdrQ" value="2X" />
+              </node>
+              <node concept="30bdrP" id="46cplYxlm_i" role="3iBYfI">
+                <property role="30bdrQ" value="3X" />
+              </node>
+            </node>
+            <node concept="pfQqD" id="46cplYxkYiU" role="pfQ1b">
+              <property role="pfQqC" value="stringSet5" />
+            </node>
+          </node>
           <node concept="_fkuZ" id="6HHp2WmV0Da" role="_fkp5">
             <node concept="_fku$" id="6HHp2WmV0Db" role="_fkur" />
             <node concept="1QScDb" id="6HHp2WmV0Dc" role="_fkuY">
