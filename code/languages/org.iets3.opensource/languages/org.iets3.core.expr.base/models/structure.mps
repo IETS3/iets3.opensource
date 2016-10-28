@@ -703,8 +703,9 @@
     <property role="EcuMT" value="1206081519717706522" />
   </node>
   <node concept="1TIwiD" id="2Qbt$1tNGy4">
-    <property role="TrG5h" value="TypeCheckExpression" />
+    <property role="TrG5h" value="CastExpression" />
     <property role="EcuMT" value="3281846772293355652" />
+    <property role="34LRSv" value="cast" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="252QIDzztQk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1065,7 +1066,7 @@
     <property role="EcuMT" value="8219602584757553931" />
     <property role="3GE5qa" value="validity" />
     <property role="TrG5h" value="CheckTypeConstraintsExpr" />
-    <property role="34LRSv" value="checkTypeConstraints" />
+    <property role="34LRSv" value="check" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="78hTg1zmOGc" role="1TKVEi">
       <property role="IQ2ns" value="8219602584757553932" />
