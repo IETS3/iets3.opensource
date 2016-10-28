@@ -607,17 +607,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="46cplYxUeSo" role="3cqZAp">
-              <node concept="3cpWsn" id="46cplYxUeSp" role="3cpWs9">
-                <property role="TrG5h" value="evaledArg" />
-                <node concept="3uibUv" id="46cplYxUeSq" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                </node>
-                <node concept="rqRoa" id="46cplYxUeSr" role="33vP2m">
-                  <ref role="rqRob" to="700h:7kYh9Ws$zzU" resolve="arg" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="46cplYxUeSs" role="3cqZAp" />
             <node concept="3cpWs8" id="46cplYxUeSt" role="3cqZAp">
               <node concept="3cpWsn" id="46cplYxUeSu" role="3cpWs9">
