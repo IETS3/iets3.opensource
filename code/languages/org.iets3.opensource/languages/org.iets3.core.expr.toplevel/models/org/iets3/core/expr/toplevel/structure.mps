@@ -222,6 +222,9 @@
     <node concept="PrWs8" id="xu7xcKdQCE" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
+    <node concept="PrWs8" id="46cplYy1Svf" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
     <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type_old" />
