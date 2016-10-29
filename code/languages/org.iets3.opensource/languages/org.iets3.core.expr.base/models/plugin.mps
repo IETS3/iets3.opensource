@@ -2,7 +2,7 @@
 <model ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
@@ -894,7 +894,7 @@
     </node>
     <node concept="qq9P1" id="252QIDzE2FO" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="hm2y:2Qbt$1tNGy4" resolve="TypeCheckExpression" />
+      <ref role="qq9wM" to="hm2y:2Qbt$1tNGy4" resolve="CastExpression" />
       <node concept="3dA_Gj" id="252QIDzE6lV" role="3vQZUl">
         <node concept="9aQIb" id="252QIDzE6lX" role="3vcmbn">
           <node concept="3clFbS" id="252QIDzE6lZ" role="9aQI4">

@@ -637,54 +637,6 @@
       <property role="1uS6qo" value="bottom" />
     </node>
   </node>
-  <node concept="1TIwiD" id="mIQkxfpv7c">
-    <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="DataPortCategory_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="409503520730247628" />
-    <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
-    <node concept="asaX9" id="3kiu$uWRY01" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nnl" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/dataPort.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="mIQkxfpv9A">
-    <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="ConsumesPortCategory_old" />
-    <property role="34LRSv" value="consumes" />
-    <property role="EcuMT" value="409503520730247782" />
-    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory_old" />
-    <node concept="1TJgyi" id="mIQkxfrzIk" role="1TKVEl">
-      <property role="TrG5h" value="optional_old" />
-      <property role="IQ2nx" value="409503520730790804" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="3kiu$uWRY0g" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.components.functional.structure.ConsumesPortCategory&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="3kiu$uWRXZM" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nni" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/consumesPort.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="mIQkxfpvaK">
-    <property role="3GE5qa" value="components.ports.data" />
-    <property role="TrG5h" value="ProducesPortCategory_old" />
-    <property role="34LRSv" value="produces" />
-    <property role="EcuMT" value="409503520730247856" />
-    <ref role="1TJDcQ" node="mIQkxfpv7c" resolve="DataPortCategory_old" />
-    <node concept="asaX9" id="3kiu$uWRY0b" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nnk" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/producesPort.png" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="cJpacq1tb1">
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="ImportConnector" />
@@ -745,54 +697,6 @@
     </node>
     <node concept="1QGGSu" id="cEt5uj8Nnm" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/export.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="mIQkxfKjiq">
-    <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="ServicePortCategory_old" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="409503520736228506" />
-    <ref role="1TJDcQ" node="siw10H0or2" resolve="PortCategory" />
-    <node concept="asaX9" id="3kiu$uWRXZR" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nnp" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/servicePort.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="mIQkxfKjkw">
-    <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="ProvidesPortCategory_old" />
-    <property role="34LRSv" value="provides" />
-    <property role="EcuMT" value="409503520736228640" />
-    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory_old" />
-    <node concept="asaX9" id="3kiu$uWRY06" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nnn" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/providesPort.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="mIQkxfKjnz">
-    <property role="3GE5qa" value="components.ports.service" />
-    <property role="TrG5h" value="UsesPortCategory_old" />
-    <property role="34LRSv" value="uses" />
-    <property role="EcuMT" value="409503520736228835" />
-    <ref role="1TJDcQ" node="mIQkxfKjiq" resolve="ServicePortCategory_old" />
-    <node concept="1TJgyi" id="mIQkxfKjuV" role="1TKVEl">
-      <property role="TrG5h" value="optional_old" />
-      <property role="IQ2nx" value="409503520736229307" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="3kiu$uWRY0l" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.components.functional.structure.UsesPortCategory&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="3kiu$uWRXZW" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.components.functional&quot;" />
-    </node>
-    <node concept="1QGGSu" id="cEt5uj8Nno" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/usesPort.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="mIQkxg5ZSA">

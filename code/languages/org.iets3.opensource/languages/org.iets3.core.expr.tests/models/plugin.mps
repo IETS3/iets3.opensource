@@ -2,7 +2,7 @@
 <model ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -140,7 +140,7 @@
     </node>
     <node concept="qq9P1" id="252QIDys4Zq" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="av4b:ub9nkyHAba" resolve="TestItem" />
+      <ref role="qq9wM" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
       <node concept="3dA_Gj" id="252QIDys4ZI" role="3vQZUl">
         <node concept="9aQIb" id="252QIDys4ZK" role="3vcmbn">
           <node concept="3clFbS" id="252QIDys4ZM" role="9aQI4">
