@@ -2962,7 +2962,7 @@
               <node concept="3eOVzh" id="7kYh9WsShdC" role="3clFbw">
                 <node concept="2OqwBi" id="7kYh9WsShdD" role="3uHU7w">
                   <node concept="liA8E" id="v9lBEVgXjp" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                    <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                   </node>
                   <node concept="37vLTw" id="7kYh9WsShdE" role="2Oq$k0">
                     <ref role="3cqZAo" node="7kYh9WsShdd" resolve="l" />
