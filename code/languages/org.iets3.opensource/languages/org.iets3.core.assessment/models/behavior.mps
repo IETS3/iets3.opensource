@@ -54,6 +54,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -78,7 +84,7 @@
   </registry>
   <node concept="13h7C7" id="5ZLQMNq2fWb">
     <property role="3GE5qa" value="result" />
-    <ref role="13h7C2" to="330h:5ZLQMNq2awc" resolve="GenericTargetResult" />
+    <ref role="13h7C2" to="330h:5ZLQMNq2awc" resolve="GenericTraceResult" />
     <node concept="13hLZK" id="5ZLQMNq2fWc" role="13h7CW">
       <node concept="3clFbS" id="5ZLQMNq2fWd" role="2VODD2" />
     </node>
@@ -125,6 +131,11 @@
       <ref role="13i0hy" to="hwgx:7hIyKqbFNeu" resolve="runQuery" />
       <node concept="3Tm1VV" id="5ZLQMNq2g7v" role="1B3o_S" />
       <node concept="3clFbS" id="5ZLQMNq2g7y" role="3clF47">
+        <node concept="3SKdUt" id="5ZLQMNq7C6k" role="3cqZAp">
+          <node concept="3SKdUq" id="5ZLQMNq7C6m" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: need to implement logic for generic trace query" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5ZLQMNq2g7M" role="3cqZAp">
           <node concept="2ShNRf" id="5ZLQMNq2g7K" role="3clFbG">
             <node concept="2T8Vx0" id="5ZLQMNq2hEK" role="2ShVmc">
