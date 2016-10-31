@@ -1154,6 +1154,20 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="x8tpS_RkB_" resolve="IComponentInterfaceContent" />
     </node>
+    <node concept="1TJgyj" id="x8tpSAXuOU" role="1TKVEi">
+      <property role="IQ2ns" value="596856272745524538" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="governingPorts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="x8tpS_RkB_" resolve="IComponentInterfaceContent" />
+    </node>
+    <node concept="1TJgyj" id="x8tpSAXvhR" role="1TKVEi">
+      <property role="IQ2ns" value="596856272745526391" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="subordinatePorts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="x8tpS_RkB_" resolve="IComponentInterfaceContent" />
+    </node>
     <node concept="PrWs8" id="x8tpS_RkAd" role="PzmwI">
       <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
     </node>

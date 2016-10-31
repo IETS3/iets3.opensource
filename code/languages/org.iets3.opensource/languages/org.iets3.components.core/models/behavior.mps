@@ -5985,15 +5985,25 @@
       </node>
       <node concept="3clFbS" id="x8tpSA8agF" role="3clF47">
         <node concept="3clFbF" id="x8tpSA8agG" role="3cqZAp">
-          <node concept="2OqwBi" id="x8tpSA8agH" role="3clFbG">
-            <node concept="2OqwBi" id="x8tpSA8agI" role="2Oq$k0">
-              <node concept="13iPFW" id="x8tpSA8agJ" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="x8tpSA8agK" role="2OqNvi">
-                <ref role="3TtcxE" to="w9y2:x8tpS_RkBA" resolve="content" />
+          <node concept="2OqwBi" id="x8tpSAXz5L" role="3clFbG">
+            <node concept="2OqwBi" id="x8tpSAXxj5" role="2Oq$k0">
+              <node concept="2OqwBi" id="x8tpSA8agI" role="2Oq$k0">
+                <node concept="13iPFW" id="x8tpSA8agJ" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="x8tpSAXwUJ" role="2OqNvi">
+                  <ref role="3TtcxE" to="w9y2:x8tpSAXuOU" resolve="governingPorts" />
+                </node>
+              </node>
+              <node concept="4Tj9Z" id="x8tpSAXx$W" role="2OqNvi">
+                <node concept="2OqwBi" id="x8tpSAXxPI" role="576Qk">
+                  <node concept="13iPFW" id="x8tpSAXxDp" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="x8tpSAXyDx" role="2OqNvi">
+                    <ref role="3TtcxE" to="w9y2:x8tpSAXvhR" resolve="subordinatePorts" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="v3k3i" id="x8tpSA8agL" role="2OqNvi">
-              <node concept="chp4Y" id="x8tpSA8aRR" role="v3oSu">
+            <node concept="v3k3i" id="x8tpSAXzpY" role="2OqNvi">
+              <node concept="chp4Y" id="x8tpSAXztS" role="v3oSu">
                 <ref role="cht4Q" to="w9y2:6LfBX8YkpdW" resolve="Port" />
               </node>
             </node>

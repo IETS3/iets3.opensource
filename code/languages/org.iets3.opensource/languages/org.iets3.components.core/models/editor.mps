@@ -5,7 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="-1" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
@@ -10479,30 +10479,232 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="x8tpS_RrwR" role="2iSdaV" />
-      <node concept="3F2HdR" id="x8tpS_RrwS" role="3EZMnx">
-        <property role="S$F3r" value="true" />
-        <ref role="1NtTu8" to="w9y2:x8tpS_RkBA" resolve="content" />
-        <node concept="2iRkQZ" id="x8tpS_RrwT" role="2czzBx" />
-        <node concept="3F0ifn" id="x8tpS_RrwU" role="2czzBI">
-          <property role="3F0ifm" value="" />
-          <node concept="VPxyj" id="x8tpS_RrwV" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="4$FPG" id="x8tpS_RrwW" role="4_6I_">
-          <node concept="3clFbS" id="x8tpS_RrwX" role="2VODD2">
-            <node concept="3clFbF" id="x8tpS_RrwY" role="3cqZAp">
-              <node concept="2ShNRf" id="x8tpS_RrwZ" role="3clFbG">
-                <node concept="3zrR0B" id="x8tpS_Rrx0" role="2ShVmc">
-                  <node concept="3Tqbb2" id="x8tpS_Rrx1" role="3zrR0E">
-                    <ref role="ehGHo" to="w9y2:x8tpS_RowE" resolve="EmptyComponentInterfaceContent" />
+      <node concept="3EZMnI" id="x8tpSAOL_w" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="2iRkQZ" id="x8tpSAOL_x" role="2iSdaV" />
+        <node concept="3EZMnI" id="x8tpSAONaW" role="3EZMnx">
+          <node concept="3EZMnI" id="x8tpSAONDo" role="3EZMnx">
+            <node concept="2iRfu4" id="x8tpSAONDp" role="2iSdaV" />
+            <node concept="gc7cB" id="x8tpSAONDq" role="3EZMnx">
+              <node concept="3VJUX4" id="x8tpSAONDr" role="3YsKMw">
+                <node concept="3clFbS" id="x8tpSAONDs" role="2VODD2">
+                  <node concept="3clFbF" id="x8tpSAONDt" role="3cqZAp">
+                    <node concept="2ShNRf" id="x8tpSAONDu" role="3clFbG">
+                      <node concept="1pGfFk" id="x8tpSAONDv" role="2ShVmc">
+                        <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                        <node concept="pncrf" id="x8tpSAONDw" role="37wK5m" />
+                        <node concept="10M0yZ" id="x8tpSAONDx" role="37wK5m">
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3F0ifn" id="x8tpSAONDy" role="3EZMnx">
+              <property role="3F0ifm" value="parameter" />
+              <node concept="VechU" id="x8tpSAONDz" role="3F10Kt">
+                <property role="Vb096" value="gray" />
+              </node>
+            </node>
+            <node concept="gc7cB" id="x8tpSAOND$" role="3EZMnx">
+              <node concept="3VJUX4" id="x8tpSAOND_" role="3YsKMw">
+                <node concept="3clFbS" id="x8tpSAONDA" role="2VODD2">
+                  <node concept="3clFbF" id="x8tpSAONDB" role="3cqZAp">
+                    <node concept="2ShNRf" id="x8tpSAONDC" role="3clFbG">
+                      <node concept="1pGfFk" id="x8tpSAONDD" role="2ShVmc">
+                        <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                        <node concept="pncrf" id="x8tpSAONDE" role="37wK5m" />
+                        <node concept="10M0yZ" id="x8tpSAONDF" role="37wK5m">
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
+          <node concept="3F2HdR" id="x8tpSARVMK" role="3EZMnx">
+            <property role="S$F3r" value="false" />
+            <ref role="1NtTu8" to="w9y2:x8tpS_RkBA" resolve="content" />
+            <node concept="2iRkQZ" id="x8tpSARVML" role="2czzBx" />
+            <node concept="3F0ifn" id="x8tpSARVMM" role="2czzBI">
+              <property role="3F0ifm" value="" />
+              <node concept="VPxyj" id="x8tpSARVMN" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="4$FPG" id="x8tpSARVMO" role="4_6I_">
+              <node concept="3clFbS" id="x8tpSARVMP" role="2VODD2">
+                <node concept="3clFbF" id="x8tpSARVMQ" role="3cqZAp">
+                  <node concept="2ShNRf" id="x8tpSARVMR" role="3clFbG">
+                    <node concept="3zrR0B" id="x8tpSARVMS" role="2ShVmc">
+                      <node concept="3Tqbb2" id="x8tpSARVMT" role="3zrR0E">
+                        <ref role="ehGHo" to="w9y2:x8tpS_RowE" resolve="EmptyComponentInterfaceContent" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2iRkQZ" id="x8tpSAONaX" role="2iSdaV" />
         </node>
-        <node concept="1HlG4h" id="x8tpS_Rrx2" role="3EmGlc">
+        <node concept="3EZMnI" id="x8tpSARW4S" role="3EZMnx">
+          <node concept="VPM3Z" id="x8tpSARW4T" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3EZMnI" id="x8tpSARW4U" role="3EZMnx">
+            <node concept="3EZMnI" id="x8tpSARW4V" role="3EZMnx">
+              <node concept="2iRfu4" id="x8tpSARW4W" role="2iSdaV" />
+              <node concept="gc7cB" id="x8tpSARW4X" role="3EZMnx">
+                <node concept="3VJUX4" id="x8tpSARW4Y" role="3YsKMw">
+                  <node concept="3clFbS" id="x8tpSARW4Z" role="2VODD2">
+                    <node concept="3clFbF" id="x8tpSARW50" role="3cqZAp">
+                      <node concept="2ShNRf" id="x8tpSARW51" role="3clFbG">
+                        <node concept="1pGfFk" id="x8tpSARW52" role="2ShVmc">
+                          <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                          <node concept="pncrf" id="x8tpSARW53" role="37wK5m" />
+                          <node concept="10M0yZ" id="x8tpSARW54" role="37wK5m">
+                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3F0ifn" id="x8tpSARW55" role="3EZMnx">
+                <property role="3F0ifm" value="governing ports" />
+                <node concept="VechU" id="x8tpSARW56" role="3F10Kt">
+                  <property role="Vb096" value="gray" />
+                </node>
+              </node>
+              <node concept="gc7cB" id="x8tpSARW57" role="3EZMnx">
+                <node concept="3VJUX4" id="x8tpSARW58" role="3YsKMw">
+                  <node concept="3clFbS" id="x8tpSARW59" role="2VODD2">
+                    <node concept="3clFbF" id="x8tpSARW5a" role="3cqZAp">
+                      <node concept="2ShNRf" id="x8tpSARW5b" role="3clFbG">
+                        <node concept="1pGfFk" id="x8tpSARW5c" role="2ShVmc">
+                          <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                          <node concept="pncrf" id="x8tpSARW5d" role="37wK5m" />
+                          <node concept="10M0yZ" id="x8tpSARW5e" role="37wK5m">
+                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3F2HdR" id="x8tpSARW5g" role="3EZMnx">
+              <property role="S$F3r" value="false" />
+              <ref role="1NtTu8" to="w9y2:x8tpSAXuOU" resolve="governingPorts" />
+              <node concept="2iRkQZ" id="x8tpSARW5h" role="2czzBx" />
+              <node concept="3F0ifn" id="x8tpSARW5i" role="2czzBI">
+                <property role="3F0ifm" value="" />
+                <node concept="VPxyj" id="x8tpSARW5j" role="3F10Kt">
+                  <property role="VOm3f" value="true" />
+                </node>
+              </node>
+              <node concept="4$FPG" id="x8tpSARW5k" role="4_6I_">
+                <node concept="3clFbS" id="x8tpSARW5l" role="2VODD2">
+                  <node concept="3clFbF" id="x8tpSARW5m" role="3cqZAp">
+                    <node concept="2ShNRf" id="x8tpSARW5n" role="3clFbG">
+                      <node concept="3zrR0B" id="x8tpSARW5o" role="2ShVmc">
+                        <node concept="3Tqbb2" id="x8tpSARW5p" role="3zrR0E">
+                          <ref role="ehGHo" to="w9y2:x8tpS_RowE" resolve="EmptyComponentInterfaceContent" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2iRkQZ" id="x8tpSARW5q" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="x8tpSARW5r" role="3EZMnx">
+            <node concept="3EZMnI" id="x8tpSARW5s" role="3EZMnx">
+              <node concept="2iRfu4" id="x8tpSARW5t" role="2iSdaV" />
+              <node concept="gc7cB" id="x8tpSARW5u" role="3EZMnx">
+                <node concept="3VJUX4" id="x8tpSARW5v" role="3YsKMw">
+                  <node concept="3clFbS" id="x8tpSARW5w" role="2VODD2">
+                    <node concept="3clFbF" id="x8tpSARW5x" role="3cqZAp">
+                      <node concept="2ShNRf" id="x8tpSARW5y" role="3clFbG">
+                        <node concept="1pGfFk" id="x8tpSARW5z" role="2ShVmc">
+                          <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                          <node concept="pncrf" id="x8tpSARW5$" role="37wK5m" />
+                          <node concept="10M0yZ" id="x8tpSARW5_" role="37wK5m">
+                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3F0ifn" id="x8tpSARW5A" role="3EZMnx">
+                <property role="3F0ifm" value="subordinate ports" />
+                <node concept="VechU" id="x8tpSARW5B" role="3F10Kt">
+                  <property role="Vb096" value="gray" />
+                </node>
+              </node>
+              <node concept="gc7cB" id="x8tpSARW5C" role="3EZMnx">
+                <node concept="3VJUX4" id="x8tpSARW5D" role="3YsKMw">
+                  <node concept="3clFbS" id="x8tpSARW5E" role="2VODD2">
+                    <node concept="3clFbF" id="x8tpSARW5F" role="3cqZAp">
+                      <node concept="2ShNRf" id="x8tpSARW5G" role="3clFbG">
+                        <node concept="1pGfFk" id="x8tpSARW5H" role="2ShVmc">
+                          <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                          <node concept="pncrf" id="x8tpSARW5I" role="37wK5m" />
+                          <node concept="10M0yZ" id="x8tpSARW5J" role="37wK5m">
+                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2iRkQZ" id="x8tpSARW5L" role="2iSdaV" />
+            <node concept="3F2HdR" id="x8tpSARW5M" role="3EZMnx">
+              <property role="S$F3r" value="false" />
+              <ref role="1NtTu8" to="w9y2:x8tpSAXvhR" resolve="subordinatePorts" />
+              <node concept="2iRkQZ" id="x8tpSARW5N" role="2czzBx" />
+              <node concept="3F0ifn" id="x8tpSARW5O" role="2czzBI">
+                <property role="3F0ifm" value="" />
+                <node concept="VPxyj" id="x8tpSARW5P" role="3F10Kt">
+                  <property role="VOm3f" value="true" />
+                </node>
+              </node>
+              <node concept="4$FPG" id="x8tpSARW5Q" role="4_6I_">
+                <node concept="3clFbS" id="x8tpSARW5R" role="2VODD2">
+                  <node concept="3clFbF" id="x8tpSARW5S" role="3cqZAp">
+                    <node concept="2ShNRf" id="x8tpSARW5T" role="3clFbG">
+                      <node concept="3zrR0B" id="x8tpSARW5U" role="2ShVmc">
+                        <node concept="3Tqbb2" id="x8tpSARW5V" role="3zrR0E">
+                          <ref role="ehGHo" to="w9y2:x8tpS_RowE" resolve="EmptyComponentInterfaceContent" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="x8tpSARW5W" role="2iSdaV" />
+        </node>
+        <node concept="1HlG4h" id="x8tpS_Rrx2" role="AHCbl">
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
           <node concept="1HfYo3" id="x8tpS_Rrx3" role="1HlULh">
             <node concept="3TQlhw" id="x8tpS_Rrx4" role="1Hhtcw">
