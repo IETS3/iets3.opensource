@@ -971,6 +971,11 @@
           <property role="3LESm3" value="a1257096-7642-480c-b0e7-156bed67021a" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="6dLmQVByzRO" role="3bR37C">
+          <node concept="1Busua" id="6dLmQVByzRP" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wLtKNeSRPD" role="2G$12L">
         <property role="BnDLt" value="true" />
