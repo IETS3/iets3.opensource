@@ -110,12 +110,7 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1271,21 +1266,81 @@
     <property role="TrG5h" value="typeof_BlockExpression" />
     <property role="3GE5qa" value="block" />
     <node concept="3clFbS" id="49WTic8ij0_" role="18ibNy">
-      <node concept="3SKdUt" id="6KxoTHgLv$o" role="3cqZAp">
-        <node concept="3SKdUq" id="6KxoTHgLv$q" role="3SKWNk">
-          <property role="3SKdUp" value="Here we really would have to check if any type of any expression" />
+      <node concept="2Gpval" id="5ukrBtpVSVy" role="3cqZAp">
+        <node concept="2GrKxI" id="5ukrBtpVSV$" role="2Gsz3X">
+          <property role="TrG5h" value="e" />
+        </node>
+        <node concept="2OqwBi" id="5ukrBtpVT6i" role="2GsD0m">
+          <node concept="1YBJjd" id="5ukrBtpVSWq" role="2Oq$k0">
+            <ref role="1YBMHb" node="49WTic8ij0B" resolve="be" />
+          </node>
+          <node concept="3Tsc0h" id="5ukrBtpVTmy" role="2OqNvi">
+            <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5ukrBtpVSVC" role="2LFqv$">
+          <node concept="3clFbJ" id="5ukrBtpWsUW" role="3cqZAp">
+            <node concept="3clFbS" id="5ukrBtpWsUY" role="3clFbx">
+              <node concept="3N13vt" id="5ukrBtpWxYj" role="3cqZAp" />
+            </node>
+            <node concept="3clFbC" id="5ukrBtpWt8I" role="3clFbw">
+              <node concept="2OqwBi" id="5ukrBtpWw24" role="3uHU7w">
+                <node concept="2OqwBi" id="5ukrBtpWtBn" role="2Oq$k0">
+                  <node concept="1YBJjd" id="5ukrBtpWtis" role="2Oq$k0">
+                    <ref role="1YBMHb" node="49WTic8ij0B" resolve="be" />
+                  </node>
+                  <node concept="3Tsc0h" id="5ukrBtpWu04" role="2OqNvi">
+                    <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
+                  </node>
+                </node>
+                <node concept="1yVyf7" id="5ukrBtpWxJR" role="2OqNvi" />
+              </node>
+              <node concept="2GrUjf" id="5ukrBtpWt0l" role="3uHU7B">
+                <ref role="2Gs0qQ" node="5ukrBtpVSV$" resolve="e" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5ukrBtpVTps" role="3cqZAp">
+            <node concept="3fqX7Q" id="5ukrBtpWsEi" role="3clFbw">
+              <node concept="2OqwBi" id="5ukrBtpWsEk" role="3fr31v">
+                <node concept="2GrUjf" id="5ukrBtpWsEl" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="5ukrBtpVSV$" resolve="e" />
+                </node>
+                <node concept="1mIQ4w" id="5ukrBtpWsEm" role="2OqNvi">
+                  <node concept="chp4Y" id="5ukrBtpWsEn" role="cj9EA">
+                    <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="5ukrBtpVTpu" role="3clFbx">
+              <node concept="3clFbJ" id="5ukrBtpVVlS" role="3cqZAp">
+                <node concept="3fqX7Q" id="5ukrBtpVVXY" role="3clFbw">
+                  <node concept="2OqwBi" id="5ukrBtpVVY0" role="3fr31v">
+                    <node concept="2GrUjf" id="5ukrBtpVVY1" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5ukrBtpVSV$" resolve="e" />
+                    </node>
+                    <node concept="2qgKlT" id="5ukrBtpVVY2" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5ukrBtpVVlU" role="3clFbx">
+                  <node concept="2MkqsV" id="5ukrBtpVWb8" role="3cqZAp">
+                    <node concept="Xl_RD" id="5ukrBtpVWbn" role="2MkJ7o">
+                      <property role="Xl_RC" value="expressions without effect can only be used he in a val expression" />
+                    </node>
+                    <node concept="2GrUjf" id="5ukrBtpVWcY" role="2OEOjV">
+                      <ref role="2Gs0qQ" node="5ukrBtpVSV$" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="3SKdUt" id="6KxoTHgLv$R" role="3cqZAp">
-        <node concept="3SKdUq" id="6KxoTHgLv$T" role="3SKWNk">
-          <property role="3SKdUp" value="has an &lt;effect&gt; and then add this tag to the type of be." />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="6KxoTHgLv_q" role="3cqZAp">
-        <node concept="3SKdUq" id="6KxoTHgLv_s" role="3SKWNk">
-          <property role="3SKdUp" value="I do not know how to do this." />
-        </node>
-      </node>
+      <node concept="3clFbH" id="5ukrBtpVSV3" role="3cqZAp" />
       <node concept="1Z5TYs" id="49WTic8ij4M" role="3cqZAp">
         <node concept="mw_s8" id="49WTic8ij56" role="1ZfhKB">
           <node concept="1Z2H0r" id="49WTic8ij52" role="mwGJk">

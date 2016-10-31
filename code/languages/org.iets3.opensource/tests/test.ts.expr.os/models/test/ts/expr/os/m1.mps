@@ -3220,9 +3220,6 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWsuk" role="2zM23F">
-            <node concept="2gteS_" id="2M9Ik4CWsul" role="2gteVg">
-              <property role="2gteVv" value="0" />
-            </node>
             <node concept="2gteSW" id="2M9Ik4CWsum" role="2gteSx">
               <property role="2gteSQ" value="3" />
               <property role="2gteSD" value="8" />
@@ -3240,9 +3237,6 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWsPI" role="2zM23F">
-            <node concept="2gteS_" id="2M9Ik4CWsPJ" role="2gteVg">
-              <property role="2gteVv" value="0" />
-            </node>
             <node concept="2gteSW" id="2M9Ik4CWsPK" role="2gteSx">
               <property role="2gteSQ" value="9" />
               <property role="2gteSD" value="24" />

@@ -1294,6 +1294,10 @@
     <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
     <node concept="3EZMnI" id="67Y8mp$DN0$" role="2wV5jI">
+      <node concept="1kHk_G" id="67Y8mp$M9cS" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
       <node concept="3F0ifn" id="67Y8mp$DN0A" role="3EZMnx">
         <property role="3F0ifm" value="enum" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
@@ -1331,10 +1335,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="67Y8mp$DN0B" role="2iSdaV" />
-      <node concept="1kHk_G" id="67Y8mp$M9cS" role="3EZMnx">
-        <ref role="1NtTu8" to="yv47:67Y8mp$M9cx" resolve="qualified" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-      </node>
       <node concept="3F0ifn" id="67Y8mp$DN10" role="3EZMnx">
         <property role="3F0ifm" value="{" />
       </node>
