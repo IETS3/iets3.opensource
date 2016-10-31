@@ -134,9 +134,6 @@
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
-      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
-        <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -756,11 +753,11 @@
                             <node concept="4Tj9Z" id="x8tpSADkg7" role="2OqNvi">
                               <node concept="2OqwBi" id="x8tpSADkg8" role="576Qk">
                                 <node concept="2OqwBi" id="x8tpSADkg9" role="2Oq$k0">
-                                  <node concept="37vLTw" id="x8tpSADkga" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="x8tpSACFMS" resolve="allComponents" />
+                                  <node concept="37vLTw" id="x8tpSAIwIU" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="x8tpSADKFB" resolve="it" />
                                   </node>
-                                  <node concept="13MTOL" id="x8tpSADkgb" role="2OqNvi">
-                                    <ref role="13MTZf" to="w9y2:6LfBX8Yi4ps" resolve="contents" />
+                                  <node concept="3Tsc0h" id="x8tpSALFUY" role="2OqNvi">
+                                    <ref role="3TtcxE" to="w9y2:6LfBX8Yi4ps" resolve="contents" />
                                   </node>
                                 </node>
                                 <node concept="v3k3i" id="x8tpSADkgc" role="2OqNvi">
