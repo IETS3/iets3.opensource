@@ -984,6 +984,48 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="3FexrMiSOe$" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.repl.plugin" />
+        <property role="3LESm3" value="1157d4c9-6175-4550-96aa-aae0a9fdc06f" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="3FexrMiSOq2" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.core" />
+          <node concept="2Ry0Ak" id="3FexrMiSOq3" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3FexrMiSOq4" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.repl.plugin" />
+              <node concept="2Ry0Ak" id="3FexrMiSOJs" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.repl.plugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3FexrMiSOQ$" role="3bR37C">
+          <node concept="3bR9La" id="3FexrMiSOQ_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3FexrMiSOQA" role="3bR37C">
+          <node concept="3bR9La" id="3FexrMiSOQB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3FexrMiSOQC" role="3bR37C">
+          <node concept="3bR9La" id="3FexrMiSOQD" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3FexrMiSOQE" role="3bR37C">
+          <node concept="3bR9La" id="3FexrMiSOQF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3a2FJuC8s9O" resolve="org.iets3.core.expr.repl" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="5wLtKNeSRRB" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.base" />
