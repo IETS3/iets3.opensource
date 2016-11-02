@@ -152,7 +152,7 @@
         <node concept="2OqwBi" id="7D7uZV2GqFI" role="3clFbw">
           <node concept="2OqwBi" id="7D7uZV2Gqvc" role="2Oq$k0">
             <node concept="1YBJjd" id="7D7uZV2GqsN" role="2Oq$k0">
-              <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="ti" />
+              <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="abstractTestItem" />
             </node>
             <node concept="2Xjw5R" id="7D7uZV2GqzU" role="2OqNvi">
               <node concept="1xMEDy" id="7D7uZV2GqzW" role="1xVPHs">
@@ -175,7 +175,7 @@
               </node>
               <node concept="2OqwBi" id="7k$Bvd3epwH" role="33vP2m">
                 <node concept="1YBJjd" id="7k$Bvd3epwI" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="ti" />
+                  <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="abstractTestItem" />
                 </node>
                 <node concept="2qgKlT" id="78hTg1$XTC_" role="2OqNvi">
                   <ref role="37wK5l" to="xk6s:78hTg1$THJg" resolve="executeTest" />
@@ -200,7 +200,7 @@
                   </node>
                 </node>
                 <node concept="1YBJjd" id="7k$Bvd3epOH" role="2OEOjV">
-                  <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="ti" />
+                  <ref role="1YBMHb" node="7D7uZV2Gqsw" resolve="abstractTestItem" />
                 </node>
               </node>
             </node>
@@ -219,8 +219,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="7D7uZV2Gqsw" role="1YuTPh">
-      <property role="TrG5h" value="ti" />
-      <ref role="1YaFvo" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+      <property role="TrG5h" value="abstractTestItem" />
+      <ref role="1YaFvo" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     </node>
   </node>
   <node concept="Q5z_Y" id="7D7uZV2Gr27">

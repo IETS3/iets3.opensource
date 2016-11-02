@@ -188,6 +188,7 @@
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <property id="5974682372640371252" name="errmsg" index="xVyv2" />
         <child id="8219602584783494093" name="actual" index="mXJVd" />
       </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
@@ -3513,6 +3514,7 @@
             </node>
           </node>
           <node concept="mXNUv" id="6X2fUL7gVHo" role="_fkp5">
+            <property role="xVyv2" value="value is over minimum (80)" />
             <node concept="_emDc" id="6X2fUL7gVHF" role="mXJVd">
               <ref role="_emDf" node="2M9Ik4CWt6k" resolve="correctedBP" />
             </node>
