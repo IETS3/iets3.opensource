@@ -2,14 +2,15 @@
 <model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1)">
   <persistence version="9" />
   <languages>
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="0" />
-    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="0" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="2" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
-    <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="0" />
-    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="0" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
+    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
+    <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="-1" />
+    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -289,6 +290,15 @@
       </concept>
       <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
         <property id="7740953487933876080" name="label" index="1WsWdv" />
+      </concept>
+    </language>
+    <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
+      <concept id="1240669143552786953" name="org.iets3.core.expr.repl.structure.DefaultEntry" flags="ng" index="1gtNKa">
+        <child id="1240669143552786973" name="expression" index="1gtNKu" />
+      </concept>
+      <concept id="1240669143552786952" name="org.iets3.core.expr.repl.structure.REPL" flags="ng" index="1gtNKb">
+        <reference id="4237471344366123786" name="sourceNode" index="2C67UQ" />
+        <child id="3123720608934258677" name="entries" index="3ij$yy" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -3954,6 +3964,18 @@
           </node>
         </node>
         <node concept="_ixoA" id="TuTPrvJvGe" role="_iOnB" />
+      </node>
+    </node>
+  </node>
+  <node concept="1gtNKb" id="3FexrMiQHJk">
+    <property role="TrG5h" value="typedefs_repl_0" />
+    <ref role="2C67UQ" node="46cplYwWh24" />
+    <node concept="1gtNKa" id="3FexrMiQHJl" role="3ij$yy">
+      <node concept="1af_rf" id="3FexrMiQHJm" role="1gtNKu">
+        <ref role="1afhQb" node="2S3ZC$oEx6A" resolve="f" />
+        <node concept="30bXRB" id="3FexrMiQHJn" role="1afhQ5">
+          <property role="30bXRw" value="140" />
+        </node>
       </node>
     </node>
   </node>
