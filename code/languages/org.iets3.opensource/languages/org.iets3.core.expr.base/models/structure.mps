@@ -1018,6 +1018,9 @@
     <node concept="PrWs8" id="2PhSkOg8M7I" role="PzmwI">
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+    <node concept="PrWs8" id="53cOfDpiRRE" role="PzmwI">
+      <ref role="PrY4T" node="53cOfDpcBb9" resolve="IValidOtherwiseContainer" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
     <property role="TrG5h" value="IOptionDerefContext" />
@@ -1123,6 +1126,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="53cOfDpcBb9">
+    <property role="EcuMT" value="5822258191940088521" />
+    <property role="3GE5qa" value="bool" />
+    <property role="TrG5h" value="IValidOtherwiseContainer" />
   </node>
 </model>
 
