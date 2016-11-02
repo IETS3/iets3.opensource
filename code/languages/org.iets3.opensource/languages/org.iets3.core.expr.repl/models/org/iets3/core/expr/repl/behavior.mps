@@ -18,7 +18,8 @@
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -522,6 +523,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4b4fYXfnkWf" role="3cqZAp">
+          <node concept="37vLTI" id="4b4fYXfnmgK" role="3clFbG">
+            <node concept="3fqX7Q" id="4b4fYXfnmiw" role="37vLTx">
+              <node concept="2OqwBi" id="4b4fYXfnmBL" role="3fr31v">
+                <node concept="37vLTw" id="4b4fYXfnmqY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
+                </node>
+                <node concept="liA8E" id="4b4fYXfnn6v" role="2OqNvi">
+                  <ref role="37wK5l" node="ub9nkyPULV" resolve="isOk" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4b4fYXfnlk4" role="37vLTJ">
+              <node concept="13iPFW" id="4b4fYXfnkWd" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4b4fYXfnlJy" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:4b4fYXfmYWy" resolve="hasError" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2HpFPvT9wqG" role="3cqZAp">
           <node concept="3cpWsn" id="2HpFPvT9wqH" role="3cpWs9">
             <property role="TrG5h" value="last" />
@@ -659,6 +680,21 @@
         </node>
       </node>
       <node concept="10P_77" id="14RJwd1gH0Y" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4b4fYXfoebd" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="highlightError" />
+      <ref role="13i0hy" to="gdgh:4b4fYXfo1HZ" resolve="highlightError" />
+      <node concept="3Tm1VV" id="4b4fYXfoebe" role="1B3o_S" />
+      <node concept="3clFbS" id="4b4fYXfoebj" role="3clF47">
+        <node concept="3clFbF" id="4b4fYXfof3c" role="3cqZAp">
+          <node concept="3clFbT" id="4b4fYXfof3b" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4b4fYXfoebk" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="ub9nkyOIeW">
