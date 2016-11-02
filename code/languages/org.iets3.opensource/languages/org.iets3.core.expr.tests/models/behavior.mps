@@ -21,6 +21,8 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1731,20 +1733,26 @@
         <node concept="3Tqbb2" id="uGVYUilG_9" role="1tU5fm" />
       </node>
     </node>
-    <node concept="13i0hz" id="ub9nkyPQAX" role="13h7CS">
+    <node concept="13i0hz" id="3a2FJuC70jg" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="runManually" />
       <ref role="13i0hy" to="gdgh:3R3AIvumrTm" resolve="runManually" />
-      <node concept="3Tm1VV" id="ub9nkyPQAY" role="1B3o_S" />
-      <node concept="3clFbS" id="ub9nkyPQB1" role="3clF47">
+      <node concept="3Tm1VV" id="3a2FJuC70jh" role="1B3o_S" />
+      <node concept="3clFbS" id="3a2FJuC70jm" role="3clF47">
         <node concept="3clFbF" id="ub9nkyPR2W" role="3cqZAp">
           <node concept="BsUDl" id="78hTg1$TINV" role="3clFbG">
             <ref role="37wK5l" node="78hTg1$THJg" resolve="executeTest" />
           </node>
         </node>
       </node>
-      <node concept="3cqZAl" id="ub9nkyPQB2" role="3clF45" />
+      <node concept="37vLTG" id="3a2FJuC70jn" role="3clF46">
+        <property role="TrG5h" value="edCtxOrNull" />
+        <node concept="3uibUv" id="3a2FJuC70jo" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3a2FJuC70jp" role="3clF45" />
     </node>
     <node concept="13i0hz" id="ub9nkyPQB3" role="13h7CS">
       <property role="13i0iv" value="false" />
