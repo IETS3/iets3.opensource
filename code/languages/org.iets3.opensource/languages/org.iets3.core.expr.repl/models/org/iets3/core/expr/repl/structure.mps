@@ -78,6 +78,9 @@
     <node concept="PrWs8" id="3a2FJuC885U" role="PzmwI">
       <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
     </node>
+    <node concept="PrWs8" id="3FexrMiSAuE" role="PzmwI">
+      <ref role="PrY4T" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
+    </node>
     <node concept="PrWs8" id="3a2FJuC8866" role="PzmwI">
       <ref role="PrY4T" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
     </node>
