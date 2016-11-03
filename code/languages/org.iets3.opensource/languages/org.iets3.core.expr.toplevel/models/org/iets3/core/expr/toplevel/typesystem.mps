@@ -1198,21 +1198,6 @@
         </node>
         <node concept="3clFbS" id="3Y6fbK16Bze" role="3clFbx">
           <node concept="1ZobV4" id="3Y6fbK16CF9" role="3cqZAp">
-            <node concept="mw_s8" id="3Y6fbK16CFR" role="1ZfhKB">
-              <node concept="2OqwBi" id="3Y6fbK16CX6" role="mwGJk">
-                <node concept="2OqwBi" id="3Y6fbK16CIx" role="2Oq$k0">
-                  <node concept="1YBJjd" id="3Y6fbK16CFP" role="2Oq$k0">
-                    <ref role="1YBMHb" node="3Y6fbK16ByD" resolve="el" />
-                  </node>
-                  <node concept="2qgKlT" id="3Y6fbK16CSN" role="2OqNvi">
-                    <ref role="37wK5l" to="nu60:67Y8mp$M9$v" resolve="enumDecl" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="3Y6fbK16DbT" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yv47:2MpPNJw_h8y" resolve="type" />
-                </node>
-              </node>
-            </node>
             <node concept="mw_s8" id="3Y6fbK16CFc" role="1ZfhK$">
               <node concept="1Z2H0r" id="3Y6fbK16CnS" role="mwGJk">
                 <node concept="2OqwBi" id="3Y6fbK16Cr4" role="1Z2MuG">
@@ -1221,6 +1206,23 @@
                   </node>
                   <node concept="3TrEf2" id="3Y6fbK16C$Q" role="2OqNvi">
                     <ref role="3Tt5mk" to="yv47:3Y6fbK15FM4" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="5ukrBtpYOL3" role="1ZfhKB">
+              <node concept="1Z2H0r" id="5ukrBtpYOL1" role="mwGJk">
+                <node concept="2OqwBi" id="5ukrBtpYPEz" role="1Z2MuG">
+                  <node concept="2OqwBi" id="5ukrBtpYOXX" role="2Oq$k0">
+                    <node concept="1YBJjd" id="5ukrBtpYOPQ" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3Y6fbK16ByD" resolve="el" />
+                    </node>
+                    <node concept="2qgKlT" id="5ukrBtpYPkH" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:67Y8mp$M9$v" resolve="enumDecl" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5ukrBtpYQ6W" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yv47:2MpPNJw_h8y" resolve="type" />
                   </node>
                 </node>
               </node>
