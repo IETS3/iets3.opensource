@@ -2,13 +2,14 @@
 <model ref="r:1b061ae3-c48a-469b-9d37-88c137c23693(org.iets3.core.trace.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
+    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="ci3w" ref="r:55d9f540-8864-4fa2-9847-b98db71180c3(org.iets3.core.trace.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -21,6 +22,7 @@
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
@@ -42,8 +44,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -163,6 +168,48 @@
     </node>
     <node concept="13hLZK" id="5ZLQMNq2mqJ" role="13h7CW">
       <node concept="3clFbS" id="5ZLQMNq2mqK" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7qN5a9PfB6V">
+    <ref role="13h7C2" to="ci3w:1PzuxQOT$Zy" resolve="TraceAttributeValue" />
+    <node concept="13hLZK" id="7qN5a9PfB6W" role="13h7CW">
+      <node concept="3clFbS" id="7qN5a9PfB6X" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7qN5a9PfBbi" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTraceSource" />
+      <ref role="13i0hy" node="7qN5a9Pfhlm" resolve="getTraceSource" />
+      <node concept="3Tm1VV" id="7qN5a9PfBbj" role="1B3o_S" />
+      <node concept="3clFbS" id="7qN5a9PfBbm" role="3clF47">
+        <node concept="3cpWs6" id="7qN5a9PfBb$" role="3cqZAp">
+          <node concept="2OqwBi" id="7qN5a9PfBl7" role="3cqZAk">
+            <node concept="13iPFW" id="7qN5a9PfBbP" role="2Oq$k0" />
+            <node concept="2Xjw5R" id="7qN5a9PfBxe" role="2OqNvi">
+              <node concept="1xMEDy" id="7qN5a9PfBxg" role="1xVPHs">
+                <node concept="chp4Y" id="7qN5a9PfBxZ" role="ri$Ld">
+                  <ref role="cht4Q" to="138:3NBP8_OgMVd" resolve="IAttributed" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7qN5a9PfBbn" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7qN5a9Pfhlb">
+    <ref role="13h7C2" to="ci3w:1PzuxQOT_0Z" resolve="ITrace" />
+    <node concept="13i0hz" id="7qN5a9Pfhlm" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTraceSource" />
+      <node concept="3Tm1VV" id="7qN5a9Pfhln" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7qN5a9Pfkh3" role="3clF45" />
+      <node concept="3clFbS" id="7qN5a9Pfhlp" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="7qN5a9Pfhlc" role="13h7CW">
+      <node concept="3clFbS" id="7qN5a9Pfhld" role="2VODD2" />
     </node>
   </node>
 </model>

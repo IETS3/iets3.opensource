@@ -50,6 +50,7 @@
       <concept id="8449131619432941427" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Super" flags="ng" index="L$LW2" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -117,6 +118,7 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -574,6 +576,41 @@
           <node concept="VPM3Z" id="2HpFPvT6TZf" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+          <node concept="VechU" id="4b4fYXfn8ii" role="3F10Kt">
+            <node concept="3ZlJ5R" id="4b4fYXfn9io" role="VblUZ">
+              <node concept="3clFbS" id="4b4fYXfn9ip" role="2VODD2">
+                <node concept="3clFbJ" id="4b4fYXfnchb" role="3cqZAp">
+                  <node concept="2OqwBi" id="4b4fYXfncuo" role="3clFbw">
+                    <node concept="pncrf" id="4b4fYXfnchk" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4b4fYXfncO_" role="2OqNvi">
+                      <ref role="3TsBF5" to="wtll:4b4fYXfmYWy" resolve="hasError" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="4b4fYXfnchd" role="3clFbx">
+                    <node concept="3cpWs6" id="4b4fYXfncY2" role="3cqZAp">
+                      <node concept="2ShNRf" id="4b4fYXfo02y" role="3cqZAk">
+                        <node concept="1pGfFk" id="4b4fYXfo02x" role="2ShVmc">
+                          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                          <node concept="3cmrfG" id="4b4fYXfo0co" role="37wK5m">
+                            <property role="3cmrfH" value="252" />
+                          </node>
+                          <node concept="3cmrfG" id="4b4fYXfo0NX" role="37wK5m">
+                            <property role="3cmrfH" value="154" />
+                          </node>
+                          <node concept="3cmrfG" id="4b4fYXfo1p1" role="37wK5m">
+                            <property role="3cmrfH" value="167" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4b4fYXfnd$s" role="3cqZAp">
+                  <node concept="10Nm6u" id="4b4fYXfnd$q" role="3clFbG" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="14RJwd1gGsc" role="3EZMnx">
@@ -700,6 +737,21 @@
             </node>
           </node>
           <node concept="2iRfu4" id="3FexrMiPNZj" role="2iSdaV" />
+          <node concept="pkWqt" id="4b4fYXfomT1" role="pqm2j">
+            <node concept="3clFbS" id="4b4fYXfomT2" role="2VODD2">
+              <node concept="3clFbF" id="4b4fYXfont3" role="3cqZAp">
+                <node concept="3y3z36" id="4b4fYXfopmG" role="3clFbG">
+                  <node concept="10Nm6u" id="4b4fYXfopyd" role="3uHU7w" />
+                  <node concept="2OqwBi" id="4b4fYXfonMq" role="3uHU7B">
+                    <node concept="pncrf" id="4b4fYXfont2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4b4fYXfooEK" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wtll:3FexrMiPJGa" resolve="sourceNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="gc7cB" id="4tXyFaWwywB" role="3EZMnx">

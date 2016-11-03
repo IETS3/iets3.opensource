@@ -292,15 +292,6 @@
         <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
     </language>
-    <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
-      <concept id="1240669143552786953" name="org.iets3.core.expr.repl.structure.DefaultEntry" flags="ng" index="1gtNKa">
-        <child id="1240669143552786973" name="expression" index="1gtNKu" />
-      </concept>
-      <concept id="1240669143552786952" name="org.iets3.core.expr.repl.structure.REPL" flags="ng" index="1gtNKb">
-        <reference id="4237471344366123786" name="sourceNode" index="2C67UQ" />
-        <child id="3123720608934258677" name="entries" index="3ij$yy" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -3693,7 +3684,7 @@
             </node>
           </node>
           <node concept="mXNUv" id="6X2fUL7gVHo" role="_fkp5">
-            <property role="xVyv2" value="value is over minimum (80)" />
+            <property role="xVyv2" value="correctedValue: value is over minimum (80)" />
             <node concept="_emDc" id="6X2fUL7gVHF" role="mXJVd">
               <ref role="_emDf" node="2M9Ik4CWt6k" resolve="correctedBP" />
             </node>
@@ -3964,18 +3955,6 @@
           </node>
         </node>
         <node concept="_ixoA" id="TuTPrvJvGe" role="_iOnB" />
-      </node>
-    </node>
-  </node>
-  <node concept="1gtNKb" id="3FexrMiQHJk">
-    <property role="TrG5h" value="typedefs_repl_0" />
-    <ref role="2C67UQ" node="46cplYwWh24" />
-    <node concept="1gtNKa" id="3FexrMiQHJl" role="3ij$yy">
-      <node concept="1af_rf" id="3FexrMiQHJm" role="1gtNKu">
-        <ref role="1afhQb" node="2S3ZC$oEx6A" resolve="f" />
-        <node concept="30bXRB" id="3FexrMiQHJn" role="1afhQ5">
-          <property role="30bXRw" value="140" />
-        </node>
       </node>
     </node>
   </node>

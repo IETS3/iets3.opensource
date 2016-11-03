@@ -242,5 +242,13 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4_qY3E4CWhU">
+    <property role="EcuMT" value="5285810042889815162" />
+    <property role="TrG5h" value="EmptyTestItem" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="PrWs8" id="4_qY3E4CWiy" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
 </model>
 
