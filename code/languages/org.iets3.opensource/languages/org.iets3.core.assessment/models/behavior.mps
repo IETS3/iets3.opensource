@@ -9,7 +9,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
-    <import index="phna" ref="r:dedab9d2-2f32-4763-b3e7-6f521f229675(org.iets3.core.trace.plugin)" />
+    <import index="bu66" ref="r:6cac2360-e204-4081-891f-7db5759e7f2a(org.iets3.core.assessment.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -136,9 +136,9 @@
       <node concept="3Tm1VV" id="5ZLQMNq2g7v" role="1B3o_S" />
       <node concept="3clFbS" id="5ZLQMNq2g7y" role="3clF47">
         <node concept="3clFbF" id="52SPUvE4qhf" role="3cqZAp">
-          <node concept="2YIFZM" id="4I$2FraqOcf" role="3clFbG">
-            <ref role="1Pybhc" to="phna:7cij$fOoIzi" resolve="GenericTraceHelper" />
-            <ref role="37wK5l" to="phna:4I$2FraqNWQ" resolve="findTraceResult" />
+          <node concept="2YIFZM" id="1lUgLJUnMWZ" role="3clFbG">
+            <ref role="37wK5l" to="bu66:4I$2FraqNWQ" resolve="findTraceResult" />
+            <ref role="1Pybhc" to="bu66:7cij$fOoIzi" resolve="GenericTraceHelper" />
             <node concept="2OqwBi" id="1lUgLJUmgVE" role="37wK5m">
               <node concept="13iPFW" id="1lUgLJUmgVF" role="2Oq$k0" />
               <node concept="3TrEf2" id="1lUgLJUmgVG" role="2OqNvi">

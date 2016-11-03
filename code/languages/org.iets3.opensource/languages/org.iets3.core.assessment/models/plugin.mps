@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dedab9d2-2f32-4763-b3e7-6f521f229675(org.iets3.core.trace.plugin)">
+<model ref="r:6cac2360-e204-4081-891f-7db5759e7f2a(org.iets3.core.assessment.plugin)">
   <persistence version="9" />
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="tpci" ref="r:00000000-0000-4000-0000-011c8959028e(jetbrains.mps.lang.structure.findUsages)" />
-    <import index="g4jo" ref="r:d98d04fb-4a60-4106-81cf-6cb40b67de4d(jetbrains.mps.ide.findusages.model)" />
-    <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ci3w" ref="r:55d9f540-8864-4fa2-9847-b98db71180c3(org.iets3.core.trace.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
     <import index="fp62" ref="r:1b061ae3-c48a-469b-9d37-88c137c23693(org.iets3.core.trace.behavior)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -309,11 +308,11 @@
                             <ref role="2pIpSl" to="330h:5ZLQMNq2g6O" resolve="traceSource" />
                             <node concept="36biLy" id="1lUgLJUlyGW" role="2pJxcZ">
                               <node concept="2OqwBi" id="1lUgLJUlyGX" role="36biLW">
-                                <node concept="2qgKlT" id="1lUgLJUlyGZ" role="2OqNvi">
-                                  <ref role="37wK5l" to="fp62:5ZLQMNq2mr9" resolve="getSource" />
-                                </node>
                                 <node concept="37vLTw" id="1lUgLJUlzYk" role="2Oq$k0">
                                   <ref role="3cqZAo" node="1lUgLJUly$1" resolve="it" />
+                                </node>
+                                <node concept="2qgKlT" id="1HLccB87vku" role="2OqNvi">
+                                  <ref role="37wK5l" to="fp62:7qN5a9Pfhlm" resolve="getTraceSource" />
                                 </node>
                               </node>
                             </node>
@@ -326,7 +325,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="1lUgLJUlyH2" role="3cqZAp" />
                   <node concept="3clFbF" id="1lUgLJUlyH3" role="3cqZAp">
                     <node concept="2OqwBi" id="1lUgLJUlyH4" role="3clFbG">
                       <node concept="2OqwBi" id="1lUgLJUlyH5" role="2Oq$k0">
@@ -340,7 +338,6 @@
                       <node concept="2es0OD" id="1lUgLJUlyH8" role="2OqNvi">
                         <node concept="1bVj0M" id="1lUgLJUlyH9" role="23t8la">
                           <node concept="3clFbS" id="1lUgLJUlyHa" role="1bW5cS">
-                            <node concept="3clFbH" id="1lUgLJUlyHb" role="3cqZAp" />
                             <node concept="3clFbF" id="1lUgLJUlyHc" role="3cqZAp">
                               <node concept="2OqwBi" id="1lUgLJUlyHd" role="3clFbG">
                                 <node concept="2OqwBi" id="1lUgLJUlyHe" role="2Oq$k0">
@@ -382,6 +379,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="1lUgLJUmUh8" role="3cqZAp" />
                   <node concept="3clFbF" id="1lUgLJUlyHr" role="3cqZAp">
                     <node concept="2OqwBi" id="1lUgLJUlyHs" role="3clFbG">
                       <node concept="37vLTw" id="1lUgLJUlyHt" role="2Oq$k0">
@@ -394,7 +392,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="1lUgLJUly_K" role="3cqZAp" />
                 </node>
                 <node concept="Rh6nW" id="1lUgLJUly$1" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
@@ -451,20 +448,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1lUgLJUlxhk" role="3cqZAp" />
-        <node concept="3clFbH" id="1lUgLJUlcbC" role="3cqZAp" />
         <node concept="3clFbF" id="1lUgLJUlclF" role="3cqZAp">
           <node concept="37vLTw" id="1lUgLJUlclD" role="3clFbG">
             <ref role="3cqZAo" node="1lUgLJUlc2x" resolve="results" />
           </node>
         </node>
-        <node concept="3clFbH" id="1lUgLJUlbTG" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="1lUgLJUl8Wq" role="1B3o_S" />
       <node concept="2I9FWS" id="1lUgLJUl8Z9" role="3clF45">
         <ref role="2I9WkF" to="330h:5ZLQMNq2awc" resolve="GenericTraceResult" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1lUgLJUmWZE" role="jymVt" />
     <node concept="2tJIrI" id="7cij$fOoN2x" role="jymVt" />
     <node concept="2tJIrI" id="7cij$fOoN3E" role="jymVt" />
     <node concept="2tJIrI" id="7cij$fOoIBi" role="jymVt" />
