@@ -3693,7 +3693,7 @@
             </node>
           </node>
           <node concept="mXNUv" id="6X2fUL7gVHo" role="_fkp5">
-            <property role="xVyv2" value="value is over minimum (80)" />
+            <property role="xVyv2" value="correctedValue: value is over minimum (80)" />
             <node concept="_emDc" id="6X2fUL7gVHF" role="mXJVd">
               <ref role="_emDf" node="2M9Ik4CWt6k" resolve="correctedBP" />
             </node>
