@@ -111,6 +111,11 @@
       <property role="TrG5h" value="hasBeenEvaled" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4b4fYXfmYWy" role="1TKVEl">
+      <property role="IQ2nx" value="4811040598999691042" />
+      <property role="TrG5h" value="hasError" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="14RJwd1g88L">
     <property role="EcuMT" value="1240669143552786993" />
