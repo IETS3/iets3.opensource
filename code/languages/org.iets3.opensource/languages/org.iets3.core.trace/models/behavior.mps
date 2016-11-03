@@ -8,6 +8,7 @@
   <imports>
     <import index="ci3w" ref="r:55d9f540-8864-4fa2-9847-b98db71180c3(org.iets3.core.trace.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -143,7 +144,7 @@
       <property role="TrG5h" value="getSource" />
       <node concept="3Tm1VV" id="5ZLQMNq2mra" role="1B3o_S" />
       <node concept="3Tqbb2" id="5ZLQMNq2mrp" role="3clF45">
-        <ref role="ehGHo" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+        <ref role="ehGHo" to="138:3NBP8_OgMVd" resolve="IAttributed" />
       </node>
       <node concept="3clFbS" id="5ZLQMNq2mrc" role="3clF47">
         <node concept="3clFbF" id="5ZLQMNq2mrX" role="3cqZAp">
@@ -151,8 +152,8 @@
             <node concept="13iPFW" id="5ZLQMNq2mrW" role="2Oq$k0" />
             <node concept="2Xjw5R" id="5ZLQMNq2mOR" role="2OqNvi">
               <node concept="1xMEDy" id="5ZLQMNq2mOT" role="1xVPHs">
-                <node concept="chp4Y" id="5ZLQMNq2mR6" role="ri$Ld">
-                  <ref role="cht4Q" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+                <node concept="chp4Y" id="52SPUvE3IAm" role="ri$Ld">
+                  <ref role="cht4Q" to="138:3NBP8_OgMVd" resolve="IAttributed" />
                 </node>
               </node>
             </node>
