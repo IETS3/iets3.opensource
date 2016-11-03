@@ -198,6 +198,7 @@
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
+      <concept id="5285810042919695066" name="com.mbeddr.mpsutil.interpreter.structure.CoverageExpression" flags="ng" index="3fckFw" />
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
         <property id="8845772667389641968" name="cache" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
@@ -525,6 +526,7 @@
                       <ref role="3cqZAo" node="15mJ3JeE5sW" resolve="evaluatedValue" />
                     </node>
                     <node concept="oxNuS" id="15mJ3JeE5_a" role="37wK5m" />
+                    <node concept="3fckFw" id="4_qY3E6y7oj" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="7D7uZV2sIqx" role="3cqZAp">
@@ -591,6 +593,7 @@
                   <ref role="3cqZAo" node="7D7uZV2sI73" resolve="rl" />
                 </node>
                 <node concept="oxNuS" id="15mJ3JeDKrB" role="37wK5m" />
+                <node concept="3fckFw" id="4_qY3E6y35i" role="37wK5m" />
               </node>
             </node>
             <node concept="3cpWs6" id="7D7uZV2vMJ4" role="3cqZAp">
@@ -667,6 +670,7 @@
                       <ref role="3cqZAo" node="6tw6$5H2G65" resolve="cached" />
                     </node>
                     <node concept="oxNuS" id="78hTg1_DDR7" role="37wK5m" />
+                    <node concept="3fckFw" id="4_qY3E6y7cz" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="3cpWs6" id="6tw6$5H2Gll" role="3cqZAp">
@@ -718,6 +722,7 @@
                   <ref role="3cqZAo" node="KaZMgyadbI" resolve="value" />
                 </node>
                 <node concept="oxNuS" id="252QIDym3vV" role="37wK5m" />
+                <node concept="3fckFw" id="4_qY3E6y6ZF" role="37wK5m" />
               </node>
             </node>
             <node concept="3clFbF" id="6tw6$5H2Gxg" role="3cqZAp">

@@ -223,6 +223,7 @@
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
+      <concept id="5285810042919695066" name="com.mbeddr.mpsutil.interpreter.structure.CoverageExpression" flags="ng" index="3fckFw" />
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
         <property id="8845772667389641968" name="cache" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
@@ -375,6 +376,7 @@
             <ref role="rqRob" to="hm2y:78hTg1zmOGc" resolve="expr" />
           </node>
           <node concept="oxNuS" id="78hTg1$9E7p" role="37wK5m" />
+          <node concept="3fckFw" id="4_qY3E6y35i" role="37wK5m" />
         </node>
       </node>
     </node>
@@ -934,6 +936,7 @@
                   <ref role="3cqZAo" node="252QIDzE6mn" resolve="res" />
                 </node>
                 <node concept="oxNuS" id="252QIDym4fp" role="37wK5m" />
+                <node concept="3fckFw" id="4_qY3E6xXKG" role="37wK5m" />
               </node>
             </node>
             <node concept="3cpWs6" id="252QIDzE6qE" role="3cqZAp">
@@ -3143,6 +3146,9 @@
                         <node concept="37vLTw" id="3Y6fbK1oSn1" role="37wK5m">
                           <ref role="3cqZAo" node="252QIDylZTG" resolve="ctx" />
                         </node>
+                        <node concept="37vLTw" id="4_qY3E6xUCo" role="37wK5m">
+                          <ref role="3cqZAo" node="4_qY3E6xU8e" resolve="coverage" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -3242,6 +3248,12 @@
           <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
         </node>
       </node>
+      <node concept="37vLTG" id="4_qY3E6xU8e" role="3clF46">
+        <property role="TrG5h" value="coverage" />
+        <node concept="3uibUv" id="4_qY3E6xUtD" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="78hTg1$9Do3" role="jymVt" />
     <node concept="2YIFZL" id="78hTg1$9rHj" role="jymVt">
@@ -3339,6 +3351,9 @@
                         </node>
                         <node concept="37vLTw" id="78hTg1$9rHN" role="37wK5m">
                           <ref role="3cqZAo" node="78hTg1$9rIg" resolve="ctx" />
+                        </node>
+                        <node concept="37vLTw" id="4_qY3E6xVr0" role="37wK5m">
+                          <ref role="3cqZAo" node="4_qY3E6xUQT" resolve="coverage" />
                         </node>
                       </node>
                     </node>
@@ -3465,6 +3480,12 @@
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="78hTg1$9rIh" role="1tU5fm">
           <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4_qY3E6xUQT" role="3clF46">
+        <property role="TrG5h" value="coverage" />
+        <node concept="3uibUv" id="4_qY3E6xV7r" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
         </node>
       </node>
     </node>
