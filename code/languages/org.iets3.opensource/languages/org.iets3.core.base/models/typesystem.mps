@@ -57,6 +57,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
@@ -141,13 +142,23 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3fqX7Q" id="3R3AIvuntOL" role="3clFbw">
-                      <node concept="2OqwBi" id="3R3AIvuntON" role="3fr31v">
-                        <node concept="37vLTw" id="3R3AIvuntOO" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
+                    <node concept="1Wc70l" id="4b4fYXfo9Q4" role="3clFbw">
+                      <node concept="2OqwBi" id="4b4fYXfoaad" role="3uHU7w">
+                        <node concept="1YBJjd" id="4b4fYXfoa2h" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                         </node>
-                        <node concept="liA8E" id="5zG5$LyexhQ" role="2OqNvi">
-                          <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
+                        <node concept="2qgKlT" id="4b4fYXfoasc" role="2OqNvi">
+                          <ref role="37wK5l" to="gdgh:4b4fYXfo1HZ" resolve="highlightError" />
+                        </node>
+                      </node>
+                      <node concept="3fqX7Q" id="3R3AIvuntOL" role="3uHU7B">
+                        <node concept="2OqwBi" id="3R3AIvuntON" role="3fr31v">
+                          <node concept="37vLTw" id="3R3AIvuntOO" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
+                          </node>
+                          <node concept="liA8E" id="5zG5$LyexhQ" role="2OqNvi">
+                            <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
+                          </node>
                         </node>
                       </node>
                     </node>
