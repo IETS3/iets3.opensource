@@ -85,7 +85,6 @@
   <dependencies>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</dependency>
-    <dependency reexport="false">be5191a9-3476-47ca-b2a7-a426623add55(org.iets3.core.assessment)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
