@@ -1254,7 +1254,7 @@
                         </node>
                         <node concept="3cpWs3" id="78hTg1$Pi2b" role="3uHU7B">
                           <node concept="Xl_RD" id="78hTg1$Pi2c" role="3uHU7B">
-                            <property role="Xl_RC" value="value is over minimum (" />
+                            <property role="Xl_RC" value="value is over maximum (" />
                           </node>
                           <node concept="2OqwBi" id="78hTg1$Pi2e" role="3uHU7w">
                             <node concept="13iPFW" id="78hTg1$Pi2f" role="2Oq$k0" />
