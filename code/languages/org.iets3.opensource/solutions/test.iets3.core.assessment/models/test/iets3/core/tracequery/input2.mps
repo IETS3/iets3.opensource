@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)">
+<model ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.sandbox" version="0" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
   </languages>
   <imports />
   <registry>
@@ -43,9 +43,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.sandbox">
-      <concept id="1977415354602970500" name="org.iets3.core.trace.sandbox.structure.RealizesKind" flags="ng" index="3jWAPd" />
-      <concept id="1977415354602911755" name="org.iets3.core.trace.sandbox.structure.DefaultTrace" flags="ng" index="3jWOz2" />
+    <language id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test">
+      <concept id="1977415354602970500" name="org.iets3.core.trace.test.structure.RealizesKind" flags="ng" index="3jWAPd" />
+      <concept id="1977415354602911755" name="org.iets3.core.trace.test.structure.DefaultTrace" flags="ng" index="3jWOz2" />
     </language>
   </registry>
   <node concept="1i1ALs" id="1HLccB8wSqj">

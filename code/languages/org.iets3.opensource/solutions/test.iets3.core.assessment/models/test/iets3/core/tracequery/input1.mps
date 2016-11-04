@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)">
+<model ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment" version="0" />
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.sandbox" version="0" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
   </languages>
@@ -93,9 +93,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.sandbox">
-      <concept id="1977415354602970500" name="org.iets3.core.trace.sandbox.structure.RealizesKind" flags="ng" index="3jWAPd" />
-      <concept id="1977415354602911755" name="org.iets3.core.trace.sandbox.structure.DefaultTrace" flags="ng" index="3jWOz2" />
+    <language id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test">
+      <concept id="1977415354602970500" name="org.iets3.core.trace.test.structure.RealizesKind" flags="ng" index="3jWAPd" />
+      <concept id="1977415354602911755" name="org.iets3.core.trace.test.structure.DefaultTrace" flags="ng" index="3jWOz2" />
     </language>
   </registry>
   <node concept="3pwaUo" id="1HLccB8wTr_">
@@ -104,6 +104,11 @@
       <property role="TrG5h" value="a1" />
       <property role="2iEbMk" value="1478250594786" />
       <property role="2iEaKi" value="Rimer" />
+      <node concept="qc_Tx" id="1HLccB8ANnh" role="q3PPx">
+        <property role="qc_TA" value="2" />
+        <property role="qc_T$" value="2" />
+        <property role="qc_T_" value="0" />
+      </node>
       <node concept="3pwbzX" id="1HLccB8ANnd" role="3pwbzW">
         <property role="1OfcgH" value="true" />
         <property role="3J1cY9" value="1478250594786" />
@@ -135,13 +140,8 @@
         </node>
       </node>
       <node concept="25YdEr" id="1HLccB8wTrE" role="3pwbkY">
-        <node concept="2GjDLI" id="1HLccB8ANn2" role="25Ycpv" />
         <node concept="3jWOz2" id="1HLccB8$Xl9" role="25Ycpp" />
-      </node>
-      <node concept="qc_Tx" id="1HLccB8ANnh" role="q3PPx">
-        <property role="qc_TA" value="2" />
-        <property role="qc_T$" value="2" />
-        <property role="qc_T_" value="0" />
+        <node concept="2GjDLI" id="1HLccB8ANn2" role="25Ycpv" />
       </node>
     </node>
   </node>
