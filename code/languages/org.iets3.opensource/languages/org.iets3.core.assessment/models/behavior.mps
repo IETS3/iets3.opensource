@@ -98,6 +98,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -263,10 +265,24 @@
           <node concept="2YIFZM" id="1HLccB8DKCo" role="3clFbG">
             <ref role="37wK5l" to="obmq:4I$2FraqNWQ" resolve="findTraceResult" />
             <ref role="1Pybhc" to="obmq:7cij$fOoIzi" resolve="GenericTraceHelper" />
-            <node concept="2OqwBi" id="1lUgLJUmgVE" role="37wK5m">
-              <node concept="13iPFW" id="1lUgLJUmgVF" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1lUgLJUmgVG" role="2OqNvi">
-                <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+            <node concept="2OqwBi" id="2WDcIIzJQ2i" role="37wK5m">
+              <node concept="2OqwBi" id="1lUgLJUmgVE" role="2Oq$k0">
+                <node concept="13iPFW" id="1lUgLJUmgVF" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1lUgLJUmgVG" role="2OqNvi">
+                  <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2WDcIIzJQo1" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                <node concept="2OqwBi" id="2WDcIIzJRiY" role="37wK5m">
+                  <node concept="2OqwBi" id="2WDcIIzJQIH" role="2Oq$k0">
+                    <node concept="13iPFW" id="2WDcIIzJQy5" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2WDcIIzJQWF" role="2OqNvi">
+                      <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                    </node>
+                  </node>
+                  <node concept="I4A8Y" id="2WDcIIzJRAz" role="2OqNvi" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="1lUgLJUmhhC" role="37wK5m">

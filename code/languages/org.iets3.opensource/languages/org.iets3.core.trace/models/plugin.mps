@@ -18,7 +18,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -139,7 +138,6 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -205,7 +203,7 @@
             <node concept="1rXfSq" id="1HLccB8yW3N" role="33vP2m">
               <ref role="37wK5l" node="1HLccB8vLaO" resolve="findElements" />
               <node concept="37vLTw" id="1HLccB8yW3O" role="37wK5m">
-                <ref role="3cqZAo" node="4I$2FraqNWS" resolve="scope" />
+                <ref role="3cqZAo" node="4I$2FraqNWS" resolve="elemsInScope" />
               </node>
             </node>
           </node>
@@ -411,9 +409,9 @@
         <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
       </node>
       <node concept="37vLTG" id="4I$2FraqNWS" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="4I$2FraqNWT" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJon0" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJon1" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="4I$2FraqNWU" role="3clF46">
@@ -442,18 +440,18 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="37vLTG" id="1lUgLJUl92e" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1lUgLJUl92f" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+      <node concept="37vLTG" id="2WDcIIzJsQh" role="3clF46">
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJsQi" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJsQj" role="A3Ik2" />
         </node>
       </node>
       <node concept="3clFbS" id="1lUgLJUl8Zw" role="3clF47">
         <node concept="3cpWs6" id="1HLccB8vzpr" role="3cqZAp">
           <node concept="1rXfSq" id="1HLccB8AfJZ" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
-            <node concept="37vLTw" id="1HLccB8Ag3O" role="37wK5m">
-              <ref role="3cqZAo" node="1lUgLJUl92e" resolve="scope" />
+            <node concept="37vLTw" id="2WDcIIzJsUy" role="37wK5m">
+              <ref role="3cqZAo" node="2WDcIIzJsQh" resolve="elemsInScope" />
             </node>
             <node concept="10Nm6u" id="1HLccB8AgD$" role="37wK5m" />
             <node concept="10Nm6u" id="1HLccB8AheJ" role="37wK5m" />
@@ -473,9 +471,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8lSVW" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8lSVX" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJth0" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJth1" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8lW3P" role="3clF46">
@@ -489,7 +487,7 @@
           <node concept="1rXfSq" id="1HLccB8AjMp" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8AjMq" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8lSVW" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8lSVW" resolve="elemsInScope" />
             </node>
             <node concept="37vLTw" id="1HLccB8AkXg" role="37wK5m">
               <ref role="3cqZAo" node="1HLccB8lW3P" resolve="kind" />
@@ -511,9 +509,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8_vqi" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8_vqj" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtiL" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtiM" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8_vqk" role="3clF46">
@@ -527,7 +525,7 @@
           <node concept="1rXfSq" id="1HLccB8Ap25" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8ApbH" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8_vqi" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8_vqi" resolve="elemsInScope" />
             </node>
             <node concept="10Nm6u" id="1HLccB8Aprt" role="37wK5m" />
             <node concept="10Nm6u" id="1HLccB8Ap_d" role="37wK5m" />
@@ -549,9 +547,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8_Au$" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8_Au_" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtk_" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtkA" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8_AuA" role="3clF46">
@@ -571,7 +569,7 @@
           <node concept="1rXfSq" id="1HLccB8_Av8" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8AqnX" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8_Au$" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8_Au$" resolve="elemsInScope" />
             </node>
             <node concept="37vLTw" id="1HLccB8Ar4l" role="37wK5m">
               <ref role="3cqZAo" node="1HLccB8_Bh2" resolve="kind" />
@@ -595,9 +593,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8_vBa" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8_vBb" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtmr" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtms" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8_vBc" role="3clF46">
@@ -611,7 +609,7 @@
           <node concept="1rXfSq" id="1HLccB8_vBA" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8As6W" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8_vBa" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8_vBa" resolve="elemsInScope" />
             </node>
             <node concept="10Nm6u" id="1HLccB8Asmn" role="37wK5m" />
             <node concept="37vLTw" id="1HLccB8AsvV" role="37wK5m">
@@ -633,9 +631,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8_Crg" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8_Crh" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtol" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtom" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8_Cri" role="3clF46">
@@ -655,7 +653,7 @@
           <node concept="1rXfSq" id="1HLccB8_CrC" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8Ati$" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8_Crg" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8_Crg" resolve="elemsInScope" />
             </node>
             <node concept="37vLTw" id="1HLccB8AtCg" role="37wK5m">
               <ref role="3cqZAo" node="1HLccB8_D4y" resolve="kind" />
@@ -679,9 +677,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8AAe$" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8AAe_" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtqh" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtqi" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8AAeA" role="3clF46">
@@ -707,7 +705,7 @@
           <node concept="1rXfSq" id="1HLccB8AAeG" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8AAeH" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8AAe$" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8AAe$" resolve="elemsInScope" />
             </node>
             <node concept="37vLTw" id="1HLccB8AAeI" role="37wK5m">
               <ref role="3cqZAo" node="1HLccB8AAeC" resolve="kind" />
@@ -733,9 +731,9 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1HLccB8AAXl" role="3clF46">
-        <property role="TrG5h" value="scope" />
-        <node concept="3Tqbb2" id="1HLccB8AAXm" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <property role="TrG5h" value="elemsInScope" />
+        <node concept="A3Dl8" id="2WDcIIzJtsf" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJtsg" role="A3Ik2" />
         </node>
       </node>
       <node concept="37vLTG" id="1HLccB8AAXn" role="3clF46">
@@ -755,7 +753,7 @@
           <node concept="1rXfSq" id="1HLccB8AAXv" role="3cqZAk">
             <ref role="37wK5l" node="4I$2FraqNWQ" resolve="findTraceResult" />
             <node concept="37vLTw" id="1HLccB8AAXw" role="37wK5m">
-              <ref role="3cqZAo" node="1HLccB8AAXl" resolve="scope" />
+              <ref role="3cqZAo" node="1HLccB8AAXl" resolve="elemsInScope" />
             </node>
             <node concept="10Nm6u" id="1HLccB8ABbq" role="37wK5m" />
             <node concept="37vLTw" id="1HLccB8AAXy" role="37wK5m">
@@ -939,19 +937,8 @@
           <node concept="1eOMI4" id="1HLccB8vN0e" role="3clFbG">
             <node concept="10QFUN" id="1HLccB8vN0f" role="1eOMHV">
               <node concept="2OqwBi" id="1HLccB8vMZX" role="10QFUP">
-                <node concept="2OqwBi" id="1HLccB8vMZY" role="2Oq$k0">
-                  <node concept="37vLTw" id="1HLccB8vMZZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1HLccB8vLoV" resolve="s" />
-                  </node>
-                  <node concept="2qgKlT" id="1HLccB8vN00" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
-                    <node concept="2OqwBi" id="1HLccB8vN01" role="37wK5m">
-                      <node concept="37vLTw" id="1HLccB8vN02" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1HLccB8vLoV" resolve="s" />
-                      </node>
-                      <node concept="I4A8Y" id="1HLccB8vN03" role="2OqNvi" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="1HLccB8vMZZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1HLccB8vLoV" resolve="s" />
                 </node>
                 <node concept="3zZkjj" id="1HLccB8vN04" role="2OqNvi">
                   <node concept="1bVj0M" id="1HLccB8vN05" role="23t8la">
@@ -993,8 +980,8 @@
       </node>
       <node concept="37vLTG" id="1HLccB8vLoV" role="3clF46">
         <property role="TrG5h" value="s" />
-        <node concept="3Tqbb2" id="1HLccB8vLoU" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+        <node concept="A3Dl8" id="2WDcIIzJrNo" role="1tU5fm">
+          <node concept="3Tqbb2" id="2WDcIIzJrNp" role="A3Ik2" />
         </node>
       </node>
     </node>

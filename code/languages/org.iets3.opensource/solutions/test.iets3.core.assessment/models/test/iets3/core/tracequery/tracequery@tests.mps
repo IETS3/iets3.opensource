@@ -16,6 +16,7 @@
     <import index="8do3" ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="obmq" ref="r:6083e844-2d05-4e00-99f4-20a170e2f807(org.iets3.core.trace.plugin)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" implicit="true" />
   </imports>
   <registry>
@@ -173,6 +174,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -229,12 +231,28 @@
             <node concept="2YIFZM" id="1HLccB8DKCr" role="33vP2m">
               <ref role="37wK5l" to="obmq:1lUgLJUl8Zt" resolve="findDefaultTraces" />
               <ref role="1Pybhc" to="obmq:7cij$fOoIzi" resolve="GenericTraceHelper" />
-              <node concept="2OqwBi" id="1HLccB8AN5T" role="37wK5m">
-                <node concept="3xONca" id="1HLccB8DjiO" role="2Oq$k0">
-                  <ref role="3xOPvv" node="1HLccB8DjiM" resolve="gtq1" />
+              <node concept="2OqwBi" id="2WDcIIzKm0H" role="37wK5m">
+                <node concept="2OqwBi" id="1HLccB8AN5T" role="2Oq$k0">
+                  <node concept="3xONca" id="1HLccB8DjiO" role="2Oq$k0">
+                    <ref role="3xOPvv" node="1HLccB8DjiM" resolve="gtq1" />
+                  </node>
+                  <node concept="3TrEf2" id="1HLccB8AN5V" role="2OqNvi">
+                    <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="1HLccB8AN5V" role="2OqNvi">
-                  <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                <node concept="2qgKlT" id="2WDcIIzKmm3" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                  <node concept="2OqwBi" id="2WDcIIzKnpg" role="37wK5m">
+                    <node concept="2OqwBi" id="2WDcIIzKmUd" role="2Oq$k0">
+                      <node concept="3xONca" id="2WDcIIzKmUe" role="2Oq$k0">
+                        <ref role="3xOPvv" node="1HLccB8DjiM" resolve="gtq1" />
+                      </node>
+                      <node concept="3TrEf2" id="2WDcIIzKmUf" role="2OqNvi">
+                        <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                      </node>
+                    </node>
+                    <node concept="I4A8Y" id="2WDcIIzKnLD" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -378,12 +396,28 @@
             <node concept="2YIFZM" id="1HLccB8DKCs" role="33vP2m">
               <ref role="37wK5l" to="obmq:1lUgLJUl8Zt" resolve="findDefaultTraces" />
               <ref role="1Pybhc" to="obmq:7cij$fOoIzi" resolve="GenericTraceHelper" />
-              <node concept="2OqwBi" id="1HLccB8DgRJ" role="37wK5m">
-                <node concept="3xONca" id="1HLccB8Dk5r" role="2Oq$k0">
-                  <ref role="3xOPvv" node="1HLccB8Dk5p" resolve="gtq2" />
+              <node concept="2OqwBi" id="2WDcIIzKof1" role="37wK5m">
+                <node concept="2OqwBi" id="1HLccB8DgRJ" role="2Oq$k0">
+                  <node concept="3xONca" id="1HLccB8Dk5r" role="2Oq$k0">
+                    <ref role="3xOPvv" node="1HLccB8Dk5p" resolve="gtq2" />
+                  </node>
+                  <node concept="3TrEf2" id="1HLccB8DgRL" role="2OqNvi">
+                    <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="1HLccB8DgRL" role="2OqNvi">
-                  <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                <node concept="2qgKlT" id="2WDcIIzKo$n" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                  <node concept="2OqwBi" id="2WDcIIzKpZB" role="37wK5m">
+                    <node concept="2OqwBi" id="2WDcIIzKp8u" role="2Oq$k0">
+                      <node concept="3xONca" id="2WDcIIzKoN7" role="2Oq$k0">
+                        <ref role="3xOPvv" node="1HLccB8Dk5p" resolve="gtq2" />
+                      </node>
+                      <node concept="3TrEf2" id="2WDcIIzKpwE" role="2OqNvi">
+                        <ref role="3Tt5mk" to="330h:5ZLQMNq2hPN" resolve="scope" />
+                      </node>
+                    </node>
+                    <node concept="I4A8Y" id="2WDcIIzKqhj" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
             </node>
