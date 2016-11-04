@@ -55,7 +55,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
-    <dependency reexport="false">be5191a9-3476-47ca-b2a7-a426623add55(org.iets3.core.assessment)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -127,7 +126,6 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-    <module reference="be5191a9-3476-47ca-b2a7-a426623add55(org.iets3.core.assessment)" version="0" />
     <module reference="583939be-ded0-4735-a055-a74f8477fc34(org.iets3.core.attributes)" version="0" />
     <module reference="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" version="0" />
   </dependencyVersions>
