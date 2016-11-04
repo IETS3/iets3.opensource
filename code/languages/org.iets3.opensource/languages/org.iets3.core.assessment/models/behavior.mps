@@ -96,7 +96,6 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -377,7 +376,7 @@
     </node>
     <node concept="13i0hz" id="2WDcIIzLpWZ" role="13h7CS">
       <property role="TrG5h" value="createAssessentResults" />
-      <node concept="3Tm6S6" id="2WDcIIzLqhT" role="1B3o_S" />
+      <node concept="3Tm1VV" id="1ZE7SxjFnNF" role="1B3o_S" />
       <node concept="3clFbS" id="2WDcIIzLpX2" role="3clF47">
         <node concept="3cpWs8" id="1HLccB8vwor" role="3cqZAp">
           <node concept="3cpWsn" id="1HLccB8vwos" role="3cpWs9">
