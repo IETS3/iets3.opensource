@@ -15,6 +15,7 @@
     <import index="ojsi" ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" />
     <import index="8do3" ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="obmq" ref="r:6083e844-2d05-4e00-99f4-20a170e2f807(org.iets3.core.trace.plugin)" />
     <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" implicit="true" />
   </imports>
   <registry>
@@ -225,9 +226,9 @@
             <node concept="2I9FWS" id="1HLccB8AN5M" role="1tU5fm">
               <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
             </node>
-            <node concept="2YIFZM" id="1HLccB8AN5S" role="33vP2m">
-              <ref role="37wK5l" to="bu66:1lUgLJUl8Zt" resolve="findDefaultTraces" />
-              <ref role="1Pybhc" to="bu66:7cij$fOoIzi" resolve="GenericTraceHelper" />
+            <node concept="2YIFZM" id="1HLccB8DKCr" role="33vP2m">
+              <ref role="37wK5l" to="obmq:1lUgLJUl8Zt" resolve="findDefaultTraces" />
+              <ref role="1Pybhc" to="obmq:7cij$fOoIzi" resolve="GenericTraceHelper" />
               <node concept="2OqwBi" id="1HLccB8AN5T" role="37wK5m">
                 <node concept="3xONca" id="1HLccB8DjiO" role="2Oq$k0">
                   <ref role="3xOPvv" node="1HLccB8DjiM" resolve="gtq1" />
@@ -374,9 +375,9 @@
             <node concept="2I9FWS" id="1HLccB8DgRH" role="1tU5fm">
               <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
             </node>
-            <node concept="2YIFZM" id="1HLccB8DgRI" role="33vP2m">
-              <ref role="37wK5l" to="bu66:1lUgLJUl8Zt" resolve="findDefaultTraces" />
-              <ref role="1Pybhc" to="bu66:7cij$fOoIzi" resolve="GenericTraceHelper" />
+            <node concept="2YIFZM" id="1HLccB8DKCs" role="33vP2m">
+              <ref role="37wK5l" to="obmq:1lUgLJUl8Zt" resolve="findDefaultTraces" />
+              <ref role="1Pybhc" to="obmq:7cij$fOoIzi" resolve="GenericTraceHelper" />
               <node concept="2OqwBi" id="1HLccB8DgRJ" role="37wK5m">
                 <node concept="3xONca" id="1HLccB8Dk5r" role="2Oq$k0">
                   <ref role="3xOPvv" node="1HLccB8Dk5p" resolve="gtq2" />
