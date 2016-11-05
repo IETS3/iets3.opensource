@@ -14,6 +14,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -79,6 +81,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -248,6 +251,9 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -257,6 +263,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
+      <concept id="1235566831861" name="jetbrains.mps.baseLanguage.collections.structure.AllOperation" flags="nn" index="2HxqBE" />
       <concept id="1227026082377" name="jetbrains.mps.baseLanguage.collections.structure.RemoveFirstElementOperation" flags="nn" index="2Kt2Hk" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
@@ -2149,6 +2156,92 @@
     <node concept="1YaCAy" id="SRvqsMH7Kx" role="1YuTPh">
       <property role="TrG5h" value="sub" />
       <ref role="1YaFvo" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="RIvadv35Tv">
+    <property role="TrG5h" value="check_IFunctionLike" />
+    <property role="3GE5qa" value="function" />
+    <node concept="3clFbS" id="RIvadv35Tw" role="18ibNy">
+      <node concept="3cpWs8" id="RIvadv3afz" role="3cqZAp">
+        <node concept="3cpWsn" id="RIvadv3af$" role="3cpWs9">
+          <property role="TrG5h" value="elements" />
+          <node concept="2hMVRd" id="RIvadv3afp" role="1tU5fm">
+            <node concept="3Tqbb2" id="RIvadv3afs" role="2hN53Y">
+              <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="RIvadv3af_" role="33vP2m">
+            <node concept="1YBJjd" id="RIvadv3afA" role="2Oq$k0">
+              <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+            </node>
+            <node concept="2qgKlT" id="RIvadv3afB" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:17fjvcLFUH5" resolve="getCyclicDependencyElements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="RIvadv3a$s" role="3cqZAp">
+        <node concept="3clFbS" id="RIvadv3a$u" role="3clFbx">
+          <node concept="3clFbJ" id="RIvadv3dkU" role="3cqZAp">
+            <node concept="2OqwBi" id="RIvadv3e7x" role="3clFbw">
+              <node concept="37vLTw" id="RIvadv3dl9" role="2Oq$k0">
+                <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+              </node>
+              <node concept="2HxqBE" id="RIvadv3e$k" role="2OqNvi">
+                <node concept="1bVj0M" id="RIvadv3e$m" role="23t8la">
+                  <node concept="3clFbS" id="RIvadv3e$n" role="1bW5cS">
+                    <node concept="3clFbF" id="RIvadv3eDl" role="3cqZAp">
+                      <node concept="3clFbC" id="RIvadv3hk2" role="3clFbG">
+                        <node concept="10Nm6u" id="RIvadv3hrS" role="3uHU7w" />
+                        <node concept="2OqwBi" id="RIvadv3fFu" role="3uHU7B">
+                          <node concept="1PxgMI" id="RIvadv3fhj" role="2Oq$k0">
+                            <ref role="1m5ApE" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+                            <node concept="37vLTw" id="RIvadv3eDk" role="1m5AlR">
+                              <ref role="3cqZAo" node="RIvadv3e$o" resolve="it" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="RIvadv3gGi" role="2OqNvi">
+                            <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="RIvadv3e$o" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="RIvadv3e$p" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="RIvadv3dkW" role="3clFbx">
+              <node concept="2MkqsV" id="RIvadv3hzr" role="3cqZAp">
+                <node concept="3cpWs3" id="RIvadv3hLX" role="2MkJ7o">
+                  <node concept="37vLTw" id="RIvadv3hMj" role="3uHU7w">
+                    <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+                  </node>
+                  <node concept="Xl_RD" id="RIvadv3hzE" role="3uHU7B">
+                    <property role="Xl_RC" value="untyped cycle detected; at least one function must have a type: " />
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="RIvadv3usJ" role="2OEOjV">
+                  <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="RIvadv3c6a" role="3clFbw">
+          <node concept="10Nm6u" id="RIvadv3c6y" role="3uHU7w" />
+          <node concept="37vLTw" id="RIvadv3a$V" role="3uHU7B">
+            <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="RIvadv35Ty" role="1YuTPh">
+      <property role="TrG5h" value="fl" />
+      <ref role="1YaFvo" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
   </node>
 </model>
