@@ -816,7 +816,7 @@
   </node>
   <node concept="1TIwiD" id="2U5Q01UkDMQ">
     <property role="TrG5h" value="InTarget" />
-    <property role="34LRSv" value="in" />
+    <property role="34LRSv" value="oneOf" />
     <property role="3GE5qa" value="targets" />
     <property role="EcuMT" value="3352322994211036342" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -833,7 +833,7 @@
   </node>
   <node concept="1TIwiD" id="1WCh2thoP2K">
     <property role="TrG5h" value="RangeTarget" />
-    <property role="34LRSv" value="range" />
+    <property role="34LRSv" value="inRange" />
     <property role="3GE5qa" value="targets" />
     <property role="EcuMT" value="2245119349904068784" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
