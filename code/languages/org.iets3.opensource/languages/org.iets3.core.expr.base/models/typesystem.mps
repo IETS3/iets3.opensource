@@ -3869,6 +3869,42 @@
   <node concept="1YbPZF" id="5aHkq2w4PM3">
     <property role="TrG5h" value="typeof_IOptionallyTyped" />
     <node concept="3clFbS" id="5aHkq2w4PM4" role="18ibNy">
+      <node concept="3clFbJ" id="RIvadv3GO9" role="3cqZAp">
+        <node concept="3clFbS" id="RIvadv3GOb" role="3clFbx">
+          <node concept="1Z5TYs" id="5aHkq2w4OzO" role="3cqZAp">
+            <node concept="mw_s8" id="5aHkq2w4O$8" role="1ZfhKB">
+              <node concept="1Z2H0r" id="5aHkq2w4O$4" role="mwGJk">
+                <node concept="2OqwBi" id="5aHkq2w4OCi" role="1Z2MuG">
+                  <node concept="1YBJjd" id="5aHkq2w4O$p" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
+                  </node>
+                  <node concept="3TrEf2" id="5aHkq2w4OQh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="5aHkq2w4OzR" role="1ZfhK$">
+              <node concept="1Z2H0r" id="5aHkq2w4Oxz" role="mwGJk">
+                <node concept="1YBJjd" id="5aHkq2w4OxN" role="1Z2MuG">
+                  <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="RIvadv3Hsv" role="3clFbw">
+          <node concept="10Nm6u" id="RIvadv3H$4" role="3uHU7w" />
+          <node concept="2OqwBi" id="RIvadv3H0J" role="3uHU7B">
+            <node concept="1YBJjd" id="RIvadv3GTR" role="2Oq$k0">
+              <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
+            </node>
+            <node concept="3TrEf2" id="RIvadv3HdB" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="nvevp" id="46cplYwOkUS" role="3cqZAp">
         <node concept="3clFbS" id="46cplYwOkUU" role="nvhr_">
           <node concept="3clFbJ" id="5aHkq2w4Np8" role="3cqZAp">
@@ -3901,27 +3937,6 @@
             </node>
             <node concept="9aQIb" id="5aHkq2w4Osz" role="9aQIa">
               <node concept="3clFbS" id="5aHkq2w4Os$" role="9aQI4">
-                <node concept="1Z5TYs" id="5aHkq2w4OzO" role="3cqZAp">
-                  <node concept="mw_s8" id="5aHkq2w4O$8" role="1ZfhKB">
-                    <node concept="1Z2H0r" id="5aHkq2w4O$4" role="mwGJk">
-                      <node concept="2OqwBi" id="5aHkq2w4OCi" role="1Z2MuG">
-                        <node concept="1YBJjd" id="5aHkq2w4O$p" role="2Oq$k0">
-                          <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
-                        </node>
-                        <node concept="3TrEf2" id="5aHkq2w4OQh" role="2OqNvi">
-                          <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="mw_s8" id="5aHkq2w4OzR" role="1ZfhK$">
-                    <node concept="1Z2H0r" id="5aHkq2w4Oxz" role="mwGJk">
-                      <node concept="1YBJjd" id="5aHkq2w4OxN" role="1Z2MuG">
-                        <ref role="1YBMHb" node="5aHkq2w4PM6" resolve="iot" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="1ZoDhX" id="5aHkq2w4P8w" role="3cqZAp">
                   <property role="3wDh2S" value="true" />
                   <node concept="mw_s8" id="5aHkq2w4P8z" role="1ZfhK$">

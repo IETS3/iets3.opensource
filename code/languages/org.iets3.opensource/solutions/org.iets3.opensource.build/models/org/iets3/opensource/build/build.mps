@@ -375,6 +375,9 @@
     </node>
     <node concept="m$_wf" id="1PzuxQOW9K2" role="3989C9">
       <property role="m$_wk" value="org.iets3.trace" />
+      <node concept="m$f5U" id="2WDcIIzJkz7" role="m$_yh">
+        <ref role="m$f5T" node="1PzuxQOTNk8" resolve="iets3.trace" />
+      </node>
       <node concept="3_J27D" id="1PzuxQOW9K3" role="m$_yQ">
         <node concept="3Mxwew" id="1PzuxQOW9K4" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.trace" />
@@ -384,9 +387,6 @@
         <node concept="3Mxwew" id="1PzuxQOW9K6" role="3MwsjC">
           <property role="3MwjfP" value="1.0" />
         </node>
-      </node>
-      <node concept="m$f5U" id="2WDcIIzJkz7" role="m$_yh">
-        <ref role="m$f5T" node="1PzuxQOTNk8" resolve="iets3.trace" />
       </node>
       <node concept="3_J27D" id="1PzuxQOW9Kb" role="m_cZH">
         <node concept="3Mxwew" id="1PzuxQOW9Kc" role="3MwsjC">
@@ -1235,6 +1235,12 @@
         <node concept="1SiIV0" id="5Q45tqZzvDi" role="3bR37C">
           <node concept="1Busua" id="5Q45tqZzvDj" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2nzO3M_RABz" role="3bR37C">
+          <node concept="3bR9La" id="2nzO3M_RAB$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
