@@ -9,7 +9,6 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
-    <import index="bu66" ref="r:6cac2360-e204-4081-891f-7db5759e7f2a(org.iets3.core.assessment.plugin)" />
     <import index="obmq" ref="r:6083e844-2d05-4e00-99f4-20a170e2f807(org.iets3.core.trace.plugin)" />
     <import index="ci3w" ref="r:55d9f540-8864-4fa2-9847-b98db71180c3(org.iets3.core.trace.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -189,7 +188,6 @@
         <node concept="3cpWs8" id="1HLccB8EfRH" role="3cqZAp">
           <node concept="3cpWsn" id="1HLccB8EfRI" role="3cpWs9">
             <property role="TrG5h" value="string" />
-            <node concept="17QB3L" id="1HLccB8EfRC" role="1tU5fm" />
             <node concept="2OqwBi" id="1HLccB8EfRJ" role="33vP2m">
               <node concept="2OqwBi" id="1HLccB8ElZJ" role="2Oq$k0">
                 <node concept="2OqwBi" id="1HLccB8Ei37" role="2Oq$k0">
@@ -237,6 +235,7 @@
                 </node>
               </node>
             </node>
+            <node concept="17QB3L" id="1HLccB8EfRC" role="1tU5fm" />
           </node>
         </node>
         <node concept="3clFbF" id="5ZLQMNq2fXm" role="3cqZAp">
