@@ -164,7 +164,6 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
-      <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -317,15 +316,9 @@
                   </node>
                   <node concept="3clFbS" id="2uR5X5b1JRP" role="3clFbx">
                     <node concept="3cpWs6" id="2uR5X5b1Kt9" role="3cqZAp">
-                      <node concept="pVOtf" id="ub9nkyQIFx" role="3cqZAk">
-                        <node concept="10M0yZ" id="ub9nkyQIJN" role="3uHU7w">
-                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
-                        </node>
-                        <node concept="10M0yZ" id="2uR5X5b2ntE" role="3uHU7B">
-                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
-                        </node>
+                      <node concept="10M0yZ" id="2uR5X5b2ntE" role="3cqZAk">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                       </node>
                     </node>
                   </node>

@@ -62,6 +62,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -228,6 +229,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -269,6 +273,7 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
@@ -2162,6 +2167,95 @@
     <property role="TrG5h" value="check_IFunctionLike" />
     <property role="3GE5qa" value="function" />
     <node concept="3clFbS" id="RIvadv35Tw" role="18ibNy">
+      <node concept="3clFbJ" id="2uR5X5azvma" role="3cqZAp">
+        <node concept="2OqwBi" id="2uR5X5azvrb" role="3clFbw">
+          <node concept="1YBJjd" id="ZV9S9WvAxu" role="2Oq$k0">
+            <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+          </node>
+          <node concept="3TrcHB" id="2uR5X5azv_i" role="2OqNvi">
+            <ref role="3TsBF5" to="zzzn:2uR5X5azvjH" resolve="ext" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2uR5X5azvmc" role="3clFbx">
+          <node concept="3clFbJ" id="2uR5X5azvAC" role="3cqZAp">
+            <node concept="3clFbC" id="2uR5X5az$oe" role="3clFbw">
+              <node concept="3cmrfG" id="2uR5X5az$r2" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="2uR5X5azwIa" role="3uHU7B">
+                <node concept="2OqwBi" id="2uR5X5azvFD" role="2Oq$k0">
+                  <node concept="1YBJjd" id="ZV9S9WvAIi" role="2Oq$k0">
+                    <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+                  </node>
+                  <node concept="3Tsc0h" id="2uR5X5azvR1" role="2OqNvi">
+                    <ref role="3TtcxE" to="zzzn:49WTic8eSCZ" resolve="args" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2uR5X5azz6u" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="2uR5X5azvAE" role="3clFbx">
+              <node concept="2MkqsV" id="2uR5X5az$tg" role="3cqZAp">
+                <node concept="Xl_RD" id="2uR5X5az$tv" role="2MkJ7o">
+                  <property role="Xl_RC" value="extension functions must have at least one argument (the 'this' object)" />
+                </node>
+                <node concept="1YBJjd" id="ZV9S9WvAV4" role="2OEOjV">
+                  <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="2uR5X5azRf4" role="9aQIa">
+              <node concept="3clFbS" id="2uR5X5azRf5" role="9aQI4">
+                <node concept="3cpWs8" id="2uR5X5azRO0" role="3cqZAp">
+                  <node concept="3cpWsn" id="2uR5X5azRO1" role="3cpWs9">
+                    <property role="TrG5h" value="firstArg" />
+                    <node concept="3Tqbb2" id="2uR5X5azRNZ" role="1tU5fm">
+                      <ref role="ehGHo" to="zzzn:49WTic8eSD1" resolve="FunctionArgument" />
+                    </node>
+                    <node concept="2OqwBi" id="2uR5X5azRO2" role="33vP2m">
+                      <node concept="2OqwBi" id="2uR5X5azRO3" role="2Oq$k0">
+                        <node concept="1YBJjd" id="ZV9S9WvB8h" role="2Oq$k0">
+                          <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
+                        </node>
+                        <node concept="3Tsc0h" id="2uR5X5azRO5" role="2OqNvi">
+                          <ref role="3TtcxE" to="zzzn:49WTic8eSCZ" resolve="args" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2uR5X5azRO6" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="2uR5X5azN72" role="3cqZAp">
+                  <node concept="3clFbS" id="2uR5X5azN74" role="3clFbx">
+                    <node concept="a7r0C" id="2uR5X5azRK0" role="3cqZAp">
+                      <node concept="Xl_RD" id="2uR5X5azRKr" role="a7wSD">
+                        <property role="Xl_RC" value="first argument should be called 'this'" />
+                      </node>
+                      <node concept="37vLTw" id="2uR5X5azRUg" role="2OEOjV">
+                        <ref role="3cqZAo" node="2uR5X5azRO1" resolve="firstArg" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="17QLQc" id="2uR5X5azRxZ" role="3clFbw">
+                    <node concept="2OqwBi" id="2uR5X5azQJD" role="3uHU7B">
+                      <node concept="37vLTw" id="2uR5X5azRO7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2uR5X5azRO1" resolve="firstArg" />
+                      </node>
+                      <node concept="3TrcHB" id="2uR5X5azQUu" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="2uR5X5azRvW" role="3uHU7w">
+                      <property role="Xl_RC" value="this" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="ZV9S9Wv_K9" role="3cqZAp" />
       <node concept="3cpWs8" id="RIvadv3afz" role="3cqZAp">
         <node concept="3cpWsn" id="RIvadv3af$" role="3cpWs9">
           <property role="TrG5h" value="elements" />

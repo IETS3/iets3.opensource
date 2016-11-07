@@ -133,7 +133,7 @@
       <property role="20kJfa" value="extFun" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2861782275883762408" />
-      <ref role="20lvS9" node="49WTic8f4iz" resolve="Function" />
+      <ref role="20lvS9" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
     <node concept="PrWs8" id="2uR5X5azSbo" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
