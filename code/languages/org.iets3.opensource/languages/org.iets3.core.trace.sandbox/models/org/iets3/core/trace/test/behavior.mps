@@ -11,6 +11,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="526v" ref="r:8b2ef249-d63b-431d-88b4-15db954286d8(org.iets3.core.trace.test.structure)" implicit="true" />
+    <import index="y0mr" ref="r:506f9888-5dfa-47b9-b3ef-bc082381808a(org.iets3.functiontree.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -162,7 +163,7 @@
               <node concept="2qgKlT" id="1HLccB8wS9W" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
                 <node concept="3TUQnm" id="1HLccB8wS9X" role="37wK5m">
-                  <ref role="3TV0OU" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                  <ref role="3TV0OU" to="y0mr:1BCnb50lWXC" resolve="FunctionTreeNode" />
                 </node>
               </node>
             </node>
