@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="ojsi" ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" />
+    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
   </imports>
   <registry>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
@@ -24,12 +25,6 @@
       <concept id="2117670517801897954" name="org.iets3.core.trace.structure.TraceAttributeValue" flags="ng" index="2DxjnZ" />
       <concept id="2117670517802470200" name="org.iets3.core.trace.structure.TraceAttribute" flags="ng" index="2Dz74_" />
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
-    </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
       <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ng" index="18DfD4">
         <child id="4388710048722005710" name="attributes" index="18DfD7" />
@@ -39,14 +34,11 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8490595898229129994" name="com.mbeddr.core.base.structure.CurrentModelScopeAndImported" flags="ng" index="28wEjL" />
       <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
         <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
         <property id="671216505796623806" name="ok" index="qc_T_" />
         <property id="671216505796623805" name="totalCount" index="qc_TA" />
-      </concept>
-      <concept id="6277307617439377002" name="com.mbeddr.core.base.structure.ProjectScope" flags="ng" index="2GjDLI" />
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
       <concept id="865293814733114043" name="com.mbeddr.core.base.structure.AssessmentContainer" flags="ng" index="3pwaUo">
         <child id="865293814733114045" name="assessments" index="3pwaUu" />
@@ -56,13 +48,6 @@
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <child id="671216505796427450" name="summaries" index="q3PPx" />
         <child id="865293814733115677" name="query" index="3pwbkY" />
-        <child id="865293814733118687" name="results" index="3pwbzW" />
-      </concept>
-      <concept id="865293814733118686" name="com.mbeddr.core.base.structure.AssessmentResultEntry" flags="ng" index="3pwbzX">
-        <property id="6619757161337247129" name="lastFound" index="3J1cY9" />
-        <property id="2711621784018180488" name="isNew" index="1OfcgH" />
-        <child id="865293814733133843" name="result" index="3pwfKK" />
-        <child id="6619757161337461931" name="comment" index="3J00qV" />
       </concept>
     </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
@@ -77,15 +62,7 @@
     </language>
     <language id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment">
       <concept id="6913547888673489335" name="org.iets3.core.assessment.structure.GenericTraceQuery" flags="ng" index="25YdEr">
-        <child id="6913547888673496437" name="traceKind" index="25Ycpp" />
         <child id="6913547888673496435" name="scope" index="25Ycpv" />
-      </concept>
-      <concept id="6913547888673466380" name="org.iets3.core.assessment.structure.GenericTraceResult" flags="ng" index="25Yncw">
-        <reference id="6913547888673489332" name="traceSource" index="25YdEo" />
-        <child id="6913547888673489330" name="traceTargets" index="25YdEu" />
-      </concept>
-      <concept id="6913547888673466377" name="org.iets3.core.assessment.structure.TraceTargetRef" flags="ng" index="25Ync_">
-        <reference id="6913547888673466378" name="traceTarget" index="25YncA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -102,46 +79,15 @@
     <property role="TrG5h" value="TestAssessment" />
     <node concept="3pwaUv" id="1HLccB8wTrA" role="3pwaUu">
       <property role="TrG5h" value="a1" />
-      <property role="2iEbMk" value="1478250594786" />
+      <property role="2iEbMk" value="1478536963652" />
       <property role="2iEaKi" value="Rimer" />
-      <node concept="qc_Tx" id="1HLccB8ANnh" role="q3PPx">
-        <property role="qc_TA" value="2" />
-        <property role="qc_T$" value="2" />
-        <property role="qc_T_" value="0" />
-      </node>
-      <node concept="3pwbzX" id="1HLccB8ANnd" role="3pwbzW">
-        <property role="1OfcgH" value="true" />
-        <property role="3J1cY9" value="1478250594786" />
-        <node concept="OjmMv" id="1HLccB8ANne" role="3J00qV">
-          <node concept="19SGf9" id="1HLccB8ANnf" role="OjmMu">
-            <node concept="19SUe$" id="1HLccB8ANng" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="25Yncw" id="1HLccB8ANn7" role="3pwfKK">
-          <ref role="25YdEo" node="1HLccB8wSqs" resolve="A" />
-          <node concept="25Ync_" id="1HLccB8ANn8" role="25YdEu">
-            <ref role="25YncA" node="1HLccB8wSqC" resolve="B" />
-          </node>
-        </node>
-      </node>
-      <node concept="3pwbzX" id="1HLccB8ANn9" role="3pwbzW">
-        <property role="1OfcgH" value="true" />
-        <property role="3J1cY9" value="1478250594785" />
-        <node concept="OjmMv" id="1HLccB8ANna" role="3J00qV">
-          <node concept="19SGf9" id="1HLccB8ANnb" role="OjmMu">
-            <node concept="19SUe$" id="1HLccB8ANnc" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="25Yncw" id="1HLccB8ANn5" role="3pwfKK">
-          <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
-          <node concept="25Ync_" id="1HLccB8ANn6" role="25YdEu">
-            <ref role="25YncA" to="ojsi:1HLccB8wSqC" resolve="E" />
-          </node>
-        </node>
-      </node>
       <node concept="25YdEr" id="1HLccB8wTrE" role="3pwbkY">
-        <node concept="3jWOz2" id="1HLccB8$Xl9" role="25Ycpp" />
-        <node concept="2GjDLI" id="1HLccB8ANn2" role="25Ycpv" />
+        <node concept="28wEjL" id="mhbzaHlZoa" role="25Ycpv" />
+      </node>
+      <node concept="qc_Tx" id="mhbzaHnO$2" role="q3PPx">
+        <property role="qc_TA" value="5" />
+        <property role="qc_T$" value="5" />
+        <property role="qc_T_" value="0" />
       </node>
     </node>
   </node>
