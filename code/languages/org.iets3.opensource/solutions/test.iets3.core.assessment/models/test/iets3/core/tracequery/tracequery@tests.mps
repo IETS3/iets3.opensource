@@ -7,7 +7,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment" version="0" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="-1" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
   </languages>
   <imports>
     <import index="bu66" ref="r:6cac2360-e204-4081-891f-7db5759e7f2a(org.iets3.core.assessment.plugin)" />
@@ -470,9 +470,6 @@
         <node concept="3cpWs8" id="1ZE7SxjFost" role="3cqZAp">
           <node concept="3cpWsn" id="1ZE7SxjFosu" role="3cpWs9">
             <property role="TrG5h" value="foundDefaultTraceResults" />
-            <node concept="2I9FWS" id="1ZE7SxjFosd" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
-            </node>
             <node concept="2OqwBi" id="mhbzaHpJjt" role="33vP2m">
               <node concept="2WthIp" id="mhbzaHpJca" role="2Oq$k0" />
               <node concept="2XshWL" id="mhbzaHpJsq" role="2OqNvi">
@@ -489,6 +486,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="2I9FWS" id="1ZE7SxjFosd" role="1tU5fm">
+              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
             </node>
           </node>
         </node>
@@ -583,9 +583,6 @@
         <node concept="3cpWs8" id="1ZE7SxjFsO8" role="3cqZAp">
           <node concept="3cpWsn" id="1ZE7SxjFsO9" role="3cpWs9">
             <property role="TrG5h" value="foundDefaultTraceResults" />
-            <node concept="2I9FWS" id="1ZE7SxjFsNM" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
-            </node>
             <node concept="2OqwBi" id="mhbzaHpMBV" role="33vP2m">
               <node concept="2WthIp" id="mhbzaHpMwA" role="2Oq$k0" />
               <node concept="2XshWL" id="mhbzaHpMKU" role="2OqNvi">
@@ -603,14 +600,14 @@
                 </node>
               </node>
             </node>
+            <node concept="2I9FWS" id="1ZE7SxjFsNM" role="1tU5fm">
+              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1HLccB8DgRM" role="3cqZAp">
           <node concept="3cpWsn" id="1HLccB8DgRN" role="3cpWs9">
             <property role="TrG5h" value="expectedResults" />
-            <node concept="2I9FWS" id="1HLccB8DgS6" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
-            </node>
             <node concept="2OqwBi" id="mhbzaHpGzr" role="33vP2m">
               <node concept="2WthIp" id="mhbzaHpGxB" role="2Oq$k0" />
               <node concept="2XshWL" id="mhbzaHpGAr" role="2OqNvi">
@@ -632,6 +629,9 @@
                   <node concept="ANE8D" id="mhbzaHpIRN" role="2OqNvi" />
                 </node>
               </node>
+            </node>
+            <node concept="2I9FWS" id="1HLccB8DgS6" role="1tU5fm">
+              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
             </node>
           </node>
         </node>
@@ -723,9 +723,6 @@
         <node concept="3cpWs8" id="1ZE7SxjGdVm" role="3cqZAp">
           <node concept="3cpWsn" id="1ZE7SxjGdVn" role="3cpWs9">
             <property role="TrG5h" value="expectedResults" />
-            <node concept="2I9FWS" id="1ZE7SxjGdVE" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
-            </node>
             <node concept="2OqwBi" id="mhbzaHpFTz" role="33vP2m">
               <node concept="2OqwBi" id="1ZE7SxjGdVq" role="2Oq$k0">
                 <node concept="2OqwBi" id="1ZE7SxjGdVr" role="2Oq$k0">
@@ -741,6 +738,9 @@
                 </node>
               </node>
               <node concept="ANE8D" id="mhbzaHpGcN" role="2OqNvi" />
+            </node>
+            <node concept="2I9FWS" id="1ZE7SxjGdVE" role="1tU5fm">
+              <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
             </node>
           </node>
         </node>
@@ -767,6 +767,11 @@
         <property role="TrG5h" value="a1" />
         <property role="2iEbMk" value="1478790766776" />
         <property role="2iEaKi" value="silveira" />
+        <node concept="qc_Tx" id="1Sur9ckX8mJ" role="q3PPx">
+          <property role="qc_TA" value="5" />
+          <property role="qc_T$" value="4" />
+          <property role="qc_T_" value="0" />
+        </node>
         <node concept="3pwbzX" id="1Sur9ckX8mF" role="3pwbzW">
           <property role="1OfcgH" value="true" />
           <property role="3J1cY9" value="1478790766772" />
@@ -851,11 +856,6 @@
         <node concept="3xLA65" id="1HLccB8ARAT" role="lGtFl">
           <property role="TrG5h" value="expectedAsForProjectScope" />
         </node>
-        <node concept="qc_Tx" id="1Sur9ckX8mJ" role="q3PPx">
-          <property role="qc_TA" value="5" />
-          <property role="qc_T$" value="4" />
-          <property role="qc_T_" value="0" />
-        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1HLccB8DbfO" role="1SKRRt">
@@ -863,6 +863,11 @@
         <property role="TrG5h" value="a2" />
         <property role="2iEbMk" value="1478790769471" />
         <property role="2iEaKi" value="silveira" />
+        <node concept="qc_Tx" id="1Sur9ckX9bz" role="q3PPx">
+          <property role="qc_TA" value="5" />
+          <property role="qc_T$" value="4" />
+          <property role="qc_T_" value="0" />
+        </node>
         <node concept="3pwbzX" id="1Sur9ckX9bv" role="3pwbzW">
           <property role="1OfcgH" value="true" />
           <property role="3J1cY9" value="1478790769470" />
@@ -947,11 +952,6 @@
         <node concept="3xLA65" id="1HLccB8Dbgm" role="lGtFl">
           <property role="TrG5h" value="expectedAsForModelScopeWithImp" />
         </node>
-        <node concept="qc_Tx" id="1Sur9ckX9bz" role="q3PPx">
-          <property role="qc_TA" value="5" />
-          <property role="qc_T$" value="4" />
-          <property role="qc_T_" value="0" />
-        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1ZE7SxjG0gJ" role="1SKRRt">
@@ -959,6 +959,11 @@
         <property role="TrG5h" value="a3" />
         <property role="2iEbMk" value="1478790772132" />
         <property role="2iEaKi" value="silveira" />
+        <node concept="qc_Tx" id="1Sur9ckXa0f" role="q3PPx">
+          <property role="qc_TA" value="3" />
+          <property role="qc_T$" value="3" />
+          <property role="qc_T_" value="0" />
+        </node>
         <node concept="3pwbzX" id="1Sur9ckXa0b" role="3pwbzW">
           <property role="1OfcgH" value="true" />
           <property role="3J1cY9" value="1478790772131" />
@@ -1013,11 +1018,6 @@
         </node>
         <node concept="3xLA65" id="1ZE7SxjG0h0" role="lGtFl">
           <property role="TrG5h" value="expectedAsForModelScopeWithImpAndRealizesKind" />
-        </node>
-        <node concept="qc_Tx" id="1Sur9ckXa0f" role="q3PPx">
-          <property role="qc_TA" value="3" />
-          <property role="qc_T$" value="3" />
-          <property role="qc_T_" value="0" />
         </node>
       </node>
     </node>
