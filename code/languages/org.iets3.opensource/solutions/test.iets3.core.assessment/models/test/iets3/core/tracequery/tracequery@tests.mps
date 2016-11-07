@@ -765,6 +765,7 @@
     <node concept="1qefOq" id="1HLccB8ANqp" role="1SKRRt">
       <node concept="3pwaUv" id="1HLccB8ANr3" role="1qenE9">
         <property role="TrG5h" value="a1" />
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
         <property role="2iEbMk" value="1478790766776" />
         <property role="2iEaKi" value="silveira" />
         <node concept="qc_Tx" id="1Sur9ckX8mJ" role="q3PPx">
@@ -844,6 +845,82 @@
             <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
             <node concept="25Ync_" id="mhbzaHvaZi" role="25YdEu">
               <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
+=======
+        <property role="2iEbMk" value="1478549828807" />
+        <property role="2iEaKi" value="Rimer" />
+        <node concept="3pwbzX" id="mhbzaHvaZz" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549828806" />
+          <node concept="OjmMv" id="mhbzaHvaZ$" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvaZ_" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvaZA" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvaZh" role="3pwfKK">
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
+            <node concept="25Ync_" id="mhbzaHvaZi" role="25YdEu">
+              <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvaZv" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549828806" />
+          <node concept="OjmMv" id="mhbzaHvaZw" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvaZx" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvaZy" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvaZf" role="3pwfKK">
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
+            <node concept="25Ync_" id="mhbzaHvaZg" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$P" resolve="handlebars" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvaZr" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549828806" />
+          <node concept="OjmMv" id="mhbzaHvaZs" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvaZt" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvaZu" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvaZd" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
+            <node concept="25Ync_" id="mhbzaHvaZe" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$9" resolve="frame" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvaZn" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549828806" />
+          <node concept="OjmMv" id="mhbzaHvaZo" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvaZp" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvaZq" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvaZb" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
+            <node concept="25Ync_" id="mhbzaHvaZc" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$zH" resolve="wheels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvaZj" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549828806" />
+          <node concept="OjmMv" id="mhbzaHvaZk" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvaZl" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvaZm" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvaZ9" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" resolve="A" />
+            <node concept="25Ync_" id="mhbzaHvaZa" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$P" resolve="handlebars" />
+>>>>>>> added new models in testsolution
             </node>
           </node>
         </node>
@@ -856,11 +933,20 @@
         <node concept="3xLA65" id="1HLccB8ARAT" role="lGtFl">
           <property role="TrG5h" value="expectedAsForProjectScope" />
         </node>
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
+=======
+        <node concept="qc_Tx" id="mhbzaHvaZB" role="q3PPx">
+          <property role="qc_TA" value="5" />
+          <property role="qc_T$" value="5" />
+          <property role="qc_T_" value="0" />
+        </node>
+>>>>>>> added new models in testsolution
       </node>
     </node>
     <node concept="1qefOq" id="1HLccB8DbfO" role="1SKRRt">
       <node concept="3pwaUv" id="1HLccB8DbfP" role="1qenE9">
         <property role="TrG5h" value="a2" />
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
         <property role="2iEbMk" value="1478790769471" />
         <property role="2iEaKi" value="silveira" />
         <node concept="qc_Tx" id="1Sur9ckX9bz" role="q3PPx">
@@ -940,6 +1026,82 @@
             <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
             <node concept="25Ync_" id="mhbzaHvbNj" role="25YdEu">
               <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
+=======
+        <property role="2iEbMk" value="1478549832748" />
+        <property role="2iEaKi" value="Rimer" />
+        <node concept="3pwbzX" id="mhbzaHvbNE" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549832748" />
+          <node concept="OjmMv" id="mhbzaHvbNF" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvbNG" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvbNH" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvbNo" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
+            <node concept="25Ync_" id="mhbzaHvbNp" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$9" resolve="frame" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvbNA" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549832748" />
+          <node concept="OjmMv" id="mhbzaHvbNB" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvbNC" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvbND" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvbNm" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
+            <node concept="25Ync_" id="mhbzaHvbNn" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$zH" resolve="wheels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvbNy" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549832748" />
+          <node concept="OjmMv" id="mhbzaHvbNz" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvbN$" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvbN_" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvbNk" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqs" resolve="A" />
+            <node concept="25Ync_" id="mhbzaHvbNl" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$P" resolve="handlebars" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvbNu" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549832748" />
+          <node concept="OjmMv" id="mhbzaHvbNv" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvbNw" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvbNx" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvbNi" role="3pwfKK">
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
+            <node concept="25Ync_" id="mhbzaHvbNj" role="25YdEu">
+              <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvbNq" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549832748" />
+          <node concept="OjmMv" id="mhbzaHvbNr" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvbNs" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvbNt" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvbNg" role="3pwfKK">
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
+            <node concept="25Ync_" id="mhbzaHvbNh" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$P" resolve="handlebars" />
+>>>>>>> added new models in testsolution
             </node>
           </node>
         </node>
@@ -952,11 +1114,20 @@
         <node concept="3xLA65" id="1HLccB8Dbgm" role="lGtFl">
           <property role="TrG5h" value="expectedAsForModelScopeWithImp" />
         </node>
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
+=======
+        <node concept="qc_Tx" id="mhbzaHvbNI" role="q3PPx">
+          <property role="qc_TA" value="5" />
+          <property role="qc_T$" value="5" />
+          <property role="qc_T_" value="0" />
+        </node>
+>>>>>>> added new models in testsolution
       </node>
     </node>
     <node concept="1qefOq" id="1ZE7SxjG0gJ" role="1SKRRt">
       <node concept="3pwaUv" id="1ZE7SxjG0gK" role="1qenE9">
         <property role="TrG5h" value="a3" />
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
         <property role="2iEbMk" value="1478790772132" />
         <property role="2iEaKi" value="silveira" />
         <node concept="qc_Tx" id="1Sur9ckXa0f" role="q3PPx">
@@ -1006,6 +1177,52 @@
             <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
             <node concept="25Ync_" id="1Sur9ckX9ZY" role="25YdEu">
               <ref role="25YncA" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
+=======
+        <property role="2iEbMk" value="1478549836465" />
+        <property role="2iEaKi" value="Rimer" />
+        <node concept="3pwbzX" id="mhbzaHvcB_" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549836464" />
+          <node concept="OjmMv" id="mhbzaHvcBA" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvcBB" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvcBC" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvcBr" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqS" resolve="C" />
+            <node concept="25Ync_" id="mhbzaHvcBs" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$9" resolve="frame" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvcBx" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549836464" />
+          <node concept="OjmMv" id="mhbzaHvcBy" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvcBz" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvcB$" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvcBp" role="3pwfKK">
+            <ref role="25YdEo" to="ecrc:1HLccB8wSqC" resolve="B" />
+            <node concept="25Ync_" id="mhbzaHvcBq" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$zH" resolve="wheels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3pwbzX" id="mhbzaHvcBt" role="3pwbzW">
+          <property role="1OfcgH" value="true" />
+          <property role="3J1cY9" value="1478549836464" />
+          <node concept="OjmMv" id="mhbzaHvcBu" role="3J00qV">
+            <node concept="19SGf9" id="mhbzaHvcBv" role="OjmMu">
+              <node concept="19SUe$" id="mhbzaHvcBw" role="19SJt6" />
+            </node>
+          </node>
+          <node concept="25Yncw" id="mhbzaHvcBn" role="3pwfKK">
+            <ref role="25YdEo" to="ojsi:1HLccB8wSqC" resolve="E" />
+            <node concept="25Ync_" id="mhbzaHvcBo" role="25YdEu">
+              <ref role="25YncA" to="ecrc:mhbzaHu$$P" resolve="handlebars" />
+>>>>>>> added new models in testsolution
             </node>
           </node>
         </node>
@@ -1019,6 +1236,14 @@
         <node concept="3xLA65" id="1ZE7SxjG0h0" role="lGtFl">
           <property role="TrG5h" value="expectedAsForModelScopeWithImpAndRealizesKind" />
         </node>
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
+=======
+        <node concept="qc_Tx" id="mhbzaHvcBD" role="q3PPx">
+          <property role="qc_TA" value="3" />
+          <property role="qc_T$" value="3" />
+          <property role="qc_T_" value="0" />
+        </node>
+>>>>>>> added new models in testsolution
       </node>
     </node>
     <node concept="1qefOq" id="mhbzaHu$ke" role="1SKRRt">

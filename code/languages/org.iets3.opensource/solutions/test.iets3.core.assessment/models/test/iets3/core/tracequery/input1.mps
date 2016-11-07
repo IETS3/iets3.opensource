@@ -7,12 +7,23 @@
     <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
+    <use id="5a43a71e-7911-4d60-bb76-e1dd9dfa5b77" name="org.iets3.functiontree" version="0" />
   </languages>
   <imports>
     <import index="ojsi" ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" />
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+    <import index="y0mr" ref="r:506f9888-5dfa-47b9-b3ef-bc082381808a(org.iets3.functiontree.structure)" />
   </imports>
   <registry>
+    <language id="5a43a71e-7911-4d60-bb76-e1dd9dfa5b77" name="org.iets3.functiontree">
+      <concept id="1866843961903533928" name="org.iets3.functiontree.structure.FunctionTreeNode" flags="ng" index="1pJTfp">
+        <child id="1866843961903558430" name="children" index="1pG7eJ" />
+        <child id="1866843961903912922" name="description" index="1pHsHF" />
+      </concept>
+      <concept id="1866843961903532411" name="org.iets3.functiontree.structure.FunctionTreeRoot" flags="ng" index="1pJTna">
+        <child id="1866843961903533925" name="root" index="1pJTfk" />
+      </concept>
+    </language>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
       <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ng" index="2Dx65h">
         <reference id="2117670517801950029" name="traceTarget" index="2Dx65g" />
@@ -113,11 +124,14 @@
       <property role="TrG5h" value="a1" />
       <property role="2iEbMk" value="1478549811555" />
       <property role="2iEaKi" value="Rimer" />
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
       <node concept="qc_Tx" id="mhbzaHv9xv" role="q3PPx">
         <property role="qc_TA" value="1" />
         <property role="qc_T$" value="1" />
         <property role="qc_T_" value="0" />
       </node>
+=======
+>>>>>>> added new models in testsolution
       <node concept="3pwbzX" id="mhbzaHv9xr" role="3pwbzW">
         <property role="1OfcgH" value="true" />
         <property role="3J1cY9" value="1478549811555" />
@@ -138,6 +152,14 @@
         <ref role="25YcqC" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
         <node concept="28wEjL" id="mhbzaHlZoa" role="25Ycpv" />
       </node>
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
+=======
+      <node concept="qc_Tx" id="mhbzaHv9xv" role="q3PPx">
+        <property role="qc_TA" value="1" />
+        <property role="qc_T$" value="1" />
+        <property role="qc_T_" value="0" />
+      </node>
+>>>>>>> added new models in testsolution
     </node>
   </node>
   <node concept="1i1ALs" id="1HLccB8wSqj">
@@ -150,8 +172,14 @@
       <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8yRh2" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8yRh3" role="3PL9QJ">
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
           <node concept="2Dx6l7" id="1Sur9ckX6Z9" role="2DxiDn">
             <ref role="2Dx65g" node="1Sur9ckX6Yc" resolve="handlebars" />
+=======
+          <node concept="3jWOz2" id="1HLccB8zEJ8" role="2DxiDt" />
+          <node concept="2Dx6l7" id="mhbzaHv6t7" role="2DxiDn">
+            <ref role="2Dx65g" node="mhbzaHu$$P" resolve="handlebars" />
+>>>>>>> added new models in testsolution
           </node>
           <node concept="3jWOz2" id="1HLccB8zEJ8" role="2DxiDt" />
         </node>
@@ -162,8 +190,14 @@
       <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
           <node concept="2Dx6l7" id="1Sur9ckX6Zd" role="2DxiDn">
             <ref role="2Dx65g" node="1Sur9ckX6Ym" resolve="wheels" />
+=======
+          <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
+          <node concept="2Dx6l7" id="mhbzaHv6t3" role="2DxiDn">
+            <ref role="2Dx65g" node="mhbzaHu$zH" resolve="wheels" />
+>>>>>>> added new models in testsolution
           </node>
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
         </node>
@@ -171,11 +205,20 @@
     </node>
     <node concept="1i1XBj" id="1HLccB8wSqS" role="1i1AA4">
       <property role="TrG5h" value="C" />
+<<<<<<< 0d942f939e449d41cbd1223edacb8031f46bbe3b
       <node concept="2Dz74_" id="mhbzaHu_nK" role="18DfD7">
         <node concept="2DxjnZ" id="mhbzaHu_nL" role="3PL9QJ">
           <node concept="3jWAPd" id="mhbzaHu_nR" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zh" role="2DxiDn">
             <ref role="2Dx65g" node="1Sur9ckX6YB" resolve="frame" />
+=======
+      <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
+      <node concept="2Dz74_" id="mhbzaHu_nK" role="18DfD7">
+        <node concept="2DxjnZ" id="mhbzaHu_nL" role="3PL9QJ">
+          <node concept="3jWAPd" id="mhbzaHu_nR" role="2DxiDt" />
+          <node concept="2Dx6l7" id="mhbzaHv6sY" role="2DxiDn">
+            <ref role="2Dx65g" node="mhbzaHu$$9" resolve="frame" />
+>>>>>>> added new models in testsolution
           </node>
         </node>
       </node>
@@ -183,6 +226,44 @@
     </node>
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
+    <node concept="3GEVxB" id="mhbzaHv6sU" role="38kjvB">
+      <ref role="3GEb4d" node="mhbzaHu$zB" resolve="bikeFT" />
+    </node>
+  </node>
+  <node concept="1pJTna" id="mhbzaHu$zB">
+    <property role="TrG5h" value="bikeFT" />
+    <node concept="1pJTfp" id="mhbzaHu$zC" role="1pJTfk">
+      <property role="TrG5h" value="bike" />
+      <node concept="1pJTfp" id="mhbzaHu$zH" role="1pG7eJ">
+        <property role="TrG5h" value="wheels" />
+        <node concept="OjmMv" id="mhbzaHu$zI" role="1pHsHF">
+          <node concept="19SGf9" id="mhbzaHu$zJ" role="OjmMu">
+            <node concept="19SUe$" id="mhbzaHu$zK" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pJTfp" id="mhbzaHu$$9" role="1pG7eJ">
+        <property role="TrG5h" value="frame" />
+        <node concept="OjmMv" id="mhbzaHu$$a" role="1pHsHF">
+          <node concept="19SGf9" id="mhbzaHu$$b" role="OjmMu">
+            <node concept="19SUe$" id="mhbzaHu$$c" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pJTfp" id="mhbzaHu$$P" role="1pG7eJ">
+        <property role="TrG5h" value="handlebars" />
+        <node concept="OjmMv" id="mhbzaHu$$Q" role="1pHsHF">
+          <node concept="19SGf9" id="mhbzaHu$$R" role="OjmMu">
+            <node concept="19SUe$" id="mhbzaHu$$S" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="OjmMv" id="mhbzaHu$zD" role="1pHsHF">
+        <node concept="19SGf9" id="mhbzaHu$zE" role="OjmMu">
+          <node concept="19SUe$" id="mhbzaHu$zF" role="19SJt6" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1i1ALs" id="1Sur9ckX6Pc">
     <property role="TrG5h" value="bikeComponents" />

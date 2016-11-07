@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" doNotGenerate="true">
+<model ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)">
   <persistence version="9" />
   <languages>
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="-1" />
   </languages>
   <imports>
     <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" />
@@ -60,6 +60,9 @@
   </registry>
   <node concept="1i1ALs" id="1HLccB8wSqj">
     <property role="TrG5h" value="chunk2" />
+    <node concept="3GEVxB" id="1Sur9ckX6Zq" role="38kjvB">
+      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" resolve="bikeComponents" />
+    </node>
     <node concept="1i1XBj" id="1HLccB8wSqs" role="1i1AA4">
       <property role="TrG5h" value="D" />
       <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
@@ -70,10 +73,10 @@
       <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
-          <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zu" role="2DxiDn">
             <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
           </node>
+          <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
         </node>
       </node>
     </node>
@@ -82,10 +85,10 @@
       <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
-          <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
           <node concept="2Dx6l7" id="mhbzaHv9o4" role="2DxiDn">
             <ref role="2Dx65g" node="1HLccB8wSqS" resolve="F" />
           </node>
+          <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
         </node>
       </node>
     </node>
@@ -98,9 +101,6 @@
     </node>
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
-    <node concept="3GEVxB" id="1Sur9ckX6Zq" role="38kjvB">
-      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" resolve="bikeComponents" />
-    </node>
   </node>
 </model>
 
