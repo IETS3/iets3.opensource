@@ -82,17 +82,6 @@
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
-    <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
-      <concept id="1240669143552786953" name="org.iets3.core.expr.repl.structure.DefaultEntry" flags="ng" index="1gtNKa">
-        <property id="4811040598999691042" name="hasError" index="dBX3d" />
-        <property id="3123720608935335115" name="hasBeenEvaled" index="3isvIs" />
-        <child id="1240669143552786973" name="expression" index="1gtNKu" />
-      </concept>
-      <concept id="1240669143552786952" name="org.iets3.core.expr.repl.structure.REPL" flags="ng" index="1gtNKb">
-        <reference id="4237471344366123786" name="sourceNode" index="2C67UQ" />
-        <child id="3123720608934258677" name="entries" index="3ij$yy" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -624,41 +613,6 @@
         <node concept="_ixoA" id="1MPB7eqexOi" role="_iOnB" />
       </node>
     </node>
-  </node>
-  <node concept="1gtNKb" id="4_qY3E4L1bc">
-    <property role="TrG5h" value="base_repl_0" />
-    <ref role="2C67UQ" node="1MPB7epRXTd" />
-    <node concept="1gtNKa" id="4_qY3E4L1bd" role="3ij$yy">
-      <property role="3isvIs" value="true" />
-      <property role="dBX3d" value="false" />
-      <node concept="30cIq6" id="4_qY3E4L1be" role="1gtNKu">
-        <node concept="30dDZf" id="4_qY3E4L1bf" role="30czhm">
-          <node concept="30bXRB" id="4_qY3E4L1bg" role="30dEs_">
-            <property role="30bXRw" value="1" />
-          </node>
-          <node concept="30bXRB" id="4_qY3E4L1bh" role="30dEsF">
-            <property role="30bXRw" value="1" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1gtNKa" id="4_qY3E4L1SY" role="3ij$yy">
-      <property role="3isvIs" value="true" />
-      <property role="dBX3d" value="false" />
-      <node concept="30cIq6" id="4_qY3E4L1Yf" role="1gtNKu">
-        <node concept="30bXRB" id="4_qY3E4L1Ys" role="30czhm">
-          <property role="30bXRw" value="1" />
-        </node>
-      </node>
-    </node>
-    <node concept="1gtNKa" id="4_qY3E4L2DA" role="3ij$yy">
-      <property role="3isvIs" value="true" />
-      <property role="dBX3d" value="false" />
-      <node concept="30bXRB" id="4_qY3E4L2Jr" role="1gtNKu">
-        <property role="30bXRw" value="1" />
-      </node>
-    </node>
-    <node concept="1gtNKa" id="4_qY3E4L3pW" role="3ij$yy" />
   </node>
 </model>
 
