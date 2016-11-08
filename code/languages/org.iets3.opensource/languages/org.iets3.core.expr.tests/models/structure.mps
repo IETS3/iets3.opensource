@@ -329,5 +329,16 @@
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="18$bUx5b55w">
+    <property role="EcuMT" value="1307222191605829984" />
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="TestCoverageAssSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="18$bUx5b57P" role="1TKVEl">
+      <property role="IQ2nx" value="1307222191605830133" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

@@ -1763,5 +1763,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="18$bUx5b58j">
+    <property role="3GE5qa" value="assessment" />
+    <ref role="1XX52x" to="av4b:18$bUx5b55w" resolve="TestCoverageAssSummary" />
+    <node concept="3EZMnI" id="18$bUx5b5aH" role="2wV5jI">
+      <node concept="l2Vlx" id="18$bUx5b5aI" role="2iSdaV" />
+      <node concept="3F0ifn" id="18$bUx5b5aD" role="3EZMnx">
+        <property role="3F0ifm" value="coverage" />
+      </node>
+      <node concept="3F0A7n" id="18$bUx5b5aW" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:18$bUx5b57P" resolve="coverageRatio" />
+      </node>
+      <node concept="3F0ifn" id="18$bUx5b5b9" role="3EZMnx">
+        <property role="3F0ifm" value="%" />
+      </node>
+    </node>
+  </node>
 </model>
 
