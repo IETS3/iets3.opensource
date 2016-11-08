@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1)">
+<model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)">
   <persistence version="9" />
   <languages>
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="0" />
