@@ -237,6 +237,15 @@
       <concept id="8511326569641917307" name="com.mbeddr.mpsutil.interpreter.structure.AbstractConstraintRecursionExpression" flags="ng" index="3SLZkg">
         <reference id="5293529713180742449" name="child" index="rqRob" />
       </concept>
+      <concept id="7933481472092659316" name="com.mbeddr.mpsutil.interpreter.structure.BranchID" flags="ng" index="3Y8bOD">
+        <property id="7933481472092659366" name="id" index="3Y8bRV" />
+      </concept>
+      <concept id="7933481472092659236" name="com.mbeddr.mpsutil.interpreter.structure.RegisterBranchesExpressions" flags="ng" index="3Y8bPT">
+        <child id="7933481472092661099" name="branches" index="3Y88oQ" />
+      </concept>
+      <concept id="7933481472093192918" name="com.mbeddr.mpsutil.interpreter.structure.VisitBranchStatement" flags="ng" index="3YmQ6b">
+        <child id="7933481472092661099" name="branch" index="3Y88oR" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -954,6 +963,17 @@
       <node concept="3dA_Gj" id="12WRc298Czv" role="3vQZUl">
         <node concept="9aQIb" id="12WRc298Czx" role="3vcmbn">
           <node concept="3clFbS" id="12WRc298Czz" role="9aQI4">
+            <node concept="3Y8bPT" id="6SpoPQgg7dh" role="3cqZAp">
+              <node concept="3Y8bOD" id="6SpoPQgg7qx" role="3Y88oQ">
+                <property role="3Y8bRV" value="success" />
+              </node>
+              <node concept="3Y8bOD" id="6SpoPQgg7q$" role="3Y88oQ">
+                <property role="3Y8bRV" value="generic" />
+              </node>
+              <node concept="3Y8bOD" id="6SpoPQgg7qD" role="3Y88oQ">
+                <property role="3Y8bRV" value="specific" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="12WRc298CEJ" role="3cqZAp">
               <node concept="3cpWsn" id="12WRc298CEK" role="3cpWs9">
                 <property role="TrG5h" value="attemptValue" />
@@ -967,6 +987,11 @@
             </node>
             <node concept="3clFbJ" id="12WRc298CIZ" role="3cqZAp">
               <node concept="3clFbS" id="12WRc298CJ1" role="3clFbx">
+                <node concept="3YmQ6b" id="6SpoPQghJ5h" role="3cqZAp">
+                  <node concept="3Y8bOD" id="6SpoPQghWJh" role="3Y88oR">
+                    <property role="3Y8bRV" value="success" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="12WRc298CUU" role="3cqZAp">
                   <node concept="qpA2v" id="12WRc298CVo" role="3cqZAk">
                     <node concept="2OqwBi" id="12WRc298DlD" role="3SLO0q">
@@ -994,6 +1019,11 @@
             </node>
             <node concept="3clFbJ" id="12WRc298DyN" role="3cqZAp">
               <node concept="3clFbS" id="12WRc298DyP" role="3clFbx">
+                <node concept="3YmQ6b" id="6SpoPQghWJl" role="3cqZAp">
+                  <node concept="3Y8bOD" id="6SpoPQghX9n" role="3Y88oR">
+                    <property role="3Y8bRV" value="generic" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="12WRc298DKo" role="3cqZAp">
                   <node concept="qpA2v" id="12WRc298Jgx" role="3cqZAk">
                     <node concept="2OqwBi" id="12WRc298JjN" role="3SLO0q">
@@ -1021,6 +1051,11 @@
             </node>
             <node concept="3clFbJ" id="12WRc298Jvk" role="3cqZAp">
               <node concept="3clFbS" id="12WRc298Jvl" role="3clFbx">
+                <node concept="3YmQ6b" id="6SpoPQghXnv" role="3cqZAp">
+                  <node concept="3Y8bOD" id="6SpoPQghXnx" role="3Y88oR">
+                    <property role="3Y8bRV" value="specific" />
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="12WRc298M7g" role="3cqZAp">
                   <node concept="3cpWsn" id="12WRc298M7h" role="3cpWs9">
                     <property role="TrG5h" value="l" />

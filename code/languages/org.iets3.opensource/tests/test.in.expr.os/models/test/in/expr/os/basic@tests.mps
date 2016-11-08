@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1aa58afd-87bd-4971-8e0e-c5fb1ee70744(test.in.expr.os.basic@tests)">
+<model ref="r:7951d6bf-19cc-476e-a7e0-dfcb66b1691d(test.in.expr.os.basic)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="2" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
-    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="0" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
+    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -100,6 +100,7 @@
       <node concept="_iOnU" id="6HHp2WmQLAT" role="1qenE9">
         <property role="TrG5h" value="base" />
         <property role="2SXJ1i" value="true" />
+        <node concept="_ixoA" id="6SpoPQgNjoy" role="_iOnB" />
         <node concept="7CXmI" id="6HHp2WmR54K" role="lGtFl">
           <node concept="7OXhh" id="6HHp2WmR54P" role="7EUXB" />
         </node>
