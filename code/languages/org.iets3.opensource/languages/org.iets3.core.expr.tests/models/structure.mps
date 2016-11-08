@@ -12,6 +12,7 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -254,9 +255,30 @@
   <node concept="1TIwiD" id="3_DFadMGGNM">
     <property role="EcuMT" value="4137027550720478450" />
     <property role="TrG5h" value="TestCoverageAssQuery" />
-    <property role="34LRSv" value="test coverage for current model" />
+    <property role="34LRSv" value="test coverage" />
     <property role="3GE5qa" value="assessment" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="1TJgyj" id="3_DFadN86Ip" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550727662489" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="languages" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3_DFadN835W" resolve="LanguageRef" />
+    </node>
+    <node concept="1TJgyj" id="3_DFadNcYyg" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550728939664" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ignoredConcepts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3_DFadNcBX2" resolve="IgnoredConcept" />
+    </node>
+    <node concept="1TJgyj" id="3_DFadNfZS8" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550729731592" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scope" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3_DFadMGHQh">
     <property role="EcuMT" value="4137027550720482705" />
@@ -277,6 +299,45 @@
     </node>
     <node concept="PrWs8" id="3_DFadN0Nz$" role="PzmwI">
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_DFadN835W">
+    <property role="EcuMT" value="4137027550727647612" />
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="LanguageRef" />
+    <property role="34LRSv" value="language" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_DFadN83bK" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550727647984" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lang" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:34EJa6aIcco" resolve="LanguageIdentity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_DFadNcBX2">
+    <property role="EcuMT" value="4137027550728847170" />
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="IgnoredConcept" />
+    <property role="34LRSv" value="concept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_DFadNcBZA" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550728847334" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18$bUx5b55w">
+    <property role="EcuMT" value="1307222191605829984" />
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="TestCoverageAssSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="18$bUx5b57P" role="1TKVEl">
+      <property role="IQ2nx" value="1307222191605830133" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

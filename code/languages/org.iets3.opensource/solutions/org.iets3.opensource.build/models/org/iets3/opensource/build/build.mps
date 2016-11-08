@@ -950,6 +950,18 @@
             <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3_DFadNhc8T" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadNhc8U" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3_DFadNhc8V" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadNhc8W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3a2FJuC8s9O" role="2G$12L">
         <property role="BnDLt" value="true" />
