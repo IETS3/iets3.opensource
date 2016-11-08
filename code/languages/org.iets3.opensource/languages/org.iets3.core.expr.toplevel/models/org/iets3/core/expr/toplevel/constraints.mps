@@ -234,7 +234,7 @@
               <property role="TrG5h" value="allExtensions" />
               <node concept="A3Dl8" id="2uR5X5azTX2" role="1tU5fm">
                 <node concept="3Tqbb2" id="2uR5X5azTX5" role="A3Ik2">
-                  <ref role="ehGHo" to="yv47:49WTic8f4iz" resolve="Function" />
+                  <ref role="ehGHo" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
                 </node>
               </node>
               <node concept="2OqwBi" id="2uR5X5azTXq" role="33vP2m">
@@ -255,8 +255,8 @@
                     </node>
                   </node>
                   <node concept="v3k3i" id="78hTg1$3v8p" role="2OqNvi">
-                    <node concept="chp4Y" id="78hTg1$3vqb" role="v3oSu">
-                      <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
+                    <node concept="chp4Y" id="ZV9S9WCv6b" role="v3oSu">
+                      <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
                     </node>
                   </node>
                 </node>
@@ -269,7 +269,7 @@
                             <ref role="3cqZAo" node="2uR5X5azTXD" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="2uR5X5azTXC" role="2OqNvi">
-                            <ref role="3TsBF5" to="yv47:2uR5X5azvjH" resolve="ext" />
+                            <ref role="3TsBF5" to="zzzn:2uR5X5azvjH" resolve="ext" />
                           </node>
                         </node>
                       </node>
