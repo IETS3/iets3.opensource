@@ -258,6 +258,11 @@
     <property role="34LRSv" value="test coverage" />
     <property role="3GE5qa" value="assessment" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="1TJgyi" id="18$bUx5D_ps" role="1TKVEl">
+      <property role="IQ2nx" value="1307222191613826652" />
+      <property role="TrG5h" value="hideOK" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="3_DFadN86Ip" role="1TKVEi">
       <property role="IQ2ns" value="4137027550727662489" />
       <property role="20lmBu" value="aggregation" />
