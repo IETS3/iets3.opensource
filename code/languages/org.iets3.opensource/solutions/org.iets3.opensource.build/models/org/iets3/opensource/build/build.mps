@@ -2117,11 +2117,18 @@
     </node>
     <node concept="55IIr" id="OJuIQpzfqS" role="auvoZ" />
     <node concept="1l3spV" id="OJuIQpzfqT" role="1l3spN">
-      <node concept="L2wRC" id="OJuIQp$diS" role="39821P">
-        <ref role="L2wRA" node="OJuIQp$d7j" resolve="test.in.expr.os" />
-      </node>
-      <node concept="L2wRC" id="OJuIQp$djE" role="39821P">
-        <ref role="L2wRA" node="OJuIQp$dgj" resolve="test.ts.expr.os" />
+      <node concept="398223" id="mcD7NOoTDL" role="39821P">
+        <node concept="3_J27D" id="mcD7NOoTDN" role="Nbhlr">
+          <node concept="3Mxwew" id="mcD7NOoTEt" role="3MwsjC">
+            <property role="3MwjfP" value="org.iets3.opensource.tests" />
+          </node>
+        </node>
+        <node concept="L2wRC" id="OJuIQp$diS" role="39821P">
+          <ref role="L2wRA" node="OJuIQp$d7j" resolve="test.in.expr.os" />
+        </node>
+        <node concept="L2wRC" id="OJuIQp$djE" role="39821P">
+          <ref role="L2wRA" node="OJuIQp$dgj" resolve="test.ts.expr.os" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
