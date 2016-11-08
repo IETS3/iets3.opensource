@@ -65,9 +65,12 @@
     <property role="EcuMT" value="4790956042240148643" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
-      <property role="TrG5h" value="ext" />
+      <property role="TrG5h" value="ext_old" />
       <property role="IQ2nx" value="2861782275883660525" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="58iXrSXwtcs" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.core.expr.lambda.structure.IFunctionLike&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="49WTic8f4nK" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
