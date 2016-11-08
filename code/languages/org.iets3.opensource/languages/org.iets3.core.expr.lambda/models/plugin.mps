@@ -169,6 +169,7 @@
         <property id="8426159527444241399" name="category" index="UYu25" />
         <child id="7019451652830298090" name="applicableLanguages" index="d$6nW" />
         <child id="8615074351687302157" name="evaluators" index="qq9xR" />
+        <child id="6663324787725059267" name="relationships" index="1J4apk" />
       </concept>
       <concept id="8615074351687301435" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluator" flags="ng" index="qq9P1">
         <reference id="8615074351687302216" name="concept" index="qq9wM" />
@@ -191,6 +192,10 @@
       <concept id="5934114435582125873" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorInline" flags="ng" index="3vetai">
         <child id="5934114435582660673" name="expression" index="3vdyny" />
       </concept>
+      <concept id="6663324787724559041" name="com.mbeddr.mpsutil.interpreter.structure.AbstractInterpreterRelationship" flags="ng" index="1J641m">
+        <reference id="6663324787724987489" name="target" index="1J7WVQ" />
+      </concept>
+      <concept id="6663324787724987491" name="com.mbeddr.mpsutil.interpreter.structure.InterpretBeforeRelationship" flags="ng" index="1J7WVO" />
       <concept id="8511326569641889031" name="com.mbeddr.mpsutil.interpreter.structure.AbstractRecursionExpression" flags="ng" index="3SLKdG">
         <child id="8511326569641873009" name="node" index="3SLO0q" />
       </concept>
@@ -324,6 +329,9 @@
   <node concept="qq9qg" id="uGVYUiiVGW">
     <property role="TrG5h" value="ExprLambdaInterpeter" />
     <property role="UYu25" value="arithmetic" />
+    <node concept="1J7WVO" id="3_DFadM_bGC" role="1J4apk">
+      <ref role="1J7WVQ" to="oq0c:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+    </node>
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.lambda.structure" />

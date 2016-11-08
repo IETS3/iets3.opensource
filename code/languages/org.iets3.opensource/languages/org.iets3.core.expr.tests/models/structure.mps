@@ -11,6 +11,7 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -248,6 +249,34 @@
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="PrWs8" id="4_qY3E4CWiy" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_DFadMGGNM">
+    <property role="EcuMT" value="4137027550720478450" />
+    <property role="TrG5h" value="TestCoverageAssQuery" />
+    <property role="34LRSv" value="test coverage for current model" />
+    <property role="3GE5qa" value="assessment" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+  </node>
+  <node concept="1TIwiD" id="3_DFadMGHQh">
+    <property role="EcuMT" value="4137027550720482705" />
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="TestCoverageAssResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyj" id="3_DFadMGHWm" role="1TKVEi">
+      <property role="IQ2ns" value="4137027550720483094" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="3_DFadMGIe1" role="1TKVEl">
+      <property role="IQ2nx" value="4137027550720484225" />
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3_DFadN0Nz$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
   </node>
 </model>
