@@ -3540,12 +3540,7 @@
               <ref role="_emDf" node="5cWGVRfUcW0" resolve="dn2" />
             </node>
           </node>
-          <node concept="mLuIC" id="5cWGVRfUcVY" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcVZ" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="0" />
-            </node>
-          </node>
+          <node concept="mLuIC" id="5cWGVRfUcVY" role="2zM23F" />
         </node>
         <node concept="_ixoA" id="5cWGVRfUcVT" role="_iOnB" />
         <node concept="2zPypq" id="5cWGVRfUcVP" role="_iOnB">
