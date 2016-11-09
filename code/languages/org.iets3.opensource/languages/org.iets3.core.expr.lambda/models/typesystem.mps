@@ -19,6 +19,7 @@
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -31,6 +32,7 @@
       </concept>
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -49,6 +51,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1343,9 +1348,20 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="5ukrBtpVVlU" role="3clFbx">
+                  <node concept="3clFbF" id="7McqtXGuzrC" role="3cqZAp">
+                    <node concept="2OqwBi" id="7McqtXGuzr_" role="3clFbG">
+                      <node concept="10M0yZ" id="7McqtXGuzrA" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      </node>
+                      <node concept="liA8E" id="7McqtXGuzrB" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="2MkqsV" id="5ukrBtpVWb8" role="3cqZAp">
                     <node concept="Xl_RD" id="5ukrBtpVWbn" role="2MkJ7o">
-                      <property role="Xl_RC" value="expressions without effect can only be used he in a val expression" />
+                      <property role="Xl_RC" value="the expression does not have an effect. Capture it in a val expression!" />
                     </node>
                     <node concept="2GrUjf" id="5ukrBtpVWcY" role="2OEOjV">
                       <ref role="2Gs0qQ" node="5ukrBtpVSV$" resolve="e" />
