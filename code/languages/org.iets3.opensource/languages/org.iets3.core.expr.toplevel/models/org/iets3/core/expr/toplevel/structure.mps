@@ -268,10 +268,13 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7D7uZV2iYAD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="type_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8811147530085329321" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="54pTGl8jBV6" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7D7uZV2iYAF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -282,6 +285,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2ptB0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
+    </node>
+    <node concept="PrWs8" id="54pTGl8jBb4" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
@@ -513,12 +519,18 @@
     <node concept="PrWs8" id="xu7xcKdRq0" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="54pTGl8og01" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
     <node concept="1TJgyj" id="xu7xcKdRtf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
+      <property role="20kJfa" value="type_old" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="602952467876378447" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="54pTGl8og1R" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKinTJ">

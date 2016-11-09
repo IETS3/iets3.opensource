@@ -938,6 +938,30 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9I" resolve="jetbrains.mps.lang.sharedConcepts" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3_DFadN2npg" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadN2nph" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3_DFadN2npi" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadN2npj" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3_DFadNhc8T" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadNhc8U" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3_DFadNhc8V" role="3bR37C">
+          <node concept="3bR9La" id="3_DFadNhc8W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3a2FJuC8s9O" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1257,6 +1281,12 @@
           <node concept="3bR9La" id="2nzO3M_RAB$" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="68xoVn6ZN17" role="3bR37C">
+          <node concept="3bR9La" id="68xoVn6ZN18" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
       </node>
@@ -2156,6 +2186,12 @@
         <node concept="3bR9La" id="OJuIQq1NUS" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="18$bUx6ktCx" role="3bR37C">
+        <node concept="3bR9La" id="18$bUx6ktCy" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
         </node>
       </node>
     </node>

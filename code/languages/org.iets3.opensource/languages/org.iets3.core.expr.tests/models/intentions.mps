@@ -28,9 +28,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -78,15 +75,8 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
-        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
-        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
-        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -243,130 +233,6 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="ub9nkyPfGx" role="lGtFl">
-      <property role="1SWRpm" value="TESTING" />
-    </node>
-  </node>
-  <node concept="2S6QgY" id="4_qY3E5MmIb">
-    <property role="TrG5h" value="ResetCoverage" />
-    <ref role="2ZfgGC" to="av4b:ub9nkyK62f" resolve="TestSuite" />
-    <node concept="2S6ZIM" id="4_qY3E5MmIc" role="2ZfVej">
-      <node concept="3clFbS" id="4_qY3E5MmId" role="2VODD2">
-        <node concept="3clFbF" id="4_qY3E5MmSS" role="3cqZAp">
-          <node concept="Xl_RD" id="4_qY3E5MmSR" role="3clFbG">
-            <property role="Xl_RC" value="Reset Coverage" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="4_qY3E5MmIe" role="2ZfgGD">
-      <node concept="3clFbS" id="4_qY3E5MmIf" role="2VODD2">
-        <node concept="3clFbF" id="4_qY3E5Mo13" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E5Mo1Y" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E5KWHU" resolve="reset" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="4_qY3E5Mo0W" role="lGtFl">
-      <property role="1SWRpm" value="TESTING" />
-    </node>
-  </node>
-  <node concept="2S6QgY" id="4_qY3E5Mo2t">
-    <property role="TrG5h" value="PrintCoverage" />
-    <ref role="2ZfgGC" to="av4b:ub9nkyK62f" resolve="TestSuite" />
-    <node concept="2S6ZIM" id="4_qY3E5Mo2u" role="2ZfVej">
-      <node concept="3clFbS" id="4_qY3E5Mo2v" role="2VODD2">
-        <node concept="3clFbF" id="4_qY3E5Mo2w" role="3cqZAp">
-          <node concept="Xl_RD" id="4_qY3E5Mo2x" role="3clFbG">
-            <property role="Xl_RC" value="Print Coverage" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="4_qY3E5Mo2y" role="2ZfgGD">
-      <node concept="3clFbS" id="4_qY3E5Mo2z" role="2VODD2">
-        <node concept="3clFbF" id="4_qY3E64qA6" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qBe" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qBM" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qDG" role="2V$M_3">
-                <property role="2V$B1T" value="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.base" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E64qEd" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qEe" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qEf" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qMq" role="2V$M_3">
-                <property role="2V$B1T" value="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.collections" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E64qFm" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qFn" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qFo" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qOf" role="2V$M_3">
-                <property role="2V$B1T" value="9464fa06-5ab9-409b-9274-64ab29588457" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.lambda" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E64qFT" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qFU" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qFV" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qQ4" role="2V$M_3">
-                <property role="2V$B1T" value="f3eafff0-30d2-46d6-9150-f0f3b880ce27" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.path" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E64qG$" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qG_" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qGA" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qRT" role="2V$M_3">
-                <property role="2V$B1T" value="6b277d9a-d52d-416f-a209-1919bd737f50" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.simpleTypes" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E64qHn" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E64qHo" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E63$MP" resolve="registerLanguage" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            <node concept="pHN19" id="4_qY3E64qHp" role="37wK5m">
-              <node concept="2V$Bhx" id="4_qY3E64qTI" role="2V$M_3">
-                <property role="2V$B1T" value="71934284-d7d1-45ee-a054-8c072591085f" />
-                <property role="2V$B1Q" value="org.iets3.core.expr.toplevel" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4_qY3E5Mo2$" role="3cqZAp">
-          <node concept="2YIFZM" id="4_qY3E5MovX" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:4_qY3E5LtGD" resolve="list" />
-            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="4_qY3E5Mo2A" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
     </node>
   </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="3" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="0" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
@@ -136,6 +136,9 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
       </concept>
@@ -244,13 +247,9 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
-        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
-      </concept>
-      <concept id="602952467876375079" name="org.iets3.core.expr.toplevel.structure.IRecordMember" flags="ng" index="SqngO">
-        <child id="602952467876378447" name="type" index="Sqm_s" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
         <reference id="8811147530084018371" name="record" index="2Ss9cX" />
@@ -1646,39 +1645,39 @@
           </node>
           <node concept="2Ss9d7" id="15mJ3JeDvdh" role="S5Trm">
             <property role="TrG5h" value="a" />
-            <node concept="mLuIC" id="1ufrWYcLP$Y" role="Sqm_s" />
+            <node concept="mLuIC" id="1ufrWYcLP$Y" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="15mJ3JeDvdF" role="S5Trm">
             <property role="TrG5h" value="b" />
-            <node concept="mLuIC" id="1ufrWYcLPBn" role="Sqm_s" />
+            <node concept="mLuIC" id="1ufrWYcLPBn" role="2S399n" />
           </node>
         </node>
         <node concept="_ixoA" id="15mJ3JeDv8C" role="_iOnB" />
         <node concept="2zPypq" id="15mJ3JeD_c3" role="_iOnB">
           <property role="TrG5h" value="invalidPair" />
           <node concept="2S399m" id="15mJ3JeD_dt" role="2zPyp_">
-            <node concept="2Ss9cW" id="15mJ3JeD_dE" role="2S399n">
-              <ref role="2Ss9cX" node="15mJ3JeDvc6" resolve="Pair" />
-            </node>
             <node concept="30bXRB" id="15mJ3JeD_dS" role="2S399l">
               <property role="30bXRw" value="1" />
             </node>
             <node concept="30bXRB" id="15mJ3JeD_eb" role="2S399l">
               <property role="30bXRw" value="2" />
             </node>
+            <node concept="2Ss9cW" id="15mJ3JeD_dE" role="2S399n">
+              <ref role="2Ss9cX" node="15mJ3JeDvc6" resolve="Pair" />
+            </node>
           </node>
         </node>
         <node concept="2zPypq" id="15mJ3JeDKg9" role="_iOnB">
           <property role="TrG5h" value="validPair" />
           <node concept="2S399m" id="15mJ3JeDKga" role="2zPyp_">
-            <node concept="2Ss9cW" id="15mJ3JeDKgb" role="2S399n">
-              <ref role="2Ss9cX" node="15mJ3JeDvc6" resolve="Pair" />
-            </node>
             <node concept="30bXRB" id="15mJ3JeDKgc" role="2S399l">
               <property role="30bXRw" value="3" />
             </node>
             <node concept="30bXRB" id="15mJ3JeDKgd" role="2S399l">
               <property role="30bXRw" value="2" />
+            </node>
+            <node concept="2Ss9cW" id="15mJ3JeDKgb" role="2S399n">
+              <ref role="2Ss9cX" node="15mJ3JeDvc6" resolve="Pair" />
             </node>
           </node>
         </node>
@@ -1968,7 +1967,7 @@
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="7D7uZV2$bPT" role="S5Trm">
             <property role="TrG5h" value="workedAt" />
-            <node concept="3iBWmN" id="7D7uZV2$c0L" role="Sqm_s">
+            <node concept="3iBWmN" id="7D7uZV2$c0L" role="2S399n">
               <node concept="2Ss9cW" id="7D7uZV2$c13" role="3iBWmK">
                 <ref role="2Ss9cX" node="7D7uZV2$bvo" resolve="Company" />
               </node>
@@ -1979,7 +1978,7 @@
           <property role="TrG5h" value="Company" />
           <node concept="2Ss9d7" id="7D7uZV2$bvp" role="S5Trm">
             <property role="TrG5h" value="offices" />
-            <node concept="3iBWmN" id="7D7uZV2$bEc" role="Sqm_s">
+            <node concept="3iBWmN" id="7D7uZV2$bEc" role="2S399n">
               <node concept="2Ss9cW" id="7D7uZV2$bEu" role="3iBWmK">
                 <ref role="2Ss9cX" node="7D7uZV2$b9E" resolve="Address" />
               </node>
@@ -1987,7 +1986,7 @@
           </node>
           <node concept="2Ss9d7" id="7D7uZV2$bEI" role="S5Trm">
             <property role="TrG5h" value="hq" />
-            <node concept="2Ss9cW" id="7D7uZV2$bF5" role="Sqm_s">
+            <node concept="2Ss9cW" id="7D7uZV2$bF5" role="2S399n">
               <ref role="2Ss9cX" node="7D7uZV2$b9E" resolve="Address" />
             </node>
           </node>
@@ -1996,11 +1995,11 @@
           <property role="TrG5h" value="Address" />
           <node concept="2Ss9d7" id="7D7uZV2$b9F" role="S5Trm">
             <property role="TrG5h" value="street" />
-            <node concept="30bdrU" id="7D7uZV2$bkd" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2$bkd" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="7D7uZV2$bks" role="S5Trm">
             <property role="TrG5h" value="zip" />
-            <node concept="30bdrU" id="7D7uZV2$bkt" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2$bkt" role="2S399n" />
           </node>
         </node>
         <node concept="1aga60" id="49WTic8fnow" role="_iOnB">
@@ -2789,48 +2788,48 @@
         <node concept="2zPypq" id="6HHp2WmWQzH" role="_iOnB">
           <property role="TrG5h" value="person" />
           <node concept="2S399m" id="6HHp2WmWQzI" role="2zPyp_">
-            <node concept="2Ss9cW" id="6HHp2WmWRdi" role="2S399n">
-              <ref role="2Ss9cX" node="6HHp2WmWQs$" resolve="Person" />
-            </node>
             <node concept="3iBYfx" id="6HHp2WmWQzK" role="2S399l">
               <node concept="2S399m" id="6HHp2WmWQzL" role="3iBYfI">
-                <node concept="2Ss9cW" id="6HHp2WmWRkl" role="2S399n">
-                  <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
-                </node>
                 <node concept="3iBYfx" id="6HHp2WmWQzN" role="2S399l">
                   <node concept="2S399m" id="6HHp2WmWQzO" role="3iBYfI">
-                    <node concept="2Ss9cW" id="6HHp2WmWRrw" role="2S399n">
-                      <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
-                    </node>
                     <node concept="30bdrP" id="6HHp2WmWQzQ" role="2S399l">
                       <property role="30bdrQ" value="Industriestrasse" />
                     </node>
-                  </node>
-                  <node concept="2S399m" id="6HHp2WmWQzR" role="3iBYfI">
-                    <node concept="2Ss9cW" id="6HHp2WmWRyA" role="2S399n">
+                    <node concept="2Ss9cW" id="6HHp2WmWRrw" role="2S399n">
                       <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
                     </node>
+                  </node>
+                  <node concept="2S399m" id="6HHp2WmWQzR" role="3iBYfI">
                     <node concept="30bdrP" id="6HHp2WmWQzT" role="2S399l">
                       <property role="30bdrQ" value="AStreet" />
                     </node>
+                    <node concept="2Ss9cW" id="6HHp2WmWRyA" role="2S399n">
+                      <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
+                    </node>
                   </node>
+                </node>
+                <node concept="2Ss9cW" id="6HHp2WmWRkl" role="2S399n">
+                  <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
                 </node>
               </node>
               <node concept="2S399m" id="6HHp2WmWQzU" role="3iBYfI">
-                <node concept="2Ss9cW" id="6HHp2WmWRDL" role="2S399n">
-                  <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
-                </node>
                 <node concept="3iBYfx" id="6HHp2WmWQzW" role="2S399l">
                   <node concept="2S399m" id="6HHp2WmWQzX" role="3iBYfI">
-                    <node concept="2Ss9cW" id="6HHp2WmWRKN" role="2S399n">
-                      <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
-                    </node>
                     <node concept="30bdrP" id="6HHp2WmWQzZ" role="2S399l">
                       <property role="30bdrQ" value="XStreet" />
                     </node>
+                    <node concept="2Ss9cW" id="6HHp2WmWRKN" role="2S399n">
+                      <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
+                    </node>
                   </node>
                 </node>
+                <node concept="2Ss9cW" id="6HHp2WmWRDL" role="2S399n">
+                  <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
+                </node>
               </node>
+            </node>
+            <node concept="2Ss9cW" id="6HHp2WmWRdi" role="2S399n">
+              <ref role="2Ss9cX" node="6HHp2WmWQs$" resolve="Person" />
             </node>
           </node>
           <node concept="2Ss9cW" id="6HHp2WmWTYr" role="2zM23F">
@@ -2930,7 +2929,7 @@
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="6HHp2WmWQs_" role="S5Trm">
             <property role="TrG5h" value="workedAt" />
-            <node concept="3iBWmN" id="6HHp2WmWQsA" role="Sqm_s">
+            <node concept="3iBWmN" id="6HHp2WmWQsA" role="2S399n">
               <node concept="2Ss9cW" id="6HHp2WmWQsB" role="3iBWmK">
                 <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
               </node>
@@ -2941,7 +2940,7 @@
           <property role="TrG5h" value="Company" />
           <node concept="2Ss9d7" id="6HHp2WmWQsD" role="S5Trm">
             <property role="TrG5h" value="offices" />
-            <node concept="3iBWmN" id="6HHp2WmWQsE" role="Sqm_s">
+            <node concept="3iBWmN" id="6HHp2WmWQsE" role="2S399n">
               <node concept="2Ss9cW" id="6HHp2WmWQsF" role="3iBWmK">
                 <ref role="2Ss9cX" node="6HHp2WmWQsG" resolve="Address" />
               </node>
@@ -2952,7 +2951,7 @@
           <property role="TrG5h" value="Address" />
           <node concept="2Ss9d7" id="6HHp2WmWQsH" role="S5Trm">
             <property role="TrG5h" value="street" />
-            <node concept="30bdrU" id="6HHp2WmWQsI" role="Sqm_s" />
+            <node concept="30bdrU" id="6HHp2WmWQsI" role="2S399n" />
           </node>
         </node>
         <node concept="_ixoA" id="6HHp2WmXgQQ" role="_iOnB" />
@@ -3064,9 +3063,6 @@
         <node concept="2zPypq" id="6HHp2WmXy1j" role="_iOnB">
           <property role="TrG5h" value="p1" />
           <node concept="2S399m" id="6HHp2WmXy1k" role="2zPyp_">
-            <node concept="2Ss9cW" id="6HHp2WmXyhq" role="2S399n">
-              <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
-            </node>
             <node concept="30bdrP" id="6HHp2WmXy1m" role="2S399l">
               <property role="30bdrQ" value="Voelter" />
             </node>
@@ -3076,16 +3072,19 @@
             <node concept="UmHTt" id="6HHp2WmXy1o" role="2S399l" />
             <node concept="3iBYfx" id="6HHp2WmXy1p" role="2S399l">
               <node concept="2S399m" id="6HHp2WmXy1q" role="3iBYfI">
-                <node concept="2Ss9cW" id="6HHp2WmXysR" role="2S399n">
-                  <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
-                </node>
                 <node concept="30bdrP" id="6HHp2WmXy1s" role="2S399l">
                   <property role="30bdrQ" value="89555" />
                 </node>
                 <node concept="30bdrP" id="6HHp2WmXy1t" role="2S399l">
                   <property role="30bdrQ" value="Heidenheim" />
                 </node>
+                <node concept="2Ss9cW" id="6HHp2WmXysR" role="2S399n">
+                  <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
+                </node>
               </node>
+            </node>
+            <node concept="2Ss9cW" id="6HHp2WmXyhq" role="2S399n">
+              <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
             </node>
           </node>
           <node concept="2Ss9cW" id="6HHp2WmXy9h" role="2zM23F">
@@ -3095,9 +3094,6 @@
         <node concept="2zPypq" id="6HHp2WmXy1v" role="_iOnB">
           <property role="TrG5h" value="p2" />
           <node concept="2S399m" id="6HHp2WmXy1w" role="2zPyp_">
-            <node concept="2Ss9cW" id="6HHp2WmXypc" role="2S399n">
-              <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
-            </node>
             <node concept="30bdrP" id="6HHp2WmXy1y" role="2S399l">
               <property role="30bdrQ" value="Voelter" />
             </node>
@@ -3113,6 +3109,9 @@
                 <ref role="_emDf" node="6HHp2WmXy1D" resolve="a" />
               </node>
             </node>
+            <node concept="2Ss9cW" id="6HHp2WmXypc" role="2S399n">
+              <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
+            </node>
           </node>
           <node concept="2Ss9cW" id="6HHp2WmXyl5" role="2zM23F">
             <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
@@ -3121,14 +3120,14 @@
         <node concept="2zPypq" id="6HHp2WmXy1D" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="2S399m" id="6HHp2WmXy1E" role="2zPyp_">
-            <node concept="2Ss9cW" id="6HHp2WmXy$l" role="2S399n">
-              <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
-            </node>
             <node concept="30bdrP" id="6HHp2WmXy1G" role="2S399l">
               <property role="30bdrQ" value="89555" />
             </node>
             <node concept="30bdrP" id="6HHp2WmXy1H" role="2S399l">
               <property role="30bdrQ" value="Heidenheim" />
+            </node>
+            <node concept="2Ss9cW" id="6HHp2WmXy$l" role="2S399n">
+              <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
             </node>
           </node>
           <node concept="2Ss9cW" id="6HHp2WmXywy" role="2zM23F">
@@ -3163,21 +3162,21 @@
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="7D7uZV2g7Zp" role="S5Trm">
             <property role="TrG5h" value="name" />
-            <node concept="30bdrU" id="7D7uZV2g7ZI" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2g7ZI" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="7D7uZV2g7ZP" role="S5Trm">
             <property role="TrG5h" value="firstName" />
-            <node concept="30bdrU" id="7D7uZV2g80e" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2g80e" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="7D7uZV2o4PH" role="S5Trm">
             <property role="TrG5h" value="middleInitial" />
-            <node concept="Uns6S" id="7D7uZV2o6Cu" role="Sqm_s">
+            <node concept="Uns6S" id="7D7uZV2o6Cu" role="2S399n">
               <node concept="30bdrU" id="7D7uZV2o6CM" role="Uns6T" />
             </node>
           </node>
           <node concept="2Ss9d7" id="7D7uZV2g80T" role="S5Trm">
             <property role="TrG5h" value="addresses" />
-            <node concept="3iBYCm" id="7D7uZV2g81C" role="Sqm_s">
+            <node concept="3iBYCm" id="7D7uZV2g81C" role="2S399n">
               <node concept="2Ss9cW" id="7D7uZV2g81W" role="3iBWmK">
                 <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
               </node>
@@ -3188,11 +3187,11 @@
           <property role="TrG5h" value="Address" />
           <node concept="2Ss9d7" id="7D7uZV2g80t" role="S5Trm">
             <property role="TrG5h" value="zip" />
-            <node concept="30bdrU" id="7D7uZV2g80N" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2g80N" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="7D7uZV2rwI8" role="S5Trm">
             <property role="TrG5h" value="city" />
-            <node concept="30bdrU" id="7D7uZV2r$qg" role="Sqm_s" />
+            <node concept="30bdrU" id="7D7uZV2r$qg" role="2S399n" />
           </node>
         </node>
         <node concept="_ixoA" id="6HHp2WmXx3u" role="_iOnB" />
