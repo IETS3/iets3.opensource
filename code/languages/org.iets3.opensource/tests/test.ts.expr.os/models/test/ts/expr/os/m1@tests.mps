@@ -107,6 +107,7 @@
       <concept id="7089558164910719190" name="org.iets3.core.expr.base.structure.SuccessValueExpr" flags="ng" index="2zAAH0">
         <reference id="7089558164910719191" name="try" index="2zAAH1" />
       </concept>
+      <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -4000,6 +4001,33 @@
           </node>
         </node>
         <node concept="_ixoA" id="TuTPrvJvGe" role="_iOnB" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5jYrMSmEdrc">
+    <property role="TrG5h" value="funtions" />
+    <node concept="1qefOq" id="5jYrMSmEdrd" role="1SKRRt">
+      <node concept="_iOnU" id="5jYrMSmEdrf" role="1qenE9">
+        <property role="TrG5h" value="functions" />
+        <node concept="1aga60" id="5jYrMSmEdro" role="_iOnB">
+          <property role="TrG5h" value="emptyFun1" />
+          <node concept="1aduha" id="5jYrMSmEdrJ" role="1ahQXP">
+            <node concept="7CXmI" id="5jYrMSmEdtN" role="lGtFl">
+              <node concept="1TM$A" id="5jYrMSmEdtO" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="5jYrMSmEdrV" role="_iOnB">
+          <property role="TrG5h" value="emptyFun2" />
+          <node concept="1aduha" id="5jYrMSmEdsg" role="1ahQXP">
+            <node concept="2zH6wq" id="5jYrMSmEdsm" role="1aduh9" />
+            <node concept="2zH6wq" id="5jYrMSmEdsu" role="1aduh9" />
+            <node concept="7CXmI" id="5jYrMSmEdtx" role="lGtFl">
+              <node concept="1TM$A" id="5jYrMSmEdty" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5jYrMSmEdsB" role="_iOnB" />
       </node>
     </node>
   </node>
