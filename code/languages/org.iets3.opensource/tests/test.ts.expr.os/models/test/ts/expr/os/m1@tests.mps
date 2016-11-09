@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1)">
+<model ref="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)">
   <persistence version="9" />
   <languages>
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
@@ -109,6 +109,9 @@
       </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="867786408877811041" name="org.iets3.core.expr.base.structure.Contract" flags="ng" index="I61D5">
         <child id="867786408877811045" name="items" index="I61D1" />
@@ -267,13 +270,9 @@
       <concept id="3315773615451992747" name="org.iets3.core.expr.toplevel.structure.TypedefContractValExpr" flags="ng" index="QCKKy" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
-        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
-      </concept>
-      <concept id="602952467876375079" name="org.iets3.core.expr.toplevel.structure.IRecordMember" flags="ng" index="SqngO">
-        <child id="602952467876378447" name="type" index="Sqm_s" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
         <reference id="8811147530084018371" name="record" index="2Ss9cX" />
@@ -760,7 +759,7 @@
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="6HHp2WmQhmi" role="S5Trm">
             <property role="TrG5h" value="workedAt" />
-            <node concept="3iBWmN" id="6HHp2WmQhmj" role="Sqm_s">
+            <node concept="3iBWmN" id="6HHp2WmQhmj" role="2S399n">
               <node concept="2Ss9cW" id="6HHp2WmQhmk" role="3iBWmK">
                 <ref role="2Ss9cX" node="6HHp2WmQhml" resolve="Company" />
               </node>
@@ -771,7 +770,7 @@
           <property role="TrG5h" value="Company" />
           <node concept="2Ss9d7" id="6HHp2WmQhmm" role="S5Trm">
             <property role="TrG5h" value="offices" />
-            <node concept="3iBWmN" id="6HHp2WmQhmn" role="Sqm_s">
+            <node concept="3iBWmN" id="6HHp2WmQhmn" role="2S399n">
               <node concept="2Ss9cW" id="6HHp2WmQhmo" role="3iBWmK">
                 <ref role="2Ss9cX" node="6HHp2WmQhmr" resolve="Address" />
               </node>
@@ -779,7 +778,7 @@
           </node>
           <node concept="2Ss9d7" id="6HHp2WmQhmp" role="S5Trm">
             <property role="TrG5h" value="hq" />
-            <node concept="2Ss9cW" id="6HHp2WmQhmq" role="Sqm_s">
+            <node concept="2Ss9cW" id="6HHp2WmQhmq" role="2S399n">
               <ref role="2Ss9cX" node="6HHp2WmQhmr" resolve="Address" />
             </node>
           </node>
@@ -788,11 +787,11 @@
           <property role="TrG5h" value="Address" />
           <node concept="2Ss9d7" id="6HHp2WmQhms" role="S5Trm">
             <property role="TrG5h" value="street" />
-            <node concept="30bdrU" id="6HHp2WmQhmt" role="Sqm_s" />
+            <node concept="30bdrU" id="6HHp2WmQhmt" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="6HHp2WmQhmu" role="S5Trm">
             <property role="TrG5h" value="zip" />
-            <node concept="30bdrU" id="6HHp2WmQhmv" role="Sqm_s" />
+            <node concept="30bdrU" id="6HHp2WmQhmv" role="2S399n" />
           </node>
         </node>
         <node concept="1aga60" id="6HHp2WmQhmw" role="_iOnB">
@@ -2422,11 +2421,11 @@
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="3Y6fbK1c39Q" role="S5Trm">
             <property role="TrG5h" value="firstName" />
-            <node concept="30bdrU" id="3Y6fbK1c3af" role="Sqm_s" />
+            <node concept="30bdrU" id="3Y6fbK1c3af" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="3Y6fbK1c39m" role="S5Trm">
             <property role="TrG5h" value="name" />
-            <node concept="30bdrU" id="3Y6fbK1c39G" role="Sqm_s" />
+            <node concept="30bdrU" id="3Y6fbK1c39G" role="2S399n" />
           </node>
         </node>
         <node concept="_ixoA" id="3Y6fbK1c35r" role="_iOnB" />
