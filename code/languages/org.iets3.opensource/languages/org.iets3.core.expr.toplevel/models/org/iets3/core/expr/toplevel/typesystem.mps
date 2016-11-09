@@ -151,9 +151,6 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
-      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
-        <child id="1175517761460" name="condition" index="2MkoU_" />
-      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -625,8 +622,8 @@
               <node concept="1YBJjd" id="7D7uZV2e3O6" role="2Oq$k0">
                 <ref role="1YBMHb" node="7D7uZV2e2LL" resolve="rm" />
               </node>
-              <node concept="3TrEf2" id="7D7uZV2e3WS" role="2OqNvi">
-                <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" resolve="type" />
+              <node concept="3TrEf2" id="54pTGl8ohmo" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
               </node>
             </node>
           </node>
@@ -924,7 +921,7 @@
               <ref role="1YBMHb" node="7D7uZV2j1Jt" resolve="rl" />
             </node>
             <node concept="3TrEf2" id="6NHlpK$$II7" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:7D7uZV2iYAD" resolve="type" />
+              <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
             </node>
           </node>
         </node>
@@ -937,6 +934,15 @@
     <node concept="1YaCAy" id="7D7uZV2j1Jt" role="1YuTPh">
       <property role="TrG5h" value="rl" />
       <ref role="1YaFvo" to="yv47:7D7uZV2iYAC" resolve="RecordLiteral" />
+    </node>
+    <node concept="bXqS6" id="54pTGl8keR$" role="bX4a1">
+      <node concept="3clFbS" id="54pTGl8keR_" role="2VODD2">
+        <node concept="3clFbF" id="54pTGl8kgVQ" role="3cqZAp">
+          <node concept="3clFbT" id="54pTGl8kgVP" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1YbPZF" id="6HHp2WnkxRi">
@@ -1217,35 +1223,6 @@
     <node concept="1YaCAy" id="HywGhj0iaz" role="1YuTPh">
       <property role="TrG5h" value="ove" />
       <ref role="1YaFvo" to="yv47:HywGhj0hJO" resolve="OldValueExpr" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="JUiQTzbyai">
-    <property role="TrG5h" value="check_RecordMember" />
-    <property role="3GE5qa" value="record" />
-    <node concept="3clFbS" id="JUiQTzbyaj" role="18ibNy">
-      <node concept="2Mj0R9" id="JUiQTzbyau" role="3cqZAp">
-        <node concept="3y3z36" id="JUiQTzbyxx" role="2MkoU_">
-          <node concept="10Nm6u" id="JUiQTzbyy4" role="3uHU7w" />
-          <node concept="2OqwBi" id="JUiQTzbyeL" role="3uHU7B">
-            <node concept="1YBJjd" id="JUiQTzbyaM" role="2Oq$k0">
-              <ref role="1YBMHb" node="JUiQTzbyal" resolve="rm" />
-            </node>
-            <node concept="3TrEf2" id="JUiQTzbymX" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:xu7xcKdRtf" resolve="type" />
-            </node>
-          </node>
-        </node>
-        <node concept="Xl_RD" id="JUiQTzbyza" role="2MkJ7o">
-          <property role="Xl_RC" value="type required" />
-        </node>
-        <node concept="1YBJjd" id="JUiQTzby$T" role="2OEOjV">
-          <ref role="1YBMHb" node="JUiQTzbyal" resolve="rm" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="JUiQTzbyal" role="1YuTPh">
-      <property role="TrG5h" value="rm" />
-      <ref role="1YaFvo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1YbPZF" id="3Y6fbK1h_$e">
@@ -1720,7 +1697,7 @@
                   <ref role="1YBMHb" node="6NHlpK$$xU5" resolve="rl" />
                 </node>
                 <node concept="3TrEf2" id="6NHlpK$$z_4" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yv47:7D7uZV2iYAD" resolve="type" />
+                  <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                 </node>
               </node>
               <node concept="3JvlWi" id="6NHlpK$$z_5" role="2OqNvi" />
@@ -1742,7 +1719,7 @@
                 <ref role="1YBMHb" node="6NHlpK$$xU5" resolve="rl" />
               </node>
               <node concept="3TrEf2" id="6NHlpK$$$9x" role="2OqNvi">
-                <ref role="3Tt5mk" to="yv47:7D7uZV2iYAD" resolve="type" />
+                <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
               </node>
             </node>
           </node>
