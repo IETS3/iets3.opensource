@@ -225,6 +225,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -243,6 +244,23 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -336,6 +354,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -3770,6 +3789,79 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7McqtXGyz8c" role="13h7CS">
+      <property role="TrG5h" value="getCapabilityRequirement" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7McqtXGyz8d" role="1B3o_S" />
+      <node concept="3uibUv" id="7McqtXGy$Ku" role="3clF45">
+        <ref role="3uigEE" node="7McqtXGyzQo" resolve="ICapabilityRequirement" />
+      </node>
+      <node concept="3clFbS" id="7McqtXGyz8f" role="3clF47">
+        <node concept="3cpWs6" id="7McqtXGy$O_" role="3cqZAp">
+          <node concept="10Nm6u" id="7McqtXGy$OH" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="7McqtXGy$M6" role="lGtFl">
+        <node concept="TZ5HA" id="7McqtXGy$M7" role="TZ5H$">
+          <node concept="1dT_AC" id="7McqtXGy$M8" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the capability requirement of this type. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7McqtXGy$ME" role="TZ5H$">
+          <node concept="1dT_AC" id="7McqtXGy$MF" role="1dT_Ay">
+            <property role="1dT_AB" value="The requirement specifies which overloading operations rules can be used " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7McqtXGy$N4" role="TZ5H$">
+          <node concept="1dT_AC" id="7McqtXGy$N5" role="1dT_Ay">
+            <property role="1dT_AB" value="to give a type to binary operations where the sides have this type." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7McqtXG$ft5" role="TZ5H$">
+          <node concept="1dT_AC" id="7McqtXG$ft6" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7McqtXG$ftn" role="TZ5H$">
+          <node concept="1dT_AC" id="7McqtXG$fto" role="1dT_Ay">
+            <property role="1dT_AB" value="A null value means that the type does not require any special capability." />
+          </node>
+        </node>
+        <node concept="x79VA" id="7McqtXGy$M9" role="x79VK">
+          <property role="x79VB" value="the capability requirement" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7McqtXG$e3Z" role="13h7CS">
+      <property role="TrG5h" value="requiresSpecialCapability" />
+      <node concept="3Tm1VV" id="7McqtXG$e40" role="1B3o_S" />
+      <node concept="10P_77" id="7McqtXG$fpL" role="3clF45" />
+      <node concept="3clFbS" id="7McqtXG$e42" role="3clF47">
+        <node concept="3cpWs6" id="7McqtXG$fu1" role="3cqZAp">
+          <node concept="3y3z36" id="7McqtXG$h$a" role="3cqZAk">
+            <node concept="BsUDl" id="7McqtXG$fu_" role="3uHU7B">
+              <ref role="37wK5l" node="7McqtXGyz8c" resolve="getCapabilityRequirement" />
+            </node>
+            <node concept="10Nm6u" id="7McqtXG$fBx" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7McqtXG$h_u" role="13h7CS">
+      <property role="TrG5h" value="notRequiresSpecialCapability" />
+      <node concept="3Tm1VV" id="7McqtXG$h_v" role="1B3o_S" />
+      <node concept="10P_77" id="7McqtXG$h_w" role="3clF45" />
+      <node concept="3clFbS" id="7McqtXG$h_x" role="3clF47">
+        <node concept="3cpWs6" id="7McqtXG$h_y" role="3cqZAp">
+          <node concept="3clFbC" id="7McqtXG$j5F" role="3cqZAk">
+            <node concept="BsUDl" id="7McqtXG$h_$" role="3uHU7B">
+              <ref role="37wK5l" node="7McqtXGyz8c" resolve="getCapabilityRequirement" />
+            </node>
+            <node concept="10Nm6u" id="7McqtXG$h__" role="3uHU7w" />
           </node>
         </node>
       </node>
@@ -8782,6 +8874,11 @@
       </node>
       <node concept="10P_77" id="RIvadv1Etl" role="3clF45" />
     </node>
+  </node>
+  <node concept="3HP615" id="7McqtXGyzQo">
+    <property role="TrG5h" value="ICapabilityRequirement" />
+    <node concept="2tJIrI" id="7McqtXGyzR5" role="jymVt" />
+    <node concept="3Tm1VV" id="7McqtXGyzQp" role="1B3o_S" />
   </node>
 </model>
 
