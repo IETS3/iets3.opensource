@@ -578,55 +578,6 @@
           </node>
           <node concept="30bdrU" id="7k$Bvd3eTmV" role="2zM23F" />
         </node>
-        <node concept="_ixoA" id="79QeWqU9IL5" role="_iOnB" />
-        <node concept="_fkuM" id="1MPB7eqmiO_" role="_iOnB">
-          <property role="TrG5h" value="stringTests" />
-          <node concept="_fkuZ" id="1MPB7eqmiPu" role="_fkp5">
-            <node concept="_fku$" id="1MPB7eqmiPv" role="_fkur" />
-            <node concept="_emDc" id="1MPB7eqmiQ0" role="_fkuY">
-              <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
-            </node>
-            <node concept="30bdrP" id="1MPB7eqmiPK" role="_fkuS">
-              <property role="30bdrQ" value="Hallo" />
-            </node>
-          </node>
-          <node concept="_fkuZ" id="1MPB7eqmiQj" role="_fkp5">
-            <node concept="_fku$" id="1MPB7eqmiQk" role="_fkur" />
-            <node concept="_emDc" id="1MPB7eqmiQI" role="_fkuY">
-              <ref role="_emDf" node="7k$Bvd3eTmA" resolve="b" />
-            </node>
-            <node concept="30bdrP" id="1MPB7eqmiQS" role="_fkuS">
-              <property role="30bdrQ" value="HalloPerson" />
-            </node>
-          </node>
-          <node concept="_fkuZ" id="1MPB7eqmiRw" role="_fkp5">
-            <node concept="_fku$" id="1MPB7eqmiRx" role="_fkur" />
-            <node concept="_emDc" id="1MPB7eqmiS3" role="_fkuY">
-              <ref role="_emDf" node="7k$Bvd3eTmF" resolve="c" />
-            </node>
-            <node concept="30bdrP" id="1MPB7eqmiSz" role="_fkuS">
-              <property role="30bdrQ" value="Hallo22" />
-            </node>
-          </node>
-          <node concept="_fkuZ" id="1MPB7eqmiUn" role="_fkp5">
-            <node concept="_fku$" id="1MPB7eqmiUo" role="_fkur" />
-            <node concept="30bdrP" id="1MPB7eqmiUq" role="_fkuS">
-              <property role="30bdrQ" value="42Hallo" />
-            </node>
-            <node concept="_emDc" id="1MPB7eqmj11" role="_fkuY">
-              <ref role="_emDf" node="7k$Bvd3eTmK" resolve="d" />
-            </node>
-          </node>
-          <node concept="_fkuZ" id="1MPB7eqmiV_" role="_fkp5">
-            <node concept="_fku$" id="1MPB7eqmiVA" role="_fkur" />
-            <node concept="30bdrP" id="1MPB7eqmiVC" role="_fkuS">
-              <property role="30bdrQ" value="42Hallo33" />
-            </node>
-            <node concept="_emDc" id="1MPB7eqmj20" role="_fkuY">
-              <ref role="_emDf" node="7k$Bvd3eTmP" resolve="e" />
-            </node>
-          </node>
-        </node>
         <node concept="_ixoA" id="79QeWqU9ILx" role="_iOnB" />
         <node concept="7CXmI" id="7k$Bvd3eTmv" role="lGtFl">
           <node concept="7OXhh" id="7k$Bvd3eTmx" role="7EUXB" />
