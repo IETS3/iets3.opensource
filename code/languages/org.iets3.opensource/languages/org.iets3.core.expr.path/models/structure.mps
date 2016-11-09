@@ -41,7 +41,7 @@
     </language>
   </registry>
   <node concept="PlHQZ" id="6LLGpXJ1KPJ">
-    <property role="TrG5h" value="IRecordType" />
+    <property role="TrG5h" value="ICanHaveMembersType" />
     <property role="EcuMT" value="7814222126785170799" />
   </node>
   <node concept="PlHQZ" id="6LLGpXJ1KSq">
