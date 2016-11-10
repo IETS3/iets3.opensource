@@ -163,7 +163,7 @@
               <node concept="2qgKlT" id="1HLccB8wS9W" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
                 <node concept="3TUQnm" id="1HLccB8wS9X" role="37wK5m">
-                  <ref role="3TV0OU" to="y0mr:1BCnb50lWXC" resolve="FunctionTreeNode" />
+                  <ref role="3TV0OU" to="tpck:h0TrEE$" resolve="INamedConcept" />
                 </node>
               </node>
             </node>

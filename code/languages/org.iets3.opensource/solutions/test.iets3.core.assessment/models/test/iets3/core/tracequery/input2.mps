@@ -4,7 +4,7 @@
   <languages>
     <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="-1" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
   </languages>
   <imports>
     <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" />
@@ -85,10 +85,10 @@
       <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
+          <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
           <node concept="2Dx6l7" id="mhbzaHv9o4" role="2DxiDn">
             <ref role="2Dx65g" node="1HLccB8wSqS" resolve="F" />
           </node>
-          <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
         </node>
       </node>
     </node>
