@@ -164,7 +164,6 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
-      <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -294,8 +293,8 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="1kHk_G" id="2uR5X5azvkk" role="3EZMnx">
-          <ref role="1NtTu8" to="yv47:2uR5X5azvjH" resolve="ext" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <ref role="1NtTu8" to="zzzn:2uR5X5azvjH" resolve="ext" />
         </node>
         <node concept="3F0ifn" id="49WTic8f4or" role="3EZMnx">
           <property role="3F0ifm" value="fun" />
@@ -312,20 +311,14 @@
                   <node concept="2OqwBi" id="2uR5X5b1JY9" role="3clFbw">
                     <node concept="pncrf" id="2uR5X5b1JRZ" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2uR5X5b1Kaq" role="2OqNvi">
-                      <ref role="3TsBF5" to="yv47:2uR5X5azvjH" resolve="ext" />
+                      <ref role="3TsBF5" to="zzzn:2uR5X5azvjH" resolve="ext" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="2uR5X5b1JRP" role="3clFbx">
                     <node concept="3cpWs6" id="2uR5X5b1Kt9" role="3cqZAp">
-                      <node concept="pVOtf" id="ub9nkyQIFx" role="3cqZAk">
-                        <node concept="10M0yZ" id="ub9nkyQIJN" role="3uHU7w">
-                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
-                        </node>
-                        <node concept="10M0yZ" id="2uR5X5b2ntE" role="3uHU7B">
-                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-                          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
-                        </node>
+                      <node concept="10M0yZ" id="2uR5X5b2ntE" role="3cqZAk">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                       </node>
                     </node>
                   </node>
@@ -859,7 +852,7 @@
             </node>
           </node>
           <node concept="3F1sOY" id="7D7uZV2e2Lh" role="3EZMnx">
-            <ref role="1NtTu8" to="yv47:xu7xcKdRtf" resolve="type" />
+            <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
           </node>
           <node concept="2iRfu4" id="JUiQTzby8k" role="2iSdaV" />
           <node concept="VPM3Z" id="JUiQTzby8l" role="3F10Kt">
@@ -883,7 +876,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7D7uZV2iYBl" role="3EZMnx">
-        <ref role="1NtTu8" to="yv47:7D7uZV2iYAD" resolve="type" />
+        <ref role="1NtTu8" to="hm2y:7D7uZV2iYAD" resolve="type" />
       </node>
       <node concept="l2Vlx" id="7D7uZV2iYBb" role="2iSdaV" />
       <node concept="3F0ifn" id="7D7uZV2iYCk" role="3EZMnx">

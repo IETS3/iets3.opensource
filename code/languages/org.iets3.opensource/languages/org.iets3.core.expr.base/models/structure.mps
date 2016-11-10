@@ -1135,5 +1135,16 @@
     <property role="3GE5qa" value="bool" />
     <property role="TrG5h" value="IValidOtherwiseContainer" />
   </node>
+  <node concept="PlHQZ" id="68xoVn7qAL8">
+    <property role="EcuMT" value="7071042522334260296" />
+    <property role="TrG5h" value="ITyped" />
+    <node concept="1TJgyj" id="7D7uZV2iYAD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="8811147530085329321" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
 </model>
 

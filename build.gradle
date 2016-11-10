@@ -18,8 +18,8 @@ if (project.hasProperty('projectVersion')) {
 }
 
 // Dependency versions
-ext.mpsVersion = '3.4'
-ext.mbeddrVersion = '1.0-master-SNAPSHOT'
+ext.mpsVersion = '3.4.1'
+ext.mbeddrVersion = '1.0.+'
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
@@ -77,19 +77,17 @@ task resolveMpsArtifacts(type: Copy) {
     from {
         configurations.mpsArtifacts.resolve().collect { zipTree(it) }
     }
-    into "$buildDir/artifacts"
+    into artifactsDir
 }
 
-ant.properties['iets3.github.opensource.home'] = projectDir
+ant.properties['mps.home'] = resolveMps.destinationDir
+ant.properties['iets3.github.opensource.home'] = rootDir
+ant.properties['build.dir'] = rootDir
+ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
 ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
 
-tasks['ant-clean-and-build'].configure {
-    dependsOn resolveMps, resolveMpsArtifacts
-    doFirst {
-        ant.properties['mps.home'] = resolveMps.destinationDir
-        ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
-    }
-}
+tasks['ant-check-mps-home'].dependsOn resolveMps
+tasks['ant-clean-and-build'].dependsOn resolveMps, resolveMpsArtifacts
 
 task packageAllScripts(type: Zip, dependsOn: 'ant-clean-and-build') {
     baseName 'org.iets3.opensource.allScripts'
@@ -102,6 +100,13 @@ task packageOpenSource(type: Zip, dependsOn: 'ant-clean-and-build') {
     from artifactsDir
     include 'org.iets3.opensource/**'
 }
+
+task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
+    baseName 'org.iets3.opensource.tests'
+    from new File(artifactsDir, 'org.iets3.opensource.tests')
+}
+
+assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
 
 publishing {
     repositories {
@@ -126,5 +131,33 @@ publishing {
             artifactId 'opensource'
             artifact packageOpenSource
         }
+        tests(MavenPublication) {
+            groupId 'org.iets3.opensource'
+            artifactId 'tests'
+            artifact packageTests
+        }
     }
 }
+
+// Ant <junit> task support
+repositories {
+    mavenCentral()
+}
+configurations {
+    junitAnt
+}
+dependencies {
+    junitAnt 'junit:junit:4.12'
+    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+        transitive = false
+    }
+    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+        transitive = false
+    }
+}
+ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
+        classpath: configurations.junitAnt.asPath)
+ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+        classpath: configurations.junitAnt.asPath)
+
+check.dependsOn 'ant-build-and-run-tests'
