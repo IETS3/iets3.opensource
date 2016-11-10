@@ -256,13 +256,13 @@
     <property role="EcuMT" value="4137027550720478450" />
     <property role="TrG5h" value="InterpreterCoverageAssQuery" />
     <property role="34LRSv" value="interpreter test coverage" />
-    <property role="3GE5qa" value="assessment" />
+    <property role="3GE5qa" value="assessment.interpreter" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
   </node>
   <node concept="1TIwiD" id="3_DFadMGHQh">
     <property role="EcuMT" value="4137027550720482705" />
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="TestCoverageAssResult" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterCoverageAssResult" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3_DFadMGHWm" role="1TKVEi">
       <property role="IQ2ns" value="4137027550720483094" />
@@ -310,8 +310,8 @@
   </node>
   <node concept="1TIwiD" id="18$bUx5b55w">
     <property role="EcuMT" value="1307222191605829984" />
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="TestCoverageAssSummary" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterCoverageAssSummary" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="18$bUx5b57P" role="1TKVEl">
       <property role="IQ2nx" value="1307222191605830133" />
@@ -357,8 +357,71 @@
     <property role="EcuMT" value="5716711712471163978" />
     <property role="TrG5h" value="StructuralCoverageAssQuery" />
     <property role="34LRSv" value="structural test coverage" />
-    <property role="3GE5qa" value="assessment" />
+    <property role="3GE5qa" value="assessment.structural" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+    <node concept="1TJgyi" id="3MHhZL0$oIw" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961987230624" />
+      <property role="TrG5h" value="highlightErrors" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0ts1h" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985409105" />
+      <property role="TrG5h" value="minTestCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0ts1w" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985409120" />
+      <property role="TrG5h" value="minTestVolume" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0ts1z" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985409123" />
+      <property role="TrG5h" value="maximalMinHetero" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0ts1B" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985409127" />
+      <property role="TrG5h" value="minimumMaxHetero" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MHhZL0ul1i">
+    <property role="EcuMT" value="4372229961985642578" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="StructuralCoverageAssResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyj" id="3MHhZL0ul1j" role="1TKVEi">
+      <property role="IQ2ns" value="4372229961985642579" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0ul1k" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985642580" />
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0usUq" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985674906" />
+      <property role="TrG5h" value="testCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0usUt" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985674909" />
+      <property role="TrG5h" value="testVolume" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0usUx" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985674913" />
+      <property role="TrG5h" value="minH" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3MHhZL0usUA" role="1TKVEl">
+      <property role="IQ2nx" value="4372229961985674918" />
+      <property role="TrG5h" value="maxH" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

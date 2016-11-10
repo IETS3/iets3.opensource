@@ -137,11 +137,11 @@
     </language>
   </registry>
   <node concept="2PqlIr" id="18$bUx5q5RM">
-    <property role="3GE5qa" value="assessment" />
+    <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="findUsesOfTheConcept" />
     <property role="39L4OI" value="Concept Instances is Tests" />
     <property role="eK4wv" value="Concept Instances is Tests" />
-    <ref role="3gKJdq" to="av4b:3_DFadMGHQh" resolve="TestCoverageAssResult" />
+    <ref role="3gKJdq" to="av4b:3_DFadMGHQh" resolve="InterpreterCoverageAssResult" />
     <node concept="2PqlIu" id="18$bUx5q5RN" role="3gKxsI">
       <node concept="3clFbS" id="18$bUx5q5RO" role="2VODD2">
         <node concept="3cpWs8" id="18$bUx5qczL" role="3cqZAp">
@@ -154,7 +154,7 @@
             </node>
             <node concept="2OqwBi" id="18$bUx5qczN" role="33vP2m">
               <node concept="1PxgMI" id="18$bUx5qczO" role="2Oq$k0">
-                <ref role="1m5ApE" to="av4b:3_DFadMGGNM" resolve="TestCoverageAssQuery" />
+                <ref role="1m5ApE" to="av4b:3_DFadMGGNM" resolve="InterpreterCoverageAssQuery" />
                 <node concept="2OqwBi" id="18$bUx5qczP" role="1m5AlR">
                   <node concept="2OqwBi" id="18$bUx5qczQ" role="2Oq$k0">
                     <node concept="39LhUk" id="18$bUx5qczR" role="2Oq$k0" />
