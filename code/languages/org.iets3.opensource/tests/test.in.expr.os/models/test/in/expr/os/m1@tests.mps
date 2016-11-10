@@ -35,7 +35,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="852155438140865198" name="allowWarnings" index="G7GLP" />
+      </concept>
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -2866,7 +2868,9 @@
         <node concept="_ixoA" id="1yZU$FE6bqR" role="_iOnB" />
         <node concept="_ixoA" id="6HHp2WmVmwf" role="_iOnB" />
         <node concept="7CXmI" id="6HHp2WmYxrD" role="lGtFl">
-          <node concept="7OXhh" id="6HHp2WmYxrF" role="7EUXB" />
+          <node concept="7OXhh" id="6HHp2WmYxrF" role="7EUXB">
+            <property role="G7GLP" value="true" />
+          </node>
         </node>
       </node>
     </node>
