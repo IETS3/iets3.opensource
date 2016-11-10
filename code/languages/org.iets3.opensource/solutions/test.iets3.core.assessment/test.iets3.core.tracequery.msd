@@ -16,7 +16,6 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</dependency>
     <dependency reexport="false">f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)</dependency>
-    <dependency reexport="false">5a43a71e-7911-4d60-bb76-e1dd9dfa5b77(org.iets3.functiontree)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="3" />
@@ -49,7 +48,6 @@
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
     <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
     <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.test" version="0" />
-    <language slang="l:5a43a71e-7911-4d60-bb76-e1dd9dfa5b77:org.iets3.functiontree" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -101,7 +99,6 @@
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" version="0" />
-    <module reference="5a43a71e-7911-4d60-bb76-e1dd9dfa5b77(org.iets3.functiontree)" version="0" />
     <module reference="785e2843-aa64-4743-afec-47634f9d78a4(test.iets3.core.tracequery)" version="0" />
   </dependencyVersions>
 </solution>
