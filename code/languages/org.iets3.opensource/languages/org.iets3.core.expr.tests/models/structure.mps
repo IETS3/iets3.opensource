@@ -307,6 +307,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
+    <node concept="PrWs8" id="3MHhZL0J8NM" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="18$bUx5b55w">
     <property role="EcuMT" value="1307222191605829984" />
