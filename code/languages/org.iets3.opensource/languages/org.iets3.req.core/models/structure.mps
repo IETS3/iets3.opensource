@@ -13,6 +13,7 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" implicit="true" />
+    <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -81,6 +82,9 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="5151426049053136028" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1QGGSu" id="cEt5uj8NH5" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/reqchunk.png" />
+    </node>
     <node concept="PrWs8" id="4tXyFaWxW_o" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
     </node>
@@ -98,9 +102,6 @@
       <property role="cYWF$" value="#78C45E" />
       <property role="cYWFH" value="#FFFFFF" />
     </node>
-    <node concept="1QGGSu" id="cEt5uj8NH5" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/reqchunk.png" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4tXyFaWwpmI">
     <property role="TrG5h" value="AbstractRequirement" />
@@ -108,6 +109,35 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="5151426049053136302" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="cEt5uj8NH4" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/req.png" />
+    </node>
+    <node concept="PrWs8" id="3rr$h7s7co" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="4tXyFaWwpnN" role="1TKVEl">
+      <property role="TrG5h" value="title" />
+      <property role="IQ2nx" value="5151426049053136371" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="HkeiXvwBfd" role="1TKVEl">
+      <property role="TrG5h" value="uniqueID" />
+      <property role="IQ2nx" value="816340308089533389" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="4tXyFaWxW_j" role="PzmwI">
+      <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4tXyFaWwpmP">
+    <property role="TrG5h" value="IReqContent" />
+    <property role="EcuMT" value="5151426049053136309" />
+  </node>
+  <node concept="1TIwiD" id="4tXyFaWwpmT">
+    <property role="TrG5h" value="DefaultRequirement" />
+    <property role="34LRSv" value="DefaultRequirement" />
+    <property role="EcuMT" value="5151426049053136313" />
+    <ref role="1TJDcQ" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
     <node concept="1TJgyj" id="4tXyFaWylGu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kind" />
@@ -129,17 +159,6 @@
       <property role="IQ2ns" value="380060842849066491" />
       <ref role="20lvS9" node="l6fPaF3tF7" resolve="State" />
     </node>
-    <node concept="1TJgyi" id="4tXyFaWwpnN" role="1TKVEl">
-      <property role="TrG5h" value="title" />
-      <property role="IQ2nx" value="5151426049053136371" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="cJpacq5TvT" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4tXyFaWxW_j" role="PzmwI">
-      <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
-    </node>
     <node concept="1TJgyj" id="4tXyFaWy3Jw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="doc" />
@@ -154,18 +173,6 @@
       <property role="IQ2ns" value="8479184967780780683" />
       <ref role="20lvS9" to="cayy:7mG7sQPpUfB" resolve="UserRef" />
     </node>
-    <node concept="1QGGSu" id="cEt5uj8NH4" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/req.png" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="4tXyFaWwpmP">
-    <property role="TrG5h" value="IReqContent" />
-    <property role="EcuMT" value="5151426049053136309" />
-  </node>
-  <node concept="1TIwiD" id="4tXyFaWwpmT">
-    <property role="TrG5h" value="DefaultRequirement" />
-    <property role="EcuMT" value="5151426049053136313" />
-    <ref role="1TJDcQ" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
   </node>
   <node concept="PlHQZ" id="4tXyFaWxW_f">
     <property role="TrG5h" value="IReqContainer" />
@@ -237,10 +244,11 @@
     <property role="R4oN_" value="the priority of the requirement" />
     <property role="EcuMT" value="8906162732673130909" />
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
-    <node concept="1TJgyi" id="7Ip2X68Nu6H" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <property role="IQ2nx" value="8906162732673130925" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="7kxR70EvZwJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="priorityValue" />
+      <property role="IQ2ns" value="8440269550976497711" />
+      <ref role="20lvS9" to="8s0y:qg95onFTw5" resolve="Priority" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ip2X68O2SG">
@@ -416,6 +424,18 @@
     <node concept="PrWs8" id="7IM3imbodiD" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="HkeiXvwuNO">
+    <property role="3GE5qa" value="kind" />
+    <property role="TrG5h" value="KindNonFunctional" />
+    <property role="34LRSv" value="non functional" />
+    <property role="EcuMT" value="816340308089498868" />
+    <ref role="1TJDcQ" node="4tXyFaWylGt" resolve="Kind" />
+  </node>
+  <node concept="1TIwiD" id="3EOBxj2n_zA">
+    <property role="TrG5h" value="HeaderRequirement" />
+    <property role="EcuMT" value="4230179762005235942" />
+    <ref role="1TJDcQ" node="4tXyFaWwpmI" resolve="AbstractRequirement" />
   </node>
 </model>
 

@@ -132,7 +132,7 @@
       <node concept="3clFbS" id="lp3OKvgLnA" role="2VODD2">
         <node concept="3clFbF" id="lp3OKvgLoX" role="3cqZAp">
           <node concept="Xl_RD" id="lp3OKvgLoW" role="3clFbG">
-            <property role="Xl_RC" value="Replace with reference to glossary term" />
+            <property role="Xl_RC" value="Replace with Reference to Glossary Term" />
           </node>
         </node>
       </node>

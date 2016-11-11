@@ -2,7 +2,7 @@
 <model ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
@@ -62,6 +62,9 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="7551038907536067158" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1QGGSu" id="cEt5uj8NZA" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/glossary2.png" />
+    </node>
     <node concept="1TJgyj" id="6zaFu4oPODo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="terms" />
@@ -72,16 +75,13 @@
     <node concept="PrWs8" id="6zaFu4oPODq" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="1QGGSu" id="cEt5uj8NZA" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/glossary2.png" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6zaFu4oPODn">
     <property role="TrG5h" value="GlossaryTerm" />
     <property role="EcuMT" value="7551038907536067159" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6zaFu4oPPYK" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="PrWs8" id="1TK957fc0qU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oPQrq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
