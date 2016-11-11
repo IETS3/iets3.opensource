@@ -6,7 +6,9 @@
     <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
     <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="ecrc" ref="r:6086f3d1-6a37-42fa-a020-ed8795a753b4(test.iets3.core.tracequery.input1)" />
+  </imports>
   <registry>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
       <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ng" index="2Dx65h">
@@ -28,14 +30,22 @@
         <child id="1970998948979996854" name="value" index="3PL9QJ" />
       </concept>
     </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+    </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
       <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
+        <child id="8492736225391506814" name="imports" index="38kjvB" />
         <child id="7804632404593342038" name="contents" index="1i1AA4" />
       </concept>
+      <concept id="7804632404593231760" name="org.iets3.components.core.structure.EmptyComponentContent" flags="ng" index="1i1Xx2" />
       <concept id="7804632404593231361" name="org.iets3.components.core.structure.Component" flags="ng" index="1i1XBj">
         <child id="7804632404593514231" name="kind" index="1i0K$_" />
+        <child id="7804632404593231452" name="contents" index="1i1XAe" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -54,14 +64,15 @@
       <property role="TrG5h" value="D" />
       <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
     </node>
+    <node concept="1i1AuW" id="mhbzaHv6tD" role="1i1AA4" />
     <node concept="1i1XBj" id="1HLccB8wSqC" role="1i1AA4">
       <property role="TrG5h" value="E" />
       <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
-          <node concept="2Dx6l7" id="1HLccB8wSSm" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqs" resolve="D" />
+          <node concept="2Dx6l7" id="1Sur9ckX6Zu" role="2DxiDn">
+            <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
           </node>
         </node>
       </node>
@@ -72,14 +83,24 @@
       <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
-          <node concept="2Dx6l7" id="1HLccB8wTrr" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqC" resolve="E" />
+          <node concept="2Dx6l7" id="mhbzaHv9o4" role="2DxiDn">
+            <ref role="2Dx65g" node="1HLccB8wSqS" resolve="F" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="1i1XBj" id="mhbzaHsV3V" role="1i1AA4">
+      <property role="TrG5h" value="G" />
+      <node concept="1i1Xx2" id="mhbzaHv6tn" role="1i1XAe" />
+      <node concept="1i1Xx2" id="mhbzaHv6tr" role="1i1XAe" />
+      <node concept="1i1Xx2" id="mhbzaHv6tx" role="1i1XAe" />
+      <node concept="1i0KCM" id="mhbzaHsV3W" role="1i0K$_" />
+    </node>
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
+    <node concept="3GEVxB" id="1Sur9ckX6Zq" role="38kjvB">
+      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" resolve="bikeComponents" />
+    </node>
   </node>
 </model>
 

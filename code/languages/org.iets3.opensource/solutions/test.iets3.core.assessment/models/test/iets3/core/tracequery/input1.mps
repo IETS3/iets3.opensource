@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="ojsi" ref="r:b0e95cf0-c90a-4e90-a237-8deec9b70ebc(test.iets3.core.tracequery.input2)" />
+    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
   </imports>
   <registry>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
@@ -39,12 +40,12 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8490595898229129994" name="com.mbeddr.core.base.structure.CurrentModelScopeAndImported" flags="ng" index="28wEjL" />
       <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
         <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
         <property id="671216505796623806" name="ok" index="qc_T_" />
         <property id="671216505796623805" name="totalCount" index="qc_TA" />
       </concept>
-      <concept id="6277307617439377002" name="com.mbeddr.core.base.structure.ProjectScope" flags="ng" index="2GjDLI" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -64,11 +65,18 @@
         <child id="865293814733133843" name="result" index="3pwfKK" />
         <child id="6619757161337461931" name="comment" index="3J00qV" />
       </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
     </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
       <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
+      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ng" index="1i1AA1">
+        <property id="6142232665969969516" name="public" index="13Nl5X" />
+      </concept>
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
+        <child id="8492736225391506814" name="imports" index="38kjvB" />
         <child id="7804632404593342038" name="contents" index="1i1AA4" />
       </concept>
       <concept id="7804632404593231361" name="org.iets3.components.core.structure.Component" flags="ng" index="1i1XBj">
@@ -77,7 +85,8 @@
     </language>
     <language id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment">
       <concept id="6913547888673489335" name="org.iets3.core.assessment.structure.GenericTraceQuery" flags="ng" index="25YdEr">
-        <child id="6913547888673496437" name="traceKind" index="25Ycpp" />
+        <reference id="6913547888673496440" name="from" index="25Ycpk" />
+        <reference id="6913547888673496452" name="to" index="25YcqC" />
         <child id="6913547888673496435" name="scope" index="25Ycpv" />
       </concept>
       <concept id="6913547888673466380" name="org.iets3.core.assessment.structure.GenericTraceResult" flags="ng" index="25Yncw">
@@ -102,46 +111,32 @@
     <property role="TrG5h" value="TestAssessment" />
     <node concept="3pwaUv" id="1HLccB8wTrA" role="3pwaUu">
       <property role="TrG5h" value="a1" />
-      <property role="2iEbMk" value="1478250594786" />
+      <property role="2iEbMk" value="1478549811555" />
       <property role="2iEaKi" value="Rimer" />
-      <node concept="qc_Tx" id="1HLccB8ANnh" role="q3PPx">
-        <property role="qc_TA" value="2" />
-        <property role="qc_T$" value="2" />
-        <property role="qc_T_" value="0" />
-      </node>
-      <node concept="3pwbzX" id="1HLccB8ANnd" role="3pwbzW">
+      <node concept="3pwbzX" id="mhbzaHv9xr" role="3pwbzW">
         <property role="1OfcgH" value="true" />
-        <property role="3J1cY9" value="1478250594786" />
-        <node concept="OjmMv" id="1HLccB8ANne" role="3J00qV">
-          <node concept="19SGf9" id="1HLccB8ANnf" role="OjmMu">
-            <node concept="19SUe$" id="1HLccB8ANng" role="19SJt6" />
+        <property role="3J1cY9" value="1478549811555" />
+        <node concept="OjmMv" id="mhbzaHv9xs" role="3J00qV">
+          <node concept="19SGf9" id="mhbzaHv9xt" role="OjmMu">
+            <node concept="19SUe$" id="mhbzaHv9xu" role="19SJt6" />
           </node>
         </node>
-        <node concept="25Yncw" id="1HLccB8ANn7" role="3pwfKK">
-          <ref role="25YdEo" node="1HLccB8wSqs" resolve="A" />
-          <node concept="25Ync_" id="1HLccB8ANn8" role="25YdEu">
-            <ref role="25YncA" node="1HLccB8wSqC" resolve="B" />
-          </node>
-        </node>
-      </node>
-      <node concept="3pwbzX" id="1HLccB8ANn9" role="3pwbzW">
-        <property role="1OfcgH" value="true" />
-        <property role="3J1cY9" value="1478250594785" />
-        <node concept="OjmMv" id="1HLccB8ANna" role="3J00qV">
-          <node concept="19SGf9" id="1HLccB8ANnb" role="OjmMu">
-            <node concept="19SUe$" id="1HLccB8ANnc" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="25Yncw" id="1HLccB8ANn5" role="3pwfKK">
+        <node concept="25Yncw" id="mhbzaHv9xp" role="3pwfKK">
           <ref role="25YdEo" to="ojsi:1HLccB8wSqS" resolve="F" />
-          <node concept="25Ync_" id="1HLccB8ANn6" role="25YdEu">
-            <ref role="25YncA" to="ojsi:1HLccB8wSqC" resolve="E" />
+          <node concept="25Ync_" id="mhbzaHv9xq" role="25YdEu">
+            <ref role="25YncA" to="ojsi:1HLccB8wSqS" resolve="F" />
           </node>
         </node>
       </node>
       <node concept="25YdEr" id="1HLccB8wTrE" role="3pwbkY">
-        <node concept="3jWOz2" id="1HLccB8$Xl9" role="25Ycpp" />
-        <node concept="2GjDLI" id="1HLccB8ANn2" role="25Ycpv" />
+        <ref role="25Ycpk" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+        <ref role="25YcqC" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+        <node concept="28wEjL" id="mhbzaHlZoa" role="25Ycpv" />
+      </node>
+      <node concept="qc_Tx" id="mhbzaHv9xv" role="q3PPx">
+        <property role="qc_TA" value="1" />
+        <property role="qc_T$" value="1" />
+        <property role="qc_T_" value="0" />
       </node>
     </node>
   </node>
@@ -153,8 +148,8 @@
       <node concept="2Dz74_" id="1HLccB8yRh2" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8yRh3" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8zEJ8" role="2DxiDt" />
-          <node concept="2Dx6l7" id="1HLccB8zEJb" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqC" resolve="B" />
+          <node concept="2Dx6l7" id="1Sur9ckX6Z9" role="2DxiDn">
+            <ref role="2Dx65g" node="1Sur9ckX6Yc" resolve="handlebars" />
           </node>
         </node>
       </node>
@@ -165,8 +160,8 @@
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
-          <node concept="2Dx6l7" id="1HLccB8wSSm" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqs" resolve="A" />
+          <node concept="2Dx6l7" id="1Sur9ckX6Zd" role="2DxiDn">
+            <ref role="2Dx65g" node="1Sur9ckX6Ym" resolve="wheels" />
           </node>
         </node>
       </node>
@@ -174,17 +169,39 @@
     <node concept="1i1XBj" id="1HLccB8wSqS" role="1i1AA4">
       <property role="TrG5h" value="C" />
       <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
-      <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
-        <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
-          <node concept="3jWAPd" id="1HLccB8zEJd" role="2DxiDt" />
-          <node concept="2Dx6l7" id="1HLccB8yIol" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqC" resolve="B" />
+      <node concept="2Dz74_" id="mhbzaHu_nK" role="18DfD7">
+        <node concept="2DxjnZ" id="mhbzaHu_nL" role="3PL9QJ">
+          <node concept="3jWAPd" id="mhbzaHu_nR" role="2DxiDt" />
+          <node concept="2Dx6l7" id="1Sur9ckX6Zh" role="2DxiDn">
+            <ref role="2Dx65g" node="1Sur9ckX6YB" resolve="frame" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
+    <node concept="3GEVxB" id="1Sur9ckX6Z5" role="38kjvB">
+      <ref role="3GEb4d" node="1Sur9ckX6Pc" resolve="bikeComponents" />
+    </node>
+  </node>
+  <node concept="1i1ALs" id="1Sur9ckX6Pc">
+    <property role="TrG5h" value="bikeComponents" />
+    <node concept="1i1XBj" id="1Sur9ckX6Yc" role="1i1AA4">
+      <property role="13Nl5X" value="true" />
+      <property role="TrG5h" value="handlebars" />
+      <node concept="1i0KCM" id="1Sur9ckX6Yd" role="1i0K$_" />
+    </node>
+    <node concept="1i1XBj" id="1Sur9ckX6Ym" role="1i1AA4">
+      <property role="13Nl5X" value="true" />
+      <property role="TrG5h" value="wheels" />
+      <node concept="1i0KCM" id="1Sur9ckX6Yo" role="1i0K$_" />
+    </node>
+    <node concept="1i1XBj" id="1Sur9ckX6YB" role="1i1AA4">
+      <property role="13Nl5X" value="true" />
+      <property role="TrG5h" value="frame" />
+      <node concept="1i0KCM" id="1Sur9ckX6YC" role="1i0K$_" />
+    </node>
+    <node concept="1i1AuW" id="1Sur9ckX6Yw" role="1i1AA4" />
   </node>
 </model>
 
