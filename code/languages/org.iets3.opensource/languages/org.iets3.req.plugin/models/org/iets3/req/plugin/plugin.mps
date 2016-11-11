@@ -814,8 +814,8 @@
               </node>
               <node concept="2Xjw5R" id="7Ip2X68OjDG" role="2OqNvi">
                 <node concept="1xMEDy" id="7Ip2X68OjDI" role="1xVPHs">
-                  <node concept="chp4Y" id="7Ip2X68OjEG" role="ri$Ld">
-                    <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                  <node concept="chp4Y" id="3BzNIYmMpyC" role="ri$Ld">
+                    <ref role="cht4Q" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="7Ip2X68OjH2" role="1xVPHs" />
@@ -844,8 +844,8 @@
                     </node>
                     <node concept="2Xjw5R" id="7Ip2X68OkzT" role="2OqNvi">
                       <node concept="1xMEDy" id="7Ip2X68OkzU" role="1xVPHs">
-                        <node concept="chp4Y" id="7Ip2X68OkzV" role="ri$Ld">
-                          <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                        <node concept="chp4Y" id="3BzNIYmMk9K" role="ri$Ld">
+                          <ref role="cht4Q" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="7Ip2X68OkzW" role="1xVPHs" />
@@ -913,8 +913,8 @@
                     </node>
                     <node concept="2Xjw5R" id="7Dcax7Ai6l6" role="2OqNvi">
                       <node concept="1xMEDy" id="7Dcax7Ai6l7" role="1xVPHs">
-                        <node concept="chp4Y" id="7Dcax7Ai6l8" role="ri$Ld">
-                          <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                        <node concept="chp4Y" id="3BzNIYmM8Vy" role="ri$Ld">
+                          <ref role="cht4Q" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="7Dcax7Ai6l9" role="1xVPHs" />
@@ -993,8 +993,8 @@
                           </node>
                           <node concept="2Xjw5R" id="7Dcax7AioRp" role="2OqNvi">
                             <node concept="1xMEDy" id="7Dcax7AioRq" role="1xVPHs">
-                              <node concept="chp4Y" id="7Dcax7AioRr" role="ri$Ld">
-                                <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                              <node concept="chp4Y" id="3BzNIYmLPDK" role="ri$Ld">
+                                <ref role="cht4Q" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
                               </node>
                             </node>
                             <node concept="1xIGOp" id="7Dcax7AioRs" role="1xVPHs" />
@@ -1524,12 +1524,6 @@
         <ref role="tCJdB" node="6LfBX8Yg60R" resolve="DeleteRequirement" />
       </node>
       <node concept="2a7GMi" id="6LfBX8Yg6H3" role="ftvYc" />
-      <node concept="tCFHf" id="1ognOHj$gUZ" role="ftvYc">
-        <ref role="tCJdB" node="1ognOHj$4p5" resolve="AddChildRequirement" />
-      </node>
-      <node concept="tCFHf" id="6LfBX8Yg6D7" role="ftvYc">
-        <ref role="tCJdB" node="6LfBX8Yg5OP" resolve="AddSiblingRequirement" />
-      </node>
       <node concept="tCFHf" id="1ognOHj$Kwc" role="ftvYc">
         <ref role="tCJdB" node="1ognOHj$IOp" resolve="NewReqActionInModule" />
       </node>
@@ -1537,39 +1531,6 @@
       <node concept="tCFHf" id="6LfBX8YhvbJ" role="ftvYc">
         <ref role="tCJdB" node="6LfBX8YheFX" resolve="NewModuleOnModel" />
       </node>
-    </node>
-  </node>
-  <node concept="sE7Ow" id="1ognOHj$4p5">
-    <property role="TrG5h" value="AddChildRequirement" />
-    <property role="2uzpH1" value="New Child Requirement" />
-    <property role="3GE5qa" value="actions" />
-    <node concept="2S4$dB" id="1ognOHj$di$" role="1NuT2Z">
-      <property role="TrG5h" value="req" />
-      <node concept="3Tm6S6" id="1ognOHj$di_" role="1B3o_S" />
-      <node concept="1oajcY" id="1ognOHj$diA" role="1oa70y" />
-      <node concept="3Tqbb2" id="1ognOHj$4pZ" role="1tU5fm">
-        <ref role="ehGHo" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-      </node>
-    </node>
-    <node concept="tnohg" id="1ognOHj$4p6" role="tncku">
-      <node concept="3clFbS" id="1ognOHj$4p7" role="2VODD2">
-        <node concept="3clFbF" id="6LfBX8Yg5rB" role="3cqZAp">
-          <node concept="2OqwBi" id="6LfBX8Yg5_X" role="3clFbG">
-            <node concept="2OqwBi" id="6LfBX8Yg5rx" role="2Oq$k0">
-              <node concept="2WthIp" id="6LfBX8Yg5r$" role="2Oq$k0" />
-              <node concept="3gHZIF" id="6LfBX8Yg5rA" role="2OqNvi">
-                <ref role="2WH_rO" node="1ognOHj$di$" resolve="req" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="6LfBX8Yg5KG" role="2OqNvi">
-              <ref role="37wK5l" to="bemq:7Dcax7AeLVS" resolve="addChild" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1QGGSu" id="6LfBX8YhUj2" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/addChild.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="1ognOHj$IOp">
@@ -1625,39 +1586,6 @@
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUC8" role="3Uehp1">
       <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/req.png" />
-    </node>
-  </node>
-  <node concept="sE7Ow" id="6LfBX8Yg5OP">
-    <property role="TrG5h" value="AddSiblingRequirement" />
-    <property role="2uzpH1" value="New Sibling Requirement" />
-    <property role="3GE5qa" value="actions" />
-    <node concept="2S4$dB" id="6LfBX8Yg5OQ" role="1NuT2Z">
-      <property role="TrG5h" value="req" />
-      <node concept="3Tm6S6" id="6LfBX8Yg5OR" role="1B3o_S" />
-      <node concept="1oajcY" id="6LfBX8Yg5OS" role="1oa70y" />
-      <node concept="3Tqbb2" id="6LfBX8Yg5OT" role="1tU5fm">
-        <ref role="ehGHo" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-      </node>
-    </node>
-    <node concept="tnohg" id="6LfBX8Yg5OU" role="tncku">
-      <node concept="3clFbS" id="6LfBX8Yg5OV" role="2VODD2">
-        <node concept="3clFbF" id="6LfBX8Yg5OW" role="3cqZAp">
-          <node concept="2OqwBi" id="6LfBX8Yg5OX" role="3clFbG">
-            <node concept="2OqwBi" id="6LfBX8Yg5OY" role="2Oq$k0">
-              <node concept="2WthIp" id="6LfBX8Yg5OZ" role="2Oq$k0" />
-              <node concept="3gHZIF" id="6LfBX8Yg5P0" role="2OqNvi">
-                <ref role="2WH_rO" node="6LfBX8Yg5OQ" resolve="req" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="6LfBX8Yg5Z7" role="2OqNvi">
-              <ref role="37wK5l" to="bemq:7Dcax7AghL2" resolve="addSibling" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1QGGSu" id="6LfBX8YhUoA" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/addSibling.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8Yg60R">
