@@ -3500,13 +3500,7 @@
                     <node concept="2GrUjf" id="4XlPKepca2u" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="4XlPKepc85s" resolve="tc" />
                     </node>
-                    <node concept="2Rf3mk" id="4XlPKepca2v" role="2OqNvi">
-                      <node concept="1xMEDy" id="4XlPKepca2w" role="1xVPHs">
-                        <node concept="chp4Y" id="7zqxZ9Kl6eJ" role="ri$Ld">
-                          <ref role="cht4Q" to="hm2y:6sdnDbSla17" resolve="Expression" />
-                        </node>
-                      </node>
-                    </node>
+                    <node concept="2Rf3mk" id="4XlPKepca2v" role="2OqNvi" />
                   </node>
                 </node>
               </node>
