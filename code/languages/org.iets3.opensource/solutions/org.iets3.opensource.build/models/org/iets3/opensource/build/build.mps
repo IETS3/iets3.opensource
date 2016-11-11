@@ -5,6 +5,7 @@
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -2215,6 +2216,18 @@
         <node concept="3bR9La" id="18$bUx6ktCy" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7ZoBx3wY7Os" role="3bR37C">
+        <node concept="3bR9La" id="7ZoBx3wY7Ot" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7ZoBx3wY7Ou" role="3bR37C">
+        <node concept="3bR9La" id="7ZoBx3wY7Ov" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="49WTic8jAaa" resolve="org.iets3.core.expr.collections" />
         </node>
       </node>
     </node>
