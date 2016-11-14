@@ -225,16 +225,24 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -2005,21 +2013,40 @@
     <property role="TrG5h" value="check_RealType" />
     <property role="3GE5qa" value="numeric" />
     <node concept="3clFbS" id="3p6$WoEjaRF" role="18ibNy">
-      <node concept="a7r0C" id="3p6$WoEjaRG" role="3cqZAp">
-        <node concept="Xl_RD" id="3p6$WoEjaRH" role="a7wSD">
-          <property role="Xl_RC" value="'real' should be replaced by a 'number' with precision != 0" />
-        </node>
-        <node concept="1YBJjd" id="3p6$WoEjaRI" role="2OEOjV">
-          <ref role="1YBMHb" node="3p6$WoEjaRJ" resolve="rt" />
-        </node>
-        <node concept="3Cnw8n" id="3p6$WoEjfbr" role="2OEOjU">
-          <ref role="QpYPw" node="3p6$WoEjeKL" resolve="replaceRealWithNumber" />
-          <node concept="3CnSsL" id="3p6$WoEjfcF" role="3Coj4f">
-            <ref role="QkamJ" node="3p6$WoEjeKM" resolve="rt" />
-            <node concept="1YBJjd" id="3p6$WoEjfcS" role="3CoRuB">
+      <node concept="3clFbJ" id="3pe7Y2RWElv" role="3cqZAp">
+        <node concept="3clFbS" id="3pe7Y2RWElx" role="3clFbx">
+          <node concept="a7r0C" id="3p6$WoEjaRG" role="3cqZAp">
+            <node concept="Xl_RD" id="3p6$WoEjaRH" role="a7wSD">
+              <property role="Xl_RC" value="'real' should be replaced by a 'number' with precision != 0" />
+            </node>
+            <node concept="1YBJjd" id="3p6$WoEjaRI" role="2OEOjV">
               <ref role="1YBMHb" node="3p6$WoEjaRJ" resolve="rt" />
             </node>
+            <node concept="3Cnw8n" id="3p6$WoEjfbr" role="2OEOjU">
+              <ref role="QpYPw" node="3p6$WoEjeKL" resolve="replaceRealWithNumber" />
+              <node concept="3CnSsL" id="3p6$WoEjfcF" role="3Coj4f">
+                <ref role="QkamJ" node="3p6$WoEjeKM" resolve="rt" />
+                <node concept="1YBJjd" id="3p6$WoEjfcS" role="3CoRuB">
+                  <ref role="1YBMHb" node="3p6$WoEjaRJ" resolve="rt" />
+                </node>
+              </node>
+            </node>
           </node>
+        </node>
+        <node concept="2OqwBi" id="3pe7Y2RWEQy" role="3clFbw">
+          <node concept="2OqwBi" id="3pe7Y2RWExu" role="2Oq$k0">
+            <node concept="1YBJjd" id="3pe7Y2RWEnQ" role="2Oq$k0">
+              <ref role="1YBMHb" node="3p6$WoEjaRJ" resolve="rt" />
+            </node>
+            <node concept="2Xjw5R" id="3pe7Y2RWEGA" role="2OqNvi">
+              <node concept="1xMEDy" id="3pe7Y2RWEGC" role="1xVPHs">
+                <node concept="chp4Y" id="3pe7Y2RWEIF" role="ri$Ld">
+                  <ref role="cht4Q" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3w_OXm" id="3pe7Y2RWF35" role="2OqNvi" />
         </node>
       </node>
     </node>
@@ -2233,23 +2260,43 @@
     <property role="TrG5h" value="check_IntegerType" />
     <property role="3GE5qa" value="numeric" />
     <node concept="3clFbS" id="3p6$WoEjaB7" role="18ibNy">
-      <node concept="a7r0C" id="3p6$WoEjaOk" role="3cqZAp">
-        <node concept="Xl_RD" id="3p6$WoEjaOG" role="a7wSD">
-          <property role="Xl_RC" value="'int' should be replaced by 'number' with precision 0" />
-        </node>
-        <node concept="1YBJjd" id="3p6$WoEjaQs" role="2OEOjV">
-          <ref role="1YBMHb" node="3p6$WoEjaB9" resolve="it" />
-        </node>
-        <node concept="3Cnw8n" id="3p6$WoEje2j" role="2OEOjU">
-          <ref role="QpYPw" node="3p6$WoEjb5B" resolve="replaceIntWithNumber" />
-          <node concept="3CnSsL" id="3p6$WoEje3z" role="3Coj4f">
-            <ref role="QkamJ" node="3p6$WoEjb5W" resolve="it" />
-            <node concept="1YBJjd" id="3p6$WoEje3K" role="3CoRuB">
+      <node concept="3clFbJ" id="3pe7Y2RWF6w" role="3cqZAp">
+        <node concept="3clFbS" id="3pe7Y2RWF6x" role="3clFbx">
+          <node concept="a7r0C" id="3p6$WoEjaOk" role="3cqZAp">
+            <node concept="Xl_RD" id="3p6$WoEjaOG" role="a7wSD">
+              <property role="Xl_RC" value="'int' should be replaced by 'number' with precision 0" />
+            </node>
+            <node concept="1YBJjd" id="3p6$WoEjaQs" role="2OEOjV">
               <ref role="1YBMHb" node="3p6$WoEjaB9" resolve="it" />
+            </node>
+            <node concept="3Cnw8n" id="3p6$WoEje2j" role="2OEOjU">
+              <ref role="QpYPw" node="3p6$WoEjb5B" resolve="replaceIntWithNumber" />
+              <node concept="3CnSsL" id="3p6$WoEje3z" role="3Coj4f">
+                <ref role="QkamJ" node="3p6$WoEjb5W" resolve="it" />
+                <node concept="1YBJjd" id="3p6$WoEje3K" role="3CoRuB">
+                  <ref role="1YBMHb" node="3p6$WoEjaB9" resolve="it" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
+        <node concept="2OqwBi" id="3pe7Y2RWF6C" role="3clFbw">
+          <node concept="2OqwBi" id="3pe7Y2RWF6D" role="2Oq$k0">
+            <node concept="1YBJjd" id="3pe7Y2RWFcF" role="2Oq$k0">
+              <ref role="1YBMHb" node="3p6$WoEjaB9" resolve="it" />
+            </node>
+            <node concept="2Xjw5R" id="3pe7Y2RWF6F" role="2OqNvi">
+              <node concept="1xMEDy" id="3pe7Y2RWF6G" role="1xVPHs">
+                <node concept="chp4Y" id="3pe7Y2RWF6H" role="ri$Ld">
+                  <ref role="cht4Q" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3w_OXm" id="3pe7Y2RWF6I" role="2OqNvi" />
+        </node>
       </node>
+      <node concept="3clFbH" id="3pe7Y2RWF6u" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="3p6$WoEjaB9" role="1YuTPh">
       <property role="TrG5h" value="it" />
