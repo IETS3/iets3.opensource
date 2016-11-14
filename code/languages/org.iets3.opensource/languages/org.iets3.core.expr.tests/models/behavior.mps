@@ -3851,7 +3851,7 @@
           <node concept="37vLTI" id="3MHhZL0uouX" role="3clFbG">
             <node concept="2OqwBi" id="3MHhZL0uouY" role="37vLTx">
               <node concept="1PxgMI" id="3MHhZL0uouZ" role="2Oq$k0">
-                <ref role="1m5ApE" to="av4b:3_DFadMGHQh" resolve="InterpreterCoverageAssResult" />
+                <ref role="1m5ApE" to="av4b:3MHhZL0ul1i" resolve="StructuralCoverageAssResult" />
                 <node concept="37vLTw" id="3MHhZL0uov0" role="1m5AlR">
                   <ref role="3cqZAo" node="3MHhZL0uov5" resolve="updatedResult" />
                 </node>
