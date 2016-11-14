@@ -1357,6 +1357,18 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="52gSz9in4PZ" role="3bR37C">
+          <node concept="3bR9La" id="52gSz9in4Q0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52gSz9in4Q1" role="3bR37C">
+          <node concept="3bR9La" id="52gSz9in4Q2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5wLtKNeSRQp" role="2G$12L">
         <property role="BnDLt" value="true" />
