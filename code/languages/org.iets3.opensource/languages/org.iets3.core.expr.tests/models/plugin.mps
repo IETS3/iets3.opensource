@@ -5,6 +5,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -119,7 +120,7 @@
   <node concept="qq9qg" id="uGVYUiiVGW">
     <property role="TrG5h" value="TestsInterpeter" />
     <property role="UYu25" value="arithmetic" />
-    <node concept="1J7WVO" id="3_DFadM_bGC" role="1J4apk">
+    <node concept="1J7WVO" id="4H_8WGVp2o4" role="1J4apk">
       <ref role="1J7WVQ" to="oq0c:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
     </node>
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
@@ -140,8 +141,8 @@
                 <ref role="3Tt5mk" to="av4b:6HHp2WmRVXx" resolve="item" />
               </node>
             </node>
-            <node concept="3TrEf2" id="6HHp2WmSSNO" role="2OqNvi">
-              <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" resolve="actual" />
+            <node concept="3TrEf2" id="4H_8WGVoitk" role="2OqNvi">
+              <ref role="3Tt5mk" to="av4b:ub9nkyHAbd" resolve="expected" />
             </node>
           </node>
         </node>
