@@ -89,6 +89,12 @@
     <property role="3GE5qa" value="list" />
     <property role="EcuMT" value="7554398283339759319" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7yDflTqUOmT" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031077041593" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint" />
+      <ref role="20lvS9" node="7yDflTqUNUp" resolve="ElementTypeConstraintSingle" />
+    </node>
     <node concept="1TJgyj" id="6zmBjqUinVo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
@@ -310,6 +316,12 @@
     <property role="3GE5qa" value="set" />
     <property role="EcuMT" value="8872269265520081293" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7yDflTqXbp_" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031077660261" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint" />
+      <ref role="20lvS9" node="7yDflTqUNUp" resolve="ElementTypeConstraintSingle" />
+    </node>
     <node concept="1TJgyj" id="7GwCuf2WbAe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
@@ -368,6 +380,13 @@
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163111272" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7yDflTqZBPP" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031078301045" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="7yDflTqZBLC" resolve="ElementTypeConstraintMap" />
+    </node>
     <node concept="1TJgyj" id="7kYh9Wszg2m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
@@ -567,6 +586,37 @@
     <property role="34LRSv" value="add" />
     <property role="EcuMT" value="2156530943179855331" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
+  </node>
+  <node concept="1TIwiD" id="7yDflTqUNUp">
+    <property role="EcuMT" value="8694548031077039769" />
+    <property role="TrG5h" value="ElementTypeConstraintSingle" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7yDflTqUNUq" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031077039770" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7yDflTqZBLC">
+    <property role="EcuMT" value="8694548031078300776" />
+    <property role="TrG5h" value="ElementTypeConstraintMap" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7yDflTqZBLD" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031078300777" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7yDflTqZBLI" role="1TKVEi">
+      <property role="IQ2ns" value="8694548031078300782" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeConstraint2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
 </model>
 
