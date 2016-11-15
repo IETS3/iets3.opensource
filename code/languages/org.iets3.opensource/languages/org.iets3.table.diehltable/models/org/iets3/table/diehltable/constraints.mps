@@ -695,14 +695,9 @@
                   <property role="3SKdUp" value=" second condition checks if the from value is between the interval" />
                 </node>
               </node>
-              <node concept="3SKdUt" id="44fPktv83EZ" role="3cqZAp">
-                <node concept="3SKdUq" id="44fPktv83F1" role="3SKWNk">
-                  <property role="3SKdUp" value=" third condition checks if the last from is between the min and max" />
-                </node>
-              </node>
               <node concept="3SKdUt" id="3XHcQXfVYTA" role="3cqZAp">
                 <node concept="3SKdUq" id="3XHcQXfVYTC" role="3SKWNk">
-                  <property role="3SKdUp" value=" fourth condition (indicator&lt;=1) checks if the there are any duplicate &quot;From&quot; values in the increasing interval " />
+                  <property role="3SKdUp" value=" third condition (indicator&lt;=1) checks if the there are any duplicate &quot;From&quot; values in the increasing interval " />
                 </node>
               </node>
               <node concept="3clFbJ" id="44fPktv7vaw" role="3cqZAp">
@@ -1436,6 +1431,63 @@
             </node>
           </node>
           <node concept="3clFbH" id="3XHcQXfJ6ro" role="3cqZAp" />
+          <node concept="3SKdUt" id="38IWDFVz3T" role="3cqZAp">
+            <node concept="3SKdUq" id="38IWDFVz3V" role="3SKWNk">
+              <property role="3SKdUp" value=" get last to and from from the decreasing intervals" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="38IWDFVzWj" role="3cqZAp">
+            <node concept="3cpWsn" id="38IWDFVzWm" role="3cpWs9">
+              <property role="TrG5h" value="last_decr_val" />
+              <node concept="3Tqbb2" id="38IWDFVzWh" role="1tU5fm">
+                <ref role="ehGHo" to="fivt:6svNLu5NHzP" resolve="DecreasingValue" />
+              </node>
+              <node concept="2OqwBi" id="38IWDFVFIC" role="33vP2m">
+                <node concept="2OqwBi" id="38IWDFVCuB" role="2Oq$k0">
+                  <node concept="2OqwBi" id="38IWDFVBiV" role="2Oq$k0">
+                    <node concept="EsrRn" id="38IWDFVAUK" role="2Oq$k0" />
+                    <node concept="2Rxl7S" id="38IWDFVBOZ" role="2OqNvi" />
+                  </node>
+                  <node concept="2Rf3mk" id="38IWDFVCXR" role="2OqNvi">
+                    <node concept="1xMEDy" id="38IWDFVCXT" role="1xVPHs">
+                      <node concept="chp4Y" id="38IWDFVDyX" role="ri$Ld">
+                        <ref role="cht4Q" to="fivt:6svNLu5NHzP" resolve="DecreasingValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1yVyf7" id="38IWDFVI19" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="38IWDFVIPK" role="3cqZAp">
+            <node concept="3cpWsn" id="38IWDFVIPN" role="3cpWs9">
+              <property role="TrG5h" value="lst_to" />
+              <node concept="10Oyi0" id="38IWDFVIPI" role="1tU5fm" />
+              <node concept="2OqwBi" id="38IWDFVKLP" role="33vP2m">
+                <node concept="37vLTw" id="38IWDFVKnu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="38IWDFVzWm" resolve="last_decr_val" />
+                </node>
+                <node concept="3TrcHB" id="38IWDFVLkV" role="2OqNvi">
+                  <ref role="3TsBF5" to="fivt:3btORKMWQ_X" resolve="To" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="38IWDFVMdr" role="3cqZAp">
+            <node concept="3cpWsn" id="38IWDFVMdu" role="3cpWs9">
+              <property role="TrG5h" value="lst_from" />
+              <node concept="10Oyi0" id="38IWDFVMdp" role="1tU5fm" />
+              <node concept="2OqwBi" id="38IWDFVQ77" role="33vP2m">
+                <node concept="37vLTw" id="38IWDFVPzu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="38IWDFVzWm" resolve="last_decr_val" />
+                </node>
+                <node concept="3TrcHB" id="38IWDFVQG5" role="2OqNvi">
+                  <ref role="3TsBF5" to="fivt:3btORKMWQ_Z" resolve="From" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbH" id="3uR0U_CdJS0" role="3cqZAp" />
           <node concept="3clFbH" id="3XHcQXfH33Q" role="3cqZAp" />
           <node concept="3SKdUt" id="3XHcQXfHYWt" role="3cqZAp">
@@ -1714,6 +1766,45 @@
               </node>
               <node concept="3clFbJ" id="3XHcQXfIe8B" role="3cqZAp">
                 <node concept="3clFbS" id="3XHcQXfIe8D" role="3clFbx">
+                  <node concept="3clFbJ" id="38IWDFVR6_" role="3cqZAp">
+                    <node concept="3clFbS" id="38IWDFVR6B" role="3clFbx">
+                      <node concept="3cpWs6" id="38IWDFW4Af" role="3cqZAp">
+                        <node concept="3clFbT" id="38IWDFW4As" role="3cqZAk">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1Wc70l" id="38IWDFW0Le" role="3clFbw">
+                      <node concept="2OqwBi" id="38IWDFW2sr" role="3uHU7w">
+                        <node concept="37vLTw" id="38IWDFW1gk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3uR0U_CdITh" resolve="From_val" />
+                        </node>
+                        <node concept="3JPx81" id="38IWDFW3Dr" role="2OqNvi">
+                          <node concept="1Wqviy" id="38IWDFW49E" role="25WWJ7" />
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="38IWDFVWwd" role="3uHU7B">
+                        <node concept="2dkUwp" id="38IWDFVSRE" role="3uHU7B">
+                          <node concept="37vLTw" id="38IWDFVRES" role="3uHU7B">
+                            <ref role="3cqZAo" node="38IWDFVIPN" resolve="lst_to" />
+                          </node>
+                          <node concept="37vLTw" id="38IWDFVUiF" role="3uHU7w">
+                            <ref role="3cqZAo" node="6EwUFbFlcuD" resolve="min" />
+                          </node>
+                        </node>
+                        <node concept="2d3UOw" id="38IWDFVY8m" role="3uHU7w">
+                          <node concept="37vLTw" id="38IWDFVWVe" role="3uHU7B">
+                            <ref role="3cqZAo" node="38IWDFVIPN" resolve="lst_to" />
+                          </node>
+                          <node concept="37vLTw" id="38IWDFVYzm" role="3uHU7w">
+                            <ref role="3cqZAo" node="6EwUFbFlcuJ" resolve="max" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="38IWDFVxyL" role="3cqZAp" />
+                  <node concept="3clFbH" id="38IWDFVxyT" role="3cqZAp" />
                   <node concept="3cpWs6" id="3XHcQXfIAE1" role="3cqZAp">
                     <node concept="3clFbT" id="3XHcQXfIBFi" role="3cqZAk">
                       <property role="3clFbU" value="true" />
@@ -1791,15 +1882,6 @@
                         <property role="3cmrfH" value="1" />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1X3_iC" id="3XHcQXfQ2RD" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3cpWs6" id="3XHcQXfK88D" role="8Wnug">
-                  <node concept="3clFbT" id="3XHcQXfK9io" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
                   </node>
                 </node>
               </node>
