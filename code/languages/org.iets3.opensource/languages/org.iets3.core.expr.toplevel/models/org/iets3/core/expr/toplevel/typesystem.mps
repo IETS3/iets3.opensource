@@ -154,9 +154,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
@@ -804,6 +808,9 @@
                     </node>
                     <node concept="1YBJjd" id="7D7uZV2ogBX" role="2OEOjV">
                       <ref role="1YBMHb" node="7D7uZV2j1Jt" resolve="rl" />
+                    </node>
+                    <node concept="2OE7Q9" id="7yDflTrf3Y5" role="2OEWyd">
+                      <ref role="2OEe5H" to="hm2y:7D7uZV2iYAD" resolve="type" />
                     </node>
                   </node>
                 </node>
