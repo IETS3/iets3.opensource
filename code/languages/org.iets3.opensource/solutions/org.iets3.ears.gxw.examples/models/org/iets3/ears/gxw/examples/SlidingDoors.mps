@@ -6,20 +6,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
-      <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
-        <child id="2196020025663654779" name="listofWires" index="ja_ZJ" />
-        <child id="2196020025662531799" name="listOfActors" index="jeVL3" />
-      </concept>
-      <concept id="6815116176709216413" name="org.iets3.graphicalLustre.structure.GlobalOutputActor" flags="ng" index="2xkk2g" />
-      <concept id="6815116176709216412" name="org.iets3.graphicalLustre.structure.GlobalInputActor" flags="ng" index="2xkk2h" />
-      <concept id="6535459388227454823" name="org.iets3.graphicalLustre.structure.Wire" flags="ng" index="2PY9F8">
-        <property id="1406706293678376747" name="sourcePort" index="3px1z0" />
-        <property id="1406706293678376750" name="destinationPort" index="3px1z5" />
-        <reference id="2196020025663745115" name="sourceActor" index="jbjzf" />
-        <reference id="2196020025663745124" name="destinationActor" index="jbjzK" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -179,48 +165,6 @@
     <node concept="otU$0" id="2$$ntKwwEOZ" role="2skrmv">
       <property role="Nkej4" value="start countdown" />
       <ref role="Nkej6" node="2$$ntKwwEOP" resolve="counter" />
-    </node>
-  </node>
-  <node concept="jeVL0" id="6zHlLYYB4Xe">
-    <property role="TrG5h" value="Controller Holder" />
-    <node concept="2xkk2h" id="6zHlLYYB4Xf" role="jeVL3">
-      <property role="TrG5h" value="closinglimitreached" />
-    </node>
-    <node concept="2xkk2h" id="6zHlLYYB4Xg" role="jeVL3">
-      <property role="TrG5h" value="openinglimitreached" />
-    </node>
-    <node concept="2xkk2h" id="6zHlLYYB4Xh" role="jeVL3">
-      <property role="TrG5h" value="objectdetected" />
-    </node>
-    <node concept="2xkk2h" id="6zHlLYYB4Xi" role="jeVL3">
-      <property role="TrG5h" value="timerexpires" />
-    </node>
-    <node concept="2xkk2g" id="6zHlLYYB4Xj" role="jeVL3">
-      <property role="TrG5h" value="counterstartcountdown" />
-    </node>
-    <node concept="2xkk2g" id="6zHlLYYB4Xk" role="jeVL3">
-      <property role="TrG5h" value="doorclose" />
-    </node>
-    <node concept="2xkk2g" id="6zHlLYYB4Xl" role="jeVL3">
-      <property role="TrG5h" value="dooropen" />
-    </node>
-    <node concept="2PY9F8" id="6zHlLYYB4Xm" role="ja_ZJ">
-      <property role="3px1z0" value="Rescounterstartcountdown.output" />
-      <property role="3px1z5" value="GOcounterstartcountdown" />
-      <ref role="jbjzf" node="6zHlLYYB4Xj" resolve="counterstartcountdown" />
-      <ref role="jbjzK" node="6zHlLYYB4Xj" resolve="counterstartcountdown" />
-    </node>
-    <node concept="2PY9F8" id="6zHlLYYB4Xn" role="ja_ZJ">
-      <property role="3px1z0" value="Resdoorclose.output" />
-      <property role="3px1z5" value="GOdoorclose" />
-      <ref role="jbjzf" node="6zHlLYYB4Xk" resolve="doorclose" />
-      <ref role="jbjzK" node="6zHlLYYB4Xk" resolve="doorclose" />
-    </node>
-    <node concept="2PY9F8" id="6zHlLYYB4Xo" role="ja_ZJ">
-      <property role="3px1z0" value="Resdooropen.output" />
-      <property role="3px1z5" value="GOdooropen" />
-      <ref role="jbjzf" node="6zHlLYYB4Xl" resolve="dooropen" />
-      <ref role="jbjzK" node="6zHlLYYB4Xl" resolve="dooropen" />
     </node>
   </node>
 </model>
