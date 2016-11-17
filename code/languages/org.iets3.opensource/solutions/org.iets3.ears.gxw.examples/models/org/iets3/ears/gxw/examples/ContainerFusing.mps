@@ -346,6 +346,9 @@
         </node>
       </node>
     </node>
+    <node concept="1QfkUo" id="2zYBRPIirSC" role="OJ2fO">
+      <ref role="1Qhi4P" node="34ScOrO_ow4" resolve="60 sec timer" />
+    </node>
   </node>
   <node concept="jeVL0" id="537gQTAfgE4">
     <property role="TrG5h" value="Controller Holder" />
