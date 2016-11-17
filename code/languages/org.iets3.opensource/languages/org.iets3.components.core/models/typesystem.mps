@@ -2046,7 +2046,7 @@
           <node concept="3cpWsn" id="6dLmQVBsDaP" role="3cpWs9">
             <property role="TrG5h" value="iface" />
             <node concept="3Tqbb2" id="6dLmQVBsDaN" role="1tU5fm">
-              <ref role="ehGHo" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+              <ref role="ehGHo" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
             </node>
             <node concept="2OqwBi" id="6dLmQVBsDaQ" role="33vP2m">
               <node concept="QwW4i" id="6dLmQVBsDaR" role="2Oq$k0">
@@ -2055,7 +2055,7 @@
               <node concept="2Xjw5R" id="6dLmQVBsDaS" role="2OqNvi">
                 <node concept="1xMEDy" id="6dLmQVBsDaT" role="1xVPHs">
                   <node concept="chp4Y" id="6dLmQVBsDaU" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                    <ref role="cht4Q" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="3km$jnhdLDp" role="1xVPHs" />
@@ -2175,7 +2175,7 @@
                           <node concept="25OxAV" id="_igokwKkp$" role="2OqNvi" />
                         </node>
                         <node concept="28GBK8" id="_igokwKkZE" role="3uHU7w">
-                          <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                          <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
                           <ref role="28H3Ia" to="w9y2:x8tpSAXuOU" resolve="governingPorts" />
                         </node>
                       </node>
@@ -2208,7 +2208,7 @@
                             <node concept="25OxAV" id="_igokwKtas" role="2OqNvi" />
                           </node>
                           <node concept="28GBK8" id="_igokwKuMj" role="3uHU7w">
-                            <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                            <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
                             <ref role="28H3Ia" to="w9y2:x8tpSAXvhR" resolve="subordinatePorts" />
                           </node>
                         </node>
@@ -2244,7 +2244,7 @@
     </node>
     <node concept="1YaCAy" id="_igokwKrkW" role="1YuTPh">
       <property role="TrG5h" value="componentInterface" />
-      <ref role="1YaFvo" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+      <ref role="1YaFvo" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
     </node>
   </node>
 </model>

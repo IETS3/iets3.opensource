@@ -1392,7 +1392,7 @@
   </node>
   <node concept="1M2fIO" id="x8tpSA1aAY">
     <property role="3GE5qa" value="components.iface" />
-    <ref role="1M2myG" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+    <ref role="1M2myG" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
   </node>
   <node concept="1M2fIO" id="x8tpSA1NTp">
     <property role="3GE5qa" value="components" />
@@ -1409,7 +1409,7 @@
             <node concept="3clFbJ" id="x8tpSA1O7O" role="3cqZAp">
               <node concept="3clFbC" id="x8tpSA1Oxx" role="3clFbw">
                 <node concept="3TUQnm" id="x8tpSA1OD0" role="3uHU7w">
-                  <ref role="3TV0OU" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                  <ref role="3TV0OU" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
                 </node>
                 <node concept="otxO1" id="x8tpSA1Ofb" role="3uHU7B" />
               </node>

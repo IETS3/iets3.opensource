@@ -10397,7 +10397,7 @@
   </node>
   <node concept="24kQdi" id="x8tpS_Rrws">
     <property role="3GE5qa" value="components.iface" />
-    <ref role="1XX52x" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+    <ref role="1XX52x" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
     <node concept="3EZMnI" id="x8tpS_Rrwu" role="2wV5jI">
       <node concept="gc7cB" id="x8tpS_Vr2C" role="3EZMnx">
         <node concept="3VJUX4" id="x8tpS_Vr2D" role="3YsKMw">
