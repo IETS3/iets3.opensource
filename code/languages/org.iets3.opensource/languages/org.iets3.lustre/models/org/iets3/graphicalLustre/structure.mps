@@ -53,6 +53,12 @@
     <node concept="PrWs8" id="1e5BYJa0otw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="xNs95uPj7m" role="1TKVEi">
+      <property role="IQ2ns" value="608954144288747990" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gateDefinition" />
+      <ref role="20lvS9" node="5XfJimeU4Ox" resolve="GateDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5EMBqZJhsht">
     <property role="TrG5h" value="ResActor" />
@@ -202,6 +208,41 @@
     <property role="3GE5qa" value="Actors" />
     <property role="TrG5h" value="GlobalOutputActor" />
     <ref role="1TJDcQ" node="5Uka0RZKf4Q" resolve="GlobalActor" />
+  </node>
+  <node concept="1TIwiD" id="5XfJimeU4Ou">
+    <property role="EcuMT" value="6867915925772324126" />
+    <property role="TrG5h" value="GateDescriptors" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5XfJimeU4Ov" role="1TKVEi">
+      <property role="IQ2ns" value="6867915925772324127" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gateDefinitions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5XfJimeU4Ox" resolve="GateDefinition" />
+    </node>
+    <node concept="PrWs8" id="5XfJimeU9wH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5XfJimeU4Ox">
+    <property role="EcuMT" value="6867915925772324129" />
+    <property role="TrG5h" value="GateDefinition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5XfJimeU4Oy" role="1TKVEl">
+      <property role="IQ2nx" value="6867915925772324130" />
+      <property role="TrG5h" value="definition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5XfJimeU5ql" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="xNs95uNWKK">
+    <property role="EcuMT" value="608954144288394288" />
+    <property role="3GE5qa" value="Actors" />
+    <property role="TrG5h" value="AndActor" />
+    <ref role="1TJDcQ" node="5EMBqZJiwso" resolve="LogicalActor" />
   </node>
 </model>
 
