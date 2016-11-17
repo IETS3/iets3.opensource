@@ -184,7 +184,7 @@
         <property role="3yOfbB" value="12.50" />
       </node>
       <node concept="3yOhv_" id="44fPktuMM_z" role="3yOfZN">
-        <property role="0bFFS" value="-36" />
+        <property role="0bFFS" value="-35" />
         <property role="0bFFY" value="60" />
       </node>
     </node>

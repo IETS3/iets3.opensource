@@ -27,6 +27,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.priority/org.iets3.req.priority.mpl" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="Robot" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="Robot" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="table" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.diehltable.mpl" folder="table" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
