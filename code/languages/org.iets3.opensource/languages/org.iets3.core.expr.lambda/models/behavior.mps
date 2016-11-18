@@ -18,7 +18,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -76,9 +75,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
@@ -1134,23 +1130,6 @@
       <ref role="13i0hy" to="hwgx:59HbAIOYveX" resolve="getDependenciesRelevantForCycleDetection" />
       <node concept="3Tm1VV" id="RIvadv1bFq" role="1B3o_S" />
       <node concept="3clFbS" id="RIvadv1bFu" role="3clF47">
-        <node concept="3clFbF" id="RIvadv2EYj" role="3cqZAp">
-          <node concept="2OqwBi" id="RIvadv2EYg" role="3clFbG">
-            <node concept="10M0yZ" id="RIvadv2EYh" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="RIvadv2EYi" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="RIvadv2Fsc" role="37wK5m">
-                <node concept="13iPFW" id="RIvadv2Fsj" role="3uHU7w" />
-                <node concept="Xl_RD" id="RIvadv2F4$" role="3uHU7B">
-                  <property role="Xl_RC" value="f: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="RIvadv1enL" role="3cqZAp">
           <node concept="2OqwBi" id="RIvadv1l_X" role="3clFbG">
             <node concept="2OqwBi" id="RIvadv1fk6" role="2Oq$k0">
@@ -1172,30 +1151,6 @@
             <node concept="3$u5V9" id="RIvadv2InJ" role="2OqNvi">
               <node concept="1bVj0M" id="RIvadv2InL" role="23t8la">
                 <node concept="3clFbS" id="RIvadv2InM" role="1bW5cS">
-                  <node concept="3clFbF" id="RIvadv2JbT" role="3cqZAp">
-                    <node concept="2OqwBi" id="RIvadv2JbQ" role="3clFbG">
-                      <node concept="10M0yZ" id="RIvadv2JbR" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="RIvadv2JbS" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="3cpWs3" id="RIvadv2K6E" role="37wK5m">
-                          <node concept="2OqwBi" id="RIvadv2Kw5" role="3uHU7w">
-                            <node concept="37vLTw" id="RIvadv2Khy" role="2Oq$k0">
-                              <ref role="3cqZAo" node="RIvadv2InN" resolve="it" />
-                            </node>
-                            <node concept="3TrEf2" id="RIvadv2KOt" role="2OqNvi">
-                              <ref role="3Tt5mk" to="zzzn:49WTic8gvyC" resolve="function" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="RIvadv2Jmt" role="3uHU7B">
-                            <property role="Xl_RC" value="c: " />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="RIvadv2Ivk" role="3cqZAp">
                     <node concept="2OqwBi" id="RIvadv2IDr" role="3clFbG">
                       <node concept="37vLTw" id="RIvadv2Ivj" role="2Oq$k0">
