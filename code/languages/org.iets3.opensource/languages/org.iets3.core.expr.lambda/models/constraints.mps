@@ -12,6 +12,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -171,26 +172,28 @@
       <ref role="1N5Vy1" to="zzzn:6zmBjqUkHam" resolve="arg" />
       <node concept="1MUpDS" id="6zmBjqUkHKn" role="1N6uqs">
         <node concept="3clFbS" id="6zmBjqUkHKo" role="2VODD2">
-          <node concept="3cpWs8" id="3kzwyUOJ644" role="3cqZAp">
-            <node concept="3cpWsn" id="3kzwyUOJ645" role="3cpWs9">
-              <property role="TrG5h" value="all" />
-              <node concept="2I9FWS" id="3kzwyUOJ641" role="1tU5fm">
-                <ref role="2I9WkF" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+          <node concept="3cpWs8" id="TUBgQ0RBZg" role="3cqZAp">
+            <node concept="3cpWsn" id="TUBgQ0RBZh" role="3cpWs9">
+              <property role="TrG5h" value="args" />
+              <node concept="A3Dl8" id="TUBgQ0RBZ4" role="1tU5fm">
+                <node concept="3Tqbb2" id="TUBgQ0RBZ7" role="A3Ik2">
+                  <ref role="ehGHo" to="zzzn:6zmBjqUkwse" resolve="LambdaArg" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="3kzwyUOJ646" role="33vP2m">
-                <node concept="2OqwBi" id="3kzwyUOJ647" role="2Oq$k0">
-                  <node concept="21POm0" id="3kzwyUOJ648" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="3kzwyUOJ649" role="2OqNvi">
-                    <node concept="1xMEDy" id="3kzwyUOJ64a" role="1xVPHs">
-                      <node concept="chp4Y" id="3kzwyUOJ64b" role="ri$Ld">
+              <node concept="2OqwBi" id="TUBgQ0RBZi" role="33vP2m">
+                <node concept="2OqwBi" id="TUBgQ0RBZj" role="2Oq$k0">
+                  <node concept="21POm0" id="TUBgQ0RBZk" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="TUBgQ0RBZl" role="2OqNvi">
+                    <node concept="1xMEDy" id="TUBgQ0RBZm" role="1xVPHs">
+                      <node concept="chp4Y" id="TUBgQ0RBZn" role="ri$Ld">
                         <ref role="cht4Q" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
                       </node>
                     </node>
-                    <node concept="1xIGOp" id="3kzwyUOJ64c" role="1xVPHs" />
+                    <node concept="1xIGOp" id="TUBgQ0RBZo" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="3kzwyUOJ64d" role="2OqNvi">
-                  <ref role="3TtcxE" to="zzzn:6zmBjqUkws7" resolve="args" />
+                <node concept="2qgKlT" id="TUBgQ0RBZp" role="2OqNvi">
+                  <ref role="37wK5l" to="5s8v:TUBgQ0R0F5" resolve="visibleLambdaArgs" />
                 </node>
               </node>
             </node>
@@ -205,8 +208,8 @@
                   <node concept="2qgKlT" id="3kzwyUOJ6s9" role="2OqNvi">
                     <ref role="37wK5l" to="pbu6:3kzwyUOs0AQ" resolve="filterScope" />
                     <node concept="21POm0" id="3kzwyUOJ6sa" role="37wK5m" />
-                    <node concept="37vLTw" id="3kzwyUOJ6sb" role="37wK5m">
-                      <ref role="3cqZAo" node="3kzwyUOJ645" resolve="all" />
+                    <node concept="37vLTw" id="TUBgQ0RD4f" role="37wK5m">
+                      <ref role="3cqZAo" node="TUBgQ0RBZh" resolve="args" />
                     </node>
                   </node>
                 </node>

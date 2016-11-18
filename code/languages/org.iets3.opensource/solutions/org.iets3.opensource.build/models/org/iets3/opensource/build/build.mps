@@ -309,6 +309,9 @@
         <node concept="m$_wl" id="34v_ns09Wnt" role="39821P">
           <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
         </node>
+        <node concept="m$_wl" id="4VKUGAZP_h_" role="39821P">
+          <ref role="m_rDy" node="1lUgLJUn5Hn" resolve="org.iets3.core.assessment" />
+        </node>
         <node concept="m$_wl" id="1PzuxQOWHfM" role="39821P">
           <ref role="m_rDy" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
         </node>
@@ -1355,6 +1358,18 @@
         <node concept="1SiIV0" id="2vr5lQPc_pU" role="3bR37C">
           <node concept="1Busua" id="2vr5lQPc_pV" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52gSz9in4PZ" role="3bR37C">
+          <node concept="3bR9La" id="52gSz9in4Q0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52gSz9in4Q1" role="3bR37C">
+          <node concept="3bR9La" id="52gSz9in4Q2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>

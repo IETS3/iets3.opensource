@@ -278,6 +278,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
@@ -2166,6 +2171,72 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="RaqQlV9tkP">
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <ref role="1XX52x" to="av4b:RaqQlV9tkk" resolve="InterpreterValueStat" />
+    <node concept="3EZMnI" id="RaqQlV9tl4" role="2wV5jI">
+      <node concept="2iRfu4" id="RaqQlV9tl5" role="2iSdaV" />
+      <node concept="3F0A7n" id="RaqQlV9tl1" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:RaqQlV9tkl" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="RaqQlV9tln" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="RaqQlV9tlD" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:RaqQlV9tkn" resolve="value" />
+        <node concept="VechU" id="RaqQlVWIKD" role="3F10Kt">
+          <node concept="3ZlJ5R" id="RaqQlVWIKF" role="VblUZ">
+            <node concept="3clFbS" id="RaqQlVWIKG" role="2VODD2">
+              <node concept="3clFbF" id="RaqQlVWIRF" role="3cqZAp">
+                <node concept="3K4zz7" id="RaqQlVWNQ1" role="3clFbG">
+                  <node concept="10M0yZ" id="RaqQlVWO1u" role="3K4E3e">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
+                  </node>
+                  <node concept="10Nm6u" id="RaqQlVWOlB" role="3K4GZi" />
+                  <node concept="2OqwBi" id="RaqQlVWLsg" role="3K4Cdx">
+                    <node concept="2OqwBi" id="RaqQlVWJ2b" role="2Oq$k0">
+                      <node concept="pncrf" id="RaqQlVWIRE" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="RaqQlVWJkj" role="2OqNvi">
+                        <ref role="3TsBF5" to="av4b:RaqQlV9tkn" resolve="value" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="RaqQlVWMbG" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <node concept="Xl_RD" id="RaqQlVWMbM" role="37wK5m">
+                        <property role="Xl_RC" value="&lt;no value&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="RaqQlV9tmb">
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <ref role="1XX52x" to="av4b:RaqQlV9tkj" resolve="InterpreterValueSummary" />
+    <node concept="3EZMnI" id="RaqQlV9tms" role="2wV5jI">
+      <node concept="2iRkQZ" id="RaqQlV9tmt" role="2iSdaV" />
+      <node concept="3F0ifn" id="RaqQlV9tmA" role="3EZMnx">
+        <property role="3F0ifm" value="value ranges" />
+      </node>
+      <node concept="3EZMnI" id="RaqQlV9tn2" role="3EZMnx">
+        <node concept="VPM3Z" id="RaqQlV9tn4" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="RaqQlV9tnj" role="3EZMnx" />
+        <node concept="2iRfu4" id="RaqQlV9tn7" role="2iSdaV" />
+        <node concept="3F2HdR" id="RaqQlV9tnv" role="3EZMnx">
+          <ref role="1NtTu8" to="av4b:RaqQlV9tlI" resolve="valueStats" />
+          <node concept="2EHx9g" id="RaqQlV9tn_" role="2czzBx" />
         </node>
       </node>
     </node>

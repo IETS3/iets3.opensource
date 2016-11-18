@@ -93,6 +93,9 @@
     <node concept="PrWs8" id="ub9nkyHAb8" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="7yDflTqQ5$F" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyHAba">
     <property role="3GE5qa" value="" />
@@ -167,6 +170,9 @@
     </node>
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
+    <node concept="PrWs8" id="3pe7Y2RWGaO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
@@ -424,6 +430,35 @@
       <property role="IQ2nx" value="4372229961985674918" />
       <property role="TrG5h" value="maxH" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="RaqQlV9tkj">
+    <property role="EcuMT" value="993724751390561555" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyj" id="RaqQlV9tlI" role="1TKVEi">
+      <property role="IQ2ns" value="993724751390561646" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="valueStats" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="RaqQlV9tkk" resolve="InterpreterValueStat" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="RaqQlV9tkk">
+    <property role="EcuMT" value="993724751390561556" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueStat" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="RaqQlV9tkl" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561557" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="RaqQlV9tkn" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561559" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
