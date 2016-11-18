@@ -309,6 +309,9 @@
         <node concept="m$_wl" id="34v_ns09Wnt" role="39821P">
           <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
         </node>
+        <node concept="m$_wl" id="4VKUGAZP_h_" role="39821P">
+          <ref role="m_rDy" node="1lUgLJUn5Hn" resolve="org.iets3.core.assessment" />
+        </node>
         <node concept="m$_wl" id="1PzuxQOWHfM" role="39821P">
           <ref role="m_rDy" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
         </node>
