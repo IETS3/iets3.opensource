@@ -432,5 +432,34 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="RaqQlV9tkj">
+    <property role="EcuMT" value="993724751390561555" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyj" id="RaqQlV9tlI" role="1TKVEi">
+      <property role="IQ2ns" value="993724751390561646" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="valueStats" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="RaqQlV9tkk" resolve="InterpreterValueStat" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="RaqQlV9tkk">
+    <property role="EcuMT" value="993724751390561556" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueStat" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="RaqQlV9tkl" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561557" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="RaqQlV9tkn" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561559" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
