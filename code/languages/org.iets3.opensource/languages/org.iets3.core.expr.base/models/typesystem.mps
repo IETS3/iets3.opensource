@@ -4686,5 +4686,43 @@
       <ref role="1YaFvo" to="hm2y:5BNZGjBtUbJ" resolve="AttemptType" />
     </node>
   </node>
+  <node concept="18kY7G" id="6iJ_gQCt945">
+    <property role="TrG5h" value="check_AlternativesExpression" />
+    <property role="3GE5qa" value="alt" />
+    <node concept="3clFbS" id="6iJ_gQCt946" role="18ibNy">
+      <node concept="3clFbJ" id="6iJ_gQCt94l" role="3cqZAp">
+        <node concept="3eOVzh" id="6iJ_gQCte6P" role="3clFbw">
+          <node concept="2OqwBi" id="6iJ_gQCtbHW" role="3uHU7B">
+            <node concept="2OqwBi" id="6iJ_gQCt9gC" role="2Oq$k0">
+              <node concept="1YBJjd" id="6iJ_gQCt94r" role="2Oq$k0">
+                <ref role="1YBMHb" node="6iJ_gQCt948" resolve="ae" />
+              </node>
+              <node concept="3Tsc0h" id="6iJ_gQCt9wO" role="2OqNvi">
+                <ref role="3TtcxE" to="hm2y:6UxFDrx4dra" resolve="alternatives" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="6iJ_gQCtdsz" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="6iJ_gQCteoy" role="3uHU7w">
+            <property role="3cmrfH" value="2" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6iJ_gQCt94n" role="3clFbx">
+          <node concept="2MkqsV" id="6iJ_gQCtexd" role="3cqZAp">
+            <node concept="Xl_RD" id="6iJ_gQCtexp" role="2MkJ7o">
+              <property role="Xl_RC" value="an alt expression with less than two alternatives is not allowed" />
+            </node>
+            <node concept="1YBJjd" id="6iJ_gQCteys" role="2OEOjV">
+              <ref role="1YBMHb" node="6iJ_gQCt948" resolve="ae" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6iJ_gQCt948" role="1YuTPh">
+      <property role="TrG5h" value="ae" />
+      <ref role="1YaFvo" to="hm2y:6UxFDrx4dp4" resolve="AlternativesExpression" />
+    </node>
+  </node>
 </model>
 

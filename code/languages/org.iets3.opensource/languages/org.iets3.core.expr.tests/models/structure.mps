@@ -223,7 +223,7 @@
   <node concept="1TIwiD" id="78hTg1$THIv">
     <property role="EcuMT" value="8219602584783477663" />
     <property role="TrG5h" value="ConstraintFailedTestItem" />
-    <property role="34LRSv" value="constraint failure" />
+    <property role="34LRSv" value="confail" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyj" id="78hTg1$TLJd" role="1TKVEi">
       <property role="IQ2ns" value="8219602584783494093" />

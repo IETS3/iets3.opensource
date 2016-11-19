@@ -3708,8 +3708,8 @@
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="7DTWJ$8l$8C" role="1B3o_S" />
-      <node concept="3uibUv" id="7DTWJ$8l$8R" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3uibUv" id="6iJ_gQBTuen" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
       <node concept="3clFbS" id="7DTWJ$8l$8E" role="3clF47" />
       <node concept="37vLTG" id="7DTWJ$8lDKD" role="3clF46">
@@ -3757,19 +3757,57 @@
       <ref role="13i0hy" node="7DTWJ$8l$8B" resolve="process" />
       <node concept="3Tm1VV" id="7DTWJ$8lDMk" role="1B3o_S" />
       <node concept="3clFbS" id="7DTWJ$8lDMp" role="3clF47">
-        <node concept="3clFbF" id="7DTWJ$8mA6Y" role="3cqZAp">
-          <node concept="2OqwBi" id="7DTWJ$8mAqN" role="3clFbG">
-            <node concept="37vLTw" id="7DTWJ$8mAaR" role="2Oq$k0">
-              <ref role="3cqZAo" node="7DTWJ$8lDMq" resolve="value" />
-            </node>
-            <node concept="liA8E" id="7DTWJ$8mAIr" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode):java.math.BigDecimal" resolve="setScale" />
-              <node concept="BsUDl" id="7DTWJ$8mALK" role="37wK5m">
-                <ref role="37wK5l" node="7DTWJ$8lDMY" resolve="targetPrecision" />
+        <node concept="3clFbJ" id="6iJ_gQBVmUD" role="3cqZAp">
+          <node concept="3clFbS" id="6iJ_gQBVmUF" role="3clFbx">
+            <node concept="3cpWs6" id="6iJ_gQBVopM" role="3cqZAp">
+              <node concept="2OqwBi" id="6iJ_gQBVopO" role="3cqZAk">
+                <node concept="37vLTw" id="6iJ_gQBVopP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7DTWJ$8lDMq" resolve="value" />
+                </node>
+                <node concept="liA8E" id="6iJ_gQBVopQ" role="2OqNvi">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode):java.math.BigDecimal" resolve="setScale" />
+                  <node concept="BsUDl" id="6iJ_gQBVopR" role="37wK5m">
+                    <ref role="37wK5l" node="7DTWJ$8lDMY" resolve="targetPrecision" />
+                  </node>
+                  <node concept="Rm8GO" id="6iJ_gQBVXb$" role="37wK5m">
+                    <ref role="Rm8GQ" to="xlxw:~RoundingMode.DOWN" resolve="DOWN" />
+                    <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+                  </node>
+                </node>
               </node>
-              <node concept="Rm8GO" id="7DTWJ$8mYPE" role="37wK5m">
-                <ref role="Rm8GQ" to="xlxw:~RoundingMode.FLOOR" resolve="FLOOR" />
-                <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="6iJ_gQBVo8_" role="3clFbw">
+            <node concept="3cmrfG" id="6iJ_gQBVoag" role="3uHU7w">
+              <property role="3cmrfH" value="-1" />
+            </node>
+            <node concept="2OqwBi" id="6iJ_gQBVncR" role="3uHU7B">
+              <node concept="37vLTw" id="6iJ_gQBVmV_" role="2Oq$k0">
+                <ref role="3cqZAo" node="7DTWJ$8lDMq" resolve="value" />
+              </node>
+              <node concept="liA8E" id="6iJ_gQBVntZ" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.signum():int" resolve="signum" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6iJ_gQBVorH" role="9aQIa">
+            <node concept="3clFbS" id="6iJ_gQBVorI" role="9aQI4">
+              <node concept="3cpWs6" id="6iJ_gQBVowq" role="3cqZAp">
+                <node concept="2OqwBi" id="6iJ_gQBVowr" role="3cqZAk">
+                  <node concept="37vLTw" id="6iJ_gQBVows" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7DTWJ$8lDMq" resolve="value" />
+                  </node>
+                  <node concept="liA8E" id="6iJ_gQBVowt" role="2OqNvi">
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode):java.math.BigDecimal" resolve="setScale" />
+                    <node concept="BsUDl" id="6iJ_gQBVowu" role="37wK5m">
+                      <ref role="37wK5l" node="7DTWJ$8lDMY" resolve="targetPrecision" />
+                    </node>
+                    <node concept="Rm8GO" id="6iJ_gQBVo_B" role="37wK5m">
+                      <ref role="Rm8GQ" to="xlxw:~RoundingMode.DOWN" resolve="DOWN" />
+                      <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3781,8 +3819,8 @@
           <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
         </node>
       </node>
-      <node concept="3uibUv" id="7DTWJ$8lDMs" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3uibUv" id="6iJ_gQBTumu" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
     </node>
   </node>
@@ -3823,8 +3861,8 @@
           <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
         </node>
       </node>
-      <node concept="3uibUv" id="7DTWJ$8nSXY" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3uibUv" id="6iJ_gQBTuof" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
     </node>
   </node>
@@ -3865,8 +3903,8 @@
           <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
         </node>
       </node>
-      <node concept="3uibUv" id="7DTWJ$8nTsB" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3uibUv" id="6iJ_gQBTuq8" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
     </node>
   </node>
