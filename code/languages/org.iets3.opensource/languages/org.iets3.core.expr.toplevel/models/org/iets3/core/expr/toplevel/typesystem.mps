@@ -154,9 +154,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
@@ -219,6 +223,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -238,6 +243,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -367,6 +373,15 @@
                 <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" resolve="body" />
               </node>
             </node>
+            <node concept="3Cnw8n" id="3pe7Y2S9kXc" role="2OEOjU">
+              <ref role="QpYPw" node="3pe7Y2S9fIg" resolve="toggleEffectOnFunction" />
+              <node concept="3CnSsL" id="3pe7Y2S9l2j" role="3Coj4f">
+                <ref role="QkamJ" node="3pe7Y2S9fIC" resolve="f" />
+                <node concept="1YBJjd" id="3pe7Y2S9l2w" role="3CoRuB">
+                  <ref role="1YBMHb" node="2uR5X5azvm6" resolve="f" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1Wc70l" id="3npF9QX0qg$" role="3clFbw">
@@ -398,6 +413,15 @@
       <node concept="3clFbJ" id="3npF9QX0sYw" role="3cqZAp">
         <node concept="3clFbS" id="3npF9QX0sYx" role="3clFbx">
           <node concept="2MkqsV" id="3npF9QX0sYy" role="3cqZAp">
+            <node concept="3Cnw8n" id="3pe7Y2S9l3A" role="2OEOjU">
+              <ref role="QpYPw" node="3pe7Y2S9fIg" resolve="toggleEffectOnFunction" />
+              <node concept="3CnSsL" id="3pe7Y2S9l3B" role="3Coj4f">
+                <ref role="QkamJ" node="3pe7Y2S9fIC" resolve="f" />
+                <node concept="1YBJjd" id="3pe7Y2S9l3C" role="3CoRuB">
+                  <ref role="1YBMHb" node="2uR5X5azvm6" resolve="f" />
+                </node>
+              </node>
+            </node>
             <node concept="Xl_RD" id="3npF9QX0sYz" role="2MkJ7o">
               <property role="Xl_RC" value="function is not declared to have an effect, but the body has an effect. Add effect flag." />
             </node>
@@ -784,6 +808,9 @@
                     </node>
                     <node concept="1YBJjd" id="7D7uZV2ogBX" role="2OEOjV">
                       <ref role="1YBMHb" node="7D7uZV2j1Jt" resolve="rl" />
+                    </node>
+                    <node concept="2OE7Q9" id="7yDflTrf3Y5" role="2OEWyd">
+                      <ref role="2OEe5H" to="hm2y:7D7uZV2iYAD" resolve="type" />
                     </node>
                   </node>
                 </node>
@@ -1729,6 +1756,74 @@
     <node concept="1YaCAy" id="6NHlpK$$xU5" role="1YuTPh">
       <property role="TrG5h" value="rl" />
       <ref role="1YaFvo" to="yv47:7D7uZV2iYAC" resolve="RecordLiteral" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="3pe7Y2S9fIg">
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="toggleEffectOnFunction" />
+    <node concept="Q6JDH" id="3pe7Y2S9fIC" role="Q6Id_">
+      <property role="TrG5h" value="f" />
+      <node concept="3Tqbb2" id="3pe7Y2S9fII" role="Q6QK4">
+        <ref role="ehGHo" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="3pe7Y2S9fIh" role="Q6x$H">
+      <node concept="3clFbS" id="3pe7Y2S9fIi" role="2VODD2">
+        <node concept="3clFbJ" id="3pe7Y2S9g51" role="3cqZAp">
+          <node concept="3clFbC" id="3pe7Y2S9hRT" role="3clFbw">
+            <node concept="10Nm6u" id="3pe7Y2S9hW9" role="3uHU7w" />
+            <node concept="2OqwBi" id="3pe7Y2S9gje" role="3uHU7B">
+              <node concept="QwW4i" id="3pe7Y2S9g5s" role="2Oq$k0">
+                <ref role="QwW4h" node="3pe7Y2S9fIC" resolve="f" />
+              </node>
+              <node concept="3TrEf2" id="3pe7Y2S9hqe" role="2OqNvi">
+                <ref role="3Tt5mk" to="zzzn:3npF9QX0lor" resolve="effect" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3pe7Y2S9g53" role="3clFbx">
+            <node concept="3clFbF" id="3pe7Y2S9i0e" role="3cqZAp">
+              <node concept="2OqwBi" id="3pe7Y2S9iUz" role="3clFbG">
+                <node concept="2OqwBi" id="3pe7Y2S9ib5" role="2Oq$k0">
+                  <node concept="QwW4i" id="3pe7Y2S9i0d" role="2Oq$k0">
+                    <ref role="QwW4h" node="3pe7Y2S9fIC" resolve="f" />
+                  </node>
+                  <node concept="3TrEf2" id="3pe7Y2S9iyj" role="2OqNvi">
+                    <ref role="3Tt5mk" to="zzzn:3npF9QX0lor" resolve="effect" />
+                  </node>
+                </node>
+                <node concept="zfrQC" id="3pe7Y2S9j6h" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="3pe7Y2S9jbB" role="9aQIa">
+            <node concept="3clFbS" id="3pe7Y2S9jbC" role="9aQI4">
+              <node concept="3clFbF" id="3pe7Y2S9jgb" role="3cqZAp">
+                <node concept="2OqwBi" id="3pe7Y2S9keF" role="3clFbG">
+                  <node concept="2OqwBi" id="3pe7Y2S9jr2" role="2Oq$k0">
+                    <node concept="QwW4i" id="3pe7Y2S9jga" role="2Oq$k0">
+                      <ref role="QwW4h" node="3pe7Y2S9fIC" resolve="f" />
+                    </node>
+                    <node concept="3TrEf2" id="3pe7Y2S9jME" role="2OqNvi">
+                      <ref role="3Tt5mk" to="zzzn:3npF9QX0lor" resolve="effect" />
+                    </node>
+                  </node>
+                  <node concept="1PgB_6" id="3pe7Y2S9kxS" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="3pe7Y2S9kzH" role="QzAvj">
+      <node concept="3clFbS" id="3pe7Y2S9kzI" role="2VODD2">
+        <node concept="3clFbF" id="3pe7Y2S9kG7" role="3cqZAp">
+          <node concept="Xl_RD" id="3pe7Y2S9kG6" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Effect Flag" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
