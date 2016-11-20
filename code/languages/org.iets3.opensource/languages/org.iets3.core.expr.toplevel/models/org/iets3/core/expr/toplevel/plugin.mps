@@ -798,17 +798,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2YRU1H" id="3oV0py9yiCz" role="3cqZAp">
-                  <property role="TrG5h" value="recordLiterals" />
-                  <node concept="2OqwBi" id="3oV0py9yj6Y" role="2YRUci">
-                    <node concept="37vLTw" id="3oV0py9yiYK" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3oV0py9yiIj" resolve="rec" />
-                    </node>
-                    <node concept="2OwXpG" id="3oV0py9yjiV" role="2OqNvi">
-                      <ref role="2Oxat5" node="7D7uZV2ycK$" resolve="memberNames" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs6" id="SRvqsNp$q8" role="3cqZAp">
                   <node concept="2OqwBi" id="SRvqsNp$qa" role="3cqZAk">
                     <node concept="37vLTw" id="3oV0py9yiIo" role="2Oq$k0">
@@ -1106,6 +1095,15 @@
                 </node>
               </node>
             </node>
+            <node concept="2YRU1H" id="3oV0py9yjtH" role="3cqZAp">
+              <property role="TrG5h" value="setters" />
+              <node concept="2OqwBi" id="3oV0py9ykkw" role="2YRUci">
+                <node concept="oxGPV" id="3oV0py9ykcb" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="3oV0py9ykyG" role="2OqNvi">
+                  <ref role="3TtcxE" to="yv47:15mJ3JeHVgR" resolve="setters" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="15mJ3JeUfX3" role="3cqZAp">
               <node concept="2OqwBi" id="15mJ3JeUgxY" role="3clFbw">
                 <node concept="2OqwBi" id="15mJ3JeUfZc" role="2Oq$k0">
@@ -1155,15 +1153,6 @@
                   <node concept="liA8E" id="15mJ3JeU$Q1" role="2OqNvi">
                     <ref role="37wK5l" node="15mJ3JeUoEA" resolve="copy" />
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2YRU1H" id="3oV0py9yjtH" role="3cqZAp">
-              <property role="TrG5h" value="setters" />
-              <node concept="2OqwBi" id="3oV0py9ykkw" role="2YRUci">
-                <node concept="oxGPV" id="3oV0py9ykcb" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="3oV0py9ykyG" role="2OqNvi">
-                  <ref role="3TtcxE" to="yv47:15mJ3JeHVgR" resolve="setters" />
                 </node>
               </node>
             </node>
