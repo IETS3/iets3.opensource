@@ -222,7 +222,7 @@
     </node>
   </node>
   <node concept="OJ2fN" id="34ScOrO_opv">
-    <property role="TrG5h" value="Requirement for Container Fusing" />
+    <property role="TrG5h" value="Requirements for Container Fusing" />
     <ref role="9DKRw" node="7YbGQey_vrJ" resolve="Glossary for Container Fusing" />
     <node concept="1QfkUo" id="34ScOrO_oqF" role="OJ2fO">
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
@@ -387,9 +387,6 @@
           <ref role="OJJ_O" node="1qavb4eyKmf" />
         </node>
       </node>
-    </node>
-    <node concept="1QfkUo" id="2zYBRPIirSC" role="OJ2fO">
-      <ref role="1Qhi4P" node="34ScOrO_ow4" resolve="60 sec timer" />
     </node>
   </node>
   <node concept="jeVL0" id="xNs95uVpUR">
