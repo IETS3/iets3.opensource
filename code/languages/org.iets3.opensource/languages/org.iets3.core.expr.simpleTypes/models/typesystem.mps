@@ -2156,8 +2156,36 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="supertypeOf_NumberType" />
     <node concept="3clFbS" id="78hTg1$TqUZ" role="2sgrp5">
+      <node concept="3clFbF" id="5ElkanPmexf" role="3cqZAp">
+        <node concept="2OqwBi" id="5ElkanPmexc" role="3clFbG">
+          <node concept="10M0yZ" id="5ElkanPmexd" role="2Oq$k0">
+            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+          </node>
+          <node concept="liA8E" id="5ElkanPmexe" role="2OqNvi">
+            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+            <node concept="Xl_RD" id="5ElkanPmezd" role="37wK5m">
+              <property role="Xl_RC" value="supertypeOf_NumberType" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="3gjm1nJOaZS" role="3cqZAp">
         <node concept="3clFbS" id="3gjm1nJOaZU" role="3clFbx">
+          <node concept="3clFbF" id="5ElkanPmiCP" role="3cqZAp">
+            <node concept="2OqwBi" id="5ElkanPmiCM" role="3clFbG">
+              <node concept="10M0yZ" id="5ElkanPmiCN" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              </node>
+              <node concept="liA8E" id="5ElkanPmiCO" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="5ElkanPmjfh" role="37wK5m">
+                  <property role="Xl_RC" value="IUnteger" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="3gjm1nJOdAx" role="3cqZAp">
             <node concept="3clFbS" id="3gjm1nJOdAz" role="3clFbx">
               <node concept="3cpWs6" id="3gjm1nJOh0m" role="3cqZAp">
@@ -2173,7 +2201,7 @@
             <node concept="3fqX7Q" id="3gjm1nJOgVg" role="3clFbw">
               <node concept="2OqwBi" id="3gjm1nJOgVi" role="3fr31v">
                 <node concept="1YBJjd" id="3gjm1nJOgVj" role="2Oq$k0">
-                  <ref role="1YBMHb" node="78hTg1$TqV1" resolve="rit" />
+                  <ref role="1YBMHb" node="78hTg1$TqV1" resolve="numberT" />
                 </node>
                 <node concept="2qgKlT" id="3gjm1nJOgVk" role="2OqNvi">
                   <ref role="37wK5l" to="b1h1:3gjm1nJOe8A" resolve="isUnlimitedRange" />
@@ -2182,6 +2210,20 @@
             </node>
             <node concept="9aQIb" id="3gjm1nJOiAl" role="9aQIa">
               <node concept="3clFbS" id="3gjm1nJOiAm" role="9aQI4">
+                <node concept="3clFbF" id="5ElkanPmeUD" role="3cqZAp">
+                  <node concept="2OqwBi" id="5ElkanPmeUA" role="3clFbG">
+                    <node concept="10M0yZ" id="5ElkanPmeUB" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                    </node>
+                    <node concept="liA8E" id="5ElkanPmeUC" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="Xl_RD" id="5ElkanPmf12" role="37wK5m">
+                        <property role="Xl_RC" value="YYY" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="3gjm1nJOiFv" role="3cqZAp">
                   <node concept="2ShNRf" id="3gjm1nJOiFI" role="3cqZAk">
                     <node concept="3zrR0B" id="3gjm1nJOiXG" role="2ShVmc">
@@ -2197,7 +2239,7 @@
         </node>
         <node concept="2OqwBi" id="3gjm1nJOc_L" role="3clFbw">
           <node concept="1YBJjd" id="3gjm1nJOcte" role="2Oq$k0">
-            <ref role="1YBMHb" node="78hTg1$TqV1" resolve="rit" />
+            <ref role="1YBMHb" node="78hTg1$TqV1" resolve="numberT" />
           </node>
           <node concept="2qgKlT" id="3gjm1nJOjD9" role="2OqNvi">
             <ref role="37wK5l" to="b1h1:3p6$WoEh1ch" resolve="isInt" />
@@ -2231,7 +2273,7 @@
                       <ref role="37wK5l" to="b1h1:19PglA21KtA" resolve="setPrecision" />
                       <node concept="2OqwBi" id="6X2fUL7hqe6" role="37wK5m">
                         <node concept="1YBJjd" id="6X2fUL7hq5E" role="2Oq$k0">
-                          <ref role="1YBMHb" node="78hTg1$TqV1" resolve="rit" />
+                          <ref role="1YBMHb" node="78hTg1$TqV1" resolve="numberT" />
                         </node>
                         <node concept="2qgKlT" id="6X2fUL7hq_z" role="2OqNvi">
                           <ref role="37wK5l" to="b1h1:19PglA20ASE" resolve="precision" />
@@ -2249,7 +2291,7 @@
               <node concept="3fqX7Q" id="3gjm1nJOk7j" role="3clFbw">
                 <node concept="2OqwBi" id="3gjm1nJOk7k" role="3fr31v">
                   <node concept="1YBJjd" id="3gjm1nJOk7l" role="2Oq$k0">
-                    <ref role="1YBMHb" node="78hTg1$TqV1" resolve="rit" />
+                    <ref role="1YBMHb" node="78hTg1$TqV1" resolve="numberT" />
                   </node>
                   <node concept="2qgKlT" id="3gjm1nJOk7m" role="2OqNvi">
                     <ref role="37wK5l" to="b1h1:3gjm1nJOe8A" resolve="isUnlimitedRange" />
@@ -2275,7 +2317,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="78hTg1$TqV1" role="1YuTPh">
-      <property role="TrG5h" value="rit" />
+      <property role="TrG5h" value="numberT" />
       <ref role="1YaFvo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
     </node>
   </node>
@@ -2377,6 +2419,20 @@
     </node>
     <node concept="1xSnZT" id="3p6$WoEz$6i" role="1xSnZW">
       <node concept="3clFbS" id="3p6$WoEz$6j" role="2VODD2">
+        <node concept="3clFbF" id="5ElkanPmnyG" role="3cqZAp">
+          <node concept="2OqwBi" id="5ElkanPmnyD" role="3clFbG">
+            <node concept="10M0yZ" id="5ElkanPmnyE" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5ElkanPmnyF" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5ElkanPmnz3" role="37wK5m">
+                <property role="Xl_RC" value="replaceNumberType" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3p6$WoE$I43" role="3cqZAp">
           <node concept="2OqwBi" id="3p6$WoE$Ig2" role="3clFbG">
             <node concept="1YBJjd" id="3p6$WoE$I42" role="2Oq$k0">

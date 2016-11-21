@@ -16,6 +16,8 @@
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="8q4f" ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,6 +42,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -2734,6 +2739,20 @@
       <ref role="1YaFvo" to="700h:7kYh9WszdBQ" resolve="MapType" />
     </node>
     <node concept="3clFbS" id="1QYdL38_Y3A" role="2sgrp5">
+      <node concept="3clFbF" id="5ElkanPns8h" role="3cqZAp">
+        <node concept="2OqwBi" id="5ElkanPns8e" role="3clFbG">
+          <node concept="10M0yZ" id="5ElkanPns8f" role="2Oq$k0">
+            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+          </node>
+          <node concept="liA8E" id="5ElkanPns8g" role="2OqNvi">
+            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+            <node concept="Xl_RD" id="5ElkanPns9I" role="37wK5m">
+              <property role="Xl_RC" value="maptype replace" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1ZobV4" id="1QYdL38_ZzA" role="3cqZAp">
         <node concept="mw_s8" id="1QYdL38_Z_2" role="1ZfhKB">
           <node concept="2OqwBi" id="1QYdL38_ZGv" role="mwGJk">
