@@ -14,6 +14,7 @@
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.diehltable.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -105,6 +106,9 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -946,8 +950,21 @@
             <node concept="2YIFZM" id="6iz$3rhwLtj" role="33vP2m">
               <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
               <ref role="37wK5l" to="k6nw:~ChartFactory.createXYStepChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean):org.jfree.chart.JFreeChart" resolve="createXYStepChart" />
-              <node concept="Xl_RD" id="6iz$3rhwLtP" role="37wK5m">
-                <property role="Xl_RC" value="Diehl Table Projection" />
+              <node concept="3cpWs3" id="6z_UbDCV6jk" role="37wK5m">
+                <node concept="Xl_RD" id="6z_UbDCV6ug" role="3uHU7w">
+                  <property role="Xl_RC" value="Projection" />
+                </node>
+                <node concept="3cpWs3" id="6z_UbDCV4Ke" role="3uHU7B">
+                  <node concept="2OqwBi" id="6z_UbDCURPn" role="3uHU7B">
+                    <node concept="2Sf5sV" id="6z_UbDCURAq" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="6z_UbDCUS9w" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="1Xhbcc" id="6z_UbDCV5c$" role="3uHU7w">
+                    <property role="1XhdNS" value="-" />
+                  </node>
+                </node>
               </node>
               <node concept="Xl_RD" id="6iz$3rhwL$g" role="37wK5m">
                 <property role="Xl_RC" value="Intervals" />
@@ -1081,8 +1098,11 @@
             <node concept="2ShNRf" id="6iz$3rhw6xB" role="37vLTx">
               <node concept="1pGfFk" id="6iz$3rhw6xA" role="2ShVmc">
                 <ref role="37wK5l" to="k6nw:~ChartFrame.&lt;init&gt;(java.lang.String,org.jfree.chart.JFreeChart)" resolve="ChartFrame" />
-                <node concept="Xl_RD" id="6iz$3rhw6ye" role="37wK5m">
-                  <property role="Xl_RC" value="Diehl Table Projection" />
+                <node concept="2OqwBi" id="6z_UbDCUEGS" role="37wK5m">
+                  <node concept="2Sf5sV" id="6z_UbDCUExB" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6z_UbDCUF4k" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="6iz$3rhwTuC" role="37wK5m">
                   <ref role="3cqZAo" node="6iz$3rhwL9o" resolve="chart" />

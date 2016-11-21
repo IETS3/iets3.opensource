@@ -32,6 +32,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
@@ -569,27 +570,18 @@
         </node>
         <node concept="3F0ifn" id="6svNLu5OIIB" role="3EZMnx">
           <property role="3F0ifm" value="From:" />
-          <node concept="VPXOz" id="6svNLu5OINc" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="VPM3Z" id="1alxXJlBQFR" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
         </node>
         <node concept="3F0A7n" id="6svNLu5OIIS" role="3EZMnx">
           <ref role="1NtTu8" to="fivt:3btORKMWQA4" resolve="From" />
-          <node concept="VPXOz" id="6svNLu5OIL3" role="3F10Kt">
+          <node concept="VPXOz" id="6svNLu5OIP$" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPxyj" id="5_EoEE501$X" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
         <node concept="3F0ifn" id="6svNLu5OINm" role="3EZMnx">
           <property role="3F0ifm" value="To:" />
-          <node concept="VPXOz" id="6svNLu5OIP$" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="VPM3Z" id="1alxXJlBQG6" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
         </node>
         <node concept="3F0ifn" id="7XsdeKHCn_K" role="3EZMnx">
           <property role="3F0ifm" value="&lt;" />
@@ -602,9 +594,6 @@
         </node>
         <node concept="3F0A7n" id="6svNLu5OIPK" role="3EZMnx">
           <ref role="1NtTu8" to="fivt:3btORKMWQA2" resolve="To" />
-          <node concept="VPXOz" id="6svNLu5OIS0" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="2iRfu4" id="6svNLu5OIIC" role="2iSdaV" />
       </node>
