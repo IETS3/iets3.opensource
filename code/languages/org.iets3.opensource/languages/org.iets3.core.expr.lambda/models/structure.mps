@@ -251,6 +251,9 @@
     <node concept="PrWs8" id="RIvadv1bFg" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
+    <node concept="PrWs8" id="5ElkanPXy9s" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
       <property role="TrG5h" value="ext" />
       <property role="IQ2nx" value="2861782275883660525" />
@@ -369,6 +372,9 @@
     </node>
     <node concept="PrWs8" id="KaZMgy4KPG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="PrWs8" id="5ElkanPXwPd" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
     <node concept="PrWs8" id="KaZMgykRO0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />

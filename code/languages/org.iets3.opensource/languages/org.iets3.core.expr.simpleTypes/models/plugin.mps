@@ -1576,29 +1576,29 @@
         </node>
       </node>
     </node>
-    <node concept="qq9P1" id="uGVYUik1Tx" role="qq9xR">
+    <node concept="qq9P1" id="6rdp$3yfMye" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
-      <node concept="qpFDx" id="uGVYUik1TA" role="3vbI0w">
+      <node concept="qpFDx" id="6rdp$3yfMyf" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" resolve="left" />
-        <node concept="rxStX" id="uGVYUik1TB" role="rajlz">
+        <node concept="rxStX" id="6rdp$3yfMyg" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
-      <node concept="qpFDx" id="uGVYUik1TC" role="3vbI0w">
+      <node concept="qpFDx" id="6rdp$3yfMyh" role="3vbI0w">
         <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" resolve="right" />
-        <node concept="rxStX" id="uGVYUik1TD" role="rajlz">
+        <node concept="rxStX" id="6rdp$3yfMyi" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
-      <node concept="3vetai" id="6QjJGtXld8h" role="3vQZUl">
-        <node concept="2OqwBi" id="5BKAaizE6N8" role="3vdyny">
-          <node concept="rqRoa" id="5BKAaizE6N9" role="2Oq$k0">
+      <node concept="3vetai" id="6rdp$3yfMyj" role="3vQZUl">
+        <node concept="2OqwBi" id="6rdp$3yfMyk" role="3vdyny">
+          <node concept="rqRoa" id="6rdp$3yfMyl" role="2Oq$k0">
             <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
           </node>
-          <node concept="liA8E" id="5BKAaizE6Na" role="2OqNvi">
+          <node concept="liA8E" id="6rdp$3yfMym" role="2OqNvi">
             <ref role="37wK5l" to="xlxw:~BigInteger.divide(java.math.BigInteger):java.math.BigInteger" resolve="divide" />
-            <node concept="rqRoa" id="5BKAaizE6Nb" role="37wK5m">
+            <node concept="rqRoa" id="6rdp$3yfMyn" role="37wK5m">
               <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
             </node>
           </node>
@@ -1614,9 +1614,13 @@
             <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
           </node>
           <node concept="liA8E" id="5BKAaizE7D2" role="2OqNvi">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal):java.math.BigDecimal" resolve="divide" />
+            <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,java.math.RoundingMode):java.math.BigDecimal" resolve="divide" />
             <node concept="rqRoa" id="5BKAaizE7D3" role="37wK5m">
               <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+            </node>
+            <node concept="Rm8GO" id="6rdp$3yg0b4" role="37wK5m">
+              <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+              <ref role="Rm8GQ" to="xlxw:~RoundingMode.UP" resolve="UP" />
             </node>
           </node>
         </node>

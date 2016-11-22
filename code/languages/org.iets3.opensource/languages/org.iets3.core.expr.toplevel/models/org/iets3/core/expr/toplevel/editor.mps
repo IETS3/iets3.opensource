@@ -1669,5 +1669,45 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5ElkanPQwno">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:5ElkanPQwmt" resolve="EnumIsTarget" />
+    <node concept="3EZMnI" id="5ElkanPQwnt" role="2wV5jI">
+      <node concept="l2Vlx" id="5ElkanPQwnu" role="2iSdaV" />
+      <node concept="3F0ifn" id="5ElkanPQwnq" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F0ifn" id="5ElkanPQwnA" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="5ElkanPQws1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5ElkanPQwuc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="5ElkanPTg6m" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:5ElkanPSLzu" resolve="literal" />
+        <node concept="1sVBvm" id="5ElkanPTg6o" role="1sWHZn">
+          <node concept="3F0A7n" id="5ElkanPTg6C" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="5ElkanPTg6L" role="3F10Kt">
+              <property role="Vbekb" value="BOLD_ITALIC" />
+            </node>
+            <node concept="VechU" id="5ElkanPTg6M" role="3F10Kt">
+              <property role="Vb096" value="darkGray" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ElkanPQwnI" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="5ElkanPQwpT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

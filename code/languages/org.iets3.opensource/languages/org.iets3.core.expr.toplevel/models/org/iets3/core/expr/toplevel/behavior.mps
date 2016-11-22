@@ -17,6 +17,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1108,6 +1109,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5ElkanPXvCw" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="namedNodesForComment" />
+      <ref role="13i0hy" to="pbu6:5ElkanPUl6T" resolve="namedNodesForComment" />
+      <node concept="3Tm1VV" id="5ElkanPXvCx" role="1B3o_S" />
+      <node concept="3clFbS" id="5ElkanPXvCF" role="3clF47">
+        <node concept="3clFbF" id="5ElkanPXvCL" role="3cqZAp">
+          <node concept="2OqwBi" id="5ElkanPXwdP" role="3clFbG">
+            <node concept="13iPFW" id="5ElkanPXvX3" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="5ElkanPXwB5" role="2OqNvi">
+              <ref role="3TtcxE" to="zzzn:49WTic8eSCZ" resolve="args" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5ElkanPXvCG" role="3clF45">
+        <node concept="3Tqbb2" id="5ElkanPXvCH" role="A3Ik2">
+          <ref role="ehGHo" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2S3ZC$oz3DU">
     <property role="3GE5qa" value="typedef" />
@@ -1853,6 +1876,50 @@
           <ref role="ehGHo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="5ElkanPXuuj" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="namedNodesForComment" />
+      <ref role="13i0hy" to="pbu6:5ElkanPUl6T" resolve="namedNodesForComment" />
+      <node concept="3Tm1VV" id="5ElkanPXuuk" role="1B3o_S" />
+      <node concept="3clFbS" id="5ElkanPXuuu" role="3clF47">
+        <node concept="3clFbF" id="5ElkanPXuu$" role="3cqZAp">
+          <node concept="2OqwBi" id="5ElkanPXuOR" role="3clFbG">
+            <node concept="13iPFW" id="5ElkanPXuBb" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="5ElkanPXvqs" role="2OqNvi">
+              <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5ElkanPXuuv" role="3clF45">
+        <node concept="3Tqbb2" id="5ElkanPXuuw" role="A3Ik2">
+          <ref role="ehGHo" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5ElkanPSLzW">
+    <property role="3GE5qa" value="enum" />
+    <ref role="13h7C2" to="yv47:5ElkanPQwmt" resolve="EnumIsTarget" />
+    <node concept="13hLZK" id="5ElkanPSLzX" role="13h7CW">
+      <node concept="3clFbS" id="5ElkanPSLzY" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5ElkanPSL$7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="5ElkanPSL$8" role="1B3o_S" />
+      <node concept="3clFbS" id="5ElkanPSL$b" role="3clF47">
+        <node concept="3clFbF" id="5ElkanPSL$q" role="3cqZAp">
+          <node concept="Xl_RD" id="5ElkanPSL$p" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5ElkanPSL$c" role="3clF45" />
     </node>
   </node>
 </model>

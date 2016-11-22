@@ -29,7 +29,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1464,6 +1464,35 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5ElkanQ9DBY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="namedNodesForComment" />
+      <ref role="13i0hy" to="pbu6:5ElkanQ81fv" resolve="namedNodesForComment" />
+      <node concept="3Tm1VV" id="5ElkanQ9DBZ" role="1B3o_S" />
+      <node concept="3clFbS" id="5ElkanQ9DCa" role="3clF47">
+        <node concept="3clFbF" id="5ElkanQ9DCg" role="3cqZAp">
+          <node concept="2OqwBi" id="5ElkanQ9HqN" role="3clFbG">
+            <node concept="2OqwBi" id="5ElkanQ9EXm" role="2Oq$k0">
+              <node concept="13iPFW" id="5ElkanQ9EIm" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5ElkanQ9FiR" role="2OqNvi">
+                <ref role="3TtcxE" to="av4b:ub9nkyK62i" resolve="contents" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="5ElkanQ9L5M" role="2OqNvi">
+              <node concept="chp4Y" id="5ElkanQ9Lhi" role="v3oSu">
+                <ref role="cht4Q" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5ElkanQ9DCb" role="3clF45">
+        <node concept="3Tqbb2" id="5ElkanQ9DCc" role="A3Ik2">
+          <ref role="ehGHo" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
         </node>
       </node>
     </node>
