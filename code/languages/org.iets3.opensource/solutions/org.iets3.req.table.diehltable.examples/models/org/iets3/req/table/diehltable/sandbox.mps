@@ -68,7 +68,7 @@
         <property role="0bFC1" value="73" />
       </node>
       <node concept="3yOfJE" id="q3iBHpQux6" role="3yOfCn">
-        <property role="3yOfbB" value="79.00" />
+        <property role="3yOfbB" value="80.25" />
       </node>
     </node>
     <node concept="3yOg1P" id="3btORKMXvbj" role="3yNpS6">
@@ -78,7 +78,7 @@
       </node>
       <node concept="3yOhvy" id="3btORKMXvbl" role="3yOfZL">
         <property role="0bFC3" value="73" />
-        <property role="0bFC1" value="71" />
+        <property role="0bFC1" value="72" />
       </node>
       <node concept="3yOfJE" id="3btORKMXvbm" role="3yOfCn">
         <property role="3yOfbB" value="75.00" />
@@ -90,7 +90,7 @@
         <property role="0bFFY" value="76" />
       </node>
       <node concept="3yOhvy" id="3btORKMXvbx" role="3yOfZL">
-        <property role="0bFC3" value="71" />
+        <property role="0bFC3" value="72" />
         <property role="0bFC1" value="69" />
       </node>
       <node concept="3yOfJE" id="3btORKMXvby" role="3yOfCn">
