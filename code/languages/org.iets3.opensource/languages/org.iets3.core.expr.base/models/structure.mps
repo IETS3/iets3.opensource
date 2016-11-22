@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -67,9 +68,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3npF9QWRJdc" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
-    <node concept="PrWs8" id="sflsE7bRNl" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
@@ -1159,6 +1157,35 @@
   <node concept="PlHQZ" id="ucawTXUZmJ">
     <property role="EcuMT" value="543855896735511983" />
     <property role="TrG5h" value="IDeclarativelyInterpretable" />
+  </node>
+  <node concept="PlHQZ" id="5ElkanPUl6g">
+    <property role="EcuMT" value="6527211908668936592" />
+    <property role="TrG5h" value="IDocumentableWordProvider" />
+    <property role="3GE5qa" value="docs" />
+    <node concept="PrWs8" id="5ElkanPUl6h" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ElkanPUl_S">
+    <property role="EcuMT" value="6527211908668938616" />
+    <property role="3GE5qa" value="docs" />
+    <property role="TrG5h" value="DocWordRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5ElkanPUl_V" role="1TKVEi">
+      <property role="IQ2ns" value="6527211908668938619" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5ElkanPUl_T" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5ElkanQ81eS">
+    <property role="EcuMT" value="6527211908672525240" />
+    <property role="3GE5qa" value="docs" />
+    <property role="TrG5h" value="IDocumentableWordContainer" />
   </node>
 </model>
 

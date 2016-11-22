@@ -10,8 +10,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -78,6 +78,9 @@
     <node concept="PrWs8" id="2uR5X5ayM8b" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="5ElkanPXvCr" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -106,8 +109,8 @@
   <node concept="PlHQZ" id="2uR5X5ayM7T">
     <property role="TrG5h" value="IToplevelExprContent" />
     <property role="EcuMT" value="2861782275883475449" />
-    <node concept="PrWs8" id="2uR5X5ayM8K" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="5ElkanQbmeu" role="PrDN$">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="6iqfHNBPkz0" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
@@ -252,7 +255,7 @@
       <ref role="20lvS9" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
     <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2eTZF">
@@ -549,6 +552,9 @@
     <node concept="PrWs8" id="6NHlpK$oaDx" role="PrDN$">
       <ref role="PrY4T" node="6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
     </node>
+    <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
@@ -571,6 +577,23 @@
     <property role="EcuMT" value="7849023854690216373" />
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="IRecordMemberScopeProvider" />
+  </node>
+  <node concept="1TIwiD" id="5ElkanPQwmt">
+    <property role="EcuMT" value="6527211908667934109" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumIsTarget" />
+    <property role="34LRSv" value="is" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5ElkanPQwmu" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="5ElkanPSLzu" role="1TKVEi">
+      <property role="IQ2ns" value="6527211908668528862" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
   </node>
 </model>
 
