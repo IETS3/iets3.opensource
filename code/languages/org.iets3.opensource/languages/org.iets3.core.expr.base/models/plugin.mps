@@ -17,7 +17,6 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="wps3" ref="f:diff_old#r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin@old)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -410,8 +409,8 @@
       <node concept="3vetai" id="78hTg1$9H52" role="3vQZUl">
         <node concept="3EllGN" id="2S3ZC$oMTTA" role="3vdyny">
           <node concept="10M0yZ" id="2S3ZC$oMTTB" role="3ElVtu">
-            <ref role="1PxDUh" to="wps3:2S3ZC$oIIqz" resolve="MarkerNodes" />
-            <ref role="3cqZAo" to="wps3:2S3ZC$oII$G" resolve="TYPECONSTRAINT" />
+            <ref role="1PxDUh" node="2S3ZC$oIIqz" resolve="MarkerNodes" />
+            <ref role="3cqZAo" node="2S3ZC$oII$G" resolve="TYPECONSTRAINT" />
           </node>
           <node concept="TvHiN" id="2S3ZC$oMTTC" role="3ElQJh" />
         </node>

@@ -21,7 +21,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="dxke" ref="f:diff_old#r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior@old)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1091,7 +1090,7 @@
               <node concept="2OqwBi" id="3p6$WoEyBii" role="3K4Cdx">
                 <node concept="13iPFW" id="3p6$WoEyBaC" role="2Oq$k0" />
                 <node concept="2qgKlT" id="3p6$WoEyBtb" role="2OqNvi">
-                  <ref role="37wK5l" to="dxke:3p6$WoEh1ch" resolve="isInt" />
+                  <ref role="37wK5l" node="3p6$WoEh1ch" resolve="isInt" />
                 </node>
               </node>
             </node>
