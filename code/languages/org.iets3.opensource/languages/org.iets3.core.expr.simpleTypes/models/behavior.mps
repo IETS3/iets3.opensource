@@ -21,6 +21,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="dxke" ref="f:diff_old#r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior@old)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1076,9 +1077,6 @@
         <node concept="3cpWs8" id="3p6$WoEyAVV" role="3cqZAp">
           <node concept="3cpWsn" id="3p6$WoEyAVY" role="3cpWs9">
             <property role="TrG5h" value="tt" />
-            <node concept="3Tqbb2" id="3p6$WoEyAVT" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-            </node>
             <node concept="3K4zz7" id="3p6$WoEyBMV" role="33vP2m">
               <node concept="2pJPEk" id="3p6$WoEyBS6" role="3K4E3e">
                 <node concept="2pJPED" id="3p6$WoEyBWX" role="2pJPEn">
@@ -1093,9 +1091,12 @@
               <node concept="2OqwBi" id="3p6$WoEyBii" role="3K4Cdx">
                 <node concept="13iPFW" id="3p6$WoEyBaC" role="2Oq$k0" />
                 <node concept="2qgKlT" id="3p6$WoEyBtb" role="2OqNvi">
-                  <ref role="37wK5l" node="3p6$WoEh1ch" resolve="isInt" />
+                  <ref role="37wK5l" to="dxke:3p6$WoEh1ch" resolve="isInt" />
                 </node>
               </node>
+            </node>
+            <node concept="3Tqbb2" id="3p6$WoEyAVT" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
             </node>
           </node>
         </node>
@@ -1177,9 +1178,6 @@
                         <ref role="3cqZAo" node="78hTg1$PdOj" resolve="lower" />
                       </node>
                       <node concept="3cpWs3" id="78hTg1$PhM4" role="37wK5m">
-                        <node concept="Xl_RD" id="78hTg1$PhM7" role="3uHU7w">
-                          <property role="Xl_RC" value=")" />
-                        </node>
                         <node concept="3cpWs3" id="78hTg1$PfTv" role="3uHU7B">
                           <node concept="Xl_RD" id="78hTg1$Pfj0" role="3uHU7B">
                             <property role="Xl_RC" value="value is below minimum (" />
@@ -1190,6 +1188,9 @@
                               <ref role="37wK5l" node="19PglA20zCc" resolve="lowerBound" />
                             </node>
                           </node>
+                        </node>
+                        <node concept="Xl_RD" id="78hTg1$PhM7" role="3uHU7w">
+                          <property role="Xl_RC" value=")" />
                         </node>
                       </node>
                     </node>
