@@ -3648,8 +3648,8 @@
     <node concept="1qefOq" id="KaZMgy69ho" role="1SKRRt">
       <node concept="_iOnU" id="KaZMgy69hp" role="1qenE9">
         <property role="TrG5h" value="contracts" />
-        <property role="1XBH2A" value="true" />
         <property role="2SXJ1i" value="true" />
+        <property role="1XBH2A" value="true" />
         <node concept="_ixoA" id="1EIbarK4a3f" role="_iOnB" />
         <node concept="1WbbD7" id="1EIbarK3KGI" role="_iOnB">
           <property role="TrG5h" value="BiggerThanTen" />
@@ -3732,7 +3732,7 @@
               </node>
             </node>
             <node concept="30bdrP" id="1IomA9vkp0z" role="_fkuS">
-              <property role="30bdrQ" value="constraint violated for type BiggerThanTen: it &gt; 10" />
+              <property role="30bdrQ" value="constraint violated for type BiggerThanTen: it &gt; 10 for 1 &lt;java.math.BigInteger&gt;" />
             </node>
           </node>
           <node concept="3dYjL0" id="1IomA9vh0SH" role="_fkp5" />
