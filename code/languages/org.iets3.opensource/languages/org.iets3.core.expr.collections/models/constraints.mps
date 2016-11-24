@@ -129,6 +129,10 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
+        <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
+        <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -814,6 +818,34 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3tudP_AYNVb">
+    <ref role="1M2myG" to="700h:3tudP_AOMNf" resolve="UpToTarget" />
+    <node concept="nKS2y" id="3tudP_AYNVr" role="1MLUbF">
+      <node concept="3clFbS" id="3tudP_AYNVs" role="2VODD2">
+        <node concept="3clFbF" id="3tudP_AYW8x" role="3cqZAp">
+          <node concept="3JuTUA" id="3tudP_AYW8r" role="3clFbG">
+            <node concept="2OqwBi" id="3tudP_AYPN6" role="3JuY14">
+              <node concept="2OqwBi" id="3tudP_AYP1G" role="2Oq$k0">
+                <node concept="1PxgMI" id="3tudP_AYO$t" role="2Oq$k0">
+                  <ref role="1m5ApE" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  <node concept="nLn13" id="3tudP_AYO2$" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="3tudP_AYPlP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="3tudP_AYQ5Z" role="2OqNvi" />
+            </node>
+            <node concept="2YIFZM" id="3tudP_AYWPz" role="3JuZjQ">
+              <ref role="37wK5l" to="oq0c:2Qbt$1tTQcM" resolve="createIntegerType" />
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="10Nm6u" id="3tudP_AYWP$" role="37wK5m" />
             </node>
           </node>
         </node>
