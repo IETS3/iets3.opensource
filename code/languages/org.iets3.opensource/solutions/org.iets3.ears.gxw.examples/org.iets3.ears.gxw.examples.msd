@@ -33,6 +33,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
     <language slang="l:7731a166-da1f-472e-a40a-2283f5e47dc5:org.iets3.ears.gxw" version="0" />
+    <language slang="l:33eb1b5b-ad96-4262-9112-684c487e01e0:org.iets3.graphicalLustre" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
