@@ -14845,12 +14845,12 @@
               <ref role="_emDf" node="7Wa2sv469ad" resolve="d6" />
             </node>
           </node>
-          <node concept="mLuIC" id="7Wa2sv46BLl" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46BLm" role="2gteSx">
-              <property role="2gteSQ" value="-1.0000000000" />
+          <node concept="mLuIC" id="3tudP__oKJB" role="2zM23F">
+            <node concept="2gteSW" id="3tudP__oKJC" role="2gteSx">
+              <property role="2gteSQ" value="-∞" />
               <property role="2gteSD" value="∞" />
             </node>
-            <node concept="2gteS_" id="7Wa2sv46BLn" role="2gteVg">
+            <node concept="2gteS_" id="3tudP__oKJD" role="2gteVg">
               <property role="2gteVv" value="inf" />
             </node>
           </node>
