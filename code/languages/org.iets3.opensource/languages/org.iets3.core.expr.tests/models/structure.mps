@@ -150,23 +150,8 @@
     <node concept="PrWs8" id="ub9nkyK62g" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
-    <node concept="PrWs8" id="ub9nkyO0EC" role="PzmwI">
-      <ref role="PrY4T" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="ub9nkyO0EK" role="PzmwI">
-      <ref role="PrY4T" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
-    </node>
     <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
-    </node>
-    <node concept="PrWs8" id="6HHp2WmWZ9L" role="PzmwI">
-      <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="6HHp2WngtW9" role="PzmwI">
-      <ref role="PrY4T" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="67Y8mp$Ixfy" role="PzmwI">
-      <ref role="PrY4T" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
     </node>
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
@@ -176,6 +161,9 @@
     </node>
     <node concept="PrWs8" id="5ElkanQ9DBL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanQ81eS" resolve="IDocumentableWordContainer" />
+    </node>
+    <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
