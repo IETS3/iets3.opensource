@@ -27,7 +27,6 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:f0fd486f-8577-43e9-b671-3d118449c6e7:org.iets3.components.core" version="6" />
-    <language slang="l:583939be-ded0-4735-a055-a74f8477fc34:org.iets3.core.attributes" version="0" />
     <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
     <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.test" version="0" />
   </languageVersions>
