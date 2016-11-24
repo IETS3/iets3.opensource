@@ -1149,6 +1149,30 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="14DmiwroqhL" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.base.plugin" />
+        <property role="3LESm3" value="3443cd43-f1ae-443d-a2c6-6e66ad76e934" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="14DmiwroqhM" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.core" />
+          <node concept="2Ry0Ak" id="14DmiwroqhN" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="14DmiwroqhO" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.base.plugin" />
+              <node concept="2Ry0Ak" id="14DmiwroqWZ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base.plugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="14DmiwroqhQ" role="3bR37C">
+          <node concept="3bR9La" id="14DmiwroqhR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="5wLtKNeSRPz" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.users" />
