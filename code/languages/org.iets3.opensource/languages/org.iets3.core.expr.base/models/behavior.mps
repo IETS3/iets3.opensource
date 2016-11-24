@@ -1760,7 +1760,7 @@
       <node concept="3clFbS" id="1k3knzd4P73" role="3clF47">
         <node concept="3clFbF" id="1k3knzd4P7a" role="3cqZAp">
           <node concept="3cmrfG" id="1k3knzd4P79" role="3clFbG">
-            <property role="3cmrfH" value="600" />
+            <property role="3cmrfH" value="500" />
           </node>
         </node>
       </node>
@@ -3570,7 +3570,7 @@
       <node concept="3clFbS" id="7kYh9Wsvdvq" role="3clF47">
         <node concept="3clFbF" id="7kYh9Wsvdvr" role="3cqZAp">
           <node concept="3cmrfG" id="7kYh9Wsvdvs" role="3clFbG">
-            <property role="3cmrfH" value="600" />
+            <property role="3cmrfH" value="500" />
           </node>
         </node>
       </node>
