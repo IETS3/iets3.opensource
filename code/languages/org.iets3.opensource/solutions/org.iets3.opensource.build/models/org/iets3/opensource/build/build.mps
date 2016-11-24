@@ -5,7 +5,7 @@
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -1110,6 +1110,30 @@
           <node concept="3bR9La" id="ub9nkyRn9Y" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="14DmiwroqhL" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.base.plugin" />
+        <property role="3LESm3" value="3443cd43-f1ae-443d-a2c6-6e66ad76e934" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="14DmiwroqhM" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.core" />
+          <node concept="2Ry0Ak" id="14DmiwroqhN" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="14DmiwroqhO" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.base.plugin" />
+              <node concept="2Ry0Ak" id="14DmiwroqWZ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.base.plugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="14DmiwroqhQ" role="3bR37C">
+          <node concept="3bR9La" id="14DmiwroqhR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
