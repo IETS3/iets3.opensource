@@ -105,6 +105,7 @@
     <property role="TrG5h" value="IFunctionScopeProvider" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="2861782275883406867" />
+    <node concept="asaX9" id="28GlH0_o4Tf" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="2uR5X5ayM7T">
     <property role="TrG5h" value="IToplevelExprContent" />
@@ -172,6 +173,7 @@
     <property role="TrG5h" value="IConstantScopeProvider" />
     <property role="3GE5qa" value="constant" />
     <property role="EcuMT" value="7089558164907769200" />
+    <node concept="asaX9" id="28GlH0_o4Tb" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="ub9nkyG$WT">
     <property role="3GE5qa" value="constant" />
@@ -262,6 +264,7 @@
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="IRecordScopeProvider" />
     <property role="EcuMT" value="8811147530084261867" />
+    <node concept="asaX9" id="28GlH0_o4Th" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7D7uZV2iYAC">
     <property role="3GE5qa" value="record" />
@@ -329,11 +332,15 @@
     <node concept="PrWs8" id="6NHlpK$p_fF" role="PzmwI">
       <ref role="PrY4T" node="6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
     </node>
+    <node concept="PrWs8" id="28GlH0_EVlo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
     <property role="3GE5qa" value="typedef" />
     <property role="TrG5h" value="ITypedefScopeProvider" />
     <property role="EcuMT" value="7740953487936183984" />
+    <node concept="asaX9" id="28GlH0_o4T9" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6HHp2WngtVm">
     <property role="3GE5qa" value="typedef" />
@@ -488,6 +495,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="IEnumScopeProvider" />
     <property role="EcuMT" value="7061117989422575939" />
+    <node concept="asaX9" id="28GlH0_o4Td" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="67Y8mp$DNr5">
     <property role="3GE5qa" value="enum" />
@@ -552,6 +560,9 @@
     <node concept="PrWs8" id="6NHlpK$oaDx" role="PrDN$">
       <ref role="PrY4T" node="6NHlpK$oaAP" resolve="IRecordMemberScopeProvider" />
     </node>
+    <node concept="PrWs8" id="28GlH0_ERSs" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
     <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
@@ -577,6 +588,7 @@
     <property role="EcuMT" value="7849023854690216373" />
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="IRecordMemberScopeProvider" />
+    <node concept="asaX9" id="28GlH0_CLlT" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="5ElkanPQwmt">
     <property role="EcuMT" value="6527211908667934109" />
