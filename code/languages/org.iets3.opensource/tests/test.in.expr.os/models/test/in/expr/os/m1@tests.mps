@@ -14136,6 +14136,49 @@
       <node concept="_iOnU" id="6rdp$3y_pap" role="1qenE9">
         <property role="TrG5h" value="numbers" />
         <property role="1XBH2A" value="true" />
+        <node concept="2zPypq" id="3tudP__pR0c" role="_iOnB">
+          <property role="TrG5h" value="negInf" />
+          <node concept="30dvO6" id="3tudP__pR90" role="2zPyp_">
+            <node concept="30cIq6" id="3tudP__pR91" role="30dEsF">
+              <node concept="30bXRB" id="3tudP__pR92" role="30czhm">
+                <property role="30bXRw" value="10" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="3tudP__pR9S" role="30dEs_">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="mLuIC" id="3tudP__pSga" role="2zM23F">
+            <node concept="2gteSW" id="3tudP__pSgb" role="2gteSx">
+              <property role="2gteSQ" value="-∞" />
+              <property role="2gteSD" value="∞" />
+            </node>
+            <node concept="2gteS_" id="3tudP__pSgc" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="3tudP__pSin" role="_iOnB">
+          <property role="TrG5h" value="whatHappens" />
+          <node concept="30dvO6" id="3tudP__pSqy" role="2zPyp_">
+            <node concept="_emDc" id="3tudP__pSt5" role="30dEs_">
+              <ref role="_emDf" node="3tudP__pR0c" resolve="negInf" />
+            </node>
+            <node concept="_emDc" id="3tudP__pSq4" role="30dEsF">
+              <ref role="_emDf" node="3tudP__pR0c" resolve="negInf" />
+            </node>
+          </node>
+          <node concept="mLuIC" id="3tudP__pUQZ" role="2zM23F">
+            <node concept="2gteSW" id="3tudP__pUR0" role="2gteSx">
+              <property role="2gteSQ" value="-∞" />
+              <property role="2gteSD" value="∞" />
+            </node>
+            <node concept="2gteS_" id="3tudP__pUR1" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="3tudP__pQEm" role="_iOnB" />
         <node concept="2zPypq" id="7Wa2sv44gWb" role="_iOnB">
           <property role="TrG5h" value="a1" />
           <node concept="30dDZf" id="7Wa2sv44tPt" role="2zPyp_">
