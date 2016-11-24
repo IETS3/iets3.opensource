@@ -465,5 +465,30 @@
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5IKJrJHPvF0">
+    <property role="EcuMT" value="6606989268199275200" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="ModelsCoverageAssQuery" />
+    <property role="34LRSv" value="models test coverage" />
+    <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+  </node>
+  <node concept="1TIwiD" id="5IKJrJHP_6l">
+    <property role="EcuMT" value="6606989268199297429" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="ModelsCoverageAssResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyj" id="hJB5MUc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="coveredNode" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1219352800908" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="5IKJrJHP_6n" role="1TKVEl">
+      <property role="IQ2nx" value="6606989268199297431" />
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

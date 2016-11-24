@@ -32,6 +32,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -10251,6 +10252,21 @@
       </node>
       <node concept="3Tm6S6" id="3_DFadNdBcY" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="5IKJrJHNQ74" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="visitedNodes" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="5IKJrJHNNfW" role="1B3o_S" />
+      <node concept="2hMVRd" id="5IKJrJHNPYn" role="1tU5fm">
+        <node concept="3Tqbb2" id="5IKJrJHNQ70" role="2hN53Y" />
+      </node>
+      <node concept="2ShNRf" id="5IKJrJHNT6P" role="33vP2m">
+        <node concept="2i4dXS" id="5IKJrJHNXN5" role="2ShVmc">
+          <node concept="3Tqbb2" id="5IKJrJHNYhi" role="HW$YZ" />
+        </node>
+      </node>
+    </node>
     <node concept="Wx3nA" id="RaqQlV8KdE" role="jymVt">
       <property role="TrG5h" value="statistics" />
       <node concept="3Tm6S6" id="RaqQlV8KdG" role="1B3o_S" />
@@ -10584,6 +10600,14 @@
           <node concept="2YIFZM" id="RaqQlV9pZH" role="3clFbG">
             <ref role="1Pybhc" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
             <ref role="37wK5l" node="RaqQlV9pZE" resolve="setupValueStatistics" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5IKJrJHNYBd" role="3cqZAp">
+          <node concept="2OqwBi" id="5IKJrJHNZmV" role="3clFbG">
+            <node concept="37vLTw" id="5IKJrJHNYBb" role="2Oq$k0">
+              <ref role="3cqZAo" node="5IKJrJHNQ74" resolve="visitedNodes" />
+            </node>
+            <node concept="2EZike" id="5IKJrJHO0v0" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -11654,6 +11678,24 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5IKJrJHQ8Ub" role="jymVt" />
+    <node concept="2YIFZL" id="5IKJrJHQgmN" role="jymVt">
+      <property role="TrG5h" value="allCoveredNodes" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5IKJrJHQgmQ" role="3clF47">
+        <node concept="3clFbF" id="5IKJrJHQj2c" role="3cqZAp">
+          <node concept="37vLTw" id="5IKJrJHQj2b" role="3clFbG">
+            <ref role="3cqZAo" node="5IKJrJHNQ74" resolve="visitedNodes" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5IKJrJHQdFW" role="1B3o_S" />
+      <node concept="A3Dl8" id="5IKJrJHQge9" role="3clF45">
+        <node concept="3Tqbb2" id="5IKJrJHQgmK" role="A3Ik2" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="4_qY3E690tR" role="jymVt" />
     <node concept="2tJIrI" id="4_qY3E5IY1h" role="jymVt" />
     <node concept="2YIFZL" id="4_qY3E63$MP" role="jymVt">
@@ -11930,6 +11972,32 @@
             </node>
             <node concept="37vLTw" id="RaqQlVOM88" role="2ZW6bz">
               <ref role="3cqZAo" node="RaqQlV4uB8" resolve="evaluatedValue" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5IKJrJHO6Wk" role="3cqZAp">
+          <node concept="3clFbS" id="5IKJrJHO6Wm" role="3clFbx">
+            <node concept="3clFbF" id="5IKJrJHO0RE" role="3cqZAp">
+              <node concept="2OqwBi" id="5IKJrJHO3TI" role="3clFbG">
+                <node concept="37vLTw" id="5IKJrJHO0RC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5IKJrJHNQ74" resolve="visitedNodes" />
+                </node>
+                <node concept="TSZUe" id="5IKJrJHO4_s" role="2OqNvi">
+                  <node concept="37vLTw" id="5IKJrJHO6gL" role="25WWJ7">
+                    <ref role="3cqZAo" node="RaqQlV4uB6" resolve="interpretedNode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5IKJrJHO7yT" role="3clFbw">
+            <node concept="37vLTw" id="5IKJrJHO7bZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="RaqQlV4uB6" resolve="interpretedNode" />
+            </node>
+            <node concept="1mIQ4w" id="5IKJrJHO7WP" role="2OqNvi">
+              <node concept="chp4Y" id="5IKJrJHPrFF" role="cj9EA">
+                <ref role="cht4Q" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+              </node>
             </node>
           </node>
         </node>
