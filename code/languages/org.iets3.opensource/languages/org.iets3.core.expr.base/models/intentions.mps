@@ -13,7 +13,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -70,9 +69,6 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -437,20 +433,6 @@
     </node>
     <node concept="2Sbjvc" id="69zaTr1ELcO" role="2ZfgGD">
       <node concept="3clFbS" id="69zaTr1ELcP" role="2VODD2">
-        <node concept="3clFbF" id="TuTPrw72TK" role="3cqZAp">
-          <node concept="2OqwBi" id="TuTPrw72TH" role="3clFbG">
-            <node concept="10M0yZ" id="TuTPrw72TI" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="TuTPrw72TJ" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(int):void" resolve="println" />
-              <node concept="3cmrfG" id="TuTPrw737p" role="37wK5m">
-                <property role="3cmrfH" value="1" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="TuTPrvSWkq" role="3cqZAp">
           <node concept="3cpWsn" id="TuTPrvSWkr" role="3cpWs9">
             <property role="TrG5h" value="tt" />

@@ -16,8 +16,6 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -29,7 +27,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -51,9 +48,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -192,7 +186,6 @@
       </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
-        <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
@@ -209,7 +202,6 @@
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
-      <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -1886,62 +1878,10 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbF" id="5ElkanPn09L" role="3cqZAp">
-        <node concept="2OqwBi" id="5ElkanPn09I" role="3clFbG">
-          <node concept="10M0yZ" id="5ElkanPn09J" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-          </node>
-          <node concept="liA8E" id="5ElkanPn09K" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-            <node concept="Xl_RD" id="5ElkanPn0aW" role="37wK5m">
-              <property role="Xl_RC" value="JJJJJJJ" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1YaCAy" id="5ElkanPmGR5" role="1YuTPh">
       <property role="TrG5h" value="t1" />
       <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="1xSnZT" id="5ElkanPnDqM" role="1xSnZW">
-      <node concept="3clFbS" id="5ElkanPnDqN" role="2VODD2">
-        <node concept="3clFbF" id="5ElkanPnDyA" role="3cqZAp">
-          <node concept="2OqwBi" id="5ElkanPnDyz" role="3clFbG">
-            <node concept="10M0yZ" id="5ElkanPnDy$" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="5ElkanPnDy_" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="5ElkanPnH8M" role="37wK5m">
-                <node concept="1YBJjd" id="5ElkanPnHMI" role="3uHU7w">
-                  <ref role="1YBMHb" node="5ElkanPmGRv" resolve="typedefType" />
-                </node>
-                <node concept="3cpWs3" id="5ElkanPnERm" role="3uHU7B">
-                  <node concept="3cpWs3" id="5ElkanPnEqi" role="3uHU7B">
-                    <node concept="Xl_RD" id="5ElkanPnDGD" role="3uHU7B">
-                      <property role="Xl_RC" value="t1: " />
-                    </node>
-                    <node concept="1YBJjd" id="5ElkanPnE$i" role="3uHU7w">
-                      <ref role="1YBMHb" node="5ElkanPmGR5" resolve="t1" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="5ElkanPnFuW" role="3uHU7w">
-                    <property role="Xl_RC" value=" -- t2: " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5ElkanPnIfw" role="3cqZAp">
-          <node concept="3clFbT" id="5ElkanPnIfv" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3hdX5o" id="5ElkanPEtnP">
