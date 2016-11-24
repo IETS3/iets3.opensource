@@ -2,19 +2,7 @@
 if (project.hasProperty('projectVersion')) {
     version project.projectVersion
 } else {
-    def gitBranchCmd
-    if (System.getProperty('os.name').toLowerCase().contains('windows')) {
-        gitBranchCmd = 'cmd /c git rev-parse --abbrev-ref HEAD'
-    } else {
-        gitBranchCmd = 'git rev-parse --abbrev-ref HEAD'
-    }
-    def gitBranch = gitBranchCmd.execute().in.text.trim().toString().replace("/","-")
-
-    if (gitBranch == null || gitBranch.empty) {
-        gitBranch = 'HEAD'
-    }
-
-    version "0.1-$gitBranch-SNAPSHOT"
+    version GitBasedVersioning.getVersion('0', '1')
 }
 
 // Dependency versions

@@ -5,7 +5,7 @@
 .DS_Store
 .metadata
 .svn
-/build
+build/
 /artifacts/
 /tmp/
 
@@ -54,4 +54,4 @@ code/languages/org.iets3.core/build/tmp
 # -----------------------------------------------------------
 # GRADLE
 # -----------------------------------------------------------
-/.gradle/
+.gradle/

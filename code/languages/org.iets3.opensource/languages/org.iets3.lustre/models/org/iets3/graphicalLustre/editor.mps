@@ -2,8 +2,8 @@
 <model ref="r:a82d7c22-9a9e-4712-85d4-586b4cea279b(org.iets3.graphicalLustre.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -32,7 +32,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
@@ -40,20 +40,20 @@
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
         <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -103,7 +103,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -827,19 +827,6 @@
       <node concept="l2Vlx" id="5Uka0RZLmz1" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="5XfJimeU5qv">
-    <ref role="1XX52x" to="lqc6:5XfJimeU4Ox" resolve="GateDefinition" />
-    <node concept="3EZMnI" id="3jkxIM0ixU7" role="2wV5jI">
-      <node concept="2iRkQZ" id="3jkxIM0ixU8" role="2iSdaV" />
-      <node concept="3F0A7n" id="3jkxIM0ixU9" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0A7n" id="3jkxIM0ixUo" role="3EZMnx">
-        <ref role="1NtTu8" to="lqc6:5XfJimeU4Oy" resolve="definition" />
-      </node>
-      <node concept="3F0ifn" id="3jkxIM0ixUd" role="3EZMnx" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5XfJimeU5rj">
     <ref role="1XX52x" to="lqc6:5XfJimeU4Ou" resolve="GateDescriptors" />
     <node concept="3EZMnI" id="5QnDqxDaSpP" role="2wV5jI">
@@ -853,6 +840,19 @@
         <node concept="2iRkQZ" id="5QnDqxDaUGd" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="5XfJimeUt2a" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5XfJimeU5qv">
+    <ref role="1XX52x" to="lqc6:5XfJimeU4Ox" resolve="GateDefinition" />
+    <node concept="3EZMnI" id="3jkxIM0ixU7" role="2wV5jI">
+      <node concept="2iRkQZ" id="3jkxIM0ixU8" role="2iSdaV" />
+      <node concept="3F0A7n" id="3jkxIM0ixU9" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="3jkxIM0ixUo" role="3EZMnx">
+        <ref role="1NtTu8" to="lqc6:5XfJimeU4Oy" resolve="definition" />
+      </node>
+      <node concept="3F0ifn" id="3jkxIM0ixUd" role="3EZMnx" />
     </node>
   </node>
 </model>

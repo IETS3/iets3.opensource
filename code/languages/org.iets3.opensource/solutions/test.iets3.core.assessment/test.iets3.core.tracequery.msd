@@ -15,36 +15,19 @@
     <dependency reexport="false">f47b95d4-5e73-4c04-9204-18076950153b(com.mbeddr.mpsutil.compare)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</dependency>
+    <dependency reexport="false">f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)</dependency>
+    <dependency reexport="false">5a43a71e-7911-4d60-bb76-e1dd9dfa5b77(org.iets3.functiontree)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="3" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
-    <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
-    <language slang="l:f47b95d4-5e73-4c04-9204-18076950153b:com.mbeddr.mpsutil.compare" version="0" />
-    <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
-    <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />
-    <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
-    <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
-    <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
-    <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
-    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="3" />
-    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-    <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
     <language slang="l:f0fd486f-8577-43e9-b671-3d118449c6e7:org.iets3.components.core" version="6" />
-    <language slang="l:be5191a9-3476-47ca-b2a7-a426623add55:org.iets3.core.assessment" version="0" />
     <language slang="l:583939be-ded0-4735-a055-a74f8477fc34:org.iets3.core.attributes" version="0" />
-    <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
-    <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="0" />
-    <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
     <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
     <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.test" version="0" />
   </languageVersions>
@@ -67,6 +50,7 @@
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)" version="0" />
     <module reference="f47b95d4-5e73-4c04-9204-18076950153b(com.mbeddr.mpsutil.compare)" version="0" />
+    <module reference="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" version="0" />
@@ -90,9 +74,14 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="2" />
     <module reference="be5191a9-3476-47ca-b2a7-a426623add55(org.iets3.core.assessment)" version="0" />
     <module reference="583939be-ded0-4735-a055-a74f8477fc34(org.iets3.core.attributes)" version="0" />
+    <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
+    <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+    <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" version="0" />
+    <module reference="5a43a71e-7911-4d60-bb76-e1dd9dfa5b77(org.iets3.functiontree)" version="0" />
     <module reference="785e2843-aa64-4743-afec-47634f9d78a4(test.iets3.core.tracequery)" version="0" />
   </dependencyVersions>
 </solution>

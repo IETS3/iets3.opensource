@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ci3w" ref="r:55d9f540-8864-4fa2-9847-b98db71180c3(org.iets3.core.trace.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -77,13 +78,13 @@
       <property role="IQ2ns" value="6913547888673496440" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="from" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="1TJgyj" id="5ZLQMNq2hQ4" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673496452" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="to" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="1TJgyj" id="5ZLQMNq2hPN" role="1TKVEi">
       <property role="IQ2ns" value="6913547888673496435" />
