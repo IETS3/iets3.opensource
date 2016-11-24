@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -70,7 +69,7 @@
       <property role="IQ2ns" value="3989687176989764921" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sizeConstraint" />
-      <ref role="20lvS9" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
+      <ref role="20lvS9" node="19PglA20qX_" resolve="CollectionSizeSpec" />
     </node>
     <node concept="1TJgyj" id="6zmBjqUily6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -623,6 +622,22 @@
       <property role="20kJfa" value="typeConstraint2" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19PglA20qX_">
+    <property role="EcuMT" value="1330041117646892901" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="CollectionSizeSpec" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="19PglA20qXJ" role="1TKVEl">
+      <property role="IQ2nx" value="1330041117646892911" />
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="19PglA20qXK" role="1TKVEl">
+      <property role="IQ2nx" value="1330041117646892912" />
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

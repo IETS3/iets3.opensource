@@ -547,12 +547,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="49WTic8jAsZ" role="3bR37C">
-          <node concept="3bR9La" id="49WTic8jAt0" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="49WTic8jB9c" role="3bR37C">
           <node concept="3bR9La" id="49WTic8jB9d" role="1SiIV1">
             <property role="3bR36h" value="false" />

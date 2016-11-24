@@ -32,6 +32,10 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="1330041117646892901" name="org.iets3.core.expr.collections.structure.CollectionSizeSpec" flags="ng" index="2gteSW">
+        <property id="1330041117646892912" name="max" index="2gteSD" />
+        <property id="1330041117646892911" name="min" index="2gteSQ" />
+      </concept>
       <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListAddOp" flags="ng" index="2iGZtc" />
       <concept id="2156530943179783736" name="org.iets3.core.expr.collections.structure.OneArgListModifier" flags="ng" index="2iGZtf">
         <child id="2156530943179783738" name="arg" index="2iGZtd" />
@@ -247,9 +251,9 @@
       <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
         <property id="1330041117646892934" name="prec" index="2gteVv" />
       </concept>
-      <concept id="1330041117646892901" name="org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec" flags="ng" index="2gteSW">
-        <property id="1330041117646892912" name="max" index="2gteSD" />
-        <property id="1330041117646892911" name="min" index="2gteSQ" />
+      <concept id="1330041117646892901" name="org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec" flags="ng" index="2gteSX">
+        <property id="1330041117646892912" name="max" index="2gteSE" />
+        <property id="1330041117646892911" name="min" index="2gteSR" />
       </concept>
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
         <child id="1330041117646892920" name="range" index="2gteSx" />
@@ -682,9 +686,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv47cc8" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv47cc9" role="2gteSx">
-              <property role="2gteSQ" value="1.0000000000" />
-              <property role="2gteSD" value="1.0000000000" />
+            <node concept="2gteSX" id="7Wa2sv47cc9" role="2gteSx">
+              <property role="2gteSR" value="1.0000000000" />
+              <property role="2gteSE" value="1.0000000000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv47cca" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -753,9 +757,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv47cuP" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv47cuQ" role="2gteSx">
-              <property role="2gteSQ" value="110.25" />
-              <property role="2gteSD" value="110.25" />
+            <node concept="2gteSX" id="7Wa2sv47cuQ" role="2gteSx">
+              <property role="2gteSR" value="110.25" />
+              <property role="2gteSE" value="110.25" />
             </node>
             <node concept="2gteS_" id="7Wa2sv47cuR" role="2gteVg">
               <property role="2gteVv" value="2" />
@@ -773,9 +777,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv47cDH" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv47cDI" role="2gteSx">
-              <property role="2gteSQ" value="2.5000000000" />
-              <property role="2gteSD" value="2.5000000000" />
+            <node concept="2gteSX" id="7Wa2sv47cDI" role="2gteSx">
+              <property role="2gteSR" value="2.5000000000" />
+              <property role="2gteSE" value="2.5000000000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv47cDJ" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -1783,9 +1787,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv47d8d" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv47d8e" role="2gteSx">
-              <property role="2gteSQ" value="1.0000000000" />
-              <property role="2gteSD" value="1.0000000000" />
+            <node concept="2gteSX" id="7Wa2sv47d8e" role="2gteSx">
+              <property role="2gteSR" value="1.0000000000" />
+              <property role="2gteSE" value="1.0000000000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv47d8f" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -1810,9 +1814,9 @@
             <node concept="2gteS_" id="7Wa2sv47qLR" role="2gteVg">
               <property role="2gteVv" value="0" />
             </node>
-            <node concept="2gteSW" id="7Wa2sv47qLS" role="2gteSx">
-              <property role="2gteSQ" value="1" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="7Wa2sv47qLS" role="2gteSx">
+              <property role="2gteSR" value="1" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -1897,9 +1901,9 @@
               <property role="TrG5h" value="test" />
             </node>
             <node concept="mLuIC" id="46cplYwVwUf" role="2oiIPj">
-              <node concept="2gteSW" id="46cplYwVwUg" role="2gteSx">
-                <property role="2gteSQ" value="12" />
-                <property role="2gteSD" value="12.2" />
+              <node concept="2gteSX" id="46cplYwVwUg" role="2gteSx">
+                <property role="2gteSR" value="12" />
+                <property role="2gteSE" value="12.2" />
               </node>
               <node concept="2gteS_" id="46cplYwVwUh" role="2gteVg">
                 <property role="2gteVv" value="1" />
@@ -3514,7 +3518,7 @@
           <property role="TrG5h" value="dreiList" />
           <node concept="3iBYCm" id="3tudP__qJNJ" role="1WbbD4">
             <node concept="mLuIC" id="3tudP__qJNX" role="3iBWmK" />
-            <node concept="2gteSW" id="3tudP__rt6q" role="1ietDw">
+            <node concept="2gteSW" id="3tudP_A3h5P" role="1ietDw">
               <property role="2gteSQ" value="0" />
               <property role="2gteSD" value="3" />
             </node>
@@ -3588,7 +3592,7 @@
           <property role="TrG5h" value="nonEMptyList" />
           <node concept="3iBYCm" id="3tudP__AbmJ" role="1WbbD4">
             <node concept="mLuIC" id="3tudP__AbmK" role="3iBWmK" />
-            <node concept="2gteSW" id="3tudP__AbmL" role="1ietDw">
+            <node concept="2gteSW" id="3tudP_A3hK9" role="1ietDw">
               <property role="2gteSQ" value="1" />
               <property role="2gteSD" value="∞" />
             </node>
@@ -3980,9 +3984,9 @@
             <property role="30bXRw" value="3" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CWfpO" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWfq0" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="5" />
+            <node concept="2gteSX" id="2M9Ik4CWfq0" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="5" />
             </node>
           </node>
         </node>
@@ -3997,9 +4001,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWsuk" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWsum" role="2gteSx">
-              <property role="2gteSQ" value="3" />
-              <property role="2gteSD" value="8" />
+            <node concept="2gteSX" id="2M9Ik4CWsum" role="2gteSx">
+              <property role="2gteSR" value="3" />
+              <property role="2gteSE" value="8" />
             </node>
           </node>
         </node>
@@ -4014,9 +4018,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWsPI" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWsPK" role="2gteSx">
-              <property role="2gteSQ" value="9" />
-              <property role="2gteSD" value="24" />
+            <node concept="2gteSX" id="2M9Ik4CWsPK" role="2gteSx">
+              <property role="2gteSR" value="9" />
+              <property role="2gteSE" value="24" />
             </node>
           </node>
         </node>
@@ -4036,9 +4040,9 @@
             <property role="30bXRw" value="3" />
           </node>
           <node concept="mLuIC" id="5cWGVRfRXfC" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfRXfD" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="5" />
+            <node concept="2gteSX" id="5cWGVRfRXfD" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="5" />
             </node>
           </node>
         </node>
@@ -4053,9 +4057,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="5cWGVRfRXfI" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfRXfJ" role="2gteSx">
-              <property role="2gteSQ" value="-2" />
-              <property role="2gteSD" value="3" />
+            <node concept="2gteSX" id="5cWGVRfRXfJ" role="2gteSx">
+              <property role="2gteSR" value="-2" />
+              <property role="2gteSE" value="3" />
             </node>
           </node>
         </node>
@@ -4071,9 +4075,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CVWhm" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CVWhy" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="2M9Ik4CVWhy" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -4083,9 +4087,9 @@
             <property role="30bXRw" value="4" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CVWjo" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CVWj$" role="2gteSx">
-              <property role="2gteSQ" value="3" />
-              <property role="2gteSD" value="7" />
+            <node concept="2gteSX" id="2M9Ik4CVWj$" role="2gteSx">
+              <property role="2gteSR" value="3" />
+              <property role="2gteSE" value="7" />
             </node>
           </node>
         </node>
@@ -4100,9 +4104,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWdVL" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWdVM" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="7" />
+            <node concept="2gteSX" id="2M9Ik4CWdVM" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="7" />
             </node>
           </node>
         </node>
@@ -4113,9 +4117,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CWdYw" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWdYx" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="2M9Ik4CWdYx" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -4125,9 +4129,9 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CWdYs" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWdYt" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="0" />
+            <node concept="2gteSX" id="2M9Ik4CWdYt" role="2gteSx">
+              <property role="2gteSR" value="-1" />
+              <property role="2gteSE" value="0" />
             </node>
           </node>
         </node>
@@ -4142,9 +4146,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWesO" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWesP" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="0" />
+            <node concept="2gteSX" id="2M9Ik4CWesP" role="2gteSx">
+              <property role="2gteSR" value="-1" />
+              <property role="2gteSE" value="0" />
             </node>
           </node>
         </node>
@@ -4155,9 +4159,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CWewQ" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWewR" role="2gteSx">
-              <property role="2gteSQ" value="-10" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="2M9Ik4CWewR" role="2gteSx">
+              <property role="2gteSR" value="-10" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -4167,9 +4171,9 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="mLuIC" id="2M9Ik4CWewM" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWewN" role="2gteSx">
-              <property role="2gteSQ" value="-10" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="2M9Ik4CWewN" role="2gteSx">
+              <property role="2gteSR" value="-10" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -4184,9 +4188,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="2M9Ik4CWfb1" role="2zM23F">
-            <node concept="2gteSW" id="2M9Ik4CWfb2" role="2gteSx">
-              <property role="2gteSQ" value="-100" />
-              <property role="2gteSD" value="100" />
+            <node concept="2gteSX" id="2M9Ik4CWfb2" role="2gteSx">
+              <property role="2gteSR" value="-100" />
+              <property role="2gteSE" value="100" />
             </node>
           </node>
         </node>
@@ -4201,9 +4205,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcWl" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcWm" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="5cWGVRfUcWm" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -4213,9 +4217,9 @@
             <property role="30bXRw" value="4" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcWh" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcWi" role="2gteSx">
-              <property role="2gteSQ" value="3" />
-              <property role="2gteSD" value="7" />
+            <node concept="2gteSX" id="5cWGVRfUcWi" role="2gteSx">
+              <property role="2gteSR" value="3" />
+              <property role="2gteSE" value="7" />
             </node>
           </node>
         </node>
@@ -4230,9 +4234,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv483T5" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv483T6" role="2gteSx">
-              <property role="2gteSQ" value="0.0000000000" />
-              <property role="2gteSD" value="0.3333333333" />
+            <node concept="2gteSX" id="7Wa2sv483T6" role="2gteSx">
+              <property role="2gteSR" value="0.0000000000" />
+              <property role="2gteSE" value="0.3333333333" />
             </node>
             <node concept="2gteS_" id="7Wa2sv483T7" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -4246,9 +4250,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcW6" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcW7" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="5cWGVRfUcW7" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -4258,9 +4262,9 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcW2" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcW3" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="0" />
+            <node concept="2gteSX" id="5cWGVRfUcW3" role="2gteSx">
+              <property role="2gteSR" value="-1" />
+              <property role="2gteSE" value="0" />
             </node>
           </node>
         </node>
@@ -4275,9 +4279,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv48dg7" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv48dg8" role="2gteSx">
-              <property role="2gteSQ" value="-1.0000000000" />
-              <property role="2gteSD" value="∞" />
+            <node concept="2gteSX" id="7Wa2sv48dg8" role="2gteSx">
+              <property role="2gteSR" value="-1.0000000000" />
+              <property role="2gteSE" value="∞" />
             </node>
             <node concept="2gteS_" id="7Wa2sv48dg9" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -4291,9 +4295,9 @@
             <property role="30bXRw" value="1" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcVR" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcVS" role="2gteSx">
-              <property role="2gteSQ" value="-10" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="5cWGVRfUcVS" role="2gteSx">
+              <property role="2gteSR" value="-10" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -4303,9 +4307,9 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="mLuIC" id="5cWGVRfUcVN" role="2zM23F">
-            <node concept="2gteSW" id="5cWGVRfUcVO" role="2gteSx">
-              <property role="2gteSQ" value="-10" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="5cWGVRfUcVO" role="2gteSx">
+              <property role="2gteSR" value="-10" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -4320,9 +4324,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv48mBl" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv48mBm" role="2gteSx">
-              <property role="2gteSQ" value="-1.0000000000" />
-              <property role="2gteSD" value="1.0000000000" />
+            <node concept="2gteSX" id="7Wa2sv48mBm" role="2gteSx">
+              <property role="2gteSR" value="-1.0000000000" />
+              <property role="2gteSE" value="1.0000000000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv48mBn" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -4340,27 +4344,27 @@
         <node concept="1WbbD7" id="2M9Ik4CWt0o" role="_iOnB">
           <property role="TrG5h" value="BPMeasured" />
           <node concept="mLuIC" id="2M9Ik4CWt1C" role="1WbbD4">
-            <node concept="2gteSW" id="2M9Ik4CWt1K" role="2gteSx">
-              <property role="2gteSQ" value="50" />
-              <property role="2gteSD" value="120" />
+            <node concept="2gteSX" id="2M9Ik4CWt1K" role="2gteSx">
+              <property role="2gteSR" value="50" />
+              <property role="2gteSE" value="120" />
             </node>
           </node>
         </node>
         <node concept="1WbbD7" id="2M9Ik4CWKbH" role="_iOnB">
           <property role="TrG5h" value="BPCalibrated" />
           <node concept="mLuIC" id="2M9Ik4CWKbI" role="1WbbD4">
-            <node concept="2gteSW" id="2M9Ik4CWKbJ" role="2gteSx">
-              <property role="2gteSQ" value="60" />
-              <property role="2gteSD" value="80" />
+            <node concept="2gteSX" id="2M9Ik4CWKbJ" role="2gteSx">
+              <property role="2gteSR" value="60" />
+              <property role="2gteSE" value="80" />
             </node>
           </node>
         </node>
         <node concept="1WbbD7" id="2M9Ik4CWJyp" role="_iOnB">
           <property role="TrG5h" value="corrFactor" />
           <node concept="mLuIC" id="2M9Ik4CWJzP" role="1WbbD4">
-            <node concept="2gteSW" id="2M9Ik4CWJzX" role="2gteSx">
-              <property role="2gteSQ" value="1.00" />
-              <property role="2gteSD" value="1.22" />
+            <node concept="2gteSX" id="2M9Ik4CWJzX" role="2gteSx">
+              <property role="2gteSR" value="1.00" />
+              <property role="2gteSE" value="1.22" />
             </node>
           </node>
         </node>
@@ -4398,9 +4402,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="6X2fUL7hGMX" role="2zM23F">
-            <node concept="2gteSW" id="6X2fUL7hGMY" role="2gteSx">
-              <property role="2gteSQ" value="50" />
-              <property role="2gteSD" value="146" />
+            <node concept="2gteSX" id="6X2fUL7hGMY" role="2gteSx">
+              <property role="2gteSR" value="50" />
+              <property role="2gteSE" value="146" />
             </node>
             <node concept="2gteS_" id="6X2fUL7hGMZ" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -4737,9 +4741,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="TuTPrvGo83" role="2zM23F">
-            <node concept="2gteSW" id="TuTPrvGo84" role="2gteSx">
-              <property role="2gteSQ" value="4" />
-              <property role="2gteSD" value="5" />
+            <node concept="2gteSX" id="TuTPrvGo84" role="2gteSx">
+              <property role="2gteSR" value="4" />
+              <property role="2gteSE" value="5" />
             </node>
             <node concept="2gteS_" id="TuTPrvGo85" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -4793,9 +4797,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="TuTPrvGoUh" role="2zM23F">
-            <node concept="2gteSW" id="TuTPrvGoUi" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="25" />
+            <node concept="2gteSX" id="TuTPrvGoUi" role="2gteSx">
+              <property role="2gteSR" value="-1" />
+              <property role="2gteSE" value="25" />
             </node>
             <node concept="2gteS_" id="TuTPrvGoUj" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -4859,9 +4863,9 @@
               <property role="TrG5h" value="hello" />
             </node>
             <node concept="mLuIC" id="TuTPrvJwA4" role="2oiIPj">
-              <node concept="2gteSW" id="TuTPrvJwA5" role="2gteSx">
-                <property role="2gteSQ" value="2" />
-                <property role="2gteSD" value="3" />
+              <node concept="2gteSX" id="TuTPrvJwA5" role="2gteSx">
+                <property role="2gteSR" value="2" />
+                <property role="2gteSE" value="3" />
               </node>
               <node concept="2gteS_" id="TuTPrvJwA6" role="2gteVg">
                 <property role="2gteVv" value="0" />
@@ -5047,9 +5051,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv44FsL" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv44FsM" role="2gteSx">
-              <property role="2gteSQ" value="12" />
-              <property role="2gteSD" value="12" />
+            <node concept="2gteSX" id="7Wa2sv44FsM" role="2gteSx">
+              <property role="2gteSR" value="12" />
+              <property role="2gteSE" value="12" />
             </node>
             <node concept="2gteS_" id="7Wa2sv44FsN" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5067,9 +5071,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv460di" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv460dj" role="2gteSx">
-              <property role="2gteSQ" value="24" />
-              <property role="2gteSD" value="24" />
+            <node concept="2gteSX" id="7Wa2sv460dj" role="2gteSx">
+              <property role="2gteSR" value="24" />
+              <property role="2gteSE" value="24" />
             </node>
             <node concept="2gteS_" id="7Wa2sv460dk" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5082,9 +5086,9 @@
             <property role="30bXRw" value="5" />
           </node>
           <node concept="mLuIC" id="7Wa2sv460hG" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv460hS" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="7Wa2sv460hS" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -5099,9 +5103,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv460x$" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv460x_" role="2gteSx">
-              <property role="2gteSQ" value="24" />
-              <property role="2gteSD" value="34" />
+            <node concept="2gteSX" id="7Wa2sv460x_" role="2gteSx">
+              <property role="2gteSR" value="24" />
+              <property role="2gteSE" value="34" />
             </node>
             <node concept="2gteS_" id="7Wa2sv460xA" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5120,9 +5124,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv461D$" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv461D_" role="2gteSx">
-              <property role="2gteSQ" value="8" />
-              <property role="2gteSD" value="8" />
+            <node concept="2gteSX" id="7Wa2sv461D_" role="2gteSx">
+              <property role="2gteSR" value="8" />
+              <property role="2gteSE" value="8" />
             </node>
             <node concept="2gteS_" id="7Wa2sv461DA" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5140,9 +5144,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv462H$" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv462H_" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="0" />
+            <node concept="2gteSX" id="7Wa2sv462H_" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="0" />
             </node>
             <node concept="2gteS_" id="7Wa2sv462HA" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5155,9 +5159,9 @@
             <property role="30bXRw" value="5" />
           </node>
           <node concept="mLuIC" id="7Wa2sv4612X" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv4612Y" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="7Wa2sv4612Y" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -5172,9 +5176,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv463Th" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv463Ti" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="7Wa2sv463Ti" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="10" />
             </node>
             <node concept="2gteS_" id="7Wa2sv463Tj" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5192,9 +5196,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv464kQ" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv464kR" role="2gteSx">
-              <property role="2gteSQ" value="-90" />
-              <property role="2gteSD" value="-90" />
+            <node concept="2gteSX" id="7Wa2sv464kR" role="2gteSx">
+              <property role="2gteSR" value="-90" />
+              <property role="2gteSE" value="-90" />
             </node>
             <node concept="2gteS_" id="7Wa2sv464kS" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5212,9 +5216,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv4654G" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv4654H" role="2gteSx">
-              <property role="2gteSQ" value="90" />
-              <property role="2gteSD" value="100" />
+            <node concept="2gteSX" id="7Wa2sv4654H" role="2gteSx">
+              <property role="2gteSR" value="90" />
+              <property role="2gteSE" value="100" />
             </node>
             <node concept="2gteS_" id="7Wa2sv4654I" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5233,9 +5237,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv465Fh" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv465Fi" role="2gteSx">
-              <property role="2gteSQ" value="16" />
-              <property role="2gteSD" value="16" />
+            <node concept="2gteSX" id="7Wa2sv465Fi" role="2gteSx">
+              <property role="2gteSR" value="16" />
+              <property role="2gteSE" value="16" />
             </node>
             <node concept="2gteS_" id="7Wa2sv465Fj" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5248,9 +5252,9 @@
             <property role="30bXRw" value="5" />
           </node>
           <node concept="mLuIC" id="7Wa2sv465Ix" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv465IH" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="7Wa2sv465IH" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -5265,9 +5269,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv466bN" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv466bO" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="160" />
+            <node concept="2gteSX" id="7Wa2sv466bO" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="160" />
             </node>
             <node concept="2gteS_" id="7Wa2sv466bP" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5280,9 +5284,9 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="mLuIC" id="7Wa2sv466he" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv466hq" role="2gteSx">
-              <property role="2gteSQ" value="-1" />
-              <property role="2gteSD" value="1" />
+            <node concept="2gteSX" id="7Wa2sv466hq" role="2gteSx">
+              <property role="2gteSR" value="-1" />
+              <property role="2gteSE" value="1" />
             </node>
           </node>
         </node>
@@ -5297,9 +5301,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv466R0" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv466R1" role="2gteSx">
-              <property role="2gteSQ" value="-160" />
-              <property role="2gteSD" value="160" />
+            <node concept="2gteSX" id="7Wa2sv466R1" role="2gteSx">
+              <property role="2gteSR" value="-160" />
+              <property role="2gteSE" value="160" />
             </node>
             <node concept="2gteS_" id="7Wa2sv466R2" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5318,9 +5322,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv467nr" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv467ns" role="2gteSx">
-              <property role="2gteSQ" value="5.0000000000" />
-              <property role="2gteSD" value="5.0000000000" />
+            <node concept="2gteSX" id="7Wa2sv467ns" role="2gteSx">
+              <property role="2gteSR" value="5.0000000000" />
+              <property role="2gteSE" value="5.0000000000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv467nt" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5333,9 +5337,9 @@
             <property role="30bXRw" value="5" />
           </node>
           <node concept="mLuIC" id="7Wa2sv467sO" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv467t0" role="2gteSx">
-              <property role="2gteSQ" value="0" />
-              <property role="2gteSD" value="10" />
+            <node concept="2gteSX" id="7Wa2sv467t0" role="2gteSx">
+              <property role="2gteSR" value="0" />
+              <property role="2gteSE" value="10" />
             </node>
           </node>
         </node>
@@ -5350,9 +5354,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46820" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46821" role="2gteSx">
-              <property role="2gteSQ" value="0.0000000000" />
-              <property role="2gteSD" value="∞" />
+            <node concept="2gteSX" id="7Wa2sv46821" role="2gteSx">
+              <property role="2gteSR" value="0.0000000000" />
+              <property role="2gteSE" value="∞" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46822" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5370,9 +5374,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv468yR" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv468yS" role="2gteSx">
-              <property role="2gteSQ" value="0.5555555556" />
-              <property role="2gteSD" value="0.5555555556" />
+            <node concept="2gteSX" id="7Wa2sv468yS" role="2gteSx">
+              <property role="2gteSR" value="0.5555555556" />
+              <property role="2gteSE" value="0.5555555556" />
             </node>
             <node concept="2gteS_" id="7Wa2sv468yT" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5390,9 +5394,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv4696o" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv4696p" role="2gteSx">
-              <property role="2gteSQ" value="-0.5555555556" />
-              <property role="2gteSD" value="-0.5555555556" />
+            <node concept="2gteSX" id="7Wa2sv4696p" role="2gteSx">
+              <property role="2gteSR" value="-0.5555555556" />
+              <property role="2gteSE" value="-0.5555555556" />
             </node>
             <node concept="2gteS_" id="7Wa2sv4696q" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5407,9 +5411,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46AmF" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46AmG" role="2gteSx">
-              <property role="2gteSQ" value="-10" />
-              <property role="2gteSD" value="0" />
+            <node concept="2gteSX" id="7Wa2sv46AmG" role="2gteSx">
+              <property role="2gteSR" value="-10" />
+              <property role="2gteSE" value="0" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46AmH" role="2gteVg">
               <property role="2gteVv" value="0" />
@@ -5427,9 +5431,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="3tudP__TbmY" role="2zM23F">
-            <node concept="2gteSW" id="3tudP__TbmZ" role="2gteSx">
-              <property role="2gteSQ" value="-∞" />
-              <property role="2gteSD" value="∞" />
+            <node concept="2gteSX" id="3tudP__TbmZ" role="2gteSx">
+              <property role="2gteSR" value="-∞" />
+              <property role="2gteSE" value="∞" />
             </node>
             <node concept="2gteS_" id="3tudP__Tbn0" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5447,9 +5451,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46Czz" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46Cz$" role="2gteSx">
-              <property role="2gteSQ" value="-1.0000000000" />
-              <property role="2gteSD" value="∞" />
+            <node concept="2gteSX" id="7Wa2sv46Cz$" role="2gteSx">
+              <property role="2gteSR" value="-1.0000000000" />
+              <property role="2gteSE" value="∞" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46Cz_" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5468,9 +5472,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46$6E" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46$6F" role="2gteSx">
-              <property role="2gteSQ" value="5.22" />
-              <property role="2gteSD" value="5.22" />
+            <node concept="2gteSX" id="7Wa2sv46$6F" role="2gteSx">
+              <property role="2gteSR" value="5.22" />
+              <property role="2gteSE" value="5.22" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46$6G" role="2gteVg">
               <property role="2gteVv" value="2" />
@@ -5488,9 +5492,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46zq0" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46zq1" role="2gteSx">
-              <property role="2gteSQ" value="10.3" />
-              <property role="2gteSD" value="10.3" />
+            <node concept="2gteSX" id="7Wa2sv46zq1" role="2gteSx">
+              <property role="2gteSR" value="10.3" />
+              <property role="2gteSE" value="10.3" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46zq2" role="2gteVg">
               <property role="2gteVv" value="1" />
@@ -5508,9 +5512,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46yFv" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46yFw" role="2gteSx">
-              <property role="2gteSQ" value="10.32" />
-              <property role="2gteSD" value="10.32" />
+            <node concept="2gteSX" id="7Wa2sv46yFw" role="2gteSx">
+              <property role="2gteSR" value="10.32" />
+              <property role="2gteSE" value="10.32" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46yFx" role="2gteVg">
               <property role="2gteVv" value="2" />
@@ -5523,9 +5527,9 @@
             <property role="30bXRw" value="2.000" />
           </node>
           <node concept="mLuIC" id="7Wa2sv46xRF" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46xRG" role="2gteSx">
-              <property role="2gteSQ" value="-2.000" />
-              <property role="2gteSD" value="2.000" />
+            <node concept="2gteSX" id="7Wa2sv46xRG" role="2gteSx">
+              <property role="2gteSR" value="-2.000" />
+              <property role="2gteSE" value="2.000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46xRH" role="2gteVg">
               <property role="2gteVv" value="3" />
@@ -5543,9 +5547,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46DGe" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46DGf" role="2gteSx">
-              <property role="2gteSQ" value="0.000" />
-              <property role="2gteSD" value="4.000" />
+            <node concept="2gteSX" id="7Wa2sv46DGf" role="2gteSx">
+              <property role="2gteSR" value="0.000" />
+              <property role="2gteSE" value="4.000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46DGg" role="2gteVg">
               <property role="2gteVv" value="3" />
@@ -5563,9 +5567,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46EvV" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46EvW" role="2gteSx">
-              <property role="2gteSQ" value="0.00001" />
-              <property role="2gteSD" value="4.00001" />
+            <node concept="2gteSX" id="7Wa2sv46EvW" role="2gteSx">
+              <property role="2gteSR" value="0.00001" />
+              <property role="2gteSE" value="4.00001" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46EvX" role="2gteVg">
               <property role="2gteVv" value="5" />
@@ -5583,9 +5587,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46Fjd" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46Fje" role="2gteSx">
-              <property role="2gteSQ" value="-4.000" />
-              <property role="2gteSD" value="4.000" />
+            <node concept="2gteSX" id="7Wa2sv46Fje" role="2gteSx">
+              <property role="2gteSR" value="-4.000" />
+              <property role="2gteSE" value="4.000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46Fjf" role="2gteVg">
               <property role="2gteVv" value="3" />
@@ -5603,9 +5607,9 @@
             </node>
           </node>
           <node concept="mLuIC" id="7Wa2sv46G6m" role="2zM23F">
-            <node concept="2gteSW" id="7Wa2sv46G6n" role="2gteSx">
-              <property role="2gteSQ" value="-4.0002000" />
-              <property role="2gteSD" value="4.0002000" />
+            <node concept="2gteSX" id="7Wa2sv46G6n" role="2gteSx">
+              <property role="2gteSR" value="-4.0002000" />
+              <property role="2gteSE" value="4.0002000" />
             </node>
             <node concept="2gteS_" id="7Wa2sv46G6o" role="2gteVg">
               <property role="2gteVv" value="7" />

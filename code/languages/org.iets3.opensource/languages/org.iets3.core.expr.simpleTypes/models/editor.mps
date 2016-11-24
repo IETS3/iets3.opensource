@@ -11,6 +11,7 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -320,8 +321,8 @@
                 <node concept="3clFbF" id="3tudP___7RH" role="3cqZAp">
                   <node concept="37vLTI" id="3tudP___7RI" role="3clFbG">
                     <node concept="10M0yZ" id="3tudP___7RJ" role="37vLTx">
-                      <ref role="1PxDUh" to="9mim:2NHHcg2EXna" resolve="InfHelper" />
-                      <ref role="3cqZAo" to="9mim:2NHHcg2FVhN" resolve="NEGINF" />
+                      <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                      <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
                     </node>
                     <node concept="2OqwBi" id="3tudP___7RK" role="37vLTJ">
                       <node concept="3GMtW1" id="3tudP___7RL" role="2Oq$k0" />
@@ -355,8 +356,8 @@
                 <node concept="3clFbF" id="3tudP___6Tr" role="3cqZAp">
                   <node concept="37vLTI" id="3tudP___7zo" role="3clFbG">
                     <node concept="10M0yZ" id="3tudP___7G8" role="37vLTx">
-                      <ref role="1PxDUh" to="9mim:2NHHcg2EXna" resolve="InfHelper" />
-                      <ref role="3cqZAo" to="9mim:2NHHcg2FYHt" resolve="POSINF" />
+                      <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                      <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
                     </node>
                     <node concept="2OqwBi" id="3tudP___6YJ" role="37vLTJ">
                       <node concept="3GMtW1" id="3tudP___6Tq" role="2Oq$k0" />
