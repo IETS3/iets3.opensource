@@ -3650,7 +3650,6 @@
         <property role="TrG5h" value="contracts" />
         <property role="2SXJ1i" value="true" />
         <property role="1XBH2A" value="true" />
-        <node concept="_ixoA" id="1EIbarK4a3f" role="_iOnB" />
         <node concept="1WbbD7" id="1EIbarK3KGI" role="_iOnB">
           <property role="TrG5h" value="BiggerThanTen" />
           <node concept="mLuIC" id="1EIbarK3P9i" role="1WbbD4" />
