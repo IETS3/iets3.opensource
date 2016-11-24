@@ -126,9 +126,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -373,20 +370,6 @@
                         <node concept="3TrEf2" id="14RJwd1h3Zu" role="2OqNvi">
                           <ref role="3Tt5mk" to="wtll:14RJwd1g88t" resolve="expression" />
                         </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2HpFPvT8mrC" role="3cqZAp">
-                  <node concept="2OqwBi" id="2HpFPvT8mrD" role="3clFbG">
-                    <node concept="10M0yZ" id="2HpFPvT8mrE" role="2Oq$k0">
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    </node>
-                    <node concept="liA8E" id="2HpFPvT8mrF" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(int):void" resolve="println" />
-                      <node concept="3cmrfG" id="2HpFPvT8mrG" role="37wK5m">
-                        <property role="3cmrfH" value="4" />
                       </node>
                     </node>
                   </node>
