@@ -2,21 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.req/org.iets3.components.req.mpl" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.assessment/org.iets3.core.assessment.mpl" folder="assessmt" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.path/org.iets3.core.expr.path.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.repl/org.iets3.core.expr.repl.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace.sandbox/org.iets3.core.trace.test.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace/org.iets3.core.trace.mpl" folder="trace" />
@@ -30,18 +17,15 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.priority/org.iets3.req.priority.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.pseudocode/org.iets3.req.pseudocode.mpl" folder="casestudies" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.variables/org.iets3.req.variables.mpl" folder="casestudies" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="Robot" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="Robot" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="robotics" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="table" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.diehltable.mpl" folder="table" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.table.diehltable.examples/org.iets3.table.diehltable.examples.msd" folder="table" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
-      <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr" />
     </projectModules>
   </component>
 </project>

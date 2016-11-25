@@ -3,14 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -63,13 +59,6 @@
     </node>
     <node concept="PrWs8" id="4HLlYI7fsmq" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="6igfURFyBpd" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="variablesForComponent" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="7246361816652740173" />
-      <ref role="20lvS9" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
     </node>
   </node>
   <node concept="1TIwiD" id="4HLlYI7fyf2">

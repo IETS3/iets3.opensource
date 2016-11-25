@@ -11,7 +11,6 @@
     <import index="8suq" ref="r:0d8a6388-58a6-4811-a2e4-a5449e9f6ecf(org.iets3.req.variables.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="njwi" ref="r:b2183db3-aba1-4f5d-99a6-151e6417cb72(org.iets3.req.pseudocode.structure)" implicit="true" />
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -209,13 +208,6 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4131777900088909328" />
       <ref role="20lvS9" to="njwi:1phsY1Y4mEL" resolve="LlrBlock" />
-    </node>
-    <node concept="1TJgyj" id="6igfURFywcM" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="llrForComponent" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="7246361816652710706" />
-      <ref role="20lvS9" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
     </node>
   </node>
 </model>

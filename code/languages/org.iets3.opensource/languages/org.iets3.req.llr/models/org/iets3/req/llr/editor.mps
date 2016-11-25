@@ -12,7 +12,6 @@
     <import index="mg2x" ref="r:5b42d6e5-3bb3-4b45-9382-4cab29a1d7e2(org.iets3.req.llr.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -35,9 +34,6 @@
       </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
-        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -264,25 +260,6 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="6igfURFyzrp" role="2iSdaV" />
-      <node concept="3EZMnI" id="6igfURFyzpJ" role="3EZMnx">
-        <node concept="2iRfu4" id="6igfURFyzpK" role="2iSdaV" />
-        <node concept="3F0ifn" id="6igfURFyzpF" role="3EZMnx">
-          <property role="3F0ifm" value="List of LLRs for Component:" />
-        </node>
-        <node concept="1iCGBv" id="6igfURFyzpY" role="3EZMnx">
-          <ref role="1NtTu8" to="mg2x:6igfURFywcM" resolve="llrForComponent" />
-          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-          <node concept="1sVBvm" id="6igfURFyzq0" role="1sWHZn">
-            <node concept="3F0A7n" id="6igfURFyzqc" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-        <node concept="VSNWy" id="6igfURFy$LK" role="3F10Kt">
-          <property role="1lJzqX" value="16" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="6igfURFyzs$" role="3EZMnx">
         <node concept="2iRfu4" id="6igfURFyzs_" role="2iSdaV" />
         <node concept="3F0ifn" id="6igfURFyzrQ" role="3EZMnx">

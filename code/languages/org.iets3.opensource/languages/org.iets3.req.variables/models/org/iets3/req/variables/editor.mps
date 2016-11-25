@@ -143,25 +143,6 @@
           </node>
         </node>
         <node concept="2iRkQZ" id="6igfURFyBsG" role="2iSdaV" />
-        <node concept="3EZMnI" id="6igfURFyBpi" role="3EZMnx">
-          <node concept="2iRfu4" id="6igfURFyBpj" role="2iSdaV" />
-          <node concept="3F0ifn" id="6igfURFyBpT" role="3EZMnx">
-            <property role="3F0ifm" value="Variables for Component:" />
-          </node>
-          <node concept="1iCGBv" id="6igfURFyBq5" role="3EZMnx">
-            <ref role="1NtTu8" to="8suq:6igfURFyBpd" resolve="variablesForComponent" />
-            <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-            <node concept="1sVBvm" id="6igfURFyBqa" role="1sWHZn">
-              <node concept="3F0A7n" id="6igfURFyBqs" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="VSNWy" id="6igfURFyBw6" role="3F10Kt">
-            <property role="1lJzqX" value="16" />
-          </node>
-        </node>
         <node concept="3EZMnI" id="6igfURFyBtX" role="3EZMnx">
           <node concept="2iRfu4" id="6igfURFyBtY" role="2iSdaV" />
           <node concept="3F0ifn" id="6igfURFyBtf" role="3EZMnx">

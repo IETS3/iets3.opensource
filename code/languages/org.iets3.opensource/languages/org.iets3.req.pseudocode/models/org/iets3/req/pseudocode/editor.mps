@@ -11,7 +11,6 @@
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="njwi" ref="r:b2183db3-aba1-4f5d-99a6-151e6417cb72(org.iets3.req.pseudocode.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
-    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -274,25 +273,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3EZMnI" id="6igfURFyaMs" role="3EZMnx">
-          <node concept="3F0ifn" id="6igfURFyaN7" role="3EZMnx">
-            <property role="3F0ifm" value="Behavior of Component:" />
-          </node>
-          <node concept="2iRfu4" id="6igfURFyaMt" role="2iSdaV" />
-          <node concept="1iCGBv" id="6igfURFy7kh" role="3EZMnx">
-            <ref role="1NtTu8" to="njwi:6ftOf1Akx0f" resolve="behaviorOfComponent" />
-            <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-            <node concept="1sVBvm" id="6igfURFy7kj" role="1sWHZn">
-              <node concept="3F0A7n" id="6igfURFy7og" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="VSNWy" id="6igfURFyg1k" role="3F10Kt">
-            <property role="1lJzqX" value="16" />
           </node>
         </node>
         <node concept="3EZMnI" id="6igfURFytIN" role="3EZMnx">
