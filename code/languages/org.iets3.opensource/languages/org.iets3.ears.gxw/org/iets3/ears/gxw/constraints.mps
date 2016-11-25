@@ -31,6 +31,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -68,6 +71,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -86,6 +90,10 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -952,6 +960,21 @@
   <node concept="1M2fIO" id="4CY0ja_D4Vq">
     <property role="3GE5qa" value="TemplatesEventDriven" />
     <ref role="1M2myG" to="q3w4:45ipq1tYO43" resolve="NormalEventDrivenReq" />
+    <node concept="1N5Pfh" id="1vCvjaR_Gx4" role="1Mr941">
+      <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+      <node concept="Bn3R3" id="1vCvjaR_Gx6" role="Bn3R6">
+        <node concept="3clFbS" id="1vCvjaR_Gx7" role="2VODD2">
+          <node concept="3clFbF" id="1vCvjaR_R8y" role="3cqZAp">
+            <node concept="3cpWs3" id="1vCvjaR_Rsa" role="3clFbG">
+              <node concept="Bn53e" id="1vCvjaR_R8v" role="3uHU7B" />
+              <node concept="Xl_RD" id="1vCvjaR_R$N" role="3uHU7w">
+                <property role="Xl_RC" value=" [Normal Event Driven Req]" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="4CY0ja_DfeL">
     <property role="3GE5qa" value="PropositionalLogicSR" />
@@ -965,6 +988,63 @@
   </node>
   <node concept="1M2fIO" id="7HbJNeu7yo0">
     <ref role="1M2myG" to="q3w4:6_TIzovfnvj" resolve="RequirementTemplate" />
+  </node>
+  <node concept="1M2fIO" id="1vCvjaRA14I">
+    <property role="3GE5qa" value="TemplatesEventDriven" />
+    <ref role="1M2myG" to="q3w4:6_TIzovhfiI" resolve="NormalEventDrivenOptionalFeatReq" />
+    <node concept="1N5Pfh" id="1vCvjaRA14J" role="1Mr941">
+      <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+      <node concept="Bn3R3" id="1vCvjaRA14L" role="Bn3R6">
+        <node concept="3clFbS" id="1vCvjaRA14M" role="2VODD2">
+          <node concept="3clFbF" id="1vCvjaRA1da" role="3cqZAp">
+            <node concept="3cpWs3" id="1vCvjaRA1db" role="3clFbG">
+              <node concept="Bn53e" id="1vCvjaRA1dc" role="3uHU7B" />
+              <node concept="Xl_RD" id="1vCvjaRA1dd" role="3uHU7w">
+                <property role="Xl_RC" value=" [Normal Event Driven OptionalFeat Req]" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1vCvjaRA8Cy">
+    <property role="3GE5qa" value="TemplatesUbiquitous" />
+    <ref role="1M2myG" to="q3w4:6PME1BrvpaD" resolve="NormalUbiquitousReq" />
+    <node concept="1N5Pfh" id="1vCvjaRA8Cz" role="1Mr941">
+      <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+      <node concept="Bn3R3" id="1vCvjaRA8ON" role="Bn3R6">
+        <node concept="3clFbS" id="1vCvjaRA8OO" role="2VODD2">
+          <node concept="3clFbF" id="1vCvjaRA8Xc" role="3cqZAp">
+            <node concept="3cpWs3" id="1vCvjaRA8Xd" role="3clFbG">
+              <node concept="Bn53e" id="1vCvjaRA8Xe" role="3uHU7B" />
+              <node concept="Xl_RD" id="1vCvjaRA8Xf" role="3uHU7w">
+                <property role="Xl_RC" value=" [Normal Ubiquitous Req]" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1vCvjaRA9PL">
+    <property role="3GE5qa" value="TemplatesEventDriven" />
+    <ref role="1M2myG" to="q3w4:1qavb4ejuEr" resolve="NormalRisingEdgeReq" />
+    <node concept="1N5Pfh" id="1vCvjaRA9PM" role="1Mr941">
+      <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+      <node concept="Bn3R3" id="1vCvjaRA9PO" role="Bn3R6">
+        <node concept="3clFbS" id="1vCvjaRA9PP" role="2VODD2">
+          <node concept="3clFbF" id="1vCvjaRA9Yd" role="3cqZAp">
+            <node concept="3cpWs3" id="1vCvjaRA9Ye" role="3clFbG">
+              <node concept="Bn53e" id="1vCvjaRA9Yf" role="3uHU7B" />
+              <node concept="Xl_RD" id="1vCvjaRA9Yg" role="3uHU7w">
+                <property role="Xl_RC" value=" [Normal Rising Edge Req]" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
