@@ -16,6 +16,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -74,6 +75,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="38IWDFWhbW" resolve="Instruction" />
     </node>
+    <node concept="PrWs8" id="1AZykPVCUjL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="38IWDFWhbW">
     <property role="EcuMT" value="56501473410880252" />
@@ -82,6 +86,9 @@
     <property role="R4oN_" value="This concept shows the instruction of the RobotStudio to train the Robot" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1AZykPVMsG9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="38IWDFWhc0">
     <property role="EcuMT" value="56501473410880256" />
@@ -171,39 +178,40 @@
   <node concept="AxPO7" id="38IWDFWjf1">
     <property role="TrG5h" value="RobotSpeed" />
     <property role="3GE5qa" value="DataTypeDef" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="38IWDFWjf2" role="M5hS2">
       <property role="1uS6qo" value="V5" />
-      <property role="1uS6qv" value="5" />
+      <property role="1uS6qv" value="v5" />
     </node>
     <node concept="M4N5e" id="38IWDFWjf3" role="M5hS2">
       <property role="1uS6qo" value="V100" />
-      <property role="1uS6qv" value="100" />
+      <property role="1uS6qv" value="v100" />
     </node>
     <node concept="M4N5e" id="38IWDFWjf6" role="M5hS2">
       <property role="1uS6qo" value="V1000" />
-      <property role="1uS6qv" value="1000" />
+      <property role="1uS6qv" value="v1000" />
     </node>
     <node concept="M4N5e" id="38IWDFWjfa" role="M5hS2">
       <property role="1uS6qo" value="Vmax" />
-      <property role="1uS6qv" value="10000" />
+      <property role="1uS6qv" value="vmax" />
     </node>
   </node>
   <node concept="AxPO7" id="38IWDFWkOp">
     <property role="TrG5h" value="Zone" />
     <property role="3GE5qa" value="InstructionParts" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="38IWDFWkOq" role="M5hS2">
       <property role="1uS6qo" value="fine" />
-      <property role="1uS6qv" value="0" />
+      <property role="1uS6qv" value="fine" />
     </node>
     <node concept="M4N5e" id="38IWDFWkOr" role="M5hS2">
       <property role="1uS6qo" value="z10" />
-      <property role="1uS6qv" value="10" />
+      <property role="1uS6qv" value="z10" />
     </node>
     <node concept="M4N5e" id="38IWDFWkOu" role="M5hS2">
       <property role="1uS6qo" value="z50" />
-      <property role="1uS6qv" value="50" />
+      <property role="1uS6qv" value="z50" />
     </node>
   </node>
   <node concept="1TIwiD" id="38IWDFWlw6">
@@ -214,6 +222,9 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="InstructionParts" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1AZykPVMsG8" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1L1t_TrmgLD">
     <property role="EcuMT" value="2036038654179740777" />
@@ -224,17 +235,17 @@
     <node concept="1TJgyi" id="1L1t_TrmgLE" role="1TKVEl">
       <property role="IQ2nx" value="2036038654179740778" />
       <property role="TrG5h" value="x" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
     <node concept="1TJgyi" id="1L1t_TrmgLG" role="1TKVEl">
       <property role="IQ2nx" value="2036038654179740780" />
       <property role="TrG5h" value="y" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
     <node concept="1TJgyi" id="1L1t_TrmgLJ" role="1TKVEl">
       <property role="IQ2nx" value="2036038654179740783" />
       <property role="TrG5h" value="z" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
   </node>
   <node concept="1TIwiD" id="1L1t_TrmjPL">
@@ -353,10 +364,15 @@
   <node concept="AxPO7" id="1L1t_TrmqVm">
     <property role="TrG5h" value="AxisValue" />
     <property role="3GE5qa" value="DataTypeDef" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="1L1t_TrmqVn" role="M5hS2">
       <property role="1uS6qo" value="9E9" />
-      <property role="1uS6qv" value="1" />
+      <property role="1uS6qv" value="9E9" />
+    </node>
+    <node concept="M4N5e" id="1AZykPV_DAO" role="M5hS2">
+      <property role="1uS6qo" value="0" />
+      <property role="1uS6qv" value="0" />
     </node>
   </node>
   <node concept="1TIwiD" id="1L1t_Trmt2q">
@@ -422,6 +438,9 @@
       <property role="20kJfa" value="tload" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1L1t_TrmzKD" resolve="Loaddata" />
+    </node>
+    <node concept="PrWs8" id="1AZykPVNCqx" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1L1t_TrmxqW">
@@ -558,6 +577,101 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tooldata" />
       <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1L1t_TrmwjE" resolve="Tooldata" />
+    </node>
+    <node concept="PrWs8" id="1AZykPVLF$k" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1AZykPV_XWO">
+    <property role="EcuMT" value="1855352537378971444" />
+    <property role="3GE5qa" value="DataTypeDef" />
+    <property role="TrG5h" value="Robjoint" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1AZykPV_XWP" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971445" />
+      <property role="TrG5h" value="rax_1" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+    <node concept="1TJgyi" id="1AZykPV_XWQ" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971446" />
+      <property role="TrG5h" value="rax_2" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+    <node concept="1TJgyi" id="1AZykPV_XWR" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971447" />
+      <property role="TrG5h" value="rax_3" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+    <node concept="1TJgyi" id="1AZykPV_XWS" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971448" />
+      <property role="TrG5h" value="rax_4" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+    <node concept="1TJgyi" id="1AZykPV_XWT" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971449" />
+      <property role="TrG5h" value="rax_5" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+    <node concept="1TJgyi" id="1AZykPV_XWU" role="1TKVEl">
+      <property role="IQ2nx" value="1855352537378971450" />
+      <property role="TrG5h" value="rax_6" />
+      <ref role="AX2Wp" node="1L1t_TrmqVm" resolve="AxisValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1AZykPV_XWV">
+    <property role="EcuMT" value="1855352537378971451" />
+    <property role="3GE5qa" value="DataTypeDef" />
+    <property role="TrG5h" value="Jointtarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1AZykPV_XWW" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537378971452" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="robax" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1AZykPV_XWO" resolve="Robjoint" />
+    </node>
+    <node concept="1TJgyj" id="1AZykPV_XWX" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537378971453" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="extax" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1L1t_TrmqVj" resolve="Extjoint" />
+    </node>
+    <node concept="PrWs8" id="1AZykPVA2Mk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1AZykPVBjCK">
+    <property role="EcuMT" value="1855352537379322416" />
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="MoveAbsJ" />
+    <ref role="1TJDcQ" node="38IWDFWhbW" resolve="Instruction" />
+    <node concept="1TJgyj" id="1AZykPVBp0O" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537379344436" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="moveabsJ" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1AZykPV_XWV" resolve="Jointtarget" />
+    </node>
+    <node concept="1TJgyj" id="1AZykPVBp0P" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537379344437" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="speed" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1L1t_TrmjPL" resolve="Speed" />
+    </node>
+    <node concept="1TJgyj" id="1AZykPVBp0Q" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537379344438" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="zone" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1L1t_Trml3i" resolve="RobotZone" />
+    </node>
+    <node concept="1TJgyj" id="1AZykPVBp0R" role="1TKVEi">
+      <property role="IQ2ns" value="1855352537379344439" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tooldata" />
       <ref role="20lvS9" node="1L1t_TrmwjE" resolve="Tooldata" />
     </node>
   </node>
