@@ -353,5 +353,61 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="378sigX35lV">
+    <ref role="1XX52x" to="330h:378sigX2COV" resolve="NotTracedElementsQuery" />
+    <node concept="3EZMnI" id="378sigX35m1" role="2wV5jI">
+      <node concept="3F0ifn" id="378sigX35ma" role="3EZMnx">
+        <property role="3F0ifm" value="not traced elements query" />
+      </node>
+      <node concept="3F0ifn" id="378sigX35mm" role="3EZMnx" />
+      <node concept="3F0ifn" id="378sigX35mu" role="3EZMnx">
+        <property role="3F0ifm" value="for elements like:" />
+      </node>
+      <node concept="1iCGBv" id="378sigX35mC" role="3EZMnx">
+        <ref role="1NtTu8" to="330h:378sigX35lt" resolve="element" />
+        <node concept="1sVBvm" id="378sigX35mE" role="1sWHZn">
+          <node concept="3F0A7n" id="378sigX35mQ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="378sigX35n3" role="3EZMnx">
+        <property role="3F0ifm" value="for" />
+      </node>
+      <node concept="3F1sOY" id="378sigX35nl" role="3EZMnx">
+        <ref role="1NtTu8" to="330h:378sigX35lr" resolve="scope" />
+      </node>
+      <node concept="2iRfu4" id="378sigX35m4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="378sigX4OUJ">
+    <property role="3GE5qa" value="result" />
+    <ref role="1XX52x" to="330h:378sigX3YpU" resolve="NotTracedResult" />
+    <node concept="3EZMnI" id="378sigX4OV4" role="2wV5jI">
+      <node concept="1iCGBv" id="378sigX4OVb" role="3EZMnx">
+        <ref role="1NtTu8" to="330h:378sigX3YpV" resolve="el" />
+        <node concept="1sVBvm" id="378sigX4OVd" role="1sWHZn">
+          <node concept="1HlG4h" id="378sigX4OVk" role="2wV5jI">
+            <node concept="1HfYo3" id="378sigX4OVm" role="1HlULh">
+              <node concept="3TQlhw" id="378sigX4OVo" role="1Hhtcw">
+                <node concept="3clFbS" id="378sigX4OVq" role="2VODD2">
+                  <node concept="3clFbF" id="378sigX4P3T" role="3cqZAp">
+                    <node concept="2OqwBi" id="378sigX4PfU" role="3clFbG">
+                      <node concept="pncrf" id="378sigX4P3S" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="378sigX4Q1D" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="378sigX4OV7" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
