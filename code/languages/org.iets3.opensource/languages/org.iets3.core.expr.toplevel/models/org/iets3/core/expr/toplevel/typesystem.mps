@@ -1874,13 +1874,13 @@
         </node>
         <node concept="mw_s8" id="5ElkanPnVdQ" role="1ZfhK$">
           <node concept="1YBJjd" id="5ElkanPnUNt" role="mwGJk">
-            <ref role="1YBMHb" node="5ElkanPmGR5" resolve="t1" />
+            <ref role="1YBMHb" node="5ElkanPmGR5" resolve="exp" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="5ElkanPmGR5" role="1YuTPh">
-      <property role="TrG5h" value="t1" />
+      <property role="TrG5h" value="exp" />
       <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
@@ -1969,6 +1969,88 @@
     <node concept="1YaCAy" id="5ElkanPQ$11" role="1YuTPh">
       <property role="TrG5h" value="et" />
       <ref role="1YaFvo" to="yv47:5ElkanPQwmt" resolve="EnumIsTarget" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="29BBztTT4Gl">
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="replaceTypedefType2" />
+    <node concept="3clFbS" id="29BBztTT4Gn" role="2sgrp5">
+      <node concept="1ZobV4" id="29BBztTT4Go" role="3cqZAp">
+        <node concept="mw_s8" id="29BBztTT4Gp" role="1ZfhKB">
+          <node concept="1YBJjd" id="29BBztTT645" role="mwGJk">
+            <ref role="1YBMHb" node="29BBztTT4Gx" resolve="exp" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="29BBztTT4Gv" role="1ZfhK$">
+          <node concept="2OqwBi" id="29BBztTT5$P" role="mwGJk">
+            <node concept="2OqwBi" id="29BBztTT51N" role="2Oq$k0">
+              <node concept="1YBJjd" id="29BBztTT4T9" role="2Oq$k0">
+                <ref role="1YBMHb" node="29BBztTT4Sg" resolve="act" />
+              </node>
+              <node concept="3TrEf2" id="29BBztTT5ax" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="29BBztTT5Z8" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="29BBztTT4Gx" role="35pZ6h">
+      <property role="TrG5h" value="exp" />
+      <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1YaCAy" id="29BBztTT4Sg" role="1YuTPh">
+      <property role="TrG5h" value="act" />
+      <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="29BBztU0jg0">
+    <property role="3GE5qa" value="typedef" />
+    <property role="TrG5h" value="replaceTypedefType3" />
+    <node concept="3clFbS" id="29BBztU0jg1" role="2sgrp5">
+      <node concept="1ZobV4" id="29BBztU0jg2" role="3cqZAp">
+        <node concept="mw_s8" id="29BBztU0jg3" role="1ZfhKB">
+          <node concept="2OqwBi" id="29BBztU0k11" role="mwGJk">
+            <node concept="2OqwBi" id="29BBztU0jwa" role="2Oq$k0">
+              <node concept="1YBJjd" id="29BBztU0jnC" role="2Oq$k0">
+                <ref role="1YBMHb" node="29BBztU0jnd" resolve="exp" />
+              </node>
+              <node concept="3TrEf2" id="29BBztU0jCS" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="29BBztU0krk" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="29BBztU0jg5" role="1ZfhK$">
+          <node concept="2OqwBi" id="29BBztU0jg6" role="mwGJk">
+            <node concept="2OqwBi" id="29BBztU0jg7" role="2Oq$k0">
+              <node concept="1YBJjd" id="29BBztU0jg8" role="2Oq$k0">
+                <ref role="1YBMHb" node="29BBztU0jgc" resolve="act" />
+              </node>
+              <node concept="3TrEf2" id="29BBztU0jg9" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="29BBztU0jga" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="29BBztU0jgc" role="1YuTPh">
+      <property role="TrG5h" value="act" />
+      <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    </node>
+    <node concept="1YaCAy" id="29BBztU0jnd" role="35pZ6h">
+      <property role="TrG5h" value="exp" />
+      <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
     </node>
   </node>
 </model>
