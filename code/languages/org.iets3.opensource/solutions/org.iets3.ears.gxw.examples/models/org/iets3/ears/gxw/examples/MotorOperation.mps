@@ -71,6 +71,7 @@
         <child id="3691935882243901155" name="untilTrigger" index="3T_IbW" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
+        <property id="1706268582358129455" name="controllerName" index="1hs7$j" />
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
@@ -148,6 +149,7 @@
     <property role="TrG5h" value="Requiremtnt for Motor Operation" />
     <ref role="9DKRw" node="7HbJNeua$NC" resolve="Glossery For Motor Operation" />
     <node concept="1QfkUo" id="1vCvjaRwkhI" role="OJ2fO">
+      <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$O3" resolve="oil motor" />
       <node concept="OJJ_U" id="1vCvjaRwkhK" role="1QgFCz">
         <ref role="OJJ_O" node="1vCvjaRsl6f" />
@@ -161,6 +163,7 @@
       <node concept="3t3aUO" id="1vCvjaRwkhQ" role="3tWTBb" />
     </node>
     <node concept="sEiiz" id="1vCvjaRwkij" role="OJ2fO">
+      <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$Ou" resolve="10 second timer" />
       <node concept="3T_uu0" id="1vCvjaRwkir" role="3tOtb8">
         <ref role="3T_uuC" node="1vCvjaRsl5Y" />
@@ -171,6 +174,7 @@
       </node>
     </node>
     <node concept="1QfkUo" id="1vCvjaRwkk4" role="OJ2fO">
+      <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$Oa" resolve="main motor" />
       <node concept="3T_uu0" id="1vCvjaRwkkg" role="3tOtb8">
         <ref role="3T_uuC" node="1vCvjaRsl7t" />
@@ -184,6 +188,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="1vCvjaRwkkC" role="OJ2fO">
+      <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$OF" resolve="5 sec timer" />
       <node concept="3T_uu0" id="1vCvjaRwkkT" role="3tOtb8">
         <ref role="3T_uuC" node="1vCvjaRsl7t" />
@@ -194,6 +199,7 @@
       </node>
     </node>
     <node concept="1QfkUo" id="1vCvjaRwklj" role="OJ2fO">
+      <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$Oj" resolve="auxilary motor" />
       <node concept="OJJ_U" id="1vCvjaRwklC" role="1QgFCz">
         <ref role="OJJ_O" node="1vCvjaRvG_C" />

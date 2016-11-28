@@ -964,11 +964,17 @@
       <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
       <node concept="Bn3R3" id="1vCvjaR_Gx6" role="Bn3R6">
         <node concept="3clFbS" id="1vCvjaR_Gx7" role="2VODD2">
-          <node concept="3clFbF" id="1vCvjaR_R8y" role="3cqZAp">
-            <node concept="3cpWs3" id="1vCvjaR_Rsa" role="3clFbG">
-              <node concept="Bn53e" id="1vCvjaR_R8v" role="3uHU7B" />
-              <node concept="Xl_RD" id="1vCvjaR_R$N" role="3uHU7w">
-                <property role="Xl_RC" value=" [Normal Event Driven Req]" />
+          <node concept="3clFbH" id="1uHSzL6SUZh" role="3cqZAp" />
+          <node concept="3clFbF" id="1uHSzL6SVnJ" role="3cqZAp">
+            <node concept="3cpWs3" id="1uHSzL6Tb4C" role="3clFbG">
+              <node concept="2OqwBi" id="1uHSzL6Tb__" role="3uHU7w">
+                <node concept="Bn53e" id="1uHSzL6Tbdh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1uHSzL6TbPk" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1uHSzL6T6vl" role="3uHU7B">
+                <property role="Xl_RC" value="When &lt;trigger&gt; the &lt;Ctrl. name&gt; shall &lt;response&gt; " />
               </node>
             </node>
           </node>
@@ -996,14 +1002,26 @@
       <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
       <node concept="Bn3R3" id="1vCvjaRA14L" role="Bn3R6">
         <node concept="3clFbS" id="1vCvjaRA14M" role="2VODD2">
-          <node concept="3clFbF" id="1vCvjaRA1da" role="3cqZAp">
-            <node concept="3cpWs3" id="1vCvjaRA1db" role="3clFbG">
-              <node concept="Bn53e" id="1vCvjaRA1dc" role="3uHU7B" />
-              <node concept="Xl_RD" id="1vCvjaRA1dd" role="3uHU7w">
-                <property role="Xl_RC" value=" [Normal Event Driven OptionalFeat Req]" />
+          <node concept="3clFbH" id="1uHSzL6TjIy" role="3cqZAp" />
+          <node concept="3clFbF" id="1uHSzL6TjnM" role="3cqZAp">
+            <node concept="3cpWs3" id="1uHSzL6Tk_1" role="3clFbG">
+              <node concept="Xl_RD" id="1uHSzL6Tmi_" role="3uHU7w">
+                <property role="Xl_RC" value=" until &lt;trigger&gt;" />
+              </node>
+              <node concept="3cpWs3" id="1uHSzL6TjnN" role="3uHU7B">
+                <node concept="Xl_RD" id="1uHSzL6TjnR" role="3uHU7B">
+                  <property role="Xl_RC" value="When &lt;trigger&gt; the &lt;Ctrl. name&gt; shall &lt;response&gt; " />
+                </node>
+                <node concept="2OqwBi" id="1uHSzL6TjnO" role="3uHU7w">
+                  <node concept="Bn53e" id="1uHSzL6TjnP" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1uHSzL6TjnQ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="1uHSzL6Tjb$" role="3cqZAp" />
         </node>
       </node>
     </node>
@@ -1015,14 +1033,31 @@
       <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
       <node concept="Bn3R3" id="1vCvjaRA8ON" role="Bn3R6">
         <node concept="3clFbS" id="1vCvjaRA8OO" role="2VODD2">
-          <node concept="3clFbF" id="1vCvjaRA8Xc" role="3cqZAp">
-            <node concept="3cpWs3" id="1vCvjaRA8Xd" role="3clFbG">
-              <node concept="Bn53e" id="1vCvjaRA8Xe" role="3uHU7B" />
-              <node concept="Xl_RD" id="1vCvjaRA8Xf" role="3uHU7w">
-                <property role="Xl_RC" value=" [Normal Ubiquitous Req]" />
+          <node concept="3clFbF" id="1uHSzL6TzuQ" role="3cqZAp">
+            <node concept="3cpWs3" id="1uHSzL6TD7b" role="3clFbG">
+              <node concept="Xl_RD" id="1uHSzL6TE51" role="3uHU7w">
+                <property role="Xl_RC" value="&lt;response&gt;" />
+              </node>
+              <node concept="3cpWs3" id="1uHSzL6TAnP" role="3uHU7B">
+                <node concept="3cpWs3" id="1uHSzL6T$EI" role="3uHU7B">
+                  <node concept="Xl_RD" id="1uHSzL6TzuP" role="3uHU7B">
+                    <property role="Xl_RC" value="The " />
+                  </node>
+                  <node concept="2OqwBi" id="1uHSzL6T_g4" role="3uHU7w">
+                    <node concept="Bn53e" id="1uHSzL6T$T_" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="1uHSzL6T_GX" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="1uHSzL6TAB5" role="3uHU7w">
+                  <property role="Xl_RC" value=" shall " />
+                </node>
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="1uHSzL6TyyV" role="3cqZAp" />
+          <node concept="3clFbH" id="1uHSzL6TxL4" role="3cqZAp" />
         </node>
       </node>
     </node>
@@ -1034,14 +1069,20 @@
       <ref role="1N5Vy1" to="q3w4:6_TIzovf9G3" resolve="systemName" />
       <node concept="Bn3R3" id="1vCvjaRA9PO" role="Bn3R6">
         <node concept="3clFbS" id="1vCvjaRA9PP" role="2VODD2">
-          <node concept="3clFbF" id="1vCvjaRA9Yd" role="3cqZAp">
-            <node concept="3cpWs3" id="1vCvjaRA9Ye" role="3clFbG">
-              <node concept="Bn53e" id="1vCvjaRA9Yf" role="3uHU7B" />
-              <node concept="Xl_RD" id="1vCvjaRA9Yg" role="3uHU7w">
-                <property role="Xl_RC" value=" [Normal Rising Edge Req]" />
+          <node concept="3clFbF" id="1uHSzL6Tsq7" role="3cqZAp">
+            <node concept="3cpWs3" id="1uHSzL6Tsq8" role="3clFbG">
+              <node concept="2OqwBi" id="1uHSzL6Tsq9" role="3uHU7w">
+                <node concept="Bn53e" id="1uHSzL6Tsqa" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1uHSzL6Tsqb" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1uHSzL6Tsqc" role="3uHU7B">
+                <property role="Xl_RC" value="When Iff &lt;trigger&gt;&lt;modifier&gt; the &lt;Ctrl.name&gt; shall &lt;response&gt; " />
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="1uHSzL6TsdT" role="3cqZAp" />
         </node>
       </node>
     </node>

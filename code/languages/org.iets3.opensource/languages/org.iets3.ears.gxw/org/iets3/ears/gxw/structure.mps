@@ -294,6 +294,11 @@
     <node concept="PrWs8" id="6_TIzovfnvo" role="PrDN$">
       <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
+    <node concept="1TJgyi" id="1uHSzL6RpGJ" role="1TKVEl">
+      <property role="IQ2nx" value="1706268582358129455" />
+      <property role="TrG5h" value="controllerName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6_TIzovfnvn">
     <property role="3GE5qa" value="TemplatesUbiquitous" />

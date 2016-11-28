@@ -48,6 +48,7 @@
         <child id="3691935882243901155" name="untilTrigger" index="3T_IbW" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
+        <property id="1706268582358129455" name="controllerName" index="1hs7$j" />
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
@@ -67,6 +68,7 @@
     <property role="TrG5h" value="Requirements for Automatic Door" />
     <ref role="9DKRw" node="2$$ntKwwEOp" resolve="Glossary for Automatic Door" />
     <node concept="1QfkUo" id="7YbGQey_uCE" role="OJ2fO">
+      <property role="1hs7$j" value="Door Controller" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uCG" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -80,6 +82,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="7YbGQey_uCV" role="OJ2fO">
+      <property role="1hs7$j" value="Door Controller" />
       <ref role="1Qhi4P" node="2$$ntKwwEOP" resolve="counter" />
       <node concept="3T_uu0" id="7YbGQey_uD3" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -90,6 +93,7 @@
       </node>
     </node>
     <node concept="1QfkUo" id="7YbGQey_uES" role="OJ2fO">
+      <property role="1hs7$j" value="Door Controller" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uF4" role="3tOtb8">
         <ref role="3T_uuC" node="3cWp1ZaFoCj" />
@@ -108,6 +112,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="7YbGQey_uGJ" role="OJ2fO">
+      <property role="1hs7$j" value="Door Controller" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uH4" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -120,6 +125,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="7YbGQey_vr2" role="OJ2fO">
+      <property role="1hs7$j" value="Door Controller" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_vrw" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPc" />
