@@ -23,6 +23,7 @@
     <import index="g4jo" ref="r:d98d04fb-4a60-4106-81cf-6cb40b67de4d(jetbrains.mps.ide.findusages.model)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -867,7 +868,7 @@
     </node>
     <node concept="2tJIrI" id="6_Ift$_F1uH" role="jymVt" />
     <node concept="2YIFZL" id="6_Ift$_F20F" role="jymVt">
-      <property role="TrG5h" value="getNotTracedElements" />
+      <property role="TrG5h" value="getUntracedElements" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -882,18 +883,21 @@
                 <node concept="1bVj0M" id="6_Ift$_F3Np" role="23t8la">
                   <node concept="3clFbS" id="6_Ift$_F3Nq" role="1bW5cS">
                     <node concept="3clFbF" id="6_Ift$_F3XH" role="3cqZAp">
-                      <node concept="17R0WA" id="6_Ift$_F5Dm" role="3clFbG">
-                        <node concept="37vLTw" id="6_Ift$_F5XZ" role="3uHU7w">
-                          <ref role="3cqZAo" node="6_Ift$_F2Oe" resolve="conceptOfElement" />
-                        </node>
-                        <node concept="2OqwBi" id="6_Ift$_F4Yl" role="3uHU7B">
+                      <node concept="2OqwBi" id="6_Ift$_HXRc" role="3clFbG">
+                        <node concept="2OqwBi" id="6_Ift$_F4Yl" role="2Oq$k0">
                           <node concept="2OqwBi" id="6_Ift$_F48s" role="2Oq$k0">
                             <node concept="37vLTw" id="6_Ift$_F3XG" role="2Oq$k0">
                               <ref role="3cqZAo" node="6_Ift$_F3Nr" resolve="it" />
                             </node>
                             <node concept="2yIwOk" id="6_Ift$_F4L7" role="2OqNvi" />
                           </node>
-                          <node concept="FGMqu" id="6_Ift$_F5dJ" role="2OqNvi" />
+                          <node concept="FGMqu" id="6_Ift$_HXwr" role="2OqNvi" />
+                        </node>
+                        <node concept="2qgKlT" id="6_Ift$_HYz8" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcn:73yVtVlWOga" resolve="isSubconceptOf" />
+                          <node concept="37vLTw" id="6_Ift$_HYSq" role="37wK5m">
+                            <ref role="3cqZAo" node="6_Ift$_F2Oe" resolve="conceptOfElement" />
+                          </node>
                         </node>
                       </node>
                     </node>
