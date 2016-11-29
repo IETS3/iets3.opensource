@@ -2109,6 +2109,18 @@
           <property role="3LESm3" value="630ff5ee-4c20-48ab-b7f6-bad3a34adac8" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="6_Ift$_$OLL" role="3bR37C">
+          <node concept="3bR9La" id="6_Ift$_$OLM" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lfd" resolve="jetbrains.mps.findUsages.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_Ift$_$OLN" role="3bR37C">
+          <node concept="3bR9La" id="6_Ift$_$OLO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
