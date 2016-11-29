@@ -805,5 +805,91 @@
       <node concept="l2Vlx" id="1qavb4ejuER" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1a1nVFdwLzH">
+    <property role="3GE5qa" value="TemplatesEventDriven" />
+    <ref role="1XX52x" to="q3w4:1a1nVFdwLzv" resolve="ComplexEventDrivenReq" />
+    <node concept="3EZMnI" id="1a1nVFdwLzJ" role="2wV5jI">
+      <node concept="3F0ifn" id="1a1nVFdwLzK" role="3EZMnx">
+        <property role="3F0ifm" value="While" />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwLzL" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwLDU" resolve="triggerWhile" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwNCD" role="3EZMnx">
+        <property role="3F0ifm" value=", when " />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwNDI" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwLDZ" resolve="triggerWhen" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwLzN" role="3EZMnx">
+        <property role="3F0ifm" value="  the " />
+      </node>
+      <node concept="3F0A7n" id="1a1nVFdwLzO" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1uHSzL6RpGJ" resolve="controllerName" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwLzP" role="3EZMnx">
+        <property role="3F0ifm" value="shall" />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwLzQ" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwLE5" resolve="systemResponse" />
+      </node>
+      <node concept="1iCGBv" id="1a1nVFdwLzR" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+        <node concept="1sVBvm" id="1a1nVFdwLzS" role="1sWHZn">
+          <node concept="3F0A7n" id="1a1nVFdwLzT" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwLzU" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+      </node>
+      <node concept="l2Vlx" id="1a1nVFdwLzV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1a1nVFdwSVw">
+    <property role="3GE5qa" value="TemplatesUnwanted" />
+    <ref role="1XX52x" to="q3w4:1a1nVFdwSVl" resolve="UnwantedReq" />
+    <node concept="3EZMnI" id="1a1nVFdwSVy" role="2wV5jI">
+      <node concept="3F0ifn" id="1a1nVFdwSVz" role="3EZMnx">
+        <property role="3F0ifm" value="While" />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwSV$" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW0" resolve="triggerWhile" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwSVA" role="3EZMnx">
+        <property role="3F0ifm" value=", if " />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwSVB" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW1" resolve="triggerIf" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwSVC" role="3EZMnx">
+        <property role="3F0ifm" value="  the " />
+      </node>
+      <node concept="3F0A7n" id="1a1nVFdwSVD" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdyeT6" resolve="controllerName" />
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwSVE" role="3EZMnx">
+        <property role="3F0ifm" value="shall" />
+      </node>
+      <node concept="3F1sOY" id="1a1nVFdwSVF" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW2" resolve="systemResponse" />
+      </node>
+      <node concept="1iCGBv" id="1a1nVFdwSVG" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:6_TIzovf9G3" resolve="systemName" />
+        <node concept="1sVBvm" id="1a1nVFdwSVH" role="1sWHZn">
+          <node concept="3F0A7n" id="1a1nVFdwSVI" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1a1nVFdwSVJ" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+      </node>
+      <node concept="l2Vlx" id="1a1nVFdwSVK" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

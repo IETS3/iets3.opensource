@@ -5,11 +5,18 @@
       <sourceRoot location="." />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="." />
       <sourceRoot location="autoCode4.jar" />
       <sourceRoot location="commons-cli-1.3.1.jar" />
       <sourceRoot location="org.sat4j.core.jar" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${mps_home}" />
+    <stubModelEntry path="${module}/autoCode4.jar" />
+    <stubModelEntry path="${module}/commons-cli-1.3.1.jar" />
+    <stubModelEntry path="${module}/org.sat4j.core.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

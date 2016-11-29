@@ -56,9 +56,9 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/autoCode4.jar" />
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/commons-cli-1.3.1.jar" />
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.sat4j.core.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/autoCode4.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/commons-cli-1.3.1.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.sat4j.core.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
