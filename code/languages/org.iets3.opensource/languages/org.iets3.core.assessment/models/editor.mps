@@ -358,15 +358,30 @@
     <ref role="1XX52x" to="330h:378sigX2COV" resolve="UntracedElementsQuery" />
     <node concept="3EZMnI" id="378sigX35m1" role="2wV5jI">
       <node concept="3F0ifn" id="378sigX35ma" role="3EZMnx">
-        <property role="3F0ifm" value="untraced elements like" />
+        <property role="3F0ifm" value="elements like" />
       </node>
       <node concept="1iCGBv" id="378sigX4UXW" role="3EZMnx">
-        <ref role="1NtTu8" to="330h:378sigX35lt" resolve="element" />
+        <ref role="1NtTu8" to="330h:378sigX35lt" resolve="like" />
         <node concept="1sVBvm" id="378sigX4UXY" role="1sWHZn">
           <node concept="3F0A7n" id="378sigX4UYi" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6_Ift$_MtQP" role="3EZMnx">
+        <property role="3F0ifm" value="without tracekind&lt;" />
+        <node concept="11LMrY" id="6_Ift$_Rq_k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6_Ift$_MtRh" role="3EZMnx">
+        <ref role="1NtTu8" to="330h:6_Ift$_LXGg" resolve="kind" />
+      </node>
+      <node concept="3F0ifn" id="6_Ift$_MtR_" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="6_Ift$_Rsgq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="378sigX35n3" role="3EZMnx">
