@@ -40,10 +40,6 @@
         <reference id="2964597654736293948" name="glossary" index="9DKRw" />
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
       </concept>
-      <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
-        <child id="2964597654736467355" name="arg" index="9Cqx7" />
-      </concept>
-      <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
@@ -76,22 +72,22 @@
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
-      <property role="OJvIS" value="60 second timer expire" />
+      <property role="OJvIS" value="60 second timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opj" role="2skrmg">
-      <property role="OJvIS" value="120 sec timer expire" />
+      <property role="OJvIS" value="120 sec timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opG" role="2skrmg">
-      <property role="OJvIS" value="start button pressed" />
+      <property role="OJvIS" value="start button is pressed" />
     </node>
     <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 1 reached" />
+      <property role="OJvIS" value="liquidlevel 1 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 2 reached" />
+      <property role="OJvIS" value="liquidlevel 2 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
-      <property role="OJvIS" value="emergency button pressed" />
+      <property role="OJvIS" value="emergency button is pressed" />
     </node>
     <node concept="otU$0" id="7HbJNetZtsI" role="2skrmv">
       <property role="Nkej4" value="open" />
@@ -127,6 +123,10 @@
     </node>
     <node concept="otU$0" id="1qavb4eyKmf" role="2skrmv">
       <property role="Nkej4" value="start" />
+      <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
+    </node>
+    <node concept="otU$0" id="7Ja$Zlvj5E9" role="2skrmv">
+      <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
     <node concept="2uIZ38" id="7YbGQey_vrY" role="2skrmi">
@@ -318,10 +318,8 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2nh" role="3tWTBb" />
-      <node concept="OJJ_J" id="Sr3WmIw2nj" role="1QgFCz">
-        <node concept="OJJ_U" id="1pRfBxTMD04" role="9Cqx7">
-          <ref role="OJJ_O" node="1qavb4eyKmf" />
-        </node>
+      <node concept="OJJ_U" id="7Ja$Zlvj5FW" role="1QgFCz">
+        <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
       </node>
     </node>
   </node>
