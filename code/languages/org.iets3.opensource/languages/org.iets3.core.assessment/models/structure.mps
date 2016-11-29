@@ -113,10 +113,17 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
     </node>
+    <node concept="1TJgyj" id="6_Ift$_LXGg" role="1TKVEi">
+      <property role="IQ2ns" value="7597077624271657744" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <ref role="20lvS9" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
+    </node>
     <node concept="1TJgyj" id="378sigX35lt" role="1TKVEi">
       <property role="IQ2ns" value="3587241503657579869" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="like" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
   </node>
