@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -102,7 +103,8 @@
   </node>
   <node concept="1TIwiD" id="378sigX2COV">
     <property role="EcuMT" value="3587241503657463099" />
-    <property role="TrG5h" value="NotTracedElementsQuery" />
+    <property role="TrG5h" value="UntracedElementsQuery" />
+    <property role="34LRSv" value="untraced elements" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="378sigX35lr" role="1TKVEi">
       <property role="IQ2ns" value="3587241503657579867" />
