@@ -2,8 +2,8 @@
 <model ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -93,6 +93,9 @@
     <node concept="PrWs8" id="ub9nkyHAb8" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
+    <node concept="PrWs8" id="7yDflTqQ5$F" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyHAba">
     <property role="3GE5qa" value="" />
@@ -147,26 +150,20 @@
     <node concept="PrWs8" id="ub9nkyK62g" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
-    <node concept="PrWs8" id="ub9nkyO0EC" role="PzmwI">
-      <ref role="PrY4T" to="yv47:2uR5X5ayxoj" resolve="IFunctionScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="ub9nkyO0EK" role="PzmwI">
-      <ref role="PrY4T" to="yv47:69zaTr1N3PK" resolve="IConstantScopeProvider" />
-    </node>
     <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
-    <node concept="PrWs8" id="6HHp2WmWZ9L" role="PzmwI">
-      <ref role="PrY4T" to="yv47:7D7uZV2eTZF" resolve="IRecordScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="6HHp2WngtW9" role="PzmwI">
-      <ref role="PrY4T" to="yv47:6HHp2WngtUK" resolve="ITypedefScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="67Y8mp$Ixfy" role="PzmwI">
-      <ref role="PrY4T" to="yv47:67Y8mp$DN53" resolve="IEnumScopeProvider" />
-    </node>
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
+    <node concept="PrWs8" id="3pe7Y2RWGaO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
+    </node>
+    <node concept="PrWs8" id="5ElkanQ9DBL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanQ81eS" resolve="IDocumentableWordContainer" />
+    </node>
+    <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
@@ -217,7 +214,7 @@
   <node concept="1TIwiD" id="78hTg1$THIv">
     <property role="EcuMT" value="8219602584783477663" />
     <property role="TrG5h" value="ConstraintFailedTestItem" />
-    <property role="34LRSv" value="constraint failure" />
+    <property role="34LRSv" value="confail" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1TJgyj" id="78hTg1$TLJd" role="1TKVEi">
       <property role="IQ2ns" value="8219602584783494093" />
@@ -424,6 +421,48 @@
       <property role="IQ2nx" value="4372229961985674918" />
       <property role="TrG5h" value="maxH" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="RaqQlV9tkj">
+    <property role="EcuMT" value="993724751390561555" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyj" id="RaqQlV9tlI" role="1TKVEi">
+      <property role="IQ2ns" value="993724751390561646" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="valueStats" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="RaqQlV9tkk" resolve="InterpreterValueStat" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="RaqQlV9tkk">
+    <property role="EcuMT" value="993724751390561556" />
+    <property role="3GE5qa" value="assessment.interpreter" />
+    <property role="TrG5h" value="InterpreterValueStat" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="RaqQlV9tkl" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561557" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="RaqQlV9tkn" role="1TKVEl">
+      <property role="IQ2nx" value="993724751390561559" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3tudP__5TL4">
+    <property role="EcuMT" value="3989687176984501316" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="StackTraceElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3tudP__5TL5" role="1TKVEi">
+      <property role="IQ2ns" value="3989687176984501317" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
 </model>
