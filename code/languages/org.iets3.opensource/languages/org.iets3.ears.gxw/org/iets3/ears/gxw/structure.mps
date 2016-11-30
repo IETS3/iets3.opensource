@@ -2,7 +2,7 @@
 <model ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -132,6 +132,11 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="135049047333306355" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7Ja$Zlvjqyb" role="1TKVEl">
+      <property role="IQ2nx" value="8920104694035884171" />
+      <property role="TrG5h" value="nameOfController" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7vMAitzBZO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="listOfTriggers" />
@@ -141,7 +146,7 @@
     </node>
     <node concept="1TJgyj" id="7vMAitzBZQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="listOfNames" />
+      <property role="20kJfa" value="listOfComponents" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="135049047333306358" />
       <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />

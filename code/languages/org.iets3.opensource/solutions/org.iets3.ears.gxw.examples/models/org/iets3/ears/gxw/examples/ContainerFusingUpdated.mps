@@ -25,8 +25,9 @@
         <child id="1624247715511528094" name="systemResponse" index="oLToJ" />
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
+        <property id="8920104694035884171" name="nameOfController" index="$xNHY" />
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
-        <child id="135049047333306358" name="listOfNames" index="2skrmi" />
+        <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
       </concept>
@@ -81,23 +82,24 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Container Fusing" />
+    <property role="$xNHY" value="Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
-      <property role="OJvIS" value="60 second timer expire" />
+      <property role="OJvIS" value="60 second timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opj" role="2skrmg">
-      <property role="OJvIS" value="120 sec timer expire" />
+      <property role="OJvIS" value="120 sec timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opG" role="2skrmg">
-      <property role="OJvIS" value="start button pressed" />
+      <property role="OJvIS" value="start button is pressed" />
     </node>
     <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 1 reached" />
+      <property role="OJvIS" value="liquidlevel 1 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 2 reached" />
+      <property role="OJvIS" value="liquidlevel 2 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
-      <property role="OJvIS" value="emergency button pressed" />
+      <property role="OJvIS" value="emergency button is pressed" />
     </node>
     <node concept="otU$0" id="7HbJNetZtsI" role="2skrmv">
       <property role="Nkej4" value="open" />
@@ -135,7 +137,7 @@
       <property role="Nkej4" value="start" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
-    <node concept="otU$0" id="4hKwKx9SfGM" role="2skrmv">
+    <node concept="otU$0" id="7Ja$Zlvj5E9" role="2skrmv">
       <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
@@ -183,47 +185,47 @@
       <property role="TrG5h" value="120 sec timer" />
       <property role="2uI0VX" value="the timer for 120 sec" />
     </node>
-    <node concept="1JDFFW" id="1pRfBxTU2ru" role="1JDDoy">
+    <node concept="1JDFFW" id="oMRsWNTJOx" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="OJJ_U" id="1pRfBxTU2r$" role="1JD8cJ">
+      <node concept="OJJ_U" id="oMRsWNTJOB" role="1JD8cJ">
         <ref role="OJJ_O" node="7HbJNetZtsI" />
       </node>
-      <node concept="OJJ_J" id="1pRfBxTU2rE" role="1JD8c$">
-        <node concept="OJJ_U" id="1pRfBxTU2rJ" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8E" />
+      <node concept="OJJ_J" id="oMRsWNTJOE" role="1JD8c$">
+        <node concept="OJJ_U" id="oMRsWNTJOM" role="9Cqx7">
+          <ref role="OJJ_O" node="1pRfBxTOo8j" />
         </node>
       </node>
     </node>
-    <node concept="1JDFFW" id="4hKwKx9S8HZ" role="1JDDoy">
+    <node concept="1JDFFW" id="oMRsWNTJOP" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="OJJ_U" id="4hKwKx9S8I9" role="1JD8cJ">
+      <node concept="OJJ_U" id="oMRsWNTJOZ" role="1JD8cJ">
         <ref role="OJJ_O" node="7HbJNetZtsV" />
       </node>
-      <node concept="OJJ_J" id="4hKwKx9S8Ic" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9S8Ih" role="9Cqx7">
+      <node concept="OJJ_J" id="oMRsWNTJP2" role="1JD8c$">
+        <node concept="OJJ_U" id="oMRsWNTJP7" role="9Cqx7">
           <ref role="OJJ_O" node="1pRfBxTOo8E" />
         </node>
       </node>
     </node>
-    <node concept="1JDFFW" id="4hKwKx9SfCM" role="1JDDoy">
+    <node concept="1JDFFW" id="oMRsWNTJPa" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="OJJ_U" id="4hKwKx9SfD0" role="1JD8cJ">
+      <node concept="OJJ_U" id="oMRsWNTJPo" role="1JD8cJ">
         <ref role="OJJ_O" node="7HbJNetZttc" />
       </node>
-      <node concept="OJJ_J" id="4hKwKx9SfD3" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9SfD8" role="9Cqx7">
+      <node concept="OJJ_J" id="oMRsWNU5uD" role="1JD8c$">
+        <node concept="OJJ_U" id="oMRsWNU5uI" role="9Cqx7">
           <ref role="OJJ_O" node="1pRfBxTOo8Y" />
         </node>
       </node>
     </node>
-    <node concept="1JDFFW" id="4hKwKx9SfDb" role="1JDDoy">
+    <node concept="1JDFFW" id="oMRsWNTJPu" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_op0" resolve="stirring motor" />
-      <node concept="OJJ_U" id="4hKwKx9SfDt" role="1JD8cJ">
+      <node concept="OJJ_U" id="oMRsWNTJPJ" role="1JD8cJ">
         <ref role="OJJ_O" node="1qavb4eyKmf" />
       </node>
-      <node concept="OJJ_J" id="4hKwKx9SfGY" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9SfH3" role="9Cqx7">
-          <ref role="OJJ_O" node="4hKwKx9SfGM" />
+      <node concept="OJJ_J" id="oMRsWNTJPM" role="1JD8c$">
+        <node concept="OJJ_U" id="oMRsWNTJPR" role="9Cqx7">
+          <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
         </node>
       </node>
     </node>
@@ -372,8 +374,8 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2nh" role="3tWTBb" />
-      <node concept="OJJ_U" id="4hKwKx9SfH6" role="1QgFCz">
-        <ref role="OJJ_O" node="4hKwKx9SfGM" />
+      <node concept="OJJ_U" id="7Ja$Zlvj5FW" role="1QgFCz">
+        <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
       </node>
     </node>
   </node>
