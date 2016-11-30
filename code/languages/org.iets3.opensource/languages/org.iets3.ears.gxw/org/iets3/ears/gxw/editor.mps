@@ -233,7 +233,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6KxW$9vsgmI" role="3EZMnx">
-        <property role="3F0ifm" value="shall " />
+        <property role="3F0ifm" value="can " />
       </node>
       <node concept="3F0A7n" id="6KxW$9vsgn1" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:6KxW$9vshq6" resolve="action" />
