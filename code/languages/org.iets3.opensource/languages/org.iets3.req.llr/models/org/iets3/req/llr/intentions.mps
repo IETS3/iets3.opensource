@@ -10,7 +10,6 @@
     <import index="mg2x" ref="r:5b42d6e5-3bb3-4b45-9382-4cab29a1d7e2(org.iets3.req.llr.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="m4ta" ref="r:533ea973-5538-450e-b933-d6335409cb90(org.iets3.req.core.intentions)" />
     <import index="8suq" ref="r:0d8a6388-58a6-4811-a2e4-a5449e9f6ecf(org.iets3.req.variables.structure)" implicit="true" />
@@ -280,12 +279,12 @@
           <node concept="3cpWsn" id="7IM3imbmMmf" role="3cpWs9">
             <property role="TrG5h" value="newTerm" />
             <node concept="3Tqbb2" id="7IM3imbmMma" role="1tU5fm">
-              <ref role="ehGHo" to="8suq:5JTGvT0I5nN" resolve="variableTest" />
+              <ref role="ehGHo" to="8suq:5JTGvT0I5nN" resolve="Variable" />
             </node>
             <node concept="2ShNRf" id="7IM3imbmN_g" role="33vP2m">
               <node concept="3zrR0B" id="7IM3imbmN_e" role="2ShVmc">
                 <node concept="3Tqbb2" id="7IM3imbmN_f" role="3zrR0E">
-                  <ref role="ehGHo" to="8suq:5JTGvT0I5nN" resolve="variableTest" />
+                  <ref role="ehGHo" to="8suq:5JTGvT0I5nN" resolve="Variable" />
                 </node>
               </node>
             </node>
@@ -318,7 +317,7 @@
                 <ref role="3cqZAo" node="7IM3imbmHR7" resolve="variableChunk" />
               </node>
               <node concept="3Tsc0h" id="4HLlYI7fxL$" role="2OqNvi">
-                <ref role="3TtcxE" to="8suq:4HLlYI7f6VW" />
+                <ref role="3TtcxE" to="8suq:4HLlYI7f6VW" resolve="listOfvariables" />
               </node>
             </node>
             <node concept="TSZUe" id="7IM3imbmTLX" role="2OqNvi">
@@ -350,7 +349,7 @@
                 <ref role="3cqZAo" node="7IM3imbmiwB" resolve="refWord" />
               </node>
               <node concept="3TrEf2" id="4HLlYI7f$A9" role="2OqNvi">
-                <ref role="3Tt5mk" to="8suq:4HLlYI7fyhP" />
+                <ref role="3Tt5mk" to="8suq:4HLlYI7fyhP" resolve="term" />
               </node>
             </node>
             <node concept="37vLTw" id="7IM3imbnGHD" role="37vLTx">

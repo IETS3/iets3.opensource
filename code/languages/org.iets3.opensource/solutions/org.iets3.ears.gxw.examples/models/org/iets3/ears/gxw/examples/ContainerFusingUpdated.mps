@@ -25,10 +25,10 @@
         <child id="1624247715511528094" name="systemResponse" index="oLToJ" />
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
+        <property id="8920104694035884171" name="nameOfSystem" index="$xNHY" />
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfNames" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
-        <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
@@ -41,10 +41,6 @@
         <reference id="2964597654736293948" name="glossary" index="9DKRw" />
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
       </concept>
-      <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
-        <child id="2964597654736467355" name="arg" index="9Cqx7" />
-      </concept>
-      <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
@@ -54,11 +50,6 @@
         <child id="1333452220594854533" name="systemResponse" index="3v0$kZ" />
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
         <child id="1333452220594854527" name="triggerWhen" index="3v0$n5" />
-      </concept>
-      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.Axiom" flags="ng" index="1JDFFW">
-        <reference id="1618831278224729393" name="systemName" index="1J_PH9" />
-        <child id="1618831278223899996" name="arg2" index="1JD8c$" />
-        <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
       </concept>
       <concept id="7600310587780035758" name="org.iets3.ears.gxw.structure.NormalEventDrivenOptionalFeatReq" flags="ng" index="1QfkUo">
         <child id="3691935882243901155" name="untilTrigger" index="3T_IbW" />
@@ -81,23 +72,24 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Container Fusing" />
+    <property role="$xNHY" value="Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
-      <property role="OJvIS" value="60 second timer expire" />
+      <property role="OJvIS" value="60 second timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opj" role="2skrmg">
-      <property role="OJvIS" value="120 sec timer expire" />
+      <property role="OJvIS" value="120 sec timer expires" />
     </node>
     <node concept="otU$d" id="34ScOrO_opG" role="2skrmg">
-      <property role="OJvIS" value="start button pressed" />
+      <property role="OJvIS" value="start button is pressed" />
     </node>
     <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 1 reached" />
+      <property role="OJvIS" value="liquidlevel 1 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 2 reached" />
+      <property role="OJvIS" value="liquidlevel 2 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
-      <property role="OJvIS" value="emergency button pressed" />
+      <property role="OJvIS" value="emergency button is pressed" />
     </node>
     <node concept="otU$0" id="7HbJNetZtsI" role="2skrmv">
       <property role="Nkej4" value="open" />
@@ -135,7 +127,7 @@
       <property role="Nkej4" value="start" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
-    <node concept="otU$0" id="4hKwKx9SfGM" role="2skrmv">
+    <node concept="otU$0" id="7Ja$Zlvj5E9" role="2skrmv">
       <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
@@ -182,50 +174,6 @@
     <node concept="2uIZ38" id="1qavb4emVGY" role="2skrmi">
       <property role="TrG5h" value="120 sec timer" />
       <property role="2uI0VX" value="the timer for 120 sec" />
-    </node>
-    <node concept="1JDFFW" id="1pRfBxTU2ru" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="OJJ_U" id="1pRfBxTU2r$" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZtsI" />
-      </node>
-      <node concept="OJJ_J" id="1pRfBxTU2rE" role="1JD8c$">
-        <node concept="OJJ_U" id="1pRfBxTU2rJ" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8E" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="4hKwKx9S8HZ" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="OJJ_U" id="4hKwKx9S8I9" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZtsV" />
-      </node>
-      <node concept="OJJ_J" id="4hKwKx9S8Ic" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9S8Ih" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8E" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="4hKwKx9SfCM" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="OJJ_U" id="4hKwKx9SfD0" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZttc" />
-      </node>
-      <node concept="OJJ_J" id="4hKwKx9SfD3" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9SfD8" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8Y" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="4hKwKx9SfDb" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_op0" resolve="stirring motor" />
-      <node concept="OJJ_U" id="4hKwKx9SfDt" role="1JD8cJ">
-        <ref role="OJJ_O" node="1qavb4eyKmf" />
-      </node>
-      <node concept="OJJ_J" id="4hKwKx9SfGY" role="1JD8c$">
-        <node concept="OJJ_U" id="4hKwKx9SfH3" role="9Cqx7">
-          <ref role="OJJ_O" node="4hKwKx9SfGM" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="OJ2fN" id="1pRfBxTLTzE">
@@ -372,8 +320,8 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2nh" role="3tWTBb" />
-      <node concept="OJJ_U" id="4hKwKx9SfH6" role="1QgFCz">
-        <ref role="OJJ_O" node="4hKwKx9SfGM" />
+      <node concept="OJJ_U" id="7Ja$Zlvj5FW" role="1QgFCz">
+        <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
       </node>
     </node>
   </node>
