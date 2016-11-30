@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:42412ffd-ca74-4839-9881-7d5ac8e39853(org.iets3.ears.gxw.examples.ContainerFusingUpdated)">
+<model ref="r:608e5299-6be6-4f9a-afac-fdf63570bd3c(org.iets3.ears.gxw.examples.ContainerFusingCounterEx)">
   <persistence version="9" />
   <languages>
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
   </languages>
@@ -49,14 +50,13 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
-      <concept id="8544902788588847844" name="org.iets3.ears.gxw.structure.ComplexEventDrivenUntil" flags="ng" index="1cwdkO">
-        <child id="8544902788588855985" name="untilTrigger" index="1cwflx" />
-        <child id="8544902788588855979" name="triggerWhile" index="1cwflV" />
-        <child id="8544902788588855980" name="triggerWhen" index="1cwflW" />
-        <child id="8544902788588855981" name="systemResponse" index="1cwflX" />
-      </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="9190636705088547490" name="org.iets3.ears.gxw.structure.Happens" flags="ng" index="3tWTB1" />
+      <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
+        <child id="1333452220594854533" name="systemResponse" index="3v0$kZ" />
+        <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
+        <child id="1333452220594854527" name="triggerWhen" index="3v0$n5" />
+      </concept>
       <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.Axiom" flags="ng" index="1JDFFW">
         <reference id="1618831278224729393" name="systemName" index="1J_PH9" />
         <child id="1618831278223899996" name="arg2" index="1JD8c$" />
@@ -78,11 +78,6 @@
       <concept id="3691935882243834792" name="org.iets3.ears.gxw.structure.UnaryFormulaTr" flags="ng" index="3T_uuR">
         <child id="3691935882243834799" name="arg" index="3T_uuK" />
       </concept>
-      <concept id="3691935882243834791" name="org.iets3.ears.gxw.structure.BinaryFormulaTr" flags="ng" index="3T_uuS">
-        <child id="3691935882243834794" name="arg2" index="3T_uuP" />
-        <child id="3691935882243834793" name="arg1" index="3T_uuQ" />
-      </concept>
-      <concept id="3691935882243834786" name="org.iets3.ears.gxw.structure.OrFormulaTr" flags="ng" index="3T_uuX" />
       <concept id="3691935882243834785" name="org.iets3.ears.gxw.structure.NotFormulaTr" flags="ng" index="3T_uuY" />
     </language>
   </registry>
@@ -239,22 +234,20 @@
   <node concept="OJ2fN" id="1pRfBxTLTzE">
     <property role="TrG5h" value="Requirements For Container Fusing" />
     <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Container Fusing" />
-    <node concept="1cwdkO" id="7ql_X0U6gM0" role="OJ2fO">
+    <node concept="3v0$t_" id="1pRfBxTLTAW" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="3T_uuY" id="7ql_X0U6xol" role="1cwflV">
-        <node concept="3T_uu0" id="7ql_X0U6xoq" role="3T_uuK">
+      <node concept="3T_uuY" id="1pRfBxTLTC8" role="3v0$n0">
+        <node concept="3T_uu0" id="1pRfBxTLTCc" role="3T_uuK">
           <ref role="3T_uuC" node="34ScOrO_oqN" />
         </node>
       </node>
-      <node concept="3T_uu0" id="7ql_X0U6xot" role="1cwflW">
+      <node concept="3t3aUO" id="1pRfBxTLTCf" role="3tWTBb" />
+      <node concept="3T_uu0" id="1pRfBxTLTCh" role="3v0$n5">
         <ref role="3T_uuC" node="34ScOrO_opG" />
       </node>
-      <node concept="OJJ_U" id="7ql_X0U6xAw" role="1cwflX">
+      <node concept="OJJ_U" id="1pRfBxTMCZT" role="3v0$kZ">
         <ref role="OJJ_O" node="7HbJNetZtsI" />
-      </node>
-      <node concept="3T_uu0" id="7ql_X0U6xAz" role="1cwflx">
-        <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
@@ -268,22 +261,19 @@
         <ref role="3T_uuC" node="34ScOrO_oqN" />
       </node>
     </node>
-    <node concept="1cwdkO" id="7ql_X0U6xCi" role="OJ2fO">
+    <node concept="3v0$t_" id="1pRfBxTOob9" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="3T_uu0" id="7ql_X0U6xDl" role="1cwflW">
-        <ref role="3T_uuC" node="34ScOrO_oqN" />
-      </node>
-      <node concept="OJJ_U" id="7ql_X0U6xDo" role="1cwflX">
-        <ref role="OJJ_O" node="7HbJNetZtsV" />
-      </node>
-      <node concept="3T_uu0" id="7ql_X0U6xDr" role="1cwflx">
-        <ref role="3T_uuC" node="34ScOrO_otc" />
-      </node>
-      <node concept="3T_uuY" id="7ql_X0UfA2T" role="1cwflV">
-        <node concept="3T_uu0" id="7ql_X0UfA2X" role="3T_uuK">
+      <node concept="3T_uuY" id="1pRfBxTOoc9" role="3v0$n0">
+        <node concept="3T_uu0" id="1pRfBxTOocd" role="3T_uuK">
           <ref role="3T_uuC" node="34ScOrO_orh" />
         </node>
+      </node>
+      <node concept="3T_uu0" id="1pRfBxTOocg" role="3v0$n5">
+        <ref role="3T_uuC" node="34ScOrO_oqN" />
+      </node>
+      <node concept="OJJ_U" id="1pRfBxTOoci" role="3v0$kZ">
+        <ref role="OJJ_O" node="7HbJNetZtsV" />
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOodo" role="OJ2fO">
@@ -317,13 +307,8 @@
       <node concept="OJJ_U" id="1pRfBxTOoi1" role="1QgFCz">
         <ref role="OJJ_O" node="1qavb4eyKmf" />
       </node>
-      <node concept="3T_uuX" id="7ql_X0UmrCc" role="3T_IbW">
-        <node concept="3T_uu0" id="7ql_X0UmrCi" role="3T_uuQ">
-          <ref role="3T_uuC" node="34ScOrO_opg" />
-        </node>
-        <node concept="3T_uu0" id="7ql_X0UmrCl" role="3T_uuP">
-          <ref role="3T_uuC" node="34ScOrO_otc" />
-        </node>
+      <node concept="3T_uu0" id="1pRfBxTOofC" role="3T_IbW">
+        <ref role="3T_uuC" node="34ScOrO_opg" />
       </node>
     </node>
     <node concept="oLToE" id="1qavb4emVHa" role="OJ2fO">
@@ -346,13 +331,8 @@
         <ref role="3T_uuC" node="34ScOrO_opg" />
       </node>
       <node concept="3tWTB1" id="1qavb4emVJj" role="3tWTBb" />
-      <node concept="3T_uuX" id="7ql_X0UmrCq" role="3T_IbW">
-        <node concept="3T_uu0" id="7ql_X0UmrCw" role="3T_uuQ">
-          <ref role="3T_uuC" node="34ScOrO_opj" />
-        </node>
-        <node concept="3T_uu0" id="7ql_X0UmrCz" role="3T_uuP">
-          <ref role="3T_uuC" node="34ScOrO_otc" />
-        </node>
+      <node concept="3T_uu0" id="1pRfBxTOofE" role="3T_IbW">
+        <ref role="3T_uuC" node="34ScOrO_opj" />
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw0y1" role="OJ2fO">

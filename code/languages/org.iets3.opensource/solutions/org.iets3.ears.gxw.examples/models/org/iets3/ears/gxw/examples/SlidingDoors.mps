@@ -21,7 +21,7 @@
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
-        <child id="135049047333306358" name="listOfNames" index="2skrmi" />
+        <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">

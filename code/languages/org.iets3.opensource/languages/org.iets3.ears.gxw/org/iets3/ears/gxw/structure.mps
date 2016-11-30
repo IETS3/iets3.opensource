@@ -573,5 +573,42 @@
       <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7ql_X0U5kb$">
+    <property role="EcuMT" value="8544902788588847844" />
+    <property role="3GE5qa" value="TemplatesEventDriven" />
+    <property role="TrG5h" value="ComplexEventDrivenUntil" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7ql_X0U5maF" role="1TKVEi">
+      <property role="IQ2ns" value="8544902788588855979" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="triggerWhile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="1TJgyj" id="7ql_X0U5maG" role="1TKVEi">
+      <property role="IQ2ns" value="8544902788588855980" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="triggerWhen" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="1TJgyj" id="7ql_X0U5maH" role="1TKVEi">
+      <property role="IQ2ns" value="8544902788588855981" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="systemResponse" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="1TJgyj" id="7ql_X0U5maL" role="1TKVEi">
+      <property role="IQ2ns" value="8544902788588855985" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="untilTrigger" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="PrWs8" id="7ql_X0U5kb_" role="PzmwI">
+      <ref role="PrY4T" node="6_TIzovfnvm" resolve="AbstractEventDrivenReq" />
+    </node>
+  </node>
 </model>
 

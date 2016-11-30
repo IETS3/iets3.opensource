@@ -16,6 +16,7 @@
     <import index="bx2y" ref="f32fddd3-9ea0-405b-9874-fdda57f5e83d/java:org.fortiss.de.autocode4.gxw.twoqbf(org.iets3.structuralCoder/)" />
     <import index="vw7m" ref="f32fddd3-9ea0-405b-9874-fdda57f5e83d/java:org.fortiss.de.autocode4.gxw.codegen(org.iets3.structuralCoder/)" />
     <import index="13k4" ref="f32fddd3-9ea0-405b-9874-fdda57f5e83d/java:org.fortiss.de.autocode4.gxw.sdf(org.iets3.structuralCoder/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -88,6 +89,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
@@ -319,29 +321,24 @@
             </node>
             <node concept="3clFbS" id="6_TIzovfXDj" role="3eOfB_">
               <node concept="3cpWs6" id="6_TIzovfXLj" role="3cqZAp">
-                <node concept="3cpWs3" id="6_TIzovg3j$" role="3cqZAk">
-                  <node concept="Xl_RD" id="6_TIzovg3sh" role="3uHU7w">
-                    <property role="Xl_RC" value=")" />
+                <node concept="3cpWs3" id="6_TIzovfY5G" role="3cqZAk">
+                  <node concept="Xl_RD" id="6_TIzovfXO0" role="3uHU7B">
+                    <property role="Xl_RC" value="!" />
                   </node>
-                  <node concept="3cpWs3" id="6_TIzovfY5G" role="3uHU7B">
-                    <node concept="Xl_RD" id="6_TIzovfXO0" role="3uHU7B">
-                      <property role="Xl_RC" value="(!" />
-                    </node>
-                    <node concept="2OqwBi" id="6_TIzovfYBa" role="3uHU7w">
-                      <node concept="2OqwBi" id="6_TIzovfYlm" role="2Oq$k0">
-                        <node concept="1PxgMI" id="6_TIzovfYcM" role="2Oq$k0">
-                          <ref role="1m5ApE" to="q3w4:5QnDqxDalN7" resolve="NotFormulaSR" />
-                          <node concept="13iPFW" id="6_TIzovfY8u" role="1m5AlR" />
-                        </node>
-                        <node concept="3TrEf2" id="6_TIzovfYsP" role="2OqNvi">
-                          <ref role="3Tt5mk" to="q3w4:2$$ntKwxvmr" resolve="arg" />
-                        </node>
+                  <node concept="2OqwBi" id="6_TIzovfYBa" role="3uHU7w">
+                    <node concept="2OqwBi" id="6_TIzovfYlm" role="2Oq$k0">
+                      <node concept="1PxgMI" id="6_TIzovfYcM" role="2Oq$k0">
+                        <ref role="1m5ApE" to="q3w4:5QnDqxDalN7" resolve="NotFormulaSR" />
+                        <node concept="13iPFW" id="6_TIzovfY8u" role="1m5AlR" />
                       </node>
-                      <node concept="2qgKlT" id="6_TIzovfYJE" role="2OqNvi">
-                        <ref role="37wK5l" node="6_TIzovfT5$" resolve="toFormulaString" />
-                        <node concept="37vLTw" id="6_TIzovfYNX" role="37wK5m">
-                          <ref role="3cqZAo" node="6_TIzovfTFu" resolve="systemResponseMap" />
-                        </node>
+                      <node concept="3TrEf2" id="6_TIzovfYsP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="q3w4:2$$ntKwxvmr" resolve="arg" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="6_TIzovfYJE" role="2OqNvi">
+                      <ref role="37wK5l" node="6_TIzovfT5$" resolve="toFormulaString" />
+                      <node concept="37vLTw" id="6_TIzovfYNX" role="37wK5m">
+                        <ref role="3cqZAo" node="6_TIzovfTFu" resolve="systemResponseMap" />
                       </node>
                     </node>
                   </node>
@@ -1205,6 +1202,27 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="7ql_X0U4uZu" role="3cqZAp">
+                      <node concept="2YIFZM" id="7ql_X0U4uZv" role="3clFbG">
+                        <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                        <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                        <node concept="10Nm6u" id="7ql_X0U4uZw" role="37wK5m" />
+                        <node concept="3cpWs3" id="7ql_X0U4wqK" role="37wK5m">
+                          <node concept="2OqwBi" id="7ql_X0U4wqL" role="3uHU7w">
+                            <node concept="37vLTw" id="7ql_X0U4wqM" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3ghj88fVK0i" resolve="file" />
+                            </node>
+                            <node concept="liA8E" id="7ql_X0U4wqN" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="7ql_X0U4wqO" role="3uHU7B">
+                            <property role="Xl_RC" value="Inconsistent result between synthesis and spec (the spec should be not realizable): " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7ql_X0U4tCc" role="3cqZAp" />
                     <node concept="3cpWs6" id="2lS7bsHPHTU" role="3cqZAp">
                       <node concept="3cpWs3" id="2lS7bsHPJIG" role="3cqZAk">
                         <node concept="2OqwBi" id="2lS7bsHPK9R" role="3uHU7w">
@@ -1620,6 +1638,27 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="7ql_X0U468E" role="3cqZAp">
+                        <node concept="2YIFZM" id="7ql_X0U468F" role="3clFbG">
+                          <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                          <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                          <node concept="10Nm6u" id="7ql_X0U468G" role="37wK5m" />
+                          <node concept="3cpWs3" id="7ql_X0U47Aj" role="37wK5m">
+                            <node concept="2OqwBi" id="7ql_X0U47Ak" role="3uHU7w">
+                              <node concept="37vLTw" id="7ql_X0U47Al" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3ghj88fVK0i" resolve="file" />
+                              </node>
+                              <node concept="liA8E" id="7ql_X0U47Am" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="7ql_X0U47An" role="3uHU7B">
+                              <property role="Xl_RC" value=" ERROR: Inconsistent result between synthesis and spec (the spec should be realizable): " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="7ql_X0U44Js" role="3cqZAp" />
                       <node concept="3cpWs6" id="2lS7bsHRbM4" role="3cqZAp">
                         <node concept="3cpWs3" id="2lS7bsHRc0F" role="3cqZAk">
                           <node concept="2OqwBi" id="2lS7bsHRc0G" role="3uHU7w">
@@ -1635,6 +1674,7 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="7ql_X0U43k4" role="3cqZAp" />
                       <node concept="3clFbH" id="2lS7bsHRblb" role="3cqZAp" />
                     </node>
                   </node>
@@ -1645,6 +1685,17 @@
                       <property role="Xl_RC" value="Parameter assignment for resolution blocks unavailable " />
                     </node>
                   </node>
+                  <node concept="3clFbF" id="2EaowSc4Chl" role="3cqZAp">
+                    <node concept="2YIFZM" id="2EaowSc4Chn" role="3clFbG">
+                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                      <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                      <node concept="10Nm6u" id="2EaowSc4Cho" role="37wK5m" />
+                      <node concept="Xl_RD" id="2EaowSc68PD" role="37wK5m">
+                        <property role="Xl_RC" value="Parameter assignment for resolution blocks unavailable " />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="7ql_X0U3YPO" role="3cqZAp" />
                   <node concept="3cpWs6" id="2lS7bsHRhpE" role="3cqZAp">
                     <node concept="Xl_RD" id="2lS7bsHRiAe" role="3cqZAk">
                       <property role="Xl_RC" value=" " />
@@ -4576,29 +4627,24 @@
             </node>
             <node concept="3clFbS" id="3cWp1ZaFwJO" role="3eOfB_">
               <node concept="3cpWs6" id="3cWp1ZaFwJP" role="3cqZAp">
-                <node concept="3cpWs3" id="3cWp1ZaFwJQ" role="3cqZAk">
-                  <node concept="Xl_RD" id="3cWp1ZaFwJR" role="3uHU7w">
-                    <property role="Xl_RC" value=")" />
+                <node concept="3cpWs3" id="3cWp1ZaFwJS" role="3cqZAk">
+                  <node concept="Xl_RD" id="3cWp1ZaFwJT" role="3uHU7B">
+                    <property role="Xl_RC" value="!" />
                   </node>
-                  <node concept="3cpWs3" id="3cWp1ZaFwJS" role="3uHU7B">
-                    <node concept="Xl_RD" id="3cWp1ZaFwJT" role="3uHU7B">
-                      <property role="Xl_RC" value="(!" />
-                    </node>
-                    <node concept="2OqwBi" id="3cWp1ZaFwJU" role="3uHU7w">
-                      <node concept="2OqwBi" id="3cWp1ZaFwJV" role="2Oq$k0">
-                        <node concept="1PxgMI" id="3cWp1ZaFwJW" role="2Oq$k0">
-                          <ref role="1m5ApE" to="q3w4:3cWp1ZaEoex" resolve="NotFormulaTr" />
-                          <node concept="13iPFW" id="3cWp1ZaFwJX" role="1m5AlR" />
-                        </node>
-                        <node concept="3TrEf2" id="3cWp1ZaGbOH" role="2OqNvi">
-                          <ref role="3Tt5mk" to="q3w4:3cWp1ZaEoeJ" resolve="arg" />
-                        </node>
+                  <node concept="2OqwBi" id="3cWp1ZaFwJU" role="3uHU7w">
+                    <node concept="2OqwBi" id="3cWp1ZaFwJV" role="2Oq$k0">
+                      <node concept="1PxgMI" id="3cWp1ZaFwJW" role="2Oq$k0">
+                        <ref role="1m5ApE" to="q3w4:3cWp1ZaEoex" resolve="NotFormulaTr" />
+                        <node concept="13iPFW" id="3cWp1ZaFwJX" role="1m5AlR" />
                       </node>
-                      <node concept="2qgKlT" id="3cWp1ZaFwJZ" role="2OqNvi">
-                        <ref role="37wK5l" node="3cWp1ZaFwJv" resolve="toFormulaString" />
-                        <node concept="37vLTw" id="3cWp1ZaFwK0" role="37wK5m">
-                          <ref role="3cqZAo" node="3cWp1ZaFwKQ" resolve="triggerMap" />
-                        </node>
+                      <node concept="3TrEf2" id="3cWp1ZaGbOH" role="2OqNvi">
+                        <ref role="3Tt5mk" to="q3w4:3cWp1ZaEoeJ" resolve="arg" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="3cWp1ZaFwJZ" role="2OqNvi">
+                      <ref role="37wK5l" node="3cWp1ZaFwJv" resolve="toFormulaString" />
+                      <node concept="37vLTw" id="3cWp1ZaFwK0" role="37wK5m">
+                        <ref role="3cqZAo" node="3cWp1ZaFwKQ" resolve="triggerMap" />
                       </node>
                     </node>
                   </node>
