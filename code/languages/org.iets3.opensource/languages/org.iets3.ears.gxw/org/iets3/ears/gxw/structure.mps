@@ -141,7 +141,7 @@
     </node>
     <node concept="1TJgyj" id="7vMAitzBZQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="listOfNames" />
+      <property role="20kJfa" value="listOfComponents" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="135049047333306358" />
       <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />

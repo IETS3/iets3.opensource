@@ -353,7 +353,7 @@
         <property role="3F0ifm" value="" />
       </node>
       <node concept="3F0ifn" id="7vMAitzV52" role="3EZMnx">
-        <property role="3F0ifm" value="List Of Names:" />
+        <property role="3F0ifm" value="List Of Components:" />
         <node concept="3Xmtl4" id="7vMAit$0zV" role="3F10Kt">
           <node concept="1wgc9g" id="7vMAit$2kU" role="3XvnJa">
             <ref role="1wgcnl" to="r4b4:7TAjv1QUX$w" resolve="heading" />
@@ -368,7 +368,7 @@
       </node>
       <node concept="3F2HdR" id="7vMAitzV53" role="3EZMnx">
         <property role="S$F3r" value="true" />
-        <ref role="1NtTu8" to="q3w4:7vMAitzBZQ" resolve="listOfNames" />
+        <ref role="1NtTu8" to="q3w4:7vMAitzBZQ" resolve="listOfComponents" />
         <node concept="2iRkQZ" id="7vMAitzV54" role="2czzBx" />
         <node concept="3F0ifn" id="7vMAitzV55" role="2czzBI">
           <node concept="VPxyj" id="7vMAitzV56" role="3F10Kt">
@@ -392,7 +392,7 @@
                         <node concept="2OqwBi" id="7vMAitzV5h" role="2Oq$k0">
                           <node concept="pncrf" id="7vMAitzV5i" role="2Oq$k0" />
                           <node concept="3Tsc0h" id="7vMAitzWow" role="2OqNvi">
-                            <ref role="3TtcxE" to="q3w4:7vMAitzBZQ" resolve="listOfNames" />
+                            <ref role="3TtcxE" to="q3w4:7vMAitzBZQ" resolve="listOfComponents" />
                           </node>
                         </node>
                         <node concept="34oBXx" id="7vMAitzV5k" role="2OqNvi" />
