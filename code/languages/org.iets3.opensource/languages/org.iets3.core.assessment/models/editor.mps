@@ -377,6 +377,9 @@
       </node>
       <node concept="3F1sOY" id="6_Ift$_MtRh" role="3EZMnx">
         <ref role="1NtTu8" to="330h:6_Ift$_LXGg" resolve="kind" />
+        <node concept="VechU" id="2eLegUqgCHZ" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6_Ift$_MtR_" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
