@@ -153,6 +153,13 @@
       <property role="IQ2ns" value="135049047333306363" />
       <ref role="20lvS9" node="UoN5smVQln" resolve="SystemResponse" />
     </node>
+    <node concept="1TJgyj" id="1pRfBxTOqxq" role="1TKVEi">
+      <property role="IQ2ns" value="1618831278223763546" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listOfAxioms" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1pRfBxTOoi4" resolve="Axiom" />
+    </node>
     <node concept="PrWs8" id="7vMAitzEd1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -533,6 +540,32 @@
     </node>
     <node concept="PrWs8" id="1a1nVFdwSVm" role="PzmwI">
       <ref role="PrY4T" node="1a1nVFdwSVi" resolve="AbstractedUnwantedReq" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1pRfBxTOoi4">
+    <property role="EcuMT" value="1618831278223754372" />
+    <property role="TrG5h" value="Axiom" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1pRfBxTOVPn" role="1TKVEi">
+      <property role="IQ2ns" value="1618831278223899991" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="1TJgyj" id="1pRfBxTOVPs" role="1TKVEi">
+      <property role="IQ2ns" value="1618831278223899996" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="1TJgyj" id="1pRfBxTS6kL" role="1TKVEi">
+      <property role="IQ2ns" value="1618831278224729393" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="systemName" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
     </node>
   </node>
 </model>
