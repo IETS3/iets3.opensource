@@ -29,6 +29,7 @@
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -317,6 +318,35 @@
           <node concept="1wgc9g" id="7vMAitzYFx" role="3XvnJa">
             <ref role="1wgcnl" node="7vMAitz5Hw" resolve="chunkHeader" />
           </node>
+        </node>
+        <node concept="ljvvj" id="7Ja$ZlvjsqZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7Ja$Zlvjtol" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
+      <node concept="3EZMnI" id="7Ja$ZlvjukO" role="3EZMnx">
+        <node concept="2iRfu4" id="7Ja$ZlvjukP" role="2iSdaV" />
+        <node concept="3F0ifn" id="7Ja$ZlvjruD" role="3EZMnx">
+          <property role="3F0ifm" value="Controller Name:" />
+          <node concept="3Xmtl4" id="7Ja$Zlvj$k7" role="3F10Kt">
+            <node concept="1wgc9g" id="7Ja$Zlvj$kg" role="3XvnJa">
+              <ref role="1wgcnl" to="r4b4:7TAjv1QUX$w" resolve="heading" />
+            </node>
+          </node>
+          <node concept="Vb9p2" id="7Ja$Zlvj$7I" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+          <node concept="VechU" id="7Ja$Zlvj$hR" role="3F10Kt">
+            <property role="Vb096" value="darkGray" />
+          </node>
+          <node concept="pVoyu" id="7Ja$Zlvjt49" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7Ja$ZlvjuD7" role="3EZMnx">
+          <ref role="1NtTu8" to="q3w4:7Ja$Zlvjqyb" resolve="nameOfController" />
         </node>
       </node>
       <node concept="3F0ifn" id="6_TIzovgnh$" role="3EZMnx">

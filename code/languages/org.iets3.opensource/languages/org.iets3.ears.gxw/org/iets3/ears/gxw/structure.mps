@@ -156,6 +156,11 @@
     <node concept="PrWs8" id="7vMAitzEd1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7Ja$Zlvjqyb" role="1TKVEl">
+      <property role="IQ2nx" value="8920104694035884171" />
+      <property role="TrG5h" value="nameOfController" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5QnDqxDalN2">
     <property role="TrG5h" value="PropositionalFormulaSR" />

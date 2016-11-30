@@ -25,6 +25,7 @@
         <child id="1624247715511528094" name="systemResponse" index="oLToJ" />
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
+        <property id="8920104694035884171" name="nameOfSystem" index="$xNHY" />
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfNames" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
@@ -71,6 +72,7 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Container Fusing" />
+    <property role="$xNHY" value="Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
     </node>
