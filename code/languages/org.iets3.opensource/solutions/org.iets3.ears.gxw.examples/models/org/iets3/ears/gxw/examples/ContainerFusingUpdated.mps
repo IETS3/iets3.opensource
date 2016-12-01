@@ -89,7 +89,7 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Liquid Mixer" />
-    <property role="$xNHY" value="Container Fusing" />
+    <property role="$xNHY" value="Liquid Mixer Controller" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
     </node>
@@ -151,10 +151,6 @@
     <node concept="2uIZ38" id="7YbGQey_vrY" role="2skrmi">
       <property role="TrG5h" value="emergency button" />
       <property role="2uI0VX" value="the emergency button" />
-    </node>
-    <node concept="2uIZ38" id="7YbGQey_vs0" role="2skrmi">
-      <property role="TrG5h" value="processes" />
-      <property role="2uI0VX" value="the running processes" />
     </node>
     <node concept="2uIZ38" id="7YbGQey_vs5" role="2skrmi">
       <property role="TrG5h" value="start button" />
