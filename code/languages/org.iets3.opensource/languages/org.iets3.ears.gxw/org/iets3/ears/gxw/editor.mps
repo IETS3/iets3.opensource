@@ -1034,9 +1034,6 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="7ql_X0U5m9w" role="3EZMnx">
-        <property role="3F0ifm" value="." />
-      </node>
       <node concept="3F0ifn" id="7ql_X0U5mad" role="3EZMnx">
         <property role="3F0ifm" value="until" />
       </node>
@@ -1044,6 +1041,9 @@
         <ref role="1NtTu8" to="q3w4:7ql_X0U5maL" resolve="untilTrigger" />
       </node>
       <node concept="l2Vlx" id="7ql_X0U5m9x" role="2iSdaV" />
+      <node concept="3F0ifn" id="6thveTDMi_E" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+      </node>
     </node>
   </node>
 </model>

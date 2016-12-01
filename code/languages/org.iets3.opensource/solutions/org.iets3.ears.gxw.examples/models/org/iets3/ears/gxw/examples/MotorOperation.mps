@@ -57,7 +57,7 @@
     </language>
   </registry>
   <node concept="2skrmn" id="7HbJNeua$NC">
-    <property role="TrG5h" value="Glossery For Motor Operation" />
+    <property role="TrG5h" value="Glossary For Motor Operation" />
     <node concept="2uIZ38" id="7HbJNeua$NV" role="2skrmi">
       <property role="TrG5h" value="start switch" />
       <property role="2uI0VX" value="start switch" />
@@ -121,7 +121,7 @@
   </node>
   <node concept="OJ2fN" id="1vCvjaRsl6j">
     <property role="TrG5h" value="Requiremtnt for Motor Operation" />
-    <ref role="9DKRw" node="7HbJNeua$NC" resolve="Glossery For Motor Operation" />
+    <ref role="9DKRw" node="7HbJNeua$NC" resolve="Glossary For Motor Operation" />
     <node concept="1QfkUo" id="1vCvjaRwkhI" role="OJ2fO">
       <property role="1hs7$j" value="Motor Controller" />
       <ref role="1Qhi4P" node="7HbJNeua$O3" resolve="oil motor" />
