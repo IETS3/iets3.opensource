@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.plugin/org.iets3.core.expr.base.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.repl.plugin/org.iets3.core.expr.repl.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />

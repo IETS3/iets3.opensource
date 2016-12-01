@@ -75,6 +75,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -139,8 +140,8 @@
   <node concept="2PqlIr" id="18$bUx5q5RM">
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="TrG5h" value="findUsesOfTheConcept" />
-    <property role="39L4OI" value="Concept Instances is Tests" />
-    <property role="eK4wv" value="Concept Instances is Tests" />
+    <property role="39L4OI" value="Concept Instances in Tests" />
+    <property role="eK4wv" value="Concept Instances in Tests" />
     <ref role="3gKJdq" to="av4b:3_DFadMGHQh" resolve="InterpreterCoverageAssResult" />
     <node concept="2PqlIu" id="18$bUx5q5RN" role="3gKxsI">
       <node concept="3clFbS" id="18$bUx5q5RO" role="2VODD2">
@@ -194,11 +195,14 @@
                   <node concept="2Rf3mk" id="18$bUx5qf4$" role="2OqNvi">
                     <node concept="1xMEDy" id="18$bUx5qf4A" role="1xVPHs">
                       <node concept="25Kdxt" id="18$bUx5qfbl" role="ri$Ld">
-                        <node concept="2OqwBi" id="18$bUx5qfsc" role="25KhWn">
-                          <node concept="39LhUk" id="18$bUx5qfia" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="18$bUx5qfJ8" role="2OqNvi">
-                            <ref role="3Tt5mk" to="av4b:3_DFadMGHWm" resolve="concept" />
+                        <node concept="2OqwBi" id="7LhEVdlbJrH" role="25KhWn">
+                          <node concept="2OqwBi" id="18$bUx5qfsc" role="2Oq$k0">
+                            <node concept="39LhUk" id="18$bUx5qfia" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="18$bUx5qfJ8" role="2OqNvi">
+                              <ref role="3Tt5mk" to="av4b:3_DFadMGHWm" resolve="concept" />
+                            </node>
                           </node>
+                          <node concept="1rGIog" id="7LhEVdlbK1H" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

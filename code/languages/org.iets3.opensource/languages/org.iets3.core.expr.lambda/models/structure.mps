@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -251,6 +250,9 @@
     <node concept="PrWs8" id="RIvadv1bFg" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
+    <node concept="PrWs8" id="5ElkanPXy9s" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
       <property role="TrG5h" value="ext" />
       <property role="IQ2nx" value="2861782275883660525" />
@@ -369,6 +371,9 @@
     </node>
     <node concept="PrWs8" id="KaZMgy4KPG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="PrWs8" id="5ElkanPXwPd" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
     <node concept="PrWs8" id="KaZMgykRO0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
