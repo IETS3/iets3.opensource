@@ -50,6 +50,12 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="8544902788588847844" name="org.iets3.ears.gxw.structure.ComplexEventDrivenUntil" flags="ng" index="1cwdkO">
+        <child id="8544902788588855985" name="untilTrigger" index="1cwflx" />
+        <child id="8544902788588855979" name="triggerWhile" index="1cwflV" />
+        <child id="8544902788588855980" name="triggerWhen" index="1cwflW" />
+        <child id="8544902788588855981" name="systemResponse" index="1cwflX" />
+      </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="9190636705088547490" name="org.iets3.ears.gxw.structure.Happens" flags="ng" index="3tWTB1" />
       <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
@@ -70,6 +76,7 @@
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
+        <property id="7444869022439316402" name="reqName" index="eBQts" />
         <reference id="7600310587779488515" name="systemName" index="1Qhi4P" />
       </concept>
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
@@ -78,11 +85,16 @@
       <concept id="3691935882243834792" name="org.iets3.ears.gxw.structure.UnaryFormulaTr" flags="ng" index="3T_uuR">
         <child id="3691935882243834799" name="arg" index="3T_uuK" />
       </concept>
+      <concept id="3691935882243834791" name="org.iets3.ears.gxw.structure.BinaryFormulaTr" flags="ng" index="3T_uuS">
+        <child id="3691935882243834794" name="arg2" index="3T_uuP" />
+        <child id="3691935882243834793" name="arg1" index="3T_uuQ" />
+      </concept>
+      <concept id="3691935882243834786" name="org.iets3.ears.gxw.structure.OrFormulaTr" flags="ng" index="3T_uuX" />
       <concept id="3691935882243834785" name="org.iets3.ears.gxw.structure.NotFormulaTr" flags="ng" index="3T_uuY" />
     </language>
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
-    <property role="TrG5h" value="Glossary For Container Fusing" />
+    <property role="TrG5h" value="Glossary For Liquid Mixer" />
     <property role="$xNHY" value="Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
@@ -155,11 +167,11 @@
       <property role="2uI0VX" value="the start button" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oob" role="2skrmi">
-      <property role="TrG5h" value="liquid level1 sensor" />
+      <property role="TrG5h" value="liquid level 1 sensor" />
       <property role="2uI0VX" value="sensor for liquid level 1 detection" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oog" role="2skrmi">
-      <property role="TrG5h" value="liquid level2 sensor" />
+      <property role="TrG5h" value="liquid level 2 sensor" />
       <property role="2uI0VX" value="the sensor for liquid level 2 detection" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oom" role="2skrmi">
@@ -232,10 +244,11 @@
     </node>
   </node>
   <node concept="OJ2fN" id="1pRfBxTLTzE">
-    <property role="TrG5h" value="Requirements For Container Fusing" />
-    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Container Fusing" />
+    <property role="TrG5h" value="Requirements For Liquid Mixer" />
+    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Liquid Mixer" />
     <node concept="3v0$t_" id="1pRfBxTLTAW" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req1 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uuY" id="1pRfBxTLTC8" role="3v0$n0">
         <node concept="3T_uu0" id="1pRfBxTLTCc" role="3T_uuK">
@@ -252,6 +265,7 @@
     </node>
     <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req2 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3t3aUO" id="1pRfBxTOo82" role="3tWTBb" />
       <node concept="OJJ_U" id="1pRfBxTOo8s" role="1QgFCz">
@@ -261,23 +275,28 @@
         <ref role="3T_uuC" node="34ScOrO_oqN" />
       </node>
     </node>
-    <node concept="3v0$t_" id="1pRfBxTOob9" role="OJ2fO">
+    <node concept="1cwdkO" id="7ql_X0U6xCi" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req3 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="3T_uuY" id="1pRfBxTOoc9" role="3v0$n0">
-        <node concept="3T_uu0" id="1pRfBxTOocd" role="3T_uuK">
-          <ref role="3T_uuC" node="34ScOrO_orh" />
-        </node>
-      </node>
-      <node concept="3T_uu0" id="1pRfBxTOocg" role="3v0$n5">
+      <node concept="3T_uu0" id="7ql_X0U6xDl" role="1cwflW">
         <ref role="3T_uuC" node="34ScOrO_oqN" />
       </node>
-      <node concept="OJJ_U" id="1pRfBxTOoci" role="3v0$kZ">
+      <node concept="OJJ_U" id="6thveTDNUqU" role="1cwflX">
         <ref role="OJJ_O" node="7HbJNetZtsV" />
+      </node>
+      <node concept="3T_uu0" id="7ql_X0U6xDr" role="1cwflx">
+        <ref role="3T_uuC" node="34ScOrO_otc" />
+      </node>
+      <node concept="3T_uuY" id="7ql_X0UfA2T" role="1cwflV">
+        <node concept="3T_uu0" id="7ql_X0UfA2X" role="3T_uuK">
+          <ref role="3T_uuC" node="34ScOrO_orh" />
+        </node>
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOodo" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req4 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="1pRfBxTOoet" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_orh" />
@@ -288,6 +307,7 @@
       </node>
     </node>
     <node concept="oLToE" id="1qavb4ekVcH" role="OJ2fO">
+      <property role="eBQts" value="Req5 " />
       <ref role="1Qhi4P" node="34ScOrO_ow4" resolve="60 sec timer" />
       <node concept="3T_uu0" id="1qavb4ekVd6" role="oLToI">
         <ref role="3T_uuC" node="34ScOrO_orh" />
@@ -297,21 +317,28 @@
         <ref role="OJJ_O" node="7HbJNetZt_t" />
       </node>
     </node>
-    <node concept="1QfkUo" id="1qavb4emVFG" role="OJ2fO">
+    <node concept="1QfkUo" id="6thveTDNxGJ" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req6 " />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
-      <node concept="3T_uu0" id="1qavb4emVG9" role="3tOtb8">
+      <node concept="3T_uu0" id="6thveTDNxGK" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_orh" />
       </node>
-      <node concept="3tWTB1" id="1qavb4emVGb" role="3tWTBb" />
-      <node concept="OJJ_U" id="1pRfBxTOoi1" role="1QgFCz">
+      <node concept="3tWTB1" id="6thveTDNxGL" role="3tWTBb" />
+      <node concept="OJJ_U" id="6thveTDNxHF" role="1QgFCz">
         <ref role="OJJ_O" node="1qavb4eyKmf" />
       </node>
-      <node concept="3T_uu0" id="1pRfBxTOofC" role="3T_IbW">
-        <ref role="3T_uuC" node="34ScOrO_opg" />
+      <node concept="3T_uuX" id="7ql_X0UmrCc" role="3T_IbW">
+        <node concept="3T_uu0" id="7ql_X0UmrCi" role="3T_uuQ">
+          <ref role="3T_uuC" node="34ScOrO_opg" />
+        </node>
+        <node concept="3T_uu0" id="7ql_X0UmrCl" role="3T_uuP">
+          <ref role="3T_uuC" node="34ScOrO_otc" />
+        </node>
       </node>
     </node>
     <node concept="oLToE" id="1qavb4emVHa" role="OJ2fO">
+      <property role="eBQts" value="Req7 " />
       <ref role="1Qhi4P" node="1qavb4emVGY" resolve="120 sec timer" />
       <node concept="OJJ_U" id="1pRfBxTMD07" role="oLToJ">
         <ref role="OJJ_O" node="7HbJNetZtHS" />
@@ -321,22 +348,29 @@
       </node>
       <node concept="3t3aUO" id="1qavb4emVHM" role="3tWTBb" />
     </node>
-    <node concept="1QfkUo" id="1qavb4emVIr" role="OJ2fO">
+    <node concept="1QfkUo" id="6thveTDNxHI" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req8 " />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="OJJ_U" id="1pRfBxTOohY" role="1QgFCz">
+      <node concept="OJJ_U" id="6thveTDNxIJ" role="1QgFCz">
         <ref role="OJJ_O" node="7HbJNetZttc" />
       </node>
-      <node concept="3T_uu0" id="1qavb4emVJh" role="3tOtb8">
+      <node concept="3T_uu0" id="6thveTDNxHK" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_opg" />
       </node>
-      <node concept="3tWTB1" id="1qavb4emVJj" role="3tWTBb" />
-      <node concept="3T_uu0" id="1pRfBxTOofE" role="3T_IbW">
-        <ref role="3T_uuC" node="34ScOrO_opj" />
+      <node concept="3tWTB1" id="6thveTDNxHL" role="3tWTBb" />
+      <node concept="3T_uuX" id="7ql_X0UmrCq" role="3T_IbW">
+        <node concept="3T_uu0" id="7ql_X0UmrCw" role="3T_uuQ">
+          <ref role="3T_uuC" node="34ScOrO_opj" />
+        </node>
+        <node concept="3T_uu0" id="7ql_X0UmrCz" role="3T_uuP">
+          <ref role="3T_uuC" node="34ScOrO_otc" />
+        </node>
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw0y1" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req9 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uu0" id="Sr3WmIw0yM" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -348,6 +382,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2if" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req10" />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="Sr3WmIw2j5" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -359,6 +394,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2ka" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req11" />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
       <node concept="3T_uu0" id="Sr3WmIw2l5" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -370,6 +406,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2mf" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req12" />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
       <node concept="3T_uu0" id="Sr3WmIw2nf" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />

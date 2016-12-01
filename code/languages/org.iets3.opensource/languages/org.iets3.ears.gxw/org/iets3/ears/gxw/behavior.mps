@@ -1177,7 +1177,7 @@
                   <ref role="3cqZAo" node="2lS7bsHP$ir" resolve="result" />
                 </node>
                 <node concept="Xl_RD" id="2lS7bsHP_Ex" role="3uHU7B">
-                  <property role="Xl_RC" value="the reusult string has " />
+                  <property role="Xl_RC" value="the result string has " />
                 </node>
               </node>
             </node>
@@ -1691,7 +1691,7 @@
                       <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                       <node concept="10Nm6u" id="2EaowSc4Cho" role="37wK5m" />
                       <node concept="Xl_RD" id="2EaowSc68PD" role="37wK5m">
-                        <property role="Xl_RC" value="Parameter assignment for resolution blocks unavailable " />
+                        <property role="Xl_RC" value="Error: Parameter assignment for resolution blocks unavailable (the spec is not realizable)" />
                       </node>
                     </node>
                   </node>

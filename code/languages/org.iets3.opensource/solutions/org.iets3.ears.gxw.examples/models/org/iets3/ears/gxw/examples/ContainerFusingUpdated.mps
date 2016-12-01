@@ -70,6 +70,7 @@
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
+        <property id="7444869022439316402" name="reqName" index="eBQts" />
         <reference id="7600310587779488515" name="systemName" index="1Qhi4P" />
       </concept>
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
@@ -87,7 +88,7 @@
     </language>
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
-    <property role="TrG5h" value="Glossary For Container Fusing" />
+    <property role="TrG5h" value="Glossary For Liquid Mixer" />
     <property role="$xNHY" value="Container Fusing" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
@@ -160,11 +161,11 @@
       <property role="2uI0VX" value="the start button" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oob" role="2skrmi">
-      <property role="TrG5h" value="liquid level1 sensor" />
+      <property role="TrG5h" value="liquid level 1 sensor" />
       <property role="2uI0VX" value="sensor for liquid level 1 detection" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oog" role="2skrmi">
-      <property role="TrG5h" value="liquid level2 sensor" />
+      <property role="TrG5h" value="liquid level 2 sensor" />
       <property role="2uI0VX" value="the sensor for liquid level 2 detection" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oom" role="2skrmi">
@@ -237,10 +238,11 @@
     </node>
   </node>
   <node concept="OJ2fN" id="1pRfBxTLTzE">
-    <property role="TrG5h" value="Requirements For Container Fusing" />
-    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Container Fusing" />
+    <property role="TrG5h" value="Requirements For Liquid Mixer" />
+    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Liquid Mixer" />
     <node concept="1cwdkO" id="7ql_X0U6gM0" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req1 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uuY" id="7ql_X0U6xol" role="1cwflV">
         <node concept="3T_uu0" id="7ql_X0U6xoq" role="3T_uuK">
@@ -259,6 +261,7 @@
     </node>
     <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req2 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3t3aUO" id="1pRfBxTOo82" role="3tWTBb" />
       <node concept="OJJ_U" id="1pRfBxTOo8s" role="1QgFCz">
@@ -270,6 +273,7 @@
     </node>
     <node concept="1cwdkO" id="7ql_X0U6xCi" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req3 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="7ql_X0U6xDl" role="1cwflW">
         <ref role="3T_uuC" node="34ScOrO_oqN" />
@@ -288,6 +292,7 @@
     </node>
     <node concept="sEiiz" id="1pRfBxTOodo" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req4 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="1pRfBxTOoet" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_orh" />
@@ -298,6 +303,7 @@
       </node>
     </node>
     <node concept="oLToE" id="1qavb4ekVcH" role="OJ2fO">
+      <property role="eBQts" value="Req5 " />
       <ref role="1Qhi4P" node="34ScOrO_ow4" resolve="60 sec timer" />
       <node concept="3T_uu0" id="1qavb4ekVd6" role="oLToI">
         <ref role="3T_uuC" node="34ScOrO_orh" />
@@ -309,6 +315,7 @@
     </node>
     <node concept="1QfkUo" id="1qavb4emVFG" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req6 " />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
       <node concept="3T_uu0" id="1qavb4emVG9" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_orh" />
@@ -327,6 +334,7 @@
       </node>
     </node>
     <node concept="oLToE" id="1qavb4emVHa" role="OJ2fO">
+      <property role="eBQts" value="Req7 " />
       <ref role="1Qhi4P" node="1qavb4emVGY" resolve="120 sec timer" />
       <node concept="OJJ_U" id="1pRfBxTMD07" role="oLToJ">
         <ref role="OJJ_O" node="7HbJNetZtHS" />
@@ -338,6 +346,7 @@
     </node>
     <node concept="1QfkUo" id="1qavb4emVIr" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req8 " />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
       <node concept="OJJ_U" id="1pRfBxTOohY" role="1QgFCz">
         <ref role="OJJ_O" node="7HbJNetZttc" />
@@ -357,6 +366,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw0y1" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req9 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uu0" id="Sr3WmIw0yM" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -368,6 +378,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2if" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req10" />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="Sr3WmIw2j5" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -379,6 +390,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2ka" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req11" />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
       <node concept="3T_uu0" id="Sr3WmIw2l5" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
@@ -390,6 +402,7 @@
     </node>
     <node concept="sEiiz" id="Sr3WmIw2mf" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req12" />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
       <node concept="3T_uu0" id="Sr3WmIw2nf" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_otc" />
