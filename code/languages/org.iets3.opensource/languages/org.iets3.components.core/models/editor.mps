@@ -3893,7 +3893,7 @@
                 <node concept="3cpWsn" id="7LhEVdnz9h_" role="3cpWs9">
                   <property role="TrG5h" value="compInterface" />
                   <node concept="3Tqbb2" id="7LhEVdnz9hx" role="1tU5fm">
-                    <ref role="ehGHo" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
+                    <ref role="ehGHo" to="w9y2:6Y_kjZqWvHl" resolve="AbstractComponentInterface" />
                   </node>
                   <node concept="2OqwBi" id="7LhEVdnz9hA" role="33vP2m">
                     <node concept="2qgKlT" id="7LhEVdnz9hB" role="2OqNvi">
@@ -7813,6 +7813,27 @@
             </node>
           </node>
         </node>
+        <node concept="2OqwBi" id="33B7rHqurzT" role="1xbcaF">
+          <node concept="2OqwBi" id="33B7rHququu" role="2Oq$k0">
+            <node concept="2OqwBi" id="33B7rHqupJD" role="2Oq$k0">
+              <node concept="2OqwBi" id="33B7rHquoTu" role="2Oq$k0">
+                <node concept="1Pxb5l" id="33B7rHquoG5" role="2Oq$k0" />
+                <node concept="3TrEf2" id="33B7rHqupkX" role="2OqNvi">
+                  <ref role="3Tt5mk" to="w9y2:2Y$6Xot5kGx" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="33B7rHquq35" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="33B7rHqur4a" role="2OqNvi">
+              <ref role="3Tt5mk" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+            </node>
+          </node>
+          <node concept="2qgKlT" id="33B7rHqurTO" role="2OqNvi">
+            <ref role="37wK5l" to="3eba:6$fTUGAuTlR" resolve="characteristicColor" />
+          </node>
+        </node>
       </node>
       <node concept="3clFbT" id="5EHardOVWgh" role="TjlW2">
         <property role="3clFbU" value="true" />
@@ -8095,19 +8116,8 @@
             <node concept="2xDIQ0" id="2HR3cagcgyl" role="2Oq$k0" />
             <node concept="liA8E" id="2HR3cagcgSz" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-              <node concept="2ShNRf" id="7Atos1xLApp" role="37wK5m">
-                <node concept="1pGfFk" id="7Atos1xLApo" role="2ShVmc">
-                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                  <node concept="3cmrfG" id="7Atos1xLApO" role="37wK5m">
-                    <property role="3cmrfH" value="210" />
-                  </node>
-                  <node concept="3cmrfG" id="7Atos1xLA$B" role="37wK5m">
-                    <property role="3cmrfH" value="210" />
-                  </node>
-                  <node concept="3cmrfG" id="7Atos1xLAEm" role="37wK5m">
-                    <property role="3cmrfH" value="210" />
-                  </node>
-                </node>
+              <node concept="1xnly_" id="33B7rHqus7b" role="37wK5m">
+                <ref role="1xnlzC" node="33B7rHqus3u" resolve="componentColor" />
               </node>
             </node>
           </node>
@@ -8252,6 +8262,12 @@
     <node concept="1xmO9C" id="3diMC1cUomv" role="1xmOgE">
       <property role="TrG5h" value="isComposite" />
       <node concept="10P_77" id="3diMC1cUonL" role="1xmOb1" />
+    </node>
+    <node concept="1xmO9C" id="33B7rHqus3u" role="1xmOgE">
+      <property role="TrG5h" value="componentColor" />
+      <node concept="3uibUv" id="33B7rHqus3F" role="1xmOb1">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="siw10GrJZY">
@@ -11525,7 +11541,7 @@
   </node>
   <node concept="24kQdi" id="x8tpS_Rrws">
     <property role="3GE5qa" value="components.iface" />
-    <ref role="1XX52x" to="w9y2:x8tpS_RkkP" resolve="FunctionalComponentInterface" />
+    <ref role="1XX52x" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
     <node concept="3EZMnI" id="x8tpS_Rrwu" role="2wV5jI">
       <node concept="gc7cB" id="x8tpS_Vr2C" role="3EZMnx">
         <node concept="3VJUX4" id="x8tpS_Vr2D" role="3YsKMw">
