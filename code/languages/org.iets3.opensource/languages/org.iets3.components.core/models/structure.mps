@@ -1144,9 +1144,9 @@
   <node concept="1TIwiD" id="x8tpS_RkkP">
     <property role="EcuMT" value="596856272727131445" />
     <property role="3GE5qa" value="components.iface" />
-    <property role="TrG5h" value="FunctionalComponentInterface" />
+    <property role="TrG5h" value="ComponentInterface" />
     <property role="34LRSv" value="component interface" />
-    <ref role="1TJDcQ" node="6Y_kjZqWvHl" resolve="ComponentInterface" />
+    <ref role="1TJDcQ" node="6Y_kjZqWvHl" resolve="AbstractComponentInterface" />
     <node concept="1TJgyj" id="x8tpS_RkBA" role="1TKVEi">
       <property role="IQ2ns" value="596856272727132646" />
       <property role="20lmBu" value="aggregation" />
@@ -1189,7 +1189,7 @@
   <node concept="1TIwiD" id="6Y_kjZqWvHl">
     <property role="EcuMT" value="8044925644065340245" />
     <property role="3GE5qa" value="components.iface" />
-    <property role="TrG5h" value="ComponentInterface" />
+    <property role="TrG5h" value="AbstractComponentInterface" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
