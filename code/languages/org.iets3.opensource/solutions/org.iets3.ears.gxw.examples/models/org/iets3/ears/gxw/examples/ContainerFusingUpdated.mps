@@ -384,18 +384,6 @@
         <ref role="OJJ_O" node="1pRfBxTOo8E" />
       </node>
     </node>
-    <node concept="sEiiz" id="Sr3WmIw2ka" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
-      <property role="eBQts" value="Req11" />
-      <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="3T_uu0" id="Sr3WmIw2l5" role="3tOtb8">
-        <ref role="3T_uuC" node="34ScOrO_otc" />
-      </node>
-      <node concept="3t3aUO" id="Sr3WmIw2l7" role="3tWTBb" />
-      <node concept="OJJ_U" id="1pRfBxTOo9b" role="1QgFCz">
-        <ref role="OJJ_O" node="1pRfBxTOo8Y" />
-      </node>
-    </node>
     <node concept="sEiiz" id="Sr3WmIw2mf" role="OJ2fO">
       <property role="1hs7$j" value="Container Fusing Controller" />
       <property role="eBQts" value="Req12" />
@@ -407,6 +395,12 @@
       <node concept="OJJ_U" id="7Ja$Zlvj5FW" role="1QgFCz">
         <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
       </node>
+    </node>
+    <node concept="sEiiz" id="Sr3WmIw2ka" role="OJ2fO">
+      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="eBQts" value="Req11" />
+      <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
+      <node concept="3t3aUO" id="Sr3WmIw2l7" role="3tWTBb" />
     </node>
   </node>
 </model>

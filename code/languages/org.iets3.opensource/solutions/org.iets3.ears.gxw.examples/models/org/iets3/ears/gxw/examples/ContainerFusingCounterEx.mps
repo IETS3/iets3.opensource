@@ -95,7 +95,7 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Liquid Mixer" />
-    <property role="$xNHY" value="Container Fusing" />
+    <property role="$xNHY" value="Liquid Mixed Controller" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
     </node>
@@ -156,47 +156,43 @@
     </node>
     <node concept="2uIZ38" id="7YbGQey_vrY" role="2skrmi">
       <property role="TrG5h" value="emergency button" />
-      <property role="2uI0VX" value="the emergency button" />
-    </node>
-    <node concept="2uIZ38" id="7YbGQey_vs0" role="2skrmi">
-      <property role="TrG5h" value="processes" />
-      <property role="2uI0VX" value="the running processes" />
+      <property role="2uI0VX" value="to stop the process" />
     </node>
     <node concept="2uIZ38" id="7YbGQey_vs5" role="2skrmi">
       <property role="TrG5h" value="start button" />
-      <property role="2uI0VX" value="the start button" />
+      <property role="2uI0VX" value="to start the process" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oob" role="2skrmi">
       <property role="TrG5h" value="liquid level 1 sensor" />
-      <property role="2uI0VX" value="sensor for liquid level 1 detection" />
+      <property role="2uI0VX" value="detects first liquid is loaded" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oog" role="2skrmi">
       <property role="TrG5h" value="liquid level 2 sensor" />
-      <property role="2uI0VX" value="the sensor for liquid level 2 detection" />
+      <property role="2uI0VX" value="detects second liquid is loaded" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oom" role="2skrmi">
       <property role="TrG5h" value="valve 0" />
-      <property role="2uI0VX" value="valve for water flow" />
+      <property role="2uI0VX" value="valve for first liquid" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_oot" role="2skrmi">
       <property role="TrG5h" value="valve 1" />
-      <property role="2uI0VX" value="valve for water flow" />
+      <property role="2uI0VX" value="valve for second liquid" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_ooI" role="2skrmi">
       <property role="TrG5h" value="valve 2" />
-      <property role="2uI0VX" value="valve for water flow" />
+      <property role="2uI0VX" value="valve for mixture" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_op0" role="2skrmi">
       <property role="TrG5h" value="stirring motor" />
-      <property role="2uI0VX" value="the motor for rotation" />
+      <property role="2uI0VX" value="mixes the two liquids" />
     </node>
     <node concept="2uIZ38" id="34ScOrO_ow4" role="2skrmi">
       <property role="TrG5h" value="60 sec timer" />
-      <property role="2uI0VX" value="the timer for 60  second" />
+      <property role="2uI0VX" value="countdown for mixing" />
     </node>
     <node concept="2uIZ38" id="1qavb4emVGY" role="2skrmi">
       <property role="TrG5h" value="120 sec timer" />
-      <property role="2uI0VX" value="the timer for 120 sec" />
+      <property role="2uI0VX" value="countdown for draining the mixture" />
     </node>
     <node concept="1JDFFW" id="oMRsWNTJOx" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
