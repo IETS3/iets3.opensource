@@ -1478,7 +1478,7 @@
             </node>
             <node concept="2qgKlT" id="33B7rHqzLrl" role="2OqNvi">
               <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="EsrRn" id="33B7rHqzLDA" role="37wK5m" />
+              <node concept="otxO1" id="4PGMP7y0v9K" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1505,7 +1505,7 @@
             </node>
             <node concept="2qgKlT" id="33B7rHqBU6E" role="2OqNvi">
               <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="EsrRn" id="33B7rHqBU6F" role="37wK5m" />
+              <node concept="otxO1" id="4PGMP7y0x3_" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1532,7 +1532,34 @@
             </node>
             <node concept="2qgKlT" id="33B7rHqDfj3" role="2OqNvi">
               <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="EsrRn" id="33B7rHqDfj4" role="37wK5m" />
+              <node concept="otxO1" id="4PGMP7y0xCW" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4PGMP7y5sdM">
+    <property role="3GE5qa" value="components.iface.param" />
+    <ref role="1M2myG" to="w9y2:cJpacq6wur" resolve="Parameter" />
+    <node concept="nKS2y" id="4PGMP7y5sdN" role="1MLUbF">
+      <node concept="3clFbS" id="4PGMP7y5sdO" role="2VODD2">
+        <node concept="3clFbF" id="4PGMP7y5skZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4PGMP7y5tNR" role="3clFbG">
+            <node concept="2OqwBi" id="4PGMP7y5sws" role="2Oq$k0">
+              <node concept="nLn13" id="4PGMP7y5skY" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4PGMP7y5sGl" role="2OqNvi">
+                <node concept="1xMEDy" id="4PGMP7y5sGn" role="1xVPHs">
+                  <node concept="chp4Y" id="4PGMP7y5t5I" role="ri$Ld">
+                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4PGMP7y5trc" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4PGMP7y5uTP" role="2OqNvi">
+              <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
+              <node concept="otxO1" id="4PGMP7y5v7_" role="37wK5m" />
             </node>
           </node>
         </node>
