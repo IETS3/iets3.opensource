@@ -808,6 +808,18 @@
             <ref role="1Busuk" node="5FYd8xZZj2s" resolve="org.iets3.core.expr.path" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5VEHrQcW$Sd" role="3bR37C">
+          <node concept="3bR9La" id="5VEHrQcW$Se" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5VEHrQcW$Sf" role="3bR37C">
+          <node concept="3bR9La" id="5VEHrQcW$Sg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="78hTg1zaYCc" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2104,11 +2116,6 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1yeLz9" id="1lUgLJUn4so" role="1TViLv">
-          <property role="TrG5h" value="org.iets3.core.assessment#6913547888673465634" />
-          <property role="3LESm3" value="630ff5ee-4c20-48ab-b7f6-bad3a34adac8" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="6_Ift$_$OLL" role="3bR37C">
           <node concept="3bR9La" id="6_Ift$_$OLM" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2120,6 +2127,11 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
+        </node>
+        <node concept="1yeLz9" id="1lUgLJUn4so" role="1TViLv">
+          <property role="TrG5h" value="org.iets3.core.assessment#6913547888673465634" />
+          <property role="3LESm3" value="630ff5ee-4c20-48ab-b7f6-bad3a34adac8" />
+          <property role="2GAjPV" value="false" />
         </node>
       </node>
     </node>
