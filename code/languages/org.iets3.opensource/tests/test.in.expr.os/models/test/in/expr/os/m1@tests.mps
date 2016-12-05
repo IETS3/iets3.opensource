@@ -422,9 +422,7 @@
       <concept id="4577412849441593498" name="org.iets3.core.expr.toplevel.structure.EnumValueAccessor" flags="ng" index="YK6gA" />
       <concept id="4790956042240790396" name="org.iets3.core.expr.toplevel.structure.FunRef" flags="ng" index="1aeIDv" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
-      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60">
-        <property id="2861782275883660525" name="ext_old" index="1HeIcW" />
-      </concept>
+      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="820361861852634100" name="org.iets3.core.expr.toplevel.structure.OldValueExpr" flags="ng" index="1ooT$K" />
       <concept id="820361861853869169" name="org.iets3.core.expr.toplevel.structure.OldMemberRef" flags="ng" index="1osnqP">
         <reference id="820361861853869175" name="member" index="1osnqN" />
@@ -526,7 +524,7 @@
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
       <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
-        <property id="2861782275883660525" name="ext" index="1HeIcX" />
+        <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
@@ -5045,7 +5043,6 @@
         <node concept="1aga60" id="1yZU$FDYrwk" role="_iOnB">
           <property role="TrG5h" value="incExt" />
           <property role="1HeIcW" value="true" />
-          <property role="1HeIcX" value="true" />
           <node concept="1ahQXy" id="1yZU$FDYrwn" role="1ahQWs">
             <property role="TrG5h" value="this" />
             <node concept="mLuIC" id="1yZU$FDYrwo" role="3ix9CU" />
@@ -5062,7 +5059,6 @@
         <node concept="1aga60" id="1QYdL391YRU" role="_iOnB">
           <property role="TrG5h" value="addExt1" />
           <property role="1HeIcW" value="true" />
-          <property role="1HeIcX" value="true" />
           <node concept="1ahQXy" id="1QYdL391YRV" role="1ahQWs">
             <property role="TrG5h" value="this" />
             <node concept="mLuIC" id="1QYdL391YRW" role="3ix9CU" />
@@ -5083,7 +5079,6 @@
         <node concept="1aga60" id="1QYdL3923UJ" role="_iOnB">
           <property role="TrG5h" value="addExt2" />
           <property role="1HeIcW" value="true" />
-          <property role="1HeIcX" value="true" />
           <node concept="1ahQXy" id="1QYdL3923UK" role="1ahQWs">
             <property role="TrG5h" value="this" />
             <node concept="mLuIC" id="1QYdL3923UL" role="3ix9CU" />
@@ -5131,7 +5126,7 @@
         </node>
         <node concept="1aga60" id="2uR5X5aBkWD" role="_iOnB">
           <property role="TrG5h" value="addExt" />
-          <property role="1HeIcX" value="true" />
+          <property role="1HeIcW" value="true" />
           <node concept="30dDZf" id="2uR5X5aBkWE" role="1ahQXP">
             <node concept="1afdae" id="2uR5X5aBkWF" role="30dEs_">
               <ref role="1afue_" node="2uR5X5aBkWJ" resolve="b" />
@@ -5150,9 +5145,8 @@
           </node>
         </node>
         <node concept="1aga60" id="1yZU$FE6MzL" role="_iOnB">
-          <property role="1HeIcW" value="true" />
           <property role="TrG5h" value="addIncExt" />
-          <property role="1HeIcX" value="true" />
+          <property role="1HeIcW" value="true" />
           <node concept="1QScDb" id="1yZU$FE6Nnb" role="1ahQXP">
             <node concept="1He9k6" id="1yZU$FE6O8U" role="1QScD9">
               <ref role="1He9kT" node="2uR5X5aBkWD" resolve="addExt" />
@@ -13506,7 +13500,7 @@
         <node concept="_ixoA" id="46cplYy4hji" role="_iOnB" />
         <node concept="1aga60" id="1IomA9vXFim" role="_iOnB">
           <property role="TrG5h" value="trunc0" />
-          <property role="1HeIcX" value="true" />
+          <property role="1HeIcW" value="true" />
           <node concept="1MaffS" id="1IomA9vYtFQ" role="1ahQXP">
             <property role="1MbqUG" value="0" />
             <node concept="1Mae4K" id="1IomA9vYtFR" role="1Maf3p" />
@@ -14124,7 +14118,7 @@
         </node>
         <node concept="_ixoA" id="5ElkanPNlNv" role="_iOnB" />
         <node concept="1aga60" id="5ElkanPNlNy" role="_iOnB">
-          <property role="1HeIcX" value="true" />
+          <property role="1HeIcW" value="true" />
           <property role="TrG5h" value="toC" />
           <node concept="1ahQXy" id="5ElkanPNlNz" role="1ahQWs">
             <property role="TrG5h" value="this" />

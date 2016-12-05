@@ -70,6 +70,10 @@
       </concept>
     </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
+      <concept id="596856272727131445" name="org.iets3.components.core.structure.ComponentInterface" flags="ng" index="H_j2F">
+        <child id="596856272727132646" name="content" index="H_jLS" />
+      </concept>
+      <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
       <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ng" index="1i1AA1">
@@ -81,6 +85,7 @@
       </concept>
       <concept id="7804632404593231361" name="org.iets3.components.core.structure.Component" flags="ng" index="1i1XBj">
         <child id="7804632404593514231" name="kind" index="1i0K$_" />
+        <child id="7804632404593231452" name="contents" index="1i1XAe" />
       </concept>
     </language>
     <language id="be5191a9-3476-47ca-b2a7-a426623add55" name="org.iets3.core.assessment">
@@ -144,6 +149,9 @@
     <property role="TrG5h" value="testChunc" />
     <node concept="1i1XBj" id="1HLccB8wSqs" role="1i1AA4">
       <property role="TrG5h" value="A" />
+      <node concept="H_j2F" id="48h5VLc6YgB" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgC" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8yRh2" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8yRh3" role="3PL9QJ">
@@ -156,6 +164,9 @@
     </node>
     <node concept="1i1XBj" id="1HLccB8wSqC" role="1i1AA4">
       <property role="TrG5h" value="B" />
+      <node concept="H_j2F" id="48h5VLc6YgD" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgE" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
@@ -168,6 +179,9 @@
     </node>
     <node concept="1i1XBj" id="1HLccB8wSqS" role="1i1AA4">
       <property role="TrG5h" value="C" />
+      <node concept="H_j2F" id="48h5VLc6YgF" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgG" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
       <node concept="2Dz74_" id="mhbzaHu_nK" role="18DfD7">
         <node concept="2DxjnZ" id="mhbzaHu_nL" role="3PL9QJ">
@@ -189,16 +203,25 @@
     <node concept="1i1XBj" id="1Sur9ckX6Yc" role="1i1AA4">
       <property role="13Nl5X" value="true" />
       <property role="TrG5h" value="handlebars" />
+      <node concept="H_j2F" id="48h5VLc6YgH" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgI" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1Sur9ckX6Yd" role="1i0K$_" />
     </node>
     <node concept="1i1XBj" id="1Sur9ckX6Ym" role="1i1AA4">
       <property role="13Nl5X" value="true" />
       <property role="TrG5h" value="wheels" />
+      <node concept="H_j2F" id="48h5VLc6YgJ" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgK" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1Sur9ckX6Yo" role="1i0K$_" />
     </node>
     <node concept="1i1XBj" id="1Sur9ckX6YB" role="1i1AA4">
       <property role="13Nl5X" value="true" />
       <property role="TrG5h" value="frame" />
+      <node concept="H_j2F" id="48h5VLc6YgL" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgM" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1Sur9ckX6YC" role="1i0K$_" />
     </node>
     <node concept="1i1AuW" id="1Sur9ckX6Yw" role="1i1AA4" />
