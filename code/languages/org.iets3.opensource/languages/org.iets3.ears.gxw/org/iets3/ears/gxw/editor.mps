@@ -543,7 +543,10 @@
       </node>
       <node concept="3F0ifn" id="1pRfBxTOpeV" role="3EZMnx" />
       <node concept="3F0ifn" id="1pRfBxTOpyX" role="3EZMnx">
-        <property role="3F0ifm" value="List of Rules:" />
+        <property role="3F0ifm" value="List of Relations:" />
+        <node concept="Vb9p2" id="ALdBd2J0Px" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
+        </node>
       </node>
       <node concept="3F2HdR" id="1pRfBxTOqb1" role="3EZMnx">
         <property role="S$F3r" value="true" />

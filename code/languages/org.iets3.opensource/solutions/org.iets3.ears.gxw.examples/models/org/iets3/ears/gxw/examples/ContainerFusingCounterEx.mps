@@ -95,7 +95,7 @@
   </registry>
   <node concept="2skrmn" id="1pRfBxTLTzD">
     <property role="TrG5h" value="Glossary For Liquid Mixer" />
-    <property role="$xNHY" value="Liquid Mixed Controller" />
+    <property role="$xNHY" value="liquid mixer controller" />
     <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
       <property role="OJvIS" value="60 second timer expires" />
     </node>
@@ -106,10 +106,10 @@
       <property role="OJvIS" value="start button is pressed" />
     </node>
     <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 1 is reached" />
+      <property role="OJvIS" value="liquid level 1 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
-      <property role="OJvIS" value="liquidlevel 2 is reached" />
+      <property role="OJvIS" value="liquid level 2 is reached" />
     </node>
     <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
       <property role="OJvIS" value="emergency button is pressed" />
@@ -243,7 +243,7 @@
     <property role="TrG5h" value="Requirements For Liquid Mixer" />
     <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Liquid Mixer" />
     <node concept="3v0$t_" id="1pRfBxTLTAW" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req1 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uuY" id="1pRfBxTLTC8" role="3v0$n0">
@@ -260,7 +260,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req2 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3t3aUO" id="1pRfBxTOo82" role="3tWTBb" />
@@ -272,7 +272,7 @@
       </node>
     </node>
     <node concept="1cwdkO" id="7ql_X0U6xCi" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req3 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="7ql_X0U6xDl" role="1cwflW">
@@ -291,7 +291,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOodo" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req4 " />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="1pRfBxTOoet" role="3tOtb8">
@@ -314,7 +314,7 @@
       </node>
     </node>
     <node concept="1QfkUo" id="6thveTDNxGJ" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req6 " />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
       <node concept="3T_uu0" id="6thveTDNxGK" role="3tOtb8">
@@ -345,7 +345,7 @@
       <node concept="3t3aUO" id="1qavb4emVHM" role="3tWTBb" />
     </node>
     <node concept="1QfkUo" id="6thveTDNxHI" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req8 " />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
       <node concept="OJJ_U" id="6thveTDNxIJ" role="1QgFCz">
@@ -365,7 +365,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw0y1" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req9 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uu0" id="Sr3WmIw0yM" role="3tOtb8">
@@ -377,7 +377,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw2if" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req10" />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
       <node concept="3T_uu0" id="Sr3WmIw2j5" role="3tOtb8">
@@ -389,7 +389,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw2ka" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req11" />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
       <node concept="3T_uu0" id="Sr3WmIw2l5" role="3tOtb8">
@@ -401,7 +401,7 @@
       </node>
     </node>
     <node concept="sEiiz" id="Sr3WmIw2mf" role="OJ2fO">
-      <property role="1hs7$j" value="Container Fusing Controller" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req12" />
       <ref role="1Qhi4P" node="34ScOrO_op0" resolve="stirring motor" />
       <node concept="3T_uu0" id="Sr3WmIw2nf" role="3tOtb8">

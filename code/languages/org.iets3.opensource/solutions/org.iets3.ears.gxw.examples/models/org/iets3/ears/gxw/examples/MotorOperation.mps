@@ -22,6 +22,7 @@
         <property id="6744041109748080144" name="text" index="OJvIS" />
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
+        <property id="8920104694035884171" name="nameOfController" index="$xNHY" />
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
@@ -59,6 +60,7 @@
   </registry>
   <node concept="2skrmn" id="7HbJNeua$NC">
     <property role="TrG5h" value="Glossary For Motor Operation" />
+    <property role="$xNHY" value="liquid mixer controller" />
     <node concept="2uIZ38" id="7HbJNeua$NV" role="2skrmi">
       <property role="TrG5h" value="start switch" />
       <property role="2uI0VX" value="start switch" />
