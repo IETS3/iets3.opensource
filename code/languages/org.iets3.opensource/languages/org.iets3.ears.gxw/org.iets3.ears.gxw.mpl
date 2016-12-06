@@ -56,9 +56,9 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="/Users/levilucio/fortiss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/autoCode4.jar" />
-    <stubModelEntry path="/Users/levilucio/fortiss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/commons-cli-1.3.1.jar" />
-    <stubModelEntry path="/Users/levilucio/fortiss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.sat4j.core.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/autoCode4.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/commons-cli-1.3.1.jar" />
+    <stubModelEntry path="/home/ss/fortiss_devel/iets3.opensource/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.sat4j.core.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -70,6 +70,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -130,6 +131,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
     <module reference="7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)" version="0" />
     <module reference="33eb1b5b-ad96-4262-9112-684c487e01e0(org.iets3.graphicalLustre)" version="0" />
     <module reference="f32fddd3-9ea0-405b-9874-fdda57f5e83d(org.iets3.structuralCoder)" version="0" />

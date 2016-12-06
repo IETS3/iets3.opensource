@@ -52,6 +52,7 @@
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
+        <property id="7444869022439316402" name="reqName" index="eBQts" />
         <reference id="7600310587779488515" name="systemName" index="1Qhi4P" />
       </concept>
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
@@ -69,6 +70,7 @@
     <ref role="9DKRw" node="2$$ntKwwEOp" resolve="Glossary for Automatic Door" />
     <node concept="1QfkUo" id="7YbGQey_uCE" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
+      <property role="eBQts" value="Req1" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uCG" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -83,6 +85,7 @@
     </node>
     <node concept="sEiiz" id="7YbGQey_uCV" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
+      <property role="eBQts" value="Req2" />
       <ref role="1Qhi4P" node="2$$ntKwwEOP" resolve="counter" />
       <node concept="3T_uu0" id="7YbGQey_uD3" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -94,6 +97,7 @@
     </node>
     <node concept="1QfkUo" id="7YbGQey_uES" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
+      <property role="eBQts" value="Req3" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uF4" role="3tOtb8">
         <ref role="3T_uuC" node="3cWp1ZaFoCj" />
@@ -113,6 +117,7 @@
     </node>
     <node concept="sEiiz" id="7YbGQey_uGJ" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
+      <property role="eBQts" value="Req4" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_uH4" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPh" />
@@ -126,6 +131,7 @@
     </node>
     <node concept="sEiiz" id="7YbGQey_vr2" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
+      <property role="eBQts" value="Req5" />
       <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_vrw" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPc" />
