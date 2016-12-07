@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -1027,6 +1027,9 @@
     </node>
     <node concept="PrWs8" id="53cOfDpiRRE" role="PzmwI">
       <ref role="PrY4T" node="53cOfDpcBb9" resolve="IValidOtherwiseContainer" />
+    </node>
+    <node concept="PrWs8" id="4e_7uAsc7Ur" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
