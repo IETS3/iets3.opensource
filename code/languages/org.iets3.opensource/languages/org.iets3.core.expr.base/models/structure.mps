@@ -1027,6 +1027,9 @@
     <node concept="PrWs8" id="53cOfDpiRRE" role="PzmwI">
       <ref role="PrY4T" node="53cOfDpcBb9" resolve="IValidOtherwiseContainer" />
     </node>
+    <node concept="PrWs8" id="4e_7uAsc7Ur" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
     <property role="TrG5h" value="IOptionDerefContext" />
