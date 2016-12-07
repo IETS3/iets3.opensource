@@ -323,6 +323,9 @@
       <concept id="1307222191605829984" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssSummary" flags="ng" index="1n27V8">
         <property id="1307222191605830133" name="coverageRatio" index="1n27Tt" />
       </concept>
+      <concept id="4874335060898975312" name="org.iets3.core.expr.tests.structure.InvalidValueTestItem" flags="ng" index="3uI9eT">
+        <child id="4874335060898991569" name="actual" index="3uId0S" />
+      </concept>
       <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
         <property id="993724751390561557" name="label" index="1QVVTK" />
         <property id="993724751390561559" name="value" index="1QVVTM" />
@@ -12945,6 +12948,36 @@
         <node concept="_ixoA" id="3PrmTp69twA" role="_iOnB" />
         <node concept="_fkuM" id="3PrmTp69twB" role="_iOnB">
           <property role="TrG5h" value="alt" />
+          <node concept="3uI9eT" id="4e_7uAt8lU3" role="_fkp5">
+            <node concept="2fGnzi" id="4e_7uAt8lX3" role="3uId0S">
+              <node concept="2fGnzd" id="4e_7uAt8lX4" role="2fGnxs">
+                <node concept="30cPrO" id="4e_7uAt8lX5" role="2fGnzS">
+                  <node concept="30bXRB" id="4e_7uAt8lX6" role="30dEs_">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                  <node concept="30bXRB" id="4e_7uAt8lX7" role="30dEsF">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                </node>
+                <node concept="30bdrP" id="4e_7uAt8lX8" role="2fGnzA">
+                  <property role="30bdrQ" value="true" />
+                </node>
+              </node>
+              <node concept="2fGnzd" id="4e_7uAt8lX9" role="2fGnxs">
+                <node concept="30cPrO" id="4e_7uAt8lXa" role="2fGnzS">
+                  <node concept="30bXRB" id="4e_7uAt8lXb" role="30dEs_">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                  <node concept="30bXRB" id="4e_7uAt8lXc" role="30dEsF">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                </node>
+                <node concept="30bdrP" id="4e_7uAt8lXd" role="2fGnzA">
+                  <property role="30bdrQ" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="_fkuZ" id="38v7GtLoEiW" role="_fkp5">
             <node concept="_fku$" id="38v7GtLoEiX" role="_fkur" />
             <node concept="2fGnzi" id="38v7GtLoEkt" role="_fkuY">

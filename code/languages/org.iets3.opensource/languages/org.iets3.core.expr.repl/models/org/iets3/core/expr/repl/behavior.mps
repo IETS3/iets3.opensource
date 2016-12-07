@@ -16,6 +16,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -412,8 +413,8 @@
                             <node concept="37vLTw" id="TuTPrv$1Sv" role="2Oq$k0">
                               <ref role="3cqZAo" node="TuTPrvzYsc" resolve="ex" />
                             </node>
-                            <node concept="2OwXpG" id="TuTPrv$2KK" role="2OqNvi">
-                              <ref role="2Oxat5" to="oq0c:3Y6fbK1oUMZ" resolve="msg" />
+                            <node concept="2OwXpG" id="4e_7uAsZj$n" role="2OqNvi">
+                              <ref role="2Oxat5" to="2ahs:3Y6fbK1oUMZ" resolve="msg" />
                             </node>
                           </node>
                         </node>
