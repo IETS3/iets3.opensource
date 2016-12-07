@@ -399,10 +399,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
@@ -11192,17 +11191,17 @@
             <property role="1dT_AB" value=" should not be null." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5zu5MmJSQck" role="TUOzN">
+        <node concept="TUZQ0" id="5zu5MmJSQck" role="3nqlJM">
           <node concept="zr_55" id="5zu5MmJSQcm" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRL" resolve="outerPort" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5zu5MmJSQcn" role="TUOzN">
+        <node concept="TUZQ0" id="5zu5MmJSQcn" role="3nqlJM">
           <node concept="zr_55" id="5zu5MmJSQcp" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRN" resolve="compInstance" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5zu5MmJSQcq" role="TUOzN">
+        <node concept="TUZQ0" id="5zu5MmJSQcq" role="3nqlJM">
           <node concept="zr_55" id="5zu5MmJSQcs" role="zr_5Q">
             <ref role="zr_51" node="67E2MoTrIRP" resolve="innerPortName" />
           </node>
