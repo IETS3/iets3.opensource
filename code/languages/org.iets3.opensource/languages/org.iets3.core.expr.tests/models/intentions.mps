@@ -361,7 +361,7 @@
   </node>
   <node concept="2S6QgY" id="662bi$vavYP">
     <property role="3GE5qa" value="assessment.structural" />
-    <property role="TrG5h" value="addToIgnoredConcepts" />
+    <property role="TrG5h" value="addToIgnoredConceptsForStructuralCoverage" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="av4b:3MHhZL0ul1i" resolve="StructuralCoverageAssResult" />
     <node concept="2S6ZIM" id="662bi$vavYQ" role="2ZfVej">
@@ -434,7 +434,7 @@
   </node>
   <node concept="2S6QgY" id="662bi$vcTYm">
     <property role="3GE5qa" value="assessment.interpreter" />
-    <property role="TrG5h" value="addToIgnoredConcepts" />
+    <property role="TrG5h" value="addToIgnoredConceptsForInterpreterCoverage" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="av4b:3_DFadMGHQh" resolve="InterpreterCoverageAssResult" />
     <node concept="2S6ZIM" id="662bi$vcTYn" role="2ZfVej">
