@@ -10555,6 +10555,22 @@
             <node concept="1yHZxX" id="6SpoPQg9XmP" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbF" id="5E2FDFNLfoC" role="3cqZAp">
+          <node concept="2OqwBi" id="5E2FDFNLg75" role="3clFbG">
+            <node concept="37vLTw" id="5E2FDFNLfoA" role="2Oq$k0">
+              <ref role="3cqZAo" node="3_DFadNdBcS" resolve="ignoredConcepts" />
+            </node>
+            <node concept="2EZike" id="5E2FDFNLhjL" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5E2FDFNLibR" role="3cqZAp">
+          <node concept="2OqwBi" id="5E2FDFNLiNy" role="3clFbG">
+            <node concept="37vLTw" id="5E2FDFNLibP" role="2Oq$k0">
+              <ref role="3cqZAo" node="4_qY3E63_cc" resolve="registeredLanguages" />
+            </node>
+            <node concept="2EZike" id="5E2FDFNLjZJ" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="RaqQlV9pZI" role="3cqZAp">
           <node concept="2YIFZM" id="RaqQlV9pZH" role="3clFbG">
             <ref role="1Pybhc" node="4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
