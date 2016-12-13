@@ -36,6 +36,10 @@
       </concept>
     </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
+      <concept id="596856272727131445" name="org.iets3.components.core.structure.ComponentInterface" flags="ng" index="H_j2F">
+        <child id="596856272727132646" name="content" index="H_jLS" />
+      </concept>
+      <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
@@ -62,11 +66,17 @@
     <property role="TrG5h" value="chunk2" />
     <node concept="1i1XBj" id="1HLccB8wSqs" role="1i1AA4">
       <property role="TrG5h" value="D" />
+      <node concept="H_j2F" id="48h5VLc6YgN" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgO" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqu" role="1i0K$_" />
     </node>
     <node concept="1i1AuW" id="mhbzaHv6tD" role="1i1AA4" />
     <node concept="1i1XBj" id="1HLccB8wSqC" role="1i1AA4">
       <property role="TrG5h" value="E" />
+      <node concept="H_j2F" id="48h5VLc6YgP" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgQ" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqD" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wSr3" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
@@ -79,6 +89,9 @@
     </node>
     <node concept="1i1XBj" id="1HLccB8wSqS" role="1i1AA4">
       <property role="TrG5h" value="F" />
+      <node concept="H_j2F" id="48h5VLc6YgR" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgS" role="H_jLS" />
+      </node>
       <node concept="1i0KCM" id="1HLccB8wSqT" role="1i0K$_" />
       <node concept="2Dz74_" id="1HLccB8wTrk" role="18DfD7">
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
@@ -91,6 +104,9 @@
     </node>
     <node concept="1i1XBj" id="mhbzaHsV3V" role="1i1AA4">
       <property role="TrG5h" value="G" />
+      <node concept="H_j2F" id="48h5VLc6YgT" role="1i1XAe">
+        <node concept="H_vQO" id="48h5VLc6YgU" role="H_jLS" />
+      </node>
       <node concept="1i1Xx2" id="mhbzaHv6tn" role="1i1XAe" />
       <node concept="1i1Xx2" id="mhbzaHv6tr" role="1i1XAe" />
       <node concept="1i1Xx2" id="mhbzaHv6tx" role="1i1XAe" />

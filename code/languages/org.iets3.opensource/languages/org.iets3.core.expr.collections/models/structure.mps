@@ -65,6 +65,12 @@
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339749509" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="3tudP__pYOT" role="1TKVEi">
+      <property role="IQ2ns" value="3989687176989764921" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sizeConstraint" />
+      <ref role="20lvS9" node="19PglA20qX_" resolve="CollectionSizeSpec" />
+    </node>
     <node concept="1TJgyj" id="6zmBjqUily6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="baseType" />
@@ -616,6 +622,37 @@
       <property role="20kJfa" value="typeConstraint2" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19PglA20qX_">
+    <property role="EcuMT" value="1330041117646892901" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="CollectionSizeSpec" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="19PglA20qXJ" role="1TKVEl">
+      <property role="IQ2nx" value="1330041117646892911" />
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="19PglA20qXK" role="1TKVEl">
+      <property role="IQ2nx" value="1330041117646892912" />
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3tudP_AOMNf">
+    <property role="EcuMT" value="3989687177013570767" />
+    <property role="TrG5h" value="UpToTarget" />
+    <property role="34LRSv" value="upto" />
+    <node concept="1TJgyj" id="3tudP_AOMNg" role="1TKVEi">
+      <property role="IQ2ns" value="3989687177013570768" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="max" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3tudP_AYLZ5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>

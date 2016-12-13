@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -15,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -98,6 +100,44 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="traceKind" />
       <ref role="20lvS9" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="378sigX2COV">
+    <property role="EcuMT" value="3587241503657463099" />
+    <property role="TrG5h" value="UntracedElementsQuery" />
+    <property role="34LRSv" value="untraced elements" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="1TJgyj" id="378sigX35lr" role="1TKVEi">
+      <property role="IQ2ns" value="3587241503657579867" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scope" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+    </node>
+    <node concept="1TJgyj" id="6_Ift$_LXGg" role="1TKVEi">
+      <property role="IQ2ns" value="7597077624271657744" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <ref role="20lvS9" to="ci3w:1PzuxQOT$Zx" resolve="TraceKind" />
+    </node>
+    <node concept="1TJgyj" id="378sigX35lt" role="1TKVEi">
+      <property role="IQ2ns" value="3587241503657579869" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="like" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="378sigX3YpU">
+    <property role="EcuMT" value="3587241503657813626" />
+    <property role="3GE5qa" value="result" />
+    <property role="TrG5h" value="UntracedResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyj" id="378sigX3YpV" role="1TKVEi">
+      <property role="IQ2ns" value="3587241503657813627" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="element" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
 </model>
