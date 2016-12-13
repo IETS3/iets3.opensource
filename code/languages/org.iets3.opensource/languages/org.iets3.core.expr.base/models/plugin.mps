@@ -23,6 +23,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -4393,20 +4397,8 @@
                           <ref role="3cqZAo" node="3Y6fbK1oTkD" resolve="msg" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="3tudP__4A_u" role="37wK5m">
-                        <node concept="1eOMI4" id="3tudP__4_yf" role="2Oq$k0">
-                          <node concept="10QFUN" id="3tudP__4_yg" role="1eOMHV">
-                            <node concept="37vLTw" id="3tudP__4_ye" role="10QFUP">
-                              <ref role="3cqZAo" node="3Y6fbK1oTkz" resolve="ctx" />
-                            </node>
-                            <node concept="3uibUv" id="3tudP__4Af9" role="10QFUM">
-                              <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="3tudP__4B23" role="2OqNvi">
-                          <ref role="37wK5l" to="pbu6:6iqfHNC7XMu" resolve="getExecutionStack" />
-                        </node>
+                      <node concept="37vLTw" id="3tudP__4_ye" role="37wK5m">
+                        <ref role="3cqZAo" node="3Y6fbK1oTkz" resolve="ctx" />
                       </node>
                     </node>
                   </node>
@@ -4667,16 +4659,40 @@
               <property role="Xl_RC" value="&lt;node not in model&gt;" />
             </node>
           </node>
+          <node concept="37vLTw" id="5E2FDFNJ8v_" role="37wK5m">
+            <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
+          </node>
         </node>
         <node concept="3clFbF" id="3tudP__4yxC" role="3cqZAp">
           <node concept="37vLTI" id="3tudP__4$wW" role="3clFbG">
-            <node concept="37vLTw" id="3tudP__4$BA" role="37vLTx">
-              <ref role="3cqZAo" node="3tudP__4ykN" resolve="stack" />
-            </node>
             <node concept="2OqwBi" id="3tudP__4ySG" role="37vLTJ">
               <node concept="Xjq3P" id="3tudP__4yxA" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3tudP__4zmF" role="2OqNvi">
+              <node concept="2OwXpG" id="5E2FDFNJ5gY" role="2OqNvi">
                 <ref role="2Oxat5" node="3tudP__4lKa" resolve="executionStack" />
+              </node>
+            </node>
+            <node concept="3K4zz7" id="5E2FDFNJZlG" role="37vLTx">
+              <node concept="10Nm6u" id="5E2FDFNJZyZ" role="3K4GZi" />
+              <node concept="2ZW3vV" id="5E2FDFNJYAB" role="3K4Cdx">
+                <node concept="3uibUv" id="5E2FDFNJYSs" role="2ZW6by">
+                  <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
+                </node>
+                <node concept="37vLTw" id="5E2FDFNJYdl" role="2ZW6bz">
+                  <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5E2FDFNJ7Tk" role="3K4E3e">
+                <node concept="0kSF2" id="5E2FDFNJ7fm" role="2Oq$k0">
+                  <node concept="3uibUv" id="5E2FDFNJ7mv" role="0kSFW">
+                    <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
+                  </node>
+                  <node concept="37vLTw" id="5E2FDFNJ71z" role="0kSFX">
+                    <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5E2FDFNJ8k4" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:6iqfHNC7XMu" resolve="getExecutionStack" />
+                </node>
               </node>
             </node>
           </node>
@@ -4694,12 +4710,10 @@
         <property role="TrG5h" value="details" />
         <node concept="17QB3L" id="3Y6fbK1oUq_" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="3tudP__4ykN" role="3clF46">
-        <property role="TrG5h" value="stack" />
-        <node concept="_YKpA" id="3tudP__4yqn" role="1tU5fm">
-          <node concept="3uibUv" id="3tudP__4yqo" role="_ZDj9">
-            <ref role="3uigEE" to="pbu6:6iqfHNC0mYI" resolve="ExecutionStackData" />
-          </node>
+      <node concept="37vLTG" id="4_qY3E5j7S5" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4_qY3E5j7S6" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
         </node>
       </node>
     </node>

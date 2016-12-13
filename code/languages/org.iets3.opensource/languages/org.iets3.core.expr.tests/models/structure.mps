@@ -359,6 +359,12 @@
     <property role="34LRSv" value="structural test coverage" />
     <property role="3GE5qa" value="assessment.structural" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+    <node concept="1TJgyj" id="CrzyxmE7Fc" role="1TKVEi">
+      <property role="IQ2ns" value="728332068654185164" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nodesFilter" />
+      <ref role="20lvS9" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
+    </node>
     <node concept="1TJgyi" id="3MHhZL0$oIw" role="1TKVEl">
       <property role="IQ2nx" value="4372229961987230624" />
       <property role="TrG5h" value="highlightErrors" />
@@ -487,6 +493,14 @@
       <property role="TrG5h" value="errmsg" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="CrzyxmE7bQ">
+    <property role="EcuMT" value="728332068654183158" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="StructuralCoverageNodesFilter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
