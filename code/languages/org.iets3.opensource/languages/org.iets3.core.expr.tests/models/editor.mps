@@ -1747,7 +1747,7 @@
         <ref role="1NtTu8" to="av4b:ub9nkyHAbd" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="6HHp2Wn6yN1" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
+        <property role="3F0ifm" value="&lt;" />
         <node concept="11LMrY" id="6HHp2Wn6yVu" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1778,7 +1778,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6HHp2Wn6z1h" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
+        <property role="3F0ifm" value="&gt;" />
         <node concept="11L4FC" id="6HHp2Wn6z9H" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
