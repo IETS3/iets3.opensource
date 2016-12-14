@@ -15,6 +15,8 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -527,6 +529,31 @@
     </node>
     <node concept="13hLZK" id="7rOSrvnGeUG" role="13h7CW">
       <node concept="3clFbS" id="7rOSrvnGeUH" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3oWFox933ar">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="13h7C2" to="l80j:3oWFox9339o" resolve="ISolverVarRef" />
+    <node concept="13i0hz" id="3oWFox933aA" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="solverTaskVarType" />
+      <node concept="3Tm1VV" id="3oWFox933aB" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3oWFox933aU" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3clFbS" id="3oWFox933aD" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="3oWFox933Pw" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="solverTaskVarName" />
+      <node concept="3Tm1VV" id="3oWFox933Px" role="1B3o_S" />
+      <node concept="17QB3L" id="3oWFox933Q7" role="3clF45" />
+      <node concept="3clFbS" id="3oWFox933Pz" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3oWFox933as" role="13h7CW">
+      <node concept="3clFbS" id="3oWFox933at" role="2VODD2" />
     </node>
   </node>
 </model>

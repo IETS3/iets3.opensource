@@ -299,6 +299,14 @@
             </node>
             <node concept="3clFbJ" id="1OStjV1GAew" role="3cqZAp">
               <node concept="3clFbS" id="1OStjV1GAey" role="3clFbx">
+                <node concept="a7r0C" id="3vwecRCMWrL" role="3cqZAp">
+                  <node concept="Xl_RD" id="3vwecRCMWs7" role="a7wSD">
+                    <property role="Xl_RC" value="no solver task was created" />
+                  </node>
+                  <node concept="1YBJjd" id="3vwecRCMWtb" role="2OEOjV">
+                    <ref role="1YBMHb" node="4pkidg67LgL" resolve="is" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="1OStjV1GAo$" role="3cqZAp" />
               </node>
               <node concept="3clFbC" id="1OStjV1GAnY" role="3clFbw">
