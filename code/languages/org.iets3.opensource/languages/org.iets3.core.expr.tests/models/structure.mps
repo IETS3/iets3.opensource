@@ -527,5 +527,16 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="7fsCTt5Wdqg">
+    <property role="EcuMT" value="8348727679346857616" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="ModelsCoverageAssSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="7fsCTt5Wdqh" role="1TKVEl">
+      <property role="IQ2nx" value="8348727679346857617" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 
