@@ -1194,5 +1194,9 @@
     <property role="3GE5qa" value="docs" />
     <property role="TrG5h" value="IDocumentableWordContainer" />
   </node>
+  <node concept="PlHQZ" id="3oWFox95OXG">
+    <property role="EcuMT" value="3908189377504169836" />
+    <property role="TrG5h" value="IHasBaseType" />
+  </node>
 </model>
 

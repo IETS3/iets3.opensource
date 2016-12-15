@@ -14,7 +14,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -928,6 +928,26 @@
         <node concept="3Tqbb2" id="6eglc2$alYC" role="1tU5fm">
           <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3oWFox977Ot" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getBaseType" />
+      <ref role="13i0hy" to="pbu6:3oWFox95OZf" resolve="getBaseType" />
+      <node concept="3Tm1VV" id="3oWFox977Ou" role="1B3o_S" />
+      <node concept="3clFbS" id="3oWFox977Ox" role="3clF47">
+        <node concept="3clFbF" id="3oWFox978NW" role="3cqZAp">
+          <node concept="2OqwBi" id="3oWFox978XM" role="3clFbG">
+            <node concept="13iPFW" id="3oWFox978NV" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3oWFox9797K" role="2OqNvi">
+              <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3oWFox977Oy" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
   </node>
