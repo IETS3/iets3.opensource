@@ -497,8 +497,8 @@
   <node concept="1TIwiD" id="5IKJrJHPvF0">
     <property role="EcuMT" value="6606989268199275200" />
     <property role="3GE5qa" value="assessment.models" />
-    <property role="TrG5h" value="ModelsCoverageAssQuery" />
-    <property role="34LRSv" value="models test coverage" />
+    <property role="TrG5h" value="TestCoverageAssQuery" />
+    <property role="34LRSv" value="test coverage" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
   </node>
   <node concept="1TIwiD" id="4e_7uAt7oTg">

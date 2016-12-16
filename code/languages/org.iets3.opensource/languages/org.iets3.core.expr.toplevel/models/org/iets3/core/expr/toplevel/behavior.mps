@@ -1037,6 +1037,26 @@
     <node concept="13hLZK" id="7D7uZV2iYHG" role="13h7CW">
       <node concept="3clFbS" id="7D7uZV2iYHH" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="21vB0Vz1I_O" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getChildrenForCoverage" />
+      <ref role="13i0hy" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
+      <node concept="3Tm1VV" id="21vB0Vz1I_P" role="1B3o_S" />
+      <node concept="3clFbS" id="21vB0Vz1I_X" role="3clF47">
+        <node concept="3clFbF" id="21vB0Vz1IYX" role="3cqZAp">
+          <node concept="2OqwBi" id="21vB0Vz1Jbu" role="3clFbG">
+            <node concept="13iPFW" id="21vB0Vz1IYS" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="21vB0Vz1JnV" role="2OqNvi">
+              <ref role="3TtcxE" to="yv47:7D7uZV2iYAF" resolve="memberValues" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="21vB0Vz1I_Y" role="3clF45">
+        <node concept="3Tqbb2" id="21vB0Vz1I_Z" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6HHp2Wn8tiV">
     <ref role="13h7C2" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
