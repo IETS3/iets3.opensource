@@ -9,7 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
-    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1750,7 +1750,7 @@
         <ref role="1NtTu8" to="av4b:ub9nkyHAbd" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="6HHp2Wn6yN1" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
+        <property role="3F0ifm" value="&lt;" />
         <node concept="11LMrY" id="6HHp2Wn6yVu" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1781,7 +1781,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6HHp2Wn6z1h" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
+        <property role="3F0ifm" value="&gt;" />
         <node concept="11L4FC" id="6HHp2Wn6z9H" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
