@@ -2171,7 +2171,7 @@
   </node>
   <node concept="1lYeZD" id="WieAE6MnzD">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="null_extension" />
+    <property role="TrG5h" value="primitiveTypeMapper_extension" />
     <ref role="1lYe$Y" to="oq0c:WieAE6FJqt" resolve="primitiveTypeMapper" />
     <node concept="3Tm1VV" id="5NPKd17x9zQ" role="1B3o_S" />
     <node concept="2tJIrI" id="5NPKd17x9zR" role="jymVt" />
