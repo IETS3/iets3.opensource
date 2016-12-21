@@ -345,14 +345,24 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -825,6 +835,27 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="7m_MLaK8Gx6" role="pqm2j">
+          <node concept="3clFbS" id="7m_MLaK8Gx7" role="2VODD2">
+            <node concept="3clFbF" id="7m_MLaK8IUj" role="3cqZAp">
+              <node concept="2OqwBi" id="7m_MLaK8KZ8" role="3clFbG">
+                <node concept="2OqwBi" id="7m_MLaK8JdB" role="2Oq$k0">
+                  <node concept="pncrf" id="7m_MLaK8IUi" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="7m_MLaK8Kra" role="2OqNvi">
+                    <node concept="1xMEDy" id="7m_MLaK8Krc" role="1xVPHs">
+                      <node concept="chp4Y" id="7m_MLaK8KCa" role="ri$Ld">
+                        <ref role="cht4Q" to="av4b:ub9nkyK62f" resolve="TestSuite" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="7m_MLaK8Luu" role="2OqNvi">
+                  <ref role="3TsBF5" to="av4b:7m_MLaK8FlX" resolve="showTypes" />
                 </node>
               </node>
             </node>
@@ -1317,6 +1348,15 @@
             </node>
             <node concept="3F0A7n" id="6HHp2WmWVod" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:6HHp2WmWVi9" resolve="referenceOnlyLocalStuff" />
+            </node>
+          </node>
+          <node concept="3EZMnI" id="7m_MLaK8Fm2" role="3EZMnx">
+            <node concept="2iRfu4" id="7m_MLaK8Fm3" role="2iSdaV" />
+            <node concept="3F0ifn" id="7m_MLaK8Fm4" role="3EZMnx">
+              <property role="3F0ifm" value="Show Types:             " />
+            </node>
+            <node concept="3F0A7n" id="7m_MLaK8Fm5" role="3EZMnx">
+              <ref role="1NtTu8" to="av4b:7m_MLaK8FlX" resolve="showTypes" />
             </node>
           </node>
         </node>
