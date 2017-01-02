@@ -16,7 +16,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -424,6 +424,61 @@
                           <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
                         </node>
                         <node concept="2OwXpG" id="14RJwd1h2zr" role="2OqNvi">
+                          <ref role="2Oxat5" node="ub9nkyQiZj" resolve="errorMessage" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="5E2FDFNIsFR" role="TEbGg">
+                <node concept="3cpWsn" id="5E2FDFNIsFS" role="TDEfY">
+                  <property role="TrG5h" value="ex" />
+                  <node concept="3uibUv" id="5E2FDFNItAJ" role="1tU5fm">
+                    <ref role="3uigEE" to="2ahs:4e_7uAsLivr" resolve="InvalidValueException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5E2FDFNIsFU" role="TDEfX">
+                  <node concept="3clFbF" id="5E2FDFNIufF" role="3cqZAp">
+                    <node concept="37vLTI" id="5E2FDFNIufG" role="3clFbG">
+                      <node concept="Xl_RD" id="5E2FDFNIufH" role="37vLTx">
+                        <property role="Xl_RC" value="&lt;invalid value&gt;" />
+                      </node>
+                      <node concept="2OqwBi" id="5E2FDFNIufI" role="37vLTJ">
+                        <node concept="37vLTw" id="5E2FDFNIufJ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
+                        </node>
+                        <node concept="2OwXpG" id="5E2FDFNIufK" role="2OqNvi">
+                          <ref role="2Oxat5" node="ub9nkyOIfp" resolve="actual" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="5E2FDFNIufL" role="3cqZAp">
+                    <node concept="37vLTI" id="5E2FDFNIufM" role="3clFbG">
+                      <node concept="3cpWs3" id="5E2FDFNIufN" role="37vLTx">
+                        <node concept="Xl_RD" id="5E2FDFNIufO" role="3uHU7w">
+                          <property role="Xl_RC" value="&gt;" />
+                        </node>
+                        <node concept="3cpWs3" id="5E2FDFNIufP" role="3uHU7B">
+                          <node concept="Xl_RD" id="5E2FDFNIufQ" role="3uHU7B">
+                            <property role="Xl_RC" value="invalid value &lt;" />
+                          </node>
+                          <node concept="2OqwBi" id="5E2FDFNIufR" role="3uHU7w">
+                            <node concept="37vLTw" id="5E2FDFNIufS" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5E2FDFNIsFS" resolve="ex" />
+                            </node>
+                            <node concept="2OwXpG" id="5E2FDFNIufT" role="2OqNvi">
+                              <ref role="2Oxat5" to="2ahs:3Y6fbK1oUMZ" resolve="msg" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="5E2FDFNIufU" role="37vLTJ">
+                        <node concept="37vLTw" id="5E2FDFNIufV" role="2Oq$k0">
+                          <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
+                        </node>
+                        <node concept="2OwXpG" id="5E2FDFNIufW" role="2OqNvi">
                           <ref role="2Oxat5" node="ub9nkyQiZj" resolve="errorMessage" />
                         </node>
                       </node>
