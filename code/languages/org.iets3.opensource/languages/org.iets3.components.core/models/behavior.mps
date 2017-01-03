@@ -952,7 +952,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="JbnHRlSsRx" role="13h7CS">
-      <property role="TrG5h" value="allReachabaleInstancesInSubstructure" />
+      <property role="TrG5h" value="allReachableInstancesInSubstructure" />
       <node concept="3Tm1VV" id="JbnHRlSsRy" role="1B3o_S" />
       <node concept="A3Dl8" id="JbnHRlSsRz" role="3clF45">
         <node concept="3Tqbb2" id="JbnHRlSsR$" role="A3Ik2">
@@ -1030,7 +1030,7 @@
                               </node>
                             </node>
                             <node concept="2qgKlT" id="JbnHRlSPoC" role="2OqNvi">
-                              <ref role="37wK5l" node="JbnHRlSsRx" resolve="allReachabaleInstancesInSubstructure" />
+                              <ref role="37wK5l" node="JbnHRlSsRx" resolve="allReachableInstancesInSubstructure" />
                             </node>
                           </node>
                         </node>
