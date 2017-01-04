@@ -25,6 +25,8 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
+    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1651,6 +1653,55 @@
       <node concept="37vLTG" id="4PGMP7y0u6d" role="3clF46">
         <property role="TrG5h" value="concept" />
         <node concept="3THzug" id="4PGMP7y0vJU" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="spmH6cGckY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="transitiveAttributes" />
+      <ref role="13i0hy" to="soq7:spmH6cG2nQ" resolve="transitiveAttributes" />
+      <node concept="3Tm1VV" id="spmH6cGckZ" role="1B3o_S" />
+      <node concept="3clFbS" id="spmH6cGcl7" role="3clF47">
+        <node concept="3clFbF" id="spmH6cGetO" role="3cqZAp">
+          <node concept="2OqwBi" id="spmH6cGqjJ" role="3clFbG">
+            <node concept="2OqwBi" id="spmH6cGpbB" role="2Oq$k0">
+              <node concept="2OqwBi" id="spmH6cGot_" role="2Oq$k0">
+                <node concept="2OqwBi" id="spmH6cGmQ8" role="2Oq$k0">
+                  <node concept="2OqwBi" id="spmH6cGl2A" role="2Oq$k0">
+                    <node concept="2OqwBi" id="spmH6cGkhn" role="2Oq$k0">
+                      <node concept="13iPFW" id="spmH6cGk04" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="spmH6cGk_D" role="2OqNvi">
+                        <ref role="37wK5l" node="x8tpSA1Tv5" resolve="compSubstructure" />
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="spmH6cGlAE" role="2OqNvi">
+                      <ref role="3TtcxE" to="w9y2:siw10FjeBe" resolve="contents" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="spmH6cGnW5" role="2OqNvi">
+                    <node concept="chp4Y" id="spmH6cGo5$" role="v3oSu">
+                      <ref role="cht4Q" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="13MTOL" id="spmH6cGoIG" role="2OqNvi">
+                  <ref role="13MTZf" to="w9y2:2Y$6Xot5kGx" resolve="component" />
+                </node>
+              </node>
+              <node concept="13MTOL" id="spmH6cGpPr" role="2OqNvi">
+                <ref role="13MTZf" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
+              </node>
+            </node>
+            <node concept="13MTOL" id="spmH6cGq_A" role="2OqNvi">
+              <ref role="13MTZf" to="138:3NBP8_OgMVe" resolve="attributes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="spmH6cGcl8" role="3clF45">
+        <node concept="3Tqbb2" id="spmH6cGcl9" role="A3Ik2">
+          <ref role="ehGHo" to="138:3NBP8_OgMyV" resolve="IAttribute" />
+        </node>
       </node>
     </node>
   </node>

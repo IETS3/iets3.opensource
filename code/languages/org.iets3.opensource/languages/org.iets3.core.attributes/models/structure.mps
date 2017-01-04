@@ -85,13 +85,5 @@
       <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
-  <node concept="PlHQZ" id="74bjPi7MieF">
-    <property role="EcuMT" value="8145691575503627179" />
-    <property role="TrG5h" value="IComputedValueContributingAttribute" />
-    <property role="3GE5qa" value="attributes" />
-    <node concept="PrWs8" id="5xtVdVIke1" role="PrDN$">
-      <ref role="PrY4T" node="1HqphBIxQFX" resolve="IValueAttribute" />
-    </node>
-  </node>
 </model>
 
