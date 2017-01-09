@@ -2171,16 +2171,16 @@
   </node>
   <node concept="1lYeZD" id="WieAE6MnzD">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="null_extension" />
+    <property role="TrG5h" value="SimpleTypesPrimitiveTypeMapper_extension" />
     <ref role="1lYe$Y" to="oq0c:WieAE6FJqt" resolve="primitiveTypeMapper" />
     <node concept="3Tm1VV" id="5NPKd17x9zQ" role="1B3o_S" />
     <node concept="2tJIrI" id="5NPKd17x9zR" role="jymVt" />
     <node concept="2tJIrI" id="5NPKd17x9zS" role="jymVt" />
-    <node concept="3tTeZs" id="5NPKd17x9zN" role="jymVt">
+    <node concept="3tTeZs" id="2JXkwhJmluS" role="jymVt">
       <property role="3tTeZt" value="activate" />
       <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
     </node>
-    <node concept="3tTeZs" id="5NPKd17x9zO" role="jymVt">
+    <node concept="3tTeZs" id="2JXkwhJmlsR" role="jymVt">
       <property role="3tTeZt" value="deactivate" />
       <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
     </node>
@@ -2193,7 +2193,7 @@
         <node concept="3clFbF" id="2Qbt$1tSxjV" role="3cqZAp">
           <node concept="2ShNRf" id="2Qbt$1tSxjT" role="3clFbG">
             <node concept="HV5vD" id="3p6$WoErVx2" role="2ShVmc">
-              <ref role="HV5vE" node="3p6$WoErNuK" resolve="SimpletypesPrimitiveTypeMapper" />
+              <ref role="HV5vE" node="3p6$WoErNuK" resolve="SimpleTypesPrimitiveTypeMapper" />
             </node>
           </node>
         </node>
@@ -2205,7 +2205,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3p6$WoErNuK">
-    <property role="TrG5h" value="SimpletypesPrimitiveTypeMapper" />
+    <property role="TrG5h" value="SimpleTypesPrimitiveTypeMapper" />
     <node concept="3Tm1VV" id="3p6$WoErNuL" role="1B3o_S" />
     <node concept="3uibUv" id="3p6$WoErNvB" role="1zkMxy">
       <ref role="3uigEE" to="oq0c:2Qbt$1tSnqh" resolve="PrimitiveTypeMapper" />

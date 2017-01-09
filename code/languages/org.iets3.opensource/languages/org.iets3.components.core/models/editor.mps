@@ -99,6 +99,7 @@
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -573,7 +574,9 @@
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
         <child id="6202678563380433923" name="query" index="sbcd9" />
+        <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
+      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
@@ -8580,6 +8583,9 @@
         </node>
       </node>
     </node>
+    <node concept="PMmxH" id="3xa$2Oxm5II" role="6VMZX">
+      <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
+    </node>
   </node>
   <node concept="24kQdi" id="siw10F_APN">
     <property role="3GE5qa" value="components.substructure" />
@@ -11931,6 +11937,65 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="4vEQ9eGCAG_">
+    <property role="TrG5h" value="PortCategoryAttributes" />
+    <property role="3GE5qa" value="components.iface.ports" />
+    <ref role="1XX52x" to="w9y2:siw10H0or2" resolve="PortCategory" />
+    <node concept="s8t4o" id="4vEQ9eGCAGB" role="2wV5jI">
+      <property role="28Zw97" value="true" />
+      <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+      <node concept="s8sZD" id="4vEQ9eGCAGE" role="sbcd9">
+        <node concept="3clFbS" id="4vEQ9eGCAGF" role="2VODD2">
+          <node concept="3clFbF" id="4vEQ9eGCOp6" role="3cqZAp">
+            <node concept="2OqwBi" id="4vEQ9eGCOyU" role="3clFbG">
+              <node concept="pncrf" id="4vEQ9eGCOp5" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4vEQ9eGCOFK" role="2OqNvi">
+                <node concept="1xMEDy" id="4vEQ9eGCOFM" role="1xVPHs">
+                  <node concept="chp4Y" id="4vEQ9eGCOJa" role="ri$Ld">
+                    <ref role="cht4Q" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yz3lS" id="4vEQ9eGCP9F" role="1yzFaX">
+        <node concept="PMmxH" id="4vEQ9eGCPem" role="2wV5jI">
+          <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="4vEQ9eGCTLd">
+    <property role="TrG5h" value="IPortTypeAttributes" />
+    <ref role="1XX52x" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
+    <node concept="s8t4o" id="4vEQ9eGCUgi" role="2wV5jI">
+      <property role="28Zw97" value="true" />
+      <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+      <node concept="s8sZD" id="4vEQ9eGCUgl" role="sbcd9">
+        <node concept="3clFbS" id="4vEQ9eGCUgm" role="2VODD2">
+          <node concept="3clFbF" id="4vEQ9eGCUku" role="3cqZAp">
+            <node concept="2OqwBi" id="4vEQ9eGCUua" role="3clFbG">
+              <node concept="pncrf" id="4vEQ9eGCUkp" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4vEQ9eGCUAK" role="2OqNvi">
+                <node concept="1xMEDy" id="4vEQ9eGCUAM" role="1xVPHs">
+                  <node concept="chp4Y" id="4vEQ9eGCUE9" role="ri$Ld">
+                    <ref role="cht4Q" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yz3lS" id="4vEQ9eGCUV0" role="1yzFaX">
+        <node concept="PMmxH" id="4vEQ9eGCUZE" role="2wV5jI">
+          <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
         </node>
       </node>
     </node>
