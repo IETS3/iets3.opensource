@@ -348,9 +348,6 @@
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IPortType" />
     <property role="EcuMT" value="7804632404594156401" />
-    <node concept="PrWs8" id="4A8SzOV9V0X" role="PrDN$">
-      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWq">
     <property role="3GE5qa" value="components.substructure" />
