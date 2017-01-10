@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
+    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -2171,16 +2171,16 @@
   </node>
   <node concept="1lYeZD" id="WieAE6MnzD">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="primitiveTypeMapper_extension" />
+    <property role="TrG5h" value="SimpleTypesPrimitiveTypeMapper_extension" />
     <ref role="1lYe$Y" to="oq0c:WieAE6FJqt" resolve="primitiveTypeMapper" />
     <node concept="3Tm1VV" id="5NPKd17x9zQ" role="1B3o_S" />
     <node concept="2tJIrI" id="5NPKd17x9zR" role="jymVt" />
     <node concept="2tJIrI" id="5NPKd17x9zS" role="jymVt" />
-    <node concept="3tTeZs" id="5NPKd17x9zN" role="jymVt">
+    <node concept="3tTeZs" id="2JXkwhJmluS" role="jymVt">
       <property role="3tTeZt" value="activate" />
       <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
     </node>
-    <node concept="3tTeZs" id="5NPKd17x9zO" role="jymVt">
+    <node concept="3tTeZs" id="2JXkwhJmlsR" role="jymVt">
       <property role="3tTeZt" value="deactivate" />
       <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
     </node>
@@ -2193,7 +2193,7 @@
         <node concept="3clFbF" id="2Qbt$1tSxjV" role="3cqZAp">
           <node concept="2ShNRf" id="2Qbt$1tSxjT" role="3clFbG">
             <node concept="HV5vD" id="3p6$WoErVx2" role="2ShVmc">
-              <ref role="HV5vE" node="3p6$WoErNuK" resolve="SimpletypesPrimitiveTypeMapper" />
+              <ref role="HV5vE" node="3p6$WoErNuK" resolve="SimpleTypesPrimitiveTypeMapper" />
             </node>
           </node>
         </node>
@@ -2205,7 +2205,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3p6$WoErNuK">
-    <property role="TrG5h" value="SimpletypesPrimitiveTypeMapper" />
+    <property role="TrG5h" value="SimpleTypesPrimitiveTypeMapper" />
     <node concept="3Tm1VV" id="3p6$WoErNuL" role="1B3o_S" />
     <node concept="3uibUv" id="3p6$WoErNvB" role="1zkMxy">
       <ref role="3uigEE" to="oq0c:2Qbt$1tSnqh" resolve="PrimitiveTypeMapper" />
