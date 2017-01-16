@@ -6,7 +6,7 @@ if (project.hasProperty('projectVersion')) {
 }
 
 // Dependency versions
-ext.mpsVersion = '3.4.1'
+ext.mpsVersion = '3.4.3'
 ext.mbeddrVersion = '1.0.+'
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
