@@ -87,6 +87,9 @@
       <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
         <reference id="4820515453818318891" name="hint" index="2pYH_C" />
       </concept>
+      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
+        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -156,6 +159,7 @@
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="4242538589862653897" name="addHints" index="2whIAn" />
         <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -1942,6 +1946,10 @@
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="wiringDiagram" />
       <property role="2BUmq6" value="Wiring Diagram" />
+    </node>
+    <node concept="2BsEeg" id="505JWwK66s_" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="isInDiagram" />
     </node>
     <node concept="2BsEeg" id="34wJHxXehlg" role="2ABdcP">
       <property role="TrG5h" value="nestedComponentStructure" />
@@ -4746,6 +4754,11 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="siw10FuU02" role="2iSdaV" />
+      <node concept="2w$q5c" id="505JWwK6aJ5" role="2whIAn">
+        <node concept="2aJ2om" id="505JWwK6aJ6" role="2w$qW5">
+          <ref role="2$4xQ3" node="505JWwK66s_" resolve="isInDiagram" />
+        </node>
+      </node>
     </node>
     <node concept="2aJ2om" id="siw10FuU6T" role="CpUAK">
       <ref role="2$4xQ3" node="siw10FuTec" resolve="wiringDiagram" />
@@ -4757,7 +4770,10 @@
     <node concept="PMmxH" id="siw10FuWpP" role="6VMZX">
       <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
     </node>
-    <node concept="2aJ2om" id="siw10FuWvc" role="CpUAK">
+    <node concept="2aJ2om" id="505JWwK6g9e" role="CpUAK">
+      <ref role="2$4xQ3" node="505JWwK66s_" resolve="isInDiagram" />
+    </node>
+    <node concept="2aJ2om" id="505JWwK6lZH" role="CpUAK">
       <ref role="2$4xQ3" node="siw10FuTec" resolve="wiringDiagram" />
     </node>
     <node concept="2ZK4vF" id="siw10FuWDE" role="2wV5jI">
