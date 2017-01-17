@@ -232,10 +232,20 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
+        <child id="1226567214363" name="argument" index="2l6Ag6" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
@@ -1450,6 +1460,52 @@
         <node concept="3Tqbb2" id="2S3ZC$oziCY" role="A3Ik2">
           <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5eKs1GS7CN1" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="traceBackElementInCycle" />
+      <ref role="13i0hy" to="hwgx:17fjvcLF7UR" resolve="traceBackElementInCycle" />
+      <node concept="3Tm1VV" id="5eKs1GS7CN4" role="1B3o_S" />
+      <node concept="3clFbS" id="5eKs1GS7CNm" role="3clF47">
+        <node concept="3cpWs8" id="4ISByPoXvbq" role="3cqZAp">
+          <node concept="3cpWsn" id="4ISByPoXvbt" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="2hMVRd" id="4ISByPoXvbm" role="1tU5fm">
+              <node concept="3Tqbb2" id="4ISByPoXvbO" role="2hN53Y" />
+            </node>
+            <node concept="2ShNRf" id="4ISByPoXveP" role="33vP2m">
+              <node concept="2i4dXS" id="4ISByPoXvdV" role="2ShVmc">
+                <node concept="3Tqbb2" id="4ISByPoXvdW" role="HW$YZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5eKs1GS7ScI" role="3cqZAp">
+          <node concept="2OqwBi" id="5eKs1GS7SMZ" role="3clFbG">
+            <node concept="37vLTw" id="5eKs1GS7ScG" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ISByPoXvbt" resolve="result" />
+            </node>
+            <node concept="2l5eF5" id="5eKs1GS7TeF" role="2OqNvi">
+              <node concept="13iPFW" id="5eKs1GS7TgR" role="2l6Ag6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="17fjvcLFaIv" role="3cqZAp">
+          <node concept="37vLTw" id="4ISByPoXvZk" role="3cqZAk">
+            <ref role="3cqZAo" node="4ISByPoXvbt" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5eKs1GS7CNn" role="3clF46">
+        <property role="TrG5h" value="dependency" />
+        <node concept="3Tqbb2" id="5eKs1GS7CNo" role="1tU5fm">
+          <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+        </node>
+      </node>
+      <node concept="2hMVRd" id="5eKs1GS7CNp" role="3clF45">
+        <node concept="3Tqbb2" id="5eKs1GS7CNq" role="2hN53Y" />
       </node>
     </node>
     <node concept="13i0hz" id="6NHlpK$p_fP" role="13h7CS">
