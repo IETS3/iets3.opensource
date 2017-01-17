@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -68,6 +69,9 @@
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358745" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
+    <node concept="PrWs8" id="4OgAv3N4VpX" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHQ">
     <property role="TrG5h" value="FalseLiteral" />
@@ -75,6 +79,9 @@
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358774" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
+    <node concept="PrWs8" id="4OgAv3N4Vq0" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oero">
     <property role="TrG5h" value="NumericType" />
@@ -103,6 +110,9 @@
     </node>
     <node concept="PrWs8" id="7jF3cv6VCok" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="4OgAv3N4SrD" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oetc">

@@ -30,6 +30,9 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
+    <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
+    <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -7310,6 +7313,28 @@
       </node>
       <node concept="17QB3L" id="2PhSkOg8N6Y" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="26a33r7ClYs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="26a33r7ClYt" role="1B3o_S" />
+      <node concept="3clFbS" id="26a33r7ClYw" role="3clF47">
+        <node concept="3clFbF" id="26a33r7Cs_E" role="3cqZAp">
+          <node concept="2YIFZM" id="26a33r7CsAI" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="26a33r7CsB7" role="37wK5m" />
+            <node concept="Xl_RD" id="26a33r7CsCy" role="37wK5m">
+              <property role="Xl_RC" value="overlap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="26a33r7ClYx" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6UxFDrx4fGf">
     <property role="3GE5qa" value="alt" />
@@ -13770,6 +13795,22 @@
     </node>
     <node concept="13hLZK" id="5ElkanQ81fl" role="13h7CW">
       <node concept="3clFbS" id="5ElkanQ81fm" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3oWFox95OYP">
+    <ref role="13h7C2" to="hm2y:3oWFox95OXG" resolve="IHasBaseType" />
+    <node concept="13hLZK" id="3oWFox95OYQ" role="13h7CW">
+      <node concept="3clFbS" id="3oWFox95OYR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3oWFox95OZf" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getBaseType" />
+      <node concept="3Tm1VV" id="3oWFox95OZg" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3oWFox95PlJ" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3clFbS" id="3oWFox95OZi" role="3clF47" />
     </node>
   </node>
 </model>
