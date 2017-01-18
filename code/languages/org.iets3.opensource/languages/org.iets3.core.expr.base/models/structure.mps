@@ -726,6 +726,9 @@
       <property role="IQ2ns" value="3281846772293355657" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="4146AzEJCrT" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="TrG5h" value="IStructuredSyntax" />
@@ -1004,7 +1007,7 @@
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
     <node concept="PrWs8" id="21vB0Vz3zn7" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
