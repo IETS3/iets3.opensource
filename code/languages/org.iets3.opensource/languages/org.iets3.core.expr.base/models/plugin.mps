@@ -8,6 +8,7 @@
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,6 +20,7 @@
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -357,6 +359,17 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
+      <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <child id="8575378964581617586" name="modification" index="2hfP89" />
+        <child id="8575378964581602954" name="options" index="2hfSGL" />
+      </concept>
+      <concept id="3897771026684496949" name="com.mbeddr.mpsutil.refactoring.structure.PushHintOption" flags="ng" index="33gmoH">
+        <property id="3897771026684565063" name="menuLabel" index="33g7Lv" />
+        <reference id="3897771026684508452" name="hintCollection" index="33glcW" />
+        <reference id="3897771026684508454" name="hint" index="33glcY" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -7694,5 +7707,17 @@
     </node>
   </node>
   <node concept="2DaZZR" id="2udM7u8XOJr" />
+  <node concept="33ghlw" id="4146AzET8_6">
+    <property role="3GE5qa" value="interpreter.coverage" />
+    <property role="TrG5h" value="interpreterTestCoverage" />
+    <node concept="33gmoH" id="4146AzET8_7" role="2hfSGL">
+      <property role="33g7Lv" value="Show Interpreter Coverage" />
+      <ref role="33glcW" to="buwp:4146AzET8_e" resolve="org.iets3.interpreterTestCoverage" />
+      <ref role="33glcY" to="buwp:4146AzET8_f" resolve="interpreterTestCoverage" />
+    </node>
+    <node concept="tT9cl" id="4146AzET8_8" role="2hfP89">
+      <ref role="tU$_T" node="2udM7u8XBvu" resolve="TestCoverageGroup" />
+    </node>
+  </node>
 </model>
 
