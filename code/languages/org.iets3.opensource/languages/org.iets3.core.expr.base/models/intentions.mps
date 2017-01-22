@@ -1024,7 +1024,7 @@
       <node concept="3clFbS" id="1oYSzEGJroW" role="2VODD2">
         <node concept="3clFbF" id="1oYSzEGJrqh" role="3cqZAp">
           <node concept="Xl_RD" id="1oYSzEGJrqg" role="3clFbG">
-            <property role="Xl_RC" value="Evaluate with interpreter" />
+            <property role="Xl_RC" value="Evaluate" />
           </node>
         </node>
       </node>
@@ -1101,6 +1101,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="40o9_yLCfeA" role="lGtFl">
+      <property role="1SWRpm" value="EXPRESSIONS" />
     </node>
   </node>
   <node concept="2S6QgY" id="SRvqsN4BlB">
