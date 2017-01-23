@@ -930,6 +930,56 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5HLmk5Hpcl_" role="13h7CS">
+      <property role="TrG5h" value="asGenericCollectionType" />
+      <node concept="3Tm1VV" id="5HLmk5HpclA" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5HLmk5Hpdjg" role="3clF45">
+        <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+      </node>
+      <node concept="3clFbS" id="5HLmk5HpclC" role="3clF47">
+        <node concept="3cpWs8" id="5HLmk5Hpdtc" role="3cqZAp">
+          <node concept="3cpWsn" id="5HLmk5Hpdtd" role="3cpWs9">
+            <property role="TrG5h" value="ct" />
+            <node concept="3Tqbb2" id="5HLmk5Hpdta" role="1tU5fm">
+              <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+            </node>
+            <node concept="2ShNRf" id="5HLmk5Hpdte" role="33vP2m">
+              <node concept="3zrR0B" id="5HLmk5Hpdtf" role="2ShVmc">
+                <node concept="3Tqbb2" id="5HLmk5Hpdtg" role="3zrR0E">
+                  <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5HLmk5Hpdul" role="3cqZAp">
+          <node concept="37vLTI" id="5HLmk5Hpe4C" role="3clFbG">
+            <node concept="2OqwBi" id="5HLmk5HpeIh" role="37vLTx">
+              <node concept="2OqwBi" id="5HLmk5HpegM" role="2Oq$k0">
+                <node concept="13iPFW" id="5HLmk5Hpe7j" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5HLmk5HpesW" role="2OqNvi">
+                  <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                </node>
+              </node>
+              <node concept="1$rogu" id="5HLmk5HpeT_" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5HLmk5HpdBo" role="37vLTJ">
+              <node concept="37vLTw" id="5HLmk5Hpduj" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HLmk5Hpdtd" resolve="ct" />
+              </node>
+              <node concept="3TrEf2" id="5HLmk5HpdLi" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5HLmk5Hpdkl" role="3cqZAp">
+          <node concept="37vLTw" id="5HLmk5Hpdth" role="3clFbG">
+            <ref role="3cqZAo" node="5HLmk5Hpdtd" resolve="ct" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="6aONDO94596" role="13h7CS">
       <property role="TrG5h" value="canBeEmpty" />
       <node concept="3Tm1VV" id="6aONDO94597" role="1B3o_S" />
