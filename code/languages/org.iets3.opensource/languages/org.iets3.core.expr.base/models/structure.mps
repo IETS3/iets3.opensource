@@ -1249,5 +1249,15 @@
     <property role="EcuMT" value="3908189377504169836" />
     <property role="TrG5h" value="IHasBaseType" />
   </node>
+  <node concept="PlHQZ" id="5GL30CqMVEV">
+    <property role="TrG5h" value="ISSConstrainedValue" />
+    <property role="EcuMT" value="6571046568849029819" />
+    <property role="3GE5qa" value="contract" />
+  </node>
+  <node concept="PlHQZ" id="5GL30CqMVEW">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSConstrainedValueRef" />
+    <property role="EcuMT" value="6571046568849029820" />
+  </node>
 </model>
 

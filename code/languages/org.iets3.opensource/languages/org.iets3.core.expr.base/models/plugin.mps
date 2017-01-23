@@ -17,6 +17,7 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -7596,6 +7597,29 @@
     <node concept="2tJIrI" id="2NHHcg2FFeB" role="jymVt" />
     <node concept="2tJIrI" id="2NHHcg2EXnr" role="jymVt" />
     <node concept="3Tm1VV" id="2NHHcg2EXnb" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="7BxfuU7X7MV">
+    <property role="TrG5h" value="ConstrainedValueFactory" />
+    <node concept="2tJIrI" id="7BxfuU7X7NK" role="jymVt" />
+    <node concept="Wx3nA" id="7BxfuU7X8u7" role="jymVt">
+      <property role="TrG5h" value="itVariable" />
+      <property role="2dlcS1" value="false" />
+      <property role="3TUv4t" value="false" />
+      <property role="2dld4O" value="false" />
+      <node concept="3Tqbb2" id="7BxfuU7X8ua" role="1tU5fm">
+        <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+      </node>
+      <node concept="2ShNRf" id="7BxfuU7X8ub" role="33vP2m">
+        <node concept="3zrR0B" id="7BxfuU7X8uc" role="2ShVmc">
+          <node concept="3Tqbb2" id="7BxfuU7X8ud" role="3zrR0E">
+            <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7BxfuU7X8u9" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7BxfuU7X7Uv" role="jymVt" />
+    <node concept="3Tm1VV" id="7BxfuU7X7MW" role="1B3o_S" />
   </node>
 </model>
 
