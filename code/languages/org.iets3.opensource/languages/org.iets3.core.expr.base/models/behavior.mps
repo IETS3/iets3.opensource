@@ -30,15 +30,12 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
-<<<<<<< HEAD
-    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-=======
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
->>>>>>> origin/master
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -3914,9 +3911,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="7McqtXGy$M6" role="lGtFl">
-        <node concept="x79VA" id="7McqtXGy$M9" role="3nqlJM">
-          <property role="x79VB" value="the capability requirement" />
-        </node>
         <node concept="TZ5HA" id="7McqtXGy$M7" role="TZ5H$">
           <node concept="1dT_AC" id="7McqtXGy$M8" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the capability requirement of this type. " />
@@ -3941,6 +3935,9 @@
           <node concept="1dT_AC" id="7McqtXG$fto" role="1dT_Ay">
             <property role="1dT_AB" value="A null value means that the type does not require any special capability." />
           </node>
+        </node>
+        <node concept="x79VA" id="7McqtXGy$M9" role="3nqlJM">
+          <property role="x79VB" value="the capability requirement" />
         </node>
       </node>
     </node>
@@ -7327,7 +7324,28 @@
       </node>
       <node concept="17QB3L" id="2PhSkOg8N6Y" role="3clF45" />
     </node>
-<<<<<<< HEAD
+    <node concept="13i0hz" id="26a33r7ClYs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="26a33r7ClYt" role="1B3o_S" />
+      <node concept="3clFbS" id="26a33r7ClYw" role="3clF47">
+        <node concept="3clFbF" id="26a33r7Cs_E" role="3cqZAp">
+          <node concept="2YIFZM" id="26a33r7CsAI" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="26a33r7CsB7" role="37wK5m" />
+            <node concept="Xl_RD" id="26a33r7CsCy" role="37wK5m">
+              <property role="Xl_RC" value="overlap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="26a33r7ClYx" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+    </node>
     <node concept="13i0hz" id="21vB0Vz3zng" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -7402,33 +7420,12 @@
                   <node concept="2jxLKc" id="21vB0Vz3IOM" role="1tU5fm" />
                 </node>
               </node>
-=======
-    <node concept="13i0hz" id="26a33r7ClYs" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="createSolverTask" />
-      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
-      <node concept="3Tm1VV" id="26a33r7ClYt" role="1B3o_S" />
-      <node concept="3clFbS" id="26a33r7ClYw" role="3clF47">
-        <node concept="3clFbF" id="26a33r7Cs_E" role="3cqZAp">
-          <node concept="2YIFZM" id="26a33r7CsAI" role="3clFbG">
-            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
-            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
-            <node concept="13iPFW" id="26a33r7CsB7" role="37wK5m" />
-            <node concept="Xl_RD" id="26a33r7CsCy" role="37wK5m">
-              <property role="Xl_RC" value="overlap" />
->>>>>>> origin/master
             </node>
           </node>
         </node>
       </node>
-<<<<<<< HEAD
       <node concept="A3Dl8" id="21vB0Vz3znq" role="3clF45">
         <node concept="3Tqbb2" id="21vB0Vz3znr" role="A3Ik2" />
-=======
-      <node concept="3Tqbb2" id="26a33r7ClYx" role="3clF45">
-        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
->>>>>>> origin/master
       </node>
     </node>
   </node>
@@ -9311,18 +9308,18 @@
           </node>
           <node concept="3clFbF" id="6SpoPQg9uim" role="3cqZAp">
             <node concept="2OqwBi" id="6SpoPQg9vap" role="3clFbG">
+              <node concept="2OqwBi" id="6SpoPQg9utX" role="2Oq$k0">
+                <node concept="Xjq3P" id="6SpoPQg9uih" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6SpoPQg9uzz" role="2OqNvi">
+                  <ref role="2Oxat5" node="6SpoPQg9nTf" resolve="branches" />
+                </node>
+              </node>
               <node concept="X8dFx" id="2OBNtKde7BG" role="2OqNvi">
                 <node concept="2OqwBi" id="6SpoPQg9xky" role="25WWJ7">
                   <node concept="37vLTw" id="6SpoPQg9wYQ" role="2Oq$k0">
                     <ref role="3cqZAo" node="6SpoPQg9ozs" resolve="branches" />
                   </node>
                   <node concept="39bAoz" id="6SpoPQg9yaM" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6SpoPQg9utX" role="2Oq$k0">
-                <node concept="Xjq3P" id="6SpoPQg9uih" role="2Oq$k0" />
-                <node concept="2OwXpG" id="6SpoPQg9uzz" role="2OqNvi">
-                  <ref role="2Oxat5" node="6SpoPQg9nTf" resolve="branches" />
                 </node>
               </node>
             </node>
@@ -9361,15 +9358,15 @@
         <node concept="3clFbS" id="6SpoPQg9_4E" role="3clF47">
           <node concept="3clFbF" id="6SpoPQg9CNl" role="3cqZAp">
             <node concept="2OqwBi" id="6SpoPQg9D_o" role="3clFbG">
-              <node concept="TSZUe" id="2OBNtKde68N" role="2OqNvi">
-                <node concept="37vLTw" id="2OBNtKde6v5" role="25WWJ7">
-                  <ref role="3cqZAo" node="6SpoPQg9_R5" resolve="branchID" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="6SpoPQg9CSw" role="2Oq$k0">
                 <node concept="Xjq3P" id="6SpoPQg9CNk" role="2Oq$k0" />
                 <node concept="2OwXpG" id="6SpoPQg9CY8" role="2OqNvi">
                   <ref role="2Oxat5" node="6SpoPQg9A85" resolve="visitedBranches" />
+                </node>
+              </node>
+              <node concept="TSZUe" id="2OBNtKde68N" role="2OqNvi">
+                <node concept="37vLTw" id="2OBNtKde6v5" role="25WWJ7">
+                  <ref role="3cqZAo" node="6SpoPQg9_R5" resolve="branchID" />
                 </node>
               </node>
             </node>
@@ -10906,6 +10903,9 @@
       <node concept="3clFbS" id="4_qY3E5IY1J" role="3clF47">
         <node concept="3clFbF" id="4_qY3E5KVuZ" role="3cqZAp">
           <node concept="2OqwBi" id="4_qY3E5KW19" role="3clFbG">
+            <node concept="37vLTw" id="4_qY3E5KVuX" role="2Oq$k0">
+              <ref role="3cqZAo" node="4_qY3E5KUUz" resolve="visitedEvaluators" />
+            </node>
             <node concept="TSZUe" id="2OBNtKdefAv" role="2OqNvi">
               <node concept="2OqwBi" id="4_qY3E5RDW$" role="25WWJ7">
                 <node concept="2OqwBi" id="4_qY3E5OMsn" role="2Oq$k0">
@@ -10920,9 +10920,6 @@
                   <ref role="2Oxat5" to="2ahs:4_qY3E5REer" resolve="conceptName" />
                 </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="4_qY3E5KVuX" role="2Oq$k0">
-              <ref role="3cqZAo" node="4_qY3E5KUUz" resolve="visitedEvaluators" />
             </node>
           </node>
         </node>
@@ -11953,9 +11950,6 @@
       <node concept="3clFbS" id="4_qY3E69a_G" role="3clF47">
         <node concept="3clFbF" id="6SpoPQgv8G5" role="3cqZAp">
           <node concept="2OqwBi" id="6SpoPQgvb_K" role="3clFbG">
-            <node concept="1rXfSq" id="2OBNtKdegpA" role="2Oq$k0">
-              <ref role="37wK5l" node="18$bUx5ztdK" resolve="allConceptsStatus" />
-            </node>
             <node concept="3zZkjj" id="6SpoPQgvcNZ" role="2OqNvi">
               <node concept="1bVj0M" id="6SpoPQgvcO1" role="23t8la">
                 <node concept="3clFbS" id="6SpoPQgvcO2" role="1bW5cS">
@@ -11977,6 +11971,9 @@
                   <node concept="2jxLKc" id="6SpoPQgvcO4" role="1tU5fm" />
                 </node>
               </node>
+            </node>
+            <node concept="1rXfSq" id="2OBNtKdegpA" role="2Oq$k0">
+              <ref role="37wK5l" node="18$bUx5ztdK" resolve="allConceptsStatus" />
             </node>
           </node>
         </node>
