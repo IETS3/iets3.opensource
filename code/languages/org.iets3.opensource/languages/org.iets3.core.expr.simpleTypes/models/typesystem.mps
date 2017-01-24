@@ -71,7 +71,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1029,7 +1029,7 @@
             </node>
             <node concept="1Wc70l" id="3f3yNhCTMUk" role="3clFbw">
               <node concept="2OqwBi" id="3f3yNhCTNnT" role="3uHU7w">
-                <node concept="3cjfiJ" id="3tudP_AbdWh" role="2Oq$k0" />
+                <node concept="3cjoZ5" id="2JXkwhJi1MG" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="3f3yNhCTNAL" role="2OqNvi">
                   <node concept="chp4Y" id="3f3yNhCTNGP" role="cj9EA">
                     <ref role="cht4Q" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
@@ -1229,7 +1229,7 @@
             </node>
             <node concept="1Wc70l" id="3tudP_Abfk1" role="3clFbw">
               <node concept="2OqwBi" id="3tudP_Abfk2" role="3uHU7w">
-                <node concept="3cjfiJ" id="3tudP_Abfk3" role="2Oq$k0" />
+                <node concept="3cjoZ5" id="2JXkwhJi7m0" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="3tudP_Abfk4" role="2OqNvi">
                   <node concept="chp4Y" id="3tudP_Abfk5" role="cj9EA">
                     <ref role="cht4Q" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
@@ -1573,7 +1573,7 @@
             </node>
             <node concept="1Wc70l" id="3tudP_Abfyw" role="3clFbw">
               <node concept="2OqwBi" id="3tudP_Abfyx" role="3uHU7w">
-                <node concept="3cjfiJ" id="3tudP_Abfyy" role="2Oq$k0" />
+                <node concept="3cjoZ5" id="2JXkwhJi7$T" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="3tudP_Abfyz" role="2OqNvi">
                   <node concept="chp4Y" id="3tudP_Abfy$" role="cj9EA">
                     <ref role="cht4Q" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
@@ -1916,7 +1916,7 @@
             </node>
             <node concept="1Wc70l" id="3tudP_AbfTR" role="3clFbw">
               <node concept="2OqwBi" id="3tudP_AbfTS" role="3uHU7w">
-                <node concept="3cjfiJ" id="3tudP_AbfTT" role="2Oq$k0" />
+                <node concept="3cjoZ5" id="2JXkwhJi7Uq" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="3tudP_AbfTU" role="2OqNvi">
                   <node concept="chp4Y" id="3tudP_AbfTV" role="cj9EA">
                     <ref role="cht4Q" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
@@ -2870,7 +2870,7 @@
             <node concept="3clFbS" id="3p6$WoEzUg8" role="3clFbx">
               <node concept="2MkqsV" id="3p6$WoEzUA7" role="3cqZAp">
                 <node concept="Xl_RD" id="3p6$WoEzUAm" role="2MkJ7o">
-                  <property role="Xl_RC" value="invalid range (max &lt;= min or precison error)" />
+                  <property role="Xl_RC" value="invalid range (max &lt; min or precison error)" />
                 </node>
                 <node concept="1YBJjd" id="3p6$WoEzUBQ" role="2OEOjV">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />

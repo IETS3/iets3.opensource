@@ -225,6 +225,25 @@
         <property role="34GvKv" value="Reserved Words in IETS3 models" />
       </node>
     </node>
+    <node concept="14StLt" id="3R2njxnikay" role="V601i">
+      <property role="TrG5h" value="iets3GreyText" />
+      <node concept="Vb9p2" id="3R2njxnikaz" role="3F10Kt">
+        <property role="Vbekb" value="PLAIN" />
+      </node>
+      <node concept="VechU" id="3R2njxnika$" role="3F10Kt">
+        <property role="Vb096" value="gray" />
+      </node>
+      <node concept="VPM3Z" id="3R2njxnika_" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPxyj" id="3R2njxnikaA" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="1Ex9Rl" id="3R2njxnikaB" role="lGtFl">
+        <property role="34HCRG" value="Grey Text" />
+        <property role="34GvKv" value="Reserved Words in IETS3 models" />
+      </node>
+    </node>
     <node concept="14StLt" id="3_9S6licv32" role="V601i">
       <property role="TrG5h" value="iets3BraceMatch" />
       <node concept="3mYdg7" id="3_9S6licv3n" role="3F10Kt">

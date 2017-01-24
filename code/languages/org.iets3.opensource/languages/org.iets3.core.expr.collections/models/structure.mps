@@ -79,6 +79,9 @@
       <property role="IQ2ns" value="7554398283339749510" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="3oWFox977Ob" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3oWFox95OXG" resolve="IHasBaseType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
     <property role="TrG5h" value="ListType" />
@@ -660,6 +663,16 @@
     </node>
     <node concept="PrWs8" id="3tudP_AYLZ5" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="40o9_yLEYFL">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="UnpackOptionsOp" />
+    <property role="34LRSv" value="unpackOptions" />
+    <property role="EcuMT" value="4618483580248255217" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="40o9_yLEYFM" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
   </node>
 </model>

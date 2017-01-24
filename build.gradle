@@ -6,8 +6,8 @@ if (project.hasProperty('projectVersion')) {
 }
 
 // Dependency versions
-ext.mpsVersion = '3.4.1'
-ext.mbeddrVersion = 'feature-interpreter-test-coverage.1.0.+'
+ext.mpsVersion = '3.4.3'
+ext.mbeddrVersion = '1.0.+'
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
