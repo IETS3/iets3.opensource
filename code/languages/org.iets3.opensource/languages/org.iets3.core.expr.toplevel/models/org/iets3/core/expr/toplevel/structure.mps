@@ -2,7 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
@@ -10,8 +10,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +89,9 @@
     </node>
     <node concept="PrWs8" id="5ElkanPXvCr" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
+    <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
@@ -175,6 +179,9 @@
     </node>
     <node concept="PrWs8" id="3npF9QXsbIv" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
+    </node>
+    <node concept="PrWs8" id="5DizcGO7eGr" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
@@ -305,6 +312,9 @@
     </node>
     <node concept="PrWs8" id="54pTGl8jBb4" role="PzmwI">
       <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="21vB0Vz1I_I" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">

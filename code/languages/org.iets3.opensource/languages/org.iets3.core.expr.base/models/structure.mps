@@ -2,14 +2,15 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -305,15 +306,15 @@
     <property role="34LRSv" value="(" />
     <property role="EcuMT" value="5115872837157187871" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4OgAv3N4pT7" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
     <node concept="1TJgyj" id="4rZeNQ6OJ5M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5115872837157187954" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4OgAv3N4pT7" role="PzmwI">
-      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
   </node>
   <node concept="1TIwiD" id="1k3knzd4P65">
@@ -763,6 +764,9 @@
     <property role="EcuMT" value="3281846772293355652" />
     <property role="34LRSv" value="cast" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4146AzEJCrT" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
     <node concept="1TJgyj" id="252QIDzztQk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
@@ -1054,7 +1058,10 @@
     <node concept="PrWs8" id="2PhSkOg8N6m" role="PzmwI">
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
-    <node concept="PrWs8" id="26a33r7ClYl" role="PzmwI">
+    <node concept="PrWs8" id="21vB0Vz3zn7" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="PrWs8" id="3tDSm3sv$CV" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
   </node>

@@ -6,6 +6,7 @@
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
@@ -113,6 +114,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2ptAR" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
+    </node>
+    <node concept="PrWs8" id="21vB0Vz0ucl" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
@@ -405,6 +409,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2ptAU" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
+    </node>
+    <node concept="PrWs8" id="21vB0VyYmJh" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHD">

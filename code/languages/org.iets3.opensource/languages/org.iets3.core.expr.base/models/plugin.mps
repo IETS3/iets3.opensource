@@ -7,6 +7,8 @@
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,11 +19,34 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207145360364" name="jetbrains.mps.lang.plugin.structure.BuildGroupBlock" flags="in" index="fu6FP" />
+      <concept id="1207145475354" name="jetbrains.mps.lang.plugin.structure.AddElementStatement" flags="nn" index="fuyK3">
+        <child id="1207145494930" name="expression" index="fuByb" />
+      </concept>
+      <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="1204991940915" name="caption" index="2f7twF" />
+        <property id="1205160812895" name="mnemonic" index="2pbE17" />
+        <property id="1213283637680" name="isPopup" index="1XlLyE" />
+        <child id="1204991552650" name="modifier" index="2f5YQi" />
+        <child id="1207145245948" name="contents" index="ftER_" />
+      </concept>
+      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1204992316090" name="point" index="2f8Tey" />
+        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
+    </language>
+    <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
         <child id="1224071154657" name="classifierType" index="0kSFW" />
@@ -77,6 +102,9 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
@@ -331,6 +359,17 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
+      <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <child id="8575378964581617586" name="modification" index="2hfP89" />
+        <child id="8575378964581602954" name="options" index="2hfSGL" />
+      </concept>
+      <concept id="3897771026684496949" name="com.mbeddr.mpsutil.refactoring.structure.PushHintOption" flags="ng" index="33gmoH">
+        <property id="3897771026684565063" name="menuLabel" index="33g7Lv" />
+        <reference id="3897771026684508452" name="hintCollection" index="33glcW" />
+        <reference id="3897771026684508454" name="hint" index="33glcY" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -7649,6 +7688,89 @@
     <node concept="2tJIrI" id="2NHHcg2FFeB" role="jymVt" />
     <node concept="2tJIrI" id="2NHHcg2EXnr" role="jymVt" />
     <node concept="3Tm1VV" id="2NHHcg2EXnb" role="1B3o_S" />
+  </node>
+  <node concept="tC5Ba" id="2udM7u8XBvu">
+    <property role="3GE5qa" value="interpreter.coverage" />
+    <property role="TrG5h" value="TestCoverageGroup" />
+    <property role="1XlLyE" value="true" />
+    <property role="2f7twF" value="Interpreter Test Coverage" />
+    <property role="2pbE17" value="C" />
+    <node concept="tT9cl" id="2udM7u8XBv_" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
+      <ref role="2f8Tey" to="tprs:1TFxXPONz$p" resolve="devkitTools" />
+    </node>
+    <node concept="fu6FP" id="2udM7u8XEL7" role="ftER_">
+      <node concept="3clFbS" id="2udM7u8XEL9" role="2VODD2">
+        <node concept="fuyK3" id="4BZFyk0pEV2" role="3cqZAp">
+          <node concept="2ShNRf" id="2udM7u8XFKd" role="fuByb">
+            <node concept="1pGfFk" id="2udM7u8XFYY" role="2ShVmc">
+              <ref role="37wK5l" node="2udM7u8XF7D" resolve="ResetCoverageData" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2udM7u8XEWb">
+    <property role="3GE5qa" value="interpreter.coverage" />
+    <property role="TrG5h" value="ResetCoverageData" />
+    <node concept="2tJIrI" id="2udM7u8XEY6" role="jymVt" />
+    <node concept="3clFbW" id="2udM7u8XF7D" role="jymVt">
+      <node concept="3cqZAl" id="2udM7u8XF7E" role="3clF45" />
+      <node concept="3clFbS" id="2udM7u8XF7G" role="3clF47">
+        <node concept="XkiVB" id="2udM7u8XFeM" role="3cqZAp">
+          <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
+          <node concept="Xl_RD" id="2udM7u8XFfg" role="37wK5m">
+            <property role="Xl_RC" value="Reset Coverage Data" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2udM7u8XF1l" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2udM7u8XFfD" role="jymVt" />
+    <node concept="3clFb_" id="2udM7u8XFz_" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="actionPerformed" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="2udM7u8XFzA" role="1B3o_S" />
+      <node concept="3cqZAl" id="2udM7u8XFzC" role="3clF45" />
+      <node concept="37vLTG" id="2udM7u8XFzD" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="2udM7u8XFzE" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2udM7u8XFzF" role="3clF47">
+        <node concept="3clFbF" id="2udM7u8XFG6" role="3cqZAp">
+          <node concept="2YIFZM" id="2udM7u8XFJs" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:4_qY3E5KWHU" resolve="reset" />
+            <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2udM7u8XFzG" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2udM7u8XFg2" role="jymVt" />
+    <node concept="3Tm1VV" id="2udM7u8XEWc" role="1B3o_S" />
+    <node concept="3uibUv" id="2udM7u8XFfn" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+    </node>
+  </node>
+  <node concept="2DaZZR" id="2udM7u8XOJr" />
+  <node concept="33ghlw" id="4146AzET8_6">
+    <property role="3GE5qa" value="interpreter.coverage" />
+    <property role="TrG5h" value="interpreterTestCoverage" />
+    <node concept="33gmoH" id="4146AzET8_7" role="2hfSGL">
+      <property role="33g7Lv" value="Show Interpreter Coverage" />
+      <ref role="33glcW" to="buwp:4146AzET8_e" resolve="org.iets3.interpreterTestCoverage" />
+      <ref role="33glcY" to="buwp:4146AzET8_f" resolve="interpreterTestCoverage" />
+    </node>
+    <node concept="tT9cl" id="4146AzET8_8" role="2hfP89">
+      <ref role="tU$_T" node="2udM7u8XBvu" resolve="TestCoverageGroup" />
+    </node>
   </node>
 </model>
 
