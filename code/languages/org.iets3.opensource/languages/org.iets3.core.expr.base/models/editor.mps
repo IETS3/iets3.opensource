@@ -353,7 +353,6 @@
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
       <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
-      <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -2718,9 +2717,6 @@
         </node>
       </node>
       <node concept="3EZMnI" id="7RUjcsXhRks" role="1QoVPY">
-        <node concept="1QQdxR" id="7MlD5PwhzRN" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="2iRfu4" id="7RUjcsXhRkt" role="2iSdaV" />
         <node concept="35HoNQ" id="7MlD5Pw_wTX" role="3EZMnx" />
         <node concept="Rtstu" id="7RUjcsXhRk_" role="3EZMnx" />
@@ -2910,9 +2906,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="1QQdxR" id="5o1DFxsFHGr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
