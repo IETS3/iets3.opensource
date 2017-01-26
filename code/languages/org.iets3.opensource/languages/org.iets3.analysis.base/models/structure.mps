@@ -112,11 +112,6 @@
       <property role="1uS6qo" value="auto" />
     </node>
   </node>
-  <node concept="PlHQZ" id="3oWFox9339o">
-    <property role="EcuMT" value="3908189377503441496" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="ISolverVarRef" />
-  </node>
   <node concept="PlHQZ" id="4OgAv3N4pT3">
     <property role="EcuMT" value="5553107600697040451" />
     <property role="TrG5h" value="ICanBeMappedToSolver" />

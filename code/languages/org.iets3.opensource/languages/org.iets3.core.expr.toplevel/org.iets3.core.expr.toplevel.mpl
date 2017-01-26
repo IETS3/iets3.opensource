@@ -187,6 +187,7 @@
     <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
     <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>
     <extendedLanguage>9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)</extendedLanguage>
+    <extendedLanguage>f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)</extendedLanguage>
   </extendedLanguages>
 </language>
 

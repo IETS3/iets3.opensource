@@ -2,8 +2,8 @@
 <model ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,9 +14,9 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -685,6 +685,7 @@
                           <node concept="37vLTw" id="78hTg1$Pfcw" role="37wK5m">
                             <ref role="3cqZAo" node="78hTg1$PdOj" resolve="lower" />
                           </node>
+                          <node concept="13iPFW" id="MaFTCcPxWO" role="37wK5m" />
                           <node concept="3cpWs3" id="78hTg1$PhM4" role="37wK5m">
                             <node concept="3cpWs3" id="78hTg1$PfTv" role="3uHU7B">
                               <node concept="Xl_RD" id="78hTg1$Pfj0" role="3uHU7B">
@@ -782,6 +783,12 @@
                           <ref role="37wK5l" to="pbu6:78hTg1$sBab" resolve="DefaultConstraintAndError" />
                           <node concept="37vLTw" id="78hTg1$PimY" role="37wK5m">
                             <ref role="3cqZAo" node="78hTg1$Pef7" resolve="upper" />
+                          </node>
+                          <node concept="2OqwBi" id="6ItA_x_aHHH" role="37wK5m">
+                            <node concept="13iPFW" id="MaFTCcPydh" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6ItA_x_aImU" role="2OqNvi">
+                              <ref role="3Tt5mk" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
+                            </node>
                           </node>
                           <node concept="3cpWs3" id="78hTg1$Pi29" role="37wK5m">
                             <node concept="Xl_RD" id="78hTg1$Pi2a" role="3uHU7w">

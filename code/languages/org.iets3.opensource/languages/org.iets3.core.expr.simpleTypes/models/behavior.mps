@@ -1176,10 +1176,11 @@
                       <node concept="37vLTw" id="78hTg1$Pfcw" role="37wK5m">
                         <ref role="3cqZAo" node="78hTg1$PdOj" resolve="lower" />
                       </node>
+                      <node concept="13iPFW" id="MaFTCcPwDr" role="37wK5m" />
                       <node concept="3cpWs3" id="78hTg1$PhM4" role="37wK5m">
                         <node concept="3cpWs3" id="78hTg1$PfTv" role="3uHU7B">
                           <node concept="Xl_RD" id="78hTg1$Pfj0" role="3uHU7B">
-                            <property role="Xl_RC" value="value is below minimum (" />
+                            <property role="Xl_RC" value="value falls below minimum (" />
                           </node>
                           <node concept="2OqwBi" id="78hTg1$Pggw" role="3uHU7w">
                             <node concept="13iPFW" id="78hTg1$PfTG" role="2Oq$k0" />
@@ -1266,13 +1267,19 @@
                       <node concept="37vLTw" id="78hTg1$PimY" role="37wK5m">
                         <ref role="3cqZAo" node="78hTg1$Pef7" resolve="upper" />
                       </node>
+                      <node concept="2OqwBi" id="6ItA_x_8wdP" role="37wK5m">
+                        <node concept="13iPFW" id="MaFTCcPx4f" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="6ItA_x_8wQo" role="2OqNvi">
+                          <ref role="3Tt5mk" to="5qo5:19PglA20qXS" resolve="range" />
+                        </node>
+                      </node>
                       <node concept="3cpWs3" id="78hTg1$Pi29" role="37wK5m">
                         <node concept="Xl_RD" id="78hTg1$Pi2a" role="3uHU7w">
                           <property role="Xl_RC" value=")" />
                         </node>
                         <node concept="3cpWs3" id="78hTg1$Pi2b" role="3uHU7B">
                           <node concept="Xl_RD" id="78hTg1$Pi2c" role="3uHU7B">
-                            <property role="Xl_RC" value="value is over maximum (" />
+                            <property role="Xl_RC" value="value exceeds maximum (" />
                           </node>
                           <node concept="2OqwBi" id="78hTg1$Pi2e" role="3uHU7w">
                             <node concept="13iPFW" id="78hTg1$Pi2f" role="2Oq$k0" />

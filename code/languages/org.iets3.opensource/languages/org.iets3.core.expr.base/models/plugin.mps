@@ -2,13 +2,13 @@
 <model ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,6 +19,7 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -7754,27 +7755,28 @@
     <node concept="2tJIrI" id="2NHHcg2EXnr" role="jymVt" />
     <node concept="3Tm1VV" id="2NHHcg2EXnb" role="1B3o_S" />
   </node>
-  <node concept="tC5Ba" id="2udM7u8XBvu">
-    <property role="3GE5qa" value="interpreter.coverage" />
-    <property role="TrG5h" value="TestCoverageGroup" />
-    <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Interpreter Test Coverage" />
-    <property role="2pbE17" value="C" />
-    <node concept="tT9cl" id="2udM7u8XBv_" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
-      <ref role="2f8Tey" to="tprs:1TFxXPONz$p" resolve="devkitTools" />
-    </node>
-    <node concept="fu6FP" id="2udM7u8XEL7" role="ftER_">
-      <node concept="3clFbS" id="2udM7u8XEL9" role="2VODD2">
-        <node concept="fuyK3" id="4BZFyk0pEV2" role="3cqZAp">
-          <node concept="2ShNRf" id="2udM7u8XFKd" role="fuByb">
-            <node concept="1pGfFk" id="2udM7u8XFYY" role="2ShVmc">
-              <ref role="37wK5l" node="2udM7u8XF7D" resolve="ResetCoverageData" />
-            </node>
+  <node concept="312cEu" id="7BxfuU7X7MV">
+    <property role="TrG5h" value="ConstrainedValueFactory" />
+    <node concept="2tJIrI" id="7BxfuU7X7NK" role="jymVt" />
+    <node concept="Wx3nA" id="7BxfuU7X8u7" role="jymVt">
+      <property role="TrG5h" value="itVariable" />
+      <property role="2dlcS1" value="false" />
+      <property role="3TUv4t" value="false" />
+      <property role="2dld4O" value="false" />
+      <node concept="3Tqbb2" id="7BxfuU7X8ua" role="1tU5fm">
+        <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+      </node>
+      <node concept="2ShNRf" id="7BxfuU7X8ub" role="33vP2m">
+        <node concept="3zrR0B" id="7BxfuU7X8uc" role="2ShVmc">
+          <node concept="3Tqbb2" id="7BxfuU7X8ud" role="3zrR0E">
+            <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
           </node>
         </node>
       </node>
+      <node concept="3Tm1VV" id="7BxfuU7X8u9" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7BxfuU7X7Uv" role="jymVt" />
+    <node concept="3Tm1VV" id="7BxfuU7X7MW" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="2udM7u8XEWb">
     <property role="3GE5qa" value="interpreter.coverage" />
@@ -7784,7 +7786,7 @@
       <node concept="3cqZAl" id="2udM7u8XF7E" role="3clF45" />
       <node concept="3clFbS" id="2udM7u8XF7G" role="3clF47">
         <node concept="XkiVB" id="2udM7u8XFeM" role="3cqZAp">
-          <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
+          <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String)" resolve="AnAction" />
           <node concept="Xl_RD" id="2udM7u8XFfg" role="37wK5m">
             <property role="Xl_RC" value="Reset Coverage Data" />
           </node>
@@ -7824,7 +7826,6 @@
       <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
     </node>
   </node>
-  <node concept="2DaZZR" id="2udM7u8XOJr" />
   <node concept="33ghlw" id="4146AzET8_6">
     <property role="3GE5qa" value="interpreter.coverage" />
     <property role="TrG5h" value="interpreterTestCoverage" />
@@ -7837,5 +7838,28 @@
       <ref role="tU$_T" node="2udM7u8XBvu" resolve="TestCoverageGroup" />
     </node>
   </node>
+  <node concept="tC5Ba" id="2udM7u8XBvu">
+    <property role="3GE5qa" value="interpreter.coverage" />
+    <property role="TrG5h" value="TestCoverageGroup" />
+    <property role="1XlLyE" value="true" />
+    <property role="2f7twF" value="Interpreter Test Coverage" />
+    <property role="2pbE17" value="C" />
+    <node concept="tT9cl" id="2udM7u8XBv_" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
+      <ref role="2f8Tey" to="tprs:1TFxXPONz$p" resolve="devkitTools" />
+    </node>
+    <node concept="fu6FP" id="2udM7u8XEL7" role="ftER_">
+      <node concept="3clFbS" id="2udM7u8XEL9" role="2VODD2">
+        <node concept="fuyK3" id="4BZFyk0pEV2" role="3cqZAp">
+          <node concept="2ShNRf" id="2udM7u8XFKd" role="fuByb">
+            <node concept="1pGfFk" id="2udM7u8XFYY" role="2ShVmc">
+              <ref role="37wK5l" node="2udM7u8XF7D" resolve="ResetCoverageData" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2DaZZR" id="2udM7u8XOJr" />
 </model>
 
