@@ -2,8 +2,8 @@
 <model ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -481,6 +481,31 @@
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5IKJrJHP_6l">
+    <property role="EcuMT" value="6606989268199297429" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="ModelsCoverageAssResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyj" id="hJB5MUc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="coveredNode" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1219352800908" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="5IKJrJHP_6n" role="1TKVEl">
+      <property role="IQ2nx" value="6606989268199297431" />
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IKJrJHPvF0">
+    <property role="EcuMT" value="6606989268199275200" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="TestCoverageAssQuery" />
+    <property role="34LRSv" value="test coverage" />
+    <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+  </node>
   <node concept="1TIwiD" id="4e_7uAt7oTg">
     <property role="EcuMT" value="4874335060898975312" />
     <property role="TrG5h" value="InvalidValueTestItem" />
@@ -506,6 +531,17 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7fsCTt5Wdqg">
+    <property role="EcuMT" value="8348727679346857616" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="ModelsCoverageAssSummary" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="7fsCTt5Wdqh" role="1TKVEl">
+      <property role="IQ2nx" value="8348727679346857617" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

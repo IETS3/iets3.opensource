@@ -4304,8 +4304,11 @@
                     <node concept="2pIpSj" id="3gjm1nJQyUd" role="2pJxcM">
                       <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                       <node concept="36biLy" id="3gjm1nJQz3z" role="2pJxcZ">
-                        <node concept="2GrUjf" id="3gjm1nJQz3Z" role="36biLW">
-                          <ref role="2Gs0qQ" node="3gjm1nJQwwI" resolve="t" />
+                        <node concept="1PxgMI" id="31yjPB$GJsE" role="36biLW">
+                          <ref role="1m5ApE" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                          <node concept="2GrUjf" id="3gjm1nJQz3Z" role="1m5AlR">
+                            <ref role="2Gs0qQ" node="3gjm1nJQwwI" resolve="t" />
+                          </node>
                         </node>
                       </node>
                     </node>

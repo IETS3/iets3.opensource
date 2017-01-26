@@ -2,12 +2,13 @@
 <model ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -147,6 +148,9 @@
     <property role="34LRSv" value="otherwise" />
     <property role="EcuMT" value="7971844778467001950" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
+    <node concept="PrWs8" id="4146AzF0jsF" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJIaLee" resolve="IExcludeFromCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19PglA20qX_">
     <property role="EcuMT" value="1330041117646892901" />
