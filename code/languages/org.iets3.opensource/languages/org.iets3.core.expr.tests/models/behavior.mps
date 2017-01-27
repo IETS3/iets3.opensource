@@ -1216,6 +1216,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="55nqHBh_$g1" role="3cqZAp">
+          <node concept="37vLTI" id="55nqHBh__Ka" role="3clFbG">
+            <node concept="3clFbT" id="55nqHBh__K$" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="55nqHBh_$Ax" role="37vLTJ">
+              <node concept="13iPFW" id="55nqHBh_$fZ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="55nqHBh__88" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:6HHp2WmWVi9" resolve="referenceOnlyLocalStuff" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="6HHp2WndiBI" role="13h7CS">
@@ -4982,7 +4995,7 @@
   </node>
   <node concept="13h7C7" id="5IKJrJHPyYw">
     <property role="3GE5qa" value="assessment.models" />
-    <ref role="13h7C2" to="av4b:5IKJrJHPvF0" resolve="ModelsCoverageAssQuery" />
+    <ref role="13h7C2" to="av4b:5IKJrJHPvF0" resolve="TestCoverageAssQuery" />
     <node concept="13hLZK" id="5IKJrJHPyYx" role="13h7CW">
       <node concept="3clFbS" id="5IKJrJHPyYy" role="2VODD2">
         <node concept="3clFbF" id="5IKJrJHP$fG" role="3cqZAp">
@@ -5069,7 +5082,7 @@
                   </node>
                   <node concept="v3k3i" id="5IKJrJIe2Rv" role="2OqNvi">
                     <node concept="chp4Y" id="5IKJrJIe2Za" role="v3oSu">
-                      <ref role="cht4Q" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+                      <ref role="cht4Q" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
                     </node>
                   </node>
                 </node>
@@ -5269,7 +5282,7 @@
                 </node>
                 <node concept="v3k3i" id="7fsCTt5WvCP" role="2OqNvi">
                   <node concept="chp4Y" id="7fsCTt5WvCQ" role="v3oSu">
-                    <ref role="cht4Q" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+                    <ref role="cht4Q" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
                   </node>
                 </node>
               </node>
