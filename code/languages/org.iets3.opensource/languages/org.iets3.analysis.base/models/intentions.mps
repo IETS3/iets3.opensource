@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -93,7 +94,7 @@
   <node concept="2S6QgY" id="3DYDRw0WRwx">
     <property role="TrG5h" value="addSolveControlAlways" />
     <property role="3GE5qa" value="adapter" />
-    <ref role="2ZfgGC" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="3DYDRw0WRwy" role="2ZfVej">
       <node concept="3clFbS" id="3DYDRw0WRwz" role="2VODD2">
         <node concept="3clFbF" id="3DYDRw0WRxX" role="3cqZAp">
