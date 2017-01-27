@@ -266,6 +266,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -10483,25 +10489,14 @@
               </node>
             </node>
             <node concept="3clFbS" id="5DizcGO8OfO" role="3clFbx">
-              <node concept="3cpWs8" id="5DizcGO8PfC" role="3cqZAp">
-                <node concept="3cpWsn" id="5DizcGO8PfD" role="3cpWs9">
-                  <property role="TrG5h" value="coverageNode" />
-                  <node concept="3Tqbb2" id="5DizcGO8PfA" role="1tU5fm">
-                    <ref role="ehGHo" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
-                  </node>
-                  <node concept="1PxgMI" id="5DizcGO8PfE" role="33vP2m">
-                    <ref role="1m5ApE" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
-                    <node concept="37vLTw" id="5DizcGO8PfF" role="1m5AlR">
-                      <ref role="3cqZAo" node="5DizcGO8CkO" resolve="node" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="1ly2$GYp5Jl" role="3cqZAp">
                 <node concept="37vLTI" id="1ly2$GYp5Jn" role="3clFbG">
                   <node concept="2OqwBi" id="1ly2$GYp5Ho" role="37vLTx">
-                    <node concept="37vLTw" id="1ly2$GYp5Hp" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5DizcGO8PfD" resolve="coverageNode" />
+                    <node concept="1PxgMI" id="4eTaIX8oDbq" role="2Oq$k0">
+                      <ref role="1m5ApE" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+                      <node concept="37vLTw" id="4eTaIX8oDbr" role="1m5AlR">
+                        <ref role="3cqZAo" node="5DizcGO8CkO" resolve="node" />
+                      </node>
                     </node>
                     <node concept="2qgKlT" id="1ly2$GYp5Hq" role="2OqNvi">
                       <ref role="37wK5l" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
@@ -12179,21 +12174,85 @@
         </node>
         <node concept="3clFbJ" id="5DizcGObb54" role="3cqZAp">
           <node concept="3clFbS" id="5DizcGObb56" role="3clFbx">
-            <node concept="3clFbF" id="5DizcGObbFs" role="3cqZAp">
-              <node concept="37vLTI" id="5DizcGObbSx" role="3clFbG">
-                <node concept="2ShNRf" id="5DizcGObc3E" role="37vLTx">
-                  <node concept="1pGfFk" id="5DizcGObcxC" role="2ShVmc">
-                    <ref role="37wK5l" node="1ly2$GYoSMn" resolve="DefaultCoverageAnalyzer.NodeCoverage" />
-                    <node concept="37vLTw" id="5DizcGObcFc" role="37wK5m">
-                      <ref role="3cqZAo" node="5DizcGObaqQ" resolve="node" />
+            <node concept="3SKdUt" id="4eTaIX8oD6g" role="3cqZAp">
+              <node concept="3SKdUq" id="4eTaIX8oD6i" role="3SKWNk">
+                <property role="3SKdUp" value="if any descendant has been visited, deep node coverage should be updated" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4eTaIX8oRno" role="3cqZAp">
+              <node concept="3clFbS" id="4eTaIX8oRnq" role="3clFbx">
+                <node concept="3clFbF" id="4eTaIX8oRBb" role="3cqZAp">
+                  <node concept="37vLTI" id="4eTaIX8oRPs" role="3clFbG">
+                    <node concept="2ShNRf" id="4eTaIX8oS0N" role="37vLTx">
+                      <node concept="1pGfFk" id="4eTaIX8oTuc" role="2ShVmc">
+                        <ref role="37wK5l" node="5DizcGO8CHa" resolve="DefaultCoverageAnalyzer.NodeCoverage" />
+                        <node concept="37vLTw" id="4eTaIX8oTyu" role="37wK5m">
+                          <ref role="3cqZAo" node="5DizcGObaqQ" resolve="node" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="37vLTw" id="1ly2$GYoVfY" role="37wK5m">
-                      <ref role="3cqZAo" node="18$bUx5wd8G" resolve="MISSING" />
+                    <node concept="37vLTw" id="4eTaIX8oRB9" role="37vLTJ">
+                      <ref role="3cqZAo" node="5DizcGObaFX" resolve="coverageData" />
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="5DizcGObbFq" role="37vLTJ">
-                  <ref role="3cqZAo" node="5DizcGObaFX" resolve="coverageData" />
+                <node concept="3clFbF" id="4eTaIX8oTGW" role="3cqZAp">
+                  <node concept="2OqwBi" id="4eTaIX8oTR0" role="3clFbG">
+                    <node concept="37vLTw" id="4eTaIX8oTGU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5DizcGObaFX" resolve="coverageData" />
+                    </node>
+                    <node concept="liA8E" id="4eTaIX8oU40" role="2OqNvi">
+                      <ref role="37wK5l" node="5DizcGO8FmB" resolve="updateResultStatus" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4eTaIX8lYa3" role="3clFbw">
+                <node concept="2OqwBi" id="4eTaIX8lWGI" role="2Oq$k0">
+                  <node concept="37vLTw" id="4eTaIX8lWAr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5DizcGObaqQ" resolve="node" />
+                  </node>
+                  <node concept="2Rf3mk" id="4eTaIX8lWNz" role="2OqNvi" />
+                </node>
+                <node concept="2HwmR7" id="4eTaIX8lZjC" role="2OqNvi">
+                  <node concept="1bVj0M" id="4eTaIX8lZjE" role="23t8la">
+                    <node concept="3clFbS" id="4eTaIX8lZjF" role="1bW5cS">
+                      <node concept="3clFbF" id="4eTaIX8lZDr" role="3cqZAp">
+                        <node concept="1rXfSq" id="4eTaIX8lZDq" role="3clFbG">
+                          <ref role="37wK5l" node="1WlYLwX1YJg" resolve="hasNodeCoverage" />
+                          <node concept="37vLTw" id="4eTaIX8lZHK" role="37wK5m">
+                            <ref role="3cqZAo" node="4eTaIX8lZjG" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="4eTaIX8lZjG" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="4eTaIX8lZjH" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="4eTaIX8oUaO" role="9aQIa">
+                <node concept="3clFbS" id="4eTaIX8oUaP" role="9aQI4">
+                  <node concept="3clFbF" id="5DizcGObbFs" role="3cqZAp">
+                    <node concept="37vLTI" id="5DizcGObbSx" role="3clFbG">
+                      <node concept="37vLTw" id="5DizcGObbFq" role="37vLTJ">
+                        <ref role="3cqZAo" node="5DizcGObaFX" resolve="coverageData" />
+                      </node>
+                      <node concept="2ShNRf" id="5DizcGObc3E" role="37vLTx">
+                        <node concept="1pGfFk" id="5DizcGObcxC" role="2ShVmc">
+                          <ref role="37wK5l" node="1ly2$GYoSMn" resolve="DefaultCoverageAnalyzer.NodeCoverage" />
+                          <node concept="37vLTw" id="5DizcGObcFc" role="37wK5m">
+                            <ref role="3cqZAo" node="5DizcGObaqQ" resolve="node" />
+                          </node>
+                          <node concept="37vLTw" id="4eTaIX8oUlt" role="37wK5m">
+                            <ref role="3cqZAo" node="18$bUx5wd8G" resolve="MISSING" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
