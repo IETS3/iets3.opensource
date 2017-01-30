@@ -179,6 +179,9 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
@@ -10703,21 +10706,21 @@
                   </node>
                 </node>
                 <node concept="3cpWs6" id="3$EgSSy0PQT" role="3cqZAp">
-                  <node concept="2YIFZM" id="7fsCTt5Z_kK" role="3cqZAk">
-                    <ref role="37wK5l" to="wyt6:~Math.round(float):int" resolve="round" />
-                    <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                    <node concept="FJ1c_" id="7fsCTt5WFvG" role="37wK5m">
-                      <node concept="37vLTw" id="7fsCTt5WFyd" role="3uHU7w">
-                        <ref role="3cqZAo" node="3$EgSSy0NRR" resolve="total" />
-                      </node>
-                      <node concept="17qRlL" id="7fsCTt60aTi" role="3uHU7B">
-                        <node concept="3cmrfG" id="7fsCTt60aZO" role="3uHU7B">
-                          <property role="3cmrfH" value="100" />
+                  <node concept="10QFUN" id="3gsiTCw0d_o" role="3cqZAk">
+                    <node concept="10Oyi0" id="3gsiTCw0eOF" role="10QFUM" />
+                    <node concept="2YIFZM" id="3gsiTCw0cdv" role="10QFUP">
+                      <ref role="37wK5l" to="wyt6:~Math.floor(double):double" resolve="floor" />
+                      <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                      <node concept="FJ1c_" id="3gsiTCw0cdw" role="37wK5m">
+                        <node concept="37vLTw" id="3gsiTCw0cdx" role="3uHU7w">
+                          <ref role="3cqZAo" node="3$EgSSy0NRR" resolve="total" />
                         </node>
-                        <node concept="1eOMI4" id="7fsCTt5Z$oQ" role="3uHU7w">
-                          <node concept="10QFUN" id="7fsCTt5Z$oN" role="1eOMHV">
-                            <node concept="10OMs4" id="7fsCTt5ZEyt" role="10QFUM" />
-                            <node concept="37vLTw" id="7fsCTt5WENp" role="10QFUP">
+                        <node concept="1eOMI4" id="3gsiTCw0mhH" role="3uHU7B">
+                          <node concept="17qRlL" id="3gsiTCw0cdy" role="1eOMHV">
+                            <node concept="3b6qkQ" id="3gsiTCw0g8l" role="3uHU7B">
+                              <property role="$nhwW" value="100.0" />
+                            </node>
+                            <node concept="37vLTw" id="3gsiTCw0cdB" role="3uHU7w">
                               <ref role="3cqZAo" node="3$EgSSy0Ec3" resolve="covered" />
                             </node>
                           </node>
