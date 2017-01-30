@@ -108,7 +108,7 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="PrWs8" id="2hmEXUnhpLB" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUkws9">

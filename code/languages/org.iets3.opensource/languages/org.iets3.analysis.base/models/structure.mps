@@ -84,8 +84,8 @@
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3DYDRw0WRrQ" role="lGtFl">
       <property role="Hh88m" value="solveControl" />
-      <node concept="trNpa" id="7rOSrvnHOHP" role="EQaZv">
-        <ref role="trN6q" node="4pkidg67Lfn" resolve="ISolvable" />
+      <node concept="trNpa" id="4bUWUHujIm" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
     <node concept="1TJgyi" id="3DYDRw0WRuK" role="1TKVEl">

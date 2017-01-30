@@ -203,7 +203,7 @@
       </node>
       <node concept="_tjkj" id="6KxoTHgSIsJ" role="3EZMnx">
         <node concept="3F1sOY" id="6KxoTHgSIsZ" role="_tjki">
-          <ref role="1NtTu8" to="zzzn:6KxoTHgSIsv" />
+          <ref role="1NtTu8" to="zzzn:6KxoTHgSIsv" resolve="effect" />
         </node>
       </node>
       <node concept="3F1sOY" id="6zmBjqUjGZT" role="3EZMnx">
@@ -833,7 +833,7 @@
     <ref role="aqKnT" to="zzzn:49WTic8eSD1" resolve="FunctionArgument" />
   </node>
   <node concept="24kQdi" id="6KxoTHgSIrx">
-    <ref role="1XX52x" to="zzzn:6KxoTHgSIr8" resolve="EffectTagOnFunctionType" />
+    <ref role="1XX52x" to="zzzn:6KxoTHgSIr8" resolve="EffectTag" />
     <node concept="3F0ifn" id="6KxoTHgSIrz" role="2wV5jI">
       <property role="3F0ifm" value="*" />
       <node concept="11L4FC" id="6KxoTHgSIsq" role="3F10Kt">
