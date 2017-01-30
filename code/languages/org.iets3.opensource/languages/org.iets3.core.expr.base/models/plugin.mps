@@ -3589,6 +3589,35 @@
         <node concept="17QB3L" id="5HLmk5GDonA" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4bUWUHVjQ8" role="jymVt" />
+    <node concept="2YIFZL" id="4bUWUHVjHt" role="jymVt">
+      <property role="TrG5h" value="createPositiveIntegerType" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="4bUWUHVjHu" role="3clF47">
+        <node concept="3clFbF" id="4bUWUHVjHv" role="3cqZAp">
+          <node concept="2OqwBi" id="4bUWUHVjHw" role="3clFbG">
+            <node concept="1rXfSq" id="4bUWUHVjHx" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="4bUWUHVjHy" role="2OqNvi">
+              <ref role="37wK5l" node="5HLmk5GD8c_" resolve="createIntegerType" />
+              <node concept="Xl_RD" id="4bUWUHVlTh" role="37wK5m">
+                <property role="Xl_RC" value="0" />
+              </node>
+              <node concept="10M0yZ" id="4bUWUHVkSR" role="37wK5m">
+                <ref role="3cqZAo" node="2NHHcg2FYHt" resolve="POSINF" />
+                <ref role="1PxDUh" node="2NHHcg2EXna" resolve="InfHelper" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4bUWUHVjH_" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="4bUWUHVjHA" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="2Qbt$1tTQer" role="jymVt" />
     <node concept="2YIFZL" id="2Qbt$1tTQdc" role="jymVt">
       <property role="TrG5h" value="createRealType" />
