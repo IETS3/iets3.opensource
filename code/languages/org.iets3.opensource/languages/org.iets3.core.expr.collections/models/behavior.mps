@@ -2614,7 +2614,7 @@
   </node>
   <node concept="13h7C7" id="4bUWUHVnDn">
     <property role="3GE5qa" value="collection.rnd" />
-    <ref role="13h7C2" to="700h:4bUWUHViF9" resolve="RndExpr" />
+    <ref role="13h7C2" to="700h:4bUWUHViF9" resolve="CounterExpr" />
     <node concept="13hLZK" id="4bUWUHVnDo" role="13h7CW">
       <node concept="3clFbS" id="4bUWUHVnDp" role="2VODD2" />
     </node>
@@ -2627,7 +2627,7 @@
       <node concept="3clFbS" id="4bUWUHVnDJ" role="3clF47">
         <node concept="3clFbF" id="4bUWUHVnEr" role="3cqZAp">
           <node concept="Xl_RD" id="4bUWUHVnEq" role="3clFbG">
-            <property role="Xl_RC" value="rnd" />
+            <property role="Xl_RC" value="counter" />
           </node>
         </node>
       </node>

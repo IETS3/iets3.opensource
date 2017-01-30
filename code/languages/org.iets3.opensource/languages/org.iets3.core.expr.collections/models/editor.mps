@@ -919,9 +919,9 @@
   </node>
   <node concept="24kQdi" id="4bUWUHViFI">
     <property role="3GE5qa" value="collection.rnd" />
-    <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="RndExpr" />
+    <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="CounterExpr" />
     <node concept="3F0ifn" id="4bUWUHViFN" role="2wV5jI">
-      <property role="3F0ifm" value="rnd" />
+      <property role="3F0ifm" value="counter" />
     </node>
   </node>
 </model>
