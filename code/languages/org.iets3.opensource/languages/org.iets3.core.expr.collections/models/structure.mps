@@ -228,6 +228,9 @@
     <node concept="PrWs8" id="6zmBjqUjnKv" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
+    <node concept="PrWs8" id="7SZA7UdI1XC" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUjnPd">
     <property role="TrG5h" value="IContextTypedCollOp" />
@@ -304,9 +307,6 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="PrWs8" id="7GwCuf2HFo$" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Fanr">
     <property role="3GE5qa" value="collection" />
@@ -692,6 +692,19 @@
     <property role="EcuMT" value="9097157441616112342" />
     <property role="3GE5qa" value="collection.rnd" />
     <property role="TrG5h" value="IHasRndCounter" />
+  </node>
+  <node concept="1TIwiD" id="7SZA7UdzZKU">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="ForeachOp" />
+    <property role="34LRSv" value="foreach" />
+    <property role="EcuMT" value="9097157441620016186" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
   </node>
 </model>
 

@@ -156,6 +156,7 @@
         <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -3544,6 +3545,38 @@
     <node concept="1YaCAy" id="4bUWUHViGk" role="1YuTPh">
       <property role="TrG5h" value="rndExpr" />
       <ref role="1YaFvo" to="700h:4bUWUHViF9" resolve="RndExpr" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7SZA7Ud$031">
+    <property role="TrG5h" value="check_ForeachOp" />
+    <property role="3GE5qa" value="collection" />
+    <node concept="3clFbS" id="7SZA7Ud$032" role="18ibNy">
+      <node concept="3clFbJ" id="7SZA7Ud$27L" role="3cqZAp">
+        <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
+          <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
+            <node concept="Xl_RD" id="7SZA7Ud$2IB" role="2MkJ7o">
+              <property role="Xl_RC" value="foreach requires the lambda expression to have an effect" />
+            </node>
+            <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="2OEOjV">
+              <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="7SZA7Ud$287" role="3clFbw">
+          <node concept="2OqwBi" id="7SZA7Ud$2nl" role="3fr31v">
+            <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
+              <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+            </node>
+            <node concept="2qgKlT" id="7SZA7Ud$2Ca" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7SZA7Ud$034" role="1YuTPh">
+      <property role="TrG5h" value="fo" />
+      <ref role="1YaFvo" to="700h:7SZA7UdzZKU" resolve="ForeachOp" />
     </node>
   </node>
 </model>
