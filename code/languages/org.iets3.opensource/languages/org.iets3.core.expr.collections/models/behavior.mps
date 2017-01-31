@@ -2651,7 +2651,42 @@
     <property role="3GE5qa" value="collection" />
     <ref role="13h7C2" to="700h:7SZA7UdzZKU" resolve="ForeachOp" />
     <node concept="13hLZK" id="7SZA7UdHQcL" role="13h7CW">
-      <node concept="3clFbS" id="7SZA7UdHQcM" role="2VODD2" />
+      <node concept="3clFbS" id="7SZA7UdHQcM" role="2VODD2">
+        <node concept="3cpWs8" id="7SZA7Uei_Ol" role="3cqZAp">
+          <node concept="3cpWsn" id="7SZA7Uei_Om" role="3cpWs9">
+            <property role="TrG5h" value="sle" />
+            <node concept="3Tqbb2" id="7SZA7Uei_On" role="1tU5fm">
+              <ref role="ehGHo" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+            </node>
+            <node concept="2OqwBi" id="7SZA7Uei_Oo" role="33vP2m">
+              <node concept="2OqwBi" id="7SZA7Uei_Op" role="2Oq$k0">
+                <node concept="13iPFW" id="7SZA7Uei_Oq" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7SZA7Uei_Or" role="2OqNvi">
+                  <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="7SZA7Uei_Os" role="2OqNvi">
+                <ref role="1A9B2P" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7SZA7Uei_Ot" role="3cqZAp">
+          <node concept="2OqwBi" id="7SZA7Uei_Ou" role="3clFbG">
+            <node concept="2OqwBi" id="7SZA7Uei_Ov" role="2Oq$k0">
+              <node concept="37vLTw" id="7SZA7Uei_Ow" role="2Oq$k0">
+                <ref role="3cqZAo" node="7SZA7Uei_Om" resolve="sle" />
+              </node>
+              <node concept="3TrEf2" id="7SZA7Uei_Ox" role="2OqNvi">
+                <ref role="3Tt5mk" to="zzzn:6zmBjqUm7MR" resolve="expression" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7SZA7Uei_Oy" role="2OqNvi">
+              <ref role="1A9B2P" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="7SZA7UdHQdE" role="13h7CS">
       <property role="13i0iv" value="false" />
