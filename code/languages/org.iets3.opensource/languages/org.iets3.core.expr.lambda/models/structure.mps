@@ -180,7 +180,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUm7Mf">
-    <property role="TrG5h" value="IPushDownLambdaArgType" />
+    <property role="TrG5h" value="IShortLambdaContainer" />
     <property role="3GE5qa" value="lambda" />
     <property role="EcuMT" value="7554398283340741775" />
     <node concept="PrWs8" id="7nOkKwyOT39" role="PrDN$">

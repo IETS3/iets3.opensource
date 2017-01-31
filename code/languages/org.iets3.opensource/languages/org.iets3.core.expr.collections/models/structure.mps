@@ -48,6 +48,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -228,9 +229,6 @@
     <node concept="PrWs8" id="6zmBjqUjnKv" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
-    <node concept="PrWs8" id="7SZA7UdI1XC" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
-    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUjnPd">
     <property role="TrG5h" value="IContextTypedCollOp" />
@@ -246,10 +244,13 @@
     <property role="EcuMT" value="7554398283340640412" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
     <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UeV1IH" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUm1me">
@@ -307,6 +308,9 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Fanr">
     <property role="3GE5qa" value="collection" />
@@ -699,11 +703,21 @@
     <property role="34LRSv" value="foreach" />
     <property role="EcuMT" value="9097157441620016186" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="1TJgyj" id="7SZA7UeMt3K" role="1TKVEi">
+      <property role="IQ2ns" value="9097157441640583408" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <ref role="20lvS9" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+      <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
+    </node>
     <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
     </node>
     <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UeV1I$" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
 </model>
