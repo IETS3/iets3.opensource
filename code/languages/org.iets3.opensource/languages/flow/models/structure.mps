@@ -45,7 +45,7 @@
   </registry>
   <node concept="1TIwiD" id="21CK4uW5P_I">
     <property role="EcuMT" value="2335327821122460014" />
-    <property role="TrG5h" value="One" />
+    <property role="TrG5h" value="Instruction" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6egHVRy1GPC" role="PzmwI">
@@ -61,12 +61,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="two" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="21CK4uW5QeF" resolve="Two" />
+      <ref role="20lvS9" node="21CK4uW5QeF" resolve="InstructionPart" />
     </node>
   </node>
   <node concept="1TIwiD" id="21CK4uW5QeF">
     <property role="EcuMT" value="2335327821122462635" />
-    <property role="TrG5h" value="Two" />
+    <property role="TrG5h" value="InstructionPart" />
     <property role="19KtqR" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1ZZDe$PpjMh" role="1TKVEi">
@@ -78,7 +78,7 @@
     </node>
     <node concept="1TJgyi" id="6egHVRy2$GY" role="1TKVEl">
       <property role="IQ2nx" value="7174436232570227518" />
-      <property role="TrG5h" value="range" />
+      <property role="TrG5h" value="instructionRange" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="6egHVRy77Gv" role="1TKVEl">
