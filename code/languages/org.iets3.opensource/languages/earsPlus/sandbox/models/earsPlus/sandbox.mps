@@ -14,10 +14,18 @@
     <language id="9c659aae-3b7c-4b8c-8462-aacb46956ad8" name="earsPlus">
       <concept id="7174436232571446353" name="earsPlus.structure.RequirementChunk" flags="ng" index="21z5fG">
         <reference id="4580907719173029462" name="glossaryName" index="3THp$q" />
+        <child id="7174436232571446429" name="requirements" index="21z5cw" />
       </concept>
       <concept id="7174436232571441751" name="earsPlus.structure.Comparator" flags="ng" index="21z6nE" />
       <concept id="7174436232571441747" name="earsPlus.structure.Object" flags="ng" index="21z6nI" />
       <concept id="7174436232571441743" name="earsPlus.structure.Action" flags="ng" index="21z6nM" />
+      <concept id="7174436232571441736" name="earsPlus.structure.DetailedEventDrivenRequirement" flags="ng" index="21z6nP">
+        <child id="4580907719173235277" name="objectSecond" index="3TIck1" />
+        <child id="4580907719173235265" name="actionSecond" index="3TIckd" />
+        <child id="4580907719173234901" name="systemName" index="3TIcup" />
+        <child id="4580907719173234902" name="state" index="3TIcuq" />
+        <child id="4580907719173234903" name="comparator" index="3TIcur" />
+      </concept>
       <concept id="7174436232571441739" name="earsPlus.structure.SystemName" flags="ng" index="21z6nQ" />
       <concept id="7174436232571462140" name="earsPlus.structure.PredefinedActions" flags="ng" index="21zpp1">
         <child id="7174436232571462149" name="object" index="21zpmS" />
@@ -29,12 +37,25 @@
         <child id="7174436232571462161" name="actions" index="21zpmG" />
         <child id="7174436232571461739" name="systemName" index="21zpvm" />
       </concept>
+      <concept id="4580907719173119116" name="earsPlus.structure.Equal" flags="ng" index="3TIzJ0" />
       <concept id="4580907719173119119" name="earsPlus.structure.GreaterThan" flags="ng" index="3TIzJ3" />
+      <concept id="4580907719173104289" name="earsPlus.structure.State" flags="ng" index="3TIGnH" />
     </language>
   </registry>
   <node concept="21z5fG" id="6egHVRy7g0C">
     <property role="TrG5h" value="Requirement Chunk" />
     <ref role="3THp$q" node="6egHVRy7lSq" resolve="RobotGlossary" />
+    <node concept="21z6nP" id="3YiDON6bnRK" role="21z5cw">
+      <node concept="21z6nQ" id="3YiDON6bnRL" role="3TIcup">
+        <property role="TrG5h" value="robot" />
+      </node>
+      <node concept="3TIGnH" id="3YiDON6bnRM" role="3TIcuq" />
+      <node concept="21z6nM" id="3YiDON6bnRN" role="3TIckd" />
+      <node concept="21z6nI" id="3YiDON6bnRO" role="3TIck1" />
+      <node concept="3TIzJ0" id="3YiDON6bnRU" role="3TIcur">
+        <property role="TrG5h" value="Equal" />
+      </node>
+    </node>
   </node>
   <node concept="21zqxp" id="6egHVRy7lSq">
     <property role="TrG5h" value="RobotGlossary" />

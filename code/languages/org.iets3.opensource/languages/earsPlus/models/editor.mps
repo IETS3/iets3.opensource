@@ -15,6 +15,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -136,18 +137,14 @@
           </node>
         </node>
       </node>
-      <node concept="3F2HdR" id="3YiDON6aup3" role="3EZMnx">
+      <node concept="l2Vlx" id="6egHVRy7ehv" role="2iSdaV" />
+      <node concept="3F2HdR" id="5QnDqxDaUGb" role="3EZMnx">
         <ref role="1NtTu8" to="9ibe:6egHVRy7eit" resolve="requirements" />
-        <node concept="l2Vlx" id="3YiDON6aup4" role="2czzBx" />
-        <node concept="pj6Ft" id="3YiDON6aup5" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="3YiDON6aup6" role="3F10Kt">
+        <node concept="2iRkQZ" id="5QnDqxDaUGd" role="2czzBx" />
+        <node concept="pVoyu" id="3YiDON6aYLr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="l2Vlx" id="6egHVRy7ehv" role="2iSdaV" />
-      <node concept="3F0ifn" id="3YiDON6arau" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="6egHVRy7hZK">
@@ -354,7 +351,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3YiDON6ai1q">
-    <property role="3GE5qa" value="Elements" />
+    <property role="3GE5qa" value="Comparators" />
     <ref role="1XX52x" to="9ibe:3YiDON6a9Mc" resolve="Equal" />
     <node concept="3EZMnI" id="3YiDON6ai1x" role="2wV5jI">
       <node concept="3F0A7n" id="3YiDON6ai1F" role="3EZMnx">
@@ -364,7 +361,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3YiDON6ai1Q">
-    <property role="3GE5qa" value="Elements" />
+    <property role="3GE5qa" value="Comparators" />
     <ref role="1XX52x" to="9ibe:3YiDON6a9Mf" resolve="GreaterThan" />
     <node concept="3EZMnI" id="3YiDON6ai1V" role="2wV5jI">
       <node concept="3F0A7n" id="3YiDON6ai22" role="3EZMnx">
@@ -374,7 +371,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3YiDON6ai2d">
-    <property role="3GE5qa" value="Elements" />
+    <property role="3GE5qa" value="Comparators" />
     <ref role="1XX52x" to="9ibe:3YiDON6a9Mg" resolve="LessThan" />
     <node concept="3EZMnI" id="3YiDON6ai2f" role="2wV5jI">
       <node concept="3F0A7n" id="3YiDON6ai2p" role="3EZMnx">
@@ -461,6 +458,163 @@
         <node concept="l2Vlx" id="3YiDON6aA42" role="2iSdaV" />
       </node>
       <node concept="l2Vlx" id="3YiDON6aA2r" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3YiDON6aVWE">
+    <property role="3GE5qa" value="Requirements" />
+    <ref role="1XX52x" to="9ibe:6egHVRy7eio" resolve="AbstractRequirement" />
+    <node concept="3EZMnI" id="3YiDON6aVWG" role="2wV5jI">
+      <node concept="3F0ifn" id="3YiDON6aVWN" role="3EZMnx" />
+      <node concept="l2Vlx" id="3YiDON6aVWJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3YiDON6b1PE">
+    <property role="3GE5qa" value="Requirements" />
+    <ref role="1XX52x" to="9ibe:6egHVRy7d99" resolve="DetailedComplexRequirement" />
+    <node concept="3EZMnI" id="3YiDON6b1Qs" role="2wV5jI">
+      <node concept="3F0ifn" id="3YiDON6b1Qt" role="3EZMnx">
+        <property role="3F0ifm" value="When" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1Qu" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P1" resolve="stakeholderFirst" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1Qv" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1OX" resolve="state" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b1Rw" role="3EZMnx">
+        <property role="3F0ifm" value=", when" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1S$" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P2" resolve="stakeholderSecond" />
+      </node>
+      <node concept="1iCGBv" id="3YiDON6b225" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b20Q" resolve="action" />
+        <node concept="1sVBvm" id="3YiDON6b227" role="1sWHZn">
+          <node concept="3F0A7n" id="3YiDON6b22$" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="3YiDON6b1Q_" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b20R" resolve="object" />
+        <node concept="1sVBvm" id="3YiDON6b1QA" role="1sWHZn">
+          <node concept="3F0A7n" id="3YiDON6b1QB" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1QC" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1OY" resolve="comparator" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1QD" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1OZ" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b1T8" role="3EZMnx">
+        <property role="3F0ifm" value="the " />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1U2" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1OW" resolve="systemName" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b1UE" role="3EZMnx">
+        <property role="3F0ifm" value="shall" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1VE" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P4" resolve="actionSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1WH" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P5" resolve="objectSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1Xr" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1OY" resolve="comparator" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1QE" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P0" resolve="direction" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1QF" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P2" resolve="stakeholderSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b1QG" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b1P3" resolve="QoS" />
+      </node>
+      <node concept="l2Vlx" id="3YiDON6b1QH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3YiDON6b6yX">
+    <property role="3GE5qa" value="Requirements" />
+    <ref role="1XX52x" to="9ibe:6egHVRy7d9a" resolve="DetailedUnwantedBehaviorReqt" />
+    <node concept="3EZMnI" id="3YiDON6b6yZ" role="2wV5jI">
+      <node concept="3F0ifn" id="3YiDON6b6z6" role="3EZMnx">
+        <property role="3F0ifm" value="While" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6zg" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6wC" resolve="stakeHolder" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6zt" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6wE" resolve="state" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b6Fv" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6FM" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6wH" resolve="stakeholderSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6HA" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6Hn" resolve="actionSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6If" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6HZ" resolve="objectOptional" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6Ix" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6wQ" resolve="comparator" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6J0" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xc" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b6Jm" role="3EZMnx">
+        <property role="3F0ifm" value="then the" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6JV" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xk" resolve="systemName" />
+      </node>
+      <node concept="3F0ifn" id="3YiDON6b6Kl" role="3EZMnx">
+        <property role="3F0ifm" value="shall" />
+      </node>
+      <node concept="1iCGBv" id="3YiDON6b6L0" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xB" resolve="action" />
+        <node concept="1sVBvm" id="3YiDON6b6L2" role="1sWHZn">
+          <node concept="3F0A7n" id="3YiDON6b6Lo" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="3YiDON6b6LY" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6x5" resolve="object" />
+        <node concept="1sVBvm" id="3YiDON6b6M0" role="1sWHZn">
+          <node concept="3F0A7n" id="3YiDON6b6Mp" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6NY" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xt" resolve="comparatorSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6OY" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xM" resolve="valueSecond" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6Q1" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6xY" resolve="direction" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6R7" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6yb" resolve="stakeholderThird" />
+      </node>
+      <node concept="3F1sOY" id="3YiDON6b6Sg" role="3EZMnx">
+        <ref role="1NtTu8" to="9ibe:3YiDON6b6yp" resolve="Qos" />
+      </node>
+      <node concept="l2Vlx" id="3YiDON6b6z2" role="2iSdaV" />
     </node>
   </node>
 </model>
