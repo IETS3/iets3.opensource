@@ -34,6 +34,8 @@
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="tp23" ref="r:00000000-0000-4000-0000-011c89590307(jetbrains.mps.lang.constraints.constraints)" />
     <import index="k2t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.checkers(MPS.Core/)" />
+    <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -43,9 +45,6 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
         <child id="1188220173759" name="item" index="2BsfMF" />
-      </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -560,20 +559,7 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1ZZDe$PbzfR" role="3cqZAp">
-          <node concept="3cpWsn" id="1ZZDe$PbzfS" role="3cpWs9">
-            <property role="TrG5h" value="ei" />
-            <node concept="3uibUv" id="1ZZDe$PbzfT" role="1tU5fm">
-              <ref role="3uigEE" to="8sgc:6egHVRyatyO" resolve="ErrorInfo" />
-            </node>
-            <node concept="2ShNRf" id="1ZZDe$PbBix" role="33vP2m">
-              <node concept="HV5vD" id="1ZZDe$PbBVA" role="2ShVmc">
-                <ref role="HV5vE" to="8sgc:6egHVRyatyO" resolve="ErrorInfo" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6egHVRybt4H" role="3cqZAp" />
+        <node concept="3clFbH" id="2mn3vhwyhDu" role="3cqZAp" />
         <node concept="2Gpval" id="6egHVRybucq" role="3cqZAp">
           <node concept="2GrKxI" id="6egHVRybucs" role="2Gsz3X">
             <property role="TrG5h" value="concept" />

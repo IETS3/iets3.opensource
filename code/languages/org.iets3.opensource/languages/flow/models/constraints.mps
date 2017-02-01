@@ -112,9 +112,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="21CK4uW5Qge">
-    <ref role="1M2myG" to="65f2:21CK4uW5QeF" resolve="Two" />
+    <ref role="1M2myG" to="65f2:21CK4uW5QeF" resolve="InstructionPart" />
     <node concept="EnEH3" id="6egHVRy2rmv" role="1MhHOB">
-      <ref role="EomxK" to="65f2:6egHVRy2$GY" resolve="range" />
+      <ref role="EomxK" to="65f2:6egHVRy2$GY" resolve="instructionRange" />
       <node concept="QB0g5" id="6egHVRy2rmx" role="QCWH9">
         <node concept="3clFbS" id="6egHVRy2rmy" role="2VODD2">
           <node concept="3clFbH" id="6egHVRy59Xk" role="3cqZAp" />
@@ -154,7 +154,7 @@
                   <node concept="2OqwBi" id="6egHVRy5UZQ" role="3uHU7B">
                     <node concept="EsrRn" id="6egHVRy5UJG" role="2Oq$k0" />
                     <node concept="3TrcHB" id="6egHVRy5Vpy" role="2OqNvi">
-                      <ref role="3TsBF5" to="65f2:6egHVRy2$GY" resolve="range" />
+                      <ref role="3TsBF5" to="65f2:6egHVRy2$GY" resolve="instructionRange" />
                     </node>
                   </node>
                   <node concept="3cmrfG" id="6egHVRy5X9j" role="3uHU7w">
@@ -244,6 +244,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="EnEH3" id="2mn3vhwziZJ" role="1MhHOB">
+      <ref role="EomxK" to="tpck:gOOYy9I" resolve="alias" />
     </node>
   </node>
 </model>
