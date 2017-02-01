@@ -12,10 +12,15 @@
       </concept>
     </language>
     <language id="9c659aae-3b7c-4b8c-8462-aacb46956ad8" name="earsPlus">
+      <concept id="7174436232571446424" name="earsPlus.structure.AbstractRequirement" flags="ng" index="21z5c_" />
       <concept id="7174436232571446353" name="earsPlus.structure.RequirementChunk" flags="ng" index="21z5fG">
         <reference id="4580907719173029462" name="glossaryName" index="3THp$q" />
         <child id="7174436232571446429" name="requirements" index="21z5cw" />
       </concept>
+      <concept id="7174436232571441753" name="earsPlus.structure.Direction" flags="ng" index="21z6n$" />
+      <concept id="7174436232571441752" name="earsPlus.structure.Value" flags="ng" index="21z6n_" />
+      <concept id="7174436232571441755" name="earsPlus.structure.QoS" flags="ng" index="21z6nA" />
+      <concept id="7174436232571441754" name="earsPlus.structure.Stakeholder" flags="ng" index="21z6nB" />
       <concept id="7174436232571441751" name="earsPlus.structure.Comparator" flags="ng" index="21z6nE" />
       <concept id="7174436232571441747" name="earsPlus.structure.Object" flags="ng" index="21z6nI" />
       <concept id="7174436232571441743" name="earsPlus.structure.Action" flags="ng" index="21z6nM" />
@@ -27,6 +32,15 @@
         <child id="4580907719173234903" name="comparator" index="3TIcur" />
       </concept>
       <concept id="7174436232571441739" name="earsPlus.structure.SystemName" flags="ng" index="21z6nQ" />
+      <concept id="7174436232571441734" name="earsPlus.structure.DetailedUbiquitousRequirement" flags="ng" index="21z6nV">
+        <reference id="4580907719173092364" name="object" index="3TIDd0" />
+        <child id="7174436232571441924" name="QoS" index="21z6iT" />
+        <child id="7174436232571441851" name="direction" index="21z6k6" />
+        <child id="7174436232571441840" name="value" index="21z6kd" />
+        <child id="7174436232571441831" name="comparator" index="21z6kq" />
+        <child id="7174436232571441909" name="stakeholder" index="21z6l8" />
+        <child id="4580907719173092356" name="systemName" index="3TIDd8" />
+      </concept>
       <concept id="7174436232571462140" name="earsPlus.structure.PredefinedActions" flags="ng" index="21zpp1">
         <child id="7174436232571462149" name="object" index="21zpmS" />
         <child id="7174436232571462144" name="action" index="21zpmX" />
@@ -56,6 +70,20 @@
         <property role="TrG5h" value="Equal" />
       </node>
     </node>
+    <node concept="21z6nV" id="78fxHaCstnQ" role="21z5cw">
+      <ref role="3TIDd0" node="3YiDON6aJzd" resolve="Robot arm" />
+      <node concept="21z6nQ" id="78fxHaCstnS" role="3TIDd8">
+        <property role="TrG5h" value="robot" />
+      </node>
+      <node concept="3TIzJ0" id="78fxHaCsto9" role="21z6kq">
+        <property role="TrG5h" value="Equal" />
+      </node>
+      <node concept="21z6n_" id="78fxHaCstoc" role="21z6kd" />
+      <node concept="21z6n$" id="78fxHaCstof" role="21z6k6" />
+      <node concept="21z6nB" id="78fxHaCstoi" role="21z6l8" />
+      <node concept="21z6nA" id="78fxHaCstol" role="21z6iT" />
+    </node>
+    <node concept="21z5c_" id="78fxHaCstoo" role="21z5cw" />
   </node>
   <node concept="21zqxp" id="6egHVRy7lSq">
     <property role="TrG5h" value="RobotGlossary" />
