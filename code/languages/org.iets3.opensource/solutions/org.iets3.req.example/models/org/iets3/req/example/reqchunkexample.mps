@@ -44,11 +44,7 @@
       </concept>
     </language>
     <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
-      <concept id="385356062733094866" name="org.iets3.glossary.structure.AliasAttribute" flags="ng" index="qpG2u">
-        <property id="385356062733094867" name="aliasText" index="qpG2v" />
-      </concept>
       <concept id="7551038907536067159" name="org.iets3.glossary.structure.GlossaryTerm" flags="ng" index="1K7uuQ">
-        <child id="7551038907536152014" name="attrs" index="1K4zwJ" />
         <child id="7551038907536074458" name="doc" index="1K7sGV" />
       </concept>
       <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR">
@@ -101,30 +97,14 @@
   </node>
   <node concept="1K7uuR" id="2HWaB6uKzSJ">
     <property role="TrG5h" value="glossarychunck" />
-    <node concept="1K7uuQ" id="2HWaB6uKzSK" role="1K7uuT">
+    <node concept="1K7uuQ" id="6egHVRy5hNU" role="1K7uuT">
       <property role="TrG5h" value="a" />
-      <node concept="1K7v9j" id="2HWaB6uKzSL" role="1K7sGV">
-        <node concept="1_0LV8" id="2HWaB6uKzSM" role="1_0VJ0">
-          <node concept="19SGf9" id="2HWaB6uKzSN" role="1_0LWR">
-            <node concept="19SUe$" id="2HWaB6uKzSO" role="19SJt6" />
+      <node concept="1K7v9j" id="6egHVRy5hNV" role="1K7sGV">
+        <node concept="1_0LV8" id="6egHVRy5hNW" role="1_0VJ0">
+          <node concept="19SGf9" id="6egHVRy5hNX" role="1_0LWR">
+            <node concept="19SUe$" id="6egHVRy5hNY" role="19SJt6" />
           </node>
         </node>
-      </node>
-      <node concept="qpG2u" id="2HWaB6uKzSU" role="1K4zwJ">
-        <property role="qpG2v" value="this is a" />
-      </node>
-    </node>
-    <node concept="1K7uuQ" id="2HWaB6uKzT0" role="1K7uuT">
-      <property role="TrG5h" value="b" />
-      <node concept="1K7v9j" id="2HWaB6uKzT1" role="1K7sGV">
-        <node concept="1_0LV8" id="2HWaB6uKzT2" role="1_0VJ0">
-          <node concept="19SGf9" id="2HWaB6uKzT3" role="1_0LWR">
-            <node concept="19SUe$" id="2HWaB6uKzT4" role="19SJt6" />
-          </node>
-        </node>
-      </node>
-      <node concept="qpG2u" id="2HWaB6uKzTg" role="1K4zwJ">
-        <property role="qpG2v" value="this is b" />
       </node>
     </node>
   </node>

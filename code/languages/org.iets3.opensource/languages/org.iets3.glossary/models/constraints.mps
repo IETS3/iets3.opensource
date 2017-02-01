@@ -49,8 +49,10 @@
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
+      <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="7852712695066883424" name="canBeAncestor" index="1kkKnR" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -126,6 +128,21 @@
                 <ref role="1j9C0d" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="21CK4uW0e73">
+    <ref role="1M2myG" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+    <node concept="EnEH3" id="21CK4uW0e74" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+    </node>
+    <node concept="Um2eU" id="21CK4uW1pGh" role="1kkKnR">
+      <node concept="3clFbS" id="21CK4uW1pGi" role="2VODD2">
+        <node concept="3clFbF" id="21CK4uW1pNr" role="3cqZAp">
+          <node concept="3clFbT" id="21CK4uW1pNq" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
