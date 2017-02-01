@@ -2,7 +2,7 @@
 <model ref="r:582896f6-2e73-4234-a865-53f88fe70b84(earsPlus.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="9c659aae-3b7c-4b8c-8462-aacb46956ad8" name="earsPlus" version="-1" />
+    <use id="9c659aae-3b7c-4b8c-8462-aacb46956ad8" name="earsPlus" version="0" />
   </languages>
   <imports />
   <registry>

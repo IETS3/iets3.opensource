@@ -29,7 +29,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.example/org.iets3.req.example.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.pesudocode.example/org.iets3.req.pesudocode.example.msd" folder="casestudies" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.table.diehltable.examples/org.iets3.table.diehltable.examples.msd" folder="table" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
     </projectModules>
   </component>
 </project>
