@@ -467,11 +467,14 @@
       <node concept="m$_yC" id="7C6tnXfWyCZ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
-      <node concept="m$_yC" id="33r_JpYZmfn" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:33r_JpYZ8bC" resolve="com.mbeddr.platform.build" />
+      <node concept="m$_yC" id="33r_JpZ6fN_" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="m$_yC" id="33r_JpYZ3rE" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="m$_yC" id="33r_JpZ9G8E" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
       </node>
       <node concept="3_J27D" id="64GCIgM55Fw" role="m_cZH">
         <node concept="3Mxwew" id="64GCIgM55Fx" role="3MwsjC">
