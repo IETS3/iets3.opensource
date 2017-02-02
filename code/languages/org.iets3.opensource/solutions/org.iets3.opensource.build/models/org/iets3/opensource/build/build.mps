@@ -2,10 +2,10 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -215,11 +215,11 @@
       </node>
     </node>
     <node concept="398rNT" id="1Y5vs7yJZkG" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform.distribution" />
+      <property role="TrG5h" value="mbeddr.artifacts.platform" />
       <node concept="398BVA" id="1Y5vs7yK03D" role="398pKh">
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="1Y5vs7yK0xO" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform.distribution" />
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -263,9 +263,9 @@
       </node>
     </node>
     <node concept="2sgV4H" id="1Y5vs7yK2HP" role="1l3spa">
-      <ref role="1l3spb" to="al5i:6ucYLjosbT2" resolve="com.mbeddr.platform.distribution" />
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="1Y5vs7yK3FR" role="2JcizS">
-        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="mbeddr.artifacts.platform.distribution" />
+        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="mbeddr.artifacts.platform" />
       </node>
     </node>
     <node concept="2sgV4H" id="7eF9rfAnpzB" role="1l3spa">
@@ -467,8 +467,11 @@
       <node concept="m$_yC" id="7C6tnXfWyCZ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
-      <node concept="m$_yC" id="7C6tnXfWzAB" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7Pr7tifzcBn" resolve="com.mbeddr.platform.build" />
+      <node concept="m$_yC" id="33r_JpYZmfn" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:33r_JpYZ8bC" resolve="com.mbeddr.platform.build" />
+      </node>
+      <node concept="m$_yC" id="33r_JpYZ3rE" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
       <node concept="3_J27D" id="64GCIgM55Fw" role="m_cZH">
         <node concept="3Mxwew" id="64GCIgM55Fx" role="3MwsjC">
@@ -2274,11 +2277,11 @@
       </node>
     </node>
     <node concept="398rNT" id="OJuIQp_rqy" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform.distribution" />
+      <property role="TrG5h" value="mbeddr.artifacts.platform" />
       <node concept="398BVA" id="OJuIQp_rAi" role="398pKh">
         <ref role="398BVh" node="OJuIQp_r_l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="OJuIQp_rAj" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform.distribution" />
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -2384,10 +2387,10 @@
         <ref role="398BVh" node="OJuIQp_qpo" resolve="mps.home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="OJuIQp_roO" role="1l3spa">
-      <ref role="1l3spb" to="al5i:6ucYLjosbT2" resolve="com.mbeddr.platform.distribution" />
-      <node concept="398BVA" id="OJuIQp_roP" role="2JcizS">
-        <ref role="398BVh" node="OJuIQp_rqy" resolve="mbeddr.artifacts.platform.distribution" />
+    <node concept="2sgV4H" id="33r_JpYZmp_" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="33r_JpYZmrz" role="2JcizS">
+        <ref role="398BVh" node="OJuIQp_rqy" resolve="mbeddr.artifacts.platform" />
       </node>
     </node>
     <node concept="22LTRH" id="OJuIQq2vpw" role="1hWBAP">
