@@ -80,6 +80,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -1825,6 +1828,28 @@
     </node>
     <node concept="13hLZK" id="2S3ZC$oz3DV" role="13h7CW">
       <node concept="3clFbS" id="2S3ZC$oz3DW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3aPPYyxz0xp" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="3aPPYyxz0xq" role="1B3o_S" />
+      <node concept="3clFbS" id="3aPPYyxz0xt" role="3clF47">
+        <node concept="3clFbF" id="26a33r7Cs_E" role="3cqZAp">
+          <node concept="2YIFZM" id="26a33r7CsAI" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="26a33r7CsB7" role="37wK5m" />
+            <node concept="Xl_RD" id="26a33r7CsCy" role="37wK5m">
+              <property role="Xl_RC" value="typedef" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3aPPYyxz0xu" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2S3ZC$oCLkS">
