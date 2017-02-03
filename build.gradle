@@ -150,3 +150,6 @@ ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optio
         classpath: configurations.junitAnt.asPath)
 
 check.dependsOn 'ant-build-and-run-tests'
+
+defaultTasks 'ant-clean-and-build'
+
