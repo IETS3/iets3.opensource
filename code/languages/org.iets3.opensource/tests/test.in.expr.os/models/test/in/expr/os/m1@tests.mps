@@ -12,7 +12,7 @@
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
   </languages>
   <imports>
@@ -303,7 +303,7 @@
       <concept id="8348727679346857616" name="org.iets3.core.expr.tests.structure.ModelsCoverageAssSummary" flags="ng" index="Qb7k7">
         <property id="8348727679346857617" name="coverageRatio" index="Qb7k6" />
       </concept>
-      <concept id="6606989268199275200" name="org.iets3.core.expr.tests.structure.ModelsCoverageAssQuery" flags="ng" index="2QpktV" />
+      <concept id="6606989268199275200" name="org.iets3.core.expr.tests.structure.TestCoverageAssQuery" flags="ng" index="2QpktV" />
       <concept id="6606989268199297429" name="org.iets3.core.expr.tests.structure.ModelsCoverageAssResult" flags="ng" index="2QpIKI">
         <property id="6606989268199297431" name="comment" index="2QpIKG" />
         <reference id="1219352800908" name="coveredNode" index="3B5MYn" />
