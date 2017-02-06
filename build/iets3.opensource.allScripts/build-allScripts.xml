@@ -70,10 +70,7 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip" />
-    <unzip src="${artifacts.com.mbeddr.allScripts.build}/com.mbeddr.allScripts.zip" dest="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip" />
-  </target>
+  <target name="fetchDependencies" />
   
   <target name="build" depends="assemble" />
   
@@ -95,6 +92,8 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true">
+      <library file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/de.slisson.mps.all.build.jar" />
+      <library file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -163,8 +162,6 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/de.slisson.mps.all.build.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
       <chunk>
         <module file="${iets3.os.home}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" />
       </chunk>
@@ -193,8 +190,8 @@
         <path location="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
       </src>
       <classpath>
-        <fileset file="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allScripts.build/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
+        <fileset file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build">
