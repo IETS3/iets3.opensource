@@ -10,7 +10,7 @@
   <imports>
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -915,6 +915,13 @@
         </node>
       </node>
       <node concept="2iRfu4" id="3tudP_AOMNM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4bUWUHViFI">
+    <property role="3GE5qa" value="collection.rnd" />
+    <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="CounterExpr" />
+    <node concept="3F0ifn" id="4bUWUHViFN" role="2wV5jI">
+      <property role="3F0ifm" value="counter" />
     </node>
   </node>
 </model>

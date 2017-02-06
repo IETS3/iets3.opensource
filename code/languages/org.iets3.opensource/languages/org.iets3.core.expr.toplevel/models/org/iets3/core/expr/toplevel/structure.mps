@@ -359,6 +359,9 @@
     <node concept="PrWs8" id="28GlH0_EVlo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="PrWs8" id="3aPPYyxz0xi" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
     <property role="3GE5qa" value="typedef" />

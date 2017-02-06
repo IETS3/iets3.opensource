@@ -229,7 +229,7 @@
   </node>
   <node concept="14aYJB" id="1ognOHjyiuQ">
     <property role="TrG5h" value="ComponentsExplorer" />
-    <property role="3aPfAI" value="1" />
+    <property role="3aPfAI" value="16" />
     <property role="280Ia$" value="true" />
     <property role="280IaB" value="true" />
     <property role="280Iao" value="true" />

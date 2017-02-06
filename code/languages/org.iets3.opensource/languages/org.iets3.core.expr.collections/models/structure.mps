@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -48,6 +48,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -116,7 +117,7 @@
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
     </node>
     <node concept="PrWs8" id="21vB0Vz0ucl" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
@@ -243,7 +244,13 @@
     <property role="EcuMT" value="7554398283340640412" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+    <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UeV1IH" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUm1me">
@@ -254,6 +261,9 @@
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UdrNq5" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2r4g1">
@@ -298,8 +308,8 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="PrWs8" id="7GwCuf2HFo$" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+    <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Fanr">
@@ -411,7 +421,7 @@
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
     </node>
     <node concept="PrWs8" id="21vB0VyYmJh" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHD">
@@ -673,6 +683,41 @@
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="40o9_yLEYFM" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4bUWUHViF9">
+    <property role="EcuMT" value="75413091695536841" />
+    <property role="3GE5qa" value="collection.rnd" />
+    <property role="TrG5h" value="CounterExpr" />
+    <property role="34LRSv" value="counter" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="7SZA7Udl6Fm">
+    <property role="EcuMT" value="9097157441616112342" />
+    <property role="3GE5qa" value="collection.rnd" />
+    <property role="TrG5h" value="IHasRndCounter" />
+  </node>
+  <node concept="1TIwiD" id="7SZA7UdzZKU">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="ForeachOp" />
+    <property role="34LRSv" value="foreach" />
+    <property role="EcuMT" value="9097157441620016186" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="1TJgyj" id="7SZA7UeMt3K" role="1TKVEi">
+      <property role="IQ2ns" value="9097157441640583408" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <ref role="20lvS9" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
+      <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="7SZA7UeV1I$" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
 </model>

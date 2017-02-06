@@ -27,6 +27,8 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -153,7 +155,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1365,7 +1367,7 @@
           <node concept="3cpWsn" id="7Atos1xKgcp" role="3cpWs9">
             <property role="TrG5h" value="icon" />
             <node concept="3Tqbb2" id="7Atos1xKgcq" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+              <ref role="ehGHo" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
             </node>
             <node concept="2OqwBi" id="7Atos1xKgcr" role="33vP2m">
               <node concept="13iPFW" id="7Atos1xKgcu" role="2Oq$k0" />
@@ -1383,7 +1385,7 @@
                   <ref role="3cqZAo" node="7Atos1xKgcp" resolve="icon" />
                 </node>
                 <node concept="2qgKlT" id="7Atos1xKgcB" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                  <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                 </node>
               </node>
             </node>
@@ -1394,7 +1396,7 @@
                 <ref role="3cqZAo" node="7Atos1xKgcp" resolve="icon" />
               </node>
               <node concept="2qgKlT" id="7Atos1xKgcF" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAufga" resolve="isValidFile" />
+                <ref role="37wK5l" to="48kf:5lKnBeAufga" resolve="isValidFile" />
               </node>
             </node>
             <node concept="3y3z36" id="7Atos1xKgcG" role="3uHU7B">
@@ -1783,7 +1785,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="transitiveAttributes" />
-      <ref role="13i0hy" to="soq7:spmH6cG2nQ" resolve="transitiveAttributes" />
+      <ref role="13i0hy" to="soq7:spmH6cG2nQ" resolve="getTransitiveAttributes" />
       <node concept="3Tm1VV" id="spmH6cGckZ" role="1B3o_S" />
       <node concept="3clFbS" id="spmH6cGcl7" role="3clF47">
         <node concept="3clFbF" id="spmH6cGetO" role="3cqZAp">
