@@ -1,13 +1,40 @@
+
+// detect if we are in a CI build
+if (project.hasProperty("forceCI")) {
+    ext.ciBuild = true
+} else {
+    //on teamcity we are in a CI build
+    if (project.hasProperty("teamcity")) {
+        ext.ciBuild = true
+    } else {
+        ext.ciBuild = false
+    }
+}
+
+
+
 // Project version
 if (project.hasProperty('projectVersion')) {
     version project.projectVersion
 } else {
-    version GitBasedVersioning.getVersion('0', '1')
+    if (ciBuild) {
+        version GitBasedVersioning.getVersion('0', '1')
+    } else {
+        println "Local build detected, version will be SNAPSHOT"
+        version "1.0-SNAPSHOT"
+    }
 }
+
+def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
 ext.mpsVersion = '3.4.3'
-ext.mbeddrVersion = '1.0.+'
+if (forceLocal) {
+    ext.mbeddrVersion = '1.0-SNAPSHOT'
+}
+else {
+    ext.mbeddrVersion = '1.0.+'
+}
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
@@ -40,18 +67,18 @@ dependencies {
 }
 
 repositories {
-    mavenLocal()
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
+        mavenLocal()
+        for (repoUrl in project.dependencyRepositories) {
+            maven {
+                url repoUrl
+                if (project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.nexusUsername
+                        password project.nexusPassword
+                    }
                 }
             }
         }
-    }
 }
 
 task resolveMps(type: Copy) {
