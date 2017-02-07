@@ -30,6 +30,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 // Dependency versions
 ext.mpsVersion = '3.4.3'
 if (forceLocal) {
+    println "Local SNAPSHOT version forced"
     ext.mbeddrVersion = '1.0-SNAPSHOT'
 }
 else {
