@@ -388,8 +388,8 @@
     <property role="34LRSv" value="it" />
     <property role="EcuMT" value="3315773615451992747" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="PrWs8" id="MaFTCbV9r5" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    <node concept="PrWs8" id="69JueU2AzxG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69JueU2zshL" resolve="ISSItValueRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="SRvqsNmWc8">

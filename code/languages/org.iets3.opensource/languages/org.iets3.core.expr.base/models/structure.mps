@@ -1198,6 +1198,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="69JueU2EnvQ" role="PzmwI">
+      <ref role="PrY4T" node="69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="53cOfDpcBb9">
     <property role="EcuMT" value="5822258191940088521" />
@@ -1265,6 +1268,11 @@
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="ISSConstrainedValueRef" />
     <property role="EcuMT" value="6571046568849029820" />
+  </node>
+  <node concept="PlHQZ" id="69JueU2zshL">
+    <property role="EcuMT" value="7093020903919699057" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSItValueRef" />
   </node>
 </model>
 
