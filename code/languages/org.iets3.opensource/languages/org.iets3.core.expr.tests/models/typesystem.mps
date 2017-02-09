@@ -123,6 +123,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -301,6 +302,12 @@
           <node concept="2YIFZM" id="6HHp2WneCVc" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="2OqwBi" id="3_loG23cI4" role="37wK5m">
+              <node concept="1YBJjd" id="3_loG23cyI" role="2Oq$k0">
+                <ref role="1YBMHb" node="6HHp2WneCLl" resolve="cc" />
+              </node>
+              <node concept="I4A8Y" id="3_loG23cSl" role="2OqNvi" />
+            </node>
           </node>
         </node>
         <node concept="mw_s8" id="6HHp2WneCNG" role="1ZfhK$">

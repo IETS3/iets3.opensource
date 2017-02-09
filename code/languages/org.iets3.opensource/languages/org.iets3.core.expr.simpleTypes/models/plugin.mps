@@ -18,6 +18,7 @@
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
@@ -177,6 +178,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
@@ -276,6 +278,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
@@ -289,8 +294,13 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -2224,6 +2234,27 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="3_loG24ZWO" role="jymVt">
+      <property role="TrG5h" value="getApplicableLanguage" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="3uibUv" id="3_loG24ZWP" role="3clF45">
+        <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+      </node>
+      <node concept="3Tmbuc" id="3_loG24ZWQ" role="1B3o_S" />
+      <node concept="3clFbS" id="3_loG24ZWS" role="3clF47">
+        <node concept="3clFbF" id="3_loG250Xd" role="3cqZAp">
+          <node concept="pHN19" id="3_loG250X9" role="3clFbG">
+            <node concept="2V$Bhx" id="3_loG2511o" role="2V$M_3">
+              <property role="2V$B1T" value="6b277d9a-d52d-416f-a209-1919bd737f50" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.simpleTypes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3_loG24ZWT" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="2Qbt$1tSzzr" role="jymVt">
       <property role="TrG5h" value="createBooleanType" />
       <property role="1EzhhJ" value="false" />
@@ -2644,6 +2675,9 @@
         <node concept="3cpWs6" id="2q0DACtOyRw" role="3cqZAp">
           <node concept="3nyPlj" id="2q0DACtOyRx" role="3cqZAk">
             <ref role="37wK5l" to="oq0c:2q0DACtKs09" resolve="isRealType" />
+            <node concept="37vLTw" id="3_loG2k6i6" role="37wK5m">
+              <ref role="3cqZAo" node="3_loG2k487" resolve="model" />
+            </node>
             <node concept="37vLTw" id="2q0DACtOyRy" role="37wK5m">
               <ref role="3cqZAo" node="2q0DACtOyRz" resolve="type" />
             </node>
@@ -2651,6 +2685,10 @@
         </node>
       </node>
       <node concept="10P_77" id="2q0DACtOyRe" role="3clF45" />
+      <node concept="37vLTG" id="3_loG2k487" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="3_loG2k4Mb" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="2q0DACtOyRz" role="3clF46">
         <property role="TrG5h" value="type" />
         <node concept="3Tqbb2" id="2q0DACtOyR$" role="1tU5fm" />

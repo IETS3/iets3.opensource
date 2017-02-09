@@ -198,6 +198,7 @@
       </concept>
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
       <concept id="1236083209648" name="jetbrains.mps.lang.typesystem.structure.LeftOperandType_parameter" flags="nn" index="3cjfiJ" />
+      <concept id="1236083245720" name="jetbrains.mps.lang.typesystem.structure.Operation_parameter" flags="nn" index="3cjoe7" />
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
@@ -247,6 +248,7 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -1907,6 +1909,10 @@
             <node concept="2YIFZM" id="5ElkanPExCx" role="3clFbG">
               <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
               <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="2OqwBi" id="3_loG23dPO" role="37wK5m">
+                <node concept="3cjoe7" id="3_loG23dbf" role="2Oq$k0" />
+                <node concept="I4A8Y" id="3_loG23euU" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>
@@ -1955,6 +1961,12 @@
           <node concept="2YIFZM" id="5ElkanPQ$g7" role="mwGJk">
             <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
             <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="2OqwBi" id="3_loG23f7Q" role="37wK5m">
+              <node concept="1YBJjd" id="3_loG23eXn" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ElkanPQ$11" resolve="et" />
+              </node>
+              <node concept="I4A8Y" id="3_loG23fi8" role="2OqNvi" />
+            </node>
           </node>
         </node>
         <node concept="mw_s8" id="5ElkanPQ$eo" role="1ZfhK$">
