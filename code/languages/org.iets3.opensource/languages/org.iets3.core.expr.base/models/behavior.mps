@@ -35,6 +35,7 @@
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
@@ -6920,6 +6921,21 @@
         </node>
       </node>
       <node concept="10P_77" id="1OStjV1GoUq" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="58oUBCR_GL$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="solvedInTypeSystem" />
+      <ref role="13i0hy" to="1jcu:1LoQHJHiiZd" resolve="solvedInTypeSystem" />
+      <node concept="3Tm1VV" id="58oUBCR_GL_" role="1B3o_S" />
+      <node concept="3clFbS" id="58oUBCR_GLE" role="3clF47">
+        <node concept="3clFbF" id="58oUBCR_IRp" role="3cqZAp">
+          <node concept="3clFbT" id="58oUBCR_IRo" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="58oUBCR_GLF" role="3clF45" />
     </node>
     <node concept="13i0hz" id="71dSyJVoYli" role="13h7CS">
       <property role="13i0iv" value="false" />
