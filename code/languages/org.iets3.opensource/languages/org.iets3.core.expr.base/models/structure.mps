@@ -1274,5 +1274,10 @@
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="ISSItValueRef" />
   </node>
+  <node concept="PlHQZ" id="69JueU2Zy6_">
+    <property role="EcuMT" value="7093020903927062949" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSDelegatingType" />
+  </node>
 </model>
 

@@ -304,7 +304,9 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -15092,6 +15094,38 @@
     </node>
     <node concept="13hLZK" id="5GL30CqMVFm" role="13h7CW">
       <node concept="3clFbS" id="5GL30CqMVFn" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="69JueU2Zy71">
+    <property role="3GE5qa" value="contract" />
+    <ref role="13h7C2" to="hm2y:69JueU2Zy6_" resolve="ISSDelegatingType" />
+    <node concept="13i0hz" id="69JueU2Zy7c" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="effectiveType" />
+      <node concept="3Tm1VV" id="69JueU2Zy7d" role="1B3o_S" />
+      <node concept="3Tqbb2" id="69JueU2Zy7S" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3clFbS" id="69JueU2Zy7f" role="3clF47" />
+      <node concept="P$JXv" id="69JueU2ZCG2" role="lGtFl">
+        <node concept="TZ5HA" id="69JueU2ZCG3" role="TZ5H$">
+          <node concept="1dT_AC" id="69JueU2ZCG4" role="1dT_Ay">
+            <property role="1dT_AB" value="When implementing ISSDelegatingType it MUST be ensured that delegation is non-cyclic." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="69JueU2ZCTe" role="TZ5H$">
+          <node concept="1dT_AC" id="69JueU2ZCTf" role="1dT_Ay">
+            <property role="1dT_AB" value="This allows following the delegation links recursively to resolve the effectiveType." />
+          </node>
+        </node>
+        <node concept="x79VA" id="69JueU2ZCG5" role="x79VK">
+          <property role="x79VB" value="the resolved effectiveType (which should NOT be delegating!)." />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="69JueU2Zy72" role="13h7CW">
+      <node concept="3clFbS" id="69JueU2Zy73" role="2VODD2" />
     </node>
   </node>
 </model>

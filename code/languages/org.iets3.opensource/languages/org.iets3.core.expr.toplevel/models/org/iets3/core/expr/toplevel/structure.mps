@@ -381,6 +381,9 @@
       <property role="IQ2ns" value="7740953487936184023" />
       <ref role="20lvS9" node="6HHp2WngtTC" resolve="Typedef" />
     </node>
+    <node concept="PrWs8" id="69JueU2Zy8s" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69JueU2Zy6_" resolve="ISSDelegatingType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2S3ZC$oCfaF">
     <property role="3GE5qa" value="typedef" />

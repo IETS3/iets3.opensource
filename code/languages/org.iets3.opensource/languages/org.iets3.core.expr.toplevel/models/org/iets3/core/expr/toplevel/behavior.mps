@@ -2010,6 +2010,69 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="69JueU2ZynT" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectiveType" />
+      <ref role="13i0hy" to="pbu6:69JueU2Zy7c" resolve="effectiveType" />
+      <node concept="3Tm1VV" id="69JueU2ZynU" role="1B3o_S" />
+      <node concept="3clFbS" id="69JueU2ZynX" role="3clF47">
+        <node concept="3cpWs8" id="69JueU2Z_31" role="3cqZAp">
+          <node concept="3cpWsn" id="69JueU2Z_32" role="3cpWs9">
+            <property role="TrG5h" value="originalType" />
+            <node concept="3Tqbb2" id="69JueU2Z_2W" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+            </node>
+            <node concept="2OqwBi" id="69JueU2Z_33" role="33vP2m">
+              <node concept="2OqwBi" id="69JueU2Z_34" role="2Oq$k0">
+                <node concept="13iPFW" id="69JueU2Z_35" role="2Oq$k0" />
+                <node concept="3TrEf2" id="69JueU2Z_36" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="69JueU2Z_37" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="69JueU2Z_wJ" role="3cqZAp">
+          <node concept="3clFbS" id="69JueU2Z_wL" role="3clFbx">
+            <node concept="3cpWs6" id="69JueU2ZAiP" role="3cqZAp">
+              <node concept="2OqwBi" id="69JueU2ZBKb" role="3cqZAk">
+                <node concept="1PxgMI" id="69JueU2ZAXY" role="2Oq$k0">
+                  <ref role="1m5ApE" to="hm2y:69JueU2Zy6_" resolve="ISSDelegatingType" />
+                  <node concept="37vLTw" id="69JueU2ZA$Q" role="1m5AlR">
+                    <ref role="3cqZAo" node="69JueU2Z_32" resolve="originalType" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="69JueU2ZCdI" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:69JueU2Zy7c" resolve="effectiveType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="69JueU2Z_Un" role="3clFbw">
+            <node concept="37vLTw" id="69JueU2Z_IU" role="2Oq$k0">
+              <ref role="3cqZAo" node="69JueU2Z_32" resolve="originalType" />
+            </node>
+            <node concept="1mIQ4w" id="69JueU2ZA98" role="2OqNvi">
+              <node concept="chp4Y" id="69JueU2ZAdV" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:69JueU2Zy6_" resolve="ISSDelegatingType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="69JueU2ZyS5" role="3cqZAp">
+          <node concept="37vLTw" id="69JueU2Z_38" role="3clFbG">
+            <ref role="3cqZAo" node="69JueU2Z_32" resolve="originalType" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="69JueU2ZynY" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="SRvqsNnE6f">
     <property role="3GE5qa" value="record" />
