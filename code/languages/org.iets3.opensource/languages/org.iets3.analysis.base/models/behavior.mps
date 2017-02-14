@@ -5,6 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -54,8 +55,16 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -178,6 +187,41 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
+        <child id="2546654756694997556" name="reference" index="92FcQ" />
+        <child id="3106559687488913694" name="line" index="2XjZqd" />
+      </concept>
+      <concept id="5858074156537397872" name="jetbrains.mps.baseLanguage.javadoc.structure.ThrowsBlockDocTag" flags="ng" index="x0GOo">
+        <property id="5858074156537397874" name="text" index="x0GOq" />
+        <child id="6832197706140448505" name="exceptionType" index="zrq5$" />
+      </concept>
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
+        <reference id="2217234381367530213" name="classifier" index="VXe09" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
+      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
+        <child id="6962838954693749192" name="tag" index="qph3F" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
@@ -213,6 +257,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -239,6 +284,93 @@
       <node concept="3clFbS" id="4pkidg67Lgd" role="3clF47" />
       <node concept="3Tqbb2" id="4pkidg67Lgj" role="3clF45">
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+      <node concept="P$JXv" id="rj7uJEnmCa" role="lGtFl">
+        <node concept="TZ5HA" id="rj7uJEnmCb" role="TZ5H$">
+          <node concept="1dT_AC" id="rj7uJEnmCc" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a solver task for this node" />
+          </node>
+          <node concept="1dT_AC" id="rj7uJEnniS" role="1dT_Ay">
+            <property role="1dT_AB" value="." />
+          </node>
+        </node>
+        <node concept="x79VA" id="rj7uJEnmCd" role="x79VK">
+          <property role="x79VB" value="a solver task, or null if none needed." />
+        </node>
+        <node concept="x0GOo" id="rj7uJEnoR6" role="3nqlJM">
+          <property role="x0GOq" value="if there was an error creating the solver task" />
+          <node concept="3uibUv" id="rj7uJEnoRi" role="zrq5$">
+            <ref role="3uigEE" to="hnhi:XhdFKvMYZY" resolve="TaskCreationException" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="rj7uJEmUwB" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTaskSafe" />
+      <node concept="3Tm1VV" id="rj7uJEmUwC" role="1B3o_S" />
+      <node concept="3Tqbb2" id="rj7uJEmVQC" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+      <node concept="3clFbS" id="rj7uJEmUwE" role="3clF47">
+        <node concept="SfApY" id="rj7uJEmYXi" role="3cqZAp">
+          <node concept="3clFbS" id="rj7uJEmYXk" role="SfCbr">
+            <node concept="3cpWs6" id="rj7uJEmZ0y" role="3cqZAp">
+              <node concept="BsUDl" id="rj7uJEmYWt" role="3cqZAk">
+                <ref role="37wK5l" node="4pkidg67Lgb" resolve="createSolverTask" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="rj7uJEmYXl" role="TEbGg">
+            <node concept="3cpWsn" id="rj7uJEmYXn" role="TDEfY">
+              <property role="TrG5h" value="ex" />
+              <node concept="3uibUv" id="rj7uJEnpUc" role="1tU5fm">
+                <ref role="3uigEE" to="hnhi:XhdFKvMYZY" resolve="TaskCreationException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="rj7uJEmYXr" role="TDEfX">
+              <node concept="3cpWs6" id="rj7uJEmZ1v" role="3cqZAp">
+                <node concept="2YIFZM" id="rj7uJEnq4z" role="3cqZAk">
+                  <ref role="37wK5l" to="hnhi:rj7uJEmZzI" resolve="createErrorTask" />
+                  <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+                  <node concept="37vLTw" id="rj7uJEnq5e" role="37wK5m">
+                    <ref role="3cqZAo" node="rj7uJEmYXn" resolve="ex" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="rj7uJEmVR3" role="lGtFl">
+        <node concept="TZ5HA" id="rj7uJEmVR4" role="TZ5H$">
+          <node concept="1dT_AC" id="rj7uJEmVR5" role="1dT_Ay">
+            <property role="1dT_AB" value="Calls " />
+          </node>
+          <node concept="1dT_AA" id="rj7uJEmVRo" role="1dT_Ay">
+            <node concept="92FcH" id="rj7uJEmVRA" role="qph3F">
+              <node concept="TZ5HA" id="rj7uJEmVRC" role="2XjZqd" />
+              <node concept="VXe0Z" id="rj7uJEmXll" role="92FcQ">
+                <ref role="VXe0S" node="4pkidg67Lgb" resolve="createSolverTask" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="rj7uJEmVRn" role="1dT_Ay">
+            <property role="1dT_AB" value=", converts any " />
+          </node>
+          <node concept="1dT_AA" id="rj7uJEmXlT" role="1dT_Ay">
+            <node concept="92FcH" id="rj7uJEmXm4" role="qph3F">
+              <node concept="TZ5HA" id="rj7uJEmXm6" role="2XjZqd" />
+              <node concept="VXe08" id="rj7uJEmYNN" role="92FcQ">
+                <ref role="VXe09" to="hnhi:XhdFKvMYZY" resolve="TaskCreationException" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="rj7uJEmXlS" role="1dT_Ay">
+            <property role="1dT_AB" value=" it throws into an ErrorSolverTask." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="4OMZs9oF_ru" role="13h7CS">
@@ -471,8 +603,8 @@
             </node>
             <node concept="2OqwBi" id="3R3AIvuq4yF" role="33vP2m">
               <node concept="13iPFW" id="3R3AIvuq4yG" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3R3AIvuq4yH" role="2OqNvi">
-                <ref role="37wK5l" node="4pkidg67Lgb" resolve="createSolverTask" />
+              <node concept="2qgKlT" id="rj7uJEnqub" role="2OqNvi">
+                <ref role="37wK5l" node="rj7uJEmUwB" resolve="createSolverTaskSafe" />
               </node>
             </node>
           </node>
