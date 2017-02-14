@@ -71,7 +71,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3634,6 +3634,31 @@
     <node concept="1YaCAy" id="53cOfDpd0AS" role="1YuTPh">
       <property role="TrG5h" value="otherwiseLiteral" />
       <ref role="1YaFvo" to="5qo5:6UxFDrx50pu" resolve="OtherwiseLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5cK3QOdYWUv">
+    <property role="TrG5h" value="typeof_StringLengthTarget" />
+    <property role="3GE5qa" value="string" />
+    <node concept="3clFbS" id="5cK3QOdYWUw" role="18ibNy">
+      <node concept="1Z5TYs" id="5cK3QOdYX7I" role="3cqZAp">
+        <node concept="mw_s8" id="5cK3QOdYX87" role="1ZfhKB">
+          <node concept="2YIFZM" id="5cK3QOdYX9i" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5cK3QOdYX7L" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5cK3QOdYWUG" role="mwGJk">
+            <node concept="1YBJjd" id="5cK3QOdYWUZ" role="1Z2MuG">
+              <ref role="1YBMHb" node="5cK3QOdYWUy" resolve="slt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5cK3QOdYWUy" role="1YuTPh">
+      <property role="TrG5h" value="slt" />
+      <ref role="1YaFvo" to="5qo5:5cK3QOdYQ7C" resolve="StringLengthTarget" />
     </node>
   </node>
 </model>

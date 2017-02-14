@@ -486,5 +486,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5cK3QOdYWTV">
+    <property role="3GE5qa" value="string" />
+    <ref role="1XX52x" to="5qo5:5cK3QOdYQ7C" resolve="StringLengthTarget" />
+    <node concept="3F0ifn" id="5cK3QOdYWU0" role="2wV5jI">
+      <property role="3F0ifm" value="length" />
+    </node>
+  </node>
 </model>
 
