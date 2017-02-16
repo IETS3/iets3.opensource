@@ -12,8 +12,10 @@
       </concept>
     </language>
     <language id="9c659aae-3b7c-4b8c-8462-aacb46956ad8" name="earsPlus">
+      <concept id="7174436232571446424" name="earsPlus.structure.AbstractRequirement" flags="ng" index="21z5c_" />
       <concept id="7174436232571446353" name="earsPlus.structure.RequirementChunk" flags="ng" index="21z5fG">
         <reference id="4580907719173029462" name="glossaryName" index="3THp$q" />
+        <child id="7174436232571446429" name="requirements" index="21z5cw" />
       </concept>
       <concept id="7174436232571441751" name="earsPlus.structure.Comparator" flags="ng" index="21z6nE" />
       <concept id="7174436232571441747" name="earsPlus.structure.Object" flags="ng" index="21z6nI" />
@@ -35,6 +37,7 @@
   <node concept="21z5fG" id="6egHVRy7g0C">
     <property role="TrG5h" value="Requirement Chunk" />
     <ref role="3THp$q" node="6egHVRy7lSq" resolve="RobotGlossary" />
+    <node concept="21z5c_" id="m8QJVNEBNv" role="21z5cw" />
   </node>
   <node concept="21zqxp" id="6egHVRy7lSq">
     <property role="TrG5h" value="RobotGlossary" />

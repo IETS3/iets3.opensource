@@ -14,6 +14,8 @@
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
     <dependency reexport="false">a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)</dependency>
     <dependency reexport="false">9334dc69-2bda-458c-b059-1fbb4e03b6fd(org.iets3.req.example)</dependency>
+    <dependency reexport="false">fe0a14cc-9212-40be-b582-e9a63739b346(DashboardLanguage)</dependency>
+    <dependency reexport="false">~_PreferencesModule#org.iets3.core.__spreferences.PlatformTemplates(org.iets3.core.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:64a975b8-2ef3-4868-a70b-987a6808fd42:DashboardLanguage" version="-1" />
@@ -21,8 +23,10 @@
     <language slang="l:f3ed62ca-3490-40d0-890b-9b3133cc2ead:com.mbeddr.cc.requirements.c" version="0" />
     <language slang="l:53bab999-e9c3-428a-80be-fef5bed08f55:com.mbeddr.cc.trace" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
+    <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="1" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
     <language slang="l:61c69711-ed61-4850-81d9-7714ff227fb0:com.mbeddr.core.expressions" version="3" />
+    <language slang="l:f93d1dbe-bfd1-42dd-932a-f375fa6f5373:com.mbeddr.core.make" version="1" />
     <language slang="l:6d11763d-483d-4b2b-8efc-09336c1b0001:com.mbeddr.core.modules" version="4" />
     <language slang="l:3bf5377a-e904-4ded-9754-5a516023bfaa:com.mbeddr.core.pointers" version="0" />
     <language slang="l:a9d69647-0840-491e-bf39-2eb0805d2011:com.mbeddr.core.statements" version="1" />
@@ -49,12 +53,15 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
+    <language slang="l:f95247f1-a285-4e98-864f-7f4b1723a807:org.iets3.core.users" version="0" />
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
+    <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
     <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="fe0a14cc-9212-40be-b582-e9a63739b346(DashboardLanguage)" version="0" />
     <module reference="d3afc8c7-c9a4-4233-b23b-5a7fd844d987(FlowDemo)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />

@@ -6,21 +6,26 @@
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="0" />
     <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
     <use id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
   </languages>
   <imports />
   <registry>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
-    </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
-        <child id="3350625596580089613" name="text" index="1_0LWR" />
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
-        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
@@ -42,9 +47,6 @@
       </concept>
     </language>
     <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
-      <concept id="7551038907536168764" name="org.iets3.glossary.structure.TermRefWord" flags="ng" index="1K4BFt">
-        <reference id="7551038907536168770" name="term" index="1K4BEz" />
-      </concept>
       <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR" />
     </language>
     <language id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority">
@@ -113,6 +115,7 @@
   </node>
   <node concept="3VZ1SI" id="2HWaB6uKzTG">
     <property role="TrG5h" value="RequirementsChunkFan" />
+    <ref role="G9hjw" node="m8QJVNHeJ5" resolve="doccofig" />
     <node concept="3SUGrM" id="2HWaB6uKzTH" role="3VY$cn">
       <property role="1kP$Fy" value="1" />
       <property role="TrG5h" value="req1" />
@@ -122,23 +125,23 @@
         <property role="TrG5h" value="req1" />
         <node concept="3VXduJ" id="2HWaB6uKzU7" role="3VXd6G" />
         <node concept="2IiYmp" id="2HWaB6uKzUa" role="2IiYaD" />
-        <node concept="3VXr5h" id="2HWaB6uKzTV" role="3VXr5i">
-          <node concept="1_0LV8" id="2HWaB6uKzUn" role="1_0VJ0">
-            <node concept="19SGf9" id="2HWaB6uKzUo" role="1_0LWR">
-              <node concept="19SUe$" id="4piIZ0lM8xV" role="19SJt6" />
-              <node concept="1K4BFt" id="4piIZ0lM8xJ" role="19SJt6">
-                <ref role="1K4BEz" node="4piIZ0lM8xE" resolve="this priority is edited by saad." />
-              </node>
-              <node concept="19SUe$" id="4piIZ0lM8xW" role="19SJt6" />
-            </node>
-          </node>
-        </node>
+        <node concept="3VXr5h" id="2HWaB6uKzTV" role="3VXr5i" />
         <node concept="30MVSE" id="2HWaB6uKzU4" role="30MXt6">
           <ref role="30MVS_" node="2HWaB6uKzSH" resolve="saad1" />
         </node>
         <node concept="3NleDc" id="2HWaB6uKzUd" role="3VXd6h">
           <ref role="1vnyhv" node="2HWaB6uKzTx" resolve="mid" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="m8QJVNHeJ5">
+    <property role="TrG5h" value="doccofig" />
+    <node concept="2SbYGw" id="m8QJVNHeJ6" role="Cbewh">
+      <property role="TrG5h" value="democofig" />
+      <node concept="9PVaO" id="m8QJVNHeJ7" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

@@ -53,14 +53,14 @@
       <property role="IQ2ns" value="5067319170577261255" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="reqFileName" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
     </node>
     <node concept="1TJgyj" id="4piIZ0lMeb9" role="1TKVEi">
       <property role="IQ2ns" value="5067319170577261257" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tableName" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
     </node>
   </node>
