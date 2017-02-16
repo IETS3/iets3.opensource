@@ -13,9 +13,7 @@
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -44,13 +42,10 @@
       </concept>
     </language>
     <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
-      <concept id="7551038907536067159" name="org.iets3.glossary.structure.GlossaryTerm" flags="ng" index="1K7uuQ">
-        <child id="7551038907536074458" name="doc" index="1K7sGV" />
+      <concept id="7551038907536168764" name="org.iets3.glossary.structure.TermRefWord" flags="ng" index="1K4BFt">
+        <reference id="7551038907536168770" name="term" index="1K4BEz" />
       </concept>
-      <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR">
-        <child id="7551038907536067160" name="terms" index="1K7uuT" />
-      </concept>
-      <concept id="7551038907536072626" name="org.iets3.glossary.structure.GlossaryDocSection" flags="ng" index="1K7v9j" />
+      <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR" />
     </language>
     <language id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority">
       <concept id="472917913057073157" name="org.iets3.req.priority.structure.Priority" flags="ng" index="hfVLj">
@@ -97,16 +92,6 @@
   </node>
   <node concept="1K7uuR" id="2HWaB6uKzSJ">
     <property role="TrG5h" value="glossarychunck" />
-    <node concept="1K7uuQ" id="6egHVRy5hNU" role="1K7uuT">
-      <property role="TrG5h" value="a" />
-      <node concept="1K7v9j" id="6egHVRy5hNV" role="1K7sGV">
-        <node concept="1_0LV8" id="6egHVRy5hNW" role="1_0VJ0">
-          <node concept="19SGf9" id="6egHVRy5hNX" role="1_0LWR">
-            <node concept="19SUe$" id="6egHVRy5hNY" role="19SJt6" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="hfVLm" id="2HWaB6uKzTu">
     <property role="TrG5h" value="prioritylevel" />
@@ -127,7 +112,7 @@
     </node>
   </node>
   <node concept="3VZ1SI" id="2HWaB6uKzTG">
-    <property role="TrG5h" value="requirement" />
+    <property role="TrG5h" value="RequirementsChunkFan" />
     <node concept="3SUGrM" id="2HWaB6uKzTH" role="3VY$cn">
       <property role="1kP$Fy" value="1" />
       <property role="TrG5h" value="req1" />
@@ -140,9 +125,11 @@
         <node concept="3VXr5h" id="2HWaB6uKzTV" role="3VXr5i">
           <node concept="1_0LV8" id="2HWaB6uKzUn" role="1_0VJ0">
             <node concept="19SGf9" id="2HWaB6uKzUo" role="1_0LWR">
-              <node concept="19SUe$" id="2HWaB6uKzUp" role="19SJt6">
-                <property role="19SUeA" value="this priority is edited by saad." />
+              <node concept="19SUe$" id="4piIZ0lM8xV" role="19SJt6" />
+              <node concept="1K4BFt" id="4piIZ0lM8xJ" role="19SJt6">
+                <ref role="1K4BEz" node="4piIZ0lM8xE" resolve="this priority is edited by saad." />
               </node>
+              <node concept="19SUe$" id="4piIZ0lM8xW" role="19SJt6" />
             </node>
           </node>
         </node>
