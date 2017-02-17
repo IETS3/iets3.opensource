@@ -317,5 +317,14 @@
       <ref role="1YaFvo" to="av4b:6HHp2WneCKI" resolve="CommentCondition" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7ZvWWnqP6GM">
+    <property role="TrG5h" value="typeof_AssertTestItem" />
+    <property role="3GE5qa" value="" />
+    <node concept="3clFbS" id="7ZvWWnqP6GN" role="18ibNy" />
+    <node concept="1YaCAy" id="7ZvWWnqP6GP" role="1YuTPh">
+      <property role="TrG5h" value="ati" />
+      <ref role="1YaFvo" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+    </node>
+  </node>
 </model>
 

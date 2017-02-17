@@ -420,17 +420,25 @@
             <node concept="3clFbJ" id="5cK3QOdZ9br" role="3cqZAp">
               <node concept="3clFbS" id="5cK3QOdZ9bt" role="3clFbx">
                 <node concept="3cpWs6" id="5cK3QOdZ9$M" role="3cqZAp">
-                  <node concept="2OqwBi" id="5cK3QOdZ9VX" role="3cqZAk">
-                    <node concept="1eOMI4" id="5cK3QOdZ9Aq" role="2Oq$k0">
-                      <node concept="10QFUN" id="5cK3QOdZ9Ar" role="1eOMHV">
-                        <node concept="37vLTw" id="5cK3QOdZ9Ap" role="10QFUP">
-                          <ref role="3cqZAo" node="78hTg1zufpu" resolve="val" />
+                  <node concept="2ShNRf" id="6KhzXd8y3oR" role="3cqZAk">
+                    <node concept="1pGfFk" id="6KhzXd8y7ok" role="2ShVmc">
+                      <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                      <node concept="3cpWs3" id="6KhzXd8y8_x" role="37wK5m">
+                        <node concept="Xl_RD" id="6KhzXd8y8_$" role="3uHU7w" />
+                        <node concept="2OqwBi" id="5cK3QOdZ9VX" role="3uHU7B">
+                          <node concept="1eOMI4" id="5cK3QOdZ9Aq" role="2Oq$k0">
+                            <node concept="10QFUN" id="5cK3QOdZ9Ar" role="1eOMHV">
+                              <node concept="37vLTw" id="5cK3QOdZ9Ap" role="10QFUP">
+                                <ref role="3cqZAo" node="78hTg1zufpu" resolve="val" />
+                              </node>
+                              <node concept="17QB3L" id="5cK3QOdZ9DB" role="10QFUM" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5cK3QOdZbzw" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                          </node>
                         </node>
-                        <node concept="17QB3L" id="5cK3QOdZ9DB" role="10QFUM" />
                       </node>
-                    </node>
-                    <node concept="liA8E" id="5cK3QOdZbzw" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                     </node>
                   </node>
                 </node>
