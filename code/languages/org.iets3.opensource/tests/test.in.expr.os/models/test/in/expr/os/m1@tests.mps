@@ -79,6 +79,7 @@
         <child id="8872269265520081294" name="elements" index="2TO1xH" />
       </concept>
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
+      <concept id="2554784455264825928" name="org.iets3.core.expr.collections.structure.FlattenOp" flags="ng" index="YMTy_" />
       <concept id="3989687177013570767" name="org.iets3.core.expr.collections.structure.UpToTarget" flags="ng" index="1hzhIm">
         <child id="3989687177013570768" name="max" index="1hzhI9" />
       </concept>
@@ -3844,7 +3845,74 @@
         </node>
         <node concept="_ixoA" id="6KhzXd8yuxM" role="_iOnB" />
         <node concept="_ixoA" id="6KhzXd8yuRi" role="_iOnB" />
-        <node concept="_ixoA" id="6KhzXd8yvyl" role="_iOnB" />
+        <node concept="2zPypq" id="2dOqIOtKa7Y" role="_iOnB">
+          <property role="TrG5h" value="nestedList" />
+          <node concept="3iBYfx" id="2dOqIOtKafx" role="2zPyp_">
+            <node concept="3iBYfx" id="2dOqIOtKafR" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKag4" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKagh" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="3iBYfx" id="2dOqIOtKaih" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKajH" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKajU" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="3iBYfx" id="2dOqIOtKann" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKaq1" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKaqe" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="2dOqIOtKay$" role="_iOnB">
+          <property role="TrG5h" value="flattened" />
+          <node concept="1QScDb" id="2dOqIOtKaC8" role="2zPyp_">
+            <node concept="YMTy_" id="2dOqIOtKaOT" role="1QScD9" />
+            <node concept="_emDc" id="2dOqIOtKaBX" role="30czhm">
+              <ref role="_emDf" node="2dOqIOtKa7Y" resolve="nestedList" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="2dOqIOtL3Xc" role="_iOnB" />
+        <node concept="_fkuM" id="2dOqIOtL2Xd" role="_iOnB">
+          <property role="TrG5h" value="flattening" />
+          <node concept="_fkuZ" id="2dOqIOtL5a9" role="_fkp5">
+            <node concept="_fku$" id="2dOqIOtL5aa" role="_fkur" />
+            <node concept="_emDc" id="2dOqIOtL5av" role="_fkuY">
+              <ref role="_emDf" node="2dOqIOtKay$" resolve="flattened" />
+            </node>
+            <node concept="3iBYfx" id="2dOqIOtL5b3" role="_fkuS">
+              <node concept="30bXRB" id="2dOqIOtL5bc" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtL5bJ" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtL5cD" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtL5dU" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtL5fy" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtL5hx" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_ixoA" id="TUBgQ0Sysq" role="_iOnB" />
         <node concept="7CXmI" id="6HHp2WmYzDn" role="lGtFl">
           <node concept="7OXhh" id="6HHp2WmYzFZ" role="7EUXB" />

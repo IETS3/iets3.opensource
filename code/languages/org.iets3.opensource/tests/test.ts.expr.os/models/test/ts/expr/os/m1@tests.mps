@@ -40,10 +40,12 @@
       <concept id="8872269265520081293" name="org.iets3.core.expr.collections.structure.SetLiteral" flags="ng" index="2TO1xI">
         <child id="8872269265520081294" name="elements" index="2TO1xH" />
       </concept>
+      <concept id="2554784455264825928" name="org.iets3.core.expr.collections.structure.FlattenOp" flags="ng" index="YMTy_" />
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
       </concept>
+      <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="3989687176989764921" name="sizeConstraint" index="1ietDw" />
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -3073,7 +3075,47 @@
           </node>
         </node>
         <node concept="_ixoA" id="29BBztTTfa3" role="_iOnB" />
-        <node concept="_ixoA" id="29BBztTZ4dn" role="_iOnB" />
+        <node concept="2zPypq" id="2dOqIOtKa7Y" role="_iOnB">
+          <property role="TrG5h" value="nestedList" />
+          <node concept="3iBYfx" id="2dOqIOtKafx" role="2zPyp_">
+            <node concept="3iBYfx" id="2dOqIOtKafR" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKag4" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKagh" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="3iBYfx" id="2dOqIOtKaih" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKajH" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKajU" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="3iBYfx" id="2dOqIOtKann" role="3iBYfI">
+              <node concept="30bXRB" id="2dOqIOtKaq1" role="3iBYfI">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="2dOqIOtKaqe" role="3iBYfI">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="2dOqIOtKay$" role="_iOnB">
+          <property role="TrG5h" value="flattened" />
+          <node concept="1QScDb" id="2dOqIOtKaYS" role="2zPyp_">
+            <node concept="3iB7TU" id="2dOqIOtKb74" role="1QScD9" />
+            <node concept="1QScDb" id="2dOqIOtKaC8" role="30czhm">
+              <node concept="YMTy_" id="2dOqIOtKaOT" role="1QScD9" />
+              <node concept="_emDc" id="2dOqIOtKaBX" role="30czhm">
+                <ref role="_emDf" node="2dOqIOtKa7Y" resolve="nestedList" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_ixoA" id="29BBztTZ4gq" role="_iOnB" />
         <node concept="_ixoA" id="29BBztTZ4gG" role="_iOnB" />
         <node concept="_ixoA" id="29BBztTZ4eF" role="_iOnB" />
