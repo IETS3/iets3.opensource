@@ -93,6 +93,9 @@
     <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiJ" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/function.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -186,6 +189,9 @@
     <node concept="PrWs8" id="31yjPB$GKJm" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiN" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/constant.png" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
@@ -241,6 +247,9 @@
       <node concept="asaX9" id="xu7xcKiozg" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordDeclaration&quot;" />
       </node>
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiS" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/record.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
@@ -361,6 +370,9 @@
     </node>
     <node concept="PrWs8" id="3aPPYyxz0xi" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiQ" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/type.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
@@ -491,6 +503,9 @@
       <property role="TrG5h" value="qualified" />
       <property role="IQ2nx" value="7061117989424763681" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiU" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/enum.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DMVh">
