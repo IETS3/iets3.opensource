@@ -66,6 +66,7 @@
     <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)</dependency>
+    <dependency reexport="false">f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -149,6 +150,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
+    <module reference="f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
