@@ -48,9 +48,6 @@
       </concept>
     </language>
     <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
-      <concept id="7551038907536168764" name="org.iets3.glossary.structure.TermRefWord" flags="ng" index="1K4BFt">
-        <reference id="7551038907536168770" name="term" index="1K4BEz" />
-      </concept>
       <concept id="7551038907536067159" name="org.iets3.glossary.structure.GlossaryTerm" flags="ng" index="1K7uuQ">
         <child id="7551038907536074458" name="doc" index="1K7sGV" />
       </concept>
@@ -60,12 +57,10 @@
       <concept id="7551038907536072626" name="org.iets3.glossary.structure.GlossaryDocSection" flags="ng" index="1K7v9j" />
     </language>
     <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
-      <concept id="380060842849065671" name="org.iets3.req.core.structure.State" flags="ng" index="2IiYml" />
-      <concept id="8913201067422874021" name="org.iets3.req.core.structure.NonMergeableWord" flags="ng" index="3KVni0">
-        <property id="8913201067422962862" name="escapedValue" index="3KOHAb" />
-      </concept>
+      <concept id="8906162732673320835" name="org.iets3.req.core.structure.StateDone" flags="ng" index="3NisLi" />
+      <concept id="8906162732673130909" name="org.iets3.req.core.structure.PriorityTag" flags="ng" index="3NleDc" />
       <concept id="4230179762005235942" name="org.iets3.req.core.structure.HeaderRequirement" flags="ng" index="3SUGrM" />
-      <concept id="5151426049053645597" name="org.iets3.req.core.structure.Kind" flags="ng" index="3VXd6J" />
+      <concept id="5151426049053646109" name="org.iets3.req.core.structure.KindFunctional" flags="ng" index="3VXduJ" />
       <concept id="5151426049053572067" name="org.iets3.req.core.structure.RequirementsDocSection" flags="ng" index="3VXr5h" />
       <concept id="5151426049053542735" name="org.iets3.req.core.structure.IReqContainer" flags="ng" index="3VY$fX">
         <child id="5151426049053542821" name="requirements" index="3VY$cn" />
@@ -74,6 +69,7 @@
       <concept id="5151426049053136313" name="org.iets3.req.core.structure.DefaultRequirement" flags="ng" index="3VZ1Wb">
         <child id="380060842849066491" name="state" index="2IiYaD" />
         <child id="8479184967780780683" name="owner" index="30MXt6" />
+        <child id="5151426049053645603" name="tags" index="3VXd6h" />
         <child id="5151426049053645598" name="kind" index="3VXd6G" />
         <child id="5151426049053572064" name="doc" index="3VXr5i" />
       </concept>
@@ -97,54 +93,20 @@
       <node concept="3VZ1Wb" id="6sXRKlwyeN7" role="3VY$cn">
         <property role="1kP$Fy" value="3" />
         <property role="3VZ1X1" value="hsaksakfd" />
-        <node concept="3VXd6J" id="6sXRKlwyeN9" role="3VXd6G" />
-        <node concept="2IiYml" id="6sXRKlwyeNb" role="2IiYaD" />
+        <property role="TrG5h" value="one" />
+        <node concept="3VXduJ" id="5f48Vl87mWY" role="3VXd6G" />
+        <node concept="3NisLi" id="5f48Vl87mX1" role="2IiYaD" />
         <node concept="3VXr5h" id="6sXRKlwyeNd" role="3VXr5i">
           <node concept="1_0LV8" id="6sXRKlw$jqA" role="1_0VJ0">
             <node concept="19SGf9" id="6sXRKlw$jqB" role="1_0LWR">
-              <node concept="19SUe$" id="6sXRKlw$jrH" role="19SJt6" />
-              <node concept="1K4BFt" id="6sXRKlw$js$" role="19SJt6">
-                <ref role="1K4BEz" node="6sXRKlw$jsv" resolve="minValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrI" role="19SJt6" />
-              <node concept="3KVni0" id="6sXRKlw$jrs" role="19SJt6">
-                <property role="3KOHAb" value="" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrJ" role="19SJt6" />
-              <node concept="3KVni0" id="6sXRKlw$jrt" role="19SJt6">
-                <property role="3KOHAb" value="" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrK" role="19SJt6" />
-              <node concept="3KVni0" id="6sXRKlw$jru" role="19SJt6">
-                <property role="3KOHAb" value="" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrL" role="19SJt6" />
-              <node concept="1K4BFt" id="6sXRKlw$jt7" role="19SJt6">
-                <ref role="1K4BEz" node="6sXRKlw$jt2" resolve="maxValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrM" role="19SJt6" />
-              <node concept="3KVni0" id="6sXRKlw$jrw" role="19SJt6">
-                <property role="3KOHAb" value="" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrN" role="19SJt6" />
-              <node concept="1K4BFt" id="6sXRKlw$jtK" role="19SJt6">
-                <ref role="1K4BEz" node="6sXRKlw$jtF" resolve="minValueDecrease" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrO" role="19SJt6" />
-              <node concept="3KVni0" id="6sXRKlw$jry" role="19SJt6">
-                <property role="3KOHAb" value="" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrP" role="19SJt6" />
-              <node concept="1K4BFt" id="6sXRKlw$jut" role="19SJt6">
-                <ref role="1K4BEz" node="6sXRKlw$juo" resolve="maxValueDecrease" />
-              </node>
-              <node concept="19SUe$" id="6sXRKlw$jrQ" role="19SJt6">
-                <property role="19SUeA" value="asdsahfdjahfjdh " />
+              <node concept="19SUe$" id="6sXRKlw$jrH" role="19SJt6">
+                <property role="19SUeA" value=" sfdsf sdfdsf sddfdsf sdfdsf" />
               </node>
             </node>
           </node>
         </node>
         <node concept="30MVSE" id="6sXRKlwyeNf" role="30MXt6" />
+        <node concept="3NleDc" id="5f48Vl87IZl" role="3VXd6h" />
       </node>
     </node>
   </node>
