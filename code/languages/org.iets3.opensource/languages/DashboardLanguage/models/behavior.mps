@@ -1128,7 +1128,7 @@
                       <node concept="1uHKPH" id="6sXRKlwszah" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="6sXRKlwsnfH" role="37wK5m">
-                      <property role="Xl_RC" value="Glossary Term maxValueIncrease not Defined in Requirements" />
+                      <property role="Xl_RC" value="Glossary Term [maxValueIncrease] not Defined in Requirements" />
                     </node>
                     <node concept="10M0yZ" id="6sXRKlwsoeo" role="37wK5m">
                       <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
@@ -1169,7 +1169,7 @@
                       <node concept="1uHKPH" id="6sXRKlwsAaL" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="6sXRKlwsAaM" role="37wK5m">
-                      <property role="Xl_RC" value="Glossary Term minValueIncrease not Defined in Requirements" />
+                      <property role="Xl_RC" value="Glossary Term [minValueIncrease] not Defined in Requirements" />
                     </node>
                     <node concept="10M0yZ" id="6sXRKlwsAaN" role="37wK5m">
                       <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
@@ -1210,7 +1210,7 @@
                       <node concept="1uHKPH" id="6sXRKlwsAP_" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="6sXRKlwsAPA" role="37wK5m">
-                      <property role="Xl_RC" value="Glossary Term maxValueDecrease not Defined in Requirements" />
+                      <property role="Xl_RC" value="Glossary Term [maxValueDecrease] not Defined in Requirements" />
                     </node>
                     <node concept="10M0yZ" id="6sXRKlwsAPB" role="37wK5m">
                       <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
@@ -1252,7 +1252,7 @@
                       <node concept="1uHKPH" id="6sXRKlwsDOu" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="6sXRKlwsDOv" role="37wK5m">
-                      <property role="Xl_RC" value="Glossary Term minValueDecrease not Defined in Requirements" />
+                      <property role="Xl_RC" value="Glossary Term [minValueDecrease] not Defined in Requirements" />
                     </node>
                     <node concept="10M0yZ" id="6sXRKlwsDOw" role="37wK5m">
                       <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
