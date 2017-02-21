@@ -720,5 +720,11 @@
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2dOqIOtJZ98">
+    <property role="EcuMT" value="2554784455264825928" />
+    <property role="TrG5h" value="FlattenOp" />
+    <property role="34LRSv" value="flatten" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+  </node>
 </model>
 

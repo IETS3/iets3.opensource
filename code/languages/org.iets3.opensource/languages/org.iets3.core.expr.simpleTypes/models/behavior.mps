@@ -4256,5 +4256,27 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="5cK3QOe0Mk2">
+    <property role="3GE5qa" value="string" />
+    <ref role="13h7C2" to="5qo5:5cK3QOdYQ7C" resolve="StringLengthTarget" />
+    <node concept="13hLZK" id="5cK3QOe0Mk3" role="13h7CW">
+      <node concept="3clFbS" id="5cK3QOe0Mk4" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5cK3QOe0Mkd" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="5cK3QOe0Mke" role="1B3o_S" />
+      <node concept="3clFbS" id="5cK3QOe0Mkh" role="3clF47">
+        <node concept="3clFbF" id="5cK3QOe0Mk$" role="3cqZAp">
+          <node concept="Xl_RD" id="5cK3QOe0Mkz" role="3clFbG">
+            <property role="Xl_RC" value="length" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5cK3QOe0Mki" role="3clF45" />
+    </node>
+  </node>
 </model>
 
