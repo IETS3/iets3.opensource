@@ -124,7 +124,7 @@
   </registry>
   <node concept="1j_Gsq" id="4piIZ0lU$p8">
     <ref role="1jA_$R" node="6sXRKlwMp5w" resolve="RequirementsChunkFAU" />
-    <ref role="1jA_$T" node="6sXRKlxaZ8z" resolve="DiehlTable" />
+    <ref role="1jA_$T" node="6sXRKlxjlGB" resolve="DiehlTable" />
   </node>
   <node concept="2SbYGP" id="6sXRKlwMp5x">
     <property role="TrG5h" value="ReqDocConfigFAU" />
@@ -141,11 +141,11 @@
     <ref role="G9hjw" node="6sXRKlwMp5x" resolve="ReqDocConfigFAU" />
     <node concept="3SUGrM" id="6sXRKlwMp5M" role="3VY$cn">
       <property role="1kP$Fy" value="1" />
-      <property role="TrG5h" value="req1" />
+      <property role="TrG5h" value="FAURequirement" />
       <node concept="3VZ1Wb" id="6sXRKlwMp5Q" role="3VY$cn">
         <property role="1kP$Fy" value="3" />
         <property role="TrG5h" value="FAURequirement" />
-        <property role="3VZ1X1" value="FAU-Example-Requirement" />
+        <property role="3VZ1X1" value="FAU-DiehlTableExample-Requirement" />
         <node concept="3VXr5h" id="6sXRKlwMp5W" role="3VXr5i">
           <node concept="1_0LV8" id="6sXRKlwUGkc" role="1_0VJ0">
             <node concept="19SGf9" id="6sXRKlwUGkd" role="1_0LWR">
@@ -238,13 +238,13 @@
       <property role="30Mgg1" value="abid@fortiss.org" />
     </node>
   </node>
-  <node concept="3yOg9E" id="6sXRKlxaZ8z">
+  <node concept="3yOg9E" id="6sXRKlxjlGB">
     <property role="TrG5h" value="DiehlTable" />
-    <node concept="1iZyVp" id="6sXRKlxaZ8$" role="1iY3eJ">
+    <node concept="1iZyVp" id="6sXRKlxjlGC" role="1iY3eJ">
       <property role="1iZyVm" value="75" />
       <property role="1iZyVk" value="-30" />
     </node>
-    <node concept="1iZyUC" id="6sXRKlxaZ8_" role="1iY3eF">
+    <node concept="1iZyUC" id="6sXRKlxjlGD" role="1iY3eF">
       <property role="1iZyU_" value="80" />
       <property role="1iZyUF" value="-35" />
     </node>
