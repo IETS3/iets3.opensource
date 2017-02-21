@@ -20,6 +20,7 @@
     <language id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage">
       <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq">
         <reference id="5067319170577261255" name="reqFileName" index="1jA_$R" />
+        <reference id="5067319170577261257" name="tableName" index="1jA_$T" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -45,6 +46,20 @@
       </concept>
       <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      </concept>
+    </language>
+    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable">
+      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
+        <property id="9177268329656752713" name="Max" index="1iZyU_" />
+        <property id="9177268329656752711" name="Min" index="1iZyUF" />
+      </concept>
+      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
+        <property id="9177268329656752696" name="Min" index="1iZyVk" />
+        <property id="9177268329656752698" name="Max" index="1iZyVm" />
+      </concept>
+      <concept id="7430885610120727933" name="org.iets3.table.diehltable.structure.DiehlTable" flags="ng" index="3yOg9E">
+        <child id="9177268329656878919" name="decreasingThreshold" index="1iY3eF" />
+        <child id="9177268329656878915" name="increasingThreshold" index="1iY3eJ" />
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -109,6 +124,7 @@
   </registry>
   <node concept="1j_Gsq" id="4piIZ0lU$p8">
     <ref role="1jA_$R" node="6sXRKlwMp5w" resolve="RequirementsChunkFAU" />
+    <ref role="1jA_$T" node="6sXRKlxw$Ky" resolve="DiehlTable" />
   </node>
   <node concept="2SbYGP" id="6sXRKlwMp5x">
     <property role="TrG5h" value="ReqDocConfigFAU" />
@@ -220,6 +236,17 @@
       <property role="30Mgga" value="Saadbin" />
       <property role="30Mgg4" value="Abid" />
       <property role="30Mgg1" value="abid@fortiss.org" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="6sXRKlxw$Ky">
+    <property role="TrG5h" value="DiehlTable" />
+    <node concept="1iZyVp" id="6sXRKlxw$Kz" role="1iY3eJ">
+      <property role="1iZyVm" value="75" />
+      <property role="1iZyVk" value="-30" />
+    </node>
+    <node concept="1iZyUC" id="6sXRKlxw$K$" role="1iY3eF">
+      <property role="1iZyU_" value="80" />
+      <property role="1iZyUF" value="-35" />
     </node>
   </node>
 </model>
