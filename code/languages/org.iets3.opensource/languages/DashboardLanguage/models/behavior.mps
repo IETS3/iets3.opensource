@@ -189,6 +189,9 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
@@ -224,6 +227,9 @@
       </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -2191,6 +2197,97 @@
             <node concept="3GX2aA" id="6sXRKlwNycA" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="6sXRKlxln22" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxlnnz" role="3cqZAp" />
+        <node concept="3SKdUt" id="6sXRKlxlBYE" role="3cqZAp">
+          <node concept="3SKdUq" id="6sXRKlxlBYG" role="3SKWNk">
+            <property role="3SKdUp" value="check for table increasing and decreasing values being defined" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6sXRKlxlFRr" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxluEz" role="3cqZAp" />
+        <node concept="3cpWs8" id="6sXRKlxlJLR" role="3cqZAp">
+          <node concept="3cpWsn" id="6sXRKlxlJLU" role="3cpWs9">
+            <property role="TrG5h" value="diehlrows" />
+            <node concept="2I9FWS" id="6sXRKlxlJLP" role="1tU5fm">
+              <ref role="2I9WkF" to="fivt:6svNLu5NGXy" resolve="DiehlRow" />
+            </node>
+            <node concept="2OqwBi" id="6sXRKlxlO56" role="33vP2m">
+              <node concept="37vLTw" id="6sXRKlxlNPG" role="2Oq$k0">
+                <ref role="3cqZAo" node="aV859nD_3b" resolve="model" />
+              </node>
+              <node concept="2RRcyG" id="6sXRKlxlOj9" role="2OqNvi">
+                <ref role="2RRcyH" to="fivt:6svNLu5NGXy" resolve="DiehlRow" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6sXRKlxm1eA" role="3cqZAp">
+          <node concept="3cpWsn" id="6sXRKlxm1eD" role="3cpWs9">
+            <property role="TrG5h" value="increasingvals" />
+            <node concept="2OqwBi" id="6sXRKlxm7kP" role="33vP2m">
+              <node concept="37vLTw" id="6sXRKlxm5el" role="2Oq$k0">
+                <ref role="3cqZAo" node="6sXRKlxlJLU" resolve="diehlrows" />
+              </node>
+              <node concept="13MTOL" id="6sXRKlxm9Q1" role="2OqNvi">
+                <ref role="13MTZf" to="fivt:6svNLu5NN3$" resolve="IncreasingInterval" />
+              </node>
+            </node>
+            <node concept="A3Dl8" id="6sXRKlxmqN7" role="1tU5fm">
+              <node concept="3Tqbb2" id="6sXRKlxmqTb" role="A3Ik2">
+                <ref role="ehGHo" to="fivt:6svNLu5NHzM" resolve="IncreasingValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="6sXRKlxmr1s" role="3cqZAp">
+          <node concept="2GrKxI" id="6sXRKlxmr1u" role="2Gsz3X">
+            <property role="TrG5h" value="incrval" />
+          </node>
+          <node concept="37vLTw" id="6sXRKlxmHEB" role="2GsD0m">
+            <ref role="3cqZAo" node="6sXRKlxm1eD" resolve="increasingvals" />
+          </node>
+          <node concept="3clFbS" id="6sXRKlxmr1y" role="2LFqv$">
+            <node concept="3clFbJ" id="6sXRKlxrJs$" role="3cqZAp">
+              <node concept="2OqwBi" id="6sXRKlxrJF_" role="3clFbw">
+                <node concept="2GrUjf" id="6sXRKlxrJwx" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6sXRKlxmr1u" resolve="incrval" />
+                </node>
+                <node concept="3w_OXm" id="6sXRKlxrN6c" role="2OqNvi" />
+              </node>
+              <node concept="3clFbS" id="6sXRKlxrJsA" role="3clFbx">
+                <node concept="3clFbF" id="6sXRKlxrNcr" role="3cqZAp">
+                  <node concept="2YIFZM" id="6sXRKlxrNcs" role="3clFbG">
+                    <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
+                    <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
+                    <node concept="37vLTw" id="6sXRKlxrNct" role="37wK5m">
+                      <ref role="3cqZAo" node="aV859nDI7e" resolve="results" />
+                    </node>
+                    <node concept="2GrUjf" id="6sXRKlxrNrg" role="37wK5m">
+                      <ref role="2Gs0qQ" node="6sXRKlxmr1u" resolve="incrval" />
+                    </node>
+                    <node concept="Xl_RD" id="6sXRKlxrNcv" role="37wK5m">
+                      <property role="Xl_RC" value="defined Increasing Values (TO,FROM) " />
+                    </node>
+                    <node concept="10M0yZ" id="6sXRKlxrNcw" role="37wK5m">
+                      <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
+                      <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
+                    </node>
+                    <node concept="Xl_RD" id="6sXRKlxrNcx" role="37wK5m">
+                      <property role="Xl_RC" value="MPS Reference Error" />
+                    </node>
+                    <node concept="10Nm6u" id="6sXRKlxrNcy" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6sXRKlxlv0i" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxluiZ" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxlo2F" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxlooi" role="3cqZAp" />
+        <node concept="3clFbH" id="6sXRKlxlrjb" role="3cqZAp" />
         <node concept="3clFbH" id="6sXRKlwP7B0" role="3cqZAp" />
         <node concept="3clFbH" id="6sXRKlwN7dl" role="3cqZAp" />
         <node concept="3clFbH" id="6sXRKlwN7xq" role="3cqZAp" />
