@@ -297,9 +297,6 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265514351708" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="PrWs8" id="7GwCuf2AkLu" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2E2W0">
     <property role="3GE5qa" value="" />
