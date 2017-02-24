@@ -5357,6 +5357,26 @@
               </node>
             </node>
           </node>
+          <node concept="TDmWw" id="6MNhNeUA8Fv" role="TEbGg">
+            <node concept="3cpWsn" id="6MNhNeUA8Fw" role="TDEfY">
+              <property role="TrG5h" value="stopEx" />
+              <node concept="3uibUv" id="6MNhNeUA8ZD" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:6MNhNeUeNix" resolve="StopAndReturnException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="6MNhNeUA8Fy" role="TDEfX">
+              <node concept="3cpWs6" id="6MNhNeUA9AF" role="3cqZAp">
+                <node concept="2OqwBi" id="6MNhNeUAa5d" role="3cqZAk">
+                  <node concept="37vLTw" id="6MNhNeUA9DX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6MNhNeUA8Fw" resolve="stopEx" />
+                  </node>
+                  <node concept="liA8E" id="6MNhNeUAaCI" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:6MNhNeUeYe3" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="TDmWw" id="6iqfHNCcHwa" role="TEbGg">
             <node concept="3cpWsn" id="6iqfHNCcHwc" role="TDEfY">
               <property role="TrG5h" value="ex" />
