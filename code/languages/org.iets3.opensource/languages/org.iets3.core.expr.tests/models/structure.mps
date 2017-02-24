@@ -549,7 +549,7 @@
   <node concept="1TIwiD" id="1$1rueeDiNV">
     <property role="EcuMT" value="1801842150043102459" />
     <property role="TrG5h" value="OptExpression" />
-    <property role="34LRSv" value="some" />
+    <property role="34LRSv" value="some&lt;..&gt;" />
     <property role="3GE5qa" value="opt" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1$1rueeDiNY" role="1TKVEi">

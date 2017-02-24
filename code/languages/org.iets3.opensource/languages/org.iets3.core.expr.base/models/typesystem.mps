@@ -5154,5 +5154,67 @@
       <ref role="1YaFvo" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
     </node>
   </node>
+  <node concept="35pCF_" id="7$ajNzjJNPv">
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="replaceOptionWithTye" />
+    <node concept="1YaCAy" id="7$ajNzjJNQs" role="35pZ6h">
+      <property role="TrG5h" value="optionType" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+    </node>
+    <node concept="3clFbS" id="7$ajNzjJNPx" role="2sgrp5">
+      <node concept="1ZobV4" id="7$ajNzjJO7V" role="3cqZAp">
+        <node concept="mw_s8" id="7$ajNzjJO9j" role="1ZfhKB">
+          <node concept="2OqwBi" id="7$ajNzjJOiA" role="mwGJk">
+            <node concept="1YBJjd" id="7$ajNzjJO9h" role="2Oq$k0">
+              <ref role="1YBMHb" node="7$ajNzjJNQs" resolve="optionType" />
+            </node>
+            <node concept="3TrEf2" id="7$ajNzjJOrk" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:2rOWEwsEjch" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7$ajNzjJO7Y" role="1ZfhK$">
+          <node concept="1YBJjd" id="7$ajNzjJNQP" role="mwGJk">
+            <ref role="1YBMHb" node="7$ajNzjJNQ3" resolve="type" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7$ajNzjJNQ3" role="1YuTPh">
+      <property role="TrG5h" value="type" />
+      <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1xSnZT" id="7$ajNzjNtY3" role="1xSnZW">
+      <node concept="3clFbS" id="7$ajNzjNtY4" role="2VODD2">
+        <node concept="3clFbF" id="7$ajNzjNu5o" role="3cqZAp">
+          <node concept="3fqX7Q" id="7$ajNzjNv5A" role="3clFbG">
+            <node concept="2OqwBi" id="7$ajNzjNv5C" role="3fr31v">
+              <node concept="1YBJjd" id="7$ajNzjNv5D" role="2Oq$k0">
+                <ref role="1YBMHb" node="7$ajNzjJNQ3" resolve="type" />
+              </node>
+              <node concept="1mIQ4w" id="7$ajNzjNv5E" role="2OqNvi">
+                <node concept="chp4Y" id="7$ajNzjNv5F" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="35pCF_" id="7$ajNzjN5ro">
+    <property role="3GE5qa" value="option" />
+    <property role="TrG5h" value="replaceNoneType" />
+    <node concept="1YaCAy" id="7$ajNzjN5rp" role="35pZ6h">
+      <property role="TrG5h" value="optionType" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+    </node>
+    <node concept="3clFbS" id="7$ajNzjN5rq" role="2sgrp5" />
+    <node concept="1YaCAy" id="7$ajNzjN5ry" role="1YuTPh">
+      <property role="TrG5h" value="noneType" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsEji_" resolve="NoneType" />
+    </node>
+  </node>
 </model>
 
