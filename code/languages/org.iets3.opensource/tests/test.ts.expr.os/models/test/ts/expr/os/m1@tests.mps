@@ -259,6 +259,9 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
+        <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
+      </concept>
       <concept id="3315773615451992747" name="org.iets3.core.expr.toplevel.structure.TypedefContractValExpr" flags="ng" index="QCKKy" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
@@ -511,6 +514,7 @@
     <node concept="1qefOq" id="7k$Bvd3eSUO" role="1SKRRt">
       <node concept="_iOnU" id="7k$Bvd3eTgv" role="1qenE9">
         <property role="TrG5h" value="stringTests" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="7k$Bvd3eTmz" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="30bdrP" id="7k$Bvd3eTm$" role="2zPyp_">
@@ -585,6 +589,7 @@
     <node concept="1qefOq" id="7k$Bvd3eS9v" role="1SKRRt">
       <node concept="_iOnU" id="7k$Bvd3eSvb" role="1qenE9">
         <property role="TrG5h" value="realTests" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="7k$Bvd3eS_f" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="30bXRB" id="7k$Bvd3eS_g" role="2zPyp_">
@@ -656,6 +661,7 @@
     <node concept="1qefOq" id="7k$Bvd3eR9k" role="1SKRRt">
       <node concept="_iOnU" id="7k$Bvd3eRvf" role="1qenE9">
         <property role="TrG5h" value="realAndInt" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="7k$Bvd3eRFk" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="30bXRB" id="7k$Bvd3eRFl" role="2zPyp_">
@@ -763,6 +769,7 @@
     <node concept="1qefOq" id="6HHp2WmQh7f" role="1SKRRt">
       <node concept="_iOnU" id="6HHp2WmQhhx" role="1qenE9">
         <property role="TrG5h" value="path" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2Ss9d8" id="6HHp2WmQhmh" role="_iOnB">
           <property role="TrG5h" value="Person" />
           <node concept="2Ss9d7" id="6HHp2WmQhmi" role="S5Trm">
@@ -905,6 +912,7 @@
       <node concept="_iOnU" id="6HHp2WmQfRv" role="1qenE9">
         <property role="TrG5h" value="option" />
         <property role="1XBH2A" value="true" />
+        <property role="2SXJ1i" value="true" />
         <node concept="7CXmI" id="31j6C3cLODo" role="lGtFl">
           <node concept="7OXhh" id="31j6C3cLP6A" role="7EUXB" />
         </node>
@@ -1048,6 +1056,7 @@
     <node concept="1qefOq" id="6HHp2WmQdlR" role="1SKRRt">
       <node concept="_iOnU" id="6HHp2WmQdQC" role="1qenE9">
         <property role="TrG5h" value="lambda" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="6HHp2WmQdVw" role="_iOnB">
           <property role="TrG5h" value="l1" />
           <node concept="3ix9CK" id="6HHp2WmQdVx" role="2zPyp_">
@@ -1374,6 +1383,7 @@
     <node concept="1qefOq" id="7k$Bvd3eP5F" role="1SKRRt">
       <node concept="_iOnU" id="7k$Bvd3ePEF" role="1qenE9">
         <property role="TrG5h" value="intTests" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="7k$Bvd3eQJE" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="30bXRB" id="7k$Bvd3eQJF" role="2zPyp_">
@@ -1497,6 +1507,7 @@
     <node concept="1qefOq" id="5aHkq2w38OJ" role="1SKRRt">
       <node concept="_iOnU" id="5aHkq2w38OK" role="1qenE9">
         <property role="TrG5h" value="errors2" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="5aHkq2w38OL" role="_iOnB">
           <property role="TrG5h" value="htmlPage1" />
           <node concept="1af_rf" id="5aHkq2w38OM" role="2zPyp_">
@@ -1966,6 +1977,7 @@
     <node concept="1qefOq" id="6HHp2WmO$sa" role="1SKRRt">
       <node concept="_iOnU" id="6HHp2WmO$Os" role="1qenE9">
         <property role="TrG5h" value="errors" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="6HHp2WmO_yL" role="_iOnB">
           <property role="TrG5h" value="htmlPage1" />
           <node concept="1af_rf" id="6HHp2WmO_yM" role="2zPyp_">
@@ -2451,6 +2463,7 @@
       <node concept="_iOnU" id="67Y8mp$FfMg" role="1qenE9">
         <property role="TrG5h" value="enums" />
         <property role="1XBH2A" value="true" />
+        <property role="2SXJ1i" value="true" />
         <node concept="7CXmI" id="67Y8mp$FfMh" role="lGtFl">
           <node concept="7OXhh" id="67Y8mp$FfMi" role="7EUXB" />
         </node>
@@ -2527,6 +2540,41 @@
           </node>
         </node>
         <node concept="_ixoA" id="3Y6fbK15FGn" role="_iOnB" />
+        <node concept="2zPypq" id="5WNmJ7EGQPM" role="_iOnB">
+          <property role="TrG5h" value="isSomeOceanBlue1" />
+          <node concept="2vmvy5" id="5WNmJ7EGQS0" role="2zM23F" />
+          <node concept="1QScDb" id="5WNmJ7EGQSb" role="2zPyp_">
+            <node concept="2JjPkS" id="5WNmJ7EGQSc" role="1QScD9">
+              <ref role="2Jt$xV" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+            <node concept="2nD44o" id="5WNmJ7EGQSd" role="30czhm">
+              <node concept="_emDc" id="5WNmJ7EGQSe" role="2nD44t">
+                <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="5WNmJ7EKavR" role="lGtFl">
+              <node concept="1TM$A" id="5WNmJ7EKavS" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WNmJ7EKawG" role="_iOnB">
+          <property role="TrG5h" value="isSomeOceanBlu2e" />
+          <node concept="Uns6S" id="5WNmJ7EKaE$" role="2zM23F">
+            <node concept="2vmvy5" id="5WNmJ7EKaEz" role="Uns6T" />
+          </node>
+          <node concept="1QScDb" id="5WNmJ7EKawI" role="2zPyp_">
+            <node concept="2JjPkS" id="5WNmJ7EKawJ" role="1QScD9">
+              <ref role="2Jt$xV" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+            <node concept="2nD44o" id="5WNmJ7EKawK" role="30czhm">
+              <node concept="_emDc" id="5WNmJ7EKawL" role="2nD44t">
+                <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5WNmJ7EKail" role="_iOnB" />
+        <node concept="_ixoA" id="5WNmJ7EKajJ" role="_iOnB" />
         <node concept="1Ws0TD" id="3Y6fbK1iL1O" role="_iOnB">
           <property role="1WsWdv" value="Valued Enums" />
         </node>
@@ -2740,6 +2788,7 @@
       <node concept="_iOnU" id="6HHp2WmOyAQ" role="1qenE9">
         <property role="TrG5h" value="collections" />
         <property role="1XBH2A" value="true" />
+        <property role="2SXJ1i" value="true" />
         <node concept="1Ws0TD" id="29BBztTZvul" role="_iOnB">
           <property role="1WsWdv" value="Valid upcasts" />
         </node>
@@ -3138,6 +3187,7 @@
     <node concept="1qefOq" id="7k$Bvd3eOiV" role="1SKRRt">
       <node concept="_iOnU" id="7k$Bvd3eO$l" role="1qenE9">
         <property role="TrG5h" value="booleanTests" />
+        <property role="2SXJ1i" value="true" />
         <node concept="2zPypq" id="7k$Bvd3eOQX" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="2vmpnb" id="7k$Bvd3eOQY" role="2zPyp_" />
@@ -4448,6 +4498,7 @@
     <node concept="1qefOq" id="5jYrMSmEdrd" role="1SKRRt">
       <node concept="_iOnU" id="5jYrMSmEdrf" role="1qenE9">
         <property role="TrG5h" value="functions" />
+        <property role="2SXJ1i" value="true" />
         <node concept="1aga60" id="5jYrMSmEdro" role="_iOnB">
           <property role="TrG5h" value="emptyFun1" />
           <node concept="1aduha" id="5jYrMSmEdrJ" role="1ahQXP">

@@ -317,7 +317,7 @@
       <node concept="3clFbS" id="gLftEcmuJb" role="2VODD2">
         <node concept="3clFbF" id="gLftEcmuK$" role="3cqZAp">
           <node concept="Xl_RD" id="gLftEcmuKz" role="3clFbG">
-            <property role="Xl_RC" value="Wrap with option[...]" />
+            <property role="Xl_RC" value="Wrap with opt&lt;...&gt;" />
           </node>
         </node>
       </node>
