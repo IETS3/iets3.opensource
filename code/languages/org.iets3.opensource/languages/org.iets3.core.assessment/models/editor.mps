@@ -289,6 +289,9 @@
       </node>
       <node concept="3F1sOY" id="5ZLQMNq2l7d" role="3EZMnx">
         <ref role="1NtTu8" to="330h:5ZLQMNq2hPP" resolve="traceKind" />
+        <node concept="VechU" id="1SeAacxoe9D" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5ZLQMNq2l7p" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
