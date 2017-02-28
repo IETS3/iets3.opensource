@@ -3062,5 +3062,55 @@
   <node concept="3p36aQ" id="5HLmk5GuP9B">
     <ref role="aqKnT" to="av4b:4_qY3E4CWhU" resolve="EmptyTestItem" />
   </node>
+  <node concept="24kQdi" id="1$1rueeDiOr">
+    <property role="3GE5qa" value="opt" />
+    <ref role="1XX52x" to="av4b:1$1rueeDiNV" resolve="OptExpression" />
+    <node concept="3EZMnI" id="1$1rueeDiOw" role="2wV5jI">
+      <node concept="2iRfu4" id="1$1rueeDiOx" role="2iSdaV" />
+      <node concept="3F0ifn" id="1$1rueeDiOt" role="3EZMnx">
+        <property role="3F0ifm" value="some&lt;" />
+        <node concept="11L4FC" id="1$1rueeDiR8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1$1rueeDiSl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1$1rueeDiOD" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1$1rueeDiNY" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="1$1rueeDiOL" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="1$1rueeDiPY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1$1rueeG25O">
+    <property role="3GE5qa" value="opt" />
+    <ref role="1XX52x" to="av4b:1$1rueeG254" resolve="NoneExpr" />
+    <node concept="3EZMnI" id="1$1rueeG25Q" role="2wV5jI">
+      <node concept="2iRfu4" id="1$1rueeG25R" role="2iSdaV" />
+      <node concept="3F0ifn" id="1$1rueeG25S" role="3EZMnx">
+        <property role="3F0ifm" value="none&lt;" />
+        <node concept="11L4FC" id="1$1rueeG25T" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1$1rueeG25U" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1$1rueeG25V" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1$1rueeG25n" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="1$1rueeG25W" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="1$1rueeG25X" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

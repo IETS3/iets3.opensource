@@ -290,7 +290,7 @@
                 <node concept="2Ry0Ak" id="7kYh9WsYZmk" role="iGT6I">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="7kYh9WsYZml" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.iets3.core.expr.collections" />
+                    <property role="2Ry0Am" value="org.iets3.core.expr.base" />
                     <node concept="2Ry0Ak" id="7kYh9WsYZwo" role="2Ry0An">
                       <property role="2Ry0Am" value="lib" />
                     </node>
@@ -603,28 +603,6 @@
           <node concept="3bR9La" id="6JPXQMQs0qa" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6JPXQMQs0qb" role="3bR37C">
-          <node concept="1BurEX" id="6JPXQMQs0qc" role="1SiIV1">
-            <node concept="398BVA" id="6JPXQMQs0qd" role="1BurEY">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="6JPXQMQs0qe" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6JPXQMQs0qf" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.collections" />
-                  <node concept="2Ry0Ak" id="6JPXQMQs0qg" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6JPXQMQs0qh" role="2Ry0An">
-                      <property role="2Ry0Am" value="pcollections" />
-                      <node concept="2Ry0Ak" id="6JPXQMQs0qi" role="2Ry0An">
-                        <property role="2Ry0Am" value="pcollections-28apr2016.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="6JPXQMQs0qj" role="3bR37C">
@@ -1376,6 +1354,28 @@
           <node concept="3bR9La" id="7tdpzfjNue3" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bG6MAFWt8s" role="3bR37C">
+          <node concept="1BurEX" id="6bG6MAFWt8t" role="1SiIV1">
+            <node concept="398BVA" id="6bG6MAFWt8d" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6bG6MAFWt8e" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6bG6MAFWt8f" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.base" />
+                  <node concept="2Ry0Ak" id="6bG6MAFWt8g" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="6bG6MAFWt8h" role="2Ry0An">
+                      <property role="2Ry0Am" value="pcollections" />
+                      <node concept="2Ry0Ak" id="6bG6MAFWt8i" role="2Ry0An">
+                        <property role="2Ry0Am" value="pcollections-28apr2016.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
