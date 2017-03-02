@@ -15,13 +15,13 @@ if (project.hasProperty("forceCI")) {
 
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
-    version project.iets3OpenSourceVersion
+    version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        version GitBasedVersioning.getVersion('0', '1')
+        version = GitBasedVersioning.getVersion('0', '1')
     } else {
         println "Local build detected, version will be SNAPSHOT"
-        version "1.0-SNAPSHOT"
+        version = "1.0-SNAPSHOT"
     }
 }
 
