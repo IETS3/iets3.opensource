@@ -18,10 +18,7 @@
   </imports>
   <registry>
     <language id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage">
-      <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq">
-        <reference id="5067319170577261255" name="reqFileName" index="1jA_$R" />
-        <reference id="5067319170577261257" name="tableName" index="1jA_$T" />
-      </concept>
+      <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -122,10 +119,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="1j_Gsq" id="4piIZ0lU$p8">
-    <ref role="1jA_$R" node="6sXRKlwMp5w" resolve="RequirementsChunkFAU" />
-    <ref role="1jA_$T" node="6sXRKlxw$Ky" resolve="DiehlTable" />
-  </node>
+  <node concept="1j_Gsq" id="4piIZ0lU$p8" />
   <node concept="2SbYGP" id="6sXRKlwMp5x">
     <property role="TrG5h" value="ReqDocConfigFAU" />
     <node concept="2SbYGw" id="6sXRKlx3pKv" role="Cbewh">
