@@ -2545,7 +2545,18 @@
           </node>
         </node>
         <node concept="_ixoA" id="5WNmJ7EKail" role="_iOnB" />
-        <node concept="_ixoA" id="5WNmJ7EKajJ" role="_iOnB" />
+        <node concept="2zPypq" id="5L2mTKmLuKk" role="_iOnB">
+          <property role="TrG5h" value="oceanBlueEq" />
+          <node concept="30cPrO" id="5L2mTKmLuN8" role="2zPyp_">
+            <node concept="5mhuz" id="5L2mTKmLuNv" role="30dEs_">
+              <ref role="5mhpJ" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+            <node concept="_emDc" id="5L2mTKmLuMV" role="30dEsF">
+              <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5L2mTKmLuID" role="_iOnB" />
         <node concept="1Ws0TD" id="3Y6fbK1iL1O" role="_iOnB">
           <property role="1WsWdv" value="Valued Enums" />
         </node>
