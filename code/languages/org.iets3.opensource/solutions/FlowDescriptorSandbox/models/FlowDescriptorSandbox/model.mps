@@ -7,7 +7,10 @@
   <imports />
   <registry>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="ConstraintsLanguage">
-      <concept id="4833124655349364979" name="ConstraintsLanguage.structure.StateChartRoot" flags="ng" index="ulkQR" />
+      <concept id="4833124655349364971" name="ConstraintsLanguage.structure.StateInstance" flags="ng" index="ulkQJ" />
+      <concept id="4833124655349364979" name="ConstraintsLanguage.structure.StateChartRoot" flags="ng" index="ulkQR">
+        <child id="4833124655349364980" name="stateInstances" index="ulkQK" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -17,6 +20,7 @@
   </registry>
   <node concept="ulkQR" id="4ciHkhtidcc">
     <property role="TrG5h" value="state chart root name" />
+    <node concept="ulkQJ" id="14AbH$uFCR9" role="ulkQK" />
   </node>
 </model>
 
