@@ -158,14 +158,14 @@ publishing {
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
                 configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
             }
         }
@@ -180,7 +180,7 @@ publishing {
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
             }
         }
