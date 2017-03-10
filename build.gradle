@@ -128,7 +128,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
-
+ 
 publishing {
     repositories {
         maven {
