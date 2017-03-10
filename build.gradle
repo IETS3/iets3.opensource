@@ -153,17 +153,19 @@ publishing {
             artifact packageOpenSource
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.allDependencies.each {
+                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.group)
-                    dependencyNode.appendNode('artifactId', it.name)
-                    dependencyNode.appendNode('version', it.version)
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
                 }
-                configurations.mpsArtifacts.allDependencies.each {
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.group)
-                    dependencyNode.appendNode('artifactId', it.name)
-                    dependencyNode.appendNode('version', it.version)
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
                 }
             }
         }
@@ -173,11 +175,12 @@ publishing {
             artifact packageTests
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.allDependencies.each {
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.group)
-                    dependencyNode.appendNode('artifactId', it.name)
-                    dependencyNode.appendNode('version', it.version)
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('packaging', it.moduleArtifacts[0].type)
                 }
             }
         }
