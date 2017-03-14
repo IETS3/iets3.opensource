@@ -264,8 +264,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
@@ -1477,7 +1477,6 @@
                       <ref role="2pIpSl" to="zzzn:22hm_0$0c7L" resolve="type" />
                       <node concept="36biLy" id="22hm_0$0WYU" role="2pJxcZ">
                         <node concept="1PxgMI" id="22hm_0$0Y8D" role="36biLW">
-                          <ref role="1m5ApE" to="hm2y:6sdnDbSlaok" resolve="Type" />
                           <node concept="2OqwBi" id="22hm_0$7cug" role="1m5AlR">
                             <node concept="2OqwBi" id="22hm_0$7clN" role="2Oq$k0">
                               <node concept="2OqwBi" id="22hm_0$7cc8" role="2Oq$k0">
@@ -1491,6 +1490,9 @@
                               <node concept="3JvlWi" id="22hm_0$7cqG" role="2OqNvi" />
                             </node>
                             <node concept="1$rogu" id="22hm_0$7czm" role="2OqNvi" />
+                          </node>
+                          <node concept="chp4Y" id="6b_jefnKyD6" role="3oSUPX">
+                            <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                           </node>
                         </node>
                       </node>

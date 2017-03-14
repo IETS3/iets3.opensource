@@ -28,7 +28,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
-ext.mpsVersion = '3.4.3'
+ext.mpsVersion = '2017.1-RC-1'
 
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {

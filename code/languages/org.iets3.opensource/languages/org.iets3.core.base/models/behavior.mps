@@ -179,8 +179,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -422,8 +422,10 @@
         <node concept="3cpWs6" id="2HplpPDjwjS" role="3cqZAp">
           <node concept="2OqwBi" id="2HplpPDjwz5" role="3cqZAk">
             <node concept="1PxgMI" id="2HplpPDjwru" role="2Oq$k0">
-              <ref role="1m5ApE" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
               <node concept="13iPFW" id="2HplpPDjwo8" role="1m5AlR" />
+              <node concept="chp4Y" id="6b_jefnKwZb" role="3oSUPX">
+                <ref role="cht4Q" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
+              </node>
             </node>
             <node concept="2qgKlT" id="2HplpPDjwDS" role="2OqNvi">
               <ref role="37wK5l" node="3UrItPobuSV" resolve="hasPersistentResult" />
@@ -535,8 +537,10 @@
             <node concept="3cpWs6" id="3UrItPobvsv" role="3cqZAp">
               <node concept="2OqwBi" id="2HplpPDjxwb" role="3cqZAk">
                 <node concept="1PxgMI" id="2HplpPDjxoF" role="2Oq$k0">
-                  <ref role="1m5ApE" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
                   <node concept="13iPFW" id="2HplpPDjx7R" role="1m5AlR" />
+                  <node concept="chp4Y" id="6b_jefnKwZc" role="3oSUPX">
+                    <ref role="cht4Q" to="4kwy:3I6_jFIZNl_" resolve="ICanReadPersistentResult" />
+                  </node>
                 </node>
                 <node concept="2qgKlT" id="2HplpPDjxBI" role="2OqNvi">
                   <ref role="37wK5l" node="3UrItPobvnj" resolve="getPersistentResult" />

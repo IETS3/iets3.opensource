@@ -178,11 +178,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -894,13 +892,13 @@
             <property role="1dT_AB" value="Translates a given KernelF-expression to SMTLIB. This only works if the expression is translatable (all concepts contained in it implement the ICanBeMappedToSolver interface)." />
           </node>
         </node>
-        <node concept="TUZQ0" id="6rcydJjfQUU" role="TUOzN">
+        <node concept="TUZQ0" id="6rcydJjfQUU" role="3nqlJM">
           <property role="TUZQ4" value="the expression to be translated." />
           <node concept="zr_55" id="6rcydJjfQUW" role="zr_5Q">
             <ref role="zr_51" node="6rcydJjd8Ii" resolve="expression" />
           </node>
         </node>
-        <node concept="x79VA" id="6rcydJjfQUX" role="x79VK">
+        <node concept="x79VA" id="6rcydJjfQUX" role="3nqlJM">
           <property role="x79VB" value="an Object that can be safely casted to an jSMTLIB IExpr." />
         </node>
       </node>
@@ -1112,19 +1110,19 @@
             <property role="1dT_AB" value="This way, the driver is able to tweak the translation arbitrarily." />
           </node>
         </node>
-        <node concept="TUZQ0" id="6rcydJjn5RX" role="TUOzN">
+        <node concept="TUZQ0" id="6rcydJjn5RX" role="3nqlJM">
           <property role="TUZQ4" value="list of translators as collected from the SMTLIBTranslatorFactories." />
           <node concept="zr_55" id="6rcydJjn5RZ" role="zr_5Q">
             <ref role="zr_51" node="6rcydJjj1Yz" resolve="translators" />
           </node>
         </node>
-        <node concept="TUZQ0" id="6rcydJjn5S0" role="TUOzN">
+        <node concept="TUZQ0" id="6rcydJjn5S0" role="3nqlJM">
           <property role="TUZQ4" value="the expression to be translated." />
           <node concept="zr_55" id="6rcydJjn5S2" role="zr_5Q">
             <ref role="zr_51" node="6rcydJjn0MD" resolve="expression" />
           </node>
         </node>
-        <node concept="x79VA" id="6rcydJjn5S3" role="x79VK">
+        <node concept="x79VA" id="6rcydJjn5S3" role="3nqlJM">
           <property role="x79VB" value="an AbstractSMTLIBTranslator, usualy one from the translators-list." />
         </node>
       </node>
@@ -1221,7 +1219,7 @@
             <property role="1dT_AB" value="Returns the jSMTLIB ExpressionFactory." />
           </node>
         </node>
-        <node concept="x79VA" id="6rcydJjjutE" role="x79VK">
+        <node concept="x79VA" id="6rcydJjjutE" role="3nqlJM">
           <property role="x79VB" value="an Object that can be safely casted to IExpr.IFactory" />
         </node>
       </node>

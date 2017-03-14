@@ -178,7 +178,7 @@
                         <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
                           <property role="2Ry0Am" value="Applications" />
                           <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS34.app" />
+                            <property role="2Ry0Am" value="MPS 2017.1 EAP.app" />
                             <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
                               <property role="2Ry0Am" value="Contents" />
                             </node>
@@ -621,12 +621,6 @@
           <node concept="3bR9La" id="31yjPB$SA2N" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7tOaVPgCSQy" role="3bR37C">
-          <node concept="3bR9La" id="7tOaVPgCSQz" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
           </node>
         </node>
       </node>
@@ -1396,6 +1390,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6b_jefo1_zM" role="3bR37C">
+          <node concept="1Busua" id="6b_jefo1_zN" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wLtKNeSRQd" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2092,6 +2091,12 @@
           <node concept="3bR9La" id="5wLtKNeT3lf" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6b_jefo1_A_" role="3bR37C">
+          <node concept="3bR9La" id="6b_jefo1_AA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
       </node>

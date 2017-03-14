@@ -40,6 +40,9 @@
     <echoxml file="${build.tmp}/default/org.iets3.opensource.build.jar/META-INF/module.xml">
       <module namespace="org.iets3.opensource.build" type="solution" uuid="31dfb853-8304-435d-b27c-e29ef9a627cf">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="org.iets3.opensource.build-src.jar" descriptor="org.iets3.opensource.build.msd" />
       </module>
     </echoxml>
@@ -117,8 +120,8 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.menus.extras.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
@@ -181,7 +184,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.org.iets3.opensource.build" depends="fetchDependencies">
+  <target name="java.compile.org.iets3.opensource.build">
     <mkdir dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.build" />
     <javac destdir="${build.tmp}/java/out/org.iets3.opensource.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
