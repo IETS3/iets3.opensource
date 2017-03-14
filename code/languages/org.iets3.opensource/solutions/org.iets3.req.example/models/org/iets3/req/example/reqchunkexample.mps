@@ -29,14 +29,6 @@
       </concept>
     </language>
     <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
-      <concept id="8479184967780604356" name="org.iets3.core.users.structure.User" flags="ng" index="30Mgg9">
-        <property id="8479184967780604364" name="email" index="30Mgg1" />
-        <property id="8479184967780604361" name="lastName" index="30Mgg4" />
-        <property id="8479184967780604359" name="firstName" index="30Mgga" />
-      </concept>
-      <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN">
-        <child id="8479184967780604481" name="users" index="30Mguc" />
-      </concept>
       <concept id="8479184967780770791" name="org.iets3.core.users.structure.UserRef" flags="ng" index="30MVSE">
         <reference id="8479184967780770792" name="user" index="30MVS_" />
       </concept>
@@ -83,15 +75,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="30MgvN" id="2HWaB6uKzSG">
-    <property role="TrG5h" value="users" />
-    <node concept="30Mgg9" id="2HWaB6uKzSH" role="30Mguc">
-      <property role="TrG5h" value="saad1" />
-      <property role="30Mgga" value="saad" />
-      <property role="30Mgg4" value="abid" />
-      <property role="30Mgg1" value="abid@fortiss.org" />
-    </node>
-  </node>
   <node concept="1K7uuR" id="2HWaB6uKzSJ">
     <property role="TrG5h" value="glossarychunck" />
   </node>

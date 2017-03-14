@@ -58,7 +58,6 @@
       <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
       <concept id="5584396657084920670" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_EnclosingNode" flags="nn" index="1r4N1M" />
-      <concept id="1112056943463" name="jetbrains.mps.lang.actions.structure.NodeSubstituteActions" flags="ng" index="3FK_9_" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
@@ -174,7 +173,7 @@
   </node>
   <node concept="37WguZ" id="3YiDON6a9Mm">
     <property role="3GE5qa" value="Elements" />
-    <property role="TrG5h" value="FactoryForComparator" />
+    <property role="TrG5h" value="FactoryForEqual" />
     <node concept="37WvkG" id="3YiDON6atpl" role="37WGs$">
       <ref role="37XkoT" to="9ibe:3YiDON6a9Mc" resolve="Equal" />
       <node concept="37Y9Zx" id="3YiDON6atpm" role="37ZfLb">
@@ -319,47 +318,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="37WguZ" id="3YiDON6b6of">
-    <property role="3GE5qa" value="Requirements" />
-    <property role="TrG5h" value="FactoryForDetailedComplexRequirement" />
-    <node concept="37WvkG" id="3YiDON6b6og" role="37WGs$">
-      <ref role="37XkoT" to="9ibe:6egHVRy7d99" resolve="DetailedComplexRequirement" />
-      <node concept="37Y9Zx" id="3YiDON6b6oh" role="37ZfLb">
-        <node concept="3clFbS" id="3YiDON6b6oi" role="2VODD2">
-          <node concept="3clFbF" id="3YiDON6b6ot" role="3cqZAp">
-            <node concept="37vLTI" id="3YiDON6b6ou" role="3clFbG">
-              <node concept="2OqwBi" id="3YiDON6b6ov" role="37vLTx">
-                <node concept="2OqwBi" id="3YiDON6b6ow" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3YiDON6b6ox" role="2Oq$k0">
-                    <node concept="1PxgMI" id="3YiDON6b6oy" role="2Oq$k0">
-                      <ref role="1m5ApE" to="9ibe:6egHVRy7ehh" resolve="RequirementChunk" />
-                      <node concept="1r4N1M" id="3YiDON6b6oz" role="1m5AlR" />
-                    </node>
-                    <node concept="3TrEf2" id="3YiDON6b6o$" role="2OqNvi">
-                      <ref role="3Tt5mk" to="9ibe:3YiDON69NTm" resolve="glossaryName" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="3YiDON6b6o_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9ibe:6egHVRy7i1F" resolve="systemName" />
-                  </node>
-                </node>
-                <node concept="1$rogu" id="3YiDON6b6oA" role="2OqNvi" />
-              </node>
-              <node concept="2OqwBi" id="3YiDON6b6oB" role="37vLTJ">
-                <node concept="1r4Lsj" id="3YiDON6b6oC" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3YiDON6b6oD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9ibe:3YiDON6b1OW" resolve="systemName" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3FK_9_" id="3YiDON6bd$j">
-    <property role="3GE5qa" value="Requirements" />
   </node>
   <node concept="37WguZ" id="3YiDON6bdF_">
     <property role="3GE5qa" value="Requirements" />

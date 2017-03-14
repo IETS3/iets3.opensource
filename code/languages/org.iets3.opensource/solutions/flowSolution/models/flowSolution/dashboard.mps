@@ -9,10 +9,6 @@
     <language id="3ac25d6a-fd49-4a5b-9c1c-a6236d977d96" name="flow">
       <concept id="2335327821122460014" name="flow.structure.Instruction" flags="ng" index="2svT$D">
         <property id="2335327821122462678" name="text" index="2svUeh" />
-        <child id="2335327821122462698" name="two" index="2svUeH" />
-      </concept>
-      <concept id="2335327821122462635" name="flow.structure.InstructionPart" flags="ng" index="2svUfG">
-        <property id="7174436232570227518" name="instructionRange" index="21AJM3" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -24,9 +20,6 @@
   <node concept="2svT$D" id="2mn3vhww4YH">
     <property role="TrG5h" value="name" />
     <property role="2svUeh" value="text" />
-    <node concept="2svUfG" id="2mn3vhwx93T" role="2svUeH">
-      <property role="21AJM3" value="10" />
-    </node>
   </node>
 </model>
 

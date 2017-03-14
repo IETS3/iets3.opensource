@@ -128,6 +128,7 @@
     <module reference="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
+    <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="7fe13e34-8620-4d5d-92c7-df091b0ed628(com.mbeddr.mpsutil.jfreechart.runtime)" version="0" />
     <module reference="6d253c79-e787-4b2c-8398-677fe9f47189(com.mbeddr.mpsutil.jfreechart.sandbox)" version="0" />
     <module reference="032e4d4e-a71c-4d57-826e-d354d35582f1(com.mbeddr.mpsutil.jfreechart.sandboxlang)" version="0" />

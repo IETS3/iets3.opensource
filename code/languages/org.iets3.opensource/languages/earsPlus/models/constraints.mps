@@ -7,24 +7,16 @@
   </languages>
   <imports>
     <import index="9ibe" ref="r:d998e637-b2ee-425e-aedd-0894337b4407(earsPlus.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -35,16 +27,16 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1203001093456" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="in" index="osYL8" />
       <concept id="1203001236505" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="nn" index="otxO1" />
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213106478122" name="canBeParent" index="1MLXOK" />
       </concept>
     </language>
@@ -66,25 +58,6 @@
     <ref role="1M2myG" to="9ibe:6egHVRy7ehh" resolve="RequirementChunk" />
     <node concept="osYL8" id="3YiDON6aJ$x" role="1MLXOK">
       <node concept="3clFbS" id="3YiDON6aJ$y" role="2VODD2">
-        <node concept="3clFbF" id="3YiDON6aP1W" role="3cqZAp">
-          <node concept="2OqwBi" id="3YiDON6aP1T" role="3clFbG">
-            <node concept="10M0yZ" id="3YiDON6aP1U" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="3YiDON6aP1V" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(boolean):void" resolve="println" />
-              <node concept="2OqwBi" id="3YiDON6aMaI" role="37wK5m">
-                <node concept="otxO1" id="3YiDON6aLSk" role="2Oq$k0" />
-                <node concept="3O6GUB" id="3YiDON6aOtl" role="2OqNvi">
-                  <node concept="chp4Y" id="3YiDON6aOEu" role="3QVz_e">
-                    <ref role="cht4Q" to="9ibe:6egHVRy7eio" resolve="AbstractRequirement" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3YiDON6aRqG" role="3cqZAp">
           <node concept="3fqX7Q" id="3YiDON6aRKZ" role="3clFbG">
             <node concept="2OqwBi" id="3YiDON6aRL1" role="3fr31v">
@@ -118,6 +91,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4zWuh7OERjL">
+    <property role="3GE5qa" value="Comparators" />
+    <ref role="1M2myG" to="9ibe:3YiDON6a9Mc" resolve="Equal" />
+    <node concept="EnEH3" id="4zWuh7OERjM" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>

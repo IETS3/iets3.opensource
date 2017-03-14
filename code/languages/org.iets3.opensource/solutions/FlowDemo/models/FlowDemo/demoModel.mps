@@ -10,20 +10,15 @@
     <use id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage" version="-1" />
     <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
     <use id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="i990" ref="r:ebfa5790-ff62-42e1-9657-00793093e25c(org.iets3.req.example.reqchunkexample)" />
-    <import index="hcpj" ref="r:5399e170-283b-45c7-a236-abf370cdb7d3(org.iets3.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage">
-      <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq">
-        <reference id="5067319170577261255" name="reqFileName" index="1jA_$R" />
-        <reference id="5067319170577261257" name="tableName" index="1jA_$T" />
-      </concept>
+      <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -51,8 +46,14 @@
       </concept>
     </language>
     <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable">
-      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC" />
-      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp" />
+      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
+        <property id="9177268329656752713" name="Max" index="1iZyU_" />
+        <property id="9177268329656752711" name="Min" index="1iZyUF" />
+      </concept>
+      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
+        <property id="9177268329656752696" name="Min" index="1iZyVk" />
+        <property id="9177268329656752698" name="Max" index="1iZyVm" />
+      </concept>
       <concept id="7430885610120727933" name="org.iets3.table.diehltable.structure.DiehlTable" flags="ng" index="3yOg9E">
         <child id="9177268329656878919" name="decreasingThreshold" index="1iY3eF" />
         <child id="9177268329656878915" name="increasingThreshold" index="1iY3eJ" />
@@ -66,6 +67,14 @@
       </concept>
     </language>
     <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
+      <concept id="8479184967780604356" name="org.iets3.core.users.structure.User" flags="ng" index="30Mgg9">
+        <property id="8479184967780604364" name="email" index="30Mgg1" />
+        <property id="8479184967780604361" name="lastName" index="30Mgg4" />
+        <property id="8479184967780604359" name="firstName" index="30Mgga" />
+      </concept>
+      <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN">
+        <child id="8479184967780604481" name="users" index="30Mguc" />
+      </concept>
       <concept id="8479184967780770791" name="org.iets3.core.users.structure.UserRef" flags="ng" index="30MVSE">
         <reference id="8479184967780770792" name="user" index="30MVS_" />
       </concept>
@@ -90,9 +99,6 @@
     <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
       <concept id="380060842849065675" name="org.iets3.req.core.structure.StateNew" flags="ng" index="2IiYmp" />
       <concept id="8479184967782930103" name="org.iets3.req.core.structure.CCTag" flags="ng" index="3098HU" />
-      <concept id="8913201067422874021" name="org.iets3.req.core.structure.NonMergeableWord" flags="ng" index="3KVni0">
-        <property id="8913201067422962862" name="escapedValue" index="3KOHAb" />
-      </concept>
       <concept id="4230179762005235942" name="org.iets3.req.core.structure.HeaderRequirement" flags="ng" index="3SUGrM" />
       <concept id="5151426049053646109" name="org.iets3.req.core.structure.KindFunctional" flags="ng" index="3VXduJ" />
       <concept id="5151426049053572067" name="org.iets3.req.core.structure.RequirementsDocSection" flags="ng" index="3VXr5h" />
@@ -113,107 +119,129 @@
       </concept>
     </language>
   </registry>
-  <node concept="1j_Gsq" id="4piIZ0lU$p8">
-    <ref role="1jA_$R" node="m8QJVNH7oc" resolve="RequirementsChunkFan" />
-    <ref role="1jA_$T" node="m8QJVNK5L2" resolve="DiehlTable" />
-  </node>
-  <node concept="3VZ1SI" id="m8QJVNH7oc">
-    <property role="TrG5h" value="RequirementsChunkFan" />
-    <ref role="G9hjw" node="m8QJVNH8W4" resolve="demodoc" />
-    <node concept="3SUGrM" id="m8QJVNH8Sr" role="3VY$cn">
-      <property role="1kP$Fy" value="1" />
-      <property role="TrG5h" value="fan" />
-      <node concept="3VZ1Wb" id="m8QJVNH8Sx" role="3VY$cn">
-        <property role="1kP$Fy" value="3" />
-        <property role="3VZ1X1" value="fanreq" />
-        <property role="TrG5h" value="req" />
-        <node concept="3VXduJ" id="m8QJVNH8ST" role="3VXd6G" />
-        <node concept="2IiYmp" id="m8QJVNH8SX" role="2IiYaD" />
-        <node concept="3VXr5h" id="m8QJVNH8SB" role="3VXr5i">
-          <node concept="1_0LV8" id="m8QJVNIex0" role="1_0VJ0">
-            <node concept="19SGf9" id="m8QJVNIex1" role="1_0LWR">
-              <node concept="19SUe$" id="m8QJVNIe$N" role="19SJt6" />
-              <node concept="3KVni0" id="m8QJVNIe$B" role="19SJt6">
-                <property role="3KOHAb" value="this" />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIe$O" role="19SJt6" />
-              <node concept="3KVni0" id="m8QJVNIe$C" role="19SJt6">
-                <property role="3KOHAb" value="is" />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIe$P" role="19SJt6" />
-              <node concept="3KVni0" id="m8QJVNIe$D" role="19SJt6">
-                <property role="3KOHAb" value="text..." />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIe$Q" role="19SJt6" />
-              <node concept="1K4BFt" id="m8QJVNIe_f" role="19SJt6">
-                <ref role="1K4BEz" node="m8QJVNIe_a" resolve="maxValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIeCU" role="19SJt6" />
-              <node concept="3KVni0" id="m8QJVNIeCx" role="19SJt6">
-                <property role="3KOHAb" value="....." />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIeCV" role="19SJt6" />
-              <node concept="3KVni0" id="m8QJVNIeCy" role="19SJt6">
-                <property role="3KOHAb" value="and" />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIeCW" role="19SJt6" />
-              <node concept="1K4BFt" id="m8QJVNIeDx" role="19SJt6">
-                <ref role="1K4BEz" node="m8QJVNIeDs" resolve="minValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="m8QJVNIeCX" role="19SJt6">
-                <property role="19SUeA" value="...." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="30MVSE" id="m8QJVNH8SP" role="30MXt6">
-          <ref role="30MVS_" to="i990:2HWaB6uKzSH" resolve="saad1" />
-        </node>
-        <node concept="3098HU" id="m8QJVNH8T1" role="3VXd6h" />
+  <node concept="1j_Gsq" id="4piIZ0lU$p8" />
+  <node concept="2SbYGP" id="6sXRKlwMp5x">
+    <property role="TrG5h" value="ReqDocConfigFAU" />
+    <node concept="2SbYGw" id="6sXRKlx3pKv" role="Cbewh">
+      <property role="TrG5h" value="demo" />
+      <node concept="9PVaO" id="6sXRKlx3pKw" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>
-  <node concept="1K7uuR" id="m8QJVNH7od">
+  <node concept="3VZ1SI" id="6sXRKlwMp5w">
+    <property role="TrG5h" value="RequirementsChunkFAU" />
+    <ref role="G9hjw" node="6sXRKlwMp5x" resolve="ReqDocConfigFAU" />
+    <node concept="3SUGrM" id="6sXRKlwMp5M" role="3VY$cn">
+      <property role="1kP$Fy" value="1" />
+      <property role="TrG5h" value="FAURequirement" />
+      <node concept="3VZ1Wb" id="6sXRKlwMp5Q" role="3VY$cn">
+        <property role="1kP$Fy" value="3" />
+        <property role="TrG5h" value="FAURequirement" />
+        <property role="3VZ1X1" value="FAU-DiehlTableExample-Requirement" />
+        <node concept="3VXr5h" id="6sXRKlwMp5W" role="3VXr5i">
+          <node concept="1_0LV8" id="6sXRKlwUGkc" role="1_0VJ0">
+            <node concept="19SGf9" id="6sXRKlwUGkd" role="1_0LWR">
+              <node concept="19SUe$" id="6sXRKlwUGkw" role="19SJt6" />
+              <node concept="1K4BFt" id="6sXRKlwUGlY" role="19SJt6">
+                <ref role="1K4BEz" node="6sXRKlwUGlT" resolve="minValueIncrease" />
+              </node>
+              <node concept="19SUe$" id="6sXRKlwUGkx" role="19SJt6" />
+              <node concept="1K4BFt" id="6sXRKlwUGlw" role="19SJt6">
+                <ref role="1K4BEz" node="6sXRKlwUGlr" resolve="maxValueIncrease" />
+              </node>
+              <node concept="19SUe$" id="6sXRKlwUGky" role="19SJt6" />
+              <node concept="1K4BFt" id="6sXRKlwUGl7" role="19SJt6">
+                <ref role="1K4BEz" node="6sXRKlwUGl2" resolve="minValueDecrease" />
+              </node>
+              <node concept="19SUe$" id="6sXRKlwUGkz" role="19SJt6" />
+              <node concept="1K4BFt" id="6sXRKlwUGkN" role="19SJt6">
+                <ref role="1K4BEz" node="6sXRKlwUGkI" resolve="maxValueDecrease" />
+              </node>
+              <node concept="19SUe$" id="6sXRKlwUGk$" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="30MVSE" id="6sXRKlwWwOD" role="30MXt6">
+          <ref role="30MVS_" node="6sXRKlwWwOB" resolve="Abid1" />
+        </node>
+        <node concept="2IiYmp" id="6sXRKlx5v0I" role="2IiYaD" />
+        <node concept="3VXduJ" id="6sXRKlx7Mci" role="3VXd6G" />
+        <node concept="3098HU" id="6sXRKlxaZ8w" role="3VXd6h" />
+      </node>
+    </node>
+  </node>
+  <node concept="1K7uuR" id="6sXRKlwMp5v">
     <property role="TrG5h" value="FanGlossary" />
-    <node concept="1K7uuQ" id="m8QJVNIe_a" role="1K7uuT">
-      <property role="TrG5h" value="maxValueIncrease" />
-      <node concept="1K7v9j" id="m8QJVNIe_b" role="1K7sGV">
-        <node concept="1_0LV8" id="m8QJVNIe_c" role="1_0VJ0">
-          <node concept="19SGf9" id="m8QJVNIe_d" role="1_0LWR">
-            <node concept="19SUe$" id="m8QJVNIe_e" role="19SJt6">
+    <node concept="1K7uuQ" id="6sXRKlwUGkI" role="1K7uuT">
+      <property role="TrG5h" value="maxValueDecrease" />
+      <node concept="1K7v9j" id="6sXRKlwUGkJ" role="1K7sGV">
+        <node concept="1_0LV8" id="6sXRKlwUGkK" role="1_0VJ0">
+          <node concept="19SGf9" id="6sXRKlwUGkL" role="1_0LWR">
+            <node concept="19SUe$" id="6sXRKlwUGkM" role="19SJt6">
               <property role="19SUeA" value="80" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="1K7uuQ" id="m8QJVNIeDs" role="1K7uuT">
-      <property role="TrG5h" value="minValueIncrease" />
-      <node concept="1K7v9j" id="m8QJVNIeDt" role="1K7sGV">
-        <node concept="1_0LV8" id="m8QJVNIeDu" role="1_0VJ0">
-          <node concept="19SGf9" id="m8QJVNIeDv" role="1_0LWR">
-            <node concept="19SUe$" id="m8QJVNIeDw" role="19SJt6">
+    <node concept="1K7uuQ" id="6sXRKlwUGlr" role="1K7uuT">
+      <property role="TrG5h" value="maxValueIncrease" />
+      <node concept="1K7v9j" id="6sXRKlwUGls" role="1K7sGV">
+        <node concept="1_0LV8" id="6sXRKlwUGlt" role="1_0VJ0">
+          <node concept="19SGf9" id="6sXRKlwUGlu" role="1_0LWR">
+            <node concept="19SUe$" id="6sXRKlwUGlv" role="19SJt6">
+              <property role="19SUeA" value="75" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1K7uuQ" id="6sXRKlwUGl2" role="1K7uuT">
+      <property role="TrG5h" value="minValueDecrease" />
+      <node concept="1K7v9j" id="6sXRKlwUGl3" role="1K7sGV">
+        <node concept="1_0LV8" id="6sXRKlwUGl4" role="1_0VJ0">
+          <node concept="19SGf9" id="6sXRKlwUGl5" role="1_0LWR">
+            <node concept="19SUe$" id="6sXRKlwUGl6" role="19SJt6">
               <property role="19SUeA" value="-35" />
             </node>
           </node>
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2SbYGP" id="m8QJVNH8W4">
-    <property role="TrG5h" value="demodoc" />
-    <node concept="2SbYGw" id="m8QJVNH8W5" role="Cbewh">
-      <property role="TrG5h" value="demopath" />
-      <node concept="9PVaO" id="m8QJVNH8W6" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
+    <node concept="1K7uuQ" id="6sXRKlwUGlT" role="1K7uuT">
+      <property role="TrG5h" value="minValueIncrease" />
+      <node concept="1K7v9j" id="6sXRKlwUGlU" role="1K7sGV">
+        <node concept="1_0LV8" id="6sXRKlwUGlV" role="1_0VJ0">
+          <node concept="19SGf9" id="6sXRKlwUGlW" role="1_0LWR">
+            <node concept="19SUe$" id="6sXRKlwUGlX" role="19SJt6">
+              <property role="19SUeA" value="-30" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
-  <node concept="3yOg9E" id="m8QJVNK5L2">
+  <node concept="30MgvN" id="6sXRKlwMp5y">
+    <property role="TrG5h" value="UserDirectory" />
+    <node concept="30Mgg9" id="6sXRKlwWwOB" role="30Mguc">
+      <property role="TrG5h" value="Abid1" />
+      <property role="30Mgga" value="Saadbin" />
+      <property role="30Mgg4" value="Abid" />
+      <property role="30Mgg1" value="abid@fortiss.org" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="6sXRKlxw$Ky">
     <property role="TrG5h" value="DiehlTable" />
-    <node concept="1iZyVp" id="m8QJVNK5L3" role="1iY3eJ" />
-    <node concept="1iZyUC" id="m8QJVNK5L6" role="1iY3eF" />
+    <node concept="1iZyVp" id="6sXRKlxw$Kz" role="1iY3eJ">
+      <property role="1iZyVm" value="75" />
+      <property role="1iZyVk" value="-30" />
+    </node>
+    <node concept="1iZyUC" id="6sXRKlxw$K$" role="1iY3eF">
+      <property role="1iZyU_" value="80" />
+      <property role="1iZyUF" value="-35" />
+    </node>
   </node>
 </model>
 
