@@ -23,7 +23,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -257,7 +256,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -466,31 +464,6 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3clFbH" id="21CK4uW5$FO" role="3cqZAp" />
-                                <node concept="3clFbF" id="21CK4uW479i" role="3cqZAp">
-                                  <node concept="2OqwBi" id="21CK4uW479f" role="3clFbG">
-                                    <node concept="10M0yZ" id="21CK4uW479g" role="2Oq$k0">
-                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                    </node>
-                                    <node concept="liA8E" id="21CK4uW479h" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                      <node concept="3cpWs3" id="21CK4uW5eu3" role="37wK5m">
-                                        <node concept="Xl_RD" id="21CK4uW5eFb" role="3uHU7B">
-                                          <property role="Xl_RC" value="the constarint descriptor is " />
-                                        </node>
-                                        <node concept="2OqwBi" id="21CK4uW5Prf" role="3uHU7w">
-                                          <node concept="37vLTw" id="21CK4uW5OKN" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="21CK4uW3Ohd" resolve="constraintDescriptor" />
-                                          </node>
-                                          <node concept="1B$H19" id="21CK4uW5Prk" role="2OqNvi" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbH" id="21CK4uW4N0P" role="3cqZAp" />
-                                <node concept="3clFbH" id="21CK4uW4N2A" role="3cqZAp" />
                                 <node concept="3clFbH" id="21CK4uW4DB8" role="3cqZAp" />
                                 <node concept="3clFbF" id="1TK957eYlpB" role="3cqZAp">
                                   <node concept="2OqwBi" id="1TK957eYlE8" role="3clFbG">
