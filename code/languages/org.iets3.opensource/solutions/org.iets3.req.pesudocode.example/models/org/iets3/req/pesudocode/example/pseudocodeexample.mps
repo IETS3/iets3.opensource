@@ -34,6 +34,11 @@
         <property role="1Cg5O3" value="a&gt;b" />
       </node>
     </node>
+    <node concept="3gN7zJ" id="4eRNU7kCXv6" role="1Cg51Y">
+      <node concept="1Cg6UD" id="4eRNU7kCXvf" role="3gN7zG">
+        <property role="1Cg5O3" value="a" />
+      </node>
+    </node>
   </node>
 </model>
 

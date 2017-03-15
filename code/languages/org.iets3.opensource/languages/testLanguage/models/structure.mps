@@ -37,5 +37,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4eRNU7kCYbv">
+    <property role="EcuMT" value="4879597015243416287" />
+    <property role="TrG5h" value="textConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

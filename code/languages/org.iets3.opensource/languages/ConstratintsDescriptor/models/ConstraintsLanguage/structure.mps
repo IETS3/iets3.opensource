@@ -115,7 +115,7 @@
   </node>
   <node concept="1TIwiD" id="5rwK$2qeY$S">
     <property role="EcuMT" value="6260217064766302520" />
-    <property role="TrG5h" value="CheckGlossaryExists" />
+    <property role="TrG5h" value="CheckTableAndRequirementsInstance" />
     <property role="3GE5qa" value="CustomConstraints" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
@@ -162,6 +162,24 @@
     <property role="TrG5h" value="PropertyExtender" />
     <property role="3GE5qa" value="Property" />
     <ref role="1TJDcQ" to="tp25:2iMJRNxD2Yw" resolve="PropertyIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="38QI5jjPZ6z">
+    <property role="EcuMT" value="3618282025109680547" />
+    <property role="TrG5h" value="Dashboard" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="38QI5jjQip0">
+    <property role="EcuMT" value="3618282025109759552" />
+    <property role="3GE5qa" value="CustomConstraints" />
+    <property role="TrG5h" value="CheckNameRequirementsNotNull" />
+    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
+  </node>
+  <node concept="1TIwiD" id="38QI5jjR3Qm">
+    <property role="EcuMT" value="3618282025109962134" />
+    <property role="3GE5qa" value="CustomConstraints" />
+    <property role="TrG5h" value="GlossaryDefined" />
+    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
 </model>
 
