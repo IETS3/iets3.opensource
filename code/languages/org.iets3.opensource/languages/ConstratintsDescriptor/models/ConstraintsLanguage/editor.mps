@@ -14,7 +14,11 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="540685334799965957" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenuVariable_Initializer" flags="ig" index="23wN_R" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="7429591467341004871" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Group" flags="ng" index="aenpk">
+        <child id="7655327340756279373" name="variables" index="1b80Z_" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -56,6 +60,9 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1178539929008" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableDeclaration" flags="ig" index="1At2My">
+        <child id="540685334799973431" name="initializerBlock" index="23wLD5" />
+      </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
@@ -90,6 +97,10 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -284,6 +295,23 @@
     <ref role="aqKnT" to="f6re:38QI5jjPZ6z" resolve="Dashboard" />
     <node concept="1Qtc8_" id="14AbH$uFGVj" role="IW6Ez">
       <node concept="2j_NTm" id="14AbH$uFGVn" role="1Qtc8$" />
+      <node concept="aenpk" id="38QI5jjSTWF" role="1Qtc8A">
+        <node concept="1At2My" id="38QI5jjSTWS" role="1b80Z_">
+          <property role="TrG5h" value="RequirementsInstance" />
+          <node concept="23wN_R" id="38QI5jjSTWT" role="23wLD5">
+            <node concept="3clFbS" id="38QI5jjSTWU" role="2VODD2" />
+          </node>
+          <node concept="10P_77" id="38QI5jjSTXf" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="IWgqT" id="38QI5jjSTNS" role="1Qtc8A">
+        <node concept="1hCUdq" id="38QI5jjSTNT" role="1hCUd6">
+          <node concept="3clFbS" id="38QI5jjSTNU" role="2VODD2" />
+        </node>
+        <node concept="IWg2L" id="38QI5jjSTNV" role="IWgqQ">
+          <node concept="3clFbS" id="38QI5jjSTNW" role="2VODD2" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="38QI5jjPZw1">
