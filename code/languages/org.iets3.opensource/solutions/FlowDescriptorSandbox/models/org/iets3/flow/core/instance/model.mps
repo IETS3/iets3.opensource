@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:19a41b7e-210a-408f-b767-7b11608be270(FlowDescriptorSandbox.model)">
+<model ref="r:19a41b7e-210a-408f-b767-7b11608be270(org.iets3.flow.core.instance.model)">
   <persistence version="9" />
   <languages>
     <use id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core" version="0" />
@@ -17,12 +17,12 @@
       <concept id="4833124655349364588" name="org.iets3.flow.core.structure.InformationString" flags="ng" index="ulk8C">
         <property id="1235726657816716306" name="text" index="fwOFb" />
       </concept>
-      <concept id="4833124655349364971" name="org.iets3.flow.core.structure.StateInstance" flags="ng" index="ulkQJ">
+      <concept id="4833124655349364971" name="org.iets3.flow.core.structure.FlowState" flags="ng" index="ulkQJ">
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="constraintsList" index="um_Ly" />
       </concept>
-      <concept id="4833124655349364979" name="org.iets3.flow.core.structure.StateChartRoot" flags="ng" index="ulkQR">
+      <concept id="4833124655349364979" name="org.iets3.flow.core.structure.FlowChunk" flags="ng" index="ulkQR">
         <child id="4833124655349364980" name="stateInstances" index="ulkQK" />
         <child id="3369881559473720185" name="targetDashboardLanguage" index="2Dlz8l" />
       </concept>
