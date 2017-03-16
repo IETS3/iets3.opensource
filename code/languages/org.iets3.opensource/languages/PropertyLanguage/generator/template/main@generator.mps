@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:57ecf00b-cd9a-484a-99a3-64a808906239(org.iets3.flow.propertyLanguage.generator.template.main@generator)">
+<model ref="r:57ecf00b-cd9a-484a-99a3-64a808906239(org.iets3.flow.property.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="0ecea2a9-218f-4e3b-badc-a524a5addb7c" name="PropertyLanguage" version="-1" />
+    <use id="0ecea2a9-218f-4e3b-badc-a524a5addb7c" name="org.iets3.flow.propertyLanguage" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />

@@ -20,6 +20,7 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16:ConstraintsLanguage" version="0" />
+    <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.flow.propertyLanguage" uuid="0ecea2a9-218f-4e3b-badc-a524a5addb7c" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.flow.property" uuid="0ecea2a9-218f-4e3b-badc-a524a5addb7c" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.iets3.flow.propertyLanguage#3369881559473177268" uuid="2f0bafbe-2a19-4d40-b327-9cfd7e2708a6">
+    <generator generatorUID="org.iets3.flow.property#3369881559473177268" uuid="2f0bafbe-2a19-4d40-b327-9cfd7e2708a6">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -44,8 +44,8 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.propertyLanguage)" version="0" />
-        <module reference="2f0bafbe-2a19-4d40-b327-9cfd7e2708a6(org.iets3.flow.propertyLanguage#3369881559473177268)" version="0" />
+        <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
+        <module reference="2f0bafbe-2a19-4d40-b327-9cfd7e2708a6(org.iets3.flow.property#3369881559473177268)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -138,7 +138,7 @@
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
-    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.propertyLanguage)" version="0" />
+    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
