@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/ConstraintsLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DashboardLanguage/DashboardLanguage.mpl" folder="flowDemo" />
-      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/PropertyLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.propertyLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/earsPlus.mpl" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/sandbox/earsPlus.sandbox.msd" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />

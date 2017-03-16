@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0023c122-04b1-45a0-82bf-20a8f253e58c(PropertyLanguage.behavior)">
+<model ref="r:0023c122-04b1-45a0-82bf-20a8f253e58c(org.iets3.flow.propertyLanguage.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="f6re" ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(ConstraintsLanguage.structure)" />
+    <import index="f6re" ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(org.iets3.flow.core.structure)" />
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
     <import index="phxh" ref="r:5754bb7d-f802-4a0f-bd3d-0764f0d71413(jetbrains.mps.ide.modelchecker.platform.actions)" />
@@ -15,8 +15,8 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.diehltable.structure)" />
-    <import index="21uu" ref="r:f84524c5-95e2-4666-9bf0-d180d6a6edc5(ConstraintsLanguage.behavior)" />
-    <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(PropertyLanguage.structure)" />
+    <import index="21uu" ref="r:f84524c5-95e2-4666-9bf0-d180d6a6edc5(org.iets3.flow.core.behavior)" />
+    <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.propertyLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -337,7 +337,7 @@
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="propertyCheck" />
-      <ref role="13i0hy" node="2V4emM7z22n" resolve="propertyCheck" />
+      <ref role="13i0hy" node="2V4emM7zIoQ" resolve="propertyCheck" />
       <node concept="3Tm1VV" id="2V4emM7z3tO" role="1B3o_S" />
       <node concept="3clFbS" id="2V4emM7z3tR" role="3clF47">
         <node concept="3cpWs8" id="2V4emM7z3yQ" role="3cqZAp">
@@ -864,16 +864,21 @@
   <node concept="13h7C7" id="2V4emM7z22c">
     <property role="3GE5qa" value="Properties" />
     <ref role="13h7C2" to="oehh:5rwK$2qeY$r" resolve="ModelProperty" />
-    <node concept="13i0hz" id="2V4emM7z22n" role="13h7CS">
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
+    <node concept="13i0hz" id="2V4emM7zIoQ" role="13h7CS">
       <property role="TrG5h" value="propertyCheck" />
-      <node concept="3Tm1VV" id="2V4emM7z22o" role="1B3o_S" />
-      <node concept="10P_77" id="2V4emM7z22N" role="3clF45" />
-      <node concept="3clFbS" id="2V4emM7z22q" role="3clF47" />
-      <node concept="37vLTG" id="2V4emM7z3NN" role="3clF46">
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="2V4emM7zIoR" role="1B3o_S" />
+      <node concept="10P_77" id="2V4emM7zIpa" role="3clF45" />
+      <node concept="3clFbS" id="2V4emM7zIoT" role="3clF47">
+        <node concept="3cpWs6" id="2V4emM7zIqL" role="3cqZAp">
+          <node concept="3clFbT" id="2V4emM7zIrh" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2V4emM7zIqn" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="H_c77" id="2V4emM7z3NM" role="1tU5fm" />
+        <node concept="H_c77" id="2V4emM7zIqm" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="2V4emM7z22d" role="13h7CW">
@@ -890,7 +895,7 @@
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="propertyCheck" />
-      <ref role="13i0hy" node="2V4emM7z22n" resolve="propertyCheck" />
+      <ref role="13i0hy" node="2V4emM7zIoQ" resolve="propertyCheck" />
       <node concept="3Tm1VV" id="2V4emM7z243" role="1B3o_S" />
       <node concept="3clFbS" id="2V4emM7z246" role="3clF47">
         <node concept="3cpWs8" id="2V4emM7z2g0" role="3cqZAp">
@@ -971,7 +976,7 @@
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="propertyCheck" />
-      <ref role="13i0hy" node="2V4emM7z22n" resolve="propertyCheck" />
+      <ref role="13i0hy" node="2V4emM7zIoQ" resolve="propertyCheck" />
       <node concept="3Tm1VV" id="2V4emM7z3Uq" role="1B3o_S" />
       <node concept="3clFbS" id="2V4emM7z3Uv" role="3clF47">
         <node concept="3clFbF" id="2V4emM7z3U$" role="3cqZAp">

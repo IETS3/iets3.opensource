@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(ConstraintsLanguage)</dependency>
+    <dependency reexport="false">e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)</dependency>
     <dependency reexport="false">9c659aae-3b7c-4b8c-8462-aacb46956ad8(earsPlus)</dependency>
     <dependency reexport="false">a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)</dependency>
   </dependencies>
@@ -23,7 +23,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-    <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(ConstraintsLanguage)" version="0" />
     <module reference="5b11054d-065d-4e5c-9a6d-175a4af103c2(FlowDescriptorSandbox)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
@@ -57,6 +56,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
   </dependencyVersions>
 </solution>
