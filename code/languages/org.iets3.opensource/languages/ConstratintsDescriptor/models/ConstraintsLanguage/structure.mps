@@ -14,8 +14,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -105,20 +103,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5rwK$2qeY$r">
-    <property role="EcuMT" value="6260217064766302491" />
-    <property role="TrG5h" value="ModelProperty" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="5rwK$2qeY$S">
-    <property role="EcuMT" value="6260217064766302520" />
-    <property role="TrG5h" value="CheckTableAndRequirementsInstance" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
   <node concept="1TIwiD" id="5rwK$2qflbr">
     <property role="EcuMT" value="6260217064766395099" />
     <property role="TrG5h" value="CopyProperty" />
@@ -168,18 +152,6 @@
     <property role="TrG5h" value="Dashboard" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="38QI5jjQip0">
-    <property role="EcuMT" value="3618282025109759552" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <property role="TrG5h" value="CheckNameRequirementsNotNull" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
-  <node concept="1TIwiD" id="38QI5jjR3Qm">
-    <property role="EcuMT" value="3618282025109962134" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <property role="TrG5h" value="GlossaryDefined" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
 </model>
 

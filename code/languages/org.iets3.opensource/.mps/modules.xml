@@ -4,9 +4,9 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/ConstraintsLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DashboardLanguage/DashboardLanguage.mpl" folder="flowDemo" />
+      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/PropertyLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/earsPlus.mpl" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/sandbox/earsPlus.sandbox.msd" folder="earsPlus" />
-      <modulePath path="$PROJECT_DIR$/languages/flow/flow.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
@@ -28,7 +28,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.diehltable.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDemo/FlowDemo.msd" folder="flowDemo" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDescriptorSandbox/FlowDescriptorSandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/flowSolution/flowSolution.msd" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
