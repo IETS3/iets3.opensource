@@ -12,10 +12,10 @@
   </registry>
 <<<<<<< HEAD
   <node concept="Q7yLu" id="3HvtPSdlqD_">
-    <property role="TrG5h" value="demo" />
+    <property role="TrG5h" value="Demo" />
   </node>
 =======
   <node concept="Q7yLu" id="3HvtPSdlqD_" />
->>>>>>> 81673aae076164511b474b920aba3826107e6e71
+>>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67
 </model>
 

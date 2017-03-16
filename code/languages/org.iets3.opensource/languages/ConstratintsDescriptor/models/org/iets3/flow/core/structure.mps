@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(ConstraintsLanguage.structure)">
+<model ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(org.iets3.flow.core.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -61,7 +60,7 @@
   </node>
   <node concept="1TIwiD" id="4ciHkhthZzF">
     <property role="EcuMT" value="4833124655349364971" />
-    <property role="TrG5h" value="StateInstance" />
+    <property role="TrG5h" value="FlowState" />
     <property role="19KtqR" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4ciHkhthZzI" role="1TKVEi">
@@ -83,7 +82,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constraintsList" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5rwK$2qeY$r" resolve="ModelProperty" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -91,7 +90,7 @@
   </node>
   <node concept="1TIwiD" id="4ciHkhthZzN">
     <property role="EcuMT" value="4833124655349364979" />
-    <property role="TrG5h" value="StateChartRoot" />
+    <property role="TrG5h" value="FlowChunk" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4ciHkhthZzO" role="1TKVEi">
@@ -99,12 +98,19 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stateInstances" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4ciHkhthZzF" resolve="StateInstance" />
+      <ref role="20lvS9" node="4ciHkhthZzF" resolve="FlowState" />
+    </node>
+    <node concept="1TJgyj" id="2V4emM7$wHT" role="1TKVEi">
+      <property role="IQ2ns" value="3369881559473720185" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetDashboardLanguage" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="PrWs8" id="5rwK$2qffNF" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/ConstraintsLanguage/structure.mps
   <node concept="1TIwiD" id="5rwK$2qeY$r">
     <property role="EcuMT" value="6260217064766302491" />
     <property role="TrG5h" value="ModelProperty" />
@@ -119,6 +125,8 @@
     <property role="3GE5qa" value="CustomConstraints" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
+=======
+>>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/org/iets3/flow/core/structure.mps
   <node concept="1TIwiD" id="5rwK$2qflbr">
     <property role="EcuMT" value="6260217064766395099" />
     <property role="TrG5h" value="CopyProperty" />
@@ -169,6 +177,7 @@
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/ConstraintsLanguage/structure.mps
   <node concept="1TIwiD" id="38QI5jjQip0">
     <property role="EcuMT" value="3618282025109759552" />
     <property role="3GE5qa" value="CustomConstraints" />
@@ -181,5 +190,7 @@
     <property role="TrG5h" value="GlossaryDefined" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
+=======
+>>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/org/iets3/flow/core/structure.mps
 </model>
 
