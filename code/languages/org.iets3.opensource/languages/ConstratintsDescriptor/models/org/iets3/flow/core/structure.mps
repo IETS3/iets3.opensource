@@ -6,10 +6,10 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.propertyLanguage.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -60,7 +60,7 @@
   </node>
   <node concept="1TIwiD" id="4ciHkhthZzF">
     <property role="EcuMT" value="4833124655349364971" />
-    <property role="TrG5h" value="StateInstance" />
+    <property role="TrG5h" value="FlowState" />
     <property role="19KtqR" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4ciHkhthZzI" role="1TKVEi">
@@ -82,7 +82,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constraintsList" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="oehh:5rwK$2qeY$r" resolve="ModelProperty" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -90,7 +90,7 @@
   </node>
   <node concept="1TIwiD" id="4ciHkhthZzN">
     <property role="EcuMT" value="4833124655349364979" />
-    <property role="TrG5h" value="StateChartRoot" />
+    <property role="TrG5h" value="FlowChunk" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4ciHkhthZzO" role="1TKVEi">
@@ -98,7 +98,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stateInstances" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4ciHkhthZzF" resolve="StateInstance" />
+      <ref role="20lvS9" node="4ciHkhthZzF" resolve="FlowState" />
+    </node>
+    <node concept="1TJgyj" id="2V4emM7$wHT" role="1TKVEi">
+      <property role="IQ2ns" value="3369881559473720185" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetDashboardLanguage" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="PrWs8" id="5rwK$2qffNF" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
