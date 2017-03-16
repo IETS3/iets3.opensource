@@ -1701,7 +1701,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUj2" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/addChild.png" />
+      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/addChild.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="1ognOHj$IOp">
@@ -1756,7 +1756,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUC8" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/req.png" />
+      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/req.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8Yg5OP">
@@ -1789,7 +1789,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUoA" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/addSibling.png" />
+      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/addSibling.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8Yg60R">
@@ -1820,7 +1820,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUrc" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/delete.png" />
+      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/reqchunk.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8YheFX">
@@ -1857,7 +1857,7 @@
       <node concept="H_c77" id="6LfBX8Yhl4M" role="1tU5fm" />
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUrX" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.core.home}/code/languages/org.iets3.core/languages/org.iets3.req.core/icons/reqchunk.png" />
+      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/reqchunk.png" />
     </node>
   </node>
 </model>
