@@ -110,23 +110,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/ConstraintsLanguage/structure.mps
-  <node concept="1TIwiD" id="5rwK$2qeY$r">
-    <property role="EcuMT" value="6260217064766302491" />
-    <property role="TrG5h" value="ModelProperty" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="5rwK$2qeY$S">
-    <property role="EcuMT" value="6260217064766302520" />
-    <property role="TrG5h" value="CheckTableAndRequirementsInstance" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
-=======
->>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/org/iets3/flow/core/structure.mps
   <node concept="1TIwiD" id="5rwK$2qflbr">
     <property role="EcuMT" value="6260217064766395099" />
     <property role="TrG5h" value="CopyProperty" />
@@ -177,20 +160,5 @@
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/ConstraintsLanguage/structure.mps
-  <node concept="1TIwiD" id="38QI5jjQip0">
-    <property role="EcuMT" value="3618282025109759552" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <property role="TrG5h" value="CheckNameRequirementsNotNull" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
-  <node concept="1TIwiD" id="38QI5jjR3Qm">
-    <property role="EcuMT" value="3618282025109962134" />
-    <property role="3GE5qa" value="CustomConstraints" />
-    <property role="TrG5h" value="GlossaryDefined" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
-=======
->>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/models/org/iets3/flow/core/structure.mps
 </model>
 

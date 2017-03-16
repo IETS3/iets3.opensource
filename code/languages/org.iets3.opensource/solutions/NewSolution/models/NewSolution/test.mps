@@ -10,12 +10,6 @@
       <concept id="4278269416858278656" name="testLanguage.structure.TestConcept" flags="ng" index="Q7yLu" />
     </language>
   </registry>
-<<<<<<< HEAD
-  <node concept="Q7yLu" id="3HvtPSdlqD_">
-    <property role="TrG5h" value="Demo" />
-  </node>
-=======
   <node concept="Q7yLu" id="3HvtPSdlqD_" />
->>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67
 </model>
 

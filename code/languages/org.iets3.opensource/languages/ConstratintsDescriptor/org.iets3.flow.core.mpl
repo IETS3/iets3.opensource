@@ -38,7 +38,6 @@
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(ConstraintsLanguage)" version="0" />
         <module reference="b23c2fb7-9509-41ca-9675-447076cde50d(ConstraintsLanguage#4833124655349302206)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
@@ -53,6 +52,7 @@
         <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+        <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -74,10 +74,7 @@
     <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)</dependency>
     <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
-<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/ConstraintsLanguage.mpl
-=======
     <dependency reexport="false">0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.propertyLanguage)</dependency>
->>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -160,11 +157,8 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
-<<<<<<< HEAD:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/ConstraintsLanguage.mpl
-=======
     <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
     <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.propertyLanguage)" version="0" />
->>>>>>> bd0f97d32d336750dd29ab0d9167840d9ed85e67:code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
