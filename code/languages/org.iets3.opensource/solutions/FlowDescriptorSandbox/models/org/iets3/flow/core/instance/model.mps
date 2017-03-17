@@ -11,13 +11,18 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
+    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
       <concept id="4439542802417923299" name="org.iets3.flow.property.formulae.structure.ImplicationPropertyFormula" flags="ng" index="aRPxb" />
+      <concept id="4439542802417923302" name="org.iets3.flow.property.formulae.structure.NotPropertyFormula" flags="ng" index="aRPxe" />
+      <concept id="4439542802417923288" name="org.iets3.flow.property.formulae.structure.UnaryPropertyFormula" flags="ng" index="aRPxK">
+        <child id="2829711462938969999" name="arg" index="1y4i0q" />
+      </concept>
+      <concept id="4439542802417923291" name="org.iets3.flow.property.formulae.structure.AndPropertyFormula" flags="ng" index="aRPxN" />
       <concept id="4439542802417923294" name="org.iets3.flow.property.formulae.structure.OrPropertyFormula" flags="ng" index="aRPxQ" />
       <concept id="4439542802417923285" name="org.iets3.flow.property.formulae.structure.BinaryPropertyFormula" flags="ng" index="aRPxX">
         <child id="2829711462938969990" name="arg1" index="1y4i0j" />
@@ -92,10 +97,20 @@
       <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
         <property role="fwOFb" value="Fill out the requirement Name" />
       </node>
-      <node concept="3x7ZJP" id="2V4emM7KbYr" role="um_Ly">
-        <ref role="35c_gD" to="iuxj:6A8NbxeffEC" resolve="XmlWhitespace" />
-        <node concept="35c_gC" id="2V4emM7KbYt" role="2DkB7w">
-          <ref role="35c_gD" to="iuxj:1q3yNZeAYLu" resolve="XmlCommentLine" />
+      <node concept="aRPxN" id="2V4emM7N3UA" role="um_Ly">
+        <node concept="3x7ZJP" id="2V4emM7N3UK" role="1y4i0j">
+          <ref role="35c_gD" to="tpd4:hp8hY$D" resolve="AbstractCheckingRule" />
+          <node concept="35c_gC" id="2V4emM7N3UM" role="2DkB7w">
+            <ref role="35c_gD" to="hba4:CK7_3uQspZ" resolve="AbstractChildValue" />
+          </node>
+        </node>
+        <node concept="aRPxe" id="2V4emM7N3Vo" role="1y4i0p">
+          <node concept="3x7ZJP" id="2V4emM7N3Vw" role="1y4i0q">
+            <ref role="35c_gD" to="hba4:CK7_3uQspZ" resolve="AbstractChildValue" />
+            <node concept="35c_gC" id="2V4emM7N3Vy" role="2DkB7w">
+              <ref role="35c_gD" to="tpee:65UE62YxyUG" resolve="XorAssignmentExpression" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
