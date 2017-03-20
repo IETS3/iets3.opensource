@@ -20,7 +20,6 @@
     <language id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage">
       <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq">
         <reference id="5067319170577261255" name="reqFileName" index="1jA_$R" />
-        <reference id="5067319170577261257" name="tableName" index="1jA_$T" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -134,7 +133,6 @@
   </registry>
   <node concept="1j_Gsq" id="4Elpcp$XjET">
     <ref role="1jA_$R" node="4Elpcp$XjEV" resolve="ControllerRequirements" />
-    <ref role="1jA_$T" node="4Elpcp$ZbAK" resolve="Cooling Controller Behavior" />
   </node>
   <node concept="2SbYGP" id="4Elpcp$XjEW">
     <property role="TrG5h" value="RequirementsConfig" />
@@ -421,6 +419,71 @@
   </node>
   <node concept="3yOg9E" id="4Elpcp$YUhV">
     <property role="TrG5h" value="Controller Behavior" />
+    <node concept="3yOg1P" id="4Elpcp$Zm4E" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$Zm4F" role="3yOfZN">
+        <property role="0bFFS" value="40" />
+        <property role="0bFFY" value="60" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$Zm4G" role="3yOfZL">
+        <property role="0bFC1" value="20" />
+        <property role="0bFC3" value="50" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$Zm4H" role="3yOfCn">
+        <property role="3yOfbB" value="12.30" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$Zm4I" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$Zm4J" role="3yOfZN">
+        <property role="0bFFS" value="19" />
+        <property role="0bFFY" value="40" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$Zm4K" role="3yOfZL">
+        <property role="0bFC3" value="20" />
+        <property role="0bFC1" value="16" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$Zm4L" role="3yOfCn">
+        <property role="3yOfbB" value="33.20" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$Zm4M" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$Zm4N" role="3yOfZN">
+        <property role="0bFFS" value="-5" />
+        <property role="0bFFY" value="19" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$Zm4O" role="3yOfZL">
+        <property role="0bFC3" value="16" />
+        <property role="0bFC1" value="-9" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$Zm4P" role="3yOfCn">
+        <property role="3yOfbB" value="26.70" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$Zm4Q" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$Zm4R" role="3yOfZN">
+        <property role="0bFFS" value="-6" />
+        <property role="0bFFY" value="-5" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$Zm4S" role="3yOfZL">
+        <property role="0bFC3" value="-9" />
+        <property role="0bFC1" value="-15" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$Zm4T" role="3yOfCn">
+        <property role="3yOfbB" value="22.90" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$Zm4U" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$Zm4V" role="3yOfZN">
+        <property role="0bFFS" value="-40" />
+        <property role="0bFFY" value="-6" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$Zm4W" role="3yOfZL">
+        <property role="0bFC3" value="-15" />
+        <property role="0bFC1" value="-20" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$Zm4X" role="3yOfCn">
+        <property role="3yOfbB" value="20.00" />
+      </node>
+    </node>
     <node concept="1iZyVp" id="4Elpcp$YUhW" role="1iY3eJ">
       <property role="1iZyVm" value="60" />
       <property role="1iZyVk" value="-40" />
