@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.platform" />
-              <option name="path" value="$PROJECT_DIR$/../../../../mbeddr.core/code" />
+              <option name="path" value="${mbeddr.github.core.home}/code" />
             </Library>
           </value>
         </entry>
