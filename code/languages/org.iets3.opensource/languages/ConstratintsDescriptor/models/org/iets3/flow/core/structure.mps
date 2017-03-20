@@ -9,6 +9,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="47lw" ref="r:afc6f445-2ccb-416f-bf5b-6cd26b99557c(org.iets3.flow.property.formulae.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -67,7 +68,7 @@
       <property role="IQ2ns" value="4833124655349364974" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="displayString" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4ciHkhthZtG" resolve="InformationString" />
     </node>
     <node concept="1TJgyj" id="14AbH$uBANN" role="1TKVEi">
@@ -80,9 +81,9 @@
     <node concept="1TJgyj" id="4ciHkhtie$A" role="1TKVEi">
       <property role="IQ2ns" value="4833124655349426470" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constraintsList" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+      <property role="20kJfa" value="propertyFormula" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="47lw:3QsrawRgNjk" resolve="PropertyFormula" />
     </node>
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
