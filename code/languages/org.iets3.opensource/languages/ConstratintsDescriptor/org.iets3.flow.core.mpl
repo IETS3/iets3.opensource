@@ -76,6 +76,7 @@
     <dependency reexport="false">c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.property.formulae)</dependency>
     <dependency reexport="false">6df0089f-3288-4998-9d57-e698e7c8e145(jetbrains.mps.ide.vcs.modelmetadata)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
+    <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -159,6 +160,7 @@
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
+    <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
     <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
     <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.property.formulae)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />

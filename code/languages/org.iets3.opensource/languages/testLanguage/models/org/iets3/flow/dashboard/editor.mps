@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -17,8 +16,12 @@
         <child id="7429591467341004872" name="parts" index="aenpr" />
         <child id="7655327340756279373" name="variables" index="1b80Z_" />
       </concept>
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -60,6 +63,8 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -147,8 +152,15 @@
     <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
     <node concept="3EZMnI" id="3HvtPSdglT9" role="2wV5jI">
       <node concept="l2Vlx" id="3HvtPSdglTc" role="2iSdaV" />
-      <node concept="3F0A7n" id="3HvtPSdglTl" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="3F2HdR" id="5cR9puhHCky" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:5cR9puhFRxd" resolve="stateLists" />
+        <node concept="l2Vlx" id="5cR9puhHCk$" role="2czzBx" />
+        <node concept="pj6Ft" id="5cR9puhHCkB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="5cR9puhHCAl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="18a60v" id="3HvtPSdgqal" role="3EZMnx">
         <node concept="VPM3Z" id="3HvtPSdgqan" role="3F10Kt">
@@ -238,6 +250,34 @@
         </node>
       </node>
       <node concept="2j_NTm" id="4vZNoKtHqeq" role="1Qtc8$" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cR9puhHhJ$">
+    <ref role="1XX52x" to="xwgo:5cR9puhF2lu" resolve="State" />
+    <node concept="3EZMnI" id="5cR9puhHhJA" role="2wV5jI">
+      <node concept="3F0A7n" id="5cR9puhHhJH" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:5cR9puhFRxl" resolve="text" />
+        <node concept="pVoyu" id="5cR9puhHhKb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5cR9puhHhJN" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:5cR9puhFRxn" resolve="formula" />
+        <node concept="pVoyu" id="5cR9puhHhK8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5cR9puhHhJV" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:5cR9puhFRxB" resolve="listOfPointer" />
+        <node concept="l2Vlx" id="5cR9puhHhJX" role="2czzBx" />
+        <node concept="pj6Ft" id="5cR9puhHhK5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="5cR9puhHhKe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5cR9puhHhJD" role="2iSdaV" />
     </node>
   </node>
 </model>
