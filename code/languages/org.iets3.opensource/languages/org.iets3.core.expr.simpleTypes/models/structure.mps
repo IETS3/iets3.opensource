@@ -173,7 +173,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
     <node concept="1TJgyj" id="19PglA20qXS" role="1TKVEi">
       <property role="IQ2ns" value="1330041117646892920" />
       <property role="20lmBu" value="aggregation" />
