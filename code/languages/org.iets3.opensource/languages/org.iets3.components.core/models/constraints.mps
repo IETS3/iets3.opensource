@@ -697,29 +697,6 @@
         </node>
       </node>
     </node>
-    <node concept="nKS2y" id="4PGMP7y6RJ6" role="1MLUbF">
-      <node concept="3clFbS" id="4PGMP7y6RJ7" role="2VODD2">
-        <node concept="3clFbF" id="4PGMP7y6RJf" role="3cqZAp">
-          <node concept="2OqwBi" id="4PGMP7y6RJg" role="3clFbG">
-            <node concept="2OqwBi" id="4PGMP7y6RJh" role="2Oq$k0">
-              <node concept="nLn13" id="4PGMP7y6RJi" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="4PGMP7y6RJj" role="2OqNvi">
-                <node concept="1xMEDy" id="4PGMP7y6RJk" role="1xVPHs">
-                  <node concept="chp4Y" id="4PGMP7y6RJl" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="4PGMP7y6RJm" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="4PGMP7y6RJn" role="2OqNvi">
-              <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="otxO1" id="4PGMP7y6RJo" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="cJpacq2_Ch">
     <property role="3GE5qa" value="components.substructure" />
@@ -857,29 +834,6 @@
                   <ref role="3Tt5mk" to="w9y2:4KDeVD8s9U_" resolve="connectorType" />
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="nKS2y" id="4PGMP7y6MDb" role="1MLUbF">
-      <node concept="3clFbS" id="4PGMP7y6MDc" role="2VODD2">
-        <node concept="3clFbF" id="4PGMP7y65IX" role="3cqZAp">
-          <node concept="2OqwBi" id="4PGMP7y66zf" role="3clFbG">
-            <node concept="2OqwBi" id="4PGMP7y65Y5" role="2Oq$k0">
-              <node concept="nLn13" id="4PGMP7y65IW" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="4PGMP7y66a1" role="2OqNvi">
-                <node concept="1xMEDy" id="4PGMP7y66a3" role="1xVPHs">
-                  <node concept="chp4Y" id="4PGMP7y66QY" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="4PGMP7y66YU" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="4PGMP7y67qd" role="2OqNvi">
-              <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="otxO1" id="4PGMP7y67BX" role="37wK5m" />
             </node>
           </node>
         </node>
