@@ -27,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.diehltable.mpl" folder="tablelanguage" />
+      <modulePath path="$PROJECT_DIR$/languages/testLanguage/org.iets3.flow.dashboard.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDemo/FlowDemo.msd" folder="flowDemo" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDescriptorSandbox/org.iets3.flow.core.instance.msd" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />

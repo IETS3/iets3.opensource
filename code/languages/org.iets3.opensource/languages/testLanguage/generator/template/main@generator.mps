@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3aaa1ec6-6d8c-450f-80f9-64fc48498fd6(testLanguage.generator.template.main@generator)">
+<model ref="r:3aaa1ec6-6d8c-450f-80f9-64fc48498fd6(org.iets3.flow.dashboard.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="testLanguage" version="-1" />

@@ -155,11 +155,5 @@
     <property role="3GE5qa" value="Property" />
     <ref role="1TJDcQ" to="tp25:2iMJRNxD2Yw" resolve="PropertyIdRefExpression" />
   </node>
-  <node concept="1TIwiD" id="38QI5jjPZ6z">
-    <property role="EcuMT" value="3618282025109680547" />
-    <property role="TrG5h" value="Dashboard" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
 </model>
 
