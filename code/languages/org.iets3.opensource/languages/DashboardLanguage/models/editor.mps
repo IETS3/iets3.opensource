@@ -472,7 +472,7 @@
                 <node concept="3clFbS" id="2V4emM7NEaT" role="3clFbx">
                   <node concept="3cpWs6" id="2V4emM7NEaU" role="3cqZAp">
                     <node concept="Xl_RD" id="2V4emM7NEaV" role="3cqZAk">
-                      <property role="Xl_RC" value="Please add a requirement for the cooling system and define the glossary terms." />
+                      <property role="Xl_RC" value="Please add a requirement for the cooling system where you define the temperature thresholds as glossary terms." />
                     </node>
                   </node>
                 </node>
@@ -512,7 +512,7 @@
                 <node concept="3clFbS" id="2V4emM7OaeH" role="3clFbx">
                   <node concept="3cpWs6" id="2V4emM7OaeI" role="3cqZAp">
                     <node concept="Xl_RD" id="2V4emM7OaeJ" role="3cqZAk">
-                      <property role="Xl_RC" value="Please define the glossary terms." />
+                      <property role="Xl_RC" value="Please define the temperature threshholds as glossary terms." />
                     </node>
                   </node>
                 </node>
@@ -1602,7 +1602,7 @@
                                 <node concept="liA8E" id="6sXRKlwaskD" role="2OqNvi">
                                   <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                   <node concept="Xl_RD" id="6sXRKlwasHq" role="37wK5m">
-                                    <property role="Xl_RC" value="maxValueDecrease" />
+                                    <property role="Xl_RC" value="maximumDecreaseValue" />
                                   </node>
                                 </node>
                               </node>
@@ -1635,28 +1635,46 @@
                           <node concept="1bVj0M" id="4piIZ0lSYGm" role="23t8la">
                             <node concept="3clFbS" id="4piIZ0lSYGn" role="1bW5cS">
                               <node concept="3clFbF" id="4piIZ0lTDl3" role="3cqZAp">
-                                <node concept="2OqwBi" id="3xuyTM5xAxj" role="3clFbG">
-                                  <node concept="2OqwBi" id="3xuyTM5x$Pu" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3xuyTM5xvsm" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="4piIZ0lTDBK" role="2Oq$k0">
-                                        <node concept="37vLTw" id="4piIZ0lTDl1" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="4piIZ0lSYGo" resolve="it" />
-                                        </node>
-                                        <node concept="2Rf3mk" id="3xuyTM5xs3s" role="2OqNvi">
-                                          <node concept="1xMEDy" id="3xuyTM5xs3u" role="1xVPHs">
-                                            <node concept="chp4Y" id="3xuyTM5xsL3" role="ri$Ld">
-                                              <ref role="cht4Q" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                                <node concept="1Wc70l" id="4Elpcp$XwLs" role="3clFbG">
+                                  <node concept="2OqwBi" id="3xuyTM5xAxj" role="3uHU7w">
+                                    <node concept="2OqwBi" id="3xuyTM5x$Pu" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="3xuyTM5xvsm" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="4piIZ0lTDBK" role="2Oq$k0">
+                                          <node concept="37vLTw" id="4piIZ0lTDl1" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="4piIZ0lSYGo" resolve="it" />
+                                          </node>
+                                          <node concept="2Rf3mk" id="3xuyTM5xs3s" role="2OqNvi">
+                                            <node concept="1xMEDy" id="3xuyTM5xs3u" role="1xVPHs">
+                                              <node concept="chp4Y" id="3xuyTM5xsL3" role="ri$Ld">
+                                                <ref role="cht4Q" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
+                                        <node concept="1uHKPH" id="3xuyTM5xy3r" role="2OqNvi" />
                                       </node>
-                                      <node concept="1uHKPH" id="3xuyTM5xy3r" role="2OqNvi" />
+                                      <node concept="3TrcHB" id="3xuyTM5x_vX" role="2OqNvi">
+                                        <ref role="3TsBF5" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                                      </node>
                                     </node>
-                                    <node concept="3TrcHB" id="3xuyTM5x_vX" role="2OqNvi">
-                                      <ref role="3TsBF5" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                                    <node concept="17RvpY" id="3xuyTM5xBn$" role="2OqNvi" />
+                                  </node>
+                                  <node concept="2OqwBi" id="4Elpcp$Xxex" role="3uHU7B">
+                                    <node concept="2OqwBi" id="4Elpcp$Xxey" role="2Oq$k0">
+                                      <node concept="37vLTw" id="4Elpcp$Xxez" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4piIZ0lSYGo" resolve="it" />
+                                      </node>
+                                      <node concept="3TrcHB" id="4Elpcp$Xxe$" role="2OqNvi">
+                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="4Elpcp$Xxe_" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                                      <node concept="Xl_RD" id="4Elpcp$XxeA" role="37wK5m">
+                                        <property role="Xl_RC" value="maximumIncreaseValue" />
+                                      </node>
                                     </node>
                                   </node>
-                                  <node concept="17RvpY" id="3xuyTM5xBn$" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
@@ -1720,7 +1738,7 @@
                                     <node concept="liA8E" id="4piIZ0lTNMe" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                       <node concept="Xl_RD" id="4piIZ0lTOgX" role="37wK5m">
-                                        <property role="Xl_RC" value="minValueIncrease" />
+                                        <property role="Xl_RC" value="minimumIncreaseValue" />
                                       </node>
                                     </node>
                                   </node>
@@ -1788,7 +1806,7 @@
                                   <node concept="liA8E" id="6sXRKlwaefT" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                     <node concept="Xl_RD" id="6sXRKlwae_P" role="37wK5m">
-                                      <property role="Xl_RC" value="minValueDecrease" />
+                                      <property role="Xl_RC" value="minimumDecreaseValue" />
                                     </node>
                                   </node>
                                 </node>
