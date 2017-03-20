@@ -2,7 +2,7 @@
 <model ref="r:67d15077-4ba6-4d04-bc38-42ffb977155d(DashboardLanguage.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -294,7 +294,7 @@
     <ref role="1XX52x" to="lm4d:4piIZ0lL7NE" resolve="DashboardRoot" />
     <node concept="3EZMnI" id="4piIZ0lMebp" role="2wV5jI">
       <node concept="3F0ifn" id="4piIZ0lMebw" role="3EZMnx">
-        <property role="3F0ifm" value="Flow Language Dashboard" />
+        <property role="3F0ifm" value="Cooling Requirements Dashboard" />
         <node concept="ljvvj" id="6sXRKlwoQrw" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
