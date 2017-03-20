@@ -272,7 +272,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="1alxXJlAPRF" role="3EZMnx">
-          <property role="3F0ifm" value="PWM[%]" />
+          <property role="3F0ifm" value="Duty Cycle[%]" />
           <node concept="VPXOz" id="1alxXJlBaHz" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

@@ -20,6 +20,7 @@
     <language id="64a975b8-2ef3-4868-a70b-987a6808fd42" name="DashboardLanguage">
       <concept id="5067319170576973034" name="DashboardLanguage.structure.DashboardRoot" flags="ng" index="1j_Gsq">
         <reference id="5067319170577261255" name="reqFileName" index="1jA_$R" />
+        <reference id="5067319170577261257" name="tableName" index="1jA_$T" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -42,6 +43,37 @@
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
     </language>
+    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable">
+      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
+        <property id="9177268329656752713" name="Max" index="1iZyU_" />
+        <property id="9177268329656752711" name="Min" index="1iZyUF" />
+      </concept>
+      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
+        <property id="9177268329656752696" name="Min" index="1iZyVk" />
+        <property id="9177268329656752698" name="Max" index="1iZyVm" />
+      </concept>
+      <concept id="7430885610120754429" name="org.iets3.table.diehltable.structure.MWPVal" flags="ng" index="3yOfJE">
+        <property id="7430885610120756720" name="MWPValue" index="3yOfbB" />
+      </concept>
+      <concept id="7430885610120728418" name="org.iets3.table.diehltable.structure.DiehlRow" flags="ng" index="3yOg1P">
+        <child id="7430885610120754432" name="MWPValue" index="3yOfCn" />
+        <child id="7430885610120753382" name="DecreasingInterval" index="3yOfZL" />
+        <child id="7430885610120753380" name="IncreasingInterval" index="3yOfZN" />
+      </concept>
+      <concept id="7430885610120727933" name="org.iets3.table.diehltable.structure.DiehlTable" flags="ng" index="3yOg9E">
+        <child id="9177268329656878919" name="decreasingThreshold" index="1iY3eF" />
+        <child id="9177268329656878915" name="increasingThreshold" index="1iY3eJ" />
+        <child id="7430885610120958225" name="drow" index="3yNpS6" />
+      </concept>
+      <concept id="7430885610120730869" name="org.iets3.table.diehltable.structure.DecreasingValue" flags="ng" index="3yOhvy">
+        <property id="3665318202133670269" name="To" index="0bFC1" />
+        <property id="3665318202133670271" name="From" index="0bFC3" />
+      </concept>
+      <concept id="7430885610120730866" name="org.iets3.table.diehltable.structure.IncreasingValue" flags="ng" index="3yOhv_">
+        <property id="3665318202133670276" name="From" index="0bFFS" />
+        <property id="3665318202133670274" name="To" index="0bFFY" />
+      </concept>
+    </language>
     <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
       <concept id="8479184967780604356" name="org.iets3.core.users.structure.User" flags="ng" index="30Mgg9">
         <property id="8479184967780604364" name="email" index="30Mgg1" />
@@ -51,7 +83,9 @@
       <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN">
         <child id="8479184967780604481" name="users" index="30Mguc" />
       </concept>
-      <concept id="8479184967780770791" name="org.iets3.core.users.structure.UserRef" flags="ng" index="30MVSE" />
+      <concept id="8479184967780770791" name="org.iets3.core.users.structure.UserRef" flags="ng" index="30MVSE">
+        <reference id="8479184967780770792" name="user" index="30MVS_" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -71,12 +105,15 @@
       <concept id="7551038907536072626" name="org.iets3.glossary.structure.GlossaryDocSection" flags="ng" index="1K7v9j" />
     </language>
     <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
-      <concept id="380060842849065671" name="org.iets3.req.core.structure.State" flags="ng" index="2IiYml" />
+      <concept id="380060842849065675" name="org.iets3.req.core.structure.StateNew" flags="ng" index="2IiYmp" />
       <concept id="8913201067422874021" name="org.iets3.req.core.structure.NonMergeableWord" flags="ng" index="3KVni0">
         <property id="8913201067422962862" name="escapedValue" index="3KOHAb" />
       </concept>
+      <concept id="8906162732673130909" name="org.iets3.req.core.structure.PriorityTag" flags="ng" index="3NleDc">
+        <reference id="8440269550976497711" name="priorityValue" index="1vnyhv" />
+      </concept>
       <concept id="4230179762005235942" name="org.iets3.req.core.structure.HeaderRequirement" flags="ng" index="3SUGrM" />
-      <concept id="5151426049053645597" name="org.iets3.req.core.structure.Kind" flags="ng" index="3VXd6J" />
+      <concept id="5151426049053646109" name="org.iets3.req.core.structure.KindFunctional" flags="ng" index="3VXduJ" />
       <concept id="5151426049053572067" name="org.iets3.req.core.structure.RequirementsDocSection" flags="ng" index="3VXr5h" />
       <concept id="5151426049053542735" name="org.iets3.req.core.structure.IReqContainer" flags="ng" index="3VY$fX">
         <child id="5151426049053542821" name="requirements" index="3VY$cn" />
@@ -85,16 +122,19 @@
       <concept id="5151426049053136313" name="org.iets3.req.core.structure.DefaultRequirement" flags="ng" index="3VZ1Wb">
         <child id="380060842849066491" name="state" index="2IiYaD" />
         <child id="8479184967780780683" name="owner" index="30MXt6" />
+        <child id="5151426049053645603" name="tags" index="3VXd6h" />
         <child id="5151426049053645598" name="kind" index="3VXd6G" />
         <child id="5151426049053572064" name="doc" index="3VXr5i" />
       </concept>
       <concept id="5151426049053136302" name="org.iets3.req.core.structure.AbstractRequirement" flags="ng" index="3VZ1Ws">
         <property id="816340308089533389" name="uniqueID" index="1kP$Fy" />
+        <property id="5151426049053136371" name="title" index="3VZ1X1" />
       </concept>
     </language>
   </registry>
   <node concept="1j_Gsq" id="4Elpcp$XjET">
     <ref role="1jA_$R" node="4Elpcp$XjEV" resolve="ControllerRequirements" />
+    <ref role="1jA_$T" node="4Elpcp$ZbAK" resolve="Cooling Controller Behavior" />
   </node>
   <node concept="2SbYGP" id="4Elpcp$XjEW">
     <property role="TrG5h" value="RequirementsConfig" />
@@ -107,8 +147,10 @@
       <property role="TrG5h" value="CoolingRequirements" />
       <node concept="3VZ1Wb" id="4Elpcp$XjFc" role="3VY$cn">
         <property role="1kP$Fy" value="2" />
-        <node concept="3VXd6J" id="4Elpcp$XjFd" role="3VXd6G" />
-        <node concept="2IiYml" id="4Elpcp$XjFe" role="2IiYaD" />
+        <property role="3VZ1X1" value="Cooling Behavior" />
+        <property role="TrG5h" value="behavior" />
+        <node concept="3VXduJ" id="4Elpcp$Yii0" role="3VXd6G" />
+        <node concept="2IiYmp" id="4Elpcp$Yii3" role="2IiYaD" />
         <node concept="3VXr5h" id="4Elpcp$XjFf" role="3VXr5i">
           <node concept="1_0LV8" id="4Elpcp$XjFm" role="1_0VJ0">
             <node concept="19SGf9" id="4Elpcp$XjFn" role="1_0LWR">
@@ -308,7 +350,12 @@
             </node>
           </node>
         </node>
-        <node concept="30MVSE" id="4Elpcp$XjFg" role="30MXt6" />
+        <node concept="30MVSE" id="4Elpcp$YihX" role="30MXt6">
+          <ref role="30MVS_" node="4Elpcp$XjEY" resolve="levilucio" />
+        </node>
+        <node concept="3NleDc" id="4Elpcp$Yii6" role="3VXd6h">
+          <ref role="1vnyhv" to="i990:2HWaB6uKzTv" resolve="highest" />
+        </node>
       </node>
     </node>
   </node>
@@ -370,6 +417,93 @@
       <property role="30Mgga" value="levi" />
       <property role="30Mgg4" value="lucio" />
       <property role="30Mgg1" value="lucio@fortiss.org" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="4Elpcp$YUhV">
+    <property role="TrG5h" value="Controller Behavior" />
+    <node concept="1iZyVp" id="4Elpcp$YUhW" role="1iY3eJ">
+      <property role="1iZyVm" value="60" />
+      <property role="1iZyVk" value="-40" />
+    </node>
+    <node concept="1iZyUC" id="4Elpcp$YUhX" role="1iY3eF">
+      <property role="1iZyU_" value="50" />
+      <property role="1iZyUF" value="-20" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="4Elpcp$ZbAK">
+    <property role="TrG5h" value="Cooling Controller Behavior" />
+    <node concept="3yOg1P" id="4Elpcp$ZbAN" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$ZbAO" role="3yOfZN">
+        <property role="0bFFS" value="40" />
+        <property role="0bFFY" value="60" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$ZbAP" role="3yOfZL">
+        <property role="0bFC1" value="20" />
+        <property role="0bFC3" value="50" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$ZbAQ" role="3yOfCn">
+        <property role="3yOfbB" value="12.30" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$ZbAV" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$ZbAW" role="3yOfZN">
+        <property role="0bFFS" value="19" />
+        <property role="0bFFY" value="40" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$ZbAX" role="3yOfZL">
+        <property role="0bFC3" value="20" />
+        <property role="0bFC1" value="16" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$ZbAY" role="3yOfCn">
+        <property role="3yOfbB" value="33.20" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$ZbB7" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$ZbB8" role="3yOfZN">
+        <property role="0bFFS" value="-5" />
+        <property role="0bFFY" value="19" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$ZbB9" role="3yOfZL">
+        <property role="0bFC3" value="16" />
+        <property role="0bFC1" value="-9" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$ZbBa" role="3yOfCn">
+        <property role="3yOfbB" value="26.70" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$ZbBn" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$ZbBo" role="3yOfZN">
+        <property role="0bFFS" value="-6" />
+        <property role="0bFFY" value="-5" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$ZbBp" role="3yOfZL">
+        <property role="0bFC3" value="-9" />
+        <property role="0bFC1" value="-15" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$ZbBq" role="3yOfCn">
+        <property role="3yOfbB" value="22.90" />
+      </node>
+    </node>
+    <node concept="3yOg1P" id="4Elpcp$ZbBF" role="3yNpS6">
+      <node concept="3yOhv_" id="4Elpcp$ZbBG" role="3yOfZN">
+        <property role="0bFFS" value="-40" />
+        <property role="0bFFY" value="-6" />
+      </node>
+      <node concept="3yOhvy" id="4Elpcp$ZbBH" role="3yOfZL">
+        <property role="0bFC3" value="-15" />
+        <property role="0bFC1" value="-20" />
+      </node>
+      <node concept="3yOfJE" id="4Elpcp$ZbBI" role="3yOfCn">
+        <property role="3yOfbB" value="20.00" />
+      </node>
+    </node>
+    <node concept="1iZyVp" id="4Elpcp$ZbAL" role="1iY3eJ">
+      <property role="1iZyVm" value="60" />
+      <property role="1iZyVk" value="-40" />
+    </node>
+    <node concept="1iZyUC" id="4Elpcp$ZbAM" role="1iY3eF">
+      <property role="1iZyU_" value="50" />
+      <property role="1iZyUF" value="-20" />
     </node>
   </node>
 </model>

@@ -1003,7 +1003,7 @@
                           <node concept="liA8E" id="6sXRKlwkymb" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                             <node concept="Xl_RD" id="6sXRKlwj$97" role="37wK5m">
-                              <property role="Xl_RC" value="maxValueIncrease" />
+                              <property role="Xl_RC" value="maximumIncreaseValue" />
                             </node>
                           </node>
                         </node>
@@ -1051,7 +1051,7 @@
                                     <node concept="liA8E" id="5f48Vl85Wj2" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                       <node concept="Xl_RD" id="5f48Vl85Wj3" role="37wK5m">
-                                        <property role="Xl_RC" value="maxValueIncrease" />
+                                        <property role="Xl_RC" value="maximumIncreaseValue" />
                                       </node>
                                     </node>
                                   </node>
@@ -1093,7 +1093,7 @@
                           <node concept="liA8E" id="6sXRKlwkLnA" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                             <node concept="Xl_RD" id="6sXRKlwkLnB" role="37wK5m">
-                              <property role="Xl_RC" value="minValueIncrease" />
+                              <property role="Xl_RC" value="minimumIncreaseValue" />
                             </node>
                           </node>
                         </node>
@@ -1141,7 +1141,7 @@
                                     <node concept="liA8E" id="5f48Vl85Kyv" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                       <node concept="Xl_RD" id="5f48Vl85Kyw" role="37wK5m">
-                                        <property role="Xl_RC" value="minValueIncrease" />
+                                        <property role="Xl_RC" value="minimumIncreaseValue" />
                                       </node>
                                     </node>
                                   </node>
@@ -1182,7 +1182,7 @@
                           <node concept="liA8E" id="6sXRKlwkPhR" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                             <node concept="Xl_RD" id="6sXRKlwkPhS" role="37wK5m">
-                              <property role="Xl_RC" value="maxValueDecrease" />
+                              <property role="Xl_RC" value="maximumDecreaseValue" />
                             </node>
                           </node>
                         </node>
@@ -1230,7 +1230,7 @@
                                     <node concept="liA8E" id="5f48Vl85L1$" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                                       <node concept="Xl_RD" id="5f48Vl85L1_" role="37wK5m">
-                                        <property role="Xl_RC" value="maxValueDecrease" />
+                                        <property role="Xl_RC" value="maximumDecreaseValue" />
                                       </node>
                                     </node>
                                   </node>
@@ -1271,7 +1271,7 @@
                           <node concept="liA8E" id="6sXRKlwkRRD" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                             <node concept="Xl_RD" id="6sXRKlwkRRE" role="37wK5m">
-                              <property role="Xl_RC" value="minValueDecrease" />
+                              <property role="Xl_RC" value="minimumDecreaseValue" />
                             </node>
                           </node>
                         </node>
@@ -1319,7 +1319,7 @@
                                     <node concept="liA8E" id="5f48Vl85Lp9" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                                       <node concept="Xl_RD" id="5f48Vl85Lpa" role="37wK5m">
-                                        <property role="Xl_RC" value="minValueDecrease" />
+                                        <property role="Xl_RC" value="minimumDecreaseValue" />
                                       </node>
                                     </node>
                                   </node>
