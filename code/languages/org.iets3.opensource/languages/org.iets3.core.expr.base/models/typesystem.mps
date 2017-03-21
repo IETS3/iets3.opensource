@@ -33,7 +33,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
-      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -200,9 +199,6 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
-        <child id="1207055552304" name="warningText" index="a7wSD" />
-      </concept>
       <concept id="1766949807893567867" name="jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction" flags="ig" index="bXqS6" />
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -295,7 +291,6 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -4863,48 +4858,6 @@
     <node concept="1YaCAy" id="IG87BH$dbO" role="1YuTPh">
       <property role="TrG5h" value="contractItem" />
       <ref role="1YaFvo" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="5aQI$6VJ0_J">
-    <property role="TrG5h" value="check_PlainConstraint" />
-    <property role="3GE5qa" value="contract" />
-    <node concept="3clFbS" id="5aQI$6VJ0_K" role="18ibNy">
-      <node concept="3clFbJ" id="5aQI$6VJ6IV" role="3cqZAp">
-        <node concept="3clFbS" id="5aQI$6VJ6IX" role="3clFbx">
-          <node concept="a7r0C" id="5aQI$6VJ6Hp" role="3cqZAp">
-            <node concept="Xl_RD" id="5aQI$6VJ6I5" role="a7wSD">
-              <property role="Xl_RC" value="Constraints are supposed to mention the value to be constrained (it)." />
-            </node>
-            <node concept="1YBJjd" id="5aQI$6VJ6UR" role="2OEOjV">
-              <ref role="1YBMHb" node="5aQI$6VJ0_M" resolve="plainConstraint" />
-            </node>
-          </node>
-        </node>
-        <node concept="2dkUwp" id="5aQI$6VNJq5" role="3clFbw">
-          <node concept="2OqwBi" id="5aQI$6VJ2Id" role="3uHU7B">
-            <node concept="2OqwBi" id="5aQI$6VJ1dV" role="2Oq$k0">
-              <node concept="1YBJjd" id="5aQI$6VJ16i" role="2Oq$k0">
-                <ref role="1YBMHb" node="5aQI$6VJ0_M" resolve="plainConstraint" />
-              </node>
-              <node concept="2Rf3mk" id="5aQI$6VJ1ll" role="2OqNvi">
-                <node concept="1xMEDy" id="5aQI$6VJ1ln" role="1xVPHs">
-                  <node concept="chp4Y" id="5aQI$6VJ1rK" role="ri$Ld">
-                    <ref role="cht4Q" to="hm2y:69JueU2zshL" resolve="ISSItValueRef" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="34oBXx" id="5aQI$6VJ4AE" role="2OqNvi" />
-          </node>
-          <node concept="3cmrfG" id="5aQI$6VJ6Au" role="3uHU7w">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5aQI$6VJ0_M" role="1YuTPh">
-      <property role="TrG5h" value="plainConstraint" />
-      <ref role="1YaFvo" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
     </node>
   </node>
 </model>

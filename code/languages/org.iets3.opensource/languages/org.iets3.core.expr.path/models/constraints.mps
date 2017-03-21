@@ -11,7 +11,7 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -291,8 +291,8 @@
                 <ref role="3cqZAo" node="6LLGpXJ4ZDY" resolve="t" />
               </node>
               <node concept="1mIQ4w" id="6LLGpXJ5hCs" role="2OqNvi">
-                <node concept="chp4Y" id="3oWFox99pNi" role="cj9EA">
-                  <ref role="cht4Q" to="tp2q:6bxRKqX8naM" resolve="CollectionType" />
+                <node concept="chp4Y" id="59Lu86EE5ho" role="cj9EA">
+                  <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                 </node>
               </node>
             </node>
