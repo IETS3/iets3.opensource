@@ -10,19 +10,11 @@
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.property.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
-    <import index="liad" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#10211132-9b5e-427a-9b37-1c1f28794a5e(jetbrains.mps.lang.project.modules/module.testLanguage@project_stub)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
-    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
-    <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
-      <concept id="4439542802417923291" name="org.iets3.flow.property.formulae.structure.AndPropertyFormula" flags="ng" index="aRPxN" />
-      <concept id="4439542802417923285" name="org.iets3.flow.property.formulae.structure.BinaryPropertyFormula" flags="ng" index="aRPxX">
-        <child id="2829711462938969990" name="arg1" index="1y4i0j" />
-        <child id="2829711462938969996" name="arg2" index="1y4i0p" />
-      </concept>
       <concept id="7571185389806664458" name="org.iets3.flow.property.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
@@ -85,18 +77,10 @@
       <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
         <property role="fwOFb" value="Fill out the requirement Name" />
       </node>
-      <node concept="aRPxN" id="5cR9puhH3uU" role="um_Ly">
-        <node concept="3x7ZJP" id="5cR9puhH3v1" role="1y4i0j">
-          <ref role="35c_gD" to="plfp:7mG7sQPy9qR" resolve="CCTag" />
-          <node concept="35c_gC" id="5cR9puhH3v3" role="2DkB7w">
-            <ref role="35c_gD" to="plfp:7Ip2X68Ocu3" resolve="StateDone" />
-          </node>
-        </node>
-        <node concept="3x7ZJP" id="5cR9puhH3vj" role="1y4i0p">
-          <ref role="35c_gD" to="plfp:7mG7sQPy9qR" resolve="CCTag" />
-          <node concept="35c_gC" id="5cR9puhH3vl" role="2DkB7w">
-            <ref role="35c_gD" to="iuxj:5M4a$b5jfOs" resolve="XmlValuePart" />
-          </node>
+      <node concept="3x7ZJP" id="5fb3TbDGMcd" role="um_Ly">
+        <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryDefinedProperty" />
+        <node concept="35c_gC" id="5fb3TbDGMcf" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryDefinedProperty" />
         </node>
       </node>
     </node>
@@ -105,14 +89,14 @@
       <node concept="ulk8C" id="38QI5jjSCuB" role="ulkQE">
         <property role="fwOFb" value="GlossaryItemsNotCreated" />
       </node>
-      <node concept="3x7ZJP" id="5cR9puhHDVs" role="um_Ly">
-        <ref role="35c_gD" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-        <node concept="35c_gC" id="5cR9puhHDVu" role="2DkB7w">
-          <ref role="35c_gD" to="xwgo:5cR9puhF2lu" resolve="State" />
-        </node>
-      </node>
       <node concept="fI48x" id="5cR9puhHDVI" role="fI48E">
         <ref role="fxKJO" to="tpee:gEShaYr" resolve="AbstractCreator" />
+      </node>
+      <node concept="3x7ZJP" id="5fb3TbDFcWg" role="um_Ly">
+        <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="NameRequirementsNotNullProperty" />
+        <node concept="35c_gC" id="5fb3TbDFcWi" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="NameRequirementsNotNullProperty" />
+        </node>
       </node>
     </node>
     <node concept="pHN19" id="2V4emM7$EFE" role="2Dlz8l">
@@ -122,36 +106,28 @@
       </node>
     </node>
   </node>
-  <node concept="Q7yLu" id="5cR9puhI8Yy">
-    <node concept="32AK39" id="5cR9puhI8Yz" role="32A5Rq">
+  <node concept="Q7yLu" id="6IVOdeOQ_eN">
+    <node concept="32AK39" id="6IVOdeOQ_eO" role="32A5Rq">
       <property role="32A5R2" value="Fill out the requirement Name" />
-      <node concept="aRPxN" id="5cR9puhI8Y$" role="32A5R0">
-        <node concept="3x7ZJP" id="5cR9puhI8Y_" role="1y4i0j">
-          <ref role="35c_gD" to="plfp:7mG7sQPy9qR" resolve="CCTag" />
-          <node concept="35c_gC" id="5cR9puhI8YA" role="2DkB7w">
-            <ref role="35c_gD" to="plfp:7Ip2X68Ocu3" resolve="StateDone" />
-          </node>
-        </node>
-        <node concept="3x7ZJP" id="5cR9puhI8YB" role="1y4i0p">
-          <ref role="35c_gD" to="plfp:7mG7sQPy9qR" resolve="CCTag" />
-          <node concept="35c_gC" id="5cR9puhI8YC" role="2DkB7w">
-            <ref role="35c_gD" to="iuxj:5M4a$b5jfOs" resolve="XmlValuePart" />
-          </node>
+      <node concept="3x7ZJP" id="6IVOdeOQ_eP" role="32A5R0">
+        <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryDefinedProperty" />
+        <node concept="35c_gC" id="6IVOdeOQ_eQ" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryDefinedProperty" />
         </node>
       </node>
-      <node concept="32A5RN" id="5cR9puhI8YD" role="32A5RK">
+      <node concept="32A5RN" id="6IVOdeOQ_eR" role="32A5RK">
         <ref role="32A5RM" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
       </node>
     </node>
-    <node concept="32AK39" id="5cR9puhI8YE" role="32A5Rq">
+    <node concept="32AK39" id="6IVOdeOQ_eS" role="32A5Rq">
       <property role="32A5R2" value="GlossaryItemsNotCreated" />
-      <node concept="3x7ZJP" id="5cR9puhI8YF" role="32A5R0">
-        <ref role="35c_gD" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
-        <node concept="35c_gC" id="5cR9puhI8YG" role="2DkB7w">
-          <ref role="35c_gD" to="xwgo:5cR9puhF2lu" resolve="State" />
+      <node concept="3x7ZJP" id="6IVOdeOQ_eT" role="32A5R0">
+        <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="NameRequirementsNotNullProperty" />
+        <node concept="35c_gC" id="6IVOdeOQ_eU" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="NameRequirementsNotNullProperty" />
         </node>
       </node>
-      <node concept="32A5RN" id="5cR9puhI8YH" role="32A5RK">
+      <node concept="32A5RN" id="6IVOdeOQ_eV" role="32A5RK">
         <ref role="32A5RM" to="tpee:gEShaYr" resolve="AbstractCreator" />
       </node>
     </node>
