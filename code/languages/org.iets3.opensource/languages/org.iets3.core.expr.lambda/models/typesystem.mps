@@ -64,7 +64,6 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -285,7 +284,6 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -721,7 +719,7 @@
           <node concept="TSZUe" id="2S3ZC$oA$_S" role="2OqNvi">
             <node concept="2OqwBi" id="2S3ZC$oA$Cm" role="25WWJ7">
               <node concept="1PxgMI" id="2S3ZC$oA$Cn" role="2Oq$k0">
-                <ref role="1m5ApE" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+                <ref role="1m5ApE" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
                 <node concept="2OqwBi" id="2S3ZC$oA$Co" role="1m5AlR">
                   <node concept="1YBJjd" id="2S3ZC$oA$Cp" role="2Oq$k0">
                     <ref role="1YBMHb" node="6zmBjqUm84F" resolve="sle" />
@@ -899,7 +897,7 @@
           <property role="TrG5h" value="node" />
           <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="7nOkKwyOT7J" role="1tU5fm">
-            <ref role="ehGHo" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+            <ref role="ehGHo" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
           </node>
           <node concept="2OqwBi" id="7nOkKwyOT7R" role="33vP2m">
             <node concept="1YBJjd" id="7nOkKwyOT7S" role="2Oq$k0">
@@ -908,7 +906,7 @@
             <node concept="2Xjw5R" id="7nOkKwyPeRo" role="2OqNvi">
               <node concept="1xMEDy" id="7nOkKwyPeRq" role="1xVPHs">
                 <node concept="chp4Y" id="7nOkKwyPeTL" role="ri$Ld">
-                  <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+                  <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
                 </node>
               </node>
             </node>
@@ -2367,54 +2365,6 @@
                 </node>
                 <node concept="1YBJjd" id="ZV9S9WvAV4" role="2OEOjV">
                   <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
-                </node>
-              </node>
-            </node>
-            <node concept="9aQIb" id="2uR5X5azRf4" role="9aQIa">
-              <node concept="3clFbS" id="2uR5X5azRf5" role="9aQI4">
-                <node concept="3cpWs8" id="2uR5X5azRO0" role="3cqZAp">
-                  <node concept="3cpWsn" id="2uR5X5azRO1" role="3cpWs9">
-                    <property role="TrG5h" value="firstArg" />
-                    <node concept="3Tqbb2" id="2uR5X5azRNZ" role="1tU5fm">
-                      <ref role="ehGHo" to="zzzn:49WTic8eSD1" resolve="FunctionArgument" />
-                    </node>
-                    <node concept="2OqwBi" id="2uR5X5azRO2" role="33vP2m">
-                      <node concept="2OqwBi" id="2uR5X5azRO3" role="2Oq$k0">
-                        <node concept="1YBJjd" id="ZV9S9WvB8h" role="2Oq$k0">
-                          <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
-                        </node>
-                        <node concept="3Tsc0h" id="2uR5X5azRO5" role="2OqNvi">
-                          <ref role="3TtcxE" to="zzzn:49WTic8eSCZ" resolve="args" />
-                        </node>
-                      </node>
-                      <node concept="1uHKPH" id="2uR5X5azRO6" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="2uR5X5azN72" role="3cqZAp">
-                  <node concept="3clFbS" id="2uR5X5azN74" role="3clFbx">
-                    <node concept="a7r0C" id="2uR5X5azRK0" role="3cqZAp">
-                      <node concept="Xl_RD" id="2uR5X5azRKr" role="a7wSD">
-                        <property role="Xl_RC" value="first argument should be called 'this'" />
-                      </node>
-                      <node concept="37vLTw" id="2uR5X5azRUg" role="2OEOjV">
-                        <ref role="3cqZAo" node="2uR5X5azRO1" resolve="firstArg" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="17QLQc" id="2uR5X5azRxZ" role="3clFbw">
-                    <node concept="2OqwBi" id="2uR5X5azQJD" role="3uHU7B">
-                      <node concept="37vLTw" id="2uR5X5azRO7" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2uR5X5azRO1" resolve="firstArg" />
-                      </node>
-                      <node concept="3TrcHB" id="2uR5X5azQUu" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="2uR5X5azRvW" role="3uHU7w">
-                      <property role="Xl_RC" value="this" />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

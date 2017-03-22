@@ -173,7 +173,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
     <node concept="1TJgyj" id="19PglA20qXS" role="1TKVEi">
       <property role="IQ2ns" value="1330041117646892920" />
       <property role="20lmBu" value="aggregation" />
@@ -272,6 +272,24 @@
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cK3QOdYQ7C">
+    <property role="EcuMT" value="5994308065090560488" />
+    <property role="TrG5h" value="StringLengthTarget" />
+    <property role="34LRSv" value="length" />
+    <property role="3GE5qa" value="string" />
+    <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="5cK3QOdYQ7D">
+    <property role="EcuMT" value="5994308065090560489" />
+    <property role="3GE5qa" value="string" />
+    <property role="TrG5h" value="AbstractStringDotTarget" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5cK3QOe1K5t" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>

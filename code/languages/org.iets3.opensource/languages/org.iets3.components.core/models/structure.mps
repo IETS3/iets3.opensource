@@ -341,6 +341,9 @@
     <node concept="PrWs8" id="siw10FiR6l" role="PzmwI">
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
+    <node concept="PrWs8" id="6Z4vEhQZ6sI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
     <node concept="1QGGSu" id="cEt5uj8Nnj" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/instance.png" />
     </node>

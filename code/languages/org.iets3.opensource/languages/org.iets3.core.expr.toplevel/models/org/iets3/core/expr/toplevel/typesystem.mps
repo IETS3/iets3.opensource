@@ -1649,7 +1649,7 @@
             <node concept="1PxgMI" id="7Xf3oOLUYCw" role="37vLTx">
               <ref role="1m5ApE" to="hm2y:6sdnDbSlaok" resolve="Type" />
               <node concept="2YIFZM" id="7Xf3oOM1BZ_" role="1m5AlR">
-                <ref role="37wK5l" to="t4jv:12WRc293zuo" resolve="computeSupertype" />
+                <ref role="37wK5l" to="t4jv:12WRc293zuo" resolve="computeRegularSupertype" />
                 <ref role="1Pybhc" to="t4jv:12WRc28WG_m" resolve="TypingHelper" />
                 <node concept="2OqwBi" id="7Xf3oOLUYff" role="37wK5m">
                   <node concept="2OqwBi" id="7Xf3oOLUYfg" role="2Oq$k0">

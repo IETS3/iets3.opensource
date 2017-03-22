@@ -80,8 +80,8 @@
       <property role="IQ2ns" value="7554398283339749510" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="3oWFox977Ob" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3oWFox95OXG" resolve="IHasBaseType" />
+    <node concept="PrWs8" id="5WNmJ7DoRmE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5WNmJ7DoRmx" resolve="ICollectionType" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
@@ -297,9 +297,6 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265514351708" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
-    <node concept="PrWs8" id="7GwCuf2AkLu" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2E2W0">
     <property role="3GE5qa" value="" />
@@ -719,6 +716,12 @@
     <node concept="PrWs8" id="7SZA7UeV1I$" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2dOqIOtJZ98">
+    <property role="EcuMT" value="2554784455264825928" />
+    <property role="TrG5h" value="FlattenOp" />
+    <property role="34LRSv" value="flatten" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
 </model>
 
