@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -608,9 +608,6 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="IAttemptType" />
     <property role="EcuMT" value="1919538606562038159" />
-    <node concept="PrWs8" id="6bG6MAG4L_P" role="PrDN$">
-      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="TrG5h" value="AttemptType" />
@@ -622,6 +619,9 @@
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+    <node concept="PrWs8" id="7rIKkhJfXLJ" role="PzmwI">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
     </node>
     <node concept="1TJgyj" id="12WRc28Xz6j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
