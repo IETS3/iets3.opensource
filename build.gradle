@@ -128,7 +128,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
-
+ 
 publishing {
     repositories {
         maven {
@@ -153,11 +153,20 @@ publishing {
             artifact packageOpenSource
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.allDependencies.each {
+                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.group)
-                    dependencyNode.appendNode('artifactId', it.name)
-                    dependencyNode.appendNode('version', it.version)
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
                 }
             }
         }
@@ -165,6 +174,16 @@ publishing {
             groupId 'org.iets3.opensource'
             artifactId 'tests'
             artifact packageTests
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+            }
         }
     }
 }

@@ -602,8 +602,8 @@
           </node>
         </node>
         <node concept="2iRfu4" id="6HHp2WmTD6N" role="2iSdaV" />
-        <node concept="3F0ifn" id="ub9nkyHAcc" role="3EZMnx">
-          <property role="3F0ifm" value="assert" />
+        <node concept="PMmxH" id="14JXsMcwWyM" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3tD6jV" id="6HHp2WmV4LT" role="3F10Kt">
