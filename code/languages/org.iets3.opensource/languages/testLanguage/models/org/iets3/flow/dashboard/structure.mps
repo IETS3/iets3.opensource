@@ -95,5 +95,11 @@
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="23Wc6usReTa">
+    <property role="EcuMT" value="2376827924916268618" />
+    <property role="TrG5h" value="DashboardHintDisplayer" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
