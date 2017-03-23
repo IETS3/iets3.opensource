@@ -12,6 +12,7 @@
     <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.property.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
+    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -64,7 +65,7 @@
     <node concept="ulkQJ" id="38QI5jjP83F" role="ulkQK">
       <property role="TrG5h" value="Instance Check " />
       <node concept="fI48x" id="4Wfjtx1_kus" role="fI48E">
-        <ref role="fxKJO" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+        <ref role="fxKJO" to="q3w4:5QnDqxDaSpr" resolve="RequirementChunk" />
       </node>
       <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
         <property role="fwOFb" value="Create New Requirement Instance" />
@@ -94,6 +95,9 @@
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
           </node>
         </node>
+      </node>
+      <node concept="fI48x" id="18xeVvsLlS6" role="fI48E">
+        <ref role="fxKJO" to="q3w4:7vMAitzBZN" resolve="GlossaryChunk" />
       </node>
     </node>
     <node concept="pHN19" id="2V4emM7$EFE" role="2Dlz8l">
