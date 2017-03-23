@@ -62,7 +62,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="bool" />
     <property role="EcuMT" value="7425695345928358742" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHp">
     <property role="TrG5h" value="TrueLiteral" />
@@ -103,7 +103,7 @@
     <property role="3GE5qa" value="numeric" />
     <property role="TrG5h" value="NumberLiteral" />
     <property role="EcuMT" value="5115872837157054170" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
     <node concept="1TJgyi" id="4rZeNQ6Oert" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <property role="IQ2nx" value="5115872837157054173" />
@@ -135,7 +135,7 @@
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="EcuMT" value="5115872837157252552" />
-    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+    <ref role="1TJDcQ" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
     <node concept="1TJgyi" id="4rZeNQ6OYRb" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <property role="IQ2nx" value="5115872837157252555" />
@@ -173,7 +173,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
-    <ref role="1TJDcQ" node="4rZeNQ6Oero" resolve="NumericType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="19PglA20qXS" role="1TKVEi">
       <property role="IQ2ns" value="1330041117646892920" />
       <property role="20lmBu" value="aggregation" />

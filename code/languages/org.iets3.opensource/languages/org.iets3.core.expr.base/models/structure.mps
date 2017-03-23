@@ -358,7 +358,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7halHeUzscN">
-    <property role="TrG5h" value="AbstractLiteral" />
+    <property role="TrG5h" value="PrimitiveLiteral" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8379605524044170035" />
