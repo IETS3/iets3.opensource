@@ -8,6 +8,7 @@
   <imports>
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -38,6 +39,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="74$6THn$Pg4" role="PzmwI">
       <ref role="PrY4T" to="w9y2:6LfBX8Yl7GJ" resolve="IKindSpecific" />
+    </node>
+    <node concept="PrWs8" id="74$6THnHdei" role="PzmwI">
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
   </node>
 </model>
