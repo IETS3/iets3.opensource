@@ -1795,6 +1795,17 @@
           <property role="3LESm3" value="e9972448-367f-4d01-847c-58c6d4119a6b" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="4OJRBT_t1xx" role="3bR37C">
+          <node concept="3bR9La" id="4OJRBT_t1xy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRRr" resolve="org.iets3.components.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4OJRBT_t1xz" role="3bR37C">
+          <node concept="1Busua" id="4OJRBT_t1x$" role="1SiIV1">
+            <ref role="1Busuk" node="78hTg1zaYCc" resolve="org.iets3.core.attributes" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wLtKNeSRR9" role="2G$12L">
         <property role="BnDLt" value="true" />
