@@ -390,6 +390,7 @@
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -3486,23 +3487,6 @@
       <ref role="13i0hy" node="4Y0vh0cfqjE" resolve="renderReadable" />
       <node concept="3Tm1VV" id="2rOWEwsFv5G" role="1B3o_S" />
       <node concept="3clFbS" id="2rOWEwsFv5J" role="3clF47">
-        <node concept="3cpWs8" id="HywGhj7SKz" role="3cqZAp">
-          <node concept="3cpWsn" id="HywGhj7SKA" role="3cpWs9">
-            <property role="TrG5h" value="q" />
-            <node concept="17QB3L" id="HywGhj7SKx" role="1tU5fm" />
-            <node concept="3K4zz7" id="HywGhj7SQo" role="33vP2m">
-              <node concept="Xl_RD" id="HywGhj7SQO" role="3K4E3e">
-                <property role="Xl_RC" value="?" />
-              </node>
-              <node concept="Xl_RD" id="HywGhj7SRl" role="3K4GZi">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="BsUDl" id="HywGhj7SO3" role="3K4Cdx">
-                <ref role="37wK5l" node="5ye9uPrikT6" resolve="isQuery" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2rOWEwsFv6b" role="3cqZAp">
           <node concept="3cpWs3" id="2rOWEwsFvwL" role="3clFbG">
             <node concept="Xl_RD" id="2rOWEwsFvwO" role="3uHU7w">
@@ -3514,7 +3498,7 @@
                   <property role="Xl_RC" value="(" />
                 </node>
                 <node concept="Xl_RD" id="2rOWEwsFv6a" role="3uHU7B">
-                  <property role="Xl_RC" value="some?" />
+                  <property role="Xl_RC" value="some" />
                 </node>
               </node>
               <node concept="2OqwBi" id="2rOWEwsFvno" role="3uHU7w">
@@ -3621,13 +3605,23 @@
       </node>
     </node>
     <node concept="13i0hz" id="5ye9uPrikT6" role="13h7CS">
-      <property role="TrG5h" value="isQuery" />
+      <property role="TrG5h" value="isInDerefContext" />
       <node concept="3Tm1VV" id="5ye9uPrikT7" role="1B3o_S" />
       <node concept="10P_77" id="5ye9uPrikYF" role="3clF45" />
       <node concept="3clFbS" id="5ye9uPrikT9" role="3clF47">
-        <node concept="3clFbF" id="7ZvWWnqJ$pf" role="3cqZAp">
-          <node concept="3clFbT" id="7ZvWWnqJ$pe" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="2q1ydqPVyC$" role="3cqZAp">
+          <node concept="2OqwBi" id="2q1ydqPVyOk" role="3clFbG">
+            <node concept="2OqwBi" id="2q1ydqPVyCA" role="2Oq$k0">
+              <node concept="13iPFW" id="2q1ydqPVyCB" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2q1ydqPVyCC" role="2OqNvi">
+                <node concept="1xMEDy" id="2q1ydqPVyCD" role="1xVPHs">
+                  <node concept="chp4Y" id="2q1ydqPVyCE" role="ri$Ld">
+                    <ref role="cht4Q" to="hm2y:5ye9uPrgbPQ" resolve="IOptionDerefContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2q1ydqPVz6o" role="2OqNvi" />
           </node>
         </node>
       </node>

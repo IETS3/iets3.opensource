@@ -80,7 +80,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1162,38 +1161,6 @@
                     <node concept="1YBJjd" id="5ye9uPrghHN" role="1Z2MuG">
                       <ref role="1YBMHb" node="2rOWEwsF5Ak" resolve="se" />
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs8" id="5ye9uPrgkR7" role="3cqZAp">
-                <node concept="3cpWsn" id="5ye9uPrgkR8" role="3cpWs9">
-                  <property role="TrG5h" value="invalidContextErrorMessage" />
-                  <node concept="17QB3L" id="5ye9uPrgkR5" role="1tU5fm" />
-                  <node concept="2OqwBi" id="5ye9uPrgkR9" role="33vP2m">
-                    <node concept="1YBJjd" id="5ye9uPrgkRa" role="2Oq$k0">
-                      <ref role="1YBMHb" node="2rOWEwsF5Ak" resolve="se" />
-                    </node>
-                    <node concept="2qgKlT" id="5ye9uPrgkRb" role="2OqNvi">
-                      <ref role="37wK5l" to="pbu6:5ye9uPrghTl" resolve="invalidContextErrorMessage" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbJ" id="5ye9uPrgkpS" role="3cqZAp">
-                <node concept="3clFbS" id="5ye9uPrgkpU" role="3clFbx">
-                  <node concept="2MkqsV" id="5ye9uPrgl6d" role="3cqZAp">
-                    <node concept="37vLTw" id="5ye9uPrgl7S" role="2MkJ7o">
-                      <ref role="3cqZAo" node="5ye9uPrgkR8" resolve="invalidContextErrorMessage" />
-                    </node>
-                    <node concept="1YBJjd" id="5ye9uPrgl83" role="2OEOjV">
-                      <ref role="1YBMHb" node="2rOWEwsF5Ak" resolve="se" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3y3z36" id="5ye9uPrgl35" role="3clFbw">
-                  <node concept="10Nm6u" id="5ye9uPrgl5X" role="3uHU7w" />
-                  <node concept="37vLTw" id="5ye9uPrgkY2" role="3uHU7B">
-                    <ref role="3cqZAo" node="5ye9uPrgkR8" resolve="invalidContextErrorMessage" />
                   </node>
                 </node>
               </node>
@@ -3977,7 +3944,7 @@
                 <ref role="1YBMHb" node="5ye9uPrilMI" resolve="se" />
               </node>
               <node concept="2qgKlT" id="5ye9uPrim_w" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:5ye9uPrikT6" resolve="isQuery" />
+                <ref role="37wK5l" to="pbu6:5ye9uPrikT6" resolve="isInDerefContext" />
               </node>
             </node>
           </node>
@@ -4043,7 +4010,7 @@
                 <ref role="1YBMHb" node="5ye9uPrilMI" resolve="se" />
               </node>
               <node concept="2qgKlT" id="67Y8mp$A7rd" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:5ye9uPrikT6" resolve="isQuery" />
+                <ref role="37wK5l" to="pbu6:5ye9uPrikT6" resolve="isInDerefContext" />
               </node>
             </node>
             <node concept="2OqwBi" id="67Y8mp$A81K" role="3uHU7w">
