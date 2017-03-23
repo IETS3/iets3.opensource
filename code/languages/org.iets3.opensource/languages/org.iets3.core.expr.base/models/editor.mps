@@ -1144,7 +1144,7 @@
     <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
     <node concept="3EZMnI" id="2rOWEwsF5wt" role="2wV5jI">
       <node concept="3F0ifn" id="2rOWEwsF5w$" role="3EZMnx">
-        <property role="3F0ifm" value="some" />
+        <property role="3F0ifm" value="isSome" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F0ifn" id="2rOWEwsF5wE" role="3EZMnx">

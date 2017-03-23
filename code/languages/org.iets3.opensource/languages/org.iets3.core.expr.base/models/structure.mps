@@ -509,7 +509,7 @@
   <node concept="1TIwiD" id="2rOWEwsF5w0">
     <property role="3GE5qa" value="option" />
     <property role="TrG5h" value="SomeExpression" />
-    <property role="34LRSv" value="some" />
+    <property role="34LRSv" value="isSome" />
     <property role="EcuMT" value="2807135271608145920" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">

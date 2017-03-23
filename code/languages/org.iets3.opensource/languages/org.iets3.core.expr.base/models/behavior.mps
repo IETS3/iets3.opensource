@@ -3498,7 +3498,7 @@
                   <property role="Xl_RC" value="(" />
                 </node>
                 <node concept="Xl_RD" id="2rOWEwsFv6a" role="3uHU7B">
-                  <property role="Xl_RC" value="some" />
+                  <property role="Xl_RC" value="isSome" />
                 </node>
               </node>
               <node concept="2OqwBi" id="2rOWEwsFvno" role="3uHU7w">
