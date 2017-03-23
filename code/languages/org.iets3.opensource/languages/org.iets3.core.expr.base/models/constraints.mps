@@ -18,7 +18,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -32,9 +31,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -632,46 +628,6 @@
   <node concept="1M2fIO" id="TuTPrvD1ZI">
     <property role="3GE5qa" value="targets" />
     <ref role="1M2myG" to="hm2y:2U5Q01UkDMQ" resolve="InTarget" />
-    <node concept="nKS2y" id="TuTPrvD1ZJ" role="1MLUbF">
-      <node concept="3clFbS" id="TuTPrvD1ZK" role="2VODD2">
-        <node concept="3cpWs8" id="TuTPrvD4Z0" role="3cqZAp">
-          <node concept="3cpWsn" id="TuTPrvD4Z1" role="3cpWs9">
-            <property role="TrG5h" value="tt" />
-            <node concept="3Tqbb2" id="TuTPrvD4Z2" role="1tU5fm" />
-            <node concept="2OqwBi" id="TuTPrvD4Z3" role="33vP2m">
-              <node concept="2OqwBi" id="TuTPrvD4Z4" role="2Oq$k0">
-                <node concept="1PxgMI" id="TuTPrvD4Z5" role="2Oq$k0">
-                  <ref role="1m5ApE" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-                  <node concept="nLn13" id="TuTPrvD4Z6" role="1m5AlR" />
-                </node>
-                <node concept="3TrEf2" id="TuTPrvD4Z7" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                </node>
-              </node>
-              <node concept="3JvlWi" id="TuTPrvD4Z8" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="TuTPrvD4Z9" role="3cqZAp">
-          <node concept="22lmx$" id="TuTPrvD4Za" role="3clFbG">
-            <node concept="2YIFZM" id="TuTPrvD4Zb" role="3uHU7w">
-              <ref role="37wK5l" to="oq0c:2PhSkOglBKz" resolve="isRealType" />
-              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
-              <node concept="37vLTw" id="TuTPrvD4Zc" role="37wK5m">
-                <ref role="3cqZAo" node="TuTPrvD4Z1" resolve="tt" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="TuTPrvD4Zd" role="3uHU7B">
-              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
-              <ref role="37wK5l" to="oq0c:2Qbt$1tU33e" resolve="isIntegerType" />
-              <node concept="37vLTw" id="TuTPrvD4Ze" role="37wK5m">
-                <ref role="3cqZAo" node="TuTPrvD4Z1" resolve="tt" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="5ElkanPUlEs">
     <property role="3GE5qa" value="docs" />
