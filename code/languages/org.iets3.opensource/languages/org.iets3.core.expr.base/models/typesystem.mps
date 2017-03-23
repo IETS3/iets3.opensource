@@ -7,6 +7,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -300,6 +301,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -3405,7 +3407,63 @@
   <node concept="18kY7G" id="6Mx2TmozT2w">
     <property role="TrG5h" value="check_RangeTarget" />
     <property role="3GE5qa" value="targets" />
-    <node concept="3clFbS" id="6Mx2TmozT2x" role="18ibNy" />
+    <node concept="3clFbS" id="6Mx2TmozT2x" role="18ibNy">
+      <node concept="3cpWs8" id="HywGhj4XI_" role="3cqZAp">
+        <node concept="3cpWsn" id="HywGhj4XIA" role="3cpWs9">
+          <property role="TrG5h" value="tt" />
+          <node concept="3Tqbb2" id="HywGhj4XIy" role="1tU5fm" />
+          <node concept="2OqwBi" id="5_IWTcLG8Sg" role="33vP2m">
+            <node concept="2OqwBi" id="5_IWTcLG85z" role="2Oq$k0">
+              <node concept="1PxgMI" id="5_IWTcLG7T3" role="2Oq$k0">
+                <ref role="1m5ApE" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                <node concept="2OqwBi" id="5_IWTcLG7t9" role="1m5AlR">
+                  <node concept="1YBJjd" id="5_IWTcLG7jj" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6Mx2TmozT2z" resolve="target" />
+                  </node>
+                  <node concept="1mfA1w" id="5_IWTcLG7B3" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5_IWTcLG8vZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="5_IWTcLG9dV" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5_IWTcLG9nG" role="3cqZAp">
+        <node concept="3clFbS" id="5_IWTcLG9nI" role="3clFbx">
+          <node concept="2MkqsV" id="5_IWTcLG9_o" role="3cqZAp">
+            <node concept="Xl_RD" id="5_IWTcLG9_E" role="2MkJ7o">
+              <property role="Xl_RC" value="inRange() is only applicable to int or real values." />
+            </node>
+            <node concept="1YBJjd" id="5_IWTcLG9_Q" role="2OEOjV">
+              <ref role="1YBMHb" node="6Mx2TmozT2z" resolve="target" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5_IWTcLG9vA" role="3clFbw">
+          <node concept="3fqX7Q" id="5_IWTcLG9u9" role="3uHU7B">
+            <node concept="2YIFZM" id="5_IWTcLG9ub" role="3fr31v">
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+              <ref role="37wK5l" to="oq0c:2Qbt$1tU33e" resolve="isIntegerType" />
+              <node concept="37vLTw" id="5_IWTcLG9uc" role="37wK5m">
+                <ref role="3cqZAo" node="HywGhj4XIA" resolve="tt" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5_IWTcLG9zP" role="3uHU7w">
+            <node concept="2YIFZM" id="5_IWTcLG9zR" role="3fr31v">
+              <ref role="37wK5l" to="oq0c:2PhSkOglBKz" resolve="isRealType" />
+              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+              <node concept="37vLTw" id="5_IWTcLG9zS" role="37wK5m">
+                <ref role="3cqZAo" node="HywGhj4XIA" resolve="tt" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1YaCAy" id="6Mx2TmozT2z" role="1YuTPh">
       <property role="TrG5h" value="target" />
       <ref role="1YaFvo" to="hm2y:1WCh2thoP2K" resolve="RangeTarget" />
