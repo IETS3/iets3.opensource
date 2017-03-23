@@ -40,20 +40,26 @@
   <node concept="1TIwiD" id="38QI5jjQip0">
     <property role="EcuMT" value="3618282025109759552" />
     <property role="3GE5qa" value="Properties" />
-    <property role="TrG5h" value="NameRequirementsNotNullProperty" />
-    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
-  </node>
-  <node concept="1TIwiD" id="5rwK$2qeY$S">
-    <property role="EcuMT" value="6260217064766302520" />
-    <property role="TrG5h" value="TableAndRequirementsInstanceProperty" />
-    <property role="3GE5qa" value="Properties" />
+    <property role="TrG5h" value="RequirementsChunkNotPresentProperty" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
   <node concept="1TIwiD" id="38QI5jjR3Qm">
     <property role="EcuMT" value="3618282025109962134" />
     <property role="3GE5qa" value="Properties" />
-    <property role="TrG5h" value="GlossaryDefinedProperty" />
+    <property role="TrG5h" value="GlossaryTermDefinedProperty" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
+  </node>
+  <node concept="1TIwiD" id="23Wc6usRbcI">
+    <property role="EcuMT" value="2376827924916253486" />
+    <property role="3GE5qa" value="Properties" />
+    <property role="TrG5h" value="EmptyRequirementProperty" />
+    <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
+  </node>
+  <node concept="1TIwiD" id="23Wc6usRcwc">
+    <property role="EcuMT" value="2376827924916258828" />
+    <property role="3GE5qa" value="Properties" />
+    <property role="TrG5h" value="RequirementModelErrorFreeProperty" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
