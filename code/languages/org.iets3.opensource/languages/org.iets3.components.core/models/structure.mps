@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="nzf3" ref="r:6d505875-7ed1-43f2-9546-7dbaba281532(org.iets3.components.core.role.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -123,6 +124,12 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="2065851220495953160" />
       <ref role="20lvS9" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+    </node>
+    <node concept="1TJgyj" id="4VtXW7u_URc" role="1TKVEi">
+      <property role="IQ2ns" value="5682970716846665164" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="role" />
+      <ref role="20lvS9" to="nzf3:4VtXW7u_URb" resolve="AbstractComponentRole" />
     </node>
     <node concept="1TJgyi" id="6LfBX8Yi4o4" role="1TKVEl">
       <property role="TrG5h" value="fragment" />
