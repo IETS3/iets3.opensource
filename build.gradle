@@ -14,14 +14,14 @@ if (project.hasProperty("forceCI")) {
 
 
 // Project version
-if (project.hasProperty('projectVersion')) {
-    version project.projectVersion
+if (project.hasProperty('iets3OpenSourceVersion')) {
+    version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        version GitBasedVersioning.getVersion('0', '1')
+        version = GitBasedVersioning.getVersion('0', '1')
     } else {
         println "Local build detected, version will be SNAPSHOT"
-        version "1.0-SNAPSHOT"
+        version = "1.0-SNAPSHOT"
     }
 }
 
@@ -29,13 +29,17 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
 ext.mpsVersion = '3.4.3'
-if (forceLocal) {
-    println "Local SNAPSHOT version forced"
-    ext.mbeddrVersion = '1.0-SNAPSHOT'
+
+if (!project.hasProperty("mbeddrVersion")) {
+    if (forceLocal) {
+        println "Local SNAPSHOT version forced"
+        ext.mbeddrVersion = '1.0-SNAPSHOT'
+    }
+    else {
+        ext.mbeddrVersion = '1.0+'
+    }
 }
-else {
-    ext.mbeddrVersion = '1.0.+'
-}
+
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
@@ -124,7 +128,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
-
+ 
 publishing {
     repositories {
         maven {
@@ -147,11 +151,39 @@ publishing {
             groupId 'org.iets3'
             artifactId 'opensource'
             artifact packageOpenSource
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
         }
         tests(MavenPublication) {
             groupId 'org.iets3.opensource'
             artifactId 'tests'
             artifact packageTests
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+            }
         }
     }
 }

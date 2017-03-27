@@ -5,6 +5,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,7 +14,8 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="j10v" ref="2f7e2e35-6e74-4c43-9fa5-2465d68f5996/java:org.pcollections(org.iets3.core.expr.collections/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -88,6 +90,9 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -224,11 +229,11 @@
                 <node concept="3uibUv" id="2KEm7E5F623" role="1tU5fm">
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
-                <node concept="3EllGN" id="2KEm7E5F624" role="33vP2m">
-                  <node concept="37vLTw" id="2KEm7E5F625" role="3ElVtu">
+                <node concept="3EllGN" id="1$1rueerQHP" role="33vP2m">
+                  <node concept="37vLTw" id="1$1rueerQHQ" role="3ElVtu">
                     <ref role="3cqZAo" node="2KEm7E5F61Q" resolve="ctxExpr" />
                   </node>
-                  <node concept="TvHiN" id="2KEm7E5F626" role="3ElQJh" />
+                  <node concept="TvHiN" id="1$1rueerQHR" role="3ElQJh" />
                 </node>
               </node>
             </node>
@@ -291,7 +296,7 @@
                     <node concept="3cpWs8" id="2KEm7E5F62$" role="3cqZAp">
                       <node concept="3cpWsn" id="2KEm7E5F62_" role="3cpWs9">
                         <property role="TrG5h" value="ctxList" />
-                        <node concept="3uibUv" id="2KEm7E5IsJj" role="1tU5fm">
+                        <node concept="3uibUv" id="6bG6MAFHidx" role="1tU5fm">
                           <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                         </node>
                         <node concept="1eOMI4" id="2KEm7E5F62C" role="33vP2m">
@@ -299,7 +304,7 @@
                             <node concept="37vLTw" id="2KEm7E5F62E" role="10QFUP">
                               <ref role="3cqZAo" node="2KEm7E5F622" resolve="evaluatedContext" />
                             </node>
-                            <node concept="3uibUv" id="2KEm7E5It5y" role="10QFUM">
+                            <node concept="3uibUv" id="6bG6MAFHiwl" role="10QFUM">
                               <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                             </node>
                           </node>
@@ -309,12 +314,12 @@
                     <node concept="3cpWs8" id="2KEm7E5F62H" role="3cqZAp">
                       <node concept="3cpWsn" id="2KEm7E5F62I" role="3cpWs9">
                         <property role="TrG5h" value="res" />
-                        <node concept="3uibUv" id="2KEm7E5ItlH" role="1tU5fm">
+                        <node concept="3uibUv" id="6bG6MAFHir8" role="1tU5fm">
                           <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                         </node>
                         <node concept="2YIFZM" id="2KEm7E5ItRU" role="33vP2m">
-                          <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
                           <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                          <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
                         </node>
                       </node>
                     </node>
@@ -360,14 +365,14 @@
                             <node concept="3cpWs8" id="2KEm7E5IyU6" role="3cqZAp">
                               <node concept="3cpWsn" id="2KEm7E5IyU7" role="3cpWs9">
                                 <property role="TrG5h" value="innerVec" />
-                                <node concept="3uibUv" id="2KEm7E5IyTE" role="1tU5fm">
+                                <node concept="3uibUv" id="6bG6MAFHiGK" role="1tU5fm">
                                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                                 </node>
                                 <node concept="10QFUN" id="2KEm7E5IyU8" role="33vP2m">
                                   <node concept="37vLTw" id="2KEm7E5IyU9" role="10QFUP">
                                     <ref role="3cqZAo" node="2KEm7E5IwVj" resolve="e" />
                                   </node>
-                                  <node concept="3uibUv" id="2KEm7E5IyUa" role="10QFUM">
+                                  <node concept="3uibUv" id="6bG6MAFHiUv" role="10QFUM">
                                     <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                                   </node>
                                 </node>
@@ -479,7 +484,7 @@
                             </node>
                           </node>
                           <node concept="2ZW3vV" id="2KEm7E5F63n" role="3clFbw">
-                            <node concept="3uibUv" id="2KEm7E5Ixld" role="2ZW6by">
+                            <node concept="3uibUv" id="6bG6MAFHiQC" role="2ZW6by">
                               <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                             </node>
                             <node concept="37vLTw" id="2KEm7E5Ixf6" role="2ZW6bz">
@@ -519,21 +524,35 @@
                               </node>
                               <node concept="3clFbJ" id="2KEm7E5F63C" role="3cqZAp">
                                 <node concept="3clFbS" id="2KEm7E5F63D" role="3clFbx">
-                                  <node concept="3clFbF" id="2KEm7E5IxAW" role="3cqZAp">
-                                    <node concept="37vLTI" id="2KEm7E5IxDP" role="3clFbG">
-                                      <node concept="2OqwBi" id="2KEm7E5IxGZ" role="37vLTx">
-                                        <node concept="37vLTw" id="2KEm7E5IxE5" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
-                                        </node>
-                                        <node concept="liA8E" id="2KEm7E5Iyro" role="2OqNvi">
-                                          <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
-                                          <node concept="37vLTw" id="2KEm7E5IyuC" role="37wK5m">
-                                            <ref role="3cqZAo" node="2KEm7E5F63t" resolve="v" />
+                                  <node concept="3clFbJ" id="7$ajNzjJGkY" role="3cqZAp">
+                                    <node concept="3clFbS" id="7$ajNzjJGl0" role="3clFbx">
+                                      <node concept="3clFbF" id="2KEm7E5IxAW" role="3cqZAp">
+                                        <node concept="37vLTI" id="2KEm7E5IxDP" role="3clFbG">
+                                          <node concept="2OqwBi" id="2KEm7E5IxGZ" role="37vLTx">
+                                            <node concept="37vLTw" id="2KEm7E5IxE5" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
+                                            </node>
+                                            <node concept="liA8E" id="2KEm7E5Iyro" role="2OqNvi">
+                                              <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                                              <node concept="37vLTw" id="2KEm7E5IyuC" role="37wK5m">
+                                                <ref role="3cqZAo" node="2KEm7E5F63t" resolve="v" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="37vLTw" id="2KEm7E5IxAU" role="37vLTJ">
+                                            <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="37vLTw" id="2KEm7E5IxAU" role="37vLTJ">
-                                        <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
+                                    </node>
+                                    <node concept="3fqX7Q" id="7$ajNzjJHt3" role="3clFbw">
+                                      <node concept="2ZW3vV" id="7$ajNzjJHt4" role="3fr31v">
+                                        <node concept="3uibUv" id="7$ajNzjJHt5" role="2ZW6by">
+                                          <ref role="3uigEE" to="oq0c:UN2ftLWgA8" resolve="NoneValue" />
+                                        </node>
+                                        <node concept="37vLTw" id="7$ajNzjJHt6" role="2ZW6bz">
+                                          <ref role="3cqZAo" node="2KEm7E5F63t" resolve="v" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
@@ -569,14 +588,14 @@
                     <node concept="37vLTw" id="2KEm7E5F63Q" role="2ZW6bz">
                       <ref role="3cqZAo" node="2KEm7E5F622" resolve="evaluatedContext" />
                     </node>
-                    <node concept="3uibUv" id="2KEm7E5Ists" role="2ZW6by">
+                    <node concept="3uibUv" id="6bG6MAFHj3b" role="2ZW6by">
                       <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="2ZW3vV" id="5pB$BuOrT8f" role="3clFbw">
-                <node concept="3uibUv" id="5pB$BuOrTnE" role="2ZW6by">
+                <node concept="3uibUv" id="6bG6MAFHi9I" role="2ZW6by">
                   <ref role="3uigEE" to="j10v:~PCollection" resolve="PCollection" />
                 </node>
                 <node concept="37vLTw" id="5pB$BuOrSZk" role="2ZW6bz">

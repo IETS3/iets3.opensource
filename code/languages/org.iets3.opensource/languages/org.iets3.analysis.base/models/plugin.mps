@@ -713,6 +713,16 @@
         <ref role="3uigEE" node="6rcydJjju7e" resolve="SolverAPI" />
       </node>
     </node>
+    <node concept="312cEg" id="7tOaVPfBosH" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="context" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="7tOaVPfBnPI" role="1B3o_S" />
+      <node concept="3uibUv" id="7tOaVPfBp5u" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6rcydJjjdqD" role="jymVt" />
     <node concept="3clFbW" id="6rcydJjiTE4" role="jymVt">
       <node concept="3cqZAl" id="6rcydJjiTE6" role="3clF45" />
@@ -752,6 +762,19 @@
               <node concept="Xjq3P" id="6rcydJjjCx$" role="2Oq$k0" />
               <node concept="2OwXpG" id="6rcydJjjDzb" role="2OqNvi">
                 <ref role="2Oxat5" node="6rcydJjjC4N" resolve="api" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7tOaVPfBpL7" role="3cqZAp">
+          <node concept="37vLTI" id="7tOaVPfBqFE" role="3clFbG">
+            <node concept="37vLTw" id="7tOaVPfBr8x" role="37vLTx">
+              <ref role="3cqZAo" node="7tOaVPfBmq9" resolve="context" />
+            </node>
+            <node concept="2OqwBi" id="7tOaVPfBq2i" role="37vLTJ">
+              <node concept="Xjq3P" id="7tOaVPfBpL5" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7tOaVPfBqw8" role="2OqNvi">
+                <ref role="2Oxat5" node="7tOaVPfBosH" resolve="context" />
               </node>
             </node>
           </node>
@@ -819,6 +842,12 @@
           <ref role="3uigEE" node="6rcydJjju7e" resolve="SolverAPI" />
         </node>
       </node>
+      <node concept="37vLTG" id="7tOaVPfBmq9" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7tOaVPfBmTr" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6rcydJjiT$Y" role="jymVt" />
     <node concept="2YIFZL" id="6rcydJjd8_3" role="jymVt">
@@ -841,6 +870,7 @@
                 <ref role="HV5vE" node="6rcydJjj28U" resolve="DefaultSMTLIBTranslatorDriver" />
               </node>
             </node>
+            <node concept="10Nm6u" id="7tOaVPfBrbu" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -882,6 +912,28 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6rcydJjj0Sa" role="3clF47">
+        <node concept="3clFbJ" id="7tOaVPgdJUX" role="3cqZAp">
+          <node concept="3clFbS" id="7tOaVPgdJUZ" role="3clFbx">
+            <node concept="3clFbF" id="7tOaVPgdKh1" role="3cqZAp">
+              <node concept="37vLTI" id="7tOaVPgdKu5" role="3clFbG">
+                <node concept="2ShNRf" id="7tOaVPgdKwr" role="37vLTx">
+                  <node concept="HV5vD" id="7tOaVPgdKIy" role="2ShVmc">
+                    <ref role="HV5vE" node="6rcydJjj28U" resolve="DefaultSMTLIBTranslatorDriver" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="7tOaVPgdKgZ" role="37vLTJ">
+                  <ref role="3cqZAo" node="6rcydJjj1wW" resolve="driver" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="7tOaVPgdKcl" role="3clFbw">
+            <node concept="10Nm6u" id="7tOaVPgdKdl" role="3uHU7w" />
+            <node concept="37vLTw" id="7tOaVPgdJXV" role="3uHU7B">
+              <ref role="3cqZAo" node="6rcydJjj1wW" resolve="driver" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6rcydJjjgtH" role="3cqZAp">
           <node concept="3cpWsn" id="6rcydJjjgtI" role="3cpWs9">
             <property role="TrG5h" value="instance" />
@@ -896,6 +948,9 @@
                 </node>
                 <node concept="37vLTw" id="6rcydJjjHkd" role="37wK5m">
                   <ref role="3cqZAo" node="6rcydJjjH9b" resolve="api" />
+                </node>
+                <node concept="37vLTw" id="7tOaVPfBmoz" role="37wK5m">
+                  <ref role="3cqZAo" node="7tOaVPfBmay" resolve="context" />
                 </node>
               </node>
             </node>
@@ -933,6 +988,12 @@
         <property role="TrG5h" value="driver" />
         <node concept="3uibUv" id="6rcydJjj72P" role="1tU5fm">
           <ref role="3uigEE" node="6rcydJjj1BR" resolve="SMTLIBTranslatorDriver" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7tOaVPfBmay" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7tOaVPfBmio" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
     </node>

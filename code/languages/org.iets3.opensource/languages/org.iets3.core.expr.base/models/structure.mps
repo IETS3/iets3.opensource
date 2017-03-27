@@ -9,8 +9,8 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -358,7 +358,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7halHeUzscN">
-    <property role="TrG5h" value="AbstractLiteral" />
+    <property role="TrG5h" value="PrimitiveLiteral" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8379605524044170035" />
@@ -502,11 +502,14 @@
       <property role="IQ2ns" value="2807135271607939857" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="6bG6MAFT807" role="PzmwI">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsF5w0">
     <property role="3GE5qa" value="option" />
     <property role="TrG5h" value="SomeExpression" />
-    <property role="34LRSv" value="some" />
+    <property role="34LRSv" value="isSome" />
     <property role="EcuMT" value="2807135271608145920" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="2rOWEwsF5w1" role="1TKVEi">
@@ -555,20 +558,6 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1919538606560895473" />
       <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1Ez$z58JHsy">
-    <property role="3GE5qa" value="error" />
-    <property role="TrG5h" value="SuccessExpression" />
-    <property role="34LRSv" value="success" />
-    <property role="EcuMT" value="1919538606561482530" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="1Ez$z58JHsz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="1919538606561482531" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Ez$z58L7Ek">
@@ -630,6 +619,9 @@
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
+    </node>
+    <node concept="PrWs8" id="7rIKkhJfXLJ" role="PzmwI">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
     </node>
     <node concept="1TJgyj" id="12WRc28Xz6j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1278,6 +1270,13 @@
     <property role="EcuMT" value="7093020903927062949" />
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="ISSDelegatingType" />
+  </node>
+  <node concept="PlHQZ" id="5WNmJ7DoRmx">
+    <property role="EcuMT" value="6859926652464625057" />
+    <property role="TrG5h" value="ICollectionType" />
+    <node concept="PrWs8" id="5WNmJ7DoRmC" role="PrDN$">
+      <ref role="PrY4T" node="3oWFox95OXG" resolve="IHasBaseType" />
+    </node>
   </node>
 </model>
 

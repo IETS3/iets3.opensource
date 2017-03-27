@@ -28,9 +28,15 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -145,6 +151,26 @@
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.tests.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="1$1rueeG3mp" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="av4b:1$1rueeG254" resolve="NoneExpr" />
+      <node concept="3vetai" id="1$1rueeG3FJ" role="3vQZUl">
+        <node concept="2ShNRf" id="1$1rueeG3FX" role="3vdyny">
+          <node concept="HV5vD" id="1$1rueeG3Zb" role="2ShVmc">
+            <ref role="HV5vE" to="oq0c:UN2ftLWgA8" resolve="NoneValue" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1$1rueeDopU" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="av4b:1$1rueeDiNV" resolve="OptExpression" />
+      <node concept="3vetai" id="1$1rueeDpIz" role="3vQZUl">
+        <node concept="rqRoa" id="1$1rueeDpIL" role="3vdyny">
+          <ref role="rqRob" to="av4b:1$1rueeDiNY" resolve="expr" />
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="6HHp2WmSJ3e" role="qq9xR">
@@ -511,18 +537,18 @@
                     <node concept="3uibUv" id="252QIDys56H" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
-                    <node concept="rqRoa" id="252QIDys56K" role="33vP2m">
+                    <node concept="rqRoa" id="6MNhNeU_Ybx" role="33vP2m">
                       <ref role="rqRob" to="av4b:ub9nkyHAbb" resolve="actual" />
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="252QIDys5ei" role="3cqZAp">
-                  <node concept="3cpWsn" id="252QIDys5ej" role="3cpWs9">
+                <node concept="3cpWs8" id="6MNhNeU_YEV" role="3cqZAp">
+                  <node concept="3cpWsn" id="6MNhNeU_YEW" role="3cpWs9">
                     <property role="TrG5h" value="exp" />
-                    <node concept="3uibUv" id="252QIDys5eh" role="1tU5fm">
+                    <node concept="3uibUv" id="6MNhNeU_YEX" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
-                    <node concept="rqRoa" id="252QIDys5ek" role="33vP2m">
+                    <node concept="rqRoa" id="6MNhNeUA2KM" role="33vP2m">
                       <ref role="rqRob" to="av4b:ub9nkyHAbd" resolve="expected" />
                     </node>
                   </node>
@@ -542,7 +568,7 @@
                           <ref role="3cqZAo" node="252QIDys56J" resolve="act" />
                         </node>
                         <node concept="37vLTw" id="252QIDysjZg" role="37wK5m">
-                          <ref role="3cqZAo" node="252QIDys5ej" resolve="exp" />
+                          <ref role="3cqZAo" node="6MNhNeU_YEW" resolve="exp" />
                         </node>
                       </node>
                     </node>
