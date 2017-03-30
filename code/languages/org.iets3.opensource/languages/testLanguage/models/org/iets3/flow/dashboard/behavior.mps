@@ -563,17 +563,25 @@
           <node concept="3clFbS" id="23Wc6usZo6a" role="3clFbx">
             <node concept="3cpWs6" id="23Wc6usZo6b" role="3cqZAp">
               <node concept="3fqX7Q" id="23Wc6usZsbI" role="3cqZAk">
-                <node concept="1rXfSq" id="23Wc6usZsQC" role="3fr31v">
-                  <ref role="37wK5l" node="23Wc6usTWxK" resolve="calculateFormula" />
-                  <node concept="2OqwBi" id="23Wc6usZvWa" role="37wK5m">
-                    <node concept="1PxgMI" id="23Wc6usZurq" role="2Oq$k0">
-                      <ref role="1m5ApE" to="47lw:3QsrawRgNjA" resolve="NotPropertyFormula" />
-                      <node concept="37vLTw" id="23Wc6usZtxL" role="1m5AlR">
-                        <ref role="3cqZAo" node="23Wc6usTX1T" resolve="propertyFormula" />
+                <node concept="1rXfSq" id="6mLEnnuDh32" role="3fr31v">
+                  <ref role="37wK5l" node="23Wc6usTQFM" resolve="calculateMethodByNodeName" />
+                  <node concept="2OqwBi" id="6mLEnnuDo5h" role="37wK5m">
+                    <node concept="1PxgMI" id="6mLEnnuDnfp" role="2Oq$k0">
+                      <ref role="1m5ApE" to="47lw:6$igfY83rGa" resolve="AtomicProperty" />
+                      <node concept="2OqwBi" id="6mLEnnuDjwI" role="1m5AlR">
+                        <node concept="1PxgMI" id="6mLEnnuDiLa" role="2Oq$k0">
+                          <ref role="1m5ApE" to="47lw:3QsrawRgNjA" resolve="NotPropertyFormula" />
+                          <node concept="37vLTw" id="6mLEnnuDhlk" role="1m5AlR">
+                            <ref role="3cqZAo" node="23Wc6usTX1T" resolve="propertyFormula" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="6mLEnnuDlfq" role="2OqNvi">
+                          <ref role="3Tt5mk" to="47lw:2t59Tl5l0uf" resolve="arg" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="23Wc6usZwOh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="47lw:2t59Tl5l0uf" resolve="arg" />
+                    <node concept="3TrEf2" id="6mLEnnuDoUy" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tp25:2iMJRNxweHl" resolve="conceptDeclaration" />
                     </node>
                   </node>
                 </node>
