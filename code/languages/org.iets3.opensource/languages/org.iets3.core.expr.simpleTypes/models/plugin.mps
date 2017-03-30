@@ -57,10 +57,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -2113,24 +2109,19 @@
             </node>
           </node>
           <node concept="liA8E" id="5BKAaizE7D2" role="2OqNvi">
-            <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,java.math.MathContext):java.math.BigDecimal" resolve="divide" />
+            <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,int,java.math.RoundingMode):java.math.BigDecimal" resolve="divide" />
             <node concept="3mbyVD" id="6MNhNeUK5lH" role="37wK5m">
               <node concept="rqRoa" id="6MNhNeUK5lG" role="3m9KPI">
                 <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
               </node>
             </node>
-            <node concept="2ShNRf" id="7kyIuXq$6vG" role="37wK5m">
-              <node concept="1pGfFk" id="7kyIuXq$7Je" role="2ShVmc">
-                <ref role="37wK5l" to="xlxw:~MathContext.&lt;init&gt;(int,java.math.RoundingMode)" resolve="MathContext" />
-                <node concept="10M0yZ" id="7kyIuXq$8EZ" role="37wK5m">
-                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                </node>
-                <node concept="Rm8GO" id="6rdp$3yg0b4" role="37wK5m">
-                  <ref role="Rm8GQ" to="xlxw:~RoundingMode.UP" resolve="UP" />
-                  <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
-                </node>
-              </node>
+            <node concept="10M0yZ" id="7kyIuXq$8EZ" role="37wK5m">
+              <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+              <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+            </node>
+            <node concept="10M0yZ" id="4Yc4IDSC$5m" role="37wK5m">
+              <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DIV_ROUNDING" />
+              <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
             </node>
           </node>
         </node>
