@@ -924,5 +924,11 @@
       <property role="3F0ifm" value="counter" />
     </node>
   </node>
+  <node concept="24kQdi" id="5$4k7YFgD1c">
+    <ref role="1XX52x" to="700h:5$4k7YFgD0B" resolve="AsSingletonList" />
+    <node concept="3F0ifn" id="5$4k7YFgD1k" role="2wV5jI">
+      <property role="3F0ifm" value="toList" />
+    </node>
+  </node>
 </model>
 

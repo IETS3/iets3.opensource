@@ -35,8 +35,8 @@
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
@@ -391,6 +391,7 @@
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -2244,7 +2245,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7halHeUzsde">
-    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+    <ref role="13h7C2" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
     <node concept="13hLZK" id="7halHeUzsdf" role="13h7CW">
       <node concept="3clFbS" id="7halHeUzsdg" role="2VODD2" />
     </node>
@@ -2262,6 +2263,14 @@
         </node>
       </node>
       <node concept="10P_77" id="7halHeUzsdm" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2q1ydqQjSPO" role="13h7CS">
+      <property role="TrG5h" value="getStringValue" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2q1ydqQjSPP" role="1B3o_S" />
+      <node concept="17QB3L" id="2q1ydqQjSQv" role="3clF45" />
+      <node concept="3clFbS" id="2q1ydqQjSPR" role="3clF47" />
     </node>
   </node>
   <node concept="13h7C7" id="6rGLT0TevFa">
@@ -3164,6 +3173,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5$4k7YF210z" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="fallBackToSimpleTyping" />
+      <node concept="3Tm1VV" id="5$4k7YF210$" role="1B3o_S" />
+      <node concept="10P_77" id="5$4k7YF25Nz" role="3clF45" />
+      <node concept="3clFbS" id="5$4k7YF210A" role="3clF47">
+        <node concept="3clFbF" id="5$4k7YF25OB" role="3cqZAp">
+          <node concept="3clFbT" id="5$4k7YF25OA" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="6kR0qIbI2yg" role="13h7CW">
       <node concept="3clFbS" id="6kR0qIbI2yh" role="2VODD2" />
     </node>
@@ -3487,23 +3510,6 @@
       <ref role="13i0hy" node="4Y0vh0cfqjE" resolve="renderReadable" />
       <node concept="3Tm1VV" id="2rOWEwsFv5G" role="1B3o_S" />
       <node concept="3clFbS" id="2rOWEwsFv5J" role="3clF47">
-        <node concept="3cpWs8" id="HywGhj7SKz" role="3cqZAp">
-          <node concept="3cpWsn" id="HywGhj7SKA" role="3cpWs9">
-            <property role="TrG5h" value="q" />
-            <node concept="17QB3L" id="HywGhj7SKx" role="1tU5fm" />
-            <node concept="3K4zz7" id="HywGhj7SQo" role="33vP2m">
-              <node concept="Xl_RD" id="HywGhj7SQO" role="3K4E3e">
-                <property role="Xl_RC" value="?" />
-              </node>
-              <node concept="Xl_RD" id="HywGhj7SRl" role="3K4GZi">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="BsUDl" id="HywGhj7SO3" role="3K4Cdx">
-                <ref role="37wK5l" node="5ye9uPrikT6" resolve="isQuery" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2rOWEwsFv6b" role="3cqZAp">
           <node concept="3cpWs3" id="2rOWEwsFvwL" role="3clFbG">
             <node concept="Xl_RD" id="2rOWEwsFvwO" role="3uHU7w">
@@ -3511,11 +3517,11 @@
             </node>
             <node concept="3cpWs3" id="2rOWEwsFv8_" role="3uHU7B">
               <node concept="3cpWs3" id="HywGhj7SWB" role="3uHU7B">
-                <node concept="Xl_RD" id="2rOWEwsFv6a" role="3uHU7B">
-                  <property role="Xl_RC" value="some?" />
-                </node>
                 <node concept="Xl_RD" id="HywGhj7SWE" role="3uHU7w">
                   <property role="Xl_RC" value="(" />
+                </node>
+                <node concept="Xl_RD" id="2rOWEwsFv6a" role="3uHU7B">
+                  <property role="Xl_RC" value="isSome" />
                 </node>
               </node>
               <node concept="2OqwBi" id="2rOWEwsFvno" role="3uHU7w">
@@ -3622,13 +3628,23 @@
       </node>
     </node>
     <node concept="13i0hz" id="5ye9uPrikT6" role="13h7CS">
-      <property role="TrG5h" value="isQuery" />
+      <property role="TrG5h" value="isInDerefContext" />
       <node concept="3Tm1VV" id="5ye9uPrikT7" role="1B3o_S" />
       <node concept="10P_77" id="5ye9uPrikYF" role="3clF45" />
       <node concept="3clFbS" id="5ye9uPrikT9" role="3clF47">
-        <node concept="3clFbF" id="7ZvWWnqJ$pf" role="3cqZAp">
-          <node concept="3clFbT" id="7ZvWWnqJ$pe" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="2q1ydqPVyC$" role="3cqZAp">
+          <node concept="2OqwBi" id="2q1ydqPVyOk" role="3clFbG">
+            <node concept="2OqwBi" id="2q1ydqPVyCA" role="2Oq$k0">
+              <node concept="13iPFW" id="2q1ydqPVyCB" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2q1ydqPVyCC" role="2OqNvi">
+                <node concept="1xMEDy" id="2q1ydqPVyCD" role="1xVPHs">
+                  <node concept="chp4Y" id="2q1ydqPVyCE" role="ri$Ld">
+                    <ref role="cht4Q" to="hm2y:5ye9uPrgbPQ" resolve="IOptionDerefContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2q1ydqPVz6o" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -6072,26 +6088,6 @@
           </node>
         </node>
         <node concept="SfApY" id="6iqfHNCcHw7" role="3cqZAp">
-          <node concept="TDmWw" id="6MNhNeUA8Fv" role="TEbGg">
-            <node concept="3cpWsn" id="6MNhNeUA8Fw" role="TDEfY">
-              <property role="TrG5h" value="stopEx" />
-              <node concept="3uibUv" id="6MNhNeUA8ZD" role="1tU5fm">
-                <ref role="3uigEE" to="2ahs:6MNhNeUeNix" resolve="StopAndReturnException" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="6MNhNeUA8Fy" role="TDEfX">
-              <node concept="3cpWs6" id="6MNhNeUA9AF" role="3cqZAp">
-                <node concept="2OqwBi" id="6MNhNeUAa5d" role="3cqZAk">
-                  <node concept="37vLTw" id="6MNhNeUA9DX" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6MNhNeUA8Fw" resolve="stopEx" />
-                  </node>
-                  <node concept="liA8E" id="6MNhNeUAaCI" role="2OqNvi">
-                    <ref role="37wK5l" to="2ahs:6MNhNeUeYe3" resolve="value" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="6iqfHNCcHw9" role="SfCbr">
             <node concept="3cpWs8" id="6iqfHNBVsHa" role="3cqZAp">
               <node concept="3cpWsn" id="6iqfHNBVsHb" role="3cpWs9">
@@ -6127,6 +6123,26 @@
                   </node>
                   <node concept="37vLTw" id="4_qY3E5J0hH" role="37wK5m">
                     <ref role="3cqZAo" node="4_qY3E5IZkd" resolve="coverage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6MNhNeUA8Fv" role="TEbGg">
+            <node concept="3cpWsn" id="6MNhNeUA8Fw" role="TDEfY">
+              <property role="TrG5h" value="stopEx" />
+              <node concept="3uibUv" id="6MNhNeUA8ZD" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:6MNhNeUeNix" resolve="StopAndReturnException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="6MNhNeUA8Fy" role="TDEfX">
+              <node concept="3cpWs6" id="6MNhNeUA9AF" role="3cqZAp">
+                <node concept="2OqwBi" id="6MNhNeUAa5d" role="3cqZAk">
+                  <node concept="37vLTw" id="6MNhNeUA9DX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6MNhNeUA8Fw" resolve="stopEx" />
+                  </node>
+                  <node concept="liA8E" id="6MNhNeUAaCI" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:6MNhNeUeYe3" resolve="value" />
                   </node>
                 </node>
               </node>
@@ -9509,7 +9525,7 @@
                   </node>
                   <node concept="1mIQ4w" id="ucawTXV4kf" role="2OqNvi">
                     <node concept="chp4Y" id="ucawTYaWxI" role="cj9EA">
-                      <ref role="cht4Q" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+                      <ref role="cht4Q" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
                     </node>
                   </node>
                 </node>
@@ -11354,12 +11370,6 @@
             </node>
           </node>
           <node concept="3clFbJ" id="RaqQlV8SL2" role="3cqZAp">
-            <node concept="3y3z36" id="7gXespLqRcu" role="3clFbw">
-              <node concept="37vLTw" id="RaqQlV8SUg" role="3uHU7B">
-                <ref role="3cqZAo" node="RaqQlV8BdI" resolve="s" />
-              </node>
-              <node concept="10Nm6u" id="RaqQlV8T5A" role="3uHU7w" />
-            </node>
             <node concept="3clFbS" id="RaqQlV8SL4" role="3clFbx">
               <node concept="3clFbF" id="RaqQlV8BdN" role="3cqZAp">
                 <node concept="2OqwBi" id="RaqQlV8BdO" role="3clFbG">
@@ -11374,6 +11384,12 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="3y3z36" id="7gXespLqRcu" role="3clFbw">
+              <node concept="37vLTw" id="RaqQlV8SUg" role="3uHU7B">
+                <ref role="3cqZAo" node="RaqQlV8BdI" resolve="s" />
+              </node>
+              <node concept="10Nm6u" id="RaqQlV8T5A" role="3uHU7w" />
             </node>
           </node>
         </node>

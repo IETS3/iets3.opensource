@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -636,9 +636,9 @@
       <property role="TrG5h" value="hasChangedAndMustBeRechecked" />
       <node concept="3Tm1VV" id="6MJy$PGsBKC" role="1B3o_S" />
       <node concept="3clFbS" id="6MJy$PGsBKD" role="3clF47">
-        <node concept="3clFbF" id="6MJy$PGsBLq" role="3cqZAp">
-          <node concept="3clFbT" id="6MJy$PGsBLp" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="2q1ydqPZZi9" role="3cqZAp">
+          <node concept="3clFbT" id="2q1ydqPZZi8" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -950,11 +950,6 @@
       <ref role="13i0hy" node="6MJy$PGsBKB" resolve="hasChangedAndMustBeRechecked" />
       <node concept="3Tm1VV" id="6MJy$PGsBM0" role="1B3o_S" />
       <node concept="3clFbS" id="6MJy$PGsBM5" role="3clF47">
-        <node concept="3SKdUt" id="gfkcMGIAFl" role="3cqZAp">
-          <node concept="3SKdUq" id="gfkcMGIAFn" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: QuickFix - the problem ist that raising a warning on change causes a lot of NodeTests to fail. Find a proper way of handling this in test contexts and re-enable." />
-          </node>
-        </node>
         <node concept="1X3_iC" id="gfkcMGIs7E" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -964,6 +959,11 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="gfkcMGIAFl" role="3cqZAp">
+          <node concept="3SKdUq" id="gfkcMGIAFn" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: QuickFix - the problem ist that raising a warning on change causes a lot of NodeTests to fail. Find a proper way of handling this in test contexts and re-enable." />
+          </node>
+        </node>
         <node concept="3clFbF" id="gfkcMGIs88" role="3cqZAp">
           <node concept="3clFbT" id="gfkcMGIs87" role="3clFbG">
             <property role="3clFbU" value="false" />
@@ -971,21 +971,6 @@
         </node>
       </node>
       <node concept="10P_77" id="6MJy$PGsBM6" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6MJy$PGsBZZ" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="canDetectChange" />
-      <ref role="13i0hy" node="6MJy$PGsBY8" resolve="canDetectChange" />
-      <node concept="3Tm1VV" id="6MJy$PGsC00" role="1B3o_S" />
-      <node concept="3clFbS" id="6MJy$PGsC05" role="3clF47">
-        <node concept="3clFbF" id="6MJy$PGsC4M" role="3cqZAp">
-          <node concept="3clFbT" id="6MJy$PGsC4L" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="6MJy$PGsC06" role="3clF45" />
     </node>
   </node>
   <node concept="3HP615" id="5zG5$Lyex1G">

@@ -3694,5 +3694,115 @@
       <ref role="1YaFvo" to="700h:2dOqIOtJZ98" resolve="FlattenOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5$4k7YFgI9s">
+    <property role="TrG5h" value="typeof_AsSingletonList" />
+    <node concept="3clFbS" id="5$4k7YFgI9t" role="18ibNy">
+      <node concept="nvevp" id="5$4k7YFgI9J" role="3cqZAp">
+        <node concept="3clFbS" id="5$4k7YFgI9K" role="nvhr_">
+          <node concept="3clFbJ" id="5$4k7YFgIAL" role="3cqZAp">
+            <node concept="2OqwBi" id="5$4k7YFgL3s" role="3clFbw">
+              <node concept="2X3wrD" id="5$4k7YFgIB0" role="2Oq$k0">
+                <ref role="2X3Bk0" node="5$4k7YFgI9M" resolve="ctxType" />
+              </node>
+              <node concept="1mIQ4w" id="5$4k7YFgLgD" role="2OqNvi">
+                <node concept="chp4Y" id="5$4k7YFgLiu" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="5$4k7YFgIAN" role="3clFbx">
+              <node concept="1Z5TYs" id="5$4k7YFgL$7" role="3cqZAp">
+                <node concept="mw_s8" id="5$4k7YFgL$z" role="1ZfhKB">
+                  <node concept="2pJPEk" id="5$4k7YFgL$v" role="mwGJk">
+                    <node concept="2pJPED" id="5$4k7YFgL$L" role="2pJPEn">
+                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+                      <node concept="2pIpSj" id="5$4k7YFgL_T" role="2pJxcM">
+                        <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                        <node concept="36biLy" id="5$4k7YFgLA_" role="2pJxcZ">
+                          <node concept="2OqwBi" id="5$4k7YFgMoS" role="36biLW">
+                            <node concept="2OqwBi" id="5$4k7YFgLUf" role="2Oq$k0">
+                              <node concept="1PxgMI" id="5$4k7YFgLIC" role="2Oq$k0">
+                                <ref role="1m5ApE" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+                                <node concept="2X3wrD" id="5$4k7YFgLAM" role="1m5AlR">
+                                  <ref role="2X3Bk0" node="5$4k7YFgI9M" resolve="ctxType" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="5$4k7YFgM4O" role="2OqNvi">
+                                <ref role="3Tt5mk" to="hm2y:2rOWEwsEjch" resolve="baseType" />
+                              </node>
+                            </node>
+                            <node concept="1$rogu" id="5$4k7YFgMyD" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="mw_s8" id="5$4k7YFgL$a" role="1ZfhK$">
+                  <node concept="1Z2H0r" id="5$4k7YFgLmW" role="mwGJk">
+                    <node concept="1YBJjd" id="5$4k7YFgLnf" role="1Z2MuG">
+                      <ref role="1YBMHb" node="5$4k7YFgI9v" resolve="sll" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="5$4k7YFgMJi" role="9aQIa">
+              <node concept="3clFbS" id="5$4k7YFgMJj" role="9aQI4">
+                <node concept="1Z5TYs" id="5$4k7YFgMNO" role="3cqZAp">
+                  <node concept="mw_s8" id="5$4k7YFgMNP" role="1ZfhKB">
+                    <node concept="2pJPEk" id="5$4k7YFgMNQ" role="mwGJk">
+                      <node concept="2pJPED" id="5$4k7YFgMNR" role="2pJPEn">
+                        <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+                        <node concept="2pIpSj" id="5$4k7YFgMNS" role="2pJxcM">
+                          <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                          <node concept="36biLy" id="5$4k7YFgMNT" role="2pJxcZ">
+                            <node concept="1PxgMI" id="5$4k7YFgNlg" role="36biLW">
+                              <ref role="1m5ApE" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                              <node concept="2OqwBi" id="5$4k7YFgMNU" role="1m5AlR">
+                                <node concept="2X3wrD" id="5$4k7YFgN8F" role="2Oq$k0">
+                                  <ref role="2X3Bk0" node="5$4k7YFgI9M" resolve="ctxType" />
+                                </node>
+                                <node concept="1$rogu" id="5$4k7YFgMNZ" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="mw_s8" id="5$4k7YFgMO0" role="1ZfhK$">
+                    <node concept="1Z2H0r" id="5$4k7YFgMO1" role="mwGJk">
+                      <node concept="1YBJjd" id="5$4k7YFgMO2" role="1Z2MuG">
+                        <ref role="1YBMHb" node="5$4k7YFgI9v" resolve="sll" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="5$4k7YFgIaA" role="nvjzm">
+          <node concept="2OqwBi" id="5$4k7YFgIk0" role="1Z2MuG">
+            <node concept="1YBJjd" id="5$4k7YFgIb4" role="2Oq$k0">
+              <ref role="1YBMHb" node="5$4k7YFgI9v" resolve="sll" />
+            </node>
+            <node concept="2qgKlT" id="5$4k7YFgIsX" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="5$4k7YFgI9M" role="2X0Ygz">
+          <property role="TrG5h" value="ctxType" />
+          <node concept="2jxLKc" id="5$4k7YFgI9N" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5$4k7YFgI9v" role="1YuTPh">
+      <property role="TrG5h" value="sll" />
+      <ref role="1YaFvo" to="700h:5$4k7YFgD0B" resolve="AsSingletonList" />
+    </node>
+  </node>
 </model>
 

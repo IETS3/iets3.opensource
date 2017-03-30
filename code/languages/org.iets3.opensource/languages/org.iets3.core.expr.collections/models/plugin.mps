@@ -329,6 +329,83 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="qq9P1" id="5$4k7YFgU3_" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="700h:5$4k7YFgD0B" resolve="AsSingletonList" />
+      <node concept="3dA_Gj" id="5$4k7YFh0qX" role="3vQZUl">
+        <node concept="9aQIb" id="5$4k7YFh0qZ" role="3vcmbn">
+          <node concept="3clFbS" id="5$4k7YFh0r1" role="9aQI4">
+            <node concept="3Y8bPT" id="5$4k7YFjlkk" role="3cqZAp">
+              <node concept="3Y8bOD" id="5$4k7YFjlt5" role="3Y88oQ">
+                <property role="TrG5h" value="something" />
+              </node>
+              <node concept="3Y8bOD" id="5$4k7YFjltd" role="3Y88oQ">
+                <property role="TrG5h" value="nothing" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5$4k7YFh0rh" role="3cqZAp">
+              <node concept="3cpWsn" id="5$4k7YFh0rk" role="3cpWs9">
+                <property role="TrG5h" value="contextValue" />
+                <node concept="3uibUv" id="5$4k7YFh0SD" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="3EllGN" id="5$4k7YFh0rn" role="33vP2m">
+                  <node concept="2OqwBi" id="5$4k7YFh0ro" role="3ElVtu">
+                    <node concept="oxGPV" id="5$4k7YFh0rp" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="5$4k7YFh0rq" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                    </node>
+                  </node>
+                  <node concept="TvHiN" id="5$4k7YFh0rr" role="3ElQJh" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5$4k7YFh181" role="3cqZAp">
+              <node concept="3clFbS" id="5$4k7YFh183" role="3clFbx">
+                <node concept="3YmQ6b" id="5$4k7YFjlJa" role="3cqZAp">
+                  <ref role="1nYgiw" node="5$4k7YFjltd" resolve="nothing" />
+                </node>
+                <node concept="3cpWs6" id="5$4k7YFh2ah" role="3cqZAp">
+                  <node concept="2YIFZM" id="5$4k7YFh2aF" role="3cqZAk">
+                    <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                    <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="5$4k7YFh1Zz" role="3clFbw">
+                <node concept="3uibUv" id="5$4k7YFh272" role="2ZW6by">
+                  <ref role="3uigEE" to="oq0c:UN2ftLWgA8" resolve="NoneValue" />
+                </node>
+                <node concept="37vLTw" id="5$4k7YFh1dW" role="2ZW6bz">
+                  <ref role="3cqZAo" node="5$4k7YFh0rk" resolve="contextValue" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="5$4k7YFh2ew" role="9aQIa">
+                <node concept="3clFbS" id="5$4k7YFh2ex" role="9aQI4">
+                  <node concept="3YmQ6b" id="5$4k7YFjl$2" role="3cqZAp">
+                    <ref role="1nYgiw" node="5$4k7YFjlt5" resolve="something" />
+                  </node>
+                  <node concept="3cpWs6" id="5$4k7YFh2is" role="3cqZAp">
+                    <node concept="2OqwBi" id="5$4k7YFh36D" role="3cqZAk">
+                      <node concept="2YIFZM" id="5$4k7YFh2iQ" role="2Oq$k0">
+                        <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                        <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                      </node>
+                      <node concept="liA8E" id="5$4k7YFh4qz" role="2OqNvi">
+                        <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                        <node concept="37vLTw" id="5$4k7YFh4zC" role="37wK5m">
+                          <ref role="3cqZAo" node="5$4k7YFh0rk" resolve="contextValue" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="2dOqIOtKnIR" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="700h:2dOqIOtJZ98" resolve="FlattenOp" />
