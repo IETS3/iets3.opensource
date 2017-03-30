@@ -25,6 +25,13 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     }
 }
 
+task setTeamCityBuildNumber {
+    doLast {
+        println "##teamcity[buildNumber '${version}']"
+    }
+}
+
+
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
