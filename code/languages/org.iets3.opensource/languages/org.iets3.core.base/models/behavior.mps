@@ -29,6 +29,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -1099,6 +1100,42 @@
     </node>
     <node concept="13hLZK" id="TuTPrvRoDy" role="13h7CW">
       <node concept="3clFbS" id="TuTPrvRoDz" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7I8cNN6siBx">
+    <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="13i0hz" id="5HxjapwgqKm" role="13h7CS">
+      <property role="TrG5h" value="allowNonIdentifierNames" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="13i0is" value="false" />
+      <node concept="3Tm1VV" id="5HxjapwgqKn" role="1B3o_S" />
+      <node concept="10P_77" id="5HxjapwgqKj" role="3clF45" />
+      <node concept="3clFbS" id="5HxjapwgqKo" role="3clF47">
+        <node concept="3cpWs6" id="5HxjapwgqKl" role="3cqZAp">
+          <node concept="3clFbT" id="5HxjapwgqKk" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="8q0nkX_5K4" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="13i0is" value="false" />
+      <node concept="3Tm1VV" id="8q0nkX_5K5" role="1B3o_S" />
+      <node concept="10P_77" id="8q0nkX_5K6" role="3clF45" />
+      <node concept="3clFbS" id="8q0nkX_5K7" role="3clF47">
+        <node concept="3cpWs6" id="8q0nkX_5K8" role="3cqZAp">
+          <node concept="3clFbT" id="8q0nkX_5K9" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7I8cNN6siBy" role="13h7CW">
+      <node concept="3clFbS" id="7I8cNN6siBz" role="2VODD2" />
     </node>
   </node>
 </model>
