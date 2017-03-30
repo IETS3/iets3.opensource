@@ -19,18 +19,12 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 } else {
     if (ciBuild) {
         version = GitBasedVersioning.getVersion('0', '1')
+        println "##teamcity[buildNumber '${version}']"
     } else {
         println "Local build detected, version will be SNAPSHOT"
         version = "1.0-SNAPSHOT"
     }
 }
-
-task setTeamCityBuildNumber {
-    doLast {
-        println "##teamcity[buildNumber '${version}']"
-    }
-}
-
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
