@@ -34,15 +34,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
-        <reference id="6657644269295214800" name="config" index="G9hjw" />
-      </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP" />
     </language>
     <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
       <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
@@ -62,13 +54,6 @@
       <concept id="4833124655349364979" name="org.iets3.flow.core.structure.FlowChunk" flags="ng" index="ulkQR">
         <child id="4833124655349364980" name="stateInstances" index="ulkQK" />
         <child id="3369881559473720185" name="targetDashboardLanguage" index="2Dlz8l" />
-      </concept>
-    </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -92,14 +77,7 @@
       <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR" />
     </language>
     <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
-      <concept id="4230179762005235942" name="org.iets3.req.core.structure.HeaderRequirement" flags="ng" index="3SUGrM" />
-      <concept id="5151426049053542735" name="org.iets3.req.core.structure.IReqContainer" flags="ng" index="3VY$fX">
-        <child id="5151426049053542821" name="requirements" index="3VY$cn" />
-      </concept>
       <concept id="5151426049053136028" name="org.iets3.req.core.structure.RequirementsChunk" flags="ng" index="3VZ1SI" />
-      <concept id="5151426049053136302" name="org.iets3.req.core.structure.AbstractRequirement" flags="ng" index="3VZ1Ws">
-        <property id="816340308089533389" name="uniqueID" index="1kP$Fy" />
-      </concept>
     </language>
   </registry>
   <node concept="2W8dSH" id="6b790tYFF8S" />
@@ -200,25 +178,8 @@
       </node>
     </node>
   </node>
-  <node concept="3VZ1SI" id="6mLEnnuKM_m">
-    <property role="TrG5h" value="asdsa" />
-    <ref role="G9hjw" node="6mLEnnuKM_u" resolve="sasd" />
-    <node concept="3SUGrM" id="6mLEnnuQbLy" role="3VY$cn">
-      <property role="1kP$Fy" value="1" />
-    </node>
-  </node>
-  <node concept="1K7uuR" id="6mLEnnuKM_q">
-    <property role="TrG5h" value="sada" />
-  </node>
-  <node concept="2SbYGP" id="6mLEnnuKM_u">
-    <property role="TrG5h" value="sasd" />
-    <node concept="2SbYGw" id="6mLEnnuKM__" role="Cbewh">
-      <property role="TrG5h" value="ljsd" />
-      <node concept="9PVaO" id="6mLEnnuKM_A" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
+  <node concept="3VZ1SI" id="4mvkNAh$ZXR" />
+  <node concept="1K7uuR" id="4mvkNAh$ZXV" />
+  <node concept="2SbYGP" id="4mvkNAh$ZXZ" />
 </model>
 
