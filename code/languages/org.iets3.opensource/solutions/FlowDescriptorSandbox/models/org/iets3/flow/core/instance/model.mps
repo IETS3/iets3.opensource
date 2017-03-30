@@ -6,6 +6,7 @@
     <use id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae" version="0" />
     <use id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard" version="0" />
     <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
+    <use id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users" version="0" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -13,6 +14,7 @@
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
+    <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -24,6 +26,9 @@
       <concept id="7571185389806664458" name="org.iets3.flow.property.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
+    </language>
+    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
+      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
@@ -60,12 +65,19 @@
       </concept>
     </language>
   </registry>
+  <node concept="2W8dSH" id="6b790tYFF8S" />
   <node concept="ulkQR" id="4ciHkhtidcc">
     <property role="TrG5h" value="state chart root name" />
     <node concept="ulkQJ" id="38QI5jjP83F" role="ulkQK">
       <property role="TrG5h" value="Instance Check " />
       <node concept="fI48x" id="4Wfjtx1_kus" role="fI48E">
-        <ref role="fxKJO" to="q3w4:5QnDqxDaSpr" resolve="RequirementChunk" />
+        <ref role="fxKJO" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="fI48x" id="6mLEnnuyyHp" role="fI48E">
+        <ref role="fxKJO" to="q3w4:7vMAitzBZN" resolve="GlossaryChunk" />
+      </node>
+      <node concept="fI48x" id="6mLEnnu$vCC" role="fI48E">
+        <ref role="fxKJO" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
       </node>
       <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
         <property role="fwOFb" value="Create New Requirement Instance" />
@@ -82,6 +94,9 @@
       <node concept="ulk8C" id="23Wc6ut1Xkw" role="ulkQE">
         <property role="fwOFb" value="Create some requirements!" />
       </node>
+      <node concept="fI48x" id="18xeVvsLlS6" role="fI48E">
+        <ref role="fxKJO" to="q3w4:7vMAitzBZN" resolve="GlossaryChunk" />
+      </node>
       <node concept="aRPxN" id="23Wc6ut1Xl9" role="um_Ly">
         <node concept="3x7ZJP" id="23Wc6ut1Xlj" role="1y4i0j">
           <ref role="35c_gD" to="oehh:23Wc6usRbcI" resolve="EmptyRequirementProperty" />
@@ -95,9 +110,6 @@
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
           </node>
         </node>
-      </node>
-      <node concept="fI48x" id="18xeVvsLlS6" role="fI48E">
-        <ref role="fxKJO" to="q3w4:7vMAitzBZN" resolve="GlossaryChunk" />
       </node>
     </node>
     <node concept="pHN19" id="2V4emM7$EFE" role="2Dlz8l">

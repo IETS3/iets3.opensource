@@ -175,6 +175,19 @@
         <property role="3yOfbB" value="25.0" />
       </node>
     </node>
+    <node concept="3yOg1P" id="5V$b6gdoVZY" role="3yNpS6">
+      <node concept="3yOhv_" id="5V$b6gdoVZZ" role="3yOfZN">
+        <property role="0bFFS" value="-35" />
+        <property role="0bFFY" value="60" />
+      </node>
+      <node concept="3yOhvy" id="5V$b6gdoW00" role="3yOfZL">
+        <property role="0bFC3" value="55" />
+        <property role="0bFC1" value="-30" />
+      </node>
+      <node concept="3yOfJE" id="5V$b6gdoW01" role="3yOfCn">
+        <property role="3yOfbB" value="21.0" />
+      </node>
+    </node>
     <node concept="1iZyVp" id="3btORKMXvb9" role="1iY3eJ">
       <property role="1iZyVk" value="-35" />
       <property role="1iZyVm" value="80" />
