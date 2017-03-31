@@ -73,7 +73,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -160,10 +159,7 @@
               </node>
             </node>
             <node concept="2OqwBi" id="5Hxjapwgt_C" role="3clFbw">
-              <node concept="2OqwBi" id="5Hxjapwgt_D" role="2Oq$k0">
-                <node concept="EsrRn" id="5Hxjapwgt_E" role="2Oq$k0" />
-                <node concept="3NT_Vc" id="5Hxjapwgt_F" role="2OqNvi" />
-              </node>
+              <node concept="EsrRn" id="5Hxjapwgt_E" role="2Oq$k0" />
               <node concept="2qgKlT" id="7I8cNN6sjG0" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:5HxjapwgqKm" resolve="allowNonIdentifierNames" />
               </node>
@@ -186,10 +182,7 @@
               </node>
             </node>
             <node concept="2OqwBi" id="8q0nkX_fZQ" role="3clFbw">
-              <node concept="2OqwBi" id="8q0nkX_fZR" role="2Oq$k0">
-                <node concept="EsrRn" id="8q0nkX_fZS" role="2Oq$k0" />
-                <node concept="3NT_Vc" id="8q0nkX_fZT" role="2OqNvi" />
-              </node>
+              <node concept="EsrRn" id="8q0nkX_fZS" role="2Oq$k0" />
               <node concept="2qgKlT" id="8q0nkX_haT" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
               </node>
