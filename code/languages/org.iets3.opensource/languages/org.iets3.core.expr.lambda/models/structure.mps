@@ -118,6 +118,9 @@
     <node concept="PrWs8" id="6zmBjqUkwsa" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="XhdFKv0yPC" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
     <node concept="1TJgyj" id="6zmBjqUkwsc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
@@ -255,6 +258,9 @@
     <node concept="PrWs8" id="RIvadv1bFg" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
+    <node concept="PrWs8" id="XhdFKvq_X9" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
     <node concept="PrWs8" id="5ElkanPXy9s" role="PrDN$">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
@@ -290,6 +296,9 @@
     </node>
     <node concept="PrWs8" id="3kzwyUOs2JV" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
+    </node>
+    <node concept="PrWs8" id="XhdFKv0ydb" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="49WTic8gvys">

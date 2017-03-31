@@ -8,7 +8,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -500,12 +500,12 @@
                 </node>
                 <node concept="2OqwBi" id="78hTg1zubiH" role="33vP2m">
                   <node concept="1PxgMI" id="78hTg1zubiI" role="2Oq$k0">
+                    <node concept="chp4Y" id="6b_jefnKxAu" role="3oSUPX">
+                      <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                    </node>
                     <node concept="2OqwBi" id="78hTg1zubiJ" role="1m5AlR">
                       <node concept="oxGPV" id="78hTg1zubiK" role="2Oq$k0" />
                       <node concept="1mfA1w" id="78hTg1zubiL" role="2OqNvi" />
-                    </node>
-                    <node concept="chp4Y" id="6b_jefnKxAu" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="78hTg1zubiM" role="2OqNvi">
@@ -578,12 +578,12 @@
                 </node>
                 <node concept="2OqwBi" id="78hTg1zufpn" role="33vP2m">
                   <node concept="1PxgMI" id="78hTg1zufpo" role="2Oq$k0">
+                    <node concept="chp4Y" id="6b_jefnKxAh" role="3oSUPX">
+                      <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                    </node>
                     <node concept="2OqwBi" id="78hTg1zufpp" role="1m5AlR">
                       <node concept="oxGPV" id="78hTg1zufpq" role="2Oq$k0" />
                       <node concept="1mfA1w" id="78hTg1zufpr" role="2OqNvi" />
-                    </node>
-                    <node concept="chp4Y" id="6b_jefnKxAh" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="78hTg1zufps" role="2OqNvi">
