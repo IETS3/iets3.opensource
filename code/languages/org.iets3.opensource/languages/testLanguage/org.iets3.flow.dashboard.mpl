@@ -120,10 +120,12 @@
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
-    <language slang="l:7731a166-da1f-472e-a40a-2283f5e47dc5:org.iets3.ears.gxw" version="0" />
+    <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
+    <language slang="l:f95247f1-a285-4e98-864f-7f4b1723a807:org.iets3.core.users" version="0" />
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
     <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.property" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
+    <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="-1" />
   </languageVersions>

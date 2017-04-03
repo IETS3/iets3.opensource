@@ -58,7 +58,7 @@
   <node concept="1TIwiD" id="23Wc6usRcwc">
     <property role="EcuMT" value="2376827924916258828" />
     <property role="3GE5qa" value="Properties" />
-    <property role="TrG5h" value="RequirementModelErrorFreeProperty" />
+    <property role="TrG5h" value="RequirementsErrorFreeProperty" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
   <node concept="1TIwiD" id="7tAIZp0bkmp">

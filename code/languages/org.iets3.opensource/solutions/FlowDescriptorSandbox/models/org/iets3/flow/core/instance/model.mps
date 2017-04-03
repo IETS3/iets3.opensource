@@ -10,6 +10,7 @@
     <use id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary" version="0" />
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="0" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -19,6 +20,8 @@
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.diehltable.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
+    <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
+    <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -34,6 +37,12 @@
       <concept id="7571185389806664458" name="org.iets3.flow.property.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
+    </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP" />
+    </language>
+    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
+      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
@@ -52,6 +61,9 @@
         <child id="3369881559473720185" name="targetDashboardLanguage" index="2Dlz8l" />
       </concept>
     </language>
+    <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
+      <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
@@ -69,6 +81,12 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
+      <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR" />
+    </language>
+    <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
+      <concept id="5151426049053136028" name="org.iets3.req.core.structure.RequirementsChunk" flags="ng" index="3VZ1SI" />
+    </language>
   </registry>
   <node concept="ulkQR" id="4ciHkhtidcc">
     <property role="TrG5h" value="state chart root name" />
@@ -83,13 +101,16 @@
       <node concept="fI48x" id="7tAIZp0gxc6" role="fI48E">
         <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
-      <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
-        <property role="fwOFb" value="Create New Requirement Instance" />
+      <node concept="fI48x" id="7tAIZp0mqbB" role="fI48E">
+        <ref role="fxKJO" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
       </node>
-      <node concept="3x7ZJP" id="23Wc6ut1Xkb" role="um_Ly">
-        <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="RequirementsChunkNotPresentProperty" />
-        <node concept="35c_gC" id="23Wc6ut1Xkd" role="2DkB7w">
-          <ref role="35c_gD" to="oehh:38QI5jjQip0" resolve="RequirementsChunkNotPresentProperty" />
+      <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
+        <property role="fwOFb" value="Create new requirements project" />
+      </node>
+      <node concept="3x7ZJP" id="7tAIZp0sdcM" role="um_Ly">
+        <ref role="35c_gD" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
+        <node concept="35c_gC" id="7tAIZp0sdcO" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
         </node>
       </node>
     </node>
@@ -99,17 +120,19 @@
         <property role="fwOFb" value="Please add a requirement for the cooling system where you define the temperature thresholds as glossary terms" />
       </node>
       <node concept="aRPxN" id="7tAIZp0e7z1" role="um_Ly">
-        <node concept="3x7ZJP" id="7tAIZp0e7z8" role="1y4i0j">
-          <ref role="35c_gD" to="oehh:23Wc6usRbcI" resolve="EmptyRequirementProperty" />
-          <node concept="35c_gC" id="7tAIZp0e7za" role="2DkB7w">
-            <ref role="35c_gD" to="oehh:23Wc6usRbcI" resolve="EmptyRequirementProperty" />
-          </node>
-        </node>
         <node concept="aRPxe" id="7tAIZp0e7zC" role="1y4i0p">
           <node concept="3x7ZJP" id="7tAIZp0gKD_" role="1y4i0q">
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
             <node concept="35c_gC" id="7tAIZp0gKDB" role="2DkB7w">
               <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
+            </node>
+          </node>
+        </node>
+        <node concept="aRPxe" id="7tAIZp0nDeV" role="1y4i0j">
+          <node concept="3x7ZJP" id="7tAIZp0nDf0" role="1y4i0q">
+            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
+            <node concept="35c_gC" id="7tAIZp0nDf2" role="2DkB7w">
+              <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             </node>
           </node>
         </node>
@@ -122,9 +145,9 @@
       </node>
       <node concept="aRPxN" id="4mvkNAhGCaf" role="um_Ly">
         <node concept="3x7ZJP" id="4mvkNAhGCay" role="1y4i0j">
-          <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+          <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
           <node concept="35c_gC" id="4mvkNAhGCa$" role="2DkB7w">
-            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
           </node>
         </node>
         <node concept="aRPxe" id="7tAIZp0e7_3" role="1y4i0p">
@@ -151,9 +174,9 @@
         </node>
         <node concept="aRPxe" id="7tAIZp0e7$8" role="1y4i0j">
           <node concept="3x7ZJP" id="7tAIZp0gKDT" role="1y4i0q">
-            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             <node concept="35c_gC" id="7tAIZp0gKDV" role="2DkB7w">
-              <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+              <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             </node>
           </node>
         </node>
@@ -172,9 +195,9 @@
           </node>
         </node>
         <node concept="3x7ZJP" id="7tAIZp0gKEd" role="1y4i0j">
-          <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+          <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
           <node concept="35c_gC" id="7tAIZp0gKEf" role="2DkB7w">
-            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementModelErrorFreeProperty" />
+            <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
           </node>
         </node>
       </node>
@@ -223,5 +246,10 @@
       </node>
     </node>
   </node>
+  <node concept="2W8dSH" id="7tAIZp0vpTe" />
+  <node concept="3VZ1SI" id="7tAIZp0vDAJ" />
+  <node concept="2SbYGP" id="7tAIZp0vDAK" />
+  <node concept="1K7uuR" id="7tAIZp0vDAL" />
+  <node concept="30MgvN" id="7tAIZp0vDAM" />
 </model>
 

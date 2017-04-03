@@ -589,16 +589,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="3fqX7Q" id="23Wc6usU0jc" role="3clFbw">
-                <node concept="1rXfSq" id="23Wc6usU0je" role="3fr31v">
-                  <ref role="37wK5l" node="23Wc6usTWxK" resolve="calculateFormula" />
-                  <node concept="2OqwBi" id="23Wc6usU0jf" role="37wK5m">
-                    <node concept="2GrUjf" id="23Wc6usU0jg" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="23Wc6usTQGY" resolve="item" />
-                    </node>
-                    <node concept="3TrEf2" id="23Wc6usU0jh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
-                    </node>
+              <node concept="1rXfSq" id="23Wc6usU0je" role="3clFbw">
+                <ref role="37wK5l" node="23Wc6usTWxK" resolve="calculateFormula" />
+                <node concept="2OqwBi" id="23Wc6usU0jf" role="37wK5m">
+                  <node concept="2GrUjf" id="23Wc6usU0jg" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="23Wc6usTQGY" resolve="item" />
+                  </node>
+                  <node concept="3TrEf2" id="23Wc6usU0jh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
                   </node>
                 </node>
               </node>
