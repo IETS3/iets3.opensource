@@ -920,6 +920,9 @@
     <node concept="tT9cl" id="3HmE5WaXKA6" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Gvz" resolve="NodeActions" />
     </node>
+    <node concept="tT9cl" id="XhdFKwcBJr" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:WmrxDqdZv8" resolve="MPSToolBarRun" />
+    </node>
   </node>
   <node concept="sE7Ow" id="3HmE5WaYae2">
     <property role="TrG5h" value="runAllManuallyOnModel" />
