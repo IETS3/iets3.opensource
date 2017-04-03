@@ -546,7 +546,7 @@
             <property role="TrG5h" value="dataModel" />
             <node concept="H_c77" id="23Wc6usTQGL" role="1tU5fm" />
             <node concept="BaHAS" id="23Wc6usTQGM" role="33vP2m">
-              <property role="BaHAW" value="DataModel" />
+              <property role="BaHAW" value="FlowModel" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -618,7 +618,7 @@
                   <ref role="3cqZAo" node="23Wc6usTQGK" resolve="dataModel" />
                 </node>
                 <node concept="2RRcyG" id="23Wc6usTQH4" role="2OqNvi">
-                  <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+                  <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                 </node>
               </node>
               <node concept="1uHKPH" id="23Wc6usTQH5" role="2OqNvi" />

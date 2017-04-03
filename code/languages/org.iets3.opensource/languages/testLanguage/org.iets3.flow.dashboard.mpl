@@ -125,6 +125,7 @@
     <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.property" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
+    <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

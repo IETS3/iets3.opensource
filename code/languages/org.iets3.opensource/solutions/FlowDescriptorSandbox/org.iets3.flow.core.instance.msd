@@ -12,6 +12,7 @@
     <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
     <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)</dependency>
+    <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -78,10 +79,12 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)" version="0" />
     <module reference="5b11054d-065d-4e5c-9a6d-175a4af103c2(org.iets3.flow.core.instance)" version="0" />
     <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
     <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
+    <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
     <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)" version="0" />

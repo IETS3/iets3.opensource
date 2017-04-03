@@ -68,12 +68,14 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -164,18 +166,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -209,6 +201,17 @@
     </node>
     <node concept="2Sbjvc" id="4AFp3iZ2_FD" role="2ZfgGD">
       <node concept="3clFbS" id="4AFp3iZ2_FE" role="2VODD2">
+        <node concept="3clFbH" id="7tAIZp0edaM" role="3cqZAp" />
+        <node concept="3cpWs8" id="7tAIZp0edJv" role="3cqZAp">
+          <node concept="3cpWsn" id="7tAIZp0edJt" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="flowModelName" />
+            <node concept="17QB3L" id="7tAIZp0eelv" role="1tU5fm" />
+            <node concept="Xl_RD" id="7tAIZp0eenM" role="33vP2m">
+              <property role="Xl_RC" value="FlowModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="18xeVvsJyr0" role="3cqZAp" />
         <node concept="3cpWs8" id="18xeVvsC1vJ" role="3cqZAp">
           <node concept="3cpWsn" id="18xeVvsC1vM" role="3cpWs9">
@@ -352,8 +355,8 @@
                     </node>
                     <node concept="liA8E" id="18xeVvsAz4Y" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                      <node concept="Xl_RD" id="18xeVvsA$6H" role="37wK5m">
-                        <property role="Xl_RC" value="DataModel" />
+                      <node concept="37vLTw" id="7tAIZp0egmy" role="37wK5m">
+                        <ref role="3cqZAo" node="7tAIZp0edJt" resolve="flowModelName" />
                       </node>
                     </node>
                   </node>
@@ -375,8 +378,8 @@
                       </node>
                       <node concept="liA8E" id="18xeVvsCzlm" role="2OqNvi">
                         <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="createModel" />
-                        <node concept="Xl_RD" id="18xeVvsCzln" role="37wK5m">
-                          <property role="Xl_RC" value="DataModel" />
+                        <node concept="37vLTw" id="7tAIZp0eknh" role="37wK5m">
+                          <ref role="3cqZAo" node="7tAIZp0edJt" resolve="flowModelName" />
                         </node>
                       </node>
                     </node>
@@ -465,26 +468,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1X3_iC" id="18xeVvsIp3$" role="lGtFl">
-                          <property role="3V$3am" value="statement" />
-                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                          <node concept="3clFbF" id="18xeVvsEfMG" role="8Wnug">
-                            <node concept="2OqwBi" id="18xeVvsEfMH" role="3clFbG">
-                              <node concept="37vLTw" id="18xeVvsEfMI" role="2Oq$k0">
-                                <ref role="3cqZAo" node="18xeVvsD47p" resolve="sModelInternal" />
-                              </node>
-                              <node concept="liA8E" id="18xeVvsEfMJ" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~SModelInternal.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
-                                <node concept="pHN19" id="18xeVvsEk2S" role="37wK5m">
-                                  <node concept="2V$Bhx" id="18xeVvsEmc_" role="2V$M_3">
-                                    <property role="2V$B1T" value="a3c6f642-41b7-44cb-951b-463b8427a245" />
-                                    <property role="2V$B1Q" value="org.iets3.req.core" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="18xeVvsETdz" role="3cqZAp">
                           <node concept="2OqwBi" id="18xeVvsETd$" role="3clFbG">
                             <node concept="37vLTw" id="18xeVvsETd_" role="2Oq$k0">
@@ -502,37 +485,6 @@
                           </node>
                         </node>
                         <node concept="3clFbH" id="18xeVvsGrFD" role="3cqZAp" />
-                        <node concept="1X3_iC" id="18xeVvsIrq1" role="lGtFl">
-                          <property role="3V$3am" value="statement" />
-                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                          <node concept="3clFbF" id="18xeVvsFQZf" role="8Wnug">
-                            <node concept="2OqwBi" id="18xeVvsFR9x" role="3clFbG">
-                              <node concept="37vLTw" id="18xeVvsFQZd" role="2Oq$k0">
-                                <ref role="3cqZAo" node="18xeVvsD47p" resolve="sModelInternal" />
-                              </node>
-                              <node concept="liA8E" id="18xeVvsFRvX" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~SModelInternal.addModelImport(org.jetbrains.mps.openapi.model.SModelReference):void" resolve="addModelImport" />
-                                <node concept="2OqwBi" id="18xeVvsGwV0" role="37wK5m">
-                                  <node concept="2OqwBi" id="18xeVvsGrQ1" role="2Oq$k0">
-                                    <node concept="2YIFZM" id="18xeVvsGrQ2" role="2Oq$k0">
-                                      <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                                      <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
-                                    </node>
-                                    <node concept="liA8E" id="18xeVvsGrQ3" role="2OqNvi">
-                                      <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
-                                      <node concept="Xl_RD" id="18xeVvsGrQ4" role="37wK5m">
-                                        <property role="Xl_RC" value="org.iets3.req.core.structure" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="18xeVvsGzpu" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="18xeVvsGNWe" role="3cqZAp">
                           <node concept="2OqwBi" id="18xeVvsGNWf" role="3clFbG">
                             <node concept="37vLTw" id="18xeVvsGNWg" role="2Oq$k0">
@@ -560,8 +512,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="18xeVvsIlXS" role="3cqZAp" />
-                        <node concept="3clFbH" id="18xeVvsGNSY" role="3cqZAp" />
                       </node>
                       <node concept="2OqwBi" id="18xeVvsCZmZ" role="3clFbw">
                         <node concept="2OqwBi" id="18xeVvsCZn0" role="2Oq$k0">
@@ -574,15 +524,14 @@
                         </node>
                         <node concept="liA8E" id="18xeVvsCZn3" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="Xl_RD" id="18xeVvsCZn4" role="37wK5m">
-                            <property role="Xl_RC" value="DataModel" />
+                          <node concept="37vLTw" id="7tAIZp0eoja" role="37wK5m">
+                            <ref role="3cqZAo" node="7tAIZp0edJt" resolve="flowModelName" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="18xeVvsH58C" role="3cqZAp" />
               </node>
               <node concept="3fqX7Q" id="18xeVvsC5CJ" role="3clFbw">
                 <node concept="37vLTw" id="18xeVvsC5De" role="3fr31v">
@@ -591,6 +540,20 @@
               </node>
             </node>
             <node concept="3clFbH" id="18xeVvsCOUc" role="3cqZAp" />
+            <node concept="3clFbF" id="7tAIZp0eRRE" role="3cqZAp">
+              <node concept="2OqwBi" id="7tAIZp0eRRB" role="3clFbG">
+                <node concept="10M0yZ" id="7tAIZp0eRRC" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="7tAIZp0eRRD" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="7tAIZp0eSrA" role="37wK5m">
+                    <property role="Xl_RC" value="Going to copy...................." />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="2nJapj3rtHB" role="3cqZAp" />
             <node concept="3SKdUt" id="2nJapj3rrZp" role="3cqZAp">
               <node concept="3SKdUq" id="2nJapj3rrZq" role="3SKWNk">
@@ -599,14 +562,14 @@
             </node>
             <node concept="3cpWs8" id="2nJapj3rrZ_" role="3cqZAp">
               <node concept="3cpWsn" id="2nJapj3rrZA" role="3cpWs9">
-                <property role="TrG5h" value="testConcept" />
+                <property role="TrG5h" value="flow" />
                 <node concept="3Tqbb2" id="2nJapj3rrZB" role="1tU5fm">
-                  <ref role="ehGHo" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+                  <ref role="ehGHo" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                 </node>
                 <node concept="2ShNRf" id="2nJapj3rrZC" role="33vP2m">
                   <node concept="3zrR0B" id="2nJapj3rrZD" role="2ShVmc">
                     <node concept="3Tqbb2" id="2nJapj3rrZE" role="3zrR0E">
-                      <ref role="ehGHo" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+                      <ref role="ehGHo" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                     </node>
                   </node>
                 </node>
@@ -754,20 +717,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="18xeVvsLmrR" role="3cqZAp">
-                          <node concept="2OqwBi" id="18xeVvsLmrO" role="3clFbG">
-                            <node concept="10M0yZ" id="18xeVvsLmrP" role="2Oq$k0">
-                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                            </node>
-                            <node concept="liA8E" id="18xeVvsLmrQ" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                              <node concept="Xl_RD" id="18xeVvsLmAO" role="37wK5m">
-                                <property role="Xl_RC" value="before call" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="18xeVvsL3Kc" role="3cqZAp">
                           <node concept="2OqwBi" id="18xeVvsL3VP" role="3clFbG">
                             <node concept="2Sf5sV" id="18xeVvsL3Ka" role="2Oq$k0" />
@@ -792,8 +741,8 @@
                                   </node>
                                   <node concept="liA8E" id="18xeVvsL6RO" role="2OqNvi">
                                     <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
-                                    <node concept="Xl_RD" id="18xeVvsL6Yk" role="37wK5m">
-                                      <property role="Xl_RC" value="DataModel" />
+                                    <node concept="37vLTw" id="7tAIZp0f6X_" role="37wK5m">
+                                      <ref role="3cqZAo" node="7tAIZp0edJt" resolve="flowModelName" />
                                     </node>
                                   </node>
                                 </node>
@@ -801,25 +750,8 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="18xeVvsLmSn" role="3cqZAp">
-                          <node concept="2OqwBi" id="18xeVvsLmSo" role="3clFbG">
-                            <node concept="10M0yZ" id="18xeVvsLmSp" role="2Oq$k0">
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                            </node>
-                            <node concept="liA8E" id="18xeVvsLmSq" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                              <node concept="Xl_RD" id="18xeVvsLmSr" role="37wK5m">
-                                <property role="Xl_RC" value="after call" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbH" id="18xeVvsLmHu" role="3cqZAp" />
                       </node>
                     </node>
-                    <node concept="3clFbH" id="2nJapj3rs0A" role="3cqZAp" />
-                    <node concept="3clFbH" id="6mLEnnuEuny" role="3cqZAp" />
                   </node>
                   <node concept="2OqwBi" id="6mLEnnuEzrZ" role="3clFbw">
                     <node concept="2OqwBi" id="6mLEnnuEvPB" role="2Oq$k0">
@@ -837,7 +769,7 @@
                   <node concept="2OqwBi" id="2nJapj3rs0C" role="3clFbG">
                     <node concept="2OqwBi" id="2nJapj3rs0D" role="2Oq$k0">
                       <node concept="37vLTw" id="2nJapj3rs0E" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2nJapj3rrZA" resolve="testConcept" />
+                        <ref role="3cqZAo" node="2nJapj3rrZA" resolve="flow" />
                       </node>
                       <node concept="3Tsc0h" id="2nJapj3rs0F" role="2OqNvi">
                         <ref role="3TtcxE" to="xwgo:5cR9puhFRxd" resolve="stateLists" />
@@ -858,7 +790,7 @@
                 <property role="TrG5h" value="createdModel" />
                 <node concept="H_c77" id="18xeVvsB56D" role="1tU5fm" />
                 <node concept="BaHAS" id="18xeVvsB56G" role="33vP2m">
-                  <property role="BaHAW" value="DataModel" />
+                  <property role="BaHAW" value="FlowModel" />
                   <property role="BaGAP" value="" />
                 </node>
               </node>
@@ -870,7 +802,7 @@
                 </node>
                 <node concept="3BYIHo" id="18xeVvsB7Nc" role="2OqNvi">
                   <node concept="37vLTw" id="18xeVvsB9f7" role="3BYIHq">
-                    <ref role="3cqZAo" node="2nJapj3rrZA" resolve="testConcept" />
+                    <ref role="3cqZAo" node="2nJapj3rrZA" resolve="flow" />
                   </node>
                 </node>
               </node>

@@ -207,7 +207,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3HvtPSdglT7">
-    <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+    <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
     <node concept="3EZMnI" id="3HvtPSdglT9" role="2wV5jI">
       <node concept="3F0ifn" id="6IVOdeOQixj" role="3EZMnx" />
       <node concept="l2Vlx" id="3HvtPSdglTc" role="2iSdaV" />
@@ -317,8 +317,8 @@
                 <node concept="3cpWsn" id="23Wc6usRMMD" role="3cpWs9">
                   <property role="TrG5h" value="dataModel" />
                   <node concept="H_c77" id="23Wc6usRMMB" role="1tU5fm" />
-                  <node concept="BaHAS" id="23Wc6usRMME" role="33vP2m">
-                    <property role="BaHAW" value="DataModel" />
+                  <node concept="BaHAS" id="7tAIZp0eQpE" role="33vP2m">
+                    <property role="BaHAW" value="FlowModel" />
                     <property role="BaGAP" value="" />
                   </node>
                 </node>
@@ -333,7 +333,7 @@
                             <ref role="3cqZAo" node="23Wc6usRMMD" resolve="dataModel" />
                           </node>
                           <node concept="2RRcyG" id="23Wc6usROtG" role="2OqNvi">
-                            <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+                            <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                           </node>
                         </node>
                         <node concept="1uHKPH" id="23Wc6usRUzy" role="2OqNvi" />
@@ -362,7 +362,7 @@
                   <property role="TrG5h" value="dataModel" />
                   <node concept="H_c77" id="6b790tZcpcP" role="1tU5fm" />
                   <node concept="BaHAS" id="6b790tZcpcQ" role="33vP2m">
-                    <property role="BaHAW" value="DataModel" />
+                    <property role="BaHAW" value="FlowModel" />
                     <property role="BaGAP" value="" />
                   </node>
                 </node>
@@ -398,7 +398,7 @@
                               <ref role="3cqZAo" node="6b790tZcpcO" resolve="dataModel" />
                             </node>
                             <node concept="2RRcyG" id="6mLEnnuu1SZ" role="2OqNvi">
-                              <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="TestConcept" />
+                              <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                             </node>
                           </node>
                           <node concept="1uHKPH" id="6mLEnnuu1T0" role="2OqNvi" />
