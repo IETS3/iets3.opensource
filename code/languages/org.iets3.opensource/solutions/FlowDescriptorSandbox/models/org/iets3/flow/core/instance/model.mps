@@ -8,10 +8,8 @@
     <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
     <use id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users" version="0" />
     <use id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary" version="0" />
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
-    <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="0" />
-    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable" version="-1" />
+    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -21,7 +19,6 @@
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="tuf9" ref="r:7f8b53fb-2dfc-4e51-940a-0573ffa4389c(org.iets3.glossary.structure)" />
-    <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
   </imports>
@@ -65,33 +62,33 @@
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
     </language>
-    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable">
-      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
+    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable">
+      <concept id="9177268329656752708" name="org.iets3.table.coolingbehaviortable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
         <property id="9177268329656752713" name="Max" index="1iZyU_" />
         <property id="9177268329656752711" name="Min" index="1iZyUF" />
       </concept>
-      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
+      <concept id="9177268329656752693" name="org.iets3.table.coolingbehaviortable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
         <property id="9177268329656752696" name="Min" index="1iZyVk" />
         <property id="9177268329656752698" name="Max" index="1iZyVm" />
       </concept>
-      <concept id="7430885610120754429" name="org.iets3.table.diehltable.structure.MWPVal" flags="ng" index="3yOfJE">
-        <property id="7430885610120756720" name="MWPValue" index="3yOfbB" />
+      <concept id="7430885610120754429" name="org.iets3.table.coolingbehaviortable.structure.DutyCycleVal" flags="ng" index="3yOfJE">
+        <property id="7430885610120756720" name="dutyCycle" index="3yOfbB" />
       </concept>
-      <concept id="7430885610120728418" name="org.iets3.table.diehltable.structure.DiehlRow" flags="ng" index="3yOg1P">
+      <concept id="7430885610120728418" name="org.iets3.table.coolingbehaviortable.structure.CoolingBehaviorRow" flags="ng" index="3yOg1P">
         <child id="7430885610120754432" name="MWPValue" index="3yOfCn" />
         <child id="7430885610120753382" name="DecreasingInterval" index="3yOfZL" />
         <child id="7430885610120753380" name="IncreasingInterval" index="3yOfZN" />
       </concept>
-      <concept id="7430885610120727933" name="org.iets3.table.diehltable.structure.DiehlTable" flags="ng" index="3yOg9E">
+      <concept id="7430885610120727933" name="org.iets3.table.coolingbehaviortable.structure.CoolingBehaviorTable" flags="ng" index="3yOg9E">
         <child id="9177268329656878919" name="decreasingThreshold" index="1iY3eF" />
         <child id="9177268329656878915" name="increasingThreshold" index="1iY3eJ" />
         <child id="7430885610120958225" name="drow" index="3yNpS6" />
       </concept>
-      <concept id="7430885610120730869" name="org.iets3.table.diehltable.structure.DecreasingValue" flags="ng" index="3yOhvy">
+      <concept id="7430885610120730869" name="org.iets3.table.coolingbehaviortable.structure.DecreasingValue" flags="ng" index="3yOhvy">
         <property id="3665318202133670269" name="To" index="0bFC1" />
         <property id="3665318202133670271" name="From" index="0bFC3" />
       </concept>
-      <concept id="7430885610120730866" name="org.iets3.table.diehltable.structure.IncreasingValue" flags="ng" index="3yOhv_">
+      <concept id="7430885610120730866" name="org.iets3.table.coolingbehaviortable.structure.IncreasingValue" flags="ng" index="3yOhv_">
         <property id="3665318202133670276" name="From" index="0bFFS" />
         <property id="3665318202133670274" name="To" index="0bFFY" />
       </concept>
@@ -290,7 +287,7 @@
         <property role="fwOFb" value="Create the controller's functional behavior as a table" />
       </node>
       <node concept="fI48x" id="7tAIZp0e7Bn" role="fI48E">
-        <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+        <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
       <node concept="aRPxN" id="7tAIZp0x_4e" role="um_Ly">
         <node concept="aRPxe" id="7tAIZp0x_5E" role="1y4i0j">
