@@ -10,7 +10,7 @@
     <dependency reexport="false">af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)</dependency>
     <dependency reexport="false">e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)</dependency>
     <dependency reexport="false">f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)</dependency>
-    <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)</dependency>
+    <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)</dependency>
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
     <dependency reexport="false">a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)</dependency>
     <dependency reexport="false">9334dc69-2bda-458c-b059-1fbb4e03b6fd(org.iets3.req.example)</dependency>
@@ -99,8 +99,8 @@
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="9334dc69-2bda-458c-b059-1fbb4e03b6fd(org.iets3.req.example)" version="0" />
+    <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
-    <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -26,7 +26,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="tablelanguage" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.diehltable.mpl" folder="tablelanguage" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.coolingbehaviortable.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/testLanguage/org.iets3.flow.dashboard.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDemo/FlowDemo.msd" folder="flowDemo" />
@@ -36,7 +36,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.example/org.iets3.req.example.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.pesudocode.example/org.iets3.req.pesudocode.example.msd" folder="casestudies" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.table.diehltable.examples/org.iets3.table.diehltable.examples.msd" folder="tablelanguage" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.table.diehltable.examples/org.iets3.table.coolingbehavior.examples.msd" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
     </projectModules>
   </component>

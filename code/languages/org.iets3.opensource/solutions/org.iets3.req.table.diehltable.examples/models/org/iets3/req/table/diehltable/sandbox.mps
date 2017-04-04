@@ -2,37 +2,37 @@
 <model ref="r:62b7520a-c577-477b-9086-64b4fd837011(org.iets3.req.table.diehltable.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable" version="-1" />
+    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
   </languages>
   <imports />
   <registry>
-    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable">
-      <concept id="9177268329656752708" name="org.iets3.table.diehltable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
+    <language id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable">
+      <concept id="9177268329656752708" name="org.iets3.table.coolingbehaviortable.structure.DecreasingThreshold" flags="ng" index="1iZyUC">
         <property id="9177268329656752713" name="Max" index="1iZyU_" />
         <property id="9177268329656752711" name="Min" index="1iZyUF" />
       </concept>
-      <concept id="9177268329656752693" name="org.iets3.table.diehltable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
+      <concept id="9177268329656752693" name="org.iets3.table.coolingbehaviortable.structure.IncreasingThreshold" flags="ng" index="1iZyVp">
         <property id="9177268329656752696" name="Min" index="1iZyVk" />
         <property id="9177268329656752698" name="Max" index="1iZyVm" />
       </concept>
-      <concept id="7430885610120754429" name="org.iets3.table.diehltable.structure.MWPVal" flags="ng" index="3yOfJE">
+      <concept id="7430885610120754429" name="org.iets3.table.coolingbehaviortable.structure.MWPVal" flags="ng" index="3yOfJE">
         <property id="7430885610120756720" name="MWPValue" index="3yOfbB" />
       </concept>
-      <concept id="7430885610120728418" name="org.iets3.table.diehltable.structure.DiehlRow" flags="ng" index="3yOg1P">
+      <concept id="7430885610120728418" name="org.iets3.table.coolingbehaviortable.structure.DiehlRow" flags="ng" index="3yOg1P">
         <child id="7430885610120754432" name="MWPValue" index="3yOfCn" />
         <child id="7430885610120753382" name="DecreasingInterval" index="3yOfZL" />
         <child id="7430885610120753380" name="IncreasingInterval" index="3yOfZN" />
       </concept>
-      <concept id="7430885610120727933" name="org.iets3.table.diehltable.structure.DiehlTable" flags="ng" index="3yOg9E">
+      <concept id="7430885610120727933" name="org.iets3.table.coolingbehaviortable.structure.CoolingBehaviorTable" flags="ng" index="3yOg9E">
         <child id="9177268329656878919" name="decreasingThreshold" index="1iY3eF" />
         <child id="9177268329656878915" name="increasingThreshold" index="1iY3eJ" />
         <child id="7430885610120958225" name="drow" index="3yNpS6" />
       </concept>
-      <concept id="7430885610120730869" name="org.iets3.table.diehltable.structure.DecreasingValue" flags="ng" index="3yOhvy">
+      <concept id="7430885610120730869" name="org.iets3.table.coolingbehaviortable.structure.DecreasingValue" flags="ng" index="3yOhvy">
         <property id="3665318202133670269" name="To" index="0bFC1" />
         <property id="3665318202133670271" name="From" index="0bFC3" />
       </concept>
-      <concept id="7430885610120730866" name="org.iets3.table.diehltable.structure.IncreasingValue" flags="ng" index="3yOhv_">
+      <concept id="7430885610120730866" name="org.iets3.table.coolingbehaviortable.structure.IncreasingValue" flags="ng" index="3yOhv_">
         <property id="3665318202133670276" name="From" index="0bFFS" />
         <property id="3665318202133670274" name="To" index="0bFFY" />
       </concept>
@@ -44,7 +44,7 @@
     </language>
   </registry>
   <node concept="3yOg9E" id="3btORKMXvb8">
-    <property role="TrG5h" value="DEPS Temperature" />
+    <property role="TrG5h" value="Cooling Behavior" />
     <node concept="3yOg1P" id="3btORKMXvbb" role="3yNpS6">
       <node concept="3yOhv_" id="3btORKMXvbc" role="3yOfZN">
         <property role="0bFFY" value="80" />

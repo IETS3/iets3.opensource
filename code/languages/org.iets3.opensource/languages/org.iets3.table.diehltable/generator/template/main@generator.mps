@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7a847446-4645-4e9c-937b-f5a4fd91799e(org.iets3.table.diehltable.generator.template.main@generator)">
+<model ref="r:7a847446-4645-4e9c-937b-f5a4fd91799e(org.iets3.table.coolingbehaviortable.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />

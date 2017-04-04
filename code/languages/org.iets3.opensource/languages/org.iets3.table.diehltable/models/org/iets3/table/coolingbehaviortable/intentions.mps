@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9dbad7ee-8b9c-41a0-9bc2-21bee7d8232f(org.iets3.table.diehltable.intentions)">
+<model ref="r:9dbad7ee-8b9c-41a0-9bc2-21bee7d8232f(org.iets3.table.coolingbehaviortable.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
@@ -11,7 +11,7 @@
     <import index="7i4z" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.axis(com.mbeddr.mpsutil.jfreechart.runtime/)" />
     <import index="8en7" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.xy(com.mbeddr.mpsutil.jfreechart.runtime/)" />
     <import index="b4vq" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.ui(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.diehltable.structure)" implicit="true" />
+    <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />

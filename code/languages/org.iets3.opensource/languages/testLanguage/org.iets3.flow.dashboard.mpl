@@ -70,7 +70,7 @@
     <dependency reexport="false">f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)</dependency>
     <dependency reexport="false">b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)</dependency>
     <dependency reexport="false">b68cce94-7c2b-436e-8b69-c33a9bcb11a0(mbeddr.tutorial.shonan.runtime)</dependency>
-    <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)</dependency>
+    <dependency reexport="false">f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)</dependency>
     <dependency reexport="false">12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)</dependency>
   </dependencies>
   <usedDevKits>
@@ -97,6 +97,7 @@
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" version="0" />
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
+    <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" version="3" />
     <language slang="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" version="0" />
@@ -127,6 +128,7 @@
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
+    <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="-1" />
   </languageVersions>
   <dependencyVersions>
@@ -179,8 +181,8 @@
     <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.property.formulae)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
+    <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
-    <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.diehltable)" version="0" />
     <module reference="12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
