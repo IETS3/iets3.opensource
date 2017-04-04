@@ -47,6 +47,7 @@
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
     <language slang="l:7a870bb7-87b6-411e-92c2-eb3e9e856127:org.iets3.req.priority" version="0" />
+    <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
