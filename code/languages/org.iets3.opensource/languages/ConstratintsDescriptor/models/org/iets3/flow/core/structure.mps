@@ -95,6 +95,11 @@
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7c_wSf78X$G" role="1TKVEl">
+      <property role="IQ2nx" value="8297182490504976684" />
+      <property role="TrG5h" value="startState" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4ciHkhthZzN">
     <property role="EcuMT" value="4833124655349364979" />

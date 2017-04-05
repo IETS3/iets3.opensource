@@ -49,6 +49,7 @@
         <property id="1235726657816716306" name="text" index="fwOFb" />
       </concept>
       <concept id="4833124655349364971" name="org.iets3.flow.core.structure.FlowState" flags="ng" index="ulkQJ">
+        <property id="8297182490504976684" name="startState" index="2O1_EJ" />
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="propertyFormula" index="um_Ly" />
@@ -84,6 +85,7 @@
     <property role="TrG5h" value="state chart root name" />
     <node concept="ulkQJ" id="38QI5jjP83F" role="ulkQK">
       <property role="TrG5h" value="Instance Check " />
+      <property role="2O1_EJ" value="true" />
       <node concept="fI48x" id="4Wfjtx1_kus" role="fI48E">
         <ref role="fxKJO" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
       </node>

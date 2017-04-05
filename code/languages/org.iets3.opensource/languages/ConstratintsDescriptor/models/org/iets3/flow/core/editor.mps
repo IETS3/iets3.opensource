@@ -135,9 +135,24 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5rwK$2qfhm4" role="3EZMnx">
+      <node concept="3EZMnI" id="7c_wSf78Vwm" role="3EZMnx">
+        <node concept="2iRfu4" id="7c_wSf78Vwn" role="2iSdaV" />
+        <node concept="3F0ifn" id="7c_wSf78Udk" role="3EZMnx">
+          <property role="3F0ifm" value="Is start state:" />
+        </node>
+        <node concept="3F0A7n" id="7c_wSf78X$I" role="3EZMnx">
+          <ref role="1NtTu8" to="f6re:7c_wSf78X$G" resolve="startState" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7c_wSf78UUc" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="7c_wSf78UZA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7c_wSf78V53" role="3EZMnx">
         <property role="3F0ifm" value="Property to be checked:" />
-        <node concept="ljvvj" id="5rwK$2qfhm5" role="3F10Kt">
+        <node concept="pVoyu" id="7c_wSf78Vav" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -146,6 +161,9 @@
         <node concept="2iRfu4" id="2V4emM7BpxR" role="2iSdaV" />
         <node concept="3F1sOY" id="2V4emM7A_6F" role="3EZMnx">
           <ref role="1NtTu8" to="f6re:4ciHkhtie$A" resolve="propertyFormula" />
+        </node>
+        <node concept="pVoyu" id="7c_wSf78UOL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="14AbH$uAYRz" role="3EZMnx">
