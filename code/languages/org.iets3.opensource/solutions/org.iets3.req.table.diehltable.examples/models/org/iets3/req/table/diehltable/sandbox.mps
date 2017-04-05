@@ -220,6 +220,38 @@
         <property role="3yOfbB" value="11.9" />
       </node>
     </node>
+    <node concept="3yOg1P" id="7c_wSf7b_xP" role="3yNpS6">
+      <node concept="3yOhv_" id="7c_wSf7b_xQ" role="3yOfZN">
+        <property role="0bFFS" value="-35" />
+        <property role="0bFFY" value="66" />
+      </node>
+      <node concept="3yOhvy" id="7c_wSf7b_xR" role="3yOfZL">
+        <property role="0bFC1" value="75" />
+      </node>
+      <node concept="3yOfJE" id="7c_wSf7b_xS" role="3yOfCn" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="7c_wSf7b_xE">
+    <property role="TrG5h" value="Cool" />
+    <node concept="3yOg1P" id="7c_wSf7b_xH" role="3yNpS6">
+      <node concept="3yOhv_" id="7c_wSf7b_xI" role="3yOfZN">
+        <property role="0bFFS" value="-10" />
+      </node>
+      <node concept="3yOhvy" id="7c_wSf7b_xJ" role="3yOfZL">
+        <property role="0bFC1" value="100" />
+      </node>
+      <node concept="3yOfJE" id="7c_wSf7b_xK" role="3yOfCn">
+        <property role="3yOfbB" value="10.0" />
+      </node>
+    </node>
+    <node concept="1iZyVp" id="7c_wSf7b_xF" role="1iY3eJ">
+      <property role="1iZyVk" value="-10" />
+      <property role="1iZyVm" value="100" />
+    </node>
+    <node concept="1iZyUC" id="7c_wSf7b_xG" role="1iY3eF">
+      <property role="1iZyUF" value="10" />
+      <property role="1iZyU_" value="100" />
+    </node>
   </node>
 </model>
 
