@@ -37,6 +37,10 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -129,19 +133,23 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="2V4emM7Bpmc" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-        <node concept="ljvvj" id="2V4emM7BpoN" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="7c_wSf78Vwm" role="3EZMnx">
         <node concept="2iRfu4" id="7c_wSf78Vwn" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7c_wSf78ZJd" role="3EZMnx" />
         <node concept="3F0ifn" id="7c_wSf78Udk" role="3EZMnx">
-          <property role="3F0ifm" value="Is start state:" />
+          <property role="3F0ifm" value="is start state:" />
+          <node concept="VechU" id="7c_wSf78ZC9" role="3F10Kt">
+            <property role="Vb096" value="DARK_BLUE" />
+          </node>
+          <node concept="VSNWy" id="7c_wSf78ZJ3" role="3F10Kt">
+            <property role="1lJzqX" value="9" />
+          </node>
         </node>
         <node concept="3F0A7n" id="7c_wSf78X$I" role="3EZMnx">
           <ref role="1NtTu8" to="f6re:7c_wSf78X$G" resolve="startState" />
+          <node concept="VechU" id="7c_wSf78ZK9" role="3F10Kt">
+            <property role="Vb096" value="blue" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="7c_wSf78UUc" role="3EZMnx">

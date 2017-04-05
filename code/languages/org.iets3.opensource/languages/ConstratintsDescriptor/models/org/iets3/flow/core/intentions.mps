@@ -108,6 +108,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -576,6 +579,38 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7c_wSf79mw$" role="3cqZAp" />
+            <node concept="3SKdUt" id="7c_wSf79dap" role="3cqZAp">
+              <node concept="3SKdUq" id="7c_wSf79dar" role="3SKWNk">
+                <property role="3SKdUp" value="keep track of which nodes from the flow definition are mapped into which nodes in the dashboard states" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7c_wSf79ctQ" role="3cqZAp">
+              <node concept="3cpWsn" id="7c_wSf79ctR" role="3cpWs9">
+                <property role="TrG5h" value="stateMap" />
+                <node concept="3uibUv" id="7c_wSf79ctO" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+                  <node concept="3Tqbb2" id="7c_wSf79cE1" role="11_B2D">
+                    <ref role="ehGHo" to="f6re:4ciHkhthZzF" resolve="FlowState" />
+                  </node>
+                  <node concept="3Tqbb2" id="7c_wSf79cFQ" role="11_B2D">
+                    <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="7c_wSf79tF_" role="33vP2m">
+                  <node concept="1pGfFk" id="7c_wSf79tmg" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
+                    <node concept="3Tqbb2" id="7c_wSf79tmh" role="1pMfVU">
+                      <ref role="ehGHo" to="f6re:4ciHkhthZzF" resolve="FlowState" />
+                    </node>
+                    <node concept="3Tqbb2" id="7c_wSf79tmi" role="1pMfVU">
+                      <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7c_wSf79jRG" role="3cqZAp" />
             <node concept="3clFbF" id="5MdYwHWQc8r" role="3cqZAp">
               <node concept="37vLTI" id="5MdYwHWQdmi" role="3clFbG">
                 <node concept="Xl_RD" id="5MdYwHWQdsV" role="37vLTx">
@@ -591,6 +626,13 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7c_wSf79HFf" role="3cqZAp" />
+            <node concept="3SKdUt" id="7c_wSf79Ikp" role="3cqZAp">
+              <node concept="3SKdUq" id="7c_wSf79Ikr" role="3SKWNk">
+                <property role="3SKdUp" value="first create all the new states in the dashboard" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="7c_wSf79HNo" role="3cqZAp" />
             <node concept="2Gpval" id="2nJapj3rrZF" role="3cqZAp">
               <node concept="2GrKxI" id="2nJapj3rrZG" role="2Gsz3X">
                 <property role="TrG5h" value="state" />
@@ -613,6 +655,22 @@
                         <node concept="3Tqbb2" id="2nJapj3rrZQ" role="3zrR0E">
                           <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7c_wSf79nbT" role="3cqZAp">
+                  <node concept="2OqwBi" id="7c_wSf79nYa" role="3clFbG">
+                    <node concept="37vLTw" id="7c_wSf79nbR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7c_wSf79ctR" resolve="stateMap" />
+                    </node>
+                    <node concept="liA8E" id="7c_wSf79p6H" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                      <node concept="2GrUjf" id="7c_wSf79pha" role="37wK5m">
+                        <ref role="2Gs0qQ" node="2nJapj3rrZG" resolve="state" />
+                      </node>
+                      <node concept="37vLTw" id="7c_wSf79pWC" role="37wK5m">
+                        <ref role="3cqZAo" node="2nJapj3rrZM" resolve="stateDashboard" />
                       </node>
                     </node>
                   </node>
@@ -665,6 +723,26 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="7c_wSf799VG" role="3cqZAp">
+                  <node concept="37vLTI" id="7c_wSf79aRs" role="3clFbG">
+                    <node concept="2OqwBi" id="7c_wSf79bcd" role="37vLTx">
+                      <node concept="2GrUjf" id="7c_wSf79aXh" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2nJapj3rrZG" resolve="state" />
+                      </node>
+                      <node concept="3TrcHB" id="7c_wSf79bFc" role="2OqNvi">
+                        <ref role="3TsBF5" to="f6re:7c_wSf78X$G" resolve="startState" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7c_wSf79aex" role="37vLTJ">
+                      <node concept="37vLTw" id="7c_wSf799VE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2nJapj3rrZM" resolve="stateDashboard" />
+                      </node>
+                      <node concept="3TrcHB" id="7c_wSf79anZ" role="2OqNvi">
+                        <ref role="3TsBF5" to="xwgo:7c_wSf7986l" resolve="isStart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="6mLEnnuEunx" role="3cqZAp">
                   <node concept="3clFbS" id="6mLEnnuEunz" role="3clFbx">
                     <node concept="2Gpval" id="2nJapj3rs0b" role="3cqZAp">
@@ -710,7 +788,7 @@
                                 <ref role="3cqZAo" node="2nJapj3rs0i" resolve="dashboardNodePointer" />
                               </node>
                               <node concept="3TrEf2" id="2nJapj3rs0u" role="2OqNvi">
-                                <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                                <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                               </node>
                             </node>
                           </node>
@@ -743,7 +821,7 @@
                                   <ref role="3cqZAo" node="2nJapj3rs0i" resolve="dashboardNodePointer" />
                                 </node>
                                 <node concept="3TrEf2" id="18xeVvsL4XL" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                                  <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                                 </node>
                               </node>
                               <node concept="10QFUN" id="18xeVvsL7cE" role="37wK5m">
@@ -776,7 +854,7 @@
                                   <ref role="3cqZAo" node="2nJapj3rs0i" resolve="dashboardNodePointer" />
                                 </node>
                                 <node concept="3TrEf2" id="5MdYwHWTYKB" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                                  <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                                 </node>
                               </node>
                               <node concept="37vLTw" id="5MdYwHWTYY4" role="37wK5m">
@@ -785,7 +863,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="5MdYwHWS9xN" role="3cqZAp" />
                       </node>
                     </node>
                   </node>
@@ -821,6 +898,12 @@
               </node>
             </node>
             <node concept="3clFbH" id="2nJapj3rs0I" role="3cqZAp" />
+            <node concept="3SKdUt" id="7c_wSf79JpY" role="3cqZAp">
+              <node concept="3SKdUq" id="7c_wSf79Jq0" role="3SKWNk">
+                <property role="3SKdUp" value="now reconnect the dashboard states accordingly" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="7c_wSf79ISV" role="3cqZAp" />
             <node concept="3cpWs8" id="18xeVvsB56E" role="3cqZAp">
               <node concept="3cpWsn" id="18xeVvsB56F" role="3cpWs9">
                 <property role="TrG5h" value="createdModel" />
