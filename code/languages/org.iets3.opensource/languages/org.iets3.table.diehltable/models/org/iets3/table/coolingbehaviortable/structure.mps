@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.diehltable.structure)">
+<model ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
@@ -50,9 +50,9 @@
   </registry>
   <node concept="1TIwiD" id="6svNLu5NGPX">
     <property role="EcuMT" value="7430885610120727933" />
-    <property role="TrG5h" value="DiehlTable" />
+    <property role="TrG5h" value="CoolingBehaviorTable" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Deihl-Table Root" />
+    <property role="34LRSv" value="Cooling Behavior Root" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7XsdeKHD0t3" role="1TKVEi">
       <property role="IQ2ns" value="9177268329656878915" />
@@ -82,12 +82,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="drow" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6svNLu5NGXy" resolve="DiehlRow" />
+      <ref role="20lvS9" node="6svNLu5NGXy" resolve="CoolingBehaviorRow" />
     </node>
   </node>
   <node concept="1TIwiD" id="6svNLu5NGXy">
     <property role="EcuMT" value="7430885610120728418" />
-    <property role="TrG5h" value="DiehlRow" />
+    <property role="TrG5h" value="CoolingBehaviorRow" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6svNLu5NGXz" role="PzmwI">
       <ref role="PrY4T" to="teme:6svNLu5NCNB" resolve="Row" />
@@ -114,7 +114,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="MWPValue" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6svNLu5NNjX" resolve="MWPVal" />
+      <ref role="20lvS9" node="6svNLu5NNjX" resolve="DutyCycleVal" />
     </node>
   </node>
   <node concept="1TIwiD" id="6svNLu5NHzM">
@@ -133,7 +133,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="6svNLu5NOJG" role="PzmwI">
-      <ref role="PrY4T" node="6svNLu5NM31" resolve="DiehlIncDecCell" />
+      <ref role="PrY4T" node="6svNLu5NM31" resolve="CoolingBehaviorIncDecCell" />
     </node>
   </node>
   <node concept="1TIwiD" id="6svNLu5NHzP">
@@ -152,21 +152,21 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="6svNLu5NOJE" role="PzmwI">
-      <ref role="PrY4T" node="6svNLu5NM31" resolve="DiehlIncDecCell" />
+      <ref role="PrY4T" node="6svNLu5NM31" resolve="CoolingBehaviorIncDecCell" />
     </node>
   </node>
   <node concept="PlHQZ" id="6svNLu5NM31">
     <property role="EcuMT" value="7430885610120749249" />
-    <property role="TrG5h" value="DiehlIncDecCell" />
+    <property role="TrG5h" value="CoolingBehaviorIncDecCell" />
   </node>
   <node concept="1TIwiD" id="6svNLu5NNjX">
     <property role="EcuMT" value="7430885610120754429" />
-    <property role="TrG5h" value="MWPVal" />
-    <property role="34LRSv" value="MWP[%]" />
+    <property role="TrG5h" value="DutyCycleVal" />
+    <property role="34LRSv" value="Duty Cycle" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6svNLu5NNRK" role="1TKVEl">
       <property role="IQ2nx" value="7430885610120756720" />
-      <property role="TrG5h" value="MWPValue" />
+      <property role="TrG5h" value="dutyCycle" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
   </node>

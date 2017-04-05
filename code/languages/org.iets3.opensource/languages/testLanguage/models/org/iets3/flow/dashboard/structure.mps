@@ -45,7 +45,7 @@
   </registry>
   <node concept="1TIwiD" id="3HvtPSdglG0">
     <property role="EcuMT" value="4278269416858278656" />
-    <property role="TrG5h" value="TestConcept" />
+    <property role="TrG5h" value="FlowData" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3HvtPSdglTj" role="PzmwI">

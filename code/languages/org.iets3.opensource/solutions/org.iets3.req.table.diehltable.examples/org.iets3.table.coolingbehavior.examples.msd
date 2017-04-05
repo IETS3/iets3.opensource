@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.table.diehltable.examples" uuid="64c721d4-6a71-4647-82ed-e63fe3df6848" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.table.coolingbehavior.examples" uuid="64c721d4-6a71-4647-82ed-e63fe3df6848" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,9 +11,7 @@
     <dependency reexport="false">a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-    <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="0" />
   </languageVersions>
   <dependencyVersions>
@@ -30,7 +28,7 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="64c721d4-6a71-4647-82ed-e63fe3df6848(org.iets3.table.diehltable.examples)" version="0" />
+    <module reference="64c721d4-6a71-4647-82ed-e63fe3df6848(org.iets3.table.coolingbehavior.examples)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7a847446-4645-4e9c-937b-f5a4fd91799e(org.iets3.table.coolingbehaviortable.generator.template.main@generator)">
+<model ref="r:a3fcb7e0-153d-49b9-954e-fe810014f19e(org.iets3.utility.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="12df1801-5927-4e36-8290-a798dbf99230" name="org.iets3.utility" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />
@@ -16,7 +16,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="6svNLu5NGNm">
+  <node concept="bUwia" id="2fMLJI18WfQ">
     <property role="TrG5h" value="main" />
   </node>
 </model>
