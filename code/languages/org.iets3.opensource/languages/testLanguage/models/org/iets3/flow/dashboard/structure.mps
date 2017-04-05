@@ -54,7 +54,7 @@
     <node concept="1TJgyj" id="5cR9puhFRxd" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590093" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="stateLists" />
+      <property role="20kJfa" value="stateList" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
     </node>
