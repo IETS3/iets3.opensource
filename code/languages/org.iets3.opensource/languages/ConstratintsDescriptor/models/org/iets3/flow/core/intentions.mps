@@ -196,14 +196,14 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="4AFp3iZ2_FA">
-    <property role="TrG5h" value="populateDataModel" />
+    <property role="TrG5h" value="populateFlowModel" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="f6re:4ciHkhthZzN" resolve="FlowChunk" />
     <node concept="2S6ZIM" id="4AFp3iZ2_FB" role="2ZfVej">
       <node concept="3clFbS" id="4AFp3iZ2_FC" role="2VODD2">
         <node concept="3clFbF" id="4AFp3iZ2A5$" role="3cqZAp">
           <node concept="Xl_RD" id="4AFp3iZ2A5z" role="3clFbG">
-            <property role="Xl_RC" value="PopulateDataModel" />
+            <property role="Xl_RC" value="Populate Flow Model" />
           </node>
         </node>
       </node>
@@ -910,7 +910,7 @@
                         <ref role="3cqZAo" node="2nJapj3rrZA" resolve="flow" />
                       </node>
                       <node concept="3Tsc0h" id="2nJapj3rs0F" role="2OqNvi">
-                        <ref role="3TtcxE" to="xwgo:5cR9puhFRxd" resolve="stateLists" />
+                        <ref role="3TtcxE" to="xwgo:5cR9puhFRxd" resolve="stateList" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="2nJapj3rs0G" role="2OqNvi">
@@ -927,6 +927,11 @@
             <node concept="3SKdUt" id="7c_wSf79JpY" role="3cqZAp">
               <node concept="3SKdUq" id="7c_wSf79Jq0" role="3SKWNk">
                 <property role="3SKdUp" value="now reconnect the dashboard states accordingly" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="7c_wSf7v88M" role="3cqZAp">
+              <node concept="3SKdUq" id="7c_wSf7v88O" role="3SKWNk">
+                <property role="3SKdUp" value="add edges for previous states to avoid searching for the predecessor from the top of the tree" />
               </node>
             </node>
             <node concept="3clFbH" id="7c_wSf7egjJ" role="3cqZAp" />
@@ -956,7 +961,7 @@
                   <node concept="3clFbS" id="7c_wSf7eicK" role="2LFqv$">
                     <node concept="3cpWs8" id="7c_wSf7eiU3" role="3cqZAp">
                       <node concept="3cpWsn" id="7c_wSf7eiU6" role="3cpWs9">
-                        <property role="TrG5h" value="newSp" />
+                        <property role="TrG5h" value="nextPointer" />
                         <node concept="3Tqbb2" id="7c_wSf7eiU2" role="1tU5fm">
                           <ref role="ehGHo" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
                         </node>
@@ -989,9 +994,47 @@
                         </node>
                         <node concept="2OqwBi" id="7c_wSf7ej7_" role="37vLTJ">
                           <node concept="37vLTw" id="7c_wSf7eiX0" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="newSp" />
+                            <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="nextPointer" />
                           </node>
                           <node concept="3TrEf2" id="7c_wSf7ejh0" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="7c_wSf7vc6D" role="3cqZAp">
+                      <node concept="3cpWsn" id="7c_wSf7vc6G" role="3cpWs9">
+                        <property role="TrG5h" value="previousPointer" />
+                        <node concept="3Tqbb2" id="7c_wSf7vc6B" role="1tU5fm">
+                          <ref role="ehGHo" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
+                        </node>
+                        <node concept="2ShNRf" id="7c_wSf7vcle" role="33vP2m">
+                          <node concept="3zrR0B" id="7c_wSf7vclc" role="2ShVmc">
+                            <node concept="3Tqbb2" id="7c_wSf7vcld" role="3zrR0E">
+                              <ref role="ehGHo" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7c_wSf7vcyx" role="3cqZAp">
+                      <node concept="37vLTI" id="7c_wSf7vdux" role="3clFbG">
+                        <node concept="2OqwBi" id="7c_wSf7veki" role="37vLTx">
+                          <node concept="37vLTw" id="7c_wSf7vdyK" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7c_wSf79ctR" resolve="stateMap" />
+                          </node>
+                          <node concept="liA8E" id="7c_wSf7vgEa" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                            <node concept="2GrUjf" id="7c_wSf7vgT1" role="37wK5m">
+                              <ref role="2Gs0qQ" node="7c_wSf7ehjO" resolve="state" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="7c_wSf7vcRW" role="37vLTJ">
+                          <node concept="37vLTw" id="7c_wSf7vcyv" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7c_wSf7vc6G" resolve="previousPointer" />
+                          </node>
+                          <node concept="3TrEf2" id="7c_wSf7vdae" role="2OqNvi">
                             <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
                           </node>
                         </node>
@@ -1020,7 +1063,40 @@
                         </node>
                         <node concept="TSZUe" id="7c_wSf7e_CA" role="2OqNvi">
                           <node concept="37vLTw" id="7c_wSf7e_Xv" role="25WWJ7">
-                            <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="newSp" />
+                            <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="nextPointer" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7c_wSf7vhs3" role="3cqZAp">
+                      <node concept="2OqwBi" id="7c_wSf7vmTa" role="3clFbG">
+                        <node concept="2OqwBi" id="7c_wSf7vkEb" role="2Oq$k0">
+                          <node concept="1PxgMI" id="7c_wSf7vjOb" role="2Oq$k0">
+                            <ref role="1m5ApE" to="xwgo:5cR9puhF2lu" resolve="State" />
+                            <node concept="2OqwBi" id="7c_wSf7vhs5" role="1m5AlR">
+                              <node concept="37vLTw" id="7c_wSf7vhs6" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7c_wSf79ctR" resolve="stateMap" />
+                              </node>
+                              <node concept="liA8E" id="7c_wSf7vhs7" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                                <node concept="2OqwBi" id="7c_wSf7vhs8" role="37wK5m">
+                                  <node concept="2GrUjf" id="7c_wSf7vhs9" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="7c_wSf7eicI" resolve="oldStatePointer" />
+                                  </node>
+                                  <node concept="3TrEf2" id="7c_wSf7vhsa" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="f6re:7c_wSf78lMc" resolve="flowStatePointer" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="7c_wSf7vllw" role="2OqNvi">
+                            <ref role="3TtcxE" to="xwgo:7c_wSf7v6ea" resolve="previousStates" />
+                          </node>
+                        </node>
+                        <node concept="TSZUe" id="7c_wSf7vqwR" role="2OqNvi">
+                          <node concept="37vLTw" id="7c_wSf7vqQU" role="25WWJ7">
+                            <ref role="3cqZAo" node="7c_wSf7vc6G" resolve="previousPointer" />
                           </node>
                         </node>
                       </node>

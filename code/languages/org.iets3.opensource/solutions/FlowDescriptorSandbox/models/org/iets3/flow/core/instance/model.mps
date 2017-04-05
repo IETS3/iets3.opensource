@@ -24,7 +24,6 @@
     <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
-    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -40,6 +39,9 @@
       <concept id="7571185389806664458" name="org.iets3.flow.property.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
+    </language>
+    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
+      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
@@ -96,7 +98,7 @@
         <ref role="fxKJO" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
       </node>
       <node concept="fI48x" id="7tAIZp0gxc6" role="fI48E">
-        <ref role="fxKJO" to="q3w4:7vMAitzBZN" resolve="GlossaryChunk" />
+        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
       <node concept="fI48x" id="7tAIZp0mqbB" role="fI48E">
         <ref role="fxKJO" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
@@ -271,5 +273,6 @@
       </node>
     </node>
   </node>
+  <node concept="2W8dSH" id="7c_wSf7tPeV" />
 </model>
 

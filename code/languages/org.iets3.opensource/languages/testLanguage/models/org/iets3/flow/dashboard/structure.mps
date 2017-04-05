@@ -94,6 +94,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7c_wSf79K0w" resolve="StatePointer" />
     </node>
+    <node concept="1TJgyj" id="7c_wSf7v6ea" role="1TKVEi">
+      <property role="IQ2ns" value="8297182490510779274" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="previousStates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7c_wSf79K0w" resolve="StatePointer" />
+    </node>
     <node concept="PrWs8" id="7c_wSf7jSy$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
