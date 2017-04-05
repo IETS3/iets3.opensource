@@ -15,10 +15,10 @@
         <property id="9177268329656752696" name="Min" index="1iZyVk" />
         <property id="9177268329656752698" name="Max" index="1iZyVm" />
       </concept>
-      <concept id="7430885610120754429" name="org.iets3.table.coolingbehaviortable.structure.MWPVal" flags="ng" index="3yOfJE">
-        <property id="7430885610120756720" name="MWPValue" index="3yOfbB" />
+      <concept id="7430885610120754429" name="org.iets3.table.coolingbehaviortable.structure.DutyCycleVal" flags="ng" index="3yOfJE">
+        <property id="7430885610120756720" name="dutyCycle" index="3yOfbB" />
       </concept>
-      <concept id="7430885610120728418" name="org.iets3.table.coolingbehaviortable.structure.DiehlRow" flags="ng" index="3yOg1P">
+      <concept id="7430885610120728418" name="org.iets3.table.coolingbehaviortable.structure.CoolingBehaviorRow" flags="ng" index="3yOg1P">
         <child id="7430885610120754432" name="MWPValue" index="3yOfCn" />
         <child id="7430885610120753382" name="DecreasingInterval" index="3yOfZL" />
         <child id="7430885610120753380" name="IncreasingInterval" index="3yOfZN" />
@@ -195,6 +195,30 @@
     <node concept="1iZyUC" id="3btORKMXvba" role="1iY3eF">
       <property role="1iZyUF" value="-30" />
       <property role="1iZyU_" value="75" />
+    </node>
+  </node>
+  <node concept="3yOg9E" id="1CLNyyOT0lb">
+    <property role="TrG5h" value="DemoTable" />
+    <node concept="1iZyVp" id="1CLNyyOT0lc" role="1iY3eJ">
+      <property role="1iZyVk" value="-35" />
+      <property role="1iZyVm" value="80" />
+    </node>
+    <node concept="1iZyUC" id="1CLNyyOT0ld" role="1iY3eF">
+      <property role="1iZyUF" value="-30" />
+      <property role="1iZyU_" value="75" />
+    </node>
+    <node concept="3yOg1P" id="1CLNyyP5d5Q" role="3yNpS6">
+      <node concept="3yOhv_" id="1CLNyyP5d5R" role="3yOfZN">
+        <property role="0bFFY" value="80" />
+        <property role="0bFFS" value="66" />
+      </node>
+      <node concept="3yOhvy" id="1CLNyyP5d5S" role="3yOfZL">
+        <property role="0bFC3" value="75" />
+        <property role="0bFC1" value="74" />
+      </node>
+      <node concept="3yOfJE" id="1CLNyyP5d5T" role="3yOfCn">
+        <property role="3yOfbB" value="11.9" />
+      </node>
     </node>
   </node>
 </model>

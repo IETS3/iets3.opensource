@@ -2164,7 +2164,7 @@
               <node concept="3cpWsn" id="7tAIZp0c8eJ" role="3cpWs9">
                 <property role="TrG5h" value="table" />
                 <node concept="3Tqbb2" id="7tAIZp0c8eE" role="1tU5fm">
-                  <ref role="ehGHo" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                  <ref role="ehGHo" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
                 </node>
                 <node concept="2OqwBi" id="7tAIZp0cbGm" role="33vP2m">
                   <node concept="2OqwBi" id="7tAIZp0c9hL" role="2Oq$k0">
@@ -2172,7 +2172,7 @@
                       <ref role="3cqZAo" node="7tAIZp0bSXm" resolve="model" />
                     </node>
                     <node concept="2RRcyG" id="7tAIZp0c9hN" role="2OqNvi">
-                      <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                      <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="7tAIZp0cecn" role="2OqNvi" />
@@ -2238,7 +2238,7 @@
                 <ref role="3cqZAo" node="7tAIZp0bSXm" resolve="model" />
               </node>
               <node concept="2RRcyG" id="7tAIZp0c_Ly" role="2OqNvi">
-                <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
               </node>
             </node>
             <node concept="3GX2aA" id="7tAIZp0cHoR" role="2OqNvi" />
@@ -2451,7 +2451,7 @@
               <node concept="3cpWsn" id="7tAIZp0d3Pq" role="3cpWs9">
                 <property role="TrG5h" value="table" />
                 <node concept="3Tqbb2" id="7tAIZp0d3Pr" role="1tU5fm">
-                  <ref role="ehGHo" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                  <ref role="ehGHo" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
                 </node>
                 <node concept="2OqwBi" id="7tAIZp0d3Ps" role="33vP2m">
                   <node concept="2OqwBi" id="7tAIZp0d3Pt" role="2Oq$k0">
@@ -2459,7 +2459,7 @@
                       <ref role="3cqZAo" node="7tAIZp0d2BI" resolve="model" />
                     </node>
                     <node concept="2RRcyG" id="7tAIZp0d3Pv" role="2OqNvi">
-                      <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                      <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="7tAIZp0d3Pw" role="2OqNvi" />
@@ -2585,7 +2585,7 @@
                 <ref role="3cqZAo" node="7tAIZp0d2BI" resolve="model" />
               </node>
               <node concept="2RRcyG" id="7tAIZp0d3PU" role="2OqNvi">
-                <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="DiehlTable" />
+                <ref role="2RRcyH" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
               </node>
             </node>
             <node concept="3GX2aA" id="7tAIZp0d3PV" role="2OqNvi" />
