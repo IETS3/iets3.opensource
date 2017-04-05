@@ -79,6 +79,7 @@
     <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -170,6 +171,7 @@
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)" version="0" />
     <module reference="af3ce814-fe75-4814-9ec9-1c4a57d0f39d(org.iets3.table.core)" version="0" />
+    <module reference="12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</extendedLanguage>
