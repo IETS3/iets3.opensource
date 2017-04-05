@@ -14,6 +14,7 @@
     <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -50,9 +51,14 @@
       </concept>
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="2314756748950088783" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableReference" flags="ng" index="3yx0qK" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1178539929008" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableDeclaration" flags="ig" index="1At2My">
@@ -255,6 +261,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F2HdR" id="7c_wSf7eUIc" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:7c_wSf7b_f4" resolve="nextStates" />
+        <node concept="l2Vlx" id="7c_wSf7eUIe" role="2czzBx" />
+        <node concept="pj6Ft" id="7c_wSf7gaf_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="5cR9puhHhJD" role="2iSdaV" />
     </node>
   </node>
@@ -437,7 +450,7 @@
                             <ref role="2Gs0qQ" node="6mLEnnuu3OB" resolve="nodePointer" />
                           </node>
                           <node concept="3TrEf2" id="2fMLJI1cOmX" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                            <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                           </node>
                         </node>
                       </node>
@@ -452,7 +465,7 @@
                           <ref role="2Gs0qQ" node="6mLEnnuu3OB" resolve="nodePointer" />
                         </node>
                         <node concept="3TrEf2" id="2fMLJI1cP0K" role="2OqNvi">
-                          <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                          <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                         </node>
                       </node>
                       <node concept="0kSF2" id="2fMLJI1cPk5" role="37wK5m">
@@ -469,7 +482,7 @@
                             <ref role="2Gs0qQ" node="6mLEnnuu3OB" resolve="nodePointer" />
                           </node>
                           <node concept="3TrEf2" id="2fMLJI1cR88" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointerName" />
+                            <ref role="3Tt5mk" to="xwgo:5cR9puhFRx_" resolve="pointer" />
                           </node>
                         </node>
                       </node>
@@ -514,6 +527,18 @@
         </node>
       </node>
       <node concept="l2Vlx" id="23Wc6usReTu" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7c_wSf7gafk">
+    <ref role="1XX52x" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
+    <node concept="1iCGBv" id="7c_wSf7gafm" role="2wV5jI">
+      <ref role="1NtTu8" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+      <node concept="1sVBvm" id="7c_wSf7gafo" role="1sWHZn">
+        <node concept="3F0A7n" id="7c_wSf7gafy" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

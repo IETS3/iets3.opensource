@@ -94,6 +94,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7c_wSf79K0w" resolve="StatePointer" />
     </node>
+    <node concept="PrWs8" id="7c_wSf7jSy$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cR9puhFRx$">
     <property role="EcuMT" value="5996302761781590116" />
