@@ -15,6 +15,7 @@
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
     <dependency reexport="false">7a870bb7-87b6-411e-92c2-eb3e9e856127(org.iets3.req.priority)</dependency>
     <dependency reexport="false">f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)</dependency>
+    <dependency reexport="false">88063d90-aa0a-4f17-8757-92c0f1692f3d(com.mbeddr.analyses.z3)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -48,8 +49,8 @@
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
     <language slang="l:7a870bb7-87b6-411e-92c2-eb3e9e856127:org.iets3.req.priority" version="0" />
-    <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.diehltable" version="-1" />
+    <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -59,6 +60,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="88063d90-aa0a-4f17-8757-92c0f1692f3d(com.mbeddr.analyses.z3)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />

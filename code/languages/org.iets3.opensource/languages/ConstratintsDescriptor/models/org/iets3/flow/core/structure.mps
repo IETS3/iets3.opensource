@@ -85,6 +85,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="47lw:3QsrawRgNjk" resolve="PropertyFormula" />
     </node>
+    <node concept="1TJgyj" id="3UE$O3zNaoQ" role="1TKVEi">
+      <property role="IQ2ns" value="4515583483301373494" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nextState" />
+      <ref role="20lvS9" node="4ciHkhthZzF" resolve="FlowState" />
+    </node>
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
