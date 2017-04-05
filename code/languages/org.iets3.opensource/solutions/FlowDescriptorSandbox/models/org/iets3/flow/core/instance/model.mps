@@ -11,7 +11,7 @@
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="-1" />
-    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
+    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable" version="-1" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -60,6 +60,7 @@
         <property id="1235726657816716306" name="text" index="fwOFb" />
       </concept>
       <concept id="4833124655349364971" name="org.iets3.flow.core.structure.FlowState" flags="ng" index="ulkQJ">
+        <property id="8297182490504976684" name="startState" index="2O1_EJ" />
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="propertyFormula" index="um_Ly" />
@@ -114,6 +115,7 @@
     <property role="TrG5h" value="state chart root name" />
     <node concept="ulkQJ" id="38QI5jjP83F" role="ulkQK">
       <property role="TrG5h" value="Instance Check " />
+      <property role="2O1_EJ" value="true" />
       <node concept="2O1dW8" id="7c_wSf78Tv1" role="2O1dWi">
         <ref role="2O1dWf" node="23Wc6ut1Xkv" resolve="Empty requirement model and no glossary terms defined" />
       </node>
@@ -299,8 +301,12 @@
       </node>
     </node>
   </node>
-  <node concept="2W8dSH" id="1CLNyyP9zvo" />
-  <node concept="3VZ1SI" id="1CLNyyP9zvq" />
+  <node concept="30MgvN" id="1CLNyyP9zvt">
+    <node concept="30Mgg9" id="1CLNyyP9zvC" role="30Mguc">
+      <property role="TrG5h" value="abid1" />
+    </node>
+  </node>
+  <node concept="2skrmn" id="1CLNyyP9zvs" />
   <node concept="2SbYGP" id="1CLNyyP9zvr">
     <property role="TrG5h" value="Cool" />
     <node concept="2SbYGw" id="1CLNyyP9zvx" role="Cbewh">
@@ -311,11 +317,7 @@
       </node>
     </node>
   </node>
-  <node concept="2skrmn" id="1CLNyyP9zvs" />
-  <node concept="30MgvN" id="1CLNyyP9zvt">
-    <node concept="30Mgg9" id="1CLNyyP9zvC" role="30Mguc">
-      <property role="TrG5h" value="abid1" />
-    </node>
-  </node>
+  <node concept="3VZ1SI" id="1CLNyyP9zvq" />
+  <node concept="2W8dSH" id="1CLNyyP9zvo" />
 </model>
 

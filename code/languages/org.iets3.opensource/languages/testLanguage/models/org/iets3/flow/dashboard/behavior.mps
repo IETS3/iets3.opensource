@@ -63,6 +63,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
@@ -145,6 +146,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -259,7 +261,25 @@
       <property role="3TUv4t" value="false" />
       <node concept="H_c77" id="23Wc6usUnq8" role="1tU5fm" />
     </node>
+    <node concept="2tJIrI" id="7c_wSf792TS" role="jymVt" />
     <node concept="2tJIrI" id="23Wc6usTQAc" role="jymVt" />
+    <node concept="3clFb_" id="7c_wSf797wx" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getStartState" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7c_wSf797w$" role="3clF47">
+        <node concept="3cpWs6" id="7c_wSf7a5Ul" role="3cqZAp">
+          <node concept="10Nm6u" id="7c_wSf7a6ck" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7c_wSf797d0" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7c_wSf797Oc" role="3clF45">
+        <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7c_wSf796Ty" role="jymVt" />
     <node concept="3clFb_" id="23Wc6usTQFM" role="jymVt">
       <property role="TrG5h" value="calculateMethodByNodeName" />
       <property role="DiZV1" value="false" />

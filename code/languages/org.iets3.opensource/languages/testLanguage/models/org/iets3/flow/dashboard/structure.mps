@@ -68,6 +68,11 @@
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7c_wSf7986l" role="1TKVEl">
+      <property role="IQ2nx" value="8297182490505019797" />
+      <property role="TrG5h" value="isStart" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5cR9puhFRxn" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590103" />
       <property role="20lmBu" value="aggregation" />
@@ -82,6 +87,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5cR9puhFRx$" resolve="NodePointer" />
     </node>
+    <node concept="1TJgyj" id="7c_wSf7b_f4" role="1TKVEi">
+      <property role="IQ2ns" value="8297182490505663428" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nextStates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7c_wSf79K0w" resolve="StatePointer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cR9puhFRx$">
     <property role="EcuMT" value="5996302761781590116" />
@@ -90,7 +102,7 @@
     <node concept="1TJgyj" id="5cR9puhFRx_" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590117" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="pointerName" />
+      <property role="20kJfa" value="pointer" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
@@ -100,6 +112,18 @@
     <property role="TrG5h" value="DashboardHintDisplayer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7c_wSf79K0w">
+    <property role="EcuMT" value="8297182490505183264" />
+    <property role="TrG5h" value="StatePointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7c_wSf79K0x" role="1TKVEi">
+      <property role="IQ2ns" value="8297182490505183265" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
+    </node>
   </node>
 </model>
 
