@@ -11,7 +11,7 @@
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="-1" />
-    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.diehltable" version="-1" />
+    <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -41,17 +41,6 @@
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
     </language>
-    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-      </concept>
-    </language>
-    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
-      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
-    </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
         <reference id="1235726657816438061" name="conceptToBeCreated" index="fxKJO" />
@@ -74,19 +63,6 @@
         <reference id="8297182490504813708" name="flowStatePointer" index="2O1dWf" />
       </concept>
     </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
-      </concept>
-    </language>
-    <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
-      <concept id="8479184967780604356" name="org.iets3.core.users.structure.User" flags="ng" index="30Mgg9" />
-      <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN">
-        <child id="8479184967780604481" name="users" index="30Mguc" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
@@ -103,12 +79,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-    </language>
-    <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
-      <concept id="5151426049053136028" name="org.iets3.req.core.structure.RequirementsChunk" flags="ng" index="3VZ1SI" />
-    </language>
-    <language id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw">
-      <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn" />
     </language>
   </registry>
   <node concept="ulkQR" id="4ciHkhtidcc">
@@ -301,23 +271,5 @@
       </node>
     </node>
   </node>
-  <node concept="30MgvN" id="1CLNyyP9zvt">
-    <node concept="30Mgg9" id="1CLNyyP9zvC" role="30Mguc">
-      <property role="TrG5h" value="abid1" />
-    </node>
-  </node>
-  <node concept="2skrmn" id="1CLNyyP9zvs" />
-  <node concept="2SbYGP" id="1CLNyyP9zvr">
-    <property role="TrG5h" value="Cool" />
-    <node concept="2SbYGw" id="1CLNyyP9zvx" role="Cbewh">
-      <property role="TrG5h" value="cool" />
-      <node concept="9PVaO" id="1CLNyyP9zvy" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
-  <node concept="3VZ1SI" id="1CLNyyP9zvq" />
-  <node concept="2W8dSH" id="1CLNyyP9zvo" />
 </model>
 
