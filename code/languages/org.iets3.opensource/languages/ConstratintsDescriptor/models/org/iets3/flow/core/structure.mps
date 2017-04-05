@@ -85,11 +85,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="47lw:3QsrawRgNjk" resolve="PropertyFormula" />
     </node>
-    <node concept="1TJgyj" id="3UE$O3zNaoQ" role="1TKVEi">
-      <property role="IQ2ns" value="4515583483301373494" />
+    <node concept="1TJgyj" id="7c_wSf78lMh" role="1TKVEi">
+      <property role="IQ2ns" value="8297182490504813713" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="nextState" />
-      <ref role="20lvS9" node="4ciHkhthZzF" resolve="FlowState" />
+      <property role="20kJfa" value="nextStates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7c_wSf78lMb" resolve="FlowStatePointer" />
     </node>
     <node concept="PrWs8" id="4ciHkhthZ$S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -160,6 +161,18 @@
     <property role="TrG5h" value="PropertyExtender" />
     <property role="3GE5qa" value="Property" />
     <ref role="1TJDcQ" to="tp25:2iMJRNxD2Yw" resolve="PropertyIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="7c_wSf78lMb">
+    <property role="EcuMT" value="8297182490504813707" />
+    <property role="TrG5h" value="FlowStatePointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7c_wSf78lMc" role="1TKVEi">
+      <property role="IQ2ns" value="8297182490504813708" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="flowStatePointer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4ciHkhthZzF" resolve="FlowState" />
+    </node>
   </node>
 </model>
 

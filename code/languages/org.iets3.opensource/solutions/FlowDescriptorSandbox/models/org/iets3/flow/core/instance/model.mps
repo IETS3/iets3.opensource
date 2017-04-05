@@ -52,10 +52,14 @@
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="propertyFormula" index="um_Ly" />
+        <child id="8297182490504813713" name="nextStates" index="2O1dWi" />
       </concept>
       <concept id="4833124655349364979" name="org.iets3.flow.core.structure.FlowChunk" flags="ng" index="ulkQR">
         <child id="4833124655349364980" name="stateInstances" index="ulkQK" />
         <child id="3369881559473720185" name="targetDashboardLanguage" index="2Dlz8l" />
+      </concept>
+      <concept id="8297182490504813707" name="org.iets3.flow.core.structure.FlowStatePointer" flags="ng" index="2O1dW8">
+        <reference id="8297182490504813708" name="flowStatePointer" index="2O1dWf" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -101,6 +105,9 @@
           <ref role="35c_gD" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
         </node>
       </node>
+      <node concept="2O1dW8" id="7c_wSf78Tv1" role="2O1dWi">
+        <ref role="2O1dWf" node="23Wc6ut1Xkv" resolve="Empty requirement model and no glossary terms defined" />
+      </node>
     </node>
     <node concept="ulkQJ" id="23Wc6ut1Xkv" role="ulkQK">
       <property role="TrG5h" value="Empty requirement model and no glossary terms defined" />
@@ -125,6 +132,12 @@
           </node>
         </node>
       </node>
+      <node concept="2O1dW8" id="7c_wSf78Tv3" role="2O1dWi">
+        <ref role="2O1dWf" node="6mLEnnuDUFU" resolve="Requirements model complete and glossary terms not defined" />
+      </node>
+      <node concept="2O1dW8" id="7c_wSf78Tv8" role="2O1dWi">
+        <ref role="2O1dWf" node="4mvkNAhF8uM" resolve="Requirements model not complete and glossary terms defined" />
+      </node>
     </node>
     <node concept="ulkQJ" id="6mLEnnuDUFU" role="ulkQK">
       <property role="TrG5h" value="Requirements model complete and glossary terms not defined" />
@@ -147,6 +160,9 @@
           </node>
         </node>
       </node>
+      <node concept="2O1dW8" id="7c_wSf78Tvc" role="2O1dWi">
+        <ref role="2O1dWf" node="7tAIZp0e7$v" resolve="Requirements model complete and glossary terms defined" />
+      </node>
     </node>
     <node concept="ulkQJ" id="4mvkNAhF8uM" role="ulkQK">
       <property role="TrG5h" value="Requirements model not complete and glossary terms defined" />
@@ -168,6 +184,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2O1dW8" id="7c_wSf78Tve" role="2O1dWi">
+        <ref role="2O1dWf" node="7tAIZp0e7$v" resolve="Requirements model complete and glossary terms defined" />
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7$v" role="ulkQK">
@@ -202,6 +221,9 @@
           </node>
         </node>
       </node>
+      <node concept="2O1dW8" id="7c_wSf78Tvg" role="2O1dWi">
+        <ref role="2O1dWf" node="7tAIZp0e7_V" resolve="Empty functional behavior with Min and Max thresholds set" />
+      </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
@@ -223,6 +245,9 @@
             <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
           </node>
         </node>
+      </node>
+      <node concept="2O1dW8" id="7c_wSf78Tvi" role="2O1dWi">
+        <ref role="2O1dWf" node="7tAIZp0e7Bp" resolve="Controller behavior complete" />
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7Bp" role="ulkQK">
