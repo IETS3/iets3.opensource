@@ -83,8 +83,8 @@
     </node>
     <node concept="1TJgyi" id="7c_wSf7$nnr" role="1TKVEl">
       <property role="IQ2nx" value="8297182490512160219" />
-      <property role="TrG5h" value="isSatisfied" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <property role="TrG5h" value="mode" />
+      <ref role="AX2Wp" node="7c_wSf7Bhjq" resolve="FlowStateMode" />
     </node>
     <node concept="1TJgyj" id="5cR9puhFRxn" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590103" />
