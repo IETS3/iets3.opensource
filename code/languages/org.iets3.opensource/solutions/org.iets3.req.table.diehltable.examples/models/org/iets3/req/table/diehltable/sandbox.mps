@@ -197,23 +197,5 @@
       <property role="1iZyU_" value="75" />
     </node>
   </node>
-  <node concept="3yOg9E" id="1CLNyyOT0lb">
-    <property role="TrG5h" value="DemoTable" />
-    <node concept="3yOg1P" id="7c_wSf7cmWq" role="3yNpS6">
-      <node concept="3yOhv_" id="7c_wSf7cmWr" role="3yOfZN">
-        <property role="0bFFS" value="-35" />
-      </node>
-      <node concept="3yOhvy" id="7c_wSf7cmWs" role="3yOfZL" />
-      <node concept="3yOfJE" id="7c_wSf7cmWt" role="3yOfCn" />
-    </node>
-    <node concept="1iZyVp" id="1CLNyyOT0lc" role="1iY3eJ">
-      <property role="1iZyVk" value="-35" />
-      <property role="1iZyVm" value="100" />
-    </node>
-    <node concept="1iZyUC" id="1CLNyyOT0ld" role="1iY3eF">
-      <property role="1iZyUF" value="-30" />
-      <property role="1iZyU_" value="80" />
-    </node>
-  </node>
 </model>
 

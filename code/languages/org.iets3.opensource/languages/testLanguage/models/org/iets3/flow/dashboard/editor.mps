@@ -302,7 +302,7 @@
             <node concept="3clFbS" id="6IVOdeOQmrP" role="2VODD2">
               <node concept="3cpWs8" id="23Wc6usWsZ0" role="3cqZAp">
                 <node concept="3cpWsn" id="23Wc6usWsZ1" role="3cpWs9">
-                  <property role="TrG5h" value="findLastTrue" />
+                  <property role="TrG5h" value="findLastSats" />
                   <node concept="_YKpA" id="7c_wSf7uTND" role="1tU5fm">
                     <node concept="3Tqbb2" id="7c_wSf7uUYd" role="_ZDj9">
                       <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
@@ -311,33 +311,76 @@
                   <node concept="2OqwBi" id="23Wc6usWsZ2" role="33vP2m">
                     <node concept="7Obwk" id="23Wc6usWsZ3" role="2Oq$k0" />
                     <node concept="2qgKlT" id="23Wc6usWsZ4" role="2OqNvi">
-                      <ref role="37wK5l" to="73fw:23Wc6usUwlN" resolve="findLastTrue" />
+                      <ref role="37wK5l" to="73fw:23Wc6usUwlN" resolve="findLastSatStates" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="23Wc6usWtLh" role="3cqZAp">
-                <node concept="2OqwBi" id="23Wc6usWtLe" role="3clFbG">
-                  <node concept="10M0yZ" id="23Wc6usWtLf" role="2Oq$k0">
+              <node concept="3clFbF" id="7c_wSf7zNZb" role="3cqZAp">
+                <node concept="2OqwBi" id="7c_wSf7zNZ8" role="3clFbG">
+                  <node concept="10M0yZ" id="7c_wSf7zNZ9" role="2Oq$k0">
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
-                  <node concept="liA8E" id="23Wc6usWtLg" role="2OqNvi">
+                  <node concept="liA8E" id="7c_wSf7zNZa" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="23Wc6usWwMM" role="37wK5m">
-                      <node concept="37vLTw" id="23Wc6usWxao" role="3uHU7w">
-                        <ref role="3cqZAo" node="23Wc6usWsZ1" resolve="findLastTrue" />
+                    <node concept="Xl_RD" id="7c_wSf7zOJW" role="37wK5m">
+                      <property role="Xl_RC" value="----- Satisfied States -----" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2Gpval" id="7c_wSf7zBLl" role="3cqZAp">
+                <node concept="2GrKxI" id="7c_wSf7zBLn" role="2Gsz3X">
+                  <property role="TrG5h" value="state" />
+                </node>
+                <node concept="37vLTw" id="7c_wSf7zJd2" role="2GsD0m">
+                  <ref role="3cqZAo" node="23Wc6usWsZ1" resolve="findLastSats" />
+                </node>
+                <node concept="3clFbS" id="7c_wSf7zBLr" role="2LFqv$">
+                  <node concept="3clFbF" id="23Wc6usWtLh" role="3cqZAp">
+                    <node concept="2OqwBi" id="23Wc6usWtLe" role="3clFbG">
+                      <node concept="10M0yZ" id="23Wc6usWtLf" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
-                      <node concept="Xl_RD" id="23Wc6usWu6P" role="3uHU7B">
-                        <property role="Xl_RC" value="the index is !!!! ............" />
+                      <node concept="liA8E" id="23Wc6usWtLg" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="3cpWs3" id="7c_wSf7$90g" role="37wK5m">
+                          <node concept="2OqwBi" id="7c_wSf7$bon" role="3uHU7w">
+                            <node concept="2GrUjf" id="7c_wSf7$awk" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="7c_wSf7zBLn" resolve="state" />
+                            </node>
+                            <node concept="3TrcHB" id="7c_wSf7$cr3" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="7c_wSf7$6k9" role="3uHU7B">
+                            <property role="Xl_RC" value="   " />
+                          </node>
+                        </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7c_wSf7$0PT" role="3cqZAp">
+                <node concept="2OqwBi" id="7c_wSf7$0PU" role="3clFbG">
+                  <node concept="10M0yZ" id="7c_wSf7$0PV" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="7c_wSf7$0PW" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="Xl_RD" id="7c_wSf7$0PX" role="37wK5m">
+                      <property role="Xl_RC" value="----- Satisfied States -----" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3clFbF" id="6IVOdeOQpm7" role="3cqZAp">
                 <node concept="37vLTw" id="23Wc6usWsZ5" role="3clFbG">
-                  <ref role="3cqZAo" node="23Wc6usWsZ1" resolve="findLastTrue" />
+                  <ref role="3cqZAo" node="23Wc6usWsZ1" resolve="findLastSats" />
                 </node>
               </node>
             </node>
