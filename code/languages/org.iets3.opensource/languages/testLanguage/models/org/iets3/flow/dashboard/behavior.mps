@@ -29,9 +29,6 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -93,9 +90,9 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -115,6 +112,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -912,76 +913,61 @@
             <ref role="3cqZAo" node="7c_wSf7u2LM" resolve="statesToSearch" />
           </node>
           <node concept="3clFbS" id="7c_wSf7v4s$" role="2LFqv$">
-            <node concept="3clFbJ" id="7c_wSf7wLui" role="3cqZAp">
-              <node concept="1rXfSq" id="7c_wSf7wLA2" role="3clFbw">
-                <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
-                <node concept="2OqwBi" id="7c_wSf7wLQa" role="37wK5m">
-                  <node concept="2GrUjf" id="7c_wSf7wLEE" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
+            <node concept="3clFbH" id="7c_wSf7FrZJ" role="3cqZAp" />
+            <node concept="3clFbJ" id="7c_wSf7Fszs" role="3cqZAp">
+              <node concept="3clFbS" id="7c_wSf7Fszu" role="3clFbx">
+                <node concept="3SKdUt" id="7c_wSf7FDbA" role="3cqZAp">
+                  <node concept="3SKdUq" id="7c_wSf7FDbC" role="3SKWNk">
+                    <property role="3SKdUp" value="if the state is final no need to evaluate and just return the state itself" />
                   </node>
-                  <node concept="3TrEf2" id="7c_wSf7wMcP" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
+                </node>
+                <node concept="3clFbF" id="7c_wSf7FtHE" role="3cqZAp">
+                  <node concept="2OqwBi" id="7c_wSf7FwLZ" role="3clFbG">
+                    <node concept="37vLTw" id="7c_wSf7FtHC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
+                    </node>
+                    <node concept="liA8E" id="7c_wSf7FCjp" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="2GrUjf" id="7c_wSf7FCtA" role="37wK5m">
+                        <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
+                      </node>
+                    </node>
                   </node>
+                </node>
+                <node concept="3clFbH" id="7c_wSf7FSSv" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="7c_wSf7Ft4m" role="3clFbw">
+                <node concept="2GrUjf" id="7c_wSf7FsRC" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
+                </node>
+                <node concept="3TrcHB" id="7c_wSf7FtDO" role="2OqNvi">
+                  <ref role="3TsBF5" to="xwgo:7c_wSf7BDZ6" resolve="isFinal" />
                 </node>
               </node>
-              <node concept="3clFbS" id="7c_wSf7wLuk" role="3clFbx">
-                <node concept="3SKdUt" id="7c_wSf7xzDS" role="3cqZAp">
-                  <node concept="3SKdUq" id="7c_wSf7xzDU" role="3SKWNk">
-                    <property role="3SKdUp" value="now perform the search on the next states if they exist" />
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="7c_wSf7yFQF" role="3cqZAp">
-                  <node concept="3SKdUq" id="7c_wSf7yFQH" role="3SKWNk">
-                    <property role="3SKdUp" value="if no new states exist this is the final state and we return the state itself" />
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="7c_wSf7ymdL" role="3cqZAp">
-                  <node concept="3clFbS" id="7c_wSf7ymdN" role="3clFbx">
-                    <node concept="3clFbF" id="7c_wSf7x3$T" role="3cqZAp">
-                      <node concept="2OqwBi" id="7c_wSf7x56A" role="3clFbG">
-                        <node concept="37vLTw" id="7c_wSf7x3$R" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
-                        </node>
-                        <node concept="liA8E" id="7c_wSf7x6Z1" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
-                          <node concept="1rXfSq" id="7c_wSf7x78U" role="37wK5m">
-                            <ref role="37wK5l" node="7c_wSf7u1TJ" resolve="findStateOfModel" />
-                            <node concept="1rXfSq" id="7c_wSf7yd0Q" role="37wK5m">
-                              <ref role="37wK5l" node="7c_wSf7xT4h" resolve="collectNextStates" />
-                              <node concept="2GrUjf" id="7c_wSf7ydxj" role="37wK5m">
-                                <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+              <node concept="3eNFk2" id="7c_wSf7FDuy" role="3eNLev">
+                <node concept="3clFbS" id="7c_wSf7FDu$" role="3eOfB_">
+                  <node concept="3SKdUt" id="7c_wSf7xzDS" role="3cqZAp">
+                    <node concept="3SKdUq" id="7c_wSf7xzDU" role="3SKWNk">
+                      <property role="3SKdUp" value="if the state is not satisfied by the model then we have been" />
                     </node>
                   </node>
-                  <node concept="3fqX7Q" id="7c_wSf7ymST" role="3clFbw">
-                    <node concept="2OqwBi" id="7c_wSf7yqJO" role="3fr31v">
-                      <node concept="2OqwBi" id="7c_wSf7yn7t" role="2Oq$k0">
-                        <node concept="2GrUjf" id="7c_wSf7ymWf" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
-                        </node>
-                        <node concept="3Tsc0h" id="7c_wSf7yoDZ" role="2OqNvi">
-                          <ref role="3TtcxE" to="xwgo:7c_wSf7b_f4" resolve="nextStates" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="7c_wSf7zgj_" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty():boolean" resolve="isEmpty" />
-                      </node>
+                  <node concept="3SKdUt" id="7c_wSf7FPi6" role="3cqZAp">
+                    <node concept="3SKdUq" id="7c_wSf7FPi8" role="3SKWNk">
+                      <property role="3SKdUp" value="here before and can continue to the children states" />
                     </node>
                   </node>
-                  <node concept="9aQIb" id="7c_wSf7yJ_D" role="9aQIa">
-                    <node concept="3clFbS" id="7c_wSf7yJ_E" role="9aQI4">
-                      <node concept="3clFbF" id="7c_wSf7yK_a" role="3cqZAp">
-                        <node concept="2OqwBi" id="7c_wSf7yM7_" role="3clFbG">
-                          <node concept="37vLTw" id="7c_wSf7yK_9" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
-                          </node>
-                          <node concept="liA8E" id="7c_wSf7yTD_" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                            <node concept="2GrUjf" id="7c_wSf7yTNM" role="37wK5m">
+                  <node concept="3clFbF" id="7c_wSf7FPMd" role="3cqZAp">
+                    <node concept="2OqwBi" id="7c_wSf7x56A" role="3clFbG">
+                      <node concept="37vLTw" id="7c_wSf7x3$R" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
+                      </node>
+                      <node concept="liA8E" id="7c_wSf7x6Z1" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                        <node concept="1rXfSq" id="7c_wSf7x78U" role="37wK5m">
+                          <ref role="37wK5l" node="7c_wSf7u1TJ" resolve="findStateOfModel" />
+                          <node concept="1rXfSq" id="7c_wSf7yd0Q" role="37wK5m">
+                            <ref role="37wK5l" node="7c_wSf7xT4h" resolve="collectNextStates" />
+                            <node concept="2GrUjf" id="7c_wSf7ydxj" role="37wK5m">
                               <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
                             </node>
                           </node>
@@ -989,39 +975,56 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="7c_wSf7FT7P" role="3cqZAp" />
+                </node>
+                <node concept="3fqX7Q" id="7c_wSf7BiYu" role="3eO9$A">
+                  <node concept="1rXfSq" id="7c_wSf7BiYw" role="3fr31v">
+                    <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                    <node concept="2OqwBi" id="7c_wSf7BiYx" role="37wK5m">
+                      <node concept="2GrUjf" id="7c_wSf7BiYy" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
+                      </node>
+                      <node concept="3TrEf2" id="7c_wSf7BiYz" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
-              <node concept="9aQIb" id="7c_wSf7x_Jp" role="9aQIa">
-                <node concept="3clFbS" id="7c_wSf7x_Jq" role="9aQI4">
-                  <node concept="3SKdUt" id="7c_wSf7xA1e" role="3cqZAp">
-                    <node concept="3SKdUq" id="7c_wSf7xA1f" role="3SKWNk">
-                      <property role="3SKdUp" value="if the formula is not satisfied then that means the previous state" />
+              <node concept="3eNFk2" id="7c_wSf7FQ6Q" role="3eNLev">
+                <node concept="3clFbS" id="7c_wSf7FQ6R" role="3eOfB_">
+                  <node concept="3SKdUt" id="7c_wSf7FQ6S" role="3cqZAp">
+                    <node concept="3SKdUq" id="7c_wSf7FQ6T" role="3SKWNk">
+                      <property role="3SKdUp" value="if the formula is satisfied in the model then that means " />
                     </node>
                   </node>
-                  <node concept="3SKdUt" id="7c_wSf7xA1K" role="3cqZAp">
-                    <node concept="3SKdUq" id="7c_wSf7xA1L" role="3SKWNk">
-                      <property role="3SKdUp" value="is the last one in the flow that is satisfied by the model," />
+                  <node concept="3SKdUt" id="7c_wSf7FQ6U" role="3cqZAp">
+                    <node concept="3SKdUq" id="7c_wSf7FQ6V" role="3SKWNk">
+                      <property role="3SKdUp" value="we should display the hint associated to this state" />
                     </node>
                   </node>
-                  <node concept="3SKdUt" id="7c_wSf7xA25" role="3cqZAp">
-                    <node concept="3SKdUq" id="7c_wSf7xA26" role="3SKWNk">
-                      <property role="3SKdUp" value="so we will return the predecessor states of the current state" />
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="7c_wSf7xA3N" role="3cqZAp">
-                    <node concept="2OqwBi" id="7c_wSf7xBAa" role="3clFbG">
-                      <node concept="37vLTw" id="7c_wSf7xA3L" role="2Oq$k0">
+                  <node concept="3clFbF" id="7c_wSf7FQ6Y" role="3cqZAp">
+                    <node concept="2OqwBi" id="7c_wSf7FQ6Z" role="3clFbG">
+                      <node concept="37vLTw" id="7c_wSf7FQ70" role="2Oq$k0">
                         <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
                       </node>
-                      <node concept="liA8E" id="7c_wSf7z5Y2" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
-                        <node concept="1rXfSq" id="7c_wSf7yfMz" role="37wK5m">
-                          <ref role="37wK5l" node="7c_wSf7y4KA" resolve="collectPreviousStates" />
-                          <node concept="2GrUjf" id="7c_wSf7yg9E" role="37wK5m">
-                            <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
-                          </node>
+                      <node concept="liA8E" id="7c_wSf7FQ71" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                        <node concept="2GrUjf" id="7c_wSf7FQ72" role="37wK5m">
+                          <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="7c_wSf7FQrN" role="3eO9$A">
+                  <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                  <node concept="2OqwBi" id="7c_wSf7FQrO" role="37wK5m">
+                    <node concept="2GrUjf" id="7c_wSf7FQrP" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="7c_wSf7v4sw" resolve="stateToEvaluate" />
+                    </node>
+                    <node concept="3TrEf2" id="7c_wSf7FQrQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
                     </node>
                   </node>
                 </node>

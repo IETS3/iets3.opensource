@@ -249,6 +249,12 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0A7n" id="7c_wSf7EeXu" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:7c_wSf7BDZ6" resolve="isFinal" />
+        <node concept="pVoyu" id="7c_wSf7EeXQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F1sOY" id="5cR9puhHhJN" role="3EZMnx">
         <ref role="1NtTu8" to="xwgo:5cR9puhFRxn" resolve="formula" />
         <node concept="pVoyu" id="5cR9puhHhK8" role="3F10Kt">
