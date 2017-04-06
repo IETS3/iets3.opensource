@@ -12,6 +12,14 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -75,8 +83,8 @@
     </node>
     <node concept="1TJgyi" id="7c_wSf7$nnr" role="1TKVEl">
       <property role="IQ2nx" value="8297182490512160219" />
-      <property role="TrG5h" value="isSatisfied" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <property role="TrG5h" value="mode" />
+      <ref role="AX2Wp" node="7c_wSf7Bhjq" resolve="FlowStateMode" />
     </node>
     <node concept="1TJgyj" id="5cR9puhFRxn" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590103" />
@@ -138,6 +146,22 @@
       <property role="20kJfa" value="pointer" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7c_wSf7Bhjq">
+    <property role="TrG5h" value="FlowStateMode" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="7c_wSf7Bhjr" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="Passed" />
+    </node>
+    <node concept="M4N5e" id="7c_wSf7Bhjs" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="Current" />
+    </node>
+    <node concept="M4N5e" id="7c_wSf7Bhjv" role="M5hS2">
+      <property role="1uS6qv" value="2" />
+      <property role="1uS6qo" value="ToCome" />
     </node>
   </node>
 </model>
