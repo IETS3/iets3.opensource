@@ -40,9 +40,6 @@
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
     </language>
-    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
-      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
-    </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
         <reference id="1235726657816438061" name="conceptToBeCreated" index="fxKJO" />
@@ -273,6 +270,5 @@
       </node>
     </node>
   </node>
-  <node concept="2W8dSH" id="7c_wSf7tPeV" />
 </model>
 
