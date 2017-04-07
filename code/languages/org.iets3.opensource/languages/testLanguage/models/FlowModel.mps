@@ -47,7 +47,6 @@
       </concept>
       <concept id="5996302761781372254" name="org.iets3.flow.dashboard.structure.State" flags="ng" index="32AK39">
         <property id="8297182490505019797" name="isStart" index="2O0g8m" />
-        <property id="8297182490512160219" name="isSatisfied" index="2OHfpo" />
         <property id="5996302761781590101" name="text" index="32A5R2" />
         <child id="8297182490505663428" name="nextStates" index="2O2X17" />
         <child id="8297182490510779274" name="previousStates" index="2Omu09" />
@@ -66,201 +65,200 @@
       </concept>
     </language>
   </registry>
-  <node concept="Q7yLu" id="3PBquMq6Paq">
+  <node concept="Q7yLu" id="6nZIk$2nEse">
     <property role="TrG5h" value="FlowDataRootNode" />
-    <node concept="32AK39" id="3PBquMq6Par" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsf" role="32A5Rq">
       <property role="TrG5h" value="Instance Check " />
       <property role="32A5R2" value="Create new requirements project" />
       <property role="2O0g8m" value="true" />
-      <node concept="3x7ZJP" id="3PBquMq6Pas" role="32A5R0">
+      <node concept="3x7ZJP" id="6nZIk$2nEsg" role="32A5R0">
         <ref role="35c_gD" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
-        <node concept="35c_gC" id="3PBquMq6Pat" role="2DkB7w">
+        <node concept="35c_gC" id="6nZIk$2nEsh" role="2DkB7w">
           <ref role="35c_gD" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
         </node>
       </node>
-      <node concept="32A5RN" id="3PBquMq6Pau" role="32A5RK">
+      <node concept="32A5RN" id="6nZIk$2nEsi" role="32A5RK">
         <ref role="32A5RM" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
       </node>
-      <node concept="32A5RN" id="3PBquMq6Pav" role="32A5RK">
+      <node concept="32A5RN" id="6nZIk$2nEsj" role="32A5RK">
         <ref role="32A5RM" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
       </node>
-      <node concept="32A5RN" id="3PBquMq6Paw" role="32A5RK">
+      <node concept="32A5RN" id="6nZIk$2nEsk" role="32A5RK">
         <ref role="32A5RM" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
-      <node concept="32A5RN" id="3PBquMq6Pax" role="32A5RK">
+      <node concept="32A5RN" id="6nZIk$2nEsl" role="32A5RK">
         <ref role="32A5RM" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbd" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6Pay" resolve="Empty requirement model and no glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt1" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsm" resolve="Empty requirement model and no glossary terms defined" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6Pay" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsm" role="32A5Rq">
       <property role="TrG5h" value="Empty requirement model and no glossary terms defined" />
       <property role="32A5R2" value="Please add a requirement for the cooling system where you define the temperature thresholds as glossary terms" />
       <property role="2O0g8m" value="false" />
-      <node concept="aRPxN" id="3PBquMq6Paz" role="32A5R0">
-        <node concept="aRPxe" id="3PBquMq6Pa$" role="1y4i0p">
-          <node concept="3x7ZJP" id="3PBquMq6Pa_" role="1y4i0q">
+      <node concept="aRPxN" id="6nZIk$2nEsn" role="32A5R0">
+        <node concept="aRPxe" id="6nZIk$2nEso" role="1y4i0p">
+          <node concept="3x7ZJP" id="6nZIk$2nEsp" role="1y4i0q">
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaA" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsq" role="2DkB7w">
               <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
             </node>
           </node>
         </node>
-        <node concept="aRPxe" id="3PBquMq6PaB" role="1y4i0j">
-          <node concept="3x7ZJP" id="3PBquMq6PaC" role="1y4i0q">
+        <node concept="aRPxe" id="6nZIk$2nEsr" role="1y4i0j">
+          <node concept="3x7ZJP" id="6nZIk$2nEss" role="1y4i0q">
             <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaD" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEst" role="2DkB7w">
               <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbe" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6Par" resolve="Instance Check " />
+      <node concept="2O0Cez" id="6nZIk$2nEt2" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsf" resolve="Instance Check " />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbf" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6PaE" resolve="Requirements model complete and glossary terms not defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt3" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsu" resolve="Requirements model complete and glossary terms not defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbh" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6PaL" resolve="Requirements model not complete and glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt5" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEs_" resolve="Requirements model not complete and glossary terms defined" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6PaE" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsu" role="32A5Rq">
       <property role="TrG5h" value="Requirements model complete and glossary terms not defined" />
       <property role="32A5R2" value="Please define the glossary terms" />
       <property role="2O0g8m" value="false" />
-      <node concept="aRPxN" id="3PBquMq6PaF" role="32A5R0">
-        <node concept="3x7ZJP" id="3PBquMq6PaG" role="1y4i0j">
+      <node concept="aRPxN" id="6nZIk$2nEsv" role="32A5R0">
+        <node concept="3x7ZJP" id="6nZIk$2nEsw" role="1y4i0j">
           <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
-          <node concept="35c_gC" id="3PBquMq6PaH" role="2DkB7w">
+          <node concept="35c_gC" id="6nZIk$2nEsx" role="2DkB7w">
             <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
           </node>
         </node>
-        <node concept="aRPxe" id="3PBquMq6PaI" role="1y4i0p">
-          <node concept="3x7ZJP" id="3PBquMq6PaJ" role="1y4i0q">
+        <node concept="aRPxe" id="6nZIk$2nEsy" role="1y4i0p">
+          <node concept="3x7ZJP" id="6nZIk$2nEsz" role="1y4i0q">
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaK" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEs$" role="2DkB7w">
               <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbg" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6Pay" resolve="Empty requirement model and no glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt4" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsm" resolve="Empty requirement model and no glossary terms defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbj" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6PaS" resolve="Requirements model complete and glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt7" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsG" resolve="Requirements model complete and glossary terms defined" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6PaL" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEs_" role="32A5Rq">
       <property role="TrG5h" value="Requirements model not complete and glossary terms defined" />
       <property role="32A5R2" value="Please complete the missing information in the requirements" />
       <property role="2O0g8m" value="false" />
-      <node concept="aRPxN" id="3PBquMq6PaM" role="32A5R0">
-        <node concept="3x7ZJP" id="3PBquMq6PaN" role="1y4i0p">
+      <node concept="aRPxN" id="6nZIk$2nEsA" role="32A5R0">
+        <node concept="3x7ZJP" id="6nZIk$2nEsB" role="1y4i0p">
           <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
-          <node concept="35c_gC" id="3PBquMq6PaO" role="2DkB7w">
+          <node concept="35c_gC" id="6nZIk$2nEsC" role="2DkB7w">
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
           </node>
         </node>
-        <node concept="aRPxe" id="3PBquMq6PaP" role="1y4i0j">
-          <node concept="3x7ZJP" id="3PBquMq6PaQ" role="1y4i0q">
+        <node concept="aRPxe" id="6nZIk$2nEsD" role="1y4i0j">
+          <node concept="3x7ZJP" id="6nZIk$2nEsE" role="1y4i0q">
             <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaR" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsF" role="2DkB7w">
               <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbi" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6Pay" resolve="Empty requirement model and no glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt6" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsm" resolve="Empty requirement model and no glossary terms defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbl" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6PaS" resolve="Requirements model complete and glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt9" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsG" resolve="Requirements model complete and glossary terms defined" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6PaS" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsG" role="32A5Rq">
       <property role="TrG5h" value="Requirements model complete and glossary terms defined" />
       <property role="32A5R2" value="Create the controller's functional behavior as a table" />
       <property role="2O0g8m" value="false" />
-      <node concept="aRPxN" id="3PBquMq6PaT" role="32A5R0">
-        <node concept="aRPxe" id="3PBquMq6PaU" role="1y4i0j">
-          <node concept="3x7ZJP" id="3PBquMq6PaV" role="1y4i0q">
+      <node concept="aRPxN" id="6nZIk$2nEsH" role="32A5R0">
+        <node concept="aRPxe" id="6nZIk$2nEsI" role="1y4i0j">
+          <node concept="3x7ZJP" id="6nZIk$2nEsJ" role="1y4i0q">
             <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaW" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsK" role="2DkB7w">
               <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
             </node>
           </node>
         </node>
-        <node concept="aRPxN" id="3PBquMq6PaX" role="1y4i0p">
-          <node concept="3x7ZJP" id="3PBquMq6PaY" role="1y4i0j">
+        <node concept="aRPxN" id="6nZIk$2nEsL" role="1y4i0p">
+          <node concept="3x7ZJP" id="6nZIk$2nEsM" role="1y4i0j">
             <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
-            <node concept="35c_gC" id="3PBquMq6PaZ" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsN" role="2DkB7w">
               <ref role="35c_gD" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
             </node>
           </node>
-          <node concept="3x7ZJP" id="3PBquMq6Pb0" role="1y4i0p">
+          <node concept="3x7ZJP" id="6nZIk$2nEsO" role="1y4i0p">
             <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
-            <node concept="35c_gC" id="3PBquMq6Pb1" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsP" role="2DkB7w">
               <ref role="35c_gD" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="32A5RN" id="3PBquMq6Pb2" role="32A5RK">
+      <node concept="32A5RN" id="6nZIk$2nEsQ" role="32A5RK">
         <ref role="32A5RM" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbk" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6PaE" resolve="Requirements model complete and glossary terms not defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEt8" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsu" resolve="Requirements model complete and glossary terms not defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbm" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6PaL" resolve="Requirements model not complete and glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEta" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEs_" resolve="Requirements model not complete and glossary terms defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbn" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6Pb3" resolve="Empty functional behavior with Min and Max thresholds set" />
+      <node concept="2O0Cez" id="6nZIk$2nEtb" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsR" resolve="Empty functional behavior with Min and Max thresholds set" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6Pb3" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsR" role="32A5Rq">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
       <property role="32A5R2" value="Please complete the controller's functional behavior" />
       <property role="2O0g8m" value="false" />
-      <property role="2OHfpo" value="true" />
-      <node concept="aRPxN" id="3PBquMq6Pb4" role="32A5R0">
-        <node concept="aRPxe" id="3PBquMq6Pb5" role="1y4i0p">
-          <node concept="3x7ZJP" id="3PBquMq6Pb6" role="1y4i0q">
+      <node concept="aRPxN" id="6nZIk$2nEsS" role="32A5R0">
+        <node concept="aRPxe" id="6nZIk$2nEsT" role="1y4i0p">
+          <node concept="3x7ZJP" id="6nZIk$2nEsU" role="1y4i0q">
             <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
-            <node concept="35c_gC" id="3PBquMq6Pb7" role="2DkB7w">
+            <node concept="35c_gC" id="6nZIk$2nEsV" role="2DkB7w">
               <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
             </node>
           </node>
         </node>
-        <node concept="3x7ZJP" id="3PBquMq6Pb8" role="1y4i0j">
+        <node concept="3x7ZJP" id="6nZIk$2nEsW" role="1y4i0j">
           <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-          <node concept="35c_gC" id="3PBquMq6Pb9" role="2DkB7w">
+          <node concept="35c_gC" id="6nZIk$2nEsX" role="2DkB7w">
             <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
           </node>
         </node>
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbo" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6PaS" resolve="Requirements model complete and glossary terms defined" />
+      <node concept="2O0Cez" id="6nZIk$2nEtc" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsG" resolve="Requirements model complete and glossary terms defined" />
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbp" role="2O2X17">
-        <ref role="2O0Cey" node="3PBquMq6Pba" resolve="Controller behavior complete" />
+      <node concept="2O0Cez" id="6nZIk$2nEtd" role="2O2X17">
+        <ref role="2O0Cey" node="6nZIk$2nEsY" resolve="Controller behavior complete" />
       </node>
     </node>
-    <node concept="32AK39" id="3PBquMq6Pba" role="32A5Rq">
+    <node concept="32AK39" id="6nZIk$2nEsY" role="32A5Rq">
       <property role="TrG5h" value="Controller behavior complete" />
       <property role="32A5R2" value="The controller's behavior is now complete" />
       <property role="2O0g8m" value="false" />
-      <node concept="3x7ZJP" id="3PBquMq6Pbb" role="32A5R0">
+      <node concept="3x7ZJP" id="6nZIk$2nEsZ" role="32A5R0">
         <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
-        <node concept="35c_gC" id="3PBquMq6Pbc" role="2DkB7w">
+        <node concept="35c_gC" id="6nZIk$2nEt0" role="2DkB7w">
           <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
         </node>
       </node>
-      <node concept="2O0Cez" id="3PBquMq6Pbq" role="2Omu09">
-        <ref role="2O0Cey" node="3PBquMq6Pb3" resolve="Empty functional behavior with Min and Max thresholds set" />
+      <node concept="2O0Cez" id="6nZIk$2nEte" role="2Omu09">
+        <ref role="2O0Cey" node="6nZIk$2nEsR" resolve="Empty functional behavior with Min and Max thresholds set" />
       </node>
     </node>
   </node>
