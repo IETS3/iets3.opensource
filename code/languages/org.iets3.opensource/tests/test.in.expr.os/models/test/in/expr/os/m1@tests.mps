@@ -514,6 +514,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path">
       <concept id="7814222126786013807" name="org.iets3.core.expr.path.structure.PathElement" flags="ng" index="3o_JK">
@@ -3365,26 +3372,41 @@
               <property role="pfQqC" value="stringSet5" />
             </node>
           </node>
-          <node concept="_fkuZ" id="6HHp2WmV0Da" role="_fkp5">
-            <node concept="1QScDb" id="sCmnxcJUDV" role="_fkuY">
-              <node concept="3iAU3G" id="sCmnxcJUIi" role="1QScD9">
-                <node concept="30bXRB" id="sCmnxcJUJc" role="3iAY4F">
-                  <property role="30bXRw" value="2" />
+          <node concept="3dYjL0" id="6XBPhghtUUM" role="_fkp5" />
+          <node concept="3dYjL0" id="6XBPhghtViM" role="_fkp5" />
+          <node concept="1X3_iC" id="6XBPhghuTY$" role="lGtFl">
+            <property role="3V$3am" value="items" />
+            <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052056263/543569365052056368" />
+            <node concept="_fkuZ" id="6HHp2WmV0Da" role="8Wnug">
+              <node concept="1QScDb" id="sCmnxcJUDV" role="_fkuY">
+                <node concept="3iAU3G" id="sCmnxcJUIi" role="1QScD9">
+                  <node concept="30bXRB" id="sCmnxcJUJc" role="3iAY4F">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                </node>
+                <node concept="1QScDb" id="6HHp2WmV0Df" role="30czhm">
+                  <node concept="1XGHHM" id="6HHp2WmV2y8" role="30czhm">
+                    <ref role="1XGHHe" node="6HHp2WmV0CW" resolve="stringSet4" />
+                  </node>
+                  <node concept="3$AVBo" id="sCmnxcJUAm" role="1QScD9" />
                 </node>
               </node>
-              <node concept="1QScDb" id="6HHp2WmV0Df" role="30czhm">
-                <node concept="1XGHHM" id="6HHp2WmV2y8" role="30czhm">
-                  <ref role="1XGHHe" node="6HHp2WmV0CW" resolve="stringSet4" />
-                </node>
-                <node concept="3$AVBo" id="sCmnxcJUAm" role="1QScD9" />
+              <node concept="_fku$" id="6HHp2WmV0Db" role="_fkur" />
+              <node concept="30bXRB" id="6HHp2WmV0Di" role="_fkuS">
+                <property role="30bXRw" value="3" />
               </node>
-            </node>
-            <node concept="_fku$" id="6HHp2WmV0Db" role="_fkur" />
-            <node concept="30bXRB" id="6HHp2WmV0Di" role="_fkuS">
-              <property role="30bXRw" value="3" />
-            </node>
-            <node concept="pfQqD" id="6HHp2WmV0Dj" role="pfQ1b">
-              <property role="pfQqC" value="threeAgain" />
+              <node concept="pfQqD" id="6HHp2WmV0Dj" role="pfQ1b">
+                <property role="pfQqC" value="threeAgain" />
+              </node>
+              <node concept="1z9TsT" id="6XBPhghu1t7" role="lGtFl">
+                <node concept="OjmMv" id="6XBPhghu1t8" role="1w35rA">
+                  <node concept="19SGf9" id="6XBPhghu1t9" role="OjmMu">
+                    <node concept="19SUe$" id="6XBPhghu1ta" role="19SJt6">
+                      <property role="19SUeA" value="TODO MARKUS: make it work again" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="_fkuZ" id="6HHp2WmV0Dk" role="_fkp5">
@@ -7095,77 +7117,104 @@
             </node>
           </node>
         </node>
-        <node concept="2zPypq" id="6HHp2WmWQ$6" role="_iOnB">
-          <property role="TrG5h" value="company1" />
-          <node concept="1QScDb" id="6HHp2WmWQ$7" role="2zPyp_">
-            <node concept="3iB7TU" id="6HHp2WmWQ$8" role="1QScD9" />
-            <node concept="1af_rf" id="6HHp2WmWQ$9" role="30czhm">
-              <ref role="1afhQb" node="7D7uZV2f4FH" resolve="getCompanies" />
-              <node concept="_emDc" id="6HHp2WmWQOi" role="1afhQ5">
-                <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
+        <node concept="_ixoA" id="6XBPhghvr7L" role="_iOnB" />
+        <node concept="1X3_iC" id="6XBPhghvqNA" role="lGtFl">
+          <property role="3V$3am" value="contents" />
+          <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
+          <node concept="2zPypq" id="6HHp2WmWQ$6" role="8Wnug">
+            <property role="TrG5h" value="company1" />
+            <node concept="1QScDb" id="6HHp2WmWQ$7" role="2zPyp_">
+              <node concept="3iB7TU" id="6HHp2WmWQ$8" role="1QScD9" />
+              <node concept="1af_rf" id="6HHp2WmWQ$9" role="30czhm">
+                <ref role="1afhQb" node="7D7uZV2f4FH" resolve="getCompanies" />
+                <node concept="_emDc" id="6HHp2WmWQOi" role="1afhQ5">
+                  <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="2Ss9cW" id="6HHp2WmWRYL" role="2zM23F">
-            <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
+            <node concept="2Ss9cW" id="6HHp2WmWRYL" role="2zM23F">
+              <ref role="2Ss9cX" node="6HHp2WmWQsC" resolve="Company" />
+            </node>
+            <node concept="1z9TsT" id="6XBPhghvG9C" role="lGtFl">
+              <node concept="OjmMv" id="6XBPhghvG9D" role="1w35rA">
+                <node concept="19SGf9" id="6XBPhghvG9E" role="OjmMu">
+                  <node concept="19SUe$" id="6XBPhghvG9F" role="19SJt6">
+                    <property role="19SUeA" value="TODO Markus: fix it" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="_ixoA" id="6HHp2WmWQyT" role="_iOnB" />
         <node concept="_ixoA" id="6HHp2WmWQy6" role="_iOnB" />
-        <node concept="_fkuM" id="6HHp2WmWQji" role="_iOnB">
-          <property role="TrG5h" value="path" />
-          <node concept="_fkuZ" id="6HHp2WmWS5J" role="_fkp5">
-            <node concept="_fku$" id="6HHp2WmWS5K" role="_fkur" />
-            <node concept="1QScDb" id="6HHp2WmWS5L" role="_fkuY">
-              <node concept="3o_JK" id="GQFmhcK97K" role="1QScD9">
-                <ref role="3o_JH" node="6HHp2WmWQsH" resolve="street" />
-              </node>
-              <node concept="1QScDb" id="6HHp2WmWS5N" role="30czhm">
-                <node concept="3iB7TU" id="6HHp2WmWS5O" role="1QScD9" />
-                <node concept="1QScDb" id="6HHp2WmWS5P" role="30czhm">
-                  <node concept="3o_JK" id="6HHp2WmWS5Q" role="1QScD9">
-                    <ref role="3o_JH" node="6HHp2WmWQsD" resolve="offices" />
-                  </node>
-                  <node concept="1QScDb" id="6HHp2WmWS5R" role="30czhm">
-                    <node concept="3iB7TU" id="6HHp2WmWS5S" role="1QScD9" />
-                    <node concept="1af_rf" id="6HHp2WmWS5T" role="30czhm">
-                      <ref role="1afhQb" node="7D7uZV2f4FH" resolve="getCompanies" />
-                      <node concept="_emDc" id="6HHp2WmWS$p" role="1afhQ5">
-                        <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
+        <node concept="1X3_iC" id="6XBPhghvHi6" role="lGtFl">
+          <property role="3V$3am" value="contents" />
+          <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
+          <node concept="_fkuM" id="6HHp2WmWQji" role="8Wnug">
+            <property role="TrG5h" value="path" />
+            <node concept="_fkuZ" id="6HHp2WmWS5J" role="_fkp5">
+              <node concept="_fku$" id="6HHp2WmWS5K" role="_fkur" />
+              <node concept="1QScDb" id="6HHp2WmWS5L" role="_fkuY">
+                <node concept="3o_JK" id="GQFmhcK97K" role="1QScD9">
+                  <ref role="3o_JH" node="6HHp2WmWQsH" resolve="street" />
+                </node>
+                <node concept="1QScDb" id="6HHp2WmWS5N" role="30czhm">
+                  <node concept="3iB7TU" id="6HHp2WmWS5O" role="1QScD9" />
+                  <node concept="1QScDb" id="6HHp2WmWS5P" role="30czhm">
+                    <node concept="3o_JK" id="6HHp2WmWS5Q" role="1QScD9">
+                      <ref role="3o_JH" node="6HHp2WmWQsD" resolve="offices" />
+                    </node>
+                    <node concept="1QScDb" id="6HHp2WmWS5R" role="30czhm">
+                      <node concept="3iB7TU" id="6HHp2WmWS5S" role="1QScD9" />
+                      <node concept="1af_rf" id="6HHp2WmWS5T" role="30czhm">
+                        <ref role="1afhQb" node="7D7uZV2f4FH" resolve="getCompanies" />
+                        <node concept="_emDc" id="6HHp2WmWS$p" role="1afhQ5">
+                          <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="30bdrP" id="6HHp2WmWS5V" role="_fkuS">
-              <property role="30bdrQ" value="Industriestrasse" />
-            </node>
-            <node concept="pfQqD" id="6HHp2WmWS5W" role="pfQ1b">
-              <property role="pfQqC" value="street1" />
-            </node>
-          </node>
-          <node concept="_fkuZ" id="6HHp2WmWS5X" role="_fkp5">
-            <node concept="_fku$" id="6HHp2WmWS5Y" role="_fkur" />
-            <node concept="1af_rf" id="6HHp2WmWS5Z" role="_fkuY">
-              <ref role="1afhQb" node="7D7uZV2f4FN" resolve="getStreets" />
-              <node concept="_emDc" id="6HHp2WmWS$t" role="1afhQ5">
-                <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
-              </node>
-            </node>
-            <node concept="3iBYfx" id="6HHp2WmWS61" role="_fkuS">
-              <node concept="30bdrP" id="6HHp2WmWS62" role="3iBYfI">
+              <node concept="30bdrP" id="6HHp2WmWS5V" role="_fkuS">
                 <property role="30bdrQ" value="Industriestrasse" />
               </node>
-              <node concept="30bdrP" id="6HHp2WmWS63" role="3iBYfI">
-                <property role="30bdrQ" value="AStreet" />
-              </node>
-              <node concept="30bdrP" id="6HHp2WmWS64" role="3iBYfI">
-                <property role="30bdrQ" value="XStreet" />
+              <node concept="pfQqD" id="6HHp2WmWS5W" role="pfQ1b">
+                <property role="pfQqC" value="street1" />
               </node>
             </node>
-            <node concept="pfQqD" id="6HHp2WmWS65" role="pfQ1b">
-              <property role="pfQqC" value="streets" />
+            <node concept="_fkuZ" id="6HHp2WmWS5X" role="_fkp5">
+              <node concept="_fku$" id="6HHp2WmWS5Y" role="_fkur" />
+              <node concept="1af_rf" id="6HHp2WmWS5Z" role="_fkuY">
+                <ref role="1afhQb" node="7D7uZV2f4FN" resolve="getStreets" />
+                <node concept="_emDc" id="6HHp2WmWS$t" role="1afhQ5">
+                  <ref role="_emDf" node="6HHp2WmWQzH" resolve="person" />
+                </node>
+              </node>
+              <node concept="3iBYfx" id="6HHp2WmWS61" role="_fkuS">
+                <node concept="30bdrP" id="6HHp2WmWS62" role="3iBYfI">
+                  <property role="30bdrQ" value="Industriestrasse" />
+                </node>
+                <node concept="30bdrP" id="6HHp2WmWS63" role="3iBYfI">
+                  <property role="30bdrQ" value="AStreet" />
+                </node>
+                <node concept="30bdrP" id="6HHp2WmWS64" role="3iBYfI">
+                  <property role="30bdrQ" value="XStreet" />
+                </node>
+              </node>
+              <node concept="pfQqD" id="6HHp2WmWS65" role="pfQ1b">
+                <property role="pfQqC" value="streets" />
+              </node>
+            </node>
+            <node concept="1z9TsT" id="6XBPhghvHhT" role="lGtFl">
+              <node concept="OjmMv" id="6XBPhghvHhU" role="1w35rA">
+                <node concept="19SGf9" id="6XBPhghvHhV" role="OjmMu">
+                  <node concept="19SUe$" id="6XBPhghvHhW" role="19SJt6">
+                    <property role="19SUeA" value="TODO Markus: fix it" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

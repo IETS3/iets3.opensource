@@ -56,9 +56,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -83,10 +86,12 @@
               </node>
               <node concept="2OqwBi" id="4tXyFaWyATX" role="3uHU7B">
                 <node concept="1PxgMI" id="4tXyFaWyANU" role="2Oq$k0">
-                  <ref role="1m5ApE" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
                   <node concept="2OqwBi" id="4tXyFaWyAh7" role="1m5AlR">
                     <node concept="EsrRn" id="4tXyFaWyA97" role="2Oq$k0" />
                     <node concept="1mfA1w" id="4tXyFaWyAxW" role="2OqNvi" />
+                  </node>
+                  <node concept="chp4Y" id="6b_jefnKzDT" role="3oSUPX">
+                    <ref role="cht4Q" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="4tXyFaWyB0Y" role="2OqNvi">

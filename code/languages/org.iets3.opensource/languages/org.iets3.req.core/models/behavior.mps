@@ -127,8 +127,8 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -329,10 +329,12 @@
                 <node concept="3cpWs3" id="7Dcax7Aeh3f" role="3uHU7B">
                   <node concept="2OqwBi" id="7Dcax7AefE3" role="3uHU7B">
                     <node concept="1PxgMI" id="7Dcax7AefyW" role="2Oq$k0">
-                      <ref role="1m5ApE" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
                       <node concept="2OqwBi" id="7Dcax7AeeWN" role="1m5AlR">
                         <node concept="13iPFW" id="7Dcax7AeeSS" role="2Oq$k0" />
                         <node concept="1mfA1w" id="7Dcax7Aefdv" role="2OqNvi" />
+                      </node>
+                      <node concept="chp4Y" id="6b_jefnKzKY" role="3oSUPX">
+                        <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="7Dcax7AegYv" role="2OqNvi">
@@ -370,10 +372,12 @@
                   <node concept="3cpWs3" id="7Dcax7AehYf" role="3uHU7B">
                     <node concept="2OqwBi" id="7Dcax7AehYg" role="3uHU7B">
                       <node concept="1PxgMI" id="7Dcax7AehYh" role="2Oq$k0">
-                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         <node concept="2OqwBi" id="7Dcax7AehYi" role="1m5AlR">
                           <node concept="13iPFW" id="7Dcax7AehYj" role="2Oq$k0" />
                           <node concept="1mfA1w" id="7Dcax7AehYk" role="2OqNvi" />
+                        </node>
+                        <node concept="chp4Y" id="6b_jefnKzL2" role="3oSUPX">
+                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="7Dcax7AeknD" role="2OqNvi">

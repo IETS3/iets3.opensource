@@ -118,8 +118,8 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -384,10 +384,12 @@
             <node concept="3fqX7Q" id="2M9Ik4CWzwu" role="3uHU7w">
               <node concept="2OqwBi" id="2M9Ik4CWzww" role="3fr31v">
                 <node concept="1PxgMI" id="2M9Ik4CWzwx" role="2Oq$k0">
-                  <ref role="1m5ApE" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
                   <node concept="2OqwBi" id="2M9Ik4CWzwy" role="1m5AlR">
                     <node concept="2Sf5sV" id="2M9Ik4CWzwz" role="2Oq$k0" />
                     <node concept="3JvlWi" id="2M9Ik4CWzw$" role="2OqNvi" />
+                  </node>
+                  <node concept="chp4Y" id="6b_jefnKz2C" role="3oSUPX">
+                    <ref role="cht4Q" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2M9Ik4CWzw_" role="2OqNvi">

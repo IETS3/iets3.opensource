@@ -124,8 +124,8 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
@@ -193,12 +193,14 @@
                 <ref role="ehGHo" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               </node>
               <node concept="1PxgMI" id="6zaFu4oShJf" role="33vP2m">
-                <ref role="1m5ApE" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
                 <node concept="2OqwBi" id="6zaFu4oShsw" role="1m5AlR">
                   <node concept="1YBJjd" id="6zaFu4oShsx" role="2Oq$k0">
                     <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
                   </node>
                   <node concept="1mfA1w" id="6zaFu4oShsy" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="6b_jefnKzDU" role="3oSUPX">
+                  <ref role="cht4Q" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
                 </node>
               </node>
             </node>
@@ -432,12 +434,14 @@
         <node concept="3clFbF" id="6zaFu4oSwCx" role="3cqZAp">
           <node concept="37vLTI" id="6zaFu4oSwP5" role="3clFbG">
             <node concept="1PxgMI" id="6zaFu4oSxfn" role="37vLTx">
-              <ref role="1m5ApE" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               <node concept="2OqwBi" id="6zaFu4oSwSU" role="1m5AlR">
                 <node concept="QwW4i" id="6zaFu4oSwQG" role="2Oq$k0">
                   <ref role="QwW4h" node="6zaFu4oSv2A" resolve="theOneThatExists" />
                 </node>
                 <node concept="1mfA1w" id="6zaFu4oSx3W" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="6b_jefnKzDQ" role="3oSUPX">
+                <ref role="cht4Q" to="tuf9:6zaFu4oPODn" resolve="GlossaryTerm" />
               </node>
             </node>
             <node concept="2OqwBi" id="6zaFu4oSwEp" role="37vLTJ">

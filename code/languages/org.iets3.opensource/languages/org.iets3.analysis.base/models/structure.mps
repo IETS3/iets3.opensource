@@ -2,7 +2,8 @@
 <model ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -124,6 +125,17 @@
     <property role="EcuMT" value="5553107600697040451" />
     <property role="TrG5h" value="ICanBeMappedToSolver" />
   </node>
+  <node concept="1TIwiD" id="XhdFKvXSNr">
+    <property role="EcuMT" value="1103723565300550875" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="ErrorMessage" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="XhdFKvXSNs" role="1TKVEl">
+      <property role="IQ2nx" value="1103723565300550876" />
+      <property role="TrG5h" value="msg" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="XhdFKvXQxo">
     <property role="EcuMT" value="1103723565300541528" />
     <property role="3GE5qa" value="adapter" />
@@ -135,17 +147,6 @@
       <property role="20kJfa" value="errors" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="XhdFKvXSNr" resolve="ErrorMessage" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="XhdFKvXSNr">
-    <property role="EcuMT" value="1103723565300550875" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="ErrorMessage" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="XhdFKvXSNs" role="1TKVEl">
-      <property role="IQ2nx" value="1103723565300550876" />
-      <property role="TrG5h" value="msg" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

@@ -222,10 +222,13 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -885,12 +888,14 @@
                   <node concept="2OqwBi" id="2HpFPvTbnRI" role="1P9ThW">
                     <node concept="2OqwBi" id="2HpFPvTbqTU" role="2Oq$k0">
                       <node concept="1PxgMI" id="2HpFPvTbqER" role="2Oq$k0">
-                        <ref role="1m5ApE" to="wtll:14RJwd1g889" resolve="DefaultEntry" />
                         <node concept="2OqwBi" id="2HpFPvTbl9Z" role="1m5AlR">
                           <node concept="7Obwk" id="2HpFPvTbl23" role="2Oq$k0" />
                           <node concept="3TrEf2" id="2HpFPvTblo9" role="2OqNvi">
                             <ref role="3Tt5mk" to="wtll:2HpFPvT9Hfy" resolve="entry" />
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="6b_jefnKyWq" role="3oSUPX">
+                          <ref role="cht4Q" to="wtll:14RJwd1g889" resolve="DefaultEntry" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="2HpFPvTbrsD" role="2OqNvi">

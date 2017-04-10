@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -25,6 +25,8 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -174,6 +176,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -289,11 +294,71 @@
     <property role="280Iao" value="true" />
     <property role="280Iaj" value="true" />
     <property role="3aPfAI" value="6" />
+    <node concept="2OqwBi" id="6b_jefnVuY0" role="37b278">
+      <node concept="2OqwBi" id="6b_jefnVuhy" role="2Oq$k0">
+        <node concept="2YIFZM" id="6b_jefnVutA" role="2Oq$k0">
+          <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+          <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+        </node>
+        <node concept="liA8E" id="6b_jefnVuHk" role="2OqNvi">
+          <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+          <node concept="3VsKOn" id="6b_jefnVuJs" role="37wK5m">
+            <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="liA8E" id="6b_jefnVvpI" role="2OqNvi">
+        <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+        <node concept="35c_gC" id="6b_jefnVutB" role="37wK5m">
+          <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
+        </node>
+      </node>
+    </node>
     <node concept="14aYG3" id="6LfBX8YgRgl" role="14aYEy">
       <property role="TrG5h" value="specModel" />
+      <node concept="2OqwBi" id="6b_jefnVvy0" role="3actZa">
+        <node concept="2OqwBi" id="6b_jefnVvy1" role="2Oq$k0">
+          <node concept="2YIFZM" id="6b_jefnVvy2" role="2Oq$k0">
+            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+          </node>
+          <node concept="liA8E" id="6b_jefnVvy3" role="2OqNvi">
+            <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+            <node concept="3VsKOn" id="6b_jefnVvy4" role="37wK5m">
+              <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="liA8E" id="6b_jefnVvy5" role="2OqNvi">
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+          <node concept="35c_gC" id="6b_jefnVvy6" role="37wK5m">
+            <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
+          </node>
+        </node>
+      </node>
       <node concept="14aYG3" id="1ognOHjyj2a" role="1DVp44">
         <property role="TrG5h" value="root" />
         <property role="38sH__" value="true" />
+        <node concept="2OqwBi" id="6b_jefnVvF0" role="3actZa">
+          <node concept="2OqwBi" id="6b_jefnVvF1" role="2Oq$k0">
+            <node concept="2YIFZM" id="6b_jefnVvF2" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="6b_jefnVvF3" role="2OqNvi">
+              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+              <node concept="3VsKOn" id="6b_jefnVvF4" role="37wK5m">
+                <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              </node>
+            </node>
+          </node>
+          <node concept="liA8E" id="6b_jefnVvF5" role="2OqNvi">
+            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+            <node concept="14b0Wr" id="6b_jefnVvSL" role="37wK5m">
+              <ref role="14b0Uw" node="1ognOHjyj2a" resolve="root" />
+            </node>
+          </node>
+        </node>
         <node concept="3Tqbb2" id="1ognOHjyvau" role="3GGxor">
           <ref role="ehGHo" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
         </node>
@@ -303,13 +368,6 @@
           </node>
           <node concept="3TrcHB" id="1ognOHjyQXf" role="2OqNvi">
             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-        <node concept="2YIFZM" id="FniR$CbLj8" role="3actZa">
-          <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-          <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-          <node concept="14b0Wr" id="1ognOHjyXKM" role="37wK5m">
-            <ref role="14b0Uw" node="1ognOHjyj2a" resolve="root" />
           </node>
         </node>
         <node concept="3clFbT" id="1ognOHj_2dG" role="2q6PdT">
@@ -322,18 +380,6 @@
         <ref role="1Pybhc" node="1ognOHjymxr" resolve="SpecExplorerHelper" />
         <node concept="14a6R6" id="6LfBX8Ym2c8" role="37wK5m" />
       </node>
-      <node concept="2YIFZM" id="1MpR5BkUViv" role="3actZa">
-        <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-        <node concept="2OqwBi" id="1MpR5BkUVnF" role="37wK5m">
-          <node concept="35c_gC" id="1MpR5BkUVkw" role="2Oq$k0">
-            <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
-          </node>
-          <node concept="liA8E" id="1MpR5BkUVwF" role="2OqNvi">
-            <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-          </node>
-        </node>
-      </node>
       <node concept="2OqwBi" id="6LfBX8YgSdb" role="14a853">
         <node concept="14b0Wr" id="6LfBX8YgS8P" role="2Oq$k0">
           <ref role="14b0Uw" node="6LfBX8YgRgl" resolve="specModel" />
@@ -343,18 +389,6 @@
     </node>
     <node concept="Xl_RD" id="1ognOHjyJzW" role="3GFWDq">
       <property role="Xl_RC" value="Specification" />
-    </node>
-    <node concept="2YIFZM" id="6h7hc1g8BfH" role="37b278">
-      <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-      <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-      <node concept="2OqwBi" id="6h7hc1g8D6t" role="37wK5m">
-        <node concept="35c_gC" id="6h7hc1g8Br7" role="2Oq$k0">
-          <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
-        </node>
-        <node concept="liA8E" id="6h7hc1g8DC5" role="2OqNvi">
-          <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="1ognOHjymxr">

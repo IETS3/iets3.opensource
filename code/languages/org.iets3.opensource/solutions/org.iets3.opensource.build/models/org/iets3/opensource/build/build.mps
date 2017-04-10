@@ -2,10 +2,10 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -177,7 +177,7 @@
                         <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
                           <property role="2Ry0Am" value="Applications" />
                           <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS34.app" />
+                            <property role="2Ry0Am" value="MPS 2017.1 EAP.app" />
                             <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
                               <property role="2Ry0Am" value="Contents" />
                             </node>
@@ -906,6 +906,18 @@
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6XBPhghtnC5" role="3bR37C">
+          <node concept="3bR9La" id="6XBPhghtnC6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6XBPhghtnC7" role="3bR37C">
+          <node concept="3bR9La" id="6XBPhghtnC8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="ub9nkyRnyj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1380,6 +1392,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6b_jefo1_zM" role="3bR37C">
+          <node concept="1Busua" id="6b_jefo1_zN" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
       </node>
@@ -2080,6 +2097,12 @@
             <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6b_jefo1_A_" role="3bR37C">
+          <node concept="3bR9La" id="6b_jefo1_AA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="64GCIgM54aW" role="3989C9">
@@ -2372,8 +2395,8 @@
       <property role="3LESm3" value="cf55cddb-d431-4f2e-93f4-3a4305c63d12" />
       <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources and tests" />
-      <node concept="1SiIV0" id="3Up1DZuV_xt" role="3bR37C">
-        <node concept="3bR9La" id="3Up1DZuV_xu" role="1SiIV1">
+      <node concept="1SiIV0" id="19gPt0P0xx8" role="3bR37C">
+        <node concept="3bR9La" id="19gPt0P0xx9" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
         </node>
