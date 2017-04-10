@@ -236,7 +236,6 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -247,6 +246,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1523,7 +1523,7 @@
                 <ref role="3Tt5mk" to="5qo5:19PglA20qXS" resolve="range" />
               </node>
             </node>
-            <node concept="1PgB_6" id="19PglA20E_v" role="2OqNvi" />
+            <node concept="3YRAZt" id="19PglA20E_v" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -3414,7 +3414,7 @@
                       <ref role="3Tt5mk" to="5qo5:19PglA20qXS" resolve="range" />
                     </node>
                   </node>
-                  <node concept="1PgB_6" id="2M9Ik4CWPx_" role="2OqNvi" />
+                  <node concept="3YRAZt" id="2M9Ik4CWPx_" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -3603,7 +3603,7 @@
                       <ref role="3Tt5mk" to="5qo5:19PglA20qY9" resolve="prec" />
                     </node>
                   </node>
-                  <node concept="1PgB_6" id="TuTPrw4wsM" role="2OqNvi" />
+                  <node concept="3YRAZt" id="TuTPrw4wsM" role="2OqNvi" />
                 </node>
               </node>
             </node>

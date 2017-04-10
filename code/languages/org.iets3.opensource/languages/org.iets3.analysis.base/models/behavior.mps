@@ -203,9 +203,7 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -294,14 +292,14 @@
             <property role="1dT_AB" value="." />
           </node>
         </node>
-        <node concept="x79VA" id="rj7uJEnmCd" role="x79VK">
-          <property role="x79VB" value="a solver task, or null if none needed." />
-        </node>
         <node concept="x0GOo" id="rj7uJEnoR6" role="3nqlJM">
           <property role="x0GOq" value="if there was an error creating the solver task" />
           <node concept="3uibUv" id="rj7uJEnoRi" role="zrq5$">
             <ref role="3uigEE" to="hnhi:XhdFKvMYZY" resolve="TaskCreationException" />
           </node>
+        </node>
+        <node concept="x79VA" id="rj7uJEnmCd" role="3nqlJM">
+          <property role="x79VB" value="a solver task, or null if none needed." />
         </node>
       </node>
     </node>

@@ -184,7 +184,6 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
@@ -2891,7 +2890,6 @@
         <node concept="3clFbF" id="6v3O8GW39ll" role="3cqZAp">
           <node concept="2OqwBi" id="6v3O8GW39ln" role="3clFbG">
             <node concept="1PxgMI" id="6v3O8GW39lo" role="2Oq$k0">
-              <ref role="1m5ApE" to="700h:6zmBjqUily5" resolve="CollectionType" />
               <node concept="2OqwBi" id="6v3O8GW39lp" role="1m5AlR">
                 <node concept="2OqwBi" id="6v3O8GW39lq" role="2Oq$k0">
                   <node concept="13iPFW" id="6v3O8GW39lr" role="2Oq$k0" />
@@ -2900,6 +2898,9 @@
                   </node>
                 </node>
                 <node concept="3JvlWi" id="6v3O8GW39lt" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="6XBPhggEzxa" role="3oSUPX">
+                <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
               </node>
             </node>
             <node concept="3TrEf2" id="6v3O8GW39lu" role="2OqNvi">
@@ -2950,7 +2951,6 @@
         <node concept="3clFbF" id="6v3O8GW398R" role="3cqZAp">
           <node concept="2OqwBi" id="6v3O8GW398T" role="3clFbG">
             <node concept="1PxgMI" id="6v3O8GW398U" role="2Oq$k0">
-              <ref role="1m5ApE" to="700h:6zmBjqUily5" resolve="CollectionType" />
               <node concept="2OqwBi" id="6v3O8GW398V" role="1m5AlR">
                 <node concept="2OqwBi" id="6v3O8GW398W" role="2Oq$k0">
                   <node concept="13iPFW" id="6v3O8GW398X" role="2Oq$k0" />
@@ -2959,6 +2959,9 @@
                   </node>
                 </node>
                 <node concept="3JvlWi" id="6v3O8GW398Z" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="6XBPhggEzxb" role="3oSUPX">
+                <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
               </node>
             </node>
             <node concept="3TrEf2" id="6v3O8GW3990" role="2OqNvi">
