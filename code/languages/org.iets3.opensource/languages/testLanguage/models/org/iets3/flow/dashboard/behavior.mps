@@ -14,9 +14,11 @@
     <import index="47lw" ref="r:afc6f445-2ccb-416f-bf5b-6cd26b99557c(org.iets3.flow.property.formulae.structure)" />
     <import index="7aef" ref="r:9910e94e-fa84-4276-aaf0-b86490fb1c3b(org.iets3.utility.behavior)" />
     <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" />
+    <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -344,7 +346,65 @@
       </node>
     </node>
     <node concept="13hLZK" id="23Wc6usTx8F" role="13h7CW">
-      <node concept="3clFbS" id="23Wc6usTx8G" role="2VODD2" />
+      <node concept="3clFbS" id="23Wc6usTx8G" role="2VODD2">
+        <node concept="3clFbH" id="57o1xPLbcjH" role="3cqZAp" />
+        <node concept="3clFbF" id="57o1xPLbbqy" role="3cqZAp">
+          <node concept="37vLTI" id="57o1xPLbcfD" role="3clFbG">
+            <node concept="2OqwBi" id="57o1xPLbbxA" role="37vLTJ">
+              <node concept="13iPFW" id="57o1xPLbbqx" role="2Oq$k0" />
+              <node concept="3TrEf2" id="57o1xPLrZed" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwgo:57o1xPLrYuW" resolve="dataFlowModel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="57o1xPLbidS" role="37vLTx">
+              <node concept="2OqwBi" id="57o1xPLbfVE" role="2Oq$k0">
+                <node concept="BaHAS" id="18xeVvsB56G" role="2Oq$k0">
+                  <property role="BaHAW" value="FlowModel" />
+                  <property role="BaGAP" value="" />
+                </node>
+                <node concept="2RRcyG" id="57o1xPLbg6c" role="2OqNvi">
+                  <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="57o1xPLbkat" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="57o1xPLcVV9" role="3cqZAp">
+          <node concept="2OqwBi" id="57o1xPLcVV6" role="3clFbG">
+            <node concept="10M0yZ" id="57o1xPLcVV7" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="57o1xPLcVV8" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="57o1xPLcXma" role="37wK5m">
+                <node concept="Xl_RD" id="57o1xPLcW2K" role="3uHU7B">
+                  <property role="Xl_RC" value="Set the flow model with name------------------------&gt;" />
+                </node>
+                <node concept="2OqwBi" id="57o1xPLdXgK" role="3uHU7w">
+                  <node concept="2OqwBi" id="57o1xPLdXgL" role="2Oq$k0">
+                    <node concept="2OqwBi" id="57o1xPLdXgM" role="2Oq$k0">
+                      <node concept="BaHAS" id="57o1xPLdXgN" role="2Oq$k0">
+                        <property role="BaHAW" value="FlowModel" />
+                        <property role="BaGAP" value="" />
+                      </node>
+                      <node concept="2RRcyG" id="57o1xPLdXgO" role="2OqNvi">
+                        <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="57o1xPLdXgP" role="2OqNvi" />
+                  </node>
+                  <node concept="2qgKlT" id="57o1xPLdXgQ" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="57o1xPLbfI9" role="3cqZAp" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="23Wc6usTQ_8">
@@ -561,7 +621,7 @@
                       <ref role="2Gs0qQ" node="7c_wSf7xXtB" resolve="statePointer" />
                     </node>
                     <node concept="3TrEf2" id="7c_wSf7xXtM" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+                      <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="nextStatePointer" />
                     </node>
                   </node>
                 </node>
@@ -637,7 +697,7 @@
                       <ref role="2Gs0qQ" node="7c_wSf7y4KK" resolve="statePointer" />
                     </node>
                     <node concept="3TrEf2" id="7c_wSf7y4KV" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+                      <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="nextStatePointer" />
                     </node>
                   </node>
                 </node>

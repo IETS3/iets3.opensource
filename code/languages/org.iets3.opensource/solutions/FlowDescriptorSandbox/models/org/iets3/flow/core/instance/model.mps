@@ -24,6 +24,7 @@
     <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
+    <import index="3x97" ref="r:1becd586-20ea-4ad9-b8b4-0c8810cf9ccc(FlowModel)" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -40,33 +41,10 @@
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
-    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
-        <reference id="6657644269295214800" name="config" index="G9hjw" />
-      </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-      </concept>
-      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
-        <child id="3350625596580089613" name="text" index="1_0LWR" />
-      </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
-        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
-      </concept>
-    </language>
     <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
-      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH" />
+      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH">
+        <reference id="5897470435568641980" name="dataFlowModel" index="wHY6x" />
+      </concept>
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
@@ -90,26 +68,6 @@
         <reference id="8297182490504813708" name="flowStatePointer" index="2O1dWf" />
       </concept>
     </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
-      </concept>
-    </language>
-    <language id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users">
-      <concept id="8479184967780604356" name="org.iets3.core.users.structure.User" flags="ng" index="30Mgg9">
-        <property id="8479184967780604364" name="email" index="30Mgg1" />
-        <property id="8479184967780604361" name="lastName" index="30Mgg4" />
-        <property id="8479184967780604359" name="firstName" index="30Mgga" />
-      </concept>
-      <concept id="8479184967780604478" name="org.iets3.core.users.structure.UserDirectory" flags="ng" index="30MgvN">
-        <child id="8479184967780604481" name="users" index="30Mguc" />
-      </concept>
-      <concept id="8479184967780770791" name="org.iets3.core.users.structure.UserRef" flags="ng" index="30MVSE">
-        <reference id="8479184967780770792" name="user" index="30MVS_" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
@@ -125,42 +83,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary">
-      <concept id="7551038907536168764" name="org.iets3.glossary.structure.TermRefWord" flags="ng" index="1K4BFt">
-        <reference id="7551038907536168770" name="term" index="1K4BEz" />
-      </concept>
-      <concept id="7551038907536067159" name="org.iets3.glossary.structure.GlossaryTerm" flags="ng" index="1K7uuQ">
-        <child id="7551038907536074458" name="doc" index="1K7sGV" />
-      </concept>
-      <concept id="7551038907536067158" name="org.iets3.glossary.structure.GlossaryChunk" flags="ng" index="1K7uuR">
-        <child id="7551038907536067160" name="terms" index="1K7uuT" />
-      </concept>
-      <concept id="7551038907536072626" name="org.iets3.glossary.structure.GlossaryDocSection" flags="ng" index="1K7v9j" />
-    </language>
-    <language id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core">
-      <concept id="380060842849065675" name="org.iets3.req.core.structure.StateNew" flags="ng" index="2IiYmp" />
-      <concept id="8479184967782930103" name="org.iets3.req.core.structure.CCTag" flags="ng" index="3098HU">
-        <child id="8479184967782930104" name="users" index="3098HP" />
-      </concept>
-      <concept id="4230179762005235942" name="org.iets3.req.core.structure.HeaderRequirement" flags="ng" index="3SUGrM" />
-      <concept id="5151426049053646109" name="org.iets3.req.core.structure.KindFunctional" flags="ng" index="3VXduJ" />
-      <concept id="5151426049053572067" name="org.iets3.req.core.structure.RequirementsDocSection" flags="ng" index="3VXr5h" />
-      <concept id="5151426049053542735" name="org.iets3.req.core.structure.IReqContainer" flags="ng" index="3VY$fX">
-        <child id="5151426049053542821" name="requirements" index="3VY$cn" />
-      </concept>
-      <concept id="5151426049053136028" name="org.iets3.req.core.structure.RequirementsChunk" flags="ng" index="3VZ1SI" />
-      <concept id="5151426049053136313" name="org.iets3.req.core.structure.DefaultRequirement" flags="ng" index="3VZ1Wb">
-        <child id="380060842849066491" name="state" index="2IiYaD" />
-        <child id="8479184967780780683" name="owner" index="30MXt6" />
-        <child id="5151426049053645603" name="tags" index="3VXd6h" />
-        <child id="5151426049053645598" name="kind" index="3VXd6G" />
-        <child id="5151426049053572064" name="doc" index="3VXr5i" />
-      </concept>
-      <concept id="5151426049053136302" name="org.iets3.req.core.structure.AbstractRequirement" flags="ng" index="3VZ1Ws">
-        <property id="816340308089533389" name="uniqueID" index="1kP$Fy" />
-        <property id="5151426049053136371" name="title" index="3VZ1X1" />
       </concept>
     </language>
   </registry>
@@ -364,122 +286,8 @@
       </node>
     </node>
   </node>
-  <node concept="2W8dSH" id="MCudDImsSO" />
-  <node concept="3VZ1SI" id="MCudDImsT_">
-    <property role="TrG5h" value="cool" />
-    <ref role="G9hjw" node="MCudDImsTA" resolve="config" />
-    <node concept="3SUGrM" id="MCudDImWwf" role="3VY$cn">
-      <property role="1kP$Fy" value="1" />
-      <property role="TrG5h" value="cool" />
-      <node concept="3VZ1Wb" id="MCudDImWwh" role="3VY$cn">
-        <property role="1kP$Fy" value="2" />
-        <property role="3VZ1X1" value="Cool" />
-        <property role="TrG5h" value="cool" />
-        <node concept="3VXduJ" id="MCudDImWxp" role="3VXd6G" />
-        <node concept="2IiYmp" id="MCudDImWxF" role="2IiYaD" />
-        <node concept="3VXr5h" id="MCudDImWwk" role="3VXr5i">
-          <node concept="1_0LV8" id="MCudDImWzj" role="1_0VJ0">
-            <node concept="19SGf9" id="MCudDImWzk" role="1_0LWR">
-              <node concept="19SUe$" id="MCudDImWzO" role="19SJt6" />
-              <node concept="1K4BFt" id="MCudDImW$m" role="19SJt6">
-                <ref role="1K4BEz" node="MCudDImW$h" resolve="maxValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="MCudDImWzP" role="19SJt6" />
-              <node concept="1K4BFt" id="MCudDImW$T" role="19SJt6">
-                <ref role="1K4BEz" node="MCudDImW$O" resolve="minValueIncrease" />
-              </node>
-              <node concept="19SUe$" id="MCudDImWzQ" role="19SJt6" />
-              <node concept="1K4BFt" id="MCudDImW_x" role="19SJt6">
-                <ref role="1K4BEz" node="MCudDImW_s" resolve="maxValueDecrease" />
-              </node>
-              <node concept="19SUe$" id="MCudDImWzR" role="19SJt6" />
-              <node concept="1K4BFt" id="MCudDImWAe" role="19SJt6">
-                <ref role="1K4BEz" node="MCudDImWA9" resolve="minValueDecrease" />
-              </node>
-              <node concept="19SUe$" id="MCudDImWzS" role="19SJt6" />
-            </node>
-          </node>
-        </node>
-        <node concept="30MVSE" id="MCudDImWx7" role="30MXt6">
-          <ref role="30MVS_" node="MCudDImWvZ" resolve="levi" />
-        </node>
-        <node concept="3098HU" id="MCudDImWyL" role="3VXd6h">
-          <node concept="30MVSE" id="MCudDImWz2" role="3098HP">
-            <ref role="30MVS_" node="MCudDImWvZ" resolve="levi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2SbYGP" id="MCudDImsTA">
-    <property role="TrG5h" value="config" />
-    <node concept="2SbYGw" id="MCudDImWvH" role="Cbewh">
-      <property role="TrG5h" value="cool" />
-      <node concept="9PVaO" id="MCudDImWvI" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
-  <node concept="1K7uuR" id="MCudDImsTB">
-    <property role="TrG5h" value="Cool" />
-    <node concept="1K7uuQ" id="MCudDImW$h" role="1K7uuT">
-      <property role="TrG5h" value="maxValueIncrease" />
-      <node concept="1K7v9j" id="MCudDImW$i" role="1K7sGV">
-        <node concept="1_0LV8" id="MCudDImW$j" role="1_0VJ0">
-          <node concept="19SGf9" id="MCudDImW$k" role="1_0LWR">
-            <node concept="19SUe$" id="MCudDImW$l" role="19SJt6">
-              <property role="19SUeA" value="100" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1K7uuQ" id="MCudDImW$O" role="1K7uuT">
-      <property role="TrG5h" value="minValueIncrease" />
-      <node concept="1K7v9j" id="MCudDImW$P" role="1K7sGV">
-        <node concept="1_0LV8" id="MCudDImW$Q" role="1_0VJ0">
-          <node concept="19SGf9" id="MCudDImW$R" role="1_0LWR">
-            <node concept="19SUe$" id="MCudDImW$S" role="19SJt6">
-              <property role="19SUeA" value="0" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1K7uuQ" id="MCudDImW_s" role="1K7uuT">
-      <property role="TrG5h" value="maxValueDecrease" />
-      <node concept="1K7v9j" id="MCudDImW_t" role="1K7sGV">
-        <node concept="1_0LV8" id="MCudDImW_u" role="1_0VJ0">
-          <node concept="19SGf9" id="MCudDImW_v" role="1_0LWR">
-            <node concept="19SUe$" id="MCudDImW_w" role="19SJt6">
-              <property role="19SUeA" value="100" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1K7uuQ" id="MCudDImWA9" role="1K7uuT">
-      <property role="TrG5h" value="minValueDecrease" />
-      <node concept="1K7v9j" id="MCudDImWAa" role="1K7sGV">
-        <node concept="1_0LV8" id="MCudDImWAb" role="1_0VJ0">
-          <node concept="19SGf9" id="MCudDImWAc" role="1_0LWR">
-            <node concept="19SUe$" id="MCudDImWAd" role="19SJt6">
-              <property role="19SUeA" value="0" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="30MgvN" id="MCudDImsTC">
-    <property role="TrG5h" value="cool" />
-    <node concept="30Mgg9" id="MCudDImWvZ" role="30Mguc">
-      <property role="TrG5h" value="levi" />
-      <property role="30Mgga" value="levi" />
-      <property role="30Mgg4" value="lucio" />
-      <property role="30Mgg1" value="lucio@fortiss.org" />
-    </node>
+  <node concept="2W8dSH" id="57o1xPL$nv6">
+    <ref role="wHY6x" to="3x97:57o1xPLiXo6" resolve="FlowDataRootNode" />
   </node>
 </model>
 

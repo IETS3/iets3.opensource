@@ -32,6 +32,7 @@
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -86,6 +87,7 @@
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:f95247f1-a285-4e98-864f-7f4b1723a807:org.iets3.core.users" version="0" />
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
+    <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.property" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
