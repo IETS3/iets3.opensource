@@ -2181,10 +2181,7 @@
             </node>
             <node concept="3clFbH" id="7tAIZp0c7BY" role="3cqZAp" />
             <node concept="3clFbJ" id="7tAIZp0bTSD" role="3cqZAp">
-              <node concept="3clFbC" id="7tAIZp0cxKw" role="3clFbw">
-                <node concept="3cmrfG" id="7tAIZp0cxYY" role="3uHU7w">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="3y3z36" id="MCudDIqIlq" role="3clFbw">
                 <node concept="2OqwBi" id="7tAIZp0cibL" role="3uHU7B">
                   <node concept="2OqwBi" id="7tAIZp0ceTc" role="2Oq$k0">
                     <node concept="37vLTw" id="7tAIZp0cexZ" role="2Oq$k0">
@@ -2195,6 +2192,9 @@
                     </node>
                   </node>
                   <node concept="34oBXx" id="7tAIZp0cmEt" role="2OqNvi" />
+                </node>
+                <node concept="3cmrfG" id="7tAIZp0cxYY" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
                 </node>
               </node>
               <node concept="3clFbS" id="7tAIZp0bTSP" role="3clFbx">
@@ -2217,7 +2217,7 @@
                       <node concept="1uHKPH" id="7tAIZp0bTSX" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="7tAIZp0bTSY" role="37wK5m">
-                      <property role="Xl_RC" value="The table is created but empty" />
+                      <property role="Xl_RC" value="The table is created but not empty" />
                     </node>
                     <node concept="10M0yZ" id="7tAIZp0bTSZ" role="37wK5m">
                       <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
@@ -2446,6 +2446,21 @@
         <node concept="3clFbH" id="7tAIZp0d3Pm" role="3cqZAp" />
         <node concept="3clFbJ" id="7tAIZp0d3Pn" role="3cqZAp">
           <node concept="3clFbS" id="7tAIZp0d3Po" role="3clFbx">
+            <node concept="3clFbH" id="MCudDIngBA" role="3cqZAp" />
+            <node concept="3clFbF" id="MCudDIngNd" role="3cqZAp">
+              <node concept="2OqwBi" id="MCudDIngNa" role="3clFbG">
+                <node concept="10M0yZ" id="MCudDIngNb" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="MCudDIngNc" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="MCudDIngVp" role="37wK5m">
+                    <property role="Xl_RC" value="////////////////// TABLE HAS BEEN DEFINED" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="7tAIZp0kgWa" role="3cqZAp" />
             <node concept="3cpWs8" id="7tAIZp0d3Pp" role="3cqZAp">
               <node concept="3cpWsn" id="7tAIZp0d3Pq" role="3cpWs9">
@@ -2592,6 +2607,23 @@
           </node>
           <node concept="9aQIb" id="7tAIZp0yhn7" role="9aQIa">
             <node concept="3clFbS" id="7tAIZp0yhn8" role="9aQI4">
+              <node concept="3clFbH" id="MCudDInh91" role="3cqZAp" />
+              <node concept="3clFbF" id="MCudDInheG" role="3cqZAp">
+                <node concept="2OqwBi" id="MCudDInheI" role="3clFbG">
+                  <node concept="10M0yZ" id="MCudDInheJ" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="MCudDInheK" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="Xl_RD" id="MCudDInheL" role="37wK5m">
+                      <property role="Xl_RC" value="////////////////// TABLE HAS NOT BEEN DEFINED" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="MCudDInhes" role="3cqZAp" />
+              <node concept="3clFbH" id="MCudDInhbI" role="3cqZAp" />
               <node concept="3clFbF" id="7tAIZp0y20r" role="3cqZAp">
                 <node concept="2YIFZM" id="7tAIZp0y20s" role="3clFbG">
                   <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />

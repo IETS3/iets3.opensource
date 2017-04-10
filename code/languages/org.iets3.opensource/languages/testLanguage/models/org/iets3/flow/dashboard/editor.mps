@@ -2,9 +2,9 @@
 <model ref="r:6507158e-5ee7-4d5c-aed7-e600d1c8a360(org.iets3.flow.dashboard.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
-    <use id="6106f611-7a74-42d1-80de-edc5c602bfd1" name="jetbrains.mps.lang.editor.diagram" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
+    <use id="6106f611-7a74-42d1-80de-edc5c602bfd1" name="jetbrains.mps.lang.editor.diagram" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -13,10 +13,10 @@
     <import index="7aef" ref="r:9910e94e-fa84-4276-aaf0-b86490fb1c3b(org.iets3.utility.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="c8ee" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.table(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
+    <import index="c8ee" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.table(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -38,6 +38,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -318,6 +319,9 @@
   </registry>
   <node concept="24kQdi" id="3HvtPSdglT7">
     <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+    <node concept="2aJ2om" id="57o1xPKkbWb" role="CpUAK">
+      <ref role="2$4xQ3" node="57o1xPKkbVL" resolve="Textual" />
+    </node>
     <node concept="3EZMnI" id="3HvtPSdglT9" role="2wV5jI">
       <node concept="3F0ifn" id="6IVOdeOQixj" role="3EZMnx" />
       <node concept="l2Vlx" id="3HvtPSdglTc" role="2iSdaV" />
@@ -335,12 +339,12 @@
         </node>
       </node>
     </node>
-    <node concept="2aJ2om" id="57o1xPKkbWb" role="CpUAK">
-      <ref role="2$4xQ3" node="57o1xPKkbVL" resolve="Textual" />
-    </node>
   </node>
   <node concept="24kQdi" id="5cR9puhHhJ$">
     <ref role="1XX52x" to="xwgo:5cR9puhF2lu" resolve="State" />
+    <node concept="2aJ2om" id="57o1xPKkbWp" role="CpUAK">
+      <ref role="2$4xQ3" node="57o1xPKkbVL" resolve="Textual" />
+    </node>
     <node concept="3EZMnI" id="5cR9puhHhJA" role="2wV5jI">
       <node concept="3F0ifn" id="6IVOdeOQhEK" role="3EZMnx" />
       <node concept="3F0ifn" id="6IVOdeOQgQM" role="3EZMnx">
@@ -414,9 +418,6 @@
       </node>
       <node concept="l2Vlx" id="5cR9puhHhJD" role="2iSdaV" />
     </node>
-    <node concept="2aJ2om" id="57o1xPKkbWp" role="CpUAK">
-      <ref role="2$4xQ3" node="57o1xPKkbVL" resolve="Textual" />
-    </node>
   </node>
   <node concept="IW6AY" id="6IVOdeOPN4Q">
     <ref role="aqKnT" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
@@ -425,9 +426,6 @@
       <node concept="aenpk" id="6IVOdeOPN4Y" role="1Qtc8A">
         <node concept="1At2My" id="6IVOdeOQmrN" role="1b80Z_">
           <property role="TrG5h" value="lastSuccessfulState" />
-          <node concept="3Tqbb2" id="7c_wSf7uR2B" role="1tU5fm">
-            <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
-          </node>
           <node concept="23wN_R" id="6IVOdeOQmrO" role="23wLD5">
             <node concept="3clFbS" id="6IVOdeOQmrP" role="2VODD2">
               <node concept="3clFbF" id="7c_wSf7Qx0j" role="3cqZAp">
@@ -442,6 +440,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="3Tqbb2" id="7c_wSf7uR2B" role="1tU5fm">
+            <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
           </node>
         </node>
         <node concept="IWgqT" id="6IVOdeOPN50" role="aenpr">
@@ -475,17 +476,17 @@
               <node concept="3cpWs8" id="6mLEnnutV5i" role="3cqZAp">
                 <node concept="3cpWsn" id="6mLEnnutV5l" role="3cpWs9">
                   <property role="TrG5h" value="nodePointers" />
+                  <node concept="_YKpA" id="6mLEnnutV5e" role="1tU5fm">
+                    <node concept="3Tqbb2" id="6mLEnnutVM7" role="_ZDj9">
+                      <ref role="ehGHo" to="xwgo:5cR9puhFRx$" resolve="NodePointer" />
+                    </node>
+                  </node>
                   <node concept="2OqwBi" id="7c_wSf7QyIt" role="33vP2m">
                     <node concept="3yx0qK" id="7c_wSf7Qyvj" role="2Oq$k0">
                       <ref role="3cqZAo" node="6IVOdeOQmrN" resolve="lastSuccessfulState" />
                     </node>
                     <node concept="3Tsc0h" id="7c_wSf7QyZ6" role="2OqNvi">
                       <ref role="3TtcxE" to="xwgo:5cR9puhFRxB" resolve="listOfPointer" />
-                    </node>
-                  </node>
-                  <node concept="_YKpA" id="6mLEnnutV5e" role="1tU5fm">
-                    <node concept="3Tqbb2" id="6mLEnnutVM7" role="_ZDj9">
-                      <ref role="ehGHo" to="xwgo:5cR9puhFRx$" resolve="NodePointer" />
                     </node>
                   </node>
                 </node>
@@ -569,6 +570,9 @@
   </node>
   <node concept="24kQdi" id="23Wc6usReTp">
     <ref role="1XX52x" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+    <node concept="2aJ2om" id="57o1xPKbHyq" role="CpUAK">
+      <ref role="2$4xQ3" node="57o1xPKbEI1" resolve="TabularView" />
+    </node>
     <node concept="3EZMnI" id="23Wc6usReTr" role="2wV5jI">
       <node concept="3F0ifn" id="23Wc6usReTy" role="3EZMnx">
         <property role="3F0ifm" value="Message Hint:" />
@@ -1259,140 +1263,38 @@
       </node>
       <node concept="l2Vlx" id="23Wc6usReTu" role="2iSdaV" />
     </node>
-    <node concept="2aJ2om" id="57o1xPKbHyq" role="CpUAK">
-      <ref role="2$4xQ3" node="57o1xPKbEI1" resolve="TabularView" />
-    </node>
   </node>
   <node concept="24kQdi" id="7c_wSf7gafk">
     <ref role="1XX52x" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
-    <node concept="1iCGBv" id="7c_wSf7gafm" role="2wV5jI">
-      <ref role="1NtTu8" to="xwgo:7c_wSf79K0x" resolve="pointer" />
-      <node concept="1sVBvm" id="7c_wSf7gafo" role="1sWHZn">
-        <node concept="3F0A7n" id="7c_wSf7gafy" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="MCudDIs$0b" role="2wV5jI">
+      <node concept="3F0ifn" id="MCudDIs$0q" role="3EZMnx">
+        <property role="3F0ifm" value="Next state:" />
+      </node>
+      <node concept="2iRfu4" id="MCudDIs$0c" role="2iSdaV" />
+      <node concept="1iCGBv" id="7c_wSf7gafm" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:7c_wSf79K0x" resolve="nextStatePointer" />
+        <node concept="1sVBvm" id="7c_wSf7gafo" role="1sWHZn">
+          <node concept="3F0A7n" id="7c_wSf7gafy" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="MCudDIs$0A" role="3EZMnx">
+        <property role="3F0ifm" value=", Previous State:" />
+      </node>
+      <node concept="1iCGBv" id="MCudDIs$0O" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:MCudDIqX3C" resolve="previousStatePointer" />
+        <node concept="1sVBvm" id="MCudDIs$0Q" role="1sWHZn">
+          <node concept="3F0A7n" id="MCudDIs$12" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="2aJ2om" id="57o1xPKkbWd" role="CpUAK">
       <ref role="2$4xQ3" node="57o1xPKkbVL" resolve="Textual" />
-    </node>
-  </node>
-  <node concept="2ABfQD" id="57o1xPKbEI0">
-    <property role="TrG5h" value="DashboardVisualisation" />
-    <node concept="2BsEeg" id="57o1xPKbEI1" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="TabularView" />
-      <property role="2BUmq6" value="This is a Tabular View of the Dashboard" />
-    </node>
-    <node concept="2BsEeg" id="57o1xPKkbVL" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="Textual" />
-      <property role="2BUmq6" value="This is a Textual Editor for the Dashboard" />
-    </node>
-    <node concept="2BsEeg" id="57o1xPKkbWr" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="DirectedGraph" />
-      <property role="2BUmq6" value="This is a Directed Graph for the flowModel" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="57o1xPKbEI6">
-    <ref role="1XX52x" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
-    <node concept="3EZMnI" id="57o1xPKbIov" role="2wV5jI">
-      <node concept="3F0ifn" id="57o1xPKbIoA" role="3EZMnx">
-        <property role="3F0ifm" value="Message Hint:" />
-      </node>
-      <node concept="18a60v" id="57o1xPKbIoB" role="3EZMnx">
-        <node concept="VPM3Z" id="57o1xPKbIoC" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="pVoyu" id="57o1xPKbIoD" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="A1WHr" id="57o1xPKbIoS" role="3vIgyS">
-          <ref role="2ZyFGn" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="57o1xPKbIoE" role="3EZMnx">
-        <node concept="pVoyu" id="57o1xPKbIoF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="57o1xPKbIoG" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="57o1xPKbIoy" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="57o1xPKkbWv">
-    <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
-    <node concept="27vDVx" id="57o1xPKkbWz" role="2wV5jI">
-      <node concept="2ZMM4L" id="57o1xPKkbWC" role="aCds2">
-        <node concept="3clFbS" id="57o1xPKkbWE" role="2VODD2">
-          <node concept="3clFbF" id="57o1xPKkc1s" role="3cqZAp">
-            <node concept="2OqwBi" id="57o1xPKkce9" role="3clFbG">
-              <node concept="2ZN8Hh" id="57o1xPKkc1r" role="2Oq$k0" />
-              <node concept="2Rf3mk" id="57o1xPKkcve" role="2OqNvi">
-                <node concept="1xMEDy" id="57o1xPKkcvg" role="1xVPHs">
-                  <node concept="chp4Y" id="57o1xPKkcE6" role="ri$Ld">
-                    <ref role="cht4Q" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2ZMM4L" id="57o1xPKkd1Q" role="aCds2">
-        <node concept="3clFbS" id="57o1xPKkd1S" role="2VODD2">
-          <node concept="3clFbF" id="57o1xPKkd7X" role="3cqZAp">
-            <node concept="2OqwBi" id="57o1xPKkdkE" role="3clFbG">
-              <node concept="2ZN8Hh" id="57o1xPKkd7W" role="2Oq$k0" />
-              <node concept="2Rf3mk" id="57o1xPKkd_J" role="2OqNvi">
-                <node concept="1xMEDy" id="57o1xPKkd_L" role="1xVPHs">
-                  <node concept="chp4Y" id="57o1xPKx2Fg" role="ri$Ld">
-                    <ref role="cht4Q" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2ZMM4L" id="57o1xPKkdYj" role="aCds2">
-        <node concept="3clFbS" id="57o1xPKkdYl" role="2VODD2">
-          <node concept="3clFbF" id="57o1xPKke5A" role="3cqZAp">
-            <node concept="2OqwBi" id="57o1xPKkeij" role="3clFbG">
-              <node concept="2ZN8Hh" id="57o1xPKke5_" role="2Oq$k0" />
-              <node concept="2Rf3mk" id="57o1xPKkezo" role="2OqNvi">
-                <node concept="1xMEDy" id="57o1xPKkezq" role="1xVPHs">
-                  <node concept="chp4Y" id="57o1xPKkfZh" role="ri$Ld">
-                    <ref role="cht4Q" to="xwgo:5cR9puhF2lu" resolve="State" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2aJ2om" id="57o1xPKkbWx" role="CpUAK">
-      <ref role="2$4xQ3" node="57o1xPKkbWr" resolve="DirectedGraph" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="57o1xPKkgdI">
-    <ref role="1XX52x" to="xwgo:5cR9puhF2lu" resolve="State" />
-    <node concept="3EZMnI" id="57o1xPKkgdW" role="2wV5jI">
-      <node concept="3F0ifn" id="57o1xPKkge3" role="3EZMnx">
-        <property role="3F0ifm" value="StateName:" />
-      </node>
-      <node concept="3F0A7n" id="57o1xPKkge9" role="3EZMnx">
-        <ref role="1NtTu8" to="xwgo:5cR9puhFRxl" resolve="text" />
-      </node>
-      <node concept="l2Vlx" id="57o1xPKkgdZ" role="2iSdaV" />
-    </node>
-    <node concept="2aJ2om" id="57o1xPKkgdK" role="CpUAK">
-      <ref role="2$4xQ3" node="57o1xPKkbWr" resolve="DirectedGraph" />
     </node>
   </node>
   <node concept="2xDbr0" id="57o1xPKmyG6">
@@ -1661,6 +1563,95 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="57o1xPKkbWv">
+    <ref role="1XX52x" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+    <node concept="27vDVx" id="57o1xPKkbWz" role="2wV5jI">
+      <node concept="2ZMM4L" id="57o1xPKkbWC" role="aCds2">
+        <node concept="3clFbS" id="57o1xPKkbWE" role="2VODD2">
+          <node concept="3clFbF" id="57o1xPKkc1s" role="3cqZAp">
+            <node concept="2OqwBi" id="57o1xPKkce9" role="3clFbG">
+              <node concept="2ZN8Hh" id="57o1xPKkc1r" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="57o1xPKkcve" role="2OqNvi">
+                <node concept="1xMEDy" id="57o1xPKkcvg" role="1xVPHs">
+                  <node concept="chp4Y" id="57o1xPKkcE6" role="ri$Ld">
+                    <ref role="cht4Q" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZMM4L" id="57o1xPKkd1Q" role="aCds2">
+        <node concept="3clFbS" id="57o1xPKkd1S" role="2VODD2">
+          <node concept="3clFbF" id="57o1xPKkd7X" role="3cqZAp">
+            <node concept="2OqwBi" id="57o1xPKkdkE" role="3clFbG">
+              <node concept="2ZN8Hh" id="57o1xPKkd7W" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="57o1xPKkd_J" role="2OqNvi">
+                <node concept="1xMEDy" id="57o1xPKkd_L" role="1xVPHs">
+                  <node concept="chp4Y" id="57o1xPKx2Fg" role="ri$Ld">
+                    <ref role="cht4Q" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZMM4L" id="57o1xPKkdYj" role="aCds2">
+        <node concept="3clFbS" id="57o1xPKkdYl" role="2VODD2">
+          <node concept="3clFbF" id="57o1xPKke5A" role="3cqZAp">
+            <node concept="2OqwBi" id="57o1xPKkeij" role="3clFbG">
+              <node concept="2ZN8Hh" id="57o1xPKke5_" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="57o1xPKkezo" role="2OqNvi">
+                <node concept="1xMEDy" id="57o1xPKkezq" role="1xVPHs">
+                  <node concept="chp4Y" id="57o1xPKkfZh" role="ri$Ld">
+                    <ref role="cht4Q" to="xwgo:5cR9puhF2lu" resolve="State" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="57o1xPKkbWx" role="CpUAK">
+      <ref role="2$4xQ3" node="57o1xPKkbWr" resolve="DirectedGraph" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="57o1xPKkgdI">
+    <ref role="1XX52x" to="xwgo:5cR9puhF2lu" resolve="State" />
+    <node concept="3EZMnI" id="57o1xPKkgdW" role="2wV5jI">
+      <node concept="3F0ifn" id="57o1xPKkge3" role="3EZMnx">
+        <property role="3F0ifm" value="StateName:" />
+      </node>
+      <node concept="3F0A7n" id="57o1xPKkge9" role="3EZMnx">
+        <ref role="1NtTu8" to="xwgo:5cR9puhFRxl" resolve="text" />
+      </node>
+      <node concept="l2Vlx" id="57o1xPKkgdZ" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="57o1xPKkgdK" role="CpUAK">
+      <ref role="2$4xQ3" node="57o1xPKkbWr" resolve="DirectedGraph" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="57o1xPKbEI0">
+    <property role="TrG5h" value="DashboardVisualisation" />
+    <node concept="2BsEeg" id="57o1xPKbEI1" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="TabularView" />
+      <property role="2BUmq6" value="This is a Tabular View of the Dashboard" />
+    </node>
+    <node concept="2BsEeg" id="57o1xPKkbVL" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="Textual" />
+      <property role="2BUmq6" value="This is a Textual Editor for the Dashboard" />
+    </node>
+    <node concept="2BsEeg" id="57o1xPKkbWr" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="DirectedGraph" />
+      <property role="2BUmq6" value="This is a Directed Graph for the flowModel" />
+    </node>
+  </node>
   <node concept="24kQdi" id="57o1xPKwweb">
     <ref role="1XX52x" to="xwgo:7c_wSf79K0w" resolve="StatePointer" />
     <node concept="2ZMJ7s" id="57o1xPKwwef" role="2wV5jI">
@@ -1710,6 +1701,34 @@
     </node>
     <node concept="2aJ2om" id="57o1xPKwwed" role="CpUAK">
       <ref role="2$4xQ3" node="57o1xPKkbWr" resolve="DirectedGraph" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="57o1xPKbEI6">
+    <ref role="1XX52x" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+    <node concept="3EZMnI" id="57o1xPKbIov" role="2wV5jI">
+      <node concept="3F0ifn" id="57o1xPKbIoA" role="3EZMnx">
+        <property role="3F0ifm" value="Message Hint:" />
+      </node>
+      <node concept="18a60v" id="57o1xPKbIoB" role="3EZMnx">
+        <node concept="VPM3Z" id="57o1xPKbIoC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pVoyu" id="57o1xPKbIoD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="A1WHr" id="57o1xPKbIoS" role="3vIgyS">
+          <ref role="2ZyFGn" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="57o1xPKbIoE" role="3EZMnx">
+        <node concept="pVoyu" id="57o1xPKbIoF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="57o1xPKbIoG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="57o1xPKbIoy" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="57o1xPKIpGy">

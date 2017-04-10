@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -44,6 +45,7 @@
     <property role="TrG5h" value="AndPropertyFormula" />
     <property role="EcuMT" value="4439542802417923291" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="AND" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QsrawRgNjs" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgNjl" resolve="BinaryPropertyFormula" />
@@ -80,6 +82,7 @@
   <node concept="1TIwiD" id="3QsrawRgNjz">
     <property role="TrG5h" value="ImplicationPropertyFormula" />
     <property role="EcuMT" value="4439542802417923299" />
+    <property role="34LRSv" value="IMPLICATION" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QsrawRgNj$" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgNjl" resolve="BinaryPropertyFormula" />
@@ -89,6 +92,7 @@
     <property role="TrG5h" value="NotPropertyFormula" />
     <property role="EcuMT" value="4439542802417923302" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="NOT" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QsrawRgNjB" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgNjo" resolve="UnaryPropertyFormula" />
@@ -98,6 +102,7 @@
     <property role="TrG5h" value="OrPropertyFormula" />
     <property role="EcuMT" value="4439542802417923294" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="OR" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3QsrawRgNjx" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgNjl" resolve="BinaryPropertyFormula" />
