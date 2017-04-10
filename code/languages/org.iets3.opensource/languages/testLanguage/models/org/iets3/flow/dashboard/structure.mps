@@ -156,7 +156,7 @@
       <property role="IQ2ns" value="912111804093288680" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="previousStatePointer" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
     </node>
   </node>
