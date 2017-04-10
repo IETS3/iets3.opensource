@@ -1201,5 +1201,33 @@
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1yY6_Uj8oYm">
+    <property role="EcuMT" value="1782891495982993302" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="DelegateConnector" />
+    <property role="34LRSv" value="delegate" />
+    <ref role="1TJDcQ" node="cJpacq1taR" resolve="DelegationConnector" />
+    <node concept="1TJgyj" id="1yY6_Uj8oYn" role="1TKVEi">
+      <property role="IQ2ns" value="1782891495982993303" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Zvsa54vnWD" resolve="InstanceRef" />
+    </node>
+    <node concept="1TJgyj" id="1yY6_Uj8oYq" role="1TKVEi">
+      <property role="IQ2ns" value="1782891495982993306" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sourcePort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="1TJgyj" id="1yY6_Uj8oYv" role="1TKVEi">
+      <property role="IQ2ns" value="1782891495982993311" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outerPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+  </node>
 </model>
 

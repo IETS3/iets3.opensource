@@ -110,6 +110,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -156,6 +159,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
@@ -579,32 +583,90 @@
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
     <node concept="2tJIrI" id="7UxulDgvQc7" role="jymVt" />
-    <node concept="3clFbW" id="7UxulDgvQc8" role="jymVt">
-      <property role="TrG5h" value="Exception" />
-      <node concept="3cqZAl" id="7UxulDgvQc9" role="3clF45" />
-      <node concept="3Tm1VV" id="7UxulDgvQca" role="1B3o_S" />
-      <node concept="3clFbS" id="7UxulDgvQcb" role="3clF47">
-        <node concept="XkiVB" id="7UxulDgvQcc" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
-        </node>
-      </node>
+    <node concept="312cEg" id="7eS2goxRK0I" role="jymVt">
+      <property role="TrG5h" value="internal" />
+      <node concept="3Tm6S6" id="7eS2goxRK0J" role="1B3o_S" />
+      <node concept="10P_77" id="7eS2goxRKu7" role="1tU5fm" />
     </node>
-    <node concept="2tJIrI" id="7UxulDgvQcd" role="jymVt" />
-    <node concept="3clFbW" id="7UxulDgvQce" role="jymVt">
-      <property role="TrG5h" value="Exception" />
-      <node concept="3cqZAl" id="7UxulDgvQcf" role="3clF45" />
-      <node concept="3Tm1VV" id="7UxulDgvQcg" role="1B3o_S" />
-      <node concept="37vLTG" id="7UxulDgvQch" role="3clF46">
-        <property role="TrG5h" value="msg" />
-        <node concept="17QB3L" id="6ETT7KpBNtr" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="7UxulDgvQcj" role="3clF47">
-        <node concept="XkiVB" id="7UxulDgvQck" role="3cqZAp">
+    <node concept="312cEg" id="1kfQzZFA_4k" role="jymVt">
+      <property role="TrG5h" value="node" />
+      <node concept="3Tm6S6" id="1kfQzZFA_4l" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1kfQzZFA_4n" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="7eS2goxRJGj" role="jymVt" />
+    <node concept="3clFbW" id="7eS2goxRQjk" role="jymVt">
+      <node concept="3cqZAl" id="7eS2goxRQjl" role="3clF45" />
+      <node concept="3Tm1VV" id="7eS2goxRQjm" role="1B3o_S" />
+      <node concept="3clFbS" id="7eS2goxRQjn" role="3clF47">
+        <node concept="XkiVB" id="7eS2goxRQjo" role="3cqZAp">
           <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-          <node concept="37vLTw" id="7UxulDgvQcl" role="37wK5m">
-            <ref role="3cqZAo" node="7UxulDgvQch" resolve="msg" />
+          <node concept="37vLTw" id="7eS2goxRSiT" role="37wK5m">
+            <ref role="3cqZAo" node="7eS2goxRQjx" resolve="message" />
           </node>
         </node>
+        <node concept="3clFbF" id="7eS2goxRQRx" role="3cqZAp">
+          <node concept="37vLTI" id="7eS2goxRSbk" role="3clFbG">
+            <node concept="37vLTw" id="7eS2goxRShg" role="37vLTx">
+              <ref role="3cqZAo" node="7eS2goxRQCv" resolve="node" />
+            </node>
+            <node concept="2OqwBi" id="7eS2goxRR8o" role="37vLTJ">
+              <node concept="Xjq3P" id="7eS2goxRQRv" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7eS2goxRRyR" role="2OqNvi">
+                <ref role="2Oxat5" node="1kfQzZFA_4k" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7eS2goxRQjp" role="3cqZAp">
+          <node concept="37vLTI" id="7eS2goxRQjq" role="3clFbG">
+            <node concept="37vLTw" id="7eS2goxRQjr" role="37vLTx">
+              <ref role="3cqZAo" node="7eS2goxRQjv" resolve="internal" />
+            </node>
+            <node concept="2OqwBi" id="7eS2goxRQjs" role="37vLTJ">
+              <node concept="Xjq3P" id="7eS2goxRQjt" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7eS2goxRQju" role="2OqNvi">
+                <ref role="2Oxat5" node="7eS2goxRK0I" resolve="internal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7eS2goxRQjv" role="3clF46">
+        <property role="TrG5h" value="internal" />
+        <node concept="10P_77" id="7eS2goxRQjw" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7eS2goxRQjx" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="7eS2goxRQjy" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7eS2goxRQCv" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7eS2goxRQMi" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7eS2goxRZd6" role="jymVt" />
+    <node concept="3clFbW" id="7eS2goxRIKA" role="jymVt">
+      <node concept="3cqZAl" id="7eS2goxRIKC" role="3clF45" />
+      <node concept="3Tm1VV" id="7eS2goxRIKD" role="1B3o_S" />
+      <node concept="3clFbS" id="7eS2goxRIKE" role="3clF47">
+        <node concept="1VxSAg" id="7eS2goxRWul" role="3cqZAp">
+          <ref role="37wK5l" node="7eS2goxRQjk" resolve="SolverException" />
+          <node concept="37vLTw" id="7eS2goxRW$g" role="37wK5m">
+            <ref role="3cqZAo" node="7eS2goxRJ7D" resolve="internal" />
+          </node>
+          <node concept="37vLTw" id="7eS2goxRWI6" role="37wK5m">
+            <ref role="3cqZAo" node="7eS2goxRJaP" resolve="message" />
+          </node>
+          <node concept="10Nm6u" id="7eS2goxRWME" role="37wK5m" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7eS2goxRJ7D" role="3clF46">
+        <property role="TrG5h" value="internal" />
+        <node concept="10P_77" id="7eS2goxRJ7C" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7eS2goxRJaP" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="7eS2goxRJgv" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="1kfQzZFA$VT" role="jymVt" />
@@ -621,29 +683,86 @@
         <node concept="3Tqbb2" id="1kfQzZFA$X3" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1kfQzZFA$UQ" role="3clF47">
-        <node concept="XkiVB" id="1kfQzZFA$UR" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-          <node concept="37vLTw" id="1kfQzZFA$US" role="37wK5m">
+        <node concept="1VxSAg" id="7eS2goxRVIO" role="3cqZAp">
+          <ref role="37wK5l" node="7eS2goxRQjk" resolve="SolverException" />
+          <node concept="3clFbT" id="7eS2goxRVOH" role="37wK5m">
+            <property role="3clFbU" value="false" />
+          </node>
+          <node concept="37vLTw" id="7eS2goxRVYk" role="37wK5m">
             <ref role="3cqZAo" node="1kfQzZFA$UO" resolve="msg" />
           </node>
+          <node concept="37vLTw" id="7eS2goxRW2Q" role="37wK5m">
+            <ref role="3cqZAo" node="1kfQzZFA$WF" resolve="node" />
+          </node>
         </node>
-        <node concept="3clFbF" id="1kfQzZFA_4o" role="3cqZAp">
-          <node concept="37vLTI" id="1kfQzZFA_4q" role="3clFbG">
-            <node concept="2OqwBi" id="1kfQzZFA_4u" role="37vLTJ">
-              <node concept="Xjq3P" id="1kfQzZFA_4x" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1kfQzZFA_4t" role="2OqNvi">
-                <ref role="2Oxat5" node="1kfQzZFA_4k" resolve="node" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="1kfQzZFA_4y" role="37vLTx">
-              <ref role="3cqZAo" node="1kfQzZFA$WF" resolve="node" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7eS2goxS0XC" role="jymVt" />
+    <node concept="3clFbW" id="7UxulDgvQce" role="jymVt">
+      <property role="TrG5h" value="Exception" />
+      <node concept="3cqZAl" id="7UxulDgvQcf" role="3clF45" />
+      <node concept="3Tm1VV" id="7UxulDgvQcg" role="1B3o_S" />
+      <node concept="37vLTG" id="7UxulDgvQch" role="3clF46">
+        <property role="TrG5h" value="msg" />
+        <node concept="17QB3L" id="6ETT7KpBNtr" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="7UxulDgvQcj" role="3clF47">
+        <node concept="1VxSAg" id="7eS2goxS32F" role="3cqZAp">
+          <ref role="37wK5l" node="7eS2goxRIKA" resolve="SolverException" />
+          <node concept="3clFbT" id="7eS2goxS35N" role="37wK5m">
+            <property role="3clFbU" value="false" />
+          </node>
+          <node concept="37vLTw" id="7eS2goxS3fC" role="37wK5m">
+            <ref role="3cqZAo" node="7UxulDgvQch" resolve="msg" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7eS2goxRIdj" role="jymVt" />
+    <node concept="3clFbW" id="7UxulDgvQc8" role="jymVt">
+      <property role="TrG5h" value="Exception" />
+      <node concept="3cqZAl" id="7UxulDgvQc9" role="3clF45" />
+      <node concept="3Tm1VV" id="7UxulDgvQca" role="1B3o_S" />
+      <node concept="3clFbS" id="7UxulDgvQcb" role="3clF47">
+        <node concept="1VxSAg" id="7eS2goxS3q8" role="3cqZAp">
+          <ref role="37wK5l" node="7UxulDgvQce" resolve="SolverException" />
+          <node concept="10Nm6u" id="7eS2goxS3wc" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1kfQzZFA$Zg" role="jymVt" />
+    <node concept="3clFb_" id="7eS2goxS6Im" role="jymVt">
+      <property role="TrG5h" value="isInternal" />
+      <node concept="10P_77" id="7eS2goxS7AI" role="3clF45" />
+      <node concept="3Tm1VV" id="7eS2goxS6Ip" role="1B3o_S" />
+      <node concept="3clFbS" id="7eS2goxS6Iq" role="3clF47">
+        <node concept="3clFbF" id="7eS2goxS7Tn" role="3cqZAp">
+          <node concept="2OqwBi" id="7eS2goxS8d5" role="3clFbG">
+            <node concept="Xjq3P" id="7eS2goxS7Tm" role="2Oq$k0" />
+            <node concept="2OwXpG" id="7eS2goxS90T" role="2OqNvi">
+              <ref role="2Oxat5" node="7eS2goxRK0I" resolve="internal" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1kfQzZFA$YN" role="jymVt" />
-    <node concept="2tJIrI" id="1kfQzZFA$Zg" role="jymVt" />
+    <node concept="2tJIrI" id="7eS2goxSqeo" role="jymVt" />
+    <node concept="3clFb_" id="7eS2goxSqVe" role="jymVt">
+      <property role="TrG5h" value="getNode" />
+      <node concept="3Tqbb2" id="7eS2goxSsOB" role="3clF45" />
+      <node concept="3Tm1VV" id="7eS2goxSqVh" role="1B3o_S" />
+      <node concept="3clFbS" id="7eS2goxSqVi" role="3clF47">
+        <node concept="3clFbF" id="7eS2goxSt7_" role="3cqZAp">
+          <node concept="2OqwBi" id="7eS2goxStrr" role="3clFbG">
+            <node concept="Xjq3P" id="7eS2goxSt7$" role="2Oq$k0" />
+            <node concept="2OwXpG" id="7eS2goxStP$" role="2OqNvi">
+              <ref role="2Oxat5" node="1kfQzZFA_4k" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7eS2goxS6l_" role="jymVt" />
     <node concept="3clFb_" id="1kfQzZFA_0d" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="printStackTrace" />
@@ -719,10 +838,188 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7UxulDgvQcm" role="jymVt" />
-    <node concept="312cEg" id="1kfQzZFA_4k" role="jymVt">
-      <property role="TrG5h" value="node" />
-      <node concept="3Tm6S6" id="1kfQzZFA_4l" role="1B3o_S" />
-      <node concept="3Tqbb2" id="1kfQzZFA_4n" role="1tU5fm" />
+  </node>
+  <node concept="312cEu" id="XhdFKvMYZY">
+    <property role="TrG5h" value="TaskCreationException" />
+    <node concept="2tJIrI" id="XhdFKvMZ0U" role="jymVt" />
+    <node concept="312cEg" id="XhdFKvXU0a" role="jymVt">
+      <property role="TrG5h" value="messages" />
+      <node concept="3Tm6S6" id="XhdFKvXU0b" role="1B3o_S" />
+      <node concept="A3Dl8" id="XhdFKvXU75" role="1tU5fm">
+        <node concept="17QB3L" id="XhdFKvXUdj" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="XhdFKvXTVX" role="jymVt" />
+    <node concept="3clFbW" id="XhdFKvMZ6Z" role="jymVt">
+      <node concept="3cqZAl" id="XhdFKvMZ71" role="3clF45" />
+      <node concept="3Tm1VV" id="XhdFKvMZ72" role="1B3o_S" />
+      <node concept="3clFbS" id="XhdFKvMZ73" role="3clF47">
+        <node concept="XkiVB" id="XhdFKvMZec" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
+        </node>
+        <node concept="3clFbF" id="XhdFKvXUkw" role="3cqZAp">
+          <node concept="37vLTI" id="XhdFKvXVpe" role="3clFbG">
+            <node concept="37vLTw" id="XhdFKvXVr$" role="37vLTx">
+              <ref role="3cqZAo" node="XhdFKvNrQI" resolve="messages" />
+            </node>
+            <node concept="2OqwBi" id="XhdFKvXUxU" role="37vLTJ">
+              <node concept="Xjq3P" id="XhdFKvXUku" role="2Oq$k0" />
+              <node concept="2OwXpG" id="XhdFKvXURO" role="2OqNvi">
+                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XhdFKvNrQI" role="3clF46">
+        <property role="TrG5h" value="messages" />
+        <node concept="A3Dl8" id="XhdFKvNrQG" role="1tU5fm">
+          <node concept="17QB3L" id="XhdFKvNrU3" role="A3Ik2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="XhdFKvNPxx" role="jymVt" />
+    <node concept="3clFbW" id="XhdFKvNPwm" role="jymVt">
+      <node concept="3cqZAl" id="XhdFKvNPwn" role="3clF45" />
+      <node concept="3Tm1VV" id="XhdFKvNPwo" role="1B3o_S" />
+      <node concept="3clFbS" id="XhdFKvNPwp" role="3clF47">
+        <node concept="XkiVB" id="XhdFKvNPwq" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
+        </node>
+        <node concept="3clFbF" id="XhdFKvXVwL" role="3cqZAp">
+          <node concept="37vLTI" id="XhdFKvXW_Q" role="3clFbG">
+            <node concept="2ShNRf" id="XhdFKvXWCx" role="37vLTx">
+              <node concept="Tc6Ow" id="XhdFKvXWQm" role="2ShVmc">
+                <node concept="17QB3L" id="XhdFKvXXg1" role="HW$YZ" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="XhdFKvXVI1" role="37vLTJ">
+              <node concept="Xjq3P" id="XhdFKvXVwJ" role="2Oq$k0" />
+              <node concept="2OwXpG" id="XhdFKvXW40" role="2OqNvi">
+                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="XhdFKvXXoM" role="3cqZAp">
+          <node concept="2OqwBi" id="XhdFKvXYw7" role="3clFbG">
+            <node concept="1eOMI4" id="XhdFKvXZl6" role="2Oq$k0">
+              <node concept="10QFUN" id="XhdFKvXZl7" role="1eOMHV">
+                <node concept="2OqwBi" id="XhdFKvXZl3" role="10QFUP">
+                  <node concept="Xjq3P" id="XhdFKvXZl4" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="XhdFKvXZl5" role="2OqNvi">
+                    <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+                  </node>
+                </node>
+                <node concept="_YKpA" id="XhdFKvXZpR" role="10QFUM">
+                  <node concept="17QB3L" id="XhdFKvXZFh" role="_ZDj9" />
+                </node>
+              </node>
+            </node>
+            <node concept="TSZUe" id="XhdFKvY0J$" role="2OqNvi">
+              <node concept="37vLTw" id="XhdFKvY0Vq" role="25WWJ7">
+                <ref role="3cqZAo" node="XhdFKvNPwr" resolve="message" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XhdFKvNPwr" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="XhdFKvNP_v" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="XhdFKvMZ7H" role="jymVt" />
+    <node concept="3clFb_" id="XhdFKvY1PY" role="jymVt">
+      <property role="TrG5h" value="getMessages" />
+      <node concept="3Tm1VV" id="XhdFKvY1Q1" role="1B3o_S" />
+      <node concept="3clFbS" id="XhdFKvY1Q2" role="3clF47">
+        <node concept="3clFbF" id="XhdFKvY2$H" role="3cqZAp">
+          <node concept="2OqwBi" id="XhdFKvY2Pg" role="3clFbG">
+            <node concept="Xjq3P" id="XhdFKvY2$G" role="2Oq$k0" />
+            <node concept="2OwXpG" id="XhdFKvY3ba" role="2OqNvi">
+              <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="XhdFKvY2nP" role="3clF45">
+        <node concept="17QB3L" id="XhdFKvY2nQ" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="XhdFKvMYZZ" role="1B3o_S" />
+    <node concept="3uibUv" id="rj7uJEn1FU" role="1zkMxy">
+      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6rcydJjj28U">
+    <property role="3GE5qa" value="translation" />
+    <property role="TrG5h" value="DefaultSMTLIBTranslatorDriver" />
+    <node concept="2tJIrI" id="6rcydJjj29Y" role="jymVt" />
+    <node concept="2tJIrI" id="6rcydJjj2aF" role="jymVt" />
+    <node concept="3Tm1VV" id="6rcydJjj28V" role="1B3o_S" />
+    <node concept="3uibUv" id="6rcydJjj2ak" role="EKbjA">
+      <ref role="3uigEE" node="6rcydJjj1BR" resolve="SMTLIBTranslatorDriver" />
+    </node>
+    <node concept="3clFb_" id="6rcydJjj2bb" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="choose" />
+      <node concept="3Tm1VV" id="6rcydJjj2bd" role="1B3o_S" />
+      <node concept="3uibUv" id="6rcydJjj2be" role="3clF45">
+        <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
+      </node>
+      <node concept="37vLTG" id="6rcydJjj2bf" role="3clF46">
+        <property role="TrG5h" value="translators" />
+        <node concept="_YKpA" id="6rcydJjj2bg" role="1tU5fm">
+          <node concept="3uibUv" id="6rcydJjj2bh" role="_ZDj9">
+            <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6rcydJjn04S" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6rcydJjn0e6" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6rcydJjj2bi" role="3clF47">
+        <node concept="3clFbH" id="6rcydJjj2Yl" role="3cqZAp" />
+        <node concept="2Gpval" id="6rcydJjmWgP" role="3cqZAp">
+          <node concept="2GrKxI" id="6rcydJjmWgR" role="2Gsz3X">
+            <property role="TrG5h" value="t" />
+          </node>
+          <node concept="37vLTw" id="6rcydJjmWoh" role="2GsD0m">
+            <ref role="3cqZAo" node="6rcydJjj2bf" resolve="translators" />
+          </node>
+          <node concept="3clFbS" id="6rcydJjmWgV" role="2LFqv$">
+            <node concept="3clFbJ" id="6rcydJjfIAL" role="3cqZAp">
+              <node concept="3clFbS" id="6rcydJjfIAN" role="3clFbx">
+                <node concept="3cpWs6" id="6rcydJjfLah" role="3cqZAp">
+                  <node concept="2GrUjf" id="6rcydJjfJtq" role="3cqZAk">
+                    <ref role="2Gs0qQ" node="6rcydJjmWgR" resolve="t" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6rcydJjfGu7" role="3clFbw">
+                <node concept="2GrUjf" id="6rcydJjfGoH" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6rcydJjmWgR" resolve="t" />
+                </node>
+                <node concept="liA8E" id="6rcydJjfId4" role="2OqNvi">
+                  <ref role="37wK5l" node="6rcydJjfGRF" resolve="canTranslate" />
+                  <node concept="37vLTw" id="6rcydJjn0jr" role="37wK5m">
+                    <ref role="3cqZAo" node="6rcydJjn04S" resolve="expression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6rcydJjmZUG" role="3cqZAp">
+          <node concept="10Nm6u" id="6rcydJjn00C" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6rcydJjj2bj" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
   <node concept="vrV6u" id="6rcydJjd6TR">
@@ -732,67 +1029,32 @@
       <ref role="3uigEE" node="6rcydJjd7HU" resolve="SMTLIBTranslatorFactory" />
     </node>
   </node>
-  <node concept="3HP615" id="6rcydJjd7HU">
+  <node concept="3HP615" id="6rcydJjju7e">
     <property role="3GE5qa" value="translation" />
-    <property role="TrG5h" value="SMTLIBTranslatorFactory" />
-    <node concept="2tJIrI" id="6rcydJjd89V" role="jymVt" />
-    <node concept="3clFb_" id="6rcydJjd7SU" role="jymVt">
+    <property role="TrG5h" value="SolverAPI" />
+    <node concept="2tJIrI" id="6rcydJjju7$" role="jymVt" />
+    <node concept="3clFb_" id="6rcydJjjumU" role="jymVt">
       <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getSMTLIBTranslators" />
-      <node concept="3Tm1VV" id="6rcydJjd7SX" role="1B3o_S" />
-      <node concept="3clFbS" id="6rcydJjd7SY" role="3clF47" />
-      <node concept="_YKpA" id="6rcydJjfAg$" role="3clF45">
-        <node concept="3uibUv" id="6rcydJjfAg_" role="_ZDj9">
-          <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="6rcydJjd7HV" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="6rcydJjd8gs">
-    <property role="3GE5qa" value="translation" />
-    <property role="TrG5h" value="AbstractSMTLIBTranslator" />
-    <property role="1sVAO0" value="true" />
-    <node concept="3Tm1VV" id="6rcydJjd8gt" role="1B3o_S" />
-    <node concept="2tJIrI" id="6rcydJjfGFf" role="jymVt" />
-    <node concept="3clFb_" id="6rcydJjfGRF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="canTranslate" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6rcydJjfGRI" role="3clF47" />
-      <node concept="3Tm1VV" id="6rcydJjfGLy" role="1B3o_S" />
-      <node concept="10P_77" id="6rcydJjfGXZ" role="3clF45" />
-      <node concept="ffn8J" id="6rcydJjfH48" role="3clF46">
-        <property role="TrG5h" value="expression" />
-        <ref role="ffrpq" to="6bz1:6yt8uwrpTKS" resolve="node" />
-        <node concept="3Tqbb2" id="6rcydJjfHam" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6rcydJjfGFi" role="jymVt" />
-    <node concept="3clFb_" id="6rcydJjfK9A" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="translate" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6rcydJjfK9D" role="3clF47" />
-      <node concept="3Tm1VV" id="6rcydJjfJX5" role="1B3o_S" />
-      <node concept="3uibUv" id="6rcydJjfK9o" role="3clF45">
+      <property role="TrG5h" value="getExpressionFactory" />
+      <node concept="3clFbS" id="6rcydJjjumX" role="3clF47" />
+      <node concept="3Tm1VV" id="6rcydJjjumY" role="1B3o_S" />
+      <node concept="3uibUv" id="6rcydJjjutg" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
-      <node concept="37vLTG" id="6rcydJjfKge" role="3clF46">
-        <property role="TrG5h" value="expression" />
-        <node concept="3Tqbb2" id="6rcydJjfKgd" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="6rcydJjjn4O" role="3clF46">
-        <property role="TrG5h" value="hub" />
-        <node concept="3uibUv" id="6rcydJjjocw" role="1tU5fm">
-          <ref role="3uigEE" node="6rcydJjd8l5" resolve="SMTLIBTranslator" />
+      <node concept="P$JXv" id="6rcydJjjutB" role="lGtFl">
+        <node concept="x79VA" id="6rcydJjjutE" role="3nqlJM">
+          <property role="x79VB" value="an Object that can be safely casted to IExpr.IFactory" />
+        </node>
+        <node concept="TZ5HA" id="6rcydJjjutC" role="TZ5H$">
+          <node concept="1dT_AC" id="6rcydJjjutD" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the jSMTLIB ExpressionFactory." />
+          </node>
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6rcydJjju7F" role="jymVt" />
+    <node concept="3Tm1VV" id="6rcydJjju7f" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="6rcydJjd8l5">
     <property role="3GE5qa" value="translation" />
@@ -1183,169 +1445,6 @@
     </node>
     <node concept="3Tm1VV" id="6rcydJjd8l6" role="1B3o_S" />
   </node>
-  <node concept="3HP615" id="6rcydJjj1BR">
-    <property role="3GE5qa" value="translation" />
-    <property role="TrG5h" value="SMTLIBTranslatorDriver" />
-    <node concept="2tJIrI" id="6rcydJjj1C_" role="jymVt" />
-    <node concept="3clFb_" id="6rcydJjj1OV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="choose" />
-      <node concept="3clFbS" id="6rcydJjj1OY" role="3clF47" />
-      <node concept="3Tm1VV" id="6rcydJjj1OZ" role="1B3o_S" />
-      <node concept="3uibUv" id="6rcydJjj1Vh" role="3clF45">
-        <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
-      </node>
-      <node concept="37vLTG" id="6rcydJjj1Yz" role="3clF46">
-        <property role="TrG5h" value="translators" />
-        <node concept="_YKpA" id="6rcydJjj1Yx" role="1tU5fm">
-          <node concept="3uibUv" id="6rcydJjj25r" role="_ZDj9">
-            <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6rcydJjn0MD" role="3clF46">
-        <property role="TrG5h" value="expression" />
-        <node concept="3Tqbb2" id="6rcydJjn0ME" role="1tU5fm" />
-      </node>
-      <node concept="P$JXv" id="6rcydJjn5RU" role="lGtFl">
-        <node concept="TUZQ0" id="6rcydJjn5RX" role="3nqlJM">
-          <property role="TUZQ4" value="list of translators as collected from the SMTLIBTranslatorFactories." />
-          <node concept="zr_55" id="6rcydJjn5RZ" role="zr_5Q">
-            <ref role="zr_51" node="6rcydJjj1Yz" resolve="translators" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="6rcydJjn5S0" role="3nqlJM">
-          <property role="TUZQ4" value="the expression to be translated." />
-          <node concept="zr_55" id="6rcydJjn5S2" role="zr_5Q">
-            <ref role="zr_51" node="6rcydJjn0MD" resolve="expression" />
-          </node>
-        </node>
-        <node concept="x79VA" id="6rcydJjn5S3" role="3nqlJM">
-          <property role="x79VB" value="an AbstractSMTLIBTranslator, usualy one from the translators-list." />
-        </node>
-        <node concept="TZ5HA" id="6rcydJjn5RV" role="TZ5H$">
-          <node concept="1dT_AC" id="6rcydJjn5RW" role="1dT_Ay">
-            <property role="1dT_AB" value="An SMTLIBTranslationDriver controls the translation of KernelF expressions to SMTLIB expressions." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="6rcydJjn6ai" role="TZ5H$">
-          <node concept="1dT_AC" id="6rcydJjn6aj" role="1dT_Ay">
-            <property role="1dT_AB" value="When passed to an SMTLIBTranslator as a driver, then whenever the translation encounters a subexpression," />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="6rcydJjn6$0" role="TZ5H$">
-          <node concept="1dT_AC" id="6rcydJjn6$1" role="1dT_Ay">
-            <property role="1dT_AB" value="the driver is called first to choose which translator should be used to translate this subexpression." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="6rcydJjn6PA" role="TZ5H$">
-          <node concept="1dT_AC" id="6rcydJjn6PB" role="1dT_Ay">
-            <property role="1dT_AB" value="This way, the driver is able to tweak the translation arbitrarily." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6rcydJjj1CL" role="jymVt" />
-    <node concept="3Tm1VV" id="6rcydJjj1BS" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="6rcydJjj28U">
-    <property role="3GE5qa" value="translation" />
-    <property role="TrG5h" value="DefaultSMTLIBTranslatorDriver" />
-    <node concept="2tJIrI" id="6rcydJjj29Y" role="jymVt" />
-    <node concept="2tJIrI" id="6rcydJjj2aF" role="jymVt" />
-    <node concept="3Tm1VV" id="6rcydJjj28V" role="1B3o_S" />
-    <node concept="3uibUv" id="6rcydJjj2ak" role="EKbjA">
-      <ref role="3uigEE" node="6rcydJjj1BR" resolve="SMTLIBTranslatorDriver" />
-    </node>
-    <node concept="3clFb_" id="6rcydJjj2bb" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="choose" />
-      <node concept="3Tm1VV" id="6rcydJjj2bd" role="1B3o_S" />
-      <node concept="3uibUv" id="6rcydJjj2be" role="3clF45">
-        <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
-      </node>
-      <node concept="37vLTG" id="6rcydJjj2bf" role="3clF46">
-        <property role="TrG5h" value="translators" />
-        <node concept="_YKpA" id="6rcydJjj2bg" role="1tU5fm">
-          <node concept="3uibUv" id="6rcydJjj2bh" role="_ZDj9">
-            <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6rcydJjn04S" role="3clF46">
-        <property role="TrG5h" value="expression" />
-        <node concept="3Tqbb2" id="6rcydJjn0e6" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="6rcydJjj2bi" role="3clF47">
-        <node concept="3clFbH" id="6rcydJjj2Yl" role="3cqZAp" />
-        <node concept="2Gpval" id="6rcydJjmWgP" role="3cqZAp">
-          <node concept="2GrKxI" id="6rcydJjmWgR" role="2Gsz3X">
-            <property role="TrG5h" value="t" />
-          </node>
-          <node concept="37vLTw" id="6rcydJjmWoh" role="2GsD0m">
-            <ref role="3cqZAo" node="6rcydJjj2bf" resolve="translators" />
-          </node>
-          <node concept="3clFbS" id="6rcydJjmWgV" role="2LFqv$">
-            <node concept="3clFbJ" id="6rcydJjfIAL" role="3cqZAp">
-              <node concept="3clFbS" id="6rcydJjfIAN" role="3clFbx">
-                <node concept="3cpWs6" id="6rcydJjfLah" role="3cqZAp">
-                  <node concept="2GrUjf" id="6rcydJjfJtq" role="3cqZAk">
-                    <ref role="2Gs0qQ" node="6rcydJjmWgR" resolve="t" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6rcydJjfGu7" role="3clFbw">
-                <node concept="2GrUjf" id="6rcydJjfGoH" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="6rcydJjmWgR" resolve="t" />
-                </node>
-                <node concept="liA8E" id="6rcydJjfId4" role="2OqNvi">
-                  <ref role="37wK5l" node="6rcydJjfGRF" resolve="canTranslate" />
-                  <node concept="37vLTw" id="6rcydJjn0jr" role="37wK5m">
-                    <ref role="3cqZAo" node="6rcydJjn04S" resolve="expression" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="6rcydJjmZUG" role="3cqZAp">
-          <node concept="10Nm6u" id="6rcydJjn00C" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="6rcydJjj2bj" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-  </node>
-  <node concept="3HP615" id="6rcydJjju7e">
-    <property role="3GE5qa" value="translation" />
-    <property role="TrG5h" value="SolverAPI" />
-    <node concept="2tJIrI" id="6rcydJjju7$" role="jymVt" />
-    <node concept="3clFb_" id="6rcydJjjumU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getExpressionFactory" />
-      <node concept="3clFbS" id="6rcydJjjumX" role="3clF47" />
-      <node concept="3Tm1VV" id="6rcydJjjumY" role="1B3o_S" />
-      <node concept="3uibUv" id="6rcydJjjutg" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="P$JXv" id="6rcydJjjutB" role="lGtFl">
-        <node concept="x79VA" id="6rcydJjjutE" role="3nqlJM">
-          <property role="x79VB" value="an Object that can be safely casted to IExpr.IFactory" />
-        </node>
-        <node concept="TZ5HA" id="6rcydJjjutC" role="TZ5H$">
-          <node concept="1dT_AC" id="6rcydJjjutD" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the jSMTLIB ExpressionFactory." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6rcydJjju7F" role="jymVt" />
-    <node concept="3Tm1VV" id="6rcydJjju7f" role="1B3o_S" />
-  </node>
   <node concept="312cEu" id="7tOaVPe7SfY">
     <property role="3GE5qa" value="translation" />
     <property role="TrG5h" value="PrioritySMTLIBTranslatorDriver" />
@@ -1518,117 +1617,132 @@
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="XhdFKvMYZY">
-    <property role="TrG5h" value="TaskCreationException" />
-    <node concept="2tJIrI" id="XhdFKvMZ0U" role="jymVt" />
-    <node concept="312cEg" id="XhdFKvXU0a" role="jymVt">
-      <property role="TrG5h" value="messages" />
-      <node concept="3Tm6S6" id="XhdFKvXU0b" role="1B3o_S" />
-      <node concept="A3Dl8" id="XhdFKvXU75" role="1tU5fm">
-        <node concept="17QB3L" id="XhdFKvXUdj" role="A3Ik2" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="XhdFKvXTVX" role="jymVt" />
-    <node concept="3clFbW" id="XhdFKvMZ6Z" role="jymVt">
-      <node concept="3cqZAl" id="XhdFKvMZ71" role="3clF45" />
-      <node concept="3Tm1VV" id="XhdFKvMZ72" role="1B3o_S" />
-      <node concept="3clFbS" id="XhdFKvMZ73" role="3clF47">
-        <node concept="XkiVB" id="XhdFKvMZec" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
-        </node>
-        <node concept="3clFbF" id="XhdFKvXUkw" role="3cqZAp">
-          <node concept="37vLTI" id="XhdFKvXVpe" role="3clFbG">
-            <node concept="37vLTw" id="XhdFKvXVr$" role="37vLTx">
-              <ref role="3cqZAo" node="XhdFKvNrQI" resolve="messages" />
-            </node>
-            <node concept="2OqwBi" id="XhdFKvXUxU" role="37vLTJ">
-              <node concept="Xjq3P" id="XhdFKvXUku" role="2Oq$k0" />
-              <node concept="2OwXpG" id="XhdFKvXURO" role="2OqNvi">
-                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="XhdFKvNrQI" role="3clF46">
-        <property role="TrG5h" value="messages" />
-        <node concept="A3Dl8" id="XhdFKvNrQG" role="1tU5fm">
-          <node concept="17QB3L" id="XhdFKvNrU3" role="A3Ik2" />
+  <node concept="3HP615" id="6rcydJjd7HU">
+    <property role="3GE5qa" value="translation" />
+    <property role="TrG5h" value="SMTLIBTranslatorFactory" />
+    <node concept="2tJIrI" id="6rcydJjd89V" role="jymVt" />
+    <node concept="3clFb_" id="6rcydJjd7SU" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getSMTLIBTranslators" />
+      <node concept="3Tm1VV" id="6rcydJjd7SX" role="1B3o_S" />
+      <node concept="3clFbS" id="6rcydJjd7SY" role="3clF47" />
+      <node concept="_YKpA" id="6rcydJjfAg$" role="3clF45">
+        <node concept="3uibUv" id="6rcydJjfAg_" role="_ZDj9">
+          <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="XhdFKvNPxx" role="jymVt" />
-    <node concept="3clFbW" id="XhdFKvNPwm" role="jymVt">
-      <node concept="3cqZAl" id="XhdFKvNPwn" role="3clF45" />
-      <node concept="3Tm1VV" id="XhdFKvNPwo" role="1B3o_S" />
-      <node concept="3clFbS" id="XhdFKvNPwp" role="3clF47">
-        <node concept="XkiVB" id="XhdFKvNPwq" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
-        </node>
-        <node concept="3clFbF" id="XhdFKvXVwL" role="3cqZAp">
-          <node concept="37vLTI" id="XhdFKvXW_Q" role="3clFbG">
-            <node concept="2ShNRf" id="XhdFKvXWCx" role="37vLTx">
-              <node concept="Tc6Ow" id="XhdFKvXWQm" role="2ShVmc">
-                <node concept="17QB3L" id="XhdFKvXXg1" role="HW$YZ" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="XhdFKvXVI1" role="37vLTJ">
-              <node concept="Xjq3P" id="XhdFKvXVwJ" role="2Oq$k0" />
-              <node concept="2OwXpG" id="XhdFKvXW40" role="2OqNvi">
-                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="XhdFKvXXoM" role="3cqZAp">
-          <node concept="2OqwBi" id="XhdFKvXYw7" role="3clFbG">
-            <node concept="1eOMI4" id="XhdFKvXZl6" role="2Oq$k0">
-              <node concept="10QFUN" id="XhdFKvXZl7" role="1eOMHV">
-                <node concept="2OqwBi" id="XhdFKvXZl3" role="10QFUP">
-                  <node concept="Xjq3P" id="XhdFKvXZl4" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="XhdFKvXZl5" role="2OqNvi">
-                    <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
-                  </node>
-                </node>
-                <node concept="_YKpA" id="XhdFKvXZpR" role="10QFUM">
-                  <node concept="17QB3L" id="XhdFKvXZFh" role="_ZDj9" />
-                </node>
-              </node>
-            </node>
-            <node concept="TSZUe" id="XhdFKvY0J$" role="2OqNvi">
-              <node concept="37vLTw" id="XhdFKvY0Vq" role="25WWJ7">
-                <ref role="3cqZAo" node="XhdFKvNPwr" resolve="message" />
-              </node>
-            </node>
+    <node concept="3Tm1VV" id="6rcydJjd7HV" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="6rcydJjj1BR">
+    <property role="3GE5qa" value="translation" />
+    <property role="TrG5h" value="SMTLIBTranslatorDriver" />
+    <node concept="2tJIrI" id="6rcydJjj1C_" role="jymVt" />
+    <node concept="3clFb_" id="6rcydJjj1OV" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="choose" />
+      <node concept="3clFbS" id="6rcydJjj1OY" role="3clF47" />
+      <node concept="3Tm1VV" id="6rcydJjj1OZ" role="1B3o_S" />
+      <node concept="3uibUv" id="6rcydJjj1Vh" role="3clF45">
+        <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
+      </node>
+      <node concept="37vLTG" id="6rcydJjj1Yz" role="3clF46">
+        <property role="TrG5h" value="translators" />
+        <node concept="_YKpA" id="6rcydJjj1Yx" role="1tU5fm">
+          <node concept="3uibUv" id="6rcydJjj25r" role="_ZDj9">
+            <ref role="3uigEE" node="6rcydJjd8gs" resolve="AbstractSMTLIBTranslator" />
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="XhdFKvNPwr" role="3clF46">
-        <property role="TrG5h" value="message" />
-        <node concept="17QB3L" id="XhdFKvNP_v" role="1tU5fm" />
+      <node concept="37vLTG" id="6rcydJjn0MD" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6rcydJjn0ME" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="6rcydJjn5RU" role="lGtFl">
+        <node concept="TUZQ0" id="6rcydJjn5RX" role="3nqlJM">
+          <property role="TUZQ4" value="list of translators as collected from the SMTLIBTranslatorFactories." />
+          <node concept="zr_55" id="6rcydJjn5RZ" role="zr_5Q">
+            <ref role="zr_51" node="6rcydJjj1Yz" resolve="translators" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6rcydJjn5S0" role="3nqlJM">
+          <property role="TUZQ4" value="the expression to be translated." />
+          <node concept="zr_55" id="6rcydJjn5S2" role="zr_5Q">
+            <ref role="zr_51" node="6rcydJjn0MD" resolve="expression" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6rcydJjn5S3" role="3nqlJM">
+          <property role="x79VB" value="an AbstractSMTLIBTranslator, usualy one from the translators-list." />
+        </node>
+        <node concept="TZ5HA" id="6rcydJjn5RV" role="TZ5H$">
+          <node concept="1dT_AC" id="6rcydJjn5RW" role="1dT_Ay">
+            <property role="1dT_AB" value="An SMTLIBTranslationDriver controls the translation of KernelF expressions to SMTLIB expressions." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6rcydJjn6ai" role="TZ5H$">
+          <node concept="1dT_AC" id="6rcydJjn6aj" role="1dT_Ay">
+            <property role="1dT_AB" value="When passed to an SMTLIBTranslator as a driver, then whenever the translation encounters a subexpression," />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6rcydJjn6$0" role="TZ5H$">
+          <node concept="1dT_AC" id="6rcydJjn6$1" role="1dT_Ay">
+            <property role="1dT_AB" value="the driver is called first to choose which translator should be used to translate this subexpression." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6rcydJjn6PA" role="TZ5H$">
+          <node concept="1dT_AC" id="6rcydJjn6PB" role="1dT_Ay">
+            <property role="1dT_AB" value="This way, the driver is able to tweak the translation arbitrarily." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="XhdFKvMZ7H" role="jymVt" />
-    <node concept="3clFb_" id="XhdFKvY1PY" role="jymVt">
-      <property role="TrG5h" value="getMessages" />
-      <node concept="3Tm1VV" id="XhdFKvY1Q1" role="1B3o_S" />
-      <node concept="3clFbS" id="XhdFKvY1Q2" role="3clF47">
-        <node concept="3clFbF" id="XhdFKvY2$H" role="3cqZAp">
-          <node concept="2OqwBi" id="XhdFKvY2Pg" role="3clFbG">
-            <node concept="Xjq3P" id="XhdFKvY2$G" role="2Oq$k0" />
-            <node concept="2OwXpG" id="XhdFKvY3ba" role="2OqNvi">
-              <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A3Dl8" id="XhdFKvY2nP" role="3clF45">
-        <node concept="17QB3L" id="XhdFKvY2nQ" role="A3Ik2" />
+    <node concept="2tJIrI" id="6rcydJjj1CL" role="jymVt" />
+    <node concept="3Tm1VV" id="6rcydJjj1BS" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6rcydJjd8gs">
+    <property role="3GE5qa" value="translation" />
+    <property role="TrG5h" value="AbstractSMTLIBTranslator" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3Tm1VV" id="6rcydJjd8gt" role="1B3o_S" />
+    <node concept="2tJIrI" id="6rcydJjfGFf" role="jymVt" />
+    <node concept="3clFb_" id="6rcydJjfGRF" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="canTranslate" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rcydJjfGRI" role="3clF47" />
+      <node concept="3Tm1VV" id="6rcydJjfGLy" role="1B3o_S" />
+      <node concept="10P_77" id="6rcydJjfGXZ" role="3clF45" />
+      <node concept="ffn8J" id="6rcydJjfH48" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <ref role="ffrpq" to="6bz1:6yt8uwrpTKS" resolve="node" />
+        <node concept="3Tqbb2" id="6rcydJjfHam" role="1tU5fm" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="XhdFKvMYZZ" role="1B3o_S" />
-    <node concept="3uibUv" id="rj7uJEn1FU" role="1zkMxy">
-      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+    <node concept="2tJIrI" id="6rcydJjfGFi" role="jymVt" />
+    <node concept="3clFb_" id="6rcydJjfK9A" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="translate" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rcydJjfK9D" role="3clF47" />
+      <node concept="3Tm1VV" id="6rcydJjfJX5" role="1B3o_S" />
+      <node concept="3uibUv" id="6rcydJjfK9o" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6rcydJjfKge" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6rcydJjfKgd" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6rcydJjjn4O" role="3clF46">
+        <property role="TrG5h" value="hub" />
+        <node concept="3uibUv" id="6rcydJjjocw" role="1tU5fm">
+          <ref role="3uigEE" node="6rcydJjd8l5" resolve="SMTLIBTranslator" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

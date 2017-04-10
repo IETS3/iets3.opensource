@@ -2383,6 +2383,12 @@
       <property role="3LESm3" value="cf55cddb-d431-4f2e-93f4-3a4305c63d12" />
       <property role="2GAjPV" value="false" />
       <property role="aoJFB" value="sources and tests" />
+      <node concept="1SiIV0" id="19gPt0P0xx8" role="3bR37C">
+        <node concept="3bR9La" id="19gPt0P0xx9" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+      </node>
       <node concept="398BVA" id="OJuIQp$dgY" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
         <node concept="2Ry0Ak" id="OJuIQp$dgZ" role="iGT6I">
@@ -2393,12 +2399,6 @@
               <property role="2Ry0Am" value="test.ts.expr.os.msd" />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="19gPt0P0xx8" role="3bR37C">
-        <node concept="3bR9La" id="19gPt0P0xx9" role="1SiIV1">
-          <property role="3bR36h" value="false" />
-          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
         </node>
       </node>
     </node>
