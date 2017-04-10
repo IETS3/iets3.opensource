@@ -3856,5 +3856,84 @@
       <ref role="1YaFvo" to="700h:5$4k7YFgD0B" resolve="AsSingletonList" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6zsuVAhiLeb">
+    <property role="TrG5h" value="typeof_SimpleSortOp" />
+    <property role="3GE5qa" value="ordered.numeric" />
+    <node concept="3clFbS" id="6zsuVAhiLec" role="18ibNy">
+      <node concept="nvevp" id="6zsuVAhiLIO" role="3cqZAp">
+        <node concept="3clFbS" id="6zsuVAhiLIQ" role="nvhr_">
+          <node concept="3clFbJ" id="6zsuVAhiLZC" role="3cqZAp">
+            <node concept="2OqwBi" id="6zsuVAhiM7_" role="3clFbw">
+              <node concept="2X3wrD" id="6zsuVAhiLZO" role="2Oq$k0">
+                <ref role="2X3Bk0" node="6zsuVAhiLIU" resolve="ctxType" />
+              </node>
+              <node concept="1mIQ4w" id="6zsuVAhiMgJ" role="2OqNvi">
+                <node concept="chp4Y" id="6zsuVAhiMiy" role="cj9EA">
+                  <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6zsuVAhiLZE" role="3clFbx">
+              <node concept="1Z5TYs" id="6zsuVAhiNq9" role="3cqZAp">
+                <node concept="mw_s8" id="6zsuVAhiNqt" role="1ZfhKB">
+                  <node concept="2pJPEk" id="6zsuVAhiNqp" role="mwGJk">
+                    <node concept="2pJPED" id="6zsuVAhiNqC" role="2pJPEn">
+                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+                      <node concept="2pIpSj" id="6zsuVAhiNrd" role="2pJxcM">
+                        <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                        <node concept="36biLy" id="6zsuVAhiNrB" role="2pJxcZ">
+                          <node concept="2OqwBi" id="6zsuVAhiOsb" role="36biLW">
+                            <node concept="2OqwBi" id="6zsuVAhiNVs" role="2Oq$k0">
+                              <node concept="1PxgMI" id="6zsuVAhiNK6" role="2Oq$k0">
+                                <node concept="chp4Y" id="6zsuVAhiNKx" role="3oSUPX">
+                                  <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                                </node>
+                                <node concept="2X3wrD" id="6zsuVAhiNrM" role="1m5AlR">
+                                  <ref role="2X3Bk0" node="6zsuVAhiLIU" resolve="ctxType" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="6zsuVAhiO74" role="2OqNvi">
+                                <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                              </node>
+                            </node>
+                            <node concept="1$rogu" id="6zsuVAhiO_E" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="mw_s8" id="6zsuVAhiNqc" role="1ZfhK$">
+                  <node concept="1Z2H0r" id="6zsuVAhiMtf" role="mwGJk">
+                    <node concept="1YBJjd" id="6zsuVAhiMuZ" role="1Z2MuG">
+                      <ref role="1YBMHb" node="6zsuVAhiLee" resolve="sso" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="6zsuVAhiLOv" role="nvjzm">
+          <node concept="2OqwBi" id="6zsuVAhiLoD" role="1Z2MuG">
+            <node concept="1YBJjd" id="6zsuVAhiLel" role="2Oq$k0">
+              <ref role="1YBMHb" node="6zsuVAhiLee" resolve="sso" />
+            </node>
+            <node concept="2qgKlT" id="6zsuVAhiL_f" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="6zsuVAhiLIU" role="2X0Ygz">
+          <property role="TrG5h" value="ctxType" />
+          <node concept="2jxLKc" id="6zsuVAhiLIV" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6zsuVAhiLee" role="1YuTPh">
+      <property role="TrG5h" value="sso" />
+      <ref role="1YaFvo" to="700h:Lrty7CKcZT" resolve="SimpleSortOp" />
+    </node>
+  </node>
 </model>
 
