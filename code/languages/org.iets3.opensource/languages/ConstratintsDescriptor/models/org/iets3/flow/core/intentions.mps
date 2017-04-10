@@ -997,7 +997,30 @@
                             <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="nextPointer" />
                           </node>
                           <node concept="3TrEf2" id="7c_wSf7ejh0" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+                            <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="nextStatePointer" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="MCudDIs5kv" role="3cqZAp">
+                      <node concept="37vLTI" id="MCudDIs6gq" role="3clFbG">
+                        <node concept="2OqwBi" id="MCudDIs7gQ" role="37vLTx">
+                          <node concept="37vLTw" id="MCudDIs6kD" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7c_wSf79ctR" resolve="stateMap" />
+                          </node>
+                          <node concept="liA8E" id="MCudDIs9$X" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                            <node concept="2GrUjf" id="MCudDIs9S4" role="37wK5m">
+                              <ref role="2Gs0qQ" node="7c_wSf7ehjO" resolve="state" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="MCudDIs5DP" role="37vLTJ">
+                          <node concept="37vLTw" id="MCudDIs5kt" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7c_wSf7eiU6" resolve="nextPointer" />
+                          </node>
+                          <node concept="3TrEf2" id="MCudDIs5W7" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xwgo:MCudDIqX3C" resolve="previousStatePointer" />
                           </node>
                         </node>
                       </node>
@@ -1035,7 +1058,7 @@
                             <ref role="3cqZAo" node="7c_wSf7vc6G" resolve="previousPointer" />
                           </node>
                           <node concept="3TrEf2" id="7c_wSf7vdae" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="pointer" />
+                            <ref role="3Tt5mk" to="xwgo:7c_wSf79K0x" resolve="nextStatePointer" />
                           </node>
                         </node>
                       </node>
