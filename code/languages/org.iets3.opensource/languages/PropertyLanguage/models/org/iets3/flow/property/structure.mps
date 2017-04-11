@@ -63,7 +63,7 @@
   <node concept="1TIwiD" id="7tAIZp0bkmp">
     <property role="EcuMT" value="8603770804450968985" />
     <property role="3GE5qa" value="Properties" />
-    <property role="TrG5h" value="EmptyProjectProperty" />
+    <property role="TrG5h" value="ProjectIsCreatedProperty" />
     <ref role="1TJDcQ" node="5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
   <node concept="1TIwiD" id="7tAIZp0bKOf">
