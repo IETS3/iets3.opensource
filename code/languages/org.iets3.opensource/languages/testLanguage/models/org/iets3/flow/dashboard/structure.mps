@@ -140,11 +140,10 @@
     <property role="TrG5h" value="DashboardHintDisplayer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="57o1xPLrYuW" role="1TKVEi">
-      <property role="IQ2ns" value="5897470435568641980" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dataFlowModel" />
-      <property role="20lbJX" value="1" />
+    <node concept="1TJgyj" id="6Zy$B2vqlR0" role="1TKVEi">
+      <property role="IQ2ns" value="8062167295355084224" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dataFlowChild" />
       <ref role="20lvS9" node="3HvtPSdglG0" resolve="FlowData" />
     </node>
   </node>

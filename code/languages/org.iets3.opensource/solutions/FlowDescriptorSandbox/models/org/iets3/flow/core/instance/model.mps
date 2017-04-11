@@ -12,6 +12,7 @@
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="-1" />
     <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -39,11 +40,6 @@
       </concept>
       <concept id="7571185389806664458" name="org.iets3.flow.property.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
-      </concept>
-    </language>
-    <language id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard">
-      <concept id="2376827924916268618" name="org.iets3.flow.dashboard.structure.DashboardHintDisplayer" flags="ng" index="2W8dSH">
-        <reference id="5897470435568641980" name="dataFlowModel" index="wHY6x" />
       </concept>
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
@@ -275,9 +271,6 @@
         <property role="2V$B1Q" value="org.iets3.flow.dashboard" />
       </node>
     </node>
-  </node>
-  <node concept="2W8dSH" id="6Zy$B2tkWUR">
-    <ref role="wHY6x" to="3x97:6Zy$B2tkWTh" resolve="FlowDataRootNode" />
   </node>
 </model>
 
