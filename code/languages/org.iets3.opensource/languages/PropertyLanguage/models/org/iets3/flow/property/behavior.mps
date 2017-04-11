@@ -1649,6 +1649,41 @@
             </node>
             <node concept="3GX2aA" id="7tAIZp0j5de" role="2OqNvi" />
           </node>
+          <node concept="9aQIb" id="6nILHkGYKTm" role="9aQIa">
+            <node concept="3clFbS" id="6nILHkGYKTn" role="9aQI4">
+              <node concept="3clFbF" id="6nILHkGYL3o" role="3cqZAp">
+                <node concept="2YIFZM" id="6nILHkGYL3p" role="3clFbG">
+                  <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
+                  <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
+                  <node concept="37vLTw" id="6nILHkGYL3q" role="37wK5m">
+                    <ref role="3cqZAo" node="6mLEnnuJNQc" resolve="results" />
+                  </node>
+                  <node concept="2OqwBi" id="6nILHkGYL3r" role="37wK5m">
+                    <node concept="2OqwBi" id="6nILHkGYL3s" role="2Oq$k0">
+                      <node concept="37vLTw" id="6nILHkGYL3t" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6mLEnnuJab$" resolve="model" />
+                      </node>
+                      <node concept="2RRcyG" id="6nILHkGYL3u" role="2OqNvi">
+                        <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="6nILHkGYL3v" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="6nILHkGYL3w" role="37wK5m">
+                    <property role="Xl_RC" value="No requirements model defined" />
+                  </node>
+                  <node concept="10M0yZ" id="6nILHkGYL3x" role="37wK5m">
+                    <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
+                    <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
+                  </node>
+                  <node concept="Xl_RD" id="6nILHkGYL3y" role="37wK5m">
+                    <property role="Xl_RC" value="FLOW language Custom Error" />
+                  </node>
+                  <node concept="10Nm6u" id="6nILHkGYL3z" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3clFbH" id="7tAIZp0j4MM" role="3cqZAp" />
         <node concept="3clFbH" id="6mLEnnuJu4E" role="3cqZAp" />
@@ -1794,7 +1829,7 @@
   </node>
   <node concept="13h7C7" id="7tAIZp0bknd">
     <property role="3GE5qa" value="Properties" />
-    <ref role="13h7C2" to="oehh:7tAIZp0bkmp" resolve="EmptyProjectProperty" />
+    <ref role="13h7C2" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
     <node concept="13i0hz" id="7tAIZp0bkno" role="13h7CS">
       <property role="TrG5h" value="propertyCheck" />
       <property role="13i0it" value="false" />
@@ -1806,11 +1841,11 @@
           <node concept="3cpWsn" id="7tAIZp0bNEm" role="3cpWs9">
             <property role="TrG5h" value="checker" />
             <node concept="3uibUv" id="7tAIZp0bPvZ" role="1tU5fm">
-              <ref role="3uigEE" node="7tAIZp0bkv7" resolve="EmptyProjectPropertyClass" />
+              <ref role="3uigEE" node="7tAIZp0bkv7" resolve="ProjectIsCreatedPropertyClass" />
             </node>
             <node concept="2ShNRf" id="7tAIZp0bNEo" role="33vP2m">
               <node concept="HV5vD" id="7tAIZp0bPuj" role="2ShVmc">
-                <ref role="HV5vE" node="7tAIZp0bkv7" resolve="EmptyProjectPropertyClass" />
+                <ref role="HV5vE" node="7tAIZp0bkv7" resolve="ProjectIsCreatedPropertyClass" />
               </node>
             </node>
           </node>
@@ -1885,7 +1920,7 @@
   </node>
   <node concept="312cEu" id="7tAIZp0bkv7">
     <property role="3GE5qa" value="Properties" />
-    <property role="TrG5h" value="EmptyProjectPropertyClass" />
+    <property role="TrG5h" value="ProjectIsCreatedPropertyClass" />
     <node concept="2tJIrI" id="7tAIZp0bn94" role="jymVt" />
     <node concept="3Tm1VV" id="7tAIZp0bkv8" role="1B3o_S" />
     <node concept="3uibUv" id="7tAIZp0bn8B" role="1zkMxy">
@@ -1966,7 +2001,7 @@
                   <node concept="1uHKPH" id="7tAIZp0bBqX" role="2OqNvi" />
                 </node>
                 <node concept="Xl_RD" id="7tAIZp0bBqY" role="37wK5m">
-                  <property role="Xl_RC" value="The project is not empty" />
+                  <property role="Xl_RC" value="The project has not been created yet" />
                 </node>
                 <node concept="10M0yZ" id="7tAIZp0bBqZ" role="37wK5m">
                   <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
@@ -1979,19 +2014,17 @@
               </node>
             </node>
           </node>
-          <node concept="3fqX7Q" id="7tAIZp0rk3u" role="3clFbw">
-            <node concept="2OqwBi" id="7tAIZp0rk3w" role="3fr31v">
-              <node concept="2OqwBi" id="7tAIZp0rk3x" role="2Oq$k0">
-                <node concept="37vLTw" id="7tAIZp0rk3y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7tAIZp0bn9B" resolve="model" />
-                </node>
-                <node concept="2RRcyG" id="7tAIZp0rk3z" role="2OqNvi">
-                  <ref role="2RRcyH" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-                </node>
+          <node concept="2OqwBi" id="7tAIZp0rk3w" role="3clFbw">
+            <node concept="2OqwBi" id="7tAIZp0rk3x" role="2Oq$k0">
+              <node concept="37vLTw" id="7tAIZp0rk3y" role="2Oq$k0">
+                <ref role="3cqZAo" node="7tAIZp0bn9B" resolve="model" />
               </node>
-              <node concept="liA8E" id="7tAIZp0rk3$" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.isEmpty():boolean" resolve="isEmpty" />
+              <node concept="2RRcyG" id="7tAIZp0rk3z" role="2OqNvi">
+                <ref role="2RRcyH" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
               </node>
+            </node>
+            <node concept="liA8E" id="7tAIZp0rk3$" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty():boolean" resolve="isEmpty" />
             </node>
           </node>
         </node>
