@@ -179,6 +179,12 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -343,7 +349,58 @@
       </node>
     </node>
     <node concept="13hLZK" id="23Wc6usTx8F" role="13h7CW">
-      <node concept="3clFbS" id="23Wc6usTx8G" role="2VODD2" />
+      <node concept="3clFbS" id="23Wc6usTx8G" role="2VODD2">
+        <node concept="3cpWs8" id="6M1fdrEqi7v" role="3cqZAp">
+          <node concept="3cpWsn" id="6M1fdrEqi7w" role="3cpWs9">
+            <property role="TrG5h" value="flowModel" />
+            <node concept="H_c77" id="6M1fdrEqi7x" role="1tU5fm" />
+            <node concept="BaHAS" id="6M1fdrEqi7y" role="33vP2m">
+              <property role="BaHAW" value="FlowModel" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="6M1fdrEqnWA" role="3cqZAp">
+          <node concept="2GrKxI" id="6M1fdrEqnWC" role="2Gsz3X">
+            <property role="TrG5h" value="state" />
+          </node>
+          <node concept="2OqwBi" id="6M1fdrEqvCX" role="2GsD0m">
+            <node concept="2OqwBi" id="6M1fdrEqpP2" role="2Oq$k0">
+              <node concept="2OqwBi" id="6M1fdrEqo5V" role="2Oq$k0">
+                <node concept="37vLTw" id="6M1fdrEqnXI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6M1fdrEqi7w" resolve="flowModel" />
+                </node>
+                <node concept="2RRcyG" id="6M1fdrEqojj" role="2OqNvi">
+                  <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="6M1fdrEqtAi" role="2OqNvi" />
+            </node>
+            <node concept="3Tsc0h" id="6M1fdrEqvOZ" role="2OqNvi">
+              <ref role="3TtcxE" to="xwgo:5cR9puhFRxd" resolve="stateList" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6M1fdrEqnWG" role="2LFqv$">
+            <node concept="3clFbF" id="6M1fdrEqvRw" role="3cqZAp">
+              <node concept="2OqwBi" id="6M1fdrEqwWm" role="3clFbG">
+                <node concept="2OqwBi" id="6M1fdrEqvRN" role="2Oq$k0">
+                  <node concept="2GrUjf" id="6M1fdrEqvRv" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6M1fdrEqnWC" resolve="state" />
+                  </node>
+                  <node concept="3TrcHB" id="6M1fdrEqw5S" role="2OqNvi">
+                    <ref role="3TsBF5" to="xwgo:7c_wSf7$nnr" resolve="mode" />
+                  </node>
+                </node>
+                <node concept="tyxLq" id="6M1fdrEqynU" role="2OqNvi">
+                  <node concept="uoxfO" id="6M1fdrEqIyC" role="tz02z">
+                    <ref role="uo_Cq" to="xwgo:7c_wSf7Bhjv" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="23Wc6usTQ_8">
