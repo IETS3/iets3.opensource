@@ -34,7 +34,7 @@ if (forceLocal) {
     ext.mbeddrVersion = '1.0-SNAPSHOT'
 }
 else {
-    ext.mbeddrVersion = '1.0.+'
+    ext.mbeddrVersion = 'stable-aisec.1.0.+'
 }
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
