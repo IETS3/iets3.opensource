@@ -12,7 +12,7 @@
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="-1" />
     <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
@@ -25,7 +25,6 @@
     <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
-    <import index="3x97" ref="r:1becd586-20ea-4ad9-b8b4-0c8810cf9ccc(FlowModel)" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.property.formulae">
@@ -230,17 +229,17 @@
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
-      <node concept="3x7ZJP" id="7tAIZp0gKEx" role="um_Ly">
-        <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-        <node concept="35c_gC" id="7tAIZp0gKEz" role="2DkB7w">
-          <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-        </node>
-      </node>
       <node concept="2O1dW8" id="7c_wSf78Tvi" role="2O1dWi">
         <ref role="2O1dWf" node="7tAIZp0e7Bp" resolve="Controller behavior complete" />
       </node>
       <node concept="ulk8C" id="7tAIZp0e7_W" role="ulkQE">
         <property role="fwOFb" value="Please complete the controller's functional behavior" />
+      </node>
+      <node concept="3x7ZJP" id="7tAIZp0gKEx" role="um_Ly">
+        <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
+        <node concept="35c_gC" id="7tAIZp0gKEz" role="2DkB7w">
+          <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
+        </node>
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7Bp" role="ulkQK">

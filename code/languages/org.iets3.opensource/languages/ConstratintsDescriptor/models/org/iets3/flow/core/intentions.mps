@@ -2,7 +2,7 @@
 <model ref="r:b701b71e-94ab-49ee-a9fa-8423d6578c72(org.iets3.flow.core.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -36,6 +36,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -85,6 +88,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -192,6 +196,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -795,6 +800,55 @@
                       </node>
                       <node concept="3TrcHB" id="7c_wSf79anZ" role="2OqNvi">
                         <ref role="3TsBF5" to="xwgo:7c_wSf7986l" resolve="isStart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="6M1fdrEqWfv" role="3cqZAp">
+                  <node concept="3clFbS" id="6M1fdrEqWfx" role="3clFbx">
+                    <node concept="3clFbF" id="6M1fdrEr1q4" role="3cqZAp">
+                      <node concept="37vLTI" id="6M1fdrEr2qc" role="3clFbG">
+                        <node concept="3clFbT" id="6M1fdrEr2we" role="37vLTx">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                        <node concept="2OqwBi" id="6M1fdrEr1zH" role="37vLTJ">
+                          <node concept="37vLTw" id="6M1fdrEr1q2" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2nJapj3rrZM" resolve="stateDashboard" />
+                          </node>
+                          <node concept="3TrcHB" id="6M1fdrEr1T1" role="2OqNvi">
+                            <ref role="3TsBF5" to="xwgo:7c_wSf7BDZ6" resolve="isFinal" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6M1fdrEqZsp" role="3clFbw">
+                    <node concept="2OqwBi" id="6M1fdrEqWKb" role="2Oq$k0">
+                      <node concept="2GrUjf" id="6M1fdrEqWA$" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2nJapj3rrZG" resolve="state" />
+                      </node>
+                      <node concept="3Tsc0h" id="6M1fdrEqXHf" role="2OqNvi">
+                        <ref role="3TtcxE" to="f6re:7c_wSf78lMh" resolve="nextStates" />
+                      </node>
+                    </node>
+                    <node concept="1v1jN8" id="6M1fdrEr1pa" role="2OqNvi" />
+                  </node>
+                  <node concept="9aQIb" id="6M1fdrEr2yK" role="9aQIa">
+                    <node concept="3clFbS" id="6M1fdrEr2yL" role="9aQI4">
+                      <node concept="3clFbF" id="6M1fdrEr2SC" role="3cqZAp">
+                        <node concept="37vLTI" id="6M1fdrEr2SD" role="3clFbG">
+                          <node concept="3clFbT" id="6M1fdrEr2YI" role="37vLTx">
+                            <property role="3clFbU" value="false" />
+                          </node>
+                          <node concept="2OqwBi" id="6M1fdrEr2SF" role="37vLTJ">
+                            <node concept="37vLTw" id="6M1fdrEr2SG" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2nJapj3rrZM" resolve="stateDashboard" />
+                            </node>
+                            <node concept="3TrcHB" id="6M1fdrEr2SH" role="2OqNvi">
+                              <ref role="3TsBF5" to="xwgo:7c_wSf7BDZ6" resolve="isFinal" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

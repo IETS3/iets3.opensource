@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
@@ -169,6 +170,7 @@
   <node concept="AxPO7" id="7c_wSf7Bhjq">
     <property role="TrG5h" value="FlowStateMode" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <ref role="Qgau1" node="7c_wSf7Bhjv" />
     <node concept="M4N5e" id="7c_wSf7Bhjr" role="M5hS2">
       <property role="1uS6qv" value="0" />
       <property role="1uS6qo" value="Visited" />
