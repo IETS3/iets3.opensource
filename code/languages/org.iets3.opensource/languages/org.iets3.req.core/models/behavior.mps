@@ -1176,5 +1176,39 @@
       <node concept="3cqZAl" id="3wHxcnxC6Dd" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="4OH$Ti$moc4">
+    <ref role="13h7C2" to="plfp:4OH$Ti$mobC" resolve="IReqContextLabelProvider" />
+    <node concept="13hLZK" id="4OH$Ti$moc5" role="13h7CW">
+      <node concept="3clFbS" id="4OH$Ti$moc6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4OH$Ti$mom4" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReqStructureFolderName" />
+      <node concept="3Tm1VV" id="4OH$Ti$mom5" role="1B3o_S" />
+      <node concept="17QB3L" id="4OH$Ti$momc" role="3clF45" />
+      <node concept="3clFbS" id="4OH$Ti$mom7" role="3clF47">
+        <node concept="3clFbF" id="4OH$Ti$momf" role="3cqZAp">
+          <node concept="Xl_RD" id="7Ip2X68OogJ" role="3clFbG">
+            <property role="Xl_RC" value="Requirements Structure" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4OH$Ti$momj" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReqGeneralFolderName" />
+      <node concept="3Tm1VV" id="4OH$Ti$momk" role="1B3o_S" />
+      <node concept="17QB3L" id="4OH$Ti$momx" role="3clF45" />
+      <node concept="3clFbS" id="4OH$Ti$momm" role="3clF47">
+        <node concept="3clFbF" id="4OH$Ti$mom$" role="3cqZAp">
+          <node concept="Xl_RD" id="3wHxcnxBQGO" role="3clFbG">
+            <property role="Xl_RC" value="Requirements" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
