@@ -89,14 +89,12 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
@@ -4251,7 +4249,7 @@
           </node>
         </node>
         <node concept="1wgc9g" id="6Zy$B2x3mKv" role="3XvnJa">
-          <ref role="1wgcnl" node="6OxG6QFuDKh" resolve="yellowColor" />
+          <ref role="1wgcnl" node="6OxG6QFuDKh" resolve="grayColor" />
         </node>
       </node>
       <node concept="1uO$qF" id="6Zy$B2x3mKw" role="3F10Kt">
@@ -4348,7 +4346,7 @@
           </node>
         </node>
         <node concept="1wgc9g" id="6Zy$B2x3mLa" role="3XvnJa">
-          <ref role="1wgcnl" node="6OxG6QFuwAk" resolve="blueColor" />
+          <ref role="1wgcnl" node="6OxG6QFuwAk" resolve="whiteColor" />
         </node>
       </node>
       <node concept="3EZMnI" id="6Zy$B2tfZqr" role="1ytjkN">
@@ -4716,8 +4714,8 @@
             </node>
           </node>
         </node>
-        <node concept="1wgc9g" id="6Zy$B2wLGUz" role="3XvnJa">
-          <ref role="1wgcnl" node="6OxG6QFuDKh" resolve="yellowColor" />
+        <node concept="1wgc9g" id="5dGc$gqqrWb" role="3XvnJa">
+          <ref role="1wgcnl" node="6OxG6QFuwAk" resolve="whiteColor" />
         </node>
       </node>
       <node concept="1uO$qF" id="6Zy$B2wYY1R" role="3F10Kt">
@@ -4813,8 +4811,8 @@
             </node>
           </node>
         </node>
-        <node concept="1wgc9g" id="6Zy$B2wZ4H2" role="3XvnJa">
-          <ref role="1wgcnl" node="6OxG6QFuwAk" resolve="blueColor" />
+        <node concept="1wgc9g" id="5dGc$gqqt8l" role="3XvnJa">
+          <ref role="1wgcnl" node="6OxG6QFuDKh" resolve="grayColor" />
         </node>
       </node>
       <node concept="3EZMnI" id="6Zy$B2tRluN" role="1ytjkN">
@@ -5168,22 +5166,19 @@
     <node concept="14StLt" id="6OxG6QFundx" role="V601i">
       <property role="TrG5h" value="greenColor" />
       <node concept="Veino" id="6Zy$B2wJZqU" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="green" />
       </node>
     </node>
     <node concept="14StLt" id="6OxG6QFuwAk" role="V601i">
-      <property role="TrG5h" value="blueColor" />
+      <property role="TrG5h" value="whiteColor" />
       <node concept="Veino" id="6Zy$B2wLLL0" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
-      </node>
-      <node concept="Vb9p2" id="7DcEAR1JgwU" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vb096" value="WHITE" />
       </node>
     </node>
     <node concept="14StLt" id="6OxG6QFuDKh" role="V601i">
-      <property role="TrG5h" value="yellowColor" />
+      <property role="TrG5h" value="grayColor" />
       <node concept="Veino" id="6Zy$B2wXgP6" role="3F10Kt">
-        <property role="Vb096" value="yellow" />
+        <property role="Vb096" value="lightGray" />
       </node>
     </node>
     <node concept="14StLt" id="6Zy$B2wYXDw" role="V601i">
@@ -5196,6 +5191,9 @@
       <property role="TrG5h" value="orangeColor" />
       <node concept="Veino" id="6Zy$B2wZ0Jq" role="3F10Kt">
         <property role="Vb096" value="orange" />
+      </node>
+      <node concept="VPXOz" id="5dGc$gqv6No" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
