@@ -614,7 +614,7 @@
       </node>
       <node concept="3S8TqV" id="2Qmv3ApDY1e" role="3EZMnx" />
       <node concept="3F0ifn" id="2Qmv3App1nD" role="3EZMnx">
-        <property role="3F0ifm" value="Please Select The Flow Visualisation:" />
+        <property role="3F0ifm" value="See process flow as:" />
         <node concept="pVoyu" id="2Qmv3ApzBXL" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -635,7 +635,7 @@
                       <property role="Xl_RC" value="Tabular" />
                     </node>
                     <node concept="Xl_RD" id="6Zy$B2tNrAN" role="3g7hyw">
-                      <property role="Xl_RC" value="DirectedGraph" />
+                      <property role="Xl_RC" value="Graph-like" />
                     </node>
                   </node>
                 </node>
@@ -855,7 +855,7 @@
                                   <node concept="liA8E" id="6Zy$B2tNrBV" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="6Zy$B2tNrBW" role="37wK5m">
-                                      <property role="Xl_RC" value="DirectedGraph" />
+                                      <property role="Xl_RC" value="Graph-like" />
                                     </node>
                                   </node>
                                 </node>
@@ -1208,19 +1208,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2Qmv3AoXSqN" role="3cqZAp">
-              <node concept="2OqwBi" id="2Qmv3AoXTh$" role="3clFbG">
-                <node concept="37vLTw" id="2Qmv3AoXSqL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3PBquMq7UGd" resolve="defTable" />
-                </node>
-                <node concept="liA8E" id="2Qmv3AoXU_4" role="2OqNvi">
-                  <ref role="37wK5l" to="c8ee:~DefaultTableModel.addColumn(java.lang.Object):void" resolve="addColumn" />
-                  <node concept="Xl_RD" id="2Qmv3AoXV_x" role="37wK5m">
-                    <property role="Xl_RC" value="State Type" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="3PBquMq88iJ" role="3cqZAp">
               <node concept="2OqwBi" id="3PBquMq88Yk" role="3clFbG">
                 <node concept="37vLTw" id="3PBquMq88iH" role="2Oq$k0">
@@ -1230,6 +1217,19 @@
                   <ref role="37wK5l" to="c8ee:~DefaultTableModel.addColumn(java.lang.Object):void" resolve="addColumn" />
                   <node concept="Xl_RD" id="3PBquMq8a6P" role="37wK5m">
                     <property role="Xl_RC" value="State Name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2Qmv3AoXSqN" role="3cqZAp">
+              <node concept="2OqwBi" id="2Qmv3AoXTh$" role="3clFbG">
+                <node concept="37vLTw" id="2Qmv3AoXSqL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PBquMq7UGd" resolve="defTable" />
+                </node>
+                <node concept="liA8E" id="2Qmv3AoXU_4" role="2OqNvi">
+                  <ref role="37wK5l" to="c8ee:~DefaultTableModel.addColumn(java.lang.Object):void" resolve="addColumn" />
+                  <node concept="Xl_RD" id="2Qmv3AoXV_x" role="37wK5m">
+                    <property role="Xl_RC" value="State Type" />
                   </node>
                 </node>
               </node>
@@ -1358,9 +1358,6 @@
                                   <node concept="3uibUv" id="6Zy$B2uD$rn" role="3g7fb8">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="37vLTw" id="2Qmv3AoY0$1" role="3g7hyw">
-                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
-                                  </node>
                                   <node concept="2OqwBi" id="6Zy$B2uDAVR" role="3g7hyw">
                                     <node concept="2GrUjf" id="6Zy$B2uDAww" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -1368,6 +1365,9 @@
                                     <node concept="3TrcHB" id="6Zy$B2uDBPJ" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2Qmv3ApO$OG" role="3g7hyw">
+                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
                                   </node>
                                   <node concept="Xl_RD" id="6Zy$B2uDOUj" role="3g7hyw">
                                     <property role="Xl_RC" value="Visited" />
@@ -1479,9 +1479,6 @@
                                   <node concept="3uibUv" id="6Zy$B2uDVvp" role="3g7fb8">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="37vLTw" id="2Qmv3AoY836" role="3g7hyw">
-                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
-                                  </node>
                                   <node concept="2OqwBi" id="6Zy$B2uDVvq" role="3g7hyw">
                                     <node concept="2GrUjf" id="6Zy$B2uDVvr" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -1489,6 +1486,9 @@
                                     <node concept="3TrcHB" id="6Zy$B2uDVvs" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2Qmv3ApOBWY" role="3g7hyw">
+                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
                                   </node>
                                   <node concept="Xl_RD" id="6Zy$B2uDVvt" role="3g7hyw">
                                     <property role="Xl_RC" value="Current" />
@@ -1599,9 +1599,6 @@
                                   <node concept="3uibUv" id="6Zy$B2uDYZ4" role="3g7fb8">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="37vLTw" id="2Qmv3AoYgHG" role="3g7hyw">
-                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
-                                  </node>
                                   <node concept="2OqwBi" id="6Zy$B2uDYZ5" role="3g7hyw">
                                     <node concept="2GrUjf" id="6Zy$B2uDYZ6" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -1609,6 +1606,9 @@
                                     <node concept="3TrcHB" id="6Zy$B2uDYZ7" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2Qmv3ApOF5g" role="3g7hyw">
+                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
                                   </node>
                                   <node concept="Xl_RD" id="6Zy$B2uDYZ8" role="3g7hyw">
                                     <property role="Xl_RC" value="ToCome" />
@@ -1719,9 +1719,6 @@
                                   <node concept="3uibUv" id="6Zy$B2uE4oE" role="3g7fb8">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="37vLTw" id="2Qmv3AoYEAL" role="3g7hyw">
-                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
-                                  </node>
                                   <node concept="2OqwBi" id="6Zy$B2uE4oF" role="3g7hyw">
                                     <node concept="2GrUjf" id="6Zy$B2uE4oG" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -1729,6 +1726,9 @@
                                     <node concept="3TrcHB" id="6Zy$B2uE4oH" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2Qmv3ApOIiT" role="3g7hyw">
+                                    <ref role="3cqZAo" node="2Qmv3AoXjte" resolve="stateType" />
                                   </node>
                                   <node concept="Xl_RD" id="6Zy$B2uE4oI" role="3g7hyw">
                                     <property role="Xl_RC" value="DontCare" />
@@ -1916,9 +1916,6 @@
                                   <node concept="3uibUv" id="5dGc$gsthC4" role="3g7fb8">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="37vLTw" id="2Qmv3AoZ6UY" role="3g7hyw">
-                                    <ref role="3cqZAo" node="2Qmv3AoYPdF" resolve="stateType" />
-                                  </node>
                                   <node concept="2OqwBi" id="5dGc$gsthC5" role="3g7hyw">
                                     <node concept="2GrUjf" id="5dGc$gsthC6" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -1926,6 +1923,9 @@
                                     <node concept="3TrcHB" id="5dGc$gsthC7" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2Qmv3ApOKXt" role="3g7hyw">
+                                    <ref role="3cqZAo" node="2Qmv3AoYPdF" resolve="stateType" />
                                   </node>
                                   <node concept="2OqwBi" id="5dGc$gsthC8" role="3g7hyw">
                                     <node concept="37vLTw" id="5dGc$gsthC9" role="2Oq$k0">
@@ -2052,9 +2052,6 @@
                                     <node concept="3uibUv" id="6Zy$B2vPZ9A" role="3g7fb8">
                                       <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                     </node>
-                                    <node concept="37vLTw" id="2Qmv3AoZegR" role="3g7hyw">
-                                      <ref role="3cqZAo" node="2Qmv3AoYPdF" resolve="stateType" />
-                                    </node>
                                     <node concept="2OqwBi" id="6Zy$B2vPZ9B" role="3g7hyw">
                                       <node concept="2GrUjf" id="6Zy$B2vPZ9C" role="2Oq$k0">
                                         <ref role="2Gs0qQ" node="3PBquMq8kx_" resolve="state" />
@@ -2062,6 +2059,9 @@
                                       <node concept="3TrcHB" id="6Zy$B2vPZ9D" role="2OqNvi">
                                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                       </node>
+                                    </node>
+                                    <node concept="37vLTw" id="2Qmv3ApOO6k" role="3g7hyw">
+                                      <ref role="3cqZAo" node="2Qmv3AoYPdF" resolve="stateType" />
                                     </node>
                                     <node concept="2OqwBi" id="6Zy$B2vQCP0" role="3g7hyw">
                                       <node concept="37vLTw" id="6Zy$B2vQB2g" role="2Oq$k0">
@@ -2600,7 +2600,7 @@
       </node>
       <node concept="3S8TqV" id="2Qmv3ApzEbD" role="3EZMnx" />
       <node concept="3F0ifn" id="2Qmv3App2AI" role="3EZMnx">
-        <property role="3F0ifm" value="Please Select The Flow Visualisation:" />
+        <property role="3F0ifm" value="See process flow as:" />
         <node concept="pVoyu" id="2Qmv3ApzD0b" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2618,7 +2618,7 @@
                   <node concept="3g6Rrh" id="6Zy$B2tLNFy" role="2ShVmc">
                     <node concept="17QB3L" id="6Zy$B2tLNnK" role="3g7fb8" />
                     <node concept="Xl_RD" id="6Zy$B2tLNQV" role="3g7hyw">
-                      <property role="Xl_RC" value="DirectedGraph" />
+                      <property role="Xl_RC" value="Graph-like" />
                     </node>
                     <node concept="Xl_RD" id="6Zy$B2tLP5S" role="3g7hyw">
                       <property role="Xl_RC" value="Tabular" />
@@ -2828,7 +2828,7 @@
                                   <node concept="liA8E" id="6Zy$B2tMhRM" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="6Zy$B2tMi8Q" role="37wK5m">
-                                      <property role="Xl_RC" value="DirectedGraph" />
+                                      <property role="Xl_RC" value="Graph-like" />
                                     </node>
                                   </node>
                                 </node>
