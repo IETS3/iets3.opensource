@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.iets3.analysis.base#8571724170506756322" uuid="739e4e9b-4a2a-447a-8a6b-640d535d5578">
+    <generator namespace="org.iets3.analysis.base#8571724170506756322" uuid="739e4e9b-4a2a-447a-8a6b-640d535d5578">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

@@ -530,9 +530,6 @@
       <property role="IQ2nx" value="890435239346753553" />
       <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
     </node>
-    <node concept="PrWs8" id="Lrty7CKd02" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
-    </node>
     <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
