@@ -2214,8 +2214,8 @@
                               <node concept="3clFbF" id="2Qmv3Aq2GxP" role="3cqZAp">
                                 <node concept="1rXfSq" id="2Qmv3Aq2GxQ" role="3clFbG">
                                   <ref role="37wK5l" to="c8ee:~DefaultTableCellRenderer.setBackground(java.awt.Color):void" resolve="setBackground" />
-                                  <node concept="10M0yZ" id="2Qmv3Aq2GxR" role="37wK5m">
-                                    <ref role="3cqZAo" to="z60i:~Color.yellow" resolve="yellow" />
+                                  <node concept="10M0yZ" id="2Qmv3Aql5$d" role="37wK5m">
+                                    <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
                                     <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                                   </node>
                                 </node>
