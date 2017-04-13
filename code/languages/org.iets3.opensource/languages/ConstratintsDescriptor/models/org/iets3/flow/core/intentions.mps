@@ -2,7 +2,7 @@
 <model ref="r:b701b71e-94ab-49ee-a9fa-8423d6578c72(org.iets3.flow.core.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -601,6 +601,21 @@
                     <node concept="3Tqbb2" id="2nJapj3rrZE" role="3zrR0E">
                       <ref role="ehGHo" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6Zy$B2vRVYN" role="3cqZAp">
+              <node concept="37vLTI" id="6Zy$B2vRXFz" role="3clFbG">
+                <node concept="Xl_RD" id="6Zy$B2vRXM4" role="37vLTx">
+                  <property role="Xl_RC" value="FlowData" />
+                </node>
+                <node concept="2OqwBi" id="6Zy$B2vRWSP" role="37vLTJ">
+                  <node concept="37vLTw" id="6Zy$B2vRVYL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2nJapj3rrZA" resolve="flow" />
+                  </node>
+                  <node concept="3TrcHB" id="6Zy$B2vRXe9" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>

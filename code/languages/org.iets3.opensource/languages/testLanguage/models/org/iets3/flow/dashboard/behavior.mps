@@ -201,6 +201,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -346,6 +347,57 @@
             <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6Zy$B2weZrR" role="13h7CS">
+      <property role="TrG5h" value="updateDashboardData" />
+      <node concept="3Tm1VV" id="6Zy$B2weZrS" role="1B3o_S" />
+      <node concept="3cqZAl" id="6Zy$B2wf0rR" role="3clF45" />
+      <node concept="3clFbS" id="6Zy$B2weZrU" role="3clF47">
+        <node concept="3clFbF" id="6Zy$B2wf0zw" role="3cqZAp">
+          <node concept="2OqwBi" id="6Zy$B2wf36t" role="3clFbG">
+            <node concept="2OqwBi" id="6Zy$B2wf17Y" role="2Oq$k0">
+              <node concept="2OqwBi" id="6Zy$B2wf0E$" role="2Oq$k0">
+                <node concept="13iPFW" id="6Zy$B2wf0zv" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6Zy$B2wf0NS" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xwgo:6Zy$B2vqlR0" resolve="dataFlowChild" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="6Zy$B2wf1ma" role="2OqNvi">
+                <ref role="3TtcxE" to="xwgo:5cR9puhFRxd" resolve="stateList" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6Zy$B2wf6Vr" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6Zy$B2vRRnv" role="3cqZAp">
+          <node concept="37vLTI" id="6Zy$B2vRRYa" role="3clFbG">
+            <node concept="2OqwBi" id="6Zy$B2w6Taj" role="37vLTx">
+              <node concept="2OqwBi" id="6Zy$B2w6NiC" role="2Oq$k0">
+                <node concept="2OqwBi" id="6Zy$B2w6KXt" role="2Oq$k0">
+                  <node concept="BaHAS" id="6Zy$B2w6KH7" role="2Oq$k0">
+                    <property role="BaHAW" value="FlowModel" />
+                    <property role="BaGAP" value="" />
+                  </node>
+                  <node concept="2RRcyG" id="6Zy$B2w6Les" role="2OqNvi">
+                    <ref role="2RRcyH" to="xwgo:3HvtPSdglG0" resolve="FlowData" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="6Zy$B2w6R7v" role="2OqNvi" />
+              </node>
+              <node concept="1$rogu" id="6Zy$B2w6T$k" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6Zy$B2vRRuZ" role="37vLTJ">
+              <node concept="13iPFW" id="6Zy$B2wf7mR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6Zy$B2wf7R8" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwgo:6Zy$B2vqlR0" resolve="dataFlowChild" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Zy$B2wf73k" role="3cqZAp" />
       </node>
     </node>
     <node concept="13hLZK" id="23Wc6usTx8F" role="13h7CW">
