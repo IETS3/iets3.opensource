@@ -24,9 +24,12 @@
     <import index="xwgo" ref="r:b3404408-df39-4a35-9698-ae7cc49751d9(org.iets3.flow.dashboard.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="bnk3" ref="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -809,6 +812,12 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="pVoyu" id="2Qmv3AoSY48" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2Qmv3AoSZ14" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3gTLQM" id="3PBquMq7mRA" role="3EZMnx">
@@ -2193,6 +2202,12 @@
             </node>
           </node>
         </node>
+        <node concept="pVoyu" id="2Qmv3AoSsxb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2Qmv3AoSt$H" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6Zy$B2tEEdM" role="3EZMnx">
         <node concept="pVoyu" id="6Zy$B2tLLZz" role="3F10Kt">
@@ -2295,17 +2310,17 @@
     <node concept="2BsEeg" id="57o1xPKbEI1" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="TabularView" />
-      <property role="2BUmq6" value="This is a Tabular View of the Dashboard" />
+      <property role="2BUmq6" value="This is a Tabular View of the flowModel" />
     </node>
     <node concept="2BsEeg" id="57o1xPKkbVL" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="Textual" />
-      <property role="2BUmq6" value="This is a Textual Editor for the Dashboard" />
+      <property role="2BUmq6" value="This is a Textual Editor of the flowModel" />
     </node>
     <node concept="2BsEeg" id="57o1xPKkbWr" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="DirectedGraph" />
-      <property role="2BUmq6" value="This is a Directed Graph for the flowModel" />
+      <property role="2BUmq6" value="This is a Directed Graph of the flowModel" />
     </node>
   </node>
   <node concept="24kQdi" id="57o1xPKwweb">
