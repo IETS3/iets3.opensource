@@ -3540,8 +3540,8 @@
                 <node concept="2xDIQ0" id="6Zy$B2u73v1" role="2Oq$k0" />
                 <node concept="liA8E" id="6Zy$B2u73v2" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-                  <node concept="10M0yZ" id="5dGc$gsaHgD" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.yellow" resolve="yellow" />
+                  <node concept="10M0yZ" id="1zJiDHtBgdi" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.DARK_GRAY" resolve="DARK_GRAY" />
                     <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                 </node>
