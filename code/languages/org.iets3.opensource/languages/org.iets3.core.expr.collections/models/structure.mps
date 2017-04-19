@@ -530,9 +530,6 @@
       <property role="IQ2nx" value="890435239346753553" />
       <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
     </node>
-    <node concept="PrWs8" id="Lrty7CKd02" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
-    </node>
     <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
@@ -722,6 +719,15 @@
     <property role="TrG5h" value="FlattenOp" />
     <property role="34LRSv" value="flatten" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="5$4k7YFgD0B">
+    <property role="EcuMT" value="6414340278546763815" />
+    <property role="TrG5h" value="AsSingletonList" />
+    <property role="34LRSv" value="toList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5$4k7YFgD0I" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
   </node>
 </model>
 

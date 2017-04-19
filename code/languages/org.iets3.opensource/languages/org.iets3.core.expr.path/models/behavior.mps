@@ -2,7 +2,7 @@
 <model ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,8 +78,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -107,7 +107,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="6LLGpXJ1KQ8">
-    <ref role="13h7C2" to="lmd:6LLGpXJ1KPJ" resolve="IRecordType" />
+    <ref role="13h7C2" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
     <node concept="13i0hz" id="6LLGpXJ1KQb" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -225,9 +225,11 @@
               </node>
               <node concept="2OqwBi" id="4o9aP47qdEn" role="3uHU7B">
                 <node concept="1PxgMI" id="4o9aP47qd_s" role="2Oq$k0">
-                  <ref role="1m5ApE" to="lmd:6LLGpXJ4YDJ" resolve="PathElement" />
                   <node concept="37vLTw" id="4o9aP47qdzm" role="1m5AlR">
                     <ref role="3cqZAo" node="4o9aP47qdjK" resolve="other" />
+                  </node>
+                  <node concept="chp4Y" id="6b_jefnKyOD" role="3oSUPX">
+                    <ref role="cht4Q" to="lmd:6LLGpXJ4YDJ" resolve="PathElement" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4o9aP47qdLL" role="2OqNvi">

@@ -2,7 +2,7 @@
 <model ref="r:7785963d-85cb-4509-b1db-0610e781c465(org.iets3.core.expr.collections.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -922,6 +922,12 @@
     <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="CounterExpr" />
     <node concept="3F0ifn" id="4bUWUHViFN" role="2wV5jI">
       <property role="3F0ifm" value="counter" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5$4k7YFgD1c">
+    <ref role="1XX52x" to="700h:5$4k7YFgD0B" resolve="AsSingletonList" />
+    <node concept="3F0ifn" id="5$4k7YFgD1k" role="2wV5jI">
+      <property role="3F0ifm" value="toList" />
     </node>
   </node>
 </model>

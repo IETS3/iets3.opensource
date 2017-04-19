@@ -108,8 +108,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -123,7 +123,6 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -134,6 +133,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -379,7 +379,6 @@
           <node concept="2OqwBi" id="662bi$va_Hn" role="3clFbG">
             <node concept="2OqwBi" id="662bi$vazJE" role="2Oq$k0">
               <node concept="1PxgMI" id="662bi$vazkC" role="2Oq$k0">
-                <ref role="1m5ApE" to="av4b:4XlPKepaaha" resolve="StructuralCoverageAssQuery" />
                 <node concept="2OqwBi" id="662bi$vayh6" role="1m5AlR">
                   <node concept="2OqwBi" id="662bi$vaxLz" role="2Oq$k0">
                     <node concept="2Sf5sV" id="662bi$vaxDS" role="2Oq$k0" />
@@ -394,6 +393,9 @@
                   <node concept="3TrEf2" id="662bi$vaytg" role="2OqNvi">
                     <ref role="3Tt5mk" to="vs0r:K292flwD4t" resolve="query" />
                   </node>
+                </node>
+                <node concept="chp4Y" id="6b_jefnKzbC" role="3oSUPX">
+                  <ref role="cht4Q" to="av4b:4XlPKepaaha" resolve="StructuralCoverageAssQuery" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="662bi$vazXp" role="2OqNvi">
@@ -426,7 +428,7 @@
               <node concept="2Sf5sV" id="662bi$vcjyG" role="2Oq$k0" />
               <node concept="1mfA1w" id="662bi$vckqj" role="2OqNvi" />
             </node>
-            <node concept="1PgB_6" id="662bi$vckLR" role="2OqNvi" />
+            <node concept="3YRAZt" id="662bi$vckLR" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -452,7 +454,6 @@
           <node concept="2OqwBi" id="662bi$vcU$F" role="3clFbG">
             <node concept="2OqwBi" id="662bi$vcU$G" role="2Oq$k0">
               <node concept="1PxgMI" id="662bi$vcU$H" role="2Oq$k0">
-                <ref role="1m5ApE" to="av4b:3_DFadMGGNM" resolve="InterpreterCoverageAssQuery" />
                 <node concept="2OqwBi" id="662bi$vcU$I" role="1m5AlR">
                   <node concept="2OqwBi" id="662bi$vcU$J" role="2Oq$k0">
                     <node concept="2Sf5sV" id="662bi$vcU$K" role="2Oq$k0" />
@@ -467,6 +468,9 @@
                   <node concept="3TrEf2" id="662bi$vcU$O" role="2OqNvi">
                     <ref role="3Tt5mk" to="vs0r:K292flwD4t" resolve="query" />
                   </node>
+                </node>
+                <node concept="chp4Y" id="6b_jefnKzb$" role="3oSUPX">
+                  <ref role="cht4Q" to="av4b:3_DFadMGGNM" resolve="InterpreterCoverageAssQuery" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="662bi$vcVjl" role="2OqNvi">
@@ -499,7 +503,7 @@
               <node concept="2Sf5sV" id="662bi$vcU_1" role="2Oq$k0" />
               <node concept="1mfA1w" id="662bi$vcU_2" role="2OqNvi" />
             </node>
-            <node concept="1PgB_6" id="662bi$vcU_3" role="2OqNvi" />
+            <node concept="3YRAZt" id="662bi$vcU_3" role="2OqNvi" />
           </node>
         </node>
       </node>
