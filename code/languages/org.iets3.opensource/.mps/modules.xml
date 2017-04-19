@@ -4,7 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/DashboardLanguage/DashboardLanguage.mpl" folder="flowDemo" />
-      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.property.mpl" folder="flow" />
+      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.modelproperty.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/earsPlus.mpl" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/sandbox/earsPlus.sandbox.msd" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
@@ -14,7 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace/org.iets3.core.trace.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.ears.gxw/org.iets3.ears.gxw.mpl" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.flow.property.formulae/org.iets3.flow.property.formulae.mpl" folder="flow" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.flow.property.formulae/org.iets3.flow.modelproperty.formulae.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.lustre/org.iets3.graphicalLustre.mpl" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
