@@ -37,9 +37,10 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -316,6 +317,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
       <concept id="3379970138993099772" name="com.mbeddr.mpsutil.httpsupport.structure.ApplicationID" flags="ng" index="3gX9ci">
@@ -509,6 +511,8 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
+      <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
+      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -13837,6 +13841,11 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2udM7u90M1z" role="3clF47">
+        <node concept="3SKdUt" id="2yzFn65h8sA" role="3cqZAp">
+          <node concept="3SKdUq" id="2yzFn65h8sC" role="3SKWNk">
+            <property role="3SKdUp" value="get origin node (if copied) for which the coverage data should be actually set" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="14hxBQc_rXB" role="3cqZAp">
           <node concept="3cpWsn" id="14hxBQc_rXC" role="3cpWs9">
             <property role="TrG5h" value="originNode" />
@@ -16410,8 +16419,119 @@
         <node concept="3Tqbb2" id="7khCpYbTeC_" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7khCpYbYdjp" role="jymVt" />
+    <node concept="2YIFZL" id="7khCpYbYdpa" role="jymVt">
+      <property role="TrG5h" value="copyWithOriginTraces" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7khCpYbYdpd" role="3clF47">
+        <node concept="3cpWs8" id="14hxBQc$aNy" role="3cqZAp">
+          <node concept="3cpWsn" id="14hxBQc$aN_" role="3cpWs9">
+            <property role="TrG5h" value="copyMap" />
+            <node concept="3rvAFt" id="14hxBQc$aNs" role="1tU5fm">
+              <node concept="3Tqbb2" id="14hxBQc$b4w" role="3rvQeY" />
+              <node concept="3Tqbb2" id="14hxBQc$b4R" role="3rvSg0" />
+            </node>
+            <node concept="2ShNRf" id="14hxBQc$b6O" role="33vP2m">
+              <node concept="3rGOSV" id="14hxBQc$cyE" role="2ShVmc">
+                <node concept="3Tqbb2" id="14hxBQc$cES" role="3rHrn6" />
+                <node concept="3Tqbb2" id="14hxBQc$cJ_" role="3rHtpV" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7khCpYbYe9M" role="3cqZAp">
+          <node concept="3cpWsn" id="7khCpYbYe9N" role="3cpWs9">
+            <property role="TrG5h" value="copy" />
+            <node concept="3Tqbb2" id="7khCpYbYec5" role="1tU5fm" />
+            <node concept="2YIFZM" id="7khCpYbYe9O" role="33vP2m">
+              <ref role="1Pybhc" to="w1kc:~CopyUtil" resolve="CopyUtil" />
+              <ref role="37wK5l" to="w1kc:~CopyUtil.copy(org.jetbrains.mps.openapi.model.SNode,java.util.Map,boolean):org.jetbrains.mps.openapi.model.SNode" resolve="copy" />
+              <node concept="37vLTw" id="7khCpYbYe9P" role="37wK5m">
+                <ref role="3cqZAo" node="7khCpYbYdtf" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="7khCpYbYe9Q" role="37wK5m">
+                <ref role="3cqZAo" node="14hxBQc$aN_" resolve="copyMap" />
+              </node>
+              <node concept="3clFbT" id="7khCpYbYe9R" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="14hxBQc$ghS" role="3cqZAp">
+          <node concept="2OqwBi" id="14hxBQc$gNP" role="3clFbG">
+            <node concept="37vLTw" id="14hxBQc$ghQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="14hxBQc$aN_" resolve="copyMap" />
+            </node>
+            <node concept="2es0OD" id="14hxBQc$hl8" role="2OqNvi">
+              <node concept="1bVj0M" id="14hxBQc$hla" role="23t8la">
+                <node concept="3clFbS" id="14hxBQc$hlb" role="1bW5cS">
+                  <node concept="3clFbF" id="7khCpYbToIO" role="3cqZAp">
+                    <node concept="2YIFZM" id="7khCpYbToRV" role="3clFbG">
+                      <ref role="1Pybhc" node="7khCpYbTdK8" resolve="CoverageHelper" />
+                      <ref role="37wK5l" node="7khCpYbTew2" resolve="setOriginNode" />
+                      <node concept="2OqwBi" id="7khCpYbTpbv" role="37wK5m">
+                        <node concept="37vLTw" id="7khCpYbToS3" role="2Oq$k0">
+                          <ref role="3cqZAo" node="14hxBQc$hlc" resolve="it" />
+                        </node>
+                        <node concept="3AV6Ez" id="7khCpYbTpwp" role="2OqNvi" />
+                      </node>
+                      <node concept="2OqwBi" id="7khCpYbTq8D" role="37wK5m">
+                        <node concept="37vLTw" id="7khCpYbTpOB" role="2Oq$k0">
+                          <ref role="3cqZAo" node="14hxBQc$hlc" resolve="it" />
+                        </node>
+                        <node concept="3AY5_j" id="7khCpYbTqo2" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="14hxBQc$hlc" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="14hxBQc$hld" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7khCpYbYenf" role="3cqZAp">
+          <node concept="37vLTw" id="7khCpYbYeqc" role="3cqZAk">
+            <ref role="3cqZAo" node="7khCpYbYe9N" resolve="copy" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7khCpYbYdmY" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7khCpYbYduf" role="3clF45" />
+      <node concept="37vLTG" id="7khCpYbYdtf" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7khCpYbYdte" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7khCpYbTevg" role="jymVt" />
     <node concept="3Tm1VV" id="7khCpYbTdK9" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2yzFn65h73S" role="lGtFl">
+      <node concept="TZ5HA" id="2yzFn65h73T" role="TZ5H$">
+        <node concept="1dT_AC" id="2yzFn65h73U" role="1dT_Ay">
+          <property role="1dT_AB" value="Contains helper methods for coverage data collection." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2yzFn65h74B" role="TZ5H$">
+        <node concept="1dT_AC" id="2yzFn65h74C" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2yzFn65h74V" role="TZ5H$">
+        <node concept="1dT_AC" id="2yzFn65h74W" role="1dT_Ay">
+          <property role="1dT_AB" value="Traces to origin nodes are used where copies of original nodes are interepreted. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2yzFn65h7mx" role="TZ5H$">
+        <node concept="1dT_AC" id="2yzFn65h7my" role="1dT_Ay">
+          <property role="1dT_AB" value="This allows to set coverage data for origin nodes during interpretation." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
