@@ -2602,7 +2602,7 @@
     <ref role="1XX52x" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
     <node concept="3EZMnI" id="57o1xPKIpGA" role="2wV5jI">
       <node concept="3F0ifn" id="2Qmv3ApxvsU" role="3EZMnx">
-        <property role="3F0ifm" value="Cooling System Requirements Dashboard" />
+        <property role="3F0ifm" value="Cooling Controller Requirements Dashboard" />
         <node concept="VSNWy" id="2DQ92qOObr0" role="3F10Kt">
           <property role="1lJzqX" value="20" />
         </node>
