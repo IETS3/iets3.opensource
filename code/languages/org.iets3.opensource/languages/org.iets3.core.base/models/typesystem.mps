@@ -109,6 +109,9 @@
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
+      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
+        <child id="1224760230762" name="infoText" index="Dpw9R" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -492,6 +495,18 @@
               </node>
               <node concept="2qgKlT" id="3R3AIvunrCY" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
+              </node>
+            </node>
+            <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
+              <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
+                <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
+                  <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
+                    <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
+                  </node>
+                  <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
+                    <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
