@@ -7,11 +7,14 @@
   </languages>
   <imports>
     <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.modelproperty.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -57,6 +60,13 @@
     <property role="EcuMT" value="452464945956285165" />
     <property role="TrG5h" value="AllGlossaryTermsUsed" />
     <ref role="1TJDcQ" to="oehh:5rwK$2qeY$r" resolve="ModelProperty" />
+  </node>
+  <node concept="1TIwiD" id="5rwK$2qeY$r">
+    <property role="EcuMT" value="6260217064766302491" />
+    <property role="TrG5h" value="ModelProperty" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

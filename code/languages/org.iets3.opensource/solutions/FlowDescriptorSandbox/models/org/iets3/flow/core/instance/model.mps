@@ -82,7 +82,7 @@
     </language>
   </registry>
   <node concept="ulkQR" id="4ciHkhtidcc">
-    <property role="TrG5h" value="state chart root name" />
+    <property role="TrG5h" value="Cooling Controller Requirements" />
     <node concept="ulkQJ" id="38QI5jjP83F" role="ulkQK">
       <property role="TrG5h" value="Empty requirements project" />
       <property role="2O1_EJ" value="true" />
