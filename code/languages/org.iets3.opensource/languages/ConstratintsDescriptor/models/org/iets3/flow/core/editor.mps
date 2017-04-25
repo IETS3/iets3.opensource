@@ -162,7 +162,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7c_wSf78V53" role="3EZMnx">
-        <property role="3F0ifm" value="Property to be checked:" />
+        <property role="3F0ifm" value="Condition to be checked:" />
         <node concept="pVoyu" id="7c_wSf78Vav" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
