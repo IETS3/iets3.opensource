@@ -223,6 +223,9 @@
           </node>
         </node>
       </node>
+      <node concept="fI48x" id="3T5sQlfdis4" role="fI48E">
+        <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
+      </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
@@ -232,10 +235,22 @@
       <node concept="ulk8C" id="7tAIZp0e7_W" role="ulkQE">
         <property role="fwOFb" value="Please complete the controller's functional behavior" />
       </node>
-      <node concept="3x7ZJP" id="7tAIZp0gKEx" role="um_Ly">
-        <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-        <node concept="35c_gC" id="7tAIZp0gKEz" role="2DkB7w">
-          <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
+      <node concept="aRPxe" id="3T5sQlfdj4p" role="um_Ly">
+        <node concept="aRPxN" id="3T5sQlfdj4I" role="1y4i0q">
+          <node concept="aRPxe" id="3T5sQlfdj55" role="1y4i0j">
+            <node concept="3x7ZJP" id="3T5sQlfdj5q" role="1y4i0q">
+              <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
+              <node concept="35c_gC" id="3T5sQlfdj5s" role="2DkB7w">
+                <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
+              </node>
+            </node>
+          </node>
+          <node concept="3x7ZJP" id="3T5sQlfdj6x" role="1y4i0p">
+            <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
+            <node concept="35c_gC" id="3T5sQlfdj6z" role="2DkB7w">
+              <ref role="35c_gD" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -1092,6 +1092,54 @@
         <node concept="3clFbH" id="23Wc6usWQ6T" role="3cqZAp" />
         <node concept="3clFbJ" id="23Wc6usWRgG" role="3cqZAp">
           <node concept="3clFbS" id="23Wc6usWRgI" role="3clFbx">
+            <node concept="3clFbF" id="3T5sQlfdMhM" role="3cqZAp">
+              <node concept="2OqwBi" id="3T5sQlfdMhJ" role="3clFbG">
+                <node concept="10M0yZ" id="3T5sQlfdMhK" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="3T5sQlfdMhL" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="3T5sQlfdPVZ" role="37wK5m">
+                    <node concept="Xl_RD" id="3T5sQlfdOtY" role="3uHU7B">
+                      <property role="Xl_RC" value="AND: " />
+                    </node>
+                    <node concept="1eOMI4" id="3T5sQlfdRaA" role="3uHU7w">
+                      <node concept="1Wc70l" id="3T5sQlfdQ5E" role="1eOMHV">
+                        <node concept="1rXfSq" id="3T5sQlfdQ5K" role="3uHU7B">
+                          <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                          <node concept="2OqwBi" id="3T5sQlfdQ5L" role="37wK5m">
+                            <node concept="1PxgMI" id="3T5sQlfdQ5M" role="2Oq$k0">
+                              <ref role="1m5ApE" to="47lw:3QsrawRgNjr" resolve="AndPropertyFormula" />
+                              <node concept="37vLTw" id="3T5sQlfdQ5N" role="1m5AlR">
+                                <ref role="3cqZAo" node="23Wc6usTX1T" resolve="propertyFormula" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="3T5sQlfdQ5O" role="2OqNvi">
+                              <ref role="3Tt5mk" to="47lw:2t59Tl5l0u6" resolve="arg1" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1rXfSq" id="3T5sQlfdQ5F" role="3uHU7w">
+                          <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                          <node concept="2OqwBi" id="3T5sQlfdQ5G" role="37wK5m">
+                            <node concept="1PxgMI" id="3T5sQlfdQ5H" role="2Oq$k0">
+                              <ref role="1m5ApE" to="47lw:3QsrawRgNjr" resolve="AndPropertyFormula" />
+                              <node concept="37vLTw" id="3T5sQlfdQ5I" role="1m5AlR">
+                                <ref role="3cqZAo" node="23Wc6usTX1T" resolve="propertyFormula" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="3T5sQlfdQ5J" role="2OqNvi">
+                              <ref role="3Tt5mk" to="47lw:2t59Tl5l0uc" resolve="arg2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="23Wc6usXf8B" role="3cqZAp">
               <node concept="1Wc70l" id="23Wc6usXsSJ" role="3cqZAk">
                 <node concept="1rXfSq" id="23Wc6usXtxc" role="3uHU7w">
@@ -1186,6 +1234,38 @@
         <node concept="3clFbH" id="23Wc6usZibf" role="3cqZAp" />
         <node concept="3clFbJ" id="23Wc6usZo69" role="3cqZAp">
           <node concept="3clFbS" id="23Wc6usZo6a" role="3clFbx">
+            <node concept="3clFbF" id="3T5sQlfdBCL" role="3cqZAp">
+              <node concept="2OqwBi" id="3T5sQlfdBCI" role="3clFbG">
+                <node concept="10M0yZ" id="3T5sQlfdBCJ" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="3T5sQlfdBCK" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="3T5sQlfdE5q" role="37wK5m">
+                    <node concept="Xl_RD" id="3T5sQlfdDGg" role="3uHU7B">
+                      <property role="Xl_RC" value="NOT: " />
+                    </node>
+                    <node concept="3fqX7Q" id="3T5sQlfdEiS" role="3uHU7w">
+                      <node concept="1rXfSq" id="3T5sQlfdEiT" role="3fr31v">
+                        <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                        <node concept="2OqwBi" id="3T5sQlfdEiU" role="37wK5m">
+                          <node concept="1PxgMI" id="3T5sQlfdEiV" role="2Oq$k0">
+                            <ref role="1m5ApE" to="47lw:3QsrawRgNjA" resolve="NotPropertyFormula" />
+                            <node concept="37vLTw" id="3T5sQlfdEiW" role="1m5AlR">
+                              <ref role="3cqZAo" node="23Wc6usTX1T" resolve="propertyFormula" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="3T5sQlfdEiX" role="2OqNvi">
+                            <ref role="3Tt5mk" to="47lw:2t59Tl5l0uf" resolve="arg" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="23Wc6usZo6b" role="3cqZAp">
               <node concept="3fqX7Q" id="23Wc6usZsbI" role="3cqZAk">
                 <node concept="1rXfSq" id="MCudDInz9E" role="3fr31v">
