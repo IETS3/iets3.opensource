@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace/org.iets3.core.trace.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.ears.gxw/org.iets3.ears.gxw.mpl" folder="gxw" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.flow.modelproperty.gxw/org.iets3.flow.modelproperty.gxw.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.flow.property.formulae/org.iets3.flow.modelproperty.formulae.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.lustre/org.iets3.graphicalLustre.mpl" folder="gxw" />
