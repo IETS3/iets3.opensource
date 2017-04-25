@@ -75,7 +75,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
     <language slang="l:7731a166-da1f-472e-a40a-2283f5e47dc5:org.iets3.ears.gxw" version="0" />
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
-    <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.property.formulae" version="0" />
+    <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.modelproperty.formulae" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
