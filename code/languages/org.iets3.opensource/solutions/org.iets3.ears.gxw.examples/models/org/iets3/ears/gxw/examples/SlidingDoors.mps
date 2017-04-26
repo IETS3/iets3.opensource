@@ -189,7 +189,6 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
-      <concept id="7886550726489248425" name="org.iets3.ears.gxw.structure.NormalUbiquitousReq" flags="ng" index="2Q3NEK" />
       <concept id="9190636705088547490" name="org.iets3.ears.gxw.structure.Happens" flags="ng" index="3tWTB1" />
       <concept id="7600310587780035758" name="org.iets3.ears.gxw.structure.NormalEventDrivenOptionalFeatReq" flags="ng" index="1QfkUo">
         <child id="3691935882243901155" name="untilTrigger" index="3T_IbW" />
@@ -261,9 +260,6 @@
           <ref role="3T_uuC" node="2$$ntKwwEPh" />
         </node>
       </node>
-    </node>
-    <node concept="2Q3NEK" id="3T5sQlfhJFQ" role="OJ2fO">
-      <ref role="1Qhi4P" node="2$$ntKwwEOP" resolve="counter" />
     </node>
     <node concept="sEiiz" id="7YbGQey_vr2" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />

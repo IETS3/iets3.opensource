@@ -2214,7 +2214,7 @@
             </node>
             <node concept="3clFbH" id="7tAIZp0c7BY" role="3cqZAp" />
             <node concept="3clFbJ" id="7tAIZp0bTSD" role="3cqZAp">
-              <node concept="3y3z36" id="MCudDIqIlq" role="3clFbw">
+              <node concept="3y3z36" id="4gdbHZQNslO" role="3clFbw">
                 <node concept="2OqwBi" id="7tAIZp0cibL" role="3uHU7B">
                   <node concept="2OqwBi" id="7tAIZp0ceTc" role="2Oq$k0">
                     <node concept="37vLTw" id="7tAIZp0cexZ" role="2Oq$k0">
@@ -2516,7 +2516,7 @@
             </node>
             <node concept="3clFbH" id="7tAIZp0d3Px" role="3cqZAp" />
             <node concept="3clFbJ" id="7tAIZp0d3Py" role="3cqZAp">
-              <node concept="3y3z36" id="7tAIZp0d5xT" role="3clFbw">
+              <node concept="3clFbC" id="4gdbHZQO09X" role="3clFbw">
                 <node concept="2OqwBi" id="7tAIZp0d3P_" role="3uHU7B">
                   <node concept="2OqwBi" id="7tAIZp0d3PA" role="2Oq$k0">
                     <node concept="37vLTw" id="7tAIZp0d3PB" role="2Oq$k0">
@@ -2533,6 +2533,37 @@
                 </node>
               </node>
               <node concept="3clFbS" id="7tAIZp0d3PE" role="3clFbx">
+                <node concept="3clFbF" id="4gdbHZQNHIJ" role="3cqZAp">
+                  <node concept="2YIFZM" id="4gdbHZQNHIK" role="3clFbG">
+                    <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
+                    <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
+                    <node concept="37vLTw" id="4gdbHZQNHIL" role="37wK5m">
+                      <ref role="3cqZAo" node="7tAIZp0d3Pd" resolve="results" />
+                    </node>
+                    <node concept="2OqwBi" id="4gdbHZQNHIM" role="37wK5m">
+                      <node concept="2OqwBi" id="4gdbHZQNHIN" role="2Oq$k0">
+                        <node concept="37vLTw" id="4gdbHZQNHIO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7tAIZp0d2BI" resolve="model" />
+                        </node>
+                        <node concept="2RRcyG" id="4gdbHZQNHIP" role="2OqNvi">
+                          <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4gdbHZQNHIQ" role="2OqNvi" />
+                    </node>
+                    <node concept="Xl_RD" id="4gdbHZQNHIR" role="37wK5m">
+                      <property role="Xl_RC" value="Some elements in the table have errors" />
+                    </node>
+                    <node concept="10M0yZ" id="4gdbHZQNHIS" role="37wK5m">
+                      <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
+                      <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
+                    </node>
+                    <node concept="Xl_RD" id="4gdbHZQNHIT" role="37wK5m">
+                      <property role="Xl_RC" value="FLOW language Custom Error" />
+                    </node>
+                    <node concept="10Nm6u" id="4gdbHZQNHIU" role="37wK5m" />
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="6sXRKlxkwKN" role="3cqZAp">
                   <node concept="3cpWsn" id="6sXRKlxkwKQ" role="3cpWs9">
                     <property role="TrG5h" value="tabledescendants" />
