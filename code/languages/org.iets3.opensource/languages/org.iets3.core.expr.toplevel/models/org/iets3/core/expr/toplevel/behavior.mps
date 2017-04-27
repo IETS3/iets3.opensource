@@ -224,6 +224,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -827,6 +828,74 @@
           <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="RIvadv1bFp" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDependenciesRelevantForCycleDetection" />
+      <ref role="13i0hy" to="hwgx:59HbAIOYveX" resolve="getDependenciesRelevantForCycleDetection" />
+      <node concept="3Tm1VV" id="RIvadv1bFq" role="1B3o_S" />
+      <node concept="3clFbS" id="RIvadv1bFu" role="3clF47">
+        <node concept="3clFbF" id="RIvadv1enL" role="3cqZAp">
+          <node concept="2OqwBi" id="RIvadv1l_X" role="3clFbG">
+            <node concept="2OqwBi" id="RIvadv1fk6" role="2Oq$k0">
+              <node concept="2OqwBi" id="RIvadv1e_E" role="2Oq$k0">
+                <node concept="13iPFW" id="RIvadv1enK" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2Fd5B1gxgPb" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:69zaTr1HgRN" resolve="value" />
+                </node>
+              </node>
+              <node concept="2Rf3mk" id="RIvadv1fxA" role="2OqNvi">
+                <node concept="1xMEDy" id="RIvadv1fxC" role="1xVPHs">
+                  <node concept="chp4Y" id="2Fd5B1gxdiC" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="RIvadv2xVe" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3$u5V9" id="RIvadv2InJ" role="2OqNvi">
+              <node concept="1bVj0M" id="RIvadv2InL" role="23t8la">
+                <node concept="3clFbS" id="RIvadv2InM" role="1bW5cS">
+                  <node concept="3clFbF" id="RIvadv2Ivk" role="3cqZAp">
+                    <node concept="2OqwBi" id="RIvadv2IDr" role="3clFbG">
+                      <node concept="37vLTw" id="RIvadv2Ivj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="RIvadv2InN" resolve="it" />
+                      </node>
+                      <node concept="3TrEf2" id="2Fd5B1gxdCm" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yv47:ub9nkyG$WU" resolve="constant" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="RIvadv2InN" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="RIvadv2InO" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="RIvadv1bFv" role="3clF45">
+        <node concept="3Tqbb2" id="RIvadv1bFw" role="A3Ik2">
+          <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2G8yZXxNStd" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getErrorMessageForElementInCycle" />
+      <node concept="3Tm1VV" id="2G8yZXxNSte" role="1B3o_S" />
+      <node concept="3clFbS" id="2G8yZXxNStf" role="3clF47">
+        <node concept="3cpWs6" id="2G8yZXxNSFQ" role="3cqZAp">
+          <node concept="Xl_RD" id="17fjvcLFfFr" role="3cqZAk">
+            <property role="Xl_RC" value="Cyclic dependencies between constants are not allowed." />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2G8yZXxNSFN" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="69zaTr1N3Q9">

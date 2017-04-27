@@ -2,10 +2,10 @@
 <model ref="r:e5a2b77c-569f-4c13-8679-6ec5a6000fa9(org.iets3.core.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -166,6 +166,18 @@
       <node concept="3clFbJ" id="3R3AIvunrw1" role="3cqZAp">
         <node concept="3clFbS" id="3R3AIvunrw2" role="3clFbx">
           <node concept="3clFbJ" id="3R3AIvunr$C" role="3cqZAp">
+            <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
+              <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
+                <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
+                  <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
+                    <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
+                  </node>
+                  <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
+                    <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbS" id="3R3AIvunr$D" role="3clFbx">
               <node concept="3cpWs8" id="3R3AIvunrHy" role="3cqZAp">
                 <node concept="3cpWsn" id="3R3AIvunrHz" role="3cpWs9">
@@ -495,18 +507,6 @@
               </node>
               <node concept="2qgKlT" id="3R3AIvunrCY" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
-              </node>
-            </node>
-            <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
-              <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
-                <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
-                  <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
-                    <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
-                  </node>
-                  <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
-                    <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>

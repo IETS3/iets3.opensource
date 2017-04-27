@@ -2,7 +2,7 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
@@ -99,6 +99,7 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499051" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginContent" flags="ng" index="m$_yg" />
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -489,6 +490,7 @@
       <node concept="m$f5U" id="5wLtKNeT2TG" role="m$_yh">
         <ref role="m$f5T" node="5wLtKNeSRRC" resolve="iets3.req.os" />
       </node>
+      <node concept="m$_yg" id="408CVmKBcgO" role="m$_yh" />
       <node concept="m$_yC" id="5wLtKNeT2TH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -1816,8 +1818,8 @@
         </node>
       </node>
     </node>
-    <node concept="2G$12M" id="5wLtKNeSRRC" role="3989C9">
-      <property role="TrG5h" value="iets3.req.os" />
+    <node concept="2G$12M" id="408CVmKBaLA" role="3989C9">
+      <property role="TrG5h" value="iets3.req.os.devkit" />
       <node concept="3LEwk6" id="5wLtKNeSRPP" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.req" />
@@ -1847,6 +1849,9 @@
           <ref role="3LEDTV" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
         </node>
       </node>
+    </node>
+    <node concept="2G$12M" id="5wLtKNeSRRC" role="3989C9">
+      <property role="TrG5h" value="iets3.req.os" />
       <node concept="1E1JtD" id="5wLtKNeSRQj" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.glossary" />
@@ -2195,6 +2200,12 @@
           <node concept="3bR9La" id="6_Ift$_U49f" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1F1F0IUZZee" role="3bR37C">
+          <node concept="3bR9La" id="1F1F0IUZZef" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
