@@ -639,8 +639,13 @@
                               <node concept="2pIpSj" id="5ya_dKpNG6n" role="2pJxcM">
                                 <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                                 <node concept="36biLy" id="5ya_dKpNG6R" role="2pJxcZ">
-                                  <node concept="37vLTw" id="5ya_dKpNG74" role="36biLW">
-                                    <ref role="3cqZAo" node="6Mx2TmozGCe" resolve="operationType" />
+                                  <node concept="1PxgMI" id="FUYgtvvWh2" role="36biLW">
+                                    <node concept="chp4Y" id="FUYgtvvWhx" role="3oSUPX">
+                                      <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                                    </node>
+                                    <node concept="37vLTw" id="5ya_dKpNG74" role="1m5AlR">
+                                      <ref role="3cqZAo" node="6Mx2TmozGCe" resolve="operationType" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -775,11 +780,16 @@
                                     <node concept="2pIpSj" id="5WNmJ7EmrD0" role="2pJxcM">
                                       <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                                       <node concept="36biLy" id="5WNmJ7EmrE9" role="2pJxcZ">
-                                        <node concept="2OqwBi" id="5WNmJ7EmrSg" role="36biLW">
-                                          <node concept="2X3wrD" id="5WNmJ7EmrEk" role="2Oq$k0">
-                                            <ref role="2X3Bk0" node="5WNmJ7EmpmX" resolve="targetType" />
+                                        <node concept="1PxgMI" id="FUYgtvx0wW" role="36biLW">
+                                          <node concept="chp4Y" id="FUYgtvx0xM" role="3oSUPX">
+                                            <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                                           </node>
-                                          <node concept="1$rogu" id="5WNmJ7EmrWZ" role="2OqNvi" />
+                                          <node concept="2OqwBi" id="5WNmJ7EmrSg" role="1m5AlR">
+                                            <node concept="2X3wrD" id="5WNmJ7EmrEk" role="2Oq$k0">
+                                              <ref role="2X3Bk0" node="5WNmJ7EmpmX" resolve="targetType" />
+                                            </node>
+                                            <node concept="1$rogu" id="5WNmJ7EmrWZ" role="2OqNvi" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>
