@@ -1937,6 +1937,19 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2pYJ4piWiiW" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isNameEditableInDiagram" />
+      <node concept="3Tm1VV" id="2pYJ4piWiiX" role="1B3o_S" />
+      <node concept="10P_77" id="2pYJ4piWkTa" role="3clF45" />
+      <node concept="3clFbS" id="2pYJ4piWiiZ" role="3clF47">
+        <node concept="3cpWs6" id="2pYJ4piWkWb" role="3cqZAp">
+          <node concept="3clFbT" id="2pYJ4piWkWi" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6LfBX8Yl7Hw">
     <property role="3GE5qa" value="components" />
