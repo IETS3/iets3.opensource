@@ -717,7 +717,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7halHeUzPRv">
-    <ref role="1XX52x" to="hm2y:7halHeUzscN" resolve="AbstractLiteral" />
+    <ref role="1XX52x" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
     <node concept="PMmxH" id="3D9$r_1DUO" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
@@ -2594,7 +2594,7 @@
           <node concept="3clFbS" id="3$EgSSxSpRN" role="3clFbx">
             <node concept="3SKdUt" id="3$EgSSxSN$N" role="3cqZAp">
               <node concept="3SKdUq" id="3$EgSSxSN$P" role="3SKWNk">
-                <property role="3SKdUp" value="force coverage display for uppermost toplevel nodes if there is any other visited node in the current root" />
+                <property role="3SKdUp" value="force coverage display for uppermost toplevel nodes if any other visited nodes exist in the current root" />
               </node>
             </node>
             <node concept="3cpWs6" id="3$EgSSxSMHO" role="3cqZAp">
@@ -2685,11 +2685,21 @@
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="2udM7u9cReh" role="3eO9$A">
-              <node concept="2YIFZM" id="2udM7u9cRej" role="3fr31v">
-                <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
-                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                <node concept="pncrf" id="2udM7u9cRek" role="37wK5m" />
+            <node concept="22lmx$" id="2yzFn65i1vx" role="3eO9$A">
+              <node concept="2OqwBi" id="2yzFn65i3iQ" role="3uHU7w">
+                <node concept="pncrf" id="2yzFn65i2UE" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="2yzFn65i3Mo" role="2OqNvi">
+                  <node concept="chp4Y" id="2yzFn65i3My" role="cj9EA">
+                    <ref role="cht4Q" to="3673:5IKJrJIaLee" resolve="IExcludeFromCoverage" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="2udM7u9cReh" role="3uHU7B">
+                <node concept="2YIFZM" id="2udM7u9cRej" role="3fr31v">
+                  <ref role="37wK5l" to="pbu6:1WlYLwX1YJg" resolve="hasNodeCoverage" />
+                  <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                  <node concept="pncrf" id="2udM7u9cRek" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
