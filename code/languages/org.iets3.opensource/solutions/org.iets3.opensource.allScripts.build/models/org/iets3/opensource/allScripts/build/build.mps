@@ -159,6 +159,42 @@
     </node>
     <node concept="2G$12M" id="1fXtMa7qkPo" role="3989C9">
       <property role="TrG5h" value="iets3.build" />
+      <node concept="1E1JtA" id="1eN0CaCOBKU" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.opensource.allScripts.build" />
+        <property role="3LESm3" value="ed0abc8f-2bd9-460c-b01c-761f3a610483" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="1eN0CaCOBMd" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
+          <node concept="2Ry0Ak" id="1eN0CaCOBMD" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="1eN0CaCOBNf" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.opensource.allScripts.build" />
+              <node concept="2Ry0Ak" id="1eN0CaCOBNE" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.opensource.allScripts.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1eN0CaCOBNR" role="3bR37C">
+          <node concept="3bR9La" id="1eN0CaCOBNS" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1eN0CaCOBNT" role="3bR37C">
+          <node concept="3bR9La" id="1eN0CaCOBNU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="3fk:1RubBbpfBb$" resolve="com.mbeddr.allScripts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1eN0CaCOBNV" role="3bR37C">
+          <node concept="3bR9La" id="1eN0CaCOBNW" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="3fk:6ucYLjoxZBc" resolve="com.mbeddr.platform" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="1fXtMa7ql1G" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.opensource.build" />
