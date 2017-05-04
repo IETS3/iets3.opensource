@@ -134,18 +134,18 @@
       <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="m$_wf" id="Z5OQ302kgm" role="3989C9">
-      <property role="m$_wk" value="org.iets3.opensource.build" />
+      <property role="m$_wk" value="org.iets3.opensource.allScripts" />
       <node concept="m$_yC" id="Z5OQ302khX" role="m$_yJ">
         <ref role="m$_y1" to="3fk:46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
       </node>
       <node concept="3_J27D" id="Z5OQ302kgo" role="m$_yQ">
         <node concept="3Mxwew" id="Z5OQ302kh7" role="3MwsjC">
-          <property role="3MwjfP" value="org.iets3.opensource.build" />
+          <property role="3MwjfP" value="org.iets3.opensource.allScripts" />
         </node>
       </node>
       <node concept="3_J27D" id="Z5OQ302kgq" role="m_cZH">
         <node concept="3Mxwew" id="Z5OQ302kh9" role="3MwsjC">
-          <property role="3MwjfP" value="iets3.opensource.build" />
+          <property role="3MwjfP" value="org.iets3.opensource.allScripts" />
         </node>
       </node>
       <node concept="3_J27D" id="Z5OQ302kgs" role="m$_w8">
@@ -328,7 +328,7 @@
     </node>
     <node concept="1l3spV" id="5wLtKNeSRRM" role="1l3spN">
       <node concept="m$_wl" id="Z5OQ302kim" role="39821P">
-        <ref role="m_rDy" node="Z5OQ302kgm" resolve="org.iets3.opensource.build" />
+        <ref role="m_rDy" node="Z5OQ302kgm" resolve="org.iets3.opensource.allScripts" />
       </node>
     </node>
   </node>

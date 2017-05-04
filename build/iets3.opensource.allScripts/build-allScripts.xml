@@ -33,12 +33,12 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}/iets3.opensource.build" />
-    <mkdir dir="${build.layout}/iets3.opensource.build/META-INF" />
-    <echoxml file="${build.layout}/iets3.opensource.build/META-INF/plugin.xml">
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/META-INF" />
+    <echoxml file="${build.layout}/org.iets3.opensource.allScripts/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>org.iets3.opensource.build</id>
-        <name>org.iets3.opensource.build</name>
+        <id>org.iets3.opensource.allScripts</id>
+        <name>org.iets3.opensource.allScripts</name>
         <version>1.0</version>
         <depends>com.mbeddr.allScripts</depends>
         
@@ -47,8 +47,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.layout}/iets3.opensource.build/languages" />
-    <mkdir dir="${build.layout}/iets3.opensource.build/languages/iets3.build" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/languages" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build" />
     <mkdir dir="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar" />
     <mkdir dir="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar/META-INF/module.xml">
@@ -60,7 +60,7 @@
         <sources jar="org.iets3.opensource.allScripts.build-src.jar" descriptor="org.iets3.opensource.allScripts.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/iets3.opensource.build/languages/iets3.build/org.iets3.opensource.allScripts.build.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.allScripts.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.iets3.opensource.allScripts.build" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build" includes="icons/**, resources/**" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -69,7 +69,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.allScripts.build-models">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/iets3.opensource.build/languages/iets3.build/org.iets3.opensource.allScripts.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.allScripts.build-src.jar" duplicate="preserve">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -90,7 +90,7 @@
         <sources jar="org.iets3.opensource.build-src.jar" descriptor="org.iets3.opensource.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/iets3.opensource.build/languages/iets3.build/org.iets3.opensource.build.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.iets3.opensource.build" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build" includes="icons/**, resources/**" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -99,7 +99,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.build-models">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/iets3.opensource.build/languages/iets3.build/org.iets3.opensource.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.build-src.jar" duplicate="preserve">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
