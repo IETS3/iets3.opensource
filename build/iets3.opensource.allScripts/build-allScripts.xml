@@ -33,8 +33,52 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/org.iets3.opensource.allScripts.zip" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/META-INF" />
+    <echoxml file="${build.layout}/org.iets3.opensource.allScripts/META-INF/plugin.xml">
+      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>org.iets3.opensource.allScripts</id>
+        <name>org.iets3.opensource.allScripts</name>
+        <version>1.0</version>
+        <depends>com.mbeddr.allScripts</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/languages" />
+    <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build" />
+    <mkdir dir="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar" />
+    <mkdir dir="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar/META-INF/module.xml">
+      <module namespace="org.iets3.opensource.allScripts.build" type="solution" uuid="ed0abc8f-2bd9-460c-b01c-761f3a610483">
+        <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="org.iets3.opensource.allScripts.build-src.jar" descriptor="org.iets3.opensource.allScripts.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.allScripts.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.iets3.opensource.allScripts.build" />
+      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build" includes="icons/**, resources/**" />
+      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/org.iets3.opensource.allScripts.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.allScripts.build-models">
+      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.allScripts.build-src.jar" duplicate="preserve">
+      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.allScripts.build-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/org.iets3.opensource.build.jar" />
     <mkdir dir="${build.tmp}/default/org.iets3.opensource.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.iets3.opensource.build.jar/META-INF/module.xml">
@@ -46,7 +90,7 @@
         <sources jar="org.iets3.opensource.build-src.jar" descriptor="org.iets3.opensource.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.iets3.opensource.allScripts.zip/org.iets3.opensource.build.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.iets3.opensource.build" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build" includes="icons/**, resources/**" />
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -55,7 +99,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.build-models">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.iets3.opensource.allScripts.zip/org.iets3.opensource.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.iets3.opensource.allScripts/languages/iets3.build/org.iets3.opensource.build-src.jar" duplicate="preserve">
       <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -65,9 +109,6 @@
       <zipfileset file="${iets3.os.home}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.build-models" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/org.iets3.opensource.allScripts.zip">
-      <fileset dir="${build.tmp}/default/org.iets3.opensource.allScripts.zip" />
-    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.allScripts.build.major.version=${com.mbeddr.allScripts.build.major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${com.mbeddr.allScripts.build.minor.version}${line.separator}com.mbeddr.allScripts.build.build=${com.mbeddr.allScripts.build.build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${com.mbeddr.allScripts.build.mbeddr.version}</echo>
   </target>
   
@@ -82,7 +123,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.iets3.opensource.build" />
+  <target name="compileJava" depends="java.compile.org.iets3.opensource.allScripts.build, java.compile.org.iets3.opensource.build" />
   
   <target name="processResources" />
   
@@ -95,8 +136,18 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true">
+      <plugin path="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts" />
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
+      <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/de.slisson.mps.all.build.jar" />
       <library file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
+      <library file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr.allScripts/com.mbeddr.allScripts.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -146,8 +197,10 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
+      <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+      <library file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
       <library file="${artifacts.mps}/lib/mps-core.jar" />
@@ -158,14 +211,35 @@
       <library file="${artifacts.mps}/lib/mps-test.jar" />
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
+      <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.tests.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
-      <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/mps-debugger-api/jetbrains.mps.debugger.api.lang.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/mps-debugger-java/JDK-tools.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/mps-debugger-java/jetbrains.mps.debugger.java.evaluation.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/mps-debugger-java/jetbrains.mps.debugger.java.privateMembers.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-java/lib/debugger-java.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.common.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.settings.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.baseLanguage.execution.startup.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.commands.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.pluginSolution.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
       <chunk>
+        <module file="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" />
         <module file="${iets3.os.home}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" />
       </chunk>
       <jvmargs>
@@ -183,6 +257,26 @@
   </target>
   
   <target name="makeDependents" />
+  
+  <target name="java.compile.org.iets3.opensource.allScripts.build">
+    <mkdir dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.allScripts.build" />
+    <javac destdir="${build.tmp}/java/out/org.iets3.opensource.allScripts.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr.allScripts/com.mbeddr.allScripts.jar" />
+        <fileset file="${artifacts.com.mbeddr.allScripts.build}/mbeddr.allScripts/languages/mbeddr-platform/com.mbeddr.platform.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.iets3.opensource.allScripts.build">
+      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
+  </target>
   
   <target name="java.compile.org.iets3.opensource.build">
     <mkdir dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
@@ -205,6 +299,7 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${iets3.os.home}/solutions/org.iets3.opensource.allScripts.build/source_gen" />
     <delete dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
   </target>
 </project>

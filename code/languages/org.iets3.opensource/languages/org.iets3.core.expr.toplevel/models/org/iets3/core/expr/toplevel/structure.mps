@@ -195,6 +195,9 @@
     <node concept="PrWs8" id="31yjPB$GKJm" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="2Fd5B1gx5V7" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />

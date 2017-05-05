@@ -16,6 +16,8 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -294,6 +296,9 @@
       </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -2063,6 +2068,57 @@
     <node concept="1YaCAy" id="29BBztU0jnd" role="35pZ6h">
       <property role="TrG5h" value="exp" />
       <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2Fd5B1gx$6Z">
+    <property role="TrG5h" value="check_Constant" />
+    <property role="3GE5qa" value="constant" />
+    <node concept="3clFbS" id="2Fd5B1gx$70" role="18ibNy">
+      <node concept="3cpWs8" id="RIvadv3afz" role="3cqZAp">
+        <node concept="3cpWsn" id="RIvadv3af$" role="3cpWs9">
+          <property role="TrG5h" value="elements" />
+          <node concept="2hMVRd" id="RIvadv3afp" role="1tU5fm">
+            <node concept="3Tqbb2" id="RIvadv3afs" role="2hN53Y">
+              <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="RIvadv3af_" role="33vP2m">
+            <node concept="1YBJjd" id="2Fd5B1gx$ur" role="2Oq$k0">
+              <ref role="1YBMHb" node="2Fd5B1gx$72" resolve="constant" />
+            </node>
+            <node concept="2qgKlT" id="RIvadv3afB" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:17fjvcLFUH5" resolve="getCyclicDependencyElements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="RIvadv3a$s" role="3cqZAp">
+        <node concept="3clFbS" id="RIvadv3a$u" role="3clFbx">
+          <node concept="2MkqsV" id="RIvadv3hzr" role="3cqZAp">
+            <node concept="3cpWs3" id="RIvadv3hLX" role="2MkJ7o">
+              <node concept="37vLTw" id="RIvadv3hMj" role="3uHU7w">
+                <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+              </node>
+              <node concept="Xl_RD" id="RIvadv3hzE" role="3uHU7B">
+                <property role="Xl_RC" value="cycle detected: " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="2Fd5B1gx_s7" role="2OEOjV">
+              <ref role="1YBMHb" node="2Fd5B1gx$72" resolve="constant" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="RIvadv3c6a" role="3clFbw">
+          <node concept="10Nm6u" id="RIvadv3c6y" role="3uHU7w" />
+          <node concept="37vLTw" id="RIvadv3a$V" role="3uHU7B">
+            <ref role="3cqZAo" node="RIvadv3af$" resolve="elements" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Fd5B1gx$72" role="1YuTPh">
+      <property role="TrG5h" value="constant" />
+      <ref role="1YaFvo" to="yv47:69zaTr1HgRc" resolve="Constant" />
     </node>
   </node>
 </model>

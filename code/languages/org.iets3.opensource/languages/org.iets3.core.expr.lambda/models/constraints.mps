@@ -723,21 +723,11 @@
           </node>
           <node concept="3clFbS" id="6b_jefnKy_e" role="3clFbx">
             <node concept="3cpWs6" id="6b_jefnKy_f" role="3cqZAp">
-              <node concept="22lmx$" id="6b_jefnKy_g" role="3cqZAk">
-                <node concept="2OqwBi" id="6b_jefnKy_h" role="3uHU7B">
-                  <node concept="2DD5aU" id="6b_jefnKy_s" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6b_jefnKy_j" role="2OqNvi">
-                    <node concept="chp4Y" id="6b_jefnKy_k" role="2Zo12j">
-                      <ref role="cht4Q" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6b_jefnKy_l" role="3uHU7w">
-                  <node concept="2DD5aU" id="6b_jefnKy_t" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6b_jefnKy_n" role="2OqNvi">
-                    <node concept="chp4Y" id="6b_jefnKy_o" role="2Zo12j">
-                      <ref role="cht4Q" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
-                    </node>
+              <node concept="2OqwBi" id="6b_jefnKy_h" role="3cqZAk">
+                <node concept="2DD5aU" id="6b_jefnKy_s" role="2Oq$k0" />
+                <node concept="2Zo12i" id="6b_jefnKy_j" role="2OqNvi">
+                  <node concept="chp4Y" id="2D48zR6a1f3" role="2Zo12j">
+                    <ref role="cht4Q" to="zzzn:2D48zR6a1ez" resolve="ILambdaLike" />
                   </node>
                 </node>
               </node>

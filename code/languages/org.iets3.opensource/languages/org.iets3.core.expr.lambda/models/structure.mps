@@ -110,6 +110,9 @@
     <node concept="PrWs8" id="2hmEXUnhpLB" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="2D48zR6a1eH" role="PzmwI">
+      <ref role="PrY4T" node="2D48zR6a1ez" resolve="ILambdaLike" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUkws9">
     <property role="TrG5h" value="IArgument" />
@@ -203,6 +206,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7554398283340741815" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2D48zR6a1eR" role="PzmwI">
+      <ref role="PrY4T" node="2D48zR6a1ez" resolve="ILambdaLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUmsuo">
@@ -340,6 +346,9 @@
     <node concept="PrWs8" id="22hm_0zvyIM" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
+    <node concept="PrWs8" id="2D48zR6a1GR" role="PrDN$">
+      <ref role="PrY4T" node="2D48zR6a1ez" resolve="ILambdaLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8ig5D">
     <property role="TrG5h" value="BlockExpression" />
@@ -469,6 +478,11 @@
     <property role="34LRSv" value="*" />
     <property role="EcuMT" value="7791618349055796936" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="2D48zR6a1ez">
+    <property role="EcuMT" value="3045596896722162595" />
+    <property role="3GE5qa" value="lambda" />
+    <property role="TrG5h" value="ILambdaLike" />
   </node>
 </model>
 
