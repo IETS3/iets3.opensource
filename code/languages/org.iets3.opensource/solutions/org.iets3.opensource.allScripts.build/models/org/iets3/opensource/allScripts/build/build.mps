@@ -256,6 +256,9 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="3CbQWjaRlmF" role="1l3spa">
+      <ref role="1l3spb" to="3fk:7uZw0yZ43Jk" resolve="com.mbeddr.allScripts.build" />
+    </node>
     <node concept="1l3spV" id="5wLtKNeSRRM" role="1l3spN">
       <node concept="3981dG" id="6XXe7bCzKWI" role="39821P">
         <node concept="3_J27D" id="6XXe7bCzKWJ" role="Nbhlr">
