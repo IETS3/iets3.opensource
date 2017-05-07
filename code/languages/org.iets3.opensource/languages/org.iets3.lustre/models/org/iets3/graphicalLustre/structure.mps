@@ -10,6 +10,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -22,6 +27,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -166,6 +172,9 @@
       <property role="IQ2ns" value="2196020025663654779" />
       <ref role="20lvS9" node="5EMBqZJiwtB" resolve="Wire" />
     </node>
+    <node concept="1QGGSu" id="2t6o__8zuHz" role="rwd14">
+      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.ears.gxw/icons/GXWController.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1vI3WTrmqHs">
     <property role="EcuMT" value="1724333086299761500" />
@@ -223,6 +232,9 @@
     </node>
     <node concept="PrWs8" id="5XfJimeU9wH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1QGGSu" id="2t6o__8zuHx" role="rwd14">
+      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.ears.gxw/icons/GXWGate.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5XfJimeU4Ox">
