@@ -62,13 +62,6 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
-      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
-        <child id="1225898971709" name="getter" index="1Hhtcw" />
-      </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
-        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
-      </concept>
-      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -84,15 +77,6 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -111,11 +95,6 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
@@ -148,31 +127,6 @@
           <ref role="1NtTu8" to="l80j:3DYDRw0WRuK" resolve="mode" />
           <node concept="VechU" id="3DYDRw0WRw6" role="3F10Kt">
             <property role="Vb096" value="red" />
-          </node>
-        </node>
-        <node concept="1HlG4h" id="3DYDRw0XK6c" role="3EZMnx">
-          <node concept="VechU" id="3DYDRw0XK7J" role="3F10Kt">
-            <property role="Vb096" value="red" />
-          </node>
-          <node concept="1HfYo3" id="3DYDRw0XK6e" role="1HlULh">
-            <node concept="3TQlhw" id="3DYDRw0XK6g" role="1Hhtcw">
-              <node concept="3clFbS" id="3DYDRw0XK6i" role="2VODD2">
-                <node concept="3clFbF" id="3DYDRw0XK7P" role="3cqZAp">
-                  <node concept="3K4zz7" id="3DYDRw0XKlb" role="3clFbG">
-                    <node concept="Xl_RD" id="3DYDRw0XKmG" role="3K4E3e">
-                      <property role="Xl_RC" value="[on]" />
-                    </node>
-                    <node concept="Xl_RD" id="3DYDRw0XKrv" role="3K4GZi">
-                      <property role="Xl_RC" value="[off]" />
-                    </node>
-                    <node concept="10M0yZ" id="7rOSrvnHQ9r" role="3K4Cdx">
-                      <ref role="3cqZAo" to="ich0:3DYDRw0W4Ww" resolve="useSolver" />
-                      <ref role="1PxDUh" to="ich0:3DYDRw0W4W3" resolve="SolverSwitch" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

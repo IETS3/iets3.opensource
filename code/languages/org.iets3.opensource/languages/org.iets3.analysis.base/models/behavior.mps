@@ -80,9 +80,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -863,12 +860,16 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="6ocqtOfCvHd" role="3cqZAp">
+              <node concept="3SKdUq" id="6ocqtOfCvHf" role="3SKWNk">
+                <property role="3SKdUp" value="there is no SolverSwitch any more, so &lt;auto&gt; is equivalent to &lt;always&gt;." />
+              </node>
+            </node>
             <node concept="3clFbJ" id="4bUWUHu_HU" role="3cqZAp">
               <node concept="3clFbS" id="4bUWUHu_HW" role="3clFbx">
                 <node concept="3cpWs6" id="4bUWUHuBGY" role="3cqZAp">
-                  <node concept="10M0yZ" id="7rOSrvnHQ9n" role="3cqZAk">
-                    <ref role="1PxDUh" to="ich0:3DYDRw0W4W3" resolve="SolverSwitch" />
-                    <ref role="3cqZAo" to="ich0:3DYDRw0W4Ww" resolve="useSolver" />
+                  <node concept="3clFbT" id="6ocqtOfCuoY" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -896,14 +897,11 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4bUWUHuRYO" role="3cqZAp" />
-        <node concept="3clFbF" id="4bUWUHuRxF" role="3cqZAp">
-          <node concept="10M0yZ" id="4bUWUHuRxH" role="3clFbG">
-            <ref role="3cqZAo" to="ich0:3DYDRw0W4Ww" resolve="useSolver" />
-            <ref role="1PxDUh" to="ich0:3DYDRw0W4W3" resolve="SolverSwitch" />
+        <node concept="3cpWs6" id="6ocqtOfCuCi" role="3cqZAp">
+          <node concept="3clFbT" id="6ocqtOfCuR1" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
-        <node concept="3clFbH" id="4bUWUHuRv2" role="3cqZAp" />
       </node>
     </node>
   </node>
