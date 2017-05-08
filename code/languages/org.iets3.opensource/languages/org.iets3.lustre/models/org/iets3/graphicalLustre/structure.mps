@@ -234,7 +234,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1QGGSu" id="2t6o__8zuHx" role="rwd14">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.ears.gxw/icons/GXWGate.png" />
+      <property role="1iqoE4" value="${module}/icons/GXWController.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5XfJimeU4Ox">
@@ -248,6 +248,9 @@
     </node>
     <node concept="PrWs8" id="5XfJimeU5ql" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1QGGSu" id="6KwmyS5AaU8" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/GXWGate.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="xNs95uNWKK">
