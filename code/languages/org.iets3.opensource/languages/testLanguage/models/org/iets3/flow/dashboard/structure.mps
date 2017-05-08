@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="47lw" ref="r:afc6f445-2ccb-416f-bf5b-6cd26b99557c(org.iets3.process.modelproperty.formulae.structure)" implicit="true" />
+    <import index="47lw" ref="r:afc6f445-2ccb-416f-bf5b-6cd26b99557c(org.iets3.flow.modelproperty.formulae.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -74,7 +74,7 @@
       <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
     </node>
     <node concept="1QGGSu" id="27rUs5Ge36r" role="rwd14">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/flow/icons/F.png" />
+      <property role="1iqoE4" value="${module}/icons/F.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5cR9puhF2lu">
@@ -157,7 +157,7 @@
       <ref role="20lvS9" node="3HvtPSdglG0" resolve="FlowData" />
     </node>
     <node concept="1QGGSu" id="27rUs5Ge36p" role="rwd14">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/flow/icons/D.png" />
+      <property role="1iqoE4" value="${module}/icons/D.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7c_wSf79K0w">
