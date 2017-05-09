@@ -277,6 +277,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -707,6 +708,27 @@
           <ref role="1NtTu8" to="hm2y:7NJy08a3O9b" resolve="target" />
         </node>
         <node concept="2iRfu4" id="7NJy08a3OaJ" role="2iSdaV" />
+      </node>
+    </node>
+    <node concept="1HlG4h" id="3hsdwqFFUSd" role="6VMZX">
+      <node concept="1HfYo3" id="3hsdwqFFUSe" role="1HlULh">
+        <node concept="3TQlhw" id="3hsdwqFFUSf" role="1Hhtcw">
+          <node concept="3clFbS" id="3hsdwqFFUSg" role="2VODD2">
+            <node concept="3clFbF" id="3hsdwqFFV55" role="3cqZAp">
+              <node concept="3cpWs3" id="3hsdwqFFWri" role="3clFbG">
+                <node concept="Xl_RD" id="3hsdwqFFWro" role="3uHU7w">
+                  <property role="Xl_RC" value="" />
+                </node>
+                <node concept="2OqwBi" id="3hsdwqFFVlT" role="3uHU7B">
+                  <node concept="pncrf" id="3hsdwqFFV54" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3hsdwqFFVLO" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
