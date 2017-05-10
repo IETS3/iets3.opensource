@@ -76,6 +76,12 @@
     <node concept="1QGGSu" id="27rUs5Ge36r" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/F.png" />
     </node>
+    <node concept="1TJgyj" id="Wl5guSs0yw" role="1TKVEi">
+      <property role="IQ2ns" value="1086798007983147168" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="furthestVisitedState" />
+      <ref role="20lvS9" node="5cR9puhF2lu" resolve="State" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cR9puhF2lu">
     <property role="EcuMT" value="5996302761781372254" />
@@ -100,6 +106,16 @@
       <property role="IQ2nx" value="8297182490512160219" />
       <property role="TrG5h" value="mode" />
       <ref role="AX2Wp" node="7c_wSf7Bhjq" resolve="FlowStateMode" />
+    </node>
+    <node concept="1TJgyi" id="Wl5guSdqHS" role="1TKVEl">
+      <property role="IQ2nx" value="1086798007979322232" />
+      <property role="TrG5h" value="isSatisfied" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="Wl5guSexyM" role="1TKVEl">
+      <property role="IQ2nx" value="1086798007979612338" />
+      <property role="TrG5h" value="wentBackState" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="5cR9puhFRxn" role="1TKVEi">
       <property role="IQ2ns" value="5996302761781590103" />
