@@ -17,7 +17,7 @@
       <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.modelproperty.mpl" folder="flow" />
+      <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.modelproperty.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/earsPlus.mpl" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/sandbox/earsPlus.sandbox.msd" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
