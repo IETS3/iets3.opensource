@@ -2703,20 +2703,6 @@
             </node>
             <node concept="3clFbH" id="3q$2SldUhiV" role="3cqZAp" />
             <node concept="3clFbH" id="3q$2SldV4b0" role="3cqZAp" />
-            <node concept="3clFbH" id="3q$2SldUhq$" role="3cqZAp" />
-            <node concept="3clFbF" id="3q$2SldUeYH" role="3cqZAp">
-              <node concept="2OqwBi" id="3q$2SldUeYI" role="3clFbG">
-                <node concept="37vLTw" id="3q$2SldUeYJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                </node>
-                <node concept="liA8E" id="3q$2SldUeYK" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="Xl_RD" id="3q$2SldUeYL" role="37wK5m">
-                    <property role="Xl_RC" value="  " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="3q$2SldUfi$" role="3cqZAp">
               <node concept="2OqwBi" id="3q$2SldUfi_" role="3clFbG">
                 <node concept="37vLTw" id="3q$2SldUfiA" role="2Oq$k0">
@@ -2730,7 +2716,75 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="1LmummRLMT9" role="3cqZAp">
+              <node concept="2OqwBi" id="1LmummRLMTa" role="3clFbG">
+                <node concept="37vLTw" id="1LmummRLMTb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                </node>
+                <node concept="liA8E" id="1LmummRLMTc" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="1LmummRLMTd" role="37wK5m">
+                    <property role="Xl_RC" value="cset = getConfigSet('simulinkModel', 'Configuration'); \n " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1LmummRLPjk" role="3cqZAp">
+              <node concept="2OqwBi" id="1LmummRLPjl" role="3clFbG">
+                <node concept="37vLTw" id="1LmummRLPjm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                </node>
+                <node concept="liA8E" id="1LmummRLPjn" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="1LmummRLPjo" role="37wK5m">
+                    <property role="Xl_RC" value="set_param (cset, 'StopTime', '0'); \n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1LmummRLRIz" role="3cqZAp">
+              <node concept="2OqwBi" id="1LmummRLRI$" role="3clFbG">
+                <node concept="37vLTw" id="1LmummRLRI_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                </node>
+                <node concept="liA8E" id="1LmummRLRIA" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="1LmummRLRIB" role="37wK5m">
+                    <property role="Xl_RC" value="set_param (cset, 'StartTime', '0'); \n " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1LmummRLT3y" role="3cqZAp">
+              <node concept="2OqwBi" id="1LmummRLT3z" role="3clFbG">
+                <node concept="37vLTw" id="1LmummRLT3$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                </node>
+                <node concept="liA8E" id="1LmummRLT3_" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="1LmummRLT3A" role="37wK5m">
+                    <property role="Xl_RC" value="[t,x,y] = sim('simulinkModel');  \n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1LmummRLUrU" role="3cqZAp">
+              <node concept="2OqwBi" id="1LmummRLUrV" role="3clFbG">
+                <node concept="37vLTw" id="1LmummRLUrW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                </node>
+                <node concept="liA8E" id="1LmummRLUrX" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="1LmummRLUrY" role="37wK5m">
+                    <property role="Xl_RC" value="  " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1LmummRLQld" role="3cqZAp" />
+            <node concept="3clFbH" id="1LmummRLO49" role="3cqZAp" />
             <node concept="3clFbH" id="3q$2SlejYHk" role="3cqZAp" />
+            <node concept="3clFbH" id="1LmummRLLBH" role="3cqZAp" />
             <node concept="3clFbH" id="3q$2Sle8HpA" role="3cqZAp" />
             <node concept="3clFbF" id="3q$2Sle8Ijn" role="3cqZAp">
               <node concept="2OqwBi" id="3q$2Sle8Ijo" role="3clFbG">
