@@ -99,7 +99,6 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
-      <concept id="6592112598314499051" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginContent" flags="ng" index="m$_yg" />
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -490,7 +489,6 @@
       <node concept="m$f5U" id="5wLtKNeT2TG" role="m$_yh">
         <ref role="m$f5T" node="5wLtKNeSRRC" resolve="iets3.req.os" />
       </node>
-      <node concept="m$_yg" id="408CVmKBcgO" role="m$_yh" />
       <node concept="m$_yC" id="5wLtKNeT2TH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
