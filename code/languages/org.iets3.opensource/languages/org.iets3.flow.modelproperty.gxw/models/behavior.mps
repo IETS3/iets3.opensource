@@ -16,6 +16,8 @@
     <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
     <import index="os8l" ref="r:6fc3aa77-cd90-42e4-a961-8adeac76afb8(org.iets3.ears.gxw.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="a8nw" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.usages(MPS.IDEA/)" />
+    <import index="69ni" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.internal.statistic.beans(MPS.IDEA/)" />
     <import index="hxma" ref="r:afc3de6c-6429-4bb9-b26d-918b8ae8822c(org.iets3.flow.modelproperty.gxw.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -1277,8 +1279,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="5lB8QV$yQzu" role="3cqZAp" />
-        <node concept="3clFbH" id="5lB8QV$yQzv" role="3cqZAp" />
-        <node concept="3clFbH" id="5lB8QV$yQzw" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="5lB8QV$yQzx" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />

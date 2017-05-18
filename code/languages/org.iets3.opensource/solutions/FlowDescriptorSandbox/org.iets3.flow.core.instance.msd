@@ -16,8 +16,10 @@
     <dependency reexport="false">8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)</dependency>
     <dependency reexport="false">7a870bb7-87b6-411e-92c2-eb3e9e856127(org.iets3.req.priority)</dependency>
     <dependency reexport="false">3e3749e5-96c0-4132-8c4a-7309a74f9fd6(org.iets3.flow.modelproperty.gxw)</dependency>
+    <dependency reexport="false">89749848-cf4d-49ab-8c2b-7275de1b311d(StatesTruthTable)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:89749848-cf4d-49ab-8c2b-7275de1b311d:StatesTruthTable" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2374bc90-7e37-41f1-a9c4-c2e35194c36a:com.mbeddr.doc" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -60,6 +62,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="89749848-cf4d-49ab-8c2b-7275de1b311d(StatesTruthTable)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
