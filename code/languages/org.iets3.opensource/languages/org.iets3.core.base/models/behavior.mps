@@ -660,6 +660,20 @@
       </node>
       <node concept="10P_77" id="6MJy$PGsBYd" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="3ugRfIRApt7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isManualCheckAvaillable" />
+      <node concept="3Tm1VV" id="3ugRfIRApt8" role="1B3o_S" />
+      <node concept="10P_77" id="3ugRfIRApCx" role="3clF45" />
+      <node concept="3clFbS" id="3ugRfIRApta" role="3clF47">
+        <node concept="3clFbF" id="3ugRfIRAq4t" role="3cqZAp">
+          <node concept="3clFbT" id="3ugRfIRAq4s" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3R3AIvumrTm" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

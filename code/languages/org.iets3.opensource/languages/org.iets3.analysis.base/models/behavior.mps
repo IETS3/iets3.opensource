@@ -904,6 +904,22 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3ugRfIRAuHT" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isManualCheckAvaillable" />
+      <ref role="13i0hy" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+      <node concept="3Tm1VV" id="3ugRfIRAuHU" role="1B3o_S" />
+      <node concept="3clFbS" id="3ugRfIRAuHW" role="3clF47">
+        <node concept="3clFbF" id="3ugRfIRAvWe" role="3cqZAp">
+          <node concept="2YIFZM" id="3ugRfIRAD7c" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:3ugRfIRAw1$" resolve="areFactoriesAvaillable" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3ugRfIRAvz_" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7rOSrvnGeUF">
     <property role="3GE5qa" value="adapter" />
