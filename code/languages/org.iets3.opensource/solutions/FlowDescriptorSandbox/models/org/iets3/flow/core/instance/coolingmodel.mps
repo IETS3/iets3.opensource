@@ -13,10 +13,11 @@
     <use id="7a870bb7-87b6-411e-92c2-eb3e9e856127" name="org.iets3.req.priority" version="-1" />
     <use id="f0094c7d-7df0-4fa9-9be7-4ba73a8db962" name="org.iets3.table.coolingbehaviortable" version="-1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
+    <use id="89749848-cf4d-49ab-8c2b-7275de1b311d" name="StatesTruthTable" version="0" />
   </languages>
   <imports>
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
-    <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.modelproperty.structure)" />
+    <import index="oehh" ref="r:0e362b8d-d9a6-45f0-9d73-14f8c7b5dfd0(org.iets3.flow.modelproperty.req.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
@@ -39,6 +40,15 @@
       </concept>
       <concept id="7571185389806664458" name="org.iets3.flow.modelproperty.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
+      </concept>
+    </language>
+    <language id="89749848-cf4d-49ab-8c2b-7275de1b311d" name="StatesTruthTable">
+      <concept id="8029187915077752333" name="StatesTruthTable.structure.PropertyRow" flags="ng" index="Avf7j">
+        <reference id="1496150855407672407" name="AffectedConcept" index="2YeZ$h" />
+        <reference id="1496150855407672378" name="Property" index="2YeZ_W" />
+      </concept>
+      <concept id="1496150855407671845" name="StatesTruthTable.structure.StateTurth" flags="ng" index="2YeZXz">
+        <child id="8029187915077752337" name="listofPropertyRows" index="Avf7f" />
       </concept>
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
@@ -269,6 +279,32 @@
         <property role="2V$B1T" value="10211132-9b5e-427a-9b37-1c1f28794a5e" />
         <property role="2V$B1Q" value="org.iets3.flow.dashboard" />
       </node>
+    </node>
+  </node>
+  <node concept="2YeZXz" id="6XHpXT964$o">
+    <node concept="Avf7j" id="6XHpXT964$p" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+      <ref role="2YeZ$h" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+    </node>
+    <node concept="Avf7j" id="6XHpXT964$q" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+      <ref role="2YeZ$h" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
+    </node>
+    <node concept="Avf7j" id="6XHpXT964$r" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+      <ref role="2YeZ$h" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+    </node>
+    <node concept="Avf7j" id="6XHpXT964$s" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+      <ref role="2YeZ$h" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
+    </node>
+    <node concept="Avf7j" id="6XHpXT964$t" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
+      <ref role="2YeZ$h" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
+    </node>
+    <node concept="Avf7j" id="6XHpXT964$u" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
+      <ref role="2YeZ$h" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
     </node>
   </node>
 </model>

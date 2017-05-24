@@ -635,6 +635,30 @@
           <node concept="3clFbS" id="2fMLJI1ci1n" role="2LFqv$">
             <node concept="3clFbJ" id="2fMLJI1cic3" role="3cqZAp">
               <node concept="3clFbS" id="2fMLJI1cic5" role="3clFbx">
+                <node concept="3cpWs8" id="6XHpXT943BE" role="3cqZAp">
+                  <node concept="3cpWsn" id="6XHpXT943BF" role="3cpWs9">
+                    <property role="TrG5h" value="properties" />
+                    <node concept="3uibUv" id="6XHpXT943B7" role="1tU5fm">
+                      <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
+                      <node concept="3uibUv" id="6XHpXT943Ba" role="11_B2D">
+                        <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6XHpXT943BG" role="33vP2m">
+                      <node concept="2GrUjf" id="6XHpXT943BH" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2fMLJI1ci1j" resolve="item" />
+                      </node>
+                      <node concept="liA8E" id="6XHpXT943BI" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties():java.util.Collection" resolve="getProperties" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6XHpXT942Db" role="3cqZAp">
+                  <node concept="37vLTw" id="6XHpXT943BJ" role="3clFbG">
+                    <ref role="3cqZAo" node="6XHpXT943BF" resolve="properties" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="2fMLJI1clQH" role="3cqZAp">
                   <node concept="2YIFZM" id="2fMLJI1cmpB" role="3cqZAk">
                     <ref role="37wK5l" to="i8bi:1EtdPNugPPg" resolve="createNewNode" />
