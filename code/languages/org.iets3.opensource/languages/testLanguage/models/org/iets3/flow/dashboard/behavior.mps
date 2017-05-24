@@ -96,6 +96,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -190,6 +191,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -258,8 +261,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1538,6 +1551,61 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3E5ROq2xfpq" role="3cqZAp" />
+        <node concept="3SKdUt" id="3E5ROq2vrcu" role="3cqZAp">
+          <node concept="3SKdUq" id="3E5ROq2vrcw" role="3SKWNk">
+            <property role="3SKdUp" value="check if the furthest reached state is still satisfied, otherwise set the" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3E5ROq2vBDs" role="3cqZAp">
+          <node concept="3SKdUq" id="3E5ROq2vBDu" role="3SKWNk">
+            <property role="3SKdUp" value="current reached state to the furthest reached state" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3E5ROq2vDHF" role="3cqZAp" />
+        <node concept="1X3_iC" id="5QC08hNYGqk" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="3E5ROq2vNuj" role="8Wnug">
+            <node concept="3clFbS" id="3E5ROq2vNul" role="3clFbx">
+              <node concept="3clFbF" id="3E5ROq2vZ_f" role="3cqZAp">
+                <node concept="37vLTI" id="3E5ROq2w0Fz" role="3clFbG">
+                  <node concept="37vLTw" id="3E5ROq2w14G" role="37vLTx">
+                    <ref role="3cqZAo" node="3E5ROq2soQw" resolve="singleCurrentState" />
+                  </node>
+                  <node concept="2OqwBi" id="3E5ROq2vZTl" role="37vLTJ">
+                    <node concept="37vLTw" id="3E5ROq2vZ_d" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7c_wSf7K38H" resolve="flowData" />
+                    </node>
+                    <node concept="3TrEf2" id="3E5ROq2w0io" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xwgo:Wl5guSs0yw" resolve="furthestVisitedState" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="3E5ROq2wnh0" role="3clFbw">
+              <node concept="1rXfSq" id="3E5ROq2wnh2" role="3fr31v">
+                <ref role="37wK5l" node="23Wc6usTWxK" resolve="isFormulaSatisfied" />
+                <node concept="2OqwBi" id="3E5ROq2wnh3" role="37wK5m">
+                  <node concept="2OqwBi" id="3E5ROq2wnh4" role="2Oq$k0">
+                    <node concept="37vLTw" id="3E5ROq2wnh5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7c_wSf7K38H" resolve="flowData" />
+                    </node>
+                    <node concept="3TrEf2" id="3E5ROq2wnh6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xwgo:Wl5guSs0yw" resolve="furthestVisitedState" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3E5ROq2wnh7" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xwgo:5cR9puhFRxn" resolve="formula" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3E5ROq2v_uX" role="3cqZAp" />
+        <node concept="3clFbH" id="3E5ROq2xfsE" role="3cqZAp" />
         <node concept="3clFbH" id="7c_wSf7NWYB" role="3cqZAp" />
         <node concept="3SKdUt" id="7c_wSf7PWHG" role="3cqZAp">
           <node concept="3SKdUq" id="7c_wSf7PWHI" role="3SKWNk">
@@ -1806,21 +1874,119 @@
           </node>
         </node>
         <node concept="3clFbH" id="6nILHkGOodX" role="3cqZAp" />
-        <node concept="3clFbH" id="7c_wSf7QOJC" role="3cqZAp" />
         <node concept="3SKdUt" id="7c_wSf7TUbA" role="3cqZAp">
           <node concept="3SKdUq" id="7c_wSf7TUbC" role="3SKWNk">
-            <property role="3SKdUp" value="return the current state" />
+            <property role="3SKdUp" value="find the (only) current state" />
           </node>
         </node>
+        <node concept="3cpWs8" id="3E5ROq2soQt" role="3cqZAp">
+          <node concept="3cpWsn" id="3E5ROq2soQw" role="3cpWs9">
+            <property role="TrG5h" value="singleCurrentState" />
+            <node concept="3Tqbb2" id="3E5ROq2soQr" role="1tU5fm">
+              <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+            </node>
+            <node concept="10Nm6u" id="3E5ROq2ss1B" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3E5ROq2r1sW" role="3cqZAp" />
+        <node concept="3clFbJ" id="3E5ROq2rDBs" role="3cqZAp">
+          <node concept="3clFbS" id="3E5ROq2rDBu" role="3clFbx">
+            <node concept="3SKdUt" id="3E5ROq2s6rZ" role="3cqZAp">
+              <node concept="3SKdUq" id="3E5ROq2s6s1" role="3SKWNk">
+                <property role="3SKdUp" value="if there are more than one state, this means that multiple paths lead" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="3E5ROq2s6DE" role="3cqZAp">
+              <node concept="3SKdUq" id="3E5ROq2s6DG" role="3SKWNk">
+                <property role="3SKdUp" value="to collecting more than one state. In this case we are only interested" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="3E5ROq2s6Rp" role="3cqZAp">
+              <node concept="3SKdUq" id="3E5ROq2s6Rr" role="3SKWNk">
+                <property role="3SKdUp" value="in the wentback state, because the other ones were paths that were reached" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="3E5ROq2s75c" role="3cqZAp">
+              <node concept="3SKdUq" id="3E5ROq2s75e" role="3SKWNk">
+                <property role="3SKdUp" value="reached before" />
+              </node>
+            </node>
+            <node concept="2Gpval" id="3E5ROq2s8oA" role="3cqZAp">
+              <node concept="2GrKxI" id="3E5ROq2s8oC" role="2Gsz3X">
+                <property role="TrG5h" value="state" />
+              </node>
+              <node concept="37vLTw" id="3E5ROq2s8JO" role="2GsD0m">
+                <ref role="3cqZAo" node="7c_wSf7PK8J" resolve="currentStates" />
+              </node>
+              <node concept="3clFbS" id="3E5ROq2s8oG" role="2LFqv$">
+                <node concept="3clFbJ" id="3E5ROq2s8YB" role="3cqZAp">
+                  <node concept="2OqwBi" id="3E5ROq2s9B3" role="3clFbw">
+                    <node concept="2GrUjf" id="3E5ROq2s9j7" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3E5ROq2s8oC" resolve="state" />
+                    </node>
+                    <node concept="3TrcHB" id="3E5ROq2s9NH" role="2OqNvi">
+                      <ref role="3TsBF5" to="xwgo:Wl5guSexyM" resolve="wentBackState" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="3E5ROq2s8YD" role="3clFbx">
+                    <node concept="3clFbF" id="3E5ROq2sci9" role="3cqZAp">
+                      <node concept="37vLTI" id="3E5ROq2sCtn" role="3clFbG">
+                        <node concept="2GrUjf" id="3E5ROq2sCPi" role="37vLTx">
+                          <ref role="2Gs0qQ" node="3E5ROq2s8oC" resolve="state" />
+                        </node>
+                        <node concept="37vLTw" id="3E5ROq2sC7N" role="37vLTJ">
+                          <ref role="3cqZAo" node="3E5ROq2soQw" resolve="singleCurrentState" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="3E5ROq2s49K" role="3clFbw">
+            <node concept="2OqwBi" id="3E5ROq2rMv7" role="3uHU7B">
+              <node concept="liA8E" id="3E5ROq2rSe3" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+              </node>
+              <node concept="37vLTw" id="3E5ROq2s7I5" role="2Oq$k0">
+                <ref role="3cqZAo" node="7c_wSf7PK8J" resolve="currentStates" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="3E5ROq2s46r" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="3E5ROq2sulP" role="9aQIa">
+            <node concept="3clFbS" id="3E5ROq2sulQ" role="9aQI4">
+              <node concept="3clFbF" id="3E5ROq2swIl" role="3cqZAp">
+                <node concept="37vLTI" id="3E5ROq2sx3W" role="3clFbG">
+                  <node concept="1y4W85" id="3E5ROq2sBfn" role="37vLTx">
+                    <node concept="3cmrfG" id="3E5ROq2sBu7" role="1y58nS">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="37vLTw" id="3E5ROq2sxrR" role="1y566C">
+                      <ref role="3cqZAo" node="7c_wSf7PK8J" resolve="currentStates" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3E5ROq2sBDs" role="37vLTJ">
+                    <ref role="3cqZAo" node="3E5ROq2soQw" resolve="singleCurrentState" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3E5ROq2voYT" role="3cqZAp" />
         <node concept="3clFbF" id="7c_wSf7Oa4W" role="3cqZAp">
           <node concept="2OqwBi" id="7c_wSf7OcEQ" role="3clFbG">
             <node concept="37vLTw" id="7c_wSf7Oa4U" role="2Oq$k0">
               <ref role="3cqZAo" node="7c_wSf7NTY0" resolve="res" />
             </node>
             <node concept="liA8E" id="7c_wSf7Oh2$" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
-              <node concept="37vLTw" id="7c_wSf7PVh5" role="37wK5m">
-                <ref role="3cqZAo" node="7c_wSf7PK8J" resolve="currentStates" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="3E5ROq2sGLP" role="37wK5m">
+                <ref role="3cqZAo" node="3E5ROq2soQw" resolve="singleCurrentState" />
               </node>
             </node>
           </node>
@@ -1895,20 +2061,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="7KNWAZcEqof" role="3cqZAp" />
-        <node concept="3cpWs8" id="7KNWAZcDUem" role="3cqZAp">
-          <node concept="3cpWsn" id="7KNWAZcDUep" role="3cpWs9">
-            <property role="TrG5h" value="currentStateIsFlipped" />
-            <node concept="10P_77" id="7KNWAZcDUek" role="1tU5fm" />
-            <node concept="3clFbT" id="7KNWAZcDX1$" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7KNWAZcDZkQ" role="3cqZAp">
-          <node concept="3cpWsn" id="7KNWAZcDZkT" role="3cpWs9">
-            <property role="TrG5h" value="foundStateLocally" />
-            <node concept="10P_77" id="7KNWAZcDZkO" role="1tU5fm" />
-            <node concept="3clFbT" id="7KNWAZcE1GS" role="33vP2m">
+        <node concept="3cpWs8" id="Wl5guSeOAF" role="3cqZAp">
+          <node concept="3cpWsn" id="Wl5guSeOAI" role="3cpWs9">
+            <property role="TrG5h" value="isFlippedState" />
+            <node concept="10P_77" id="Wl5guSeOAD" role="1tU5fm" />
+            <node concept="3clFbT" id="Wl5guSeP$8" role="33vP2m">
               <property role="3clFbU" value="false" />
             </node>
           </node>
@@ -1923,16 +2080,6 @@
           </node>
           <node concept="3clFbS" id="7c_wSf7v4s$" role="2LFqv$">
             <node concept="3clFbH" id="MCudDIkckD" role="3cqZAp" />
-            <node concept="3cpWs8" id="Wl5guSeOAF" role="3cqZAp">
-              <node concept="3cpWsn" id="Wl5guSeOAI" role="3cpWs9">
-                <property role="TrG5h" value="isFlippedState" />
-                <node concept="10P_77" id="Wl5guSeOAD" role="1tU5fm" />
-                <node concept="3clFbT" id="Wl5guSeP$8" role="33vP2m">
-                  <property role="3clFbU" value="false" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7KNWAZcDOZ7" role="3cqZAp" />
             <node concept="3clFbF" id="6nILHkGYgMK" role="3cqZAp">
               <node concept="2OqwBi" id="6nILHkGYgMH" role="3clFbG">
                 <node concept="10M0yZ" id="6nILHkGYgMI" role="2Oq$k0">
@@ -2120,8 +2267,8 @@
                         <node concept="3clFbT" id="7KNWAZcE4_p" role="37vLTx">
                           <property role="3clFbU" value="true" />
                         </node>
-                        <node concept="37vLTw" id="7KNWAZcE2WR" role="37vLTJ">
-                          <ref role="3cqZAo" node="7KNWAZcDZkT" resolve="foundStateLocally" />
+                        <node concept="37vLTw" id="3E5ROq2pv3A" role="37vLTJ">
+                          <ref role="3cqZAo" node="Wl5guSeOAI" resolve="isFlippedState" />
                         </node>
                       </node>
                     </node>
@@ -2138,6 +2285,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3zACq4" id="3E5ROq2ppYl" role="3cqZAp" />
                     <node concept="3clFbH" id="7KNWAZcEw5e" role="3cqZAp" />
                   </node>
                   <node concept="22lmx$" id="Wl5guSfmuo" role="3clFbw">
@@ -2264,6 +2412,11 @@
                         </node>
                         <node concept="9aQIb" id="7KNWAZcD4P0" role="9aQIa">
                           <node concept="3clFbS" id="7KNWAZcD4P1" role="9aQI4">
+                            <node concept="3SKdUt" id="3E5ROq2qZhI" role="3cqZAp">
+                              <node concept="3SKdUq" id="3E5ROq2qZhK" role="3SKWNk">
+                                <property role="3SKdUp" value="select " />
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="7KNWAZcD4P2" role="3cqZAp">
                               <node concept="2OqwBi" id="7KNWAZcD4P3" role="3clFbG">
                                 <node concept="37vLTw" id="7KNWAZcD4P4" role="2Oq$k0">
@@ -2473,35 +2626,34 @@
           </node>
         </node>
         <node concept="3clFbH" id="7KNWAZcEogo" role="3cqZAp" />
-        <node concept="3clFbJ" id="7KNWAZcE9eR" role="3cqZAp">
-          <node concept="3clFbS" id="7KNWAZcE9eT" role="3clFbx">
-            <node concept="3clFbH" id="7KNWAZcEf2R" role="3cqZAp" />
-            <node concept="3cpWs8" id="Wl5guSdF5H" role="3cqZAp">
-              <node concept="3cpWsn" id="Wl5guSdF5K" role="3cpWs9">
-                <property role="TrG5h" value="visitedStates" />
-                <property role="3TUv4t" value="true" />
-                <node concept="1rXfSq" id="Wl5guSdF5L" role="33vP2m">
-                  <ref role="37wK5l" node="7c_wSf7LQkr" resolve="collectAllPreviousStates" />
-                  <node concept="1rXfSq" id="Wl5guSdF5M" role="37wK5m">
-                    <ref role="37wK5l" node="7c_wSf7y4KA" resolve="collectImmediatePreviousStates" />
-                    <node concept="2OqwBi" id="Wl5guSdYYe" role="37wK5m">
-                      <node concept="37vLTw" id="Wl5guSdYAp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7c_wSf7K38H" resolve="flowData" />
-                      </node>
-                      <node concept="3TrEf2" id="Wl5guSdZeT" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xwgo:Wl5guSs0yw" resolve="furthestVisitedState" />
-                      </node>
-                    </node>
+        <node concept="3cpWs8" id="Wl5guSdF5H" role="3cqZAp">
+          <node concept="3cpWsn" id="Wl5guSdF5K" role="3cpWs9">
+            <property role="TrG5h" value="visitedStates" />
+            <property role="3TUv4t" value="true" />
+            <node concept="1rXfSq" id="Wl5guSdF5L" role="33vP2m">
+              <ref role="37wK5l" node="7c_wSf7LQkr" resolve="collectAllPreviousStates" />
+              <node concept="1rXfSq" id="Wl5guSdF5M" role="37wK5m">
+                <ref role="37wK5l" node="7c_wSf7y4KA" resolve="collectImmediatePreviousStates" />
+                <node concept="2OqwBi" id="Wl5guSdYYe" role="37wK5m">
+                  <node concept="37vLTw" id="Wl5guSdYAp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7c_wSf7K38H" resolve="flowData" />
                   </node>
-                </node>
-                <node concept="_YKpA" id="Wl5guSdF5Q" role="1tU5fm">
-                  <node concept="3Tqbb2" id="Wl5guSdF5R" role="_ZDj9">
-                    <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+                  <node concept="3TrEf2" id="Wl5guSdZeT" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xwgo:Wl5guSs0yw" resolve="furthestVisitedState" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="7KNWAZcEhIb" role="3cqZAp" />
+            <node concept="_YKpA" id="Wl5guSdF5Q" role="1tU5fm">
+              <node concept="3Tqbb2" id="Wl5guSdF5R" role="_ZDj9">
+                <ref role="ehGHo" to="xwgo:5cR9puhF2lu" resolve="State" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3E5ROq2p_Ye" role="3cqZAp" />
+        <node concept="3clFbJ" id="7KNWAZcE9eR" role="3cqZAp">
+          <node concept="3clFbS" id="7KNWAZcE9eT" role="3clFbx">
             <node concept="3SKdUt" id="Wl5guSeGIf" role="3cqZAp">
               <node concept="3SKdUq" id="Wl5guSeGIh" role="3SKWNk">
                 <property role="3SKdUp" value="if the state is among the predecessors of the state that was the furthest" />
@@ -2571,33 +2723,23 @@
                   </node>
                 </node>
               </node>
-              <node concept="1Wc70l" id="7KNWAZcDfjm" role="3clFbw">
-                <node concept="37vLTw" id="7KNWAZcE4LK" role="3uHU7w">
-                  <ref role="3cqZAo" node="7KNWAZcDUep" resolve="currentStateIsFlipped" />
+              <node concept="2OqwBi" id="Wl5guSehLr" role="3clFbw">
+                <node concept="37vLTw" id="Wl5guSefdw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="Wl5guSdF5K" resolve="visitedStates" />
                 </node>
-                <node concept="2OqwBi" id="Wl5guSehLr" role="3uHU7B">
-                  <node concept="37vLTw" id="Wl5guSefdw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="Wl5guSdF5K" resolve="visitedStates" />
-                  </node>
-                  <node concept="3JPx81" id="Wl5guSem9m" role="2OqNvi">
-                    <node concept="1y4W85" id="Wl5guSebR8" role="25WWJ7">
-                      <node concept="3cmrfG" id="Wl5guSecE8" role="1y58nS">
-                        <property role="3cmrfH" value="0" />
-                      </node>
-                      <node concept="37vLTw" id="Wl5guSe3NV" role="1y566C">
-                        <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
-                      </node>
+                <node concept="3JPx81" id="Wl5guSem9m" role="2OqNvi">
+                  <node concept="1y4W85" id="Wl5guSebR8" role="25WWJ7">
+                    <node concept="3cmrfG" id="Wl5guSecE8" role="1y58nS">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="37vLTw" id="Wl5guSe3NV" role="1y566C">
+                      <ref role="3cqZAo" node="7c_wSf7wMKa" resolve="res" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="9aQIb" id="Wl5guSfznv" role="9aQIa">
-                <node concept="3clFbS" id="Wl5guSfznw" role="9aQI4">
-                  <node concept="3SKdUt" id="Wl5guSfFmt" role="3cqZAp">
-                    <node concept="3SKdUq" id="Wl5guSfFmv" role="3SKWNk">
-                      <property role="3SKdUp" value="if it not among the predecessors, then it is the furthest visited state" />
-                    </node>
-                  </node>
+              <node concept="9aQIb" id="3E5ROq2pyfH" role="9aQIa">
+                <node concept="3clFbS" id="3E5ROq2pyfI" role="9aQI4">
                   <node concept="3clFbF" id="Wl5guSrlkd" role="3cqZAp">
                     <node concept="2OqwBi" id="Wl5guSrlke" role="3clFbG">
                       <node concept="2OqwBi" id="Wl5guSrlkf" role="2Oq$k0">
@@ -2657,8 +2799,8 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="7KNWAZcEbDe" role="3clFbw">
-            <ref role="3cqZAo" node="7KNWAZcDZkT" resolve="foundStateLocally" />
+          <node concept="37vLTw" id="3E5ROq2pwlv" role="3clFbw">
+            <ref role="3cqZAo" node="Wl5guSeOAI" resolve="isFlippedState" />
           </node>
         </node>
         <node concept="3clFbH" id="Wl5guSdZkB" role="3cqZAp" />
