@@ -35,7 +35,6 @@
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
         <language slang="l:3e3749e5-96c0-4132-8c4a-7309a74f9fd6:org.iets3.flow.modelproperty.gxw" version="-1" />
-        <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.modelproperty" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -45,9 +44,9 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)" version="0" />
         <module reference="3e3749e5-96c0-4132-8c4a-7309a74f9fd6(org.iets3.flow.modelproperty.gxw)" version="0" />
         <module reference="e7c9c18a-52ce-462d-8df2-2908da845f27(org.iets3.flow.modelproperty.gxw#6153926375007800109)" version="0" />
+        <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty.req)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
