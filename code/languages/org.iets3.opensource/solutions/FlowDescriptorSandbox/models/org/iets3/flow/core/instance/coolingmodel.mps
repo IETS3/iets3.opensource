@@ -26,6 +26,8 @@
     <import index="8s0y" ref="r:50155ec7-8748-4b4a-8104-8760a416840f(org.iets3.req.priority.structure)" />
     <import index="cayy" ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)" />
     <import index="fivt" ref="r:4cfd5e11-f7f0-4e58-82bd-8b7f0a30d46f(org.iets3.table.coolingbehaviortable.structure)" />
+    <import index="plfp" ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)" />
+    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.modelproperty.formulae">
@@ -40,6 +42,15 @@
       </concept>
       <concept id="7571185389806664458" name="org.iets3.flow.modelproperty.formulae.structure.AtomicProperty" flags="ng" index="3x7ZJP">
         <child id="3369881559473997964" name="property" index="2DkB7w" />
+      </concept>
+    </language>
+    <language id="89749848-cf4d-49ab-8c2b-7275de1b311d" name="StatesTruthTable">
+      <concept id="8029187915077752333" name="StatesTruthTable.structure.PropertyRow" flags="ng" index="Avf7j">
+        <reference id="1496150855407672378" name="Property" index="2YeZ_W" />
+        <child id="5931063332935449090" name="affectedConcepts" index="9ImiJ" />
+      </concept>
+      <concept id="1496150855407671845" name="StatesTruthTable.structure.StateTurth" flags="ng" index="2YeZXz">
+        <child id="8029187915077752337" name="listofPropertyRows" index="Avf7f" />
       </concept>
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
@@ -270,6 +281,38 @@
         <property role="2V$B1T" value="10211132-9b5e-427a-9b37-1c1f28794a5e" />
         <property role="2V$B1Q" value="org.iets3.flow.dashboard" />
       </node>
+    </node>
+  </node>
+  <node concept="2YeZXz" id="59fnEPs016D">
+    <node concept="Avf7j" id="59fnEPs016E" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+      <node concept="fI48x" id="59fnEPrVtXW" role="9ImiJ">
+        <ref role="fxKJO" to="q3w4:5QnDqxDaSpr" resolve="RequirementChunk" />
+      </node>
+      <node concept="fI48x" id="59fnEPrVtXY" role="9ImiJ">
+        <ref role="fxKJO" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
+      </node>
+      <node concept="fI48x" id="59fnEPrVtY1" role="9ImiJ">
+        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="fI48x" id="59fnEPrVtY5" role="9ImiJ">
+        <ref role="fxKJO" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
+      </node>
+    </node>
+    <node concept="Avf7j" id="59fnEPs016F" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+    </node>
+    <node concept="Avf7j" id="59fnEPs016G" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+    </node>
+    <node concept="Avf7j" id="59fnEPs016H" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
+    </node>
+    <node concept="Avf7j" id="59fnEPs016I" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
+    </node>
+    <node concept="Avf7j" id="59fnEPs016J" role="Avf7f">
+      <ref role="2YeZ_W" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
     </node>
   </node>
 </model>

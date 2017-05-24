@@ -84,6 +84,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="14AbH$uBANS" resolve="NodeCreationProperty" />
     </node>
+    <node concept="1TJgyj" id="59fnEPrRi5h" role="1TKVEi">
+      <property role="IQ2ns" value="5931063332933804369" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="affectedConcepts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="14AbH$uBANS" resolve="NodeCreationProperty" />
+    </node>
     <node concept="1TJgyj" id="4ciHkhtie$A" role="1TKVEi">
       <property role="IQ2ns" value="4833124655349426470" />
       <property role="20lmBu" value="aggregation" />

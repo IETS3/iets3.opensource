@@ -38,6 +38,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -236,6 +237,23 @@
         <node concept="ljvvj" id="2V4emM7BWUf" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="59fnEPrToi$" role="3EZMnx">
+        <property role="3F0ifm" value="Affected Concepts:" />
+        <node concept="ljvvj" id="59fnEPrToo0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="59fnEPrRijh" role="3EZMnx">
+        <node concept="VPM3Z" id="59fnEPrRijj" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="59fnEPrRioI" role="3EZMnx" />
+        <node concept="3F2HdR" id="59fnEPrRioO" role="3EZMnx">
+          <ref role="1NtTu8" to="f6re:59fnEPrRi5h" resolve="affectedConcepts" />
+          <node concept="2iRkQZ" id="59fnEPrVtYN" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="59fnEPrRijm" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7c_wSf78ccJ" role="3EZMnx">
         <property role="3F0ifm" value="Next states:" />

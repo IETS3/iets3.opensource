@@ -6,6 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="f6re" ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(org.iets3.flow.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -67,12 +68,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
-    <node concept="1TJgyj" id="1j3pkqEY9Ln" role="1TKVEi">
-      <property role="IQ2ns" value="1496150855407672407" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="AffectedConcept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    <node concept="1TJgyj" id="59fnEPrXzC2" role="1TKVEi">
+      <property role="IQ2ns" value="5931063332935449090" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="affectedConcepts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="f6re:14AbH$uBANS" resolve="NodeCreationProperty" />
     </node>
   </node>
 </model>
