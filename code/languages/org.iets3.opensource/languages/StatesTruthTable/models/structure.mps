@@ -41,7 +41,7 @@
   </registry>
   <node concept="1TIwiD" id="1j3pkqEY9C_">
     <property role="EcuMT" value="1496150855407671845" />
-    <property role="TrG5h" value="StateTurth" />
+    <property role="TrG5h" value="StateTruth" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6XHpXT94poh" role="1TKVEi">
