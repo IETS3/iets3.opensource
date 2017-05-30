@@ -1984,5 +1984,9 @@
   <node concept="3p36aQ" id="2dOqIOuu8eB">
     <ref role="aqKnT" to="yv47:ub9nkyKjdj" resolve="EmptyToplevelContent" />
   </node>
+  <node concept="3p36aQ" id="7yWljG41Z62">
+    <property role="3GE5qa" value="record" />
+    <ref role="aqKnT" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+  </node>
 </model>
 
