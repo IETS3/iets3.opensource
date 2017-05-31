@@ -1401,9 +1401,14 @@
                   <node concept="2pIpSj" id="6JZACDWI$Sq" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:6JZACDWIfNX" resolve="baseType" />
                     <node concept="36biLy" id="6JZACDWI$Tg" role="2pJxcZ">
-                      <node concept="2OqwBi" id="6JZACDWI_E$" role="36biLW">
-                        <node concept="2Sf5sV" id="6JZACDWI_vS" role="2Oq$k0" />
-                        <node concept="1$rogu" id="6JZACDWI_KB" role="2OqNvi" />
+                      <node concept="1PxgMI" id="1bwJEEeXHSz" role="36biLW">
+                        <node concept="chp4Y" id="1bwJEEeXHV$" role="3oSUPX">
+                          <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                        </node>
+                        <node concept="2OqwBi" id="6JZACDWI_E$" role="1m5AlR">
+                          <node concept="2Sf5sV" id="6JZACDWI_vS" role="2Oq$k0" />
+                          <node concept="1$rogu" id="6JZACDWI_KB" role="2OqNvi" />
+                        </node>
                       </node>
                     </node>
                   </node>

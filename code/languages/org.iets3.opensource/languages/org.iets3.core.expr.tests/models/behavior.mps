@@ -6598,5 +6598,49 @@
       <node concept="3clFbS" id="713ZPaW1oCU" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1bwJEEeTsrX">
+    <property role="3GE5qa" value="vector" />
+    <ref role="13h7C2" to="av4b:1bwJEEeSLgy" resolve="TestInputCollection" />
+    <node concept="13i0hz" id="1bwJEEeTss8" role="13h7CS">
+      <property role="TrG5h" value="subject" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="1bwJEEeTss9" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1bwJEEeTsso" role="3clF45">
+        <ref role="ehGHo" to="hm2y:1bwJEEeSLgA" resolve="IHasInputVector" />
+      </node>
+      <node concept="3clFbS" id="1bwJEEeTssb" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="1bwJEEeTsrY" role="13h7CW">
+      <node concept="3clFbS" id="1bwJEEeTsrZ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1bwJEEeTsto">
+    <property role="3GE5qa" value="vector" />
+    <ref role="13h7C2" to="av4b:1bwJEEeTssV" resolve="DataTable" />
+    <node concept="13hLZK" id="1bwJEEeTstp" role="13h7CW">
+      <node concept="3clFbS" id="1bwJEEeTstq" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1bwJEEeTstz" role="13h7CS">
+      <property role="TrG5h" value="subject" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1bwJEEeTss8" resolve="subject" />
+      <node concept="3Tm1VV" id="1bwJEEeTst$" role="1B3o_S" />
+      <node concept="3clFbS" id="1bwJEEeTstB" role="3clF47">
+        <node concept="3clFbF" id="1bwJEEeTstQ" role="3cqZAp">
+          <node concept="2OqwBi" id="1bwJEEeTsCU" role="3clFbG">
+            <node concept="13iPFW" id="1bwJEEeTstP" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1bwJEEeTsKj" role="2OqNvi">
+              <ref role="3Tt5mk" to="av4b:1bwJEEeTssW" resolve="subject" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1bwJEEeTstC" role="3clF45">
+        <ref role="ehGHo" to="hm2y:1bwJEEeSLgA" resolve="IHasInputVector" />
+      </node>
+    </node>
+  </node>
 </model>
 

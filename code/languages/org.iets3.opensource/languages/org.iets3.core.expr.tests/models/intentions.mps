@@ -112,6 +112,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -504,6 +505,35 @@
               <node concept="1mfA1w" id="662bi$vcU_2" role="2OqNvi" />
             </node>
             <node concept="3YRAZt" id="662bi$vcU_3" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bwJEEffjtN">
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="addVector" />
+    <ref role="2ZfgGC" to="av4b:1bwJEEeSLgy" resolve="TestInputCollection" />
+    <node concept="2S6ZIM" id="1bwJEEffjtO" role="2ZfVej">
+      <node concept="3clFbS" id="1bwJEEffjtP" role="2VODD2">
+        <node concept="3clFbF" id="1bwJEEffjMr" role="3cqZAp">
+          <node concept="Xl_RD" id="1bwJEEffjMq" role="3clFbG">
+            <property role="Xl_RC" value="Add Vector" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bwJEEffjtQ" role="2ZfgGD">
+      <node concept="3clFbS" id="1bwJEEffjtR" role="2VODD2">
+        <node concept="3clFbF" id="1bwJEEffkkz" role="3cqZAp">
+          <node concept="2OqwBi" id="1bwJEEffm2i" role="3clFbG">
+            <node concept="2OqwBi" id="1bwJEEffkrz" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1bwJEEffkky" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1bwJEEffkE2" role="2OqNvi">
+                <ref role="3TtcxE" to="av4b:1bwJEEeSLgz" resolve="vectors" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1bwJEEffnc3" role="2OqNvi" />
           </node>
         </node>
       </node>
