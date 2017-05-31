@@ -163,7 +163,6 @@
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -617,19 +616,16 @@
       <node concept="3clFbJ" id="1bwJEEfiDed" role="3cqZAp">
         <node concept="3clFbS" id="1bwJEEfiDef" role="3clFbx">
           <node concept="2MkqsV" id="1bwJEEfiM_x" role="3cqZAp">
-            <node concept="3cpWs3" id="1bwJEEfiRjD" role="2MkJ7o">
-              <node concept="2OqwBi" id="1bwJEEfiRE2" role="3uHU7w">
-                <node concept="1YBJjd" id="1bwJEEfiRjS" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
-                </node>
-                <node concept="2bSWHS" id="1bwJEEfiScq" role="2OqNvi" />
-              </node>
-              <node concept="Xl_RD" id="1bwJEEfiM_Q" role="3uHU7B">
-                <property role="Xl_RC" value="missing input in row " />
-              </node>
+            <node concept="Xl_RD" id="1bwJEEfiM_Q" role="2MkJ7o">
+              <property role="Xl_RC" value="missing input" />
             </node>
-            <node concept="1YBJjd" id="1bwJEEfiMAa" role="2OEOjV">
-              <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
+            <node concept="2OqwBi" id="1bwJEEgt7Gl" role="2OEOjV">
+              <node concept="1YBJjd" id="1bwJEEfiMAa" role="2Oq$k0">
+                <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
+              </node>
+              <node concept="3TrEf2" id="1bwJEEgt8pi" role="2OqNvi">
+                <ref role="3Tt5mk" to="av4b:1bwJEEfL7oM" resolve="outcome" />
+              </node>
             </node>
           </node>
         </node>
@@ -699,19 +695,16 @@
           <node concept="3clFbJ" id="1bwJEEgrcJh" role="3cqZAp">
             <node concept="3clFbS" id="1bwJEEgrcJi" role="3clFbx">
               <node concept="2MkqsV" id="1bwJEEgrcJj" role="3cqZAp">
-                <node concept="3cpWs3" id="1bwJEEgrcJk" role="2MkJ7o">
-                  <node concept="2OqwBi" id="1bwJEEgrcJl" role="3uHU7w">
-                    <node concept="1YBJjd" id="1bwJEEgrcJm" role="2Oq$k0">
-                      <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
-                    </node>
-                    <node concept="2bSWHS" id="1bwJEEgrcJn" role="2OqNvi" />
-                  </node>
-                  <node concept="Xl_RD" id="1bwJEEgrcJo" role="3uHU7B">
-                    <property role="Xl_RC" value="missing output in row " />
-                  </node>
+                <node concept="Xl_RD" id="1bwJEEgrcJo" role="2MkJ7o">
+                  <property role="Xl_RC" value="missing output" />
                 </node>
-                <node concept="1YBJjd" id="1bwJEEgrcJp" role="2OEOjV">
-                  <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
+                <node concept="2OqwBi" id="1bwJEEgt6UF" role="2OEOjV">
+                  <node concept="1YBJjd" id="1bwJEEgrcJp" role="2Oq$k0">
+                    <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
+                  </node>
+                  <node concept="3TrEf2" id="1bwJEEgt7yD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="av4b:1bwJEEfL7oM" resolve="outcome" />
+                  </node>
                 </node>
               </node>
             </node>
