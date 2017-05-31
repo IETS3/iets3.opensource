@@ -647,7 +647,7 @@
   <node concept="1TIwiD" id="1bwJEEeSLgy">
     <property role="EcuMT" value="1360296727216854050" />
     <property role="3GE5qa" value="vector" />
-    <property role="TrG5h" value="TestVectorCollection" />
+    <property role="TrG5h" value="AbstractTestVectorCollection" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -670,7 +670,7 @@
     <property role="EcuMT" value="1360296727217030971" />
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="DataTable" />
-    <ref role="1TJDcQ" node="1bwJEEeSLgy" resolve="TestVectorCollection" />
+    <ref role="1TJDcQ" node="1bwJEEeSLgy" resolve="AbstractTestVectorCollection" />
     <node concept="PrWs8" id="1bwJEEeTsPw" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
@@ -727,8 +727,8 @@
   <node concept="1TIwiD" id="1bwJEEfL7oo">
     <property role="EcuMT" value="1360296727231624728" />
     <property role="3GE5qa" value="vector.outcome" />
-    <property role="TrG5h" value="SuccessOutcome" />
-    <property role="34LRSv" value="success" />
+    <property role="TrG5h" value="ValidOutcome" />
+    <property role="34LRSv" value="valid" />
     <ref role="1TJDcQ" node="1bwJEEfL7ob" resolve="Outcome" />
   </node>
   <node concept="1TIwiD" id="1bwJEEfL7o_">
@@ -784,6 +784,33 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3BFGe1EJa4q">
+    <property role="EcuMT" value="4173623957598806298" />
+    <property role="3GE5qa" value="testItem" />
+    <property role="TrG5h" value="VectorTestItem" />
+    <property role="34LRSv" value="vectors" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyj" id="3BFGe1ELe2u" role="1TKVEi">
+      <property role="IQ2ns" value="4173623957599346846" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1bwJEEfQxC8" resolve="InputVectorAdapter" />
+    </node>
+    <node concept="1TJgyj" id="3BFGe1EJa5G" role="1TKVEi">
+      <property role="IQ2ns" value="4173623957598806380" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="vectors" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3BFGe1EJa4P" resolve="TestItemVectorCollection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3BFGe1EJa4P">
+    <property role="EcuMT" value="4173623957598806325" />
+    <property role="3GE5qa" value="testItem" />
+    <property role="TrG5h" value="TestItemVectorCollection" />
+    <ref role="1TJDcQ" node="1bwJEEeSLgy" resolve="AbstractTestVectorCollection" />
   </node>
 </model>
 
