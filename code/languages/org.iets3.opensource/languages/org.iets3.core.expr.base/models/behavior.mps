@@ -16437,21 +16437,5 @@
       <node concept="17QB3L" id="6JZACDX0fAP" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="1bwJEEeSLha">
-    <ref role="13h7C2" to="hm2y:1bwJEEeSLgA" resolve="IHasInputVector" />
-    <node concept="13i0hz" id="1bwJEEeSLhl" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="arguments" />
-      <node concept="3Tm1VV" id="1bwJEEeSLhm" role="1B3o_S" />
-      <node concept="2I9FWS" id="1bwJEEeSUiU" role="3clF45">
-        <ref role="2I9WkF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-      </node>
-      <node concept="3clFbS" id="1bwJEEeSLho" role="3clF47" />
-    </node>
-    <node concept="13hLZK" id="1bwJEEeSLhb" role="13h7CW">
-      <node concept="3clFbS" id="1bwJEEeSLhc" role="2VODD2" />
-    </node>
-  </node>
 </model>
 

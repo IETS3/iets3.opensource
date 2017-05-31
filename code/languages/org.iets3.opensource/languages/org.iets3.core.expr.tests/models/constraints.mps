@@ -12,6 +12,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -224,26 +225,30 @@
   <node concept="1M2fIO" id="1bwJEEf1Z5r">
     <property role="3GE5qa" value="vector" />
     <ref role="1M2myG" to="av4b:1bwJEEeTssV" resolve="DataTable" />
-    <node concept="1N5Pfh" id="1bwJEEf1Z5y" role="1Mr941">
-      <ref role="1N5Vy1" to="av4b:1bwJEEeTssW" resolve="subject" />
-      <node concept="3dgokm" id="1bwJEEf1Z5$" role="1N6uqs">
-        <node concept="3clFbS" id="1bwJEEf1Z5_" role="2VODD2">
-          <node concept="3clFbF" id="1bwJEEf22Vo" role="3cqZAp">
-            <node concept="2OqwBi" id="1bwJEEf22s5" role="3clFbG">
-              <node concept="2OqwBi" id="1bwJEEf22s6" role="2Oq$k0">
-                <node concept="2rP1CM" id="1bwJEEf22s7" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="1bwJEEf22s8" role="2OqNvi">
-                  <node concept="1xMEDy" id="1bwJEEf22s9" role="1xVPHs">
-                    <node concept="chp4Y" id="1bwJEEf22sa" role="ri$Ld">
+  </node>
+  <node concept="1M2fIO" id="1bwJEEfRxI5">
+    <property role="3GE5qa" value="vector" />
+    <ref role="1M2myG" to="av4b:1bwJEEfQxDh" resolve="FunctionInputVectorAdapter" />
+    <node concept="1N5Pfh" id="1bwJEEfRxIc" role="1Mr941">
+      <ref role="1N5Vy1" to="av4b:1bwJEEfQxDu" resolve="fun" />
+      <node concept="3dgokm" id="1bwJEEfRxIe" role="1N6uqs">
+        <node concept="3clFbS" id="1bwJEEfRxIf" role="2VODD2">
+          <node concept="3clFbF" id="1bwJEEfRxL8" role="3cqZAp">
+            <node concept="2OqwBi" id="1bwJEEfRym7" role="3clFbG">
+              <node concept="2OqwBi" id="1bwJEEfRxXr" role="2Oq$k0">
+                <node concept="2rP1CM" id="1bwJEEfRxL7" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="1bwJEEfRy52" role="2OqNvi">
+                  <node concept="1xMEDy" id="1bwJEEfRy54" role="1xVPHs">
+                    <node concept="chp4Y" id="1bwJEEfRy9O" role="ri$Ld">
                       <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2qgKlT" id="1bwJEEf22sb" role="2OqNvi">
+              <node concept="2qgKlT" id="1bwJEEfRyvS" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:79$zShlSHxZ" resolve="visibleContentsOfType" />
-                <node concept="35c_gC" id="1bwJEEf22sc" role="37wK5m">
-                  <ref role="35c_gD" to="hm2y:1bwJEEeSLgA" resolve="IHasInputVector" />
+                <node concept="35c_gC" id="1bwJEEfRyB2" role="37wK5m">
+                  <ref role="35c_gD" to="yv47:49WTic8f4iz" resolve="Function" />
                 </node>
               </node>
             </node>
