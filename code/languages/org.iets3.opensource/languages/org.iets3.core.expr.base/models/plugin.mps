@@ -31,6 +31,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -4647,6 +4648,14 @@
       <node concept="3Tm1VV" id="4945UtRC42E" role="1B3o_S" />
       <node concept="17QB3L" id="4945UtRC4ji" role="1tU5fm" />
     </node>
+    <node concept="312cEg" id="7FZzGJZVFCe" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="failedCondition" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7FZzGJZVFCf" role="1B3o_S" />
+      <node concept="17QB3L" id="7FZzGJZVFCg" role="1tU5fm" />
+    </node>
     <node concept="2tJIrI" id="4945UtSiEUX" role="jymVt" />
     <node concept="3clFb_" id="4945UtSiF$3" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -4722,6 +4731,24 @@
           </node>
           <node concept="37vLTw" id="5E2FDFNJ8v_" role="37wK5m">
             <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7FZzGJZVG4S" role="3cqZAp">
+          <node concept="37vLTI" id="7FZzGJZVIkb" role="3clFbG">
+            <node concept="2OqwBi" id="7FZzGJZVIwx" role="37vLTx">
+              <node concept="37vLTw" id="7FZzGJZVInx" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
+              </node>
+              <node concept="2qgKlT" id="7FZzGJZVLH0" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7FZzGJZVGz7" role="37vLTJ">
+              <node concept="Xjq3P" id="7FZzGJZVG4Q" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7FZzGJZVHxb" role="2OqNvi">
+                <ref role="2Oxat5" node="7FZzGJZVFCe" resolve="failedCondition" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4945UtRC4F6" role="3cqZAp">

@@ -32,7 +32,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -7113,20 +7112,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="7FZzGJZIpDx" role="3cqZAp">
-                  <node concept="2OqwBi" id="7FZzGJZIpDu" role="3clFbG">
-                    <node concept="10M0yZ" id="7FZzGJZIpDv" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    </node>
-                    <node concept="liA8E" id="7FZzGJZIpDw" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="Xl_RD" id="7FZzGJZIq37" role="37wK5m">
-                        <property role="Xl_RC" value="X" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="TDmWw" id="4945UtSiuXB" role="TEbGg">
                 <node concept="3cpWsn" id="4945UtSiuXD" role="TDEfY">
@@ -7136,20 +7121,6 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="4945UtSiuXH" role="TDEfX">
-                  <node concept="3clFbF" id="7FZzGJZIqfh" role="3cqZAp">
-                    <node concept="2OqwBi" id="7FZzGJZIqfe" role="3clFbG">
-                      <node concept="10M0yZ" id="7FZzGJZIqff" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="7FZzGJZIqfg" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="Xl_RD" id="7FZzGJZIqxU" role="37wK5m">
-                          <property role="Xl_RC" value="Y" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbJ" id="4945UtSiCaS" role="3cqZAp">
                     <node concept="2OqwBi" id="4945UtSiJZq" role="3clFbw">
                       <node concept="37vLTw" id="4945UtSiJ_i" role="2Oq$k0">
@@ -7171,8 +7142,18 @@
                             <node concept="3clFbT" id="4945UtSiKxG" role="37wK5m">
                               <property role="3clFbU" value="false" />
                             </node>
-                            <node concept="Xl_RD" id="4945UtSiKxH" role="37wK5m">
-                              <property role="Xl_RC" value="precondition failed." />
+                            <node concept="3cpWs3" id="7FZzGJZUGXe" role="37wK5m">
+                              <node concept="2OqwBi" id="7FZzGJZUHN_" role="3uHU7w">
+                                <node concept="37vLTw" id="7FZzGJZUHfD" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4945UtSiuXD" resolve="cfe" />
+                                </node>
+                                <node concept="2OwXpG" id="7FZzGJZVRji" role="2OqNvi">
+                                  <ref role="2Oxat5" to="oq0c:7FZzGJZVFCe" resolve="failedCondition" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="4945UtSiKxH" role="3uHU7B">
+                                <property role="Xl_RC" value="[PRE] " />
+                              </node>
                             </node>
                           </node>
                         </node>
