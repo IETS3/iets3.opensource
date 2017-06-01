@@ -512,11 +512,11 @@
         <node concept="3cpWsn" id="1bwJEEgr7Vq" role="3cpWs9">
           <property role="TrG5h" value="col" />
           <node concept="3Tqbb2" id="1bwJEEgr7Vn" role="1tU5fm">
-            <ref role="ehGHo" to="av4b:1bwJEEeSLgy" resolve="TestVectorCollection" />
+            <ref role="ehGHo" to="av4b:1bwJEEeSLgy" resolve="AbstractTestVectorCollection" />
           </node>
           <node concept="1PxgMI" id="1bwJEEgr7Vr" role="33vP2m">
             <node concept="chp4Y" id="1bwJEEgr7Vs" role="3oSUPX">
-              <ref role="cht4Q" to="av4b:1bwJEEeSLgy" resolve="TestVectorCollection" />
+              <ref role="cht4Q" to="av4b:1bwJEEeSLgy" resolve="AbstractTestVectorCollection" />
             </node>
             <node concept="2OqwBi" id="1bwJEEgr7Vt" role="1m5AlR">
               <node concept="1YBJjd" id="1bwJEEgr7Vu" role="2Oq$k0">
@@ -744,7 +744,7 @@
   </node>
   <node concept="18kY7G" id="1bwJEEfKxKm">
     <property role="TrG5h" value="check_VectorProducer" />
-    <property role="3GE5qa" value="vector" />
+    <property role="3GE5qa" value="vector.producer" />
     <node concept="3clFbS" id="1bwJEEfKxKn" role="18ibNy">
       <node concept="2Gpval" id="1bwJEEfKxKU" role="3cqZAp">
         <node concept="2GrKxI" id="1bwJEEfKxKY" role="2Gsz3X">
@@ -821,7 +821,7 @@
     </node>
     <node concept="1YaCAy" id="1bwJEEfKxKp" role="1YuTPh">
       <property role="TrG5h" value="vp" />
-      <ref role="1YaFvo" to="av4b:1bwJEEfE00B" resolve="VectorProducer" />
+      <ref role="1YaFvo" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
     </node>
   </node>
 </model>

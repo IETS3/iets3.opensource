@@ -150,7 +150,9 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -1421,6 +1423,75 @@
     </node>
     <node concept="1SWQZ3" id="6JZACDWSJIe" role="lGtFl">
       <property role="1SWRpm" value="EXPRESSIONS" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1vJWYavjAiu">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="addContract" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    <node concept="2S6ZIM" id="1vJWYavjAiv" role="2ZfVej">
+      <node concept="3clFbS" id="1vJWYavjAiw" role="2VODD2">
+        <node concept="3clFbF" id="1vJWYavjAsf" role="3cqZAp">
+          <node concept="Xl_RD" id="1vJWYavjAse" role="3clFbG">
+            <property role="Xl_RC" value="Add Contract" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1vJWYavjAix" role="2ZfgGD">
+      <node concept="3clFbS" id="1vJWYavjAiy" role="2VODD2">
+        <node concept="3cpWs8" id="1vJWYavjDh3" role="3cqZAp">
+          <node concept="3cpWsn" id="1vJWYavjDh4" role="3cpWs9">
+            <property role="TrG5h" value="cc" />
+            <node concept="3Tqbb2" id="1vJWYavjDh2" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:KaZMgy4Ilx" resolve="Contract" />
+            </node>
+            <node concept="2OqwBi" id="1vJWYavjDh5" role="33vP2m">
+              <node concept="2OqwBi" id="1vJWYavjDh6" role="2Oq$k0">
+                <node concept="2Sf5sV" id="1vJWYavjDh7" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1vJWYavjDh8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:KaZMgy4Ily" resolve="contract" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="1vJWYavjDh9" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1vJWYavjB7Y" role="3cqZAp">
+          <node concept="2OqwBi" id="1vJWYavjET9" role="3clFbG">
+            <node concept="2OqwBi" id="1vJWYavjDqH" role="2Oq$k0">
+              <node concept="37vLTw" id="1vJWYavjDha" role="2Oq$k0">
+                <ref role="3cqZAo" node="1vJWYavjDh4" resolve="cc" />
+              </node>
+              <node concept="3Tsc0h" id="1vJWYavjDwY" role="2OqNvi">
+                <ref role="3TtcxE" to="hm2y:KaZMgy4Il_" resolve="items" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1vJWYavjG2B" role="2OqNvi">
+              <ref role="1A0vxQ" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1vJWYavjB0n" role="lGtFl">
+      <property role="1SWRpm" value="ERROR HANDLING" />
+    </node>
+    <node concept="2SaL7w" id="1vJWYavjBJ6" role="2ZfVeh">
+      <node concept="3clFbS" id="1vJWYavjBJ7" role="2VODD2">
+        <node concept="3clFbF" id="1vJWYavjBSF" role="3cqZAp">
+          <node concept="2OqwBi" id="1vJWYavjCIh" role="3clFbG">
+            <node concept="2OqwBi" id="1vJWYavjC4J" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1vJWYavjBSE" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1vJWYavjCs$" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:KaZMgy4Ily" resolve="contract" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="1vJWYavjD5K" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
