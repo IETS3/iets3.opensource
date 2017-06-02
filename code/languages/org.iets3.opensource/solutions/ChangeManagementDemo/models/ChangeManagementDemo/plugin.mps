@@ -34,6 +34,7 @@
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="f6re" ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(org.iets3.flow.core.structure)" />
+    <import index="f6re" ref="r:b55a2780-4acd-46ea-b2fe-b6161b3f3a86(org.iets3.flow.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -271,7 +272,7 @@
                   <node concept="3cpWsn" id="bU9oEFgYjW" role="3cpWs9">
                     <property role="TrG5h" value="affectConcept" />
                     <node concept="3Tqbb2" id="bU9oEFgYjS" role="1tU5fm">
-                      <ref role="ehGHo" to="f6re:14AbH$uBANS" resolve="NodeCreationProperty" />
+                      <ref role="ehGHo" to="l259:4Q0YwXhVuyG" resolve="AffectedConceptRef" />
                     </node>
                     <node concept="2GrUjf" id="bU9oEFgYnf" role="33vP2m">
                       <ref role="2Gs0qQ" node="bU9oEFgXI5" resolve="affectedNode" />
@@ -291,8 +292,8 @@
                           <node concept="37vLTw" id="bU9oEFgZq5" role="2Oq$k0">
                             <ref role="3cqZAo" node="bU9oEFgYjW" resolve="affectConcept" />
                           </node>
-                          <node concept="3TrEf2" id="bU9oEFgZGj" role="2OqNvi">
-                            <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                          <node concept="3TrEf2" id="31IuPqk59RW" role="2OqNvi">
+                            <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                           </node>
                         </node>
                       </node>
@@ -326,8 +327,8 @@
                                         <node concept="37vLTw" id="bU9oEFh2nl" role="2Oq$k0">
                                           <ref role="3cqZAo" node="bU9oEFgYjW" resolve="affectConcept" />
                                         </node>
-                                        <node concept="3TrEf2" id="bU9oEFh2Ja" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                                        <node concept="3TrEf2" id="31IuPqk62rC" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                                         </node>
                                       </node>
                                       <node concept="3TrcHB" id="bU9oEFh3rT" role="2OqNvi">
@@ -399,8 +400,8 @@
                       <node concept="37vLTw" id="bU9oEFgYrF" role="2Oq$k0">
                         <ref role="3cqZAo" node="bU9oEFgYjW" resolve="affectConcept" />
                       </node>
-                      <node concept="3TrEf2" id="bU9oEFgYQI" role="2OqNvi">
-                        <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                      <node concept="3TrEf2" id="31IuPqk3aRg" role="2OqNvi">
+                        <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                       </node>
                     </node>
                   </node>
@@ -452,7 +453,7 @@
                   <node concept="3cpWsn" id="2NqnohwWabn" role="3cpWs9">
                     <property role="TrG5h" value="affectConcept" />
                     <node concept="3Tqbb2" id="2NqnohwWabo" role="1tU5fm">
-                      <ref role="ehGHo" to="f6re:14AbH$uBANS" resolve="NodeCreationProperty" />
+                      <ref role="ehGHo" to="l259:4Q0YwXhVuyG" resolve="AffectedConceptRef" />
                     </node>
                     <node concept="2GrUjf" id="2NqnohwWabp" role="33vP2m">
                       <ref role="2Gs0qQ" node="2NqnohwWabh" resolve="affectedNode" />
@@ -472,8 +473,8 @@
                           <node concept="37vLTw" id="2NqnohwWabx" role="2Oq$k0">
                             <ref role="3cqZAo" node="2NqnohwWabn" resolve="affectConcept" />
                           </node>
-                          <node concept="3TrEf2" id="2NqnohwWaby" role="2OqNvi">
-                            <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                          <node concept="3TrEf2" id="31IuPqk79k6" role="2OqNvi">
+                            <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                           </node>
                         </node>
                       </node>
@@ -507,8 +508,8 @@
                                         <node concept="37vLTw" id="2NqnohwWabM" role="2Oq$k0">
                                           <ref role="3cqZAo" node="2NqnohwWabn" resolve="affectConcept" />
                                         </node>
-                                        <node concept="3TrEf2" id="2NqnohwWabN" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                                        <node concept="3TrEf2" id="31IuPqk7nwL" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                                         </node>
                                       </node>
                                       <node concept="3TrcHB" id="2NqnohwWabO" role="2OqNvi">
@@ -578,8 +579,8 @@
                       <node concept="37vLTw" id="2NqnohwWacb" role="2Oq$k0">
                         <ref role="3cqZAo" node="2NqnohwWabn" resolve="affectConcept" />
                       </node>
-                      <node concept="3TrEf2" id="2NqnohwWacc" role="2OqNvi">
-                        <ref role="3Tt5mk" to="f6re:14AbH$uCikH" resolve="conceptToBeCreated" />
+                      <node concept="3TrEf2" id="31IuPqk6GXI" role="2OqNvi">
+                        <ref role="3Tt5mk" to="l259:4Q0YwXhVuyH" resolve="conceptToBeAffected" />
                       </node>
                     </node>
                   </node>
