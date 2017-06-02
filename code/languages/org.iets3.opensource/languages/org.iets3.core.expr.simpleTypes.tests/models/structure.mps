@@ -34,12 +34,18 @@
     <property role="EcuMT" value="1360296727230407275" />
     <property role="TrG5h" value="RandomVectorProducer" />
     <property role="34LRSv" value="random" />
-    <ref role="1TJDcQ" to="av4b:1bwJEEfE00B" resolve="VectorProducer" />
+    <ref role="1TJDcQ" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
     <node concept="1TJgyi" id="1bwJEEfG$EL" role="1TKVEl">
       <property role="IQ2nx" value="1360296727230433969" />
       <property role="TrG5h" value="count" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="u9itSZOLXL">
+    <property role="EcuMT" value="543046448977223537" />
+    <property role="TrG5h" value="EqClassProducer" />
+    <property role="34LRSv" value="eqclass" />
+    <ref role="1TJDcQ" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
   </node>
 </model>
 

@@ -43,5 +43,14 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="u9itSZOLZW">
+    <ref role="1XX52x" to="q6b8:u9itSZOLXL" resolve="EqClassProducer" />
+    <node concept="3EZMnI" id="u9itSZOM07" role="2wV5jI">
+      <node concept="2iRfu4" id="u9itSZOM08" role="2iSdaV" />
+      <node concept="3F0ifn" id="u9itSZOM09" role="3EZMnx">
+        <property role="3F0ifm" value="eqclass" />
+      </node>
+    </node>
+  </node>
 </model>
 
