@@ -51,7 +51,6 @@
       </concept>
       <concept id="4833124655349364971" name="org.iets3.flow.core.structure.FlowState" flags="ng" index="ulkQJ">
         <property id="8297182490504976684" name="startState" index="2O1_EJ" />
-        <child id="5931063332933804369" name="affectedConcepts" index="9$BZW" />
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="propertyFormula" index="um_Ly" />
@@ -114,27 +113,9 @@
           </node>
         </node>
       </node>
-      <node concept="fI48x" id="iXkPbovilD" role="9$BZW">
-        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="fI48x" id="iXkPbovilF" role="9$BZW">
-        <ref role="fxKJO" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="23Wc6ut1Xkv" role="ulkQK">
       <property role="TrG5h" value="Empty requirement model and no glossary terms defined" />
-      <node concept="fI48x" id="iXkPbovkg9" role="9$BZW">
-        <ref role="fxKJO" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
-      </node>
-      <node concept="fI48x" id="iXkPbovkgb" role="9$BZW">
-        <ref role="fxKJO" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="fI48x" id="iXkPbovkge" role="9$BZW">
-        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="fI48x" id="iXkPbovkgi" role="9$BZW">
-        <ref role="fxKJO" to="cayy:7mG7sQPphCY" resolve="UserDirectory" />
-      </node>
       <node concept="2O1dW8" id="7c_wSf78Tv3" role="2O1dWi">
         <ref role="2O1dWf" node="6mLEnnuDUFU" resolve="Requirements model complete and glossary terms not defined" />
       </node>
@@ -195,9 +176,6 @@
           </node>
         </node>
       </node>
-      <node concept="fI48x" id="iXkPbovkgn" role="9$BZW">
-        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="4mvkNAhF8uM" role="ulkQK">
       <property role="TrG5h" value="Requirements model not complete and glossary terms defined" />
@@ -249,9 +227,6 @@
       <node concept="fI48x" id="3T5sQlfdis4" role="fI48E">
         <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
-      <node concept="fI48x" id="iXkPbovkgt" role="9$BZW">
-        <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
-      </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
@@ -276,9 +251,6 @@
             <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
           </node>
         </node>
-      </node>
-      <node concept="fI48x" id="iXkPbovkgv" role="9$BZW">
-        <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7Bp" role="ulkQK">

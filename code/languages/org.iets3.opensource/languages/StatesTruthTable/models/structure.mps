@@ -39,19 +39,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="1j3pkqEY9C_">
-    <property role="EcuMT" value="1496150855407671845" />
-    <property role="TrG5h" value="StateTruth" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6XHpXT94poh" role="1TKVEi">
-      <property role="IQ2ns" value="8029187915077752337" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="listofPropertyRows" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6XHpXT94pod" resolve="PropertyRow" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6XHpXT94pod">
     <property role="EcuMT" value="8029187915077752333" />
     <property role="TrG5h" value="PropertyRow" />
@@ -73,7 +60,32 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="affectedConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="f6re:14AbH$uBANS" resolve="NodeCreationProperty" />
+      <ref role="20lvS9" node="4Q0YwXhVuyG" resolve="AffectedConceptRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Q0YwXhVuyG">
+    <property role="EcuMT" value="5584738481645414572" />
+    <property role="TrG5h" value="AffectedConceptRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4Q0YwXhVuyH" role="1TKVEi">
+      <property role="IQ2ns" value="5584738481645414573" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="conceptToBeAffected" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1j3pkqEY9C_">
+    <property role="EcuMT" value="1496150855407671845" />
+    <property role="TrG5h" value="StateTruth" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6XHpXT94poh" role="1TKVEi">
+      <property role="IQ2ns" value="8029187915077752337" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listofPropertyRows" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6XHpXT94pod" resolve="PropertyRow" />
     </node>
   </node>
 </model>
