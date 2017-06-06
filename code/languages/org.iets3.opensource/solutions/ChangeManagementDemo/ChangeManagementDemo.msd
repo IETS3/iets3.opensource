@@ -16,6 +16,7 @@
     <dependency reexport="false">89749848-cf4d-49ab-8c2b-7275de1b311d(StatesTruthTable)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
     <dependency reexport="false">e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)</dependency>
+    <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:ffe85f3b-a433-43dc-821b-9d943d95ce28:ChangeManagementLanguage" version="0" />
@@ -61,6 +62,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
+    <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
   </dependencyVersions>
 </solution>
 
