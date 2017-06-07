@@ -46,14 +46,6 @@
       <concept id="5584738481645414572" name="org.iets3.flow.modelproperty.state.structure.AffectedConceptRef" flags="ng" index="srhaz">
         <reference id="5584738481645414573" name="conceptToBeAffected" index="srhay" />
       </concept>
-      <concept id="8029187915077752333" name="org.iets3.flow.modelproperty.state.structure.PropertyRow" flags="ng" index="Avf7j">
-        <property id="8029187915077749646" name="propertyResult" index="AveLg" />
-        <reference id="1496150855407672378" name="Property" index="2YeZ_W" />
-        <child id="5931063332935449090" name="affectedConcepts" index="9ImiJ" />
-      </concept>
-      <concept id="1496150855407671845" name="org.iets3.flow.modelproperty.state.structure.StateTruth" flags="ng" index="2YeZXz">
-        <child id="8029187915077752337" name="listofPropertyRows" index="Avf7f" />
-      </concept>
     </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
@@ -310,40 +302,6 @@
       <node concept="2V$Bhx" id="2nJapj3pVyU" role="2V$M_3">
         <property role="2V$B1T" value="10211132-9b5e-427a-9b37-1c1f28794a5e" />
         <property role="2V$B1Q" value="org.iets3.flow.dashboard" />
-      </node>
-    </node>
-  </node>
-  <node concept="2YeZXz" id="7djbR4jL1Wh">
-    <node concept="Avf7j" id="7djbR4jL1Wi" role="Avf7f">
-      <property role="AveLg" value="false" />
-      <ref role="2YeZ_W" to="oehh:7tAIZp0bkmp" resolve="ProjectIsCreatedProperty" />
-      <node concept="srhaz" id="7djbR4jL1Wk" role="9ImiJ">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-    </node>
-    <node concept="Avf7j" id="7djbR4jL1Wo" role="Avf7f">
-      <ref role="2YeZ_W" to="oehh:38QI5jjR3Qm" resolve="GlossaryTermDefinedProperty" />
-      <node concept="srhaz" id="7djbR4jL1Wq" role="9ImiJ">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-    </node>
-    <node concept="Avf7j" id="7djbR4jL1Ws" role="Avf7f">
-      <property role="AveLg" value="false" />
-      <ref role="2YeZ_W" to="oehh:23Wc6usRcwc" resolve="RequirementsErrorFreeProperty" />
-      <node concept="srhaz" id="7djbR4jL1Wu" role="9ImiJ">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-    </node>
-    <node concept="Avf7j" id="7djbR4jL1WS" role="Avf7f">
-      <ref role="2YeZ_W" to="oehh:7tAIZp0cVX0" resolve="ErrorFreeTableProperty" />
-      <node concept="srhaz" id="7djbR4jL1WU" role="9ImiJ">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
-      </node>
-    </node>
-    <node concept="Avf7j" id="7djbR4jL1WW" role="Avf7f">
-      <ref role="2YeZ_W" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
-      <node concept="srhaz" id="7djbR4jL1WY" role="9ImiJ">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
     </node>
   </node>
