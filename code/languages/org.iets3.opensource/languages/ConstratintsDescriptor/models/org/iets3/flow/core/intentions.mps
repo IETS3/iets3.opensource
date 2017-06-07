@@ -679,6 +679,22 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbF" id="7djbR4k6cr6" role="3cqZAp">
+                          <node concept="2OqwBi" id="7djbR4k6cr7" role="3clFbG">
+                            <node concept="37vLTw" id="7djbR4k6cr8" role="2Oq$k0">
+                              <ref role="3cqZAo" node="18xeVvsD47p" resolve="sModelInternal" />
+                            </node>
+                            <node concept="liA8E" id="7djbR4k6cr9" role="2OqNvi">
+                              <ref role="37wK5l" to="w1kc:~SModelInternal.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                              <node concept="pHN19" id="7djbR4k6cra" role="37wK5m">
+                                <node concept="2V$Bhx" id="7djbR4k6gwJ" role="2V$M_3">
+                                  <property role="2V$B1T" value="89749848-cf4d-49ab-8c2b-7275de1b311d" />
+                                  <property role="2V$B1Q" value="org.iets3.flow.modelproperty.state" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbH" id="18xeVvsGrFD" role="3cqZAp" />
                         <node concept="1X3_iC" id="4bxTNXJl4CV" role="lGtFl">
                           <property role="3V$3am" value="statement" />
