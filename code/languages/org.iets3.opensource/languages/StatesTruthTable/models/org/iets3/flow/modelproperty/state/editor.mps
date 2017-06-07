@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:31b4d1a8-6f05-40f4-b750-db9d15ed629c(StatesTruthTable.editor)">
+<model ref="r:31b4d1a8-6f05-40f4-b750-db9d15ed629c(org.iets3.flow.modelproperty.state.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="l259" ref="r:87abca50-2833-491e-839f-a5bc2a44daef(StatesTruthTable.structure)" implicit="true" />
+    <import index="l259" ref="r:87abca50-2833-491e-839f-a5bc2a44daef(org.iets3.flow.modelproperty.state.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>

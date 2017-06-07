@@ -16,10 +16,9 @@
       <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/languages/ChangeManagementLanguage/ChangeManagementLanguage.mpl" folder="changemanagement" />
       <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.modelproperty.req.mpl" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/StatesTruthTable/StatesTruthTable.mpl" folder="changemanagement" />
+      <modulePath path="$PROJECT_DIR$/languages/StatesTruthTable/org.iets3.flow.modelproperty.state.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/earsPlus.mpl" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/earsPlus/sandbox/earsPlus.sandbox.msd" folder="earsPlus" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
@@ -45,7 +44,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.coolingbehaviortable.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/testLanguage/org.iets3.flow.dashboard.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/solutions/ChangeManagementDemo/ChangeManagementDemo.msd" folder="changemanagement" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDescriptorSandbox/org.iets3.flow.core.instance.msd" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />

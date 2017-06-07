@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:42438b07-4513-424e-b771-957607901935(StatesTruthTable.generator.template.main@generator)">
+<model ref="r:42438b07-4513-424e-b771-957607901935(org.iets3.flow.modelproperty.state.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="89749848-cf4d-49ab-8c2b-7275de1b311d" name="StatesTruthTable" version="-1" />

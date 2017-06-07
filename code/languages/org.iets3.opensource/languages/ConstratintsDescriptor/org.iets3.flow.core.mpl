@@ -18,7 +18,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
-    <dependency reexport="false">89749848-cf4d-49ab-8c2b-7275de1b311d(StatesTruthTable)</dependency>
+    <dependency reexport="false">89749848-cf4d-49ab-8c2b-7275de1b311d(org.iets3.flow.modelproperty.state)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
     <dependency reexport="false">af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</dependency>
@@ -69,7 +69,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="89749848-cf4d-49ab-8c2b-7275de1b311d(StatesTruthTable)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
@@ -97,6 +96,7 @@
     <module reference="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16(org.iets3.flow.core)" version="0" />
     <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
     <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.modelproperty.formulae)" version="0" />
+    <module reference="89749848-cf4d-49ab-8c2b-7275de1b311d(org.iets3.flow.modelproperty.state)" version="0" />
     <module reference="12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
