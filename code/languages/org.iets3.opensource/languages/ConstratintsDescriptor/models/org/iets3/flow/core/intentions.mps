@@ -963,22 +963,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="7c_wSf79jRG" role="3cqZAp" />
-            <node concept="3clFbF" id="5MdYwHWQc8r" role="3cqZAp">
-              <node concept="37vLTI" id="5MdYwHWQdmi" role="3clFbG">
-                <node concept="Xl_RD" id="5MdYwHWQdsV" role="37vLTx">
-                  <property role="Xl_RC" value="FlowDataRootNode" />
-                </node>
-                <node concept="2OqwBi" id="5MdYwHWQcHO" role="37vLTJ">
-                  <node concept="37vLTw" id="5MdYwHWQc8p" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2nJapj3rrZA" resolve="flow" />
-                  </node>
-                  <node concept="3TrcHB" id="5MdYwHWQcSK" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="7c_wSf79HFf" role="3cqZAp" />
             <node concept="3SKdUt" id="7c_wSf79Ikp" role="3cqZAp">
               <node concept="3SKdUq" id="7c_wSf79Ikr" role="3SKWNk">
@@ -1558,13 +1542,28 @@
               <node concept="3cpWsn" id="6XHpXT94zWh" role="3cpWs9">
                 <property role="TrG5h" value="stateTruthTable" />
                 <node concept="3Tqbb2" id="6XHpXT94zWc" role="1tU5fm">
-                  <ref role="ehGHo" to="l259:1j3pkqEY9C_" resolve="StateTruth" />
+                  <ref role="ehGHo" to="l259:1j3pkqEY9C_" resolve="PropertyState" />
                 </node>
                 <node concept="2ShNRf" id="6XHpXT94KTY" role="33vP2m">
                   <node concept="3zrR0B" id="6XHpXT94OcR" role="2ShVmc">
                     <node concept="3Tqbb2" id="6XHpXT94OcT" role="3zrR0E">
-                      <ref role="ehGHo" to="l259:1j3pkqEY9C_" resolve="StateTruth" />
+                      <ref role="ehGHo" to="l259:1j3pkqEY9C_" resolve="PropertyState" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7djbR4k7sm4" role="3cqZAp">
+              <node concept="37vLTI" id="7djbR4k7v1V" role="3clFbG">
+                <node concept="Xl_RD" id="7djbR4k7v8$" role="37vLTx">
+                  <property role="Xl_RC" value="StateOfProperties" />
+                </node>
+                <node concept="2OqwBi" id="7djbR4k7uf8" role="37vLTJ">
+                  <node concept="37vLTw" id="7djbR4k7sm2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6XHpXT94zWh" resolve="stateTruthTable" />
+                  </node>
+                  <node concept="3TrcHB" id="7djbR4k7u$p" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
