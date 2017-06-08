@@ -116,9 +116,6 @@
           </node>
         </node>
       </node>
-      <node concept="srhaz" id="31IuPqk9Qj$" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="23Wc6ut1Xkv" role="ulkQK">
       <property role="TrG5h" value="Empty requirement model and no glossary terms defined" />
@@ -163,6 +160,21 @@
       <node concept="srhaz" id="31IuPqk9QjG" role="9$BZW">
         <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
+      <node concept="srhaz" id="1zJOpNEfu6h" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6l" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6n" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6r" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6t" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
     </node>
     <node concept="ulkQJ" id="6mLEnnuDUFU" role="ulkQK">
       <property role="TrG5h" value="Requirements model complete and glossary terms not defined" />
@@ -194,6 +206,18 @@
       <node concept="srhaz" id="31IuPqk9QjU" role="9$BZW">
         <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
+      <node concept="srhaz" id="1zJOpNEfu6x" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6z" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6B" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6D" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
     </node>
     <node concept="ulkQJ" id="4mvkNAhF8uM" role="ulkQK">
       <property role="TrG5h" value="Requirements model not complete and glossary terms defined" />
@@ -223,6 +247,18 @@
         <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
       <node concept="srhaz" id="31IuPqk9Qk4" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6H" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6J" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6N" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6P" role="9$BZW">
         <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
       </node>
     </node>
@@ -257,6 +293,18 @@
       <node concept="srhaz" id="31IuPqk9Qke" role="9$BZW">
         <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
       </node>
+      <node concept="srhaz" id="1zJOpNEfu6T" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6V" role="9$BZW">
+        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu6Z" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu71" role="9$BZW">
+        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
@@ -283,6 +331,15 @@
         </node>
       </node>
       <node concept="srhaz" id="31IuPqk9Qkj" role="9$BZW">
+        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu75" role="9$BZW">
+        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu77" role="9$BZW">
+        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
+      </node>
+      <node concept="srhaz" id="1zJOpNEfu7b" role="9$BZW">
         <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
     </node>

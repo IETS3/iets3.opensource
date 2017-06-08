@@ -19,7 +19,6 @@
     <dependency reexport="false">89749848-cf4d-49ab-8c2b-7275de1b311d(org.iets3.flow.modelproperty.state)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:89749848-cf4d-49ab-8c2b-7275de1b311d:StatesTruthTable" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2374bc90-7e37-41f1-a9c4-c2e35194c36a:com.mbeddr.doc" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -36,6 +35,7 @@
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
+    <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
@@ -49,10 +49,13 @@
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.modelproperty.formulae" version="0" />
     <language slang="l:3e3749e5-96c0-4132-8c4a-7309a74f9fd6:org.iets3.flow.modelproperty.gxw" version="0" />
+    <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.modelproperty.req" version="0" />
+    <language slang="l:89749848-cf4d-49ab-8c2b-7275de1b311d:org.iets3.flow.modelproperty.state" version="0" />
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
     <language slang="l:7a870bb7-87b6-411e-92c2-eb3e9e856127:org.iets3.req.priority" version="0" />
     <language slang="l:f0094c7d-7df0-4fa9-9be7-4ba73a8db962:org.iets3.table.coolingbehaviortable" version="0" />
+    <language slang="l:af3ce814-fe75-4814-9ec9-1c4a57d0f39d:org.iets3.table.core" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
