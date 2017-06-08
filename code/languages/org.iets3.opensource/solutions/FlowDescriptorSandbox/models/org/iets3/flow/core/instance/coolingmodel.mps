@@ -105,6 +105,9 @@
       <node concept="fI48x" id="1YsMefKKY7j" role="fI48E">
         <ref role="fxKJO" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
       </node>
+      <node concept="fI48x" id="7djbR4ke18e" role="fI48E">
+        <ref role="fxKJO" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
+      </node>
       <node concept="ulk8C" id="38QI5jjPaAL" role="ulkQE">
         <property role="fwOFb" value="Create new requirements project" />
       </node>
