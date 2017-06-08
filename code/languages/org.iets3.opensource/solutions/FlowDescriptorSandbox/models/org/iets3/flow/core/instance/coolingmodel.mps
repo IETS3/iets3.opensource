@@ -42,11 +42,6 @@
         <child id="3369881559473997964" name="property" index="2DkB7w" />
       </concept>
     </language>
-    <language id="89749848-cf4d-49ab-8c2b-7275de1b311d" name="org.iets3.flow.modelproperty.state">
-      <concept id="5584738481645414572" name="org.iets3.flow.modelproperty.state.structure.AffectedConceptRef" flags="ng" index="srhaz">
-        <reference id="5584738481645414573" name="conceptToBeAffected" index="srhay" />
-      </concept>
-    </language>
     <language id="e8ac6d12-64b2-4478-bf9a-80cbf4ec8c16" name="org.iets3.flow.core">
       <concept id="1235726657816259832" name="org.iets3.flow.core.structure.NodeCreationProperty" flags="ng" index="fI48x">
         <reference id="1235726657816438061" name="conceptToBeCreated" index="fxKJO" />
@@ -56,7 +51,6 @@
       </concept>
       <concept id="4833124655349364971" name="org.iets3.flow.core.structure.FlowState" flags="ng" index="ulkQJ">
         <property id="8297182490504976684" name="startState" index="2O1_EJ" />
-        <child id="5931063332933804369" name="affectedConcepts" index="9$BZW" />
         <child id="1235726657816259827" name="listOfNewNodes" index="fI48E" />
         <child id="4833124655349364974" name="displayString" index="ulkQE" />
         <child id="4833124655349426470" name="propertyFormula" index="um_Ly" />
@@ -157,27 +151,6 @@
           </node>
         </node>
       </node>
-      <node concept="srhaz" id="31IuPqk9QjC" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="31IuPqk9QjG" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6h" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6l" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6n" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6r" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6t" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="6mLEnnuDUFU" role="ulkQK">
       <property role="TrG5h" value="Requirements model complete and glossary terms not defined" />
@@ -203,24 +176,6 @@
           </node>
         </node>
       </node>
-      <node concept="srhaz" id="31IuPqk9QjP" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="31IuPqk9QjU" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6x" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6z" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6B" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6D" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="4mvkNAhF8uM" role="ulkQK">
       <property role="TrG5h" value="Requirements model not complete and glossary terms defined" />
@@ -245,24 +200,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="srhaz" id="31IuPqk9QjZ" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="31IuPqk9Qk4" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6H" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6J" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6N" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6P" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7$v" role="ulkQK">
@@ -290,24 +227,6 @@
       <node concept="fI48x" id="3T5sQlfdis4" role="fI48E">
         <ref role="fxKJO" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
-      <node concept="srhaz" id="31IuPqk9Qk9" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="31IuPqk9Qke" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6T" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6V" role="9$BZW">
-        <ref role="srhay" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu6Z" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu71" role="9$BZW">
-        <ref role="srhay" to="tuf9:6zaFu4oPODm" resolve="GlossaryChunk" />
-      </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7_V" role="ulkQK">
       <property role="TrG5h" value="Empty functional behavior with Min and Max thresholds set" />
@@ -332,18 +251,6 @@
             <ref role="35c_gD" to="oehh:7tAIZp0bKOf" resolve="EmptyTableProperty" />
           </node>
         </node>
-      </node>
-      <node concept="srhaz" id="31IuPqk9Qkj" role="9$BZW">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu75" role="9$BZW">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu77" role="9$BZW">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
-      </node>
-      <node concept="srhaz" id="1zJOpNEfu7b" role="9$BZW">
-        <ref role="srhay" to="fivt:6svNLu5NGPX" resolve="CoolingBehaviorTable" />
       </node>
     </node>
     <node concept="ulkQJ" id="7tAIZp0e7Bp" role="ulkQK">
