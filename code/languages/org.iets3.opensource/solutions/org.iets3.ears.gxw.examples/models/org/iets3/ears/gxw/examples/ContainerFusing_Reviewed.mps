@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:42412ffd-ca74-4839-9881-7d5ac8e39853(org.iets3.ears.gxw.examples.ContainerFusingUpdated)">
+<model ref="r:4bd8b815-2b25-403c-8350-1fb291169cd1(org.iets3.ears.gxw.examples.ContainerFusing_Reviewed)">
   <persistence version="9" />
   <languages>
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
-    <use id="10211132-9b5e-427a-9b37-1c1f28794a5e" name="org.iets3.flow.dashboard" version="0" />
-    <use id="c020a239-d865-4312-adc3-cb4ab0a7a547" name="org.iets3.flow.modelproperty.formulae" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
   </languages>
-  <imports>
-    <import index="hxma" ref="r:afc3de6c-6429-4bb9-b26d-918b8ae8822c(org.iets3.flow.modelproperty.gxw.structure)" />
-    <import index="47lw" ref="r:afc6f445-2ccb-416f-bf5b-6cd26b99557c(org.iets3.flow.modelproperty.formulae.structure)" />
-    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -56,14 +48,13 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
-      <concept id="8544902788588847844" name="org.iets3.ears.gxw.structure.ComplexEventDrivenUntil" flags="ng" index="1cwdkO">
-        <child id="8544902788588855985" name="untilTrigger" index="1cwflx" />
-        <child id="8544902788588855979" name="triggerWhile" index="1cwflV" />
-        <child id="8544902788588855980" name="triggerWhen" index="1cwflW" />
-        <child id="8544902788588855981" name="systemResponse" index="1cwflX" />
-      </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="9190636705088547490" name="org.iets3.ears.gxw.structure.Happens" flags="ng" index="3tWTB1" />
+      <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
+        <child id="1333452220594854533" name="systemResponse" index="3v0$kZ" />
+        <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
+        <child id="1333452220594854527" name="triggerWhen" index="3v0$n5" />
+      </concept>
       <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.Axiom" flags="ng" index="1JDFFW">
         <reference id="1618831278224729393" name="systemName" index="1J_PH9" />
         <child id="1618831278223899996" name="arg2" index="1JD8c$" />
@@ -94,26 +85,52 @@
       <concept id="3691935882243834785" name="org.iets3.ears.gxw.structure.NotFormulaTr" flags="ng" index="3T_uuY" />
     </language>
   </registry>
-  <node concept="2skrmn" id="1pRfBxTLTzD">
-    <property role="TrG5h" value="Glossary For Liquid Mixer" />
+  <node concept="2skrmn" id="5ByxUIEmNLj">
     <property role="$xNHY" value="liquid mixer controller" />
-    <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
-      <property role="OJvIS" value="one minute timer expires" />
+    <property role="TrG5h" value="Glossary For Liquid Mixer" />
+    <node concept="1JDFFW" id="oMRsWNTJOx" role="1JDDoy">
+      <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
+      <node concept="OJJ_U" id="5ByxUIErCkx" role="1JD8cJ">
+        <ref role="OJJ_O" node="7HbJNetZtsI" />
+      </node>
+      <node concept="OJJ_J" id="oMRsWNTJOE" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIErCk$" role="9Cqx7">
+          <ref role="OJJ_O" node="1pRfBxTOo8j" />
+        </node>
+      </node>
     </node>
-    <node concept="otU$d" id="34ScOrO_opj" role="2skrmg">
-      <property role="OJvIS" value="two minute timer expires" />
+    <node concept="1JDFFW" id="oMRsWNTJOP" role="1JDDoy">
+      <ref role="1J_PH9" node="34ScOrO_oot" resolve="valve 1" />
+      <node concept="OJJ_U" id="5ByxUIErCkB" role="1JD8cJ">
+        <ref role="OJJ_O" node="7HbJNetZtsV" />
+      </node>
+      <node concept="OJJ_J" id="oMRsWNTJP2" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIErCkE" role="9Cqx7">
+          <ref role="OJJ_O" node="1pRfBxTOo8E" />
+        </node>
+      </node>
     </node>
-    <node concept="otU$d" id="34ScOrO_opG" role="2skrmg">
-      <property role="OJvIS" value="start button is pressed" />
+    <node concept="1JDFFW" id="oMRsWNTJPa" role="1JDDoy">
+      <ref role="1J_PH9" node="34ScOrO_ooI" resolve="valve 2" />
+      <node concept="OJJ_U" id="5ByxUIErCkH" role="1JD8cJ">
+        <ref role="OJJ_O" node="7HbJNetZttc" />
+      </node>
+      <node concept="OJJ_J" id="oMRsWNU5uD" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIErCkK" role="9Cqx7">
+          <ref role="OJJ_O" node="1pRfBxTOo8Y" />
+        </node>
+      </node>
     </node>
-    <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
-      <property role="OJvIS" value="liquid level 1 is reached" />
-    </node>
-    <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
-      <property role="OJvIS" value="liquid level 2 is reached" />
-    </node>
-    <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
-      <property role="OJvIS" value="emergency button is pressed" />
+    <node concept="1JDFFW" id="oMRsWNTJPu" role="1JDDoy">
+      <ref role="1J_PH9" node="34ScOrO_op0" resolve="stirring motor" />
+      <node concept="OJJ_U" id="5ByxUIErCkN" role="1JD8cJ">
+        <ref role="OJJ_O" node="1qavb4eyKmf" />
+      </node>
+      <node concept="OJJ_J" id="oMRsWNTJPM" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIErCkQ" role="9Cqx7">
+          <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
+        </node>
+      </node>
     </node>
     <node concept="otU$0" id="7HbJNetZtsI" role="2skrmv">
       <property role="Nkej4" value="open" />
@@ -155,6 +172,24 @@
       <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
+    <node concept="otU$d" id="34ScOrO_opg" role="2skrmg">
+      <property role="OJvIS" value="one minute timer expires" />
+    </node>
+    <node concept="otU$d" id="34ScOrO_opj" role="2skrmg">
+      <property role="OJvIS" value="two minute timer expires" />
+    </node>
+    <node concept="otU$d" id="34ScOrO_opG" role="2skrmg">
+      <property role="OJvIS" value="start button is pressed" />
+    </node>
+    <node concept="otU$d" id="34ScOrO_oqN" role="2skrmg">
+      <property role="OJvIS" value="liquid level 1 is reached" />
+    </node>
+    <node concept="otU$d" id="34ScOrO_orh" role="2skrmg">
+      <property role="OJvIS" value="liquid level 2 is reached" />
+    </node>
+    <node concept="otU$d" id="34ScOrO_otc" role="2skrmg">
+      <property role="OJvIS" value="emergency button is pressed" />
+    </node>
     <node concept="2uIZ38" id="7YbGQey_vrY" role="2skrmi">
       <property role="TrG5h" value="emergency button" />
       <property role="2uI0VX" value="the emergency button" />
@@ -195,71 +230,24 @@
       <property role="TrG5h" value="two minute timer" />
       <property role="2uI0VX" value="the timer for 120 sec" />
     </node>
-    <node concept="1JDFFW" id="oMRsWNTJOx" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="OJJ_U" id="oMRsWNTJOB" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZtsI" />
-      </node>
-      <node concept="OJJ_J" id="oMRsWNTJOE" role="1JD8c$">
-        <node concept="OJJ_U" id="oMRsWNTJOM" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8j" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="oMRsWNTJOP" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="OJJ_U" id="oMRsWNTJOZ" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZtsV" />
-      </node>
-      <node concept="OJJ_J" id="oMRsWNTJP2" role="1JD8c$">
-        <node concept="OJJ_U" id="oMRsWNTJP7" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8E" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="oMRsWNTJPa" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="OJJ_U" id="oMRsWNTJPo" role="1JD8cJ">
-        <ref role="OJJ_O" node="7HbJNetZttc" />
-      </node>
-      <node concept="OJJ_J" id="oMRsWNU5uD" role="1JD8c$">
-        <node concept="OJJ_U" id="oMRsWNU5uI" role="9Cqx7">
-          <ref role="OJJ_O" node="1pRfBxTOo8Y" />
-        </node>
-      </node>
-    </node>
-    <node concept="1JDFFW" id="oMRsWNTJPu" role="1JDDoy">
-      <ref role="1J_PH9" node="34ScOrO_op0" resolve="stirring motor" />
-      <node concept="OJJ_U" id="oMRsWNTJPJ" role="1JD8cJ">
-        <ref role="OJJ_O" node="1qavb4eyKmf" />
-      </node>
-      <node concept="OJJ_J" id="oMRsWNTJPM" role="1JD8c$">
-        <node concept="OJJ_U" id="oMRsWNTJPR" role="9Cqx7">
-          <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
-        </node>
-      </node>
-    </node>
   </node>
-  <node concept="OJ2fN" id="1pRfBxTLTzE">
+  <node concept="OJ2fN" id="5ByxUIErCkT">
     <property role="TrG5h" value="liquid mixer controller" />
-    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Liquid Mixer" />
-    <node concept="1cwdkO" id="1lmxzlaj6Hk" role="OJ2fO">
-      <property role="1hs7$j" value="liquid mixer controller" />
+    <ref role="9DKRw" node="5ByxUIEmNLj" resolve="Glossary For Liquid Mixer" />
+    <node concept="3v0$t_" id="5ByxUIErCmK" role="OJ2fO">
       <property role="eBQts" value="Req1" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="3T_uuY" id="1lmxzlaj6Ip" role="1cwflV">
-        <node concept="3T_uu0" id="1lmxzlaj6Iu" role="3T_uuK">
+      <node concept="3T_uuY" id="5ByxUIErCnH" role="3v0$n0">
+        <node concept="3T_uu0" id="5ByxUIErCnL" role="3T_uuK">
           <ref role="3T_uuC" node="34ScOrO_oqN" />
         </node>
       </node>
-      <node concept="3T_uu0" id="1lmxzlaj6Ix" role="1cwflW">
+      <node concept="3T_uu0" id="5ByxUIErCnO" role="3v0$n5">
         <ref role="3T_uuC" node="34ScOrO_opG" />
       </node>
-      <node concept="OJJ_U" id="1lmxzlaj6I$" role="1cwflX">
+      <node concept="OJJ_U" id="5ByxUIErCnQ" role="3v0$kZ">
         <ref role="OJJ_O" node="7HbJNetZtsI" />
-      </node>
-      <node concept="3T_uu0" id="1lmxzlaj6IB" role="1cwflx">
-        <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
@@ -267,30 +255,27 @@
       <property role="eBQts" value="Req2 " />
       <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3t3aUO" id="1pRfBxTOo82" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6f" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIErCxI" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8j" />
       </node>
       <node concept="3T_uu0" id="1pRfBxTOo86" role="3tOtb8">
         <ref role="3T_uuC" node="34ScOrO_oqN" />
       </node>
     </node>
-    <node concept="1cwdkO" id="1lmxzlaj6Kw" role="OJ2fO">
-      <property role="1hs7$j" value="liquid mixer controller" />
+    <node concept="3v0$t_" id="5ByxUIErCyG" role="OJ2fO">
       <property role="eBQts" value="Req3" />
+      <property role="1hs7$j" value="liquid mixer controller" />
       <ref role="1Qhi4P" node="34ScOrO_oot" resolve="valve 1" />
-      <node concept="3T_uuY" id="1lmxzlaj6L_" role="1cwflV">
-        <node concept="3T_uu0" id="1lmxzlaj6LE" role="3T_uuK">
+      <node concept="3T_uuY" id="5ByxUIErCzC" role="3v0$n0">
+        <node concept="3T_uu0" id="5ByxUIErCzG" role="3T_uuK">
           <ref role="3T_uuC" node="34ScOrO_orh" />
         </node>
       </node>
-      <node concept="3T_uu0" id="1lmxzlaj6LH" role="1cwflW">
+      <node concept="3T_uu0" id="5ByxUIErCzJ" role="3v0$n5">
         <ref role="3T_uuC" node="34ScOrO_oqN" />
       </node>
-      <node concept="OJJ_U" id="1lmxzlaj6LK" role="1cwflX">
+      <node concept="OJJ_U" id="5ByxUIErCzL" role="3v0$kZ">
         <ref role="OJJ_O" node="7HbJNetZtsV" />
-      </node>
-      <node concept="3T_uu0" id="1lmxzlaj6LN" role="1cwflx">
-        <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
     </node>
     <node concept="sEiiz" id="1pRfBxTOodo" role="OJ2fO">
@@ -301,7 +286,7 @@
         <ref role="3T_uuC" node="34ScOrO_orh" />
       </node>
       <node concept="3t3aUO" id="1pRfBxTOoev" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6l" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdgV" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8E" />
       </node>
     </node>
@@ -312,17 +297,9 @@
         <ref role="3T_uuC" node="34ScOrO_orh" />
       </node>
       <node concept="3t3aUO" id="1qavb4elWSm" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6o" role="oLToJ">
+      <node concept="OJJ_U" id="5ByxUIExdgY" role="oLToJ">
         <ref role="OJJ_O" node="7HbJNetZt_t" />
       </node>
-    </node>
-    <node concept="oLToE" id="5ByxUIErJih" role="OJ2fO">
-      <property role="eBQts" value="Req5" />
-      <ref role="1Qhi4P" node="34ScOrO_ow4" resolve="one minute timer" />
-      <node concept="3T_uu0" id="5ByxUIErJje" role="oLToI">
-        <ref role="3T_uuC" node="34ScOrO_orh" />
-      </node>
-      <node concept="3t3aUO" id="5ByxUIErJjg" role="3tWTBb" />
     </node>
     <node concept="1QfkUo" id="6thveTDNxGJ" role="OJ2fO">
       <property role="1hs7$j" value="liquid mixer controller" />
@@ -332,7 +309,7 @@
         <ref role="3T_uuC" node="34ScOrO_orh" />
       </node>
       <node concept="3tWTB1" id="6thveTDNxGL" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6r" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdh1" role="1QgFCz">
         <ref role="OJJ_O" node="1qavb4eyKmf" />
       </node>
       <node concept="3T_uuX" id="7ql_X0UmrCc" role="3T_IbW">
@@ -347,7 +324,7 @@
     <node concept="oLToE" id="1qavb4emVHa" role="OJ2fO">
       <property role="eBQts" value="Req7 " />
       <ref role="1Qhi4P" node="1qavb4emVGY" resolve="two minute timer" />
-      <node concept="OJJ_U" id="1lmxzlagd6u" role="oLToJ">
+      <node concept="OJJ_U" id="5ByxUIExdh4" role="oLToJ">
         <ref role="OJJ_O" node="7HbJNetZtHS" />
       </node>
       <node concept="3T_uu0" id="1qavb4emVHK" role="oLToI">
@@ -359,7 +336,7 @@
       <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req8 " />
       <ref role="1Qhi4P" node="34ScOrO_ooI" resolve="valve 2" />
-      <node concept="OJJ_U" id="1lmxzlagd6x" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdh7" role="1QgFCz">
         <ref role="OJJ_O" node="7HbJNetZttc" />
       </node>
       <node concept="3T_uu0" id="6thveTDNxHK" role="3tOtb8">
@@ -383,7 +360,7 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw0yO" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6$" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdha" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8j" />
       </node>
     </node>
@@ -395,7 +372,7 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2j7" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6B" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdhd" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8E" />
       </node>
     </node>
@@ -407,7 +384,7 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2l7" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6E" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdhg" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8Y" />
       </node>
     </node>
@@ -419,7 +396,7 @@
         <ref role="3T_uuC" node="34ScOrO_otc" />
       </node>
       <node concept="3t3aUO" id="Sr3WmIw2nh" role="3tWTBb" />
-      <node concept="OJJ_U" id="1lmxzlagd6H" role="1QgFCz">
+      <node concept="OJJ_U" id="5ByxUIExdhj" role="1QgFCz">
         <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
       </node>
     </node>

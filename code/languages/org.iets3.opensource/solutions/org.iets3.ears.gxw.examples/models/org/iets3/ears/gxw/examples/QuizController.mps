@@ -176,7 +176,7 @@
     </node>
   </node>
   <node concept="OJ2fN" id="7R851$_ioKy">
-    <property role="TrG5h" value="Requirement for Quiz Controller" />
+    <property role="TrG5h" value="quiz controller" />
     <ref role="9DKRw" node="7R851$_ioKx" resolve="Glossary for Quiz Controller" />
     <node concept="1cwdkO" id="7R851$_ioLe" role="OJ2fO">
       <property role="eBQts" value="req1" />
