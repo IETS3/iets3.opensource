@@ -160,6 +160,8 @@
       <concept id="1019070541450015930" name="org.iets3.core.expr.base.structure.TupleType" flags="ng" index="m5gfS">
         <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
       </concept>
+      <concept id="7782108600712067692" name="org.iets3.core.expr.base.structure.DeRefTarget" flags="ng" index="n2Y3A" />
+      <concept id="7782108600709141067" name="org.iets3.core.expr.base.structure.MakeRefTarget" flags="ng" index="ne4z1" />
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -416,6 +418,9 @@
       <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
       </concept>
+      <concept id="7782108600709718604" name="org.iets3.core.expr.toplevel.structure.ReferenceableFlag" flags="ng" index="nbNz6">
+        <reference id="7782108600710563457" name="idMember" index="n8xKb" />
+      </concept>
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
       </concept>
@@ -437,7 +442,9 @@
         <reference id="8811147530084018371" name="record" index="2Ss9cX" />
       </concept>
       <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
-      <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8" />
+      <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8">
+        <child id="7782108600709718635" name="refFlag" index="nbNzx" />
+      </concept>
       <concept id="1024425597324739336" name="org.iets3.core.expr.toplevel.structure.RecordMemberRefInConstraint" flags="ng" index="XrbUJ">
         <reference id="1024425597324739346" name="member" index="XrbUP" />
       </concept>
@@ -19329,6 +19336,127 @@
       </node>
       <node concept="Qb7k7" id="21vB0Vz74t2" role="q3PPx">
         <property role="Qb7k6" value="66" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6JZACDWVYZk">
+    <property role="TrG5h" value="references" />
+    <node concept="1qefOq" id="6JZACDWVYZl" role="1SKRRt">
+      <node concept="_iOnU" id="6JZACDWVYZm" role="1qenE9">
+        <property role="TrG5h" value="references" />
+        <property role="2SXJ1i" value="true" />
+        <property role="1XBH2A" value="true" />
+        <node concept="2Ss9d8" id="6JZACDWVZt$" role="_iOnB">
+          <property role="TrG5h" value="Person" />
+          <node concept="2Ss9d7" id="6JZACDWVZtR" role="S5Trm">
+            <property role="TrG5h" value="name" />
+            <node concept="30bdrU" id="6JZACDWVZu0" role="2S399n" />
+          </node>
+          <node concept="2Ss9d7" id="6JZACDWVZun" role="S5Trm">
+            <property role="TrG5h" value="firstName" />
+            <node concept="30bdrU" id="6JZACDWVZuB" role="2S399n" />
+          </node>
+          <node concept="nbNz6" id="6JZACDWVZ_m" role="nbNzx">
+            <ref role="n8xKb" node="6JZACDWVZtR" resolve="name" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="6JZACDWVZuJ" role="_iOnB" />
+        <node concept="2zPypq" id="6JZACDWVZv8" role="_iOnB">
+          <property role="TrG5h" value="p1" />
+          <node concept="2S399m" id="6JZACDWVZvy" role="2zPyp_">
+            <node concept="2Ss9cW" id="6JZACDWVZvC" role="2S399n">
+              <ref role="2Ss9cX" node="6JZACDWVZt$" resolve="Person" />
+            </node>
+            <node concept="30bdrP" id="6JZACDWVZvS" role="2S399l">
+              <property role="30bdrQ" value="Last" />
+            </node>
+            <node concept="30bdrP" id="6JZACDWVZxc" role="2S399l">
+              <property role="30bdrQ" value="First" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="6JZACDWVZyp" role="_iOnB">
+          <property role="TrG5h" value="rp1" />
+          <node concept="1QScDb" id="6JZACDWVZz7" role="2zPyp_">
+            <node concept="ne4z1" id="6JZACDWVZ$k" role="1QScD9" />
+            <node concept="_emDc" id="6JZACDWVZyV" role="30czhm">
+              <ref role="_emDf" node="6JZACDWVZv8" resolve="p1" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="6JZACDWVZt3" role="_iOnB" />
+        <node concept="_ixoA" id="6JZACDWVZsY" role="_iOnB" />
+        <node concept="_fkuM" id="6JZACDWVYZw" role="_iOnB">
+          <property role="TrG5h" value="ref" />
+          <node concept="_fkuZ" id="6JZACDWVZBm" role="_fkp5">
+            <node concept="_fku$" id="6JZACDWVZBn" role="_fkur" />
+            <node concept="1QScDb" id="6JZACDWVZBU" role="_fkuY">
+              <node concept="3o_JK" id="6JZACDWVZDl" role="1QScD9">
+                <ref role="3o_JH" node="6JZACDWVZtR" resolve="name" />
+              </node>
+              <node concept="_emDc" id="6JZACDWVZBI" role="30czhm">
+                <ref role="_emDf" node="6JZACDWVZyp" resolve="rp1" />
+              </node>
+            </node>
+            <node concept="30bdrP" id="6JZACDWVZEO" role="_fkuS">
+              <property role="30bdrQ" value="Last" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="6JZACDWX7$C" role="_fkp5">
+            <node concept="_fku$" id="6JZACDWX7$D" role="_fkur" />
+            <node concept="1QScDb" id="6JZACDWX7$E" role="_fkuY">
+              <node concept="3o_JK" id="6JZACDWX7_G" role="1QScD9">
+                <ref role="3o_JH" node="6JZACDWVZun" resolve="firstName" />
+              </node>
+              <node concept="_emDc" id="6JZACDWX7$G" role="30czhm">
+                <ref role="_emDf" node="6JZACDWVZyp" resolve="rp1" />
+              </node>
+            </node>
+            <node concept="30bdrP" id="6JZACDWX7$H" role="_fkuS">
+              <property role="30bdrQ" value="First" />
+            </node>
+          </node>
+        </node>
+        <node concept="_fkuM" id="6JZACDX0fyw" role="_iOnB">
+          <property role="TrG5h" value="deref" />
+          <node concept="_fkuZ" id="6JZACDX0fyx" role="_fkp5">
+            <node concept="_fku$" id="6JZACDX0fyy" role="_fkur" />
+            <node concept="1QScDb" id="6JZACDX0fyz" role="_fkuY">
+              <node concept="3o_JK" id="6JZACDX0fy$" role="1QScD9">
+                <ref role="3o_JH" node="6JZACDWVZtR" resolve="name" />
+              </node>
+              <node concept="1QScDb" id="6JZACDXejXt" role="30czhm">
+                <node concept="n2Y3A" id="6JZACDXek0z" role="1QScD9" />
+                <node concept="_emDc" id="6JZACDX0fy_" role="30czhm">
+                  <ref role="_emDf" node="6JZACDWVZyp" resolve="rp1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="6JZACDX0fyA" role="_fkuS">
+              <property role="30bdrQ" value="Last" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="6JZACDX0fyB" role="_fkp5">
+            <node concept="_fku$" id="6JZACDX0fyC" role="_fkur" />
+            <node concept="1QScDb" id="6JZACDX0fyD" role="_fkuY">
+              <node concept="3o_JK" id="6JZACDX0fyE" role="1QScD9">
+                <ref role="3o_JH" node="6JZACDWVZun" resolve="firstName" />
+              </node>
+              <node concept="1QScDb" id="6JZACDXhlcf" role="30czhm">
+                <node concept="n2Y3A" id="6JZACDXhlfp" role="1QScD9" />
+                <node concept="_emDc" id="6JZACDX0fyF" role="30czhm">
+                  <ref role="_emDf" node="6JZACDWVZyp" resolve="rp1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="6JZACDX0fyG" role="_fkuS">
+              <property role="30bdrQ" value="First" />
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="6JZACDWVYZW" role="lGtFl">
+          <node concept="7OXhh" id="6JZACDWVYZX" role="7EUXB" />
+        </node>
       </node>
     </node>
   </node>

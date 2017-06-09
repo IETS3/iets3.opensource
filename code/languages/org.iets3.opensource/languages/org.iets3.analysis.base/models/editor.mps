@@ -2,9 +2,9 @@
 <model ref="r:d5e9e54b-cab2-4bc4-800f-1952f775974d(org.iets3.analysis.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -29,6 +29,9 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
@@ -117,7 +120,7 @@
         <ref role="1ERwB7" node="3DYDRw0XrFI" resolve="deleteSolverControl" />
         <node concept="l2Vlx" id="3DYDRw0WRuO" role="2iSdaV" />
         <node concept="3F0ifn" id="3DYDRw0WRsw" role="3EZMnx">
-          <property role="3F0ifm" value="@solve" />
+          <property role="3F0ifm" value="@solver:" />
           <ref role="1ERwB7" node="3DYDRw0XrFI" resolve="deleteSolverControl" />
           <node concept="VechU" id="3DYDRw0WRuf" role="3F10Kt">
             <property role="Vb096" value="red" />
@@ -127,6 +130,9 @@
           <ref role="1NtTu8" to="l80j:3DYDRw0WRuK" resolve="mode" />
           <node concept="VechU" id="3DYDRw0WRw6" role="3F10Kt">
             <property role="Vb096" value="red" />
+          </node>
+          <node concept="Vb9p2" id="2GQBRFARI_x" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
           </node>
         </node>
       </node>

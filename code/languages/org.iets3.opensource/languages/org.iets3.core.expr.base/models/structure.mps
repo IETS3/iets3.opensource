@@ -363,6 +363,9 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8379605524044170035" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="6JZACDWQTyz" role="PzmwI">
+      <ref role="PrY4T" node="6JZACDWQJu4" resolve="ILiteral" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6rGLT0TevEL">
     <property role="TrG5h" value="IRef" />
@@ -1293,6 +1296,49 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JZACDWIfNW">
+    <property role="EcuMT" value="7782108600708168956" />
+    <property role="3GE5qa" value="ref" />
+    <property role="TrG5h" value="ReferenceType" />
+    <property role="34LRSv" value="ref" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="6JZACDWIfNX" role="1TKVEi">
+      <property role="IQ2ns" value="7782108600708168957" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6JZACDWIq3Y">
+    <property role="EcuMT" value="7782108600708210942" />
+    <property role="3GE5qa" value="ref" />
+    <property role="TrG5h" value="IReferenceableType" />
+  </node>
+  <node concept="1TIwiD" id="6JZACDWLX9b">
+    <property role="EcuMT" value="7782108600709141067" />
+    <property role="3GE5qa" value="ref" />
+    <property role="TrG5h" value="MakeRefTarget" />
+    <property role="34LRSv" value="ref" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6JZACDWLX9i" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6JZACDWQJu4">
+    <property role="EcuMT" value="7782108600710395780" />
+    <property role="TrG5h" value="ILiteral" />
+  </node>
+  <node concept="1TIwiD" id="6JZACDWX7DG">
+    <property role="EcuMT" value="7782108600712067692" />
+    <property role="3GE5qa" value="ref" />
+    <property role="TrG5h" value="DeRefTarget" />
+    <property role="34LRSv" value="deref" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6JZACDWX7DH" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>
