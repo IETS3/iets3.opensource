@@ -94,34 +94,41 @@
   </node>
   <node concept="1TIwiD" id="UoN5smVQln">
     <property role="3GE5qa" value="ReqProperties" />
-    <property role="TrG5h" value="SystemResponse" />
+    <property role="TrG5h" value="ComponentResponse" />
     <property role="EcuMT" value="1051815187410019671" />
     <node concept="1TJgyj" id="6KxW$9vshq4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="systemName" />
+      <property role="20kJfa" value="componentName" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7791775197210678916" />
-      <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="ComponentName" />
     </node>
     <node concept="1TJgyi" id="6KxW$9vshq6" role="1TKVEl">
-      <property role="TrG5h" value="action" />
+      <property role="TrG5h" value="response" />
       <property role="IQ2nx" value="7791775197210678918" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="UoN5smVQlq">
     <property role="3GE5qa" value="ReqProperties" />
-    <property role="TrG5h" value="Trigger" />
+    <property role="TrG5h" value="ComponentTrigger" />
     <property role="EcuMT" value="1051815187410019674" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5QnDqxDa_Sg" role="1TKVEl">
-      <property role="TrG5h" value="text" />
+      <property role="TrG5h" value="trigger" />
       <property role="IQ2nx" value="6744041109748080144" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="5ByxUIExdkT" role="1TKVEi">
+      <property role="IQ2ns" value="6476888385482183993" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="componentName" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="ComponentName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="31AjmEIRrQy">
-    <property role="TrG5h" value="SystemName" />
+    <property role="TrG5h" value="ComponentName" />
     <property role="3GE5qa" value="ReqProperties" />
     <property role="EcuMT" value="3487560082040667554" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -149,21 +156,21 @@
       <property role="20kJfa" value="listOfTriggers" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="135049047333306356" />
-      <ref role="20lvS9" node="UoN5smVQlq" resolve="Trigger" />
+      <ref role="20lvS9" node="UoN5smVQlq" resolve="ComponentTrigger" />
     </node>
     <node concept="1TJgyj" id="7vMAitzBZQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="listOfComponents" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="135049047333306358" />
-      <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="ComponentName" />
     </node>
     <node concept="1TJgyj" id="7vMAitzBZV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="listOfResponses" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="135049047333306363" />
-      <ref role="20lvS9" node="UoN5smVQln" resolve="SystemResponse" />
+      <ref role="20lvS9" node="UoN5smVQln" resolve="ComponentResponse" />
     </node>
     <node concept="1TJgyj" id="1pRfBxTOqxq" role="1TKVEi">
       <property role="IQ2ns" value="1618831278223763546" />
@@ -258,7 +265,7 @@
       <property role="20kJfa" value="atom" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6744041109748014300" />
-      <ref role="20lvS9" node="UoN5smVQln" resolve="SystemResponse" />
+      <ref role="20lvS9" node="UoN5smVQln" resolve="ComponentResponse" />
     </node>
     <node concept="PrWs8" id="6_TIzovfkJh" role="PzmwI">
       <ref role="PrY4T" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
@@ -303,7 +310,7 @@
       <property role="20kJfa" value="systemName" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7600310587779488515" />
-      <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="ComponentName" />
     </node>
     <node concept="1TJgyi" id="6thveTDNxIM" role="1TKVEl">
       <property role="IQ2nx" value="7444869022439316402" />
@@ -369,7 +376,7 @@
       <property role="20kJfa" value="atom" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="3691935882243834807" />
-      <ref role="20lvS9" node="UoN5smVQlq" resolve="Trigger" />
+      <ref role="20lvS9" node="UoN5smVQlq" resolve="ComponentTrigger" />
     </node>
     <node concept="PrWs8" id="3cWp1ZaEI5b" role="PzmwI">
       <ref role="PrY4T" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
@@ -588,7 +595,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="systemName" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="31AjmEIRrQy" resolve="SystemName" />
+      <ref role="20lvS9" node="31AjmEIRrQy" resolve="ComponentName" />
     </node>
   </node>
   <node concept="1TIwiD" id="7ql_X0U5kb$">
