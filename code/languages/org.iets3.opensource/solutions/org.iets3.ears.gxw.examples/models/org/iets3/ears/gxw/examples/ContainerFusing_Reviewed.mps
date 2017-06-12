@@ -33,7 +33,7 @@
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="systemResponse" index="1QgFCz" />
+        <child id="7600310587779383317" name="response" index="1QgFCz" />
       </concept>
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
@@ -42,9 +42,14 @@
         <reference id="2964597654736293948" name="glossary" index="9DKRw" />
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
       </concept>
+      <concept id="6744041109748014275" name="org.iets3.ears.gxw.structure.BinaryFormulaSR" flags="ng" index="OJJ_F">
+        <child id="2964597654736467342" name="arg2" index="9Cqxi" />
+        <child id="2964597654736467335" name="arg1" index="9Cqxr" />
+      </concept>
       <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
         <child id="2964597654736467355" name="arg" index="9Cqx7" />
       </concept>
+      <concept id="6744041109748014277" name="org.iets3.ears.gxw.structure.AndFormulaSR" flags="ng" index="OJJ_H" />
       <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
@@ -81,6 +86,7 @@
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
         <reference id="3691935882243834807" name="atom" index="3T_uuC" />
       </concept>
+      <concept id="3691935882243834782" name="org.iets3.ears.gxw.structure.AndFormulaTr" flags="ng" index="3T_uu1" />
       <concept id="3691935882243834792" name="org.iets3.ears.gxw.structure.UnaryFormulaTr" flags="ng" index="3T_uuR">
         <child id="3691935882243834799" name="arg" index="3T_uuK" />
       </concept>
@@ -95,6 +101,16 @@
   <node concept="2skrmn" id="5ByxUIEmNLj">
     <property role="$xNHY" value="liquid mixer controller" />
     <property role="TrG5h" value="Glossary For Liquid Mixer" />
+    <node concept="1JDFFW" id="5ByxUIF_X2L" role="1JDDoy">
+      <node concept="OJJ_U" id="5ByxUIF_X3k" role="1JD8cJ">
+        <ref role="OJJ_O" node="1pRfBxTOo8j" />
+      </node>
+      <node concept="OJJ_J" id="5ByxUIF_X3n" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIF_X3s" role="9Cqx7">
+          <ref role="OJJ_O" node="7HbJNetZtsI" />
+        </node>
+      </node>
+    </node>
     <node concept="1JDFFW" id="5ByxUIFeC2V" role="1JDDoy">
       <ref role="1J_PH9" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="OJJ_J" id="5ByxUIFmJgN" role="1JD8cJ">
@@ -171,6 +187,17 @@
       </node>
       <node concept="3T_uu0" id="5ByxUIFmRHE" role="3MLHNk">
         <ref role="3T_uuC" node="5ByxUIED1bq" />
+      </node>
+    </node>
+    <node concept="1JDFFW" id="5ByxUIF_NdU" role="1JDDoy">
+      <ref role="1J_PH9" node="34ScOrO_op0" resolve="stirring motor" />
+      <node concept="OJJ_U" id="5ByxUIF_Nep" role="1JD8cJ">
+        <ref role="OJJ_O" node="1qavb4eyKmf" />
+      </node>
+      <node concept="OJJ_J" id="5ByxUIF_Nev" role="1JD8c$">
+        <node concept="OJJ_U" id="5ByxUIF_Ne$" role="9Cqx7">
+          <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
+        </node>
       </node>
     </node>
     <node concept="otU$0" id="7HbJNetZtsI" role="2skrmv">
@@ -277,32 +304,26 @@
   <node concept="OJ2fN" id="5ByxUIErCkT">
     <property role="TrG5h" value="liquid mixer controller" />
     <ref role="9DKRw" node="5ByxUIEmNLj" resolve="Glossary For Liquid Mixer" />
-    <node concept="3v0$t_" id="5ByxUIErCmK" role="OJ2fO">
+    <node concept="3v0$t_" id="5ByxUIFAlsQ" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <property role="1hs7$j" value="liquid mixer controller" />
-      <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="3T_uuY" id="5ByxUIErCnH" role="3v0$n0">
-        <node concept="3T_uu0" id="5ByxUIErCnL" role="3T_uuK">
-          <ref role="3T_uuC" node="34ScOrO_oqN" />
-        </node>
+      <node concept="3T_uu0" id="5ByxUIFAltR" role="3v0$n0">
+        <ref role="3T_uuC" node="5ByxUIED1b6" />
       </node>
-      <node concept="3T_uu0" id="5ByxUIErCnO" role="3v0$n5">
-        <ref role="3T_uuC" node="34ScOrO_opG" />
+      <node concept="3T_uu0" id="5ByxUIFAltT" role="3v0$n5">
+        <ref role="3T_uuC" node="5ByxUIED1al" />
       </node>
-      <node concept="OJJ_U" id="5ByxUIErCnQ" role="3v0$kZ">
+      <node concept="OJJ_U" id="5ByxUIFAltV" role="3v0$kZ">
         <ref role="OJJ_O" node="7HbJNetZtsI" />
       </node>
     </node>
-    <node concept="sEiiz" id="1pRfBxTOo6Y" role="OJ2fO">
-      <property role="1hs7$j" value="liquid mixer controller" />
-      <property role="eBQts" value="Req2 " />
-      <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
-      <node concept="3t3aUO" id="1pRfBxTOo82" role="3tWTBb" />
-      <node concept="OJJ_U" id="5ByxUIErCxI" role="1QgFCz">
-        <ref role="OJJ_O" node="1pRfBxTOo8j" />
+    <node concept="sEiiz" id="5ByxUIFAlw0" role="OJ2fO">
+      <property role="eBQts" value="Req2" />
+      <node concept="3T_uu0" id="5ByxUIFAlx1" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIED1a$" />
       </node>
-      <node concept="3T_uu0" id="1pRfBxTOo86" role="3tOtb8">
-        <ref role="3T_uuC" node="34ScOrO_oqN" />
+      <node concept="3t3aUO" id="5ByxUIFAlx3" role="3tWTBb" />
+      <node concept="OJJ_U" id="5ByxUIFAlx5" role="1QgFCz">
+        <ref role="OJJ_O" node="1pRfBxTOo8j" />
       </node>
     </node>
     <node concept="3v0$t_" id="5ByxUIErCyG" role="OJ2fO">
@@ -441,6 +462,24 @@
       <node concept="3t3aUO" id="Sr3WmIw2nh" role="3tWTBb" />
       <node concept="OJJ_U" id="5ByxUIExdhj" role="1QgFCz">
         <ref role="OJJ_O" node="7Ja$Zlvj5E9" />
+      </node>
+    </node>
+    <node concept="sEiiz" id="5ByxUIF_N5P" role="OJ2fO">
+      <node concept="3T_uu1" id="5ByxUIFAdiW" role="3tOtb8">
+        <node concept="3T_uu0" id="5ByxUIFAdj2" role="3T_uuQ">
+          <ref role="3T_uuC" node="5ByxUIED1bH" />
+        </node>
+        <node concept="3T_uu0" id="5ByxUIFAdj5" role="3T_uuP">
+          <ref role="3T_uuC" node="5ByxUIED1b6" />
+        </node>
+      </node>
+      <node concept="OJJ_H" id="5ByxUIFAj1M" role="1QgFCz">
+        <node concept="OJJ_U" id="5ByxUIFAj1S" role="9Cqxr">
+          <ref role="OJJ_O" node="1pRfBxTOo8j" />
+        </node>
+        <node concept="OJJ_U" id="5ByxUIFAj1V" role="9Cqxi">
+          <ref role="OJJ_O" node="1pRfBxTOo8E" />
+        </node>
       </node>
     </node>
   </node>
