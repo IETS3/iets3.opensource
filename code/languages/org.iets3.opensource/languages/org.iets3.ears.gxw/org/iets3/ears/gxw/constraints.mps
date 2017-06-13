@@ -1088,5 +1088,9 @@
     <property role="3GE5qa" value="PropositionalLogicSR" />
     <ref role="1M2myG" to="q3w4:5QnDqxDalN2" resolve="PropositionalFormulaSR" />
   </node>
+  <node concept="1M2fIO" id="5ByxUIFAm5s">
+    <property role="3GE5qa" value="TemplatesEventDriven" />
+    <ref role="1M2myG" to="q3w4:1a1nVFdwLzv" resolve="ComplexEventDrivenReq" />
+  </node>
 </model>
 

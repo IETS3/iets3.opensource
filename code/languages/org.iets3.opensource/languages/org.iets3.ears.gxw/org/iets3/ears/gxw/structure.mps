@@ -270,11 +270,6 @@
     <node concept="PrWs8" id="6_TIzovfkJh" role="PzmwI">
       <ref role="PrY4T" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
     </node>
-    <node concept="1TJgyi" id="4l60BX8cbz" role="1TKVEl">
-      <property role="IQ2nx" value="77994999729406691" />
-      <property role="TrG5h" value="bla" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5QnDqxDaSpr">
     <property role="19KtqR" value="true" />
