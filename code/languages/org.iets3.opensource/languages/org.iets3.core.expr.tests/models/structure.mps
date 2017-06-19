@@ -737,7 +737,7 @@
   <node concept="1TIwiD" id="1bwJEEfQxDh">
     <property role="EcuMT" value="1360296727233043025" />
     <property role="3GE5qa" value="vector" />
-    <property role="TrG5h" value="FunctionAdapter" />
+    <property role="TrG5h" value="FunctionSubjectAdapter" />
     <property role="34LRSv" value="function" />
     <ref role="1TJDcQ" node="1bwJEEfQxC8" resolve="TestSubjectAdapter" />
     <node concept="1TJgyi" id="1bwJEEgrgy9" role="1TKVEl">

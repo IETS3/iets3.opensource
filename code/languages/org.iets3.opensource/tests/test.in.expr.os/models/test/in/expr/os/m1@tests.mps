@@ -28,6 +28,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -14334,6 +14335,9 @@
           <node concept="1ahQXy" id="3PrmTp69tw$" role="1ahQWs">
             <property role="TrG5h" value="in2" />
             <node concept="30bdrU" id="3PrmTp69tw_" role="3ix9CU" />
+            <node concept="7CXmI" id="1bwJEEftOin" role="lGtFl">
+              <node concept="29bkU" id="1bwJEEftOio" role="7EUXB" />
+            </node>
           </node>
         </node>
         <node concept="_ixoA" id="3PrmTp69twA" role="_iOnB" />
