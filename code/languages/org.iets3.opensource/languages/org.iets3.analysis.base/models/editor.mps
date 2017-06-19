@@ -30,6 +30,9 @@
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -62,13 +65,6 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
-      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
-        <child id="1225898971709" name="getter" index="1Hhtcw" />
-      </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
-        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
-      </concept>
-      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -84,15 +80,6 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -111,11 +98,6 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
@@ -138,7 +120,7 @@
         <ref role="1ERwB7" node="3DYDRw0XrFI" resolve="deleteSolverControl" />
         <node concept="l2Vlx" id="3DYDRw0WRuO" role="2iSdaV" />
         <node concept="3F0ifn" id="3DYDRw0WRsw" role="3EZMnx">
-          <property role="3F0ifm" value="@solve" />
+          <property role="3F0ifm" value="@solver:" />
           <ref role="1ERwB7" node="3DYDRw0XrFI" resolve="deleteSolverControl" />
           <node concept="VechU" id="3DYDRw0WRuf" role="3F10Kt">
             <property role="Vb096" value="red" />
@@ -149,30 +131,8 @@
           <node concept="VechU" id="3DYDRw0WRw6" role="3F10Kt">
             <property role="Vb096" value="red" />
           </node>
-        </node>
-        <node concept="1HlG4h" id="3DYDRw0XK6c" role="3EZMnx">
-          <node concept="VechU" id="3DYDRw0XK7J" role="3F10Kt">
-            <property role="Vb096" value="red" />
-          </node>
-          <node concept="1HfYo3" id="3DYDRw0XK6e" role="1HlULh">
-            <node concept="3TQlhw" id="3DYDRw0XK6g" role="1Hhtcw">
-              <node concept="3clFbS" id="3DYDRw0XK6i" role="2VODD2">
-                <node concept="3clFbF" id="3DYDRw0XK7P" role="3cqZAp">
-                  <node concept="3K4zz7" id="3DYDRw0XKlb" role="3clFbG">
-                    <node concept="Xl_RD" id="3DYDRw0XKmG" role="3K4E3e">
-                      <property role="Xl_RC" value="[on]" />
-                    </node>
-                    <node concept="Xl_RD" id="3DYDRw0XKrv" role="3K4GZi">
-                      <property role="Xl_RC" value="[off]" />
-                    </node>
-                    <node concept="10M0yZ" id="7rOSrvnHQ9r" role="3K4Cdx">
-                      <ref role="3cqZAo" to="ich0:3DYDRw0W4Ww" resolve="useSolver" />
-                      <ref role="1PxDUh" to="ich0:3DYDRw0W4W3" resolve="SolverSwitch" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="Vb9p2" id="2GQBRFARI_x" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
           </node>
         </node>
       </node>
