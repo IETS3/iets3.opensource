@@ -50,6 +50,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.req.table.diehltable.examples/org.iets3.table.coolingbehavior.examples.msd" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
+      <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="req" />
     </projectModules>
   </component>
 </project>
