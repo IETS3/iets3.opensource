@@ -401,5 +401,207 @@
       <property role="3hDZ07" value="node Res2 (input0 , input1: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
   </node>
+  <node concept="jeVL0" id="3HrZoniJXO5">
+    <property role="TrG5h" value="Controller Holder" />
+    <node concept="2PYZIZ" id="3HrZoniJXO7" role="jeVL3">
+      <property role="TrG5h" value="Ctrl_0" />
+      <ref role="1mD$57" node="3HrZoniJXO8" resolve="Ctrl_0" />
+    </node>
+    <node concept="2PYZIZ" id="3HrZoniJXO9" role="jeVL3">
+      <property role="TrG5h" value="Ctrl_1" />
+      <ref role="1mD$57" node="3HrZoniJXOa" resolve="Ctrl_1" />
+    </node>
+    <node concept="2PYZIZ" id="3HrZoniJXOb" role="jeVL3">
+      <property role="TrG5h" value="Ctrl_2" />
+      <ref role="1mD$57" node="3HrZoniJXOc" resolve="Ctrl_2" />
+    </node>
+    <node concept="2PYZIZ" id="3HrZoniJXOd" role="jeVL3">
+      <property role="TrG5h" value="Ctrl_3" />
+      <ref role="1mD$57" node="3HrZoniJXOe" resolve="Ctrl_3" />
+    </node>
+    <node concept="2PXPBM" id="3HrZoniJXOf" role="jeVL3">
+      <property role="TrG5h" value="Restimerstart" />
+      <ref role="1mD$57" node="3HrZoniJXOg" resolve="Restimerstart" />
+    </node>
+    <node concept="2PXPBM" id="3HrZoniJXOh" role="jeVL3">
+      <property role="TrG5h" value="Resdoorclose" />
+      <ref role="1mD$57" node="3HrZoniJXOi" resolve="Resdoorclose" />
+    </node>
+    <node concept="2PXPBM" id="3HrZoniJXOj" role="jeVL3">
+      <property role="TrG5h" value="Resdooropen" />
+      <ref role="1mD$57" node="3HrZoniJXOk" resolve="Resdooropen" />
+    </node>
+    <node concept="2PXPBM" id="3HrZoniJXOl" role="jeVL3">
+      <property role="TrG5h" value="Resdoorstop" />
+      <ref role="1mD$57" node="3HrZoniJXOm" resolve="Resdoorstop" />
+    </node>
+    <node concept="2xkk2h" id="3HrZoniJXOn" role="jeVL3">
+      <property role="TrG5h" value="isactivated" />
+    </node>
+    <node concept="2xkk2h" id="3HrZoniJXOo" role="jeVL3">
+      <property role="TrG5h" value="isactivated" />
+    </node>
+    <node concept="2xkk2h" id="3HrZoniJXOp" role="jeVL3">
+      <property role="TrG5h" value="isactivated" />
+    </node>
+    <node concept="2xkk2h" id="3HrZoniJXOq" role="jeVL3">
+      <property role="TrG5h" value="expires" />
+    </node>
+    <node concept="2xkk2g" id="3HrZoniJXOr" role="jeVL3">
+      <property role="TrG5h" value="timerstart" />
+    </node>
+    <node concept="2xkk2g" id="3HrZoniJXOs" role="jeVL3">
+      <property role="TrG5h" value="doorclose" />
+    </node>
+    <node concept="2xkk2g" id="3HrZoniJXOt" role="jeVL3">
+      <property role="TrG5h" value="dooropen" />
+    </node>
+    <node concept="2xkk2g" id="3HrZoniJXOu" role="jeVL3">
+      <property role="TrG5h" value="doorstop" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOv" role="ja_ZJ">
+      <property role="3px1z5" value="Ctrl_0.input" />
+      <property role="3px1z0" value="GIisactivated" />
+      <ref role="jbjzK" node="3HrZoniJXO7" resolve="Ctrl_0" />
+      <ref role="jbjzf" node="3HrZoniJXOn" resolve="isactivated" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOw" role="ja_ZJ">
+      <property role="3px1z5" value="Ctrl_1.input" />
+      <property role="3px1z0" value="GIisactivated" />
+      <ref role="jbjzK" node="3HrZoniJXO9" resolve="Ctrl_1" />
+      <ref role="jbjzf" node="3HrZoniJXOn" resolve="isactivated" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOx" role="ja_ZJ">
+      <property role="3px1z5" value="Ctrl_2.input" />
+      <property role="3px1z0" value="GIexpires" />
+      <ref role="jbjzK" node="3HrZoniJXOb" resolve="Ctrl_2" />
+      <ref role="jbjzf" node="3HrZoniJXOq" resolve="expires" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOy" role="ja_ZJ">
+      <property role="3px1z5" value="Ctrl_3.input" />
+      <property role="3px1z0" value="GIisactivated" />
+      <ref role="jbjzK" node="3HrZoniJXOd" resolve="Ctrl_3" />
+      <ref role="jbjzf" node="3HrZoniJXOn" resolve="isactivated" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOz" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_1.output" />
+      <property role="3px1z5" value="Restimerstart.input0" />
+      <ref role="jbjzf" node="3HrZoniJXO9" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="3HrZoniJXOf" resolve="Restimerstart" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXO$" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_1.dc" />
+      <property role="3px1z5" value="Restimerstart.dc0" />
+      <ref role="jbjzf" node="3HrZoniJXO9" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="3HrZoniJXOf" resolve="Restimerstart" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXO_" role="ja_ZJ">
+      <property role="3px1z0" value="Restimerstart.output" />
+      <property role="3px1z5" value="GOtimerstart" />
+      <ref role="jbjzf" node="3HrZoniJXOf" resolve="Restimerstart" />
+      <ref role="jbjzK" node="3HrZoniJXOr" resolve="timerstart" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOA" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_2.output" />
+      <property role="3px1z5" value="Resdoorclose.input0" />
+      <ref role="jbjzf" node="3HrZoniJXOb" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="3HrZoniJXOh" resolve="Resdoorclose" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOB" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_2.dc" />
+      <property role="3px1z5" value="Resdoorclose.dc0" />
+      <ref role="jbjzf" node="3HrZoniJXOb" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="3HrZoniJXOh" resolve="Resdoorclose" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOC" role="ja_ZJ">
+      <property role="3px1z0" value="Resdoorclose.output" />
+      <property role="3px1z5" value="GOdoorclose" />
+      <ref role="jbjzf" node="3HrZoniJXOh" resolve="Resdoorclose" />
+      <ref role="jbjzK" node="3HrZoniJXOs" resolve="doorclose" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOD" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_0.output" />
+      <property role="3px1z5" value="Resdooropen.input0" />
+      <ref role="jbjzf" node="3HrZoniJXO7" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="3HrZoniJXOj" resolve="Resdooropen" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOE" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_0.dc" />
+      <property role="3px1z5" value="Resdooropen.dc0" />
+      <ref role="jbjzf" node="3HrZoniJXO7" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="3HrZoniJXOj" resolve="Resdooropen" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOF" role="ja_ZJ">
+      <property role="3px1z0" value="Resdooropen.output" />
+      <property role="3px1z5" value="GOdooropen" />
+      <ref role="jbjzf" node="3HrZoniJXOj" resolve="Resdooropen" />
+      <ref role="jbjzK" node="3HrZoniJXOt" resolve="dooropen" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOG" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_1.output" />
+      <property role="3px1z5" value="Resdoorstop.input0" />
+      <ref role="jbjzf" node="3HrZoniJXO9" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="3HrZoniJXOl" resolve="Resdoorstop" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOH" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_1.dc" />
+      <property role="3px1z5" value="Resdoorstop.dc0" />
+      <ref role="jbjzf" node="3HrZoniJXO9" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="3HrZoniJXOl" resolve="Resdoorstop" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOI" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_3.output" />
+      <property role="3px1z5" value="Resdoorstop.input1" />
+      <ref role="jbjzf" node="3HrZoniJXOd" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="3HrZoniJXOl" resolve="Resdoorstop" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOJ" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_3.dc" />
+      <property role="3px1z5" value="Resdoorstop.dc1" />
+      <ref role="jbjzf" node="3HrZoniJXOd" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="3HrZoniJXOl" resolve="Resdoorstop" />
+    </node>
+    <node concept="2PY9F8" id="3HrZoniJXOK" role="ja_ZJ">
+      <property role="3px1z0" value="Resdoorstop.output" />
+      <property role="3px1z5" value="GOdoorstop" />
+      <ref role="jbjzf" node="3HrZoniJXOl" resolve="Resdoorstop" />
+      <ref role="jbjzK" node="3HrZoniJXOu" resolve="doorstop" />
+    </node>
+  </node>
+  <node concept="3hDZ0V" id="3HrZoniJXO6">
+    <property role="TrG5h" value="Gate Descriptors" />
+    <node concept="3hDZ04" id="3HrZoniJXO8" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_0" />
+      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOa" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_1" />
+      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOc" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_2" />
+      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOe" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_3" />
+      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOg" role="3hDZ0U">
+      <property role="TrG5h" value="Restimerstart" />
+      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOi" role="3hDZ0U">
+      <property role="TrG5h" value="Resdoorclose" />
+      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOk" role="3hDZ0U">
+      <property role="TrG5h" value="Resdooropen" />
+      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="3HrZoniJXOm" role="3hDZ0U">
+      <property role="TrG5h" value="Resdoorstop" />
+      <property role="3hDZ07" value="node Res2 (input0 , input1: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+  </node>
 </model>
 
