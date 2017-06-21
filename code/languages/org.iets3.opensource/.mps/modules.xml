@@ -2,20 +2,20 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/org.iets3.process.core.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.ears.gxw/org.iets3.ears.gxw.mpl" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.flow.modelproperty.gxw/org.iets3.flow.modelproperty.gxw.mpl" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.flow.property.formulae/org.iets3.process.modelproperty.formulae.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.lustre/org.iets3.graphicalLustre.mpl" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/languages/testLanguage/org.iets3.process.dashboard.mpl" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/FlowDescriptorSandbox/org.iets3.process.core.instance.msd" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
-      <modulePath path="$PROJECT_DIR$/../../../../EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/ConstratintsDescriptor/org.iets3.process.core.mpl" folder="flow" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.attributes/org.iets3.core.attributes.mpl" folder="core" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.base/org.iets3.core.base.mpl" folder="core" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.ears.gxw/org.iets3.ears.gxw.mpl" folder="gxw" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.flow.modelproperty.gxw/org.iets3.flow.modelproperty.gxw.mpl" folder="gxw" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.flow.property.formulae/org.iets3.process.modelproperty.formulae.mpl" folder="flow" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.lustre/org.iets3.graphicalLustre.mpl" folder="gxw" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/languages/testLanguage/org.iets3.process.dashboard.mpl" folder="flow" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/FlowDescriptorSandbox/org.iets3.process.core.instance.msd" folder="flow" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
+      <modulePath path="$USER_HOME$/EARS-CTRLDash/code/languages/org.iets3.opensource/solutions/org.iets3.structuralCoder/org.iets3.structuralCoder.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/languages/ConstratintsDescriptor/org.iets3.flow.core.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/PropertyLanguage/org.iets3.flow.modelproperty.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/StatesTruthTable/org.iets3.flow.modelproperty.state.mpl" folder="flow" />
@@ -40,6 +40,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.variables/org.iets3.req.variables.mpl" folder="casestudies" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="robotics" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simulink.resultmodel/org.iets3.simulink.resultmodel.mpl" folder="gxw" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simulink.resultmodel/sandbox/org.iets3.simulink.resultmodel.sandbox.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.coolingbehaviortable.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
