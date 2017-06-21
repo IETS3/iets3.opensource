@@ -102,6 +102,7 @@
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -789,7 +790,14 @@
         <node concept="3F0ifn" id="2$$ntKwwP11" role="3EZMnx">
           <property role="3F0ifm" value="Glossary: " />
           <node concept="Vb9p2" id="2$$ntKwxfdb" role="3F10Kt" />
+          <node concept="VSNWy" id="3HrZoniDvFJ" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
         </node>
+        <node concept="3XFhqQ" id="3HrZoniDCwE" role="3EZMnx" />
+        <node concept="3XFhqQ" id="3HrZoniDLma" role="3EZMnx" />
+        <node concept="3XFhqQ" id="3HrZoniDUcm" role="3EZMnx" />
+        <node concept="3XFhqQ" id="3HrZoniDUcM" role="3EZMnx" />
         <node concept="1iCGBv" id="2$$ntKwwP2a" role="3EZMnx">
           <ref role="1NtTu8" to="q3w4:2$$ntKwwP0W" resolve="glossary" />
           <node concept="1sVBvm" id="2$$ntKwwP2c" role="1sWHZn">
@@ -807,6 +815,28 @@
         </node>
         <node concept="VSNWy" id="2$$ntKwwP3g" role="3F10Kt">
           <property role="1lJzqX" value="10" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3HrZoni$oi$" role="3EZMnx">
+        <node concept="2iRfu4" id="3HrZoni$oi_" role="2iSdaV" />
+        <node concept="3F0ifn" id="3HrZoni$oic" role="3EZMnx">
+          <property role="3F0ifm" value="Temporary path: " />
+          <node concept="Vb9p2" id="3HrZoni$ol_" role="3F10Kt" />
+          <node concept="VSNWy" id="3HrZoniDvCb" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="3HrZoni$oj2" role="3EZMnx">
+          <ref role="1NtTu8" to="q3w4:3HrZonixGzD" resolve="tmpFilePath" />
+          <node concept="VechU" id="3HrZoni$onj" role="3F10Kt">
+            <property role="Vb096" value="blue" />
+          </node>
+          <node concept="Vb9p2" id="3HrZoni$op3" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+          <node concept="VSNWy" id="3HrZoniDvDX" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="5QnDqxDaSpV" role="3EZMnx" />
