@@ -160,8 +160,8 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFBnAK" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3T_uu0" id="5ByxUIFBnAR" role="3tOtb8">
-        <ref role="3T_uuC" node="5ByxUIFBn_z" />
+      <node concept="3T_uu0" id="5bowr9XldcW" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIFBn_r" />
       </node>
       <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
       <node concept="OJJ_H" id="5ByxUIFBnAX" role="1QgFCz">
@@ -185,7 +185,7 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFBnBT" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3T_uu0" id="5ByxUIFBnCa" role="3tOtb8">
+      <node concept="3T_uu0" id="5bowr9Xlde6" role="3tOtb8">
         <ref role="3T_uuC" node="5ByxUIFBn_z" />
       </node>
       <node concept="3t3aUO" id="5ByxUIFBnCc" role="3tWTBb" />
@@ -199,204 +199,204 @@
       <property role="3N1Lgt" value="models" />
     </node>
   </node>
-  <node concept="jeVL0" id="5bowr9XiGOI">
+  <node concept="jeVL0" id="5bowr9Xlde9">
     <property role="TrG5h" value="Controller Holder" />
-    <node concept="2PYZIZ" id="5bowr9XiGOK" role="jeVL3">
+    <node concept="2PYZIZ" id="5bowr9Xldeb" role="jeVL3">
       <property role="TrG5h" value="Ctrl_0" />
-      <ref role="1mD$57" node="5bowr9XiGOL" resolve="Ctrl_0" />
+      <ref role="1mD$57" node="5bowr9Xldec" resolve="Ctrl_0" />
     </node>
-    <node concept="2PYZIZ" id="5bowr9XiGOM" role="jeVL3">
+    <node concept="2PYZIZ" id="5bowr9Xlded" role="jeVL3">
       <property role="TrG5h" value="Ctrl_1" />
-      <ref role="1mD$57" node="5bowr9XiGON" resolve="Ctrl_1" />
+      <ref role="1mD$57" node="5bowr9Xldee" resolve="Ctrl_1" />
     </node>
-    <node concept="2PYZIZ" id="5bowr9XiGOO" role="jeVL3">
+    <node concept="2PYZIZ" id="5bowr9Xldef" role="jeVL3">
       <property role="TrG5h" value="Ctrl_2" />
-      <ref role="1mD$57" node="5bowr9XiGOP" resolve="Ctrl_2" />
+      <ref role="1mD$57" node="5bowr9Xldeg" resolve="Ctrl_2" />
     </node>
-    <node concept="2PYZIZ" id="5bowr9XiGOQ" role="jeVL3">
+    <node concept="2PYZIZ" id="5bowr9Xldeh" role="jeVL3">
       <property role="TrG5h" value="Ctrl_3" />
-      <ref role="1mD$57" node="5bowr9XiGOR" resolve="Ctrl_3" />
+      <ref role="1mD$57" node="5bowr9Xldei" resolve="Ctrl_3" />
     </node>
-    <node concept="2PXPBM" id="5bowr9XiGOS" role="jeVL3">
+    <node concept="2PXPBM" id="5bowr9Xldej" role="jeVL3">
       <property role="TrG5h" value="Restimerstart" />
-      <ref role="1mD$57" node="5bowr9XiGOT" resolve="Restimerstart" />
+      <ref role="1mD$57" node="5bowr9Xldek" resolve="Restimerstart" />
     </node>
-    <node concept="2PXPBM" id="5bowr9XiGOU" role="jeVL3">
+    <node concept="2PXPBM" id="5bowr9Xldel" role="jeVL3">
       <property role="TrG5h" value="Resdoorclose" />
-      <ref role="1mD$57" node="5bowr9XiGOV" resolve="Resdoorclose" />
+      <ref role="1mD$57" node="5bowr9Xldem" resolve="Resdoorclose" />
     </node>
-    <node concept="2PXPBM" id="5bowr9XiGOW" role="jeVL3">
+    <node concept="2PXPBM" id="5bowr9Xlden" role="jeVL3">
       <property role="TrG5h" value="Resdooropen" />
-      <ref role="1mD$57" node="5bowr9XiGOX" resolve="Resdooropen" />
+      <ref role="1mD$57" node="5bowr9Xldeo" resolve="Resdooropen" />
     </node>
-    <node concept="2PXPBM" id="5bowr9XiGOY" role="jeVL3">
+    <node concept="2PXPBM" id="5bowr9Xldep" role="jeVL3">
       <property role="TrG5h" value="Resdoorstop" />
-      <ref role="1mD$57" node="5bowr9XiGOZ" resolve="Resdoorstop" />
+      <ref role="1mD$57" node="5bowr9Xldeq" resolve="Resdoorstop" />
     </node>
-    <node concept="2xkk2h" id="5bowr9XiGP0" role="jeVL3">
-      <property role="TrG5h" value="isactivated" />
+    <node concept="2xkk2h" id="5bowr9Xlder" role="jeVL3">
+      <property role="TrG5h" value="doorclosinglimitsensorisactivated" />
     </node>
-    <node concept="2xkk2h" id="5bowr9XiGP1" role="jeVL3">
-      <property role="TrG5h" value="isactivated" />
+    <node concept="2xkk2h" id="5bowr9Xldes" role="jeVL3">
+      <property role="TrG5h" value="dooropeninglimitsensorisactivated" />
     </node>
-    <node concept="2xkk2h" id="5bowr9XiGP2" role="jeVL3">
-      <property role="TrG5h" value="isactivated" />
+    <node concept="2xkk2h" id="5bowr9Xldet" role="jeVL3">
+      <property role="TrG5h" value="objectproximitysensorisactivated" />
     </node>
-    <node concept="2xkk2h" id="5bowr9XiGP3" role="jeVL3">
-      <property role="TrG5h" value="expires" />
+    <node concept="2xkk2h" id="5bowr9Xldeu" role="jeVL3">
+      <property role="TrG5h" value="timerexpires" />
     </node>
-    <node concept="2xkk2g" id="5bowr9XiGP4" role="jeVL3">
+    <node concept="2xkk2g" id="5bowr9Xldev" role="jeVL3">
       <property role="TrG5h" value="timerstart" />
     </node>
-    <node concept="2xkk2g" id="5bowr9XiGP5" role="jeVL3">
+    <node concept="2xkk2g" id="5bowr9Xldew" role="jeVL3">
       <property role="TrG5h" value="doorclose" />
     </node>
-    <node concept="2xkk2g" id="5bowr9XiGP6" role="jeVL3">
+    <node concept="2xkk2g" id="5bowr9Xldex" role="jeVL3">
       <property role="TrG5h" value="dooropen" />
     </node>
-    <node concept="2xkk2g" id="5bowr9XiGP7" role="jeVL3">
+    <node concept="2xkk2g" id="5bowr9Xldey" role="jeVL3">
       <property role="TrG5h" value="doorstop" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGP8" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9Xldez" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_0.input" />
-      <property role="3px1z0" value="GIisactivated" />
-      <ref role="jbjzK" node="5bowr9XiGOK" resolve="Ctrl_0" />
-      <ref role="jbjzf" node="5bowr9XiGP0" resolve="isactivated" />
+      <property role="3px1z0" value="GIobjectproximitysensorisactivated" />
+      <ref role="jbjzK" node="5bowr9Xldeb" resolve="Ctrl_0" />
+      <ref role="jbjzf" node="5bowr9Xldet" resolve="objectproximitysensorisactivated" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGP9" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9Xlde$" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_1.input" />
-      <property role="3px1z0" value="GIisactivated" />
-      <ref role="jbjzK" node="5bowr9XiGOM" resolve="Ctrl_1" />
-      <ref role="jbjzf" node="5bowr9XiGP0" resolve="isactivated" />
+      <property role="3px1z0" value="GIdooropeninglimitsensorisactivated" />
+      <ref role="jbjzK" node="5bowr9Xlded" resolve="Ctrl_1" />
+      <ref role="jbjzf" node="5bowr9Xldes" resolve="dooropeninglimitsensorisactivated" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPa" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9Xlde_" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_2.input" />
-      <property role="3px1z0" value="GIexpires" />
-      <ref role="jbjzK" node="5bowr9XiGOO" resolve="Ctrl_2" />
-      <ref role="jbjzf" node="5bowr9XiGP3" resolve="expires" />
+      <property role="3px1z0" value="GItimerexpires" />
+      <ref role="jbjzK" node="5bowr9Xldef" resolve="Ctrl_2" />
+      <ref role="jbjzf" node="5bowr9Xldeu" resolve="timerexpires" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPb" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeA" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_3.input" />
-      <property role="3px1z0" value="GIisactivated" />
-      <ref role="jbjzK" node="5bowr9XiGOQ" resolve="Ctrl_3" />
-      <ref role="jbjzf" node="5bowr9XiGP0" resolve="isactivated" />
+      <property role="3px1z0" value="GIdoorclosinglimitsensorisactivated" />
+      <ref role="jbjzK" node="5bowr9Xldeh" resolve="Ctrl_3" />
+      <ref role="jbjzf" node="5bowr9Xlder" resolve="doorclosinglimitsensorisactivated" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPc" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeB" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.output" />
       <property role="3px1z5" value="Restimerstart.input0" />
-      <ref role="jbjzf" node="5bowr9XiGOM" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9XiGOS" resolve="Restimerstart" />
+      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="5bowr9Xldej" resolve="Restimerstart" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPd" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeC" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.dc" />
       <property role="3px1z5" value="Restimerstart.dc0" />
-      <ref role="jbjzf" node="5bowr9XiGOM" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9XiGOS" resolve="Restimerstart" />
+      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="5bowr9Xldej" resolve="Restimerstart" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPe" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeD" role="ja_ZJ">
       <property role="3px1z0" value="Restimerstart.output" />
       <property role="3px1z5" value="GOtimerstart" />
-      <ref role="jbjzf" node="5bowr9XiGOS" resolve="Restimerstart" />
-      <ref role="jbjzK" node="5bowr9XiGP4" resolve="timerstart" />
+      <ref role="jbjzf" node="5bowr9Xldej" resolve="Restimerstart" />
+      <ref role="jbjzK" node="5bowr9Xldev" resolve="timerstart" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPf" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeE" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_2.output" />
       <property role="3px1z5" value="Resdoorclose.input0" />
-      <ref role="jbjzf" node="5bowr9XiGOO" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="5bowr9XiGOU" resolve="Resdoorclose" />
+      <ref role="jbjzf" node="5bowr9Xldef" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="5bowr9Xldel" resolve="Resdoorclose" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPg" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeF" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_2.dc" />
       <property role="3px1z5" value="Resdoorclose.dc0" />
-      <ref role="jbjzf" node="5bowr9XiGOO" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="5bowr9XiGOU" resolve="Resdoorclose" />
+      <ref role="jbjzf" node="5bowr9Xldef" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="5bowr9Xldel" resolve="Resdoorclose" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPh" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeG" role="ja_ZJ">
       <property role="3px1z0" value="Resdoorclose.output" />
       <property role="3px1z5" value="GOdoorclose" />
-      <ref role="jbjzf" node="5bowr9XiGOU" resolve="Resdoorclose" />
-      <ref role="jbjzK" node="5bowr9XiGP5" resolve="doorclose" />
+      <ref role="jbjzf" node="5bowr9Xldel" resolve="Resdoorclose" />
+      <ref role="jbjzK" node="5bowr9Xldew" resolve="doorclose" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPi" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeH" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_0.output" />
       <property role="3px1z5" value="Resdooropen.input0" />
-      <ref role="jbjzf" node="5bowr9XiGOK" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="5bowr9XiGOW" resolve="Resdooropen" />
+      <ref role="jbjzf" node="5bowr9Xldeb" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="5bowr9Xlden" resolve="Resdooropen" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPj" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeI" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_0.dc" />
       <property role="3px1z5" value="Resdooropen.dc0" />
-      <ref role="jbjzf" node="5bowr9XiGOK" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="5bowr9XiGOW" resolve="Resdooropen" />
+      <ref role="jbjzf" node="5bowr9Xldeb" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="5bowr9Xlden" resolve="Resdooropen" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPk" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeJ" role="ja_ZJ">
       <property role="3px1z0" value="Resdooropen.output" />
       <property role="3px1z5" value="GOdooropen" />
-      <ref role="jbjzf" node="5bowr9XiGOW" resolve="Resdooropen" />
-      <ref role="jbjzK" node="5bowr9XiGP6" resolve="dooropen" />
+      <ref role="jbjzf" node="5bowr9Xlden" resolve="Resdooropen" />
+      <ref role="jbjzK" node="5bowr9Xldex" resolve="dooropen" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPl" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeK" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.output" />
       <property role="3px1z5" value="Resdoorstop.input0" />
-      <ref role="jbjzf" node="5bowr9XiGOM" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9XiGOY" resolve="Resdoorstop" />
+      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPm" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeL" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.dc" />
       <property role="3px1z5" value="Resdoorstop.dc0" />
-      <ref role="jbjzf" node="5bowr9XiGOM" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9XiGOY" resolve="Resdoorstop" />
+      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPn" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeM" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.output" />
       <property role="3px1z5" value="Resdoorstop.input1" />
-      <ref role="jbjzf" node="5bowr9XiGOQ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="5bowr9XiGOY" resolve="Resdoorstop" />
+      <ref role="jbjzf" node="5bowr9Xldeh" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPo" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeN" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.dc" />
       <property role="3px1z5" value="Resdoorstop.dc1" />
-      <ref role="jbjzf" node="5bowr9XiGOQ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="5bowr9XiGOY" resolve="Resdoorstop" />
+      <ref role="jbjzf" node="5bowr9Xldeh" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
     </node>
-    <node concept="2PY9F8" id="5bowr9XiGPp" role="ja_ZJ">
+    <node concept="2PY9F8" id="5bowr9XldeO" role="ja_ZJ">
       <property role="3px1z0" value="Resdoorstop.output" />
       <property role="3px1z5" value="GOdoorstop" />
-      <ref role="jbjzf" node="5bowr9XiGOY" resolve="Resdoorstop" />
-      <ref role="jbjzK" node="5bowr9XiGP7" resolve="doorstop" />
+      <ref role="jbjzf" node="5bowr9Xldep" resolve="Resdoorstop" />
+      <ref role="jbjzK" node="5bowr9Xldey" resolve="doorstop" />
     </node>
   </node>
-  <node concept="3hDZ0V" id="5bowr9XiGOJ">
+  <node concept="3hDZ0V" id="5bowr9Xldea">
     <property role="TrG5h" value="Gate Descriptors" />
-    <node concept="3hDZ04" id="5bowr9XiGOL" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldec" role="3hDZ0U">
       <property role="TrG5h" value="Ctrl_0" />
       <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGON" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldee" role="3hDZ0U">
       <property role="TrG5h" value="Ctrl_1" />
       <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOP" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldeg" role="3hDZ0U">
       <property role="TrG5h" value="Ctrl_2" />
       <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOR" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldei" role="3hDZ0U">
       <property role="TrG5h" value="Ctrl_3" />
       <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOT" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldek" role="3hDZ0U">
       <property role="TrG5h" value="Restimerstart" />
       <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOV" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldem" role="3hDZ0U">
       <property role="TrG5h" value="Resdoorclose" />
       <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOX" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldeo" role="3hDZ0U">
       <property role="TrG5h" value="Resdooropen" />
       <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
-    <node concept="3hDZ04" id="5bowr9XiGOZ" role="3hDZ0U">
+    <node concept="3hDZ04" id="5bowr9Xldeq" role="3hDZ0U">
       <property role="TrG5h" value="Resdoorstop" />
       <property role="3hDZ07" value="node Res2 (input0 , input1: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
