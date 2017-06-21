@@ -1341,5 +1341,18 @@
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7VuYlCQZ3ll">
+    <property role="EcuMT" value="9142018459473556821" />
+    <property role="TrG5h" value="JoinType" />
+    <property role="34LRSv" value="join" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="7VuYlCQZ3lm" role="1TKVEi">
+      <property role="IQ2ns" value="9142018459473556822" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="types" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
 </model>
 
