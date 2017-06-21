@@ -6,6 +6,14 @@
   </languages>
   <imports />
   <registry>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -35,6 +43,7 @@
       <concept id="6744041109748155995" name="org.iets3.ears.gxw.structure.RequirementChunk" flags="ng" index="OJ2fN">
         <reference id="2964597654736293948" name="glossary" index="9DKRw" />
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
+        <child id="4277291022322944233" name="tmpFilePath" index="3DRjlG" />
       </concept>
       <concept id="6744041109748014275" name="org.iets3.ears.gxw.structure.BinaryFormulaSR" flags="ng" index="OJJ_F">
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
@@ -219,30 +228,42 @@
         <ref role="3T_uuC" node="5ByxUIFBeuY" />
       </node>
     </node>
-    <node concept="3v0$t_" id="5ByxUIFBevp" role="OJ2fO">
+    <node concept="3v0$t_" id="5bowr9YaVOr" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3T_uu1" id="5ByxUIFBevE" role="3v0$n0">
-        <node concept="3T_uu0" id="5ByxUIFBevL" role="3T_uuQ">
+      <node concept="3T_uu1" id="5bowr9YaVOs" role="3v0$n0">
+        <node concept="3T_uu0" id="5bowr9YaVOt" role="3T_uuQ">
           <ref role="3T_uuC" node="5ByxUIFBeuf" />
         </node>
-        <node concept="3T_uu0" id="5ByxUIFBevO" role="3T_uuP">
+        <node concept="3T_uu0" id="5bowr9YaVOu" role="3T_uuP">
           <ref role="3T_uuC" node="5ByxUIFAV_p" />
         </node>
       </node>
-      <node concept="3T_uu1" id="5ByxUIFBevR" role="3v0$n5">
-        <node concept="3T_uu0" id="5ByxUIFBevX" role="3T_uuQ">
-          <ref role="3T_uuC" node="5ByxUIFAVAj" />
+      <node concept="OJJ_U" id="5bowr9YaVOv" role="3v0$kZ">
+        <ref role="OJJ_O" node="5ByxUIFAVBA" />
+      </node>
+      <node concept="3T_uu0" id="5bowr9YaVQt" role="3v0$n5">
+        <ref role="3T_uuC" node="5ByxUIFAVAj" />
+      </node>
+    </node>
+    <node concept="3v0$t_" id="5bowr9YaVMg" role="OJ2fO">
+      <property role="eBQts" value="Req5" />
+      <node concept="3T_uu1" id="5bowr9YaVMh" role="3v0$n0">
+        <node concept="3T_uu0" id="5bowr9YaVMi" role="3T_uuQ">
+          <ref role="3T_uuC" node="5ByxUIFBeuf" />
         </node>
-        <node concept="3T_uu0" id="5ByxUIFBew0" role="3T_uuP">
-          <ref role="3T_uuC" node="5ByxUIFAVAv" />
+        <node concept="3T_uu0" id="5bowr9YaVMj" role="3T_uuP">
+          <ref role="3T_uuC" node="5ByxUIFAV_p" />
         </node>
       </node>
-      <node concept="OJJ_U" id="5ByxUIFBew3" role="3v0$kZ">
+      <node concept="OJJ_U" id="5bowr9YaVMn" role="3v0$kZ">
         <ref role="OJJ_O" node="5ByxUIFAVBA" />
+      </node>
+      <node concept="3T_uu0" id="5bowr9YaVNI" role="3v0$n5">
+        <ref role="3T_uuC" node="5ByxUIFAVAv" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFBewr" role="OJ2fO">
-      <property role="eBQts" value="Req5" />
+      <property role="eBQts" value="Req6" />
       <node concept="3T_uu0" id="5ByxUIFBewM" role="3tOtb8">
         <ref role="3T_uuC" node="5ByxUIFAVBf" />
       </node>
@@ -260,6 +281,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="9PVaO" id="5bowr9XldeP" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>
