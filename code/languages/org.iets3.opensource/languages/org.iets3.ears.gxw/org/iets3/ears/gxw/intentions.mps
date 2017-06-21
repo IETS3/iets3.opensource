@@ -269,7 +269,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6mryTk89Zpv" role="3uHU7w">
-                    <property role="Xl_RC" value="textGenOutput.txt" />
+                    <property role="Xl_RC" value="/textGenOutput.txt" />
                   </node>
                 </node>
               </node>
