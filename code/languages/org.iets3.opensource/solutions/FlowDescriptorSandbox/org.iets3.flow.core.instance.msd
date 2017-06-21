@@ -49,6 +49,7 @@
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.modelproperty.formulae" version="0" />
     <language slang="l:3e3749e5-96c0-4132-8c4a-7309a74f9fd6:org.iets3.flow.modelproperty.gxw" version="0" />
+    <language slang="l:0ecea2a9-218f-4e3b-badc-a524a5addb7c:org.iets3.flow.modelproperty.req" version="0" />
     <language slang="l:89749848-cf4d-49ab-8c2b-7275de1b311d:org.iets3.flow.modelproperty.state" version="0" />
     <language slang="l:8e4e17de-bc10-4a34-a376-a243fbde540e:org.iets3.glossary" version="0" />
     <language slang="l:a3c6f642-41b7-44cb-951b-463b8427a245:org.iets3.req.core" version="0" />
