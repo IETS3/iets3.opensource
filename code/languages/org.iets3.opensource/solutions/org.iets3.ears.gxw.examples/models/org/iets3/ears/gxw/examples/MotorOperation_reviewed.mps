@@ -6,21 +6,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
-      <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
-        <child id="2196020025663654779" name="listofWires" index="ja_ZJ" />
-        <child id="2196020025662531799" name="listOfActors" index="jeVL3" />
-      </concept>
-      <concept id="6815116176709216413" name="org.iets3.graphicalLustre.structure.GlobalOutputActor" flags="ng" index="2xkk2g" />
-      <concept id="6815116176709216412" name="org.iets3.graphicalLustre.structure.GlobalInputActor" flags="ng" index="2xkk2h" />
-      <concept id="6535459388227454823" name="org.iets3.graphicalLustre.structure.Wire" flags="ng" index="2PY9F8">
-        <property id="1406706293678376747" name="sourcePort" index="3px1z0" />
-        <property id="1406706293678376750" name="destinationPort" index="3px1z5" />
-        <reference id="2196020025663745115" name="sourceActor" index="jbjzf" />
-        <reference id="2196020025663745124" name="destinationActor" index="jbjzK" />
-      </concept>
-      <concept id="6867915925772324126" name="org.iets3.graphicalLustre.structure.GateDescriptors" flags="ng" index="3hDZ0V" />
-    </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
@@ -227,96 +212,6 @@
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="models" />
     </node>
-  </node>
-  <node concept="jeVL0" id="18na8zanJ9z">
-    <property role="TrG5h" value="Controller Holder" />
-    <node concept="2xkk2h" id="18na8zanJ9_" role="jeVL3">
-      <property role="TrG5h" value="fivesecondtimerexpired" />
-    </node>
-    <node concept="2xkk2h" id="18na8zanJ9A" role="jeVL3">
-      <property role="TrG5h" value="tensecondtimerexpired" />
-    </node>
-    <node concept="2xkk2h" id="18na8zanJ9B" role="jeVL3">
-      <property role="TrG5h" value="startbuttonispressed" />
-    </node>
-    <node concept="2xkk2h" id="18na8zanJ9C" role="jeVL3">
-      <property role="TrG5h" value="stopbuttonispressed" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9D" role="jeVL3">
-      <property role="TrG5h" value="fivesecondtimerstart" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9E" role="jeVL3">
-      <property role="TrG5h" value="auxiliarymotorstart" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9F" role="jeVL3">
-      <property role="TrG5h" value="tensecondtimerstart" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9G" role="jeVL3">
-      <property role="TrG5h" value="auxiliarymotorstop" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9H" role="jeVL3">
-      <property role="TrG5h" value="mainmotorstart" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9I" role="jeVL3">
-      <property role="TrG5h" value="mainmotorstop" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9J" role="jeVL3">
-      <property role="TrG5h" value="oilmotorstart" />
-    </node>
-    <node concept="2xkk2g" id="18na8zanJ9K" role="jeVL3">
-      <property role="TrG5h" value="oilmotorstop" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9L" role="ja_ZJ">
-      <property role="3px1z0" value="Resfivesecondtimerstart.output" />
-      <property role="3px1z5" value="GOfivesecondtimerstart" />
-      <ref role="jbjzf" node="18na8zanJ9D" resolve="fivesecondtimerstart" />
-      <ref role="jbjzK" node="18na8zanJ9D" resolve="fivesecondtimerstart" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9M" role="ja_ZJ">
-      <property role="3px1z0" value="Resauxiliarymotorstart.output" />
-      <property role="3px1z5" value="GOauxiliarymotorstart" />
-      <ref role="jbjzf" node="18na8zanJ9E" resolve="auxiliarymotorstart" />
-      <ref role="jbjzK" node="18na8zanJ9E" resolve="auxiliarymotorstart" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9N" role="ja_ZJ">
-      <property role="3px1z0" value="Restensecondtimerstart.output" />
-      <property role="3px1z5" value="GOtensecondtimerstart" />
-      <ref role="jbjzf" node="18na8zanJ9F" resolve="tensecondtimerstart" />
-      <ref role="jbjzK" node="18na8zanJ9F" resolve="tensecondtimerstart" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9O" role="ja_ZJ">
-      <property role="3px1z0" value="Resauxiliarymotorstop.output" />
-      <property role="3px1z5" value="GOauxiliarymotorstop" />
-      <ref role="jbjzf" node="18na8zanJ9G" resolve="auxiliarymotorstop" />
-      <ref role="jbjzK" node="18na8zanJ9G" resolve="auxiliarymotorstop" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9P" role="ja_ZJ">
-      <property role="3px1z0" value="Resmainmotorstart.output" />
-      <property role="3px1z5" value="GOmainmotorstart" />
-      <ref role="jbjzf" node="18na8zanJ9H" resolve="mainmotorstart" />
-      <ref role="jbjzK" node="18na8zanJ9H" resolve="mainmotorstart" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9Q" role="ja_ZJ">
-      <property role="3px1z0" value="Resmainmotorstop.output" />
-      <property role="3px1z5" value="GOmainmotorstop" />
-      <ref role="jbjzf" node="18na8zanJ9I" resolve="mainmotorstop" />
-      <ref role="jbjzK" node="18na8zanJ9I" resolve="mainmotorstop" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9R" role="ja_ZJ">
-      <property role="3px1z0" value="Resoilmotorstart.output" />
-      <property role="3px1z5" value="GOoilmotorstart" />
-      <ref role="jbjzf" node="18na8zanJ9J" resolve="oilmotorstart" />
-      <ref role="jbjzK" node="18na8zanJ9J" resolve="oilmotorstart" />
-    </node>
-    <node concept="2PY9F8" id="18na8zanJ9S" role="ja_ZJ">
-      <property role="3px1z0" value="Resoilmotorstop.output" />
-      <property role="3px1z5" value="GOoilmotorstop" />
-      <ref role="jbjzf" node="18na8zanJ9K" resolve="oilmotorstop" />
-      <ref role="jbjzK" node="18na8zanJ9K" resolve="oilmotorstop" />
-    </node>
-  </node>
-  <node concept="3hDZ0V" id="18na8zanJ9$">
-    <property role="TrG5h" value="Gate Descriptors" />
   </node>
 </model>
 
