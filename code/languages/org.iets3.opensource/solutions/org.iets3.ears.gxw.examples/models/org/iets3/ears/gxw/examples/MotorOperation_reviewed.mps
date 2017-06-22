@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
   </languages>
   <imports />
   <registry>
@@ -32,6 +33,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
+        <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
@@ -49,11 +51,19 @@
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
         <child id="2964597654736467335" name="arg1" index="9Cqxr" />
       </concept>
+      <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
+        <child id="2964597654736467355" name="arg" index="9Cqx7" />
+      </concept>
       <concept id="6744041109748014277" name="org.iets3.ears.gxw.structure.AndFormulaSR" flags="ng" index="OJJ_H" />
+      <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAxiom" flags="ng" index="1JDFFW">
+        <child id="1618831278223899996" name="arg2" index="1JD8c$" />
+        <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
+      </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
@@ -142,6 +152,36 @@
     <node concept="otU$0" id="5ByxUIFAVz4" role="2skrmv">
       <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="7HbJNeua$Oj" resolve="auxiliary motor" />
+    </node>
+    <node concept="1JDFFW" id="7C$xkK6KPsS" role="1JDDoy">
+      <node concept="OJJ_U" id="7C$xkK6KPsY" role="1JD8cJ">
+        <ref role="OJJ_O" node="5ByxUIFAEiO" />
+      </node>
+      <node concept="OJJ_J" id="7C$xkK6KPt1" role="1JD8c$">
+        <node concept="OJJ_U" id="7C$xkK6KPt6" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVyy" />
+        </node>
+      </node>
+    </node>
+    <node concept="1JDFFW" id="7C$xkK6KPt$" role="1JDDoy">
+      <node concept="OJJ_U" id="7C$xkK6KPtJ" role="1JD8cJ">
+        <ref role="OJJ_O" node="5ByxUIFAEjz" />
+      </node>
+      <node concept="OJJ_J" id="7C$xkK6KPtM" role="1JD8c$">
+        <node concept="OJJ_U" id="7C$xkK6KPtR" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVz4" />
+        </node>
+      </node>
+    </node>
+    <node concept="1JDFFW" id="7C$xkK6KPu_" role="1JDDoy">
+      <node concept="OJJ_U" id="7C$xkK6KPuO" role="1JD8cJ">
+        <ref role="OJJ_O" node="5ByxUIFAEiW" />
+      </node>
+      <node concept="OJJ_J" id="7C$xkK6KPuR" role="1JD8c$">
+        <node concept="OJJ_U" id="7C$xkK6KPuW" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVyM" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="OJ2fN" id="5ByxUIFAEjO">

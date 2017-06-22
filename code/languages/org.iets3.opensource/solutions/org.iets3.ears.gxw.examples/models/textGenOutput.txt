@@ -1,0 +1,14 @@
+##  When start button is pressed, the motor operation controller shall start oil motor and start ten second timer until stop button is pressed
+[] (startbuttonispressed -> ((oilmotorstart && tensecondtimerstart) W (stopbuttonispressed )))
+
+##  When ten second timer expired, the motor operation controller shall start main motor and start five second timer until stop button is pressed
+[] (tensecondtimerexpired -> ((mainmotorstart && fivesecondtimerstart) W (stopbuttonispressed )))
+
+##  When five second timer expired, the motor operation controller shall start auxiliary motor until stop button is pressed
+[] (fivesecondtimerexpired -> (auxiliarymotorstart W (stopbuttonispressed )))
+
+##  When stop button is pressed, the motor operation controller shall stop auxiliary motor and stop main motor and stop oil motor
+[] (stopbuttonispressed -> (auxiliarymotorstop && mainmotorstop && oilmotorstop))
+
+INPUT startbuttonispressed, stopbuttonispressed, tensecondtimerexpired, fivesecondtimerexpired
+OUTPUT oilmotorstart, auxiliarymotorstart, tensecondtimerstart, mainmotorstart, oilmotorstop, mainmotorstop, fivesecondtimerstart, auxiliarymotorstop
