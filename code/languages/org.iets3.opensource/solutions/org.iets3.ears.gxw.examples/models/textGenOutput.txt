@@ -10,5 +10,11 @@
 ##  When stop button is pressed, the motor operation controller shall stop auxiliary motor and stop main motor and stop oil motor
 [] (stopbuttonispressed -> (auxiliarymotorstop && mainmotorstop && oilmotorstop))
 
+[] (oilmotorstart <-> !oilmotorstop )
+
+[] (auxiliarymotorstart <-> !auxiliarymotorstop )
+
+[] (mainmotorstart <-> !mainmotorstop )
+
 INPUT startbuttonispressed, stopbuttonispressed, tensecondtimerexpired, fivesecondtimerexpired
-OUTPUT oilmotorstart, auxiliarymotorstart, tensecondtimerstart, mainmotorstart, oilmotorstop, mainmotorstop, fivesecondtimerstart, auxiliarymotorstop
+OUTPUT tensecondtimerstart, fivesecondtimerstart, auxiliarymotorstop, mainmotorstart, auxiliarymotorstart, oilmotorstart, mainmotorstop, oilmotorstop
