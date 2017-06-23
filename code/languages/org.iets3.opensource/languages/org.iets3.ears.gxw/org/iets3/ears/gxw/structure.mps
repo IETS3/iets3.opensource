@@ -291,6 +291,7 @@
       <property role="IQ2ns" value="4277291022322944233" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tmpFilePath" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
     </node>
     <node concept="PrWs8" id="5QnDqxDaSpu" role="PzmwI">
@@ -572,7 +573,7 @@
   </node>
   <node concept="1TIwiD" id="1pRfBxTOoi4">
     <property role="EcuMT" value="1618831278223754372" />
-    <property role="TrG5h" value="ResponseAxiom" />
+    <property role="TrG5h" value="ResponseEquivalenceAxiom" />
     <property role="3GE5qa" value="Axioms" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pRfBxTOVPn" role="1TKVEi">
@@ -637,7 +638,7 @@
   </node>
   <node concept="1TIwiD" id="5ByxUIF95HW">
     <property role="EcuMT" value="6476888385492638588" />
-    <property role="TrG5h" value="TriggerAxiom" />
+    <property role="TrG5h" value="TriggerEquivalenceAxiom" />
     <property role="3GE5qa" value="Axioms" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ByxUIF95HX" role="1TKVEi">
@@ -655,6 +656,52 @@
       <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
     </node>
     <node concept="PrWs8" id="5ByxUIF95Ig" role="PzmwI">
+      <ref role="PrY4T" node="5ByxUIF95HA" resolve="Axiom" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18na8zbdVga">
+    <property role="EcuMT" value="1303555185137136650" />
+    <property role="3GE5qa" value="Axioms" />
+    <property role="TrG5h" value="ResponseImplicationAxiom" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="18na8zbdVgg" role="1TKVEi">
+      <property role="IQ2ns" value="1303555185137136656" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="1TJgyj" id="18na8zbdVgh" role="1TKVEi">
+      <property role="IQ2ns" value="1303555185137136657" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="PrWs8" id="18na8zbhuOS" role="PzmwI">
+      <ref role="PrY4T" node="5ByxUIF95HA" resolve="Axiom" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18na8zbdVgb">
+    <property role="EcuMT" value="1303555185137136651" />
+    <property role="3GE5qa" value="Axioms" />
+    <property role="TrG5h" value="TriggerImplicationAxiom" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="18na8zbdVgc" role="1TKVEi">
+      <property role="IQ2ns" value="1303555185137136652" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="1TJgyj" id="18na8zbdVgd" role="1TKVEi">
+      <property role="IQ2ns" value="1303555185137136653" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="PrWs8" id="18na8zbhuOU" role="PzmwI">
       <ref role="PrY4T" node="5ByxUIF95HA" resolve="Axiom" />
     </node>
   </node>

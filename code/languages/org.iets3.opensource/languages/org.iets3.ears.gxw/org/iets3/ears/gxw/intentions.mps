@@ -3412,7 +3412,7 @@
                                   <node concept="2OqwBi" id="1pRfBxTYlnt" role="3uHU7w">
                                     <node concept="2OqwBi" id="1pRfBxTY6wa" role="2Oq$k0">
                                       <node concept="1PxgMI" id="18na8zb8w2b" role="2Oq$k0">
-                                        <ref role="1m5ApE" to="q3w4:5ByxUIF95HW" resolve="TriggerAxiom" />
+                                        <ref role="1m5ApE" to="q3w4:5ByxUIF95HW" resolve="TriggerEquivalenceAxiom" />
                                         <node concept="2GrUjf" id="1pRfBxTY3M0" role="1m5AlR">
                                           <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
                                         </node>
@@ -3436,7 +3436,7 @@
                               <node concept="2OqwBi" id="1pRfBxTYqBu" role="3uHU7w">
                                 <node concept="2OqwBi" id="1pRfBxTYp8q" role="2Oq$k0">
                                   <node concept="1PxgMI" id="18na8zb9zcP" role="2Oq$k0">
-                                    <ref role="1m5ApE" to="q3w4:5ByxUIF95HW" resolve="TriggerAxiom" />
+                                    <ref role="1m5ApE" to="q3w4:5ByxUIF95HW" resolve="TriggerEquivalenceAxiom" />
                                     <node concept="2GrUjf" id="1pRfBxTYiQx" role="1m5AlR">
                                       <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
                                     </node>
@@ -3477,7 +3477,7 @@
                     </node>
                     <node concept="1mIQ4w" id="18na8zb8sGF" role="2OqNvi">
                       <node concept="chp4Y" id="18na8zb8thP" role="cj9EA">
-                        <ref role="cht4Q" to="q3w4:5ByxUIF95HW" resolve="TriggerAxiom" />
+                        <ref role="cht4Q" to="q3w4:5ByxUIF95HW" resolve="TriggerEquivalenceAxiom" />
                       </node>
                     </node>
                   </node>
@@ -3503,7 +3503,7 @@
                                     <node concept="2OqwBi" id="18na8zb9Vfw" role="3uHU7w">
                                       <node concept="2OqwBi" id="18na8zb9Vfx" role="2Oq$k0">
                                         <node concept="1PxgMI" id="18na8zb9Vfy" role="2Oq$k0">
-                                          <ref role="1m5ApE" to="q3w4:1pRfBxTOoi4" resolve="ResponseAxiom" />
+                                          <ref role="1m5ApE" to="q3w4:1pRfBxTOoi4" resolve="ResponseEquivalenceAxiom" />
                                           <node concept="2GrUjf" id="18na8zb9Vfz" role="1m5AlR">
                                             <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
                                           </node>
@@ -3527,7 +3527,7 @@
                                 <node concept="2OqwBi" id="18na8zb9VfC" role="3uHU7w">
                                   <node concept="2OqwBi" id="18na8zb9VfD" role="2Oq$k0">
                                     <node concept="1PxgMI" id="18na8zb9VfE" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="q3w4:1pRfBxTOoi4" resolve="ResponseAxiom" />
+                                      <ref role="1m5ApE" to="q3w4:1pRfBxTOoi4" resolve="ResponseEquivalenceAxiom" />
                                       <node concept="2GrUjf" id="18na8zb9VfF" role="1m5AlR">
                                         <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
                                       </node>
@@ -3568,12 +3568,197 @@
                       </node>
                       <node concept="1mIQ4w" id="18na8zb9TPV" role="2OqNvi">
                         <node concept="chp4Y" id="18na8zb9UrB" role="cj9EA">
-                          <ref role="cht4Q" to="q3w4:1pRfBxTOoi4" resolve="ResponseAxiom" />
+                          <ref role="cht4Q" to="q3w4:1pRfBxTOoi4" resolve="ResponseEquivalenceAxiom" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3eNFk2" id="18na8zbh$YE" role="3eNLev">
+                    <node concept="3clFbS" id="18na8zbh$YF" role="3eOfB_">
+                      <node concept="3clFbF" id="18na8zbh$YG" role="3cqZAp">
+                        <node concept="2OqwBi" id="18na8zbh$YH" role="3clFbG">
+                          <node concept="37vLTw" id="18na8zbh$YI" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NfcMgLnDIt" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="18na8zbh$YJ" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="18na8zbh$YK" role="37wK5m">
+                              <node concept="Xl_RD" id="18na8zbh$YL" role="3uHU7w">
+                                <property role="Xl_RC" value=" )" />
+                              </node>
+                              <node concept="3cpWs3" id="18na8zbh$YM" role="3uHU7B">
+                                <node concept="3cpWs3" id="18na8zbh$YN" role="3uHU7B">
+                                  <node concept="3cpWs3" id="18na8zbh$YO" role="3uHU7B">
+                                    <node concept="Xl_RD" id="18na8zbh$YP" role="3uHU7B">
+                                      <property role="Xl_RC" value="[] (" />
+                                    </node>
+                                    <node concept="2OqwBi" id="18na8zbh$YQ" role="3uHU7w">
+                                      <node concept="2OqwBi" id="18na8zbh$YR" role="2Oq$k0">
+                                        <node concept="1PxgMI" id="18na8zbh$YS" role="2Oq$k0">
+                                          <ref role="1m5ApE" to="q3w4:18na8zbdVgb" resolve="TriggerImplicationAxiom" />
+                                          <node concept="2GrUjf" id="18na8zbh$YT" role="1m5AlR">
+                                            <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                                          </node>
+                                        </node>
+                                        <node concept="3TrEf2" id="18na8zbh$YU" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="q3w4:18na8zbdVgc" resolve="arg1" />
+                                        </node>
+                                      </node>
+                                      <node concept="2qgKlT" id="18na8zbh$YV" role="2OqNvi">
+                                        <ref role="37wK5l" to="os8l:3cWp1ZaFwJv" resolve="toFormulaString" />
+                                        <node concept="37vLTw" id="18na8zbnhn8" role="37wK5m">
+                                          <ref role="3cqZAo" node="3QsrawRi6XN" resolve="triggerMap" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="18na8zbh$YX" role="3uHU7w">
+                                    <property role="Xl_RC" value=" -&gt; " />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="18na8zbh$YY" role="3uHU7w">
+                                  <node concept="2OqwBi" id="18na8zbh$YZ" role="2Oq$k0">
+                                    <node concept="1PxgMI" id="18na8zbh$Z0" role="2Oq$k0">
+                                      <ref role="1m5ApE" to="q3w4:18na8zbdVgb" resolve="TriggerImplicationAxiom" />
+                                      <node concept="2GrUjf" id="18na8zbh$Z1" role="1m5AlR">
+                                        <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="18na8zbh$Z2" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="q3w4:18na8zbdVgd" resolve="arg2" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="18na8zbh$Z3" role="2OqNvi">
+                                    <ref role="37wK5l" to="os8l:3cWp1ZaFwJv" resolve="toFormulaString" />
+                                    <node concept="37vLTw" id="18na8zbnicw" role="37wK5m">
+                                      <ref role="3cqZAo" node="3QsrawRi6XN" resolve="triggerMap" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="18na8zbh$Z5" role="3cqZAp">
+                        <node concept="2OqwBi" id="18na8zbh$Z6" role="3clFbG">
+                          <node concept="37vLTw" id="18na8zbh$Z7" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NfcMgLnDIt" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="18na8zbh$Z8" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="Xl_RD" id="18na8zbh$Z9" role="37wK5m">
+                              <property role="Xl_RC" value="\n\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="18na8zbh$Za" role="3eO9$A">
+                      <node concept="2GrUjf" id="18na8zbh$Zb" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                      </node>
+                      <node concept="1mIQ4w" id="18na8zbh$Zc" role="2OqNvi">
+                        <node concept="chp4Y" id="18na8zbhB4x" role="cj9EA">
+                          <ref role="cht4Q" to="q3w4:18na8zbdVgb" resolve="TriggerImplicationAxiom" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3eNFk2" id="18na8zbhECA" role="3eNLev">
+                    <node concept="3clFbS" id="18na8zbhECB" role="3eOfB_">
+                      <node concept="3clFbF" id="18na8zbhECC" role="3cqZAp">
+                        <node concept="2OqwBi" id="18na8zbhECD" role="3clFbG">
+                          <node concept="37vLTw" id="18na8zbhECE" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NfcMgLnDIt" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="18na8zbhECF" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="18na8zbhECG" role="37wK5m">
+                              <node concept="Xl_RD" id="18na8zbhECH" role="3uHU7w">
+                                <property role="Xl_RC" value=" )" />
+                              </node>
+                              <node concept="3cpWs3" id="18na8zbhECI" role="3uHU7B">
+                                <node concept="3cpWs3" id="18na8zbhECJ" role="3uHU7B">
+                                  <node concept="3cpWs3" id="18na8zbhECK" role="3uHU7B">
+                                    <node concept="Xl_RD" id="18na8zbhECL" role="3uHU7B">
+                                      <property role="Xl_RC" value="[] (" />
+                                    </node>
+                                    <node concept="2OqwBi" id="18na8zbhECM" role="3uHU7w">
+                                      <node concept="2OqwBi" id="18na8zbhECN" role="2Oq$k0">
+                                        <node concept="1PxgMI" id="18na8zbhECO" role="2Oq$k0">
+                                          <ref role="1m5ApE" to="q3w4:18na8zbdVga" resolve="ResponseImplicationAxiom" />
+                                          <node concept="2GrUjf" id="18na8zbhECP" role="1m5AlR">
+                                            <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                                          </node>
+                                        </node>
+                                        <node concept="3TrEf2" id="18na8zbhECQ" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="q3w4:18na8zbdVgg" resolve="arg1" />
+                                        </node>
+                                      </node>
+                                      <node concept="2qgKlT" id="18na8zbhECR" role="2OqNvi">
+                                        <ref role="37wK5l" to="os8l:6_TIzovfT5$" resolve="toFormulaString" />
+                                        <node concept="37vLTw" id="18na8zbhECS" role="37wK5m">
+                                          <ref role="3cqZAo" node="6_TIzovfL3N" resolve="responseMap" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="18na8zbhECT" role="3uHU7w">
+                                    <property role="Xl_RC" value=" -&gt; " />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="18na8zbhECU" role="3uHU7w">
+                                  <node concept="2OqwBi" id="18na8zbhECV" role="2Oq$k0">
+                                    <node concept="1PxgMI" id="18na8zbhECW" role="2Oq$k0">
+                                      <ref role="1m5ApE" to="q3w4:18na8zbdVga" resolve="ResponseImplicationAxiom" />
+                                      <node concept="2GrUjf" id="18na8zbhECX" role="1m5AlR">
+                                        <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="18na8zbhECY" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="q3w4:18na8zbdVgh" resolve="arg2" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="18na8zbhECZ" role="2OqNvi">
+                                    <ref role="37wK5l" to="os8l:6_TIzovfT5$" resolve="toFormulaString" />
+                                    <node concept="37vLTw" id="18na8zbhED0" role="37wK5m">
+                                      <ref role="3cqZAo" node="6_TIzovfL3N" resolve="responseMap" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="18na8zbhED1" role="3cqZAp">
+                        <node concept="2OqwBi" id="18na8zbhED2" role="3clFbG">
+                          <node concept="37vLTw" id="18na8zbhED3" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NfcMgLnDIt" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="18na8zbhED4" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="Xl_RD" id="18na8zbhED5" role="37wK5m">
+                              <property role="Xl_RC" value="\n\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="18na8zbhED6" role="3eO9$A">
+                      <node concept="2GrUjf" id="18na8zbhED7" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1pRfBxTXUY3" resolve="axiom" />
+                      </node>
+                      <node concept="1mIQ4w" id="18na8zbhED8" role="2OqNvi">
+                        <node concept="chp4Y" id="18na8zbhGV0" role="cj9EA">
+                          <ref role="cht4Q" to="q3w4:18na8zbdVga" resolve="ResponseImplicationAxiom" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="18na8zbh$gM" role="3cqZAp" />
               </node>
             </node>
             <node concept="3clFbH" id="5Q6Y74fjWN1" role="3cqZAp" />

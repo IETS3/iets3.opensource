@@ -1,20 +1,20 @@
-##  When start button is pressed, the motor operation controller shall start oil motor and start ten second timer until stop button is pressed
-[] (startbuttonispressed -> ((oilmotorstart && tensecondtimerstart) W (stopbuttonispressed )))
+##  When object proximity sensor is activated, the automatic door controller shall open door until door opening limit sensor is activated OR timer expires OR door closing limit sensor is activated
+[] (objectproximitysensorisactivated -> (dooropen W (((dooropeninglimitsensorisactivated || timerexpires) || doorclosinglimitsensorisactivated) )))
 
-##  When ten second timer expired, the motor operation controller shall start main motor and start five second timer until stop button is pressed
-[] (tensecondtimerexpired -> ((mainmotorstart && fivesecondtimerstart) W (stopbuttonispressed )))
+##  When door opening limit sensor is activated, the automatic door controller shall stop door and start timer until timer expires OR door closing limit sensor is activated
+[] (dooropeninglimitsensorisactivated -> ((doorstop && timerstart) W ((timerexpires || doorclosinglimitsensorisactivated) )))
 
-##  When five second timer expired, the motor operation controller shall start auxiliary motor until stop button is pressed
-[] (fivesecondtimerexpired -> (auxiliarymotorstart W (stopbuttonispressed )))
+##  When timer expires, the automatic door controller shall close door until door closing limit sensor is activated
+[] (timerexpires -> (doorclose W (doorclosinglimitsensorisactivated )))
 
-##  When stop button is pressed, the motor operation controller shall stop auxiliary motor and stop main motor and stop oil motor
-[] (stopbuttonispressed -> (auxiliarymotorstop && mainmotorstop && oilmotorstop))
+##  When door closing limit sensor is activated, the automatic door controller shall stop door
+[] (doorclosinglimitsensorisactivated -> doorstop)
 
-[] (oilmotorstart <-> !oilmotorstop )
+[] (doorstop <-> (!doorclose && !dooropen) )
 
-[] (auxiliarymotorstart <-> !auxiliarymotorstop )
+[] (dooropen -> !doorclose )
 
-[] (mainmotorstart <-> !mainmotorstop )
+[] (doorclose -> !dooropen )
 
-INPUT startbuttonispressed, stopbuttonispressed, tensecondtimerexpired, fivesecondtimerexpired
-OUTPUT tensecondtimerstart, fivesecondtimerstart, auxiliarymotorstop, mainmotorstart, auxiliarymotorstart, oilmotorstart, mainmotorstop, oilmotorstop
+INPUT objectproximitysensorisactivated, dooropeninglimitsensorisactivated, doorclosinglimitsensorisactivated, timerexpires
+OUTPUT doorclose, doorstop, timerstart, dooropen

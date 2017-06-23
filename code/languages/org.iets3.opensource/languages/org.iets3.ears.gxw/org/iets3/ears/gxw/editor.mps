@@ -1409,7 +1409,7 @@
   </node>
   <node concept="24kQdi" id="1pRfBxTOo_r">
     <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:1pRfBxTOoi4" resolve="ResponseAxiom" />
+    <ref role="1XX52x" to="q3w4:1pRfBxTOoi4" resolve="ResponseEquivalenceAxiom" />
     <node concept="3EZMnI" id="1pRfBxTOVPy" role="2wV5jI">
       <node concept="3F1sOY" id="1pRfBxTOVPF" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:1pRfBxTOVPn" resolve="arg1" />
@@ -1520,7 +1520,7 @@
   </node>
   <node concept="24kQdi" id="5ByxUIFeulC">
     <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:5ByxUIF95HW" resolve="TriggerAxiom" />
+    <ref role="1XX52x" to="q3w4:5ByxUIF95HW" resolve="TriggerEquivalenceAxiom" />
     <node concept="3EZMnI" id="5ByxUIFeulE" role="2wV5jI">
       <node concept="3F1sOY" id="5ByxUIFeulJ" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:5ByxUIF95HX" resolve="arg1" />
@@ -1532,6 +1532,38 @@
         <ref role="1NtTu8" to="q3w4:5ByxUIF95HZ" resolve="arg2" />
       </node>
       <node concept="l2Vlx" id="5ByxUIFeulM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="18na8zbdVgA">
+    <property role="3GE5qa" value="Axioms" />
+    <ref role="1XX52x" to="q3w4:18na8zbdVga" resolve="ResponseImplicationAxiom" />
+    <node concept="3EZMnI" id="18na8zbdVgC" role="2wV5jI">
+      <node concept="3F1sOY" id="18na8zbdVgD" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:18na8zbdVgg" resolve="arg1" />
+      </node>
+      <node concept="3F0ifn" id="18na8zbdVgE" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="18na8zbdVgF" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:18na8zbdVgh" resolve="arg2" />
+      </node>
+      <node concept="l2Vlx" id="18na8zbdVgG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="18na8zbdVgU">
+    <property role="3GE5qa" value="Axioms" />
+    <ref role="1XX52x" to="q3w4:18na8zbdVgb" resolve="TriggerImplicationAxiom" />
+    <node concept="3EZMnI" id="18na8zbdVgW" role="2wV5jI">
+      <node concept="3F1sOY" id="18na8zbdVgX" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:18na8zbdVgc" resolve="arg1" />
+      </node>
+      <node concept="3F0ifn" id="18na8zbdVgY" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="18na8zbdVgZ" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:18na8zbdVgd" resolve="arg2" />
+      </node>
+      <node concept="l2Vlx" id="18na8zbdVh0" role="2iSdaV" />
     </node>
   </node>
 </model>
