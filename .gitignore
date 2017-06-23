@@ -51,6 +51,7 @@ code/languages/*/build.properties
 code/languages/*/TEST*.xml
 code/languages/org.iets3.core/build/tmp
 code/languages/org.iets3.opensource/languages/testLanguage/models/FlowModel.mps
+code/languages/org.iets3.opensource/solutions/org.iets3.ears.gxw.examples/models/textGenOutput.txt
 
 # -----------------------------------------------------------
 # GRADLE

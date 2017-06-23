@@ -65,11 +65,11 @@
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
         <child id="1333452220594854527" name="triggerWhen" index="3v0$n5" />
       </concept>
-      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAxiom" flags="ng" index="1JDFFW">
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseEquivalenceAxiom" flags="ng" index="1JDFFW">
         <child id="1618831278223899996" name="arg2" index="1JD8c$" />
         <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
       </concept>
-      <concept id="6476888385492638588" name="org.iets3.ears.gxw.structure.TriggerAxiom" flags="ng" index="3MLHNn">
+      <concept id="6476888385492638588" name="org.iets3.ears.gxw.structure.TriggerEquivalenceAxiom" flags="ng" index="3MLHNn">
         <child id="6476888385492638591" name="arg2" index="3MLHNk" />
         <child id="6476888385492638589" name="arg1" index="3MLHNm" />
       </concept>
@@ -337,12 +337,18 @@
           <ref role="OJJ_O" node="7HbJNetZtHS" />
         </node>
       </node>
+      <node concept="3T_uu0" id="2nkzonNOiFi" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIED19B" />
+      </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAm0a" role="OJ2fO">
       <property role="eBQts" value="Req6" />
       <node concept="3t3aUO" id="5ByxUIFAm1v" role="3tWTBb" />
       <node concept="OJJ_U" id="5ByxUIFAm1x" role="1QgFCz">
         <ref role="OJJ_O" node="1pRfBxTOo8Y" />
+      </node>
+      <node concept="3T_uu0" id="2nkzonNOiFk" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIED19Y" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAm2T" role="OJ2fO">
@@ -365,6 +371,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3T_uu0" id="2nkzonNOiFm" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIED1bH" />
       </node>
     </node>
     <node concept="9PVaO" id="18na8zbdOPn" role="3DRjlG">
