@@ -69,6 +69,9 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -490,6 +493,10 @@
                         <ref role="3cqZAo" node="252QIDypGUh" resolve="actual" />
                       </node>
                       <node concept="oxNuS" id="18$bUx6jTG3" role="37wK5m" />
+                      <node concept="10M0yZ" id="4945UtRWp$$" role="37wK5m">
+                        <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
+                        <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                      </node>
                       <node concept="3fckFw" id="18$bUx6jTG4" role="37wK5m" />
                     </node>
                   </node>
@@ -641,6 +648,10 @@
                     <ref role="37wK5l" to="oq0c:3Y6fbK1mY1d" resolve="reportErrorIfFalse" />
                     <ref role="1Pybhc" to="oq0c:3Y6fbK1mTIY" resolve="CVH" />
                     <node concept="oxNuS" id="3Y6fbK1mYrF" role="37wK5m" />
+                    <node concept="10M0yZ" id="4945UtRWpIf" role="37wK5m">
+                      <ref role="3cqZAo" to="oq0c:4945UtRC3nV" resolve="PRE" />
+                      <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                    </node>
                     <node concept="qpA2v" id="18$bUx6jYbw" role="37wK5m">
                       <node concept="2OqwBi" id="18$bUx6jYbx" role="3SLO0q">
                         <node concept="2GrUjf" id="18$bUx6jYby" role="2Oq$k0">
@@ -704,6 +715,10 @@
                     <ref role="1Pybhc" to="oq0c:3Y6fbK1mTIY" resolve="CVH" />
                     <ref role="37wK5l" to="oq0c:3Y6fbK1mY1d" resolve="reportErrorIfFalse" />
                     <node concept="oxNuS" id="KaZMgyhbiw" role="37wK5m" />
+                    <node concept="10M0yZ" id="4945UtRWpRt" role="37wK5m">
+                      <ref role="3cqZAo" to="oq0c:4945UtRC32u" resolve="POST" />
+                      <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                    </node>
                     <node concept="qpA2v" id="KaZMgyhbix" role="37wK5m">
                       <node concept="2OqwBi" id="KaZMgyhbiy" role="3SLO0q">
                         <node concept="2GrUjf" id="KaZMgyhbiz" role="2Oq$k0">
@@ -749,6 +764,10 @@
                   <ref role="3cqZAo" node="KaZMgylk$m" resolve="res" />
                 </node>
                 <node concept="oxNuS" id="252QIDym4fp" role="37wK5m" />
+                <node concept="10M0yZ" id="4945UtRWq4x" role="37wK5m">
+                  <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
+                  <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                </node>
                 <node concept="3fckFw" id="4_qY3E6y5um" role="37wK5m" />
               </node>
             </node>
@@ -1220,6 +1239,10 @@
                         <ref role="37wK5l" to="oq0c:3Y6fbK1mY1d" resolve="reportErrorIfFalse" />
                         <ref role="1Pybhc" to="oq0c:3Y6fbK1mTIY" resolve="CVH" />
                         <node concept="oxNuS" id="KaZMgyalC$" role="37wK5m" />
+                        <node concept="10M0yZ" id="4945UtS0iip" role="37wK5m">
+                          <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
+                          <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                        </node>
                         <node concept="qpA2v" id="KaZMgyahGI" role="37wK5m">
                           <node concept="2OqwBi" id="KaZMgyahID" role="3SLO0q">
                             <node concept="2GrUjf" id="KaZMgyahGY" role="2Oq$k0">
@@ -1270,6 +1293,10 @@
                       <ref role="3cqZAo" node="KaZMgyadbI" resolve="value" />
                     </node>
                     <node concept="oxNuS" id="252QIDym3vV" role="37wK5m" />
+                    <node concept="10M0yZ" id="4945UtS0iIG" role="37wK5m">
+                      <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
+                      <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                    </node>
                     <node concept="3fckFw" id="4_qY3E6y5hX" role="37wK5m" />
                   </node>
                 </node>
