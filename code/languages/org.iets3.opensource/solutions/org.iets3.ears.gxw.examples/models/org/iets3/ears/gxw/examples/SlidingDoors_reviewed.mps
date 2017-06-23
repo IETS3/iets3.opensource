@@ -6,31 +6,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
-      <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
-        <child id="2196020025663654779" name="listofWires" index="ja_ZJ" />
-        <child id="2196020025662531799" name="listOfActors" index="jeVL3" />
-      </concept>
-      <concept id="6815116176709216413" name="org.iets3.graphicalLustre.structure.GlobalOutputActor" flags="ng" index="2xkk2g" />
-      <concept id="6815116176709216412" name="org.iets3.graphicalLustre.structure.GlobalInputActor" flags="ng" index="2xkk2h" />
-      <concept id="6535459388227175517" name="org.iets3.graphicalLustre.structure.ResActor" flags="ng" index="2PXPBM" />
-      <concept id="6535459388227175516" name="org.iets3.graphicalLustre.structure.Actor" flags="ng" index="2PXPBN">
-        <reference id="608954144288747990" name="gateDefinition" index="1mD$57" />
-      </concept>
-      <concept id="6535459388227454823" name="org.iets3.graphicalLustre.structure.Wire" flags="ng" index="2PY9F8">
-        <property id="1406706293678376747" name="sourcePort" index="3px1z0" />
-        <property id="1406706293678376750" name="destinationPort" index="3px1z5" />
-        <reference id="2196020025663745115" name="sourceActor" index="jbjzf" />
-        <reference id="2196020025663745124" name="destinationActor" index="jbjzK" />
-      </concept>
-      <concept id="6535459388227413520" name="org.iets3.graphicalLustre.structure.IfTBActor" flags="ng" index="2PYZIZ" />
-      <concept id="6867915925772324129" name="org.iets3.graphicalLustre.structure.GateDefinition" flags="ng" index="3hDZ04">
-        <property id="6867915925772324130" name="definition" index="3hDZ07" />
-      </concept>
-      <concept id="6867915925772324126" name="org.iets3.graphicalLustre.structure.GateDescriptors" flags="ng" index="3hDZ0V">
-        <child id="6867915925772324127" name="gateDefinitions" index="3hDZ0U" />
-      </concept>
-    </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
@@ -57,6 +32,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
+        <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
@@ -74,11 +50,23 @@
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
         <child id="2964597654736467335" name="arg1" index="9Cqxr" />
       </concept>
+      <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
+        <child id="2964597654736467355" name="arg" index="9Cqx7" />
+      </concept>
       <concept id="6744041109748014277" name="org.iets3.ears.gxw.structure.AndFormulaSR" flags="ng" index="OJJ_H" />
+      <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="1303555185137136650" name="org.iets3.ears.gxw.structure.ResponseImplicationAxiom" flags="ng" index="3p89M2">
+        <child id="1303555185137136656" name="arg1" index="3p89Mo" />
+        <child id="1303555185137136657" name="arg2" index="3p89Mp" />
+      </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseEquivalenceAxiom" flags="ng" index="1JDFFW">
+        <child id="1618831278223899996" name="arg2" index="1JD8c$" />
+        <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
+      </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
@@ -91,7 +79,7 @@
     </language>
   </registry>
   <node concept="2skrmn" id="5ByxUIFBn_4">
-    <property role="TrG5h" value="automatic door" />
+    <property role="TrG5h" value="automatic door controller" />
     <node concept="2uIZ38" id="2$$ntKwwEOq" role="2skrmi">
       <property role="TrG5h" value="door" />
       <property role="2uI0VX" value="the automatic door" />
@@ -144,10 +132,47 @@
       <property role="Nkej4" value="stop" />
       <ref role="Nkej6" node="2$$ntKwwEOq" resolve="door" />
     </node>
+    <node concept="1JDFFW" id="18na8zbdORq" role="1JDDoy">
+      <node concept="OJJ_U" id="18na8zbdORz" role="1JD8cJ">
+        <ref role="OJJ_O" node="5ByxUIFBnAs" />
+      </node>
+      <node concept="OJJ_H" id="18na8zbdORA" role="1JD8c$">
+        <node concept="OJJ_J" id="18na8zbdORH" role="9Cqxr">
+          <node concept="OJJ_U" id="18na8zbdORM" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBnA0" />
+          </node>
+        </node>
+        <node concept="OJJ_J" id="18na8zbdORP" role="9Cqxi">
+          <node concept="OJJ_U" id="18na8zbdORU" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBn_S" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3p89M2" id="18na8zbhw5e" role="1JDDoy">
+      <node concept="OJJ_U" id="18na8zbhw5s" role="3p89Mo">
+        <ref role="OJJ_O" node="5ByxUIFBn_S" />
+      </node>
+      <node concept="OJJ_J" id="18na8zbhw5v" role="3p89Mp">
+        <node concept="OJJ_U" id="18na8zbhw5O" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFBnA0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3p89M2" id="18na8zbhw5R" role="1JDDoy">
+      <node concept="OJJ_U" id="18na8zbhw69" role="3p89Mo">
+        <ref role="OJJ_O" node="5ByxUIFBnA0" />
+      </node>
+      <node concept="OJJ_J" id="18na8zbhw6c" role="3p89Mp">
+        <node concept="OJJ_U" id="18na8zbhw6h" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFBn_S" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="OJ2fN" id="5ByxUIFBnAm">
-    <property role="TrG5h" value="automatic door" />
-    <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door" />
+    <property role="TrG5h" value="automatic door controller" />
+    <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door controller" />
     <node concept="sEiiz" id="5ByxUIFBnAy" role="OJ2fO">
       <property role="eBQts" value="Req1" />
       <node concept="3T_uu0" id="5ByxUIFBnA$" role="3tOtb8">
@@ -189,7 +214,7 @@
         <ref role="3T_uuC" node="5ByxUIFBn_z" />
       </node>
       <node concept="3t3aUO" id="5ByxUIFBnCc" role="3tWTBb" />
-      <node concept="OJJ_U" id="5ByxUIFBnCe" role="1QgFCz">
+      <node concept="OJJ_U" id="18na8zbdOSN" role="1QgFCz">
         <ref role="OJJ_O" node="5ByxUIFBnAs" />
       </node>
     </node>
@@ -197,208 +222,6 @@
       <property role="1RwFax" value="true" />
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="models" />
-    </node>
-  </node>
-  <node concept="jeVL0" id="5bowr9Xlde9">
-    <property role="TrG5h" value="Controller Holder" />
-    <node concept="2PYZIZ" id="5bowr9Xldeb" role="jeVL3">
-      <property role="TrG5h" value="Ctrl_0" />
-      <ref role="1mD$57" node="5bowr9Xldec" resolve="Ctrl_0" />
-    </node>
-    <node concept="2PYZIZ" id="5bowr9Xlded" role="jeVL3">
-      <property role="TrG5h" value="Ctrl_1" />
-      <ref role="1mD$57" node="5bowr9Xldee" resolve="Ctrl_1" />
-    </node>
-    <node concept="2PYZIZ" id="5bowr9Xldef" role="jeVL3">
-      <property role="TrG5h" value="Ctrl_2" />
-      <ref role="1mD$57" node="5bowr9Xldeg" resolve="Ctrl_2" />
-    </node>
-    <node concept="2PYZIZ" id="5bowr9Xldeh" role="jeVL3">
-      <property role="TrG5h" value="Ctrl_3" />
-      <ref role="1mD$57" node="5bowr9Xldei" resolve="Ctrl_3" />
-    </node>
-    <node concept="2PXPBM" id="5bowr9Xldej" role="jeVL3">
-      <property role="TrG5h" value="Restimerstart" />
-      <ref role="1mD$57" node="5bowr9Xldek" resolve="Restimerstart" />
-    </node>
-    <node concept="2PXPBM" id="5bowr9Xldel" role="jeVL3">
-      <property role="TrG5h" value="Resdoorclose" />
-      <ref role="1mD$57" node="5bowr9Xldem" resolve="Resdoorclose" />
-    </node>
-    <node concept="2PXPBM" id="5bowr9Xlden" role="jeVL3">
-      <property role="TrG5h" value="Resdooropen" />
-      <ref role="1mD$57" node="5bowr9Xldeo" resolve="Resdooropen" />
-    </node>
-    <node concept="2PXPBM" id="5bowr9Xldep" role="jeVL3">
-      <property role="TrG5h" value="Resdoorstop" />
-      <ref role="1mD$57" node="5bowr9Xldeq" resolve="Resdoorstop" />
-    </node>
-    <node concept="2xkk2h" id="5bowr9Xlder" role="jeVL3">
-      <property role="TrG5h" value="doorclosinglimitsensorisactivated" />
-    </node>
-    <node concept="2xkk2h" id="5bowr9Xldes" role="jeVL3">
-      <property role="TrG5h" value="dooropeninglimitsensorisactivated" />
-    </node>
-    <node concept="2xkk2h" id="5bowr9Xldet" role="jeVL3">
-      <property role="TrG5h" value="objectproximitysensorisactivated" />
-    </node>
-    <node concept="2xkk2h" id="5bowr9Xldeu" role="jeVL3">
-      <property role="TrG5h" value="timerexpires" />
-    </node>
-    <node concept="2xkk2g" id="5bowr9Xldev" role="jeVL3">
-      <property role="TrG5h" value="timerstart" />
-    </node>
-    <node concept="2xkk2g" id="5bowr9Xldew" role="jeVL3">
-      <property role="TrG5h" value="doorclose" />
-    </node>
-    <node concept="2xkk2g" id="5bowr9Xldex" role="jeVL3">
-      <property role="TrG5h" value="dooropen" />
-    </node>
-    <node concept="2xkk2g" id="5bowr9Xldey" role="jeVL3">
-      <property role="TrG5h" value="doorstop" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9Xldez" role="ja_ZJ">
-      <property role="3px1z5" value="Ctrl_0.input" />
-      <property role="3px1z0" value="GIobjectproximitysensorisactivated" />
-      <ref role="jbjzK" node="5bowr9Xldeb" resolve="Ctrl_0" />
-      <ref role="jbjzf" node="5bowr9Xldet" resolve="objectproximitysensorisactivated" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9Xlde$" role="ja_ZJ">
-      <property role="3px1z5" value="Ctrl_1.input" />
-      <property role="3px1z0" value="GIdooropeninglimitsensorisactivated" />
-      <ref role="jbjzK" node="5bowr9Xlded" resolve="Ctrl_1" />
-      <ref role="jbjzf" node="5bowr9Xldes" resolve="dooropeninglimitsensorisactivated" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9Xlde_" role="ja_ZJ">
-      <property role="3px1z5" value="Ctrl_2.input" />
-      <property role="3px1z0" value="GItimerexpires" />
-      <ref role="jbjzK" node="5bowr9Xldef" resolve="Ctrl_2" />
-      <ref role="jbjzf" node="5bowr9Xldeu" resolve="timerexpires" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeA" role="ja_ZJ">
-      <property role="3px1z5" value="Ctrl_3.input" />
-      <property role="3px1z0" value="GIdoorclosinglimitsensorisactivated" />
-      <ref role="jbjzK" node="5bowr9Xldeh" resolve="Ctrl_3" />
-      <ref role="jbjzf" node="5bowr9Xlder" resolve="doorclosinglimitsensorisactivated" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeB" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_1.output" />
-      <property role="3px1z5" value="Restimerstart.input0" />
-      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9Xldej" resolve="Restimerstart" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeC" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_1.dc" />
-      <property role="3px1z5" value="Restimerstart.dc0" />
-      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9Xldej" resolve="Restimerstart" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeD" role="ja_ZJ">
-      <property role="3px1z0" value="Restimerstart.output" />
-      <property role="3px1z5" value="GOtimerstart" />
-      <ref role="jbjzf" node="5bowr9Xldej" resolve="Restimerstart" />
-      <ref role="jbjzK" node="5bowr9Xldev" resolve="timerstart" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeE" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_2.output" />
-      <property role="3px1z5" value="Resdoorclose.input0" />
-      <ref role="jbjzf" node="5bowr9Xldef" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="5bowr9Xldel" resolve="Resdoorclose" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeF" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_2.dc" />
-      <property role="3px1z5" value="Resdoorclose.dc0" />
-      <ref role="jbjzf" node="5bowr9Xldef" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="5bowr9Xldel" resolve="Resdoorclose" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeG" role="ja_ZJ">
-      <property role="3px1z0" value="Resdoorclose.output" />
-      <property role="3px1z5" value="GOdoorclose" />
-      <ref role="jbjzf" node="5bowr9Xldel" resolve="Resdoorclose" />
-      <ref role="jbjzK" node="5bowr9Xldew" resolve="doorclose" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeH" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_0.output" />
-      <property role="3px1z5" value="Resdooropen.input0" />
-      <ref role="jbjzf" node="5bowr9Xldeb" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="5bowr9Xlden" resolve="Resdooropen" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeI" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_0.dc" />
-      <property role="3px1z5" value="Resdooropen.dc0" />
-      <ref role="jbjzf" node="5bowr9Xldeb" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="5bowr9Xlden" resolve="Resdooropen" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeJ" role="ja_ZJ">
-      <property role="3px1z0" value="Resdooropen.output" />
-      <property role="3px1z5" value="GOdooropen" />
-      <ref role="jbjzf" node="5bowr9Xlden" resolve="Resdooropen" />
-      <ref role="jbjzK" node="5bowr9Xldex" resolve="dooropen" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeK" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_1.output" />
-      <property role="3px1z5" value="Resdoorstop.input0" />
-      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeL" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_1.dc" />
-      <property role="3px1z5" value="Resdoorstop.dc0" />
-      <ref role="jbjzf" node="5bowr9Xlded" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeM" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_3.output" />
-      <property role="3px1z5" value="Resdoorstop.input1" />
-      <ref role="jbjzf" node="5bowr9Xldeh" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeN" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_3.dc" />
-      <property role="3px1z5" value="Resdoorstop.dc1" />
-      <ref role="jbjzf" node="5bowr9Xldeh" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="5bowr9Xldep" resolve="Resdoorstop" />
-    </node>
-    <node concept="2PY9F8" id="5bowr9XldeO" role="ja_ZJ">
-      <property role="3px1z0" value="Resdoorstop.output" />
-      <property role="3px1z5" value="GOdoorstop" />
-      <ref role="jbjzf" node="5bowr9Xldep" resolve="Resdoorstop" />
-      <ref role="jbjzK" node="5bowr9Xldey" resolve="doorstop" />
-    </node>
-  </node>
-  <node concept="3hDZ0V" id="5bowr9Xldea">
-    <property role="TrG5h" value="Gate Descriptors" />
-    <node concept="3hDZ04" id="5bowr9Xldec" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_0" />
-      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldee" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_1" />
-      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldeg" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_2" />
-      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldei" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_3" />
-      <property role="3hDZ07" value="node IfTB (input: bool) returns (output: int);&#10;let &#10;&#9;output = if input then 1&#10;&#9;&#9;    else 2;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldek" role="3hDZ0U">
-      <property role="TrG5h" value="Restimerstart" />
-      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldem" role="3hDZ0U">
-      <property role="TrG5h" value="Resdoorclose" />
-      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldeo" role="3hDZ0U">
-      <property role="TrG5h" value="Resdooropen" />
-      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="5bowr9Xldeq" role="3hDZ0U">
-      <property role="TrG5h" value="Resdoorstop" />
-      <property role="3hDZ07" value="node Res2 (input0 , input1: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
     </node>
   </node>
 </model>
