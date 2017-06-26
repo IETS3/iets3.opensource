@@ -155,7 +155,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -1519,16 +1518,8 @@
                                   <ref role="3Tt5mk" to="q3w4:6_TIzoveK0l" resolve="response" />
                                 </node>
                               </node>
-                              <node concept="3cpWs3" id="18na8zaEY4K" role="37wK5m">
-                                <node concept="3cmrfG" id="18na8zaF07q" role="3uHU7w">
-                                  <property role="3cmrfH" value="1" />
-                                </node>
-                                <node concept="2OqwBi" id="5bowr9Ye6uC" role="3uHU7B">
-                                  <node concept="2GrUjf" id="5bowr9YdYp0" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="6mryTk85$$Y" resolve="req" />
-                                  </node>
-                                  <node concept="2bSWHS" id="5bowr9Ye8xp" role="2OqNvi" />
-                                </node>
+                              <node concept="2GrUjf" id="2nkzonNOFFg" role="37wK5m">
+                                <ref role="2Gs0qQ" node="6mryTk85$$Y" resolve="req" />
                               </node>
                             </node>
                           </node>
