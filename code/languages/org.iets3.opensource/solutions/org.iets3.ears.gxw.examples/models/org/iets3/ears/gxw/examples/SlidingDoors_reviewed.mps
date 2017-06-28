@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
   </languages>
   <imports />
   <registry>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:147a4ec2-9c19-4def-a4fe-0c279f3679f7(SimulationOutputChecker.generator.template.main@generator)">
+<model ref="r:147a4ec2-9c19-4def-a4fe-0c279f3679f7(org.iets3.simulationOutputChecker.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="SimulationOutputChecker" version="-1" />

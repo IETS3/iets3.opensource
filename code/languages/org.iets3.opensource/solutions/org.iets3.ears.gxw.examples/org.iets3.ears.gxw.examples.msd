@@ -15,6 +15,7 @@
     <dependency reexport="false">3e3749e5-96c0-4132-8c4a-7309a74f9fd6(org.iets3.flow.modelproperty.gxw)</dependency>
     <dependency reexport="false">c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.modelproperty.formulae)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
+    <dependency reexport="false">4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -45,6 +46,7 @@
     <language slang="l:10211132-9b5e-427a-9b37-1c1f28794a5e:org.iets3.flow.dashboard" version="0" />
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.modelproperty.formulae" version="0" />
     <language slang="l:33eb1b5b-ad96-4262-9112-684c487e01e0:org.iets3.graphicalLustre" version="0" />
+    <language slang="l:4796fa81-3510-44f2-9810-887e950aacc3:org.iets3.simulationOutputChecker" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -89,6 +91,7 @@
     <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.modelproperty.formulae)" version="0" />
     <module reference="3e3749e5-96c0-4132-8c4a-7309a74f9fd6(org.iets3.flow.modelproperty.gxw)" version="0" />
     <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty.req)" version="0" />
+    <module reference="4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)" version="0" />
     <module reference="f32fddd3-9ea0-405b-9874-fdda57f5e83d(org.iets3.structuralCoder)" version="0" />
   </dependencyVersions>
 </solution>

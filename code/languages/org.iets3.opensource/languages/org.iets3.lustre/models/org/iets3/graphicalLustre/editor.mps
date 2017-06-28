@@ -974,5 +974,32 @@
       <node concept="l2Vlx" id="7R851$_ioWv" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="7C1a6DfxCbo">
+    <property role="3GE5qa" value="Actors" />
+    <ref role="1XX52x" to="lqc6:7C1a6DfxCbf" resolve="ReleaseActor" />
+    <node concept="3EZMnI" id="7C1a6DfxCbu" role="2wV5jI">
+      <node concept="3F0ifn" id="7C1a6DfxCbv" role="3EZMnx">
+        <property role="3F0ifm" value="Release Actor" />
+      </node>
+      <node concept="3F0A7n" id="7C1a6DfxCbw" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pVoyu" id="7C1a6DfxCbx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7C1a6DfxCby" role="3EZMnx" />
+      <node concept="1iCGBv" id="7C1a6DfxCbz" role="3EZMnx">
+        <property role="1$x2rV" value="Def" />
+        <ref role="1NtTu8" to="lqc6:xNs95uPj7m" resolve="gateDefinition" />
+        <node concept="1sVBvm" id="7C1a6DfxCb$" role="1sWHZn">
+          <node concept="3F0ifn" id="7C1a6DfxCb_" role="2wV5jI">
+            <property role="3F0ifm" value="Def" />
+            <property role="ilYzB" value="Def" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7C1a6DfxCbA" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

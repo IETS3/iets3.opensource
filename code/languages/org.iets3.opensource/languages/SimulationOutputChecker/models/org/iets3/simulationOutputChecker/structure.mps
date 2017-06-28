@@ -26,8 +26,13 @@
   </registry>
   <node concept="1TIwiD" id="7C$xkK6QkIe">
     <property role="EcuMT" value="8801306133367704462" />
-    <property role="TrG5h" value="OutputChecker" />
+    <property role="TrG5h" value="OutputCheckerSimulink" />
     <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7kjiFf88uGM">
+    <property role="EcuMT" value="8436168663012338482" />
+    <property role="TrG5h" value="Aaaaaeee" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

@@ -258,5 +258,11 @@
     <property role="TrG5h" value="AndActor" />
     <ref role="1TJDcQ" node="5EMBqZJiwso" resolve="LogicalActor" />
   </node>
+  <node concept="1TIwiD" id="7C1a6DfxCbf">
+    <property role="EcuMT" value="8791352384669778639" />
+    <property role="3GE5qa" value="Actors" />
+    <property role="TrG5h" value="ReleaseActor" />
+    <ref role="1TJDcQ" node="5EMBqZJiwso" resolve="LogicalActor" />
+  </node>
 </model>
 
