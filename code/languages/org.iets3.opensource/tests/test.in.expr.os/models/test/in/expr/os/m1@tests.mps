@@ -34,6 +34,18 @@
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
         <property id="852155438140865198" name="allowWarnings" index="G7GLP" />
       </concept>
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
+        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
+        <property id="1229194968595" name="cellId" index="LIFWd" />
+      </concept>
+      <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
+        <property id="1227184461946" name="keys" index="2TTd_B" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -120,6 +132,11 @@
       <concept id="4618483580248255217" name="org.iets3.core.expr.collections.structure.UnpackOptionsOp" flags="ng" index="3LGWMD" />
       <concept id="6414340278546763815" name="org.iets3.core.expr.collections.structure.AsSingletonList" flags="ng" index="3MhG1o" />
       <concept id="7740953487940081584" name="org.iets3.core.expr.collections.structure.MinOp" flags="ng" index="1W43ev" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
       <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
@@ -19457,6 +19474,46 @@
         <node concept="7CXmI" id="6JZACDWVYZW" role="lGtFl">
           <node concept="7OXhh" id="6JZACDWVYZX" role="7EUXB" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3bWAyjusgpP">
+    <property role="TrG5h" value="editorParens" />
+    <node concept="30dDZf" id="3bWAyjusgqb" role="LiRBU">
+      <node concept="30dDTi" id="3bWAyjusgrR" role="30dEs_">
+        <node concept="30bXRB" id="3bWAyjusgsB" role="30dEs_">
+          <property role="30bXRw" value="5" />
+        </node>
+        <node concept="30bXRB" id="3bWAyjusgqC" role="30dEsF">
+          <property role="30bXRw" value="3" />
+        </node>
+        <node concept="LIFWc" id="3bWAyjusgwJ" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="LIFWd" value="Collection_uefsp_a" />
+        </node>
+      </node>
+      <node concept="30bXRB" id="3bWAyjusgpW" role="30dEsF">
+        <property role="30bXRw" value="2" />
+      </node>
+    </node>
+    <node concept="30dDZf" id="3wdtuNx3Mt7" role="LiZbd">
+      <node concept="30bXRB" id="3wdtuNx3Mt8" role="30dEsF">
+        <property role="30bXRw" value="2" />
+      </node>
+      <node concept="30bsCy" id="3wdtuNx3Mt9" role="30dEs_">
+        <node concept="30dDTi" id="3wdtuNx3Mta" role="30bsDf">
+          <node concept="30bXRB" id="3wdtuNx3Mtb" role="30dEsF">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="3wdtuNx3Mtc" role="30dEs_">
+            <property role="30bXRw" value="5" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3bWAyjusgCH" role="LjaKd">
+      <node concept="2TK7Tu" id="3bWAyjusgCG" role="3cqZAp">
+        <property role="2TTd_B" value="(" />
       </node>
     </node>
   </node>
