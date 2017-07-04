@@ -48,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/testLanguage/org.iets3.flow.dashboard.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDescriptorSandbox/org.iets3.flow.core.instance.msd" folder="flow" />
+      <modulePath path="$PROJECT_DIR$/solutions/MatlabControl.lib/MatlabControl.lib.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />

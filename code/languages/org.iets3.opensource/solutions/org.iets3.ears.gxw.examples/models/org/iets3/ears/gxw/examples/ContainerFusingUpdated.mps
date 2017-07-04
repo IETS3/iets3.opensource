@@ -42,7 +42,7 @@
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="systemResponse" index="1QgFCz" />
+        <child id="7600310587779383317" name="response" index="1QgFCz" />
       </concept>
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
@@ -67,7 +67,7 @@
       </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="9190636705088547490" name="org.iets3.ears.gxw.structure.Happens" flags="ng" index="3tWTB1" />
-      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.Axiom" flags="ng" index="1JDFFW">
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseEquivalenceAxiom" flags="ng" index="1JDFFW">
         <reference id="1618831278224729393" name="systemName" index="1J_PH9" />
         <child id="1618831278223899996" name="arg2" index="1JD8c$" />
         <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
@@ -264,10 +264,9 @@
     <node concept="1cwdkO" id="1lmxzlaj6Hk" role="OJ2fO">
       <property role="1hs7$j" value="liquid mixer controller" />
       <property role="eBQts" value="Req1" />
-      <ref role="1Qhi4P" node="34ScOrO_oom" resolve="valve 0" />
       <node concept="3T_uuY" id="1lmxzlaj6Ip" role="1cwflV">
         <node concept="3T_uu0" id="1lmxzlaj6Iu" role="3T_uuK">
-          <ref role="3T_uuC" node="34ScOrO_oqN" />
+          <ref role="3T_uuC" node="5ByxUIEAak9" />
         </node>
       </node>
       <node concept="3T_uu0" id="1lmxzlaj6Ix" role="1cwflW">

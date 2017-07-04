@@ -47,6 +47,7 @@
     <language slang="l:c020a239-d865-4312-adc3-cb4ab0a7a547:org.iets3.flow.modelproperty.formulae" version="0" />
     <language slang="l:33eb1b5b-ad96-4262-9112-684c487e01e0:org.iets3.graphicalLustre" version="0" />
     <language slang="l:4796fa81-3510-44f2-9810-887e950aacc3:org.iets3.simulationOutputChecker" version="0" />
+    <language slang="l:be728f68-d295-4af5-a9af-f280cb60ec85:org.iets3.simulink.resultmodel" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

@@ -14,35 +14,40 @@
     <import index="hxma" ref="r:afc3de6c-6429-4bb9-b26d-918b8ae8822c(org.iets3.flow.modelproperty.gxw.structure)" />
   </imports>
   <registry>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw">
-      <concept id="1051815187410019671" name="org.iets3.ears.gxw.structure.SystemResponse" flags="ng" index="otU$0">
-        <property id="7791775197210678918" name="action" index="Nkej4" />
-        <reference id="7791775197210678916" name="systemName" index="Nkej6" />
-      </concept>
-      <concept id="1051815187410019674" name="org.iets3.ears.gxw.structure.Trigger" flags="ng" index="otU$d">
-        <property id="6744041109748080144" name="text" index="OJvIS" />
+      <concept id="1051815187410019671" name="org.iets3.ears.gxw.structure.ComponentResponse" flags="ng" index="otU$0">
+        <property id="7791775197210678918" name="response" index="Nkej4" />
+        <reference id="7791775197210678916" name="componentName" index="Nkej6" />
       </concept>
       <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
         <property id="8920104694035884171" name="nameOfController" index="$xNHY" />
-        <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
         <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="systemResponse" index="1QgFCz" />
+        <child id="7600310587779383317" name="response" index="1QgFCz" />
       </concept>
-      <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.SystemName" flags="ng" index="2uIZ38">
+      <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
       <concept id="6744041109748155995" name="org.iets3.ears.gxw.structure.RequirementChunk" flags="ng" index="OJ2fN">
         <reference id="2964597654736293948" name="glossary" index="9DKRw" />
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
+        <child id="4277291022322944233" name="tmpFilePath" index="3DRjlG" />
       </concept>
       <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
         <child id="2964597654736467355" name="arg" index="9Cqx7" />
@@ -126,7 +131,6 @@
     <node concept="sEiiz" id="7YbGQey_vr2" role="OJ2fO">
       <property role="1hs7$j" value="Door Controller" />
       <property role="eBQts" value="Req4" />
-      <ref role="1Qhi4P" node="2$$ntKwwEOq" resolve="door" />
       <node concept="3T_uu0" id="7YbGQey_vrw" role="3tOtb8">
         <ref role="3T_uuC" node="2$$ntKwwEPc" />
       </node>
@@ -137,22 +141,15 @@
         </node>
       </node>
     </node>
+    <node concept="9PVaO" id="45mh0Ct19lK" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
+    </node>
   </node>
   <node concept="2skrmn" id="2$$ntKwwEOp">
     <property role="TrG5h" value="Glossary for Automatic Door" />
     <property role="$xNHY" value="Door Controller" />
-    <node concept="otU$d" id="2$$ntKwwEPc" role="2skrmg">
-      <property role="OJvIS" value="object detected" />
-    </node>
-    <node concept="otU$d" id="2$$ntKwwEPe" role="2skrmg">
-      <property role="OJvIS" value="opening limit reached" />
-    </node>
-    <node concept="otU$d" id="2$$ntKwwEPh" role="2skrmg">
-      <property role="OJvIS" value="closing limit reached" />
-    </node>
-    <node concept="otU$d" id="3cWp1ZaFoCj" role="2skrmg">
-      <property role="OJvIS" value="timer expires" />
-    </node>
     <node concept="2uIZ38" id="2$$ntKwwEOq" role="2skrmi">
       <property role="TrG5h" value="door" />
       <property role="2uI0VX" value="the automatic door" />

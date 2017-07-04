@@ -4,8 +4,13 @@
   <languages>
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
     <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
+    <import index="am8u" ref="r:f2229e5c-9085-48de-b0b8-2b935c9f9c0f(org.iets3.ears.gxw.examples.SlidingDoors_reviewed)" />
+  </imports>
   <registry>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
@@ -70,6 +75,78 @@
       </concept>
     </language>
   </registry>
+  <node concept="OJ2fN" id="5ByxUIFBnAm">
+    <property role="TrG5h" value="automatic door controller" />
+    <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door controller" />
+    <node concept="sEiiz" id="5ByxUIFBnAy" role="OJ2fO">
+      <property role="eBQts" value="Req1" />
+      <node concept="3T_uu0" id="5ByxUIFBnA$" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIFBn_m" />
+      </node>
+      <node concept="3t3aUO" id="5ByxUIFBnAA" role="3tWTBb" />
+      <node concept="OJJ_U" id="45mh0Ct0SbH" role="1QgFCz">
+        <ref role="OJJ_O" node="5ByxUIFBn_S" />
+      </node>
+    </node>
+    <node concept="sEiiz" id="5ByxUIFBnAK" role="OJ2fO">
+      <property role="eBQts" value="Req2" />
+      <node concept="3T_uu0" id="5bowr9XldcW" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIFBn_r" />
+      </node>
+      <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
+      <node concept="OJJ_H" id="5ByxUIFBnAX" role="1QgFCz">
+        <node concept="OJJ_H" id="2nkzonOp3ZD" role="9Cqxr">
+          <node concept="OJJ_J" id="2nkzonOp3ZK" role="9Cqxr">
+            <node concept="OJJ_U" id="2nkzonOp3ZP" role="9Cqx7">
+              <ref role="OJJ_O" node="5ByxUIFBn_S" />
+            </node>
+          </node>
+          <node concept="OJJ_J" id="2nkzonOp3ZS" role="9Cqxi">
+            <node concept="OJJ_U" id="2nkzonOp3ZX" role="9Cqx7">
+              <ref role="OJJ_O" node="5ByxUIFBnA0" />
+            </node>
+          </node>
+        </node>
+        <node concept="OJJ_U" id="5ByxUIFBnB7" role="9Cqxi">
+          <ref role="OJJ_O" node="5ByxUIFBn_N" />
+        </node>
+      </node>
+    </node>
+    <node concept="sEiiz" id="45mh0Ct0Scw" role="OJ2fO">
+      <property role="eBQts" value="Req3" />
+      <node concept="3T_uu0" id="45mh0Ct0Sek" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIFBn_H" />
+      </node>
+      <node concept="3t3aUO" id="45mh0Ct0Scy" role="3tWTBb" />
+      <node concept="OJJ_U" id="45mh0Ct0Sen" role="1QgFCz">
+        <ref role="OJJ_O" node="5ByxUIFBnA0" />
+      </node>
+    </node>
+    <node concept="sEiiz" id="45mh0Ct0Sd3" role="OJ2fO">
+      <property role="eBQts" value="Req4" />
+      <node concept="3T_uu0" id="45mh0Ct0Ser" role="3tOtb8">
+        <ref role="3T_uuC" node="5ByxUIFBn_z" />
+      </node>
+      <node concept="3t3aUO" id="45mh0Ct0Sd5" role="3tWTBb" />
+      <node concept="OJJ_H" id="45mh0Ct0Seu" role="1QgFCz">
+        <node concept="OJJ_J" id="45mh0Ct0Se$" role="9Cqxr">
+          <node concept="OJJ_U" id="45mh0Ct0SeD" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBn_S" />
+          </node>
+        </node>
+        <node concept="OJJ_J" id="45mh0Ct0SeG" role="9Cqxi">
+          <node concept="OJJ_U" id="45mh0Ct0SeL" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBnA0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9PVaO" id="3HrZoniDvAj" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
+    </node>
+  </node>
   <node concept="2skrmn" id="5ByxUIFBn_4">
     <property role="TrG5h" value="automatic door controller" />
     <node concept="2uIZ38" id="2$$ntKwwEOq" role="2skrmi">
@@ -119,78 +196,6 @@
     <node concept="otU$0" id="5ByxUIFBnA0" role="2skrmv">
       <property role="Nkej4" value="close" />
       <ref role="Nkej6" node="2$$ntKwwEOq" resolve="door" />
-    </node>
-  </node>
-  <node concept="OJ2fN" id="5ByxUIFBnAm">
-    <property role="TrG5h" value="automatic door controller" />
-    <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door controller" />
-    <node concept="sEiiz" id="5ByxUIFBnAy" role="OJ2fO">
-      <property role="eBQts" value="Req1" />
-      <node concept="3T_uu0" id="5ByxUIFBnA$" role="3tOtb8">
-        <ref role="3T_uuC" node="5ByxUIFBn_m" />
-      </node>
-      <node concept="3t3aUO" id="5ByxUIFBnAA" role="3tWTBb" />
-      <node concept="OJJ_U" id="5ByxUIFBnAC" role="1QgFCz">
-        <ref role="OJJ_O" node="5ByxUIFBn_S" />
-      </node>
-    </node>
-    <node concept="sEiiz" id="5ByxUIFBnAK" role="OJ2fO">
-      <property role="eBQts" value="Req2" />
-      <node concept="3T_uu0" id="5bowr9XldcW" role="3tOtb8">
-        <ref role="3T_uuC" node="5ByxUIFBn_r" />
-      </node>
-      <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFBnAX" role="1QgFCz">
-        <node concept="OJJ_H" id="2nkzonOp3ZD" role="9Cqxr">
-          <node concept="OJJ_J" id="2nkzonOp3ZK" role="9Cqxr">
-            <node concept="OJJ_U" id="2nkzonOp3ZP" role="9Cqx7">
-              <ref role="OJJ_O" node="5ByxUIFBn_S" />
-            </node>
-          </node>
-          <node concept="OJJ_J" id="2nkzonOp3ZS" role="9Cqxi">
-            <node concept="OJJ_U" id="2nkzonOp3ZX" role="9Cqx7">
-              <ref role="OJJ_O" node="5ByxUIFBnA0" />
-            </node>
-          </node>
-        </node>
-        <node concept="OJJ_U" id="5ByxUIFBnB7" role="9Cqxi">
-          <ref role="OJJ_O" node="5ByxUIFBn_N" />
-        </node>
-      </node>
-    </node>
-    <node concept="sEiiz" id="5ByxUIFBnBm" role="OJ2fO">
-      <property role="eBQts" value="Req3" />
-      <node concept="3T_uu0" id="5ByxUIFBnBz" role="3tOtb8">
-        <ref role="3T_uuC" node="5ByxUIFBn_H" />
-      </node>
-      <node concept="3t3aUO" id="5ByxUIFBnB_" role="3tWTBb" />
-      <node concept="OJJ_U" id="5ByxUIFBnBB" role="1QgFCz">
-        <ref role="OJJ_O" node="5ByxUIFBnA0" />
-      </node>
-    </node>
-    <node concept="sEiiz" id="5ByxUIFBnBT" role="OJ2fO">
-      <property role="eBQts" value="Req4" />
-      <node concept="3T_uu0" id="5bowr9Xlde6" role="3tOtb8">
-        <ref role="3T_uuC" node="5ByxUIFBn_z" />
-      </node>
-      <node concept="3t3aUO" id="5ByxUIFBnCc" role="3tWTBb" />
-      <node concept="OJJ_H" id="2nkzonOp400" role="1QgFCz">
-        <node concept="OJJ_J" id="2nkzonOp406" role="9Cqxr">
-          <node concept="OJJ_U" id="2nkzonOp40b" role="9Cqx7">
-            <ref role="OJJ_O" node="5ByxUIFBn_S" />
-          </node>
-        </node>
-        <node concept="OJJ_J" id="2nkzonOp40e" role="9Cqxi">
-          <node concept="OJJ_U" id="2nkzonOp40j" role="9Cqx7">
-            <ref role="OJJ_O" node="5ByxUIFBnA0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="9PVaO" id="3HrZoniDvAj" role="3DRjlG">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>

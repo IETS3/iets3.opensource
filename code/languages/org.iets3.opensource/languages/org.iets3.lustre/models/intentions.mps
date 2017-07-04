@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -14,17 +13,25 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="91lp" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.intentions(MPS.Editor/)" />
+    <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -35,6 +42,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
@@ -69,6 +77,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -137,6 +146,12 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
@@ -150,10 +165,14 @@
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -193,6 +212,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -201,6 +227,8 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
   <node concept="2S6QgY" id="7R851$_$2KP">
@@ -1385,8 +1413,26 @@
               <node concept="3cpWsn" id="3q$2SldU3ZD" role="3cpWs9">
                 <property role="TrG5h" value="inputFilePath" />
                 <node concept="17QB3L" id="3q$2SldU3ZE" role="1tU5fm" />
-                <node concept="Xl_RD" id="3q$2SldU3ZF" role="33vP2m">
-                  <property role="Xl_RC" value="GxwModel.m" />
+                <node concept="3cpWs3" id="1yEH9AqQNO2" role="33vP2m">
+                  <node concept="Xl_RD" id="3q$2SldU3ZF" role="3uHU7w">
+                    <property role="Xl_RC" value="GxwModel.m" />
+                  </node>
+                  <node concept="3cpWs3" id="1yEH9AqQPNF" role="3uHU7B">
+                    <node concept="Xl_RD" id="1yEH9AqQQNY" role="3uHU7w">
+                      <property role="Xl_RC" value="/" />
+                    </node>
+                    <node concept="2OqwBi" id="1yEH9AqQONl" role="3uHU7B">
+                      <node concept="2OqwBi" id="1yEH9AqQONm" role="2Oq$k0">
+                        <node concept="2Sf5sV" id="1yEH9AqQONn" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1yEH9AqQONo" role="2OqNvi">
+                          <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="1yEH9AqQONp" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1476,6 +1522,33 @@
               </node>
             </node>
             <node concept="3clFbH" id="3q$2SldUdLl" role="3cqZAp" />
+            <node concept="3clFbF" id="1yEH9AqPmO9" role="3cqZAp">
+              <node concept="2OqwBi" id="1yEH9AqPmO6" role="3clFbG">
+                <node concept="10M0yZ" id="1yEH9AqPmO7" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="1yEH9AqPmO8" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="1yEH9AqPr$n" role="37wK5m">
+                    <node concept="2OqwBi" id="1yEH9AqPtJ9" role="3uHU7w">
+                      <node concept="2OqwBi" id="1yEH9AqPsoZ" role="2Oq$k0">
+                        <node concept="2Sf5sV" id="1yEH9AqPrTI" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1yEH9AqPt1y" role="2OqNvi">
+                          <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="1yEH9AqPuxd" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
+                      <property role="Xl_RC" value="##############################   the paths are " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3q$2SldUdUW" role="3cqZAp">
               <node concept="2OqwBi" id="3q$2SldUdUX" role="3clFbG">
                 <node concept="37vLTw" id="3q$2SldUdUY" role="2Oq$k0">
@@ -1483,8 +1556,26 @@
                 </node>
                 <node concept="liA8E" id="3q$2SldUdUZ" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="Xl_RD" id="3q$2SldUdV0" role="37wK5m">
-                    <property role="Xl_RC" value=" cd '/home/ss/matlab' \n" />
+                  <node concept="3cpWs3" id="1yEH9AqQMoZ" role="37wK5m">
+                    <node concept="Xl_RD" id="1yEH9AqQMp5" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                    <node concept="3cpWs3" id="1yEH9AqQ$ja" role="3uHU7B">
+                      <node concept="Xl_RD" id="3q$2SldUdV0" role="3uHU7B">
+                        <property role="Xl_RC" value=" addpath '" />
+                      </node>
+                      <node concept="2OqwBi" id="1yEH9AqQACe" role="3uHU7w">
+                        <node concept="2OqwBi" id="1yEH9AqQ_gE" role="2Oq$k0">
+                          <node concept="2Sf5sV" id="1yEH9AqQ$Ll" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="1yEH9AqQ_Uz" role="2OqNvi">
+                            <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="1yEH9AqQBqm" role="2OqNvi">
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4029,7 +4120,203 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="3ak$QwaiTZY" role="3cqZAp" />
+            <node concept="3clFbH" id="5eCGQxnUzx_" role="3cqZAp" />
+            <node concept="3SKdUt" id="1yEH9AqMO8T" role="3cqZAp">
+              <node concept="3SKdUq" id="1yEH9AqMO8V" role="3SKWNk">
+                <property role="3SKdUp" value="running MATLAB by command" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5eCGQxo03oO" role="3cqZAp">
+              <node concept="3cpWsn" id="5eCGQxo03oP" role="3cpWs9">
+                <property role="TrG5h" value="builder" />
+                <node concept="3uibUv" id="5eCGQxo03oN" role="1tU5fm">
+                  <ref role="3uigEE" to="3wy8:~MatlabProxyFactoryOptions$Builder" resolve="MatlabProxyFactoryOptions.Builder" />
+                </node>
+                <node concept="2ShNRf" id="5eCGQxo03oQ" role="33vP2m">
+                  <node concept="1pGfFk" id="5eCGQxo03oR" role="2ShVmc">
+                    <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.&lt;init&gt;()" resolve="MatlabProxyFactoryOptions.Builder" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="5eCGQxo3uHG" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="5eCGQxo089h" role="8Wnug">
+                <node concept="2OqwBi" id="5eCGQxo0aME" role="3clFbG">
+                  <node concept="37vLTw" id="5eCGQxo089f" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5eCGQxo03oP" resolve="builder" />
+                  </node>
+                  <node concept="liA8E" id="5eCGQxo0bVD" role="2OqNvi">
+                    <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setUsePreviouslyControlledSession(boolean):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setUsePreviouslyControlledSession" />
+                    <node concept="3clFbT" id="5eCGQxo0cg0" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="5eCGQxo3uHH" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbH" id="3ak$QwagfxF" role="8Wnug" />
+            </node>
+            <node concept="1X3_iC" id="5eCGQxo3uHI" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3cpWs8" id="3zv4WpR23w8" role="8Wnug">
+                <node concept="3cpWsn" id="3zv4WpR23w9" role="3cpWs9">
+                  <property role="TrG5h" value="factory" />
+                  <node concept="3uibUv" id="3zv4WpR23wa" role="1tU5fm">
+                    <ref role="3uigEE" to="3wy8:~MatlabProxyFactory" resolve="MatlabProxyFactory" />
+                  </node>
+                  <node concept="2ShNRf" id="3zv4WpR24DP" role="33vP2m">
+                    <node concept="1pGfFk" id="3zv4WpR257R" role="2ShVmc">
+                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.&lt;init&gt;(matlabcontrol.MatlabProxyFactoryOptions)" resolve="MatlabProxyFactory" />
+                      <node concept="2OqwBi" id="5eCGQxo1fP7" role="37wK5m">
+                        <node concept="37vLTw" id="5eCGQxo1fqR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5eCGQxo03oP" resolve="builder" />
+                        </node>
+                        <node concept="liA8E" id="5eCGQxo1gpM" role="2OqNvi">
+                          <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.build():matlabcontrol.MatlabProxyFactoryOptions" resolve="build" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="5eCGQxo3uHJ" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3cpWs8" id="3zv4WpR25IH" role="8Wnug">
+                <node concept="3cpWsn" id="3zv4WpR25II" role="3cpWs9">
+                  <property role="TrG5h" value="proxy" />
+                  <node concept="3uibUv" id="3zv4WpR25IJ" role="1tU5fm">
+                    <ref role="3uigEE" to="3wy8:~MatlabProxy" resolve="MatlabProxy" />
+                  </node>
+                  <node concept="2OqwBi" id="3zv4WpR26Qf" role="33vP2m">
+                    <node concept="37vLTw" id="3zv4WpR26xz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3zv4WpR23w9" resolve="factory" />
+                    </node>
+                    <node concept="liA8E" id="3zv4WpR27ps" role="2OqNvi">
+                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.getProxy():matlabcontrol.MatlabProxy" resolve="getProxy" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5eCGQxo3xeI" role="3cqZAp" />
+            <node concept="3cpWs8" id="5eCGQxo3S$O" role="3cqZAp">
+              <node concept="3cpWsn" id="5eCGQxo3S$P" role="3cpWs9">
+                <property role="TrG5h" value="builder2" />
+                <node concept="3uibUv" id="5eCGQxo3S$Q" role="1tU5fm">
+                  <ref role="3uigEE" to="3wy8:~MatlabProxyFactoryOptions$Builder" resolve="MatlabProxyFactoryOptions.Builder" />
+                </node>
+                <node concept="2OqwBi" id="5eCGQxo3XFS" role="33vP2m">
+                  <node concept="2OqwBi" id="5eCGQxo3Wgl" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5eCGQxo3V6g" role="2Oq$k0">
+                      <node concept="2ShNRf" id="5eCGQxo3S$R" role="2Oq$k0">
+                        <node concept="1pGfFk" id="5eCGQxo3S$S" role="2ShVmc">
+                          <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.&lt;init&gt;()" resolve="MatlabProxyFactoryOptions.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5eCGQxo3VAK" role="2OqNvi">
+                        <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setUsePreviouslyControlledSession(boolean):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setUsePreviouslyControlledSession" />
+                        <node concept="3clFbT" id="5eCGQxo3VSP" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5eCGQxo3X0r" role="2OqNvi">
+                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setHidden(boolean):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setHidden" />
+                      <node concept="3clFbT" id="5eCGQxo3Xjs" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5eCGQxo3YgG" role="2OqNvi">
+                    <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setMatlabLocation(java.lang.String):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setMatlabLocation" />
+                    <node concept="10Nm6u" id="5eCGQxo3Y$w" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5eCGQxo444H" role="3cqZAp">
+              <node concept="3cpWsn" id="5eCGQxo444I" role="3cpWs9">
+                <property role="TrG5h" value="proxyFactory" />
+                <node concept="3uibUv" id="5eCGQxo444J" role="1tU5fm">
+                  <ref role="3uigEE" to="3wy8:~MatlabProxyFactory" resolve="MatlabProxyFactory" />
+                </node>
+                <node concept="2ShNRf" id="5eCGQxo4au1" role="33vP2m">
+                  <node concept="1pGfFk" id="5eCGQxo4aZj" role="2ShVmc">
+                    <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.&lt;init&gt;(matlabcontrol.MatlabProxyFactoryOptions)" resolve="MatlabProxyFactory" />
+                    <node concept="2OqwBi" id="5eCGQxo4bCD" role="37wK5m">
+                      <node concept="37vLTw" id="5eCGQxo4bha" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5eCGQxo3S$P" resolve="builder2" />
+                      </node>
+                      <node concept="liA8E" id="5eCGQxo4c9i" role="2OqNvi">
+                        <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.build():matlabcontrol.MatlabProxyFactoryOptions" resolve="build" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5eCGQxo4ix1" role="3cqZAp">
+              <node concept="3cpWsn" id="5eCGQxo4ix2" role="3cpWs9">
+                <property role="TrG5h" value="proxy" />
+                <node concept="3uibUv" id="5eCGQxo4iwY" role="1tU5fm">
+                  <ref role="3uigEE" to="3wy8:~MatlabProxy" resolve="MatlabProxy" />
+                </node>
+                <node concept="2OqwBi" id="5eCGQxo4ix3" role="33vP2m">
+                  <node concept="37vLTw" id="5eCGQxo4ix4" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5eCGQxo444I" resolve="proxyFactory" />
+                  </node>
+                  <node concept="liA8E" id="5eCGQxo4ix5" role="2OqNvi">
+                    <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.getProxy():matlabcontrol.MatlabProxy" resolve="getProxy" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5eCGQxoaaaf" role="3cqZAp" />
+            <node concept="3clFbF" id="3zv4WpR27RZ" role="3cqZAp">
+              <node concept="2OqwBi" id="3zv4WpR28fF" role="3clFbG">
+                <node concept="37vLTw" id="5eCGQxo5ucJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
+                </node>
+                <node concept="liA8E" id="3zv4WpR28Nn" role="2OqNvi">
+                  <ref role="37wK5l" to="3wy8:~MatlabOperations.eval(java.lang.String):void" resolve="eval" />
+                  <node concept="Xl_RD" id="5eCGQxo5swv" role="37wK5m">
+                    <property role="Xl_RC" value="GxwModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5eCGQxo6z7Z" role="3cqZAp">
+              <node concept="2OqwBi" id="5eCGQxo6z80" role="3clFbG">
+                <node concept="37vLTw" id="5eCGQxo6z81" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
+                </node>
+                <node concept="liA8E" id="5eCGQxo6z82" role="2OqNvi">
+                  <ref role="37wK5l" to="3wy8:~MatlabOperations.eval(java.lang.String):void" resolve="eval" />
+                  <node concept="Xl_RD" id="5eCGQxo6z83" role="37wK5m">
+                    <property role="Xl_RC" value="disp('helloWorld')" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5eCGQxoa6vt" role="3cqZAp">
+              <node concept="2OqwBi" id="5eCGQxoa98w" role="3clFbG">
+                <node concept="37vLTw" id="5eCGQxoa6vr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
+                </node>
+                <node concept="liA8E" id="5eCGQxoa9MO" role="2OqNvi">
+                  <ref role="37wK5l" to="3wy8:~MatlabProxy.disconnect():boolean" resolve="disconnect" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="3q$2Sle8HQu" role="3cqZAp" />
+            <node concept="3clFbH" id="5eCGQxo6wBI" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="3q$2SldV2iE" role="TEbGg">
             <node concept="3cpWsn" id="3q$2SldV2iF" role="TDEfY">
@@ -4093,6 +4380,154 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="45mh0CsZu7R" role="3cqZAp">
+          <node concept="3cpWsn" id="45mh0CsZu7U" role="3cpWs9">
+            <property role="TrG5h" value="simulinkResult" />
+            <node concept="3Tqbb2" id="45mh0CsZu7P" role="1tU5fm">
+              <ref role="ehGHo" to="qd5k:5uxx$av$zSW" resolve="SimulinkResult" />
+            </node>
+            <node concept="2ShNRf" id="45mh0CsZujt" role="33vP2m">
+              <node concept="3zrR0B" id="45mh0CsZu$R" role="2ShVmc">
+                <node concept="3Tqbb2" id="45mh0CsZu$T" role="3zrR0E">
+                  <ref role="ehGHo" to="qd5k:5uxx$av$zSW" resolve="SimulinkResult" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="45mh0CsZuCu" role="3cqZAp">
+          <node concept="37vLTI" id="45mh0CsZvLQ" role="3clFbG">
+            <node concept="2OqwBi" id="45mh0CsZuOy" role="37vLTJ">
+              <node concept="37vLTw" id="45mh0CsZuCs" role="2Oq$k0">
+                <ref role="3cqZAo" node="45mh0CsZu7U" resolve="simulinkResult" />
+              </node>
+              <node concept="3TrcHB" id="45mh0CsZvgf" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="45mh0CsZvZn" role="37vLTx">
+              <property role="Xl_RC" value="Simulink Result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="45mh0CsZwmJ" role="3cqZAp" />
+        <node concept="3clFbF" id="45mh0CsZwq2" role="3cqZAp">
+          <node concept="37vLTI" id="45mh0CsZwZN" role="3clFbG">
+            <node concept="2OqwBi" id="45mh0CsZwzM" role="37vLTJ">
+              <node concept="37vLTw" id="45mh0CsZwq0" role="2Oq$k0">
+                <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
+              </node>
+              <node concept="3TrEf2" id="45mh0CsZwHf" role="2OqNvi">
+                <ref role="3Tt5mk" to="sgle:45mh0CsZ54w" resolve="simulinkResult" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="45mh0CsZy79" role="37vLTx">
+              <ref role="3cqZAo" node="45mh0CsZu7U" resolve="simulinkResult" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="45mh0CsZyeI" role="3cqZAp" />
+        <node concept="3clFbF" id="45mh0CsZD9P" role="3cqZAp">
+          <node concept="2OqwBi" id="45mh0CsZF_p" role="3clFbG">
+            <node concept="2OqwBi" id="45mh0CsZDkn" role="2Oq$k0">
+              <node concept="2Sf5sV" id="45mh0CsZD9N" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="45mh0CsZDDI" role="2OqNvi">
+                <ref role="3TtcxE" to="lqc6:1TTP9gdgAzn" resolve="listOfActors" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="45mh0CsZJUf" role="2OqNvi">
+              <node concept="1bVj0M" id="45mh0CsZJUh" role="23t8la">
+                <node concept="3clFbS" id="45mh0CsZJUi" role="1bW5cS">
+                  <node concept="3clFbJ" id="45mh0CsZL1K" role="3cqZAp">
+                    <node concept="2OqwBi" id="45mh0CsZLhZ" role="3clFbw">
+                      <node concept="37vLTw" id="45mh0CsZL6l" role="2Oq$k0">
+                        <ref role="3cqZAo" node="45mh0CsZJUj" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="45mh0CsZLyB" role="2OqNvi">
+                        <node concept="chp4Y" id="45mh0CsZLDs" role="cj9EA">
+                          <ref role="cht4Q" to="lqc6:5Uka0RZLmys" resolve="GlobalInputActor" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="45mh0CsZL1M" role="3clFbx">
+                      <node concept="3cpWs8" id="45mh0Ct0NgV" role="3cqZAp">
+                        <node concept="3cpWsn" id="45mh0Ct0NgW" role="3cpWs9">
+                          <property role="TrG5h" value="nodeInputCell" />
+                          <node concept="3Tqbb2" id="45mh0Ct0NgT" role="1tU5fm">
+                            <ref role="ehGHo" to="qd5k:5uxx$av$zT0" resolve="InputCell" />
+                          </node>
+                          <node concept="2ShNRf" id="45mh0Ct0NgX" role="33vP2m">
+                            <node concept="2fJWfE" id="45mh0Ct0NgY" role="2ShVmc">
+                              <node concept="3Tqbb2" id="45mh0Ct0NgZ" role="3zrR0E">
+                                <ref role="ehGHo" to="qd5k:5uxx$av$zT0" resolve="InputCell" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="45mh0Ct0OGn" role="3cqZAp">
+                        <node concept="37vLTI" id="45mh0Ct0QfW" role="3clFbG">
+                          <node concept="2OqwBi" id="45mh0Ct0QJx" role="37vLTx">
+                            <node concept="37vLTw" id="45mh0Ct0Qwb" role="2Oq$k0">
+                              <ref role="3cqZAo" node="45mh0CsZJUj" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="45mh0Ct0R0E" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="45mh0Ct0OY2" role="37vLTJ">
+                            <node concept="37vLTw" id="45mh0Ct0OGl" role="2Oq$k0">
+                              <ref role="3cqZAo" node="45mh0Ct0NgW" resolve="nodeInputCell" />
+                            </node>
+                            <node concept="3TrcHB" id="45mh0Ct0PCO" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="45mh0Ct2Vjz" role="3cqZAp">
+                        <node concept="37vLTI" id="45mh0Ct2WW4" role="3clFbG">
+                          <node concept="2OqwBi" id="45mh0Ct2VB_" role="37vLTJ">
+                            <node concept="37vLTw" id="45mh0Ct2Vjx" role="2Oq$k0">
+                              <ref role="3cqZAo" node="45mh0Ct0NgW" resolve="nodeInputCell" />
+                            </node>
+                            <node concept="3TrcHB" id="45mh0Ct2W8I" role="2OqNvi">
+                              <ref role="3TsBF5" to="qd5k:5uxx$av$zTN" resolve="inputValue" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="45mh0Ct2YqV" role="37vLTx">
+                            <property role="Xl_RC" value="0" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="45mh0CsZMGm" role="3cqZAp">
+                        <node concept="2OqwBi" id="45mh0CsZPeg" role="3clFbG">
+                          <node concept="2OqwBi" id="45mh0CsZMXa" role="2Oq$k0">
+                            <node concept="37vLTw" id="45mh0CsZMGk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
+                            </node>
+                            <node concept="3Tsc0h" id="45mh0CsZNp2" role="2OqNvi">
+                              <ref role="3TtcxE" to="sgle:45mh0CsZroe" resolve="inputCells" />
+                            </node>
+                          </node>
+                          <node concept="TSZUe" id="45mh0CsZTaW" role="2OqNvi">
+                            <node concept="37vLTw" id="45mh0Ct0Nh0" role="25WWJ7">
+                              <ref role="3cqZAo" node="45mh0Ct0NgW" resolve="nodeInputCell" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="45mh0CsZJUj" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="45mh0CsZJUk" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7C$xkK6Y6Z7" role="3cqZAp">
           <node concept="2OqwBi" id="7C$xkK6Y7K1" role="3clFbG">
             <node concept="2OqwBi" id="7C$xkK6Y77e" role="2Oq$k0">
@@ -4102,20 +4537,6 @@
             <node concept="3BYIHo" id="7C$xkK6Y7ZG" role="2OqNvi">
               <node concept="37vLTw" id="7C$xkK6Y83O" role="3BYIHq">
                 <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7C$xkK6YSeI" role="3cqZAp">
-          <node concept="3cpWsn" id="7C$xkK6YSeJ" role="3cpWs9">
-            <property role="TrG5h" value="cellFactory" />
-            <node concept="3uibUv" id="7C$xkK6YSeH" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~EditorCellFactory" resolve="EditorCellFactory" />
-            </node>
-            <node concept="2OqwBi" id="7C$xkK6YSeK" role="33vP2m">
-              <node concept="1XNTG" id="7C$xkK6YSeL" role="2Oq$k0" />
-              <node concept="liA8E" id="7C$xkK6YSeM" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
               </node>
             </node>
           </node>
