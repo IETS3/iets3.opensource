@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="MatlabControl.lib" uuid="66251041-821b-42f2-8059-2a0e90ec97b2" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
+    <modelRoot contentPath="${module}" type="default" />
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="matlabcontrol-4.1.0.jar" />
     </modelRoot>

@@ -224,7 +224,7 @@
         <property role="3F0ifm" value="When" />
       </node>
       <node concept="3F1sOY" id="7YbGQeymA73" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:7YbGQeymA6F" resolve="trigger" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueC" resolve="trigger" />
       </node>
       <node concept="3F1sOY" id="7YbGQeyxFw4" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:7YbGQeyu2EC" resolve="triggerModifier" />
@@ -288,7 +288,7 @@
         <property role="3F0ifm" value="shall" />
       </node>
       <node concept="3F1sOY" id="1uHSzL6RpIs" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:6_TIzoveK0l" resolve="response" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueD" resolve="response" />
       </node>
       <node concept="3F0ifn" id="2$$ntKwxbQ2" role="3EZMnx">
         <property role="3F0ifm" value="." />
@@ -959,7 +959,7 @@
         <property role="3F0ifm" value="When" />
       </node>
       <node concept="3F1sOY" id="7YbGQeynpdO" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:7YbGQeymA6F" resolve="trigger" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueC" resolve="trigger" />
       </node>
       <node concept="3F1sOY" id="7YbGQeyzmWU" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:7YbGQeyu2EC" resolve="triggerModifier" />
@@ -1023,7 +1023,7 @@
         <property role="3F0ifm" value="shall" />
       </node>
       <node concept="3F1sOY" id="1uHSzL6RpKj" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:6_TIzoveK0l" resolve="response" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueD" resolve="response" />
       </node>
       <node concept="3F0ifn" id="6_TIzovhfjv" role="3EZMnx">
         <property role="3F0ifm" value=" until" />
@@ -1157,7 +1157,7 @@
         <property role="3F0ifm" value="When" />
       </node>
       <node concept="3F1sOY" id="1qavb4ejuEI" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1qavb4ejuEv" resolve="trigger" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueC" resolve="trigger" />
       </node>
       <node concept="3F1sOY" id="1qavb4ejuEJ" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:7YbGQeyu2EC" resolve="triggerModifier" />
@@ -1221,7 +1221,7 @@
         <property role="3F0ifm" value=" shall" />
       </node>
       <node concept="3F1sOY" id="1qavb4ejuEP" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1qavb4ejuEu" resolve="systemResponse" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueD" resolve="response" />
       </node>
       <node concept="3F0ifn" id="1qavb4ejuEQ" role="3EZMnx">
         <property role="3F0ifm" value="." />
@@ -1249,7 +1249,7 @@
         <property role="3F0ifm" value=", when" />
       </node>
       <node concept="3F1sOY" id="1a1nVFdwNDI" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1a1nVFdwLDZ" resolve="triggerWhen" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueC" resolve="trigger" />
       </node>
       <node concept="3F0ifn" id="1a1nVFdwLzN" role="3EZMnx">
         <property role="3F0ifm" value="the" />
@@ -1310,7 +1310,7 @@
         <property role="3F0ifm" value="shall" />
       </node>
       <node concept="3F1sOY" id="1a1nVFdwLzQ" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1a1nVFdwLE5" resolve="systemResponse" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qV2ueD" resolve="response" />
       </node>
       <node concept="3F0ifn" id="1a1nVFdwLzU" role="3EZMnx">
         <property role="3F0ifm" value="." />

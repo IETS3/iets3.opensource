@@ -33,10 +33,7 @@
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
-        <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="response" index="1QgFCz" />
-      </concept>
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -55,11 +52,11 @@
       </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
-        <child id="1333452220594854533" name="systemResponse" index="3v0$kZ" />
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
-        <child id="1333452220594854527" name="triggerWhen" index="3v0$n5" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
+        <child id="8756612199902471080" name="trigger" index="32z5Ze" />
+        <child id="8756612199902471081" name="response" index="32z5Zf" />
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
@@ -187,10 +184,10 @@
           <ref role="3T_uuC" node="5ByxUIFAV_u" />
         </node>
       </node>
-      <node concept="3T_uu0" id="5ByxUIFBeyS" role="3v0$n5">
+      <node concept="3T_uu0" id="7A5J6qVvWaG" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVAH" />
       </node>
-      <node concept="OJJ_U" id="5ByxUIFAVCP" role="3v0$kZ">
+      <node concept="OJJ_U" id="7A5J6qVvWaI" role="32z5Zf">
         <ref role="OJJ_O" node="5ByxUIFAVBp" />
       </node>
     </node>
@@ -204,10 +201,10 @@
           <ref role="3T_uuC" node="5ByxUIFAV_u" />
         </node>
       </node>
-      <node concept="3T_uu0" id="5ByxUIFBeyV" role="3v0$n5">
+      <node concept="3T_uu0" id="7A5J6qVvWaK" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVAX" />
       </node>
-      <node concept="OJJ_U" id="5ByxUIFBexJ" role="3v0$kZ">
+      <node concept="OJJ_U" id="7A5J6qVvWaM" role="32z5Zf">
         <ref role="OJJ_O" node="5ByxUIFAVBp" />
       </node>
     </node>
@@ -221,11 +218,11 @@
           <ref role="3T_uuC" node="5ByxUIFAV_u" />
         </node>
       </node>
-      <node concept="OJJ_U" id="5ByxUIFBeuC" role="3v0$kZ">
-        <ref role="OJJ_O" node="5ByxUIFAVBu" />
-      </node>
-      <node concept="3T_uu0" id="5ByxUIFBev9" role="3v0$n5">
+      <node concept="3T_uu0" id="7A5J6qVvWaO" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBeuY" />
+      </node>
+      <node concept="OJJ_U" id="7A5J6qVvWaQ" role="32z5Zf">
+        <ref role="OJJ_O" node="5ByxUIFAVBu" />
       </node>
     </node>
     <node concept="3v0$t_" id="5bowr9YaVOr" role="OJ2fO">
@@ -238,11 +235,11 @@
           <ref role="3T_uuC" node="5ByxUIFAV_p" />
         </node>
       </node>
-      <node concept="OJJ_U" id="5bowr9YaVOv" role="3v0$kZ">
-        <ref role="OJJ_O" node="5ByxUIFAVBA" />
-      </node>
-      <node concept="3T_uu0" id="5bowr9YaVQt" role="3v0$n5">
+      <node concept="3T_uu0" id="7A5J6qVvWaS" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVAj" />
+      </node>
+      <node concept="OJJ_U" id="7A5J6qVvWaU" role="32z5Zf">
+        <ref role="OJJ_O" node="5ByxUIFAVBA" />
       </node>
     </node>
     <node concept="3v0$t_" id="5bowr9YaVMg" role="OJ2fO">
@@ -255,30 +252,30 @@
           <ref role="3T_uuC" node="5ByxUIFAV_p" />
         </node>
       </node>
-      <node concept="OJJ_U" id="5bowr9YaVMn" role="3v0$kZ">
-        <ref role="OJJ_O" node="5ByxUIFAVBA" />
-      </node>
-      <node concept="3T_uu0" id="5bowr9YaVNI" role="3v0$n5">
+      <node concept="3T_uu0" id="7A5J6qVvWc4" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVAv" />
+      </node>
+      <node concept="OJJ_U" id="7A5J6qVvWc6" role="32z5Zf">
+        <ref role="OJJ_O" node="5ByxUIFAVBA" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFBewr" role="OJ2fO">
       <property role="eBQts" value="Req6" />
-      <node concept="3T_uu0" id="5ByxUIFBewM" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFBewO" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvWc8" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVBf" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFBewO" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFBewQ" role="1QgFCz">
-        <node concept="OJJ_U" id="5ByxUIFBewW" role="9Cqxr">
-          <ref role="OJJ_O" node="5ByxUIFAVBQ" />
-        </node>
-        <node concept="OJJ_H" id="5ByxUIFBewZ" role="9Cqxi">
-          <node concept="OJJ_U" id="5ByxUIFBex6" role="9Cqxr">
+      <node concept="OJJ_H" id="7A5J6qVvWca" role="32z5Zf">
+        <node concept="OJJ_H" id="7A5J6qVvWcg" role="9Cqxr">
+          <node concept="OJJ_U" id="7A5J6qVvWcn" role="9Cqxr">
+            <ref role="OJJ_O" node="5ByxUIFAVBQ" />
+          </node>
+          <node concept="OJJ_U" id="7A5J6qVvWcq" role="9Cqxi">
             <ref role="OJJ_O" node="5ByxUIFAVC4" />
           </node>
-          <node concept="OJJ_U" id="5ByxUIFBex9" role="9Cqxi">
-            <ref role="OJJ_O" node="5ByxUIFAVCc" />
-          </node>
+        </node>
+        <node concept="OJJ_U" id="7A5J6qVvWct" role="9Cqxi">
+          <ref role="OJJ_O" node="5ByxUIFAVCc" />
         </node>
       </node>
     </node>

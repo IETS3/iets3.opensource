@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
-    <import index="am8u" ref="r:f2229e5c-9085-48de-b0b8-2b935c9f9c0f(org.iets3.ears.gxw.examples.SlidingDoors_reviewed)" />
   </imports>
   <registry>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -39,10 +38,7 @@
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
-        <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="response" index="1QgFCz" />
-      </concept>
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -65,6 +61,8 @@
       </concept>
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
+        <child id="8756612199902471080" name="trigger" index="32z5Ze" />
+        <child id="8756612199902471081" name="response" index="32z5Zf" />
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
@@ -80,62 +78,62 @@
     <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door controller" />
     <node concept="sEiiz" id="5ByxUIFBnAy" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <node concept="3T_uu0" id="5ByxUIFBnA$" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFBnAA" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvILd" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_m" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFBnAA" role="3tWTBb" />
-      <node concept="OJJ_U" id="45mh0Ct0SbH" role="1QgFCz">
+      <node concept="OJJ_U" id="7A5J6qVvILf" role="32z5Zf">
         <ref role="OJJ_O" node="5ByxUIFBn_S" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFBnAK" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3T_uu0" id="5bowr9XldcW" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvILh" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_r" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFBnAX" role="1QgFCz">
-        <node concept="OJJ_H" id="2nkzonOp3ZD" role="9Cqxr">
-          <node concept="OJJ_J" id="2nkzonOp3ZK" role="9Cqxr">
-            <node concept="OJJ_U" id="2nkzonOp3ZP" role="9Cqx7">
+      <node concept="OJJ_H" id="7A5J6qVvILu" role="32z5Zf">
+        <node concept="OJJ_H" id="7A5J6qVvILC" role="9Cqxr">
+          <node concept="OJJ_J" id="7A5J6qVvILJ" role="9Cqxr">
+            <node concept="OJJ_U" id="7A5J6qVvILO" role="9Cqx7">
               <ref role="OJJ_O" node="5ByxUIFBn_S" />
             </node>
           </node>
-          <node concept="OJJ_J" id="2nkzonOp3ZS" role="9Cqxi">
-            <node concept="OJJ_U" id="2nkzonOp3ZX" role="9Cqx7">
+          <node concept="OJJ_J" id="7A5J6qVvILR" role="9Cqxi">
+            <node concept="OJJ_U" id="7A5J6qVvILW" role="9Cqx7">
               <ref role="OJJ_O" node="5ByxUIFBnA0" />
             </node>
           </node>
         </node>
-        <node concept="OJJ_U" id="5ByxUIFBnB7" role="9Cqxi">
+        <node concept="OJJ_U" id="7A5J6qVvILZ" role="9Cqxi">
           <ref role="OJJ_O" node="5ByxUIFBn_N" />
         </node>
       </node>
     </node>
     <node concept="sEiiz" id="45mh0Ct0Scw" role="OJ2fO">
       <property role="eBQts" value="Req3" />
-      <node concept="3T_uu0" id="45mh0Ct0Sek" role="3tOtb8">
+      <node concept="3t3aUO" id="45mh0Ct0Scy" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvIM2" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_H" />
       </node>
-      <node concept="3t3aUO" id="45mh0Ct0Scy" role="3tWTBb" />
-      <node concept="OJJ_U" id="45mh0Ct0Sen" role="1QgFCz">
+      <node concept="OJJ_U" id="7A5J6qVvIM4" role="32z5Zf">
         <ref role="OJJ_O" node="5ByxUIFBnA0" />
       </node>
     </node>
     <node concept="sEiiz" id="45mh0Ct0Sd3" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3T_uu0" id="45mh0Ct0Ser" role="3tOtb8">
+      <node concept="3t3aUO" id="45mh0Ct0Sd5" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvIM6" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_z" />
       </node>
-      <node concept="3t3aUO" id="45mh0Ct0Sd5" role="3tWTBb" />
-      <node concept="OJJ_H" id="45mh0Ct0Seu" role="1QgFCz">
-        <node concept="OJJ_J" id="45mh0Ct0Se$" role="9Cqxr">
-          <node concept="OJJ_U" id="45mh0Ct0SeD" role="9Cqx7">
+      <node concept="OJJ_H" id="7A5J6qVvIM8" role="32z5Zf">
+        <node concept="OJJ_J" id="7A5J6qVvIMe" role="9Cqxr">
+          <node concept="OJJ_U" id="7A5J6qVvIMj" role="9Cqx7">
             <ref role="OJJ_O" node="5ByxUIFBn_S" />
           </node>
         </node>
-        <node concept="OJJ_J" id="45mh0Ct0SeG" role="9Cqxi">
-          <node concept="OJJ_U" id="45mh0Ct0SeL" role="9Cqx7">
+        <node concept="OJJ_J" id="7A5J6qVvIMm" role="9Cqxi">
+          <node concept="OJJ_U" id="7A5J6qVvIMr" role="9Cqx7">
             <ref role="OJJ_O" node="5ByxUIFBnA0" />
           </node>
         </node>

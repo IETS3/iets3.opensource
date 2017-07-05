@@ -37,7 +37,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
+    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

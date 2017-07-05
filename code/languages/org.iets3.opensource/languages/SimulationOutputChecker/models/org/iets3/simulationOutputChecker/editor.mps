@@ -12,7 +12,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="cfsy" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.apache.commons.lang.mutable(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
     <import index="nuhf" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#66251041-821b-42f2-8059-2a0e90ec97b2(jetbrains.mps.lang.project.modules/module.MatlabControl.lib@project_stub)" />
     <import index="nuhf" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#66251041-821b-42f2-8059-2a0e90ec97b2(jetbrains.mps.lang.project.modules/module.MatlabControl.lib@project_stub)" />

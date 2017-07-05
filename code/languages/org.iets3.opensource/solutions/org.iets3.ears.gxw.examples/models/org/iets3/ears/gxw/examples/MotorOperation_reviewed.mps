@@ -38,10 +38,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz">
-        <child id="9190636705086595499" name="trigger" index="3tOtb8" />
-        <child id="7600310587779383317" name="response" index="1QgFCz" />
-      </concept>
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -68,6 +65,8 @@
         <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
+        <child id="8756612199902471080" name="trigger" index="32z5Ze" />
+        <child id="8756612199902471081" name="response" index="32z5Zf" />
         <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
@@ -192,60 +191,60 @@
     <ref role="9DKRw" node="5ByxUIFAm6u" resolve="motor operation controller" />
     <node concept="sEiiz" id="5ByxUIFAEjP" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <node concept="3T_uu0" id="5ByxUIFAEjR" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFAMIZ" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvWcw" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEii" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFAMIZ" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFAMJk" role="1QgFCz">
-        <node concept="OJJ_U" id="5ByxUIFAMJu" role="9Cqxr">
+      <node concept="OJJ_H" id="7A5J6qVvWcy" role="32z5Zf">
+        <node concept="OJJ_U" id="7A5J6qVvWcC" role="9Cqxr">
           <ref role="OJJ_O" node="5ByxUIFAEiO" />
         </node>
-        <node concept="OJJ_U" id="5ByxUIFAMJx" role="9Cqxi">
+        <node concept="OJJ_U" id="7A5J6qVvWcF" role="9Cqxi">
           <ref role="OJJ_O" node="5ByxUIFAEiJ" />
         </node>
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAVwO" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3T_uu0" id="5ByxUIFAVwX" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFAVwZ" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvWcI" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiv" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFAVwZ" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFAVx3" role="1QgFCz">
-        <node concept="OJJ_U" id="5ByxUIFAVx9" role="9Cqxr">
+      <node concept="OJJ_H" id="7A5J6qVvWcK" role="32z5Zf">
+        <node concept="OJJ_U" id="7A5J6qVvWcQ" role="9Cqxr">
           <ref role="OJJ_O" node="5ByxUIFAEiW" />
         </node>
-        <node concept="OJJ_U" id="5ByxUIFBnCg" role="9Cqxi">
+        <node concept="OJJ_U" id="7A5J6qVvWcT" role="9Cqxi">
           <ref role="OJJ_O" node="5ByxUIFAEj6" />
         </node>
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAVxt" role="OJ2fO">
       <property role="eBQts" value="Req3" />
-      <node concept="3T_uu0" id="5ByxUIFAVxG" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFAVxI" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvWcW" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiD" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFAVxI" role="3tWTBb" />
-      <node concept="OJJ_U" id="5ByxUIFAVxK" role="1QgFCz">
-        <ref role="OJJ_O" node="5ByxUIFAEjz" />
+      <node concept="OJJ_U" id="7A5J6qVvWcY" role="32z5Zf">
+        <ref role="OJJ_O" node="5ByxUIFAVz4" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAVy4" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3T_uu0" id="5ByxUIFAVyn" role="3tOtb8">
+      <node concept="3t3aUO" id="5ByxUIFAVyp" role="3tWTBb" />
+      <node concept="3T_uu0" id="7A5J6qVvWd0" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEin" />
       </node>
-      <node concept="3t3aUO" id="5ByxUIFAVyp" role="3tWTBb" />
-      <node concept="OJJ_H" id="5ByxUIFAVzg" role="1QgFCz">
-        <node concept="OJJ_U" id="5ByxUIFAVzn" role="9Cqxr">
+      <node concept="OJJ_H" id="7A5J6qVvWd2" role="32z5Zf">
+        <node concept="OJJ_U" id="7A5J6qVvWdf" role="9Cqxr">
           <ref role="OJJ_O" node="5ByxUIFAVz4" />
         </node>
-        <node concept="OJJ_H" id="5ByxUIFAVzq" role="9Cqxi">
-          <node concept="OJJ_U" id="5ByxUIFAVzx" role="9Cqxr">
+        <node concept="OJJ_H" id="7A5J6qVvWd8" role="9Cqxi">
+          <node concept="OJJ_U" id="7A5J6qVvWdi" role="9Cqxr">
             <ref role="OJJ_O" node="5ByxUIFAVyM" />
           </node>
-          <node concept="OJJ_U" id="5ByxUIFAVz$" role="9Cqxi">
-            <ref role="OJJ_O" node="5ByxUIFAVyy" />
+          <node concept="OJJ_U" id="7A5J6qVvWdl" role="9Cqxi">
+            <ref role="OJJ_O" node="5ByxUIFAEiO" />
           </node>
         </node>
       </node>
