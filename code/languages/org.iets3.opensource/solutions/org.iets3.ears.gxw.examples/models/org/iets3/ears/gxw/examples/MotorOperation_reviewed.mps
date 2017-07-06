@@ -36,7 +36,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
-        <child id="1618831278223763546" name="listOfAxioms" index="1JDDoy" />
+        <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
@@ -59,10 +59,14 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
+        <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
+      </concept>
+      <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
-      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseEquivalenceAxiom" flags="ng" index="1JDFFW">
-        <child id="1618831278223899996" name="arg2" index="1JD8c$" />
-        <child id="1618831278223899991" name="arg1" index="1JD8cJ" />
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
+        <child id="8756612199931468805" name="aliasName" index="35gu1z" />
+        <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
@@ -143,45 +147,33 @@
       <property role="Nkej4" value="start" />
       <ref role="Nkej6" node="7HbJNeua$Oj" resolve="auxiliary motor" />
     </node>
-    <node concept="otU$0" id="5ByxUIFAVyy" role="2skrmv">
-      <property role="Nkej4" value="stop" />
-      <ref role="Nkej6" node="7HbJNeua$O3" resolve="oil motor" />
-    </node>
-    <node concept="otU$0" id="5ByxUIFAVyM" role="2skrmv">
-      <property role="Nkej4" value="stop" />
-      <ref role="Nkej6" node="7HbJNeua$Oa" resolve="main motor" />
-    </node>
-    <node concept="otU$0" id="5ByxUIFAVz4" role="2skrmv">
-      <property role="Nkej4" value="stop" />
-      <ref role="Nkej6" node="7HbJNeua$Oj" resolve="auxiliary motor" />
-    </node>
-    <node concept="1JDFFW" id="7C$xkK6KPsS" role="1JDDoy">
-      <node concept="OJJ_U" id="7C$xkK6KPsY" role="1JD8cJ">
-        <ref role="OJJ_O" node="5ByxUIFAEiO" />
+    <node concept="1JDFFW" id="2Bva3qemdAv" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdAw" role="35gu1z">
+        <property role="TrG5h" value="stop main motor" />
       </node>
-      <node concept="OJJ_J" id="7C$xkK6KPt1" role="1JD8c$">
-        <node concept="OJJ_U" id="7C$xkK6KPt6" role="9Cqx7">
-          <ref role="OJJ_O" node="5ByxUIFAVyy" />
+      <node concept="OJJ_J" id="2Bva3qemdA_" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdAE" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAEiW" />
         </node>
       </node>
     </node>
-    <node concept="1JDFFW" id="7C$xkK6KPt$" role="1JDDoy">
-      <node concept="OJJ_U" id="7C$xkK6KPtJ" role="1JD8cJ">
-        <ref role="OJJ_O" node="5ByxUIFAEjz" />
+    <node concept="1JDFFW" id="2Bva3qemdAX" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdAZ" role="35gu1z">
+        <property role="TrG5h" value="stop oil motor" />
       </node>
-      <node concept="OJJ_J" id="7C$xkK6KPtM" role="1JD8c$">
-        <node concept="OJJ_U" id="7C$xkK6KPtR" role="9Cqx7">
-          <ref role="OJJ_O" node="5ByxUIFAVz4" />
+      <node concept="OJJ_J" id="2Bva3qemdB9" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdBe" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAEiW" />
         </node>
       </node>
     </node>
-    <node concept="1JDFFW" id="7C$xkK6KPu_" role="1JDDoy">
-      <node concept="OJJ_U" id="7C$xkK6KPuO" role="1JD8cJ">
-        <ref role="OJJ_O" node="5ByxUIFAEiW" />
+    <node concept="1JDFFW" id="2Bva3qemdBr" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdBt" role="35gu1z">
+        <property role="TrG5h" value="stop auxiliary motor" />
       </node>
-      <node concept="OJJ_J" id="7C$xkK6KPuR" role="1JD8c$">
-        <node concept="OJJ_U" id="7C$xkK6KPuW" role="9Cqx7">
-          <ref role="OJJ_O" node="5ByxUIFAVyM" />
+      <node concept="OJJ_J" id="2Bva3qemdBF" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdBK" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAEiW" />
         </node>
       </node>
     </node>
@@ -225,8 +217,8 @@
       <node concept="3T_uu0" id="7A5J6qVvWcW" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiD" />
       </node>
-      <node concept="OJJ_U" id="7A5J6qVvWcY" role="32z5Zf">
-        <ref role="OJJ_O" node="5ByxUIFAVz4" />
+      <node concept="OJJ_U" id="2Bva3qemdCQ" role="32z5Zf">
+        <ref role="OJJ_O" node="5ByxUIFAEjz" />
       </node>
     </node>
     <node concept="sEiiz" id="5ByxUIFAVy4" role="OJ2fO">
@@ -235,17 +227,17 @@
       <node concept="3T_uu0" id="7A5J6qVvWd0" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEin" />
       </node>
-      <node concept="OJJ_H" id="7A5J6qVvWd2" role="32z5Zf">
-        <node concept="OJJ_U" id="7A5J6qVvWdf" role="9Cqxr">
-          <ref role="OJJ_O" node="5ByxUIFAVz4" />
+      <node concept="OJJ_H" id="2Bva3qemdCw" role="32z5Zf">
+        <node concept="OJJ_H" id="2Bva3qemdCA" role="9Cqxr">
+          <node concept="35djRe" id="2Bva3qemdCH" role="9Cqxr">
+            <ref role="35djRf" node="2Bva3qemdBr" />
+          </node>
+          <node concept="35djRe" id="2Bva3qemdCK" role="9Cqxi">
+            <ref role="35djRf" node="2Bva3qemdAv" />
+          </node>
         </node>
-        <node concept="OJJ_H" id="7A5J6qVvWd8" role="9Cqxi">
-          <node concept="OJJ_U" id="7A5J6qVvWdi" role="9Cqxr">
-            <ref role="OJJ_O" node="5ByxUIFAVyM" />
-          </node>
-          <node concept="OJJ_U" id="7A5J6qVvWdl" role="9Cqxi">
-            <ref role="OJJ_O" node="5ByxUIFAEiO" />
-          </node>
+        <node concept="35djRe" id="2Bva3qemdCN" role="9Cqxi">
+          <ref role="35djRf" node="2Bva3qemdAX" />
         </node>
       </node>
     </node>

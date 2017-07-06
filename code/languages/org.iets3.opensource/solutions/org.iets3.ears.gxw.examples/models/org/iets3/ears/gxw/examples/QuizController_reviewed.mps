@@ -32,6 +32,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
+        <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
@@ -46,13 +47,25 @@
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
         <child id="2964597654736467335" name="arg1" index="9Cqxr" />
       </concept>
+      <concept id="6744041109748014276" name="org.iets3.ears.gxw.structure.UnaryFormulaSR" flags="ng" index="OJJ_G">
+        <child id="2964597654736467355" name="arg" index="9Cqx7" />
+      </concept>
       <concept id="6744041109748014277" name="org.iets3.ears.gxw.structure.AndFormulaSR" flags="ng" index="OJJ_H" />
+      <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
+        <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
+      </concept>
+      <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
+      </concept>
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
+        <child id="8756612199931468805" name="aliasName" index="35gu1z" />
+        <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
       </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
@@ -74,6 +87,36 @@
   </registry>
   <node concept="2skrmn" id="5ByxUIFAV_l">
     <property role="TrG5h" value="quiz controller" />
+    <node concept="1JDFFW" id="2Bva3qemdHu" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdHw" role="35gu1z">
+        <property role="TrG5h" value="turn off indicator pupil" />
+      </node>
+      <node concept="OJJ_J" id="2Bva3qemdHA" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdHF" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVBp" />
+        </node>
+      </node>
+    </node>
+    <node concept="1JDFFW" id="2Bva3qemdHO" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdHQ" role="35gu1z">
+        <property role="TrG5h" value="turn off indicator high school" />
+      </node>
+      <node concept="OJJ_J" id="2Bva3qemdIb" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdIg" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVBu" />
+        </node>
+      </node>
+    </node>
+    <node concept="1JDFFW" id="2Bva3qemdIt" role="1JDDoy">
+      <node concept="35YNXi" id="2Bva3qemdIv" role="35gu1z">
+        <property role="TrG5h" value="turn off indicator professor" />
+      </node>
+      <node concept="OJJ_J" id="2Bva3qemdIH" role="35YNX4">
+        <node concept="OJJ_U" id="2Bva3qemdIM" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAVBA" />
+        </node>
+      </node>
+    </node>
     <node concept="2uIZ38" id="7R851$_ioLa" role="2skrmi">
       <property role="TrG5h" value="indicator pupil" />
       <property role="2uI0VX" value="indicator light for pupil" />
@@ -150,24 +193,12 @@
       <property role="Nkej4" value="blink" />
       <ref role="Nkej6" node="7R851$_ioLa" resolve="indicator pupil" />
     </node>
-    <node concept="otU$0" id="5ByxUIFAVBQ" role="2skrmv">
-      <property role="Nkej4" value="turn off" />
-      <ref role="Nkej6" node="7R851$_ioLa" resolve="indicator pupil" />
-    </node>
     <node concept="otU$0" id="5ByxUIFAVBu" role="2skrmv">
       <property role="Nkej4" value="blink" />
       <ref role="Nkej6" node="7R851$_ioM9" resolve="indicator high school" />
     </node>
-    <node concept="otU$0" id="5ByxUIFAVC4" role="2skrmv">
-      <property role="Nkej4" value="turn off" />
-      <ref role="Nkej6" node="7R851$_ioM9" resolve="indicator high school" />
-    </node>
     <node concept="otU$0" id="5ByxUIFAVBA" role="2skrmv">
       <property role="Nkej4" value="blink" />
-      <ref role="Nkej6" node="7R851$_ioMc" resolve="indicator professor" />
-    </node>
-    <node concept="otU$0" id="5ByxUIFAVCc" role="2skrmv">
-      <property role="Nkej4" value="turn off" />
       <ref role="Nkej6" node="7R851$_ioMc" resolve="indicator professor" />
     </node>
   </node>
@@ -267,15 +298,15 @@
       </node>
       <node concept="OJJ_H" id="7A5J6qVvWca" role="32z5Zf">
         <node concept="OJJ_H" id="7A5J6qVvWcg" role="9Cqxr">
-          <node concept="OJJ_U" id="7A5J6qVvWcn" role="9Cqxr">
-            <ref role="OJJ_O" node="5ByxUIFAVBQ" />
+          <node concept="35djRe" id="2Bva3qemdJ1" role="9Cqxr">
+            <ref role="35djRf" node="2Bva3qemdHO" />
           </node>
-          <node concept="OJJ_U" id="7A5J6qVvWcq" role="9Cqxi">
-            <ref role="OJJ_O" node="5ByxUIFAVC4" />
+          <node concept="35djRe" id="2Bva3qemdJ4" role="9Cqxi">
+            <ref role="35djRf" node="2Bva3qemdIt" />
           </node>
         </node>
         <node concept="OJJ_U" id="7A5J6qVvWct" role="9Cqxi">
-          <ref role="OJJ_O" node="5ByxUIFAVCc" />
+          <ref role="OJJ_O" node="5ByxUIFAVBp" />
         </node>
       </node>
     </node>

@@ -193,11 +193,11 @@
       <ref role="Nkej6" node="34ScOrO_op0" resolve="stirring motor" />
     </node>
     <node concept="otU$d" id="5ByxUIED1a$" role="2skrmg">
-      <property role="OJvIS" value="equals level L1" />
+      <property role="OJvIS" value="equals level l1" />
       <ref role="3Np_ai" node="34ScOrO_oob" resolve="liquid level of first load cycle" />
     </node>
     <node concept="otU$d" id="5ByxUIED1aO" role="2skrmg">
-      <property role="OJvIS" value="equals level L2" />
+      <property role="OJvIS" value="equals level l2" />
       <ref role="3Np_ai" node="34ScOrO_oog" resolve="liquid level of second load cycle" />
     </node>
     <node concept="otU$d" id="5ByxUIED1bH" role="2skrmg">
