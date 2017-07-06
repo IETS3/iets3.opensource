@@ -226,9 +226,6 @@
       <node concept="3F1sOY" id="7YbGQeymA73" role="3EZMnx">
         <ref role="1NtTu8" to="q3w4:7A5J6qV2ueC" resolve="trigger" />
       </node>
-      <node concept="3F1sOY" id="7YbGQeyxFw4" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:7YbGQeyu2EC" resolve="triggerModifier" />
-      </node>
       <node concept="3F0ifn" id="6KxW$9vrVt3" role="3EZMnx">
         <property role="3F0ifm" value=", the" />
       </node>
@@ -601,7 +598,7 @@
       </node>
       <node concept="3F0ifn" id="1pRfBxTOpeV" role="3EZMnx" />
       <node concept="3F0ifn" id="1pRfBxTOpyX" role="3EZMnx">
-        <property role="3F0ifm" value="List of Relations:" />
+        <property role="3F0ifm" value="List of Aliases:" />
         <node concept="Vb9p2" id="ALdBd2J0Px" role="3F10Kt">
           <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
@@ -611,7 +608,7 @@
       </node>
       <node concept="3F2HdR" id="1pRfBxTOqb1" role="3EZMnx">
         <property role="S$F3r" value="true" />
-        <ref role="1NtTu8" to="q3w4:1pRfBxTOqxq" resolve="listOfAxioms" />
+        <ref role="1NtTu8" to="q3w4:1pRfBxTOqxq" resolve="listOfAliases" />
         <node concept="2iRkQZ" id="1pRfBxTOqb2" role="2czzBx" />
         <node concept="3F0ifn" id="1pRfBxTOqb3" role="2czzBI">
           <node concept="VPxyj" id="1pRfBxTOqb4" role="3F10Kt">
@@ -1408,17 +1405,17 @@
     </node>
   </node>
   <node concept="24kQdi" id="1pRfBxTOo_r">
-    <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:1pRfBxTOoi4" resolve="ResponseEquivalenceAxiom" />
+    <property role="3GE5qa" value="Alias" />
+    <ref role="1XX52x" to="q3w4:1pRfBxTOoi4" resolve="ResponseAlias" />
     <node concept="3EZMnI" id="1pRfBxTOVPy" role="2wV5jI">
-      <node concept="3F1sOY" id="1pRfBxTOVPF" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1pRfBxTOVPn" resolve="arg1" />
+      <node concept="3F1sOY" id="7A5J6qWvCdd" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:7A5J6qWL5K5" resolve="aliasName" />
       </node>
       <node concept="3F0ifn" id="1pRfBxTOVPL" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="1pRfBxTOVPY" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1pRfBxTOVPs" resolve="arg2" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qWvCcy" resolve="responseFormula" />
       </node>
       <node concept="l2Vlx" id="1pRfBxTOVPz" role="2iSdaV" />
     </node>
@@ -1519,51 +1516,76 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ByxUIFeulC">
-    <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:5ByxUIF95HW" resolve="TriggerEquivalenceAxiom" />
+    <property role="3GE5qa" value="Alias" />
+    <ref role="1XX52x" to="q3w4:5ByxUIF95HW" resolve="TriggerAlias" />
     <node concept="3EZMnI" id="5ByxUIFeulE" role="2wV5jI">
-      <node concept="3F1sOY" id="5ByxUIFeulJ" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:5ByxUIF95HX" resolve="arg1" />
+      <node concept="3F1sOY" id="7A5J6qWL8f3" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:7A5J6qWL5Kx" resolve="aliasName" />
       </node>
       <node concept="3F0ifn" id="5ByxUIFeulK" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="5ByxUIFeulL" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:5ByxUIF95HZ" resolve="arg2" />
+        <ref role="1NtTu8" to="q3w4:7A5J6qWvCcq" resolve="triggerFormula" />
       </node>
       <node concept="l2Vlx" id="5ByxUIFeulM" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="18na8zbdVgA">
-    <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:18na8zbdVga" resolve="ResponseImplicationAxiom" />
-    <node concept="3EZMnI" id="18na8zbdVgC" role="2wV5jI">
-      <node concept="3F1sOY" id="18na8zbdVgD" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:18na8zbdVgg" resolve="arg1" />
-      </node>
-      <node concept="3F0ifn" id="18na8zbdVgE" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
-      <node concept="3F1sOY" id="18na8zbdVgF" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:18na8zbdVgh" resolve="arg2" />
-      </node>
-      <node concept="l2Vlx" id="18na8zbdVgG" role="2iSdaV" />
+  <node concept="24kQdi" id="7A5J6qWvCd1">
+    <property role="3GE5qa" value="Alias" />
+    <ref role="1XX52x" to="q3w4:7A5J6qWvCcO" resolve="ResponseAliasName" />
+    <node concept="3F0A7n" id="7A5J6qWvCd3" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
-  <node concept="24kQdi" id="18na8zbdVgU">
-    <property role="3GE5qa" value="Axioms" />
-    <ref role="1XX52x" to="q3w4:18na8zbdVgb" resolve="TriggerImplicationAxiom" />
-    <node concept="3EZMnI" id="18na8zbdVgW" role="2wV5jI">
-      <node concept="3F1sOY" id="18na8zbdVgX" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:18na8zbdVgc" resolve="arg1" />
+  <node concept="24kQdi" id="7A5J6qWBTCB">
+    <property role="3GE5qa" value="Alias" />
+    <ref role="1XX52x" to="q3w4:7A5J6qWvCdi" resolve="AliasName" />
+    <node concept="3F0A7n" id="7A5J6qWBTCD" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7A5J6qWG86S">
+    <property role="3GE5qa" value="PropositionalLogicSR" />
+    <ref role="1XX52x" to="q3w4:7A5J6qWG86C" resolve="AliasFormulaSR" />
+    <node concept="1iCGBv" id="7A5J6qWPiu0" role="2wV5jI">
+      <ref role="1NtTu8" to="q3w4:7A5J6qWG86D" resolve="responseAlias" />
+      <node concept="1sVBvm" id="7A5J6qWPiu2" role="1sWHZn">
+        <node concept="1iCGBv" id="7A5J6qWPiu9" role="2wV5jI">
+          <ref role="1NtTu8" to="q3w4:7A5J6qWL5K5" resolve="aliasName" />
+          <node concept="1sVBvm" id="7A5J6qWPiub" role="1sWHZn">
+            <node concept="3F0A7n" id="7A5J6qWPiui" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="18na8zbdVgY" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7A5J6qWG87g">
+    <property role="3GE5qa" value="PropositionalLogicTr" />
+    <ref role="1XX52x" to="q3w4:7A5J6qWG86H" resolve="AliasFormulaTr" />
+    <node concept="1iCGBv" id="7A5J6qWQrQp" role="2wV5jI">
+      <ref role="1NtTu8" to="q3w4:7A5J6qWG86I" resolve="triggerAlias" />
+      <node concept="1sVBvm" id="7A5J6qWQrQq" role="1sWHZn">
+        <node concept="1iCGBv" id="7A5J6qWQrQr" role="2wV5jI">
+          <ref role="1NtTu8" to="q3w4:7A5J6qWL5Kx" resolve="aliasName" />
+          <node concept="1sVBvm" id="7A5J6qWQrQs" role="1sWHZn">
+            <node concept="3F0A7n" id="7A5J6qWQrQt" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="3F1sOY" id="18na8zbdVgZ" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:18na8zbdVgd" resolve="arg2" />
-      </node>
-      <node concept="l2Vlx" id="18na8zbdVh0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7A5J6qWGi6h">
+    <property role="3GE5qa" value="Alias" />
+    <ref role="1XX52x" to="q3w4:7A5J6qWvCdo" resolve="TriggerAliasName" />
+    <node concept="3F0A7n" id="7A5J6qWGi6j" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>

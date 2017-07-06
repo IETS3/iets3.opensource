@@ -37,6 +37,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
+        <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
@@ -59,7 +60,15 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
+        <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
+      </concept>
+      <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
       <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
+      <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
+        <child id="8756612199931468805" name="aliasName" index="35gu1z" />
+        <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
+      </concept>
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
@@ -93,17 +102,8 @@
         <ref role="3T_uuC" node="5ByxUIFBn_r" />
       </node>
       <node concept="OJJ_H" id="7A5J6qVvILu" role="32z5Zf">
-        <node concept="OJJ_H" id="7A5J6qVvILC" role="9Cqxr">
-          <node concept="OJJ_J" id="7A5J6qVvILJ" role="9Cqxr">
-            <node concept="OJJ_U" id="7A5J6qVvILO" role="9Cqx7">
-              <ref role="OJJ_O" node="5ByxUIFBn_S" />
-            </node>
-          </node>
-          <node concept="OJJ_J" id="7A5J6qVvILR" role="9Cqxi">
-            <node concept="OJJ_U" id="7A5J6qVvILW" role="9Cqx7">
-              <ref role="OJJ_O" node="5ByxUIFBnA0" />
-            </node>
-          </node>
+        <node concept="35djRe" id="7A5J6qWQp24" role="9Cqxr">
+          <ref role="35djRf" node="7A5J6qWPaXZ" />
         </node>
         <node concept="OJJ_U" id="7A5J6qVvILZ" role="9Cqxi">
           <ref role="OJJ_O" node="5ByxUIFBn_N" />
@@ -126,17 +126,8 @@
       <node concept="3T_uu0" id="7A5J6qVvIM6" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_z" />
       </node>
-      <node concept="OJJ_H" id="7A5J6qVvIM8" role="32z5Zf">
-        <node concept="OJJ_J" id="7A5J6qVvIMe" role="9Cqxr">
-          <node concept="OJJ_U" id="7A5J6qVvIMj" role="9Cqx7">
-            <ref role="OJJ_O" node="5ByxUIFBn_S" />
-          </node>
-        </node>
-        <node concept="OJJ_J" id="7A5J6qVvIMm" role="9Cqxi">
-          <node concept="OJJ_U" id="7A5J6qVvIMr" role="9Cqx7">
-            <ref role="OJJ_O" node="5ByxUIFBnA0" />
-          </node>
-        </node>
+      <node concept="35djRe" id="7A5J6qWQp27" role="32z5Zf">
+        <ref role="35djRf" node="7A5J6qWPaXZ" />
       </node>
     </node>
     <node concept="9PVaO" id="3HrZoniDvAj" role="3DRjlG">
@@ -194,6 +185,23 @@
     <node concept="otU$0" id="5ByxUIFBnA0" role="2skrmv">
       <property role="Nkej4" value="close" />
       <ref role="Nkej6" node="2$$ntKwwEOq" resolve="door" />
+    </node>
+    <node concept="1JDFFW" id="7A5J6qWPaXZ" role="1JDDoy">
+      <node concept="35YNXi" id="7A5J6qWPaY0" role="35gu1z">
+        <property role="TrG5h" value="stop door" />
+      </node>
+      <node concept="OJJ_H" id="7A5J6qWPaYc" role="35YNX4">
+        <node concept="OJJ_J" id="7A5J6qWPaYj" role="9Cqxr">
+          <node concept="OJJ_U" id="7A5J6qWPaYo" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBnA0" />
+          </node>
+        </node>
+        <node concept="OJJ_J" id="7A5J6qWPaYr" role="9Cqxi">
+          <node concept="OJJ_U" id="7A5J6qWPaYw" role="9Cqx7">
+            <ref role="OJJ_O" node="5ByxUIFBn_S" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
