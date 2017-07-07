@@ -251,7 +251,7 @@
       <property role="S$Qs1" value="true" />
       <node concept="l2Vlx" id="7$cwLzjn8uM" role="2iSdaV" />
       <node concept="3F0ifn" id="2K9dotEFhZM" role="3EZMnx">
-        <property role="3F0ifm" value="MatchModel:" />
+        <property role="3F0ifm" value="Synchonous Data-Flow Diagram" />
       </node>
       <node concept="3F0ifn" id="1yEH9AqNDa_" role="3EZMnx">
         <property role="3F0ifm" value="Path for scripts:" />
