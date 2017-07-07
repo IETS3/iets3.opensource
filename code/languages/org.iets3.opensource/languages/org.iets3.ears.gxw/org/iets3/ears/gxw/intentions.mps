@@ -1606,7 +1606,7 @@
                                           <ref role="3cqZAo" node="5bowr9YeEKK" resolve="untilClauseTriggersString" />
                                         </node>
                                         <node concept="Xl_RD" id="18na8zav0dU" role="3uHU7w">
-                                          <property role="Xl_RC" value=" OR " />
+                                          <property role="Xl_RC" value=" or " />
                                         </node>
                                       </node>
                                     </node>
@@ -1979,7 +1979,7 @@
                                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                                       <node concept="3cpWs3" id="18na8zb2u_5" role="37wK5m">
                                         <node concept="Xl_RD" id="18na8zb2u_6" role="3uHU7w">
-                                          <property role="Xl_RC" value=" )))" />
+                                          <property role="Xl_RC" value="))" />
                                         </node>
                                         <node concept="3cpWs3" id="18na8zb2u_9" role="3uHU7B">
                                           <node concept="3cpWs3" id="18na8zb2u_a" role="3uHU7B">
@@ -2028,7 +2028,7 @@
                                               </node>
                                             </node>
                                             <node concept="Xl_RD" id="18na8zb2u_s" role="3uHU7w">
-                                              <property role="Xl_RC" value=" W (" />
+                                              <property role="Xl_RC" value=" W " />
                                             </node>
                                           </node>
                                           <node concept="2OqwBi" id="18na8zb2u_t" role="3uHU7w">
@@ -3098,12 +3098,12 @@
                                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                                   <node concept="3cpWs3" id="7A5J6qUpIoQ" role="37wK5m">
                                     <node concept="Xl_RD" id="7A5J6qUpIoR" role="3uHU7w">
-                                      <property role="Xl_RC" value=")))" />
+                                      <property role="Xl_RC" value="))" />
                                     </node>
                                     <node concept="3cpWs3" id="7A5J6qUpIoS" role="3uHU7B">
                                       <node concept="3cpWs3" id="7A5J6qUpIoT" role="3uHU7B">
                                         <node concept="Xl_RD" id="7A5J6qUpIoU" role="3uHU7w">
-                                          <property role="Xl_RC" value=" W (" />
+                                          <property role="Xl_RC" value=" W " />
                                         </node>
                                         <node concept="3cpWs3" id="7A5J6qUpIoV" role="3uHU7B">
                                           <node concept="2OqwBi" id="7A5J6qUpIoW" role="3uHU7w">
