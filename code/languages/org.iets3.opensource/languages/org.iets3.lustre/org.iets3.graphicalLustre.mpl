@@ -6,37 +6,9 @@
     </modelRoot>
   </models>
   <accessoryModels />
-  <generators>
-    <generator generatorUID="org.iets3.graphicalLustre#6535459388227175514" uuid="4e74c499-c637-4cfe-9978-2fb9fc9fd233">
-      <models>
-        <modelRoot contentPath="${module}" type="default">
-          <sourceRoot location="generator/template" />
-        </modelRoot>
-      </models>
-      <external-templates />
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
-      <languageVersions>
-        <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-      </languageVersions>
-      <dependencyVersions>
-        <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-        <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-        <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)" version="0" />
-        <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-        <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
-        <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="33eb1b5b-ad96-4262-9112-684c487e01e0(org.iets3.graphicalLustre)" version="0" />
-        <module reference="4e74c499-c637-4cfe-9978-2fb9fc9fd233(org.iets3.graphicalLustre#6535459388227175514)" version="0" />
-      </dependencyVersions>
-      <mapping-priorities />
-    </generator>
-  </generators>
+  <generators />
   <stubModelEntries>
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
+    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -101,6 +73,7 @@
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
+    <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />

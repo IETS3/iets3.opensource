@@ -9,16 +9,12 @@
   </languages>
   <imports />
   <registry>
-    <language id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel">
-      <concept id="6314475773253271104" name="org.iets3.simulink.resultmodel.structure.InputCell" flags="ng" index="38cVw2">
-        <property id="6314475773253271155" name="inputValue" index="38cVwL" />
-      </concept>
-      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY" />
-    </language>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -89,12 +85,6 @@
       <concept id="3691935882243834791" name="org.iets3.ears.gxw.structure.BinaryFormulaTr" flags="ng" index="3T_uuS">
         <child id="3691935882243834794" name="arg2" index="3T_uuP" />
         <child id="3691935882243834793" name="arg1" index="3T_uuQ" />
-      </concept>
-    </language>
-    <language id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker">
-      <concept id="435597896828128343" name="org.iets3.simulationOutputChecker.structure.SimulinkResultDisplayer" flags="ng" index="2RkC6H">
-        <child id="435597896828182547" name="simulinkResult" index="2RkARD" />
-        <child id="435597896828182548" name="inputCells" index="2RkARI" />
       </concept>
     </language>
   </registry>
@@ -323,49 +313,10 @@
         </node>
       </node>
     </node>
-    <node concept="9PVaO" id="4GGvgnmftwm" role="3DRjlG">
+    <node concept="9PVaO" id="6DHDeqn11pc" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="models" />
-    </node>
-  </node>
-  <node concept="2RkC6H" id="1O7Kc2mWGNi">
-    <node concept="38cVxY" id="1O7Kc2mWGNj" role="2RkARD">
-      <property role="TrG5h" value="Simulink Result" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNk" role="2RkARI">
-      <property role="TrG5h" value="high school button is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNl" role="2RkARI">
-      <property role="TrG5h" value="professor button 0 is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNm" role="2RkARI">
-      <property role="TrG5h" value="professor button 1 is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNn" role="2RkARI">
-      <property role="TrG5h" value="indicator high school is off" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNo" role="2RkARI">
-      <property role="TrG5h" value="indicator professor is off" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNp" role="2RkARI">
-      <property role="TrG5h" value="pupil button 0 is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNq" role="2RkARI">
-      <property role="TrG5h" value="pupil button 1 is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNr" role="2RkARI">
-      <property role="TrG5h" value="reset button is pressed" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="1O7Kc2mWGNs" role="2RkARI">
-      <property role="TrG5h" value="indicator pupil is off" />
-      <property role="38cVwL" value="0" />
     </node>
   </node>
 </model>
