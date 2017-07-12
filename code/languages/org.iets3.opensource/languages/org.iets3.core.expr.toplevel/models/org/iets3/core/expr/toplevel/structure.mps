@@ -704,9 +704,6 @@
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
-    <node concept="PrWs8" id="3pe7Y2RWGaO" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
-    </node>
     <node concept="PrWs8" id="5ElkanQ9DBL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanQ81eS" resolve="IDocumentableWordContainer" />
     </node>
