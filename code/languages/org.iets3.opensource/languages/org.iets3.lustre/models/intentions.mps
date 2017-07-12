@@ -29,7 +29,7 @@
     <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
     <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
     <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" />
-    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -173,6 +173,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -183,6 +187,7 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1428,8 +1433,8 @@
                           <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="1yEH9AqQONp" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="6FIbR5rAu0Q" role="2OqNvi">
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                   </node>
@@ -1538,8 +1543,8 @@
                           <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="1yEH9AqPuxd" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="6FIbR5rAyhT" role="2OqNvi">
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
@@ -1571,8 +1576,8 @@
                             <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="1yEH9AqQBqm" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <node concept="2qgKlT" id="6FIbR5rAxED" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -2581,279 +2586,207 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="1nhUh7MdHZJ" role="3cqZAp" />
-                <node concept="3clFbJ" id="1nhUh7MdJ5d" role="3cqZAp">
-                  <node concept="3clFbS" id="1nhUh7MdJ5e" role="3clFbx">
-                    <node concept="1X3_iC" id="1nhUh7MdJ5f" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="1nhUh7MdJ5g" role="8Wnug">
-                        <node concept="37vLTI" id="1nhUh7MdJ5h" role="3clFbG">
-                          <node concept="3cpWs3" id="1nhUh7MdJ5i" role="37vLTx">
-                            <node concept="2OqwBi" id="1nhUh7MdJ5j" role="3uHU7w">
-                              <node concept="37vLTw" id="1nhUh7MdJ5k" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3q$2Sle5Kkj" resolve="variableMap" />
-                              </node>
-                              <node concept="liA8E" id="1nhUh7MdJ5l" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                                <node concept="Xl_RD" id="1nhUh7MdJ5m" role="37wK5m">
-                                  <property role="Xl_RC" value="iftb" />
-                                </node>
-                              </node>
+                <node concept="1X3_iC" id="4GGvgnm604n" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbJ" id="1nhUh7MdJ5d" role="8Wnug">
+                    <node concept="3clFbS" id="1nhUh7MdJ5e" role="3clFbx">
+                      <node concept="3clFbF" id="1nhUh7MdJ5I" role="3cqZAp">
+                        <node concept="37vLTI" id="1nhUh7MdJ5J" role="3clFbG">
+                          <node concept="2OqwBi" id="1nhUh7MdJ5K" role="37vLTx">
+                            <node concept="2GrUjf" id="1nhUh7MdJ5L" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
                             </node>
-                            <node concept="Xl_RD" id="1nhUh7MdJ5n" role="3uHU7B">
-                              <property role="Xl_RC" value="iftb" />
+                            <node concept="3TrcHB" id="1nhUh7MdJ5M" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
-                          <node concept="37vLTw" id="1nhUh7MdJ5o" role="37vLTJ">
+                          <node concept="37vLTw" id="1nhUh7MdJ5N" role="37vLTJ">
                             <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="1X3_iC" id="1nhUh7MdJ5p" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3cpWs8" id="1nhUh7MdJ5q" role="8Wnug">
-                        <node concept="3cpWsn" id="1nhUh7MdJ5r" role="3cpWs9">
-                          <property role="TrG5h" value="count" />
-                          <node concept="10Oyi0" id="1nhUh7MdJ5s" role="1tU5fm" />
-                          <node concept="2OqwBi" id="1nhUh7MdJ5t" role="33vP2m">
-                            <node concept="37vLTw" id="1nhUh7MdJ5u" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3q$2Sle5Kkj" resolve="variableMap" />
-                            </node>
-                            <node concept="liA8E" id="1nhUh7MdJ5v" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                              <node concept="Xl_RD" id="1nhUh7MdJ5w" role="37wK5m">
-                                <property role="Xl_RC" value="iftb" />
-                              </node>
+                      <node concept="3clFbF" id="1nhUh7MdJ5O" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdJ5P" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdJ5Q" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="1nhUh7MdJ5R" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="Xl_RD" id="1nhUh7MdJ5S" role="37wK5m">
+                              <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
                             </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="1X3_iC" id="1nhUh7MdJ5x" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="1nhUh7MdJ5y" role="8Wnug">
-                        <node concept="3uNrnE" id="1nhUh7MdJ5z" role="3clFbG">
-                          <node concept="37vLTw" id="1nhUh7MdJ5$" role="2$L3a6">
-                            <ref role="3cqZAo" node="1nhUh7MdJ5r" resolve="count" />
+                      <node concept="3clFbF" id="1nhUh7MdJ5T" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdJ5U" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdJ5V" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
                           </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1X3_iC" id="1nhUh7MdJ5_" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="1nhUh7MdJ5A" role="8Wnug">
-                        <node concept="2OqwBi" id="1nhUh7MdJ5B" role="3clFbG">
-                          <node concept="37vLTw" id="1nhUh7MdJ5C" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3q$2Sle5Kkj" resolve="variableMap" />
-                          </node>
-                          <node concept="liA8E" id="1nhUh7MdJ5D" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                            <node concept="Xl_RD" id="1nhUh7MdJ5E" role="37wK5m">
-                              <property role="Xl_RC" value="iftb" />
-                            </node>
-                            <node concept="2ShNRf" id="1nhUh7MdJ5F" role="37wK5m">
-                              <node concept="1pGfFk" id="1nhUh7MdJ5G" role="2ShVmc">
-                                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(int)" resolve="Integer" />
-                                <node concept="37vLTw" id="1nhUh7MdJ5H" role="37wK5m">
-                                  <ref role="3cqZAo" node="1nhUh7MdJ5r" resolve="count" />
+                          <node concept="liA8E" id="1nhUh7MdJ5W" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="1nhUh7MdJ5X" role="37wK5m">
+                              <node concept="3cpWs3" id="1nhUh7MdJ5Y" role="3uHU7B">
+                                <node concept="Xl_RD" id="1nhUh7MdJ5Z" role="3uHU7w">
+                                  <property role="Xl_RC" value="'" />
+                                </node>
+                                <node concept="3cpWs3" id="1nhUh7MdJ60" role="3uHU7B">
+                                  <node concept="Xl_RD" id="1nhUh7MdJ61" role="3uHU7B">
+                                    <property role="Xl_RC" value="'/" />
+                                  </node>
+                                  <node concept="37vLTw" id="1nhUh7MdJ62" role="3uHU7w">
+                                    <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                  </node>
                                 </node>
                               </node>
+                              <node concept="Xl_RD" id="1nhUh7MdJ63" role="3uHU7w">
+                                <property role="Xl_RC" value=" ]); \n" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="3clFbF" id="1nhUh7MdJ5I" role="3cqZAp">
-                      <node concept="37vLTI" id="1nhUh7MdJ5J" role="3clFbG">
-                        <node concept="2OqwBi" id="1nhUh7MdJ5K" role="37vLTx">
-                          <node concept="2GrUjf" id="1nhUh7MdJ5L" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                      <node concept="3clFbF" id="1nhUh7MdJ64" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdJ65" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdJ66" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
                           </node>
-                          <node concept="3TrcHB" id="1nhUh7MdJ5M" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="1nhUh7MdJ5N" role="37vLTJ">
-                          <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="1nhUh7MdJ5O" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdJ5P" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdJ5Q" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MdJ5R" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="Xl_RD" id="1nhUh7MdJ5S" role="37wK5m">
-                            <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="1nhUh7MdJ5T" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdJ5U" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdJ5V" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MdJ5W" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="1nhUh7MdJ5X" role="37wK5m">
-                            <node concept="3cpWs3" id="1nhUh7MdJ5Y" role="3uHU7B">
-                              <node concept="Xl_RD" id="1nhUh7MdJ5Z" role="3uHU7w">
-                                <property role="Xl_RC" value="'" />
-                              </node>
-                              <node concept="3cpWs3" id="1nhUh7MdJ60" role="3uHU7B">
-                                <node concept="Xl_RD" id="1nhUh7MdJ61" role="3uHU7B">
-                                  <property role="Xl_RC" value="'/" />
-                                </node>
-                                <node concept="37vLTw" id="1nhUh7MdJ62" role="3uHU7w">
+                          <node concept="liA8E" id="1nhUh7MdJ67" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="1nhUh7MdJ68" role="37wK5m">
+                              <node concept="3cpWs3" id="1nhUh7MdJ69" role="3uHU7B">
+                                <node concept="37vLTw" id="1nhUh7MdJ6a" role="3uHU7w">
                                   <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
                                 </node>
+                                <node concept="Xl_RD" id="1nhUh7MdJ6b" role="3uHU7B">
+                                  <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                </node>
                               </node>
-                            </node>
-                            <node concept="Xl_RD" id="1nhUh7MdJ63" role="3uHU7w">
-                              <property role="Xl_RC" value=" ]); \n" />
+                              <node concept="Xl_RD" id="1nhUh7MdJ6c" role="3uHU7w">
+                                <property role="Xl_RC" value="', 'FunctionName', 'and_block_gxw');\n" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="1nhUh7MdJ6d" role="3cqZAp" />
+                      <node concept="3clFbH" id="1nhUh7MdJ6e" role="3cqZAp" />
+                      <node concept="3clFbH" id="1nhUh7MdJ6f" role="3cqZAp" />
                     </node>
-                    <node concept="3clFbF" id="1nhUh7MdJ64" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdJ65" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdJ66" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MdJ67" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="1nhUh7MdJ68" role="37wK5m">
-                            <node concept="3cpWs3" id="1nhUh7MdJ69" role="3uHU7B">
-                              <node concept="37vLTw" id="1nhUh7MdJ6a" role="3uHU7w">
-                                <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
-                              </node>
-                              <node concept="Xl_RD" id="1nhUh7MdJ6b" role="3uHU7B">
-                                <property role="Xl_RC" value="set_param('simulinkModel/" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="1nhUh7MdJ6c" role="3uHU7w">
-                              <property role="Xl_RC" value="', 'FunctionName', 'and_block_gxw');\n" />
-                            </node>
-                          </node>
-                        </node>
+                    <node concept="2OqwBi" id="1nhUh7MdJ6g" role="3clFbw">
+                      <node concept="2GrUjf" id="1nhUh7MdJ6h" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
                       </node>
-                    </node>
-                    <node concept="3clFbH" id="1nhUh7MdJ6d" role="3cqZAp" />
-                    <node concept="3clFbH" id="1nhUh7MdJ6e" role="3cqZAp" />
-                    <node concept="3clFbH" id="1nhUh7MdJ6f" role="3cqZAp" />
-                  </node>
-                  <node concept="2OqwBi" id="1nhUh7MdJ6g" role="3clFbw">
-                    <node concept="2GrUjf" id="1nhUh7MdJ6h" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
-                    </node>
-                    <node concept="1mIQ4w" id="1nhUh7MdJ6i" role="2OqNvi">
-                      <node concept="chp4Y" id="1nhUh7MdLIb" role="cj9EA">
-                        <ref role="cht4Q" to="lqc6:xNs95uNWKK" resolve="AndActor" />
+                      <node concept="1mIQ4w" id="1nhUh7MdJ6i" role="2OqNvi">
+                        <node concept="chp4Y" id="1nhUh7MdLIb" role="cj9EA">
+                          <ref role="cht4Q" to="lqc6:xNs95uNWKK" resolve="AndActor" />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="1nhUh7MdMXb" role="3cqZAp" />
-                <node concept="3clFbJ" id="1nhUh7MdObH" role="3cqZAp">
-                  <node concept="3clFbS" id="1nhUh7MdObI" role="3clFbx">
-                    <node concept="3clFbF" id="1nhUh7MdOce" role="3cqZAp">
-                      <node concept="37vLTI" id="1nhUh7MdOcf" role="3clFbG">
-                        <node concept="2OqwBi" id="1nhUh7MdOcg" role="37vLTx">
-                          <node concept="2GrUjf" id="1nhUh7MdOch" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                <node concept="1X3_iC" id="4GGvgnm604o" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbH" id="1nhUh7MdMXb" role="8Wnug" />
+                </node>
+                <node concept="1X3_iC" id="4GGvgnm604p" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbJ" id="1nhUh7MdObH" role="8Wnug">
+                    <node concept="3clFbS" id="1nhUh7MdObI" role="3clFbx">
+                      <node concept="3clFbF" id="1nhUh7MdOce" role="3cqZAp">
+                        <node concept="37vLTI" id="1nhUh7MdOcf" role="3clFbG">
+                          <node concept="2OqwBi" id="1nhUh7MdOcg" role="37vLTx">
+                            <node concept="2GrUjf" id="1nhUh7MdOch" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                            </node>
+                            <node concept="3TrcHB" id="1nhUh7MdOci" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
                           </node>
-                          <node concept="3TrcHB" id="1nhUh7MdOci" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="1nhUh7MdOcj" role="37vLTJ">
-                          <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="1nhUh7MdOck" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdOcl" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdOcm" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MdOcn" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="Xl_RD" id="1nhUh7MdOco" role="37wK5m">
-                            <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
+                          <node concept="37vLTw" id="1nhUh7MdOcj" role="37vLTJ">
+                            <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="3clFbF" id="1nhUh7MdOcp" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdOcq" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdOcr" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                      <node concept="3clFbF" id="1nhUh7MdOck" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdOcl" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdOcm" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="1nhUh7MdOcn" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="Xl_RD" id="1nhUh7MdOco" role="37wK5m">
+                              <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="1nhUh7MdOcs" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="1nhUh7MdOct" role="37wK5m">
-                            <node concept="3cpWs3" id="1nhUh7MdOcu" role="3uHU7B">
-                              <node concept="Xl_RD" id="1nhUh7MdOcv" role="3uHU7w">
-                                <property role="Xl_RC" value="'" />
-                              </node>
-                              <node concept="3cpWs3" id="1nhUh7MdOcw" role="3uHU7B">
-                                <node concept="Xl_RD" id="1nhUh7MdOcx" role="3uHU7B">
-                                  <property role="Xl_RC" value="'/" />
+                      </node>
+                      <node concept="3clFbF" id="1nhUh7MdOcp" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdOcq" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdOcr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="1nhUh7MdOcs" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="1nhUh7MdOct" role="37wK5m">
+                              <node concept="3cpWs3" id="1nhUh7MdOcu" role="3uHU7B">
+                                <node concept="Xl_RD" id="1nhUh7MdOcv" role="3uHU7w">
+                                  <property role="Xl_RC" value="'" />
                                 </node>
-                                <node concept="37vLTw" id="1nhUh7MdOcy" role="3uHU7w">
+                                <node concept="3cpWs3" id="1nhUh7MdOcw" role="3uHU7B">
+                                  <node concept="Xl_RD" id="1nhUh7MdOcx" role="3uHU7B">
+                                    <property role="Xl_RC" value="'/" />
+                                  </node>
+                                  <node concept="37vLTw" id="1nhUh7MdOcy" role="3uHU7w">
+                                    <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1nhUh7MdOcz" role="3uHU7w">
+                                <property role="Xl_RC" value=" ]); \n" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="1nhUh7MdOc$" role="3cqZAp">
+                        <node concept="2OqwBi" id="1nhUh7MdOc_" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MdOcA" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="1nhUh7MdOcB" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="1nhUh7MdOcC" role="37wK5m">
+                              <node concept="3cpWs3" id="1nhUh7MdOcD" role="3uHU7B">
+                                <node concept="37vLTw" id="1nhUh7MdOcE" role="3uHU7w">
                                   <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
                                 </node>
+                                <node concept="Xl_RD" id="1nhUh7MdOcF" role="3uHU7B">
+                                  <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                </node>
                               </node>
-                            </node>
-                            <node concept="Xl_RD" id="1nhUh7MdOcz" role="3uHU7w">
-                              <property role="Xl_RC" value=" ]); \n" />
+                              <node concept="Xl_RD" id="1nhUh7MdOcG" role="3uHU7w">
+                                <property role="Xl_RC" value="', 'FunctionName', 'or_block_gxw');\n" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="1nhUh7MdOcH" role="3cqZAp" />
+                      <node concept="3clFbH" id="1nhUh7MdOcI" role="3cqZAp" />
+                      <node concept="3clFbH" id="1nhUh7MdOcJ" role="3cqZAp" />
                     </node>
-                    <node concept="3clFbF" id="1nhUh7MdOc$" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MdOc_" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MdOcA" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MdOcB" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="1nhUh7MdOcC" role="37wK5m">
-                            <node concept="3cpWs3" id="1nhUh7MdOcD" role="3uHU7B">
-                              <node concept="37vLTw" id="1nhUh7MdOcE" role="3uHU7w">
-                                <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
-                              </node>
-                              <node concept="Xl_RD" id="1nhUh7MdOcF" role="3uHU7B">
-                                <property role="Xl_RC" value="set_param('simulinkModel/" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="1nhUh7MdOcG" role="3uHU7w">
-                              <property role="Xl_RC" value="', 'FunctionName', 'or_block_gxw');\n" />
-                            </node>
-                          </node>
-                        </node>
+                    <node concept="2OqwBi" id="1nhUh7MdOcK" role="3clFbw">
+                      <node concept="2GrUjf" id="1nhUh7MdOcL" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
                       </node>
-                    </node>
-                    <node concept="3clFbH" id="1nhUh7MdOcH" role="3cqZAp" />
-                    <node concept="3clFbH" id="1nhUh7MdOcI" role="3cqZAp" />
-                    <node concept="3clFbH" id="1nhUh7MdOcJ" role="3cqZAp" />
-                  </node>
-                  <node concept="2OqwBi" id="1nhUh7MdOcK" role="3clFbw">
-                    <node concept="2GrUjf" id="1nhUh7MdOcL" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
-                    </node>
-                    <node concept="1mIQ4w" id="1nhUh7MdOcM" role="2OqNvi">
-                      <node concept="chp4Y" id="1nhUh7MdR2H" role="cj9EA">
-                        <ref role="cht4Q" to="lqc6:1vI3WTrmqHs" resolve="OrActor" />
+                      <node concept="1mIQ4w" id="1nhUh7MdOcM" role="2OqNvi">
+                        <node concept="chp4Y" id="1nhUh7MdR2H" role="cj9EA">
+                          <ref role="cht4Q" to="lqc6:1vI3WTrmqHs" resolve="OrActor" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2898,7 +2831,7 @@
                         <node concept="liA8E" id="7C1a6Dfzcp_" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                           <node concept="Xl_RD" id="7C1a6DfzcpA" role="37wK5m">
-                            <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
+                            <property role="Xl_RC" value=" add_block('simulink/Logic and Bit Operations/Logical Operator',[sys " />
                           </node>
                         </node>
                       </node>
@@ -2931,24 +2864,96 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="7C1a6DfzcpM" role="3cqZAp">
-                      <node concept="2OqwBi" id="7C1a6DfzcpN" role="3clFbG">
-                        <node concept="37vLTw" id="7C1a6DfzcpO" role="2Oq$k0">
+                    <node concept="1X3_iC" id="4GGvgnm32DH" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="7C1a6DfzcpM" role="8Wnug">
+                        <node concept="2OqwBi" id="7C1a6DfzcpN" role="3clFbG">
+                          <node concept="37vLTw" id="7C1a6DfzcpO" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="7C1a6DfzcpP" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="7C1a6DfzcpQ" role="37wK5m">
+                              <node concept="3cpWs3" id="7C1a6DfzcpR" role="3uHU7B">
+                                <node concept="37vLTw" id="7C1a6DfzcpS" role="3uHU7w">
+                                  <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                </node>
+                                <node concept="Xl_RD" id="7C1a6DfzcpT" role="3uHU7B">
+                                  <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="7C1a6DfzcpU" role="3uHU7w">
+                                <property role="Xl_RC" value="', 'Name', 'release_block_gxw');\n" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY1Rv" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY1Rw" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlY1Rx" role="2Oq$k0">
                           <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
                         </node>
-                        <node concept="liA8E" id="7C1a6DfzcpP" role="2OqNvi">
+                        <node concept="liA8E" id="4GGvgnlY1Ry" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="7C1a6DfzcpQ" role="37wK5m">
-                            <node concept="3cpWs3" id="7C1a6DfzcpR" role="3uHU7B">
-                              <node concept="37vLTw" id="7C1a6DfzcpS" role="3uHU7w">
+                          <node concept="3cpWs3" id="4GGvgnlY1Rz" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlY1R$" role="3uHU7B">
+                              <node concept="37vLTw" id="4GGvgnlY1R_" role="3uHU7w">
                                 <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
                               </node>
-                              <node concept="Xl_RD" id="7C1a6DfzcpT" role="3uHU7B">
+                              <node concept="Xl_RD" id="4GGvgnlY1RA" role="3uHU7B">
                                 <property role="Xl_RC" value="set_param('simulinkModel/" />
                               </node>
                             </node>
-                            <node concept="Xl_RD" id="7C1a6DfzcpU" role="3uHU7w">
-                              <property role="Xl_RC" value="', 'FunctionName', 'release_block_gxw');\n" />
+                            <node concept="Xl_RD" id="4GGvgnlY1RB" role="3uHU7w">
+                              <property role="Xl_RC" value="', 'Operator', 'Or');\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY1RC" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY1RD" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlY1RE" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlY1RF" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="3cpWs3" id="4GGvgnlY1RG" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlY1RH" role="3uHU7B">
+                              <node concept="3cpWs3" id="4GGvgnlY1RI" role="3uHU7B">
+                                <node concept="Xl_RD" id="4GGvgnlY1RJ" role="3uHU7w">
+                                  <property role="Xl_RC" value="', 'Inputs', '" />
+                                </node>
+                                <node concept="3cpWs3" id="4GGvgnlY1RK" role="3uHU7B">
+                                  <node concept="37vLTw" id="4GGvgnlY1RL" role="3uHU7w">
+                                    <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                  </node>
+                                  <node concept="Xl_RD" id="4GGvgnlY1RM" role="3uHU7B">
+                                    <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2YIFZM" id="4GGvgnlY1RN" role="3uHU7w">
+                                <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                <node concept="2OqwBi" id="4GGvgnlY1RO" role="37wK5m">
+                                  <node concept="1PxgMI" id="4GGvgnlY1RP" role="2Oq$k0">
+                                    <ref role="1m5ApE" to="lqc6:7C1a6DfxCbf" resolve="ReleaseActor" />
+                                    <node concept="2GrUjf" id="4GGvgnlY1RQ" role="1m5AlR">
+                                      <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrcHB" id="4GGvgnm0B5h" role="2OqNvi">
+                                    <ref role="3TsBF5" to="lqc6:4GGvgnlUb01" resolve="inputPort" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4GGvgnlY1RS" role="3uHU7w">
+                              <property role="Xl_RC" value="');\n" />
                             </node>
                           </node>
                         </node>
@@ -2968,6 +2973,142 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="7C1a6Dfzflb" role="3cqZAp" />
+                <node concept="3clFbJ" id="4GGvgnlY7gG" role="3cqZAp">
+                  <node concept="3clFbS" id="4GGvgnlY7gH" role="3clFbx">
+                    <node concept="3clFbF" id="4GGvgnlY7gI" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY7gJ" role="3clFbG">
+                        <node concept="10M0yZ" id="4GGvgnlY7gK" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlY7gL" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="Xl_RD" id="4GGvgnlY7gM" role="37wK5m">
+                            <property role="Xl_RC" value="### now adding release actor!!" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY7gN" role="3cqZAp">
+                      <node concept="37vLTI" id="4GGvgnlY7gO" role="3clFbG">
+                        <node concept="2OqwBi" id="4GGvgnlY7gP" role="37vLTx">
+                          <node concept="2GrUjf" id="4GGvgnlY7gQ" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                          </node>
+                          <node concept="3TrcHB" id="4GGvgnlY7gR" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="4GGvgnlY7gS" role="37vLTJ">
+                          <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY7gT" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY7gU" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlY7gV" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlY7gW" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="Xl_RD" id="4GGvgnlY7gX" role="37wK5m">
+                            <property role="Xl_RC" value=" add_block('simulink/Logic and Bit Operations/Logical Operator',[sys " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY7gY" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY7gZ" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlY7h0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlY7h1" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="3cpWs3" id="4GGvgnlY7h2" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlY7h3" role="3uHU7B">
+                              <node concept="Xl_RD" id="4GGvgnlY7h4" role="3uHU7w">
+                                <property role="Xl_RC" value="'" />
+                              </node>
+                              <node concept="3cpWs3" id="4GGvgnlY7h5" role="3uHU7B">
+                                <node concept="Xl_RD" id="4GGvgnlY7h6" role="3uHU7B">
+                                  <property role="Xl_RC" value="'/" />
+                                </node>
+                                <node concept="37vLTw" id="4GGvgnlY7h7" role="3uHU7w">
+                                  <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4GGvgnlY7h8" role="3uHU7w">
+                              <property role="Xl_RC" value=" ]); \n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1X3_iC" id="4GGvgnm33Lw" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="4GGvgnlY7h9" role="8Wnug">
+                        <node concept="2OqwBi" id="4GGvgnlY7ha" role="3clFbG">
+                          <node concept="37vLTw" id="4GGvgnlY7hb" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="4GGvgnlY7hc" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="4GGvgnlY7hd" role="37wK5m">
+                              <node concept="3cpWs3" id="4GGvgnlY7he" role="3uHU7B">
+                                <node concept="37vLTw" id="4GGvgnlY7hf" role="3uHU7w">
+                                  <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                </node>
+                                <node concept="Xl_RD" id="4GGvgnlY7hg" role="3uHU7B">
+                                  <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="4GGvgnlY7hh" role="3uHU7w">
+                                <property role="Xl_RC" value="', 'Name', 'release_block_gxw');\n" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlY7hi" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlY7hj" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlY7hk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlY7hl" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="3cpWs3" id="4GGvgnlY7hm" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlY7hn" role="3uHU7B">
+                              <node concept="37vLTw" id="4GGvgnlY7ho" role="3uHU7w">
+                                <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                              </node>
+                              <node concept="Xl_RD" id="4GGvgnlY7hp" role="3uHU7B">
+                                <property role="Xl_RC" value="set_param('simulinkModel/" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4GGvgnlY7hq" role="3uHU7w">
+                              <property role="Xl_RC" value="', 'Operator', 'Not');\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="4GGvgnlY7hG" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="4GGvgnlY7hH" role="3clFbw">
+                    <node concept="2GrUjf" id="4GGvgnlY7hI" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                    </node>
+                    <node concept="1mIQ4w" id="4GGvgnlY7hJ" role="2OqNvi">
+                      <node concept="chp4Y" id="4GGvgnlYgzY" role="cj9EA">
+                        <ref role="cht4Q" to="lqc6:4GGvgnlPYn$" resolve="NotActor" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="4GGvgnlY5eu" role="3cqZAp" />
                 <node concept="3clFbH" id="7C1a6DfzaO7" role="3cqZAp" />
                 <node concept="3clFbJ" id="1nhUh7MdTKV" role="3cqZAp">
                   <node concept="3clFbS" id="1nhUh7MdTKW" role="3clFbx">
@@ -3442,7 +3583,7 @@
                         <node concept="liA8E" id="1nhUh7MeO_H" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                           <node concept="Xl_RD" id="1nhUh7MeO_I" role="37wK5m">
-                            <property role="Xl_RC" value=" add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[sys " />
+                            <property role="Xl_RC" value=" add_block('simulink/Logic and Bit Operations/Logical Operator',[sys " />
                           </node>
                         </node>
                       </node>
@@ -3475,29 +3616,102 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="1nhUh7MeO_U" role="3cqZAp">
-                      <node concept="2OqwBi" id="1nhUh7MeO_V" role="3clFbG">
-                        <node concept="37vLTw" id="1nhUh7MeO_W" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                        </node>
-                        <node concept="liA8E" id="1nhUh7MeO_X" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                          <node concept="3cpWs3" id="1nhUh7MeO_Y" role="37wK5m">
-                            <node concept="3cpWs3" id="1nhUh7MeO_Z" role="3uHU7B">
-                              <node concept="37vLTw" id="1nhUh7MeOA0" role="3uHU7w">
-                                <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                    <node concept="1X3_iC" id="4GGvgnm34PD" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="1nhUh7MeO_U" role="8Wnug">
+                        <node concept="2OqwBi" id="1nhUh7MeO_V" role="3clFbG">
+                          <node concept="37vLTw" id="1nhUh7MeO_W" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                          </node>
+                          <node concept="liA8E" id="1nhUh7MeO_X" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                            <node concept="3cpWs3" id="1nhUh7MeO_Y" role="37wK5m">
+                              <node concept="3cpWs3" id="1nhUh7MeO_Z" role="3uHU7B">
+                                <node concept="37vLTw" id="1nhUh7MeOA0" role="3uHU7w">
+                                  <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                </node>
+                                <node concept="Xl_RD" id="1nhUh7MeOA1" role="3uHU7B">
+                                  <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                </node>
                               </node>
-                              <node concept="Xl_RD" id="1nhUh7MeOA1" role="3uHU7B">
-                                <property role="Xl_RC" value="set_param('simulinkModel/" />
+                              <node concept="Xl_RD" id="1nhUh7MeOA2" role="3uHU7w">
+                                <property role="Xl_RC" value="', 'Name', 'generic_event_block_gxw');\n" />
                               </node>
-                            </node>
-                            <node concept="Xl_RD" id="1nhUh7MeOA2" role="3uHU7w">
-                              <property role="Xl_RC" value="', 'FunctionName', 'generic_event_block_gxw');\n" />
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="4GGvgnlXmSp" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlXmSq" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlXmSr" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlXmSs" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="3cpWs3" id="4GGvgnlXmSt" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlXmSu" role="3uHU7B">
+                              <node concept="37vLTw" id="4GGvgnlXmSv" role="3uHU7w">
+                                <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                              </node>
+                              <node concept="Xl_RD" id="4GGvgnlXmSw" role="3uHU7B">
+                                <property role="Xl_RC" value="set_param('simulinkModel/" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4GGvgnlXmSx" role="3uHU7w">
+                              <property role="Xl_RC" value="', 'Operator', 'And');\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4GGvgnlXpc_" role="3cqZAp">
+                      <node concept="2OqwBi" id="4GGvgnlXpcA" role="3clFbG">
+                        <node concept="37vLTw" id="4GGvgnlXpcB" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                        </node>
+                        <node concept="liA8E" id="4GGvgnlXpcC" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                          <node concept="3cpWs3" id="4GGvgnlXpcD" role="37wK5m">
+                            <node concept="3cpWs3" id="4GGvgnlXtsM" role="3uHU7B">
+                              <node concept="3cpWs3" id="4GGvgnlXqJs" role="3uHU7B">
+                                <node concept="Xl_RD" id="4GGvgnlXsic" role="3uHU7w">
+                                  <property role="Xl_RC" value="', 'Inputs', '" />
+                                </node>
+                                <node concept="3cpWs3" id="4GGvgnlXpcE" role="3uHU7B">
+                                  <node concept="37vLTw" id="4GGvgnlXpcF" role="3uHU7w">
+                                    <ref role="3cqZAo" node="3q$2Sle5V_L" resolve="variableName" />
+                                  </node>
+                                  <node concept="Xl_RD" id="4GGvgnlXpcG" role="3uHU7B">
+                                    <property role="Xl_RC" value="set_param('simulinkModel/" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2YIFZM" id="4GGvgnlXNj$" role="3uHU7w">
+                                <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                <node concept="2OqwBi" id="4GGvgnlXXVp" role="37wK5m">
+                                  <node concept="1PxgMI" id="4GGvgnlXUct" role="2Oq$k0">
+                                    <ref role="1m5ApE" to="lqc6:7hpOFpHsdSN" resolve="EventActor" />
+                                    <node concept="2GrUjf" id="4GGvgnlXP3j" role="1m5AlR">
+                                      <ref role="2Gs0qQ" node="3q$2Sle5AKM" resolve="item" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrcHB" id="4GGvgnlY01i" role="2OqNvi">
+                                    <ref role="3TsBF5" to="lqc6:4GGvgnlPPma" resolve="inptPort" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4GGvgnlXpcH" role="3uHU7w">
+                              <property role="Xl_RC" value="');\n" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="4GGvgnlXmur" role="3cqZAp" />
                     <node concept="3clFbH" id="1nhUh7MeOA3" role="3cqZAp" />
                     <node concept="3clFbH" id="1nhUh7MeOA4" role="3cqZAp" />
                   </node>
@@ -4369,12 +4583,12 @@
           <node concept="3cpWsn" id="7C$xkK6Y4fz" role="3cpWs9">
             <property role="TrG5h" value="outputChecker" />
             <node concept="3Tqbb2" id="7C$xkK6Y4fv" role="1tU5fm">
-              <ref role="ehGHo" to="sgle:7C$xkK6QkIe" resolve="OutputCheckerSimulink" />
+              <ref role="ehGHo" to="sgle:obzvELmgLn" resolve="SimulinkResultDisplayer" />
             </node>
             <node concept="2ShNRf" id="7C$xkK6Y4r8" role="33vP2m">
               <node concept="3zrR0B" id="7C$xkK6Y6qr" role="2ShVmc">
                 <node concept="3Tqbb2" id="7C$xkK6Y6qt" role="3zrR0E">
-                  <ref role="ehGHo" to="sgle:7C$xkK6QkIe" resolve="OutputCheckerSimulink" />
+                  <ref role="ehGHo" to="sgle:obzvELmgLn" resolve="SimulinkResultDisplayer" />
                 </node>
               </node>
             </node>
@@ -4417,8 +4631,8 @@
               <node concept="37vLTw" id="45mh0CsZwq0" role="2Oq$k0">
                 <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
               </node>
-              <node concept="3TrEf2" id="45mh0CsZwHf" role="2OqNvi">
-                <ref role="3Tt5mk" to="sgle:45mh0CsZ54w" resolve="simulinkResult" />
+              <node concept="3TrEf2" id="obzvELnw$7" role="2OqNvi">
+                <ref role="3Tt5mk" to="sgle:obzvELmu0j" resolve="simulinkResult" />
               </node>
             </node>
             <node concept="37vLTw" id="45mh0CsZy79" role="37vLTx">
@@ -4506,8 +4720,8 @@
                             <node concept="37vLTw" id="45mh0CsZMGk" role="2Oq$k0">
                               <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
                             </node>
-                            <node concept="3Tsc0h" id="45mh0CsZNp2" role="2OqNvi">
-                              <ref role="3TtcxE" to="sgle:45mh0CsZroe" resolve="inputCells" />
+                            <node concept="3Tsc0h" id="obzvELmC30" role="2OqNvi">
+                              <ref role="3TtcxE" to="sgle:obzvELmu0k" resolve="inputCells" />
                             </node>
                           </node>
                           <node concept="TSZUe" id="45mh0CsZTaW" role="2OqNvi">

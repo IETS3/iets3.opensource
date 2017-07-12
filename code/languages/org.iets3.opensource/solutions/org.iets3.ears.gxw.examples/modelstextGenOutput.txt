@@ -1,0 +1,14 @@
+##  When isactivated, the automatic door controller shall open
+[] (isactivated -> dooropen)
+
+##  When isactivated, the automatic door controller shall not open and not close and start
+[] (isactivated -> ((!dooropen && !doorclose) && timerstart))
+
+##  When expires, the automatic door controller shall close
+[] (expires -> doorclose)
+
+##  When isactivated, the automatic door controller shall not open and not close
+[] (isactivated -> (!dooropen && !doorclose))
+
+INPUT isactivated, isactivated, isactivated, expires
+OUTPUT timerstart, dooropen, doorclose
