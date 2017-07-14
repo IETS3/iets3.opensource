@@ -1971,5 +1971,57 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7cphKbKnKSa">
+    <property role="3GE5qa" value="record.group" />
+    <ref role="1XX52x" to="yv47:7cphKbKnKRF" resolve="GroupType" />
+    <node concept="3EZMnI" id="7cphKbKnKSc" role="2wV5jI">
+      <node concept="2iRfu4" id="7cphKbKnKSd" role="2iSdaV" />
+      <node concept="3F0ifn" id="7cphKbKnKSi" role="3EZMnx">
+        <property role="3F0ifm" value="group" />
+        <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+      </node>
+      <node concept="3F0ifn" id="7cphKbKnKSo" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="7cphKbKnRm2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7cphKbKnRm7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cphKbKnKSw" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:7cphKbKnKRG" resolve="keyType" />
+      </node>
+      <node concept="3F0ifn" id="7cphKbKnKSE" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="7cphKbKnRmf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cphKbKnKSQ" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:7cphKbKnKRI" resolve="memberType" />
+      </node>
+      <node concept="3F0ifn" id="7cphKbKnKT4" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="7cphKbKnRm0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbKssKm">
+    <property role="3GE5qa" value="record.group" />
+    <ref role="1XX52x" to="yv47:7cphKbKssrq" resolve="GroupKeyTarget" />
+    <node concept="3F0ifn" id="7cphKbKssKo" role="2wV5jI">
+      <property role="3F0ifm" value="key" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbKuFZj">
+    <property role="3GE5qa" value="record.group" />
+    <ref role="1XX52x" to="yv47:7cphKbKuFYS" resolve="GroupMembersTarget" />
+    <node concept="3F0ifn" id="7cphKbKuFZl" role="2wV5jI">
+      <property role="3F0ifm" value="members" />
+    </node>
+  </node>
 </model>
 

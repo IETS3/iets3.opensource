@@ -249,9 +249,6 @@
     <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
     </node>
-    <node concept="PrWs8" id="7SZA7UeV1IH" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUm1me">
     <property role="3GE5qa" value="collection" />

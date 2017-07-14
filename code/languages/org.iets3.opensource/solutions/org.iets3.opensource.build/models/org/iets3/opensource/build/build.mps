@@ -818,12 +818,6 @@
             <ref role="3bR37D" node="5FYd8xZZj2s" resolve="org.iets3.core.expr.path" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6HHp2WnfBsw" role="3bR37C">
-          <node concept="3bR9La" id="6HHp2WnfBsx" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5VEHrQcW$Sd" role="3bR37C">
           <node concept="3bR9La" id="5VEHrQcW$Se" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -875,6 +869,12 @@
           <node concept="3bR9La" id="1mXB1PNHK4P" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7cphKbL6hTK" role="3bR37C">
+          <node concept="3bR9La" id="7cphKbL6hTL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
           </node>
         </node>
       </node>
