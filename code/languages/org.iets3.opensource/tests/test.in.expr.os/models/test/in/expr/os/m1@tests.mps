@@ -383,6 +383,12 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="8293738266739942474" name="org.iets3.core.expr.simpleTypes.structure.StringInterpolationExpr" flags="ng" index="2206d8">
+        <child id="8293738266739942475" name="text" index="2206d9" />
+      </concept>
+      <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw">
+        <child id="8293738266739943651" name="expr" index="2206Zx" />
+      </concept>
       <concept id="7971844778467001950" name="org.iets3.core.expr.simpleTypes.structure.OtherwiseLiteral" flags="ng" index="2fHqz8" />
       <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
         <property id="1330041117646892934" name="prec" index="2gteVv" />
@@ -8780,6 +8786,39 @@
           </node>
         </node>
         <node concept="_ixoA" id="1EIbarKbUZU" role="_iOnB" />
+        <node concept="2zPypq" id="7cphKbL8wvv" role="_iOnB">
+          <property role="TrG5h" value="i1" />
+          <node concept="2206d8" id="7cphKbL8wyz" role="2zPyp_">
+            <node concept="19SGf9" id="7cphKbL8wy_" role="2206d9">
+              <node concept="19SUe$" id="7cphKbL8wyA" role="19SJt6">
+                <property role="19SUeA" value="Here" />
+              </node>
+              <node concept="2206Zw" id="7cphKbL9fti" role="19SJt6">
+                <node concept="_emDc" id="7cphKbL9ftA" role="2206Zx">
+                  <ref role="_emDf" node="7k$Bvd3eTmz" resolve="a" />
+                </node>
+              </node>
+              <node concept="19SUe$" id="7cphKbL9ftl" role="19SJt6">
+                <property role="19SUeA" value="X" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7cphKbL9ftJ" role="_iOnB" />
+        <node concept="_fkuM" id="7cphKbL9fza" role="_iOnB">
+          <property role="TrG5h" value="interpolation" />
+          <node concept="_fkuZ" id="7cphKbL9f_T" role="_fkp5">
+            <node concept="_fku$" id="7cphKbL9f_U" role="_fkur" />
+            <node concept="_emDc" id="7cphKbL9fAa" role="_fkuY">
+              <ref role="_emDf" node="7cphKbL8wvv" resolve="i1" />
+            </node>
+            <node concept="30bdrP" id="7cphKbL9fAj" role="_fkuS">
+              <property role="30bdrQ" value="Here Hallo X" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="7cphKbL8wg4" role="_iOnB" />
+        <node concept="_ixoA" id="7cphKbL8wij" role="_iOnB" />
         <node concept="_ixoA" id="1EIbarKbV0_" role="_iOnB" />
         <node concept="7CXmI" id="1EIbarKa15x" role="lGtFl">
           <node concept="7OXhh" id="1EIbarKa15y" role="7EUXB" />

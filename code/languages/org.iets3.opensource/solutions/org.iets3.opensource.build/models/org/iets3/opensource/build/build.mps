@@ -1497,6 +1497,12 @@
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7cphKbLavX5" role="3bR37C">
+          <node concept="3bR9La" id="7cphKbLavX6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6styTjV$jM1" role="2G$12L">
         <property role="BnDLt" value="true" />
