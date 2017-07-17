@@ -60,6 +60,7 @@
       <concept id="3473224453637651916" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform_PlaceInCellHolder" flags="ng" index="CtIbL">
         <property id="3473224453637651917" name="placeInCell" index="CtIbK" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
@@ -115,6 +116,7 @@
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -266,6 +268,7 @@
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
@@ -2021,6 +2024,66 @@
     <ref role="1XX52x" to="yv47:7cphKbKuFYS" resolve="GroupMembersTarget" />
     <node concept="3F0ifn" id="7cphKbKuFZl" role="2wV5jI">
       <property role="3F0ifm" value="members" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbLawOd">
+    <property role="3GE5qa" value="record.project" />
+    <ref role="1XX52x" to="yv47:7cphKbLawNf" resolve="InlineRecordType" />
+    <node concept="3EZMnI" id="7cphKbLhAKV" role="2wV5jI">
+      <node concept="2iRfu4" id="7cphKbLhAKW" role="2iSdaV" />
+      <node concept="3F0ifn" id="7cphKbLawOi" role="3EZMnx">
+        <property role="3F0ifm" value="inlinerecord" />
+      </node>
+      <node concept="3F2HdR" id="7cphKbLjseb" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:xu7xcKioz5" resolve="members" />
+        <node concept="2iRfu4" id="7cphKbLjsed" role="2czzBx" />
+        <node concept="3vyZuw" id="7cphKbLjseh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbLawP9">
+    <property role="3GE5qa" value="record.project" />
+    <ref role="1XX52x" to="yv47:7cphKbLawOC" resolve="ProjectMember" />
+    <node concept="3EZMnI" id="7cphKbLawPk" role="2wV5jI">
+      <node concept="2iRfu4" id="7cphKbLawPl" role="2iSdaV" />
+      <node concept="1kIj98" id="7cphKbLf0BF" role="3EZMnx">
+        <property role="3g2DhO" value="true" />
+        <node concept="3F0A7n" id="7cphKbLawPh" role="1kIj9b">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7cphKbLawPt" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="7cphKbLawP_" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:7cphKbLawOI" resolve="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbLawQ5">
+    <property role="3GE5qa" value="record.project" />
+    <ref role="1XX52x" to="yv47:7cphKbLawO$" resolve="ProjectOp" />
+    <node concept="3EZMnI" id="7cphKbLawQd" role="2wV5jI">
+      <node concept="2iRfu4" id="7cphKbLawQe" role="2iSdaV" />
+      <node concept="3F0ifn" id="7cphKbLawQa" role="3EZMnx">
+        <property role="3F0ifm" value="project" />
+      </node>
+      <node concept="3F2HdR" id="7cphKbLawQm" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:7cphKbLawPE" resolve="members" />
+        <node concept="2EHx9g" id="7cphKbLawQs" role="2czzBx" />
+        <node concept="3vyZuw" id="7cphKbLawQv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cphKbLg8AO">
+    <property role="3GE5qa" value="record.project" />
+    <ref role="1XX52x" to="yv47:7cphKbLg8An" resolve="ProjectIt" />
+    <node concept="3F0ifn" id="7cphKbLg8AT" role="2wV5jI">
+      <property role="3F0ifm" value="it" />
     </node>
   </node>
 </model>

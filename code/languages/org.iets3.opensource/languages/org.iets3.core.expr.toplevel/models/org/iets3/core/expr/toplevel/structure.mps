@@ -780,5 +780,57 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7cphKbLawNf">
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="InlineRecordType" />
+    <property role="EcuMT" value="8293738266741050575" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="7cphKbLjrDZ" role="PzmwI">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
+    </node>
+    <node concept="PrWs8" id="7cphKbLnkYR" role="PzmwI">
+      <ref role="PrY4T" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLawO$">
+    <property role="EcuMT" value="8293738266741050660" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectOp" />
+    <property role="34LRSv" value="project" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7cphKbLawPE" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266741050730" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7cphKbLawOC" resolve="ProjectMember" />
+    </node>
+    <node concept="PrWs8" id="7cphKbLcOWp" role="PzmwI">
+      <ref role="PrY4T" to="700h:6zmBjqUivxU" resolve="ICollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLawOC">
+    <property role="EcuMT" value="8293738266741050664" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectMember" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbLawOG" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7cphKbLawOI" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266741050670" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLg8An">
+    <property role="EcuMT" value="8293738266742524311" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectIt" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 
