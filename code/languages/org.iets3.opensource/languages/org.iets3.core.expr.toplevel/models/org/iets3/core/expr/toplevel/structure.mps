@@ -785,9 +785,6 @@
     <property role="TrG5h" value="InlineRecordType" />
     <property role="EcuMT" value="8293738266741050575" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    <node concept="PrWs8" id="7cphKbLjrDZ" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
-    </node>
     <node concept="PrWs8" id="7cphKbLnkYR" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
@@ -831,6 +828,20 @@
     <property role="TrG5h" value="ProjectIt" />
     <property role="34LRSv" value="it" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7cphKbLtLQW">
+    <property role="EcuMT" value="8293738266746101180" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="InlineRecordMemberAccess" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbLtLR6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyi" id="7cphKbLtLR8" role="1TKVEl">
+      <property role="IQ2nx" value="8293738266746101192" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
