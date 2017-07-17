@@ -726,5 +726,27 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ptnK4ii9fS">
+    <property role="3GE5qa" value="collection.string" />
+    <property role="TrG5h" value="StringJoinOp" />
+    <property role="34LRSv" value="join" />
+    <property role="EcuMT" value="5070313213695398904" />
+    <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4irG30">
+    <property role="3GE5qa" value="collection.string" />
+    <property role="TrG5h" value="StringTerminateOp" />
+    <property role="34LRSv" value="terminate" />
+    <property role="EcuMT" value="5070313213697900736" />
+    <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4iu3mt">
+    <property role="EcuMT" value="5070313213698520477" />
+    <property role="3GE5qa" value="collection.string" />
+    <property role="TrG5h" value="AbstractStringListJoiner" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
+  </node>
 </model>
 

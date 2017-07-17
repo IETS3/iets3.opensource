@@ -837,10 +837,8 @@
     <node concept="PrWs8" id="7cphKbLtLR6" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
-    <node concept="1TJgyi" id="7cphKbLtLR8" role="1TKVEl">
-      <property role="IQ2nx" value="8293738266746101192" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="4ptnK4ibnLa" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
 </model>

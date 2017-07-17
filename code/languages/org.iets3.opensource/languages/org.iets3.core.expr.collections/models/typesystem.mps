@@ -3935,5 +3935,113 @@
       <ref role="1YaFvo" to="700h:Lrty7CKcZT" resolve="SimpleSortOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4ptnK4ii9gu">
+    <property role="TrG5h" value="typeof_AbstractStringListJoiner" />
+    <property role="3GE5qa" value="collection.string" />
+    <node concept="3clFbS" id="4ptnK4ii9gv" role="18ibNy">
+      <node concept="nvevp" id="4ptnK4ii9yr" role="3cqZAp">
+        <node concept="3clFbS" id="4ptnK4ii9yt" role="nvhr_">
+          <node concept="3clFbJ" id="4ptnK4iiaiO" role="3cqZAp">
+            <node concept="3clFbS" id="4ptnK4iiaiQ" role="3clFbx">
+              <node concept="1Z5TYs" id="4ptnK4ii9gR" role="3cqZAp">
+                <node concept="mw_s8" id="4ptnK4ii9gS" role="1ZfhK$">
+                  <node concept="1Z2H0r" id="4ptnK4ii9gT" role="mwGJk">
+                    <node concept="1YBJjd" id="4ptnK4ii9i1" role="1Z2MuG">
+                      <ref role="1YBMHb" node="4ptnK4ii9gx" resolve="joiner" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="mw_s8" id="4ptnK4ii9gV" role="1ZfhKB">
+                  <node concept="2YIFZM" id="4ptnK4ii9ka" role="mwGJk">
+                    <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+                    <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="4ptnK4iiaIW" role="9aQIa">
+              <node concept="3clFbS" id="4ptnK4iiaIX" role="9aQI4">
+                <node concept="2MkqsV" id="4ptnK4iiaJK" role="3cqZAp">
+                  <node concept="Xl_RD" id="4ptnK4iiaJQ" role="2MkJ7o">
+                    <property role="Xl_RC" value="can only be used with collections of strings" />
+                  </node>
+                  <node concept="1YBJjd" id="4ptnK4iiaKm" role="2OEOjV">
+                    <ref role="1YBMHb" node="4ptnK4ii9gx" resolve="joiner" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="4ptnK4iqUnH" role="3clFbw">
+              <node concept="2OqwBi" id="4ptnK4iqTRh" role="3uHU7B">
+                <node concept="2X3wrD" id="4ptnK4iqTJg" role="2Oq$k0">
+                  <ref role="2X3Bk0" node="4ptnK4ii9yx" resolve="ctxType" />
+                </node>
+                <node concept="1mIQ4w" id="4ptnK4iqU0G" role="2OqNvi">
+                  <node concept="chp4Y" id="4ptnK4iqU2v" role="cj9EA">
+                    <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2YIFZM" id="4ptnK4iiamx" role="3uHU7w">
+                <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                <ref role="37wK5l" to="oq0c:4ptnK4ii8We" resolve="isStringType" />
+                <node concept="2OqwBi" id="4ptnK4iqUKN" role="37wK5m">
+                  <node concept="1PxgMI" id="4ptnK4iiavl" role="2Oq$k0">
+                    <node concept="chp4Y" id="4ptnK4iqUxV" role="3oSUPX">
+                      <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                    </node>
+                    <node concept="2X3wrD" id="4ptnK4iian3" role="1m5AlR">
+                      <ref role="2X3Bk0" node="4ptnK4ii9yx" resolve="ctxType" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="4ptnK4iqV13" role="2OqNvi">
+                    <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="4ptnK4ii9zG" role="nvjzm">
+          <node concept="2OqwBi" id="4ptnK4ii9IL" role="1Z2MuG">
+            <node concept="1YBJjd" id="4ptnK4ii9$8" role="2Oq$k0">
+              <ref role="1YBMHb" node="4ptnK4ii9gx" resolve="joiner" />
+            </node>
+            <node concept="2qgKlT" id="4ptnK4ii9Y2" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="4ptnK4ii9yx" role="2X0Ygz">
+          <property role="TrG5h" value="ctxType" />
+          <node concept="2jxLKc" id="4ptnK4ii9yy" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="1ZobV4" id="4ptnK4ipg9q" role="3cqZAp">
+        <node concept="mw_s8" id="4ptnK4ipgg1" role="1ZfhKB">
+          <node concept="2YIFZM" id="4ptnK4ipgh$" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4ptnK4ipg9t" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4ptnK4ipffW" role="mwGJk">
+            <node concept="2OqwBi" id="4ptnK4ipfyq" role="1Z2MuG">
+              <node concept="1YBJjd" id="4ptnK4ipfo0" role="2Oq$k0">
+                <ref role="1YBMHb" node="4ptnK4ii9gx" resolve="joiner" />
+              </node>
+              <node concept="3TrEf2" id="4ptnK4ipfP4" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4ptnK4ii9gx" role="1YuTPh">
+      <property role="TrG5h" value="joiner" />
+      <ref role="1YaFvo" to="700h:4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
+    </node>
+  </node>
 </model>
 

@@ -3465,6 +3465,42 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4ptnK4ii96k" role="jymVt" />
+    <node concept="2YIFZL" id="4ptnK4ii8We" role="jymVt">
+      <property role="TrG5h" value="isStringType" />
+      <node concept="10P_77" id="4ptnK4ii8Wf" role="3clF45" />
+      <node concept="3Tm1VV" id="4ptnK4ii8Wg" role="1B3o_S" />
+      <node concept="3clFbS" id="4ptnK4ii8Wh" role="3clF47">
+        <node concept="3clFbF" id="4ptnK4ii8Wi" role="3cqZAp">
+          <node concept="2OqwBi" id="4ptnK4ii8Wj" role="3clFbG">
+            <node concept="2OqwBi" id="4ptnK4ii8Wk" role="2Oq$k0">
+              <node concept="2YIFZM" id="4ptnK4ii8Wl" role="2Oq$k0">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+              </node>
+              <node concept="liA8E" id="4ptnK4ii8Wm" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4ptnK4ii8Wn" role="2OqNvi">
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <node concept="37vLTw" id="4ptnK4ii8Wo" role="37wK5m">
+                <ref role="3cqZAo" node="4ptnK4ii8Wq" resolve="type" />
+              </node>
+              <node concept="1rXfSq" id="4ptnK4ii8Wp" role="37wK5m">
+                <ref role="37wK5l" node="2Qbt$1tTQdA" resolve="createStringType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4ptnK4ii8Wq" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="4ptnK4ii8Wr" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="2Qbt$1tZaIG" role="jymVt" />
     <node concept="2YIFZL" id="2Qbt$1tU33e" role="jymVt">
       <property role="TrG5h" value="isIntegerType" />
