@@ -2,8 +2,8 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
@@ -726,6 +726,14 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ptnK4iu3mt">
+    <property role="EcuMT" value="5070313213698520477" />
+    <property role="3GE5qa" value="collection.string" />
+    <property role="TrG5h" value="AbstractStringListJoiner" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
+  </node>
   <node concept="1TIwiD" id="4ptnK4ii9fS">
     <property role="3GE5qa" value="collection.string" />
     <property role="TrG5h" value="StringJoinOp" />
@@ -740,13 +748,12 @@
     <property role="EcuMT" value="5070313213697900736" />
     <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
   </node>
-  <node concept="1TIwiD" id="4ptnK4iu3mt">
-    <property role="EcuMT" value="5070313213698520477" />
-    <property role="3GE5qa" value="collection.string" />
-    <property role="TrG5h" value="AbstractStringListJoiner" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
+  <node concept="1TIwiD" id="3kEBq3lv4rL">
+    <property role="EcuMT" value="3831047747134047985" />
+    <property role="3GE5qa" value="set" />
+    <property role="TrG5h" value="SetRemoveOp" />
+    <property role="34LRSv" value="remove" />
+    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
   </node>
 </model>
 
