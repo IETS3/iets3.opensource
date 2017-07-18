@@ -785,8 +785,12 @@
     <property role="TrG5h" value="InlineRecordType" />
     <property role="EcuMT" value="8293738266741050575" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    <node concept="PrWs8" id="7cphKbLnkYR" role="PzmwI">
-      <ref role="PrY4T" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
+    <node concept="1TJgyj" id="4ptnK4iZ$op" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213707306521" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cphKbLawO$">
