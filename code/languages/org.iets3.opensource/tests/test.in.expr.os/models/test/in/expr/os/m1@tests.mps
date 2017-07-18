@@ -489,6 +489,17 @@
       <concept id="4790956042240790396" name="org.iets3.core.expr.toplevel.structure.FunRef" flags="ng" index="1aeIDv" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="5070313213710414386" name="org.iets3.core.expr.toplevel.structure.RecordTypeAdapter" flags="ng" index="1lseON">
+        <child id="5070313213710414396" name="type" index="1lseOX" />
+      </concept>
+      <concept id="5070313213710413779" name="org.iets3.core.expr.toplevel.structure.BuilderExpression" flags="ng" index="1lsf3i">
+        <child id="5070313213710413789" name="adapted" index="1lsf3s" />
+        <child id="5070313213710413801" name="elements" index="1lsf3C" />
+      </concept>
+      <concept id="5070313213710413804" name="org.iets3.core.expr.toplevel.structure.FieldSetter" flags="ng" index="1lsf3H">
+        <reference id="5070313213710413814" name="field" index="1lsf3R" />
+        <child id="5070313213710413816" name="value" index="1lsf3T" />
+      </concept>
       <concept id="820361861852634100" name="org.iets3.core.expr.toplevel.structure.OldValueExpr" flags="ng" index="1ooT$K" />
       <concept id="820361861853869169" name="org.iets3.core.expr.toplevel.structure.OldMemberRef" flags="ng" index="1osnqP">
         <reference id="820361861853869175" name="member" index="1osnqN" />
@@ -8192,6 +8203,135 @@
           </node>
         </node>
         <node concept="_ixoA" id="6HHp2WmXx3u" role="_iOnB" />
+        <node concept="2zPypq" id="4ptnK4jeq2h" role="_iOnB">
+          <property role="TrG5h" value="markus" />
+          <node concept="1lsf3i" id="4ptnK4jgSjQ" role="2zPyp_">
+            <node concept="1lseON" id="4ptnK4jgSk3" role="1lsf3s">
+              <node concept="2Ss9cW" id="4ptnK4jgSk1" role="1lseOX">
+                <ref role="2Ss9cX" node="7D7uZV2fCPA" resolve="Person" />
+              </node>
+            </node>
+            <node concept="1lsf3H" id="4ptnK4jgSk9" role="1lsf3C">
+              <ref role="1lsf3R" node="7D7uZV2g7Zp" resolve="name" />
+              <node concept="30bdrP" id="4ptnK4jgSl1" role="1lsf3T">
+                <property role="30bdrQ" value="Voelter" />
+              </node>
+            </node>
+            <node concept="1lsf3H" id="4ptnK4jgSkf" role="1lsf3C">
+              <ref role="1lsf3R" node="7D7uZV2g7ZP" resolve="firstName" />
+              <node concept="30bdrP" id="4ptnK4jia7d" role="1lsf3T">
+                <property role="30bdrQ" value="Markus" />
+              </node>
+            </node>
+            <node concept="1lsf3H" id="4ptnK4jjYiK" role="1lsf3C">
+              <ref role="1lsf3R" node="7D7uZV2o4PH" resolve="middleInitial" />
+              <node concept="30bdrP" id="4ptnK4jjYsj" role="1lsf3T">
+                <property role="30bdrQ" value="M" />
+              </node>
+            </node>
+            <node concept="1lsf3H" id="4ptnK4jgSkD" role="1lsf3C">
+              <ref role="1lsf3R" node="7D7uZV2g80T" resolve="addresses" />
+              <node concept="3iBYfx" id="4ptnK4jia7m" role="1lsf3T">
+                <node concept="1lsf3i" id="4ptnK4jia9Q" role="3iBYfI">
+                  <node concept="1lseON" id="4ptnK4jiaai" role="1lsf3s">
+                    <node concept="2Ss9cW" id="4ptnK4jiaag" role="1lseOX">
+                      <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
+                    </node>
+                  </node>
+                  <node concept="1lsf3H" id="4ptnK4jiaao" role="1lsf3C">
+                    <ref role="1lsf3R" node="7D7uZV2g80t" resolve="zip" />
+                    <node concept="30bdrP" id="4ptnK4jiaaV" role="1lsf3T">
+                      <property role="30bdrQ" value="70565" />
+                    </node>
+                  </node>
+                  <node concept="1lsf3H" id="4ptnK4jiaau" role="1lsf3C">
+                    <ref role="1lsf3R" node="7D7uZV2rwI8" resolve="city" />
+                    <node concept="30bdrP" id="4ptnK4jiabe" role="1lsf3T">
+                      <property role="30bdrQ" value="Stuttgart" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1lsf3i" id="4ptnK4jia7B" role="3iBYfI">
+                  <node concept="1lseON" id="4ptnK4jia7N" role="1lsf3s">
+                    <node concept="2Ss9cW" id="4ptnK4jia7L" role="1lseOX">
+                      <ref role="2Ss9cX" node="7D7uZV2g80s" resolve="Address" />
+                    </node>
+                  </node>
+                  <node concept="1lsf3H" id="4ptnK4jia7T" role="1lsf3C">
+                    <ref role="1lsf3R" node="7D7uZV2g80t" resolve="zip" />
+                    <node concept="30bdrP" id="4ptnK4jia8q" role="1lsf3T">
+                      <property role="30bdrQ" value="70327" />
+                    </node>
+                  </node>
+                  <node concept="1lsf3H" id="4ptnK4jia7Z" role="1lsf3C">
+                    <ref role="1lsf3R" node="7D7uZV2rwI8" resolve="city" />
+                    <node concept="30bdrP" id="4ptnK4jia8E" role="1lsf3T">
+                      <property role="30bdrQ" value="Stuttgart" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="4ptnK4jepXQ" role="_iOnB" />
+        <node concept="_fkuM" id="4ptnK4jjDUQ" role="_iOnB">
+          <property role="TrG5h" value="Builder" />
+          <node concept="_fkuZ" id="4ptnK4jjDXv" role="_fkp5">
+            <node concept="_fku$" id="4ptnK4jjDXw" role="_fkur" />
+            <node concept="1QScDb" id="4ptnK4jjDXU" role="_fkuY">
+              <node concept="3o_JK" id="4ptnK4jjDYv" role="1QScD9">
+                <ref role="3o_JH" node="7D7uZV2g7Zp" resolve="name" />
+              </node>
+              <node concept="_emDc" id="4ptnK4jjDXL" role="30czhm">
+                <ref role="_emDf" node="4ptnK4jeq2h" resolve="markus" />
+              </node>
+            </node>
+            <node concept="30bdrP" id="4ptnK4jjDYW" role="_fkuS">
+              <property role="30bdrQ" value="Voelter" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="4ptnK4jjWtd" role="_fkp5">
+            <node concept="_fku$" id="4ptnK4jjWte" role="_fkur" />
+            <node concept="1QScDb" id="4ptnK4jjWGD" role="_fkuY">
+              <node concept="3iB8M5" id="4ptnK4jjWOC" role="1QScD9" />
+              <node concept="1QScDb" id="4ptnK4jjWtK" role="30czhm">
+                <node concept="3o_JK" id="4ptnK4jjW_0" role="1QScD9">
+                  <ref role="3o_JH" node="7D7uZV2g80T" resolve="addresses" />
+                </node>
+                <node concept="_emDc" id="4ptnK4jjWtB" role="30czhm">
+                  <ref role="_emDf" node="4ptnK4jeq2h" resolve="markus" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="4ptnK4jjWWz" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="4ptnK4jjX7l" role="_fkp5">
+            <node concept="_fku$" id="4ptnK4jjX7m" role="_fkur" />
+            <node concept="1QScDb" id="4ptnK4jjXFC" role="_fkuY">
+              <node concept="3o_JK" id="4ptnK4jjXP4" role="1QScD9">
+                <ref role="3o_JH" node="7D7uZV2g80t" resolve="zip" />
+              </node>
+              <node concept="1QScDb" id="4ptnK4jjXoW" role="30czhm">
+                <node concept="3iB7TU" id="4ptnK4jjXyr" role="1QScD9" />
+                <node concept="1QScDb" id="4ptnK4jjX81" role="30czhm">
+                  <node concept="3o_JK" id="4ptnK4jjXgi" role="1QScD9">
+                    <ref role="3o_JH" node="7D7uZV2g80T" resolve="addresses" />
+                  </node>
+                  <node concept="_emDc" id="4ptnK4jjX7S" role="30czhm">
+                    <ref role="_emDf" node="4ptnK4jeq2h" resolve="markus" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="4ptnK4jjXXZ" role="_fkuS">
+              <property role="30bdrQ" value="70565" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="4ptnK4jeq01" role="_iOnB" />
         <node concept="7CXmI" id="6HHp2WmYwnc" role="lGtFl">
           <node concept="7OXhh" id="6HHp2WmYwne" role="7EUXB" />
         </node>

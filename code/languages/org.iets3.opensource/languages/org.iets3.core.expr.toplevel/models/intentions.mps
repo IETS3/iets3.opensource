@@ -806,5 +806,35 @@
       <property role="1SWRpm" value="EXPRESSIONS" />
     </node>
   </node>
+  <node concept="2S6QgY" id="4ptnK4jbIxp">
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="addSetterForMandatorFields" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="yv47:4ptnK4jbqZj" resolve="BuilderExpression" />
+    <node concept="2S6ZIM" id="4ptnK4jbIxq" role="2ZfVej">
+      <node concept="3clFbS" id="4ptnK4jbIxr" role="2VODD2">
+        <node concept="3clFbF" id="4ptnK4jbJ0p" role="3cqZAp">
+          <node concept="Xl_RD" id="4ptnK4jbJ0o" role="3clFbG">
+            <property role="Xl_RC" value="Add Setters for all mandatory Fields" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4ptnK4jbIxs" role="2ZfgGD">
+      <node concept="3clFbS" id="4ptnK4jbIxt" role="2VODD2">
+        <node concept="3clFbF" id="4ptnK4jeyVW" role="3cqZAp">
+          <node concept="2OqwBi" id="4ptnK4jeze7" role="3clFbG">
+            <node concept="2Sf5sV" id="4ptnK4jeyVU" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4ptnK4jezwx" role="2OqNvi">
+              <ref role="37wK5l" to="nu60:4ptnK4jexBh" resolve="addMissingSetters" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="4ptnK4jbJRG" role="lGtFl">
+      <property role="1SWRpm" value="BUILDER" />
+    </node>
+  </node>
 </model>
 

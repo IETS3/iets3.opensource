@@ -845,5 +845,75 @@
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZj">
+    <property role="EcuMT" value="5070313213710413779" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderExpression" />
+    <property role="34LRSv" value="build" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4ptnK4jbqZt" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413789" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="adapted" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4ptnK4jbr8C" resolve="BuilderAdapter" />
+    </node>
+    <node concept="1TJgyj" id="4ptnK4jbqZD" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413801" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4ptnK4jbqZv" resolve="BuilderElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZv">
+    <property role="EcuMT" value="5070313213710413791" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZG">
+    <property role="EcuMT" value="5070313213710413804" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="FieldSetter" />
+    <ref role="1TJDcQ" node="4ptnK4jbqZv" resolve="BuilderElement" />
+    <node concept="1TJgyj" id="4ptnK4jbqZQ" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413814" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4ptnK4jbqZS" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413816" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbr8C">
+    <property role="EcuMT" value="5070313213710414376" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderAdapter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbr8M">
+    <property role="EcuMT" value="5070313213710414386" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="RecordTypeAdapter" />
+    <ref role="1TJDcQ" node="4ptnK4jbr8C" resolve="BuilderAdapter" />
+    <node concept="1TJgyj" id="4ptnK4jbr8W" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710414396" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+    </node>
+  </node>
 </model>
 
