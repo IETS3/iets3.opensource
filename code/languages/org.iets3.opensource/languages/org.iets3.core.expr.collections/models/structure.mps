@@ -113,9 +113,6 @@
       <property role="IQ2ns" value="7554398283339759320" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="7D7uZV2ptAR" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
-    </node>
     <node concept="PrWs8" id="21vB0Vz0ucl" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
