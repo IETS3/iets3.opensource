@@ -3226,5 +3226,21 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="4ptnK4jALhw">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7Jd" resolve="GenericErrorType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALi0">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7JG" resolve="SpecificErrorType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALji">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7Ek" resolve="SuccessType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALk$">
+    <property role="3GE5qa" value="validity" />
+    <ref role="aqKnT" to="hm2y:78hTg1zmOHv" resolve="ValidityType" />
+  </node>
 </model>
 
