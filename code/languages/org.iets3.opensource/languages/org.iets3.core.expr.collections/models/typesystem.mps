@@ -4135,5 +4135,30 @@
       <ref role="1YaFvo" to="700h:4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5ipapt3qQ3I">
+    <property role="TrG5h" value="typeof_IsNotEmptyOp" />
+    <property role="3GE5qa" value="collection" />
+    <node concept="3clFbS" id="5ipapt3qQ3J" role="18ibNy">
+      <node concept="1Z5TYs" id="5ipapt3qQ3P" role="3cqZAp">
+        <node concept="mw_s8" id="5ipapt3qQ3Q" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5ipapt3qQ3R" role="mwGJk">
+            <node concept="1YBJjd" id="5ipapt3qQ7s" role="1Z2MuG">
+              <ref role="1YBMHb" node="5ipapt3qQ3L" resolve="ine" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5ipapt3qQ3T" role="1ZfhKB">
+          <node concept="2YIFZM" id="5ipapt3qQ3U" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ipapt3qQ3L" role="1YuTPh">
+      <property role="TrG5h" value="ine" />
+      <ref role="1YaFvo" to="700h:5ipapt3qQ3k" resolve="IsNotEmptyOp" />
+    </node>
+  </node>
 </model>
 

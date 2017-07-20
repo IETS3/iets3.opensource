@@ -65,6 +65,7 @@
       <concept id="2156530943179783736" name="org.iets3.core.expr.collections.structure.OneArgListModifier" flags="ng" index="2iGZtf">
         <child id="2156530943179783738" name="arg" index="2iGZtd" />
       </concept>
+      <concept id="6095949300270588116" name="org.iets3.core.expr.collections.structure.IsNotEmptyOp" flags="ng" index="nW$_3" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
@@ -182,6 +183,9 @@
       </concept>
       <concept id="7782108600712067692" name="org.iets3.core.expr.base.structure.DeRefTarget" flags="ng" index="n2Y3A" />
       <concept id="7782108600709141067" name="org.iets3.core.expr.base.structure.MakeRefTarget" flags="ng" index="ne4z1" />
+      <concept id="7782108600708168956" name="org.iets3.core.expr.base.structure.ReferenceType" flags="ng" index="nhQpQ">
+        <child id="7782108600708168957" name="baseType" index="nhQpR" />
+      </concept>
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -438,7 +442,7 @@
       </concept>
       <concept id="8293738266742524311" name="org.iets3.core.expr.toplevel.structure.ProjectIt" flags="ng" index="22msUl" />
       <concept id="8293738266746101180" name="org.iets3.core.expr.toplevel.structure.InlineRecordMemberAccess" flags="ng" index="22r_EY" />
-      <concept id="8293738266727773586" name="org.iets3.core.expr.toplevel.structure.GrouwpByOp" flags="ng" index="23hzag" />
+      <concept id="8293738266727773586" name="org.iets3.core.expr.toplevel.structure.GroupByOp" flags="ng" index="23hzag" />
       <concept id="8293738266729562040" name="org.iets3.core.expr.toplevel.structure.GroupMembersTarget" flags="ng" index="23oZyU" />
       <concept id="8293738266728974042" name="org.iets3.core.expr.toplevel.structure.GroupKeyTarget" flags="ng" index="23q87o" />
       <concept id="7061117989422575313" name="org.iets3.core.expr.toplevel.structure.EnumLiteral" flags="ng" index="5mgYR">
@@ -4493,7 +4497,733 @@
           </node>
         </node>
         <node concept="_ixoA" id="15mJ3JeCnmm" role="_iOnB" />
-        <node concept="_ixoA" id="15mJ3JeCnn8" role="_iOnB" />
+        <node concept="_ixoA" id="5ipapt3lDAe" role="_iOnB" />
+        <node concept="_ixoA" id="5ipapt3EftL" role="_iOnB" />
+        <node concept="5mgZ8" id="5ipapt3EfES" role="_iOnB">
+          <property role="TrG5h" value="Gender" />
+          <node concept="5mgYR" id="5ipapt3EfET" role="5mgYi">
+            <property role="TrG5h" value="male" />
+          </node>
+          <node concept="5mgYR" id="5ipapt3EfEU" role="5mgYi">
+            <property role="TrG5h" value="female" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3EfEV" role="_iOnB" />
+        <node concept="2Ss9d8" id="5ipapt3EfEW" role="_iOnB">
+          <property role="TrG5h" value="Person" />
+          <node concept="2Ss9d7" id="5ipapt3EfEX" role="S5Trm">
+            <property role="TrG5h" value="name" />
+            <node concept="30bdrU" id="5ipapt3EfEY" role="2S399n" />
+          </node>
+          <node concept="2Ss9d7" id="5ipapt3EfEZ" role="S5Trm">
+            <property role="TrG5h" value="age" />
+            <node concept="mLuIC" id="5ipapt3EfF0" role="2S399n">
+              <node concept="2gteSW" id="5ipapt3EfF1" role="2gteSx">
+                <property role="2gteSQ" value="0" />
+                <property role="2gteSD" value="120" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Ss9d7" id="5ipapt3EfF2" role="S5Trm">
+            <property role="TrG5h" value="gender" />
+            <node concept="5mh7t" id="5ipapt3EfF3" role="2S399n">
+              <ref role="5mh6l" node="5ipapt3EfES" resolve="Gender" />
+            </node>
+          </node>
+          <node concept="2Ss9d7" id="5ipapt3EfFa" role="S5Trm">
+            <property role="TrG5h" value="siblings" />
+            <node concept="3iBWmN" id="5ipapt3EfFb" role="2S399n">
+              <node concept="nhQpQ" id="5ipapt3EfFc" role="3iBWmK">
+                <node concept="2Ss9cW" id="5ipapt3EfFd" role="nhQpR">
+                  <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="nbNz6" id="5ipapt3EAiO" role="nbNzx">
+            <ref role="n8xKb" node="5ipapt3EfEX" resolve="name" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3EiSB" role="_iOnB" />
+        <node concept="2zPypq" id="5ipapt3Ejin" role="_iOnB">
+          <property role="TrG5h" value="p1" />
+          <node concept="2S399m" id="5ipapt3EjvL" role="2zPyp_">
+            <node concept="2Ss9cW" id="5ipapt3EjvS" role="2S399n">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+            <node concept="30bdrP" id="5ipapt3Ejw9" role="2S399l">
+              <property role="30bdrQ" value="p1" />
+            </node>
+            <node concept="30bXRB" id="5ipapt3EjwR" role="2S399l">
+              <property role="30bXRw" value="30" />
+            </node>
+            <node concept="5mhuz" id="5ipapt3Ejx_" role="2S399l">
+              <ref role="5mhpJ" node="5ipapt3EfET" resolve="male" />
+            </node>
+            <node concept="3iBYfx" id="5ipapt3Ej$U" role="2S399l">
+              <node concept="1QScDb" id="5ipapt3EyVa" role="3iBYfI">
+                <node concept="ne4z1" id="5ipapt3EzXc" role="1QScD9" />
+                <node concept="_emDc" id="5ipapt3ExTs" role="30czhm">
+                  <ref role="_emDf" node="5ipapt3Eqiq" resolve="p2" />
+                </node>
+              </node>
+              <node concept="1QScDb" id="5ipapt3EuOy" role="3iBYfI">
+                <node concept="ne4z1" id="5ipapt3EvQ9" role="1QScD9" />
+                <node concept="_emDc" id="5ipapt3EXlh" role="30czhm">
+                  <ref role="_emDf" node="5ipapt3Erxk" resolve="p3" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5ipapt3Eqiq" role="_iOnB">
+          <property role="TrG5h" value="p2" />
+          <node concept="2S399m" id="5ipapt3Eqir" role="2zPyp_">
+            <node concept="2Ss9cW" id="5ipapt3Eqis" role="2S399n">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+            <node concept="30bdrP" id="5ipapt3Eqit" role="2S399l">
+              <property role="30bdrQ" value="p1" />
+            </node>
+            <node concept="30bXRB" id="5ipapt3Eqiu" role="2S399l">
+              <property role="30bXRw" value="30" />
+            </node>
+            <node concept="5mhuz" id="5ipapt3Eqiv" role="2S399l">
+              <ref role="5mhpJ" node="5ipapt3EfET" resolve="male" />
+            </node>
+            <node concept="3iBYfx" id="5ipapt3Eqiw" role="2S399l">
+              <node concept="ygwf7" id="5ipapt3Eqix" role="ygBzB">
+                <node concept="nhQpQ" id="5ipapt3Eqiy" role="ygwf4">
+                  <node concept="2Ss9cW" id="5ipapt3Eqiz" role="nhQpR">
+                    <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5ipapt3Erxk" role="_iOnB">
+          <property role="TrG5h" value="p3" />
+          <node concept="2S399m" id="5ipapt3Erxl" role="2zPyp_">
+            <node concept="2Ss9cW" id="5ipapt3Erxm" role="2S399n">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+            <node concept="30bdrP" id="5ipapt3Erxn" role="2S399l">
+              <property role="30bdrQ" value="p1" />
+            </node>
+            <node concept="30bXRB" id="5ipapt3Erxo" role="2S399l">
+              <property role="30bXRw" value="30" />
+            </node>
+            <node concept="5mhuz" id="5ipapt3Erxp" role="2S399l">
+              <ref role="5mhpJ" node="5ipapt3EfET" resolve="male" />
+            </node>
+            <node concept="3iBYfx" id="5ipapt3Erxq" role="2S399l">
+              <node concept="ygwf7" id="5ipapt3Erxr" role="ygBzB">
+                <node concept="nhQpQ" id="5ipapt3Erxs" role="ygwf4">
+                  <node concept="2Ss9cW" id="5ipapt3Erxt" role="nhQpR">
+                    <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3EfFe" role="_iOnB" />
+        <node concept="1aga60" id="5ipapt3EfFf" role="_iOnB">
+          <property role="TrG5h" value="brotherAges1a" />
+          <node concept="1ahQXy" id="5ipapt3EfFg" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3EfFh" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3EfFi" role="I61D6">
+            <node concept="I61DT" id="5ipapt3EfFj" role="I61D1">
+              <node concept="1aduha" id="5ipapt3EfFk" role="I61DU">
+                <node concept="1adJid" id="5ipapt3EfFl" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3EfFm" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3EfFn" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3EfFo" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3EfFp" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3EfFq" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3EfFr" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3EfFs" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3EfFt" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3EfFu" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3EfFv" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3EfFw" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3EfFg" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1adzI2" id="5ipapt3EfFx" role="1aduh9">
+                  <ref role="1adwt6" node="5ipapt3EfFl" resolve="brothers" />
+                </node>
+                <node concept="2vmpnb" id="5ipapt3K9Sv" role="1aduh9" />
+              </node>
+            </node>
+          </node>
+          <node concept="1aduha" id="5ipapt3EfFy" role="1ahQXP">
+            <node concept="1adJid" id="5ipapt3EfFz" role="1aduh9">
+              <property role="TrG5h" value="x" />
+              <node concept="1aduha" id="5ipapt3EfF$" role="1adJii">
+                <node concept="1QScDb" id="5ipapt3EfF_" role="1aduh9">
+                  <node concept="22cOCA" id="5ipapt3EfFA" role="1QScD9">
+                    <node concept="22cOCE" id="5ipapt3EfFB" role="22cODC">
+                      <property role="TrG5h" value="name" />
+                      <node concept="1QScDb" id="5ipapt3EfFC" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3EfFD" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3EfFE" role="30czhm" />
+                      </node>
+                    </node>
+                    <node concept="22cOCE" id="5ipapt3EfFF" role="22cODC">
+                      <property role="TrG5h" value="age" />
+                      <node concept="1QScDb" id="5ipapt3EfFG" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3EfFH" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3EfFI" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1adzI2" id="5ipapt3EfFJ" role="30czhm">
+                    <ref role="1adwt6" node="5ipapt3EfFl" resolve="brothers" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3Ei4j" role="_iOnB" />
+        <node concept="1aga60" id="5ipapt3EfFK" role="_iOnB">
+          <property role="TrG5h" value="brotherAges1b" />
+          <node concept="1ahQXy" id="5ipapt3EfFL" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3EfFM" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3EfFN" role="I61D6">
+            <node concept="I61DT" id="5ipapt3EfFO" role="I61D1">
+              <node concept="1aduha" id="5ipapt3EfFP" role="I61DU">
+                <node concept="1adJid" id="5ipapt3EfFQ" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3EfFR" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3EfFS" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3EfFT" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3EfFU" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3EfFV" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3EfFW" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3EfFX" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3EfFY" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3EfFZ" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3EfG0" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3EfG1" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3EfFL" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2vmpnb" id="5ipapt3EfG2" role="1aduh9" />
+              </node>
+            </node>
+          </node>
+          <node concept="1aduha" id="5ipapt3EfG3" role="1ahQXP">
+            <node concept="1adJid" id="5ipapt3EfG4" role="1aduh9">
+              <property role="TrG5h" value="x" />
+              <node concept="1aduha" id="5ipapt3EfG5" role="1adJii">
+                <node concept="1QScDb" id="5ipapt3EfG6" role="1aduh9">
+                  <node concept="22cOCA" id="5ipapt3EfG7" role="1QScD9">
+                    <node concept="22cOCE" id="5ipapt3EfG8" role="22cODC">
+                      <property role="TrG5h" value="name" />
+                      <node concept="1QScDb" id="5ipapt3EfG9" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3EfGa" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3EfGb" role="30czhm" />
+                      </node>
+                    </node>
+                    <node concept="22cOCE" id="5ipapt3EfGc" role="22cODC">
+                      <property role="TrG5h" value="age" />
+                      <node concept="1QScDb" id="5ipapt3EfGd" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3EfGe" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3EfGf" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1adzI2" id="5ipapt3EfGg" role="30czhm">
+                    <ref role="1adwt6" node="5ipapt3EfFQ" resolve="brothers" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="5ipapt3IJB5" role="_iOnB">
+          <property role="TrG5h" value="brotherAges1c" />
+          <node concept="1ahQXy" id="5ipapt3IJB6" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3IJB7" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3IJB8" role="I61D6">
+            <node concept="I61DT" id="5ipapt3IJB9" role="I61D1">
+              <node concept="1aduha" id="5ipapt3IJBa" role="I61DU">
+                <node concept="1adJid" id="5ipapt3IJBb" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3IJBc" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3IJBd" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3IJBe" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3IJBf" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3IJBg" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3IJBh" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3IJBi" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3IJBj" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3IJBk" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3IJBl" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3IJBm" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3IJB6" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1QScDb" id="5ipapt3IM8_" role="1aduh9">
+                  <node concept="nW$_3" id="5ipapt3INXF" role="1QScD9" />
+                  <node concept="1adzI2" id="5ipapt3IM7L" role="30czhm">
+                    <ref role="1adwt6" node="5ipapt3IJBb" resolve="brothers" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1aduha" id="5ipapt3IJBo" role="1ahQXP">
+            <node concept="1adJid" id="5ipapt3IJBp" role="1aduh9">
+              <property role="TrG5h" value="x" />
+              <node concept="1aduha" id="5ipapt3IJBq" role="1adJii">
+                <node concept="1QScDb" id="5ipapt3IJBr" role="1aduh9">
+                  <node concept="22cOCA" id="5ipapt3IJBs" role="1QScD9">
+                    <node concept="22cOCE" id="5ipapt3IJBt" role="22cODC">
+                      <property role="TrG5h" value="name" />
+                      <node concept="1QScDb" id="5ipapt3IJBu" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3IJBv" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3IJBw" role="30czhm" />
+                      </node>
+                    </node>
+                    <node concept="22cOCE" id="5ipapt3IJBx" role="22cODC">
+                      <property role="TrG5h" value="age" />
+                      <node concept="1QScDb" id="5ipapt3IJBy" role="22cOCG">
+                        <node concept="3o_JK" id="5ipapt3IJBz" role="1QScD9">
+                          <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                        </node>
+                        <node concept="22msUl" id="5ipapt3IJB$" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1adzI2" id="5ipapt3IJB_" role="30czhm">
+                    <ref role="1adwt6" node="5ipapt3IJBb" resolve="brothers" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3Eihl" role="_iOnB" />
+        <node concept="1aga60" id="5ipapt3EfGh" role="_iOnB">
+          <property role="TrG5h" value="brotherAges2" />
+          <node concept="1ahQXy" id="5ipapt3EfGi" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3EfGj" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3EfGk" role="I61D6">
+            <node concept="I61DT" id="5ipapt3EfGl" role="I61D1">
+              <node concept="1aduha" id="5ipapt3EfGm" role="I61DU">
+                <node concept="1adJid" id="5ipapt3EfGn" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3EfGo" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3EfGp" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3EfGq" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3EfGr" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3EfGs" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3EfGt" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3EfGu" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3EfGv" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3EfGw" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3EfGx" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3EfGy" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3EfGi" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2vmpnb" id="5ipapt3EfGz" role="1aduh9" />
+              </node>
+            </node>
+          </node>
+          <node concept="1aduha" id="5ipapt3EfG$" role="1ahQXP">
+            <node concept="1QScDb" id="5ipapt3EfG_" role="1aduh9">
+              <node concept="22cOCA" id="5ipapt3EfGA" role="1QScD9">
+                <node concept="22cOCE" id="5ipapt3EfGB" role="22cODC">
+                  <property role="TrG5h" value="name" />
+                  <node concept="1QScDb" id="5ipapt3EfGC" role="22cOCG">
+                    <node concept="3o_JK" id="5ipapt3EfGD" role="1QScD9">
+                      <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                    </node>
+                    <node concept="22msUl" id="5ipapt3EfGE" role="30czhm" />
+                  </node>
+                </node>
+                <node concept="22cOCE" id="5ipapt3EfGF" role="22cODC">
+                  <property role="TrG5h" value="age" />
+                  <node concept="1QScDb" id="5ipapt3EfGG" role="22cOCG">
+                    <node concept="3o_JK" id="5ipapt3EfGH" role="1QScD9">
+                      <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                    </node>
+                    <node concept="22msUl" id="5ipapt3EfGI" role="30czhm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1adzI2" id="5ipapt3EfGJ" role="30czhm">
+                <ref role="1adwt6" node="5ipapt3EfGn" resolve="brothers" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3Eiup" role="_iOnB" />
+        <node concept="1aga60" id="5ipapt3EfGK" role="_iOnB">
+          <property role="TrG5h" value="brotherAges3" />
+          <node concept="1ahQXy" id="5ipapt3EfGL" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3EfGM" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3EfGN" role="I61D6">
+            <node concept="I61DT" id="5ipapt3EfGO" role="I61D1">
+              <node concept="1aduha" id="5ipapt3EfGP" role="I61DU">
+                <node concept="1adJid" id="5ipapt3EfGQ" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3EfGR" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3EfGS" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3EfGT" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3EfGU" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3EfGV" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3EfGW" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3EfGX" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3EfGY" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3EfGZ" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3EfH0" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3EfH1" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3EfGL" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2vmpnb" id="5ipapt3EfH2" role="1aduh9" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="5ipapt3EfH3" role="1ahQXP">
+            <node concept="22cOCA" id="5ipapt3EfH4" role="1QScD9">
+              <node concept="22cOCE" id="5ipapt3EfH5" role="22cODC">
+                <property role="TrG5h" value="name" />
+                <node concept="1QScDb" id="5ipapt3EfH6" role="22cOCG">
+                  <node concept="3o_JK" id="5ipapt3EfH7" role="1QScD9">
+                    <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                  </node>
+                  <node concept="22msUl" id="5ipapt3EfH8" role="30czhm" />
+                </node>
+              </node>
+              <node concept="22cOCE" id="5ipapt3EfH9" role="22cODC">
+                <property role="TrG5h" value="age" />
+                <node concept="1QScDb" id="5ipapt3EfHa" role="22cOCG">
+                  <node concept="3o_JK" id="5ipapt3EfHb" role="1QScD9">
+                    <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                  </node>
+                  <node concept="22msUl" id="5ipapt3EfHc" role="30czhm" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adzI2" id="5ipapt3EfHd" role="30czhm">
+              <ref role="1adwt6" node="5ipapt3EfGQ" resolve="brothers" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3EiFv" role="_iOnB" />
+        <node concept="1aga60" id="5ipapt3EfHe" role="_iOnB">
+          <property role="TrG5h" value="brotherAges4" />
+          <node concept="1ahQXy" id="5ipapt3EfHf" role="1ahQWs">
+            <property role="TrG5h" value="p" />
+            <node concept="2Ss9cW" id="5ipapt3EfHg" role="3ix9CU">
+              <ref role="2Ss9cX" node="5ipapt3EfEW" resolve="Person" />
+            </node>
+          </node>
+          <node concept="I61D5" id="5ipapt3EfHh" role="I61D6">
+            <node concept="I61DT" id="5ipapt3EfHi" role="I61D1">
+              <node concept="1aduha" id="5ipapt3EfHj" role="I61DU">
+                <node concept="1adJid" id="5ipapt3EfHk" role="1aduh9">
+                  <property role="TrG5h" value="brothers" />
+                  <node concept="1QScDb" id="5ipapt3EfHl" role="1adJii">
+                    <node concept="3izCyS" id="5ipapt3EfHm" role="1QScD9">
+                      <node concept="3izI60" id="5ipapt3EfHn" role="3iAY4F">
+                        <node concept="1QScDb" id="5ipapt3EfHo" role="3izI61">
+                          <node concept="2JjPkS" id="5ipapt3EfHp" role="1QScD9">
+                            <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                          </node>
+                          <node concept="1QScDb" id="5ipapt3EfHq" role="30czhm">
+                            <node concept="3o_JK" id="5ipapt3EfHr" role="1QScD9">
+                              <ref role="3o_JH" node="5ipapt3EfF2" resolve="gender" />
+                            </node>
+                            <node concept="3izPEI" id="5ipapt3EfHs" role="30czhm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5ipapt3EfHt" role="30czhm">
+                      <node concept="3o_JK" id="5ipapt3EfHu" role="1QScD9">
+                        <ref role="3o_JH" node="5ipapt3EfFa" resolve="siblings" />
+                      </node>
+                      <node concept="1afdae" id="5ipapt3EfHv" role="30czhm">
+                        <ref role="1afue_" node="5ipapt3EfHf" resolve="p" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2vmpnb" id="5ipapt3EfHw" role="1aduh9" />
+              </node>
+            </node>
+            <node concept="I61F8" id="5ipapt3EfHx" role="I61D1">
+              <node concept="30cPrO" id="5ipapt3EfHy" role="I61DU">
+                <node concept="1QScDb" id="5ipapt3EfHz" role="30dEs_">
+                  <node concept="3iB8M5" id="5ipapt3EfH$" role="1QScD9" />
+                  <node concept="1adzI2" id="5ipapt3EfH_" role="30czhm">
+                    <ref role="1adwt6" node="5ipapt3EfHk" resolve="brothers" />
+                  </node>
+                </node>
+                <node concept="1QScDb" id="5ipapt3EfHA" role="30dEsF">
+                  <node concept="3iB8M5" id="5ipapt3EfHB" role="1QScD9" />
+                  <node concept="Ic2ui" id="5ipapt3EfHC" role="30czhm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="5ipapt3EfHD" role="1ahQXP">
+            <node concept="22cOCA" id="5ipapt3EfHE" role="1QScD9">
+              <node concept="22cOCE" id="5ipapt3EfHF" role="22cODC">
+                <property role="TrG5h" value="name" />
+                <node concept="1QScDb" id="5ipapt3EfHG" role="22cOCG">
+                  <node concept="3o_JK" id="5ipapt3EfHH" role="1QScD9">
+                    <ref role="3o_JH" node="5ipapt3EfEX" resolve="name" />
+                  </node>
+                  <node concept="22msUl" id="5ipapt3EfHI" role="30czhm" />
+                </node>
+              </node>
+              <node concept="22cOCE" id="5ipapt3EfHJ" role="22cODC">
+                <property role="TrG5h" value="age" />
+                <node concept="1QScDb" id="5ipapt3EfHK" role="22cOCG">
+                  <node concept="3o_JK" id="5ipapt3EfHL" role="1QScD9">
+                    <ref role="3o_JH" node="5ipapt3EfEZ" resolve="age" />
+                  </node>
+                  <node concept="22msUl" id="5ipapt3EfHM" role="30czhm" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adzI2" id="5ipapt3EfHN" role="30czhm">
+              <ref role="1adwt6" node="5ipapt3EfHk" resolve="brothers" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5ipapt3Ef$h" role="_iOnB" />
+        <node concept="_fkuM" id="5ipapt3EZp9" role="_iOnB">
+          <property role="TrG5h" value="TestAges" />
+          <node concept="_fkuZ" id="5ipapt3EZBi" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3EZBj" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3F0EZ" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3F1I0" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3EZBC" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfFf" resolve="brotherAges1a" />
+                <node concept="_emDc" id="5ipapt3EZCs" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3F2M9" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3FuP2" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3FuP3" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3FuP4" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3FuP5" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3FuP6" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfFf" resolve="brotherAges1a" />
+                <node concept="_emDc" id="5ipapt3FuP7" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3FuP8" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3F4gA" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3F4gB" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3F4gC" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3F4gD" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3F4gE" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfFK" resolve="brotherAges1b" />
+                <node concept="_emDc" id="5ipapt3F4gF" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3F4gG" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3IPM2" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3IPM3" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3IPM4" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3IPM5" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3IPM6" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3IJB5" resolve="brotherAges1c" />
+                <node concept="_emDc" id="5ipapt3IPM7" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3IPM8" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3F4lM" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3F4lN" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3F4lO" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3F4lP" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3F4lQ" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfGh" resolve="brotherAges2" />
+                <node concept="_emDc" id="5ipapt3F4lR" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3F4lS" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3F4m$" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3F4m_" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3F4mA" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3F4mB" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3F4mC" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfGK" resolve="brotherAges3" />
+                <node concept="_emDc" id="5ipapt3F4mD" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3F4mE" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3F4n$" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3F4n_" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3F4nA" role="_fkuY">
+              <node concept="3iB8M5" id="5ipapt3F4nB" role="1QScD9" />
+              <node concept="1af_rf" id="5ipapt3F4nC" role="30czhm">
+                <ref role="1afhQb" node="5ipapt3EfHe" resolve="brotherAges4" />
+                <node concept="_emDc" id="5ipapt3F4nD" role="1afhQ5">
+                  <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="5ipapt3F4nE" role="_fkuS">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3F$Sz" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3F$S$" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3FDTW" role="_fkuY">
+              <node concept="22r_EY" id="5ipapt3FFwD" role="1QScD9">
+                <property role="TrG5h" value="name" />
+              </node>
+              <node concept="1QScDb" id="5ipapt3F$S_" role="30czhm">
+                <node concept="3iB7TU" id="5ipapt3FCgM" role="1QScD9" />
+                <node concept="1QScDb" id="5ipapt3F_bN" role="30czhm">
+                  <node concept="2TEanv" id="5ipapt3FAFI" role="1QScD9" />
+                  <node concept="1af_rf" id="5ipapt3F$SB" role="30czhm">
+                    <ref role="1afhQb" node="5ipapt3EfHe" resolve="brotherAges4" />
+                    <node concept="_emDc" id="5ipapt3F$SC" role="1afhQ5">
+                      <ref role="_emDf" node="5ipapt3Ejin" resolve="p1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="5ipapt3HKWX" role="_fkuS">
+              <property role="30bdrQ" value="p1" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -21091,6 +21821,26 @@
             </node>
             <node concept="30bdrP" id="4ptnK4irgDV" role="_fkuS">
               <property role="30bdrQ" value="The author Peter has published in CD . The author Jim has published in CD, Book . " />
+            </node>
+          </node>
+          <node concept="_fkuZ" id="5ipapt3FLeQ" role="_fkp5">
+            <node concept="_fku$" id="5ipapt3FLeR" role="_fkur" />
+            <node concept="1QScDb" id="5ipapt3FSdC" role="_fkuY">
+              <node concept="22r_EY" id="5ipapt3FTa8" role="1QScD9">
+                <property role="TrG5h" value="author" />
+              </node>
+              <node concept="1QScDb" id="5ipapt3FMR6" role="30czhm">
+                <node concept="3iB7TU" id="5ipapt3FNHd" role="1QScD9" />
+                <node concept="1QScDb" id="5ipapt3FLjg" role="30czhm">
+                  <node concept="2TEanv" id="5ipapt3FRg4" role="1QScD9" />
+                  <node concept="_emDc" id="5ipapt3FQfG" role="30czhm">
+                    <ref role="_emDf" node="4ptnK4iaW07" resolve="authorCats" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="30bdrP" id="5ipapt3FLeT" role="_fkuS">
+              <property role="30bdrQ" value="Peter" />
             </node>
           </node>
         </node>

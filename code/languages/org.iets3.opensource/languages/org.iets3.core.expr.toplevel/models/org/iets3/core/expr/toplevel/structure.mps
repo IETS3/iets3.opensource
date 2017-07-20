@@ -97,6 +97,9 @@
     <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="5ipapt3mTNZ" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -733,7 +736,7 @@
     <property role="EcuMT" value="8293738266727747051" />
     <property role="3GE5qa" value="record.group" />
     <property role="TrG5h" value="GroupType" />
-    <property role="34LRSv" value="groups" />
+    <property role="34LRSv" value="group" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7cphKbKnKRG" role="1TKVEi">
       <property role="IQ2ns" value="8293738266727747052" />

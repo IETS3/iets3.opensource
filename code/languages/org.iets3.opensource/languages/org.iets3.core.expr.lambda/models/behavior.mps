@@ -3463,5 +3463,48 @@
     <node concept="2tJIrI" id="mM1quA8_uf" role="jymVt" />
     <node concept="3Tm1VV" id="mM1quA8_tX" role="1B3o_S" />
   </node>
+  <node concept="13h7C7" id="5ipapt3mzcc">
+    <property role="3GE5qa" value="block" />
+    <ref role="13h7C2" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
+    <node concept="13i0hz" id="5ipapt3mzcn" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="otherLocationsForRefsToMe" />
+      <node concept="3Tm1VV" id="5ipapt3mzco" role="1B3o_S" />
+      <node concept="A3Dl8" id="5ipapt3mzcF" role="3clF45">
+        <node concept="3Tqbb2" id="5ipapt3mzcU" role="A3Ik2">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipapt3mzcq" role="3clF47" />
+      <node concept="37vLTG" id="5ipapt3mze7" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3Tqbb2" id="5ipapt3mze6" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5ipapt3mzeF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="otherVisibleBlocks" />
+      <node concept="3Tm1VV" id="5ipapt3mzeG" role="1B3o_S" />
+      <node concept="A3Dl8" id="5ipapt3mzeH" role="3clF45">
+        <node concept="3Tqbb2" id="5ipapt3mzeI" role="A3Ik2">
+          <ref role="ehGHo" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipapt3mzeJ" role="3clF47" />
+      <node concept="37vLTG" id="5ipapt3mTOv" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3Tqbb2" id="5ipapt3mTOw" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5ipapt3mzcd" role="13h7CW">
+      <node concept="3clFbS" id="5ipapt3mzce" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -483,5 +483,10 @@
     <property role="3GE5qa" value="lambda" />
     <property role="TrG5h" value="ILambdaLike" />
   </node>
+  <node concept="PlHQZ" id="5ipapt3mzbM">
+    <property role="EcuMT" value="6095949300269462258" />
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="IJoinedBlockContext" />
+  </node>
 </model>
 
