@@ -5918,6 +5918,7 @@
   </node>
   <node concept="18kY7G" id="7VuYlCQZ3n1">
     <property role="TrG5h" value="check_JoinType" />
+    <property role="3GE5qa" value="join" />
     <node concept="3clFbS" id="7VuYlCQZ3n2" role="18ibNy">
       <node concept="3clFbJ" id="7VuYlCQZ3Rx" role="3cqZAp">
         <node concept="3eOVzh" id="7VuYlCQZbCJ" role="3clFbw">
@@ -6036,6 +6037,7 @@
   </node>
   <node concept="35pCF_" id="7VuYlCR5J9k">
     <property role="TrG5h" value="replace_JoinTypeAndJoinType" />
+    <property role="3GE5qa" value="join" />
     <node concept="1YaCAy" id="7VuYlCR5J9l" role="35pZ6h">
       <property role="TrG5h" value="sup" />
       <ref role="1YaFvo" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />

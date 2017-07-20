@@ -1345,6 +1345,7 @@
     <property role="EcuMT" value="9142018459473556821" />
     <property role="TrG5h" value="JoinType" />
     <property role="34LRSv" value="join" />
+    <property role="3GE5qa" value="join" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7VuYlCQZ3lm" role="1TKVEi">
       <property role="IQ2ns" value="9142018459473556822" />
@@ -1353,6 +1354,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5ipapt35kjG">
+    <property role="EcuMT" value="6095949300264944876" />
+    <property role="3GE5qa" value="join" />
+    <property role="TrG5h" value="IJoinTypeContext" />
   </node>
 </model>
 

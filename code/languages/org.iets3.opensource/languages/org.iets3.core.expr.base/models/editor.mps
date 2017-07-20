@@ -3192,6 +3192,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7VuYlCQZ3lL">
+    <property role="3GE5qa" value="join" />
     <ref role="1XX52x" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
     <node concept="3EZMnI" id="7VuYlCQZ3lQ" role="2wV5jI">
       <node concept="2iRfu4" id="7VuYlCQZ3lR" role="2iSdaV" />

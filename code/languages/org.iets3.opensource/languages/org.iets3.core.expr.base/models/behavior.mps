@@ -16649,6 +16649,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7VuYlCR4z3p">
+    <property role="3GE5qa" value="join" />
     <ref role="13h7C2" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
     <node concept="13hLZK" id="7VuYlCR4z3q" role="13h7CW">
       <node concept="3clFbS" id="7VuYlCR4z3r" role="2VODD2" />
