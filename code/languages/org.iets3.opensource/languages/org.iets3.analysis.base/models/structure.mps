@@ -102,6 +102,11 @@
       <property role="IQ2nx" value="4214990435119232944" />
       <ref role="AX2Wp" node="3DYDRw0WRuy" resolve="SolveMode" />
     </node>
+    <node concept="1TJgyi" id="2GQBRFCFk_3" role="1TKVEl">
+      <property role="IQ2nx" value="3113851542611773763" />
+      <property role="TrG5h" value="timeout" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="AxPO7" id="3DYDRw0WRuy">
     <property role="TrG5h" value="SolveMode" />
@@ -109,16 +114,12 @@
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3DYDRw0WRuz" role="M5hS2">
-      <property role="1uS6qv" value="always" />
-      <property role="1uS6qo" value="always" />
+      <property role="1uS6qv" value="check" />
+      <property role="1uS6qo" value="check" />
     </node>
     <node concept="M4N5e" id="3DYDRw0WRu$" role="M5hS2">
-      <property role="1uS6qv" value="never" />
-      <property role="1uS6qo" value="never" />
-    </node>
-    <node concept="M4N5e" id="3DYDRw0WRuD" role="M5hS2">
-      <property role="1uS6qv" value="auto" />
-      <property role="1uS6qo" value="auto" />
+      <property role="1uS6qv" value="ignore" />
+      <property role="1uS6qo" value="ignore" />
     </node>
   </node>
   <node concept="PlHQZ" id="4OgAv3N4pT3">

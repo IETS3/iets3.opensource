@@ -257,6 +257,12 @@
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordDeclaration&quot;" />
       </node>
     </node>
+    <node concept="1TJgyj" id="6JZACDWOa9F" role="1TKVEi">
+      <property role="IQ2ns" value="7782108600709718635" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refFlag" />
+      <ref role="20lvS9" node="6JZACDWOa9c" resolve="ReferenceableFlag" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
     <property role="3GE5qa" value="record" />
@@ -294,6 +300,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
       <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
+    </node>
+    <node concept="PrWs8" id="6JZACDWI_Pm" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2eTZF">
@@ -333,6 +342,9 @@
     </node>
     <node concept="PrWs8" id="21vB0Vz1I_I" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="PrWs8" id="6JZACDWR9qQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
@@ -620,6 +632,9 @@
     <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
+    <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
@@ -700,6 +715,20 @@
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JZACDWOa9c">
+    <property role="EcuMT" value="7782108600709718604" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="ReferenceableFlag" />
+    <property role="34LRSv" value="referenceable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6JZACDWRoq1" role="1TKVEi">
+      <property role="IQ2ns" value="7782108600710563457" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="idMember" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
 </model>

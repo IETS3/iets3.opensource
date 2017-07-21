@@ -2,9 +2,9 @@
 <model ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -744,6 +744,11 @@
     <property role="3GE5qa" value="record" />
     <ref role="1XX52x" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
     <node concept="3EZMnI" id="7fOaqhi2CTm" role="2wV5jI">
+      <node concept="_tjkj" id="6JZACDWOaWd" role="3EZMnx">
+        <node concept="3F1sOY" id="6JZACDWObkB" role="_tjki">
+          <ref role="1NtTu8" to="yv47:6JZACDWOa9F" resolve="refFlag" />
+        </node>
+      </node>
       <node concept="VPM3Z" id="7fOaqhi2CTo" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -1983,6 +1988,45 @@
   </node>
   <node concept="3p36aQ" id="2dOqIOuu8eB">
     <ref role="aqKnT" to="yv47:ub9nkyKjdj" resolve="EmptyToplevelContent" />
+  </node>
+  <node concept="24kQdi" id="6JZACDWOa9A">
+    <property role="3GE5qa" value="record" />
+    <ref role="1XX52x" to="yv47:6JZACDWOa9c" resolve="ReferenceableFlag" />
+    <node concept="3EZMnI" id="6JZACDWRoq3" role="2wV5jI">
+      <node concept="2iRfu4" id="6JZACDWRoq4" role="2iSdaV" />
+      <node concept="3F0ifn" id="6JZACDWOa9C" role="3EZMnx">
+        <property role="3F0ifm" value="referenceable" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0ifn" id="6JZACDWRoqc" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="6JZACDWRoqJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6JZACDWRoqO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6JZACDWRor0" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:6JZACDWRoq1" resolve="idMember" />
+        <node concept="1sVBvm" id="6JZACDWRor2" role="1sWHZn">
+          <node concept="3F0A7n" id="6JZACDWRori" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6JZACDWRoqk" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="6JZACDWRoqp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="7yWljG41Z62">
+    <property role="3GE5qa" value="record" />
+    <ref role="aqKnT" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
   </node>
 </model>
 
