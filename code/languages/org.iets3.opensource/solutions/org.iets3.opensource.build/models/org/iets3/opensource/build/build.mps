@@ -1040,6 +1040,12 @@
             <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6wNYzrTGrax" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrTGray" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.core.traceExplorer" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3a2FJuC8s9O" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1403,6 +1409,12 @@
         <node concept="1SiIV0" id="6b_jefo1_zM" role="3bR37C">
           <node concept="1Busua" id="6b_jefo1_zN" role="1SiIV1">
             <ref role="1Busuk" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6wNYzrTGr0J" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrTGr0K" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.core.traceExplorer" />
           </node>
         </node>
       </node>

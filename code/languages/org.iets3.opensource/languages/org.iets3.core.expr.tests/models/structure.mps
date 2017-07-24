@@ -226,6 +226,9 @@
     <node concept="PrWs8" id="4gO0JEw17PJ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="7obiejCh95s" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$THIv">
     <property role="EcuMT" value="8219602584783477663" />
