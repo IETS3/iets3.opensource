@@ -14,9 +14,11 @@
         <child id="4342692121161029096" name="value" index="3YX8ah" />
       </concept>
       <concept id="4342692121161028982" name="org.iets3.core.json.structure.JSONObject" flags="ng" index="3YX88f">
-        <child id="4342692121161029321" name="variablen" index="3YX86K" />
+        <child id="4342692121161029321" name="variables" index="3YX86K" />
       </concept>
-      <concept id="4342692121161029103" name="org.iets3.core.json.structure.Array" flags="ng" index="3YX8am" />
+      <concept id="4342692121161029103" name="org.iets3.core.json.structure.Array" flags="ng" index="3YX8am">
+        <child id="4342692121161029106" name="values" index="3YX8ab" />
+      </concept>
       <concept id="4342692121161094115" name="org.iets3.core.json.structure.ObjectClass" flags="ng" index="3YXoiq">
         <child id="4342692121161094142" name="object" index="3YXoi7" />
       </concept>
@@ -56,7 +58,14 @@
               </node>
               <node concept="3YX88e" id="7W6mbU9gvdL" role="3YX86K">
                 <property role="TrG5h" value="An array" />
-                <node concept="3YX8am" id="7W6mbU9gvdR" role="3YX8ah" />
+                <node concept="3YX8am" id="7W6mbU9gvdR" role="3YX8ah">
+                  <node concept="3YX86M" id="2CRkjehLlZz" role="3YX8ab">
+                    <property role="3YX86R" value="valu1" />
+                  </node>
+                  <node concept="3YX86M" id="2CRkjehLlZC" role="3YX8ab">
+                    <property role="3YX86R" value="value2" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
