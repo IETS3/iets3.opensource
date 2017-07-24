@@ -348,6 +348,9 @@
     <node concept="PrWs8" id="3npF9QXsos_" role="PzmwI">
       <ref role="PrY4T" node="3npF9QXr$3G" resolve="IDisallowSideEffect" />
     </node>
+    <node concept="PrWs8" id="2CFPPn7nISU" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
     <property role="TrG5h" value="IDotTarget" />
