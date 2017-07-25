@@ -739,10 +739,10 @@
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
-        <node concept="1SiIV0" id="31yjPB$SAbO" role="3bR37C">
-          <node concept="3bR9La" id="31yjPB$SAbP" role="1SiIV1">
+        <node concept="1SiIV0" id="5IR_boGNs$6" role="3bR37C">
+          <node concept="3bR9La" id="5IR_boGNs$7" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
+            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
       </node>
@@ -1043,7 +1043,7 @@
         <node concept="1SiIV0" id="6wNYzrTGrax" role="3bR37C">
           <node concept="3bR9La" id="6wNYzrTGray" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.core.traceExplorer" />
+            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
       </node>
@@ -1414,7 +1414,7 @@
         <node concept="1SiIV0" id="6wNYzrTGr0J" role="3bR37C">
           <node concept="3bR9La" id="6wNYzrTGr0K" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.core.traceExplorer" />
+            <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
       </node>
