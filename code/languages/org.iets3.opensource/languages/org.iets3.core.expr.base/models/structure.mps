@@ -359,6 +359,9 @@
     <node concept="PrWs8" id="7RleyJL1mNg" role="PrDN$">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="5d4VabvJ4R_" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7halHeUzscN">
     <property role="TrG5h" value="PrimitiveLiteral" />

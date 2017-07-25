@@ -485,6 +485,9 @@
     <property role="EcuMT" value="3045596896722162595" />
     <property role="3GE5qa" value="lambda" />
     <property role="TrG5h" value="ILambdaLike" />
+    <node concept="PrWs8" id="5d4Vabvflby" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
 </model>
 

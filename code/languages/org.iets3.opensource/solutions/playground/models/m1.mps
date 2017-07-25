@@ -16,6 +16,10 @@
   <imports />
   <registry>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
+      <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
+        <child id="7554398283340020765" name="arg" index="3iAY4F" />
+      </concept>
       <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -67,6 +71,12 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
+        <child id="7089558164906249715" name="value" index="2zPyp_" />
+      </concept>
+      <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
+        <reference id="543569365051789114" name="constant" index="_emDf" />
+      </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
@@ -114,9 +124,21 @@
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
+      <concept id="7554398283340370581" name="org.iets3.core.expr.lambda.structure.LambdaArgRef" flags="ng" index="3ix4Yz">
+        <reference id="7554398283340370582" name="arg" index="3ix4Yw" />
+      </concept>
+      <concept id="7554398283340318470" name="org.iets3.core.expr.lambda.structure.LambdaExpression" flags="ng" index="3ix9CK">
+        <child id="7554398283340319555" name="expression" index="3ix9pP" />
+        <child id="7554398283340318471" name="args" index="3ix9CL" />
+      </concept>
+      <concept id="7554398283340318478" name="org.iets3.core.expr.lambda.structure.LambdaArg" flags="ng" index="3ix9CS" />
       <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
+      <concept id="7554398283340741814" name="org.iets3.core.expr.lambda.structure.ShortLambdaExpression" flags="ng" index="3izI60">
+        <child id="7554398283340741815" name="expression" index="3izI61" />
+      </concept>
+      <concept id="7554398283340826520" name="org.iets3.core.expr.lambda.structure.ShortLambdaItExpression" flags="ng" index="3izPEI" />
     </language>
   </registry>
   <node concept="_iOnU" id="4fb2DFBg_mb">
@@ -328,6 +350,58 @@
       </node>
     </node>
     <node concept="_ixoA" id="2hAELMMB02p" role="_iOnB" />
+    <node concept="1aga60" id="5d4VabuLTfD" role="_iOnB">
+      <property role="TrG5h" value="city" />
+      <node concept="2S399m" id="5d4VabuLTio" role="1ahQXP">
+        <node concept="2Ss9cW" id="5d4VabuLTiu" role="2S399n">
+          <ref role="2Ss9cX" node="2hAELMMmDMI" resolve="City" />
+        </node>
+        <node concept="30dDZf" id="5d4VabuLTqa" role="2S399l">
+          <node concept="30bdrP" id="5d4VabuLTwZ" role="30dEs_" />
+          <node concept="1afdae" id="5d4VabuLTpL" role="30dEsF">
+            <ref role="1afue_" node="5d4VabuLThV" resolve="i" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="5d4VabuLTBR" role="2S399l">
+          <property role="30bdrQ" value="city" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="5d4VabuLThV" role="1ahQWs">
+        <property role="TrG5h" value="i" />
+        <node concept="30bXR$" id="5d4VabuLTid" role="3ix9CU" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="5d4VabuLT6B" role="_iOnB">
+      <property role="TrG5h" value="cities" />
+      <node concept="3iBYfx" id="5d4VabuLT9j" role="2zPyp_">
+        <node concept="1af_rf" id="5d4VabuLTIW" role="3iBYfI">
+          <ref role="1afhQb" node="5d4VabuLTfD" resolve="city" />
+          <node concept="30bXRB" id="5d4VabuLTJw" role="1afhQ5">
+            <property role="30bXRw" value="1" />
+          </node>
+        </node>
+        <node concept="1af_rf" id="5d4VabuLU6x" role="3iBYfI">
+          <ref role="1afhQb" node="5d4VabuLTfD" resolve="city" />
+          <node concept="30bXRB" id="5d4VabuLU6y" role="1afhQ5">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+        <node concept="1af_rf" id="5d4VabuLUeB" role="3iBYfI">
+          <ref role="1afhQb" node="5d4VabuLTfD" resolve="city" />
+          <node concept="30bXRB" id="5d4VabuLUeC" role="1afhQ5">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5d4VabuLT2C" role="_iOnB" />
+    <node concept="1aga60" id="5d4Vabvz558" role="_iOnB">
+      <property role="TrG5h" value="ZIP" />
+      <node concept="30bdrP" id="5d4Vabvz587" role="1ahQXP">
+        <property role="30bdrQ" value="ZIP" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5d4VabuLT4B" role="_iOnB" />
     <node concept="_fkuM" id="4fb2DFBg_mc" role="_iOnB">
       <property role="TrG5h" value="TestF" />
       <node concept="_fkuZ" id="4fb2DFBg_n4" role="_fkp5">
@@ -385,8 +459,106 @@
             </node>
           </node>
         </node>
-        <node concept="1af_rf" id="2hAELMMB0am" role="_fkuS">
+        <node concept="30bdrP" id="2hAELMMKZGE" role="_fkuS">
+          <property role="30bdrQ" value="Oetz" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2hAELMMKZEg" role="_fkp5">
+        <node concept="_fku$" id="2hAELMMKZEh" role="_fkur" />
+        <node concept="1QScDb" id="2hAELMMKZEi" role="_fkuY">
+          <node concept="3o_JK" id="2hAELMMKZEj" role="1QScD9">
+            <ref role="3o_JH" node="2CFPPn7mZE8" resolve="street" />
+          </node>
+          <node concept="1QScDb" id="2hAELMMKZEk" role="30czhm">
+            <node concept="3iB7TU" id="2hAELMMKZEl" role="1QScD9" />
+            <node concept="1QScDb" id="2hAELMMKZEm" role="30czhm">
+              <node concept="3o_JK" id="2hAELMMKZEn" role="1QScD9">
+                <ref role="3o_JH" node="2CFPPn7mZHi" resolve="addr" />
+              </node>
+              <node concept="1af_rf" id="2hAELMMKZEo" role="30czhm">
+                <ref role="1afhQb" node="5Beavy19jkQ" resolve="getR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1af_rf" id="2hAELMMKZEp" role="_fkuS">
           <ref role="1afhQb" node="2hAELMMB05T" resolve="getOetz" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5d4VabuLUJb" role="_fkp5">
+        <node concept="_fku$" id="5d4VabuLUJc" role="_fkur" />
+        <node concept="1QScDb" id="5d4VabuLUSP" role="_fkuY">
+          <node concept="3iw6QE" id="5d4VabuLV2A" role="1QScD9">
+            <node concept="3ix9CK" id="5d4VabvveQ2" role="3iAY4F">
+              <node concept="30dDZf" id="5d4VabvveQ5" role="3ix9pP">
+                <node concept="1af_rf" id="5d4VabvIwfl" role="30dEs_">
+                  <ref role="1afhQb" node="5d4Vabvz558" resolve="ZIP" />
+                </node>
+                <node concept="1QScDb" id="5d4VabvveQ7" role="30dEsF">
+                  <node concept="3o_JK" id="5d4VabvveQ8" role="1QScD9">
+                    <ref role="3o_JH" node="2hAELMMmDQ9" resolve="zip" />
+                  </node>
+                  <node concept="3ix4Yz" id="5d4VabvveS$" role="30czhm">
+                    <ref role="3ix4Yw" node="5d4VabvveSz" resolve="it" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3ix9CS" id="5d4VabvveSz" role="3ix9CL">
+                <property role="TrG5h" value="it" />
+                <node concept="2Ss9cW" id="5d4VabvveSy" role="3ix9CU">
+                  <ref role="2Ss9cX" node="2hAELMMmDMI" resolve="City" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="5d4VabuLUK4" role="30czhm">
+            <ref role="_emDf" node="5d4VabuLT6B" resolve="cities" />
+          </node>
+        </node>
+        <node concept="3iBYfx" id="5d4VabuLWU5" role="_fkuS">
+          <node concept="30bdrP" id="5d4VabuLWUd" role="3iBYfI">
+            <property role="30bdrQ" value="1ZIP" />
+          </node>
+          <node concept="30bdrP" id="5d4VabuLWVE" role="3iBYfI">
+            <property role="30bdrQ" value="2ZIP" />
+          </node>
+          <node concept="30bdrP" id="5d4VabuLWW2" role="3iBYfI">
+            <property role="30bdrQ" value="3ZIP" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5d4Vabvz49c" role="_fkp5">
+        <node concept="_fku$" id="5d4Vabvz49d" role="_fkur" />
+        <node concept="1QScDb" id="5d4Vabvz49e" role="_fkuY">
+          <node concept="3iw6QE" id="5d4Vabvz49f" role="1QScD9">
+            <node concept="3izI60" id="5d4Vabvz4yO" role="3iAY4F">
+              <node concept="30dDZf" id="5d4Vabvz4yQ" role="3izI61">
+                <node concept="1af_rf" id="5d4Vabvz5ju" role="30dEs_">
+                  <ref role="1afhQb" node="5d4Vabvz558" resolve="ZIP" />
+                </node>
+                <node concept="1QScDb" id="5d4Vabvz4yS" role="30dEsF">
+                  <node concept="3o_JK" id="5d4Vabvz4yT" role="1QScD9">
+                    <ref role="3o_JH" node="2hAELMMmDQ9" resolve="zip" />
+                  </node>
+                  <node concept="3izPEI" id="5d4Vabvz4yV" role="30czhm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="5d4Vabvz49o" role="30czhm">
+            <ref role="_emDf" node="5d4VabuLT6B" resolve="cities" />
+          </node>
+        </node>
+        <node concept="3iBYfx" id="5d4Vabvz49p" role="_fkuS">
+          <node concept="30bdrP" id="5d4Vabvz49q" role="3iBYfI">
+            <property role="30bdrQ" value="1ZIP" />
+          </node>
+          <node concept="30bdrP" id="5d4Vabvz49r" role="3iBYfI">
+            <property role="30bdrQ" value="2ZIP" />
+          </node>
+          <node concept="30bdrP" id="5d4Vabvz49s" role="3iBYfI">
+            <property role="30bdrQ" value="3ZIP" />
+          </node>
         </node>
       </node>
     </node>

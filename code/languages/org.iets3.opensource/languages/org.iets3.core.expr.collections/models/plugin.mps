@@ -176,6 +176,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
+      <concept id="6000180787831028519" name="com.mbeddr.mpsutil.interpreter.structure.TraceExpression" flags="ng" index="2dz_u5" />
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
         <child id="7019451652831666945" name="language" index="cpn$n" />
       </concept>
@@ -4884,6 +4885,7 @@
                         </node>
                         <node concept="oxNuS" id="v9lBEVhndZ" role="37wK5m" />
                         <node concept="3fckFw" id="4_qY3E6K$2R" role="37wK5m" />
+                        <node concept="2dz_u5" id="5d4VabuVckz" role="37wK5m" />
                         <node concept="3clFbT" id="5ya_dKpC1K1" role="37wK5m">
                           <property role="3clFbU" value="false" />
                         </node>
@@ -5059,6 +5061,7 @@
                       </node>
                       <node concept="oxNuS" id="7SZA7Ud$uY8" role="37wK5m" />
                       <node concept="3fckFw" id="7SZA7Ud$uY9" role="37wK5m" />
+                      <node concept="2dz_u5" id="5d4VabuVcde" role="37wK5m" />
                       <node concept="3clFbT" id="5ya_dKpC1Dn" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -5232,6 +5235,7 @@
                         </node>
                         <node concept="oxNuS" id="52ceVyxJ58V" role="37wK5m" />
                         <node concept="3fckFw" id="4_qY3E6KzOc" role="37wK5m" />
+                        <node concept="2dz_u5" id="5d4VabuVc7Y" role="37wK5m" />
                         <node concept="3clFbT" id="5ya_dKpC1mc" role="37wK5m">
                           <property role="3clFbU" value="false" />
                         </node>
@@ -5415,6 +5419,7 @@
                             </node>
                             <node concept="oxNuS" id="v9lBEVh_9Y" role="37wK5m" />
                             <node concept="3fckFw" id="4_qY3E6K$b1" role="37wK5m" />
+                            <node concept="2dz_u5" id="5d4VabuVc1B" role="37wK5m" />
                             <node concept="3clFbT" id="5ya_dKpC1sS" role="37wK5m">
                               <property role="3clFbU" value="false" />
                             </node>
@@ -5896,6 +5901,7 @@
                             </node>
                             <node concept="oxNuS" id="v9lBEVhA4W" role="37wK5m" />
                             <node concept="3fckFw" id="4_qY3E6K$hM" role="37wK5m" />
+                            <node concept="2dz_u5" id="5d4VabuVbUy" role="37wK5m" />
                             <node concept="3clFbT" id="5ya_dKpC1zK" role="37wK5m">
                               <property role="3clFbU" value="false" />
                             </node>

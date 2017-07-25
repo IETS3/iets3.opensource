@@ -37,5 +37,13 @@
       <property role="1iqoE4" value="${module}/icons/traceDefault.png" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5d4VabvUrnQ">
+    <property role="EcuMT" value="6000180787849836022" />
+    <property role="TrG5h" value="GhostIconConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="5d4VabvUrnR" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/ghost.png" />
+    </node>
+  </node>
 </model>
 

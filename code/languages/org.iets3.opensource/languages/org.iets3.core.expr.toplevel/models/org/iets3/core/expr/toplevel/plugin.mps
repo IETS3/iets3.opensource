@@ -193,6 +193,7 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
+      <concept id="6000180787831028519" name="com.mbeddr.mpsutil.interpreter.structure.TraceExpression" flags="ng" index="2dz_u5" />
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
         <child id="7019451652831666945" name="language" index="cpn$n" />
       </concept>
@@ -743,6 +744,7 @@
                         </node>
                         <node concept="oxNuS" id="v9lBEVhndZ" role="37wK5m" />
                         <node concept="3fckFw" id="4_qY3E6K$2R" role="37wK5m" />
+                        <node concept="2dz_u5" id="5d4Vabv4k33" role="37wK5m" />
                         <node concept="3clFbT" id="5ya_dKpC1K1" role="37wK5m">
                           <property role="3clFbU" value="false" />
                         </node>
