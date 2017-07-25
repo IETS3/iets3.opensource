@@ -93,6 +93,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -976,7 +979,7 @@
   <node concept="2S6QgY" id="7FZzGJZWzFx">
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="markPreFailureAsInvalid" />
-    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionAdapter" />
+    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionSubjectAdapter" />
     <node concept="2S6ZIM" id="7FZzGJZWzFy" role="2ZfVej">
       <node concept="3clFbS" id="7FZzGJZWzFz" role="2VODD2">
         <node concept="3clFbF" id="7FZzGJZWzOP" role="3cqZAp">
@@ -1078,7 +1081,7 @@
   <node concept="2S6QgY" id="7FZzGJZYfhp">
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="useActualsAsExpectedAll" />
-    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionAdapter" />
+    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionSubjectAdapter" />
     <node concept="2S6ZIM" id="7FZzGJZYfhq" role="2ZfVej">
       <node concept="3clFbS" id="7FZzGJZYfhr" role="2VODD2">
         <node concept="3clFbF" id="7FZzGJZYfqi" role="3cqZAp">
@@ -1090,6 +1093,19 @@
     </node>
     <node concept="2Sbjvc" id="7FZzGJZYfhs" role="2ZfgGD">
       <node concept="3clFbS" id="7FZzGJZYfht" role="2VODD2">
+        <node concept="3clFbF" id="5bB0DPkCTqr" role="3cqZAp">
+          <node concept="37vLTI" id="5bB0DPkCUnd" role="3clFbG">
+            <node concept="3clFbT" id="5bB0DPkCUsE" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5bB0DPkCTB5" role="37vLTJ">
+              <node concept="2Sf5sV" id="5bB0DPkCTqp" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5bB0DPkCTWU" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:1bwJEEgrgy9" resolve="checkResults" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7FZzGJZYtVN" role="3cqZAp">
           <node concept="3cpWsn" id="7FZzGJZYtVO" role="3cpWs9">
             <property role="TrG5h" value="tt" />
@@ -1168,18 +1184,6 @@
     </node>
     <node concept="1SWQZ3" id="7FZzGJZZxFt" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
-    </node>
-    <node concept="2SaL7w" id="7FZzGJZZ$9b" role="2ZfVeh">
-      <node concept="3clFbS" id="7FZzGJZZ$9c" role="2VODD2">
-        <node concept="3clFbF" id="7FZzGJZZAAo" role="3cqZAp">
-          <node concept="2OqwBi" id="7FZzGJZZANl" role="3clFbG">
-            <node concept="2Sf5sV" id="7FZzGJZZAAn" role="2Oq$k0" />
-            <node concept="3TrcHB" id="7FZzGJZZBaF" role="2OqNvi">
-              <ref role="3TsBF5" to="av4b:1bwJEEgrgy9" resolve="checkResults" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="3FKUaHrUJzU">
@@ -1352,7 +1356,7 @@
   <node concept="2S6QgY" id="3FKUaHrVNYa">
     <property role="3GE5qa" value="vector" />
     <property role="TrG5h" value="useActualsAsExpectedEmpty" />
-    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionAdapter" />
+    <ref role="2ZfgGC" to="av4b:1bwJEEfQxDh" resolve="FunctionSubjectAdapter" />
     <node concept="2S6ZIM" id="3FKUaHrVNYb" role="2ZfVej">
       <node concept="3clFbS" id="3FKUaHrVNYc" role="2VODD2">
         <node concept="3clFbF" id="3FKUaHrVNYd" role="3cqZAp">

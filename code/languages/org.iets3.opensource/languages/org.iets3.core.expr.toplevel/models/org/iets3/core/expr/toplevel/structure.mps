@@ -739,7 +739,7 @@
     <property role="EcuMT" value="8293738266727747051" />
     <property role="3GE5qa" value="record.group" />
     <property role="TrG5h" value="GroupType" />
-    <property role="34LRSv" value="groups" />
+    <property role="34LRSv" value="group" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7cphKbKnKRG" role="1TKVEi">
       <property role="IQ2ns" value="8293738266727747052" />

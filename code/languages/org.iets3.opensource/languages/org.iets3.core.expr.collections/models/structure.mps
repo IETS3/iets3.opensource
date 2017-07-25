@@ -752,5 +752,12 @@
     <property role="34LRSv" value="remove" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
   </node>
+  <node concept="1TIwiD" id="5ipapt3qQ3k">
+    <property role="TrG5h" value="IsNotEmptyOp" />
+    <property role="34LRSv" value="isNotEmpty" />
+    <property role="3GE5qa" value="collection" />
+    <property role="EcuMT" value="6095949300270588116" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+  </node>
 </model>
 

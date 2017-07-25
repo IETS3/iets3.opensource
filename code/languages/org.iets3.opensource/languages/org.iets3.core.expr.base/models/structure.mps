@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -467,7 +467,7 @@
   </node>
   <node concept="1TIwiD" id="2rOWEwsFyNP">
     <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="NoneExpression" />
+    <property role="TrG5h" value="NoneLiteral" />
     <property role="34LRSv" value="none" />
     <property role="EcuMT" value="2807135271608265973" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />

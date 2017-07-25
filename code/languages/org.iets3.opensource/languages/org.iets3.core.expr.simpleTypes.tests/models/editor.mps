@@ -41,6 +41,12 @@
       <node concept="3F0A7n" id="1bwJEEfG$GK" role="3EZMnx">
         <ref role="1NtTu8" to="q6b8:1bwJEEfG$EL" resolve="count" />
       </node>
+      <node concept="3F0ifn" id="4o7_AWgGUlV" role="3EZMnx">
+        <property role="3F0ifm" value="only interesting" />
+      </node>
+      <node concept="3F0A7n" id="4o7_AWgGUm5" role="3EZMnx">
+        <ref role="1NtTu8" to="q6b8:4o7_AWgGUlO" resolve="onlyInteresing" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="u9itSZOLZW">
