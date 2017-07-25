@@ -3137,6 +3137,26 @@
         <node concept="17QB3L" id="7_$HJtBvjqc" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2hAELMM9$Gg" role="jymVt" />
+    <node concept="3clFb_" id="2hAELMM9Gsn" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getRecordTypeName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2hAELMM9Gsq" role="3clF47">
+        <node concept="3clFbF" id="2hAELMM9HAw" role="3cqZAp">
+          <node concept="2OqwBi" id="2hAELMM9HL5" role="3clFbG">
+            <node concept="Xjq3P" id="2hAELMM9HAv" role="2Oq$k0" />
+            <node concept="2OwXpG" id="2hAELMM9HVq" role="2OqNvi">
+              <ref role="2Oxat5" node="7$ajNzjzZzN" resolve="myRecTypeName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2hAELMM9FcU" role="1B3o_S" />
+      <node concept="17QB3L" id="2hAELMM9GnU" role="3clF45" />
+    </node>
   </node>
   <node concept="312cEu" id="7cphKbKx2sY">
     <property role="TrG5h" value="GroupValue" />
