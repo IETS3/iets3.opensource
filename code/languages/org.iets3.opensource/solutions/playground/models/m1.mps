@@ -321,6 +321,13 @@
       </node>
     </node>
     <node concept="_ixoA" id="4fb2DFBg_me" role="_iOnB" />
+    <node concept="1aga60" id="2hAELMMB05T" role="_iOnB">
+      <property role="TrG5h" value="getOetz" />
+      <node concept="30bdrP" id="2hAELMMB09B" role="1ahQXP">
+        <property role="30bdrQ" value="Oetz" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="2hAELMMB02p" role="_iOnB" />
     <node concept="_fkuM" id="4fb2DFBg_mc" role="_iOnB">
       <property role="TrG5h" value="TestF" />
       <node concept="_fkuZ" id="4fb2DFBg_n4" role="_fkp5">
@@ -378,8 +385,8 @@
             </node>
           </node>
         </node>
-        <node concept="30bdrP" id="2CFPPn7n1pR" role="_fkuS">
-          <property role="30bdrQ" value="Oetz" />
+        <node concept="1af_rf" id="2hAELMMB0am" role="_fkuS">
+          <ref role="1afhQb" node="2hAELMMB05T" resolve="getOetz" />
         </node>
       </node>
     </node>

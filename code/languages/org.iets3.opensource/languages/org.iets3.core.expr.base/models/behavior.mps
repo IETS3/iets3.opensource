@@ -17019,10 +17019,18 @@
       <node concept="10P_77" id="7lHetQyBQe5" role="3clF45" />
       <node concept="3clFbS" id="7lHetQyBQe6" role="3clF47">
         <node concept="3clFbF" id="7lHetQyBQfK" role="3cqZAp">
-          <node concept="3y3z36" id="7lHetQyBQmN" role="3clFbG">
-            <node concept="10Nm6u" id="7lHetQyBQqM" role="3uHU7w" />
-            <node concept="BsUDl" id="7lHetQyBQfJ" role="3uHU7B">
-              <ref role="37wK5l" node="7obiejCh8Tv" resolve="getComputationTrace" />
+          <node concept="1Wc70l" id="2hAELMMpHwS" role="3clFbG">
+            <node concept="2OqwBi" id="2hAELMMpIMZ" role="3uHU7w">
+              <node concept="BsUDl" id="2hAELMMpHy9" role="2Oq$k0">
+                <ref role="37wK5l" node="7obiejCh8Tv" resolve="getRootTraces" />
+              </node>
+              <node concept="3GX2aA" id="2hAELMMpKQz" role="2OqNvi" />
+            </node>
+            <node concept="3y3z36" id="7lHetQyBQmN" role="3uHU7B">
+              <node concept="BsUDl" id="7lHetQyBQfJ" role="3uHU7B">
+                <ref role="37wK5l" node="7obiejCh8Tv" resolve="getRootTraces" />
+              </node>
+              <node concept="10Nm6u" id="7lHetQyBQqM" role="3uHU7w" />
             </node>
           </node>
         </node>
@@ -17048,10 +17056,12 @@
     <node concept="13i0hz" id="7obiejCh8Tv" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getComputationTrace" />
+      <property role="TrG5h" value="getRootTraces" />
       <node concept="3Tm1VV" id="7obiejCh8Tw" role="1B3o_S" />
-      <node concept="3uibUv" id="7obiejCh8U9" role="3clF45">
-        <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+      <node concept="_YKpA" id="2hAELMMpPMp" role="3clF45">
+        <node concept="3uibUv" id="2hAELMMpPMr" role="_ZDj9">
+          <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
       </node>
       <node concept="3clFbS" id="7obiejCh8Ty" role="3clF47" />
     </node>

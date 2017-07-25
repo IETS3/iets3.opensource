@@ -1366,6 +1366,9 @@
   <node concept="PlHQZ" id="7obiejCh8R2">
     <property role="EcuMT" value="8505972469205863874" />
     <property role="TrG5h" value="ITraceRoot" />
+    <node concept="PrWs8" id="2hAELMMB1D9" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
 </model>
 
