@@ -710,7 +710,7 @@
         <node concept="3F1sOY" id="7NJy08a3Of1" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:7NJy08a3O9b" resolve="target" />
         </node>
-        <node concept="2iRfu4" id="7NJy08a3OaJ" role="2iSdaV" />
+        <node concept="l2Vlx" id="7YU1XJKD5nC" role="2iSdaV" />
       </node>
     </node>
     <node concept="1HlG4h" id="3hsdwqFFUSd" role="6VMZX">
@@ -3190,6 +3190,58 @@
     <node concept="3F0ifn" id="6JZACDWX7EN" role="2wV5jI">
       <property role="3F0ifm" value="deref" />
     </node>
+  </node>
+  <node concept="24kQdi" id="7VuYlCQZ3lL">
+    <property role="3GE5qa" value="join" />
+    <ref role="1XX52x" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
+    <node concept="3EZMnI" id="7VuYlCQZ3lQ" role="2wV5jI">
+      <node concept="2iRfu4" id="7VuYlCQZ3lR" role="2iSdaV" />
+      <node concept="3F0ifn" id="7VuYlCQZ3lN" role="3EZMnx">
+        <property role="3F0ifm" value="join" />
+      </node>
+      <node concept="3F0ifn" id="7VuYlCQZ3lZ" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="7VuYlCQZ3mt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7VuYlCQZ3my" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="7VuYlCQZ3mh" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="hm2y:7VuYlCQZ3lm" resolve="types" />
+        <node concept="2iRfu4" id="7VuYlCQZ3mj" role="2czzBx" />
+        <node concept="3F0ifn" id="7VuYlCQZ3mp" role="2czzBI">
+          <property role="3F0ifm" value="" />
+          <node concept="VPxyj" id="7VuYlCQZ3mr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7VuYlCQZ3m7" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="7VuYlCQZ3mA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALhw">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7Jd" resolve="GenericErrorType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALi0">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7JG" resolve="SpecificErrorType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALji">
+    <property role="3GE5qa" value="error.types" />
+    <ref role="aqKnT" to="hm2y:1Ez$z58L7Ek" resolve="SuccessType" />
+  </node>
+  <node concept="3p36aQ" id="4ptnK4jALk$">
+    <property role="3GE5qa" value="validity" />
+    <ref role="aqKnT" to="hm2y:78hTg1zmOHv" resolve="ValidityType" />
   </node>
 </model>
 

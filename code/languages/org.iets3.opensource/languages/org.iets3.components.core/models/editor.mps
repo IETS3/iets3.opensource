@@ -12116,7 +12116,6 @@
     <property role="3GE5qa" value="components.iface.ports" />
     <ref role="1XX52x" to="w9y2:siw10H0or2" resolve="PortCategory" />
     <node concept="s8t4o" id="4vEQ9eGCAGB" role="2wV5jI">
-      <property role="28Zw97" value="true" />
       <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
       <node concept="s8sZD" id="4vEQ9eGCAGE" role="sbcd9">
         <node concept="3clFbS" id="4vEQ9eGCAGF" role="2VODD2">
@@ -12145,7 +12144,6 @@
     <property role="TrG5h" value="IPortTypeAttributes" />
     <ref role="1XX52x" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
     <node concept="s8t4o" id="4vEQ9eGCUgi" role="2wV5jI">
-      <property role="28Zw97" value="true" />
       <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
       <node concept="s8sZD" id="4vEQ9eGCUgl" role="sbcd9">
         <node concept="3clFbS" id="4vEQ9eGCUgm" role="2VODD2">
