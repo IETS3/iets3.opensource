@@ -218,7 +218,7 @@
       <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
       </concept>
-      <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneExpression" flags="ng" index="UmHTt">
+      <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt">
         <child id="8355348994405084500" name="optionalBaseType" index="y6CjK" />
       </concept>
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
@@ -10758,7 +10758,7 @@
           <property role="1WP8_x" value="58" />
           <property role="1WP8_t" value="1" />
           <property role="1WP8_q" value="6" />
-          <ref role="1WP1uJ" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />
+          <ref role="1WP1uJ" to="hm2y:2rOWEwsFyNP" resolve="NoneLiteral" />
         </node>
       </node>
       <node concept="3pwbzX" id="3kdFyLXuCXf" role="3pwbzW">
@@ -13104,7 +13104,7 @@
         </node>
         <node concept="1bQR4M" id="3tudP_BdEMa" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />
+          <ref role="1bQReP" to="hm2y:2rOWEwsFyNP" resolve="NoneLiteral" />
         </node>
       </node>
       <node concept="3pwbzX" id="3tudP_BdEPJ" role="3pwbzW">
@@ -16473,7 +16473,6 @@
                   <property role="30bXRw" value="5" />
                 </node>
               </node>
-              <node concept="2zH6wq" id="38v7GtLqRrg" role="1aduh9" />
               <node concept="30dDZf" id="38v7GtLqRrh" role="1aduh9">
                 <node concept="1adzI2" id="38v7GtLqRri" role="30dEs_">
                   <ref role="1adwt6" node="38v7GtLqRre" resolve="variable" />
@@ -16537,7 +16536,92 @@
             </node>
           </node>
         </node>
-        <node concept="_ixoA" id="38v7GtLr7Vq" role="_iOnB" />
+        <node concept="_ixoA" id="2jL$v5BmNYD" role="_iOnB" />
+        <node concept="_ixoA" id="2jL$v5BmO1_" role="_iOnB" />
+        <node concept="2Ss9d8" id="2jL$v5BmOcX" role="_iOnB">
+          <property role="TrG5h" value="Person" />
+          <node concept="2Ss9d7" id="2jL$v5BmOgm" role="S5Trm">
+            <property role="TrG5h" value="age" />
+            <node concept="30bXR$" id="2jL$v5BmOgF" role="2S399n" />
+          </node>
+          <node concept="I61D5" id="2jL$v5BmOgS" role="I61D6">
+            <node concept="InuEK" id="2jL$v5BmOhc" role="I61D1">
+              <node concept="30d6GJ" id="2jL$v5BmOhx" role="I61DU">
+                <node concept="30bXRB" id="2jL$v5BmOhB" role="30dEs_">
+                  <property role="30bXRw" value="120" />
+                </node>
+                <node concept="XrbUJ" id="2jL$v5BmOhb" role="30dEsF">
+                  <ref role="XrbUP" node="2jL$v5BmOgm" resolve="age" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="2jL$v5BmOiw" role="_iOnB">
+          <property role="TrG5h" value="createPerson" />
+          <node concept="2S399m" id="2jL$v5BmOmI" role="1ahQXP">
+            <node concept="2Ss9cW" id="2jL$v5BmOmP" role="2S399n">
+              <ref role="2Ss9cX" node="2jL$v5BmOcX" resolve="Person" />
+            </node>
+            <node concept="1afdae" id="2jL$v5BmOn3" role="2S399l">
+              <ref role="1afue_" node="2jL$v5BmOme" resolve="a" />
+            </node>
+          </node>
+          <node concept="1ahQXy" id="2jL$v5BmOme" role="1ahQWs">
+            <property role="TrG5h" value="a" />
+            <node concept="30bXR$" id="2jL$v5BmOmy" role="3ix9CU" />
+          </node>
+        </node>
+        <node concept="_fkuM" id="2jL$v5BmOqU" role="_iOnB">
+          <property role="TrG5h" value="testPersonConstraints" />
+          <node concept="_fkuZ" id="2jL$v5BmOuw" role="_fkp5">
+            <node concept="_fku$" id="2jL$v5BmOux" role="_fkur" />
+            <node concept="1af_rf" id="2jL$v5BmOuJ" role="_fkuY">
+              <ref role="1afhQb" node="2jL$v5BmOiw" resolve="createPerson" />
+              <node concept="30bXRB" id="2jL$v5BmOuU" role="1afhQ5">
+                <property role="30bXRw" value="11" />
+              </node>
+            </node>
+            <node concept="2S399m" id="2jL$v5BmOxH" role="_fkuS">
+              <node concept="2Ss9cW" id="2jL$v5BmOy6" role="2S399n">
+                <ref role="2Ss9cX" node="2jL$v5BmOcX" resolve="Person" />
+              </node>
+              <node concept="30bXRB" id="2jL$v5BmOyn" role="2S399l">
+                <property role="30bXRw" value="10" />
+              </node>
+            </node>
+          </node>
+          <node concept="_fkuZ" id="2jL$v5Bnk7i" role="_fkp5">
+            <node concept="_fku$" id="2jL$v5Bnk7j" role="_fkur" />
+            <node concept="30dDZf" id="YcTL0g3AZ" role="_fkuY">
+              <node concept="30bXRB" id="YcTL0g3Bg" role="30dEs_">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="1QScDb" id="YcTL0g3wC" role="30dEsF">
+                <node concept="3o_JK" id="YcTL0g3zJ" role="1QScD9">
+                  <ref role="3o_JH" node="2jL$v5BmOgm" resolve="age" />
+                </node>
+                <node concept="1af_rf" id="2jL$v5Bnk7k" role="30czhm">
+                  <ref role="1afhQb" node="2jL$v5BmOiw" resolve="createPerson" />
+                  <node concept="30bXRB" id="2jL$v5Bnk7l" role="1afhQ5">
+                    <property role="30bXRw" value="110" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="30bXRB" id="YcTL0g3FZ" role="_fkuS">
+              <property role="30bXRw" value="160" />
+            </node>
+          </node>
+          <node concept="mXNUv" id="YcTL0vV2Y" role="_fkp5">
+            <node concept="1af_rf" id="YcTL0vV3A" role="mXJVd">
+              <ref role="1afhQb" node="2jL$v5BmOiw" resolve="createPerson" />
+              <node concept="30bXRB" id="YcTL0vV3P" role="1afhQ5">
+                <property role="30bXRw" value="110" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
