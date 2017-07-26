@@ -100,6 +100,9 @@
     <node concept="PrWs8" id="7lHetQxE0qg" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="5IR_boI4dB5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -114,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="7lHetQxGA3F" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IR_boIe7HQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8hwXW">
@@ -204,6 +210,9 @@
     </node>
     <node concept="PrWs8" id="2Fd5B1gx5V7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">

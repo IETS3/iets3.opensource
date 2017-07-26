@@ -1374,17 +1374,6 @@
       </node>
       <node concept="10Nm6u" id="$yb$20fAUc" role="33vP2m" />
     </node>
-    <node concept="312cEg" id="5IR_boGUvL7" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="originalLambda" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="5IR_boGUvL8" role="1B3o_S" />
-      <node concept="3Tqbb2" id="5IR_boGUvL9" role="1tU5fm">
-        <ref role="ehGHo" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
-      </node>
-      <node concept="10Nm6u" id="5IR_boGUvLa" role="33vP2m" />
-    </node>
     <node concept="312cEg" id="5ya_dKps6p1" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -1423,16 +1412,6 @@
       <node concept="3cqZAl" id="$yb$20fE3B" role="3clF45" />
       <node concept="3Tm1VV" id="$yb$20fE3C" role="1B3o_S" />
       <node concept="3clFbS" id="$yb$20fE3D" role="3clF47">
-        <node concept="3clFbF" id="$yb$20fEbi" role="3cqZAp">
-          <node concept="37vLTI" id="$yb$20fEdU" role="3clFbG">
-            <node concept="37vLTw" id="$yb$20fEeN" role="37vLTx">
-              <ref role="3cqZAo" node="$yb$20fE4t" resolve="le" />
-            </node>
-            <node concept="37vLTw" id="5IR_boGU$IX" role="37vLTJ">
-              <ref role="3cqZAo" node="5IR_boGUvL7" resolve="originalLambda" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5IR_boGU$cB" role="3cqZAp">
           <node concept="37vLTI" id="5IR_boGU$cC" role="3clFbG">
             <node concept="2OqwBi" id="5IR_boGU$cD" role="37vLTx">
@@ -1985,8 +1964,8 @@
             <node concept="2ShNRf" id="5d4Vabvgn7t" role="33vP2m">
               <node concept="1pGfFk" id="5d4Vabvgn7u" role="2ShVmc">
                 <ref role="37wK5l" to="2ahs:5d4Vabvrrqt" resolve="ComputationTrace" />
-                <node concept="37vLTw" id="5IR_boGU_kR" role="37wK5m">
-                  <ref role="3cqZAo" node="5IR_boGUvL7" resolve="originalLambda" />
+                <node concept="37vLTw" id="5IR_boHcVSo" role="37wK5m">
+                  <ref role="3cqZAo" node="$yb$20fATA" resolve="lambda" />
                 </node>
                 <node concept="3clFbT" id="5d4Vabvs8X9" role="37wK5m">
                   <property role="3clFbU" value="true" />

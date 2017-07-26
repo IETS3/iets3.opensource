@@ -364,6 +364,9 @@
     <node concept="PrWs8" id="18$bUx5ao3e" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="5IR_boI6ZWs" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
     <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />

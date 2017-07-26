@@ -20,6 +20,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2076,6 +2077,50 @@
           <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="5IR_boI6ZWy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="additionallyShownNodes" />
+      <ref role="13i0hy" to="kqnq:5Beavy19lGt" resolve="additionallyShownNodes" />
+      <node concept="3Tm1VV" id="5IR_boI6ZWz" role="1B3o_S" />
+      <node concept="3clFbS" id="5IR_boI6ZWE" role="3clF47">
+        <node concept="3cpWs8" id="5IR_boI75Lo" role="3cqZAp">
+          <node concept="3cpWsn" id="5IR_boI75Lr" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="2I9FWS" id="5IR_boI75Lm" role="1tU5fm" />
+            <node concept="2ShNRf" id="5IR_boI75Vb" role="33vP2m">
+              <node concept="2T8Vx0" id="5IR_boI75T9" role="2ShVmc">
+                <node concept="2I9FWS" id="5IR_boI75Ta" role="2T96Bj" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5IR_boI7633" role="3cqZAp">
+          <node concept="2OqwBi" id="5IR_boI76Vh" role="3clFbG">
+            <node concept="37vLTw" id="5IR_boI7631" role="2Oq$k0">
+              <ref role="3cqZAo" node="5IR_boI75Lr" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="5IR_boI77KR" role="2OqNvi">
+              <node concept="2OqwBi" id="5IR_boI72Q9" role="25WWJ7">
+                <node concept="2OqwBi" id="5IR_boI70Wa" role="2Oq$k0">
+                  <node concept="13iPFW" id="5IR_boI70J$" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="5IR_boI718Q" role="2OqNvi">
+                    <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
+                  </node>
+                </node>
+                <node concept="1yVyf7" id="5IR_boI74c3" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5IR_boI78gW" role="3cqZAp">
+          <node concept="37vLTw" id="5IR_boI78gU" role="3clFbG">
+            <ref role="3cqZAo" node="5IR_boI75Lr" resolve="res" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="5IR_boI6ZWF" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8iGDc">
