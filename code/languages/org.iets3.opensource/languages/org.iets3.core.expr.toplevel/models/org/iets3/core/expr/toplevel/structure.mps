@@ -103,6 +103,9 @@
     <node concept="PrWs8" id="5IR_boI4dB5" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
+    <node concept="PrWs8" id="4HGbj9Shf8S" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
