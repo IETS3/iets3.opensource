@@ -11,6 +11,7 @@
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
@@ -72,6 +73,11 @@
         <child id="1238857834412" name="index" index="1LF_Uc" />
       </concept>
     </language>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
@@ -86,6 +92,7 @@
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
@@ -953,6 +960,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="5d4VabvUrnR" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/trace.png" />
     </node>
   </node>
   <node concept="312cEu" id="aplxSIo9A7">
@@ -2228,35 +2238,54 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="6wNYzrU0fnn" role="3cqZAp">
-                          <node concept="2OqwBi" id="6wNYzrU0fno" role="3clFbG">
-                            <node concept="37vLTw" id="6wNYzrU0fnp" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1rUbSep6to" resolve="output" />
+                        <node concept="3cpWs8" id="4HGbj9Til8y" role="3cqZAp">
+                          <node concept="3cpWsn" id="4HGbj9Til8z" role="3cpWs9">
+                            <property role="TrG5h" value="ts" />
+                            <node concept="17QB3L" id="4HGbj9Til8v" role="1tU5fm" />
+                            <node concept="2OqwBi" id="4HGbj9Til8$" role="33vP2m">
+                              <node concept="37vLTw" id="4HGbj9Til8_" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1rUbSep6tl" resolve="record" />
+                              </node>
+                              <node concept="liA8E" id="4HGbj9Til8A" role="2OqNvi">
+                                <ref role="37wK5l" to="2ahs:6wNYzrTZgHJ" resolve="getTimeAsString" />
+                              </node>
                             </node>
-                            <node concept="liA8E" id="6wNYzrU0fnq" role="2OqNvi">
-                              <ref role="37wK5l" to="lzb2:~ColoredTextContainer.append(java.lang.String,com.intellij.ui.SimpleTextAttributes):void" resolve="append" />
-                              <node concept="3cpWs3" id="6wNYzrU0ghV" role="37wK5m">
-                                <node concept="Xl_RD" id="6wNYzrU0gnU" role="3uHU7w">
-                                  <property role="Xl_RC" value=" ms)" />
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="4HGbj9TifVt" role="3cqZAp">
+                          <node concept="3clFbS" id="4HGbj9TifVv" role="3clFbx">
+                            <node concept="3clFbF" id="6wNYzrU0fnn" role="3cqZAp">
+                              <node concept="2OqwBi" id="6wNYzrU0fno" role="3clFbG">
+                                <node concept="37vLTw" id="6wNYzrU0fnp" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1rUbSep6to" resolve="output" />
                                 </node>
-                                <node concept="3cpWs3" id="6wNYzrU1csI" role="3uHU7B">
-                                  <node concept="Xl_RD" id="6wNYzrU1cyH" role="3uHU7B">
-                                    <property role="Xl_RC" value="   (" />
+                                <node concept="liA8E" id="6wNYzrU0fnq" role="2OqNvi">
+                                  <ref role="37wK5l" to="lzb2:~ColoredTextContainer.append(java.lang.String,com.intellij.ui.SimpleTextAttributes):void" resolve="append" />
+                                  <node concept="3cpWs3" id="6wNYzrU0ghV" role="37wK5m">
+                                    <node concept="Xl_RD" id="6wNYzrU0gnU" role="3uHU7w">
+                                      <property role="Xl_RC" value=" ms)" />
+                                    </node>
+                                    <node concept="3cpWs3" id="6wNYzrU1csI" role="3uHU7B">
+                                      <node concept="Xl_RD" id="6wNYzrU1cyH" role="3uHU7B">
+                                        <property role="Xl_RC" value="   (" />
+                                      </node>
+                                      <node concept="37vLTw" id="4HGbj9Til8C" role="3uHU7w">
+                                        <ref role="3cqZAo" node="4HGbj9Til8z" resolve="ts" />
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node concept="2OqwBi" id="6wNYzrU0fns" role="3uHU7w">
-                                    <node concept="37vLTw" id="6wNYzrU0fnt" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="1rUbSep6tl" resolve="record" />
-                                    </node>
-                                    <node concept="liA8E" id="6wNYzrU0fnu" role="2OqNvi">
-                                      <ref role="37wK5l" to="2ahs:6wNYzrTZgHJ" resolve="getTime" />
-                                    </node>
+                                  <node concept="10M0yZ" id="6wNYzrU0f$g" role="37wK5m">
+                                    <ref role="3cqZAo" to="lzb2:~SimpleTextAttributes.GRAYED_ATTRIBUTES" resolve="GRAYED_ATTRIBUTES" />
+                                    <ref role="1PxDUh" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="10M0yZ" id="6wNYzrU0f$g" role="37wK5m">
-                                <ref role="3cqZAo" to="lzb2:~SimpleTextAttributes.GRAYED_ATTRIBUTES" resolve="GRAYED_ATTRIBUTES" />
-                                <ref role="1PxDUh" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
-                              </node>
+                            </node>
+                          </node>
+                          <node concept="3y3z36" id="4HGbj9TiiC2" role="3clFbw">
+                            <node concept="10Nm6u" id="4HGbj9TiiO7" role="3uHU7w" />
+                            <node concept="37vLTw" id="4HGbj9Til8B" role="3uHU7B">
+                              <ref role="3cqZAo" node="4HGbj9Til8z" resolve="ts" />
                             </node>
                           </node>
                         </node>
@@ -4482,6 +4511,9 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="4ciuUydNRCn" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
+    </node>
   </node>
   <node concept="sE7Ow" id="4yQfyMjvYR7">
     <property role="TrG5h" value="selectAllTraceNodeInCurrentTrace" />
@@ -4590,6 +4622,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="4ciuUydNRXF" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/traceShowAll.png" />
     </node>
   </node>
 </model>

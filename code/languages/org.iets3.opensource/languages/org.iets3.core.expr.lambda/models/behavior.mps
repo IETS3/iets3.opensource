@@ -21,7 +21,6 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -79,9 +78,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
@@ -1141,25 +1137,6 @@
               </node>
               <node concept="2qgKlT" id="7cphKbKO6qz" role="2OqNvi">
                 <ref role="37wK5l" node="6zmBjqUm7MF" resolve="requiredType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7cphKbKO6RU" role="3cqZAp">
-          <node concept="2OqwBi" id="7cphKbKO6RR" role="3clFbG">
-            <node concept="10M0yZ" id="7cphKbKO6RS" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="7cphKbKO6RT" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7cphKbKO7HQ" role="37wK5m">
-                <node concept="37vLTw" id="7cphKbKO7HX" role="3uHU7w">
-                  <ref role="3cqZAo" node="7cphKbKO6qs" resolve="ttt" />
-                </node>
-                <node concept="Xl_RD" id="7cphKbKO747" role="3uHU7B">
-                  <property role="Xl_RC" value="expected type: " />
-                </node>
               </node>
             </node>
           </node>

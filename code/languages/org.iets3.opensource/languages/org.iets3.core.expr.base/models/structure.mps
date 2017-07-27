@@ -412,6 +412,9 @@
     <node concept="PrWs8" id="5ye9uPrgl8_" role="PzmwI">
       <ref role="PrY4T" node="5ye9uPrgbPQ" resolve="IOptionDerefContext" />
     </node>
+    <node concept="PrWs8" id="2kg0xI3t7B$" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="TrG5h" value="IBigExpression" />
