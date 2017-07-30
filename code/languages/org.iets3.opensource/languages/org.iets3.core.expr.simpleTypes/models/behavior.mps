@@ -22,6 +22,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1126,6 +1127,21 @@
         </node>
       </node>
       <node concept="17QB3L" id="2q1ydqQjUrA" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4hW8Ne01gRC" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isTrivial" />
+      <ref role="13i0hy" to="kqnq:3T40JVg3mh$" resolve="isTrivial" />
+      <node concept="3Tm1VV" id="4hW8Ne01gRD" role="1B3o_S" />
+      <node concept="3clFbS" id="4hW8Ne01gS1" role="3clF47">
+        <node concept="3clFbF" id="4hW8Ne01gTv" role="3cqZAp">
+          <node concept="3clFbT" id="4hW8Ne01gTu" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4hW8Ne01gS2" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6kR0qIbHBaT">

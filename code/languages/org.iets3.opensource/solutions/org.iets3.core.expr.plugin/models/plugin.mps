@@ -2754,7 +2754,7 @@
         <ref role="tCJdB" node="5ipapt3lw0T" resolve="showTracer" />
       </node>
       <node concept="tCFHf" id="4yQfyMjrP6N" role="ftvYc">
-        <ref role="tCJdB" node="4yQfyMjrpAh" resolve="selectFirstTraceNodeInCurrentTrace" />
+        <ref role="tCJdB" node="4yQfyMjrpAh" resolve="selectNextTraceNodeInCurrentTrace" />
       </node>
       <node concept="tCFHf" id="4yQfyMjwKJW" role="ftvYc">
         <ref role="tCJdB" node="4yQfyMjvYR7" resolve="selectAllTraceNodeInCurrentTrace" />
@@ -4404,8 +4404,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="4yQfyMjrpAh">
-    <property role="TrG5h" value="selectFirstTraceNodeInCurrentTrace" />
-    <property role="2uzpH1" value="Select first trace of this Node" />
+    <property role="TrG5h" value="selectNextTraceNodeInCurrentTrace" />
+    <property role="2uzpH1" value="Select next trace of this Node" />
     <node concept="1DS2jV" id="4yQfyMjrpAi" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />

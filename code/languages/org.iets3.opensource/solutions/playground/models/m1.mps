@@ -33,13 +33,25 @@
       <concept id="5239443577662574274" name="com.mbeddr.mpsutil.interpreter.structure.RevealAnnotation" flags="ng" index="3rWr3I" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
+        <child id="7971844778466793072" name="then" index="2fGnzA" />
+        <child id="7971844778466793070" name="when" index="2fGnzS" />
+      </concept>
+      <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
+        <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
+      </concept>
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+        <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
+      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -70,6 +82,7 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7971844778467001950" name="org.iets3.core.expr.simpleTypes.structure.OtherwiseLiteral" flags="ng" index="2fHqz8" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -430,8 +443,64 @@
       </node>
     </node>
     <node concept="_ixoA" id="5d4VabuLT4B" role="_iOnB" />
+    <node concept="1aga60" id="$lfQMojiGX" role="_iOnB">
+      <property role="TrG5h" value="countTo" />
+      <node concept="2fGnzi" id="$lfQMojj28" role="1ahQXP">
+        <node concept="2fGnzd" id="$lfQMojj29" role="2fGnxs">
+          <node concept="30cPrO" id="$lfQMojj36" role="2fGnzS">
+            <node concept="30bXRB" id="$lfQMojj3x" role="30dEs_">
+              <property role="30bXRw" value="0" />
+            </node>
+            <node concept="1afdae" id="$lfQMojj2R" role="30dEsF">
+              <ref role="1afue_" node="$lfQMojiNS" resolve="n" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="$lfQMojj4G" role="2fGnzA">
+            <property role="30bXRw" value="0" />
+          </node>
+        </node>
+        <node concept="2fGnzd" id="$lfQMojj2a" role="2fGnxs">
+          <node concept="2fHqz8" id="$lfQMojj5S" role="2fGnzS" />
+          <node concept="30dDZf" id="4hW8NdZWIZh" role="2fGnzA">
+            <node concept="30bXRB" id="4hW8NdZWIZy" role="30dEs_">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="1af_rf" id="$lfQMojj7D" role="30dEsF">
+              <ref role="1afhQb" node="$lfQMojiGX" resolve="countTo" />
+              <node concept="30dvUo" id="$lfQMojjaz" role="1afhQ5">
+                <node concept="30bXRB" id="$lfQMojjaD" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="1afdae" id="$lfQMojj94" role="30dEsF">
+                  <ref role="1afue_" node="$lfQMojiNS" resolve="n" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ahQXy" id="$lfQMojiNS" role="1ahQWs">
+        <property role="TrG5h" value="n" />
+        <node concept="30bXR$" id="$lfQMojiO9" role="3ix9CU" />
+      </node>
+      <node concept="30bXR$" id="$lfQMojjfy" role="2zM23F" />
+    </node>
+    <node concept="_ixoA" id="$lfQMojivR" role="_iOnB" />
+    <node concept="_ixoA" id="$lfQMojiAp" role="_iOnB" />
     <node concept="_fkuM" id="4fb2DFBg_mc" role="_iOnB">
       <property role="TrG5h" value="TestF" />
+      <node concept="_fkuZ" id="$lfQMojjkr" role="_fkp5">
+        <node concept="_fku$" id="$lfQMojjks" role="_fkur" />
+        <node concept="1af_rf" id="$lfQMojjn$" role="_fkuY">
+          <ref role="1afhQb" node="$lfQMojiGX" resolve="countTo" />
+          <node concept="30bXRB" id="$lfQMojjnJ" role="1afhQ5">
+            <property role="30bXRw" value="50" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="$lfQMojjqc" role="_fkuS">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
       <node concept="_fkuZ" id="5IR_boHRvA7" role="_fkp5">
         <node concept="_fku$" id="5IR_boHRvA8" role="_fkur" />
         <node concept="1af_rf" id="5IR_boHRvBA" role="_fkuY">
