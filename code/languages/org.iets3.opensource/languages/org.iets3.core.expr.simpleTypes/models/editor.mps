@@ -2,9 +2,9 @@
 <model ref="r:6d94c93d-1ff8-4e1f-8fca-b92e9d42f070(org.iets3.core.expr.simpleTypes.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
@@ -128,12 +128,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
@@ -569,34 +563,6 @@
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="IMhG9rs$sX" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="IW6AY" id="4DGyFN7UOZF">
-    <property role="3GE5qa" value="numeric.number" />
-    <ref role="aqKnT" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
-    <node concept="1Qtc8_" id="4DGyFN7UOZG" role="IW6Ez">
-      <node concept="3cWJ9i" id="4DGyFN7UOZK" role="1Qtc8$">
-        <node concept="CtIbL" id="4DGyFN7UOZM" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
-        </node>
-      </node>
-      <node concept="mvV$s" id="4DGyFN7UOZQ" role="1Qtc8A">
-        <node concept="mvVNg" id="4DGyFN7UOZS" role="mvV$0">
-          <node concept="3clFbS" id="4DGyFN7UOZT" role="2VODD2">
-            <node concept="3SKdUt" id="4DGyFN7VFnK" role="3cqZAp">
-              <node concept="3SKdUq" id="4DGyFN7VFnM" role="3SKWNk">
-                <property role="3SKdUp" value="all transformations of parent should be applicable here" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="4DGyFN7UPr1" role="3cqZAp">
-              <node concept="2OqwBi" id="4DGyFN7UPyY" role="3clFbG">
-                <node concept="7Obwk" id="4DGyFN7UPr0" role="2Oq$k0" />
-                <node concept="1mfA1w" id="4DGyFN7UPG1" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
