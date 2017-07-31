@@ -99,6 +99,9 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -2481,6 +2484,36 @@
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
     <node concept="3b7kt6" id="OJuIQpzfqZ" role="10PD9s" />
     <node concept="1gjT0q" id="OJuIQp_h9V" role="10PD9s" />
+    <node concept="m$_wf" id="7eF9rfAuutf" role="3989C9">
+      <property role="m$_wk" value="debugger.api.dummy" />
+      <node concept="m$_yC" id="4VtXW7uugpK" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
+      </node>
+      <node concept="m$_yC" id="4VtXW7uuipc" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
+      <node concept="m$_yC" id="3jk4DumQk80" role="m$_yJ">
+        <ref role="m$_y1" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
+      </node>
+      <node concept="3_J27D" id="7eF9rfAuutg" role="m$_yQ">
+        <node concept="3Mxwew" id="7eF9rfAuuth" role="3MwsjC">
+          <property role="3MwjfP" value="debugger.api.dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7eF9rfAuuti" role="m_cZH">
+        <node concept="3Mxwew" id="7eF9rfAuutj" role="3MwsjC">
+          <property role="3MwjfP" value="debugger.api.dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7eF9rfAuutk" role="m$_w8">
+        <node concept="3Mxwew" id="7eF9rfAuutl" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+      <node concept="m$_yB" id="3jk4DumQjZ4" role="m$_yh">
+        <ref role="m$_yA" node="3V7bLMR_sg" resolve="org.iets3.core.trace.test" />
+      </node>
+    </node>
     <node concept="1E1JtA" id="OJuIQp$d7j" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="3LESm3" value="2614fab6-e994-4127-9a5d-8c8cd7ba2833" />
