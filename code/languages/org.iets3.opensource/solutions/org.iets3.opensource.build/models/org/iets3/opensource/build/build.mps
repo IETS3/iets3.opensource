@@ -2476,8 +2476,8 @@
         <node concept="L2wRC" id="3V7bLMRt0j" role="39821P">
           <ref role="L2wRA" node="3V7bLMRsIA" resolve="test.iets3.core.tracequery" />
         </node>
-        <node concept="L2wRC" id="3V7bLMRACK" role="39821P">
-          <ref role="L2wRA" node="3V7bLMR_sg" resolve="org.iets3.core.trace.test" />
+        <node concept="m$_wl" id="6SMTLRsl7r6" role="39821P">
+          <ref role="m_rDy" node="7eF9rfAuutf" resolve="debugger.api.dummy" />
         </node>
       </node>
     </node>
