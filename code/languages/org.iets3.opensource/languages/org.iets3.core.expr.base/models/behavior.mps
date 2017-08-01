@@ -17807,5 +17807,86 @@
     <node concept="2tJIrI" id="5syY_AL6TMu" role="jymVt" />
     <node concept="3Tm1VV" id="5syY_AL6TMv" role="1B3o_S" />
   </node>
+  <node concept="13h7C7" id="4hW8Ne0ns2Z">
+    <ref role="13h7C2" to="hm2y:4hW8Ne0bQYm" resolve="Revealer" />
+    <node concept="13hLZK" id="4hW8Ne0ns30" role="13h7CW">
+      <node concept="3clFbS" id="4hW8Ne0ns31" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4hW8Ne0ns4c" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="mustBeRevealed" />
+      <ref role="13i0hy" to="kqnq:4hW8Ne0aLJi" resolve="mustBeRevealed" />
+      <node concept="3Tm1VV" id="4hW8Ne0ns4d" role="1B3o_S" />
+      <node concept="3clFbS" id="4hW8Ne0ns4i" role="3clF47">
+        <node concept="3clFbF" id="4hW8Ne0nsLf" role="3cqZAp">
+          <node concept="1Wc70l" id="4hW8Ne0ntxq" role="3clFbG">
+            <node concept="2OqwBi" id="4hW8Ne0ntUQ" role="3uHU7w">
+              <node concept="1eOMI4" id="4hW8Ne0nt$D" role="2Oq$k0">
+                <node concept="10QFUN" id="4hW8Ne0nt$C" role="1eOMHV">
+                  <node concept="37vLTw" id="4hW8Ne0nt$B" role="10QFUP">
+                    <ref role="3cqZAo" node="4hW8Ne0ns4j" resolve="conditionValue" />
+                  </node>
+                  <node concept="3uibUv" id="4hW8Ne0ntCF" role="10QFUM">
+                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4hW8Ne0nua5" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Boolean.booleanValue():boolean" resolve="booleanValue" />
+              </node>
+            </node>
+            <node concept="2ZW3vV" id="4hW8Ne0nsXs" role="3uHU7B">
+              <node concept="3uibUv" id="4hW8Ne0nsZ8" role="2ZW6by">
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+              </node>
+              <node concept="37vLTw" id="4hW8Ne0nsLd" role="2ZW6bz">
+                <ref role="3cqZAo" node="4hW8Ne0ns4j" resolve="conditionValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4hW8Ne0ns4j" role="3clF46">
+        <property role="TrG5h" value="conditionValue" />
+        <node concept="3uibUv" id="4hW8Ne0ns4k" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="10P_77" id="4hW8Ne0ns4l" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4hW8Ne0ns4o" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTheNodeToEvalute" />
+      <ref role="13i0hy" to="kqnq:4hW8Ne0mTH4" resolve="getTheNodeToEvalute" />
+      <node concept="3Tm1VV" id="4hW8Ne0ns4p" role="1B3o_S" />
+      <node concept="3clFbS" id="4hW8Ne0ns4s" role="3clF47">
+        <node concept="3clFbF" id="5U8d23Pexp7" role="3cqZAp">
+          <node concept="2OqwBi" id="5U8d23Pexp4" role="3clFbG">
+            <node concept="10M0yZ" id="5U8d23Pexp5" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5U8d23Pexp6" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5U8d23Pexta" role="37wK5m">
+                <property role="Xl_RC" value="cehcked." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4hW8Ne0ns8H" role="3cqZAp">
+          <node concept="2OqwBi" id="4hW8Ne0nshO" role="3clFbG">
+            <node concept="13iPFW" id="4hW8Ne0ns8G" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4hW8Ne0nsrM" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:4hW8Ne0bR4I" resolve="condition" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4hW8Ne0ns4t" role="3clF45" />
+    </node>
+  </node>
 </model>
 

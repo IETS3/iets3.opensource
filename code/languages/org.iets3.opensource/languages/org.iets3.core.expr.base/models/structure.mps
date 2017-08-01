@@ -1385,5 +1385,26 @@
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4hW8Ne0bQYm">
+    <property role="EcuMT" value="4934857995792117654" />
+    <property role="TrG5h" value="Revealer" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="4hW8Ne0bR4I" role="1TKVEi">
+      <property role="IQ2ns" value="4934857995792118062" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4hW8Ne0bR4F" role="PzmwI">
+      <ref role="PrY4T" to="3673:4hW8Ne0aLGg" resolve="IReveal" />
+    </node>
+    <node concept="M6xJ_" id="4hW8Ne0nqFq" role="lGtFl">
+      <property role="Hh88m" value="reveal" />
+      <node concept="trNpa" id="4hW8Ne0nqFz" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -6150,5 +6150,34 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="4hW8Ne0dYAT">
+    <property role="TrG5h" value="typeof_Revealer" />
+    <node concept="3clFbS" id="4hW8Ne0dYAU" role="18ibNy">
+      <node concept="1ZobV4" id="4hW8Ne0dZQT" role="3cqZAp">
+        <node concept="mw_s8" id="4hW8Ne0dZRH" role="1ZfhKB">
+          <node concept="2YIFZM" id="4hW8Ne0dZTl" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4hW8Ne0dZQW" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4hW8Ne0dZe1" role="mwGJk">
+            <node concept="2OqwBi" id="4hW8Ne0dZnK" role="1Z2MuG">
+              <node concept="1YBJjd" id="4hW8Ne0dZeC" role="2Oq$k0">
+                <ref role="1YBMHb" node="4hW8Ne0dYAW" resolve="re" />
+              </node>
+              <node concept="3TrEf2" id="4hW8Ne0dZ_Z" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:4hW8Ne0bR4I" resolve="condition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4hW8Ne0dYAW" role="1YuTPh">
+      <property role="TrG5h" value="re" />
+      <ref role="1YaFvo" to="hm2y:4hW8Ne0bQYm" resolve="Revealer" />
+    </node>
+  </node>
 </model>
 
