@@ -2444,12 +2444,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="3lVEmnR3I0C" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.iets3.github.opensource.home" />
-      <node concept="398BVA" id="3lVEmnR3I7q" role="398pKh">
-        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
-      </node>
-    </node>
     <node concept="398rNT" id="OJuIQp_rqy" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts.platform" />
       <node concept="398BVA" id="OJuIQp_rAi" role="398pKh">
@@ -2658,12 +2652,6 @@
         <node concept="3bR9La" id="3V7bLMR_$B" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="3V7bLMR_$C" role="3bR37C">
-        <node concept="3bR9La" id="3V7bLMR_$D" role="1SiIV1">
-          <property role="3bR36h" value="false" />
-          <ref role="3bR37D" node="1PzuxQOTPCe" resolve="org.iets3.core.trace" />
         </node>
       </node>
       <node concept="1SiIV0" id="3V7bLMR_$E" role="3bR37C">
