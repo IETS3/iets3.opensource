@@ -1010,5 +1010,42 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4hLehKU05dZ">
+    <property role="3GE5qa" value="collection" />
+    <ref role="1XX52x" to="700h:4hLehKTZXcg" resolve="FoldOp" />
+    <node concept="3EZMnI" id="4hLehKU05ea" role="2wV5jI">
+      <node concept="2iRfu4" id="4hLehKU05eb" role="2iSdaV" />
+      <node concept="PMmxH" id="4hLehKU05e7" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="4hLehKU05ep" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4hLehKU05g9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4hLehKU05gh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4hLehKU05eA" role="3EZMnx">
+        <ref role="1NtTu8" to="700h:4hLehKU05d5" resolve="seed" />
+      </node>
+      <node concept="3F0ifn" id="4hLehKU05f1" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="4hLehKU05gq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4hLehKU05fy" role="3EZMnx">
+        <ref role="1NtTu8" to="700h:4hLehKU05d8" resolve="combiner" />
+      </node>
+      <node concept="3F0ifn" id="4hLehKU05fV" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="4hLehKU05gn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
