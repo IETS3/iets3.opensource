@@ -72,9 +72,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -582,17 +579,13 @@
                   <property role="3SKdUp" value="happens after classes are reloaded" />
                 </node>
               </node>
-              <node concept="3clFbF" id="6P_KyRojSfE" role="3cqZAp">
-                <node concept="2OqwBi" id="6P_KyRojSfB" role="3clFbG">
-                  <node concept="10M0yZ" id="6P_KyRojSfC" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <node concept="3clFbF" id="G5D_q$ZtxT" role="3cqZAp">
+                <node concept="2OqwBi" id="G5D_q$ZtRd" role="3clFbG">
+                  <node concept="37vLTw" id="G5D_q$ZtxR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
                   </node>
-                  <node concept="liA8E" id="6P_KyRojSfD" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                    <node concept="37vLTw" id="6P_KyRojSjW" role="37wK5m">
-                      <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
-                    </node>
+                  <node concept="liA8E" id="G5D_q$ZuuJ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

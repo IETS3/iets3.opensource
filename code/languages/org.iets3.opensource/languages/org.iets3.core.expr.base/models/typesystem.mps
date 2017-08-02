@@ -24,8 +24,6 @@
     <import index="gsp2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference.util(MPS.Core/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -70,9 +68,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1351,7 +1346,7 @@
     </node>
     <node concept="1YaCAy" id="2rOWEwsFyP6" role="1YuTPh">
       <property role="TrG5h" value="ne" />
-      <ref role="1YaFvo" to="hm2y:2rOWEwsFyNP" resolve="NoneExpression" />
+      <ref role="1YaFvo" to="hm2y:2rOWEwsFyNP" resolve="NoneLiteral" />
     </node>
   </node>
   <node concept="1YbPZF" id="UN2ftLUxoV">
@@ -3131,25 +3126,6 @@
                 <node concept="2QUAEa" id="TuTPrvG3mP" role="2Oq$k0" />
                 <node concept="liA8E" id="TuTPrvG3mQ" role="2OqNvi">
                   <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7VuYlCR3rAu" role="3cqZAp">
-          <node concept="2OqwBi" id="7VuYlCR3rAr" role="3clFbG">
-            <node concept="10M0yZ" id="7VuYlCR3rAs" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="7VuYlCR3rAt" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7VuYlCR3slF" role="37wK5m">
-                <node concept="37vLTw" id="7VuYlCR3soH" role="3uHU7w">
-                  <ref role="3cqZAo" node="TuTPrvG3mK" resolve="st" />
-                </node>
-                <node concept="Xl_RD" id="7VuYlCR3rUa" role="3uHU7B">
-                  <property role="Xl_RC" value="st: " />
                 </node>
               </node>
             </node>
