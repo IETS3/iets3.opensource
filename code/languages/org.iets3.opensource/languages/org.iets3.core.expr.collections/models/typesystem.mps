@@ -6,7 +6,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,11 +20,6 @@
     <import index="8q4f" ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)" />
   </imports>
   <registry>
-    <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
-        <child id="7554398283339749510" name="baseType" index="3iBWmK" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -39,6 +33,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -256,6 +253,9 @@
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -4234,6 +4234,52 @@
         <property role="TrG5h" value="contextType" />
       </node>
       <node concept="3clFbH" id="4hLehKU25VW" role="3cqZAp" />
+      <node concept="3SKdUt" id="7SSuWHgX8s5" role="3cqZAp">
+        <node concept="3SKdUq" id="7SSuWHgX8s7" role="3SKWNk">
+          <property role="3SKdUp" value="we cannot use a light quoataion because this will yield a node cast exception and we cannot " />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7SSuWHgXpB9" role="3cqZAp">
+        <node concept="3SKdUq" id="7SSuWHgXpBa" role="3SKWNk">
+          <property role="3SKdUp" value="use a quotation because this would lead to a cyclic dependency (we would use our own language). " />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7SSuWHgXpSu" role="3cqZAp">
+        <node concept="3SKdUq" id="7SSuWHgXpSv" role="3SKWNk">
+          <property role="3SKdUp" value="We have to live with this error" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="7SSuWHgW7oT" role="3cqZAp">
+        <node concept="3cpWsn" id="7SSuWHgW7oU" role="3cpWs9">
+          <property role="TrG5h" value="colType" />
+          <node concept="3Tqbb2" id="7SSuWHgW7oS" role="1tU5fm">
+            <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+          </node>
+          <node concept="2ShNRf" id="7SSuWHgW7oV" role="33vP2m">
+            <node concept="3zrR0B" id="7SSuWHgW7oW" role="2ShVmc">
+              <node concept="3Tqbb2" id="7SSuWHgW7oX" role="3zrR0E">
+                <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="7SSuWHgXowB" role="3cqZAp">
+        <node concept="37vLTI" id="7SSuWHgXpwv" role="3clFbG">
+          <node concept="1Z$b5t" id="7SSuWHgXpzd" role="37vLTx">
+            <ref role="1Z$eMM" node="4hLehKU27b1" resolve="contextType" />
+          </node>
+          <node concept="2OqwBi" id="7SSuWHgXoJM" role="37vLTJ">
+            <node concept="37vLTw" id="7SSuWHgXow_" role="2Oq$k0">
+              <ref role="3cqZAo" node="7SSuWHgW7oU" resolve="colType" />
+            </node>
+            <node concept="3TrEf2" id="7SSuWHgXp9M" role="2OqNvi">
+              <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7SSuWHgULzv" role="3cqZAp" />
       <node concept="1ZoDhX" id="4hLehKU29ow" role="3cqZAp">
         <node concept="mw_s8" id="4hLehKU29Mo" role="1ZfhKB">
           <node concept="1Z2H0r" id="4hLehKU29Mk" role="mwGJk">
@@ -4247,17 +4293,9 @@
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="4hLehKU29oz" role="1ZfhK$">
-          <node concept="2c44tf" id="4hLehKU27M0" role="mwGJk">
-            <node concept="3iBWmN" id="4hLehKU291E" role="2c44tc">
-              <node concept="2vmvy5" id="4hLehKU291Q" role="3iBWmK">
-                <node concept="2c44te" id="4hLehKU294f" role="lGtFl">
-                  <node concept="1Z$b5t" id="4hLehKU294X" role="2c44t1">
-                    <ref role="1Z$eMM" node="4hLehKU27b1" resolve="contextType" />
-                  </node>
-                </node>
-              </node>
-            </node>
+        <node concept="mw_s8" id="7SSuWHgXojg" role="1ZfhK$">
+          <node concept="37vLTw" id="7SSuWHgXoje" role="mwGJk">
+            <ref role="3cqZAo" node="7SSuWHgW7oU" resolve="colType" />
           </node>
         </node>
       </node>
