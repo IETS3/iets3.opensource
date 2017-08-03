@@ -17888,5 +17888,93 @@
       <node concept="3Tqbb2" id="4hW8Ne0ns4t" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="XblfskIwwQ">
+    <ref role="13h7C2" to="hm2y:XblfskIwr9" resolve="IMultiTraceRoot" />
+    <node concept="13i0hz" id="XblfskIwx1" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTraceCategories" />
+      <node concept="3Tm1VV" id="XblfskIwx2" role="1B3o_S" />
+      <node concept="_YKpA" id="XblfskIxVq" role="3clF45">
+        <node concept="17QB3L" id="XblfskIxZ6" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="XblfskIwx4" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="XblfskIwx7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isTraceAvailable" />
+      <node concept="3Tm1VV" id="XblfskIwx8" role="1B3o_S" />
+      <node concept="10P_77" id="XblfskIwx9" role="3clF45" />
+      <node concept="3clFbS" id="XblfskIwxa" role="3clF47">
+        <node concept="3clFbF" id="XblfskIwxb" role="3cqZAp">
+          <node concept="3y3z36" id="XblfskIwxc" role="3clFbG">
+            <node concept="10Nm6u" id="XblfskIwxd" role="3uHU7w" />
+            <node concept="2OqwBi" id="XblfskIwxe" role="3uHU7B">
+              <node concept="13iPFW" id="XblfskIwxf" role="2Oq$k0" />
+              <node concept="2qgKlT" id="XblfskIwxg" role="2OqNvi">
+                <ref role="37wK5l" node="XblfskIwxp" resolve="getRootTrace" />
+                <node concept="37vLTw" id="XblfskIypE" role="37wK5m">
+                  <ref role="3cqZAo" node="XblfskIyll" resolve="cat" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XblfskIyll" role="3clF46">
+        <property role="TrG5h" value="cat" />
+        <node concept="17QB3L" id="XblfskIylk" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="XblfskIwxh" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTabTitle" />
+      <node concept="3Tm1VV" id="XblfskIwxi" role="1B3o_S" />
+      <node concept="17QB3L" id="XblfskIwxj" role="3clF45" />
+      <node concept="3clFbS" id="XblfskIwxk" role="3clF47">
+        <node concept="3clFbF" id="XblfskIwxl" role="3cqZAp">
+          <node concept="3cpWs3" id="XblfskIyDy" role="3clFbG">
+            <node concept="3cpWs3" id="XblfskIz6r" role="3uHU7B">
+              <node concept="Xl_RD" id="XblfskIz6u" role="3uHU7w">
+                <property role="Xl_RC" value=": " />
+              </node>
+              <node concept="37vLTw" id="XblfskIyHB" role="3uHU7B">
+                <ref role="3cqZAo" node="XblfskIyx9" resolve="cat" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="XblfskIwxm" role="3uHU7w">
+              <node concept="13iPFW" id="XblfskIwxn" role="2Oq$k0" />
+              <node concept="2qgKlT" id="XblfskIwxo" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="XblfskIyx9" role="3clF46">
+        <property role="TrG5h" value="cat" />
+        <node concept="17QB3L" id="XblfskIyx8" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="XblfskIwxp" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getRootTrace" />
+      <node concept="3Tm1VV" id="XblfskIwxq" role="1B3o_S" />
+      <node concept="3clFbS" id="XblfskIwxr" role="3clF47" />
+      <node concept="3uibUv" id="XblfskIwxs" role="3clF45">
+        <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+      </node>
+      <node concept="37vLTG" id="XblfskIzmR" role="3clF46">
+        <property role="TrG5h" value="cat" />
+        <node concept="17QB3L" id="XblfskIzmQ" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="XblfskIwwR" role="13h7CW">
+      <node concept="3clFbS" id="XblfskIwwS" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

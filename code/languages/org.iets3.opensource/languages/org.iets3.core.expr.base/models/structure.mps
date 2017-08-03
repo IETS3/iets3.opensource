@@ -1406,5 +1406,12 @@
       </node>
     </node>
   </node>
+  <node concept="PlHQZ" id="XblfskIwr9">
+    <property role="EcuMT" value="1102067954003609289" />
+    <property role="TrG5h" value="IMultiTraceRoot" />
+    <node concept="PrWs8" id="XblfskIwra" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+  </node>
 </model>
 
