@@ -26,15 +26,15 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -67,6 +67,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -144,8 +145,33 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="QB0g5" id="cJpacq5T1u" role="QCWH9">
         <node concept="3clFbS" id="cJpacq5T1v" role="2VODD2">
-          <node concept="3clFbF" id="cJpacq5Tga" role="3cqZAp">
-            <node concept="2OqwBi" id="65XyadYKJgV" role="3clFbG">
+          <node concept="3clFbJ" id="4SwD0JT7oG5" role="3cqZAp">
+            <node concept="3clFbS" id="4SwD0JT7oG7" role="3clFbx">
+              <node concept="3cpWs6" id="4SwD0JT7qif" role="3cqZAp">
+                <node concept="3clFbT" id="4SwD0JT7qsY" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4SwD0JT7pL5" role="3clFbw">
+              <node concept="2OqwBi" id="4SwD0JT7p22" role="2Oq$k0">
+                <node concept="EsrRn" id="4SwD0JT7oNZ" role="2Oq$k0" />
+                <node concept="2yIwOk" id="4SwD0JT7ppV" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="4SwD0JT7q3n" role="2OqNvi">
+                <ref role="37wK5l" to="gdgh:4SwD0JT7m0l" resolve="allowNonIdentifierNames" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4SwD0JT7rmr" role="3cqZAp">
+            <node concept="3clFbS" id="4SwD0JT7rmt" role="3clFbx">
+              <node concept="3cpWs6" id="4SwD0JT7rFY" role="3cqZAp">
+                <node concept="3clFbT" id="4SwD0JT7rGb" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="65XyadYKJgV" role="3clFbw">
               <node concept="1Wqviy" id="65XyadYKJgW" role="2Oq$k0" />
               <node concept="liA8E" id="65XyadYKJgX" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
@@ -153,6 +179,11 @@
                   <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_']]*" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="4SwD0JT7s2a" role="3cqZAp">
+            <node concept="3clFbT" id="4SwD0JT7s2C" role="3cqZAk">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
