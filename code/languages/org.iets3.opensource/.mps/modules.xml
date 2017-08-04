@@ -19,7 +19,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.json/org.iets3.core.json.mpl" folder="json" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.plugin/org.iets3.core.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace.sandbox/org.iets3.core.trace.test.mpl" folder="trace" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.trace/org.iets3.core.trace.mpl" folder="trace" />
@@ -29,7 +28,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.repl.plugin/org.iets3.core.expr.repl.plugin.msd" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.json.sandbox/org.iets3.core.json.sandbox.msd" folder="json" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
