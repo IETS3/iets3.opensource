@@ -2,8 +2,8 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
@@ -651,9 +651,6 @@
     <node concept="PrWs8" id="28GlH0_ERSs" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
-    <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
-    </node>
     <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
@@ -673,6 +670,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7zXSNv$jGoL" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="6f7f4BmjQ2D" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="6NHlpK$oaAP">

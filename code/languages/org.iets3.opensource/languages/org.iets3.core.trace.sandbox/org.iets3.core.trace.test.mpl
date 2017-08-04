@@ -31,7 +31,6 @@
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
         <language slang="l:583939be-ded0-4735-a055-a74f8477fc34:org.iets3.core.attributes" version="0" />
         <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
-        <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.sandbox" version="-1" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -51,7 +50,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
   </dependencies>
   <languageVersions>
