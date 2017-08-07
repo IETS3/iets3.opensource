@@ -1385,6 +1385,13 @@
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
+  <node concept="PlHQZ" id="XblfskIwr9">
+    <property role="EcuMT" value="1102067954003609289" />
+    <property role="TrG5h" value="IMultiTraceRoot" />
+    <node concept="PrWs8" id="XblfskIwra" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="4hW8Ne0bQYm">
     <property role="EcuMT" value="4934857995792117654" />
     <property role="TrG5h" value="Revealer" />
@@ -1406,12 +1413,9 @@
       </node>
     </node>
   </node>
-  <node concept="PlHQZ" id="XblfskIwr9">
-    <property role="EcuMT" value="1102067954003609289" />
-    <property role="TrG5h" value="IMultiTraceRoot" />
-    <node concept="PrWs8" id="XblfskIwra" role="PrDN$">
-      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
-    </node>
+  <node concept="PlHQZ" id="6BCTLIjCra2">
+    <property role="EcuMT" value="7631603674206286466" />
+    <property role="TrG5h" value="IControlAdvancedFeatures" />
   </node>
 </model>
 

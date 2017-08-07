@@ -6179,5 +6179,35 @@
       <ref role="1YaFvo" to="hm2y:4hW8Ne0bQYm" resolve="Revealer" />
     </node>
   </node>
+  <node concept="18kY7G" id="6BCTLIjCrec">
+    <property role="TrG5h" value="check_IControlAdvancedFeatures" />
+    <node concept="3clFbS" id="6BCTLIjCred" role="18ibNy">
+      <node concept="3clFbJ" id="6BCTLIjCres" role="3cqZAp">
+        <node concept="3y3z36" id="6BCTLIjCrEa" role="3clFbw">
+          <node concept="10Nm6u" id="6BCTLIjCrEl" role="3uHU7w" />
+          <node concept="2OqwBi" id="6BCTLIjCrn4" role="3uHU7B">
+            <node concept="1YBJjd" id="6BCTLIjCreC" role="2Oq$k0">
+              <ref role="1YBMHb" node="6BCTLIjCref" resolve="icaf" />
+            </node>
+            <node concept="1mfA1w" id="6BCTLIjCrsT" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6BCTLIjCreu" role="3clFbx">
+          <node concept="2MkqsV" id="6BCTLIjCrEQ" role="3cqZAp">
+            <node concept="Xl_RD" id="6BCTLIjCrF2" role="2MkJ7o">
+              <property role="Xl_RC" value="IControlAdvancedFeatures should only be applied to roots, won't work otherwise." />
+            </node>
+            <node concept="1YBJjd" id="6BCTLIjCrGq" role="2OEOjV">
+              <ref role="1YBMHb" node="6BCTLIjCref" resolve="icaf" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6BCTLIjCref" role="1YuTPh">
+      <property role="TrG5h" value="icaf" />
+      <ref role="1YaFvo" to="hm2y:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
+    </node>
+  </node>
 </model>
 
