@@ -62,7 +62,6 @@
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -2256,20 +2255,6 @@
               </node>
               <node concept="3clFbJ" id="5U8d23PMyi9" role="3cqZAp">
                 <node concept="3clFbS" id="5U8d23PMyib" role="3clFbx">
-                  <node concept="3clFbF" id="5U8d23PPPjU" role="3cqZAp">
-                    <node concept="2OqwBi" id="5U8d23PPPjR" role="3clFbG">
-                      <node concept="10M0yZ" id="5U8d23PPPjS" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="5U8d23PPPjT" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="Xl_RD" id="5U8d23PPQxz" role="37wK5m">
-                          <property role="Xl_RC" value="gtay!" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="5U8d23PMR3c" role="3cqZAp">
                     <node concept="37vLTI" id="5U8d23PMUH0" role="3clFbG">
                       <node concept="10M0yZ" id="5U8d23PMXUk" role="37vLTx">
