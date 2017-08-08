@@ -17685,20 +17685,6 @@
       <ref role="13i0hy" to="kqnq:4hW8Ne0mTH4" resolve="getTheNodeToEvalute" />
       <node concept="3Tm1VV" id="4hW8Ne0ns4p" role="1B3o_S" />
       <node concept="3clFbS" id="4hW8Ne0ns4s" role="3clF47">
-        <node concept="3clFbF" id="5U8d23Pexp7" role="3cqZAp">
-          <node concept="2OqwBi" id="5U8d23Pexp4" role="3clFbG">
-            <node concept="10M0yZ" id="5U8d23Pexp5" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="5U8d23Pexp6" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5U8d23Pexta" role="37wK5m">
-                <property role="Xl_RC" value="cehcked." />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4hW8Ne0ns8H" role="3cqZAp">
           <node concept="2OqwBi" id="4hW8Ne0nshO" role="3clFbG">
             <node concept="13iPFW" id="4hW8Ne0ns8G" role="2Oq$k0" />
