@@ -1989,7 +1989,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeThatMustNodeHaveASideEffect" />
-      <ref role="13i0hy" node="3npF9QXr$4j" resolve="nodeThatMustNodeHaveASideEffect" />
+      <ref role="13i0hy" node="3npF9QXr$4j" resolve="nodeThatMustNotHaveASideEffect" />
       <node concept="3Tm1VV" id="3npF9QXsosF" role="1B3o_S" />
       <node concept="3clFbS" id="3npF9QXsosI" role="3clF47">
         <node concept="3clFbJ" id="3npF9QXsoK7" role="3cqZAp">
@@ -10873,11 +10873,11 @@
     </node>
   </node>
   <node concept="13h7C7" id="3npF9QXr$48">
-    <ref role="13h7C2" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
+    <ref role="13h7C2" to="hm2y:3npF9QXr$3G" resolve="IDisallowEffect" />
     <node concept="13i0hz" id="3npF9QXr$4j" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="nodeThatMustNodeHaveASideEffect" />
+      <property role="TrG5h" value="nodeThatMustNotHaveASideEffect" />
       <node concept="3Tm1VV" id="3npF9QXr$4k" role="1B3o_S" />
       <node concept="3Tqbb2" id="3npF9QXr$4z" role="3clF45" />
       <node concept="3clFbS" id="3npF9QXr$4m" role="3clF47" />
@@ -18152,6 +18152,54 @@
     </node>
     <node concept="13hLZK" id="6BCTLIjCrat" role="13h7CW">
       <node concept="3clFbS" id="6BCTLIjCrau" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="ORfz$DS6_Y">
+    <ref role="13h7C2" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    <node concept="13i0hz" id="ORfz$DS6Ap" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="ORfz$DS6Aq" role="1B3o_S" />
+      <node concept="17QB3L" id="ORfz$Ec2nj" role="3clF45" />
+      <node concept="3clFbS" id="ORfz$DS6As" role="3clF47">
+        <node concept="3clFbF" id="ORfz$Ec2rS" role="3cqZAp">
+          <node concept="10Nm6u" id="ORfz$Ec2rP" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="ORfz$E8kgq" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="ORfz$E8kgp" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="ORfz$E_gVa" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="genericError" />
+      <node concept="3Tm1VV" id="ORfz$E_gVb" role="1B3o_S" />
+      <node concept="17QB3L" id="ORfz$E_gW6" role="3clF45" />
+      <node concept="3clFbS" id="ORfz$E_gVd" role="3clF47">
+        <node concept="3clFbF" id="ORfz$E_gXP" role="3cqZAp">
+          <node concept="Xl_RD" id="ORfz$E_gXO" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="ORfz$ED07o" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="noError" />
+      <node concept="3Tm1VV" id="ORfz$ED07p" role="1B3o_S" />
+      <node concept="17QB3L" id="ORfz$ED07q" role="3clF45" />
+      <node concept="3clFbS" id="ORfz$ED07r" role="3clF47">
+        <node concept="3clFbF" id="ORfz$ED0bs" role="3cqZAp">
+          <node concept="10Nm6u" id="ORfz$ED0bp" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="ORfz$DS6_Z" role="13h7CW">
+      <node concept="3clFbS" id="ORfz$DS6A0" role="2VODD2" />
     </node>
   </node>
 </model>

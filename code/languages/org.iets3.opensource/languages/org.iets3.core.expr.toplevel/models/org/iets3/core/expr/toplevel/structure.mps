@@ -106,6 +106,9 @@
     <node concept="PrWs8" id="4HGbj9Shf8S" role="PzmwI">
       <ref role="PrY4T" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
     </node>
+    <node concept="PrWs8" id="ORfz$DS6EI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -201,9 +204,6 @@
     </node>
     <node concept="PrWs8" id="69zaTr1HgRJ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
-    </node>
-    <node concept="PrWs8" id="3npF9QXsbIv" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
     </node>
     <node concept="PrWs8" id="MaFTCbUr7q" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
@@ -562,9 +562,6 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="78hTg1yOYGo" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />
@@ -731,6 +728,9 @@
     </node>
     <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="PrWs8" id="ORfz$DYlRG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />

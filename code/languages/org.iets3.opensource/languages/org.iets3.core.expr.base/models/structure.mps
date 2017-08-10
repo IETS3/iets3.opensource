@@ -345,9 +345,6 @@
     <node concept="PrWs8" id="6KxoTHgUYYJ" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
-    <node concept="PrWs8" id="3npF9QXsos_" role="PzmwI">
-      <ref role="PrY4T" node="3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
     <node concept="PrWs8" id="2CFPPn7nISU" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
@@ -1145,7 +1142,7 @@
   </node>
   <node concept="PlHQZ" id="3npF9QXr$3G">
     <property role="EcuMT" value="3880322347444355308" />
-    <property role="TrG5h" value="IDisallowSideEffect" />
+    <property role="TrG5h" value="IDisallowEffect" />
   </node>
   <node concept="1TIwiD" id="78hTg1zmOGb">
     <property role="EcuMT" value="8219602584757553931" />
@@ -1416,6 +1413,10 @@
   <node concept="PlHQZ" id="6BCTLIjCra2">
     <property role="EcuMT" value="7631603674206286466" />
     <property role="TrG5h" value="IControlAdvancedFeatures" />
+  </node>
+  <node concept="PlHQZ" id="ORfz$DS6_k">
+    <property role="EcuMT" value="952298261448780116" />
+    <property role="TrG5h" value="IMayAllowEffect" />
   </node>
 </model>
 
