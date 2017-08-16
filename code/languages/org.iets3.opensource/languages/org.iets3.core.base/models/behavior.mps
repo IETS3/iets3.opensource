@@ -2,9 +2,9 @@
 <model ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -71,9 +71,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -582,17 +579,13 @@
                   <property role="3SKdUp" value="happens after classes are reloaded" />
                 </node>
               </node>
-              <node concept="3clFbF" id="6P_KyRojSfE" role="3cqZAp">
-                <node concept="2OqwBi" id="6P_KyRojSfB" role="3clFbG">
-                  <node concept="10M0yZ" id="6P_KyRojSfC" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <node concept="3clFbF" id="G5D_q$ZtxT" role="3cqZAp">
+                <node concept="2OqwBi" id="G5D_q$ZtRd" role="3clFbG">
+                  <node concept="37vLTw" id="G5D_q$ZtxR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
                   </node>
-                  <node concept="liA8E" id="6P_KyRojSfD" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                    <node concept="37vLTw" id="6P_KyRojSjW" role="37wK5m">
-                      <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
-                    </node>
+                  <node concept="liA8E" id="G5D_q$ZuuJ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
