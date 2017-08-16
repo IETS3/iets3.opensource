@@ -7576,6 +7576,14 @@
       <node concept="3Tqbb2" id="3_xsRJ4se$e" role="3clF45" />
       <node concept="3clFbS" id="3_xsRJ4sekI" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="7WSgHRKUTmg" role="13h7CS">
+      <property role="TrG5h" value="getName" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="7WSgHRKUTmh" role="1B3o_S" />
+      <node concept="17QB3L" id="7WSgHRKUTQ3" role="3clF45" />
+      <node concept="3clFbS" id="7WSgHRKUTmj" role="3clF47" />
+    </node>
     <node concept="13hLZK" id="1bwJEEfQxCJ" role="13h7CW">
       <node concept="3clFbS" id="1bwJEEfQxCK" role="2VODD2">
         <node concept="3clFbF" id="3_xsRJ4sa6V" role="3cqZAp">
@@ -8235,6 +8243,34 @@
       </node>
       <node concept="3Tqbb2" id="3_xsRJ4se$J" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="7WSgHRKUTRg" role="13h7CS">
+      <property role="TrG5h" value="getName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="7WSgHRKUTmg" resolve="getName" />
+      <node concept="3Tm1VV" id="7WSgHRKUTRh" role="1B3o_S" />
+      <node concept="3clFbS" id="7WSgHRKUTRk" role="3clF47">
+        <node concept="3clFbF" id="7WSgHRKUV_T" role="3cqZAp">
+          <node concept="3cpWs3" id="7WSgHRKUVR9" role="3clFbG">
+            <node concept="2OqwBi" id="7WSgHRKUWZF" role="3uHU7w">
+              <node concept="2OqwBi" id="7WSgHRKUW31" role="2Oq$k0">
+                <node concept="13iPFW" id="7WSgHRKUVRg" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7WSgHRKUWhp" role="2OqNvi">
+                  <ref role="3Tt5mk" to="av4b:1bwJEEfQxDu" resolve="fun" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7WSgHRKUX$0" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7WSgHRKUV_S" role="3uHU7B">
+              <property role="Xl_RC" value="fun_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7WSgHRKUTRl" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3BFGe1EJa5f">
     <property role="3GE5qa" value="vector.testItem" />
@@ -8573,16 +8609,31 @@
                     <node concept="37vLTw" id="3_xsRJ4AXuM" role="3uHU7w">
                       <ref role="3cqZAo" node="3_xsRJ4_bhv" resolve="i" />
                     </node>
-                    <node concept="3cpWs3" id="3_xsRJ4F_HT" role="3uHU7B">
-                      <node concept="Xl_RD" id="3_xsRJ4F_HW" role="3uHU7w">
-                        <property role="Xl_RC" value=".mutated_" />
+                    <node concept="3cpWs3" id="7WSgHRKVe5m" role="3uHU7B">
+                      <node concept="Xl_RD" id="7WSgHRKVe5p" role="3uHU7w">
+                        <property role="Xl_RC" value="." />
                       </node>
-                      <node concept="2OqwBi" id="3_xsRJ4F$YG" role="3uHU7B">
-                        <node concept="37vLTw" id="3_xsRJ4F$_h" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3_xsRJ4FzPz" resolve="originalModel" />
+                      <node concept="3cpWs3" id="7WSgHRKVcqb" role="3uHU7B">
+                        <node concept="3cpWs3" id="3_xsRJ4F_HT" role="3uHU7B">
+                          <node concept="2OqwBi" id="3_xsRJ4F$YG" role="3uHU7B">
+                            <node concept="37vLTw" id="3_xsRJ4F$_h" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3_xsRJ4FzPz" resolve="originalModel" />
+                            </node>
+                            <node concept="liA8E" id="3_xsRJ4F_hW" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="3_xsRJ4F_HW" role="3uHU7w">
+                            <property role="Xl_RC" value=".mutatants." />
+                          </node>
                         </node>
-                        <node concept="liA8E" id="3_xsRJ4F_hW" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                        <node concept="2OqwBi" id="7WSgHRKVd1p" role="3uHU7w">
+                          <node concept="37vLTw" id="7WSgHRKVcI_" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3_xsRJ4oOLj" resolve="adapter" />
+                          </node>
+                          <node concept="2qgKlT" id="7WSgHRKVduA" role="2OqNvi">
+                            <ref role="37wK5l" node="7WSgHRKUTmg" resolve="getName" />
+                          </node>
                         </node>
                       </node>
                     </node>
