@@ -2,8 +2,7 @@
 <model ref="r:17e537dd-82d4-485e-a86b-bac87852274c(org.iets3.core.expr.tests.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
@@ -224,7 +223,7 @@
   </node>
   <node concept="1M2fIO" id="1bwJEEfRxI5">
     <property role="3GE5qa" value="vector" />
-    <ref role="1M2myG" to="av4b:1bwJEEfQxDh" resolve="FunctionAdapter" />
+    <ref role="1M2myG" to="av4b:1bwJEEfQxDh" resolve="FunctionSubjectAdapter" />
     <node concept="1N5Pfh" id="1bwJEEfRxIc" role="1Mr941">
       <ref role="1N5Vy1" to="av4b:1bwJEEfQxDu" resolve="fun" />
       <node concept="3dgokm" id="1bwJEEfRxIe" role="1N6uqs">
