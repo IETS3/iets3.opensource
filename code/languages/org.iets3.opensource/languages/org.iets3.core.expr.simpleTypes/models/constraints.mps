@@ -4,7 +4,6 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -109,13 +108,22 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -483,6 +491,30 @@
                 <property role="3clFbU" value="true" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7cphKbL6i_b">
+    <property role="3GE5qa" value="string.interpol" />
+    <ref role="1M2myG" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
+    <node concept="9S07l" id="7cphKbL6i_c" role="9Vyp8">
+      <node concept="3clFbS" id="7cphKbL6i_d" role="2VODD2">
+        <node concept="3clFbF" id="7cphKbL6iGm" role="3cqZAp">
+          <node concept="2OqwBi" id="7cphKbL6jNn" role="3clFbG">
+            <node concept="2OqwBi" id="7cphKbL6iRL" role="2Oq$k0">
+              <node concept="nLn13" id="7cphKbL6iGl" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7cphKbL6j3_" role="2OqNvi">
+                <node concept="1xMEDy" id="7cphKbL6j3B" role="1xVPHs">
+                  <node concept="chp4Y" id="7cphKbL6jcB" role="ri$Ld">
+                    <ref role="cht4Q" to="5qo5:7cphKbL6iha" resolve="StringInterpolationExpr" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="7cphKbL6jxS" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7cphKbL6k4h" role="2OqNvi" />
           </node>
         </node>
       </node>

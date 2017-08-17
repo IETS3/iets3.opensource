@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
@@ -14,6 +14,7 @@
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -96,6 +97,18 @@
     <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="7lHetQxE0qg" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI4dB5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
+    <node concept="PrWs8" id="4HGbj9Shf8S" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
+    </node>
+    <node concept="PrWs8" id="ORfz$DS6EI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -107,6 +120,12 @@
     </node>
     <node concept="PrWs8" id="49WTic8gFfH" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8gvys" resolve="IFunctionCall" />
+    </node>
+    <node concept="PrWs8" id="7lHetQxGA3F" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IR_boIe7HQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8hwXW">
@@ -186,9 +205,6 @@
     <node concept="PrWs8" id="69zaTr1HgRJ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
-    <node concept="PrWs8" id="3npF9QXsbIv" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
     <node concept="PrWs8" id="MaFTCbUr7q" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
     </node>
@@ -197,6 +213,9 @@
     </node>
     <node concept="PrWs8" id="2Fd5B1gx5V7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
@@ -257,6 +276,12 @@
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordDeclaration&quot;" />
       </node>
     </node>
+    <node concept="1TJgyj" id="6JZACDWOa9F" role="1TKVEi">
+      <property role="IQ2ns" value="7782108600709718635" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refFlag" />
+      <ref role="20lvS9" node="6JZACDWOa9c" resolve="ReferenceableFlag" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
     <property role="3GE5qa" value="record" />
@@ -294,6 +319,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
       <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
+    </node>
+    <node concept="PrWs8" id="6JZACDWI_Pm" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2eTZF">
@@ -333,6 +361,12 @@
     </node>
     <node concept="PrWs8" id="21vB0Vz1I_I" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="PrWs8" id="6JZACDWR9qQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="PrWs8" id="2jL$v5BJGNY" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
@@ -528,9 +562,6 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="78hTg1yOYGo" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />
@@ -617,8 +648,8 @@
     <node concept="PrWs8" id="28GlH0_ERSs" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
-    <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -636,6 +667,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7zXSNv$jGoL" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="6f7f4BmjQ2D" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="6NHlpK$oaAP">
@@ -689,17 +723,217 @@
     <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
-    <node concept="PrWs8" id="3pe7Y2RWGaO" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
-    </node>
     <node concept="PrWs8" id="5ElkanQ9DBL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanQ81eS" resolve="IDocumentableWordContainer" />
     </node>
     <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="PrWs8" id="ORfz$DYlRG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JZACDWOa9c">
+    <property role="EcuMT" value="7782108600709718604" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="ReferenceableFlag" />
+    <property role="34LRSv" value="referenceable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6JZACDWRoq1" role="1TKVEi">
+      <property role="IQ2ns" value="7782108600710563457" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="idMember" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbKnKRF">
+    <property role="EcuMT" value="8293738266727747051" />
+    <property role="3GE5qa" value="record.group" />
+    <property role="TrG5h" value="GroupType" />
+    <property role="34LRSv" value="group" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="7cphKbKnKRG" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266727747052" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keyType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7cphKbKnKRI" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266727747054" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="memberType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbKnRmi">
+    <property role="EcuMT" value="8293738266727773586" />
+    <property role="3GE5qa" value="record.group" />
+    <property role="TrG5h" value="GroupByOp" />
+    <property role="34LRSv" value="groupBy" />
+    <ref role="1TJDcQ" to="700h:6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="7cphKbKo1Dk" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbKssrq">
+    <property role="EcuMT" value="8293738266728974042" />
+    <property role="3GE5qa" value="record.group" />
+    <property role="TrG5h" value="GroupKeyTarget" />
+    <property role="34LRSv" value="key" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbKssJV" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbKuFYS">
+    <property role="EcuMT" value="8293738266729562040" />
+    <property role="3GE5qa" value="record.group" />
+    <property role="TrG5h" value="GroupMembersTarget" />
+    <property role="34LRSv" value="members" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbKuFYT" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLawNf">
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="InlineRecordType" />
+    <property role="EcuMT" value="8293738266741050575" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="4ptnK4iZ$op" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213707306521" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="xu7xcKdQCB" resolve="IRecordMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLawO$">
+    <property role="EcuMT" value="8293738266741050660" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectOp" />
+    <property role="34LRSv" value="project" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7cphKbLawPE" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266741050730" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7cphKbLawOC" resolve="ProjectMember" />
+    </node>
+    <node concept="PrWs8" id="7cphKbLcOWp" role="PzmwI">
+      <ref role="PrY4T" to="700h:6zmBjqUivxU" resolve="ICollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLawOC">
+    <property role="EcuMT" value="8293738266741050664" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectMember" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbLawOG" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7cphKbLawOI" role="1TKVEi">
+      <property role="IQ2ns" value="8293738266741050670" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cphKbLg8An">
+    <property role="EcuMT" value="8293738266742524311" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="ProjectIt" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7cphKbLtLQW">
+    <property role="EcuMT" value="8293738266746101180" />
+    <property role="3GE5qa" value="record.project" />
+    <property role="TrG5h" value="InlineRecordMemberAccess" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cphKbLtLR6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="4ptnK4ibnLa" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZj">
+    <property role="EcuMT" value="5070313213710413779" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderExpression" />
+    <property role="34LRSv" value="build" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4ptnK4jbqZt" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413789" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="adapted" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4ptnK4jbr8C" resolve="BuilderAdapter" />
+    </node>
+    <node concept="1TJgyj" id="4ptnK4jbqZD" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413801" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4ptnK4jbqZv" resolve="BuilderElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZv">
+    <property role="EcuMT" value="5070313213710413791" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbqZG">
+    <property role="EcuMT" value="5070313213710413804" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="FieldSetter" />
+    <ref role="1TJDcQ" node="4ptnK4jbqZv" resolve="BuilderElement" />
+    <node concept="1TJgyj" id="4ptnK4jbqZQ" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413814" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4ptnK4jbqZS" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710413816" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbr8C">
+    <property role="EcuMT" value="5070313213710414376" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="BuilderAdapter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4ptnK4jbr8M">
+    <property role="EcuMT" value="5070313213710414386" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="RecordTypeAdapter" />
+    <ref role="1TJDcQ" node="4ptnK4jbr8C" resolve="BuilderAdapter" />
+    <node concept="1TJgyj" id="4ptnK4jbr8W" role="1TKVEi">
+      <property role="IQ2ns" value="5070313213710414396" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
     </node>
   </node>
 </model>

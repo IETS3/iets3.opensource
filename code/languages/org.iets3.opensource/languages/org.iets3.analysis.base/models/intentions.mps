@@ -11,6 +11,7 @@
   <imports>
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -43,6 +44,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
@@ -52,15 +57,18 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -68,6 +76,9 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -147,6 +158,21 @@
     <node concept="1SWQZ3" id="3DYDRw0WRxR" role="lGtFl">
       <property role="1SWRpm" value="SOLVER" />
     </node>
+    <node concept="2SaL7w" id="4FREEt6ybEn" role="2ZfVeh">
+      <node concept="3clFbS" id="4FREEt6ybEo" role="2VODD2">
+        <node concept="3clFbF" id="4FREEt6ybQb" role="3cqZAp">
+          <node concept="2OqwBi" id="4FREEt6ycob" role="3clFbG">
+            <node concept="35c_gC" id="4FREEt6ybQa" role="2Oq$k0">
+              <ref role="35c_gD" to="l80j:4FREEt6y5LH" resolve="IControlSolver" />
+            </node>
+            <node concept="2qgKlT" id="4FREEt6ycKc" role="2OqNvi">
+              <ref role="37wK5l" to="1jcu:4FREEt6y5QS" resolve="allowSolver" />
+              <node concept="2Sf5sV" id="4FREEt6ycW0" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2S6QgY" id="3DYDRw0WShX">
     <property role="TrG5h" value="addSolveControlAutomatic" />
@@ -203,6 +229,21 @@
     </node>
     <node concept="1SWQZ3" id="3DYDRw0WSik" role="lGtFl">
       <property role="1SWRpm" value="SOLVER" />
+    </node>
+    <node concept="2SaL7w" id="4FREEt6ydbo" role="2ZfVeh">
+      <node concept="3clFbS" id="4FREEt6ydbp" role="2VODD2">
+        <node concept="3clFbF" id="4FREEt6ydnA" role="3cqZAp">
+          <node concept="2OqwBi" id="4FREEt6ydnB" role="3clFbG">
+            <node concept="35c_gC" id="4FREEt6ydnC" role="2Oq$k0">
+              <ref role="35c_gD" to="l80j:4FREEt6y5LH" resolve="IControlSolver" />
+            </node>
+            <node concept="2qgKlT" id="4FREEt6ydnD" role="2OqNvi">
+              <ref role="37wK5l" to="1jcu:4FREEt6y5QS" resolve="allowSolver" />
+              <node concept="2Sf5sV" id="4FREEt6ydnE" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -2,15 +2,15 @@
 <model ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -4943,7 +4943,6 @@
         </node>
         <node concept="3EZMnI" id="siw10FuX5x" role="3EZMnx">
           <node concept="3XFhqQ" id="4pkidg6ezxD" role="3EZMnx" />
-          <node concept="2iRfu4" id="siw10FuX5y" role="2iSdaV" />
           <node concept="1QoScp" id="2pYJ4piWd3J" role="3EZMnx">
             <property role="1QpmdY" value="true" />
             <node concept="pkWqt" id="2pYJ4piWd3M" role="3e4ffs">
@@ -5008,6 +5007,7 @@
               </node>
             </node>
           </node>
+          <node concept="2iRfu4" id="siw10FuX5y" role="2iSdaV" />
           <node concept="3EZMnI" id="siw10FuWpL" role="3EZMnx">
             <node concept="l2Vlx" id="siw10FuWpM" role="2iSdaV" />
             <node concept="3F0ifn" id="siw10FuWpN" role="3EZMnx">
@@ -12177,7 +12177,6 @@
     <property role="3GE5qa" value="components.iface.ports" />
     <ref role="1XX52x" to="w9y2:siw10H0or2" resolve="PortCategory" />
     <node concept="s8t4o" id="4vEQ9eGCAGB" role="2wV5jI">
-      <property role="28Zw97" value="true" />
       <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
       <node concept="s8sZD" id="4vEQ9eGCAGE" role="sbcd9">
         <node concept="3clFbS" id="4vEQ9eGCAGF" role="2VODD2">
@@ -12206,7 +12205,6 @@
     <property role="TrG5h" value="IPortTypeAttributes" />
     <ref role="1XX52x" to="w9y2:6LfBX8YlAdL" resolve="IPortType" />
     <node concept="s8t4o" id="4vEQ9eGCUgi" role="2wV5jI">
-      <property role="28Zw97" value="true" />
       <ref role="28F8cf" to="w9y2:6LfBX8YkpdW" resolve="Port" />
       <node concept="s8sZD" id="4vEQ9eGCUgl" role="sbcd9">
         <node concept="3clFbS" id="4vEQ9eGCUgm" role="2VODD2">

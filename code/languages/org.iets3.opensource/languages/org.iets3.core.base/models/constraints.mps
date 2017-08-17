@@ -2,7 +2,7 @@
 <model ref="r:02d078a1-d0db-43fc-a66a-8505d53851a4(org.iets3.core.base.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -73,6 +73,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -159,7 +160,10 @@
               </node>
             </node>
             <node concept="2OqwBi" id="5Hxjapwgt_C" role="3clFbw">
-              <node concept="EsrRn" id="5Hxjapwgt_E" role="2Oq$k0" />
+              <node concept="2OqwBi" id="64w0Iq2zYZA" role="2Oq$k0">
+                <node concept="EsrRn" id="5Hxjapwgt_E" role="2Oq$k0" />
+                <node concept="2yIwOk" id="64w0Iq2zZnB" role="2OqNvi" />
+              </node>
               <node concept="2qgKlT" id="7I8cNN6sjG0" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:5HxjapwgqKm" resolve="allowNonIdentifierNames" />
               </node>
@@ -182,7 +186,10 @@
               </node>
             </node>
             <node concept="2OqwBi" id="8q0nkX_fZQ" role="3clFbw">
-              <node concept="EsrRn" id="8q0nkX_fZS" role="2Oq$k0" />
+              <node concept="2OqwBi" id="64w0Iq2zZBI" role="2Oq$k0">
+                <node concept="EsrRn" id="8q0nkX_fZS" role="2Oq$k0" />
+                <node concept="2yIwOk" id="64w0Iq2zZZS" role="2OqNvi" />
+              </node>
               <node concept="2qgKlT" id="8q0nkX_haT" role="2OqNvi">
                 <ref role="37wK5l" to="gdgh:8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
               </node>

@@ -78,9 +78,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -183,8 +180,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -590,17 +591,13 @@
                   <property role="3SKdUp" value="happens after classes are reloaded" />
                 </node>
               </node>
-              <node concept="3clFbF" id="6P_KyRojSfE" role="3cqZAp">
-                <node concept="2OqwBi" id="6P_KyRojSfB" role="3clFbG">
-                  <node concept="10M0yZ" id="6P_KyRojSfC" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <node concept="3clFbF" id="G5D_q$ZtxT" role="3cqZAp">
+                <node concept="2OqwBi" id="G5D_q$ZtRd" role="3clFbG">
+                  <node concept="37vLTw" id="G5D_q$ZtxR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
                   </node>
-                  <node concept="liA8E" id="6P_KyRojSfD" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                    <node concept="37vLTw" id="6P_KyRojSjW" role="37wK5m">
-                      <ref role="3cqZAo" node="1t8sHJlDQ4v" resolve="cex" />
-                    </node>
+                  <node concept="liA8E" id="G5D_q$ZuuJ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1133,6 +1130,35 @@
       <node concept="3clFbS" id="TuTPrvRoDz" role="2VODD2" />
     </node>
   </node>
+  <node concept="3HP615" id="5JinICPcACI">
+    <property role="TrG5h" value="IResultWithTargetNodes" />
+    <node concept="3clFb_" id="5JinICPcAPp" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getMessageTargetNodes" />
+      <node concept="3clFbS" id="5JinICPcAPs" role="3clF47" />
+      <node concept="3Tm1VV" id="5JinICPcAPt" role="1B3o_S" />
+      <node concept="A3Dl8" id="5JinICPcAP8" role="3clF45">
+        <node concept="3Tqbb2" id="5JinICPcAPl" role="A3Ik2" />
+      </node>
+      <node concept="P$JXv" id="5JinICPcAR0" role="lGtFl">
+        <node concept="TZ5HA" id="5JinICPcAR1" role="TZ5H$">
+          <node concept="1dT_AC" id="5JinICPcAR2" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the specific nodes that the result error message applies to. If non-empty, the error message should be" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5JinICPcAXm" role="TZ5H$">
+          <node concept="1dT_AC" id="5JinICPcAXn" role="1dT_Ay">
+            <property role="1dT_AB" value="shown for these nodes instead of the node that this instance was associated with." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5JinICPcACX" role="1B3o_S" />
+    <node concept="3uibUv" id="5JinICPcAGf" role="3HQHJm">
+      <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+    </node>
+  </node>
   <node concept="13h7C7" id="7I8cNN6siBx">
     <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     <node concept="13i0hz" id="5HxjapwgqKm" role="13h7CS">
@@ -1260,33 +1286,33 @@
       <node concept="3clFbS" id="7I8cNN6siBz" role="2VODD2" />
     </node>
   </node>
-  <node concept="3HP615" id="5JinICPcACI">
-    <property role="TrG5h" value="IResultWithTargetNodes" />
-    <node concept="3clFb_" id="5JinICPcAPp" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getMessageTargetNodes" />
-      <node concept="3clFbS" id="5JinICPcAPs" role="3clF47" />
-      <node concept="3Tm1VV" id="5JinICPcAPt" role="1B3o_S" />
-      <node concept="A3Dl8" id="5JinICPcAP8" role="3clF45">
-        <node concept="3Tqbb2" id="5JinICPcAPl" role="A3Ik2" />
-      </node>
-      <node concept="P$JXv" id="5JinICPcAR0" role="lGtFl">
-        <node concept="TZ5HA" id="5JinICPcAR1" role="TZ5H$">
-          <node concept="1dT_AC" id="5JinICPcAR2" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the specific nodes that the result error message applies to. If non-empty, the error message should be" />
+  <node concept="13h7C7" id="4SwD0JT7m01">
+    <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="13i0hz" id="4SwD0JT7m0l" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowNonIdentifierNames" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="4SwD0JT7m0m" role="1B3o_S" />
+      <node concept="10P_77" id="4SwD0JT7mtp" role="3clF45" />
+      <node concept="3clFbS" id="4SwD0JT7m0o" role="3clF47">
+        <node concept="3clFbF" id="4SwD0JT7ows" role="3cqZAp">
+          <node concept="3clFbT" id="4SwD0JT7owr" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
-        <node concept="TZ5HA" id="5JinICPcAXm" role="TZ5H$">
-          <node concept="1dT_AC" id="5JinICPcAXn" role="1dT_Ay">
-            <property role="1dT_AB" value="shown for these nodes instead of the node that this instance was associated with." />
-          </node>
+      </node>
+      <node concept="P$JXv" id="4SwD0JT7qer" role="lGtFl">
+        <node concept="TZ5HA" id="4SwD0JT7qes" role="TZ5H$">
+          <node concept="1dT_AC" id="4SwD0JT7qet" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="4SwD0JT7qeu" role="3nqlJM">
+          <property role="x79VB" value="true if the concept should allow the usage of special chars in its name property. else false" />
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="5JinICPcACX" role="1B3o_S" />
-    <node concept="3uibUv" id="5JinICPcAGf" role="3HQHJm">
-      <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+    <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
+      <node concept="3clFbS" id="4SwD0JT7m03" role="2VODD2" />
     </node>
   </node>
 </model>
