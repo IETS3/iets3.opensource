@@ -36,8 +36,7 @@ if (!project.hasProperty("mbeddrVersion")) {
         ext.mbeddrVersion = '1.0-SNAPSHOT'
     }
     else {
-        //remove before merge 
-        ext.mbeddrVersion = 'refactor-mps20172.1.0.+'
+        ext.mbeddrVersion = '1.0.+'
     }
 }
 
