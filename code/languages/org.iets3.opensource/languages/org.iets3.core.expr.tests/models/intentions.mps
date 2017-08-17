@@ -1575,13 +1575,21 @@
     <node concept="2SaL7w" id="1qjbRymJT2Y" role="2ZfVeh">
       <node concept="3clFbS" id="1qjbRymJT2Z" role="2VODD2">
         <node concept="3clFbF" id="1qjbRymJTae" role="3cqZAp">
-          <node concept="3clFbC" id="1qjbRymJTUQ" role="3clFbG">
-            <node concept="10Nm6u" id="1qjbRymJUaR" role="3uHU7w" />
-            <node concept="2OqwBi" id="1qjbRymJTmp" role="3uHU7B">
-              <node concept="2Sf5sV" id="1qjbRymJTad" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1qjbRymJTzy" role="2OqNvi">
-                <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
+          <node concept="1Wc70l" id="3yVmeSjI__f" role="3clFbG">
+            <node concept="2OqwBi" id="3yVmeSjI_ZR" role="3uHU7w">
+              <node concept="2Sf5sV" id="3yVmeSjI_Nm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3yVmeSjIAf8" role="2OqNvi">
+                <ref role="37wK5l" to="xk6s:3yVmeSjI$c6" resolve="supportsMutations" />
               </node>
+            </node>
+            <node concept="3clFbC" id="1qjbRymJTUQ" role="3uHU7B">
+              <node concept="2OqwBi" id="1qjbRymJTmp" role="3uHU7B">
+                <node concept="2Sf5sV" id="1qjbRymJTad" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1qjbRymJTzy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="1qjbRymJUaR" role="3uHU7w" />
             </node>
           </node>
         </node>
@@ -1688,7 +1696,7 @@
       <node concept="3clFbS" id="1qjbRymX47U" role="2VODD2">
         <node concept="3clFbF" id="1qjbRymX47V" role="3cqZAp">
           <node concept="Xl_RD" id="1qjbRymX47W" role="3clFbG">
-            <property role="Xl_RC" value="Delete All Mutation Models" />
+            <property role="Xl_RC" value="Clear/Delete All Mutation Models" />
           </node>
         </node>
       </node>

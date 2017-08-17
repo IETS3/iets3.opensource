@@ -1040,6 +1040,12 @@
             <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3yVmeSjzlhT" role="3bR37C">
+          <node concept="3bR9La" id="3yVmeSjzlhU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5WYUu8HaT_t" resolve="com.mbeddr.mpsutil.framecell" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3a2FJuC8s9O" role="2G$12L">
         <property role="BnDLt" value="true" />
