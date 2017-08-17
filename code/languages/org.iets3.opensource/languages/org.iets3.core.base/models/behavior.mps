@@ -1159,37 +1159,48 @@
       <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
     </node>
   </node>
-  <node concept="13h7C7" id="7I8cNN6siBx">
+  <node concept="13h7C7" id="4SwD0JT7m01">
     <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    <node concept="13i0hz" id="5HxjapwgqKm" role="13h7CS">
+    <node concept="13i0hz" id="4SwD0JT7m0l" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="allowNonIdentifierNames" />
-      <property role="2Ki8OM" value="false" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="4SwD0JT7m0m" role="1B3o_S" />
+      <node concept="10P_77" id="4SwD0JT7mtp" role="3clF45" />
+      <node concept="3clFbS" id="4SwD0JT7m0o" role="3clF47">
+        <node concept="3clFbF" id="4SwD0JT7ows" role="3cqZAp">
+          <node concept="3clFbT" id="4SwD0JT7owr" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4SwD0JT7qer" role="lGtFl">
+        <node concept="TZ5HA" id="4SwD0JT7qes" role="TZ5H$">
+          <node concept="1dT_AC" id="4SwD0JT7qet" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="4SwD0JT7qeu" role="3nqlJM">
+          <property role="x79VB" value="true if the concept should allow the usage of special chars in its name property. else false" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="64w0Iq2$5zE" role="13h7CS">
+      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
+      <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
       <property role="13i0is" value="false" />
-      <node concept="3Tm1VV" id="5HxjapwgqKn" role="1B3o_S" />
-      <node concept="10P_77" id="5HxjapwgqKj" role="3clF45" />
-      <node concept="3clFbS" id="5HxjapwgqKo" role="3clF47">
-        <node concept="3cpWs6" id="5HxjapwgqKl" role="3cqZAp">
-          <node concept="3clFbT" id="5HxjapwgqKk" role="3cqZAk">
+      <node concept="3Tm1VV" id="64w0Iq2$5zF" role="1B3o_S" />
+      <node concept="10P_77" id="64w0Iq2$5zG" role="3clF45" />
+      <node concept="3clFbS" id="64w0Iq2$5zH" role="3clF47">
+        <node concept="3clFbF" id="64w0Iq2$5$y" role="3cqZAp">
+          <node concept="3clFbT" id="64w0Iq2$5zJ" role="3clFbG">
             <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="8q0nkX_5K4" role="13h7CS">
-      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
-      <property role="2Ki8OM" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
-      <node concept="3Tm1VV" id="8q0nkX_5K5" role="1B3o_S" />
-      <node concept="10P_77" id="8q0nkX_5K6" role="3clF45" />
-      <node concept="3clFbS" id="8q0nkX_5K7" role="3clF47">
-        <node concept="3cpWs6" id="8q0nkX_5K8" role="3cqZAp">
-          <node concept="3clFbT" id="8q0nkX_5K9" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
+    <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
+      <node concept="3clFbS" id="4SwD0JT7m03" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7NEp8pMMUwS" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -1261,10 +1272,10 @@
           </node>
           <node concept="22lmx$" id="7NEp8pMMATf" role="3clFbw">
             <node concept="BsUDl" id="7NEp8pMMHxA" role="3uHU7B">
-              <ref role="37wK5l" node="5HxjapwgqKm" resolve="allowNonIdentifierNames" />
+              <ref role="37wK5l" node="4SwD0JT7m0l" resolve="allowNonIdentifierNames" />
             </node>
             <node concept="BsUDl" id="7NEp8pMMUZs" role="3uHU7w">
-              <ref role="37wK5l" node="8q0nkX_5K4" resolve="allowEverythingExceptWhitespace" />
+              <ref role="37wK5l" node="64w0Iq2$5zE" resolve="allowEverythingExceptWhitespace" />
             </node>
           </node>
           <node concept="9aQIb" id="7NEp8pM3t1r" role="9aQIa">
@@ -1281,38 +1292,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13hLZK" id="7I8cNN6siBy" role="13h7CW">
-      <node concept="3clFbS" id="7I8cNN6siBz" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="4SwD0JT7m01">
-    <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    <node concept="13i0hz" id="4SwD0JT7m0l" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="allowNonIdentifierNames" />
-      <property role="2Ki8OM" value="true" />
-      <node concept="3Tm1VV" id="4SwD0JT7m0m" role="1B3o_S" />
-      <node concept="10P_77" id="4SwD0JT7mtp" role="3clF45" />
-      <node concept="3clFbS" id="4SwD0JT7m0o" role="3clF47">
-        <node concept="3clFbF" id="4SwD0JT7ows" role="3cqZAp">
-          <node concept="3clFbT" id="4SwD0JT7owr" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="4SwD0JT7qer" role="lGtFl">
-        <node concept="TZ5HA" id="4SwD0JT7qes" role="TZ5H$">
-          <node concept="1dT_AC" id="4SwD0JT7qet" role="1dT_Ay" />
-        </node>
-        <node concept="x79VA" id="4SwD0JT7qeu" role="3nqlJM">
-          <property role="x79VB" value="true if the concept should allow the usage of special chars in its name property. else false" />
-        </node>
-      </node>
-    </node>
-    <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
-      <node concept="3clFbS" id="4SwD0JT7m03" role="2VODD2" />
     </node>
   </node>
 </model>
