@@ -172,8 +172,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -1159,6 +1163,35 @@
     <node concept="3Tm1VV" id="5JinICPcACX" role="1B3o_S" />
     <node concept="3uibUv" id="5JinICPcAGf" role="3HQHJm">
       <ref role="3uigEE" node="5zG5$Lyex1G" resolve="IResult" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4SwD0JT7m01">
+    <ref role="13h7C2" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="13i0hz" id="4SwD0JT7m0l" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowNonIdentifierNames" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="4SwD0JT7m0m" role="1B3o_S" />
+      <node concept="10P_77" id="4SwD0JT7mtp" role="3clF45" />
+      <node concept="3clFbS" id="4SwD0JT7m0o" role="3clF47">
+        <node concept="3clFbF" id="4SwD0JT7ows" role="3cqZAp">
+          <node concept="3clFbT" id="4SwD0JT7owr" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4SwD0JT7qer" role="lGtFl">
+        <node concept="TZ5HA" id="4SwD0JT7qes" role="TZ5H$">
+          <node concept="1dT_AC" id="4SwD0JT7qet" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="4SwD0JT7qeu" role="3nqlJM">
+          <property role="x79VB" value="true if the concept should allow the usage of special chars in its name property. else false" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
+      <node concept="3clFbS" id="4SwD0JT7m03" role="2VODD2" />
     </node>
   </node>
 </model>
