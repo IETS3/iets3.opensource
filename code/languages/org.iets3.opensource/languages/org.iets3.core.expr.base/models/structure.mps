@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -345,8 +345,8 @@
     <node concept="PrWs8" id="6KxoTHgUYYJ" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
-    <node concept="PrWs8" id="3npF9QXsos_" role="PzmwI">
-      <ref role="PrY4T" node="3npF9QXr$3G" resolve="IDisallowSideEffect" />
+    <node concept="PrWs8" id="2CFPPn7nISU" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
@@ -355,6 +355,9 @@
     <property role="EcuMT" value="9002563722476995146" />
     <node concept="PrWs8" id="7RleyJL1mNg" role="PrDN$">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="5d4VabvJ4R_" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="1TIwiD" id="7halHeUzscN">
@@ -405,6 +408,9 @@
     </node>
     <node concept="PrWs8" id="5ye9uPrgl8_" role="PzmwI">
       <ref role="PrY4T" node="5ye9uPrgbPQ" resolve="IOptionDerefContext" />
+    </node>
+    <node concept="PrWs8" id="2kg0xI3t7B$" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="PlHQZ" id="6NJfo6_rTeO">
@@ -1059,6 +1065,9 @@
     <node concept="PrWs8" id="3tDSm3sv$CV" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
+    <node concept="PrWs8" id="5syY_AKIY_O" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
     <property role="3GE5qa" value="alt" />
@@ -1087,6 +1096,9 @@
     </node>
     <node concept="PrWs8" id="4e_7uAsc7Ur" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="5syY_AKJ2XM" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
@@ -1130,7 +1142,7 @@
   </node>
   <node concept="PlHQZ" id="3npF9QXr$3G">
     <property role="EcuMT" value="3880322347444355308" />
-    <property role="TrG5h" value="IDisallowSideEffect" />
+    <property role="TrG5h" value="IDisallowEffect" />
   </node>
   <node concept="1TIwiD" id="78hTg1zmOGb">
     <property role="EcuMT" value="8219602584757553931" />
@@ -1330,6 +1342,9 @@
   <node concept="PlHQZ" id="6JZACDWQJu4">
     <property role="EcuMT" value="7782108600710395780" />
     <property role="TrG5h" value="ILiteral" />
+    <node concept="PrWs8" id="3T40JVg5Ca9" role="PrDN$">
+      <ref role="PrY4T" to="3673:3T40JVg3mgZ" resolve="ITrivialNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6JZACDWX7DG">
     <property role="EcuMT" value="7782108600712067692" />
@@ -1359,6 +1374,49 @@
     <property role="EcuMT" value="6095949300264944876" />
     <property role="3GE5qa" value="join" />
     <property role="TrG5h" value="IJoinTypeContext" />
+  </node>
+  <node concept="PlHQZ" id="7obiejCh8R2">
+    <property role="EcuMT" value="8505972469205863874" />
+    <property role="TrG5h" value="ITraceRoot" />
+    <node concept="PrWs8" id="2hAELMMB1D9" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="XblfskIwr9">
+    <property role="EcuMT" value="1102067954003609289" />
+    <property role="TrG5h" value="IMultiTraceRoot" />
+    <node concept="PrWs8" id="XblfskIwra" role="PrDN$">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4hW8Ne0bQYm">
+    <property role="EcuMT" value="4934857995792117654" />
+    <property role="TrG5h" value="Revealer" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="4hW8Ne0bR4I" role="1TKVEi">
+      <property role="IQ2ns" value="4934857995792118062" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4hW8Ne0bR4F" role="PzmwI">
+      <ref role="PrY4T" to="3673:4hW8Ne0aLGg" resolve="IReveal" />
+    </node>
+    <node concept="M6xJ_" id="4hW8Ne0nqFq" role="lGtFl">
+      <property role="Hh88m" value="reveal" />
+      <node concept="trNpa" id="4hW8Ne0nqFz" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6BCTLIjCra2">
+    <property role="EcuMT" value="7631603674206286466" />
+    <property role="TrG5h" value="IControlAdvancedFeatures" />
+  </node>
+  <node concept="PlHQZ" id="ORfz$DS6_k">
+    <property role="EcuMT" value="952298261448780116" />
+    <property role="TrG5h" value="IMayAllowEffect" />
   </node>
 </model>
 

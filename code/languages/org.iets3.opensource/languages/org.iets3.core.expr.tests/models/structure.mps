@@ -181,6 +181,9 @@
     <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="PrWs8" id="ORfz$DYkKL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
@@ -225,6 +228,9 @@
     </node>
     <node concept="PrWs8" id="4gO0JEw17PJ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="7obiejCh95s" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$THIv">

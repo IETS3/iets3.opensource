@@ -2,8 +2,8 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
@@ -97,8 +97,17 @@
     <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
-    <node concept="PrWs8" id="5ipapt3mTNZ" role="PzmwI">
+    <node concept="PrWs8" id="7lHetQxE0qg" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI4dB5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
+    <node concept="PrWs8" id="4HGbj9Shf8S" role="PzmwI">
       <ref role="PrY4T" to="zzzn:5ipapt3mzbM" resolve="IJoinedBlockContext" />
+    </node>
+    <node concept="PrWs8" id="ORfz$DS6EI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
@@ -111,6 +120,12 @@
     </node>
     <node concept="PrWs8" id="49WTic8gFfH" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8gvys" resolve="IFunctionCall" />
+    </node>
+    <node concept="PrWs8" id="7lHetQxGA3F" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IR_boIe7HQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8hwXW">
@@ -190,9 +205,6 @@
     <node concept="PrWs8" id="69zaTr1HgRJ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
-    <node concept="PrWs8" id="3npF9QXsbIv" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
     <node concept="PrWs8" id="MaFTCbUr7q" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
     </node>
@@ -201,6 +213,9 @@
     </node>
     <node concept="PrWs8" id="2Fd5B1gx5V7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
@@ -349,6 +364,9 @@
     </node>
     <node concept="PrWs8" id="6JZACDWR9qQ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="PrWs8" id="2jL$v5BJGNY" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
@@ -544,9 +562,6 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="78hTg1yOYGo" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
-    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />
@@ -633,9 +648,6 @@
     <node concept="PrWs8" id="28GlH0_ERSs" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
-    <node concept="PrWs8" id="5ElkanPXuuc" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
-    </node>
     <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
@@ -655,6 +667,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7zXSNv$jGoL" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="6f7f4BmjQ2D" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="6NHlpK$oaAP">
@@ -713,6 +728,9 @@
     </node>
     <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="PrWs8" id="ORfz$DYlRG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />

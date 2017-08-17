@@ -5,8 +5,8 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,7 +23,6 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1215,6 +1214,15 @@
               <node concept="10Nm6u" id="7DTWJ$8lM1T" role="3cqZAk" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="5U8d23QhDkv" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="5qo5:6UxFDrx50pu" resolve="OtherwiseLiteral" />
+      <node concept="3vetai" id="5U8d23QhFPR" role="3vQZUl">
+        <node concept="3clFbT" id="5U8d23QhFQ9" role="3vdyny">
+          <property role="3clFbU" value="true" />
         </node>
       </node>
     </node>
@@ -3503,25 +3511,6 @@
                     </node>
                     <node concept="liA8E" id="7yDflTqAydO" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~Set.iterator():java.util.Iterator" resolve="iterator" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7VuYlCR4l$Z" role="3cqZAp">
-                <node concept="2OqwBi" id="7VuYlCR4l$W" role="3clFbG">
-                  <node concept="10M0yZ" id="7VuYlCR4l$X" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="7VuYlCR4l$Y" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="7VuYlCR4n3n" role="37wK5m">
-                      <node concept="37vLTw" id="7VuYlCR4n5c" role="3uHU7w">
-                        <ref role="3cqZAo" node="7yDflTqAydL" resolve="it" />
-                      </node>
-                      <node concept="Xl_RD" id="7VuYlCR4m4g" role="3uHU7B">
-                        <property role="Xl_RC" value="it: " />
-                      </node>
                     </node>
                   </node>
                 </node>
