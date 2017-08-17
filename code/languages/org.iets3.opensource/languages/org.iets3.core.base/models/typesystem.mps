@@ -2,7 +2,7 @@
 <model ref="r:e5a2b77c-569f-4c13-8679-6ec5a6000fa9(org.iets3.core.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -174,12 +174,24 @@
           <node concept="3clFbJ" id="3R3AIvunr$C" role="3cqZAp">
             <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
               <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
-                <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
-                  <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
-                    <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
+                <node concept="3clFbJ" id="3ugRfIRAoR9" role="3cqZAp">
+                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx">
+                    <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
+                      <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
+                        <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
+                      </node>
+                      <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
+                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
-                    <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                  <node concept="2OqwBi" id="3ugRfIRAp0L" role="3clFbw">
+                    <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                    </node>
+                    <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
+                      <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                    </node>
                   </node>
                 </node>
               </node>

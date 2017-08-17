@@ -11,7 +11,6 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
@@ -785,6 +784,7 @@
     <node concept="1N5Pfh" id="5ElkanPUn5b" role="1Mr941">
       <ref role="1N5Vy1" to="hm2y:5ElkanPUl_V" resolve="node" />
       <node concept="Bn3R3" id="5ElkanQbcQz" role="Bn3R6">
+        <node concept="2dbRIv" id="7cBI1LfPKVQ" role="lGtFl" />
         <node concept="3clFbS" id="5ElkanQbcQ$" role="2VODD2">
           <node concept="3clFbF" id="5ElkanQbf$w" role="3cqZAp">
             <node concept="3cpWs3" id="5ElkanQbgoC" role="3clFbG">
@@ -800,7 +800,6 @@
             </node>
           </node>
         </node>
-        <node concept="2dbRIv" id="7cBI1LfPKVQ" role="lGtFl" />
       </node>
       <node concept="3dgokm" id="5ElkanPUn5j" role="1N6uqs">
         <node concept="3clFbS" id="1F1F0IUZ_OY" role="2VODD2">

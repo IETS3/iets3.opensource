@@ -14,6 +14,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
   </imports>
   <registry>
@@ -60,6 +61,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -118,6 +122,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -130,6 +137,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -285,6 +293,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -584,6 +593,43 @@
       <node concept="3Tqbb2" id="rj7uJEmZyY" role="3clF45">
         <ref role="ehGHo" to="l80j:XhdFKvXQxo" resolve="ErrorSolverTask" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="3ugRfIRAiR8" role="jymVt" />
+    <node concept="2YIFZL" id="3ugRfIRAw1$" role="jymVt">
+      <property role="TrG5h" value="areFactoriesAvaillable" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="3ugRfIRAj4Y" role="3clF47">
+        <node concept="3cpWs8" id="3ugRfIRAjHG" role="3cqZAp">
+          <node concept="3cpWsn" id="3ugRfIRAjHH" role="3cpWs9">
+            <property role="TrG5h" value="ep" />
+            <node concept="Sf$Xq" id="3ugRfIRAjHF" role="1tU5fm">
+              <ref role="Sf$Xr" node="WieAE6FJqt" resolve="solverfactories" />
+            </node>
+            <node concept="2O5UvJ" id="3ugRfIRAjHI" role="33vP2m">
+              <ref role="2O5UnU" node="WieAE6FJqt" resolve="solverfactories" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3ugRfIRAlS4" role="3cqZAp">
+          <node concept="3eOSWO" id="3ugRfIRAnSL" role="3cqZAk">
+            <node concept="3cmrfG" id="3ugRfIRAnV5" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="3ugRfIRAkJy" role="3uHU7B">
+              <node concept="2OqwBi" id="3ugRfIRAjYw" role="2Oq$k0">
+                <node concept="37vLTw" id="3ugRfIRAjHJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3ugRfIRAjHH" resolve="ep" />
+                </node>
+                <node concept="SfwO_" id="3ugRfIRAkmt" role="2OqNvi" />
+              </node>
+              <node concept="34oBXx" id="3ugRfIRAlis" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3ugRfIRAjpT" role="3clF45" />
+      <node concept="3Tm1VV" id="3ugRfIRAj4X" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="7rOSrvnISpa" role="1B3o_S" />
   </node>
@@ -1067,8 +1113,43 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6rcydJjmZUG" role="3cqZAp">
-          <node concept="10Nm6u" id="6rcydJjn00C" role="3cqZAk" />
+        <node concept="YS8fn" id="3ugRfIRpOs9" role="3cqZAp">
+          <node concept="2ShNRf" id="3ugRfIRpOVw" role="YScLw">
+            <node concept="1pGfFk" id="3ugRfIRpPyP" role="2ShVmc">
+              <ref role="37wK5l" node="7UxulDgvQce" resolve="SolverException" />
+              <node concept="3cpWs3" id="3ugRfIRpVe4" role="37wK5m">
+                <node concept="2OqwBi" id="3ugRfIRpWBj" role="3uHU7w">
+                  <node concept="2OqwBi" id="3ugRfIRpVEZ" role="2Oq$k0">
+                    <node concept="37vLTw" id="3ugRfIRpVpR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6rcydJjn04S" resolve="expression" />
+                    </node>
+                    <node concept="2yIwOk" id="3ugRfIRpWap" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="3ugRfIRpXh7" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="3ugRfIRpTs0" role="3uHU7B">
+                  <node concept="3cpWs3" id="3ugRfIRpQNt" role="3uHU7B">
+                    <node concept="Xl_RD" id="3ugRfIRpPA2" role="3uHU7B">
+                      <property role="Xl_RC" value="Cannot translate the expression " />
+                    </node>
+                    <node concept="2OqwBi" id="3ugRfIRpRaP" role="3uHU7w">
+                      <node concept="37vLTw" id="3ugRfIRpQX3" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6rcydJjn04S" resolve="expression" />
+                      </node>
+                      <node concept="2qgKlT" id="3ugRfIRpSrv" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3ugRfIRpTBi" role="3uHU7w">
+                    <property role="Xl_RC" value=". No SMTLIBTranslator is registered for concept " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="6rcydJjj2bj" role="2AJF6D">
@@ -1460,19 +1541,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6rcydJjn1Go" role="3cqZAp">
-          <node concept="3clFbS" id="6rcydJjn1Gq" role="3clFbx">
-            <node concept="3cpWs6" id="6rcydJjn4Jo" role="3cqZAp">
-              <node concept="10Nm6u" id="6rcydJjn5fr" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="3clFbC" id="6rcydJjn4$2" role="3clFbw">
-            <node concept="10Nm6u" id="6rcydJjn4FI" role="3uHU7w" />
-            <node concept="37vLTw" id="6rcydJjn1OL" role="3uHU7B">
-              <ref role="3cqZAo" node="6rcydJjjlsl" resolve="translator" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6rcydJjj7al" role="3cqZAp">
           <node concept="2OqwBi" id="6rcydJjjm4O" role="3clFbG">
             <node concept="37vLTw" id="6rcydJjjlsq" role="2Oq$k0">
@@ -1727,7 +1795,7 @@
           </node>
         </node>
         <node concept="x79VA" id="6rcydJjn5S3" role="3nqlJM">
-          <property role="x79VB" value="an AbstractSMTLIBTranslator, usualy one from the translators-list." />
+          <property role="x79VB" value="an AbstractSMTLIBTranslator, usualy one from the translators-list. Should NOT be null!" />
         </node>
         <node concept="TZ5HA" id="6rcydJjn5RV" role="TZ5H$">
           <node concept="1dT_AC" id="6rcydJjn5RW" role="1dT_Ay">
@@ -1747,6 +1815,11 @@
         <node concept="TZ5HA" id="6rcydJjn6PA" role="TZ5H$">
           <node concept="1dT_AC" id="6rcydJjn6PB" role="1dT_Ay">
             <property role="1dT_AB" value="This way, the driver is able to tweak the translation arbitrarily." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3ugRfIRzQjL" role="TZ5H$">
+          <node concept="1dT_AC" id="3ugRfIRzQjM" role="1dT_Ay">
+            <property role="1dT_AB" value="Note that an SMTLIBTranslatorDriver is NOT ALLOWED to return null! When no suitable translator can be found, then a SolverException detailing the reason should be thrown." />
           </node>
         </node>
       </node>
@@ -1798,6 +1871,23 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="2GQBRFCpFTQ">
+    <property role="TrG5h" value="SolverTimeoutException" />
+    <property role="3GE5qa" value="" />
+    <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
+    <node concept="3uibUv" id="2GQBRFCpFTS" role="1zkMxy">
+      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+    </node>
+    <node concept="2tJIrI" id="2GQBRFCpFTT" role="jymVt" />
+    <node concept="2tJIrI" id="2GQBRFCpFU0" role="jymVt" />
+    <node concept="3clFbW" id="2GQBRFCpFU1" role="jymVt">
+      <node concept="3cqZAl" id="2GQBRFCpFU2" role="3clF45" />
+      <node concept="3Tm1VV" id="2GQBRFCpFU3" role="1B3o_S" />
+      <node concept="3clFbS" id="2GQBRFCpFU4" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="2GQBRFCpFUp" role="jymVt" />
+    <node concept="2tJIrI" id="2GQBRFCpFVR" role="jymVt" />
   </node>
 </model>
 

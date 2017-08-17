@@ -84,6 +84,9 @@
     <node concept="PrWs8" id="4tXyFaWxW_o" role="PzmwI">
       <ref role="PrY4T" node="4tXyFaWxW_f" resolve="IReqContainer" />
     </node>
+    <node concept="PrWs8" id="4OH$Ti$morl" role="PzmwI">
+      <ref role="PrY4T" node="4OH$Ti$mobC" resolve="IReqContextLabelProvider" />
+    </node>
     <node concept="PrWs8" id="7Dcax7Aau$P" role="PzmwI">
       <ref role="PrY4T" to="2c95:5L$H31Kgq3f" resolve="IDocumentLike" />
     </node>
@@ -416,6 +419,10 @@
     <node concept="PrWs8" id="7IM3imbodiD" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4OH$Ti$mobC">
+    <property role="EcuMT" value="5561263381494203112" />
+    <property role="TrG5h" value="IReqContextLabelProvider" />
   </node>
 </model>
 
