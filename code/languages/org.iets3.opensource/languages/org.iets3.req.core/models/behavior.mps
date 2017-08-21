@@ -2,7 +2,7 @@
 <model ref="r:4cfa8b0a-7754-4d3d-9e06-0ce9d427860c(org.iets3.req.core.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,6 +53,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -81,6 +82,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -329,12 +331,12 @@
                 <node concept="3cpWs3" id="7Dcax7Aeh3f" role="3uHU7B">
                   <node concept="2OqwBi" id="7Dcax7AefE3" role="3uHU7B">
                     <node concept="1PxgMI" id="7Dcax7AefyW" role="2Oq$k0">
+                      <node concept="chp4Y" id="6b_jefnKzKY" role="3oSUPX">
+                        <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
+                      </node>
                       <node concept="2OqwBi" id="7Dcax7AeeWN" role="1m5AlR">
                         <node concept="13iPFW" id="7Dcax7AeeSS" role="2Oq$k0" />
                         <node concept="1mfA1w" id="7Dcax7Aefdv" role="2OqNvi" />
-                      </node>
-                      <node concept="chp4Y" id="6b_jefnKzKY" role="3oSUPX">
-                        <ref role="cht4Q" to="plfp:4tXyFaWwpmI" resolve="AbstractRequirement" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="7Dcax7AegYv" role="2OqNvi">
@@ -372,12 +374,12 @@
                   <node concept="3cpWs3" id="7Dcax7AehYf" role="3uHU7B">
                     <node concept="2OqwBi" id="7Dcax7AehYg" role="3uHU7B">
                       <node concept="1PxgMI" id="7Dcax7AehYh" role="2Oq$k0">
+                        <node concept="chp4Y" id="6b_jefnKzL2" role="3oSUPX">
+                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                        </node>
                         <node concept="2OqwBi" id="7Dcax7AehYi" role="1m5AlR">
                           <node concept="13iPFW" id="7Dcax7AehYj" role="2Oq$k0" />
                           <node concept="1mfA1w" id="7Dcax7AehYk" role="2OqNvi" />
-                        </node>
-                        <node concept="chp4Y" id="6b_jefnKzL2" role="3oSUPX">
-                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="7Dcax7AeknD" role="2OqNvi">
@@ -770,6 +772,17 @@
         </node>
       </node>
       <node concept="17QB3L" id="7gL8KYmPI$g" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6Q6YvW0IOIs" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="suppressTags" />
+      <node concept="3Tm1VV" id="6Q6YvW0IOIt" role="1B3o_S" />
+      <node concept="10P_77" id="6Q6YvW0IQbL" role="3clF45" />
+      <node concept="3clFbS" id="6Q6YvW0IOIv" role="3clF47">
+        <node concept="3cpWs6" id="6Q6YvW0IQck" role="3cqZAp">
+          <node concept="3clFbT" id="6Q6YvW0IQcp" role="3cqZAk" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="4tXyFaWylOq">
@@ -1178,6 +1191,40 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3wHxcnxC6Dd" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4OH$Ti$moc4">
+    <ref role="13h7C2" to="plfp:4OH$Ti$mobC" resolve="IReqContextLabelProvider" />
+    <node concept="13hLZK" id="4OH$Ti$moc5" role="13h7CW">
+      <node concept="3clFbS" id="4OH$Ti$moc6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4OH$Ti$mom4" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReqStructureFolderName" />
+      <node concept="3Tm1VV" id="4OH$Ti$mom5" role="1B3o_S" />
+      <node concept="17QB3L" id="4OH$Ti$momc" role="3clF45" />
+      <node concept="3clFbS" id="4OH$Ti$mom7" role="3clF47">
+        <node concept="3clFbF" id="4OH$Ti$momf" role="3cqZAp">
+          <node concept="Xl_RD" id="7Ip2X68OogJ" role="3clFbG">
+            <property role="Xl_RC" value="Requirements Structure" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4OH$Ti$momj" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReqGeneralFolderName" />
+      <node concept="3Tm1VV" id="4OH$Ti$momk" role="1B3o_S" />
+      <node concept="17QB3L" id="4OH$Ti$momx" role="3clF45" />
+      <node concept="3clFbS" id="4OH$Ti$momm" role="3clF47">
+        <node concept="3clFbF" id="4OH$Ti$mom$" role="3cqZAp">
+          <node concept="Xl_RD" id="3wHxcnxBQGO" role="3clFbG">
+            <property role="Xl_RC" value="Requirements" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

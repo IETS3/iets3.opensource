@@ -4,7 +4,7 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -15,8 +15,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="8wxg" ref="r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
@@ -1544,61 +1544,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="3_xsRJ4qqOC">
-    <property role="3GE5qa" value="vector" />
-    <property role="TrG5h" value="addMutator" />
-    <ref role="2ZfgGC" to="av4b:1bwJEEfQxC8" resolve="TestSubjectAdapter" />
-    <node concept="2S6ZIM" id="3_xsRJ4qqOD" role="2ZfVej">
-      <node concept="3clFbS" id="3_xsRJ4qqOE" role="2VODD2">
-        <node concept="3clFbF" id="3_xsRJ4qqXy" role="3cqZAp">
-          <node concept="Xl_RD" id="1qjbRymJSLV" role="3clFbG">
-            <property role="Xl_RC" value="Add Mutator" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3_xsRJ4qqOF" role="2ZfgGD">
-      <node concept="3clFbS" id="3_xsRJ4qqOG" role="2VODD2">
-        <node concept="3clFbF" id="1qjbRymJUk8" role="3cqZAp">
-          <node concept="2OqwBi" id="1qjbRymJUIc" role="3clFbG">
-            <node concept="2OqwBi" id="1qjbRymJUr8" role="2Oq$k0">
-              <node concept="2Sf5sV" id="1qjbRymJUk7" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1qjbRymJUxr" role="2OqNvi">
-                <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
-              </node>
-            </node>
-            <node concept="zfrQC" id="1qjbRymJURQ" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="1qjbRymJT2Y" role="2ZfVeh">
-      <node concept="3clFbS" id="1qjbRymJT2Z" role="2VODD2">
-        <node concept="3clFbF" id="1qjbRymJTae" role="3cqZAp">
-          <node concept="1Wc70l" id="3yVmeSjI__f" role="3clFbG">
-            <node concept="2OqwBi" id="3yVmeSjI_ZR" role="3uHU7w">
-              <node concept="2Sf5sV" id="3yVmeSjI_Nm" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3yVmeSjIAf8" role="2OqNvi">
-                <ref role="37wK5l" to="xk6s:3yVmeSjI$c6" resolve="supportsMutations" />
-              </node>
-            </node>
-            <node concept="3clFbC" id="1qjbRymJTUQ" role="3uHU7B">
-              <node concept="2OqwBi" id="1qjbRymJTmp" role="3uHU7B">
-                <node concept="2Sf5sV" id="1qjbRymJTad" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1qjbRymJTzy" role="2OqNvi">
-                  <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
-                </node>
-              </node>
-              <node concept="10Nm6u" id="1qjbRymJUaR" role="3uHU7w" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="1qjbRymLUpV" role="lGtFl">
-      <property role="1SWRpm" value="TESTING" />
-    </node>
-  </node>
   <node concept="2S6QgY" id="1qjbRymJWfi">
     <property role="3GE5qa" value="mutator" />
     <property role="TrG5h" value="mutate" />
@@ -1750,6 +1695,61 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="1qjbRymX48e" role="lGtFl">
+      <property role="1SWRpm" value="TESTING" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3_xsRJ4qqOC">
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="addMutator" />
+    <ref role="2ZfgGC" to="av4b:1bwJEEfQxC8" resolve="TestSubjectAdapter" />
+    <node concept="2S6ZIM" id="3_xsRJ4qqOD" role="2ZfVej">
+      <node concept="3clFbS" id="3_xsRJ4qqOE" role="2VODD2">
+        <node concept="3clFbF" id="3_xsRJ4qqXy" role="3cqZAp">
+          <node concept="Xl_RD" id="1qjbRymJSLV" role="3clFbG">
+            <property role="Xl_RC" value="Add Mutator" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3_xsRJ4qqOF" role="2ZfgGD">
+      <node concept="3clFbS" id="3_xsRJ4qqOG" role="2VODD2">
+        <node concept="3clFbF" id="1qjbRymJUk8" role="3cqZAp">
+          <node concept="2OqwBi" id="1qjbRymJUIc" role="3clFbG">
+            <node concept="2OqwBi" id="1qjbRymJUr8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1qjbRymJUk7" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1qjbRymJUxr" role="2OqNvi">
+                <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="1qjbRymJURQ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1qjbRymJT2Y" role="2ZfVeh">
+      <node concept="3clFbS" id="1qjbRymJT2Z" role="2VODD2">
+        <node concept="3clFbF" id="1qjbRymJTae" role="3cqZAp">
+          <node concept="1Wc70l" id="3yVmeSjI__f" role="3clFbG">
+            <node concept="2OqwBi" id="3yVmeSjI_ZR" role="3uHU7w">
+              <node concept="2Sf5sV" id="3yVmeSjI_Nm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3yVmeSjIAf8" role="2OqNvi">
+                <ref role="37wK5l" to="xk6s:3yVmeSjI$c6" resolve="supportsMutations" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="1qjbRymJTUQ" role="3uHU7B">
+              <node concept="2OqwBi" id="1qjbRymJTmp" role="3uHU7B">
+                <node concept="2Sf5sV" id="1qjbRymJTad" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1qjbRymJTzy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="av4b:3_xsRJ4WDa$" resolve="mutator" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="1qjbRymJUaR" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1qjbRymLUpV" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
     </node>
   </node>

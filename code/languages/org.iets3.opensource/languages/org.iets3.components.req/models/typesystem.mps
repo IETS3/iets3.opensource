@@ -2,7 +2,7 @@
 <model ref="r:67a2a1cf-c4ce-4197-99a0-fcff82f5bf11(org.iets3.components.req.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports />
   <registry />
