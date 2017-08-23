@@ -141,6 +141,7 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -530,8 +531,8 @@
           <node concept="3clFbS" id="72b39kzfT$D" role="2VODD2">
             <node concept="3clFbF" id="72b39kzfTC1" role="3cqZAp">
               <node concept="2OqwBi" id="72b39kzfTJY" role="3clFbG">
-                <node concept="7Obwk" id="72b39kzfTC0" role="2Oq$k0" />
                 <node concept="1mfA1w" id="72b39kzfTUT" role="2OqNvi" />
+                <node concept="7Obwk" id="72b39kzfTC0" role="2Oq$k0" />
               </node>
             </node>
           </node>
@@ -625,6 +626,30 @@
           <ref role="1wgcnl" to="itrz:4rZeNQ6OYRX" resolve="IETS3String" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="IW6AY" id="1VCS9Plsl9H">
+    <property role="3GE5qa" value="numeric.number" />
+    <ref role="aqKnT" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
+    <node concept="1Qtc8_" id="1VCS9Plsl9O" role="IW6Ez">
+      <node concept="3cWJ9i" id="1VCS9Plsl9U" role="1Qtc8$">
+        <node concept="CtIbL" id="1VCS9Plsl9W" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
+        </node>
+      </node>
+      <node concept="mvV$s" id="1VCS9Plsla2" role="1Qtc8A">
+        <node concept="mvVNg" id="1VCS9Plslaa" role="mvV$0">
+          <node concept="3clFbS" id="1VCS9Plslab" role="2VODD2">
+            <node concept="3clFbF" id="1VCS9Plsldz" role="3cqZAp">
+              <node concept="2OqwBi" id="1VCS9PlslkR" role="3clFbG">
+                <node concept="7Obwk" id="1VCS9Plsldy" role="2Oq$k0" />
+                <node concept="1mfA1w" id="1VCS9Plslwe" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2X7gjp" id="1VCS9PlsE16" role="1Qtc8A" />
     </node>
   </node>
 </model>
