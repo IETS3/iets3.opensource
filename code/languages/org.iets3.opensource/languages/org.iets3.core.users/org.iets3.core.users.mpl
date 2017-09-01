@@ -70,7 +70,7 @@
     <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:e840b8ae-64d9-4b5b-b3b4-eca3f222d4da:com.mbeddr.mpsutil.iconchar" version="0" />
+    <language slang="l:e840b8ae-64d9-4b5b-b3b4-eca3f222d4da:com.mbeddr.mpsutil.iconchar" version="1" />
     <language slang="l:7e450f4e-1ac3-41ef-a851-4598161bdb94:de.slisson.mps.tables" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
