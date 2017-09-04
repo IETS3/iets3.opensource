@@ -2,8 +2,8 @@
 <model ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -218,6 +218,9 @@
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1220357310820" name="jetbrains.mps.lang.typesystem.structure.AddDependencyStatement" flags="nn" index="yXGxS">
         <child id="1220357350423" name="dependency" index="yXQkb" />
+      </concept>
+      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
+        <child id="1224760230762" name="infoText" index="Dpw9R" />
       </concept>
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
@@ -6191,11 +6194,11 @@
           </node>
         </node>
         <node concept="3clFbS" id="6BCTLIjCreu" role="3clFbx">
-          <node concept="2MkqsV" id="6BCTLIjCrEQ" role="3cqZAp">
-            <node concept="Xl_RD" id="6BCTLIjCrF2" role="2MkJ7o">
+          <node concept="Dpp1Q" id="5BcUlVHSa9X" role="3cqZAp">
+            <node concept="Xl_RD" id="5BcUlVHSa9Z" role="Dpw9R">
               <property role="Xl_RC" value="IControlAdvancedFeatures should only be applied to roots, won't work otherwise." />
             </node>
-            <node concept="1YBJjd" id="6BCTLIjCrGq" role="2OEOjV">
+            <node concept="1YBJjd" id="5BcUlVHSaa0" role="2OEOjV">
               <ref role="1YBMHb" node="6BCTLIjCref" resolve="icaf" />
             </node>
           </node>
