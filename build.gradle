@@ -105,6 +105,7 @@ ant.properties['mps.home'] = resolveMps.destinationDir
 ant.properties['iets3.github.opensource.home'] = rootDir
 ant.properties['build.dir'] = rootDir
 ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
+ant.properties['version'] = version
 ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
 
 tasks['ant-check-mps-home'].dependsOn resolveMps
