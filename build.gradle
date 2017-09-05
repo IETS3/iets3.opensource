@@ -10,6 +10,11 @@ if (project.hasProperty("forceCI")) {
     }
 }
 
+def forceLocal = project.hasProperty("forceLocalDependencies")
+
+
+// Dependency versions
+ext.mpsVersion = '2017.2.1'
 
 
 // Project version
@@ -24,11 +29,6 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         version = "1.0-SNAPSHOT"
     }
 }
-
-def forceLocal = project.hasProperty("forceLocalDependencies")
-
-// Dependency versions
-ext.mpsVersion = '2017.2'
 
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {
