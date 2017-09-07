@@ -731,6 +731,9 @@
     <node concept="PrWs8" id="ORfz$DYlRG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="7QsdZDAxMzs" role="PzmwI">
+      <ref role="PrY4T" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
     </node>
