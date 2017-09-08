@@ -133,6 +133,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -317,6 +318,7 @@
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
+      <concept id="1240171359678" name="jetbrains.mps.lang.smodel.structure.EnumMember_ValueOperation" flags="nn" index="2ZYiMu" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -1418,22 +1420,28 @@
               <node concept="1bVj0M" id="mIQkxf$EOo" role="23t8la">
                 <node concept="3clFbS" id="mIQkxf$EOp" role="1bW5cS">
                   <node concept="3clFbF" id="mIQkxf$EUi" role="3cqZAp">
-                    <node concept="3clFbC" id="mIQkxf$GFl" role="3clFbG">
-                      <node concept="37vLTw" id="mIQkxf$GNT" role="3uHU7w">
-                        <ref role="3cqZAo" node="mIQkxf$E5O" resolve="kind" />
+                    <node concept="17R0WA" id="4cou8X1ZGND" role="3clFbG">
+                      <node concept="2OqwBi" id="4cou8X1ZFyk" role="3uHU7B">
+                        <node concept="2OqwBi" id="mIQkxf$FQp" role="2Oq$k0">
+                          <node concept="2OqwBi" id="mIQkxf$F2i" role="2Oq$k0">
+                            <node concept="37vLTw" id="mIQkxf$EUh" role="2Oq$k0">
+                              <ref role="3cqZAo" node="mIQkxf$EOq" resolve="it" />
+                            </node>
+                            <node concept="3TrEf2" id="mIQkxf$FgW" role="2OqNvi">
+                              <ref role="3Tt5mk" to="w9y2:mIQkxfpv7_" resolve="category" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="mIQkxf$FZH" role="2OqNvi">
+                            <ref role="37wK5l" node="siw10H0omi" resolve="kind" />
+                          </node>
+                        </node>
+                        <node concept="2ZYiMu" id="4cou8X1ZGiY" role="2OqNvi" />
                       </node>
-                      <node concept="2OqwBi" id="mIQkxf$FQp" role="3uHU7B">
-                        <node concept="2OqwBi" id="mIQkxf$F2i" role="2Oq$k0">
-                          <node concept="37vLTw" id="mIQkxf$EUh" role="2Oq$k0">
-                            <ref role="3cqZAo" node="mIQkxf$EOq" resolve="it" />
-                          </node>
-                          <node concept="3TrEf2" id="mIQkxf$FgW" role="2OqNvi">
-                            <ref role="3Tt5mk" to="w9y2:mIQkxfpv7_" resolve="category" />
-                          </node>
+                      <node concept="2OqwBi" id="4cou8X1ZHmM" role="3uHU7w">
+                        <node concept="37vLTw" id="mIQkxf$GNT" role="2Oq$k0">
+                          <ref role="3cqZAo" node="mIQkxf$E5O" resolve="kind" />
                         </node>
-                        <node concept="2qgKlT" id="mIQkxf$FZH" role="2OqNvi">
-                          <ref role="37wK5l" node="siw10H0omi" resolve="kind" />
-                        </node>
+                        <node concept="2ZYiMu" id="4cou8X1ZHNL" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
