@@ -940,6 +940,24 @@
           <property role="TrG5h" value="org.iets3.core.expr.tests#543569365052197681" />
           <property role="3LESm3" value="56959ea0-1a4c-409d-b923-9a5132cecf97" />
           <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="36boutet3I1" role="3bR37C">
+            <node concept="3bR9La" id="36boutet3I2" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:nbn5Dym2sp" resolve="Testbench" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="36boutet3I3" role="3bR37C">
+            <node concept="3bR9La" id="36boutet3I4" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="36boutet3I5" role="3bR37C">
+            <node concept="3bR9La" id="36boutet3I6" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6Ksjs" resolve="jetbrains.mps.lang.test#1210261198005" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="ub9nkyRnyt" role="3bR37C">
           <node concept="1Busua" id="ub9nkyRnyu" role="1SiIV1">
@@ -1044,6 +1062,35 @@
           <node concept="3bR9La" id="3yVmeSjzlhU" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:5WYUu8HaT_t" resolve="com.mbeddr.mpsutil.framecell" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36boutet3HT" role="3bR37C">
+          <node concept="3bR9La" id="36boutet3HU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36boutet3HV" role="3bR37C">
+          <node concept="3bR9La" id="36boutet3HW" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36boutet3HX" role="3bR37C">
+          <node concept="3bR9La" id="36boutet3HY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36boutet3HZ" role="3bR37C">
+          <node concept="1Busua" id="36boutet3I0" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Z_pmaBBTfx" role="3bR37C">
+          <node concept="3bR9La" id="7Z_pmaBBTfy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
           </node>
         </node>
       </node>
@@ -2544,6 +2591,41 @@
     <property role="TrG5h" value="org.iets3.opensource.tests" />
     <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
+      <node concept="55IIr" id="7Z_pmaBDZsm" role="398pKh">
+        <node concept="2Ry0Ak" id="7Z_pmaBDZsY" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="7Z_pmaBDZu9" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="7Z_pmaBDZw8" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Z_pmaBDZx_" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Z_pmaBDZz4" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="7Z_pmaBDZ$_" role="2Ry0An">
+                    <property role="2Ry0Am" value=".." />
+                    <node concept="2Ry0Ak" id="7Z_pmaBDZA8" role="2Ry0An">
+                      <property role="2Ry0Am" value=".." />
+                      <node concept="2Ry0Ak" id="7Z_pmaBDZBH" role="2Ry0An">
+                        <property role="2Ry0Am" value=".." />
+                        <node concept="2Ry0Ak" id="7Z_pmaBDZCU" role="2Ry0An">
+                          <property role="2Ry0Am" value="Applications" />
+                          <node concept="2Ry0Ak" id="7Z_pmaBDZEF" role="2Ry0An">
+                            <property role="2Ry0Am" value="MPS 2017.1.app" />
+                            <node concept="2Ry0Ak" id="7Z_pmaBDZFS" role="2Ry0An">
+                              <property role="2Ry0Am" value="Contents" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="1Y5vs7yKdR8" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
