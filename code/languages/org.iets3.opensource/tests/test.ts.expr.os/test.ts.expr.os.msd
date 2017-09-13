@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.expr.os" uuid="cf55cddb-d431-4f2e-93f4-3a4305c63d12" moduleVersion="0" compileInMPS="true">
+<solution name="test.ts.expr.os" uuid="cf55cddb-d431-4f2e-93f4-3a4305c63d12" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
