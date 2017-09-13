@@ -213,17 +213,6 @@
       <ref role="20lvS9" node="ub9nkyHAba" resolve="AssertTestItem" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6HHp2WneCKI">
-    <property role="TrG5h" value="CommentCondition" />
-    <property role="34LRSv" value=".." />
-    <property role="EcuMT" value="7740953487935704110" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyi" id="6HHp2WneCKS" role="1TKVEl">
-      <property role="TrG5h" value="label" />
-      <property role="IQ2nx" value="7740953487935704120" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="78hTg1$THIw">
     <property role="EcuMT" value="8219602584783477664" />
     <property role="TrG5h" value="AbstractTestItem" />

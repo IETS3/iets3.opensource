@@ -1992,36 +1992,6 @@
       <ref role="2$4xQ3" node="6HHp2WmZdFE" resolve="demoMode" />
     </node>
   </node>
-  <node concept="24kQdi" id="6HHp2WneCVX">
-    <ref role="1XX52x" to="av4b:6HHp2WneCKI" resolve="CommentCondition" />
-    <node concept="3EZMnI" id="6HHp2WneCW8" role="2wV5jI">
-      <node concept="3F0ifn" id="6HHp2WneCWf" role="3EZMnx">
-        <property role="3F0ifm" value=".." />
-        <node concept="VechU" id="6HHp2WneNPD" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-        <node concept="11LMrY" id="6HHp2Wnf1G8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="6HHp2WneCWl" role="3EZMnx">
-        <ref role="1NtTu8" to="av4b:6HHp2WneCKS" resolve="label" />
-        <node concept="VechU" id="6HHp2WneNPI" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6HHp2WneCWt" role="3EZMnx">
-        <property role="3F0ifm" value=".." />
-        <node concept="VechU" id="6HHp2WneNPL" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-        <node concept="11L4FC" id="6HHp2Wnf1HR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="6HHp2WneCWb" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4kV9Ob9YBZl">
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="av4b:4kV9Ob9XpO0" resolve="RealEqualsTestOp" />
