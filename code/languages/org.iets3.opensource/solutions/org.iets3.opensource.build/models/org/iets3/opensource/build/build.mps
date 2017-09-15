@@ -2684,6 +2684,9 @@
         <node concept="L2wRC" id="OJuIQp$djE" role="39821P">
           <ref role="L2wRA" node="OJuIQp$dgj" resolve="test.ts.expr.os" />
         </node>
+        <node concept="L2wRC" id="6HtreehRSXB" role="39821P">
+          <ref role="L2wRA" node="6HtreehRSZa" resolve="test.ui.expr.os" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -2752,6 +2755,24 @@
             <property role="2Ry0Am" value="test.ts.expr.os" />
             <node concept="2Ry0Ak" id="OJuIQp$dhB" role="2Ry0An">
               <property role="2Ry0Am" value="test.ts.expr.os.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtA" id="6HtreehRSZa" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.ui.expr.os" />
+      <property role="3LESm3" value="bd07823a-e1d3-475a-88c5-e73fef8d2a7c" />
+      <property role="2GAjPV" value="false" />
+      <node concept="398BVA" id="6HtreehRT2n" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <node concept="2Ry0Ak" id="6HtreehRT2o" role="iGT6I">
+          <property role="2Ry0Am" value="tests" />
+          <node concept="2Ry0Ak" id="6HtreehRTff" role="2Ry0An">
+            <property role="2Ry0Am" value="test.ui.expr.os" />
+            <node concept="2Ry0Ak" id="6HtreehRTgs" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ui.expr.os.msd" />
             </node>
           </node>
         </node>
