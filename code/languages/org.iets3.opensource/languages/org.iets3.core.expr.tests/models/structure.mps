@@ -97,7 +97,6 @@
     <property role="34LRSv" value="test case" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="543569365052056263" />
-    <ref role="1TJDcQ" to="tp5g:hG7unSw" resolve="NodeCheckOperation" />
     <node concept="1TJgyj" id="ub9nkyHAcK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
@@ -218,7 +217,7 @@
     <property role="TrG5h" value="AbstractTestItem" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tp5g:hG7unSw" resolve="NodeCheckOperation" />
     <node concept="PrWs8" id="78hTg1$THIx" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
