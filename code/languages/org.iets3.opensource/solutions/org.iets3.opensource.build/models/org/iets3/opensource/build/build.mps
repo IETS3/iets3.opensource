@@ -2765,6 +2765,7 @@
       <property role="TrG5h" value="test.ui.expr.os" />
       <property role="3LESm3" value="bd07823a-e1d3-475a-88c5-e73fef8d2a7c" />
       <property role="2GAjPV" value="false" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="6HtreehRT2n" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
         <node concept="2Ry0Ak" id="6HtreehRT2o" role="iGT6I">
@@ -2806,6 +2807,9 @@
       </node>
       <node concept="22LTRM" id="OJuIQp_hcu" role="22LTRK">
         <ref role="22LTRN" node="OJuIQp$dgj" resolve="test.ts.expr.os" />
+      </node>
+      <node concept="22LTRM" id="6HtreehRTkK" role="22LTRK">
+        <ref role="22LTRN" node="6HtreehRSZa" resolve="test.ui.expr.os" />
       </node>
     </node>
   </node>
