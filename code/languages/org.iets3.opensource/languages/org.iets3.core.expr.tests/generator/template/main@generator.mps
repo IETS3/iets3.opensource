@@ -11,17 +11,15 @@
   <imports>
     <import index="fyhk" ref="920eaa0e-ecca-46bc-bee7-4e5c59213dd6/java:jetbrains.mps(Testbench/)" />
     <import index="tp6m" ref="r:00000000-0000-4000-0000-011c895903a2(jetbrains.mps.lang.test.runtime)" />
-    <import index="3fh5" ref="r:3d2b27a7-4374-41aa-af31-19e1e430d9f5(jetbrains.mps.lang.test.generator.baseLanguage.template.util)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="tgi8" ref="r:81527741-7c9e-483c-a9b4-06077dac00aa(org.iets3.core.expr.tests.generator.template.util)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
     <import index="tpe5" ref="r:00000000-0000-4000-0000-011c895902d1(jetbrains.mps.baseLanguage.unitTest.behavior)" implicit="true" />
     <import index="rjhg" ref="83f155ff-422c-4b5a-a2f2-b459302dd215/java:org.junit(jetbrains.mps.baseLanguage.unitTest.libs/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" implicit="true" />
     <import index="tp5o" ref="r:00000000-0000-4000-0000-011c89590380(jetbrains.mps.lang.test.behavior)" implicit="true" />
+    <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -262,8 +260,8 @@
                   <node concept="3clFbS" id="3SXwVgLRhwe" role="2VODD2">
                     <node concept="3clFbF" id="3SXwVgLRhwf" role="3cqZAp">
                       <node concept="2YIFZM" id="3SXwVgLRhwg" role="3clFbG">
-                        <ref role="37wK5l" to="3fh5:L0xQjiTXbx" resolve="getProjectPath" />
-                        <ref role="1Pybhc" to="3fh5:L0xQjiTXbn" resolve="TestsUtil" />
+                        <ref role="1Pybhc" to="tgi8:L0xQjiTXbn" resolve="TestsUtil" />
+                        <ref role="37wK5l" to="tgi8:L0xQjiTXbx" resolve="getProjectPath" />
                         <node concept="2OqwBi" id="3SXwVgLRhwh" role="37wK5m">
                           <node concept="30H73N" id="3SXwVgLRhwi" role="2Oq$k0" />
                           <node concept="I4A8Y" id="3SXwVgLRhwj" role="2OqNvi" />
@@ -343,8 +341,8 @@
                   <node concept="3clFbS" id="hOw3VBq" role="2VODD2">
                     <node concept="3clFbF" id="L0xQjiUFPw" role="3cqZAp">
                       <node concept="2YIFZM" id="L0xQjiUFPy" role="3clFbG">
-                        <ref role="37wK5l" to="3fh5:L0xQjiUFHd" resolve="getTestBodyClassName" />
-                        <ref role="1Pybhc" to="3fh5:L0xQjiTXbn" resolve="TestsUtil" />
+                        <ref role="1Pybhc" to="tgi8:L0xQjiTXbn" resolve="TestsUtil" />
+                        <ref role="37wK5l" to="tgi8:L0xQjiUFHd" resolve="getTestBodyClassName" />
                         <node concept="2OqwBi" id="4DN08aZ$6S0" role="37wK5m">
                           <node concept="30H73N" id="L0xQjiUFPz" role="2Oq$k0" />
                           <node concept="2qgKlT" id="4DN08aZ$6S9" role="2OqNvi">
@@ -401,11 +399,11 @@
           <node concept="3clFbS" id="hOw4bZZ" role="2VODD2">
             <node concept="3clFbF" id="hOw4e$m" role="3cqZAp">
               <node concept="2OqwBi" id="L_Hr3kEuoG" role="3clFbG">
-                <node concept="2qgKlT" id="L_Hr3kEuoH" role="2OqNvi">
-                  <ref role="37wK5l" to="tp5o:hOw0ICJ" resolve="getTestBodyName" />
+                <node concept="2qgKlT" id="4ssrwy9KDNj" role="2OqNvi">
+                  <ref role="37wK5l" to="xk6s:hOw0ICJ" resolve="getTestBodyName" />
                 </node>
                 <node concept="35c_gC" id="2YdNGB0TIO1" role="2Oq$k0">
-                  <ref role="35c_gD" to="tp5g:hHlH9T6" resolve="NodesTestCase" />
+                  <ref role="35c_gD" to="av4b:ub9nkyK62f" resolve="TestSuite" />
                 </node>
               </node>
             </node>

@@ -958,6 +958,24 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4ssrwy9K$ux" role="3bR37C">
+            <node concept="3bR9La" id="4ssrwy9K$uy" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4ssrwy9K$uz" role="3bR37C">
+            <node concept="3bR9La" id="4ssrwy9K$u$" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4ssrwy9K$u_" role="3bR37C">
+            <node concept="3bR9La" id="4ssrwy9K$uA" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="ub9nkyRnyt" role="3bR37C">
           <node concept="1Busua" id="ub9nkyRnyu" role="1SiIV1">
