@@ -155,6 +155,9 @@
     <node concept="PrWs8" id="sflsE7gfai" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="3z0ZJXm0Med" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
     <property role="TrG5h" value="ExtensionFunctionCall" />
@@ -616,6 +619,9 @@
     </node>
     <node concept="PrWs8" id="54pTGl8og01" role="PrDN$">
       <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0MfZ" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
     <node concept="1TJgyj" id="xu7xcKdRtf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

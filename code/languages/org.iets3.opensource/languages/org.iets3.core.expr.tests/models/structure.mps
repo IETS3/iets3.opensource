@@ -9,6 +9,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
+    <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
@@ -94,7 +96,6 @@
     <property role="34LRSv" value="test case" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="543569365052056263" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ub9nkyHAcK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
@@ -191,6 +192,9 @@
     <node concept="PrWs8" id="ORfz$DYkKL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="21ieoTcAswn" role="PzmwI">
+      <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
@@ -207,23 +211,12 @@
       <ref role="20lvS9" node="ub9nkyHAba" resolve="AssertTestItem" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6HHp2WneCKI">
-    <property role="TrG5h" value="CommentCondition" />
-    <property role="34LRSv" value=".." />
-    <property role="EcuMT" value="7740953487935704110" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyi" id="6HHp2WneCKS" role="1TKVEl">
-      <property role="TrG5h" value="label" />
-      <property role="IQ2nx" value="7740953487935704120" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="78hTg1$THIw">
     <property role="EcuMT" value="8219602584783477664" />
     <property role="TrG5h" value="AbstractTestItem" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tp5g:hG7unSw" resolve="NodeCheckOperation" />
     <node concept="PrWs8" id="78hTg1$THIx" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
@@ -238,6 +231,9 @@
     </node>
     <node concept="PrWs8" id="7obiejCh95s" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Mmb" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$THIv">
@@ -746,16 +742,16 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3_xsRJ4sa6R" role="1TKVEl">
-      <property role="IQ2nx" value="4134712908316713399" />
-      <property role="TrG5h" value="internalUniqueID" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="3_xsRJ4WDa$" role="1TKVEi">
       <property role="IQ2ns" value="4134712908325229220" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="mutator" />
       <ref role="20lvS9" node="3_xsRJ4oOr7" resolve="MutationEngine" />
+    </node>
+    <node concept="1TJgyi" id="3_xsRJ4sa6R" role="1TKVEl">
+      <property role="IQ2nx" value="4134712908316713399" />
+      <property role="TrG5h" value="internalUniqueID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="1bwJEEfQxDh">
@@ -824,41 +820,6 @@
     <property role="TrG5h" value="TestItemVectorCollection" />
     <ref role="1TJDcQ" node="1bwJEEeSLgy" resolve="AbstractVectorCollection" />
   </node>
-  <node concept="1TIwiD" id="1qjbRymQQwt">
-    <property role="EcuMT" value="1626696085384423453" />
-    <property role="3GE5qa" value="mutator" />
-    <property role="TrG5h" value="OldNodeAnnotation" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="1qjbRymQQwB" role="lGtFl">
-      <property role="Hh88m" value="old" />
-      <node concept="trNpa" id="1qjbRymQQwD" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="1qjbRymQQwF" role="1TKVEi">
-      <property role="IQ2ns" value="1626696085384423467" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="oldNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1qjbRymN1gl">
-    <property role="EcuMT" value="1626696085383418901" />
-    <property role="3GE5qa" value="mutator" />
-    <property role="TrG5h" value="MutationLog" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1qjbRymSXmZ" role="1TKVEi">
-      <property role="IQ2ns" value="1626696085384975807" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="newNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-    <node concept="PrWs8" id="1qjbRymUIt9" role="PzmwI">
-      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3_xsRJ4oOr7">
     <property role="EcuMT" value="4134712908315838151" />
     <property role="TrG5h" value="MutationEngine" />
@@ -880,6 +841,41 @@
       <property role="20kJfa" value="logs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1qjbRymN1gl" resolve="MutationLog" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1qjbRymN1gl">
+    <property role="EcuMT" value="1626696085383418901" />
+    <property role="3GE5qa" value="mutator" />
+    <property role="TrG5h" value="MutationLog" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1qjbRymSXmZ" role="1TKVEi">
+      <property role="IQ2ns" value="1626696085384975807" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="newNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="1qjbRymUIt9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1qjbRymQQwt">
+    <property role="EcuMT" value="1626696085384423453" />
+    <property role="3GE5qa" value="mutator" />
+    <property role="TrG5h" value="OldNodeAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="1qjbRymQQwB" role="lGtFl">
+      <property role="Hh88m" value="old" />
+      <node concept="trNpa" id="1qjbRymQQwD" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="1qjbRymQQwF" role="1TKVEi">
+      <property role="IQ2ns" value="1626696085384423467" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="oldNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
 </model>

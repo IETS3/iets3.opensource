@@ -160,6 +160,9 @@
     <node concept="PrWs8" id="7Zvsa54xokt" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="3z0ZJXm0MjE" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6LfBX8Yi4ug">
     <property role="TrG5h" value="EmptyComponentContent" />
@@ -220,6 +223,9 @@
     </node>
     <node concept="PrWs8" id="7Zvsa54xokp" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Me_" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6LfBX8YivxI">
