@@ -997,7 +997,6 @@
               <node concept="3SKdUq" id="4DGyFN7VFnM" role="3SKWNk">
                 <property role="3SKdUp" value="all transformations of parent should be applicable here" />
               </node>
-              <node concept="3SKdUq" id="6f7f4BmhZTo" role="3SKWNk" />
             </node>
             <node concept="3clFbF" id="6f7f4BmhEqz" role="3cqZAp">
               <node concept="2OqwBi" id="6f7f4BmhEzt" role="3clFbG">
