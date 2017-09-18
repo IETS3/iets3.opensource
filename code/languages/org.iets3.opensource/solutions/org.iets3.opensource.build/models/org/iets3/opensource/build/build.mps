@@ -1049,6 +1049,12 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7bZFIilmtA_" role="3bR37C">
+            <node concept="3bR9La" id="7bZFIilmtAA" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="ub9nkyRnyt" role="3bR37C">
           <node concept="1Busua" id="ub9nkyRnyu" role="1SiIV1">
