@@ -222,9 +222,6 @@
       <concept id="1220357310820" name="jetbrains.mps.lang.typesystem.structure.AddDependencyStatement" flags="nn" index="yXGxS">
         <child id="1220357350423" name="dependency" index="yXQkb" />
       </concept>
-      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
-        <child id="1224760230762" name="infoText" index="Dpw9R" />
-      </concept>
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -6181,36 +6178,6 @@
     <node concept="1YaCAy" id="4hW8Ne0dYAW" role="1YuTPh">
       <property role="TrG5h" value="re" />
       <ref role="1YaFvo" to="hm2y:4hW8Ne0bQYm" resolve="Revealer" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="6BCTLIjCrec">
-    <property role="TrG5h" value="check_IControlAdvancedFeatures" />
-    <node concept="3clFbS" id="6BCTLIjCred" role="18ibNy">
-      <node concept="3clFbJ" id="6BCTLIjCres" role="3cqZAp">
-        <node concept="3y3z36" id="6BCTLIjCrEa" role="3clFbw">
-          <node concept="10Nm6u" id="6BCTLIjCrEl" role="3uHU7w" />
-          <node concept="2OqwBi" id="6BCTLIjCrn4" role="3uHU7B">
-            <node concept="1YBJjd" id="6BCTLIjCreC" role="2Oq$k0">
-              <ref role="1YBMHb" node="6BCTLIjCref" resolve="icaf" />
-            </node>
-            <node concept="1mfA1w" id="6BCTLIjCrsT" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="6BCTLIjCreu" role="3clFbx">
-          <node concept="Dpp1Q" id="5BcUlVHSa9X" role="3cqZAp">
-            <node concept="Xl_RD" id="5BcUlVHSa9Z" role="Dpw9R">
-              <property role="Xl_RC" value="IControlAdvancedFeatures should only be applied to roots, won't work otherwise." />
-            </node>
-            <node concept="1YBJjd" id="5BcUlVHSaa0" role="2OEOjV">
-              <ref role="1YBMHb" node="6BCTLIjCref" resolve="icaf" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6BCTLIjCref" role="1YuTPh">
-      <property role="TrG5h" value="icaf" />
-      <ref role="1YaFvo" to="hm2y:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
     </node>
   </node>
   <node concept="18kY7G" id="ORfz$DSb0m">
