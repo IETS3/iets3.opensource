@@ -57,7 +57,7 @@
     <property role="34LRSv" value="(" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="7554398283340107702" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="5Win3SAb5Rp" resolve="GenericFunctionType" />
     <node concept="1TJgyj" id="6zmBjqUjGYR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="argumentTypes" />
@@ -500,6 +500,19 @@
     <property role="EcuMT" value="6095949300269462258" />
     <property role="3GE5qa" value="block" />
     <property role="TrG5h" value="IJoinedBlockContext" />
+  </node>
+  <node concept="1TIwiD" id="5Win3SA8mVE">
+    <property role="EcuMT" value="6850639405181398762" />
+    <property role="TrG5h" value="FunCompose" />
+    <property role="34LRSv" value=":():" />
+    <property role="3GE5qa" value="compose" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="5Win3SAb5Rp">
+    <property role="EcuMT" value="6850639405182115289" />
+    <property role="TrG5h" value="GenericFunctionType" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
 

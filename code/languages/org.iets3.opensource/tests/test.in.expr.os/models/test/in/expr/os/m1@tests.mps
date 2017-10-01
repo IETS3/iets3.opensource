@@ -552,6 +552,7 @@
         <child id="7554398283340107703" name="argumentTypes" index="3iA5a1" />
         <child id="7554398283340107705" name="returnType" index="3iA5af" />
       </concept>
+      <concept id="6850639405181398762" name="org.iets3.core.expr.lambda.structure.FunCompose" flags="ng" index="1TcNbk" />
     </language>
   </registry>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
@@ -16227,6 +16228,133 @@
       </node>
     </node>
     <node concept="_ixoA" id="7cphKbKN3VO" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="5Win3SA8mme">
+    <property role="TrG5h" value="composition" />
+    <property role="1XBH2A" value="true" />
+    <property role="2SXJ1i" value="true" />
+    <node concept="_ixoA" id="5Win3SA8mLJ" role="_iOnB" />
+    <node concept="_ixoA" id="5Win3SA8mLR" role="_iOnB" />
+    <node concept="1aga60" id="5Win3SA8mLr" role="_iOnB">
+      <property role="TrG5h" value="toString" />
+      <node concept="30dDZf" id="5Win3SA8mN8" role="1ahQXP">
+        <node concept="30bdrP" id="5Win3SA8mNi" role="30dEs_" />
+        <node concept="1afdae" id="5Win3SA8mMY" role="30dEsF">
+          <ref role="1afue_" node="5Win3SA8mLA" resolve="i" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="5Win3SA8mLA" role="1ahQWs">
+        <property role="TrG5h" value="i" />
+        <node concept="30bXR$" id="5Win3SA8mMO" role="3ix9CU" />
+      </node>
+    </node>
+    <node concept="1aga60" id="5Win3SA8mOc" role="_iOnB">
+      <property role="TrG5h" value="greet" />
+      <node concept="30dDZf" id="5Win3SA8mPf" role="1ahQXP">
+        <node concept="1afdae" id="5Win3SA8mPA" role="30dEs_">
+          <ref role="1afue_" node="5Win3SA8mOB" resolve="s" />
+        </node>
+        <node concept="30bdrP" id="5Win3SA8mP3" role="30dEsF">
+          <property role="30bdrQ" value="Hello " />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="5Win3SA8mOB" role="1ahQWs">
+        <property role="TrG5h" value="s" />
+        <node concept="30bdrU" id="5Win3SA8mOT" role="3ix9CU" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5Win3SA8mRL" role="_iOnB" />
+    <node concept="2zPypq" id="5Win3SAcZ5j" role="_iOnB">
+      <property role="TrG5h" value="composed1" />
+      <node concept="1TcNbk" id="5Win3SAanlN" role="2zPyp_">
+        <node concept="1aeIDv" id="5Win3SAanmy" role="30dEs_">
+          <ref role="1aeol8" node="5Win3SA8mLr" resolve="toString" />
+        </node>
+        <node concept="1aeIDv" id="5Win3SA8mTX" role="30dEsF">
+          <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="5Win3SAg54h" role="_iOnB">
+      <property role="TrG5h" value="composed2" />
+      <node concept="1TcNbk" id="5Win3SAg54i" role="2zPyp_">
+        <node concept="_emDc" id="5Win3SAg5gn" role="30dEs_">
+          <ref role="_emDf" node="5Win3SAcZ5j" resolve="composed1" />
+        </node>
+        <node concept="1aeIDv" id="5Win3SAg54k" role="30dEsF">
+          <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="5Win3SAh2gn" role="_iOnB">
+      <property role="TrG5h" value="composed3" />
+      <node concept="1TcNbk" id="5Win3SAh2go" role="2zPyp_">
+        <node concept="1aeIDv" id="5Win3SAh2gq" role="30dEsF">
+          <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
+        </node>
+        <node concept="1TcNbk" id="5Win3SAh2Q1" role="30dEs_">
+          <node concept="1aeIDv" id="5Win3SAh34c" role="30dEs_">
+            <ref role="1aeol8" node="5Win3SA8mLr" resolve="toString" />
+          </node>
+          <node concept="1aeIDv" id="5Win3SAh2BA" role="30dEsF">
+            <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5Win3SAcZ35" role="_iOnB" />
+    <node concept="_fkuM" id="5Win3SAedQ5" role="_iOnB">
+      <property role="TrG5h" value="TTT" />
+      <node concept="_fkuZ" id="5Win3SAedQx" role="_fkp5">
+        <node concept="_fku$" id="5Win3SAedQy" role="_fkur" />
+        <node concept="1QScDb" id="5Win3SAeejf" role="_fkuY">
+          <node concept="3iwYMK" id="5Win3SAeepa" role="1QScD9">
+            <node concept="30bXRB" id="5Win3SAeevk" role="3iwOxG">
+              <property role="30bXRw" value="12" />
+            </node>
+          </node>
+          <node concept="_emDc" id="5Win3SAedQI" role="30czhm">
+            <ref role="_emDf" node="5Win3SAcZ5j" resolve="composed1" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="5Win3SAee_W" role="_fkuS">
+          <property role="30bdrQ" value="Hello 12" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5Win3SAg5lk" role="_fkp5">
+        <node concept="_fku$" id="5Win3SAg5ll" role="_fkur" />
+        <node concept="1QScDb" id="5Win3SAg5lm" role="_fkuY">
+          <node concept="3iwYMK" id="5Win3SAg5ln" role="1QScD9">
+            <node concept="30bXRB" id="5Win3SAg5lo" role="3iwOxG">
+              <property role="30bXRw" value="12" />
+            </node>
+          </node>
+          <node concept="_emDc" id="5Win3SAg5mF" role="30czhm">
+            <ref role="_emDf" node="5Win3SAg54h" resolve="composed2" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="5Win3SAg5lq" role="_fkuS">
+          <property role="30bdrQ" value="Hello Hello 12" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5Win3SAh3k1" role="_fkp5">
+        <node concept="_fku$" id="5Win3SAh3k2" role="_fkur" />
+        <node concept="1QScDb" id="5Win3SAh3k3" role="_fkuY">
+          <node concept="3iwYMK" id="5Win3SAh3k4" role="1QScD9">
+            <node concept="30bXRB" id="5Win3SAh3k5" role="3iwOxG">
+              <property role="30bXRw" value="12" />
+            </node>
+          </node>
+          <node concept="_emDc" id="5Win3SAh3lv" role="30czhm">
+            <ref role="_emDf" node="5Win3SAh2gn" resolve="composed3" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="5Win3SAh3k7" role="_fkuS">
+          <property role="30bdrQ" value="Hello Hello 12" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5Win3SA8mmh" role="_iOnB" />
   </node>
 </model>
 
