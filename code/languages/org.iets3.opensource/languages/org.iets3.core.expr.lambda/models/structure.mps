@@ -504,7 +504,7 @@
   <node concept="1TIwiD" id="5Win3SA8mVE">
     <property role="EcuMT" value="6850639405181398762" />
     <property role="TrG5h" value="FunCompose" />
-    <property role="34LRSv" value=":():" />
+    <property role="34LRSv" value=":o:" />
     <property role="3GE5qa" value="compose" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
   </node>
@@ -513,6 +513,34 @@
     <property role="TrG5h" value="GenericFunctionType" />
     <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="5Win3SAh82e">
+    <property role="EcuMT" value="6850639405183697038" />
+    <property role="3GE5qa" value="compose" />
+    <property role="TrG5h" value="AnyType" />
+    <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="5iD_kvlIV0f">
+    <property role="EcuMT" value="6100571306011111439" />
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="FunctionStyleExecOp" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5iD_kvlIV1w" role="1TKVEi">
+      <property role="IQ2ns" value="6100571306011111520" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fun" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5iD_kvlIV15" role="1TKVEi">
+      <property role="IQ2ns" value="6100571306011111493" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 

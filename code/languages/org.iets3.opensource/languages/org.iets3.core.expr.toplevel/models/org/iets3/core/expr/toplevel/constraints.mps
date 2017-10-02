@@ -1644,5 +1644,77 @@
     <property role="3GE5qa" value="record.builde" />
     <ref role="1M2myG" to="yv47:4ptnK4jbr8C" resolve="BuilderAdapter" />
   </node>
+  <node concept="1M2fIO" id="5iD_kvlOboh">
+    <property role="3GE5qa" value="monad" />
+    <ref role="1M2myG" to="yv47:5iD_kvlObnO" resolve="MonadValExpr" />
+    <node concept="9S07l" id="5iD_kvlObol" role="9Vyp8">
+      <node concept="3clFbS" id="5iD_kvlObom" role="2VODD2">
+        <node concept="3clFbF" id="5iD_kvlObvn" role="3cqZAp">
+          <node concept="2OqwBi" id="5iD_kvlOc_0" role="3clFbG">
+            <node concept="2OqwBi" id="5iD_kvlObEM" role="2Oq$k0">
+              <node concept="nLn13" id="5iD_kvlObvm" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5iD_kvlObVz" role="2OqNvi">
+                <node concept="1xMEDy" id="5iD_kvlObV_" role="1xVPHs">
+                  <node concept="chp4Y" id="5iD_kvlOc4_" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:5iD_kvlMc0O" resolve="Monad" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5iD_kvlOcfw" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5iD_kvlOdbW" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5iD_kvlTt8a">
+    <property role="3GE5qa" value="monad" />
+    <ref role="1M2myG" to="yv47:5iD_kvlTt64" resolve="ProceedExpr" />
+    <node concept="9S07l" id="5iD_kvlTt8e" role="9Vyp8">
+      <node concept="3clFbS" id="5iD_kvlTt8f" role="2VODD2">
+        <node concept="3clFbF" id="5iD_kvlTtfo" role="3cqZAp">
+          <node concept="2OqwBi" id="5iD_kvlTuuM" role="3clFbG">
+            <node concept="2OqwBi" id="5iD_kvlTtqN" role="2Oq$k0">
+              <node concept="nLn13" id="5iD_kvlTtfn" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5iD_kvlTtFx" role="2OqNvi">
+                <node concept="1xMEDy" id="5iD_kvlTtFz" role="1xVPHs">
+                  <node concept="chp4Y" id="5iD_kvlTtOz" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:5iD_kvlMc0O" resolve="Monad" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5iD_kvlTu9i" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5iD_kvlTv5I" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7NGPH84H$QK">
+    <property role="3GE5qa" value="monad" />
+    <ref role="1M2myG" to="yv47:7NGPH84H$Ih" resolve="FirstExpr" />
+    <node concept="9S07l" id="7NGPH84H$QO" role="9Vyp8">
+      <node concept="3clFbS" id="7NGPH84H$QP" role="2VODD2">
+        <node concept="3clFbF" id="7NGPH84H$QV" role="3cqZAp">
+          <node concept="2OqwBi" id="7NGPH84H$QW" role="3clFbG">
+            <node concept="2OqwBi" id="7NGPH84H$QX" role="2Oq$k0">
+              <node concept="nLn13" id="7NGPH84H$QY" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7NGPH84H$QZ" role="2OqNvi">
+                <node concept="1xMEDy" id="7NGPH84H$R0" role="1xVPHs">
+                  <node concept="chp4Y" id="7NGPH84H$R1" role="ri$Ld">
+                    <ref role="cht4Q" to="yv47:5iD_kvlMc0O" resolve="Monad" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="7NGPH84H$R2" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7NGPH84H$R3" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
