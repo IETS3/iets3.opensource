@@ -13,7 +13,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -128,14 +127,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
-        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
-      </concept>
-      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
-        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -3097,98 +3088,27 @@
             </node>
             <node concept="3clFbJ" id="5Win3SAclEW" role="3cqZAp">
               <node concept="3clFbS" id="5Win3SAclEY" role="3clFbx">
-                <node concept="3clFbJ" id="5iD_kvm3zNH" role="3cqZAp">
-                  <node concept="3clFbS" id="5iD_kvm3zNJ" role="3clFbx">
-                    <node concept="3cpWs8" id="5iD_kvm3KI9" role="3cqZAp">
-                      <node concept="3cpWsn" id="5iD_kvm3KIa" role="3cpWs9">
-                        <property role="TrG5h" value="monadBase" />
-                        <node concept="3Tqbb2" id="5iD_kvm3KI3" role="1tU5fm">
-                          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
-                        </node>
-                        <node concept="2OqwBi" id="5iD_kvm3KIb" role="33vP2m">
-                          <node concept="2OqwBi" id="7NGPH84$1Wx" role="2Oq$k0">
-                            <node concept="1PxgMI" id="5iD_kvm3KIc" role="2Oq$k0">
-                              <node concept="chp4Y" id="5iD_kvm3KId" role="3oSUPX">
-                                <ref role="cht4Q" to="yv47:5iD_kvlZMNH" resolve="MonadType" />
-                              </node>
-                              <node concept="37vLTw" id="5iD_kvm3KIe" role="1m5AlR">
-                                <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
-                              </node>
-                            </node>
-                            <node concept="3TrEf2" id="7NGPH84$2lg" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yv47:5iD_kvlZMOh" resolve="monad" />
-                            </node>
-                          </node>
-                          <node concept="3TrEf2" id="7NGPH84BRjV" role="2OqNvi">
-                            <ref role="3Tt5mk" to="yv47:5iD_kvlV0Pa" resolve="baseType" />
-                          </node>
-                        </node>
-                      </node>
+                <node concept="2MkqsV" id="5Win3SAcGML" role="3cqZAp">
+                  <node concept="3cpWs3" id="5Win3SAcJGe" role="2MkJ7o">
+                    <node concept="37vLTw" id="5Win3SAcKob" role="3uHU7w">
+                      <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
                     </node>
-                    <node concept="3clFbJ" id="5iD_kvm3Jgq" role="3cqZAp">
-                      <node concept="3clFbS" id="5iD_kvm3Jgs" role="3clFbx">
-                        <node concept="2MkqsV" id="5iD_kvm3M6I" role="3cqZAp">
-                          <node concept="3cpWs3" id="5iD_kvm3M6J" role="2MkJ7o">
-                            <node concept="37vLTw" id="5iD_kvm3M6K" role="3uHU7w">
-                              <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
-                            </node>
-                            <node concept="Xl_RD" id="5iD_kvm3O40" role="3uHU7B">
-                              <property role="Xl_RC" value="wrong monadic type " />
-                            </node>
-                          </node>
-                          <node concept="1YBJjd" id="5iD_kvm3M6Q" role="2OEOjV">
-                            <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
-                          </node>
+                    <node concept="3cpWs3" id="5Win3SAcIEq" role="3uHU7B">
+                      <node concept="3cpWs3" id="5Win3SAcItD" role="3uHU7B">
+                        <node concept="Xl_RD" id="5Win3SAcGN0" role="3uHU7B">
+                          <property role="Xl_RC" value="return type of right function " />
+                        </node>
+                        <node concept="37vLTw" id="5Win3SAcItV" role="3uHU7w">
+                          <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
                         </node>
                       </node>
-                      <node concept="3fqX7Q" id="5iD_kvm3KTx" role="3clFbw">
-                        <node concept="3JuTUA" id="5iD_kvm3M51" role="3fr31v">
-                          <node concept="37vLTw" id="5iD_kvm3M5s" role="3JuY14">
-                            <ref role="3cqZAo" node="5iD_kvm3KIa" resolve="monadBase" />
-                          </node>
-                          <node concept="37vLTw" id="5iD_kvm3M64" role="3JuZjQ">
-                            <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
-                          </node>
-                        </node>
+                      <node concept="Xl_RD" id="5Win3SAcIEt" role="3uHU7w">
+                        <property role="Xl_RC" value=" is not a subtype of argument of left function " />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="5iD_kvm3zYc" role="3clFbw">
-                    <node concept="37vLTw" id="5iD_kvm3zO5" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
-                    </node>
-                    <node concept="1mIQ4w" id="5iD_kvm3$fw" role="2OqNvi">
-                      <node concept="chp4Y" id="5iD_kvm3Jb7" role="cj9EA">
-                        <ref role="cht4Q" to="yv47:5iD_kvlZMNH" resolve="MonadType" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="9aQIb" id="5iD_kvm3N5P" role="9aQIa">
-                    <node concept="3clFbS" id="5iD_kvm3N5Q" role="9aQI4">
-                      <node concept="2MkqsV" id="5Win3SAcGML" role="3cqZAp">
-                        <node concept="3cpWs3" id="5Win3SAcJGe" role="2MkJ7o">
-                          <node concept="37vLTw" id="5Win3SAcKob" role="3uHU7w">
-                            <ref role="3cqZAo" node="5Win3SAcJMb" resolve="leftInput" />
-                          </node>
-                          <node concept="3cpWs3" id="5Win3SAcIEq" role="3uHU7B">
-                            <node concept="3cpWs3" id="5Win3SAcItD" role="3uHU7B">
-                              <node concept="Xl_RD" id="5Win3SAcGN0" role="3uHU7B">
-                                <property role="Xl_RC" value="return type of right function " />
-                              </node>
-                              <node concept="37vLTw" id="5Win3SAcItV" role="3uHU7w">
-                                <ref role="3cqZAo" node="5Win3SAcH5Q" resolve="rightReturn" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5Win3SAcIEt" role="3uHU7w">
-                              <property role="Xl_RC" value=" is not a subtype of argument of left function " />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1YBJjd" id="5Win3SAcKAm" role="2OEOjV">
-                          <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="1YBJjd" id="5Win3SAcKAm" role="2OEOjV">
+                    <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
                   </node>
                 </node>
               </node>
@@ -3210,62 +3130,6 @@
     <node concept="1YaCAy" id="5Win3SAclb$" role="1YuTPh">
       <property role="TrG5h" value="funCompose" />
       <ref role="1YaFvo" to="zzzn:5Win3SA8mVE" resolve="FunCompose" />
-    </node>
-  </node>
-  <node concept="2sgARr" id="5Win3SAh82C">
-    <property role="3GE5qa" value="compose" />
-    <property role="TrG5h" value="superTypeOf_Type" />
-    <node concept="3clFbS" id="5Win3SAh82D" role="2sgrp5">
-      <node concept="3cpWs8" id="5Win3SAh8_Y" role="3cqZAp">
-        <node concept="3cpWsn" id="5Win3SAh8A1" role="3cpWs9">
-          <property role="TrG5h" value="supertypes" />
-          <node concept="2I9FWS" id="5Win3SAh8_W" role="1tU5fm" />
-          <node concept="2ShNRf" id="5Win3SAh8AI" role="33vP2m">
-            <node concept="2T8Vx0" id="5Win3SAh8At" role="2ShVmc">
-              <node concept="2I9FWS" id="5Win3SAh8Au" role="2T96Bj" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="5Win3SAh83B" role="3cqZAp">
-        <node concept="3fqX7Q" id="5Win3SAh8Fy" role="3clFbw">
-          <node concept="2OqwBi" id="5Win3SAh8F$" role="3fr31v">
-            <node concept="1YBJjd" id="5Win3SAh8F_" role="2Oq$k0">
-              <ref role="1YBMHb" node="5Win3SAh82F" resolve="type" />
-            </node>
-            <node concept="1mIQ4w" id="5Win3SAh8FA" role="2OqNvi">
-              <node concept="chp4Y" id="5Win3SAh8FB" role="cj9EA">
-                <ref role="cht4Q" to="zzzn:5Win3SAh82e" resolve="AnyType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="5Win3SAh83D" role="3clFbx">
-          <node concept="3clFbF" id="5Win3SAh8Jb" role="3cqZAp">
-            <node concept="2OqwBi" id="5Win3SAh9_e" role="3clFbG">
-              <node concept="37vLTw" id="5Win3SAh8Ja" role="2Oq$k0">
-                <ref role="3cqZAo" node="5Win3SAh8A1" resolve="supertypes" />
-              </node>
-              <node concept="TSZUe" id="5Win3SAham0" role="2OqNvi">
-                <node concept="2pJPEk" id="5Win3SAhauh" role="25WWJ7">
-                  <node concept="2pJPED" id="5Win3SAhaBb" role="2pJPEn">
-                    <ref role="2pJxaS" to="zzzn:5Win3SAh82e" resolve="AnyType" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbF" id="3blX6P020In" role="3cqZAp">
-        <node concept="37vLTw" id="3blX6P020Il" role="3clFbG">
-          <ref role="3cqZAo" node="5Win3SAh8A1" resolve="supertypes" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5Win3SAh82F" role="1YuTPh">
-      <property role="TrG5h" value="type" />
-      <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
   <node concept="1YbPZF" id="5iD_kvlIV5r">

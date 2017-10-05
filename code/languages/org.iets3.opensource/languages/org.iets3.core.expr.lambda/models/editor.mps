@@ -849,14 +849,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="3blX6P02EMK">
-    <property role="3GE5qa" value="compose" />
-    <ref role="1XX52x" to="zzzn:5Win3SAh82e" resolve="AnyType" />
-    <node concept="3F0ifn" id="3blX6P02EMM" role="2wV5jI">
-      <property role="3F0ifm" value="any" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5iD_kvlIV1W">
     <property role="3GE5qa" value="function" />
     <ref role="1XX52x" to="zzzn:5iD_kvlIV0f" resolve="FunctionStyleExecOp" />

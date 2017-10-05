@@ -514,13 +514,6 @@
     <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
-  <node concept="1TIwiD" id="5Win3SAh82e">
-    <property role="EcuMT" value="6850639405183697038" />
-    <property role="3GE5qa" value="compose" />
-    <property role="TrG5h" value="AnyType" />
-    <property role="34LRSv" value="any" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="5iD_kvlIV0f">
     <property role="EcuMT" value="6100571306011111439" />
     <property role="3GE5qa" value="function" />
