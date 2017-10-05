@@ -868,5 +868,9 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="7UwmhBauVvi">
+    <property role="3GE5qa" value="lambda" />
+    <ref role="aqKnT" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+  </node>
 </model>
 
