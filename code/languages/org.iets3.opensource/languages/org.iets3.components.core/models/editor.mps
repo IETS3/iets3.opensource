@@ -8613,6 +8613,9 @@
     <property role="3GE5qa" value="components.iface.ports" />
     <ref role="1XX52x" to="w9y2:6LfBX8YkpdW" resolve="Port" />
     <node concept="3EZMnI" id="mIQkxfpv8q" role="2wV5jI">
+      <node concept="PMmxH" id="5wMh12D_qbe" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
+      </node>
       <node concept="l2Vlx" id="mIQkxfpv8r" role="2iSdaV" />
       <node concept="1kIj98" id="mIQkxfpv9o" role="3EZMnx">
         <node concept="3F1sOY" id="mIQkxfpv8Y" role="1kIj9b">
