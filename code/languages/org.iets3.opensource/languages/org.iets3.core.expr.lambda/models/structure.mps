@@ -2,6 +2,7 @@
 <model ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -268,6 +269,9 @@
     </node>
     <node concept="PrWs8" id="5ElkanPXy9s" role="PrDN$">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Mp3" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
       <property role="TrG5h" value="ext" />

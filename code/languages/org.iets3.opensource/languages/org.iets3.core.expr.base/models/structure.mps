@@ -2,6 +2,7 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -70,6 +71,9 @@
     <node concept="PrWs8" id="3npF9QWRJdc" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="3z0ZJXm0Mh2" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
     <property role="TrG5h" value="Type" />
@@ -79,6 +83,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6sdnDbSlaol" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Mhh" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlMSN">
@@ -415,6 +422,9 @@
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="TrG5h" value="IBigExpression" />
     <property role="EcuMT" value="7849560302565692340" />
+    <node concept="PrWs8" id="YXKE79ImBj" role="PrDN$">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="71dSyJVoY0O">
     <property role="TrG5h" value="IReducableExpression" />
@@ -720,6 +730,9 @@
     <node concept="PrWs8" id="RIvadv2u9y" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="YXKE79IuCN" role="PzmwI">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1V8fb">
     <property role="3GE5qa" value="error" />
@@ -785,6 +798,9 @@
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="TrG5h" value="IStructuredSyntax" />
     <property role="EcuMT" value="8811147530087029174" />
+    <node concept="PrWs8" id="YXKE79ImBl" role="PrDN$">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy51iZ">
     <property role="3GE5qa" value="contract" />
@@ -1098,6 +1114,9 @@
     </node>
     <node concept="PrWs8" id="5syY_AKJ2XM" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0MmJ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
@@ -1416,6 +1435,10 @@
   <node concept="PlHQZ" id="ORfz$DS6_k">
     <property role="EcuMT" value="952298261448780116" />
     <property role="TrG5h" value="IMayAllowEffect" />
+  </node>
+  <node concept="PlHQZ" id="YXKE79ImBi">
+    <property role="EcuMT" value="1134276681297127890" />
+    <property role="TrG5h" value="IWantNewLine" />
   </node>
 </model>
 

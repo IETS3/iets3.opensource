@@ -2,17 +2,16 @@
 <model ref="r:ec4fadfa-b752-42e1-9d44-ff41929cb381(org.iets3.core.expr.tests.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
-    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
+    <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1991,36 +1990,6 @@
     </node>
     <node concept="2aJ2om" id="6HHp2WmZe4J" role="CpUAK">
       <ref role="2$4xQ3" node="6HHp2WmZdFE" resolve="demoMode" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6HHp2WneCVX">
-    <ref role="1XX52x" to="av4b:6HHp2WneCKI" resolve="CommentCondition" />
-    <node concept="3EZMnI" id="6HHp2WneCW8" role="2wV5jI">
-      <node concept="3F0ifn" id="6HHp2WneCWf" role="3EZMnx">
-        <property role="3F0ifm" value=".." />
-        <node concept="VechU" id="6HHp2WneNPD" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-        <node concept="11LMrY" id="6HHp2Wnf1G8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="6HHp2WneCWl" role="3EZMnx">
-        <ref role="1NtTu8" to="av4b:6HHp2WneCKS" resolve="label" />
-        <node concept="VechU" id="6HHp2WneNPI" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6HHp2WneCWt" role="3EZMnx">
-        <property role="3F0ifm" value=".." />
-        <node concept="VechU" id="6HHp2WneNPL" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-        <node concept="11L4FC" id="6HHp2Wnf1HR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="6HHp2WneCWb" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4kV9Ob9YBZl">
@@ -4932,40 +4901,6 @@
       <ref role="PMmxG" node="1bwJEEeTsOh" resolve="table" />
     </node>
   </node>
-  <node concept="24kQdi" id="1qjbRymN1gS">
-    <property role="3GE5qa" value="mutator" />
-    <ref role="1XX52x" to="av4b:1qjbRymN1gl" resolve="MutationLog" />
-    <node concept="3EZMnI" id="1qjbRymSXn1" role="2wV5jI">
-      <node concept="2iRfu4" id="1qjbRymSXn2" role="2iSdaV" />
-      <node concept="3F0ifn" id="1qjbRymN1h3" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
-      <node concept="1iCGBv" id="1qjbRymSXna" role="3EZMnx">
-        <ref role="1NtTu8" to="av4b:1qjbRymSXmZ" resolve="newNode" />
-        <node concept="1sVBvm" id="1qjbRymSXnc" role="1sWHZn">
-          <node concept="1HlG4h" id="1qjbRymVI52" role="2wV5jI">
-            <node concept="1HfYo3" id="1qjbRymVI54" role="1HlULh">
-              <node concept="3TQlhw" id="1qjbRymVI56" role="1Hhtcw">
-                <node concept="3clFbS" id="1qjbRymVI58" role="2VODD2">
-                  <node concept="3clFbF" id="1qjbRymVIdB" role="3cqZAp">
-                    <node concept="2OqwBi" id="1qjbRymVJ7f" role="3clFbG">
-                      <node concept="2OqwBi" id="1qjbRymVIpC" role="2Oq$k0">
-                        <node concept="pncrf" id="1qjbRymVIdA" role="2Oq$k0" />
-                        <node concept="2yIwOk" id="1qjbRymVIHX" role="2OqNvi" />
-                      </node>
-                      <node concept="liA8E" id="1qjbRymVJ$c" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1qjbRymJOH$">
     <property role="3GE5qa" value="mutator" />
     <ref role="1XX52x" to="av4b:3_xsRJ4oOr7" resolve="MutationEngine" />
@@ -5013,6 +4948,40 @@
                   </node>
                 </node>
                 <node concept="3GX2aA" id="1qjbRymUIci" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1qjbRymN1gS">
+    <property role="3GE5qa" value="mutator" />
+    <ref role="1XX52x" to="av4b:1qjbRymN1gl" resolve="MutationLog" />
+    <node concept="3EZMnI" id="1qjbRymSXn1" role="2wV5jI">
+      <node concept="2iRfu4" id="1qjbRymSXn2" role="2iSdaV" />
+      <node concept="3F0ifn" id="1qjbRymN1h3" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="1iCGBv" id="1qjbRymSXna" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1qjbRymSXmZ" resolve="newNode" />
+        <node concept="1sVBvm" id="1qjbRymSXnc" role="1sWHZn">
+          <node concept="1HlG4h" id="1qjbRymVI52" role="2wV5jI">
+            <node concept="1HfYo3" id="1qjbRymVI54" role="1HlULh">
+              <node concept="3TQlhw" id="1qjbRymVI56" role="1Hhtcw">
+                <node concept="3clFbS" id="1qjbRymVI58" role="2VODD2">
+                  <node concept="3clFbF" id="1qjbRymVIdB" role="3cqZAp">
+                    <node concept="2OqwBi" id="1qjbRymVJ7f" role="3clFbG">
+                      <node concept="2OqwBi" id="1qjbRymVIpC" role="2Oq$k0">
+                        <node concept="pncrf" id="1qjbRymVIdA" role="2Oq$k0" />
+                        <node concept="2yIwOk" id="1qjbRymVIHX" role="2OqNvi" />
+                      </node>
+                      <node concept="liA8E" id="1qjbRymVJ$c" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

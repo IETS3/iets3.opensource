@@ -2,6 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -154,6 +155,9 @@
     </node>
     <node concept="PrWs8" id="sflsE7gfai" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Med" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
@@ -616,6 +620,9 @@
     </node>
     <node concept="PrWs8" id="54pTGl8og01" role="PrDN$">
       <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0MfZ" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
     <node concept="1TJgyj" id="xu7xcKdRtf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

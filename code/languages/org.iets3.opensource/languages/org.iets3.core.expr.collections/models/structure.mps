@@ -2,6 +2,7 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -570,8 +571,8 @@
   </node>
   <node concept="1TIwiD" id="1RHynufnBSV">
     <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="ListAddOp" />
-    <property role="34LRSv" value="add" />
+    <property role="TrG5h" value="ListWithOp" />
+    <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179783739" />
     <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
   </node>
