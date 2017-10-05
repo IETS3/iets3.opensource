@@ -422,6 +422,9 @@
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="TrG5h" value="IBigExpression" />
     <property role="EcuMT" value="7849560302565692340" />
+    <node concept="PrWs8" id="YXKE79ImBj" role="PrDN$">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="71dSyJVoY0O">
     <property role="TrG5h" value="IReducableExpression" />
@@ -727,6 +730,9 @@
     <node concept="PrWs8" id="RIvadv2u9y" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="YXKE79IuCN" role="PzmwI">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1V8fb">
     <property role="3GE5qa" value="error" />
@@ -792,6 +798,9 @@
   <node concept="PlHQZ" id="7D7uZV2ptAQ">
     <property role="TrG5h" value="IStructuredSyntax" />
     <property role="EcuMT" value="8811147530087029174" />
+    <node concept="PrWs8" id="YXKE79ImBl" role="PrDN$">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy51iZ">
     <property role="3GE5qa" value="contract" />
@@ -1426,6 +1435,10 @@
   <node concept="PlHQZ" id="ORfz$DS6_k">
     <property role="EcuMT" value="952298261448780116" />
     <property role="TrG5h" value="IMayAllowEffect" />
+  </node>
+  <node concept="PlHQZ" id="YXKE79ImBi">
+    <property role="EcuMT" value="1134276681297127890" />
+    <property role="TrG5h" value="IWantNewLine" />
   </node>
 </model>
 
