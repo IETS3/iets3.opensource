@@ -9,6 +9,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -19,6 +20,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -72,6 +74,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -84,6 +87,10 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -251,6 +258,40 @@
       <node concept="2I9FWS" id="3KzlhPzMJs_" role="3clF45">
         <ref role="2I9WkF" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
+    </node>
+    <node concept="13i0hz" id="35BERW$gD3O" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="35BERW$gD41" role="1B3o_S" />
+      <node concept="3clFbS" id="35BERW$gD42" role="3clF47">
+        <node concept="3clFbF" id="35BERW$gD47" role="3cqZAp">
+          <node concept="3cpWs3" id="35BERW$gFCO" role="3clFbG">
+            <node concept="Xl_RD" id="35BERW$gFCR" role="3uHU7w">
+              <property role="Xl_RC" value="&gt;" />
+            </node>
+            <node concept="3cpWs3" id="35BERW$gDHT" role="3uHU7B">
+              <node concept="Xl_RD" id="35BERW$gDs4" role="3uHU7B">
+                <property role="Xl_RC" value="box&lt;" />
+              </node>
+              <node concept="2OqwBi" id="35BERW$gEOE" role="3uHU7w">
+                <node concept="2OqwBi" id="35BERW$gDV5" role="2Oq$k0">
+                  <node concept="13iPFW" id="35BERW$gDI0" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="35BERW$gEnL" role="2OqNvi">
+                    <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="35BERW$gFjB" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="35BERW$gD43" role="3clF45" />
     </node>
     <node concept="13hLZK" id="3GdqffBKpso" role="13h7CW">
       <node concept="3clFbS" id="3GdqffBKpsp" role="2VODD2" />
