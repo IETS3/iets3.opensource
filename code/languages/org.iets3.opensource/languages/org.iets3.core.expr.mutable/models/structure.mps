@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -34,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,6 +47,7 @@
     <property role="EcuMT" value="4255172619709548950" />
     <property role="TrG5h" value="BoxType" />
     <property role="34LRSv" value="box" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3GdqffBKoAn" role="1TKVEi">
       <property role="IQ2ns" value="4255172619709548951" />
@@ -56,6 +61,7 @@
     <property role="EcuMT" value="4255172619710740510" />
     <property role="TrG5h" value="BoxExpression" />
     <property role="34LRSv" value="box" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3GdqffBOVwy" role="1TKVEi">
       <property role="IQ2ns" value="4255172619710740514" />
@@ -70,6 +76,7 @@
     <property role="TrG5h" value="BoxDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3GdqffBPhJH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -79,12 +86,14 @@
     <property role="EcuMT" value="4255172619710841704" />
     <property role="TrG5h" value="ValueTarget" />
     <property role="34LRSv" value="val" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" node="3GdqffBPhJG" resolve="BoxDotTarget" />
   </node>
   <node concept="1TIwiD" id="3GdqffBQYFy">
     <property role="EcuMT" value="4255172619711277794" />
     <property role="TrG5h" value="UdpateTarget" />
     <property role="34LRSv" value="update" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" node="3GdqffBPhJG" resolve="BoxDotTarget" />
     <node concept="1TJgyj" id="3GdqffBQYFA" role="1TKVEi">
       <property role="IQ2ns" value="4255172619711277798" />
@@ -101,7 +110,21 @@
     <property role="EcuMT" value="4255172619715417408" />
     <property role="TrG5h" value="UpdateItExpression" />
     <property role="34LRSv" value="it" />
+    <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3GdqffC8H$g">
+    <property role="EcuMT" value="4255172619715926288" />
+    <property role="TrG5h" value="TxExpr" />
+    <property role="34LRSv" value="tx" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3GdqffC8H$h" role="1TKVEi">
+      <property role="IQ2ns" value="4255172619715926289" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
+    </node>
   </node>
 </model>
 
