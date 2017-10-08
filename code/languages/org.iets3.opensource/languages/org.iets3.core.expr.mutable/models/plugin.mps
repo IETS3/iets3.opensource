@@ -17,6 +17,7 @@
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -56,6 +57,10 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -209,6 +214,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -287,8 +295,11 @@
                 <node concept="37vLTw" id="79jc6YzfxzV" role="37vLTx">
                   <ref role="3cqZAo" node="79jc6YzfxzR" resolve="tx" />
                 </node>
-                <node concept="3EllGN" id="79jc6Yz3wYg" role="37vLTJ">
-                  <node concept="oxGPV" id="79jc6Yz3wZt" role="3ElVtu" />
+                <node concept="3EllGN" id="79jc6Yz$rhU" role="37vLTJ">
+                  <node concept="10M0yZ" id="79jc6Yz$rnV" role="3ElVtu">
+                    <ref role="3cqZAo" node="79jc6Yz$qgj" resolve="KEY" />
+                    <ref role="1PxDUh" node="79jc6Yz3w69" resolve="Transaction" />
+                  </node>
                   <node concept="TvHiN" id="79jc6Yz3w_L" role="3ElQJh" />
                 </node>
               </node>
@@ -365,8 +376,11 @@
                   <node concept="37vLTI" id="79jc6Yzfze3" role="3clFbG">
                     <node concept="10Nm6u" id="79jc6Yzfze4" role="37vLTx" />
                     <node concept="3EllGN" id="79jc6Yzfze5" role="37vLTJ">
-                      <node concept="oxGPV" id="79jc6Yzfze6" role="3ElVtu" />
                       <node concept="TvHiN" id="79jc6Yzfze7" role="3ElQJh" />
+                      <node concept="10M0yZ" id="79jc6Yz$rry" role="3ElVtu">
+                        <ref role="1PxDUh" node="79jc6Yz3w69" resolve="Transaction" />
+                        <ref role="3cqZAo" node="79jc6Yz$qgj" resolve="KEY" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -560,45 +574,28 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="79jc6Yzf$zF" role="3cqZAp">
-                  <node concept="3cpWsn" id="79jc6Yzf$zG" role="3cpWs9">
-                    <property role="TrG5h" value="txNode" />
-                    <node concept="3Tqbb2" id="79jc6Yzf$zB" role="1tU5fm">
-                      <ref role="ehGHo" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
+                <node concept="3cpWs8" id="79jc6YzfATq" role="3cqZAp">
+                  <node concept="3cpWsn" id="79jc6YzfATr" role="3cpWs9">
+                    <property role="TrG5h" value="tx" />
+                    <node concept="3uibUv" id="79jc6YzfBn2" role="1tU5fm">
+                      <ref role="3uigEE" node="79jc6Yz3w69" resolve="Transaction" />
                     </node>
-                    <node concept="2OqwBi" id="79jc6Yzf$zH" role="33vP2m">
-                      <node concept="oxGPV" id="79jc6Yzf$zI" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="79jc6Yzf$zJ" role="2OqNvi">
-                        <node concept="1xMEDy" id="79jc6Yzf$zK" role="1xVPHs">
-                          <node concept="chp4Y" id="79jc6Yzf$zL" role="ri$Ld">
-                            <ref role="cht4Q" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
-                          </node>
+                    <node concept="10QFUN" id="79jc6YzfAXF" role="33vP2m">
+                      <node concept="3EllGN" id="79jc6YzfAXC" role="10QFUP">
+                        <node concept="10M0yZ" id="79jc6Yz$rLj" role="3ElVtu">
+                          <ref role="3cqZAo" node="79jc6Yz$qgj" resolve="KEY" />
+                          <ref role="1PxDUh" node="79jc6Yz3w69" resolve="Transaction" />
                         </node>
+                        <node concept="TvHiN" id="79jc6YzfAXE" role="3ElQJh" />
+                      </node>
+                      <node concept="3uibUv" id="79jc6YzfB3t" role="10QFUM">
+                        <ref role="3uigEE" node="79jc6Yz3w69" resolve="Transaction" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbJ" id="79jc6YzfzJj" role="3cqZAp">
                   <node concept="3clFbS" id="79jc6YzfzJl" role="3clFbx">
-                    <node concept="3cpWs8" id="79jc6YzfATq" role="3cqZAp">
-                      <node concept="3cpWsn" id="79jc6YzfATr" role="3cpWs9">
-                        <property role="TrG5h" value="tx" />
-                        <node concept="3uibUv" id="79jc6YzfBn2" role="1tU5fm">
-                          <ref role="3uigEE" node="79jc6Yz3w69" resolve="Transaction" />
-                        </node>
-                        <node concept="10QFUN" id="79jc6YzfAXF" role="33vP2m">
-                          <node concept="3EllGN" id="79jc6YzfAXC" role="10QFUP">
-                            <node concept="37vLTw" id="79jc6YzfAXD" role="3ElVtu">
-                              <ref role="3cqZAo" node="79jc6Yzf$zG" resolve="txNode" />
-                            </node>
-                            <node concept="TvHiN" id="79jc6YzfAXE" role="3ElQJh" />
-                          </node>
-                          <node concept="3uibUv" id="79jc6YzfB3t" role="10QFUM">
-                            <ref role="3uigEE" node="79jc6Yz3w69" resolve="Transaction" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbF" id="79jc6YzfCkb" role="3cqZAp">
                       <node concept="2OqwBi" id="79jc6YzfCp$" role="3clFbG">
                         <node concept="37vLTw" id="79jc6YzfCk9" role="2Oq$k0">
@@ -623,8 +620,8 @@
                   </node>
                   <node concept="3y3z36" id="79jc6Yzf_2L" role="3clFbw">
                     <node concept="10Nm6u" id="79jc6Yzf_3j" role="3uHU7w" />
-                    <node concept="37vLTw" id="79jc6Yzf$zM" role="3uHU7B">
-                      <ref role="3cqZAo" node="79jc6Yzf$zG" resolve="txNode" />
+                    <node concept="37vLTw" id="79jc6Yz$s5F" role="3uHU7B">
+                      <ref role="3cqZAo" node="79jc6YzfATr" resolve="tx" />
                     </node>
                   </node>
                 </node>
@@ -871,6 +868,22 @@
     <property role="3GE5qa" value="interpreter" />
     <property role="TrG5h" value="Transaction" />
     <node concept="2tJIrI" id="79jc6Yz3wng" role="jymVt" />
+    <node concept="Wx3nA" id="79jc6Yz$qgj" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="KEY" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="79jc6Yz$pXN" role="1B3o_S" />
+      <node concept="3Tqbb2" id="79jc6Yz$qge" role="1tU5fm" />
+      <node concept="2ShNRf" id="79jc6Yz$qqf" role="33vP2m">
+        <node concept="3zrR0B" id="79jc6Yz$qq3" role="2ShVmc">
+          <node concept="3Tqbb2" id="79jc6Yz$qq4" role="3zrR0E">
+            <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="79jc6Yz$pLj" role="jymVt" />
     <node concept="312cEg" id="79jc6Yz3wjw" role="jymVt">
       <property role="TrG5h" value="transaction" />
       <node concept="3Tm6S6" id="79jc6Yz3wjx" role="1B3o_S" />

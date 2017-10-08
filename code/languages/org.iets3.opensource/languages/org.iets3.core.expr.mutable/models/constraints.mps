@@ -10,6 +10,7 @@
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -156,8 +157,8 @@
           <node concept="2OqwBi" id="3GdqffC8HSW" role="3clFbG">
             <node concept="nLn13" id="3GdqffC8HHw" role="2Oq$k0" />
             <node concept="1mIQ4w" id="3GdqffC8I9H" role="2OqNvi">
-              <node concept="chp4Y" id="3GdqffC8Im9" role="cj9EA">
-                <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
+              <node concept="chp4Y" id="79jc6YzKoQS" role="cj9EA">
+                <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
               </node>
             </node>
           </node>

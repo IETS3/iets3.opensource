@@ -10,6 +10,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -45,6 +46,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -83,6 +87,12 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -93,6 +103,7 @@
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -126,6 +137,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -584,6 +596,42 @@
     <node concept="1YaCAy" id="6eglc2$aivs" role="1YuTPh">
       <property role="TrG5h" value="act" />
       <ref role="1YaFvo" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="79jc6YzKnB9">
+    <property role="TrG5h" value="check_TxExpr" />
+    <node concept="3clFbS" id="79jc6YzKnBa" role="18ibNy">
+      <node concept="3clFbJ" id="79jc6YzKnBs" role="3cqZAp">
+        <node concept="3fqX7Q" id="79jc6YzKoAd" role="3clFbw">
+          <node concept="2OqwBi" id="79jc6YzKoAf" role="3fr31v">
+            <node concept="2OqwBi" id="79jc6YzKoAg" role="2Oq$k0">
+              <node concept="1YBJjd" id="79jc6YzKoAh" role="2Oq$k0">
+                <ref role="1YBMHb" node="79jc6YzKnBc" resolve="tx" />
+              </node>
+              <node concept="1mfA1w" id="79jc6YzKoAi" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="79jc6YzKoAj" role="2OqNvi">
+              <node concept="chp4Y" id="79jc6YzKoCB" role="cj9EA">
+                <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="79jc6YzKnBu" role="3clFbx">
+          <node concept="2MkqsV" id="79jc6YzKp43" role="3cqZAp">
+            <node concept="Xl_RD" id="79jc6YzKp72" role="2MkJ7o">
+              <property role="Xl_RC" value="transactions can only be used directly under a function" />
+            </node>
+            <node concept="1YBJjd" id="79jc6YzKp7K" role="2OEOjV">
+              <ref role="1YBMHb" node="79jc6YzKnBc" resolve="tx" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="79jc6YzKnBc" role="1YuTPh">
+      <property role="TrG5h" value="tx" />
+      <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
     </node>
   </node>
 </model>
