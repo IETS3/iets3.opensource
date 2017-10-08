@@ -126,5 +126,12 @@
       <ref role="20lvS9" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="79jc6Yz3CVd">
+    <property role="EcuMT" value="8237981399425912525" />
+    <property role="TrG5h" value="VoidType" />
+    <property role="34LRSv" value="void" />
+    <property role="3GE5qa" value="void" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
 </model>
 

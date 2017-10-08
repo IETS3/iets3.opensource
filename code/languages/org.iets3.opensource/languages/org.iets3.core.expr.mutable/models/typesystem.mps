@@ -473,15 +473,10 @@
     <property role="TrG5h" value="typeof_TxExpr" />
     <node concept="3clFbS" id="3GdqffC8Ovm" role="18ibNy">
       <node concept="1Z5TYs" id="3GdqffC8OI2" role="3cqZAp">
-        <node concept="mw_s8" id="3GdqffC8OIm" role="1ZfhKB">
-          <node concept="1Z2H0r" id="3GdqffC8OIi" role="mwGJk">
-            <node concept="2OqwBi" id="3GdqffC8ORU" role="1Z2MuG">
-              <node concept="1YBJjd" id="3GdqffC8OIB" role="2Oq$k0">
-                <ref role="1YBMHb" node="3GdqffC8Ovo" resolve="tx" />
-              </node>
-              <node concept="3TrEf2" id="3GdqffC8Pcm" role="2OqNvi">
-                <ref role="3Tt5mk" to="8lgj:3GdqffC8H$h" resolve="body" />
-              </node>
+        <node concept="mw_s8" id="79jc6Yz3CV2" role="1ZfhKB">
+          <node concept="2pJPEk" id="79jc6Yz3CUQ" role="mwGJk">
+            <node concept="2pJPED" id="79jc6Yz3ImV" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
             </node>
           </node>
         </node>
