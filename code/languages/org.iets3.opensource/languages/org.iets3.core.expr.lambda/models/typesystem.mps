@@ -13,6 +13,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -3310,6 +3311,50 @@
     <node concept="1YaCAy" id="5iD_kvlIV5u" role="1YuTPh">
       <property role="TrG5h" value="eo" />
       <ref role="1YaFvo" to="zzzn:5iD_kvlIV0f" resolve="FunctionStyleExecOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="79jc6YzNLfQ">
+    <property role="TrG5h" value="typeof_AssertExpr" />
+    <node concept="3clFbS" id="79jc6YzNLfR" role="18ibNy">
+      <node concept="1Z5TYs" id="79jc6YzNLvr" role="3cqZAp">
+        <node concept="mw_s8" id="79jc6YzNLvu" role="1ZfhK$">
+          <node concept="1Z2H0r" id="79jc6YzNLgi" role="mwGJk">
+            <node concept="1YBJjd" id="79jc6YzNLgy" role="1Z2MuG">
+              <ref role="1YBMHb" node="79jc6YzNLfT" resolve="assertExpr" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="79jc6YzRz_F" role="1ZfhKB">
+          <node concept="2YIFZM" id="79jc6YzRz_G" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="79jc6YzNMaD" role="3cqZAp">
+        <node concept="mw_s8" id="79jc6YzNMcr" role="1ZfhKB">
+          <node concept="2YIFZM" id="79jc6YzNMe0" role="mwGJk">
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="79jc6YzNMaG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="79jc6YzNLx5" role="mwGJk">
+            <node concept="2OqwBi" id="79jc6YzNLFn" role="1Z2MuG">
+              <node concept="1YBJjd" id="79jc6YzNLxu" role="2Oq$k0">
+                <ref role="1YBMHb" node="79jc6YzNLfT" resolve="assertExpr" />
+              </node>
+              <node concept="3TrEf2" id="79jc6YzNLS9" role="2OqNvi">
+                <ref role="3Tt5mk" to="zzzn:79jc6YzNL4G" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="79jc6YzNLfT" role="1YuTPh">
+      <property role="TrG5h" value="assertExpr" />
+      <ref role="1YaFvo" to="zzzn:79jc6YzNL4y" resolve="AssertExpr" />
     </node>
   </node>
 </model>

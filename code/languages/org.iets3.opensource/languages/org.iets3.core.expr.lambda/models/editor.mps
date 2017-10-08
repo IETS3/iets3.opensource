@@ -904,5 +904,33 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="79jc6YzNL57">
+    <ref role="1XX52x" to="zzzn:79jc6YzNL4y" resolve="AssertExpr" />
+    <node concept="3EZMnI" id="79jc6YzNL5l" role="2wV5jI">
+      <node concept="2iRfu4" id="79jc6YzNL5m" role="2iSdaV" />
+      <node concept="3F0ifn" id="79jc6YzNL5i" role="3EZMnx">
+        <property role="3F0ifm" value="assert" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0ifn" id="79jc6YzNL5u" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="79jc6YzNL5F" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="79jc6YzNL5K" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="79jc6YzNL5Y" role="3EZMnx">
+        <ref role="1NtTu8" to="zzzn:79jc6YzNL4G" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="79jc6YzNL5A" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="79jc6YzNL5O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

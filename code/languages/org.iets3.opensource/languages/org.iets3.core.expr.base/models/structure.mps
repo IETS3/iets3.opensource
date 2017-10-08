@@ -73,6 +73,9 @@
     <node concept="PrWs8" id="3z0ZJXm0Mh2" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
+    <node concept="PrWs8" id="3ni3WidwWH7" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlaok">
     <property role="TrG5h" value="Type" />
@@ -696,6 +699,9 @@
     </node>
     <node concept="PrWs8" id="91pmpxfdlY" role="PzmwI">
       <ref role="PrY4T" node="91pmpwTPq5" resolve="IMainSlot" />
+    </node>
+    <node concept="PrWs8" id="3ni3WidI4X8" role="PzmwI">
+      <ref role="PrY4T" node="7D7uZV2ptAQ" resolve="IStructuredSyntax" />
     </node>
     <node concept="1TJgyi" id="5aHkq2w0Y$e" role="1TKVEl">
       <property role="TrG5h" value="complete" />
@@ -1475,6 +1481,10 @@
     <property role="EcuMT" value="8237981399425912554" />
     <property role="3GE5qa" value="void" />
     <property role="TrG5h" value="IVoidContext" />
+  </node>
+  <node concept="PlHQZ" id="3ni3WidwYNF">
+    <property role="EcuMT" value="3878179565981658347" />
+    <property role="TrG5h" value="IAllowsDocInChildExpressions" />
   </node>
 </model>
 

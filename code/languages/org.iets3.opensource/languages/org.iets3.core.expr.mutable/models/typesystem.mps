@@ -32,9 +32,6 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -86,7 +83,6 @@
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
-      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -220,26 +216,6 @@
     <node concept="1YaCAy" id="3GdqffBOVyp" role="1YuTPh">
       <property role="TrG5h" value="be" />
       <ref role="1YaFvo" to="8lgj:3GdqffBOVwu" resolve="BoxExpression" />
-    </node>
-  </node>
-  <node concept="2sgARr" id="6zmBjqUinuh">
-    <property role="TrG5h" value="supertypeOf_BoxType" />
-    <property role="3GE5qa" value="box" />
-    <node concept="3clFbS" id="6zmBjqUinui" role="2sgrp5">
-      <node concept="3clFbF" id="4Q4DxjDz1nW" role="3cqZAp">
-        <node concept="2OqwBi" id="4Q4DxjDz1qC" role="3clFbG">
-          <node concept="1YBJjd" id="4Q4DxjDz1nV" role="2Oq$k0">
-            <ref role="1YBMHb" node="6zmBjqUinuk" resolve="boxType" />
-          </node>
-          <node concept="2qgKlT" id="4Q4DxjDz1xv" role="2OqNvi">
-            <ref role="37wK5l" to="pbu6:4Q4DxjDsh$t" resolve="allSupertypes" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6zmBjqUinuk" role="1YuTPh">
-      <property role="TrG5h" value="boxType" />
-      <ref role="1YaFvo" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
     </node>
   </node>
   <node concept="1YbPZF" id="3GdqffBPkeA">
@@ -576,8 +552,8 @@
             <node concept="1YBJjd" id="79jc6YzolNq" role="2Oq$k0">
               <ref role="1YBMHb" node="6eglc2$aiw0" resolve="exp" />
             </node>
-            <node concept="2qgKlT" id="79jc6YzomWP" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:XhdFKv3UAU" resolve="baseType" />
+            <node concept="3TrEf2" id="3ni3WidG7Vh" role="2OqNvi">
+              <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
             </node>
           </node>
         </node>
@@ -586,8 +562,8 @@
             <node concept="1YBJjd" id="79jc6YzolfP" role="2Oq$k0">
               <ref role="1YBMHb" node="6eglc2$aivs" resolve="act" />
             </node>
-            <node concept="2qgKlT" id="79jc6YzolHM" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:XhdFKv3UAU" resolve="baseType" />
+            <node concept="3TrEf2" id="3ni3WidG7Im" role="2OqNvi">
+              <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
             </node>
           </node>
         </node>
