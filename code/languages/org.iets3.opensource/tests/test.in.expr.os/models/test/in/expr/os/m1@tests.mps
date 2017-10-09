@@ -500,10 +500,10 @@
       <concept id="4255172619709548950" name="org.iets3.core.expr.mutable.structure.BoxType" flags="ng" index="3sNe5_">
         <child id="4255172619709548951" name="baseType" index="3sNe5$" />
       </concept>
-      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.UdpateTarget" flags="ng" index="3sPC8h">
+      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUdpateTarget" flags="ng" index="3sPC8h">
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
-      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.ValueTarget" flags="ng" index="3sQ2Ir" />
+      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
         <child id="4255172619710740514" name="value" index="3sRH3h" />
       </concept>

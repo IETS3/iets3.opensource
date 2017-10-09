@@ -223,6 +223,9 @@
     <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
+    <node concept="PrWs8" id="6GySMNk47gQ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
@@ -299,16 +302,6 @@
     </node>
     <node concept="PrWs8" id="46cplYy1Svf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="8811147530084018368" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-      <node concept="asaX9" id="xu7xcKdRtq" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordMember&quot;" />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYz2">
@@ -568,6 +561,9 @@
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="6GySMNk47tt" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />
@@ -659,6 +655,9 @@
     </node>
     <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="6GySMNkKPeT" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

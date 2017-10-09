@@ -3043,28 +3043,28 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="7SZA7UdHQdE" role="13h7CS">
+    <node concept="13i0hz" id="6GySMNjYDum" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="hasEffect" />
-      <ref role="13i0hy" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
-      <node concept="3Tm1VV" id="7SZA7UdHQdF" role="1B3o_S" />
-      <node concept="3clFbS" id="7SZA7UdHQdK" role="3clF47">
-        <node concept="3clFbF" id="7SZA7UdHQhV" role="3cqZAp">
-          <node concept="2OqwBi" id="7SZA7UdHR4f" role="3clFbG">
-            <node concept="2OqwBi" id="7SZA7UdHQvk" role="2Oq$k0">
-              <node concept="13iPFW" id="7SZA7UdHQhQ" role="2Oq$k0" />
-              <node concept="3TrEf2" id="7SZA7UdHQHk" role="2OqNvi">
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="6GySMNjYDun" role="1B3o_S" />
+      <node concept="3clFbS" id="6GySMNjYDuw" role="3clF47">
+        <node concept="3clFbF" id="6GySMNjYDKa" role="3cqZAp">
+          <node concept="BsUDl" id="6GySMNjYDK5" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="6GySMNjYDXE" role="37wK5m">
+              <node concept="13iPFW" id="6GySMNjYDKt" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6GySMNjYEeH" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:7SZA7UeMt3K" resolve="arg" />
               </node>
-            </node>
-            <node concept="2qgKlT" id="7SZA7UdHRg8" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="7SZA7UdHQdL" role="3clF45" />
+      <node concept="3uibUv" id="6GySMNjYDux" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
     <node concept="13i0hz" id="7uzqvDHB4Ln" role="13h7CS">
       <property role="13i0iv" value="false" />

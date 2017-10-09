@@ -15,6 +15,7 @@
     <import index="f7uj" ref="r:8ffb9fde-829b-4ee3-ade6-f4eee43e66a8(jetbrains.mps.lang.typesystem.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -311,11 +312,16 @@
         </node>
         <node concept="pkWqt" id="6KxoTHgUc8Q" role="pqm2j">
           <node concept="3clFbS" id="6KxoTHgUc8R" role="2VODD2">
-            <node concept="3clFbF" id="6KxoTHgUc9u" role="3cqZAp">
-              <node concept="2OqwBi" id="6KxoTHgUcdp" role="3clFbG">
-                <node concept="pncrf" id="6KxoTHgUc9t" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6KxoTHgUcl9" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+            <node concept="3clFbF" id="6GySMNkkHTD" role="3cqZAp">
+              <node concept="2OqwBi" id="6GySMNkkHTE" role="3clFbG">
+                <node concept="2OqwBi" id="6GySMNkkHTF" role="2Oq$k0">
+                  <node concept="pncrf" id="6GySMNkkHTG" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6GySMNkkHTH" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GySMNkkHTI" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
                 </node>
               </node>
             </node>
@@ -373,10 +379,15 @@
         <node concept="pkWqt" id="6KxoTHgV2lu" role="pqm2j">
           <node concept="3clFbS" id="6KxoTHgV2lv" role="2VODD2">
             <node concept="3clFbF" id="6KxoTHgV2m7" role="3cqZAp">
-              <node concept="2OqwBi" id="6KxoTHgV2pA" role="3clFbG">
-                <node concept="pncrf" id="6KxoTHgV2m6" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6KxoTHgV2wj" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+              <node concept="2OqwBi" id="6GySMNkkGXG" role="3clFbG">
+                <node concept="2OqwBi" id="6KxoTHgV2pA" role="2Oq$k0">
+                  <node concept="pncrf" id="6KxoTHgV2m6" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6GySMNkkGF4" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GySMNkkHkF" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
                 </node>
               </node>
             </node>

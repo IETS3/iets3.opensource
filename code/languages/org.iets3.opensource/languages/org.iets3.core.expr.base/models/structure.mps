@@ -67,9 +67,6 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7425695345928347719" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3npF9QWRJdc" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
     <node concept="PrWs8" id="3z0ZJXm0Mh2" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
@@ -123,6 +120,9 @@
     </node>
     <node concept="PrWs8" id="91pmpwXlUo" role="PzmwI">
       <ref role="PrY4T" node="91pmpwTPq5" resolve="IMainSlot" />
+    </node>
+    <node concept="PrWs8" id="6GySMNlbA8K" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MqjM">
@@ -359,14 +359,14 @@
     <node concept="PrWs8" id="2CFPPn7nISU" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="6GySMNjT8nR" role="PzmwI">
+      <ref role="PrY4T" node="3npF9QXr$3G" resolve="IDisallowEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
     <property role="TrG5h" value="IDotTarget" />
     <property role="3GE5qa" value="unary.p3000" />
     <property role="EcuMT" value="9002563722476995146" />
-    <node concept="PrWs8" id="7RleyJL1mNg" role="PrDN$">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
     <node concept="PrWs8" id="5d4VabvJ4R_" role="PrDN$">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
@@ -703,6 +703,9 @@
     <node concept="PrWs8" id="3ni3WidI4X8" role="PzmwI">
       <ref role="PrY4T" node="7D7uZV2ptAQ" resolve="IStructuredSyntax" />
     </node>
+    <node concept="PrWs8" id="6GySMNjTi4j" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyi" id="5aHkq2w0Y$e" role="1TKVEl">
       <property role="TrG5h" value="complete" />
       <property role="IQ2nx" value="5957507632402262286" />
@@ -767,6 +770,9 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7089558164910923907" />
       <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
+    </node>
+    <node concept="PrWs8" id="6GySMNjToJa" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1Yk3m">
@@ -868,6 +874,9 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="867786408877811045" />
       <ref role="20lvS9" node="KaZMgy4Ils" resolve="ContractItem" />
+    </node>
+    <node concept="PrWs8" id="3ni3WiekQc4" role="PzmwI">
+      <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy4Ils">
@@ -1097,6 +1106,9 @@
     <node concept="PrWs8" id="5syY_AKIY_O" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="6GySMNlb_RA" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
     <property role="3GE5qa" value="alt" />
@@ -1167,6 +1179,7 @@
   <node concept="PlHQZ" id="6KxoTHgLv_I">
     <property role="TrG5h" value="IMayHaveEffect" />
     <property role="EcuMT" value="7791618349053901166" />
+    <property role="3GE5qa" value="effects" />
   </node>
   <node concept="PlHQZ" id="sflsE7bZ0S">
     <property role="TrG5h" value="IBlockLike" />
@@ -1485,6 +1498,11 @@
   <node concept="PlHQZ" id="3ni3WidwYNF">
     <property role="EcuMT" value="3878179565981658347" />
     <property role="TrG5h" value="IAllowsDocInChildExpressions" />
+  </node>
+  <node concept="PlHQZ" id="3ni3WidV6uh">
+    <property role="EcuMT" value="3878179565988505489" />
+    <property role="3GE5qa" value="effects" />
+    <property role="TrG5h" value="IMayReadMutableState" />
   </node>
 </model>
 

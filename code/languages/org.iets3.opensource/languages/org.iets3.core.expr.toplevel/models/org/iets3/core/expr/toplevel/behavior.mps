@@ -28,6 +28,7 @@
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -390,28 +391,28 @@
       </node>
       <node concept="10P_77" id="49WTic8gOWx" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="3npF9QXsYGh" role="13h7CS">
+    <node concept="13i0hz" id="6GySMNk4al1" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="hasEffect" />
-      <ref role="13i0hy" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
-      <node concept="3Tm1VV" id="3npF9QXsYGi" role="1B3o_S" />
-      <node concept="3clFbS" id="3npF9QXsYGq" role="3clF47">
-        <node concept="3clFbF" id="3npF9QXsYGv" role="3cqZAp">
-          <node concept="2OqwBi" id="3npF9QXsZRE" role="3clFbG">
-            <node concept="2OqwBi" id="3npF9QXsZ6e" role="2Oq$k0">
-              <node concept="13iPFW" id="3npF9QXsYVR" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3npF9QXsZv9" role="2OqNvi">
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="6GySMNk4al2" role="1B3o_S" />
+      <node concept="3clFbS" id="6GySMNk4alb" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3j_XO0" role="3cqZAp">
+          <node concept="BsUDl" id="4qVjx3j_XNY" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="4qVjx3j_Yco" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3j_XYm" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4qVjx3j_YJS" role="2OqNvi">
                 <ref role="3Tt5mk" to="zzzn:49WTic8gvyC" resolve="function" />
               </node>
-            </node>
-            <node concept="2qgKlT" id="3npF9QXt0ce" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="3npF9QXsYGr" role="3clF45" />
+      <node concept="3uibUv" id="6GySMNk4alc" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
     <node concept="13i0hz" id="XhdFKvq_dy" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -619,28 +620,28 @@
       </node>
       <node concept="17QB3L" id="2uR5X5a$3mu" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="sflsE7p_H0" role="13h7CS">
+    <node concept="13i0hz" id="6GySMNk485p" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="hasEffect" />
-      <ref role="13i0hy" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
-      <node concept="3Tm1VV" id="sflsE7p_H1" role="1B3o_S" />
-      <node concept="3clFbS" id="sflsE7p_H6" role="3clF47">
-        <node concept="3clFbF" id="sflsE7p_M1" role="3cqZAp">
-          <node concept="2OqwBi" id="sflsE7pA4A" role="3clFbG">
-            <node concept="2OqwBi" id="sflsE7p_Or" role="2Oq$k0">
-              <node concept="13iPFW" id="sflsE7p_LW" role="2Oq$k0" />
-              <node concept="3TrEf2" id="sflsE7p_T3" role="2OqNvi">
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="6GySMNk485q" role="1B3o_S" />
+      <node concept="3clFbS" id="6GySMNk485z" role="3clF47">
+        <node concept="3clFbF" id="6GySMNk48pZ" role="3cqZAp">
+          <node concept="BsUDl" id="6GySMNk48pU" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="6GySMNk48zX" role="37wK5m">
+              <node concept="13iPFW" id="6GySMNk48qi" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6GySMNk48Is" role="2OqNvi">
                 <ref role="3Tt5mk" to="yv47:2uR5X5azSbC" resolve="extFun" />
               </node>
-            </node>
-            <node concept="2qgKlT" id="sflsE7pAkn" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="sflsE7p_H7" role="3clF45" />
+      <node concept="3uibUv" id="6GySMNk485$" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="69zaTr1KhaJ">
@@ -2634,10 +2635,15 @@
             </node>
           </node>
           <node concept="3fqX7Q" id="ORfz$E8$PL" role="3clFbw">
-            <node concept="2OqwBi" id="ORfz$E8$PN" role="3fr31v">
-              <node concept="13iPFW" id="ORfz$E8$PO" role="2Oq$k0" />
-              <node concept="2qgKlT" id="ORfz$E8$PP" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+            <node concept="2OqwBi" id="6GySMNk4i39" role="3fr31v">
+              <node concept="2OqwBi" id="ORfz$E8$PN" role="2Oq$k0">
+                <node concept="13iPFW" id="ORfz$E8$PO" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6GySMNk4hWa" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6GySMNk4ij$" role="2OqNvi">
+                <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
               </node>
             </node>
           </node>

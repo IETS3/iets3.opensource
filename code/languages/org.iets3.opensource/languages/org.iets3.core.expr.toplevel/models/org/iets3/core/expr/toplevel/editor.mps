@@ -21,6 +21,7 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -115,6 +116,9 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
+        <child id="1221219051630" name="query" index="1mkY_M" />
+      </concept>
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
@@ -136,6 +140,7 @@
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
+      <concept id="1221062700015" name="jetbrains.mps.lang.editor.structure.QueryFunction_Underlined" flags="in" index="1d0yFN" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -463,6 +468,25 @@
               </node>
             </node>
           </node>
+          <node concept="VQ3r3" id="3ni3Wiesaq7" role="3F10Kt">
+            <node concept="1d0yFN" id="3ni3WiesaKx" role="1mkY_M">
+              <node concept="3clFbS" id="3ni3WiesaKy" role="2VODD2">
+                <node concept="3clFbF" id="3ni3WiesaRH" role="3cqZAp">
+                  <node concept="2OqwBi" id="3ni3Wiesc0O" role="3clFbG">
+                    <node concept="2ShNRf" id="3ni3WiesaRF" role="2Oq$k0">
+                      <node concept="1pGfFk" id="3ni3WiesbD0" role="2ShVmc">
+                        <ref role="37wK5l" to="oq0c:3ni3WidV2MT" resolve="EffectHelper" />
+                        <node concept="pncrf" id="3ni3WiesbLP" role="37wK5m" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3ni3WiescmB" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:3ni3WidV9_$" resolve="isPure" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="_tjkj" id="6KxoTHgSIsJ" role="3EZMnx">
           <node concept="3F1sOY" id="6KxoTHgSIsZ" role="_tjki">
@@ -589,10 +613,15 @@
         <node concept="pkWqt" id="6KxoTHgR6Mv" role="pqm2j">
           <node concept="3clFbS" id="6KxoTHgR6Mw" role="2VODD2">
             <node concept="3clFbF" id="6KxoTHgR6N7" role="3cqZAp">
-              <node concept="2OqwBi" id="6KxoTHgR6RU" role="3clFbG">
-                <node concept="pncrf" id="6KxoTHgR6N6" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6KxoTHgR75x" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+              <node concept="2OqwBi" id="6GySMNk9wXJ" role="3clFbG">
+                <node concept="2OqwBi" id="6KxoTHgR6RU" role="2Oq$k0">
+                  <node concept="pncrf" id="6KxoTHgR6N6" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6GySMNk9wD_" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GySMNk9xti" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
                 </node>
               </node>
             </node>
@@ -720,10 +749,15 @@
         <node concept="pkWqt" id="sflsE7pAtA" role="pqm2j">
           <node concept="3clFbS" id="sflsE7pAtB" role="2VODD2">
             <node concept="3clFbF" id="sflsE7pAva" role="3cqZAp">
-              <node concept="2OqwBi" id="sflsE7pAyd" role="3clFbG">
-                <node concept="pncrf" id="sflsE7pAv9" role="2Oq$k0" />
-                <node concept="2qgKlT" id="sflsE7pAEN" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+              <node concept="2OqwBi" id="6GySMNk9vgB" role="3clFbG">
+                <node concept="2OqwBi" id="sflsE7pAyd" role="2Oq$k0">
+                  <node concept="pncrf" id="sflsE7pAv9" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6GySMNk9v6a" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GySMNk9vIp" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
                 </node>
               </node>
             </node>

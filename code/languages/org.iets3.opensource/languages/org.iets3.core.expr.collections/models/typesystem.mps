@@ -3755,6 +3755,7 @@
     <property role="TrG5h" value="check_ForeachOp" />
     <property role="3GE5qa" value="collection" />
     <node concept="3clFbS" id="7SZA7Ud$032" role="18ibNy">
+      <node concept="3clFbH" id="6GySMNjYExu" role="3cqZAp" />
       <node concept="3clFbJ" id="7SZA7Ud$27L" role="3cqZAp">
         <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
           <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">
@@ -3767,12 +3768,17 @@
           </node>
         </node>
         <node concept="3fqX7Q" id="7SZA7Ud$287" role="3clFbw">
-          <node concept="2OqwBi" id="7SZA7Ud$2nl" role="3fr31v">
-            <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
-              <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+          <node concept="2OqwBi" id="6GySMNjYF2A" role="3fr31v">
+            <node concept="2OqwBi" id="7SZA7Ud$2nl" role="2Oq$k0">
+              <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
+                <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+              </node>
+              <node concept="2qgKlT" id="6GySMNjYEVI" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+              </node>
             </node>
-            <node concept="2qgKlT" id="7SZA7Ud$2Ca" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+            <node concept="liA8E" id="6GySMNjYF$H" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
             </node>
           </node>
         </node>
