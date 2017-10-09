@@ -223,9 +223,6 @@
     <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
-    <node concept="PrWs8" id="6GySMNk47gQ" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowEffect" />
-    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
@@ -367,6 +364,9 @@
     <node concept="PrWs8" id="2jL$v5BJGNY" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqX38" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
     <property role="TrG5h" value="SectionMarker" />
@@ -475,6 +475,9 @@
     <node concept="PrWs8" id="15mJ3JeHQzs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="PrWs8" id="4qVjx3k_yeK" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="15mJ3JeHQzQ">
     <property role="3GE5qa" value="record.change" />
@@ -494,6 +497,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1249392911699110137" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_yKe" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="HywGhj0hJO">
@@ -560,9 +566,6 @@
     </node>
     <node concept="PrWs8" id="67Y8mp$DMVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="6GySMNk47tt" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
@@ -787,6 +790,9 @@
     <ref role="1TJDcQ" to="700h:6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="7cphKbKo1Dk" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_ryB" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cphKbKssrq">

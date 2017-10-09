@@ -121,7 +121,7 @@
   </node>
   <node concept="24kQdi" id="3GdqffBQYG1">
     <property role="3GE5qa" value="box" />
-    <ref role="1XX52x" to="8lgj:3GdqffBQYFy" resolve="BoxUdpateTarget" />
+    <ref role="1XX52x" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
     <node concept="3EZMnI" id="3GdqffBQYG9" role="2wV5jI">
       <node concept="2iRfu4" id="3GdqffBQYGa" role="2iSdaV" />
       <node concept="3F0ifn" id="3GdqffBQYG6" role="3EZMnx">

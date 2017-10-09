@@ -377,7 +377,7 @@
     </node>
     <node concept="1YaCAy" id="3GdqffBQYQb" role="1YuTPh">
       <property role="TrG5h" value="ut" />
-      <ref role="1YaFvo" to="8lgj:3GdqffBQYFy" resolve="BoxUdpateTarget" />
+      <ref role="1YaFvo" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
     </node>
   </node>
   <node concept="1YbPZF" id="3GdqffC6Nh4">
@@ -399,7 +399,7 @@
               <node concept="2Xjw5R" id="3GdqffC6OOG" role="2OqNvi">
                 <node concept="1xMEDy" id="3GdqffC6OOH" role="1xVPHs">
                   <node concept="chp4Y" id="3GdqffC6OOI" role="ri$Ld">
-                    <ref role="cht4Q" to="8lgj:3GdqffBQYFy" resolve="BoxUdpateTarget" />
+                    <ref role="cht4Q" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
                   </node>
                 </node>
               </node>

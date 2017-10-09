@@ -116,6 +116,9 @@
     <node concept="PrWs8" id="21vB0Vz0ucl" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqU9m" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
     <property role="TrG5h" value="ICollectionOp" />
@@ -208,6 +211,9 @@
     <node concept="PrWs8" id="6zmBjqUj$FM" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
+    <node concept="PrWs8" id="4qVjx3k_rxf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUjnKs">
     <property role="3GE5qa" value="" />
@@ -245,6 +251,9 @@
     </node>
     <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUm1me">
@@ -291,6 +300,9 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265514351708" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+    <node concept="PrWs8" id="4qVjx3k_vab" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2E2W0">
     <property role="3GE5qa" value="" />
@@ -301,6 +313,9 @@
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_rZ_" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Fanr">
@@ -345,6 +360,9 @@
     </node>
     <node concept="PrWs8" id="7D7uZV2ptAX" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7D7uZV2ptAQ" resolve="IStructuredSyntax" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3kqXzN" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf34jB6">
@@ -414,6 +432,9 @@
     <node concept="PrWs8" id="21vB0VyYmJh" role="PzmwI">
       <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqUWv" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHD">
     <property role="3GE5qa" value="map" />
@@ -434,6 +455,9 @@
       <property role="IQ2ns" value="8448265401163111276" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqK2Q" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kYh9Ws$zzv">
     <property role="3GE5qa" value="map" />
@@ -444,6 +468,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7kYh9Ws$zzw" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_xD0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="1TJgyj" id="7kYh9Ws$zzU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -575,6 +602,9 @@
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179783739" />
     <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
+    <node concept="PrWs8" id="4qVjx3k_x9Y" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1RHynufnSPh">
     <property role="3GE5qa" value="set" />
@@ -585,6 +615,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1RHynufnSPi" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_xVS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="1TJgyj" id="1RHynufnSPj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -662,6 +695,9 @@
     <node concept="PrWs8" id="3tudP_AYLZ5" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="PrWs8" id="4qVjx3k_z08" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="40o9_yLEYFL">
     <property role="3GE5qa" value="collection" />
@@ -706,6 +742,9 @@
     </node>
     <node concept="PrWs8" id="7SZA7UeV1I$" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3kg95E" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="2dOqIOtJZ98">
@@ -778,6 +817,9 @@
     </node>
     <node concept="PrWs8" id="4hLehKU05cE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_q8W" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
     <node concept="1TJgyj" id="4hLehKU05d5" role="1TKVEi">
       <property role="IQ2ns" value="4931785860342371141" />

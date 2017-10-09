@@ -17,6 +17,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -487,8 +489,10 @@
   </node>
   <node concept="1TIwiD" id="6KxoTHgSIr8">
     <property role="TrG5h" value="EffectTag" />
-    <property role="34LRSv" value="*" />
     <property role="EcuMT" value="7791618349055796936" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="effectTag" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="2D48zR6a1ez">
@@ -540,6 +544,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4qVjx3kqFhn" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="79jc6YzNL4y">
     <property role="EcuMT" value="8237981399438528802" />
@@ -555,6 +562,27 @@
     <node concept="PrWs8" id="6GySMNlbAb4" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFG">
+    <property role="EcuMT" value="5096753237482793708" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ReadEffectTag" />
+    <property role="34LRSv" value="/R" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFH">
+    <property role="EcuMT" value="5096753237482793709" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ModifyEffectTag" />
+    <property role="34LRSv" value="/M" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFI">
+    <property role="EcuMT" value="5096753237482793710" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ReadModifyEffectTag" />
+    <property role="34LRSv" value="/RM" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
   </node>
 </model>
 

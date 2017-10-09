@@ -94,7 +94,7 @@
   </node>
   <node concept="1TIwiD" id="3GdqffBQYFy">
     <property role="EcuMT" value="4255172619711277794" />
-    <property role="TrG5h" value="BoxUdpateTarget" />
+    <property role="TrG5h" value="BoxUpdateTarget" />
     <property role="34LRSv" value="update" />
     <property role="3GE5qa" value="box" />
     <ref role="1TJDcQ" node="3GdqffBPhJG" resolve="BoxDotTarget" />

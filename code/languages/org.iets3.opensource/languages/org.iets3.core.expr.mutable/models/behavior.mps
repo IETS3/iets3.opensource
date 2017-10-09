@@ -374,7 +374,7 @@
   </node>
   <node concept="13h7C7" id="3GdqffBQYHk">
     <property role="3GE5qa" value="box" />
-    <ref role="13h7C2" to="8lgj:3GdqffBQYFy" resolve="BoxUdpateTarget" />
+    <ref role="13h7C2" to="8lgj:3GdqffBQYFy" resolve="BoxUpdateTarget" />
     <node concept="13hLZK" id="3GdqffBQYHl" role="13h7CW">
       <node concept="3clFbS" id="3GdqffBQYHm" role="2VODD2" />
     </node>
