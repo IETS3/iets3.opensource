@@ -975,7 +975,7 @@
                 <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
                 <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                 <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
-                  <property role="Xl_RC" value="#FF8E69" />
+                  <property role="Xl_RC" value="#FF5319" />
                 </node>
               </node>
             </node>

@@ -142,5 +142,19 @@
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="7$TgoCYmv_v">
+    <property role="EcuMT" value="8735085014269163871" />
+    <property role="TrG5h" value="AccuType" />
+    <property role="34LRSv" value="accu" />
+    <property role="3GE5qa" value="accu" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="63mrHUnLEj3">
+    <property role="EcuMT" value="6977886574965335235" />
+    <property role="3GE5qa" value="accu" />
+    <property role="TrG5h" value="AccuExpression" />
+    <property role="34LRSv" value="accu" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 

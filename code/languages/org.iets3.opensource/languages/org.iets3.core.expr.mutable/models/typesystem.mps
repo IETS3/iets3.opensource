@@ -9,6 +9,7 @@
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -22,6 +23,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -31,6 +35,9 @@
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -83,6 +90,7 @@
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -608,6 +616,58 @@
     <node concept="1YaCAy" id="79jc6YzKnBc" role="1YuTPh">
       <property role="TrG5h" value="tx" />
       <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="63mrHUnLF9c">
+    <property role="TrG5h" value="typeof_AccuExpression" />
+    <property role="3GE5qa" value="accu" />
+    <node concept="3clFbS" id="63mrHUnLF9d" role="18ibNy">
+      <node concept="1Z5TYs" id="63mrHUnLHuO" role="3cqZAp">
+        <node concept="mw_s8" id="63mrHUnLHCg" role="1ZfhKB">
+          <node concept="2pJPEk" id="63mrHUnLHC8" role="mwGJk">
+            <node concept="2pJPED" id="63mrHUnLHCr" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:7$TgoCYmv_v" resolve="AccuType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="63mrHUnLHuR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="63mrHUnLHeS" role="mwGJk">
+            <node concept="1YBJjd" id="63mrHUnLHgI" role="1Z2MuG">
+              <ref role="1YBMHb" node="63mrHUnLF9f" resolve="ae" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="63mrHUnLF9f" role="1YuTPh">
+      <property role="TrG5h" value="ae" />
+      <ref role="1YaFvo" to="8lgj:63mrHUnLEj3" resolve="AccuExpression" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="63mrHUnMmQO">
+    <property role="3GE5qa" value="accu" />
+    <property role="TrG5h" value="supertypeOf_AccuType" />
+    <node concept="3clFbS" id="63mrHUnMmQP" role="2sgrp5">
+      <node concept="3clFbF" id="63mrHUnMmSb" role="3cqZAp">
+        <node concept="2pJPEk" id="63mrHUnMmS9" role="3clFbG">
+          <node concept="2pJPED" id="63mrHUnMmUa" role="2pJPEn">
+            <ref role="2pJxaS" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
+            <node concept="2pIpSj" id="63mrHUnMmWB" role="2pJxcM">
+              <ref role="2pIpSl" to="8lgj:3GdqffBKoAn" resolve="baseType" />
+              <node concept="36biLy" id="63mrHUnMmZ8" role="2pJxcZ">
+                <node concept="2YIFZM" id="63mrHUnMn5w" role="36biLW">
+                  <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+                  <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="63mrHUnMmQR" role="1YuTPh">
+      <property role="TrG5h" value="accu" />
+      <ref role="1YaFvo" to="8lgj:7$TgoCYmv_v" resolve="AccuType" />
     </node>
   </node>
 </model>
