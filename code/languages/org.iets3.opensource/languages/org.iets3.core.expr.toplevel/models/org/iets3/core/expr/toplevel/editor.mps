@@ -116,9 +116,6 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
-      <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
-        <child id="1221219051630" name="query" index="1mkY_M" />
-      </concept>
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
@@ -140,7 +137,6 @@
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
-      <concept id="1221062700015" name="jetbrains.mps.lang.editor.structure.QueryFunction_Underlined" flags="in" index="1d0yFN" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -463,25 +459,6 @@
                   <node concept="10M0yZ" id="2uR5X5b2FVe" role="3clFbG">
                     <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
                     <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="VQ3r3" id="3ni3Wiesaq7" role="3F10Kt">
-            <node concept="1d0yFN" id="3ni3WiesaKx" role="1mkY_M">
-              <node concept="3clFbS" id="3ni3WiesaKy" role="2VODD2">
-                <node concept="3clFbF" id="3ni3WiesaRH" role="3cqZAp">
-                  <node concept="2OqwBi" id="3ni3Wiesc0O" role="3clFbG">
-                    <node concept="2ShNRf" id="3ni3WiesaRF" role="2Oq$k0">
-                      <node concept="1pGfFk" id="3ni3WiesbD0" role="2ShVmc">
-                        <ref role="37wK5l" to="oq0c:3ni3WidV2MT" resolve="EffectHelper" />
-                        <node concept="pncrf" id="3ni3WiesbLP" role="37wK5m" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3ni3WiescmB" role="2OqNvi">
-                      <ref role="37wK5l" to="oq0c:3ni3WidV9_$" resolve="isPure" />
-                    </node>
                   </node>
                 </node>
               </node>
