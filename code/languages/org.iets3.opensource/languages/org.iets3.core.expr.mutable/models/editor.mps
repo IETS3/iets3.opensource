@@ -179,15 +179,5 @@
       <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
-  <node concept="24kQdi" id="63mrHUnLEjv">
-    <property role="3GE5qa" value="accu" />
-    <ref role="1XX52x" to="8lgj:63mrHUnLEj3" resolve="AccuExpression" />
-    <node concept="3EZMnI" id="63mrHUnLEj$" role="2wV5jI">
-      <node concept="2iRfu4" id="63mrHUnLEj_" role="2iSdaV" />
-      <node concept="3F0ifn" id="63mrHUnLEjx" role="3EZMnx">
-        <property role="3F0ifm" value="accu" />
-      </node>
-    </node>
-  </node>
 </model>
 
