@@ -19,6 +19,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -141,6 +142,19 @@
     <property role="34LRSv" value="void" />
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="PlHQZ" id="aPhVmWYjmk">
+    <property role="EcuMT" value="195141004745586068" />
+    <property role="TrG5h" value="ICanBeLValue" />
+  </node>
+  <node concept="1TIwiD" id="aPhVmWYxIJ">
+    <property role="EcuMT" value="195141004745644975" />
+    <property role="TrG5h" value="AssignmentExpr" />
+    <property role="34LRSv" value=":=" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+    <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
 </model>
 

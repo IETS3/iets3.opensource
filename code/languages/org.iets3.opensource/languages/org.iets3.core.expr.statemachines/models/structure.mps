@@ -11,6 +11,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -88,6 +90,13 @@
     <property role="34LRSv" value="event" />
     <property role="3GE5qa" value="machine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="aPhVmWQWVF" role="1TKVEi">
+      <property role="IQ2ns" value="195141004743659243" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="aPhVmWQWVH" resolve="EventArg" />
+    </node>
     <node concept="PrWs8" id="7$TgoCYjSs8" role="PzmwI">
       <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
     </node>
@@ -170,6 +179,13 @@
     <property role="TrG5h" value="TriggerTarget" />
     <property role="3GE5qa" value="operations" />
     <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="1TJgyj" id="aPhVmWSKjy" role="1TKVEi">
+      <property role="IQ2ns" value="195141004744131810" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="7$TgoCYaFGw" role="1TKVEi">
       <property role="IQ2ns" value="8735085014266067744" />
       <property role="20lmBu" value="reference" />
@@ -274,6 +290,92 @@
     <ref role="1TJDcQ" node="7$TgoCYhZdt" resolve="Action" />
     <node concept="PrWs8" id="7$TgoCYmsfD" role="PzmwI">
       <ref role="PrY4T" node="7$TgoCYlrCy" resolve="IStateContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aPhVmWQWVH">
+    <property role="EcuMT" value="195141004743659245" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="EventArg" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="aPhVmWQX1$" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUkws9" resolve="IArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aPhVmWRzR3">
+    <property role="EcuMT" value="195141004743818691" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="EventArgRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="aPhVmWRzR6" role="1TKVEi">
+      <property role="IQ2ns" value="195141004743818694" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="aPhVmWQWVH" resolve="EventArg" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWRzR4" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aPhVmWSe4k">
+    <property role="EcuMT" value="195141004743991572" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="StatemachineVar" />
+    <property role="34LRSv" value="var" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="aPhVmWSe4r" role="PzmwI">
+      <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWSe4w" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWSe4C" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
+    <node concept="1TJgyj" id="aPhVmWWek9" role="1TKVEi">
+      <property role="IQ2ns" value="195141004745041161" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aPhVmWXzeP">
+    <property role="EcuMT" value="195141004745388981" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="VarRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="aPhVmWXzeQ" role="1TKVEi">
+      <property role="IQ2ns" value="195141004745388982" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="aPhVmWSe4k" resolve="StatemachineVar" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWXzeS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWYRye" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:aPhVmWYjmk" resolve="ICanBeLValue" />
+    </node>
+    <node concept="PrWs8" id="aPhVmWZ1$V" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aPhVmX0b8J">
+    <property role="EcuMT" value="195141004746076719" />
+    <property role="TrG5h" value="VariableTarget" />
+    <property role="3GE5qa" value="operations" />
+    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="1TJgyj" id="aPhVmX0b8L" role="1TKVEi">
+      <property role="IQ2ns" value="195141004746076721" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="aPhVmWSe4k" resolve="StatemachineVar" />
+    </node>
+    <node concept="PrWs8" id="aPhVmX0b8M" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
 </model>
