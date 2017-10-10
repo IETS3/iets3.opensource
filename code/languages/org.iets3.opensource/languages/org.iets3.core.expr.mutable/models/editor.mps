@@ -9,6 +9,7 @@
   <imports>
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -160,6 +161,7 @@
       <node concept="l2Vlx" id="79jc6Yzg0YW" role="2iSdaV" />
       <node concept="3F0ifn" id="3GdqffC8H_V" role="3EZMnx">
         <property role="3F0ifm" value="tx" />
+        <ref role="1k5W1q" to="i6kd:4qVjx3jYYFK" resolve="effect" />
         <node concept="11LMrY" id="79jc6Yzg0YU" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
