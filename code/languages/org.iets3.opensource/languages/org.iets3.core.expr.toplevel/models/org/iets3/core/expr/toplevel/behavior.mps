@@ -157,6 +157,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -1060,6 +1065,49 @@
         </node>
       </node>
       <node concept="10P_77" id="5IR_boIdJlY" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7OzZ9xIa9pS" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="7OzZ9xIa9pT" role="1B3o_S" />
+      <node concept="3clFbS" id="7OzZ9xIa9q0" role="3clF47">
+        <node concept="3clFbF" id="7OzZ9xIaa2Z" role="3cqZAp">
+          <node concept="3K4zz7" id="7OzZ9xIalp7" role="3clFbG">
+            <node concept="10Nm6u" id="7OzZ9xIalqk" role="3K4E3e" />
+            <node concept="Xl_RD" id="7OzZ9xIalr9" role="3K4GZi">
+              <property role="Xl_RC" value="only read effects allowed here" />
+            </node>
+            <node concept="2YIFZM" id="7OzZ9xIaa3t" role="3K4Cdx">
+              <ref role="37wK5l" to="oq0c:7$TgoCYiOZL" resolve="allows" />
+              <ref role="1Pybhc" to="oq0c:3ni3WidUZG$" resolve="EffectHelper" />
+              <node concept="2ShNRf" id="7OzZ9xIaa7a" role="37wK5m">
+                <node concept="1pGfFk" id="7OzZ9xIakRp" role="2ShVmc">
+                  <ref role="37wK5l" to="oq0c:3ni3WieuVew" resolve="EffectDescriptor" />
+                  <node concept="3clFbT" id="7OzZ9xIakVd" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                  <node concept="3clFbT" id="7OzZ9xIakVm" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                  <node concept="3clFbT" id="7OzZ9xIakVx" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="7OzZ9xIal3T" role="37wK5m">
+                <ref role="3cqZAo" node="7OzZ9xIa9q1" resolve="n" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7OzZ9xIa9q1" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="7OzZ9xIa9q2" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="7OzZ9xIa9q3" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="69zaTr1N3Q9">
