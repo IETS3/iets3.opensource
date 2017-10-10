@@ -18,6 +18,7 @@
     <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
@@ -3220,6 +3221,42 @@
     </node>
     <node concept="2tJIrI" id="7_$HJtBuVLr" role="jymVt" />
     <node concept="3Tm1VV" id="7_$HJtBuVKI" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5iD_kvm6kPB">
+    <property role="TrG5h" value="ProceedVal" />
+    <node concept="2tJIrI" id="5iD_kvm6kPV" role="jymVt" />
+    <node concept="312cEg" id="5iD_kvm6l2V" role="jymVt">
+      <property role="TrG5h" value="myBaseVal" />
+      <node concept="3Tm1VV" id="5iD_kvm6l3S" role="1B3o_S" />
+      <node concept="3uibUv" id="5iD_kvm6l2Y" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5iD_kvm6l6G" role="jymVt" />
+    <node concept="3clFbW" id="5iD_kvm6kW2" role="jymVt">
+      <node concept="3cqZAl" id="5iD_kvm6kW4" role="3clF45" />
+      <node concept="3Tm1VV" id="5iD_kvm6kW5" role="1B3o_S" />
+      <node concept="3clFbS" id="5iD_kvm6kW6" role="3clF47">
+        <node concept="3clFbF" id="5iD_kvm6l2Z" role="3cqZAp">
+          <node concept="37vLTI" id="5iD_kvm6l31" role="3clFbG">
+            <node concept="37vLTw" id="5iD_kvm6l34" role="37vLTJ">
+              <ref role="3cqZAo" node="5iD_kvm6l2V" resolve="myBaseVal" />
+            </node>
+            <node concept="37vLTw" id="5iD_kvm6l35" role="37vLTx">
+              <ref role="3cqZAo" node="5iD_kvm6l2j" resolve="baseVal" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5iD_kvm6l2j" role="3clF46">
+        <property role="TrG5h" value="baseVal" />
+        <node concept="3uibUv" id="5iD_kvm6l2i" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5iD_kvm6kQ0" role="jymVt" />
+    <node concept="3Tm1VV" id="5iD_kvm6kPC" role="1B3o_S" />
   </node>
 </model>
 

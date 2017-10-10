@@ -5120,5 +5120,32 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3GdqffBS$MP">
+    <ref role="1XX52x" to="av4b:3GdqffBS$Mm" resolve="MuteEffect" />
+    <node concept="3EZMnI" id="3GdqffBS$MX" role="2wV5jI">
+      <node concept="2iRfu4" id="3GdqffBS$MY" role="2iSdaV" />
+      <node concept="3F0ifn" id="3GdqffBS$MU" role="3EZMnx">
+        <property role="3F0ifm" value="mute" />
+      </node>
+      <node concept="3F0ifn" id="3GdqffBS$N6" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="3GdqffBS$Nl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3GdqffBS$Nu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3GdqffBS$NE" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:3GdqffBS$Mq" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="3GdqffBS$Ne" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="3GdqffBS$Nj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
