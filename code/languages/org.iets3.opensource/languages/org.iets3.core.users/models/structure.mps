@@ -13,22 +13,6 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
-        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
-      </concept>
-      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
-        <property id="2756621024541681854" name="text" index="1irPi9" />
-        <child id="1860120738943552534" name="color" index="3PKjny" />
-      </concept>
-      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
-        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
-        <child id="2756621024541675110" name="layers" index="1irR9h" />
-      </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
-      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
-        <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
@@ -109,23 +93,6 @@
     </node>
     <node concept="PrWs8" id="6LfBX8YlYHb" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
-    </node>
-    <node concept="1irR5M" id="72HfR5QcT_j" role="rwd14">
-      <property role="2$rrk2" value="1" />
-      <node concept="1irPie" id="72HfR5QcT_k" role="1irR9h">
-        <property role="1irPi9" value="U" />
-        <node concept="3PKj8D" id="72HfR5QcT_l" role="3PKjny">
-          <property role="3PKj8l" value="FFFFFF" />
-        </node>
-      </node>
-      <node concept="1irR9n" id="72HfR5QcT_m" role="1irR9h">
-        <node concept="3PKj8D" id="72HfR5QcT_n" role="3PKjnB">
-          <property role="3PKj8l" value="0000bb" />
-        </node>
-        <node concept="3PKj8D" id="72HfR5QcT_o" role="3PKjn_">
-          <property role="3PKj8l" value="0000bb" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7mG7sQPpUfB">
