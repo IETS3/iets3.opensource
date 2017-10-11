@@ -183,11 +183,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="3GdqffC8H$I">
-    <ref role="1XX52x" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
+    <ref role="1XX52x" to="8lgj:3GdqffC8H$g" resolve="NewTxBlock" />
     <node concept="3EZMnI" id="3GdqffC8H_P" role="2wV5jI">
       <node concept="l2Vlx" id="79jc6Yzg0YW" role="2iSdaV" />
       <node concept="3F0ifn" id="3GdqffC8H_V" role="3EZMnx">
-        <property role="3F0ifm" value="tx" />
+        <property role="3F0ifm" value="newtx" />
         <ref role="1k5W1q" to="i6kd:4qVjx3jYYFK" resolve="effect" />
         <node concept="11LMrY" id="79jc6Yzg0YU" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -223,6 +223,41 @@
     <node concept="3F0ifn" id="79jc6YzaH65" role="2wV5jI">
       <property role="3F0ifm" value="void" />
       <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1RzljfOfUpf">
+    <ref role="1XX52x" to="8lgj:1RzljfOfUoH" resolve="InTxBlock" />
+    <node concept="3EZMnI" id="1RzljfOfUpn" role="2wV5jI">
+      <node concept="l2Vlx" id="1RzljfOfUpo" role="2iSdaV" />
+      <node concept="3F0ifn" id="1RzljfOfUpp" role="3EZMnx">
+        <property role="3F0ifm" value="intx" />
+        <ref role="1k5W1q" to="i6kd:4qVjx3jYYFK" resolve="effect" />
+        <node concept="11LMrY" id="1RzljfOfUpq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VSNWy" id="1RzljfOfUpr" role="3F10Kt">
+          <node concept="1cFabM" id="1RzljfOfUps" role="1d8cEk">
+            <node concept="3clFbS" id="1RzljfOfUpt" role="2VODD2">
+              <node concept="3clFbF" id="1RzljfOfUpu" role="3cqZAp">
+                <node concept="2OqwBi" id="1RzljfOfUpv" role="3clFbG">
+                  <node concept="2YIFZM" id="1RzljfOfUpw" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="1RzljfOfUpx" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1kIj98" id="1RzljfOfUpy" role="3EZMnx">
+        <node concept="3F1sOY" id="1RzljfOfUpz" role="1kIj9b">
+          <ref role="1NtTu8" to="8lgj:1RzljfOfUoI" resolve="body" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

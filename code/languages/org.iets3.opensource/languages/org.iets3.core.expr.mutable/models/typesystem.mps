@@ -553,7 +553,7 @@
     </node>
     <node concept="1YaCAy" id="3GdqffC8Ovo" role="1YuTPh">
       <property role="TrG5h" value="tx" />
-      <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
+      <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="NewTxBlock" />
     </node>
   </node>
   <node concept="35pCF_" id="6eglc2$aiv0">
@@ -625,7 +625,7 @@
     </node>
     <node concept="1YaCAy" id="79jc6YzKnBc" role="1YuTPh">
       <property role="TrG5h" value="tx" />
-      <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="TxExpr" />
+      <ref role="1YaFvo" to="8lgj:3GdqffC8H$g" resolve="NewTxBlock" />
     </node>
   </node>
   <node concept="1YbPZF" id="aPhVmWYxU5">
@@ -764,6 +764,36 @@
     <node concept="1YaCAy" id="aPhVmWYMGL" role="1YuTPh">
       <property role="TrG5h" value="ae" />
       <ref role="1YaFvo" to="8lgj:aPhVmWYxIJ" resolve="AssignmentExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1RzljfOfV6L">
+    <property role="TrG5h" value="typeof_InTxBlock" />
+    <node concept="3clFbS" id="1RzljfOfV6M" role="18ibNy">
+      <node concept="1Z5TYs" id="1RzljfOfVmm" role="3cqZAp">
+        <node concept="mw_s8" id="1RzljfOfVmB" role="1ZfhKB">
+          <node concept="1Z2H0r" id="1RzljfOfVmz" role="mwGJk">
+            <node concept="2OqwBi" id="1RzljfOfVxK" role="1Z2MuG">
+              <node concept="1YBJjd" id="1RzljfOfVmV" role="2Oq$k0">
+                <ref role="1YBMHb" node="1RzljfOfV6O" resolve="inTxBlock" />
+              </node>
+              <node concept="3TrEf2" id="1RzljfOfVI_" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:1RzljfOfUoI" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1RzljfOfVmp" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1RzljfOfV6Y" role="mwGJk">
+            <node concept="1YBJjd" id="1RzljfOfV8I" role="1Z2MuG">
+              <ref role="1YBMHb" node="1RzljfOfV6O" resolve="inTxBlock" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1RzljfOfV6O" role="1YuTPh">
+      <property role="TrG5h" value="inTxBlock" />
+      <ref role="1YaFvo" to="8lgj:1RzljfOfUoH" resolve="InTxBlock" />
     </node>
   </node>
 </model>

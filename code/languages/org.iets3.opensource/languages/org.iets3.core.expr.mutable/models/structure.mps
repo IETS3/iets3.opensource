@@ -122,8 +122,8 @@
   </node>
   <node concept="1TIwiD" id="3GdqffC8H$g">
     <property role="EcuMT" value="4255172619715926288" />
-    <property role="TrG5h" value="TxExpr" />
-    <property role="34LRSv" value="tx" />
+    <property role="TrG5h" value="NewTxBlock" />
+    <property role="34LRSv" value="newtx" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3GdqffC8H$h" role="1TKVEi">
       <property role="IQ2ns" value="4255172619715926289" />
@@ -153,6 +153,22 @@
     <property role="34LRSv" value=":=" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
     <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1RzljfOfUoH">
+    <property role="EcuMT" value="2153658728442734125" />
+    <property role="TrG5h" value="InTxBlock" />
+    <property role="34LRSv" value="intx" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1RzljfOfUoI" role="1TKVEi">
+      <property role="IQ2ns" value="4255172619715926289" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
+    </node>
+    <node concept="PrWs8" id="1RzljfOfUoJ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>

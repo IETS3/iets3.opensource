@@ -162,6 +162,10 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <property id="5974682372640371252" name="errmsg" index="xVyv2" />
+        <child id="8219602584783494093" name="actual" index="mXJVd" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -242,7 +246,7 @@
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
       <concept id="195141004745644975" name="org.iets3.core.expr.mutable.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
-      <concept id="4255172619715926288" name="org.iets3.core.expr.mutable.structure.TxExpr" flags="ng" index="3jbV7z">
+      <concept id="4255172619715926288" name="org.iets3.core.expr.mutable.structure.NewTxBlock" flags="ng" index="3jbV7z">
         <child id="4255172619715926289" name="body" index="3jbV7y" />
       </concept>
       <concept id="4255172619709548950" name="org.iets3.core.expr.mutable.structure.BoxType" flags="ng" index="3sNe5_">
@@ -254,6 +258,9 @@
       <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
         <child id="4255172619710740514" name="value" index="3sRH3h" />
+      </concept>
+      <concept id="2153658728442734125" name="org.iets3.core.expr.mutable.structure.InTxBlock" flags="ng" index="3DRfcu">
+        <child id="4255172619715926289" name="body" index="3jbV7z" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -3350,6 +3357,133 @@
       </node>
     </node>
     <node concept="_ixoA" id="79jc6YzYYej" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="1RzljfOgq38">
+    <property role="TrG5h" value="mutable_tx3" />
+    <property role="2SXJ1i" value="true" />
+    <property role="1XBH2A" value="true" />
+    <node concept="2zPypq" id="1RzljfOgq39" role="_iOnB">
+      <property role="TrG5h" value="intBox1" />
+      <node concept="3sRH3H" id="1RzljfOgq3a" role="2zPyp_">
+        <node concept="30bXRB" id="1RzljfOgq3b" role="3sRH3h">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+      <node concept="3sNe5_" id="1RzljfOgq3c" role="2zM23F">
+        <node concept="30bXR$" id="1RzljfOgq3d" role="3sNe5$" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="1RzljfOgq3e" role="_iOnB">
+      <property role="TrG5h" value="intBox2" />
+      <node concept="3sRH3H" id="1RzljfOgq3f" role="2zPyp_">
+        <node concept="30bXRB" id="1RzljfOgq3g" role="3sRH3h">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+      <node concept="3sNe5_" id="1RzljfOgq3h" role="2zM23F">
+        <node concept="30bXR$" id="1RzljfOgq3i" role="3sNe5$" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="1RzljfOgq3j" role="_iOnB" />
+    <node concept="_ixoA" id="1RzljfOgq3k" role="_iOnB" />
+    <node concept="1aga60" id="1RzljfOgqDV" role="_iOnB">
+      <property role="TrG5h" value="doWithTx" />
+      <node concept="3DRfcu" id="1RzljfOgqF4" role="1ahQXP">
+        <node concept="1aduha" id="1RzljfOgqF6" role="3jbV7z">
+          <node concept="1QScDb" id="1RzljfOgqFK" role="1aduh9">
+            <node concept="3sPC8h" id="1RzljfOgqLo" role="1QScD9">
+              <node concept="30dDZf" id="1RzljfOhyrM" role="3sPC8l">
+                <node concept="30bXRB" id="1RzljfOhyrY" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="3j5BQN" id="1RzljfOhyoo" role="30dEsF" />
+              </node>
+            </node>
+            <node concept="_emDc" id="1RzljfOgqFi" role="30czhm">
+              <ref role="_emDf" node="1RzljfOgq39" resolve="intBox1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2lgajX" id="1RzljfOgqWZ" role="28QfE6" />
+    </node>
+    <node concept="_ixoA" id="1RzljfOgqy1" role="_iOnB" />
+    <node concept="1aga60" id="1RzljfOhxtG" role="_iOnB">
+      <property role="TrG5h" value="newTx" />
+      <node concept="3jbV7z" id="1RzljfOhxuz" role="1ahQXP">
+        <node concept="1aduha" id="1RzljfOhxu_" role="3jbV7y">
+          <node concept="1af_rf" id="1RzljfOhxuL" role="1aduh9">
+            <ref role="1afhQb" node="1RzljfOgqDV" resolve="doWithTx" />
+          </node>
+        </node>
+      </node>
+      <node concept="2lgajX" id="1RzljfOhxuq" role="28QfE6" />
+    </node>
+    <node concept="_ixoA" id="1RzljfOh$3x" role="_iOnB" />
+    <node concept="1aga60" id="1RzljfOhzaL" role="_iOnB">
+      <property role="TrG5h" value="newTxFails" />
+      <node concept="3jbV7z" id="1RzljfOhzaM" role="1ahQXP">
+        <node concept="1aduha" id="1RzljfOhzaN" role="3jbV7y">
+          <node concept="1af_rf" id="1RzljfOhzaO" role="1aduh9">
+            <ref role="1afhQb" node="1RzljfOgqDV" resolve="doWithTx" />
+          </node>
+          <node concept="3hB25d" id="1RzljfOhzFa" role="1aduh9">
+            <node concept="2vmpn$" id="1RzljfOhzJT" role="3hB253" />
+          </node>
+        </node>
+      </node>
+      <node concept="2lgajX" id="1RzljfOhzaP" role="28QfE6" />
+    </node>
+    <node concept="_ixoA" id="1RzljfOhxtf" role="_iOnB" />
+    <node concept="_fkuM" id="1RzljfOgq4f" role="_iOnB">
+      <property role="TrG5h" value="Success" />
+      <node concept="mXNUv" id="1RzljfOgrsR" role="_fkp5">
+        <property role="xVyv2" value="No transaction found." />
+        <node concept="3sVMh_" id="1RzljfOgrD6" role="mXJVd">
+          <node concept="1af_rf" id="1RzljfOgrsZ" role="3sVMhD">
+            <ref role="1afhQb" node="1RzljfOgqDV" resolve="doWithTx" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="1RzljfOhxKq" role="_fkp5">
+        <node concept="_fku$" id="1RzljfOhxKr" role="_fkur" />
+        <node concept="3sVMh_" id="1RzljfOhxKI" role="_fkuY">
+          <node concept="1aduha" id="1RzljfOhxLn" role="3sVMhD">
+            <node concept="1af_rf" id="1RzljfOhxLA" role="1aduh9">
+              <ref role="1afhQb" node="1RzljfOhxtG" resolve="newTx" />
+            </node>
+            <node concept="1QScDb" id="1RzljfOhxWY" role="1aduh9">
+              <node concept="3sQ2Ir" id="1RzljfOhy2m" role="1QScD9" />
+              <node concept="_emDc" id="1RzljfOhxRT" role="30czhm">
+                <ref role="_emDf" node="1RzljfOgq39" resolve="intBox1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="1RzljfOhyeh" role="_fkuS">
+          <property role="30bXRw" value="11" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="1RzljfOhzOv" role="_fkp5">
+        <node concept="_fku$" id="1RzljfOhzOw" role="_fkur" />
+        <node concept="3sVMh_" id="1RzljfOhzOx" role="_fkuY">
+          <node concept="1aduha" id="1RzljfOhzOy" role="3sVMhD">
+            <node concept="1af_rf" id="1RzljfOhzPO" role="1aduh9">
+              <ref role="1afhQb" node="1RzljfOhzaL" resolve="newTxFails" />
+            </node>
+            <node concept="1QScDb" id="1RzljfOhzO$" role="1aduh9">
+              <node concept="3sQ2Ir" id="1RzljfOhzO_" role="1QScD9" />
+              <node concept="_emDc" id="1RzljfOhzOA" role="30czhm">
+                <ref role="_emDf" node="1RzljfOgq39" resolve="intBox1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="1RzljfOhzOB" role="_fkuS">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
