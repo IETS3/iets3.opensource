@@ -38,6 +38,7 @@
       </concept>
       <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
+      <concept id="5584396657084920670" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_EnclosingNode" flags="nn" index="1r4N1M" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -60,6 +61,7 @@
               <ref role="37wK5l" to="xpsu:5aWcZMN3jli" resolve="initMandatoryAttributes" />
               <ref role="1Pybhc" to="xpsu:5aWcZMN3j16" resolve="MandatoryAttributesFactory" />
               <node concept="1r4Lsj" id="5aWcZMN3nFS" role="37wK5m" />
+              <node concept="1r4N1M" id="5aWcZMNBa1C" role="37wK5m" />
             </node>
           </node>
         </node>
