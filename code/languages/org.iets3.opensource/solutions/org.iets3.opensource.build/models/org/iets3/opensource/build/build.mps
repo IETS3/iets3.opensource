@@ -406,9 +406,6 @@
       <node concept="m$_yC" id="5wLtKNeT8$q" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
       </node>
-      <node concept="m$_yC" id="1Vx$q3aKG6b" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
-      </node>
       <node concept="m$_yC" id="5wLtKNeT8Cm" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
       </node>
