@@ -406,6 +406,9 @@
       <node concept="m$_yC" id="5wLtKNeT8$q" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
       </node>
+      <node concept="m$_yC" id="1Vx$q3aKG6b" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
+      </node>
       <node concept="m$_yC" id="5wLtKNeT8Cm" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
       </node>
@@ -2987,6 +2990,36 @@
         <node concept="3bR9La" id="dGXR_1BqNE" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2urjS20Lw96" role="3bR37C">
+        <node concept="3bR9La" id="2urjS20Lw97" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2urjS20Lw98" role="3bR37C">
+        <node concept="3bR9La" id="2urjS20Lw99" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="YMJl2BN_Xq" resolve="org.iets3.core.expr.statemachines" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2urjS20Lw9a" role="3bR37C">
+        <node concept="3bR9La" id="2urjS20Lw9b" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5FYd8xZZj2s" resolve="org.iets3.core.expr.path" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2urjS20Lw9c" role="3bR37C">
+        <node concept="3bR9La" id="2urjS20Lw9d" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2urjS20Lw9e" role="3bR37C">
+        <node concept="3bR9La" id="2urjS20Lw9f" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="3ni3WidJ1j3" resolve="org.iets3.core.expr.mutable" />
         </node>
       </node>
     </node>
