@@ -902,5 +902,14 @@
       <ref role="PrY4T" to="hm2y:91pmpwTPq5" resolve="IMainSlot" />
     </node>
   </node>
+  <node concept="1TIwiD" id="37V13JR4s$_">
+    <property role="EcuMT" value="3601476982607563045" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="AllFilter" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="expressions everywhere" />
+    <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
+  </node>
 </model>
 

@@ -315,31 +315,6 @@
       <ref role="1YaFvo" to="19m5:7$TgoCYaFGs" resolve="TriggerTarget" />
     </node>
   </node>
-  <node concept="1YbPZF" id="7$TgoCYbFJw">
-    <property role="TrG5h" value="typeof_NoOfStateChanges" />
-    <property role="3GE5qa" value="operations" />
-    <node concept="3clFbS" id="7$TgoCYbFJx" role="18ibNy">
-      <node concept="1Z5TYs" id="7$TgoCYbFYb" role="3cqZAp">
-        <node concept="mw_s8" id="7$TgoCYbFYe" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7$TgoCYbFJH" role="mwGJk">
-            <node concept="1YBJjd" id="7$TgoCYbFJX" role="1Z2MuG">
-              <ref role="1YBMHb" node="7$TgoCYbFJz" resolve="sc" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7$TgoCYbG2F" role="1ZfhKB">
-          <node concept="2YIFZM" id="7$TgoCYbG4m" role="mwGJk">
-            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
-            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7$TgoCYbFJz" role="1YuTPh">
-      <property role="TrG5h" value="sc" />
-      <ref role="1YaFvo" to="19m5:7$TgoCYbFq6" resolve="NoOfStateChanges" />
-    </node>
-  </node>
   <node concept="18kY7G" id="7$TgoCYiFsP">
     <property role="TrG5h" value="check_Action" />
     <property role="3GE5qa" value="machine.actions" />

@@ -22,7 +22,6 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -198,6 +197,9 @@
       </concept>
       <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa" />
       <concept id="3406009787378976616" name="com.mbeddr.mpsutil.interpreter.structure.EnvExpression" flags="ng" index="TvHiN" />
+      <concept id="3601476982608818198" name="com.mbeddr.mpsutil.interpreter.structure.CoverConceptStatement" flags="ng" index="36RZgH">
+        <reference id="3601476982608818596" name="conc" index="36RZmv" />
+      </concept>
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
@@ -217,6 +219,13 @@
       </concept>
       <concept id="8511326569641917307" name="com.mbeddr.mpsutil.interpreter.structure.AbstractConstraintRecursionExpression" flags="ng" index="3SLZkg">
         <reference id="5293529713180742449" name="child" index="rqRob" />
+      </concept>
+      <concept id="7933481472092659316" name="com.mbeddr.mpsutil.interpreter.structure.BranchID" flags="ng" index="3Y8bOD" />
+      <concept id="7933481472092659236" name="com.mbeddr.mpsutil.interpreter.structure.RegisterBranchesStatement" flags="ng" index="3Y8bPT">
+        <child id="7933481472092661099" name="branches" index="3Y88oQ" />
+      </concept>
+      <concept id="7933481472093192918" name="com.mbeddr.mpsutil.interpreter.structure.VisitBranchStatement" flags="ng" index="3YmQ6b">
+        <reference id="1307222191617420040" name="branch" index="1nYgiw" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -372,6 +381,9 @@
                 </node>
               </node>
               <node concept="3clFbS" id="YMJl2BKknT" role="2LFqv$">
+                <node concept="36RZgH" id="37V13JRbLbG" role="3cqZAp">
+                  <ref role="36RZmv" to="19m5:aPhVmWSe4k" resolve="StatemachineVar" />
+                </node>
                 <node concept="3clFbF" id="YMJl2BKn7$" role="3cqZAp">
                   <node concept="2OqwBi" id="YMJl2BKnhF" role="3clFbG">
                     <node concept="37vLTw" id="YMJl2BKn7z" role="2Oq$k0">
@@ -587,6 +599,20 @@
       <node concept="3dA_Gj" id="7$TgoCYb3nA" role="3vQZUl">
         <node concept="9aQIb" id="7$TgoCYb3nD" role="3vcmbn">
           <node concept="3clFbS" id="7$TgoCYb3nG" role="9aQI4">
+            <node concept="3Y8bPT" id="37V13JR8cT3" role="3cqZAp">
+              <node concept="3Y8bOD" id="37V13JR8dAP" role="3Y88oQ">
+                <property role="TrG5h" value="transitionGuardOK" />
+              </node>
+              <node concept="3Y8bOD" id="37V13JR8dAT" role="3Y88oQ">
+                <property role="TrG5h" value="transitionGuardNotOK" />
+              </node>
+              <node concept="3Y8bOD" id="37V13JR8eFI" role="3Y88oQ">
+                <property role="TrG5h" value="noTransitionApplies" />
+              </node>
+            </node>
+            <node concept="36RZgH" id="37V13JRbX0v" role="3cqZAp">
+              <ref role="36RZmv" to="19m5:7$TgoCYa5Mz" resolve="StateMachine" />
+            </node>
             <node concept="3cpWs8" id="3GdqffBQZO8" role="3cqZAp">
               <node concept="3cpWsn" id="3GdqffBQZO9" role="3cpWs9">
                 <property role="TrG5h" value="o" />
@@ -678,6 +704,12 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="aPhVmWUHTR" role="2LFqv$">
+                    <node concept="36RZgH" id="37V13JRaAqJ" role="3cqZAp">
+                      <ref role="36RZmv" to="19m5:aPhVmWQWVH" resolve="EventArg" />
+                    </node>
+                    <node concept="36RZgH" id="37V13JRc0o1" role="3cqZAp">
+                      <ref role="36RZmv" to="19m5:7$TgoCYa5Nq" resolve="Event" />
+                    </node>
                     <node concept="3clFbF" id="aPhVmWUN$b" role="3cqZAp">
                       <node concept="37vLTI" id="aPhVmWUOkC" role="3clFbG">
                         <node concept="qpA2v" id="aPhVmWUOZs" role="37vLTx">
@@ -724,24 +756,8 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="YMJl2BVhun" role="3cqZAp">
-                  <node concept="2OqwBi" id="YMJl2BVhuk" role="3clFbG">
-                    <node concept="10M0yZ" id="YMJl2BVhul" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    </node>
-                    <node concept="liA8E" id="YMJl2BVhum" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="3cpWs3" id="YMJl2BViUS" role="37wK5m">
-                        <node concept="37vLTw" id="YMJl2BVjcI" role="3uHU7w">
-                          <ref role="3cqZAo" node="7$TgoCYbaau" resolve="currentState" />
-                        </node>
-                        <node concept="Xl_RD" id="YMJl2BVhx7" role="3uHU7B">
-                          <property role="Xl_RC" value="currenct state: " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+                <node concept="36RZgH" id="37V13JRbZgb" role="3cqZAp">
+                  <ref role="36RZmv" to="19m5:7$TgoCYa5Nn" resolve="State" />
                 </node>
                 <node concept="3cpWs8" id="aPhVmWVi0e" role="3cqZAp">
                   <node concept="3cpWsn" id="aPhVmWVi0f" role="3cpWs9">
@@ -808,58 +824,8 @@
                     <ref role="3cqZAo" node="aPhVmWVi0f" resolve="txes" />
                   </node>
                   <node concept="3clFbS" id="aPhVmWVk69" role="2LFqv$">
-                    <node concept="3clFbF" id="YMJl2BUYGT" role="3cqZAp">
-                      <node concept="2OqwBi" id="YMJl2BUYGQ" role="3clFbG">
-                        <node concept="10M0yZ" id="YMJl2BUYGR" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                        </node>
-                        <node concept="liA8E" id="YMJl2BUYGS" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="YMJl2BUZhc" role="37wK5m">
-                            <node concept="2OqwBi" id="YMJl2BVrjX" role="3uHU7w">
-                              <node concept="2OqwBi" id="YMJl2BVqh2" role="2Oq$k0">
-                                <node concept="2GrUjf" id="YMJl2BUZig" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="aPhVmWVk65" resolve="tx" />
-                                </node>
-                                <node concept="3TrEf2" id="YMJl2BVqLQ" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="19m5:7$TgoCYa5Nu" resolve="tigger" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="YMJl2BVt8r" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="YMJl2BUYT$" role="3uHU7B">
-                              <property role="Xl_RC" value="  trying tx " />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="YMJl2BVzR2" role="3cqZAp">
-                      <node concept="2OqwBi" id="YMJl2BVzR3" role="3clFbG">
-                        <node concept="10M0yZ" id="YMJl2BVzR4" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                        </node>
-                        <node concept="liA8E" id="YMJl2BVzR5" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="YMJl2BVzR6" role="37wK5m">
-                            <node concept="2OqwBi" id="YMJl2BVzR8" role="3uHU7w">
-                              <node concept="2GrUjf" id="YMJl2BVzR9" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="aPhVmWVk65" resolve="tx" />
-                              </node>
-                              <node concept="3TrEf2" id="YMJl2BV$L2" role="2OqNvi">
-                                <ref role="3Tt5mk" to="19m5:7$TgoCYa5Nw" resolve="guard" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="YMJl2BVzRc" role="3uHU7B">
-                              <property role="Xl_RC" value="  guard " />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="36RZgH" id="37V13JRaRNU" role="3cqZAp">
+                      <ref role="36RZmv" to="19m5:7$TgoCYa5Nt" resolve="Transition" />
                     </node>
                     <node concept="3cpWs8" id="7$TgoCYjDLN" role="3cqZAp">
                       <node concept="3cpWsn" id="7$TgoCYjDLQ" role="3cpWs9">
@@ -946,19 +912,8 @@
                     </node>
                     <node concept="3clFbJ" id="7$TgoCYjEy8" role="3cqZAp">
                       <node concept="3clFbS" id="7$TgoCYjEya" role="3clFbx">
-                        <node concept="3clFbF" id="YMJl2BUZqM" role="3cqZAp">
-                          <node concept="2OqwBi" id="YMJl2BUZqJ" role="3clFbG">
-                            <node concept="10M0yZ" id="YMJl2BUZqK" role="2Oq$k0">
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                            </node>
-                            <node concept="liA8E" id="YMJl2BUZqL" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                              <node concept="Xl_RD" id="YMJl2BUZAO" role="37wK5m">
-                                <property role="Xl_RC" value="  taking tx" />
-                              </node>
-                            </node>
-                          </node>
+                        <node concept="3YmQ6b" id="37V13JR8dSL" role="3cqZAp">
+                          <ref role="1nYgiw" node="37V13JR8dAP" resolve="transitionGuardOK" />
                         </node>
                         <node concept="3clFbF" id="7$TgoCYm13n" role="3cqZAp">
                           <node concept="2OqwBi" id="7$TgoCYm1GF" role="3clFbG">
@@ -1089,11 +1044,21 @@
                       <node concept="37vLTw" id="7$TgoCYjE_l" role="3clFbw">
                         <ref role="3cqZAo" node="7$TgoCYjDLQ" resolve="guardOk" />
                       </node>
+                      <node concept="9aQIb" id="37V13JR8eiw" role="9aQIa">
+                        <node concept="3clFbS" id="37V13JR8eix" role="9aQI4">
+                          <node concept="3YmQ6b" id="37V13JR8ezA" role="3cqZAp">
+                            <ref role="1nYgiw" node="37V13JR8dAT" resolve="transitionGuardNotOK" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbJ" id="YMJl2BX$JZ" role="3cqZAp">
                   <node concept="3clFbS" id="YMJl2BX$K1" role="3clFbx">
+                    <node concept="3YmQ6b" id="37V13JR8eLQ" role="3cqZAp">
+                      <ref role="1nYgiw" node="37V13JR8eFI" resolve="noTransitionApplies" />
+                    </node>
                     <node concept="YS8fn" id="1RzljfObEjU" role="3cqZAp">
                       <node concept="2ShNRf" id="1RzljfObEk0" role="YScLw">
                         <node concept="1pGfFk" id="1RzljfObSWV" role="2ShVmc">

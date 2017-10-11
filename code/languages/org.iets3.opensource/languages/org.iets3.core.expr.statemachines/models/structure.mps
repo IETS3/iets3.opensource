@@ -207,16 +207,6 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7$TgoCYbFq6">
-    <property role="EcuMT" value="8735085014266328710" />
-    <property role="3GE5qa" value="operations" />
-    <property role="TrG5h" value="NoOfStateChanges" />
-    <property role="34LRSv" value="noOfStateChanges" />
-    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
-    <node concept="PrWs8" id="7$TgoCYbFr9" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7$TgoCYhZdt">
     <property role="EcuMT" value="8735085014267982685" />
     <property role="3GE5qa" value="machine.actions" />

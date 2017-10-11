@@ -216,6 +216,9 @@
       <concept id="3907718856317379061" name="com.mbeddr.mpsutil.interpreter.structure.DeclareListCoverage" flags="ng" index="2YRU1H">
         <child id="3907718856317379210" name="expr" index="2YRUci" />
       </concept>
+      <concept id="3601476982608818198" name="com.mbeddr.mpsutil.interpreter.structure.CoverConceptStatement" flags="ng" index="36RZgH">
+        <reference id="3601476982608818596" name="conc" index="36RZmv" />
+      </concept>
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
@@ -379,6 +382,12 @@
                 </node>
               </node>
             </node>
+            <node concept="2YRU1H" id="37V13JRk4jX" role="3cqZAp">
+              <property role="TrG5h" value="projectList" />
+              <node concept="37vLTw" id="37V13JRk4BP" role="2YRUci">
+                <ref role="3cqZAo" node="7_$HJtBusCw" resolve="subjectList" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="7_$HJtBusyn" role="3cqZAp">
               <node concept="3cpWsn" id="7_$HJtBusyo" role="3cpWs9">
                 <property role="TrG5h" value="res" />
@@ -469,6 +478,9 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="7_$HJtBuXdb" role="2LFqv$">
+                    <node concept="36RZgH" id="37V13JRjUcj" role="3cqZAp">
+                      <ref role="36RZmv" to="yv47:7cphKbLawOC" resolve="ProjectMember" />
+                    </node>
                     <node concept="3clFbF" id="7_$HJtBuXNd" role="3cqZAp">
                       <node concept="2OqwBi" id="7_$HJtBuXVo" role="3clFbG">
                         <node concept="37vLTw" id="7_$HJtBuXNc" role="2Oq$k0">
@@ -1174,6 +1186,9 @@
                 </node>
               </node>
               <node concept="3clFbS" id="4ptnK4jiF3G" role="2LFqv$">
+                <node concept="36RZgH" id="37V13JRni9w" role="3cqZAp">
+                  <ref role="36RZmv" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
+                </node>
                 <node concept="3cpWs8" id="4ptnK4jiyZY" role="3cqZAp">
                   <node concept="3cpWsn" id="4ptnK4jiyZZ" role="3cpWs9">
                     <property role="TrG5h" value="record" />

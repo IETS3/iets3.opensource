@@ -455,13 +455,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="7$TgoCYbFqw">
-    <property role="3GE5qa" value="operations" />
-    <ref role="1XX52x" to="19m5:7$TgoCYbFq6" resolve="NoOfStateChanges" />
-    <node concept="3F0ifn" id="7$TgoCYbFqy" role="2wV5jI">
-      <property role="3F0ifm" value="noOfStateChanges" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7$TgoCYiJiY">
     <property role="3GE5qa" value="machine" />
     <ref role="1XX52x" to="19m5:7$TgoCYiJiy" resolve="Guard" />

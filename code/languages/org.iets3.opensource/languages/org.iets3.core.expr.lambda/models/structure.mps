@@ -551,6 +551,7 @@
   <node concept="1TIwiD" id="79jc6YzNL4y">
     <property role="EcuMT" value="8237981399438528802" />
     <property role="TrG5h" value="AssertExpr" />
+    <property role="34LRSv" value="assert" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="79jc6YzNL4G" role="1TKVEi">
       <property role="IQ2ns" value="8237981399438528812" />

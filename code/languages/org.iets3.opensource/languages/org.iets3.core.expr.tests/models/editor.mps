@@ -12,7 +12,7 @@
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1350,8 +1350,8 @@
                     <node concept="FJ1c_" id="4SjtGYzDHGR" role="3uHU7B">
                       <node concept="2OqwBi" id="4SjtGYzDxgX" role="3uHU7B">
                         <node concept="2YIFZM" id="4SjtGYzDxeF" role="2Oq$k0">
-                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                           <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                         </node>
                         <node concept="liA8E" id="4SjtGYzDxlA" role="2OqNvi">
                           <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
@@ -4715,6 +4715,12 @@
     <property role="3GE5qa" value="vector" />
     <ref role="1XX52x" to="av4b:1bwJEEf2HGl" resolve="InputValue" />
     <node concept="3EZMnI" id="1bwJEEfhZPq" role="2wV5jI">
+      <node concept="1iCGBv" id="GEat54I9k9" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1bwJEEf2HGO" resolve="argument" />
+        <node concept="1sVBvm" id="GEat54I9kb" role="1sWHZn">
+          <node concept="3SHvHV" id="GEat54I9kr" role="2wV5jI" />
+        </node>
+      </node>
       <node concept="2iRfu4" id="1bwJEEfhZPr" role="2iSdaV" />
       <node concept="3F1sOY" id="1bwJEEf2HHS" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:1bwJEEf2HGQ" resolve="value" />
@@ -4816,8 +4822,17 @@
   <node concept="24kQdi" id="1bwJEEgico3">
     <property role="3GE5qa" value="vector" />
     <ref role="1XX52x" to="av4b:1bwJEEgicmt" resolve="OutputValue" />
-    <node concept="3F1sOY" id="1bwJEEgicpd" role="2wV5jI">
-      <ref role="1NtTu8" to="av4b:1bwJEEgicnC" resolve="value" />
+    <node concept="3EZMnI" id="GEat54JGOQ" role="2wV5jI">
+      <node concept="2iRfu4" id="GEat54JGOR" role="2iSdaV" />
+      <node concept="1iCGBv" id="GEat54JGPh" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1bwJEEgpfj2" resolve="out" />
+        <node concept="1sVBvm" id="GEat54JGPj" role="1sWHZn">
+          <node concept="3SHvHV" id="GEat54JGPz" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1bwJEEgicpd" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:1bwJEEgicnC" resolve="value" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3BFGe1EJa67">
@@ -5144,6 +5159,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="37V13JR4s$Z">
+    <property role="3GE5qa" value="assessment.structural" />
+    <ref role="1XX52x" to="av4b:37V13JR4s$_" resolve="AllFilter" />
+    <node concept="3F0ifn" id="37V13JR4s_1" role="2wV5jI">
+      <property role="3F0ifm" value="expressions everywhere" />
     </node>
   </node>
 </model>

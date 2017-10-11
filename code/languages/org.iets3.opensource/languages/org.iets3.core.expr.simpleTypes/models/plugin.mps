@@ -224,6 +224,9 @@
         <reference id="5293529713194689153" name="concept" index="rxSuV" />
       </concept>
       <concept id="3406009787378976616" name="com.mbeddr.mpsutil.interpreter.structure.EnvExpression" flags="ng" index="TvHiN" />
+      <concept id="3601476982608818198" name="com.mbeddr.mpsutil.interpreter.structure.CoverConceptStatement" flags="ng" index="36RZgH">
+        <reference id="3601476982608818596" name="conc" index="36RZmv" />
+      </concept>
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
@@ -477,6 +480,9 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="7cphKbL9qHd" role="3clFbx">
+                    <node concept="36RZgH" id="37V13JRnEve" role="3cqZAp">
+                      <ref role="36RZmv" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
+                    </node>
                     <node concept="3cpWs8" id="7cphKbL9tnU" role="3cqZAp">
                       <node concept="3cpWsn" id="7cphKbL9tnV" role="3cpWs9">
                         <property role="TrG5h" value="r" />

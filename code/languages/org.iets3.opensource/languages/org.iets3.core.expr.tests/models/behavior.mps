@@ -10846,5 +10846,31 @@
       <node concept="3cqZAl" id="3GdqffC1exj" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="37V13JR4s_t">
+    <property role="3GE5qa" value="assessment.structural" />
+    <ref role="13h7C2" to="av4b:37V13JR4s$_" resolve="AllFilter" />
+    <node concept="13hLZK" id="37V13JR4s_u" role="13h7CW">
+      <node concept="3clFbS" id="37V13JR4s_v" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="37V13JR4s_C" role="13h7CS">
+      <property role="TrG5h" value="appliesForNode" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="CrzyxmEdQ4" resolve="appliesForNode" />
+      <node concept="3Tm1VV" id="37V13JR4s_D" role="1B3o_S" />
+      <node concept="3clFbS" id="37V13JR4sA6" role="3clF47">
+        <node concept="3clFbF" id="37V13JR4usF" role="3cqZAp">
+          <node concept="3clFbT" id="37V13JR4usE" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="37V13JR4sA7" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="37V13JR4sA8" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="37V13JR4sA9" role="3clF45" />
+    </node>
+  </node>
 </model>
 
