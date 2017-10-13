@@ -818,5 +818,35 @@
       <ref role="1YaFvo" to="av4b:1bwJEEfE00B" resolve="TestDataProducer" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3GdqffBSA4D">
+    <property role="TrG5h" value="typeof_MuteEffect" />
+    <node concept="3clFbS" id="3GdqffBSA4E" role="18ibNy">
+      <node concept="1Z5TYs" id="3GdqffBSAjl" role="3cqZAp">
+        <node concept="mw_s8" id="3GdqffBSAjD" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3GdqffBSAj_" role="mwGJk">
+            <node concept="2OqwBi" id="3GdqffBSAtZ" role="1Z2MuG">
+              <node concept="1YBJjd" id="3GdqffBSAjU" role="2Oq$k0">
+                <ref role="1YBMHb" node="3GdqffBSA4G" resolve="me" />
+              </node>
+              <node concept="3TrEf2" id="3GdqffBSAE4" role="2OqNvi">
+                <ref role="3Tt5mk" to="av4b:3GdqffBS$Mq" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3GdqffBSAjo" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3GdqffBSA4Q" role="mwGJk">
+            <node concept="1YBJjd" id="3GdqffBSA4X" role="1Z2MuG">
+              <ref role="1YBMHb" node="3GdqffBSA4G" resolve="me" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3GdqffBSA4G" role="1YuTPh">
+      <property role="TrG5h" value="me" />
+      <ref role="1YaFvo" to="av4b:3GdqffBS$Mm" resolve="MuteEffect" />
+    </node>
+  </node>
 </model>
 
