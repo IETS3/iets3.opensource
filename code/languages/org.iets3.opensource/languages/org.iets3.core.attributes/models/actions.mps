@@ -20,6 +20,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -56,12 +60,21 @@
       <ref role="37XkoT" to="138:3NBP8_OgMVd" resolve="IAttributed" />
       <node concept="37Y9Zx" id="3s60xQ6C8Jg" role="37ZfLb">
         <node concept="3clFbS" id="3s60xQ6C8Jh" role="2VODD2">
-          <node concept="3clFbF" id="5aWcZMN3ns4" role="3cqZAp">
-            <node concept="2YIFZM" id="5aWcZMN3nAG" role="3clFbG">
-              <ref role="37wK5l" to="xpsu:5aWcZMN3jli" resolve="initMandatoryAttributes" />
+          <node concept="3clFbJ" id="4lFnCmbDEkO" role="3cqZAp">
+            <node concept="3clFbS" id="4lFnCmbDEkQ" role="3clFbx">
+              <node concept="3clFbF" id="5aWcZMN3ns4" role="3cqZAp">
+                <node concept="2YIFZM" id="5aWcZMN3nAG" role="3clFbG">
+                  <ref role="37wK5l" to="xpsu:5aWcZMN3jli" resolve="initMandatoryAttributes" />
+                  <ref role="1Pybhc" to="xpsu:5aWcZMN3j16" resolve="MandatoryAttributesFactory" />
+                  <node concept="1r4Lsj" id="5aWcZMN3nFS" role="37wK5m" />
+                  <node concept="1r4N1M" id="5aWcZMNBa1C" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="4lFnCmbDEnu" role="3clFbw">
+              <ref role="37wK5l" to="xpsu:6TDynbfe$0t" resolve="requiresMandatoryAttributes" />
               <ref role="1Pybhc" to="xpsu:5aWcZMN3j16" resolve="MandatoryAttributesFactory" />
-              <node concept="1r4Lsj" id="5aWcZMN3nFS" role="37wK5m" />
-              <node concept="1r4N1M" id="5aWcZMNBa1C" role="37wK5m" />
+              <node concept="1r4Lsj" id="4lFnCmbDEog" role="37wK5m" />
             </node>
           </node>
         </node>
