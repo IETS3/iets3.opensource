@@ -105,6 +105,7 @@
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
+      <concept id="8449131619432941427" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Super" flags="ng" index="L$LW2" />
       <concept id="1160493135005" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues_GetValues" flags="in" index="MLZmj" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
@@ -3584,6 +3585,7 @@
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
+      <node concept="L$LW2" id="56r2aFOY9EZ" role="1Qtc8A" />
       <node concept="2X7gjp" id="2urjS20DVvF" role="1Qtc8A" />
       <node concept="IWgqT" id="2urjS20DVvK" role="1Qtc8A">
         <node concept="1hCUdq" id="2urjS20DVvM" role="1hCUd6">
