@@ -652,5 +652,33 @@
       <node concept="2X7gjp" id="1VCS9PlsE16" role="1Qtc8A" />
     </node>
   </node>
+  <node concept="24kQdi" id="56r2aFONcW7">
+    <property role="3GE5qa" value="string" />
+    <ref role="1XX52x" to="5qo5:56r2aFONcVD" resolve="StringStartsWithTarget" />
+    <node concept="3EZMnI" id="56r2aFONcWc" role="2wV5jI">
+      <node concept="2iRfu4" id="56r2aFONcWd" role="2iSdaV" />
+      <node concept="3F0ifn" id="56r2aFONcWe" role="3EZMnx">
+        <property role="3F0ifm" value="startsWith" />
+      </node>
+      <node concept="3F0ifn" id="56r2aFONcWf" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="56r2aFONcWg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="56r2aFONcWh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="56r2aFONcWi" role="3EZMnx">
+        <ref role="1NtTu8" to="5qo5:56r2aFONcVE" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="56r2aFONcWj" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="56r2aFONcWk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

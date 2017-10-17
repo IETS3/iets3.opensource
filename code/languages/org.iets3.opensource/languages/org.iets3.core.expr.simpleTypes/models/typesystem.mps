@@ -3901,5 +3901,50 @@
       <ref role="1YaFvo" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
     </node>
   </node>
+  <node concept="1YbPZF" id="56r2aFONdKW">
+    <property role="TrG5h" value="typeof_StringStartsWithTarget" />
+    <property role="3GE5qa" value="string" />
+    <node concept="3clFbS" id="56r2aFONdKX" role="18ibNy">
+      <node concept="1Z5TYs" id="56r2aFONdLf" role="3cqZAp">
+        <node concept="mw_s8" id="56r2aFONdLg" role="1ZfhKB">
+          <node concept="2YIFZM" id="56r2aFONdLh" role="mwGJk">
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="56r2aFONdLi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="56r2aFONdLj" role="mwGJk">
+            <node concept="1YBJjd" id="56r2aFONdPn" role="1Z2MuG">
+              <ref role="1YBMHb" node="56r2aFONdKZ" resolve="swt" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="56r2aFONdLl" role="3cqZAp">
+        <node concept="mw_s8" id="56r2aFONdLm" role="1ZfhKB">
+          <node concept="2YIFZM" id="56r2aFONdLn" role="mwGJk">
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="56r2aFONdLo" role="1ZfhK$">
+          <node concept="1Z2H0r" id="56r2aFONdLp" role="mwGJk">
+            <node concept="2OqwBi" id="56r2aFONdLq" role="1Z2MuG">
+              <node concept="1YBJjd" id="56r2aFONdSc" role="2Oq$k0">
+                <ref role="1YBMHb" node="56r2aFONdKZ" resolve="swt" />
+              </node>
+              <node concept="3TrEf2" id="56r2aFONdLs" role="2OqNvi">
+                <ref role="3Tt5mk" to="5qo5:56r2aFONcVE" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="56r2aFONdKZ" role="1YuTPh">
+      <property role="TrG5h" value="swt" />
+      <ref role="1YaFvo" to="5qo5:56r2aFONcVD" resolve="StringStartsWithTarget" />
+    </node>
+  </node>
 </model>
 
