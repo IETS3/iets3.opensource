@@ -4507,5 +4507,93 @@
       <ref role="1YaFvo" to="700h:4hLehKTZXcg" resolve="FoldOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="56r2aFOOK2o">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="typeof_CollectionType" />
+    <node concept="3clFbS" id="56r2aFOOK2p" role="18ibNy">
+      <node concept="nvevp" id="56r2aFOOKFn" role="3cqZAp">
+        <node concept="3clFbS" id="56r2aFOOKFp" role="nvhr_">
+          <node concept="3cpWs8" id="56r2aFOOMbT" role="3cqZAp">
+            <node concept="3cpWsn" id="56r2aFOOMbU" role="3cpWs9">
+              <property role="TrG5h" value="copy" />
+              <node concept="3Tqbb2" id="56r2aFOOMbP" role="1tU5fm">
+                <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+              </node>
+              <node concept="2OqwBi" id="56r2aFOOMbV" role="33vP2m">
+                <node concept="1YBJjd" id="56r2aFOOMbW" role="2Oq$k0">
+                  <ref role="1YBMHb" node="56r2aFOOK2u" resolve="collType" />
+                </node>
+                <node concept="1$rogu" id="56r2aFOOMbX" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="56r2aFOOMgK" role="3cqZAp">
+            <node concept="37vLTI" id="56r2aFOON39" role="3clFbG">
+              <node concept="1PxgMI" id="56r2aFOON_g" role="37vLTx">
+                <node concept="chp4Y" id="56r2aFOONCq" role="3oSUPX">
+                  <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                </node>
+                <node concept="2OqwBi" id="56r2aFOONdQ" role="1m5AlR">
+                  <node concept="2X3wrD" id="56r2aFOON5U" role="2Oq$k0">
+                    <ref role="2X3Bk0" node="56r2aFOOKFt" resolve="bt" />
+                  </node>
+                  <node concept="1$rogu" id="56r2aFOONkz" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="56r2aFOOMrb" role="37vLTJ">
+                <node concept="37vLTw" id="56r2aFOOMgI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="56r2aFOOMbU" resolve="copy" />
+                </node>
+                <node concept="3TrEf2" id="56r2aFOOMDZ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Z5TYs" id="56r2aFOOLgU" role="3cqZAp">
+            <node concept="mw_s8" id="56r2aFOONFJ" role="1ZfhKB">
+              <node concept="37vLTw" id="56r2aFOONFE" role="mwGJk">
+                <ref role="3cqZAo" node="56r2aFOOMbU" resolve="copy" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="56r2aFOOLgX" role="1ZfhK$">
+              <node concept="1Z2H0r" id="56r2aFOOLaa" role="mwGJk">
+                <node concept="1YBJjd" id="56r2aFOOLaq" role="1Z2MuG">
+                  <ref role="1YBMHb" node="56r2aFOOK2u" resolve="collType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="56r2aFOOKGh" role="nvjzm">
+          <node concept="2OqwBi" id="56r2aFOOKRn" role="1Z2MuG">
+            <node concept="1YBJjd" id="56r2aFOOKGH" role="2Oq$k0">
+              <ref role="1YBMHb" node="56r2aFOOK2u" resolve="collType" />
+            </node>
+            <node concept="3TrEf2" id="56r2aFOOL6R" role="2OqNvi">
+              <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="56r2aFOOKFt" role="2X0Ygz">
+          <property role="TrG5h" value="bt" />
+          <node concept="2jxLKc" id="56r2aFOOKFu" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="56r2aFOOK2u" role="1YuTPh">
+      <property role="TrG5h" value="collType" />
+      <ref role="1YaFvo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+    </node>
+    <node concept="bXqS6" id="56r2aFOOK2H" role="bX4a1">
+      <node concept="3clFbS" id="56r2aFOOK2I" role="2VODD2">
+        <node concept="3clFbF" id="56r2aFOOK9O" role="3cqZAp">
+          <node concept="3clFbT" id="56r2aFOOK9N" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
