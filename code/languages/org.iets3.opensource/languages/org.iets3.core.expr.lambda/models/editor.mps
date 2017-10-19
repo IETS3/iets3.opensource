@@ -86,6 +86,10 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
+      <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
+        <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -198,9 +202,16 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -309,7 +320,7 @@
     <property role="3GE5qa" value="lambda" />
     <ref role="1XX52x" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
     <node concept="3EZMnI" id="6zmBjqUkwHz" role="2wV5jI">
-      <node concept="2iRfu4" id="6zmBjqUkwH$" role="2iSdaV" />
+      <node concept="l2Vlx" id="6vzDuv95eDC" role="2iSdaV" />
       <node concept="3F0ifn" id="6zmBjqUkwHw" role="3EZMnx">
         <property role="3F0ifm" value="|" />
         <node concept="11L4FC" id="6zmBjqUliEL" role="3F10Kt">
@@ -438,7 +449,7 @@
     <property role="3GE5qa" value="lambda" />
     <ref role="1XX52x" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
     <node concept="3EZMnI" id="6zmBjqUm7Nj" role="2wV5jI">
-      <node concept="2iRfu4" id="6zmBjqUm7Nk" role="2iSdaV" />
+      <node concept="l2Vlx" id="6vzDuv8ZK44" role="2iSdaV" />
       <node concept="3F0ifn" id="6zmBjqUm7Nm" role="3EZMnx">
         <property role="3F0ifm" value="|" />
         <node concept="11L4FC" id="6zmBjqUm7No" role="3F10Kt">
@@ -491,6 +502,24 @@
     <ref role="1XX52x" to="zzzn:6zmBjqUmsuo" resolve="ShortLambdaItExpression" />
     <node concept="3F0ifn" id="6zmBjqUmsuN" role="2wV5jI">
       <property role="3F0ifm" value="it" />
+      <node concept="3k4GqR" id="6vzDuv93rUb" role="3F10Kt">
+        <node concept="3k4GqP" id="6vzDuv93rUc" role="3k4GqO">
+          <node concept="3clFbS" id="6vzDuv93rUd" role="2VODD2">
+            <node concept="3clFbF" id="6vzDuv93rXz" role="3cqZAp">
+              <node concept="2OqwBi" id="6vzDuv93s8k" role="3clFbG">
+                <node concept="pncrf" id="6vzDuv93rXy" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6vzDuv93so5" role="2OqNvi">
+                  <node concept="1xMEDy" id="6vzDuv93so7" role="1xVPHs">
+                    <node concept="chp4Y" id="6vzDuv93sve" role="ri$Ld">
+                      <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="49WTic8fvMW">
