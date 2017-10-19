@@ -13,6 +13,7 @@
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+    <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
@@ -616,6 +617,28 @@
           </node>
         </node>
       </node>
+      <node concept="1ZobV4" id="3nGzaxUS7Nr" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="3nGzaxUS7Nw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3nGzaxUS7Nx" role="mwGJk">
+            <node concept="2OqwBi" id="3nGzaxUS7Ny" role="1Z2MuG">
+              <node concept="1YBJjd" id="3nGzaxUS7Nz" role="2Oq$k0">
+                <ref role="1YBMHb" node="50smQ1V94WD" resolve="slice" />
+              </node>
+              <node concept="3TrEf2" id="3nGzaxUS7N$" role="2OqNvi">
+                <ref role="3Tt5mk" to="l462:50smQ1V8QEi" resolve="pointInTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3nGzaxUS7Nt" role="1ZfhKB">
+          <node concept="2pJPEk" id="3nGzaxUS7Nu" role="mwGJk">
+            <node concept="2pJPED" id="3nGzaxUS7Nv" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxURzmv" resolve="AbstractDateType" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="50smQ1V94WD" role="1YuTPh">
       <property role="TrG5h" value="slice" />
@@ -796,10 +819,11 @@
         </node>
       </node>
       <node concept="1ZobV4" id="50smQ1VeMrp" role="3cqZAp">
-        <node concept="mw_s8" id="50smQ1VeMBx" role="1ZfhKB">
-          <node concept="2YIFZM" id="50smQ1VeMD6" role="mwGJk">
-            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
-            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+        <node concept="mw_s8" id="3nGzaxUSpVZ" role="1ZfhKB">
+          <node concept="2pJPEk" id="3nGzaxUSpVT" role="mwGJk">
+            <node concept="2pJPED" id="3nGzaxUSq8x" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxURzmv" resolve="AbstractDateType" />
+            </node>
           </node>
         </node>
         <node concept="mw_s8" id="50smQ1VeMrs" role="1ZfhK$">
@@ -983,10 +1007,11 @@
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="3nGzaxUBLqL" role="1ZfhKB">
-          <node concept="2YIFZM" id="3nGzaxUBLqM" role="mwGJk">
-            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
-            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+        <node concept="mw_s8" id="3nGzaxUVK2W" role="1ZfhKB">
+          <node concept="2pJPEk" id="3nGzaxUVK2Q" role="mwGJk">
+            <node concept="2pJPED" id="3nGzaxUVK9V" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxURzmv" resolve="AbstractDateType" />
+            </node>
           </node>
         </node>
       </node>
@@ -1004,10 +1029,11 @@
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="3nGzaxUBLbu" role="1ZfhKB">
-          <node concept="2YIFZM" id="3nGzaxUBLbv" role="mwGJk">
-            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
-            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+        <node concept="mw_s8" id="3nGzaxUVKaY" role="1ZfhKB">
+          <node concept="2pJPEk" id="3nGzaxUVKaZ" role="mwGJk">
+            <node concept="2pJPED" id="3nGzaxUVKb0" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxURzmv" resolve="AbstractDateType" />
+            </node>
           </node>
         </node>
       </node>

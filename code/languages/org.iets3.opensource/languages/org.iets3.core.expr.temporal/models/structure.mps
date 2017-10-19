@@ -55,7 +55,7 @@
   <node concept="1TIwiD" id="50smQ1V8i89">
     <property role="EcuMT" value="5772589292322890249" />
     <property role="TrG5h" value="TemporalType" />
-    <property role="34LRSv" value="T" />
+    <property role="34LRSv" value="TT" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="50smQ1V8i8a" role="1TKVEi">
       <property role="IQ2ns" value="5772589292322890250" />
