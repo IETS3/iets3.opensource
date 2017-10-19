@@ -1413,7 +1413,7 @@
     </node>
   </node>
   <node concept="_iOnV" id="56r2aFOUWhQ">
-    <property role="TrG5h" value="Kirchsteuer" />
+    <property role="TrG5h" value="Kirchensteuer" />
     <node concept="1Ws0TD" id="56r2aFOVJ6l" role="_iOnC">
       <property role="1WsWdv" value="Typen" />
     </node>
