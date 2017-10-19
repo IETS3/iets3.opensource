@@ -8,6 +8,7 @@
   <imports>
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="96le" ref="r:fd67d033-a0e1-461c-a0a1-5cb9e9987234(org.iets3.core.expr.temporal.editor)" />
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" implicit="true" />
   </imports>
   <registry>
@@ -36,6 +37,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
@@ -116,11 +120,12 @@
             </node>
             <node concept="3cpWs3" id="50smQ1V9sKm" role="3uHU7B">
               <node concept="3cpWs3" id="50smQ1V9sr4" role="3uHU7B">
-                <node concept="Xl_RD" id="50smQ1V8ihP" role="3uHU7B">
-                  <property role="Xl_RC" value="\u0393" />
-                </node>
                 <node concept="Xl_RD" id="50smQ1V9sr7" role="3uHU7w">
                   <property role="Xl_RC" value="&lt;" />
+                </node>
+                <node concept="2YIFZM" id="3nGzaxUAVmB" role="3uHU7B">
+                  <ref role="37wK5l" to="96le:3nGzaxUAUqd" resolve="makeT" />
+                  <ref role="1Pybhc" to="96le:3nGzaxUAUp$" resolve="Symbols" />
                 </node>
               </node>
               <node concept="2OqwBi" id="50smQ1V9uhl" role="3uHU7w">
