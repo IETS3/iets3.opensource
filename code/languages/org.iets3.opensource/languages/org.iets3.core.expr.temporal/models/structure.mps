@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -151,7 +152,7 @@
       <property role="IQ2ns" value="3885635233753440558" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="toTime" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyi" id="3nGzaxUt$0j" role="1TKVEl">
@@ -224,6 +225,35 @@
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4voqclTxdd4">
+    <property role="EcuMT" value="5177002969018979140" />
+    <property role="TrG5h" value="AlwaysExpression" />
+    <property role="34LRSv" value="always" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4voqclTxdd8" role="1TKVEi">
+      <property role="IQ2ns" value="5177002969018979144" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4voqclTxJTX">
+    <property role="EcuMT" value="5177002969019121277" />
+    <property role="TrG5h" value="ForEachSliceOp" />
+    <property role="34LRSv" value="forEachSlice" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+    <node concept="1TJgyj" id="4voqclTxKDZ" role="1TKVEi">
+      <property role="IQ2ns" value="5177002969019124351" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mapping" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4voqclTxKE2" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
 </model>
