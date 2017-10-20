@@ -257,7 +257,7 @@
   <node concept="1TIwiD" id="46cplYy1TAG">
     <property role="EcuMT" value="4723261570619513260" />
     <property role="3GE5qa" value="numeric.number.limit" />
-    <property role="TrG5h" value="LimitExpressionExpression" />
+    <property role="TrG5h" value="LimitExpression" />
     <property role="34LRSv" value="limit" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="46cplYy1TD0" role="1TKVEi">
@@ -336,6 +336,34 @@
     </node>
     <node concept="PrWs8" id="7cphKbL8xUf" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4eVSC65JA4O">
+    <property role="EcuMT" value="4880743667108569396" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="BoundsExpression" />
+    <property role="34LRSv" value="bounds" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4eVSC65JA4Q" role="1TKVEi">
+      <property role="IQ2ns" value="4723261570619513266" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4eVSC65JA4S" role="1TKVEi">
+      <property role="IQ2ns" value="4880743667108569400" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lower" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4eVSC65JA4V" role="1TKVEi">
+      <property role="IQ2ns" value="4880743667108569403" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
