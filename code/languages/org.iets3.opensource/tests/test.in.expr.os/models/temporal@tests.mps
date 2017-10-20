@@ -25,6 +25,7 @@
         <child id="5849458724932670347" name="index" index="2yLE0W" />
       </concept>
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
+      <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
       <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
@@ -45,14 +46,6 @@
         <child id="8448265401163120790" name="elements" index="1DGOg9" />
       </concept>
     </language>
-    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
-        <child id="229512757698888936" name="optionalName" index="pfQ1b" />
-      </concept>
-      <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
-        <property id="229512757698888203" name="optionalName" index="pfQqC" />
-      </concept>
-    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
         <child id="7971844778466793072" name="then" index="2fGnzA" />
@@ -71,12 +64,8 @@
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
-        <child id="2807135271608145921" name="expr" index="UmaED" />
-      </concept>
-      <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
-      <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
-        <child id="2807135271607939857" name="baseType" index="Uns6T" />
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
+        <child id="5115872837157187954" name="expr" index="30bsDf" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -100,9 +89,6 @@
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
-      <concept id="1059200196223309235" name="org.iets3.core.expr.base.structure.SomeValExpr" flags="ng" index="1ZmhP4">
-        <reference id="1059200196223309236" name="someQuery" index="1ZmhP3" />
-      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -123,6 +109,7 @@
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
+        <property id="8477405154719741309" name="showTypes" index="35xRTJ" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -141,6 +128,7 @@
         <child id="1330041117646892920" name="range" index="2gteSx" />
         <child id="1330041117646892937" name="prec" index="2gteVg" />
       </concept>
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="5880303268806840041" name="org.iets3.core.expr.simpleTypes.structure.StringStartsWithTarget" flags="ng" index="2_lWp3">
         <child id="842813880843519732" name="value" index="1gK00Q" />
       </concept>
@@ -179,6 +167,9 @@
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
       </concept>
+      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
+        <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
+      </concept>
       <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
@@ -204,7 +195,6 @@
       </concept>
       <concept id="2861782275883762391" name="org.iets3.core.expr.toplevel.structure.ExtensionFunctionCall" flags="ng" index="1He9k6">
         <reference id="2861782275883762408" name="extFun" index="1He9kT" />
-        <child id="2861782275883807063" name="args" index="1H9Mq6" />
       </concept>
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
@@ -232,6 +222,12 @@
         <child id="5772589292323039890" name="pointInTime" index="FfN7M" />
         <child id="5772589292323039892" name="value" index="FfN7O" />
       </concept>
+      <concept id="5177002969018979140" name="org.iets3.core.expr.temporal.structure.AlwaysExpression" flags="ng" index="YnbI1">
+        <child id="5177002969018979144" name="value" index="YnbId" />
+      </concept>
+      <concept id="5177002969019121277" name="org.iets3.core.expr.temporal.structure.ForEachSliceOp" flags="ng" index="YnDqS">
+        <child id="5177002969019124351" name="mapping" index="YnQaU" />
+      </concept>
       <concept id="3885635233752492667" name="org.iets3.core.expr.temporal.structure.BetweenOp" flags="ng" index="1foUrj">
         <child id="5772589292324527862" name="from" index="F9$mn" />
         <child id="3885635233752492669" name="to" index="1foUrl" />
@@ -249,11 +245,9 @@
       </concept>
     </language>
     <language id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime">
-      <concept id="148516613626716160" name="org.iets3.core.expr.datetime.structure.BeginOp" flags="ng" index="2Wukci" />
       <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
         <child id="3885635233759216660" name="year" index="1f6kyW" />
       </concept>
-      <concept id="3885635233759352204" name="org.iets3.core.expr.datetime.structure.EndOp" flags="ng" index="1f6P$$" />
       <concept id="3885635233759311035" name="org.iets3.core.expr.datetime.structure.YearRangeType" flags="ng" index="1f6Vwj" />
       <concept id="3885635233757569297" name="org.iets3.core.expr.datetime.structure.DateLiteral" flags="ng" index="1fc2QT">
         <property id="3885635233757569300" name="dd" index="1fc2QW" />
@@ -751,11 +745,11 @@
             <ref role="_emDf" node="50smQ1V92MG" resolve="v1" />
           </node>
         </node>
-        <node concept="1z9TsT" id="3nGzaxUtxqd" role="lGtFl">
-          <node concept="OjmMv" id="3nGzaxUtxqe" role="1w35rA">
-            <node concept="19SGf9" id="3nGzaxUtxqf" role="OjmMu">
-              <node concept="19SUe$" id="3nGzaxUtxqg" role="19SJt6">
-                <property role="19SUeA" value="Here we have to merge the intervals" />
+        <node concept="1z9TsT" id="4eVSC65t3Nm" role="lGtFl">
+          <node concept="OjmMv" id="4eVSC65t3Nn" role="1w35rA">
+            <node concept="19SGf9" id="4eVSC65t3No" role="OjmMu">
+              <node concept="19SUe$" id="4eVSC65t3Np" role="19SJt6">
+                <property role="19SUeA" value="Merge adjacent equal slices" />
               </node>
             </node>
           </node>
@@ -799,6 +793,35 @@
           </node>
         </node>
       </node>
+      <node concept="_fkuZ" id="4voqclTC6Fg" role="_fkp5">
+        <node concept="_fku$" id="4voqclTC6Fh" role="_fkur" />
+        <node concept="30dDTi" id="4voqclTC6HJ" role="_fkuY">
+          <node concept="_emDc" id="4voqclTC7vh" role="30dEs_">
+            <ref role="_emDf" node="50smQ1V987u" resolve="v2" />
+          </node>
+          <node concept="_emDc" id="4voqclTC6Hp" role="30dEsF">
+            <ref role="_emDf" node="50smQ1V92MG" resolve="v1" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="4voqclTC_r6" role="_fkuS">
+          <node concept="FfN7L" id="4voqclTC_ri" role="FfN64">
+            <node concept="30bXRB" id="4voqclTC_rE" role="FfN7O">
+              <property role="30bXRw" value="1000" />
+            </node>
+            <node concept="_emDc" id="4voqclTC_rh" role="FfN7M">
+              <ref role="_emDf" node="3nGzaxUTsl2" resolve="date0" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="4voqclTCF66" role="FfN64">
+            <node concept="_emDc" id="4voqclTCGHF" role="FfN7M">
+              <ref role="_emDf" node="3nGzaxUTsz$" resolve="date05" />
+            </node>
+            <node concept="30bXRB" id="4voqclTCGI6" role="FfN7O">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1z9TsT" id="3nGzaxUrTb8" role="lGtFl">
         <node concept="OjmMv" id="3nGzaxUrTb9" role="1w35rA">
           <node concept="19SGf9" id="3nGzaxUrTba" role="OjmMu">
@@ -808,7 +831,38 @@
           </node>
         </node>
       </node>
+      <node concept="_fkuZ" id="4eVSC65sY0P" role="_fkp5">
+        <node concept="_fku$" id="4eVSC65sY0Q" role="_fkur" />
+        <node concept="30dvO6" id="4eVSC65u0t_" role="_fkuY">
+          <node concept="30bXRB" id="4eVSC65u25Y" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="_emDc" id="4eVSC65sY0T" role="30dEsF">
+            <ref role="_emDf" node="3nGzaxUrN8D" resolve="v3" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="4eVSC65xAgS" role="_fkuS">
+          <node concept="FfN7L" id="4eVSC65xAh2" role="FfN64">
+            <node concept="30bXRB" id="4eVSC65xC0r" role="FfN7O">
+              <property role="30bXRw" value="0" />
+            </node>
+            <node concept="_emDc" id="4eVSC65xAh1" role="FfN7M">
+              <ref role="_emDf" node="3nGzaxUTsl2" resolve="date0" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="4eVSC65xCRz" role="FfN64">
+            <node concept="_emDc" id="4eVSC65xEyu" role="FfN7M">
+              <ref role="_emDf" node="3nGzaxUTxbQ" resolve="date10" />
+            </node>
+            <node concept="30bXRB" id="4eVSC65xEyT" role="FfN7O">
+              <property role="30bXRw" value="25" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="4eVSC65xPTV" role="_fkp5" />
     </node>
+    <node concept="_ixoA" id="4eVSC65t1WW" role="_iOnB" />
     <node concept="_ixoA" id="3nGzaxUvVoJ" role="_iOnB" />
     <node concept="_ixoA" id="3nGzaxUvVrO" role="_iOnB" />
     <node concept="2zPypq" id="3nGzaxUvWba" role="_iOnB">
@@ -1411,6 +1465,83 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="4voqclTAhmP" role="_iOnB" />
+    <node concept="2zPypq" id="4voqclTAh_4" role="_iOnB">
+      <property role="TrG5h" value="monthsIn2010" />
+      <node concept="1QScDb" id="4voqclTAhHb" role="2zPyp_">
+        <node concept="1fAFdr" id="4voqclTAkC_" role="1QScD9">
+          <property role="1fAGMV" value="MONTHS" />
+          <node concept="1f6kyV" id="4voqclTAp4N" role="1fsiQ4">
+            <node concept="30bXRB" id="4voqclTAqyU" role="1f6kyW">
+              <property role="30bXRw" value="2010" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="4voqclTAhGo" role="30czhm">
+          <ref role="_emDf" node="3nGzaxUvWba" resolve="v4" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="4voqclTBpUp" role="lGtFl">
+        <node concept="OjmMv" id="4voqclTBpUq" role="1w35rA">
+          <node concept="19SGf9" id="4voqclTBpUr" role="OjmMu">
+            <node concept="19SUe$" id="4voqclTBpUs" role="19SJt6">
+              <property role="19SUeA" value="Yeah, I know, should be 12. But I assume a month to be 30 days :-)" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_fkuM" id="4voqclTAy8d" role="_iOnB">
+      <property role="TrG5h" value="Spreading3" />
+      <node concept="_fkuZ" id="4voqclTAyfs" role="_fkp5">
+        <node concept="_fku$" id="4voqclTAyft" role="_fkur" />
+        <node concept="1QScDb" id="4voqclTAZpq" role="_fkuY">
+          <node concept="3iB8M5" id="4voqclTB0Su" role="1QScD9" />
+          <node concept="_emDc" id="4voqclTAHYB" role="30czhm">
+            <ref role="_emDf" node="4voqclTAh_4" resolve="monthsIn2010" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="4voqclTAHYY" role="_fkuS">
+          <property role="30bXRw" value="13" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4voqclTBa6A" role="_fkp5">
+        <node concept="_fku$" id="4voqclTBa6B" role="_fkur" />
+        <node concept="1QScDb" id="4voqclTBa7m" role="_fkuY">
+          <node concept="2TZ5KL" id="4voqclTBbBu" role="1QScD9">
+            <node concept="3izI60" id="4voqclTBbBv" role="3iAY4F">
+              <node concept="30cPrO" id="4voqclTBda4" role="3izI61">
+                <node concept="30bXRB" id="4voqclTBeEE" role="30dEs_">
+                  <property role="30bXRw" value="30" />
+                </node>
+                <node concept="3izPEI" id="4voqclTBbBx" role="30dEsF" />
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="4voqclTBa70" role="30czhm">
+            <ref role="_emDf" node="4voqclTAh_4" resolve="monthsIn2010" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4voqclTBhNE" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4voqclTBrsZ" role="_fkp5">
+        <node concept="_fku$" id="4voqclTBrt0" role="_fkur" />
+        <node concept="1QScDb" id="4voqclTBrt1" role="_fkuY">
+          <node concept="2$5g5R" id="4voqclTBuGt" role="1QScD9" />
+          <node concept="_emDc" id="4voqclTBrt7" role="30czhm">
+            <ref role="_emDf" node="4voqclTAh_4" resolve="monthsIn2010" />
+          </node>
+        </node>
+        <node concept="30dDTi" id="4voqclTBwhM" role="_fkuS">
+          <node concept="30bXRB" id="4voqclTBwi4" role="30dEs_">
+            <property role="30bXRw" value="30" />
+          </node>
+          <node concept="30bXRB" id="4voqclTBwhx" role="30dEsF">
+            <property role="30bXRw" value="13" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="_iOnV" id="56r2aFOUWhQ">
     <property role="TrG5h" value="Kirchensteuer" />
@@ -1464,8 +1595,14 @@
     <node concept="5mgZ8" id="56r2aFOUWhY" role="_iOnC">
       <property role="TrG5h" value="Konfession" />
       <node concept="5mgYR" id="56r2aFOUWhZ" role="5mgYi">
-        <property role="TrG5h" value="EV" />
+        <property role="TrG5h" value="KEINE" />
         <node concept="30bdrP" id="56r2aFOUWi0" role="Y$80S">
+          <property role="30bdrQ" value="Keine" />
+        </node>
+      </node>
+      <node concept="5mgYR" id="4voqclTwLe0" role="5mgYi">
+        <property role="TrG5h" value="EV" />
+        <node concept="30bdrP" id="4voqclTwLe1" role="Y$80S">
           <property role="30bdrQ" value="Evangelisch" />
         </node>
       </node>
@@ -1508,16 +1645,16 @@
               <node concept="30bXRB" id="56r2aFOUYGZ" role="1DGDZN">
                 <property role="30bXRw" value="8" />
               </node>
-              <node concept="5mhuz" id="56r2aFOUYGh" role="1DGDZP">
-                <ref role="5mhpJ" node="56r2aFOUWi1" resolve="KA" />
+              <node concept="5mhuz" id="4voqclTEOpa" role="1DGDZP">
+                <ref role="5mhpJ" node="4voqclTwLe0" resolve="EV" />
               </node>
             </node>
             <node concept="1DGDZQ" id="56r2aFOUYIj" role="1DGOg9">
               <node concept="30bXRB" id="56r2aFOUYIk" role="1DGDZN">
                 <property role="30bXRw" value="9" />
               </node>
-              <node concept="5mhuz" id="56r2aFOUYND" role="1DGDZP">
-                <ref role="5mhpJ" node="56r2aFOUWhZ" resolve="EV" />
+              <node concept="5mhuz" id="4voqclTEHRD" role="1DGDZP">
+                <ref role="5mhpJ" node="56r2aFOUWi1" resolve="KA" />
               </node>
             </node>
           </node>
@@ -1534,16 +1671,16 @@
               <node concept="30bXRB" id="56r2aFOV0PB" role="1DGDZN">
                 <property role="30bXRw" value="7" />
               </node>
-              <node concept="5mhuz" id="56r2aFOV0nh" role="1DGDZP">
-                <ref role="5mhpJ" node="56r2aFOUWi1" resolve="KA" />
+              <node concept="5mhuz" id="4voqclTEOry" role="1DGDZP">
+                <ref role="5mhpJ" node="4voqclTwLe0" resolve="EV" />
               </node>
             </node>
             <node concept="1DGDZQ" id="56r2aFOV0QV" role="1DGOg9">
               <node concept="30bXRB" id="56r2aFOV0QW" role="1DGDZN">
                 <property role="30bXRw" value="6" />
               </node>
-              <node concept="5mhuz" id="56r2aFOV1we" role="1DGDZP">
-                <ref role="5mhpJ" node="56r2aFOUWhZ" resolve="EV" />
+              <node concept="5mhuz" id="4voqclTEI3f" role="1DGDZP">
+                <ref role="5mhpJ" node="56r2aFOUWi1" resolve="KA" />
               </node>
             </node>
           </node>
@@ -1617,8 +1754,8 @@
       </node>
       <node concept="2Ss9d7" id="56r2aFOUWiR" role="S5Trm">
         <property role="TrG5h" value="konfession" />
-        <node concept="Uns6S" id="56r2aFOUWiS" role="2S399n">
-          <node concept="5mh7t" id="56r2aFOUWiT" role="Uns6T">
+        <node concept="Ffn_D" id="4voqclTwO_1" role="2S399n">
+          <node concept="5mh7t" id="4voqclTwPfG" role="Ffn_E">
             <ref role="5mh6l" node="56r2aFOUWhY" resolve="Konfession" />
           </node>
         </node>
@@ -1667,48 +1804,6 @@
       <property role="1WsWdv" value="Hilfsfunktionen" />
     </node>
     <node concept="_ixoA" id="56r2aFOVQzq" role="_iOnC" />
-    <node concept="1aga60" id="56r2aFOUWiV" role="_iOnC">
-      <property role="TrG5h" value="gesamtGehalt" />
-      <property role="1HeIcW" value="true" />
-      <node concept="1ahQXy" id="56r2aFOUWj1" role="1ahQWs">
-        <property role="TrG5h" value="an" />
-        <node concept="2Ss9cW" id="56r2aFOUWj2" role="3ix9CU">
-          <ref role="2Ss9cX" node="56r2aFOUWiI" resolve="Arbeitnehmer" />
-        </node>
-      </node>
-      <node concept="1ahQXy" id="3nGzaxUXH_z" role="1ahQWs">
-        <property role="TrG5h" value="zeitraum" />
-        <node concept="1f6Vwj" id="3nGzaxUXT17" role="3ix9CU" />
-      </node>
-      <node concept="1QScDb" id="4voqclTrbXe" role="1ahQXP">
-        <node concept="2$5g5R" id="4voqclTrbXf" role="1QScD9" />
-        <node concept="1QScDb" id="4voqclTrbXg" role="30czhm">
-          <node concept="1fAFdr" id="4voqclTrbXh" role="1QScD9">
-            <property role="1fAGMV" value="MONTHS" />
-            <node concept="1QScDb" id="4voqclTrbXi" role="1fsiQ4">
-              <node concept="2Wukci" id="4voqclTr_8i" role="1QScD9" />
-              <node concept="1afdae" id="4voqclTrbXk" role="30czhm">
-                <ref role="1afue_" node="3nGzaxUXH_z" resolve="zeitraum" />
-              </node>
-            </node>
-            <node concept="1QScDb" id="4voqclTrAoM" role="1fsiQ6">
-              <node concept="1f6P$$" id="4voqclTrB1c" role="1QScD9" />
-              <node concept="1afdae" id="4voqclTr_KP" role="30czhm">
-                <ref role="1afue_" node="3nGzaxUXH_z" resolve="zeitraum" />
-              </node>
-            </node>
-          </node>
-          <node concept="1QScDb" id="4voqclTrbXm" role="30czhm">
-            <node concept="3o_JK" id="4voqclTrbXn" role="1QScD9">
-              <ref role="3o_JH" node="56r2aFOUWiN" resolve="monatseinkommen" />
-            </node>
-            <node concept="1afdae" id="4voqclTrbXo" role="30czhm">
-              <ref role="1afue_" node="56r2aFOUWj1" resolve="an" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1aga60" id="56r2aFOUWj3" role="_iOnC">
       <property role="TrG5h" value="bundesland" />
       <property role="1HeIcW" value="true" />
@@ -1730,24 +1825,12 @@
         </node>
       </node>
     </node>
-    <node concept="1aga60" id="56r2aFOUWjb" role="_iOnC">
-      <property role="TrG5h" value="bemessungsbetrag" />
-      <node concept="30bXRB" id="56r2aFOUWjc" role="1ahQXP">
-        <property role="30bXRw" value="100" />
-      </node>
-      <node concept="1ahQXy" id="56r2aFOUWjd" role="1ahQWs">
-        <property role="TrG5h" value="an" />
-        <node concept="2Ss9cW" id="56r2aFOUWje" role="3ix9CU">
-          <ref role="2Ss9cX" node="56r2aFOUWiI" resolve="Arbeitnehmer" />
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="56r2aFOUWjr" role="_iOnC" />
     <node concept="1aga60" id="56r2aFOUWjs" role="_iOnC">
       <property role="TrG5h" value="berechneKS" />
       <node concept="1aduha" id="56r2aFOUWjt" role="1ahQXP">
         <node concept="1adJid" id="56r2aFOV5Ix" role="1aduh9">
-          <property role="TrG5h" value="saetze" />
+          <property role="TrG5h" value="steuertabelleBunderland" />
           <node concept="2yLE0X" id="56r2aFOV5Iy" role="1adJii">
             <node concept="_emDc" id="56r2aFOV5Iz" role="30czhm">
               <ref role="_emDf" node="56r2aFOUWid" resolve="kirchensteuersaetze" />
@@ -1771,9 +1854,26 @@
               </node>
             </node>
           </node>
+          <node concept="1DGDPD" id="4voqclTz9xd" role="2zM23F">
+            <node concept="5mh7t" id="4voqclTz9xe" role="1DGDPC">
+              <ref role="5mh6l" node="56r2aFOUWhY" resolve="Konfession" />
+            </node>
+            <node concept="1WbbFT" id="4voqclTz9xf" role="1DGDPA">
+              <ref role="1WbbFS" node="56r2aFOUWi5" resolve="steuersatz" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="4eVSC65zjNE" role="lGtFl">
+            <node concept="OjmMv" id="4eVSC65zjNF" role="1w35rA">
+              <node concept="19SGf9" id="4eVSC65zjNG" role="OjmMu">
+                <node concept="19SUe$" id="4eVSC65zjNH" role="19SJt6">
+                  <property role="19SUeA" value="Currently, the Anschrift is not temporal, so the Steuertabelle for a person is fixed&#10;Here we retrieve it via the Bundesland of the Arbeitgeber." />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1adJid" id="56r2aFOUWjB" role="1aduh9">
-          <property role="TrG5h" value="steuersatz" />
+          <property role="TrG5h" value="effektiverSteuersatz" />
           <node concept="2fGnzi" id="56r2aFOUWjC" role="1adJii">
             <node concept="2fGnzd" id="56r2aFOUWjD" role="2fGnxs">
               <node concept="30cPrO" id="56r2aFOUWjE" role="2fGnzS">
@@ -1799,50 +1899,106 @@
                   </node>
                 </node>
               </node>
-              <node concept="30bXRB" id="56r2aFOUWjN" role="2fGnzA">
-                <property role="30bXRw" value="9" />
+              <node concept="YnbI1" id="4voqclTxHIw" role="2fGnzA">
+                <node concept="30bXRB" id="4voqclTxIo3" role="YnbId">
+                  <property role="30bXRw" value="9" />
+                </node>
               </node>
             </node>
             <node concept="2fGnzd" id="56r2aFOUWjO" role="2fGnxs">
               <node concept="2fHqz8" id="56r2aFOUWjP" role="2fGnzS" />
-              <node concept="2yLE0X" id="56r2aFOV6uC" role="2fGnzA">
-                <node concept="1afdae" id="56r2aFOVf0n" role="2yLE0W">
-                  <ref role="1afue_" node="56r2aFOVaHV" resolve="k" />
+              <node concept="1QScDb" id="4voqclTyeYS" role="2fGnzA">
+                <node concept="YnDqS" id="4voqclTygjP" role="1QScD9">
+                  <node concept="3izI60" id="4voqclTygjQ" role="YnQaU">
+                    <node concept="2yLE0X" id="4voqclTyoXg" role="3izI61">
+                      <node concept="3izPEI" id="4voqclTypBk" role="2yLE0W" />
+                      <node concept="1adzI2" id="4voqclTynE7" role="30czhm">
+                        <ref role="1adwt6" node="56r2aFOV5Ix" resolve="steuertabelleBunderland" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="1adzI2" id="56r2aFOV5IF" role="30czhm">
-                  <ref role="1adwt6" node="56r2aFOV5Ix" resolve="saetze" />
+                <node concept="1QScDb" id="4voqclTzpP3" role="30czhm">
+                  <node concept="3o_JK" id="4voqclTzreB" role="1QScD9">
+                    <ref role="3o_JH" node="56r2aFOUWiR" resolve="konfession" />
+                  </node>
+                  <node concept="1afdae" id="4voqclTzp8p" role="30czhm">
+                    <ref role="1afue_" node="56r2aFOUWkq" resolve="an" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="1adJid" id="4voqclTr6Qm" role="1aduh9">
-          <property role="TrG5h" value="jahresgehalt" />
-          <node concept="1QScDb" id="4voqclTr6Qn" role="1adJii">
-            <node concept="1He9k6" id="4voqclTr6Qo" role="1QScD9">
-              <ref role="1He9kT" node="56r2aFOUWiV" resolve="gesamtGehalt" />
-              <node concept="1afdae" id="4voqclTr6Qp" role="1H9Mq6">
-                <ref role="1afue_" node="3nGzaxUXwTc" resolve="zeitraum" />
-              </node>
+          <node concept="Ffn_D" id="4voqclTzbtz" role="2zM23F">
+            <node concept="1WbbFT" id="4voqclTzbt$" role="Ffn_E">
+              <ref role="1WbbFS" node="56r2aFOUWi5" resolve="steuersatz" />
             </node>
-            <node concept="1afdae" id="4voqclTr6Qq" role="30czhm">
-              <ref role="1afue_" node="56r2aFOUWkq" resolve="an" />
+          </node>
+          <node concept="1z9TsT" id="4eVSC65zqA6" role="lGtFl">
+            <node concept="OjmMv" id="4eVSC65zqA7" role="1w35rA">
+              <node concept="19SGf9" id="4eVSC65zqA8" role="OjmMu">
+                <node concept="19SUe$" id="4eVSC65zqA9" role="19SJt6">
+                  <property role="19SUeA" value="If the person is from Bad Wimpfen, the steuersatz is always 9 percent (always is a temporal operator)&#10;In all other cases we map the temporal slices of the konfession onto the Steuertabelle.&#10;This way we get a temporalized steuersatz, based on the temporality of the Konfession" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1adJid" id="56r2aFOUWk3" role="1aduh9">
-          <property role="TrG5h" value="steuerbetrag" />
-          <node concept="30dvO6" id="56r2aFOUWk4" role="1adJii">
-            <node concept="30dDTi" id="56r2aFOUWk5" role="30dEsF">
-              <node concept="1adzI2" id="4voqclTraFX" role="30dEsF">
-                <ref role="1adwt6" node="4voqclTr6Qm" resolve="jahresgehalt" />
-              </node>
-              <node concept="1adzI2" id="56r2aFOUWk8" role="30dEs_">
-                <ref role="1adwt6" node="56r2aFOUWjB" resolve="steuersatz" />
+          <property role="TrG5h" value="monatssteuer" />
+          <node concept="30dDTi" id="4voqclTE1mU" role="1adJii">
+            <node concept="30bsCy" id="4voqclTE1mV" role="30dEsF">
+              <node concept="30dvO6" id="4voqclTE281" role="30bsDf">
+                <node concept="30bXRB" id="4voqclTE28t" role="30dEs_">
+                  <property role="30bXRw" value="100" />
+                </node>
+                <node concept="1adzI2" id="4voqclTDZ3K" role="30dEsF">
+                  <ref role="1adwt6" node="56r2aFOUWjB" resolve="effektiverSteuersatz" />
+                </node>
               </node>
             </node>
-            <node concept="30bXRB" id="56r2aFOUWk9" role="30dEs_">
-              <property role="30bXRw" value="100" />
+            <node concept="1QScDb" id="4eVSC65v7yI" role="30dEs_">
+              <node concept="3o_JK" id="4eVSC65v9qL" role="1QScD9">
+                <ref role="3o_JH" node="56r2aFOUWiN" resolve="monatseinkommen" />
+              </node>
+              <node concept="1afdae" id="4eVSC65v5BI" role="30czhm">
+                <ref role="1afue_" node="56r2aFOUWkq" resolve="an" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="4eVSC65ztrA" role="lGtFl">
+            <node concept="OjmMv" id="4eVSC65ztrB" role="1w35rA">
+              <node concept="19SGf9" id="4eVSC65ztrC" role="OjmMu">
+                <node concept="19SUe$" id="4eVSC65ztrD" role="19SJt6">
+                  <property role="19SUeA" value="Here we calcualte the steuer for each month; note how we perform&#10;arithmetics with two temporal values!" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1adJid" id="4eVSC65vm1Q" role="1aduh9">
+          <property role="TrG5h" value="gesamtsteuer" />
+          <node concept="1QScDb" id="4eVSC65vMez" role="1adJii">
+            <node concept="2$5g5R" id="4eVSC65vPAv" role="1QScD9" />
+            <node concept="1QScDb" id="4eVSC65vwO5" role="30czhm">
+              <node concept="1fAFdr" id="4eVSC65v$5X" role="1QScD9">
+                <property role="1fAGMV" value="MONTHS" />
+                <node concept="1afdae" id="4eVSC65vCuo" role="1fsiQ4">
+                  <ref role="1afue_" node="3nGzaxUXwTc" resolve="zeitraum" />
+                </node>
+              </node>
+              <node concept="1adzI2" id="4eVSC65vuyb" role="30czhm">
+                <ref role="1adwt6" node="56r2aFOUWk3" resolve="monatssteuer" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="4eVSC65zFkV" role="lGtFl">
+            <node concept="OjmMv" id="4eVSC65zFkW" role="1w35rA">
+              <node concept="19SGf9" id="4eVSC65zFkX" role="OjmMu">
+                <node concept="19SUe$" id="4eVSC65zFkY" role="19SJt6">
+                  <property role="19SUeA" value="The total steuer for the year is the sum of a monthly spread" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1852,8 +2008,17 @@
             <node concept="_emDc" id="56r2aFOVFsT" role="30dEs_">
               <ref role="_emDf" node="56r2aFOVFnS" resolve="maximalSatz" />
             </node>
-            <node concept="1adzI2" id="4voqclTr6Qr" role="30dEsF">
-              <ref role="1adwt6" node="4voqclTr6Qm" resolve="jahresgehalt" />
+            <node concept="1adzI2" id="4eVSC65w1JO" role="30dEsF">
+              <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="4eVSC65zIar" role="lGtFl">
+            <node concept="OjmMv" id="4eVSC65zIas" role="1w35rA">
+              <node concept="19SGf9" id="4eVSC65zIat" role="OjmMu">
+                <node concept="19SUe$" id="4eVSC65zIau" role="19SJt6">
+                  <property role="19SUeA" value="Then we finally limit it." />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1863,8 +2028,8 @@
               <node concept="_emDc" id="56r2aFOV$eV" role="30dEs_">
                 <ref role="_emDf" node="56r2aFOVyIV" resolve="minimalBetrag" />
               </node>
-              <node concept="1adzI2" id="56r2aFOUWkf" role="30dEsF">
-                <ref role="1adwt6" node="56r2aFOUWk3" resolve="steuerbetrag" />
+              <node concept="1adzI2" id="4eVSC65wdYj" role="30dEsF">
+                <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
               </node>
             </node>
             <node concept="_emDc" id="56r2aFOV$VR" role="2fGnzA">
@@ -1873,8 +2038,8 @@
           </node>
           <node concept="2fGnzd" id="56r2aFOUWkh" role="2fGnxs">
             <node concept="30d7iD" id="56r2aFOUWki" role="2fGnzS">
-              <node concept="1adzI2" id="56r2aFOUWkj" role="30dEsF">
-                <ref role="1adwt6" node="56r2aFOUWk3" resolve="steuerbetrag" />
+              <node concept="1adzI2" id="4eVSC65whj_" role="30dEsF">
+                <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
               </node>
               <node concept="1adzI2" id="56r2aFOVAoO" role="30dEs_">
                 <ref role="1adwt6" node="56r2aFOVAoI" resolve="maximalbetrag" />
@@ -1886,8 +2051,8 @@
           </node>
           <node concept="2fGnzd" id="4voqclTw0WV" role="2fGnxs">
             <node concept="2fHqz8" id="4voqclTw1_W" role="2fGnzS" />
-            <node concept="1adzI2" id="4voqclTw2Ta" role="2fGnzA">
-              <ref role="1adwt6" node="56r2aFOUWk3" resolve="steuerbetrag" />
+            <node concept="1adzI2" id="4eVSC65wj_Q" role="2fGnzA">
+              <ref role="1adwt6" node="4eVSC65vm1Q" resolve="gesamtsteuer" />
             </node>
           </node>
         </node>
@@ -1896,12 +2061,6 @@
         <property role="TrG5h" value="an" />
         <node concept="2Ss9cW" id="56r2aFOUWkr" role="3ix9CU">
           <ref role="2Ss9cX" node="56r2aFOUWiI" resolve="Arbeitnehmer" />
-        </node>
-      </node>
-      <node concept="1ahQXy" id="56r2aFOVaHV" role="1ahQWs">
-        <property role="TrG5h" value="k" />
-        <node concept="5mh7t" id="56r2aFOVc9b" role="3ix9CU">
-          <ref role="5mh6l" node="56r2aFOUWhY" resolve="Konfession" />
         </node>
       </node>
       <node concept="1ahQXy" id="3nGzaxUXwTc" role="1ahQWs">
@@ -1913,6 +2072,48 @@
       </node>
     </node>
     <node concept="_ixoA" id="56r2aFOUWks" role="_iOnC" />
+    <node concept="1aga60" id="4voqclTzN2x" role="_iOnC">
+      <property role="TrG5h" value="kirchesteuerBefreit" />
+      <node concept="1ahQXy" id="4voqclTzN6E" role="1ahQWs">
+        <property role="TrG5h" value="an" />
+        <node concept="2Ss9cW" id="4voqclTzN74" role="3ix9CU">
+          <ref role="2Ss9cX" node="56r2aFOUWiI" resolve="Arbeitnehmer" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="4voqclTzNTY" role="1ahQWs">
+        <property role="TrG5h" value="jahr" />
+        <node concept="1f6Vwj" id="4voqclTzPpd" role="3ix9CU" />
+      </node>
+      <node concept="1QScDb" id="4voqclTzCHz" role="1ahQXP">
+        <node concept="2TZ5KL" id="4eVSC65yMr1" role="1QScD9">
+          <node concept="3izI60" id="4eVSC65yMr2" role="3iAY4F">
+            <node concept="1QScDb" id="4eVSC65yOoo" role="3izI61">
+              <node concept="2JjPkS" id="4eVSC65yQkY" role="1QScD9">
+                <ref role="2Jt$xV" node="56r2aFOUWhZ" resolve="KEINE" />
+              </node>
+              <node concept="3izPEI" id="4eVSC65yMr4" role="30czhm" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QScDb" id="4voqclTzyiy" role="30czhm">
+          <node concept="1fAFdr" id="4voqclTzzHF" role="1QScD9">
+            <property role="1fAGMV" value="MONTHS" />
+            <node concept="1afdae" id="4voqclT_C9V" role="1fsiQ4">
+              <ref role="1afue_" node="4voqclTzNTY" resolve="jahr" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="4voqclTzwbn" role="30czhm">
+            <node concept="3o_JK" id="4voqclTzx_y" role="1QScD9">
+              <ref role="3o_JH" node="56r2aFOUWiR" resolve="konfession" />
+            </node>
+            <node concept="1afdae" id="4voqclTzvuY" role="30czhm">
+              <ref role="1afue_" node="4voqclTzN6E" resolve="an" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4eVSC65yZ9$" role="_iOnC" />
     <node concept="1Ws0TD" id="56r2aFOVT7j" role="_iOnC">
       <property role="1WsWdv" value="Oeffentliche API" />
     </node>
@@ -1930,33 +2131,26 @@
         <node concept="1f6Vwj" id="3nGzaxUXQF2" role="3ix9CU" />
       </node>
       <node concept="39w5ZF" id="56r2aFOUWjj" role="1ahQXP">
-        <node concept="UmaEC" id="56r2aFOUWjk" role="39w5ZE">
-          <node concept="1QScDb" id="56r2aFOUWjl" role="UmaED">
-            <node concept="3o_JK" id="56r2aFOUWjm" role="1QScD9">
-              <ref role="3o_JH" node="56r2aFOUWiR" resolve="konfession" />
-            </node>
-            <node concept="1afdae" id="56r2aFOUWjn" role="30czhm">
-              <ref role="1afue_" node="56r2aFOUWjh" resolve="an" />
-            </node>
-          </node>
-          <node concept="pfQqD" id="56r2aFOVTUL" role="pfQ1b">
-            <property role="pfQqC" value="k" />
-          </node>
-        </node>
-        <node concept="1af_rf" id="56r2aFOUWjo" role="39w5ZG">
-          <ref role="1afhQb" node="56r2aFOUWjs" resolve="berechneKS" />
-          <node concept="1afdae" id="56r2aFOUWjp" role="1afhQ5">
+        <node concept="1af_rf" id="4voqclTzRAK" role="39w5ZE">
+          <ref role="1afhQb" node="4voqclTzN2x" resolve="kirchesteuerBefreit" />
+          <node concept="1afdae" id="4voqclTzSlH" role="1afhQ5">
             <ref role="1afue_" node="56r2aFOUWjh" resolve="an" />
           </node>
-          <node concept="1ZmhP4" id="56r2aFOVeit" role="1afhQ5">
-            <ref role="1ZmhP3" node="56r2aFOUWjk" resolve="k" />
+          <node concept="1afdae" id="4voqclTzTNF" role="1afhQ5">
+            <ref role="1afue_" node="3nGzaxUXumm" resolve="jahr" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="4eVSC65z4Mh" role="39w5ZG">
+          <property role="30bXRw" value="0" />
+        </node>
+        <node concept="1af_rf" id="56r2aFOUWjo" role="39w5ZL">
+          <ref role="1afhQb" node="56r2aFOUWjs" resolve="berechneKS" />
+          <node concept="1afdae" id="4voqclTzKKh" role="1afhQ5">
+            <ref role="1afue_" node="56r2aFOUWjh" resolve="an" />
           </node>
           <node concept="1afdae" id="3nGzaxUXwgP" role="1afhQ5">
             <ref role="1afue_" node="3nGzaxUXumm" resolve="jahr" />
           </node>
-        </node>
-        <node concept="30bXRB" id="56r2aFOUWjq" role="39w5ZL">
-          <property role="30bXRw" value="0" />
         </node>
       </node>
     </node>
@@ -1964,6 +2158,7 @@
   </node>
   <node concept="_iOnU" id="4voqclTrKyk">
     <property role="TrG5h" value="TestKirchensteuer" />
+    <property role="35xRTJ" value="true" />
     <node concept="2zPypq" id="4voqclTrEez" role="_iOnB">
       <property role="TrG5h" value="aktuellesJahr" />
       <node concept="1f6kyV" id="4voqclTrGuB" role="2zPyp_">
@@ -2066,8 +2261,10 @@
         </node>
         <node concept="1lsf3H" id="4voqclTscWZ" role="1lsf3C">
           <ref role="1lsf3R" node="56r2aFOUWiR" resolve="konfession" />
-          <node concept="5mhuz" id="4voqclTsdDa" role="1lsf3T">
-            <ref role="5mhpJ" node="56r2aFOUWhZ" resolve="EV" />
+          <node concept="YnbI1" id="4voqclTEcvT" role="1lsf3T">
+            <node concept="5mhuz" id="4voqclTEdtK" role="YnbId">
+              <ref role="5mhpJ" node="4voqclTwLe0" resolve="EV" />
+            </node>
           </node>
         </node>
       </node>
@@ -2083,7 +2280,11 @@
         </node>
         <node concept="1lsf3H" id="4voqclTty3W" role="1lsf3C">
           <ref role="1lsf3R" node="56r2aFOUWiR" resolve="konfession" />
-          <node concept="UmHTt" id="4voqclTtyNp" role="1lsf3T" />
+          <node concept="YnbI1" id="4voqclTEfpN" role="1lsf3T">
+            <node concept="5mhuz" id="4voqclTEgnH" role="YnbId">
+              <ref role="5mhpJ" node="56r2aFOUWhZ" resolve="KEINE" />
+            </node>
+          </node>
         </node>
         <node concept="1lsf3H" id="4voqclTsfHG" role="1lsf3C">
           <ref role="1lsf3R" node="56r2aFOUWiJ" resolve="anschrift" />
@@ -2137,9 +2338,117 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="4voqclTEgtU" role="_iOnB" />
     <node concept="_ixoA" id="4voqclTrPUV" role="_iOnB" />
     <node concept="_fkuM" id="4voqclTrHw$" role="_iOnB">
       <property role="TrG5h" value="TestKirchensteuer" />
+      <node concept="_fkuZ" id="4voqclTEbt3" role="_fkp5">
+        <node concept="_fku$" id="4voqclTEbt4" role="_fkur" />
+        <node concept="1DGDZR" id="4voqclTEFoG" role="_fkuS">
+          <node concept="1DGDZQ" id="4voqclTEFq$" role="1DGOg9">
+            <node concept="30bXRB" id="4voqclTEFq_" role="1DGDZN">
+              <property role="30bXRw" value="6" />
+            </node>
+            <node concept="5mhuz" id="4voqclTEFt0" role="1DGDZP">
+              <ref role="5mhpJ" node="56r2aFOUWi1" resolve="KA" />
+            </node>
+          </node>
+          <node concept="1DGDZQ" id="4voqclTEQFn" role="1DGOg9">
+            <node concept="5mhuz" id="4voqclTEQGC" role="1DGDZP">
+              <ref role="5mhpJ" node="4voqclTwLe0" resolve="EV" />
+            </node>
+            <node concept="30bXRB" id="4voqclTEQH9" role="1DGDZN">
+              <property role="30bXRw" value="7" />
+            </node>
+          </node>
+        </node>
+        <node concept="2yLE0X" id="4voqclTEpzD" role="_fkuY">
+          <node concept="_emDc" id="4voqclTEpzE" role="30czhm">
+            <ref role="_emDf" node="56r2aFOUWid" resolve="kirchensteuersaetze" />
+          </node>
+          <node concept="1QScDb" id="4voqclTEpzF" role="2yLE0W">
+            <node concept="1He9k6" id="4voqclTEpzG" role="1QScD9">
+              <ref role="1He9kT" node="56r2aFOUWj3" resolve="bundesland" />
+            </node>
+            <node concept="1QScDb" id="4voqclTEpzH" role="30czhm">
+              <node concept="3o_JK" id="4voqclTEpzI" role="1QScD9">
+                <ref role="3o_JH" node="56r2aFOUWiD" resolve="anschrift" />
+              </node>
+              <node concept="1QScDb" id="4voqclTEpzJ" role="30czhm">
+                <node concept="3o_JK" id="4voqclTEpzK" role="1QScD9">
+                  <ref role="3o_JH" node="56r2aFOUWiL" resolve="ag" />
+                </node>
+                <node concept="_emDc" id="4voqclTEpzL" role="30czhm">
+                  <ref role="_emDf" node="4voqclTrQ$f" resolve="markus" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4voqclTEBSy" role="_fkp5">
+        <node concept="_fku$" id="4voqclTEBSz" role="_fkur" />
+        <node concept="FfN7I" id="4voqclTFdf7" role="_fkuS">
+          <node concept="FfN7L" id="4voqclTFdfd" role="FfN64">
+            <node concept="30bXRB" id="4voqclTFdfK" role="FfN7O">
+              <property role="30bXRw" value="7" />
+            </node>
+            <node concept="1fc2QT" id="4voqclTFdfc" role="FfN7M">
+              <property role="1fc2QY" value="0" />
+              <property role="1fc2QX" value="0" />
+              <property role="1fc2QW" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aduha" id="4voqclTEBS_" role="_fkuY">
+          <node concept="1adJid" id="4voqclTEBSA" role="1aduh9">
+            <property role="TrG5h" value="saetze" />
+            <node concept="2yLE0X" id="4voqclTEBSB" role="1adJii">
+              <node concept="_emDc" id="4voqclTEBSC" role="30czhm">
+                <ref role="_emDf" node="56r2aFOUWid" resolve="kirchensteuersaetze" />
+              </node>
+              <node concept="1QScDb" id="4voqclTEBSD" role="2yLE0W">
+                <node concept="1He9k6" id="4voqclTEBSE" role="1QScD9">
+                  <ref role="1He9kT" node="56r2aFOUWj3" resolve="bundesland" />
+                </node>
+                <node concept="1QScDb" id="4voqclTEBSF" role="30czhm">
+                  <node concept="3o_JK" id="4voqclTEBSG" role="1QScD9">
+                    <ref role="3o_JH" node="56r2aFOUWiD" resolve="anschrift" />
+                  </node>
+                  <node concept="1QScDb" id="4voqclTEBSH" role="30czhm">
+                    <node concept="3o_JK" id="4voqclTEBSI" role="1QScD9">
+                      <ref role="3o_JH" node="56r2aFOUWiL" resolve="ag" />
+                    </node>
+                    <node concept="_emDc" id="4voqclTEBSJ" role="30czhm">
+                      <ref role="_emDf" node="4voqclTrQ$f" resolve="markus" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="4voqclTEBSK" role="1aduh9">
+            <node concept="YnDqS" id="4voqclTEBSL" role="1QScD9">
+              <node concept="3izI60" id="4voqclTEBSM" role="YnQaU">
+                <node concept="2yLE0X" id="4voqclTEBSN" role="3izI61">
+                  <node concept="3izPEI" id="4voqclTEBSO" role="2yLE0W" />
+                  <node concept="1adzI2" id="4voqclTEBSP" role="30czhm">
+                    <ref role="1adwt6" node="4voqclTEBSA" resolve="saetze" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1QScDb" id="4voqclTEBSQ" role="30czhm">
+              <node concept="3o_JK" id="4voqclTEBSR" role="1QScD9">
+                <ref role="3o_JH" node="56r2aFOUWiR" resolve="konfession" />
+              </node>
+              <node concept="_emDc" id="4voqclTEBSS" role="30czhm">
+                <ref role="_emDf" node="4voqclTrQ$f" resolve="markus" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="_fkuZ" id="4voqclTrH$u" role="_fkp5">
         <node concept="_fku$" id="4voqclTrH$v" role="_fkur" />
         <node concept="1af_rf" id="4voqclTrH$F" role="_fkuY">
@@ -2182,11 +2491,11 @@
       <node concept="_fkuZ" id="4voqclTtSVK" role="_fkp5">
         <node concept="_fku$" id="4voqclTtSVL" role="_fkur" />
         <node concept="30bXRB" id="4voqclTu0TE" role="_fkuS">
-          <property role="30bXRw" value="6" />
+          <property role="30bXRw" value="7" />
         </node>
         <node concept="2yLE0X" id="4voqclTucAj" role="_fkuY">
-          <node concept="5mhuz" id="4voqclTudpX" role="2yLE0W">
-            <ref role="5mhpJ" node="56r2aFOUWhZ" resolve="EV" />
+          <node concept="5mhuz" id="4eVSC65yfXv" role="2yLE0W">
+            <ref role="5mhpJ" node="4voqclTwLe0" resolve="EV" />
           </node>
           <node concept="2yLE0X" id="4voqclTu9lX" role="30czhm">
             <node concept="_emDc" id="4voqclTu9lY" role="30czhm">
@@ -2204,29 +2513,12 @@
                   <node concept="3o_JK" id="4voqclTu9m4" role="1QScD9">
                     <ref role="3o_JH" node="56r2aFOUWiL" resolve="ag" />
                   </node>
-                  <node concept="_emDc" id="4voqclTu9m5" role="30czhm">
+                  <node concept="_emDc" id="4eVSC65ydsR" role="30czhm">
                     <ref role="_emDf" node="4voqclTrQ$f" resolve="markus" />
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="_fkuZ" id="4voqclTuhE0" role="_fkp5">
-        <node concept="_fku$" id="4voqclTuhE1" role="_fkur" />
-        <node concept="30bXRB" id="4voqclTukLz" role="_fkuS">
-          <property role="30bXRw" value="74000" />
-        </node>
-        <node concept="1QScDb" id="4voqclTuhEL" role="_fkuY">
-          <node concept="1He9k6" id="4voqclTuhEM" role="1QScD9">
-            <ref role="1He9kT" node="56r2aFOUWiV" resolve="gesamtGehalt" />
-            <node concept="_emDc" id="4voqclTuiuN" role="1H9Mq6">
-              <ref role="_emDf" node="4voqclTrEez" resolve="aktuellesJahr" />
-            </node>
-          </node>
-          <node concept="_emDc" id="4voqclTuhFk" role="30czhm">
-            <ref role="_emDf" node="4voqclTrQ$f" resolve="markus" />
           </node>
         </node>
       </node>
@@ -2242,7 +2534,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="4voqclTw6aL" role="_fkuS">
-          <property role="30bXRw" value="4440" />
+          <property role="30bXRw" value="43.20" />
         </node>
       </node>
     </node>
