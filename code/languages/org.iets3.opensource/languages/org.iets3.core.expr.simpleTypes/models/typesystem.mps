@@ -3487,7 +3487,7 @@
     </node>
     <node concept="1YaCAy" id="46cplYy1TGI" role="1YuTPh">
       <property role="TrG5h" value="lee" />
-      <ref role="1YaFvo" to="5qo5:46cplYy1TAG" resolve="LimitExpressionExpression" />
+      <ref role="1YaFvo" to="5qo5:46cplYy1TAG" resolve="LimitExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="46cplYy2ael">
@@ -3518,7 +3518,7 @@
     </node>
     <node concept="1YaCAy" id="46cplYy2aeo" role="1YuTPh">
       <property role="TrG5h" value="lee" />
-      <ref role="1YaFvo" to="5qo5:46cplYy1TAG" resolve="LimitExpressionExpression" />
+      <ref role="1YaFvo" to="5qo5:46cplYy1TAG" resolve="LimitExpression" />
     </node>
   </node>
   <node concept="18kY7G" id="53cOfDpd0AP">
