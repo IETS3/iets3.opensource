@@ -164,7 +164,7 @@
           </node>
           <node concept="3F0A7n" id="2GQBRFCFw1C" role="3EZMnx">
             <property role="1$x2rV" value="&lt;global default timeout&gt;" />
-            <ref role="1NtTu8" to="l80j:2GQBRFCFk_3" resolve="timout" />
+            <ref role="1NtTu8" to="l80j:2GQBRFCFk_3" resolve="timeout" />
             <node concept="VechU" id="2ZalWa8HPVt" role="3F10Kt">
               <property role="Vb096" value="red" />
             </node>
@@ -186,7 +186,7 @@
                   <node concept="2OqwBi" id="2ZalWa8IzFd" role="3uHU7B">
                     <node concept="pncrf" id="2ZalWa8IzpM" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2ZalWa8I$e6" role="2OqNvi">
-                      <ref role="3TsBF5" to="l80j:2GQBRFCFk_3" resolve="timout" />
+                      <ref role="3TsBF5" to="l80j:2GQBRFCFk_3" resolve="timeout" />
                     </node>
                   </node>
                 </node>
