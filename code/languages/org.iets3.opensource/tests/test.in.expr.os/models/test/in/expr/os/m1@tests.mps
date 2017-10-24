@@ -39,7 +39,7 @@
         <child id="2156530943179853139" name="arg" index="2iGwg$" />
       </concept>
       <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.SetAddOp" flags="ng" index="2iGxMk" />
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListAddOp" flags="ng" index="2iGZtc" />
+      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
       <concept id="2156530943179783736" name="org.iets3.core.expr.collections.structure.OneArgListModifier" flags="ng" index="2iGZtf">
         <child id="2156530943179783738" name="arg" index="2iGZtd" />
       </concept>
@@ -409,7 +409,7 @@
         <child id="4723261570619513266" name="expr" index="3zyZNH" />
       </concept>
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
-      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpressionExpression" flags="ng" index="3zyZNN">
+      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpression" flags="ng" index="3zyZNN">
         <child id="4723261570619513266" name="expr" index="3zyZNI" />
         <child id="4723261570619513408" name="type" index="3zyZWv" />
       </concept>
@@ -4482,7 +4482,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVBA" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="5qo5:46cplYy1TAG" resolve="LimitExpressionExpression" />
+          <ref role="1bQReP" to="5qo5:46cplYy1TAG" resolve="LimitExpression" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVJi" role="3pwbzW">
@@ -8518,7 +8518,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="6IxV2nScpfa" role="_fkuS">
-          <property role="30bXRw" value="20" />
+          <property role="30bXRw" value="20.1" />
         </node>
       </node>
       <node concept="_fkuZ" id="6IxV2nScysJ" role="_fkp5">
