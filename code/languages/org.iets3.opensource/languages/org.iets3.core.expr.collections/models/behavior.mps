@@ -1472,6 +1472,30 @@
         <node concept="3Tqbb2" id="21vB0Vz0wDr" role="A3Ik2" />
       </node>
     </node>
+    <node concept="13i0hz" id="4qVjx3kqSwr" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3kqSws" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3kqSw_" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3kqUrd" role="3cqZAp">
+          <node concept="2YIFZM" id="4qVjx3kqUsZ" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:6GySMNjCKBZ" resolve="forNodes" />
+            <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            <node concept="2OqwBi" id="4qVjx3kqUEd" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3kqUtu" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4qVjx3kqURc" role="2OqNvi">
+                <ref role="3TtcxE" to="700h:6zmBjqUinVo" resolve="elements" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3kqSwA" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6zmBjqUiwLz">
     <property role="3GE5qa" value="" />
@@ -1640,6 +1664,25 @@
       <node concept="3Tqbb2" id="6zmBjqUmg50" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
+    </node>
+    <node concept="13i0hz" id="4qVjx3k_rL5" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3k_rL6" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_rL7" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_rL8" role="3cqZAp">
+          <node concept="Xl_RD" id="4qVjx3k_rL9" role="3clFbG">
+            <property role="Xl_RC" value="no effects allowed in map" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3k_rLa" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3k_rLb" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3k_rLc" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8dFem">
@@ -1950,6 +1993,34 @@
   <node concept="13h7C7" id="7GwCuf2E2Wr">
     <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="700h:7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="13i0hz" id="4qVjx3k_rZD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3k_rZE" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_rZF" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_rZG" role="3cqZAp">
+          <node concept="3cpWs3" id="4qVjx3k_snJ" role="3clFbG">
+            <node concept="2OqwBi" id="4qVjx3k_ukz" role="3uHU7w">
+              <node concept="2OqwBi" id="4qVjx3k_sAZ" role="2Oq$k0">
+                <node concept="13iPFW" id="4qVjx3k_snQ" role="2Oq$k0" />
+                <node concept="2yIwOk" id="4qVjx3k_tCo" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="4qVjx3k_uQI" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="4qVjx3k_rZH" role="3uHU7B">
+              <property role="Xl_RC" value="no effects allowed in " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3k_rZI" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3k_rZJ" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3k_rZK" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="7GwCuf2E2Ws" role="13h7CW">
       <node concept="3clFbS" id="7GwCuf2E2Wt" role="2VODD2">
         <node concept="3cpWs8" id="7GwCuf2E2Wu" role="3cqZAp">
@@ -2321,6 +2392,30 @@
       </node>
       <node concept="10P_77" id="7GwCuf2WbBL" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4qVjx3kqWlq" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3kqWlr" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3kqWls" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3kqW_B" role="3cqZAp">
+          <node concept="2YIFZM" id="4qVjx3kqXPB" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:6GySMNjCKBZ" resolve="forNodes" />
+            <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            <node concept="2OqwBi" id="4qVjx3kqY5X" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3kqXQ6" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4qVjx3kqYkd" role="2OqNvi">
+                <ref role="3TtcxE" to="700h:7GwCuf2WbAe" resolve="elements" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3kqWlt" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
+    </node>
     <node concept="13hLZK" id="7GwCuf2WbBm" role="13h7CW">
       <node concept="3clFbS" id="7GwCuf2WbBn" role="2VODD2" />
     </node>
@@ -2539,6 +2634,30 @@
         <node concept="3Tqbb2" id="21vB0VyYngS" role="A3Ik2" />
       </node>
     </node>
+    <node concept="13i0hz" id="4qVjx3kqUW$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3kqUW_" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3kqUWA" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3kqUWB" role="3cqZAp">
+          <node concept="2YIFZM" id="4qVjx3kqUWC" role="3clFbG">
+            <ref role="37wK5l" to="oq0c:6GySMNjCKBZ" resolve="forNodes" />
+            <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            <node concept="2OqwBi" id="4qVjx3kqUWD" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3kqUWE" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4qVjx3kqVJf" role="2OqNvi">
+                <ref role="3TtcxE" to="700h:7kYh9Wszg2m" resolve="elements" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3kqUWG" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7kYh9Ws_cA5">
     <property role="3GE5qa" value="map" />
@@ -2599,6 +2718,25 @@
         </node>
       </node>
       <node concept="10P_77" id="7kYh9Ws_cAj" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4qVjx3kqK2S" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3kqK2T" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3kqK30" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3kqKiu" role="3cqZAp">
+          <node concept="Xl_RD" id="4qVjx3kqKit" role="3clFbG">
+            <property role="Xl_RC" value="key value pair components cannot have an effect" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3kqK31" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3kqK32" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3kqK33" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7kYh9Ws_VK7">
@@ -2663,6 +2801,29 @@
       </node>
       <node concept="17QB3L" id="1RHynufnT79" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4qVjx3k_xVW" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3k_xVX" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_xVY" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_xVZ" role="3cqZAp">
+          <node concept="BsUDl" id="4qVjx3k_xW0" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="4qVjx3k_xW1" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3k_xW2" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4qVjx3k_y9U" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:1RHynufnSPj" resolve="arg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3k_xW4" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
+    </node>
     <node concept="13hLZK" id="1RHynufnT6U" role="13h7CW">
       <node concept="3clFbS" id="1RHynufnT6V" role="2VODD2" />
     </node>
@@ -2687,6 +2848,29 @@
         </node>
       </node>
       <node concept="17QB3L" id="1RHynufoogZ" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4qVjx3k_xD4" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3k_xD5" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_xD6" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_xD7" role="3cqZAp">
+          <node concept="BsUDl" id="4qVjx3k_xD8" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="4qVjx3k_xD9" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3k_xDa" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4qVjx3k_xR2" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:7kYh9Ws$zzU" resolve="arg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3k_xDc" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1ufrWYcJ8Fw">
@@ -2966,6 +3150,29 @@
       </node>
       <node concept="17QB3L" id="3tudP_AYLZl" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4qVjx3k_z0c" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3k_z0d" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_z0e" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_z0f" role="3cqZAp">
+          <node concept="BsUDl" id="4qVjx3k_z0g" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="4qVjx3k_z0h" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3k_z0i" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4qVjx3k_zmL" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:3tudP_AOMNg" resolve="max" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3k_z0k" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="4bUWUHVnDn">
     <property role="3GE5qa" value="collection.rnd" />
@@ -3043,28 +3250,28 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="7SZA7UdHQdE" role="13h7CS">
+    <node concept="13i0hz" id="6GySMNjYDum" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="hasEffect" />
-      <ref role="13i0hy" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
-      <node concept="3Tm1VV" id="7SZA7UdHQdF" role="1B3o_S" />
-      <node concept="3clFbS" id="7SZA7UdHQdK" role="3clF47">
-        <node concept="3clFbF" id="7SZA7UdHQhV" role="3cqZAp">
-          <node concept="2OqwBi" id="7SZA7UdHR4f" role="3clFbG">
-            <node concept="2OqwBi" id="7SZA7UdHQvk" role="2Oq$k0">
-              <node concept="13iPFW" id="7SZA7UdHQhQ" role="2Oq$k0" />
-              <node concept="3TrEf2" id="7SZA7UdHQHk" role="2OqNvi">
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="6GySMNjYDun" role="1B3o_S" />
+      <node concept="3clFbS" id="6GySMNjYDuw" role="3clF47">
+        <node concept="3clFbF" id="6GySMNjYDKa" role="3cqZAp">
+          <node concept="BsUDl" id="6GySMNjYDK5" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="6GySMNjYDXE" role="37wK5m">
+              <node concept="13iPFW" id="6GySMNjYDKt" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6GySMNjYEeH" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:7SZA7UeMt3K" resolve="arg" />
               </node>
-            </node>
-            <node concept="2qgKlT" id="7SZA7UdHRg8" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="7SZA7UdHQdL" role="3clF45" />
+      <node concept="3uibUv" id="6GySMNjYDux" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
     <node concept="13i0hz" id="7uzqvDHB4Ln" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -3487,6 +3694,116 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4qVjx3k_q91" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3k_q92" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_q99" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_qEQ" role="3cqZAp">
+          <node concept="Xl_RD" id="4qVjx3k_qEP" role="3clFbG">
+            <property role="Xl_RC" value="no effects are allowed in fold" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3k_q9a" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3k_q9b" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3k_q9c" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4qVjx3k_rxH">
+    <property role="3GE5qa" value="ordered" />
+    <ref role="13h7C2" to="700h:6zmBjqUjjRq" resolve="AtOp" />
+    <node concept="13i0hz" id="4qVjx3k_rxS" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3k_rxT" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_rxU" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_rxV" role="3cqZAp">
+          <node concept="Xl_RD" id="4qVjx3k_rxW" role="3clFbG">
+            <property role="Xl_RC" value="no effects allowed in at" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3k_rxX" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3k_rxY" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3k_rxZ" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="4qVjx3k_rxI" role="13h7CW">
+      <node concept="3clFbS" id="4qVjx3k_rxJ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4qVjx3k_vaA">
+    <property role="3GE5qa" value="" />
+    <ref role="13h7C2" to="700h:7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
+    <node concept="13i0hz" id="4qVjx3k_rdy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="4qVjx3k_rdz" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_rdE" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_rvT" role="3cqZAp">
+          <node concept="3cpWs3" id="4qVjx3k_vs7" role="3clFbG">
+            <node concept="2OqwBi" id="4qVjx3k_wx4" role="3uHU7w">
+              <node concept="2OqwBi" id="4qVjx3k_vES" role="2Oq$k0">
+                <node concept="13iPFW" id="4qVjx3k_vsv" role="2Oq$k0" />
+                <node concept="2yIwOk" id="4qVjx3k_w3U" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="4qVjx3k_x0W" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="4qVjx3k_rvS" role="3uHU7B">
+              <property role="Xl_RC" value="no effects allowed in " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4qVjx3k_rdF" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="4qVjx3k_rdG" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="4qVjx3k_rdH" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="4qVjx3k_vaB" role="13h7CW">
+      <node concept="3clFbS" id="4qVjx3k_vaC" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4qVjx3k_xap">
+    <property role="3GE5qa" value="list" />
+    <ref role="13h7C2" to="700h:1RHynufnBSV" resolve="ListWithOp" />
+    <node concept="13hLZK" id="4qVjx3k_xaq" role="13h7CW">
+      <node concept="3clFbS" id="4qVjx3k_xar" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4qVjx3k_xa$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="4qVjx3k_xa_" role="1B3o_S" />
+      <node concept="3clFbS" id="4qVjx3k_xaI" role="3clF47">
+        <node concept="3clFbF" id="4qVjx3k_xeU" role="3cqZAp">
+          <node concept="BsUDl" id="4qVjx3k_xeP" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
+            <node concept="2OqwBi" id="4qVjx3k_xpO" role="37wK5m">
+              <node concept="13iPFW" id="4qVjx3k_xfd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4qVjx3k_x_l" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:1RHynufnBSU" resolve="arg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4qVjx3k_xaJ" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
       </node>
     </node>
   </node>

@@ -50,6 +50,7 @@
     <import index="gspm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup(MPS.IDEA/)" />
     <import index="zj86" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup.util(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -2453,17 +2454,17 @@
                   </node>
                 </node>
                 <node concept="1Wc70l" id="4yQfyMjoft2" role="3clFbw">
-                  <node concept="2OqwBi" id="4yQfyMjojXK" role="3uHU7w">
-                    <node concept="1PxgMI" id="4yQfyMjohYt" role="2Oq$k0">
-                      <node concept="chp4Y" id="4yQfyMjoiYG" role="3oSUPX">
-                        <ref role="cht4Q" to="hm2y:6sdnDbSla17" resolve="Expression" />
-                      </node>
-                      <node concept="37vLTw" id="4yQfyMjogJX" role="1m5AlR">
-                        <ref role="3cqZAo" node="4yQfyMjnCg2" resolve="targetNode" />
+                  <node concept="2OqwBi" id="6GySMNkxh$6" role="3uHU7w">
+                    <node concept="2ShNRf" id="6GySMNld7Lc" role="2Oq$k0">
+                      <node concept="1pGfFk" id="6GySMNldfwE" role="2ShVmc">
+                        <ref role="37wK5l" to="oq0c:3ni3WidV2MT" resolve="EffectHelper" />
+                        <node concept="37vLTw" id="6GySMNldk6a" role="37wK5m">
+                          <ref role="3cqZAo" node="4yQfyMjnCg2" resolve="targetNode" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="4yQfyMjol5E" role="2OqNvi">
-                      <ref role="37wK5l" to="pbu6:6KxoTHgLvAa" resolve="hasEffect" />
+                    <node concept="liA8E" id="6GySMNkxjaH" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:6GySMNjNNTz" resolve="readsOrModifiesMutableState" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="4yQfyMjocez" role="3uHU7B">

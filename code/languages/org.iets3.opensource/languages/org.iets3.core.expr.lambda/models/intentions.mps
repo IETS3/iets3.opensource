@@ -320,7 +320,7 @@
               </node>
               <node concept="1mIQ4w" id="49WTic8eHCm" role="2OqNvi">
                 <node concept="chp4Y" id="49WTic8eHEF" role="cj9EA">
-                  <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IPushDownLambdaArgType" />
+                  <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
                 </node>
               </node>
             </node>
@@ -397,6 +397,33 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="79jc6Yz2dhW">
+    <property role="TrG5h" value="wrapWithTuple" />
+    <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="2S6ZIM" id="79jc6Yz2dhX" role="2ZfVej">
+      <node concept="3clFbS" id="79jc6Yz2dhY" role="2VODD2">
+        <node concept="3clFbF" id="79jc6Yz2dhZ" role="3cqZAp">
+          <node concept="Xl_RD" id="79jc6Yz2di0" role="3clFbG">
+            <property role="Xl_RC" value="Wrap with Tuple [,,,]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="79jc6Yz2di1" role="2ZfgGD">
+      <node concept="3clFbS" id="79jc6Yz2di2" role="2VODD2">
+        <node concept="3clFbF" id="79jc6Yz2di3" role="3cqZAp">
+          <node concept="2YIFZM" id="79jc6Yz2fie" role="3clFbG">
+            <ref role="37wK5l" to="5s8v:79jc6Yz2eRx" resolve="wrapWithTuple" />
+            <ref role="1Pybhc" to="5s8v:mM1quA8_tW" resolve="BlockRefactoringHelper" />
+            <node concept="2Sf5sV" id="79jc6Yz2fif" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="79jc6Yz2di6" role="lGtFl">
+      <property role="1SWRpm" value="EXPRESSIONS" />
     </node>
   </node>
 </model>
