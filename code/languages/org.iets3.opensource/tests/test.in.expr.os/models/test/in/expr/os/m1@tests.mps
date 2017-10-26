@@ -409,7 +409,7 @@
         <child id="4723261570619513266" name="expr" index="3zyZNH" />
       </concept>
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
-      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpressionExpression" flags="ng" index="3zyZNN">
+      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpression" flags="ng" index="3zyZNN">
         <child id="4723261570619513266" name="expr" index="3zyZNI" />
         <child id="4723261570619513408" name="type" index="3zyZWv" />
       </concept>
@@ -4482,7 +4482,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVBA" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="5qo5:46cplYy1TAG" resolve="LimitExpressionExpression" />
+          <ref role="1bQReP" to="5qo5:46cplYy1TAG" resolve="LimitExpression" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVJi" role="3pwbzW">
