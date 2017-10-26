@@ -10,6 +10,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" implicit="true" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -26,6 +27,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -162,6 +166,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -383,6 +390,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUt$2Y">
+    <property role="3GE5qa" value="reslice" />
     <ref role="1XX52x" to="l462:3nGzaxUt$2z" resolve="AfterOp" />
     <node concept="3EZMnI" id="3nGzaxUt$30" role="2wV5jI">
       <node concept="2iRfu4" id="3nGzaxUt$31" role="2iSdaV" />
@@ -410,6 +418,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUyXFD">
+    <property role="3GE5qa" value="reslice" />
     <ref role="1XX52x" to="l462:3nGzaxUyXFe" resolve="BeforeOp" />
     <node concept="3EZMnI" id="3nGzaxUyXFF" role="2wV5jI">
       <node concept="2iRfu4" id="3nGzaxUyXFG" role="2iSdaV" />
@@ -437,6 +446,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUzMEp">
+    <property role="3GE5qa" value="reslice" />
     <ref role="1XX52x" to="l462:3nGzaxUzMDV" resolve="BetweenOp" />
     <node concept="3EZMnI" id="3nGzaxUzMEr" role="2wV5jI">
       <node concept="2iRfu4" id="3nGzaxUzMEs" role="2iSdaV" />
@@ -580,6 +590,41 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Mp62pP0G9p">
+    <property role="3GE5qa" value="reduce" />
+    <ref role="1XX52x" to="l462:1Mp62pP0G8S" resolve="ReduceStrategy" />
+    <node concept="PMmxH" id="1Mp62pP0G9u" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Mp62pP0Gax">
+    <property role="3GE5qa" value="reduce" />
+    <ref role="1XX52x" to="l462:1Mp62pP0G8O" resolve="ReduceOp" />
+    <node concept="3EZMnI" id="1Mp62pP0GaA" role="2wV5jI">
+      <node concept="3F0ifn" id="1Mp62pP0GaB" role="3EZMnx">
+        <property role="3F0ifm" value="reduce(" />
+        <node concept="11LMrY" id="1Mp62pP0GaC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1Mp62pP0GTm" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:1Mp62pP0G9w" resolve="strategy" />
+      </node>
+      <node concept="3F0ifn" id="1Mp62pP0GaE" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F1sOY" id="1Mp62pP0HBq" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:1Mp62pP0G9A" resolve="daterange" />
+      </node>
+      <node concept="3F0ifn" id="1Mp62pP0Gb3" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1Mp62pP0Gb4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1Mp62pP0Gb5" role="2iSdaV" />
     </node>
   </node>
 </model>

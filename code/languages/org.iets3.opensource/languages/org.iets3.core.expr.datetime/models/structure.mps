@@ -143,5 +143,36 @@
     <property role="34LRSv" value="end" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
   </node>
+  <node concept="1TIwiD" id="1Mp62pP0lGq">
+    <property role="EcuMT" value="2060704857949559578" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="MonthRangeType" />
+    <property role="34LRSv" value="month" />
+    <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DateRangeType" />
+  </node>
+  <node concept="1TIwiD" id="1Mp62pP0lMQ">
+    <property role="EcuMT" value="2060704857949559990" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="MonthRangeLiteral" />
+    <property role="34LRSv" value="month" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1Mp62pP0lMR" role="1TKVEi">
+      <property role="IQ2ns" value="2060704857949559991" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="year" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1Mp62pP0lMW" role="1TKVEi">
+      <property role="IQ2ns" value="2060704857949559996" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="month" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1Mp62pP0lMS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
 </model>
 

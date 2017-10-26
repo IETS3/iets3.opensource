@@ -48,6 +48,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -185,6 +188,7 @@
     <property role="EcuMT" value="3885635233750859939" />
     <property role="TrG5h" value="AfterOp" />
     <property role="34LRSv" value="after" />
+    <property role="3GE5qa" value="reslice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUt$2$" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -198,6 +202,7 @@
     <property role="EcuMT" value="3885635233752275662" />
     <property role="TrG5h" value="BeforeOp" />
     <property role="34LRSv" value="before" />
+    <property role="3GE5qa" value="reslice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUyXFf" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -211,6 +216,7 @@
     <property role="EcuMT" value="3885635233752492667" />
     <property role="TrG5h" value="BetweenOp" />
     <property role="34LRSv" value="between" />
+    <property role="3GE5qa" value="reslice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUzMDW" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -255,6 +261,63 @@
     <node concept="PrWs8" id="4voqclTxKE2" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1Mp62pP0G8O">
+    <property role="EcuMT" value="2060704857949651508" />
+    <property role="TrG5h" value="ReduceOp" />
+    <property role="34LRSv" value="reduce" />
+    <property role="3GE5qa" value="reduce" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+    <node concept="1TJgyj" id="1Mp62pP0G9w" role="1TKVEi">
+      <property role="IQ2ns" value="2060704857949651552" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
+    </node>
+    <node concept="1TJgyj" id="1Mp62pP0G9A" role="1TKVEi">
+      <property role="IQ2ns" value="2060704857949651558" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="daterange" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Mp62pP0G8S">
+    <property role="EcuMT" value="2060704857949651512" />
+    <property role="TrG5h" value="ReduceStrategy" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="reduce" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1Mp62pP0G8W">
+    <property role="EcuMT" value="2060704857949651516" />
+    <property role="3GE5qa" value="reduce" />
+    <property role="TrG5h" value="ReduceStrategyLast" />
+    <property role="34LRSv" value="LAST" />
+    <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
+  </node>
+  <node concept="1TIwiD" id="1Mp62pP0G9y">
+    <property role="EcuMT" value="2060704857949651554" />
+    <property role="3GE5qa" value="reduce" />
+    <property role="TrG5h" value="ReduceStrategyFirst" />
+    <property role="34LRSv" value="FIRST" />
+    <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
+  </node>
+  <node concept="1TIwiD" id="6nEpT4GTaVD">
+    <property role="EcuMT" value="7343796015602118377" />
+    <property role="3GE5qa" value="reduce" />
+    <property role="TrG5h" value="ReduceStrategyWeighted" />
+    <property role="34LRSv" value="WEIGHTED" />
+    <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
+  </node>
+  <node concept="1TIwiD" id="W7GwMM7AyP">
+    <property role="EcuMT" value="1083030003003582645" />
+    <property role="3GE5qa" value="reduce" />
+    <property role="TrG5h" value="ReduceStrategySum" />
+    <property role="34LRSv" value="SUM" />
+    <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
 </model>
 

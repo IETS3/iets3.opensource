@@ -182,7 +182,7 @@
   </node>
   <node concept="2sgARr" id="3nGzaxUXNqW">
     <property role="3GE5qa" value="range" />
-    <property role="TrG5h" value="supertypeOf_YearRange" />
+    <property role="TrG5h" value="supertypeOf_MonthRange" />
     <node concept="3clFbS" id="3nGzaxUXNqX" role="2sgrp5">
       <node concept="3clFbF" id="3nGzaxUXNt7" role="3cqZAp">
         <node concept="2pJPEk" id="3nGzaxUXNt5" role="3clFbG">
@@ -193,8 +193,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="3nGzaxUXNsn" role="1YuTPh">
-      <property role="TrG5h" value="yrt" />
-      <ref role="1YaFvo" to="mi3w:3nGzaxUXNiV" resolve="YearRangeType" />
+      <property role="TrG5h" value="mrt" />
+      <ref role="1YaFvo" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
     </node>
   </node>
   <node concept="1YbPZF" id="3nGzaxUXXn3">
@@ -247,6 +247,69 @@
     <node concept="1YaCAy" id="3nGzaxUXXxR" role="1YuTPh">
       <property role="TrG5h" value="beginOp" />
       <ref role="1YaFvo" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="1Mp62pP0lLb">
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="supertypeOf_YearRange" />
+    <node concept="3clFbS" id="1Mp62pP0lLc" role="2sgrp5">
+      <node concept="3clFbF" id="1Mp62pP0lLd" role="3cqZAp">
+        <node concept="2pJPEk" id="1Mp62pP0lLe" role="3clFbG">
+          <node concept="2pJPED" id="1Mp62pP0lLf" role="2pJPEn">
+            <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1Mp62pP0lLg" role="1YuTPh">
+      <property role="TrG5h" value="yrt" />
+      <ref role="1YaFvo" to="mi3w:3nGzaxUXNiV" resolve="YearRangeType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1Mp62pP0lPk">
+    <property role="TrG5h" value="typeof_MonthRangeLiteral" />
+    <property role="3GE5qa" value="range" />
+    <node concept="3clFbS" id="1Mp62pP0lPl" role="18ibNy">
+      <node concept="1Z5TYs" id="1Mp62pP0lPm" role="3cqZAp">
+        <node concept="mw_s8" id="1Mp62pP0lPn" role="1ZfhKB">
+          <node concept="2pJPEk" id="1Mp62pP0lPo" role="mwGJk">
+            <node concept="2pJPED" id="1Mp62pP0mnS" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1Mp62pP0lPq" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1Mp62pP0lPr" role="mwGJk">
+            <node concept="1YBJjd" id="1Mp62pP0lPs" role="1Z2MuG">
+              <ref role="1YBMHb" node="1Mp62pP0lP_" resolve="mrl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="1Mp62pP0lPt" role="3cqZAp">
+        <node concept="mw_s8" id="1Mp62pP0lPu" role="1ZfhKB">
+          <node concept="2YIFZM" id="1Mp62pP0lPv" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="1Mp62pP0lPw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1Mp62pP0lPx" role="mwGJk">
+            <node concept="2OqwBi" id="1Mp62pP0lPy" role="1Z2MuG">
+              <node concept="1YBJjd" id="1Mp62pP0lPz" role="2Oq$k0">
+                <ref role="1YBMHb" node="1Mp62pP0lP_" resolve="mrl" />
+              </node>
+              <node concept="3TrEf2" id="1Mp62pP0lP$" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:3nGzaxUXsgk" resolve="year" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1Mp62pP0lP_" role="1YuTPh">
+      <property role="TrG5h" value="mrl" />
+      <ref role="1YaFvo" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
     </node>
   </node>
 </model>
