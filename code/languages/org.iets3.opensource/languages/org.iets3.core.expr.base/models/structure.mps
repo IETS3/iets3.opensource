@@ -1471,5 +1471,15 @@
     <property role="EcuMT" value="162522551948891781" />
     <property role="TrG5h" value="IMainSlot" />
   </node>
+  <node concept="1TIwiD" id="4fgA7QrKSsR">
+    <property role="EcuMT" value="4886573260948604727" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrKSas">
+    <property role="EcuMT" value="4886573260948603548" />
+    <property role="TrG5h" value="IContextTypeProvider" />
+  </node>
 </model>
 
