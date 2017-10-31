@@ -1805,32 +1805,6 @@
   <node concept="1M2fIO" id="4PGMP7y5sdM">
     <property role="3GE5qa" value="components.iface.param" />
     <ref role="1M2myG" to="w9y2:cJpacq6wur" resolve="Parameter" />
-    <node concept="9S07l" id="6b_jefnKwk1" role="9Vyp8">
-      <node concept="3clFbS" id="6b_jefnKwk2" role="2VODD2">
-        <node concept="3clFbF" id="6b_jefnKwk3" role="3cqZAp">
-          <node concept="2OqwBi" id="6b_jefnKwk4" role="3clFbG">
-            <node concept="2OqwBi" id="6b_jefnKwk5" role="2Oq$k0">
-              <node concept="nLn13" id="6b_jefnKwk6" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="6b_jefnKwk7" role="2OqNvi">
-                <node concept="1xMEDy" id="6b_jefnKwk8" role="1xVPHs">
-                  <node concept="chp4Y" id="6b_jefnKwk9" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="6b_jefnKwka" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="6b_jefnKwkb" role="2OqNvi">
-              <ref role="37wK5l" to="3eba:33B7rHqzGFf" resolve="canBeInComponentContent" />
-              <node concept="2OqwBi" id="6b_jefnKwke" role="37wK5m">
-                <node concept="FGMqu" id="6b_jefnKwkf" role="2OqNvi" />
-                <node concept="2DD5aU" id="6b_jefnKwkd" role="2Oq$k0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="1yY6_Uj8q9A">
     <property role="3GE5qa" value="components.substructure" />
