@@ -110,8 +110,6 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
-        <property id="6240706158490734113" name="collapseByDefault" index="3EXrWe" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -697,8 +695,6 @@
     <property role="TrG5h" value="mainAttributes" />
     <ref role="1XX52x" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     <node concept="3EZMnI" id="165w3u_zeWm" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <property role="3EXrWe" value="true" />
       <node concept="pkWqt" id="5yaPPfdA2S5" role="pqm2j">
         <node concept="3clFbS" id="5yaPPfdA2S6" role="2VODD2">
           <node concept="3clFbF" id="5yaPPfdA4p1" role="3cqZAp">
