@@ -14,6 +14,7 @@
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1505,6 +1506,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="3Gt6h9T5l8j" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
+      </node>
     </node>
     <node concept="PMmxH" id="4A8SzOV9V6V" role="6VMZX">
       <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
@@ -1667,6 +1671,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="4QBqyHXmm8" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
+      </node>
     </node>
     <node concept="PMmxH" id="4A8SzOV88J3" role="6VMZX">
       <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
@@ -1704,6 +1711,9 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="4QBqyHXqWF" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
       </node>
     </node>
     <node concept="PMmxH" id="4A8SzOV9VlL" role="6VMZX">
@@ -9108,6 +9118,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="5wMh12D_qbe" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
+      </node>
     </node>
     <node concept="PMmxH" id="3xa$2Oxm5II" role="6VMZX">
       <ref role="PMmxG" to="ir4w:3NBP8_OgMYe" resolve="attributes" />
@@ -9424,6 +9437,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="4QBqyHXqoa" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
       </node>
     </node>
     <node concept="PMmxH" id="4A8SzOV88IZ" role="6VMZX">
@@ -9961,6 +9977,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="4QBqyHXpc1" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
       </node>
     </node>
     <node concept="PMmxH" id="4A8SzOV88J1" role="6VMZX">
@@ -13320,6 +13339,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="4QBqyHXnuP" role="3EZMnx">
+        <ref role="PMmxG" to="ir4w:4um6WxnZYeG" resolve="mainAttributes" />
       </node>
     </node>
     <node concept="PMmxH" id="1yY6_Uj8p_w" role="6VMZX">
