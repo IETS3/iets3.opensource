@@ -2,13 +2,13 @@
 <model ref="r:1ee7d695-67a0-4310-b6a9-28ed5f54bc88(org.iets3.core.attributes.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -97,8 +97,6 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
-        <property id="6240706158490734113" name="collapseByDefault" index="3EXrWe" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -649,8 +647,18 @@
     <property role="TrG5h" value="mainAttributes" />
     <ref role="1XX52x" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     <node concept="3EZMnI" id="165w3u_zeWm" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <property role="3EXrWe" value="true" />
+      <node concept="pkWqt" id="5yaPPfdA2S5" role="pqm2j">
+        <node concept="3clFbS" id="5yaPPfdA2S6" role="2VODD2">
+          <node concept="3clFbF" id="5yaPPfdA4p1" role="3cqZAp">
+            <node concept="2OqwBi" id="5yaPPfdA4_5" role="3clFbG">
+              <node concept="pncrf" id="5yaPPfdA4p0" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5yaPPfdAc1O" role="2OqNvi">
+                <ref role="37wK5l" to="soq7:3fP_noAMLVv" resolve="hasMainAttributes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3vyZuw" id="4QBqyI5dhg" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -808,18 +816,6 @@
         </node>
       </node>
       <node concept="2iRfu4" id="165w3u_zeWp" role="2iSdaV" />
-      <node concept="pkWqt" id="5yaPPfdA2S5" role="pqm2j">
-        <node concept="3clFbS" id="5yaPPfdA2S6" role="2VODD2">
-          <node concept="3clFbF" id="5yaPPfdA4p1" role="3cqZAp">
-            <node concept="2OqwBi" id="5yaPPfdA4_5" role="3clFbG">
-              <node concept="pncrf" id="5yaPPfdA4p0" role="2Oq$k0" />
-              <node concept="2qgKlT" id="5yaPPfdAc1O" role="2OqNvi">
-                <ref role="37wK5l" to="soq7:3fP_noAMLVv" resolve="hasMainAttributes" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="43MQ47XI4aS">
