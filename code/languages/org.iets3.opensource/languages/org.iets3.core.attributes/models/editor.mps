@@ -56,6 +56,7 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -83,6 +84,7 @@
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
         <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
       </concept>
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -92,6 +94,7 @@
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
+        <property id="6240706158490734113" name="collapseByDefault" index="3EXrWe" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -168,6 +171,12 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
       <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
@@ -637,8 +646,12 @@
     <ref role="1XX52x" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     <node concept="3EZMnI" id="165w3u_zeWm" role="2wV5jI">
       <property role="S$Qs1" value="true" />
-      <node concept="3F0ifn" id="4p5cXWqPCpU" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
+      <property role="3EXrWe" value="true" />
+      <node concept="3vyZuw" id="4QBqyI5dhg" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VLuvy" id="4QBqyI5lHp" role="3F10Kt">
+        <property role="Vb096" value="lightGray" />
       </node>
       <node concept="3F2HdR" id="34r75enuVy3" role="3EZMnx">
         <property role="S$F3r" value="true" />
@@ -646,6 +659,11 @@
         <node concept="2EHx9g" id="1QsTHlcrd2t" role="2czzBx" />
         <node concept="107P5z" id="34r75env5WV" role="12AuX0">
           <node concept="3clFbS" id="34r75env5WW" role="2VODD2">
+            <node concept="3SKdUt" id="4QBqyIb4L4" role="3cqZAp">
+              <node concept="3SKdUq" id="4QBqyIb4L6" role="3SKWNk">
+                <property role="3SKdUp" value="needed as a workaround to enable possibility to use &quot;ENTER&quot; in this list" />
+              </node>
+            </node>
             <node concept="3clFbF" id="5mFzepP4Xik" role="3cqZAp">
               <node concept="22lmx$" id="3fP_noBdFzH" role="3clFbG">
                 <node concept="2OqwBi" id="3fP_noBdHR2" role="3uHU7w">
@@ -786,8 +804,17 @@
         </node>
       </node>
       <node concept="2iRfu4" id="165w3u_zeWp" role="2iSdaV" />
-      <node concept="3F0ifn" id="4p5cXWqPD52" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
+      <node concept="pkWqt" id="5yaPPfdA2S5" role="pqm2j">
+        <node concept="3clFbS" id="5yaPPfdA2S6" role="2VODD2">
+          <node concept="3clFbF" id="5yaPPfdA4p1" role="3cqZAp">
+            <node concept="2OqwBi" id="5yaPPfdA4_5" role="3clFbG">
+              <node concept="pncrf" id="5yaPPfdA4p0" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5yaPPfdAc1O" role="2OqNvi">
+                <ref role="37wK5l" to="soq7:3fP_noAMLVv" resolve="hasMainAttributes" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
