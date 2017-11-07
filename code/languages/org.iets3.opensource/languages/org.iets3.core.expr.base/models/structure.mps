@@ -1555,5 +1555,15 @@
     <property role="3GE5qa" value="void" />
     <property role="TrG5h" value="IVoidContext" />
   </node>
+  <node concept="1TIwiD" id="4fgA7QrKSsR">
+    <property role="EcuMT" value="4886573260948604727" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrKSas">
+    <property role="EcuMT" value="4886573260948603548" />
+    <property role="TrG5h" value="IContextTypeProvider" />
+  </node>
 </model>
 

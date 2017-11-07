@@ -13,6 +13,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -149,6 +150,9 @@
     </node>
     <node concept="PrWs8" id="7Atos1y6Hyx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
+    </node>
+    <node concept="PrWs8" id="GKE0N9htCv" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
     </node>
     <node concept="1QGGSu" id="cEt5uj8Nnf" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/component.png" />
@@ -290,8 +294,8 @@
     <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
       <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
     </node>
-    <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    <node concept="PrWs8" id="GKE0N9htIt" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
     </node>
     <node concept="1TJgyj" id="mIQkxfpv7_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -349,6 +353,9 @@
     </node>
     <node concept="PrWs8" id="6Z4vEhQZ6sI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="GKE0N9htIb" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
     </node>
     <node concept="1QGGSu" id="cEt5uj8Nnj" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/instance.png" />
@@ -446,6 +453,9 @@
     <node concept="PrWs8" id="cJpacq6wvp" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="GKE0N9htIj" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4UgzZxsF_xB">
     <property role="3GE5qa" value="components.substructure" />
@@ -474,6 +484,9 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="3kzwyUOJ3aB" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
+    </node>
+    <node concept="PrWs8" id="4fgA7QrEQzL" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
     </node>
     <node concept="1TJgyj" id="3NBP8_O5tqN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -924,6 +937,9 @@
       <property role="IQ2ns" value="3829509942130107028" />
       <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
     </node>
+    <node concept="PrWs8" id="4fgA7QrKujW" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kdj6EM4KIW">
     <property role="3GE5qa" value="behavior.simple" />
@@ -1020,6 +1036,9 @@
     </node>
     <node concept="PrWs8" id="1WAg9Tz6EaX" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="1GpmkLmWv6Y" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
     </node>
   </node>
   <node concept="1TIwiD" id="1WAg9TzeH4s">
@@ -1133,6 +1152,9 @@
     </node>
     <node concept="PrWs8" id="1WAg9Tz2efH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="4fgA7QrFuN4" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
     </node>
   </node>
   <node concept="1TIwiD" id="1WAg9Tz48Vs">
