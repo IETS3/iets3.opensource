@@ -23,6 +23,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
+    <import index="ubdq" ref="f:diff_old#r:cd8f023a-94dd-4e45-bbf0-a419cfafa530(test.in.expr.os.m1@tests@old)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -554,10 +555,10 @@
       <concept id="4255172619709548950" name="org.iets3.core.expr.mutable.structure.BoxType" flags="ng" index="3sNe5_">
         <child id="4255172619709548951" name="baseType" index="3sNe5$" />
       </concept>
-      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.UdpateTarget" flags="ng" index="3sPC8h">
+      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h">
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
-      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.ValueTarget" flags="ng" index="3sQ2Ir" />
+      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
         <child id="4255172619710740514" name="value" index="3sRH3h" />
       </concept>
@@ -17309,7 +17310,6 @@
   <node concept="_iOnU" id="5Win3SA8mme">
     <property role="TrG5h" value="composition" />
     <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
     <node concept="_ixoA" id="5Win3SA8mLJ" role="_iOnB" />
     <node concept="_ixoA" id="5Win3SA8mLR" role="_iOnB" />
     <node concept="1aga60" id="5Win3SA8mLr" role="_iOnB">
@@ -17382,19 +17382,19 @@
     <node concept="_ixoA" id="5Win3SAh5vA" role="_iOnB" />
     <node concept="1aga60" id="5Win3SAh5Ds" role="_iOnB">
       <property role="TrG5h" value="greetAnother" />
+      <node concept="1TcNbk" id="3blX6P03M1i" role="1ahQXP">
+        <node concept="1afdae" id="3blX6P03M1j" role="30dEs_">
+          <ref role="1afue_" to="ubdq:5Win3SAh5N0" resolve="f" />
+        </node>
+        <node concept="1aeIDv" id="3blX6P03M1k" role="30dEsF">
+          <ref role="1aeol8" to="ubdq:5Win3SA8mOc" resolve="greet" />
+        </node>
+      </node>
       <node concept="1ahQXy" id="5Win3SAh5N0" role="1ahQWs">
         <property role="TrG5h" value="f" />
         <node concept="3iA5a0" id="5Win3SAh5Ni" role="3ix9CU">
           <node concept="30bdrU" id="5Win3SAh5NU" role="3iA5af" />
           <node concept="30bXR$" id="5sTgzMBMixY" role="3iA5a1" />
-        </node>
-      </node>
-      <node concept="1TcNbk" id="3blX6P03M1i" role="1ahQXP">
-        <node concept="1afdae" id="3blX6P03M1j" role="30dEs_">
-          <ref role="1afue_" node="5Win3SAh5N0" resolve="f" />
-        </node>
-        <node concept="1aeIDv" id="3blX6P03M1k" role="30dEsF">
-          <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
         </node>
       </node>
     </node>
