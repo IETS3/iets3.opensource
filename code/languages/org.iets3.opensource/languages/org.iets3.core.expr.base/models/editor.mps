@@ -31,6 +31,7 @@
     <import index="35tq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.scope(MPS.Core/)" />
     <import index="wtuq" ref="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(de.slisson.mps.richtext.util)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -451,6 +452,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
@@ -3688,8 +3690,15 @@
         </node>
         <node concept="27VH4U" id="2urjS20E1RQ" role="2jiSrf">
           <node concept="3clFbS" id="2urjS20E1RR" role="2VODD2">
-            <node concept="3clFbF" id="2urjS20E1Z6" role="3cqZAp">
-              <node concept="3fqX7Q" id="2urjS20E3KI" role="3clFbG">
+            <node concept="3clFbJ" id="7S4tmubT8XF" role="3cqZAp">
+              <node concept="3clFbS" id="7S4tmubT8XH" role="3clFbx">
+                <node concept="3cpWs6" id="7S4tmubT9ha" role="3cqZAp">
+                  <node concept="3clFbT" id="7S4tmubT9hn" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="2urjS20E3KI" role="3clFbw">
                 <node concept="2OqwBi" id="2urjS20E3KK" role="3fr31v">
                   <node concept="2OqwBi" id="2urjS20E3KL" role="2Oq$k0">
                     <node concept="7Obwk" id="2urjS20E3KM" role="2Oq$k0" />
@@ -3701,6 +3710,29 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7S4tmubTa3o" role="3cqZAp">
+              <node concept="3clFbS" id="7S4tmubTa3q" role="3clFbx">
+                <node concept="3cpWs6" id="7S4tmubTeyi" role="3cqZAp">
+                  <node concept="3clFbT" id="7S4tmubTeyv" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7S4tmubTbfU" role="3clFbw">
+                <node concept="2OqwBi" id="7S4tmubTaza" role="2Oq$k0">
+                  <node concept="7Obwk" id="7S4tmubTagb" role="2Oq$k0" />
+                  <node concept="2NL2c5" id="7S4tmubTdMj" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="7S4tmubTekX" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7S4tmubT9E0" role="3cqZAp">
+              <node concept="3clFbT" id="7S4tmubT9Eo" role="3cqZAk">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
