@@ -1467,7 +1467,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4fgA7QrKSpi" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+                <ref role="37wK5l" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
               </node>
             </node>
           </node>
@@ -2462,6 +2462,35 @@
     <node concept="1YaCAy" id="4fgA7QrLaIE" role="1YuTPh">
       <property role="TrG5h" value="component" />
       <ref role="1YaFvo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="728g4oaEDho">
+    <property role="TrG5h" value="typeof_PortTypeForExpr" />
+    <property role="3GE5qa" value="expr.nav" />
+    <node concept="3clFbS" id="728g4oaEDhp" role="18ibNy">
+      <node concept="1Z5TYs" id="728g4oaEDXO" role="3cqZAp">
+        <node concept="mw_s8" id="728g4oaEDYg" role="1ZfhKB">
+          <node concept="2OqwBi" id="728g4oaEE8x" role="mwGJk">
+            <node concept="1YBJjd" id="728g4oaEDY$" role="2Oq$k0">
+              <ref role="1YBMHb" node="728g4oaEDhr" resolve="portTypeForExpr" />
+            </node>
+            <node concept="3TrEf2" id="728g4oaEEjV" role="2OqNvi">
+              <ref role="3Tt5mk" to="w9y2:1WAg9Tz48Vt" resolve="port" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="728g4oaEDXR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="728g4oaEDmq" role="mwGJk">
+            <node concept="1YBJjd" id="728g4oaEDod" role="1Z2MuG">
+              <ref role="1YBMHb" node="728g4oaEDhr" resolve="portTypeForExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="728g4oaEDhr" role="1YuTPh">
+      <property role="TrG5h" value="portTypeForExpr" />
+      <ref role="1YaFvo" to="w9y2:1WAg9Tz48Vs" resolve="PortTypeForExpr" />
     </node>
   </node>
 </model>

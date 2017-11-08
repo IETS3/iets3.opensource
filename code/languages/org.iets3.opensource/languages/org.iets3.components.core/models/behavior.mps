@@ -8,6 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -277,6 +278,9 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -1962,12 +1966,20 @@
     <node concept="13i0hz" id="4fgA7QrL3FF" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+      <property role="TrG5h" value="getContextType" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
       <node concept="3Tm1VV" id="4fgA7QrL3FG" role="1B3o_S" />
       <node concept="3clFbS" id="4fgA7QrL3FJ" role="3clF47">
+        <node concept="3SKdUt" id="_yRG$0M4$I" role="3cqZAp">
+          <node concept="3SKdUq" id="_yRG$0M4$K" role="3SKWNk">
+            <property role="3SKdUp" value="type of the component is expected in constraintmodel" />
+          </node>
+        </node>
         <node concept="3clFbF" id="4fgA7QrLaB9" role="3cqZAp">
-          <node concept="13iPFW" id="4fgA7QrLaB8" role="3clFbG" />
+          <node concept="2OqwBi" id="_yRG$0LA1D" role="3clFbG">
+            <node concept="13iPFW" id="4fgA7QrLaB8" role="2Oq$k0" />
+            <node concept="3JvlWi" id="_yRG$0LCf0" role="2OqNvi" />
+          </node>
         </node>
       </node>
       <node concept="3Tqbb2" id="4fgA7QrL3FK" role="3clF45" />
@@ -2774,7 +2786,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
       <node concept="3Tm1VV" id="GKE0N9838A" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N9838D" role="3clF47">
         <node concept="3clFbF" id="GKE0N9856Z" role="3cqZAp">
@@ -3759,7 +3771,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
       <node concept="3Tm1VV" id="GKE0N93h4N" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N93h4Q" role="3clF47">
         <node concept="3clFbF" id="GKE0N93ij6" role="3cqZAp">
@@ -3797,7 +3809,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
       <node concept="3Tm1VV" id="GKE0N92QfU" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N92QfX" role="3clF47">
         <node concept="3clFbF" id="GKE0N92Qmh" role="3cqZAp">
@@ -5181,29 +5193,6 @@
   <node concept="13h7C7" id="1WCh2th1CKU">
     <property role="3GE5qa" value="attributes.specific" />
     <ref role="13h7C2" to="w9y2:3NBP8_OgMNk" resolve="IPortAttribute" />
-    <node concept="13i0hz" id="1WCh2th1CL3" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="canBeUsedUnder" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" node="1WCh2th1Boz" resolve="canBeUsedUnder" />
-      <node concept="3Tm1VV" id="1WCh2th1CL4" role="1B3o_S" />
-      <node concept="3clFbS" id="1WCh2th1CL5" role="3clF47">
-        <node concept="3clFbF" id="1WCh2th1CL6" role="3cqZAp">
-          <node concept="2ShNRf" id="1WCh2th1CL7" role="3clFbG">
-            <node concept="2HTt$P" id="1WCh2th1CL8" role="2ShVmc">
-              <node concept="35c_gC" id="1WCh2th1CL9" role="2HTEbv">
-                <ref role="35c_gD" to="w9y2:6LfBX8YkpdW" resolve="Port" />
-              </node>
-              <node concept="3bZ5Sz" id="1WCh2th1CLa" role="2HTBi0" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A3Dl8" id="1WCh2th1CLb" role="3clF45">
-        <node concept="3bZ5Sz" id="1WCh2th1CLc" role="A3Ik2" />
-      </node>
-    </node>
     <node concept="13hLZK" id="1WCh2th1CKV" role="13h7CW">
       <node concept="3clFbS" id="1WCh2th1CKW" role="2VODD2" />
     </node>

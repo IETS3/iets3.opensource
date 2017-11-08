@@ -508,8 +508,8 @@
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IPortAttribute" />
     <property role="EcuMT" value="4388710048722005204" />
-    <node concept="PrWs8" id="1WCh2th1CHP" role="PrDN$">
-      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
+    <node concept="PrWs8" id="_yRG$0MufA" role="PrDN$">
+      <ref role="PrY4T" to="138:3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="3NBP8_OgMO7">
