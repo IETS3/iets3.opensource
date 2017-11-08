@@ -716,19 +716,6 @@
       <node concept="3F2HdR" id="34r75enuVy3" role="3EZMnx">
         <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="138:3NBP8_OgMVe" resolve="attributes" />
-        <node concept="4$FPG" id="4fgA7QrGn_F" role="4_6I_">
-          <node concept="3clFbS" id="4fgA7QrGn_G" role="2VODD2">
-            <node concept="3clFbF" id="4fgA7QrGoud" role="3cqZAp">
-              <node concept="2ShNRf" id="4fgA7QrGoub" role="3clFbG">
-                <node concept="3zrR0B" id="4fgA7QrGpdg" role="2ShVmc">
-                  <node concept="3Tqbb2" id="4fgA7QrGpdi" role="3zrR0E">
-                    <ref role="ehGHo" to="138:4fgA7QrG5LS" resolve="EmptyAttribute" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="2EHx9g" id="1QsTHlcrd2t" role="2czzBx" />
         <node concept="107P5z" id="34r75env5WV" role="12AuX0">
           <node concept="3clFbS" id="34r75env5WW" role="2VODD2">
