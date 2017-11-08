@@ -308,7 +308,7 @@
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
       <concept id="5994308065090560488" name="org.iets3.core.expr.simpleTypes.structure.StringLengthTarget" flags="ng" index="1uMQU5" />
-      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpressionExpression" flags="ng" index="3zyZNN">
+      <concept id="4723261570619513260" name="org.iets3.core.expr.simpleTypes.structure.LimitExpression" flags="ng" index="3zyZNN">
         <child id="4723261570619513266" name="expr" index="3zyZNH" />
         <child id="4723261570619513408" name="type" index="3zyZWv" />
       </concept>

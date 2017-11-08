@@ -10,6 +10,7 @@ if (project.hasProperty("forceCI")) {
     }
 }
 
+
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
@@ -36,6 +37,7 @@ if (!project.hasProperty("mbeddrVersion")) {
         ext.mbeddrVersion = '1.0-SNAPSHOT'
     }
     else {
+        //default version
         ext.mbeddrVersion = '1.0.+'
     }
 }

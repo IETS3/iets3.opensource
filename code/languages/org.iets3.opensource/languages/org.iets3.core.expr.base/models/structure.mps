@@ -2,6 +2,8 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -13,6 +15,19 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
@@ -284,15 +299,15 @@
     <property role="3GE5qa" value="unary" />
     <property role="EcuMT" value="5115872837156802409" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4qVjx3kr33_" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="4rZeNQ6NgXF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5115872837156802411" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3kr33_" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6NgXE">
@@ -766,6 +781,9 @@
     <property role="34LRSv" value="error" />
     <property role="EcuMT" value="7089558164909884363" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6GySMNjToJa" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="69zaTr1V8fI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
@@ -779,9 +797,6 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7089558164910923907" />
       <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
-    </node>
-    <node concept="PrWs8" id="6GySMNjToJa" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1Yk3m">
@@ -880,15 +895,15 @@
     <property role="TrG5h" value="Contract" />
     <property role="EcuMT" value="867786408877811041" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ni3WiekQc4" role="PzmwI">
+      <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="1TJgyj" id="KaZMgy4Il_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="867786408877811045" />
       <ref role="20lvS9" node="KaZMgy4Ils" resolve="ContractItem" />
-    </node>
-    <node concept="PrWs8" id="3ni3WiekQc4" role="PzmwI">
-      <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy4Ils">
@@ -996,15 +1011,15 @@
     <property role="3GE5qa" value="tuples" />
     <property role="EcuMT" value="1019070541450016346" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4qVjx3kr2pf" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="S$tO8ocnpr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="1019070541450016347" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3kr2pf" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ck7OjOLg5a">
@@ -1221,6 +1236,9 @@
     <property role="TrG5h" value="CheckTypeConstraintsExpr" />
     <property role="34LRSv" value="check" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4qVjx3kqEWM" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="78hTg1zmOGc" role="1TKVEi">
       <property role="IQ2ns" value="8219602584757553932" />
       <property role="20lmBu" value="aggregation" />
@@ -1234,9 +1252,6 @@
       <property role="20kJfa" value="tp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3kqEWM" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1zmOHv">
@@ -1487,14 +1502,34 @@
   <node concept="PlHQZ" id="6BCTLIjCra2">
     <property role="EcuMT" value="7631603674206286466" />
     <property role="TrG5h" value="IControlAdvancedFeatures" />
+    <node concept="2aEySx" id="3WRc5uujLwE" role="lGtFl">
+      <node concept="19SGf9" id="3WRc5uujLwF" role="2aEySw">
+        <node concept="19SUe$" id="3WRc5uujLwG" role="19SJt6">
+          <property role="19SUeA" value="Only works for root nodes." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="PlHQZ" id="ORfz$DS6_k">
     <property role="EcuMT" value="952298261448780116" />
     <property role="TrG5h" value="IMayAllowEffect" />
   </node>
+  <node concept="PlHQZ" id="91pmpwTPq5">
+    <property role="EcuMT" value="162522551948891781" />
+    <property role="TrG5h" value="IMainSlot" />
+  </node>
+  <node concept="PlHQZ" id="3ni3WidV6uh">
+    <property role="EcuMT" value="3878179565988505489" />
+    <property role="3GE5qa" value="effects" />
+    <property role="TrG5h" value="IMayReadMutableState" />
+  </node>
   <node concept="PlHQZ" id="YXKE79ImBi">
     <property role="EcuMT" value="1134276681297127890" />
     <property role="TrG5h" value="IWantNewLine" />
+  </node>
+  <node concept="PlHQZ" id="3ni3WidwYNF">
+    <property role="EcuMT" value="3878179565981658347" />
+    <property role="TrG5h" value="IAllowsDocInChildExpressions" />
   </node>
   <node concept="1TIwiD" id="5sTgzMC4Rb0">
     <property role="EcuMT" value="6285127583257555648" />
@@ -1515,23 +1550,10 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
-  <node concept="PlHQZ" id="91pmpwTPq5">
-    <property role="EcuMT" value="162522551948891781" />
-    <property role="TrG5h" value="IMainSlot" />
-  </node>
   <node concept="PlHQZ" id="79jc6Yz3CVE">
     <property role="EcuMT" value="8237981399425912554" />
     <property role="3GE5qa" value="void" />
     <property role="TrG5h" value="IVoidContext" />
-  </node>
-  <node concept="PlHQZ" id="3ni3WidwYNF">
-    <property role="EcuMT" value="3878179565981658347" />
-    <property role="TrG5h" value="IAllowsDocInChildExpressions" />
-  </node>
-  <node concept="PlHQZ" id="3ni3WidV6uh">
-    <property role="EcuMT" value="3878179565988505489" />
-    <property role="3GE5qa" value="effects" />
-    <property role="TrG5h" value="IMayReadMutableState" />
   </node>
 </model>
 
