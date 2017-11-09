@@ -18534,10 +18534,18 @@
     <node concept="13i0hz" id="4fgA7QrKR89" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getContextType" />
+      <property role="TrG5h" value="getTypedContextNode" />
       <node concept="3Tm1VV" id="4fgA7QrKR8a" role="1B3o_S" />
       <node concept="3Tqbb2" id="4fgA7QrKR8t" role="3clF45" />
       <node concept="3clFbS" id="4fgA7QrKR8c" role="3clF47" />
+      <node concept="P$JXv" id="6ip4Ynib1jw" role="lGtFl">
+        <node concept="TZ5HA" id="6ip4Ynib1jx" role="TZ5H$">
+          <node concept="1dT_AC" id="6ip4Ynib1jy" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="6ip4Ynib1jz" role="3nqlJM">
+          <property role="x79VB" value="a typed node which canbe used in a generic constraint in IConceptSpecificAttribute" />
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="4fgA7QrKSaX" role="13h7CW">
       <node concept="3clFbS" id="4fgA7QrKSaY" role="2VODD2" />

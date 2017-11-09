@@ -250,8 +250,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -278,9 +282,6 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
-    </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -1967,19 +1968,11 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getContextType" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="4fgA7QrL3FG" role="1B3o_S" />
       <node concept="3clFbS" id="4fgA7QrL3FJ" role="3clF47">
-        <node concept="3SKdUt" id="_yRG$0M4$I" role="3cqZAp">
-          <node concept="3SKdUq" id="_yRG$0M4$K" role="3SKWNk">
-            <property role="3SKdUp" value="type of the component is expected in constraintmodel" />
-          </node>
-        </node>
         <node concept="3clFbF" id="4fgA7QrLaB9" role="3cqZAp">
-          <node concept="2OqwBi" id="_yRG$0LA1D" role="3clFbG">
-            <node concept="13iPFW" id="4fgA7QrLaB8" role="2Oq$k0" />
-            <node concept="3JvlWi" id="_yRG$0LCf0" role="2OqNvi" />
-          </node>
+          <node concept="13iPFW" id="4fgA7QrLaB8" role="3clFbG" />
         </node>
       </node>
       <node concept="3Tqbb2" id="4fgA7QrL3FK" role="3clF45" />
@@ -2786,7 +2779,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="GKE0N9838A" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N9838D" role="3clF47">
         <node concept="3clFbF" id="GKE0N9856Z" role="3cqZAp">
@@ -3771,7 +3764,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="GKE0N93h4N" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N93h4Q" role="3clF47">
         <node concept="3clFbF" id="GKE0N93ij6" role="3cqZAp">
@@ -3809,7 +3802,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextType" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="GKE0N92QfU" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N92QfX" role="3clF47">
         <node concept="3clFbF" id="GKE0N92Qmh" role="3cqZAp">
@@ -5196,6 +5189,29 @@
     <node concept="13hLZK" id="1WCh2th1CKV" role="13h7CW">
       <node concept="3clFbS" id="1WCh2th1CKW" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="6ip4YniaBh7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canBeUsedUnder" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="1WCh2th1Boz" resolve="canBeUsedUnder" />
+      <node concept="3Tm1VV" id="6ip4YniaBh8" role="1B3o_S" />
+      <node concept="3clFbS" id="6ip4YniaBhc" role="3clF47">
+        <node concept="3clFbF" id="6ip4YniaUVD" role="3cqZAp">
+          <node concept="2ShNRf" id="6ip4YniaUVB" role="3clFbG">
+            <node concept="2HTt$P" id="6ip4YniaVjJ" role="2ShVmc">
+              <node concept="3bZ5Sz" id="6ip4YniaVkr" role="2HTBi0" />
+              <node concept="35c_gC" id="6ip4YniaVl1" role="2HTEbv">
+                <ref role="35c_gD" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="6ip4YniaBhd" role="3clF45">
+        <node concept="3bZ5Sz" id="6ip4YniaBhe" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="1WCh2th1CP$">
     <property role="3GE5qa" value="attributes.specific" />
@@ -5604,6 +5620,34 @@
     <ref role="13h7C2" to="w9y2:9D0IlqBErS" resolve="ComponentType" />
     <node concept="13hLZK" id="435Eqf9c0kr" role="13h7CW">
       <node concept="3clFbS" id="435Eqf9c0ks" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3QX5db_$5K8" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowedContext" />
+      <ref role="13i0hy" node="3QX5db_zS9H" resolve="allowedContext" />
+      <node concept="3Tm1VV" id="3QX5db_$5K9" role="1B3o_S" />
+      <node concept="3clFbS" id="3QX5db_$5Kd" role="3clF47">
+        <node concept="3clFbF" id="3QX5db_$5KG" role="3cqZAp">
+          <node concept="2ShNRf" id="3QX5db_$5KE" role="3clFbG">
+            <node concept="2HTt$P" id="3QX5db_$85Y" role="2ShVmc">
+              <node concept="3bZ5Sz" id="3QX5db_$86E" role="2HTBi0" />
+              <node concept="2OqwBi" id="3QX5db_$8ZX" role="2HTEbv">
+                <node concept="2OqwBi" id="3QX5db_$8jo" role="2Oq$k0">
+                  <node concept="13iPFW" id="3QX5db_$87g" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3QX5db_$8vf" role="2OqNvi">
+                    <ref role="3Tt5mk" to="w9y2:9D0IlqBEs5" resolve="component" />
+                  </node>
+                </node>
+                <node concept="2yIwOk" id="3QX5db_$9ON" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3QX5db_$5Ke" role="3clF45">
+        <node concept="3bZ5Sz" id="3QX5db_$5Kf" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1KwU7TT_sqA">
@@ -6827,6 +6871,59 @@
         </node>
       </node>
       <node concept="17QB3L" id="1yY6_Uj8$j$" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3QX5db_zS9v">
+    <ref role="13h7C2" to="w9y2:3QX5db_zRnt" resolve="IAttributeContextType" />
+    <node concept="13i0hz" id="3QX5db_zS9H" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowedContext" />
+      <node concept="3Tm1VV" id="3QX5db_zS9I" role="1B3o_S" />
+      <node concept="A3Dl8" id="3QX5db_$5JQ" role="3clF45">
+        <node concept="3bZ5Sz" id="3QX5db_$5JR" role="A3Ik2" />
+      </node>
+      <node concept="3clFbS" id="3QX5db_zS9K" role="3clF47" />
+      <node concept="P$JXv" id="3QX5db_$9Ub" role="lGtFl">
+        <node concept="TZ5HA" id="3QX5db_$9Uc" role="TZ5H$">
+          <node concept="1dT_AC" id="3QX5db_$9Ud" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="3QX5db_$9Ue" role="3nqlJM">
+          <property role="x79VB" value="a list of concepts whe this type can be applied" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3QX5db_zS9w" role="13h7CW">
+      <node concept="3clFbS" id="3QX5db_zS9x" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3QX5db_Hlzu">
+    <property role="3GE5qa" value="expr.nav" />
+    <ref role="13h7C2" to="w9y2:1WAg9Tz48Vs" resolve="PortTypeForExpr" />
+    <node concept="13hLZK" id="3QX5db_Hlzv" role="13h7CW">
+      <node concept="3clFbS" id="3QX5db_Hlzw" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3QX5db_HlzG" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowedContext" />
+      <ref role="13i0hy" node="3QX5db_zS9H" resolve="allowedContext" />
+      <node concept="3Tm1VV" id="3QX5db_HlzH" role="1B3o_S" />
+      <node concept="3clFbS" id="3QX5db_HlzP" role="3clF47">
+        <node concept="3clFbF" id="3QX5db_Hl$7" role="3cqZAp">
+          <node concept="2ShNRf" id="3QX5db_Hl$5" role="3clFbG">
+            <node concept="2HTt$P" id="3QX5db_HlWa" role="2ShVmc">
+              <node concept="3bZ5Sz" id="3QX5db_HlWN" role="2HTBi0" />
+              <node concept="35c_gC" id="3QX5db_HlXo" role="2HTEbv">
+                <ref role="35c_gD" to="w9y2:6LfBX8YkpdW" resolve="Port" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3QX5db_HlzQ" role="3clF45">
+        <node concept="3bZ5Sz" id="3QX5db_HlzR" role="A3Ik2" />
+      </node>
     </node>
   </node>
 </model>

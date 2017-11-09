@@ -28,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.plugin/org.iets3.core.expr.plugin.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.repl.plugin/org.iets3.core.expr.repl.plugin.msd" folder="expr" />
@@ -35,6 +36,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os/test.ts.expr.os.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ui.expr.os/test.ui.expr.os.msd" folder="expr" />

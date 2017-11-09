@@ -161,9 +161,6 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
-    </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
     </language>
@@ -1232,27 +1229,24 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextTypeNode" />
       <node concept="3Tm1VV" id="GKE0N8Vkzj" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N8Vkzm" role="3clF47">
         <node concept="3clFbF" id="GKE0N8VkzD" role="3cqZAp">
-          <node concept="2OqwBi" id="_yRG$0$J7w" role="3clFbG">
-            <node concept="2OqwBi" id="GKE0N8Vlky" role="2Oq$k0">
-              <node concept="2OqwBi" id="GKE0N8VkGd" role="2Oq$k0">
-                <node concept="13iPFW" id="GKE0N8VkzC" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="GKE0N8Vl2x" role="2OqNvi">
-                  <node concept="1xMEDy" id="GKE0N8Vl2z" role="1xVPHs">
-                    <node concept="chp4Y" id="GKE0N8Vl4D" role="ri$Ld">
-                      <ref role="cht4Q" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
-                    </node>
+          <node concept="2OqwBi" id="GKE0N8Vlky" role="3clFbG">
+            <node concept="2OqwBi" id="GKE0N8VkGd" role="2Oq$k0">
+              <node concept="13iPFW" id="GKE0N8VkzC" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="GKE0N8Vl2x" role="2OqNvi">
+                <node concept="1xMEDy" id="GKE0N8Vl2z" role="1xVPHs">
+                  <node concept="chp4Y" id="GKE0N8Vl4D" role="ri$Ld">
+                    <ref role="cht4Q" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
                   </node>
                 </node>
               </node>
-              <node concept="3TrEf2" id="GKE0N8VlAj" role="2OqNvi">
-                <ref role="3Tt5mk" to="138:4fgA7QrBOn0" resolve="ctx" />
-              </node>
             </node>
-            <node concept="3JvlWi" id="_yRG$0$Jq1" role="2OqNvi" />
+            <node concept="3TrEf2" id="GKE0N8VlAj" role="2OqNvi">
+              <ref role="3Tt5mk" to="138:4fgA7QrBOn0" resolve="ctx" />
+            </node>
           </node>
         </node>
       </node>
