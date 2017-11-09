@@ -23,7 +23,6 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
-    <import index="ubdq" ref="f:diff_old#r:cd8f023a-94dd-4e45-bbf0-a419cfafa530(test.in.expr.os.m1@tests@old)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -17384,10 +17383,10 @@
       <property role="TrG5h" value="greetAnother" />
       <node concept="1TcNbk" id="3blX6P03M1i" role="1ahQXP">
         <node concept="1afdae" id="3blX6P03M1j" role="30dEs_">
-          <ref role="1afue_" to="ubdq:5Win3SAh5N0" resolve="f" />
+          <ref role="1afue_" node="5Win3SAh5N0" resolve="f" />
         </node>
         <node concept="1aeIDv" id="3blX6P03M1k" role="30dEsF">
-          <ref role="1aeol8" to="ubdq:5Win3SA8mOc" resolve="greet" />
+          <ref role="1aeol8" node="5Win3SA8mOc" resolve="greet" />
         </node>
       </node>
       <node concept="1ahQXy" id="5Win3SAh5N0" role="1ahQWs">
