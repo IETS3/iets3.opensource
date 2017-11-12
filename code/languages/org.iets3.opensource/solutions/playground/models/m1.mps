@@ -10,9 +10,22 @@
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="7bcf9284-ca29-484f-a3b3-2855bdd813ad" name="org.iets3.core.expr.simpleTypes.tests" version="0" />
+    <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines">
+      <concept id="8735085014265967274" name="org.iets3.core.expr.statemachines.structure.StateMachineType" flags="ng" index="1747cw">
+        <reference id="8735085014265967275" name="machine" index="1747cx" />
+      </concept>
+      <concept id="8735085014266009764" name="org.iets3.core.expr.statemachines.structure.StartExpr" flags="ng" index="1749$I">
+        <child id="8735085014266009767" name="machine" index="1749$H" />
+      </concept>
+      <concept id="8735085014265912483" name="org.iets3.core.expr.statemachines.structure.StateMachine" flags="ng" index="174hOD">
+        <child id="8735085014268484267" name="contents" index="17tHGx" />
+      </concept>
+      <concept id="8735085014265912538" name="org.iets3.core.expr.statemachines.structure.Event" flags="ng" index="174hPg" />
+    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
@@ -35,6 +48,8 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
+      <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -171,6 +186,12 @@
       <concept id="1360296727230407275" name="org.iets3.core.expr.simpleTypes.tests.structure.RandomVectorProducer" flags="ng" index="2tklN1">
         <property id="1360296727230433969" name="count" index="2tkJgr" />
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
+      </concept>
+    </language>
+    <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
+      <concept id="6378203921122327522" name="org.iets3.core.expr.mutable.structure.InteractExpression" flags="ng" index="nZ1le">
+        <child id="6378203921122327523" name="expr" index="nZ1lf" />
+        <child id="6378203921122327550" name="block" index="nZ1li" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -833,6 +854,9 @@
       </node>
     </node>
     <node concept="_ixoA" id="6LLJO$x4jLF" role="_iOnB" />
+    <node concept="_ixoA" id="5y3VELfvZb8" role="_iOnB" />
+    <node concept="_ixoA" id="5y3VELfvYEk" role="_iOnB" />
+    <node concept="_ixoA" id="5y3VELfvYID" role="_iOnB" />
     <node concept="_ixoA" id="6LLJO$xxB_6" role="_iOnB" />
     <node concept="_ixoA" id="6LLJO$xxBtG" role="_iOnB" />
     <node concept="_ixoA" id="6LLJO$xxBmk" role="_iOnB" />
@@ -1361,6 +1385,41 @@
     <node concept="_ixoA" id="3yVmeSjL7oI" role="_iOnB" />
     <node concept="_ixoA" id="3yVmeSjL7oJ" role="_iOnB" />
     <node concept="_ixoA" id="3yVmeSjL7oK" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="5y3VELfvZfv">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="Interact" />
+    <node concept="174hOD" id="5y3VELfvZJk" role="_iOnB">
+      <property role="TrG5h" value="Lights" />
+      <node concept="174hPg" id="5y3VELfvZJu" role="17tHGx">
+        <property role="TrG5h" value="init" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5y3VELfwkxV" role="_iOnB" />
+    <node concept="2zPypq" id="5y3VELfwkzm" role="_iOnB">
+      <property role="TrG5h" value="sm" />
+      <node concept="1749$I" id="5y3VELfwkzJ" role="2zPyp_">
+        <node concept="1747cw" id="5y3VELfwkzX" role="1749$H">
+          <ref role="1747cx" node="5y3VELfvZJk" resolve="Lights" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5y3VELfwkz8" role="_iOnB" />
+    <node concept="_fkuM" id="5y3VELfwky6" role="_iOnB">
+      <property role="TrG5h" value="Test" />
+      <node concept="_fkuZ" id="5y3VELfwkyd" role="_fkp5">
+        <node concept="_fku$" id="5y3VELfwkye" role="_fkur" />
+        <node concept="nZ1le" id="5y3VELfwkyo" role="_fkuY">
+          <node concept="_emDc" id="5y3VELfwk$b" role="nZ1lf">
+            <ref role="_emDf" node="5y3VELfwkzm" resolve="sm" />
+          </node>
+          <node concept="1aduha" id="5y3VELfwkys" role="nZ1li">
+            <node concept="2zH6wq" id="5y3VELfwk$$" role="1aduh9" />
+          </node>
+        </node>
+        <node concept="2vmvVl" id="5y3VELfwkyg" role="_fkuS" />
+      </node>
+    </node>
   </node>
 </model>
 

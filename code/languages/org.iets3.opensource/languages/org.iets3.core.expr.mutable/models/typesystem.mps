@@ -117,6 +117,7 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -794,6 +795,84 @@
     <node concept="1YaCAy" id="1RzljfOfV6O" role="1YuTPh">
       <property role="TrG5h" value="inTxBlock" />
       <ref role="1YaFvo" to="8lgj:1RzljfOfUoH" resolve="InTxBlock" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5y3VELfvZLp">
+    <property role="TrG5h" value="typeof_InteractExpression" />
+    <property role="3GE5qa" value="interactor" />
+    <node concept="3clFbS" id="5y3VELfvZLq" role="18ibNy">
+      <node concept="1Z5TYs" id="5y3VELfw003" role="3cqZAp">
+        <node concept="mw_s8" id="5y3VELfw00n" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5y3VELfw00j" role="mwGJk">
+            <node concept="2OqwBi" id="5y3VELfw09V" role="1Z2MuG">
+              <node concept="1YBJjd" id="5y3VELfw00C" role="2Oq$k0">
+                <ref role="1YBMHb" node="5y3VELfvZLs" resolve="ie" />
+              </node>
+              <node concept="3TrEf2" id="5y3VELfw0kB" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:5y3VELfvZJY" resolve="block" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5y3VELfw006" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5y3VELfvZLz" role="mwGJk">
+            <node concept="1YBJjd" id="5y3VELfvZLN" role="1Z2MuG">
+              <ref role="1YBMHb" node="5y3VELfvZLs" resolve="ie" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5y3VELfvZLs" role="1YuTPh">
+      <property role="TrG5h" value="ie" />
+      <ref role="1YaFvo" to="8lgj:5y3VELfvZJy" resolve="InteractExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5y3VELfw1kc">
+    <property role="TrG5h" value="check_InteractExpression" />
+    <property role="3GE5qa" value="interactor" />
+    <node concept="3clFbS" id="5y3VELfw1kd" role="18ibNy">
+      <node concept="3clFbJ" id="5y3VELfw1km" role="3cqZAp">
+        <node concept="3fqX7Q" id="5y3VELfw2Jm" role="3clFbw">
+          <node concept="2OqwBi" id="5y3VELfw2Jo" role="3fr31v">
+            <node concept="2OqwBi" id="5y3VELfw2Jp" role="2Oq$k0">
+              <node concept="2OqwBi" id="5y3VELfw2Jq" role="2Oq$k0">
+                <node concept="1YBJjd" id="5y3VELfw2Jr" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5y3VELfw1kf" resolve="ie" />
+                </node>
+                <node concept="3TrEf2" id="5y3VELfw2Js" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8lgj:5y3VELfvZJz" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="5y3VELfw2Jt" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="5y3VELfw2Ju" role="2OqNvi">
+              <node concept="chp4Y" id="5y3VELfw2Jv" role="cj9EA">
+                <ref role="cht4Q" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5y3VELfw1ko" role="3clFbx">
+          <node concept="2MkqsV" id="5y3VELfw2O4" role="3cqZAp">
+            <node concept="Xl_RD" id="5y3VELfw2Og" role="2MkJ7o">
+              <property role="Xl_RC" value="not an IInteractorType" />
+            </node>
+            <node concept="2OqwBi" id="5y3VELfw2Ya" role="2OEOjV">
+              <node concept="1YBJjd" id="5y3VELfw2OR" role="2Oq$k0">
+                <ref role="1YBMHb" node="5y3VELfw1kf" resolve="ie" />
+              </node>
+              <node concept="3TrEf2" id="5y3VELfw3cC" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:5y3VELfvZJz" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5y3VELfw1kf" role="1YuTPh">
+      <property role="TrG5h" value="ie" />
+      <ref role="1YaFvo" to="8lgj:5y3VELfvZJy" resolve="InteractExpression" />
     </node>
   </node>
 </model>

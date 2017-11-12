@@ -260,5 +260,26 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5y3VELfvZKq">
+    <property role="3GE5qa" value="interactor" />
+    <ref role="1XX52x" to="8lgj:5y3VELfvZJy" resolve="InteractExpression" />
+    <node concept="3EZMnI" id="5y3VELfvZKv" role="2wV5jI">
+      <node concept="l2Vlx" id="5y3VELfvZKw" role="2iSdaV" />
+      <node concept="3F0ifn" id="5y3VELfvZKs" role="3EZMnx">
+        <property role="3F0ifm" value="interact with" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F1sOY" id="5y3VELfvZKC" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:5y3VELfvZJz" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="5y3VELfvZKK" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F1sOY" id="5y3VELfvZKU" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:5y3VELfvZJY" resolve="block" />
+      </node>
+    </node>
+  </node>
 </model>
 

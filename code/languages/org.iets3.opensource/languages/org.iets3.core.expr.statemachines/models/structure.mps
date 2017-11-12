@@ -9,11 +9,11 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
-    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -64,6 +64,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7$TgoCYa5Nh" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="5y3VELftEQS" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:5y3VELft_XL" resolve="IInteractor" />
     </node>
     <node concept="1TJgyj" id="7$TgoCYjTEF" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268484267" />
@@ -159,6 +162,9 @@
       <property role="20kJfa" value="machine" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7$TgoCYa5Mz" resolve="StateMachine" />
+    </node>
+    <node concept="PrWs8" id="5y3VELfuT6n" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$TgoCYaty$">
