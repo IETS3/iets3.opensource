@@ -586,12 +586,13 @@
         <child id="6100571306011111493" name="args" index="214yk2" />
         <child id="6100571306011111520" name="fun" index="214ykB" />
       </concept>
+      <concept id="5096753237482793709" name="org.iets3.core.expr.lambda.structure.ModifyEffectTag" flags="ng" index="2lgajX" />
+      <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
       <concept id="867786408878526214" name="org.iets3.core.expr.lambda.structure.ValValueInContractExpr" flags="ng" index="I5N0y" />
       <concept id="867786408880429238" name="org.iets3.core.expr.lambda.structure.FunResExpr" flags="ng" index="Ic2ui" />
       <concept id="2807135271606959809" name="org.iets3.core.expr.lambda.structure.BindOp" flags="ng" index="UrGLD">
         <child id="2807135271606959812" name="args" index="UrGLG" />
       </concept>
-      <concept id="7791618349055796936" name="org.iets3.core.expr.lambda.structure.EffectTag" flags="ng" index="WKSlj" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
       </concept>
@@ -17688,7 +17689,7 @@
           </node>
         </node>
       </node>
-      <node concept="WKSlj" id="3GdqffBR5qm" role="28QfE6" />
+      <node concept="2lgajY" id="6LLJO$wFsuu" role="28QfE6" />
     </node>
     <node concept="1aga60" id="3GdqffBSvMH" role="_iOnB">
       <property role="TrG5h" value="testUpdateDatabase" />
@@ -17723,7 +17724,7 @@
           </node>
         </node>
       </node>
-      <node concept="WKSlj" id="3GdqffBSvMQ" role="28QfE6" />
+      <node concept="2lgajY" id="6LLJO$wFrvp" role="28QfE6" />
     </node>
     <node concept="1aga60" id="3GdqffC7err" role="_iOnB">
       <property role="TrG5h" value="testUpdateDatabase2" />
@@ -17776,7 +17777,7 @@
           </node>
         </node>
       </node>
-      <node concept="WKSlj" id="3GdqffC7erM" role="28QfE6" />
+      <node concept="2lgajY" id="6LLJO$wFqwk" role="28QfE6" />
     </node>
     <node concept="1aga60" id="3GdqffC7gWM" role="_iOnB">
       <property role="TrG5h" value="testUpdateDatabase3" />
@@ -17834,7 +17835,7 @@
           </node>
         </node>
       </node>
-      <node concept="WKSlj" id="3GdqffC7gX9" role="28QfE6" />
+      <node concept="2lgajY" id="6LLJO$wFpxf" role="28QfE6" />
     </node>
     <node concept="1aga60" id="3GdqffC8tN2" role="_iOnB">
       <property role="TrG5h" value="testUdpateDatabas4" />
@@ -17867,7 +17868,7 @@
           <ref role="1WbbFS" node="3GdqffC8uQd" resolve="personDB" />
         </node>
       </node>
-      <node concept="WKSlj" id="3GdqffC8$Dk" role="28QfE6" />
+      <node concept="2lgajX" id="6LLJO$wFm$b" role="28QfE6" />
     </node>
     <node concept="_ixoA" id="3GdqffBKPl8" role="_iOnB" />
     <node concept="_fkuM" id="3GdqffBKPl9" role="_iOnB">

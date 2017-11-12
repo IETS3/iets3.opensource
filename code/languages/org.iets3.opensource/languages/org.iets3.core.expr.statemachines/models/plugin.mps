@@ -1190,6 +1190,7 @@
                             <ref role="3cqZAo" node="7$TgoCYbaau" resolve="currentState" />
                           </node>
                           <node concept="oxNuS" id="1RzljfOc1zt" role="37wK5m" />
+                          <node concept="2dz_u5" id="6LLJO$xzNvz" role="37wK5m" />
                         </node>
                       </node>
                     </node>
@@ -2261,7 +2262,7 @@
       <node concept="3Tm1VV" id="3Y6fbK1oTeG" role="1B3o_S" />
       <node concept="3clFbS" id="3Y6fbK1oTeH" role="3clF47">
         <node concept="XkiVB" id="4e_7uAsLnaA" role="3cqZAp">
-          <ref role="37wK5l" to="2ahs:78hTg1_i6c0" resolve="InterpreterEscapeException" />
+          <ref role="37wK5l" to="2ahs:2jL$v5BnxWN" resolve="InterpreterEscapeException" />
           <node concept="37vLTw" id="4e_7uAsLni2" role="37wK5m">
             <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
           </node>
@@ -2324,6 +2325,9 @@
           <node concept="37vLTw" id="5E2FDFNJ8v_" role="37wK5m">
             <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />
           </node>
+          <node concept="37vLTw" id="6LLJO$xxFUu" role="37wK5m">
+            <ref role="3cqZAo" node="6LLJO$xxFtR" resolve="trace" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="3Y6fbK1oUh$" role="3clF46">
@@ -2348,6 +2352,12 @@
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="4_qY3E5j7S6" role="1tU5fm">
           <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6LLJO$xxFtR" role="3clF46">
+        <property role="TrG5h" value="trace" />
+        <node concept="3uibUv" id="6LLJO$xxFSR" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
         </node>
       </node>
     </node>

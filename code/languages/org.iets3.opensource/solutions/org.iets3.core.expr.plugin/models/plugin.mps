@@ -51,6 +51,7 @@
     <import index="zj86" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup.util(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -503,6 +504,78 @@
   <node concept="sE7Ow" id="5ipapt3lw0T">
     <property role="TrG5h" value="showTracer" />
     <property role="2uzpH1" value="Show Trace" />
+    <node concept="2XrIbr" id="6LLJO$x4Cqz" role="32lrUH">
+      <property role="TrG5h" value="getRoot" />
+      <node concept="3uibUv" id="6LLJO$x4Hqz" role="3clF45">
+        <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+      </node>
+      <node concept="3clFbS" id="6LLJO$x4Cq_" role="3clF47">
+        <node concept="3clFbJ" id="6LLJO$x4HYW" role="3cqZAp">
+          <node concept="3clFbS" id="6LLJO$x4HYX" role="3clFbx">
+            <node concept="3clFbF" id="6LLJO$x4HYY" role="3cqZAp">
+              <node concept="37vLTI" id="6LLJO$x4HYZ" role="3clFbG">
+                <node concept="2OqwBi" id="6LLJO$x4HZ0" role="37vLTx">
+                  <node concept="1eOMI4" id="6LLJO$x4HZ1" role="2Oq$k0">
+                    <node concept="10QFUN" id="6LLJO$x4HZ2" role="1eOMHV">
+                      <node concept="37vLTw" id="6LLJO$x4Ig0" role="10QFUP">
+                        <ref role="3cqZAo" node="6LLJO$x4HRZ" resolve="rec" />
+                      </node>
+                      <node concept="3uibUv" id="6LLJO$x4HZ4" role="10QFUM">
+                        <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6LLJO$x4HZ5" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:YcTL0gyvc" resolve="rootTrace" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6LLJO$x4IgS" role="37vLTJ">
+                  <ref role="3cqZAo" node="6LLJO$x4HRZ" resolve="rec" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6LLJO$xv6XN" role="3cqZAp">
+              <node concept="2OqwBi" id="6LLJO$xv6XK" role="3clFbG">
+                <node concept="10M0yZ" id="6LLJO$xv6XL" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="6LLJO$xv6XM" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="6LLJO$xv9DV" role="37wK5m">
+                    <node concept="37vLTw" id="6LLJO$xv9Ek" role="3uHU7w">
+                      <ref role="3cqZAo" node="6LLJO$x4HRZ" resolve="rec" />
+                    </node>
+                    <node concept="Xl_RD" id="6LLJO$xv71d" role="3uHU7B">
+                      <property role="Xl_RC" value="getting root: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="6LLJO$x4HZ7" role="3clFbw">
+            <node concept="3uibUv" id="6LLJO$x4HZ8" role="2ZW6by">
+              <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+            </node>
+            <node concept="37vLTw" id="6LLJO$x4IdY" role="2ZW6bz">
+              <ref role="3cqZAo" node="6LLJO$x4HRZ" resolve="rec" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6LLJO$x4ImG" role="3cqZAp">
+          <node concept="37vLTw" id="6LLJO$x4ImE" role="3clFbG">
+            <ref role="3cqZAo" node="6LLJO$x4HRZ" resolve="rec" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6LLJO$x4HRZ" role="3clF46">
+        <property role="TrG5h" value="rec" />
+        <node concept="3uibUv" id="6LLJO$x4HRY" role="1tU5fm">
+          <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
+      </node>
+    </node>
     <node concept="2XrIbr" id="2g6f$ba_Vkq" role="32lrUH">
       <property role="TrG5h" value="handleMulti" />
       <node concept="3cqZAl" id="2g6f$ba_WuA" role="3clF45" />
@@ -567,17 +640,23 @@
                             <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="2g6f$baqRF_" role="2XxRq1">
-                          <node concept="37vLTw" id="2g6f$baqRFA" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
-                          </node>
-                          <node concept="2qgKlT" id="2g6f$baqRFB" role="2OqNvi">
-                            <ref role="37wK5l" to="pbu6:XblfskIwxp" resolve="getRootTrace" />
-                            <node concept="2OqwBi" id="2g6f$baqW8u" role="37wK5m">
-                              <node concept="37vLTw" id="2g6f$baqW8v" role="2Oq$k0">
-                                <ref role="3cqZAo" node="XblfskJ4zC" resolve="cats" />
+                        <node concept="2OqwBi" id="6LLJO$x4Lgy" role="2XxRq1">
+                          <node concept="2WthIp" id="6LLJO$x4Lg_" role="2Oq$k0" />
+                          <node concept="2XshWL" id="6LLJO$x4LgB" role="2OqNvi">
+                            <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
+                            <node concept="2OqwBi" id="2g6f$baqRF_" role="2XxRq1">
+                              <node concept="37vLTw" id="2g6f$baqRFA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
                               </node>
-                              <node concept="1uHKPH" id="2g6f$baqW8w" role="2OqNvi" />
+                              <node concept="2qgKlT" id="2g6f$baqRFB" role="2OqNvi">
+                                <ref role="37wK5l" to="pbu6:XblfskIwxp" resolve="getRootTrace" />
+                                <node concept="2OqwBi" id="2g6f$baqW8u" role="37wK5m">
+                                  <node concept="37vLTw" id="2g6f$baqW8v" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="XblfskJ4zC" resolve="cats" />
+                                  </node>
+                                  <node concept="1uHKPH" id="2g6f$baqW8w" role="2OqNvi" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -680,14 +759,22 @@
                                             <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
                                           </node>
                                         </node>
-                                        <node concept="2OqwBi" id="2g6f$bavSik" role="2XxRq1">
-                                          <node concept="37vLTw" id="2g6f$bavSil" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
+                                        <node concept="2OqwBi" id="6LLJO$x4MDh" role="2XxRq1">
+                                          <node concept="2WthIp" id="6LLJO$x4MDk" role="2Oq$k0">
+                                            <ref role="32nkFo" node="5ipapt3lw0T" resolve="showTracer" />
                                           </node>
-                                          <node concept="2qgKlT" id="2g6f$bavSim" role="2OqNvi">
-                                            <ref role="37wK5l" to="pbu6:XblfskIwxp" resolve="getRootTrace" />
-                                            <node concept="37vLTw" id="2g6f$bavSin" role="37wK5m">
-                                              <ref role="3cqZAo" node="2g6f$baqM2R" resolve="cat" />
+                                          <node concept="2XshWL" id="6LLJO$x4MDm" role="2OqNvi">
+                                            <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
+                                            <node concept="2OqwBi" id="2g6f$bavSik" role="2XxRq1">
+                                              <node concept="37vLTw" id="2g6f$bavSil" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2g6f$ba_YIs" resolve="mtrn" />
+                                              </node>
+                                              <node concept="2qgKlT" id="2g6f$bavSim" role="2OqNvi">
+                                                <ref role="37wK5l" to="pbu6:XblfskIwxp" resolve="getRootTrace" />
+                                                <node concept="37vLTw" id="2g6f$bavSin" role="37wK5m">
+                                                  <ref role="3cqZAo" node="2g6f$baqM2R" resolve="cat" />
+                                                </node>
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
@@ -1214,12 +1301,18 @@
                       <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="2g6f$baqAMp" role="2XxRq1">
-                    <node concept="37vLTw" id="2g6f$baqAMq" role="2Oq$k0">
-                      <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
-                    </node>
-                    <node concept="2qgKlT" id="2g6f$baqAMr" role="2OqNvi">
-                      <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                  <node concept="2OqwBi" id="6LLJO$x4I_$" role="2XxRq1">
+                    <node concept="2WthIp" id="6LLJO$x4I_B" role="2Oq$k0" />
+                    <node concept="2XshWL" id="6LLJO$x4I_D" role="2OqNvi">
+                      <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
+                      <node concept="2OqwBi" id="6LLJO$x4yhB" role="2XxRq1">
+                        <node concept="37vLTw" id="6LLJO$x4yhC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
+                        </node>
+                        <node concept="2qgKlT" id="6LLJO$x4yhD" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1288,12 +1381,18 @@
                         <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="2g6f$baqB8s" role="2XxRq1">
-                      <node concept="37vLTw" id="2g6f$baqB8t" role="2Oq$k0">
-                        <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
-                      </node>
-                      <node concept="2qgKlT" id="2g6f$baqB8u" role="2OqNvi">
-                        <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                    <node concept="2OqwBi" id="6LLJO$x4Jll" role="2XxRq1">
+                      <node concept="2WthIp" id="6LLJO$x4J3u" role="2Oq$k0" />
+                      <node concept="2XshWL" id="6LLJO$x4JVF" role="2OqNvi">
+                        <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
+                        <node concept="2OqwBi" id="6LLJO$x4Kir" role="2XxRq1">
+                          <node concept="37vLTw" id="6LLJO$x4K8e" role="2Oq$k0">
+                            <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
+                          </node>
+                          <node concept="2qgKlT" id="6LLJO$x4KLs" role="2OqNvi">
+                            <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
