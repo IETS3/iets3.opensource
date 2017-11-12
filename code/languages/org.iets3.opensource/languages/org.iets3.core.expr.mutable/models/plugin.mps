@@ -984,6 +984,27 @@
     <node concept="3uibUv" id="7$TgoCY8RwZ" role="EKbjA">
       <ref role="3uigEE" node="7$TgoCY8N5t" resolve="ITransactionalValue" />
     </node>
+    <node concept="3clFb_" id="2IhchUeDSza" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="createSnapshot" />
+      <node concept="3uibUv" id="2IhchUeDSzb" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="2IhchUeDSzc" role="1B3o_S" />
+      <node concept="3clFbS" id="2IhchUeDSzh" role="3clF47">
+        <node concept="3clFbF" id="2IhchUeDT3j" role="3cqZAp">
+          <node concept="2OqwBi" id="2IhchUeDTn5" role="3clFbG">
+            <node concept="Xjq3P" id="2IhchUeDT3g" role="2Oq$k0" />
+            <node concept="2OwXpG" id="2IhchUeDTJ2" role="2OqNvi">
+              <ref role="2Oxat5" node="3GdqffBQG6A" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2IhchUeDSzi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="79jc6Yz3w69">
     <property role="3GE5qa" value="" />
@@ -1419,6 +1440,9 @@
     <node concept="3Tm1VV" id="4lULzfkKSbp" role="1B3o_S" />
     <node concept="3uibUv" id="4lULzfkKSbR" role="3HQHJm">
       <ref role="3uigEE" node="YMJl2BIYsE" resolve="ILValue" />
+    </node>
+    <node concept="3uibUv" id="2IhchUeDxpG" role="3HQHJm">
+      <ref role="3uigEE" to="2ahs:7dN4gbacQgJ" resolve="IRequiresSnapshot" />
     </node>
   </node>
 </model>
