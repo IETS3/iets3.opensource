@@ -1,0 +1,5 @@
+# To override values defined in this file create projectlibraries.overrides.properties and put overridden values there.
+mbeddr.plattform=${mbeddr.github.core.home}/code/languages
+mbeddr.sl-all=${mbeddr.github.core.home}/code/plugins
+iets3.os=${iets3.github.opensource.home}/code
+iets3.os.scripts-all=${iets3.github.opensource.home}/code
