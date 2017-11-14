@@ -6429,5 +6429,36 @@
       <ref role="1YaFvo" to="hm2y:5sTgzMC4Rb0" resolve="TempWrapExpr" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4Pi6J8BVmrk">
+    <property role="TrG5h" value="typeof_PragmaExpression" />
+    <property role="3GE5qa" value="pragma" />
+    <node concept="3clFbS" id="4Pi6J8BVmrl" role="18ibNy">
+      <node concept="1Z5TYs" id="4Pi6J8BVn1D" role="3cqZAp">
+        <node concept="mw_s8" id="4Pi6J8BVt6V" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4Pi6J8BVt6P" role="mwGJk">
+            <node concept="2OqwBi" id="4Pi6J8BVtgl" role="1Z2MuG">
+              <node concept="1YBJjd" id="4Pi6J8BVt7c" role="2Oq$k0">
+                <ref role="1YBMHb" node="4Pi6J8BVmrn" resolve="pe" />
+              </node>
+              <node concept="3TrEf2" id="4Pi6J8BVtqR" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:4Pi6J8BVsYO" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4Pi6J8BVn1G" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4Pi6J8BVmNj" role="mwGJk">
+            <node concept="1YBJjd" id="4Pi6J8BVmNz" role="1Z2MuG">
+              <ref role="1YBMHb" node="4Pi6J8BVmrn" resolve="pe" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4Pi6J8BVmrn" role="1YuTPh">
+      <property role="TrG5h" value="pe" />
+      <ref role="1YaFvo" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
+    </node>
+  </node>
 </model>
 

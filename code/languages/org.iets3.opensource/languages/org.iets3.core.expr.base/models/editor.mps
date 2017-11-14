@@ -3762,5 +3762,39 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4Pi6J8BU$Pc">
+    <property role="3GE5qa" value="pragma" />
+    <ref role="1XX52x" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
+    <node concept="3EZMnI" id="4Pi6J8BVsYR" role="2wV5jI">
+      <node concept="l2Vlx" id="4Pi6J8BVsYS" role="2iSdaV" />
+      <node concept="PMmxH" id="4Pi6J8BU$Pe" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="VechU" id="4Pi6J8BU_R8" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+        <node concept="Vb9p2" id="4Pi6J8BU_Re" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Pi6J8BVsZ6" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="4Pi6J8C2hO3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="4Pi6J8C2hOp" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4Pi6J8BVsZi" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:4Pi6J8BVsYO" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="4Pi6J8C2hOd" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="VechU" id="4Pi6J8C2hOu" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
