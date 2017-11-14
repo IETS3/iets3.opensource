@@ -1560,6 +1560,12 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5RLTrp36QHm" role="3bR37C">
+          <node concept="3bR9La" id="5RLTrp36QHn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="OnhZN9YvFC" role="2G$12L">
         <property role="BnDLt" value="true" />
