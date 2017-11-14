@@ -52,6 +52,8 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
+    <import index="h587" ref="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -522,6 +524,117 @@
   <node concept="sE7Ow" id="5ipapt3lw0T">
     <property role="TrG5h" value="showTracer" />
     <property role="2uzpH1" value="Show Trace" />
+    <node concept="2XrIbr" id="2trN$Heak7Q" role="32lrUH">
+      <property role="TrG5h" value="buildTraceAndRun" />
+      <node concept="37vLTG" id="2trN$HeamRS" role="3clF46">
+        <property role="TrG5h" value="trn" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="2trN$HeamRW" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2trN$HealEQ" role="3clF45" />
+      <node concept="3clFbS" id="2trN$Heak7S" role="3clF47">
+        <node concept="3clFbF" id="2trN$Heamr7" role="3cqZAp">
+          <node concept="2YIFZM" id="2trN$Heamr8" role="3clFbG">
+            <ref role="1Pybhc" to="h587:70aAUsa54Vr" resolve="CommandWithMessage" />
+            <ref role="37wK5l" to="h587:70aAUsa54ZB" resolve="execute" />
+            <node concept="3cpWs3" id="2trN$Heamr9" role="37wK5m">
+              <node concept="2OqwBi" id="2trN$Heamra" role="3uHU7w">
+                <node concept="37vLTw" id="2trN$Heamrb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2trN$HeamRS" resolve="trn" />
+                </node>
+                <node concept="2qgKlT" id="2trN$Heamrc" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2trN$Heamrd" role="3uHU7B">
+                <property role="Xl_RC" value="Preparing Trace of " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2trN$Heamre" role="37wK5m">
+              <node concept="2OqwBi" id="2trN$Heamrf" role="2Oq$k0">
+                <node concept="2WthIp" id="2trN$Heamrg" role="2Oq$k0" />
+                <node concept="1DTwFV" id="2trN$Heamrh" role="2OqNvi">
+                  <ref role="2WH_rO" node="1rUbSenB5_" resolve="mpsProject" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2trN$Heamri" role="2OqNvi">
+                <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2trN$Heamrj" role="37wK5m">
+              <node concept="YeOm9" id="2trN$Heamrk" role="2ShVmc">
+                <node concept="1Y3b0j" id="2trN$Heamrl" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <node concept="3Tm1VV" id="2trN$Heamrm" role="1B3o_S" />
+                  <node concept="3clFb_" id="2trN$Heamrn" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="run" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="2trN$Heamro" role="1B3o_S" />
+                    <node concept="3cqZAl" id="2trN$Heamrp" role="3clF45" />
+                    <node concept="3clFbS" id="2trN$Heamrq" role="3clF47">
+                      <node concept="3cpWs8" id="2trN$Heamrr" role="3cqZAp">
+                        <node concept="3cpWsn" id="2trN$Heamrs" role="3cpWs9">
+                          <property role="TrG5h" value="rootTrace" />
+                          <node concept="3uibUv" id="2trN$Heamrt" role="1tU5fm">
+                            <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+                          </node>
+                          <node concept="2OqwBi" id="2trN$Heamru" role="33vP2m">
+                            <node concept="37vLTw" id="2trN$Heamrv" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2trN$HeamRS" resolve="trn" />
+                            </node>
+                            <node concept="2qgKlT" id="2trN$Heamrw" role="2OqNvi">
+                              <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2trN$Heamrx" role="3cqZAp">
+                        <node concept="2OqwBi" id="2trN$Heamry" role="3clFbG">
+                          <node concept="2WthIp" id="2trN$Heamrz" role="2Oq$k0" />
+                          <node concept="2XshWL" id="2trN$Heamr$" role="2OqNvi">
+                            <ref role="2WH_rO" node="2g6f$baql9s" resolve="runTracer" />
+                            <node concept="2OqwBi" id="2trN$Heamr_" role="2XxRq1">
+                              <node concept="37vLTw" id="2trN$HeamrA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2trN$HeamRS" resolve="trn" />
+                              </node>
+                              <node concept="2qgKlT" id="2trN$HeamrB" role="2OqNvi">
+                                <ref role="37wK5l" to="pbu6:2CFPPn7rG02" resolve="getTabTitle" />
+                              </node>
+                            </node>
+                            <node concept="2YIFZM" id="2trN$HeamrC" role="2XxRq1">
+                              <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
+                              <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
+                              <node concept="37vLTw" id="2trN$HeamrD" role="37wK5m">
+                                <ref role="3cqZAo" node="2trN$HeamRS" resolve="trn" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="2trN$HeamrE" role="2XxRq1">
+                              <node concept="2WthIp" id="2trN$HeamrF" role="2Oq$k0" />
+                              <node concept="2XshWL" id="2trN$HeamrG" role="2OqNvi">
+                                <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
+                                <node concept="37vLTw" id="2trN$HeamrH" role="2XxRq1">
+                                  <ref role="3cqZAo" node="2trN$Heamrs" resolve="rootTrace" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2XrIbr" id="6LLJO$x4Cqz" role="32lrUH">
       <property role="TrG5h" value="getRoot" />
       <node concept="3uibUv" id="6LLJO$x4Hqz" role="3clF45">
@@ -1324,56 +1437,19 @@
       <node concept="3clFbS" id="5ipapt3lw0V" role="2VODD2">
         <node concept="3clFbJ" id="5IR_boHdXZJ" role="3cqZAp">
           <node concept="3clFbS" id="5IR_boHdXZK" role="3clFbx">
-            <node concept="3cpWs8" id="XblfskJpnu" role="3cqZAp">
-              <node concept="3cpWsn" id="XblfskJpnv" role="3cpWs9">
-                <property role="TrG5h" value="trn" />
-                <node concept="3Tqbb2" id="XblfskJpnt" role="1tU5fm">
-                  <ref role="ehGHo" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
-                </node>
-                <node concept="1PxgMI" id="XblfskJpnw" role="33vP2m">
-                  <node concept="chp4Y" id="XblfskJpnx" role="3oSUPX">
-                    <ref role="cht4Q" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
-                  </node>
-                  <node concept="2OqwBi" id="XblfskJpny" role="1m5AlR">
-                    <node concept="2WthIp" id="XblfskJpnz" role="2Oq$k0" />
-                    <node concept="3gHZIF" id="XblfskJpn$" role="2OqNvi">
-                      <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+            <node concept="3clFbF" id="2trN$HeaGzc" role="3cqZAp">
+              <node concept="2OqwBi" id="2trN$HeaGz6" role="3clFbG">
+                <node concept="2WthIp" id="2trN$HeaGz9" role="2Oq$k0" />
+                <node concept="2XshWL" id="2trN$HeaGzb" role="2OqNvi">
+                  <ref role="2WH_rO" node="2trN$Heak7Q" resolve="buildTraceAndRun" />
+                  <node concept="1PxgMI" id="XblfskJpnw" role="2XxRq1">
+                    <node concept="chp4Y" id="XblfskJpnx" role="3oSUPX">
+                      <ref role="cht4Q" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2g6f$baqAy5" role="3cqZAp">
-              <node concept="2OqwBi" id="2g6f$baqAy6" role="3clFbG">
-                <node concept="2WthIp" id="2g6f$baqAy7" role="2Oq$k0" />
-                <node concept="2XshWL" id="2g6f$baqAy8" role="2OqNvi">
-                  <ref role="2WH_rO" node="2g6f$baql9s" resolve="runTracer" />
-                  <node concept="2OqwBi" id="2g6f$baqAEs" role="2XxRq1">
-                    <node concept="37vLTw" id="2g6f$baqAEt" role="2Oq$k0">
-                      <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
-                    </node>
-                    <node concept="2qgKlT" id="2g6f$baqAEu" role="2OqNvi">
-                      <ref role="37wK5l" to="pbu6:2CFPPn7rG02" resolve="getTabTitle" />
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="2g6f$baqAFR" role="2XxRq1">
-                    <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                    <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
-                    <node concept="37vLTw" id="2g6f$baqAFS" role="37wK5m">
-                      <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="6LLJO$x4I_$" role="2XxRq1">
-                    <node concept="2WthIp" id="6LLJO$x4I_B" role="2Oq$k0" />
-                    <node concept="2XshWL" id="6LLJO$x4I_D" role="2OqNvi">
-                      <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
-                      <node concept="2OqwBi" id="6LLJO$x4yhB" role="2XxRq1">
-                        <node concept="37vLTw" id="6LLJO$x4yhC" role="2Oq$k0">
-                          <ref role="3cqZAo" node="XblfskJpnv" resolve="trn" />
-                        </node>
-                        <node concept="2qgKlT" id="6LLJO$x4yhD" role="2OqNvi">
-                          <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
-                        </node>
+                    <node concept="2OqwBi" id="XblfskJpny" role="1m5AlR">
+                      <node concept="2WthIp" id="XblfskJpnz" role="2Oq$k0" />
+                      <node concept="3gHZIF" id="XblfskJpn$" role="2OqNvi">
+                        <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
                       </node>
                     </node>
                   </node>
@@ -1396,66 +1472,29 @@
           </node>
           <node concept="3eNFk2" id="XblfskIXVI" role="3eNLev">
             <node concept="3clFbS" id="XblfskIXVJ" role="3eOfB_">
-              <node concept="3cpWs8" id="XblfskJpO9" role="3cqZAp">
-                <node concept="3cpWsn" id="XblfskJpOa" role="3cpWs9">
-                  <property role="TrG5h" value="trn" />
-                  <node concept="3Tqbb2" id="XblfskJpOb" role="1tU5fm">
-                    <ref role="ehGHo" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
-                  </node>
-                  <node concept="2OqwBi" id="XblfskJqeZ" role="33vP2m">
-                    <node concept="2OqwBi" id="XblfskJqf0" role="2Oq$k0">
-                      <node concept="2OqwBi" id="XblfskJqf1" role="2Oq$k0">
-                        <node concept="2OqwBi" id="XblfskJqf2" role="2Oq$k0">
-                          <node concept="2WthIp" id="XblfskJqf3" role="2Oq$k0" />
-                          <node concept="3gHZIF" id="XblfskJqf4" role="2OqNvi">
-                            <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+              <node concept="3clFbF" id="2trN$HeaJFC" role="3cqZAp">
+                <node concept="2OqwBi" id="2trN$HeaJFD" role="3clFbG">
+                  <node concept="2WthIp" id="2trN$HeaJFE" role="2Oq$k0" />
+                  <node concept="2XshWL" id="2trN$HeaJFF" role="2OqNvi">
+                    <ref role="2WH_rO" node="2trN$Heak7Q" resolve="buildTraceAndRun" />
+                    <node concept="2OqwBi" id="XblfskJqeZ" role="2XxRq1">
+                      <node concept="2OqwBi" id="XblfskJqf0" role="2Oq$k0">
+                        <node concept="2OqwBi" id="XblfskJqf1" role="2Oq$k0">
+                          <node concept="2OqwBi" id="XblfskJqf2" role="2Oq$k0">
+                            <node concept="2WthIp" id="XblfskJqf3" role="2Oq$k0" />
+                            <node concept="3gHZIF" id="XblfskJqf4" role="2OqNvi">
+                              <ref role="2WH_rO" node="5ipapt3lxen" resolve="someNode" />
+                            </node>
                           </node>
+                          <node concept="z$bX8" id="XblfskJqf5" role="2OqNvi" />
                         </node>
-                        <node concept="z$bX8" id="XblfskJqf5" role="2OqNvi" />
-                      </node>
-                      <node concept="v3k3i" id="XblfskJqf6" role="2OqNvi">
-                        <node concept="chp4Y" id="XblfskJqf7" role="v3oSu">
-                          <ref role="cht4Q" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1uHKPH" id="XblfskJqf8" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2g6f$baqB8j" role="3cqZAp">
-                <node concept="2OqwBi" id="2g6f$baqB8k" role="3clFbG">
-                  <node concept="2WthIp" id="2g6f$baqB8l" role="2Oq$k0" />
-                  <node concept="2XshWL" id="2g6f$baqB8m" role="2OqNvi">
-                    <ref role="2WH_rO" node="2g6f$baql9s" resolve="runTracer" />
-                    <node concept="2OqwBi" id="2g6f$baqB8n" role="2XxRq1">
-                      <node concept="37vLTw" id="2g6f$baqB8o" role="2Oq$k0">
-                        <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
-                      </node>
-                      <node concept="2qgKlT" id="2g6f$baqB8p" role="2OqNvi">
-                        <ref role="37wK5l" to="pbu6:2CFPPn7rG02" resolve="getTabTitle" />
-                      </node>
-                    </node>
-                    <node concept="2YIFZM" id="2g6f$baqB8q" role="2XxRq1">
-                      <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
-                      <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                      <node concept="37vLTw" id="2g6f$baqB8r" role="37wK5m">
-                        <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="6LLJO$x4Jll" role="2XxRq1">
-                      <node concept="2WthIp" id="6LLJO$x4J3u" role="2Oq$k0" />
-                      <node concept="2XshWL" id="6LLJO$x4JVF" role="2OqNvi">
-                        <ref role="2WH_rO" node="6LLJO$x4Cqz" resolve="getRoot" />
-                        <node concept="2OqwBi" id="6LLJO$x4Kir" role="2XxRq1">
-                          <node concept="37vLTw" id="6LLJO$x4K8e" role="2Oq$k0">
-                            <ref role="3cqZAo" node="XblfskJpOa" resolve="trn" />
-                          </node>
-                          <node concept="2qgKlT" id="6LLJO$x4KLs" role="2OqNvi">
-                            <ref role="37wK5l" to="pbu6:7obiejCh8Tv" resolve="getRootTrace" />
+                        <node concept="v3k3i" id="XblfskJqf6" role="2OqNvi">
+                          <node concept="chp4Y" id="XblfskJqf7" role="v3oSu">
+                            <ref role="cht4Q" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
                           </node>
                         </node>
                       </node>
+                      <node concept="1uHKPH" id="XblfskJqf8" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

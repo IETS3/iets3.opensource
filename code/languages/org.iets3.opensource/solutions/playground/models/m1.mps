@@ -930,13 +930,13 @@
       <node concept="_fkuZ" id="5s2rYclmyrM" role="_fkp5">
         <node concept="_fku$" id="5s2rYclmyrN" role="_fkur" />
         <node concept="30bXRB" id="5s2rYclmyFq" role="_fkuS">
-          <property role="30bXRw" value="171700" />
+          <property role="30bXRw" value="220" />
         </node>
         <node concept="1EI4sw" id="4Pi6J8BZHnr" role="_fkuY">
           <node concept="1af_rf" id="5s2rYclmyzz" role="1EJXl6">
             <ref role="1afhQb" node="5s2rYclmxAV" resolve="sumUp" />
             <node concept="30bXRB" id="5s2rYclmyzH" role="1afhQ5">
-              <property role="30bXRw" value="100" />
+              <property role="30bXRw" value="10" />
             </node>
           </node>
         </node>
@@ -950,6 +950,18 @@
           <ref role="1afhQb" node="5s2rYclmxAV" resolve="sumUp" />
           <node concept="30bXRB" id="4Pi6J8C2fQG" role="1afhQ5">
             <property role="30bXRw" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3vcWfImaBZv" role="_fkp5">
+        <node concept="_fku$" id="3vcWfImaBZw" role="_fkur" />
+        <node concept="30bXRB" id="3vcWfImaBZx" role="_fkuS">
+          <property role="30bXRw" value="220" />
+        </node>
+        <node concept="1af_rf" id="3vcWfImaBZy" role="_fkuY">
+          <ref role="1afhQb" node="5s2rYclmxAV" resolve="sumUp" />
+          <node concept="30bXRB" id="3vcWfImaBZz" role="1afhQ5">
+            <property role="30bXRw" value="10" />
           </node>
         </node>
       </node>
