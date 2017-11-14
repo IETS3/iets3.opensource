@@ -13605,5 +13605,9 @@
     <property role="3GE5qa" value="chunk" />
     <ref role="aqKnT" to="w9y2:6LfBX8YivxI" resolve="EmptyComponentsChunkContent" />
   </node>
+  <node concept="3p36aQ" id="3AXZ3AgyWeF">
+    <property role="3GE5qa" value="components" />
+    <ref role="aqKnT" to="w9y2:6LfBX8Yi4ug" resolve="EmptyComponentContent" />
+  </node>
 </model>
 
