@@ -2593,6 +2593,32 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="3vcWfImf5qv" role="3cqZAp">
+                <node concept="3cpWsn" id="3vcWfImf5qw" role="3cpWs9">
+                  <property role="TrG5h" value="cachedStyle" />
+                  <property role="3TUv4t" value="false" />
+                  <node concept="3uibUv" id="3vcWfImf5qx" role="1tU5fm">
+                    <ref role="3uigEE" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+                  </node>
+                  <node concept="1rXfSq" id="3vcWfImf5qy" role="33vP2m">
+                    <ref role="37wK5l" node="5U8d23PNiog" resolve="ta" />
+                    <node concept="37vLTw" id="3vcWfImwaSo" role="37wK5m">
+                      <ref role="3cqZAo" node="5U8d23PMIi5" resolve="bgColor" />
+                    </node>
+                    <node concept="2YIFZM" id="3vcWfImvuoG" role="37wK5m">
+                      <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                      <node concept="Xl_RD" id="3vcWfImvw0T" role="37wK5m">
+                        <property role="Xl_RC" value="#228A00" />
+                      </node>
+                    </node>
+                    <node concept="10M0yZ" id="3vcWfImf5q_" role="37wK5m">
+                      <ref role="3cqZAo" to="lzb2:~SimpleTextAttributes.STYLE_BOLD" resolve="STYLE_BOLD" />
+                      <ref role="1PxDUh" to="lzb2:~SimpleTextAttributes" resolve="SimpleTextAttributes" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="5U8d23PPoYp" role="3cqZAp">
                 <node concept="3cpWsn" id="5U8d23PPoYq" role="3cpWs9">
                   <property role="TrG5h" value="grayStyle" />
@@ -2649,6 +2675,34 @@
                   </node>
                   <node concept="liA8E" id="4yQfyMjl1h6" role="2OqNvi">
                     <ref role="37wK5l" to="2ahs:4yQfyMjibny" resolve="mustBeRevealed" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="3vcWfImfaK9" role="3cqZAp">
+                <node concept="3clFbS" id="3vcWfImfaKa" role="3clFbx">
+                  <node concept="3clFbF" id="3vcWfImfaKb" role="3cqZAp">
+                    <node concept="2OqwBi" id="3vcWfImfaKc" role="3clFbG">
+                      <node concept="37vLTw" id="3vcWfImfaKd" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1rUbSep6to" resolve="output" />
+                      </node>
+                      <node concept="liA8E" id="3vcWfImfaKe" role="2OqNvi">
+                        <ref role="37wK5l" to="lzb2:~ColoredTextContainer.append(java.lang.String,com.intellij.ui.SimpleTextAttributes):void" resolve="append" />
+                        <node concept="Xl_RD" id="3vcWfImfaKf" role="37wK5m">
+                          <property role="Xl_RC" value="[C] " />
+                        </node>
+                        <node concept="37vLTw" id="3vcWfImfhhB" role="37wK5m">
+                          <ref role="3cqZAo" node="3vcWfImf5qw" resolve="cachedStyle" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3vcWfImfaKh" role="3clFbw">
+                  <node concept="37vLTw" id="3vcWfImfaKi" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1rUbSep6tl" resolve="record" />
+                  </node>
+                  <node concept="liA8E" id="3vcWfImfaKj" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:3vcWfImeNK8" resolve="isCachedValue" />
                   </node>
                 </node>
               </node>
