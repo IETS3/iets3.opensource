@@ -358,6 +358,7 @@
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="5096753237482793708" name="org.iets3.core.expr.lambda.structure.ReadEffectTag" flags="ng" index="2lgajW" />
       <concept id="5096753237482793709" name="org.iets3.core.expr.lambda.structure.ModifyEffectTag" flags="ng" index="2lgajX" />
       <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
@@ -1289,11 +1290,12 @@
       <node concept="1WbbFT" id="63mrHUnPqqn" role="2zM23F">
         <ref role="1WbbFS" node="63mrHUnMFe8" resolve="accu" />
       </node>
+      <node concept="2lgajW" id="1lon7Xl4cHu" role="28QfE6" />
     </node>
     <node concept="_ixoA" id="63mrHUnMEMW" role="_iOnB" />
     <node concept="2zPypq" id="7$TgoCYhIzN" role="_iOnB">
       <property role="TrG5h" value="aCounter" />
-      <node concept="1af_rf" id="63mrHUnPpsZ" role="2zPyp_">
+      <node concept="1af_rf" id="1lon7Xl4glk" role="2zPyp_">
         <ref role="1afhQb" node="63mrHUnPoUr" resolve="accu0" />
       </node>
     </node>

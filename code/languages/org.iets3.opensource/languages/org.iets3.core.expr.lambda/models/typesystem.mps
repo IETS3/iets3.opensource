@@ -104,6 +104,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -1269,6 +1272,27 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="1yW0h03P7Z$" role="3cqZAp">
+            <node concept="3cpWsn" id="1yW0h03P7Z_" role="3cpWs9">
+              <property role="TrG5h" value="effectDescriptor" />
+              <node concept="3uibUv" id="1yW0h03P7Zu" role="1tU5fm">
+                <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+              </node>
+              <node concept="2OqwBi" id="1yW0h03P7ZA" role="33vP2m">
+                <node concept="2OqwBi" id="1yW0h03P7ZB" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1yW0h03P7ZC" role="2Oq$k0">
+                    <ref role="1YBMHb" node="49WTic8hm28" resolve="ifr" />
+                  </node>
+                  <node concept="3TrEf2" id="1yW0h03P7ZD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="zzzn:49WTic8hm1F" resolve="fun" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1yW0h03P7ZE" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="6KxoTHgTgHP" role="3cqZAp">
             <node concept="3clFbS" id="6KxoTHgTgHR" role="3clFbx">
               <node concept="3clFbF" id="6KxoTHgThCL" role="3cqZAp">
@@ -1285,22 +1309,20 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="6GySMNkkRKV" role="3clFbw">
-              <node concept="2OqwBi" id="6KxoTHgThev" role="2Oq$k0">
-                <node concept="2OqwBi" id="6KxoTHgTgPL" role="2Oq$k0">
-                  <node concept="1YBJjd" id="6KxoTHgTgNT" role="2Oq$k0">
-                    <ref role="1YBMHb" node="49WTic8hm28" resolve="ifr" />
-                  </node>
-                  <node concept="3TrEf2" id="6KxoTHgTh6j" role="2OqNvi">
-                    <ref role="3Tt5mk" to="zzzn:49WTic8hm1F" resolve="fun" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="6GySMNkkRyG" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+            <node concept="1Wc70l" id="1yW0h03P8wq" role="3clFbw">
+              <node concept="3y3z36" id="1yW0h03P8Pj" role="3uHU7B">
+                <node concept="10Nm6u" id="1yW0h03P8Q2" role="3uHU7w" />
+                <node concept="37vLTw" id="1yW0h03P8Ai" role="3uHU7B">
+                  <ref role="3cqZAo" node="1yW0h03P7Z_" resolve="effectDescriptor" />
                 </node>
               </node>
-              <node concept="liA8E" id="6GySMNkkSnZ" role="2OqNvi">
-                <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
+              <node concept="2OqwBi" id="6GySMNkkRKV" role="3uHU7w">
+                <node concept="37vLTw" id="1yW0h03P7ZF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1yW0h03P7Z_" resolve="effectDescriptor" />
+                </node>
+                <node concept="liA8E" id="6GySMNkkSnZ" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
+                </node>
               </node>
             </node>
           </node>
