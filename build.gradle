@@ -1,4 +1,15 @@
 import de.itemis.mps.gradle.GenerateLibrariesXml;
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0+'
+    }
+}
+
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
@@ -52,16 +63,6 @@ ext.dependencyRepositories = [
     'https://projects.itemis.de/nexus/content/repositories/mbeddr',
     'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
-
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
-    }
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0+'
-    }
-}
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
