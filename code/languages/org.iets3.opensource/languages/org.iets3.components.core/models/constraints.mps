@@ -11,6 +11,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1278,51 +1280,44 @@
             </node>
             <node concept="3clFbH" id="3QX5db_$_LR" role="3cqZAp" />
             <node concept="Jncv_" id="3QX5db_$$bh" role="3cqZAp">
-              <ref role="JncvD" to="w9y2:3QX5db_zRnt" resolve="IAttributeContextType" />
+              <ref role="JncvD" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
               <node concept="37vLTw" id="3QX5db_$$bi" role="JncvB">
                 <ref role="3cqZAo" node="3QX5db_$z4g" resolve="contextType" />
               </node>
               <node concept="3clFbS" id="3QX5db_$$bj" role="Jncv$">
-                <node concept="2Gpval" id="6b_jefnKwjE" role="3cqZAp">
-                  <node concept="2GrKxI" id="6b_jefnKwjF" role="2Gsz3X">
-                    <property role="TrG5h" value="allowed" />
+                <node concept="3SKdUt" id="6ip4Ynib0D3" role="3cqZAp">
+                  <node concept="3SKdUq" id="6ip4Ynib0D5" role="3SKWNk">
+                    <property role="3SKdUp" value="if we are in a IContextTypeProvider, we can ask the type for its allowed context" />
                   </node>
-                  <node concept="3clFbS" id="6b_jefnKwjG" role="2LFqv$">
-                    <node concept="3SKdUt" id="6ip4Ynib0D3" role="3cqZAp">
-                      <node concept="3SKdUq" id="6ip4Ynib0D5" role="3SKWNk">
-                        <property role="3SKdUp" value="if we are in a IContextTypeProvider, we can ask the type for its allowed context" />
-                      </node>
+                </node>
+                <node concept="3SKdUt" id="3QX5db__oRX" role="3cqZAp">
+                  <node concept="3SKdUq" id="3QX5db__oRZ" role="3SKWNk">
+                    <property role="3SKdUp" value="the type gives us a list of allowed concepts" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="3QX5db__mRh" role="3cqZAp">
+                  <node concept="2OqwBi" id="3QX5db__mRj" role="3cqZAk">
+                    <node concept="37vLTw" id="3QX5db__mRk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3QX5db__hZW" resolve="canBeUsedUnderParents" />
                     </node>
-                    <node concept="3SKdUt" id="3QX5db__oRX" role="3cqZAp">
-                      <node concept="3SKdUq" id="3QX5db__oRZ" role="3SKWNk">
-                        <property role="3SKdUp" value="the type gives us a list of allowed concepts" />
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="3QX5db__mRh" role="3cqZAp">
-                      <node concept="2OqwBi" id="3QX5db__mRj" role="3cqZAk">
-                        <node concept="37vLTw" id="3QX5db__mRk" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3QX5db__hZW" resolve="canBeUsedUnderParents" />
-                        </node>
-                        <node concept="3JPx81" id="3QX5db__mRl" role="2OqNvi">
-                          <node concept="2GrUjf" id="3QX5db__mRm" role="25WWJ7">
-                            <ref role="2Gs0qQ" node="6b_jefnKwjF" resolve="allowed" />
+                    <node concept="3JPx81" id="3QX5db__mRl" role="2OqNvi">
+                      <node concept="2OqwBi" id="3fhiqmjOQjY" role="25WWJ7">
+                        <node concept="2OqwBi" id="3fhiqmjOOff" role="2Oq$k0">
+                          <node concept="Jnkvi" id="3fhiqmjONPx" role="2Oq$k0">
+                            <ref role="1M0zk5" node="3QX5db_$$bo" resolve="itypeWithTarget" />
+                          </node>
+                          <node concept="2qgKlT" id="3fhiqmjOPR_" role="2OqNvi">
+                            <ref role="37wK5l" to="gdgh:3QX5db_zS9H" resolve="getTarget" />
                           </node>
                         </node>
+                        <node concept="2yIwOk" id="3fhiqmjOQMm" role="2OqNvi" />
                       </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="3QX5db__eFJ" role="2GsD0m">
-                    <node concept="Jnkvi" id="3QX5db__er8" role="2Oq$k0">
-                      <ref role="1M0zk5" node="3QX5db_$$bo" resolve="attrCtxtType" />
-                    </node>
-                    <node concept="2qgKlT" id="3QX5db__eT9" role="2OqNvi">
-                      <ref role="37wK5l" to="3eba:3QX5db_zS9H" resolve="allowedContext" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="JncvC" id="3QX5db_$$bo" role="JncvA">
-                <property role="TrG5h" value="attrCtxtType" />
+                <property role="TrG5h" value="itypeWithTarget" />
                 <node concept="2jxLKc" id="3QX5db_$$bp" role="1tU5fm" />
               </node>
             </node>
