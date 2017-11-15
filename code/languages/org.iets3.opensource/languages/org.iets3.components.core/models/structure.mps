@@ -508,7 +508,7 @@
     <property role="3GE5qa" value="attributes.specific" />
     <property role="TrG5h" value="IPortAttribute" />
     <property role="EcuMT" value="4388710048722005204" />
-    <node concept="PrWs8" id="1WCh2th1CHP" role="PrDN$">
+    <node concept="PrWs8" id="6ip4YniaACP" role="PrDN$">
       <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
     </node>
   </node>
@@ -924,6 +924,9 @@
       <property role="IQ2ns" value="173673244721587973" />
       <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
     </node>
+    <node concept="PrWs8" id="3QX5db_$5K5" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="IAttributeContextType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3k_9K2Ovuaj">
     <property role="3GE5qa" value="expr.nav" />
@@ -1168,6 +1171,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2244552513301810909" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+    <node concept="PrWs8" id="3QX5db_Hlyz" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="IAttributeContextType" />
     </node>
   </node>
   <node concept="1TIwiD" id="x8tpS_RkkP">
