@@ -1,3 +1,15 @@
+import de.itemis.mps.gradle.GenerateLibrariesXml;
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0+'
+    }
+}
+
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
@@ -213,6 +225,20 @@ ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optio
         classpath: configurations.junitAnt.asPath)
 
 check.dependsOn 'ant-build-and-run-tests'
+
+task generateLibrariesXml(type: GenerateLibrariesXml) {
+    dependsOn resolveMpsArtifacts
+    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
+    defaults rootProject.file('projectlibraries.properties')
+    overrides rootProject.file('projectlibraries.overrides.properties')
+    destination file('code/languages/org.iets3.opensource/.mps/libraries.xml')
+}
+
+task setup {
+    dependsOn generateLibrariesXml
+    dependsOn resolveMpsArtifacts
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
 
 defaultTasks 'ant-clean-and-build'
 
