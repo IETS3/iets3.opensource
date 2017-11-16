@@ -250,8 +250,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -2016,22 +2020,22 @@
       <node concept="10P_77" id="6LfBX8Ylle8" role="3clF45" />
       <node concept="3clFbS" id="6LfBX8Ylle3" role="3clF47">
         <node concept="3clFbF" id="6LfBX8Yller" role="3cqZAp">
-          <node concept="3clFbC" id="6LfBX8Ylln0" role="3clFbG">
-            <node concept="2OqwBi" id="6LfBX8Yllq2" role="3uHU7w">
-              <node concept="37vLTw" id="6LfBX8Yllo0" role="2Oq$k0">
-                <ref role="3cqZAo" node="6LfBX8Yllec" resolve="childKind" />
-              </node>
-              <node concept="2yIwOk" id="6LfBX8Yllvn" role="2OqNvi" />
-            </node>
+          <node concept="17R0WA" id="70UsFYWF77C" role="3clFbG">
             <node concept="2OqwBi" id="6LfBX8YllfX" role="3uHU7B">
               <node concept="13iPFW" id="6LfBX8Ylleq" role="2Oq$k0" />
               <node concept="2yIwOk" id="6LfBX8YlliD" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6LfBX8Yllq2" role="3uHU7w">
+              <node concept="37vLTw" id="6LfBX8Yllo0" role="2Oq$k0">
+                <ref role="3cqZAo" node="6LfBX8Yllec" resolve="contextKind" />
+              </node>
+              <node concept="2yIwOk" id="6LfBX8Yllvn" role="2OqNvi" />
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="6LfBX8Yllec" role="3clF46">
-        <property role="TrG5h" value="childKind" />
+        <property role="TrG5h" value="contextKind" />
         <node concept="3Tqbb2" id="6LfBX8Ylleb" role="1tU5fm">
           <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
         </node>
@@ -6882,6 +6886,41 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3fhiqmjJGou" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="sTlw1tOPg">
+    <property role="3GE5qa" value="attributes.kindspecific" />
+    <ref role="13h7C2" to="w9y2:sTlw1tNLG" resolve="IKindSpecificAttribute" />
+    <node concept="13i0hz" id="68KkV783QPs" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowedKinds" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="68KkV783QPt" role="1B3o_S" />
+      <node concept="A3Dl8" id="68KkV783RDz" role="3clF45">
+        <node concept="3Tqbb2" id="68KkV783Sej" role="A3Ik2">
+          <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="68KkV783QPv" role="3clF47" />
+      <node concept="P$JXv" id="68KkV784TzO" role="lGtFl">
+        <node concept="TZ5HA" id="68KkV784TzP" role="TZ5H$">
+          <node concept="1dT_AC" id="68KkV784TzQ" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is used in the can-be-chind constraint to find out under which kind an attribute" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="sTlw1u370" role="TZ5H$">
+          <node concept="1dT_AC" id="sTlw1u371" role="1dT_Ay">
+            <property role="1dT_AB" value="can be used." />
+          </node>
+        </node>
+        <node concept="x79VA" id="68KkV784TzR" role="3nqlJM">
+          <property role="x79VB" value="a list of componentkinds where an attribute might be used" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="sTlw1tOPh" role="13h7CW">
+      <node concept="3clFbS" id="sTlw1tOPi" role="2VODD2" />
     </node>
   </node>
 </model>

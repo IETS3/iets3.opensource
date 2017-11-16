@@ -925,7 +925,7 @@
       <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
     </node>
     <node concept="PrWs8" id="3QX5db_$5K5" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="IAttributeContextType" />
+      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="3k_9K2Ovuaj">
@@ -1173,7 +1173,7 @@
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
     <node concept="PrWs8" id="3QX5db_Hlyz" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="IAttributeContextType" />
+      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="x8tpS_RkkP">
@@ -1261,6 +1261,14 @@
       <property role="20kJfa" value="outerPort" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="sTlw1tNLG">
+    <property role="EcuMT" value="8133465492372588" />
+    <property role="3GE5qa" value="attributes.kindspecific" />
+    <property role="TrG5h" value="IKindSpecificAttribute" />
+    <node concept="PrWs8" id="sTlw1tNLK" role="PrDN$">
+      <ref role="PrY4T" to="138:3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
 </model>
