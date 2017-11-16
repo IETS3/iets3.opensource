@@ -81,6 +81,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -192,6 +193,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
@@ -1751,6 +1755,57 @@
     </node>
     <node concept="1SWQZ3" id="1qjbRymLUpV" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4pyjK6aZQxn">
+    <property role="TrG5h" value="addErrorMessae" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="av4b:78hTg1$THIv" resolve="ConstraintFailedTestItem" />
+    <node concept="2S6ZIM" id="4pyjK6aZQxo" role="2ZfVej">
+      <node concept="3clFbS" id="4pyjK6aZQxp" role="2VODD2">
+        <node concept="3clFbF" id="4pyjK6aZQEF" role="3cqZAp">
+          <node concept="Xl_RD" id="4pyjK6aZQEE" role="3clFbG">
+            <property role="Xl_RC" value="Add Error Message Constraint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4pyjK6aZQxq" role="2ZfgGD">
+      <node concept="3clFbS" id="4pyjK6aZQxr" role="2VODD2">
+        <node concept="3clFbF" id="4pyjK6aZVzs" role="3cqZAp">
+          <node concept="2OqwBi" id="4pyjK6aZX08" role="3clFbG">
+            <node concept="2OqwBi" id="4pyjK6aZVP8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4pyjK6aZVzr" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4pyjK6aZWgs" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:5bElvpN178O" resolve="errmsg" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="4pyjK6aZXij" role="2OqNvi">
+              <node concept="Xl_RD" id="4pyjK6aZXis" role="tz02z">
+                <property role="Xl_RC" value="constraint message" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="4pyjK6aZQEw" role="lGtFl">
+      <property role="1SWRpm" value="TESTING" />
+    </node>
+    <node concept="2SaL7w" id="4pyjK6aZRtG" role="2ZfVeh">
+      <node concept="3clFbS" id="4pyjK6aZRtH" role="2VODD2">
+        <node concept="3clFbF" id="4pyjK6aZR$Z" role="3cqZAp">
+          <node concept="2OqwBi" id="4pyjK6aZU4d" role="3clFbG">
+            <node concept="2OqwBi" id="4pyjK6aZRXU" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4pyjK6aZR$Y" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4pyjK6aZT9$" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:5bElvpN178O" resolve="errmsg" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="4pyjK6aZVoa" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

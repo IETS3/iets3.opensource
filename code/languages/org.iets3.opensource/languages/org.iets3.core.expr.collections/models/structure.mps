@@ -255,6 +255,9 @@
     <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="1mDdTH3pjZ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUm1me">
     <property role="3GE5qa" value="collection" />
@@ -267,6 +270,12 @@
     </node>
     <node concept="PrWs8" id="7SZA7UdrNq5" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    </node>
+    <node concept="PrWs8" id="1mDdTH3zTs" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="1mDdTH3zTA" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2r4g1">
@@ -316,6 +325,9 @@
     </node>
     <node concept="PrWs8" id="4qVjx3k_rZ_" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="4pyjK6aSor0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2Fanr">
@@ -834,6 +846,36 @@
       <property role="20kJfa" value="combiner" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mDdTGU980">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AsMapOp" />
+    <property role="34LRSv" value="toMap" />
+    <property role="EcuMT" value="24388123213992448" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="1mDdTH0lqM">
+    <property role="TrG5h" value="MapSizeOp" />
+    <property role="34LRSv" value="size" />
+    <property role="3GE5qa" value="collection" />
+    <property role="EcuMT" value="24388123215615666" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1mDdTH0lrV" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mDdTH3Uxz">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="FindFirstOp" />
+    <property role="34LRSv" value="findFirst" />
+    <property role="EcuMT" value="24388123216554083" />
+    <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="1mDdTH3UxA" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="1mDdTH3UxB" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
 </model>
