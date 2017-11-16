@@ -421,10 +421,10 @@
       <concept id="4255172619709548950" name="org.iets3.core.expr.mutable.structure.BoxType" flags="ng" index="3sNe5_">
         <child id="4255172619709548951" name="baseType" index="3sNe5$" />
       </concept>
-      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h">
+      <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.UdpateTarget" flags="ng" index="3sPC8h">
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
-      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
+      <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.ValueTarget" flags="ng" index="3sQ2Ir" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
         <child id="4255172619710740514" name="value" index="3sRH3h" />
       </concept>
@@ -580,6 +580,25 @@
             </node>
           </node>
           <node concept="30bdrU" id="7k$Bvd3eTmV" role="2zM23F" />
+        </node>
+        <node concept="_ixoA" id="2xACJhqZdsS" role="_iOnC" />
+        <node concept="2zPypq" id="2xACJhqZdy9" role="_iOnC">
+          <property role="TrG5h" value="optString" />
+          <node concept="UmHTt" id="2xACJhqZdzq" role="2zPyp_" />
+          <node concept="Uns6S" id="2xACJhqZdBp" role="2zM23F">
+            <node concept="30bdrU" id="2xACJhqZdBR" role="Uns6T" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="2xACJhqZdDn" role="_iOnC">
+          <property role="TrG5h" value="optConcat" />
+          <node concept="30dDZf" id="2xACJhqZdF5" role="2zPyp_">
+            <node concept="30bdrP" id="2xACJhqZdFJ" role="30dEs_">
+              <property role="30bdrQ" value="Hallo" />
+            </node>
+            <node concept="_emDc" id="2xACJhqZdEH" role="30dEsF">
+              <ref role="_emDf" node="2xACJhqZdy9" resolve="optString" />
+            </node>
+          </node>
         </node>
         <node concept="_ixoA" id="6KhzXd8xUUT" role="_iOnC" />
         <node concept="_ixoA" id="6KhzXd8xUVm" role="_iOnC" />
@@ -2800,6 +2819,22 @@
             </node>
           </node>
           <node concept="2vmvy5" id="7k$Bvd3eP1G" role="2zM23F" />
+        </node>
+        <node concept="_ixoA" id="2xACJhqYZrz" role="_iOnC" />
+        <node concept="2zPypq" id="2xACJhqYZyc" role="_iOnC">
+          <property role="TrG5h" value="opt" />
+          <node concept="2vmpnb" id="2xACJhqYZ$W" role="2zPyp_" />
+          <node concept="Uns6S" id="2xACJhqYZ$d" role="2zM23F">
+            <node concept="2vmvy5" id="2xACJhqYZ$$" role="Uns6T" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="2xACJhqYZB8" role="_iOnC">
+          <property role="TrG5h" value="notTrue" />
+          <node concept="30czhn" id="2xACJhqYZDd" role="2zPyp_">
+            <node concept="_emDc" id="2xACJhqYZDt" role="30czhm">
+              <ref role="_emDf" node="2xACJhqYZyc" resolve="opt" />
+            </node>
+          </node>
         </node>
         <node concept="7CXmI" id="7k$Bvd3ePDE" role="lGtFl">
           <node concept="7OXhh" id="7k$Bvd3ePDG" role="7EUXB" />

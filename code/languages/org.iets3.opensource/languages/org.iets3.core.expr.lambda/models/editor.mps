@@ -12,7 +12,6 @@
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="f7uj" ref="r:8ffb9fde-829b-4ee3-ade6-f4eee43e66a8(jetbrains.mps.lang.typesystem.plugin)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -944,7 +943,7 @@
               <node concept="2OqwBi" id="5iD_kvlJ4TU" role="3clFbG">
                 <node concept="2OqwBi" id="5iD_kvlJ3P9" role="2Oq$k0">
                   <node concept="2e73FJ" id="5iD_kvlJ3zK" role="2Oq$k0" />
-                  <node concept="3JvlWi" id="5iD_kvlJ4zM" role="2OqNvi" />
+                  <node concept="3JvlWi" id="3zBKJGsglCa" role="2OqNvi" />
                 </node>
                 <node concept="1mIQ4w" id="5iD_kvlJ5bF" role="2OqNvi">
                   <node concept="chp4Y" id="5iD_kvlJ5sa" role="cj9EA">
