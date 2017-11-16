@@ -6941,5 +6941,30 @@
       <node concept="3clFbS" id="sTlw1tOPi" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6ytULbsfL7r">
+    <property role="3GE5qa" value="expr.nav" />
+    <ref role="13h7C2" to="w9y2:6ytULbsfL69" resolve="AbstractConnectortExprType" />
+    <node concept="13hLZK" id="6ytULbsfL7s" role="13h7CW">
+      <node concept="3clFbS" id="6ytULbsfL7t" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6ytULbsfL7Y" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTarget" />
+      <ref role="13i0hy" to="gdgh:3QX5db_zS9H" resolve="getTarget" />
+      <node concept="3Tm1VV" id="6ytULbsfL7Z" role="1B3o_S" />
+      <node concept="3clFbS" id="6ytULbsfL86" role="3clF47">
+        <node concept="3clFbF" id="6ytULbsfL8t" role="3cqZAp">
+          <node concept="2OqwBi" id="6ytULbsfLhH" role="3clFbG">
+            <node concept="13iPFW" id="6ytULbsfL8s" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6ytULbsfLqL" role="2OqNvi">
+              <ref role="3Tt5mk" to="w9y2:6ytULbsfL6J" resolve="abstractConnector" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6ytULbsfL87" role="3clF45" />
+    </node>
+  </node>
 </model>
 

@@ -1274,5 +1274,28 @@
       <ref role="PrY4T" to="138:3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
+  <node concept="PlHQZ" id="6ytULbseDPa">
+    <property role="EcuMT" value="7538439817524845898" />
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="IConnectorExprType" />
+  </node>
+  <node concept="1TIwiD" id="6ytULbsfL69">
+    <property role="EcuMT" value="7538439817525137801" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="AbstractConnectortExprType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6ytULbsfL6J" role="1TKVEi">
+      <property role="IQ2ns" value="7538439817525137839" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="abstractConnector" />
+      <ref role="20lvS9" node="mIQkxg5ZSA" resolve="AbstractConnector" />
+    </node>
+    <node concept="PrWs8" id="6ytULbsfL6F" role="PzmwI">
+      <ref role="PrY4T" node="6ytULbseDPa" resolve="IConnectorExprType" />
+    </node>
+    <node concept="PrWs8" id="6ytULbsfL6U" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
+    </node>
+  </node>
 </model>
 

@@ -2464,5 +2464,39 @@
       <ref role="1YaFvo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6ytULbsfLwI">
+    <property role="TrG5h" value="typeof_AbstractConnector" />
+    <property role="3GE5qa" value="components.substructure" />
+    <node concept="3clFbS" id="6ytULbsfLwJ" role="18ibNy">
+      <node concept="1Z5TYs" id="6ytULbsfLP1" role="3cqZAp">
+        <node concept="mw_s8" id="6ytULbsfLP_" role="1ZfhKB">
+          <node concept="2pJPEk" id="6ytULbsfLPx" role="mwGJk">
+            <node concept="2pJPED" id="6ytULbsfLPQ" role="2pJPEn">
+              <ref role="2pJxaS" to="w9y2:6ytULbsfL69" resolve="AbstractConnectortExprType" />
+              <node concept="2pIpSj" id="6ytULbsfLS3" role="2pJxcM">
+                <ref role="2pIpSl" to="w9y2:6ytULbsfL6J" resolve="abstractConnector" />
+                <node concept="36biLy" id="6ytULbsfLTi" role="2pJxcZ">
+                  <node concept="1YBJjd" id="6ytULbsfLTx" role="36biLW">
+                    <ref role="1YBMHb" node="6ytULbsfLwL" resolve="abstractConnector" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6ytULbsfLP4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6ytULbsfLxd" role="mwGJk">
+            <node concept="1YBJjd" id="6ytULbsfLz3" role="1Z2MuG">
+              <ref role="1YBMHb" node="6ytULbsfLwL" resolve="abstractConnector" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6ytULbsfLwL" role="1YuTPh">
+      <property role="TrG5h" value="abstractConnector" />
+      <ref role="1YaFvo" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+    </node>
+  </node>
 </model>
 
