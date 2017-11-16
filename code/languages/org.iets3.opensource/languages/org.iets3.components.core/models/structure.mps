@@ -747,6 +747,9 @@
     <node concept="PrWs8" id="7Atos1yb6hI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
+    <node concept="PrWs8" id="sTlw1Xzpp" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4KDeVD8s9RL">
     <property role="TrG5h" value="IConnectorType" />
