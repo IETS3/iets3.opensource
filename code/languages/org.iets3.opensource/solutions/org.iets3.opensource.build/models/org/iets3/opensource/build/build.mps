@@ -3633,6 +3633,22 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="59rcyU3GDms" role="3bR31x">
+        <node concept="3LXTmp" id="59rcyU3GDmt" role="3rtmxm">
+          <node concept="3qWCbU" id="59rcyU3GDmu" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="59rcyU3GDmv" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <node concept="2Ry0Ak" id="59rcyU3GDmw" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="59rcyU3GDmx" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.comments" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
       <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />

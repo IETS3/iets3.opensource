@@ -53,6 +53,10 @@
       <concept id="509610514780580301" name="org.iets3.components.core.structure.ComponentSubstructure" flags="ng" index="GnABt">
         <child id="509610514780580302" name="contents" index="GnABu" />
       </concept>
+      <concept id="596856272727131445" name="org.iets3.components.core.structure.ComponentInterface" flags="ng" index="H_j2F">
+        <child id="596856272727132646" name="content" index="H_jLS" />
+      </concept>
+      <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstance" flags="ng" index="MGl88">
         <child id="3432899422388046625" name="component" index="MGl3R" />
       </concept>
@@ -95,6 +99,9 @@
       </node>
       <node concept="1i1XBj" id="5kwEgmAi6Gh" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDmP" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDmQ" role="H_jLS" />
+        </node>
         <node concept="1i0KCM" id="5kwEgmAi6Gj" role="1i0K$_" />
       </node>
     </node>
@@ -107,6 +114,9 @@
       <property role="TrG5h" value="TestChunk" />
       <node concept="1i1XBj" id="5kwEgmAi6Gz" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDmR" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDmS" role="H_jLS" />
+        </node>
         <node concept="1i0KCM" id="5kwEgmAi6G$" role="1i0K$_" />
         <node concept="1z9TsT" id="5kwEgmAi6GS" role="lGtFl">
           <node concept="OjmMv" id="5kwEgmAi6GT" role="1w35rA">
@@ -124,6 +134,9 @@
       <property role="TrG5h" value="TestChunk" />
       <node concept="1i1XBj" id="5kwEgmAh7pN" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDmT" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDmU" role="H_jLS" />
+        </node>
         <node concept="GnABt" id="5kwEgmAh7qZ" role="1i1XAe">
           <node concept="GnyP7" id="5kwEgmAh7rP" role="GnABu">
             <node concept="LIFWc" id="5kwEgmAh7sa" role="lGtFl">
@@ -145,6 +158,9 @@
       </node>
       <node concept="1i1XBj" id="5kwEgmAh7qt" role="1i1AA4">
         <property role="TrG5h" value="CP1" />
+        <node concept="H_j2F" id="59rcyU3GDmV" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDmW" role="H_jLS" />
+        </node>
         <node concept="1i0KCM" id="5kwEgmAh7qv" role="1i0K$_" />
       </node>
       <node concept="1i1AuW" id="5kwEgmAh7pR" role="1i1AA4" />
@@ -153,6 +169,9 @@
       <property role="TrG5h" value="TestChunk" />
       <node concept="1i1XBj" id="5kwEgmAh7sh" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDmX" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDmY" role="H_jLS" />
+        </node>
         <node concept="GnABt" id="5kwEgmAh7si" role="1i1XAe">
           <node concept="1i6xzV" id="5kwEgmAh7sl" role="GnABu">
             <node concept="1i1fwW" id="5kwEgmAh7sm" role="MGl3R">
@@ -172,6 +191,9 @@
       </node>
       <node concept="1i1XBj" id="5kwEgmAh7sp" role="1i1AA4">
         <property role="TrG5h" value="CP1" />
+        <node concept="H_j2F" id="59rcyU3GDmZ" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDn0" role="H_jLS" />
+        </node>
         <node concept="1i0KCM" id="5kwEgmAh7sq" role="1i0K$_" />
       </node>
       <node concept="1i1AuW" id="5kwEgmAh7pZ" role="1i1AA4" />
@@ -196,6 +218,9 @@
       <property role="TrG5h" value="Chunk" />
       <node concept="1i1XBj" id="5kwEgmAi6LI" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDn1" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDn2" role="H_jLS" />
+        </node>
         <node concept="1i1Xx2" id="5kwEgmAi6LP" role="1i1XAe">
           <node concept="LIFWc" id="5kwEgmAi6M6" role="lGtFl">
             <property role="ZRATv" value="true" />
@@ -213,6 +238,9 @@
       <property role="TrG5h" value="Chunk" />
       <node concept="1i1XBj" id="5kwEgmAi6Mb" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
+        <node concept="H_j2F" id="59rcyU3GDn3" role="1i1XAe">
+          <node concept="H_vQO" id="59rcyU3GDn4" role="H_jLS" />
+        </node>
         <node concept="GnABt" id="5kwEgmAi6Me" role="1i1XAe">
           <node concept="1z9TsT" id="5kwEgmAi6Mz" role="lGtFl">
             <node concept="OjmMv" id="5kwEgmAi6M$" role="1w35rA">
