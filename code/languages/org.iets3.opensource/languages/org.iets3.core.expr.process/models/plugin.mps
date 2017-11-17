@@ -774,6 +774,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="7bd8pkkKlP3" role="3clF46">
+        <property role="TrG5h" value="coverage" />
+        <node concept="3uibUv" id="7bd8pkkKmAW" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+        </node>
+      </node>
       <node concept="37vLTG" id="Z4fkwziK1L" role="3clF46">
         <property role="TrG5h" value="trace" />
         <node concept="3uibUv" id="Z4fkwziKQk" role="1tU5fm">
