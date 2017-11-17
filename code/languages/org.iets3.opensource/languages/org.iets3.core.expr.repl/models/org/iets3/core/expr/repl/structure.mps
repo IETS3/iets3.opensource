@@ -58,6 +58,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+    <node concept="1TJgyj" id="7bd8pkl401w" role="1TKVEi">
+      <property role="IQ2ns" value="8272305014736683104" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sourceScope" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
     <node concept="1TJgyj" id="2HpFPvT5YvP" role="1TKVEi">
       <property role="IQ2ns" value="3123720608934258677" />
       <property role="20lmBu" value="aggregation" />
