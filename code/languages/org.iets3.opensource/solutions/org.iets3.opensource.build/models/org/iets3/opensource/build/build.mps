@@ -1972,6 +1972,11 @@
             <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5kwEgmAePty" role="3bR37C">
+          <node concept="1Busua" id="5kwEgmAePtz" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wLtKNeSRPz" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3437,6 +3442,9 @@
         <node concept="L2wRC" id="6HtreehRSXB" role="39821P">
           <ref role="L2wRA" node="6HtreehRSZa" resolve="test.ui.expr.os" />
         </node>
+        <node concept="L2wRC" id="5kwEgmAh8Y9" role="39821P">
+          <ref role="L2wRA" node="5kwEgmAh8J_" resolve="test.org.iets3.core.comments" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -3607,6 +3615,25 @@
         </node>
       </node>
     </node>
+    <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.org.iets3.core.comments" />
+      <property role="3LESm3" value="5b2a22be-3ce2-4929-be5b-e39b8b142a74" />
+      <property role="2GAjPV" value="false" />
+      <property role="aoJFB" value="sources and tests" />
+      <node concept="398BVA" id="5kwEgmAh8LC" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <node concept="2Ry0Ak" id="5kwEgmAh8QZ" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="5kwEgmAh8SM" role="2Ry0An">
+            <property role="2Ry0Am" value="test.org.iets3.core.comments" />
+            <node concept="2Ry0Ak" id="5kwEgmAh8U_" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.core.comments.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
       <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
       <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
@@ -3638,6 +3665,9 @@
       </node>
       <node concept="22LTRM" id="6HtreehRTkK" role="22LTRK">
         <ref role="22LTRN" node="6HtreehRSZa" resolve="test.ui.expr.os" />
+      </node>
+      <node concept="22LTRM" id="5kwEgmAh92W" role="22LTRK">
+        <ref role="22LTRN" node="5kwEgmAh8J_" resolve="test.org.iets3.core.comments" />
       </node>
     </node>
   </node>
