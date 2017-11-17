@@ -232,14 +232,19 @@
       <node concept="Bn3R3" id="2HpFPvT9Nnb" role="Bn3R6">
         <node concept="3clFbS" id="2HpFPvT9Nnc" role="2VODD2">
           <node concept="3clFbF" id="2HpFPvT9NLS" role="3cqZAp">
-            <node concept="3cpWs3" id="2HpFPvT9OBe" role="3clFbG">
-              <node concept="Xl_RD" id="2HpFPvT9OBk" role="3uHU7B">
-                <property role="Xl_RC" value="$" />
+            <node concept="3cpWs3" id="69FYpZqvwBF" role="3clFbG">
+              <node concept="Xl_RD" id="69FYpZqvwBL" role="3uHU7w">
+                <property role="Xl_RC" value="]" />
               </node>
-              <node concept="2OqwBi" id="2HpFPvT9O1g" role="3uHU7w">
-                <node concept="Bn53e" id="2HpFPvT9NLR" role="2Oq$k0" />
-                <node concept="2qgKlT" id="2HpFPvT9Or9" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              <node concept="3cpWs3" id="2HpFPvT9OBe" role="3uHU7B">
+                <node concept="Xl_RD" id="2HpFPvT9OBk" role="3uHU7B">
+                  <property role="Xl_RC" value="$[" />
+                </node>
+                <node concept="2OqwBi" id="2HpFPvT9O1g" role="3uHU7w">
+                  <node concept="Bn53e" id="2HpFPvT9NLR" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2HpFPvT9Or9" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
                 </node>
               </node>
             </node>

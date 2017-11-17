@@ -97,6 +97,9 @@
     <node concept="PrWs8" id="14RJwd1gH07" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
+    <node concept="PrWs8" id="7bd8pklaJxC" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="1TJgyi" id="2HpFPvTa5jb" role="1TKVEl">
       <property role="IQ2nx" value="3123720608935335115" />
       <property role="TrG5h" value="hasBeenEvaled" />
