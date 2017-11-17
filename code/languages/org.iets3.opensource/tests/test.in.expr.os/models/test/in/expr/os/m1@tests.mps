@@ -24636,6 +24636,35 @@
             <ref role="_emDf" node="3nGzaxUTsl2" resolve="date0" />
           </node>
         </node>
+        <node concept="FfN7L" id="6GCJsuCPeQW" role="FfN64">
+          <node concept="30bXRB" id="6GCJsuCPeQX" role="FfN7O">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="6GCJsuCPhyc" role="FfN7M">
+            <ref role="_emDf" node="3nGzaxUTsz$" resolve="date05" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="6GCJsuCQWJv" role="_iOnB">
+      <property role="TrG5h" value="v11" />
+      <node concept="FfN7I" id="6GCJsuCQWJw" role="2zPyp_">
+        <node concept="FfN7L" id="6GCJsuCQWJx" role="FfN64">
+          <node concept="30bXRB" id="6GCJsuCQWJy" role="FfN7O">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="6GCJsuCQWJz" role="FfN7M">
+            <ref role="_emDf" node="3nGzaxUTsl2" resolve="date0" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="6GCJsuCQWJ$" role="FfN64">
+          <node concept="30bXRB" id="6GCJsuCQWJ_" role="FfN7O">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="6GCJsuCQWJA" role="FfN7M">
+            <ref role="_emDf" node="3nGzaxUTsz$" resolve="date05" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="_ixoA" id="50smQ1V92Mo" role="_iOnB" />
@@ -24888,6 +24917,41 @@
         <node concept="mLuIC" id="3nGzaxUttwN" role="Ffn_E" />
       </node>
     </node>
+    <node concept="1aga60" id="6GCJsuCRAAR" role="_iOnB">
+      <property role="TrG5h" value="mul" />
+      <node concept="30dDTi" id="6GCJsuCRCRh" role="1ahQXP">
+        <node concept="1afdae" id="6GCJsuCRCSq" role="30dEs_">
+          <ref role="1afue_" node="6GCJsuCRAAY" resolve="v2" />
+        </node>
+        <node concept="1afdae" id="6GCJsuCRAAT" role="30dEsF">
+          <ref role="1afue_" node="6GCJsuCRAAV" resolve="v1" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="6GCJsuCRAAV" role="1ahQWs">
+        <property role="TrG5h" value="v1" />
+        <node concept="Ffn_D" id="6GCJsuCRAAW" role="3ix9CU">
+          <node concept="mLuIC" id="6GCJsuCRAAX" role="Ffn_E" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="6GCJsuCRAAY" role="1ahQWs">
+        <property role="TrG5h" value="v2" />
+        <node concept="Ffn_D" id="6GCJsuCRAAZ" role="3ix9CU">
+          <node concept="mLuIC" id="6GCJsuCRAB0" role="Ffn_E" />
+        </node>
+      </node>
+      <node concept="Ffn_D" id="6GCJsuCRAB1" role="2zM23F">
+        <node concept="mLuIC" id="6GCJsuCRAB2" role="Ffn_E" />
+      </node>
+      <node concept="1z9TsT" id="6GCJsuCS2og" role="lGtFl">
+        <node concept="OjmMv" id="6GCJsuCS2oh" role="1w35rA">
+          <node concept="19SGf9" id="6GCJsuCS2oi" role="OjmMu">
+            <node concept="19SUe$" id="6GCJsuCS2oj" role="19SJt6">
+              <property role="19SUeA" value="This is pretty much a workaround because there seems to be an exception when the expression&#10;is directly invoked from the assert." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="3nGzaxUqLR1" role="_iOnB" />
     <node concept="_fkuM" id="3nGzaxUqMjU" role="_iOnB">
       <property role="TrG5h" value="TestArith" />
@@ -25052,12 +25116,13 @@
       </node>
       <node concept="_fkuZ" id="4voqclTC6Fg" role="_fkp5">
         <node concept="_fku$" id="4voqclTC6Fh" role="_fkur" />
-        <node concept="30dDTi" id="4voqclTC6HJ" role="_fkuY">
-          <node concept="_emDc" id="4voqclTC7vh" role="30dEs_">
-            <ref role="_emDf" node="50smQ1V987u" resolve="v2" />
-          </node>
-          <node concept="_emDc" id="4voqclTC6Hp" role="30dEsF">
+        <node concept="1af_rf" id="6GCJsuCRGtj" role="_fkuY">
+          <ref role="1afhQb" node="6GCJsuCRAAR" resolve="mul" />
+          <node concept="_emDc" id="6GCJsuCRK1s" role="1afhQ5">
             <ref role="_emDf" node="50smQ1V92MG" resolve="v1" />
+          </node>
+          <node concept="_emDc" id="6GCJsuCRLLb" role="1afhQ5">
+            <ref role="_emDf" node="50smQ1V987u" resolve="v2" />
           </node>
         </node>
         <node concept="FfN7I" id="4voqclTC_r6" role="_fkuS">
