@@ -1007,6 +1007,26 @@
     <node concept="13hLZK" id="5y3VELfuT6O" role="13h7CW">
       <node concept="3clFbS" id="5y3VELfuT6P" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="7bd8pkl8dhR" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getInteractor" />
+      <ref role="13i0hy" to="4lqd:5y3VELfuT5E" resolve="getInteractor" />
+      <node concept="3Tm1VV" id="7bd8pkl8dhS" role="1B3o_S" />
+      <node concept="3clFbS" id="7bd8pkl8dhV" role="3clF47">
+        <node concept="3clFbF" id="7bd8pkl8dij" role="3cqZAp">
+          <node concept="2OqwBi" id="7bd8pkl8dtZ" role="3clFbG">
+            <node concept="13iPFW" id="7bd8pkl8dii" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7bd8pkl8dI7" role="2OqNvi">
+              <ref role="3Tt5mk" to="19m5:7$TgoCYajaF" resolve="machine" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7bd8pkl8dhW" role="3clF45">
+        <ref role="ehGHo" to="8lgj:5y3VELft_XL" resolve="IInteractor" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="33mFrum$Ut9">
     <property role="3GE5qa" value="machine" />

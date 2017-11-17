@@ -16,6 +16,7 @@
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="0" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="0" />
+    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
   </languages>
   <imports>
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
@@ -6344,6 +6345,105 @@
     <node concept="_ixoA" id="4pyjK6aSCwi" role="_iOnB" />
     <node concept="_ixoA" id="4pyjK6aOyRk" role="_iOnB" />
     <node concept="_ixoA" id="4pyjK6aOz8n" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="7bd8pklaIDa">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="REPLTest" />
+    <property role="3GE5qa" value="interact" />
+    <node concept="2zPypq" id="7bd8pklaJq6" role="_iOnB">
+      <property role="TrG5h" value="aNumber" />
+      <node concept="30bXRB" id="7bd8pklaJql" role="2zPyp_">
+        <property role="30bXRw" value="42" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="7bd8pklaJrc" role="_iOnB" />
+    <node concept="2zPypq" id="7bd8pklaJrL" role="_iOnB">
+      <property role="TrG5h" value="boxNumber" />
+      <node concept="3sRH3H" id="7bd8pklaJsa" role="2zPyp_">
+        <node concept="_emDc" id="7bd8pklaJso" role="3sRH3h">
+          <ref role="_emDf" node="7bd8pklaJq6" resolve="aNumber" />
+        </node>
+      </node>
+      <node concept="3sNe5_" id="7bd8pklbcBs" role="2zM23F">
+        <node concept="30bXR$" id="7bd8pklbcDm" role="3sNe5$" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="7bd8pklbcFc" role="_iOnB" />
+    <node concept="2zPypq" id="7bd8pklbcHp" role="_iOnB">
+      <property role="TrG5h" value="b" />
+      <node concept="_emDc" id="7bd8pklbcHN" role="2zPyp_">
+        <ref role="_emDf" node="7bd8pklaJrL" resolve="boxNumber" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="69FYpZq$s1G" role="_iOnB" />
+    <node concept="2zPypq" id="69FYpZq$s9l" role="_iOnB">
+      <property role="TrG5h" value="markus" />
+      <node concept="GZN9F" id="69FYpZq$s9N" role="2zPyp_">
+        <property role="GZKaf" value="1" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="69FYpZq$sa3" role="_iOnB">
+      <property role="TrG5h" value="klaus" />
+      <node concept="GZN9F" id="69FYpZq$sa4" role="2zPyp_">
+        <property role="GZKaf" value="2" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="69FYpZq$s6Y" role="_iOnB" />
+    <node concept="2EZYDW" id="69FYpZq$s4d" role="_iOnB">
+      <property role="TrG5h" value="D" />
+      <node concept="2A7Kxg" id="69FYpZq$spe" role="2A7Mb_" />
+      <node concept="_emDc" id="69FYpZq$sba" role="GZMTW">
+        <ref role="_emDf" node="69FYpZq$s9l" resolve="markus" />
+      </node>
+      <node concept="_emDc" id="69FYpZq$sfF" role="GZMTW">
+        <ref role="_emDf" node="69FYpZq$sa3" resolve="klaus" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="7bd8pklaJtr" role="_iOnB" />
+    <node concept="2zPypq" id="69FYpZq$sus" role="_iOnB">
+      <property role="TrG5h" value="dec" />
+      <node concept="2EWGZN" id="69FYpZq$sv1" role="2zPyp_">
+        <node concept="2EWGYO" id="69FYpZq$svf" role="1G1OS$">
+          <ref role="2EWGYF" node="69FYpZq$s4d" resolve="D" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2QxWJFK$Dvb" role="_iOnB" />
+    <node concept="_ixoA" id="2QxWJFK$DvC" role="_iOnB" />
+    <node concept="174hOD" id="2QxWJFK$Dz5" role="_iOnB">
+      <property role="TrG5h" value="Lights" />
+      <node concept="174hPg" id="2QxWJFK$DMU" role="17tHGx">
+        <property role="TrG5h" value="trigger" />
+      </node>
+      <node concept="174hPt" id="2QxWJFK$DC_" role="17tHGx">
+        <property role="TrG5h" value="RED" />
+        <node concept="174hPn" id="2QxWJFK$DPw" role="17rfIJ">
+          <ref role="174hPD" node="2QxWJFK$DKg" resolve="GREEN" />
+          <node concept="2AuZ2C" id="2QxWJFK$DS5" role="2AuZ2o">
+            <ref role="2AuZ2q" node="2QxWJFK$DMU" resolve="trigger" />
+          </node>
+        </node>
+      </node>
+      <node concept="174hPt" id="2QxWJFK$DKg" role="17tHGx">
+        <property role="TrG5h" value="GREEN" />
+        <node concept="174hPn" id="2QxWJFK$DUE" role="17rfIJ">
+          <ref role="174hPD" node="2QxWJFK$DC_" resolve="RED" />
+          <node concept="2AuZ2C" id="2QxWJFK$DUJ" role="2AuZ2o">
+            <ref role="2AuZ2q" node="2QxWJFK$DMU" resolve="trigger" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2QxWJFK$DUO" role="_iOnB" />
+    <node concept="2zPypq" id="2QxWJFK$DYz" role="_iOnB">
+      <property role="TrG5h" value="l" />
+      <node concept="1749$I" id="2QxWJFK$DZk" role="2zPyp_">
+        <node concept="1747cw" id="2QxWJFK$DZy" role="1749$H">
+          <ref role="1747cx" node="2QxWJFK$Dz5" resolve="Lights" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7bd8pklaJt$" role="_iOnB" />
   </node>
 </model>
 

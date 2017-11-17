@@ -174,6 +174,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7$TgoCYa5Mz" resolve="StateMachine" />
     </node>
+    <node concept="PrWs8" id="7bd8pkl8dhP" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7$TgoCYaty$">
     <property role="EcuMT" value="8735085014266009764" />

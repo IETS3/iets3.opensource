@@ -241,5 +241,36 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7bd8pkl7uF5">
+    <property role="EcuMT" value="8272305014737595077" />
+    <property role="3GE5qa" value="interactor.interact" />
+    <property role="TrG5h" value="LiveExpression" />
+    <property role="34LRSv" value="live" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7bd8pkl7uF6" role="1TKVEi">
+      <property role="IQ2ns" value="8272305014737595078" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7bd8pkl7uY3">
+    <property role="EcuMT" value="8272305014737596291" />
+    <property role="3GE5qa" value="interactor.interact" />
+    <property role="TrG5h" value="LiveType" />
+    <property role="34LRSv" value="live" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="7bd8pkl7uYv" role="1TKVEi">
+      <property role="IQ2ns" value="8272305014737596319" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5y3VELfuT55" resolve="IInteractorType" />
+    </node>
+    <node concept="PrWs8" id="7jV5x$7ifMg" role="PzmwI">
+      <ref role="PrY4T" node="5y3VELfuT55" resolve="IInteractorType" />
+    </node>
+  </node>
 </model>
 

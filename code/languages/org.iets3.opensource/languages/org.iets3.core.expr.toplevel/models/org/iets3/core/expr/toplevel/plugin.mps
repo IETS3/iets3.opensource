@@ -21,7 +21,6 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
   </imports>
@@ -1682,20 +1681,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="3vcWfImc8Cv" role="3cqZAp" />
-            <node concept="3clFbF" id="33mFrumjwa5" role="3cqZAp">
-              <node concept="2OqwBi" id="33mFrumjwa2" role="3clFbG">
-                <node concept="10M0yZ" id="33mFrumjwa3" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="33mFrumjwa4" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="Xl_RD" id="33mFrumjwtr" role="37wK5m">
-                    <property role="Xl_RC" value="1" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="5s2rYclmg3E" role="3cqZAp">
               <node concept="3cpWsn" id="5s2rYclmg3F" role="3cpWs9">
                 <property role="TrG5h" value="ce" />
