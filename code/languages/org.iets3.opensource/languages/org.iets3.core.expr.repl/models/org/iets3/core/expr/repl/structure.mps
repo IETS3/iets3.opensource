@@ -84,6 +84,11 @@
     <node concept="1QGGSu" id="4150e4IdBk3" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/repl.png" />
     </node>
+    <node concept="1TJgyi" id="4nY0kF8rhEo" role="1TKVEl">
+      <property role="IQ2nx" value="5043470053403335320" />
+      <property role="TrG5h" value="updateDownstream" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="14RJwd1g889">
     <property role="EcuMT" value="1240669143552786953" />
