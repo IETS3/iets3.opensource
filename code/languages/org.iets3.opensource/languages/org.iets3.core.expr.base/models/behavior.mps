@@ -19757,5 +19757,21 @@
       <node concept="3clFbS" id="33mFrumAAsV" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4nY0kF8wP$I">
+    <ref role="13h7C2" to="hm2y:4nY0kF8wP$h" resolve="IRunningInterpreterContext" />
+    <node concept="13i0hz" id="4nY0kF8wP$O" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getCurrentInterpreterContext" />
+      <node concept="3Tm1VV" id="4nY0kF8wP$P" role="1B3o_S" />
+      <node concept="3uibUv" id="4nY0kF8wP_4" role="3clF45">
+        <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+      </node>
+      <node concept="3clFbS" id="4nY0kF8wP$R" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4nY0kF8wP$J" role="13h7CW">
+      <node concept="3clFbS" id="4nY0kF8wP$K" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

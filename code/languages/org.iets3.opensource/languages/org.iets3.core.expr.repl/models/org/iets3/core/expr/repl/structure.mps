@@ -81,6 +81,9 @@
     <node concept="PrWs8" id="2HpFPvT65V0" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="4nY0kF8y05Q" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4nY0kF8wP$h" resolve="IRunningInterpreterContext" />
+    </node>
     <node concept="1QGGSu" id="4150e4IdBk3" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/repl.png" />
     </node>
@@ -150,6 +153,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="14RJwd1g88L" resolve="IReplEntry" />
     </node>
+    <node concept="PrWs8" id="6XMQOZe9m1D" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5nEyPbMpXef">
     <property role="EcuMT" value="6190913826144637839" />
@@ -161,6 +167,9 @@
       <property role="20kJfa" value="entry" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="14RJwd1g88L" resolve="IReplEntry" />
+    </node>
+    <node concept="PrWs8" id="6XMQOZe9mEW" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
 </model>
