@@ -3732,16 +3732,8 @@
               <node concept="1pGfFk" id="4nY0kF82JQs" role="2ShVmc">
                 <ref role="37wK5l" to="oq0c:4nY0kF7WRzt" resolve="RenderNode" />
                 <node concept="Xjq3P" id="4nY0kF82JQt" role="37wK5m" />
-                <node concept="2OqwBi" id="4nY0kF82JQu" role="37wK5m">
-                  <node concept="2OqwBi" id="4nY0kF82JQv" role="2Oq$k0">
-                    <node concept="Xjq3P" id="4nY0kF82JQw" role="2Oq$k0" />
-                    <node concept="liA8E" id="4nY0kF82JQx" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4nY0kF82JQy" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
-                  </node>
+                <node concept="37vLTw" id="4nY0kF8cukk" role="37wK5m">
+                  <ref role="3cqZAo" node="7jV5x$7jFOg" resolve="myDescr" />
                 </node>
               </node>
             </node>
