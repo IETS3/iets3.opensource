@@ -23,7 +23,6 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2975,49 +2974,6 @@
                     </node>
                   </node>
                   <node concept="1VAtEI" id="6XMQOZearCD" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6XMQOZeg9IY" role="3cqZAp">
-              <node concept="2OqwBi" id="6XMQOZeg9IV" role="3clFbG">
-                <node concept="10M0yZ" id="6XMQOZeg9IW" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="6XMQOZeg9IX" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="6XMQOZegcsi" role="37wK5m">
-                    <node concept="37vLTw" id="6XMQOZegcy7" role="3uHU7w">
-                      <ref role="3cqZAo" node="6XMQOZearCp" resolve="eventsInCurrentState" />
-                    </node>
-                    <node concept="Xl_RD" id="6XMQOZeg9LU" role="3uHU7B">
-                      <property role="Xl_RC" value="evts: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6XMQOZegr1b" role="3cqZAp">
-              <node concept="2OqwBi" id="6XMQOZegr18" role="3clFbG">
-                <node concept="10M0yZ" id="6XMQOZegr19" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="6XMQOZegr1a" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="6XMQOZegtZt" role="37wK5m">
-                    <node concept="2OqwBi" id="6XMQOZeguKu" role="3uHU7w">
-                      <node concept="37vLTw" id="6XMQOZeguzD" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6XMQOZea6v2" resolve="element" />
-                      </node>
-                      <node concept="2OwXpG" id="6XMQOZeguXN" role="2OqNvi">
-                        <ref role="2Oxat5" to="n9sl:5y3VELftA2d" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="6XMQOZegs$l" role="3uHU7B">
-                      <property role="Xl_RC" value="element: " />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
