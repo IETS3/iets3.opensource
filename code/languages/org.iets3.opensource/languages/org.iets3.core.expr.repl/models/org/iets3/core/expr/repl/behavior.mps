@@ -24,6 +24,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1083,6 +1084,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2jITtfD$6IJ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="doNotShowManualInfoMessage" />
+      <ref role="13i0hy" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
+      <node concept="3Tm1VV" id="2jITtfD$6IK" role="1B3o_S" />
+      <node concept="3clFbS" id="2jITtfD$6IP" role="3clF47">
+        <node concept="3clFbF" id="2jITtfD$8fo" role="3cqZAp">
+          <node concept="3clFbT" id="2jITtfD$8fn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2jITtfD$6IQ" role="3clF45" />
+    </node>
   </node>
   <node concept="312cEu" id="ub9nkyOIeW">
     <property role="TrG5h" value="ReplResult" />
@@ -2063,8 +2079,8 @@
                         <node concept="37vLTw" id="4nY0kF8p13e" role="2Oq$k0">
                           <ref role="3cqZAo" node="4nY0kF8p0VT" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="4nY0kF8p5RY" role="2OqNvi">
-                          <ref role="37wK5l" node="4nY0kF8p1AF" resolve="evaluateEntry" />
+                        <node concept="2qgKlT" id="2jITtfD_TC7" role="2OqNvi">
+                          <ref role="37wK5l" node="4nY0kF8seDJ" resolve="evaluateEntryWithDownstreamUpdates" />
                         </node>
                       </node>
                     </node>

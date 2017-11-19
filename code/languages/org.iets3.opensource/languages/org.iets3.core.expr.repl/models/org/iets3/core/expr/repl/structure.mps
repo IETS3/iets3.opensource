@@ -102,7 +102,7 @@
       <property role="IQ2ns" value="1240669143552786973" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2HpFPvT9KQh" role="PzmwI">

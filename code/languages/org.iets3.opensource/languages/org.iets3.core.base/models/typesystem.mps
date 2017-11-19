@@ -189,12 +189,24 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="3ugRfIRAp0L" role="3clFbw">
-                    <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
-                      <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                  <node concept="1Wc70l" id="2jITtfD$1z$" role="3clFbw">
+                    <node concept="3fqX7Q" id="2jITtfD$1Nr" role="3uHU7w">
+                      <node concept="2OqwBi" id="2jITtfD$24_" role="3fr31v">
+                        <node concept="1YBJjd" id="2jITtfD$1Rt" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                        </node>
+                        <node concept="2qgKlT" id="2jITtfD$2q3" role="2OqNvi">
+                          <ref role="37wK5l" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
-                      <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                    <node concept="2OqwBi" id="3ugRfIRAp0L" role="3uHU7B">
+                      <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
+                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                      </node>
+                      <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
+                        <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                      </node>
                     </node>
                   </node>
                 </node>
