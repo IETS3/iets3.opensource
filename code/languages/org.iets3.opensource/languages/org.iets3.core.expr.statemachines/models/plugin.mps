@@ -2,12 +2,12 @@
 <model ref="r:b42cba76-0ae4-471b-92c0-7290e4540c95(org.iets3.core.expr.statemachines.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
-    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="0" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
+    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="-1" />
+    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
+    <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -386,12 +386,6 @@
     <property role="TrG5h" value="ExprStatemachineInterpeter" />
     <property role="UYu25" value="arithmetic" />
     <property role="3GE5qa" value="" />
-    <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
-      <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
-        <property role="BaHAW" value="org.iets3.core.expr.statemachines.structure" />
-        <property role="BaGAP" value="" />
-      </node>
-    </node>
     <node concept="qq9P1" id="1mDdTGb$rT" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="19m5:1mDdTG6VfM" resolve="ParamRef" />
@@ -504,6 +498,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
+      <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
+        <property role="BaHAW" value="org.iets3.core.expr.statemachines.structure" />
+        <property role="BaGAP" value="" />
       </node>
     </node>
     <node concept="qq9P1" id="7$TgoCYm3xQ" role="qq9xR">
@@ -892,6 +892,9 @@
   </node>
   <node concept="312cEu" id="7$TgoCYaVTr">
     <property role="TrG5h" value="SmValue" />
+    <node concept="3uibUv" id="7bd8pkkvws3" role="1zkMxy">
+      <ref role="3uigEE" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+    </node>
     <node concept="2tJIrI" id="7$TgoCYaWeA" role="jymVt" />
     <node concept="Wx3nA" id="YMJl2BJSgv" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -937,6 +940,12 @@
     </node>
     <node concept="2tJIrI" id="7$TgoCYaW_J" role="jymVt" />
     <node concept="3clFbW" id="7$TgoCYaWkH" role="jymVt">
+      <node concept="37vLTG" id="7bd8pkkvy$s" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7bd8pkkvzgm" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="7$TgoCYaWkJ" role="3clF45" />
       <node concept="3Tm1VV" id="7$TgoCYaWkK" role="1B3o_S" />
       <node concept="3clFbS" id="7$TgoCYaWkL" role="3clF47">
@@ -991,12 +1000,6 @@
               <ref role="3cqZAo" node="1mDdTGbtZO" resolve="args" />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="7bd8pkkvy$s" role="3clF46">
-        <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="7bd8pkkvzgm" role="1tU5fm">
-          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
         </node>
       </node>
       <node concept="37vLTG" id="7$TgoCYaWqY" role="3clF46">
@@ -3082,9 +3085,6 @@
     </node>
     <node concept="2tJIrI" id="7bd8pkkvLqG" role="jymVt" />
     <node concept="3Tm1VV" id="7$TgoCYaVTs" role="1B3o_S" />
-    <node concept="3uibUv" id="7bd8pkkvws3" role="1zkMxy">
-      <ref role="3uigEE" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
-    </node>
   </node>
   <node concept="312cEu" id="7$TgoCYaYyc">
     <property role="TrG5h" value="SmInternalData" />

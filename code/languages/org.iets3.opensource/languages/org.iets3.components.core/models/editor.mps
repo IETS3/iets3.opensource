@@ -14,7 +14,7 @@
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -498,6 +498,7 @@
       <concept id="3155126767690989914" name="de.itemis.mps.editor.diagram.structure.Content_GenericBoxQuery" flags="ng" index="ahg9e">
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
         <child id="339189006513544402" name="navigationTargets" index="2Kg1p8" />
+        <child id="738815095919968379" name="preservePortOrder" index="1pgkKh" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
@@ -3662,6 +3663,17 @@
           </node>
         </node>
         <node concept="ahg9e" id="v8xu81RjQT" role="aCds2">
+          <node concept="2OqwBi" id="4a5BwhuXzAz" role="1pgkKh">
+            <node concept="2OqwBi" id="4a5BwhuXxMB" role="2Oq$k0">
+              <node concept="37u81S" id="4a5BwhuXwvR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4a5BwhuXz9M" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:mIQkxfpv7_" resolve="category" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4a5BwhuX$Ph" role="2OqNvi">
+              <ref role="37wK5l" to="3eba:4a5BwhuNU42" resolve="preserverOrder" />
+            </node>
+          </node>
           <node concept="238au4" id="v8xu81RjQU" role="23bJyd">
             <node concept="1j7BWu" id="5tAZxwQQOBr" role="2wV5jI">
               <node concept="s8t4o" id="5tAZxwQQOLe" role="1j7ClA">
@@ -13588,6 +13600,14 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="3_Q7YdvT5$">
+    <property role="3GE5qa" value="chunk" />
+    <ref role="aqKnT" to="w9y2:6LfBX8YivxI" resolve="EmptyComponentsChunkContent" />
+  </node>
+  <node concept="3p36aQ" id="3AXZ3AgyWeF">
+    <property role="3GE5qa" value="components" />
+    <ref role="aqKnT" to="w9y2:6LfBX8Yi4ug" resolve="EmptyComponentContent" />
   </node>
 </model>
 

@@ -248,8 +248,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -258,6 +262,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="4948473272651335344" name="jetbrains.mps.baseLanguage.javadoc.structure.EmptyBlockDocTag" flags="ng" index="1Ciki9" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -3914,6 +3919,30 @@
         <ref role="3bZ5Sy" to="w9y2:siw10H0or2" resolve="PortCategory" />
       </node>
       <node concept="3clFbS" id="mIQkxfpv6M" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="4a5BwhuNU42" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="preserverOrder" />
+      <node concept="3Tm1VV" id="4a5BwhuNU43" role="1B3o_S" />
+      <node concept="10P_77" id="4a5BwhuNUaG" role="3clF45" />
+      <node concept="3clFbS" id="4a5BwhuNU45" role="3clF47">
+        <node concept="3clFbF" id="4a5BwhuNUH_" role="3cqZAp">
+          <node concept="3clFbT" id="4a5BwhuNUH$" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4a5BwhuNUDx" role="lGtFl">
+        <node concept="TZ5HA" id="4a5BwhuNUDy" role="TZ5H$">
+          <node concept="1dT_AC" id="4a5BwhuNUDz" role="1dT_Ay">
+            <property role="1dT_AB" value="If port order should be preserved in graphical projection" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4a5BwhuNUD$" role="3nqlJM">
+          <property role="x79VB" value="true if order should be preserved; false otherwise" />
+        </node>
+        <node concept="1Ciki9" id="4a5BwhuNUGf" role="3nqlJM" />
+      </node>
     </node>
     <node concept="13i0hz" id="mIQkxgiY42" role="13h7CS">
       <property role="TrG5h" value="shapeRenderer" />

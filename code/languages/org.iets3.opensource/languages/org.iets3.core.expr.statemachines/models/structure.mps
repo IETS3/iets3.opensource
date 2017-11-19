@@ -2,8 +2,8 @@
 <model ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -167,15 +167,15 @@
     <property role="TrG5h" value="StateMachineType" />
     <property role="3GE5qa" value="machine" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="7bd8pkl8dhP" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
+    </node>
     <node concept="1TJgyj" id="7$TgoCYajaF" role="1TKVEi">
       <property role="IQ2ns" value="8735085014265967275" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="machine" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7$TgoCYa5Mz" resolve="StateMachine" />
-    </node>
-    <node concept="PrWs8" id="7bd8pkl8dhP" role="PzmwI">
-      <ref role="PrY4T" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$TgoCYaty$">
@@ -411,27 +411,14 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
-  <node concept="1TIwiD" id="33mFrumBT5e">
-    <property role="EcuMT" value="3519191162854281550" />
-    <property role="3GE5qa" value="operations" />
-    <property role="TrG5h" value="IsInStateTarget" />
-    <property role="34LRSv" value="isInState" />
-    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
-    <node concept="1TJgyj" id="33mFrumBT5l" role="1TKVEi">
-      <property role="IQ2ns" value="3519191162854281557" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7$TgoCYa5Nn" resolve="State" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="33mFrumFlOo">
-    <property role="EcuMT" value="3519191162855185688" />
-    <property role="3GE5qa" value="machine.trigger" />
-    <property role="TrG5h" value="AbstractTrigger" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
+  <node concept="1TIwiD" id="1mDdTG5A7m">
+    <property role="EcuMT" value="24388123200217558" />
+    <property role="3GE5qa" value="machine.param" />
+    <property role="TrG5h" value="Parameter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1mDdTG5A7t" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:6zmBjqUkws9" resolve="IArgument" />
+    </node>
   </node>
   <node concept="1TIwiD" id="33mFrumFlOv">
     <property role="EcuMT" value="3519191162855185695" />
@@ -446,21 +433,13 @@
       <ref role="20lvS9" node="7$TgoCYa5Nq" resolve="Event" />
     </node>
   </node>
-  <node concept="1TIwiD" id="33mFrumIspR">
-    <property role="EcuMT" value="3519191162855999095" />
+  <node concept="1TIwiD" id="33mFrumFlOo">
+    <property role="EcuMT" value="3519191162855185688" />
     <property role="3GE5qa" value="machine.trigger" />
-    <property role="TrG5h" value="EnterTrigger" />
-    <property role="34LRSv" value="enter" />
-    <ref role="1TJDcQ" node="33mFrumFlOo" resolve="AbstractTrigger" />
-  </node>
-  <node concept="1TIwiD" id="1mDdTG5A7m">
-    <property role="EcuMT" value="24388123200217558" />
-    <property role="3GE5qa" value="machine.param" />
-    <property role="TrG5h" value="Parameter" />
+    <property role="TrG5h" value="AbstractTrigger" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1mDdTG5A7t" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUkws9" resolve="IArgument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1mDdTG6VfM">
     <property role="EcuMT" value="24388123200566258" />
@@ -473,6 +452,27 @@
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1mDdTG5A7m" resolve="Parameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="33mFrumIspR">
+    <property role="EcuMT" value="3519191162855999095" />
+    <property role="3GE5qa" value="machine.trigger" />
+    <property role="TrG5h" value="EnterTrigger" />
+    <property role="34LRSv" value="enter" />
+    <ref role="1TJDcQ" node="33mFrumFlOo" resolve="AbstractTrigger" />
+  </node>
+  <node concept="1TIwiD" id="33mFrumBT5e">
+    <property role="EcuMT" value="3519191162854281550" />
+    <property role="3GE5qa" value="operations" />
+    <property role="TrG5h" value="IsInStateTarget" />
+    <property role="34LRSv" value="isInState" />
+    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="1TJgyj" id="33mFrumBT5l" role="1TKVEi">
+      <property role="IQ2ns" value="3519191162854281557" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="state" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7$TgoCYa5Nn" resolve="State" />
     </node>
   </node>
 </model>
