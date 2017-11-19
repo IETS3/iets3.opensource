@@ -6350,6 +6350,7 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="REPLTest" />
     <property role="3GE5qa" value="interact" />
+    <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="7bd8pklaJq6" role="_iOnB">
       <property role="TrG5h" value="aNumber" />
       <node concept="30bXRB" id="7bd8pklaJql" role="2zPyp_">
@@ -6449,6 +6450,19 @@
       <node concept="1749$I" id="2QxWJFK$DZk" role="2zPyp_">
         <node concept="1747cw" id="2QxWJFK$DZy" role="1749$H">
           <ref role="1747cx" node="2QxWJFK$Dz5" resolve="Lights" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2jITtfDzWGb" role="_iOnB" />
+    <node concept="_fkuM" id="2jITtfDzWKf" role="_iOnB">
+      <property role="TrG5h" value="SM" />
+      <node concept="_fkuZ" id="2jITtfDzWKZ" role="_fkp5">
+        <node concept="_fku$" id="2jITtfDzWL0" role="_fkur" />
+        <node concept="30bXRB" id="2jITtfDzXoq" role="_fkuY">
+          <property role="30bXRw" value="1" />
+        </node>
+        <node concept="30bXRB" id="2jITtfDzXoL" role="_fkuS">
+          <property role="30bXRw" value="1" />
         </node>
       </node>
     </node>
