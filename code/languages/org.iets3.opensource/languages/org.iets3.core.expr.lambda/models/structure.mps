@@ -17,6 +17,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -57,7 +59,7 @@
     <property role="34LRSv" value="(" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="7554398283340107702" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="5Win3SAb5Rp" resolve="GenericFunctionType" />
     <node concept="1TJgyj" id="6zmBjqUjGYR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="argumentTypes" />
@@ -371,6 +373,9 @@
     <node concept="PrWs8" id="5IR_boI6ZWs" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="3ni3WidwZ72" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3ni3WidwYNF" resolve="IAllowsDocInChildExpressions" />
+    </node>
     <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
@@ -484,8 +489,10 @@
   </node>
   <node concept="1TIwiD" id="6KxoTHgSIr8">
     <property role="TrG5h" value="EffectTag" />
-    <property role="34LRSv" value="*" />
     <property role="EcuMT" value="7791618349055796936" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="effectTag" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="2D48zR6a1ez">
@@ -495,11 +502,88 @@
     <node concept="PrWs8" id="5d4Vabvflby" role="PrDN$">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="6GySMNlbAND" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5ipapt3mzbM">
     <property role="EcuMT" value="6095949300269462258" />
     <property role="3GE5qa" value="block" />
     <property role="TrG5h" value="IJoinedBlockContext" />
+  </node>
+  <node concept="1TIwiD" id="5Win3SA8mVE">
+    <property role="EcuMT" value="6850639405181398762" />
+    <property role="TrG5h" value="FunCompose" />
+    <property role="34LRSv" value=":o:" />
+    <property role="3GE5qa" value="compose" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="5Win3SAb5Rp">
+    <property role="EcuMT" value="6850639405182115289" />
+    <property role="TrG5h" value="GenericFunctionType" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="5iD_kvlIV0f">
+    <property role="EcuMT" value="6100571306011111439" />
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="FunctionStyleExecOp" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5iD_kvlIV1w" role="1TKVEi">
+      <property role="IQ2ns" value="6100571306011111520" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fun" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5iD_kvlIV15" role="1TKVEi">
+      <property role="IQ2ns" value="6100571306011111493" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3kqFhn" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="79jc6YzNL4y">
+    <property role="EcuMT" value="8237981399438528802" />
+    <property role="TrG5h" value="AssertExpr" />
+    <property role="34LRSv" value="assert" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="79jc6YzNL4G" role="1TKVEi">
+      <property role="IQ2ns" value="8237981399438528812" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6GySMNlbAb4" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFG">
+    <property role="EcuMT" value="5096753237482793708" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ReadEffectTag" />
+    <property role="34LRSv" value="/R" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFH">
+    <property role="EcuMT" value="5096753237482793709" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ModifyEffectTag" />
+    <property role="34LRSv" value="/M" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
+  </node>
+  <node concept="1TIwiD" id="4qVjx3jYYFI">
+    <property role="EcuMT" value="5096753237482793710" />
+    <property role="3GE5qa" value="effectTag" />
+    <property role="TrG5h" value="ReadModifyEffectTag" />
+    <property role="34LRSv" value="/RM" />
+    <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
   </node>
 </model>
 

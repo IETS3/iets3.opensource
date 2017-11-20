@@ -2,7 +2,7 @@
 <model ref="r:09d541f4-3343-4b00-b9cc-3591144011c1(org.iets3.core.trace.test.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.sandbox" version="-1" />
+    <use id="9eff3336-14d7-46c5-afe1-dcbad13c14c3" name="org.iets3.core.trace.test" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />
