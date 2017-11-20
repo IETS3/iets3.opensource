@@ -27,7 +27,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
-    <import index="9fzk" ref="r:ca744960-a59a-476e-a723-f852da3f606c(org.iets3.core.expr.datetime.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1062,18 +1061,6 @@
             <node concept="rqRoa" id="4voqclTxk_t" role="37wK5m">
               <ref role="rqRob" to="l462:4voqclTxdd8" resolve="value" />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="qq9P1" id="3nGzaxURxa6" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
-      <node concept="3vetai" id="3nGzaxURyGZ" role="3vQZUl">
-        <node concept="2OqwBi" id="3nGzaxURyUV" role="3vdyny">
-          <node concept="oxGPV" id="3nGzaxURyHb" role="2Oq$k0" />
-          <node concept="2qgKlT" id="3nGzaxURzeJ" role="2OqNvi">
-            <ref role="37wK5l" to="9fzk:3nGzaxURahk" resolve="toNumber" />
           </node>
         </node>
       </node>
