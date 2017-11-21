@@ -236,7 +236,7 @@
         <child id="7832682464426609245" name="expression" index="3m9KPI" />
       </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
-        <property id="8845772667389641968" name="cache" index="2TnfIJ" />
+        <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435583235459" name="constraints" index="3vbI0w" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>

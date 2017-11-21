@@ -36,7 +36,7 @@
     <mkdir dir="${build.layout}/org.iets3.opensource.allScripts" />
     <mkdir dir="${build.layout}/org.iets3.opensource.allScripts/META-INF" />
     <echoxml file="${build.layout}/org.iets3.opensource.allScripts/META-INF/plugin.xml">
-      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.iets3.opensource.allScripts</id>
         <name>org.iets3.opensource.allScripts</name>
         <version>1.0</version>
