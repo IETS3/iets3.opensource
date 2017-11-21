@@ -2,6 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -108,6 +109,9 @@
     <node concept="PrWs8" id="ORfz$DS6EI" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="79jc6Yz8dpL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -154,6 +158,9 @@
     </node>
     <node concept="PrWs8" id="sflsE7gfai" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="3z0ZJXm0Med" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
@@ -216,6 +223,9 @@
     <node concept="PrWs8" id="5IR_boI1IrO" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
     </node>
+    <node concept="PrWs8" id="7OzZ9xIa98$" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
@@ -240,6 +250,12 @@
     </node>
     <node concept="PrWs8" id="MaFTCbUMvi" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+    <node concept="PrWs8" id="5QBRw4Xr5z0" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5QBRw4Xr9x1" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyKjdj">
@@ -293,16 +309,6 @@
     <node concept="PrWs8" id="46cplYy1Svf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
-    <node concept="1TJgyj" id="7D7uZV2dYz0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="8811147530084018368" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-      <node concept="asaX9" id="xu7xcKdRtq" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordMember&quot;" />
-      </node>
-    </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYz2">
     <property role="3GE5qa" value="record" />
@@ -335,16 +341,6 @@
     <property role="34LRSv" value="#" />
     <property role="EcuMT" value="8811147530085329320" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="7D7uZV2iYAD" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="8811147530085329321" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-      <node concept="asaX9" id="54pTGl8jBV6" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
-      </node>
-    </node>
     <node concept="1TJgyj" id="7D7uZV2iYAF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="memberValues" />
@@ -366,6 +362,9 @@
     </node>
     <node concept="PrWs8" id="2jL$v5BJGNY" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3kqX38" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
@@ -475,12 +474,18 @@
     <node concept="PrWs8" id="15mJ3JeHQzs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="PrWs8" id="4qVjx3k_yeK" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="15mJ3JeHQzQ">
     <property role="3GE5qa" value="record.change" />
     <property role="TrG5h" value="NewValueSetter" />
     <property role="EcuMT" value="1249392911699110134" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4qVjx3k_yKe" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="15mJ3JeHQzR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
@@ -617,15 +622,8 @@
     <node concept="PrWs8" id="54pTGl8og01" role="PrDN$">
       <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
-    <node concept="1TJgyj" id="xu7xcKdRtf" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type_old" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="602952467876378447" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-      <node concept="asaX9" id="54pTGl8og1R" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ITyped&quot;" />
-      </node>
+    <node concept="PrWs8" id="3z0ZJXm0MfZ" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKinTJ">
@@ -649,6 +647,9 @@
     </node>
     <node concept="PrWs8" id="6JZACDWGVL1" role="PrDN$">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
+    <node concept="PrWs8" id="6GySMNkKPeT" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -781,6 +782,9 @@
     <ref role="1TJDcQ" to="700h:6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="7cphKbKo1Dk" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+    </node>
+    <node concept="PrWs8" id="4qVjx3k_ryB" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cphKbKssrq">

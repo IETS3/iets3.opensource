@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e90f1815-2257-4e08-b5cd-2ae9592ec17c(org.iets3.components.core.generator.template.main@generator)">
+<model ref="r:8079e2f1-5c78-4bd6-8b1a-28e1c54a92da(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
+  </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
@@ -18,7 +17,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="6LfBX8Yi4m_">
+  <node concept="bUwia" id="3GdqffBKnST">
     <property role="TrG5h" value="main" />
   </node>
 </model>
