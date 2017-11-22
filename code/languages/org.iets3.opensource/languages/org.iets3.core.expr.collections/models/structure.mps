@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -13,6 +14,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -55,6 +59,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -88,19 +93,16 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
-    <property role="TrG5h" value="ListType" />
+    <property role="TrG5h" value="ImmutableListType" />
     <property role="34LRSv" value="list" />
-    <property role="3GE5qa" value="list" />
+    <property role="3GE5qa" value="list.immutable" />
     <property role="EcuMT" value="7554398283339757344" />
-    <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
-    <node concept="PrWs8" id="6zmBjqUiHHH" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUiHH7" resolve="IOrderedCollection" />
-    </node>
+    <ref role="1TJDcQ" node="5WlDfyP4Gn1" resolve="AbstractListType" />
   </node>
   <node concept="1TIwiD" id="6zmBjqUinVn">
-    <property role="TrG5h" value="ListLiteral" />
+    <property role="TrG5h" value="ImmutableListLiteral" />
     <property role="34LRSv" value="list" />
-    <property role="3GE5qa" value="list" />
+    <property role="3GE5qa" value="list.immutable" />
     <property role="EcuMT" value="7554398283339759319" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7yDflTqUOmT" role="1TKVEi">
@@ -293,7 +295,7 @@
   </node>
   <node concept="1TIwiD" id="7GwCuf2y0gW">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="AsListOp" />
+    <property role="TrG5h" value="AsImmutableListOp" />
     <property role="34LRSv" value="toList" />
     <property role="EcuMT" value="8872269265513219132" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
@@ -348,16 +350,16 @@
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2Wbm7">
-    <property role="TrG5h" value="SetType" />
+    <property role="TrG5h" value="ImmutableSetType" />
     <property role="34LRSv" value="set" />
-    <property role="3GE5qa" value="set" />
+    <property role="3GE5qa" value="set.immutable" />
     <property role="EcuMT" value="8872269265520080263" />
-    <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
+    <ref role="1TJDcQ" node="6QPHMFf0Tpb" resolve="SetType" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2WbAd">
-    <property role="TrG5h" value="SetLiteral" />
+    <property role="TrG5h" value="ImmutableSetLiteral" />
     <property role="34LRSv" value="set" />
-    <property role="3GE5qa" value="set" />
+    <property role="3GE5qa" value="set.immutable" />
     <property role="EcuMT" value="8872269265520081293" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7yDflTqXbp_" role="1TKVEi">
@@ -382,7 +384,7 @@
   </node>
   <node concept="1TIwiD" id="7GwCuf34jB6">
     <property role="3GE5qa" value="collection" />
-    <property role="TrG5h" value="AsSetOp" />
+    <property role="TrG5h" value="AsImmutableSetOp" />
     <property role="34LRSv" value="toSet" />
     <property role="EcuMT" value="8872269265522211270" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
@@ -401,32 +403,38 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdBQ">
-    <property role="TrG5h" value="MapType" />
-    <property role="3GE5qa" value="map" />
+    <property role="TrG5h" value="ImmutableMapType" />
+    <property role="3GE5qa" value="map.immutable" />
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163110902" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="4_KMC82DFps" resolve="MapLikeType" />
     <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
     <node concept="1TJgyj" id="7kYh9WszdBR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="keyType" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="keyType_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8448265401163110903" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="4_KMC82DZMw" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.collections.structure.MapType&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7kYh9WszdBT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="valueType" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="valueType_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8448265401163110905" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="asaX9" id="4_KMC82DZQC" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.collections.structure.MapType&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHC">
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="MapLiteral" />
+    <property role="3GE5qa" value="map.immutable" />
+    <property role="TrG5h" value="ImmutableMapLiteral" />
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163111272" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
@@ -455,7 +463,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHD">
-    <property role="3GE5qa" value="map" />
+    <property role="3GE5qa" value="map.common" />
     <property role="TrG5h" value="KeyValuePair" />
     <property role="EcuMT" value="8448265401163111273" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
@@ -481,39 +489,39 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9Ws$zzv">
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="OneArgMapModifier" />
+    <property role="3GE5qa" value="map.immutable" />
+    <property role="TrG5h" value="ImmutableMapOneArgOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8448265401163462879" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7kYh9Ws$zzw" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3k_xD0" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    <node concept="PrWs8" id="6IBT1wT$hPy" role="PzmwI">
+      <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
     </node>
     <node concept="1TJgyj" id="7kYh9Ws$zzU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="arg" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="arg_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8448265401163462906" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="6IBT1wT$hQ_" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.collections.structure.IMapOneArgOp&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9Ws$Uec">
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="MapAddOp" />
-    <property role="34LRSv" value="add" />
+    <property role="3GE5qa" value="map.immutable" />
+    <property role="TrG5h" value="ImmutableMapPutOp" />
+    <property role="34LRSv" value="put" />
     <property role="EcuMT" value="8448265401163555724" />
-    <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="OneArgMapModifier" />
+    <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
   <node concept="1TIwiD" id="7kYh9Ws_wTl">
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="MapRemoveOp" />
+    <property role="3GE5qa" value="map.immutable" />
+    <property role="TrG5h" value="ImmutableMapRemoveOp" />
     <property role="34LRSv" value="remove" />
     <property role="EcuMT" value="8448265401163714133" />
-    <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="OneArgMapModifier" />
+    <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
   <node concept="1TIwiD" id="4Q4DxjDbyq9">
     <property role="3GE5qa" value="collection.numeric" />
@@ -600,60 +608,60 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1RHynufnBSS">
-    <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="OneArgListModifier" />
+    <property role="3GE5qa" value="list.immutable" />
+    <property role="TrG5h" value="ImmutableListOneArgOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2156530943179783736" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1RHynufnBST" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    <node concept="PrWs8" id="4_KMC82H1z1" role="PzmwI">
+      <ref role="PrY4T" node="4_KMC82H1yT" resolve="IListOneArgOp" />
     </node>
     <node concept="1TJgyj" id="1RHynufnBSU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="arg" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="arg_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="2156530943179783738" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="thkha1Z835" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.collections.structure.IListOneArgOp&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1RHynufnBSV">
-    <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="ListWithOp" />
+    <property role="3GE5qa" value="list.immutable" />
+    <property role="TrG5h" value="ImmutableListWithOp" />
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179783739" />
-    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
-    <node concept="PrWs8" id="4qVjx3k_x9Y" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
+    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
   </node>
   <node concept="1TIwiD" id="1RHynufnSPh">
-    <property role="3GE5qa" value="set" />
-    <property role="TrG5h" value="OneArgSetModifier" />
+    <property role="3GE5qa" value="set.immutable" />
+    <property role="TrG5h" value="ImmutableSetOneArgOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2156530943179853137" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1RHynufnSPi" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3k_xVS" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    <node concept="PrWs8" id="thkha3aNSC" role="PzmwI">
+      <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
     </node>
     <node concept="1TJgyj" id="1RHynufnSPj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="arg" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="arg_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="2156530943179853139" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="thkha3aNU_" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.collections.structure.ISetOneArgOp&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1RHynufnTnz">
-    <property role="3GE5qa" value="set" />
-    <property role="TrG5h" value="SetAddOp" />
+    <property role="3GE5qa" value="set.immutable" />
+    <property role="TrG5h" value="ImmutableSetAddOp" />
     <property role="34LRSv" value="add" />
     <property role="EcuMT" value="2156530943179855331" />
-    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
+    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
   <node concept="1TIwiD" id="7yDflTqUNUp">
     <property role="EcuMT" value="8694548031077039769" />
@@ -807,10 +815,10 @@
   </node>
   <node concept="1TIwiD" id="3kEBq3lv4rL">
     <property role="EcuMT" value="3831047747134047985" />
-    <property role="3GE5qa" value="set" />
-    <property role="TrG5h" value="SetRemoveOp" />
+    <property role="3GE5qa" value="set.immutable" />
+    <property role="TrG5h" value="ImmutableSetRemoveOp" />
     <property role="34LRSv" value="remove" />
-    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="OneArgSetModifier" />
+    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
   <node concept="1TIwiD" id="5ipapt3qQ3k">
     <property role="TrG5h" value="IsNotEmptyOp" />
@@ -888,33 +896,175 @@
     </node>
   </node>
   <node concept="1TIwiD" id="k9boAtSSt_">
-    <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="ListWithAllOp" />
+    <property role="3GE5qa" value="list.immutable" />
+    <property role="TrG5h" value="ImmutableListWithAllOp" />
     <property role="34LRSv" value="withAll" />
     <property role="EcuMT" value="362871314062739301" />
-    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
+    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
     <node concept="PrWs8" id="k9boAtSStA" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
-  <node concept="1TIwiD" id="VApoyDJ0j1">
-    <property role="EcuMT" value="1073657198812071105" />
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="KeysTarget" />
-    <property role="34LRSv" value="keys" />
+  <node concept="1TIwiD" id="4_KMC82DFps">
+    <property role="EcuMT" value="5291952221899372124" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="MapLikeType" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="mapLike" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="4_KMC82DZMl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keyType" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5291952221899455637" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="4_KMC82DZQt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="valueType" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5291952221899455901" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="LrvgQhjFyf">
+    <property role="EcuMT" value="890442848561707151" />
+    <property role="3GE5qa" value="list.immutable" />
+    <property role="TrG5h" value="ImmutableListInsertOp" />
+    <property role="34LRSv" value="insert" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="VApoyDJ0j2" role="PzmwI">
+    <node concept="1TJgyj" id="1rPkY5wVdS6" role="1TKVEi">
+      <property role="IQ2ns" value="1654320665587408390" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="index" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="y9dymAyy$x" role="1TKVEi">
+      <property role="IQ2ns" value="615082359448545569" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="LrvgQhkLIx" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7Z_fDCwv2Gw">
-    <property role="EcuMT" value="9215841044174482208" />
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="ValuesTarget" />
+  <node concept="1TIwiD" id="6IBT1wUeIoD">
+    <property role="EcuMT" value="7757419675876255273" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="MapLikeKeysOp" />
+    <property role="34LRSv" value="keys" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6IBT1wUeIoE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6IBT1wUeCOW">
+    <property role="EcuMT" value="7757419675876232508" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="MapLikeOneArgOp" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6IBT1wUeCOX" role="PzmwI">
+      <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6IBT1wUeESY">
+    <property role="EcuMT" value="7757419675876240958" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="MapLikeValuesOp" />
     <property role="34LRSv" value="values" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7Z_fDCwv2Gx" role="PzmwI">
+    <node concept="PrWs8" id="6IBT1wUeESZ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5WlDfyP4Gn1">
+    <property role="EcuMT" value="6851563796210828737" />
+    <property role="3GE5qa" value="list.common" />
+    <property role="TrG5h" value="AbstractListType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
+    <node concept="PrWs8" id="5WlDfyP4Gn2" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHH7" resolve="IOrderedCollection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QPHMFf0Tpb">
+    <property role="EcuMT" value="7905426115408401995" />
+    <property role="3GE5qa" value="set.common" />
+    <property role="TrG5h" value="SetType" />
+    <property role="34LRSv" value="set" />
+    <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
+  </node>
+  <node concept="1TIwiD" id="LrvgQhjCPU">
+    <property role="EcuMT" value="890442848561696122" />
+    <property role="3GE5qa" value="list.immutable" />
+    <property role="TrG5h" value="ImmutableListRemoveOp" />
+    <property role="34LRSv" value="remove" />
+    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
+  </node>
+  <node concept="1TIwiD" id="6IBT1wUeDJz">
+    <property role="EcuMT" value="7757419675876236259" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="MapLikeContainsKeyOp" />
+    <property role="34LRSv" value="containsKey" />
+    <ref role="1TJDcQ" node="6IBT1wUeCOW" resolve="MapLikeOneArgOp" />
+  </node>
+  <node concept="PlHQZ" id="6IBT1wT$hPp">
+    <property role="EcuMT" value="7757419675865128281" />
+    <property role="3GE5qa" value="map.common" />
+    <property role="TrG5h" value="IMapOneArgOp" />
+    <node concept="PrWs8" id="6IBT1wT$hPq" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="6IBT1wT$hPr" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="1TJgyj" id="6IBT1wT$hQq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7757419675865128346" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="thkha3aNEl">
+    <property role="EcuMT" value="527291771330968213" />
+    <property role="3GE5qa" value="set.common" />
+    <property role="TrG5h" value="ISetOneArgOp" />
+    <node concept="PrWs8" id="thkha3aNEm" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="thkha3aNSU" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="1TJgyj" id="thkha3aNUq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="527291771330969242" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4_KMC82H1yT">
+    <property role="EcuMT" value="5291952221900249273" />
+    <property role="3GE5qa" value="list.common" />
+    <property role="TrG5h" value="IListOneArgOp" />
+    <node concept="PrWs8" id="4_KMC82H1yU" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="thkha3aNTu" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="1TJgyj" id="thkha1Z82U" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="527291771311128762" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>

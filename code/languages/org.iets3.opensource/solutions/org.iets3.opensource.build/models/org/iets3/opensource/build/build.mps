@@ -692,12 +692,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6JPXQMQs0q7" role="3bR37C">
-          <node concept="3bR9La" id="6JPXQMQs0q8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6JPXQMQs0q9" role="3bR37C">
           <node concept="3bR9La" id="6JPXQMQs0qa" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -726,6 +720,11 @@
           <node concept="3bR9La" id="6d7zaBDKTsC" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4yV5gYdG80r" role="3bR37C">
+          <node concept="1Busua" id="4yV5gYdG80s" role="1SiIV1">
+            <ref role="1Busuk" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
       </node>
@@ -896,8 +895,8 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2jITtfDiJz0" role="3bR37C">
-          <node concept="3bR9La" id="2jITtfDiJz1" role="1SiIV1">
+        <node concept="1SiIV0" id="6IBT1wSVv8r" role="3bR37C">
+          <node concept="3bR9La" id="6IBT1wSVv8s" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>

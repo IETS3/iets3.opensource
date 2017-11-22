@@ -2606,7 +2606,7 @@
                 <node concept="mw_s8" id="7cphKbKuHoS" role="1ZfhKB">
                   <node concept="2pJPEk" id="7cphKbKuHoQ" role="mwGJk">
                     <node concept="2pJPED" id="7cphKbKuHp3" role="2pJPEn">
-                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
                       <node concept="2pIpSj" id="7cphKbKuHrC" role="2pJxcM">
                         <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                         <node concept="36biLy" id="7cphKbKuHrK" role="2pJxcZ">
