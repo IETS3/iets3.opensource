@@ -1297,5 +1297,23 @@
       <ref role="PrY4T" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="cCTPXxodrc">
+    <property role="EcuMT" value="227686178023855820" />
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="AbstractConnectorRefTarget" />
+    <node concept="1TJgyj" id="cCTPXxodsN" role="1TKVEi">
+      <property role="IQ2ns" value="227686178023855923" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="connector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="mIQkxg5ZSA" resolve="AbstractConnector" />
+    </node>
+    <node concept="PrWs8" id="cCTPXxodrj" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="cCTPXxodrk" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
+    </node>
+  </node>
 </model>
 

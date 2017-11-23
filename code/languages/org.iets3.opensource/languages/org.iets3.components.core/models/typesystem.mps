@@ -2498,5 +2498,36 @@
       <ref role="1YaFvo" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
     </node>
   </node>
+  <node concept="1YbPZF" id="cCTPXxsOGW">
+    <property role="TrG5h" value="typeof_AbstractConnectorRefTarget" />
+    <property role="3GE5qa" value="expr" />
+    <node concept="3clFbS" id="cCTPXxsOGX" role="18ibNy">
+      <node concept="1Z5TYs" id="cCTPXxsPck" role="3cqZAp">
+        <node concept="mw_s8" id="cCTPXxsPcS" role="1ZfhKB">
+          <node concept="1Z2H0r" id="cCTPXxsPcO" role="mwGJk">
+            <node concept="2OqwBi" id="cCTPXxsPms" role="1Z2MuG">
+              <node concept="1YBJjd" id="cCTPXxsPdf" role="2Oq$k0">
+                <ref role="1YBMHb" node="cCTPXxsOGZ" resolve="abstractConnectorRefTarget" />
+              </node>
+              <node concept="3TrEf2" id="cCTPXxsPxa" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:cCTPXxodsN" resolve="connector" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="cCTPXxsPcn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="cCTPXxsOH3" role="mwGJk">
+            <node concept="1YBJjd" id="cCTPXxsOIT" role="1Z2MuG">
+              <ref role="1YBMHb" node="cCTPXxsOGZ" resolve="abstractConnectorRefTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="cCTPXxsOGZ" role="1YuTPh">
+      <property role="TrG5h" value="abstractConnectorRefTarget" />
+      <ref role="1YaFvo" to="w9y2:cCTPXxodrc" resolve="AbstractConnectorRefTarget" />
+    </node>
+  </node>
 </model>
 

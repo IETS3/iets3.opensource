@@ -54,6 +54,7 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -13586,6 +13587,31 @@
                     <node concept="10M0yZ" id="1Mw0qFUE6q1" role="37wK5m">
                       <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                       <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="cCTPXxp$5Q">
+    <property role="3GE5qa" value="expr" />
+    <ref role="1XX52x" to="w9y2:cCTPXxodrc" resolve="AbstractConnectorRefTarget" />
+    <node concept="1iCGBv" id="cCTPXxp$5S" role="2wV5jI">
+      <ref role="1NtTu8" to="w9y2:cCTPXxodsN" resolve="connector" />
+      <node concept="1sVBvm" id="cCTPXxp$5U" role="1sWHZn">
+        <node concept="1HlG4h" id="cCTPXxp$67" role="2wV5jI">
+          <node concept="1HfYo3" id="cCTPXxp$69" role="1HlULh">
+            <node concept="3TQlhw" id="cCTPXxp$6b" role="1Hhtcw">
+              <node concept="3clFbS" id="cCTPXxp$6d" role="2VODD2">
+                <node concept="3clFbF" id="cCTPXxp_M_" role="3cqZAp">
+                  <node concept="2OqwBi" id="cCTPXxpBCA" role="3clFbG">
+                    <node concept="pncrf" id="cCTPXxpBm_" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="cCTPXxpEeM" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                     </node>
                   </node>
                 </node>
