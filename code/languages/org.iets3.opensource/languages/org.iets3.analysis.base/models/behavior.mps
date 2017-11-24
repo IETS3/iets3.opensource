@@ -36,7 +36,6 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -206,11 +205,19 @@
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -231,6 +238,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
@@ -248,10 +258,18 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -432,6 +450,27 @@
         </node>
       </node>
       <node concept="17QB3L" id="WieAE6TWOt" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7QsdZDAwqu3" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isManualCheckAvaillable" />
+      <ref role="13i0hy" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+      <node concept="3Tm1VV" id="7QsdZDAwqu4" role="1B3o_S" />
+      <node concept="3clFbS" id="7QsdZDAwqu6" role="3clF47">
+        <node concept="3clFbF" id="7QsdZDAwrXu" role="3cqZAp">
+          <node concept="2OqwBi" id="7QsdZDAwsjR" role="3clFbG">
+            <node concept="35c_gC" id="7QsdZDAwrXt" role="2Oq$k0">
+              <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+            </node>
+            <node concept="2qgKlT" id="7QsdZDAws_i" role="2OqNvi">
+              <ref role="37wK5l" node="7QsdZDAweeW" resolve="isSolverEnabled" />
+              <node concept="13iPFW" id="7QsdZDAwsE6" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7QsdZDAwro$" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4pkidg68a_9" role="13h7CS">
       <property role="2Ki8OM" value="false" />
@@ -1481,102 +1520,168 @@
       <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
     </node>
   </node>
-  <node concept="13h7C7" id="4FREEt6y5M7">
-    <ref role="13h7C2" to="l80j:4FREEt6y5LH" resolve="IControlSolver" />
-    <node concept="13hLZK" id="4FREEt6y5M8" role="13h7CW">
-      <node concept="3clFbS" id="4FREEt6y5M9" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="4FREEt6y5Mi" role="13h7CS">
+  <node concept="13h7C7" id="7QsdZDAwecP">
+    <ref role="13h7C2" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+    <node concept="13i0hz" id="7QsdZDAwed0" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="allowSolver" />
-      <node concept="3Tm1VV" id="4FREEt6y5Mj" role="1B3o_S" />
-      <node concept="10P_77" id="4FREEt6y5MA" role="3clF45" />
-      <node concept="3clFbS" id="4FREEt6y5Ml" role="3clF47">
-        <node concept="3clFbF" id="4FREEt6y5Nb" role="3cqZAp">
-          <node concept="3clFbT" id="4FREEt6y5Na" role="3clFbG">
-            <property role="3clFbU" value="false" />
+      <property role="TrG5h" value="isSolverEnabledUnderThisRoot" />
+      <node concept="3Tm1VV" id="7QsdZDAwed1" role="1B3o_S" />
+      <node concept="10P_77" id="7QsdZDAwedk" role="3clF45" />
+      <node concept="3clFbS" id="7QsdZDAwed3" role="3clF47">
+        <node concept="3clFbF" id="7QsdZDAweeD" role="3cqZAp">
+          <node concept="3clFbT" id="7QsdZDAweeC" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
+        </node>
+        <node concept="3clFbH" id="7f8i2dqYmC$" role="3cqZAp" />
+      </node>
+      <node concept="P$JXv" id="7QsdZDAwfvK" role="lGtFl">
+        <node concept="TZ5HA" id="7QsdZDAwfvL" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfvM" role="1dT_Ay">
+            <property role="1dT_AB" value="To enable the solver under a given root node, let the root node implement this interface." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7QsdZDAwfwh" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfwi" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7QsdZDAwfw_" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfwA" role="1dT_Ay">
+            <property role="1dT_AB" value="In case your root node inherits this interface from its parent, but you do not need solver" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7QsdZDAwf$B" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwf$C" role="1dT_Ay">
+            <property role="1dT_AB" value="functionality in your language, you can override the method isSolverEnabledUnderThisRoot and return false to disable the solver under your root." />
+          </node>
+        </node>
+        <node concept="x79VA" id="7QsdZDAwfvN" role="3nqlJM">
+          <property role="x79VB" value="whether or not the solver is enabled under this root." />
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="4FREEt6y5QS" role="13h7CS">
+    <node concept="13i0hz" id="7QsdZDAweeW" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isSolverEnabled" />
       <property role="2Ki8OM" value="true" />
-      <property role="TrG5h" value="allowSolver" />
-      <node concept="37vLTG" id="4FREEt6y5Ss" role="3clF46">
+      <node concept="37vLTG" id="7QsdZDAweg8" role="3clF46">
         <property role="TrG5h" value="n" />
-        <node concept="3Tqbb2" id="4FREEt6y5SG" role="1tU5fm" />
+        <node concept="3Tqbb2" id="7QsdZDAwego" role="1tU5fm" />
       </node>
-      <node concept="3Tm1VV" id="4FREEt6y5QT" role="1B3o_S" />
-      <node concept="10P_77" id="4FREEt6y5RC" role="3clF45" />
-      <node concept="3clFbS" id="4FREEt6y5QV" role="3clF47">
-        <node concept="3cpWs8" id="4FREEt6y6Ic" role="3cqZAp">
-          <node concept="3cpWsn" id="4FREEt6y6Id" role="3cpWs9">
+      <node concept="3Tm1VV" id="7QsdZDAweeX" role="1B3o_S" />
+      <node concept="10P_77" id="7QsdZDAwefs" role="3clF45" />
+      <node concept="3clFbS" id="7QsdZDAweeZ" role="3clF47">
+        <node concept="3cpWs8" id="7QsdZDAwfng" role="3cqZAp">
+          <node concept="3cpWsn" id="7QsdZDAwfnh" role="3cpWs9">
             <property role="TrG5h" value="control" />
-            <node concept="3Tqbb2" id="4FREEt6y6Ia" role="1tU5fm">
-              <ref role="ehGHo" to="l80j:4FREEt6y5LH" resolve="IControlSolver" />
+            <node concept="3Tqbb2" id="7QsdZDAwfni" role="1tU5fm">
+              <ref role="ehGHo" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
             </node>
-            <node concept="1PxgMI" id="4FREEt6y6Ie" role="33vP2m">
+            <node concept="1PxgMI" id="7QsdZDAwfnj" role="33vP2m">
               <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="4FREEt6y6If" role="3oSUPX">
-                <ref role="cht4Q" to="l80j:4FREEt6y5LH" resolve="IControlSolver" />
+              <node concept="chp4Y" id="7QsdZDAwfQ1" role="3oSUPX">
+                <ref role="cht4Q" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
               </node>
-              <node concept="2OqwBi" id="4FREEt6y6Ig" role="1m5AlR">
-                <node concept="37vLTw" id="4FREEt6y6Ih" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4FREEt6y5Ss" resolve="n" />
+              <node concept="2OqwBi" id="7QsdZDAwfnl" role="1m5AlR">
+                <node concept="37vLTw" id="7QsdZDAwfnm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7QsdZDAweg8" resolve="n" />
                 </node>
-                <node concept="2Rxl7S" id="4FREEt6y6Ii" role="2OqNvi" />
+                <node concept="2Rxl7S" id="7QsdZDAwfnn" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4FREEt6y6LJ" role="3cqZAp">
-          <node concept="22lmx$" id="4FREEt6y77N" role="3clFbG">
-            <node concept="2OqwBi" id="4FREEt6y7i3" role="3uHU7w">
-              <node concept="37vLTw" id="4FREEt6y79c" role="2Oq$k0">
-                <ref role="3cqZAo" node="4FREEt6y6Id" resolve="control" />
-              </node>
-              <node concept="2qgKlT" id="4FREEt6y7Bu" role="2OqNvi">
-                <ref role="37wK5l" node="4FREEt6y5Mi" resolve="allowSolver" />
+        <node concept="3SKdUt" id="7QsdZDA$Qb1" role="3cqZAp">
+          <node concept="3SKdUq" id="7QsdZDA$Qb3" role="3SKWNk">
+            <property role="3SKdUp" value="Note: checking the root node only is fast, but does not work in all cases (for instance when a Library is used in a NodeTest.)" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7QsdZDA$QkL" role="3cqZAp">
+          <node concept="3SKdUq" id="7QsdZDA$QkN" role="3SKWNk">
+            <property role="3SKdUp" value="checking the root first and traversing the ancestor chain only when it does not implement IUseSolver is a pragmatic optimization." />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7QsdZDA$Otc" role="3cqZAp">
+          <node concept="3clFbS" id="7QsdZDA$Ote" role="3clFbx">
+            <node concept="3clFbF" id="7QsdZDA$Py_" role="3cqZAp">
+              <node concept="37vLTI" id="7QsdZDA$PQz" role="3clFbG">
+                <node concept="37vLTw" id="7QsdZDA$Pyz" role="37vLTJ">
+                  <ref role="3cqZAo" node="7QsdZDAwfnh" resolve="control" />
+                </node>
+                <node concept="2OqwBi" id="7QsdZDA$Pe0" role="37vLTx">
+                  <node concept="37vLTw" id="7QsdZDA$P7H" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7QsdZDAweg8" resolve="n" />
+                  </node>
+                  <node concept="2Xjw5R" id="7QsdZDA$Pu5" role="2OqNvi">
+                    <node concept="1xMEDy" id="7QsdZDA$Pu7" role="1xVPHs">
+                      <node concept="chp4Y" id="7QsdZDA$Pw6" role="ri$Ld">
+                        <ref role="cht4Q" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="7QsdZDA$Q45" role="1xVPHs" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="3clFbC" id="4FREEt6y73J" role="3uHU7B">
-              <node concept="37vLTw" id="4FREEt6y6Vf" role="3uHU7B">
-                <ref role="3cqZAo" node="4FREEt6y6Id" resolve="control" />
+          </node>
+          <node concept="3clFbC" id="7QsdZDA$P1x" role="3clFbw">
+            <node concept="10Nm6u" id="7QsdZDA$P7i" role="3uHU7w" />
+            <node concept="37vLTw" id="7QsdZDA$OxO" role="3uHU7B">
+              <ref role="3cqZAo" node="7QsdZDAwfnh" resolve="control" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7QsdZDAwfno" role="3cqZAp">
+          <node concept="1Wc70l" id="7QsdZDAwfnp" role="3clFbG">
+            <node concept="3y3z36" id="7QsdZDAwfnq" role="3uHU7B">
+              <node concept="37vLTw" id="7QsdZDAwfnr" role="3uHU7B">
+                <ref role="3cqZAo" node="7QsdZDAwfnh" resolve="control" />
               </node>
-              <node concept="10Nm6u" id="4FREEt6y73U" role="3uHU7w" />
+              <node concept="10Nm6u" id="7QsdZDAwfns" role="3uHU7w" />
+            </node>
+            <node concept="2OqwBi" id="7QsdZDAwfnt" role="3uHU7w">
+              <node concept="37vLTw" id="7QsdZDAwfnu" role="2Oq$k0">
+                <ref role="3cqZAo" node="7QsdZDAwfnh" resolve="control" />
+              </node>
+              <node concept="2qgKlT" id="7QsdZDAwg3q" role="2OqNvi">
+                <ref role="37wK5l" node="7QsdZDAwed0" resolve="isSolverEnabledUnderThisRoot" />
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="P$JXv" id="4FREEt6y7Jw" role="lGtFl">
-        <node concept="TZ5HA" id="4FREEt6y7Jx" role="TZ5H$">
-          <node concept="1dT_AC" id="4FREEt6y7Jy" role="1dT_Ay">
-            <property role="1dT_AB" value="Determines if solver functionality should be allowed for a given node. Solver functionality is enabled unless the" />
+      <node concept="P$JXv" id="7QsdZDAwfBD" role="lGtFl">
+        <node concept="TZ5HA" id="7QsdZDAwfBE" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfBF" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is used by solver-related info-messages, intentions, etc. to determine whether they should be shown for a given node n." />
           </node>
         </node>
-        <node concept="TZ5HA" id="4FREEt6y7NU" role="TZ5H$">
-          <node concept="1dT_AC" id="4FREEt6y7NV" role="1dT_Ay">
-            <property role="1dT_AB" value="node is under a root implementing this interface and returning false from " />
-          </node>
-          <node concept="1dT_AC" id="4FREEt6y9kP" role="1dT_Ay">
+        <node concept="TZ5HA" id="7QsdZDAwfFX" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfFY" role="1dT_Ay">
             <property role="1dT_AB" value="" />
           </node>
-          <node concept="1dT_AA" id="4FREEt6y7Of" role="1dT_Ay">
-            <node concept="92FcH" id="4FREEt6y7Ox" role="qph3F">
-              <node concept="TZ5HA" id="4FREEt6y7Oz" role="2XjZqd" />
-              <node concept="VXe0Z" id="4FREEt6y9kx" role="92FcQ">
-                <ref role="VXe0S" node="4FREEt6y5Mi" resolve="allowSolver" />
-              </node>
-            </node>
+        </node>
+        <node concept="TZ5HA" id="7QsdZDAwfGh" role="TZ5H$">
+          <node concept="1dT_AC" id="7QsdZDAwfGi" role="1dT_Ay">
+            <property role="1dT_AB" value="For more information on how to enable/disable the solver for your language, please refer to the comment above the method " />
           </node>
-          <node concept="1dT_AC" id="4FREEt6y7Oe" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        </node>
+        <node concept="TUZQ0" id="7QsdZDAwfBG" role="3nqlJM">
+          <property role="TUZQ4" value="the node that the solver should be applied to." />
+          <node concept="zr_55" id="7QsdZDAwfBI" role="zr_5Q">
+            <ref role="zr_51" node="7QsdZDAweg8" resolve="n" />
           </node>
+        </node>
+        <node concept="x79VA" id="7QsdZDAwfBJ" role="3nqlJM">
+          <property role="x79VB" value="true, when the solver is enabled for the given node, false otherwise." />
         </node>
       </node>
+    </node>
+    <node concept="13hLZK" id="7QsdZDAwecQ" role="13h7CW">
+      <node concept="3clFbS" id="7QsdZDAwecR" role="2VODD2" />
     </node>
   </node>
 </model>

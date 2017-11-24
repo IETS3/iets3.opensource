@@ -12,6 +12,11 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -26,6 +31,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -58,6 +64,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+    <node concept="1TJgyj" id="7bd8pkl401w" role="1TKVEi">
+      <property role="IQ2ns" value="8272305014736683104" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sourceScope" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
     <node concept="1TJgyj" id="2HpFPvT5YvP" role="1TKVEi">
       <property role="IQ2ns" value="3123720608934258677" />
       <property role="20lmBu" value="aggregation" />
@@ -67,6 +80,17 @@
     </node>
     <node concept="PrWs8" id="2HpFPvT65V0" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4nY0kF8y05Q" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4nY0kF8wP$h" resolve="IRunningInterpreterContext" />
+    </node>
+    <node concept="1QGGSu" id="4150e4IdBk3" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/repl.png" />
+    </node>
+    <node concept="1TJgyi" id="4nY0kF8rhEo" role="1TKVEl">
+      <property role="IQ2nx" value="5043470053403335320" />
+      <property role="TrG5h" value="updateDownstream" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="14RJwd1g889">
@@ -90,6 +114,9 @@
     <node concept="PrWs8" id="14RJwd1gH07" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>
+    <node concept="PrWs8" id="7bd8pklaJxC" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="1TJgyi" id="2HpFPvTa5jb" role="1TKVEl">
       <property role="IQ2nx" value="3123720608935335115" />
       <property role="TrG5h" value="hasBeenEvaled" />
@@ -100,10 +127,20 @@
       <property role="TrG5h" value="hasError" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2QxWJFK_C51" role="1TKVEl">
+      <property role="IQ2nx" value="3288176362549313857" />
+      <property role="TrG5h" value="referenceable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="14RJwd1g88L">
     <property role="EcuMT" value="1240669143552786993" />
     <property role="TrG5h" value="IReplEntry" />
+    <node concept="1TJgyi" id="2QxWJFKDebM" role="1TKVEl">
+      <property role="IQ2nx" value="3288176362550256370" />
+      <property role="TrG5h" value="optionalName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HpFPvT9Hfx">
     <property role="EcuMT" value="3123720608935236577" />
@@ -115,6 +152,24 @@
       <property role="20kJfa" value="entry" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="14RJwd1g88L" resolve="IReplEntry" />
+    </node>
+    <node concept="PrWs8" id="6XMQOZe9m1D" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5nEyPbMpXef">
+    <property role="EcuMT" value="6190913826144637839" />
+    <property role="TrG5h" value="ReplEntryRefByName" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5nEyPbMpXeg" role="1TKVEi">
+      <property role="IQ2ns" value="3123720608935236578" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entry" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="14RJwd1g88L" resolve="IReplEntry" />
+    </node>
+    <node concept="PrWs8" id="6XMQOZe9mEW" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
     </node>
   </node>
 </model>

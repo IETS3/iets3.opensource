@@ -1046,5 +1046,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1mDdTH0lsm">
+    <property role="3GE5qa" value="collection" />
+    <ref role="1XX52x" to="700h:1mDdTH0lqM" resolve="MapSizeOp" />
+    <node concept="3F0ifn" id="1mDdTH0ltw" role="2wV5jI">
+      <property role="3F0ifm" value="size" />
+    </node>
+  </node>
 </model>
 

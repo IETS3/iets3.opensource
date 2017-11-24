@@ -114,5 +114,35 @@
       <ref role="1YaFvo" to="wtll:2HpFPvT9Hfx" resolve="ReplEntryRef" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5nEyPbMq3Gb">
+    <property role="TrG5h" value="typeof_ReplEntryRefByName" />
+    <node concept="3clFbS" id="5nEyPbMq3Gc" role="18ibNy">
+      <node concept="1Z5TYs" id="5nEyPbMq3Gl" role="3cqZAp">
+        <node concept="mw_s8" id="5nEyPbMq3Gm" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5nEyPbMq3Gn" role="mwGJk">
+            <node concept="2OqwBi" id="5nEyPbMq3Go" role="1Z2MuG">
+              <node concept="1YBJjd" id="5nEyPbMq3Gp" role="2Oq$k0">
+                <ref role="1YBMHb" node="5nEyPbMq3Ge" resolve="rer" />
+              </node>
+              <node concept="3TrEf2" id="5nEyPbMq3Gq" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:5nEyPbMpXeg" resolve="entry" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5nEyPbMq3Gr" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5nEyPbMq3Gs" role="mwGJk">
+            <node concept="1YBJjd" id="5nEyPbMq3Gt" role="1Z2MuG">
+              <ref role="1YBMHb" node="5nEyPbMq3Ge" resolve="rer" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5nEyPbMq3Ge" role="1YuTPh">
+      <property role="TrG5h" value="rer" />
+      <ref role="1YaFvo" to="wtll:5nEyPbMpXef" resolve="ReplEntryRefByName" />
+    </node>
+  </node>
 </model>
 

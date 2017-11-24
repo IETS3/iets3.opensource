@@ -2,8 +2,6 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -571,6 +569,9 @@
     </node>
     <node concept="PrWs8" id="4qVjx3kqYpB" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="7mxMACVNvYI" role="PzmwI">
+      <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WsvduW">
@@ -1564,6 +1565,35 @@
   <node concept="PlHQZ" id="4fgA7QrKSas">
     <property role="EcuMT" value="4886573260948603548" />
     <property role="TrG5h" value="IContextTypeProvider" />
+  </node>
+  <node concept="PlHQZ" id="4nY0kF8wP$h">
+    <property role="EcuMT" value="5043470053404793105" />
+    <property role="TrG5h" value="IRunningInterpreterContext" />
+  </node>
+  <node concept="1TIwiD" id="4Pi6J8BU$OM">
+    <property role="EcuMT" value="5571545316364799282" />
+    <property role="TrG5h" value="PragmaExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="pragma" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4Pi6J8BVsYO" role="1TKVEi">
+      <property role="IQ2ns" value="5571545316365029300" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4Pi6J8BVttJ" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Pi6J8BU_Ri">
+    <property role="EcuMT" value="5571545316364803538" />
+    <property role="3GE5qa" value="pragma" />
+    <property role="TrG5h" value="PragmaDisableCaching" />
+    <property role="34LRSv" value="§disable-caching-globally" />
+    <ref role="1TJDcQ" node="4Pi6J8BU$OM" resolve="PragmaExpression" />
   </node>
 </model>
 

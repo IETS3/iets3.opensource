@@ -2,7 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -251,6 +251,12 @@
     <node concept="PrWs8" id="MaFTCbUMvi" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
     </node>
+    <node concept="PrWs8" id="5QBRw4Xr5z0" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5QBRw4Xr9x1" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6rGLT0TevEL" resolve="IRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyKjdj">
     <property role="TrG5h" value="EmptyToplevelContent" />
@@ -477,6 +483,9 @@
     <property role="TrG5h" value="NewValueSetter" />
     <property role="EcuMT" value="1249392911699110134" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4qVjx3k_yKe" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="15mJ3JeHQzR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
@@ -490,9 +499,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1249392911699110137" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3k_yKe" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="HywGhj0hJO">
@@ -725,6 +731,9 @@
     </node>
     <node concept="PrWs8" id="ORfz$DYlRG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="7QsdZDAxMzs" role="PzmwI">
+      <ref role="PrY4T" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/iets3-16.png" />

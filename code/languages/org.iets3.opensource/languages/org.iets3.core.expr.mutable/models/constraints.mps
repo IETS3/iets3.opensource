@@ -6,7 +6,6 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -183,6 +182,37 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="7WFhXJlSwqd">
+    <property role="3GE5qa" value="interactor" />
+    <ref role="1M2myG" to="8lgj:7WFhXJlSwpm" resolve="InteractorTarget" />
+    <node concept="9S07l" id="7WFhXJlSwqe" role="9Vyp8">
+      <node concept="3clFbS" id="7WFhXJlSwqf" role="2VODD2">
+        <node concept="3clFbF" id="7WFhXJlSwxo" role="3cqZAp">
+          <node concept="2OqwBi" id="7WFhXJlSxch" role="3clFbG">
+            <node concept="1PxgMI" id="7WFhXJlSwLW" role="2Oq$k0">
+              <node concept="chp4Y" id="7WFhXJlSwTt" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="7WFhXJlSwxn" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="7WFhXJlSx$o" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="7WFhXJlSxMl" role="37wK5m">
+                <ref role="35c_gD" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
+              </node>
+              <node concept="3clFbT" id="7WFhXJlSyAE" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4nY0kF8wjuK">
+    <property role="3GE5qa" value="interactor.interact" />
+    <ref role="1M2myG" to="8lgj:7bd8pkl7uF5" resolve="LiveExpression" />
   </node>
 </model>
 

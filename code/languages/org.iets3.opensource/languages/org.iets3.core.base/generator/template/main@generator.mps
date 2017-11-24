@@ -2,8 +2,6 @@
 <model ref="r:c4906e3c-f752-41b6-90d0-f32fdc262df0(org.iets3.core.base.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
   </languages>
   <imports />
