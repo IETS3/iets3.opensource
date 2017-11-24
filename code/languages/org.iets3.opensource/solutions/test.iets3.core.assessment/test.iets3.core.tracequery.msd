@@ -38,6 +38,8 @@
     <language slang="l:583939be-ded0-4735-a055-a74f8477fc34:org.iets3.core.attributes" version="0" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="0" />
+    <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="0" />
+    <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
     <language slang="l:7d21cc4b-4c24-41db-9868-8af4a7f3eba9:org.iets3.core.trace" version="0" />
     <language slang="l:9eff3336-14d7-46c5-afe1-dcbad13c14c3:org.iets3.core.trace.sandbox" version="-1" />
   </languageVersions>
