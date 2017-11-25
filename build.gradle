@@ -27,7 +27,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3-RC1'
+ext.mpsVersion = '2017.3-RC2'
 
 
 // Project version
@@ -50,7 +50,7 @@ if (!project.hasProperty("mbeddrVersion")) {
     }
     else {
         //default version
-        ext.mbeddrVersion = '1.0.19511.3937f34'
+        ext.mbeddrVersion = 'refactor-mps2017.3-rc2.1.0.+'
     }
 }
 
