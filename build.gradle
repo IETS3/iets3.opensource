@@ -27,7 +27,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.2.2'
+ext.mpsVersion = '2017.2.3'
 
 
 // Project version
