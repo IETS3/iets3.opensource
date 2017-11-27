@@ -809,7 +809,7 @@
         </node>
       </node>
       <node concept="2SqB2G" id="1USvB3ZvF7B" role="2SqHTX">
-        <property role="TrG5h" value="ALIAS_EDITOR_COMPONENT" />
+        <property role="TrG5h" value="IETS3_KEYWORD_ALIAS_EDITOR_COMPONENT" />
       </node>
     </node>
   </node>
