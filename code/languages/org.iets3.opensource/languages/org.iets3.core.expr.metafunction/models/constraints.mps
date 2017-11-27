@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b7a2fb4b-a03a-4363-af6e-19ce2651657c(org.iets3.core.expr.metafun.constraints)">
+<model ref="r:91283306-8080-44b1-8f19-8dc9666c9df7(org.iets3.core.expr.metafunction.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
@@ -8,7 +8,7 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="jvx" ref="r:73fea3aa-458b-436b-b8f8-bc6e28149b02(org.iets3.core.expr.metafun.structure)" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
   </imports>
   <registry>
@@ -73,10 +73,10 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="5cK3QOcGsYS">
-    <property role="3GE5qa" value="" />
-    <ref role="1M2myG" to="jvx:5cK3QOcGrHH" resolve="MetaFunArgRef" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1M2myG" to="s7zn:5cK3QOcGrHH" resolve="MetaFunArgRef" />
     <node concept="1N5Pfh" id="5cK3QOcGv6q" role="1Mr941">
-      <ref role="1N5Vy1" to="jvx:5cK3QOcGrHI" resolve="arg" />
+      <ref role="1N5Vy1" to="s7zn:5cK3QOcGrHI" resolve="arg" />
       <node concept="3dgokm" id="5cK3QOcGv6v" role="1N6uqs">
         <node concept="3clFbS" id="4GCu1V$Qoig" role="2VODD2">
           <node concept="3clFbF" id="4GCu1V$Qoih" role="3cqZAp">
@@ -89,14 +89,14 @@
                   <node concept="2Xjw5R" id="4GCu1V$Qojm" role="2OqNvi">
                     <node concept="1xMEDy" id="4GCu1V$Qojn" role="1xVPHs">
                       <node concept="chp4Y" id="4GCu1V$Qojo" role="ri$Ld">
-                        <ref role="cht4Q" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+                        <ref role="cht4Q" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                       </node>
                     </node>
                     <node concept="1xIGOp" id="4GCu1V$Qojp" role="1xVPHs" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="4GCu1V$Qojq" role="2OqNvi">
-                  <ref role="3TtcxE" to="jvx:5cK3QOc9hNj" resolve="args" />
+                  <ref role="3TtcxE" to="s7zn:5cK3QOc9hNj" resolve="args" />
                 </node>
               </node>
             </node>
@@ -113,7 +113,7 @@
               <node concept="2Xjw5R" id="4GCu1V$QmsS" role="2OqNvi">
                 <node concept="1xMEDy" id="4GCu1V$QmsT" role="1xVPHs">
                   <node concept="chp4Y" id="4GCu1V$QmsU" role="ri$Ld">
-                    <ref role="cht4Q" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+                    <ref role="cht4Q" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="4GCu1V$QmsV" role="1xVPHs" />

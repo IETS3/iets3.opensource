@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:73fea3aa-458b-436b-b8f8-bc6e28149b02(org.iets3.core.expr.metafun.structure)">
+<model ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
@@ -9,7 +9,7 @@
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="pg8u" ref="r:3b9c8eb7-fe8e-49ad-b61b-02e1f2e47785(io.convecton.meta.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -53,7 +53,7 @@
   </registry>
   <node concept="PlHQZ" id="5cK3QOc9qsF">
     <property role="EcuMT" value="5994308065059776299" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="IMetaFunctionContext" />
     <node concept="1TJgyj" id="5cK3QOc9w5h" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059799377" />
@@ -68,7 +68,7 @@
   </node>
   <node concept="1TIwiD" id="5cK3QOcGrHH">
     <property role="EcuMT" value="5994308065068956525" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="MetaFunArgRef" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5cK3QOcGrHI" role="1TKVEi">
@@ -84,7 +84,7 @@
     <property role="TrG5h" value="MetaFunction" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cK3QOc9hNj" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059740883" />
@@ -116,7 +116,7 @@
   <node concept="1TIwiD" id="5cK3QOc9hNb">
     <property role="EcuMT" value="5994308065059740875" />
     <property role="TrG5h" value="MetaFunctionArgument" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cK3QOc9hNe" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059740878" />
@@ -125,8 +125,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="5cK3QOc9ixK" role="PzmwI">
-      <ref role="PrY4T" to="pg8u:IG87BH$Ux3" resolve="IIdentifierNameConcept" />
+    <node concept="PrWs8" id="38qXCODmWjI" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
 </model>

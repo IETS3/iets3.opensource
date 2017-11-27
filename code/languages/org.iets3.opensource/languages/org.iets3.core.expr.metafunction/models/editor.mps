@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7ded939b-6bef-40c3-aa2a-1b50290fc980(org.iets3.core.expr.metafun.editor)">
+<model ref="r:a400ed35-ac22-4120-ba70-81900e061534(org.iets3.core.expr.metafunction.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="jvx" ref="r:73fea3aa-458b-436b-b8f8-bc6e28149b02(org.iets3.core.expr.metafun.structure)" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
@@ -93,10 +93,10 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5cK3QOcGrIb">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOcGrHH" resolve="MetaFunArgRef" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOcGrHH" resolve="MetaFunArgRef" />
     <node concept="1iCGBv" id="5cK3QOcGrId" role="2wV5jI">
-      <ref role="1NtTu8" to="jvx:5cK3QOcGrHI" resolve="arg" />
+      <ref role="1NtTu8" to="s7zn:5cK3QOcGrHI" resolve="arg" />
       <node concept="1sVBvm" id="5cK3QOcGrIf" role="1sWHZn">
         <node concept="3F0A7n" id="5cK3QOcGrIp" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -110,8 +110,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="5cK3QOc9iyu">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     <node concept="3EZMnI" id="5cK3QOc9iyw" role="2wV5jI">
       <node concept="l2Vlx" id="5cK3QOc9iyx" role="2iSdaV" />
       <node concept="3EZMnI" id="5cK3QOc9iza" role="3EZMnx">
@@ -129,7 +129,7 @@
         </node>
         <node concept="3F2HdR" id="5cK3QOc9iy$" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="jvx:5cK3QOc9hNj" resolve="args" />
+          <ref role="1NtTu8" to="s7zn:5cK3QOc9hNj" resolve="args" />
           <node concept="l2Vlx" id="5cK3QOc9iy_" role="2czzBx" />
           <node concept="3F0ifn" id="5cK3QOc9iyA" role="2czzBI">
             <property role="3F0ifm" value="" />
@@ -151,7 +151,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="5cK3QOc9iyF" role="3EZMnx">
-          <ref role="1NtTu8" to="jvx:5cK3QOc9ixZ" resolve="type" />
+          <ref role="1NtTu8" to="s7zn:5cK3QOc9ixZ" resolve="type" />
         </node>
         <node concept="l2Vlx" id="5cK3QOc9izf" role="2iSdaV" />
       </node>
@@ -159,16 +159,16 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="5cK3QOcaFo8" role="3EZMnx">
-        <ref role="1NtTu8" to="jvx:5cK3QOc9hNg" resolve="body" />
+        <ref role="1NtTu8" to="s7zn:5cK3QOc9hNg" resolve="body" />
       </node>
     </node>
-    <node concept="2aJ2om" id="6mG5pEas6Fu" role="CpUAK">
+    <node concept="2aJ2om" id="1o3PqYG1ntM" role="CpUAK">
       <ref role="2$4xQ3" node="1o3PqYFLINb" resolve="detailedMetaFunctions" />
     </node>
   </node>
   <node concept="24kQdi" id="1o3PqYFLIMu">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     <node concept="3EZMnI" id="1o3PqYFLINh" role="2wV5jI">
       <node concept="l2Vlx" id="1o3PqYFLINi" role="2iSdaV" />
       <node concept="3EZMnI" id="1o3PqYFLINj" role="3EZMnx">
@@ -186,7 +186,7 @@
         </node>
         <node concept="3F2HdR" id="1o3PqYFLINo" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="jvx:5cK3QOc9hNj" resolve="args" />
+          <ref role="1NtTu8" to="s7zn:5cK3QOc9hNj" resolve="args" />
           <node concept="l2Vlx" id="1o3PqYFLINp" role="2czzBx" />
           <node concept="3F0ifn" id="1o3PqYFLINq" role="2czzBI">
             <property role="3F0ifm" value="" />
@@ -207,14 +207,14 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="1o3PqYFLINz" role="3EZMnx">
-        <ref role="1NtTu8" to="jvx:5cK3QOc9hNg" resolve="body" />
+        <ref role="1NtTu8" to="s7zn:5cK3QOc9hNg" resolve="body" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="1o3PqYG1bh3">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
-    <node concept="2aJ2om" id="6mG5pEaCvf1" role="CpUAK">
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+    <node concept="2aJ2om" id="1o3PqYG1bhM" role="CpUAK">
       <ref role="2$4xQ3" node="1o3PqYG1bh0" resolve="conciseMetaFunctions" />
     </node>
     <node concept="3EZMnI" id="1o3PqYG1bh5" role="2wV5jI">
@@ -223,14 +223,14 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="1o3PqYG1bhk" role="3EZMnx">
-        <ref role="1NtTu8" to="jvx:5cK3QOc9hNg" resolve="body" />
+        <ref role="1NtTu8" to="s7zn:5cK3QOc9hNg" resolve="body" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="5cK3QOc9hNM">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
-    <node concept="2aJ2om" id="6mG5pEas6Fx" role="CpUAK">
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
+    <node concept="2aJ2om" id="1o3PqYFLLPR" role="CpUAK">
       <ref role="2$4xQ3" node="1o3PqYFLINb" resolve="detailedMetaFunctions" />
     </node>
     <node concept="3EZMnI" id="5cK3QOc9iBn" role="2wV5jI">
@@ -245,14 +245,14 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5cK3QOc9j2P" role="3EZMnx">
-        <ref role="1NtTu8" to="jvx:5cK3QOc9hNe" resolve="type" />
+        <ref role="1NtTu8" to="s7zn:5cK3QOc9hNe" resolve="type" />
       </node>
       <node concept="l2Vlx" id="5cK3QOc9iBq" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1o3PqYFLLPw">
-    <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="jvx:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1XX52x" to="s7zn:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
     <node concept="3EZMnI" id="1o3PqYFLLPx" role="2wV5jI">
       <node concept="3F0A7n" id="1o3PqYFLLPy" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -262,7 +262,7 @@
     </node>
   </node>
   <node concept="2ABfQD" id="1o3PqYFLIMP">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="io.convector.meta" />
     <node concept="2BsEeg" id="1o3PqYFLINb" role="2ABdcP">
       <property role="2gpH_U" value="true" />
@@ -277,7 +277,6 @@
   </node>
   <node concept="V5hpn" id="68784T_vE96">
     <property role="TrG5h" value="meta" />
-    <property role="3GE5qa" value="" />
     <node concept="14StLt" id="68784T_vE9g" role="V601i">
       <property role="TrG5h" value="metaFunAttr" />
       <node concept="VechU" id="68784T_vE9i" role="3F10Kt">

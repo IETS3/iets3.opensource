@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.core.expr.metafun" uuid="414779e8-2092-4b1d-b845-f04c9f43769f" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.core.expr.metafunction" uuid="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="org.iets3.core.expr.metafun#7326254447311637902" uuid="d201208a-da28-4f57-b616-a9f3e8f9910d" reflective-queries="true">
+    <generator alias="main" namespace="org.iets3.core.expr.metafunction#3610469137435468228" uuid="09bc71cb-5f70-4ccd-aa50-05ddc9dee504" reflective-queries="true">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -39,8 +39,8 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="414779e8-2092-4b1d-b845-f04c9f43769f(org.iets3.core.expr.metafun)" version="0" />
-        <module reference="d201208a-da28-4f57-b616-a9f3e8f9910d(org.iets3.core.expr.metafun#7326254447311637902)" version="0" />
+        <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="0" />
+        <module reference="09bc71cb-5f70-4ccd-aa50-05ddc9dee504(org.iets3.core.expr.metafunction#3610469137435468228)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -51,8 +51,8 @@
     <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
     <dependency reexport="false">d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)</dependency>
     <dependency reexport="false">735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="0" />
@@ -130,7 +130,7 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
-    <module reference="414779e8-2092-4b1d-b845-f04c9f43769f(org.iets3.core.expr.metafun)" version="0" />
+    <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>

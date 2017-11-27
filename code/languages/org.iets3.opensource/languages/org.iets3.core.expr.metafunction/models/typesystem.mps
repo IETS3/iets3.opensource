@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5548ecb1-9510-4c24-b761-eb23450d958a(org.iets3.core.expr.metafun.typesystem)">
+<model ref="r:e732a2c0-534d-4187-8eea-1559d872eaa4(org.iets3.core.expr.metafunction.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
@@ -8,8 +8,8 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="jmgz" ref="r:d2264a01-3dba-430a-a1b3-3e02ed10ce8a(org.iets3.core.expr.metafun.behavior)" />
-    <import index="jvx" ref="r:73fea3aa-458b-436b-b8f8-bc6e28149b02(org.iets3.core.expr.metafun.structure)" />
+    <import index="rnpa" ref="r:56a608ae-00b6-4898-818c-f6bec09c0336(org.iets3.core.expr.metafunction.behavior)" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -146,7 +146,7 @@
   </registry>
   <node concept="18kY7G" id="5cK3QOcCT3e">
     <property role="TrG5h" value="check_IMetaFunctionContext" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <node concept="3clFbS" id="5cK3QOcCT3f" role="18ibNy">
       <node concept="3clFbJ" id="5cK3QOcCT3o" role="3cqZAp">
         <node concept="1Wc70l" id="5cK3QOcGpyJ" role="3clFbw">
@@ -155,7 +155,7 @@
               <ref role="1YBMHb" node="5cK3QOcCT3h" resolve="ifc" />
             </node>
             <node concept="2qgKlT" id="5cK3QOcGpZD" role="2OqNvi">
-              <ref role="37wK5l" to="jmgz:5cK3QOcGp_H" resolve="functionIsMandatory" />
+              <ref role="37wK5l" to="rnpa:5cK3QOcGp_H" resolve="functionIsMandatory" />
             </node>
           </node>
           <node concept="3clFbC" id="5cK3QOcCTBV" role="3uHU7B">
@@ -164,7 +164,7 @@
                 <ref role="1YBMHb" node="5cK3QOcCT3h" resolve="ifc" />
               </node>
               <node concept="3TrEf2" id="5cK3QOcCTkZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="jvx:5cK3QOc9w5h" resolve="function" />
+                <ref role="3Tt5mk" to="s7zn:5cK3QOc9w5h" resolve="function" />
               </node>
             </node>
             <node concept="10Nm6u" id="5cK3QOcCTE7" role="3uHU7w" />
@@ -219,7 +219,7 @@
                 <ref role="1YBMHb" node="5cK3QOcCT3h" resolve="ifc" />
               </node>
               <node concept="2qgKlT" id="5cK3QOdgsmN" role="2OqNvi">
-                <ref role="37wK5l" to="jmgz:5cK3QOcKo8v" resolve="isActualFunctionValid" />
+                <ref role="37wK5l" to="rnpa:5cK3QOcKo8v" resolve="isActualFunctionValid" />
               </node>
             </node>
           </node>
@@ -229,7 +229,7 @@
                 <ref role="1YBMHb" node="5cK3QOcCT3h" resolve="ifc" />
               </node>
               <node concept="3TrEf2" id="5cK3QOdgrcb" role="2OqNvi">
-                <ref role="3Tt5mk" to="jvx:5cK3QOc9w5h" resolve="function" />
+                <ref role="3Tt5mk" to="s7zn:5cK3QOc9w5h" resolve="function" />
               </node>
             </node>
             <node concept="10Nm6u" id="5cK3QOdgrDr" role="3uHU7w" />
@@ -239,12 +239,12 @@
     </node>
     <node concept="1YaCAy" id="5cK3QOcCT3h" role="1YuTPh">
       <property role="TrG5h" value="ifc" />
-      <ref role="1YaFvo" to="jvx:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+      <ref role="1YaFvo" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
     </node>
   </node>
   <node concept="1YbPZF" id="5cK3QOcGrIR">
     <property role="TrG5h" value="typeof_MetaFunArgRef" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <node concept="3clFbS" id="5cK3QOcGrIS" role="18ibNy">
       <node concept="1Z5TYs" id="5cK3QOcGrW4" role="3cqZAp">
         <node concept="mw_s8" id="5cK3QOcGrWo" role="1ZfhKB">
@@ -255,11 +255,11 @@
                   <ref role="1YBMHb" node="5cK3QOcGrIU" resolve="ar" />
                 </node>
                 <node concept="3TrEf2" id="5cK3QOcGshP" role="2OqNvi">
-                  <ref role="3Tt5mk" to="jvx:5cK3QOcGrHI" resolve="arg" />
+                  <ref role="3Tt5mk" to="s7zn:5cK3QOcGrHI" resolve="arg" />
                 </node>
               </node>
               <node concept="3TrEf2" id="5cK3QOcGsTo" role="2OqNvi">
-                <ref role="3Tt5mk" to="jvx:5cK3QOc9hNe" resolve="type" />
+                <ref role="3Tt5mk" to="s7zn:5cK3QOc9hNe" resolve="type" />
               </node>
             </node>
           </node>
@@ -275,12 +275,12 @@
     </node>
     <node concept="1YaCAy" id="5cK3QOcGrIU" role="1YuTPh">
       <property role="TrG5h" value="ar" />
-      <ref role="1YaFvo" to="jvx:5cK3QOcGrHH" resolve="MetaFunArgRef" />
+      <ref role="1YaFvo" to="s7zn:5cK3QOcGrHH" resolve="MetaFunArgRef" />
     </node>
   </node>
   <node concept="1YbPZF" id="5cK3QOcGAQw">
     <property role="TrG5h" value="typeof_MetaFunction" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <node concept="3clFbS" id="5cK3QOcGAQx" role="18ibNy">
       <node concept="3clFbJ" id="6V5G_x8AUfA" role="3cqZAp">
         <node concept="3clFbS" id="6V5G_x8AUfC" role="3clFbx">
@@ -292,7 +292,7 @@
                     <ref role="1YBMHb" node="5cK3QOcGAQz" resolve="mf" />
                   </node>
                   <node concept="3TrEf2" id="5cK3QOcGBG_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="jvx:5cK3QOc9ixZ" resolve="type" />
+                    <ref role="3Tt5mk" to="s7zn:5cK3QOc9ixZ" resolve="type" />
                   </node>
                 </node>
               </node>
@@ -304,7 +304,7 @@
                     <ref role="1YBMHb" node="5cK3QOcGAQz" resolve="mf" />
                   </node>
                   <node concept="3TrEf2" id="5cK3QOcGB8Z" role="2OqNvi">
-                    <ref role="3Tt5mk" to="jvx:5cK3QOc9hNg" resolve="body" />
+                    <ref role="3Tt5mk" to="s7zn:5cK3QOc9hNg" resolve="body" />
                   </node>
                 </node>
               </node>
@@ -318,7 +318,7 @@
               <ref role="1YBMHb" node="5cK3QOcGAQz" resolve="mf" />
             </node>
             <node concept="3TrEf2" id="6V5G_x8AUAx" role="2OqNvi">
-              <ref role="3Tt5mk" to="jvx:5cK3QOc9ixZ" resolve="type" />
+              <ref role="3Tt5mk" to="s7zn:5cK3QOc9ixZ" resolve="type" />
             </node>
           </node>
         </node>
@@ -326,12 +326,12 @@
     </node>
     <node concept="1YaCAy" id="5cK3QOcGAQz" role="1YuTPh">
       <property role="TrG5h" value="mf" />
-      <ref role="1YaFvo" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+      <ref role="1YaFvo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     </node>
   </node>
   <node concept="1YbPZF" id="1UOMgtaT_rn">
     <property role="TrG5h" value="typeof_MetaFunctionArgument" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <node concept="3clFbS" id="1UOMgtaT_ro" role="18ibNy">
       <node concept="1Z5TYs" id="1UOMgtaT_KJ" role="3cqZAp">
         <node concept="mw_s8" id="1UOMgtaT_L3" role="1ZfhKB">
@@ -341,7 +341,7 @@
                 <ref role="1YBMHb" node="1UOMgtaT_rq" resolve="mfa" />
               </node>
               <node concept="3TrEf2" id="1UOMgtaTA6Y" role="2OqNvi">
-                <ref role="3Tt5mk" to="jvx:5cK3QOc9hNe" resolve="type" />
+                <ref role="3Tt5mk" to="s7zn:5cK3QOc9hNe" resolve="type" />
               </node>
             </node>
           </node>
@@ -357,16 +357,16 @@
     </node>
     <node concept="1YaCAy" id="1UOMgtaT_rq" role="1YuTPh">
       <property role="TrG5h" value="mfa" />
-      <ref role="1YaFvo" to="jvx:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
+      <ref role="1YaFvo" to="s7zn:5cK3QOc9hNb" resolve="MetaFunctionArgument" />
     </node>
   </node>
   <node concept="Q5z_Y" id="5cK3QOcCTHg">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="fixMetaFunction" />
     <node concept="Q6JDH" id="5cK3QOcCTHF" role="Q6Id_">
       <property role="TrG5h" value="context" />
       <node concept="3Tqbb2" id="5cK3QOcCTHL" role="Q6QK4">
-        <ref role="ehGHo" to="jvx:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+        <ref role="ehGHo" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
       </node>
     </node>
     <node concept="Q5ZZ6" id="5cK3QOcCTHh" role="Q6x$H">
@@ -375,14 +375,14 @@
           <node concept="3cpWsn" id="68784T_q5kl" role="3cpWs9">
             <property role="TrG5h" value="newF" />
             <node concept="3Tqbb2" id="68784T_q5iC" role="1tU5fm">
-              <ref role="ehGHo" to="jvx:5cK3QOc9hog" resolve="MetaFunction" />
+              <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
             </node>
             <node concept="2OqwBi" id="68784T_q5km" role="33vP2m">
               <node concept="QwW4i" id="68784T_q5kn" role="2Oq$k0">
                 <ref role="QwW4h" node="5cK3QOcCTHF" resolve="context" />
               </node>
               <node concept="2qgKlT" id="68784T_q5ko" role="2OqNvi">
-                <ref role="37wK5l" to="jmgz:5cK3QOc9qti" resolve="createMetaFunction" />
+                <ref role="37wK5l" to="rnpa:5cK3QOc9qti" resolve="createMetaFunction" />
               </node>
             </node>
           </node>
@@ -399,7 +399,7 @@
                     <ref role="QwW4h" node="5cK3QOcCTHF" resolve="context" />
                   </node>
                   <node concept="3TrEf2" id="68784T_q2jg" role="2OqNvi">
-                    <ref role="3Tt5mk" to="jvx:5cK3QOc9w5h" resolve="function" />
+                    <ref role="3Tt5mk" to="s7zn:5cK3QOc9w5h" resolve="function" />
                   </node>
                 </node>
               </node>
@@ -412,7 +412,7 @@
                 <ref role="QwW4h" node="5cK3QOcCTHF" resolve="context" />
               </node>
               <node concept="3TrEf2" id="68784T_q1sR" role="2OqNvi">
-                <ref role="3Tt5mk" to="jvx:5cK3QOc9w5h" resolve="function" />
+                <ref role="3Tt5mk" to="s7zn:5cK3QOc9w5h" resolve="function" />
               </node>
             </node>
           </node>
@@ -424,13 +424,13 @@
                     <ref role="QwW4h" node="5cK3QOcCTHF" resolve="context" />
                   </node>
                   <node concept="2qgKlT" id="68784T_q3OE" role="2OqNvi">
-                    <ref role="37wK5l" to="jmgz:68784T_q0lN" resolve="syncNewMetaFunction" />
+                    <ref role="37wK5l" to="rnpa:68784T_q0lN" resolve="syncNewMetaFunction" />
                     <node concept="2OqwBi" id="68784T_q4Kh" role="37wK5m">
                       <node concept="QwW4i" id="68784T_q4Ap" role="2Oq$k0">
                         <ref role="QwW4h" node="5cK3QOcCTHF" resolve="context" />
                       </node>
                       <node concept="3TrEf2" id="68784T_q588" role="2OqNvi">
-                        <ref role="3Tt5mk" to="jvx:5cK3QOc9w5h" resolve="function" />
+                        <ref role="3Tt5mk" to="s7zn:5cK3QOc9w5h" resolve="function" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="68784T_q5kq" role="37wK5m">
