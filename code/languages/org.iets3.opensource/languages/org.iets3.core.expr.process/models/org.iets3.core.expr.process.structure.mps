@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -187,6 +188,16 @@
     <property role="TrG5h" value="MajorityDecProc" />
     <property role="34LRSv" value="majority" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJshtqt">
+    <property role="EcuMT" value="3795092733472134813" />
+    <property role="3GE5qa" value="procedure" />
+    <property role="TrG5h" value="CustomDecProc" />
+    <property role="34LRSv" value="custom" />
+    <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
+    <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
+      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+    </node>
   </node>
 </model>
 

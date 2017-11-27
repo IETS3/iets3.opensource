@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -226,6 +227,19 @@
     <ref role="1XX52x" to="7y2b:33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
     <node concept="PMmxH" id="33mFrumMvqt" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJshIP7">
+    <property role="3GE5qa" value="procedure" />
+    <ref role="1XX52x" to="7y2b:3iESbJshtqt" resolve="CustomDecProc" />
+    <node concept="3EZMnI" id="3iESbJshIPc" role="2wV5jI">
+      <node concept="2iRfu4" id="3iESbJshIPd" role="2iSdaV" />
+      <node concept="3F0ifn" id="3iESbJshIP9" role="3EZMnx">
+        <property role="3F0ifm" value="custom" />
+      </node>
+      <node concept="3F1sOY" id="3iESbJshIPt" role="3EZMnx">
+        <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
+      </node>
     </node>
   </node>
 </model>

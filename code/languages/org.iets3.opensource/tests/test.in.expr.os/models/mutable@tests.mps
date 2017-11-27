@@ -17,6 +17,7 @@
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="0" />
     <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
+    <use id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction" version="0" />
   </languages>
   <imports>
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
@@ -118,6 +119,7 @@
       <concept id="1136100386042220323" name="org.iets3.core.expr.process.structure.PartyLiteral" flags="ng" index="GZN9F">
         <property id="1136100386042232775" name="id" index="GZKaf" />
       </concept>
+      <concept id="3795092733472134813" name="org.iets3.core.expr.process.structure.CustomDecProc" flags="ng" index="3CVNoA" />
       <concept id="24388123196707940" name="org.iets3.core.expr.process.structure.MajorityDecProc" flags="ng" index="1FHB2U" />
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
@@ -132,6 +134,8 @@
         <child id="5849458724932670347" name="index" index="2yLE0W" />
       </concept>
       <concept id="8872269265515619803" name="org.iets3.core.expr.collections.structure.AnyOp" flags="ng" index="2Tz0gS" />
+      <concept id="8872269265514323710" name="org.iets3.core.expr.collections.structure.ContainsOp" flags="ng" index="2TI7Wt" />
+      <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.SetType" flags="ng" index="2TO1h$" />
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
       <concept id="3989687177013570767" name="org.iets3.core.expr.collections.structure.UpToTarget" flags="ng" index="1hzhIm">
         <child id="3989687177013570768" name="max" index="1hzhI9" />
@@ -446,6 +450,22 @@
     <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path">
       <concept id="7814222126786013807" name="org.iets3.core.expr.path.structure.PathElement" flags="ng" index="3o_JK">
         <reference id="7814222126786013810" name="member" index="3o_JH" />
+      </concept>
+    </language>
+    <language id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction">
+      <concept id="5994308065059740875" name="org.iets3.core.expr.metafunction.structure.MetaFunctionArgument" flags="ng" index="1v5heA">
+        <child id="5994308065059740878" name="type" index="1v5hez" />
+      </concept>
+      <concept id="5994308065059739152" name="org.iets3.core.expr.metafunction.structure.MetaFunction" flags="ng" index="1v5h_X">
+        <child id="5994308065059740880" name="body" index="1v5heX" />
+        <child id="5994308065059740883" name="args" index="1v5heY" />
+        <child id="5994308065059743871" name="type" index="1v5isi" />
+      </concept>
+      <concept id="5994308065059776299" name="org.iets3.core.expr.metafunction.structure.IMetaFunctionContext" flags="ng" index="1v5qx6">
+        <child id="5994308065059799377" name="function" index="1v5wSW" />
+      </concept>
+      <concept id="5994308065068956525" name="org.iets3.core.expr.metafunction.structure.MetaFunArgRef" flags="ng" index="1vwrg0">
+        <reference id="5994308065068956526" name="arg" index="1vwrg3" />
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
@@ -4608,6 +4628,41 @@
       </node>
       <node concept="1FHB2U" id="1mDdTG5$yT" role="2A7Mb_" />
     </node>
+    <node concept="_ixoA" id="3iESbJshXXy" role="_iOnB" />
+    <node concept="2EZYDW" id="3iESbJshXUB" role="_iOnB">
+      <property role="TrG5h" value="MarkusSell" />
+      <property role="GWY_u" value="true" />
+      <node concept="_emDc" id="3iESbJshXUC" role="GZMTW">
+        <ref role="_emDf" node="Z4fkwzePzF" resolve="bernd" />
+      </node>
+      <node concept="_emDc" id="3iESbJshXUD" role="GZMTW">
+        <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
+      </node>
+      <node concept="_emDc" id="3iESbJshXUE" role="GZMTW">
+        <ref role="_emDf" node="33mFrumMyyF" resolve="klaus" />
+      </node>
+      <node concept="3CVNoA" id="3iESbJshYPY" role="2A7Mb_">
+        <node concept="1v5h_X" id="3iESbJsi1fO" role="1v5wSW">
+          <node concept="2vmvy5" id="3iESbJsi1fN" role="1v5isi" />
+          <node concept="1v5heA" id="3iESbJsi1fR" role="1v5heY">
+            <property role="TrG5h" value="voted" />
+            <node concept="2TO1h$" id="3iESbJsi1fP" role="1v5hez">
+              <node concept="GZN9E" id="3iESbJsi1fQ" role="3iBWmK" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3iESbJsi1qn" role="1v5heX">
+            <node concept="2TI7Wt" id="3iESbJsi1DD" role="1QScD9">
+              <node concept="_emDc" id="3iESbJsi1EE" role="3iAY4F">
+                <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
+              </node>
+            </node>
+            <node concept="1vwrg0" id="3iESbJsi1oU" role="30czhm">
+              <ref role="1vwrg3" node="3iESbJsi1fR" resolve="voted" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="7WFhXJlQoam" role="_iOnB" />
     <node concept="2zPypq" id="5y3VELfwkzm" role="_iOnB">
       <property role="TrG5h" value="sale1" />
@@ -4630,6 +4685,14 @@
       <node concept="2EWGZN" id="1mDdTFSYIA" role="2zPyp_">
         <node concept="2EWGYO" id="1mDdTGkYfi" role="1G1OS$">
           <ref role="2EWGYF" node="33mFrumMyAS" resolve="MajoritySell" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="3iESbJsi2d0" role="_iOnB">
+      <property role="TrG5h" value="markusSell" />
+      <node concept="2EWGZN" id="3iESbJsi2d1" role="2zPyp_">
+        <node concept="2EWGYO" id="3iESbJsi2iM" role="1G1OS$">
+          <ref role="2EWGYF" node="3iESbJshXUB" resolve="MarkusSell" />
         </node>
       </node>
     </node>
@@ -4895,6 +4958,109 @@
               </node>
               <node concept="_emDc" id="1mDdTFT01I" role="30czhm">
                 <ref role="_emDf" node="1mDdTFSYI_" resolve="majoritySale" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3iESbJsi2iY" role="_fkp5">
+        <node concept="_fku$" id="3iESbJsi2iZ" role="_fkur" />
+        <node concept="2vmpn$" id="3iESbJsi2X4" role="_fkuS" />
+        <node concept="3sVMh_" id="3iESbJsi2j1" role="_fkuY">
+          <node concept="1aduha" id="3iESbJsi2j2" role="3sVMhD">
+            <node concept="1QScDb" id="3iESbJsi2j3" role="1aduh9">
+              <node concept="2EMmAZ" id="3iESbJsi2j4" role="1QScD9">
+                <property role="2EMntL" value="vote" />
+                <node concept="_emDc" id="3iESbJsi2j5" role="GVIfm">
+                  <ref role="_emDf" node="Z4fkwzePzF" resolve="bernd" />
+                </node>
+              </node>
+              <node concept="_emDc" id="3iESbJsi2o0" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3iESbJsi2j7" role="1aduh9">
+              <node concept="2EMmAZ" id="3iESbJsi2j8" role="1QScD9">
+                <property role="2EMntL" value="vote" />
+                <node concept="_emDc" id="3iESbJsi2NN" role="GVIfm">
+                  <ref role="_emDf" node="33mFrumMyyF" resolve="klaus" />
+                </node>
+              </node>
+              <node concept="_emDc" id="3iESbJsi2Ey" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3iESbJsi2jb" role="1aduh9">
+              <node concept="GRK4H" id="3iESbJsi2jc" role="1QScD9">
+                <property role="2EMntM" value="decisionTaken" />
+              </node>
+              <node concept="_emDc" id="3iESbJsi2jd" role="30czhm">
+                <ref role="_emDf" node="1mDdTFSYI_" resolve="majoritySale" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3iESbJsi2Xc" role="_fkp5">
+        <node concept="_fku$" id="3iESbJsi2Xd" role="_fkur" />
+        <node concept="2vmpnb" id="3iESbJsi3wh" role="_fkuS" />
+        <node concept="3sVMh_" id="3iESbJsi2Xf" role="_fkuY">
+          <node concept="1aduha" id="3iESbJsi2Xg" role="3sVMhD">
+            <node concept="1QScDb" id="3iESbJsi2Xh" role="1aduh9">
+              <node concept="2EMmAZ" id="3iESbJsi2Xi" role="1QScD9">
+                <property role="2EMntL" value="vote" />
+                <node concept="_emDc" id="3iESbJsi3ms" role="GVIfm">
+                  <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
+                </node>
+              </node>
+              <node concept="_emDc" id="3iESbJsi2Xk" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3iESbJsi2Xp" role="1aduh9">
+              <node concept="GRK4H" id="3iESbJsi2Xq" role="1QScD9">
+                <property role="2EMntM" value="decisionTaken" />
+              </node>
+              <node concept="_emDc" id="3iESbJsi58$" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3iESbJsi5Lx" role="_fkp5">
+        <node concept="_fku$" id="3iESbJsi5Ly" role="_fkur" />
+        <node concept="2vmpn$" id="3iESbJsi71K" role="_fkuS" />
+        <node concept="3sVMh_" id="3iESbJsi5L$" role="_fkuY">
+          <node concept="1aduha" id="3iESbJsi5L_" role="3sVMhD">
+            <node concept="1QScDb" id="3iESbJsi5LA" role="1aduh9">
+              <node concept="2EMmAZ" id="3iESbJsi5LB" role="1QScD9">
+                <property role="2EMntL" value="vote" />
+                <node concept="_emDc" id="3iESbJsi5LC" role="GVIfm">
+                  <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
+                </node>
+              </node>
+              <node concept="_emDc" id="3iESbJsi5LD" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="3iESbJsi5QW" role="1aduh9">
+              <node concept="_emDc" id="3iESbJsi5QZ" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
+              </node>
+              <node concept="2EMmAZ" id="3iESbJsi6y1" role="1QScD9">
+                <property role="2EMntL" value="revoke" />
+                <node concept="_emDc" id="3iESbJsi6Rg" role="GVIfm">
+                  <ref role="_emDf" node="Z4fkwzeNX$" resolve="markus" />
+                </node>
+              </node>
+            </node>
+            <node concept="1QScDb" id="3iESbJsi5LE" role="1aduh9">
+              <node concept="GRK4H" id="3iESbJsi5LF" role="1QScD9">
+                <property role="2EMntM" value="decisionTaken" />
+              </node>
+              <node concept="_emDc" id="3iESbJsi5LG" role="30czhm">
+                <ref role="_emDf" node="3iESbJsi2d0" resolve="markusSell" />
               </node>
             </node>
           </node>
