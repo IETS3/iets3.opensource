@@ -510,8 +510,8 @@
           <node concept="2OqwBi" id="2D48zR6r$qN" role="3clFbw">
             <node concept="13iPFW" id="2D48zR6r$eW" role="2Oq$k0" />
             <node concept="1mIQ4w" id="2D48zR6r$KR" role="2OqNvi">
-              <node concept="chp4Y" id="2D48zR6r$NB" role="cj9EA">
-                <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="chp4Y" id="JaRnGpgw3V" role="cj9EA">
+                <ref role="cht4Q" to="700h:6zmBjqUiHH7" resolve="IOrderedCollection" />
               </node>
             </node>
           </node>
