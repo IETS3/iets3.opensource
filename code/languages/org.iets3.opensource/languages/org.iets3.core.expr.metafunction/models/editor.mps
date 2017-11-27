@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -83,6 +84,11 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -144,6 +150,14 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="_tjkj" id="3iESbJsmyu0" role="3EZMnx">
+          <node concept="3F1sOY" id="3iESbJsmyu1" role="_tjki">
+            <ref role="1NtTu8" to="s7zn:3iESbJsi7uJ" resolve="effect" />
+            <node concept="xShMh" id="3iESbJsmyu2" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
         <node concept="3F0ifn" id="5cK3QOc9iyE" role="3EZMnx">
           <property role="3F0ifm" value=":" />
           <node concept="11L4FC" id="5cK3QOcGy02" role="3F10Kt">
@@ -202,6 +216,14 @@
           </node>
         </node>
         <node concept="l2Vlx" id="1o3PqYFLINx" role="2iSdaV" />
+        <node concept="_tjkj" id="3iESbJsmyt$" role="3EZMnx">
+          <node concept="3F1sOY" id="3iESbJsidSi" role="_tjki">
+            <ref role="1NtTu8" to="s7zn:3iESbJsi7uJ" resolve="effect" />
+            <node concept="xShMh" id="3iESbJsidSA" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="1o3PqYFLINy" role="3EZMnx">
         <property role="3F0ifm" value="=" />

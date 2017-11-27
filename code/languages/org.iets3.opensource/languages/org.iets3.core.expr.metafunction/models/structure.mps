@@ -9,6 +9,7 @@
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -107,10 +108,19 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="3iESbJsi7uJ" role="1TKVEi">
+      <property role="IQ2ns" value="3795092733472307119" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="effect" />
+      <ref role="20lvS9" to="zzzn:6KxoTHgSIr8" resolve="EffectTag" />
+    </node>
     <node concept="1TJgyi" id="4HGbj9T3vS$" role="1TKVEl">
       <property role="IQ2nx" value="5434768545131920932" />
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3iESbJsi7oo" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="5cK3QOc9hNb">
