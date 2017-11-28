@@ -28,6 +28,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -318,6 +319,10 @@
     <property role="TrG5h" value="ReduceStrategySum" />
     <property role="34LRSv" value="SUM" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
+  </node>
+  <node concept="PlHQZ" id="2qmD4SWBg0S">
+    <property role="EcuMT" value="2780590475879186488" />
+    <property role="TrG5h" value="IProvideTemporalContext" />
   </node>
 </model>
 

@@ -403,7 +403,6 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
-      <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
@@ -3551,7 +3550,6 @@
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
-      <node concept="2X7gjp" id="2urjS20H7rF" role="1Qtc8A" />
       <node concept="mvV$s" id="72b39kzfT$_" role="1Qtc8A">
         <node concept="mvVNg" id="72b39kzfT$C" role="mvV$0">
           <node concept="3clFbS" id="72b39kzfT$D" role="2VODD2">
