@@ -41,9 +41,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -116,7 +113,7 @@
       <node concept="3clFbS" id="50smQ1V92TA" role="3clF47">
         <node concept="3clFbF" id="50smQ1V92TP" role="3cqZAp">
           <node concept="Xl_RD" id="50smQ1V92TO" role="3clFbG">
-            <property role="Xl_RC" value="T" />
+            <property role="Xl_RC" value="TT" />
           </node>
         </node>
       </node>
@@ -146,9 +143,8 @@
                 <node concept="Xl_RD" id="50smQ1V9sr7" role="3uHU7w">
                   <property role="Xl_RC" value="&lt;" />
                 </node>
-                <node concept="2YIFZM" id="3nGzaxUAVmB" role="3uHU7B">
-                  <ref role="37wK5l" to="96le:3nGzaxUAUqd" resolve="makeT" />
-                  <ref role="1Pybhc" to="96le:3nGzaxUAUp$" resolve="Symbols" />
+                <node concept="Xl_RD" id="3wXkdMVXGdd" role="3uHU7B">
+                  <property role="Xl_RC" value="TT" />
                 </node>
               </node>
               <node concept="2OqwBi" id="50smQ1V9uhl" role="3uHU7w">
