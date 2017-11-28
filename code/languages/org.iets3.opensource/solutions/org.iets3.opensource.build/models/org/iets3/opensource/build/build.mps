@@ -1229,6 +1229,12 @@
             <ref role="3bR37D" node="3iESbJs02VW" resolve="org.iets3.core.expr.metafunction" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3wXkdMVrdLe" role="3bR37C">
+          <node concept="3bR9La" id="3wXkdMVrdLf" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5WYUu8HaT_t" resolve="com.mbeddr.mpsutil.framecell" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="78hTg1zaYCc" role="2G$12L">
         <property role="BnDLt" value="true" />
