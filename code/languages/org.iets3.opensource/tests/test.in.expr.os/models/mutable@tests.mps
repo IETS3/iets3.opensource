@@ -6875,6 +6875,17 @@
                 <ref role="_emDf" node="3wXkdMVps2o" resolve="timedSale" />
               </node>
             </node>
+            <node concept="1adJid" id="3wXkdMVs8Vq" role="1aduh9">
+              <property role="TrG5h" value="x1" />
+              <node concept="30dDZf" id="3wXkdMVs9Qa" role="1adJii">
+                <node concept="30bXRB" id="3wXkdMVs9Qs" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="30bXRB" id="3wXkdMVs9G2" role="30dEsF">
+                  <property role="30bXRw" value="12" />
+                </node>
+              </node>
+            </node>
             <node concept="1QScDb" id="3wXkdMVps2D" role="1aduh9">
               <node concept="2EMmAZ" id="3wXkdMVps2E" role="1QScD9">
                 <property role="2EMntL" value="vote" />
