@@ -64,13 +64,6 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
-      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
-        <child id="1225898971709" name="getter" index="1Hhtcw" />
-      </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
-        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
-      </concept>
-      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -178,21 +171,10 @@
     <ref role="1XX52x" to="l462:50smQ1V8i89" resolve="TemporalType" />
     <node concept="3EZMnI" id="50smQ1V8izM" role="2wV5jI">
       <node concept="2iRfu4" id="50smQ1V8izN" role="2iSdaV" />
-      <node concept="1HlG4h" id="50smQ1V8i9p" role="3EZMnx">
-        <node concept="1HfYo3" id="50smQ1V8i9r" role="1HlULh">
-          <node concept="3TQlhw" id="50smQ1V8i9t" role="1Hhtcw">
-            <node concept="3clFbS" id="50smQ1V8i9v" role="2VODD2">
-              <node concept="3clFbF" id="3nGzaxUAVdW" role="3cqZAp">
-                <node concept="2YIFZM" id="3nGzaxUAVmB" role="3clFbG">
-                  <ref role="37wK5l" node="3nGzaxUAUqd" resolve="makeT" />
-                  <ref role="1Pybhc" node="3nGzaxUAUp$" resolve="Symbols" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Vb9p2" id="50smQ1V8rQa" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+      <node concept="3F0ifn" id="3wXkdMVKDGG" role="3EZMnx">
+        <property role="3F0ifm" value="TT" />
+        <node concept="Vb9p2" id="3wXkdMVKDHa" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
       </node>
       <node concept="3F0ifn" id="50smQ1V8iGG" role="3EZMnx">
@@ -239,21 +221,10 @@
   <node concept="24kQdi" id="50smQ1V8QG1">
     <ref role="1XX52x" to="l462:50smQ1V8QEe" resolve="TemporalLiteral" />
     <node concept="3EZMnI" id="50smQ1V8QG6" role="2wV5jI">
-      <node concept="1HlG4h" id="50smQ1V8QGd" role="3EZMnx">
-        <node concept="1HfYo3" id="50smQ1V8QGe" role="1HlULh">
-          <node concept="3TQlhw" id="50smQ1V8QGf" role="1Hhtcw">
-            <node concept="3clFbS" id="50smQ1V8QGg" role="2VODD2">
-              <node concept="3clFbF" id="3nGzaxUAVMp" role="3cqZAp">
-                <node concept="2YIFZM" id="3nGzaxUAVMq" role="3clFbG">
-                  <ref role="37wK5l" node="3nGzaxUAUqd" resolve="makeT" />
-                  <ref role="1Pybhc" node="3nGzaxUAUp$" resolve="Symbols" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Vb9p2" id="50smQ1V8QGj" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+      <node concept="3F0ifn" id="3wXkdMVKEsM" role="3EZMnx">
+        <property role="3F0ifm" value="TT" />
+        <node concept="Vb9p2" id="3wXkdMVKEtg" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
       </node>
       <node concept="3F2HdR" id="50smQ1V8QP8" role="3EZMnx">
