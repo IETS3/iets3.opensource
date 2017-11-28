@@ -16,6 +16,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
   </imports>
@@ -41,9 +42,16 @@
         <child id="8371900013785948359" name="part" index="2$S_pN" />
         <child id="8371900013785948365" name="parameterQuery" index="2$S_pT" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -983,6 +991,144 @@
       <node concept="3F0ifn" id="7bd8pkl7uZr" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
         <node concept="11L4FC" id="7bd8pkl7uZx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsCqXu">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsCqWF" resolve="ClockType" />
+    <node concept="3F0ifn" id="3iESbJsCqXw" role="2wV5jI">
+      <property role="3F0ifm" value="clock" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsCqXZ">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsCqXz" resolve="CurrentTimeTarget" />
+    <node concept="3F0ifn" id="3iESbJsCqY1" role="2wV5jI">
+      <property role="3F0ifm" value="time" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsCtFI">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsCtFh" resolve="SystemClockExpr" />
+    <node concept="3F0ifn" id="3iESbJsCtFN" role="2wV5jI">
+      <property role="3F0ifm" value="systemclock" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsDL_F">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsDA_A" resolve="GlobalClockPragma" />
+    <node concept="3EZMnI" id="4Pi6J8BVsYR" role="2wV5jI">
+      <node concept="l2Vlx" id="4Pi6J8BVsYS" role="2iSdaV" />
+      <node concept="PMmxH" id="4Pi6J8BU$Pe" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="VechU" id="4Pi6J8BU_R8" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+        <node concept="Vb9p2" id="4Pi6J8BU_Re" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3iESbJsEopJ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="3iESbJsEopK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3iESbJsEFqs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="3iESbJsEopL" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3iESbJsDLA3" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:3iESbJsDA_B" resolve="clock" />
+      </node>
+      <node concept="3F0ifn" id="3iESbJsEori" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="3iESbJsEFq$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="3iESbJsEorj" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Pi6J8BVsZ6" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="4Pi6J8C2hO3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="4Pi6J8C2hOp" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4Pi6J8BVsZi" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:4Pi6J8BVsYO" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="4Pi6J8C2hOd" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="VechU" id="4Pi6J8C2hOu" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsEYpm">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsEYoW" resolve="ArtificialClockExpr" />
+    <node concept="3F0ifn" id="3iESbJsEYpo" role="2wV5jI">
+      <property role="3F0ifm" value="artificialclock" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsEYtR">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsEYtt" resolve="ArtificialClockType" />
+    <node concept="3F0ifn" id="3iESbJsEYtT" role="2wV5jI">
+      <property role="3F0ifm" value="artificialclock" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsHj_d">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsFvvw" resolve="TickTarget" />
+    <node concept="3F0ifn" id="3iESbJsHj_f" role="2wV5jI">
+      <property role="3F0ifm" value="tick" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsHMtq">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsHMt0" resolve="NowExpression" />
+    <node concept="3F0ifn" id="3iESbJsHMts" role="2wV5jI">
+      <property role="3F0ifm" value="now" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iESbJsIl$R">
+    <property role="3GE5qa" value="clock" />
+    <ref role="1XX52x" to="8lgj:3iESbJsIl$2" resolve="AdvanceByTarget" />
+    <node concept="3EZMnI" id="3iESbJsIl$W" role="2wV5jI">
+      <node concept="2iRfu4" id="3iESbJsIl$X" role="2iSdaV" />
+      <node concept="3F0ifn" id="3iESbJsIl$T" role="3EZMnx">
+        <property role="3F0ifm" value="advance" />
+      </node>
+      <node concept="3F0ifn" id="3iESbJsIl_d" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="3iESbJsIl_i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3iESbJsIl_n" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3iESbJsIl__" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:3iESbJsIl$s" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="3iESbJsIl_5" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="3iESbJsIl_r" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

@@ -11,6 +11,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="n9sl" ref="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -36,6 +37,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
@@ -125,6 +129,7 @@
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -1317,6 +1322,213 @@
     <node concept="1YaCAy" id="7bd8pkl9Mf3" role="1YuTPh">
       <property role="TrG5h" value="le" />
       <ref role="1YaFvo" to="8lgj:7bd8pkl7uF5" resolve="LiveExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsCqYt">
+    <property role="TrG5h" value="typeof_CurrentTimeTarget" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsCqYu" role="18ibNy">
+      <node concept="1Z5TYs" id="3iESbJsCrdi" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsCrd$" role="1ZfhKB">
+          <node concept="2YIFZM" id="3iESbJsCrff" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsCrdl" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsCqYE" role="mwGJk">
+            <node concept="1YBJjd" id="3iESbJsCr0q" role="1Z2MuG">
+              <ref role="1YBMHb" node="3iESbJsCqYw" resolve="ctt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsCqYw" role="1YuTPh">
+      <property role="TrG5h" value="ctt" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsCqXz" resolve="CurrentTimeTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsCtGf">
+    <property role="TrG5h" value="typeof_SystemClockExpr" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsCtGg" role="18ibNy">
+      <node concept="1Z5TYs" id="3iESbJsCtV5" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsCtVp" role="1ZfhKB">
+          <node concept="2pJPEk" id="3iESbJsCtVl" role="mwGJk">
+            <node concept="2pJPED" id="3iESbJsCtVH" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:3iESbJsCqWF" resolve="ClockType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsCtV8" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsCtGs" role="mwGJk">
+            <node concept="1YBJjd" id="3iESbJsCtIc" role="1Z2MuG">
+              <ref role="1YBMHb" node="3iESbJsCtGi" resolve="sce" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsCtGi" role="1YuTPh">
+      <property role="TrG5h" value="sce" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsCtFh" resolve="SystemClockExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsDLAC">
+    <property role="TrG5h" value="typeof_GlobalClockPragma" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsDLAD" role="18ibNy">
+      <node concept="1ZobV4" id="3iESbJsDLRB" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsDLRV" role="1ZfhKB">
+          <node concept="2pJPEk" id="3iESbJsDLRR" role="mwGJk">
+            <node concept="2pJPED" id="3iESbJsDLS6" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:3iESbJsCqWF" resolve="ClockType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsDLRE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsDLAP" role="mwGJk">
+            <node concept="2OqwBi" id="3iESbJsDM2L" role="1Z2MuG">
+              <node concept="1YBJjd" id="3iESbJsDLC_" role="2Oq$k0">
+                <ref role="1YBMHb" node="3iESbJsDLAF" resolve="gcc" />
+              </node>
+              <node concept="3TrEf2" id="3iESbJsDMfy" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:3iESbJsDA_B" resolve="clock" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsDLAF" role="1YuTPh">
+      <property role="TrG5h" value="gcc" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsDA_A" resolve="GlobalClockPragma" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsEYr3">
+    <property role="TrG5h" value="typeof_DiscreteClockExpr" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsEYr4" role="18ibNy">
+      <node concept="1Z5TYs" id="3iESbJsEYrd" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsEYre" role="1ZfhKB">
+          <node concept="2pJPEk" id="3iESbJsEYrf" role="mwGJk">
+            <node concept="2pJPED" id="3iESbJsHh8B" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:3iESbJsEYtt" resolve="ArtificialClockType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsEYrh" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsEYri" role="mwGJk">
+            <node concept="1YBJjd" id="3iESbJsEYsx" role="1Z2MuG">
+              <ref role="1YBMHb" node="3iESbJsEYr6" resolve="dce" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsEYr6" role="1YuTPh">
+      <property role="TrG5h" value="dce" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsEYoW" resolve="ArtificialClockExpr" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="3iESbJsEYul">
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="supertypeOf_ArtificialClockType" />
+    <node concept="3clFbS" id="3iESbJsEYum" role="2sgrp5">
+      <node concept="3clFbF" id="3iESbJsEYv$" role="3cqZAp">
+        <node concept="2pJPEk" id="3iESbJsEYvy" role="3clFbG">
+          <node concept="2pJPED" id="3iESbJsEYxz" role="2pJPEn">
+            <ref role="2pJxaS" to="8lgj:3iESbJsCqWF" resolve="ClockType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsEYuo" role="1YuTPh">
+      <property role="TrG5h" value="act" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsEYtt" resolve="ArtificialClockType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsEYA4">
+    <property role="TrG5h" value="typeof_AbstractSetTimeTarget" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsEYA5" role="18ibNy">
+      <node concept="1Z5TYs" id="3iESbJsEYP4" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsImhU" role="1ZfhKB">
+          <node concept="2pJPEk" id="3iESbJsImhO" role="mwGJk">
+            <node concept="2pJPED" id="3iESbJsImiN" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:3iESbJsEYtt" resolve="ArtificialClockType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsEYP7" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsEYAk" role="mwGJk">
+            <node concept="1YBJjd" id="3iESbJsEYC4" role="1Z2MuG">
+              <ref role="1YBMHb" node="3iESbJsEYA7" resolve="astt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsEYA7" role="1YuTPh">
+      <property role="TrG5h" value="astt" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsEY$0" resolve="ArtificialClockTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsHMtS">
+    <property role="TrG5h" value="typeof_NowExpression" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsHMtT" role="18ibNy">
+      <node concept="1Z5TYs" id="3iESbJsHMGF" role="3cqZAp">
+        <node concept="mw_s8" id="3iESbJsHMGW" role="1ZfhKB">
+          <node concept="2YIFZM" id="3iESbJsHMIv" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsHMGI" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsHMu2" role="mwGJk">
+            <node concept="1YBJjd" id="3iESbJsHMvM" role="1Z2MuG">
+              <ref role="1YBMHb" node="3iESbJsHMtV" resolve="now" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsHMtV" role="1YuTPh">
+      <property role="TrG5h" value="now" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsHMt0" resolve="NowExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3iESbJsIlA7">
+    <property role="TrG5h" value="typeof_AdvanceByTarget" />
+    <property role="3GE5qa" value="clock" />
+    <node concept="3clFbS" id="3iESbJsIlA8" role="18ibNy">
+      <node concept="1ZobV4" id="3iESbJsImbL" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="3iESbJsImbO" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3iESbJsImbP" role="mwGJk">
+            <node concept="2OqwBi" id="3iESbJsImbQ" role="1Z2MuG">
+              <node concept="1YBJjd" id="3iESbJsImbR" role="2Oq$k0">
+                <ref role="1YBMHb" node="3iESbJsIlAa" resolve="advanceByTarget" />
+              </node>
+              <node concept="3TrEf2" id="3iESbJsImbS" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:3iESbJsIl$s" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3iESbJsImfc" role="1ZfhKB">
+          <node concept="2YIFZM" id="3iESbJsImgL" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3iESbJsIlAa" role="1YuTPh">
+      <property role="TrG5h" value="advanceByTarget" />
+      <ref role="1YaFvo" to="8lgj:3iESbJsIl$2" resolve="AdvanceByTarget" />
     </node>
   </node>
 </model>

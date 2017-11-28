@@ -271,5 +271,107 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3iESbJsCqWF">
+    <property role="EcuMT" value="3795092733478154027" />
+    <property role="TrG5h" value="ClockType" />
+    <property role="34LRSv" value="clock" />
+    <property role="3GE5qa" value="clock" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJsCqXz">
+    <property role="EcuMT" value="3795092733478154083" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="CurrentTimeTarget" />
+    <property role="34LRSv" value="time" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3iESbJsCqX$" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="3iESbJsD3Lr" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iESbJsCtFh">
+    <property role="EcuMT" value="3795092733478165201" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="SystemClockExpr" />
+    <property role="34LRSv" value="systemclock" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJsDA_A">
+    <property role="EcuMT" value="3795092733478463846" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="GlobalClockPragma" />
+    <property role="34LRSv" value="§global-clock" />
+    <ref role="1TJDcQ" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
+    <node concept="1TJgyj" id="3iESbJsDA_B" role="1TKVEi">
+      <property role="IQ2ns" value="3795092733478463847" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="clock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iESbJsEYoW">
+    <property role="EcuMT" value="3795092733478823484" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="ArtificialClockExpr" />
+    <property role="34LRSv" value="artificialclock" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJsEYtt">
+    <property role="EcuMT" value="3795092733478823773" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="ArtificialClockType" />
+    <property role="34LRSv" value="artificialclock" />
+    <ref role="1TJDcQ" node="3iESbJsCqWF" resolve="ClockType" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJsEY$0">
+    <property role="EcuMT" value="3795092733478824192" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="ArtificialClockTarget" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3iESbJsEY$1" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="3iESbJsEY$2" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iESbJsFvvw">
+    <property role="EcuMT" value="3795092733478959072" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="TickTarget" />
+    <property role="34LRSv" value="tick" />
+    <ref role="1TJDcQ" node="3iESbJsEY$0" resolve="ArtificialClockTarget" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJsHMt0">
+    <property role="EcuMT" value="3795092733479561024" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="NowExpression" />
+    <property role="34LRSv" value="now" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="3iESbJsJrJJ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iESbJsIl$2">
+    <property role="EcuMT" value="3795092733479704834" />
+    <property role="3GE5qa" value="clock" />
+    <property role="TrG5h" value="AdvanceByTarget" />
+    <property role="34LRSv" value="advance" />
+    <ref role="1TJDcQ" node="3iESbJsEY$0" resolve="ArtificialClockTarget" />
+    <node concept="1TJgyj" id="3iESbJsIl$s" role="1TKVEi">
+      <property role="IQ2ns" value="3795092733479704860" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
