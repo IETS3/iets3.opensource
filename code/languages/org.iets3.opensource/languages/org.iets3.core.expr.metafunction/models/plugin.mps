@@ -340,19 +340,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4_qY3E5IZkc" role="3cqZAp">
-          <node concept="3cpWsn" id="4_qY3E5IZkd" role="3cpWs9">
-            <property role="TrG5h" value="coverage" />
-            <node concept="3uibUv" id="4_qY3E5IZka" role="1tU5fm">
-              <ref role="3uigEE" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-            </node>
-            <node concept="2ShNRf" id="4_qY3E5IZke" role="33vP2m">
-              <node concept="HV5vD" id="4_qY3E5IZkf" role="2ShVmc">
-                <ref role="HV5vE" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5cK3QOdj0Dh" role="3cqZAp">
           <node concept="37vLTI" id="5cK3QOdj0Dj" role="3clFbG">
             <node concept="2YIFZM" id="5eKs1GT64ye" role="37vLTx">
@@ -384,6 +371,60 @@
       <node concept="37vLTG" id="5cK3QOdhAYr" role="3clF46">
         <property role="TrG5h" value="fun" />
         <node concept="3Tqbb2" id="5cK3QOdhAYq" role="1tU5fm">
+          <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4voDClG_52X" role="jymVt" />
+    <node concept="3clFbW" id="4voDClG$Qve" role="jymVt">
+      <node concept="3cqZAl" id="4voDClG$Qvf" role="3clF45" />
+      <node concept="3Tm1VV" id="4voDClG$Qvg" role="1B3o_S" />
+      <node concept="3clFbS" id="4voDClG$Qvh" role="3clF47">
+        <node concept="3clFbF" id="4voDClG$Qvi" role="3cqZAp">
+          <node concept="37vLTI" id="4voDClG$Qvj" role="3clFbG">
+            <node concept="37vLTw" id="4voDClG$Qvk" role="37vLTJ">
+              <ref role="3cqZAo" node="5cK3QOdhISQ" resolve="function" />
+            </node>
+            <node concept="37vLTw" id="4voDClG$Qvl" role="37vLTx">
+              <ref role="3cqZAo" node="4voDClG$QvE" resolve="fun" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4voDClG$Qvm" role="3cqZAp">
+          <node concept="37vLTI" id="4voDClG$Qvn" role="3clFbG">
+            <node concept="37vLTw" id="4voDClG$RDq" role="37vLTx">
+              <ref role="3cqZAo" node="4voDClG$Rml" resolve="interpreterContext" />
+            </node>
+            <node concept="37vLTw" id="4voDClG$Qvq" role="37vLTJ">
+              <ref role="3cqZAo" node="5cK3QOdhNpJ" resolve="ctx" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4voDClG$Qvw" role="3cqZAp">
+          <node concept="37vLTI" id="4voDClG$Qvx" role="3clFbG">
+            <node concept="2OqwBi" id="4voDClG$SnD" role="37vLTx">
+              <node concept="37vLTw" id="4voDClG$S61" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cK3QOdhNpJ" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="4voDClG$SL5" role="2OqNvi">
+                <ref role="37wK5l" to="2ahs:2ALJBcrnfq9" resolve="getRootInterpreter" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4voDClG$Qv$" role="37vLTJ">
+              <ref role="3cqZAo" node="5cK3QOdj1eY" resolve="interpreter" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4voDClG$Rml" role="3clF46">
+        <property role="TrG5h" value="interpreterContext" />
+        <node concept="3uibUv" id="4voDClG$RJl" role="1tU5fm">
+          <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4voDClG$QvE" role="3clF46">
+        <property role="TrG5h" value="fun" />
+        <node concept="3Tqbb2" id="4voDClG$QvF" role="1tU5fm">
           <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
         </node>
       </node>

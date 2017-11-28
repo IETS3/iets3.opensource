@@ -91,6 +91,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
     </node>
+    <node concept="1TJgyj" id="4voDClGzENw" role="1TKVEi">
+      <property role="IQ2ns" value="5177070863644536032" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="timeLimit" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7WFhXJlPaQK">
     <property role="EcuMT" value="9163496876326301104" />
