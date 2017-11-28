@@ -143,6 +143,19 @@
           <ref role="1NtTu8" to="7y2b:33mFrumMoXi" resolve="procedure" />
         </node>
       </node>
+      <node concept="3EZMnI" id="3wXkdMVktj2" role="3EZMnx">
+        <node concept="VPM3Z" id="3wXkdMVktj3" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="3wXkdMVktj4" role="3EZMnx" />
+        <node concept="3F0ifn" id="3wXkdMVktj5" role="3EZMnx">
+          <property role="3F0ifm" value="turnout:   " />
+        </node>
+        <node concept="2iRfu4" id="3wXkdMVktj6" role="2iSdaV" />
+        <node concept="3F1sOY" id="3wXkdMVktj7" role="3EZMnx">
+          <ref role="1NtTu8" to="7y2b:3wXkdMVkc9Y" resolve="turnout" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="4voDClGzHuk" role="3EZMnx">
         <node concept="VPM3Z" id="4voDClGzHul" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -165,7 +178,7 @@
           <property role="3F0ifm" value="revokable? " />
         </node>
         <node concept="27S6Sx" id="33mFrumMoXp" role="3EZMnx">
-          <ref role="1NtTu8" to="7y2b:Z4fkwzdXgm" resolve="reject" />
+          <ref role="1NtTu8" to="7y2b:Z4fkwzdXgm" resolve="revoke" />
         </node>
         <node concept="2iRfu4" id="33mFrumMoXq" role="2iSdaV" />
       </node>
@@ -253,6 +266,13 @@
       <node concept="3F1sOY" id="3iESbJshIPt" role="3EZMnx">
         <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3wXkdMVlu$v">
+    <property role="3GE5qa" value="turnout" />
+    <ref role="1XX52x" to="7y2b:3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
+    <node concept="PMmxH" id="3wXkdMVlu_p" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

@@ -57,7 +57,7 @@
     <ref role="1TJDcQ" node="7WFhXJlPaQJ" resolve="MultipartyAbstractDecision" />
     <node concept="1TJgyi" id="Z4fkwzdXgm" role="1TKVEl">
       <property role="IQ2nx" value="1136100386042008598" />
-      <property role="TrG5h" value="reject" />
+      <property role="TrG5h" value="revoke" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -97,6 +97,13 @@
       <property role="20kJfa" value="timeLimit" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3wXkdMVkc9Y" role="1TKVEi">
+      <property role="IQ2ns" value="4052484148668973694" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="turnout" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
     </node>
   </node>
   <node concept="1TIwiD" id="7WFhXJlPaQK">
@@ -205,6 +212,21 @@
     <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
       <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3wXkdMVkca7">
+    <property role="EcuMT" value="4052484148668973703" />
+    <property role="TrG5h" value="AbstractTurnoutPolicy" />
+    <property role="3GE5qa" value="turnout" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3wXkdMVkcb0">
+    <property role="EcuMT" value="4052484148668973760" />
+    <property role="3GE5qa" value="turnout" />
+    <property role="TrG5h" value="AllTurnoutPolicy" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
   </node>
 </model>
 

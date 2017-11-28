@@ -87,6 +87,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -150,9 +151,6 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -244,12 +242,7 @@
           <node concept="2YIFZM" id="Z4fkwz9Lbk" role="3clFbG">
             <ref role="37wK5l" to="zh13:Z4fkwz9Km7" resolve="descriptor" />
             <ref role="1Pybhc" to="zh13:7WFhXJlVV5Z" resolve="MultipartyBooleanDecisionValue" />
-            <node concept="2OqwBi" id="Z4fkwzeg$l" role="37wK5m">
-              <node concept="13iPFW" id="Z4fkwzegiR" role="2Oq$k0" />
-              <node concept="3TrcHB" id="Z4fkwzeh0E" role="2OqNvi">
-                <ref role="3TsBF5" to="7y2b:Z4fkwzdXgm" resolve="reject" />
-              </node>
-            </node>
+            <node concept="13iPFW" id="3wXkdMVlEQT" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -691,6 +684,108 @@
       <node concept="3Tqbb2" id="3iESbJshtsw" role="3clF45">
         <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3wXkdMVmH1_">
+    <property role="3GE5qa" value="turnout" />
+    <ref role="13h7C2" to="7y2b:3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
+    <node concept="13i0hz" id="3wXkdMVmH69" role="13h7CS">
+      <property role="TrG5h" value="turnoutAchieved" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3wXkdMVmH6a" role="1B3o_S" />
+      <node concept="10P_77" id="3wXkdMVmH6b" role="3clF45" />
+      <node concept="3clFbS" id="3wXkdMVmH6c" role="3clF47" />
+      <node concept="37vLTG" id="3wXkdMVmH6d" role="3clF46">
+        <property role="TrG5h" value="parties" />
+        <node concept="_YKpA" id="3wXkdMVmH6e" role="1tU5fm">
+          <node concept="3uibUv" id="3wXkdMVmH6f" role="_ZDj9">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmH6g" role="3clF46">
+        <property role="TrG5h" value="whoVoted" />
+        <node concept="3uibUv" id="3wXkdMVndWu" role="1tU5fm">
+          <ref role="3uigEE" to="j10v:~PCollection" resolve="PCollection" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmH6i" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="3wXkdMVmH6j" role="1tU5fm">
+          <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmH6k" role="3clF46">
+        <property role="TrG5h" value="trace" />
+        <node concept="3uibUv" id="3wXkdMVmH6l" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3wXkdMVmH1A" role="13h7CW">
+      <node concept="3clFbS" id="3wXkdMVmH1B" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3wXkdMVmH9x">
+    <property role="3GE5qa" value="turnout" />
+    <ref role="13h7C2" to="7y2b:3wXkdMVkcb0" resolve="AllTurnoutPolicy" />
+    <node concept="13hLZK" id="3wXkdMVmH9y" role="13h7CW">
+      <node concept="3clFbS" id="3wXkdMVmH9z" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3wXkdMVmHa$" role="13h7CS">
+      <property role="TrG5h" value="turnoutAchieved" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3wXkdMVmH69" resolve="turnoutAchieved" />
+      <node concept="3Tm1VV" id="3wXkdMVmHa_" role="1B3o_S" />
+      <node concept="3clFbS" id="3wXkdMVmHaL" role="3clF47">
+        <node concept="3clFbF" id="3wXkdMVmHcd" role="3cqZAp">
+          <node concept="3clFbC" id="3wXkdMVmKhd" role="3clFbG">
+            <node concept="2OqwBi" id="3wXkdMVmLlP" role="3uHU7w">
+              <node concept="37vLTw" id="3wXkdMVmKAo" role="2Oq$k0">
+                <ref role="3cqZAo" node="3wXkdMVmHaP" resolve="whoVoted" />
+              </node>
+              <node concept="liA8E" id="3wXkdMVmMDq" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3wXkdMVmHVw" role="3uHU7B">
+              <node concept="37vLTw" id="3wXkdMVmHca" role="2Oq$k0">
+                <ref role="3cqZAo" node="3wXkdMVmHaM" resolve="parties" />
+              </node>
+              <node concept="34oBXx" id="3wXkdMVmIHa" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmHaM" role="3clF46">
+        <property role="TrG5h" value="parties" />
+        <node concept="_YKpA" id="3wXkdMVmHaN" role="1tU5fm">
+          <node concept="3uibUv" id="3wXkdMVmHaO" role="_ZDj9">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmHaP" role="3clF46">
+        <property role="TrG5h" value="whoVoted" />
+        <node concept="3uibUv" id="3wXkdMVngAJ" role="1tU5fm">
+          <ref role="3uigEE" to="j10v:~PCollection" resolve="PCollection" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmHaR" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="3wXkdMVmHaS" role="1tU5fm">
+          <ref role="3uigEE" to="pbu6:6iqfHNC0mHl" resolve="IETS3ExprContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3wXkdMVmHaT" role="3clF46">
+        <property role="TrG5h" value="trace" />
+        <node concept="3uibUv" id="3wXkdMVmHaU" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+        </node>
+      </node>
+      <node concept="10P_77" id="3wXkdMVmHaV" role="3clF45" />
     </node>
   </node>
 </model>
