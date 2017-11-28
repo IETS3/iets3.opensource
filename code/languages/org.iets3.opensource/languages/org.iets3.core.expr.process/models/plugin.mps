@@ -437,6 +437,60 @@
         </node>
       </node>
     </node>
+    <node concept="Wx3nA" id="3wXkdMVpEf7" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="WHO_VOTED_FOR" />
+      <node concept="3Tm6S6" id="3wXkdMVpEf8" role="1B3o_S" />
+      <node concept="3uibUv" id="3wXkdMVpEf9" role="1tU5fm">
+        <ref role="3uigEE" to="n9sl:Z4fkwz6M7$" resolve="IDValue" />
+      </node>
+      <node concept="2ShNRf" id="3wXkdMVpEfa" role="33vP2m">
+        <node concept="1pGfFk" id="3wXkdMVpEfb" role="2ShVmc">
+          <ref role="37wK5l" to="n9sl:Z4fkwz6M7A" resolve="IDValue" />
+          <node concept="Xl_RD" id="3wXkdMVpEfc" role="37wK5m">
+            <property role="Xl_RC" value="whoVotedFor" />
+          </node>
+          <node concept="2pJPEk" id="3wXkdMVpEfd" role="37wK5m">
+            <node concept="2pJPED" id="3wXkdMVpEfe" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="2pIpSj" id="3wXkdMVpEff" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="2pJPED" id="3wXkdMVpEfg" role="2pJxcZ">
+                  <ref role="2pJxaS" to="7y2b:Z4fkwzeKWy" resolve="PartyType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3wXkdMVpGPA" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="WHO_VOTED_AGAINST" />
+      <node concept="3Tm6S6" id="3wXkdMVpGPB" role="1B3o_S" />
+      <node concept="3uibUv" id="3wXkdMVpGPC" role="1tU5fm">
+        <ref role="3uigEE" to="n9sl:Z4fkwz6M7$" resolve="IDValue" />
+      </node>
+      <node concept="2ShNRf" id="3wXkdMVpGPD" role="33vP2m">
+        <node concept="1pGfFk" id="3wXkdMVpGPE" role="2ShVmc">
+          <ref role="37wK5l" to="n9sl:Z4fkwz6M7A" resolve="IDValue" />
+          <node concept="Xl_RD" id="3wXkdMVpGPF" role="37wK5m">
+            <property role="Xl_RC" value="whoVotedAgainst" />
+          </node>
+          <node concept="2pJPEk" id="3wXkdMVpGPG" role="37wK5m">
+            <node concept="2pJPED" id="3wXkdMVpGPH" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="2pIpSj" id="3wXkdMVpGPI" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="2pJPED" id="3wXkdMVpGPJ" role="2pJxcZ">
+                  <ref role="2pJxaS" to="7y2b:Z4fkwzeKWy" resolve="PartyType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Wx3nA" id="Z4fkwz9Lr7" role="jymVt">
       <property role="3TUv4t" value="true" />
       <property role="TrG5h" value="VOTE" />
@@ -972,6 +1026,12 @@
                     </node>
                     <node concept="37vLTw" id="3wXkdMVpbS1" role="37wK5m">
                       <ref role="3cqZAo" node="3wXkdMVp9r2" resolve="TURNOUT_ACHIEVED" />
+                    </node>
+                    <node concept="37vLTw" id="3wXkdMVpJm6" role="37wK5m">
+                      <ref role="3cqZAo" node="3wXkdMVpEf7" resolve="WHO_VOTED_FOR" />
+                    </node>
+                    <node concept="37vLTw" id="3wXkdMVpJEK" role="37wK5m">
+                      <ref role="3cqZAo" node="3wXkdMVpGPA" resolve="WHO_VOTED_AGAINST" />
                     </node>
                   </node>
                 </node>
@@ -1805,6 +1865,56 @@
               <node concept="3cpWs6" id="7jV5x$7mofV" role="3cqZAp">
                 <node concept="37vLTw" id="7jV5x$7mDkW" role="3cqZAk">
                   <ref role="3cqZAo" node="7jV5x$7mvpW" resolve="r" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="3wXkdMVpJTn" role="3eNLev">
+            <node concept="2OqwBi" id="3wXkdMVpLxJ" role="3eO9$A">
+              <node concept="37vLTw" id="3wXkdMVpTFh" role="2Oq$k0">
+                <ref role="3cqZAo" node="3wXkdMVpEf7" resolve="WHO_VOTED_FOR" />
+              </node>
+              <node concept="liA8E" id="3wXkdMVpMiI" role="2OqNvi">
+                <ref role="37wK5l" to="n9sl:Z4fkwz9MHT" resolve="is" />
+                <node concept="37vLTw" id="3wXkdMVpMwd" role="37wK5m">
+                  <ref role="3cqZAo" node="7WFhXJlYtxD" resolve="element" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3wXkdMVpJTp" role="3eOfB_">
+              <node concept="3cpWs6" id="3wXkdMVpMW1" role="3cqZAp">
+                <node concept="2OqwBi" id="3wXkdMVpNcK" role="3cqZAk">
+                  <node concept="37vLTw" id="3wXkdMVpMXH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Z4fkwzgwWZ" resolve="state" />
+                  </node>
+                  <node concept="2OwXpG" id="3wXkdMVpOPh" role="2OqNvi">
+                    <ref role="2Oxat5" node="Z4fkwzgrkp" resolve="votedFor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="3wXkdMVpQlM" role="3eNLev">
+            <node concept="2OqwBi" id="3wXkdMVpQlN" role="3eO9$A">
+              <node concept="37vLTw" id="3wXkdMVpQlO" role="2Oq$k0">
+                <ref role="3cqZAo" node="3wXkdMVpGPA" resolve="WHO_VOTED_AGAINST" />
+              </node>
+              <node concept="liA8E" id="3wXkdMVpQlP" role="2OqNvi">
+                <ref role="37wK5l" to="n9sl:Z4fkwz9MHT" resolve="is" />
+                <node concept="37vLTw" id="3wXkdMVpQlQ" role="37wK5m">
+                  <ref role="3cqZAo" node="7WFhXJlYtxD" resolve="element" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3wXkdMVpQlR" role="3eOfB_">
+              <node concept="3cpWs6" id="3wXkdMVpQlS" role="3cqZAp">
+                <node concept="2OqwBi" id="3wXkdMVpQlT" role="3cqZAk">
+                  <node concept="37vLTw" id="3wXkdMVpQlU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Z4fkwzgwWZ" resolve="state" />
+                  </node>
+                  <node concept="2OwXpG" id="3wXkdMVpS8j" role="2OqNvi">
+                    <ref role="2Oxat5" node="4voDClGLNiX" resolve="votedAgainst" />
+                  </node>
                 </node>
               </node>
             </node>
