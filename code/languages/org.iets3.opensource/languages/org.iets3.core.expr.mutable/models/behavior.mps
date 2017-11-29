@@ -32,6 +32,7 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -47,6 +48,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -483,7 +487,7 @@
                 <property role="3clFbU" value="false" />
               </node>
               <node concept="3clFbT" id="6GySMNjkgTr" role="37wK5m">
-                <property role="3clFbU" value="false" />
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -500,9 +504,21 @@
       <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
       <node concept="3Tm1VV" id="3GdqffC786Z" role="1B3o_S" />
       <node concept="3clFbS" id="3GdqffC7876" role="3clF47">
-        <node concept="3clFbF" id="3GdqffC78bV" role="3cqZAp">
-          <node concept="Xl_RD" id="3GdqffC78iY" role="3clFbG">
-            <property role="Xl_RC" value="no effects allowed inside an update block" />
+        <node concept="3clFbF" id="VApoyDAsct" role="3cqZAp">
+          <node concept="2OqwBi" id="VApoyDAsjG" role="3clFbG">
+            <node concept="2YIFZM" id="VApoyDAse8" role="2Oq$k0">
+              <ref role="37wK5l" to="oq0c:VApoyDy6dG" resolve="reads" />
+              <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            </node>
+            <node concept="liA8E" id="VApoyDAssW" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:VApoyDy7KE" resolve="allows" />
+              <node concept="37vLTw" id="VApoyDAstU" role="37wK5m">
+                <ref role="3cqZAo" node="3GdqffC7877" resolve="n" />
+              </node>
+              <node concept="Xl_RD" id="3GdqffC78iY" role="37wK5m">
+                <property role="Xl_RC" value="only read effects allowed inside an update block" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

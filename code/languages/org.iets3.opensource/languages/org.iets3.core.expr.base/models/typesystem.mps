@@ -6427,5 +6427,35 @@
       <ref role="1YaFvo" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="mQGcCvPugH">
+    <property role="TrG5h" value="typeof_FailExpr" />
+    <node concept="3clFbS" id="mQGcCvPugI" role="18ibNy">
+      <node concept="1ZobV4" id="mQGcCvPvmA" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="mQGcCvPvmC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="mQGcCvPvmD" role="mwGJk">
+            <node concept="2OqwBi" id="mQGcCvPvmE" role="1Z2MuG">
+              <node concept="1YBJjd" id="mQGcCvPvmF" role="2Oq$k0">
+                <ref role="1YBMHb" node="mQGcCvPugK" resolve="fe" />
+              </node>
+              <node concept="3TrEf2" id="mQGcCvPvmG" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:mQGcCvPueY" resolve="message" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="mQGcCvPvpo" role="1ZfhKB">
+          <node concept="2YIFZM" id="mQGcCvPvqV" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="mQGcCvPugK" role="1YuTPh">
+      <property role="TrG5h" value="fe" />
+      <ref role="1YaFvo" to="hm2y:mQGcCvPueU" resolve="FailExpr" />
+    </node>
+  </node>
 </model>
 
