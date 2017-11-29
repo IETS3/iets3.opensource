@@ -16,7 +16,10 @@
     <import index="n9sl" ref="r:31031e98-877c-4323-9944-f0e02428120e(org.iets3.core.expr.mutable.plugin)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="8ors" ref="r:b42cba76-0ae4-471b-92c0-7290e4540c95(org.iets3.core.expr.statemachines.plugin)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -113,6 +116,9 @@
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -642,6 +648,40 @@
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="Z4fkwzhDMS" role="1tU5fm">
           <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="mQGcCvGE6T" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="visibleFunctions" />
+      <ref role="13i0hy" to="nu60:mQGcCvDdEN" resolve="visibleFunctions" />
+      <node concept="3Tm1VV" id="mQGcCvGE6U" role="1B3o_S" />
+      <node concept="3clFbS" id="mQGcCvGE6Y" role="3clF47">
+        <node concept="3clFbF" id="mQGcCvGEDG" role="3cqZAp">
+          <node concept="2OqwBi" id="mQGcCvMqQl" role="3clFbG">
+            <node concept="2OqwBi" id="mQGcCvGHA5" role="2Oq$k0">
+              <node concept="2OqwBi" id="mQGcCvGEY3" role="2Oq$k0">
+                <node concept="13iPFW" id="mQGcCvGEDF" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="mQGcCvGFpE" role="2OqNvi">
+                  <ref role="3TtcxE" to="19m5:7$TgoCYjTEF" resolve="contents" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="mQGcCvGLZE" role="2OqNvi">
+                <node concept="chp4Y" id="mQGcCvMqrW" role="v3oSu">
+                  <ref role="cht4Q" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
+                </node>
+              </node>
+            </node>
+            <node concept="13MTOL" id="mQGcCvMr7n" role="2OqNvi">
+              <ref role="13MTZf" to="yv47:mQGcCvwSTn" resolve="fun" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="mQGcCvGE6Z" role="3clF45">
+        <node concept="3Tqbb2" id="mQGcCvGE70" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:49WTic8f4iz" resolve="Function" />
         </node>
       </node>
     </node>

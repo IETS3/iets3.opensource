@@ -32,6 +32,7 @@
   </imports>
   <registry>
     <language id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines">
+      <concept id="411710798109576786" name="org.iets3.core.expr.statemachines.structure.SMFunAdapter" flags="ng" index="qdjUo" />
       <concept id="3519191162854281550" name="org.iets3.core.expr.statemachines.structure.IsInStateTarget" flags="ng" index="2AijNT">
         <reference id="3519191162854281557" name="state" index="2AijNy" />
       </concept>
@@ -364,6 +365,9 @@
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="7782108600709718604" name="org.iets3.core.expr.toplevel.structure.ReferenceableFlag" flags="ng" index="nbNz6">
         <reference id="7782108600710563457" name="idMember" index="n8xKb" />
+      </concept>
+      <concept id="411710798111762102" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionAdapter" flags="ng" index="q4_pW">
+        <child id="411710798109576791" name="fun" index="qdjUt" />
       </concept>
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
@@ -5370,59 +5374,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="4pyjK6aR1PW" role="_iOnB" />
-    <node concept="1aga60" id="4pyjK6aZoZ7" role="_iOnB">
-      <property role="TrG5h" value="tryToBuy" />
-      <node concept="1aduha" id="4pyjK6aZsUL" role="1ahQXP">
-        <node concept="39w5ZF" id="4pyjK6aZusr" role="1aduh9">
-          <node concept="30d6GI" id="4pyjK6aZzt0" role="39w5ZE">
-            <node concept="1afdae" id="4pyjK6aZ$4p" role="30dEs_">
-              <ref role="1afue_" node="4pyjK6aZqs2" resolve="price" />
-            </node>
-            <node concept="1QScDb" id="4pyjK6aZxza" role="30dEsF">
-              <node concept="3o_JK" id="4pyjK6aZyPF" role="1QScD9">
-                <ref role="3o_JH" node="4pyjK6aOaeH" resolve="price" />
-              </node>
-              <node concept="1QScDb" id="4pyjK6aZvEa" role="30czhm">
-                <node concept="3sQ2Ir" id="4pyjK6aZwW2" role="1QScD9" />
-                <node concept="1afdae" id="4pyjK6aZv3$" role="30czhm">
-                  <ref role="1afue_" node="4pyjK6aZpJW" resolve="offer" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="UmHTt" id="4pyjK6aZ_xI" role="39w5ZL" />
-          <node concept="1QScDb" id="4pyjK6aSCv_" role="39w5ZG">
-            <node concept="3sPC8h" id="4pyjK6aSCvA" role="1QScD9">
-              <node concept="1QScDb" id="4pyjK6aSCvB" role="3sPC8l">
-                <node concept="3vStjw" id="4pyjK6aSCvC" role="1QScD9">
-                  <node concept="3vStjd" id="4pyjK6aSCvD" role="3vSgwc">
-                    <ref role="3vStjc" node="4pyjK6aOaeJ" resolve="sold" />
-                    <node concept="2vmpnb" id="4pyjK6aSCvE" role="3vStj2" />
-                  </node>
-                </node>
-                <node concept="3j5BQN" id="4pyjK6aSCvF" role="30czhm" />
-              </node>
-            </node>
-            <node concept="1afdae" id="4pyjK6aZARJ" role="30czhm">
-              <ref role="1afue_" node="4pyjK6aZpJW" resolve="offer" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1ahQXy" id="4pyjK6aZpJW" role="1ahQWs">
-        <property role="TrG5h" value="offer" />
-        <node concept="3sNe5_" id="4pyjK6aZqrv" role="3ix9CU">
-          <node concept="2Ss9cW" id="4pyjK6aZqrM" role="3sNe5$">
-            <ref role="2Ss9cX" node="4pyjK6aOaeD" resolve="Offer" />
-          </node>
-        </node>
-      </node>
-      <node concept="1ahQXy" id="4pyjK6aZqs2" role="1ahQWs">
-        <property role="TrG5h" value="price" />
-        <node concept="30bXR$" id="4pyjK6aZr7N" role="3ix9CU" />
-      </node>
-      <node concept="2lgajY" id="4pyjK6aZCde" role="28QfE6" />
-    </node>
     <node concept="_ixoA" id="4pyjK6aZoeZ" role="_iOnB" />
     <node concept="174hOD" id="4pyjK6aSCuC" role="_iOnB">
       <property role="TrG5h" value="SalesEngine" />
@@ -5489,7 +5440,87 @@
           </node>
         </node>
       </node>
-      <node concept="17qw2z" id="mQGcCvwBUY" role="17tHGx" />
+      <node concept="17qw2z" id="mQGcCvMOez" role="17tHGx" />
+      <node concept="qdjUo" id="mQGcCvKvKC" role="17tHGx">
+        <node concept="1aga60" id="mQGcCvKvKE" role="qdjUt">
+          <property role="TrG5h" value="tryToBuy" />
+          <node concept="1ahQXy" id="mQGcCvKzZL" role="1ahQWs">
+            <property role="TrG5h" value="offer" />
+            <node concept="3sNe5_" id="mQGcCvK$08" role="3ix9CU">
+              <node concept="2Ss9cW" id="mQGcCvK$0t" role="3sNe5$">
+                <ref role="2Ss9cX" node="4pyjK6aOaeD" resolve="Offer" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ahQXy" id="mQGcCvK$0I" role="1ahQWs">
+            <property role="TrG5h" value="price" />
+            <node concept="30bXR$" id="mQGcCvK$QO" role="3ix9CU" />
+          </node>
+          <node concept="39w5ZF" id="4pyjK6aZusr" role="1ahQXP">
+            <node concept="30d6GI" id="4pyjK6aZzt0" role="39w5ZE">
+              <node concept="1afdae" id="mQGcCvKGyz" role="30dEs_">
+                <ref role="1afue_" node="mQGcCvK$0I" resolve="price" />
+              </node>
+              <node concept="1QScDb" id="4pyjK6aZxza" role="30dEsF">
+                <node concept="3o_JK" id="mQGcCvKGxt" role="1QScD9">
+                  <ref role="3o_JH" node="4pyjK6aOaeH" resolve="price" />
+                </node>
+                <node concept="1QScDb" id="4pyjK6aZvEa" role="30czhm">
+                  <node concept="3sQ2Ir" id="4pyjK6aZwW2" role="1QScD9" />
+                  <node concept="1afdae" id="mQGcCvKENr" role="30czhm">
+                    <ref role="1afue_" node="mQGcCvKzZL" resolve="offer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UmHTt" id="4pyjK6aZ_xI" role="39w5ZL" />
+            <node concept="1QScDb" id="4pyjK6aSCv_" role="39w5ZG">
+              <node concept="3sPC8h" id="4pyjK6aSCvA" role="1QScD9">
+                <node concept="1QScDb" id="4pyjK6aSCvB" role="3sPC8l">
+                  <node concept="3vStjw" id="4pyjK6aSCvC" role="1QScD9">
+                    <node concept="3vStjd" id="4pyjK6aSCvD" role="3vSgwc">
+                      <ref role="3vStjc" node="4pyjK6aOaeJ" resolve="sold" />
+                      <node concept="2vmpnb" id="4pyjK6aSCvE" role="3vStj2" />
+                    </node>
+                  </node>
+                  <node concept="3j5BQN" id="4pyjK6aSCvF" role="30czhm" />
+                </node>
+              </node>
+              <node concept="1afdae" id="mQGcCvKHk1" role="30czhm">
+                <ref role="1afue_" node="mQGcCvKzZL" resolve="offer" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="mQGcCvKNkK" role="28QfE6" />
+        </node>
+      </node>
+      <node concept="qdjUo" id="mQGcCvKQO3" role="17tHGx">
+        <node concept="1aga60" id="mQGcCvKQO5" role="qdjUt">
+          <property role="TrG5h" value="shouldBeSold" />
+          <node concept="1ahQXy" id="mQGcCvKRDN" role="1ahQWs">
+            <property role="TrG5h" value="productID" />
+            <node concept="30bdrU" id="mQGcCvKSwy" role="3ix9CU" />
+          </node>
+          <node concept="21Ysq4" id="mQGcCvAa3k" role="1ahQXP">
+            <node concept="2vmpn$" id="mQGcCvAa3l" role="30dEs_" />
+            <node concept="1QScDb" id="mQGcCvAa3m" role="30dEsF">
+              <node concept="GRK4H" id="mQGcCvAa3n" role="1QScD9">
+                <property role="2EMntM" value="decision" />
+              </node>
+              <node concept="2yLE0X" id="mQGcCvAa3o" role="30czhm">
+                <node concept="2YgRg0" id="mQGcCvAa3p" role="30czhm">
+                  <ref role="2YgRg3" node="4pyjK6aSCuN" resolve="salesDecisions" />
+                </node>
+                <node concept="1afdae" id="mQGcCvAa4S" role="2yLE0W">
+                  <ref role="1afue_" node="mQGcCvKRDN" resolve="productID" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajW" id="mQGcCvL0aq" role="28QfE6" />
+        </node>
+      </node>
+      <node concept="17qw2z" id="mQGcCvMP4r" role="17tHGx" />
       <node concept="174hPt" id="4pyjK6aSCv4" role="17tHGx">
         <property role="TrG5h" value="decideOnSelling" />
         <node concept="174hPn" id="4pyjK6aSCv5" role="17rfIJ">
@@ -5567,57 +5598,47 @@
           </node>
         </node>
       </node>
-      <node concept="17qw2z" id="mQGcCvuYfO" role="17tHGx" />
+      <node concept="17qw2z" id="mQGcCvBCKN" role="17tHGx" />
       <node concept="174hPt" id="4pyjK6aSCvI" role="17tHGx">
         <property role="TrG5h" value="selling" />
-        <node concept="174hPn" id="mQGcCvrLmv" role="17rfIJ">
-          <node concept="2AuZ2C" id="mQGcCvrLXj" role="2AuZ2o">
+        <node concept="174hPn" id="mQGcCvAoze" role="17rfIJ">
+          <node concept="2AuZ2C" id="mQGcCvAozf" role="2AuZ2o">
             <ref role="2AuZ2q" node="4pyjK6aSCuI" resolve="buy" />
           </node>
-          <node concept="17riQX" id="mQGcCvrOQz" role="17vUwr">
-            <node concept="1aduha" id="mQGcCvrOR1" role="17vFbk">
-              <node concept="39w5ZF" id="mQGcCvs2No" role="1aduh9">
-                <node concept="UmaEC" id="mQGcCvs2Np" role="39w5ZE">
-                  <node concept="1af_rf" id="mQGcCvs2Nq" role="UmaED">
+          <node concept="17riQX" id="mQGcCvAozg" role="17vUwr">
+            <node concept="1aduha" id="mQGcCvAozh" role="17vFbk">
+              <node concept="39w5ZF" id="mQGcCvAozi" role="1aduh9">
+                <node concept="UmaEC" id="mQGcCvAozj" role="39w5ZE">
+                  <node concept="1af_rf" id="mQGcCvAozk" role="UmaED">
                     <ref role="1afhQb" node="4pyjK6aZ2Fb" resolve="offerBoxById" />
-                    <node concept="2YqRDQ" id="mQGcCvs2Nr" role="1afhQ5">
+                    <node concept="2YqRDQ" id="mQGcCvAozl" role="1afhQ5">
                       <ref role="2YqRDN" node="4pyjK6aSCuJ" resolve="productID" />
                     </node>
                   </node>
-                  <node concept="pfQqD" id="mQGcCvsxH$" role="pfQ1b">
+                  <node concept="pfQqD" id="mQGcCvAozm" role="pfQ1b">
                     <property role="pfQqC" value="p" />
                   </node>
                 </node>
-                <node concept="1aduha" id="mQGcCvs7z4" role="39w5ZG">
-                  <node concept="1af_rf" id="mQGcCvuLPL" role="1aduh9">
-                    <ref role="1afhQb" node="4pyjK6aZoZ7" resolve="tryToBuy" />
-                    <node concept="1ZmhP4" id="mQGcCvuMDS" role="1afhQ5">
-                      <ref role="1ZmhP3" node="mQGcCvs2Np" resolve="p" />
+                <node concept="1aduha" id="mQGcCvAozn" role="39w5ZG">
+                  <node concept="1af_rf" id="mQGcCvAozo" role="1aduh9">
+                    <ref role="1afhQb" node="mQGcCvKvKE" resolve="tryToBuy" />
+                    <node concept="1ZmhP4" id="mQGcCvAozp" role="1afhQ5">
+                      <ref role="1ZmhP3" node="mQGcCvAozj" resolve="p" />
                     </node>
-                    <node concept="2YqRDQ" id="mQGcCvuOii" role="1afhQ5">
+                    <node concept="2YqRDQ" id="mQGcCvAozq" role="1afhQ5">
                       <ref role="2YqRDN" node="4pyjK6aSCuL" resolve="price" />
                     </node>
                   </node>
                 </node>
-                <node concept="UmHTt" id="mQGcCvsqrt" role="39w5ZL" />
+                <node concept="UmHTt" id="mQGcCvAozr" role="39w5ZL" />
               </node>
             </node>
           </node>
-          <node concept="17sVkC" id="mQGcCvspd2" role="174hPE">
-            <node concept="21Ysq4" id="mQGcCvrTwD" role="17sVkD">
-              <node concept="2vmpn$" id="mQGcCvrU3U" role="30dEs_" />
-              <node concept="1QScDb" id="mQGcCvrQzA" role="30dEsF">
-                <node concept="GRK4H" id="mQGcCvrRIa" role="1QScD9">
-                  <property role="2EMntM" value="decision" />
-                </node>
-                <node concept="2yLE0X" id="mQGcCvrPuO" role="30czhm">
-                  <node concept="2YgRg0" id="mQGcCvrPuP" role="30czhm">
-                    <ref role="2YgRg3" node="4pyjK6aSCuN" resolve="salesDecisions" />
-                  </node>
-                  <node concept="2YqRDQ" id="mQGcCvrQ1c" role="2yLE0W">
-                    <ref role="2YqRDN" node="4pyjK6aSCuJ" resolve="productID" />
-                  </node>
-                </node>
+          <node concept="17sVkC" id="mQGcCvAozs" role="174hPE">
+            <node concept="1af_rf" id="mQGcCvAZIl" role="17sVkD">
+              <ref role="1afhQb" node="mQGcCvKQO5" resolve="shouldBeSold" />
+              <node concept="2YqRDQ" id="mQGcCvB0zG" role="1afhQ5">
+                <ref role="2YqRDN" node="4pyjK6aSCuJ" resolve="productID" />
               </node>
             </node>
           </node>
@@ -5646,30 +5667,20 @@
               </node>
               <node concept="1QScDb" id="mQGcCvsPQW" role="30czhm">
                 <node concept="3izCyS" id="mQGcCvsQvs" role="1QScD9">
-                  <node concept="3izI60" id="mQGcCvsVnt" role="3iAY4F">
-                    <node concept="21Ysq4" id="mQGcCvsW4a" role="3izI61">
-                      <node concept="2vmpn$" id="mQGcCvsW4b" role="30dEs_" />
-                      <node concept="1QScDb" id="mQGcCvsW4c" role="30dEsF">
-                        <node concept="GRK4H" id="mQGcCvsW4d" role="1QScD9">
-                          <property role="2EMntM" value="decision" />
+                  <node concept="3izI60" id="mQGcCvBd6j" role="3iAY4F">
+                    <node concept="1af_rf" id="mQGcCvBdR8" role="3izI61">
+                      <ref role="1afhQb" node="mQGcCvKQO5" resolve="shouldBeSold" />
+                      <node concept="1QScDb" id="mQGcCvt1Yn" role="1afhQ5">
+                        <node concept="3o_JK" id="mQGcCvt3wG" role="1QScD9">
+                          <ref role="3o_JH" node="4pyjK6aOaez" resolve="id" />
                         </node>
-                        <node concept="2yLE0X" id="mQGcCvsW4e" role="30czhm">
-                          <node concept="2YgRg0" id="mQGcCvsW4f" role="30czhm">
-                            <ref role="2YgRg3" node="4pyjK6aSCuN" resolve="salesDecisions" />
+                        <node concept="1QScDb" id="mQGcCvsZIh" role="30czhm">
+                          <node concept="3o_JK" id="mQGcCvt1fQ" role="1QScD9">
+                            <ref role="3o_JH" node="4pyjK6aOaeE" resolve="product" />
                           </node>
-                          <node concept="1QScDb" id="mQGcCvt1Yn" role="2yLE0W">
-                            <node concept="3o_JK" id="mQGcCvt3wG" role="1QScD9">
-                              <ref role="3o_JH" node="4pyjK6aOaez" resolve="id" />
-                            </node>
-                            <node concept="1QScDb" id="mQGcCvsZIh" role="30czhm">
-                              <node concept="3o_JK" id="mQGcCvt1fQ" role="1QScD9">
-                                <ref role="3o_JH" node="4pyjK6aOaeE" resolve="product" />
-                              </node>
-                              <node concept="1QScDb" id="mQGcCvsXvh" role="30czhm">
-                                <node concept="3sQ2Ir" id="mQGcCvsZ06" role="1QScD9" />
-                                <node concept="3izPEI" id="mQGcCvsWLJ" role="30czhm" />
-                              </node>
-                            </node>
+                          <node concept="1QScDb" id="mQGcCvsXvh" role="30czhm">
+                            <node concept="3sQ2Ir" id="mQGcCvsZ06" role="1QScD9" />
+                            <node concept="3izPEI" id="mQGcCvsWLJ" role="30czhm" />
                           </node>
                         </node>
                       </node>
@@ -5687,7 +5698,6 @@
           </node>
         </node>
       </node>
-      <node concept="17qw2z" id="mQGcCvwCJ6" role="17tHGx" />
       <node concept="174hPt" id="mQGcCvrNHi" role="17tHGx">
         <property role="TrG5h" value="ended" />
       </node>

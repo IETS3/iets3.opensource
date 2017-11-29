@@ -23,6 +23,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="19m5" ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)" />
     <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -3255,6 +3256,22 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="mQGcCvwSTM">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="1XX52x" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
+    <node concept="1kIj98" id="mQGcCvwSTR" role="2wV5jI">
+      <node concept="3F1sOY" id="mQGcCvwSU0" role="1kIj9b">
+        <ref role="1NtTu8" to="yv47:mQGcCvwSTn" resolve="fun" />
+        <node concept="VPRnO" id="mQGcCvy6OF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="mQGcCv$$qI">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="aqKnT" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
   </node>
 </model>
 

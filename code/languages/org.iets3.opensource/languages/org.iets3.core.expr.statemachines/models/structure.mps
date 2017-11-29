@@ -6,8 +6,8 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
@@ -69,6 +69,9 @@
     </node>
     <node concept="PrWs8" id="7bd8pkkv$fb" role="PzmwI">
       <ref role="PrY4T" to="8lgj:5y3VELft_XL" resolve="IInteractor" />
+    </node>
+    <node concept="PrWs8" id="mQGcCvGDv4" role="PzmwI">
+      <ref role="PrY4T" to="yv47:mQGcCvDdrZ" resolve="IFunctionContainer" />
     </node>
     <node concept="1TJgyj" id="7$TgoCYjTEF" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268484267" />
@@ -526,6 +529,16 @@
     </node>
     <node concept="PrWs8" id="mQGcCvv0Nw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mQGcCvwSTi">
+    <property role="EcuMT" value="411710798109576786" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="SMFunAdapter" />
+    <property role="34LRSv" value="fun" />
+    <ref role="1TJDcQ" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
+    <node concept="PrWs8" id="mQGcCvwSTj" role="PzmwI">
+      <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
     </node>
   </node>
 </model>
