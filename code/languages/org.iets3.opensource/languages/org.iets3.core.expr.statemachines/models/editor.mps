@@ -1075,5 +1075,9 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="4J6AqiJ4jDu">
+    <property role="3GE5qa" value="machine" />
+    <ref role="aqKnT" to="19m5:mQGcCvv0Nq" resolve="EmptyStateContent" />
+  </node>
 </model>
 

@@ -191,6 +191,7 @@
         <child id="8694548031078301045" name="typeConstraint" index="ylO0F" />
       </concept>
       <concept id="24388123213992448" name="org.iets3.core.expr.collections.structure.AsMapOp" flags="ng" index="1GJzru" />
+      <concept id="24388123215615666" name="org.iets3.core.expr.collections.structure.MapSizeOp" flags="ng" index="1HlZ9G" />
       <concept id="24388123216554083" name="org.iets3.core.expr.collections.structure.FindFirstOp" flags="ng" index="1HmgMX" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
@@ -267,6 +268,7 @@
       </concept>
       <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
@@ -8552,6 +8554,17 @@
           <node concept="GZN9E" id="VApoyDIuXc" role="3ix9CU" />
         </node>
       </node>
+      <node concept="174hPg" id="4J6AqiJ3Gtd" role="17tHGx">
+        <property role="TrG5h" value="terminteAccessRequest" />
+        <node concept="2YrC_o" id="4J6AqiJ4cYG" role="2YrC_u">
+          <property role="TrG5h" value="who" />
+          <node concept="GZN9E" id="4J6AqiJ4gAL" role="3ix9CU" />
+        </node>
+        <node concept="2YrC_o" id="4J6AqiJ3UPX" role="2YrC_u">
+          <property role="TrG5h" value="newGuy" />
+          <node concept="GZN9E" id="4J6AqiJ3XR3" role="3ix9CU" />
+        </node>
+      </node>
       <node concept="174hPg" id="VApoyDIw5M" role="17tHGx">
         <property role="TrG5h" value="voteForAccess" />
         <node concept="2YrC_o" id="VApoyDIwdq" role="2YrC_u">
@@ -8670,9 +8683,67 @@
           <node concept="2lgajW" id="4J6AqiIPTLG" role="28QfE6" />
         </node>
       </node>
-      <node concept="17qw2z" id="4J6AqiIPVHG" role="17tHGx" />
+      <node concept="qdjUo" id="4J6AqiJ3$pM" role="17tHGx">
+        <node concept="1aga60" id="4J6AqiJ3$pO" role="qdjUt">
+          <property role="TrG5h" value="hasPending" />
+          <node concept="30cPrR" id="4J6AqiJ3ClK" role="1ahQXP">
+            <node concept="30bXRB" id="4J6AqiJ3CTI" role="30dEs_">
+              <property role="30bXRw" value="0" />
+            </node>
+            <node concept="1QScDb" id="4J6AqiJ3A5f" role="30dEsF">
+              <node concept="1HlZ9G" id="4J6AqiJ3BcJ" role="1QScD9" />
+              <node concept="1QScDb" id="4J6AqiJ3$ZV" role="30czhm">
+                <node concept="3sQ2Ir" id="4J6AqiJ3_xN" role="1QScD9" />
+                <node concept="2YgRg0" id="4J6AqiJ3$Z8" role="30czhm">
+                  <ref role="2YgRg3" node="4J6AqiIN8i6" resolve="pendingAccess" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajW" id="4J6AqiJ3E3U" role="28QfE6" />
+        </node>
+      </node>
+      <node concept="17qw2z" id="4J6AqiJ3zik" role="17tHGx" />
       <node concept="174hPt" id="VApoyDIwGQ" role="17tHGx">
         <property role="TrG5h" value="gatheringMembers" />
+        <node concept="174hPn" id="4J6AqiJ5rCI" role="17rfIJ">
+          <node concept="2AuZ2C" id="4J6AqiJ5sQC" role="2AuZ2o">
+            <ref role="2AuZ2q" node="4J6AqiJ3Gtd" resolve="terminteAccessRequest" />
+          </node>
+          <node concept="17sVkC" id="4J6AqiJ5sRp" role="174hPE">
+            <node concept="30deo4" id="4J6AqiJ5tt1" role="17sVkD">
+              <node concept="1af_rf" id="4J6AqiJ5u2p" role="30dEs_">
+                <ref role="1afhQb" node="4J6AqiIPQnO" resolve="isPending" />
+                <node concept="2YqRDQ" id="4J6AqiJ5uBN" role="1afhQ5">
+                  <ref role="2YqRDN" node="4J6AqiJ3UPX" resolve="newGuy" />
+                </node>
+              </node>
+              <node concept="1af_rf" id="4J6AqiJ5sRC" role="30dEsF">
+                <ref role="1afhQb" node="4J6AqiIPHqk" resolve="isDecider" />
+                <node concept="2YqRDQ" id="4J6AqiJ5sRT" role="1afhQ5">
+                  <ref role="2YqRDN" node="4J6AqiJ4cYG" resolve="who" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17riQX" id="4J6AqiJ5vdb" role="17vUwr">
+            <node concept="1QScDb" id="4J6AqiJ5vMB" role="17vFbk">
+              <node concept="3sPC8h" id="4J6AqiJ5vMC" role="1QScD9">
+                <node concept="1QScDb" id="4J6AqiJ5vMD" role="3sPC8l">
+                  <node concept="1DE4Fa" id="4J6AqiJ5vME" role="1QScD9">
+                    <node concept="2YqRDQ" id="4J6AqiJ5vMF" role="1DF7L_">
+                      <ref role="2YqRDN" node="4J6AqiJ3UPX" resolve="newGuy" />
+                    </node>
+                  </node>
+                  <node concept="3j5BQN" id="4J6AqiJ5vMG" role="30czhm" />
+                </node>
+              </node>
+              <node concept="2YgRg0" id="4J6AqiJ5vMH" role="30czhm">
+                <ref role="2YgRg3" node="4J6AqiIN8i6" resolve="pendingAccess" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="174hPn" id="VApoyDIwWj" role="17rfIJ">
           <node concept="2AuZ2C" id="VApoyDIx41" role="2AuZ2o">
             <ref role="2AuZ2q" node="VApoyDIuHV" resolve="requestAccess" />
@@ -8832,6 +8903,13 @@
           <node concept="1vQcaV" id="VApoyDIYeh" role="1vQNHF">
             <ref role="1vQcaS" node="VApoyDIXUI" resolve="selling" />
           </node>
+          <node concept="17sVkC" id="4J6AqiJ3Fe5" role="174hPE">
+            <node concept="30czhn" id="4J6AqiJ3Fef" role="17sVkD">
+              <node concept="1af_rf" id="4J6AqiJ3Feu" role="30czhm">
+                <ref role="1afhQb" node="4J6AqiJ3$pO" resolve="hasPending" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="17qw2z" id="4J6AqiIPWGi" role="17tHGx" />
@@ -8902,7 +8980,7 @@
         <node concept="OjmMv" id="4J6AqiIPXEV" role="1w35rA">
           <node concept="19SGf9" id="4J6AqiIPXEW" role="OjmMu">
             <node concept="19SUe$" id="4J6AqiIPXEX" role="19SJt6">
-              <property role="19SUeA" value="We're an online community that has to continuously maintain a (selling)&#10;decision; it can be revoked or granted over time. The group of&#10;individuals, called the deciders, can vote (and revoke) this sales&#10;decision. The vote has to be unanimous. In addition, additional people&#10;can be voted into the group of deciders. The existing deciders vote for&#10;new candidates, by simple majority, but with a time limit. Once voted&#10;into the group of deciders, the new member can participate in the&#10;sell/no-sell decision. Multiple member approval processes can go on at&#10;the same time. " />
+              <property role="19SUeA" value="We're an online community that has to continuously maintain a (selling)&#10;decision; it can be revoked or granted over time. The group of&#10;individuals, called the deciders, can vote (and revoke) this sales&#10;decision. The vote has to be unanimous. In addition, additional people&#10;can be voted into the group of deciders. The existing deciders vote for&#10;new candidates, by simple majority, but with a time limit. Once voted&#10;into the group of deciders, the new member can participate in the&#10;sell/no-sell decision. Multiple member approval processes can go on at&#10;the same time. While a member request is pending, the sales decision cannot&#10;be changed.  " />
             </node>
           </node>
         </node>
