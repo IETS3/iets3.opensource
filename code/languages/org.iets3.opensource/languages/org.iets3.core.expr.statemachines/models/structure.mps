@@ -541,5 +541,49 @@
       <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4J6AqiIShjV">
+    <property role="EcuMT" value="5460220530820977915" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="StatemachineQuery" />
+    <property role="34LRSv" value="query" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4J6AqiIShjW" role="1TKVEl">
+      <property role="IQ2nx" value="3519191162853534709" />
+      <property role="TrG5h" value="observable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="4J6AqiIShjX" role="PzmwI">
+      <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
+    </node>
+    <node concept="PrWs8" id="4J6AqiIShjY" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4J6AqiIShk0" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyj" id="4J6AqiIShk1" role="1TKVEi">
+      <property role="IQ2ns" value="195141004745041161" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4J6AqiIUT_S">
+    <property role="EcuMT" value="5460220530821667192" />
+    <property role="TrG5h" value="QueryTarget" />
+    <property role="3GE5qa" value="operations" />
+    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="1TJgyj" id="4J6AqiIUT_T" role="1TKVEi">
+      <property role="IQ2ns" value="195141004746076721" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="query" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4J6AqiIShjV" resolve="StatemachineQuery" />
+    </node>
+    <node concept="PrWs8" id="4J6AqiIUT_U" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
 </model>
 

@@ -603,5 +603,53 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4J6AqiIUTAY">
+    <property role="3GE5qa" value="operations" />
+    <ref role="1M2myG" to="19m5:4J6AqiIUT_S" resolve="QueryTarget" />
+    <node concept="1N5Pfh" id="4J6AqiIUTB7" role="1Mr941">
+      <ref role="1N5Vy1" to="19m5:4J6AqiIUT_T" resolve="query" />
+      <node concept="3dgokm" id="4J6AqiIUTB8" role="1N6uqs">
+        <node concept="3clFbS" id="4J6AqiIUTB9" role="2VODD2">
+          <node concept="3clFbF" id="4J6AqiIUTBa" role="3cqZAp">
+            <node concept="2YIFZM" id="4J6AqiIUTBb" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="4J6AqiIUTBc" role="37wK5m">
+                <node concept="2OqwBi" id="4J6AqiIUTBd" role="2Oq$k0">
+                  <node concept="1PxgMI" id="4J6AqiIUTBe" role="2Oq$k0">
+                    <node concept="chp4Y" id="4J6AqiIUTBf" role="3oSUPX">
+                      <ref role="cht4Q" to="19m5:7$TgoCYajaE" resolve="StateMachineType" />
+                    </node>
+                    <node concept="2OqwBi" id="4J6AqiIUTBg" role="1m5AlR">
+                      <node concept="2OqwBi" id="4J6AqiIUTBh" role="2Oq$k0">
+                        <node concept="2rP1CM" id="4J6AqiIUTBi" role="2Oq$k0" />
+                        <node concept="2Xjw5R" id="4J6AqiIUTBj" role="2OqNvi">
+                          <node concept="1xMEDy" id="4J6AqiIUTBk" role="1xVPHs">
+                            <node concept="chp4Y" id="4J6AqiIUTBl" role="ri$Ld">
+                              <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                            </node>
+                          </node>
+                          <node concept="1xIGOp" id="4J6AqiIUTBm" role="1xVPHs" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="4J6AqiIUTBn" role="2OqNvi">
+                        <ref role="37wK5l" to="pbu6:5WNmJ7Ez2mW" resolve="extractContextBaseType" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="4J6AqiIUTBo" role="2OqNvi">
+                    <ref role="3Tt5mk" to="19m5:7$TgoCYajaF" resolve="machine" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="4J6AqiIUTBp" role="2OqNvi">
+                  <ref role="37wK5l" to="w10o:33mFrum_2U2" resolve="observableVariables" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

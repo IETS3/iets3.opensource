@@ -1031,5 +1031,49 @@
     <property role="3GE5qa" value="machine" />
     <ref role="aqKnT" to="19m5:7$TgoCYkO4D" resolve="EmptySMC" />
   </node>
+  <node concept="24kQdi" id="4J6AqiIShkC">
+    <property role="3GE5qa" value="machine" />
+    <ref role="1XX52x" to="19m5:4J6AqiIShjV" resolve="StatemachineQuery" />
+    <node concept="3EZMnI" id="4J6AqiIShkH" role="2wV5jI">
+      <node concept="1kHk_G" id="4J6AqiIShkI" role="3EZMnx">
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <ref role="1NtTu8" to="19m5:4J6AqiIShjW" resolve="observable" />
+      </node>
+      <node concept="3F0ifn" id="4J6AqiIShlf" role="3EZMnx">
+        <property role="3F0ifm" value="query" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0A7n" id="4J6AqiIShkK" role="3EZMnx">
+        <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPRnO" id="4J6AqiIShkL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4J6AqiIShkM" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4J6AqiIShkV" role="2iSdaV" />
+      <node concept="3F0ifn" id="4J6AqiIShkW" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="4J6AqiIShlN" role="3EZMnx">
+        <ref role="1NtTu8" to="19m5:4J6AqiIShk1" resolve="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4J6AqiIUTAn">
+    <property role="3GE5qa" value="operations" />
+    <ref role="1XX52x" to="19m5:4J6AqiIUT_S" resolve="QueryTarget" />
+    <node concept="1iCGBv" id="4J6AqiIUTAs" role="2wV5jI">
+      <ref role="1NtTu8" to="19m5:4J6AqiIUT_T" resolve="query" />
+      <node concept="1sVBvm" id="4J6AqiIUTAt" role="1sWHZn">
+        <node concept="3F0A7n" id="4J6AqiIUTAu" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
