@@ -516,5 +516,17 @@
     <property role="34LRSv" value="ignore" />
     <ref role="1TJDcQ" node="7Z_fDCwfvKw" resolve="AbstractTransTarget" />
   </node>
+  <node concept="1TIwiD" id="mQGcCvv0Nq">
+    <property role="EcuMT" value="411710798109084890" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="EmptyStateContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="mQGcCvv0Nr" role="PzmwI">
+      <ref role="PrY4T" node="7$TgoCYlrCy" resolve="IStateContent" />
+    </node>
+    <node concept="PrWs8" id="mQGcCvv0Nw" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
 </model>
 

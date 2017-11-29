@@ -181,6 +181,7 @@
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
         <child id="7019451652831666945" name="language" index="cpn$n" />
       </concept>
+      <concept id="2515196518060811313" name="com.mbeddr.mpsutil.interpreter.structure.DummyEvaluator" flags="ng" index="lHU7p" />
       <concept id="5293529713177831489" name="com.mbeddr.mpsutil.interpreter.structure.NodeExpression" flags="ng" index="oxGPV" />
       <concept id="5293529713177875074" name="com.mbeddr.mpsutil.interpreter.structure.ContextExpression" flags="ng" index="oxNuS" />
       <concept id="8615074351687435493" name="com.mbeddr.mpsutil.interpreter.structure.InterpretExpression" flags="ng" index="qpA2v" />
@@ -320,6 +321,123 @@
   <node concept="qq9qg" id="7kYh9WsSh7Y">
     <property role="TrG5h" value="ExprCollectionsInterpeterPCollections" />
     <property role="UYu25" value="arithmetic" />
+    <node concept="qq9P1" id="7Z_fDCwvoyu" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="700h:7Z_fDCwv2Gw" resolve="ValuesTarget" />
+      <node concept="3dA_Gj" id="7Z_fDCwvoyv" role="3vQZUl">
+        <node concept="9aQIb" id="7Z_fDCwvoyw" role="3vcmbn">
+          <node concept="3clFbS" id="7Z_fDCwvoyx" role="9aQI4">
+            <node concept="3cpWs8" id="7Z_fDCwvoyB" role="3cqZAp">
+              <node concept="3cpWsn" id="7Z_fDCwvoyC" role="3cpWs9">
+                <property role="TrG5h" value="ctx" />
+                <node concept="3Tqbb2" id="7Z_fDCwvoyD" role="1tU5fm">
+                  <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+                </node>
+                <node concept="2OqwBi" id="7Z_fDCwvoyE" role="33vP2m">
+                  <node concept="oxGPV" id="7Z_fDCwvoyF" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7Z_fDCwvoyG" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7Z_fDCwvoyH" role="3cqZAp">
+              <node concept="3cpWsn" id="7Z_fDCwvoyI" role="3cpWs9">
+                <property role="TrG5h" value="evaledContext" />
+                <node concept="3uibUv" id="7Z_fDCwvoyJ" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="3EllGN" id="7Z_fDCwvoyK" role="33vP2m">
+                  <node concept="37vLTw" id="7Z_fDCwvoyL" role="3ElVtu">
+                    <ref role="3cqZAo" node="7Z_fDCwvoyC" resolve="ctx" />
+                  </node>
+                  <node concept="TvHiN" id="7Z_fDCwvoyM" role="3ElQJh" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7Z_fDCwvD7Y" role="3cqZAp">
+              <node concept="3cpWsn" id="7Z_fDCwvD7Z" role="3cpWs9">
+                <property role="TrG5h" value="res" />
+                <node concept="3uibUv" id="7Z_fDCwvD80" role="1tU5fm">
+                  <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+                </node>
+                <node concept="2YIFZM" id="7Z_fDCwvDt8" role="33vP2m">
+                  <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7Z_fDCwvozh" role="3cqZAp">
+              <node concept="3clFbS" id="7Z_fDCwvozi" role="3clFbx">
+                <node concept="3cpWs8" id="7Z_fDCwvElY" role="3cqZAp">
+                  <node concept="3cpWsn" id="7Z_fDCwvElZ" role="3cpWs9">
+                    <property role="TrG5h" value="map" />
+                    <node concept="3uibUv" id="7Z_fDCwvElW" role="1tU5fm">
+                      <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                    </node>
+                    <node concept="10QFUN" id="7Z_fDCwvEm0" role="33vP2m">
+                      <node concept="37vLTw" id="7Z_fDCwvEm1" role="10QFUP">
+                        <ref role="3cqZAo" node="7Z_fDCwvoyI" resolve="evaledContext" />
+                      </node>
+                      <node concept="3uibUv" id="7Z_fDCwvEm2" role="10QFUM">
+                        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Gpval" id="7Z_fDCwvEOG" role="3cqZAp">
+                  <node concept="2GrKxI" id="7Z_fDCwvEOI" role="2Gsz3X">
+                    <property role="TrG5h" value="v" />
+                  </node>
+                  <node concept="2OqwBi" id="7Z_fDCwvFbJ" role="2GsD0m">
+                    <node concept="37vLTw" id="7Z_fDCwvF3w" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Z_fDCwvElZ" resolve="map" />
+                    </node>
+                    <node concept="liA8E" id="7Z_fDCwvFhW" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Map.values():java.util.Collection" resolve="values" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="7Z_fDCwvEOM" role="2LFqv$">
+                    <node concept="3clFbF" id="7Z_fDCwvFBD" role="3cqZAp">
+                      <node concept="37vLTI" id="7Z_fDCwvG0Q" role="3clFbG">
+                        <node concept="2OqwBi" id="7Z_fDCwvGuE" role="37vLTx">
+                          <node concept="37vLTw" id="7Z_fDCwvG5o" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7Z_fDCwvD7Z" resolve="res" />
+                          </node>
+                          <node concept="liA8E" id="7Z_fDCwvGWG" role="2OqNvi">
+                            <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                            <node concept="2GrUjf" id="7Z_fDCwvH3g" role="37wK5m">
+                              <ref role="2Gs0qQ" node="7Z_fDCwvEOI" resolve="v" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="7Z_fDCwvFBC" role="37vLTJ">
+                          <ref role="3cqZAo" node="7Z_fDCwvD7Z" resolve="res" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="7Z_fDCwvo$I" role="3clFbw">
+                <node concept="3uibUv" id="7Z_fDCwvo$J" role="2ZW6by">
+                  <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                </node>
+                <node concept="37vLTw" id="7Z_fDCwvE9A" role="2ZW6bz">
+                  <ref role="3cqZAo" node="7Z_fDCwvoyI" resolve="evaledContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7Z_fDCwvo$L" role="3cqZAp">
+              <node concept="37vLTw" id="7Z_fDCwvI1r" role="3cqZAk">
+                <ref role="3cqZAo" node="7Z_fDCwvD7Z" resolve="res" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="lHU7p" id="7Z_fDCwvk0s" role="qq9xR" />
     <node concept="qq9P1" id="4ptnK4ip7_r" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="700h:4ptnK4ii9fS" resolve="StringJoinOp" />

@@ -757,8 +757,16 @@
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="3wXkdMVnGfA" role="37wK5m">
-                  <ref role="3cqZAo" node="4voDClGLNiX" resolve="votedAgainst" />
+                <node concept="2OqwBi" id="7Z_fDCwxMcK" role="37wK5m">
+                  <node concept="37vLTw" id="3wXkdMVnGfA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4voDClGLNiX" resolve="votedAgainst" />
+                  </node>
+                  <node concept="liA8E" id="7Z_fDCwxORz" role="2OqNvi">
+                    <ref role="37wK5l" to="j10v:~PSet.minus(java.lang.Object):org.pcollections.PSet" resolve="minus" />
+                    <node concept="37vLTw" id="7Z_fDCwxQks" role="37wK5m">
+                      <ref role="3cqZAo" node="Z4fkwzgrkW" resolve="party" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -782,8 +790,16 @@
             <node concept="2ShNRf" id="3wXkdMVk2gA" role="3cqZAk">
               <node concept="1pGfFk" id="3wXkdMVk2gB" role="2ShVmc">
                 <ref role="37wK5l" node="Z4fkwzgrkz" resolve="MultipartyBooleanDecisionValue.State" />
-                <node concept="37vLTw" id="3wXkdMVnDea" role="37wK5m">
-                  <ref role="3cqZAo" node="Z4fkwzgrkp" resolve="votedFor" />
+                <node concept="2OqwBi" id="mQGcCvr5f3" role="37wK5m">
+                  <node concept="37vLTw" id="7Z_fDCwxUNv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Z4fkwzgrkp" resolve="votedFor" />
+                  </node>
+                  <node concept="liA8E" id="mQGcCvr8ru" role="2OqNvi">
+                    <ref role="37wK5l" to="j10v:~PSet.minus(java.lang.Object):org.pcollections.PSet" resolve="minus" />
+                    <node concept="37vLTw" id="mQGcCvraap" role="37wK5m">
+                      <ref role="3cqZAo" node="3wXkdMVk2gH" resolve="party" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="3wXkdMVk2gC" role="37wK5m">
                   <node concept="37vLTw" id="3wXkdMVk9kg" role="2Oq$k0">
