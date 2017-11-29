@@ -633,9 +633,6 @@
     <node concept="3EZMnI" id="7$TgoCYhZdX" role="2wV5jI">
       <node concept="3F0ifn" id="7$TgoCYhZe4" role="3EZMnx">
         <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="YMJl2BOnVT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F1sOY" id="7$TgoCYhZea" role="3EZMnx">
         <ref role="1NtTu8" to="19m5:7$TgoCYhZdu" resolve="expr" />
@@ -956,6 +953,20 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Z_fDCwocyg">
+    <property role="3GE5qa" value="machine" />
+    <ref role="1XX52x" to="19m5:7Z_fDCwocxQ" resolve="TimeInStateExpr" />
+    <node concept="3F0ifn" id="7Z_fDCwocyi" role="2wV5jI">
+      <property role="3F0ifm" value="timeInState" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Z_fDCwqtFb">
+    <property role="3GE5qa" value="machine.trans.target" />
+    <ref role="1XX52x" to="19m5:7Z_fDCwqtEL" resolve="IgnoreTarget" />
+    <node concept="3F0ifn" id="7Z_fDCwqtFd" role="2wV5jI">
+      <property role="3F0ifm" value="ignore" />
     </node>
   </node>
 </model>

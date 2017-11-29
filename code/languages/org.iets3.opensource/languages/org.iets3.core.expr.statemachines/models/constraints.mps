@@ -544,5 +544,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7Z_fDCwoc_k">
+    <property role="3GE5qa" value="machine" />
+    <ref role="1M2myG" to="19m5:7Z_fDCwocxQ" resolve="TimeInStateExpr" />
+    <node concept="9S07l" id="7Z_fDCwoc_l" role="9Vyp8">
+      <node concept="3clFbS" id="7Z_fDCwoc_m" role="2VODD2">
+        <node concept="3clFbF" id="7Z_fDCwocGv" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z_fDCwodHy" role="3clFbG">
+            <node concept="2OqwBi" id="7Z_fDCwocVz" role="2Oq$k0">
+              <node concept="nLn13" id="7Z_fDCwocGu" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7Z_fDCwodck" role="2OqNvi">
+                <node concept="1xMEDy" id="7Z_fDCwodcm" role="1xVPHs">
+                  <node concept="chp4Y" id="7Z_fDCwodlm" role="ri$Ld">
+                    <ref role="cht4Q" to="19m5:7$TgoCYa5Nn" resolve="State" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7Z_fDCwoecj" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

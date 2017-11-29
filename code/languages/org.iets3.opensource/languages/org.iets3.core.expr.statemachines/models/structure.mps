@@ -502,5 +502,19 @@
       <ref role="20lvS9" node="7$TgoCYa5Nn" resolve="State" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7Z_fDCwocxQ">
+    <property role="EcuMT" value="9215841044172687478" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="TimeInStateExpr" />
+    <property role="34LRSv" value="timeInState" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7Z_fDCwqtEL">
+    <property role="EcuMT" value="9215841044173281969" />
+    <property role="3GE5qa" value="machine.trans.target" />
+    <property role="TrG5h" value="IgnoreTarget" />
+    <property role="34LRSv" value="ignore" />
+    <ref role="1TJDcQ" node="7Z_fDCwfvKw" resolve="AbstractTransTarget" />
+  </node>
 </model>
 

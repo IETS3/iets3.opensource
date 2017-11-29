@@ -825,5 +825,30 @@
       <ref role="1YaFvo" to="19m5:7Z_fDCw6V3H" resolve="AbstractTransition" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7Z_fDCwoepU">
+    <property role="TrG5h" value="typeof_TimeInStateExpr" />
+    <property role="3GE5qa" value="machine" />
+    <node concept="3clFbS" id="7Z_fDCwoepV" role="18ibNy">
+      <node concept="1Z5TYs" id="7Z_fDCwoeCN" role="3cqZAp">
+        <node concept="mw_s8" id="7Z_fDCwoeD4" role="1ZfhKB">
+          <node concept="2YIFZM" id="7Z_fDCwoeEB" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7Z_fDCwoeCQ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7Z_fDCwoeqa" role="mwGJk">
+            <node concept="1YBJjd" id="7Z_fDCwoerU" role="1Z2MuG">
+              <ref role="1YBMHb" node="7Z_fDCwoepX" resolve="tis" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7Z_fDCwoepX" role="1YuTPh">
+      <property role="TrG5h" value="tis" />
+      <ref role="1YaFvo" to="19m5:7Z_fDCwocxQ" resolve="TimeInStateExpr" />
+    </node>
+  </node>
 </model>
 
