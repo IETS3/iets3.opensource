@@ -121,6 +121,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -415,8 +418,34 @@
       <node concept="3Tm1VV" id="1Mp62pP0lOW" role="1B3o_S" />
       <node concept="3clFbS" id="1Mp62pP0lOX" role="3clF47">
         <node concept="3clFbF" id="1Mp62pP0lOY" role="3cqZAp">
-          <node concept="Xl_RD" id="1Mp62pP0lOZ" role="3clFbG">
-            <property role="Xl_RC" value="" />
+          <node concept="3cpWs3" id="3jfmzOjDJwL" role="3clFbG">
+            <node concept="Xl_RD" id="3jfmzOjDJwO" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
+            </node>
+            <node concept="3cpWs3" id="3jfmzOjDI3y" role="3uHU7B">
+              <node concept="3cpWs3" id="3jfmzOjDH42" role="3uHU7B">
+                <node concept="3cpWs3" id="3jfmzOjDFOp" role="3uHU7B">
+                  <node concept="Xl_RD" id="1Mp62pP0lOZ" role="3uHU7B">
+                    <property role="Xl_RC" value="month[" />
+                  </node>
+                  <node concept="2OqwBi" id="3jfmzOjDG5j" role="3uHU7w">
+                    <node concept="13iPFW" id="3jfmzOjDFOC" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3jfmzOjDGnm" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mi3w:1Mp62pP0lMR" resolve="year" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3jfmzOjDHc4" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3jfmzOjDIqE" role="3uHU7w">
+                <node concept="13iPFW" id="3jfmzOjDIbO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3jfmzOjDINE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mi3w:1Mp62pP0lMW" resolve="month" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
