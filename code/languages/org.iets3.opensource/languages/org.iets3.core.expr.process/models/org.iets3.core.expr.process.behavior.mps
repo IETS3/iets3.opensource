@@ -698,10 +698,8 @@
       <node concept="3clFbS" id="3wXkdMVmH6c" role="3clF47" />
       <node concept="37vLTG" id="3wXkdMVmH6d" role="3clF46">
         <property role="TrG5h" value="parties" />
-        <node concept="_YKpA" id="3wXkdMVmH6e" role="1tU5fm">
-          <node concept="3uibUv" id="3wXkdMVmH6f" role="_ZDj9">
-            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-          </node>
+        <node concept="3uibUv" id="VApoyDGlni" role="1tU5fm">
+          <ref role="3uigEE" to="j10v:~PSet" resolve="PSet" />
         </node>
       </node>
       <node concept="37vLTG" id="3wXkdMVmH6g" role="3clF46">
@@ -754,17 +752,17 @@
               <node concept="37vLTw" id="3wXkdMVmHca" role="2Oq$k0">
                 <ref role="3cqZAo" node="3wXkdMVmHaM" resolve="parties" />
               </node>
-              <node concept="34oBXx" id="3wXkdMVmIHa" role="2OqNvi" />
+              <node concept="liA8E" id="VApoyDGnhe" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3wXkdMVmHaM" role="3clF46">
         <property role="TrG5h" value="parties" />
-        <node concept="_YKpA" id="3wXkdMVmHaN" role="1tU5fm">
-          <node concept="3uibUv" id="3wXkdMVmHaO" role="_ZDj9">
-            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-          </node>
+        <node concept="3uibUv" id="VApoyDGlFa" role="1tU5fm">
+          <ref role="3uigEE" to="j10v:~PSet" resolve="PSet" />
         </node>
       </node>
       <node concept="37vLTG" id="3wXkdMVmHaP" role="3clF46">

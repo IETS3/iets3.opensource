@@ -77,6 +77,11 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7WFhXJlPaQG" resolve="AbstractDecision" />
+    <node concept="1TJgyi" id="VApoyDEJo7" role="1TKVEl">
+      <property role="IQ2nx" value="1073657198810953223" />
+      <property role="TrG5h" value="dynamicParties" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="Z4fkwzeLcO" role="1TKVEi">
       <property role="IQ2ns" value="1136100386042221364" />
       <property role="20lmBu" value="aggregation" />
