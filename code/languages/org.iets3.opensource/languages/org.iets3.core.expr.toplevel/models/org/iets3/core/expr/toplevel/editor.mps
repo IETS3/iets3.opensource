@@ -8,6 +8,8 @@
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="-1" />
+    <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,7 +25,6 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="19m5" ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)" />
     <import index="i6kd" ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -399,6 +400,14 @@
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
       <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
         <child id="1205770614681" name="actualArgument" index="2XxRq1" />
+      </concept>
+    </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="4682418030828844315" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineColorStyle" flags="lg" index="2T_bXS" />
+      <concept id="4682418030828844314" name="de.itemis.mps.editor.celllayout.structure.HorzontalLineWidthStyle" flags="lg" index="2T_bXT" />
+      <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
+      <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
+        <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -1225,35 +1234,25 @@
   </node>
   <node concept="24kQdi" id="6HHp2Wn7mD$">
     <ref role="1XX52x" to="yv47:6HHp2Wn7mD6" resolve="SectionMarker" />
-    <node concept="3EZMnI" id="6HHp2Wn7mDD" role="2wV5jI">
-      <node concept="3F0ifn" id="6HHp2Wn7mDK" role="3EZMnx">
-        <property role="3F0ifm" value="------" />
-        <node concept="VechU" id="6HHp2Wn7mFF" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-        <node concept="Vb9p2" id="6HHp2Wn7Yuw" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
-      </node>
+    <node concept="3EZMnI" id="4v5hZncP1Sb" role="2wV5jI">
+      <node concept="2iRkQZ" id="4v5hZncP1Sc" role="2iSdaV" />
       <node concept="3F0A7n" id="6HHp2Wn7EtU" role="3EZMnx">
         <ref role="1NtTu8" to="yv47:6HHp2Wn7EtK" resolve="label" />
         <node concept="Vb9p2" id="6HHp2Wn7Yur" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
         <node concept="VechU" id="6HHp2Wn7YuA" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="darkGray" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6HHp2Wn7mDY" role="3EZMnx">
-        <property role="3F0ifm" value="----------------------------------" />
-        <node concept="Vb9p2" id="6HHp2Wn7YuD" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+      <node concept="2T_mXK" id="4v5hZncP4KG" role="3EZMnx">
+        <node concept="2T_bXT" id="4v5hZncQiKO" role="3F10Kt">
+          <property role="1lJzqX" value="2" />
         </node>
-        <node concept="VechU" id="6HHp2Wn7YuE" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+        <node concept="2T_bXS" id="4v5hZncQiKZ" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
         </node>
       </node>
-      <node concept="2iRfu4" id="6HHp2Wn7mDG" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6HHp2WngtU5">
