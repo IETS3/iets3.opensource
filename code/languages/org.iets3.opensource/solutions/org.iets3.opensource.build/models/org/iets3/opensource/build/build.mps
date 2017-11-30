@@ -1059,6 +1059,12 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4v5hZncYFPw" role="3bR37C">
+          <node concept="3bR9La" id="4v5hZncYFPx" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:7vUP_qcXuSh" resolve="com.mbeddr.mpsutil.contextactions.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3ni3WidJ1j3" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1517,6 +1523,12 @@
         <node concept="1SiIV0" id="7bZFIilj3CE" role="3bR37C">
           <node concept="1Busua" id="7bZFIilj3CF" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4v5hZncYFR2" role="3bR37C">
+          <node concept="3bR9La" id="4v5hZncYFR3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:7vUP_qcXuSh" resolve="com.mbeddr.mpsutil.contextactions.runtime" />
           </node>
         </node>
       </node>
