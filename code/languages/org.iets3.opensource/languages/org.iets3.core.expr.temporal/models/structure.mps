@@ -136,8 +136,11 @@
       <property role="IQ2ns" value="5772589292324527862" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="time" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5kIYKlpm_op" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="3nGzaxUtzZN">
@@ -149,7 +152,7 @@
       <property role="IQ2ns" value="3885635233753440556" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fromTime" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="3nGzaxUBq4I" role="1TKVEi">
@@ -163,6 +166,9 @@
       <property role="IQ2nx" value="3885635233750859795" />
       <property role="TrG5h" value="unit" />
       <ref role="AX2Wp" node="3nGzaxUtzZS" resolve="TimeUnit" />
+    </node>
+    <node concept="PrWs8" id="5kIYKlpm_h5" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="AxPO7" id="3nGzaxUtzZS">
@@ -195,8 +201,11 @@
       <property role="IQ2ns" value="5772589292324527862" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="time" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5kIYKlpmfm6" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="3nGzaxUyXFe">
@@ -209,8 +218,11 @@
       <property role="IQ2ns" value="5772589292324527862" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="time" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5kIYKlpm$dk" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="3nGzaxUzMDV">
@@ -223,7 +235,7 @@
       <property role="IQ2ns" value="5772589292324527862" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="from" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="3nGzaxUzMDX" role="1TKVEi">
@@ -232,6 +244,9 @@
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5kIYKlpm_5J" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="4voqclTxdd4">
@@ -323,6 +338,10 @@
   <node concept="PlHQZ" id="2qmD4SWBg0S">
     <property role="EcuMT" value="2780590475879186488" />
     <property role="TrG5h" value="IProvideTemporalContext" />
+  </node>
+  <node concept="PlHQZ" id="5kIYKlplRcb">
+    <property role="EcuMT" value="6138119342544876299" />
+    <property role="TrG5h" value="IHaveOptionalPartsInTemporalContext" />
   </node>
 </model>
 
