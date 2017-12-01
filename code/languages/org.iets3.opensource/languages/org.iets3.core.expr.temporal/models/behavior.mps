@@ -306,6 +306,33 @@
     <node concept="13hLZK" id="1Mp62pP0Ga3" role="13h7CW">
       <node concept="3clFbS" id="1Mp62pP0Ga4" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="2Kjc3GZev3d" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getOptionalParts" />
+      <ref role="13i0hy" node="5kIYKlplRcn" resolve="getOptionalParts" />
+      <node concept="3Tm1VV" id="2Kjc3GZev3e" role="1B3o_S" />
+      <node concept="3clFbS" id="2Kjc3GZev3i" role="3clF47">
+        <node concept="3clFbF" id="2Kjc3GZev3E" role="3cqZAp">
+          <node concept="2ShNRf" id="2Kjc3GZev3C" role="3clFbG">
+            <node concept="Tc6Ow" id="2Kjc3GZevc0" role="2ShVmc">
+              <node concept="359W_D" id="2Kjc3GZevyS" role="HW$Y0">
+                <ref role="359W_E" to="l462:1Mp62pP0G8O" resolve="ReduceOp" />
+                <ref role="359W_F" to="l462:1Mp62pP0G9A" resolve="daterange" />
+              </node>
+              <node concept="3uibUv" id="2Kjc3GZew66" role="HW$YZ">
+                <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="2Kjc3GZev3j" role="3clF45">
+        <node concept="3uibUv" id="2Kjc3GZev3k" role="A3Ik2">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5kIYKlplr76">
     <ref role="13h7C2" to="l462:2qmD4SWBg0S" resolve="IProvideTemporalContext" />
