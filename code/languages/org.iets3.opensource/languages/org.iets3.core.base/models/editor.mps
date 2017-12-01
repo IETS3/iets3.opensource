@@ -315,6 +315,9 @@
       <node concept="VPxyj" id="5E2dhwjbsR1" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
+      <node concept="Vb9p2" id="1yFVafcO5Jt" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
       <node concept="1Ex9Rl" id="5E2dhwjbsH9" role="lGtFl">
         <property role="34HCRG" value="notEditableKeyword" />
         <property role="34GvKv" value="Reserved Words in IETS3 models" />
