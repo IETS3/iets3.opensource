@@ -92,6 +92,11 @@
       <property role="TrG5h" value="updateDownstream" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6LVVWmzDh7N" role="1TKVEl">
+      <property role="IQ2nx" value="7817105210364727795" />
+      <property role="TrG5h" value="showDiffs" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="14RJwd1g889">
     <property role="EcuMT" value="1240669143552786953" />
