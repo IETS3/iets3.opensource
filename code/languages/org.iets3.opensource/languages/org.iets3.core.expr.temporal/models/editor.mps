@@ -11,7 +11,8 @@
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" implicit="true" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -46,6 +47,9 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -309,7 +313,7 @@
                     <ref role="3Tt5mk" to="l462:50smQ1VexVQ" resolve="time" />
                   </node>
                 </node>
-                <node concept="3x8VRR" id="4t4tOuDdlXX" role="2OqNvi" />
+                <node concept="3w_OXm" id="2OjHwrkf4iY" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -725,6 +729,7 @@
     <property role="TrG5h" value="PresentContext" />
     <ref role="1XX52x" to="l462:5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     <node concept="1HlG4h" id="4t4tOuDd4ez" role="2wV5jI">
+      <ref role="1k5W1q" to="itrz:3R2njxnikay" resolve="iets3GreyText" />
       <node concept="1HfYo3" id="4t4tOuDd4e_" role="1HlULh">
         <node concept="3TQlhw" id="4t4tOuDd4eB" role="1Hhtcw">
           <node concept="3clFbS" id="4t4tOuDd4eD" role="2VODD2">
@@ -741,8 +746,8 @@
                     <node concept="1xIGOp" id="4t4tOuDd8Fd" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="4t4tOuDd5Yn" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                <node concept="2qgKlT" id="2OjHwrkfj_3" role="2OqNvi">
+                  <ref role="37wK5l" to="x8ug:4t4tOuDd1LC" resolve="getContextPresentation" />
                 </node>
               </node>
             </node>
