@@ -295,8 +295,11 @@
       <property role="IQ2ns" value="2060704857949651558" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="daterange" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2OjHwrkiIgx" role="PzmwI">
+      <ref role="PrY4T" node="5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Mp62pP0G8S">
