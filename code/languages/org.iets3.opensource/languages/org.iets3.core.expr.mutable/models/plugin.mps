@@ -905,6 +905,16 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="3H4W4dhvmow" role="3cqZAp">
+                  <node concept="2YIFZM" id="3H4W4dhvmox" role="3clFbG">
+                    <ref role="1Pybhc" node="7$TgoCY9O0d" resolve="TranactionContext" />
+                    <ref role="37wK5l" node="7$TgoCY9O9P" resolve="registerWithCurrentTx" />
+                    <node concept="TvHiN" id="3H4W4dhvmoy" role="37wK5m" />
+                    <node concept="37vLTw" id="3H4W4dhvn2S" role="37wK5m">
+                      <ref role="3cqZAo" node="Z4fkwz7bCl" resolve="iv" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="Z4fkwz7bCq" role="3cqZAp">
                   <node concept="3cpWsn" id="Z4fkwz7bCr" role="3cpWs9">
                     <property role="TrG5h" value="command" />

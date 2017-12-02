@@ -124,6 +124,7 @@
       </concept>
       <concept id="9163496876326301103" name="org.iets3.core.expr.process.structure.MultipartyAbstractDecision" flags="ng" index="2EZYDO">
         <property id="1073657198810953223" name="dynamicParties" index="2Bj9ef" />
+        <property id="4270802518573580536" name="sealable" index="1Eaf2V" />
         <child id="4052484148668973694" name="turnout" index="23rpay" />
         <child id="3519191162857033554" name="procedure" index="2A7Mb_" />
         <child id="5177070863644536032" name="timeLimit" index="FlwD_" />
@@ -8514,7 +8515,199 @@
       </node>
     </node>
     <node concept="_ixoA" id="VApoyDH42C" role="_iOnB" />
+    <node concept="_ixoA" id="3H4W4dhuvCc" role="_iOnB" />
+    <node concept="_ixoA" id="3H4W4dhuvK0" role="_iOnB" />
+    <node concept="2EZYDW" id="3H4W4dhu01Y" role="_iOnB">
+      <property role="TrG5h" value="SellWithDynamicGroupAndSeal" />
+      <property role="2Bj9ef" value="true" />
+      <property role="1Eaf2V" value="true" />
+      <node concept="1FHB2U" id="3H4W4dhu01Z" role="2A7Mb_" />
+      <node concept="_emDc" id="3H4W4dhu020" role="GZMTW">
+        <ref role="_emDf" node="VApoyDH40D" resolve="bernd" />
+      </node>
+      <node concept="_emDc" id="3H4W4dhu021" role="GZMTW">
+        <ref role="_emDf" node="VApoyDH40F" resolve="klaus" />
+      </node>
+      <node concept="23rp8s" id="3H4W4dhu022" role="23rpay" />
+    </node>
     <node concept="_ixoA" id="VApoyDIvOX" role="_iOnB" />
+    <node concept="2zPypq" id="3H4W4dhu8rJ" role="_iOnB">
+      <property role="TrG5h" value="sellOrNotWithSeal" />
+      <node concept="2EWGZN" id="3H4W4dhu8rK" role="2zPyp_">
+        <node concept="2EWGYO" id="3H4W4dhu8FU" role="1G1OS$">
+          <ref role="2EWGYF" node="3H4W4dhu01Y" resolve="SellWithDynamicGroupAndSeal" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="3H4W4dhu8rI" role="_iOnB" />
+    <node concept="_fkuM" id="3H4W4dhu8qy" role="_iOnB">
+      <property role="TrG5h" value="TestSellOrNotWithSeal" />
+      <node concept="_fkuZ" id="3H4W4dhuax6" role="_fkp5">
+        <node concept="_fku$" id="3H4W4dhuax7" role="_fkur" />
+        <node concept="1aduha" id="3H4W4dhuaxh" role="_fkuY">
+          <node concept="1QScDb" id="3H4W4dhuaxC" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhubcB" role="1QScD9">
+              <property role="2EMntL" value="addParty" />
+              <node concept="_emDc" id="3H4W4dhubSw" role="GVIfm">
+                <ref role="_emDf" node="VApoyDH40B" resolve="markus" />
+              </node>
+            </node>
+            <node concept="_emDc" id="3H4W4dhuaxu" role="30czhm">
+              <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhufaI" role="1aduh9">
+            <node concept="3iB8M5" id="3H4W4dhufPE" role="1QScD9" />
+            <node concept="1QScDb" id="3H4W4dhudca" role="30czhm">
+              <node concept="GRK4H" id="3H4W4dhuewG" role="1QScD9">
+                <property role="2EMntM" value="registeredParties" />
+              </node>
+              <node concept="_emDc" id="3H4W4dhucy_" role="30czhm">
+                <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="3H4W4dhugw6" role="_fkuS">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="mXNUv" id="3H4W4dhuttJ" role="_fkp5">
+        <node concept="1aduha" id="3H4W4dhukm_" role="mXJVd">
+          <node concept="1QScDb" id="3H4W4dhukmA" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhukmB" role="1QScD9">
+              <property role="2EMntL" value="addParty" />
+              <node concept="_emDc" id="3H4W4dhukmC" role="GVIfm">
+                <ref role="_emDf" node="VApoyDH40B" resolve="markus" />
+              </node>
+            </node>
+            <node concept="_emDc" id="3H4W4dhukmD" role="30czhm">
+              <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhulKf" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhumsk" role="1QScD9">
+              <property role="2EMntL" value="sealParties" />
+            </node>
+            <node concept="_emDc" id="3H4W4dhul4r" role="30czhm">
+              <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhuowe" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhupTQ" role="1QScD9">
+              <property role="2EMntL" value="addParty" />
+              <node concept="_emDc" id="3H4W4dhuq_U" role="GVIfm">
+                <ref role="_emDf" node="VApoyDMqPb" resolve="tamas" />
+              </node>
+            </node>
+            <node concept="_emDc" id="3H4W4dhunOb" role="30czhm">
+              <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhukmE" role="1aduh9">
+            <node concept="3iB8M5" id="3H4W4dhukmF" role="1QScD9" />
+            <node concept="1QScDb" id="3H4W4dhukmG" role="30czhm">
+              <node concept="GRK4H" id="3H4W4dhukmH" role="1QScD9">
+                <property role="2EMntM" value="registeredParties" />
+              </node>
+              <node concept="_emDc" id="3H4W4dhukmI" role="30czhm">
+                <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3H4W4dhuC3I" role="_fkp5">
+        <node concept="_fku$" id="3H4W4dhuC3J" role="_fkur" />
+        <node concept="1aduha" id="3H4W4dhuC3K" role="_fkuY">
+          <node concept="3hB25d" id="3H4W4dhuSQy" role="1aduh9">
+            <node concept="30cPrO" id="3H4W4dhuV5G" role="3hB253">
+              <node concept="30bXRB" id="3H4W4dhuVPj" role="30dEs_">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="1QScDb" id="3H4W4dhuT_c" role="30dEsF">
+                <node concept="3iB8M5" id="3H4W4dhuT_d" role="1QScD9" />
+                <node concept="1QScDb" id="3H4W4dhuT_e" role="30czhm">
+                  <node concept="GRK4H" id="3H4W4dhuT_f" role="1QScD9">
+                    <property role="2EMntM" value="registeredParties" />
+                  </node>
+                  <node concept="_emDc" id="3H4W4dhuT_g" role="30czhm">
+                    <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="3H4W4dhuEfP" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4dhuwH0" resolve="tryToAddParty" />
+            <node concept="_emDc" id="3H4W4dhuEXq" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhuLqN" role="1aduh9">
+            <node concept="3iB8M5" id="3H4W4dhuMT1" role="1QScD9" />
+            <node concept="1QScDb" id="3H4W4dhuHNM" role="30czhm">
+              <node concept="GRK4H" id="3H4W4dhuJgE" role="1QScD9">
+                <property role="2EMntM" value="registeredParties" />
+              </node>
+              <node concept="_emDc" id="3H4W4dhuH6e" role="30czhm">
+                <ref role="_emDf" node="3H4W4dhu8rJ" resolve="sellOrNotWithSeal" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="3H4W4dhuC3U" role="_fkuS">
+          <property role="30bXRw" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="3H4W4dhu5Ry" role="_iOnB" />
+    <node concept="1aga60" id="3H4W4dhuwH0" role="_iOnB">
+      <property role="TrG5h" value="tryToAddParty" />
+      <node concept="3jbV7z" id="3H4W4dhuxzL" role="1ahQXP">
+        <node concept="1aduha" id="3H4W4dhuxzw" role="3jbV7y">
+          <node concept="1QScDb" id="3H4W4dhux$0" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhux$1" role="1QScD9">
+              <property role="2EMntL" value="addParty" />
+              <node concept="_emDc" id="3H4W4dhux$2" role="GVIfm">
+                <ref role="_emDf" node="VApoyDH40B" resolve="markus" />
+              </node>
+            </node>
+            <node concept="1afdae" id="3H4W4dhuzK0" role="30czhm">
+              <ref role="1afue_" node="3H4W4dhuxz7" resolve="s" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhux$4" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhux$5" role="1QScD9">
+              <property role="2EMntL" value="sealParties" />
+            </node>
+            <node concept="1afdae" id="3H4W4dhu$tg" role="30czhm">
+              <ref role="1afue_" node="3H4W4dhuxz7" resolve="s" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="3H4W4dhux$7" role="1aduh9">
+            <node concept="2EMmAZ" id="3H4W4dhux$8" role="1QScD9">
+              <property role="2EMntL" value="addParty" />
+              <node concept="_emDc" id="3H4W4dhux$9" role="GVIfm">
+                <ref role="_emDf" node="VApoyDMqPb" resolve="tamas" />
+              </node>
+            </node>
+            <node concept="1afdae" id="3H4W4dhu_aw" role="30czhm">
+              <ref role="1afue_" node="3H4W4dhuxz7" resolve="s" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ahQXy" id="3H4W4dhuxz7" role="1ahQWs">
+        <property role="TrG5h" value="s" />
+        <node concept="2EWGYO" id="3H4W4dhuxzm" role="3ix9CU">
+          <ref role="2EWGYF" node="3H4W4dhu01Y" resolve="SellWithDynamicGroupAndSeal" />
+        </node>
+      </node>
+      <node concept="2lgajY" id="3H4W4dhuABY" role="28QfE6" />
+    </node>
+    <node concept="_ixoA" id="3H4W4dhu5YJ" role="_iOnB" />
+    <node concept="_ixoA" id="3H4W4dhu65X" role="_iOnB" />
     <node concept="_ixoA" id="4J6AqiIMHph" role="_iOnB" />
     <node concept="_ixoA" id="4J6AqiIMHvf" role="_iOnB" />
     <node concept="2EZYDW" id="4J6AqiIMTCY" role="_iOnB">
