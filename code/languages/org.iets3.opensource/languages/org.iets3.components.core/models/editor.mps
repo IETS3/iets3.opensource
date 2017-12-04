@@ -4573,9 +4573,24 @@
                           <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                         </node>
                         <node concept="3clFbS" id="6TRSMhPHlZf" role="3clF47">
-                          <node concept="3clFbF" id="6TRSMhPHlZg" role="3cqZAp">
-                            <node concept="Xl_RD" id="6TRSMhPHlZh" role="3clFbG">
-                              <property role="Xl_RC" value="New Subcomponent" />
+                          <node concept="3cpWs6" id="4gPMAe564Rr" role="3cqZAp">
+                            <node concept="2OqwBi" id="4gPMAe56gf1" role="3cqZAk">
+                              <node concept="2OqwBi" id="4gPMAe569gZ" role="2Oq$k0">
+                                <node concept="2OqwBi" id="4gPMAe566zS" role="2Oq$k0">
+                                  <node concept="2ZN8Hh" id="4gPMAe5666B" role="2Oq$k0" />
+                                  <node concept="2Xjw5R" id="4gPMAe567Uf" role="2OqNvi">
+                                    <node concept="1xMEDy" id="4gPMAe567Uh" role="1xVPHs">
+                                      <node concept="chp4Y" id="4gPMAe568qe" role="ri$Ld">
+                                        <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2yIwOk" id="4gPMAe56f2B" role="2OqNvi" />
+                              </node>
+                              <node concept="2qgKlT" id="4gPMAe56haZ" role="2OqNvi">
+                                <ref role="37wK5l" to="3eba:5kRSWVw_UfO" resolve="getPaletteEntryTitle_NewSubcomponent" />
+                              </node>
                             </node>
                           </node>
                         </node>
