@@ -914,5 +914,14 @@
       <ref role="1YaFvo" to="19m5:4J6AqiIUT_S" resolve="QueryTarget" />
     </node>
   </node>
+  <node concept="18kY7G" id="3H4W4diCmqy">
+    <property role="TrG5h" value="check_State" />
+    <property role="3GE5qa" value="machine" />
+    <node concept="3clFbS" id="3H4W4diCmqz" role="18ibNy" />
+    <node concept="1YaCAy" id="3H4W4diCmq_" role="1YuTPh">
+      <property role="TrG5h" value="state" />
+      <ref role="1YaFvo" to="19m5:7$TgoCYa5Nn" resolve="State" />
+    </node>
+  </node>
 </model>
 
