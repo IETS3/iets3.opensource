@@ -1963,6 +1963,32 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5kRSWVw_UfO" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getPaletteEntryTitle_NewSubcomponent" />
+      <node concept="3Tm1VV" id="5kRSWVw_UfP" role="1B3o_S" />
+      <node concept="17QB3L" id="5kRSWVw_YFm" role="3clF45" />
+      <node concept="3clFbS" id="5kRSWVw_UfR" role="3clF47">
+        <node concept="3cpWs6" id="5kRSWVw_YK7" role="3cqZAp">
+          <node concept="Xl_RD" id="2Dqu$yTjPXR" role="3cqZAk">
+            <property role="Xl_RC" value="New Subcomponent" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="5kRSWVwAjrp" role="lGtFl">
+        <node concept="TZ5HA" id="5kRSWVwAjrq" role="TZ5H$">
+          <node concept="1dT_AC" id="5kRSWVwAjrr" role="1dT_Ay">
+            <property role="1dT_AB" value="Needed to customize title of palette entry for in Security Analyst. It should be considered if creation of whole" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5kRSWVwAjsW" role="TZ5H$">
+          <node concept="1dT_AC" id="5kRSWVwAjsX" role="1dT_Ay">
+            <property role="1dT_AB" value="Palette (all entries, etc.) can be placed in behavior / other place that can be overriden." />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6LfBX8Yl7Hw">
     <property role="3GE5qa" value="components" />
