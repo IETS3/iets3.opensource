@@ -208,6 +208,9 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1223,58 +1226,17 @@
       <node concept="3clFbS" id="7NEp8pMMUwV" role="3clF47">
         <node concept="3clFbJ" id="7NEp8pM2$K4" role="3cqZAp">
           <node concept="3clFbS" id="7NEp8pM2$K6" role="3clFbx">
-            <node concept="3cpWs8" id="1$L2DnSzfzh" role="3cqZAp">
-              <node concept="3cpWsn" id="1$L2DnSzfzk" role="3cpWs9">
-                <property role="TrG5h" value="identifierName" />
-                <node concept="17QB3L" id="1$L2DnSzfzf" role="1tU5fm" />
-                <node concept="2OqwBi" id="1$L2DnSzfOQ" role="33vP2m">
-                  <node concept="2OqwBi" id="1$L2DnSzfOR" role="2Oq$k0">
-                    <node concept="13iPFW" id="1$L2DnSzfOS" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="1$L2DnSzfOT" role="2OqNvi">
+            <node concept="3cpWs6" id="K0qt25a1It" role="3cqZAp">
+              <node concept="2OqwBi" id="K0qt25a2rv" role="3cqZAk">
+                <node concept="35c_gC" id="K0qt25a1Sf" role="2Oq$k0">
+                  <ref role="35c_gD" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+                </node>
+                <node concept="2qgKlT" id="K0qt25a2L$" role="2OqNvi">
+                  <ref role="37wK5l" node="K0qt25a0RI" resolve="makeNameValid" />
+                  <node concept="2OqwBi" id="K0qt25a3gf" role="37wK5m">
+                    <node concept="13iPFW" id="K0qt25a2Zo" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="K0qt25a3vD" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1$L2DnSzfOU" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="1$L2DnSzfOV" role="37wK5m">
-                      <property role="Xl_RC" value="[^a-zA-Z0-9$[_]]" />
-                    </node>
-                    <node concept="Xl_RD" id="1$L2DnSzfOW" role="37wK5m">
-                      <property role="Xl_RC" value="_" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="1$L2DnSzgm$" role="3cqZAp">
-              <node concept="3clFbS" id="1$L2DnSzgmA" role="3clFbx">
-                <node concept="3cpWs6" id="1$L2DnSzo6H" role="3cqZAp">
-                  <node concept="3cpWs3" id="1$L2DnSzpGZ" role="3cqZAk">
-                    <node concept="37vLTw" id="1$L2DnSzpSM" role="3uHU7w">
-                      <ref role="3cqZAo" node="1$L2DnSzfzk" resolve="identifierName" />
-                    </node>
-                    <node concept="Xl_RD" id="1$L2DnSzodH" role="3uHU7B">
-                      <property role="Xl_RC" value="_" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1$L2DnSzmd8" role="3clFbw">
-                <node concept="37vLTw" id="1$L2DnSzlps" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1$L2DnSzfzk" resolve="identifierName" />
-                </node>
-                <node concept="liA8E" id="1$L2DnSzmIV" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
-                  <node concept="Xl_RD" id="1$L2DnSzmZw" role="37wK5m">
-                    <property role="Xl_RC" value="^[0-9].*" />
-                  </node>
-                </node>
-              </node>
-              <node concept="9aQIb" id="1$L2DnSzr6e" role="9aQIa">
-                <node concept="3clFbS" id="1$L2DnSzr6f" role="9aQI4">
-                  <node concept="3cpWs6" id="1$L2DnSzrga" role="3cqZAp">
-                    <node concept="37vLTw" id="1$L2DnSzrj_" role="3cqZAk">
-                      <ref role="3cqZAo" node="1$L2DnSzfzk" resolve="identifierName" />
                     </node>
                   </node>
                 </node>
@@ -1302,6 +1264,74 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="K0qt25a0RI" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="makeNameValid" />
+      <node concept="3Tm1VV" id="K0qt25a0RJ" role="1B3o_S" />
+      <node concept="17QB3L" id="K0qt25a135" role="3clF45" />
+      <node concept="3clFbS" id="K0qt25a0RL" role="3clF47">
+        <node concept="3cpWs8" id="K0qt25a14s" role="3cqZAp">
+          <node concept="3cpWsn" id="K0qt25a14t" role="3cpWs9">
+            <property role="TrG5h" value="identifierName" />
+            <node concept="17QB3L" id="K0qt25a14u" role="1tU5fm" />
+            <node concept="2OqwBi" id="K0qt25a14v" role="33vP2m">
+              <node concept="37vLTw" id="K0qt25a1oj" role="2Oq$k0">
+                <ref role="3cqZAo" node="K0qt25a13U" resolve="name" />
+              </node>
+              <node concept="liA8E" id="K0qt25a14z" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="K0qt25a14$" role="37wK5m">
+                  <property role="Xl_RC" value="[^a-zA-Z0-9$[_]]" />
+                </node>
+                <node concept="Xl_RD" id="K0qt25a14_" role="37wK5m">
+                  <property role="Xl_RC" value="_" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="K0qt25a14A" role="3cqZAp">
+          <node concept="3clFbS" id="K0qt25a14B" role="3clFbx">
+            <node concept="3cpWs6" id="K0qt25a14C" role="3cqZAp">
+              <node concept="3cpWs3" id="K0qt25a14D" role="3cqZAk">
+                <node concept="37vLTw" id="K0qt25a14E" role="3uHU7w">
+                  <ref role="3cqZAo" node="K0qt25a14t" resolve="identifierName" />
+                </node>
+                <node concept="Xl_RD" id="K0qt25a14F" role="3uHU7B">
+                  <property role="Xl_RC" value="_" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="K0qt25a14G" role="3clFbw">
+            <node concept="37vLTw" id="K0qt25a14H" role="2Oq$k0">
+              <ref role="3cqZAo" node="K0qt25a14t" resolve="identifierName" />
+            </node>
+            <node concept="liA8E" id="K0qt25a14I" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+              <node concept="Xl_RD" id="K0qt25a14J" role="37wK5m">
+                <property role="Xl_RC" value="^[0-9].*" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="K0qt25a14K" role="9aQIa">
+            <node concept="3clFbS" id="K0qt25a14L" role="9aQI4">
+              <node concept="3cpWs6" id="K0qt25a14M" role="3cqZAp">
+                <node concept="37vLTw" id="K0qt25a14N" role="3cqZAk">
+                  <ref role="3cqZAo" node="K0qt25a14t" resolve="identifierName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="K0qt25a13U" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="K0qt25a13T" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
