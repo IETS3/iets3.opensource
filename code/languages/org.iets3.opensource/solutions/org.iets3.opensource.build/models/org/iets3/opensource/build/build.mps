@@ -1804,6 +1804,18 @@
             <ref role="1Busuk" node="3ni3WidJ1j3" resolve="org.iets3.core.expr.mutable" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3H4W4diXebp" role="3bR37C">
+          <node concept="3bR9La" id="3H4W4diXebq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3H4W4diXebr" role="3bR37C">
+          <node concept="3bR9La" id="3H4W4diXebs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3FexrMiSOe$" role="2G$12L">
         <property role="BnDLt" value="true" />
