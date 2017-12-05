@@ -2106,5 +2106,56 @@
       <node concept="3clFbS" id="3H4W4dizcie" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="5kGo$yL1arR">
+    <property role="3GE5qa" value="machine.trigger" />
+    <ref role="13h7C2" to="19m5:33mFrumFlOo" resolve="AbstractTrigger" />
+    <node concept="13i0hz" id="5kGo$yL1as2" role="13h7CS">
+      <property role="TrG5h" value="arguments" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="5kGo$yL1as3" role="1B3o_S" />
+      <node concept="A3Dl8" id="5kGo$yL1ask" role="3clF45">
+        <node concept="3Tqbb2" id="5kGo$yL1asz" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5kGo$yL1as5" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="5kGo$yL1arS" role="13h7CW">
+      <node concept="3clFbS" id="5kGo$yL1arT" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5kGo$yL1auv">
+    <property role="3GE5qa" value="machine.trigger" />
+    <ref role="13h7C2" to="19m5:33mFrumFlOv" resolve="EventTrigger" />
+    <node concept="13hLZK" id="5kGo$yL1auw" role="13h7CW">
+      <node concept="3clFbS" id="5kGo$yL1aux" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5kGo$yL1auE" role="13h7CS">
+      <property role="TrG5h" value="arguments" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5kGo$yL1as2" resolve="arguments" />
+      <node concept="3Tm1VV" id="5kGo$yL1auF" role="1B3o_S" />
+      <node concept="3clFbS" id="5kGo$yL1auJ" role="3clF47">
+        <node concept="3clFbF" id="5kGo$yL1av1" role="3cqZAp">
+          <node concept="2OqwBi" id="5kGo$yL1bau" role="3clFbG">
+            <node concept="2OqwBi" id="5kGo$yL1aCs" role="2Oq$k0">
+              <node concept="13iPFW" id="5kGo$yL1av0" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5kGo$yL1aNK" role="2OqNvi">
+                <ref role="3Tt5mk" to="19m5:33mFrumFlOH" resolve="event" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="5kGo$yL1bun" role="2OqNvi">
+              <ref role="3TtcxE" to="19m5:aPhVmWQWVF" resolve="args" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5kGo$yL1auK" role="3clF45">
+        <node concept="3Tqbb2" id="5kGo$yL1auL" role="A3Ik2" />
+      </node>
+    </node>
+  </node>
 </model>
 
