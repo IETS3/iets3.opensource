@@ -145,6 +145,7 @@
       <concept id="2156530943179783736" name="org.iets3.core.expr.collections.structure.OneArgListModifier" flags="ng" index="2iGZtf">
         <child id="2156530943179783738" name="arg" index="2iGZtd" />
       </concept>
+      <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ListWithAllOp" flags="ng" index="2oUEFG" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
@@ -9736,6 +9737,14 @@
           <node concept="1vQcaV" id="3H4W4diAzh5" role="1vQNHF">
             <ref role="1vQcaS" node="3H4W4diAzgu" resolve="standby" />
           </node>
+          <node concept="17riQX" id="k9boAtSKuc" role="17vUwr">
+            <node concept="1af_rf" id="k9boAtSKup" role="17vFbk">
+              <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
+              <node concept="30bdrP" id="k9boAtSKu$" role="1afhQ5">
+                <property role="30bdrQ" value="off-&gt;standby" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="17rOLi" id="3H4W4diB04d" role="17rfIJ">
           <node concept="1af_rf" id="3H4W4diB04e" role="17vFbk">
@@ -9767,7 +9776,7 @@
             <node concept="1af_rf" id="3H4W4diB2_p" role="17vFbk">
               <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
               <node concept="30bdrP" id="3H4W4diB2_$" role="1afhQ5">
-                <property role="30bdrQ" value="standby-&gt;off" />
+                <property role="30bdrQ" value="standby-&gt;on" />
               </node>
             </node>
           </node>
@@ -9823,17 +9832,17 @@
             <node concept="1af_rf" id="3H4W4diB3Kd" role="17vFbk">
               <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
               <node concept="30bdrP" id="3H4W4diB3Ko" role="1afhQ5">
-                <property role="30bdrQ" value="on-&gt;off" />
+                <property role="30bdrQ" value="on-&gt;standby" />
               </node>
             </node>
           </node>
         </node>
         <node concept="174hPt" id="3H4W4diAzgE" role="17rfIJ">
           <property role="TrG5h" value="stopped" />
-          <node concept="17rOLi" id="3H4W4diD64P" role="17rfIJ">
-            <node concept="1af_rf" id="3H4W4diD64Q" role="17vFbk">
+          <node concept="17rfIF" id="k9boAuesjX" role="17rfIJ">
+            <node concept="1af_rf" id="k9boAuesjY" role="17vFbk">
               <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
-              <node concept="30bdrP" id="3H4W4diD64R" role="1afhQ5">
+              <node concept="30bdrP" id="k9boAuesjZ" role="1afhQ5">
                 <property role="30bdrQ" value="entry:stopped" />
               </node>
             </node>
@@ -9849,7 +9858,7 @@
               <node concept="1af_rf" id="3H4W4diAP14" role="17vFbk">
                 <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
                 <node concept="30bdrP" id="3H4W4diAP15" role="1afhQ5">
-                  <property role="30bdrQ" value="play-&gt;playing" />
+                  <property role="30bdrQ" value="stopped-&gt;playing" />
                 </node>
               </node>
             </node>
@@ -9865,7 +9874,7 @@
         </node>
         <node concept="174hPt" id="3H4W4diAzh9" role="17rfIJ">
           <property role="TrG5h" value="playing" />
-          <node concept="17rOLi" id="3H4W4diD7rr" role="17rfIJ">
+          <node concept="17rfIF" id="k9boAuhrl1" role="17rfIJ">
             <node concept="1af_rf" id="3H4W4diD7rs" role="17vFbk">
               <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
               <node concept="30bdrP" id="3H4W4diD7rt" role="1afhQ5">
@@ -9877,14 +9886,14 @@
             <node concept="2AuZ2C" id="3H4W4diAzim" role="2AuZ2o">
               <ref role="2AuZ2q" node="3H4W4diAzhX" resolve="stop" />
             </node>
-            <node concept="1vQcaV" id="3H4W4diAzk$" role="1vQNHF">
-              <ref role="1vQcaS" node="3H4W4diAzgu" resolve="standby" />
+            <node concept="1vQcaV" id="k9boAuhxDI" role="1vQNHF">
+              <ref role="1vQcaS" node="3H4W4diAzgE" resolve="stopped" />
             </node>
             <node concept="17riQX" id="3H4W4diAOqi" role="17vUwr">
               <node concept="1af_rf" id="3H4W4diAOqv" role="17vFbk">
                 <ref role="1afhQb" node="3H4W4diH$FT" resolve="addAction" />
                 <node concept="30bdrP" id="3H4W4diAOqE" role="1afhQ5">
-                  <property role="30bdrQ" value="stop-&gt;standby" />
+                  <property role="30bdrQ" value="playing-&gt;stopped" />
                 </node>
               </node>
             </node>
@@ -9928,6 +9937,104 @@
     <node concept="_ixoA" id="3H4W4diB5cE" role="_iOnB" />
     <node concept="_ixoA" id="3H4W4diEOIt" role="_iOnB" />
     <node concept="_ixoA" id="3H4W4diEOLW" role="_iOnB" />
+    <node concept="2zPypq" id="k9boAtSPUS" role="_iOnB">
+      <property role="TrG5h" value="intoStandyby" />
+      <node concept="3iBYfx" id="k9boAtSPUN" role="2zPyp_">
+        <node concept="30bdrP" id="k9boAtSPUO" role="3iBYfI">
+          <property role="30bdrQ" value="entry:off" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSPUP" role="3iBYfI">
+          <property role="30bdrQ" value="exit:off" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSPUQ" role="3iBYfI">
+          <property role="30bdrQ" value="off-&gt;standby" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSPUR" role="3iBYfI">
+          <property role="30bdrQ" value="entry:standby" />
+        </node>
+      </node>
+      <node concept="3iBYCm" id="k9boAtVG3Q" role="2zM23F">
+        <node concept="30bdrU" id="k9boAtVHu_" role="3iBWmK" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="k9boAtSQeF" role="_iOnB">
+      <property role="TrG5h" value="standbyToOn" />
+      <node concept="3iBYfx" id="k9boAtSQeG" role="2zPyp_">
+        <node concept="30bdrP" id="k9boAtSQeH" role="3iBYfI">
+          <property role="30bdrQ" value="exit:standby" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSQYX" role="3iBYfI">
+          <property role="30bdrQ" value="standby-&gt;on" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSQeI" role="3iBYfI">
+          <property role="30bdrQ" value="entry:on" />
+        </node>
+        <node concept="30bdrP" id="k9boAtSQeJ" role="3iBYfI">
+          <property role="30bdrQ" value="entry:stopped" />
+        </node>
+      </node>
+      <node concept="3iBYCm" id="k9boAtVGU0" role="2zM23F">
+        <node concept="30bdrU" id="k9boAtVHcj" role="3iBWmK" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="k9boAuhpGL" role="_iOnB">
+      <property role="TrG5h" value="stoppedToPlaying" />
+      <node concept="3iBYfx" id="k9boAuhpGM" role="2zPyp_">
+        <node concept="30bdrP" id="k9boAuhpGN" role="3iBYfI">
+          <property role="30bdrQ" value="exit:stopped" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhpGO" role="3iBYfI">
+          <property role="30bdrQ" value="stopped-&gt;playing" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhpGP" role="3iBYfI">
+          <property role="30bdrQ" value="entry:playing" />
+        </node>
+      </node>
+      <node concept="3iBYCm" id="k9boAuhpGR" role="2zM23F">
+        <node concept="30bdrU" id="k9boAuhpGS" role="3iBWmK" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="k9boAuhyOw" role="_iOnB">
+      <property role="TrG5h" value="playingToStopped" />
+      <node concept="3iBYfx" id="k9boAuhyOx" role="2zPyp_">
+        <node concept="30bdrP" id="k9boAuhyOy" role="3iBYfI">
+          <property role="30bdrQ" value="exit:playing" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhyOz" role="3iBYfI">
+          <property role="30bdrQ" value="playing-&gt;stopped" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhyO$" role="3iBYfI">
+          <property role="30bdrQ" value="entry:stopped" />
+        </node>
+      </node>
+      <node concept="3iBYCm" id="k9boAuhyO_" role="2zM23F">
+        <node concept="30bdrU" id="k9boAuhyOA" role="3iBWmK" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="k9boAuhB2x" role="_iOnB">
+      <property role="TrG5h" value="playingToStandby" />
+      <node concept="3iBYfx" id="k9boAuhB2y" role="2zPyp_">
+        <node concept="30bdrP" id="k9boAuhB2z" role="3iBYfI">
+          <property role="30bdrQ" value="exit:playing" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhB2$" role="3iBYfI">
+          <property role="30bdrQ" value="exit:on-1" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhBjs" role="3iBYfI">
+          <property role="30bdrQ" value="exit:on-2" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhB2_" role="3iBYfI">
+          <property role="30bdrQ" value="on-&gt;standby" />
+        </node>
+        <node concept="30bdrP" id="k9boAuhBsJ" role="3iBYfI">
+          <property role="30bdrQ" value="entry:standby" />
+        </node>
+      </node>
+      <node concept="3iBYCm" id="k9boAuhB2A" role="2zM23F">
+        <node concept="30bdrU" id="k9boAuhB2B" role="3iBWmK" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="k9boAtSPUT" role="_iOnB" />
     <node concept="_fkuM" id="3H4W4diENAk" role="_iOnB">
       <property role="TrG5h" value="TestPlayer2" />
       <node concept="_fkuZ" id="3H4W4diCmgf" role="_fkp5">
@@ -9955,59 +10062,369 @@
               <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
             </node>
           </node>
-          <node concept="1af_rf" id="3H4W4diI7jp" role="1aduh9">
+          <node concept="1af_rf" id="k9boAtSACN" role="1aduh9">
             <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
-            <node concept="_emDc" id="3H4W4diI7jq" role="1afhQ5">
+            <node concept="_emDc" id="k9boAtSD4o" role="1afhQ5">
               <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
             </node>
-            <node concept="3iBYfx" id="3H4W4diI7jr" role="1afhQ5">
-              <node concept="30bdrP" id="3H4W4diI7js" role="3iBYfI">
+            <node concept="3iBYfx" id="k9boAtSAQv" role="1afhQ5">
+              <node concept="30bdrP" id="k9boAtSB40" role="3iBYfI">
                 <property role="30bdrQ" value="entry:off" />
               </node>
-            </node>
-          </node>
-          <node concept="1QScDb" id="3H4W4diJZyJ" role="1aduh9">
-            <node concept="2ZHvmq" id="3H4W4diK0bF" role="1QScD9">
-              <ref role="2ZHvm4" node="3H4W4diHv7H" resolve="tracker" />
-            </node>
-            <node concept="_emDc" id="3H4W4diJZfk" role="30czhm">
-              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
             </node>
           </node>
         </node>
         <node concept="2vmpnb" id="3H4W4diI7jt" role="_fkuS" />
       </node>
-      <node concept="_fkuZ" id="3H4W4diCyPw" role="_fkp5">
-        <node concept="_fku$" id="3H4W4diCyPx" role="_fkur" />
-        <node concept="1aduha" id="3H4W4diCyPy" role="_fkuY">
-          <node concept="3hB25d" id="3H4W4diEr4d" role="1aduh9">
-            <node concept="1QScDb" id="3H4W4diEk1G" role="3hB253">
-              <node concept="2AijNT" id="3H4W4diEkoC" role="1QScD9">
-                <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+      <node concept="_fkuZ" id="k9boAtSDSd" role="_fkp5">
+        <node concept="_fku$" id="k9boAtSDSe" role="_fkur" />
+        <node concept="1aduha" id="k9boAtSDSf" role="_fkuY">
+          <node concept="1QScDb" id="k9boAtSDSg" role="1aduh9">
+            <node concept="2AijNT" id="k9boAtSDSh" role="1QScD9">
+              <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+            </node>
+            <node concept="_emDc" id="k9boAtSDSi" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAtSE_o" role="1aduh9">
+            <node concept="174ZEm" id="k9boAtSF4d" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAtSEn4" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1af_rf" id="k9boAtSDSj" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
+            <node concept="_emDc" id="k9boAtSDSk" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+            <node concept="_emDc" id="k9boAtSPUU" role="1afhQ5">
+              <ref role="_emDf" node="k9boAtSPUS" resolve="intoStandyby" />
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="k9boAtSDSn" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="k9boAtSPm8" role="_fkp5">
+        <node concept="_fku$" id="k9boAtSPm9" role="_fkur" />
+        <node concept="1aduha" id="k9boAtSPma" role="_fkuY">
+          <node concept="1QScDb" id="k9boAtSPmb" role="1aduh9">
+            <node concept="2AijNT" id="k9boAtSPmc" role="1QScD9">
+              <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+            </node>
+            <node concept="_emDc" id="k9boAtSPmd" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAtSPme" role="1aduh9">
+            <node concept="174ZEm" id="k9boAtSPmf" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAtSPmg" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAub7Gu" role="1aduh9">
+            <node concept="1QScDb" id="k9boAub8i6" role="3hB253">
+              <node concept="2AijNT" id="k9boAub8_f" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzgu" resolve="standby" />
               </node>
-              <node concept="_emDc" id="3H4W4diI3tm" role="30czhm">
+              <node concept="_emDc" id="k9boAub7Zu" role="30czhm">
                 <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
               </node>
             </node>
           </node>
-          <node concept="1QScDb" id="3H4W4diEnCI" role="1aduh9">
-            <node concept="3iB8M5" id="3H4W4diEoq6" role="1QScD9" />
-            <node concept="1QScDb" id="3H4W4diEmUO" role="30czhm">
-              <node concept="3sQ2Ir" id="3H4W4diEnhz" role="1QScD9" />
-              <node concept="1QScDb" id="3H4W4diHIMA" role="30czhm">
-                <node concept="GRK4H" id="3H4W4diHJxA" role="1QScD9">
-                  <property role="2EMntM" value="tracker" />
-                </node>
-                <node concept="_emDc" id="3H4W4diI3Ih" role="30czhm">
-                  <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+          <node concept="1QScDb" id="k9boAtSPoy" role="1aduh9">
+            <node concept="174ZEm" id="k9boAtSPoz" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAtSPo$" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAubBdq" role="1aduh9">
+            <node concept="1QScDb" id="k9boAubBdr" role="3hB253">
+              <node concept="2AijNT" id="k9boAubBds" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzgE" resolve="stopped" />
+              </node>
+              <node concept="_emDc" id="k9boAubBdt" role="30czhm">
+                <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="k9boAtSPmh" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
+            <node concept="_emDc" id="k9boAtSPmi" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+            <node concept="1QScDb" id="k9boAtSRB3" role="1afhQ5">
+              <node concept="_emDc" id="k9boAtSRmQ" role="30czhm">
+                <ref role="_emDf" node="k9boAtSPUS" resolve="intoStandyby" />
+              </node>
+              <node concept="2oUEFG" id="k9boAtVEQK" role="1QScD9">
+                <node concept="_emDc" id="k9boAtVF8u" role="2iGZtd">
+                  <ref role="_emDf" node="k9boAtSQeF" resolve="standbyToOn" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="30bXRB" id="3H4W4diE$hq" role="_fkuS">
-          <property role="30bXRw" value="1" />
+        <node concept="2vmpnb" id="k9boAtSPmo" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="k9boAuhlIt" role="_fkp5">
+        <node concept="_fku$" id="k9boAuhlIu" role="_fkur" />
+        <node concept="1aduha" id="k9boAuhlIv" role="_fkuY">
+          <node concept="1QScDb" id="k9boAuhlIw" role="1aduh9">
+            <node concept="2AijNT" id="k9boAuhlIx" role="1QScD9">
+              <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+            </node>
+            <node concept="_emDc" id="k9boAuhlIy" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhlIz" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhlI$" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuhlI_" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhlIE" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhlIF" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuhlIG" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhomj" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhp25" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzhu" resolve="play" />
+            </node>
+            <node concept="_emDc" id="k9boAuho1G" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAuhlIH" role="1aduh9">
+            <node concept="1QScDb" id="k9boAuhlII" role="3hB253">
+              <node concept="2AijNT" id="k9boAuhlIJ" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzh9" resolve="playing" />
+              </node>
+              <node concept="_emDc" id="k9boAuhlIK" role="30czhm">
+                <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="k9boAuhlIL" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
+            <node concept="_emDc" id="k9boAuhlIM" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+            <node concept="1QScDb" id="k9boAuhs5L" role="1afhQ5">
+              <node concept="2oUEFG" id="k9boAuhsNO" role="1QScD9">
+                <node concept="_emDc" id="k9boAuht9W" role="2iGZtd">
+                  <ref role="_emDf" node="k9boAuhpGL" resolve="stoppedToPlaying" />
+                </node>
+              </node>
+              <node concept="1QScDb" id="k9boAuhlIN" role="30czhm">
+                <node concept="_emDc" id="k9boAuhlIO" role="30czhm">
+                  <ref role="_emDf" node="k9boAtSPUS" resolve="intoStandyby" />
+                </node>
+                <node concept="2oUEFG" id="k9boAuhlIP" role="1QScD9">
+                  <node concept="_emDc" id="k9boAuhlIQ" role="2iGZtd">
+                    <ref role="_emDf" node="k9boAtSQeF" resolve="standbyToOn" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
+        <node concept="2vmpnb" id="k9boAuhlIR" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="k9boAuhv$7" role="_fkp5">
+        <node concept="_fku$" id="k9boAuhv$8" role="_fkur" />
+        <node concept="1aduha" id="k9boAuhv$9" role="_fkuY">
+          <node concept="1QScDb" id="k9boAuhv$a" role="1aduh9">
+            <node concept="2AijNT" id="k9boAuhv$b" role="1QScD9">
+              <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+            </node>
+            <node concept="_emDc" id="k9boAuhv$c" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhv$d" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhv$e" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuhv$f" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhv$g" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhv$h" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuhv$i" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhv$j" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhv$k" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzhu" resolve="play" />
+            </node>
+            <node concept="_emDc" id="k9boAuhv$l" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuhwrE" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhxgK" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzhX" resolve="stop" />
+            </node>
+            <node concept="_emDc" id="k9boAuhw2n" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAuhv$m" role="1aduh9">
+            <node concept="1QScDb" id="k9boAuhv$n" role="3hB253">
+              <node concept="2AijNT" id="k9boAuhv$o" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzgE" resolve="stopped" />
+              </node>
+              <node concept="_emDc" id="k9boAuhv$p" role="30czhm">
+                <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="k9boAuhv$q" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
+            <node concept="_emDc" id="k9boAuhv$r" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+            <node concept="1QScDb" id="k9boAuhztF" role="1afhQ5">
+              <node concept="2oUEFG" id="k9boAuh$jN" role="1QScD9">
+                <node concept="_emDc" id="k9boAuh$HG" role="2iGZtd">
+                  <ref role="_emDf" node="k9boAuhyOw" resolve="playingToStopped" />
+                </node>
+              </node>
+              <node concept="1QScDb" id="k9boAuhv$s" role="30czhm">
+                <node concept="2oUEFG" id="k9boAuhv$t" role="1QScD9">
+                  <node concept="_emDc" id="k9boAuhv$u" role="2iGZtd">
+                    <ref role="_emDf" node="k9boAuhpGL" resolve="stoppedToPlaying" />
+                  </node>
+                </node>
+                <node concept="1QScDb" id="k9boAuhv$v" role="30czhm">
+                  <node concept="_emDc" id="k9boAuhv$w" role="30czhm">
+                    <ref role="_emDf" node="k9boAtSPUS" resolve="intoStandyby" />
+                  </node>
+                  <node concept="2oUEFG" id="k9boAuhv$x" role="1QScD9">
+                    <node concept="_emDc" id="k9boAuhv$y" role="2iGZtd">
+                      <ref role="_emDf" node="k9boAtSQeF" resolve="standbyToOn" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="k9boAuhv$z" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="k9boAuh_Z0" role="_fkp5">
+        <node concept="_fku$" id="k9boAuh_Z1" role="_fkur" />
+        <node concept="1aduha" id="k9boAuh_Z2" role="_fkuY">
+          <node concept="1QScDb" id="k9boAuh_Z3" role="1aduh9">
+            <node concept="2AijNT" id="k9boAuh_Z4" role="1QScD9">
+              <ref role="2AijNy" node="3H4W4diAxXs" resolve="off" />
+            </node>
+            <node concept="_emDc" id="k9boAuh_Z5" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuh_Z6" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuh_Z7" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuh_Z8" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuh_Z9" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuh_Za" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzgg" resolve="turnOn" />
+            </node>
+            <node concept="_emDc" id="k9boAuh_Zb" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuh_Zc" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuh_Zd" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzhu" resolve="play" />
+            </node>
+            <node concept="_emDc" id="k9boAuh_Ze" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAuhJSf" role="1aduh9">
+            <node concept="1QScDb" id="k9boAuhJSg" role="3hB253">
+              <node concept="2AijNT" id="k9boAuhJSh" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzh9" resolve="playing" />
+              </node>
+              <node concept="_emDc" id="k9boAuhJSi" role="30czhm">
+                <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="k9boAuh_Zf" role="1aduh9">
+            <node concept="174ZEm" id="k9boAuhA5Y" role="1QScD9">
+              <ref role="174ZEE" node="3H4W4diAzmr" resolve="turnOff" />
+            </node>
+            <node concept="_emDc" id="k9boAuh_Zh" role="30czhm">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+          </node>
+          <node concept="3hB25d" id="k9boAuh_Zi" role="1aduh9">
+            <node concept="1QScDb" id="k9boAuh_Zj" role="3hB253">
+              <node concept="2AijNT" id="k9boAuh_Zk" role="1QScD9">
+                <ref role="2AijNy" node="3H4W4diAzgu" resolve="standby" />
+              </node>
+              <node concept="_emDc" id="k9boAuh_Zl" role="30czhm">
+                <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="k9boAuh_Zm" role="1aduh9">
+            <ref role="1afhQb" node="3H4W4diCDGs" resolve="actionSeq" />
+            <node concept="_emDc" id="k9boAuh_Zn" role="1afhQ5">
+              <ref role="_emDf" node="3H4W4diB5ag" resolve="player" />
+            </node>
+            <node concept="1QScDb" id="k9boAuh_Zo" role="1afhQ5">
+              <node concept="2oUEFG" id="k9boAuh_Zp" role="1QScD9">
+                <node concept="_emDc" id="k9boAuhFwE" role="2iGZtd">
+                  <ref role="_emDf" node="k9boAuhB2x" resolve="playingToStandby" />
+                </node>
+              </node>
+              <node concept="1QScDb" id="k9boAuh_Zr" role="30czhm">
+                <node concept="2oUEFG" id="k9boAuh_Zs" role="1QScD9">
+                  <node concept="_emDc" id="k9boAuh_Zt" role="2iGZtd">
+                    <ref role="_emDf" node="k9boAuhpGL" resolve="stoppedToPlaying" />
+                  </node>
+                </node>
+                <node concept="1QScDb" id="k9boAuh_Zu" role="30czhm">
+                  <node concept="_emDc" id="k9boAuh_Zv" role="30czhm">
+                    <ref role="_emDf" node="k9boAtSPUS" resolve="intoStandyby" />
+                  </node>
+                  <node concept="2oUEFG" id="k9boAuh_Zw" role="1QScD9">
+                    <node concept="_emDc" id="k9boAuh_Zx" role="2iGZtd">
+                      <ref role="_emDf" node="k9boAtSQeF" resolve="standbyToOn" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="k9boAuh_Zy" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="3H4W4diB5eo" role="_iOnB" />

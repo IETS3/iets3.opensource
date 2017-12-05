@@ -452,8 +452,8 @@
                     <ref role="3Tt5mk" to="19m5:7$TgoCYajaF" resolve="machine" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="33mFrumBXof" role="2OqNvi">
-                  <ref role="37wK5l" to="w10o:3H4W4dizcin" resolve="states" />
+                <node concept="2qgKlT" id="k9boAubFDO" role="2OqNvi">
+                  <ref role="37wK5l" to="w10o:k9boAubCes" resolve="allStates" />
                 </node>
               </node>
             </node>
