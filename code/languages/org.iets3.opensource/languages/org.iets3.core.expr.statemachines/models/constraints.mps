@@ -452,8 +452,8 @@
                     <ref role="3Tt5mk" to="19m5:7$TgoCYajaF" resolve="machine" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="33mFrumBXof" role="2OqNvi">
-                  <ref role="37wK5l" to="w10o:7$TgoCYk0Ta" resolve="states" />
+                <node concept="2qgKlT" id="k9boAubFDO" role="2OqNvi">
+                  <ref role="37wK5l" to="w10o:k9boAubCes" resolve="allStates" />
                 </node>
               </node>
             </node>
@@ -539,15 +539,15 @@
                   <node concept="2rP1CM" id="7Z_fDCwfvMc" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="7Z_fDCwfvMd" role="2OqNvi">
                     <node concept="1xMEDy" id="7Z_fDCwfvMe" role="1xVPHs">
-                      <node concept="chp4Y" id="7Z_fDCwfvMf" role="ri$Ld">
-                        <ref role="cht4Q" to="19m5:7$TgoCYa5Mz" resolve="StateMachine" />
+                      <node concept="chp4Y" id="3H4W4diAEpC" role="ri$Ld">
+                        <ref role="cht4Q" to="19m5:3H4W4dizchs" resolve="IStateContainer" />
                       </node>
                     </node>
                     <node concept="1xIGOp" id="7Z_fDCwfvMg" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="7Z_fDCwfvMh" role="2OqNvi">
-                  <ref role="37wK5l" to="w10o:7$TgoCYk0Ta" resolve="states" />
+                <node concept="2qgKlT" id="3H4W4diAECA" role="2OqNvi">
+                  <ref role="37wK5l" to="w10o:3H4W4diAzs8" resolve="visibleStates" />
                 </node>
               </node>
             </node>

@@ -73,6 +73,9 @@
     <node concept="PrWs8" id="mQGcCvGDv4" role="PzmwI">
       <ref role="PrY4T" to="yv47:mQGcCvDdrZ" resolve="IFunctionContainer" />
     </node>
+    <node concept="PrWs8" id="3H4W4dizchG" role="PzmwI">
+      <ref role="PrY4T" node="3H4W4dizchs" resolve="IStateContainer" />
+    </node>
     <node concept="1TJgyj" id="7$TgoCYjTEF" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268484267" />
       <property role="20lmBu" value="aggregation" />
@@ -101,6 +104,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7$TgoCYjSs5" role="PzmwI">
       <ref role="PrY4T" node="7$TgoCYjSrY" resolve="ISMContent" />
+    </node>
+    <node concept="PrWs8" id="3H4W4dixIHo" role="PzmwI">
+      <ref role="PrY4T" node="7$TgoCYlrCy" resolve="IStateContent" />
+    </node>
+    <node concept="PrWs8" id="3H4W4dizchx" role="PzmwI">
+      <ref role="PrY4T" node="3H4W4dizchs" resolve="IStateContainer" />
+    </node>
+    <node concept="PrWs8" id="3H4W4diAR0Z" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
     <node concept="1TJgyj" id="7$TgoCYlrC_" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268885541" />
@@ -584,6 +596,11 @@
     <node concept="PrWs8" id="4J6AqiIUT_U" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3H4W4dizchs">
+    <property role="EcuMT" value="4270802518592504924" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="IStateContainer" />
   </node>
 </model>
 
