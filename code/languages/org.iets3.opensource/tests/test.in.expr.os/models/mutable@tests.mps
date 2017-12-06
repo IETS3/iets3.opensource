@@ -7178,7 +7178,7 @@
       <node concept="_emDc" id="3wXkdMVpsDq" role="GZMTW">
         <ref role="_emDf" node="3wXkdMVps$j" resolve="markus" />
       </node>
-      <node concept="23rp8s" id="3wXkdMVq5Be" role="23rpay" />
+      <node concept="23rp8s" id="5kGo$yLOStX" role="23rpay" />
     </node>
     <node concept="_ixoA" id="3wXkdMVpsDs" role="_iOnB" />
     <node concept="2zPypq" id="3wXkdMVpsDt" role="_iOnB">
@@ -7289,6 +7289,14 @@
               <node concept="_emDc" id="3wXkdMVpsEa" role="30czhm">
                 <ref role="_emDf" node="3wXkdMVpsDt" resolve="sellOrNot" />
               </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="5kGo$yLNMib" role="1aduh9">
+            <node concept="GRK4H" id="5kGo$yLNMyU" role="1QScD9">
+              <property role="2EMntM" value="whoVotedAgainst" />
+            </node>
+            <node concept="_emDc" id="5kGo$yLNMa4" role="30czhm">
+              <ref role="_emDf" node="3wXkdMVpsDt" resolve="sellOrNot" />
             </node>
           </node>
         </node>
