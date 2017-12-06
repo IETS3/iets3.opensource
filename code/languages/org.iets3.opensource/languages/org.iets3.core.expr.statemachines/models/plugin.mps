@@ -3616,8 +3616,8 @@
                               <ref role="2Oxat5" node="7$TgoCYaYK$" resolve="myCurrentState" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="7Z_fDCwb9aJ" role="2OqNvi">
-                            <ref role="37wK5l" to="w10o:7Z_fDCw7jPt" resolve="triggeredTransitions" />
+                          <node concept="2qgKlT" id="5kGo$yLPCJ6" role="2OqNvi">
+                            <ref role="37wK5l" to="w10o:k9boAuhUuG" resolve="allApplicableTriggeredTransitions" />
                           </node>
                         </node>
                         <node concept="13MTOL" id="6XMQOZearC_" role="2OqNvi">
