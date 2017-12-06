@@ -5199,5 +5199,54 @@
       <property role="3F0ifm" value="expressions everywhere" />
     </node>
   </node>
+  <node concept="24kQdi" id="5kGo$yLJ8l3">
+    <ref role="1XX52x" to="av4b:5kGo$yLJ0E1" resolve="ForceCastExpr" />
+    <node concept="3EZMnI" id="2NHHcg2$Pj3" role="2wV5jI">
+      <node concept="3F0ifn" id="TuTPrvAoEj" role="3EZMnx">
+        <property role="3F0ifm" value="forceCast" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0ifn" id="2NHHcg2$Pj4" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11LMrY" id="2NHHcg2$Pj5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="TuTPrvAsSy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2NHHcg2$Pk2" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:5kGo$yLJ0Eb" resolve="targetType" />
+      </node>
+      <node concept="3F0ifn" id="TuTPrvAoER" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11LMrY" id="TuTPrvAsSA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="TuTPrvAsSB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="TuTPrvAoFd" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="TuTPrvAsSQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2NHHcg2$Pj6" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:5kGo$yLJ8lv" resolve="expr" />
+      </node>
+      <node concept="2iRfu4" id="2NHHcg2$Pj7" role="2iSdaV" />
+      <node concept="3F0ifn" id="2NHHcg2$Pj8" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2NHHcg2$Pj9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="VPM3Z" id="46cplYwLY$f" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 

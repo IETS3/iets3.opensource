@@ -258,6 +258,9 @@
       <property role="TrG5h" value="errmsg" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="5kGo$yLI5ay" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4kV9Ob9XpO0">
     <property role="3GE5qa" value="" />
@@ -920,6 +923,26 @@
     <property role="34LRSv" value="not-equals" />
     <property role="EcuMT" value="1927432956093755937" />
     <ref role="1TJDcQ" node="ub9nkyHAbg" resolve="TestOp" />
+  </node>
+  <node concept="1TIwiD" id="5kGo$yLJ0E1">
+    <property role="EcuMT" value="6137388456558201473" />
+    <property role="TrG5h" value="ForceCastExpr" />
+    <property role="34LRSv" value="forceCast" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5kGo$yLJ0Eb" role="1TKVEi">
+      <property role="IQ2ns" value="6137388456558201483" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="5kGo$yLJ8lv" role="1TKVEi">
+      <property role="IQ2ns" value="6137388456558232927" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 

@@ -648,8 +648,16 @@
       <ref role="qq9wM" to="8lgj:3iESbJsEYoW" resolve="ArtificialClockExpr" />
       <node concept="3vetai" id="3iESbJsGILS" role="3vQZUl">
         <node concept="2ShNRf" id="3iESbJsGIM6" role="3vdyny">
-          <node concept="HV5vD" id="3iESbJsGJ46" role="2ShVmc">
-            <ref role="HV5vE" node="3iESbJsF_M2" resolve="ArtificialClock" />
+          <node concept="1pGfFk" id="5kGo$yLAtcQ" role="2ShVmc">
+            <ref role="37wK5l" node="5kGo$yLAqog" resolve="ArtificialClock" />
+            <node concept="10QFUN" id="5kGo$yLAtqL" role="37wK5m">
+              <node concept="rqRoa" id="5kGo$yLAtqK" role="10QFUP">
+                <ref role="rqRob" to="8lgj:5kGo$yLAk$N" resolve="init" />
+              </node>
+              <node concept="3uibUv" id="5kGo$yLAtqG" role="10QFUM">
+                <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -4810,6 +4818,31 @@
       <node concept="3Tm6S6" id="3iESbJsF_QN" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="3iESbJsF_R0" role="jymVt" />
+    <node concept="3clFbW" id="5kGo$yLAqog" role="jymVt">
+      <node concept="3cqZAl" id="5kGo$yLAqoi" role="3clF45" />
+      <node concept="3Tm1VV" id="5kGo$yLAqoj" role="1B3o_S" />
+      <node concept="3clFbS" id="5kGo$yLAqok" role="3clF47">
+        <node concept="3clFbF" id="5kGo$yLAtzU" role="3cqZAp">
+          <node concept="37vLTI" id="5kGo$yLAuq_" role="3clFbG">
+            <node concept="37vLTw" id="5kGo$yLAutV" role="37vLTx">
+              <ref role="3cqZAo" node="5kGo$yLAqFH" resolve="init" />
+            </node>
+            <node concept="2OqwBi" id="5kGo$yLAtG6" role="37vLTJ">
+              <node concept="Xjq3P" id="5kGo$yLAtzT" role="2Oq$k0" />
+              <node concept="2OwXpG" id="5kGo$yLAtSa" role="2OqNvi">
+                <ref role="2Oxat5" node="3iESbJsF_Q7" resolve="time" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5kGo$yLAqFH" role="3clF46">
+        <property role="TrG5h" value="init" />
+        <node concept="3uibUv" id="5kGo$yLAqFG" role="1tU5fm">
+          <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3iESbJsF_R8" role="jymVt" />
     <node concept="3clFb_" id="3iESbJsF_Rt" role="jymVt">
       <property role="1EzhhJ" value="false" />

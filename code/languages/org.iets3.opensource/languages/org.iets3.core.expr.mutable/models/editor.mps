@@ -1402,8 +1402,29 @@
   <node concept="24kQdi" id="3iESbJsEYpm">
     <property role="3GE5qa" value="clock" />
     <ref role="1XX52x" to="8lgj:3iESbJsEYoW" resolve="ArtificialClockExpr" />
-    <node concept="3F0ifn" id="3iESbJsEYpo" role="2wV5jI">
-      <property role="3F0ifm" value="artificialclock" />
+    <node concept="3EZMnI" id="5kGo$yLAk$P" role="2wV5jI">
+      <node concept="2iRfu4" id="5kGo$yLAk$Q" role="2iSdaV" />
+      <node concept="3F0ifn" id="3iESbJsEYpo" role="3EZMnx">
+        <property role="3F0ifm" value="artificialclock" />
+      </node>
+      <node concept="3F0ifn" id="5kGo$yLAk$Y" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="5kGo$yLAk_b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5kGo$yLAk_g" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5kGo$yLAk_r" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:5kGo$yLAk$N" resolve="init" />
+      </node>
+      <node concept="3F0ifn" id="5kGo$yLAk_6" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="5kGo$yLAk_z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3iESbJsEYtR">

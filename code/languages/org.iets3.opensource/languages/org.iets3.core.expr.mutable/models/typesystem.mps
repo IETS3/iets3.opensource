@@ -133,6 +133,7 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
@@ -1423,6 +1424,27 @@
             <node concept="1YBJjd" id="3iESbJsEYsx" role="1Z2MuG">
               <ref role="1YBMHb" node="3iESbJsEYr6" resolve="dce" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2NvLDW" id="5kGo$yLAnqJ" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="5kGo$yLAnqO" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5kGo$yLAnqP" role="mwGJk">
+            <node concept="2OqwBi" id="5kGo$yLAnqQ" role="1Z2MuG">
+              <node concept="1YBJjd" id="5kGo$yLAnqR" role="2Oq$k0">
+                <ref role="1YBMHb" node="3iESbJsEYr6" resolve="dce" />
+              </node>
+              <node concept="3TrEf2" id="5kGo$yLAnqS" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:5kGo$yLAk$N" resolve="init" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5kGo$yLAnup" role="1ZfhKB">
+          <node concept="2YIFZM" id="5kGo$yLAnvW" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
       </node>

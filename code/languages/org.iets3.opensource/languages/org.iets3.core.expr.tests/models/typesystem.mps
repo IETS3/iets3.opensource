@@ -889,5 +889,35 @@
       <ref role="1YaFvo" to="av4b:3GdqffBS$Mm" resolve="MuteEffect" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5kGo$yLJ2B6">
+    <property role="TrG5h" value="typeof_ForceCastExpr" />
+    <node concept="3clFbS" id="5kGo$yLJ2B7" role="18ibNy">
+      <node concept="1Z5TYs" id="5kGo$yLJ2On" role="3cqZAp">
+        <node concept="mw_s8" id="5kGo$yLJ2OF" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5kGo$yLJ2OB" role="mwGJk">
+            <node concept="2OqwBi" id="5kGo$yLJ2Y7" role="1Z2MuG">
+              <node concept="1YBJjd" id="5kGo$yLJ2OW" role="2Oq$k0">
+                <ref role="1YBMHb" node="5kGo$yLJ2B9" resolve="fc" />
+              </node>
+              <node concept="3TrEf2" id="5kGo$yLJ38D" role="2OqNvi">
+                <ref role="3Tt5mk" to="av4b:5kGo$yLJ0Eb" resolve="targetType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5kGo$yLJ2Oq" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5kGo$yLJ2Bv" role="mwGJk">
+            <node concept="1YBJjd" id="5kGo$yLJ2BJ" role="1Z2MuG">
+              <ref role="1YBMHb" node="5kGo$yLJ2B9" resolve="fc" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5kGo$yLJ2B9" role="1YuTPh">
+      <property role="TrG5h" value="fc" />
+      <ref role="1YaFvo" to="av4b:5kGo$yLJ0E1" resolve="ForceCastExpr" />
+    </node>
+  </node>
 </model>
 
