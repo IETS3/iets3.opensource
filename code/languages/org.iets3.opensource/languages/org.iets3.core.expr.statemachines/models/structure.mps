@@ -602,5 +602,15 @@
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="IStateContainer" />
   </node>
+  <node concept="1TIwiD" id="5kGo$yLzmgH">
+    <property role="EcuMT" value="6137388456555144237" />
+    <property role="3GE5qa" value="operations" />
+    <property role="TrG5h" value="PokeTarget" />
+    <property role="34LRSv" value="poke" />
+    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="PrWs8" id="5kGo$yL$F3P" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
 </model>
 

@@ -2076,5 +2076,15 @@
       <ref role="ehGHo" to="19m5:7$TgoCYa5Nq" resolve="Event" />
     </node>
   </node>
+  <node concept="24kQdi" id="5kGo$yLzmh8">
+    <property role="3GE5qa" value="operations" />
+    <ref role="1XX52x" to="19m5:5kGo$yLzmgH" resolve="PokeTarget" />
+    <node concept="3F0ifn" id="5kGo$yLzmhc" role="2wV5jI">
+      <property role="3F0ifm" value="poke" />
+      <node concept="11LMrY" id="5kGo$yLzmhd" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 

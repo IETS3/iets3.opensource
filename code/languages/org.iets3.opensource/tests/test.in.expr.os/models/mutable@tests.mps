@@ -99,6 +99,7 @@
         <child id="9215841044170409457" name="target" index="1vQNHF" />
       </concept>
       <concept id="9215841044168163823" name="org.iets3.core.expr.statemachines.structure.AutomaticTransition" flags="ng" index="1vZJXP" />
+      <concept id="6137388456555144237" name="org.iets3.core.expr.statemachines.structure.PokeTarget" flags="ng" index="3$Cgp_" />
       <concept id="5460220530820977915" name="org.iets3.core.expr.statemachines.structure.StatemachineQuery" flags="ng" index="3_9SPv">
         <property id="3519191162853534709" name="observable" index="2AgCp3" />
         <child id="195141004745041161" name="expr" index="2YhqaX" />
@@ -1730,6 +1731,57 @@
           </node>
         </node>
         <node concept="2vmpnb" id="7Z_fDCwqrVk" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="5kGo$yL_Yf4" role="_fkp5">
+        <node concept="_fku$" id="5kGo$yL_Yf5" role="_fkur" />
+        <node concept="3C38Bt" id="5kGo$yL_Yf6" role="_fkuY">
+          <node concept="_emDc" id="5kGo$yL_Yf7" role="3C38Bs">
+            <ref role="_emDf" node="7Z_fDCwpt$v" resolve="clk" />
+          </node>
+          <node concept="1aduha" id="5kGo$yL_Yf8" role="1EJXl6">
+            <node concept="1QScDb" id="5kGo$yL_Yf9" role="1aduh9">
+              <node concept="174ZEm" id="5kGo$yL_Yfa" role="1QScD9">
+                <ref role="174ZEE" node="7Z_fDCwpslT" resolve="trigger" />
+              </node>
+              <node concept="_emDc" id="5kGo$yL_Yfb" role="30czhm">
+                <ref role="_emDf" node="7Z_fDCwptrE" resolve="t" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="5kGo$yL_Yfc" role="1aduh9">
+              <node concept="174ZEm" id="5kGo$yL_Yfd" role="1QScD9">
+                <ref role="174ZEE" node="7Z_fDCwpslT" resolve="trigger" />
+              </node>
+              <node concept="_emDc" id="5kGo$yL_Yfe" role="30czhm">
+                <ref role="_emDf" node="7Z_fDCwptrE" resolve="t" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="5kGo$yL_Yff" role="1aduh9">
+              <node concept="3C4VAT" id="5kGo$yL_Yfg" role="1QScD9">
+                <node concept="30bXRB" id="5kGo$yL_Yfh" role="3C4VAB">
+                  <property role="30bXRw" value="2000" />
+                </node>
+              </node>
+              <node concept="_emDc" id="5kGo$yL_Yfi" role="30czhm">
+                <ref role="_emDf" node="7Z_fDCwpt$v" resolve="clk" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="5kGo$yL_Yfj" role="1aduh9">
+              <node concept="3$Cgp_" id="5kGo$yL_Yii" role="1QScD9" />
+              <node concept="_emDc" id="5kGo$yL_Yfl" role="30czhm">
+                <ref role="_emDf" node="7Z_fDCwptrE" resolve="t" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="5kGo$yL_Yfm" role="1aduh9">
+              <node concept="2AijNT" id="5kGo$yL_Yfn" role="1QScD9">
+                <ref role="2AijNy" node="7Z_fDCwpt4u" resolve="timedout" />
+              </node>
+              <node concept="_emDc" id="5kGo$yL_Yfo" role="30czhm">
+                <ref role="_emDf" node="7Z_fDCwptrE" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="5kGo$yL_Yfp" role="_fkuS" />
       </node>
     </node>
   </node>
