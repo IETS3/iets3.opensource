@@ -291,7 +291,6 @@
       <concept id="5571545316364799282" name="org.iets3.core.expr.base.structure.PragmaExpression" flags="ng" index="1EI5v0">
         <child id="5571545316365029300" name="expr" index="1EJXl6" />
       </concept>
-      <concept id="9002563722476995146" name="org.iets3.core.expr.base.structure.IDotTarget" flags="ng" index="1QScD8" />
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -469,22 +468,6 @@
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
-    <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
-      <concept id="1240669143552786953" name="org.iets3.core.expr.repl.structure.DefaultEntry" flags="ng" index="1gtNKa">
-        <property id="4811040598999691042" name="hasError" index="dBX3d" />
-        <property id="3123720608935335115" name="hasBeenEvaled" index="3isvIs" />
-        <property id="3288176362549313857" name="referenceable" index="3tdReV" />
-        <child id="1240669143552786973" name="expression" index="1gtNKu" />
-      </concept>
-      <concept id="1240669143552786952" name="org.iets3.core.expr.repl.structure.REPL" flags="ng" index="1gtNKb">
-        <reference id="4237471344366123786" name="sourceNode" index="2C67UQ" />
-        <reference id="8272305014736683104" name="sourceScope" index="1BRi7P" />
-        <child id="3123720608934258677" name="entries" index="3ij$yy" />
-      </concept>
-      <concept id="3123720608935236577" name="org.iets3.core.expr.repl.structure.ReplEntryRef" flags="ng" index="3ivRMQ">
-        <reference id="3123720608935236578" name="entry" index="3ivRMP" />
-      </concept>
-    </language>
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
       <concept id="9163496876327186020" name="org.iets3.core.expr.mutable.structure.InteractorCommandTarget" flags="ng" index="2EMmAZ">
         <property id="9163496876327186602" name="command" index="2EMntL" />
@@ -507,9 +490,6 @@
       <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
       <concept id="4255172619710740510" name="org.iets3.core.expr.mutable.structure.BoxExpression" flags="ng" index="3sRH3H">
         <child id="4255172619710740514" name="value" index="3sRH3h" />
-      </concept>
-      <concept id="8272305014737595077" name="org.iets3.core.expr.mutable.structure.LiveExpression" flags="ng" index="1BOcHg">
-        <child id="8272305014737595078" name="expr" index="1BOcHj" />
       </concept>
       <concept id="3795092733478823484" name="org.iets3.core.expr.mutable.structure.ArtificialClockExpr" flags="ng" index="3C0gq7">
         <child id="6137388456555923763" name="init" index="3$HiHV" />
@@ -6438,20 +6418,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="4pyjK6aSCwh" role="_iOnB" />
-    <node concept="_ixoA" id="4pyjK6aSCwi" role="_iOnB" />
-    <node concept="2zPypq" id="5kGo$yLQ815" role="_iOnB">
-      <property role="TrG5h" value="l" />
-      <node concept="1BOcHg" id="5kGo$yLQc4b" role="2zPyp_">
-        <node concept="1749$I" id="5kGo$yLQ816" role="1BOcHj">
-          <node concept="_emDc" id="5kGo$yLQ817" role="1Gtp3A">
-            <ref role="_emDf" node="4pyjK6aObnm" resolve="offers" />
-          </node>
-          <node concept="1747cw" id="5kGo$yLQ818" role="1749$H">
-            <ref role="1747cx" node="4pyjK6aSCuC" resolve="SalesEngine" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="_ixoA" id="4pyjK6aOyRk" role="_iOnB" />
     <node concept="_ixoA" id="4pyjK6aOz8n" role="_iOnB" />
   </node>
@@ -10537,43 +10503,6 @@
     </node>
     <node concept="_ixoA" id="3H4W4diB5eo" role="_iOnB" />
     <node concept="_ixoA" id="3H4W4diAxXG" role="_iOnB" />
-  </node>
-  <node concept="1gtNKb" id="5kGo$yLRMou">
-    <property role="3GE5qa" value="interact" />
-    <property role="TrG5h" value="E_SalesprocessMulti_repl_0" />
-    <ref role="2C67UQ" node="5kGo$yLQc4b" />
-    <ref role="1BRi7P" node="4pyjK6aOaek" resolve="E_SalesprocessMulti" />
-    <node concept="1gtNKa" id="5kGo$yLRMov" role="3ij$yy">
-      <property role="3isvIs" value="true" />
-      <property role="dBX3d" value="false" />
-      <property role="3tdReV" value="true" />
-      <node concept="1BOcHg" id="5kGo$yLRMow" role="1gtNKu">
-        <node concept="1749$I" id="5kGo$yLRMox" role="1BOcHj">
-          <node concept="_emDc" id="5kGo$yLRMoy" role="1Gtp3A">
-            <ref role="_emDf" node="4pyjK6aObnm" resolve="offers" />
-          </node>
-          <node concept="1747cw" id="5kGo$yLRMoz" role="1749$H">
-            <ref role="1747cx" node="4pyjK6aSCuC" resolve="SalesEngine" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1gtNKa" id="5kGo$yLRN9M" role="3ij$yy">
-      <property role="3isvIs" value="true" />
-      <property role="dBX3d" value="false" />
-      <property role="3tdReV" value="true" />
-      <node concept="3ivRMQ" id="5kGo$yLRNuQ" role="1gtNKu">
-        <ref role="3ivRMP" node="5kGo$yLRMov" resolve="0" />
-      </node>
-    </node>
-    <node concept="1gtNKa" id="3ToAJCaua1L" role="3ij$yy">
-      <node concept="1QScDb" id="3ToAJCauacG" role="1gtNKu">
-        <node concept="3ivRMQ" id="3ToAJCauacv" role="30czhm">
-          <ref role="3ivRMP" node="5kGo$yLRMov" resolve="0" />
-        </node>
-        <node concept="1QScD8" id="3ToAJCaudL_" role="1QScD9" />
-      </node>
-    </node>
   </node>
 </model>
 
