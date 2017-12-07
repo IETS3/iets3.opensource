@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="3H4W4diAR0Z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="4IV0h47dfWt" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47dfWs" resolve="IInterceptorContainer" />
+    </node>
     <node concept="1TJgyj" id="7$TgoCYlrC_" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268885541" />
       <property role="20lmBu" value="aggregation" />
@@ -151,6 +154,9 @@
       <property role="20kJfa" value="trigger" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="33mFrumFlOo" resolve="AbstractTrigger" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47G1ZX" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47G1Yb" resolve="IContextContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$TgoCYajaE">

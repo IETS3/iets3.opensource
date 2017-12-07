@@ -238,5 +238,39 @@
     <property role="34LRSv" value="all" />
     <ref role="1TJDcQ" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
   </node>
+  <node concept="1TIwiD" id="4IV0h47Eai8">
+    <property role="EcuMT" value="5456956546144052360" />
+    <property role="TrG5h" value="SenderPartyInterceptor" />
+    <property role="34LRSv" value="senderIs" />
+    <property role="3GE5qa" value="interceptor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546144052394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="party" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47Eaif" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47FOnf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47Eqmo">
+    <property role="EcuMT" value="5456956546144118168" />
+    <property role="3GE5qa" value="interceptor" />
+    <property role="TrG5h" value="SenderContextArg" />
+    <property role="34LRSv" value="sender" />
+    <ref role="1TJDcQ" to="8lgj:4IV0h47hCX3" resolve="AbstractContextArgument" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h47I93P">
+    <property role="EcuMT" value="5456956546145095925" />
+    <property role="3GE5qa" value="interceptor" />
+    <property role="TrG5h" value="AnySenderExpr" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 

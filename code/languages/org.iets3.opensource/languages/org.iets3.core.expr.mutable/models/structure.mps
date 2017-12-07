@@ -205,6 +205,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4IV0h47hCX1" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546137624385" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contextArgs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4IV0h47hCXy" resolve="ContextArgValue" />
+    </node>
     <node concept="PrWs8" id="7WFhXJlSwpn" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
@@ -381,6 +388,134 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4IV0h47deUA">
+    <property role="EcuMT" value="5456956546136469158" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="IInterceptor" />
+  </node>
+  <node concept="PlHQZ" id="4IV0h47dfWs">
+    <property role="EcuMT" value="5456956546136473372" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="IInterceptorContainer" />
+    <node concept="1TJgyj" id="4IV0h47dgT2" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546136477250" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interceptors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47dgR$">
+    <property role="EcuMT" value="5456956546136477156" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="DefaultInterceptor" />
+    <property role="34LRSv" value="default" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4IV0h47dgR_" role="PzmwI">
+      <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47fqjY">
+    <property role="EcuMT" value="5456956546137040126" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="ThrowInterceptor" />
+    <property role="34LRSv" value="throw" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4IV0h47fqjZ" role="PzmwI">
+      <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47hCX3">
+    <property role="EcuMT" value="5456956546137624387" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="AbstractContextArgument" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h47hCX4">
+    <property role="EcuMT" value="5456956546137624388" />
+    <property role="3GE5qa" value="interactor.intercept.user" />
+    <property role="TrG5h" value="UserContextArgument" />
+    <property role="34LRSv" value="user" />
+    <ref role="1TJDcQ" node="4IV0h47hCX3" resolve="AbstractContextArgument" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h47hCXy">
+    <property role="EcuMT" value="5456956546137624418" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="ContextArgValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4IV0h47hCXz" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546137624419" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4IV0h47hCX3" resolve="AbstractContextArgument" />
+    </node>
+    <node concept="1TJgyj" id="4IV0h47hCX_" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546137624421" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47jYpi">
+    <property role="EcuMT" value="5456956546138236498" />
+    <property role="3GE5qa" value="interactor.intercept.user" />
+    <property role="TrG5h" value="UserInterceptor" />
+    <property role="34LRSv" value="user" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4IV0h47jYpx" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546138236513" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47jYpv" role="PzmwI">
+      <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4IV0h47G1Yb">
+    <property role="EcuMT" value="5456956546144542603" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="IContextContext" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h47Gcws">
+    <property role="EcuMT" value="5456956546144585756" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="ContextArgExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4IV0h47Gcwt" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546144585757" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4IV0h47hCX3" resolve="AbstractContextArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47Jb3K">
+    <property role="EcuMT" value="5456956546145366256" />
+    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="TrG5h" value="WithContextExpression" />
+    <property role="34LRSv" value="with context" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4IV0h47Jb3L" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546145366257" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contextValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4IV0h47hCXy" resolve="ContextArgValue" />
+    </node>
+    <node concept="1TJgyj" id="4IV0h47Jb3N" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546145366259" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
     </node>
   </node>
 </model>

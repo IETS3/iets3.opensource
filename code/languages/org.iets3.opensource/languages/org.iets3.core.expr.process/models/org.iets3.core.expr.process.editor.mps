@@ -641,5 +641,41 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="4IV0h47Eaj5">
+    <property role="3GE5qa" value="interceptor" />
+    <ref role="1XX52x" to="7y2b:4IV0h47Eai8" resolve="SenderPartyInterceptor" />
+    <node concept="3EZMnI" id="4IV0h47Eajd" role="2wV5jI">
+      <node concept="3F0ifn" id="4IV0h47Eajk" role="3EZMnx">
+        <property role="3F0ifm" value="senderIs(" />
+        <node concept="11LMrY" id="4IV0h47EajD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4IV0h47Eajq" role="3EZMnx">
+        <ref role="1NtTu8" to="7y2b:4IV0h47EaiE" resolve="party" />
+      </node>
+      <node concept="3F0ifn" id="4IV0h47Eajy" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="4IV0h47EajB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4IV0h47Eajg" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IV0h47EqmS">
+    <property role="3GE5qa" value="interceptor" />
+    <ref role="1XX52x" to="7y2b:4IV0h47Eqmo" resolve="SenderContextArg" />
+    <node concept="3F0ifn" id="4IV0h47Eqn0" role="2wV5jI">
+      <property role="3F0ifm" value="sender" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IV0h47Iit_">
+    <property role="3GE5qa" value="interceptor" />
+    <ref role="1XX52x" to="7y2b:4IV0h47I93P" resolve="AnySenderExpr" />
+    <node concept="3F0ifn" id="4IV0h47IitH" role="2wV5jI">
+      <property role="3F0ifm" value="*" />
+    </node>
+  </node>
 </model>
 
