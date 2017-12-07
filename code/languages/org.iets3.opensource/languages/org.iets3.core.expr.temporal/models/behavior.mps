@@ -339,12 +339,22 @@
     <node concept="13i0hz" id="5kIYKlplr8$" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getContext" />
+      <property role="TrG5h" value="getRangeContext" />
       <node concept="3Tm1VV" id="5kIYKlplr8_" role="1B3o_S" />
       <node concept="3Tqbb2" id="5kIYKlplr8O" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
       </node>
       <node concept="3clFbS" id="5kIYKlplr8B" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="2Asuq7BCdRC" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getDateContext" />
+      <node concept="3Tm1VV" id="2Asuq7BCdRD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2Asuq7BCdRE" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+      <node concept="3clFbS" id="2Asuq7BCdRF" role="3clF47" />
     </node>
     <node concept="13i0hz" id="4t4tOuDd1LC" role="13h7CS">
       <property role="13i0iv" value="true" />
