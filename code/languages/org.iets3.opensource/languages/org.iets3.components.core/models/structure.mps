@@ -1235,5 +1235,13 @@
       <ref role="20lvS9" node="6LfBX8YkpdW" resolve="Port" />
     </node>
   </node>
+  <node concept="PlHQZ" id="5J1JIMjI3Au">
+    <property role="EcuMT" value="6611775651256482206" />
+    <property role="3GE5qa" value="attributes.specific" />
+    <property role="TrG5h" value="IBusInstanceAttribute" />
+    <node concept="PrWs8" id="5J1JIMjI3Av" role="PrDN$">
+      <ref role="PrY4T" node="1WCh2th1BnT" resolve="IConceptSpecificAttribute" />
+    </node>
+  </node>
 </model>
 
