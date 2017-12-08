@@ -2,7 +2,7 @@
 <model ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -149,9 +149,9 @@
       <ref role="20lvS9" node="XhdFKvXSNr" resolve="ErrorMessage" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4FREEt6y5LH">
-    <property role="EcuMT" value="5401973913473801325" />
-    <property role="TrG5h" value="IControlSolver" />
+  <node concept="PlHQZ" id="7QsdZDAwecO">
+    <property role="EcuMT" value="9051170899708928820" />
+    <property role="TrG5h" value="IUseSolver" />
   </node>
 </model>
 

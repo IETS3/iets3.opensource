@@ -342,6 +342,7 @@
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1203,10 +1204,23 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3y3z36" id="3tudP__7WmW" role="3clFbw">
-                      <node concept="10Nm6u" id="3tudP__7WFE" role="3uHU7w" />
-                      <node concept="37vLTw" id="3tudP__7VSp" role="3uHU7B">
-                        <ref role="3cqZAo" node="3tudP__5Y9C" resolve="res" />
+                    <node concept="1Wc70l" id="7WFhXJlXcYH" role="3clFbw">
+                      <node concept="3y3z36" id="7WFhXJlXeMU" role="3uHU7w">
+                        <node concept="10Nm6u" id="7WFhXJlXf85" role="3uHU7w" />
+                        <node concept="2OqwBi" id="7WFhXJlXdCr" role="3uHU7B">
+                          <node concept="37vLTw" id="7WFhXJlXdjq" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3tudP__5Y9C" resolve="res" />
+                          </node>
+                          <node concept="2OwXpG" id="7WFhXJlXe6R" role="2OqNvi">
+                            <ref role="2Oxat5" to="xk6s:7lHetQyBMcY" resolve="trace" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="3tudP__7WmW" role="3uHU7B">
+                        <node concept="37vLTw" id="3tudP__7VSp" role="3uHU7B">
+                          <ref role="3cqZAo" node="3tudP__5Y9C" resolve="res" />
+                        </node>
+                        <node concept="10Nm6u" id="3tudP__7WFE" role="3uHU7w" />
                       </node>
                     </node>
                   </node>

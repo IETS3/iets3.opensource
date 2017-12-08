@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
-    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -421,8 +420,13 @@
                   <node concept="2pIpSj" id="1$1rueeDjgd" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                     <node concept="36biLy" id="1$1rueeDjQ5" role="2pJxcZ">
-                      <node concept="2X3wrD" id="1$1rueeDjQg" role="36biLW">
-                        <ref role="2X3Bk0" node="1$1rueeDjiX" resolve="et" />
+                      <node concept="1PxgMI" id="1mDdTGBnY_" role="36biLW">
+                        <node concept="chp4Y" id="1mDdTGBnZ0" role="3oSUPX">
+                          <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                        </node>
+                        <node concept="2X3wrD" id="1$1rueeDjQg" role="1m5AlR">
+                          <ref role="2X3Bk0" node="1$1rueeDjiX" resolve="et" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -473,8 +477,13 @@
                   <node concept="2pIpSj" id="1$1rueeG2BW" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
                     <node concept="36biLy" id="1$1rueeG2BX" role="2pJxcZ">
-                      <node concept="2X3wrD" id="1$1rueeG2BY" role="36biLW">
-                        <ref role="2X3Bk0" node="1$1rueeG2C6" resolve="et" />
+                      <node concept="1PxgMI" id="1mDdTGBobE" role="36biLW">
+                        <node concept="chp4Y" id="1mDdTGBoc5" role="3oSUPX">
+                          <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                        </node>
+                        <node concept="2X3wrD" id="1$1rueeG2BY" role="1m5AlR">
+                          <ref role="2X3Bk0" node="1$1rueeG2C6" resolve="et" />
+                        </node>
                       </node>
                     </node>
                   </node>
