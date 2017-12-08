@@ -409,7 +409,7 @@
   </node>
   <node concept="1TIwiD" id="4IV0h47dgR$">
     <property role="EcuMT" value="5456956546136477156" />
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="DefaultInterceptor" />
     <property role="34LRSv" value="default" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -419,7 +419,7 @@
   </node>
   <node concept="1TIwiD" id="4IV0h47fqjY">
     <property role="EcuMT" value="5456956546137040126" />
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="ThrowInterceptor" />
     <property role="34LRSv" value="throw" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -496,7 +496,7 @@
   </node>
   <node concept="1TIwiD" id="4IV0h47QL2E">
     <property role="EcuMT" value="5456956546147356842" />
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <property role="TrG5h" value="RateLimitInterceptor" />
     <property role="34LRSv" value="rate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

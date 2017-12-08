@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -2167,14 +2168,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="4IV0h47f8_x">
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <ref role="1XX52x" to="8lgj:4IV0h47dgR$" resolve="DefaultInterceptor" />
     <node concept="3F0ifn" id="4IV0h47f8_z" role="2wV5jI">
       <property role="3F0ifm" value="default" />
     </node>
   </node>
   <node concept="24kQdi" id="4IV0h47fqkp">
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <ref role="1XX52x" to="8lgj:4IV0h47fqjY" resolve="ThrowInterceptor" />
     <node concept="3F0ifn" id="4IV0h47fqkr" role="2wV5jI">
       <property role="3F0ifm" value="throw" />
@@ -2260,7 +2261,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4IV0h47QL3x">
-    <property role="3GE5qa" value="interactor.intercept" />
+    <property role="3GE5qa" value="interactor.intercept.interceptors" />
     <ref role="1XX52x" to="8lgj:4IV0h47QL2E" resolve="RateLimitInterceptor" />
     <node concept="3EZMnI" id="4IV0h47QL3A" role="2wV5jI">
       <node concept="2iRfu4" id="4IV0h47QL3B" role="2iSdaV" />

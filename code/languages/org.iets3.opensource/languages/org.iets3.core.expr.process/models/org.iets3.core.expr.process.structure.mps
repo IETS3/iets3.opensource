@@ -7,10 +7,10 @@
   </languages>
   <imports>
     <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
+    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -271,6 +271,28 @@
     <property role="TrG5h" value="AnySenderExpr" />
     <property role="34LRSv" value="*" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h48lf7t">
+    <property role="EcuMT" value="5456956546155344349" />
+    <property role="3GE5qa" value="interceptor" />
+    <property role="TrG5h" value="TakeTurnsInterceptor" />
+    <property role="34LRSv" value="takeTurns" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4IV0h48lf9e" role="1TKVEl">
+      <property role="IQ2nx" value="5456956546155344462" />
+      <property role="TrG5h" value="ordered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="4IV0h48lf7v" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546155344351" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parties" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4IV0h48lf7w" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
+    </node>
   </node>
 </model>
 
