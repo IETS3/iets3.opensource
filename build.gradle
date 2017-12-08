@@ -44,10 +44,10 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {
         println "Local SNAPSHOT version forced"
-        ext.mbeddrVersion = '1.0-SNAPSHOT'
+        ext.mbeddrVersion = "1.0-SNAPSHOT"
     }
     else {
-        ext.mbeddrVersion = '${mbeddrBranch}.1.0.+'
+        ext.mbeddrVersion = "${mbeddrBranch}.1.0.+"
     }
 }
 
