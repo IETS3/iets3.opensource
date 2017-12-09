@@ -293,6 +293,9 @@
     <node concept="PrWs8" id="4IV0h48lf7w" role="PzmwI">
       <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
     </node>
+    <node concept="PrWs8" id="71HHyJ2sLqx" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
   </node>
 </model>
 

@@ -22,7 +22,7 @@
     <import index="g5n3" ref="r:d5057057-e79d-4338-be71-9e25ef2849c5(org.iets3.core.expr.metafunction.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2012,6 +2012,37 @@
       <node concept="3uibUv" id="4IV0h48m0GS" role="3clF45">
         <ref role="3uigEE" to="n9sl:4IV0h47VMut" resolve="InterceptorState" />
       </node>
+    </node>
+    <node concept="13i0hz" id="71HHyJ2sLs1" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="allowsEffectForNode" />
+      <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
+      <node concept="3Tm1VV" id="71HHyJ2sLs2" role="1B3o_S" />
+      <node concept="3clFbS" id="71HHyJ2sLs9" role="3clF47">
+        <node concept="3clFbF" id="71HHyJ2sMNH" role="3cqZAp">
+          <node concept="2OqwBi" id="71HHyJ2sMWx" role="3clFbG">
+            <node concept="2YIFZM" id="71HHyJ2sMPH" role="2Oq$k0">
+              <ref role="37wK5l" to="oq0c:VApoyDy6dG" resolve="reads" />
+              <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            </node>
+            <node concept="liA8E" id="71HHyJ2sN5A" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:VApoyDy7KE" resolve="allows" />
+              <node concept="37vLTw" id="71HHyJ2sNac" role="37wK5m">
+                <ref role="3cqZAo" node="71HHyJ2sLsa" resolve="n" />
+              </node>
+              <node concept="Xl_RD" id="71HHyJ2sNss" role="37wK5m">
+                <property role="Xl_RC" value="only read effect allowed" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="71HHyJ2sLsa" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="71HHyJ2sLsb" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="71HHyJ2sLsc" role="3clF45" />
     </node>
   </node>
 </model>

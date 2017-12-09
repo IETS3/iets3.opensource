@@ -2777,9 +2777,41 @@
       <ref role="13i0hy" to="pbu6:ORfz$DS6Ap" resolve="allowsEffectForNode" />
       <node concept="3Tm1VV" id="4qVjx3kqK2T" role="1B3o_S" />
       <node concept="3clFbS" id="4qVjx3kqK30" role="3clF47">
+        <node concept="3clFbJ" id="71HHyJ2rmS2" role="3cqZAp">
+          <node concept="3clFbS" id="71HHyJ2rmS4" role="3clFbx">
+            <node concept="3cpWs6" id="71HHyJ2rnP3" role="3cqZAp">
+              <node concept="2OqwBi" id="71HHyJ2ro7c" role="3cqZAk">
+                <node concept="2YIFZM" id="71HHyJ2rnZ6" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:VApoyDy6dG" resolve="reads" />
+                  <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+                </node>
+                <node concept="liA8E" id="71HHyJ2rokZ" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:VApoyDy7KE" resolve="allows" />
+                  <node concept="37vLTw" id="71HHyJ2rowD" role="37wK5m">
+                    <ref role="3cqZAo" node="4qVjx3kqK31" resolve="n" />
+                  </node>
+                  <node concept="Xl_RD" id="71HHyJ2rp8J" role="37wK5m">
+                    <property role="Xl_RC" value="only read effect allowed" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="71HHyJ2rnB8" role="3clFbw">
+            <node concept="37vLTw" id="71HHyJ2rnHH" role="3uHU7w">
+              <ref role="3cqZAo" node="4qVjx3kqK31" resolve="n" />
+            </node>
+            <node concept="2OqwBi" id="71HHyJ2rn3X" role="3uHU7B">
+              <node concept="13iPFW" id="71HHyJ2rmSd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="71HHyJ2rnft" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:7kYh9WszdHG" resolve="val" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4qVjx3kqKiu" role="3cqZAp">
           <node concept="Xl_RD" id="4qVjx3kqKit" role="3clFbG">
-            <property role="Xl_RC" value="key value pair components cannot have an effect" />
+            <property role="Xl_RC" value="key cannot have an effect" />
           </node>
         </node>
       </node>
@@ -2788,6 +2820,36 @@
         <node concept="3Tqbb2" id="4qVjx3kqK32" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="4qVjx3kqK33" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="71HHyJ2rEvk" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="effectDescriptor" />
+      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+      <node concept="3Tm1VV" id="71HHyJ2rEvl" role="1B3o_S" />
+      <node concept="3clFbS" id="71HHyJ2rEvu" role="3clF47">
+        <node concept="3clFbF" id="71HHyJ2rEOr" role="3cqZAp">
+          <node concept="2YIFZM" id="71HHyJ2rER7" role="3clFbG">
+            <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            <ref role="37wK5l" to="oq0c:6GySMNjD8O4" resolve="forNodes" />
+            <node concept="2OqwBi" id="71HHyJ2rF34" role="37wK5m">
+              <node concept="13iPFW" id="71HHyJ2rERK" role="2Oq$k0" />
+              <node concept="3TrEf2" id="71HHyJ2rFgp" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:7kYh9WszdHE" resolve="key" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="71HHyJ2rFET" role="37wK5m">
+              <node concept="13iPFW" id="71HHyJ2rFvg" role="2Oq$k0" />
+              <node concept="3TrEf2" id="71HHyJ2rG7E" role="2OqNvi">
+                <ref role="3Tt5mk" to="700h:7kYh9WszdHG" resolve="val" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="71HHyJ2rEvv" role="3clF45">
+        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7kYh9Ws_VK7">
