@@ -54,7 +54,6 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -13638,8 +13637,8 @@
                 <node concept="3clFbF" id="cCTPXxp_M_" role="3cqZAp">
                   <node concept="2OqwBi" id="cCTPXxpBCA" role="3clFbG">
                     <node concept="pncrf" id="cCTPXxpBm_" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="cCTPXxpEeM" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    <node concept="2qgKlT" id="4ne1DPkgz57" role="2OqNvi">
+                      <ref role="37wK5l" to="3eba:7Atos1ybm9U" resolve="treeViewLabel" />
                     </node>
                   </node>
                 </node>
