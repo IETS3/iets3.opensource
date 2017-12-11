@@ -1478,6 +1478,48 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="60Qa1k_IB6a" role="13h7CS">
+      <property role="TrG5h" value="nestedInitialState" />
+      <node concept="3Tm1VV" id="60Qa1k_IB6b" role="1B3o_S" />
+      <node concept="3Tqbb2" id="60Qa1k_IBUy" role="3clF45">
+        <ref role="ehGHo" to="19m5:7$TgoCYa5Nn" resolve="State" />
+      </node>
+      <node concept="3clFbS" id="60Qa1k_IB6d" role="3clF47">
+        <node concept="3clFbJ" id="60Qa1k_ICOO" role="3cqZAp">
+          <node concept="3clFbS" id="60Qa1k_ICOQ" role="3clFbx">
+            <node concept="3cpWs6" id="60Qa1k_IDw_" role="3cqZAp">
+              <node concept="2OqwBi" id="60Qa1k_IFsf" role="3cqZAk">
+                <node concept="2OqwBi" id="60Qa1k_IEmV" role="2Oq$k0">
+                  <node concept="2OqwBi" id="60Qa1k_IDH5" role="2Oq$k0">
+                    <node concept="13iPFW" id="60Qa1k_IDwH" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="60Qa1k_IE9d" role="2OqNvi">
+                      <ref role="37wK5l" node="3H4W4dizcin" resolve="states" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="60Qa1k_IEV5" role="2OqNvi" />
+                </node>
+                <node concept="2qgKlT" id="60Qa1k_IFUl" role="2OqNvi">
+                  <ref role="37wK5l" node="60Qa1k_IB6a" resolve="nestedInitialState" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="60Qa1k_ID41" role="3clFbw">
+            <node concept="13iPFW" id="60Qa1k_ICPb" role="2Oq$k0" />
+            <node concept="2qgKlT" id="60Qa1k_IDqz" role="2OqNvi">
+              <ref role="37wK5l" node="k9boAu8BKZ" resolve="hasSubstates" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="60Qa1k_IG18" role="9aQIa">
+            <node concept="3clFbS" id="60Qa1k_IG19" role="9aQI4">
+              <node concept="3cpWs6" id="60Qa1k_IG7U" role="3cqZAp">
+                <node concept="13iPFW" id="60Qa1k_IG8h" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="aPhVmWRzSb">
     <property role="3GE5qa" value="machine" />
@@ -1999,14 +2041,19 @@
         <node concept="3clFbJ" id="3H4W4dizfZC" role="3cqZAp">
           <node concept="3clFbS" id="3H4W4dizfZE" role="3clFbx">
             <node concept="3cpWs6" id="3H4W4dizhCm" role="3cqZAp">
-              <node concept="2OqwBi" id="3H4W4dizio8" role="3cqZAk">
-                <node concept="2OqwBi" id="3H4W4dizhOt" role="2Oq$k0">
-                  <node concept="13iPFW" id="3H4W4dizhCu" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="3H4W4dizi5Y" role="2OqNvi">
-                    <ref role="37wK5l" node="3H4W4dizcin" resolve="states" />
+              <node concept="2OqwBi" id="60Qa1k_IGWr" role="3cqZAk">
+                <node concept="2OqwBi" id="3H4W4dizio8" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3H4W4dizhOt" role="2Oq$k0">
+                    <node concept="13iPFW" id="3H4W4dizhCu" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3H4W4dizi5Y" role="2OqNvi">
+                      <ref role="37wK5l" node="3H4W4dizcin" resolve="states" />
+                    </node>
                   </node>
+                  <node concept="1uHKPH" id="60Qa1k_IGz0" role="2OqNvi" />
                 </node>
-                <node concept="1uHKPH" id="3H4W4diziPm" role="2OqNvi" />
+                <node concept="2qgKlT" id="60Qa1k_IHoW" role="2OqNvi">
+                  <ref role="37wK5l" node="60Qa1k_IB6a" resolve="nestedInitialState" />
+                </node>
               </node>
             </node>
           </node>

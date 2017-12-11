@@ -23,6 +23,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
     <import index="uujy" ref="r:41b99bf1-2599-4c6f-86d4-efe6e90bf556(org.iets3.core.expr.process.behavior)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -71,6 +72,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1416,6 +1420,32 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="60Qa1k_KH7G" role="3cqZAp">
+          <node concept="37vLTI" id="60Qa1k_KH7H" role="3clFbG">
+            <node concept="37vLTw" id="60Qa1k_KH7I" role="37vLTx">
+              <ref role="3cqZAo" node="7WFhXJlVWqk" resolve="decision" />
+            </node>
+            <node concept="2OqwBi" id="60Qa1k_KH7J" role="37vLTJ">
+              <node concept="Xjq3P" id="60Qa1k_KH7K" role="2Oq$k0" />
+              <node concept="2OwXpG" id="60Qa1k_KH7L" role="2OqNvi">
+                <ref role="2Oxat5" node="Z4fkwzchJH" resolve="decision" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="60Qa1k_KFO$" role="3cqZAp">
+          <node concept="37vLTI" id="60Qa1k_KFO_" role="3clFbG">
+            <node concept="37vLTw" id="60Qa1k_KFOA" role="37vLTx">
+              <ref role="3cqZAo" node="7WFhXJlVWqk" resolve="decision" />
+            </node>
+            <node concept="2OqwBi" id="60Qa1k_KFOB" role="37vLTJ">
+              <node concept="Xjq3P" id="60Qa1k_KFOC" role="2Oq$k0" />
+              <node concept="2OwXpG" id="60Qa1k_KFOD" role="2OqNvi">
+                <ref role="2Oxat5" node="Z4fkwzchJH" resolve="decision" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="4voDClG$j2f" role="3cqZAp">
           <node concept="3clFbS" id="4voDClG$j2h" role="3clFbx">
             <node concept="3cpWs8" id="4voDClG$lz7" role="3cqZAp">
@@ -1905,8 +1935,31 @@
             <node concept="3clFbF" id="33mFrumnX66" role="3cqZAp">
               <node concept="1rXfSq" id="33mFrumnX64" role="3clFbG">
                 <ref role="37wK5l" to="n9sl:33mFrumn_yw" resolve="reportInvalidCommand" />
-                <node concept="Xl_RD" id="33mFrumnXm8" role="37wK5m">
-                  <property role="Xl_RC" value="Party is not declared in the contract" />
+                <node concept="3cpWs3" id="60Qa1k_LmVQ" role="37wK5m">
+                  <node concept="2OqwBi" id="60Qa1k_LoR2" role="3uHU7w">
+                    <node concept="2OqwBi" id="60Qa1k_LnBO" role="2Oq$k0">
+                      <node concept="Xjq3P" id="60Qa1k_Ln8e" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="60Qa1k_Lodz" role="2OqNvi">
+                        <ref role="2Oxat5" node="Z4fkwzgwWZ" resolve="state" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="60Qa1k_Lplc" role="2OqNvi">
+                      <ref role="2Oxat5" node="VApoyDEZYp" resolve="registeredParties" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="60Qa1k_LdXB" role="3uHU7B">
+                    <node concept="3cpWs3" id="60Qa1k_LdRN" role="3uHU7B">
+                      <node concept="Xl_RD" id="60Qa1k_LdRT" role="3uHU7B">
+                        <property role="Xl_RC" value="Party " />
+                      </node>
+                      <node concept="37vLTw" id="60Qa1k_Le8X" role="3uHU7w">
+                        <ref role="3cqZAo" node="33mFrumo7Jr" resolve="party" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="60Qa1k_LdRV" role="3uHU7w">
+                      <property role="Xl_RC" value=" is not declared in the process; current " />
+                    </node>
+                  </node>
                 </node>
                 <node concept="37vLTw" id="33mFrumnXuc" role="37wK5m">
                   <ref role="3cqZAo" node="33mFrumo8yu" resolve="trace" />
@@ -2780,6 +2833,25 @@
                         <node concept="3uibUv" id="VApoyDLrtX" role="10QFUM">
                           <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
                           <node concept="17QB3L" id="VApoyDLrtY" role="11_B2D" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="60Qa1k_KW8l" role="3cqZAp">
+                    <node concept="2OqwBi" id="60Qa1k_KW8i" role="3clFbG">
+                      <node concept="10M0yZ" id="60Qa1k_KW8j" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                      </node>
+                      <node concept="liA8E" id="60Qa1k_KW8k" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="3cpWs3" id="60Qa1k_KXs8" role="37wK5m">
+                          <node concept="37vLTw" id="60Qa1k_KXHD" role="3uHU7w">
+                            <ref role="3cqZAo" node="VApoyDLnGu" resolve="parties" />
+                          </node>
+                          <node concept="Xl_RD" id="60Qa1k_KWp5" role="3uHU7B">
+                            <property role="Xl_RC" value="parties: " />
+                          </node>
                         </node>
                       </node>
                     </node>
