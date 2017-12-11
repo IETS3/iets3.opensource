@@ -82,6 +82,9 @@
     <node concept="PrWs8" id="5WNmJ7DoRmE" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5WNmJ7DoRmx" resolve="ICollectionType" />
     </node>
+    <node concept="PrWs8" id="60Qa1k_uzVZ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinsw">
     <property role="TrG5h" value="ListType" />
@@ -415,6 +418,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8448265401163110905" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHC">

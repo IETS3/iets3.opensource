@@ -583,6 +583,9 @@
       <property role="IQ2ns" value="7061117989422575859" />
       <ref role="20lvS9" node="67Y8mp$DMUI" resolve="EnumDeclaration" />
     </node>
+    <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="67Y8mp$DN53">
     <property role="3GE5qa" value="enum" />

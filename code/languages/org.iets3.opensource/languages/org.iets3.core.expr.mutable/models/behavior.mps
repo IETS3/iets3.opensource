@@ -27,6 +27,7 @@
       </concept>
     </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -365,6 +366,60 @@
         </node>
       </node>
       <node concept="17QB3L" id="35BERW$gD43" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="60Qa1k_tzQ0" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="60Qa1k_tzQ1" role="1B3o_S" />
+      <node concept="3clFbS" id="60Qa1k_tzQ4" role="3clF47">
+        <node concept="3clFbF" id="60Qa1k_HITV" role="3cqZAp">
+          <node concept="2pJPEk" id="60Qa1k_HITR" role="3clFbG">
+            <node concept="2pJPED" id="60Qa1k_HJa9" role="2pJPEn">
+              <ref role="2pJxaS" to="8lgj:3GdqffBOVwu" resolve="BoxExpression" />
+              <node concept="2pIpSj" id="60Qa1k_HJcC" role="2pJxcM">
+                <ref role="2pIpSl" to="8lgj:3GdqffBOVwy" resolve="value" />
+                <node concept="36biLy" id="60Qa1k_HJdZ" role="2pJxcZ">
+                  <node concept="BsUDl" id="60Qa1k_uyzI" role="36biLW">
+                    <ref role="37wK5l" to="pbu6:60Qa1k_tB0C" resolve="deriveValueFrom" />
+                    <node concept="2OqwBi" id="60Qa1k_uyIL" role="37wK5m">
+                      <node concept="13iPFW" id="60Qa1k_uy$2" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="60Qa1k_uziy" role="2OqNvi">
+                        <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="60Qa1k_tzQ5" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="60Qa1k_t$dH" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="supportsDefault" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_sqM4" resolve="supportsDefault" />
+      <node concept="3Tm1VV" id="60Qa1k_t$dI" role="1B3o_S" />
+      <node concept="3clFbS" id="60Qa1k_t$dN" role="3clF47">
+        <node concept="3clFbF" id="60Qa1k_uznf" role="3cqZAp">
+          <node concept="BsUDl" id="60Qa1k_uzne" role="3clFbG">
+            <ref role="37wK5l" to="pbu6:60Qa1k_t_KP" resolve="deriveSupportFrom" />
+            <node concept="2OqwBi" id="60Qa1k_uzyh" role="37wK5m">
+              <node concept="13iPFW" id="60Qa1k_uzny" role="2Oq$k0" />
+              <node concept="3TrEf2" id="60Qa1k_uzPS" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:3GdqffBKoAn" resolve="baseType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="60Qa1k_t$dO" role="3clF45" />
     </node>
     <node concept="13hLZK" id="3GdqffBKpso" role="13h7CW">
       <node concept="3clFbS" id="3GdqffBKpsp" role="2VODD2" />

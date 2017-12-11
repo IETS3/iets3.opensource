@@ -91,6 +91,9 @@
     <property role="3GE5qa" value="numeric" />
     <property role="EcuMT" value="5115872837157054168" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="60Qa1k_vshl" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6Oerp">
     <property role="TrG5h" value="IntegerType" />
@@ -129,6 +132,9 @@
     <property role="3GE5qa" value="string" />
     <property role="EcuMT" value="5115872837157252551" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="60Qa1k_vswP" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6OYR8">
     <property role="3GE5qa" value="string" />
@@ -185,6 +191,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="prec" />
       <ref role="20lvS9" node="19PglA20qXW" resolve="NumberPrecSpec" />
+    </node>
+    <node concept="PrWs8" id="60Qa1k_nI4f" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="19PglA20qXW">

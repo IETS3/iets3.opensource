@@ -543,6 +543,25 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="qq9P1" id="60Qa1k_qICw" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:60Qa1k_nMSK" resolve="DefaultValueExpression" />
+      <node concept="3vetai" id="60Qa1k_qJR0" role="3vQZUl">
+        <node concept="qpA2v" id="60Qa1k_qJRe" role="3vdyny">
+          <node concept="2OqwBi" id="60Qa1k_qKrz" role="3SLO0q">
+            <node concept="2OqwBi" id="60Qa1k_qJYC" role="2Oq$k0">
+              <node concept="oxGPV" id="60Qa1k_qJRw" role="2Oq$k0" />
+              <node concept="3TrEf2" id="60Qa1k_qK9R" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:60Qa1k_nMSL" resolve="type" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="60Qa1k_qKDQ" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="mQGcCvP$CO" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:mQGcCvPueU" resolve="FailExpr" />

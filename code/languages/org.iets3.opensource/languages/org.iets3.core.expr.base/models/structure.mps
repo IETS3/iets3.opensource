@@ -552,6 +552,9 @@
     <node concept="PrWs8" id="6bG6MAFT807" role="PzmwI">
       <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
     </node>
+    <node concept="PrWs8" id="60Qa1k_uY9x" role="PzmwI">
+      <ref role="PrY4T" node="60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsF5w0">
     <property role="3GE5qa" value="option" />
@@ -1604,6 +1607,23 @@
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="60Qa1k_nI2f">
+    <property role="EcuMT" value="6932772747669856399" />
+    <property role="TrG5h" value="ITypeSupportsDefaultValue" />
+  </node>
+  <node concept="1TIwiD" id="60Qa1k_nMSK">
+    <property role="EcuMT" value="6932772747669876272" />
+    <property role="TrG5h" value="DefaultValueExpression" />
+    <property role="34LRSv" value="default" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="60Qa1k_nMSL" role="1TKVEi">
+      <property role="IQ2ns" value="6932772747669876273" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
 </model>
