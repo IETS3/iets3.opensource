@@ -6744,5 +6744,35 @@
       <node concept="17QB3L" id="1yY6_Uj8$j$" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="5J1JIMjI3Ax">
+    <property role="3GE5qa" value="attributes.specific" />
+    <ref role="13h7C2" to="w9y2:5J1JIMjI3Au" resolve="IBusInstanceAttribute" />
+    <node concept="13hLZK" id="5J1JIMjI3Ay" role="13h7CW">
+      <node concept="3clFbS" id="5J1JIMjI3Az" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5J1JIMjI3AG" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canBeUsedUnder" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" node="1WCh2th1Boz" resolve="canBeUsedUnder" />
+      <node concept="3Tm1VV" id="5J1JIMjI3AH" role="1B3o_S" />
+      <node concept="3clFbS" id="5J1JIMjI3AL" role="3clF47">
+        <node concept="3clFbF" id="5J1JIMjI3D1" role="3cqZAp">
+          <node concept="2ShNRf" id="5J1JIMjI3D3" role="3clFbG">
+            <node concept="2HTt$P" id="5J1JIMjI3D4" role="2ShVmc">
+              <node concept="35c_gC" id="5J1JIMjI3D5" role="2HTEbv">
+                <ref role="35c_gD" to="w9y2:5J1JIMjI3Au" resolve="IBusInstanceAttribute" />
+              </node>
+              <node concept="3bZ5Sz" id="5J1JIMjI3D6" role="2HTBi0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5J1JIMjI3AM" role="3clF45">
+        <node concept="3bZ5Sz" id="5J1JIMjI3AN" role="A3Ik2" />
+      </node>
+    </node>
+  </node>
 </model>
 
