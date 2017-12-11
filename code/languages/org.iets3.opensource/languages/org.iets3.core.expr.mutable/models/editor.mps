@@ -116,6 +116,9 @@
       </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="4526149749187797167" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_StyledText" flags="nn" index="1unZQo" />
+      <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
+        <property id="1075375595204" name="text" index="1xolSY" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -2134,7 +2137,7 @@
     <node concept="3EZMnI" id="4IV0h47dgTX" role="2wV5jI">
       <node concept="2iRfu4" id="4IV0h47dgTY" role="2iSdaV" />
       <node concept="3F0ifn" id="4IV0h47dgTU" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
+        <property role="3F0ifm" value="[" />
         <node concept="11LMrY" id="4IV0h47dgUn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2151,7 +2154,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="4IV0h47dgUh" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
+        <property role="3F0ifm" value="]" />
         <node concept="11L4FC" id="4IV0h47dgUp" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2190,8 +2193,8 @@
   <node concept="24kQdi" id="4IV0h47hCXu">
     <property role="3GE5qa" value="interactor.intercept" />
     <ref role="1XX52x" to="8lgj:4IV0h47hCX3" resolve="AbstractContextArgument" />
-    <node concept="PMmxH" id="4IV0h47hCXw" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    <node concept="1xolST" id="3_9S6lidhPf" role="2wV5jI">
+      <property role="1xolSY" value="&lt;no argument" />
     </node>
   </node>
   <node concept="24kQdi" id="4IV0h47hCY1">

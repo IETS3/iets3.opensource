@@ -176,6 +176,7 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -2131,6 +2132,25 @@
       </node>
       <node concept="3uibUv" id="4IV0h48fszB" role="3clF45">
         <ref role="3uigEE" to="n9sl:4IV0h47VMut" resolve="InterceptorState" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5mZZgpx9i_n">
+    <property role="3GE5qa" value="interactor.intercept" />
+    <ref role="13h7C2" to="8lgj:4IV0h47hCXy" resolve="ContextArgValue" />
+    <node concept="13hLZK" id="5mZZgpx9i_o" role="13h7CW">
+      <node concept="3clFbS" id="5mZZgpx9i_p" role="2VODD2">
+        <node concept="3clFbF" id="5mZZgpx9i_$" role="3cqZAp">
+          <node concept="2OqwBi" id="5mZZgpx9j6B" role="3clFbG">
+            <node concept="2OqwBi" id="5mZZgpx9iGy" role="2Oq$k0">
+              <node concept="13iPFW" id="5mZZgpx9i_z" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5mZZgpx9iQi" role="2OqNvi">
+                <ref role="3Tt5mk" to="8lgj:4IV0h47hCXz" resolve="argument" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="5mZZgpx9jjL" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
