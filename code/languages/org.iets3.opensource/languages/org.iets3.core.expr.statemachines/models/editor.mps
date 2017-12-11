@@ -460,7 +460,7 @@
         <ref role="PMmxG" to="fym6:4IV0h47dgTS" resolve="interceptors" />
       </node>
       <node concept="3F0ifn" id="3H4W4dizjpJ" role="3EZMnx">
-        <property role="3F0ifm" value="[initial]" />
+        <property role="3F0ifm" value="(initial)" />
         <node concept="xShMh" id="3H4W4dizj_L" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
