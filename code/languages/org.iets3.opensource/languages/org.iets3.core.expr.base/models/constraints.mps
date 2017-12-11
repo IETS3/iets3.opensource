@@ -220,7 +220,7 @@
             <node concept="nLn13" id="6b_jefnKxCK" role="2Oq$k0" />
             <node concept="1mIQ4w" id="6b_jefnKxCL" role="2OqNvi">
               <node concept="chp4Y" id="6b_jefnKxCM" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
               </node>
             </node>
           </node>
@@ -1064,7 +1064,7 @@
                 <node concept="2DD5aU" id="6BCTLIjCuGt" role="2Oq$k0" />
                 <node concept="2Zo12i" id="6BCTLIjCuGu" role="2OqNvi">
                   <node concept="chp4Y" id="6BCTLIjCv7x" role="2Zo12j">
-                    <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                    <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
                   </node>
                 </node>
               </node>

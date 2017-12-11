@@ -947,7 +947,7 @@
     </node>
     <node concept="qq9P1" id="UN2ftLW0jk" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+      <ref role="qq9wM" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
       <node concept="3dA_Gj" id="5ye9uPrxpfr" role="3vQZUl">
         <node concept="9aQIb" id="5ye9uPrxpft" role="3vcmbn">
           <node concept="3clFbS" id="5ye9uPrxpfv" role="9aQI4">
@@ -1131,7 +1131,7 @@
               <node concept="3cpWsn" id="5ye9uPrx3Yr" role="3cpWs9">
                 <property role="TrG5h" value="someQuery" />
                 <node concept="3Tqbb2" id="5ye9uPrx3Yk" role="1tU5fm">
-                  <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                  <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
                 </node>
                 <node concept="2OqwBi" id="3kzwyUOEbFc" role="33vP2m">
                   <node concept="oxGPV" id="3kzwyUOEb_R" role="2Oq$k0" />

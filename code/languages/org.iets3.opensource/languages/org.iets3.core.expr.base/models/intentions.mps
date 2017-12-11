@@ -1009,12 +1009,12 @@
           <node concept="3cpWsn" id="5ye9uPrtZ$Y" role="3cpWs9">
             <property role="TrG5h" value="someQuery" />
             <node concept="3Tqbb2" id="5ye9uPrtZ$V" role="1tU5fm">
-              <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+              <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
             </node>
             <node concept="2ShNRf" id="5ye9uPrtZ$Z" role="33vP2m">
               <node concept="3zrR0B" id="5ye9uPrtZ_0" role="2ShVmc">
                 <node concept="3Tqbb2" id="5ye9uPrtZ_1" role="3zrR0E">
-                  <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                  <ref role="ehGHo" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
                 </node>
               </node>
             </node>

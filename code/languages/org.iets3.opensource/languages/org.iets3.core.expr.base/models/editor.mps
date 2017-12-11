@@ -1181,7 +1181,7 @@
   </node>
   <node concept="24kQdi" id="2rOWEwsF5wr">
     <property role="3GE5qa" value="option" />
-    <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+    <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
     <node concept="3EZMnI" id="2rOWEwsF5wt" role="2wV5jI">
       <node concept="3F0ifn" id="2rOWEwsF5w$" role="3EZMnx">
         <property role="3F0ifm" value="isSome" />

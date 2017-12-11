@@ -533,7 +533,7 @@
       <property role="20kJfa" value="someQuery" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1059200196223309236" />
-      <ref role="20lvS9" node="2rOWEwsF5w0" resolve="SomeExpression" />
+      <ref role="20lvS9" node="2rOWEwsF5w0" resolve="IsSomeExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEjcg">
@@ -555,7 +555,7 @@
   </node>
   <node concept="1TIwiD" id="2rOWEwsF5w0">
     <property role="3GE5qa" value="option" />
-    <property role="TrG5h" value="SomeExpression" />
+    <property role="TrG5h" value="IsSomeExpression" />
     <property role="34LRSv" value="isSome" />
     <property role="EcuMT" value="2807135271608145920" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
