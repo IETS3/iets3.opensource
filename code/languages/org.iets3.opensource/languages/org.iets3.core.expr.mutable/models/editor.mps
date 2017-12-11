@@ -296,6 +296,12 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
+        <property id="7122083600696909496" name="falseText" index="2aYyvO" />
+        <property id="7122083600696906118" name="trueText" index="2aYyza" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -2291,6 +2297,23 @@
       </node>
       <node concept="3F1sOY" id="4IV0h47QL5q" role="3EZMnx">
         <ref role="1NtTu8" to="8lgj:4IV0h47QL4o" resolve="time" />
+      </node>
+      <node concept="3F0ifn" id="5mZZgpx1f$R" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="11L4FC" id="5mZZgpx22tE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5mZZgpx22tJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2aMyGU" id="5mZZgpx1f_j" role="3EZMnx">
+        <property role="2aYyza" value="commands-only" />
+        <property role="2aYyvO" value="every interaction" />
+        <ref role="1NtTu8" to="8lgj:5mZZgpx1f$C" resolve="commandsOnly" />
+        <node concept="Vb9p2" id="5mZZgpx1f__" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4IV0h47QL3R" role="3EZMnx">
         <property role="3F0ifm" value=")" />
