@@ -2439,6 +2439,59 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="AYZEgqdxjn" role="3cqZAp" />
+              <node concept="3SKdUt" id="AYZEgqdCQO" role="3cqZAp">
+                <node concept="3SKdUq" id="AYZEgqdCQQ" role="3SKWNk">
+                  <property role="3SKdUp" value="Probably a number should be a subtype of all numbers with the same" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="AYZEgqdD3N" role="3cqZAp">
+                <node concept="3SKdUq" id="AYZEgqdD3P" role="3SKWNk">
+                  <property role="3SKdUp" value="range or larger range and the same or higher precision" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="AYZEgqdDeK" role="3cqZAp">
+                <node concept="3SKdUq" id="AYZEgqdDeM" role="3SKWNk">
+                  <property role="3SKdUp" value="however I am not sure it is possible to represent that in MPS" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="AYZEgqdxtu" role="3cqZAp">
+                <node concept="3cpWsn" id="AYZEgqdxtv" role="3cpWs9">
+                  <property role="TrG5h" value="ntWithInfinitePrecision" />
+                  <node concept="3Tqbb2" id="AYZEgqdxtw" role="1tU5fm">
+                    <ref role="ehGHo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                  </node>
+                  <node concept="2ShNRf" id="AYZEgqdxtx" role="33vP2m">
+                    <node concept="3zrR0B" id="AYZEgqdxty" role="2ShVmc">
+                      <node concept="3Tqbb2" id="AYZEgqdxtz" role="3zrR0E">
+                        <ref role="ehGHo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="AYZEgqdzlo" role="3cqZAp">
+                <node concept="2OqwBi" id="AYZEgqdzK1" role="3clFbG">
+                  <node concept="37vLTw" id="AYZEgqdzlm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="AYZEgqdxtv" resolve="ntWithInfinitePrecision" />
+                  </node>
+                  <node concept="2qgKlT" id="AYZEgqd$00" role="2OqNvi">
+                    <ref role="37wK5l" to="b1h1:7Wa2sv3G6bK" resolve="setInfinitePrecision" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="AYZEgqdxtC" role="3cqZAp">
+                <node concept="2OqwBi" id="AYZEgqdxtD" role="3clFbG">
+                  <node concept="37vLTw" id="AYZEgqdxtE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Wa2sv3FXgQ" resolve="supers" />
+                  </node>
+                  <node concept="TSZUe" id="AYZEgqdxtF" role="2OqNvi">
+                    <node concept="37vLTw" id="AYZEgqdxtG" role="25WWJ7">
+                      <ref role="3cqZAo" node="AYZEgqdxtv" resolve="ntWithInfinitePrecision" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="3gjm1nJOgVi" role="3clFbw">
               <node concept="1YBJjd" id="3gjm1nJOgVj" role="2Oq$k0">

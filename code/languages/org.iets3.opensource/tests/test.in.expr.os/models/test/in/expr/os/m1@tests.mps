@@ -2,18 +2,18 @@
 <model ref="r:cd8f023a-94dd-4e45-bbf0-a419cfafa530(test.in.expr.os.m1@tests)">
   <persistence version="9" />
   <languages>
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
-    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
-    <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="-1" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
-    <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="-1" />
-    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
-    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
+    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="0" />
+    <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="0" />
+    <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="0" />
+    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
+    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
   </languages>
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
@@ -201,7 +201,7 @@
       <concept id="6527211908668938616" name="org.iets3.core.expr.base.structure.DocWordRef" flags="ng" index="2Jv0Bt">
         <reference id="6527211908668938619" name="node" index="2Jv0Bu" />
       </concept>
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
+      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
       </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt">
@@ -362,10 +362,6 @@
       </concept>
       <concept id="4874335060898975312" name="org.iets3.core.expr.tests.structure.InvalidValueTestItem" flags="ng" index="3uI9eT">
         <child id="4874335060898991569" name="actual" index="3uId0S" />
-      </concept>
-      <concept id="6137388456558201473" name="org.iets3.core.expr.tests.structure.ForceCastExpr" flags="ng" index="3$$6z9">
-        <child id="6137388456558201483" name="targetType" index="3$$6z3" />
-        <child id="6137388456558232927" name="expr" index="3$$esn" />
       </concept>
       <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
         <property id="993724751390561557" name="label" index="1QVVTK" />
@@ -10289,16 +10285,8 @@
       <node concept="mXNUv" id="6iJ_gQCTH89" role="_fkp5">
         <node concept="1QScDb" id="6iJ_gQCTHT$" role="mXJVd">
           <node concept="2iGZtc" id="6iJ_gQCTHY1" role="1QScD9">
-            <node concept="3$$6z9" id="5kGo$yLKYWm" role="2iGZtd">
-              <node concept="mLuIC" id="5kGo$yLKZ1d" role="3$$6z3">
-                <node concept="2gteSW" id="5kGo$yLKZ5T" role="2gteSx">
-                  <property role="2gteSQ" value="1" />
-                  <property role="2gteSD" value="3" />
-                </node>
-              </node>
-              <node concept="30bXRB" id="5kGo$yLKZkd" role="3$$esn">
-                <property role="30bXRw" value="7" />
-              </node>
+            <node concept="30bXRB" id="6iJ_gQCTHYD" role="2iGZtd">
+              <property role="30bXRw" value="7" />
             </node>
           </node>
           <node concept="_emDc" id="6iJ_gQCTHTi" role="30czhm">
