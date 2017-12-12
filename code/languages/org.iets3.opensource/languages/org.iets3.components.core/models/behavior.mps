@@ -4448,11 +4448,6 @@
       <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="sTlw1X$JI" role="1B3o_S" />
       <node concept="3clFbS" id="sTlw1X$JL" role="3clF47">
-        <node concept="3SKdUt" id="sTlw1X_8q" role="3cqZAp">
-          <node concept="3SKdUq" id="sTlw1X$J2" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: AbstractConnector needs a type" />
-          </node>
-        </node>
         <node concept="3clFbF" id="sTlw1X_5e" role="3cqZAp">
           <node concept="13iPFW" id="sTlw1X_5d" role="3clFbG" />
         </node>
