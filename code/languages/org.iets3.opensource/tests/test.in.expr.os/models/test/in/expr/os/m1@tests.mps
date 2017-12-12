@@ -366,10 +366,6 @@
       <concept id="4874335060898975312" name="org.iets3.core.expr.tests.structure.InvalidValueTestItem" flags="ng" index="3uI9eT">
         <child id="4874335060898991569" name="actual" index="3uId0S" />
       </concept>
-      <concept id="6137388456558201473" name="org.iets3.core.expr.tests.structure.ForceCastExpr" flags="ng" index="3$$6z9">
-        <child id="6137388456558201483" name="targetType" index="3$$6z3" />
-        <child id="6137388456558232927" name="expr" index="3$$esn" />
-      </concept>
       <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
         <property id="993724751390561557" name="label" index="1QVVTK" />
         <property id="993724751390561559" name="value" index="1QVVTM" />
@@ -10292,16 +10288,8 @@
       <node concept="mXNUv" id="6iJ_gQCTH89" role="_fkp5">
         <node concept="1QScDb" id="6iJ_gQCTHT$" role="mXJVd">
           <node concept="2iGZtc" id="6iJ_gQCTHY1" role="1QScD9">
-            <node concept="3$$6z9" id="5kGo$yLKYWm" role="2iGZtd">
-              <node concept="mLuIC" id="5kGo$yLKZ1d" role="3$$6z3">
-                <node concept="2gteSW" id="5kGo$yLKZ5T" role="2gteSx">
-                  <property role="2gteSQ" value="1" />
-                  <property role="2gteSD" value="3" />
-                </node>
-              </node>
-              <node concept="30bXRB" id="5kGo$yLKZkd" role="3$$esn">
-                <property role="30bXRw" value="7" />
-              </node>
+            <node concept="30bXRB" id="6iJ_gQCTHYD" role="2iGZtd">
+              <property role="30bXRw" value="7" />
             </node>
           </node>
           <node concept="_emDc" id="6iJ_gQCTHTi" role="30czhm">
