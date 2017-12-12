@@ -71,10 +71,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
-      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -316,9 +312,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -426,11 +419,11 @@
                       <ref role="3cqZAo" node="4J6AqiIV0Qb" resolve="o" />
                     </node>
                     <node concept="3EllGN" id="4J6AqiIV0Qn" role="37vLTJ">
-                      <node concept="10M0yZ" id="4J6AqiIV0Qo" role="3ElVtu">
-                        <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                        <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                      </node>
                       <node concept="TvHiN" id="4J6AqiIV0Qp" role="3ElQJh" />
+                      <node concept="10M0yZ" id="5hiN5Pkvvgd" role="3ElVtu">
+                        <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                        <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -485,6 +478,46 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="5hiN5PlbY7n" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="19m5:5hiN5PknPXz" resolve="TimeSinceLastTriggeredTransition" />
+      <node concept="3dA_Gj" id="5hiN5PlbYUC" role="3vQZUl">
+        <node concept="9aQIb" id="5hiN5PlbYUD" role="3vcmbn">
+          <node concept="3clFbS" id="5hiN5PlbYUE" role="9aQI4">
+            <node concept="3cpWs8" id="5hiN5PlbYUF" role="3cqZAp">
+              <node concept="3cpWsn" id="5hiN5PlbYUG" role="3cpWs9">
+                <property role="TrG5h" value="currentMachine" />
+                <node concept="3uibUv" id="5hiN5PlbYUH" role="1tU5fm">
+                  <ref role="3uigEE" node="7$TgoCYaVTr" resolve="SmValue" />
+                </node>
+                <node concept="10QFUN" id="5hiN5PlbYUI" role="33vP2m">
+                  <node concept="3EllGN" id="5hiN5PlbYUJ" role="10QFUP">
+                    <node concept="TvHiN" id="5hiN5PlbYUK" role="3ElQJh" />
+                    <node concept="10M0yZ" id="5hiN5PlbYUL" role="3ElVtu">
+                      <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                      <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                    </node>
+                  </node>
+                  <node concept="3uibUv" id="5hiN5PlbYUM" role="10QFUM">
+                    <ref role="3uigEE" node="7$TgoCYaVTr" resolve="SmValue" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5hiN5PlbYUN" role="3cqZAp">
+              <node concept="2OqwBi" id="5hiN5PlbYUO" role="3cqZAk">
+                <node concept="37vLTw" id="5hiN5PlbYUP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5hiN5PlbYUG" resolve="currentMachine" />
+                </node>
+                <node concept="liA8E" id="5hiN5PlbYUQ" role="2OqNvi">
+                  <ref role="37wK5l" node="5hiN5PknVi$" resolve="timeSinceLastTriggeredTransition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="7Z_fDCwqfdH" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="19m5:7Z_fDCwocxQ" resolve="TimeInStateExpr" />
@@ -499,11 +532,11 @@
                 </node>
                 <node concept="10QFUN" id="7Z_fDCwqfYA" role="33vP2m">
                   <node concept="3EllGN" id="7Z_fDCwqfYB" role="10QFUP">
-                    <node concept="10M0yZ" id="7Z_fDCwqfYC" role="3ElVtu">
-                      <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                      <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                    </node>
                     <node concept="TvHiN" id="7Z_fDCwqfYD" role="3ElQJh" />
+                    <node concept="10M0yZ" id="5hiN5PkvvdM" role="3ElVtu">
+                      <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                      <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                    </node>
                   </node>
                   <node concept="3uibUv" id="7Z_fDCwqfYE" role="10QFUM">
                     <ref role="3uigEE" node="7$TgoCYaVTr" resolve="SmValue" />
@@ -539,11 +572,11 @@
                 </node>
                 <node concept="10QFUN" id="4pyjK6aXHNW" role="33vP2m">
                   <node concept="3EllGN" id="4pyjK6aXHNX" role="10QFUP">
-                    <node concept="10M0yZ" id="4pyjK6aXHNY" role="3ElVtu">
-                      <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                      <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                    </node>
                     <node concept="TvHiN" id="4pyjK6aXHNZ" role="3ElQJh" />
+                    <node concept="10M0yZ" id="5hiN5Pkvv8M" role="3ElVtu">
+                      <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                      <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                    </node>
                   </node>
                   <node concept="3uibUv" id="4pyjK6aXHO0" role="10QFUM">
                     <ref role="3uigEE" node="7$TgoCYaVTr" resolve="SmValue" />
@@ -645,6 +678,12 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="d$4Dx" id="5hiN5Pkr6jH" role="d$6nW">
+      <node concept="BaHAS" id="5hiN5Pkr6jI" role="cpn$n">
+        <property role="BaHAW" value="org.iets3.core.expr.statemachines.structure" />
+        <property role="BaGAP" value="" />
+      </node>
+    </node>
     <node concept="qq9P1" id="7$TgoCYm3xQ" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="19m5:7$TgoCYhZdt" resolve="Action" />
@@ -694,11 +733,11 @@
                   <ref role="3cqZAo" node="YMJl2BKj_c" resolve="value" />
                 </node>
                 <node concept="3EllGN" id="4pyjK6aYt$g" role="37vLTJ">
-                  <node concept="10M0yZ" id="4pyjK6aYt$h" role="3ElVtu">
-                    <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                    <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                  </node>
                   <node concept="TvHiN" id="4pyjK6aYt$i" role="3ElQJh" />
+                  <node concept="10M0yZ" id="5hiN5Pkvv2B" role="3ElVtu">
+                    <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                    <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -759,11 +798,11 @@
                 </node>
                 <node concept="10QFUN" id="YMJl2BJY66" role="33vP2m">
                   <node concept="3EllGN" id="YMJl2BJY63" role="10QFUP">
-                    <node concept="10M0yZ" id="YMJl2BJY64" role="3ElVtu">
-                      <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                      <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                    </node>
                     <node concept="TvHiN" id="YMJl2BJY65" role="3ElQJh" />
+                    <node concept="10M0yZ" id="5hiN5PkvuU_" role="3ElVtu">
+                      <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                      <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                    </node>
                   </node>
                   <node concept="3uibUv" id="YMJl2BJYdJ" role="10QFUM">
                     <ref role="3uigEE" node="7$TgoCYaVTr" resolve="SmValue" />
@@ -987,11 +1026,11 @@
                       <ref role="3cqZAo" node="3GdqffBQZO9" resolve="o" />
                     </node>
                     <node concept="3EllGN" id="YMJl2BJX8h" role="37vLTJ">
-                      <node concept="10M0yZ" id="YMJl2BJXc5" role="3ElVtu">
-                        <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-                        <ref role="1PxDUh" node="7$TgoCYaVTr" resolve="SmValue" />
-                      </node>
                       <node concept="TvHiN" id="YMJl2BJWiy" role="3ElQJh" />
+                      <node concept="10M0yZ" id="5hiN5Pkvv0u" role="3ElVtu">
+                        <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
+                        <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1070,23 +1109,7 @@
     <node concept="3uibUv" id="7bd8pkkvws3" role="1zkMxy">
       <ref role="3uigEE" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
     </node>
-    <node concept="2tJIrI" id="7$TgoCYaWeA" role="jymVt" />
-    <node concept="Wx3nA" id="YMJl2BJSgv" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="3TUv4t" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="THIS" />
-      <node concept="3Tqbb2" id="YMJl2BJStU" role="1tU5fm" />
-      <node concept="3Tm1VV" id="YMJl2BJSgx" role="1B3o_S" />
-      <node concept="2ShNRf" id="YMJl2BJSuN" role="33vP2m">
-        <node concept="3zrR0B" id="YMJl2BJSuB" role="2ShVmc">
-          <node concept="3Tqbb2" id="YMJl2BJSuC" role="3zrR0E">
-            <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="YMJl2BJT8D" role="jymVt" />
+    <node concept="2tJIrI" id="5hiN5PkrmVD" role="jymVt" />
     <node concept="312cEg" id="7$TgoCYaWs2" role="jymVt">
       <property role="TrG5h" value="myMachine" />
       <node concept="3Tm6S6" id="7$TgoCYaWs3" role="1B3o_S" />
@@ -1268,6 +1291,27 @@
               </node>
               <node concept="2OwXpG" id="7Z_fDCwpNmm" role="2OqNvi">
                 <ref role="2Oxat5" node="7Z_fDCwp$9g" resolve="currentStateEntryTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5hiN5Pkoh9E" role="3cqZAp">
+          <node concept="37vLTI" id="5hiN5Pkoh9F" role="3clFbG">
+            <node concept="2OqwBi" id="5hiN5Pkoh9G" role="37vLTx">
+              <node concept="2YIFZM" id="5hiN5Pkoh9H" role="2Oq$k0">
+                <ref role="37wK5l" to="n9sl:3iESbJsDQmf" resolve="clock" />
+                <ref role="1Pybhc" to="n9sl:3iESbJsDPbV" resolve="GlobalClockContainer" />
+              </node>
+              <node concept="liA8E" id="5hiN5Pkoh9I" role="2OqNvi">
+                <ref role="37wK5l" to="n9sl:3iESbJsCvle" resolve="timeMillis" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5hiN5Pkoh9J" role="37vLTJ">
+              <node concept="37vLTw" id="5hiN5Pkoh9K" role="2Oq$k0">
+                <ref role="3cqZAo" node="7$TgoCYaZao" resolve="data" />
+              </node>
+              <node concept="2OwXpG" id="5hiN5PkoiiD" role="2OqNvi">
+                <ref role="2Oxat5" node="5hiN5PkocEk" resolve="lastTriggeredTransitionTime" />
               </node>
             </node>
           </node>
@@ -2103,6 +2147,12 @@
                         <node concept="2GrUjf" id="4IV0h48eQCa" role="37wK5m">
                           <ref role="2Gs0qQ" node="4IV0h47hi8J" resolve="i" />
                         </node>
+                        <node concept="37vLTw" id="31Hpwbwn0Va" role="37wK5m">
+                          <ref role="3cqZAo" node="4IV0h47hjpT" resolve="ctx" />
+                        </node>
+                        <node concept="37vLTw" id="31Hpwbwn1_J" role="37wK5m">
+                          <ref role="3cqZAo" node="4IV0h47hmGg" resolve="trace" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2288,11 +2338,12 @@
           <node concept="37vLTI" id="7bd8pkk_nve" role="3clFbG">
             <node concept="Xjq3P" id="7bd8pkkAyzM" role="37vLTx" />
             <node concept="3EllGN" id="7bd8pkk_nvg" role="37vLTJ">
-              <node concept="37vLTw" id="60Qa1k_OmtH" role="3ElVtu">
-                <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-              </node>
               <node concept="1rXfSq" id="7bd8pkkAyds" role="3ElQJh">
                 <ref role="37wK5l" node="7bd8pkkAbu2" resolve="env" />
+              </node>
+              <node concept="10M0yZ" id="5hiN5PkvsQf" role="3ElVtu">
+                <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
+                <ref role="1PxDUh" to="n9sl:7WFhXJlVUmN" resolve="InteractorValue" />
               </node>
             </node>
           </node>
@@ -2959,6 +3010,27 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="5hiN5Pkon$b" role="3cqZAp">
+                  <node concept="37vLTI" id="5hiN5PkopDj" role="3clFbG">
+                    <node concept="2OqwBi" id="5hiN5PkoqFg" role="37vLTx">
+                      <node concept="2YIFZM" id="5hiN5Pkoqw$" role="2Oq$k0">
+                        <ref role="37wK5l" to="n9sl:3iESbJsDQmf" resolve="clock" />
+                        <ref role="1Pybhc" to="n9sl:3iESbJsDPbV" resolve="GlobalClockContainer" />
+                      </node>
+                      <node concept="liA8E" id="5hiN5PkoqWQ" role="2OqNvi">
+                        <ref role="37wK5l" to="n9sl:3iESbJsCvle" resolve="timeMillis" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5hiN5Pkooe_" role="37vLTJ">
+                      <node concept="37vLTw" id="5hiN5Pkon$9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7$TgoCYaZao" resolve="data" />
+                      </node>
+                      <node concept="2OwXpG" id="5hiN5Pkop7N" role="2OqNvi">
+                        <ref role="2Oxat5" node="5hiN5PkocEk" resolve="lastTriggeredTransitionTime" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="7bd8pkk_n$c" role="3cqZAp">
                   <node concept="37vLTI" id="7bd8pkk_n$d" role="3clFbG">
                     <node concept="3clFbT" id="7bd8pkk_n$e" role="37vLTx">
@@ -3129,11 +3201,11 @@
           <node concept="37vLTI" id="5kGo$yL_kUZ" role="3clFbG">
             <node concept="Xjq3P" id="5kGo$yL_kV0" role="37vLTx" />
             <node concept="3EllGN" id="5kGo$yL_kV1" role="37vLTJ">
-              <node concept="37vLTw" id="5kGo$yL_kVM" role="3ElVtu">
-                <ref role="3cqZAo" node="YMJl2BJSgv" resolve="THIS" />
-              </node>
               <node concept="1rXfSq" id="5kGo$yL_kV2" role="3ElQJh">
                 <ref role="37wK5l" node="7bd8pkkAbu2" resolve="env" />
+              </node>
+              <node concept="37vLTw" id="5hiN5PkvtvR" role="3ElVtu">
+                <ref role="3cqZAo" to="n9sl:5hiN5PkvndQ" resolve="THIS" />
               </node>
             </node>
           </node>
@@ -3977,9 +4049,135 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5hiN5PknYOR" role="jymVt" />
+    <node concept="3clFb_" id="5hiN5PknVi$" role="jymVt">
+      <property role="TrG5h" value="timeSinceLastTriggeredTransition" />
+      <node concept="3uibUv" id="5hiN5PknVi_" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+      </node>
+      <node concept="3Tm1VV" id="5hiN5PknViA" role="1B3o_S" />
+      <node concept="3clFbS" id="5hiN5PknViB" role="3clF47">
+        <node concept="3cpWs8" id="5hiN5PknViC" role="3cqZAp">
+          <node concept="3cpWsn" id="5hiN5PknViD" role="3cpWs9">
+            <property role="TrG5h" value="entered" />
+            <node concept="3uibUv" id="5hiN5PknViE" role="1tU5fm">
+              <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+            </node>
+            <node concept="2OqwBi" id="5hiN5PknViF" role="33vP2m">
+              <node concept="2OqwBi" id="5hiN5PknViG" role="2Oq$k0">
+                <node concept="Xjq3P" id="5hiN5PknViH" role="2Oq$k0" />
+                <node concept="2OwXpG" id="5hiN5PknViI" role="2OqNvi">
+                  <ref role="2Oxat5" node="7$TgoCYaZao" resolve="data" />
+                </node>
+              </node>
+              <node concept="2OwXpG" id="5hiN5PknViJ" role="2OqNvi">
+                <ref role="2Oxat5" node="7Z_fDCwp$9g" resolve="currentStateEntryTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5hiN5PknViK" role="3cqZAp">
+          <node concept="2OqwBi" id="5hiN5PknViL" role="3clFbG">
+            <node concept="2OqwBi" id="5hiN5PknViM" role="2Oq$k0">
+              <node concept="2YIFZM" id="5hiN5PknViN" role="2Oq$k0">
+                <ref role="37wK5l" to="n9sl:3iESbJsDQmf" resolve="clock" />
+                <ref role="1Pybhc" to="n9sl:3iESbJsDPbV" resolve="GlobalClockContainer" />
+              </node>
+              <node concept="liA8E" id="5hiN5PknViO" role="2OqNvi">
+                <ref role="37wK5l" to="n9sl:3iESbJsCvle" resolve="timeMillis" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5hiN5PknViP" role="2OqNvi">
+              <ref role="37wK5l" to="xlxw:~BigInteger.subtract(java.math.BigInteger):java.math.BigInteger" resolve="subtract" />
+              <node concept="37vLTw" id="5hiN5PknViQ" role="37wK5m">
+                <ref role="3cqZAo" node="5hiN5PknViD" resolve="entered" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5kGo$yL$Rpk" role="jymVt" />
     <node concept="2tJIrI" id="7bd8pkkvLqG" role="jymVt" />
     <node concept="3Tm1VV" id="7$TgoCYaVTs" role="1B3o_S" />
+    <node concept="3clFb_" id="5hiN5PkJSAb" role="jymVt">
+      <property role="TrG5h" value="getSubstate" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="3uibUv" id="5hiN5Pl3gwQ" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="5hiN5PkJSAd" role="1B3o_S" />
+      <node concept="37vLTG" id="5hiN5PkJSAf" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="5hiN5PkJSAg" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="31Hpwbwn2bl" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="31Hpwbwn5nu" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="31Hpwbwn5XR" role="3clF46">
+        <property role="TrG5h" value="trace" />
+        <node concept="3uibUv" id="31Hpwbwn8pa" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5hiN5PkJSAh" role="3clF47">
+        <node concept="3clFbJ" id="5hiN5Pl3uZ1" role="3cqZAp">
+          <node concept="3clFbS" id="5hiN5Pl3uZ3" role="3clFbx">
+            <node concept="3cpWs6" id="5hiN5Pl3xHU" role="3cqZAp">
+              <node concept="2OqwBi" id="5hiN5Pl3xHW" role="3cqZAk">
+                <node concept="2OqwBi" id="5hiN5Pl3xHX" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5hiN5Pl3xHY" role="2Oq$k0">
+                    <node concept="Xjq3P" id="5hiN5Pl3xHZ" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="5hiN5Pl3xI0" role="2OqNvi">
+                      <ref role="2Oxat5" node="7$TgoCYaZao" resolve="data" />
+                    </node>
+                  </node>
+                  <node concept="2OwXpG" id="5hiN5Pl3xI1" role="2OqNvi">
+                    <ref role="2Oxat5" node="4IV0h48ewe3" resolve="interceptorState" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5hiN5Pl3xI2" role="2OqNvi">
+                  <ref role="37wK5l" to="n9sl:4IV0h48eh6n" resolve="getState" />
+                  <node concept="1PxgMI" id="5hiN5Pl3xI3" role="37wK5m">
+                    <node concept="chp4Y" id="5hiN5Pl3xI4" role="3oSUPX">
+                      <ref role="cht4Q" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
+                    </node>
+                    <node concept="37vLTw" id="5hiN5Pl3xI5" role="1m5AlR">
+                      <ref role="3cqZAo" node="5hiN5PkJSAf" resolve="n" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="31Hpwbwnd0V" role="37wK5m">
+                    <ref role="3cqZAo" node="31Hpwbwn2bl" resolve="ctx" />
+                  </node>
+                  <node concept="37vLTw" id="31Hpwbwnjk8" role="37wK5m">
+                    <ref role="3cqZAo" node="31Hpwbwn5XR" resolve="trace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5hiN5Pl3wR8" role="3clFbw">
+            <node concept="37vLTw" id="5hiN5Pl3wFS" role="2Oq$k0">
+              <ref role="3cqZAo" node="5hiN5PkJSAf" resolve="n" />
+            </node>
+            <node concept="1mIQ4w" id="5hiN5Pl3xwQ" role="2OqNvi">
+              <node concept="chp4Y" id="5hiN5Pl3xzr" role="cj9EA">
+                <ref role="cht4Q" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5hiN5Pl3HGB" role="3cqZAp">
+          <node concept="10Nm6u" id="5hiN5Pl3HLz" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5hiN5PkJSAi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="7$TgoCYaYyc">
     <property role="TrG5h" value="SmInternalData" />
@@ -3998,6 +4196,13 @@
       <property role="TrG5h" value="currentStateEntryTime" />
       <node concept="3Tm1VV" id="7Z_fDCwp$9h" role="1B3o_S" />
       <node concept="3uibUv" id="7Z_fDCwpK3_" role="1tU5fm">
+        <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+      </node>
+    </node>
+    <node concept="312cEg" id="5hiN5PkocEk" role="jymVt">
+      <property role="TrG5h" value="lastTriggeredTransitionTime" />
+      <node concept="3Tm1VV" id="5hiN5PkocEl" role="1B3o_S" />
+      <node concept="3uibUv" id="5hiN5PkocEm" role="1tU5fm">
         <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
       </node>
     </node>
@@ -4070,6 +4275,22 @@
             </node>
             <node concept="37vLTw" id="7Z_fDCwq7Dm" role="37vLTJ">
               <ref role="3cqZAo" node="7Z_fDCwp$9g" resolve="currentStateEntryTime" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5hiN5Pkod$5" role="3cqZAp">
+          <node concept="37vLTI" id="5hiN5Pkod$6" role="3clFbG">
+            <node concept="2OqwBi" id="5hiN5Pkod$7" role="37vLTx">
+              <node concept="2YIFZM" id="5hiN5Pkod$8" role="2Oq$k0">
+                <ref role="1Pybhc" to="n9sl:3iESbJsDPbV" resolve="GlobalClockContainer" />
+                <ref role="37wK5l" to="n9sl:3iESbJsDQmf" resolve="clock" />
+              </node>
+              <node concept="liA8E" id="5hiN5Pkod$9" role="2OqNvi">
+                <ref role="37wK5l" to="n9sl:3iESbJsCvle" resolve="timeMillis" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5hiN5PkodLg" role="37vLTJ">
+              <ref role="3cqZAo" node="5hiN5PkocEk" resolve="lastTriggeredTransitionTime" />
             </node>
           </node>
         </node>

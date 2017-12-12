@@ -2311,5 +2311,27 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="5hiN5PknQs$">
+    <property role="3GE5qa" value="machine" />
+    <ref role="13h7C2" to="19m5:5hiN5PknPXz" resolve="TimeSinceLastTriggeredTransition" />
+    <node concept="13i0hz" id="5hiN5PknQsJ" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="5hiN5PknQsK" role="1B3o_S" />
+      <node concept="3clFbS" id="5hiN5PknQsL" role="3clF47">
+        <node concept="3clFbF" id="5hiN5PknQsM" role="3cqZAp">
+          <node concept="Xl_RD" id="5hiN5PknQsN" role="3clFbG">
+            <property role="Xl_RC" value="timeSinceLastTriggeredTransition" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5hiN5PknQsO" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="5hiN5PknQs_" role="13h7CW">
+      <node concept="3clFbS" id="5hiN5PknQsA" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

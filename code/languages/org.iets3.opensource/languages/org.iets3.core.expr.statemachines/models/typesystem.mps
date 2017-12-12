@@ -958,5 +958,30 @@
       <ref role="1YaFvo" to="19m5:5kGo$yLzmgH" resolve="PokeTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5hiN5PknQtW">
+    <property role="TrG5h" value="typeof_TimeSinceLastTriggeredTransition" />
+    <property role="3GE5qa" value="machine" />
+    <node concept="3clFbS" id="5hiN5PknQtX" role="18ibNy">
+      <node concept="1Z5TYs" id="5hiN5PknQu3" role="3cqZAp">
+        <node concept="mw_s8" id="5hiN5PknQu4" role="1ZfhKB">
+          <node concept="2YIFZM" id="5hiN5PknQu5" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5hiN5PknQu6" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5hiN5PknQu7" role="mwGJk">
+            <node concept="1YBJjd" id="5hiN5PknQvK" role="1Z2MuG">
+              <ref role="1YBMHb" node="5hiN5PknQtZ" resolve="tt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5hiN5PknQtZ" role="1YuTPh">
+      <property role="TrG5h" value="tt" />
+      <ref role="1YaFvo" to="19m5:5hiN5PknPXz" resolve="TimeSinceLastTriggeredTransition" />
+    </node>
+  </node>
 </model>
 

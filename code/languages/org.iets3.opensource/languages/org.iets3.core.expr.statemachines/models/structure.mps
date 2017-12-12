@@ -618,5 +618,12 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5hiN5PknPXz">
+    <property role="EcuMT" value="6076143548495781731" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="TimeSinceLastTriggeredTransition" />
+    <property role="34LRSv" value="timeSinceLastTriggeredTransition" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 
