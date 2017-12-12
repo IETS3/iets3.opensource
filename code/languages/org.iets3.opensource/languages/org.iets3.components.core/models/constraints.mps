@@ -2554,8 +2554,8 @@
                       <ref role="3Tt5mk" to="w9y2:9D0IlqBEs5" resolve="component" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5$ENVmWE8xO" role="2OqNvi">
-                    <ref role="37wK5l" to="3eba:7Zvsa54vnYI" resolve="allContents" />
+                  <node concept="2qgKlT" id="6oHdIffnBkc" role="2OqNvi">
+                    <ref role="37wK5l" to="3eba:siw10FnrMt" resolve="allSubstructure" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5$ENVmWEijI" role="2OqNvi">
