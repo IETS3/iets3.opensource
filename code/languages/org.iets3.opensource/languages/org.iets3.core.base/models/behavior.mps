@@ -1345,28 +1345,5 @@
       <node concept="3clFbS" id="3QX5db_zS9x" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="5eAon2mq24s">
-    <ref role="13h7C2" to="4kwy:5eAon2mq23Y" resolve="ISimplifiedValidNamedConcept" />
-    <node concept="13hLZK" id="5eAon2mq24t" role="13h7CW">
-      <node concept="3clFbS" id="5eAon2mq24u" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="5eAon2mq2s3" role="13h7CS">
-      <property role="TrG5h" value="allowEverythingExceptWhitespace" />
-      <property role="2Ki8OM" value="true" />
-      <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="64w0Iq2$5zE" resolve="allowEverythingExceptWhitespace" />
-      <node concept="3Tm1VV" id="5eAon2mq2s4" role="1B3o_S" />
-      <node concept="3clFbS" id="5eAon2mq2s9" role="3clF47">
-        <node concept="3clFbF" id="5eAon2mq2vR" role="3cqZAp">
-          <node concept="3clFbT" id="5eAon2mq2vQ" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="5eAon2mq2sa" role="3clF45" />
-    </node>
-  </node>
 </model>
 

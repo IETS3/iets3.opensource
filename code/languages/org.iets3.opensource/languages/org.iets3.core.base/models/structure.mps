@@ -69,8 +69,8 @@
   <node concept="PlHQZ" id="cJpacq4087">
     <property role="TrG5h" value="IOptionallyNamed" />
     <property role="EcuMT" value="229512757698888199" />
-    <node concept="PrWs8" id="5eAon2mq2FS" role="PrDN$">
-      <ref role="PrY4T" node="5eAon2mq23Y" resolve="ISimplifiedValidNamedConcept" />
+    <node concept="PrWs8" id="cJpacq5WSG" role="PrDN$">
+      <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="cJpacq40jC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -166,13 +166,6 @@
   <node concept="PlHQZ" id="3QX5db_zRnt">
     <property role="EcuMT" value="4448734902938990045" />
     <property role="TrG5h" value="ITypeWithTarget" />
-  </node>
-  <node concept="PlHQZ" id="5eAon2mq23Y">
-    <property role="EcuMT" value="6027612287469625598" />
-    <property role="TrG5h" value="ISimplifiedValidNamedConcept" />
-    <node concept="PrWs8" id="5eAon2mq23Z" role="PrDN$">
-      <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
   </node>
 </model>
 
