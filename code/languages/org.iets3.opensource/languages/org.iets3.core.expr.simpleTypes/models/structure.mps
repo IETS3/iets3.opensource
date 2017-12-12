@@ -2,6 +2,7 @@
 <model ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -180,6 +181,9 @@
     <property role="TrG5h" value="NumberType" />
     <property role="34LRSv" value="number" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="60Qa1k_nI4f" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
     <node concept="1TJgyj" id="19PglA20qXS" role="1TKVEi">
       <property role="IQ2ns" value="1330041117646892920" />
       <property role="20lmBu" value="aggregation" />
@@ -191,9 +195,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="prec" />
       <ref role="20lvS9" node="19PglA20qXW" resolve="NumberPrecSpec" />
-    </node>
-    <node concept="PrWs8" id="60Qa1k_nI4f" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="19PglA20qXW">

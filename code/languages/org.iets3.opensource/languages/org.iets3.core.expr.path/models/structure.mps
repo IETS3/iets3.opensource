@@ -2,6 +2,7 @@
 <model ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -74,6 +75,13 @@
   <node concept="PlHQZ" id="4o9aP47qdic">
     <property role="TrG5h" value="IComparablePathPart" />
     <property role="EcuMT" value="5046612484462007436" />
+    <node concept="PrWs8" id="4fgA7QrEde8" role="PrDN$">
+      <ref role="PrY4T" node="4fgA7QrEde7" resolve="IPathPart" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrEde7">
+    <property role="EcuMT" value="4886573260946854791" />
+    <property role="TrG5h" value="IPathPart" />
   </node>
 </model>
 

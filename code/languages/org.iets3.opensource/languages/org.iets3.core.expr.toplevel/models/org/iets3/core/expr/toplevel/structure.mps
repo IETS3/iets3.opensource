@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -576,15 +576,15 @@
     <property role="TrG5h" value="EnumType" />
     <property role="EcuMT" value="7061117989422575803" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
     <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7061117989422575859" />
       <ref role="20lvS9" node="67Y8mp$DMUI" resolve="EnumDeclaration" />
-    </node>
-    <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="67Y8mp$DN53">
@@ -949,6 +949,14 @@
       <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
     </node>
   </node>
+  <node concept="PlHQZ" id="mQGcCvDdrZ">
+    <property role="EcuMT" value="411710798111758079" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IFunctionContainer" />
+    <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="mQGcCvDeqQ">
     <property role="EcuMT" value="411710798111762102" />
     <property role="3GE5qa" value="adapter" />
@@ -965,14 +973,6 @@
     </node>
     <node concept="PrWs8" id="mQGcCvAe_r" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="mQGcCvDdrZ">
-    <property role="EcuMT" value="411710798111758079" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="IFunctionContainer" />
-    <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
   </node>
 </model>

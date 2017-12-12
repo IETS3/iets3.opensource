@@ -26,5 +26,13 @@
     <property role="3GE5qa" value="attributes" />
     <ref role="1M2myG" to="138:1HqphBIxQFX" resolve="IValueAttribute" />
   </node>
+  <node concept="1M2fIO" id="4fgA7QrJD4y">
+    <property role="3GE5qa" value="attributes" />
+    <ref role="1M2myG" to="138:4fgA7QrBOmZ" resolve="IAttributeWithContext" />
+  </node>
+  <node concept="1M2fIO" id="GKE0N8UTGC">
+    <property role="3GE5qa" value="attributes" />
+    <ref role="1M2myG" to="138:4fgA7QrDo$u" resolve="AttributeContainerWithContext" />
+  </node>
 </model>
 

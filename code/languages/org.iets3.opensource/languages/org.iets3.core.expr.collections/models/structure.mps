@@ -2,6 +2,7 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -405,6 +406,9 @@
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163110902" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
     <node concept="1TJgyj" id="7kYh9WszdBR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="keyType" />
@@ -418,9 +422,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8448265401163110905" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WszdHC">
@@ -886,14 +887,14 @@
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7Z_fDCwv2Gw">
-    <property role="EcuMT" value="9215841044174482208" />
-    <property role="3GE5qa" value="map" />
-    <property role="TrG5h" value="ValuesTarget" />
-    <property role="34LRSv" value="values" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7Z_fDCwv2Gx" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+  <node concept="1TIwiD" id="k9boAtSSt_">
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="ListWithAllOp" />
+    <property role="34LRSv" value="withAll" />
+    <property role="EcuMT" value="362871314062739301" />
+    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
+    <node concept="PrWs8" id="k9boAtSStA" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="VApoyDJ0j1">
@@ -906,14 +907,14 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
-  <node concept="1TIwiD" id="k9boAtSSt_">
-    <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="ListWithAllOp" />
-    <property role="34LRSv" value="withAll" />
-    <property role="EcuMT" value="362871314062739301" />
-    <ref role="1TJDcQ" node="1RHynufnBSS" resolve="OneArgListModifier" />
-    <node concept="PrWs8" id="k9boAtSStA" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+  <node concept="1TIwiD" id="7Z_fDCwv2Gw">
+    <property role="EcuMT" value="9215841044174482208" />
+    <property role="3GE5qa" value="map" />
+    <property role="TrG5h" value="ValuesTarget" />
+    <property role="34LRSv" value="values" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Z_fDCwv2Gx" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>

@@ -2,13 +2,14 @@
 <model ref="r:13070af3-81df-4cc3-ad8a-1790d69e5b93(org.iets3.core.expr.process.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
@@ -213,65 +214,6 @@
     <property role="34LRSv" value="majority" />
     <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
   </node>
-  <node concept="1TIwiD" id="3iESbJshtqt">
-    <property role="EcuMT" value="3795092733472134813" />
-    <property role="3GE5qa" value="procedure" />
-    <property role="TrG5h" value="CustomDecProc" />
-    <property role="34LRSv" value="custom" />
-    <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
-    <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
-      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3wXkdMVkca7">
-    <property role="EcuMT" value="4052484148668973703" />
-    <property role="TrG5h" value="AbstractTurnoutPolicy" />
-    <property role="3GE5qa" value="turnout" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3wXkdMVkcb0">
-    <property role="EcuMT" value="4052484148668973760" />
-    <property role="3GE5qa" value="turnout" />
-    <property role="TrG5h" value="AllTurnoutPolicy" />
-    <property role="34LRSv" value="all" />
-    <ref role="1TJDcQ" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
-  </node>
-  <node concept="1TIwiD" id="4IV0h47Eai8">
-    <property role="EcuMT" value="5456956546144052360" />
-    <property role="TrG5h" value="SenderPartyInterceptor" />
-    <property role="34LRSv" value="senderIs" />
-    <property role="3GE5qa" value="interceptor" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
-      <property role="IQ2ns" value="5456956546144052394" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="party" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4IV0h47Eaif" role="PzmwI">
-      <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
-    </node>
-    <node concept="PrWs8" id="4IV0h47FOnf" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4IV0h47Eqmo">
-    <property role="EcuMT" value="5456956546144118168" />
-    <property role="3GE5qa" value="interceptor" />
-    <property role="TrG5h" value="SenderContextArg" />
-    <property role="34LRSv" value="sender" />
-    <ref role="1TJDcQ" to="8lgj:4IV0h47hCX3" resolve="AbstractContextArgument" />
-  </node>
-  <node concept="1TIwiD" id="4IV0h47I93P">
-    <property role="EcuMT" value="5456956546145095925" />
-    <property role="3GE5qa" value="interceptor" />
-    <property role="TrG5h" value="AnySenderExpr" />
-    <property role="34LRSv" value="*" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="4IV0h48lf7t">
     <property role="EcuMT" value="5456956546155344349" />
     <property role="3GE5qa" value="interceptor" />
@@ -296,6 +238,65 @@
     <node concept="PrWs8" id="71HHyJ2sLqx" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47I93P">
+    <property role="EcuMT" value="5456956546145095925" />
+    <property role="3GE5qa" value="interceptor" />
+    <property role="TrG5h" value="AnySenderExpr" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3iESbJshtqt">
+    <property role="EcuMT" value="3795092733472134813" />
+    <property role="3GE5qa" value="procedure" />
+    <property role="TrG5h" value="CustomDecProc" />
+    <property role="34LRSv" value="custom" />
+    <ref role="1TJDcQ" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
+    <node concept="PrWs8" id="3iESbJshtqw" role="PzmwI">
+      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IV0h47Eai8">
+    <property role="EcuMT" value="5456956546144052360" />
+    <property role="TrG5h" value="SenderPartyInterceptor" />
+    <property role="34LRSv" value="senderIs" />
+    <property role="3GE5qa" value="interceptor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
+      <property role="IQ2ns" value="5456956546144052394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="party" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47Eaif" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47FOnf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3wXkdMVkcb0">
+    <property role="EcuMT" value="4052484148668973760" />
+    <property role="3GE5qa" value="turnout" />
+    <property role="TrG5h" value="AllTurnoutPolicy" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
+  </node>
+  <node concept="1TIwiD" id="3wXkdMVkca7">
+    <property role="EcuMT" value="4052484148668973703" />
+    <property role="TrG5h" value="AbstractTurnoutPolicy" />
+    <property role="3GE5qa" value="turnout" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4IV0h47Eqmo">
+    <property role="EcuMT" value="5456956546144118168" />
+    <property role="3GE5qa" value="interceptor" />
+    <property role="TrG5h" value="SenderContextArg" />
+    <property role="34LRSv" value="sender" />
+    <ref role="1TJDcQ" to="8lgj:4IV0h47hCX3" resolve="AbstractContextArgument" />
   </node>
 </model>
 
