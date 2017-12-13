@@ -3708,6 +3708,12 @@
         <node concept="L2wRC" id="5kwEgmAh8Y9" role="39821P">
           <ref role="L2wRA" node="5kwEgmAh8J_" resolve="test.org.iets3.core.comments" />
         </node>
+        <node concept="L2wRC" id="48ZWgAGrsHh" role="39821P">
+          <ref role="L2wRA" node="48ZWgAGrsoI" resolve="test.iest3.component.attribute" />
+        </node>
+        <node concept="L2wRC" id="48ZWgAGrvuG" role="39821P">
+          <ref role="L2wRA" node="48ZWgAGrsP1" resolve="test.ts.components.core" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -3913,6 +3919,71 @@
         </node>
       </node>
     </node>
+    <node concept="1E1JtA" id="48ZWgAGrsP1" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.ts.components.core" />
+      <property role="3LESm3" value="8239233b-13cc-4bd1-842b-cf2561ff9a12" />
+      <property role="2GAjPV" value="false" />
+      <property role="aoJFB" value="sources and tests" />
+      <node concept="398BVA" id="48ZWgAGrv9H" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <node concept="2Ry0Ak" id="48ZWgAGrvdj" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="48ZWgAGrvgS" role="2Ry0An">
+            <property role="2Ry0Am" value="test.ts.components.core" />
+            <node concept="2Ry0Ak" id="48ZWgAGrvkt" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ts.components.core.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="48ZWgAGrvnn" role="3bR37C">
+        <node concept="3bR9La" id="48ZWgAGrvno" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="48ZWgAGrvnp" role="3bR37C">
+        <node concept="3bR9La" id="48ZWgAGrvnq" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5wLtKNeSRRr" resolve="org.iets3.components.core" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtD" id="48ZWgAGrsoI" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.iest3.component.attribute" />
+      <property role="3LESm3" value="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" />
+      <property role="2GAjPV" value="false" />
+      <node concept="398BVA" id="48ZWgAGrsrX" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <node concept="2Ry0Ak" id="48ZWgAGrsxL" role="iGT6I">
+          <property role="2Ry0Am" value="languages" />
+          <node concept="2Ry0Ak" id="48ZWgAGrs$8" role="2Ry0An">
+            <property role="2Ry0Am" value="test.iest3.component.attribute" />
+            <node concept="2Ry0Ak" id="48ZWgAGrsAv" role="2Ry0An">
+              <property role="2Ry0Am" value="test.iest3.component.attribute.mpl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="48ZWgAGrsCM" role="3bR37C">
+        <node concept="3bR9La" id="48ZWgAGrsCN" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5wLtKNeSRRr" resolve="org.iets3.components.core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="48ZWgAGrsCO" role="3bR37C">
+        <node concept="1Busua" id="48ZWgAGrsCP" role="1SiIV1">
+          <ref role="1Busuk" node="5wLtKNeSRRr" resolve="org.iets3.components.core" />
+        </node>
+      </node>
+      <node concept="1yeLz9" id="48ZWgAGrsCQ" role="1TViLv">
+        <property role="TrG5h" value="test.iest3.component.attribute#4448734902938436413" />
+        <property role="3LESm3" value="b1c91bbf-bb96-4211-940e-f2ad74935cfa" />
+        <property role="2GAjPV" value="false" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
       <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
       <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
@@ -3947,6 +4018,9 @@
       </node>
       <node concept="22LTRM" id="5kwEgmAh92W" role="22LTRK">
         <ref role="22LTRN" node="5kwEgmAh8J_" resolve="test.org.iets3.core.comments" />
+      </node>
+      <node concept="22LTRM" id="48ZWgAGrv_8" role="22LTRK">
+        <ref role="22LTRN" node="48ZWgAGrsP1" resolve="test.ts.components.core" />
       </node>
     </node>
   </node>

@@ -8,7 +8,7 @@
   <imports>
     <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
-    <import index="xens" ref="r:e2f731a4-551a-400e-a547-ea954abd0c47(test.iest3.component.attribute.structure)" implicit="true" />
+    <import index="xens" ref="r:e2f731a4-551a-400e-a547-ea954abd0c47(test.iest3.component.attribute.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -71,6 +71,14 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
@@ -451,6 +459,25 @@
         </node>
       </node>
       <node concept="10P_77" id="3QX5db_IkeI" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="48ZWgAGwiVc" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createConnectorType" />
+      <ref role="13i0hy" to="3eba:4KDeVD8s9TJ" resolve="createConnectorType" />
+      <node concept="3Tm1VV" id="48ZWgAGwiVd" role="1B3o_S" />
+      <node concept="3clFbS" id="48ZWgAGwiVi" role="3clF47">
+        <node concept="3clFbF" id="48ZWgAGwj1z" role="3cqZAp">
+          <node concept="2pJPEk" id="48ZWgAGwj1p" role="3clFbG">
+            <node concept="2pJPED" id="48ZWgAGwj4N" role="2pJPEn">
+              <ref role="2pJxaS" to="xens:48ZWgAGwh6D" resolve="TestConnectorType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="48ZWgAGwiVj" role="3clF45">
+        <ref role="ehGHo" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
+      </node>
     </node>
   </node>
 </model>

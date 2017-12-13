@@ -66,5 +66,13 @@
     <property role="34LRSv" value="testOff" />
     <ref role="1TJDcQ" to="w9y2:siw10H0or2" resolve="PortCategory" />
   </node>
+  <node concept="1TIwiD" id="48ZWgAGwh6D">
+    <property role="EcuMT" value="4773799153887154601" />
+    <property role="TrG5h" value="TestConnectorType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="48ZWgAGwh6E" role="PzmwI">
+      <ref role="PrY4T" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
+    </node>
+  </node>
 </model>
 
