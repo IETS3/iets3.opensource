@@ -1844,11 +1844,13 @@
               </node>
             </node>
             <node concept="3clFbJ" id="6b_jefnKwiL" role="3cqZAp">
-              <node concept="3clFbC" id="6b_jefnKwiM" role="3clFbw">
-                <node concept="35c_gC" id="6b_jefnKwjd" role="3uHU7w">
-                  <ref role="35c_gD" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+              <node concept="2OqwBi" id="t09aXuBOzL" role="3clFbw">
+                <node concept="2DD5aU" id="6b_jefnKwjc" role="2Oq$k0" />
+                <node concept="2Zo12i" id="t09aXuBP7r" role="2OqNvi">
+                  <node concept="chp4Y" id="t09aXuBPtz" role="2Zo12j">
+                    <ref role="cht4Q" to="w9y2:6Y_kjZqWvHl" resolve="AbstractComponentInterface" />
+                  </node>
                 </node>
-                <node concept="2DD5aU" id="6b_jefnKwjc" role="3uHU7B" />
               </node>
               <node concept="3clFbS" id="6b_jefnKwiP" role="3clFbx">
                 <node concept="3cpWs6" id="6b_jefnKwiQ" role="3cqZAp">
