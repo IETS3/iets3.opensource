@@ -561,6 +561,9 @@
       <node concept="m$f5U" id="5wLtKNeT2TG" role="m$_yh">
         <ref role="m$f5T" node="5wLtKNeSRRC" resolve="iets3.req.os" />
       </node>
+      <node concept="m$f5U" id="48ZWgAGqW1N" role="m$_yh">
+        <ref role="m$f5T" node="408CVmKBaLA" resolve="iets3.req.os.devkit" />
+      </node>
       <node concept="m$_yC" id="5wLtKNeT2TH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>

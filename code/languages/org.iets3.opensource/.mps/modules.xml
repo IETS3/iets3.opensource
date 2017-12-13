@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.base/org.iets3.analysis.base.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
