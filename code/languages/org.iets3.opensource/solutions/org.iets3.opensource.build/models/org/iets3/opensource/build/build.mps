@@ -1149,6 +1149,7 @@
         </node>
         <node concept="1SiIV0" id="6oSQRDqKxpD" role="3bR37C">
           <node concept="3bR9La" id="1xkuBjXU68k" role="1SiIV1">
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
@@ -2838,6 +2839,36 @@
           <node concept="3bR9La" id="5wLtKNeT3j5" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4AmxKA_jYpf" role="3bR37C">
+          <node concept="3bR9La" id="4AmxKA_jYpg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4AmxKA_jYph" role="3bR37C">
+          <node concept="3bR9La" id="4AmxKA_jYpi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4AmxKA_jYpj" role="3bR37C">
+          <node concept="3bR9La" id="4AmxKA_jYpk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4AmxKA_jYpl" role="3bR37C">
+          <node concept="3bR9La" id="4AmxKA_jYpm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4AmxKA_jYpn" role="3bR37C">
+          <node concept="3bR9La" id="4AmxKA_jYpo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
