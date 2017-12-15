@@ -141,6 +141,7 @@
       </concept>
       <concept id="5456956546155344349" name="org.iets3.core.expr.process.structure.TakeTurnsInterceptor" flags="ng" index="13VZ3c">
         <property id="5456956546155344462" name="ordered" index="13VZdv" />
+        <property id="3489557448828302121" name="removeInsteadOfSkip" index="3gPXkF" />
         <child id="5456956546155344351" name="parties" index="13VZ3e" />
         <child id="3489557448815700543" name="boottimeout" index="3J_KKX" />
       </concept>
@@ -12888,6 +12889,7 @@
           </node>
           <node concept="13VZ3c" id="31HpwbvVkVN" role="1czwXj">
             <property role="13VZdv" value="true" />
+            <property role="3gPXkF" value="true" />
             <node concept="2YgRg0" id="31HpwbwGa$Y" role="13VZ3e">
               <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
             </node>
@@ -13925,6 +13927,15 @@
                   </node>
                   <node concept="_emDc" id="31HpwbvQ5kw" role="30czhm">
                     <ref role="_emDf" node="60Qa1k_JeVU" resolve="clk" />
+                  </node>
+                  <node concept="1z9TsT" id="31HpwbwIwXk" role="lGtFl">
+                    <node concept="OjmMv" id="31HpwbwIwXl" role="1w35rA">
+                      <node concept="19SGf9" id="31HpwbwIwXm" role="OjmMu">
+                        <node concept="19SUe$" id="31HpwbwIwXn" role="19SJt6">
+                          <property role="19SUeA" value="This timeout means bernd is booted out" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="1QScDb" id="31HpwbwDrL1" role="1aduh9">

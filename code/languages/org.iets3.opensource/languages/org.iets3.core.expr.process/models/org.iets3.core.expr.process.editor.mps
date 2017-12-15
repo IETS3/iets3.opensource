@@ -739,10 +739,18 @@
           </node>
         </node>
         <node concept="3F0ifn" id="31HpwbvYGdT" role="3EZMnx">
-          <property role="3F0ifm" value="boot after" />
+          <property role="3F0ifm" value="after" />
         </node>
         <node concept="3F1sOY" id="31HpwbvYAEz" role="3EZMnx">
           <ref role="1NtTu8" to="7y2b:31HpwbvYACZ" resolve="boottimeout" />
+        </node>
+        <node concept="2aMyGU" id="31HpwbwIFcG" role="3EZMnx">
+          <property role="2aYyza" value="boot out" />
+          <property role="2aYyvO" value="skip" />
+          <ref role="1NtTu8" to="7y2b:31HpwbwIFcD" resolve="removeInsteadOfSkip" />
+          <node concept="Vb9p2" id="31HpwbwIFvx" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
+          </node>
         </node>
         <node concept="2iRfu4" id="31HpwbvYAFc" role="2iSdaV" />
         <node concept="pkWqt" id="31HpwbvYAGv" role="pqm2j">
