@@ -2,8 +2,9 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -919,15 +920,15 @@
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="867786408877811036" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4v5hZndi2Ow" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
     <node concept="1TJgyj" id="KaZMgy4Ilu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="867786408877811038" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4v5hZndi2Ow" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy4Ilt">
@@ -1609,10 +1610,6 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
-  <node concept="PlHQZ" id="60Qa1k_nI2f">
-    <property role="EcuMT" value="6932772747669856399" />
-    <property role="TrG5h" value="ITypeSupportsDefaultValue" />
-  </node>
   <node concept="1TIwiD" id="60Qa1k_nMSK">
     <property role="EcuMT" value="6932772747669876272" />
     <property role="TrG5h" value="DefaultValueExpression" />
@@ -1625,6 +1622,20 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="60Qa1k_nI2f">
+    <property role="EcuMT" value="6932772747669856399" />
+    <property role="TrG5h" value="ITypeSupportsDefaultValue" />
+  </node>
+  <node concept="1TIwiD" id="4fgA7QrKSsR">
+    <property role="EcuMT" value="4886573260948604727" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrKSas">
+    <property role="EcuMT" value="4886573260948603548" />
+    <property role="TrG5h" value="IContextTypeProvider" />
   </node>
 </model>
 
