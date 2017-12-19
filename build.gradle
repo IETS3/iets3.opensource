@@ -50,7 +50,7 @@ if (!project.hasProperty("mbeddrVersion")) {
     }
     else {
         //default version
-        ext.mbeddrVersion = '1.0.+'
+        ext.mbeddrVersion = 'refactor-sl-interpreterMigration.1.0.+'
     }
 }
 
