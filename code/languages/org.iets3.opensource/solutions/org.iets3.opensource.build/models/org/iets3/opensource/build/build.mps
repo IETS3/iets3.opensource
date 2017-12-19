@@ -2538,54 +2538,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="44TucI396fd" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="3LESm3" value="bd5d2f0b-399d-4cb7-b981-7a3f9ce7bc78" />
-        <property role="TrG5h" value="org.iets3.core.expr.repl.interpreter" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="44TucI396fe" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-          <node concept="2Ry0Ak" id="44TucI396fi" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="44TucI396fj" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.core.expr.repl.interpreter" />
-              <node concept="2Ry0Ak" id="44TucI396fk" role="2Ry0An">
-                <property role="2Ry0Am" value="org.iets3.core.expr.repl.interpreter.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44TucI397zz" role="3bR37C">
-          <node concept="3bR9La" id="44TucI397z$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="44TucI396gd" resolve="org.iets3.core.expr.toplevel.interpreter" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44TucI397z_" role="3bR37C">
-          <node concept="3bR9La" id="44TucI397zA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44TucI397zB" role="3bR37C">
-          <node concept="3bR9La" id="44TucI397zC" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="44TucI396gt" resolve="org.iets3.core.expr.base.interpreter" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44TucI397zD" role="3bR37C">
-          <node concept="3bR9La" id="44TucI397zE" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44TucI397zF" role="3bR37C">
-          <node concept="3bR9La" id="44TucI397zG" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="OnhZN9YvFC" resolve="org.iets3.core.expr.repl" />
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="OnhZN9YvFr" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.repl.plugin" />
