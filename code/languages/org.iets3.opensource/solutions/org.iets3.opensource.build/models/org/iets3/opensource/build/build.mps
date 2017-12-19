@@ -3313,6 +3313,24 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6bz3LXDw5H1" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="testSolution" />
+        <property role="3LESm3" value="0c5b39b8-1cf3-43a1-9f76-c9ad717a8a6b" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6bz3LXDw67K" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="6bz3LXDw6Hg" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6bz3LXDw76h" role="2Ry0An">
+              <property role="2Ry0Am" value="testSolution" />
+              <node concept="2Ry0Ak" id="6bz3LXDw7vi" role="2Ry0An">
+                <property role="2Ry0Am" value="testSolution.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="mM1quA9GB_" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.lambda.plugin" />
