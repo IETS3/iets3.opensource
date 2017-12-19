@@ -134,11 +134,11 @@
         <child id="409503520730247653" name="category" index="1aMMyH" />
         <child id="7804632404594156402" name="type" index="1i6vMw" />
       </concept>
-      <concept id="409503520741916198" name="org.iets3.components.core.structure.AbstractConnector" flags="ng" index="1lIitI">
-        <child id="5487983292192956069" name="connectorType" index="4mqkv" />
-      </concept>
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
+      </concept>
+      <concept id="4217735156746120255" name="" flags="ng" index="1O3KJS">
+        <child id="4217735156746171148" name="" index="1O05jb" />
       </concept>
       <concept id="2244552513301308396" name="org.iets3.components.core.structure.PortRefTarget" flags="ng" index="1WbEdM">
         <reference id="2244552513301308399" name="port" index="1WbEdL" />
@@ -413,7 +413,7 @@
           <node concept="VCwY8" id="48ZWgAGwl4P" role="2bBTn9">
             <ref role="VCwYn" node="48ZWgAGs_tY" resolve="innerCmp" />
           </node>
-          <node concept="3IJI2w" id="48ZWgAGwl52" role="4mqkv" />
+          <node concept="3IJI2w" id="48ZWgAGwl52" role="1O05jb" />
         </node>
         <node concept="2bBTn8" id="48ZWgAGwlq1" role="GnABu">
           <ref role="2bBTn4" node="48ZWgAGwgMh" resolve="a" />
@@ -421,7 +421,7 @@
           <node concept="VCwY8" id="48ZWgAGwlqn" role="2bBTn9">
             <ref role="VCwYn" node="48ZWgAGwlpj" resolve="innerCmp2" />
           </node>
-          <node concept="3IJI2w" id="48ZWgAGwlq3" role="4mqkv" />
+          <node concept="3IJI2w" id="48ZWgAGwlq3" role="1O05jb" />
         </node>
         <node concept="GnyP7" id="48ZWgAGwgKy" role="GnABu" />
       </node>
