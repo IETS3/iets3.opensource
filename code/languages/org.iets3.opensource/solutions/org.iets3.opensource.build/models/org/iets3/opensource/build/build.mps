@@ -733,6 +733,22 @@
         <property role="3LESm3" value="07f696b4-29e7-4878-aefb-39cac5e8c6cc" />
         <property role="TrG5h" value="org.iets3.core.expr.collections.interpreter" />
         <property role="2GAjPV" value="false" />
+        <node concept="3rtmxn" id="6bz3LXDtgQ_" role="3bR31x">
+          <node concept="3LXTmp" id="6bz3LXDtgQA" role="3rtmxm">
+            <node concept="3qWCbU" id="6bz3LXDtgQB" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6bz3LXDtgQC" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6bz3LXDtgQD" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6bz3LXDtgQE" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.req.plugin" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="398BVA" id="44TucI396fu" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="44TucI396fy" role="iGT6I">
@@ -3089,6 +3105,22 @@
         <property role="3LESm3" value="197e2a32-ff26-4358-af5c-731ae2b35f83" />
         <property role="TrG5h" value="org.iets3.core.expr.simpleTypes.interpreter" />
         <property role="2GAjPV" value="false" />
+        <node concept="3rtmxn" id="6bz3LXDtgDV" role="3bR31x">
+          <node concept="3LXTmp" id="6bz3LXDtgDW" role="3rtmxm">
+            <node concept="3qWCbU" id="6bz3LXDtgDX" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6bz3LXDtgDY" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6bz3LXDtgDZ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6bz3LXDtgE0" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.req.plugin" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="398BVA" id="44TucI396g6" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
           <node concept="2Ry0Ak" id="44TucI396ga" role="iGT6I">
