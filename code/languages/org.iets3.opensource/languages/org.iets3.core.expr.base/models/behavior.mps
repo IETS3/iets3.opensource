@@ -9890,6 +9890,11 @@
           </node>
           <node concept="9aQIb" id="71dSyJVqMJf" role="9aQIa">
             <node concept="3clFbS" id="71dSyJVqMJg" role="9aQI4">
+              <node concept="3SKdUt" id="5WtF_99uyM" role="3cqZAp">
+                <node concept="3SKdUq" id="5WtF_99uyO" role="3SKWNk">
+                  <property role="3SKdUp" value="NOTE: regulars.first is the LAST alternative!" />
+                </node>
+              </node>
               <node concept="3clFbF" id="71dSyJVqMZR" role="3cqZAp">
                 <node concept="37vLTI" id="71dSyJVqNdz" role="3clFbG">
                   <node concept="2OqwBi" id="71dSyJVqOr_" role="37vLTx">
@@ -9898,7 +9903,7 @@
                         <node concept="37vLTw" id="71dSyJVqO2y" role="2Oq$k0">
                           <ref role="3cqZAo" node="71dSyJVqNi3" resolve="regulars" />
                         </node>
-                        <node concept="1yVyf7" id="71dSyJVqOa2" role="2OqNvi" />
+                        <node concept="1uHKPH" id="5WtF_99ul8" role="2OqNvi" />
                       </node>
                       <node concept="3TrEf2" id="71dSyJVqSXG" role="2OqNvi">
                         <ref role="3Tt5mk" to="hm2y:6UxFDrx4dpK" resolve="then" />

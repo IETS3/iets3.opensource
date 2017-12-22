@@ -1151,6 +1151,9 @@
     <node concept="PrWs8" id="6GySMNlb_RA" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="5WtF_94TML" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
     <property role="3GE5qa" value="alt" />
