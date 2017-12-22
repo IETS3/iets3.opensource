@@ -30,7 +30,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3'
+ext.mpsVersion = '2017.3.1'
 
 
 // Project version
@@ -146,7 +146,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
- 
+
 publishing {
     repositories {
         maven {
