@@ -34,6 +34,11 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -45,6 +50,9 @@
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -67,8 +75,18 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -81,6 +99,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -89,6 +110,9 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
         <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
@@ -478,6 +502,96 @@
       <node concept="3Tqbb2" id="48ZWgAGwiVj" role="3clF45">
         <ref role="ehGHo" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3gB6VSKTNfl">
+    <ref role="13h7C2" to="xens:3QX5db_HNz8" resolve="TestKindA" />
+    <node concept="13hLZK" id="3gB6VSKTNfm" role="13h7CW">
+      <node concept="3clFbS" id="3gB6VSKTNfn" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3gB6VSLeo_d" role="13h7CS">
+      <property role="TrG5h" value="canBeInContext" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="3eba:6LfBX8Ylle0" resolve="canBeInContext" />
+      <node concept="3Tm1VV" id="3gB6VSLeo_e" role="1B3o_S" />
+      <node concept="3clFbS" id="3gB6VSLeo_r" role="3clF47">
+        <node concept="3SKdUt" id="3gB6VSLepoY" role="3cqZAp">
+          <node concept="3SKdUq" id="3gB6VSLepp0" role="3SKWNk">
+            <property role="3SKdUp" value="this kind can only be used in TestKindB and TestKindA" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3gB6VSLeoHD" role="3cqZAp">
+          <node concept="22lmx$" id="3gB6VSLepLg" role="3clFbG">
+            <node concept="2OqwBi" id="3gB6VSLeoRQ" role="3uHU7B">
+              <node concept="37vLTw" id="3gB6VSLeoHz" role="2Oq$k0">
+                <ref role="3cqZAo" node="3gB6VSLeo_s" resolve="contextKind" />
+              </node>
+              <node concept="1mIQ4w" id="3gB6VSLepaX" role="2OqNvi">
+                <node concept="chp4Y" id="3gB6VSLepg$" role="cj9EA">
+                  <ref role="cht4Q" to="xens:3gB6VSKTCP3" resolve="TestKindB" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3gB6VSLepQq" role="3uHU7w">
+              <node concept="37vLTw" id="3gB6VSLepQr" role="2Oq$k0">
+                <ref role="3cqZAo" node="3gB6VSLeo_s" resolve="contextKind" />
+              </node>
+              <node concept="1mIQ4w" id="3gB6VSLepQs" role="2OqNvi">
+                <node concept="chp4Y" id="3gB6VSLepVC" role="cj9EA">
+                  <ref role="cht4Q" to="xens:3QX5db_HNz8" resolve="TestKindA" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3gB6VSLeo_s" role="3clF46">
+        <property role="TrG5h" value="contextKind" />
+        <node concept="3Tqbb2" id="3gB6VSLeo_t" role="1tU5fm">
+          <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+        </node>
+      </node>
+      <node concept="10P_77" id="3gB6VSLeo_u" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3gB6VSLej2x">
+    <ref role="13h7C2" to="xens:3gB6VSKTCP3" resolve="TestKindB" />
+    <node concept="13i0hz" id="3gB6VSLd693" role="13h7CS">
+      <property role="TrG5h" value="isAllowedContentKind" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="3eba:3gB6VSKS$k6" resolve="isAllowedContentKind" />
+      <node concept="3Tm1VV" id="3gB6VSLd696" role="1B3o_S" />
+      <node concept="3clFbS" id="3gB6VSLd69h" role="3clF47">
+        <node concept="3SKdUt" id="3gB6VSLdV5x" role="3cqZAp">
+          <node concept="3SKdUq" id="3gB6VSLdV5z" role="3SKWNk">
+            <property role="3SKdUp" value="can only contain elements of TestKindA" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3gB6VSLd6hn" role="3cqZAp">
+          <node concept="2OqwBi" id="3gB6VSLd6rG" role="3clFbG">
+            <node concept="37vLTw" id="3gB6VSLd6hh" role="2Oq$k0">
+              <ref role="3cqZAo" node="3gB6VSLd69i" resolve="compKind" />
+            </node>
+            <node concept="1mIQ4w" id="3gB6VSLd6IL" role="2OqNvi">
+              <node concept="chp4Y" id="3gB6VSLejb9" role="cj9EA">
+                <ref role="cht4Q" to="xens:3QX5db_HNz8" resolve="TestKindA" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3gB6VSLd69i" role="3clF46">
+        <property role="TrG5h" value="compKind" />
+        <node concept="3Tqbb2" id="3gB6VSLd69j" role="1tU5fm">
+          <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+        </node>
+      </node>
+      <node concept="10P_77" id="3gB6VSLd69k" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="3gB6VSLej2y" role="13h7CW">
+      <node concept="3clFbS" id="3gB6VSLej2z" role="2VODD2" />
     </node>
   </node>
 </model>

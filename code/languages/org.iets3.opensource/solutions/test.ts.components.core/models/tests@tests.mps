@@ -156,8 +156,9 @@
       </concept>
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
+      <concept id="3758002917742120259" name="test.iest3.component.attribute.structure.TestKindB" flags="ng" index="4KprX" />
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
@@ -293,7 +294,7 @@
           <node concept="GnABt" id="48ZWgAGs_vx" role="1i1XAe">
             <node concept="1i6xzV" id="48ZWgAGs_vC" role="GnABu">
               <node concept="1i1fwW" id="48ZWgAGs_vZ" role="MGl3R">
-                <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp" />
+                <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
               </node>
               <node concept="pfQqD" id="48ZWgAGwlh3" role="pfQ1b">
                 <property role="pfQqC" value="extCmp" />
@@ -386,13 +387,13 @@
   <node concept="1i1ALs" id="48ZWgAGs_pv">
     <property role="TrG5h" value="ExternalChunk" />
     <node concept="1i1XBj" id="48ZWgAGs_py" role="1i1AA4">
-      <property role="TrG5h" value="ExternalRootComp" />
+      <property role="TrG5h" value="ExternalRootComp_KindA" />
       <property role="13Nl5X" value="true" />
       <node concept="3o2yKq" id="48ZWgAGs_px" role="1i0K$_" />
       <node concept="GnABt" id="48ZWgAGs_tL" role="1i1XAe">
         <node concept="1i6xzV" id="48ZWgAGs_tY" role="GnABu">
           <node concept="1i1fwW" id="48ZWgAGs_uh" role="MGl3R">
-            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp" />
+            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindB" />
           </node>
           <node concept="pfQqD" id="48ZWgAGwlhI" role="pfQ1b">
             <property role="pfQqC" value="innerCmp" />
@@ -400,7 +401,7 @@
         </node>
         <node concept="1i6xzV" id="48ZWgAGwlpj" role="GnABu">
           <node concept="1i1fwW" id="48ZWgAGwlpk" role="MGl3R">
-            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp" />
+            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindB" />
           </node>
           <node concept="pfQqD" id="48ZWgAGwlpl" role="pfQ1b">
             <property role="pfQqC" value="innerCmp2" />
@@ -444,7 +445,7 @@
       </node>
     </node>
     <node concept="1i1XBj" id="48ZWgAGs_tn" role="1i1AA4">
-      <property role="TrG5h" value="ExternalInnerComp" />
+      <property role="TrG5h" value="ExternalInnerComp_KindB" />
       <node concept="3o2yKq" id="48ZWgAGs_tl" role="1i0K$_" />
       <node concept="H_j2F" id="48ZWgAGwgLN" role="1i1XAe">
         <node concept="H_vQO" id="48ZWgAGwgLO" role="H_jLS" />
@@ -454,6 +455,39 @@
           <node concept="pfQqD" id="48ZWgAGwgOw" role="pfQ1b">
             <property role="pfQqC" value="a" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1i1XBj" id="3gB6VSLerpz" role="1i1AA4">
+      <property role="TrG5h" value="ExternalComp_KindA" />
+      <property role="13Nl5X" value="true" />
+      <node concept="4KprX" id="3gB6VSLerpx" role="1i0K$_" />
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3gB6VSLekEx">
+    <property role="TrG5h" value="componentInstanceRefScope" />
+    <node concept="1qefOq" id="3gB6VSLekEy" role="1SKRRt">
+      <node concept="1i1ALs" id="3gB6VSLekE_" role="1qenE9">
+        <property role="TrG5h" value="chunk" />
+        <node concept="1i1XBj" id="3gB6VSLekEE" role="1i1AA4">
+          <property role="TrG5h" value="testComp" />
+          <node concept="4KprX" id="3gB6VSLekED" role="1i0K$_" />
+          <node concept="GnABt" id="3gB6VSLekFe" role="1i1XAe">
+            <node concept="1i6xzV" id="3gB6VSLekFl" role="GnABu">
+              <node concept="1i1fwW" id="3gB6VSLekFv" role="MGl3R">
+                <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
+                <node concept="2rqxmr" id="3gB6VSLeroQ" role="lGtFl">
+                  <ref role="1BTHP0" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
+                  <node concept="3KTrbX" id="3gB6VSLeroR" role="3KTr4d">
+                    <ref role="3AHY9a" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3GEVxB" id="3gB6VSLekEZ" role="38kjvB">
+          <ref role="3GEb4d" node="48ZWgAGs_pv" resolve="ExternalChunk" />
         </node>
       </node>
     </node>
