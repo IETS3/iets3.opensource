@@ -7057,6 +7057,16 @@
         <ref role="ehGHo" to="w9y2:6LfBX8YkpdW" resolve="Port" />
       </node>
       <node concept="3clFbS" id="mIQkxg5V$5" role="3clF47" />
+      <node concept="P$JXv" id="430dwquwUak" role="lGtFl">
+        <node concept="TZ5HA" id="430dwquwUal" role="TZ5H$">
+          <node concept="1dT_AC" id="430dwquwUam" role="1dT_Ay">
+            <property role="1dT_AB" value="Gets the source of the connection. This has to be a port." />
+          </node>
+        </node>
+        <node concept="x79VA" id="430dwquwUan" role="3nqlJM">
+          <property role="x79VB" value="the source port of the connection" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3E8pWteyf_5" role="13h7CS">
       <property role="13i0it" value="true" />
@@ -7065,6 +7075,22 @@
       <node concept="3Tm1VV" id="3E8pWteyf_6" role="1B3o_S" />
       <node concept="3Tqbb2" id="3E8pWteyfJt" role="3clF45" />
       <node concept="3clFbS" id="3E8pWteyf_8" role="3clF47" />
+      <node concept="P$JXv" id="430dwquwLvB" role="lGtFl">
+        <node concept="TZ5HA" id="430dwquwLvC" role="TZ5H$">
+          <node concept="1dT_AC" id="430dwquwLvD" role="1dT_Ay">
+            <property role="1dT_AB" value="Gets the connection target Incase it is a point to point connection this will be a " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="430dwquwTMW" role="TZ5H$">
+          <node concept="1dT_AC" id="430dwquwTMX" role="1dT_Ay">
+            <property role="1dT_AB" value="port but it could be an arbitrary target like a bus depending on the connector." />
+          </node>
+        </node>
+        <node concept="x79VA" id="430dwquwLvE" role="3nqlJM">
+          <property role="x79VB" value="the target for the connection. " />
+        </node>
+        <node concept="1Ciki9" id="430dwquwTKx" role="3nqlJM" />
+      </node>
     </node>
   </node>
 </model>
