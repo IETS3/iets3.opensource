@@ -7078,12 +7078,12 @@
       <node concept="P$JXv" id="430dwquwLvB" role="lGtFl">
         <node concept="TZ5HA" id="430dwquwLvC" role="TZ5H$">
           <node concept="1dT_AC" id="430dwquwLvD" role="1dT_Ay">
-            <property role="1dT_AB" value="Gets the connection target Incase it is a point to point connection this will be a " />
+            <property role="1dT_AB" value="Gets the connection target. In case it is a point to point connection, this will be a " />
           </node>
         </node>
         <node concept="TZ5HA" id="430dwquwTMW" role="TZ5H$">
           <node concept="1dT_AC" id="430dwquwTMX" role="1dT_Ay">
-            <property role="1dT_AB" value="port but it could be an arbitrary target like a bus depending on the connector." />
+            <property role="1dT_AB" value="port, but it could be an arbitrary target like a bus, depending on the connector." />
           </node>
         </node>
         <node concept="x79VA" id="430dwquwLvE" role="3nqlJM">
