@@ -329,7 +329,6 @@
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
-      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -349,9 +348,6 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
-      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
-        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
-      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -369,9 +365,6 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
       <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2055,6 +2048,42 @@
           <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
         </node>
       </node>
+      <node concept="P$JXv" id="2B42b1rDKv9" role="lGtFl">
+        <node concept="TZ5HA" id="2B42b1rDKva" role="TZ5H$">
+          <node concept="1dT_AC" id="2B42b1rDKvb" role="1dT_Ay">
+            <property role="1dT_AB" value="By default only elements with the same component kind can be used." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2B42b1rDK$9" role="TZ5H$">
+          <node concept="1dT_AC" id="2B42b1rDK$a" role="1dT_Ay">
+            <property role="1dT_AB" value="All other component kinds are resticted away from the scope." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2B42b1rDK$u" role="TZ5H$">
+          <node concept="1dT_AC" id="2B42b1rDK$v" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2B42b1rDKzQ" role="TZ5H$">
+          <node concept="1dT_AC" id="2B42b1rDKzR" role="1dT_Ay">
+            <property role="1dT_AB" value="Override this method in specialied ComponentKinds to customize scope " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2B42b1rDK$P" role="TZ5H$">
+          <node concept="1dT_AC" id="2B42b1rDK$Q" role="1dT_Ay">
+            <property role="1dT_AB" value="calculation" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2B42b1rDKvc" role="3nqlJM">
+          <property role="TUZQ4" value="kind" />
+          <node concept="zr_55" id="2B42b1rDKve" role="zr_5Q">
+            <ref role="zr_51" node="6LfBX8Yllec" resolve="contextKind" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2B42b1rDKvf" role="3nqlJM">
+          <property role="x79VB" value="evaluated condition under which surcomstances this kind can be used in a context" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="33B7rHqxSMr" role="13h7CS">
       <property role="TrG5h" value="canBeInContent" />
@@ -2097,188 +2126,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="3gB6VSKScig" role="13h7CS">
-      <property role="TrG5h" value="visibleComponents" />
-      <property role="13i0it" value="true" />
-      <node concept="3Tm1VV" id="3gB6VSKScih" role="1B3o_S" />
-      <node concept="3clFbS" id="3gB6VSKScij" role="3clF47">
-        <node concept="3cpWs8" id="3gB6VSKSsjS" role="3cqZAp">
-          <node concept="3cpWsn" id="3gB6VSKSsjT" role="3cpWs9">
-            <property role="TrG5h" value="ctxtComp" />
-            <node concept="3Tqbb2" id="3gB6VSKSsjR" role="1tU5fm">
-              <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-            </node>
-            <node concept="2OqwBi" id="3gB6VSKSsjU" role="33vP2m">
-              <node concept="13iPFW" id="3gB6VSKSsjV" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="3gB6VSKSsjW" role="2OqNvi">
-                <node concept="1xMEDy" id="3gB6VSKSsjX" role="1xVPHs">
-                  <node concept="chp4Y" id="3gB6VSKSsjY" role="ri$Ld">
-                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3gB6VSKSytG" role="3cqZAp">
-          <node concept="3cpWsn" id="3gB6VSKSytH" role="3cpWs9">
-            <property role="TrG5h" value="visibleComps" />
-            <node concept="A3Dl8" id="3gB6VSKSytd" role="1tU5fm">
-              <node concept="3Tqbb2" id="3gB6VSKSytg" role="A3Ik2">
-                <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3gB6VSKSytI" role="33vP2m">
-              <node concept="2OqwBi" id="3gB6VSKSytJ" role="2Oq$k0">
-                <node concept="2OqwBi" id="3gB6VSKSytK" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3gB6VSKSytL" role="2Oq$k0">
-                    <node concept="13iPFW" id="3gB6VSKSytM" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="3gB6VSKSytN" role="2OqNvi">
-                      <node concept="1xMEDy" id="3gB6VSKSytO" role="1xVPHs">
-                        <node concept="chp4Y" id="3gB6VSKSytP" role="ri$Ld">
-                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="3gB6VSKSytQ" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                    <node concept="3TUQnm" id="3gB6VSKSytR" role="37wK5m">
-                      <ref role="3TV0OU" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3zZkjj" id="3gB6VSKSytS" role="2OqNvi">
-                  <node concept="1bVj0M" id="3gB6VSKSytT" role="23t8la">
-                    <node concept="3clFbS" id="3gB6VSKSytU" role="1bW5cS">
-                      <node concept="3clFbF" id="3gB6VSKSytV" role="3cqZAp">
-                        <node concept="3y3z36" id="3gB6VSKSytW" role="3clFbG">
-                          <node concept="37vLTw" id="3gB6VSKSytX" role="3uHU7w">
-                            <ref role="3cqZAo" node="3gB6VSKSsjT" resolve="ctxtComp" />
-                          </node>
-                          <node concept="37vLTw" id="3gB6VSKSytY" role="3uHU7B">
-                            <ref role="3cqZAo" node="3gB6VSKSytZ" resolve="it" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="3gB6VSKSytZ" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="3gB6VSKSyu0" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="3gB6VSKSyu1" role="2OqNvi">
-                <node concept="chp4Y" id="3gB6VSKSyu2" role="v3oSu">
-                  <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3gB6VSLcFhQ" role="3cqZAp" />
-        <node concept="3cpWs6" id="3gB6VSKSzHU" role="3cqZAp">
-          <node concept="2OqwBi" id="3gB6VSLcIBZ" role="3cqZAk">
-            <node concept="37vLTw" id="3gB6VSLcIC0" role="2Oq$k0">
-              <ref role="3cqZAo" node="3gB6VSKSytH" resolve="visibleComps" />
-            </node>
-            <node concept="3zZkjj" id="3gB6VSLcIC1" role="2OqNvi">
-              <node concept="1bVj0M" id="3gB6VSLcIC2" role="23t8la">
-                <node concept="3clFbS" id="3gB6VSLcIC3" role="1bW5cS">
-                  <node concept="3cpWs8" id="3gB6VSLdyQL" role="3cqZAp">
-                    <node concept="3cpWsn" id="3gB6VSLdyQM" role="3cpWs9">
-                      <property role="TrG5h" value="containerKind" />
-                      <node concept="3Tqbb2" id="3gB6VSLdyQI" role="1tU5fm">
-                        <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
-                      </node>
-                      <node concept="2OqwBi" id="3gB6VSLdyQN" role="33vP2m">
-                        <node concept="37vLTw" id="3gB6VSLdyQO" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3gB6VSLcIC9" resolve="it" />
-                        </node>
-                        <node concept="3TrEf2" id="3gB6VSLdyQP" role="2OqNvi">
-                          <ref role="3Tt5mk" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="3gB6VSLcIC4" role="3cqZAp">
-                    <node concept="2OqwBi" id="3gB6VSLdvJ7" role="3clFbG">
-                      <node concept="13iPFW" id="3gB6VSLdvrI" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="3gB6VSLdwY0" role="2OqNvi">
-                        <ref role="37wK5l" node="3gB6VSKS$k6" resolve="isAllowedContentKind" />
-                        <node concept="37vLTw" id="3gB6VSLdyQQ" role="37wK5m">
-                          <ref role="3cqZAo" node="3gB6VSLdyQM" resolve="containerKind" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="3gB6VSLcIC9" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="3gB6VSLcICa" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A3Dl8" id="3gB6VSKSqOs" role="3clF45">
-        <node concept="3Tqbb2" id="3gB6VSKSqOv" role="A3Ik2">
-          <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
-        </node>
-      </node>
-      <node concept="P$JXv" id="3gB6VSKS$6z" role="lGtFl">
-        <node concept="TZ5HA" id="3gB6VSKS$6$" role="TZ5H$">
-          <node concept="1dT_AC" id="3gB6VSKS$6_" role="1dT_Ay">
-            <property role="1dT_AB" value="This method is used in the scope calculation of the ComponentRef." />
-          </node>
-        </node>
-        <node concept="x79VA" id="3gB6VSKS$6A" role="3nqlJM">
-          <property role="x79VB" value="a list of components that should be allowed inside the context component" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="3gB6VSKS$k6" role="13h7CS">
-      <property role="TrG5h" value="isAllowedContentKind" />
-      <property role="13i0it" value="true" />
-      <node concept="37vLTG" id="3gB6VSKS$zj" role="3clF46">
-        <property role="TrG5h" value="compKind" />
-        <node concept="3Tqbb2" id="3gB6VSKTQOY" role="1tU5fm">
-          <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3gB6VSKS$k7" role="1B3o_S" />
-      <node concept="3clFbS" id="3gB6VSKS$k9" role="3clF47">
-        <node concept="3cpWs6" id="3gB6VSKSB$b" role="3cqZAp">
-          <node concept="3clFbT" id="3gB6VSKSB$d" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3gB6VSKS$z7" role="3clF45" />
-      <node concept="P$JXv" id="3gB6VSKSBA7" role="lGtFl">
-        <node concept="TZ5HA" id="3gB6VSKSBA8" role="TZ5H$">
-          <node concept="1dT_AC" id="3gB6VSKSBA9" role="1dT_Ay">
-            <property role="1dT_AB" value="By default this implementation allows the usage of any kind inside &quot;this&quot; kind." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3gB6VSLdUMB" role="TZ5H$">
-          <node concept="1dT_AC" id="3gB6VSLdUMC" role="1dT_Ay">
-            <property role="1dT_AB" value="To customize the scope of ComponentRef provide your own implementation." />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="3gB6VSKSBAa" role="3nqlJM">
-          <property role="TUZQ4" value="the component " />
-          <node concept="zr_55" id="3gB6VSKSBAc" role="zr_5Q">
-            <ref role="zr_51" node="3gB6VSKS$zj" resolve="compKind" />
-          </node>
-        </node>
-        <node concept="x79VA" id="3gB6VSKSBAd" role="3nqlJM">
-          <property role="x79VB" value="true if the kind of the passed component is allowed" />
         </node>
       </node>
     </node>

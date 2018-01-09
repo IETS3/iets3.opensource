@@ -11,9 +11,13 @@
   </languages>
   <imports>
     <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+    <import index="5etr" ref="r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -22,6 +26,10 @@
         <reference id="5449224527592117654" name="checkingReference" index="1BTHP0" />
         <child id="3655334166513314307" name="nodes" index="3KTr4d" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -125,6 +133,7 @@
         <child id="8492736225391506814" name="imports" index="38kjvB" />
         <child id="7804632404593342038" name="contents" index="1i1AA4" />
       </concept>
+      <concept id="7804632404593231760" name="org.iets3.components.core.structure.EmptyComponentContent" flags="ng" index="1i1Xx2" />
       <concept id="7804632404593231361" name="org.iets3.components.core.structure.Component" flags="ng" index="1i1XBj">
         <child id="7804632404593514231" name="kind" index="1i0K$_" />
         <child id="7804632404593231452" name="contents" index="1i1XAe" />
@@ -393,7 +402,7 @@
       <node concept="GnABt" id="48ZWgAGs_tL" role="1i1XAe">
         <node concept="1i6xzV" id="48ZWgAGs_tY" role="GnABu">
           <node concept="1i1fwW" id="48ZWgAGs_uh" role="MGl3R">
-            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindB" />
+            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindA" />
           </node>
           <node concept="pfQqD" id="48ZWgAGwlhI" role="pfQ1b">
             <property role="pfQqC" value="innerCmp" />
@@ -401,7 +410,7 @@
         </node>
         <node concept="1i6xzV" id="48ZWgAGwlpj" role="GnABu">
           <node concept="1i1fwW" id="48ZWgAGwlpk" role="MGl3R">
-            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindB" />
+            <ref role="1i1fwX" node="48ZWgAGs_tn" resolve="ExternalInnerComp_KindA" />
           </node>
           <node concept="pfQqD" id="48ZWgAGwlpl" role="pfQ1b">
             <property role="pfQqC" value="innerCmp2" />
@@ -445,7 +454,7 @@
       </node>
     </node>
     <node concept="1i1XBj" id="48ZWgAGs_tn" role="1i1AA4">
-      <property role="TrG5h" value="ExternalInnerComp_KindB" />
+      <property role="TrG5h" value="ExternalInnerComp_KindA" />
       <node concept="3o2yKq" id="48ZWgAGs_tl" role="1i0K$_" />
       <node concept="H_j2F" id="48ZWgAGwgLN" role="1i1XAe">
         <node concept="H_vQO" id="48ZWgAGwgLO" role="H_jLS" />
@@ -459,9 +468,11 @@
       </node>
     </node>
     <node concept="1i1XBj" id="3gB6VSLerpz" role="1i1AA4">
-      <property role="TrG5h" value="ExternalComp_KindA" />
+      <property role="TrG5h" value="ExternalComp_KindB" />
       <property role="13Nl5X" value="true" />
       <node concept="4KprX" id="3gB6VSLerpx" role="1i0K$_" />
+      <node concept="GnABt" id="7Moo7Ldkuf2" role="1i1XAe" />
+      <node concept="1i1Xx2" id="7Moo7Ldkueq" role="1i1XAe" />
     </node>
   </node>
   <node concept="1lH9Xt" id="3gB6VSLekEx">
@@ -470,16 +481,59 @@
       <node concept="1i1ALs" id="3gB6VSLekE_" role="1qenE9">
         <property role="TrG5h" value="chunk" />
         <node concept="1i1XBj" id="3gB6VSLekEE" role="1i1AA4">
-          <property role="TrG5h" value="testComp" />
+          <property role="TrG5h" value="testCompB" />
           <node concept="4KprX" id="3gB6VSLekED" role="1i0K$_" />
           <node concept="GnABt" id="3gB6VSLekFe" role="1i1XAe">
+            <node concept="GnyP7" id="2B42b1rEfz8" role="GnABu" />
             <node concept="1i6xzV" id="3gB6VSLekFl" role="GnABu">
               <node concept="1i1fwW" id="3gB6VSLekFv" role="MGl3R">
                 <ref role="1i1fwX" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
-                <node concept="2rqxmr" id="3gB6VSLeroQ" role="lGtFl">
-                  <ref role="1BTHP0" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
-                  <node concept="3KTrbX" id="3gB6VSLeroR" role="3KTr4d">
+              </node>
+              <node concept="7CXmI" id="2B42b1rEfy7" role="lGtFl">
+                <node concept="1TM$A" id="2B42b1rEfy8" role="7EUXB">
+                  <node concept="2PYRI3" id="2B42b1rEfy9" role="3lydEf">
+                    <ref role="39XzEq" to="5etr:6LfBX8Yll1h" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1z9TsT" id="2B42b1rEfzD" role="lGtFl">
+              <node concept="OjmMv" id="2B42b1rEfzE" role="1w35rA">
+                <node concept="19SGf9" id="2B42b1rEfzF" role="OjmMu">
+                  <node concept="19SUe$" id="2B42b1rEfzG" role="19SJt6">
+                    <property role="19SUeA" value="instances of components with KindA are out of scope" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1i1XBj" id="2B42b1rEfw6" role="1i1AA4">
+          <property role="TrG5h" value="testCompA" />
+          <node concept="3o2yKq" id="2B42b1rEfw4" role="1i0K$_" />
+          <node concept="GnABt" id="2B42b1rEfwz" role="1i1XAe">
+            <node concept="1i6xzV" id="2B42b1rEfwD" role="GnABu">
+              <node concept="1i1fwW" id="2B42b1rEfwL" role="MGl3R">
+                <ref role="1i1fwX" node="3gB6VSLerpz" resolve="ExternalComp_KindB" />
+                <node concept="2rqxmr" id="2B42b1rEfx4" role="lGtFl">
+                  <ref role="1BTHP0" node="3gB6VSLerpz" resolve="ExternalComp_KindB" />
+                  <node concept="3KTrbX" id="2B42b1rEfx5" role="3KTr4d">
+                    <ref role="3AHY9a" node="3gB6VSLekEE" resolve="testCompB" />
+                  </node>
+                  <node concept="3KTrbX" id="2B42b1rEfx6" role="3KTr4d">
                     <ref role="3AHY9a" node="48ZWgAGs_py" resolve="ExternalRootComp_KindA" />
+                  </node>
+                  <node concept="3KTrbX" id="2B42b1rEfx7" role="3KTr4d">
+                    <ref role="3AHY9a" node="3gB6VSLerpz" resolve="ExternalComp_KindB" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="2B42b1rEfxw" role="lGtFl">
+                <node concept="OjmMv" id="2B42b1rEfxx" role="1w35rA">
+                  <node concept="19SGf9" id="2B42b1rEfxy" role="OjmMu">
+                    <node concept="19SUe$" id="2B42b1rEfxz" role="19SJt6">
+                      <property role="19SUeA" value="instances of components with TestKindA and TestKindB are visible" />
+                    </node>
                   </node>
                 </node>
               </node>
