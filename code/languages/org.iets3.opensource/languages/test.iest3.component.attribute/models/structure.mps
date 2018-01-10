@@ -56,8 +56,8 @@
   </node>
   <node concept="1TIwiD" id="3QX5db_HNz8">
     <property role="EcuMT" value="4448734902941595848" />
-    <property role="TrG5h" value="TestKind" />
-    <property role="34LRSv" value="testKind" />
+    <property role="TrG5h" value="TestKindA" />
+    <property role="34LRSv" value="testKindA" />
     <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
   <node concept="1TIwiD" id="3QX5db_I5bP">
@@ -73,6 +73,12 @@
     <node concept="PrWs8" id="48ZWgAGwh6E" role="PzmwI">
       <ref role="PrY4T" to="w9y2:4KDeVD8s9RL" resolve="IConnectorType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3gB6VSKTCP3">
+    <property role="EcuMT" value="3758002917742120259" />
+    <property role="TrG5h" value="TestKindB" />
+    <property role="34LRSv" value="testKindB" />
+    <ref role="1TJDcQ" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
   </node>
 </model>
 
