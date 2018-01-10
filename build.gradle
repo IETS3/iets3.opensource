@@ -84,7 +84,6 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mpsArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
     mpsArtifacts "com.mbeddr:platform:$mbeddrVersion"
 }
 
