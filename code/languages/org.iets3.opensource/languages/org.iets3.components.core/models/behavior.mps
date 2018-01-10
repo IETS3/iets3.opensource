@@ -32,6 +32,8 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1977,6 +1979,40 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="4fgA7QrL3FK" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3Qosey6J9Zi" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="visibleFunctions" />
+      <ref role="13i0hy" to="nu60:mQGcCvDdEN" resolve="visibleFunctions" />
+      <node concept="3Tm1VV" id="3Qosey6J9Zj" role="1B3o_S" />
+      <node concept="3clFbS" id="3Qosey6J9Zn" role="3clF47">
+        <node concept="3clFbF" id="3Qosey6JvCY" role="3cqZAp">
+          <node concept="2OqwBi" id="3Qosey6JA9V" role="3clFbG">
+            <node concept="2OqwBi" id="3Qosey6JyQC" role="2Oq$k0">
+              <node concept="2OqwBi" id="3Qosey6JvXu" role="2Oq$k0">
+                <node concept="13iPFW" id="3Qosey6JvCX" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="3Qosey6JwKv" role="2OqNvi">
+                  <ref role="3TtcxE" to="w9y2:6LfBX8Yi4ps" resolve="contents" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="3Qosey6J_$X" role="2OqNvi">
+                <node concept="chp4Y" id="3Qosey6J_IY" role="v3oSu">
+                  <ref role="cht4Q" to="w9y2:2KohUff$lmX" resolve="CompFunctionAdapter" />
+                </node>
+              </node>
+            </node>
+            <node concept="13MTOL" id="3Qosey6JAsZ" role="2OqNvi">
+              <ref role="13MTZf" to="yv47:mQGcCvwSTn" resolve="fun" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3Qosey6J9Zo" role="3clF45">
+        <node concept="3Tqbb2" id="3Qosey6J9Zp" role="A3Ik2">
+          <ref role="ehGHo" to="yv47:49WTic8f4iz" resolve="Function" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6LfBX8Yl7Hw">

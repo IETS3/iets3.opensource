@@ -15,6 +15,7 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -155,6 +156,9 @@
     </node>
     <node concept="PrWs8" id="GKE0N9htCv" role="PzmwI">
       <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
+    <node concept="PrWs8" id="3Qosey6HihY" role="PzmwI">
+      <ref role="PrY4T" to="yv47:mQGcCvDdrZ" resolve="IFunctionContainer" />
     </node>
     <node concept="1QGGSu" id="cEt5uj8Nnf" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/component.png" />
@@ -1347,6 +1351,19 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4217735156746171148" />
       <ref role="20lvS9" node="4KDeVD8s9RL" resolve="IConnectorType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2KohUff$lmX">
+    <property role="EcuMT" value="3177368305997534653" />
+    <property role="TrG5h" value="CompFunctionAdapter" />
+    <property role="34LRSv" value="fun" />
+    <property role="3GE5qa" value="components.adapter" />
+    <ref role="1TJDcQ" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
+    <node concept="PrWs8" id="2KohUff_EbJ" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="2KohUff_Ug3" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
 </model>

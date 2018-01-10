@@ -13,6 +13,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -208,6 +209,9 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -2592,6 +2596,30 @@
             <node concept="1mIQ4w" id="5$ENVmWE5aj" role="2OqNvi">
               <node concept="chp4Y" id="5$ENVmWE5ak" role="cj9EA">
                 <ref role="cht4Q" to="w9y2:9D0IlqBErS" resolve="ComponentType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2KohUff_Cbx">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="1M2myG" to="w9y2:2KohUff$lmX" resolve="CompFunctionAdapter" />
+    <node concept="EnEH3" id="2KohUff_Ug7" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="2KohUff_Ugc" role="EtsB7">
+        <node concept="3clFbS" id="2KohUff_Ugd" role="2VODD2">
+          <node concept="3clFbF" id="2KohUff_UoA" role="3cqZAp">
+            <node concept="2OqwBi" id="2KohUff_Weu" role="3clFbG">
+              <node concept="2OqwBi" id="2KohUff_UFF" role="2Oq$k0">
+                <node concept="EsrRn" id="2KohUff_Uo_" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2KohUff_Vky" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:mQGcCvwSTn" resolve="fun" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2KohUff_X$3" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
