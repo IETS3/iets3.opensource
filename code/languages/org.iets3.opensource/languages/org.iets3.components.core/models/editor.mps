@@ -13728,6 +13728,10 @@
       <property role="S$Qs1" value="true" />
       <node concept="3EZMnI" id="77HYM7Hoq7e" role="3EZMnx">
         <node concept="2iRfu4" id="77HYM7Hoq7f" role="2iSdaV" />
+        <node concept="3F0ifn" id="77HYM7Hoq7j" role="3EZMnx">
+          <property role="3F0ifm" value="inline instance" />
+          <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
+        </node>
         <node concept="1kHk_G" id="77HYM7Hoq7g" role="3EZMnx">
           <ref role="1NtTu8" to="w9y2:5kXA14mWc_G" resolve="public" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
@@ -13737,10 +13741,6 @@
             <property role="1$x2rV" value="&lt;kind&gt;" />
             <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
           </node>
-        </node>
-        <node concept="3F0ifn" id="77HYM7Hoq7j" role="3EZMnx">
-          <property role="3F0ifm" value="inline component instance" />
-          <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
         </node>
         <node concept="PMmxH" id="77HYM7Hoq7l" role="3EZMnx">
           <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />
@@ -13883,6 +13883,10 @@
       </node>
       <node concept="3EZMnI" id="77HYM7Hoq8y" role="AHCbl">
         <node concept="2iRfu4" id="77HYM7Hoq8z" role="2iSdaV" />
+        <node concept="3F0ifn" id="77HYM7Hoq8G" role="3EZMnx">
+          <property role="3F0ifm" value="inline instance" />
+          <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
+        </node>
         <node concept="3F0ifn" id="77HYM7Hoq8$" role="3EZMnx">
           <property role="3F0ifm" value="public" />
           <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
@@ -13901,10 +13905,6 @@
         </node>
         <node concept="3F1sOY" id="77HYM7Hoq8F" role="3EZMnx">
           <ref role="1NtTu8" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
-        </node>
-        <node concept="3F0ifn" id="77HYM7Hoq8G" role="3EZMnx">
-          <property role="3F0ifm" value="component" />
-          <ref role="1k5W1q" node="7Dcax7Ah0s0" resolve="componentsKeyword" />
         </node>
         <node concept="PMmxH" id="77HYM7Hoq8O" role="3EZMnx">
           <ref role="PMmxG" to="ir4w:4A8SzOVasuR" resolve="summary" />

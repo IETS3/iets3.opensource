@@ -1092,7 +1092,7 @@
     </node>
     <node concept="1TJgyj" id="2Y$6Xot5kOx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameterValues_old" />
+      <property role="20kJfa" value="parameterValues_old2" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3432899422388047137" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
@@ -1364,7 +1364,7 @@
     <property role="EcuMT" value="8209493818901074928" />
     <property role="3GE5qa" value="components.substructure" />
     <property role="TrG5h" value="InlineComponentInstance" />
-    <property role="34LRSv" value="inline component instance" />
+    <property role="34LRSv" value="inline instance" />
     <ref role="1TJDcQ" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
     <node concept="1TJgyj" id="77HYM7HnhfL" role="1TKVEi">
       <property role="IQ2ns" value="8209493818901074929" />
