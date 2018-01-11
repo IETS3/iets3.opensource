@@ -485,8 +485,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="71dSyJVnXJS">
-    <property role="3GE5qa" value="let" />
-    <ref role="1M2myG" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <ref role="1M2myG" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef_old" />
     <node concept="9S07l" id="6b_jefnKxD$" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKxD_" role="2VODD2">
         <node concept="3clFbF" id="6b_jefnKxDA" role="3cqZAp">
@@ -496,7 +496,7 @@
               <node concept="2Xjw5R" id="6b_jefnKxDE" role="2OqNvi">
                 <node concept="1xMEDy" id="6b_jefnKxDF" role="1xVPHs">
                   <node concept="chp4Y" id="6b_jefnKxDG" role="ri$Ld">
-                    <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+                    <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="6b_jefnKxDH" role="1xVPHs" />
@@ -515,7 +515,7 @@
             <node concept="3cpWsn" id="1F1F0IUZ_Hk" role="3cpWs9">
               <property role="TrG5h" value="all" />
               <node concept="2I9FWS" id="1F1F0IUZ_Hl" role="1tU5fm">
-                <ref role="2I9WkF" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+                <ref role="2I9WkF" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
               </node>
               <node concept="2OqwBi" id="1F1F0IUZ_Hm" role="33vP2m">
                 <node concept="2OqwBi" id="1F1F0IUZ_Hn" role="2Oq$k0">
@@ -523,7 +523,7 @@
                   <node concept="2Xjw5R" id="1F1F0IUZ_Hp" role="2OqNvi">
                     <node concept="1xMEDy" id="1F1F0IUZ_Hq" role="1xVPHs">
                       <node concept="chp4Y" id="1F1F0IUZ_Hr" role="ri$Ld">
-                        <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+                        <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
                       </node>
                     </node>
                   </node>
@@ -566,7 +566,7 @@
                   </node>
                   <node concept="A3Dl8" id="1F1F0IUZ_MX" role="10QFUM">
                     <node concept="3Tqbb2" id="1F1F0IUZ_MY" role="A3Ik2">
-                      <ref role="ehGHo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+                      <ref role="ehGHo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
                     </node>
                   </node>
                 </node>

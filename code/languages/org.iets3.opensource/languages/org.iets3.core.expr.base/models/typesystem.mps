@@ -4012,7 +4012,7 @@
   </node>
   <node concept="1YbPZF" id="71dSyJVnX$N">
     <property role="TrG5h" value="typeof_LetSubVariable" />
-    <property role="3GE5qa" value="let" />
+    <property role="3GE5qa" value="deprecated_let" />
     <node concept="3clFbS" id="71dSyJVnX$O" role="18ibNy">
       <node concept="1Z5TYs" id="71dSyJVnXBm" role="3cqZAp">
         <node concept="mw_s8" id="71dSyJVnXBE" role="1ZfhKB">
@@ -4038,12 +4038,12 @@
     </node>
     <node concept="1YaCAy" id="71dSyJVnX$Q" role="1YuTPh">
       <property role="TrG5h" value="lsv" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+      <ref role="1YaFvo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="71dSyJVnXmL">
     <property role="TrG5h" value="typeof_LetSubVarRef" />
-    <property role="3GE5qa" value="let" />
+    <property role="3GE5qa" value="deprecated_let" />
     <node concept="3clFbS" id="71dSyJVnXmM" role="18ibNy">
       <node concept="1Z5TYs" id="71dSyJVnXr5" role="3cqZAp">
         <node concept="mw_s8" id="71dSyJVnXrp" role="1ZfhKB">
@@ -4069,12 +4069,12 @@
     </node>
     <node concept="1YaCAy" id="71dSyJVnXmO" role="1YuTPh">
       <property role="TrG5h" value="vr" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef" />
+      <ref role="1YaFvo" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="2sdKjoPEzDO">
     <property role="TrG5h" value="typeof_LetExpression" />
-    <property role="3GE5qa" value="let" />
+    <property role="3GE5qa" value="deprecated_let" />
     <node concept="3clFbS" id="2sdKjoPEzDP" role="18ibNy">
       <node concept="1Z5TYs" id="2sdKjoPEzGx" role="3cqZAp">
         <node concept="mw_s8" id="2sdKjoPEzGX" role="1ZfhKB">
@@ -4100,7 +4100,7 @@
     </node>
     <node concept="1YaCAy" id="2sdKjoPEzDR" role="1YuTPh">
       <property role="TrG5h" value="letExpression" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+      <ref role="1YaFvo" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="6UxFDrx4dTL">

@@ -2364,8 +2364,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="71dSyJVnXeN">
-    <property role="3GE5qa" value="let" />
-    <ref role="1XX52x" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <ref role="1XX52x" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
     <node concept="3EZMnI" id="71dSyJVnXeP" role="2wV5jI">
       <node concept="1kIj98" id="71dSyJVoJaF" role="3EZMnx">
         <node concept="3F0A7n" id="71dSyJVnXeW" role="1kIj9b">
@@ -2382,8 +2382,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="71dSyJVnXm8">
-    <property role="3GE5qa" value="let" />
-    <ref role="1XX52x" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <ref role="1XX52x" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef_old" />
     <node concept="1iCGBv" id="71dSyJVnXma" role="2wV5jI">
       <ref role="1NtTu8" to="hm2y:71dSyJVnXlI" resolve="var" />
       <node concept="1sVBvm" id="71dSyJVnXmc" role="1sWHZn">
@@ -2395,8 +2395,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="71dSyJVnXfE">
-    <property role="3GE5qa" value="let" />
-    <ref role="1XX52x" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <ref role="1XX52x" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
     <node concept="3EZMnI" id="71dSyJVnXfG" role="2wV5jI">
       <node concept="3F0ifn" id="71dSyJVnXfN" role="3EZMnx">
         <property role="3F0ifm" value="let" />

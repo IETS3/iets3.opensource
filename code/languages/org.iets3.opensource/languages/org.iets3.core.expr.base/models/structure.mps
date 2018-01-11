@@ -29,6 +29,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1050,8 +1051,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="71dSyJVnXem">
-    <property role="3GE5qa" value="let" />
-    <property role="TrG5h" value="LetSubVariable" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <property role="TrG5h" value="LetSubVariable_old" />
     <property role="EcuMT" value="8092372783983481750" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="71dSyJVnXep" role="1TKVEi">
@@ -1067,10 +1068,11 @@
     <node concept="PrWs8" id="4qVjx3kqTzt" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="asaX9" id="5iokRED1I_5" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="71dSyJVnXlH">
-    <property role="3GE5qa" value="let" />
-    <property role="TrG5h" value="LetSubVarRef" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <property role="TrG5h" value="LetSubVarRef_old" />
     <property role="EcuMT" value="8092372783983482221" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="71dSyJVnXlI" role="1TKVEi">
@@ -1078,15 +1080,16 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8092372783983482222" />
-      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable" />
+      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable_old" />
     </node>
     <node concept="PrWs8" id="3kzwyUOJ5i$" role="PzmwI">
       <ref role="PrY4T" node="3kzwyUOs05a" resolve="ISingleSymbolRef" />
     </node>
+    <node concept="asaX9" id="5iokRED1I_8" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="71dSyJVnXcK">
-    <property role="TrG5h" value="LetExpression" />
-    <property role="3GE5qa" value="let" />
+    <property role="TrG5h" value="LetExpression_old" />
+    <property role="3GE5qa" value="deprecated_let" />
     <property role="34LRSv" value="let" />
     <property role="EcuMT" value="8092372783983481648" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
@@ -1102,7 +1105,7 @@
       <property role="20kJfa" value="subs" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="8092372783983481807" />
-      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable" />
+      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable_old" />
     </node>
     <node concept="PrWs8" id="71dSyJVoUCe" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
@@ -1113,6 +1116,7 @@
     <node concept="PrWs8" id="4qVjx3kqKkr" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="asaX9" id="5iokRED1I_2" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dp4">
     <property role="TrG5h" value="AlternativesExpression" />
