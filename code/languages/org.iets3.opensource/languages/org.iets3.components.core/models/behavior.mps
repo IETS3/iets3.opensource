@@ -34,6 +34,7 @@
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -255,13 +256,27 @@
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <child id="2217234381367190458" name="reference" index="VUp5m" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
@@ -324,6 +339,10 @@
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -343,6 +362,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -831,6 +853,219 @@
           <node concept="37vLTw" id="x8tpSAdppp" role="3clFbG">
             <ref role="3cqZAo" node="x8tpSAdppg" resolve="ci" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5WV8nQbZt_k" role="13h7CS">
+      <property role="TrG5h" value="visibleContentsOfType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:79$zShlSHxZ" resolve="visibleContentsOfType" />
+      <node concept="3Tm1VV" id="5WV8nQbZt_n" role="1B3o_S" />
+      <node concept="3clFbS" id="5WV8nQbZt_w" role="3clF47">
+        <node concept="3clFbH" id="5WV8nQc1BTH" role="3cqZAp" />
+        <node concept="3SKdUt" id="5WV8nQc1Ckr" role="3cqZAp">
+          <node concept="3SKdUq" id="5WV8nQc1Ckt" role="3SKWNk">
+            <property role="3SKdUp" value="we do not call the super() implementation to avoid errors when IFunctionContainer is deleted" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5WV8nQbZGoB" role="3cqZAp">
+          <node concept="3cpWsn" id="5WV8nQbZGoC" role="3cpWs9">
+            <property role="TrG5h" value="functions" />
+            <node concept="A3Dl8" id="5WV8nQbZGoD" role="1tU5fm">
+              <node concept="3Tqbb2" id="5WV8nQbZGoE" role="A3Ik2" />
+            </node>
+            <node concept="2OqwBi" id="5WV8nQbZGoF" role="33vP2m">
+              <node concept="13iPFW" id="5WV8nQbZGoG" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5WV8nQbZGoH" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:mQGcCvDdEN" resolve="visibleFunctions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5WV8nQc1c4z" role="3cqZAp">
+          <node concept="3SKdUq" id="5WV8nQc1c4_" role="3SKWNk">
+            <property role="3SKdUp" value="gather all visible elemnts from parent Provider" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5WV8nQc1erx" role="3cqZAp">
+          <node concept="3cpWsn" id="5WV8nQc1ery" role="3cpWs9">
+            <property role="TrG5h" value="allVisibleElementsResult" />
+            <node concept="A3Dl8" id="5WV8nQc1ero" role="1tU5fm">
+              <node concept="3Tqbb2" id="5WV8nQc1err" role="A3Ik2" />
+            </node>
+            <node concept="2OqwBi" id="5WV8nQc1erz" role="33vP2m">
+              <node concept="2OqwBi" id="5WV8nQc1er$" role="2Oq$k0">
+                <node concept="13iPFW" id="5WV8nQc1er_" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5WV8nQc1erA" role="2OqNvi">
+                  <node concept="1xMEDy" id="5WV8nQc1erB" role="1xVPHs">
+                    <node concept="chp4Y" id="5WV8nQc1erC" role="ri$Ld">
+                      <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5WV8nQc1erD" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                <node concept="37vLTw" id="5WV8nQc1erE" role="37wK5m">
+                  <ref role="3cqZAo" node="5WV8nQbZt_x" resolve="targetConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5WV8nQc0PKx" role="3cqZAp" />
+        <node concept="3SKdUt" id="5WV8nQc0Pfu" role="3cqZAp">
+          <node concept="3SKdUq" id="5WV8nQc0Pfv" role="3SKWNk">
+            <property role="3SKdUp" value="consolidate the kind if additional restrictions are needed" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5WV8nQc0Pfw" role="3cqZAp">
+          <node concept="3clFbS" id="5WV8nQc0Pfx" role="3clFbx">
+            <node concept="3clFbJ" id="5WV8nQc0Pfy" role="3cqZAp">
+              <node concept="2OqwBi" id="5WV8nQc0Pfz" role="3clFbw">
+                <node concept="37vLTw" id="5WV8nQc0Pf$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5WV8nQbZt_x" resolve="targetConcept" />
+                </node>
+                <node concept="2Zo12i" id="5WV8nQc0Pf_" role="2OqNvi">
+                  <node concept="chp4Y" id="5WV8nQc1df9" role="2Zo12j">
+                    <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="5WV8nQc0PfB" role="3clFbx">
+                <node concept="3clFbF" id="5WV8nQc1txK" role="3cqZAp">
+                  <node concept="37vLTI" id="5WV8nQc1txM" role="3clFbG">
+                    <node concept="2OqwBi" id="5WV8nQc0PfG" role="37vLTx">
+                      <node concept="37vLTw" id="5WV8nQc1nQF" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5WV8nQc1ery" resolve="allVisibleElementsResult" />
+                      </node>
+                      <node concept="3zZkjj" id="5WV8nQc0PfI" role="2OqNvi">
+                        <node concept="1bVj0M" id="5WV8nQc0PfJ" role="23t8la">
+                          <node concept="3clFbS" id="5WV8nQc0PfK" role="1bW5cS">
+                            <node concept="3SKdUt" id="5WV8nQc0PfL" role="3cqZAp">
+                              <node concept="3SKdUq" id="5WV8nQc0PfM" role="3SKWNk">
+                                <property role="3SKdUp" value="ask the kind of the referenced element if it can be in context of the current kind" />
+                              </node>
+                            </node>
+                            <node concept="3cpWs8" id="5WV8nQc0PfN" role="3cqZAp">
+                              <node concept="3cpWsn" id="5WV8nQc0PfO" role="3cpWs9">
+                                <property role="TrG5h" value="visibleElementsKind" />
+                                <node concept="3Tqbb2" id="5WV8nQc0PfP" role="1tU5fm">
+                                  <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+                                </node>
+                                <node concept="2OqwBi" id="5WV8nQc0PfQ" role="33vP2m">
+                                  <node concept="1PxgMI" id="5WV8nQc0PfR" role="2Oq$k0">
+                                    <node concept="chp4Y" id="5WV8nQc1ofI" role="3oSUPX">
+                                      <ref role="cht4Q" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
+                                    </node>
+                                    <node concept="37vLTw" id="5WV8nQc0PfT" role="1m5AlR">
+                                      <ref role="3cqZAo" node="5WV8nQc0Pg2" resolve="it" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="5WV8nQc0PfU" role="2OqNvi">
+                                    <ref role="37wK5l" node="6LfBX8Yl7t8" resolve="specifiedKind" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="5WV8nQc0PfV" role="3cqZAp">
+                              <node concept="2OqwBi" id="5WV8nQc0PfW" role="3clFbG">
+                                <node concept="37vLTw" id="5WV8nQc0PfX" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5WV8nQc0PfO" resolve="visibleElementsKind" />
+                                </node>
+                                <node concept="2qgKlT" id="5WV8nQc0PfY" role="2OqNvi">
+                                  <ref role="37wK5l" node="5WV8nQc1dAv" resolve="canBeReferencedInContext" />
+                                  <node concept="2OqwBi" id="5WV8nQc0PfZ" role="37wK5m">
+                                    <node concept="13iPFW" id="5WV8nQc0Pg0" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="5WV8nQc0Pg1" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Rh6nW" id="5WV8nQc0Pg2" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="5WV8nQc0Pg3" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="5WV8nQc1ui2" role="37vLTJ">
+                      <ref role="3cqZAo" node="5WV8nQc1ery" resolve="allVisibleElementsResult" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5WV8nQc0Pg6" role="3clFbw">
+            <node concept="2OqwBi" id="5WV8nQc0Pg7" role="2Oq$k0">
+              <node concept="13iPFW" id="5WV8nQc0Pg8" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5WV8nQc0Pg9" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5WV8nQc0Pga" role="2OqNvi">
+              <ref role="37wK5l" node="5WV8nQbQoYu" resolve="hasRestriction" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5WV8nQbZSAs" role="3cqZAp">
+          <node concept="2YIFZM" id="5WV8nQbZT87" role="3cqZAk">
+            <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+            <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+            <node concept="2OqwBi" id="5WV8nQc1$t$" role="37wK5m">
+              <node concept="37vLTw" id="5WV8nQc1zT_" role="2Oq$k0">
+                <ref role="3cqZAo" node="5WV8nQc1ery" resolve="allVisibleElementsResult" />
+              </node>
+              <node concept="4Tj9Z" id="5WV8nQc1$Wh" role="2OqNvi">
+                <node concept="37vLTw" id="5WV8nQc1_jW" role="576Qk">
+                  <ref role="3cqZAo" node="5WV8nQbZGoC" resolve="functions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5WV8nQbZt_x" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="5WV8nQbZt_y" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="5WV8nQbZt_z" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="P$JXv" id="5WV8nQc13Hb" role="lGtFl">
+        <node concept="TZ5HA" id="5WV8nQc13Hc" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQc13Hd" role="1dT_Ay">
+            <property role="1dT_AB" value="Delegates the scope calculation to the ancestor IVisibleElementProvider to retrieve " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2f6nk2kkh2w" role="TZ5H$">
+          <node concept="1dT_AC" id="2f6nk2kkh2x" role="1dT_Ay">
+            <property role="1dT_AB" value="all visible elements. The decision whether the scope should be restricuted is delegated" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2f6nk2kkh3t" role="TZ5H$">
+          <node concept="1dT_AC" id="2f6nk2kkh3u" role="1dT_Ay">
+            <property role="1dT_AB" value="to the kind of the component." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2f6nk2kkh1_" role="TZ5H$">
+          <node concept="1dT_AC" id="2f6nk2kkh1A" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5WV8nQc13He" role="3nqlJM">
+          <property role="TUZQ4" value="targetConcept" />
+          <node concept="zr_55" id="5WV8nQc13Hg" role="zr_5Q">
+            <ref role="zr_51" node="5WV8nQbZt_x" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5WV8nQc13Hh" role="3nqlJM">
+          <property role="x79VB" value="The Scope containing all elements that should be visible" />
         </node>
       </node>
     </node>
@@ -2119,6 +2354,97 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5WV8nQbQoYu" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="hasRestriction" />
+      <node concept="3Tm1VV" id="5WV8nQbQoYv" role="1B3o_S" />
+      <node concept="10P_77" id="5WV8nQbQp0S" role="3clF45" />
+      <node concept="3clFbS" id="5WV8nQbQoYx" role="3clF47">
+        <node concept="3clFbF" id="5WV8nQbR3NM" role="3cqZAp">
+          <node concept="3clFbT" id="5WV8nQbR3NL" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5WV8nQbQpJ5" role="lGtFl">
+        <node concept="TZ5HA" id="5WV8nQbQpJ6" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQbQpJ7" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WV8nQbU2EA" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQbU2EB" role="1dT_Ay">
+            <property role="1dT_AB" value="By default no opt-in restrictions are available. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WV8nQbU2HJ" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQbU2HK" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WV8nQbU2Gr" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQbU2Gs" role="1dT_Ay">
+            <property role="1dT_AB" value="If you want to enable the special kind restritions override this method and return true." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2f6nk2kjSJN" role="TZ5H$">
+          <node concept="1dT_AC" id="2f6nk2kjSJO" role="1dT_Ay">
+            <property role="1dT_AB" value="In addtion provide a own implementation of canBeReferencedInContext" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5WV8nQbQpJb" role="3nqlJM">
+          <property role="x79VB" value="false by default: no restrictions implemented by default " />
+        </node>
+        <node concept="VUp57" id="2f6nk2kjSKm" role="3nqlJM">
+          <node concept="VXe0Z" id="2f6nk2kk2$m" role="VUp5m">
+            <ref role="VXe0S" node="5WV8nQc1dAv" resolve="canBeReferencedInContext" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5WV8nQc1dAv" role="13h7CS">
+      <property role="TrG5h" value="canBeReferencedInContext" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5WV8nQc1dAw" role="1B3o_S" />
+      <node concept="10P_77" id="5WV8nQc1dCZ" role="3clF45" />
+      <node concept="3clFbS" id="5WV8nQc1dAy" role="3clF47">
+        <node concept="3clFbF" id="5WV8nQc1dDO" role="3cqZAp">
+          <node concept="3clFbT" id="5WV8nQc1dDN" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5WV8nQc1dI9" role="3clF46">
+        <property role="TrG5h" value="contextKind" />
+        <node concept="3Tqbb2" id="5WV8nQc1dI8" role="1tU5fm">
+          <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5WV8nQc3X76" role="lGtFl">
+        <node concept="TZ5HA" id="5WV8nQc3X77" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQc3X78" role="1dT_Ay">
+            <property role="1dT_AB" value="By default any element with any kind can be referenced in a context." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WV8nQc41l2" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQc41l3" role="1dT_Ay">
+            <property role="1dT_AB" value="Override this method to customize the kind-relation conditions to restrict elements of specific" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WV8nQc41lm" role="TZ5H$">
+          <node concept="1dT_AC" id="5WV8nQc41ln" role="1dT_Ay">
+            <property role="1dT_AB" value="kinds from scope calculation" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5WV8nQc3X79" role="3nqlJM">
+          <property role="TUZQ4" value="the kind of the context element" />
+          <node concept="zr_55" id="5WV8nQc3X7b" role="zr_5Q">
+            <ref role="zr_51" node="5WV8nQc1dI9" resolve="contextKind" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5WV8nQc3X7c" role="3nqlJM">
+          <property role="x79VB" value="true by default: all elements with any kind are by default in allowed" />
         </node>
       </node>
     </node>
