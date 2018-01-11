@@ -1079,18 +1079,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3432899422388046302" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
     <node concept="PrWs8" id="cJpacq4269" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq4087" resolve="IOptionallyNamed" />
-    </node>
-    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
-    </node>
-    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
-      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
-    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
     <node concept="1TJgyj" id="2Y$6Xot5kGx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1364,6 +1355,46 @@
     </node>
     <node concept="PrWs8" id="2KohUff_Ug3" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77HYM7HnhfK">
+    <property role="EcuMT" value="8209493818901074928" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="TrG5h" value="InlineComponentInstance" />
+    <property role="34LRSv" value="inline component instance" />
+    <ref role="1TJDcQ" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
+    <node concept="1TJgyj" id="77HYM7HnhfL" role="1TKVEi">
+      <property role="IQ2ns" value="8209493818901074929" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8Yi4o1" resolve="Component" />
+    </node>
+    <node concept="PrWs8" id="77HYM7HosV8" role="PzmwI">
+      <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
+    </node>
+    <node concept="PrWs8" id="77HYM7HosVn" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="77HYM7HosV$" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77HYM7HomhL">
+    <property role="EcuMT" value="8209493818901357681" />
+    <property role="3GE5qa" value="components.substructure" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AbstractComponentInstanceBase" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6LfBX8Yl$vW" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yl7GJ" resolve="IKindSpecific" />
+    </node>
+    <node concept="PrWs8" id="4A8SzOV9V1C" role="PzmwI">
+      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
+    </node>
+    <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
   </node>
 </model>

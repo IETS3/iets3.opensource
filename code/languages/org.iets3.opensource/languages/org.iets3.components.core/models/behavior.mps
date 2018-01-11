@@ -7129,5 +7129,93 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="77HYM7Hotsx">
+    <property role="3GE5qa" value="components.substructure" />
+    <ref role="13h7C2" to="w9y2:77HYM7HnhfK" resolve="InlineComponentInstance" />
+    <node concept="13hLZK" id="77HYM7Hotsy" role="13h7CW">
+      <node concept="3clFbS" id="77HYM7Hotsz" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="77HYM7HotsG" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypedContextNode" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
+      <node concept="3Tm1VV" id="77HYM7HotsL" role="1B3o_S" />
+      <node concept="3clFbS" id="77HYM7HotsO" role="3clF47">
+        <node concept="3clFbF" id="77HYM7Hotue" role="3cqZAp">
+          <node concept="2OqwBi" id="77HYM7HoutH" role="3clFbG">
+            <node concept="2OqwBi" id="77HYM7HotEL" role="2Oq$k0">
+              <node concept="13iPFW" id="77HYM7Hotud" role="2Oq$k0" />
+              <node concept="3TrEf2" id="77HYM7HotU5" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:77HYM7HnhfL" resolve="component" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="77HYM7HovnK" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="77HYM7HotsP" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="77HYM7HotsQ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="kind" />
+      <ref role="13i0hy" node="6LfBX8Yl7Hz" resolve="kind" />
+      <node concept="3Tm1VV" id="77HYM7HotsR" role="1B3o_S" />
+      <node concept="3clFbS" id="77HYM7HotsU" role="3clF47">
+        <node concept="3clFbF" id="77HYM7HowR4" role="3cqZAp">
+          <node concept="2OqwBi" id="77HYM7Hoyk7" role="3clFbG">
+            <node concept="2OqwBi" id="77HYM7Hox5y" role="2Oq$k0">
+              <node concept="13iPFW" id="77HYM7HowR3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="77HYM7HoxI1" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:77HYM7HnhfL" resolve="component" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="77HYM7Hozea" role="2OqNvi">
+              <ref role="3Tt5mk" to="w9y2:6LfBX8Yj9rR" resolve="kind" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="77HYM7HotsV" role="3clF45">
+        <ref role="ehGHo" to="w9y2:6LfBX8Yj9nw" resolve="ComponentKind" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="77HYM7HotsW" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTreeNode" />
+      <ref role="13i0hy" to="hwgx:7NyyyjNtbn2" resolve="getTreeNode" />
+      <node concept="3Tm1VV" id="77HYM7HotsY" role="1B3o_S" />
+      <node concept="3clFbS" id="77HYM7Hott2" role="3clF47">
+        <node concept="3clFbF" id="77HYM7Ho$92" role="3cqZAp">
+          <node concept="2OqwBi" id="77HYM7Ho_rk" role="3clFbG">
+            <node concept="2OqwBi" id="77HYM7Ho$n8" role="2Oq$k0">
+              <node concept="13iPFW" id="77HYM7Ho$91" role="2Oq$k0" />
+              <node concept="3TrEf2" id="77HYM7Ho$Pe" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:77HYM7HnhfL" resolve="component" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="77HYM7HoAln" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:7NyyyjNtbn2" resolve="getTreeNode" />
+              <node concept="37vLTw" id="77HYM7HoAvK" role="37wK5m">
+                <ref role="3cqZAo" node="77HYM7Hott3" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="77HYM7Hott3" role="3clF46">
+        <property role="TrG5h" value="category" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="77HYM7Hott4" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="77HYM7Hott5" role="3clF45">
+        <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
+      </node>
+    </node>
+  </node>
 </model>
 
