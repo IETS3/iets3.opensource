@@ -1941,34 +1941,11 @@
       <ref role="13i0hy" node="4Y0vh0cfqjE" resolve="renderReadable" />
       <node concept="3Tm1VV" id="1LQoS$LWLk$" role="1B3o_S" />
       <node concept="3clFbS" id="1LQoS$LWLkB" role="3clF47">
-        <node concept="3clFbF" id="6kR0qIbHXsB" role="3cqZAp">
-          <node concept="3cpWs3" id="6kR0qIbI27c" role="3clFbG">
-            <node concept="2OqwBi" id="6kR0qIbI2qA" role="3uHU7w">
-              <node concept="2OqwBi" id="6kR0qIbI2b$" role="2Oq$k0">
-                <node concept="13iPFW" id="6kR0qIbI28p" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6kR0qIbI2jd" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="6kR0qIbI2F3" role="2OqNvi">
-                <ref role="37wK5l" node="6kR0qIbI2yi" resolve="renderReadable" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="6kR0qIbI22U" role="3uHU7B">
-              <node concept="2OqwBi" id="6kR0qIbI1X2" role="3uHU7B">
-                <node concept="2OqwBi" id="6kR0qIbI1Kz" role="2Oq$k0">
-                  <node concept="13iPFW" id="6kR0qIbI1He" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="6kR0qIbI1Q9" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="6kR0qIbI20L" role="2OqNvi">
-                  <ref role="37wK5l" node="4Y0vh0cfqjE" resolve="renderReadable" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="6kR0qIbI22X" role="3uHU7w">
-                <property role="Xl_RC" value="." />
-              </node>
+        <node concept="3cpWs6" id="6Q$zD2ku3g$" role="3cqZAp">
+          <node concept="2OqwBi" id="6Q$zD2ku3uV" role="3cqZAk">
+            <node concept="13iPFW" id="6Q$zD2ku3gF" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6Q$zD2ku3Xx" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
             </node>
           </node>
         </node>
