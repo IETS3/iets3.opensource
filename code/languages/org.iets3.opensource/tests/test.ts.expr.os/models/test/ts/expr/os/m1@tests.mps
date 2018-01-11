@@ -22,7 +22,7 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
-    <import index="phx6" ref="r:f921a9bc-dd6a-4d8a-9ba0-a0a73a631a6b(org.iets3.core.expr.base.migration)" />
+    <import index="u2uj" ref="r:d1eedef5-09a1-4dfa-9889-4ee05f2dba04(org.iets3.core.expr.lambda.migration)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -12178,8 +12178,8 @@
   </node>
   <node concept="2lJO3n" id="5iokREDfgRQ">
     <property role="TrG5h" value="SubstituteLetByBlockMigrationSimple" />
-    <node concept="3ea_Bc" id="5iokREDfgRZ" role="3ea0P7">
-      <ref role="3ea_Bf" to="phx6:5iokRED4PKe" resolve="SubstituteLetExpressionByBlockWithVals" />
+    <node concept="3ea_Bc" id="19wtHmdOatC" role="3ea0P7">
+      <ref role="3ea_Bf" to="u2uj:5iokRED4PKe" resolve="SubstituteLetExpressionByBlockWithVals" />
     </node>
     <node concept="1qefOq" id="5iokREDfgS3" role="2lJO3o">
       <node concept="_iOnV" id="5iokREDfgS6" role="1qenE9">
@@ -12317,8 +12317,8 @@
         <node concept="_ixoA" id="5iokREDiLz5" role="_iOnC" />
       </node>
     </node>
-    <node concept="3ea_Bc" id="5iokREDiKxo" role="3ea0P7">
-      <ref role="3ea_Bf" to="phx6:5iokRED4PKe" resolve="SubstituteLetExpressionByBlockWithVals" />
+    <node concept="3ea_Bc" id="19wtHmdOrKm" role="3ea0P7">
+      <ref role="3ea_Bf" to="u2uj:5iokRED4PKe" resolve="SubstituteLetExpressionByBlockWithVals" />
     </node>
     <node concept="1qefOq" id="5iokREDiK_8" role="2lJO3o">
       <node concept="_iOnV" id="5iokREDiK_9" role="1qenE9">
