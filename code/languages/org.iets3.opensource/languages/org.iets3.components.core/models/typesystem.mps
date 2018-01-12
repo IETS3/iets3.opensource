@@ -2519,5 +2519,49 @@
       <ref role="1YaFvo" to="w9y2:cCTPXxodrc" resolve="AbstractConnectorRefTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2QRlyxOqZpo">
+    <property role="TrG5h" value="typeof_InlineInstanceRefTarget" />
+    <property role="3GE5qa" value="expr.nav" />
+    <node concept="3clFbS" id="2QRlyxOqZpp" role="18ibNy">
+      <node concept="1Z5TYs" id="2QRlyxOqZO5" role="3cqZAp">
+        <node concept="mw_s8" id="2QRlyxOqZO8" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2QRlyxOqZzm" role="mwGJk">
+            <node concept="1YBJjd" id="2QRlyxOqZ_9" role="1Z2MuG">
+              <ref role="1YBMHb" node="2QRlyxOqZpr" resolve="iirt" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2QRlyxOqZOt" role="1ZfhKB">
+          <node concept="2pJPEk" id="2QRlyxOqZOu" role="mwGJk">
+            <node concept="2pJPED" id="2QRlyxOqZOv" role="2pJPEn">
+              <ref role="2pJxaS" to="w9y2:9D0IlqBErS" resolve="ComponentType" />
+              <node concept="2pIpSj" id="2QRlyxOqZOw" role="2pJxcM">
+                <ref role="2pIpSl" to="w9y2:9D0IlqBEs5" resolve="component" />
+                <node concept="36biLy" id="2QRlyxOqZOx" role="2pJxcZ">
+                  <node concept="2OqwBi" id="2QRlyxOr146" role="36biLW">
+                    <node concept="2OqwBi" id="2QRlyxOr0hw" role="2Oq$k0">
+                      <node concept="1YBJjd" id="2QRlyxOr05k" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2QRlyxOqZpr" resolve="iirt" />
+                      </node>
+                      <node concept="3TrEf2" id="2QRlyxOr0Ay" role="2OqNvi">
+                        <ref role="3Tt5mk" to="w9y2:2QRlyxOqVpq" resolve="instance" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="2QRlyxOr1L2" role="2OqNvi">
+                      <ref role="3Tt5mk" to="w9y2:77HYM7HnhfL" resolve="component" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2QRlyxOqZpr" role="1YuTPh">
+      <property role="TrG5h" value="iirt" />
+      <ref role="1YaFvo" to="w9y2:2QRlyxOqVpb" resolve="InlineInstanceRefTarget" />
+    </node>
+  </node>
 </model>
 

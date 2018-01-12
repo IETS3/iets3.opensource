@@ -339,7 +339,7 @@
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="instance" />
     <property role="EcuMT" value="7804632404594100009" />
-    <ref role="1TJDcQ" node="2Y$6Xot5kBu" resolve="AbstractComponentInstance" />
+    <ref role="1TJDcQ" node="2Y$6Xot5kBu" resolve="AbstractComponentInstanceWithRef" />
     <node concept="1TJgyj" id="6LfBX8YlosG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="component_old" />
@@ -1075,7 +1075,7 @@
   </node>
   <node concept="1TIwiD" id="2Y$6Xot5kBu">
     <property role="3GE5qa" value="components.substructure" />
-    <property role="TrG5h" value="AbstractComponentInstance" />
+    <property role="TrG5h" value="AbstractComponentInstanceWithRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3432899422388046302" />
@@ -1399,12 +1399,34 @@
     <node concept="PrWs8" id="7Atos1y6NBE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
+    <node concept="PrWs8" id="2QRlyxOgRVg" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
     <node concept="1TJgyj" id="77HYM7H$sf3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameterValues" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="8209493818904527811" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2QRlyxOqVpb">
+    <property role="EcuMT" value="3294196384196703819" />
+    <property role="3GE5qa" value="expr.nav" />
+    <property role="TrG5h" value="InlineInstanceRefTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2QRlyxOqVpc" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="PrWs8" id="2QRlyxOqVpk" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
+    </node>
+    <node concept="1TJgyj" id="2QRlyxOqVpq" role="1TKVEi">
+      <property role="IQ2ns" value="3294196384196703834" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="77HYM7HnhfK" resolve="InlineComponentInstance" />
     </node>
   </node>
 </model>
