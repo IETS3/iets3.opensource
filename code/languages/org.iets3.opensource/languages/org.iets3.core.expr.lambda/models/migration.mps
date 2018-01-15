@@ -255,11 +255,6 @@
       <ref role="2VtyIY" to="slm6:4ubqdNOF9cA" resolve="execute" />
       <node concept="3Tm1VV" id="5iokRED4PKo" role="1B3o_S" />
       <node concept="3clFbS" id="5iokRED4PKq" role="3clF47">
-        <node concept="3SKdUt" id="5iokREDc2CC" role="3cqZAp">
-          <node concept="3SKdUq" id="5iokREDc2CE" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: take care of LetSubVarRefs" />
-          </node>
-        </node>
         <node concept="2Gpval" id="5iokRED7Zev" role="3cqZAp">
           <node concept="2GrKxI" id="5iokRED7Zex" role="2Gsz3X">
             <property role="TrG5h" value="mod" />

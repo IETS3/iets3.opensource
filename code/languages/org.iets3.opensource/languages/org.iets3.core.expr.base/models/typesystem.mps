@@ -18,6 +18,8 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="gsp2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference.util(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -6458,6 +6460,24 @@
     <node concept="1YaCAy" id="4Pi6J8BVmrn" role="1YuTPh">
       <property role="TrG5h" value="pe" />
       <ref role="1YaFvo" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4qowQiBshwl">
+    <property role="3GE5qa" value="deprecated_let" />
+    <property role="TrG5h" value="checkLetExpression_old" />
+    <node concept="3clFbS" id="4qowQiBshwm" role="18ibNy">
+      <node concept="2MkqsV" id="4qowQiBshwy" role="3cqZAp">
+        <node concept="1YBJjd" id="4qowQiBstLt" role="2OEOjV">
+          <ref role="1YBMHb" node="4qowQiBshwo" resolve="letExpression_old" />
+        </node>
+        <node concept="Xl_RD" id="4qowQiBvTI4" role="2MkJ7o">
+          <property role="Xl_RC" value="Let expressions are deprecated and will be removed soon.\nPlease make sure the language org.iets3.core.expr.lambda is imported and apply the intention 'Replace Let Expression by Block'" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4qowQiBshwo" role="1YuTPh">
+      <property role="TrG5h" value="letExpression_old" />
+      <ref role="1YaFvo" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
     </node>
   </node>
 </model>

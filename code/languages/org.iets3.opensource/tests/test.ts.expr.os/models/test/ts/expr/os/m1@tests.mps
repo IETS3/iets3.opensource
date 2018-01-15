@@ -23,6 +23,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="u2uj" ref="r:d1eedef5-09a1-4dfa-9889-4ee05f2dba04(org.iets3.core.expr.lambda.migration)" />
+    <import index="tzmp" ref="r:f5acf2a8-a07b-4b65-be39-d3d160ae00bd(org.iets3.core.expr.lambda.intentions)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -41,6 +42,19 @@
         <child id="6626913010124294914" name="migration" index="3ea0P7" />
       </concept>
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <property id="1883175908513350760" name="description" index="3YCmrE" />
+        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
+        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
+        <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
+        <property id="1229194968595" name="cellId" index="LIFWd" />
+        <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -55,6 +69,9 @@
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
+        <reference id="1225989811227" name="intention" index="1MFYO6" />
+      </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="1330041117646892901" name="org.iets3.core.expr.collections.structure.CollectionSizeSpec" flags="ng" index="2gteSW">
@@ -131,6 +148,16 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="3829047245309363370" name="org.iets3.core.expr.base.structure.OptionOrExpression" flags="ng" index="21Ysq4" />
+      <concept id="8092372783983481648" name="org.iets3.core.expr.base.structure.LetExpression_old" flags="ng" index="2b4z4r">
+        <child id="8092372783983481748" name="main" index="2b4z6Z" />
+        <child id="8092372783983481807" name="subs" index="2b4z7$" />
+      </concept>
+      <concept id="8092372783983481750" name="org.iets3.core.expr.base.structure.LetSubVariable_old" flags="ng" index="2b4z6X">
+        <child id="8092372783983481753" name="expr" index="2b4z6M" />
+      </concept>
+      <concept id="8092372783983482221" name="org.iets3.core.expr.base.structure.LetSubVarRef_old" flags="ng" index="2b4zt6">
+        <reference id="8092372783983482222" name="var" index="2b4zt5" />
+      </concept>
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
         <child id="7971844778466793072" name="then" index="2fGnzA" />
         <child id="7971844778466793070" name="when" index="2fGnzS" />
@@ -358,6 +385,7 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
+        <child id="6839478809833656927" name="imports" index="3i6evy" />
       </concept>
       <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
         <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
@@ -406,6 +434,9 @@
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
       </concept>
       <concept id="543046448977223537" name="org.iets3.core.expr.simpleTypes.tests.structure.EqClassProducer" flags="ng" index="Sm_qJ" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -12377,6 +12408,92 @@
           </node>
         </node>
         <node concept="_ixoA" id="5iokREDiK_m" role="_iOnC" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4qowQiBs6sq">
+    <property role="TrG5h" value="ReplaceLetWithBlockIntention" />
+    <property role="3YCmrE" value="Tests the ReplaceLetWithBlock Intention" />
+    <node concept="_iOnV" id="4qowQiBs6uY" role="LiRBU">
+      <property role="TrG5h" value="LetUseCase" />
+      <node concept="2zPypq" id="4qowQiBs6vo" role="_iOnC">
+        <property role="TrG5h" value="x" />
+        <node concept="30bXRB" id="4qowQiBs6vF" role="2zPyp_">
+          <property role="30bXRw" value="5" />
+        </node>
+      </node>
+      <node concept="2zPypq" id="4qowQiBs6wj" role="_iOnC">
+        <property role="TrG5h" value="z" />
+        <node concept="2b4z4r" id="4qowQiBs6wG" role="2zPyp_">
+          <node concept="2b4z6X" id="4qowQiBs6wU" role="2b4z7$">
+            <property role="TrG5h" value="y" />
+            <node concept="30dDZf" id="4qowQiBs6xB" role="2b4z6M">
+              <node concept="30bXRB" id="4qowQiBs6xR" role="30dEs_">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="_emDc" id="4qowQiBs6xf" role="30dEsF">
+                <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
+              </node>
+            </node>
+          </node>
+          <node concept="30dDTi" id="4qowQiBs6Cv" role="2b4z6Z">
+            <node concept="2b4zt6" id="4qowQiBs6E_" role="30dEs_">
+              <ref role="2b4zt5" node="4qowQiBs6wU" resolve="y" />
+            </node>
+            <node concept="_emDc" id="4qowQiBs6zB" role="30dEsF">
+              <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
+            </node>
+          </node>
+          <node concept="LIFWc" id="4qowQiBs7Ae" role="lGtFl">
+            <property role="LIFWa" value="1" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="1" />
+            <property role="p6zMs" value="1" />
+            <property role="LIFWd" value="Constant_te4b7c_a0" />
+          </node>
+        </node>
+      </node>
+      <node concept="_ixoA" id="4qowQiBs6vi" role="_iOnC" />
+      <node concept="3GEVxB" id="4qowQiBs6va" role="3i6evy" />
+    </node>
+    <node concept="_iOnV" id="4qowQiBs6HL" role="LiZbd">
+      <property role="TrG5h" value="LetUseCase" />
+      <node concept="2zPypq" id="4qowQiBs6HM" role="_iOnC">
+        <property role="TrG5h" value="x" />
+        <node concept="30bXRB" id="4qowQiBs6HN" role="2zPyp_">
+          <property role="30bXRw" value="5" />
+        </node>
+      </node>
+      <node concept="2zPypq" id="4qowQiBs6HO" role="_iOnC">
+        <property role="TrG5h" value="z" />
+        <node concept="1aduha" id="4qowQiBs6Ma" role="2zPyp_">
+          <node concept="1adJid" id="4qowQiBs6MU" role="1aduh9">
+            <property role="TrG5h" value="y" />
+            <node concept="30dDZf" id="4qowQiBs6Od" role="1adJii">
+              <node concept="30bXRB" id="4qowQiBs6Ot" role="30dEs_">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="_emDc" id="4qowQiBs6Nf" role="30dEsF">
+                <ref role="_emDf" node="4qowQiBs6HM" resolve="x" />
+              </node>
+            </node>
+          </node>
+          <node concept="30dDTi" id="4qowQiBs70b" role="1aduh9">
+            <node concept="1adzI2" id="4qowQiBs70x" role="30dEs_">
+              <ref role="1adwt6" node="4qowQiBs6MU" resolve="y" />
+            </node>
+            <node concept="_emDc" id="4qowQiBs6Ti" role="30dEsF">
+              <ref role="_emDf" node="4qowQiBs6HM" resolve="x" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_ixoA" id="4qowQiBs6HX" role="_iOnC" />
+      <node concept="3GEVxB" id="4qowQiBs6HY" role="3i6evy" />
+    </node>
+    <node concept="3clFbS" id="4qowQiBs73K" role="LjaKd">
+      <node concept="1MFPAf" id="4qowQiBs74j" role="3cqZAp">
+        <ref role="1MFYO6" to="tzmp:4qowQiBqJ1R" resolve="ReplaceLetExprWithBlock" />
       </node>
     </node>
   </node>
