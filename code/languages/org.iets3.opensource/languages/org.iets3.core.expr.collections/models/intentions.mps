@@ -651,7 +651,7 @@
       <node concept="3clFbS" id="1mDdTH2QCp" role="2VODD2">
         <node concept="3clFbF" id="1mDdTH2QYF" role="3cqZAp">
           <node concept="Xl_RD" id="1mDdTH2QYE" role="3clFbG">
-            <property role="Xl_RC" value="Add bracket access [..]" />
+            <property role="Xl_RC" value="Add Bracket Access [..]" />
           </node>
         </node>
       </node>
@@ -720,7 +720,7 @@
               </node>
               <node concept="1mIQ4w" id="6HHp2WnuYKO" role="2OqNvi">
                 <node concept="chp4Y" id="6HHp2WnuYP_" role="cj9EA">
-                  <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
+                  <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="ImmutableMapType" />
                 </node>
               </node>
             </node>

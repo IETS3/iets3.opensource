@@ -651,5 +651,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5hiN5PknQ66">
+    <property role="3GE5qa" value="machine" />
+    <ref role="1M2myG" to="19m5:5hiN5PknPXz" resolve="TimeSinceLastTriggeredTransition" />
+    <node concept="9S07l" id="5hiN5PknQ6a" role="9Vyp8">
+      <node concept="3clFbS" id="5hiN5PknQ6b" role="2VODD2">
+        <node concept="3clFbF" id="5hiN5PknQdb" role="3cqZAp">
+          <node concept="2OqwBi" id="5hiN5PknQdc" role="3clFbG">
+            <node concept="2OqwBi" id="5hiN5PknQdd" role="2Oq$k0">
+              <node concept="nLn13" id="5hiN5PknQde" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5hiN5PknQdf" role="2OqNvi">
+                <node concept="1xMEDy" id="5hiN5PknQdg" role="1xVPHs">
+                  <node concept="chp4Y" id="5hiN5PknQdh" role="ri$Ld">
+                    <ref role="cht4Q" to="19m5:7$TgoCYa5Nn" resolve="State" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5hiN5PknQdi" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

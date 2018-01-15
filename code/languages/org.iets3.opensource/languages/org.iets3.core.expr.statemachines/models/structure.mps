@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -114,6 +115,9 @@
     <node concept="PrWs8" id="3H4W4diAR0Z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="4IV0h47dfWt" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47dfWs" resolve="IInterceptorContainer" />
+    </node>
     <node concept="1TJgyj" id="7$TgoCYlrC_" role="1TKVEi">
       <property role="IQ2ns" value="8735085014268885541" />
       <property role="20lmBu" value="aggregation" />
@@ -151,6 +155,9 @@
       <property role="20kJfa" value="trigger" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="33mFrumFlOo" resolve="AbstractTrigger" />
+    </node>
+    <node concept="PrWs8" id="4IV0h47G1ZX" role="PzmwI">
+      <ref role="PrY4T" to="8lgj:4IV0h47G1Yb" resolve="IContextContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$TgoCYajaE">
@@ -601,6 +608,23 @@
     <property role="EcuMT" value="4270802518592504924" />
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="IStateContainer" />
+  </node>
+  <node concept="1TIwiD" id="5kGo$yLzmgH">
+    <property role="EcuMT" value="6137388456555144237" />
+    <property role="3GE5qa" value="operations" />
+    <property role="TrG5h" value="PokeTarget" />
+    <property role="34LRSv" value="poke" />
+    <ref role="1TJDcQ" node="7$TgoCYaDig" resolve="SMTarget" />
+    <node concept="PrWs8" id="5kGo$yL$F3P" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5hiN5PknPXz">
+    <property role="EcuMT" value="6076143548495781731" />
+    <property role="3GE5qa" value="machine" />
+    <property role="TrG5h" value="TimeSinceLastTriggeredTransition" />
+    <property role="34LRSv" value="timeSinceLastTriggeredTransition" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
 

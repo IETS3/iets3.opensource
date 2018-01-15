@@ -1181,7 +1181,7 @@
   </node>
   <node concept="24kQdi" id="2rOWEwsF5wr">
     <property role="3GE5qa" value="option" />
-    <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+    <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
     <node concept="3EZMnI" id="2rOWEwsF5wt" role="2wV5jI">
       <node concept="3F0ifn" id="2rOWEwsF5w$" role="3EZMnx">
         <property role="3F0ifm" value="isSome" />
@@ -3761,6 +3761,34 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="60Qa1k_nMTB">
+    <ref role="1XX52x" to="hm2y:60Qa1k_nMSK" resolve="DefaultValueExpression" />
+    <node concept="3EZMnI" id="60Qa1k_nMTG" role="2wV5jI">
+      <node concept="2iRfu4" id="60Qa1k_nMTH" role="2iSdaV" />
+      <node concept="3F0ifn" id="60Qa1k_nMTD" role="3EZMnx">
+        <property role="3F0ifm" value="default" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0ifn" id="60Qa1k_nMTT" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="60Qa1k_nMUj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="60Qa1k_nMUo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="60Qa1k_nMU1" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:60Qa1k_nMSL" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="60Qa1k_nMUb" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="60Qa1k_nMUh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="24kQdi" id="mQGcCvPufp">
     <ref role="1XX52x" to="hm2y:mQGcCvPueU" resolve="FailExpr" />
     <node concept="3EZMnI" id="mQGcCvPuf$" role="2wV5jI">
@@ -3787,6 +3815,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4fgA7QrKStn">
+    <ref role="1XX52x" to="hm2y:4fgA7QrKSsR" resolve="ThisExpression" />
+    <node concept="PMmxH" id="4fgA7QrKStv" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
     </node>
   </node>
 </model>
