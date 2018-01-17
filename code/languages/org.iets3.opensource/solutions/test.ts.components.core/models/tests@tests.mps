@@ -10,10 +10,14 @@
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
   </languages>
   <imports>
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
+    <import index="xens" ref="r:e2f731a4-551a-400e-a547-ea954abd0c47(test.iest3.component.attribute.structure)" />
+    <import index="5etr" ref="r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -22,6 +26,10 @@
         <reference id="5449224527592117654" name="checkingReference" index="1BTHP0" />
         <child id="3655334166513314307" name="nodes" index="3KTr4d" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -44,6 +52,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt" />
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -77,6 +86,12 @@
       <concept id="4886573260946639134" name="org.iets3.core.attributes.structure.AttributeContainerWithContext" flags="ng" index="3oth5z">
         <child id="806329106163391212" name="container" index="33Rvbw" />
       </concept>
+    </language>
+    <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="411710798111762102" name="org.iets3.core.expr.toplevel.structure.AbstractFunctionAdapter" flags="ng" index="q4_pW">
+        <child id="411710798109576791" name="fun" index="qdjUt" />
+      </concept>
+      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -137,8 +152,9 @@
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
       </concept>
-      <concept id="4217735156746120255" name="" flags="ng" index="1O3KJS">
-        <child id="4217735156746171148" name="" index="1O05jb" />
+      <concept id="3177368305997534653" name="org.iets3.components.core.structure.CompFunctionAdapter" flags="ng" index="3zyh8u" />
+      <concept id="4217735156746120255" name="org.iets3.components.core.structure.AbstractConnectorBase" flags="ng" index="1O3KJS">
+        <child id="4217735156746171148" name="connectorType" index="1O05jb" />
       </concept>
       <concept id="2244552513301308396" name="org.iets3.components.core.structure.PortRefTarget" flags="ng" index="1WbEdM">
         <reference id="2244552513301308399" name="port" index="1WbEdL" />
@@ -157,11 +173,18 @@
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
+      <concept id="8956532715640070482" name="test.iest3.component.attribute.structure.TestKindC" flags="ng" index="1EFXTv" />
+      <concept id="8956532715637138334" name="test.iest3.component.attribute.structure.TestKindB" flags="ng" index="1EZ9Mj" />
       <concept id="4773799153887154601" name="test.iest3.component.attribute.structure.TestConnectorType" flags="ng" index="3IJI2w" />
+    </language>
+    <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+        <child id="4790956042240100950" name="body" index="1ahQXP" />
+      </concept>
     </language>
   </registry>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
@@ -456,6 +479,152 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7LbZKOmHCtv">
+    <property role="TrG5h" value="ComponentInstanceScopeCalculation" />
+    <node concept="1qefOq" id="7LbZKOmHCtw" role="1SKRRt">
+      <node concept="1i1ALs" id="7LbZKOmHCty" role="1qenE9">
+        <property role="TrG5h" value="someChunk" />
+        <node concept="1i1XBj" id="7LbZKOmHCt_" role="1i1AA4">
+          <property role="TrG5h" value="RootA" />
+          <node concept="GnABt" id="7LbZKOmHTHd" role="1i1XAe">
+            <node concept="1i6xzV" id="7LbZKOmHTHk" role="GnABu">
+              <node concept="1i1fwW" id="7LbZKOmHTHs" role="MGl3R">
+                <ref role="1i1fwX" node="7LbZKOmHOcg" resolve="CompA" />
+                <node concept="2rqxmr" id="7LbZKOmT8dZ" role="lGtFl">
+                  <ref role="1BTHP0" node="7LbZKOmHOcg" resolve="CompA" />
+                  <node concept="3KTrbX" id="7LbZKOmT8e0" role="3KTr4d">
+                    <ref role="3AHY9a" node="7LbZKOmHOcg" resolve="CompA" />
+                  </node>
+                  <node concept="3KTrbX" id="7LbZKOmT8e1" role="3KTr4d">
+                    <ref role="3AHY9a" node="7LbZKOmHRWj" resolve="CompB" />
+                  </node>
+                  <node concept="3KTrbX" id="7LbZKOmT8e2" role="3KTr4d">
+                    <ref role="3AHY9a" node="7LbZKOmT4ZF" resolve="CompC" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="7LbZKOmT8e_" role="lGtFl">
+                <node concept="OjmMv" id="7LbZKOmT8eA" role="1w35rA">
+                  <node concept="19SGf9" id="7LbZKOmT8eB" role="OjmMu">
+                    <node concept="19SUe$" id="7LbZKOmT8eC" role="19SJt6">
+                      <property role="19SUeA" value="testkindA can only be referenced in Component.Kind == testKindA&#10;In addition all other componentents with all kinds are in scope" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1i6xzV" id="7LbZKOmHTHC" role="GnABu">
+              <node concept="1i1fwW" id="7LbZKOmTgkO" role="MGl3R">
+                <ref role="1i1fwX" node="7LbZKOmT4ZF" resolve="CompC" />
+              </node>
+              <node concept="1z9TsT" id="7LbZKOmHTLg" role="lGtFl">
+                <node concept="OjmMv" id="7LbZKOmHTLh" role="1w35rA">
+                  <node concept="19SGf9" id="7LbZKOmHTLi" role="OjmMu">
+                    <node concept="19SUe$" id="7LbZKOmHTLj" role="19SJt6">
+                      <property role="19SUeA" value="generic error appears cause instance.kind(testKindC) != comp.kind(testKindA)" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="7CXmI" id="7LbZKOmT4YT" role="lGtFl">
+                <node concept="1TM$A" id="7LbZKOmT4YU" role="7EUXB">
+                  <node concept="2PYRI3" id="7LbZKOmT4YV" role="3lydEf">
+                    <ref role="39XzEq" to="5etr:6LfBX8Yll1h" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3o2yKq" id="7LbZKOmHCtH" role="1i0K$_" />
+          <node concept="1z9TsT" id="7LbZKOmHTI9" role="lGtFl">
+            <node concept="OjmMv" id="7LbZKOmHTIa" role="1w35rA">
+              <node concept="19SGf9" id="7LbZKOmHTIb" role="OjmMu">
+                <node concept="19SUe$" id="7LbZKOmHTIc" role="19SJt6">
+                  <property role="19SUeA" value="default behavior. testKindA does not constraint the scope of &#10;component instances according to their kinds. Everything is in scope." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3GEVxB" id="7LbZKOmHTGn" role="38kjvB">
+          <ref role="3GEb4d" node="7LbZKOmHKL1" resolve="ExternalChunkForScopeTest" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7LbZKOmHXzo" role="1SKRRt">
+      <node concept="1i1ALs" id="7LbZKOmHXzM" role="1qenE9">
+        <property role="TrG5h" value="somechunk2" />
+        <node concept="1i1XBj" id="7LbZKOmHXzQ" role="1i1AA4">
+          <property role="TrG5h" value="CompWithRestrictedScopeC" />
+          <node concept="1EFXTv" id="7LbZKOmT4WD" role="1i0K$_" />
+          <node concept="GnABt" id="7LbZKOmHX$f" role="1i1XAe">
+            <node concept="1i6xzV" id="7LbZKOmHX$o" role="GnABu">
+              <node concept="1i1fwW" id="7LbZKOmT50E" role="MGl3R">
+                <ref role="1i1fwX" node="7LbZKOmHRWj" resolve="CompB" />
+                <node concept="2rqxmr" id="7LbZKOmT6kr" role="lGtFl">
+                  <ref role="1BTHP0" node="7LbZKOmHRWj" resolve="CompB" />
+                  <node concept="3KTrbX" id="7LbZKOmT6ku" role="3KTr4d">
+                    <ref role="3AHY9a" node="7LbZKOmHRWj" resolve="CompB" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="7LbZKOmTe1P" role="lGtFl">
+                <node concept="OjmMv" id="7LbZKOmTe1Q" role="1w35rA">
+                  <node concept="19SGf9" id="7LbZKOmTe1R" role="OjmMu">
+                    <node concept="19SUe$" id="7LbZKOmTe1S" role="19SJt6">
+                      <property role="19SUeA" value="testKindB allows to be referenced in testKindC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="7LbZKOmHX$H" role="lGtFl">
+            <node concept="OjmMv" id="7LbZKOmHX$I" role="1w35rA">
+              <node concept="19SGf9" id="7LbZKOmHX$J" role="OjmMu">
+                <node concept="19SUe$" id="7LbZKOmHX$K" role="19SJt6">
+                  <property role="19SUeA" value="testKindC restrict the scope of its ComponentInstances" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3GEVxB" id="7LbZKOmHX$l" role="38kjvB">
+          <ref role="3GEb4d" node="7LbZKOmHKL1" resolve="ExternalChunkForScopeTest" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1i1ALs" id="7LbZKOmHKL1">
+    <property role="TrG5h" value="ExternalChunkForScopeTest" />
+    <node concept="1i1XBj" id="7LbZKOmHOcg" role="1i1AA4">
+      <property role="TrG5h" value="CompA" />
+      <property role="13Nl5X" value="true" />
+      <node concept="3zyh8u" id="7LbZKOmHXBr" role="1i1XAe">
+        <node concept="1aga60" id="7LbZKOmHXBs" role="qdjUt">
+          <property role="TrG5h" value="funcInKindA" />
+          <node concept="UmHTt" id="7LbZKOmHXBt" role="1ahQXP" />
+        </node>
+      </node>
+      <node concept="3o2yKq" id="7LbZKOmHOcf" role="1i0K$_" />
+    </node>
+    <node concept="1i1XBj" id="7LbZKOmHRWj" role="1i1AA4">
+      <property role="TrG5h" value="CompB" />
+      <property role="13Nl5X" value="true" />
+      <node concept="1EZ9Mj" id="7LbZKOmHRWh" role="1i0K$_" />
+      <node concept="3zyh8u" id="7LbZKOmHX_l" role="1i1XAe">
+        <node concept="1aga60" id="7LbZKOmHX_m" role="qdjUt">
+          <property role="TrG5h" value="funcInKindB" />
+          <node concept="UmHTt" id="7LbZKOmHXB5" role="1ahQXP" />
+        </node>
+      </node>
+    </node>
+    <node concept="1i1XBj" id="7LbZKOmT4ZF" role="1i1AA4">
+      <property role="13Nl5X" value="true" />
+      <property role="TrG5h" value="CompC" />
+      <node concept="1EFXTv" id="7LbZKOmT50n" role="1i0K$_" />
     </node>
   </node>
 </model>

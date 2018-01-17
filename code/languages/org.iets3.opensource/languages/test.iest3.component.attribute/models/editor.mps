@@ -166,15 +166,27 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="3QX5db_I9R1">
+    <ref role="1XX52x" to="xens:3QX5db_I5bP" resolve="TestPortCategoryOffers" />
+    <node concept="PMmxH" id="3QX5db_I9Rk" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7LbZKOmHRWE">
+    <ref role="1XX52x" to="xens:7LbZKOmHQeu" resolve="TestKindB" />
+    <node concept="PMmxH" id="7LbZKOmHRWG" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
   <node concept="24kQdi" id="3QX5db_HOqv">
-    <ref role="1XX52x" to="xens:3QX5db_HNz8" resolve="TestKind" />
+    <ref role="1XX52x" to="xens:3QX5db_HNz8" resolve="TestKindA" />
     <node concept="PMmxH" id="3QX5db_HOq$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
-  <node concept="24kQdi" id="3QX5db_I9R1">
-    <ref role="1XX52x" to="xens:3QX5db_I5bP" resolve="TestPortCategoryOffers" />
-    <node concept="PMmxH" id="3QX5db_I9Rk" role="2wV5jI">
+  <node concept="24kQdi" id="7LbZKOmT25A">
+    <ref role="1XX52x" to="xens:7LbZKOmT25i" resolve="TestKindC" />
+    <node concept="PMmxH" id="7LbZKOmT25F" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
