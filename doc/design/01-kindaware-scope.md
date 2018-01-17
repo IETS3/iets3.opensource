@@ -40,7 +40,7 @@ The ComponentRef.ref should find (during scope calculation) its context-componen
 
 #### Improved Solution
 
-Instead of searching for the correct context from a Component.Ref, the Component.Ref should not be changed. It will still look for an  IVisibleElementsProvider to deliver a list of visible components for its scope. In addition the Component itself should be an IVisibleElementsProvider. It overrides the **visibleContentsOfType()** method and delegates the decision if elements list should be restricted to its kind. The ComponentKind shall have a method **virtual boolean hasRestriction()**, which returns by default false and a method  **virtual boolean canBeReferencedInContext() **which is true by default. So we don’t have any restrictions and allow any context-kind inside a "container"-kind.
+Instead of searching for the correct context from a Component.Ref, the Component.Ref should not be changed. It will still look for an  IVisibleElementsProvider to deliver a list of visible components for its scope. In addition the Component itself should be an IVisibleElementsProvider. It overrides the **visibleContentsOfType()** method and delegates the decision if elements list should be restricted to its kind. The ComponentKind shall have a method **virtual boolean restrictScope()**, which returns by default false and a method  **virtual boolean canBeReferencedInContext() **which is true by default. So we don’t have any restrictions and allow any context-kind inside a "container"-kind.
 
 <table>
   <tr>

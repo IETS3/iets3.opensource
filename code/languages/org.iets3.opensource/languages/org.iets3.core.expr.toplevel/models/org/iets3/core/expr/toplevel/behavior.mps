@@ -239,6 +239,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -5833,36 +5836,55 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7vIfM9IBEH$" role="3cqZAp">
-          <node concept="3cpWsn" id="7vIfM9IBEH_" role="3cpWs9">
-            <property role="TrG5h" value="compositeScope" />
-            <node concept="3uibUv" id="7vIfM9IBEHy" role="1tU5fm">
-              <ref role="3uigEE" to="o8zo:7ipADkTevLt" resolve="CompositeScope" />
-            </node>
-            <node concept="2ShNRf" id="7vIfM9IBEHA" role="33vP2m">
-              <node concept="1pGfFk" id="7vIfM9IBEHB" role="2ShVmc">
-                <ref role="37wK5l" to="o8zo:7ipADkTevLv" resolve="CompositeScope" />
-                <node concept="2YIFZM" id="7vIfM9IBEHC" role="37wK5m">
-                  <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-                  <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-                  <node concept="2OqwBi" id="7vIfM9IBEHD" role="37wK5m">
-                    <node concept="13iPFW" id="7vIfM9IBEHE" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="7vIfM9IBEHF" role="2OqNvi">
-                      <ref role="37wK5l" node="mQGcCvDdEN" resolve="visibleFunctions" />
+        <node concept="3clFbH" id="7LbZKOmGCHO" role="3cqZAp" />
+        <node concept="3clFbJ" id="7LbZKOmGxxV" role="3cqZAp">
+          <node concept="3clFbS" id="7LbZKOmGxxX" role="3clFbx">
+            <node concept="3cpWs8" id="7vIfM9IBEH$" role="3cqZAp">
+              <node concept="3cpWsn" id="7vIfM9IBEH_" role="3cpWs9">
+                <property role="TrG5h" value="compositeScope" />
+                <node concept="3uibUv" id="7vIfM9IBEHy" role="1tU5fm">
+                  <ref role="3uigEE" to="o8zo:7ipADkTevLt" resolve="CompositeScope" />
+                </node>
+                <node concept="2ShNRf" id="7vIfM9IBEHA" role="33vP2m">
+                  <node concept="1pGfFk" id="7vIfM9IBEHB" role="2ShVmc">
+                    <ref role="37wK5l" to="o8zo:7ipADkTevLv" resolve="CompositeScope" />
+                    <node concept="2YIFZM" id="7vIfM9IBEHC" role="37wK5m">
+                      <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+                      <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                      <node concept="2OqwBi" id="7vIfM9IBEHD" role="37wK5m">
+                        <node concept="13iPFW" id="7vIfM9IBEHE" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="7vIfM9IBEHF" role="2OqNvi">
+                          <ref role="37wK5l" node="mQGcCvDdEN" resolve="visibleFunctions" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="2Zn8KedPNXc" role="37wK5m">
+                      <ref role="3cqZAo" node="2Zn8KedPNX3" resolve="parentScope" />
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="2Zn8KedPNXc" role="37wK5m">
-                  <ref role="3cqZAo" node="2Zn8KedPNX3" resolve="parentScope" />
-                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7LbZKOmGB_8" role="3cqZAp">
+              <node concept="37vLTw" id="7LbZKOmGBJn" role="3cqZAk">
+                <ref role="3cqZAo" node="7vIfM9IBEH_" resolve="compositeScope" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7LbZKOmGy0c" role="3clFbw">
+            <node concept="37vLTw" id="7LbZKOmGxGj" role="2Oq$k0">
+              <ref role="3cqZAo" node="5WV8nQbZt_x" resolve="targetConcept" />
+            </node>
+            <node concept="2Zo12i" id="7LbZKOmGBit" role="2OqNvi">
+              <node concept="chp4Y" id="7LbZKOmGBlw" role="2Zo12j">
+                <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2Zn8KedPOFP" role="3cqZAp" />
         <node concept="3cpWs6" id="5WV8nQbZSAs" role="3cqZAp">
-          <node concept="37vLTw" id="7vIfM9IBFf2" role="3cqZAk">
-            <ref role="3cqZAo" node="7vIfM9IBEH_" resolve="compositeScope" />
+          <node concept="37vLTw" id="7LbZKOmGCp_" role="3cqZAk">
+            <ref role="3cqZAo" node="2Zn8KedPNX3" resolve="parentScope" />
           </node>
         </node>
       </node>
