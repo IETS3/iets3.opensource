@@ -426,7 +426,7 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="9214207200564444982" />
-      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+      <ref role="20lvS9" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="cJpacq1taR">
@@ -951,7 +951,7 @@
       <property role="20kJfa" value="instance" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="3829509942130107028" />
-      <ref role="20lvS9" node="6LfBX8YlosD" resolve="ComponentInstance" />
+      <ref role="20lvS9" node="77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kdj6EM4KIW">
