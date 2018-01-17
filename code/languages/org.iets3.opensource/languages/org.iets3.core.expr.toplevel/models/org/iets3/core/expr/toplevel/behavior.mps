@@ -2,10 +2,10 @@
 <model ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,8 +29,9 @@
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
     <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1063,14 +1064,14 @@
                         <node concept="2pIpSj" id="78hTg1$PdOo" role="2pJxcM">
                           <ref role="2pIpSl" to="hm2y:4rZeNQ6MpKo" resolve="right" />
                           <node concept="36biLy" id="XhdFKvqndi" role="2pJxcZ">
-                            <node concept="2OqwBi" id="XhdFKvqoTJ" role="36biLW">
-                              <node concept="2OqwBi" id="XhdFKvqo1o" role="2Oq$k0">
-                                <node concept="13iPFW" id="XhdFKvqnKI" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="XhdFKvqokB" role="2OqNvi">
+                            <node concept="2OqwBi" id="6o_i6Gx4t0m" role="36biLW">
+                              <node concept="2OqwBi" id="6o_i6Gx4t0n" role="2Oq$k0">
+                                <node concept="13iPFW" id="6o_i6Gx4t0o" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="6o_i6Gx4t0p" role="2OqNvi">
                                   <ref role="3Tt5mk" to="yv47:69zaTr1HgRN" resolve="value" />
                                 </node>
                               </node>
-                              <node concept="1$rogu" id="XhdFKvqp6b" role="2OqNvi" />
+                              <node concept="1$rogu" id="6o_i6Gx4t0q" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -1086,6 +1087,75 @@
       <node concept="A3Dl8" id="XhdFKv0EVF" role="3clF45">
         <node concept="3Tqbb2" id="XhdFKv0EVG" role="A3Ik2">
           <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1xFBUnwZOBf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDependentValues" />
+      <ref role="13i0hy" to="pbu6:1xFBUnwWaWp" resolve="getDependentValues" />
+      <node concept="3Tm1VV" id="1xFBUnwZOBg" role="1B3o_S" />
+      <node concept="3clFbS" id="1xFBUnwZOBk" role="3clF47">
+        <node concept="3cpWs8" id="1xFBUnwZSJc" role="3cqZAp">
+          <node concept="3cpWsn" id="1xFBUnwZSJd" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="2hMVRd" id="1xFBUnwZSJ4" role="1tU5fm">
+              <node concept="3Tqbb2" id="1xFBUnwZSJ7" role="2hN53Y">
+                <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="1xFBUnwZSJe" role="33vP2m">
+              <node concept="2i4dXS" id="1xFBUnwZSJf" role="2ShVmc">
+                <node concept="3Tqbb2" id="1xFBUnwZSJg" role="HW$YZ">
+                  <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1xFBUnwZUy$" role="3cqZAp">
+          <node concept="3clFbS" id="1xFBUnwZUy_" role="3clFbx">
+            <node concept="3SKdUt" id="1xFBUnwZUyA" role="3cqZAp">
+              <node concept="3SKdUq" id="1xFBUnwZUyB" role="3SKWNk">
+                <property role="3SKdUp" value="explicitly given types override the constraints derived from assigned expressions." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1xFBUnwZUyC" role="3cqZAp">
+              <node concept="37vLTw" id="1xFBUnwZXnZ" role="3cqZAk">
+                <ref role="3cqZAo" node="1xFBUnwZSJd" resolve="result" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1xFBUnwZUyG" role="3clFbw">
+            <node concept="2OqwBi" id="1xFBUnwZUyH" role="2Oq$k0">
+              <node concept="13iPFW" id="1xFBUnwZUyI" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1xFBUnwZUyJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:69zaTr1EKHX" resolve="type" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1xFBUnwZUyK" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="1xFBUnwZUyL" role="9aQIa">
+            <node concept="3clFbS" id="1xFBUnwZUyM" role="9aQI4">
+              <node concept="3cpWs6" id="1xFBUnx3Qv_" role="3cqZAp">
+                <node concept="BsUDl" id="1xFBUnx3RuD" role="3cqZAk">
+                  <ref role="37wK5l" to="pbu6:1xFBUnx0h1Q" resolve="extractValuesFromExpression" />
+                  <node concept="2OqwBi" id="1xFBUnx3S78" role="37wK5m">
+                    <node concept="13iPFW" id="1xFBUnx3RJr" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1xFBUnx3Szy" role="2OqNvi">
+                      <ref role="3Tt5mk" to="yv47:69zaTr1HgRN" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="1xFBUnwZOBl" role="3clF45">
+        <node concept="3Tqbb2" id="1xFBUnwZOBm" role="2hN53Y">
+          <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
         </node>
       </node>
     </node>
@@ -2937,6 +3007,28 @@
         <node concept="3Tqbb2" id="ORfz$E8xUs" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="ORfz$EnsqH" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1xFBUnwLHdy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="1xFBUnwLHdz" role="1B3o_S" />
+      <node concept="3clFbS" id="1xFBUnwLHdH" role="3clF47">
+        <node concept="3clFbF" id="1xFBUnwLKvh" role="3cqZAp">
+          <node concept="2YIFZM" id="1xFBUnwLKvi" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="1xFBUnwLKvj" role="37wK5m" />
+            <node concept="Xl_RD" id="1xFBUnwLKvk" role="37wK5m">
+              <property role="Xl_RC" value="functional verification" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1xFBUnwLHdI" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2S3ZC$oz3DU">
