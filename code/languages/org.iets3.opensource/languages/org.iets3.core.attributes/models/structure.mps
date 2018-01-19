@@ -8,6 +8,8 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,7 +25,10 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
-      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD" />
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
@@ -100,6 +105,65 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4fgA7QrG5LS">
+    <property role="EcuMT" value="4886573260947348600" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="EmptyAttribute" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4fgA7QrG5M2" role="PzmwI">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+    <node concept="PrWs8" id="4fgA7QrG5Ma" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4fgA7QrDo$u">
+    <property role="EcuMT" value="4886573260946639134" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="AttributeContainerWithContext" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="GKE0N8VlFG" role="1TKVEi">
+      <property role="IQ2ns" value="806329106163391212" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="GKE0N8V88V" resolve="AttributeContainer" />
+    </node>
+    <node concept="PrWs8" id="4fgA7QrDo$v" role="PzmwI">
+      <ref role="PrY4T" node="4fgA7QrBOmZ" resolve="IAttributeWithContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="GKE0N8V88V">
+    <property role="EcuMT" value="806329106163335739" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="AttributeContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="GKE0N8V89c" role="1TKVEi">
+      <property role="IQ2ns" value="806329106163335756" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nestedAttributes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute" />
+    </node>
+    <node concept="PrWs8" id="GKE0N9m3Me" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrBOmZ">
+    <property role="EcuMT" value="4886573260946228671" />
+    <property role="3GE5qa" value="attributes" />
+    <property role="TrG5h" value="IAttributeWithContext" />
+    <node concept="1TJgyj" id="4fgA7QrBOn0" role="1TKVEi">
+      <property role="IQ2ns" value="4886573260946228672" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ctx" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4fgA7QrBO_F" role="PrDN$">
+      <ref role="PrY4T" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
   </node>
 </model>

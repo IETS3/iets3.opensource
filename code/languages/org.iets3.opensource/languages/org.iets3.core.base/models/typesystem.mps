@@ -2,7 +2,7 @@
 <model ref="r:e5a2b77c-569f-4c13-8679-6ec5a6000fa9(org.iets3.core.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -164,6 +164,26 @@
             <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
               <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
                 <node concept="3clFbJ" id="3ugRfIRAoR9" role="3cqZAp">
+                  <node concept="1Wc70l" id="2jITtfD$1z$" role="3clFbw">
+                    <node concept="3fqX7Q" id="2jITtfD$1Nr" role="3uHU7w">
+                      <node concept="2OqwBi" id="2jITtfD$24_" role="3fr31v">
+                        <node concept="1YBJjd" id="2jITtfD$1Rt" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                        </node>
+                        <node concept="2qgKlT" id="2jITtfD$2q3" role="2OqNvi">
+                          <ref role="37wK5l" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3ugRfIRAp0L" role="3uHU7B">
+                      <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
+                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                      </node>
+                      <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
+                        <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx">
                     <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
                       <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
@@ -172,14 +192,6 @@
                       <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
                         <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                       </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="3ugRfIRAp0L" role="3clFbw">
-                    <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
-                      <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                    </node>
-                    <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
-                      <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
                     </node>
                   </node>
                 </node>
@@ -368,7 +380,7 @@
                                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                                   <node concept="3cpWs3" id="7eS2goy2A2g" role="37wK5m">
                                     <node concept="37vLTw" id="7eS2goy2A4o" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
+                                      <ref role="3cqZAo" node="7eS2goy14J5" />
                                     </node>
                                     <node concept="Xl_RD" id="7eS2goy2_1E" role="3uHU7B">
                                       <property role="Xl_RC" value="Ill-formatted Error Message: " />

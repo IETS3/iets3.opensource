@@ -28,7 +28,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3-RC1'
+ext.mpsVersion = '2017.3.2'
 
 
 // Project version
@@ -71,7 +71,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'base'
 
 task wrapper(type: Wrapper) {
-    gradleVersion '3.1'
+    gradleVersion '4.4.1'
     distributionType 'all'
 }
 
@@ -82,7 +82,6 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mpsArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
     mpsArtifacts "com.mbeddr:platform:$mbeddrVersion"
 }
 
@@ -144,7 +143,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
- 
+
 publishing {
     repositories {
         maven {

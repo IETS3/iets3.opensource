@@ -20,6 +20,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -262,8 +263,8 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="target" />
-      <ref role="13i0hy" node="4aQvnniy$S5" resolve="target" />
-      <node concept="3Tm1VV" id="4aQvnniy$S$" role="1B3o_S" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" node="4fgA7QrEdeJ" resolve="target" />
       <node concept="3clFbS" id="4aQvnniy$SB" role="3clF47">
         <node concept="3clFbF" id="4aQvnniy$Yf" role="3cqZAp">
           <node concept="2OqwBi" id="4aQvnniy_12" role="3clFbG">
@@ -274,19 +275,12 @@
           </node>
         </node>
       </node>
-      <node concept="3Tqbb2" id="4aQvnniy$SC" role="3clF45" />
+      <node concept="3Tqbb2" id="4fgA7QrEF$_" role="3clF45" />
+      <node concept="3Tm1VV" id="4fgA7QrEF$A" role="1B3o_S" />
     </node>
   </node>
   <node concept="13h7C7" id="4o9aP47qdi_">
     <ref role="13h7C2" to="lmd:4o9aP47qdic" resolve="IComparablePathPart" />
-    <node concept="13i0hz" id="4aQvnniy$S5" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="target" />
-      <node concept="3Tm1VV" id="4aQvnniy$S6" role="1B3o_S" />
-      <node concept="3Tqbb2" id="4aQvnniy$Sv" role="3clF45" />
-      <node concept="3clFbS" id="4aQvnniy$S8" role="3clF47" />
-    </node>
     <node concept="13i0hz" id="4o9aP47qdiC" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -303,6 +297,20 @@
     </node>
     <node concept="13hLZK" id="4o9aP47qdiA" role="13h7CW">
       <node concept="3clFbS" id="4o9aP47qdiB" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4fgA7QrEde$">
+    <ref role="13h7C2" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
+    <node concept="13i0hz" id="4fgA7QrEdeJ" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="target" />
+      <node concept="3Tm1VV" id="4fgA7QrEdeK" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4fgA7QrEdeL" role="3clF45" />
+      <node concept="3clFbS" id="4fgA7QrEdeM" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4fgA7QrEde_" role="13h7CW">
+      <node concept="3clFbS" id="4fgA7QrEdeA" role="2VODD2" />
     </node>
   </node>
 </model>
