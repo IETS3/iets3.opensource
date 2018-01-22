@@ -70,7 +70,7 @@
       <concept id="8735085014265912538" name="org.iets3.core.expr.statemachines.structure.Event" flags="ng" index="174hPg">
         <child id="195141004743659243" name="args" index="2YrC_u" />
       </concept>
-      <concept id="8735085014265912541" name="org.iets3.core.expr.statemachines.structure.Transition" flags="ng" index="174hPn">
+      <concept id="8735085014265912541" name="org.iets3.core.expr.statemachines.structure.TriggeredTransition" flags="ng" index="174hPn">
         <child id="3519191162855185711" name="trigger" index="2AuZ2o" />
       </concept>
       <concept id="8735085014265912535" name="org.iets3.core.expr.statemachines.structure.State" flags="ng" index="174hPt">
@@ -153,7 +153,7 @@
       <concept id="24388123196707940" name="org.iets3.core.expr.process.structure.MajorityDecProc" flags="ng" index="1FHB2U" />
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
+      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
       <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ImmutableListWithAllOp" flags="ng" index="2oUEFG" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
@@ -195,11 +195,11 @@
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
       </concept>
-      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ImmutableListLiteral" flags="ng" index="3iBYfx">
         <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
-      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
+      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
       <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapRemoveOp" flags="ng" index="1DE4Fa" />
       <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapPutOp" flags="ng" index="1DFusj" />
       <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.ImmutableMapType" flags="ng" index="1DGDPD" />

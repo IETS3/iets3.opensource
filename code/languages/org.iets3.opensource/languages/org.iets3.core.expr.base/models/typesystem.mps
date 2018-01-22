@@ -6633,7 +6633,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="4fgA7QrKVdP" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:4fgA7QrKR89" resolve="nodeToCalculateTypeFrom" />
+                <ref role="37wK5l" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
               </node>
             </node>
           </node>

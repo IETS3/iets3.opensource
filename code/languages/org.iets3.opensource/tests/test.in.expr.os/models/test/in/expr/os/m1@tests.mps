@@ -39,8 +39,8 @@
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
         <child id="527291771330969242" name="arg" index="24uAY8" />
       </concept>
-      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.SetAddOp" flags="ng" index="2iGxMk" />
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
+      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetAddOp" flags="ng" index="2iGxMk" />
+      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
       <concept id="6095949300270588116" name="org.iets3.core.expr.collections.structure.IsNotEmptyOp" flags="ng" index="nW$_3" />
       <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ImmutableListWithAllOp" flags="ng" index="2oUEFG" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
@@ -58,13 +58,13 @@
       <concept id="5585772046597818717" name="org.iets3.core.expr.collections.structure.TailOp" flags="ng" index="2$gqX9" />
       <concept id="5585772046587930249" name="org.iets3.core.expr.collections.structure.MaxOp" flags="ng" index="2$EC2t" />
       <concept id="75413091695536841" name="org.iets3.core.expr.collections.structure.CounterExpr" flags="ng" index="2GTG47" />
-      <concept id="8872269265522211270" name="org.iets3.core.expr.collections.structure.AsSetOp" flags="ng" index="2Scpw_" />
+      <concept id="8872269265522211270" name="org.iets3.core.expr.collections.structure.AsImmutableSetOp" flags="ng" index="2Scpw_" />
       <concept id="8872269265511400449" name="org.iets3.core.expr.collections.structure.DistinctOp" flags="ng" index="2Tjeny" />
       <concept id="8872269265515619803" name="org.iets3.core.expr.collections.structure.AnyOp" flags="ng" index="2Tz0gS" />
-      <concept id="8872269265513219132" name="org.iets3.core.expr.collections.structure.AsListOp" flags="ng" index="2TEanv" />
+      <concept id="8872269265513219132" name="org.iets3.core.expr.collections.structure.AsImmutableListOp" flags="ng" index="2TEanv" />
       <concept id="8872269265514323710" name="org.iets3.core.expr.collections.structure.ContainsOp" flags="ng" index="2TI7Wt" />
-      <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.SetType" flags="ng" index="2TO1h$" />
-      <concept id="8872269265520081293" name="org.iets3.core.expr.collections.structure.SetLiteral" flags="ng" index="2TO1xI">
+      <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.ImmutableSetType" flags="ng" index="2TO1h$" />
+      <concept id="8872269265520081293" name="org.iets3.core.expr.collections.structure.ImmutableSetLiteral" flags="ng" index="2TO1xI">
         <child id="8694548031077660261" name="typeConstraint" index="ynoGV" />
         <child id="8872269265520081294" name="elements" index="2TO1xH" />
       </concept>
@@ -96,25 +96,25 @@
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
       </concept>
-      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ImmutableListLiteral" flags="ng" index="3iBYfx">
         <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
-      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
+      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
       <concept id="5070313213695398904" name="org.iets3.core.expr.collections.structure.StringJoinOp" flags="ng" index="1k5sNT" />
       <concept id="5070313213697900736" name="org.iets3.core.expr.collections.structure.StringTerminateOp" flags="ng" index="1kcTZ1" />
-      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.SetRemoveOp" flags="ng" index="3wlHHh" />
+      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.ImmutableSetRemoveOp" flags="ng" index="3wlHHh" />
       <concept id="890435239346753529" name="org.iets3.core.expr.collections.structure.SimpleSortOp" flags="ng" index="3$AVBo">
         <property id="890435239346753553" name="order" index="3$AUoK" />
       </concept>
-      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.MapRemoveOp" flags="ng" index="1DE4Fa" />
-      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.MapAddOp" flags="ng" index="1DFusj" />
+      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapRemoveOp" flags="ng" index="1DE4Fa" />
+      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapPutOp" flags="ng" index="1DFusj" />
       <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.ImmutableMapType" flags="ng" index="1DGDPD" />
       <concept id="8448265401163111273" name="org.iets3.core.expr.collections.structure.KeyValuePair" flags="ng" index="1DGDZQ">
         <child id="8448265401163111276" name="val" index="1DGDZN" />
         <child id="8448265401163111274" name="key" index="1DGDZP" />
       </concept>
-      <concept id="8448265401163111272" name="org.iets3.core.expr.collections.structure.MapLiteral" flags="ng" index="1DGDZR">
+      <concept id="8448265401163111272" name="org.iets3.core.expr.collections.structure.ImmutableMapLiteral" flags="ng" index="1DGDZR">
         <child id="8694548031078301045" name="typeConstraint" index="ylO0F" />
         <child id="8448265401163120790" name="elements" index="1DGOg9" />
       </concept>
@@ -193,7 +193,7 @@
       <concept id="6527211908668938616" name="org.iets3.core.expr.base.structure.DocWordRef" flags="ng" index="2Jv0Bt">
         <reference id="6527211908668938619" name="node" index="2Jv0Bu" />
       </concept>
-      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.SomeExpression" flags="ng" index="UmaEC">
+      <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
       </concept>
       <concept id="2807135271608265973" name="org.iets3.core.expr.base.structure.NoneLiteral" flags="ng" index="UmHTt">

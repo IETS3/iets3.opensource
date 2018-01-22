@@ -380,7 +380,7 @@
                                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                                   <node concept="3cpWs3" id="7eS2goy2A2g" role="37wK5m">
                                     <node concept="37vLTw" id="7eS2goy2A4o" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7eS2goy14J5" />
+                                      <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
                                     </node>
                                     <node concept="Xl_RD" id="7eS2goy2_1E" role="3uHU7B">
                                       <property role="Xl_RC" value="Ill-formatted Error Message: " />
