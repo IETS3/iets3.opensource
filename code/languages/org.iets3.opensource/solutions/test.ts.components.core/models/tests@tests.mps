@@ -177,6 +177,7 @@
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
+      <concept id="7689421336932062451" name="test.iest3.component.attribute.structure.TestKindAPortAttribute" flags="ng" index="1u$PG4" />
       <concept id="8956532715640070482" name="test.iest3.component.attribute.structure.TestKindC" flags="ng" index="1EFXTv" />
       <concept id="8956532715637138334" name="test.iest3.component.attribute.structure.TestKindB" flags="ng" index="1EZ9Mj" />
       <concept id="4773799153887154601" name="test.iest3.component.attribute.structure.TestConnectorType" flags="ng" index="3IJI2w" />
@@ -625,6 +626,88 @@
       <property role="13Nl5X" value="true" />
       <property role="TrG5h" value="CompC" />
       <node concept="1EFXTv" id="7LbZKOmT50n" role="1i0K$_" />
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6EQjZsOdGV$">
+    <property role="TrG5h" value="LogicalAttributesConstraint" />
+    <node concept="1qefOq" id="6EQjZsOdGZg" role="1SKRRt">
+      <node concept="1i1ALs" id="6EQjZsOdGZj" role="1qenE9">
+        <property role="TrG5h" value="someCHunk" />
+        <node concept="1i1XBj" id="6EQjZsOdGZo" role="1i1AA4">
+          <property role="TrG5h" value="compC" />
+          <node concept="3oth5z" id="3DhaOr$RgTS" role="18DfD7">
+            <node concept="33R2CR" id="3DhaOr$RgTT" role="33Rvbw">
+              <node concept="1u$PG4" id="3DhaOr$RRUs" role="33R2D0" />
+            </node>
+            <node concept="1QScDb" id="3DhaOr$RsxZ" role="3ojXQX">
+              <node concept="1WbEdM" id="3DhaOr$RsyC" role="1QScD9">
+                <ref role="1WbEdL" node="3DhaOr$QKsv" resolve="P2" />
+              </node>
+              <node concept="1QScDb" id="3DhaOr$RgU8" role="30czhm">
+                <node concept="1Wfe8y" id="3DhaOr$RgU_" role="1QScD9">
+                  <ref role="1Wfe8x" node="3DhaOr$Rd6S" resolve="compB" />
+                </node>
+                <node concept="3o4LXa" id="3DhaOr$RgTQ" role="30czhm" />
+              </node>
+            </node>
+          </node>
+          <node concept="3oth5z" id="3DhaOr$RCVo" role="18DfD7">
+            <node concept="33R2CR" id="3DhaOr$RCVp" role="33Rvbw" />
+            <node concept="1QScDb" id="3DhaOr$RCW1" role="3ojXQX">
+              <node concept="1Wfe8y" id="3DhaOr$RCWY" role="1QScD9">
+                <ref role="1Wfe8x" node="3DhaOr$Rd6S" resolve="compB" />
+              </node>
+              <node concept="3o4LXa" id="3DhaOr$RCVm" role="30czhm" />
+            </node>
+          </node>
+          <node concept="1EFXTv" id="3DhaOr$Rd9_" role="1i0K$_" />
+          <node concept="GnABt" id="3DhaOr$Rd6F" role="1i1XAe">
+            <node concept="1i6xzV" id="3DhaOr$Rd6S" role="GnABu">
+              <node concept="1i1fwW" id="3DhaOr$Rd70" role="MGl3R">
+                <ref role="1i1fwX" node="6EQjZsOdKQu" resolve="compB" />
+              </node>
+            </node>
+          </node>
+          <node concept="H_j2F" id="6EQjZsOdGZB" role="1i1XAe">
+            <node concept="H_vQO" id="6EQjZsOdGZC" role="H_jLS" />
+            <node concept="1i7wMI" id="6EQjZsOdGZM" role="IJo7D">
+              <node concept="3o5llK" id="6EQjZsOdGZL" role="1aMMyH" />
+              <node concept="3o5o_D" id="3DhaOr$Q_KA" role="1i6vMw" />
+              <node concept="pfQqD" id="3DhaOr$QEgU" role="pfQ1b">
+                <property role="pfQqC" value="p1" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="3DhaOr$RSmq" role="lGtFl">
+            <node concept="OjmMv" id="3DhaOr$RSmr" role="1w35rA">
+              <node concept="19SGf9" id="3DhaOr$RSms" role="OjmMu">
+                <node concept="19SUe$" id="3DhaOr$RSmt" role="19SJt6">
+                  <property role="19SUeA" value="the KindB_PortTestAtttribute" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1i1AuW" id="6EQjZsOdKR4" role="1i1AA4" />
+        <node concept="1i1XBj" id="6EQjZsOdKQu" role="1i1AA4">
+          <property role="TrG5h" value="compB" />
+          <node concept="1EZ9Mj" id="3DhaOr$Rd9G" role="1i0K$_" />
+          <node concept="H_j2F" id="3DhaOr$QKo3" role="1i1XAe">
+            <node concept="H_vQO" id="3DhaOr$QKo4" role="H_jLS" />
+            <node concept="1i7wMI" id="3DhaOr$QKsv" role="IJo7D">
+              <node concept="3o5llK" id="3DhaOr$QKsu" role="1aMMyH" />
+              <node concept="3o5o_D" id="3DhaOr$QKsC" role="1i6vMw" />
+              <node concept="1u$PG4" id="3DhaOr$RgTh" role="18DfD7" />
+              <node concept="pfQqD" id="3DhaOr$RgTr" role="pfQ1b">
+                <property role="pfQqC" value="P2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="3DhaOr$RS74" role="lGtFl">
+          <node concept="7OXhh" id="3DhaOr$RS77" role="7EUXB" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
