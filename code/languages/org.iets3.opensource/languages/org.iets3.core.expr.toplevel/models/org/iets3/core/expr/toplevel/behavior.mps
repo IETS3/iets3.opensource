@@ -6034,8 +6034,8 @@
               <ref role="3cqZAo" node="5WV8nQbZt_x" resolve="targetConcept" />
             </node>
             <node concept="2Zo12i" id="7LbZKOmGBit" role="2OqNvi">
-              <node concept="chp4Y" id="7LbZKOmGBlw" role="2Zo12j">
-                <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
+              <node concept="chp4Y" id="4bZMeRX9_Pv" role="2Zo12j">
+                <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
               </node>
             </node>
           </node>
