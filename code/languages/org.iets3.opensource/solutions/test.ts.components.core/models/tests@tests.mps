@@ -173,7 +173,7 @@
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />

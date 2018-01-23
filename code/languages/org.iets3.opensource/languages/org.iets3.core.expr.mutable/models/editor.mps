@@ -526,14 +526,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="79jc6YzaH5U">
-    <property role="3GE5qa" value="void" />
-    <ref role="1XX52x" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
-    <node concept="3F0ifn" id="79jc6YzaH65" role="2wV5jI">
-      <property role="3F0ifm" value="void" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1RzljfOfUpf">
     <ref role="1XX52x" to="8lgj:1RzljfOfUoH" resolve="InTxBlock" />
     <node concept="3EZMnI" id="1RzljfOfUpn" role="2wV5jI">

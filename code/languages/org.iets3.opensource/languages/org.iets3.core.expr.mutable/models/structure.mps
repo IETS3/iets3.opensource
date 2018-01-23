@@ -149,13 +149,6 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
-  <node concept="1TIwiD" id="79jc6Yz3CVd">
-    <property role="EcuMT" value="8237981399425912525" />
-    <property role="TrG5h" value="VoidType" />
-    <property role="34LRSv" value="void" />
-    <property role="3GE5qa" value="void" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
-  </node>
   <node concept="PlHQZ" id="aPhVmWYjmk">
     <property role="EcuMT" value="195141004745586068" />
     <property role="TrG5h" value="ICanBeLValue" />

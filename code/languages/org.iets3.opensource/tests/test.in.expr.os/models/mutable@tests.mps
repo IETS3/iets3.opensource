@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
@@ -239,6 +239,9 @@
       <concept id="7782108600708168956" name="org.iets3.core.expr.base.structure.ReferenceType" flags="ng" index="nhQpQ">
         <child id="7782108600708168957" name="baseType" index="nhQpR" />
       </concept>
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
+        <child id="606861080870797310" name="expr" index="pf3We" />
+      </concept>
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -307,9 +310,9 @@
         <child id="6932772747669876273" name="type" index="15qgo$" />
       </concept>
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
+        <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
-        <child id="7849560302565679728" name="elsePart" index="39w5ZL" />
       </concept>
       <concept id="1919538606559981270" name="org.iets3.core.expr.base.structure.ErrorLiteral" flags="ng" index="1i17NB" />
       <concept id="5571545316364799282" name="org.iets3.core.expr.base.structure.PragmaExpression" flags="ng" index="1EI5v0">
@@ -4688,7 +4691,6 @@
             <ref role="1ZmhP3" node="4pyjK6b0lJI" resolve="val" />
           </node>
         </node>
-        <node concept="UmHTt" id="4pyjK6aYXh0" role="39w5ZL" />
         <node concept="UmaEC" id="4pyjK6b0lJI" role="39w5ZE">
           <node concept="1af_rf" id="4pyjK6b0jnk" role="UmaED">
             <ref role="1afhQb" node="4pyjK6aZ2Fb" resolve="offerBoxById" />
@@ -4696,6 +4698,9 @@
               <ref role="1afue_" node="4pyjK6aOvwD" resolve="id" />
             </node>
           </node>
+        </node>
+        <node concept="pf3Wd" id="xG0f0hnQJo" role="pf3W8">
+          <node concept="UmHTt" id="4pyjK6aYXh0" role="pf3We" />
         </node>
       </node>
     </node>
@@ -5176,7 +5181,6 @@
                     <property role="pfQqC" value="p" />
                   </node>
                 </node>
-                <node concept="UmHTt" id="mQGcCvAozr" role="39w5ZL" />
                 <node concept="1af_rf" id="mQGcCvAozo" role="39w5ZG">
                   <ref role="1afhQb" node="mQGcCvKvKE" resolve="tryToBuy" />
                   <node concept="1ZmhP4" id="mQGcCvAozp" role="1afhQ5">
@@ -5188,6 +5192,9 @@
                   <node concept="2YqRDQ" id="VApoyDAWDy" role="1afhQ5">
                     <ref role="2YqRDN" node="mQGcCvOcqu" resolve="who" />
                   </node>
+                </node>
+                <node concept="pf3Wd" id="xG0f0hnQJp" role="pf3W8">
+                  <node concept="UmHTt" id="mQGcCvAozr" role="pf3We" />
                 </node>
               </node>
             </node>
@@ -9535,7 +9542,6 @@
                       <node concept="1ZmhP4" id="71HHyJ2s77X" role="39w5ZE">
                         <ref role="1ZmhP3" node="71HHyJ2s3Ts" resolve="decided" />
                       </node>
-                      <node concept="UmHTt" id="71HHyJ2s77Y" role="39w5ZL" />
                       <node concept="2YjPKq" id="3N4k0eSIsbE" role="39w5ZG">
                         <node concept="1QScDb" id="3N4k0eSIsA_" role="30dEs_">
                           <node concept="2iGZtc" id="cHo4qYcFej" role="1QScD9">
@@ -9550,6 +9556,9 @@
                         <node concept="2YgRg0" id="71HHyJ2s785" role="30dEsF">
                           <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
                         </node>
+                      </node>
+                      <node concept="pf3Wd" id="xG0f0hnQJr" role="pf3W8">
+                        <node concept="UmHTt" id="71HHyJ2s77Y" role="pf3We" />
                       </node>
                     </node>
                     <node concept="2YjPKq" id="3N4k0eSIuwB" role="1aduh9">
@@ -9568,7 +9577,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="UmHTt" id="71HHyJ2s7rO" role="39w5ZL" />
+                  <node concept="pf3Wd" id="xG0f0hnQJq" role="pf3W8">
+                    <node concept="UmHTt" id="71HHyJ2s7rO" role="pf3We" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -13124,7 +13135,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="UmHTt" id="VApoyDKRhg" role="39w5ZL" />
               </node>
             </node>
           </node>
@@ -14569,7 +14579,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="UmHTt" id="4IV0h47E8Lm" role="39w5ZL" />
+                <node concept="pf3Wd" id="xG0f0hnQJt" role="pf3W8">
+                  <node concept="UmHTt" id="4IV0h47E8Lm" role="pf3We" />
+                </node>
               </node>
             </node>
           </node>
