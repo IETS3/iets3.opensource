@@ -142,7 +142,9 @@
       </concept>
       <concept id="5456956546155344349" name="org.iets3.core.expr.process.structure.TakeTurnsInterceptor" flags="ng" index="13VZ3c">
         <property id="5456956546155344462" name="ordered" index="13VZdv" />
+        <property id="3489557448828302121" name="removeInsteadOfSkip" index="3gPXkF" />
         <child id="5456956546155344351" name="parties" index="13VZ3e" />
+        <child id="3489557448815700543" name="boottimeout" index="3J_KKX" />
       </concept>
       <concept id="5456956546145095925" name="org.iets3.core.expr.process.structure.AnySenderExpr" flags="ng" index="1c0T7$" />
       <concept id="5456956546144118168" name="org.iets3.core.expr.process.structure.SenderContextArg" flags="ng" index="1c4Ei9" />
@@ -9684,8 +9686,12 @@
           </node>
           <node concept="13VZ3c" id="71HHyJ2sdqN" role="1czwXj">
             <property role="13VZdv" value="true" />
+            <property role="3gPXkF" value="true" />
             <node concept="2YgRg0" id="71HHyJ2sdqZ" role="13VZ3e">
               <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
+            </node>
+            <node concept="30bXRB" id="53f0GWHAwMX" role="3J_KKX">
+              <property role="30bXRw" value="500" />
             </node>
           </node>
         </node>
