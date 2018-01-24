@@ -4585,6 +4585,18 @@
           <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
         </node>
       </node>
+      <node concept="1SiIV0" id="HCbFcOV8q7" role="3bR37C">
+        <node concept="3bR9La" id="HCbFcOV8q8" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="HCbFcOV8q9" role="3bR37C">
+        <node concept="3bR9La" id="HCbFcOV8qa" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="78hTg1zaYCc" resolve="org.iets3.core.attributes" />
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
       <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
