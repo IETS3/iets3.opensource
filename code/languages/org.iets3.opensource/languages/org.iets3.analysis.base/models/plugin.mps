@@ -1113,6 +1113,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3RtoCzhK$hO" role="3cqZAp">
+          <node concept="3clFbS" id="3RtoCzhK$hQ" role="3clFbx">
+            <node concept="YS8fn" id="3RtoCzhK_rF" role="3cqZAp">
+              <node concept="2ShNRf" id="3RtoCzhK_tq" role="YScLw">
+                <node concept="1pGfFk" id="3RtoCzhK_Mm" role="2ShVmc">
+                  <ref role="37wK5l" node="7UxulDgvQce" resolve="SolverException" />
+                  <node concept="Xl_RD" id="3RtoCzhK_SC" role="37wK5m">
+                    <property role="Xl_RC" value="Encountered invalid expression: null" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3RtoCzhK_4$" role="3clFbw">
+            <node concept="10Nm6u" id="3RtoCzhK_mS" role="3uHU7w" />
+            <node concept="37vLTw" id="3RtoCzhK$A1" role="3uHU7B">
+              <ref role="3cqZAo" node="6rcydJjn04S" resolve="expression" />
+            </node>
+          </node>
+        </node>
         <node concept="YS8fn" id="3ugRfIRpOs9" role="3cqZAp">
           <node concept="2ShNRf" id="3ugRfIRpOVw" role="YScLw">
             <node concept="1pGfFk" id="3ugRfIRpPyP" role="2ShVmc">
