@@ -56,7 +56,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2702,7 +2702,7 @@
     </node>
     <node concept="1YaCAy" id="6P1C6lFyRV6" role="1YuTPh">
       <property role="TrG5h" value="portWithConfiguraion" />
-      <ref role="1YaFvo" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguraion" />
+      <ref role="1YaFvo" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguration" />
     </node>
   </node>
   <node concept="312cEu" id="3mxHOBiEhok">
@@ -2859,7 +2859,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="17QLQc" id="3mxHOBiEmtk" role="3clFbw">
+              <node concept="17R0WA" id="5aaqidNQ2Wt" role="3clFbw">
                 <node concept="2OqwBi" id="3mxHOBiEk9C" role="3uHU7B">
                   <node concept="37vLTw" id="3mxHOBiEoJI" role="2Oq$k0">
                     <ref role="3cqZAo" node="3mxHOBiEoJC" resolve="leftConfigType" />

@@ -430,7 +430,6 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
@@ -441,7 +440,6 @@
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
-        <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
@@ -13656,34 +13654,11 @@
   </node>
   <node concept="24kQdi" id="4kCIAUZDmJh">
     <property role="3GE5qa" value="components" />
-    <ref role="1XX52x" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguraion" />
+    <ref role="1XX52x" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguration" />
     <node concept="3EZMnI" id="4kCIAUZDmJr" role="2wV5jI">
       <node concept="1kIj98" id="4kCIAUZDmJy" role="3EZMnx">
         <node concept="3F1sOY" id="4kCIAUZDmJC" role="1kIj9b">
           <ref role="1NtTu8" to="w9y2:4kCIAUZDmHT" resolve="wrapped" />
-        </node>
-        <node concept="2e7140" id="4kCIAUZKn$G" role="2e1Fq_">
-          <node concept="3clFbS" id="4kCIAUZKn$H" role="2VODD2">
-            <node concept="3clFbF" id="4kCIAUZKnFS" role="3cqZAp">
-              <node concept="2OqwBi" id="4kCIAUZKnFP" role="3clFbG">
-                <node concept="10M0yZ" id="4kCIAUZKnFQ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="4kCIAUZKnFR" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="Xl_RD" id="4kCIAUZKo6r" role="37wK5m">
-                    <property role="Xl_RC" value="ST" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4kCIAUZKnYL" role="3cqZAp">
-              <node concept="3clFbT" id="4kCIAUZKnYK" role="3clFbG">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="yw3OH" id="4kCIAUZEeK7" role="3EZMnx">
@@ -13692,10 +13667,8 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
       </node>
-      <node concept="1kIj98" id="4kCIAUZDCn$" role="3EZMnx">
-        <node concept="3F1sOY" id="4kCIAUZDCw_" role="1kIj9b">
-          <ref role="1NtTu8" to="w9y2:4kCIAUZDpkP" resolve="value" />
-        </node>
+      <node concept="3F1sOY" id="5aaqidNQeT0" role="3EZMnx">
+        <ref role="1NtTu8" to="w9y2:4kCIAUZDpkP" resolve="value" />
       </node>
       <node concept="2iRfu4" id="4kCIAUZDmJu" role="2iSdaV" />
     </node>

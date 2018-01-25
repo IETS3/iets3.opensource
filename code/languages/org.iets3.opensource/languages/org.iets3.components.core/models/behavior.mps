@@ -7423,7 +7423,7 @@
   </node>
   <node concept="13h7C7" id="6P1C6lFyl17">
     <property role="3GE5qa" value="components" />
-    <ref role="13h7C2" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguraion" />
+    <ref role="13h7C2" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguration" />
     <node concept="13hLZK" id="6P1C6lFyl18" role="13h7CW">
       <node concept="3clFbS" id="6P1C6lFyl19" role="2VODD2" />
     </node>
@@ -7444,7 +7444,7 @@
               <node concept="1PxgMI" id="6P1C6lFLVaJ" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="6P1C6lFLVaK" role="3oSUPX">
-                  <ref role="cht4Q" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguraion" />
+                  <ref role="cht4Q" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguration" />
                 </node>
                 <node concept="37vLTw" id="6P1C6lFLVaL" role="1m5AlR">
                   <ref role="3cqZAo" node="6P1C6lFyl1r" resolve="governingPortType" />

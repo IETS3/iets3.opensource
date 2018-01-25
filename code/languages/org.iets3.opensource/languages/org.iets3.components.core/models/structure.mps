@@ -1368,7 +1368,7 @@
   </node>
   <node concept="1TIwiD" id="4kCIAUZDmGW">
     <property role="EcuMT" value="4983437972509911868" />
-    <property role="TrG5h" value="PortWithConfiguraion" />
+    <property role="TrG5h" value="PortWithConfiguration" />
     <property role="34LRSv" value="with" />
     <property role="3GE5qa" value="components" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
