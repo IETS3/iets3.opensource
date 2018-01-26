@@ -75,6 +75,13 @@
   <node concept="PlHQZ" id="4o9aP47qdic">
     <property role="TrG5h" value="IComparablePathPart" />
     <property role="EcuMT" value="5046612484462007436" />
+    <node concept="PrWs8" id="4fgA7QrEde8" role="PrDN$">
+      <ref role="PrY4T" node="4fgA7QrEde7" resolve="IPathPart" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4fgA7QrEde7">
+    <property role="EcuMT" value="4886573260946854791" />
+    <property role="TrG5h" value="IPathPart" />
   </node>
 </model>
 
