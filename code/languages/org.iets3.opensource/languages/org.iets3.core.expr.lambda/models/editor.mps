@@ -28,11 +28,13 @@
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="3459162043708467089" name="jetbrains.mps.lang.editor.structure.CellActionMap_CanExecuteFunction" flags="in" index="jK8Ss" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
@@ -55,6 +57,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -123,6 +126,7 @@
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
+        <property id="1139416841293" name="usesBraces" index="1ayjP4" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -1245,6 +1249,26 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="3RtoCziHdLY">
+    <ref role="1XX52x" to="zzzn:3RtoCziFOU9" resolve="AttachedConstraint" />
+    <node concept="3EZMnI" id="3RtoCziHdM0" role="2wV5jI">
+      <property role="1ayjP4" value="true" />
+      <node concept="2SsqMj" id="3RtoCziHdMa" role="3EZMnx" />
+      <node concept="3F0ifn" id="3RtoCziHdMe" role="3EZMnx">
+        <property role="3F0ifm" value="-----------" />
+      </node>
+      <node concept="3F2HdR" id="3RtoCziHdMq" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <property role="S$F3r" value="true" />
+        <ref role="1NtTu8" to="zzzn:3RtoCziFOUj" resolve="constraints" />
+        <node concept="2iRkQZ" id="3RtoCziHdMs" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="3RtoCziHdM3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="3fz9P6vo$hm">
+    <ref role="aqKnT" to="zzzn:3RtoCziFOU9" resolve="AttachedConstraint" />
   </node>
 </model>
 
