@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -679,6 +680,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2jITtfD$0No" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="doNotShowManualInfoMessage" />
+      <node concept="3Tm1VV" id="2jITtfD$0Np" role="1B3o_S" />
+      <node concept="10P_77" id="2jITtfD$0ZU" role="3clF45" />
+      <node concept="3clFbS" id="2jITtfD$0Nr" role="3clF47">
+        <node concept="3clFbF" id="2jITtfD$10I" role="3cqZAp">
+          <node concept="3clFbT" id="2jITtfD$10H" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3R3AIvumrTm" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -1306,6 +1321,28 @@
     </node>
     <node concept="13hLZK" id="4SwD0JT7m02" role="13h7CW">
       <node concept="3clFbS" id="4SwD0JT7m03" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3QX5db_zS9v">
+    <ref role="13h7C2" to="4kwy:3QX5db_zRnt" resolve="ITypeWithTarget" />
+    <node concept="13i0hz" id="3QX5db_zS9H" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTarget" />
+      <node concept="3Tm1VV" id="3QX5db_zS9I" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3fhiqmjJy6$" role="3clF45" />
+      <node concept="3clFbS" id="3QX5db_zS9K" role="3clF47" />
+      <node concept="P$JXv" id="3QX5db_$9Ub" role="lGtFl">
+        <node concept="TZ5HA" id="3QX5db_$9Uc" role="TZ5H$">
+          <node concept="1dT_AC" id="3QX5db_$9Ud" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="3QX5db_$9Ue" role="3nqlJM">
+          <property role="x79VB" value="the node which is referenced by the type" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3QX5db_zS9w" role="13h7CW">
+      <node concept="3clFbS" id="3QX5db_zS9x" role="2VODD2" />
     </node>
   </node>
 </model>

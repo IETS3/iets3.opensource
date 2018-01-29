@@ -15,7 +15,7 @@
       </models>
       <external-templates />
       <languageVersions>
-        <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
+        <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
         <language slang="l:2374bc90-7e37-41f1-a9c4-c2e35194c36a:com.mbeddr.doc" version="2" />
         <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
         <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
@@ -137,11 +137,15 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
-    <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="2" />
+    <module reference="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" version="7" />
     <module reference="49321c7a-31be-4a86-8e8e-5cdcee1237ba(org.iets3.components.req)" version="0" />
     <module reference="583939be-ded0-4735-a055-a74f8477fc34(org.iets3.core.attributes)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="0" />
+    <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="5" />
+    <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
+    <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
   </dependencyVersions>
   <extendedLanguages>

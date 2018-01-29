@@ -2,7 +2,7 @@
 <model ref="r:9750d418-880f-460d-9880-d67dd111722d(org.iets3.core.expr.base.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -220,7 +220,7 @@
             <node concept="nLn13" id="6b_jefnKxCK" role="2Oq$k0" />
             <node concept="1mIQ4w" id="6b_jefnKxCL" role="2OqNvi">
               <node concept="chp4Y" id="6b_jefnKxCM" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
               </node>
             </node>
           </node>
@@ -485,8 +485,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="71dSyJVnXJS">
-    <property role="3GE5qa" value="let" />
-    <ref role="1M2myG" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef" />
+    <property role="3GE5qa" value="deprecated_let" />
+    <ref role="1M2myG" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef_old" />
     <node concept="9S07l" id="6b_jefnKxD$" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKxD_" role="2VODD2">
         <node concept="3clFbF" id="6b_jefnKxDA" role="3cqZAp">
@@ -496,7 +496,7 @@
               <node concept="2Xjw5R" id="6b_jefnKxDE" role="2OqNvi">
                 <node concept="1xMEDy" id="6b_jefnKxDF" role="1xVPHs">
                   <node concept="chp4Y" id="6b_jefnKxDG" role="ri$Ld">
-                    <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+                    <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="6b_jefnKxDH" role="1xVPHs" />
@@ -515,7 +515,7 @@
             <node concept="3cpWsn" id="1F1F0IUZ_Hk" role="3cpWs9">
               <property role="TrG5h" value="all" />
               <node concept="2I9FWS" id="1F1F0IUZ_Hl" role="1tU5fm">
-                <ref role="2I9WkF" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+                <ref role="2I9WkF" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
               </node>
               <node concept="2OqwBi" id="1F1F0IUZ_Hm" role="33vP2m">
                 <node concept="2OqwBi" id="1F1F0IUZ_Hn" role="2Oq$k0">
@@ -523,7 +523,7 @@
                   <node concept="2Xjw5R" id="1F1F0IUZ_Hp" role="2OqNvi">
                     <node concept="1xMEDy" id="1F1F0IUZ_Hq" role="1xVPHs">
                       <node concept="chp4Y" id="1F1F0IUZ_Hr" role="ri$Ld">
-                        <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression" />
+                        <ref role="cht4Q" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
                       </node>
                     </node>
                   </node>
@@ -566,7 +566,7 @@
                   </node>
                   <node concept="A3Dl8" id="1F1F0IUZ_MX" role="10QFUM">
                     <node concept="3Tqbb2" id="1F1F0IUZ_MY" role="A3Ik2">
-                      <ref role="ehGHo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable" />
+                      <ref role="ehGHo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
                     </node>
                   </node>
                 </node>
@@ -1064,7 +1064,7 @@
                 <node concept="2DD5aU" id="6BCTLIjCuGt" role="2Oq$k0" />
                 <node concept="2Zo12i" id="6BCTLIjCuGu" role="2OqNvi">
                   <node concept="chp4Y" id="6BCTLIjCv7x" role="2Zo12j">
-                    <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="SomeExpression" />
+                    <ref role="cht4Q" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
                   </node>
                 </node>
               </node>
@@ -1162,6 +1162,47 @@
         <node concept="3cpWs6" id="6BCTLIjCvGn" role="3cqZAp">
           <node concept="3clFbT" id="6BCTLIjCvGW" role="3cqZAk">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4fgA7QrKSvs">
+    <ref role="1M2myG" to="hm2y:4fgA7QrKSsR" resolve="ThisExpression" />
+    <node concept="9S07l" id="4fgA7QrKSvz" role="9Vyp8">
+      <node concept="3clFbS" id="4fgA7QrKSv$" role="2VODD2">
+        <node concept="3clFbF" id="4fgA7QrKSAJ" role="3cqZAp">
+          <node concept="2OqwBi" id="4fgA7QrKTGL" role="3clFbG">
+            <node concept="2OqwBi" id="4fgA7QrKSPN" role="2Oq$k0">
+              <node concept="nLn13" id="4fgA7QrKSAI" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4fgA7QrKT6D" role="2OqNvi">
+                <node concept="1xMEDy" id="4fgA7QrKT6F" role="1xVPHs">
+                  <node concept="chp4Y" id="4fgA7QrKTfI" role="ri$Ld">
+                    <ref role="cht4Q" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4fgA7QrKTri" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4fgA7QrKU19" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="79jc6Yz3CXG">
+    <property role="3GE5qa" value="void" />
+    <ref role="1M2myG" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
+    <node concept="9S07l" id="79jc6Yz3CXQ" role="9Vyp8">
+      <node concept="3clFbS" id="79jc6Yz3CXR" role="2VODD2">
+        <node concept="3clFbF" id="79jc6Yz3D50" role="3cqZAp">
+          <node concept="2OqwBi" id="79jc6Yz3Dgr" role="3clFbG">
+            <node concept="nLn13" id="79jc6Yz3D4Z" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="79jc6Yz3Dxc" role="2OqNvi">
+              <node concept="chp4Y" id="79jc6Yz82S8" role="cj9EA">
+                <ref role="cht4Q" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
