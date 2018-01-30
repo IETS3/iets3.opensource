@@ -173,7 +173,7 @@
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
@@ -312,6 +312,9 @@
         <node concept="1i1AuW" id="48ZWgAGs_yh" role="1i1AA4" />
         <node concept="1i1XBj" id="48ZWgAGs_p5" role="1i1AA4">
           <property role="TrG5h" value="Comp1" />
+          <node concept="H_j2F" id="5L_xiGQ8voI" role="1i1XAe">
+            <node concept="H_vQO" id="5L_xiGQ8voJ" role="H_jLS" />
+          </node>
           <node concept="3o2yKq" id="48ZWgAGs_p4" role="1i0K$_" />
           <node concept="GnABt" id="48ZWgAGs_vx" role="1i1XAe">
             <node concept="1i6xzV" id="48ZWgAGs_vC" role="GnABu">
@@ -488,6 +491,9 @@
         <property role="TrG5h" value="someChunk" />
         <node concept="1i1XBj" id="7LbZKOmHCt_" role="1i1AA4">
           <property role="TrG5h" value="RootA" />
+          <node concept="H_j2F" id="5L_xiGQ8voK" role="1i1XAe">
+            <node concept="H_vQO" id="5L_xiGQ8voL" role="H_jLS" />
+          </node>
           <node concept="GnABt" id="7LbZKOmHTHd" role="1i1XAe">
             <node concept="1i6xzV" id="7LbZKOmHTHk" role="GnABu">
               <node concept="1i1fwW" id="7LbZKOmHTHs" role="MGl3R">
@@ -558,6 +564,9 @@
         <property role="TrG5h" value="somechunk2" />
         <node concept="1i1XBj" id="7LbZKOmHXzQ" role="1i1AA4">
           <property role="TrG5h" value="CompWithRestrictedScopeC" />
+          <node concept="H_j2F" id="5L_xiGQ8voM" role="1i1XAe">
+            <node concept="H_vQO" id="5L_xiGQ8voN" role="H_jLS" />
+          </node>
           <node concept="1EFXTv" id="7LbZKOmT4WD" role="1i0K$_" />
           <node concept="GnABt" id="7LbZKOmHX$f" role="1i1XAe">
             <node concept="1i6xzV" id="7LbZKOmHX$o" role="GnABu">
@@ -602,6 +611,9 @@
     <node concept="1i1XBj" id="7LbZKOmHOcg" role="1i1AA4">
       <property role="TrG5h" value="CompA" />
       <property role="13Nl5X" value="true" />
+      <node concept="H_j2F" id="5L_xiGQ8voO" role="1i1XAe">
+        <node concept="H_vQO" id="5L_xiGQ8voP" role="H_jLS" />
+      </node>
       <node concept="3zyh8u" id="7LbZKOmHXBr" role="1i1XAe">
         <node concept="1aga60" id="7LbZKOmHXBs" role="qdjUt">
           <property role="TrG5h" value="funcInKindA" />
@@ -613,6 +625,9 @@
     <node concept="1i1XBj" id="7LbZKOmHRWj" role="1i1AA4">
       <property role="TrG5h" value="CompB" />
       <property role="13Nl5X" value="true" />
+      <node concept="H_j2F" id="5L_xiGQ8voQ" role="1i1XAe">
+        <node concept="H_vQO" id="5L_xiGQ8voR" role="H_jLS" />
+      </node>
       <node concept="1EZ9Mj" id="7LbZKOmHRWh" role="1i0K$_" />
       <node concept="3zyh8u" id="7LbZKOmHX_l" role="1i1XAe">
         <node concept="1aga60" id="7LbZKOmHX_m" role="qdjUt">
@@ -624,6 +639,9 @@
     <node concept="1i1XBj" id="7LbZKOmT4ZF" role="1i1AA4">
       <property role="13Nl5X" value="true" />
       <property role="TrG5h" value="CompC" />
+      <node concept="H_j2F" id="5L_xiGQ8voS" role="1i1XAe">
+        <node concept="H_vQO" id="5L_xiGQ8voT" role="H_jLS" />
+      </node>
       <node concept="1EFXTv" id="7LbZKOmT50n" role="1i0K$_" />
     </node>
   </node>

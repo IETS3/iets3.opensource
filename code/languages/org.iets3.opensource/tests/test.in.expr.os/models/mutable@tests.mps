@@ -4,15 +4,15 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
+    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="5" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="-1" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
     <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="-1" />
@@ -241,9 +241,7 @@
       <concept id="7782108600708168956" name="org.iets3.core.expr.base.structure.ReferenceType" flags="ng" index="nhQpQ">
         <child id="7782108600708168957" name="baseType" index="nhQpR" />
       </concept>
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
-        <child id="606861080870797310" name="expr" index="pf3We" />
-      </concept>
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -3392,7 +3390,7 @@
           </node>
         </node>
         <node concept="1amXfx" id="37V13JR87mZ" role="1am$gN">
-          <ref role="1amXd5" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
+          <ref role="1amXd5" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
           <node concept="1z9TsT" id="37V13JR87oQ" role="lGtFl">
             <node concept="OjmMv" id="37V13JR87oR" role="1w35rA">
               <node concept="19SGf9" id="37V13JR87oS" role="OjmMu">
@@ -3781,7 +3779,7 @@
         </node>
         <node concept="36UGOu" id="37V13JR83CG" role="1sGZj$" />
         <node concept="1amXfx" id="37V13JR83F6" role="1am$gN">
-          <ref role="1amXd5" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
+          <ref role="1amXd5" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
           <node concept="1z9TsT" id="37V13JR83H9" role="lGtFl">
             <node concept="OjmMv" id="37V13JR83Ha" role="1w35rA">
               <node concept="19SGf9" id="37V13JR83Hb" role="OjmMu">
@@ -4701,9 +4699,7 @@
             </node>
           </node>
         </node>
-        <node concept="pf3Wd" id="xG0f0hnQJo" role="pf3W8">
-          <node concept="UmHTt" id="4pyjK6aYXh0" role="pf3We" />
-        </node>
+        <node concept="pf3Wd" id="5L_xiGQ8vr5" role="pf3W8" />
       </node>
     </node>
     <node concept="1aga60" id="4pyjK6aZ2Fb" role="_iOnB">
@@ -5195,9 +5191,7 @@
                     <ref role="2YqRDN" node="mQGcCvOcqu" resolve="who" />
                   </node>
                 </node>
-                <node concept="pf3Wd" id="xG0f0hnQJp" role="pf3W8">
-                  <node concept="UmHTt" id="mQGcCvAozr" role="pf3We" />
-                </node>
+                <node concept="pf3Wd" id="5L_xiGQ8vr6" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -9559,9 +9553,7 @@
                           <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
                         </node>
                       </node>
-                      <node concept="pf3Wd" id="xG0f0hnQJr" role="pf3W8">
-                        <node concept="UmHTt" id="71HHyJ2s77Y" role="pf3We" />
-                      </node>
+                      <node concept="pf3Wd" id="5L_xiGQ8vr8" role="pf3W8" />
                     </node>
                     <node concept="2YjPKq" id="3N4k0eSIuwB" role="1aduh9">
                       <node concept="1QScDb" id="3N4k0eSIuYf" role="30dEs_">
@@ -9579,6 +9571,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="pf3Wd" id="5L_xiGQ8vr7" role="pf3W8" />
                 </node>
               </node>
             </node>
@@ -13138,6 +13131,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="pf3Wd" id="5L_xiGQ8vr9" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -14582,9 +14576,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="pf3Wd" id="xG0f0hnQJt" role="pf3W8">
-                  <node concept="UmHTt" id="4IV0h47E8Lm" role="pf3We" />
-                </node>
+                <node concept="pf3Wd" id="5L_xiGQ8vra" role="pf3W8" />
               </node>
             </node>
           </node>
