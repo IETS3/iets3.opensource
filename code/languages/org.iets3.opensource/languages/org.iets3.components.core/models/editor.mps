@@ -430,6 +430,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
+        <child id="5083944728300220903" name="wrapped" index="yw3OG" />
+      </concept>
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
@@ -13647,6 +13650,27 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4kCIAUZDmJh">
+    <property role="3GE5qa" value="components" />
+    <ref role="1XX52x" to="w9y2:4kCIAUZDmGW" resolve="PortWithConfiguration" />
+    <node concept="3EZMnI" id="4kCIAUZDmJr" role="2wV5jI">
+      <node concept="1kIj98" id="4kCIAUZDmJy" role="3EZMnx">
+        <node concept="3F1sOY" id="4kCIAUZDmJC" role="1kIj9b">
+          <ref role="1NtTu8" to="w9y2:4kCIAUZDmHT" resolve="wrapped" />
+        </node>
+      </node>
+      <node concept="yw3OH" id="4kCIAUZEeK7" role="3EZMnx">
+        <node concept="3F0ifn" id="4kCIAUZEeKh" role="yw3OG">
+          <property role="3F0ifm" value="with" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5aaqidNQeT0" role="3EZMnx">
+        <ref role="1NtTu8" to="w9y2:4kCIAUZDpkP" resolve="value" />
+      </node>
+      <node concept="2iRfu4" id="4kCIAUZDmJu" role="2iSdaV" />
     </node>
   </node>
 </model>
