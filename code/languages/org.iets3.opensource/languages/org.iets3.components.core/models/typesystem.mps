@@ -186,7 +186,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
@@ -2259,16 +2258,15 @@
       <node concept="3cpWs8" id="PFqDnRU9qy" role="3cqZAp">
         <node concept="3cpWsn" id="PFqDnRU9qz" role="3cpWs9">
           <property role="TrG5h" value="allConnectors" />
-          <node concept="2OqwBi" id="PFqDnRU9q$" role="33vP2m">
-            <node concept="2OqwBi" id="PFqDnRU9q_" role="2Oq$k0">
-              <node concept="1YBJjd" id="PFqDnRU9qA" role="2Oq$k0">
-                <ref role="1YBMHb" node="PFqDnRTYsK" resolve="cmp" />
-              </node>
-              <node concept="z$bX8" id="PFqDnRU9qB" role="2OqNvi" />
+          <node concept="2OqwBi" id="PFqDnRU9q_" role="33vP2m">
+            <node concept="1YBJjd" id="PFqDnRU9qA" role="2Oq$k0">
+              <ref role="1YBMHb" node="PFqDnRTYsK" resolve="cmp" />
             </node>
-            <node concept="v3k3i" id="PFqDnRU9qC" role="2OqNvi">
-              <node concept="chp4Y" id="PFqDnRU9qD" role="v3oSu">
-                <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
+            <node concept="2Rf3mk" id="6QFWI0ynj$N" role="2OqNvi">
+              <node concept="1xMEDy" id="6QFWI0ynj$P" role="1xVPHs">
+                <node concept="chp4Y" id="6QFWI0ynk65" role="ri$Ld">
+                  <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
+                </node>
               </node>
             </node>
           </node>
@@ -2282,22 +2280,21 @@
       <node concept="3cpWs8" id="PFqDnRUh_b" role="3cqZAp">
         <node concept="3cpWsn" id="PFqDnRUh_c" role="3cpWs9">
           <property role="TrG5h" value="instances" />
-          <node concept="2OqwBi" id="PFqDnRUh_d" role="33vP2m">
-            <node concept="2OqwBi" id="PFqDnRUh_e" role="2Oq$k0">
-              <node concept="1YBJjd" id="PFqDnRUh_f" role="2Oq$k0">
-                <ref role="1YBMHb" node="PFqDnRTYsK" resolve="cmp" />
-              </node>
-              <node concept="z$bX8" id="PFqDnRUh_g" role="2OqNvi" />
+          <node concept="2OqwBi" id="PFqDnRUh_e" role="33vP2m">
+            <node concept="1YBJjd" id="PFqDnRUh_f" role="2Oq$k0">
+              <ref role="1YBMHb" node="PFqDnRTYsK" resolve="cmp" />
             </node>
-            <node concept="v3k3i" id="PFqDnRUh_h" role="2OqNvi">
-              <node concept="chp4Y" id="PFqDnRUh_i" role="v3oSu">
-                <ref role="cht4Q" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+            <node concept="2Rf3mk" id="6QFWI0ynm0B" role="2OqNvi">
+              <node concept="1xMEDy" id="6QFWI0ynm0D" role="1xVPHs">
+                <node concept="chp4Y" id="6QFWI0ynmx_" role="ri$Ld">
+                  <ref role="cht4Q" to="w9y2:77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
+                </node>
               </node>
             </node>
           </node>
           <node concept="A3Dl8" id="PFqDnRUh_3" role="1tU5fm">
             <node concept="3Tqbb2" id="PFqDnRUh_6" role="A3Ik2">
-              <ref role="ehGHo" to="w9y2:6LfBX8YlosD" resolve="ComponentInstance" />
+              <ref role="ehGHo" to="w9y2:77HYM7HomhL" resolve="AbstractComponentInstanceBase" />
             </node>
           </node>
         </node>
