@@ -20438,5 +20438,24 @@
       <node concept="3clFbS" id="60Qa1k_nI2F" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="11MkwAJtgkf">
+    <property role="3GE5qa" value="contract" />
+    <ref role="13h7C2" to="hm2y:11MkwAJtgfD" resolve="IAssertConstraints" />
+    <node concept="13i0hz" id="11MkwAJtgkq" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getAssertedConstraints" />
+      <node concept="3Tm1VV" id="11MkwAJtgkr" role="1B3o_S" />
+      <node concept="_YKpA" id="11MkwAJtgtn" role="3clF45">
+        <node concept="3Tqbb2" id="11MkwAJtgt_" role="_ZDj9">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="11MkwAJtgkt" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="11MkwAJtgkg" role="13h7CW">
+      <node concept="3clFbS" id="11MkwAJtgkh" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

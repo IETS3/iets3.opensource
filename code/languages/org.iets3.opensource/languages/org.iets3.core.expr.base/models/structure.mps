@@ -1673,5 +1673,10 @@
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
   </node>
+  <node concept="PlHQZ" id="11MkwAJtgfD">
+    <property role="EcuMT" value="1185099853503726569" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IAssertConstraints" />
+  </node>
 </model>
 
