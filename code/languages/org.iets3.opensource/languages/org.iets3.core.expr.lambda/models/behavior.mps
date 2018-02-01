@@ -4554,6 +4554,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3QFQUsN_0PD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getAssertionErrorMessage" />
+      <ref role="13i0hy" to="pbu6:3QFQUsNx0Ca" resolve="getAssertionErrorMessage" />
+      <node concept="3Tm1VV" id="3QFQUsN_0PE" role="1B3o_S" />
+      <node concept="3clFbS" id="3QFQUsN_0PH" role="3clF47">
+        <node concept="3clFbF" id="3QFQUsN_14D" role="3cqZAp">
+          <node concept="Xl_RD" id="3QFQUsN_14C" role="3clFbG">
+            <property role="Xl_RC" value="Assertion would fail in the following case:\n%model%" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3QFQUsN_0PI" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="4qVjx3k0U6B">
     <property role="3GE5qa" value="effectTag" />

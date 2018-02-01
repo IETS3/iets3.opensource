@@ -458,6 +458,9 @@
     <node concept="PrWs8" id="5WtF_93$On" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
+    <node concept="PrWs8" id="3QFQUsNNS5M" role="PzmwI">
+      <ref role="PrY4T" node="3QFQUsNJoM0" resolve="IProvidePathConstraints" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="TrG5h" value="IBigExpression" />
@@ -1677,6 +1680,11 @@
     <property role="EcuMT" value="1185099853503726569" />
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="IAssertConstraints" />
+  </node>
+  <node concept="PlHQZ" id="3QFQUsNJoM0">
+    <property role="EcuMT" value="4443886968505207936" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IProvidePathConstraints" />
   </node>
 </model>
 
