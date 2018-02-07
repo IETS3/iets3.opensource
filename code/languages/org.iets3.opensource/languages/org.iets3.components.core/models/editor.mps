@@ -8030,6 +8030,14 @@
             <ref role="37wK5l" to="3eba:6$fTUGAuTlR" resolve="characteristicColor" />
           </node>
         </node>
+        <node concept="2OqwBi" id="7sZ012gjV3w" role="1xbcaF">
+          <node concept="1Pxb5l" id="7sZ012gjSRq" role="2Oq$k0" />
+          <node concept="1mIQ4w" id="7sZ012gjVQp" role="2OqNvi">
+            <node concept="chp4Y" id="7sZ012gjVTA" role="cj9EA">
+              <ref role="cht4Q" to="w9y2:77HYM7HnhfK" resolve="InlineComponentInstance" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3clFbT" id="5EHardOVWgh" role="TjlW2">
         <property role="3clFbU" value="true" />
@@ -8437,9 +8445,18 @@
             <node concept="2xDIQ0" id="2HR3caggQEV" role="2Oq$k0" />
             <node concept="liA8E" id="2HR3caghcq7" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-              <node concept="10M0yZ" id="siw10FNCar" role="37wK5m">
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+              <node concept="3K4zz7" id="7sZ012ggLYE" role="37wK5m">
+                <node concept="1xnly_" id="7sZ012ggLBB" role="3K4Cdx">
+                  <ref role="1xnlzC" node="7sZ012ggL_p" resolve="isInline" />
+                </node>
+                <node concept="10M0yZ" id="siw10FNCar" role="3K4GZi">
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                </node>
+                <node concept="10M0yZ" id="7sZ012ggM1f" role="3K4E3e">
+                  <ref role="3cqZAo" to="z60i:~Color.blue" resolve="blue" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                </node>
               </node>
             </node>
           </node>
@@ -8466,6 +8483,10 @@
       <node concept="3uibUv" id="33B7rHqus3F" role="1xmOb1">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
+    </node>
+    <node concept="1xmO9C" id="7sZ012ggL_p" role="1xmOgE">
+      <property role="TrG5h" value="isInline" />
+      <node concept="10P_77" id="7sZ012ggL_z" role="1xmOb1" />
     </node>
   </node>
   <node concept="24kQdi" id="siw10GrJZY">
