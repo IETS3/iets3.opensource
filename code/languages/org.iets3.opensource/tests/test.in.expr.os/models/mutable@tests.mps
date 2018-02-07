@@ -3392,7 +3392,7 @@
           </node>
         </node>
         <node concept="1amXfx" id="37V13JR87mZ" role="1am$gN">
-          <ref role="1amXd5" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
+          <ref role="1amXd5" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
           <node concept="1z9TsT" id="37V13JR87oQ" role="lGtFl">
             <node concept="OjmMv" id="37V13JR87oR" role="1w35rA">
               <node concept="19SGf9" id="37V13JR87oS" role="OjmMu">
@@ -3781,7 +3781,7 @@
         </node>
         <node concept="36UGOu" id="37V13JR83CG" role="1sGZj$" />
         <node concept="1amXfx" id="37V13JR83F6" role="1am$gN">
-          <ref role="1amXd5" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
+          <ref role="1amXd5" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
           <node concept="1z9TsT" id="37V13JR83H9" role="lGtFl">
             <node concept="OjmMv" id="37V13JR83Ha" role="1w35rA">
               <node concept="19SGf9" id="37V13JR83Hb" role="OjmMu">

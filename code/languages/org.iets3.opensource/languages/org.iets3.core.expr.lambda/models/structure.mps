@@ -2,7 +2,7 @@
 <model ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -11,6 +11,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="fanb" ref="r:72630daf-7316-45e2-b7fa-7dd7a1247a3d(com.mbeddr.mpsutil.varscope.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -391,6 +392,9 @@
     <node concept="PrWs8" id="6o_i6Gx8amG" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
     </node>
+    <node concept="PrWs8" id="4U5vykeiigH" role="PzmwI">
+      <ref role="PrY4T" to="fanb:NrU95lKEWo" resolve="IScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
@@ -432,6 +436,9 @@
     </node>
     <node concept="PrWs8" id="6o_i6Gww56Z" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+    <node concept="PrWs8" id="4GZZFnL$23o" role="PzmwI">
+      <ref role="PrY4T" to="fanb:NrU95lKLMc" resolve="IScopeElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8iHUx">
