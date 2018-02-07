@@ -21,6 +21,8 @@
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="9yy1" ref="r:2e325cf6-60a6-4a39-a667-7d8a01be3d6c(com.mbeddr.mpsutil.varscope.behavior)" />
+    <import index="fanb" ref="r:72630daf-7316-45e2-b7fa-7dd7a1247a3d(com.mbeddr.mpsutil.varscope.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2404,6 +2406,50 @@
       <node concept="3Tqbb2" id="6o_i6Gx8ant" role="3clF45">
         <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
       </node>
+    </node>
+    <node concept="13i0hz" id="4U5vykeiih2" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getContributedScopeElements" />
+      <ref role="13i0hy" to="9yy1:1OcdQnyTC1X" resolve="getContributedScopeElements" />
+      <node concept="3Tm1VV" id="4U5vykeiih3" role="1B3o_S" />
+      <node concept="3clFbS" id="4U5vykeiih9" role="3clF47">
+        <node concept="3cpWs6" id="4U5vykeijSf" role="3cqZAp">
+          <node concept="2OqwBi" id="4U5vykeimVc" role="3cqZAk">
+            <node concept="2OqwBi" id="4U5vykeik9P" role="2Oq$k0">
+              <node concept="13iPFW" id="4U5vykeijSs" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4U5vykeikLX" role="2OqNvi">
+                <ref role="3TtcxE" to="zzzn:49WTic8ig5E" resolve="expressions" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="4U5vykeipWH" role="2OqNvi">
+              <node concept="chp4Y" id="4U5vykeiq1V" role="v3oSu">
+                <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4U5vykeiiha" role="3clF45">
+        <node concept="3Tqbb2" id="4U5vykeiihb" role="A3Ik2">
+          <ref role="ehGHo" to="fanb:NrU95lKLMc" resolve="IScopeElement" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4U5vykeiihg" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isInclusionIndexDependent" />
+      <ref role="13i0hy" to="9yy1:2tBHhziHcNe" resolve="isInclusionIndexDependent" />
+      <node concept="3Tm1VV" id="4U5vykeiihh" role="1B3o_S" />
+      <node concept="3clFbS" id="4U5vykeiihm" role="3clF47">
+        <node concept="3cpWs6" id="4U5vykeijRw" role="3cqZAp">
+          <node concept="3clFbT" id="4U5vykeijRC" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4U5vykeiihn" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8iGDc">
