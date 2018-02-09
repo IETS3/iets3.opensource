@@ -684,7 +684,7 @@
               <ref role="35c_gD" to="4kwy:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
             </node>
             <node concept="2qgKlT" id="YsVdBRNzSE" role="2OqNvi">
-              <ref role="37wK5l" node="YsVdBRNjbz" resolve="areRunManualChecksAllowed" />
+              <ref role="37wK5l" node="YsVdBRNjbz" resolve="areManualChecksAllowed" />
               <node concept="13iPFW" id="YsVdBRNzXh" role="37wK5m" />
             </node>
           </node>
@@ -1431,7 +1431,7 @@
     <node concept="13i0hz" id="YsVdBRNivM" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="allowRunManualChecks" />
+      <property role="TrG5h" value="allowManualChecks" />
       <node concept="3Tm1VV" id="YsVdBRNivN" role="1B3o_S" />
       <node concept="10P_77" id="YsVdBRNjae" role="3clF45" />
       <node concept="3clFbS" id="YsVdBRNivP" role="3clF47">
@@ -1706,7 +1706,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="2Ki8OM" value="true" />
-      <property role="TrG5h" value="areRunManualChecksAllowed" />
+      <property role="TrG5h" value="areManualChecksAllowed" />
       <node concept="37vLTG" id="YsVdBRNjg8" role="3clF46">
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="YsVdBRNjgm" role="1tU5fm" />
@@ -1741,7 +1741,7 @@
                 <ref role="3cqZAo" node="YsVdBRNkvv" resolve="r" />
               </node>
               <node concept="2qgKlT" id="YsVdBRNlyA" role="2OqNvi">
-                <ref role="37wK5l" node="YsVdBRNivM" resolve="allowRunManualChecks" />
+                <ref role="37wK5l" node="YsVdBRNivM" resolve="allowManualChecks" />
               </node>
             </node>
             <node concept="3clFbC" id="YsVdBRNl28" role="3uHU7B">
