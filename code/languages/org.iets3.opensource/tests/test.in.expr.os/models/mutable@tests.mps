@@ -4,15 +4,15 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="5" />
+    <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="1" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="-1" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
     <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="-1" />
@@ -4685,6 +4685,7 @@
       </node>
       <node concept="2lgajW" id="4pyjK6aOvwF" role="28QfE6" />
       <node concept="39w5ZF" id="4pyjK6aYTK9" role="1ahQXP">
+        <node concept="pf3Wd" id="5L_xiGQ8vr5" role="pf3W8" />
         <node concept="1QScDb" id="4pyjK6aYVBV" role="39w5ZG">
           <node concept="3sQ2Ir" id="4pyjK6aYWI4" role="1QScD9" />
           <node concept="1ZmhP4" id="4pyjK6aYV5v" role="30czhm">
@@ -4699,7 +4700,6 @@
             </node>
           </node>
         </node>
-        <node concept="pf3Wd" id="5L_xiGQ8vr5" role="pf3W8" />
       </node>
     </node>
     <node concept="1aga60" id="4pyjK6aZ2Fb" role="_iOnB">
@@ -5168,6 +5168,7 @@
           <node concept="17riQX" id="mQGcCvAozg" role="17vUwr">
             <node concept="1aduha" id="mQGcCvAozh" role="17vFbk">
               <node concept="39w5ZF" id="mQGcCvAozi" role="1aduh9">
+                <node concept="pf3Wd" id="5L_xiGQ8vr6" role="pf3W8" />
                 <node concept="UmaEC" id="mQGcCvAozj" role="39w5ZE">
                   <node concept="1af_rf" id="mQGcCvAozk" role="UmaED">
                     <ref role="1afhQb" node="4pyjK6aZ2Fb" resolve="offerBoxById" />
@@ -5191,7 +5192,6 @@
                     <ref role="2YqRDN" node="mQGcCvOcqu" resolve="who" />
                   </node>
                 </node>
-                <node concept="pf3Wd" id="5L_xiGQ8vr6" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -9520,6 +9520,7 @@
                   </node>
                 </node>
                 <node concept="39w5ZF" id="71HHyJ2s37Y" role="1aduh9">
+                  <node concept="pf3Wd" id="5L_xiGQ8vr7" role="pf3W8" />
                   <node concept="UmaEC" id="71HHyJ2s3Ts" role="39w5ZE">
                     <node concept="1QScDb" id="71HHyJ2s4a8" role="UmaED">
                       <node concept="GRK4H" id="71HHyJ2s4qO" role="1QScD9">
@@ -9535,6 +9536,7 @@
                   </node>
                   <node concept="1aduha" id="71HHyJ2s77V" role="39w5ZG">
                     <node concept="39w5ZF" id="71HHyJ2s77W" role="1aduh9">
+                      <node concept="pf3Wd" id="5L_xiGQ8vr8" role="pf3W8" />
                       <node concept="1ZmhP4" id="71HHyJ2s77X" role="39w5ZE">
                         <ref role="1ZmhP3" node="71HHyJ2s3Ts" resolve="decided" />
                       </node>
@@ -9553,7 +9555,6 @@
                           <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
                         </node>
                       </node>
-                      <node concept="pf3Wd" id="5L_xiGQ8vr8" role="pf3W8" />
                     </node>
                     <node concept="2YjPKq" id="3N4k0eSIuwB" role="1aduh9">
                       <node concept="1QScDb" id="3N4k0eSIuYf" role="30dEs_">
@@ -9571,7 +9572,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="pf3Wd" id="5L_xiGQ8vr7" role="pf3W8" />
                 </node>
               </node>
             </node>
@@ -13095,6 +13095,7 @@
                 </node>
               </node>
               <node concept="39w5ZF" id="VApoyDKOrz" role="1aduh9">
+                <node concept="pf3Wd" id="5L_xiGQ8vr9" role="pf3W8" />
                 <node concept="1QScDb" id="VApoyDKOSq" role="39w5ZE">
                   <node concept="GRK4H" id="VApoyDKPsF" role="1QScD9">
                     <property role="2EMntM" value="decisionTaken" />
@@ -13131,7 +13132,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="pf3Wd" id="5L_xiGQ8vr9" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -14540,6 +14540,7 @@
                 </node>
               </node>
               <node concept="39w5ZF" id="4IV0h47E8L6" role="1aduh9">
+                <node concept="pf3Wd" id="5L_xiGQ8vra" role="pf3W8" />
                 <node concept="1QScDb" id="4IV0h47E8L7" role="39w5ZE">
                   <node concept="GRK4H" id="4IV0h47E8L8" role="1QScD9">
                     <property role="2EMntM" value="decisionTaken" />
@@ -14576,7 +14577,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="pf3Wd" id="5L_xiGQ8vra" role="pf3W8" />
               </node>
             </node>
           </node>

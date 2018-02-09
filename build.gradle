@@ -1,4 +1,5 @@
-import de.itemis.mps.gradle.GenerateLibrariesXml;
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.GitBasedVersioning
 
 
 //will pull the groovy classes/types from nexus to the classpath
@@ -7,7 +8,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.55.678ba7a'
     }
 }
 
@@ -36,7 +37,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        version = GitBasedVersioning.getVersion('0', '1')
+        version = GitBasedVersioning.getVersionWithCount("0", "1", System.env.BUILD_NUMBER.toInteger())
         println "##teamcity[buildNumber '${version}']"
     } else {
         println "Local build detected, version will be SNAPSHOT"
