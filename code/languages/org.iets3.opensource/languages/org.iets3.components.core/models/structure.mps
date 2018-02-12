@@ -1096,9 +1096,6 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3432899422388047137" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
-      <node concept="asaX9" id="77HYM7H$sfd" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstanceBase&quot;" />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1WAg9TyYvdW">
@@ -1401,13 +1398,6 @@
     </node>
     <node concept="PrWs8" id="2QRlyxOgRVg" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="77HYM7H$sf3" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameterValues" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="8209493818904527811" />
-      <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QRlyxOqVpb">

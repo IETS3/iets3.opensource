@@ -5695,6 +5695,41 @@
         <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
       </node>
     </node>
+    <node concept="13i0hz" id="3xTZ$YBxjWn" role="13h7CS">
+      <property role="TrG5h" value="parameterValues" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xTZ$YBvTdz" resolve="parameterValues" />
+      <node concept="3Tm1VV" id="3xTZ$YBxjWo" role="1B3o_S" />
+      <node concept="3clFbS" id="3xTZ$YBxjWs" role="3clF47">
+        <node concept="3clFbF" id="3xTZ$YBxlvi" role="3cqZAp">
+          <node concept="2OqwBi" id="3xTZ$YBxlIk" role="3clFbG">
+            <node concept="13iPFW" id="3xTZ$YBxlvh" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="3xTZ$YBxlZg" role="2OqNvi">
+              <ref role="3TtcxE" to="w9y2:2Y$6Xot5kOx" resolve="parameterValues_old2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3xTZ$YBxjWt" role="3clF45">
+        <node concept="3Tqbb2" id="3xTZ$YBxjWu" role="A3Ik2">
+          <ref role="ehGHo" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3xTZ$YBw9X2" role="13h7CS">
+      <property role="TrG5h" value="isInline" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xTZ$YBw7Op" resolve="isInline" />
+      <node concept="3Tm1VV" id="3xTZ$YBw9X3" role="1B3o_S" />
+      <node concept="3clFbS" id="3xTZ$YBw9X6" role="3clF47">
+        <node concept="3clFbF" id="3xTZ$YBw9X9" role="3cqZAp">
+          <node concept="3clFbT" id="3xTZ$YBw9X8" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="3xTZ$YBw9X7" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="2Y$6Xot5_9P" role="13h7CW">
       <node concept="3clFbS" id="2Y$6Xot5_9Q" role="2VODD2" />
     </node>
@@ -6385,6 +6420,43 @@
       <node concept="3Tqbb2" id="77HYM7H$uUd" role="3clF45">
         <ref role="ehGHo" to="w9y2:6LfBX8Yi4o1" resolve="Component" />
       </node>
+    </node>
+    <node concept="13i0hz" id="3xTZ$YBxjGA" role="13h7CS">
+      <property role="TrG5h" value="parameterValues" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xTZ$YBvTdz" resolve="parameterValues" />
+      <node concept="3Tm1VV" id="3xTZ$YBxjGB" role="1B3o_S" />
+      <node concept="3clFbS" id="3xTZ$YBxjGF" role="3clF47">
+        <node concept="3SKdUt" id="3xTZ$YBxjVV" role="3cqZAp">
+          <node concept="3SKdUq" id="3xTZ$YBxjVX" role="3SKWNk">
+            <property role="3SKdUp" value="inline instances are not supposed to have parameter values passed over to them" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xTZ$YBxjVd" role="3cqZAp">
+          <node concept="10Nm6u" id="3xTZ$YBxjVc" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3xTZ$YBxjGG" role="3clF45">
+        <node concept="3Tqbb2" id="3xTZ$YBxjGH" role="A3Ik2">
+          <ref role="ehGHo" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3xTZ$YBwbJi" role="13h7CS">
+      <property role="TrG5h" value="isInline" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xTZ$YBw7Op" resolve="isInline" />
+      <node concept="3Tm1VV" id="3xTZ$YBwbJj" role="1B3o_S" />
+      <node concept="3clFbS" id="3xTZ$YBwbJm" role="3clF47">
+        <node concept="3clFbF" id="3xTZ$YBwc1l" role="3cqZAp">
+          <node concept="3clFbT" id="3xTZ$YBwc1k" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3xTZ$YBwbJn" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="77HYM7H$sfR">
@@ -7264,6 +7336,26 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3xTZ$YBvTdz" role="13h7CS">
+      <property role="TrG5h" value="parameterValues" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3xTZ$YBvTd$" role="1B3o_S" />
+      <node concept="A3Dl8" id="3xTZ$YBvVlm" role="3clF45">
+        <node concept="3Tqbb2" id="3xTZ$YBvVl_" role="A3Ik2">
+          <ref role="ehGHo" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3xTZ$YBvTdA" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="3xTZ$YBw7Op" role="13h7CS">
+      <property role="TrG5h" value="isInline" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3xTZ$YBw7Oq" role="1B3o_S" />
+      <node concept="10P_77" id="3xTZ$YBw9Wu" role="3clF45" />
+      <node concept="3clFbS" id="3xTZ$YBw7Os" role="3clF47" />
     </node>
   </node>
   <node concept="13h7C7" id="2QRlyxOqXtC">

@@ -63,9 +63,6 @@
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
-      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
-        <property id="5115872837157054173" name="value" index="30bXRw" />
-      </concept>
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
       <concept id="806329106163335739" name="org.iets3.core.attributes.structure.AttributeContainer" flags="ng" index="33R2CR">
@@ -99,15 +96,8 @@
         <reference id="1782891495982993306" name="sourcePort" index="2bBTn4" />
         <child id="1782891495982993303" name="sourceInstance" index="2bBTn9" />
       </concept>
-      <concept id="5661183028474304615" name="org.iets3.components.core.structure.ParameterValue" flags="ng" index="ifHuv">
-        <reference id="5661183028474304622" name="param" index="ifHum" />
-        <child id="5661183028474304616" name="value" index="ifHug" />
-      </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
         <child id="229512757699544990" name="type" index="pdmcX" />
-      </concept>
-      <concept id="8209493818901357681" name="org.iets3.components.core.structure.AbstractComponentInstanceBase" flags="ng" index="2sz9Xg">
-        <child id="8209493818904527811" name="parameterValues" index="2sv3zy" />
       </concept>
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
         <child id="8209493818901074929" name="component" index="2sGezg" />
@@ -177,7 +167,7 @@
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
@@ -538,12 +528,6 @@
                       <property role="pfQqC" value="accepts" />
                     </node>
                   </node>
-                </node>
-              </node>
-              <node concept="ifHuv" id="77HYM7HKDEb" role="2sv3zy">
-                <ref role="ifHum" node="77HYM7HCYNt" resolve="testParam" />
-                <node concept="30bXRB" id="77HYM7HKDFr" role="ifHug">
-                  <property role="30bXRw" value="45" />
                 </node>
               </node>
             </node>

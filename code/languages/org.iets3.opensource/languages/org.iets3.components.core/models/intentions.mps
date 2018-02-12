@@ -1064,6 +1064,11 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="3xTZ$YBuC6J" role="3cqZAp">
+          <node concept="3SKdUq" id="3xTZ$YBuC6L" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: determine outer parameters that are used in the inline component and add definition for them" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7sZ012gowv6" role="3cqZAp">
           <node concept="3cpWsn" id="7sZ012gowv7" role="3cpWs9">
             <property role="TrG5h" value="newCompInst" />
@@ -1083,17 +1088,6 @@
                         <node concept="37vLTw" id="7sZ012goLSC" role="36biLW">
                           <ref role="3cqZAo" node="7sZ012goIGS" resolve="chunkComponent" />
                         </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2pIpSj" id="7sZ012goypm" role="2pJxcM">
-                  <ref role="2pIpSl" to="w9y2:77HYM7H$sf3" resolve="parameterValues" />
-                  <node concept="36biLy" id="7sZ012goyrt" role="2pJxcZ">
-                    <node concept="2OqwBi" id="7sZ012goyYm" role="36biLW">
-                      <node concept="2Sf5sV" id="7sZ012goyrY" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="7sZ012gozFU" role="2OqNvi">
-                        <ref role="3TtcxE" to="w9y2:77HYM7H$sf3" resolve="parameterValues" />
                       </node>
                     </node>
                   </node>
