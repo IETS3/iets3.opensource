@@ -2,10 +2,11 @@
 <model ref="r:02d078a1-d0db-43fc-a66a-8505d53851a4(org.iets3.core.base.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -208,6 +209,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="6BCTLIjCrHS">
+    <ref role="1M2myG" to="4kwy:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
   </node>
 </model>
 
