@@ -5433,6 +5433,44 @@
     <node concept="13hLZK" id="1WCh2th1Bou" role="13h7CW">
       <node concept="3clFbS" id="1WCh2th1Bov" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="HCbFcONOWD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canBeUsedInContext" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="soq7:6EQjZsO9evJ" resolve="canBeUsedInContext" />
+      <node concept="3Tm1VV" id="HCbFcONOWE" role="1B3o_S" />
+      <node concept="3clFbS" id="HCbFcONOWM" role="3clF47">
+        <node concept="3cpWs6" id="HCbFcONZe9" role="3cqZAp">
+          <node concept="BsUDl" id="HCbFcONZeb" role="3cqZAk">
+            <ref role="37wK5l" node="1WCh2th1Boz" resolve="canBeUsedUnder" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="HCbFcONOWN" role="3clF45">
+        <node concept="3bZ5Sz" id="HCbFcONOWO" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="HCbFcONOWP" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isUsableInLogicalContext" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="soq7:6EQjZsO9eTV" resolve="isUsableInLogicalContext" />
+      <node concept="3Tm1VV" id="HCbFcONOWQ" role="1B3o_S" />
+      <node concept="3clFbS" id="HCbFcONOX1" role="3clF47">
+        <node concept="3clFbF" id="HCbFcONOX6" role="3cqZAp">
+          <node concept="3clFbT" id="HCbFcONOX5" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="HCbFcONOX2" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="HCbFcONOX3" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="HCbFcONOX4" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="1WCh2th1CjW">
     <property role="3GE5qa" value="attributes.specific" />

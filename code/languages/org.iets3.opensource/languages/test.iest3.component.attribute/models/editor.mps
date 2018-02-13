@@ -22,6 +22,13 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
+      </concept>
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
@@ -84,6 +91,9 @@
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -98,6 +108,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3QX5db_xZzh">
+    <property role="3GE5qa" value="attributes" />
     <ref role="1XX52x" to="xens:3QX5db_xLJM" resolve="TestAttribute" />
     <node concept="1j7BWu" id="48ZWgAGr5tK" role="2wV5jI">
       <node concept="1HlG4h" id="48ZWgAGr5tV" role="1j7ClA">
@@ -155,39 +166,55 @@
     </node>
   </node>
   <node concept="24kQdi" id="3QX5db_E9M7">
+    <property role="3GE5qa" value="categories" />
     <ref role="1XX52x" to="xens:3QX5db_E46y" resolve="TestPortCategoryAccepts" />
     <node concept="PMmxH" id="3QX5db_E9Mc" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="3QX5db_EawJ">
+    <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="xens:3QX5db_E9QV" resolve="TestPortType" />
     <node concept="PMmxH" id="3QX5db_EawO" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="3QX5db_I9R1">
+    <property role="3GE5qa" value="categories" />
     <ref role="1XX52x" to="xens:3QX5db_I5bP" resolve="TestPortCategoryOffers" />
     <node concept="PMmxH" id="3QX5db_I9Rk" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="7LbZKOmHRWE">
+    <property role="3GE5qa" value="kinds" />
     <ref role="1XX52x" to="xens:7LbZKOmHQeu" resolve="TestKindB" />
     <node concept="PMmxH" id="7LbZKOmHRWG" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="3QX5db_HOqv">
+    <property role="3GE5qa" value="kinds" />
     <ref role="1XX52x" to="xens:3QX5db_HNz8" resolve="TestKindA" />
     <node concept="PMmxH" id="3QX5db_HOq$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="7LbZKOmT25A">
+    <property role="3GE5qa" value="kinds" />
     <ref role="1XX52x" to="xens:7LbZKOmT25i" resolve="TestKindC" />
     <node concept="PMmxH" id="7LbZKOmT25F" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3DhaOr$QMZl">
+    <property role="3GE5qa" value="attributes" />
+    <ref role="1XX52x" to="xens:6EQjZsO9hjN" resolve="TestKindBPortAttribute" />
+    <node concept="PMmxH" id="3DhaOr$QMZn" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VechU" id="7FJkYgnWfvG" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
     </node>
   </node>
 </model>
