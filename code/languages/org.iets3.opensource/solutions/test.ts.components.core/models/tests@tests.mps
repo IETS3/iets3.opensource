@@ -48,6 +48,11 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
       <concept id="4886573260948604727" name="org.iets3.core.expr.base.structure.ThisExpression" flags="ng" index="3o4LXa" />
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
@@ -63,6 +68,9 @@
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
       <concept id="806329106163335739" name="org.iets3.core.attributes.structure.AttributeContainer" flags="ng" index="33R2CR">
@@ -96,7 +104,12 @@
         <reference id="1782891495982993306" name="sourcePort" index="2bBTn4" />
         <child id="1782891495982993303" name="sourceInstance" index="2bBTn9" />
       </concept>
+      <concept id="5661183028474304615" name="org.iets3.components.core.structure.ParameterValue" flags="ng" index="ifHuv">
+        <reference id="5661183028474304622" name="param" index="ifHum" />
+        <child id="5661183028474304616" name="value" index="ifHug" />
+      </concept>
       <concept id="229512757699544987" name="org.iets3.components.core.structure.Parameter" flags="ng" index="pdmcS">
+        <child id="229512757699544992" name="defaultValue" index="pdmc3" />
         <child id="229512757699544990" name="type" index="pdmcX" />
       </concept>
       <concept id="8209493818901074928" name="org.iets3.components.core.structure.InlineComponentInstance" flags="ng" index="2sGezh">
@@ -114,6 +127,7 @@
       <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstanceWithRef" flags="ng" index="MGl88">
         <child id="3432899422388046625" name="component" index="MGl3R" />
+        <child id="3432899422388047137" name="parameterValues_old2" index="MGlrR" />
       </concept>
       <concept id="9214207200564444969" name="org.iets3.components.core.structure.InstanceRef" flags="ng" index="VCwY8">
         <reference id="9214207200564444982" name="ref" index="VCwYn" />
@@ -123,6 +137,9 @@
         <reference id="229512757698221332" name="targetPort" index="paF6R" />
         <child id="9214207200564551013" name="targetInstance" index="VC6R4" />
         <child id="9214207200564479649" name="sourceInstance" index="VCno0" />
+      </concept>
+      <concept id="4388710048719034034" name="org.iets3.components.core.structure.ParamRef" flags="ng" index="18Ww8V">
+        <reference id="4388710048719034035" name="param" index="18Ww8U" />
       </concept>
       <concept id="7804632404593436654" name="org.iets3.components.core.structure.ComponentRef" flags="ng" index="1i1fwW">
         <reference id="7804632404593436655" name="ref" index="1i1fwX" />
@@ -143,6 +160,9 @@
       <concept id="7804632404593841020" name="org.iets3.components.core.structure.Port" flags="ng" index="1i7wMI">
         <child id="409503520730247653" name="category" index="1aMMyH" />
         <child id="7804632404594156402" name="type" index="1i6vMw" />
+      </concept>
+      <concept id="6062699114203041744" name="org.iets3.components.core.structure.OuterParamRef" flags="ng" index="1u1GtD">
+        <reference id="687461109518235361" name="param" index="2kcaNt" />
       </concept>
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
@@ -490,11 +510,24 @@
                 <property role="pfQqC" value="accepts" />
               </node>
             </node>
+            <node concept="pdmcS" id="AamzMu0_kN" role="H_jLS">
+              <property role="TrG5h" value="param" />
+              <node concept="mLuIC" id="AamzMu0_kY" role="pdmcX" />
+            </node>
           </node>
         </node>
         <node concept="1i1XBj" id="77HYM7HSeVo" role="1i1AA4">
           <property role="TrG5h" value="parentComponent" />
           <node concept="3o2yKq" id="77HYM7HSeVv" role="1i0K$_" />
+          <node concept="H_j2F" id="5gz2b$a9sF2" role="1i1XAe">
+            <node concept="pdmcS" id="5gz2b$a9sG6" role="H_jLS">
+              <property role="TrG5h" value="parentParam" />
+              <node concept="mLuIC" id="AamzMtZ_90" role="pdmcX" />
+              <node concept="30bXRB" id="AamzMu2NTP" role="pdmc3">
+                <property role="30bXRw" value="11" />
+              </node>
+            </node>
+          </node>
           <node concept="GnABt" id="77HYM7HSeV$" role="1i1XAe">
             <node concept="2sGezh" id="3PhTX5cY6Cy" role="GnABu">
               <node concept="1i1XBj" id="3PhTX5cY6C$" role="2sGezg">
@@ -520,6 +553,14 @@
                   <node concept="pdmcS" id="77HYM7HCYNt" role="H_jLS">
                     <property role="TrG5h" value="testParam" />
                     <node concept="mLuIC" id="77HYM7HShMo" role="pdmcX" />
+                    <node concept="30dDTi" id="AamzMtZ_9j" role="pdmc3">
+                      <node concept="30bXRB" id="AamzMtZ_9v" role="30dEs_">
+                        <property role="30bXRw" value="2" />
+                      </node>
+                      <node concept="1u1GtD" id="AamzMtZ_8N" role="30dEsF">
+                        <ref role="2kcaNt" node="5gz2b$a9sG6" resolve="parentParam" />
+                      </node>
+                    </node>
                   </node>
                   <node concept="1i7wMI" id="3PhTX5cY6BN" role="IJo7D">
                     <node concept="3o5llK" id="3PhTX5cY6BM" role="1aMMyH" />
@@ -534,6 +575,12 @@
             <node concept="1i6xzV" id="3PhTX5cYAtg" role="GnABu">
               <node concept="1i1fwW" id="3PhTX5cYAue" role="MGl3R">
                 <ref role="1i1fwX" node="3PhTX5cYApW" resolve="siblingComponent" />
+              </node>
+              <node concept="ifHuv" id="AamzMu0_lJ" role="MGlrR">
+                <ref role="ifHum" node="AamzMu0_kN" resolve="param" />
+                <node concept="18Ww8V" id="AamzMu0_m0" role="ifHug">
+                  <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
+                </node>
               </node>
             </node>
             <node concept="VCwYV" id="3PhTX5cY9Mn" role="GnABu">

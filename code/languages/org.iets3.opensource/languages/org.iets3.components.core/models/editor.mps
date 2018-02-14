@@ -14078,5 +14078,19 @@
       <ref role="1PE7su" node="3xTZ$YBv7mN" resolve="ComponentInstanceBase_Diagram_Footer" />
     </node>
   </node>
+  <node concept="24kQdi" id="AamzMtMW8o">
+    <property role="3GE5qa" value="components.iface.param" />
+    <ref role="1XX52x" to="w9y2:5gz2b$a9sZg" resolve="OuterParamRef" />
+    <node concept="1iCGBv" id="AamzMtMW8q" role="2wV5jI">
+      <ref role="1NtTu8" to="w9y2:AamzMtIJrx" resolve="param" />
+      <node concept="1sVBvm" id="AamzMtMW8r" role="1sWHZn">
+        <node concept="3F0A7n" id="AamzMtMW8s" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" node="2Df8LH1kXk$" resolve="componentsParameters" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

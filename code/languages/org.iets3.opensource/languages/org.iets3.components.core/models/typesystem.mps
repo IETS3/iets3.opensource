@@ -2550,5 +2550,36 @@
       <ref role="1YaFvo" to="w9y2:2QRlyxOqVpb" resolve="InlineInstanceRefTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="AamzMtMYmq">
+    <property role="TrG5h" value="typeof_OuterParamRef" />
+    <property role="3GE5qa" value="components.iface.param" />
+    <node concept="3clFbS" id="AamzMtMYmr" role="18ibNy">
+      <node concept="1Z5TYs" id="AamzMtMYqf" role="3cqZAp">
+        <node concept="mw_s8" id="AamzMtMYqg" role="1ZfhKB">
+          <node concept="1Z2H0r" id="AamzMtMYqh" role="mwGJk">
+            <node concept="2OqwBi" id="AamzMtMYqi" role="1Z2MuG">
+              <node concept="1YBJjd" id="AamzMtMYxu" role="2Oq$k0">
+                <ref role="1YBMHb" node="AamzMtMYmt" resolve="opr" />
+              </node>
+              <node concept="3TrEf2" id="AamzMtRaxV" role="2OqNvi">
+                <ref role="3Tt5mk" to="w9y2:AamzMtIJrx" resolve="param" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="AamzMtMYql" role="1ZfhK$">
+          <node concept="1Z2H0r" id="AamzMtMYqm" role="mwGJk">
+            <node concept="1YBJjd" id="AamzMtMYu2" role="1Z2MuG">
+              <ref role="1YBMHb" node="AamzMtMYmt" resolve="opr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="AamzMtMYmt" role="1YuTPh">
+      <property role="TrG5h" value="opr" />
+      <ref role="1YaFvo" to="w9y2:5gz2b$a9sZg" resolve="OuterParamRef" />
+    </node>
+  </node>
 </model>
 

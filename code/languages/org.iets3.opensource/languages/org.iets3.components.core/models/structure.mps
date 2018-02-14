@@ -1419,5 +1419,24 @@
       <ref role="20lvS9" node="77HYM7HnhfK" resolve="InlineComponentInstance" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5gz2b$a9sZg">
+    <property role="EcuMT" value="6062699114203041744" />
+    <property role="3GE5qa" value="components.iface.param" />
+    <property role="TrG5h" value="OuterParamRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="AamzMtIJrx" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="687461109518235361" />
+      <ref role="20lvS9" node="cJpacq6wur" resolve="Parameter" />
+    </node>
+    <node concept="PrWs8" id="AamzMtIJ7Z" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
+    </node>
+    <node concept="PrWs8" id="AamzMtIJ80" role="PzmwI">
+      <ref role="PrY4T" to="lmd:4fgA7QrEde7" resolve="IPathPart" />
+    </node>
+  </node>
 </model>
 
