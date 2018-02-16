@@ -84,21 +84,6 @@
         </node>
       </node>
     </node>
-    <node concept="qq9P1" id="AamzMtZ_hd" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="w9y2:5gz2b$a9sZg" resolve="OuterParamRef" />
-      <node concept="3vetai" id="AamzMtZ_hw" role="3vQZUl">
-        <node concept="3EllGN" id="AamzMtZ_BA" role="3vdyny">
-          <node concept="2OqwBi" id="AamzMtZ_NX" role="3ElVtu">
-            <node concept="oxGPV" id="AamzMtZ_CS" role="2Oq$k0" />
-            <node concept="3TrEf2" id="AamzMtZAhs" role="2OqNvi">
-              <ref role="3Tt5mk" to="w9y2:AamzMtIJrx" resolve="param" />
-            </node>
-          </node>
-          <node concept="TvHiN" id="AamzMtZ_hI" role="3ElQJh" />
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
