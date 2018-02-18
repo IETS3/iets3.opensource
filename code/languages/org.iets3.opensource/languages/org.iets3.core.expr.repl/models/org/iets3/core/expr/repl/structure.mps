@@ -213,11 +213,19 @@
       <property role="TrG5h" value="colorBooleans" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5avmkTFfeqZ" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425748559551" />
+      <property role="TrG5h" value="showTypes" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5xEoEMrva$u" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
     <node concept="PrWs8" id="5xEoEMrw1aj" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
+    </node>
+    <node concept="PrWs8" id="5xEoEMrGKQG" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5xEoEMrm2D8">
@@ -253,14 +261,9 @@
     <property role="TrG5h" value="CoordCellRef" />
     <property role="34LRSv" value="$" />
     <ref role="1TJDcQ" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
-    <node concept="1TJgyi" id="5xEoEMrqNzN" role="1TKVEl">
-      <property role="IQ2nx" value="6371013116350380275" />
-      <property role="TrG5h" value="col" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="5xEoEMrqNzQ" role="1TKVEl">
-      <property role="IQ2nx" value="6371013116350380278" />
-      <property role="TrG5h" value="row" />
+    <node concept="1TJgyi" id="5avmkTFcWo6" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425747961350" />
+      <property role="TrG5h" value="cell" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
