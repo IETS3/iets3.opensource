@@ -10,6 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -18,14 +19,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -213,19 +206,14 @@
       <property role="TrG5h" value="NUM_ROWS" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="5xEoEMrtKz8" role="1TKVEl">
-      <property role="IQ2nx" value="6371013116351154376" />
-      <property role="TrG5h" value="mode" />
-      <ref role="AX2Wp" node="5xEoEMrtKyS" resolve="SheetMode" />
-    </node>
     <node concept="1TJgyi" id="5xEoEMrutTn" role="1TKVEl">
       <property role="IQ2nx" value="6371013116351340119" />
-      <property role="TrG5h" value="colorBooleans" />
+      <property role="TrG5h" value="booleansAreChecks" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="5avmkTFfeqZ" role="1TKVEl">
       <property role="IQ2nx" value="5953575425748559551" />
-      <property role="TrG5h" value="showTypes" />
+      <property role="TrG5h" value="showValues" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="5xEoEMrva$u" role="PzmwI">
@@ -284,19 +272,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5xEoEMrsgwi" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="5xEoEMrtKyS">
-    <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="SheetMode" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="5xEoEMrtKyT" role="M5hS2">
-      <property role="1uS6qv" value="formulas" />
-      <property role="1uS6qo" value="formulas" />
-    </node>
-    <node concept="M4N5e" id="5xEoEMrtKz3" role="M5hS2">
-      <property role="1uS6qv" value="values" />
-      <property role="1uS6qo" value="values" />
     </node>
   </node>
   <node concept="1TIwiD" id="5xEoEMrvqJa">
@@ -381,6 +356,30 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="AbstractSheetExpr" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFFvOK">
+    <property role="EcuMT" value="5953575425755970864" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="SheetTestItem" />
+    <property role="34LRSv" value="sheet" />
+    <ref role="1TJDcQ" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyi" id="5avmkTFIjNS" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425756708088" />
+      <property role="TrG5h" value="cols" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5avmkTFIjNU" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425756708090" />
+      <property role="TrG5h" value="rows" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="5avmkTFFvOL" role="1TKVEi">
+      <property role="IQ2ns" value="5953575425755970865" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sheet" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5xEoEMrm0Nb" resolve="Sheet" />
+    </node>
   </node>
 </model>
 

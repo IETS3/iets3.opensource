@@ -48,6 +48,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -91,6 +94,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -159,6 +165,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -851,6 +858,117 @@
     </node>
     <node concept="1SWQZ3" id="5avmkTFialk" role="lGtFl">
       <property role="1SWRpm" value="SHEET" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5avmkTFHHwR">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="toggleValues" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+    <node concept="2S6ZIM" id="5avmkTFHHwS" role="2ZfVej">
+      <node concept="3clFbS" id="5avmkTFHHwT" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFHHDK" role="3cqZAp">
+          <node concept="Xl_RD" id="5avmkTFHHDJ" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Values" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5avmkTFHHwU" role="2ZfgGD">
+      <node concept="3clFbS" id="5avmkTFHHwV" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFHIbN" role="3cqZAp">
+          <node concept="2OqwBi" id="5avmkTFHJep" role="3clFbG">
+            <node concept="2OqwBi" id="5avmkTFHImL" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5avmkTFHIbM" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5avmkTFHIEg" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:5avmkTFfeqZ" resolve="showValues" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="5avmkTFHJzt" role="2OqNvi">
+              <node concept="3fqX7Q" id="5avmkTFHJCb" role="tz02z">
+                <node concept="2OqwBi" id="5avmkTFHJTg" role="3fr31v">
+                  <node concept="2Sf5sV" id="5avmkTFHJFD" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5avmkTFHKfM" role="2OqNvi">
+                    <ref role="3TsBF5" to="wtll:5avmkTFfeqZ" resolve="showValues" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="5avmkTFHHD_" role="lGtFl">
+      <property role="1SWRpm" value="SHEET" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5avmkTFIkAb">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="buildSheet" />
+    <ref role="2ZfgGC" to="wtll:5avmkTFFvOK" resolve="SheetTestItem" />
+    <node concept="2S6ZIM" id="5avmkTFIkAc" role="2ZfVej">
+      <node concept="3clFbS" id="5avmkTFIkAd" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFIkIW" role="3cqZAp">
+          <node concept="Xl_RD" id="5avmkTFIkIV" role="3clFbG">
+            <property role="Xl_RC" value="Build Sheet" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5avmkTFIkAe" role="2ZfgGD">
+      <node concept="3clFbS" id="5avmkTFIkAf" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFIrr3" role="3cqZAp">
+          <node concept="37vLTI" id="5avmkTFIscm" role="3clFbG">
+            <node concept="2OqwBi" id="5avmkTFIsNT" role="37vLTx">
+              <node concept="2Sf5sV" id="5avmkTFIstD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5avmkTFItxS" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:5avmkTFIjNS" resolve="cols" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="5avmkTFIrxN" role="37vLTJ">
+              <ref role="3cqZAo" to="31n1:5avmkTFIivR" resolve="COLS" />
+              <ref role="1PxDUh" to="31n1:5avmkTFIiuQ" resolve="SheetConstructor" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5avmkTFItAz" role="3cqZAp">
+          <node concept="37vLTI" id="5avmkTFItA$" role="3clFbG">
+            <node concept="2OqwBi" id="5avmkTFItA_" role="37vLTx">
+              <node concept="2Sf5sV" id="5avmkTFItAA" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5avmkTFIuvJ" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:5avmkTFIjNU" resolve="rows" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="5avmkTFItHG" role="37vLTJ">
+              <ref role="3cqZAo" to="31n1:5avmkTFIixt" resolve="ROWS" />
+              <ref role="1PxDUh" to="31n1:5avmkTFIiuQ" resolve="SheetConstructor" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5avmkTFJr6p" role="3cqZAp">
+          <node concept="2OqwBi" id="5avmkTFJrrb" role="3clFbG">
+            <node concept="2Sf5sV" id="5avmkTFJr6n" role="2Oq$k0" />
+            <node concept="2qgKlT" id="5avmkTFJs89" role="2OqNvi">
+              <ref role="37wK5l" to="31n1:5avmkTFIjNX" resolve="buildSheet" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5avmkTFIlcz" role="2ZfVeh">
+      <node concept="3clFbS" id="5avmkTFIlc$" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFIljQ" role="3cqZAp">
+          <node concept="2OqwBi" id="5avmkTFIo7u" role="3clFbG">
+            <node concept="2OqwBi" id="5avmkTFIlHz" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5avmkTFIljP" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5avmkTFImpY" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:5avmkTFFvOL" resolve="sheet" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5avmkTFIoWp" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
