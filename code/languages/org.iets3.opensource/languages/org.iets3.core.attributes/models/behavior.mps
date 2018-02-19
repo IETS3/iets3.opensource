@@ -1229,7 +1229,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="nodeToCalculateTypeFrom" />
-      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getContextTypeNode" />
+      <ref role="13i0hy" to="pbu6:4fgA7QrKR89" resolve="getTypedContextNode" />
       <node concept="3Tm1VV" id="GKE0N8Vkzj" role="1B3o_S" />
       <node concept="3clFbS" id="GKE0N8Vkzm" role="3clF47">
         <node concept="3clFbF" id="GKE0N8VkzD" role="3cqZAp">
