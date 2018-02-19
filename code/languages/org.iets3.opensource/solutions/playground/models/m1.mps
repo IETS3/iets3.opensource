@@ -199,6 +199,8 @@
         <child id="6371013116352759304" name="args" index="33Tui$" />
       </concept>
       <concept id="6371013116349123787" name="org.iets3.core.expr.repl.structure.Sheet" flags="ng" index="33cATB">
+        <property id="5953575425754185855" name="NUM_COLS" index="T3p$L" />
+        <property id="5953575425754185860" name="NUM_ROWS" index="T3pBa" />
         <property id="6371013116351340119" name="colorBooleans" index="334VNV" />
         <property id="6371013116351154376" name="mode" index="337mD$" />
         <child id="6371013116349426088" name="cells" index="33dGG4" />
@@ -1538,9 +1540,11 @@
     <node concept="_ixoA" id="3yVmeSjL7oK" role="_iOnB" />
   </node>
   <node concept="33cATB" id="5xEoEMrnWH0">
-    <property role="337mD$" value="formulas" />
+    <property role="337mD$" value="values" />
     <property role="TrG5h" value="Test" />
     <property role="334VNV" value="true" />
+    <property role="T3p$L" value="20" />
+    <property role="T3pBa" value="20" />
     <node concept="33c$z$" id="5xEoEMrnWH1" role="33dGG4" />
     <node concept="33c$z$" id="5xEoEMrnWH2" role="33dGG4" />
     <node concept="33c$z$" id="5xEoEMrnWH3" role="33dGG4" />
@@ -1998,7 +2002,7 @@
     <node concept="33c$z$" id="5xEoEMrnWKY" role="33dGG4" />
     <node concept="33c$z$" id="5xEoEMrnWKZ" role="33dGG4" />
     <node concept="33c$z$" id="5xEoEMrnWL0" role="33dGG4">
-      <node concept="30bXRB" id="5avmkTFnSw_" role="33cOLO">
+      <node concept="30bXRB" id="5avmkTFuYrZ" role="33cOLO">
         <property role="30bXRw" value="1" />
       </node>
     </node>

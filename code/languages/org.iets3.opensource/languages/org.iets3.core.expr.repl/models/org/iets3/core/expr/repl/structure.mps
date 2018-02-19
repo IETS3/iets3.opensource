@@ -203,6 +203,16 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5xEoEMrm2D8" resolve="Cell" />
     </node>
+    <node concept="1TJgyi" id="5avmkTF$G1Z" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425754185855" />
+      <property role="TrG5h" value="NUM_COLS" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5avmkTF$G24" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425754185860" />
+      <property role="TrG5h" value="NUM_ROWS" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyi" id="5xEoEMrtKz8" role="1TKVEl">
       <property role="IQ2nx" value="6371013116351154376" />
       <property role="TrG5h" value="mode" />
