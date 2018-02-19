@@ -279,17 +279,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1016,52 +1008,6 @@
       </node>
     </node>
     <node concept="1YaCAy" id="3NBP8_O4aKs" role="1YuTPh">
-      <property role="TrG5h" value="pv" />
-      <ref role="1YaFvo" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="3NBP8_O5pBd">
-    <property role="TrG5h" value="check_ParameterValue" />
-    <property role="3GE5qa" value="components.substructure" />
-    <node concept="3clFbS" id="3NBP8_O5pBe" role="18ibNy">
-      <node concept="1X3_iC" id="3xMjepApaJA" role="lGtFl">
-        <property role="3V$3am" value="statement" />
-        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-        <node concept="3clFbJ" id="3NBP8_O5pBn" role="8Wnug">
-          <node concept="3clFbS" id="3NBP8_O5pBo" role="3clFbx">
-            <node concept="2MkqsV" id="3NBP8_O5pRC" role="3cqZAp">
-              <node concept="2OqwBi" id="3NBP8_O5qcL" role="2OEOjV">
-                <node concept="1YBJjd" id="3NBP8_O5qaS" role="2Oq$k0">
-                  <ref role="1YBMHb" node="3NBP8_O5pBg" resolve="pv" />
-                </node>
-                <node concept="3TrEf2" id="3NBP8_O5qh0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="w9y2:4UgzZxsF_xC" resolve="value" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="3NBP8_O5pRO" role="2MkJ7o">
-                <property role="Xl_RC" value="value cannot be statically evaluated (not constant)" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="3NBP8_O5pBz" role="3clFbw">
-            <node concept="2OqwBi" id="3NBP8_O5pKq" role="3fr31v">
-              <node concept="2OqwBi" id="3NBP8_O5pDq" role="2Oq$k0">
-                <node concept="1YBJjd" id="3NBP8_O5pBN" role="2Oq$k0">
-                  <ref role="1YBMHb" node="3NBP8_O5pBg" resolve="pv" />
-                </node>
-                <node concept="3TrEf2" id="3NBP8_O5pGi" role="2OqNvi">
-                  <ref role="3Tt5mk" to="w9y2:4UgzZxsF_xC" resolve="value" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="3NBP8_O5pQ8" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3NBP8_O5pBg" role="1YuTPh">
       <property role="TrG5h" value="pv" />
       <ref role="1YaFvo" to="w9y2:4UgzZxsF_xB" resolve="ParameterValue" />
     </node>

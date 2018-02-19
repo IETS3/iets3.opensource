@@ -18,9 +18,9 @@
     <import index="8wxg" ref="r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
-    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1896,10 +1896,10 @@
           <node concept="1Wc70l" id="5hiN5PkjnMA" role="3cqZAk">
             <node concept="2OqwBi" id="5hiN5Pkjox1" role="3uHU7w">
               <node concept="35c_gC" id="5hiN5PkjnWH" role="2Oq$k0">
-                <ref role="35c_gD" to="hm2y:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
+                <ref role="35c_gD" to="4kwy:6BCTLIjCra2" resolve="IControlAdvancedFeatures" />
               </node>
               <node concept="2qgKlT" id="5hiN5PkjoQq" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:5hiN5PkjlUJ" resolve="allowSuppressErrors" />
+                <ref role="37wK5l" to="gdgh:5hiN5PkjlUJ" resolve="allowSuppressErrors" />
                 <node concept="2Sf5sV" id="5hiN5Pkjp4D" role="37wK5m" />
               </node>
             </node>

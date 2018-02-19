@@ -33,6 +33,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -459,13 +460,21 @@
       <node concept="3Tm1VV" id="7QsdZDAwqu4" role="1B3o_S" />
       <node concept="3clFbS" id="7QsdZDAwqu6" role="3clF47">
         <node concept="3clFbF" id="7QsdZDAwrXu" role="3cqZAp">
-          <node concept="2OqwBi" id="7QsdZDAwsjR" role="3clFbG">
-            <node concept="35c_gC" id="7QsdZDAwrXt" role="2Oq$k0">
-              <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+          <node concept="1Wc70l" id="YsVdBS3HWt" role="3clFbG">
+            <node concept="2OqwBi" id="7QsdZDAwsjR" role="3uHU7w">
+              <node concept="35c_gC" id="7QsdZDAwrXt" role="2Oq$k0">
+                <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
+              </node>
+              <node concept="2qgKlT" id="7QsdZDAws_i" role="2OqNvi">
+                <ref role="37wK5l" node="7QsdZDAweeW" resolve="isSolverEnabled" />
+                <node concept="13iPFW" id="7QsdZDAwsE6" role="37wK5m" />
+              </node>
             </node>
-            <node concept="2qgKlT" id="7QsdZDAws_i" role="2OqNvi">
-              <ref role="37wK5l" node="7QsdZDAweeW" resolve="isSolverEnabled" />
-              <node concept="13iPFW" id="7QsdZDAwsE6" role="37wK5m" />
+            <node concept="2OqwBi" id="YsVdBS3Huv" role="3uHU7B">
+              <node concept="13iAh5" id="YsVdBS3Hhj" role="2Oq$k0" />
+              <node concept="2qgKlT" id="YsVdBS3HJU" role="2OqNvi">
+                <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+              </node>
             </node>
           </node>
         </node>
