@@ -8,13 +8,14 @@
   <imports>
     <import index="wtll" ref="r:142b83fd-ec1c-45fe-a1a4-55a13210bd7b(org.iets3.core.expr.repl.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="31n1" ref="r:bd596a19-3b83-4e59-b025-d69b2d8f8fd6(org.iets3.core.expr.repl.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -38,6 +39,7 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -605,25 +607,43 @@
               <node concept="17RlXB" id="5avmkTFi3Pj" role="2OqNvi" />
             </node>
           </node>
-          <node concept="3clFbF" id="5avmkTFdmP8" role="3cqZAp">
-            <node concept="2YIFZM" id="5avmkTFdnnU" role="3clFbG">
-              <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-              <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
-              <node concept="2OqwBi" id="5avmkTFdnnV" role="37wK5m">
-                <node concept="1Wqviy" id="5avmkTFdnnW" role="2Oq$k0" />
-                <node concept="liA8E" id="5avmkTFdnnX" role="2OqNvi">
+          <node concept="3cpWs8" id="5avmkTFkueI" role="3cqZAp">
+            <node concept="3cpWsn" id="5avmkTFkueJ" role="3cpWs9">
+              <property role="TrG5h" value="last" />
+              <node concept="10Pfzv" id="5avmkTFkueA" role="1tU5fm" />
+              <node concept="2OqwBi" id="5avmkTFkueK" role="33vP2m">
+                <node concept="1Wqviy" id="5avmkTFkueL" role="2Oq$k0" />
+                <node concept="liA8E" id="5avmkTFkueM" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
-                  <node concept="3cpWsd" id="5avmkTFi1Lu" role="37wK5m">
-                    <node concept="3cmrfG" id="5avmkTFi1L$" role="3uHU7w">
+                  <node concept="3cpWsd" id="5avmkTFkueN" role="37wK5m">
+                    <node concept="3cmrfG" id="5avmkTFkueO" role="3uHU7w">
                       <property role="3cmrfH" value="1" />
                     </node>
-                    <node concept="2OqwBi" id="5avmkTFdp1Z" role="3uHU7B">
-                      <node concept="1Wqviy" id="5avmkTFdojj" role="2Oq$k0" />
-                      <node concept="liA8E" id="5avmkTFdq7M" role="2OqNvi">
+                    <node concept="2OqwBi" id="5avmkTFkueP" role="3uHU7B">
+                      <node concept="1Wqviy" id="5avmkTFkueQ" role="2Oq$k0" />
+                      <node concept="liA8E" id="5avmkTFkueR" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5avmkTFdmP8" role="3cqZAp">
+            <node concept="22lmx$" id="5avmkTFkvbU" role="3clFbG">
+              <node concept="2YIFZM" id="5avmkTFkvBJ" role="3uHU7w">
+                <ref role="37wK5l" to="wyt6:~Character.isLetter(char):boolean" resolve="isLetter" />
+                <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                <node concept="37vLTw" id="5avmkTFkvPu" role="37wK5m">
+                  <ref role="3cqZAo" node="5avmkTFkueJ" resolve="last" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="5avmkTFdnnU" role="3uHU7B">
+                <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                <node concept="37vLTw" id="5avmkTFkueS" role="37wK5m">
+                  <ref role="3cqZAo" node="5avmkTFkueJ" resolve="last" />
                 </node>
               </node>
             </node>
@@ -715,6 +735,30 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5avmkTFl_xh">
+    <property role="3GE5qa" value="sheet" />
+    <ref role="1M2myG" to="wtll:5avmkTFl_wR" resolve="AbstractSheetExpr" />
+    <node concept="9S07l" id="5avmkTFl_xi" role="9Vyp8">
+      <node concept="3clFbS" id="5avmkTFl_xj" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFl_xq" role="3cqZAp">
+          <node concept="2OqwBi" id="5avmkTFlB0u" role="3clFbG">
+            <node concept="2OqwBi" id="5avmkTFlAaZ" role="2Oq$k0">
+              <node concept="nLn13" id="5avmkTFl_xp" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5avmkTFlAxQ" role="2OqNvi">
+                <node concept="1xMEDy" id="5avmkTFlAxS" role="1xVPHs">
+                  <node concept="chp4Y" id="5avmkTFlAES" role="ri$Ld">
+                    <ref role="cht4Q" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5avmkTFnTUA" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5avmkTFlBJ7" role="2OqNvi" />
           </node>
         </node>
       </node>

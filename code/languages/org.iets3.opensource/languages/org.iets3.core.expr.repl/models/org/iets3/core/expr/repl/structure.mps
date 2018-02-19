@@ -345,5 +345,32 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5avmkTFl_ut">
+    <property role="EcuMT" value="5953575425750226845" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="RangeExpr" />
+    <property role="34LRSv" value="range" />
+    <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
+    <node concept="1TJgyj" id="5avmkTFl_uu" role="1TKVEi">
+      <property role="IQ2ns" value="5953575425750226846" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
+    </node>
+    <node concept="1TJgyj" id="5avmkTFl_uw" role="1TKVEi">
+      <property role="IQ2ns" value="5953575425750226848" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5avmkTFl_wR">
+    <property role="EcuMT" value="5953575425750226999" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="AbstractSheetExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 
