@@ -4802,5 +4802,26 @@
     <node concept="2tJIrI" id="5avmkTFIivB" role="jymVt" />
     <node concept="3Tm1VV" id="5avmkTFIiuR" role="1B3o_S" />
   </node>
+  <node concept="13h7C7" id="5avmkTFRcWx">
+    <property role="3GE5qa" value="sheet.style" />
+    <ref role="13h7C2" to="wtll:5avmkTFQoU0" resolve="BorderCellStyle" />
+    <node concept="13hLZK" id="5avmkTFRcWy" role="13h7CW">
+      <node concept="3clFbS" id="5avmkTFRcWz" role="2VODD2">
+        <node concept="3clFbF" id="5avmkTFRcWI" role="3cqZAp">
+          <node concept="37vLTI" id="5avmkTFRe6J" role="3clFbG">
+            <node concept="3cmrfG" id="5avmkTFRehA" role="37vLTx">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2OqwBi" id="5avmkTFRd4m" role="37vLTJ">
+              <node concept="13iPFW" id="5avmkTFRcWH" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5avmkTFRdfE" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:5avmkTFQoU1" resolve="width" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

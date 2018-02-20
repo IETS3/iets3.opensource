@@ -252,6 +252,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5xEoEMrzSmg" resolve="CellArg" />
     </node>
+    <node concept="1TJgyj" id="5avmkTFQoVb" role="1TKVEi">
+      <property role="IQ2ns" value="5953575425758826187" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="styles" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5avmkTFQoTZ" resolve="CellStyle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5xEoEMrqNzj">
     <property role="EcuMT" value="6371013116350380243" />
@@ -379,6 +386,67 @@
       <property role="20kJfa" value="sheet" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5xEoEMrm0Nb" resolve="Sheet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoTZ">
+    <property role="EcuMT" value="5953575425758826111" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="CellStyle" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoU0">
+    <property role="EcuMT" value="5953575425758826112" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="BorderCellStyle" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5avmkTFQoTZ" resolve="CellStyle" />
+    <node concept="1TJgyi" id="5avmkTFQoU1" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425758826113" />
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoV7">
+    <property role="EcuMT" value="5953575425758826183" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="TopBorderCellStyle" />
+    <property role="34LRSv" value="top border" />
+    <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoV8">
+    <property role="EcuMT" value="5953575425758826184" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="LeftBorderCellStyle" />
+    <property role="34LRSv" value="left border" />
+    <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoV9">
+    <property role="EcuMT" value="5953575425758826185" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="BottomBorderCellStyle" />
+    <property role="34LRSv" value="bottom border" />
+    <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFQoVa">
+    <property role="EcuMT" value="5953575425758826186" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="RightBorderCellStyle" />
+    <property role="34LRSv" value="right border" />
+    <ref role="1TJDcQ" node="5avmkTFQoU0" resolve="BorderCellStyle" />
+  </node>
+  <node concept="1TIwiD" id="5avmkTFTZQz">
+    <property role="EcuMT" value="5953575425759772067" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="LabelExpression" />
+    <property role="34LRSv" value="'" />
+    <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
+    <node concept="1TJgyi" id="5avmkTFTZQ$" role="1TKVEl">
+      <property role="IQ2nx" value="5953575425759772068" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

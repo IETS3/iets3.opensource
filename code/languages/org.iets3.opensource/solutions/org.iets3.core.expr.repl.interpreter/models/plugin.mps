@@ -134,6 +134,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -171,6 +174,18 @@
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.repl.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="5avmkTFUWMz" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="wtll:5avmkTFTZQz" resolve="LabelExpression" />
+      <node concept="3vetai" id="5avmkTFUX5M" role="3vQZUl">
+        <node concept="2OqwBi" id="5avmkTFUXeE" role="3vdyny">
+          <node concept="oxGPV" id="5avmkTFUX60" role="2Oq$k0" />
+          <node concept="3TrcHB" id="5avmkTFUX$1" role="2OqNvi">
+            <ref role="3TsBF5" to="wtll:5avmkTFTZQ$" resolve="text" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="2HpFPvT9VVt" role="qq9xR">
