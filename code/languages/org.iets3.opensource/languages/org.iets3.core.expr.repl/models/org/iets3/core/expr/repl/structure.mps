@@ -259,6 +259,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5avmkTFQoTZ" resolve="CellStyle" />
     </node>
+    <node concept="1TJgyi" id="48DDwlwUXpx" role="1TKVEl">
+      <property role="IQ2nx" value="4767524222579496545" />
+      <property role="TrG5h" value="public" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5xEoEMrqNzj">
     <property role="EcuMT" value="6371013116350380243" />
@@ -447,6 +452,30 @@
       <property role="IQ2nx" value="5953575425759772068" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="48DDwlwTb_l">
+    <property role="EcuMT" value="4767524222579030357" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="SheetEmbedExpr" />
+    <property role="34LRSv" value="sheet" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="48DDwlwTbQF" role="1TKVEi">
+      <property role="IQ2ns" value="4767524222579031467" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sheet" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5xEoEMrm0Nb" resolve="Sheet" />
+    </node>
+    <node concept="1TJgyi" id="48DDwlwTbMi" role="1TKVEl">
+      <property role="IQ2nx" value="4767524222579031186" />
+      <property role="TrG5h" value="cols" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="48DDwlwTbMj" role="1TKVEl">
+      <property role="IQ2nx" value="4767524222579031187" />
+      <property role="TrG5h" value="rows" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
