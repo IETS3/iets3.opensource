@@ -8,7 +8,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.55.678ba7a'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.+'
     }
 }
 
