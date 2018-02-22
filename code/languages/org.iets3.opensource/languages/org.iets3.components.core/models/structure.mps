@@ -347,7 +347,7 @@
       <property role="IQ2ns" value="7804632404594100012" />
       <ref role="20lvS9" node="6LfBX8YiQvI" resolve="ComponentRef" />
       <node concept="asaX9" id="2Y$6Xot5kGG" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstance&quot;" />
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstanceWithRef&quot;" />
       </node>
     </node>
     <node concept="1TJgyj" id="4UgzZxsF_yT" role="1TKVEi">
@@ -357,7 +357,7 @@
       <property role="IQ2ns" value="5661183028474304697" />
       <ref role="20lvS9" node="4UgzZxsF_xB" resolve="ParameterValue" />
       <node concept="asaX9" id="2Y$6Xot5kOz" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstance&quot;" />
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.components.core.structure.AbstractComponentInstanceWithRef&quot;" />
       </node>
     </node>
     <node concept="PrWs8" id="siw10FiR6l" role="PzmwI">
