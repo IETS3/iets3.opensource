@@ -130,12 +130,6 @@
         <property role="TrG5h" value="org.iets3.opensource.build" />
         <property role="3LESm3" value="31dfb853-8304-435d-b27c-e29ef9a627cf" />
         <property role="2GAjPV" value="false" />
-        <node concept="1SiIV0" id="3cO$6RPVqKk" role="3bR37C">
-          <node concept="3bR9La" id="3cO$6RPVqKl" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:2Xjt3l5bx_L" resolve="de.slisson.mps.all.build" />
-          </node>
-        </node>
         <node concept="398BVA" id="1fXtMa7ql1H" role="3LF7KH">
           <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
           <node concept="2Ry0Ak" id="1fXtMa7ql1I" role="iGT6I">
@@ -156,6 +150,7 @@
         </node>
         <node concept="1SiIV0" id="3cO$6RPVqKo" role="3bR37C">
           <node concept="3bR9La" id="cnGxmGJtdo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
@@ -173,6 +168,12 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3xDOg5CcSG0" role="3bR37C">
+          <node concept="3bR9La" id="3xDOg5CcSG1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
           </node>
         </node>
       </node>
