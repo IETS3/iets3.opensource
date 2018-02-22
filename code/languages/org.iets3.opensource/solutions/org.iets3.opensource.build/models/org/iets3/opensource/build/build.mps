@@ -2717,12 +2717,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5zG5$LyelHB" role="3bR37C">
-          <node concept="3bR9La" id="5zG5$LyelHC" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="5wLtKNeT3hC" role="1TViLv">
           <property role="TrG5h" value="org.iets3.core.base#5115872837156535746" />
           <property role="3LESm3" value="55368225-4c6e-4429-b052-172bf3e4e9d0" />
@@ -2737,6 +2731,12 @@
         <node concept="1SiIV0" id="5kwEgmAePty" role="3bR37C">
           <node concept="1Busua" id="5kwEgmAePtz" role="1SiIV1">
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6LJ5wQxCDvl" role="3bR37C">
+          <node concept="3bR9La" id="6LJ5wQxCDvm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
@@ -3556,6 +3556,12 @@
             <ref role="1Busuk" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3U8IgyX8dSA" role="3bR37C">
+          <node concept="3bR9La" id="3U8IgyX8dSB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396eX" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4028,12 +4034,6 @@
           <node concept="3bR9La" id="7C6tnXfWyjP" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2lpWLjc_SRZ" role="3bR37C">
-          <node concept="3bR9La" id="2lpWLjc_SS0" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
           </node>
         </node>
       </node>
