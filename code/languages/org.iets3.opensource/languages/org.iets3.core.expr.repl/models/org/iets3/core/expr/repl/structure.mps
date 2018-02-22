@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" implicit="true" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -216,6 +217,11 @@
       <property role="TrG5h" value="showValues" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="7HzLUeHpznV" role="1TKVEl">
+      <property role="IQ2nx" value="8891169595162244603" />
+      <property role="TrG5h" value="templateMode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5xEoEMrva$u" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
@@ -231,6 +237,12 @@
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="Cell" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_Nra3DTfmI" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920858281390" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraint" />
+      <ref role="20lvS9" node="3_Nra3DTaSZ" resolve="CellConstraint" />
+    </node>
     <node concept="1TJgyj" id="5xEoEMrmiVo" role="1TKVEi">
       <property role="IQ2ns" value="6371013116349198040" />
       <property role="20lmBu" value="aggregation" />
@@ -261,7 +273,12 @@
     </node>
     <node concept="1TJgyi" id="48DDwlwUXpx" role="1TKVEl">
       <property role="IQ2nx" value="4767524222579496545" />
-      <property role="TrG5h" value="public" />
+      <property role="TrG5h" value="result" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3_Nra3DQkej" role="1TKVEl">
+      <property role="IQ2nx" value="4139771920857514899" />
+      <property role="TrG5h" value="locked" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -460,6 +477,13 @@
     <property role="TrG5h" value="SheetEmbedExpr" />
     <property role="34LRSv" value="sheet" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3_Nra3E6OTO" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920861843060" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="template" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3_Nra3E2xlO" resolve="SheetTemplate" />
+    </node>
     <node concept="1TJgyj" id="48DDwlwTbQF" role="1TKVEi">
       <property role="IQ2ns" value="4767524222579031467" />
       <property role="20lmBu" value="aggregation" />
@@ -477,6 +501,79 @@
       <property role="TrG5h" value="rows" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3_Nra3DTaSZ">
+    <property role="EcuMT" value="4139771920858263103" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="CellConstraint" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_Nra3DTaT0" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920858263104" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="3_Nra3DTaT2" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920858263106" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraint" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_Nra3DTcu6">
+    <property role="EcuMT" value="4139771920858269574" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="CellConstraintIt" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3_Nra3E2xkf">
+    <property role="EcuMT" value="4139771920860714255" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="SheetType" />
+    <property role="34LRSv" value="sheet" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="3_Nra3E2xkj" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920860714259" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="template" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3_Nra3E2xlO" resolve="SheetTemplate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_Nra3E2xlO">
+    <property role="EcuMT" value="4139771920860714356" />
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="SheetTemplate" />
+    <property role="34LRSv" value="sheet template" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_Nra3E2xlU" role="1TKVEi">
+      <property role="IQ2ns" value="4139771920860714362" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sheet" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="48DDwlwTb_l" resolve="SheetEmbedExpr" />
+    </node>
+    <node concept="PrWs8" id="3_Nra3E2xlS" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_Nra3E8QdD">
+    <property role="EcuMT" value="4139771920862372713" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="FontStyle" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5avmkTFQoTZ" resolve="CellStyle" />
+  </node>
+  <node concept="1TIwiD" id="3_Nra3E8QdH">
+    <property role="EcuMT" value="4139771920862372717" />
+    <property role="3GE5qa" value="sheet.style" />
+    <property role="TrG5h" value="FontBoldStyle" />
+    <property role="34LRSv" value="font-bold" />
+    <ref role="1TJDcQ" node="3_Nra3E8QdD" resolve="FontStyle" />
   </node>
 </model>
 

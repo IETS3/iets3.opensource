@@ -944,6 +944,7 @@
   <node concept="2S6QgY" id="5xEoEMr$2Q1">
     <property role="3GE5qa" value="sheet" />
     <property role="TrG5h" value="addArg" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="5xEoEMr$2Q2" role="2ZfVej">
       <node concept="3clFbS" id="5xEoEMr$2Q3" role="2VODD2">
@@ -1382,14 +1383,14 @@
   </node>
   <node concept="2S6QgY" id="48DDwlwUXpW">
     <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="toggleExport" />
+    <property role="TrG5h" value="toggleResult" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
     <node concept="2S6ZIM" id="48DDwlwUXpX" role="2ZfVej">
       <node concept="3clFbS" id="48DDwlwUXpY" role="2VODD2">
         <node concept="3clFbF" id="48DDwlwUXz2" role="3cqZAp">
           <node concept="Xl_RD" id="48DDwlwUXz1" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Export" />
+            <property role="Xl_RC" value="Toggle Result" />
           </node>
         </node>
       </node>
@@ -1402,14 +1403,14 @@
               <node concept="2OqwBi" id="48DDwlwUYU8" role="3fr31v">
                 <node concept="2Sf5sV" id="48DDwlwUYLb" role="2Oq$k0" />
                 <node concept="3TrcHB" id="48DDwlwUZiJ" role="2OqNvi">
-                  <ref role="3TsBF5" to="wtll:48DDwlwUXpx" resolve="public" />
+                  <ref role="3TsBF5" to="wtll:48DDwlwUXpx" resolve="result" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="48DDwlwUXVa" role="37vLTJ">
               <node concept="2Sf5sV" id="48DDwlwUXO7" role="2Oq$k0" />
               <node concept="3TrcHB" id="48DDwlwUYeo" role="2OqNvi">
-                <ref role="3TsBF5" to="wtll:48DDwlwUXpx" resolve="public" />
+                <ref role="3TsBF5" to="wtll:48DDwlwUXpx" resolve="result" />
               </node>
             </node>
           </node>
@@ -2197,6 +2198,130 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="48DDwlwYNVq" role="lGtFl">
+      <property role="1SWRpm" value="SHEET" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3_Nra3DQ$is">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="toggleLocked" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+    <node concept="2S6ZIM" id="3_Nra3DQ$it" role="2ZfVej">
+      <node concept="3clFbS" id="3_Nra3DQ$iu" role="2VODD2">
+        <node concept="3clFbF" id="3_Nra3DQ$ub" role="3cqZAp">
+          <node concept="Xl_RD" id="3_Nra3DQ$ua" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Lock" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3_Nra3DQ$iv" role="2ZfgGD">
+      <node concept="3clFbS" id="3_Nra3DQ$iw" role="2VODD2">
+        <node concept="3clFbF" id="3_Nra3DQ$Jh" role="3cqZAp">
+          <node concept="37vLTI" id="3_Nra3DQAeP" role="3clFbG">
+            <node concept="3fqX7Q" id="3_Nra3DQAfa" role="37vLTx">
+              <node concept="2OqwBi" id="3_Nra3DQAu7" role="3fr31v">
+                <node concept="2Sf5sV" id="3_Nra3DQAlb" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3_Nra3DQAE4" role="2OqNvi">
+                  <ref role="3TsBF5" to="wtll:3_Nra3DQkej" resolve="locked" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3_Nra3DQ$Qj" role="37vLTJ">
+              <node concept="2Sf5sV" id="3_Nra3DQ$Jg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3_Nra3DQ_0h" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:3_Nra3DQkej" resolve="locked" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="3_Nra3DRE_u" role="lGtFl">
+      <property role="1SWRpm" value="SHEET" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3_Nra3DThuF">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="addConstraint" />
+    <ref role="2ZfgGC" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+    <node concept="2S6ZIM" id="3_Nra3DThuG" role="2ZfVej">
+      <node concept="3clFbS" id="3_Nra3DThuH" role="2VODD2">
+        <node concept="3clFbF" id="3_Nra3DThBz" role="3cqZAp">
+          <node concept="Xl_RD" id="3_Nra3DThBy" role="3clFbG">
+            <property role="Xl_RC" value="Add Constraint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3_Nra3DThuI" role="2ZfgGD">
+      <node concept="3clFbS" id="3_Nra3DThuJ" role="2VODD2">
+        <node concept="3clFbF" id="3_Nra3DTji1" role="3cqZAp">
+          <node concept="2OqwBi" id="3_Nra3DTjNs" role="3clFbG">
+            <node concept="2OqwBi" id="3_Nra3DTjp3" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3_Nra3DTji0" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3_Nra3DTjz1" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:3_Nra3DTfmI" resolve="constraint" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="3_Nra3DTk0K" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="3_Nra3DThWS" role="2ZfVeh">
+      <node concept="3clFbS" id="3_Nra3DThWT" role="2VODD2">
+        <node concept="3clFbF" id="3_Nra3DTi4b" role="3cqZAp">
+          <node concept="3clFbC" id="3_Nra3DTiWa" role="3clFbG">
+            <node concept="10Nm6u" id="3_Nra3DTj8K" role="3uHU7w" />
+            <node concept="2OqwBi" id="3_Nra3DTigo" role="3uHU7B">
+              <node concept="2Sf5sV" id="3_Nra3DTi4a" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3_Nra3DTixc" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:3_Nra3DTfmI" resolve="constraint" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7HzLUeHqf$h">
+    <property role="3GE5qa" value="sheet" />
+    <property role="TrG5h" value="showTemplateMode" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+    <node concept="2S6ZIM" id="7HzLUeHqf$i" role="2ZfVej">
+      <node concept="3clFbS" id="7HzLUeHqf$j" role="2VODD2">
+        <node concept="3clFbF" id="7HzLUeHqfHa" role="3cqZAp">
+          <node concept="Xl_RD" id="7HzLUeHqfH9" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Template Mode" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7HzLUeHqf$k" role="2ZfgGD">
+      <node concept="3clFbS" id="7HzLUeHqf$l" role="2VODD2">
+        <node concept="3clFbF" id="7HzLUeHqhdB" role="3cqZAp">
+          <node concept="37vLTI" id="7HzLUeHqij3" role="3clFbG">
+            <node concept="3fqX7Q" id="7HzLUeHqijo" role="37vLTx">
+              <node concept="2OqwBi" id="7HzLUeHqiEa" role="3fr31v">
+                <node concept="2Sf5sV" id="7HzLUeHqiqc" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7HzLUeHqjmK" role="2OqNvi">
+                  <ref role="3TsBF5" to="wtll:7HzLUeHpznV" resolve="templateMode" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7HzLUeHqho_" role="37vLTJ">
+              <node concept="2Sf5sV" id="7HzLUeHqhdA" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7HzLUeHqhG7" role="2OqNvi">
+                <ref role="3TsBF5" to="wtll:7HzLUeHpznV" resolve="templateMode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7HzLUeHrC6Y" role="lGtFl">
       <property role="1SWRpm" value="SHEET" />
     </node>
   </node>
