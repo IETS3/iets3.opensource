@@ -11,6 +11,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -148,10 +149,6 @@
     <node concept="PrWs8" id="6GySMNlc7T3" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="aPhVmWYjmk">
-    <property role="EcuMT" value="195141004745586068" />
-    <property role="TrG5h" value="ICanBeLValue" />
   </node>
   <node concept="1TIwiD" id="aPhVmWYxIJ">
     <property role="EcuMT" value="195141004745644975" />
@@ -518,6 +515,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IV0h47dgR_" role="PzmwI">
       <ref role="PrY4T" node="4IV0h47deUA" resolve="IInterceptor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1MjwAV6z_lJ">
+    <property role="EcuMT" value="2059132866927678831" />
+    <property role="TrG5h" value="MutableMetaFunction" />
+    <property role="3GE5qa" value="function" />
+    <ref role="1TJDcQ" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+    <node concept="PrWs8" id="1MjwAV6z_lK" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
     </node>
   </node>
 </model>

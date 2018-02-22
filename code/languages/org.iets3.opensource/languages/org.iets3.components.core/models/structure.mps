@@ -1366,5 +1366,49 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4kCIAUZDmGW">
+    <property role="EcuMT" value="4983437972509911868" />
+    <property role="TrG5h" value="PortWithConfiguration" />
+    <property role="34LRSv" value="with" />
+    <property role="3GE5qa" value="components" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4kCIAUZDmHG" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8YlAdL" resolve="IPortType" />
+    </node>
+    <node concept="1TJgyj" id="4kCIAUZDmHT" role="1TKVEi">
+      <property role="IQ2ns" value="4983437972509911929" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wrapped" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6LfBX8YlAdL" resolve="IPortType" />
+    </node>
+    <node concept="1TJgyj" id="4kCIAUZDpkP" role="1TKVEi">
+      <property role="IQ2ns" value="4983437972509922613" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6P1C6lFyRUR">
+    <property role="EcuMT" value="7872749981076782775" />
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="ConfiguredPortType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="6P1C6lFyRUS" role="1TKVEi">
+      <property role="IQ2ns" value="7872749981076782776" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="portType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="6P1C6lFyRUU" role="1TKVEi">
+      <property role="IQ2ns" value="7872749981076782778" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="configurationType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
 </model>
 

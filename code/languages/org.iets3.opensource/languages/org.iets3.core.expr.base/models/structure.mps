@@ -2,9 +2,9 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -30,7 +30,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -373,14 +375,14 @@
       <property role="IQ2ns" value="9002563722476995147" />
       <ref role="20lvS9" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
-    <node concept="PrWs8" id="426GYJ1ze7Y" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="6KxoTHgUYYJ" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="PrWs8" id="2CFPPn7nISU" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="5IrXfgcUg9w" role="PzmwI">
+      <ref role="PrY4T" node="aPhVmWYjmk" resolve="ICanBeLValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
@@ -1536,13 +1538,16 @@
   </node>
   <node concept="PlHQZ" id="6BCTLIjCra2">
     <property role="EcuMT" value="7631603674206286466" />
-    <property role="TrG5h" value="IControlAdvancedFeatures" />
+    <property role="TrG5h" value="IControlAdvancedFeatures_old" />
     <node concept="2aEySx" id="3WRc5uujLwE" role="lGtFl">
       <node concept="19SGf9" id="3WRc5uujLwF" role="2aEySw">
         <node concept="19SUe$" id="3WRc5uujLwG" role="19SJt6">
           <property role="19SUeA" value="Only works for root nodes." />
         </node>
       </node>
+    </node>
+    <node concept="asaX9" id="2gD$V1Yh9A_" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.base&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="ORfz$DS6_k">
@@ -1679,11 +1684,6 @@
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
   </node>
-  <node concept="PlHQZ" id="11MkwAJtgfD">
-    <property role="EcuMT" value="1185099853503726569" />
-    <property role="3GE5qa" value="contract" />
-    <property role="TrG5h" value="IAssertConstraints" />
-  </node>
   <node concept="PlHQZ" id="3QFQUsNJoM0">
     <property role="EcuMT" value="4443886968505207936" />
     <property role="3GE5qa" value="contract" />
@@ -1698,6 +1698,15 @@
     <node concept="PrWs8" id="5fy$GmTPJXr" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="11MkwAJtgfD">
+    <property role="EcuMT" value="1185099853503726569" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IAssertConstraints" />
+  </node>
+  <node concept="PlHQZ" id="aPhVmWYjmk">
+    <property role="EcuMT" value="195141004745586068" />
+    <property role="TrG5h" value="ICanBeLValue" />
   </node>
 </model>
 
