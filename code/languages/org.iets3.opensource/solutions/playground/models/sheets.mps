@@ -200,6 +200,9 @@
       <concept id="4139771920860714356" name="org.iets3.core.expr.repl.structure.SheetTemplate" flags="ng" index="3junBk">
         <child id="4139771920860714362" name="sheet" index="3junBq" />
       </concept>
+      <concept id="8891169595166788142" name="org.iets3.core.expr.repl.structure.QuoteExpr" flags="ng" index="3mM4Qd">
+        <child id="8891169595166788143" name="cell" index="3mM4Qc" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1531,42 +1534,33 @@
             </node>
           </node>
           <node concept="33c$z$" id="5avmkTFKxhf" role="33dGG4">
-            <node concept="30cPrO" id="5avmkTFKUIP" role="33cOLO">
-              <node concept="330lDZ" id="5avmkTFKUIQ" role="30dEs_">
+            <node concept="30cPrO" id="7HzLUeHF$PC" role="33cOLO">
+              <node concept="330lDZ" id="7HzLUeHF$W9" role="30dEs_">
                 <property role="TF9X8" value="ll" />
               </node>
-              <node concept="330lDZ" id="5avmkTFKUIR" role="30dEsF">
+              <node concept="330lDZ" id="7HzLUeHF$Dp" role="30dEsF">
                 <property role="TF9X8" value="l" />
               </node>
             </node>
           </node>
           <node concept="33c$z$" id="5avmkTFKxhg" role="33dGG4">
-            <node concept="30cPrO" id="5avmkTFKUPA" role="33cOLO">
-              <node concept="330lDZ" id="5avmkTFKUPB" role="30dEs_">
-                <property role="TF9X8" value="ll" />
-              </node>
-              <node concept="330lDZ" id="5avmkTFKUPC" role="30dEsF">
-                <property role="TF9X8" value="l" />
+            <node concept="3mM4Qd" id="7HzLUeHFz05" role="33cOLO">
+              <node concept="330lDZ" id="7HzLUeHFz06" role="3mM4Qc">
+                <property role="TF9X8" value="u" />
               </node>
             </node>
           </node>
           <node concept="33c$z$" id="5avmkTFKxhh" role="33dGG4">
-            <node concept="30cPrO" id="5avmkTFKUXi" role="33cOLO">
-              <node concept="330lDZ" id="5avmkTFKUXj" role="30dEs_">
-                <property role="TF9X8" value="ll" />
-              </node>
-              <node concept="330lDZ" id="5avmkTFKUXk" role="30dEsF">
-                <property role="TF9X8" value="l" />
+            <node concept="3mM4Qd" id="7HzLUeHFzcY" role="33cOLO">
+              <node concept="330lDZ" id="7HzLUeHFzcZ" role="3mM4Qc">
+                <property role="TF9X8" value="u" />
               </node>
             </node>
           </node>
           <node concept="33c$z$" id="5avmkTFKxhi" role="33dGG4">
-            <node concept="30cPrO" id="5avmkTFKV5V" role="33cOLO">
-              <node concept="330lDZ" id="5avmkTFKV5W" role="30dEs_">
-                <property role="TF9X8" value="ll" />
-              </node>
-              <node concept="330lDZ" id="5avmkTFKV5X" role="30dEsF">
-                <property role="TF9X8" value="l" />
+            <node concept="3mM4Qd" id="7HzLUeHFzrp" role="33cOLO">
+              <node concept="330lDZ" id="7HzLUeHFzrq" role="3mM4Qc">
+                <property role="TF9X8" value="u" />
               </node>
             </node>
           </node>
@@ -2269,16 +2263,7 @@
               </node>
             </node>
           </node>
-          <node concept="33c$z$" id="5avmkTFV7NE" role="33dGG4">
-            <node concept="30dDZf" id="48DDwlx2SvZ" role="33cOLO">
-              <node concept="330lDZ" id="48DDwlx2TfQ" role="30dEs_">
-                <property role="TF9X8" value="ll" />
-              </node>
-              <node concept="30bXRB" id="48DDwlx2RK8" role="30dEsF">
-                <property role="30bXRw" value="12" />
-              </node>
-            </node>
-          </node>
+          <node concept="33c$z$" id="5avmkTFV7NE" role="33dGG4" />
           <node concept="33c$z$" id="5avmkTFV7NF" role="33dGG4">
             <node concept="TuajH" id="48DDwlwSrU1" role="33cOLO">
               <property role="TuajE" value="Tests for Basic Structure" />
