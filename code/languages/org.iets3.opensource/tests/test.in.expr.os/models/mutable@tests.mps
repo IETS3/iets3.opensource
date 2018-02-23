@@ -14540,7 +14540,6 @@
                 </node>
               </node>
               <node concept="39w5ZF" id="4IV0h47E8L6" role="1aduh9">
-                <node concept="pf3Wd" id="5L_xiGQ8vra" role="pf3W8" />
                 <node concept="1QScDb" id="4IV0h47E8L7" role="39w5ZE">
                   <node concept="GRK4H" id="4IV0h47E8L8" role="1QScD9">
                     <property role="2EMntM" value="decisionTaken" />
