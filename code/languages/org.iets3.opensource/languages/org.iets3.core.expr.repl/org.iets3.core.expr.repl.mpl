@@ -111,12 +111,10 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">b33d119e-196d-4497-977c-5c167b21fe33(com.mbeddr.mpsutil.framecell)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">18001c94-33a7-4f68-a7c1-ffddc4b39be1(org.iets3.core.expr.repl)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">7e450f4e-1ac3-41ef-a851-4598161bdb94(de.slisson.mps.tables)</dependency>
     <dependency reexport="false">da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)</dependency>
     <dependency reexport="false">2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)</dependency>
-    <dependency reexport="false">d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />

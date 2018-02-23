@@ -391,7 +391,10 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -4594,12 +4597,30 @@
     </node>
   </node>
   <node concept="24kQdi" id="5xEoEMrqNzH">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <ref role="1XX52x" to="wtll:5xEoEMrqNzj" resolve="CoordCellRef" />
     <node concept="3EZMnI" id="5xEoEMrFDD9" role="2wV5jI">
       <node concept="2iRfu4" id="5xEoEMrFDDa" role="2iSdaV" />
       <node concept="3F0ifn" id="5xEoEMrqNzJ" role="3EZMnx">
         <property role="3F0ifm" value="$" />
+        <node concept="11L4FC" id="3pIANU$W0tA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="3pIANU$W0_L" role="3n$kyP">
+            <node concept="3clFbS" id="3pIANU$W0_M" role="2VODD2">
+              <node concept="3clFbF" id="3pIANU$W0GW" role="3cqZAp">
+                <node concept="3y3z36" id="3pIANU$W1Tq" role="3clFbG">
+                  <node concept="10Nm6u" id="3pIANU$W23e" role="3uHU7w" />
+                  <node concept="2OqwBi" id="3pIANU$W0Wh" role="3uHU7B">
+                    <node concept="pncrf" id="3pIANU$W0GV" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3pIANU$W1lx" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wtll:3pIANU$T$6B" resolve="finder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="11LMrY" id="5xEoEMrqN$M" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -4614,6 +4635,38 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="3pIANU$TNte" role="3EZMnx">
+        <node concept="ZYGn8" id="3pIANU$TNRQ" role="ZWbT9">
+          <node concept="3clFbS" id="3pIANU$TNRR" role="2VODD2">
+            <node concept="3clFbF" id="3pIANU$TNSD" role="3cqZAp">
+              <node concept="Xl_RD" id="3pIANU$TNSC" role="3clFbG">
+                <property role="Xl_RC" value="/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="3pIANU$VZUl" role="_tjki">
+          <node concept="2iRfu4" id="3pIANU$VZUo" role="2iSdaV" />
+          <node concept="VPM3Z" id="3pIANU$VZUp" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="11LMrY" id="3pIANU$XU6e" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F1sOY" id="3pIANU$W2xO" role="3EZMnx">
+            <ref role="1NtTu8" to="wtll:3pIANU$T$6B" resolve="finder" />
+          </node>
+          <node concept="3F0ifn" id="3pIANU$Xfrp" role="3EZMnx">
+            <property role="3F0ifm" value="/" />
+            <node concept="11L4FC" id="3pIANU$Xfrv" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="3pIANU$Xfr$" role="3F10Kt">
+              <property role="VOm3f" value="true" />
             </node>
           </node>
         </node>
@@ -4721,7 +4774,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5xEoEMrvqJB">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <ref role="1XX52x" to="wtll:5xEoEMrvqJa" resolve="NamedCellRef" />
     <node concept="3EZMnI" id="5xEoEMrFs8t" role="2wV5jI">
       <node concept="Veino" id="5avmkTFCpPa" role="3F10Kt">
@@ -4843,7 +4896,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="5xEoEMrFs7i">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <property role="TrG5h" value="argList" />
     <ref role="1XX52x" to="wtll:5xEoEMrDSEO" resolve="AbstractCellRef" />
     <node concept="3EZMnI" id="5xEoEMrFs7n" role="2wV5jI">
@@ -5179,25 +5232,29 @@
   </node>
   <node concept="24kQdi" id="3_Nra3E2xml">
     <property role="3GE5qa" value="sheet" />
-    <ref role="1XX52x" to="wtll:3_Nra3E2xlO" resolve="SheetTemplate" />
-    <node concept="3EZMnI" id="3_Nra3E2xmt" role="2wV5jI">
-      <node concept="2iRfu4" id="3_Nra3E2xmu" role="2iSdaV" />
-      <node concept="3F0ifn" id="3_Nra3E2xmq" role="3EZMnx">
-        <property role="3F0ifm" value="sheet" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    <ref role="1XX52x" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
+    <node concept="3EZMnI" id="3pIANU_69r7" role="2wV5jI">
+      <node concept="2iRkQZ" id="3pIANU_69r8" role="2iSdaV" />
+      <node concept="3EZMnI" id="3_Nra3E2xmt" role="3EZMnx">
+        <node concept="2iRfu4" id="3_Nra3E2xmu" role="2iSdaV" />
+        <node concept="1kHk_G" id="3pIANU_03oi" role="3EZMnx">
+          <ref role="1NtTu8" to="wtll:3pIANU_03o9" resolve="template" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0ifn" id="3_Nra3E2xmq" role="3EZMnx">
+          <property role="3F0ifm" value="sheet" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0A7n" id="3_Nra3E4_WQ" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
-      <node concept="3F0ifn" id="3_Nra3E2xmA" role="3EZMnx">
-        <property role="3F0ifm" value="template" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-      </node>
-      <node concept="3F0A7n" id="3_Nra3E4_WQ" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="3_Nra3E4_X2" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="3_Nra3E2xmI" role="3EZMnx">
-        <ref role="1NtTu8" to="wtll:3_Nra3E2xlU" resolve="sheet" />
+      <node concept="3EZMnI" id="3pIANU_69rw" role="3EZMnx">
+        <node concept="2iRfu4" id="3pIANU_69rx" role="2iSdaV" />
+        <node concept="3XFhqQ" id="3pIANU_69rM" role="3EZMnx" />
+        <node concept="3F1sOY" id="3_Nra3E2xmI" role="3EZMnx">
+          <ref role="1NtTu8" to="wtll:3_Nra3E2xlU" resolve="sheet" />
+        </node>
       </node>
     </node>
   </node>
@@ -5232,6 +5289,29 @@
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="7HzLUeHESGZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3pIANU$T$6y">
+    <property role="3GE5qa" value="sheet.finders" />
+    <ref role="1XX52x" to="wtll:3pIANU$T$68" resolve="UpwardsSheetFinder" />
+    <node concept="3F0ifn" id="3pIANU$T$6$" role="2wV5jI">
+      <property role="3F0ifm" value=".." />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3pIANU_3n5R">
+    <property role="3GE5qa" value="sheet.finders" />
+    <ref role="1XX52x" to="wtll:3pIANU_3n4Z" resolve="NamedSheetFinder" />
+    <node concept="1iCGBv" id="3pIANU_3n5W" role="2wV5jI">
+      <ref role="1NtTu8" to="wtll:3pIANU_3n5s" resolve="sheet" />
+      <node concept="1sVBvm" id="3pIANU_3n5Y" role="1sWHZn">
+        <node concept="3F0A7n" id="3pIANU_3n65" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="3pIANU_74XL" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
+          </node>
         </node>
       </node>
     </node>

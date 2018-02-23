@@ -28,7 +28,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -319,6 +318,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2507,7 +2509,7 @@
               <node concept="2Xjw5R" id="3_Nra3E50PE" role="2OqNvi">
                 <node concept="1xMEDy" id="3_Nra3E50PG" role="1xVPHs">
                   <node concept="chp4Y" id="3_Nra3E50S4" role="ri$Ld">
-                    <ref role="cht4Q" to="wtll:3_Nra3E2xlO" resolve="SheetTemplate" />
+                    <ref role="cht4Q" to="wtll:3_Nra3E2xlO" resolve="TopLevelSheet" />
                   </node>
                 </node>
               </node>
@@ -3240,7 +3242,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5xEoEMrqN_s">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <ref role="13h7C2" to="wtll:5xEoEMrqNzj" resolve="CoordCellRef" />
     <node concept="13hLZK" id="5xEoEMrqN_t" role="13h7CW">
       <node concept="3clFbS" id="5xEoEMrqN_u" role="2VODD2" />
@@ -3259,7 +3261,9 @@
               <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
             </node>
             <node concept="2OqwBi" id="5avmkTFiU2Q" role="33vP2m">
-              <node concept="13iPFW" id="5avmkTFiU2R" role="2Oq$k0" />
+              <node concept="37vLTw" id="3pIANU$YYXc" role="2Oq$k0">
+                <ref role="3cqZAo" node="3pIANU$YVwY" resolve="contextCell" />
+              </node>
               <node concept="2Xjw5R" id="5avmkTFiU2S" role="2OqNvi">
                 <node concept="1xMEDy" id="5avmkTFiU2T" role="1xVPHs">
                   <node concept="chp4Y" id="5avmkTFiU2U" role="ri$Ld">
@@ -3285,34 +3289,8 @@
               </node>
               <node concept="liA8E" id="5avmkTFj9is" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
-                <node concept="2OqwBi" id="5avmkTFj9iv" role="37wK5m">
-                  <node concept="13iPFW" id="5avmkTFj9iw" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="5avmkTFkBMy" role="2OqNvi">
-                    <node concept="1xMEDy" id="5avmkTFkBM$" role="1xVPHs">
-                      <node concept="chp4Y" id="5avmkTFkCWM" role="ri$Ld">
-                        <ref role="cht4Q" to="wtll:5xEoEMrm2D8" resolve="Cell" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7HzLUeHA8WI" role="3cqZAp">
-          <node concept="2OqwBi" id="7HzLUeHA8WF" role="3clFbG">
-            <node concept="10M0yZ" id="7HzLUeHA8WG" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="7HzLUeHA8WH" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7HzLUeHAat4" role="37wK5m">
-                <node concept="37vLTw" id="7HzLUeHAatb" role="3uHU7w">
-                  <ref role="3cqZAo" node="5avmkTFj9in" resolve="idx" />
-                </node>
-                <node concept="Xl_RD" id="7HzLUeHAa5$" role="3uHU7B">
-                  <property role="Xl_RC" value="idx:" />
+                <node concept="37vLTw" id="3pIANU$Z1jj" role="37wK5m">
+                  <ref role="3cqZAo" node="3pIANU$YVwY" resolve="contextCell" />
                 </node>
               </node>
             </node>
@@ -3538,14 +3516,20 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="3pIANU$YVwY" role="3clF46">
+        <property role="TrG5h" value="contextCell" />
+        <node concept="3Tqbb2" id="3pIANU$YVwX" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
     </node>
-    <node concept="13i0hz" id="5xEoEMrDTdi" role="13h7CS">
+    <node concept="13i0hz" id="3pIANU$YRml" role="13h7CS">
       <property role="TrG5h" value="resolve" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5xEoEMrDTcu" resolve="resolve" />
-      <node concept="3Tm1VV" id="5xEoEMrDTdj" role="1B3o_S" />
-      <node concept="3clFbS" id="5xEoEMrDTdm" role="3clF47">
+      <ref role="13i0hy" node="3pIANU$YNoz" resolve="resolve" />
+      <node concept="3Tm1VV" id="3pIANU$YRmm" role="1B3o_S" />
+      <node concept="3clFbS" id="3pIANU$YRmr" role="3clF47">
         <node concept="3clFbJ" id="5avmkTFh7PH" role="3cqZAp">
           <node concept="3clFbS" id="5avmkTFh7PJ" role="3clFbx">
             <node concept="3cpWs6" id="5avmkTFhaVe" role="3cqZAp">
@@ -3564,9 +3548,25 @@
         </node>
         <node concept="3clFbJ" id="5avmkTFiIJw" role="3cqZAp">
           <node concept="3clFbS" id="5avmkTFiIJy" role="3clFbx">
+            <node concept="3clFbJ" id="3pIANU_5xkz" role="3cqZAp">
+              <node concept="3clFbS" id="3pIANU_5xk_" role="3clFbx">
+                <node concept="3cpWs6" id="3pIANU_5yah" role="3cqZAp">
+                  <node concept="10Nm6u" id="3pIANU_5yap" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="3pIANU_5y5C" role="3clFbw">
+                <node concept="10Nm6u" id="3pIANU_5y9$" role="3uHU7w" />
+                <node concept="37vLTw" id="3pIANU_5xW_" role="3uHU7B">
+                  <ref role="3cqZAo" node="3pIANU_5sRE" resolve="contextCell" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="5avmkTFiTom" role="3cqZAp">
               <node concept="BsUDl" id="5avmkTFiTp6" role="3cqZAk">
                 <ref role="37wK5l" node="5avmkTFiQqU" resolve="resolveRelative" />
+                <node concept="37vLTw" id="3pIANU_5w4T" role="37wK5m">
+                  <ref role="3cqZAo" node="3pIANU_5sRE" resolve="contextCell" />
+                </node>
               </node>
             </node>
           </node>
@@ -3628,24 +3628,6 @@
                 <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                 <node concept="Xl_RD" id="5avmkTFiOCy" role="37wK5m">
                   <property role="Xl_RC" value="d" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="5xEoEMrqPOi" role="3cqZAp">
-          <node concept="3cpWsn" id="5xEoEMrqPOj" role="3cpWs9">
-            <property role="TrG5h" value="sheet" />
-            <node concept="3Tqbb2" id="5xEoEMrqPOg" role="1tU5fm">
-              <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
-            </node>
-            <node concept="2OqwBi" id="5xEoEMrqPOk" role="33vP2m">
-              <node concept="13iPFW" id="5xEoEMrqPOl" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="5xEoEMrqPOm" role="2OqNvi">
-                <node concept="1xMEDy" id="5xEoEMrqPOn" role="1xVPHs">
-                  <node concept="chp4Y" id="5xEoEMrqPOo" role="ri$Ld">
-                    <ref role="cht4Q" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -3856,8 +3838,8 @@
                 <ref role="3cqZAo" node="5xEoEMrqSkM" resolve="xOffset" />
               </node>
               <node concept="2OqwBi" id="5avmkTF$Vjf" role="3uHU7w">
-                <node concept="37vLTw" id="5avmkTF$Vjg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5xEoEMrqPOj" resolve="sheet" />
+                <node concept="37vLTw" id="3pIANU_5yNz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3pIANU$YRms" resolve="contextSheet" />
                 </node>
                 <node concept="3TrcHB" id="5avmkTF$Vjh" role="2OqNvi">
                   <ref role="3TsBF5" to="wtll:5avmkTF$G1Z" resolve="NUM_COLS" />
@@ -3912,8 +3894,8 @@
             <property role="TrG5h" value="yOffset" />
             <node concept="10Oyi0" id="5xEoEMrr2Xe" role="1tU5fm" />
             <node concept="2YIFZM" id="5xEoEMrqTJI" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
               <node concept="37vLTw" id="5avmkTFdWl9" role="37wK5m">
                 <ref role="3cqZAo" node="5avmkTFdy5C" resolve="row" />
               </node>
@@ -3932,8 +3914,8 @@
                 <ref role="3cqZAo" node="5xEoEMrqTi_" resolve="yOffset" />
               </node>
               <node concept="2OqwBi" id="7HzLUeHLUjS" role="3uHU7w">
-                <node concept="37vLTw" id="7HzLUeHLUjT" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5xEoEMrqPOj" resolve="sheet" />
+                <node concept="37vLTw" id="3pIANU_5yVt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3pIANU$YRms" resolve="contextSheet" />
                 </node>
                 <node concept="3TrcHB" id="7HzLUeHLUjU" role="2OqNvi">
                   <ref role="3TsBF5" to="wtll:5avmkTF$G24" resolve="NUM_ROWS" />
@@ -3963,8 +3945,8 @@
                   <ref role="3cqZAo" node="5xEoEMrqSkM" resolve="xOffset" />
                 </node>
                 <node concept="2OqwBi" id="7HzLUeHJO5Y" role="3uHU7w">
-                  <node concept="37vLTw" id="7HzLUeHJO5Z" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5xEoEMrqPOj" resolve="sheet" />
+                  <node concept="37vLTw" id="3pIANU_5z3n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3pIANU$YRms" resolve="contextSheet" />
                   </node>
                   <node concept="3TrcHB" id="7HzLUeHJO60" role="2OqNvi">
                     <ref role="3TsBF5" to="wtll:5avmkTF$G24" resolve="NUM_ROWS" />
@@ -3977,8 +3959,8 @@
         <node concept="3clFbF" id="7HzLUeHLX83" role="3cqZAp">
           <node concept="2OqwBi" id="7HzLUeHJsp3" role="3clFbG">
             <node concept="2OqwBi" id="7HzLUeHJsp4" role="2Oq$k0">
-              <node concept="37vLTw" id="7HzLUeHJsp5" role="2Oq$k0">
-                <ref role="3cqZAo" node="5xEoEMrqPOj" resolve="sheet" />
+              <node concept="37vLTw" id="3pIANU_5zka" role="2Oq$k0">
+                <ref role="3cqZAo" node="3pIANU$YRms" resolve="contextSheet" />
               </node>
               <node concept="3Tsc0h" id="7HzLUeHJsp6" role="2OqNvi">
                 <ref role="3TtcxE" to="wtll:5xEoEMrnaAC" resolve="cells" />
@@ -3992,7 +3974,19 @@
           </node>
         </node>
       </node>
-      <node concept="3Tqbb2" id="5xEoEMrDTdn" role="3clF45">
+      <node concept="37vLTG" id="3pIANU$YRms" role="3clF46">
+        <property role="TrG5h" value="contextSheet" />
+        <node concept="3Tqbb2" id="3pIANU$YRmt" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3pIANU_5sRE" role="3clF46">
+        <property role="TrG5h" value="contextCell" />
+        <node concept="3Tqbb2" id="3pIANU_5sRF" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3pIANU$YRmu" role="3clF45">
         <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
       </node>
     </node>
@@ -4223,17 +4217,171 @@
     </node>
   </node>
   <node concept="13h7C7" id="5xEoEMrDSFe">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <ref role="13h7C2" to="wtll:5xEoEMrDSEO" resolve="AbstractCellRef" />
     <node concept="13i0hz" id="5xEoEMrDTcu" role="13h7CS">
       <property role="TrG5h" value="resolve" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
       <node concept="3Tm1VV" id="5xEoEMrDTcv" role="1B3o_S" />
       <node concept="3Tqbb2" id="5xEoEMrDTcw" role="3clF45">
         <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
       </node>
-      <node concept="3clFbS" id="5xEoEMrDTcx" role="3clF47" />
+      <node concept="3clFbS" id="5xEoEMrDTcx" role="3clF47">
+        <node concept="3clFbJ" id="3pIANU$Z2Q7" role="3cqZAp">
+          <node concept="3clFbC" id="3pIANU$Z3XC" role="3clFbw">
+            <node concept="10Nm6u" id="3pIANU$Z43u" role="3uHU7w" />
+            <node concept="2OqwBi" id="3pIANU$Z319" role="3uHU7B">
+              <node concept="13iPFW" id="3pIANU$Z2Qd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3pIANU$Z3fH" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:3pIANU$T$6B" resolve="finder" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3pIANU$Z2Q9" role="3clFbx">
+            <node concept="3cpWs8" id="3pIANU_5kLU" role="3cqZAp">
+              <node concept="3cpWsn" id="3pIANU_5kLV" role="3cpWs9">
+                <property role="TrG5h" value="currCell" />
+                <node concept="3Tqbb2" id="3pIANU_5kLR" role="1tU5fm">
+                  <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+                </node>
+                <node concept="2OqwBi" id="3pIANU_5kLW" role="33vP2m">
+                  <node concept="13iPFW" id="3pIANU_5kLX" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3pIANU_5kLY" role="2OqNvi">
+                    <node concept="1xMEDy" id="3pIANU_5kLZ" role="1xVPHs">
+                      <node concept="chp4Y" id="3pIANU_5kM0" role="ri$Ld">
+                        <ref role="cht4Q" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3pIANU$Z45Z" role="3cqZAp">
+              <node concept="BsUDl" id="3pIANU$Z4eV" role="3cqZAk">
+                <ref role="37wK5l" node="3pIANU$YNoz" resolve="resolve" />
+                <node concept="1PxgMI" id="3pIANU_5nEb" role="37wK5m">
+                  <node concept="chp4Y" id="3pIANU_5nX1" role="3oSUPX">
+                    <ref role="cht4Q" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+                  </node>
+                  <node concept="2OqwBi" id="3pIANU_5mIb" role="1m5AlR">
+                    <node concept="37vLTw" id="3pIANU_5mdZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3pIANU_5kLV" resolve="currCell" />
+                    </node>
+                    <node concept="1mfA1w" id="3pIANU_5n6K" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3pIANU_5kM1" role="37wK5m">
+                  <ref role="3cqZAo" node="3pIANU_5kLV" resolve="currCell" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3pIANU_2$CT" role="3cqZAp">
+          <node concept="3clFbS" id="3pIANU_2$CV" role="3clFbx">
+            <node concept="3cpWs6" id="3pIANU_2B1H" role="3cqZAp">
+              <node concept="10Nm6u" id="3pIANU_2B1P" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3pIANU_2Y9Q" role="3clFbw">
+            <node concept="2OqwBi" id="3pIANU_2_Sy" role="2Oq$k0">
+              <node concept="2OqwBi" id="3pIANU_2$S6" role="2Oq$k0">
+                <node concept="13iPFW" id="3pIANU_2$D$" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3pIANU_2_vv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wtll:3pIANU$T$6B" resolve="finder" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="3pIANU_2Alf" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="3pIANU_2Yut" role="2OqNvi">
+              <node concept="chp4Y" id="3pIANU_2YL6" role="3QVz_e">
+                <ref role="cht4Q" to="wtll:3pIANU$T$67" resolve="AbstractSheetFinder" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3pIANU_5p5E" role="3cqZAp">
+          <node concept="3cpWsn" id="3pIANU_5p5F" role="3cpWs9">
+            <property role="TrG5h" value="found" />
+            <node concept="1LlUBW" id="3pIANU_5p5y" role="1tU5fm">
+              <node concept="3Tqbb2" id="3pIANU_5p5C" role="1Lm7xW">
+                <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+              </node>
+              <node concept="3Tqbb2" id="3pIANU_5p5B" role="1Lm7xW">
+                <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3pIANU_5p5G" role="33vP2m">
+              <node concept="2OqwBi" id="3pIANU_5p5H" role="2Oq$k0">
+                <node concept="13iPFW" id="3pIANU_5p5I" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3pIANU_5p5J" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wtll:3pIANU$T$6B" resolve="finder" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3pIANU_5p5K" role="2OqNvi">
+                <ref role="37wK5l" node="3pIANU$Z74R" resolve="find" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3pIANU_2bWQ" role="3cqZAp">
+          <node concept="3clFbS" id="3pIANU_2bWS" role="3clFbx">
+            <node concept="3cpWs6" id="3pIANU_2cA5" role="3cqZAp">
+              <node concept="10Nm6u" id="3pIANU_2cAd" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="3pIANU_2cry" role="3clFbw">
+            <node concept="10Nm6u" id="3pIANU_2c_C" role="3uHU7w" />
+            <node concept="37vLTw" id="3pIANU_5qrh" role="3uHU7B">
+              <ref role="3cqZAo" node="3pIANU_5p5F" resolve="found" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3pIANU$ZzKo" role="3cqZAp">
+          <node concept="BsUDl" id="3pIANU$ZzKm" role="3clFbG">
+            <ref role="37wK5l" node="3pIANU$YNoz" resolve="resolve" />
+            <node concept="1LFfDK" id="3pIANU_5qRo" role="37wK5m">
+              <node concept="3cmrfG" id="3pIANU_5qS4" role="1LF_Uc">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="3pIANU_5qtC" role="1LFl5Q">
+                <ref role="3cqZAo" node="3pIANU_5p5F" resolve="found" />
+              </node>
+            </node>
+            <node concept="1LFfDK" id="3pIANU_5rlw" role="37wK5m">
+              <node concept="3cmrfG" id="3pIANU_5rlE" role="1LF_Uc">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="3pIANU_5qVk" role="1LFl5Q">
+                <ref role="3cqZAo" node="3pIANU_5p5F" resolve="found" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3pIANU$YNoz" role="13h7CS">
+      <property role="TrG5h" value="resolve" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3pIANU$YNo$" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3pIANU$YNo_" role="3clF45">
+        <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+      </node>
+      <node concept="3clFbS" id="3pIANU$YNoA" role="3clF47" />
+      <node concept="37vLTG" id="3pIANU$YNpO" role="3clF46">
+        <property role="TrG5h" value="contextSheet" />
+        <node concept="3Tqbb2" id="3pIANU$YNpN" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3pIANU_5jDA" role="3clF46">
+        <property role="TrG5h" value="contextCell" />
+        <node concept="3Tqbb2" id="3pIANU_5jDB" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5xEoEMrFtHl" role="13h7CS">
       <property role="TrG5h" value="needsActuals" />
@@ -4332,18 +4480,18 @@
     </node>
   </node>
   <node concept="13h7C7" id="5xEoEMrDTKK">
-    <property role="3GE5qa" value="sheet" />
+    <property role="3GE5qa" value="sheet.ref" />
     <ref role="13h7C2" to="wtll:5xEoEMrvqJa" resolve="NamedCellRef" />
     <node concept="13hLZK" id="5xEoEMrDTKL" role="13h7CW">
       <node concept="3clFbS" id="5xEoEMrDTKM" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="5xEoEMrDTKV" role="13h7CS">
+    <node concept="13i0hz" id="3pIANU$YNt$" role="13h7CS">
       <property role="TrG5h" value="resolve" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5xEoEMrDTcu" resolve="resolve" />
-      <node concept="3Tm1VV" id="5xEoEMrDTKW" role="1B3o_S" />
-      <node concept="3clFbS" id="5xEoEMrDTKZ" role="3clF47">
+      <ref role="13i0hy" node="3pIANU$YNoz" resolve="resolve" />
+      <node concept="3Tm1VV" id="3pIANU$YNt_" role="1B3o_S" />
+      <node concept="3clFbS" id="3pIANU$YNtE" role="3clF47">
         <node concept="3clFbF" id="5xEoEMrDV28" role="3cqZAp">
           <node concept="1PxgMI" id="5xEoEMrDVp9" role="3clFbG">
             <node concept="chp4Y" id="5xEoEMrDVs$" role="3oSUPX">
@@ -4361,7 +4509,19 @@
           </node>
         </node>
       </node>
-      <node concept="3Tqbb2" id="5xEoEMrDTL0" role="3clF45">
+      <node concept="37vLTG" id="3pIANU$YNtF" role="3clF46">
+        <property role="TrG5h" value="contextSheet" />
+        <node concept="3Tqbb2" id="3pIANU$YNtG" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3pIANU_5rpn" role="3clF46">
+        <property role="TrG5h" value="contextCell" />
+        <node concept="3Tqbb2" id="3pIANU_5rpo" role="1tU5fm">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3pIANU$YNtH" role="3clF45">
         <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
       </node>
     </node>
@@ -5411,6 +5571,187 @@
         </node>
       </node>
       <node concept="17QB3L" id="7HzLUeHooFP" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3pIANU$Z74G">
+    <property role="3GE5qa" value="sheet.finders" />
+    <ref role="13h7C2" to="wtll:3pIANU$T$67" resolve="AbstractSheetFinder" />
+    <node concept="13i0hz" id="3pIANU$Z74R" role="13h7CS">
+      <property role="TrG5h" value="find" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3pIANU$Z74S" role="1B3o_S" />
+      <node concept="1LlUBW" id="3pIANU$Z758" role="3clF45">
+        <node concept="3Tqbb2" id="3pIANU$Z75w" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+        <node concept="3Tqbb2" id="3pIANU$Z75N" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3pIANU$Z74U" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="3pIANU_3n6x" role="13h7CS">
+      <property role="TrG5h" value="supportsRelative" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="3Tm1VV" id="3pIANU_3n6y" role="1B3o_S" />
+      <node concept="10P_77" id="3pIANU_3n78" role="3clF45" />
+      <node concept="3clFbS" id="3pIANU_3n6$" role="3clF47">
+        <node concept="3clFbF" id="3pIANU_3n8d" role="3cqZAp">
+          <node concept="3clFbT" id="3pIANU_3n8c" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3pIANU$Z74H" role="13h7CW">
+      <node concept="3clFbS" id="3pIANU$Z74I" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3pIANU$Z77x">
+    <property role="3GE5qa" value="sheet.finders" />
+    <ref role="13h7C2" to="wtll:3pIANU$T$68" resolve="UpwardsSheetFinder" />
+    <node concept="13hLZK" id="3pIANU$Z77y" role="13h7CW">
+      <node concept="3clFbS" id="3pIANU$Z77z" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3pIANU$Z77G" role="13h7CS">
+      <property role="TrG5h" value="find" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3pIANU$Z74R" resolve="find" />
+      <node concept="3Tm1VV" id="3pIANU$Z77H" role="1B3o_S" />
+      <node concept="3clFbS" id="3pIANU$Z77M" role="3clF47">
+        <node concept="3cpWs8" id="3pIANU$Z7Gu" role="3cqZAp">
+          <node concept="3cpWsn" id="3pIANU$Z7Gv" role="3cpWs9">
+            <property role="TrG5h" value="myCell" />
+            <node concept="3Tqbb2" id="3pIANU$Z7Gq" role="1tU5fm">
+              <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+            </node>
+            <node concept="2OqwBi" id="3pIANU$Z7Gw" role="33vP2m">
+              <node concept="13iPFW" id="3pIANU$Z7Gx" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3pIANU$Z7Gy" role="2OqNvi">
+                <node concept="1xMEDy" id="3pIANU$Z7Gz" role="1xVPHs">
+                  <node concept="chp4Y" id="3pIANU$Z7G$" role="ri$Ld">
+                    <ref role="cht4Q" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3pIANU$Z8bC" role="3cqZAp">
+          <node concept="3cpWsn" id="3pIANU$Z8bD" role="3cpWs9">
+            <property role="TrG5h" value="outerCell" />
+            <node concept="3Tqbb2" id="3pIANU$Z8b_" role="1tU5fm">
+              <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+            </node>
+            <node concept="2OqwBi" id="3pIANU$Z8bE" role="33vP2m">
+              <node concept="37vLTw" id="3pIANU$Z8bF" role="2Oq$k0">
+                <ref role="3cqZAo" node="3pIANU$Z7Gv" resolve="myCell" />
+              </node>
+              <node concept="2Xjw5R" id="3pIANU$Z8bG" role="2OqNvi">
+                <node concept="1xMEDy" id="3pIANU$Z8bH" role="1xVPHs">
+                  <node concept="chp4Y" id="3pIANU$Z8bI" role="ri$Ld">
+                    <ref role="cht4Q" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3pIANU$Z8n6" role="3cqZAp">
+          <node concept="3clFbS" id="3pIANU$Z8n8" role="3clFbx">
+            <node concept="3cpWs6" id="3pIANU$Z8FO" role="3cqZAp">
+              <node concept="10Nm6u" id="3pIANU$Z8HS" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="3pIANU$Z8$o" role="3clFbw">
+            <node concept="10Nm6u" id="3pIANU$Z8DH" role="3uHU7w" />
+            <node concept="37vLTw" id="3pIANU$Z8pW" role="3uHU7B">
+              <ref role="3cqZAo" node="3pIANU$Z8bD" resolve="outerCell" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3pIANU$Z8TL" role="3cqZAp">
+          <node concept="1Ls8ON" id="3pIANU$Z8Wp" role="3cqZAk">
+            <node concept="1PxgMI" id="3pIANU$Z9MZ" role="1Lso8e">
+              <node concept="chp4Y" id="3pIANU$Z9Oz" role="3oSUPX">
+                <ref role="cht4Q" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+              </node>
+              <node concept="2OqwBi" id="3pIANU$Z9c4" role="1m5AlR">
+                <node concept="37vLTw" id="3pIANU$Z8YS" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3pIANU$Z8bD" resolve="outerCell" />
+                </node>
+                <node concept="1mfA1w" id="3pIANU$Z9wf" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3pIANU$Z91W" role="1Lso8e">
+              <ref role="3cqZAo" node="3pIANU$Z8bD" resolve="outerCell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LlUBW" id="3pIANU$Z77N" role="3clF45">
+        <node concept="3Tqbb2" id="3pIANU$Z77O" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+        <node concept="3Tqbb2" id="3pIANU$Z77P" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3pIANU_4zvF">
+    <property role="3GE5qa" value="sheet.finders" />
+    <ref role="13h7C2" to="wtll:3pIANU_3n4Z" resolve="NamedSheetFinder" />
+    <node concept="13hLZK" id="3pIANU_4zvG" role="13h7CW">
+      <node concept="3clFbS" id="3pIANU_4zvH" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3pIANU_4zvW" role="13h7CS">
+      <property role="TrG5h" value="find" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3pIANU$Z74R" resolve="find" />
+      <node concept="3Tm1VV" id="3pIANU_4zvX" role="1B3o_S" />
+      <node concept="3clFbS" id="3pIANU_4zw2" role="3clF47">
+        <node concept="3clFbF" id="3pIANU_4A9a" role="3cqZAp">
+          <node concept="1Ls8ON" id="3pIANU_4A98" role="3clFbG">
+            <node concept="2OqwBi" id="3pIANU_4_dD" role="1Lso8e">
+              <node concept="2OqwBi" id="3pIANU_4$gl" role="2Oq$k0">
+                <node concept="2OqwBi" id="3pIANU_4zDO" role="2Oq$k0">
+                  <node concept="13iPFW" id="3pIANU_4zwl" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3pIANU_4zPa" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wtll:3pIANU_3n5s" resolve="sheet" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3pIANU_4$Di" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wtll:3_Nra3E2xlU" resolve="sheet" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="3pIANU_4_yA" role="2OqNvi">
+                <ref role="3Tt5mk" to="wtll:48DDwlwTbQF" resolve="sheet" />
+              </node>
+            </node>
+            <node concept="1eOMI4" id="3pIANU_4WMz" role="1Lso8e">
+              <node concept="10QFUN" id="3pIANU_4WMy" role="1eOMHV">
+                <node concept="10Nm6u" id="3pIANU_4WMx" role="10QFUP" />
+                <node concept="3Tqbb2" id="3pIANU_4WYR" role="10QFUM">
+                  <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LlUBW" id="3pIANU_4zw3" role="3clF45">
+        <node concept="3Tqbb2" id="3pIANU_4zw4" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm0Nb" resolve="Sheet" />
+        </node>
+        <node concept="3Tqbb2" id="3pIANU_4zw5" role="1Lm7xW">
+          <ref role="ehGHo" to="wtll:5xEoEMrm2D8" resolve="Cell" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
