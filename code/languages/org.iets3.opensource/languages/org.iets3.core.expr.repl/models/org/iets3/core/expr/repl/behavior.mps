@@ -4252,6 +4252,29 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1mFXz_FYhGj" role="13h7CS">
+      <property role="TrG5h" value="isHighlighted" />
+      <node concept="3Tm1VV" id="1mFXz_FYhGk" role="1B3o_S" />
+      <node concept="10P_77" id="1mFXz_FYhGl" role="3clF45" />
+      <node concept="3clFbS" id="1mFXz_FYhGm" role="3clF47">
+        <node concept="3clFbF" id="1mFXz_FYhGn" role="3cqZAp">
+          <node concept="3y3z36" id="1mFXz_FZreD" role="3clFbG">
+            <node concept="2OqwBi" id="1mFXz_FYhGr" role="3uHU7B">
+              <node concept="2JrnkZ" id="1mFXz_FYhGs" role="2Oq$k0">
+                <node concept="13iPFW" id="1mFXz_FYhGt" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="1mFXz_FYhGu" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                <node concept="Xl_RD" id="1mFXz_FYhGv" role="37wK5m">
+                  <property role="Xl_RC" value="___highlight" />
+                </node>
+              </node>
+            </node>
+            <node concept="10Nm6u" id="1mFXz_FYhGq" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="5xEoEMrw01U" role="13h7CW">
       <node concept="3clFbS" id="5xEoEMrw01V" role="2VODD2" />
     </node>
