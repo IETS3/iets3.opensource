@@ -383,24 +383,10 @@
   </node>
   <node concept="1TIwiD" id="5avmkTFl_ut">
     <property role="EcuMT" value="5953575425750226845" />
-    <property role="3GE5qa" value="sheet" />
-    <property role="TrG5h" value="RangeExpr" />
-    <property role="34LRSv" value="range" />
-    <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
-    <node concept="1TJgyj" id="5avmkTFl_uu" role="1TKVEi">
-      <property role="IQ2ns" value="5953575425750226846" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="from" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
-    </node>
-    <node concept="1TJgyj" id="5avmkTFl_uw" role="1TKVEi">
-      <property role="IQ2ns" value="5953575425750226848" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="to" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
-    </node>
+    <property role="3GE5qa" value="sheet.range" />
+    <property role="TrG5h" value="MakeListExpr" />
+    <property role="34LRSv" value="makeList" />
+    <ref role="1TJDcQ" node="4YhD5cZkcH6" resolve="AbstractRangeExpr" />
   </node>
   <node concept="1TIwiD" id="5avmkTFl_wR">
     <property role="EcuMT" value="5953575425750226999" />
@@ -642,6 +628,40 @@
       <property role="20kJfa" value="sheet" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3_Nra3E2xlO" resolve="TopLevelSheet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4YhD5cZkcH6">
+    <property role="EcuMT" value="5733544478070852422" />
+    <property role="3GE5qa" value="sheet.range" />
+    <property role="TrG5h" value="AbstractRangeExpr" />
+    <ref role="1TJDcQ" node="5avmkTFl_wR" resolve="AbstractSheetExpr" />
+    <node concept="1TJgyj" id="4YhD5cZkcH7" role="1TKVEi">
+      <property role="IQ2ns" value="5733544478070852423" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
+    </node>
+    <node concept="1TJgyj" id="4YhD5cZkcH8" role="1TKVEi">
+      <property role="IQ2ns" value="5733544478070852424" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5xEoEMrDSEO" resolve="AbstractCellRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4YhD5cZo8Ks">
+    <property role="EcuMT" value="5733544478071884828" />
+    <property role="3GE5qa" value="sheet.range" />
+    <property role="TrG5h" value="MakeRecordExpr" />
+    <property role="34LRSv" value="makeRecord" />
+    <ref role="1TJDcQ" node="4YhD5cZkcH6" resolve="AbstractRangeExpr" />
+    <node concept="1TJgyj" id="4YhD5cZo8Kt" role="1TKVEi">
+      <property role="IQ2ns" value="5733544478071884829" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="record" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
     </node>
   </node>
 </model>
