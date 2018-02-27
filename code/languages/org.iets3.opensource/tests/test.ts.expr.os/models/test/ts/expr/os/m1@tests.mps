@@ -4152,7 +4152,7 @@
           </node>
           <node concept="mLuIC" id="7Wa2sv468yR" role="2zM23F">
             <node concept="2gteSX" id="7Wa2sv468yS" role="2gteSx">
-              <property role="2gteSR" value="0.5555555556" />
+              <property role="2gteSR" value="0.5555555555" />
               <property role="2gteSE" value="0.5555555556" />
             </node>
             <node concept="2gteS_" id="7Wa2sv468yT" role="2gteVg">
@@ -4173,7 +4173,7 @@
           <node concept="mLuIC" id="7Wa2sv4696o" role="2zM23F">
             <node concept="2gteSX" id="7Wa2sv4696p" role="2gteSx">
               <property role="2gteSR" value="-0.5555555556" />
-              <property role="2gteSE" value="-0.5555555556" />
+              <property role="2gteSE" value="-0.5555555555" />
             </node>
             <node concept="2gteS_" id="7Wa2sv4696q" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5620,7 +5620,7 @@
           <node concept="mLuIC" id="63mrHUnQhbj" role="2zM23F">
             <node concept="2gteSX" id="63mrHUnQhbk" role="2gteSx">
               <property role="2gteSR" value="0.0000000000" />
-              <property role="2gteSE" value="0.3333333333" />
+              <property role="2gteSE" value="0.3333333334" />
             </node>
             <node concept="2gteS_" id="63mrHUnQhbl" role="2gteVg">
               <property role="2gteVv" value="inf" />
