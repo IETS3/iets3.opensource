@@ -4181,8 +4181,8 @@
                 <node concept="37vLTw" id="3tudP_Abjvl" role="37wK5m">
                   <ref role="3cqZAo" node="7Wa2sv3XRPP" resolve="INF_PREC" />
                 </node>
-                <node concept="37vLTw" id="3tudP_AbjvV" role="37wK5m">
-                  <ref role="3cqZAo" node="7Wa2sv3XSnr" resolve="DIV_ROUNDING" />
+                <node concept="37vLTw" id="3xDOg5G7aPk" role="37wK5m">
+                  <ref role="3cqZAo" node="3xDOg5G79Zh" resolve="roundingMode" />
                 </node>
               </node>
             </node>
@@ -4204,6 +4204,12 @@
       <node concept="37vLTG" id="3f3yNhCUrUB" role="3clF46">
         <property role="TrG5h" value="skewLow" />
         <node concept="10P_77" id="3f3yNhCUrUC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3xDOg5G79Zh" role="3clF46">
+        <property role="TrG5h" value="roundingMode" />
+        <node concept="3uibUv" id="3xDOg5G7aDD" role="1tU5fm">
+          <ref role="3uigEE" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+        </node>
       </node>
       <node concept="3Tm1VV" id="3f3yNhCUrUD" role="1B3o_S" />
     </node>
