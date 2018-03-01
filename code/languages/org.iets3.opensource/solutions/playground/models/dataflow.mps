@@ -1804,6 +1804,10 @@
     <node concept="_ixoA" id="PkV_vHyXUP" role="_iOnB" />
     <node concept="1KScSe" id="PkV_vHyX$O" role="_iOnB">
       <property role="TrG5h" value="TestConst" />
+      <node concept="1NEbTE" id="2nByCcx$tDt" role="1NEbTx">
+        <property role="TrG5h" value="v" />
+        <node concept="mLuIC" id="2nByCcx$tYX" role="2uX8Iz" />
+      </node>
       <node concept="1KScRN" id="PkV_vHyX$P" role="1KScSb">
         <property role="TrG5h" value="a" />
         <node concept="mLuIC" id="PkV_vHyX$Q" role="1KScRM" />
@@ -2940,10 +2944,6 @@
           <ref role="1kA1TY" node="PkV_vHyRJg" resolve="b" />
         </node>
       </node>
-      <node concept="1NEbTE" id="2nByCcx$tDt" role="1NEbTx">
-        <property role="TrG5h" value="v" />
-        <node concept="mLuIC" id="2nByCcx$tYX" role="2uX8Iz" />
-      </node>
     </node>
     <node concept="_ixoA" id="2vkvJYThXK6" role="_iOnB" />
     <node concept="_ixoA" id="2vkvJYThXBY" role="_iOnB" />
@@ -2983,14 +2983,14 @@
         <node concept="_fku$" id="PkV_vHyYEA" role="_fkur" />
         <node concept="2uNai5" id="PkV_vHyYEB" role="_fkuY">
           <ref role="2uNamw" node="PkV_vHyX$O" resolve="TestConst" />
+          <node concept="30bXRB" id="2nByCcx$u7y" role="2uNamu">
+            <property role="30bXRw" value="1" />
+          </node>
           <node concept="30bXRB" id="PkV_vHyYEC" role="2uNamr">
             <property role="30bXRw" value="5" />
           </node>
           <node concept="30bXRB" id="PkV_vHyYED" role="2uNamr">
             <property role="30bXRw" value="4" />
-          </node>
-          <node concept="30bXRB" id="2nByCcx$u7y" role="2uNamu">
-            <property role="30bXRw" value="1" />
           </node>
         </node>
         <node concept="30bXRB" id="PkV_vHyYEE" role="_fkuS">
