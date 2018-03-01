@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f737ddb4-ac03-4f0f-be9f-bb412553995d(playground.dataflow)">
+<model ref="r:d13efac1-a045-434f-8551-7b85e2be7d5e(test.in.expr.os.dataflow@tests)">
   <persistence version="9" />
   <languages>
-    <use id="cee4aa62-aca9-4f26-9602-75129cd457c9" name="org.iets3.core.expr.dataflow" version="0" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="2" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="5" />
-    <use id="63c1aad1-e2db-439c-a30a-02b5e0bc80f3" name="org.iets3.core.expr.tracing" version="0" />
-    <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="0" />
-    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
-    <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="0" />
+    <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="2" />
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="0" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction" version="0" />
-    <use id="7bcf9284-ca29-484f-a3b3-2855bdd813ad" name="org.iets3.core.expr.simpleTypes.tests" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="cee4aa62-aca9-4f26-9602-75129cd457c9" name="org.iets3.core.expr.dataflow" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+  </imports>
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
@@ -61,6 +63,11 @@
         <child id="543569365052056269" name="expected" index="_fkuS" />
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
+      <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
+        <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
+        <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
+        <child id="543569365052711058" name="contents" index="_iOnB" />
+      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7971844778467001950" name="org.iets3.core.expr.simpleTypes.structure.OtherwiseLiteral" flags="ng" index="2fHqz8" />
@@ -74,9 +81,6 @@
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
-      <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnU">
-        <child id="543569365052711058" name="contents" index="_iOnB" />
-      </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
@@ -196,8 +200,10 @@
       </concept>
     </language>
   </registry>
-  <node concept="_iOnU" id="4YhD5cZsw6P">
-    <property role="TrG5h" value="Test" />
+  <node concept="_iOnU" id="5I_8B5ugs0i">
+    <property role="TrG5h" value="DataFlowBlocks" />
+    <property role="2SXJ1i" value="true" />
+    <property role="1XBH2A" value="true" />
     <node concept="1KScRn" id="4YhD5cZsw6X" role="_iOnB">
       <property role="TrG5h" value="add" />
       <property role="1k_erx" value="+" />
@@ -1201,8 +1207,8 @@
       </node>
       <node concept="1kA1OJ" id="PkV_vHyVti" role="1kxull">
         <node concept="1kA1TK" id="PkV_vHyVtj" role="1kA9Cp">
-          <ref role="9EQxM" node="2vkvJYThY9J" />
           <ref role="1kA1TY" node="4YhD5cZsU5B" resolve="sum" />
+          <ref role="9EQxM" node="2vkvJYThY9J" />
         </node>
         <node concept="1kA1Wp" id="PkV_vHyVtk" role="1kA9Cr">
           <ref role="1kA1TY" node="2vkvJYThY9h" resolve="res" />
@@ -1999,8 +2005,8 @@
           <ref role="1kA1TY" node="PkV_vHyUuV" resolve="a" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyUwK" role="1kA9Cr">
-          <ref role="9EQxM" node="PkV_vHyUwH" />
           <ref role="1kA1TY" node="4YhD5cZs$sv" resolve="a" />
+          <ref role="9EQxM" node="PkV_vHyUwH" />
         </node>
       </node>
       <node concept="1kA1OJ" id="PkV_vHyUwL" role="1kxull">
@@ -2008,8 +2014,8 @@
           <ref role="1kA1TY" node="PkV_vHyUuX" resolve="b" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyUwN" role="1kA9Cr">
-          <ref role="9EQxM" node="PkV_vHyUwH" />
           <ref role="1kA1TY" node="4YhD5cZsU5o" resolve="b" />
+          <ref role="9EQxM" node="PkV_vHyUwH" />
         </node>
       </node>
       <node concept="1KScSM" id="PkV_vHyUwO" role="1KScSd">
@@ -2017,8 +2023,8 @@
       </node>
       <node concept="1kA1OJ" id="PkV_vHyUwP" role="1kxull">
         <node concept="1kA1TK" id="PkV_vHyUwQ" role="1kA9Cp">
-          <ref role="9EQxM" node="PkV_vHyUwO" />
           <ref role="1kA1TY" node="PkV_vHyRJi" resolve="diff" />
+          <ref role="9EQxM" node="PkV_vHyUwO" />
         </node>
         <node concept="1kA1Wp" id="PkV_vHyUwR" role="1kA9Cr">
           <ref role="1kA1TY" node="PkV_vHyUuZ" resolve="res" />
@@ -2026,8 +2032,8 @@
       </node>
       <node concept="1kA1OJ" id="PkV_vHyUwY" role="1kxull">
         <node concept="1kA1TK" id="PkV_vHyUwZ" role="1kA9Cp">
-          <ref role="9EQxM" node="PkV_vHyUwH" />
           <ref role="1kA1TY" node="4YhD5cZsU5B" resolve="sum" />
+          <ref role="9EQxM" node="PkV_vHyUwH" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyUx0" role="1kA9Cr">
           <ref role="9EQxM" node="PkV_vHyUwO" />
@@ -2036,8 +2042,8 @@
       </node>
       <node concept="1kA1OJ" id="PkV_vHyWyj" role="1kxull">
         <node concept="1kA1TK" id="PkV_vHyWyk" role="1kA9Cp">
-          <ref role="9EQxM" node="PkV_vHyUwH" />
           <ref role="1kA1TY" node="4YhD5cZsU5B" resolve="sum" />
+          <ref role="9EQxM" node="PkV_vHyUwH" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyWyl" role="1kA9Cr">
           <ref role="9EQxM" node="PkV_vHyUwO" />
@@ -3165,8 +3171,8 @@
           <ref role="1kA1TY" node="PkV_vHyX$P" resolve="a" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyXCh" role="1kA9Cr">
-          <ref role="9EQxM" node="PkV_vHyXCe" />
           <ref role="1kA1TY" node="4YhD5cZs$sv" resolve="a" />
+          <ref role="9EQxM" node="PkV_vHyXCe" />
         </node>
       </node>
       <node concept="1kA1OJ" id="PkV_vHyXCi" role="1kxull">
@@ -3192,12 +3198,12 @@
       </node>
       <node concept="1kA1OJ" id="PkV_vHyXCp" role="1kxull">
         <node concept="1kA1TK" id="PkV_vHyXCq" role="1kA9Cp">
-          <ref role="9EQxM" node="PkV_vHyXCe" />
           <ref role="1kA1TY" node="4YhD5cZsU5B" resolve="sum" />
+          <ref role="9EQxM" node="PkV_vHyXCe" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyXCr" role="1kA9Cr">
-          <ref role="9EQxM" node="PkV_vHyXCl" />
           <ref role="1kA1TY" node="PkV_vHyRJe" resolve="a" />
+          <ref role="9EQxM" node="PkV_vHyXCl" />
         </node>
       </node>
       <node concept="1KScSM" id="PkV_vHyYsx" role="1KScSd">
@@ -3215,8 +3221,8 @@
           <ref role="1kA1TY" node="5Q9FzcI8gBT" resolve="v" />
         </node>
         <node concept="1kA1TK" id="PkV_vHyYzq" role="1kA9Cr">
-          <ref role="9EQxM" node="PkV_vHyXCl" />
           <ref role="1kA1TY" node="PkV_vHyRJg" resolve="b" />
+          <ref role="9EQxM" node="PkV_vHyXCl" />
         </node>
       </node>
     </node>
@@ -4952,14 +4958,14 @@
           <ref role="1kA1TY" node="25FwWcCM3qo" resolve="b" />
         </node>
         <node concept="1kA1TK" id="2nByCcxw$C4" role="1kA9Cr">
-          <ref role="9EQxM" node="2nByCcxw$sh" />
           <ref role="1kA1TY" node="2vkvJYThY8X" resolve="b" />
+          <ref role="9EQxM" node="2nByCcxw$sh" />
         </node>
       </node>
       <node concept="1kA1OJ" id="2nByCcxw$PK" role="1kxull">
         <node concept="1kA1TK" id="2nByCcxw$PL" role="1kA9Cp">
-          <ref role="9EQxM" node="2nByCcxw$sh" />
           <ref role="1kA1TY" node="2vkvJYThY9h" resolve="res" />
+          <ref role="9EQxM" node="2nByCcxw$sh" />
         </node>
         <node concept="1kA1Wp" id="2nByCcxw$PM" role="1kA9Cr">
           <ref role="1kA1TY" node="5Q9FzcI8g$l" resolve="error" />
@@ -5002,8 +5008,8 @@
           <ref role="1kA1TY" node="2vkvJYThY9h" resolve="res" />
         </node>
         <node concept="1kA1TK" id="2nByCcx$sf2" role="1kA9Cr">
-          <ref role="9EQxM" node="2nByCcxwA$v" />
           <ref role="1kA1TY" node="4YhD5cZsU5o" resolve="b" />
+          <ref role="9EQxM" node="2nByCcxwA$v" />
         </node>
       </node>
       <node concept="1kA1OJ" id="2nByCcx$_UK" role="1kxull">
