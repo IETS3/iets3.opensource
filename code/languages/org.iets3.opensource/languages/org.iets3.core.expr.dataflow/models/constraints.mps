@@ -127,7 +127,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2vkvJYSN00J">
-    <ref role="1M2myG" to="gx5r:2vkvJYSMWJ7" resolve="ParamRefExpr" />
+    <ref role="1M2myG" to="gx5r:2vkvJYSMWJ7" resolve="ParamRef" />
     <node concept="9S07l" id="2vkvJYSN01e" role="9Vyp8">
       <node concept="3clFbS" id="2vkvJYSN01f" role="2VODD2">
         <node concept="3clFbF" id="2vkvJYSN08o" role="3cqZAp">
