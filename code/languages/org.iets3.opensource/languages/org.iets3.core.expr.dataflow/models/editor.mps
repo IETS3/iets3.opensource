@@ -1670,18 +1670,33 @@
               <property role="37lx6p" value="CENTER" />
             </node>
           </node>
-          <node concept="1iCGBv" id="3_milxHLbKd" role="1QoVPY">
-            <ref role="1NtTu8" to="gx5r:3_milxHISdW" resolve="block" />
-            <node concept="1sVBvm" id="3_milxHLbKe" role="1sWHZn">
-              <node concept="3F0A7n" id="3_milxHLbKf" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                <node concept="Vb9p2" id="2vkvJYSW28t" role="3F10Kt">
-                  <property role="Vbekb" value="BOLD" />
+          <node concept="3EZMnI" id="5I_8B5ujnbv" role="1QoVPY">
+            <node concept="2iRfu4" id="5I_8B5ujnbw" role="2iSdaV" />
+            <node concept="3F0ifn" id="5I_8B5ujlk0" role="3EZMnx">
+              <property role="3F0ifm" value=" " />
+              <node concept="VPM3Z" id="5I_8B5ujlk1" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
+            <node concept="1iCGBv" id="3_milxHLbKd" role="3EZMnx">
+              <ref role="1NtTu8" to="gx5r:3_milxHISdW" resolve="block" />
+              <node concept="1sVBvm" id="3_milxHLbKe" role="1sWHZn">
+                <node concept="3F0A7n" id="3_milxHLbKf" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="Vb9p2" id="2vkvJYSW28t" role="3F10Kt">
+                    <property role="Vbekb" value="BOLD" />
+                  </node>
+                  <node concept="37jFXN" id="2vkvJYSTzhE" role="3F10Kt">
+                    <property role="37lx6p" value="CENTER" />
+                  </node>
                 </node>
-                <node concept="37jFXN" id="2vkvJYSTzhE" role="3F10Kt">
-                  <property role="37lx6p" value="CENTER" />
-                </node>
+              </node>
+            </node>
+            <node concept="3F0ifn" id="5I_8B5ujnsj" role="3EZMnx">
+              <property role="3F0ifm" value=" " />
+              <node concept="VPM3Z" id="5I_8B5ujnsk" role="3F10Kt">
+                <property role="VOm3f" value="false" />
               </node>
             </node>
           </node>
@@ -1696,8 +1711,12 @@
                 <node concept="3clFbF" id="2vkvJYSUCWs" role="3cqZAp">
                   <node concept="2ShNRf" id="2vkvJYSUCWq" role="3clFbG">
                     <node concept="1pGfFk" id="2vkvJYSUXNZ" role="2ShVmc">
-                      <ref role="37wK5l" to="r4b4:5$bT90ZdOUF" resolve="HorizLineCell" />
+                      <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                       <node concept="pncrf" id="2vkvJYSUXTn" role="37wK5m" />
+                      <node concept="10M0yZ" id="5I_8B5ugyUY" role="37wK5m">
+                        <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      </node>
                     </node>
                   </node>
                 </node>

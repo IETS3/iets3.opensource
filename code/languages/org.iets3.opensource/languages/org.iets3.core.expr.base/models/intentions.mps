@@ -22,7 +22,7 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
-    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -2644,7 +2644,7 @@
                     <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon):void" resolve="showMessageDialog" />
                     <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                     <node concept="37vLTw" id="aFEf9z7b39" role="37wK5m">
-                      <ref role="3cqZAo" node="aFEf9z79Hk" />
+                      <ref role="3cqZAo" node="aFEf9z79Hk" resolve="message" />
                     </node>
                     <node concept="Xl_RD" id="4qVjx3jDcrk" role="37wK5m">
                       <property role="Xl_RC" value="Effect" />
@@ -2690,6 +2690,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5I_8B5uhCh6">
+    <property role="TrG5h" value="SimplifyExpression" />
+    <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="2S6ZIM" id="5I_8B5uhCh7" role="2ZfVej">
+      <node concept="3clFbS" id="5I_8B5uhCh8" role="2VODD2">
+        <node concept="3clFbF" id="5I_8B5uhLV3" role="3cqZAp">
+          <node concept="Xl_RD" id="5I_8B5uhLV2" role="3clFbG">
+            <property role="Xl_RC" value="Simplify" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5I_8B5uhCh9" role="2ZfgGD">
+      <node concept="3clFbS" id="5I_8B5uhCha" role="2VODD2">
+        <node concept="3clFbF" id="5I_8B5uhX3U" role="3cqZAp">
+          <node concept="2OqwBi" id="5I_8B5uhZDP" role="3clFbG">
+            <node concept="2ShNRf" id="5I_8B5uhX56" role="2Oq$k0">
+              <node concept="1pGfFk" id="5I_8B5uhZlc" role="2ShVmc">
+                <ref role="37wK5l" to="oq0c:2nByCcxZSvY" resolve="Simplifier" />
+                <node concept="2Sf5sV" id="5I_8B5uhZlB" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5I_8B5uhZM8" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:2nByCcxZSnh" resolve="simplify" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="5I_8B5uhCtq" role="lGtFl">
+      <property role="1SWRpm" value="EXPRESSIONS" />
     </node>
   </node>
 </model>
