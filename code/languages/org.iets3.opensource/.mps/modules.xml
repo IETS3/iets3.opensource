@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.dataflow/org.iets3.core.expr.dataflow.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.doc/org.iets3.core.expr.doc.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.metafunction/org.iets3.core.expr.metafunction.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.mutable/org.iets3.core.expr.mutable.mpl" folder="expr" />
@@ -54,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
+      <modulePath path="$PROJECT_DIR$/solutions/programmingBasics/programmingBasics.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
