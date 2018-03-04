@@ -4632,10 +4632,17 @@
       <node concept="3Tm1VV" id="6HHp2WndiBJ" role="1B3o_S" />
       <node concept="3clFbS" id="6HHp2WndiBN" role="3clF47">
         <node concept="3clFbF" id="6HHp2WndiRX" role="3cqZAp">
-          <node concept="2OqwBi" id="6HHp2WndiWA" role="3clFbG">
-            <node concept="13iPFW" id="6HHp2WndiRW" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="6HHp2Wndj64" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:ub9nkyK62i" resolve="contents" />
+          <node concept="2OqwBi" id="2c2AzQcGk1q" role="3clFbG">
+            <node concept="2OqwBi" id="6HHp2WndiWA" role="2Oq$k0">
+              <node concept="13iPFW" id="6HHp2WndiRW" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2c2AzQcGh4E" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:6clJcrKmVSn" resolve="allReferenceableContentsInChunk" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="2c2AzQcGkpa" role="2OqNvi">
+              <node concept="chp4Y" id="2c2AzQcGky8" role="v3oSu">
+                <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+              </node>
             </node>
           </node>
         </node>

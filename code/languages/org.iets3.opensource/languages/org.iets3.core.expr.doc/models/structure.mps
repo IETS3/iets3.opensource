@@ -84,5 +84,31 @@
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2c2AzQcFDAO">
+    <property role="EcuMT" value="2522748330424834484" />
+    <property role="TrG5h" value="Parallel" />
+    <property role="34LRSv" value="par" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2c2AzQcFDE9" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="2c2AzQcFDEe" role="PzmwI">
+      <ref role="PrY4T" to="yv47:1sudaVNn5LK" resolve="ITopLevelContainer" />
+    </node>
+    <node concept="1TJgyj" id="2c2AzQcFDEi" role="1TKVEi">
+      <property role="IQ2ns" value="2522748330424834706" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="frame1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1sudaVNqpiG" resolve="FrameContent" />
+    </node>
+    <node concept="1TJgyj" id="2c2AzQcFPou" role="1TKVEi">
+      <property role="IQ2ns" value="2522748330424882718" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="frame2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1sudaVNqpiG" resolve="FrameContent" />
+    </node>
+  </node>
 </model>
 
