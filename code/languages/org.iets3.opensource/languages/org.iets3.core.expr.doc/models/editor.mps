@@ -292,7 +292,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="2c2AzQcEaa6" role="3uHU7w">
-                          <property role="Xl_RC" value=")&amp;nbsp;&amp;nbsp;[|src](" />
+                          <property role="Xl_RC" value=")&amp;nbsp;&amp;nbsp;[src](" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="2c2AzQcEnqZ" role="3uHU7w">

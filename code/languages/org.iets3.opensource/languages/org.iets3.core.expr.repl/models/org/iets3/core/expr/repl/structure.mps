@@ -572,6 +572,11 @@
       <property role="TrG5h" value="template" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2c2AzQdaWRH" role="1TKVEl">
+      <property role="IQ2nx" value="2522748330433039853" />
+      <property role="TrG5h" value="hideTitle" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3_Nra3E8QdD">
     <property role="EcuMT" value="4139771920862372713" />
