@@ -359,6 +359,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
         <child id="1144226360166" name="iterable" index="1DdaDG" />
       </concept>
@@ -643,6 +644,19 @@
       </node>
       <node concept="3F1sOY" id="49WTic8f4uO" role="3EZMnx">
         <ref role="1NtTu8" to="zzzn:49WTic8eSDm" resolve="body" />
+        <node concept="pVoyu" id="5AlTalNKS66" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="5AlTalNKSF7" role="3n$kyP">
+            <node concept="3clFbS" id="5AlTalNKSF8" role="2VODD2">
+              <node concept="3clFbF" id="5AlTalNKSMj" role="3cqZAp">
+                <node concept="2OqwBi" id="5AlTalNKTT7" role="3clFbG">
+                  <node concept="pncrf" id="5AlTalNKTlE" role="2Oq$k0" />
+                  <node concept="1B$H19" id="5AlTalNKTTc" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

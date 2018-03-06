@@ -5431,7 +5431,7 @@
           <ref role="1NtTu8" to="wtll:48DDwlwTbMi" resolve="cols" />
         </node>
         <node concept="3F0ifn" id="48DDwlwTbRh" role="3EZMnx">
-          <property role="3F0ifm" value="and" />
+          <property role="3F0ifm" value="cols and" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="48DDwlwTbRi" role="3EZMnx">
