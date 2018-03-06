@@ -343,7 +343,7 @@
     <property role="3GE5qa" value="numeric.number" />
     <ref role="1XX52x" to="5qo5:19PglA20qX_" resolve="NumberRangeSpec" />
     <node concept="3EZMnI" id="19PglA20r05" role="2wV5jI">
-      <node concept="l2Vlx" id="19PglA20r06" role="2iSdaV" />
+      <node concept="2iRfu4" id="5i1yF0wqXGJ" role="2iSdaV" />
       <node concept="3F0ifn" id="19PglA20r01" role="3EZMnx">
         <property role="3F0ifm" value="[" />
         <node concept="11LMrY" id="19PglA20rb6" role="3F10Kt">
