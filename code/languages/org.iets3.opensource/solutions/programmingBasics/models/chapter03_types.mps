@@ -28,13 +28,22 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
+        <child id="606861080870797310" name="expr" index="pf3We" />
+      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+      <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
+        <child id="606861080870797304" name="elseSection" index="pf3W8" />
+        <child id="7849560302565679723" name="condition" index="39w5ZE" />
+        <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
       </concept>
     </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
@@ -100,6 +109,11 @@
       <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/src" />
     </node>
     <node concept="_ixoA" id="5AlTalNEed6" role="_iOnB" />
+    <node concept="2zPypq" id="5AlTalNYOF4" role="_iOnB">
+      <property role="TrG5h" value="someBoolean" />
+      <node concept="2vmpnb" id="5AlTalNYON6" role="2zPyp_" />
+    </node>
+    <node concept="_ixoA" id="5AlTalNYOF2" role="_iOnB" />
     <node concept="3$huGK" id="5AlTalNEmTo" role="_iOnB">
       <property role="TrG5h" value="DerivedTypes" />
       <node concept="3$tU02" id="5AlTalNEmT$" role="3$tUb0">
@@ -113,6 +127,33 @@
           <property role="TrG5h" value="time" />
           <node concept="30bXRB" id="5AlTalNEmTR" role="2zPyp_">
             <property role="30bXRw" value="20" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="5AlTalNYOhV" role="3$tU1w">
+          <property role="TrG5h" value="twoDistances" />
+          <node concept="30dDTi" id="5AlTalNYOiE" role="2zPyp_">
+            <node concept="30bXRB" id="5AlTalNYOiM" role="30dEs_">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="_emDc" id="5AlTalNYOid" role="30dEsF">
+              <ref role="_emDf" node="5AlTalNEmTF" resolve="distance" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5AlTalNYOn0" role="3$tU1w">
+          <property role="TrG5h" value="maybeDistanes" />
+          <node concept="39w5ZF" id="5AlTalNYOAW" role="2zPyp_">
+            <node concept="pf3Wd" id="5AlTalNYOAX" role="pf3W8">
+              <node concept="_emDc" id="5AlTalNYOGB" role="pf3We">
+                <ref role="_emDf" node="5AlTalNYOhV" resolve="twoDistances" />
+              </node>
+            </node>
+            <node concept="_emDc" id="5AlTalNYOFo" role="39w5ZE">
+              <ref role="_emDf" node="5AlTalNYOF4" resolve="someBoolean" />
+            </node>
+            <node concept="_emDc" id="5AlTalNYOFH" role="39w5ZG">
+              <ref role="_emDf" node="5AlTalNEmTF" resolve="distance" />
+            </node>
           </node>
         </node>
         <node concept="2zPypq" id="5AlTalNEmTH" role="3$tU1w">
