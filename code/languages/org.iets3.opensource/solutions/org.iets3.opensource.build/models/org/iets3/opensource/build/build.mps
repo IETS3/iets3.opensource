@@ -1002,6 +1002,12 @@
             <ref role="3bR37D" to="al5i:5ovySaD2Zoi" resolve="com.mbeddr.mpsutil.varscope.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3gcF5NW_R2m" role="3bR37C">
+          <node concept="3bR9La" id="3gcF5NW_R2n" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396gl" role="2G$12L">
         <property role="BnDLt" value="true" />
