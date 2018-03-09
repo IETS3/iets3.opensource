@@ -29,7 +29,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3.2'
+ext.mpsVersion = '2018.1-EAP4'
 
 
 // Project version
@@ -52,7 +52,7 @@ if (!project.hasProperty("mbeddrVersion")) {
     }
     else {
         //default version
-        ext.mbeddrVersion = '1.0.+'
+        ext.mbeddrVersion = 'mps-2018.1.1.0.+'
     }
 }
 
