@@ -19,6 +19,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -33,12 +36,18 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -62,9 +71,14 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="7307171874933646339" name="jetbrains.mps.lang.typesystem.structure.SupersedeConceptFunction" flags="ig" index="2bjmSp" />
+      <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
+        <child id="1185788644032" name="normalType" index="mwGJk" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -78,11 +92,22 @@
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
+      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
+        <child id="7307171874933775112" name="supercedesFun" index="2bjP4i" />
+      </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
       <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
+      </concept>
+      <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
+        <child id="1174657509053" name="term" index="1Z2MuG" />
+      </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
+      <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
+        <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -93,6 +118,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -213,6 +241,60 @@
     <node concept="1YaCAy" id="1sudaVNrKvK" role="1YuTPh">
       <property role="TrG5h" value="spec" />
       <ref role="1YaFvo" to="34lm:1sudaVNqvkx" resolve="ScreenshotPathSpec" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="NE1gl52$yo">
+    <property role="TrG5h" value="typeof_DotDotDot" />
+    <node concept="3clFbS" id="NE1gl52$yp" role="18ibNy">
+      <node concept="3clFbJ" id="NE1gl52$La" role="3cqZAp">
+        <node concept="3y3z36" id="NE1gl52_ul" role="3clFbw">
+          <node concept="10Nm6u" id="NE1gl52_uw" role="3uHU7w" />
+          <node concept="2OqwBi" id="NE1gl52_2L" role="3uHU7B">
+            <node concept="1YBJjd" id="NE1gl52$SC" role="2Oq$k0">
+              <ref role="1YBMHb" node="NE1gl52$yr" resolve="dotDotDot" />
+            </node>
+            <node concept="3TrEf2" id="NE1gl52_bD" role="2OqNvi">
+              <ref role="3Tt5mk" to="34lm:NE1gl52$KT" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="NE1gl52$Lc" role="3clFbx">
+          <node concept="1Z5TYs" id="NE1gl52_Jd" role="3cqZAp">
+            <node concept="mw_s8" id="NE1gl52AxB" role="1ZfhKB">
+              <node concept="1Z2H0r" id="NE1gl52Axp" role="mwGJk">
+                <node concept="2OqwBi" id="NE1gl52AGV" role="1Z2MuG">
+                  <node concept="1YBJjd" id="NE1gl52A$q" role="2Oq$k0">
+                    <ref role="1YBMHb" node="NE1gl52$yr" resolve="dotDotDot" />
+                  </node>
+                  <node concept="3TrEf2" id="NE1gl52ASo" role="2OqNvi">
+                    <ref role="3Tt5mk" to="34lm:NE1gl52$KT" resolve="type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="NE1gl52_Jg" role="1ZfhK$">
+              <node concept="1Z2H0r" id="NE1gl52_wP" role="mwGJk">
+                <node concept="1YBJjd" id="NE1gl52_y_" role="1Z2MuG">
+                  <ref role="1YBMHb" node="NE1gl52$yr" resolve="dotDotDot" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="NE1gl52$yr" role="1YuTPh">
+      <property role="TrG5h" value="dotDotDot" />
+      <ref role="1YaFvo" to="34lm:NE1gl52$xw" resolve="DotDotDot" />
+    </node>
+    <node concept="2bjmSp" id="NE1gl52$yv" role="2bjP4i">
+      <node concept="3clFbS" id="NE1gl52$yw" role="2VODD2">
+        <node concept="3clFbF" id="NE1gl52$DA" role="3cqZAp">
+          <node concept="3clFbT" id="NE1gl52$D_" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

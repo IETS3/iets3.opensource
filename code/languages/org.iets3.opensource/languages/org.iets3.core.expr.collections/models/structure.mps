@@ -659,7 +659,7 @@
   <node concept="1TIwiD" id="1RHynufnTnz">
     <property role="3GE5qa" value="set.immutable" />
     <property role="TrG5h" value="ImmutableSetAddOp" />
-    <property role="34LRSv" value="add" />
+    <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179855331" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
@@ -1003,7 +1003,7 @@
     <property role="EcuMT" value="890442848561696122" />
     <property role="3GE5qa" value="list.immutable" />
     <property role="TrG5h" value="ImmutableListRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="34LRSv" value="without" />
     <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
   </node>
   <node concept="1TIwiD" id="6IBT1wUeDJz">
