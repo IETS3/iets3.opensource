@@ -511,15 +511,15 @@
   </node>
   <node concept="1TIwiD" id="7kYh9Ws$Uec">
     <property role="3GE5qa" value="map.immutable" />
-    <property role="TrG5h" value="ImmutableMapPutOp" />
-    <property role="34LRSv" value="put" />
+    <property role="TrG5h" value="ImmutableMapWithOp" />
+    <property role="34LRSv" value="with" />
     <property role="EcuMT" value="8448265401163555724" />
     <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
   <node concept="1TIwiD" id="7kYh9Ws_wTl">
     <property role="3GE5qa" value="map.immutable" />
-    <property role="TrG5h" value="ImmutableMapRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="TrG5h" value="ImmutableMapWithoutOp" />
+    <property role="34LRSv" value="without" />
     <property role="EcuMT" value="8448265401163714133" />
     <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
@@ -658,7 +658,7 @@
   </node>
   <node concept="1TIwiD" id="1RHynufnTnz">
     <property role="3GE5qa" value="set.immutable" />
-    <property role="TrG5h" value="ImmutableSetAddOp" />
+    <property role="TrG5h" value="ImmutableSetWithOp" />
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179855331" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
@@ -816,8 +816,8 @@
   <node concept="1TIwiD" id="3kEBq3lv4rL">
     <property role="EcuMT" value="3831047747134047985" />
     <property role="3GE5qa" value="set.immutable" />
-    <property role="TrG5h" value="ImmutableSetRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="TrG5h" value="ImmutableSetWithoutOp" />
+    <property role="34LRSv" value="without" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
   <node concept="1TIwiD" id="5ipapt3qQ3k">
@@ -1002,7 +1002,7 @@
   <node concept="1TIwiD" id="LrvgQhjCPU">
     <property role="EcuMT" value="890442848561696122" />
     <property role="3GE5qa" value="list.immutable" />
-    <property role="TrG5h" value="ImmutableListRemoveOp" />
+    <property role="TrG5h" value="ImmutableListWithoutOp" />
     <property role="34LRSv" value="without" />
     <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
   </node>
