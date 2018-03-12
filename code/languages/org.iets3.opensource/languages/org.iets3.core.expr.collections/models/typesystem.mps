@@ -2426,7 +2426,7 @@
     </node>
     <node concept="1YaCAy" id="7kYh9Ws$$pc" role="1YuTPh">
       <property role="TrG5h" value="op" />
-      <ref role="1YaFvo" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapPutOp" />
+      <ref role="1YaFvo" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapWithOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="7kYh9Ws_wTI">
@@ -2513,7 +2513,7 @@
     </node>
     <node concept="1YaCAy" id="7kYh9Ws_wTL" role="1YuTPh">
       <property role="TrG5h" value="op" />
-      <ref role="1YaFvo" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapRemoveOp" />
+      <ref role="1YaFvo" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapWithoutOp" />
     </node>
     <node concept="bXqS6" id="1RHynufwfxY" role="bX4a1">
       <node concept="3clFbS" id="1RHynufwfxZ" role="2VODD2">
