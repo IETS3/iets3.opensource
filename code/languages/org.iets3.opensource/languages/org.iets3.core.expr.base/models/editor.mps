@@ -2166,12 +2166,6 @@
       </node>
       <node concept="3F0ifn" id="1WCh2thoP4e" role="3EZMnx">
         <property role="3F0ifm" value=".." />
-        <node concept="11L4FC" id="1WCh2thoP4f" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="1WCh2thoP4g" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F1sOY" id="1WCh2thoP4h" role="3EZMnx">
         <ref role="1NtTu8" to="hm2y:1WCh2thoP3f" resolve="max" />
