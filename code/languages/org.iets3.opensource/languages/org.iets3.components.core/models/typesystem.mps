@@ -11,8 +11,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -30,7 +28,6 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -47,9 +44,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -2362,45 +2356,6 @@
                             </node>
                             <node concept="37vLTw" id="PFqDnRUaXo" role="37wK5m">
                               <ref role="3cqZAo" node="PFqDnRU9qz" resolve="allConnectors" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="4VHfdEqeGa_" role="3cqZAp">
-                      <node concept="2OqwBi" id="4VHfdEqeGay" role="3clFbG">
-                        <node concept="10M0yZ" id="4VHfdEqeGaz" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                        </node>
-                        <node concept="liA8E" id="4VHfdEqeGa$" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="4VHfdEqeXbp" role="37wK5m">
-                            <node concept="37vLTw" id="4VHfdEqeXXW" role="3uHU7w">
-                              <ref role="3cqZAo" node="PFqDnRTYtE" resolve="m" />
-                            </node>
-                            <node concept="3cpWs3" id="4VHfdEqeOIz" role="3uHU7B">
-                              <node concept="3cpWs3" id="4VHfdEqeNFj" role="3uHU7B">
-                                <node concept="3cpWs3" id="4VHfdEqeIKt" role="3uHU7B">
-                                  <node concept="3cpWs3" id="4VHfdEqeHxw" role="3uHU7B">
-                                    <node concept="Xl_RD" id="4VHfdEqeGbt" role="3uHU7B">
-                                      <property role="Xl_RC" value="CI: " />
-                                    </node>
-                                    <node concept="37vLTw" id="4VHfdEqeI3E" role="3uHU7w">
-                                      <ref role="3cqZAo" node="PFqDnRUiiL" resolve="ci" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="4VHfdEqeJwi" role="3uHU7w">
-                                    <property role="Xl_RC" value=", port: " />
-                                  </node>
-                                </node>
-                                <node concept="2GrUjf" id="4VHfdEqeNFm" role="3uHU7w">
-                                  <ref role="2Gs0qQ" node="PFqDnRTYtB" resolve="p" />
-                                </node>
-                              </node>
-                              <node concept="Xl_RD" id="4VHfdEqeOIA" role="3uHU7w">
-                                <property role="Xl_RC" value=" -&gt; " />
-                              </node>
                             </node>
                           </node>
                         </node>
