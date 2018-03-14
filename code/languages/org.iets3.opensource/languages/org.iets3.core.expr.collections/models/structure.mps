@@ -996,7 +996,8 @@
     <property role="EcuMT" value="7905426115408401995" />
     <property role="3GE5qa" value="set.common" />
     <property role="TrG5h" value="SetType" />
-    <property role="34LRSv" value="set" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
   </node>
   <node concept="1TIwiD" id="LrvgQhjCPU">
