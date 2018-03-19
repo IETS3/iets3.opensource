@@ -9,6 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -89,13 +90,15 @@
     <property role="TrG5h" value="ScreenshotPathSpec" />
     <property role="34LRSv" value="screenshot-path" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1sudaVNqvlc" role="1TKVEl">
-      <property role="IQ2nx" value="1665826838186423628" />
-      <property role="TrG5h" value="path" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="1sudaVNqDEu" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyj" id="1JOtRcapYu0" role="1TKVEi">
+      <property role="IQ2ns" value="2014366269320980352" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
     </node>
   </node>
   <node concept="1TIwiD" id="2c2AzQcFDAO">

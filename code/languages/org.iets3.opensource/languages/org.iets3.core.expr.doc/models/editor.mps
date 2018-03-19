@@ -21,6 +21,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -204,6 +205,9 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -505,15 +509,45 @@
   </node>
   <node concept="24kQdi" id="1sudaVNqvlC">
     <ref role="1XX52x" to="34lm:1sudaVNqvkx" resolve="ScreenshotPathSpec" />
-    <node concept="3EZMnI" id="1sudaVNqvmh" role="2wV5jI">
-      <node concept="3F0ifn" id="1sudaVNqvmr" role="3EZMnx">
-        <property role="3F0ifm" value="screenshot-path" />
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    <node concept="3EZMnI" id="1JOtRcapYu3" role="2wV5jI">
+      <node concept="2iRkQZ" id="1JOtRcapYu4" role="2iSdaV" />
+      <node concept="3EZMnI" id="1sudaVNqvmh" role="3EZMnx">
+        <node concept="3F0ifn" id="1sudaVNqvmr" role="3EZMnx">
+          <property role="3F0ifm" value="screenshot-path" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="2iRfu4" id="1sudaVNqvmk" role="2iSdaV" />
+        <node concept="3F1sOY" id="1JOtRcapYu$" role="3EZMnx">
+          <ref role="1NtTu8" to="34lm:1JOtRcapYu0" resolve="pp" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="1sudaVNqvm$" role="3EZMnx">
-        <ref role="1NtTu8" to="34lm:1sudaVNqvlc" resolve="path" />
+    </node>
+    <node concept="3EZMnI" id="1JOtRcaq9rg" role="6VMZX">
+      <node concept="2iRfu4" id="1JOtRcaq9rh" role="2iSdaV" />
+      <node concept="3F0ifn" id="1JOtRcaq9rm" role="3EZMnx">
+        <property role="3F0ifm" value="absolute path:" />
       </node>
-      <node concept="2iRfu4" id="1sudaVNqvmk" role="2iSdaV" />
+      <node concept="1HlG4h" id="1JOtRcaq9rJ" role="3EZMnx">
+        <node concept="1HfYo3" id="1JOtRcaq9rL" role="1HlULh">
+          <node concept="3TQlhw" id="1JOtRcaq9rN" role="1Hhtcw">
+            <node concept="3clFbS" id="1JOtRcaq9rP" role="2VODD2">
+              <node concept="3clFbF" id="1JOtRcaq9$n" role="3cqZAp">
+                <node concept="2OqwBi" id="1JOtRcaqb9Z" role="3clFbG">
+                  <node concept="2OqwBi" id="1JOtRcaq9RE" role="2Oq$k0">
+                    <node concept="pncrf" id="1JOtRcaq9$m" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1JOtRcaqau1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="pp" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="1JOtRcaqbU1" role="2OqNvi">
+                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2c2AzQcFDEH">
