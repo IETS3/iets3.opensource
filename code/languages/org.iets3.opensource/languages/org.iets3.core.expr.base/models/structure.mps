@@ -1683,5 +1683,9 @@
     <property role="EcuMT" value="195141004745586068" />
     <property role="TrG5h" value="ICanBeLValue" />
   </node>
+  <node concept="PlHQZ" id="4yaQL1YeoSK">
+    <property role="EcuMT" value="5227231181400542768" />
+    <property role="TrG5h" value="INameQualifier" />
+  </node>
 </model>
 

@@ -57,6 +57,14 @@
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
       <concept id="2522748330424834484" name="org.iets3.core.expr.doc.structure.Parallel" flags="ng" index="2JF0e9">
         <child id="2522748330424834706" name="frame1" index="2JF02J" />
@@ -162,6 +170,14 @@
         <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
       </concept>
     </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
+    </language>
     <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
       <concept id="4767524222579030357" name="org.iets3.core.expr.repl.structure.SheetEmbedExpr" flags="ng" index="yNhXg">
         <property id="4767524222579031187" name="rows" index="yNhEm" />
@@ -199,6 +215,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1040,7 +1059,7 @@
     </node>
     <node concept="_ixoA" id="5AlTalNZjUY" role="_iOnB" />
     <node concept="3$huGK" id="5AlTalNZ_bC" role="_iOnB">
-      <property role="TrG5h" value="CallingTheFUnction" />
+      <property role="TrG5h" value="CallingTheFunction" />
       <node concept="3$tU02" id="5AlTalNZ_bE" role="3$tUb0">
         <node concept="2zPypq" id="5AlTalNZ_xl" role="3$tU1w">
           <property role="TrG5h" value="p0sRiskFactor" />
@@ -1079,7 +1098,7 @@
     </node>
     <node concept="_ixoA" id="5AlTalNZKv$" role="_iOnB" />
     <node concept="3$huGK" id="5AlTalNZK7r" role="_iOnB">
-      <property role="TrG5h" value="CallingTheFUnction" />
+      <property role="TrG5h" value="CallingTheFunction2" />
       <node concept="3$tU02" id="5AlTalNZK7s" role="3$tUb0">
         <node concept="1aga60" id="5AlTalNZKRX" role="3$tU1w">
           <property role="TrG5h" value="riskFactor" />
@@ -1561,6 +1580,15 @@
                   <node concept="2vmvVl" id="5AlTalO0lMm" role="1lsf3T" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1z9TsT" id="4yaQL1YhgoZ" role="lGtFl">
+        <node concept="OjmMv" id="4yaQL1Yhgp0" role="1w35rA">
+          <node concept="19SGf9" id="4yaQL1Yhgp1" role="OjmMu">
+            <node concept="19SUe$" id="4yaQL1Yhgp2" role="19SJt6">
+              <property role="19SUeA" value="Expressions are intentionally left blank for demo purposes" />
             </node>
           </node>
         </node>

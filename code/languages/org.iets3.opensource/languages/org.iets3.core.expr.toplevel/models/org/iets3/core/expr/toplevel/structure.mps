@@ -169,6 +169,9 @@
     <node concept="PrWs8" id="3z0ZJXm0Med" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
+    <node concept="PrWs8" id="4yaQL1YfxIE" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:4yaQL1YaUM8" resolve="IHasQualifiedName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
     <property role="TrG5h" value="ExtensionFunctionCall" />

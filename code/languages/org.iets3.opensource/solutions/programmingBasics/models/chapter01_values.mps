@@ -972,8 +972,8 @@
                   <node concept="33c$z$" id="2c2AzQdfHHD" role="33dGG4" />
                   <node concept="33c$z$" id="2c2AzQdfHHE" role="33dGG4">
                     <node concept="30dvO6" id="2c2AzQdfIdJ" role="33cOLO">
-                      <node concept="_emDc" id="2c2AzQdfIIR" role="30dEs_">
-                        <ref role="_emDf" node="2c2AzQdfHTN" resolve="time" />
+                      <node concept="_emDc" id="4yaQL1YgB4h" role="30dEs_">
+                        <ref role="_emDf" node="2c2AzQdfHHz" resolve="time" />
                       </node>
                       <node concept="_emDc" id="2c2AzQdfII4" role="30dEsF">
                         <ref role="_emDf" node="2c2AzQdfHHx" resolve="distance" />
@@ -986,19 +986,9 @@
             </node>
           </node>
           <node concept="3$tU02" id="2c2AzQdfHTK" role="2JFsKz">
-            <node concept="2zPypq" id="2c2AzQdfHTL" role="3$tU1w">
-              <property role="TrG5h" value="distance" />
-              <node concept="30bXRB" id="2c2AzQdfHTM" role="2zPyp_">
-                <property role="30bXRw" value="100" />
-              </node>
-            </node>
-            <node concept="2zPypq" id="2c2AzQdfHTN" role="3$tU1w">
-              <property role="TrG5h" value="time" />
-              <node concept="30bXRB" id="2c2AzQdfHTO" role="2zPyp_">
-                <property role="30bXRw" value="25" />
-              </node>
-            </node>
             <node concept="_ixoA" id="2c2AzQdfJ9b" role="3$tU1w" />
+            <node concept="_ixoA" id="4yaQL1YgARe" role="3$tU1w" />
+            <node concept="_ixoA" id="4yaQL1YgARs" role="3$tU1w" />
             <node concept="3junBk" id="2c2AzQdfHTP" role="3$tU1w">
               <property role="TrG5h" value="NamedCellsSheetExtValsVals" />
               <property role="2Ialvg" value="true" />

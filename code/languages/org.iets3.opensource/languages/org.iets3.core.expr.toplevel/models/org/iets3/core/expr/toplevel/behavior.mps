@@ -35,7 +35,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2145,6 +2145,68 @@
         </node>
       </node>
       <node concept="17QB3L" id="6iqfHNBPkz9" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4yaQL1YfxIL" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getQualifiedName" />
+      <ref role="13i0hy" to="hwgx:4yaQL1YaUNL" resolve="getQualifiedName" />
+      <node concept="3Tm1VV" id="4yaQL1YfxIM" role="1B3o_S" />
+      <node concept="3clFbS" id="4yaQL1YfxIP" role="3clF47">
+        <node concept="3cpWs8" id="4yaQL1Yfys2" role="3cqZAp">
+          <node concept="3cpWsn" id="4yaQL1Yfys3" role="3cpWs9">
+            <property role="TrG5h" value="qf" />
+            <node concept="3Tqbb2" id="4yaQL1YfyrY" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:4yaQL1YeoSK" resolve="INameQualifier" />
+            </node>
+            <node concept="2OqwBi" id="4yaQL1Yfys4" role="33vP2m">
+              <node concept="13iPFW" id="4yaQL1Yfys5" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4yaQL1Yfys6" role="2OqNvi">
+                <node concept="1xMEDy" id="4yaQL1Yfys7" role="1xVPHs">
+                  <node concept="chp4Y" id="4yaQL1Yfys8" role="ri$Ld">
+                    <ref role="cht4Q" to="hm2y:4yaQL1YeoSK" resolve="INameQualifier" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4yaQL1YfxSy" role="3cqZAp">
+          <node concept="3clFbS" id="4yaQL1YfxS$" role="3clFbx">
+            <node concept="3cpWs6" id="4yaQL1YfyFt" role="3cqZAp">
+              <node concept="2OqwBi" id="4yaQL1YfyOF" role="3cqZAk">
+                <node concept="37vLTw" id="4yaQL1YfyFN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4yaQL1Yfys3" resolve="qf" />
+                </node>
+                <node concept="2qgKlT" id="4yaQL1YfyVH" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:4yaQL1YeoUt" resolve="makeQualifiedName" />
+                  <node concept="2OqwBi" id="4yaQL1Yfzhu" role="37wK5m">
+                    <node concept="13iPFW" id="4yaQL1Yfz0g" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4yaQL1Yfz_i" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4yaQL1YfyEG" role="3clFbw">
+            <node concept="10Nm6u" id="4yaQL1YfyF5" role="3uHU7w" />
+            <node concept="37vLTw" id="4yaQL1Yfys9" role="3uHU7B">
+              <ref role="3cqZAo" node="4yaQL1Yfys3" resolve="qf" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4yaQL1YfzGQ" role="3cqZAp">
+          <node concept="2OqwBi" id="4yaQL1Yf$3l" role="3cqZAk">
+            <node concept="13iPFW" id="4yaQL1YfzOs" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4yaQL1Yf$pN" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4yaQL1YfxIQ" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6HHp2Wnchso">
