@@ -35,8 +35,8 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
@@ -1062,35 +1062,6 @@
                 <node concept="10Nm6u" id="2Qbt$1tTVUh" role="3uHU7w" />
                 <node concept="37vLTw" id="2Qbt$1tTVT0" role="3uHU7B">
                   <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2RZ2I9p$PZ0" role="3cqZAp">
-              <node concept="2OqwBi" id="2RZ2I9p$PYX" role="3clFbG">
-                <node concept="10M0yZ" id="2RZ2I9p$PYY" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="2RZ2I9p$PYZ" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="2RZ2I9p$QoB" role="37wK5m">
-                    <node concept="2OqwBi" id="2RZ2I9p$Uc7" role="3uHU7w">
-                      <node concept="2OqwBi" id="2RZ2I9p$Tet" role="2Oq$k0">
-                        <node concept="37vLTw" id="2RZ2I9p$T53" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
-                        </node>
-                        <node concept="liA8E" id="2RZ2I9p$TQU" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="2RZ2I9p$Vdk" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="2RZ2I9p$Q2r" role="3uHU7B">
-                      <property role="Xl_RC" value="PTF: using " />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

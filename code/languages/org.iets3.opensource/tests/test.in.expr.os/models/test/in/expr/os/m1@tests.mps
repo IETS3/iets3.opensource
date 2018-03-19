@@ -39,7 +39,7 @@
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
         <child id="527291771330969242" name="arg" index="24uAY8" />
       </concept>
-      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetAddOp" flags="ng" index="2iGxMk" />
+      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetWithOp" flags="ng" index="2iGxMk" />
       <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
       <concept id="6095949300270588116" name="org.iets3.core.expr.collections.structure.IsNotEmptyOp" flags="ng" index="nW$_3" />
       <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ImmutableListWithAllOp" flags="ng" index="2oUEFG" />
@@ -103,12 +103,12 @@
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
       <concept id="5070313213695398904" name="org.iets3.core.expr.collections.structure.StringJoinOp" flags="ng" index="1k5sNT" />
       <concept id="5070313213697900736" name="org.iets3.core.expr.collections.structure.StringTerminateOp" flags="ng" index="1kcTZ1" />
-      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.ImmutableSetRemoveOp" flags="ng" index="3wlHHh" />
+      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.ImmutableSetWithoutOp" flags="ng" index="3wlHHh" />
       <concept id="890435239346753529" name="org.iets3.core.expr.collections.structure.SimpleSortOp" flags="ng" index="3$AVBo">
         <property id="890435239346753553" name="order" index="3$AUoK" />
       </concept>
-      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapRemoveOp" flags="ng" index="1DE4Fa" />
-      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapPutOp" flags="ng" index="1DFusj" />
+      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapWithoutOp" flags="ng" index="1DE4Fa" />
+      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapWithOp" flags="ng" index="1DFusj" />
       <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.ImmutableMapType" flags="ng" index="1DGDPD" />
       <concept id="8448265401163111273" name="org.iets3.core.expr.collections.structure.KeyValuePair" flags="ng" index="1DGDZQ">
         <child id="8448265401163111276" name="val" index="1DGDZN" />
@@ -1676,7 +1676,7 @@
           <property role="1WP8_x" value="12" />
           <property role="1WP8_t" value="4" />
           <property role="1WP8_q" value="4" />
-          <ref role="1WP1uJ" to="700h:1RHynufnTnz" resolve="ImmutableSetAddOp" />
+          <ref role="1WP1uJ" to="700h:1RHynufnTnz" resolve="ImmutableSetWithOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="GEat54Dy09" role="3pwbzW">
@@ -1710,7 +1710,7 @@
           <property role="1WP8_x" value="8" />
           <property role="1WP8_t" value="4" />
           <property role="1WP8_q" value="4" />
-          <ref role="1WP1uJ" to="700h:3kEBq3lv4rL" resolve="ImmutableSetRemoveOp" />
+          <ref role="1WP1uJ" to="700h:3kEBq3lv4rL" resolve="ImmutableSetWithoutOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="GEat54Dy1L" role="3pwbzW">
@@ -2135,7 +2135,7 @@
           <property role="1WP8_x" value="27" />
           <property role="1WP8_t" value="5" />
           <property role="1WP8_q" value="6" />
-          <ref role="1WP1uJ" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapPutOp" />
+          <ref role="1WP1uJ" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapWithOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="GEat54Dy0X" role="3pwbzW">
@@ -2152,7 +2152,7 @@
           <property role="1WP8_x" value="4" />
           <property role="1WP8_t" value="4" />
           <property role="1WP8_q" value="4" />
-          <ref role="1WP1uJ" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapRemoveOp" />
+          <ref role="1WP1uJ" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapWithoutOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="GEat54Dy01" role="3pwbzW">
@@ -3833,7 +3833,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVAl" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="700h:1RHynufnTnz" resolve="ImmutableSetAddOp" />
+          <ref role="1bQReP" to="700h:1RHynufnTnz" resolve="ImmutableSetWithOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVDi" role="3pwbzW">
@@ -3859,7 +3859,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVAn" role="3pwfKK">
           <property role="1bQOWy" value="Partial. Missing: [confail]" />
-          <ref role="1bQReP" to="700h:3kEBq3lv4rL" resolve="ImmutableSetRemoveOp" />
+          <ref role="1bQReP" to="700h:3kEBq3lv4rL" resolve="ImmutableSetWithoutOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVEM" role="3pwbzW">
@@ -4171,7 +4171,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVAf" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapPutOp" />
+          <ref role="1bQReP" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapWithOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVDY" role="3pwbzW">
@@ -4184,7 +4184,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVAi" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapRemoveOp" />
+          <ref role="1bQReP" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapWithoutOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVDa" role="3pwbzW">
@@ -12248,6 +12248,7 @@
       </node>
     </node>
     <node concept="_ixoA" id="k9boAtUE3b" role="_iOnB" />
+    <node concept="_ixoA" id="2DnmbxUj2nC" role="_iOnB" />
     <node concept="_fkuM" id="k9boAtUNsc" role="_iOnB">
       <property role="TrG5h" value="WithAll" />
       <node concept="_fkuZ" id="k9boAtUOin" role="_fkp5">

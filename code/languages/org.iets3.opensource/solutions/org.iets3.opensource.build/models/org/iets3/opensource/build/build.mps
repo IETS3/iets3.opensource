@@ -38,6 +38,7 @@
       </concept>
       <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
         <property id="927724900262398947" name="heapSize" index="2_GNG2" />
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
@@ -388,6 +389,7 @@
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
+      <property role="2_Ic$$" value="true" />
     </node>
     <node concept="m$_wf" id="5wLtKNeSRRD" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.os" />
@@ -3526,6 +3528,12 @@
         <property role="TrG5h" value="org.iets3.core.expr.lambda.plugin" />
         <property role="3LESm3" value="0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b" />
         <property role="2GAjPV" value="false" />
+        <node concept="1SiIV0" id="hh65augxnm" role="3bR37C">
+          <node concept="3bR9La" id="hh65augxnn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
         <node concept="3rtmxn" id="$iFvHj1vql" role="3bR31x">
           <node concept="3LXTmp" id="$iFvHj1vqm" role="3rtmxm">
             <node concept="3qWCbU" id="$iFvHj1vqn" role="3LXTna">
@@ -3552,12 +3560,6 @@
                 <property role="2Ry0Am" value="org.iets3.core.expr.lambda.plugin.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="hh65augxnm" role="3bR37C">
-          <node concept="3bR9La" id="hh65augxnn" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
       </node>
