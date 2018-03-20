@@ -100,16 +100,13 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
-      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="4656991770397278600" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_position" flags="nn" index="$OBjv" />
-      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -146,9 +143,6 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -904,37 +898,6 @@
   <node concept="1M2fIO" id="7SZA7UeCEm3">
     <property role="3GE5qa" value="lambda" />
     <ref role="1M2myG" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
-    <node concept="9SLcT" id="6b_jefnKy_7" role="9SGkU">
-      <node concept="3clFbS" id="6b_jefnKy_8" role="2VODD2">
-        <node concept="3clFbJ" id="6b_jefnKy_9" role="3cqZAp">
-          <node concept="2OqwBi" id="6b_jefnKy_a" role="3clFbw">
-            <node concept="2DD5aU" id="6b_jefnKy_r" role="2Oq$k0" />
-            <node concept="2Zo12i" id="6b_jefnKy_c" role="2OqNvi">
-              <node concept="chp4Y" id="6b_jefnKy_d" role="2Zo12j">
-                <ref role="cht4Q" to="hm2y:6sdnDbSla17" resolve="Expression" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="6b_jefnKy_e" role="3clFbx">
-            <node concept="3cpWs6" id="6b_jefnKy_f" role="3cqZAp">
-              <node concept="2OqwBi" id="6b_jefnKy_h" role="3cqZAk">
-                <node concept="2DD5aU" id="6b_jefnKy_s" role="2Oq$k0" />
-                <node concept="2Zo12i" id="6b_jefnKy_j" role="2OqNvi">
-                  <node concept="chp4Y" id="2D48zR6a1f3" role="2Zo12j">
-                    <ref role="cht4Q" to="zzzn:2D48zR6a1ez" resolve="ILambdaLike" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6b_jefnKy_p" role="3cqZAp">
-          <node concept="3clFbT" id="6b_jefnKy_q" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 

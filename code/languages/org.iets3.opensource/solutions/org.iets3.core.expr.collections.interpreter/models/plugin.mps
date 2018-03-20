@@ -1271,7 +1271,7 @@
     </node>
     <node concept="qq9P1" id="7kYh9WsSh81" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapRemoveOp" />
+      <ref role="qq9wM" to="700h:7kYh9Ws_wTl" resolve="ImmutableMapWithoutOp" />
       <node concept="3dA_Gj" id="7kYh9WsSh82" role="3vQZUl">
         <node concept="9aQIb" id="7kYh9WsSh83" role="3vcmbn">
           <node concept="3clFbS" id="7kYh9WsSh84" role="9aQI4">
@@ -1336,9 +1336,181 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="hh65autbJ9" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="700h:LrvgQhjCPU" resolve="ImmutableListWithoutOp" />
+      <node concept="3dA_Gj" id="hh65autplz" role="3vQZUl">
+        <node concept="9aQIb" id="hh65autpl$" role="3vcmbn">
+          <node concept="3clFbS" id="hh65autpl_" role="9aQI4">
+            <node concept="3Y8bPT" id="hh65autplA" role="3cqZAp">
+              <node concept="3Y8bOD" id="hh65autplB" role="3Y88oQ">
+                <property role="TrG5h" value="ok" />
+              </node>
+              <node concept="3Y8bOD" id="hh65autplC" role="3Y88oQ">
+                <property role="TrG5h" value="confail" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="hh65autplD" role="3cqZAp">
+              <node concept="3cpWsn" id="hh65autplE" role="3cpWs9">
+                <property role="TrG5h" value="ctx" />
+                <node concept="3Tqbb2" id="hh65autplF" role="1tU5fm">
+                  <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+                </node>
+                <node concept="2OqwBi" id="hh65autplG" role="33vP2m">
+                  <node concept="oxGPV" id="hh65autplH" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="hh65autplI" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="hh65autplJ" role="3cqZAp">
+              <node concept="3cpWsn" id="hh65autplK" role="3cpWs9">
+                <property role="TrG5h" value="evaledContext" />
+                <node concept="3uibUv" id="hh65autplL" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="3EllGN" id="hh65autplM" role="33vP2m">
+                  <node concept="37vLTw" id="hh65autplN" role="3ElVtu">
+                    <ref role="3cqZAo" node="hh65autplE" resolve="ctx" />
+                  </node>
+                  <node concept="TvHiN" id="hh65autplO" role="3ElQJh" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="hh65autplP" role="3cqZAp">
+              <node concept="3cpWsn" id="hh65autplQ" role="3cpWs9">
+                <property role="TrG5h" value="evaledArg" />
+                <node concept="3uibUv" id="hh65autplR" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="rqRoa" id="hh65autplS" role="33vP2m">
+                  <ref role="rqRob" to="700h:thkha1Z82U" resolve="arg" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="hh65autplT" role="3cqZAp" />
+            <node concept="3cpWs8" id="hh65autplU" role="3cqZAp">
+              <node concept="3cpWsn" id="hh65autplV" role="3cpWs9">
+                <property role="TrG5h" value="coll" />
+                <node concept="3Tqbb2" id="hh65autplW" role="1tU5fm">
+                  <ref role="ehGHo" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                </node>
+                <node concept="1PxgMI" id="hh65autplX" role="33vP2m">
+                  <node concept="chp4Y" id="hh65autplY" role="3oSUPX">
+                    <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
+                  </node>
+                  <node concept="2OqwBi" id="hh65autplZ" role="1m5AlR">
+                    <node concept="37vLTw" id="hh65autpm0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="hh65autplE" resolve="ctx" />
+                    </node>
+                    <node concept="3JvlWi" id="hh65autpm1" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="hh65autpm2" role="3cqZAp">
+              <node concept="3cpWsn" id="hh65autpm3" role="3cpWs9">
+                <property role="TrG5h" value="baseType" />
+                <node concept="3Tqbb2" id="hh65autpm4" role="1tU5fm">
+                  <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                </node>
+                <node concept="2OqwBi" id="hh65autpm5" role="33vP2m">
+                  <node concept="37vLTw" id="hh65autpm6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="hh65autplV" resolve="coll" />
+                  </node>
+                  <node concept="3TrEf2" id="hh65autpm7" role="2OqNvi">
+                    <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="hh65autpm8" role="3cqZAp" />
+            <node concept="SfApY" id="hh65autpm9" role="3cqZAp">
+              <node concept="3clFbS" id="hh65autpma" role="SfCbr">
+                <node concept="3clFbJ" id="hh65autpmb" role="3cqZAp">
+                  <node concept="3clFbS" id="hh65autpmc" role="3clFbx">
+                    <node concept="3YmQ6b" id="hh65autpmd" role="3cqZAp">
+                      <ref role="1nYgiw" node="hh65autplB" resolve="ok" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="hh65autpme" role="3clFbw">
+                    <ref role="37wK5l" to="oq0c:252QIDylZkr" resolve="isValidFatal" />
+                    <ref role="1Pybhc" to="oq0c:252QIDylZdO" resolve="TypeConstraintHelper" />
+                    <node concept="37vLTw" id="hh65autpmf" role="37wK5m">
+                      <ref role="3cqZAo" node="hh65autpm3" resolve="baseType" />
+                    </node>
+                    <node concept="2OqwBi" id="hh65autpmg" role="37wK5m">
+                      <node concept="2OqwBi" id="hh65autpmh" role="2Oq$k0">
+                        <node concept="oxGPV" id="hh65autpmi" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="hh65autpmj" role="2OqNvi">
+                          <ref role="3Tt5mk" to="700h:thkha1Z82U" resolve="arg" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="hh65autpmk" role="2OqNvi">
+                        <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="hh65autpml" role="37wK5m">
+                      <ref role="3cqZAo" node="hh65autplQ" resolve="evaledArg" />
+                    </node>
+                    <node concept="oxNuS" id="hh65autpmm" role="37wK5m" />
+                    <node concept="10M0yZ" id="hh65autpmn" role="37wK5m">
+                      <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
+                      <ref role="1PxDUh" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                    </node>
+                    <node concept="3fckFw" id="hh65autpmo" role="37wK5m" />
+                    <node concept="2dz_u5" id="hh65autpmp" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="hh65autpmq" role="TEbGg">
+                <node concept="3cpWsn" id="hh65autpmr" role="TDEfY">
+                  <property role="TrG5h" value="cfe" />
+                  <node concept="3uibUv" id="hh65autpms" role="1tU5fm">
+                    <ref role="3uigEE" to="oq0c:3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="hh65autpmt" role="TDEfX">
+                  <node concept="3YmQ6b" id="hh65autpmu" role="3cqZAp">
+                    <ref role="1nYgiw" node="hh65autplC" resolve="confail" />
+                  </node>
+                  <node concept="YS8fn" id="hh65autpmv" role="3cqZAp">
+                    <node concept="37vLTw" id="hh65autpmw" role="YScLw">
+                      <ref role="3cqZAo" node="hh65autpmr" resolve="cfe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="hh65autpmx" role="3cqZAp" />
+            <node concept="3cpWs6" id="hh65autpmz" role="3cqZAp">
+              <node concept="2OqwBi" id="hh65autpm$" role="3cqZAk">
+                <node concept="1eOMI4" id="hh65autpm_" role="2Oq$k0">
+                  <node concept="10QFUN" id="hh65autpmA" role="1eOMHV">
+                    <node concept="37vLTw" id="hh65autpmB" role="10QFUP">
+                      <ref role="3cqZAo" node="hh65autplK" resolve="evaledContext" />
+                    </node>
+                    <node concept="3uibUv" id="hh65auttPC" role="10QFUM">
+                      <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="hh65autpmD" role="2OqNvi">
+                  <ref role="37wK5l" to="j10v:~PVector.minus(java.lang.Object):org.pcollections.PVector" resolve="minus" />
+                  <node concept="37vLTw" id="hh65autpmE" role="37wK5m">
+                    <ref role="3cqZAo" node="hh65autplQ" resolve="evaledArg" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="3kEBq3lvp2F" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="700h:3kEBq3lv4rL" resolve="ImmutableSetRemoveOp" />
+      <ref role="qq9wM" to="700h:3kEBq3lv4rL" resolve="ImmutableSetWithoutOp" />
       <node concept="3dA_Gj" id="3kEBq3lvviM" role="3vQZUl">
         <node concept="9aQIb" id="3kEBq3lvvj3" role="3vcmbn">
           <node concept="3clFbS" id="3kEBq3lvvj4" role="9aQI4">
@@ -1511,7 +1683,7 @@
     </node>
     <node concept="qq9P1" id="1RHynufnYD5" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="700h:1RHynufnTnz" resolve="ImmutableSetAddOp" />
+      <ref role="qq9wM" to="700h:1RHynufnTnz" resolve="ImmutableSetWithOp" />
       <node concept="3dA_Gj" id="1RHynufo73s" role="3vQZUl">
         <node concept="9aQIb" id="1RHynufo73u" role="3vcmbn">
           <node concept="3clFbS" id="1RHynufo73w" role="9aQI4">
@@ -2099,7 +2271,7 @@
     </node>
     <node concept="qq9P1" id="7kYh9WsSh8F" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapPutOp" />
+      <ref role="qq9wM" to="700h:7kYh9Ws$Uec" resolve="ImmutableMapWithOp" />
       <node concept="3dA_Gj" id="7kYh9WsSh8G" role="3vQZUl">
         <node concept="9aQIb" id="7kYh9WsSh8H" role="3vcmbn">
           <node concept="3clFbS" id="7kYh9WsSh8I" role="9aQI4">

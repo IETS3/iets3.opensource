@@ -2,7 +2,7 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -511,15 +511,15 @@
   </node>
   <node concept="1TIwiD" id="7kYh9Ws$Uec">
     <property role="3GE5qa" value="map.immutable" />
-    <property role="TrG5h" value="ImmutableMapPutOp" />
-    <property role="34LRSv" value="put" />
+    <property role="TrG5h" value="ImmutableMapWithOp" />
+    <property role="34LRSv" value="with" />
     <property role="EcuMT" value="8448265401163555724" />
     <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
   <node concept="1TIwiD" id="7kYh9Ws_wTl">
     <property role="3GE5qa" value="map.immutable" />
-    <property role="TrG5h" value="ImmutableMapRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="TrG5h" value="ImmutableMapWithoutOp" />
+    <property role="34LRSv" value="without" />
     <property role="EcuMT" value="8448265401163714133" />
     <ref role="1TJDcQ" node="7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
   </node>
@@ -658,8 +658,8 @@
   </node>
   <node concept="1TIwiD" id="1RHynufnTnz">
     <property role="3GE5qa" value="set.immutable" />
-    <property role="TrG5h" value="ImmutableSetAddOp" />
-    <property role="34LRSv" value="add" />
+    <property role="TrG5h" value="ImmutableSetWithOp" />
+    <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179855331" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
@@ -816,8 +816,8 @@
   <node concept="1TIwiD" id="3kEBq3lv4rL">
     <property role="EcuMT" value="3831047747134047985" />
     <property role="3GE5qa" value="set.immutable" />
-    <property role="TrG5h" value="ImmutableSetRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="TrG5h" value="ImmutableSetWithoutOp" />
+    <property role="34LRSv" value="without" />
     <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
   </node>
   <node concept="1TIwiD" id="5ipapt3qQ3k">
@@ -996,14 +996,15 @@
     <property role="EcuMT" value="7905426115408401995" />
     <property role="3GE5qa" value="set.common" />
     <property role="TrG5h" value="SetType" />
-    <property role="34LRSv" value="set" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
   </node>
   <node concept="1TIwiD" id="LrvgQhjCPU">
     <property role="EcuMT" value="890442848561696122" />
     <property role="3GE5qa" value="list.immutable" />
-    <property role="TrG5h" value="ImmutableListRemoveOp" />
-    <property role="34LRSv" value="remove" />
+    <property role="TrG5h" value="ImmutableListWithoutOp" />
+    <property role="34LRSv" value="without" />
     <ref role="1TJDcQ" node="1RHynufnBSS" resolve="ImmutableListOneArgOp" />
   </node>
   <node concept="1TIwiD" id="6IBT1wUeDJz">
