@@ -461,6 +461,9 @@
     <node concept="PrWs8" id="5WtF_93$On" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
+    <node concept="PrWs8" id="3QFQUsNNS5M" role="PzmwI">
+      <ref role="PrY4T" node="3QFQUsNJoM0" resolve="IProvidePathConstraints" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6NJfo6_rTeO">
     <property role="TrG5h" value="IBigExpression" />
@@ -1180,6 +1183,9 @@
     <node concept="PrWs8" id="DEavrYrKDz" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
+    <node concept="PrWs8" id="5fy$GmV7myq" role="PzmwI">
+      <ref role="PrY4T" node="3QFQUsNJoM0" resolve="IProvidePathConstraints" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
     <property role="3GE5qa" value="alt" />
@@ -1686,6 +1692,26 @@
   <node concept="PlHQZ" id="4yaQL1YeoSK">
     <property role="EcuMT" value="5227231181400542768" />
     <property role="TrG5h" value="INameQualifier" />
+  </node>
+  <node concept="PlHQZ" id="3QFQUsNJoM0">
+    <property role="EcuMT" value="4443886968505207936" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IProvidePathConstraints" />
+  </node>
+  <node concept="1TIwiD" id="5fy$GmTPJXq">
+    <property role="3GE5qa" value="binary.p1100" />
+    <property role="TrG5h" value="ModExpression" />
+    <property role="34LRSv" value="%" />
+    <property role="EcuMT" value="6044555027808714586" />
+    <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="PrWs8" id="5fy$GmTPJXr" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="11MkwAJtgfD">
+    <property role="EcuMT" value="1185099853503726569" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IAssertConstraints" />
   </node>
 </model>
 
