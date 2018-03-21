@@ -22,6 +22,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="y6bu" ref="r:3549c9a9-0be5-4059-955f-f0d4bbef8dae(org.iets3.core.expr.collections.plugin)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
+    <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -142,7 +143,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -6655,69 +6658,100 @@
                 <ref role="3cqZAo" node="v9lBEVhqNj" resolve="subjectList" />
               </node>
             </node>
-            <node concept="3cpWs8" id="v9lBEVhrZI" role="3cqZAp">
-              <node concept="3cpWsn" id="v9lBEVhrZJ" role="3cpWs9">
-                <property role="TrG5h" value="set" />
-                <node concept="3uibUv" id="6bG6MAFDIHL" role="1tU5fm">
-                  <ref role="3uigEE" to="j10v:~PSet" resolve="PSet" />
-                </node>
-                <node concept="2YIFZM" id="6bG6MAFDITE" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.set():org.pcollections.PSet" resolve="set" />
-                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="v9lBEVhsjg" role="3cqZAp">
-              <node concept="37vLTI" id="2KEm7E5MH_e" role="3clFbG">
-                <node concept="37vLTw" id="2KEm7E5MHBX" role="37vLTJ">
-                  <ref role="3cqZAo" node="v9lBEVhrZJ" resolve="set" />
-                </node>
-                <node concept="2OqwBi" id="v9lBEVhsqk" role="37vLTx">
-                  <node concept="37vLTw" id="v9lBEVhsje" role="2Oq$k0">
-                    <ref role="3cqZAo" node="v9lBEVhrZJ" resolve="set" />
+            <node concept="3cpWs8" id="7bfEHZ$rC_8" role="3cqZAp">
+              <node concept="3cpWsn" id="7bfEHZ$rC_9" role="3cpWs9">
+                <property role="TrG5h" value="l" />
+                <node concept="3uibUv" id="7bfEHZ$rC_a" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="7bfEHZ$rKf$" role="11_B2D">
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                   </node>
-                  <node concept="liA8E" id="v9lBEVht3G" role="2OqNvi">
-                    <ref role="37wK5l" to="j10v:~PSet.plusAll(java.util.Collection):org.pcollections.PSet" resolve="plusAll" />
-                    <node concept="37vLTw" id="v9lBEVht74" role="37wK5m">
-                      <ref role="3cqZAo" node="v9lBEVhqNj" resolve="subjectList" />
+                </node>
+                <node concept="2ShNRf" id="7bfEHZ$s0gz" role="33vP2m">
+                  <node concept="1pGfFk" id="7bfEHZ$s0$A" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                    <node concept="3uibUv" id="7bfEHZ$s0Yg" role="1pMfVU">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="v9lBEVhu8O" role="3cqZAp">
-              <node concept="3cpWsn" id="v9lBEVhu8P" role="3cpWs9">
-                <property role="TrG5h" value="res" />
-                <node concept="3uibUv" id="6bG6MAFDIRM" role="1tU5fm">
-                  <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
+            <node concept="3cpWs8" id="7bfEHZ$s9Xx" role="3cqZAp">
+              <node concept="3cpWsn" id="7bfEHZ$s9Xy" role="3cpWs9">
+                <property role="TrG5h" value="it" />
+                <node concept="3uibUv" id="7bfEHZ$s9Xv" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
+                  <node concept="3uibUv" id="7bfEHZ$saiC" role="11_B2D">
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                  </node>
                 </node>
-                <node concept="2YIFZM" id="6bG6MAFDJ6R" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
-                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                <node concept="2OqwBi" id="7bfEHZ$saFH" role="33vP2m">
+                  <node concept="37vLTw" id="7bfEHZ$san6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="v9lBEVhqNj" resolve="subjectList" />
+                  </node>
+                  <node concept="liA8E" id="7bfEHZ$sb6Z" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="v9lBEVhutq" role="3cqZAp">
-              <node concept="37vLTI" id="v9lBEVhuzE" role="3clFbG">
-                <node concept="2OqwBi" id="v9lBEVhuAO" role="37vLTx">
-                  <node concept="37vLTw" id="v9lBEVhuzU" role="2Oq$k0">
-                    <ref role="3cqZAo" node="v9lBEVhu8P" resolve="res" />
-                  </node>
-                  <node concept="liA8E" id="v9lBEVhuSg" role="2OqNvi">
-                    <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection):org.pcollections.PVector" resolve="plusAll" />
-                    <node concept="37vLTw" id="v9lBEVhuVw" role="37wK5m">
-                      <ref role="3cqZAo" node="v9lBEVhrZJ" resolve="set" />
+            <node concept="2$JKZl" id="7bfEHZ$sbNH" role="3cqZAp">
+              <node concept="3clFbS" id="7bfEHZ$sbNJ" role="2LFqv$">
+                <node concept="3clFbF" id="7bfEHZ$scOj" role="3cqZAp">
+                  <node concept="2OqwBi" id="7bfEHZ$sdkL" role="3clFbG">
+                    <node concept="37vLTw" id="7bfEHZ$scOi" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7bfEHZ$rC_9" resolve="l" />
+                    </node>
+                    <node concept="liA8E" id="7bfEHZ$sdQF" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="2OqwBi" id="7bfEHZ$semo" role="37wK5m">
+                        <node concept="37vLTw" id="7bfEHZ$see3" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7bfEHZ$s9Xy" resolve="it" />
+                        </node>
+                        <node concept="liA8E" id="7bfEHZ$sfmi" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="v9lBEVhuto" role="37vLTJ">
-                  <ref role="3cqZAo" node="v9lBEVhu8P" resolve="res" />
+              </node>
+              <node concept="2OqwBi" id="7bfEHZ$sci8" role="2$JKZa">
+                <node concept="37vLTw" id="7bfEHZ$sc9e" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7bfEHZ$s9Xy" resolve="it" />
+                </node>
+                <node concept="liA8E" id="7bfEHZ$sc$$" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="v9lBEVhv2A" role="3cqZAp">
-              <node concept="37vLTw" id="v9lBEVhv39" role="3cqZAk">
-                <ref role="3cqZAo" node="v9lBEVhu8P" resolve="res" />
+            <node concept="3cpWs6" id="7bfEHZ$dIjx" role="3cqZAp">
+              <node concept="2YIFZM" id="7bfEHZ$gXUn" role="3cqZAk">
+                <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
+                <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                <node concept="2OqwBi" id="7bfEHZ$skcj" role="37wK5m">
+                  <node concept="2OqwBi" id="7bfEHZ$shwI" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7bfEHZ$sgck" role="2Oq$k0">
+                      <node concept="37vLTw" id="7bfEHZ$rJUn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7bfEHZ$rC_9" resolve="l" />
+                      </node>
+                      <node concept="liA8E" id="7bfEHZ$sgN5" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~Collection.stream():java.util.stream.Stream" resolve="stream" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7bfEHZ$sjjy" role="2OqNvi">
+                      <ref role="37wK5l" to="1ctc:~Stream.distinct():java.util.stream.Stream" resolve="distinct" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7bfEHZ$sn3$" role="2OqNvi">
+                    <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector):java.lang.Object" resolve="collect" />
+                    <node concept="2YIFZM" id="7bfEHZ$soo1" role="37wK5m">
+                      <ref role="37wK5l" to="1ctc:~Collectors.toList():java.util.stream.Collector" resolve="toList" />
+                      <ref role="1Pybhc" to="1ctc:~Collectors" resolve="Collectors" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
