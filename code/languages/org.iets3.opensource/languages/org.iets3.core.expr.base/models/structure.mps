@@ -1687,5 +1687,11 @@
     <property role="EcuMT" value="5227231181400542768" />
     <property role="TrG5h" value="INameQualifier" />
   </node>
+  <node concept="1TIwiD" id="2ufoZQIKHqp">
+    <property role="EcuMT" value="2850607030358693529" />
+    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+    <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
+  </node>
 </model>
 
