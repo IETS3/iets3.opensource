@@ -30,7 +30,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -83,6 +85,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7425695345928347719" />
+    <property role="34LRSv" value="block" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3z0ZJXm0Mh2" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
@@ -1536,13 +1539,16 @@
   </node>
   <node concept="PlHQZ" id="6BCTLIjCra2">
     <property role="EcuMT" value="7631603674206286466" />
-    <property role="TrG5h" value="IControlAdvancedFeatures" />
+    <property role="TrG5h" value="IControlAdvancedFeatures_old" />
     <node concept="2aEySx" id="3WRc5uujLwE" role="lGtFl">
       <node concept="19SGf9" id="3WRc5uujLwF" role="2aEySw">
         <node concept="19SUe$" id="3WRc5uujLwG" role="19SJt6">
           <property role="19SUeA" value="Only works for root nodes." />
         </node>
       </node>
+    </node>
+    <node concept="asaX9" id="2gD$V1Yh9A_" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.base&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="ORfz$DS6_k">
@@ -1679,6 +1685,10 @@
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
   </node>
+  <node concept="PlHQZ" id="aPhVmWYjmk">
+    <property role="EcuMT" value="195141004745586068" />
+    <property role="TrG5h" value="ICanBeLValue" />
+  </node>
   <node concept="PlHQZ" id="3QFQUsNJoM0">
     <property role="EcuMT" value="4443886968505207936" />
     <property role="3GE5qa" value="contract" />
@@ -1698,10 +1708,6 @@
     <property role="EcuMT" value="1185099853503726569" />
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="IAssertConstraints" />
-  </node>
-  <node concept="PlHQZ" id="aPhVmWYjmk">
-    <property role="EcuMT" value="195141004745586068" />
-    <property role="TrG5h" value="ICanBeLValue" />
   </node>
 </model>
 

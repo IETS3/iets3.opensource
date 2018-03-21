@@ -5,7 +5,7 @@
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="1" />
+    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="2" />
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="-1" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
@@ -4152,7 +4152,7 @@
           </node>
           <node concept="mLuIC" id="7Wa2sv468yR" role="2zM23F">
             <node concept="2gteSX" id="7Wa2sv468yS" role="2gteSx">
-              <property role="2gteSR" value="0.5555555556" />
+              <property role="2gteSR" value="0.5555555555" />
               <property role="2gteSE" value="0.5555555556" />
             </node>
             <node concept="2gteS_" id="7Wa2sv468yT" role="2gteVg">
@@ -4173,7 +4173,7 @@
           <node concept="mLuIC" id="7Wa2sv4696o" role="2zM23F">
             <node concept="2gteSX" id="7Wa2sv4696p" role="2gteSx">
               <property role="2gteSR" value="-0.5555555556" />
-              <property role="2gteSE" value="-0.5555555556" />
+              <property role="2gteSE" value="-0.5555555555" />
             </node>
             <node concept="2gteS_" id="7Wa2sv4696q" role="2gteVg">
               <property role="2gteVv" value="inf" />
@@ -5620,7 +5620,7 @@
           <node concept="mLuIC" id="63mrHUnQhbj" role="2zM23F">
             <node concept="2gteSX" id="63mrHUnQhbk" role="2gteSx">
               <property role="2gteSR" value="0.0000000000" />
-              <property role="2gteSE" value="0.3333333333" />
+              <property role="2gteSE" value="0.3333333334" />
             </node>
             <node concept="2gteS_" id="63mrHUnQhbl" role="2gteVg">
               <property role="2gteVv" value="inf" />
