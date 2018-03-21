@@ -1068,5 +1068,15 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="52nXqzMoTke">
+    <property role="EcuMT" value="5807380350487467278" />
+    <property role="3GE5qa" value="set.immutable" />
+    <property role="TrG5h" value="ImmutableSetWithAllOp" />
+    <property role="34LRSv" value="withAll" />
+    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
+    <node concept="PrWs8" id="52nXqzMoTkf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+  </node>
 </model>
 
