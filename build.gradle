@@ -17,11 +17,7 @@ if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
 } else {
     //on teamcity we are in a CI build
-    if (project.hasProperty("teamcity")) {
-        ext.ciBuild = true
-    } else {
-        ext.ciBuild = false
-    }
+    ext.ciBuild = project.hasProperty("teamcity")
 }
 
 
@@ -30,6 +26,20 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
 ext.mpsVersion = '2017.3.5'
+
+def mbeddrVersion = "1.0+"
+
+// if building a against a special branch from mbeddr is required add the name here
+// the name is enough no trailing "." is required, also the plain name from git can
+// be used here. No need to convert "/" the script will take care of that.
+def mbeddrBranch = ""
+
+
+if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
+    ext.mbeddrVersionSelector = "${mbeddrBranch.replace("/", "-")}.${mbeddrVersion}"
+} else {
+    ext.mbeddrVersionSelector = mbeddrVersion
+}
 
 
 // Project version
@@ -47,13 +57,12 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {
-        println "Local SNAPSHOT version forced"
-        ext.mbeddrVersion = '1.0-SNAPSHOT'
+        logger.log(LogLevel.WARN, "Local SNAPSHOT version forced")
+        ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
     }
-    else {
-        //default version
-        ext.mbeddrVersion = '1.0.+'
-    }
+} else {
+    logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
+    ext.mbeddrVersionSelector = ext.mbeddrVersion
 }
 
 
@@ -83,7 +92,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mpsArtifacts "com.mbeddr:platform:$mbeddrVersion"
+    mpsArtifacts "com.mbeddr:platform:$mbeddrVersionSelector"
 }
 
 repositories {
