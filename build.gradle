@@ -1,6 +1,8 @@
 import de.itemis.mps.gradle.GenerateLibrariesXml
 import de.itemis.mps.gradle.GitBasedVersioning
 
+import java.time.LocalDateTime
+
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
@@ -10,6 +12,10 @@ buildscript {
     dependencies {
         classpath 'de.itemis.mps:mps-gradle-plugin:1.0.55.678ba7a'
     }
+}
+
+plugins {
+    id "co.riiid.gradle" version "0.4.2"
 }
 
 // detect if we are in a CI build
@@ -79,6 +85,7 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 
 apply plugin: 'maven-publish'
 apply plugin: 'base'
+
 
 task wrapper(type: Wrapper) {
     gradleVersion '4.4.1'
@@ -252,3 +259,20 @@ task setup {
 
 defaultTasks 'ant-clean-and-build'
 
+LocalDateTime t = LocalDateTime.now()
+
+def releaseNotes = """Automated Nighly build from ${t as String}."""
+
+github {
+    owner = 'IETS3'
+    repo = 'iets3.opensource'
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    tagName = 'nightly-release-' + version
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nighly Build ' + version
+    body = releaseNotes
+    prerelease = true
+    assets = packageOpenSource.outputs.files
+}
+
+githubRelease.dependsOn packageOpenSource
