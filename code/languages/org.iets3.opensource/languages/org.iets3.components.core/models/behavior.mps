@@ -1629,7 +1629,7 @@
                             </node>
                             <node concept="v3k3i" id="7Atos1yb5cG" role="2OqNvi">
                               <node concept="chp4Y" id="7Atos1yb5j6" role="v3oSu">
-                                <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                                <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
                               </node>
                             </node>
                           </node>
@@ -1690,7 +1690,7 @@
                               </node>
                               <node concept="v3k3i" id="7Atos1ybakX" role="2OqNvi">
                                 <node concept="chp4Y" id="7Atos1ybasL" role="v3oSu">
-                                  <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                                  <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
                                 </node>
                               </node>
                             </node>
@@ -2036,6 +2036,22 @@
         <node concept="TZ5HA" id="5kRSWVwAjsW" role="TZ5H$">
           <node concept="1dT_AC" id="5kRSWVwAjsX" role="1dT_Ay">
             <property role="1dT_AB" value="Palette (all entries, etc.) can be placed in behavior / other place that can be overriden." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1WGIGKe$jRM" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getPaletteEntryTitle" />
+      <node concept="3Tm1VV" id="1WGIGKe$jRN" role="1B3o_S" />
+      <node concept="17QB3L" id="1WGIGKe$nwn" role="3clF45" />
+      <node concept="3clFbS" id="1WGIGKe$jRP" role="3clF47">
+        <node concept="3cpWs6" id="1WGIGKe$nxQ" role="3cqZAp">
+          <node concept="2OqwBi" id="1WGIGKe$nQC" role="3cqZAk">
+            <node concept="13iPFW" id="1WGIGKe$ny9" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1WGIGKe$oDp" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
           </node>
         </node>
       </node>
@@ -3622,7 +3638,7 @@
             <property role="TrG5h" value="connectedToMe" />
             <node concept="A3Dl8" id="7Atos1y665p" role="1tU5fm">
               <node concept="3Tqbb2" id="7Atos1y665s" role="A3Ik2">
-                <ref role="ehGHo" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                <ref role="ehGHo" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
               </node>
             </node>
             <node concept="2OqwBi" id="7Atos1y666w" role="33vP2m">
@@ -3818,7 +3834,7 @@
         <property role="TrG5h" value="allConnectors" />
         <node concept="A3Dl8" id="7Atos1y641D" role="1tU5fm">
           <node concept="3Tqbb2" id="7Atos1y641P" role="A3Ik2">
-            <ref role="ehGHo" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+            <ref role="ehGHo" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
           </node>
         </node>
       </node>
@@ -4304,7 +4320,7 @@
   </node>
   <node concept="13h7C7" id="mIQkxg5ZT3">
     <property role="3GE5qa" value="components.substructure" />
-    <ref role="13h7C2" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+    <ref role="13h7C2" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
     <node concept="13i0hz" id="mIQkxg5ZT6" role="13h7CS">
       <property role="TrG5h" value="getPorts" />
       <property role="13i0it" value="true" />
@@ -5363,7 +5379,7 @@
           <node concept="2ShNRf" id="1WCh2th1D4K" role="3clFbG">
             <node concept="2HTt$P" id="1WCh2th1D4L" role="2ShVmc">
               <node concept="35c_gC" id="1WCh2th1D4M" role="2HTEbv">
-                <ref role="35c_gD" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                <ref role="35c_gD" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
               </node>
               <node concept="3bZ5Sz" id="1WCh2th1D4N" role="2HTBi0" />
             </node>
@@ -6272,7 +6288,7 @@
                             </node>
                             <node concept="v3k3i" id="7Atos1ybSdT" role="2OqNvi">
                               <node concept="chp4Y" id="7Atos1ybSdU" role="v3oSu">
-                                <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                                <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
                               </node>
                             </node>
                           </node>
@@ -6353,7 +6369,7 @@
                               </node>
                               <node concept="v3k3i" id="7Atos1ybVRF" role="2OqNvi">
                                 <node concept="chp4Y" id="7Atos1ybVRG" role="v3oSu">
-                                  <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractConnector" />
+                                  <ref role="cht4Q" to="w9y2:mIQkxg5ZSA" resolve="AbstractPortToPortConnector" />
                                 </node>
                               </node>
                             </node>
