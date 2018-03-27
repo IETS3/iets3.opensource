@@ -7,10 +7,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="34lm" ref="r:04cb519f-2059-4c60-9414-918c7823fd79(org.iets3.core.expr.doc.structure)" />
     <import index="srqo" ref="r:5957d4c9-cc37-4d16-870b-eb83bcfdff2c(org.iets3.core.expr.doc.behavior)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -106,6 +104,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -655,6 +654,56 @@
     </node>
     <node concept="1SWQZ3" id="C_BpXjRQWQ" role="lGtFl">
       <property role="1SWRpm" value="FRAME" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4vZ65iKi$S$">
+    <property role="TrG5h" value="AttachBookmark" />
+    <ref role="2ZfgGC" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    <node concept="2S6ZIM" id="4vZ65iKi$S_" role="2ZfVej">
+      <node concept="3clFbS" id="4vZ65iKi$SA" role="2VODD2">
+        <node concept="3clFbF" id="4vZ65iKi_1A" role="3cqZAp">
+          <node concept="Xl_RD" id="4vZ65iKi_1_" role="3clFbG">
+            <property role="Xl_RC" value="Attach Bookmark" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4vZ65iKi$SB" role="2ZfgGD">
+      <node concept="3clFbS" id="4vZ65iKi$SC" role="2VODD2">
+        <node concept="3clFbF" id="4vZ65iKiBFj" role="3cqZAp">
+          <node concept="2OqwBi" id="4vZ65iKiCx9" role="3clFbG">
+            <node concept="2OqwBi" id="4vZ65iKiBR1" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4vZ65iKiBFi" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4vZ65iKiCc$" role="2OqNvi">
+                <node concept="3CFYIy" id="4vZ65iKiCo2" role="3CFYIz">
+                  <ref role="3CFYIx" to="34lm:4vZ65iKiy7Y" resolve="BookmarkAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="zfrQC" id="4vZ65iKiCRf" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="4vZ65iKi_1q" role="lGtFl">
+      <property role="1SWRpm" value="BOOKMARKS" />
+    </node>
+    <node concept="2SaL7w" id="4vZ65iKi_rc" role="2ZfVeh">
+      <node concept="3clFbS" id="4vZ65iKi_rd" role="2VODD2">
+        <node concept="3clFbF" id="4vZ65iKi_yx" role="3cqZAp">
+          <node concept="2OqwBi" id="4vZ65iKiAOa" role="3clFbG">
+            <node concept="2OqwBi" id="4vZ65iKi_Oj" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4vZ65iKi_yw" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4vZ65iKiAgG" role="2OqNvi">
+                <node concept="3CFYIy" id="4vZ65iKiAsQ" role="3CFYIz">
+                  <ref role="3CFYIx" to="34lm:4vZ65iKiy7Y" resolve="BookmarkAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4vZ65iKiBut" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
