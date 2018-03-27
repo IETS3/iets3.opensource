@@ -225,6 +225,14 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
+task patchHeapSize4TestsExec {
+    doLast {
+        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
+    }
+}
+tasks['ant-build-and-run-tests'].dependsOn patchHeapSize4TestsExec		
+		
 check.dependsOn 'ant-build-and-run-tests'
 
 task generateLibrariesXml(type: GenerateLibrariesXml) {
