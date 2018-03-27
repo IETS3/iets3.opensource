@@ -1178,12 +1178,15 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="2i_9vDmzrmz" role="13h7CS">
-      <property role="TrG5h" value="getAssertedConstraints" />
-      <ref role="13i0hy" to="pbu6:11MkwAJtgkq" resolve="getAssertedConstraints" />
-      <node concept="3Tm1VV" id="2i_9vDmzrm$" role="1B3o_S" />
-      <node concept="3clFbS" id="2i_9vDmzrmA" role="3clF47">
-        <node concept="3clFbH" id="2i_9vDmzt$n" role="3cqZAp" />
+    <node concept="13i0hz" id="5lNY$88W_3F" role="13h7CS">
+      <property role="TrG5h" value="getPreconditions" />
+      <node concept="3Tm1VV" id="5lNY$88W_3G" role="1B3o_S" />
+      <node concept="_YKpA" id="5lNY$88WACS" role="3clF45">
+        <node concept="3Tqbb2" id="5lNY$88WAD6" role="_ZDj9">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5lNY$88W_3I" role="3clF47">
         <node concept="3cpWs8" id="2i_9vDmzryY" role="3cqZAp">
           <node concept="3cpWsn" id="2i_9vDmzrz1" role="3cpWs9">
             <property role="TrG5h" value="contract" />
@@ -1425,38 +1428,28 @@
           </node>
         </node>
       </node>
-      <node concept="_YKpA" id="2i_9vDmzryN" role="3clF45">
-        <node concept="3Tqbb2" id="2i_9vDmzryO" role="_ZDj9">
-          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
-        </node>
-      </node>
     </node>
-    <node concept="13i0hz" id="2i_9vDmznt6" role="13h7CS">
-      <property role="TrG5h" value="getAssertionErrorMessage" />
-      <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="pbu6:3QFQUsNx0Ca" resolve="getAssertionErrorMessage" />
-      <node concept="3clFbS" id="2i_9vDmznt9" role="3clF47">
-        <node concept="3clFbF" id="2i_9vDmznFX" role="3cqZAp">
-          <node concept="3cpWs3" id="2i_9vDmzrdt" role="3clFbG">
-            <node concept="Xl_RD" id="2i_9vDmzrdY" role="3uHU7w">
-              <property role="Xl_RC" value=" is not guaranteed. For instance, the followig case would violate it:\n%model%" />
-            </node>
-            <node concept="3cpWs3" id="2i_9vDmzpnO" role="3uHU7B">
-              <node concept="Xl_RD" id="2i_9vDmznFW" role="3uHU7B">
-                <property role="Xl_RC" value="Precondition of " />
-              </node>
-              <node concept="2OqwBi" id="2i_9vDmzpEt" role="3uHU7w">
-                <node concept="13iPFW" id="2i_9vDmzpnZ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="2i_9vDmzqj6" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
-                </node>
-              </node>
+    <node concept="13i0hz" id="5lNY$88SS3$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="5lNY$88SS3_" role="1B3o_S" />
+      <node concept="3clFbS" id="5lNY$88SS3J" role="3clF47">
+        <node concept="3clFbF" id="5lNY$88STLd" role="3cqZAp">
+          <node concept="2YIFZM" id="5lNY$88SVs1" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="5lNY$88SVs$" role="37wK5m" />
+            <node concept="Xl_RD" id="5lNY$88SVyZ" role="37wK5m">
+              <property role="Xl_RC" value="precondition" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="2i_9vDmznFQ" role="3clF45" />
-      <node concept="3Tm1VV" id="2i_9vDmznFR" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5lNY$88SS3K" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="49WTic8hEVY">
