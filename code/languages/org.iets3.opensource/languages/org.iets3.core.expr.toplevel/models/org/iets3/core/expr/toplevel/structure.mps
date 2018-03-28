@@ -239,6 +239,9 @@
     <node concept="PrWs8" id="7OzZ9xIa98$" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="1996aX6mmQA" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
