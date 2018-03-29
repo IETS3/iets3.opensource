@@ -18985,6 +18985,40 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1996aX6uZ1A" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isVariableTypeInferred" />
+      <node concept="3Tm1VV" id="1996aX6uZ1B" role="1B3o_S" />
+      <node concept="10P_77" id="1996aX6uZdT" role="3clF45" />
+      <node concept="3clFbS" id="1996aX6uZ1D" role="3clF47">
+        <node concept="3clFbF" id="1996aX6uZhA" role="3cqZAp">
+          <node concept="3clFbT" id="1996aX6uZh_" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="1996aX6uZi1" role="lGtFl">
+        <node concept="TZ5HA" id="1996aX6uZi2" role="TZ5H$">
+          <node concept="1dT_AC" id="1996aX6uZi3" role="1dT_Ay">
+            <property role="1dT_AB" value="Constraints are only collected from Types declared by the user, not from those" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1996aX6uZiE" role="TZ5H$">
+          <node concept="1dT_AC" id="1996aX6uZiF" role="1dT_Ay">
+            <property role="1dT_AB" value="inferred automatically by the Type System. This is a precaution necessary to" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1996aX6uZjA" role="TZ5H$">
+          <node concept="1dT_AC" id="1996aX6uZjB" role="1dT_Ay">
+            <property role="1dT_AB" value="protect the verification engine from bugs in the type system." />
+          </node>
+        </node>
+        <node concept="x79VA" id="1996aX6uZi4" role="3nqlJM">
+          <property role="x79VB" value="true, when the type returned by getVariableType() is inferred, false if it was declared by the user." />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="5GL30CqN0bI" role="13h7CW">
       <node concept="3clFbS" id="5GL30CqN0bJ" role="2VODD2" />
     </node>
