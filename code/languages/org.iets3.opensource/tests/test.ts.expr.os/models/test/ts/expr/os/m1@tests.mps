@@ -19,6 +19,7 @@
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="0" />
   </languages>
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
@@ -462,6 +463,24 @@
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
       </concept>
       <concept id="543046448977223537" name="org.iets3.core.expr.simpleTypes.tests.structure.EqClassProducer" flags="ng" index="Sm_qJ" />
+    </language>
+    <language id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt">
+      <concept id="5955298286239347343" name="org.iets3.core.expr.adt.structure.AlgebraicType" flags="ng" index="1Kr8EM">
+        <reference id="5955298286239347344" name="declaration" index="1Kr8EH" />
+      </concept>
+      <concept id="5955298286239339288" name="org.iets3.core.expr.adt.structure.AlgebraicDeclaration" flags="ng" index="1KraG_">
+        <child id="5955298286239340413" name="constructors" index="1KraX0" />
+      </concept>
+      <concept id="5955298286239340412" name="org.iets3.core.expr.adt.structure.AlgebraicConstructor" flags="ng" index="1KraX1">
+        <child id="5955298286239340417" name="arguments" index="1KraYW" />
+      </concept>
+      <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicInstance" flags="ng" index="1KrJjp">
+        <child id="5955298286239452394" name="args" index="1KrJjn" />
+        <child id="5955298286239452566" name="type" index="1KrJmF" />
+      </concept>
+      <concept id="5955298286239373077" name="org.iets3.core.expr.adt.structure.AlgebraicConstructorType" flags="ng" index="1KrMWC">
+        <reference id="5955298286239373084" name="constructor" index="1KrMWx" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB" />
@@ -13089,6 +13108,109 @@
         </node>
         <node concept="7CXmI" id="53f0GWGI1D_" role="lGtFl">
           <node concept="7OXhh" id="53f0GWGI1DC" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5a_u3OyMFfG">
+    <property role="TrG5h" value="algebraic" />
+    <node concept="1qefOq" id="5a_u3OyMFfH" role="1SKRRt">
+      <node concept="_iOnV" id="5a_u3OyMFfI" role="1qenE9">
+        <property role="TrG5h" value="algebraic" />
+        <node concept="1KraG_" id="5a_u3OyMFHu" role="_iOnC">
+          <property role="TrG5h" value="Exp" />
+          <node concept="1KraX1" id="5a_u3OyMFHz" role="1KraX0">
+            <property role="TrG5h" value="NumLit" />
+            <node concept="30bdrU" id="5a_u3OyMFHF" role="1KraYW" />
+          </node>
+          <node concept="1KraX1" id="5a_u3OyMStT" role="1KraX0">
+            <property role="TrG5h" value="Plus" />
+            <node concept="1Kr8EM" id="5a_u3OyMSFF" role="1KraYW">
+              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            </node>
+            <node concept="1Kr8EM" id="5a_u3OyMSFQ" role="1KraYW">
+              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            </node>
+          </node>
+          <node concept="1KraX1" id="5a_u3OyMSFX" role="1KraX0">
+            <property role="TrG5h" value="Minus" />
+            <node concept="1Kr8EM" id="5a_u3OyMSG9" role="1KraYW">
+              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            </node>
+            <node concept="1Kr8EM" id="5a_u3OyMSGk" role="1KraYW">
+              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5a_u3OyMFgj" role="_iOnC" />
+        <node concept="1aga60" id="5a_u3OyMSHD" role="_iOnC">
+          <property role="TrG5h" value="DoSomething" />
+          <node concept="1afdae" id="5a_u3OyMSIX" role="1ahQXP">
+            <ref role="1afue_" node="5a_u3OyMSI$" resolve="e" />
+          </node>
+          <node concept="1ahQXy" id="5a_u3OyMSI$" role="1ahQWs">
+            <property role="TrG5h" value="e" />
+            <node concept="1Kr8EM" id="5a_u3OyMSIM" role="3ix9CU">
+              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="5a_u3OyMSJq" role="_iOnC">
+          <property role="TrG5h" value="getExpr" />
+          <node concept="2fGnzi" id="5a_u3OyMSKt" role="1ahQXP">
+            <node concept="2fGnzd" id="5a_u3OyMSKv" role="2fGnxs">
+              <node concept="30cPrO" id="5a_u3OyNMSX" role="2fGnzS">
+                <node concept="30bXRB" id="5a_u3OyNMU2" role="30dEs_">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="1afdae" id="5a_u3OyNMS0" role="30dEsF">
+                  <ref role="1afue_" node="5a_u3OyMSLi" resolve="i" />
+                </node>
+              </node>
+              <node concept="1KrJjp" id="5a_u3OyNW4G" role="2fGnzA">
+                <node concept="1KrMWC" id="5a_u3OyNWtw" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OyMFHz" resolve="NumLit" />
+                </node>
+                <node concept="30bdrP" id="5a_u3OyOjMP" role="1KrJjn">
+                  <property role="30bdrQ" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="2fGnzd" id="5a_u3OyOjOY" role="2fGnxs">
+              <node concept="2fHqz8" id="5a_u3OyOjQm" role="2fGnzS" />
+              <node concept="1KrJjp" id="5a_u3OyOkFG" role="2fGnzA">
+                <node concept="1KrMWC" id="5a_u3OyOkGc" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OyMStT" resolve="Plus" />
+                </node>
+                <node concept="1KrJjp" id="5a_u3OyOkHz" role="1KrJjn">
+                  <node concept="1KrMWC" id="5a_u3OyOkIX" role="1KrJmF">
+                    <ref role="1KrMWx" node="5a_u3OyMFHz" resolve="NumLit" />
+                  </node>
+                  <node concept="30bdrP" id="5a_u3OyOkKo" role="1KrJjn">
+                    <property role="30bdrQ" value="1" />
+                  </node>
+                </node>
+                <node concept="1KrJjp" id="5a_u3OyOkNf" role="1KrJjn">
+                  <node concept="1KrMWC" id="5a_u3OyOkNg" role="1KrJmF">
+                    <ref role="1KrMWx" node="5a_u3OyMFHz" resolve="NumLit" />
+                  </node>
+                  <node concept="30bdrP" id="5a_u3OyOkNh" role="1KrJjn">
+                    <property role="30bdrQ" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Kr8EM" id="5a_u3OyMSKd" role="2zM23F">
+            <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+          </node>
+          <node concept="1ahQXy" id="5a_u3OyMSLi" role="1ahQWs">
+            <property role="TrG5h" value="i" />
+            <node concept="mLuIC" id="5a_u3OyOkSo" role="3ix9CU" />
+          </node>
+        </node>
+        <node concept="7CXmI" id="5a_u3OyMFgk" role="lGtFl">
+          <node concept="7OXhh" id="5a_u3OyMFgl" role="7EUXB" />
         </node>
       </node>
     </node>
