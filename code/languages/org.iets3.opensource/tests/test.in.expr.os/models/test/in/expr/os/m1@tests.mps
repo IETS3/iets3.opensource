@@ -555,7 +555,7 @@
       <concept id="5955298286239340412" name="org.iets3.core.expr.adt.structure.AlgebraicConstructor" flags="ng" index="1KraX1">
         <child id="5955298286239340417" name="arguments" index="1KraYW" />
       </concept>
-      <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicInstance" flags="ng" index="1KrJjp">
+      <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicTerm" flags="ng" index="1KrJjp">
         <child id="5955298286239452394" name="args" index="1KrJjn" />
         <child id="5955298286239452566" name="type" index="1KrJmF" />
       </concept>
@@ -25183,6 +25183,7 @@
           <property role="30bXRw" value="42" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozk6Q4" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYAXZ" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYAY0" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYAY1" role="_fkuY">
@@ -25200,6 +25201,7 @@
           <property role="30bXRw" value="1" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozk6Pa" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYm4t" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYm4u" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYm4v" role="_fkuY">
@@ -25230,6 +25232,7 @@
           <property role="30bXRw" value="3" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozk6Oh" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYnPI" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYnPJ" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYnPK" role="_fkuY">
@@ -25262,7 +25265,7 @@
                 <node concept="1KrMWC" id="5a_u3OyYp2P" role="1KrJmF">
                   <ref role="1KrMWx" node="5a_u3OyMFHz" resolve="NumLit" />
                 </node>
-                <node concept="30bXRB" id="5a_u3OyYpjq" role="1KrJjn">
+                <node concept="30bXRB" id="5a_u3OzjxII" role="1KrJjn">
                   <property role="30bXRw" value="8" />
                 </node>
               </node>
@@ -25447,6 +25450,7 @@
           <property role="30bXRw" value="99" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozj$pB" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3Oz6$a8" role="_fkp5">
         <node concept="_fku$" id="5a_u3Oz6$a9" role="_fkur" />
         <node concept="1af_rf" id="5a_u3Oz6$aa" role="_fkuY">
@@ -25477,6 +25481,7 @@
           <property role="30bXRw" value="10" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozj$o4" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3Oz58H4" role="_fkp5">
         <node concept="_fku$" id="5a_u3Oz58H5" role="_fkur" />
         <node concept="1af_rf" id="5a_u3Oz58H6" role="_fkuY">
@@ -25494,6 +25499,7 @@
           <property role="30bXRw" value="1" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3OzjzYw" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYuyq" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYuyr" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYuys" role="_fkuY">
@@ -25524,6 +25530,7 @@
           <property role="30bXRw" value="3" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3OzjzWZ" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYuyA" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYuyB" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYuyC" role="_fkuY">
@@ -25567,6 +25574,7 @@
           <property role="30bXRw" value="8" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5a_u3Ozjzzt" role="_fkp5" />
       <node concept="_fkuZ" id="5a_u3OyYCOw" role="_fkp5">
         <node concept="_fku$" id="5a_u3OyYCOx" role="_fkur" />
         <node concept="1af_rf" id="5a_u3OyYCOy" role="_fkuY">
