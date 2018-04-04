@@ -85,6 +85,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -232,6 +233,7 @@
       </concept>
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -354,8 +356,8 @@
                           <ref role="3Tt5mk" to="v0r8:5a_u3OyM_ss" resolve="constructor" />
                         </node>
                       </node>
-                      <node concept="3Tsc0h" id="5a_u3OyNfbW" role="2OqNvi">
-                        <ref role="3TtcxE" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+                      <node concept="2qgKlT" id="5a_u3OzNPDa" role="2OqNvi">
+                        <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
                       </node>
                     </node>
                     <node concept="34jXtK" id="5a_u3OyNjwg" role="2OqNvi">
@@ -403,8 +405,8 @@
                   <ref role="3Tt5mk" to="v0r8:5a_u3OyM_ss" resolve="constructor" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="5a_u3OyN3BJ" role="2OqNvi">
-                <ref role="3TtcxE" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+              <node concept="2qgKlT" id="5a_u3OzNPUy" role="2OqNvi">
+                <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
               </node>
             </node>
             <node concept="34oBXx" id="5a_u3OyNa6Q" role="2OqNvi" />
@@ -478,8 +480,8 @@
                         <ref role="3Tt5mk" to="v0r8:5a_u3OyM_ss" resolve="constructor" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="5a_u3OyR$Vz" role="2OqNvi">
-                      <ref role="3TtcxE" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+                    <node concept="2qgKlT" id="5a_u3OzNOFf" role="2OqNvi">
+                      <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
                     </node>
                   </node>
                 </node>
@@ -1035,6 +1037,48 @@
     <node concept="1YaCAy" id="5a_u3Ozlivi" role="1YuTPh">
       <property role="TrG5h" value="te" />
       <ref role="1YaFvo" to="v0r8:5a_u3Ozlh9S" resolve="TraverseExpr" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5a_u3OzN$S2">
+    <property role="TrG5h" value="check_AlgebraicConstructor" />
+    <node concept="3clFbS" id="5a_u3OzN$S3" role="18ibNy">
+      <node concept="3clFbJ" id="5a_u3OzN$Sl" role="3cqZAp">
+        <node concept="1Wc70l" id="5a_u3OzN_ze" role="3clFbw">
+          <node concept="2OqwBi" id="5a_u3OzNEev" role="3uHU7w">
+            <node concept="2OqwBi" id="5a_u3OzN_Nn" role="2Oq$k0">
+              <node concept="1YBJjd" id="5a_u3OzN_Cb" role="2Oq$k0">
+                <ref role="1YBMHb" node="5a_u3OzN$S5" resolve="ac" />
+              </node>
+              <node concept="3Tsc0h" id="5a_u3OzNA26" role="2OqNvi">
+                <ref role="3TtcxE" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="5a_u3OzNHgB" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="5a_u3OzN_3w" role="3uHU7B">
+            <node concept="1YBJjd" id="5a_u3OzN$S$" role="2Oq$k0">
+              <ref role="1YBMHb" node="5a_u3OzN$S5" resolve="ac" />
+            </node>
+            <node concept="2qgKlT" id="5a_u3OzN_dI" role="2OqNvi">
+              <ref role="37wK5l" to="dnkk:5a_u3OzNlbQ" resolve="isSubconstructor" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5a_u3OzN$Sn" role="3clFbx">
+          <node concept="2MkqsV" id="5a_u3OzNHm7" role="3cqZAp">
+            <node concept="Xl_RD" id="5a_u3OzNHmm" role="2MkJ7o">
+              <property role="Xl_RC" value="cannot have its own arguments" />
+            </node>
+            <node concept="1YBJjd" id="5a_u3OzNHmY" role="2OEOjV">
+              <ref role="1YBMHb" node="5a_u3OzN$S5" resolve="ac" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5a_u3OzN$S5" role="1YuTPh">
+      <property role="TrG5h" value="ac" />
+      <ref role="1YaFvo" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
     </node>
   </node>
 </model>

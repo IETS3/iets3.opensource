@@ -85,8 +85,20 @@
     <property role="TrG5h" value="AlgebraicConstructor" />
     <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5a_u3OzNkkU" role="1TKVEl">
+      <property role="IQ2nx" value="5955298286256342330" />
+      <property role="TrG5h" value="abstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5a_u3OyMttZ" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5a_u3OzNl11" role="1TKVEi">
+      <property role="IQ2ns" value="5955298286256345153" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5a_u3OyMttW" resolve="AlgebraicConstructor" />
     </node>
     <node concept="1TJgyj" id="5a_u3OyMtu1" role="1TKVEi">
       <property role="IQ2ns" value="5955298286239340417" />
