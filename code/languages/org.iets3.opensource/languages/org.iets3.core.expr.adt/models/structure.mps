@@ -23,6 +23,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -51,6 +53,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -289,6 +292,55 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5a_u3Ozlh9S">
+    <property role="EcuMT" value="5955298286248465016" />
+    <property role="TrG5h" value="TraverseExpr" />
+    <property role="3GE5qa" value="traverse" />
+    <property role="34LRSv" value="traverse" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5a_u3Ozlhbv" role="1TKVEi">
+      <property role="IQ2ns" value="5955298286248465119" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5a_u3Ozlhb3" role="1TKVEi">
+      <property role="IQ2ns" value="5955298286248465091" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5a_u3Ozlha5" resolve="TraversalStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5a_u3Ozlha5">
+    <property role="EcuMT" value="5955298286248465029" />
+    <property role="TrG5h" value="TraversalStrategy" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="traverse" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5a_u3Ozlhai">
+    <property role="EcuMT" value="5955298286248465042" />
+    <property role="3GE5qa" value="traverse" />
+    <property role="TrG5h" value="TraversalTopDown" />
+    <property role="34LRSv" value="top-down" />
+    <ref role="1TJDcQ" node="5a_u3Ozlha5" resolve="TraversalStrategy" />
+  </node>
+  <node concept="1TIwiD" id="5a_u3Ozlhaw">
+    <property role="EcuMT" value="5955298286248465056" />
+    <property role="3GE5qa" value="traverse" />
+    <property role="TrG5h" value="TraversalBottomUp" />
+    <property role="34LRSv" value="bottom-up" />
+    <ref role="1TJDcQ" node="5a_u3Ozlha5" resolve="TraversalStrategy" />
+  </node>
+  <node concept="1TIwiD" id="5a_u3Ozm4Y3">
+    <property role="EcuMT" value="5955298286248677251" />
+    <property role="TrG5h" value="GenericAlgebraicType" />
+    <property role="34LRSv" value="algebraic" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
 

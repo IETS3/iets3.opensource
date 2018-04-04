@@ -10,6 +10,8 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -922,7 +924,7 @@
       <node concept="2ShNRf" id="5a_u3Oz5Xyx" role="3ciSkW">
         <node concept="3zrR0B" id="5a_u3Oz5XCV" role="2ShVmc">
           <node concept="3Tqbb2" id="5a_u3Oz5XCX" role="3zrR0E">
-            <ref role="ehGHo" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+            <ref role="ehGHo" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
           </node>
         </node>
       </node>
@@ -941,8 +943,8 @@
       </node>
       <node concept="2ShNRf" id="5a_u3Oz5XDC" role="3ciSnv">
         <node concept="3zrR0B" id="5a_u3Oz5XDD" role="2ShVmc">
-          <node concept="3Tqbb2" id="5a_u3Oz5XDE" role="3zrR0E">
-            <ref role="ehGHo" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+          <node concept="3Tqbb2" id="5a_u3OzrBrc" role="3zrR0E">
+            <ref role="ehGHo" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
           </node>
         </node>
       </node>
@@ -955,8 +957,8 @@
         <node concept="3clFbS" id="5a_u3Oz6j4U" role="3clFbx">
           <node concept="3cpWs6" id="5a_u3Oz6kjv" role="3cqZAp">
             <node concept="2pJPEk" id="5a_u3Oz6koL" role="3cqZAk">
-              <node concept="2pJPED" id="5a_u3Oz6ktH" role="2pJPEn">
-                <ref role="2pJxaS" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+              <node concept="2pJPED" id="5a_u3Ozm51i" role="2pJPEn">
+                <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
               </node>
             </node>
           </node>
@@ -980,6 +982,59 @@
     <node concept="1YaCAy" id="5a_u3Oz6iLp" role="1YuTPh">
       <property role="TrG5h" value="at" />
       <ref role="1YaFvo" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5a_u3Ozlivf">
+    <property role="TrG5h" value="typeof_TraverseExpr" />
+    <property role="3GE5qa" value="traverse" />
+    <node concept="3clFbS" id="5a_u3Ozlivg" role="18ibNy">
+      <node concept="1ZobV4" id="5a_u3Ozlj5l" role="3cqZAp">
+        <node concept="mw_s8" id="5a_u3Ozm56S" role="1ZfhKB">
+          <node concept="2pJPEk" id="5a_u3Ozm56I" role="mwGJk">
+            <node concept="2pJPED" id="5a_u3Ozm576" role="2pJPEn">
+              <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5a_u3Ozlj5o" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5a_u3Ozlivp" role="mwGJk">
+            <node concept="2OqwBi" id="5a_u3OzliCZ" role="1Z2MuG">
+              <node concept="1YBJjd" id="5a_u3OzlivG" role="2Oq$k0">
+                <ref role="1YBMHb" node="5a_u3Ozlivi" resolve="te" />
+              </node>
+              <node concept="3TrEf2" id="5a_u3OzliOK" role="2OqNvi">
+                <ref role="3Tt5mk" to="v0r8:5a_u3Ozlhbv" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="5a_u3Ozljn8" role="3cqZAp">
+        <node concept="mw_s8" id="5a_u3OzljnU" role="1ZfhKB">
+          <node concept="2pJPEk" id="5a_u3Ozm5pm" role="mwGJk">
+            <node concept="2pJPED" id="5a_u3Ozm5p$" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+              <node concept="2pIpSj" id="5a_u3Ozm5qs" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="2pJPED" id="5a_u3Ozm5r0" role="2pJxcZ">
+                  <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5a_u3Ozljnb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5a_u3Ozlj89" role="mwGJk">
+            <node concept="1YBJjd" id="5a_u3Ozljak" role="1Z2MuG">
+              <ref role="1YBMHb" node="5a_u3Ozlivi" resolve="te" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5a_u3Ozlivi" role="1YuTPh">
+      <property role="TrG5h" value="te" />
+      <ref role="1YaFvo" to="v0r8:5a_u3Ozlh9S" resolve="TraverseExpr" />
     </node>
   </node>
 </model>
