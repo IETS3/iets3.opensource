@@ -4676,22 +4676,13 @@
                                 <node concept="17QB3L" id="siw10GXEhd" role="3clF45" />
                                 <node concept="3Tm1VV" id="siw10GXEhe" role="1B3o_S" />
                                 <node concept="3clFbS" id="siw10GXEhh" role="3clF47">
-                                  <node concept="3clFbF" id="siw10GXM6t" role="3cqZAp">
-                                    <node concept="2OqwBi" id="siw10GXMy1" role="3clFbG">
-                                      <node concept="2OqwBi" id="siw10GXMbi" role="2Oq$k0">
-                                        <node concept="37vLTw" id="mIQkxfYbTh" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="mIQkxg1UMc" resolve="it" />
-                                        </node>
-                                        <node concept="2Xjw5R" id="siw10GXMn3" role="2OqNvi">
-                                          <node concept="1xMEDy" id="siw10GXMn5" role="1xVPHs">
-                                            <node concept="chp4Y" id="siw10GXMpd" role="ri$Ld">
-                                              <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
-                                            </node>
-                                          </node>
-                                        </node>
+                                  <node concept="3clFbF" id="50sp66ny$5q" role="3cqZAp">
+                                    <node concept="2OqwBi" id="50sp66ny$pY" role="3clFbG">
+                                      <node concept="37vLTw" id="50sp66ny$5o" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="mIQkxg1UMc" resolve="it" />
                                       </node>
-                                      <node concept="3TrcHB" id="siw10GXMXv" role="2OqNvi">
-                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      <node concept="2qgKlT" id="50sp66ny$U1" role="2OqNvi">
+                                        <ref role="37wK5l" to="3eba:50sp66nyrfO" resolve="getPaletteEntryFolder" />
                                       </node>
                                     </node>
                                   </node>
@@ -7014,22 +7005,13 @@
                                   <node concept="17QB3L" id="3VQCwTIkui5" role="3clF45" />
                                   <node concept="3Tm1VV" id="3VQCwTIkui6" role="1B3o_S" />
                                   <node concept="3clFbS" id="3VQCwTIkui7" role="3clF47">
-                                    <node concept="3clFbF" id="3VQCwTIkui8" role="3cqZAp">
-                                      <node concept="2OqwBi" id="3VQCwTIkui9" role="3clFbG">
-                                        <node concept="2OqwBi" id="3VQCwTIkuia" role="2Oq$k0">
-                                          <node concept="37vLTw" id="3VQCwTIkuib" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="3VQCwTIkuio" resolve="it" />
-                                          </node>
-                                          <node concept="2Xjw5R" id="3VQCwTIkuic" role="2OqNvi">
-                                            <node concept="1xMEDy" id="3VQCwTIkuid" role="1xVPHs">
-                                              <node concept="chp4Y" id="3VQCwTIkuie" role="ri$Ld">
-                                                <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
-                                              </node>
-                                            </node>
-                                          </node>
+                                    <node concept="3clFbF" id="50sp66nyyed" role="3cqZAp">
+                                      <node concept="2OqwBi" id="50sp66nyyyL" role="3clFbG">
+                                        <node concept="37vLTw" id="50sp66nyyeb" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3VQCwTIkuio" resolve="it" />
                                         </node>
-                                        <node concept="3TrcHB" id="3VQCwTIkuif" role="2OqNvi">
-                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                        <node concept="2qgKlT" id="50sp66nyz2M" role="2OqNvi">
+                                          <ref role="37wK5l" to="3eba:50sp66nyrfO" resolve="getPaletteEntryFolder" />
                                         </node>
                                       </node>
                                     </node>

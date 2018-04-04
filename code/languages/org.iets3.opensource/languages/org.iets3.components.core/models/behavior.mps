@@ -324,6 +324,7 @@
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -343,6 +344,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -2030,12 +2034,7 @@
       <node concept="P$JXv" id="5kRSWVwAjrp" role="lGtFl">
         <node concept="TZ5HA" id="5kRSWVwAjrq" role="TZ5H$">
           <node concept="1dT_AC" id="5kRSWVwAjrr" role="1dT_Ay">
-            <property role="1dT_AB" value="Needed to customize title of palette entry for in Security Analyst. It should be considered if creation of whole" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5kRSWVwAjsW" role="TZ5H$">
-          <node concept="1dT_AC" id="5kRSWVwAjsX" role="1dT_Ay">
-            <property role="1dT_AB" value="Palette (all entries, etc.) can be placed in behavior / other place that can be overriden." />
+            <property role="1dT_AB" value="Methods below where introduced to customize palette entries for Security Analyst" />
           </node>
         </node>
       </node>
@@ -2050,6 +2049,31 @@
           <node concept="2OqwBi" id="1WGIGKe$nQC" role="3cqZAk">
             <node concept="13iPFW" id="1WGIGKe$ny9" role="2Oq$k0" />
             <node concept="3TrcHB" id="1WGIGKe$oDp" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="50sp66nyrfO" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getPaletteEntryFolder" />
+      <node concept="3Tm1VV" id="50sp66nyrfP" role="1B3o_S" />
+      <node concept="17QB3L" id="50sp66nyvXM" role="3clF45" />
+      <node concept="3clFbS" id="50sp66nyrfR" role="3clF47">
+        <node concept="3cpWs6" id="50sp66nyvZA" role="3cqZAp">
+          <node concept="2OqwBi" id="50sp66nyx0h" role="3cqZAk">
+            <node concept="2OqwBi" id="50sp66nywko" role="2Oq$k0">
+              <node concept="13iPFW" id="50sp66nyvZT" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="50sp66nywI0" role="2OqNvi">
+                <node concept="1xMEDy" id="50sp66nywI2" role="1xVPHs">
+                  <node concept="chp4Y" id="50sp66nywIP" role="ri$Ld">
+                    <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="50sp66nyx_K" role="2OqNvi">
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
