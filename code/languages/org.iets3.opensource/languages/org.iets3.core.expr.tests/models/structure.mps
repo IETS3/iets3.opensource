@@ -944,5 +944,19 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7aipPVpH1LO">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="ReportTestItem" />
+    <property role="34LRSv" value="report" />
+    <property role="EcuMT" value="8255774724000586868" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyj" id="7aipPVpH1LP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actual" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="543569365052056267" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
