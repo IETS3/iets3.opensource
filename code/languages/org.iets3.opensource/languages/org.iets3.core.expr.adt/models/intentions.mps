@@ -274,13 +274,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7aipPVpQLhR">
-    <property role="TrG5h" value="RemoveErrors" />
+    <property role="TrG5h" value="ClearErrors" />
     <ref role="2ZfgGC" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
     <node concept="2S6ZIM" id="7aipPVpQLhS" role="2ZfVej">
       <node concept="3clFbS" id="7aipPVpQLhT" role="2VODD2">
         <node concept="3clFbF" id="7aipPVpQLqD" role="3cqZAp">
           <node concept="Xl_RD" id="7aipPVpQLqC" role="3clFbG">
-            <property role="Xl_RC" value="Remove Errors" />
+            <property role="Xl_RC" value="Clear Errors" />
           </node>
         </node>
       </node>
@@ -362,7 +362,7 @@
         <node concept="3clFbF" id="7aipPVpU42x" role="3cqZAp">
           <node concept="2YIFZM" id="7aipPVpU44C" role="3clFbG">
             <ref role="37wK5l" to="s51c:7aipPVpTXpE" resolve="toggleTree" />
-            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ShowTree" />
+            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
             <node concept="1PxgMI" id="7aipPVpU3yg" role="37wK5m">
               <node concept="chp4Y" id="7aipPVpU3zp" role="3oSUPX">
                 <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
@@ -405,6 +405,154 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="7aipPVq18ZP" role="lGtFl">
+      <property role="1SWRpm" value="ALGEBRAIC" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7aipPVq2LOQ">
+    <property role="TrG5h" value="ToggleSymbolic" />
+    <ref role="2ZfgGC" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+    <node concept="2S6ZIM" id="7aipPVq2LOR" role="2ZfVej">
+      <node concept="3clFbS" id="7aipPVq2LOS" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVq2LOT" role="3cqZAp">
+          <node concept="Xl_RD" id="7aipPVq2LOU" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Symbolic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7aipPVq2LOV" role="2ZfgGD">
+      <node concept="3clFbS" id="7aipPVq2LOW" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVq2LOX" role="3cqZAp">
+          <node concept="2YIFZM" id="7aipPVq2NUt" role="3clFbG">
+            <ref role="37wK5l" to="s51c:7aipPVq2LuH" resolve="toggleSymbolic" />
+            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
+            <node concept="1PxgMI" id="7aipPVq2NUu" role="37wK5m">
+              <node concept="chp4Y" id="7aipPVq2NUv" role="3oSUPX">
+                <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+              </node>
+              <node concept="2OqwBi" id="7aipPVq2NUw" role="1m5AlR">
+                <node concept="2Sf5sV" id="7aipPVq2NUx" role="2Oq$k0" />
+                <node concept="1mfA1w" id="7aipPVq2NUy" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7aipPVq2LP4" role="3cqZAp">
+          <node concept="2OqwBi" id="7aipPVq2LP5" role="3clFbG">
+            <node concept="2OqwBi" id="7aipPVq2LP6" role="2Oq$k0">
+              <node concept="1XNTG" id="7aipPVq2LP7" role="2Oq$k0" />
+              <node concept="liA8E" id="7aipPVq2LP8" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7aipPVq2LP9" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="7aipPVq2LPa" role="2ZfVeh">
+      <node concept="3clFbS" id="7aipPVq2LPb" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVq2LPc" role="3cqZAp">
+          <node concept="2OqwBi" id="7aipPVq2LPd" role="3clFbG">
+            <node concept="2OqwBi" id="7aipPVq2LPe" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7aipPVq2LPf" role="2Oq$k0" />
+              <node concept="1mfA1w" id="7aipPVq2LPg" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="7aipPVq2LPh" role="2OqNvi">
+              <node concept="chp4Y" id="7aipPVq2LPi" role="cj9EA">
+                <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7aipPVq2LPj" role="lGtFl">
+      <property role="1SWRpm" value="ALGEBRAIC" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7aipPVqdMb8">
+    <property role="TrG5h" value="ToggleSymbolic2" />
+    <ref role="2ZfgGC" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+    <node concept="2S6ZIM" id="7aipPVqdMb9" role="2ZfVej">
+      <node concept="3clFbS" id="7aipPVqdMba" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVqdMbb" role="3cqZAp">
+          <node concept="Xl_RD" id="7aipPVqdMbc" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Symbolic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7aipPVqdMbd" role="2ZfgGD">
+      <node concept="3clFbS" id="7aipPVqdMbe" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVqdMbf" role="3cqZAp">
+          <node concept="2YIFZM" id="7aipPVqdMbg" role="3clFbG">
+            <ref role="37wK5l" to="s51c:7aipPVq2LuH" resolve="toggleSymbolic" />
+            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
+            <node concept="2Sf5sV" id="7aipPVqdNi2" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7aipPVqdMbm" role="3cqZAp">
+          <node concept="2OqwBi" id="7aipPVqdMbn" role="3clFbG">
+            <node concept="2OqwBi" id="7aipPVqdMbo" role="2Oq$k0">
+              <node concept="1XNTG" id="7aipPVqdMbp" role="2Oq$k0" />
+              <node concept="liA8E" id="7aipPVqdMbq" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7aipPVqdMbr" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7aipPVqdMb_" role="lGtFl">
+      <property role="1SWRpm" value="ALGEBRAIC" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7aipPVqdNP7">
+    <property role="TrG5h" value="ToggleTree2" />
+    <ref role="2ZfgGC" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+    <node concept="2S6ZIM" id="7aipPVqdNP8" role="2ZfVej">
+      <node concept="3clFbS" id="7aipPVqdNP9" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVqdNPa" role="3cqZAp">
+          <node concept="Xl_RD" id="7aipPVqdNPb" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Tree" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7aipPVqdNPc" role="2ZfgGD">
+      <node concept="3clFbS" id="7aipPVqdNPd" role="2VODD2">
+        <node concept="3clFbF" id="7aipPVqdNPe" role="3cqZAp">
+          <node concept="2YIFZM" id="7aipPVqdNPf" role="3clFbG">
+            <ref role="37wK5l" to="s51c:7aipPVpTXpE" resolve="toggleTree" />
+            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
+            <node concept="2Sf5sV" id="7aipPVqdOxi" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7aipPVqdNPl" role="3cqZAp">
+          <node concept="2OqwBi" id="7aipPVqdNPm" role="3clFbG">
+            <node concept="2OqwBi" id="7aipPVqdNPn" role="2Oq$k0">
+              <node concept="1XNTG" id="7aipPVqdNPo" role="2Oq$k0" />
+              <node concept="liA8E" id="7aipPVqdNPp" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7aipPVqdNPq" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7aipPVqdNP$" role="lGtFl">
+      <property role="1SWRpm" value="ALGEBRAIC" />
     </node>
   </node>
 </model>

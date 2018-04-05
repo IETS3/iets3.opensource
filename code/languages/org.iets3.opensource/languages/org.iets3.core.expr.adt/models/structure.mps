@@ -90,6 +90,21 @@
       <property role="TrG5h" value="abstract" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="7aipPVq1Rrh" role="1TKVEl">
+      <property role="IQ2nx" value="8255774724006049489" />
+      <property role="TrG5h" value="symbolicName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7aipPVq6grL" role="1TKVEl">
+      <property role="IQ2nx" value="8255774724007200497" />
+      <property role="TrG5h" value="noSymbol" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7aipPVqatax" role="1TKVEl">
+      <property role="IQ2nx" value="8255774724008301217" />
+      <property role="TrG5h" value="infix" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5a_u3OyMttZ" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
@@ -185,6 +200,9 @@
     <node concept="PrWs8" id="5a_u3Oz007V" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6NJfo6_rTeO" resolve="IBigExpression" />
     </node>
+    <node concept="PrWs8" id="28$LOSAaYwp" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5a_u3OySk8l">
     <property role="EcuMT" value="5955298286240875029" />
@@ -214,6 +232,9 @@
     </node>
     <node concept="PrWs8" id="5a_u3OyUFJR" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="28$LOSAaZGq" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="5a_u3OySBZU">

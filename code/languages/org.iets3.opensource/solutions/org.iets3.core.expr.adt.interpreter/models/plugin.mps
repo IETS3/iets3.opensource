@@ -10,6 +10,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -259,12 +260,16 @@
             <node concept="3cpWs8" id="7aipPVpQ30X" role="3cqZAp">
               <node concept="3cpWsn" id="7aipPVpQ30Y" role="3cpWs9">
                 <property role="TrG5h" value="targetNode" />
-                <node concept="3Tqbb2" id="7aipPVpQ324" role="1tU5fm" />
+                <node concept="3Tqbb2" id="7aipPVpQ324" role="1tU5fm">
+                  <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                </node>
                 <node concept="10QFUN" id="7aipPVpQ34s" role="33vP2m">
                   <node concept="rqRoa" id="7aipPVpQ34r" role="10QFUP">
                     <ref role="rqRob" to="v0r8:7aipPVpNhNd" resolve="node" />
                   </node>
-                  <node concept="3Tqbb2" id="7aipPVpQ34q" role="10QFUM" />
+                  <node concept="3Tqbb2" id="7aipPVpQ34q" role="10QFUM">
+                    <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -288,8 +293,13 @@
                 </node>
                 <node concept="2OqwBi" id="7aipPVpQ5cD" role="33vP2m">
                   <node concept="2OqwBi" id="7aipPVpQ5cE" role="2Oq$k0">
-                    <node concept="37vLTw" id="7aipPVpQ5cF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7aipPVpQ30Y" resolve="targetNode" />
+                    <node concept="2OqwBi" id="7aipPVq0Ze0" role="2Oq$k0">
+                      <node concept="37vLTw" id="7aipPVpQ5cF" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7aipPVpQ30Y" resolve="targetNode" />
+                      </node>
+                      <node concept="3TrEf2" id="7aipPVq1003" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
                     </node>
                     <node concept="3CFZ6_" id="7aipPVpQ5cG" role="2OqNvi">
                       <node concept="3CFYIy" id="7aipPVpQ5cH" role="3CFYIz">
