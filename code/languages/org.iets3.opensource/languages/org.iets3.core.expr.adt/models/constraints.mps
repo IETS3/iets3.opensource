@@ -17,6 +17,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -566,20 +567,58 @@
     <node concept="9S07l" id="7aipPVpFzCa" role="9Vyp8">
       <node concept="3clFbS" id="7aipPVpFzCb" role="2VODD2">
         <node concept="3clFbF" id="7aipPVpFzJk" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVpF$Ys" role="3clFbG">
-            <node concept="1PxgMI" id="7aipPVpF$kO" role="2Oq$k0">
-              <node concept="chp4Y" id="7aipPVpF$sl" role="3oSUPX">
-                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+          <node concept="22lmx$" id="28$LOSAPwSw" role="3clFbG">
+            <node concept="22lmx$" id="28$LOSAKMgR" role="3uHU7B">
+              <node concept="2OqwBi" id="7aipPVpF$Ys" role="3uHU7B">
+                <node concept="1PxgMI" id="7aipPVpF$kO" role="2Oq$k0">
+                  <node concept="chp4Y" id="7aipPVpF$sl" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  </node>
+                  <node concept="nLn13" id="7aipPVpFzJj" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="7aipPVpF_Ad" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+                  <node concept="35c_gC" id="7aipPVpF_O3" role="37wK5m">
+                    <ref role="35c_gD" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+                  </node>
+                  <node concept="3clFbT" id="7aipPVpFA_2" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
               </node>
-              <node concept="nLn13" id="7aipPVpFzJj" role="1m5AlR" />
+              <node concept="2OqwBi" id="28$LOSAKMwZ" role="3uHU7w">
+                <node concept="1PxgMI" id="28$LOSAKMx0" role="2Oq$k0">
+                  <node concept="chp4Y" id="28$LOSAKMx1" role="3oSUPX">
+                    <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                  </node>
+                  <node concept="nLn13" id="28$LOSAKMx2" role="1m5AlR" />
+                </node>
+                <node concept="2qgKlT" id="28$LOSAKMx3" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+                  <node concept="35c_gC" id="28$LOSAKMx4" role="37wK5m">
+                    <ref role="35c_gD" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
+                  </node>
+                  <node concept="3clFbT" id="28$LOSAKMx5" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2qgKlT" id="7aipPVpF_Ad" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="7aipPVpF_O3" role="37wK5m">
-                <ref role="35c_gD" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+            <node concept="2OqwBi" id="28$LOSAPxbt" role="3uHU7w">
+              <node concept="1PxgMI" id="28$LOSAPxbu" role="2Oq$k0">
+                <node concept="chp4Y" id="28$LOSAPxbv" role="3oSUPX">
+                  <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                </node>
+                <node concept="nLn13" id="28$LOSAPxbw" role="1m5AlR" />
               </node>
-              <node concept="3clFbT" id="7aipPVpFA_2" role="37wK5m">
-                <property role="3clFbU" value="false" />
+              <node concept="2qgKlT" id="28$LOSAPxbx" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+                <node concept="35c_gC" id="28$LOSAPxby" role="37wK5m">
+                  <ref role="35c_gD" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+                </node>
+                <node concept="3clFbT" id="28$LOSAPxbz" role="37wK5m">
+                  <property role="3clFbU" value="false" />
+                </node>
               </node>
             </node>
           </node>

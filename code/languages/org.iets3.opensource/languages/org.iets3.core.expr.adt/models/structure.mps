@@ -494,5 +494,33 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="28$LOSAJ7nc">
+    <property role="EcuMT" value="2460310434922395084" />
+    <property role="3GE5qa" value="dot" />
+    <property role="TrG5h" value="ReplaceWith" />
+    <property role="34LRSv" value="replaceWith" />
+    <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
+    <node concept="1TJgyj" id="28$LOSAJ7F9" role="1TKVEi">
+      <property role="IQ2ns" value="2460310434922396361" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28$LOSALaA2">
+    <property role="EcuMT" value="2460310434922932610" />
+    <property role="3GE5qa" value="dot" />
+    <property role="TrG5h" value="Copy" />
+    <property role="34LRSv" value="copy" />
+    <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="28$LOSAMCgX">
+    <property role="EcuMT" value="2460310434923316285" />
+    <property role="3GE5qa" value="dot" />
+    <property role="TrG5h" value="Size" />
+    <property role="34LRSv" value="size" />
+    <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
+  </node>
 </model>
 
