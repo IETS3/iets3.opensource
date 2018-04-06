@@ -1709,5 +1709,171 @@
       <ref role="1YaFvo" to="v0r8:7aipPVpNhN9" resolve="AnnotateErrorExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="28$LOSAcnp7">
+    <property role="TrG5h" value="typeof_QuoteExpression" />
+    <property role="3GE5qa" value="quote" />
+    <node concept="3clFbS" id="28$LOSAcnp8" role="18ibNy">
+      <node concept="1Z5TYs" id="28$LOSAcnAh" role="3cqZAp">
+        <node concept="mw_s8" id="28$LOSAcnAH" role="1ZfhKB">
+          <node concept="2pJPEk" id="28$LOSAcnAD" role="mwGJk">
+            <node concept="2pJPED" id="28$LOSAcnAV" role="2pJPEn">
+              <ref role="2pJxaS" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
+              <node concept="2pIpSj" id="28$LOSAflue" role="2pJxcM">
+                <ref role="2pIpSl" to="v0r8:28$LOSAflsv" resolve="type" />
+                <node concept="36biLy" id="28$LOSAflu_" role="2pJxcZ">
+                  <node concept="2OqwBi" id="28$LOSAfmJu" role="36biLW">
+                    <node concept="2OqwBi" id="28$LOSAfmbu" role="2Oq$k0">
+                      <node concept="2OqwBi" id="28$LOSAflDK" role="2Oq$k0">
+                        <node concept="1YBJjd" id="28$LOSAfluM" role="2Oq$k0">
+                          <ref role="1YBMHb" node="28$LOSAcnpa" resolve="qe" />
+                        </node>
+                        <node concept="3TrEf2" id="28$LOSAflOg" role="2OqNvi">
+                          <ref role="3Tt5mk" to="v0r8:28$LOSAcnmv" resolve="term" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="28$LOSAfmpR" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="1$rogu" id="28$LOSAfmW3" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28$LOSAcnAk" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28$LOSAcnpk" role="mwGJk">
+            <node concept="1YBJjd" id="28$LOSAcnpB" role="1Z2MuG">
+              <ref role="1YBMHb" node="28$LOSAcnpa" resolve="qe" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28$LOSAcnpa" role="1YuTPh">
+      <property role="TrG5h" value="qe" />
+      <ref role="1YaFvo" to="v0r8:28$LOSAcnmu" resolve="QuoteExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28$LOSAeeEg">
+    <property role="TrG5h" value="typeof_UnquoteExpression" />
+    <property role="3GE5qa" value="quote" />
+    <node concept="3clFbS" id="28$LOSAeeEh" role="18ibNy">
+      <node concept="nvevp" id="28$LOSAgk91" role="3cqZAp">
+        <node concept="3clFbS" id="28$LOSAgk93" role="nvhr_">
+          <node concept="3clFbJ" id="28$LOSAgk$R" role="3cqZAp">
+            <node concept="3fqX7Q" id="28$LOSAgl0E" role="3clFbw">
+              <node concept="2OqwBi" id="28$LOSAgl0G" role="3fr31v">
+                <node concept="2X3wrD" id="28$LOSAgl0H" role="2Oq$k0">
+                  <ref role="2X3Bk0" node="28$LOSAgk97" resolve="exprType" />
+                </node>
+                <node concept="1mIQ4w" id="28$LOSAgl0I" role="2OqNvi">
+                  <node concept="chp4Y" id="28$LOSAgl0J" role="cj9EA">
+                    <ref role="cht4Q" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="28$LOSAgk$T" role="3clFbx">
+              <node concept="2MkqsV" id="28$LOSAgl4$" role="3cqZAp">
+                <node concept="Xl_RD" id="28$LOSAgl4N" role="2MkJ7o">
+                  <property role="Xl_RC" value="not a quoted term" />
+                </node>
+                <node concept="1YBJjd" id="28$LOSAgl5k" role="2OEOjV">
+                  <ref role="1YBMHb" node="28$LOSAeeEj" resolve="uq" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="28$LOSAglde" role="9aQIa">
+              <node concept="3clFbS" id="28$LOSAgldf" role="9aQI4">
+                <node concept="1Z5TYs" id="28$LOSAeffE" role="3cqZAp">
+                  <node concept="mw_s8" id="28$LOSAeffI" role="1ZfhK$">
+                    <node concept="1Z2H0r" id="28$LOSAeffJ" role="mwGJk">
+                      <node concept="1YBJjd" id="28$LOSAeffL" role="1Z2MuG">
+                        <ref role="1YBMHb" node="28$LOSAeeEj" resolve="uq" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="mw_s8" id="28$LOSAgp2O" role="1ZfhKB">
+                    <node concept="2OqwBi" id="28$LOSAgqwe" role="mwGJk">
+                      <node concept="1PxgMI" id="28$LOSAgqeh" role="2Oq$k0">
+                        <node concept="chp4Y" id="28$LOSAgqjB" role="3oSUPX">
+                          <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+                        </node>
+                        <node concept="2OqwBi" id="28$LOSAgpl7" role="1m5AlR">
+                          <node concept="1PxgMI" id="28$LOSAgp9e" role="2Oq$k0">
+                            <node concept="chp4Y" id="28$LOSAgp9K" role="3oSUPX">
+                              <ref role="cht4Q" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
+                            </node>
+                            <node concept="2X3wrD" id="28$LOSAgp2M" role="1m5AlR">
+                              <ref role="2X3Bk0" node="28$LOSAgk97" resolve="exprType" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="28$LOSAgpwv" role="2OqNvi">
+                            <ref role="3Tt5mk" to="v0r8:28$LOSAflsv" resolve="type" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1$rogu" id="28$LOSAgqJR" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="28$LOSAgkas" role="nvjzm">
+          <node concept="2OqwBi" id="28$LOSAgkki" role="1Z2MuG">
+            <node concept="1YBJjd" id="28$LOSAgkaU" role="2Oq$k0">
+              <ref role="1YBMHb" node="28$LOSAeeEj" resolve="uq" />
+            </node>
+            <node concept="3TrEf2" id="28$LOSAgkxx" role="2OqNvi">
+              <ref role="3Tt5mk" to="v0r8:28$LOSAeeCY" resolve="expr" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="28$LOSAgk97" role="2X0Ygz">
+          <property role="TrG5h" value="exprType" />
+          <node concept="2jxLKc" id="28$LOSAgk98" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28$LOSAeeEj" role="1YuTPh">
+      <property role="TrG5h" value="uq" />
+      <ref role="1YaFvo" to="v0r8:28$LOSAeeCX" resolve="UnquoteExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28$LOSAfn2i">
+    <property role="TrG5h" value="typeof_QuotedTermType" />
+    <property role="3GE5qa" value="quote" />
+    <node concept="3clFbS" id="28$LOSAfn2j" role="18ibNy">
+      <node concept="1ZobV4" id="28$LOSAfni_" role="3cqZAp">
+        <node concept="mw_s8" id="28$LOSAfnj1" role="1ZfhKB">
+          <node concept="2pJPEk" id="28$LOSAfniX" role="mwGJk">
+            <node concept="2pJPED" id="28$LOSAfnjf" role="2pJPEn">
+              <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28$LOSAfniC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28$LOSAfn2C" role="mwGJk">
+            <node concept="2OqwBi" id="28$LOSAgdYi" role="1Z2MuG">
+              <node concept="1YBJjd" id="28$LOSAgdN5" role="2Oq$k0">
+                <ref role="1YBMHb" node="28$LOSAfn2l" resolve="qtt" />
+              </node>
+              <node concept="3TrEf2" id="28$LOSAge8A" role="2OqNvi">
+                <ref role="3Tt5mk" to="v0r8:28$LOSAflsv" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28$LOSAfn2l" role="1YuTPh">
+      <property role="TrG5h" value="qtt" />
+      <ref role="1YaFvo" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
+    </node>
+  </node>
 </model>
 

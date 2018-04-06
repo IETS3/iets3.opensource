@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1543,6 +1544,97 @@
     </node>
     <node concept="2tJIrI" id="5a_u3OyW6np" role="jymVt" />
     <node concept="3Tm1VV" id="5a_u3OyW6mL" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="28$LOSAcp3Q">
+    <property role="TrG5h" value="QuoteValue" />
+    <node concept="2tJIrI" id="28$LOSAcp4a" role="jymVt" />
+    <node concept="3clFbW" id="28$LOSAcpal" role="jymVt">
+      <node concept="3cqZAl" id="28$LOSAcpan" role="3clF45" />
+      <node concept="3Tm1VV" id="28$LOSAcpao" role="1B3o_S" />
+      <node concept="3clFbS" id="28$LOSAcpap" role="3clF47">
+        <node concept="3clFbF" id="28$LOSAcphm" role="3cqZAp">
+          <node concept="37vLTI" id="28$LOSAcpho" role="3clFbG">
+            <node concept="37vLTw" id="28$LOSAcphr" role="37vLTJ">
+              <ref role="3cqZAo" node="28$LOSAcphi" resolve="myTerm" />
+            </node>
+            <node concept="37vLTw" id="28$LOSAcphs" role="37vLTx">
+              <ref role="3cqZAo" node="28$LOSAcpgE" resolve="term" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="28$LOSAcpgE" role="3clF46">
+        <property role="TrG5h" value="term" />
+        <node concept="3Tqbb2" id="28$LOSAcpgD" role="1tU5fm">
+          <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="28$LOSAfahq" role="jymVt" />
+    <node concept="3clFb_" id="28$LOSAfapQ" role="jymVt">
+      <property role="TrG5h" value="term" />
+      <node concept="3Tqbb2" id="28$LOSAfaJH" role="3clF45">
+        <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+      </node>
+      <node concept="3Tm1VV" id="28$LOSAfapT" role="1B3o_S" />
+      <node concept="3clFbS" id="28$LOSAfapU" role="3clF47">
+        <node concept="3clFbF" id="28$LOSAfaQb" role="3cqZAp">
+          <node concept="2OqwBi" id="28$LOSAfaXb" role="3clFbG">
+            <node concept="Xjq3P" id="28$LOSAfaQa" role="2Oq$k0" />
+            <node concept="2OwXpG" id="28$LOSAfb5w" role="2OqNvi">
+              <ref role="2Oxat5" node="28$LOSAcphi" resolve="myTerm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="28$LOSAgx7r" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="toString" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="28$LOSAgx7s" role="1B3o_S" />
+      <node concept="3uibUv" id="28$LOSAgx7u" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="28$LOSAgx7v" role="3clF47">
+        <node concept="3clFbF" id="28$LOSAgxlD" role="3cqZAp">
+          <node concept="3cpWs3" id="28$LOSAgzg9" role="3clFbG">
+            <node concept="Xl_RD" id="28$LOSAgzgm" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
+            </node>
+            <node concept="3cpWs3" id="28$LOSAgxCT" role="3uHU7B">
+              <node concept="Xl_RD" id="28$LOSAgxlC" role="3uHU7B">
+                <property role="Xl_RC" value="quote[" />
+              </node>
+              <node concept="2OqwBi" id="28$LOSAgyhJ" role="3uHU7w">
+                <node concept="2OqwBi" id="28$LOSAgxN7" role="2Oq$k0">
+                  <node concept="Xjq3P" id="28$LOSAgxDe" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="28$LOSAgxVx" role="2OqNvi">
+                    <ref role="2Oxat5" node="28$LOSAcphi" resolve="myTerm" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="28$LOSAgyPt" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="28$LOSAgx7w" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="28$LOSAcp4i" role="jymVt" />
+    <node concept="3Tm1VV" id="28$LOSAcp3R" role="1B3o_S" />
+    <node concept="312cEg" id="28$LOSAcphi" role="jymVt">
+      <property role="TrG5h" value="myTerm" />
+      <node concept="3Tm6S6" id="28$LOSAcphj" role="1B3o_S" />
+      <node concept="3Tqbb2" id="28$LOSAcphl" role="1tU5fm">
+        <ref role="ehGHo" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+      </node>
+    </node>
   </node>
 </model>
 
