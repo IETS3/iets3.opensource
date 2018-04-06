@@ -36,10 +36,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
-        <child id="1081256993305" name="classType" index="2ZW6by" />
-        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -555,26 +551,6 @@
                           </node>
                           <node concept="liA8E" id="5zG5$LyexhQ" role="2OqNvi">
                             <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3eNFk2" id="4dD4xJKjf$Q" role="3eNLev">
-                      <node concept="2ZW3vV" id="4dD4xJKjgbS" role="3eO9$A">
-                        <node concept="3uibUv" id="4dD4xJKjgH0" role="2ZW6by">
-                          <ref role="3uigEE" to="juu2:4dD4xJJV980" resolve="SolverNotInvokedResult" />
-                        </node>
-                        <node concept="37vLTw" id="4dD4xJKjfN$" role="2ZW6bz">
-                          <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="4dD4xJKjf$S" role="3eOfB_">
-                        <node concept="Dpp1Q" id="4dD4xJKjgHg" role="3cqZAp">
-                          <node concept="Xl_RD" id="4dD4xJKjgH_" role="Dpw9R">
-                            <property role="Xl_RC" value="This node is ignored due to an @solver:ignore annotation. The solver was hence not invoked." />
-                          </node>
-                          <node concept="1YBJjd" id="4dD4xJKjgHO" role="2OEOjV">
-                            <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                           </node>
                         </node>
                       </node>
