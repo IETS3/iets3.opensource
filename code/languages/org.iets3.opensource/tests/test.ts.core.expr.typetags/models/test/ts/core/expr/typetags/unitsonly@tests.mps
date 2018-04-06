@@ -413,7 +413,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
-    <property role="2XOHcw" value="${iets3.github.core.home}/code/languages/org.iets3.core" />
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="1lH9Xt" id="1fzaMYHrHpe">
     <property role="TrG5h" value="ExpressionsPart2" />
