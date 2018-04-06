@@ -1004,6 +1004,12 @@
             <ref role="3bR37D" to="al5i:5ovySaD2Zoi" resolve="com.mbeddr.mpsutil.varscope.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1996aX6k_Lz" role="3bR37C">
+          <node concept="3bR9La" id="1996aX6k_L$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="49WTic8jAaa" resolve="org.iets3.analysis.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="hh65augvQt" role="2G$12L">
         <property role="BnDLt" value="true" />

@@ -70,6 +70,7 @@
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)</dependency>
     <dependency reexport="false">8e4567d9-0513-47fd-bfe7-fa3b33fe03ab(com.mbeddr.mpsutil.varscope.runtime)</dependency>
+    <dependency reexport="false">db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
