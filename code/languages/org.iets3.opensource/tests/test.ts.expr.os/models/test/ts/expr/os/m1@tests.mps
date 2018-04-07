@@ -465,6 +465,9 @@
       <concept id="543046448977223537" name="org.iets3.core.expr.simpleTypes.tests.structure.EqClassProducer" flags="ng" index="Sm_qJ" />
     </language>
     <language id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt">
+      <concept id="2460310434937429604" name="org.iets3.core.expr.adt.structure.AlgebraicConstructorArg" flags="ng" index="5xh$E">
+        <child id="2460310434937431092" name="type" index="5xidU" />
+      </concept>
       <concept id="5955298286239347343" name="org.iets3.core.expr.adt.structure.AlgebraicType" flags="ng" index="1Kr8EM">
         <reference id="5955298286239347344" name="declaration" index="1Kr8EH" />
       </concept>
@@ -472,9 +475,9 @@
         <child id="5955298286239340413" name="constructors" index="1KraX0" />
       </concept>
       <concept id="5955298286239340412" name="org.iets3.core.expr.adt.structure.AlgebraicConstructor" flags="ng" index="1KraX1">
-        <child id="5955298286239340417" name="arguments" index="1KraYW" />
+        <child id="2460310434937431133" name="newArgs" index="5xicj" />
       </concept>
-      <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicInstance" flags="ng" index="1KrJjp">
+      <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicTerm" flags="ng" index="1KrJjp">
         <child id="5955298286239452394" name="args" index="1KrJjn" />
         <child id="5955298286239452566" name="type" index="1KrJmF" />
       </concept>
@@ -13124,24 +13127,34 @@
           <property role="TrG5h" value="Exp" />
           <node concept="1KraX1" id="5a_u3OyMFHz" role="1KraX0">
             <property role="TrG5h" value="NumLit" />
-            <node concept="30bdrU" id="5a_u3OyMFHF" role="1KraYW" />
+            <node concept="5xh$E" id="28$LOSBDRAa" role="5xicj">
+              <node concept="30bdrU" id="28$LOSBDRA9" role="5xidU" />
+            </node>
           </node>
           <node concept="1KraX1" id="5a_u3OyMStT" role="1KraX0">
             <property role="TrG5h" value="Plus" />
-            <node concept="1Kr8EM" id="5a_u3OyMSFF" role="1KraYW">
-              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            <node concept="5xh$E" id="28$LOSBDR_I" role="5xicj">
+              <node concept="1Kr8EM" id="28$LOSBDR_H" role="5xidU">
+                <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+              </node>
             </node>
-            <node concept="1Kr8EM" id="5a_u3OyMSFQ" role="1KraYW">
-              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            <node concept="5xh$E" id="28$LOSBDR_K" role="5xicj">
+              <node concept="1Kr8EM" id="28$LOSBDR_J" role="5xidU">
+                <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+              </node>
             </node>
           </node>
           <node concept="1KraX1" id="5a_u3OyMSFX" role="1KraX0">
             <property role="TrG5h" value="Minus" />
-            <node concept="1Kr8EM" id="5a_u3OyMSG9" role="1KraYW">
-              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            <node concept="5xh$E" id="28$LOSBDRAE" role="5xicj">
+              <node concept="1Kr8EM" id="28$LOSBDRAD" role="5xidU">
+                <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+              </node>
             </node>
-            <node concept="1Kr8EM" id="5a_u3OyMSGk" role="1KraYW">
-              <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+            <node concept="5xh$E" id="28$LOSBDRAG" role="5xicj">
+              <node concept="1Kr8EM" id="28$LOSBDRAF" role="5xidU">
+                <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+              </node>
             </node>
           </node>
         </node>

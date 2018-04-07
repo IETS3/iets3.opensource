@@ -225,6 +225,9 @@
       <concept id="2460310434933678164" name="org.iets3.core.expr.adt.structure.Ancestor" flags="ng" index="5j6sq">
         <child id="2460310434922396361" name="type" index="4AbQ8" />
       </concept>
+      <concept id="2460310434937429604" name="org.iets3.core.expr.adt.structure.AlgebraicConstructorArg" flags="ng" index="5xh$E">
+        <child id="2460310434937431092" name="type" index="5xidU" />
+      </concept>
       <concept id="8255774724000199527" name="org.iets3.core.expr.adt.structure.LocDotTarget" flags="ng" index="2Ff5gT" />
       <concept id="8255774724001843633" name="org.iets3.core.expr.adt.structure.SrcDotTarget" flags="ng" index="2FliVJ" />
       <concept id="8255774724001840445" name="org.iets3.core.expr.adt.structure.ErrorAnnotation" flags="ng" index="2FllDz">
@@ -261,7 +264,7 @@
         <property id="8255774724006049489" name="symbolicName" index="2C_h6f" />
         <property id="8255774724008301217" name="infix" index="2CIVnZ" />
         <property id="5955298286256342330" name="abstract" index="1Lq3O7" />
-        <child id="5955298286239340417" name="arguments" index="1KraYW" />
+        <child id="2460310434937431133" name="newArgs" index="5xicj" />
         <child id="5955298286256345153" name="constructors" index="1Lq2xW" />
       </concept>
       <concept id="5955298286239452388" name="org.iets3.core.expr.adt.structure.AlgebraicTerm" flags="ng" index="1KrJjp">
@@ -356,11 +359,15 @@
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="5a_u3OyMFHz" role="1KraX0">
         <property role="TrG5h" value="NumLit" />
-        <node concept="mLuIC" id="5a_u3OyUqEs" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAo" role="5xicj">
+          <node concept="mLuIC" id="28$LOSBDRAn" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="5a_u3Ozk7fw" role="1KraX0">
         <property role="TrG5h" value="StringLit" />
-        <node concept="30bdrU" id="5a_u3Ozk8ma" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDR_M" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDR_L" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="5a_u3OzOzQG" role="1KraX0">
         <property role="TrG5h" value="BinaryExp" />
@@ -407,11 +414,15 @@
             <property role="TrG5h" value="Div" />
           </node>
         </node>
-        <node concept="1Kr8EM" id="5a_u3OzPfBU" role="1KraYW">
-          <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDR_W" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDR_V" role="5xidU">
+            <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="5a_u3OzPfC8" role="1KraYW">
-          <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDR_Y" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDR_X" role="5xidU">
+            <ref role="1Kr8EH" node="5a_u3OyMFHu" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>
@@ -1265,15 +1276,21 @@
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAPZOO" role="1KraX0">
         <property role="TrG5h" value="NumLit" />
-        <node concept="mLuIC" id="28$LOSAPZOP" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAm" role="5xicj">
+          <node concept="mLuIC" id="28$LOSBDRAl" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAPZOQ" role="1KraX0">
         <property role="TrG5h" value="StringLit" />
-        <node concept="30bdrU" id="28$LOSAPZOR" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRA0" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDR_Z" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAPZOS" role="1KraX0">
         <property role="TrG5h" value="VarRef" />
-        <node concept="30bdrU" id="28$LOSAPZOT" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAs" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDRAr" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAPZOU" role="1KraX0">
         <property role="TrG5h" value="BinaryExp" />
@@ -1288,11 +1305,15 @@
             <property role="TrG5h" value="Minus" />
           </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSAPZOY" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAPZON" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAc" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAb" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAPZON" resolve="Exp" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSAPZOZ" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAPZON" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAe" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAd" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAPZON" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>
@@ -1456,15 +1477,21 @@
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="28$LOSAdrbK" role="1KraX0">
         <property role="TrG5h" value="NumLit" />
-        <node concept="mLuIC" id="28$LOSAdrbL" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAg" role="5xicj">
+          <node concept="mLuIC" id="28$LOSBDRAf" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAdrbM" role="1KraX0">
         <property role="TrG5h" value="StringLit" />
-        <node concept="30bdrU" id="28$LOSAdrbN" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDR_S" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDR_R" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAKAMX" role="1KraX0">
         <property role="TrG5h" value="ConstRef" />
-        <node concept="30bdrU" id="28$LOSAKB8t" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRA2" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDRA1" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAdrbO" role="1KraX0">
         <property role="TrG5h" value="BinaryExp" />
@@ -1479,11 +1506,15 @@
             <property role="TrG5h" value="Minus" />
           </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSAdrc2" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAA" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRA_" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSAdrc3" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAC" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAB" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>
@@ -1492,14 +1523,20 @@
       <property role="TrG5h" value="Root" />
       <node concept="1KraX1" id="28$LOSAKzWW" role="1KraX0">
         <property role="TrG5h" value="Program" />
-        <node concept="1Kr8EM" id="28$LOSBs0um" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAK_Sm" resolve="Decl" />
+        <node concept="5xh$E" id="28$LOSBDRA4" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRA3" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAK_Sm" resolve="Decl" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSBs0ur" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAK_Sm" resolve="Decl" />
+        <node concept="5xh$E" id="28$LOSBDRA6" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRA5" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAK_Sm" resolve="Decl" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSBs0uC" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRA8" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRA7" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>
@@ -1508,9 +1545,13 @@
       <property role="TrG5h" value="Decl" />
       <node concept="1KraX1" id="28$LOSAK_Sn" role="1KraX0">
         <property role="TrG5h" value="Constant" />
-        <node concept="30bdrU" id="28$LOSAKABz" role="1KraYW" />
-        <node concept="1Kr8EM" id="28$LOSAKABL" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAi" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDRAh" role="5xidU" />
+        </node>
+        <node concept="5xh$E" id="28$LOSBDRAk" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAj" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAdrbJ" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>
@@ -2217,24 +2258,34 @@
       <property role="TrG5h" value="Result" />
       <node concept="1KraX1" id="28$LOSAaCvV" role="1KraX0">
         <property role="TrG5h" value="Value" />
-        <node concept="mLuIC" id="28$LOSAaCI_" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAq" role="5xicj">
+          <node concept="mLuIC" id="28$LOSBDRAp" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="28$LOSAaCKF" role="1KraX0">
         <property role="TrG5h" value="NewEmployment" />
-        <node concept="1WbbFT" id="28$LOSAaCL0" role="1KraYW">
-          <ref role="1WbbFS" node="28$LOSAaCGU" resolve="date" />
+        <node concept="5xh$E" id="28$LOSBDRAu" role="5xicj">
+          <node concept="1WbbFT" id="28$LOSBDRAt" role="5xidU">
+            <ref role="1WbbFS" node="28$LOSAaCGU" resolve="date" />
+          </node>
         </node>
-        <node concept="1WbbFT" id="28$LOSAaCLd" role="1KraYW">
-          <ref role="1WbbFS" node="28$LOSAaCGU" resolve="date" />
+        <node concept="5xh$E" id="28$LOSBDRAw" role="5xicj">
+          <node concept="1WbbFT" id="28$LOSBDRAv" role="5xidU">
+            <ref role="1WbbFS" node="28$LOSAaCGU" resolve="date" />
+          </node>
         </node>
       </node>
       <node concept="1KraX1" id="28$LOSAaCMo" role="1KraX0">
         <property role="TrG5h" value="Both" />
-        <node concept="1Kr8EM" id="28$LOSAaCMA" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAaCvU" resolve="Result" />
+        <node concept="5xh$E" id="28$LOSBDR_O" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDR_N" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAaCvU" resolve="Result" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="28$LOSAaCMG" role="1KraYW">
-          <ref role="1Kr8EH" node="28$LOSAaCvU" resolve="Result" />
+        <node concept="5xh$E" id="28$LOSBDR_Q" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDR_P" role="5xidU">
+            <ref role="1Kr8EH" node="28$LOSAaCvU" resolve="Result" />
+          </node>
         </node>
       </node>
     </node>
@@ -2523,13 +2574,17 @@
         <property role="TrG5h" value="NumLit" />
         <property role="2C_h6f" value="N" />
         <property role="2CyQ6J" value="true" />
-        <node concept="mLuIC" id="5a_u3OzRiQB" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDR_U" role="5xicj">
+          <node concept="mLuIC" id="28$LOSBDR_T" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="5a_u3O$4KtB" role="1KraX0">
         <property role="TrG5h" value="StringLit" />
         <property role="2C_h6f" value="S" />
         <property role="2CyQ6J" value="true" />
-        <node concept="30bdrU" id="5a_u3O$4Lsz" role="1KraYW" />
+        <node concept="5xh$E" id="28$LOSBDRAI" role="5xicj">
+          <node concept="30bdrU" id="28$LOSBDRAH" role="5xidU" />
+        </node>
       </node>
       <node concept="1KraX1" id="5a_u3OzRiQE" role="1KraX0">
         <property role="TrG5h" value="BinaryExp" />
@@ -2596,11 +2651,15 @@
             <property role="2CIVnZ" value="true" />
           </node>
         </node>
-        <node concept="1Kr8EM" id="5a_u3OzRiQS" role="1KraYW">
-          <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRAy" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAx" role="5xidU">
+            <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
+          </node>
         </node>
-        <node concept="1Kr8EM" id="5a_u3OzRiQT" role="1KraYW">
-          <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
+        <node concept="5xh$E" id="28$LOSBDRA$" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSBDRAz" role="5xidU">
+            <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
+          </node>
         </node>
       </node>
     </node>

@@ -374,7 +374,7 @@
           </node>
           <node concept="3F2HdR" id="5a_u3OyMtxb" role="3EZMnx">
             <property role="2czwfO" value="," />
-            <ref role="1NtTu8" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+            <ref role="1NtTu8" to="v0r8:28$LOSBCuht" resolve="newArgs" />
             <node concept="2iRfu4" id="5a_u3OyMtxd" role="2czzBx" />
             <node concept="3F0ifn" id="5a_u3OyMtxm" role="2czzBI">
               <property role="3F0ifm" value="" />
@@ -2220,6 +2220,14 @@
         <node concept="11L4FC" id="28$LOSBqa1T" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="28$LOSBCuhf">
+    <ref role="1XX52x" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+    <node concept="1kIj98" id="28$LOSBCuhk" role="2wV5jI">
+      <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
+        <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
       </node>
     </node>
   </node>

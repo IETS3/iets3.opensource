@@ -389,7 +389,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="5a_u3OzNPDa" role="2OqNvi">
-                        <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
+                        <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="argumentTypes" />
                       </node>
                     </node>
                     <node concept="34jXtK" id="5a_u3OyNjwg" role="2OqNvi">
@@ -438,7 +438,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5a_u3OzNPUy" role="2OqNvi">
-                <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
+                <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="argumentTypes" />
               </node>
             </node>
             <node concept="34oBXx" id="5a_u3OyNa6Q" role="2OqNvi" />
@@ -513,7 +513,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="5a_u3OzNOFf" role="2OqNvi">
-                      <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
+                      <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="argumentTypes" />
                     </node>
                   </node>
                 </node>
@@ -1101,8 +1101,8 @@
               <node concept="1YBJjd" id="5a_u3OzN_Cb" role="2Oq$k0">
                 <ref role="1YBMHb" node="5a_u3OzN$S5" resolve="ac" />
               </node>
-              <node concept="3Tsc0h" id="5a_u3OzNA26" role="2OqNvi">
-                <ref role="3TtcxE" to="v0r8:5a_u3OyMtu1" resolve="arguments" />
+              <node concept="3Tsc0h" id="28$LOSBEq1y" role="2OqNvi">
+                <ref role="3TtcxE" to="v0r8:28$LOSBCuht" resolve="newArgs" />
               </node>
             </node>
             <node concept="3GX2aA" id="5a_u3OzNHgB" role="2OqNvi" />
@@ -1472,7 +1472,7 @@
                                         </node>
                                       </node>
                                       <node concept="2qgKlT" id="5a_u3O$0GW$" role="2OqNvi">
-                                        <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="arguments" />
+                                        <ref role="37wK5l" to="dnkk:5a_u3OzNoA1" resolve="argumentTypes" />
                                       </node>
                                     </node>
                                     <node concept="34jXtK" id="5a_u3O$05dX" role="2OqNvi">

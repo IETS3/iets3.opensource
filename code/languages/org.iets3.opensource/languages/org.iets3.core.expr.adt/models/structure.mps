@@ -122,6 +122,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="28$LOSBCuht" role="1TKVEi">
+      <property role="IQ2ns" value="2460310434937431133" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="newArgs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5a_u3OyMvaf">
     <property role="EcuMT" value="5955298286239347343" />
@@ -537,6 +544,18 @@
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
     <node concept="1TJgyj" id="28$LOSBqa1l" role="1TKVEi">
       <property role="IQ2ns" value="2460310434922396361" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28$LOSBCtT$">
+    <property role="EcuMT" value="2460310434937429604" />
+    <property role="TrG5h" value="AlgebraicConstructorArg" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="28$LOSBCugO" role="1TKVEi">
+      <property role="IQ2ns" value="2460310434937431092" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
