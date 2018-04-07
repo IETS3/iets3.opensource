@@ -115,17 +115,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5a_u3OyMttW" resolve="AlgebraicConstructor" />
     </node>
-    <node concept="1TJgyj" id="5a_u3OyMtu1" role="1TKVEi">
-      <property role="IQ2ns" value="5955298286239340417" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
     <node concept="1TJgyj" id="28$LOSBCuht" role="1TKVEi">
       <property role="IQ2ns" value="2460310434937431133" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="newArgs" />
+      <property role="20kJfa" value="args" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
     </node>
@@ -554,6 +547,12 @@
     <property role="EcuMT" value="2460310434937429604" />
     <property role="TrG5h" value="AlgebraicConstructorArg" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="28$LOSBF$hC" role="1TKVEi">
+      <property role="IQ2ns" value="2460310434938242152" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="multi" />
+      <ref role="20lvS9" node="28$LOSBF$h3" resolve="Multi" />
+    </node>
     <node concept="1TJgyj" id="28$LOSBCugO" role="1TKVEi">
       <property role="IQ2ns" value="2460310434937431092" />
       <property role="20lmBu" value="aggregation" />
@@ -561,6 +560,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="28$LOSBF$h3">
+    <property role="EcuMT" value="2460310434938242115" />
+    <property role="TrG5h" value="Multi" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

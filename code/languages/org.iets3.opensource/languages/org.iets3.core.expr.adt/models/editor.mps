@@ -231,8 +231,10 @@
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
@@ -374,7 +376,7 @@
           </node>
           <node concept="3F2HdR" id="5a_u3OyMtxb" role="3EZMnx">
             <property role="2czwfO" value="," />
-            <ref role="1NtTu8" to="v0r8:28$LOSBCuht" resolve="newArgs" />
+            <ref role="1NtTu8" to="v0r8:28$LOSBCuht" resolve="args" />
             <node concept="2iRfu4" id="5a_u3OyMtxd" role="2czzBx" />
             <node concept="3F0ifn" id="5a_u3OyMtxm" role="2czzBI">
               <property role="3F0ifm" value="" />
@@ -2225,9 +2227,35 @@
   </node>
   <node concept="24kQdi" id="28$LOSBCuhf">
     <ref role="1XX52x" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
-    <node concept="1kIj98" id="28$LOSBCuhk" role="2wV5jI">
-      <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
-        <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
+    <node concept="3EZMnI" id="28$LOSBF$UT" role="2wV5jI">
+      <node concept="2iRfu4" id="28$LOSBF$UU" role="2iSdaV" />
+      <node concept="1kIj98" id="28$LOSBCuhk" role="3EZMnx">
+        <node concept="3F1sOY" id="28$LOSBCuhq" role="1kIj9b">
+          <ref role="1NtTu8" to="v0r8:28$LOSBCugO" resolve="type" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="28$LOSBF$V5" role="3EZMnx">
+        <node concept="3F1sOY" id="28$LOSBF$Vd" role="_tjki">
+          <ref role="1NtTu8" to="v0r8:28$LOSBF$hC" resolve="multi" />
+        </node>
+        <node concept="ZYGn8" id="28$LOSBGswu" role="ZWbT9">
+          <node concept="3clFbS" id="28$LOSBGswv" role="2VODD2">
+            <node concept="3clFbF" id="28$LOSBGsxg" role="3cqZAp">
+              <node concept="Xl_RD" id="28$LOSBGsxf" role="3clFbG">
+                <property role="Xl_RC" value="*" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="28$LOSBF$hw">
+    <ref role="1XX52x" to="v0r8:28$LOSBF$h3" resolve="Multi" />
+    <node concept="3F0ifn" id="28$LOSBF$h_" role="2wV5jI">
+      <property role="3F0ifm" value="*" />
+      <node concept="11L4FC" id="28$LOSBHi_h" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
