@@ -182,6 +182,7 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
@@ -1993,6 +1994,86 @@
     <node concept="1YaCAy" id="28$LOSANXqh" role="1YuTPh">
       <property role="TrG5h" value="copy" />
       <ref role="1YaFvo" to="v0r8:28$LOSALaA2" resolve="Copy" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28$LOSBq9c_">
+    <property role="TrG5h" value="typeof_Parent" />
+    <property role="3GE5qa" value="dot" />
+    <node concept="3clFbS" id="28$LOSBq9cA" role="18ibNy">
+      <node concept="1Z5TYs" id="28$LOSBq9ZO" role="3cqZAp">
+        <node concept="mw_s8" id="28$LOSBqa08" role="1ZfhKB">
+          <node concept="2pJPEk" id="28$LOSBqa04" role="mwGJk">
+            <node concept="2pJPED" id="28$LOSBqa0j" role="2pJPEn">
+              <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28$LOSBq9ZR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28$LOSBq9cG" role="mwGJk">
+            <node concept="1YBJjd" id="28$LOSBq9cW" role="1Z2MuG">
+              <ref role="1YBMHb" node="28$LOSBq9cC" resolve="parent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28$LOSBq9cC" role="1YuTPh">
+      <property role="TrG5h" value="parent" />
+      <ref role="1YaFvo" to="v0r8:28$LOSBq9bH" resolve="Parent" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28$LOSBqa2_">
+    <property role="TrG5h" value="typeof_Ancestor" />
+    <property role="3GE5qa" value="dot" />
+    <node concept="3clFbS" id="28$LOSBqa2A" role="18ibNy">
+      <node concept="1ZobV4" id="28$LOSBtLFz" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="28$LOSBtLF_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28$LOSBtLFA" role="mwGJk">
+            <node concept="2OqwBi" id="28$LOSBtLFB" role="1Z2MuG">
+              <node concept="1YBJjd" id="28$LOSBtLFC" role="2Oq$k0">
+                <ref role="1YBMHb" node="28$LOSBqa2C" resolve="ancestor" />
+              </node>
+              <node concept="3TrEf2" id="28$LOSBtLFD" role="2OqNvi">
+                <ref role="3Tt5mk" to="v0r8:28$LOSBqa1l" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28$LOSBtLFE" role="1ZfhKB">
+          <node concept="2pJPEk" id="28$LOSBtLFF" role="mwGJk">
+            <node concept="2pJPED" id="28$LOSBtLFG" role="2pJPEn">
+              <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="28$LOSBtLLC" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="28$LOSBtLLJ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28$LOSBtLLK" role="mwGJk">
+            <node concept="1YBJjd" id="28$LOSBtLLL" role="1Z2MuG">
+              <ref role="1YBMHb" node="28$LOSBqa2C" resolve="ancestor" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28$LOSBtLLE" role="1ZfhKB">
+          <node concept="1Z2H0r" id="28$LOSBtLLF" role="mwGJk">
+            <node concept="2OqwBi" id="28$LOSBtLLG" role="1Z2MuG">
+              <node concept="1YBJjd" id="28$LOSBtLLH" role="2Oq$k0">
+                <ref role="1YBMHb" node="28$LOSBqa2C" resolve="ancestor" />
+              </node>
+              <node concept="3TrEf2" id="28$LOSBtLLI" role="2OqNvi">
+                <ref role="3Tt5mk" to="v0r8:28$LOSBqa1l" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28$LOSBqa2C" role="1YuTPh">
+      <property role="TrG5h" value="ancestor" />
+      <ref role="1YaFvo" to="v0r8:28$LOSBqa1k" resolve="Ancestor" />
     </node>
   </node>
 </model>

@@ -522,5 +522,26 @@
     <property role="34LRSv" value="size" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
+  <node concept="1TIwiD" id="28$LOSBq9bH">
+    <property role="EcuMT" value="2460310434933674733" />
+    <property role="3GE5qa" value="dot" />
+    <property role="TrG5h" value="Parent" />
+    <property role="34LRSv" value="parent" />
+    <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="28$LOSBqa1k">
+    <property role="EcuMT" value="2460310434933678164" />
+    <property role="3GE5qa" value="dot" />
+    <property role="TrG5h" value="Ancestor" />
+    <property role="34LRSv" value="ancestor" />
+    <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
+    <node concept="1TJgyj" id="28$LOSBqa1l" role="1TKVEi">
+      <property role="IQ2ns" value="2460310434922396361" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
 </model>
 
