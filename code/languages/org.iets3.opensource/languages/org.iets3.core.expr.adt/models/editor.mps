@@ -8,6 +8,7 @@
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation" version="0" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -1746,26 +1747,29 @@
   <node concept="24kQdi" id="7aipPVpLNPr">
     <property role="3GE5qa" value="error" />
     <ref role="1XX52x" to="v0r8:7aipPVpLNOX" resolve="ErrorAnnotation" />
-    <node concept="3EZMnI" id="7aipPVpLNPt" role="2wV5jI">
-      <node concept="1j7BWu" id="7aipPVpLOc8" role="3EZMnx">
-        <node concept="3F0ifn" id="7aipPVpLOci" role="1j7Clw">
+    <node concept="3EZMnI" id="28$LOSC1oyS" role="2wV5jI">
+      <node concept="2SsqMj" id="28$LOSC1oyZ" role="3EZMnx" />
+      <node concept="1j7BWu" id="28$LOSC1oyT" role="3EZMnx">
+        <node concept="3F0ifn" id="28$LOSC1oyU" role="1j7Clw">
           <property role="3F0ifm" value="E" />
-          <node concept="Veino" id="7aipPVpLOcl" role="3F10Kt">
+          <node concept="Veino" id="28$LOSC1oyV" role="3F10Kt">
             <property role="Vb096" value="red" />
           </node>
-          <node concept="VechU" id="7aipPVpLOcu" role="3F10Kt">
+          <node concept="VechU" id="28$LOSC1oyW" role="3F10Kt">
             <property role="Vb096" value="WHITE" />
           </node>
-          <node concept="11LMrY" id="7aipPVpQLhp" role="3F10Kt">
+          <node concept="11L4FC" id="28$LOSCfTvB" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="28$LOSCfTvy" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0A7n" id="7aipPVpLOlo" role="1j7ClA">
+        <node concept="3F0A7n" id="28$LOSC1oyY" role="1j7ClA">
           <ref role="1NtTu8" to="v0r8:7aipPVpLOl3" resolve="message" />
         </node>
       </node>
-      <node concept="2SsqMj" id="7aipPVpLNPF" role="3EZMnx" />
-      <node concept="2iRfu4" id="7aipPVpLNPw" role="2iSdaV" />
+      <node concept="2iRfu4" id="28$LOSC1oz0" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7aipPVpLOBe">
