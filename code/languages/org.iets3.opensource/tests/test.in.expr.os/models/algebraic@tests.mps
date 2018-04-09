@@ -19,6 +19,11 @@
   </languages>
   <imports />
   <registry>
+    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
@@ -2611,6 +2616,10 @@
       <property role="3RSwTz" value="functional.algebraic.language.example" />
     </node>
     <node concept="_ixoA" id="7aipPVpXHcK" role="_iOnB" />
+    <node concept="1Ws0TD" id="28$LOSCgLe7" role="_iOnB">
+      <property role="1WsWdv" value="Language Definition" />
+    </node>
+    <node concept="_ixoA" id="28$LOSCgJX9" role="_iOnB" />
     <node concept="1KraG_" id="5a_u3OzRiQ_" role="_iOnB">
       <property role="TrG5h" value="Exp" />
       <node concept="1KraX1" id="5a_u3OzRiQA" role="1KraX0">
@@ -2733,11 +2742,6 @@
       <property role="TrG5h" value="Root" />
       <node concept="1KraX1" id="28$LOSC0ESF" role="1KraX0">
         <property role="TrG5h" value="Program" />
-        <node concept="5xh$E" id="28$LOSC0ESG" role="5xicj">
-          <node concept="1Kr8EM" id="28$LOSC0ESH" role="5xidU">
-            <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
-          </node>
-        </node>
         <node concept="5xh$E" id="28$LOSC0ESI" role="5xicj">
           <node concept="1Kr8EM" id="28$LOSC0ESJ" role="5xidU">
             <ref role="1Kr8EH" node="28$LOSC0ESM" resolve="Decl" />
@@ -2749,6 +2753,14 @@
     <node concept="_ixoA" id="28$LOSC0ESL" role="_iOnB" />
     <node concept="1KraG_" id="28$LOSC0ESM" role="_iOnB">
       <property role="TrG5h" value="Decl" />
+      <node concept="1KraX1" id="28$LOSChg1o" role="1KraX0">
+        <property role="TrG5h" value="EntryPoint" />
+        <node concept="5xh$E" id="28$LOSChi64" role="5xicj">
+          <node concept="1Kr8EM" id="28$LOSChi63" role="5xidU">
+            <ref role="1Kr8EH" node="5a_u3OzRiQ_" resolve="Exp" />
+          </node>
+        </node>
+      </node>
       <node concept="1KraX1" id="28$LOSC0ESN" role="1KraX0">
         <property role="TrG5h" value="Constant" />
         <node concept="5xh$E" id="28$LOSC0ESO" role="5xicj">
@@ -2762,7 +2774,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="28$LOSC0DVM" role="_iOnB" />
-    <node concept="_ixoA" id="5a_u3O$5fXi" role="_iOnB" />
     <node concept="1aga60" id="28$LOSC0HYs" role="_iOnB">
       <property role="TrG5h" value="binding" />
       <node concept="1ahQXy" id="28$LOSC0HYt" role="1ahQWs">
@@ -2778,7 +2789,6 @@
               <node concept="1KrMWC" id="28$LOSC0HYz" role="1KrJmF">
                 <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
               </node>
-              <node concept="1KhKv7" id="28$LOSC0HY$" role="1KrJjn" />
               <node concept="1KrJjp" id="28$LOSC0HY_" role="1KrJjn">
                 <node concept="1Kvkmc" id="28$LOSC0HYA" role="1KrJjn">
                   <property role="1Kvkm5" value="0" />
@@ -3163,12 +3173,43 @@
         <node concept="1LZjuY" id="28$LOSC16JU" role="3ix9CU" />
       </node>
       <node concept="1Kh3BH" id="7aipPVpAgKR" role="1ahQXP">
+        <node concept="1Kh3CC" id="28$LOSChNKe" role="1Kh3EZ">
+          <node concept="1KrJjp" id="28$LOSChOOd" role="1Kh3Cx">
+            <node concept="1KrMWC" id="28$LOSChOOb" role="1KrJmF">
+              <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
+            </node>
+            <node concept="1KrJjp" id="28$LOSChPQb" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSChPQa" role="1KrJmF">
+                <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
+              </node>
+              <node concept="1KhKv7" id="28$LOSChQSn" role="1KrJjn" />
+              <node concept="1KjOQP" id="28$LOSChV7b" role="lGtFl">
+                <property role="TrG5h" value="eps" />
+              </node>
+            </node>
+          </node>
+          <node concept="30bdrP" id="28$LOSChYCK" role="1Kh3Cz">
+            <property role="30bdrQ" value="exactly one entry point required" />
+          </node>
+          <node concept="1LGszO" id="28$LOSChSZC" role="1LGsye">
+            <node concept="30cPrR" id="28$LOSChY_0" role="1LGsz$">
+              <node concept="30bXRB" id="28$LOSChYA8" role="30dEs_">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="1QScDb" id="28$LOSChYh_" role="30dEsF">
+                <node concept="3iB8M5" id="28$LOSChYu3" role="1QScD9" />
+                <node concept="1KiOFy" id="28$LOSChYha" role="30czhm">
+                  <ref role="1KiOFk" node="28$LOSChV7b" resolve="eps" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1Kh3CC" id="28$LOSC15Ui" role="1Kh3EZ">
           <node concept="1KrJjp" id="28$LOSC15Uj" role="1Kh3Cx">
             <node concept="1KrMWC" id="28$LOSC15Uk" role="1KrJmF">
               <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
             </node>
-            <node concept="1KhKv7" id="28$LOSC15Ul" role="1KrJjn" />
             <node concept="1KrJjp" id="28$LOSC15Um" role="1KrJjn">
               <node concept="1KrMWC" id="28$LOSC15Un" role="1KrJmF">
                 <ref role="1KrMWx" node="28$LOSC0ESN" resolve="Constant" />
@@ -3761,6 +3802,45 @@
       <node concept="1LuOxu" id="5a_u3OzRC__" role="2zM23F" />
     </node>
     <node concept="_ixoA" id="5a_u3OzRiW1" role="_iOnB" />
+    <node concept="1aga60" id="28$LOSChKi1" role="_iOnB">
+      <property role="TrG5h" value="run" />
+      <node concept="1Kh3BH" id="28$LOSChLz4" role="1ahQXP">
+        <node concept="1Kh3CC" id="28$LOSChLz5" role="1Kh3EZ">
+          <node concept="1KrJjp" id="28$LOSChL$C" role="1Kh3Cx">
+            <node concept="1KrMWC" id="28$LOSChL$B" role="1KrJmF">
+              <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
+            </node>
+            <node concept="1KrJjp" id="28$LOSChL__" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSChL_$" role="1KrJmF">
+                <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
+              </node>
+              <node concept="1KnAIv" id="28$LOSChLBv" role="1KrJjn">
+                <property role="TrG5h" value="e" />
+              </node>
+            </node>
+          </node>
+          <node concept="1af_rf" id="28$LOSChLDw" role="1Kh3Cz">
+            <ref role="1afhQb" node="5a_u3OzRiVD" resolve="eval" />
+            <node concept="1LEdyM" id="28$LOSChMHb" role="1afhQ5">
+              <ref role="1LEdyI" node="28$LOSChLBv" resolve="e" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Kh3CC" id="28$LOSChLz6" role="1Kh3EZ">
+          <node concept="1KhKv7" id="28$LOSChLz7" role="1Kh3Cx" />
+          <node concept="UmHTt" id="28$LOSChLEo" role="1Kh3Cz" />
+        </node>
+        <node concept="1afdae" id="28$LOSChLzQ" role="1Kh3BE">
+          <ref role="1afue_" node="28$LOSChLyv" resolve="p" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="28$LOSChLyv" role="1ahQWs">
+        <property role="TrG5h" value="p" />
+        <node concept="1KrMWC" id="28$LOSChLyL" role="3ix9CU">
+          <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="28$LOSAbYwC" role="_iOnB" />
     <node concept="_fkuM" id="5a_u3OzRiW2" role="_iOnB">
       <property role="TrG5h" value="testTyping" />
@@ -3979,12 +4059,17 @@
               <node concept="1KrMWC" id="28$LOSC6BMA" role="1KrJmF">
                 <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
               </node>
-              <node concept="1KrJjp" id="28$LOSC6BMB" role="1KrJjn">
-                <node concept="1KrMWC" id="28$LOSC6CDS" role="1KrJmF">
-                  <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+              <node concept="1KrJjp" id="28$LOSChqjw" role="1KrJjn">
+                <node concept="1KrJjp" id="28$LOSC6BMB" role="1KrJjn">
+                  <node concept="1KrMWC" id="28$LOSC6CDS" role="1KrJmF">
+                    <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+                  </node>
+                  <node concept="30bdrP" id="28$LOSC6Dxe" role="1KrJjn">
+                    <property role="30bdrQ" value="c" />
+                  </node>
                 </node>
-                <node concept="30bdrP" id="28$LOSC6Dxe" role="1KrJjn">
-                  <property role="30bdrQ" value="c" />
+                <node concept="1KrMWC" id="28$LOSChqju" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
                 </node>
               </node>
               <node concept="1KrJjp" id="28$LOSC6BME" role="1KrJjn">
@@ -4035,12 +4120,17 @@
             <node concept="1KrMWC" id="28$LOSC6iPd" role="1KrJmF">
               <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
             </node>
-            <node concept="1KrJjp" id="28$LOSC6jDW" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSC6jDV" role="1KrJmF">
-                <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+            <node concept="1KrJjp" id="28$LOSChuoB" role="1KrJjn">
+              <node concept="1KrJjp" id="28$LOSC6jDW" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSC6jDV" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+                </node>
+                <node concept="30bXRB" id="28$LOSC6ku0" role="1KrJjn">
+                  <property role="30bXRw" value="12" />
+                </node>
               </node>
-              <node concept="30bXRB" id="28$LOSC6ku0" role="1KrJjn">
-                <property role="30bXRw" value="12" />
+              <node concept="1KrMWC" id="28$LOSChuo_" role="1KrJmF">
+                <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
               </node>
             </node>
             <node concept="1KrJjp" id="28$LOSC6m7v" role="1KrJjn">
@@ -4226,7 +4316,7 @@
         <node concept="1KrMWC" id="7aipPVpB949" role="1KrJmF">
           <ref role="1KrMWx" node="5a_u3OzRiQP" resolve="Minus" />
           <node concept="2FllDz" id="28$LOSCexs$" role="lGtFl">
-            <property role="2Fli8t" value="Can only compute with numbers" />
+            <property role="2Fli8t" value="Can only compute with numbers | Can only compute with numbers" />
           </node>
         </node>
         <node concept="1KrJjp" id="7aipPVpB94a" role="1KrJjn">
@@ -4254,7 +4344,7 @@
           <node concept="1KrMWC" id="7aipPVpBfxj" role="1KrJmF">
             <ref role="1KrMWx" node="5a_u3OzRiQG" resolve="Greater" />
             <node concept="2FllDz" id="28$LOSCexs_" role="lGtFl">
-              <property role="2Fli8t" value="Can only compute with numbers" />
+              <property role="2Fli8t" value="Can only compute with numbers | Can only compute with numbers" />
             </node>
           </node>
           <node concept="1KrJjp" id="7aipPVpBg4e" role="1KrJjn">
@@ -4372,38 +4462,43 @@
         <node concept="1KrMWC" id="28$LOSCcND2" role="1KrJmF">
           <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
         </node>
-        <node concept="1KrJjp" id="28$LOSCcND3" role="1KrJjn">
-          <node concept="1KrMWC" id="28$LOSCcND4" role="1KrJmF">
-            <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-          </node>
-          <node concept="1KrJjp" id="28$LOSCcND5" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCcND6" role="1KrJmF">
-              <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-            </node>
-            <node concept="30bXRB" id="28$LOSCcND7" role="1KrJjn">
-              <property role="30bXRw" value="1" />
-            </node>
-          </node>
-          <node concept="1KrJjp" id="28$LOSCcND8" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCcND9" role="1KrJmF">
+        <node concept="1KrJjp" id="28$LOSCh$xy" role="1KrJjn">
+          <node concept="1KrJjp" id="28$LOSCcND3" role="1KrJjn">
+            <node concept="1KrMWC" id="28$LOSCcND4" role="1KrJmF">
               <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
             </node>
-            <node concept="1KrJjp" id="28$LOSCcNDa" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCcNDb" role="1KrJmF">
-                <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+            <node concept="1KrJjp" id="28$LOSCcND5" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCcND6" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
               </node>
-              <node concept="30bdrP" id="28$LOSCcNDc" role="1KrJjn">
-                <property role="30bdrQ" value="a" />
-              </node>
-            </node>
-            <node concept="1KrJjp" id="28$LOSCcNDd" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCcNDe" role="1KrJmF">
-                <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
-              </node>
-              <node concept="30bdrP" id="28$LOSCcNDf" role="1KrJjn">
-                <property role="30bdrQ" value="b" />
+              <node concept="30bXRB" id="28$LOSCcND7" role="1KrJjn">
+                <property role="30bXRw" value="1" />
               </node>
             </node>
+            <node concept="1KrJjp" id="28$LOSCcND8" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCcND9" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
+              </node>
+              <node concept="1KrJjp" id="28$LOSCcNDa" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCcNDb" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+                </node>
+                <node concept="30bdrP" id="28$LOSCcNDc" role="1KrJjn">
+                  <property role="30bdrQ" value="a" />
+                </node>
+              </node>
+              <node concept="1KrJjp" id="28$LOSCcNDd" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCcNDe" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+                </node>
+                <node concept="30bdrP" id="28$LOSCcNDf" role="1KrJjn">
+                  <property role="30bdrQ" value="b" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1KrMWC" id="28$LOSCh$xw" role="1KrJmF">
+            <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
           </node>
         </node>
         <node concept="1KrJjp" id="28$LOSCcNDg" role="1KrJjn">
@@ -4473,57 +4568,62 @@
       <property role="TrG5h" value="TestRefs" />
       <node concept="_fkuZ" id="28$LOSCcNDE" role="_fkp5">
         <node concept="_fku$" id="28$LOSCcNDF" role="_fkur" />
-        <node concept="1KrJjp" id="28$LOSCdG18" role="_fkuS">
-          <node concept="1KrMWC" id="28$LOSCdG16" role="1KrJmF">
-            <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-          </node>
-          <node concept="1KrJjp" id="28$LOSCdG1p" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCdG1o" role="1KrJmF">
-              <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-            </node>
-            <node concept="30bXRB" id="28$LOSCdG1D" role="1KrJjn">
-              <property role="30bXRw" value="1" />
-            </node>
-          </node>
-          <node concept="1KrJjp" id="28$LOSCdG2X" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCdG2V" role="1KrJmF">
-              <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-            </node>
-            <node concept="1KrJjp" id="28$LOSCdG3M" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCdG3L" role="1KrJmF">
-                <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-              </node>
-              <node concept="30bXRB" id="28$LOSCdG4_" role="1KrJjn">
-                <property role="30bXRw" value="20" />
-              </node>
-            </node>
-            <node concept="1KrJjp" id="28$LOSCdG7V" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCdG7T" role="1KrJmF">
-                <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-              </node>
-              <node concept="1KrJjp" id="28$LOSCdG9g" role="1KrJjn">
-                <node concept="1KrMWC" id="28$LOSCdG9f" role="1KrJmF">
-                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-                </node>
-                <node concept="30bXRB" id="28$LOSCdGay" role="1KrJjn">
-                  <property role="30bXRw" value="1" />
-                </node>
-              </node>
-              <node concept="1KrJjp" id="28$LOSCdGc2" role="1KrJjn">
-                <node concept="1KrMWC" id="28$LOSCdGc3" role="1KrJmF">
-                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-                </node>
-                <node concept="30bXRB" id="28$LOSCdGc4" role="1KrJjn">
-                  <property role="30bXRw" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1Kvkmc" id="28$LOSCcNDH" role="_fkuY">
           <property role="1Kvkm5" value="0" />
           <node concept="_emDc" id="28$LOSCcNDI" role="30czhm">
             <ref role="_emDf" node="28$LOSCcNDy" resolve="inlined" />
+          </node>
+        </node>
+        <node concept="1KrJjp" id="28$LOSCigS3" role="_fkuS">
+          <node concept="1KrJjp" id="28$LOSCdG18" role="1KrJjn">
+            <node concept="1KrMWC" id="28$LOSCdG16" role="1KrJmF">
+              <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
+            </node>
+            <node concept="1KrJjp" id="28$LOSCdG1p" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCdG1o" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+              </node>
+              <node concept="30bXRB" id="28$LOSCdG1D" role="1KrJjn">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+            <node concept="1KrJjp" id="28$LOSCdG2X" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCdG2V" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
+              </node>
+              <node concept="1KrJjp" id="28$LOSCdG3M" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCdG3L" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+                </node>
+                <node concept="30bXRB" id="28$LOSCdG4_" role="1KrJjn">
+                  <property role="30bXRw" value="20" />
+                </node>
+              </node>
+              <node concept="1KrJjp" id="28$LOSCdG7V" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCdG7T" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
+                </node>
+                <node concept="1KrJjp" id="28$LOSCdG9g" role="1KrJjn">
+                  <node concept="1KrMWC" id="28$LOSCdG9f" role="1KrJmF">
+                    <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+                  </node>
+                  <node concept="30bXRB" id="28$LOSCdGay" role="1KrJjn">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                </node>
+                <node concept="1KrJjp" id="28$LOSCdGc2" role="1KrJjn">
+                  <node concept="1KrMWC" id="28$LOSCdGc3" role="1KrJmF">
+                    <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+                  </node>
+                  <node concept="30bXRB" id="28$LOSCdGc4" role="1KrJjn">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1KrMWC" id="28$LOSCigS2" role="1KrJmF">
+            <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
           </node>
         </node>
       </node>
@@ -4533,12 +4633,9 @@
           <property role="30bXRw" value="23" />
         </node>
         <node concept="1af_rf" id="28$LOSCdId5" role="_fkuY">
-          <ref role="1afhQb" node="5a_u3OzRiVD" resolve="eval" />
-          <node concept="1Kvkmc" id="28$LOSCdMix" role="1afhQ5">
-            <property role="1Kvkm5" value="0" />
-            <node concept="_emDc" id="28$LOSCdMiy" role="30czhm">
-              <ref role="_emDf" node="28$LOSCcNDy" resolve="inlined" />
-            </node>
+          <ref role="1afhQb" node="28$LOSChKi1" resolve="run" />
+          <node concept="_emDc" id="28$LOSCdMiy" role="1afhQ5">
+            <ref role="_emDf" node="28$LOSCcNDy" resolve="inlined" />
           </node>
         </node>
       </node>
@@ -4550,47 +4647,52 @@
         <node concept="1KrMWC" id="28$LOSCf2H9" role="1KrJmF">
           <ref role="1KrMWx" node="28$LOSC0ESF" resolve="Program" />
           <node concept="2FllDz" id="28$LOSCfGHD" role="lGtFl">
-            <property role="2Fli8t" value="duplicate constant names" />
+            <property role="2Fli8t" value="duplicate constant names | duplicate constant names" />
           </node>
         </node>
-        <node concept="1KrJjp" id="28$LOSCf2Ha" role="1KrJjn">
-          <node concept="1KrMWC" id="28$LOSCf2Hb" role="1KrJmF">
-            <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-          </node>
-          <node concept="1KrJjp" id="28$LOSCf2Hc" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCf2Hd" role="1KrJmF">
-              <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
-            </node>
-            <node concept="30bXRB" id="28$LOSCf2He" role="1KrJjn">
-              <property role="30bXRw" value="1" />
-            </node>
-          </node>
-          <node concept="1KrJjp" id="28$LOSCf2Hf" role="1KrJjn">
-            <node concept="1KrMWC" id="28$LOSCf2Hg" role="1KrJmF">
+        <node concept="1KrJjp" id="28$LOSCi9l9" role="1KrJjn">
+          <node concept="1KrJjp" id="28$LOSCf2Ha" role="1KrJjn">
+            <node concept="1KrMWC" id="28$LOSCf2Hb" role="1KrJmF">
               <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
-              <node concept="2FllDz" id="28$LOSCfHvV" role="lGtFl">
-                <property role="2Fli8t" value="The two types must be the same" />
+            </node>
+            <node concept="1KrJjp" id="28$LOSCf2Hc" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCf2Hd" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+              </node>
+              <node concept="30bXRB" id="28$LOSCf2He" role="1KrJjn">
+                <property role="30bXRw" value="1" />
               </node>
             </node>
-            <node concept="1KrJjp" id="28$LOSCf2Hh" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCf2Hi" role="1KrJmF">
-                <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
-              </node>
-              <node concept="30bdrP" id="28$LOSCf2Hj" role="1KrJjn">
-                <property role="30bdrQ" value="a" />
-              </node>
-            </node>
-            <node concept="1KrJjp" id="28$LOSCf2Hk" role="1KrJjn">
-              <node concept="1KrMWC" id="28$LOSCf2Hl" role="1KrJmF">
-                <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
-                <node concept="2FllDz" id="28$LOSCfHvW" role="lGtFl">
-                  <property role="2Fli8t" value="constant not found" />
+            <node concept="1KrJjp" id="28$LOSCf2Hf" role="1KrJjn">
+              <node concept="1KrMWC" id="28$LOSCf2Hg" role="1KrJmF">
+                <ref role="1KrMWx" node="5a_u3OzRiQO" resolve="Plus" />
+                <node concept="2FllDz" id="28$LOSCfHvV" role="lGtFl">
+                  <property role="2Fli8t" value="The two types must be the same | The two types must be the same" />
                 </node>
               </node>
-              <node concept="30bdrP" id="28$LOSCf2Hm" role="1KrJjn">
-                <property role="30bdrQ" value="b" />
+              <node concept="1KrJjp" id="28$LOSCf2Hh" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCf2Hi" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+                </node>
+                <node concept="30bdrP" id="28$LOSCf2Hj" role="1KrJjn">
+                  <property role="30bdrQ" value="a" />
+                </node>
+              </node>
+              <node concept="1KrJjp" id="28$LOSCf2Hk" role="1KrJjn">
+                <node concept="1KrMWC" id="28$LOSCf2Hl" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSC0JEz" resolve="ConstRef" />
+                  <node concept="2FllDz" id="28$LOSCfHvW" role="lGtFl">
+                    <property role="2Fli8t" value="constant not found | constant not found" />
+                  </node>
+                </node>
+                <node concept="30bdrP" id="28$LOSCf2Hm" role="1KrJjn">
+                  <property role="30bdrQ" value="b" />
+                </node>
               </node>
             </node>
+          </node>
+          <node concept="1KrMWC" id="28$LOSCi9l7" role="1KrJmF">
+            <ref role="1KrMWx" node="28$LOSChg1o" resolve="EntryPoint" />
           </node>
         </node>
         <node concept="1KrJjp" id="28$LOSCf2Hn" role="1KrJjn">
@@ -5262,6 +5364,9 @@
     <node concept="_ixoA" id="28$LOSBVN_n" role="_iOnB" />
     <node concept="_ixoA" id="28$LOSBM6Lz" role="_iOnB" />
     <node concept="_ixoA" id="28$LOSBM6MX" role="_iOnB" />
+  </node>
+  <node concept="2XOHcx" id="4rZeNQ6M9GV">
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
