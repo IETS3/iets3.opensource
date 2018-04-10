@@ -18,7 +18,6 @@
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="ip5i" ref="f:diff_old#r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3538,7 +3537,7 @@
             <node concept="2OqwBi" id="6HHp2Wnky9$" role="1Z2MuG">
               <node concept="2OqwBi" id="6HHp2WnkxWM" role="2Oq$k0">
                 <node concept="1YBJjd" id="6HHp2WnkxUA" role="2Oq$k0">
-                  <ref role="1YBMHb" to="ip5i:6HHp2WnkxRl" resolve="tdt" />
+                  <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
                 </node>
                 <node concept="3TrEf2" id="6HHp2Wnky1T" role="2OqNvi">
                   <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
@@ -3553,7 +3552,7 @@
         <node concept="mw_s8" id="6HHp2WnkxU4" role="1ZfhK$">
           <node concept="1Z2H0r" id="6HHp2WnkxR_" role="mwGJk">
             <node concept="1YBJjd" id="6HHp2WnkxS1" role="1Z2MuG">
-              <ref role="1YBMHb" to="ip5i:6HHp2WnkxRl" resolve="tdt" />
+              <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
             </node>
           </node>
         </node>
