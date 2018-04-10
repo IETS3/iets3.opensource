@@ -1713,5 +1713,21 @@
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="IAssertConstraints" />
   </node>
+  <node concept="1TIwiD" id="2ufoZQIKHqp">
+    <property role="EcuMT" value="2850607030358693529" />
+    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+    <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
+      <property role="IQ2nx" value="7098765551289898322" />
+      <property role="TrG5h" value="onlyLast" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6a3SqxOtOxB" role="1TKVEl">
+      <property role="IQ2nx" value="7098765551290763367" />
+      <property role="TrG5h" value="showOnTop" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
+  </node>
 </model>
 
