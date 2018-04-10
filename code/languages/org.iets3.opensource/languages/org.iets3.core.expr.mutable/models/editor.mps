@@ -2,9 +2,9 @@
 <model ref="r:7b6888d5-e93c-46df-85f2-56bc59c85348(org.iets3.core.expr.mutable.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -524,14 +524,6 @@
           <ref role="1NtTu8" to="8lgj:3GdqffC8H$h" resolve="body" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="79jc6YzaH5U">
-    <property role="3GE5qa" value="void" />
-    <ref role="1XX52x" to="8lgj:79jc6Yz3CVd" resolve="VoidType" />
-    <node concept="3F0ifn" id="79jc6YzaH65" role="2wV5jI">
-      <property role="3F0ifm" value="void" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
   <node concept="24kQdi" id="1RzljfOfUpf">
@@ -2369,6 +2361,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="1MjwAV6z_mc">
+    <property role="3GE5qa" value="function" />
+    <ref role="aqKnT" to="8lgj:1MjwAV6z_lJ" resolve="MutableMetaFunction" />
   </node>
 </model>
 
