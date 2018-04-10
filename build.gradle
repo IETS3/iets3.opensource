@@ -1,6 +1,8 @@
 import de.itemis.mps.gradle.GenerateLibrariesXml
 import de.itemis.mps.gradle.GitBasedVersioning
 
+import java.time.LocalDateTime
+
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
@@ -12,16 +14,16 @@ buildscript {
     }
 }
 
+plugins {
+    id "co.riiid.gradle" version "0.4.2"
+}
+
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
 } else {
     //on teamcity we are in a CI build
-    if (project.hasProperty("teamcity")) {
-        ext.ciBuild = true
-    } else {
-        ext.ciBuild = false
-    }
+    ext.ciBuild = project.hasProperty("teamcity")
 }
 
 
@@ -30,6 +32,20 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
 ext.mpsVersion = '2017.3.5'
+
+def mbeddrVersion = "1.0+"
+
+// if building a against a special branch from mbeddr is required add the name here
+// the name is enough no trailing "." is required, also the plain name from git can
+// be used here. No need to convert "/" the script will take care of that.
+def mbeddrBranch = ""
+
+
+if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
+    ext.mbeddrVersionSelector = "${mbeddrBranch.replace("/", "-")}.${mbeddrVersion}"
+} else {
+    ext.mbeddrVersionSelector = mbeddrVersion
+}
 
 
 // Project version
@@ -47,13 +63,12 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
 
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {
-        println "Local SNAPSHOT version forced"
-        ext.mbeddrVersion = '1.0-SNAPSHOT'
+        logger.log(LogLevel.WARN, "Local SNAPSHOT version forced")
+        ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
     }
-    else {
-        //default version
-        ext.mbeddrVersion = '1.0.+'
-    }
+} else {
+    logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
+    ext.mbeddrVersionSelector = ext.mbeddrVersion
 }
 
 
@@ -71,6 +86,7 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 apply plugin: 'maven-publish'
 apply plugin: 'base'
 
+
 task wrapper(type: Wrapper) {
     gradleVersion '4.4.1'
     distributionType 'all'
@@ -83,7 +99,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mpsArtifacts "com.mbeddr:platform:$mbeddrVersion"
+    mpsArtifacts "com.mbeddr:platform:$mbeddrVersionSelector"
 }
 
 repositories {
@@ -243,3 +259,20 @@ task setup {
 
 defaultTasks 'ant-clean-and-build'
 
+LocalDateTime t = LocalDateTime.now()
+
+def releaseNotes = """Automated Nighly build from ${t as String}."""
+
+github {
+    owner = 'IETS3'
+    repo = 'iets3.opensource'
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    tagName = 'nightly-release-' + version
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nighly Build ' + version
+    body = releaseNotes
+    prerelease = true
+    assets = packageOpenSource.outputs.files
+}
+
+githubRelease.dependsOn packageOpenSource
