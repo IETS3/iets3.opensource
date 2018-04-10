@@ -6976,18 +6976,13 @@
                             <node concept="3cpWs6" id="5kRSWVwA1iV" role="3cqZAp">
                               <node concept="2OqwBi" id="5kRSWVwAcST" role="3cqZAk">
                                 <node concept="2OqwBi" id="5kRSWVwA9A_" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="5kRSWVwA6Dt" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="5kRSWVwA3ty" role="2Oq$k0">
-                                      <node concept="2ZN8Hh" id="5kRSWVwA1R6" role="2Oq$k0" />
-                                      <node concept="3TrEf2" id="5kRSWVwA4Td" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="w9y2:2Y$6Xot5kGx" resolve="component" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrEf2" id="5kRSWVwA7R3" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
+                                  <node concept="2OqwBi" id="5kRSWVwA3ty" role="2Oq$k0">
+                                    <node concept="2ZN8Hh" id="5kRSWVwA1R6" role="2Oq$k0" />
+                                    <node concept="2qgKlT" id="2SmsI244pdt" role="2OqNvi">
+                                      <ref role="37wK5l" to="3eba:77HYM7H$sfU" resolve="component" />
                                     </node>
                                   </node>
-                                  <node concept="2yIwOk" id="5kRSWVwAb6Z" role="2OqNvi" />
+                                  <node concept="2yIwOk" id="2SmsI244G8f" role="2OqNvi" />
                                 </node>
                                 <node concept="2qgKlT" id="5kRSWVwApYU" role="2OqNvi">
                                   <ref role="37wK5l" to="3eba:5kRSWVw_UfO" resolve="getPaletteEntryTitle_NewSubcomponent" />
