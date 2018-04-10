@@ -2,7 +2,6 @@
 <model ref="r:098cd5d2-6719-4a9b-9976-ee98e642cc00(org.iets3.core.expr.repl.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
