@@ -86,9 +86,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -262,6 +259,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1180964022718" name="jetbrains.mps.baseLanguage.collections.structure.ConcatOperation" flags="nn" index="3QWeyG" />
     </language>
   </registry>
   <node concept="1M2fIO" id="6LfBX8YiYBN">
@@ -2117,39 +2115,22 @@
             <node concept="2YIFZM" id="1F1F0IUZ$M2" role="3clFbG">
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="1F1F0IUZ$M3" role="37wK5m">
+              <node concept="2OqwBi" id="nyN7xY1Kdr" role="37wK5m">
                 <node concept="2OqwBi" id="1F1F0IUZ$M4" role="2Oq$k0">
                   <node concept="37vLTw" id="1F1F0IUZ$M5" role="2Oq$k0">
                     <ref role="3cqZAo" node="1F1F0IUZ$Ie" resolve="i" />
                   </node>
-                  <node concept="2qgKlT" id="1F1F0IUZ$M6" role="2OqNvi">
+                  <node concept="2qgKlT" id="nyN7xY1JMr" role="2OqNvi">
                     <ref role="37wK5l" to="3eba:mIQkxfsZt_" resolve="sourcePorts" />
                   </node>
                 </node>
-                <node concept="3zZkjj" id="1F1F0IUZ$M7" role="2OqNvi">
-                  <node concept="1bVj0M" id="1F1F0IUZ$M8" role="23t8la">
-                    <node concept="3clFbS" id="1F1F0IUZ$M9" role="1bW5cS">
-                      <node concept="3clFbF" id="1F1F0IUZ$Ma" role="3cqZAp">
-                        <node concept="3fqX7Q" id="1F1F0IUZ$Mb" role="3clFbG">
-                          <node concept="2OqwBi" id="1F1F0IUZ$Mc" role="3fr31v">
-                            <node concept="2OqwBi" id="1F1F0IUZ$Md" role="2Oq$k0">
-                              <node concept="37vLTw" id="1F1F0IUZ$Me" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1F1F0IUZ$Mh" resolve="it" />
-                              </node>
-                              <node concept="3TrEf2" id="1F1F0IUZ$Mf" role="2OqNvi">
-                                <ref role="3Tt5mk" to="w9y2:mIQkxfpv7_" resolve="category" />
-                              </node>
-                            </node>
-                            <node concept="2qgKlT" id="1F1F0IUZ$Mg" role="2OqNvi">
-                              <ref role="37wK5l" to="3eba:mIQkxfpvfA" resolve="isDirectional" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                <node concept="3QWeyG" id="nyN7xY1KAR" role="2OqNvi">
+                  <node concept="2OqwBi" id="nyN7xY1Lcp" role="576Qk">
+                    <node concept="37vLTw" id="nyN7xY1KTJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1F1F0IUZ$Ie" resolve="i" />
                     </node>
-                    <node concept="Rh6nW" id="1F1F0IUZ$Mh" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="1F1F0IUZ$Mi" role="1tU5fm" />
+                    <node concept="2qgKlT" id="nyN7xY1LGx" role="2OqNvi">
+                      <ref role="37wK5l" to="3eba:mIQkxft09G" resolve="targetPorts" />
                     </node>
                   </node>
                 </node>

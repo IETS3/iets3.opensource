@@ -63,7 +63,6 @@
   </stubModelEntries>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
@@ -71,7 +70,6 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="true">735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)</dependency>
     <dependency reexport="false">b6f172c1-d3af-40cd-a1c3-ef9952e306b3(com.mbeddr.mpsutil.nodeaccess)</dependency>
-    <dependency reexport="false">db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
@@ -84,7 +82,6 @@
     <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <language slang="l:e776175c-3bf6-498e-ad36-e4c7dfa5fbe9:com.mbeddr.mpsutil.httpsupport" version="0" />
     <language slang="l:b92f861d-0184-446d-b88b-6dcf0e070241:com.mbeddr.mpsutil.intentions" version="0" />
-    <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="0" />
     <language slang="l:309e0004-4976-4416-b947-ec02ae4ecef2:com.mbeddr.mpsutil.modellisteners" version="0" />
     <language slang="l:1fc20ffe-f35b-4791-a0b7-d706bad5c49a:com.mbeddr.mpsutil.refactoring" version="0" />
     <language slang="l:1919c723-b60b-4592-9318-9ce96d91da44:de.itemis.mps.editor.celllayout" version="0" />
@@ -117,7 +114,6 @@
     <language slang="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" version="0" />
     <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="0" />
     <language slang="l:90746344-04fd-4286-97d5-b46ae6a81709:jetbrains.mps.lang.migration" version="0" />
-    <language slang="l:9882f4ad-1955-46fe-8269-94189e5dbbf2:jetbrains.mps.lang.migration.util" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="1" />
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="2" />
@@ -176,9 +172,10 @@
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>
+    <extendedLanguage>db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
-    <extendedLanguage>db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</extendedLanguage>
     <extendedLanguage>47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</extendedLanguage>
   </extendedLanguages>
 </language>

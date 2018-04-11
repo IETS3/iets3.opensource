@@ -12,6 +12,7 @@
     <dependency reexport="false">9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)</dependency>
     <dependency reexport="false">cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)</dependency>
     <dependency reexport="false">197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)</dependency>
+    <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="0" />
