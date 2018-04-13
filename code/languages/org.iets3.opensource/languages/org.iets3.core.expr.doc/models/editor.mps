@@ -379,31 +379,10 @@
             <node concept="3TQlhw" id="2c2AzQcE1DV" role="1Hhtcw">
               <node concept="3clFbS" id="2c2AzQcE1DW" role="2VODD2">
                 <node concept="3clFbF" id="2c2AzQcE2g1" role="3cqZAp">
-                  <node concept="3cpWs3" id="2c2AzQcEoPn" role="3clFbG">
-                    <node concept="Xl_RD" id="2c2AzQcEoPt" role="3uHU7w">
-                      <property role="Xl_RC" value=")" />
-                    </node>
-                    <node concept="3cpWs3" id="2c2AzQcEn5u" role="3uHU7B">
-                      <node concept="3cpWs3" id="2c2AzQcEaa0" role="3uHU7B">
-                        <node concept="3cpWs3" id="2c2AzQcE3H5" role="3uHU7B">
-                          <node concept="Xl_RD" id="2c2AzQcE2g0" role="3uHU7B">
-                            <property role="Xl_RC" value="![](" />
-                          </node>
-                          <node concept="2OqwBi" id="2c2AzQcE6lz" role="3uHU7w">
-                            <node concept="pncrf" id="2c2AzQcE60d" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="2c2AzQcE79I" role="2OqNvi">
-                              <ref role="37wK5l" to="srqo:2c2AzQcE4iJ" resolve="localName" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="2c2AzQcEaa6" role="3uHU7w">
-                          <property role="Xl_RC" value=")&amp;nbsp;&amp;nbsp;[src](" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="2c2AzQcEnqZ" role="3uHU7w">
-                        <node concept="pncrf" id="2c2AzQcEn5P" role="2Oq$k0" />
-                        <node concept="2$mYbS" id="2c2AzQcEofk" role="2OqNvi" />
-                      </node>
+                  <node concept="2OqwBi" id="31BLocd031d" role="3clFbG">
+                    <node concept="pncrf" id="31BLocd02zd" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="31BLocd04es" role="2OqNvi">
+                      <ref role="37wK5l" to="srqo:31BLoccZVAr" resolve="markdownIncludeString" />
                     </node>
                   </node>
                 </node>
