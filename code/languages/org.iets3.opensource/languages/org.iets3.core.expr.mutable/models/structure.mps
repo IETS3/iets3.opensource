@@ -119,6 +119,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="31BLocd1pR_" role="1TKVEi">
+      <property role="IQ2ns" value="3487973603071598053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="currency" />
+      <ref role="20lvS9" node="31BLocd1pRE" resolve="UpdateCurrencyCheck" />
+    </node>
     <node concept="PrWs8" id="3ni3Wie3gG3" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -523,6 +529,19 @@
     <ref role="1TJDcQ" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     <node concept="PrWs8" id="1MjwAV6z_lK" role="PzmwI">
       <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="31BLocd1pRE">
+    <property role="EcuMT" value="3487973603071598058" />
+    <property role="3GE5qa" value="box" />
+    <property role="TrG5h" value="UpdateCurrencyCheck" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="31BLocd1pRF" role="1TKVEi">
+      <property role="IQ2ns" value="3487973603071598059" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="oldValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
