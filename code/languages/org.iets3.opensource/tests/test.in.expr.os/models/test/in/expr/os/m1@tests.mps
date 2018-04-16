@@ -14,7 +14,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
   </languages>
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
@@ -39,7 +39,7 @@
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
         <child id="527291771330969242" name="arg" index="24uAY8" />
       </concept>
-      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetAddOp" flags="ng" index="2iGxMk" />
+      <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetWithOp" flags="ng" index="2iGxMk" />
       <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
       <concept id="6095949300270588116" name="org.iets3.core.expr.collections.structure.IsNotEmptyOp" flags="ng" index="nW$_3" />
       <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ImmutableListWithAllOp" flags="ng" index="2oUEFG" />
@@ -103,12 +103,12 @@
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
       <concept id="5070313213695398904" name="org.iets3.core.expr.collections.structure.StringJoinOp" flags="ng" index="1k5sNT" />
       <concept id="5070313213697900736" name="org.iets3.core.expr.collections.structure.StringTerminateOp" flags="ng" index="1kcTZ1" />
-      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.ImmutableSetRemoveOp" flags="ng" index="3wlHHh" />
+      <concept id="3831047747134047985" name="org.iets3.core.expr.collections.structure.ImmutableSetWithoutOp" flags="ng" index="3wlHHh" />
       <concept id="890435239346753529" name="org.iets3.core.expr.collections.structure.SimpleSortOp" flags="ng" index="3$AVBo">
         <property id="890435239346753553" name="order" index="3$AUoK" />
       </concept>
-      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapRemoveOp" flags="ng" index="1DE4Fa" />
-      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapPutOp" flags="ng" index="1DFusj" />
+      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapWithoutOp" flags="ng" index="1DE4Fa" />
+      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapWithOp" flags="ng" index="1DFusj" />
       <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.ImmutableMapType" flags="ng" index="1DGDPD" />
       <concept id="8448265401163111273" name="org.iets3.core.expr.collections.structure.KeyValuePair" flags="ng" index="1DGDZQ">
         <child id="8448265401163111276" name="val" index="1DGDZN" />
