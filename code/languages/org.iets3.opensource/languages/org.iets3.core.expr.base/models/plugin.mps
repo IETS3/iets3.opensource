@@ -9,6 +9,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,7 +18,6 @@
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
-    <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="buwp" ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)" />
@@ -303,11 +303,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
-      <concept id="3379970138993099772" name="com.mbeddr.mpsutil.httpsupport.structure.ApplicationID" flags="ng" index="3gX9ci">
-        <reference id="3379970138993099791" name="requestHandler" index="3gX9jx" />
-      </concept>
-    </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
         <reference id="3751132065236767084" name="decl" index="q3mfh" />
@@ -470,6 +465,9 @@
       <concept id="1522217801069396578" name="jetbrains.mps.baseLanguage.collections.structure.FoldLeftOperation" flags="nn" index="1MD8d$">
         <child id="1522217801069421796" name="seed" index="1MDeny" />
       </concept>
+    </language>
+    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
+      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
     </language>
   </registry>
   <node concept="312cEu" id="UN2ftLWgA8">
@@ -2452,6 +2450,12 @@
             <ref role="3cqZAo" node="2jL$v5BnAGK" resolve="details" />
           </node>
           <node concept="3K4zz7" id="2jL$v5BnAG1" role="37wK5m">
+            <node concept="2OqwBi" id="2Cyo7$6ciHK" role="3K4E3e">
+              <node concept="37vLTw" id="2Cyo7$6ciiA" role="2Oq$k0">
+                <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
+              </node>
+              <node concept="2$mYbS" id="2Cyo7$6cjhh" role="2OqNvi" />
+            </node>
             <node concept="3y3z36" id="2jL$v5BnAG2" role="3K4Cdx">
               <node concept="10Nm6u" id="2jL$v5BnAG3" role="3uHU7w" />
               <node concept="2OqwBi" id="2jL$v5BnAG4" role="3uHU7B">
@@ -2459,17 +2463,6 @@
                   <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
                 </node>
                 <node concept="I4A8Y" id="2jL$v5BnAG6" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="2jL$v5BnAG7" role="3K4E3e">
-              <ref role="37wK5l" to="abz6:bBMhoeybYJ" resolve="createURLForNode" />
-              <ref role="1Pybhc" to="abz6:bBMhoey14S" resolve="MbeddrURLHelper" />
-              <node concept="10Nm6u" id="2jL$v5BnAG8" role="37wK5m" />
-              <node concept="3gX9ci" id="2jL$v5BnAG9" role="37wK5m">
-                <ref role="3gX9jx" to="abz6:7rr3ESJCjO4" resolve="NodeOpenRequest" />
-              </node>
-              <node concept="37vLTw" id="2jL$v5BnAGa" role="37wK5m">
-                <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
               </node>
             </node>
             <node concept="Xl_RD" id="2jL$v5BnAGb" role="3K4GZi">
@@ -2617,16 +2610,11 @@
           <node concept="3clFbS" id="3Y6fbK1mT09" role="3clFbx">
             <node concept="3clFbF" id="3Y6fbK1mT0a" role="3cqZAp">
               <node concept="37vLTI" id="3Y6fbK1mT0b" role="3clFbG">
-                <node concept="2YIFZM" id="3Y6fbK1mT0c" role="37vLTx">
-                  <ref role="1Pybhc" to="abz6:bBMhoey14S" resolve="MbeddrURLHelper" />
-                  <ref role="37wK5l" to="abz6:bBMhoeybYJ" resolve="createURLForNode" />
-                  <node concept="10Nm6u" id="3Y6fbK1mT0d" role="37wK5m" />
-                  <node concept="3gX9ci" id="3Y6fbK1mT0e" role="37wK5m">
-                    <ref role="3gX9jx" to="abz6:7rr3ESJCjO4" resolve="NodeOpenRequest" />
-                  </node>
-                  <node concept="37vLTw" id="3Y6fbK1mT0f" role="37wK5m">
+                <node concept="2OqwBi" id="2Cyo7$6cjVC" role="37vLTx">
+                  <node concept="37vLTw" id="2Cyo7$6cjJr" role="2Oq$k0">
                     <ref role="3cqZAo" node="3Y6fbK1mT1b" resolve="nodeWithError" />
                   </node>
+                  <node concept="2$mYbS" id="2Cyo7$6ckgg" role="2OqNvi" />
                 </node>
                 <node concept="37vLTw" id="3Y6fbK1mT0g" role="37vLTJ">
                   <ref role="3cqZAo" node="3Y6fbK1mT05" resolve="url" />
