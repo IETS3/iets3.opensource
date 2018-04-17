@@ -237,5 +237,32 @@
       <ref role="PrY4T" node="2m0pXWMyXx" resolve="IBookmark" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5OzSgxea3CI">
+    <property role="EcuMT" value="6711455295499418158" />
+    <property role="TrG5h" value="ExampleSolution" />
+    <property role="34LRSv" value="example-solution" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5OzSgxea3CJ" role="PzmwI">
+      <ref role="PrY4T" to="yv47:1sudaVNn5LK" resolve="ITopLevelContainer" />
+    </node>
+    <node concept="PrWs8" id="5OzSgxea3CK" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4yaQL1YeoSK" resolve="INameQualifier" />
+    </node>
+    <node concept="PrWs8" id="5OzSgxea3CL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyj" id="5OzSgxea3CS" role="1TKVEi">
+      <property role="IQ2ns" value="6711455295499418168" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyi" id="5OzSgxea3D$" role="1TKVEl">
+      <property role="IQ2nx" value="6711455295499418212" />
+      <property role="TrG5h" value="show" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

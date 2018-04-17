@@ -220,5 +220,26 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5OzSgxea_2m">
+    <ref role="1M2myG" to="34lm:5OzSgxea3CI" resolve="ExampleSolution" />
+    <node concept="EnEH3" id="5OzSgxea_2n" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="5OzSgxea_2q" role="EtsB7">
+        <node concept="3clFbS" id="5OzSgxea_2r" role="2VODD2">
+          <node concept="3clFbF" id="5OzSgxea_aQ" role="3cqZAp">
+            <node concept="3cpWs3" id="5OzSgxeaBiC" role="3clFbG">
+              <node concept="2OqwBi" id="5OzSgxeaBMe" role="3uHU7w">
+                <node concept="EsrRn" id="5OzSgxeaBrr" role="2Oq$k0" />
+                <node concept="2bSWHS" id="5OzSgxeaCfq" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="5OzSgxea_aP" role="3uHU7B">
+                <property role="Xl_RC" value="example_solution_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
