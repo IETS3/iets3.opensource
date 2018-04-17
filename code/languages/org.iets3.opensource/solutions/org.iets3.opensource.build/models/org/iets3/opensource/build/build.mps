@@ -9,7 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -2486,12 +2486,6 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5oWomgoIYlk" role="3bR37C">
-          <node concept="3bR9La" id="5oWomgoIYll" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5oWomgoIYlm" role="3bR37C">
           <node concept="3bR9La" id="5oWomgoIYln" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -3416,12 +3410,6 @@
             <ref role="1Busuk" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1RzljfOeUKx" role="3bR37C">
-          <node concept="3bR9La" id="1RzljfOeUKy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1RzljfOeUKz" role="3bR37C">
           <node concept="3bR9La" id="1RzljfOeUK$" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -4112,12 +4100,6 @@
           <node concept="3bR9La" id="4KKobbjPGAo" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5XfI9cjhG7n" role="3bR37C">
-          <node concept="3bR9La" id="5XfI9cjhG7o" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
           </node>
         </node>
         <node concept="1SiIV0" id="5XfI9cjhG7p" role="3bR37C">
