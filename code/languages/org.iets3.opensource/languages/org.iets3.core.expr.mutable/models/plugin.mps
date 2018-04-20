@@ -22,7 +22,6 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
-    <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -208,11 +207,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
-      <concept id="3379970138993099772" name="com.mbeddr.mpsutil.httpsupport.structure.ApplicationID" flags="ng" index="3gX9ci">
-        <reference id="3379970138993099791" name="requestHandler" index="3gX9jx" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -4890,16 +4884,11 @@
                 <node concept="I4A8Y" id="31BLocd1sM2" role="2OqNvi" />
               </node>
             </node>
-            <node concept="2YIFZM" id="31BLocd1sM3" role="3K4E3e">
-              <ref role="37wK5l" to="abz6:bBMhoeybYJ" resolve="createURLForNode" />
-              <ref role="1Pybhc" to="abz6:bBMhoey14S" resolve="MbeddrURLHelper" />
-              <node concept="10Nm6u" id="31BLocd1sM4" role="37wK5m" />
-              <node concept="3gX9ci" id="31BLocd1sM5" role="37wK5m">
-                <ref role="3gX9jx" to="abz6:7rr3ESJCjO4" resolve="NodeOpenRequest" />
-              </node>
-              <node concept="37vLTw" id="31BLocd1sM6" role="37wK5m">
+            <node concept="2OqwBi" id="3$k5qOedZA3" role="3K4E3e">
+              <node concept="37vLTw" id="3$k5qOedYV$" role="2Oq$k0">
                 <ref role="3cqZAo" node="31BLocd1sMa" resolve="nodeWithError" />
               </node>
+              <node concept="2$mYbS" id="3$k5qOedZVi" role="2OqNvi" />
             </node>
             <node concept="Xl_RD" id="31BLocd1sM7" role="3K4GZi">
               <property role="Xl_RC" value="&lt;node not in model&gt;" />

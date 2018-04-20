@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
@@ -53,8 +53,8 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
     <import index="h587" ref="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -7167,6 +7167,112 @@
       </node>
     </node>
   </node>
+  <node concept="sE7Ow" id="2ufoZQISyNm">
+    <property role="TrG5h" value="deleteValuesInspectors" />
+    <property role="2uzpH1" value="Clear Inspectors" />
+    <property role="3GE5qa" value="inspect" />
+    <node concept="tnohg" id="2ufoZQISyNn" role="tncku">
+      <node concept="3clFbS" id="2ufoZQISyNo" role="2VODD2">
+        <node concept="3clFbF" id="2ufoZQISyNp" role="3cqZAp">
+          <node concept="2OqwBi" id="2ufoZQISyNq" role="3clFbG">
+            <node concept="2OqwBi" id="2ufoZQISyNr" role="2Oq$k0">
+              <node concept="2OqwBi" id="2ufoZQISyNs" role="2Oq$k0">
+                <node concept="2OqwBi" id="2ufoZQISyNt" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2ufoZQISyNu" role="2Oq$k0">
+                    <node concept="2WthIp" id="2ufoZQISyNv" role="2Oq$k0" />
+                    <node concept="3gHZIF" id="2ufoZQISyNw" role="2OqNvi">
+                      <ref role="2WH_rO" node="2ufoZQISyNW" resolve="node" />
+                    </node>
+                  </node>
+                  <node concept="2Rxl7S" id="2ufoZQISyNx" role="2OqNvi" />
+                </node>
+                <node concept="2Rf3mk" id="2ufoZQISyNy" role="2OqNvi" />
+              </node>
+              <node concept="3zZkjj" id="2ufoZQISyNz" role="2OqNvi">
+                <node concept="1bVj0M" id="2ufoZQISyN$" role="23t8la">
+                  <node concept="3clFbS" id="2ufoZQISyN_" role="1bW5cS">
+                    <node concept="3clFbF" id="2ufoZQISyNA" role="3cqZAp">
+                      <node concept="3y3z36" id="2ufoZQISyNB" role="3clFbG">
+                        <node concept="10Nm6u" id="2ufoZQISyNC" role="3uHU7w" />
+                        <node concept="2OqwBi" id="2ufoZQISyND" role="3uHU7B">
+                          <node concept="37vLTw" id="2ufoZQISyNE" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2ufoZQISyNH" resolve="it" />
+                          </node>
+                          <node concept="3CFZ6_" id="2ufoZQISyNF" role="2OqNvi">
+                            <node concept="3CFYIy" id="2ufoZQISyNG" role="3CFYIz">
+                              <ref role="3CFYIx" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2ufoZQISyNH" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2ufoZQISyNI" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2es0OD" id="2ufoZQISyNJ" role="2OqNvi">
+              <node concept="1bVj0M" id="2ufoZQISyNK" role="23t8la">
+                <node concept="3clFbS" id="2ufoZQISyNL" role="1bW5cS">
+                  <node concept="3clFbF" id="2ufoZQISyNM" role="3cqZAp">
+                    <node concept="2OqwBi" id="2ufoZQISyNN" role="3clFbG">
+                      <node concept="2OqwBi" id="2ufoZQISyNO" role="2Oq$k0">
+                        <node concept="37vLTw" id="2ufoZQISyNP" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2ufoZQISyNT" resolve="it" />
+                        </node>
+                        <node concept="3CFZ6_" id="2ufoZQISyNQ" role="2OqNvi">
+                          <node concept="3CFYIy" id="2ufoZQISyNR" role="3CFYIz">
+                            <ref role="3CFYIx" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3YRAZt" id="2ufoZQISzFN" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="2ufoZQISyNT" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="2ufoZQISyNU" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1QGGSu" id="2ufoZQISyNV" role="3Uehp1">
+      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.plugin/icons/deleteInspectors.png" />
+    </node>
+    <node concept="2S4$dB" id="2ufoZQISyNW" role="1NuT2Z">
+      <property role="TrG5h" value="node" />
+      <node concept="3Tm6S6" id="2ufoZQISyNX" role="1B3o_S" />
+      <node concept="1oajcY" id="2ufoZQISyNY" role="1oa70y" />
+      <node concept="3Tqbb2" id="2ufoZQISyNZ" role="1tU5fm" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="2ufoZQISzNZ">
+    <property role="3GE5qa" value="inspect" />
+    <property role="TrG5h" value="valueInspector" />
+    <node concept="ftmFs" id="2ufoZQISzOa" role="ftER_">
+      <node concept="2a7GMi" id="2ufoZQISzP1" role="ftvYc" />
+      <node concept="tCFHf" id="2ufoZQISzOe" role="ftvYc">
+        <ref role="tCJdB" node="2ufoZQIRClX" resolve="addValueInspector" />
+      </node>
+      <node concept="tCFHf" id="2ufoZQISzOm" role="ftvYc">
+        <ref role="tCJdB" node="2ufoZQISnwA" resolve="clearValuesInspector" />
+      </node>
+      <node concept="tCFHf" id="2ufoZQISzOz" role="ftvYc">
+        <ref role="tCJdB" node="2ufoZQISyNm" resolve="deleteValuesInspectors" />
+      </node>
+      <node concept="2a7GMi" id="2ufoZQISzOR" role="ftvYc" />
+    </node>
+    <node concept="tT9cl" id="2ufoZQISzOF" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:WmrxDqd_N1" resolve="IDEAToolBar" />
+    </node>
+  </node>
   <node concept="sE7Ow" id="2ufoZQIRClX">
     <property role="TrG5h" value="addValueInspector" />
     <property role="2uzpH1" value="Add Inspector" />
@@ -7338,112 +7444,6 @@
       <property role="TrG5h" value="context" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="1mFXz_FXKi9" role="1oa70y" />
-    </node>
-  </node>
-  <node concept="sE7Ow" id="2ufoZQISyNm">
-    <property role="TrG5h" value="deleteValuesInspectors" />
-    <property role="2uzpH1" value="Clear Inspectors" />
-    <property role="3GE5qa" value="inspect" />
-    <node concept="tnohg" id="2ufoZQISyNn" role="tncku">
-      <node concept="3clFbS" id="2ufoZQISyNo" role="2VODD2">
-        <node concept="3clFbF" id="2ufoZQISyNp" role="3cqZAp">
-          <node concept="2OqwBi" id="2ufoZQISyNq" role="3clFbG">
-            <node concept="2OqwBi" id="2ufoZQISyNr" role="2Oq$k0">
-              <node concept="2OqwBi" id="2ufoZQISyNs" role="2Oq$k0">
-                <node concept="2OqwBi" id="2ufoZQISyNt" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2ufoZQISyNu" role="2Oq$k0">
-                    <node concept="2WthIp" id="2ufoZQISyNv" role="2Oq$k0" />
-                    <node concept="3gHZIF" id="2ufoZQISyNw" role="2OqNvi">
-                      <ref role="2WH_rO" node="2ufoZQISyNW" resolve="node" />
-                    </node>
-                  </node>
-                  <node concept="2Rxl7S" id="2ufoZQISyNx" role="2OqNvi" />
-                </node>
-                <node concept="2Rf3mk" id="2ufoZQISyNy" role="2OqNvi" />
-              </node>
-              <node concept="3zZkjj" id="2ufoZQISyNz" role="2OqNvi">
-                <node concept="1bVj0M" id="2ufoZQISyN$" role="23t8la">
-                  <node concept="3clFbS" id="2ufoZQISyN_" role="1bW5cS">
-                    <node concept="3clFbF" id="2ufoZQISyNA" role="3cqZAp">
-                      <node concept="3y3z36" id="2ufoZQISyNB" role="3clFbG">
-                        <node concept="10Nm6u" id="2ufoZQISyNC" role="3uHU7w" />
-                        <node concept="2OqwBi" id="2ufoZQISyND" role="3uHU7B">
-                          <node concept="37vLTw" id="2ufoZQISyNE" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2ufoZQISyNH" resolve="it" />
-                          </node>
-                          <node concept="3CFZ6_" id="2ufoZQISyNF" role="2OqNvi">
-                            <node concept="3CFYIy" id="2ufoZQISyNG" role="3CFYIz">
-                              <ref role="3CFYIx" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="2ufoZQISyNH" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="2ufoZQISyNI" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2es0OD" id="2ufoZQISyNJ" role="2OqNvi">
-              <node concept="1bVj0M" id="2ufoZQISyNK" role="23t8la">
-                <node concept="3clFbS" id="2ufoZQISyNL" role="1bW5cS">
-                  <node concept="3clFbF" id="2ufoZQISyNM" role="3cqZAp">
-                    <node concept="2OqwBi" id="2ufoZQISyNN" role="3clFbG">
-                      <node concept="2OqwBi" id="2ufoZQISyNO" role="2Oq$k0">
-                        <node concept="37vLTw" id="2ufoZQISyNP" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2ufoZQISyNT" resolve="it" />
-                        </node>
-                        <node concept="3CFZ6_" id="2ufoZQISyNQ" role="2OqNvi">
-                          <node concept="3CFYIy" id="2ufoZQISyNR" role="3CFYIz">
-                            <ref role="3CFYIx" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3YRAZt" id="2ufoZQISzFN" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="2ufoZQISyNT" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="2ufoZQISyNU" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1QGGSu" id="2ufoZQISyNV" role="3Uehp1">
-      <property role="1iqoE4" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.plugin/icons/deleteInspectors.png" />
-    </node>
-    <node concept="2S4$dB" id="2ufoZQISyNW" role="1NuT2Z">
-      <property role="TrG5h" value="node" />
-      <node concept="3Tm6S6" id="2ufoZQISyNX" role="1B3o_S" />
-      <node concept="1oajcY" id="2ufoZQISyNY" role="1oa70y" />
-      <node concept="3Tqbb2" id="2ufoZQISyNZ" role="1tU5fm" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="2ufoZQISzNZ">
-    <property role="3GE5qa" value="inspect" />
-    <property role="TrG5h" value="valueInspector" />
-    <node concept="ftmFs" id="2ufoZQISzOa" role="ftER_">
-      <node concept="2a7GMi" id="2ufoZQISzP1" role="ftvYc" />
-      <node concept="tCFHf" id="2ufoZQISzOe" role="ftvYc">
-        <ref role="tCJdB" node="2ufoZQIRClX" resolve="addValueInspector" />
-      </node>
-      <node concept="tCFHf" id="2ufoZQISzOm" role="ftvYc">
-        <ref role="tCJdB" node="2ufoZQISnwA" resolve="clearValuesInspector" />
-      </node>
-      <node concept="tCFHf" id="2ufoZQISzOz" role="ftvYc">
-        <ref role="tCJdB" node="2ufoZQISyNm" resolve="deleteValuesInspectors" />
-      </node>
-      <node concept="2a7GMi" id="2ufoZQISzOR" role="ftvYc" />
-    </node>
-    <node concept="tT9cl" id="2ufoZQISzOF" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:WmrxDqd_N1" resolve="IDEAToolBar" />
     </node>
   </node>
 </model>
