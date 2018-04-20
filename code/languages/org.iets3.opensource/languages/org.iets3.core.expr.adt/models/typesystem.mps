@@ -17,6 +17,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -529,7 +530,7 @@
                   <ref role="3cqZAo" node="28$LOSBJVqe" resolve="cons" />
                 </node>
                 <node concept="2qgKlT" id="28$LOSBK1eI" role="2OqNvi">
-                  <ref role="37wK5l" to="dnkk:28$LOSBOEHq" resolve="declaredTypeAtPosition" />
+                  <ref role="37wK5l" to="dnkk:28$LOSBOEHq" resolve="consTypeAtPosition" />
                   <node concept="2OqwBi" id="28$LOSBK1NM" role="37wK5m">
                     <node concept="2GrUjf" id="28$LOSBK1CC" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="5a_u3OyNaXG" resolve="a" />
@@ -943,7 +944,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5a_u3Oz3qGi" role="2OqNvi">
-                <ref role="37wK5l" to="dnkk:5a_u3OyYQw7" resolve="getTypeNode" />
+                <ref role="37wK5l" to="dnkk:5a_u3OyYQw7" resolve="getType" />
               </node>
             </node>
           </node>
@@ -1039,7 +1040,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5a_u3Oz3qOz" role="2OqNvi">
-                <ref role="37wK5l" to="dnkk:5a_u3OyYQw7" resolve="getTypeNode" />
+                <ref role="37wK5l" to="dnkk:5a_u3OyYQw7" resolve="getType" />
               </node>
             </node>
           </node>
@@ -1094,7 +1095,7 @@
     </node>
   </node>
   <node concept="2sgARr" id="5a_u3Oz6iLd">
-    <property role="TrG5h" value="supertypeOf_Algebraicype" />
+    <property role="TrG5h" value="supertypeOf_AlgebraicType" />
     <node concept="3clFbS" id="5a_u3Oz6iLe" role="2sgrp5">
       <node concept="3clFbJ" id="5a_u3Oz6j4S" role="3cqZAp">
         <node concept="3clFbS" id="5a_u3Oz6j4U" role="3clFbx">
@@ -1225,36 +1226,17 @@
   <node concept="2sgARr" id="5a_u3OzRz1N">
     <property role="TrG5h" value="supertypeOf_Type" />
     <node concept="3clFbS" id="5a_u3OzRz1O" role="2sgrp5">
-      <node concept="3clFbJ" id="5a_u3OzRz3R" role="3cqZAp">
-        <node concept="3fqX7Q" id="5a_u3OzRzCQ" role="3clFbw">
-          <node concept="2OqwBi" id="5a_u3OzRzCS" role="3fr31v">
-            <node concept="1YBJjd" id="5a_u3OzRzCT" role="2Oq$k0">
-              <ref role="1YBMHb" node="5a_u3OzRz3t" resolve="type" />
-            </node>
-            <node concept="1mIQ4w" id="5a_u3OzRzCU" role="2OqNvi">
-              <node concept="chp4Y" id="5a_u3OzRzCV" role="cj9EA">
-                <ref role="cht4Q" to="v0r8:5a_u3OzRz1z" resolve="AnyType" />
-              </node>
-            </node>
+      <node concept="3cpWs6" id="5a_u3OzRzQE" role="3cqZAp">
+        <node concept="2pJPEk" id="5a_u3OzRzR3" role="3cqZAk">
+          <node concept="2pJPED" id="5a_u3OzRzRq" role="2pJPEn">
+            <ref role="2pJxaS" to="v0r8:5a_u3OzRz1z" resolve="AnyType" />
           </node>
         </node>
-        <node concept="3clFbS" id="5a_u3OzRz3T" role="3clFbx">
-          <node concept="3cpWs6" id="5a_u3OzRzQE" role="3cqZAp">
-            <node concept="2pJPEk" id="5a_u3OzRzR3" role="3cqZAk">
-              <node concept="2pJPED" id="5a_u3OzRzRq" role="2pJPEn">
-                <ref role="2pJxaS" to="v0r8:5a_u3OzRz1z" resolve="AnyType" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cpWs6" id="5a_u3OzRzSj" role="3cqZAp">
-        <node concept="10Nm6u" id="5a_u3OzRzT4" role="3cqZAk" />
       </node>
     </node>
     <node concept="1YaCAy" id="5a_u3OzRz3t" role="1YuTPh">
-      <property role="TrG5h" value="type" />
-      <ref role="1YaFvo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <property role="TrG5h" value="genericAlgebraicType" />
+      <ref role="1YaFvo" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
     </node>
   </node>
   <node concept="18kY7G" id="5a_u3OzStOf">
