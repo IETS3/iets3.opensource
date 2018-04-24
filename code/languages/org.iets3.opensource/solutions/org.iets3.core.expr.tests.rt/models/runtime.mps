@@ -69,6 +69,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
+        <child id="7080278351417106681" name="expression" index="2Hmdds" />
+      </concept>
       <concept id="1172017222794" name="jetbrains.mps.baseLanguage.unitTest.structure.Fail" flags="nn" index="3xETmq" />
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
@@ -98,6 +101,11 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7wjZwvOaQXi" role="3clF47">
+        <node concept="2Hmddi" id="4KZjPKUfu9w" role="3cqZAp">
+          <node concept="37vLTw" id="4KZjPKUfuj7" role="2Hmdds">
+            <ref role="3cqZAo" node="7wjZwvOaQXL" resolve="ti" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7wjZwvOaSeS" role="3cqZAp">
           <node concept="3cpWsn" id="7wjZwvOaSeT" role="3cpWs9">
             <property role="TrG5h" value="executeTest" />
@@ -108,8 +116,8 @@
               <node concept="37vLTw" id="7wjZwvOaSeV" role="2Oq$k0">
                 <ref role="3cqZAo" node="7wjZwvOaQXL" resolve="ti" />
               </node>
-              <node concept="2qgKlT" id="7wjZwvOaSeW" role="2OqNvi">
-                <ref role="37wK5l" to="xk6s:78hTg1$THJg" resolve="executeTest" />
+              <node concept="2qgKlT" id="4KZjPKUftq_" role="2OqNvi">
+                <ref role="37wK5l" to="xk6s:4KZjPKUdEYm" resolve="executeTest" />
               </node>
             </node>
           </node>
