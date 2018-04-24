@@ -11343,6 +11343,28 @@
         <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
       </node>
     </node>
+    <node concept="13i0hz" id="axqn3LcMxe" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createSolverTask" />
+      <ref role="13i0hy" to="1jcu:4pkidg67Lgb" resolve="createSolverTask" />
+      <node concept="3Tm1VV" id="axqn3LcMxf" role="1B3o_S" />
+      <node concept="3clFbS" id="axqn3LcMxp" role="3clF47">
+        <node concept="3clFbF" id="axqn3LcMQa" role="3cqZAp">
+          <node concept="2YIFZM" id="axqn3LcMQW" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:7rOSrvnISxp" resolve="createSolverTask" />
+            <ref role="1Pybhc" to="hnhi:7rOSrvnISp9" resolve="STF" />
+            <node concept="13iPFW" id="axqn3LcMRn" role="37wK5m" />
+            <node concept="Xl_RD" id="axqn3LcMYA" role="37wK5m">
+              <property role="Xl_RC" value="typeCheck" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="axqn3LcMxq" role="3clF45">
+        <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5ye9uPrgjJ7">
     <property role="3GE5qa" value="option" />
