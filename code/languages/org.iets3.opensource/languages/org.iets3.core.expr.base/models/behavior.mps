@@ -469,6 +469,9 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
+        <child id="1224414456414" name="elementType" index="kMuH3" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -11363,6 +11366,117 @@
       </node>
       <node concept="3Tqbb2" id="axqn3LcMxq" role="3clF45">
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="61iSwn4O5Vt" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getISSVariable" />
+      <ref role="13i0hy" node="5GL30CqMVFo" resolve="getISSVariable" />
+      <node concept="3Tm1VV" id="61iSwn4O5Vu" role="1B3o_S" />
+      <node concept="3clFbS" id="61iSwn4O5Vx" role="3clF47">
+        <node concept="3clFbF" id="61iSwn4O6jn" role="3cqZAp">
+          <node concept="13iPFW" id="61iSwn4O6jm" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="61iSwn4O5Vy" role="3clF45">
+        <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="61iSwn4O5Vz" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableName" />
+      <ref role="13i0hy" node="7BxfuU7QrrQ" resolve="getVariableName" />
+      <node concept="3Tm1VV" id="61iSwn4O5V$" role="1B3o_S" />
+      <node concept="3clFbS" id="61iSwn4O5VB" role="3clF47">
+        <node concept="3clFbF" id="61iSwn4O6lm" role="3cqZAp">
+          <node concept="3cpWs3" id="61iSwn4O7aw" role="3clFbG">
+            <node concept="2OqwBi" id="61iSwn4O8Ck" role="3uHU7w">
+              <node concept="2OqwBi" id="61iSwn4O8g$" role="2Oq$k0">
+                <node concept="2JrnkZ" id="61iSwn4O83e" role="2Oq$k0">
+                  <node concept="13iPFW" id="61iSwn4O7aW" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="61iSwn4O8tp" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
+              </node>
+              <node concept="liA8E" id="61iSwn4O8Qv" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="61iSwn4O6ll" role="3uHU7B">
+              <property role="Xl_RC" value="cast_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="61iSwn4O5VC" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="61iSwn4O5VD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableType" />
+      <ref role="13i0hy" node="7BxfuU7QrsR" resolve="getVariableType" />
+      <node concept="3Tm1VV" id="61iSwn4O5VE" role="1B3o_S" />
+      <node concept="3clFbS" id="61iSwn4O5VH" role="3clF47">
+        <node concept="3clFbF" id="61iSwn4O8WZ" role="3cqZAp">
+          <node concept="2OqwBi" id="61iSwn4O9ev" role="3clFbG">
+            <node concept="13iPFW" id="61iSwn4O8WY" role="2Oq$k0" />
+            <node concept="3TrEf2" id="61iSwn4O9X7" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:2Qbt$1tNGy9" resolve="expectedType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="61iSwn4O5VI" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="61iSwn4O5VJ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableConstraints" />
+      <ref role="13i0hy" node="7BxfuU7Qruw" resolve="getVariableConstraints" />
+      <node concept="3Tm1VV" id="61iSwn4O5VM" role="1B3o_S" />
+      <node concept="3clFbS" id="61iSwn4O5VO" role="3clF47">
+        <node concept="3clFbF" id="61iSwn4Oa0J" role="3cqZAp">
+          <node concept="2ShNRf" id="61iSwn4Oa0H" role="3clFbG">
+            <node concept="kMnCb" id="61iSwn4OkYL" role="2ShVmc">
+              <node concept="3Tqbb2" id="61iSwn4OkZ8" role="kMuH3">
+                <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="61iSwn4O5VP" role="3clF45">
+        <node concept="3Tqbb2" id="61iSwn4O5VQ" role="A3Ik2">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="61iSwn4O5VR" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDependentValues" />
+      <ref role="13i0hy" node="1xFBUnwWaWp" resolve="getDependentValues" />
+      <node concept="3Tm1VV" id="61iSwn4O5VS" role="1B3o_S" />
+      <node concept="3clFbS" id="61iSwn4O5VW" role="3clF47">
+        <node concept="3clFbF" id="61iSwn4Ol1B" role="3cqZAp">
+          <node concept="2ShNRf" id="61iSwn4Ol1_" role="3clFbG">
+            <node concept="2i4dXS" id="61iSwn4OlhE" role="2ShVmc">
+              <node concept="3Tqbb2" id="61iSwn4Olyd" role="HW$YZ">
+                <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="61iSwn4O5VX" role="3clF45">
+        <node concept="3Tqbb2" id="61iSwn4O5VY" role="2hN53Y">
+          <ref role="ehGHo" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+        </node>
       </node>
     </node>
   </node>
