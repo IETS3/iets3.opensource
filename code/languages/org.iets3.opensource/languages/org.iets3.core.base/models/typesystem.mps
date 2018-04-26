@@ -2,7 +2,7 @@
 <model ref="r:e5a2b77c-569f-4c13-8679-6ec5a6000fa9(org.iets3.core.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -167,43 +167,6 @@
       <node concept="3clFbJ" id="3R3AIvunrw1" role="3cqZAp">
         <node concept="3clFbS" id="3R3AIvunrw2" role="3clFbx">
           <node concept="3clFbJ" id="3R3AIvunr$C" role="3cqZAp">
-            <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
-              <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
-                <node concept="3clFbJ" id="3ugRfIRAoR9" role="3cqZAp">
-                  <node concept="1Wc70l" id="1996aX853uK" role="3clFbw">
-                    <node concept="2OqwBi" id="1996aX854CG" role="3uHU7w">
-                      <node concept="1YBJjd" id="1996aX853HZ" role="2Oq$k0">
-                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                      </node>
-                      <node concept="2qgKlT" id="1996aX85IEq" role="2OqNvi">
-                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeChecked" />
-                      </node>
-                    </node>
-                    <node concept="1Wc70l" id="2jITtfD$1z$" role="3uHU7B">
-                      <node concept="2OqwBi" id="3ugRfIRAp0L" role="3uHU7B">
-                        <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
-                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                        </node>
-                        <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
-                          <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
-                        </node>
-                      </node>
-                      <node concept="3fqX7Q" id="2jITtfD$1Nr" role="3uHU7w">
-                        <node concept="2OqwBi" id="2jITtfD$24_" role="3fr31v">
-                          <node concept="1YBJjd" id="2jITtfD$1Rt" role="2Oq$k0">
-                            <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                          </node>
-                          <node concept="2qgKlT" id="2jITtfD$2q3" role="2OqNvi">
-                            <ref role="37wK5l" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbS" id="3R3AIvunr$D" role="3clFbx">
               <node concept="3cpWs8" id="3R3AIvunrHy" role="3cqZAp">
                 <node concept="3cpWsn" id="3R3AIvunrHz" role="3cpWs9">
@@ -374,14 +337,14 @@
                             </node>
                           </node>
                           <node concept="2OqwBi" id="7eS2goy11cL" role="3eO9$A">
-                            <node concept="37vLTw" id="UwUtc2XNvK" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
-                            </node>
                             <node concept="liA8E" id="7eS2goy11GM" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                               <node concept="Xl_RD" id="7eS2goy11Jm" role="37wK5m">
                                 <property role="Xl_RC" value="ERROR:" />
                               </node>
+                            </node>
+                            <node concept="37vLTw" id="UwUtc2XNvK" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
                             </node>
                           </node>
                         </node>

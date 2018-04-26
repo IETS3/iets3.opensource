@@ -2,11 +2,11 @@
 <model ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -106,7 +106,9 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -290,9 +292,6 @@
         </node>
       </node>
     </node>
-    <node concept="13hLZK" id="cJpacq409B" role="13h7CW">
-      <node concept="3clFbS" id="cJpacq409C" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="3bpF72PGcrF" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -352,6 +351,9 @@
         </node>
       </node>
       <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="cJpacq409B" role="13h7CW">
+      <node concept="3clFbS" id="cJpacq409C" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="1YPoVR7Fay9">
@@ -1121,11 +1123,11 @@
     <node concept="3clFb_" id="5zG5$LyexiK" role="jymVt">
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getErrorMessage" />
-      <node concept="3clFbS" id="5zG5$LyexiN" role="3clF47" />
-      <node concept="3Tm1VV" id="5zG5$LyexiO" role="1B3o_S" />
       <node concept="3uibUv" id="6C0OSEagj52" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
+      <node concept="3clFbS" id="5zG5$LyexiN" role="3clF47" />
+      <node concept="3Tm1VV" id="5zG5$LyexiO" role="1B3o_S" />
     </node>
     <node concept="3clFb_" id="5zG5$LyyJxU" role="jymVt">
       <property role="2aFKle" value="false" />
@@ -1136,7 +1138,13 @@
         <ref role="3uigEE" node="5zG5$LyyJpW" resolve="AbstractResultDescription" />
       </node>
     </node>
-    <node concept="2tJIrI" id="7rOSrvnHq1O" role="jymVt" />
+    <node concept="3clFb_" id="7lDeIdaKXmT" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getErrorMessageWithDetails" />
+      <node concept="17QB3L" id="7lDeIdaKX$M" role="3clF45" />
+      <node concept="3Tm1VV" id="7lDeIdaKXmW" role="1B3o_S" />
+      <node concept="3clFbS" id="7lDeIdaKXmX" role="3clF47" />
+    </node>
     <node concept="3Tm1VV" id="5zG5$Lyex1H" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5zG5$LyyJpW">
