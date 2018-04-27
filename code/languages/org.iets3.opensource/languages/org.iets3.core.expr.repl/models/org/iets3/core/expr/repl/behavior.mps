@@ -249,6 +249,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
@@ -4941,11 +4942,14 @@
       <node concept="3clFbS" id="5avmkTFFvPe" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="5avmkTFFy0z" role="13h7CS">
-      <property role="TrG5h" value="executeTest" />
+      <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="xk6s:78hTg1$THJg" resolve="executeTest" />
-      <node concept="3Tm1VV" id="5avmkTFFy0$" role="1B3o_S" />
+      <ref role="13i0hy" to="xk6s:78hTg1$THJg" resolve="executeTestInternal" />
+      <node concept="3uibUv" id="4KZjPKUdP1n" role="3clF45">
+        <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
+      </node>
+      <node concept="3Tmbuc" id="4KZjPKUdP1o" role="1B3o_S" />
       <node concept="3clFbS" id="5avmkTFFy0B" role="3clF47">
         <node concept="3cpWs8" id="ub9nkyOJg3" role="3cqZAp">
           <node concept="3cpWsn" id="ub9nkyOJg4" role="3cpWs9">
@@ -5087,9 +5091,6 @@
             <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
           </node>
         </node>
-      </node>
-      <node concept="3uibUv" id="5avmkTFFy0C" role="3clF45">
-        <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
       </node>
     </node>
     <node concept="13i0hz" id="5avmkTFFy0F" role="13h7CS">

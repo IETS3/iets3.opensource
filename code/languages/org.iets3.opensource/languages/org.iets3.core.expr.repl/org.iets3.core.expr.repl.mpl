@@ -77,6 +77,7 @@
         <module reference="76ac7cd6-5b28-4bc4-9a31-45fa744b6ac9(org.iets3.core.expr.repl#1240669143552786950)" version="0" />
         <module reference="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" version="0" />
         <module reference="56959ea0-1a4c-409d-b923-9a5132cecf97(org.iets3.core.expr.tests#543569365052197681)" version="0" />
+        <module reference="6effa8ea-ddf9-441a-a29e-80a73b7d0fc7(org.iets3.core.expr.tests.rt)" version="0" />
         <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
       </dependencyVersions>
       <mapping-priorities>
@@ -220,6 +221,7 @@
     <module reference="18001c94-33a7-4f68-a7c1-ffddc4b39be1(org.iets3.core.expr.repl)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
     <module reference="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" version="0" />
+    <module reference="6effa8ea-ddf9-441a-a29e-80a73b7d0fc7(org.iets3.core.expr.tests.rt)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
   </dependencyVersions>
   <extendedLanguages>
