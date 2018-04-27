@@ -2,9 +2,9 @@
 <model ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -599,7 +599,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdLCp" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -2806,7 +2805,7 @@
       <property role="13i0iv" value="true" />
       <node concept="3Tmbuc" id="4KZjPKUdFUN" role="1B3o_S" />
       <node concept="3uibUv" id="78hTg1$THJ$" role="3clF45">
-        <ref role="3uigEE" node="ub9nkyOIeW" />
+        <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
       </node>
       <node concept="3clFbS" id="78hTg1$THJj" role="3clF47" />
     </node>
@@ -3522,7 +3521,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdNtZ" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -3982,7 +3980,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdIrN" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -6452,7 +6449,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdHEk" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -6945,7 +6941,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdJjm" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -8668,7 +8663,6 @@
       <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3uibUv" id="4KZjPKUdGyH" role="3clF45">
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
@@ -11115,7 +11109,7 @@
       <property role="TrG5h" value="executeTest" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTest" />
+      <ref role="13i0hy" node="78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3Tm1VV" id="7aipPVpHbz3" role="1B3o_S" />
       <node concept="3clFbS" id="7aipPVpHbz4" role="3clF47">
         <node concept="3cpWs8" id="7aipPVpHbz5" role="3cqZAp">
