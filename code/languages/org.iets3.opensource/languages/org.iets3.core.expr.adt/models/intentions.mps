@@ -17,7 +17,6 @@
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -69,12 +68,6 @@
         <property id="5846558918537400330" name="label" index="1SWRpm" />
       </concept>
     </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
-        <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
@@ -123,7 +116,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -134,14 +126,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
-        <child id="1204796294226" name="closure" index="23t8la" />
-      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
-      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -273,78 +260,6 @@
       <property role="1SWRpm" value="ALGEBRAIC" />
     </node>
   </node>
-  <node concept="2S6QgY" id="7aipPVpQLhR">
-    <property role="TrG5h" value="ClearErrors" />
-    <ref role="2ZfgGC" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
-    <node concept="2S6ZIM" id="7aipPVpQLhS" role="2ZfVej">
-      <node concept="3clFbS" id="7aipPVpQLhT" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVpQLqD" role="3cqZAp">
-          <node concept="Xl_RD" id="7aipPVpQLqC" role="3clFbG">
-            <property role="Xl_RC" value="Clear Errors" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="7aipPVpQLhU" role="2ZfgGD">
-      <node concept="3clFbS" id="7aipPVpQLhV" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVpQMhs" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVpQOqF" role="3clFbG">
-            <node concept="2OqwBi" id="7aipPVpQMqs" role="2Oq$k0">
-              <node concept="2OqwBi" id="7aipPVpRNr0" role="2Oq$k0">
-                <node concept="2Sf5sV" id="7aipPVpQMhr" role="2Oq$k0" />
-                <node concept="1mfA1w" id="7aipPVpRNTd" role="2OqNvi" />
-              </node>
-              <node concept="2Rf3mk" id="7aipPVpQMDc" role="2OqNvi">
-                <node concept="1xMEDy" id="7aipPVpQMDe" role="1xVPHs">
-                  <node concept="chp4Y" id="7aipPVpQME6" role="ri$Ld">
-                    <ref role="cht4Q" to="v0r8:7aipPVpLNOX" resolve="ErrorAnnotation" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2es0OD" id="7aipPVpQSM5" role="2OqNvi">
-              <node concept="1bVj0M" id="7aipPVpQSM7" role="23t8la">
-                <node concept="3clFbS" id="7aipPVpQSM8" role="1bW5cS">
-                  <node concept="3clFbF" id="7aipPVpQSMk" role="3cqZAp">
-                    <node concept="2OqwBi" id="7aipPVpQSWb" role="3clFbG">
-                      <node concept="37vLTw" id="7aipPVpQSMj" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7aipPVpQSM9" resolve="it" />
-                      </node>
-                      <node concept="3YRAZt" id="7aipPVpQTbB" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="7aipPVpQSM9" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="7aipPVpQSMa" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="7aipPVpQLSQ" role="lGtFl">
-      <property role="1SWRpm" value="ALGEBRAIC" />
-    </node>
-    <node concept="2SaL7w" id="7aipPVpRFjy" role="2ZfVeh">
-      <node concept="3clFbS" id="7aipPVpRFjz" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVpRFtP" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVpRGrx" role="3clFbG">
-            <node concept="2OqwBi" id="7aipPVpRFGo" role="2Oq$k0">
-              <node concept="2Sf5sV" id="7aipPVpRFtO" role="2Oq$k0" />
-              <node concept="1mfA1w" id="7aipPVpRG1V" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="7aipPVpRGMU" role="2OqNvi">
-              <node concept="chp4Y" id="7aipPVpRGZD" role="cj9EA">
-                <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="7aipPVpU0cl">
     <property role="TrG5h" value="ToggleTree" />
     <ref role="2ZfgGC" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
@@ -407,111 +322,6 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="7aipPVq18ZP" role="lGtFl">
-      <property role="1SWRpm" value="ALGEBRAIC" />
-    </node>
-  </node>
-  <node concept="2S6QgY" id="7aipPVq2LOQ">
-    <property role="TrG5h" value="ToggleSymbolic" />
-    <ref role="2ZfgGC" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
-    <node concept="2S6ZIM" id="7aipPVq2LOR" role="2ZfVej">
-      <node concept="3clFbS" id="7aipPVq2LOS" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVq2LOT" role="3cqZAp">
-          <node concept="Xl_RD" id="7aipPVq2LOU" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Symbolic" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="7aipPVq2LOV" role="2ZfgGD">
-      <node concept="3clFbS" id="7aipPVq2LOW" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVq2LOX" role="3cqZAp">
-          <node concept="2YIFZM" id="7aipPVq2NUt" role="3clFbG">
-            <ref role="37wK5l" to="s51c:7aipPVq2LuH" resolve="toggleSymbolic" />
-            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
-            <node concept="1PxgMI" id="7aipPVq2NUu" role="37wK5m">
-              <node concept="chp4Y" id="7aipPVq2NUv" role="3oSUPX">
-                <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
-              </node>
-              <node concept="2OqwBi" id="7aipPVq2NUw" role="1m5AlR">
-                <node concept="2Sf5sV" id="7aipPVq2NUx" role="2Oq$k0" />
-                <node concept="1mfA1w" id="7aipPVq2NUy" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7aipPVq2LP4" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVq2LP5" role="3clFbG">
-            <node concept="2OqwBi" id="7aipPVq2LP6" role="2Oq$k0">
-              <node concept="1XNTG" id="7aipPVq2LP7" role="2Oq$k0" />
-              <node concept="liA8E" id="7aipPVq2LP8" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-              </node>
-            </node>
-            <node concept="liA8E" id="7aipPVq2LP9" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="7aipPVq2LPa" role="2ZfVeh">
-      <node concept="3clFbS" id="7aipPVq2LPb" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVq2LPc" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVq2LPd" role="3clFbG">
-            <node concept="2OqwBi" id="7aipPVq2LPe" role="2Oq$k0">
-              <node concept="2Sf5sV" id="7aipPVq2LPf" role="2Oq$k0" />
-              <node concept="1mfA1w" id="7aipPVq2LPg" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="7aipPVq2LPh" role="2OqNvi">
-              <node concept="chp4Y" id="7aipPVq2LPi" role="cj9EA">
-                <ref role="cht4Q" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="7aipPVq2LPj" role="lGtFl">
-      <property role="1SWRpm" value="ALGEBRAIC" />
-    </node>
-  </node>
-  <node concept="2S6QgY" id="7aipPVqdMb8">
-    <property role="TrG5h" value="ToggleSymbolic2" />
-    <ref role="2ZfgGC" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
-    <node concept="2S6ZIM" id="7aipPVqdMb9" role="2ZfVej">
-      <node concept="3clFbS" id="7aipPVqdMba" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVqdMbb" role="3cqZAp">
-          <node concept="Xl_RD" id="7aipPVqdMbc" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Symbolic" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="7aipPVqdMbd" role="2ZfgGD">
-      <node concept="3clFbS" id="7aipPVqdMbe" role="2VODD2">
-        <node concept="3clFbF" id="7aipPVqdMbf" role="3cqZAp">
-          <node concept="2YIFZM" id="7aipPVqdMbg" role="3clFbG">
-            <ref role="37wK5l" to="s51c:7aipPVq2LuH" resolve="toggleSymbolic" />
-            <ref role="1Pybhc" to="s51c:7aipPVpTU91" resolve="ProjectionHelper" />
-            <node concept="2Sf5sV" id="7aipPVqdNi2" role="37wK5m" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="7aipPVqdMbm" role="3cqZAp">
-          <node concept="2OqwBi" id="7aipPVqdMbn" role="3clFbG">
-            <node concept="2OqwBi" id="7aipPVqdMbo" role="2Oq$k0">
-              <node concept="1XNTG" id="7aipPVqdMbp" role="2Oq$k0" />
-              <node concept="liA8E" id="7aipPVqdMbq" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-              </node>
-            </node>
-            <node concept="liA8E" id="7aipPVqdMbr" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1SWQZ3" id="7aipPVqdMb_" role="lGtFl">
       <property role="1SWRpm" value="ALGEBRAIC" />
     </node>
   </node>

@@ -394,23 +394,6 @@
     <property role="3GE5qa" value="dot" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
   </node>
-  <node concept="1TIwiD" id="7aipPVpLNOX">
-    <property role="EcuMT" value="8255774724001840445" />
-    <property role="TrG5h" value="ErrorAnnotation" />
-    <property role="3GE5qa" value="error" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="7aipPVpLNOY" role="lGtFl">
-      <property role="Hh88m" value="error" />
-      <node concept="trNpa" id="7aipPVpQ3Vw" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="7aipPVpLOl3" role="1TKVEl">
-      <property role="IQ2nx" value="8255774724001842499" />
-      <property role="TrG5h" value="message" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7aipPVpLOlr">
     <property role="EcuMT" value="8255774724001842523" />
     <property role="TrG5h" value="AlgebraicDotTarget" />
@@ -428,30 +411,6 @@
     <property role="34LRSv" value="src" />
     <property role="3GE5qa" value="dot" />
     <ref role="1TJDcQ" node="7aipPVpLOlr" resolve="AlgebraicDotTarget" />
-  </node>
-  <node concept="1TIwiD" id="7aipPVpNhN9">
-    <property role="EcuMT" value="8255774724002225353" />
-    <property role="3GE5qa" value="error" />
-    <property role="TrG5h" value="AnnotateErrorExpression" />
-    <property role="34LRSv" value="annotate-error" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="7aipPVpNhNd" role="1TKVEi">
-      <property role="IQ2ns" value="8255774724002225357" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="node" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="7aipPVpNhNf" role="1TKVEi">
-      <property role="IQ2ns" value="8255774724002225359" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="msg" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="7aipPVpNjkx" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
   </node>
   <node concept="1TIwiD" id="28$LOSAcnmu">
     <property role="EcuMT" value="2460310434913285534" />
