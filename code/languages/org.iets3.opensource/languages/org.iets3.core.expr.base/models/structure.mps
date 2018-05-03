@@ -84,7 +84,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7425695345928347719" />
-    <property role="34LRSv" value="block" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3z0ZJXm0Mh2" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
@@ -1282,6 +1281,11 @@
     <property role="TrG5h" value="CheckTypeConstraintsExpr" />
     <property role="34LRSv" value="check" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="5OzSgxdWiIO" role="1TKVEl">
+      <property role="IQ2nx" value="6711455295495809972" />
+      <property role="TrG5h" value="failIfInvalid" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="4qVjx3kqEWM" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -1736,6 +1740,26 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="5a_u3OzTCvZ">
+    <property role="EcuMT" value="5955298286257997823" />
+    <property role="TrG5h" value="ColonCast" />
+    <property role="34LRSv" value=":" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5a_u3OzTCw6" role="1TKVEi">
+      <property role="IQ2ns" value="5955298286257997830" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5a_u3OzTCw9" role="1TKVEi">
+      <property role="IQ2ns" value="5955298286257997833" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
 </model>
 

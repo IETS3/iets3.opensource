@@ -3613,7 +3613,6 @@
     <property role="TrG5h" value="check_ForeachOp" />
     <property role="3GE5qa" value="collection" />
     <node concept="3clFbS" id="7SZA7Ud$032" role="18ibNy">
-      <node concept="3clFbH" id="6GySMNjYExu" role="3cqZAp" />
       <node concept="3clFbJ" id="7SZA7Ud$27L" role="3cqZAp">
         <node concept="3clFbS" id="7SZA7Ud$27N" role="3clFbx">
           <node concept="2MkqsV" id="7SZA7Ud$2Ic" role="3cqZAp">

@@ -12,6 +12,11 @@
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
@@ -26,11 +31,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -59,11 +66,27 @@
     <property role="TrG5h" value="Frame" />
     <property role="34LRSv" value="frame" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4vZ65iJZUo6" role="1TKVEl">
+      <property role="IQ2nx" value="5187892047763187206" />
+      <property role="TrG5h" value="useAsBookmark" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4vZ65iK00Og" role="1TKVEl">
+      <property role="IQ2nx" value="5187892047763213584" />
+      <property role="TrG5h" value="bookmarkPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="1sudaVNn6BZ" role="PzmwI">
       <ref role="PrY4T" to="yv47:1sudaVNn5LK" resolve="ITopLevelContainer" />
     </node>
     <node concept="PrWs8" id="4yaQL1YfsRj" role="PzmwI">
       <ref role="PrY4T" to="hm2y:4yaQL1YeoSK" resolve="INameQualifier" />
+    </node>
+    <node concept="PrWs8" id="31BLoccZE57" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="2m0pXWMyXT" role="PzmwI">
+      <ref role="PrY4T" node="2m0pXWMyXx" resolve="IBookmark" />
     </node>
     <node concept="1TJgyj" id="1sudaVNqppI" role="1TKVEi">
       <property role="IQ2ns" value="1665826838186399342" />
@@ -71,6 +94,9 @@
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1sudaVNqpiG" resolve="FrameContent" />
+    </node>
+    <node concept="1QGGSu" id="4vZ65iK11l_" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/frame.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1sudaVNqpiG">
@@ -151,6 +177,91 @@
     </node>
     <node concept="PrWs8" id="4yaQL1YaeRo" role="PzmwI">
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2m0pXWMyXx">
+    <property role="EcuMT" value="42223031011651425" />
+    <property role="TrG5h" value="IBookmark" />
+  </node>
+  <node concept="1TIwiD" id="4vZ65iK7gAp">
+    <property role="EcuMT" value="5187892047765113241" />
+    <property role="TrG5h" value="Bookmark" />
+    <property role="34LRSv" value="bookmark" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4vZ65iKhY_V" role="1TKVEi">
+      <property role="IQ2ns" value="5187892047767923067" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="redirect" />
+      <ref role="20lvS9" node="4vZ65iKhY_T" resolve="BookmarkRedirect" />
+    </node>
+    <node concept="1TJgyi" id="4vZ65iK7hoR" role="1TKVEl">
+      <property role="IQ2nx" value="5187892047765116471" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4vZ65iK7gAw" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="4vZ65iK7gBL" role="PzmwI">
+      <ref role="PrY4T" node="2m0pXWMyXx" resolve="IBookmark" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4vZ65iKhY_T">
+    <property role="EcuMT" value="5187892047767923065" />
+    <property role="TrG5h" value="BookmarkRedirect" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4vZ65iK7gAz" role="1TKVEi">
+      <property role="IQ2ns" value="5187892047765113251" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4vZ65iKiy7Y">
+    <property role="EcuMT" value="5187892047768068606" />
+    <property role="TrG5h" value="BookmarkAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="4vZ65iKiy7Z" role="lGtFl">
+      <property role="Hh88m" value="bookmark" />
+      <node concept="trNpa" id="4vZ65iKiy82" role="EQaZv">
+        <ref role="trN6q" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="4vZ65iKiy85" role="1TKVEl">
+      <property role="IQ2nx" value="5187892047768068613" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4vZ65iKiya7" role="PzmwI">
+      <ref role="PrY4T" node="2m0pXWMyXx" resolve="IBookmark" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5OzSgxea3CI">
+    <property role="EcuMT" value="6711455295499418158" />
+    <property role="TrG5h" value="ExampleSolution" />
+    <property role="34LRSv" value="example-solution" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5OzSgxea3CJ" role="PzmwI">
+      <ref role="PrY4T" to="yv47:1sudaVNn5LK" resolve="ITopLevelContainer" />
+    </node>
+    <node concept="PrWs8" id="5OzSgxea3CK" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4yaQL1YeoSK" resolve="INameQualifier" />
+    </node>
+    <node concept="PrWs8" id="5OzSgxea3CL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyj" id="5OzSgxea3CS" role="1TKVEi">
+      <property role="IQ2ns" value="6711455295499418168" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyi" id="5OzSgxea3D$" role="1TKVEl">
+      <property role="IQ2nx" value="6711455295499418212" />
+      <property role="TrG5h" value="show" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

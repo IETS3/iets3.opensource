@@ -91,6 +91,7 @@
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+        <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
@@ -126,6 +127,7 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="4526149749187797167" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_StyledText" flags="nn" index="1unZQo" />
       <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
@@ -299,8 +301,10 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -464,10 +468,39 @@
       <node concept="3F0ifn" id="3GdqffBQYG6" role="3EZMnx">
         <property role="3F0ifm" value="update" />
       </node>
+      <node concept="_tjkj" id="31BLocd1pSu" role="3EZMnx">
+        <node concept="3F1sOY" id="31BLocd1pSO" role="_tjki">
+          <ref role="1NtTu8" to="8lgj:31BLocd1pR_" resolve="currency" />
+        </node>
+        <node concept="ZYGn8" id="31BLocd1pSS" role="ZWbT9">
+          <node concept="3clFbS" id="31BLocd1pST" role="2VODD2">
+            <node concept="3clFbF" id="31BLocd1pTH" role="3cqZAp">
+              <node concept="Xl_RD" id="31BLocd1pTG" role="3clFbG">
+                <property role="Xl_RC" value="from" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="3GdqffBQYGi" role="3EZMnx">
         <property role="3F0ifm" value="(" />
         <node concept="11L4FC" id="3GdqffBQYGv" role="3F10Kt">
           <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="31BLocd5ePg" role="3n$kyP">
+            <node concept="3clFbS" id="31BLocd5ePh" role="2VODD2">
+              <node concept="3clFbF" id="31BLocd5eXI" role="3cqZAp">
+                <node concept="3clFbC" id="31BLocd5gl_" role="3clFbG">
+                  <node concept="10Nm6u" id="31BLocd5gtj" role="3uHU7w" />
+                  <node concept="2OqwBi" id="31BLocd5fdP" role="3uHU7B">
+                    <node concept="pncrf" id="31BLocd5eXH" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="31BLocd5fF5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8lgj:31BLocd1pR_" resolve="currency" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="11LMrY" id="3GdqffBQYG$" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -2365,6 +2398,34 @@
   <node concept="3p36aQ" id="1MjwAV6z_mc">
     <property role="3GE5qa" value="function" />
     <ref role="aqKnT" to="8lgj:1MjwAV6z_lJ" resolve="MutableMetaFunction" />
+  </node>
+  <node concept="24kQdi" id="31BLocd1pVD">
+    <property role="3GE5qa" value="box" />
+    <ref role="1XX52x" to="8lgj:31BLocd1pRE" resolve="UpdateCurrencyCheck" />
+    <node concept="3EZMnI" id="31BLocd1pVJ" role="2wV5jI">
+      <node concept="2iRfu4" id="31BLocd1pVK" role="2iSdaV" />
+      <node concept="3F0ifn" id="31BLocd1pWZ" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
+      </node>
+      <node concept="3F0ifn" id="31BLocd1pWb" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="31BLocd1pWj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="31BLocd1pVY" role="3EZMnx">
+        <ref role="1NtTu8" to="8lgj:31BLocd1pRF" resolve="oldValue" />
+      </node>
+      <node concept="3F0ifn" id="31BLocd1pWx" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="31BLocd1pWH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="31BLocd1R0l" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+    </node>
   </node>
 </model>
 
