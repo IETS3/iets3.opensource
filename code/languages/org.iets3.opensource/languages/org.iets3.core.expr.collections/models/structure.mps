@@ -26,6 +26,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -96,6 +97,7 @@
     <property role="34LRSv" value="list" />
     <property role="3GE5qa" value="list.immutable" />
     <property role="EcuMT" value="7554398283339757344" />
+    <property role="R4oN_" value="A countable number of ordered values" />
     <ref role="1TJDcQ" node="5WlDfyP4Gn1" resolve="AbstractListType" />
   </node>
   <node concept="1TIwiD" id="6zmBjqUinVn">
