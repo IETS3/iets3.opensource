@@ -1079,51 +1079,6 @@
       </node>
     </node>
   </node>
-  <node concept="1YbPZF" id="6HHp2WnkxRi">
-    <property role="TrG5h" value="typeof_TypedefType" />
-    <property role="3GE5qa" value="typedef" />
-    <node concept="3clFbS" id="6HHp2WnkxRj" role="18ibNy">
-      <node concept="1Z5TYs" id="6HHp2WnkxU1" role="3cqZAp">
-        <node concept="mw_s8" id="6HHp2WnkxUl" role="1ZfhKB">
-          <node concept="1Z2H0r" id="6HHp2WnkxUh" role="mwGJk">
-            <node concept="2OqwBi" id="6HHp2Wnky9$" role="1Z2MuG">
-              <node concept="2OqwBi" id="6HHp2WnkxWM" role="2Oq$k0">
-                <node concept="1YBJjd" id="6HHp2WnkxUA" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
-                </node>
-                <node concept="3TrEf2" id="6HHp2Wnky1T" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="6HHp2Wnkyhx" role="2OqNvi">
-                <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="6HHp2WnkxU4" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6HHp2WnkxR_" role="mwGJk">
-            <node concept="1YBJjd" id="6HHp2WnkxS1" role="1Z2MuG">
-              <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6HHp2WnkxRl" role="1YuTPh">
-      <property role="TrG5h" value="tdt" />
-      <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
-    </node>
-    <node concept="bXqS6" id="6HHp2Wnkyjy" role="bX4a1">
-      <node concept="3clFbS" id="6HHp2Wnkyjz" role="2VODD2">
-        <node concept="3clFbF" id="6HHp2Wnkyk_" role="3cqZAp">
-          <node concept="3clFbT" id="6HHp2Wnkyk$" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1YbPZF" id="2S3ZC$oCfRD">
     <property role="TrG5h" value="typeof_TypedefContractValExpr" />
     <property role="3GE5qa" value="typedef" />
@@ -3570,6 +3525,51 @@
     <node concept="1YaCAy" id="4ptnK4jiabU" role="1YuTPh">
       <property role="TrG5h" value="fs" />
       <ref role="1YaFvo" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6HHp2WnkxRi">
+    <property role="TrG5h" value="typeof_TypedefType" />
+    <property role="3GE5qa" value="typedef" />
+    <node concept="3clFbS" id="6HHp2WnkxRj" role="18ibNy">
+      <node concept="1Z5TYs" id="6HHp2WnkxU1" role="3cqZAp">
+        <node concept="mw_s8" id="6HHp2WnkxUl" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6HHp2WnkxUh" role="mwGJk">
+            <node concept="2OqwBi" id="6HHp2Wnky9$" role="1Z2MuG">
+              <node concept="2OqwBi" id="6HHp2WnkxWM" role="2Oq$k0">
+                <node concept="1YBJjd" id="6HHp2WnkxUA" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
+                </node>
+                <node concept="3TrEf2" id="6HHp2Wnky1T" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yv47:6HHp2WngtVn" resolve="typedef" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6HHp2Wnkyhx" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6HHp2WngtTF" resolve="originalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6HHp2WnkxU4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6HHp2WnkxR_" role="mwGJk">
+            <node concept="1YBJjd" id="6HHp2WnkxS1" role="1Z2MuG">
+              <ref role="1YBMHb" node="6HHp2WnkxRl" resolve="tdt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6HHp2WnkxRl" role="1YuTPh">
+      <property role="TrG5h" value="tdt" />
+      <ref role="1YaFvo" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+    </node>
+    <node concept="bXqS6" id="6HHp2Wnkyjy" role="bX4a1">
+      <node concept="3clFbS" id="6HHp2Wnkyjz" role="2VODD2">
+        <node concept="3clFbF" id="6HHp2Wnkyk_" role="3cqZAp">
+          <node concept="3clFbT" id="6HHp2Wnkyk$" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

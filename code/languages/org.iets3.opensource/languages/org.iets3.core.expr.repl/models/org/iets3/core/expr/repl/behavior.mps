@@ -24,10 +24,8 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
-    <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -251,6 +249,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
@@ -4911,11 +4910,11 @@
       <node concept="3clFbS" id="5avmkTFFvPe" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="5avmkTFFy0z" role="13h7CS">
-      <property role="TrG5h" value="executeTest" />
+      <property role="TrG5h" value="executeTestInternal" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="xk6s:78hTg1$THJg" resolve="executeTest" />
-      <node concept="3Tm1VV" id="5avmkTFFy0$" role="1B3o_S" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="xk6s:78hTg1$THJg" resolve="executeTestInternal" />
       <node concept="3clFbS" id="5avmkTFFy0B" role="3clF47">
         <node concept="3cpWs8" id="ub9nkyOJg3" role="3cqZAp">
           <node concept="3cpWsn" id="ub9nkyOJg4" role="3cpWs9">
@@ -5058,9 +5057,10 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="5avmkTFFy0C" role="3clF45">
+      <node concept="3uibUv" id="4KZjPKUdP1n" role="3clF45">
         <ref role="3uigEE" to="xk6s:ub9nkyOIeW" resolve="EvalResult" />
       </node>
+      <node concept="3Tmbuc" id="4KZjPKUdP1o" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="5avmkTFFy0F" role="13h7CS">
       <property role="13i0iv" value="false" />
