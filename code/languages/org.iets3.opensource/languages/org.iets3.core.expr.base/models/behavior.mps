@@ -20763,9 +20763,6 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getTypedContextNode" />
       <node concept="P$JXv" id="6ip4Ynib1jw" role="lGtFl">
-        <node concept="TZ5HA" id="6ip4Ynib1jx" role="TZ5H$">
-          <node concept="1dT_AC" id="6ip4Ynib1jy" role="1dT_Ay" />
-        </node>
         <node concept="x79VA" id="6ip4Ynib1jz" role="3nqlJM">
           <property role="x79VB" value="a typed node which canbe used in a generic constraint in IConceptSpecificAttribute" />
         </node>

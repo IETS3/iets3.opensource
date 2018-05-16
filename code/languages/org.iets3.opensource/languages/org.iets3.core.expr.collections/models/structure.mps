@@ -965,6 +965,8 @@
     <property role="EcuMT" value="7757419675876232508" />
     <property role="3GE5qa" value="map.common" />
     <property role="TrG5h" value="MapLikeOneArgOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6IBT1wUeCOX" role="PzmwI">
       <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
