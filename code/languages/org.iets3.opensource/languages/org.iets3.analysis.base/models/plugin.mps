@@ -302,6 +302,9 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
+        <child id="1240687658305" name="delimiter" index="3uJOhx" />
+      </concept>
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
@@ -1047,6 +1050,33 @@
         <node concept="17QB3L" id="XhdFKvY2nQ" role="A3Ik2" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4cBRAFcj6L_" role="jymVt" />
+    <node concept="3clFb_" id="4cBRAFcj781" role="jymVt">
+      <property role="TrG5h" value="getMessage" />
+      <node concept="17QB3L" id="4cBRAFcj7Wu" role="3clF45" />
+      <node concept="3Tm1VV" id="4cBRAFcj784" role="1B3o_S" />
+      <node concept="3clFbS" id="4cBRAFcj785" role="3clF47">
+        <node concept="3clFbF" id="4cBRAFcj89V" role="3cqZAp">
+          <node concept="2OqwBi" id="4cBRAFcja53" role="3clFbG">
+            <node concept="2OqwBi" id="4cBRAFcj8y0" role="2Oq$k0">
+              <node concept="Xjq3P" id="4cBRAFcj89U" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4cBRAFcj9ou" role="2OqNvi">
+                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+              </node>
+            </node>
+            <node concept="3uJxvA" id="4cBRAFcjaK5" role="2OqNvi">
+              <node concept="Xl_RD" id="4cBRAFcjchY" role="3uJOhx">
+                <property role="Xl_RC" value="; " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4cBRAFcj7H_" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4cBRAFcj3Kk" role="jymVt" />
     <node concept="3Tm1VV" id="XhdFKvMYZZ" role="1B3o_S" />
     <node concept="3uibUv" id="rj7uJEn1FU" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
