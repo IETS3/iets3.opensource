@@ -155,8 +155,8 @@
       <concept id="24388123196707940" name="org.iets3.core.expr.process.structure.MajorityDecProc" flags="ng" index="1FHB2U" />
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
-      <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ImmutableListWithAllOp" flags="ng" index="2oUEFG" />
+      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
+      <concept id="362871314062739301" name="org.iets3.core.expr.collections.structure.ListWithAllOp" flags="ng" index="2oUEFG" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
@@ -170,20 +170,16 @@
       <concept id="5585772046587930249" name="org.iets3.core.expr.collections.structure.MaxOp" flags="ng" index="2$EC2t" />
       <concept id="8872269265515619803" name="org.iets3.core.expr.collections.structure.AnyOp" flags="ng" index="2Tz0gS" />
       <concept id="8872269265514323710" name="org.iets3.core.expr.collections.structure.ContainsOp" flags="ng" index="2TI7Wt" />
-      <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.ImmutableSetType" flags="ng" index="2TO1h$" />
+      <concept id="8872269265520080263" name="org.iets3.core.expr.collections.structure.SetType" flags="ng" index="2TO1h$" />
       <concept id="8872269265518788050" name="org.iets3.core.expr.collections.structure.AllOp" flags="ng" index="2TZ5KL" />
       <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ng" index="1bLd8V">
         <child id="527291771311128762" name="arg" index="26Ft6C" />
       </concept>
-      <concept id="5291952221899372124" name="org.iets3.core.expr.collections.structure.MapLikeType" flags="ng" index="1bPBNu">
-        <child id="5291952221899455637" name="keyType" index="1bPNon" />
-        <child id="5291952221899455901" name="valueType" index="1bPNsv" />
-      </concept>
       <concept id="3989687177013570767" name="org.iets3.core.expr.collections.structure.UpToTarget" flags="ng" index="1hzhIm">
         <child id="3989687177013570768" name="max" index="1hzhI9" />
       </concept>
-      <concept id="7757419675876255273" name="org.iets3.core.expr.collections.structure.MapLikeKeysOp" flags="ng" index="1hBg8L" />
-      <concept id="7757419675876240958" name="org.iets3.core.expr.collections.structure.MapLikeValuesOp" flags="ng" index="1hBkCA" />
+      <concept id="7757419675876255273" name="org.iets3.core.expr.collections.structure.MapKeysOp" flags="ng" index="1hBg8L" />
+      <concept id="7757419675876240958" name="org.iets3.core.expr.collections.structure.MapValuesOp" flags="ng" index="1hBkCA" />
       <concept id="7757419675865128281" name="org.iets3.core.expr.collections.structure.IMapOneArgOp" flags="ng" index="1idJ_1">
         <child id="7757419675865128346" name="arg" index="1idJA2" />
       </concept>
@@ -197,19 +193,22 @@
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
       </concept>
-      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ImmutableListLiteral" flags="ng" index="3iBYfx">
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
         <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
-      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
-      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.ImmutableMapWithoutOp" flags="ng" index="1DE4Fa" />
-      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.ImmutableMapWithOp" flags="ng" index="1DFusj" />
-      <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.ImmutableMapType" flags="ng" index="1DGDPD" />
+      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
+      <concept id="8448265401163714133" name="org.iets3.core.expr.collections.structure.MapWithoutOp" flags="ng" index="1DE4Fa" />
+      <concept id="8448265401163555724" name="org.iets3.core.expr.collections.structure.MapWithOp" flags="ng" index="1DFusj" />
+      <concept id="8448265401163110902" name="org.iets3.core.expr.collections.structure.MapType" flags="ng" index="1DGDPD">
+        <child id="8448265401163110905" name="valueType" index="1DGDPA" />
+        <child id="8448265401163110903" name="keyType" index="1DGDPC" />
+      </concept>
       <concept id="8448265401163111273" name="org.iets3.core.expr.collections.structure.KeyValuePair" flags="ng" index="1DGDZQ">
         <child id="8448265401163111276" name="val" index="1DGDZN" />
         <child id="8448265401163111274" name="key" index="1DGDZP" />
       </concept>
-      <concept id="8448265401163111272" name="org.iets3.core.expr.collections.structure.ImmutableMapLiteral" flags="ng" index="1DGDZR">
+      <concept id="8448265401163111272" name="org.iets3.core.expr.collections.structure.MapLiteral" flags="ng" index="1DGDZR">
         <child id="8694548031078301045" name="typeConstraint" index="ylO0F" />
       </concept>
       <concept id="24388123213992448" name="org.iets3.core.expr.collections.structure.AsMapOp" flags="ng" index="1GJzru" />
@@ -9252,9 +9251,9 @@
     <node concept="2zPypq" id="3N4k0eSHOEx" role="_iOnB">
       <property role="TrG5h" value="nobids" />
       <node concept="15qgo_" id="60Qa1k_I53A" role="2zPyp_">
-        <node concept="1DGDPD" id="cHo4qYcR_1" role="15qgo$">
-          <node concept="GZN9E" id="cHo4qYcSAA" role="1bPNon" />
-          <node concept="1WbbFT" id="cHo4qYcTBV" role="1bPNsv">
+        <node concept="1DGDPD" id="2uo6UInPsEb" role="15qgo$">
+          <node concept="GZN9E" id="2uo6UInPtUI" role="1DGDPC" />
+          <node concept="1WbbFT" id="2uo6UInPvaZ" role="1DGDPA">
             <ref role="1WbbFS" node="3N4k0eSHK0s" resolve="bid" />
           </node>
         </node>
@@ -9263,9 +9262,9 @@
     <node concept="2zPypq" id="3N4k0eSIduh" role="_iOnB">
       <property role="TrG5h" value="nopendings" />
       <node concept="15qgo_" id="60Qa1k_I67I" role="2zPyp_">
-        <node concept="1DGDPD" id="cHo4qYcWmm" role="15qgo$">
-          <node concept="GZN9E" id="cHo4qYcXfu" role="1bPNon" />
-          <node concept="2EWGYO" id="cHo4qYcY8u" role="1bPNsv">
+        <node concept="1DGDPD" id="2uo6UInPxpZ" role="15qgo$">
+          <node concept="GZN9E" id="2uo6UInPyyb" role="1DGDPC" />
+          <node concept="2EWGYO" id="2uo6UInPzE7" role="1DGDPA">
             <ref role="2EWGYF" node="71HHyJ2r2nl" resolve="AccessControl" />
           </node>
         </node>

@@ -216,6 +216,7 @@
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1215085112640" name="jetbrains.mps.lang.editor.structure.FirstPositionAllowedStyleClassItem" flags="ln" index="3CHQLq" />
@@ -4376,6 +4377,22 @@
         </node>
         <node concept="3F0A7n" id="6a3SqxOwK6D" role="3EZMnx">
           <ref role="1NtTu8" to="hm2y:6a3SqxOtOxB" resolve="showOnTop" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1Hyq9Gjg5YJ" role="3EZMnx">
+        <node concept="2iRfu4" id="1Hyq9Gjg5YK" role="2iSdaV" />
+        <node concept="3F0ifn" id="1Hyq9Gjg5YL" role="3EZMnx">
+          <property role="3F0ifm" value="show on console:      " />
+        </node>
+        <node concept="3F0A7n" id="1Hyq9Gjg5YM" role="3EZMnx">
+          <ref role="1NtTu8" to="hm2y:1Hyq9Gjg5YG" resolve="showOnConsole" />
+        </node>
+        <node concept="3F0ifn" id="1Hyq9GjK1yL" role="3EZMnx">
+          <property role="3F0ifm" value="label" />
+        </node>
+        <node concept="3F0A7n" id="1Hyq9GjK1z2" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="hm2y:1Hyq9GjK0Mo" resolve="optionalLabel" />
         </node>
       </node>
     </node>
