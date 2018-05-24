@@ -247,8 +247,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="6zmBjqUintD">
-    <property role="3GE5qa" value="list.common" />
-    <ref role="1XX52x" to="700h:5WlDfyP4Gn1" resolve="AbstractListType" />
+    <property role="3GE5qa" value="list" />
+    <ref role="1XX52x" to="700h:6zmBjqUinsw" resolve="ListType" />
     <node concept="3EZMnI" id="6zmBjqUintF" role="2wV5jI">
       <node concept="PMmxH" id="5WlDfyP2z2n" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -293,8 +293,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="6zmBjqUinVM">
-    <property role="3GE5qa" value="list.immutable" />
-    <ref role="1XX52x" to="700h:6zmBjqUinVn" resolve="ImmutableListLiteral" />
+    <property role="3GE5qa" value="list" />
+    <ref role="1XX52x" to="700h:6zmBjqUinVn" resolve="ListLiteral" />
     <node concept="3EZMnI" id="6zmBjqUinVR" role="2wV5jI">
       <node concept="l2Vlx" id="6zmBjqUinVS" role="2iSdaV" />
       <node concept="3F0ifn" id="6zmBjqUinVO" role="3EZMnx">
@@ -390,8 +390,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7GwCuf2Wbmx">
-    <property role="3GE5qa" value="set.common" />
-    <ref role="1XX52x" to="700h:6QPHMFf0Tpb" resolve="SetType" />
+    <property role="3GE5qa" value="set" />
+    <ref role="1XX52x" to="700h:7GwCuf2Wbm7" resolve="SetType" />
     <node concept="3EZMnI" id="6DR5zXWAe8g" role="2wV5jI">
       <node concept="PMmxH" id="6QPHMFf0TrI" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -419,8 +419,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7GwCuf2WbAB">
-    <property role="3GE5qa" value="set.immutable" />
-    <ref role="1XX52x" to="700h:7GwCuf2WbAd" resolve="ImmutableSetLiteral" />
+    <property role="3GE5qa" value="set" />
+    <ref role="1XX52x" to="700h:7GwCuf2WbAd" resolve="SetLiteral" />
     <node concept="3EZMnI" id="7GwCuf2WbAD" role="2wV5jI">
       <node concept="l2Vlx" id="7GwCuf2WbAE" role="2iSdaV" />
       <node concept="3F0ifn" id="7GwCuf2WbAF" role="3EZMnx">
@@ -508,7 +508,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6HHp2WnuYKO" role="2OqNvi">
                       <node concept="chp4Y" id="6HHp2WnuYP_" role="cj9EA">
-                        <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="ImmutableMapType" />
+                        <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
                       </node>
                     </node>
                   </node>
@@ -540,8 +540,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7kYh9WszdCk">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1XX52x" to="700h:4_KMC82DFps" resolve="MapLikeType" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1XX52x" to="700h:7kYh9WszdBQ" resolve="MapType" />
     <node concept="3EZMnI" id="7kYh9WszdCm" role="2wV5jI">
       <node concept="PMmxH" id="4_KMC82DZTM" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -557,7 +557,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7kYh9WszdCz" role="3EZMnx">
-        <ref role="1NtTu8" to="700h:4_KMC82DZMl" resolve="keyType" />
+        <ref role="1NtTu8" to="700h:7kYh9WszdBR" resolve="keyType" />
       </node>
       <node concept="3F0ifn" id="7kYh9WszdCF" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -566,7 +566,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7kYh9WszdCP" role="3EZMnx">
-        <ref role="1NtTu8" to="700h:4_KMC82DZQt" resolve="valueType" />
+        <ref role="1NtTu8" to="700h:7kYh9WszdBT" resolve="valueType" />
       </node>
       <node concept="3F0ifn" id="7kYh9WszdD1" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
@@ -578,7 +578,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7kYh9WszdI7">
-    <property role="3GE5qa" value="map.common" />
+    <property role="3GE5qa" value="map" />
     <ref role="1XX52x" to="700h:7kYh9WszdHD" resolve="KeyValuePair" />
     <node concept="3EZMnI" id="7kYh9WszdI9" role="2wV5jI">
       <node concept="pVoyu" id="NE1gl57$y$" role="3F10Kt">
@@ -608,7 +608,7 @@
                   </node>
                   <node concept="1mIQ4w" id="NE1gl55SPE" role="2OqNvi">
                     <node concept="chp4Y" id="NE1gl55TiG" role="cj9EA">
-                      <ref role="cht4Q" to="700h:7kYh9WszdHC" resolve="ImmutableMapLiteral" />
+                      <ref role="cht4Q" to="700h:7kYh9WszdHC" resolve="MapLiteral" />
                     </node>
                   </node>
                 </node>
@@ -640,8 +640,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7kYh9Wszg2K">
-    <property role="3GE5qa" value="map.immutable" />
-    <ref role="1XX52x" to="700h:7kYh9WszdHC" resolve="ImmutableMapLiteral" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1XX52x" to="700h:7kYh9WszdHC" resolve="MapLiteral" />
     <node concept="3EZMnI" id="7kYh9Wszg2P" role="2wV5jI">
       <node concept="2iRfu4" id="NE1gl597Mv" role="2iSdaV" />
       <node concept="3F0ifn" id="7kYh9Wszg2M" role="3EZMnx">
@@ -690,7 +690,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7kYh9Ws$z$k">
-    <property role="3GE5qa" value="map.immutable" />
+    <property role="3GE5qa" value="map" />
     <ref role="1XX52x" to="700h:6IBT1wT$hPp" resolve="IMapOneArgOp" />
     <node concept="3EZMnI" id="7kYh9Ws$z$o" role="2wV5jI">
       <node concept="2iRfu4" id="7kYh9Ws$z$p" role="2iSdaV" />
@@ -760,7 +760,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1RHynufnBTn">
-    <property role="3GE5qa" value="list.common" />
+    <property role="3GE5qa" value="list" />
     <ref role="1XX52x" to="700h:4_KMC82H1yT" resolve="IListOneArgOp" />
     <node concept="3EZMnI" id="1RHynufnBTp" role="2wV5jI">
       <node concept="l2Vlx" id="NE1gl4Nw13" role="2iSdaV" />
@@ -1050,14 +1050,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="6IBT1wUeF4c">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1XX52x" to="700h:6IBT1wUeESY" resolve="MapLikeValuesOp" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1XX52x" to="700h:6IBT1wUeESY" resolve="MapValuesOp" />
     <node concept="PMmxH" id="6IBT1wUeF4e" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="thkha3aNEy">
-    <property role="3GE5qa" value="set.common" />
+    <property role="3GE5qa" value="set" />
     <ref role="1XX52x" to="700h:thkha3aNEl" resolve="ISetOneArgOp" />
     <node concept="3EZMnI" id="thkha3aNE$" role="2wV5jI">
       <node concept="2iRfu4" id="thkha3aNE_" role="2iSdaV" />
@@ -1085,15 +1085,15 @@
     </node>
   </node>
   <node concept="24kQdi" id="6IBT1wUeIoQ">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1XX52x" to="700h:6IBT1wUeIoD" resolve="MapLikeKeysOp" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1XX52x" to="700h:6IBT1wUeIoD" resolve="MapKeysOp" />
     <node concept="PMmxH" id="6IBT1wUeIoS" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="LrvgQhkLIN">
-    <property role="3GE5qa" value="list.immutable" />
-    <ref role="1XX52x" to="700h:LrvgQhjFyf" resolve="ImmutableListInsertOp" />
+    <property role="3GE5qa" value="list" />
+    <ref role="1XX52x" to="700h:LrvgQhjFyf" resolve="ListInsertOp" />
     <node concept="3EZMnI" id="LrvgQhkLIP" role="2wV5jI">
       <node concept="2iRfu4" id="LrvgQhkLIQ" role="2iSdaV" />
       <node concept="PMmxH" id="LrvgQhkLIR" role="3EZMnx">
