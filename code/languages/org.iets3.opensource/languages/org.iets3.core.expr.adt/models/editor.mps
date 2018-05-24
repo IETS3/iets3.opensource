@@ -203,6 +203,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
@@ -213,6 +214,7 @@
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -475,6 +477,15 @@
           <node concept="3F1sOY" id="5a_u3Oz7hIq" role="1kIj9b">
             <ref role="1NtTu8" to="v0r8:5a_u3OyMSQm" resolve="type" />
           </node>
+          <node concept="7duGs" id="JV9IWPQcdu" role="7deOD">
+            <node concept="3clFbS" id="JV9IWPQcdv" role="2VODD2">
+              <node concept="3clFbF" id="JV9IWPQcu_" role="3cqZAp">
+                <node concept="3clFbT" id="JV9IWPQcOZ" role="3clFbG">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="5a_u3Oz7hIr" role="3EZMnx">
           <property role="3F0ifm" value="(" />
@@ -580,6 +591,15 @@
             <node concept="3F1sOY" id="7aipPVpTAJ6" role="1kIj9b">
               <ref role="1NtTu8" to="v0r8:5a_u3OyMSQm" resolve="type" />
             </node>
+            <node concept="7duGs" id="JV9IWPQd49" role="7deOD">
+              <node concept="3clFbS" id="JV9IWPQd4a" role="2VODD2">
+                <node concept="3clFbF" id="JV9IWPQdbI" role="3cqZAp">
+                  <node concept="3clFbT" id="JV9IWPQdbH" role="3clFbG">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="7aipPVpTAJ7" role="3EZMnx">
             <property role="3F0ifm" value="(" />
@@ -682,6 +702,15 @@
             <node concept="1kIj98" id="7aipPVpTAJL" role="2SWKFN">
               <node concept="3F1sOY" id="7aipPVpTAJM" role="1kIj9b">
                 <ref role="1NtTu8" to="v0r8:5a_u3OyMSQm" resolve="type" />
+              </node>
+              <node concept="7duGs" id="JV9IWPQdqt" role="7deOD">
+                <node concept="3clFbS" id="JV9IWPQdqu" role="2VODD2">
+                  <node concept="3clFbF" id="JV9IWPQdqB" role="3cqZAp">
+                    <node concept="3clFbT" id="JV9IWPQdqA" role="3clFbG">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3F2HdR" id="7aipPVpTAJN" role="2SWKFX">

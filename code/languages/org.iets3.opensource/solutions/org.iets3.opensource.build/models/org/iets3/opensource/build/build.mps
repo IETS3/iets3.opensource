@@ -1609,11 +1609,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="6JPXQMQs0q2" role="1TViLv">
-          <property role="TrG5h" value="org.iets3.core.expr.collections#7554398283339749507" />
-          <property role="3LESm3" value="dfce0388-51f6-4bc1-b6ff-998e97713d55" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="6JPXQMQs0q3" role="3bR37C">
           <node concept="1Busua" id="6JPXQMQs0q4" role="1SiIV1">
             <ref role="1Busuk" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />

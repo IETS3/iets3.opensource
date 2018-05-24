@@ -297,6 +297,15 @@
         <ref role="rxSuV" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
       </node>
     </node>
+    <node concept="qq9P1" id="1OtF0I6qpb1" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
+      <node concept="3vetai" id="1OtF0I6qrGW" role="3vQZUl">
+        <node concept="rqRoa" id="1OtF0I6qrHc" role="3vdyny">
+          <ref role="rqRob" to="5qo5:7cphKbL6izz" resolve="expr" />
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="7cphKbL9m7J" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="5qo5:7cphKbL6iha" resolve="StringInterpolationExpr" />
@@ -351,17 +360,12 @@
                           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                         </node>
                         <node concept="qpA2v" id="7cphKbL9tnW" role="33vP2m">
-                          <node concept="2OqwBi" id="7cphKbL9tnX" role="3SLO0q">
-                            <node concept="1PxgMI" id="7cphKbL9tnY" role="2Oq$k0">
-                              <node concept="chp4Y" id="7cphKbL9tnZ" role="3oSUPX">
-                                <ref role="cht4Q" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
-                              </node>
-                              <node concept="2GrUjf" id="7cphKbL9to0" role="1m5AlR">
-                                <ref role="2Gs0qQ" node="7cphKbL9otn" resolve="w" />
-                              </node>
+                          <node concept="1PxgMI" id="7cphKbL9tnY" role="3SLO0q">
+                            <node concept="chp4Y" id="7cphKbL9tnZ" role="3oSUPX">
+                              <ref role="cht4Q" to="5qo5:7cphKbL6izy" resolve="InterpolExprWord" />
                             </node>
-                            <node concept="3TrEf2" id="7cphKbL9to1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="5qo5:7cphKbL6izz" resolve="expr" />
+                            <node concept="2GrUjf" id="7cphKbL9to0" role="1m5AlR">
+                              <ref role="2Gs0qQ" node="7cphKbL9otn" resolve="w" />
                             </node>
                           </node>
                         </node>
