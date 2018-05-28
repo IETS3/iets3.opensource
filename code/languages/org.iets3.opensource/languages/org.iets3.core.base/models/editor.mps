@@ -275,6 +275,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
       <concept id="8170319964140884845" name="com.mbeddr.mpsutil.userstyles.structure.UserConfigurable" flags="ng" index="1Ex9Rl">
@@ -713,6 +720,26 @@
                   </node>
                 </node>
                 <node concept="10Nm6u" id="3m8H$lmFM7m" role="3uHU7w" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="12ACZ2oNOSk" role="3cqZAp">
+              <node concept="3SKdUq" id="12ACZ2oNOSm" role="3SKWNk">
+                <property role="3SKdUp" value="detach is removed because of https://youtrack.jetbrains.com/issue/MPS-27985" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="12ACZ2oNP0B" role="3cqZAp">
+              <node concept="3SKdUq" id="12ACZ2oNP0D" role="3SKWNk">
+                <property role="3SKdUp" value="when fixed we can reenable it" />
+              </node>
+            </node>
+            <node concept="1X3_iC" id="12ACZ2oNOO9" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="12ACZ2oNO5H" role="8Wnug">
+                <node concept="2OqwBi" id="12ACZ2oNOgG" role="3clFbG">
+                  <node concept="7Obwk" id="12ACZ2oNO5F" role="2Oq$k0" />
+                  <node concept="3YRAZt" id="12ACZ2oNOHk" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>
