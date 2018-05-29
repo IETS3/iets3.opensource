@@ -13,7 +13,6 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -275,6 +274,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
@@ -648,19 +654,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3m8H$lmFM6Q" role="3cqZAp">
-              <node concept="2OqwBi" id="3m8H$lmFM6R" role="3clFbG">
-                <node concept="2OqwBi" id="3m8H$lmFM6S" role="2Oq$k0">
-                  <node concept="1Q80Hx" id="5c30WK3aGOc" role="2Oq$k0" />
-                  <node concept="liA8E" id="3m8H$lmFM6U" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="3m8H$lmFM6V" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="5c30WK3aJ6I" role="3cqZAp" />
             <node concept="3clFbJ" id="3m8H$lmFM6W" role="3cqZAp">
               <node concept="3clFbS" id="3m8H$lmFM6X" role="3clFbx">
@@ -729,10 +722,24 @@
                 <node concept="10Nm6u" id="3m8H$lmFM7m" role="3uHU7w" />
               </node>
             </node>
-            <node concept="3clFbF" id="2$ljoeITCmX" role="3cqZAp">
-              <node concept="2OqwBi" id="2$ljoeITCxi" role="3clFbG">
-                <node concept="7Obwk" id="2$ljoeITCmV" role="2Oq$k0" />
-                <node concept="3YRAZt" id="2$ljoeITCMB" role="2OqNvi" />
+            <node concept="3SKdUt" id="12ACZ2oNOSk" role="3cqZAp">
+              <node concept="3SKdUq" id="12ACZ2oNOSm" role="3SKWNk">
+                <property role="3SKdUp" value="detach is removed because of https://youtrack.jetbrains.com/issue/MPS-27985" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="12ACZ2oNP0B" role="3cqZAp">
+              <node concept="3SKdUq" id="12ACZ2oNP0D" role="3SKWNk">
+                <property role="3SKdUp" value="when fixed we can reenable it" />
+              </node>
+            </node>
+            <node concept="1X3_iC" id="12ACZ2oNOO9" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="12ACZ2oNO5H" role="8Wnug">
+                <node concept="2OqwBi" id="12ACZ2oNOgG" role="3clFbG">
+                  <node concept="7Obwk" id="12ACZ2oNO5F" role="2Oq$k0" />
+                  <node concept="3YRAZt" id="12ACZ2oNOHk" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>
