@@ -8,6 +8,7 @@
   <imports>
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -164,23 +165,33 @@
             <node concept="9aQIb" id="2Fd5B1gQRGL" role="9aQIa">
               <node concept="3clFbS" id="2Fd5B1gQRGM" role="9aQI4">
                 <node concept="3clFbJ" id="3ugRfIRAoR9" role="3cqZAp">
-                  <node concept="1Wc70l" id="2jITtfD$1z$" role="3clFbw">
-                    <node concept="3fqX7Q" id="2jITtfD$1Nr" role="3uHU7w">
-                      <node concept="2OqwBi" id="2jITtfD$24_" role="3fr31v">
-                        <node concept="1YBJjd" id="2jITtfD$1Rt" role="2Oq$k0">
-                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                        </node>
-                        <node concept="2qgKlT" id="2jITtfD$2q3" role="2OqNvi">
-                          <ref role="37wK5l" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="3ugRfIRAp0L" role="3uHU7B">
-                      <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
+                  <node concept="1Wc70l" id="1996aX853uK" role="3clFbw">
+                    <node concept="2OqwBi" id="1996aX854CG" role="3uHU7w">
+                      <node concept="1YBJjd" id="1996aX853HZ" role="2Oq$k0">
                         <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                       </node>
-                      <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
-                        <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                      <node concept="2qgKlT" id="1996aX85IEq" role="2OqNvi">
+                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeSolved" />
+                      </node>
+                    </node>
+                    <node concept="1Wc70l" id="2jITtfD$1z$" role="3uHU7B">
+                      <node concept="2OqwBi" id="3ugRfIRAp0L" role="3uHU7B">
+                        <node concept="1YBJjd" id="3ugRfIRAoRy" role="2Oq$k0">
+                          <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                        </node>
+                        <node concept="2qgKlT" id="3ugRfIRAqpz" role="2OqNvi">
+                          <ref role="37wK5l" to="gdgh:3ugRfIRApt7" resolve="isManualCheckAvaillable" />
+                        </node>
+                      </node>
+                      <node concept="3fqX7Q" id="2jITtfD$1Nr" role="3uHU7w">
+                        <node concept="2OqwBi" id="2jITtfD$24_" role="3fr31v">
+                          <node concept="1YBJjd" id="2jITtfD$1Rt" role="2Oq$k0">
+                            <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                          </node>
+                          <node concept="2qgKlT" id="2jITtfD$2q3" role="2OqNvi">
+                            <ref role="37wK5l" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -380,7 +391,7 @@
                                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                                   <node concept="3cpWs3" id="7eS2goy2A2g" role="37wK5m">
                                     <node concept="37vLTw" id="7eS2goy2A4o" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7eS2goy14J5" />
+                                      <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
                                     </node>
                                     <node concept="Xl_RD" id="7eS2goy2_1E" role="3uHU7B">
                                       <property role="Xl_RC" value="Ill-formatted Error Message: " />

@@ -8,8 +8,8 @@
   <imports>
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="19m5" ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
@@ -71,6 +71,14 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
@@ -921,6 +929,57 @@
     <node concept="1YaCAy" id="3H4W4diCmq_" role="1YuTPh">
       <property role="TrG5h" value="state" />
       <ref role="1YaFvo" to="19m5:7$TgoCYa5Nn" resolve="State" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5kGo$yL$ENf">
+    <property role="TrG5h" value="typeof_PokeTarget" />
+    <property role="3GE5qa" value="operations" />
+    <node concept="3clFbS" id="5kGo$yL$ENg" role="18ibNy">
+      <node concept="1Z5TYs" id="5kGo$yL$F1U" role="3cqZAp">
+        <node concept="mw_s8" id="5kGo$yL$F2e" role="1ZfhKB">
+          <node concept="2pJPEk" id="5kGo$yL$F2a" role="mwGJk">
+            <node concept="2pJPED" id="53f0GWGTTCa" role="2pJPEn">
+              <ref role="2pJxaS" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5kGo$yL$F1X" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5kGo$yL$ENy" role="mwGJk">
+            <node concept="1YBJjd" id="5kGo$yL$EPi" role="1Z2MuG">
+              <ref role="1YBMHb" node="5kGo$yL$ENi" resolve="pt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5kGo$yL$ENi" role="1YuTPh">
+      <property role="TrG5h" value="pt" />
+      <ref role="1YaFvo" to="19m5:5kGo$yLzmgH" resolve="PokeTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5hiN5PknQtW">
+    <property role="TrG5h" value="typeof_TimeSinceLastTriggeredTransition" />
+    <property role="3GE5qa" value="machine" />
+    <node concept="3clFbS" id="5hiN5PknQtX" role="18ibNy">
+      <node concept="1Z5TYs" id="5hiN5PknQu3" role="3cqZAp">
+        <node concept="mw_s8" id="5hiN5PknQu4" role="1ZfhKB">
+          <node concept="2YIFZM" id="5hiN5PknQu5" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5hiN5PknQu6" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5hiN5PknQu7" role="mwGJk">
+            <node concept="1YBJjd" id="5hiN5PknQvK" role="1Z2MuG">
+              <ref role="1YBMHb" node="5hiN5PknQtZ" resolve="tt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5hiN5PknQtZ" role="1YuTPh">
+      <property role="TrG5h" value="tt" />
+      <ref role="1YaFvo" to="19m5:5hiN5PknPXz" resolve="TimeSinceLastTriggeredTransition" />
     </node>
   </node>
 </model>

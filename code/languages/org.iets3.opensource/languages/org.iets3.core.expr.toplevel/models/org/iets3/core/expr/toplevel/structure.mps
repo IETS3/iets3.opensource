@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -14,8 +14,8 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -113,6 +113,9 @@
     <node concept="PrWs8" id="79jc6Yz8dpL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
     </node>
+    <node concept="PrWs8" id="1xFBUnwLHdc" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -122,6 +125,9 @@
     <node concept="PrWs8" id="XhdFKvq_dr" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
     </node>
+    <node concept="PrWs8" id="4qowQiBHEWL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
     <node concept="PrWs8" id="49WTic8gFfH" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8gvys" resolve="IFunctionCall" />
     </node>
@@ -130,6 +136,9 @@
     </node>
     <node concept="PrWs8" id="5IR_boIe7HQ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7obiejCh8R2" resolve="ITraceRoot" />
+    </node>
+    <node concept="PrWs8" id="5lNY$88SS38" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8hwXW">
@@ -162,6 +171,9 @@
     </node>
     <node concept="PrWs8" id="3z0ZJXm0Med" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="4yaQL1YfxIE" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:4yaQL1YaUM8" resolve="IHasQualifiedName" />
     </node>
   </node>
   <node concept="1TIwiD" id="2uR5X5azSbn">
@@ -226,6 +238,9 @@
     </node>
     <node concept="PrWs8" id="7OzZ9xIa98$" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="1996aX6mmQA" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
@@ -576,6 +591,9 @@
     <property role="TrG5h" value="EnumType" />
     <property role="EcuMT" value="7061117989422575803" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
     <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
@@ -946,6 +964,14 @@
       <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
     </node>
   </node>
+  <node concept="PlHQZ" id="mQGcCvDdrZ">
+    <property role="EcuMT" value="411710798111758079" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IFunctionContainer" />
+    <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="mQGcCvDeqQ">
     <property role="EcuMT" value="411710798111762102" />
     <property role="3GE5qa" value="adapter" />
@@ -964,12 +990,11 @@
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
-  <node concept="PlHQZ" id="mQGcCvDdrZ">
-    <property role="EcuMT" value="411710798111758079" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="IFunctionContainer" />
-    <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+  <node concept="PlHQZ" id="1sudaVNn5LK">
+    <property role="EcuMT" value="1665826838185532528" />
+    <property role="TrG5h" value="ITopLevelContainer" />
+    <node concept="PrWs8" id="1sudaVNn6BU" role="PrDN$">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
 </model>

@@ -651,7 +651,7 @@
       <node concept="3clFbS" id="1mDdTH2QCp" role="2VODD2">
         <node concept="3clFbF" id="1mDdTH2QYF" role="3cqZAp">
           <node concept="Xl_RD" id="1mDdTH2QYE" role="3clFbG">
-            <property role="Xl_RC" value="Add bracket access [..]" />
+            <property role="Xl_RC" value="Add Bracket Access [..]" />
           </node>
         </node>
       </node>
