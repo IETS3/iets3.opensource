@@ -837,7 +837,7 @@
     <node concept="13i0hz" id="1996aX856sE" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="shouldBeSolved" />
+      <property role="TrG5h" value="shouldBeChecked" />
       <node concept="3Tm1VV" id="1996aX856sF" role="1B3o_S" />
       <node concept="10P_77" id="1996aX856Hv" role="3clF45" />
       <node concept="3clFbS" id="1996aX856sH" role="3clF47">

@@ -13,6 +13,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
@@ -1938,6 +1940,31 @@
     </node>
     <node concept="2tJIrI" id="2GQBRFCpFUp" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFVR" role="jymVt" />
+  </node>
+  <node concept="312cEu" id="4dD4xJJV980">
+    <property role="TrG5h" value="SolverNotInvokedResult" />
+    <node concept="2tJIrI" id="28$LOSAF$zb" role="jymVt" />
+    <node concept="3Tm1VV" id="4dD4xJJV981" role="1B3o_S" />
+    <node concept="3clFb_" id="4dD4xJJVaf1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getErrorMessage" />
+      <node concept="3Tm1VV" id="4dD4xJJVaf3" role="1B3o_S" />
+      <node concept="17QB3L" id="4dD4xJJVaf4" role="3clF45" />
+      <node concept="3clFbS" id="4dD4xJJVaf6" role="3clF47">
+        <node concept="3clFbF" id="4dD4xJJVaxC" role="3cqZAp">
+          <node concept="Xl_RD" id="4dD4xJJVaxB" role="3clFbG">
+            <property role="Xl_RC" value="the solver has not been invoked due to an @solver:ignore annotation. Please remove the annotation and try again." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4dD4xJJVaf7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="mhgVwvXTVd" role="1zkMxy">
+      <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
+    </node>
   </node>
 </model>
 
