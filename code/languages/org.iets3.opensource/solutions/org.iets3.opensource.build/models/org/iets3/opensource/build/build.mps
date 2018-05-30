@@ -5481,6 +5481,30 @@
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
+      <property role="m$_wk" value="dummy" />
+      <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">
+        <node concept="3Mxwew" id="3gmMi5swQDl" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwT" role="m_cZH">
+        <node concept="3Mxwew" id="3gmMi5swQDn" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwV" role="m$_w8">
+        <node concept="3Mxwey" id="3gmMi5swQF8" role="3MwsjC">
+          <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQGT" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQKs" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
+      </node>
+    </node>
     <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="7Z_pmaBDZsm" role="398pKh">
