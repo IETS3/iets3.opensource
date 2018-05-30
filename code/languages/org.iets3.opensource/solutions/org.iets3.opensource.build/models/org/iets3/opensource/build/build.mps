@@ -4838,6 +4838,15 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3gmMi5syCU2" role="3bR37C">
+          <node concept="3bR9La" id="3gmMi5syCU3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="3gmMi5syCU4" role="1E1XAP">
+          <ref role="1E0d5P" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396eX" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5481,6 +5490,30 @@
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
+      <property role="m$_wk" value="dummy" />
+      <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">
+        <node concept="3Mxwew" id="3gmMi5swQDl" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwT" role="m_cZH">
+        <node concept="3Mxwew" id="3gmMi5swQDn" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwV" role="m$_w8">
+        <node concept="3Mxwey" id="3gmMi5swQF8" role="3MwsjC">
+          <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQGT" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQKs" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
+      </node>
+    </node>
     <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="7Z_pmaBDZsm" role="398pKh">
