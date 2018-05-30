@@ -4838,6 +4838,15 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3gmMi5syCU2" role="3bR37C">
+          <node concept="3bR9La" id="3gmMi5syCU3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="3gmMi5syCU4" role="1E1XAP">
+          <ref role="1E0d5P" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396eX" role="2G$12L">
         <property role="BnDLt" value="true" />
