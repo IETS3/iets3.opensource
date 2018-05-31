@@ -137,6 +137,12 @@
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
+      <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
+        <property id="4297162197620978190" name="parallel" index="1wNuhe" />
+        <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
+        <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
@@ -394,6 +400,12 @@
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
+    </node>
+    <node concept="1wNqPr" id="3gmMi5swRKS" role="3989C9">
+      <property role="1wNuhe" value="true" />
+      <property role="1wNuhh" value="8" />
+      <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="m$_wf" id="5wLtKNeSRRD" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.os" />
@@ -4697,6 +4709,9 @@
         <property role="TrG5h" value="org.iets3.components.core" />
         <property role="3LESm3" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
         <property role="2GAjPV" value="false" />
+        <node concept="1E0d5M" id="3gmMi5syCU4" role="1E1XAP">
+          <ref role="1E0d5P" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+        </node>
         <node concept="3rtmxn" id="$iFvHj1vsX" role="3bR31x">
           <node concept="3LXTmp" id="$iFvHj1vsY" role="3rtmxm">
             <node concept="3qWCbU" id="$iFvHj1vsZ" role="3LXTna">
@@ -4842,6 +4857,12 @@
           <node concept="3bR9La" id="3U8IgyX8dSB" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3gmMi5syCU2" role="3bR37C">
+          <node concept="3bR9La" id="3gmMi5syCU3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
       </node>
@@ -5487,6 +5508,30 @@
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
+      <property role="m$_wk" value="dummy" />
+      <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">
+        <node concept="3Mxwew" id="3gmMi5swQDl" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwT" role="m_cZH">
+        <node concept="3Mxwew" id="3gmMi5swQDn" role="3MwsjC">
+          <property role="3MwjfP" value="dummy" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3gmMi5swQwV" role="m$_w8">
+        <node concept="3Mxwey" id="3gmMi5swQF8" role="3MwsjC">
+          <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQGT" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="3gmMi5swQKs" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
+      </node>
+    </node>
     <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="7Z_pmaBDZsm" role="398pKh">

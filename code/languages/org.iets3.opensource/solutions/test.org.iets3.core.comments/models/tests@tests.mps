@@ -57,7 +57,7 @@
         <child id="596856272727132646" name="content" index="H_jLS" />
       </concept>
       <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
-      <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstance" flags="ng" index="MGl88">
+      <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstanceWithRef" flags="ng" index="MGl88">
         <child id="3432899422388046625" name="component" index="MGl3R" />
       </concept>
       <concept id="7804632404593513952" name="org.iets3.components.core.structure.ComponentKind" flags="ng" index="1i0KCM" />
@@ -112,16 +112,17 @@
     </node>
     <node concept="1i1ALs" id="5kwEgmAi6Gw" role="LiZbd">
       <property role="TrG5h" value="TestChunk" />
+      <node concept="1i1AuW" id="12ACZ2oN$$F" role="1i1AA4" />
       <node concept="1i1XBj" id="5kwEgmAi6Gz" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
         <node concept="H_j2F" id="59rcyU3GDmR" role="1i1XAe">
           <node concept="H_vQO" id="59rcyU3GDmS" role="H_jLS" />
         </node>
         <node concept="1i0KCM" id="5kwEgmAi6G$" role="1i0K$_" />
-        <node concept="1z9TsT" id="5kwEgmAi6GS" role="lGtFl">
-          <node concept="OjmMv" id="5kwEgmAi6GT" role="1w35rA">
-            <node concept="19SGf9" id="5kwEgmAi6GU" role="OjmMu">
-              <node concept="19SUe$" id="5kwEgmAi6GV" role="19SJt6" />
+        <node concept="1z9TsT" id="12ACZ2oN$_u" role="lGtFl">
+          <node concept="OjmMv" id="12ACZ2oN$_v" role="1w35rA">
+            <node concept="19SGf9" id="12ACZ2oN$_w" role="OjmMu">
+              <node concept="19SUe$" id="12ACZ2oN$_x" role="19SJt6" />
             </node>
           </node>
         </node>
@@ -173,14 +174,15 @@
           <node concept="H_vQO" id="59rcyU3GDmY" role="H_jLS" />
         </node>
         <node concept="GnABt" id="5kwEgmAh7si" role="1i1XAe">
+          <node concept="GnyP7" id="12ACZ2oN$KZ" role="GnABu" />
           <node concept="1i6xzV" id="5kwEgmAh7sl" role="GnABu">
             <node concept="1i1fwW" id="5kwEgmAh7sm" role="MGl3R">
               <ref role="1i1fwX" node="5kwEgmAh7sp" resolve="CP1" />
             </node>
-            <node concept="1z9TsT" id="5kwEgmAh7tu" role="lGtFl">
-              <node concept="OjmMv" id="5kwEgmAh7tv" role="1w35rA">
-                <node concept="19SGf9" id="5kwEgmAh7tw" role="OjmMu">
-                  <node concept="19SUe$" id="5kwEgmAh7tx" role="19SJt6" />
+            <node concept="1z9TsT" id="12ACZ2oN$L7" role="lGtFl">
+              <node concept="OjmMv" id="12ACZ2oN$L8" role="1w35rA">
+                <node concept="19SGf9" id="12ACZ2oN$L9" role="OjmMu">
+                  <node concept="19SUe$" id="12ACZ2oN$La" role="19SJt6" />
                 </node>
               </node>
             </node>
@@ -241,11 +243,12 @@
         <node concept="H_j2F" id="59rcyU3GDn3" role="1i1XAe">
           <node concept="H_vQO" id="59rcyU3GDn4" role="H_jLS" />
         </node>
+        <node concept="1i1Xx2" id="12ACZ2oN$Wl" role="1i1XAe" />
         <node concept="GnABt" id="5kwEgmAi6Me" role="1i1XAe">
-          <node concept="1z9TsT" id="5kwEgmAi6Mz" role="lGtFl">
-            <node concept="OjmMv" id="5kwEgmAi6M$" role="1w35rA">
-              <node concept="19SGf9" id="5kwEgmAi6M_" role="OjmMu">
-                <node concept="19SUe$" id="5kwEgmAi6MA" role="19SJt6" />
+          <node concept="1z9TsT" id="12ACZ2oN$Wx" role="lGtFl">
+            <node concept="OjmMv" id="12ACZ2oN$Wy" role="1w35rA">
+              <node concept="19SGf9" id="12ACZ2oN$Wz" role="OjmMu">
+                <node concept="19SUe$" id="12ACZ2oN$W$" role="19SJt6" />
               </node>
             </node>
           </node>
