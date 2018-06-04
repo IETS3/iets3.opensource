@@ -41,6 +41,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -557,6 +558,7 @@
     <property role="34LRSv" value="opt" />
     <property role="3GE5qa" value="option" />
     <property role="EcuMT" value="2807135271607939856" />
+    <property role="R4oN_" value="Represents a optionally present value" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1709,20 +1711,6 @@
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="IAssertConstraints" />
   </node>
-  <node concept="1TIwiD" id="5bEkIpehgUq">
-    <property role="EcuMT" value="5974679004769488538" />
-    <property role="3GE5qa" value="error" />
-    <property role="TrG5h" value="SuccessExpression" />
-    <property role="34LRSv" value="success" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="5bEkIpehgUx" role="1TKVEi">
-      <property role="IQ2ns" value="5974679004769488545" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2ufoZQIKHqp">
     <property role="EcuMT" value="2850607030358693529" />
     <property role="TrG5h" value="SimpleExpressionValueInspector" />
@@ -1738,6 +1726,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="5bEkIpehgUq">
+    <property role="EcuMT" value="5974679004769488538" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="SuccessExpression" />
+    <property role="34LRSv" value="success" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5bEkIpehgUx" role="1TKVEi">
+      <property role="IQ2ns" value="5974679004769488545" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 
