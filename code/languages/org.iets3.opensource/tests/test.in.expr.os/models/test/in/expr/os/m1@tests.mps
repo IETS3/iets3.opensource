@@ -9189,7 +9189,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="6M49e_69xYy" role="_fkuS">
-          <property role="30bXRw" value="0.1" />
+          <property role="30bXRw" value="-0.1" />
         </node>
       </node>
       <node concept="_fkuZ" id="6HHp2WmR4ng" role="_fkp5">
@@ -23235,20 +23235,6 @@
           <property role="30bXRw" value="2" />
         </node>
       </node>
-      <node concept="_fkuZ" id="3kdFyLX69Ls" role="_fkp5">
-        <node concept="_fku$" id="3kdFyLX69Lt" role="_fkur" />
-        <node concept="30dDZf" id="3kdFyLX69Uf" role="_fkuY">
-          <node concept="30bXRB" id="3kdFyLX69Uq" role="30dEs_">
-            <property role="30bXRw" value="1" />
-          </node>
-          <node concept="_emDc" id="3kdFyLX69TW" role="30dEsF">
-            <ref role="_emDf" node="3kdFyLX64NG" resolve="two1" />
-          </node>
-        </node>
-        <node concept="30bXRB" id="3kdFyLX69Lx" role="_fkuS">
-          <property role="30bXRw" value="3" />
-        </node>
-      </node>
       <node concept="_fkuZ" id="3kdFyLX6omL" role="_fkp5">
         <node concept="_fku$" id="3kdFyLX6omM" role="_fkur" />
         <node concept="1af_rf" id="3kdFyLX6onz" role="_fkuY">
@@ -23295,37 +23281,6 @@
     </node>
     <node concept="_fkuM" id="3kdFyLX6sTb" role="_iOnB">
       <property role="TrG5h" value="StringDot" />
-      <node concept="_fkuZ" id="3kdFyLX6sYh" role="_fkp5">
-        <node concept="_fku$" id="3kdFyLX6sYi" role="_fkur" />
-        <node concept="1QScDb" id="3kdFyLX6t2E" role="_fkuY">
-          <node concept="1uMQU5" id="3kdFyLX6t4e" role="1QScD9" />
-          <node concept="1af_rf" id="3kdFyLX6sYB" role="30czhm">
-            <ref role="1afhQb" node="3kdFyLX6sx6" resolve="strangeString" />
-            <node concept="2vmpnb" id="3kdFyLX6t1t" role="1afhQ5" />
-          </node>
-        </node>
-        <node concept="30bXRB" id="3kdFyLX6t5X" role="_fkuS">
-          <property role="30bXRw" value="7" />
-        </node>
-      </node>
-      <node concept="_fkuZ" id="3kdFyLX6uPz" role="_fkp5">
-        <node concept="_fku$" id="3kdFyLX6uP$" role="_fkur" />
-        <node concept="30dDZf" id="3kdFyLX6uRb" role="_fkuY">
-          <node concept="30bXRB" id="3kdFyLX6uRs" role="30dEs_">
-            <property role="30bXRw" value="1" />
-          </node>
-          <node concept="1QScDb" id="3kdFyLX6uP_" role="30dEsF">
-            <node concept="1uMQU5" id="3kdFyLX6uPA" role="1QScD9" />
-            <node concept="1af_rf" id="3kdFyLX6uPB" role="30czhm">
-              <ref role="1afhQb" node="3kdFyLX6sx6" resolve="strangeString" />
-              <node concept="2vmpnb" id="3kdFyLX6uPC" role="1afhQ5" />
-            </node>
-          </node>
-        </node>
-        <node concept="30bXRB" id="3kdFyLX6uPD" role="_fkuS">
-          <property role="30bXRw" value="8" />
-        </node>
-      </node>
       <node concept="_fkuZ" id="3kdFyLX6udQ" role="_fkp5">
         <node concept="_fku$" id="3kdFyLX6udR" role="_fkur" />
         <node concept="1af_rf" id="3kdFyLX6uel" role="_fkuY">
@@ -23334,23 +23289,6 @@
         </node>
         <node concept="1i5Bf1" id="3kdFyLX6uh2" role="_fkuS">
           <node concept="1i17NB" id="3kdFyLX6uhc" role="1i5Bf0">
-            <property role="TrG5h" value="DEAD" />
-          </node>
-        </node>
-      </node>
-      <node concept="_fkuZ" id="3kdFyLX6vyS" role="_fkp5">
-        <node concept="_fku$" id="3kdFyLX6vyT" role="_fkur" />
-        <node concept="30dDZf" id="3kdFyLX6vzP" role="_fkuY">
-          <node concept="30bXRB" id="3kdFyLX6v$2" role="30dEs_">
-            <property role="30bXRw" value="1" />
-          </node>
-          <node concept="1af_rf" id="3kdFyLX6vyU" role="30dEsF">
-            <ref role="1afhQb" node="3kdFyLX6sx6" resolve="strangeString" />
-            <node concept="2vmpn$" id="3kdFyLX6vyV" role="1afhQ5" />
-          </node>
-        </node>
-        <node concept="1i5Bf1" id="3kdFyLX6vyW" role="_fkuS">
-          <node concept="1i17NB" id="3kdFyLX6vyX" role="1i5Bf0">
             <property role="TrG5h" value="DEAD" />
           </node>
         </node>
