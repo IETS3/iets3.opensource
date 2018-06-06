@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -5331,97 +5331,6 @@
     <node concept="1YaCAy" id="6IBT1wUeFNU" role="1YuTPh">
       <property role="TrG5h" value="op" />
       <ref role="1YaFvo" to="700h:6IBT1wUeESY" resolve="MapValuesOp" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="52nXqzMoTuM">
-    <property role="TrG5h" value="typeof_ImmutableSetWithAllOp" />
-    <property role="3GE5qa" value="set.immutable" />
-    <node concept="3clFbS" id="52nXqzMoTuN" role="18ibNy">
-      <node concept="1Z5TYs" id="52nXqzMoUPX" role="3cqZAp">
-        <node concept="mw_s8" id="52nXqzMoUPY" role="1ZfhKB">
-          <node concept="1Z2H0r" id="52nXqzMoUPZ" role="mwGJk">
-            <node concept="2OqwBi" id="52nXqzMoUQ0" role="1Z2MuG">
-              <node concept="1YBJjd" id="52nXqzMoUQ1" role="2Oq$k0">
-                <ref role="1YBMHb" node="52nXqzMoTuP" resolve="op" />
-              </node>
-              <node concept="2qgKlT" id="52nXqzMoUQ2" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="52nXqzMoUQ3" role="1ZfhK$">
-          <node concept="1Z2H0r" id="52nXqzMoUQ4" role="mwGJk">
-            <node concept="1YBJjd" id="52nXqzMoUQ5" role="1Z2MuG">
-              <ref role="1YBMHb" node="52nXqzMoTuP" resolve="op" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="nvevp" id="52nXqzMoUQ6" role="3cqZAp">
-        <node concept="3clFbS" id="52nXqzMoUQ7" role="nvhr_">
-          <node concept="3clFbJ" id="52nXqzMoUQ8" role="3cqZAp">
-            <node concept="2OqwBi" id="52nXqzMoUQ9" role="3clFbw">
-              <node concept="2X3wrD" id="52nXqzMoUQa" role="2Oq$k0">
-                <ref role="2X3Bk0" node="52nXqzMoUQq" resolve="type" />
-              </node>
-              <node concept="1mIQ4w" id="52nXqzMoUQb" role="2OqNvi">
-                <node concept="chp4Y" id="52nXqzMoVBI" role="cj9EA">
-                  <ref role="cht4Q" to="700h:7GwCuf2Wbm7" resolve="ImmutableSetType" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="52nXqzMoUQd" role="3clFbx">
-              <node concept="1ZobV4" id="52nXqzMoUQe" role="3cqZAp">
-                <node concept="mw_s8" id="52nXqzMoUQf" role="1ZfhKB">
-                  <node concept="2X3wrD" id="52nXqzMoUQg" role="mwGJk">
-                    <ref role="2X3Bk0" node="52nXqzMoUQq" resolve="type" />
-                  </node>
-                </node>
-                <node concept="mw_s8" id="52nXqzMoUQh" role="1ZfhK$">
-                  <node concept="1Z2H0r" id="52nXqzMoUQi" role="mwGJk">
-                    <node concept="2OqwBi" id="52nXqzMoUQj" role="1Z2MuG">
-                      <node concept="1YBJjd" id="52nXqzMoUQk" role="2Oq$k0">
-                        <ref role="1YBMHb" node="52nXqzMoTuP" resolve="op" />
-                      </node>
-                      <node concept="3TrEf2" id="52nXqzMoUQl" role="2OqNvi">
-                        <ref role="3Tt5mk" to="700h:thkha3aNUq" resolve="arg" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1Z2H0r" id="52nXqzMoUQm" role="nvjzm">
-          <node concept="2OqwBi" id="52nXqzMoUQn" role="1Z2MuG">
-            <node concept="1YBJjd" id="52nXqzMoUQo" role="2Oq$k0">
-              <ref role="1YBMHb" node="52nXqzMoTuP" resolve="op" />
-            </node>
-            <node concept="2qgKlT" id="52nXqzMoUQp" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-            </node>
-          </node>
-        </node>
-        <node concept="2X1qdy" id="52nXqzMoUQq" role="2X0Ygz">
-          <property role="TrG5h" value="type" />
-          <node concept="2jxLKc" id="52nXqzMoUQr" role="1tU5fm" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="52nXqzMoTuP" role="1YuTPh">
-      <property role="TrG5h" value="op" />
-      <ref role="1YaFvo" to="700h:52nXqzMoTke" resolve="ImmutableSetWithAllOp" />
-    </node>
-    <node concept="bXqS6" id="52nXqzMoTRV" role="bX4a1">
-      <node concept="3clFbS" id="52nXqzMoTRW" role="2VODD2">
-        <node concept="3cpWs6" id="52nXqzMoUsS" role="3cqZAp">
-          <node concept="3clFbT" id="52nXqzMoUF8" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>

@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4337,36 +4337,6 @@
       <node concept="3Tqbb2" id="53f0GWHYsMW" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
       </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="52nXqzMoTki">
-    <property role="3GE5qa" value="set.immutable" />
-    <ref role="13h7C2" to="700h:52nXqzMoTke" resolve="ImmutableSetWithAllOp" />
-    <node concept="13i0hz" id="52nXqzMoTo0" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="effectDescriptor" />
-      <ref role="13i0hy" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
-      <node concept="3Tm1VV" id="52nXqzMoTo1" role="1B3o_S" />
-      <node concept="3clFbS" id="52nXqzMoTo2" role="3clF47">
-        <node concept="3clFbF" id="52nXqzMoTo3" role="3cqZAp">
-          <node concept="BsUDl" id="52nXqzMoTo4" role="3clFbG">
-            <ref role="37wK5l" to="pbu6:6KxoTHgL$U0" resolve="deriveFrom" />
-            <node concept="2OqwBi" id="52nXqzMoTo5" role="37wK5m">
-              <node concept="3TrEf2" id="52nXqzMoTo6" role="2OqNvi">
-                <ref role="3Tt5mk" to="700h:thkha3aNUq" resolve="arg" />
-              </node>
-              <node concept="13iPFW" id="52nXqzMoTo7" role="2Oq$k0" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="52nXqzMoTo8" role="3clF45">
-        <ref role="3uigEE" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
-      </node>
-    </node>
-    <node concept="13hLZK" id="52nXqzMoTkj" role="13h7CW">
-      <node concept="3clFbS" id="52nXqzMoTkk" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="1yEri41sEJA">

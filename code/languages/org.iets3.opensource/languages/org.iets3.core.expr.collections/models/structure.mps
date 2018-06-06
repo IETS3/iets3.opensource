@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1000,16 +1001,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="527291771311128762" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="52nXqzMoTke">
-    <property role="EcuMT" value="5807380350487467278" />
-    <property role="3GE5qa" value="set.immutable" />
-    <property role="TrG5h" value="ImmutableSetWithAllOp" />
-    <property role="34LRSv" value="withAll" />
-    <ref role="1TJDcQ" node="1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
-    <node concept="PrWs8" id="52nXqzMoTkf" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
 </model>
