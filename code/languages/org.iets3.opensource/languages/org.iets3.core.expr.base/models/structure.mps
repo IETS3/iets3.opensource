@@ -1013,6 +1013,9 @@
     <node concept="PrWs8" id="ucawTXVgO4" role="PzmwI">
       <ref role="PrY4T" node="ucawTXUZmJ" resolve="IDeclarativelyInterpretable" />
     </node>
+    <node concept="PrWs8" id="1w6$bvvdsal" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
     <node concept="1TJgyi" id="SRvqsMUlki" role="1TKVEl">
       <property role="TrG5h" value="upperExcluding" />
       <property role="IQ2nx" value="1024425597317240082" />
