@@ -1773,6 +1773,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="1w6$bvvhW09" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvzANf" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvzANs" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvCL6b" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
 </model>
 
