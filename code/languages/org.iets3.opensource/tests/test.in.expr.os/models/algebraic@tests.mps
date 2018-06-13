@@ -19,6 +19,7 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="lvvj" ref="f:diff_old#r:109d7958-4308-4f2a-95cb-ea4731803298(test.in.expr.os.algebraic@tests@old)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -76,7 +77,9 @@
       <concept id="7782108600708168956" name="org.iets3.core.expr.base.structure.ReferenceType" flags="ng" index="nhQpQ">
         <child id="7782108600708168957" name="baseType" index="nhQpR" />
       </concept>
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
+        <child id="606861080870797310" name="expr" index="pf3We" />
+      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -1998,6 +2001,16 @@
             </node>
           </node>
           <node concept="39w5ZF" id="28$LOSBuBp4" role="1Kh3Cz">
+            <node concept="pf3Wd" id="28$LOSBuBp5" role="pf3W8">
+              <node concept="1KrJjp" id="28$LOSBuEEK" role="pf3We">
+                <node concept="1KrMWC" id="28$LOSBuEEI" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSAdrbK" resolve="NumLit" />
+                </node>
+                <node concept="30bXRB" id="28$LOSBuGDo" role="1KrJjn">
+                  <property role="30bXRw" value="0" />
+                </node>
+              </node>
+            </node>
             <node concept="UmaEC" id="28$LOSBuBp7" role="39w5ZE">
               <node concept="1af_rf" id="28$LOSBuBp8" role="UmaED">
                 <ref role="1afhQb" node="28$LOSBYfx9" resolve="bind" />
@@ -2013,7 +2026,6 @@
                 <ref role="1ZmhP3" node="28$LOSBuBp7" resolve="constant" />
               </node>
             </node>
-            <node concept="pf3Wd" id="5zQvLw7g6E7" role="pf3W8" />
           </node>
         </node>
         <node concept="1Kh3CC" id="28$LOSAQ6i_" role="1Kh3EZ">
@@ -2834,6 +2846,16 @@
             </node>
           </node>
           <node concept="39w5ZF" id="28$LOSC10h7" role="1Kh3Cz">
+            <node concept="pf3Wd" id="28$LOSC10h8" role="pf3W8">
+              <node concept="1KrJjp" id="28$LOSC10h9" role="pf3We">
+                <node concept="1KrMWC" id="28$LOSC10ha" role="1KrJmF">
+                  <ref role="1KrMWx" to="lvvj:5a_u3OzRiQA" resolve="NumLit" />
+                </node>
+                <node concept="30bXRB" id="28$LOSC10hb" role="1KrJjn">
+                  <property role="30bXRw" value="0" />
+                </node>
+              </node>
+            </node>
             <node concept="UmaEC" id="28$LOSC10hc" role="39w5ZE">
               <node concept="1af_rf" id="28$LOSC10hd" role="UmaED">
                 <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
@@ -2849,7 +2871,6 @@
                 <ref role="1ZmhP3" node="28$LOSC10hc" resolve="constant" />
               </node>
             </node>
-            <node concept="pf3Wd" id="5zQvLw7g6E8" role="pf3W8" />
           </node>
         </node>
         <node concept="1Kh3CC" id="28$LOSC10hi" role="1Kh3EZ">
@@ -2990,6 +3011,13 @@
             <node concept="1KhKv7" id="28$LOSC4ZlU" role="1KrJjn" />
           </node>
           <node concept="39w5ZF" id="28$LOSC5vxH" role="1Kh3Cz">
+            <node concept="pf3Wd" id="28$LOSC5vxI" role="pf3W8">
+              <node concept="1KrJjp" id="28$LOSC5PtM" role="pf3We">
+                <node concept="1KrMWC" id="28$LOSC5PtK" role="1KrJmF">
+                  <ref role="1KrMWx" to="lvvj:28$LOSC5NMm" resolve="ErrorType" />
+                </node>
+              </node>
+            </node>
             <node concept="UmaEC" id="28$LOSC5wkP" role="39w5ZE">
               <node concept="1af_rf" id="28$LOSC507R" role="UmaED">
                 <ref role="1afhQb" node="28$LOSC0HYs" resolve="binding" />
@@ -3008,7 +3036,6 @@
                 </node>
               </node>
             </node>
-            <node concept="pf3Wd" id="5zQvLw7g6E9" role="pf3W8" />
           </node>
         </node>
         <node concept="1Kh3CC" id="5a_u3OzSLX8" role="1Kh3EZ">
@@ -4669,6 +4696,9 @@
             <node concept="3izI60" id="7aipPVpBunZ" role="3iAY4F">
               <node concept="1aduha" id="7aipPVpBE7_" role="3izI61">
                 <node concept="39w5ZF" id="7aipPVpBKvu" role="1aduh9">
+                  <node concept="pf3Wd" id="7aipPVpBKvv" role="pf3W8">
+                    <node concept="UmHTt" id="7aipPVpBNME" role="pf3We" />
+                  </node>
                   <node concept="30dDZf" id="7aipPVpEjCj" role="39w5ZG">
                     <node concept="30dDZf" id="7aipPVpEl7s" role="30dEsF">
                       <node concept="30bdrP" id="7aipPVpElFd" role="30dEs_">
@@ -4701,7 +4731,6 @@
                       <property role="pfQqC" value="err" />
                     </node>
                   </node>
-                  <node concept="pf3Wd" id="5zQvLw7g6Ea" role="pf3W8" />
                 </node>
               </node>
             </node>
