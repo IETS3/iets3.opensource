@@ -15,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.dataflow/org.iets3.core.expr.dataflow.mpl" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.datetime/org.iets3.core.expr.datetime.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.doc/org.iets3.core.expr.doc.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lookup/org.iets3.core.expr.lookup.mpl" folder="expr.lang-advanced" />
@@ -28,6 +29,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes.tests/org.iets3.core.expr.simpleTypes.tests.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.statemachines/org.iets3.core.expr.statemachines.mpl" folder="expr.lang-stateful" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.temporal/org.iets3.core.expr.temporal.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tracing/org.iets3.core.expr.tracing.mpl" folder="expr.lang-core" />
@@ -48,6 +50,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.dataflow.interpreter/org.iets3.core.expr.dataflow.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.datetime.interpreter/org.iets3.core.expr.datetime.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.doc.plugin/org.iets3.core.expr.doc.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.interpreter/org.iets3.core.expr.lambda.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugins" />
@@ -63,6 +66,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.repl.plugin/org.iets3.core.expr.repl.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.simpleTypes.interpreter/org.iets3.core.expr.simpleTypes.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.statemachines.interpreter/org.iets3.core.expr.statemachines.interpreter.msd" folder="expr.lang-stateful" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.temporal.interpreter/org.iets3.core.expr.temporal.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.tests.interpreter/org.iets3.core.expr.tests.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.toplevel.interpreter/org.iets3.core.expr.toplevel.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.lib.interpreter/org.iets3.core.expr.typetags.lib.interpreter.msd" folder="expr.lang-advanced" />
