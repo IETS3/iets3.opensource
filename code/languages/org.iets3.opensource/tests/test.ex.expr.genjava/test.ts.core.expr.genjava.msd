@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.test.genjava" uuid="e5887b01-01f5-48e7-aad4-b47a855bc3c2" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.core.expr.genjava" uuid="e5887b01-01f5-48e7-aad4-b47a855bc3c2" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -92,7 +92,7 @@
     <module reference="cd87ddab-6434-448e-a011-1e1c898de18e(org.iets3.core.expr.statemachines)" version="0" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
     <module reference="5a8dae31-5452-4a2a-86c7-5335f6e6e7ee(org.iets3.genjava)" version="0" />
-    <module reference="e5887b01-01f5-48e7-aad4-b47a855bc3c2(org.iets3.test.genjava)" version="0" />
+    <module reference="e5887b01-01f5-48e7-aad4-b47a855bc3c2(test.ts.core.expr.genjava)" version="0" />
   </dependencyVersions>
 </solution>
 

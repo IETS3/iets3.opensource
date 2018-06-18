@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c10a8457-54e9-4945-8e8f-324268109195(org.iets3.test.genjava.expr@tests)">
+<model ref="r:c10a8457-54e9-4945-8e8f-324268109195(test.ts.core.expr.genjava.expr@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
