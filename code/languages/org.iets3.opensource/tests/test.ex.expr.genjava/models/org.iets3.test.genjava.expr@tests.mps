@@ -3,14 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
     <devkit ref="04b65b28-381b-4a5d-aec3-3ccd0071d372(org.iets3.genjava.devkit)" />
   </languages>
-  <imports>
-    <import index="et52" ref="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)" />
-    <import index="4c02" ref="708a03ad-8699-43c9-821a-6cd00b68e9f8/java:fj.function(org.iets3.core.expr.genjava.functionalJava/)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">

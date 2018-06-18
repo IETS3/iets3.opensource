@@ -3,16 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
     <devkit ref="04b65b28-381b-4a5d-aec3-3ccd0071d372(org.iets3.genjava.devkit)" />
   </languages>
-  <imports>
-    <import index="nzro" ref="r:4742b293-8a9d-428b-8e8c-05978fbb405b(org.iets3.core.expr.genjava.toplevel.rt.rt)" />
-    <import index="4c02" ref="708a03ad-8699-43c9-821a-6cd00b68e9f8/java:fj.function(org.iets3.core.expr.genjava.functionalJava/)" />
-  </imports>
+  <imports />
   <registry>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
