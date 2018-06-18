@@ -14,6 +14,7 @@
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -203,6 +204,9 @@
     </node>
     <node concept="PrWs8" id="21ieoTcAswn" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
+    </node>
+    <node concept="PrWs8" id="78zh7PnHVAH" role="PzmwI">
+      <ref role="PrY4T" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
     </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />

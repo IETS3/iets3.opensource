@@ -65,7 +65,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.simpleTypes.interpreter/org.iets3.core.expr.simpleTypes.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.statemachines.interpreter/org.iets3.core.expr.statemachines.interpreter.msd" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.tests.interpreter/org.iets3.core.expr.tests.interpreter.msd" folder="expr.lang-core" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.tests.rt/org.iets3.core.expr.tests.rt.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.toplevel.interpreter/org.iets3.core.expr.toplevel.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.lib.interpreter/org.iets3.core.expr.typetags.lib.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.si/org.iets3.core.expr.typetags.units.si.msd" folder="expr.lang-advanced" />

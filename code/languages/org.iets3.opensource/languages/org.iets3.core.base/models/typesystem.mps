@@ -36,6 +36,10 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -171,7 +175,7 @@
                         <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                       </node>
                       <node concept="2qgKlT" id="1996aX85IEq" role="2OqNvi">
-                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeSolved" />
+                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeChecked" />
                       </node>
                     </node>
                     <node concept="1Wc70l" id="2jITtfD$1z$" role="3uHU7B">
@@ -552,6 +556,31 @@
                           <node concept="liA8E" id="5zG5$LyexhQ" role="2OqNvi">
                             <ref role="37wK5l" to="gdgh:5zG5$Lyex2e" resolve="isOk" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3eNFk2" id="mhgVwvWYkG" role="3eNLev">
+                      <node concept="3clFbS" id="mhgVwvWYkI" role="3eOfB_">
+                        <node concept="Dpp1Q" id="mhgVwvX2_a" role="3cqZAp">
+                          <node concept="2OqwBi" id="mhgVwvX2Gn" role="Dpw9R">
+                            <node concept="37vLTw" id="mhgVwvX2_v" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
+                            </node>
+                            <node concept="liA8E" id="mhgVwvX2Rs" role="2OqNvi">
+                              <ref role="37wK5l" to="gdgh:5zG5$LyexiK" resolve="getErrorMessage" />
+                            </node>
+                          </node>
+                          <node concept="1YBJjd" id="mhgVwvX2Te" role="2OEOjV">
+                            <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2ZW3vV" id="mhgVwvXRPW" role="3eO9$A">
+                        <node concept="3uibUv" id="mhgVwvYdQq" role="2ZW6by">
+                          <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
+                        </node>
+                        <node concept="37vLTw" id="mhgVwvXQEN" role="2ZW6bz">
+                          <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
                         </node>
                       </node>
                     </node>
