@@ -24,9 +24,9 @@
     <import index="nzro" ref="r:4742b293-8a9d-428b-8e8c-05978fbb405b(org.iets3.core.expr.genjava.toplevel.rt.rt)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
@@ -359,6 +359,10 @@
       </concept>
       <concept id="2721957369897614808" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef" flags="nn" index="1bhEwm">
         <reference id="2721957369897614810" name="varmacro" index="1bhEwk" />
+      </concept>
+      <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
+        <reference id="1216860049628" name="label" index="1iwH77" />
+        <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
@@ -706,13 +710,13 @@
     </node>
     <node concept="2rT7sh" id="2qRo6DhZXuC" role="2rTMjI">
       <property role="TrG5h" value="Funktion" />
-      <ref role="2rTdP9" to="yv47:49WTic8f4iz" resolve="Function" />
       <ref role="2rZz_L" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
+      <ref role="2rTdP9" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
     <node concept="2rT7sh" id="10wUh3O_Gxg" role="2rTMjI">
       <property role="TrG5h" value="RecordDeclaration" />
-      <ref role="2rTdP9" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
+      <ref role="2rTdP9" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
     <node concept="2rT7sh" id="10wUh3OVFnV" role="2rTMjI">
       <property role="TrG5h" value="Typedef" />
@@ -16958,16 +16962,17 @@
                 <property role="2qtEX8" value="classifier" />
                 <node concept="3$xsQk" id="oj24_o0wJH" role="3$ytzL">
                   <node concept="3clFbS" id="oj24_o0wJI" role="2VODD2">
-                    <node concept="3clFbF" id="oj24_o0wLg" role="3cqZAp">
-                      <node concept="2OqwBi" id="oj24_o0yci" role="3clFbG">
-                        <node concept="2OqwBi" id="oj24_o0x3L" role="2Oq$k0">
-                          <node concept="30H73N" id="oj24_o0wLf" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="oj24_o0xit" role="2OqNvi">
-                            <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                    <node concept="3clFbF" id="1nnMGjec5eN" role="3cqZAp">
+                      <node concept="2OqwBi" id="1nnMGjec5So" role="3clFbG">
+                        <node concept="1iwH7S" id="1nnMGjec5eM" role="2Oq$k0" />
+                        <node concept="1iwH70" id="1nnMGjec64k" role="2OqNvi">
+                          <ref role="1iwH77" node="10wUh3O_Gxg" resolve="RecordDeclaration" />
+                          <node concept="2OqwBi" id="1nnMGjec6BE" role="1iwH7V">
+                            <node concept="30H73N" id="1nnMGjec6nF" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="1nnMGjec6Uf" role="2OqNvi">
+                              <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                            </node>
                           </node>
-                        </node>
-                        <node concept="3TrcHB" id="oj24_o0z3J" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
                     </node>
