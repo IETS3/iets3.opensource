@@ -88,9 +88,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.in.core.expr.genjava/test.in.core.expr.genjava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.expr.genjava/test.ts.core.expr.genjava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os/test.ts.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ui.expr.os/test.ui.expr.os.msd" folder="expr.tests" />
