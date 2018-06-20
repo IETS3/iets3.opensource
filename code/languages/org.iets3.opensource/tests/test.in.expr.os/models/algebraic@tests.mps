@@ -19,6 +19,7 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="lvvj" ref="f:diff_old#r:109d7958-4308-4f2a-95cb-ea4731803298(test.in.expr.os.algebraic@tests@old)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -27,7 +28,7 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
+      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
@@ -44,10 +45,10 @@
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
       </concept>
-      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ImmutableListLiteral" flags="ng" index="3iBYfx">
+      <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
         <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
       </concept>
-      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
+      <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
       <concept id="4618483580248255217" name="org.iets3.core.expr.collections.structure.UnpackOptionsOp" flags="ng" index="3LGWMD" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
@@ -2003,7 +2004,7 @@
             <node concept="pf3Wd" id="28$LOSBuBp5" role="pf3W8">
               <node concept="1KrJjp" id="28$LOSBuEEK" role="pf3We">
                 <node concept="1KrMWC" id="28$LOSBuEEI" role="1KrJmF">
-                  <ref role="1KrMWx" node="28$LOSAdrbK" resolve="NumLit" />
+                  <ref role="1KrMWx" to="lvvj:28$LOSAdrbK" resolve="NumLit" />
                 </node>
                 <node concept="30bXRB" id="28$LOSBuGDo" role="1KrJjn">
                   <property role="30bXRw" value="0" />
@@ -2848,7 +2849,7 @@
             <node concept="pf3Wd" id="28$LOSC10h8" role="pf3W8">
               <node concept="1KrJjp" id="28$LOSC10h9" role="pf3We">
                 <node concept="1KrMWC" id="28$LOSC10ha" role="1KrJmF">
-                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
+                  <ref role="1KrMWx" to="lvvj:5a_u3OzRiQA" resolve="NumLit" />
                 </node>
                 <node concept="30bXRB" id="28$LOSC10hb" role="1KrJjn">
                   <property role="30bXRw" value="0" />
@@ -3013,7 +3014,7 @@
             <node concept="pf3Wd" id="28$LOSC5vxI" role="pf3W8">
               <node concept="1KrJjp" id="28$LOSC5PtM" role="pf3We">
                 <node concept="1KrMWC" id="28$LOSC5PtK" role="1KrJmF">
-                  <ref role="1KrMWx" node="28$LOSC5NMm" resolve="ErrorType" />
+                  <ref role="1KrMWx" to="lvvj:28$LOSC5NMm" resolve="ErrorType" />
                 </node>
               </node>
             </node>
