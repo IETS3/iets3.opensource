@@ -971,6 +971,7 @@
     <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
+    <node concept="asaX9" id="iEqaF0KzEp" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="mQGcCvDeqQ">
     <property role="EcuMT" value="411710798111762102" />
@@ -989,12 +990,63 @@
     <node concept="PrWs8" id="mQGcCvAe_r" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="asaX9" id="iEqaF0KzEs" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="1sudaVNn5LK">
     <property role="EcuMT" value="1665826838185532528" />
     <property role="TrG5h" value="ITopLevelContainer" />
     <node concept="PrWs8" id="1sudaVNn6BU" role="PrDN$">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3ijD2AhNGn5">
+    <property role="EcuMT" value="3788552209995580869" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IToplevelExprContentContainer" />
+    <node concept="PrWs8" id="3ijD2AhNGn6" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ijD2AhNGn8">
+    <property role="EcuMT" value="3788552209995580872" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="AbstractToplevelExprAdapter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ijD2AhNIaE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyj" id="3ijD2AhNI83" role="1TKVEi">
+      <property role="IQ2ns" value="3788552209995588099" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toplevelExprContent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="iEqaF0KzEw">
+    <property role="EcuMT" value="336196204780206752" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IFunctionLikeContainer" />
+    <node concept="PrWs8" id="iEqaF0KzEx" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="iEqaF0KzE$">
+    <property role="EcuMT" value="336196204780206756" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AbstractFunctionLikeAdapter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="iEqaF0KAvN" role="1TKVEi">
+      <property role="IQ2ns" value="336196204780218355" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="functionLike" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+    </node>
+    <node concept="PrWs8" id="iEqaF0KzE_" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
 </model>

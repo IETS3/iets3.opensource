@@ -4865,6 +4865,18 @@
             <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1$nPwyh7Jrh" role="3bR37C">
+          <node concept="3bR9La" id="1$nPwyh7Jri" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="YMJl2BN_Xq" resolve="org.iets3.core.expr.statemachines" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1$nPwyh7Jrj" role="3bR37C">
+          <node concept="3bR9La" id="1$nPwyh7Jrk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396eX" role="2G$12L">
         <property role="BnDLt" value="true" />

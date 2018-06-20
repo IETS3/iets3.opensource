@@ -3315,5 +3315,31 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="aqKnT" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
   </node>
+  <node concept="24kQdi" id="3ijD2AhNI8d">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="1XX52x" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
+    <node concept="1kIj98" id="3ijD2AhNI8i" role="2wV5jI">
+      <node concept="3F1sOY" id="3ijD2AhNI8r" role="1kIj9b">
+        <ref role="1NtTu8" to="yv47:3ijD2AhNI83" resolve="toplevelExprContent" />
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="3ijD2AhNIar">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="aqKnT" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
+  </node>
+  <node concept="24kQdi" id="iEqaF0SzSA">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="1XX52x" to="yv47:iEqaF0KzE$" resolve="AbstractFunctionLikeAdapter" />
+    <node concept="1kIj98" id="iEqaF0SzSG" role="2wV5jI">
+      <node concept="3F1sOY" id="iEqaF0SzSS" role="1kIj9b">
+        <ref role="1NtTu8" to="yv47:iEqaF0KAvN" resolve="functionLike" />
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="iEqaF0SzU7">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="aqKnT" to="yv47:iEqaF0KzE$" resolve="AbstractFunctionLikeAdapter" />
+  </node>
 </model>
 
