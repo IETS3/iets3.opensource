@@ -211,6 +211,12 @@
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
+    <node concept="1TJgyj" id="1KPsfaLHqZZ" role="1TKVEi">
+      <property role="IQ2ns" value="2032654994493517823" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="scoper" />
+      <ref role="20lvS9" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WmRVXt">
     <property role="TrG5h" value="NamedAssertRef" />

@@ -98,6 +98,9 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -463,6 +466,31 @@
               </node>
             </node>
             <node concept="3x8VRR" id="5kGo$yLJ2oX" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1KPsfaLHzM2">
+    <ref role="1M2myG" to="av4b:ub9nkyK62f" resolve="TestSuite" />
+    <node concept="1N5Pfh" id="1KPsfaLHzM3" role="1Mr941">
+      <ref role="1N5Vy1" to="av4b:1KPsfaLHqZZ" resolve="scoper" />
+      <node concept="3dgokm" id="1KPsfaLHzM5" role="1N6uqs">
+        <node concept="3clFbS" id="1KPsfaLHzM6" role="2VODD2">
+          <node concept="3clFbF" id="1KPsfaLHAo6" role="3cqZAp">
+            <node concept="2YIFZM" id="1KPsfaLHAzM" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1KPsfaLHBCv" role="37wK5m">
+                <node concept="2OqwBi" id="1KPsfaLHB88" role="2Oq$k0">
+                  <node concept="2rP1CM" id="1KPsfaLHAVE" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="1KPsfaLHBoO" role="2OqNvi" />
+                </node>
+                <node concept="1j9C0f" id="1KPsfaLHBP5" role="2OqNvi">
+                  <ref role="1j9C0d" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
