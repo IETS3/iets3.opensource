@@ -275,6 +275,7 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -644,6 +645,62 @@
         </node>
         <node concept="9aQIb" id="49WTic8gDnv" role="9aQIa">
           <node concept="3clFbS" id="49WTic8gDnw" role="9aQI4">
+            <node concept="3SKdUt" id="1bBNgGy$$uk" role="3cqZAp">
+              <node concept="3SKdUq" id="1bBNgGy$$um" role="3SKWNk">
+                <property role="3SKdUp" value="check type of receiver" />
+              </node>
+            </node>
+            <node concept="1ZobV4" id="1bBNgGy$lhk" role="3cqZAp">
+              <node concept="mw_s8" id="1bBNgGy$lj$" role="1ZfhKB">
+                <node concept="1Z2H0r" id="1bBNgGy$ljw" role="mwGJk">
+                  <node concept="2OqwBi" id="1bBNgGy$sHU" role="1Z2MuG">
+                    <node concept="2OqwBi" id="1bBNgGy$nCz" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1bBNgGy$lxb" role="2Oq$k0">
+                        <node concept="1YBJjd" id="1bBNgGy$ljV" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2uR5X5a$5cU" resolve="efc" />
+                        </node>
+                        <node concept="3TrEf2" id="1bBNgGy$m_h" role="2OqNvi">
+                          <ref role="3Tt5mk" to="yv47:2uR5X5azSbC" resolve="extFun" />
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="1bBNgGy$o_K" role="2OqNvi">
+                        <ref role="3TtcxE" to="zzzn:49WTic8eSCZ" resolve="args" />
+                      </node>
+                    </node>
+                    <node concept="34jXtK" id="1bBNgGy$xNR" role="2OqNvi">
+                      <node concept="3cmrfG" id="1bBNgGy$ymj" role="25WWJ7">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="mw_s8" id="1bBNgGy$lhn" role="1ZfhK$">
+                <node concept="1Z2H0r" id="1bBNgGy$jCD" role="mwGJk">
+                  <node concept="2OqwBi" id="1bBNgGy$iHe" role="1Z2MuG">
+                    <node concept="1PxgMI" id="1bBNgGy$i15" role="2Oq$k0">
+                      <node concept="chp4Y" id="1bBNgGy$iv4" role="3oSUPX">
+                        <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                      </node>
+                      <node concept="2OqwBi" id="1bBNgGy$h0O" role="1m5AlR">
+                        <node concept="1YBJjd" id="1bBNgGy$gNh" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2uR5X5a$5cU" resolve="efc" />
+                        </node>
+                        <node concept="1mfA1w" id="1bBNgGy$hK8" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="1bBNgGy$jvT" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="1bBNgGy$$yJ" role="3cqZAp">
+              <node concept="3SKdUq" id="1bBNgGy$$yL" role="3SKWNk">
+                <property role="3SKdUp" value="check types of remaining args" />
+              </node>
+            </node>
             <node concept="2Gpval" id="49WTic8gAkA" role="3cqZAp">
               <node concept="2GrKxI" id="49WTic8gAkC" role="2Gsz3X">
                 <property role="TrG5h" value="a" />
@@ -2561,7 +2618,7 @@
                 <node concept="mw_s8" id="7cphKbKuHoS" role="1ZfhKB">
                   <node concept="2pJPEk" id="7cphKbKuHoQ" role="mwGJk">
                     <node concept="2pJPED" id="7cphKbKuHp3" role="2pJPEn">
-                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                      <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
                       <node concept="2pIpSj" id="7cphKbKuHrC" role="2pJxcM">
                         <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                         <node concept="36biLy" id="7cphKbKuHrK" role="2pJxcZ">
