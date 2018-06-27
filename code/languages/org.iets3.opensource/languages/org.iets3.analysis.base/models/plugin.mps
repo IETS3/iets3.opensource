@@ -2,9 +2,9 @@
 <model ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -1323,10 +1323,10 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="context" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="7tOaVPfBnPI" role="1B3o_S" />
       <node concept="3uibUv" id="3Xx5vcO9Iil" role="1tU5fm">
         <ref role="3uigEE" node="5$uffF3OhdW" resolve="SMTLIBTranslationContext" />
       </node>
+      <node concept="3Tm1VV" id="7tOaVPfBnPI" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6rcydJjjdqD" role="jymVt" />
     <node concept="3clFbW" id="6rcydJjiTE4" role="jymVt">
@@ -1982,10 +1982,10 @@
   <node concept="312cEu" id="2GQBRFCpFTQ">
     <property role="TrG5h" value="SolverTimeoutException" />
     <property role="3GE5qa" value="" />
-    <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
     <node concept="3uibUv" id="5ajXTE5TPHi" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
+    <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
     <node concept="2tJIrI" id="2GQBRFCpFTT" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFU0" role="jymVt" />
     <node concept="3clFbW" id="2GQBRFCpFU1" role="jymVt">
@@ -2030,6 +2030,23 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4dD4xJJVaf7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1bBNgGyK0u$" role="jymVt" />
+    <node concept="3clFb_" id="1bBNgGyK06E" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getErrorMessageWithDetails" />
+      <node concept="17QB3L" id="1bBNgGyK06F" role="3clF45" />
+      <node concept="3Tm1VV" id="1bBNgGyK06G" role="1B3o_S" />
+      <node concept="3clFbS" id="1bBNgGyK06K" role="3clF47">
+        <node concept="3clFbF" id="1bBNgGyK0hR" role="3cqZAp">
+          <node concept="1rXfSq" id="1bBNgGyK0hQ" role="3clFbG">
+            <ref role="37wK5l" node="4dD4xJJVaf1" resolve="getErrorMessage" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1bBNgGyK06L" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
