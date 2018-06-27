@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.genjava.stateMachineExample.devkit/org.iets3.core.expr.genjava.stateMachineExample.devkit.devkit" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.iets3.gen2java.devkit/org.iets3.genjava.devkit.devkit" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.base/org.iets3.analysis.base.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
@@ -16,6 +18,13 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.dataflow/org.iets3.core.expr.dataflow.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.doc/org.iets3.core.expr.doc.mpl" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.base/org.iets3.core.expr.genjava.base.mpl" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.simpleTypes/org.iets3.core.expr.genjava.simpleTypes.mpl" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/org.iets3.core.expr.genjava.stateMachineExample.mpl" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/runtime/org.iets3.core.expr.genjava.stateMachineExample.runtime.msd" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.stateMachineExample/sandbox/org.iets3.core.expr.genjava.stateMachineExample.sandbox.msd" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.tests/org.iets3.core.expr.genjava.tests.mpl" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.genjava.toplevel/org.iets3.core.expr.genjava.toplevel.mpl" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.lookup/org.iets3.core.expr.lookup.mpl" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr.lang-advanced" />
@@ -49,6 +58,12 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.dataflow.interpreter/org.iets3.core.expr.dataflow.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.doc.plugin/org.iets3.core.expr.doc.plugin.msd" folder="expr.plugins" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.base.rt/org.iets3.core.expr.genjava.base.rt.msd" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.functionalJava/org.iets3.core.expr.genjava.functionalJava.msd" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.simpleTypes.rt/org.iets3.core.expr.genjava.simpleTypes.rt.msd" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.stateMachineExample.genplan/org.iets3.core.expr.genjava.stateMachineExample.genplan.msd" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.tests.rt/org.iets3.core.expr.genjava.tests.rt.msd" folder="expr.genjava" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.toplevel.rt/org.iets3.core.expr.genjava.toplevel.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.interpreter/org.iets3.core.expr.lambda.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lookup.interpreter/org.iets3.core.expr.lookup.interpreter.msd" folder="expr.lang-advanced" />
@@ -68,14 +83,17 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.lib.interpreter/org.iets3.core.expr.typetags.lib.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.typetags.units.si/org.iets3.core.expr.typetags.units.si.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.util.interpreter/org.iets3.core.expr.util.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.genjava/org.iets3.genjava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.in.core.expr.genjava/test.in.core.expr.genjava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.iets3.core.comments/test.org.iets3.core.comments.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os/test.ts.expr.os.msd" folder="expr.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ui.expr.os/test.ui.expr.os.msd" folder="expr.tests" />
     </projectModules>
   </component>
 </project>
