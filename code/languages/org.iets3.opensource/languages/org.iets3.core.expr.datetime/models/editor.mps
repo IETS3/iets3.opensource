@@ -3,12 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -16,6 +18,9 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -68,6 +73,11 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -136,7 +146,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUXsgI">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
     <node concept="3EZMnI" id="3nGzaxUXsgM" role="2wV5jI">
       <node concept="2iRfu4" id="3nGzaxUXsgN" role="2iSdaV" />
@@ -158,7 +168,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUXRjW">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXNiV" resolve="YearRangeType" />
     <node concept="3F0ifn" id="3nGzaxUXRjY" role="2wV5jI">
       <property role="3F0ifm" value="year" />
@@ -166,21 +176,21 @@
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUXXm8">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.toDate" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
     <node concept="3F0ifn" id="3nGzaxUXXma" role="2wV5jI">
       <property role="3F0ifm" value="begin" />
     </node>
   </node>
   <node concept="24kQdi" id="3nGzaxUXXmA">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.toDate" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXXmc" resolve="EndOp" />
     <node concept="3F0ifn" id="3nGzaxUXXmC" role="2wV5jI">
       <property role="3F0ifm" value="end" />
     </node>
   </node>
   <node concept="24kQdi" id="1Mp62pP0lGR">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
     <node concept="3F0ifn" id="1Mp62pP0lGW" role="2wV5jI">
       <property role="3F0ifm" value="month" />
@@ -188,7 +198,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Mp62pP0lNo">
-    <property role="3GE5qa" value="range" />
+    <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
     <node concept="3EZMnI" id="1Mp62pP0lNt" role="2wV5jI">
       <node concept="2iRfu4" id="1Mp62pP0lNu" role="2iSdaV" />
@@ -219,6 +229,94 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQE2pmQ">
+    <property role="3GE5qa" value="delta.days" />
+    <ref role="1XX52x" to="mi3w:7aRvJQE2nO_" resolve="DaysDeltaLiteral" />
+    <node concept="3EZMnI" id="7aRvJQE2pn8" role="2wV5jI">
+      <node concept="2iRfu4" id="7aRvJQE2pn9" role="2iSdaV" />
+      <node concept="1kIj98" id="7aRvJQE2pmS" role="3EZMnx">
+        <node concept="3F1sOY" id="7aRvJQE2pn4" role="1kIj9b">
+          <ref role="1NtTu8" to="mi3w:7aRvJQE2nOA" resolve="value" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7aRvJQE2pnt" role="3EZMnx">
+        <property role="3F0ifm" value="days" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQE5gM3">
+    <property role="3GE5qa" value="range.iterate" />
+    <ref role="1XX52x" to="mi3w:7aRvJQE5bW1" resolve="NextOp" />
+    <node concept="3F0ifn" id="7aRvJQE5gM5" role="2wV5jI">
+      <property role="3F0ifm" value="next" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQE7ee2">
+    <property role="3GE5qa" value="range.iterate" />
+    <ref role="1XX52x" to="mi3w:7aRvJQE7edC" resolve="PrevOp" />
+    <node concept="3F0ifn" id="7aRvJQE7ee4" role="2wV5jI">
+      <property role="3F0ifm" value="prev" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQEbcWa">
+    <property role="3GE5qa" value="delta.years" />
+    <ref role="1XX52x" to="mi3w:7aRvJQEbcVK" resolve="YearsDeltaLiteral" />
+    <node concept="3EZMnI" id="7aRvJQEbcWc" role="2wV5jI">
+      <node concept="2iRfu4" id="7aRvJQEbcWd" role="2iSdaV" />
+      <node concept="1kIj98" id="7aRvJQEbcWe" role="3EZMnx">
+        <node concept="3F1sOY" id="7aRvJQEbcWf" role="1kIj9b">
+          <ref role="1NtTu8" to="mi3w:7aRvJQE2nOA" resolve="value" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7aRvJQEbcWg" role="3EZMnx">
+        <property role="3F0ifm" value="years" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQEcbS3">
+    <property role="3GE5qa" value="delta.months" />
+    <ref role="1XX52x" to="mi3w:7aRvJQEcbRD" resolve="MonthsDeltaLiteral" />
+    <node concept="3EZMnI" id="7aRvJQEcbS5" role="2wV5jI">
+      <node concept="2iRfu4" id="7aRvJQEcbS6" role="2iSdaV" />
+      <node concept="1kIj98" id="7aRvJQEcbS7" role="3EZMnx">
+        <node concept="3F1sOY" id="7aRvJQEcbS8" role="1kIj9b">
+          <ref role="1NtTu8" to="mi3w:7aRvJQE2nOA" resolve="value" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7aRvJQEcbS9" role="3EZMnx">
+        <property role="3F0ifm" value="months" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQEdQZK">
+    <property role="3GE5qa" value="delta.weeks" />
+    <ref role="1XX52x" to="mi3w:7aRvJQEdQZm" resolve="WeeksDeltaLiteral" />
+    <node concept="3EZMnI" id="7aRvJQEdQZM" role="2wV5jI">
+      <node concept="2iRfu4" id="7aRvJQEdQZN" role="2iSdaV" />
+      <node concept="1kIj98" id="7aRvJQEdQZO" role="3EZMnx">
+        <node concept="3F1sOY" id="7aRvJQEdQZP" role="1kIj9b">
+          <ref role="1NtTu8" to="mi3w:7aRvJQE2nOA" resolve="value" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7aRvJQEdQZQ" role="3EZMnx">
+        <property role="3F0ifm" value="weeks" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQEfB5U">
+    <property role="3GE5qa" value="date.op" />
+    <ref role="1XX52x" to="mi3w:7aRvJQEfB5t" resolve="DateOp" />
+    <node concept="PMmxH" id="7aRvJQEfB5W" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7aRvJQEgTFC">
+    <property role="3GE5qa" value="range" />
+    <ref role="1XX52x" to="mi3w:7aRvJQEgTEX" resolve="MonthRangeYearOp" />
+    <node concept="3F0ifn" id="7aRvJQEgTFV" role="2wV5jI">
+      <property role="3F0ifm" value="yearRange" />
     </node>
   </node>
 </model>

@@ -88,5 +88,59 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7aRvJQEfB6o">
+    <property role="3GE5qa" value="date.op" />
+    <ref role="1M2myG" to="mi3w:7aRvJQEfB5t" resolve="DateOp" />
+    <node concept="9S07l" id="7aRvJQEfB6p" role="9Vyp8">
+      <node concept="3clFbS" id="7aRvJQEfB6q" role="2VODD2">
+        <node concept="3clFbF" id="7aRvJQEfBdJ" role="3cqZAp">
+          <node concept="2OqwBi" id="7aRvJQEfBRr" role="3clFbG">
+            <node concept="1PxgMI" id="7aRvJQEfBpv" role="2Oq$k0">
+              <node concept="chp4Y" id="7aRvJQEfBxe" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="7aRvJQEfBdI" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="7aRvJQEfCh$" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="7aRvJQEfDPI" role="37wK5m">
+                <ref role="35c_gD" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+              </node>
+              <node concept="3clFbT" id="7aRvJQEfDh3" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7aRvJQEgTZS">
+    <property role="3GE5qa" value="range" />
+    <ref role="1M2myG" to="mi3w:7aRvJQEgTEX" resolve="MonthRangeYearOp" />
+    <node concept="9S07l" id="7aRvJQEgU0a" role="9Vyp8">
+      <node concept="3clFbS" id="7aRvJQEgU0b" role="2VODD2">
+        <node concept="3clFbF" id="7aRvJQEgU7w" role="3cqZAp">
+          <node concept="2OqwBi" id="7aRvJQEgUOS" role="3clFbG">
+            <node concept="1PxgMI" id="7aRvJQEgUmW" role="2Oq$k0">
+              <node concept="chp4Y" id="7aRvJQEgUuF" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="7aRvJQEgU7v" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="7aRvJQEgVf1" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="7aRvJQEgVuy" role="37wK5m">
+                <ref role="35c_gD" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
+              </node>
+              <node concept="3clFbT" id="7aRvJQEgWd$" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
