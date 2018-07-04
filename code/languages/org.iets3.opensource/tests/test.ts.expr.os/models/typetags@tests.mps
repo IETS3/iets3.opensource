@@ -936,13 +936,6 @@
               <node concept="1adzI2" id="SRvqsMU7I1" role="1afhQ5">
                 <ref role="1adwt6" node="SRvqsMU6$h" resolve="regularString" />
               </node>
-              <node concept="7CXmI" id="1Vx$q3aW6mq" role="lGtFl">
-                <node concept="1TM$A" id="1Vx$q3aW6mr" role="7EUXB">
-                  <node concept="2PYRI3" id="1Vx$q3aW6ms" role="3lydEf">
-                    <ref role="39XzEq" to="iyw:3hsdwqFI3rS" />
-                  </node>
-                </node>
-              </node>
             </node>
             <node concept="2zH6wq" id="SRvqsMU7_w" role="1aduh9" />
           </node>
