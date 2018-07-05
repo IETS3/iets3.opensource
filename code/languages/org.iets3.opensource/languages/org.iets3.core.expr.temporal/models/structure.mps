@@ -379,5 +379,11 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6C2wkq6Pc$j">
+    <property role="EcuMT" value="7638810057883568403" />
+    <property role="TrG5h" value="JoinAdjacentOp" />
+    <property role="34LRSv" value="joinAdjacent" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+  </node>
 </model>
 

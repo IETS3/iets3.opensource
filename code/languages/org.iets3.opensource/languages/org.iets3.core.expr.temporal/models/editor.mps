@@ -157,7 +157,7 @@
       <node concept="3F0ifn" id="3wXkdMVKDGG" role="3EZMnx">
         <property role="3F0ifm" value="TT" />
         <node concept="Vb9p2" id="3wXkdMVKDHa" role="3F10Kt">
-          <property role="Vbekb" value="BOLD_ITALIC" />
+          <property role="Vbekb" value="BOLD" />
         </node>
       </node>
       <node concept="3F0ifn" id="50smQ1V8iGG" role="3EZMnx">
@@ -759,6 +759,12 @@
       <node concept="3F1sOY" id="3rApyZ4E9ZD" role="3EZMnx">
         <ref role="1NtTu8" to="l462:3rApyZ4E9Wg" resolve="body" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6C2wkq6Pc$H">
+    <ref role="1XX52x" to="l462:6C2wkq6Pc$j" resolve="JoinAdjacentOp" />
+    <node concept="3F0ifn" id="6C2wkq6Pc$J" role="2wV5jI">
+      <property role="3F0ifm" value="joinAdjacent" />
     </node>
   </node>
 </model>
