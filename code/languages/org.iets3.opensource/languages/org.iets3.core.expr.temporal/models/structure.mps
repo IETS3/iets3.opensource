@@ -346,5 +346,38 @@
     <property role="EcuMT" value="6138119342544876299" />
     <property role="TrG5h" value="IHaveOptionalPartsInTemporalContext" />
   </node>
+  <node concept="1TIwiD" id="7aRvJQF6gko">
+    <property role="EcuMT" value="8266215269024204056" />
+    <property role="TrG5h" value="FullOverlapExpr" />
+    <property role="34LRSv" value="overlap-fully" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7aRvJQF6gkp" role="1TKVEi">
+      <property role="IQ2ns" value="8266215269024204057" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3rApyZ4E9Wd">
+    <property role="EcuMT" value="3955961678040440589" />
+    <property role="TrG5h" value="DefaultSliceValueExpr" />
+    <property role="34LRSv" value="with-default-value" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3rApyZ4E9We" role="1TKVEi">
+      <property role="IQ2ns" value="3955961678040440590" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3rApyZ4E9Wg" role="1TKVEi">
+      <property role="IQ2ns" value="3955961678040440592" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

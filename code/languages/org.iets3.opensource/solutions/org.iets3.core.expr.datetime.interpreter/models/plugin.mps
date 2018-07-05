@@ -31,9 +31,15 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -1433,6 +1439,16 @@
       </node>
     </node>
     <node concept="lHU7p" id="7aRvJQEb$0F" role="qq9xR" />
+    <node concept="qq9P1" id="7aRvJQF4caB" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mi3w:7aRvJQF3FvQ" resolve="BigBang" />
+      <node concept="3vetai" id="7aRvJQF4evI" role="3vQZUl">
+        <node concept="10M0yZ" id="7aRvJQF4ewA" role="3vdyny">
+          <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+          <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="26CArgU4npe" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />

@@ -302,5 +302,12 @@
     <property role="34LRSv" value="yearRange" />
     <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
   </node>
+  <node concept="1TIwiD" id="7aRvJQF3FvQ">
+    <property role="EcuMT" value="8266215269023528950" />
+    <property role="3GE5qa" value="date" />
+    <property role="TrG5h" value="BeginningOfTIME" />
+    <property role="34LRSv" value="BoT" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
 </model>
 

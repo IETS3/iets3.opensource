@@ -1810,5 +1810,92 @@
       <ref role="1YaFvo" to="l462:5kIYKlplRcb" resolve="IHaveOptionalPartsInTemporalContext" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7aRvJQF6hAg">
+    <property role="TrG5h" value="typeof_OverlapExpr" />
+    <node concept="3clFbS" id="7aRvJQF6hAh" role="18ibNy">
+      <node concept="1Z5TYs" id="7aRvJQF6i5y" role="3cqZAp">
+        <node concept="mw_s8" id="7aRvJQF6i5N" role="1ZfhKB">
+          <node concept="2YIFZM" id="7aRvJQF6i7m" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7aRvJQF6i5_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7aRvJQF6hAn" role="mwGJk">
+            <node concept="1YBJjd" id="7aRvJQF6hC9" role="1Z2MuG">
+              <ref role="1YBMHb" node="7aRvJQF6hAj" resolve="oe" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Gpval" id="7aRvJQF6ibF" role="3cqZAp">
+        <node concept="2GrKxI" id="7aRvJQF6ibH" role="2Gsz3X">
+          <property role="TrG5h" value="e" />
+        </node>
+        <node concept="2OqwBi" id="7aRvJQF6ioL" role="2GsD0m">
+          <node concept="1YBJjd" id="7aRvJQF6idw" role="2Oq$k0">
+            <ref role="1YBMHb" node="7aRvJQF6hAj" resolve="oe" />
+          </node>
+          <node concept="3Tsc0h" id="7aRvJQF6i_t" role="2OqNvi">
+            <ref role="3TtcxE" to="l462:7aRvJQF6gkp" resolve="values" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7aRvJQF6ibL" role="2LFqv$">
+          <node concept="1ZobV4" id="7aRvJQF6iRI" role="3cqZAp">
+            <node concept="mw_s8" id="7aRvJQF6jMr" role="1ZfhKB">
+              <node concept="2ShNRf" id="7aRvJQF6jMj" role="mwGJk">
+                <node concept="3zrR0B" id="7aRvJQF6jVO" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7aRvJQF6jVQ" role="3zrR0E">
+                    <ref role="ehGHo" to="l462:50smQ1V8i89" resolve="TemporalType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="7aRvJQF6iRL" role="1ZfhK$">
+              <node concept="1Z2H0r" id="7aRvJQF6iC9" role="mwGJk">
+                <node concept="2GrUjf" id="7aRvJQF7yXn" role="1Z2MuG">
+                  <ref role="2Gs0qQ" node="7aRvJQF6ibH" resolve="e" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7aRvJQF6hAj" role="1YuTPh">
+      <property role="TrG5h" value="oe" />
+      <ref role="1YaFvo" to="l462:7aRvJQF6gko" resolve="FullOverlapExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3rApyZ4Ea0c">
+    <property role="TrG5h" value="typeof_DefaultSliceValueExpr" />
+    <node concept="3clFbS" id="3rApyZ4Ea0d" role="18ibNy">
+      <node concept="1Z5TYs" id="3rApyZ4EagG" role="3cqZAp">
+        <node concept="mw_s8" id="3rApyZ4EagX" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3rApyZ4EagT" role="mwGJk">
+            <node concept="2OqwBi" id="3rApyZ4EaqI" role="1Z2MuG">
+              <node concept="1YBJjd" id="3rApyZ4Eahh" role="2Oq$k0">
+                <ref role="1YBMHb" node="3rApyZ4Ea0f" resolve="dsve" />
+              </node>
+              <node concept="3TrEf2" id="3rApyZ4EaAJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="l462:3rApyZ4E9Wg" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3rApyZ4EagJ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3rApyZ4Ea0m" role="mwGJk">
+            <node concept="1YBJjd" id="3rApyZ4Ea28" role="1Z2MuG">
+              <ref role="1YBMHb" node="3rApyZ4Ea0f" resolve="dsve" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3rApyZ4Ea0f" role="1YuTPh">
+      <property role="TrG5h" value="dsve" />
+      <ref role="1YaFvo" to="l462:3rApyZ4E9Wd" resolve="DefaultSliceValueExpr" />
+    </node>
+  </node>
 </model>
 

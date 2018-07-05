@@ -319,5 +319,12 @@
       <property role="3F0ifm" value="yearRange" />
     </node>
   </node>
+  <node concept="24kQdi" id="7aRvJQF3Fwg">
+    <property role="3GE5qa" value="date" />
+    <ref role="1XX52x" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
+    <node concept="3F0ifn" id="7aRvJQF3Fwi" role="2wV5jI">
+      <property role="3F0ifm" value="BoT" />
+    </node>
+  </node>
 </model>
 

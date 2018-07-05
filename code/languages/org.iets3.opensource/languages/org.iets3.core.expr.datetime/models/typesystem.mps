@@ -1351,5 +1351,31 @@
       <ref role="1YaFvo" to="mi3w:7aRvJQEgTEX" resolve="MonthRangeYearOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7aRvJQF3FwI">
+    <property role="TrG5h" value="typeof_BigBang" />
+    <property role="3GE5qa" value="date" />
+    <node concept="3clFbS" id="7aRvJQF3FwJ" role="18ibNy">
+      <node concept="1Z5TYs" id="7aRvJQF3FLW" role="3cqZAp">
+        <node concept="mw_s8" id="7aRvJQF3FMg" role="1ZfhKB">
+          <node concept="2pJPEk" id="7aRvJQF3FMc" role="mwGJk">
+            <node concept="2pJPED" id="7aRvJQF3FMr" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7aRvJQF3FLZ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7aRvJQF3FwP" role="mwGJk">
+            <node concept="1YBJjd" id="7aRvJQF3FyB" role="1Z2MuG">
+              <ref role="1YBMHb" node="7aRvJQF3FwL" resolve="bigBang" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7aRvJQF3FwL" role="1YuTPh">
+      <property role="TrG5h" value="bigBang" />
+      <ref role="1YaFvo" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
+    </node>
+  </node>
 </model>
 
