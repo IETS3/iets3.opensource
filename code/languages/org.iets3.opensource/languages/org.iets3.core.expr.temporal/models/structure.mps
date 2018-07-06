@@ -385,5 +385,25 @@
     <property role="34LRSv" value="joinAdjacent" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
   </node>
+  <node concept="1TIwiD" id="6C2wkq7f3JQ">
+    <property role="EcuMT" value="7638810057890348022" />
+    <property role="TrG5h" value="MaskOp" />
+    <property role="34LRSv" value="mask" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+    <node concept="1TJgyj" id="6C2wkq7f3JR" role="1TKVEi">
+      <property role="IQ2ns" value="7638810057890348023" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mask" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6C2wkq7f3JS" role="1TKVEi">
+      <property role="IQ2ns" value="7638810057890348024" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultVal" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

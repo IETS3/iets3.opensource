@@ -767,5 +767,32 @@
       <property role="3F0ifm" value="joinAdjacent" />
     </node>
   </node>
+  <node concept="24kQdi" id="6C2wkq7f3Kq">
+    <ref role="1XX52x" to="l462:6C2wkq7f3JQ" resolve="MaskOp" />
+    <node concept="3EZMnI" id="6C2wkq7f3Ky" role="2wV5jI">
+      <node concept="3F0ifn" id="6C2wkq7f3Kz" role="3EZMnx">
+        <property role="3F0ifm" value="mask[" />
+        <node concept="11LMrY" id="6C2wkq7f3K$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6C2wkq7f4AS" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:6C2wkq7f3JR" resolve="mask" />
+      </node>
+      <node concept="3F0ifn" id="6C2wkq7f3KA" role="3EZMnx">
+        <property role="3F0ifm" value="else" />
+      </node>
+      <node concept="3F1sOY" id="6C2wkq7f5ah" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:6C2wkq7f3JS" resolve="defaultVal" />
+      </node>
+      <node concept="3F0ifn" id="6C2wkq7f3L9" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="6C2wkq7f3La" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6C2wkq7f3Lb" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
