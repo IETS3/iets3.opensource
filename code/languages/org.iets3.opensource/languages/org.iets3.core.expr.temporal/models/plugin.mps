@@ -28,7 +28,6 @@
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2593,25 +2592,6 @@
             <node concept="2ShNRf" id="3nGzaxUtfSm" role="33vP2m">
               <node concept="1pGfFk" id="3nGzaxUtfSn" role="2ShVmc">
                 <ref role="37wK5l" node="50smQ1V9OlU" resolve="TemporalValue" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6C2wkq7gSLF" role="3cqZAp">
-          <node concept="2OqwBi" id="6C2wkq7gSLC" role="3clFbG">
-            <node concept="10M0yZ" id="6C2wkq7gSLD" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="6C2wkq7gSLE" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="6C2wkq7gUOq" role="37wK5m">
-                <node concept="37vLTw" id="6C2wkq7gUQx" role="3uHU7w">
-                  <ref role="3cqZAo" node="3nGzaxUtfRZ" resolve="allIntervals" />
-                </node>
-                <node concept="Xl_RD" id="6C2wkq7gSOq" role="3uHU7B">
-                  <property role="Xl_RC" value="allintervals:" />
-                </node>
               </node>
             </node>
           </node>
