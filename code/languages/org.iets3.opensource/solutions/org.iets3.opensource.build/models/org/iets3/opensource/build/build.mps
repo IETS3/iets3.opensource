@@ -4982,6 +4982,12 @@
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
+        <node concept="1SiIV0" id="vVoQWCk34u" role="3bR37C">
+          <node concept="3bR9La" id="vVoQWCk34v" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396g5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5038,6 +5044,12 @@
           <node concept="3bR9La" id="44TucI397_L" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="vVoQWCk34S" role="3bR37C">
+          <node concept="3bR9La" id="vVoQWCk34T" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
