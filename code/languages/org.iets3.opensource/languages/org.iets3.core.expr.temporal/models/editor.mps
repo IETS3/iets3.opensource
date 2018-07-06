@@ -794,5 +794,32 @@
       <node concept="l2Vlx" id="6C2wkq7f3Lb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6C2wkq7iPtu">
+    <ref role="1XX52x" to="l462:6C2wkq7iPsz" resolve="WithSliceOp" />
+    <node concept="3EZMnI" id="6C2wkq7iPtA" role="2wV5jI">
+      <node concept="2iRfu4" id="6C2wkq7iPtB" role="2iSdaV" />
+      <node concept="3F0ifn" id="6C2wkq7iPtC" role="3EZMnx">
+        <property role="3F0ifm" value="with" />
+      </node>
+      <node concept="3F0ifn" id="6C2wkq7iPtD" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="6C2wkq7iPtE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6C2wkq7iPtF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6C2wkq7iPEx" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:6C2wkq7iPs$" resolve="slice" />
+      </node>
+      <node concept="3F0ifn" id="6C2wkq7iPtR" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6C2wkq7iPtS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

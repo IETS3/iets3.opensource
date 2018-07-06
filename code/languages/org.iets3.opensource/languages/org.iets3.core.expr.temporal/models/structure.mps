@@ -405,5 +405,18 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6C2wkq7iPsz">
+    <property role="EcuMT" value="7638810057891338019" />
+    <property role="TrG5h" value="WithSliceOp" />
+    <property role="34LRSv" value="with" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+    <node concept="1TJgyj" id="6C2wkq7iPs$" role="1TKVEi">
+      <property role="IQ2ns" value="7638810057891338020" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="slice" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="50smQ1V8QEh" resolve="Slice" />
+    </node>
+  </node>
 </model>
 

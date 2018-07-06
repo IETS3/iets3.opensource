@@ -160,6 +160,9 @@
         <child id="7638810057890348023" name="mask" index="3HfFEL" />
         <child id="7638810057890348024" name="defaultVal" index="3HfFEY" />
       </concept>
+      <concept id="7638810057891338019" name="org.iets3.core.expr.temporal.structure.WithSliceOp" flags="ng" index="3Hitp_">
+        <child id="7638810057891338020" name="slice" index="3Hitpy" />
+      </concept>
       <concept id="3955961678040440589" name="org.iets3.core.expr.temporal.structure.DefaultSliceValueExpr" flags="ng" index="3MjJ$y">
         <child id="3955961678040440590" name="value" index="3MjJ$x" />
         <child id="3955961678040440592" name="body" index="3MjJ$Z" />
@@ -2210,24 +2213,29 @@
           <property role="30bXRw" value="1000" />
         </node>
       </node>
+      <node concept="Ffn_D" id="6C2wkq7l5Lb" role="2zM23F">
+        <node concept="mLuIC" id="6C2wkq7l5Ws" role="Ffn_E" />
+      </node>
     </node>
-    <node concept="2zPypq" id="6C2wkq7fPLf" role="_iOnB">
+    <node concept="2zPypq" id="6C2wkq7iIpb" role="_iOnB">
       <property role="TrG5h" value="hasChild1" />
-      <node concept="FfN7I" id="6C2wkq7fQCC" role="2zPyp_">
-        <node concept="FfN7L" id="6C2wkq7fQCQ" role="FfN64">
-          <node concept="3pIs$b" id="6C2wkq7fQCP" role="FfN7M" />
-          <node concept="2vmpn$" id="6C2wkq7fSkj" role="FfN7O" />
+      <node concept="1QScDb" id="6C2wkq7iJxR" role="2zPyp_">
+        <node concept="YnbI1" id="6C2wkq7iJx8" role="30czhm">
+          <node concept="2vmpn$" id="6C2wkq7iJxt" role="YnbId" />
         </node>
-        <node concept="FfN7L" id="6C2wkq7fSkN" role="FfN64">
-          <node concept="1fc2QT" id="6C2wkq7fSlq" role="FfN7M">
-            <property role="1fc2QY" value="2000" />
-            <property role="1fc2QX" value="01" />
-            <property role="1fc2QW" value="01" />
+        <node concept="3Hitp_" id="6C2wkq7kjBs" role="1QScD9">
+          <node concept="FfN7L" id="6C2wkq7kjBu" role="3Hitpy">
+            <node concept="1fc2QT" id="6C2wkq7kjD1" role="FfN7M">
+              <property role="1fc2QY" value="2000" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+            <node concept="2vmpnb" id="6C2wkq7kjET" role="FfN7O" />
           </node>
-          <node concept="2vmpnb" id="6C2wkq7fSn8" role="FfN7O" />
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="6C2wkq7iG2V" role="_iOnB" />
     <node concept="2zPypq" id="6C2wkq7gNxx" role="_iOnB">
       <property role="TrG5h" value="kindergeld1" />
       <property role="0Rz4W" value="179167059" />
@@ -2237,8 +2245,8 @@
         </node>
         <node concept="1QScDb" id="6C2wkq7fU6p" role="30dEsF">
           <node concept="3HfFEK" id="6C2wkq7fWMK" role="1QScD9">
-            <node concept="_emDc" id="6C2wkq7gguJ" role="3HfFEL">
-              <ref role="_emDf" node="6C2wkq7fPLf" resolve="hasChild1" />
+            <node concept="_emDc" id="6C2wkq7kRCv" role="3HfFEL">
+              <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
             </node>
             <node concept="30bXRB" id="6C2wkq7ggyD" role="3HfFEY">
               <property role="30bXRw" value="0" />
@@ -2312,7 +2320,7 @@
                 <ref role="_emDf" node="6C2wkq7ho9W" resolve="hasChild2" />
               </node>
               <node concept="_emDc" id="6C2wkq7hP7w" role="30dEsF">
-                <ref role="_emDf" node="6C2wkq7fPLf" resolve="hasChild1" />
+                <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
               </node>
             </node>
             <node concept="30bXRB" id="6C2wkq7hOGR" role="3HfFEY">
@@ -2414,6 +2422,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="6C2wkq7iEAk" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0frE" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0ft9" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0fuD" role="_iOnB" />
