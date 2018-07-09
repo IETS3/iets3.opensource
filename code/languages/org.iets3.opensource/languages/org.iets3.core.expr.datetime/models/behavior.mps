@@ -224,7 +224,7 @@
                     <ref role="3cqZAo" node="26CArgU3TGe" resolve="date" />
                   </node>
                   <node concept="liA8E" id="26CArgU3WKJ" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.getDayOfMonth():int" resolve="getDayOfMonth" />
+                    <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue():int" resolve="getMonthValue" />
                   </node>
                 </node>
               </node>
