@@ -761,12 +761,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6C2wkq6Pc$H">
-    <ref role="1XX52x" to="l462:6C2wkq6Pc$j" resolve="JoinAdjacentOp" />
-    <node concept="3F0ifn" id="6C2wkq6Pc$J" role="2wV5jI">
-      <property role="3F0ifm" value="joinAdjacent" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6C2wkq7f3Kq">
     <ref role="1XX52x" to="l462:6C2wkq7f3JQ" resolve="MaskOp" />
     <node concept="3EZMnI" id="6C2wkq7f3Ky" role="2wV5jI">

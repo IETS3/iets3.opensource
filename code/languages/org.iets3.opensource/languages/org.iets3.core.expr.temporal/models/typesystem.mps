@@ -2366,36 +2366,6 @@
       </node>
     </node>
   </node>
-  <node concept="1YbPZF" id="6C2wkq6Pc_b">
-    <property role="TrG5h" value="typeof_JoinAdjacentOp" />
-    <node concept="3clFbS" id="6C2wkq6Pc_c" role="18ibNy">
-      <node concept="1Z5TYs" id="6C2wkq6PcQ8" role="3cqZAp">
-        <node concept="mw_s8" id="6C2wkq6PcQs" role="1ZfhKB">
-          <node concept="1Z2H0r" id="6C2wkq6PcQo" role="mwGJk">
-            <node concept="2OqwBi" id="6C2wkq6Pd0E" role="1Z2MuG">
-              <node concept="1YBJjd" id="6C2wkq6PcQH" role="2Oq$k0">
-                <ref role="1YBMHb" node="6C2wkq6Pc_e" resolve="joinAdjacentOp" />
-              </node>
-              <node concept="2qgKlT" id="6C2wkq6Pdog" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="6C2wkq6PcQb" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6C2wkq6Pc_i" role="mwGJk">
-            <node concept="1YBJjd" id="6C2wkq6PcB4" role="1Z2MuG">
-              <ref role="1YBMHb" node="6C2wkq6Pc_e" resolve="joinAdjacentOp" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6C2wkq6Pc_e" role="1YuTPh">
-      <property role="TrG5h" value="joinAdjacentOp" />
-      <ref role="1YaFvo" to="l462:6C2wkq6Pc$j" resolve="JoinAdjacentOp" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="6C2wkq7f5OS">
     <property role="TrG5h" value="typeof_MaskOp" />
     <node concept="3clFbS" id="6C2wkq7f5OT" role="18ibNy">
