@@ -9,7 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -476,11 +476,11 @@
       <node concept="m$_yC" id="5v$Gz_MWExQ" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
       </node>
-      <node concept="m$_yC" id="5v$Gz_MWF4$" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
-      </node>
       <node concept="m$_yC" id="5v$Gz_MWFBk" role="m$_yJ">
         <ref role="m$_y1" to="al5i:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
+      <node concept="m$_yC" id="gnL8pN4Hds" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
       <node concept="3_J27D" id="5wLtKNeSRRK" role="m_cZH">
         <node concept="3Mxwew" id="5wLtKNeSRRL" role="3MwsjC">
@@ -511,6 +511,9 @@
       </node>
       <node concept="m$_yC" id="3HtH8S1CeZC" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
+      </node>
+      <node concept="m$_yC" id="gnL8pN4HSe" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
       <node concept="3_J27D" id="7$nPgK7zjIR" role="m_cZH">
         <node concept="3Mxwew" id="7$nPgK7zjIS" role="3MwsjC">
