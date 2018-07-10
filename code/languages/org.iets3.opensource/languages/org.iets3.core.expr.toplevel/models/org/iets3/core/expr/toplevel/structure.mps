@@ -338,11 +338,8 @@
       <property role="IQ2ns" value="8811147530084018371" />
       <ref role="20lvS9" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
     </node>
-    <node concept="PrWs8" id="7D7uZV2iDXX" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
-    </node>
-    <node concept="PrWs8" id="6JZACDWI_Pm" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
+    <node concept="PrWs8" id="3KgQFIke4QZ" role="PzmwI">
+      <ref role="PrY4T" node="3KgQFIke4um" resolve="IRecordType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7D7uZV2eTZF">
@@ -961,7 +958,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+      <ref role="20lvS9" node="3KgQFIke4um" resolve="IRecordType" />
     </node>
   </node>
   <node concept="PlHQZ" id="mQGcCvDdrZ">
@@ -995,6 +992,17 @@
     <property role="TrG5h" value="ITopLevelContainer" />
     <node concept="PrWs8" id="1sudaVNn6BU" role="PrDN$">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3KgQFIke4um">
+    <property role="EcuMT" value="4328199741083502486" />
+    <property role="3GE5qa" value="record" />
+    <property role="TrG5h" value="IRecordType" />
+    <node concept="PrWs8" id="7D7uZV2iDXX" role="PrDN$">
+      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
+    </node>
+    <node concept="PrWs8" id="6JZACDWI_Pm" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
     </node>
   </node>
 </model>
