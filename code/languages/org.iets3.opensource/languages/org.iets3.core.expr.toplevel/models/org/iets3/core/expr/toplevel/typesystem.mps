@@ -1798,8 +1798,8 @@
               <node concept="3JvlWi" id="6NHlpK$$z_5" role="2OqNvi" />
             </node>
             <node concept="1mIQ4w" id="6NHlpK$$z_6" role="2OqNvi">
-              <node concept="chp4Y" id="6NHlpK$$z_7" role="cj9EA">
-                <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+              <node concept="chp4Y" id="3iLOSsXjSa3" role="cj9EA">
+                <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
               </node>
             </node>
           </node>
