@@ -9594,6 +9594,12 @@
       <node concept="3cqZAl" id="5$bT90ZdOUG" role="3clF45" />
       <node concept="3Tm1VV" id="5$bT90ZdOUH" role="1B3o_S" />
       <node concept="3clFbS" id="5$bT90ZdOUI" role="3clF47">
+        <node concept="XkiVB" id="2_AKWXDZ9Hn" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="2_AKWXDZ9Mh" role="37wK5m">
+            <ref role="3cqZAo" node="5$bT90ZdOUP" resolve="p" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5$bT90ZdOUJ" role="3cqZAp">
           <node concept="37vLTI" id="5$bT90ZdOUK" role="3clFbG">
             <node concept="37vLTw" id="5$bT90ZdOUL" role="37vLTx">
@@ -10066,6 +10072,12 @@
       <node concept="3cqZAl" id="DubiFB4e4Y" role="3clF45" />
       <node concept="3Tm1VV" id="DubiFB4e4Z" role="1B3o_S" />
       <node concept="3clFbS" id="DubiFB4e50" role="3clF47">
+        <node concept="XkiVB" id="2_AKWXDZ8AH" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="2_AKWXDZ8JW" role="37wK5m">
+            <ref role="3cqZAo" node="1MFobPsx1UM" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="DubiFB4e51" role="3cqZAp">
           <node concept="37vLTI" id="DubiFB4e52" role="3clFbG">
             <node concept="37vLTw" id="1MFobPsx0T2" role="37vLTx">
