@@ -2,8 +2,8 @@
 <model ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1700,9 +1700,6 @@
   <node concept="13h7C7" id="49WTic8dFem">
     <property role="3GE5qa" value="list" />
     <ref role="13h7C2" to="700h:6zmBjqUinsw" resolve="ListType" />
-    <node concept="13hLZK" id="49WTic8dFen" role="13h7CW">
-      <node concept="3clFbS" id="49WTic8dFeo" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="2uo6UInBpje" role="13h7CS">
       <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
@@ -1797,6 +1794,9 @@
         </node>
       </node>
       <node concept="10P_77" id="2uo6UInBpjS" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="49WTic8dFen" role="13h7CW">
+      <node concept="3clFbS" id="49WTic8dFeo" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="3KzlhPzMJrX" role="13h7CS">
       <property role="TrG5h" value="allSupertypes" />
@@ -4219,11 +4219,6 @@
   <node concept="13h7C7" id="53f0GWHYsKs">
     <property role="3GE5qa" value="map" />
     <ref role="13h7C2" to="700h:7kYh9WszdBQ" resolve="MapType" />
-    <node concept="13hLZK" id="53f0GWHYsKt" role="13h7CW">
-      <node concept="3clFbS" id="53f0GWHYsKu" role="2VODD2">
-        <node concept="3clFbH" id="2uo6UInIsiF" role="3cqZAp" />
-      </node>
-    </node>
     <node concept="13i0hz" id="2uo6UInIs13" role="13h7CS">
       <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
@@ -4285,6 +4280,11 @@
       </node>
       <node concept="17QB3L" id="2uo6UInIs1u" role="3clF45" />
     </node>
+    <node concept="13hLZK" id="53f0GWHYsKt" role="13h7CW">
+      <node concept="3clFbS" id="53f0GWHYsKu" role="2VODD2">
+        <node concept="3clFbH" id="2uo6UInIsiF" role="3cqZAp" />
+      </node>
+    </node>
     <node concept="13i0hz" id="53f0GWHYsMH" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -4305,10 +4305,10 @@
                     <node concept="36biLy" id="53f0GWHYsMQ" role="2pJxcZ">
                       <node concept="2OqwBi" id="53f0GWHYsMR" role="36biLW">
                         <node concept="2OqwBi" id="53f0GWHYsMS" role="2Oq$k0">
-                          <node concept="13iPFW" id="53f0GWHYsMT" role="2Oq$k0" />
                           <node concept="3TrEf2" id="2uo6UInIrqD" role="2OqNvi">
                             <ref role="3Tt5mk" to="700h:7kYh9WszdBR" resolve="keyType" />
                           </node>
+                          <node concept="13iPFW" id="53f0GWHYsMT" role="2Oq$k0" />
                         </node>
                         <node concept="1$rogu" id="53f0GWHYsMV" role="2OqNvi" />
                       </node>
@@ -4319,10 +4319,10 @@
                     <node concept="36biLy" id="53f0GWHYv6i" role="2pJxcZ">
                       <node concept="2OqwBi" id="53f0GWHYv6j" role="36biLW">
                         <node concept="2OqwBi" id="53f0GWHYv6k" role="2Oq$k0">
-                          <node concept="13iPFW" id="53f0GWHYv6l" role="2Oq$k0" />
                           <node concept="3TrEf2" id="2uo6UInIrGY" role="2OqNvi">
                             <ref role="3Tt5mk" to="700h:7kYh9WszdBT" resolve="valueType" />
                           </node>
+                          <node concept="13iPFW" id="53f0GWHYv6l" role="2Oq$k0" />
                         </node>
                         <node concept="1$rogu" id="53f0GWHYv6n" role="2OqNvi" />
                       </node>
