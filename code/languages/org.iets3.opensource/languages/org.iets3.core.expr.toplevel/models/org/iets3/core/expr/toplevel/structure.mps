@@ -2,7 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -968,6 +968,9 @@
     <property role="EcuMT" value="411710798111758079" />
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="IFunctionContainer" />
+    <node concept="asaX9" id="iEqaF0KzEp" role="lGtFl">
+      <property role="YLQ7P" value="replaced by the more common concept IFunctionLikeContainer" />
+    </node>
     <node concept="PrWs8" id="mQGcCvDds3" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
@@ -979,6 +982,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="_aJC6nOPZi" role="lGtFl">
+      <property role="YLQ7P" value="replaced by the more common Concept AbstractFunctionLikeAdapter" />
+    </node>
     <node concept="1TJgyj" id="mQGcCvwSTn" role="1TKVEi">
       <property role="IQ2ns" value="411710798109576791" />
       <property role="20lmBu" value="aggregation" />
@@ -995,6 +1001,58 @@
     <property role="TrG5h" value="ITopLevelContainer" />
     <node concept="PrWs8" id="1sudaVNn6BU" role="PrDN$">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3ijD2AhNGn5">
+    <property role="EcuMT" value="3788552209995580869" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IToplevelExprContentContainer" />
+    <node concept="PrWs8" id="3ijD2AhNGn6" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ijD2AhNGn8">
+    <property role="EcuMT" value="3788552209995580872" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="AbstractToplevelExprAdapter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ijD2AhNIaE" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyj" id="3ijD2AhNI83" role="1TKVEi">
+      <property role="IQ2ns" value="3788552209995588099" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toplevelExprContent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="iEqaF0KzEw">
+    <property role="EcuMT" value="336196204780206752" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="IFunctionLikeContainer" />
+    <node concept="PrWs8" id="iEqaF0KzEx" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="iEqaF0KzE$">
+    <property role="EcuMT" value="336196204780206756" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AbstractFunctionLikeAdapter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="iEqaF0KAvN" role="1TKVEi">
+      <property role="IQ2ns" value="336196204780218355" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="functionLike" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
+    </node>
+    <node concept="PrWs8" id="iEqaF0KzE_" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
 </model>

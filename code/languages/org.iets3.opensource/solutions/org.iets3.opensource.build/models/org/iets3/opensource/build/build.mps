@@ -2,14 +2,14 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -436,6 +436,9 @@
     </node>
     <node concept="m$_wf" id="5wLtKNeSRRD" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.os" />
+      <node concept="m$f5U" id="VjQDRHWAjR" role="m$_yh">
+        <ref role="m$f5T" node="5wLtKNeSWz5" resolve="iets3.core.os" />
+      </node>
       <node concept="3_J27D" id="5wLtKNeSRRE" role="m$_yQ">
         <node concept="3Mxwew" id="5wLtKNeSRRF" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.core.os" />
@@ -445,9 +448,6 @@
         <node concept="3Mxwey" id="2I_jb36RaG8" role="3MwsjC">
           <ref role="3Mxwex" node="2I_jb36R5Ye" resolve="version" />
         </node>
-      </node>
-      <node concept="m$f5U" id="VjQDRHWAjR" role="m$_yh">
-        <ref role="m$f5T" node="5wLtKNeSWz5" resolve="iets3.core.os" />
       </node>
       <node concept="m$_yC" id="5wLtKNeSRRJ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -6068,6 +6068,18 @@
           <node concept="3bR9La" id="3gmMi5syCU3" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1$nPwyh7Jrh" role="3bR37C">
+          <node concept="3bR9La" id="1$nPwyh7Jri" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="YMJl2BN_Xq" resolve="org.iets3.core.expr.statemachines" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1$nPwyh7Jrj" role="3bR37C">
+          <node concept="3bR9La" id="1$nPwyh7Jrk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
       </node>
