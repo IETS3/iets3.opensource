@@ -446,6 +446,15 @@
       <node concept="m$_yC" id="6rBfBe1Xr41" role="m$_yJ">
         <ref role="m$_y1" to="al5i:6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
       </node>
+      <node concept="m$_yC" id="7B3BCcEppf9" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
+      </node>
+      <node concept="m$_yC" id="7B3BCcEppMd" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
+      </node>
+      <node concept="m$_yC" id="7B3BCcEpqlj" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
       <node concept="3_J27D" id="5wLtKNeSRRK" role="m_cZH">
         <node concept="3Mxwew" id="5wLtKNeSRRL" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.core.os" />
@@ -475,6 +484,9 @@
       </node>
       <node concept="m$_yC" id="3HtH8S1CeZC" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
+      </node>
+      <node concept="m$_yC" id="7B3BCcEpqSj" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
       <node concept="3_J27D" id="7$nPgK7zjIR" role="m_cZH">
         <node concept="3Mxwew" id="7$nPgK7zjIS" role="3MwsjC">

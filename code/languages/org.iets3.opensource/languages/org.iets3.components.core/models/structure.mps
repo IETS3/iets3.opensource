@@ -1362,7 +1362,9 @@
     <node concept="PrWs8" id="2KohUff_Ug3" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="asaX9" id="3ijD2AiLr72" role="lGtFl" />
+    <node concept="asaX9" id="3ijD2AiLr72" role="lGtFl">
+      <property role="YLQ7P" value="Replaced by ComponentFunctionAdapter" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2QRlyxOqVpb">
     <property role="EcuMT" value="3294196384196703819" />

@@ -147,7 +147,7 @@
     </node>
     <node concept="1hlzdc" id="3ijD2Ai0pjb" role="1hl$rw">
       <ref role="1hmvP4" to="w9y2:3ijD2AhXGRR" resolve="CompConstantAdapter" />
-      <ref role="1hszAz" to="yv47:69zaTr1HgRc" resolve="Constant" />
+      <ref role="1hszAz" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
       <node concept="1ht64k" id="3ijD2Ai0qEd" role="1hsNre">
         <node concept="3clFbS" id="3ijD2Ai0qEe" role="2VODD2">
           <node concept="3clFbF" id="3ijD2Ai5U96" role="3cqZAp">
@@ -195,7 +195,7 @@
     </node>
     <node concept="1hlzdc" id="3ijD2AiFF$0" role="1hl$rw">
       <ref role="1hmvP4" to="w9y2:3ijD2AiF_jq" resolve="CompStateMachineAdapter" />
-      <ref role="1hszAz" to="19m5:7$TgoCYa5Mz" resolve="StateMachine" />
+      <ref role="1hszAz" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
       <node concept="1ht64k" id="3ijD2AiFGlW" role="1hsNre">
         <node concept="3clFbS" id="3ijD2AiFGlX" role="2VODD2">
           <node concept="3clFbF" id="3ijD2AiFGsS" role="3cqZAp">
@@ -243,7 +243,7 @@
     </node>
     <node concept="1hlzdc" id="3ijD2AiLu2V" role="1hl$rw">
       <ref role="1hmvP4" to="w9y2:3ijD2AiLr75" resolve="CompFunctionAdapter" />
-      <ref role="1hszAz" to="yv47:49WTic8f4iz" resolve="Function" />
+      <ref role="1hszAz" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
       <node concept="1ht64k" id="3ijD2AiLuIp" role="1hsNre">
         <node concept="3clFbS" id="3ijD2AiLuIq" role="2VODD2">
           <node concept="3clFbF" id="3ijD2AiLuUs" role="3cqZAp">
