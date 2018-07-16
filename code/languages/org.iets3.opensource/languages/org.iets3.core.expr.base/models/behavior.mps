@@ -39,7 +39,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
@@ -10363,7 +10362,7 @@
                       <node concept="2OqwBi" id="71dSyJVqO5t" role="2Oq$k0">
                         <node concept="1uHKPH" id="5WtF_99ul8" role="2OqNvi" />
                         <node concept="37vLTw" id="71dSyJVqO2y" role="2Oq$k0">
-                          <ref role="3cqZAo" node="71dSyJVqNi3" />
+                          <ref role="3cqZAo" node="71dSyJVqNi3" resolve="regulars" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="71dSyJVqSXG" role="2OqNvi">

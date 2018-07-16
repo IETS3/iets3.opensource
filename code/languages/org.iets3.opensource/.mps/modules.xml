@@ -55,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.plugin/org.iets3.req.plugin.msd" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/test.iest3.component.attribute/test.iest3.component.attribute.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.interpreter/org.iets3.components.core.interpreter.msd" folder="comp" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
@@ -98,7 +99,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.components.core/test.ts.components.core.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os/test.ts.expr.os.msd" folder="expr.tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ui.expr.os/test.ui.expr.os.msd" folder="expr.tests" />
     </projectModules>
   </component>
 </project>
