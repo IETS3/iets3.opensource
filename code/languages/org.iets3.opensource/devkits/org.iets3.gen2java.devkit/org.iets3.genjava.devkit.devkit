@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.genjava.devkit" uuid="04b65b28-381b-4a5d-aec3-3ccd0071d372">
+  <exported-language name="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" />
+  <exported-language name="30254c5b-f87e-4bb3-a60a-77a7ec6ed411(org.iets3.core.expr.genjava.base)" />
+  <exported-language name="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)" />
+  <exported-language name="e75207bb-7b13-40bd-b80b-c8fe625c4ee2(org.iets3.core.expr.genjava.tests)" />
+  <exported-language name="ddeeec5e-aa31-4c44-bc40-319cd452626e(org.iets3.core.expr.genjava.toplevel)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <exported-language name="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" />
+  <exported-language name="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" />
+  <exported-solutions>
+    <exported-solution>272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)</exported-solution>
+    <exported-solution>5a8dae31-5452-4a2a-86c7-5335f6e6e7ee(org.iets3.genjava)</exported-solution>
+    <exported-solution>708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)</exported-solution>
+    <exported-solution>3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)</exported-solution>
+    <exported-solution>68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</exported-solution>
+    <exported-solution>336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:2156d4f3-c1fc-4393-9d7c-5c05324a82fb(org.iets3.gen2java.genplan)" />
+</dev-kit>
+

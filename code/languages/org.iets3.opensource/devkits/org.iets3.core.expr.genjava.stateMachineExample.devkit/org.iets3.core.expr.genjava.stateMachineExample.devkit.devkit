@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.genjava.stateMachineExample.devkit" uuid="1c135998-5440-4972-9921-4d69b80567f1">
+  <exported-language name="a15685d6-531e-45b7-9e72-af80302071ea(org.iets3.core.expr.genjava.stateMachineExample)" />
+  <exported-language name="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" />
+  <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
+  <extendedDevKits>
+    <extendedDevKit>04b65b28-381b-4a5d-aec3-3ccd0071d372(org.iets3.genjava.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>889f307c-31c8-4d64-9e24-a83f15c85f02(org.iets3.core.expr.genjava.stateMachineExample.genplan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:7ffdb264-b05d-49b2-91a9-61577f392b8f(org.iets3.core.expr.genjava.stateMachineExample.genplan)" />
+</dev-kit>
+
