@@ -18,8 +18,9 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -36,6 +37,9 @@
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
+      </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
+        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
@@ -294,6 +298,55 @@
     </node>
     <node concept="13hLZK" id="cJpacq409B" role="13h7CW">
       <node concept="3clFbS" id="cJpacq409C" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3bpF72PGcrF" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getMatchingText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3InJX" resolve="getMatchingText" />
+      <node concept="3Tm1VV" id="3bpF72PGcrG" role="1B3o_S" />
+      <node concept="3clFbS" id="3bpF72PGcs5" role="3clF47">
+        <node concept="3clFbF" id="3bpF72PGcsd" role="3cqZAp">
+          <node concept="2OqwBi" id="3bpF72PGdrW" role="3clFbG">
+            <node concept="13iPFW" id="3bpF72PGdg7" role="2Oq$k0" />
+            <node concept="3TrcHB" id="3bpF72PGdCM" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3bpF72PGcs6" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="3bpF72PGcs7" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="3bpF72PGcs8" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3bpF72PGcse" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVisibleMatchingText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3Ipre" resolve="getVisibleMatchingText" />
+      <node concept="3Tm1VV" id="3bpF72PGcsf" role="1B3o_S" />
+      <node concept="3clFbS" id="3bpF72PGcsp" role="3clF47">
+        <node concept="3clFbF" id="3bpF72PGcsx" role="3cqZAp">
+          <node concept="2OqwBi" id="3bpF72PGcsu" role="3clFbG">
+            <node concept="13iAh5" id="3bpF72PGcsv" role="2Oq$k0">
+              <ref role="3eA5LN" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+            </node>
+            <node concept="2qgKlT" id="3bpF72PGcsw" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:69Qfsw3Ipre" resolve="getVisibleMatchingText" />
+              <node concept="37vLTw" id="3bpF72PGcst" role="37wK5m">
+                <ref role="3cqZAo" node="3bpF72PGcsq" resolve="reference" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3bpF72PGcsq" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="3bpF72PGcsr" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="3bpF72PGcss" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1YPoVR7Fay9">
