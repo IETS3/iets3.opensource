@@ -160,6 +160,12 @@
     <node concept="PrWs8" id="3Qosey6HihY" role="PzmwI">
       <ref role="PrY4T" to="yv47:mQGcCvDdrZ" resolve="IFunctionContainer" />
     </node>
+    <node concept="PrWs8" id="3ijD2AhQZqb" role="PzmwI">
+      <ref role="PrY4T" to="yv47:3ijD2AhNGn5" resolve="IToplevelExprContentContainer" />
+    </node>
+    <node concept="PrWs8" id="iEqaF1647C" role="PzmwI">
+      <ref role="PrY4T" to="yv47:iEqaF0KzEw" resolve="IFunctionLikeContainer" />
+    </node>
     <node concept="1QGGSu" id="cEt5uj8Nnf" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/component.png" />
     </node>
@@ -1346,7 +1352,7 @@
   </node>
   <node concept="1TIwiD" id="2KohUff$lmX">
     <property role="EcuMT" value="3177368305997534653" />
-    <property role="TrG5h" value="CompFunctionAdapter" />
+    <property role="TrG5h" value="CompFunctionAdapter_old" />
     <property role="34LRSv" value="fun" />
     <property role="3GE5qa" value="components.adapter" />
     <ref role="1TJDcQ" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
@@ -1355,6 +1361,9 @@
     </node>
     <node concept="PrWs8" id="2KohUff_Ug3" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="asaX9" id="3ijD2AiLr72" role="lGtFl">
+      <property role="YLQ7P" value="Replaced by ComponentFunctionAdapter" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QRlyxOqVpb">
@@ -1461,6 +1470,45 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ijD2AhXGRR">
+    <property role="EcuMT" value="3788552209998204407" />
+    <property role="3GE5qa" value="components.adapter" />
+    <property role="TrG5h" value="CompConstantAdapter" />
+    <property role="34LRSv" value="val" />
+    <ref role="1TJDcQ" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
+    <node concept="PrWs8" id="3ijD2AhXGRS" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="3ijD2AhXGS0" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ijD2AiF_jq">
+    <property role="EcuMT" value="3788552210010232026" />
+    <property role="3GE5qa" value="components.adapter" />
+    <property role="TrG5h" value="CompStateMachineAdapter" />
+    <property role="34LRSv" value="state machine" />
+    <ref role="1TJDcQ" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
+    <node concept="PrWs8" id="3ijD2AiFBk8" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="3ijD2AiFBkg" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ijD2AiLr75">
+    <property role="EcuMT" value="3788552210011763141" />
+    <property role="3GE5qa" value="components.adapter" />
+    <property role="TrG5h" value="CompFunctionAdapter" />
+    <property role="34LRSv" value="fun" />
+    <ref role="1TJDcQ" to="yv47:iEqaF0KzE$" resolve="AbstractFunctionLikeAdapter" />
+    <node concept="PrWs8" id="3ijD2AiLr76" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="3ijD2AiLr7e" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
 </model>

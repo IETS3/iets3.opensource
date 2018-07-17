@@ -199,16 +199,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx">
-                    <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
-                      <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
-                        <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
-                      </node>
-                      <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
-                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                      </node>
-                    </node>
-                  </node>
+                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx" />
                 </node>
               </node>
             </node>
