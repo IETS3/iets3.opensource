@@ -3903,6 +3903,22 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="3rtmxn" id="7YH5Tx0ilnK" role="3bR31x">
+          <node concept="3LXTmp" id="7YH5Tx0ilnL" role="3rtmxm">
+            <node concept="3qWCbU" id="7YH5Tx0ilnM" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7YH5Tx0ilnN" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7YH5Tx0ilnO" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7YH5Tx0ilnP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.datetime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6XrtUF5gcnV" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3955,6 +3971,22 @@
           <node concept="3bR9La" id="6XrtUF5gcKv" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7YH5Tx0ilnY" role="3bR31x">
+          <node concept="3LXTmp" id="7YH5Tx0ilnZ" role="3rtmxm">
+            <node concept="3qWCbU" id="7YH5Tx0ilo0" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7YH5Tx0ilo1" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7YH5Tx0ilo2" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7YH5Tx0ilo3" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.datetime.interpreter" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -4056,6 +4088,22 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="3rtmxn" id="7YH5Tx0ilnD" role="3bR31x">
+          <node concept="3LXTmp" id="7YH5Tx0ilnE" role="3rtmxm">
+            <node concept="3qWCbU" id="7YH5Tx0ilnF" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7YH5Tx0ilnG" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7YH5Tx0ilnH" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7YH5Tx0ilnI" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.temporal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6XrtUF5gcnN" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4120,6 +4168,22 @@
           <node concept="3bR9La" id="6XrtUF5gcK8" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7YH5Tx0ilnR" role="3bR31x">
+          <node concept="3LXTmp" id="7YH5Tx0ilnS" role="3rtmxm">
+            <node concept="3qWCbU" id="7YH5Tx0ilnT" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7YH5Tx0ilnU" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7YH5Tx0ilnV" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7YH5Tx0ilnW" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.temporal.interpreter" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
