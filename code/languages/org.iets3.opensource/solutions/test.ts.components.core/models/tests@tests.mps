@@ -142,7 +142,7 @@
         <child id="596856272745524538" name="governingPorts" index="IJpy$" />
       </concept>
       <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
-      <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstance" flags="ng" index="MGl88">
+      <concept id="3432899422388046302" name="org.iets3.components.core.structure.AbstractComponentInstanceWithRef" flags="ng" index="MGl88">
         <child id="3432899422388046625" name="component" index="MGl3R" />
         <child id="3432899422388047137" name="parameterValues" index="MGlrR" />
       </concept>
@@ -181,7 +181,7 @@
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
       </concept>
-      <concept id="3177368305997534653" name="org.iets3.components.core.structure.CompFunctionAdapter" flags="ng" index="3zyh8u" />
+      <concept id="3177368305997534653" name="org.iets3.components.core.structure.CompFunctionAdapter_old" flags="ng" index="3zyh8u" />
       <concept id="4217735156746120255" name="org.iets3.components.core.structure.AbstractConnectorBase" flags="ng" index="1O3KJS">
         <child id="4217735156746171148" name="connectorType" index="1O05jb" />
       </concept>
