@@ -1378,12 +1378,12 @@
                             <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
                           </node>
                         </node>
-                        <node concept="chp4Y" id="7cphKbKJd7U" role="3oSUPX">
-                          <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+                        <node concept="chp4Y" id="5Odw3gwkycO" role="3oSUPX">
+                          <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7cphKbKJd7V" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                      <node concept="2qgKlT" id="5Odw3gwkyD6" role="2OqNvi">
+                        <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
                       </node>
                     </node>
                   </node>
