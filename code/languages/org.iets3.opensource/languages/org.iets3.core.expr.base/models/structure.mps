@@ -4,7 +4,6 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -953,6 +952,12 @@
       <property role="IQ2ns" value="867786408877811038" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="5F8uib8hsjE" role="1TKVEi">
+      <property role="IQ2ns" value="6541611649051509994" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="err" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="KaZMgy4Ilt">
     <property role="3GE5qa" value="contract" />
@@ -1799,6 +1804,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7aRvJQE8BE8">
+    <property role="EcuMT" value="8266215269008046728" />
+    <property role="TrG5h" value="INeverAllowDot" />
   </node>
 </model>
 

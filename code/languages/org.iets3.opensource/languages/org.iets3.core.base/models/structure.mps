@@ -88,6 +88,9 @@
     <node concept="PrWs8" id="cJpacq5WSG" role="PrDN$">
       <ref role="PrY4T" node="cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="3bpF72PGcrz" role="PrDN$">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
     <node concept="1TJgyj" id="cJpacq40jC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="optionalName" />

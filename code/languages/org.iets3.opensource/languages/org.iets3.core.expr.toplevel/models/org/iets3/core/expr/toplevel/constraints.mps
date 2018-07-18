@@ -1644,5 +1644,9 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="1M2myG" to="yv47:mQGcCvDeqQ" resolve="AbstractFunctionAdapter" />
   </node>
+  <node concept="1M2fIO" id="3ijD2AhNIas">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="1M2myG" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
+  </node>
 </model>
 
