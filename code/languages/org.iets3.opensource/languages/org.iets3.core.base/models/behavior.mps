@@ -38,9 +38,6 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
-      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -329,15 +326,10 @@
       <node concept="3Tm1VV" id="3bpF72PGcsf" role="1B3o_S" />
       <node concept="3clFbS" id="3bpF72PGcsp" role="3clF47">
         <node concept="3clFbF" id="3bpF72PGcsx" role="3cqZAp">
-          <node concept="2OqwBi" id="3bpF72PGcsu" role="3clFbG">
-            <node concept="13iAh5" id="3bpF72PGcsv" role="2Oq$k0">
-              <ref role="3eA5LN" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
-            </node>
-            <node concept="2qgKlT" id="3bpF72PGcsw" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:69Qfsw3Ipre" resolve="getVisibleMatchingText" />
-              <node concept="37vLTw" id="3bpF72PGcst" role="37wK5m">
-                <ref role="3cqZAo" node="3bpF72PGcsq" resolve="reference" />
-              </node>
+          <node concept="2OqwBi" id="2MYd19bed4f" role="3clFbG">
+            <node concept="13iPFW" id="2MYd19becSs" role="2Oq$k0" />
+            <node concept="3TrcHB" id="2MYd19bedjU" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
