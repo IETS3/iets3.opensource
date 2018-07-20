@@ -4,6 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1808,6 +1809,35 @@
   <node concept="PlHQZ" id="7aRvJQE8BE8">
     <property role="EcuMT" value="8266215269008046728" />
     <property role="TrG5h" value="INeverAllowDot" />
+  </node>
+  <node concept="1TIwiD" id="1RwPUjzgIEp">
+    <property role="EcuMT" value="2152957725070518937" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="MaxExpression" />
+    <property role="34LRSv" value="max" />
+    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
+  </node>
+  <node concept="1TIwiD" id="1RwPUjzgIEq">
+    <property role="EcuMT" value="2152957725070518938" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="MinExpression" />
+    <property role="34LRSv" value="min" />
+    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
+  </node>
+  <node concept="1TIwiD" id="1RwPUjzgk0y">
+    <property role="EcuMT" value="2152957725070409762" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="AbstractMinMaxExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1RwPUjzgk0z" role="1TKVEi">
+      <property role="IQ2ns" value="2152957725070409763" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 
