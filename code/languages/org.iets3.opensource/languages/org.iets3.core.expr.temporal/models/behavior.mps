@@ -225,7 +225,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4voqclTxMk7">
-    <ref role="13h7C2" to="l462:4voqclTxJTX" resolve="ForEachSliceOp" />
+    <ref role="13h7C2" to="l462:4voqclTxJTX" resolve="MapEachSliceOp" />
     <node concept="13hLZK" id="4voqclTxMk8" role="13h7CW">
       <node concept="3clFbS" id="4voqclTxMk9" role="2VODD2">
         <node concept="3clFbF" id="4voqclTxMkm" role="3cqZAp">

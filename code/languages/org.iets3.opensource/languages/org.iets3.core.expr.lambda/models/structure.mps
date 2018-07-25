@@ -210,7 +210,7 @@
   </node>
   <node concept="1TIwiD" id="6zmBjqUm7MQ">
     <property role="TrG5h" value="ShortLambdaExpression" />
-    <property role="R4oN_" value="lambda with implicit argument &quot;it&quot;" />
+    <property role="R4oN_" value="short lambda (with implicit argument &quot;it&quot;)" />
     <property role="3GE5qa" value="lambda" />
     <property role="34LRSv" value="|" />
     <property role="EcuMT" value="7554398283340741814" />

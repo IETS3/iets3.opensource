@@ -561,11 +561,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="4voqclTxKEZ">
-    <ref role="1XX52x" to="l462:4voqclTxJTX" resolve="ForEachSliceOp" />
+    <ref role="1XX52x" to="l462:4voqclTxJTX" resolve="MapEachSliceOp" />
     <node concept="3EZMnI" id="4voqclTxKGm" role="2wV5jI">
       <node concept="2iRfu4" id="4voqclTxKGn" role="2iSdaV" />
       <node concept="3F0ifn" id="4voqclTxKF4" role="3EZMnx">
-        <property role="3F0ifm" value="forEachSlice" />
+        <property role="3F0ifm" value="mapEachSlice" />
       </node>
       <node concept="3F0ifn" id="4voqclTyBwa" role="3EZMnx">
         <property role="3F0ifm" value="(" />

@@ -1432,7 +1432,7 @@
     </node>
     <node concept="qq9P1" id="4voqclTzfR4" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="l462:4voqclTxJTX" resolve="ForEachSliceOp" />
+      <ref role="qq9wM" to="l462:4voqclTxJTX" resolve="MapEachSliceOp" />
       <node concept="3dA_Gj" id="4voqclTzhI6" role="3vQZUl">
         <node concept="9aQIb" id="4voqclTzhI8" role="3vcmbn">
           <node concept="3clFbS" id="4voqclTzhIa" role="9aQI4">
@@ -1648,43 +1648,27 @@
             <node concept="3clFbH" id="5kIYKlpoIpu" role="3cqZAp" />
             <node concept="3clFbJ" id="5kIYKlpoJQJ" role="3cqZAp">
               <node concept="3clFbS" id="5kIYKlpoJQL" role="3clFbx">
-                <node concept="3cpWs8" id="5kIYKlpoM_r" role="3cqZAp">
-                  <node concept="3cpWsn" id="5kIYKlpoM_s" role="3cpWs9">
-                    <property role="TrG5h" value="ctx" />
-                    <node concept="3uibUv" id="5kIYKlpoM_t" role="1tU5fm">
-                      <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+                <node concept="3clFbF" id="5kIYKlpoMK9" role="3cqZAp">
+                  <node concept="37vLTI" id="5kIYKlpoMWb" role="3clFbG">
+                    <node concept="37vLTw" id="5kIYKlpoMK7" role="37vLTJ">
+                      <ref role="3cqZAo" node="4voqclT_YDt" resolve="fromValue" />
                     </node>
-                    <node concept="10QFUN" id="5kIYKlpoM_u" role="33vP2m">
-                      <node concept="qpA2v" id="5kIYKlpoM_v" role="10QFUP">
-                        <node concept="2OqwBi" id="5kIYKlpoM_w" role="3SLO0q">
-                          <node concept="2OqwBi" id="5kIYKlpoM_x" role="2Oq$k0">
-                            <node concept="oxGPV" id="5kIYKlpoM_y" role="2Oq$k0" />
-                            <node concept="2Xjw5R" id="5kIYKlpoM_z" role="2OqNvi">
-                              <node concept="1xMEDy" id="5kIYKlpoM_$" role="1xVPHs">
-                                <node concept="chp4Y" id="5kIYKlpoM__" role="ri$Ld">
-                                  <ref role="cht4Q" to="l462:2qmD4SWBg0S" resolve="IProvideTemporalContext" />
-                                </node>
+                    <node concept="qpA2v" id="5kIYKlpoM_v" role="37vLTx">
+                      <node concept="2OqwBi" id="5kIYKlpoM_w" role="3SLO0q">
+                        <node concept="2OqwBi" id="5kIYKlpoM_x" role="2Oq$k0">
+                          <node concept="oxGPV" id="5kIYKlpoM_y" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="5kIYKlpoM_z" role="2OqNvi">
+                            <node concept="1xMEDy" id="5kIYKlpoM_$" role="1xVPHs">
+                              <node concept="chp4Y" id="5kIYKlpoM__" role="ri$Ld">
+                                <ref role="cht4Q" to="l462:2qmD4SWBg0S" resolve="IProvideTemporalContext" />
                               </node>
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="2Asuq7BCiVd" role="2OqNvi">
-                            <ref role="37wK5l" to="x8ug:2Asuq7BCdRC" resolve="getDateContext" />
-                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="2Asuq7BCiVd" role="2OqNvi">
+                          <ref role="37wK5l" to="x8ug:2Asuq7BCdRC" resolve="getDateContext" />
                         </node>
                       </node>
-                      <node concept="3uibUv" id="5kIYKlpoM_B" role="10QFUM">
-                        <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="5kIYKlpoMK9" role="3cqZAp">
-                  <node concept="37vLTI" id="5kIYKlpoMWb" role="3clFbG">
-                    <node concept="37vLTw" id="5kIYKlpoMWs" role="37vLTx">
-                      <ref role="3cqZAo" node="5kIYKlpoM_s" resolve="ctx" />
-                    </node>
-                    <node concept="37vLTw" id="5kIYKlpoMK7" role="37vLTJ">
-                      <ref role="3cqZAo" node="4voqclT_YDt" resolve="fromValue" />
                     </node>
                   </node>
                 </node>

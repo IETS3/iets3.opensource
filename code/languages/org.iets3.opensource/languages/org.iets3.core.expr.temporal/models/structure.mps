@@ -264,8 +264,8 @@
   </node>
   <node concept="1TIwiD" id="4voqclTxJTX">
     <property role="EcuMT" value="5177002969019121277" />
-    <property role="TrG5h" value="ForEachSliceOp" />
-    <property role="34LRSv" value="forEachSlice" />
+    <property role="TrG5h" value="MapEachSliceOp" />
+    <property role="34LRSv" value="mapEachSlice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="4voqclTxKDZ" role="1TKVEi">
       <property role="IQ2ns" value="5177002969019124351" />
