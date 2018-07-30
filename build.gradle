@@ -3,7 +3,6 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 import java.time.LocalDateTime
 
-
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
@@ -26,13 +25,10 @@ if (project.hasProperty("forceCI")) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-
 def forceLocal = project.hasProperty("forceLocalDependencies")
-
 
 // Dependency versions
 ext.mpsVersion = '2018.1.5'
-
 def mbeddrVersion = "1.0+"
 
 // if building a against a special branch from mbeddr is required add the name here
@@ -40,13 +36,11 @@ def mbeddrVersion = "1.0+"
 // be used here. No need to convert "/" the script will take care of that.
 def mbeddrBranch = "maintenance/mps20181"
 
-
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
     ext.mbeddrVersionSelector = "${mbeddrBranch.replace("/", "-")}.${mbeddrVersion}"
 } else {
     ext.mbeddrVersionSelector = mbeddrVersion
 }
-
 
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
