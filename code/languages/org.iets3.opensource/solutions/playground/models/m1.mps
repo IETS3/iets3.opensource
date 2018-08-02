@@ -184,6 +184,12 @@
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
       </concept>
     </language>
+    <language id="db8bd035-3f51-41d8-8fed-954c202d18be" name="org.iets3.analysis.base">
+      <concept id="4214990435119232757" name="org.iets3.analysis.base.structure.SolveControl" flags="ng" index="Uzt6d">
+        <property id="4214990435119232944" name="mode" index="Uzt38" />
+        <property id="3113851542611773763" name="timeout" index="33AXoT" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -322,6 +328,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Uzt6d" id="2zI9HllFTJG" role="lGtFl">
+        <property role="Uzt38" value="ignore" />
+        <property role="33AXoT" value="10" />
       </node>
     </node>
     <node concept="_ixoA" id="3yVmeSjL7pi" role="_iOnC" />

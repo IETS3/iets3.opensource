@@ -510,14 +510,14 @@
   </node>
   <node concept="2S6QgY" id="1buLrYj9uIr">
     <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="SetTimeout" />
+    <property role="TrG5h" value="SetSolverTimeout" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     <node concept="2S6ZIM" id="1buLrYj9uIs" role="2ZfVej">
       <node concept="3clFbS" id="1buLrYj9uIt" role="2VODD2">
         <node concept="3clFbF" id="1buLrYj9uRs" role="3cqZAp">
           <node concept="Xl_RD" id="1buLrYj9uRr" role="3clFbG">
-            <property role="Xl_RC" value="Set Timeout" />
+            <property role="Xl_RC" value="Set Solver Timeout" />
           </node>
         </node>
       </node>
@@ -638,6 +638,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="2zI9HllFE5x" role="lGtFl">
+      <property role="1SWRpm" value="SOLVER" />
     </node>
   </node>
   <node concept="2S6QgY" id="2zI9HllEW64">
