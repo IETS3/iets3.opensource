@@ -434,14 +434,14 @@
   </node>
   <node concept="2S6QgY" id="1buLrYj9Jc5">
     <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="DoNotSetTimeout" />
+    <property role="TrG5h" value="UseDefaultSolverTimeout" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     <node concept="2S6ZIM" id="1buLrYj9Jc6" role="2ZfVej">
       <node concept="3clFbS" id="1buLrYj9Jc7" role="2VODD2">
         <node concept="3clFbF" id="1buLrYj9Jtw" role="3cqZAp">
           <node concept="Xl_RD" id="1buLrYj9Jtv" role="3clFbG">
-            <property role="Xl_RC" value="Do not set Timeout" />
+            <property role="Xl_RC" value="Use Default Solver Timeout" />
           </node>
         </node>
       </node>
@@ -506,6 +506,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="2zI9HllFYqX" role="lGtFl">
+      <property role="1SWRpm" value="SOLVER" />
     </node>
   </node>
   <node concept="2S6QgY" id="1buLrYj9uIr">
