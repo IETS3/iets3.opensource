@@ -634,6 +634,7 @@
                             <node concept="liA8E" id="4nY0kF8lSK_" role="2OqNvi">
                               <ref role="37wK5l" to="oq0c:4nY0kF8hJxc" resolve="createCellProvider" />
                               <node concept="1Q80Hx" id="4nY0kF8lSKA" role="37wK5m" />
+                              <node concept="pncrf" id="2_AKWXDYGSF" role="37wK5m" />
                             </node>
                           </node>
                         </node>
@@ -1229,8 +1230,8 @@
                                         <node concept="YeOm9" id="6LVVWmzyB9U" role="2ShVmc">
                                           <node concept="1Y3b0j" id="6LVVWmzyB9V" role="YeSDq">
                                             <property role="2bfB8j" value="true" />
-                                            <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;()" resolve="AbstractCellProvider" />
                                             <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+                                            <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
                                             <node concept="3Tm1VV" id="6LVVWmzyB9W" role="1B3o_S" />
                                             <node concept="3clFb_" id="6LVVWmzyB9X" role="jymVt">
                                               <property role="1EzhhJ" value="false" />
@@ -1255,6 +1256,7 @@
                                                 </node>
                                               </node>
                                             </node>
+                                            <node concept="pncrf" id="2_AKWXDZcyU" role="37wK5m" />
                                           </node>
                                         </node>
                                       </node>
@@ -1406,6 +1408,7 @@
                       <node concept="liA8E" id="4nY0kF8hvi8" role="2OqNvi">
                         <ref role="37wK5l" to="oq0c:4nY0kF8hJxc" resolve="createCellProvider" />
                         <node concept="1Q80Hx" id="4nY0kF8hvFV" role="37wK5m" />
+                        <node concept="pncrf" id="2_AKWXDYIh$" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -2456,6 +2459,7 @@
                         <node concept="liA8E" id="4nY0kF8vbPK" role="2OqNvi">
                           <ref role="37wK5l" to="oq0c:4nY0kF8hJxc" resolve="createCellProvider" />
                           <node concept="1Q80Hx" id="4nY0kF8vbPL" role="37wK5m" />
+                          <node concept="pncrf" id="2_AKWXDYKTX" role="37wK5m" />
                         </node>
                       </node>
                     </node>
@@ -4714,6 +4718,7 @@
                             <node concept="liA8E" id="6GwlCCBaM$6" role="2OqNvi">
                               <ref role="37wK5l" to="oq0c:4nY0kF8hJxc" resolve="createCellProvider" />
                               <node concept="1Q80Hx" id="6GwlCCBaM$7" role="37wK5m" />
+                              <node concept="pncrf" id="2_AKWXDYD0b" role="37wK5m" />
                             </node>
                           </node>
                         </node>

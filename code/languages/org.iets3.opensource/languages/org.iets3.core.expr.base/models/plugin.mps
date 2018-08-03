@@ -9,9 +9,9 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -8876,8 +8876,11 @@
             <node concept="YeOm9" id="59T8kEoC8vs" role="2ShVmc">
               <node concept="1Y3b0j" id="59T8kEoC8vv" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;()" resolve="AbstractCellProvider" />
                 <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+                <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+                <node concept="37vLTw" id="2_AKWXDYxbI" role="37wK5m">
+                  <ref role="3cqZAo" node="2_AKWXDYwr4" resolve="node" />
+                </node>
                 <node concept="3Tm1VV" id="59T8kEoC8vw" role="1B3o_S" />
                 <node concept="3clFb_" id="59T8kEoC8vx" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -8923,6 +8926,10 @@
         <node concept="3uibUv" id="4nY0kF8idFQ" role="1tU5fm">
           <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
+      </node>
+      <node concept="37vLTG" id="2_AKWXDYwr4" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2_AKWXDYx0a" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="4nY0kF8dKXl" role="jymVt" />
