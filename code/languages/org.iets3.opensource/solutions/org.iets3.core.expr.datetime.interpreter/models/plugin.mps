@@ -44,6 +44,9 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -1441,7 +1444,7 @@
     <node concept="lHU7p" id="7aRvJQEb$0F" role="qq9xR" />
     <node concept="qq9P1" id="7aRvJQF4caB" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="mi3w:7aRvJQF3FvQ" resolve="BigBang" />
+      <ref role="qq9wM" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
       <node concept="3vetai" id="7aRvJQF4evI" role="3vQZUl">
         <node concept="10M0yZ" id="7aRvJQF4ewA" role="3vdyny">
           <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
@@ -1553,7 +1556,103 @@
         </node>
       </node>
     </node>
-    <node concept="lHU7p" id="7aRvJQEbyK4" role="qq9xR" />
+    <node concept="qq9P1" id="1B4$CC7wMjA" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6N6Ra" resolve="NotEqualsExpression" />
+      <node concept="3vetai" id="1B4$CC7x4Qn" role="3vQZUl">
+        <node concept="3fqX7Q" id="1B4$CC7x6hm" role="3vdyny">
+          <node concept="2OqwBi" id="1B4$CC7x6ip" role="3fr31v">
+            <node concept="rqRoa" id="1B4$CC7x6iq" role="2Oq$k0">
+              <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+            </node>
+            <node concept="liA8E" id="1B4$CC7x6ir" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
+              <node concept="rqRoa" id="1B4$CC7x6is" role="37wK5m">
+                <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1B4$CC7wOC0" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+        <node concept="rxStX" id="1B4$CC7wOCr" role="rajlz">
+          <ref role="rxSuV" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="1B4$CC7wSQx" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+        <node concept="rxStX" id="1B4$CC7wUfG" role="rajlz">
+          <ref role="rxSuV" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1B4$CC7x0L7" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4rZeNQ6N6Ra" resolve="NotEqualsExpression" />
+      <node concept="qpFDx" id="1B4$CC7x35E" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+        <node concept="rxStX" id="1B4$CC7x35F" role="rajlz">
+          <ref role="rxSuV" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="1B4$CC7x3rw" role="3vbI0w">
+        <ref role="qpFD$" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+        <node concept="rxStX" id="1B4$CC7x3rx" role="rajlz">
+          <ref role="rxSuV" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+        </node>
+      </node>
+      <node concept="3vetai" id="1B4$CC7x6s_" role="3vQZUl">
+        <node concept="3fqX7Q" id="1B4$CC7x7S3" role="3vdyny">
+          <node concept="1eOMI4" id="1B4$CC7x7T6" role="3fr31v">
+            <node concept="1Wc70l" id="1B4$CC7x7Ub" role="1eOMHV">
+              <node concept="2OqwBi" id="1B4$CC7x7Uc" role="3uHU7w">
+                <node concept="2OqwBi" id="1B4$CC7x7Ud" role="2Oq$k0">
+                  <node concept="rqRoa" id="1B4$CC7x7Ue" role="2Oq$k0">
+                    <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+                  </node>
+                  <node concept="liA8E" id="1B4$CC7x7Uf" role="2OqNvi">
+                    <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1B4$CC7x7Ug" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
+                  <node concept="2OqwBi" id="1B4$CC7x7Uh" role="37wK5m">
+                    <node concept="rqRoa" id="1B4$CC7x7Ui" role="2Oq$k0">
+                      <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+                    </node>
+                    <node concept="liA8E" id="1B4$CC7x7Uj" role="2OqNvi">
+                      <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1B4$CC7x7Uk" role="3uHU7B">
+                <node concept="2OqwBi" id="1B4$CC7x7Ul" role="2Oq$k0">
+                  <node concept="rqRoa" id="1B4$CC7x7Um" role="2Oq$k0">
+                    <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+                  </node>
+                  <node concept="liA8E" id="1B4$CC7x7Un" role="2OqNvi">
+                    <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1B4$CC7x7Uo" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
+                  <node concept="2OqwBi" id="1B4$CC7x7Up" role="37wK5m">
+                    <node concept="rqRoa" id="1B4$CC7x7Uq" role="2Oq$k0">
+                      <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+                    </node>
+                    <node concept="liA8E" id="1B4$CC7x7Ur" role="2OqNvi">
+                      <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="26CArgU4Swa" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6MP0h" resolve="GreaterEqualsExpression" />
