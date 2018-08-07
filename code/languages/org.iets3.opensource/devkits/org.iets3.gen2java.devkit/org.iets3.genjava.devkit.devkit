@@ -8,6 +8,8 @@
   <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
   <exported-language name="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" />
   <exported-language name="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" />
+  <exported-language name="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)" />
+  <exported-language name="cc59a077-028a-42b0-ad86-6a1d71258691(org.iets3.core.expr.genjava.datetime)" />
   <exported-solutions>
     <exported-solution>272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)</exported-solution>
     <exported-solution>5a8dae31-5452-4a2a-86c7-5335f6e6e7ee(org.iets3.genjava)</exported-solution>
