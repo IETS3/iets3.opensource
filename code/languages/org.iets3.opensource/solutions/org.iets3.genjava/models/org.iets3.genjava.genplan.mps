@@ -46,6 +46,10 @@
         <property role="2V$B1T" value="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.simpleTypes" />
       </node>
+      <node concept="2V$Bhx" id="3haX89g2uED" role="1t_9vn">
+        <property role="2V$B1T" value="cc59a077-028a-42b0-ad86-6a1d71258691" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.datetime" />
+      </node>
       <node concept="2V$Bhx" id="6ii4I_AaKi7" role="1t_9vn">
         <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
