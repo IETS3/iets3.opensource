@@ -68,6 +68,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.functionalJava/org.iets3.core.expr.genjava.functionalJava.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.simpleTypes.rt/org.iets3.core.expr.genjava.simpleTypes.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.stateMachineExample.genplan/org.iets3.core.expr.genjava.stateMachineExample.genplan.msd" folder="expr.genjava.stateMachineExample" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.temporal.rt/org.iets3.core.expr.genjava.temporal.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.tests.rt/org.iets3.core.expr.genjava.tests.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.toplevel.rt/org.iets3.core.expr.genjava.toplevel.rt.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.interpreter/org.iets3.core.expr.lambda.interpreter.msd" folder="expr.lang-core" />
