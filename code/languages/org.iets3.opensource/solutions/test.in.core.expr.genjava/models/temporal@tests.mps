@@ -29,6 +29,9 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+        <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
       <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
         <child id="5115872837157187954" name="expr" index="30bsDf" />
       </concept>
@@ -76,6 +79,7 @@
       <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
@@ -97,6 +101,9 @@
       </concept>
       <concept id="5772589292324300959" name="org.iets3.core.expr.temporal.structure.IntervalsOp" flags="ng" index="FaJfZ" />
       <concept id="5772589292324006373" name="org.iets3.core.expr.temporal.structure.NumerOfSlices" flags="ng" index="FbBa5" />
+      <concept id="5772589292322890249" name="org.iets3.core.expr.temporal.structure.TemporalType" flags="ng" index="Ffn_D">
+        <child id="5772589292322890250" name="baseType" index="Ffn_E" />
+      </concept>
       <concept id="5772589292323039886" name="org.iets3.core.expr.temporal.structure.TemporalLiteral" flags="ng" index="FfN7I">
         <child id="5772589292323039972" name="slices" index="FfN64" />
       </concept>
@@ -119,6 +126,13 @@
       </concept>
       <concept id="8266215269024204056" name="org.iets3.core.expr.temporal.structure.FullOverlapExpr" flags="ng" index="3pFBJ_">
         <child id="8266215269024204057" name="values" index="3pFBJ$" />
+      </concept>
+      <concept id="7638810057890348022" name="org.iets3.core.expr.temporal.structure.MaskOp" flags="ng" index="3HfFEK">
+        <child id="7638810057890348023" name="mask" index="3HfFEL" />
+        <child id="7638810057890348024" name="defaultVal" index="3HfFEY" />
+      </concept>
+      <concept id="7638810057891338019" name="org.iets3.core.expr.temporal.structure.WithSliceOp" flags="ng" index="3Hitp_">
+        <child id="7638810057891338020" name="slice" index="3Hitpy" />
       </concept>
       <concept id="3955961678040440589" name="org.iets3.core.expr.temporal.structure.DefaultSliceValueExpr" flags="ng" index="3MjJ$y">
         <child id="3955961678040440590" name="value" index="3MjJ$x" />
@@ -679,6 +693,223 @@
         </node>
       </node>
     </node>
+    <node concept="2zPypq" id="6C2wkq7fLxK" role="_iOnB">
+      <property role="TrG5h" value="salary" />
+      <property role="0Rz4W" value="-1898634089" />
+      <node concept="YnbI1" id="6C2wkq7fMod" role="2zPyp_">
+        <node concept="30bXRB" id="6C2wkq7fMos" role="YnbId">
+          <property role="30bXRw" value="1000" />
+        </node>
+      </node>
+      <node concept="Ffn_D" id="6C2wkq7l5Lb" role="2zM23F">
+        <node concept="mLuIC" id="6C2wkq7l5Ws" role="Ffn_E" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="6C2wkq7iIpb" role="_iOnB">
+      <property role="TrG5h" value="hasChild1" />
+      <property role="0Rz4W" value="-878296928" />
+      <node concept="1QScDb" id="6C2wkq7iJxR" role="2zPyp_">
+        <node concept="YnbI1" id="6C2wkq7iJx8" role="30czhm">
+          <node concept="2vmpn$" id="6C2wkq7iJxt" role="YnbId" />
+        </node>
+        <node concept="3Hitp_" id="6C2wkq7kjBs" role="1QScD9">
+          <node concept="FfN7L" id="6C2wkq7kjBu" role="3Hitpy">
+            <node concept="1fc2QT" id="6C2wkq7kjD1" role="FfN7M">
+              <property role="1fc2QY" value="2000" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+            <node concept="2vmpnb" id="6C2wkq7kjET" role="FfN7O" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4aHVnHIAOer" role="_iOnB" />
+    <node concept="2zPypq" id="6C2wkq7gNxx" role="_iOnB">
+      <property role="TrG5h" value="kindergeld1" />
+      <property role="0Rz4W" value="-808189724" />
+      <node concept="30dDTi" id="6C2wkq7gNxy" role="2zPyp_">
+        <node concept="30bXRB" id="6C2wkq7gNxz" role="30dEs_">
+          <property role="30bXRw" value="0.10" />
+        </node>
+        <node concept="1QScDb" id="6C2wkq7fU6p" role="30dEsF">
+          <node concept="3HfFEK" id="6C2wkq7fWMK" role="1QScD9">
+            <node concept="_emDc" id="6C2wkq7kRCv" role="3HfFEL">
+              <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
+            </node>
+            <node concept="30bXRB" id="6C2wkq7ggyD" role="3HfFEY">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="_emDc" id="6C2wkq7fU5A" role="30czhm">
+            <ref role="_emDf" node="6C2wkq7fLxK" resolve="salary" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="6C2wkq7fKAX" role="_iOnB" />
+    <node concept="2zPypq" id="6C2wkq7ho9W" role="_iOnB">
+      <property role="TrG5h" value="hasChild2" />
+      <property role="0Rz4W" value="1327986423" />
+      <node concept="FfN7I" id="6C2wkq7ho9X" role="2zPyp_">
+        <node concept="FfN7L" id="6C2wkq7ho9Y" role="FfN64">
+          <node concept="3pIs$b" id="6C2wkq7ho9Z" role="FfN7M" />
+          <node concept="2vmpn$" id="6C2wkq7hoa0" role="FfN7O" />
+        </node>
+        <node concept="FfN7L" id="6C2wkq7hoa1" role="FfN64">
+          <node concept="1fc2QT" id="6C2wkq7hoa2" role="FfN7M">
+            <property role="1fc2QY" value="2004" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="2vmpnb" id="6C2wkq7hoa3" role="FfN7O" />
+        </node>
+        <node concept="FfN7L" id="6C2wkq7hAlT" role="FfN64">
+          <node concept="1fc2QT" id="6C2wkq7hAnB" role="FfN7M">
+            <property role="1fc2QY" value="2010" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="2vmpn$" id="6C2wkq7hApb" role="FfN7O" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="6C2wkq7htdm" role="_iOnB">
+      <property role="TrG5h" value="kindergeld2" />
+      <property role="0Rz4W" value="-1735819863" />
+      <node concept="30dDTi" id="6C2wkq7htdn" role="2zPyp_">
+        <node concept="1QScDb" id="6C2wkq7htdp" role="30dEsF">
+          <node concept="3HfFEK" id="6C2wkq7htdq" role="1QScD9">
+            <node concept="_emDc" id="6C2wkq7hFQu" role="3HfFEL">
+              <ref role="_emDf" node="6C2wkq7ho9W" resolve="hasChild2" />
+            </node>
+            <node concept="30bXRB" id="6C2wkq7htds" role="3HfFEY">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="_emDc" id="6C2wkq7htdt" role="30czhm">
+            <ref role="_emDf" node="6C2wkq7fLxK" resolve="salary" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="4aHVnHICXmQ" role="30dEs_">
+          <property role="30bXRw" value="0.10" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="6C2wkq7hOGL" role="_iOnB">
+      <property role="TrG5h" value="kindergeld3" />
+      <property role="0Rz4W" value="-1598516876" />
+      <node concept="30dDTi" id="6C2wkq7hOGM" role="2zPyp_">
+        <node concept="1QScDb" id="6C2wkq7hOGO" role="30dEsF">
+          <node concept="3HfFEK" id="6C2wkq7hOGP" role="1QScD9">
+            <node concept="30deu6" id="6C2wkq7hPlv" role="3HfFEL">
+              <node concept="_emDc" id="6C2wkq7hPzn" role="30dEs_">
+                <ref role="_emDf" node="6C2wkq7ho9W" resolve="hasChild2" />
+              </node>
+              <node concept="_emDc" id="6C2wkq7hP7w" role="30dEsF">
+                <ref role="_emDf" node="6C2wkq7iIpb" resolve="hasChild1" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="6C2wkq7hOGR" role="3HfFEY">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="_emDc" id="6C2wkq7hOGS" role="30czhm">
+            <ref role="_emDf" node="6C2wkq7fLxK" resolve="salary" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="4aHVnHICHo_" role="30dEs_">
+          <property role="30bXRw" value="0.10" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4aHVnHIAP4t" role="_iOnB" />
+    <node concept="_fkuM" id="6C2wkq7gkoC" role="_iOnB">
+      <property role="TrG5h" value="TestMasking" />
+      <node concept="_fkuZ" id="6C2wkq7glkF" role="_fkp5">
+        <node concept="_fku$" id="6C2wkq7glkG" role="_fkur" />
+        <node concept="_emDc" id="6C2wkq7glkU" role="_fkuY">
+          <ref role="_emDf" node="6C2wkq7gNxx" resolve="kindergeld1" />
+        </node>
+        <node concept="FfN7I" id="6C2wkq7gllh" role="_fkuS">
+          <node concept="FfN7L" id="6C2wkq7gllt" role="FfN64">
+            <node concept="3pIs$b" id="6C2wkq7glls" role="FfN7M" />
+            <node concept="30bXRB" id="6C2wkq7gmgd" role="FfN7O">
+              <property role="30bXRw" value="0.00" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="6C2wkq7gmh5" role="FfN64">
+            <node concept="30bXRB" id="6C2wkq7gmio" role="FfN7O">
+              <property role="30bXRw" value="100.00" />
+            </node>
+            <node concept="1fc2QT" id="6C2wkq7gmhX" role="FfN7M">
+              <property role="1fc2QY" value="2000" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6C2wkq7hyBU" role="_fkp5">
+        <node concept="_fku$" id="6C2wkq7hyBV" role="_fkur" />
+        <node concept="_emDc" id="6C2wkq7hyE1" role="_fkuY">
+          <ref role="_emDf" node="6C2wkq7htdm" resolve="kindergeld2" />
+        </node>
+        <node concept="FfN7I" id="6C2wkq7hyBX" role="_fkuS">
+          <node concept="FfN7L" id="6C2wkq7hyBY" role="FfN64">
+            <node concept="3pIs$b" id="6C2wkq7hyBZ" role="FfN7M" />
+            <node concept="30bXRB" id="6C2wkq7hyC0" role="FfN7O">
+              <property role="30bXRw" value="0.00" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="6C2wkq7hyC1" role="FfN64">
+            <node concept="30bXRB" id="6C2wkq7hyC2" role="FfN7O">
+              <property role="30bXRw" value="100.00" />
+            </node>
+            <node concept="1fc2QT" id="6C2wkq7hyC3" role="FfN7M">
+              <property role="1fc2QY" value="2004" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="6C2wkq7hH5h" role="FfN64">
+            <node concept="30bXRB" id="6C2wkq7hH5i" role="FfN7O">
+              <property role="30bXRw" value="0.00" />
+            </node>
+            <node concept="1fc2QT" id="6C2wkq7hH5j" role="FfN7M">
+              <property role="1fc2QY" value="2010" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6C2wkq7hRON" role="_fkp5">
+        <node concept="_fku$" id="6C2wkq7hROO" role="_fkur" />
+        <node concept="_emDc" id="6C2wkq7hRRI" role="_fkuY">
+          <ref role="_emDf" node="6C2wkq7hOGL" resolve="kindergeld3" />
+        </node>
+        <node concept="FfN7I" id="6C2wkq7hROQ" role="_fkuS">
+          <node concept="FfN7L" id="6C2wkq7hROR" role="FfN64">
+            <node concept="3pIs$b" id="6C2wkq7hROS" role="FfN7M" />
+            <node concept="30bXRB" id="6C2wkq7hROT" role="FfN7O">
+              <property role="30bXRw" value="0.00" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="6C2wkq7hROU" role="FfN64">
+            <node concept="30bXRB" id="6C2wkq7hROV" role="FfN7O">
+              <property role="30bXRw" value="100.00" />
+            </node>
+            <node concept="1fc2QT" id="6C2wkq7hROW" role="FfN7M">
+              <property role="1fc2QY" value="2000" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4aHVnHIF80U" role="_iOnB" />
     <node concept="_ixoA" id="2ABt9UCI13Y" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0811" role="_iOnB" />
   </node>
