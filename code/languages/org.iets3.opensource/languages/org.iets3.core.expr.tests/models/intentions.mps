@@ -375,7 +375,7 @@
       <node concept="3clFbS" id="ub9nkyPfGe" role="2VODD2">
         <node concept="3clFbF" id="ub9nkyPfGf" role="3cqZAp">
           <node concept="Xl_RD" id="ub9nkyPfGg" role="3clFbG">
-            <property role="Xl_RC" value="Evaluate this Test Suite" />
+            <property role="Xl_RC" value="Evaluate This Test Suite" />
           </node>
         </node>
       </node>
@@ -388,8 +388,8 @@
               <node concept="2Sf5sV" id="ub9nkyPfWi" role="2Oq$k0" />
               <node concept="2Rf3mk" id="ub9nkyPgas" role="2OqNvi">
                 <node concept="1xMEDy" id="ub9nkyPgau" role="1xVPHs">
-                  <node concept="chp4Y" id="ub9nkyPgcu" role="ri$Ld">
-                    <ref role="cht4Q" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+                  <node concept="chp4Y" id="3ocDo13as_s" role="ri$Ld">
+                    <ref role="cht4Q" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
                   </node>
                 </node>
               </node>
