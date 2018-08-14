@@ -6,6 +6,9 @@ import java.time.LocalDateTime
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
+    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
+    }
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
