@@ -9,6 +9,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -37,6 +38,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -154,6 +158,7 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
@@ -917,6 +922,37 @@
     <node concept="1YaCAy" id="5kGo$yLJ2B9" role="1YuTPh">
       <property role="TrG5h" value="fc" />
       <ref role="1YaFvo" to="av4b:5kGo$yLJ0E1" resolve="ForceCastExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5Pgo_ASrZgt">
+    <property role="TrG5h" value="typeof_StringContaining" />
+    <property role="3GE5qa" value="matcher" />
+    <node concept="3clFbS" id="5Pgo_ASrZgu" role="18ibNy">
+      <node concept="1ZobV4" id="5Pgo_ASrZgG" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="5Pgo_ASrZgT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5Pgo_ASrZgP" role="mwGJk">
+            <node concept="2OqwBi" id="5Pgo_ASrZpd" role="1Z2MuG">
+              <node concept="1YBJjd" id="5Pgo_ASrZhd" role="2Oq$k0">
+                <ref role="1YBMHb" node="5Pgo_ASrZgw" resolve="containsString" />
+              </node>
+              <node concept="3TrEf2" id="5Pgo_ASrZxQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="av4b:5Pgo_ASrZg1" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5Pgo_ASrZ$g" role="1ZfhKB">
+          <node concept="2YIFZM" id="5Pgo_ASrZ_Y" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5Pgo_ASrZgw" role="1YuTPh">
+      <property role="TrG5h" value="containsString" />
+      <ref role="1YaFvo" to="av4b:5Pgo_ASrZfv" resolve="ContainsString" />
     </node>
   </node>
 </model>
