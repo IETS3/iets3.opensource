@@ -74,6 +74,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.lookup.interpreter/org.iets3.core.expr.lookup.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.math.interpreter/org.iets3.core.expr.math.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.messages.interpreter/org.iets3.core.expr.messages.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.metafunction.interpreter/org.iets3.core.expr.metafunction.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.mutable.interpreter/org.iets3.core.expr.mutable.interpreter.msd" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.natlang.interpreter/org.iets3.core.expr.natlang.interpreter.msd" folder="expr.lang-advanced" />
