@@ -401,7 +401,7 @@
       </concept>
       <concept id="6723982381145448848" name="org.iets3.core.expr.tests.structure.IsValidRecord" flags="ng" index="3_u8f9" />
       <concept id="6723982381145831383" name="org.iets3.core.expr.tests.structure.IsInvalid" flags="ng" index="3_vHme">
-        <child id="6723982381151129394" name="errorMessageMatcher" index="3_bYPF" />
+        <child id="6723982381151129394" name="messageMatcher" index="3_bYPF" />
       </concept>
       <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
         <property id="993724751390561557" name="label" index="1QVVTK" />
