@@ -1024,14 +1024,14 @@
     <property role="EcuMT" value="6723982381145448848" />
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="IsValidRecord" />
-    <property role="34LRSv" value="is a valid record" />
+    <property role="34LRSv" value="a valid record" />
     <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
   </node>
   <node concept="1TIwiD" id="5Pgo_ASbFvn">
     <property role="EcuMT" value="6723982381145831383" />
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="IsInvalid" />
-    <property role="34LRSv" value="is invalid" />
+    <property role="34LRSv" value="invalid" />
     <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
     <node concept="1TJgyj" id="5Pgo_ASvSWM" role="1TKVEi">
       <property role="IQ2ns" value="6723982381151129394" />
