@@ -20,6 +20,7 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
@@ -31,6 +32,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -245,6 +250,11 @@
     <property role="TrG5h" value="ErrorKind" />
     <property role="34LRSv" value="error" />
     <ref role="1TJDcQ" node="3vxfdxbksat" resolve="MessageKind" />
+    <node concept="1TJgyi" id="5ZJ96SJAc3u" role="1TKVEl">
+      <property role="IQ2nx" value="6912784008700543198" />
+      <property role="TrG5h" value="errorID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3vxfdxbkQj9">
     <property role="EcuMT" value="4026566441520293065" />

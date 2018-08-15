@@ -79,12 +79,17 @@
       <concept id="4026566441519722348" name="org.iets3.core.expr.messages.structure.GroupTarget" flags="ng" index="1WETeO">
         <reference id="4026566441519722352" name="group" index="1WETeC" />
       </concept>
+      <concept id="4026566441520293065" name="org.iets3.core.expr.messages.structure.WarningKind" flags="ng" index="1WG_wh" />
+      <concept id="4026566441520293026" name="org.iets3.core.expr.messages.structure.ErrorKind" flags="ng" index="1WG_xU">
+        <property id="6912784008700543198" name="errorID" index="1KtYiK" />
+      </concept>
       <concept id="4026566441518088795" name="org.iets3.core.expr.messages.structure.Group" flags="ng" index="1WOfU3" />
       <concept id="4026566441518088787" name="org.iets3.core.expr.messages.structure.IMessageNamespace" flags="ng" index="1WOfUb">
         <child id="4026566441518088822" name="contents" index="1WOfUI" />
       </concept>
       <concept id="4026566441518088783" name="org.iets3.core.expr.messages.structure.MessageContainer" flags="ng" index="1WOfUn" />
       <concept id="4026566441518134939" name="org.iets3.core.expr.messages.structure.MessageDefinition" flags="ng" index="1WOOD3">
+        <child id="4026566441520186014" name="kind" index="1WGfT6" />
         <child id="4026566441518440950" name="text" index="1WPxOI" />
         <child id="4026566441518474145" name="args" index="1WPDXT" />
       </concept>
@@ -272,6 +277,44 @@
           <property role="30bdrQ" value="m6 33 m6 true" />
         </node>
       </node>
+      <node concept="_fkuZ" id="5ZJ96SJBsQF" role="_fkp5">
+        <node concept="_fku$" id="5ZJ96SJBsQG" role="_fkur" />
+        <node concept="1QScDb" id="5ZJ96SJBsQL" role="_fkuY">
+          <node concept="1WPo9w" id="5ZJ96SJBt7f" role="1QScD9">
+            <ref role="1WPo9$" node="5ZJ96SJBr43" resolve="w" />
+          </node>
+          <node concept="1QScDb" id="5ZJ96SJBsQN" role="30czhm">
+            <node concept="1WETeO" id="5ZJ96SJBsUr" role="1QScD9">
+              <ref role="1WETeC" node="5ZJ96SJBr0f" resolve="withKinds" />
+            </node>
+            <node concept="1WPpZc" id="5ZJ96SJBsQP" role="30czhm">
+              <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bdrP" id="5ZJ96SJBt2o" role="_fkuS">
+          <property role="30bdrQ" value="WARNING: w" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5ZJ96SJBtgw" role="_fkp5">
+        <node concept="_fku$" id="5ZJ96SJBtgx" role="_fkur" />
+        <node concept="1QScDb" id="5ZJ96SJBtgy" role="_fkuY">
+          <node concept="1QScDb" id="5ZJ96SJBtg$" role="30czhm">
+            <node concept="1WETeO" id="5ZJ96SJBtg_" role="1QScD9">
+              <ref role="1WETeC" node="5ZJ96SJBr0f" resolve="withKinds" />
+            </node>
+            <node concept="1WPpZc" id="5ZJ96SJBtgA" role="30czhm">
+              <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
+            </node>
+          </node>
+          <node concept="1WPo9w" id="5ZJ96SJBtkk" role="1QScD9">
+            <ref role="1WPo9$" node="5ZJ96SJBr6$" resolve="e" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="5ZJ96SJBtgB" role="_fkuS">
+          <property role="30bdrQ" value="ERROR 4711: e" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2XOHcx" id="3vxfdxbrceL">
@@ -414,6 +457,25 @@
             <property role="TrG5h" value="b" />
             <node concept="2vmvy5" id="3vxfdxburFr" role="1WPDXP" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1WOfU3" id="5ZJ96SJBr0f" role="1WOfUI">
+      <property role="TrG5h" value="withKinds" />
+      <node concept="1WOOD3" id="5ZJ96SJBr43" role="1WOfUI">
+        <property role="TrG5h" value="w" />
+        <node concept="30bdrP" id="5ZJ96SJBr6k" role="1WPxOI">
+          <property role="30bdrQ" value="w" />
+        </node>
+        <node concept="1WG_wh" id="5ZJ96SJBr6c" role="1WGfT6" />
+      </node>
+      <node concept="1WOOD3" id="5ZJ96SJBr6$" role="1WOfUI">
+        <property role="TrG5h" value="e" />
+        <node concept="30bdrP" id="5ZJ96SJBr6_" role="1WPxOI">
+          <property role="30bdrQ" value="e" />
+        </node>
+        <node concept="1WG_xU" id="5ZJ96SJBr8T" role="1WGfT6">
+          <property role="1KtYiK" value="4711" />
         </node>
       </node>
     </node>
