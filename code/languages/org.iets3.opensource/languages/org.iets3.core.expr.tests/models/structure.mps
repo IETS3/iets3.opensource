@@ -13,8 +13,8 @@
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
-    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -972,6 +972,68 @@
       <property role="20kJfa" value="actual" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="543569365052056267" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_AS3Joq">
+    <property role="EcuMT" value="6723982381143750170" />
+    <property role="TrG5h" value="AssertThatTestItem" />
+    <property role="34LRSv" value="assert-that" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyj" id="5Pgo_AS3PT3" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381143776835" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5Pgo_AS3PT1" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381143776833" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="matcher" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_AS3PT0">
+    <property role="EcuMT" value="6723982381143776832" />
+    <property role="TrG5h" value="AbstractValueMatcher" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="matcher" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASae6g">
+    <property role="EcuMT" value="6723982381145448848" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="IsValidRecord" />
+    <property role="34LRSv" value="is a valid record" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASbFvn">
+    <property role="EcuMT" value="6723982381145831383" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="IsInvalid" />
+    <property role="34LRSv" value="is invalid" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    <node concept="1TJgyj" id="5Pgo_ASvSWM" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381151129394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="messageMatcher" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASrZfv">
+    <property role="EcuMT" value="6723982381150106591" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="ContainsString" />
+    <property role="34LRSv" value="a string containing" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    <node concept="1TJgyj" id="5Pgo_ASrZg1" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381150106625" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>

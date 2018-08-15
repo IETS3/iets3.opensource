@@ -392,6 +392,17 @@
       <concept id="4874335060898975312" name="org.iets3.core.expr.tests.structure.InvalidValueTestItem" flags="ng" index="3uI9eT">
         <child id="4874335060898991569" name="actual" index="3uId0S" />
       </concept>
+      <concept id="6723982381150106591" name="org.iets3.core.expr.tests.structure.ContainsString" flags="ng" index="3_fT66">
+        <child id="6723982381150106625" name="text" index="3_fTpo" />
+      </concept>
+      <concept id="6723982381143750170" name="org.iets3.core.expr.tests.structure.AssertThatTestItem" flags="ng" index="3_nDh3">
+        <child id="6723982381143776833" name="matcher" index="3_nNKo" />
+        <child id="6723982381143776835" name="value" index="3_nNKq" />
+      </concept>
+      <concept id="6723982381145448848" name="org.iets3.core.expr.tests.structure.IsValidRecord" flags="ng" index="3_u8f9" />
+      <concept id="6723982381145831383" name="org.iets3.core.expr.tests.structure.IsInvalid" flags="ng" index="3_vHme">
+        <child id="6723982381151129394" name="errorMessageMatcher" index="3_bYPF" />
+      </concept>
       <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
         <property id="993724751390561557" name="label" index="1QVVTK" />
         <property id="993724751390561559" name="value" index="1QVVTM" />
@@ -26137,6 +26148,58 @@
           </node>
           <node concept="30bXRB" id="1QYdL39Gm7L" role="2S399l">
             <property role="30bXRw" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5Pgo_ASgyPM" role="_iOnB" />
+    <node concept="_fkuM" id="5Pgo_ASgx2_" role="_iOnB">
+      <property role="TrG5h" value="assertThatValidInvalid" />
+      <node concept="3_nDh3" id="5Pgo_ASg$0T" role="_fkp5">
+        <node concept="2S399m" id="5Pgo_ASg$15" role="3_nNKq">
+          <node concept="2Ss9cW" id="5Pgo_ASgLD3" role="2S399n">
+            <ref role="2Ss9cX" node="1QYdL39G9Vz" resolve="AgeRange" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASgLM9" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASgLMT" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+        <node concept="3_vHme" id="5Pgo_ASgM2L" role="3_nNKo" />
+      </node>
+      <node concept="3_nDh3" id="5Pgo_ASoVxA" role="_fkp5">
+        <node concept="2S399m" id="5Pgo_ASoVyb" role="3_nNKq">
+          <node concept="2Ss9cW" id="5Pgo_ASoVyg" role="2S399n">
+            <ref role="2Ss9cX" node="1QYdL39G9Vz" resolve="AgeRange" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASoVyE" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASoVzq" role="2S399l">
+            <property role="30bXRw" value="5" />
+          </node>
+        </node>
+        <node concept="3_u8f9" id="5Pgo_ASoVPa" role="3_nNKo" />
+      </node>
+      <node concept="3_nDh3" id="5Pgo_ASz3b7" role="_fkp5">
+        <node concept="2S399m" id="5Pgo_ASz3bI" role="3_nNKq">
+          <node concept="2Ss9cW" id="5Pgo_ASz3bN" role="2S399n">
+            <ref role="2Ss9cX" node="1QYdL39G9Vz" resolve="AgeRange" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASz3cb" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="5Pgo_ASz3cV" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+        <node concept="3_vHme" id="5Pgo_ASz3wr" role="3_nNKo">
+          <node concept="3_fT66" id="5Pgo_ASz3wC" role="3_bYPF">
+            <node concept="30bdrP" id="5Pgo_ASz3wQ" role="3_fTpo">
+              <property role="30bdrQ" value="to &gt; from" />
+            </node>
           </node>
         </node>
       </node>
