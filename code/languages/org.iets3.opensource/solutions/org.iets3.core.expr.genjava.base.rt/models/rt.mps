@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
+        <child id="1219921048460" name="componentType" index="8Xvag" />
+      </concept>
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -22,6 +25,10 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+        <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -141,6 +148,7 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -149,6 +157,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
     </language>
   </registry>
   <node concept="312cEu" id="2JCBjYVcYG3">
@@ -878,6 +887,76 @@
     <node concept="3uibUv" id="2ICvjplYio0" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
+  </node>
+  <node concept="312cEu" id="VXV$b3eZ23">
+    <property role="TrG5h" value="ParameterSetWrapper" />
+    <node concept="312cEg" id="VXV$b3qj39" role="jymVt">
+      <property role="TrG5h" value="parameters" />
+      <property role="34CwA1" value="false" />
+      <property role="3TUv4t" value="false" />
+      <property role="eg7rD" value="false" />
+      <node concept="3uibUv" id="VXV$b3qj3c" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="3uibUv" id="VXV$b3qj3e" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="VXV$b3qj3g" role="33vP2m">
+        <node concept="HV5vD" id="VXV$b3J0Uc" role="2ShVmc">
+          <ref role="HV5vE" to="33ny:~ArrayList" resolve="ArrayList" />
+          <node concept="3uibUv" id="VXV$b3J3L3" role="HU9BZ">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="VXV$b3qj3f" role="1B3o_S" />
+    </node>
+    <node concept="3clFbW" id="VXV$b5m8Pw" role="jymVt">
+      <node concept="3cqZAl" id="VXV$b5m8Pz" role="3clF45" />
+      <node concept="3Tm1VV" id="VXV$b5m8P$" role="1B3o_S" />
+      <node concept="3clFbS" id="VXV$b5m8P_" role="3clF47">
+        <node concept="XkiVB" id="VXV$b5m8Ql" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbW" id="VXV$b5mbm6" role="jymVt">
+      <node concept="3cqZAl" id="VXV$b5mbm8" role="3clF45" />
+      <node concept="3Tm1VV" id="VXV$b5mbm9" role="1B3o_S" />
+      <node concept="3clFbS" id="VXV$b5mbma" role="3clF47">
+        <node concept="XkiVB" id="VXV$b5mdKD" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+        </node>
+        <node concept="3clFbF" id="VXV$b5mbvy" role="3cqZAp">
+          <node concept="2OqwBi" id="VXV$b5mc6y" role="3clFbG">
+            <node concept="37vLTw" id="VXV$b5mbvx" role="2Oq$k0">
+              <ref role="3cqZAo" node="VXV$b3qj39" resolve="parameters" />
+            </node>
+            <node concept="liA8E" id="VXV$b5mcKj" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <node concept="2OqwBi" id="VXV$b5mfGL" role="37wK5m">
+                <node concept="2OqwBi" id="VXV$b5mdZZ" role="2Oq$k0">
+                  <node concept="37vLTw" id="VXV$b5md6I" role="2Oq$k0">
+                    <ref role="3cqZAo" node="VXV$b5mbui" resolve="params" />
+                  </node>
+                  <node concept="39bAoz" id="VXV$b5mf9T" role="2OqNvi" />
+                </node>
+                <node concept="ANE8D" id="VXV$b5mgsv" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="VXV$b5mbui" role="3clF46">
+        <property role="TrG5h" value="params" />
+        <node concept="8X2XB" id="VXV$b5mbuA" role="1tU5fm">
+          <node concept="3uibUv" id="VXV$b5mbuh" role="8Xvag">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="VXV$b3eZ24" role="1B3o_S" />
   </node>
 </model>
 

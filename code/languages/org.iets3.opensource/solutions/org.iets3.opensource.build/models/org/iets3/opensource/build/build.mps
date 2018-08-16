@@ -5324,6 +5324,12 @@
               <ref role="3bR37D" node="26tZ$Z4rphz" resolve="org.iets3.core.expr.genjava.functionalJava" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5xKeM9hmPIe" role="3bR37C">
+            <node concept="3bR9La" id="5xKeM9hmPIf" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7iiyGQ7dLQL" resolve="jetbrains.mps.baseLanguage.jdk8" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="26tZ$Z4s7fa" role="1E1XAP">
           <ref role="1E0d5P" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
