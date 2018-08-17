@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="f3b3dc28-fee3-49e1-a46e-685e96389094" name="com.mbeddr.mpsutil.bldoc" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -13,8 +14,8 @@
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
-    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -24,7 +25,23 @@
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="f3b3dc28-fee3-49e1-a46e-685e96389094" name="com.mbeddr.mpsutil.bldoc">
+      <concept id="4437216639171902297" name="com.mbeddr.mpsutil.bldoc.structure.BLDoc" flags="ng" index="sRL9v">
+        <child id="4437216639171930012" name="text" index="sRSUq" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -973,6 +990,113 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="543569365052056267" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_AS3Joq">
+    <property role="EcuMT" value="6723982381143750170" />
+    <property role="TrG5h" value="AssertThatTestItem" />
+    <property role="34LRSv" value="assert-that" />
+    <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyj" id="5Pgo_AS3PT3" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381143776835" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5Pgo_AS3PT1" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381143776833" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="matcher" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_AS3PT0">
+    <property role="EcuMT" value="6723982381143776832" />
+    <property role="TrG5h" value="AbstractValueMatcher" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="matcher" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASae6g">
+    <property role="EcuMT" value="6723982381145448848" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="IsValidRecord" />
+    <property role="34LRSv" value="a valid record" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASbFvn">
+    <property role="EcuMT" value="6723982381145831383" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="IsInvalid" />
+    <property role="34LRSv" value="invalid" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    <node concept="1TJgyj" id="5Pgo_ASvSWM" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381151129394" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="messageMatcher" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASrZfv">
+    <property role="EcuMT" value="6723982381150106591" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="ContainsString" />
+    <property role="34LRSv" value="a string containing" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    <node concept="1TJgyj" id="5Pgo_ASrZg1" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381150106625" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASAjDx">
+    <property role="EcuMT" value="6723982381152811617" />
+    <property role="3GE5qa" value="matcher.type" />
+    <property role="TrG5h" value="MatcherType" />
+    <property role="34LRSv" value="matcher" />
+    <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
+    <node concept="1TJgyj" id="5Pgo_ASAjDE" role="1TKVEi">
+      <property role="IQ2ns" value="6723982381152811626" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="forType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASByx4">
+    <property role="EcuMT" value="6723982381153134660" />
+    <property role="3GE5qa" value="matcher.type" />
+    <property role="TrG5h" value="MatcherForAnyType" />
+    <property role="34LRSv" value="matcher-for-any-type" />
+    <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
+    <node concept="t5JxF" id="5Pgo_ASByxd" role="lGtFl">
+      <property role="t5JxN" value="A matcher for any expression value" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASBz9Z">
+    <property role="EcuMT" value="6723982381153137279" />
+    <property role="3GE5qa" value="matcher.type" />
+    <property role="TrG5h" value="MatcherForAnyRecordType" />
+    <property role="34LRSv" value="matcher-for-any-record-type" />
+    <ref role="1TJDcQ" node="5Pgo_ASE531" resolve="AbstractMatcherType" />
+  </node>
+  <node concept="1TIwiD" id="5Pgo_ASE531">
+    <property role="EcuMT" value="6723982381153800385" />
+    <property role="3GE5qa" value="matcher.type" />
+    <property role="TrG5h" value="AbstractMatcherType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="t5JxF" id="5Pgo_ASE532" role="lGtFl" />
+    <node concept="sRL9v" id="5Pgo_ASE9mQ" role="lGtFl">
+      <node concept="19SGf9" id="5Pgo_ASE9mR" role="sRSUq">
+        <node concept="19SUe$" id="5Pgo_ASE9mS" role="19SJt6">
+          <property role="19SUeA" value="Base class for matcher types. Is not an interface because comparison rules won't match on interfaces.&#10;Doesn't extend Type because it's not supposed to be used for expressions.&#10;When type-checking matchers, comparability should be used rather than sub/supertyping, since it may make sense to use a matcher for (Java) Numbers to match Integers and Objects but not Strings." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

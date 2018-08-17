@@ -52,6 +52,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="997079742910640235" name="fillActionContext" index="1teQrl" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -566,6 +567,7 @@
     <property role="TrG5h" value="runManuallyOnNode" />
     <property role="2uzpH1" value="Run/Evaluate/Check Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="31wEG_giQ13" role="tncku">
       <node concept="3clFbS" id="31wEG_giQ14" role="2VODD2">
         <node concept="3cpWs8" id="7TU$2foe_N6" role="3cqZAp">
@@ -846,9 +848,10 @@
   </node>
   <node concept="sE7Ow" id="4bmM0avMBSf">
     <property role="TrG5h" value="runAllManuallyOnRoot" />
-    <property role="2uzpH1" value="Run/Evaluate/Check all in Root Manually" />
+    <property role="2uzpH1" value="Run/Evaluate/Check All in Root Manually" />
     <property role="3GE5qa" value="view" />
     <property role="fJN8o" value="true" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="4bmM0avMBSg" role="tncku">
       <node concept="3clFbS" id="4bmM0avMBSh" role="2VODD2">
         <node concept="3cpWs8" id="4bmM0avMH1T" role="3cqZAp">
@@ -1173,6 +1176,7 @@
     <property role="TrG5h" value="runAllManuallyOnModel" />
     <property role="2uzpH1" value="Run/Evaluate/Check All in Model Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="3HmE5WaYae3" role="tncku">
       <node concept="3clFbS" id="3HmE5WaYae4" role="2VODD2">
         <node concept="3cpWs8" id="3HmE5WaYmi_" role="3cqZAp">
@@ -1389,6 +1393,7 @@
     <property role="TrG5h" value="runManuallyOnContainer" />
     <property role="2uzpH1" value="Run/Evaluate/Check Children Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="TuTPrvRoFc" role="tncku">
       <node concept="3clFbS" id="TuTPrvRoFd" role="2VODD2">
         <node concept="3cpWs8" id="TuTPrvR$bB" role="3cqZAp">

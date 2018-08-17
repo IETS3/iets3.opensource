@@ -528,20 +528,15 @@
                 <node concept="2ShNRf" id="4YhD5cZq1uq" role="33vP2m">
                   <node concept="1pGfFk" id="4YhD5cZq1ur" role="2ShVmc">
                     <ref role="37wK5l" to="pq1l:7$ajNzjzTau" resolve="RecordValue" />
-                    <node concept="2OqwBi" id="4YhD5cZq3pd" role="37wK5m">
-                      <node concept="2OqwBi" id="4YhD5cZq2qI" role="2Oq$k0">
-                        <node concept="2OqwBi" id="4YhD5cZq1Dl" role="2Oq$k0">
-                          <node concept="oxGPV" id="4YhD5cZq1uV" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="4YhD5cZq1Px" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wtll:4YhD5cZo8Kt" resolve="record" />
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="4YhD5cZq2Fc" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                    <node concept="2OqwBi" id="4YhD5cZq2qI" role="37wK5m">
+                      <node concept="2OqwBi" id="4YhD5cZq1Dl" role="2Oq$k0">
+                        <node concept="oxGPV" id="4YhD5cZq1uV" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="4YhD5cZq1Px" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wtll:4YhD5cZo8Kt" resolve="record" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="4YhD5cZq4eg" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="3TrEf2" id="4YhD5cZq2Fc" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
                       </node>
                     </node>
                   </node>
