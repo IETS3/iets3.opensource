@@ -9,7 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -5475,6 +5475,7 @@
           </node>
           <node concept="1SiIV0" id="7hYBiBR1Wk6" role="3bR37C">
             <node concept="3bR9La" id="7hYBiBR1Wkw" role="1SiIV1">
+              <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7iiyGQ7dLQL" resolve="jetbrains.mps.baseLanguage.jdk8" />
             </node>
           </node>
@@ -5900,6 +5901,18 @@
             <node concept="3bR9La" id="5v52mTe7rQu" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4P2D_NhcBFS" role="3bR37C">
+            <node concept="3bR9La" id="4P2D_NhcBFT" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4P2D_NhcBFU" role="3bR37C">
+            <node concept="3bR9La" id="4P2D_NhcBFV" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
             </node>
           </node>
         </node>
@@ -6382,6 +6395,9 @@
         </node>
         <node concept="3LEDTy" id="7sID8G9tuyD" role="3LEDUa">
           <ref role="3LEDTV" node="5Y0kZK1N637" resolve="org.iets3.core.expr.genjava.datetime" />
+        </node>
+        <node concept="3LEDTy" id="4P2D_NhcBIj" role="3LEDUa">
+          <ref role="3LEDTV" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
         </node>
       </node>
       <node concept="3LEwk6" id="26tZ$Z4sNNn" role="2G$12L">
