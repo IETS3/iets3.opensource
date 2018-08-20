@@ -1065,7 +1065,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="forType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Pgo_ASByx4">

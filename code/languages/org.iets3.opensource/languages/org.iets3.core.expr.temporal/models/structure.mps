@@ -262,22 +262,6 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4voqclTxJTX">
-    <property role="EcuMT" value="5177002969019121277" />
-    <property role="TrG5h" value="MapEachSliceOp" />
-    <property role="34LRSv" value="mapEachSlice" />
-    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
-    <node concept="1TJgyj" id="4voqclTxKDZ" role="1TKVEi">
-      <property role="IQ2ns" value="5177002969019124351" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="mapping" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4voqclTxKE2" role="PzmwI">
-      <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1Mp62pP0G8O">
     <property role="EcuMT" value="2060704857949651508" />
     <property role="TrG5h" value="ReduceOp" />

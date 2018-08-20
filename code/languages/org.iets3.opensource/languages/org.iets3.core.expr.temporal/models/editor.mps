@@ -560,33 +560,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="4voqclTxKEZ">
-    <ref role="1XX52x" to="l462:4voqclTxJTX" resolve="MapEachSliceOp" />
-    <node concept="3EZMnI" id="4voqclTxKGm" role="2wV5jI">
-      <node concept="2iRfu4" id="4voqclTxKGn" role="2iSdaV" />
-      <node concept="3F0ifn" id="4voqclTxKF4" role="3EZMnx">
-        <property role="3F0ifm" value="mapEachSlice" />
-      </node>
-      <node concept="3F0ifn" id="4voqclTyBwa" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="4voqclTyBwi" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="4voqclTyBwn" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="4voqclTxKGL" role="3EZMnx">
-        <ref role="1NtTu8" to="l462:4voqclTxKDZ" resolve="mapping" />
-      </node>
-      <node concept="3F0ifn" id="4voqclTxKGX" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="4voqclTxKH4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1Mp62pP0G9p">
     <property role="3GE5qa" value="reduce" />
     <ref role="1XX52x" to="l462:1Mp62pP0G8S" resolve="ReduceStrategy" />
