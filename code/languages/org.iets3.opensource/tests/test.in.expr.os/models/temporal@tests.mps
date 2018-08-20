@@ -19,10 +19,7 @@
     <use id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime" version="0" />
     <use id="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68" name="org.iets3.core.expr.temporal" version="0" />
   </languages>
-  <imports>
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -1683,6 +1680,7 @@
   <node concept="_iOnU" id="7aRvJQErK5w">
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="CornerCases" />
+    <node concept="_ixoA" id="5LZ6dfts9NI" role="_iOnB" />
     <node concept="2zPypq" id="7aRvJQErM8$" role="_iOnB">
       <property role="TrG5h" value="date01" />
       <property role="0Rz4W" value="-609181071" />
