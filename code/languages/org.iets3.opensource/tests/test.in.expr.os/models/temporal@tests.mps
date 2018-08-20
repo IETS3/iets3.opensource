@@ -22,6 +22,7 @@
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+    <import index="gwhq" ref="r:1a392e2b-a810-4629-b159-81ee91222992(test.in.core.expr.genjava.temporal@tests)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -156,9 +157,11 @@
         <child id="5772589292323039890" name="pointInTime" index="FfN7M" />
         <child id="5772589292323039892" name="value" index="FfN7O" />
       </concept>
+      <concept id="1083030003003582645" name="org.iets3.core.expr.temporal.structure.ReduceStrategySum" flags="ng" index="2X6tET" />
       <concept id="5177002969018979140" name="org.iets3.core.expr.temporal.structure.AlwaysExpression" flags="ng" index="YnbI1">
         <child id="5177002969018979144" name="value" index="YnbId" />
       </concept>
+      <concept id="7343796015602118377" name="org.iets3.core.expr.temporal.structure.ReduceStrategyWeighted" flags="ng" index="193G_S" />
       <concept id="3885635233752492667" name="org.iets3.core.expr.temporal.structure.BetweenOp" flags="ng" index="1foUrj">
         <child id="5772589292324527862" name="from" index="F9$mn" />
         <child id="3885635233752492669" name="to" index="1foUrl" />
@@ -177,6 +180,12 @@
       <concept id="8266215269024204056" name="org.iets3.core.expr.temporal.structure.FullOverlapExpr" flags="ng" index="3pFBJ_">
         <child id="8266215269024204057" name="values" index="3pFBJ$" />
       </concept>
+      <concept id="2060704857949651508" name="org.iets3.core.expr.temporal.structure.ReduceOp" flags="ng" index="1DAXCi">
+        <child id="2060704857949651558" name="daterange" index="1DAXD0" />
+        <child id="2060704857949651552" name="strategy" index="1DAXD6" />
+      </concept>
+      <concept id="2060704857949651516" name="org.iets3.core.expr.temporal.structure.ReduceStrategyLast" flags="ng" index="1DAXCq" />
+      <concept id="2060704857949651554" name="org.iets3.core.expr.temporal.structure.ReduceStrategyFirst" flags="ng" index="1DAXD4" />
       <concept id="7638810057890348022" name="org.iets3.core.expr.temporal.structure.MaskOp" flags="ng" index="3HfFEK">
         <child id="7638810057890348023" name="mask" index="3HfFEL" />
         <child id="7638810057890348024" name="defaultVal" index="3HfFEY" />
@@ -202,6 +211,10 @@
         <property id="3885635233757569302" name="yyyy" index="1fc2QY" />
       </concept>
       <concept id="8266215269023528950" name="org.iets3.core.expr.datetime.structure.BeginningOfTIME" flags="ng" index="3pIs$b" />
+      <concept id="2060704857949559990" name="org.iets3.core.expr.datetime.structure.MonthRangeLiteral" flags="ng" index="1DA4ig">
+        <child id="2060704857949559991" name="year" index="1DA4ih" />
+        <child id="2060704857949559996" name="month" index="1DA4iq" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -2820,6 +2833,321 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="7p18LB4QQsq" role="_iOnB" />
+    <node concept="2zPypq" id="46fmv66pZXm" role="_iOnB">
+      <property role="TrG5h" value="toReduce" />
+      <node concept="FfN7I" id="46fmv66q1uJ" role="2zPyp_">
+        <node concept="FfN7L" id="46fmv66q1uK" role="FfN64">
+          <node concept="3pIs$b" id="46fmv66q1uL" role="FfN7M" />
+          <node concept="30bXRB" id="46fmv66q1uM" role="FfN7O">
+            <property role="30bXRw" value="0.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q1uN" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q1uO" role="FfN7M">
+            <property role="1fc2QY" value="2000" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q1uP" role="FfN7O">
+            <property role="30bXRw" value="100.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q1uQ" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q1uR" role="FfN7M">
+            <property role="1fc2QY" value="2000" />
+            <property role="1fc2QX" value="02" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q1uS" role="FfN7O">
+            <property role="30bXRw" value="110.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q1uT" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q1uU" role="FfN7M">
+            <property role="1fc2QY" value="2000" />
+            <property role="1fc2QX" value="06" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q1uV" role="FfN7O">
+            <property role="30bXRw" value="220.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q1uW" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q1uX" role="FfN7M">
+            <property role="1fc2QY" value="2004" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q1uY" role="FfN7O">
+            <property role="30bXRw" value="240.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q1uZ" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q1v0" role="FfN7M">
+            <property role="1fc2QY" value="2004" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="05" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q1v1" role="FfN7O">
+            <property role="30bXRw" value="120.00" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="46fmv66q63Y" role="FfN64">
+          <node concept="1fc2QT" id="46fmv66q63Z" role="FfN7M">
+            <property role="1fc2QY" value="2004" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="07" />
+          </node>
+          <node concept="30bXRB" id="46fmv66q640" role="FfN7O">
+            <property role="30bXRw" value="130.00" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7p18LB4QTKi" role="_iOnB" />
+    <node concept="_ixoA" id="7p18LB4QRWc" role="_iOnB" />
+    <node concept="2zPypq" id="46fmv66mm9M" role="_iOnB">
+      <property role="TrG5h" value="reduceFirstYear" />
+      <node concept="1QScDb" id="46fmv66mnBu" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66mpI4" role="1QScD9">
+          <node concept="1DAXD4" id="46fmv66mwGi" role="1DAXD6" />
+          <node concept="1f6kyV" id="46fmv66mSMp" role="1DAXD0">
+            <node concept="30bXRB" id="46fmv66mTlu" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qpKF" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66pRfE" role="_iOnB">
+      <property role="TrG5h" value="reduceLastYear" />
+      <node concept="1QScDb" id="46fmv66pSK8" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66pUVD" role="1QScD9">
+          <node concept="1DAXCq" id="46fmv66pVw_" role="1DAXD6" />
+          <node concept="1f6kyV" id="46fmv66qgcK" role="1DAXD0">
+            <node concept="30bXRB" id="46fmv66qgMf" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qqo0" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66qldV" role="_iOnB">
+      <property role="TrG5h" value="reduceSumYear" />
+      <node concept="1QScDb" id="46fmv66qmOX" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qp9h" role="1QScD9">
+          <node concept="1f6kyV" id="46fmv66qz_H" role="1DAXD0">
+            <node concept="30bXRB" id="46fmv66q$hL" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+          <node concept="2X6tET" id="46fmv66qtuZ" role="1DAXD6" />
+        </node>
+        <node concept="_emDc" id="46fmv66qr3G" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66qCnl" role="_iOnB">
+      <property role="TrG5h" value="reduceWeightYear" />
+      <node concept="1QScDb" id="46fmv66qE0V" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qGu6" role="1QScD9">
+          <node concept="1f6kyV" id="46fmv66qJFL" role="1DAXD0">
+            <node concept="30bXRB" id="46fmv66qKq4" role="1f6kyW">
+              <property role="30bXRw" value="2000" />
+            </node>
+          </node>
+          <node concept="193G_S" id="46fmv66qIXW" role="1DAXD6" />
+        </node>
+        <node concept="_emDc" id="46fmv66qE08" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="46fmv66qSsM" role="_iOnB" />
+    <node concept="2zPypq" id="46fmv66qVMT" role="_iOnB">
+      <property role="TrG5h" value="reduceFirstMonth" />
+      <node concept="1QScDb" id="46fmv66qVMU" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qVMV" role="1QScD9">
+          <node concept="1DAXD4" id="46fmv66qVMW" role="1DAXD6" />
+          <node concept="1DA4ig" id="7p18LB4QgV$" role="1DAXD0">
+            <node concept="30bXRB" id="7p18LB4QgV_" role="1DA4ih">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="7p18LB4QgVA" role="1DA4iq">
+              <property role="30bXRw" value="2004" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qVMZ" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66qVN0" role="_iOnB">
+      <property role="TrG5h" value="reduceLastMonth" />
+      <node concept="1QScDb" id="46fmv66qVN1" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qVN2" role="1QScD9">
+          <node concept="1DAXCq" id="46fmv66qVN3" role="1DAXD6" />
+          <node concept="1DA4ig" id="7p18LB4Qhic" role="1DAXD0">
+            <node concept="30bXRB" id="7p18LB4Qhid" role="1DA4ih">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="7p18LB4Qhie" role="1DA4iq">
+              <property role="30bXRw" value="2004" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qVN6" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66qVN7" role="_iOnB">
+      <property role="TrG5h" value="reduceSumMonth" />
+      <node concept="1QScDb" id="46fmv66qVN8" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qVN9" role="1QScD9">
+          <node concept="2X6tET" id="46fmv66qVNc" role="1DAXD6" />
+          <node concept="1DA4ig" id="46fmv66rl3G" role="1DAXD0">
+            <node concept="30bXRB" id="46fmv66rl3H" role="1DA4ih">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="46fmv66rl3I" role="1DA4iq">
+              <property role="30bXRw" value="2004" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qVNd" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="46fmv66qVNe" role="_iOnB">
+      <property role="TrG5h" value="reduceWeightMonth" />
+      <node concept="1QScDb" id="46fmv66qVNf" role="2zPyp_">
+        <node concept="1DAXCi" id="46fmv66qVNg" role="1QScD9">
+          <node concept="193G_S" id="46fmv66qVNj" role="1DAXD6" />
+          <node concept="1DA4ig" id="7p18LB4QhCO" role="1DAXD0">
+            <node concept="30bXRB" id="7p18LB4QhCP" role="1DA4ih">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="7p18LB4QhCQ" role="1DA4iq">
+              <property role="30bXRw" value="2004" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="46fmv66qVNk" role="30czhm">
+          <ref role="_emDf" node="46fmv66pZXm" resolve="toReduce" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="46fmv66qU8g" role="_iOnB" />
+    <node concept="_ixoA" id="46fmv66mUZg" role="_iOnB" />
+    <node concept="_fkuM" id="46fmv66mZzJ" role="_iOnB">
+      <property role="TrG5h" value="reduce" />
+      <node concept="_fkuZ" id="46fmv66n12s" role="_fkp5">
+        <node concept="_fku$" id="46fmv66n12t" role="_fkur" />
+        <node concept="_emDc" id="46fmv66n12H" role="_fkuY">
+          <ref role="_emDf" node="46fmv66mm9M" resolve="reduceFirstYear" />
+        </node>
+        <node concept="30bXRB" id="46fmv66q3x3" role="_fkuS">
+          <property role="30bXRw" value="100.00" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66roGw" role="_fkp5">
+        <node concept="_fku$" id="46fmv66roGx" role="_fkur" />
+        <node concept="_emDc" id="46fmv66roGS" role="_fkuY">
+          <ref role="_emDf" node="46fmv66pRfE" resolve="reduceLastYear" />
+        </node>
+        <node concept="30bXRB" id="46fmv66rqCY" role="_fkuS">
+          <property role="30bXRw" value="220.00" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66rs_U" role="_fkp5">
+        <node concept="_fku$" id="46fmv66rs_V" role="_fkur" />
+        <node concept="_emDc" id="46fmv66rsAt" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qldV" resolve="reduceSumYear" />
+        </node>
+        <node concept="30dDZf" id="46fmv66rsKQ" role="_fkuS">
+          <node concept="30dDZf" id="46fmv66rsKR" role="30dEsF">
+            <node concept="30bXRB" id="46fmv66rsKS" role="30dEsF">
+              <property role="30bXRw" value="100.00" />
+            </node>
+            <node concept="30bXRB" id="46fmv66rsKT" role="30dEs_">
+              <property role="30bXRw" value="110.00" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="46fmv66rsMN" role="30dEs_">
+            <property role="30bXRw" value="220.00" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66r$yj" role="_fkp5">
+        <node concept="_fku$" id="46fmv66r$yk" role="_fkur" />
+        <node concept="_emDc" id="46fmv66r$z0" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qCnl" resolve="reduceWeightYear" />
+        </node>
+        <node concept="30bXRB" id="46fmv66rMks" role="_fkuS">
+          <property role="30bXRw" value="2040.4" />
+        </node>
+      </node>
+      <node concept="3dYjL0" id="46fmv66rQkT" role="_fkp5" />
+      <node concept="_fkuZ" id="46fmv66rSll" role="_fkp5">
+        <node concept="_fku$" id="46fmv66rSlm" role="_fkur" />
+        <node concept="_emDc" id="46fmv66rSlX" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qVMT" resolve="reduceFirstMonth" />
+        </node>
+        <node concept="30bXRB" id="46fmv66rSmd" role="_fkuS">
+          <property role="30bXRw" value="240" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66rUnc" role="_fkp5">
+        <node concept="_fku$" id="46fmv66rUnd" role="_fkur" />
+        <node concept="_emDc" id="46fmv66rUnS" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qVN0" resolve="reduceLastMonth" />
+        </node>
+        <node concept="30bXRB" id="46fmv66rUo8" role="_fkuS">
+          <property role="30bXRw" value="130" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66rWph" role="_fkp5">
+        <node concept="_fku$" id="46fmv66rWpi" role="_fkur" />
+        <node concept="_emDc" id="46fmv66rWq1" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qVN7" resolve="reduceSumMonth" />
+        </node>
+        <node concept="30dDZf" id="46fmv66rWuX" role="_fkuS">
+          <node concept="30dDZf" id="46fmv66rWuY" role="30dEsF">
+            <node concept="30bXRB" id="46fmv66rWuZ" role="30dEsF">
+              <property role="30bXRw" value="240" />
+            </node>
+            <node concept="30bXRB" id="46fmv66rWv0" role="30dEs_">
+              <property role="30bXRw" value="120" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="46fmv66rWwU" role="30dEs_">
+            <property role="30bXRw" value="130" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="46fmv66rYID" role="_fkp5">
+        <node concept="_fku$" id="46fmv66rYIE" role="_fkur" />
+        <node concept="_emDc" id="46fmv66rYJ_" role="_fkuY">
+          <ref role="_emDf" node="46fmv66qVNe" resolve="reduceWeightMonth" />
+        </node>
+        <node concept="30bXRB" id="46fmv66srR7" role="_fkuS">
+          <property role="30bXRw" value="138.5" />
+        </node>
+      </node>
+      <node concept="3dYjL0" id="46fmv66pL1O" role="_fkp5" />
+    </node>
+    <node concept="_ixoA" id="7p18LB4QNJI" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0frE" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0ft9" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0fuD" role="_iOnB" />
