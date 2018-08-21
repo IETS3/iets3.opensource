@@ -514,6 +514,32 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="62DU45CA$GV" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="av4b:1ESmOTbCHcU" resolve="AndMatcher" />
+      <node concept="3vetai" id="62DU45CA$YH" role="3vQZUl">
+        <node concept="2YIFZM" id="62DU45CA_iq" role="3vdyny">
+          <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...):org.hamcrest.Matcher" resolve="allOf" />
+          <node concept="10QFUN" id="62DU45CAAk1" role="37wK5m">
+            <node concept="3uibUv" id="62DU45CAAqr" role="10QFUM">
+              <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
+            </node>
+            <node concept="rqRoa" id="62DU45CA_o2" role="10QFUP">
+              <ref role="rqRob" to="av4b:1ESmOTbCHdR" resolve="left" />
+            </node>
+          </node>
+          <node concept="10QFUN" id="62DU45CAAuq" role="37wK5m">
+            <node concept="3uibUv" id="62DU45CAA_9" role="10QFUM">
+              <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />
+            </node>
+            <node concept="rqRoa" id="62DU45CAAfd" role="10QFUP">
+              <ref role="rqRob" to="av4b:1ESmOTbCHdT" resolve="right" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
