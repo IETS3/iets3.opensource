@@ -225,6 +225,9 @@
     <node concept="PrWs8" id="78zh7PnHVAH" role="PzmwI">
       <ref role="PrY4T" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
     </node>
+    <node concept="PrWs8" id="4$QBvTqSrx6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:kxHAhaMPH7" resolve="ITypeOverridingContext" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
