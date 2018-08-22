@@ -21,9 +21,18 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
+        <child id="7971844778466793072" name="then" index="2fGnzA" />
+        <child id="7971844778466793070" name="when" index="2fGnzS" />
+      </concept>
+      <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
+        <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -88,6 +97,7 @@
         <child id="4026566441518088822" name="contents" index="1WOfUI" />
       </concept>
       <concept id="4026566441518088783" name="org.iets3.core.expr.messages.structure.MessageContainer" flags="ng" index="1WOfUn" />
+      <concept id="4026566441518205293" name="org.iets3.core.expr.messages.structure.EmptyMessageContent" flags="ng" index="1WOFmP" />
       <concept id="4026566441518134939" name="org.iets3.core.expr.messages.structure.MessageDefinition" flags="ng" index="1WOOD3">
         <child id="4026566441520186014" name="kind" index="1WGfT6" />
         <child id="4026566441518440950" name="text" index="1WPxOI" />
@@ -477,6 +487,60 @@
         <node concept="1WG_xU" id="5ZJ96SJBr8T" role="1WGfT6">
           <property role="1KtYiK" value="4711" />
         </node>
+      </node>
+    </node>
+    <node concept="1WOFmP" id="3wJ9Qm2j_Ho" role="1WOfUI" />
+    <node concept="1WOOD3" id="3wJ9Qm2j$P8" role="1WOfUI">
+      <property role="TrG5h" value="pleaseTakePills" />
+      <node concept="2fGnzi" id="3wJ9Qm2j$YB" role="1WPxOI">
+        <node concept="2fGnzd" id="3wJ9Qm2j$YC" role="2fGnxs">
+          <node concept="30cPrO" id="3wJ9Qm2j$Zp" role="2fGnzS">
+            <node concept="30bXRB" id="3wJ9Qm2j$ZM" role="30dEs_">
+              <property role="30bXRw" value="0" />
+            </node>
+            <node concept="1WQOXJ" id="3wJ9Qm2j$Zb" role="30dEsF">
+              <ref role="1WQOXw" node="3wJ9Qm2j$TG" resolve="numPills" />
+            </node>
+          </node>
+          <node concept="30bdrP" id="3wJ9Qm2j_zI" role="2fGnzA">
+            <property role="30bdrQ" value="no pills." />
+          </node>
+        </node>
+        <node concept="2fGnzd" id="3wJ9Qm2j$YD" role="2fGnxs">
+          <node concept="30cPrO" id="3wJ9Qm2j_8F" role="2fGnzS">
+            <node concept="30bXRB" id="3wJ9Qm2j_9X" role="30dEs_">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="1WQOXJ" id="3wJ9Qm2j_7_" role="30dEsF">
+              <ref role="1WQOXw" node="3wJ9Qm2j$TG" resolve="numPills" />
+            </node>
+          </node>
+          <node concept="30bdrP" id="3wJ9Qm2j_by" role="2fGnzA">
+            <property role="30bdrQ" value="one pill." />
+          </node>
+        </node>
+        <node concept="2fGnzd" id="3wJ9Qm2j_gk" role="2fGnxs">
+          <node concept="30d7iD" id="3wJ9Qm2j_j9" role="2fGnzS">
+            <node concept="1WQOXJ" id="3wJ9Qm2j_gn" role="30dEsF">
+              <ref role="1WQOXw" node="3wJ9Qm2j$TG" resolve="numPills" />
+            </node>
+            <node concept="30bXRB" id="3wJ9Qm2j_gm" role="30dEs_">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="30dDZf" id="3wJ9Qm2j_nO" role="2fGnzA">
+            <node concept="1WQOXJ" id="3wJ9Qm2j_qr" role="30dEsF">
+              <ref role="1WQOXw" node="3wJ9Qm2j$TG" resolve="numPills" />
+            </node>
+            <node concept="30bdrP" id="3wJ9Qm2j_go" role="30dEs_">
+              <property role="30bdrQ" value=" pills." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1WPDXL" id="3wJ9Qm2j$TG" role="1WPDXT">
+        <property role="TrG5h" value="numPills" />
+        <node concept="mLuIC" id="3wJ9Qm2j$Wm" role="1WPDXP" />
       </node>
     </node>
   </node>
