@@ -1840,7 +1840,7 @@
                   </node>
                   <node concept="1mIQ4w" id="28$LOSBR2yJ" role="2OqNvi">
                     <node concept="chp4Y" id="28$LOSBR2LP" role="cj9EA">
-                      <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                      <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
                     </node>
                   </node>
                 </node>

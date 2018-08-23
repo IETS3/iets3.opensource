@@ -1157,7 +1157,7 @@
         <node concept="mw_s8" id="5a_u3OzljnU" role="1ZfhKB">
           <node concept="2pJPEk" id="5a_u3Ozm5pm" role="mwGJk">
             <node concept="2pJPED" id="5a_u3Ozm5p$" role="2pJPEn">
-              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
               <node concept="2pIpSj" id="5a_u3Ozm5qs" role="2pJxcM">
                 <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                 <node concept="2pJPED" id="5a_u3Ozm5r0" role="2pJxcZ">

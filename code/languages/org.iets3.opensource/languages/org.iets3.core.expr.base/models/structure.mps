@@ -4,7 +4,8 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -385,6 +386,9 @@
     <node concept="PrWs8" id="5IrXfgcUg9w" role="PzmwI">
       <ref role="PrY4T" node="aPhVmWYjmk" resolve="ICanBeLValue" />
     </node>
+    <node concept="PrWs8" id="74u6qanLBP4" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
     <property role="TrG5h" value="IDotTarget" />
@@ -433,6 +437,7 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7849560302565679728" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="1ENje99FhqE" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="xG0f0hk3ZS" role="1TKVEi">
       <property role="IQ2ns" value="606861080870797304" />
@@ -595,6 +600,9 @@
     </node>
     <node concept="PrWs8" id="7mxMACVNvYI" role="PzmwI">
       <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="37t_e$LIDTN" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
   </node>
   <node concept="1TIwiD" id="7kYh9WsvduW">
@@ -1810,20 +1818,6 @@
     <property role="EcuMT" value="8266215269008046728" />
     <property role="TrG5h" value="INeverAllowDot" />
   </node>
-  <node concept="1TIwiD" id="1RwPUjzgIEp">
-    <property role="EcuMT" value="2152957725070518937" />
-    <property role="3GE5qa" value="numeric.number.limit" />
-    <property role="TrG5h" value="MaxExpression" />
-    <property role="34LRSv" value="max" />
-    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
-  </node>
-  <node concept="1TIwiD" id="1RwPUjzgIEq">
-    <property role="EcuMT" value="2152957725070518938" />
-    <property role="3GE5qa" value="numeric.number.limit" />
-    <property role="TrG5h" value="MinExpression" />
-    <property role="34LRSv" value="min" />
-    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
-  </node>
   <node concept="1TIwiD" id="1RwPUjzgk0y">
     <property role="EcuMT" value="2152957725070409762" />
     <property role="3GE5qa" value="numeric.number.limit" />
@@ -1839,9 +1833,34 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1RwPUjzgIEq">
+    <property role="EcuMT" value="2152957725070518938" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="MinExpression" />
+    <property role="34LRSv" value="min" />
+    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
+  </node>
+  <node concept="1TIwiD" id="1RwPUjzgIEp">
+    <property role="EcuMT" value="2152957725070518937" />
+    <property role="3GE5qa" value="numeric.number.limit" />
+    <property role="TrG5h" value="MaxExpression" />
+    <property role="34LRSv" value="max" />
+    <ref role="1TJDcQ" node="1RwPUjzgk0y" resolve="AbstractMinMaxExpression" />
+  </node>
   <node concept="PlHQZ" id="kxHAhaMPH7">
     <property role="EcuMT" value="369777186288917319" />
     <property role="TrG5h" value="ITypeOverridingContext" />
+  </node>
+  <node concept="1TIwiD" id="37t_e$M9iOO">
+    <property role="TrG5h" value="NonStrictEqualsExpression" />
+    <property role="34LRSv" value="===" />
+    <property role="3GE5qa" value="binary.p0800" />
+    <property role="EcuMT" value="3593191807001111860" />
+    <property role="R4oN_" value="intended for semantic modelling only" />
+    <ref role="1TJDcQ" node="4rZeNQ6N6Qp" resolve="BinaryEqualityExpression" />
+    <node concept="PrWs8" id="37t_e$M9iOP" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
 </model>
 

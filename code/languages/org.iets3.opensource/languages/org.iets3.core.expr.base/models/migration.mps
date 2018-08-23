@@ -53,6 +53,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -60,6 +61,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -136,6 +138,8 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -343,6 +347,39 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="4RIBqpW0OZu" role="3clF47">
+        <node concept="3clFbJ" id="1ENje99FanV" role="3cqZAp">
+          <node concept="3clFbS" id="1ENje99FanX" role="3clFbx">
+            <node concept="3cpWs6" id="1ENje99FdmV" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="1ENje99FcOd" role="3clFbw">
+            <node concept="2OqwBi" id="1ENje99FaUY" role="2Oq$k0">
+              <node concept="37vLTw" id="1ENje99FawC" role="2Oq$k0">
+                <ref role="3cqZAo" node="4RIBqpW0P5U" resolve="ife" />
+              </node>
+              <node concept="3TrEf2" id="1ENje99Fc64" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:xG0f0hk3ZS" resolve="elseSection" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1ENje99Fdh8" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1ENje99Fep4" role="3cqZAp">
+          <node concept="3clFbS" id="1ENje99Fep6" role="3clFbx">
+            <node concept="3cpWs6" id="1ENje99Fhqt" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="1ENje99FgLH" role="3clFbw">
+            <node concept="2OqwBi" id="1ENje99FeQU" role="2Oq$k0">
+              <node concept="37vLTw" id="1ENje99Fey0" role="2Oq$k0">
+                <ref role="3cqZAo" node="4RIBqpW0P5U" resolve="ife" />
+              </node>
+              <node concept="3TrEf2" id="1ENje99Fg20" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:6NJfo6_rQ9K" resolve="elsePart" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="1ENje99FhnW" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1ENje99Fegk" role="3cqZAp" />
         <node concept="3cpWs8" id="4RIBqpW0P9i" role="3cqZAp">
           <node concept="3cpWsn" id="4RIBqpW0P9j" role="3cpWs9">
             <property role="TrG5h" value="elseSection" />
@@ -362,6 +399,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1ENje99FdQN" role="3cqZAp" />
         <node concept="3clFbF" id="4RIBqpW0P9q" role="3cqZAp">
           <node concept="37vLTI" id="4RIBqpW0P9r" role="3clFbG">
             <node concept="2OqwBi" id="4RIBqpW0P9s" role="37vLTx">

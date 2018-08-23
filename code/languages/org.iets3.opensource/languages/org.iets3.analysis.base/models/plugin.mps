@@ -1928,7 +1928,7 @@
     <property role="TrG5h" value="SolverTimeoutException" />
     <property role="3GE5qa" value="" />
     <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
-    <node concept="3uibUv" id="2GQBRFCpFTS" role="1zkMxy">
+    <node concept="3uibUv" id="5ajXTE5TPHi" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
     <node concept="2tJIrI" id="2GQBRFCpFTT" role="jymVt" />
@@ -1937,6 +1937,22 @@
       <node concept="3cqZAl" id="2GQBRFCpFU2" role="3clF45" />
       <node concept="3Tm1VV" id="2GQBRFCpFU3" role="1B3o_S" />
       <node concept="3clFbS" id="2GQBRFCpFU4" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="5ajXTE5TQ9W" role="jymVt" />
+    <node concept="3clFb_" id="5ajXTE5TPOg" role="jymVt">
+      <property role="TrG5h" value="getMessage" />
+      <node concept="17QB3L" id="5ajXTE5TR2d" role="3clF45" />
+      <node concept="3Tm1VV" id="5ajXTE5TPOj" role="1B3o_S" />
+      <node concept="3clFbS" id="5ajXTE5TPOk" role="3clF47">
+        <node concept="3clFbF" id="5ajXTE5TRfb" role="3cqZAp">
+          <node concept="Xl_RD" id="5ajXTE5TRfa" role="3clFbG">
+            <property role="Xl_RC" value="The solver timeout exceeded. Please use the 'Set Timeout'-Intention to increase the timeout." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5ajXTE5TPP5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="2GQBRFCpFUp" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFVR" role="jymVt" />
