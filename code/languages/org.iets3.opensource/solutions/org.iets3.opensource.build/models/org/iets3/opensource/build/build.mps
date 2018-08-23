@@ -6302,46 +6302,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="26tZ$Z4rtQt" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.iets3.core.expr.genjava.stateMachineExample.sandbox" />
-        <property role="3LESm3" value="6b5eff48-8eaa-4e24-9818-9fbfa6c3532c" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="26tZ$Z4slZ6" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-          <node concept="2Ry0Ak" id="26tZ$Z4smkb" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="26tZ$Z4soWo" role="2Ry0An">
-              <property role="2Ry0Am" value="org.iets3.core.expr.genjava.stateMachineExample" />
-              <node concept="2Ry0Ak" id="26tZ$Z4sq_y" role="2Ry0An">
-                <property role="2Ry0Am" value="sandbox" />
-                <node concept="2Ry0Ak" id="26tZ$Z4srfD" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.stateMachineExample.sandbox.msd" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="ojgKi0W1pn" role="3bR31x">
-          <node concept="3LXTmp" id="ojgKi0W1po" role="3rtmxm">
-            <node concept="3qWCbU" id="ojgKi0W24f" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="ojgKi0W1IH" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
-              <node concept="2Ry0Ak" id="ojgKi0W243" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="ojgKi0W248" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.stateMachineExample" />
-                  <node concept="2Ry0Ak" id="ojgKi0W24d" role="2Ry0An">
-                    <property role="2Ry0Am" value="sandbox" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="7sID8G9t7pW" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.genjava.temporal.rt" />
