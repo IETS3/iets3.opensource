@@ -356,6 +356,9 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -5987,6 +5990,27 @@
     <ref role="1XX52x" to="av4b:5Pgo_ASBz9Z" resolve="MatcherForAnyRecordType" />
     <node concept="PMmxH" id="5Pgo_ASBzbi" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ESmOTbCHdk">
+    <property role="3GE5qa" value="matcher" />
+    <ref role="1XX52x" to="av4b:1ESmOTbCHcU" resolve="AndMatcher" />
+    <node concept="3EZMnI" id="1ESmOTbCHdm" role="2wV5jI">
+      <node concept="l2Vlx" id="1ESmOTbCHdp" role="2iSdaV" />
+      <node concept="1kIj98" id="1ESmOTbCHdW" role="3EZMnx">
+        <node concept="3F1sOY" id="1ESmOTbCHe3" role="1kIj9b">
+          <ref role="1NtTu8" to="av4b:1ESmOTbCHdR" resolve="left" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="62DU45C_iVA" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="1kIj98" id="62DU45C_iW9" role="3EZMnx">
+        <node concept="3F1sOY" id="1ESmOTbCHej" role="1kIj9b">
+          <ref role="1NtTu8" to="av4b:1ESmOTbCHdT" resolve="right" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -225,6 +225,9 @@
     <node concept="PrWs8" id="78zh7PnHVAH" role="PzmwI">
       <ref role="PrY4T" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
     </node>
+    <node concept="PrWs8" id="4$QBvTqSrx6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:kxHAhaMPH7" resolve="ITypeOverridingContext" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
@@ -1097,6 +1100,27 @@
           <property role="19SUeA" value="Base class for matcher types. Is not an interface because comparison rules won't match on interfaces.&#10;Doesn't extend Type because it's not supposed to be used for expressions.&#10;When type-checking matchers, comparability should be used rather than sub/supertyping, since it may make sense to use a matcher for (Java) Numbers to match Integers and Objects but not Strings." />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ESmOTbCHcU">
+    <property role="EcuMT" value="1925389232535425850" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="AndMatcher" />
+    <property role="34LRSv" value="and" />
+    <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    <node concept="1TJgyj" id="1ESmOTbCHdR" role="1TKVEi">
+      <property role="IQ2ns" value="1925389232535425911" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+    <node concept="1TJgyj" id="1ESmOTbCHdT" role="1TKVEi">
+      <property role="IQ2ns" value="1925389232535425913" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
     </node>
   </node>
 </model>
