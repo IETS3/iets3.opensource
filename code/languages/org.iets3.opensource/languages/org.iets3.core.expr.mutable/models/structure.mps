@@ -163,7 +163,6 @@
   <node concept="1TIwiD" id="aPhVmWYxIJ">
     <property role="EcuMT" value="195141004745644975" />
     <property role="TrG5h" value="AssignmentExpr_old" />
-    <property role="34LRSv" value=":=" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
     <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
