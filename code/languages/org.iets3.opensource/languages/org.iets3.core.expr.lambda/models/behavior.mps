@@ -4740,9 +4740,17 @@
       <node concept="3Tm1VV" id="1VmWkC0_LWD" role="1B3o_S" />
       <node concept="3clFbS" id="1VmWkC0_LWM" role="3clF47">
         <node concept="3clFbF" id="1VmWkC0_M2n" role="3cqZAp">
-          <node concept="2YIFZM" id="1VmWkC0_M3w" role="3clFbG">
-            <ref role="37wK5l" to="oq0c:4qVjx3jApcC" resolve="pure" />
-            <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+          <node concept="2OqwBi" id="1VmWkC1f$41" role="3clFbG">
+            <node concept="2YIFZM" id="1VmWkC1fzXT" role="2Oq$k0">
+              <ref role="37wK5l" to="oq0c:5kGo$yL$G4Q" resolve="modifies" />
+              <ref role="1Pybhc" to="oq0c:3ni3WieuV7z" resolve="EffectDescriptor" />
+            </node>
+            <node concept="liA8E" id="1VmWkC1f$bK" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:1VmWkC1dUUV" resolve="addKind" />
+              <node concept="Xl_RD" id="1VmWkC1f$cR" role="37wK5m">
+                <property role="Xl_RC" value="local" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
