@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -633,6 +634,53 @@
       <node concept="tn0Fv" id="3RtoCziFOUg" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1VmWkC0z1FT">
+    <property role="EcuMT" value="2222228766292974329" />
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="LocalVarDeclExpr" />
+    <property role="34LRSv" value="var" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1VmWkC0z5Tc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4790956042241053105" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1VmWkC0z5Td" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1VmWkC0z5Te" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+    <node concept="PrWs8" id="1VmWkC0z5Tf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="PrWs8" id="1VmWkC0HI6b" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1VmWkC0z1FS">
+    <property role="EcuMT" value="2222228766292974328" />
+    <property role="TrG5h" value="IAllowLocalVariables" />
+    <property role="3GE5qa" value="var" />
+  </node>
+  <node concept="1TIwiD" id="1VmWkC0$wKA">
+    <property role="EcuMT" value="2222228766293363750" />
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="LocalVarRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="1VmWkC0$wL2" role="1TKVEi">
+      <property role="IQ2ns" value="2222228766293363778" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1VmWkC0z1FT" resolve="LocalVarDeclExpr" />
+    </node>
+    <node concept="PrWs8" id="1VmWkC0_vta" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
     </node>
   </node>
 </model>
