@@ -471,25 +471,6 @@
   </registry>
   <node concept="bUwia" id="1Ds3skywt4G">
     <property role="TrG5h" value="main" />
-    <node concept="3aamgX" id="58mhpWmmwnz" role="3acgRq">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
-      <node concept="gft3U" id="58mhpWmmwnJ" role="1lVwrX">
-        <node concept="Xl_RD" id="58mhpWmmwnP" role="gfFT$">
-          <property role="Xl_RC" value="hello" />
-          <node concept="1sPUBX" id="58mhpWmmwo5" role="lGtFl">
-            <ref role="v9R2y" node="1Ds3skywtnk" resolve="SwitchIToplevelExprContent" />
-            <node concept="3NFfHV" id="58mhpWmnGEA" role="1sPUBK">
-              <node concept="3clFbS" id="58mhpWmnGEB" role="2VODD2">
-                <node concept="3clFbF" id="58mhpWmnMlk" role="3cqZAp">
-                  <node concept="30H73N" id="58mhpWmnMli" role="3clFbG" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3aamgX" id="oj24_nZBY1" role="3acgRq">
       <ref role="30HIoZ" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
       <node concept="1Koe21" id="oj24_nZBYZ" role="1lVwrX">
