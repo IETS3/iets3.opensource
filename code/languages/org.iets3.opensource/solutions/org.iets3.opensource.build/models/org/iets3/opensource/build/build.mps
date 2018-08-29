@@ -7336,8 +7336,8 @@
       </node>
     </node>
     <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
-      <property role="3UIfUI" value="6096" />
       <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="8192" />
     </node>
   </node>
   <node concept="1l3spW" id="OJuIQpzfqR">
