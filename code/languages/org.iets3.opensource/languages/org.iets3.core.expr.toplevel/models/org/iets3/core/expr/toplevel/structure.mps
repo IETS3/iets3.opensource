@@ -116,6 +116,9 @@
     <node concept="PrWs8" id="1xFBUnwLHdc" role="PzmwI">
       <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
     </node>
+    <node concept="PrWs8" id="1VmWkC0$cm9" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:1VmWkC0z1FS" resolve="IAllowLocalVariables" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />

@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="-1" />
-    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
+    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="1" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
@@ -295,6 +295,7 @@
       <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
         <child id="2807135271607939857" name="baseType" index="Uns6T" />
       </concept>
+      <concept id="195141004745644975" name="org.iets3.core.expr.base.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
       <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
         <child id="6481804410367607232" name="expr" index="2YtBW4" />
       </concept>
@@ -533,7 +534,6 @@
       <concept id="3487973603071598058" name="org.iets3.core.expr.mutable.structure.UpdateCurrencyCheck" flags="ng" index="Xo_xD">
         <child id="3487973603071598059" name="oldValue" index="Xo_xC" />
       </concept>
-      <concept id="195141004745644975" name="org.iets3.core.expr.mutable.structure.AssignmentExpr" flags="ng" index="2YjPKq" />
       <concept id="5456956546145366256" name="org.iets3.core.expr.mutable.structure.WithContextExpression" flags="ng" index="1c1V7x">
         <child id="5456956546145366257" name="contextValues" index="1c1V7w" />
         <child id="5456956546145366259" name="expr" index="1c1V7y" />
@@ -1512,17 +1512,17 @@
             <ref role="2AuZ2q" node="7Z_fDCwiQEq" resolve="trigger" />
           </node>
           <node concept="17riQX" id="7Z_fDCwiQFM" role="17vUwr">
-            <node concept="2YjPKq" id="7Z_fDCwiQI9" role="17vFbk">
-              <node concept="30dDZf" id="7Z_fDCwiQKw" role="30dEs_">
-                <node concept="30bXRB" id="7Z_fDCwiQKK" role="30dEs_">
+            <node concept="2YjPKq" id="1VmWkC0kMca" role="17vFbk">
+              <node concept="2YgRg0" id="1VmWkC0kDn8" role="30dEsF">
+                <ref role="2YgRg3" node="7Z_fDCwiQCk" resolve="count" />
+              </node>
+              <node concept="30dDZf" id="1VmWkC0kDrt" role="30dEs_">
+                <node concept="30bXRB" id="1VmWkC0kDrD" role="30dEs_">
                   <property role="30bXRw" value="1" />
                 </node>
-                <node concept="2YgRg0" id="7Z_fDCwiQJv" role="30dEsF">
+                <node concept="2YgRg0" id="1VmWkC0kDq5" role="30dEsF">
                   <ref role="2YgRg3" node="7Z_fDCwiQCk" resolve="count" />
                 </node>
-              </node>
-              <node concept="2YgRg0" id="7Z_fDCwiQHR" role="30dEsF">
-                <ref role="2YgRg3" node="7Z_fDCwiQCk" resolve="count" />
               </node>
             </node>
           </node>
@@ -3440,7 +3440,7 @@
         </node>
         <node concept="1bQR4M" id="37V13JR35mp" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="8lgj:aPhVmWYxIJ" resolve="AssignmentExpr" />
+          <ref role="1bQReP" to="hm2y:aPhVmWYxIJ" resolve="AssignmentExpr" />
         </node>
       </node>
       <node concept="3pwbzX" id="37V13JR35n8" role="3pwbzW">
@@ -3833,7 +3833,7 @@
           <property role="1WP8_x" value="0" />
           <property role="1WP8_t" value="-1" />
           <property role="1WP8_q" value="-1" />
-          <ref role="1WP1uJ" to="8lgj:aPhVmWYxIJ" resolve="AssignmentExpr" />
+          <ref role="1WP1uJ" to="hm2y:aPhVmWYxIJ" resolve="AssignmentExpr" />
         </node>
       </node>
       <node concept="3pwbzX" id="5oWomgoVfkp" role="3pwbzW">

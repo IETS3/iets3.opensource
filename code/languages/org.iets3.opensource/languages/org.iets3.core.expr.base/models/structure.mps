@@ -1862,5 +1862,17 @@
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
   </node>
+  <node concept="1TIwiD" id="aPhVmWYxIJ">
+    <property role="EcuMT" value="195141004745644975" />
+    <property role="TrG5h" value="AssignmentExpr" />
+    <property role="34LRSv" value=":=" />
+    <ref role="1TJDcQ" node="4rZeNQ6MpKl" resolve="BinaryExpression" />
+    <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="2IhchUeqne6" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+  </node>
 </model>
 

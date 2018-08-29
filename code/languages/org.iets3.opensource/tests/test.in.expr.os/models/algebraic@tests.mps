@@ -15,11 +15,10 @@
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="0" />
     <use id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc" version="0" />
-    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="0" />
+    <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="1" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="lvvj" ref="f:diff_old#r:109d7958-4308-4f2a-95cb-ea4731803298(test.in.expr.os.algebraic@tests@old)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -2850,8 +2849,8 @@
           <node concept="39w5ZF" id="28$LOSC10h7" role="1Kh3Cz">
             <node concept="pf3Wd" id="28$LOSC10h8" role="pf3W8">
               <node concept="1KrJjp" id="28$LOSC10h9" role="pf3We">
-                <node concept="1KrMWC" id="28$LOSC10ha" role="1KrJmF">
-                  <ref role="1KrMWx" to="lvvj:5a_u3OzRiQA" resolve="NumLit" />
+                <node concept="1KrMWC" id="1VmWkC0latf" role="1KrJmF">
+                  <ref role="1KrMWx" node="5a_u3OzRiQA" resolve="NumLit" />
                 </node>
                 <node concept="30bXRB" id="28$LOSC10hb" role="1KrJjn">
                   <property role="30bXRw" value="0" />
@@ -3015,8 +3014,8 @@
           <node concept="39w5ZF" id="28$LOSC5vxH" role="1Kh3Cz">
             <node concept="pf3Wd" id="28$LOSC5vxI" role="pf3W8">
               <node concept="1KrJjp" id="28$LOSC5PtM" role="pf3We">
-                <node concept="1KrMWC" id="28$LOSC5PtK" role="1KrJmF">
-                  <ref role="1KrMWx" to="lvvj:28$LOSC5NMm" resolve="ErrorType" />
+                <node concept="1KrMWC" id="1VmWkC0lbul" role="1KrJmF">
+                  <ref role="1KrMWx" node="28$LOSC5NMm" resolve="ErrorType" />
                 </node>
               </node>
             </node>

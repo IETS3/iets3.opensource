@@ -5,6 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,7 +15,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -1445,6 +1446,70 @@
         <node concept="2iRkQZ" id="3RtoCziHdMs" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="3RtoCziHdM3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1VmWkC0z1HS">
+    <property role="3GE5qa" value="var" />
+    <ref role="1XX52x" to="zzzn:1VmWkC0z1FT" resolve="LocalVarDeclExpr" />
+    <node concept="3EZMnI" id="1VmWkC0z5TM" role="2wV5jI">
+      <node concept="l2Vlx" id="1VmWkC0z5TN" role="2iSdaV" />
+      <node concept="3F0ifn" id="1VmWkC0z5TO" role="3EZMnx">
+        <property role="3F0ifm" value="var" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+      </node>
+      <node concept="3F0A7n" id="1VmWkC0z5TP" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="1VmWkC0z5TQ" role="3EZMnx">
+        <node concept="3EZMnI" id="1VmWkC0z5TR" role="_tjki">
+          <node concept="11L4FC" id="1VmWkC0z5TS" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="1VmWkC0z5TT" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F1sOY" id="1VmWkC0z5TU" role="3EZMnx">
+            <ref role="1NtTu8" to="hm2y:69zaTr1EKHX" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="1VmWkC0z5TV" role="2iSdaV" />
+          <node concept="VPM3Z" id="1VmWkC0z5TW" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="1VmWkC0z5TX" role="3EZMnx">
+        <node concept="3F1sOY" id="1VmWkC0z5TY" role="_tjki">
+          <ref role="1NtTu8" to="hm2y:KaZMgy4Ily" resolve="contract" />
+        </node>
+        <node concept="ZYGn8" id="1VmWkC0z5TZ" role="ZWbT9">
+          <node concept="3clFbS" id="1VmWkC0z5U0" role="2VODD2">
+            <node concept="3clFbF" id="1VmWkC0z5U1" role="3cqZAp">
+              <node concept="Xl_RD" id="1VmWkC0z5U2" role="3clFbG">
+                <property role="Xl_RC" value="where" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1VmWkC0z5U3" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="1VmWkC0z5U4" role="3EZMnx">
+        <ref role="1NtTu8" to="zzzn:1VmWkC0z5Tc" resolve="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1VmWkC0$wL0">
+    <property role="3GE5qa" value="var" />
+    <ref role="1XX52x" to="zzzn:1VmWkC0$wKA" resolve="LocalVarRef" />
+    <node concept="1iCGBv" id="1VmWkC0$wL4" role="2wV5jI">
+      <ref role="1NtTu8" to="zzzn:1VmWkC0$wL2" resolve="var" />
+      <node concept="1sVBvm" id="1VmWkC0$wL6" role="1sWHZn">
+        <node concept="3F0A7n" id="1VmWkC0$wLd" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
