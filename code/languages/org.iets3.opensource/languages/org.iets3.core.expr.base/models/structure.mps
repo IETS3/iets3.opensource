@@ -1064,6 +1064,9 @@
     <node concept="PrWs8" id="4qVjx3kr2pf" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="7b6J31DlkPK" role="PzmwI">
+      <ref role="PrY4T" node="aPhVmWYjmk" resolve="ICanBeLValue" />
+    </node>
     <node concept="1TJgyj" id="S$tO8ocnpr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />
