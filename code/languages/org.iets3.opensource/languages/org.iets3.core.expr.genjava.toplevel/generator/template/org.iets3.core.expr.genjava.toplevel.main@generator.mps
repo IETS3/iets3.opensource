@@ -31,6 +31,7 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -5844,19 +5845,19 @@
                             <node concept="2OqwBi" id="7u9eNXiocBS" role="3clFbG">
                               <node concept="2OqwBi" id="7u9eNXiocBT" role="2Oq$k0">
                                 <node concept="1PxgMI" id="7u9eNXiocBU" role="2Oq$k0">
-                                  <node concept="chp4Y" id="7u9eNXiocBV" role="3oSUPX">
-                                    <ref role="cht4Q" to="yv47:7D7uZV2dYz2" resolve="RecordType" />
+                                  <node concept="chp4Y" id="41FLuq6bFL6" role="3oSUPX">
+                                    <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
                                   </node>
                                   <node concept="2OqwBi" id="7u9eNXiocBW" role="1m5AlR">
                                     <node concept="30H73N" id="7u9eNXiocBX" role="2Oq$k0" />
                                     <node concept="3JvlWi" id="7u9eNXiocBY" role="2OqNvi" />
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="7u9eNXiocBZ" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
+                                <node concept="2qgKlT" id="41FLuq6c04b" role="2OqNvi">
+                                  <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
                                 </node>
                               </node>
-                              <node concept="3TrcHB" id="7u9eNXiocC0" role="2OqNvi">
+                              <node concept="3TrcHB" id="41FLuq6c0LO" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
