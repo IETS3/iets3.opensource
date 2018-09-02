@@ -310,5 +310,26 @@
     <property role="34LRSv" value="BoT" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="5YygIlbdS$f">
+    <property role="EcuMT" value="6891143932407154959" />
+    <property role="3GE5qa" value="date.op" />
+    <property role="TrG5h" value="YearValue" />
+    <property role="34LRSv" value="yearValue" />
+    <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+  </node>
+  <node concept="1TIwiD" id="5YygIlbdSOf">
+    <property role="EcuMT" value="6891143932407155983" />
+    <property role="3GE5qa" value="date.op" />
+    <property role="TrG5h" value="MonthValue" />
+    <property role="34LRSv" value="monthValue" />
+    <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+  </node>
+  <node concept="1TIwiD" id="5YygIlbdUl7">
+    <property role="EcuMT" value="6891143932407162183" />
+    <property role="3GE5qa" value="date.op" />
+    <property role="TrG5h" value="DayValue" />
+    <property role="34LRSv" value="dayValue" />
+    <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+  </node>
 </model>
 

@@ -1377,5 +1377,92 @@
       <ref role="1YaFvo" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5YygIlbdUlx">
+    <property role="TrG5h" value="typeof_DayValue" />
+    <property role="3GE5qa" value="date.op" />
+    <node concept="3clFbS" id="5YygIlbdUly" role="18ibNy">
+      <node concept="1Z5TYs" id="5YygIlbdUA2" role="3cqZAp">
+        <node concept="mw_s8" id="5YygIlbdUAs" role="1ZfhKB">
+          <node concept="2YIFZM" id="5YygIlbdUC4" role="mwGJk">
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="37wK5l" to="oq0c:5HLmk5GDobX" resolve="createIntegerType" />
+            <node concept="Xl_RD" id="5YygIlbdUXF" role="37wK5m">
+              <property role="Xl_RC" value="1" />
+            </node>
+            <node concept="Xl_RD" id="5YygIlbdV7N" role="37wK5m">
+              <property role="Xl_RC" value="31" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5YygIlbdUA5" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5YygIlbdUlC" role="mwGJk">
+            <node concept="1YBJjd" id="5YygIlbdUnt" role="1Z2MuG">
+              <ref role="1YBMHb" node="5YygIlbdUl$" resolve="dayValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5YygIlbdUl$" role="1YuTPh">
+      <property role="TrG5h" value="dayValue" />
+      <ref role="1YaFvo" to="mi3w:5YygIlbdUl7" resolve="DayValue" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5YygIlbdVb2">
+    <property role="TrG5h" value="typeof_MonthValue" />
+    <property role="3GE5qa" value="date.op" />
+    <node concept="3clFbS" id="5YygIlbdVb3" role="18ibNy">
+      <node concept="1Z5TYs" id="5YygIlbdVb9" role="3cqZAp">
+        <node concept="mw_s8" id="5YygIlbdVba" role="1ZfhKB">
+          <node concept="2YIFZM" id="5YygIlbdVbb" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:5HLmk5GDobX" resolve="createIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="Xl_RD" id="5YygIlbdVbc" role="37wK5m">
+              <property role="Xl_RC" value="1" />
+            </node>
+            <node concept="Xl_RD" id="5YygIlbdVbd" role="37wK5m">
+              <property role="Xl_RC" value="12" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5YygIlbdVbe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5YygIlbdVbf" role="mwGJk">
+            <node concept="1YBJjd" id="5YygIlbdVdv" role="1Z2MuG">
+              <ref role="1YBMHb" node="5YygIlbdVb5" resolve="monthValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5YygIlbdVb5" role="1YuTPh">
+      <property role="TrG5h" value="monthValue" />
+      <ref role="1YaFvo" to="mi3w:5YygIlbdSOf" resolve="MonthValue" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5YygIlbdVf9">
+    <property role="TrG5h" value="typeof_YearValue" />
+    <property role="3GE5qa" value="date.op" />
+    <node concept="3clFbS" id="5YygIlbdVfa" role="18ibNy">
+      <node concept="1Z5TYs" id="5YygIlbdVvE" role="3cqZAp">
+        <node concept="mw_s8" id="5YygIlbdVA_" role="1ZfhKB">
+          <node concept="2YIFZM" id="5YygIlbdVCa" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5YygIlbdVvH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5YygIlbdVfg" role="mwGJk">
+            <node concept="1YBJjd" id="5YygIlbdVh5" role="1Z2MuG">
+              <ref role="1YBMHb" node="5YygIlbdVfc" resolve="yearValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5YygIlbdVfc" role="1YuTPh">
+      <property role="TrG5h" value="yearValue" />
+      <ref role="1YaFvo" to="mi3w:5YygIlbdS$f" resolve="YearValue" />
+    </node>
+  </node>
 </model>
 

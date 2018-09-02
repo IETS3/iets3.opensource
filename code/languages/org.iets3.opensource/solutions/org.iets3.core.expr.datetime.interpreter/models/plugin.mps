@@ -31,6 +31,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -41,6 +44,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -2022,6 +2026,118 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="5YygIlbe7vd" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mi3w:5YygIlbdS$f" resolve="YearValue" />
+      <node concept="3vetai" id="5YygIlbei2j" role="3vQZUl">
+        <node concept="2ShNRf" id="5YygIlbeiu3" role="3vdyny">
+          <node concept="1pGfFk" id="5YygIlbeiA_" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="5YygIlbemzx" role="37wK5m">
+              <node concept="Xl_RD" id="5YygIlbemz$" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="5YygIlbekWg" role="3uHU7B">
+                <node concept="1eOMI4" id="5YygIlbektR" role="2Oq$k0">
+                  <node concept="10QFUN" id="5YygIlbei2X" role="1eOMHV">
+                    <node concept="3EllGN" id="5YygIlbei2Y" role="10QFUP">
+                      <node concept="2OqwBi" id="5YygIlbei2Z" role="3ElVtu">
+                        <node concept="oxGPV" id="5YygIlbei30" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="5YygIlbei31" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                        </node>
+                      </node>
+                      <node concept="TvHiN" id="5YygIlbei32" role="3ElQJh" />
+                    </node>
+                    <node concept="3uibUv" id="5YygIlbeikO" role="10QFUM">
+                      <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5YygIlbelx1" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.getYear():int" resolve="getYear" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="5YygIlbecA2" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mi3w:5YygIlbdSOf" resolve="MonthValue" />
+      <node concept="3vetai" id="5YygIlbeoFQ" role="3vQZUl">
+        <node concept="2ShNRf" id="5YygIlbeoFR" role="3vdyny">
+          <node concept="1pGfFk" id="5YygIlbeoFS" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="5YygIlbeoFT" role="37wK5m">
+              <node concept="Xl_RD" id="5YygIlbeoFU" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="5YygIlbeoFV" role="3uHU7B">
+                <node concept="1eOMI4" id="5YygIlbeoFW" role="2Oq$k0">
+                  <node concept="10QFUN" id="5YygIlbeoFX" role="1eOMHV">
+                    <node concept="3EllGN" id="5YygIlbeoFY" role="10QFUP">
+                      <node concept="2OqwBi" id="5YygIlbeoFZ" role="3ElVtu">
+                        <node concept="oxGPV" id="5YygIlbeoG0" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="5YygIlbeoG1" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                        </node>
+                      </node>
+                      <node concept="TvHiN" id="5YygIlbeoG2" role="3ElQJh" />
+                    </node>
+                    <node concept="3uibUv" id="5YygIlbeoG3" role="10QFUM">
+                      <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5YygIlbeoG4" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue():int" resolve="getMonthValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="5YygIlbefuH" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mi3w:5YygIlbdUl7" resolve="DayValue" />
+      <node concept="3vetai" id="5YygIlbepTc" role="3vQZUl">
+        <node concept="2ShNRf" id="5YygIlbepTd" role="3vdyny">
+          <node concept="1pGfFk" id="5YygIlbepTe" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="5YygIlbepTf" role="37wK5m">
+              <node concept="Xl_RD" id="5YygIlbepTg" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="5YygIlbepTh" role="3uHU7B">
+                <node concept="1eOMI4" id="5YygIlbepTi" role="2Oq$k0">
+                  <node concept="10QFUN" id="5YygIlbepTj" role="1eOMHV">
+                    <node concept="3EllGN" id="5YygIlbepTk" role="10QFUP">
+                      <node concept="2OqwBi" id="5YygIlbepTl" role="3ElVtu">
+                        <node concept="oxGPV" id="5YygIlbepTm" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="5YygIlbepTn" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                        </node>
+                      </node>
+                      <node concept="TvHiN" id="5YygIlbepTo" role="3ElQJh" />
+                    </node>
+                    <node concept="3uibUv" id="5YygIlbepTp" role="10QFUM">
+                      <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5YygIlbepTq" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.getDayOfMonth():int" resolve="getDayOfMonth" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="lHU7p" id="5YygIlbdXLg" role="qq9xR" />
   </node>
 </model>
 
