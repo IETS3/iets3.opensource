@@ -198,8 +198,8 @@
       <property role="IQ2ns" value="543569365052711058" />
       <ref role="20lvS9" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
-    <node concept="PrWs8" id="ub9nkyK62g" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="5YygIlbfTZt" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />

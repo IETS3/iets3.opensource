@@ -35,6 +35,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3893,6 +3894,23 @@
       </node>
       <node concept="17QB3L" id="4yaQL1YfxIQ" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="5YygIlbjlOQ" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="5YygIlbjlOR" role="1B3o_S" />
+      <node concept="3clFbS" id="5YygIlbjlOW" role="3clF47">
+        <node concept="3clFbF" id="5YygIlbj_78" role="3cqZAp">
+          <node concept="3clFbT" id="5YygIlbj_77" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="6HHp2Wnchso">
     <ref role="13h7C2" to="yv47:6HHp2Wn7mD6" resolve="SectionMarker" />
@@ -5992,6 +6010,23 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5YygIlbjUBp" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="5YygIlbjUBq" role="1B3o_S" />
+      <node concept="3clFbS" id="5YygIlbjUBr" role="3clF47">
+        <node concept="3clFbF" id="5YygIlbjUBs" role="3cqZAp">
+          <node concept="3clFbT" id="5YygIlbjUBt" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5YygIlbjUBu" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="67Y8mp$Hxsn" role="13h7CW">
       <node concept="3clFbS" id="67Y8mp$Hxso" role="2VODD2" />
     </node>
@@ -7219,6 +7254,23 @@
   <node concept="13h7C7" id="7cphKbL$4Nr">
     <property role="3GE5qa" value="record" />
     <ref role="13h7C2" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
+    <node concept="13i0hz" id="5YygIlbjS8O" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="5YygIlbjS8P" role="1B3o_S" />
+      <node concept="3clFbS" id="5YygIlbjS8Q" role="3clF47">
+        <node concept="3clFbF" id="5YygIlbjS8R" role="3cqZAp">
+          <node concept="3clFbT" id="5YygIlbjS8S" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5YygIlbjS8T" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="7cphKbL$4Ns" role="13h7CW">
       <node concept="3clFbS" id="7cphKbL$4Nt" role="2VODD2" />
     </node>

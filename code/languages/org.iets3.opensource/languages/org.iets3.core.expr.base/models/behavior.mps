@@ -7207,6 +7207,23 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5YygIlbjlOQ" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="5YygIlbjlOR" role="1B3o_S" />
+      <node concept="3clFbS" id="5YygIlbjlOW" role="3clF47">
+        <node concept="3clFbF" id="5YygIlbj_78" role="3cqZAp">
+          <node concept="3clFbT" id="5YygIlbj_77" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="69zaTr1Z8aK" role="13h7CW">
       <node concept="3clFbS" id="69zaTr1Z8aL" role="2VODD2" />
     </node>
