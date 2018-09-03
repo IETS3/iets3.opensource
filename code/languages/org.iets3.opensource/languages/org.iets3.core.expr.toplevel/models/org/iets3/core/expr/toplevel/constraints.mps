@@ -1675,5 +1675,9 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="1M2myG" to="yv47:3ijD2AhNGn8" resolve="AbstractToplevelExprAdapter" />
   </node>
+  <node concept="1M2fIO" id="5YygIlc4cCk">
+    <property role="3GE5qa" value="record" />
+    <ref role="1M2myG" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
+  </node>
 </model>
 
