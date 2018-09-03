@@ -26405,6 +26405,126 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="5YygIlboZuD" role="_iOnB" />
+    <node concept="_ixoA" id="5YygIlboZ_h" role="_iOnB" />
+    <node concept="2Ss9d8" id="5YygIlbp0IP" role="_iOnB">
+      <property role="TrG5h" value="Point" />
+      <node concept="2Ss9d7" id="5YygIlbp1jM" role="S5Trm">
+        <property role="TrG5h" value="x" />
+        <node concept="mLuIC" id="5YygIlbp1k1" role="2S399n" />
+        <node concept="I61D5" id="5YygIlbp1Av" role="I61D6">
+          <node concept="InuEK" id="5YygIlbp1B7" role="I61D1">
+            <node concept="30d7iD" id="5YygIlbp1Bu" role="I61DU">
+              <node concept="30bXRB" id="5YygIlbp1B_" role="30dEs_">
+                <property role="30bXRw" value="10" />
+              </node>
+              <node concept="XrbUJ" id="5YygIlbp1B6" role="30dEsF">
+                <ref role="XrbUP" node="5YygIlbp1jM" resolve="x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Ss9d7" id="5YygIlbp1kq" role="S5Trm">
+        <property role="TrG5h" value="y" />
+        <node concept="mLuIC" id="5YygIlbp1kL" role="2S399n" />
+      </node>
+      <node concept="I61D5" id="5YygIlbp1_b" role="I61D6">
+        <node concept="InuEK" id="5YygIlbp1_l" role="I61D1">
+          <node concept="30d7iD" id="5YygIlbp1_G" role="I61DU">
+            <node concept="XrbUJ" id="5YygIlbp1_L" role="30dEs_">
+              <ref role="XrbUP" node="5YygIlbp1kq" resolve="y" />
+            </node>
+            <node concept="XrbUJ" id="5YygIlbp1_k" role="30dEsF">
+              <ref role="XrbUP" node="5YygIlbp1jM" resolve="x" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5YygIlboZMB" role="_iOnB" />
+    <node concept="2zPypq" id="5YygIlbp2wo" role="_iOnB">
+      <property role="TrG5h" value="aValidPoint" />
+      <node concept="2S399m" id="5YygIlbp2PE" role="2zPyp_">
+        <node concept="2Ss9cW" id="5YygIlbp2PL" role="2S399n">
+          <ref role="2Ss9cX" node="5YygIlbp0IP" resolve="Point" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp2Q2" role="2S399l">
+          <property role="30bXRw" value="20" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp2QY" role="2S399l">
+          <property role="30bXRw" value="8" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="5YygIlbp2S1" role="_iOnB">
+      <property role="TrG5h" value="invalidOverall" />
+      <node concept="2S399m" id="5YygIlbp2S2" role="2zPyp_">
+        <node concept="2Ss9cW" id="5YygIlbp2S3" role="2S399n">
+          <ref role="2Ss9cX" node="5YygIlbp0IP" resolve="Point" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp2S4" role="2S399l">
+          <property role="30bXRw" value="20" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp2S5" role="2S399l">
+          <property role="30bXRw" value="30" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="5YygIlbp3k7" role="_iOnB">
+      <property role="TrG5h" value="invalidMember" />
+      <node concept="2S399m" id="5YygIlbp3k8" role="2zPyp_">
+        <node concept="2Ss9cW" id="5YygIlbp3k9" role="2S399n">
+          <ref role="2Ss9cX" node="5YygIlbp0IP" resolve="Point" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp3ka" role="2S399l">
+          <property role="30bXRw" value="9" />
+        </node>
+        <node concept="30bXRB" id="5YygIlbp3kb" role="2S399l">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5YygIlbp3Jq" role="_iOnB" />
+    <node concept="_fkuM" id="5YygIlbp4zA" role="_iOnB">
+      <property role="TrG5h" value="assertConstraints" />
+      <node concept="_fkuZ" id="5YygIlbp4W3" role="_fkp5">
+        <node concept="_fku$" id="5YygIlbp4W4" role="_fkur" />
+        <node concept="_emDc" id="5YygIlbp4Wm" role="_fkuY">
+          <ref role="_emDf" node="5YygIlbp2wo" resolve="aValidPoint" />
+        </node>
+        <node concept="_emDc" id="5YygIlbp4Wz" role="_fkuS">
+          <ref role="_emDf" node="5YygIlbp2wo" resolve="aValidPoint" />
+        </node>
+      </node>
+      <node concept="mXNUv" id="5YygIlbp5jj" role="_fkp5">
+        <node concept="_emDc" id="5YygIlbp5jP" role="mXJVd">
+          <ref role="_emDf" node="5YygIlbp2S1" resolve="invalidOverall" />
+        </node>
+      </node>
+      <node concept="mXNUv" id="5YygIlbp5Cs" role="_fkp5">
+        <node concept="_emDc" id="5YygIlbp5D0" role="mXJVd">
+          <ref role="_emDf" node="5YygIlbp3k7" resolve="invalidMember" />
+        </node>
+      </node>
+      <node concept="mXNUv" id="5YygIlbqgq7" role="_fkp5">
+        <node concept="1QScDb" id="5YygIlbqgre" role="mXJVd">
+          <node concept="3vStjw" id="5YygIlbqgLi" role="1QScD9">
+            <node concept="3vStjd" id="5YygIlbqh7b" role="3vSgwc">
+              <ref role="3vStjc" node="5YygIlbp1jM" resolve="x" />
+              <node concept="30bXRB" id="5YygIlbqh8Q" role="3vStj2">
+                <property role="30bXRw" value="9" />
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="5YygIlbqgqP" role="30czhm">
+            <ref role="_emDf" node="5YygIlbp2wo" resolve="aValidPoint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5YygIlboZTl" role="_iOnB" />
+    <node concept="_ixoA" id="5YygIlbp005" role="_iOnB" />
     <node concept="_ixoA" id="4ptnK4jeq01" role="_iOnB" />
   </node>
   <node concept="_iOnU" id="6HHp2WmWx5q">
