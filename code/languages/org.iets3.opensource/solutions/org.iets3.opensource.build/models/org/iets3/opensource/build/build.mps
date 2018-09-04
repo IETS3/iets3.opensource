@@ -7343,6 +7343,9 @@
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="2_Ic$z" id="mfGoedf1p2" role="3989C9">
+      <property role="TZNOO" value="1.8" />
+    </node>
     <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
       <property role="m$_wk" value="dummy" />
       <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">
@@ -7881,6 +7884,9 @@
       <node concept="398BVA" id="33r_JpYZmrz" role="2JcizS">
         <ref role="398BVh" node="OJuIQp_rqy" resolve="mbeddr.artifacts.platform" />
       </node>
+    </node>
+    <node concept="2igEWh" id="mfGoedf18r" role="1hWBAP">
+      <property role="3UIfUI" value="6144" />
     </node>
     <node concept="22LTRH" id="OJuIQq2vpw" role="1hWBAP">
       <property role="TrG5h" value="tests" />
