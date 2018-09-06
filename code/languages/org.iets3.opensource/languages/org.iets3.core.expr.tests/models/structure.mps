@@ -59,6 +59,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -260,6 +261,7 @@
     <property role="TrG5h" value="AbstractTestItem" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tp5g:hG7unSw" resolve="NodeCheckOperation" />
     <node concept="PrWs8" id="78hTg1$THIx" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
@@ -400,6 +402,7 @@
     <property role="TrG5h" value="AbstractCoverageQuery" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="3_DFadN86Ip" role="1TKVEi">
       <property role="IQ2ns" value="4137027550727662489" />
@@ -715,6 +718,7 @@
     <property role="TrG5h" value="AbstractVectorCollection" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1bwJEEeSLgz" role="1TKVEi">
       <property role="IQ2ns" value="1360296727216854051" />
@@ -957,6 +961,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="expressions everywhere" />
+    <property role="R4oN_" value="??" />
     <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
   </node>
   <node concept="1TIwiD" id="1EZBwZ4mn8x">
@@ -1026,6 +1031,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="matcher" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5Pgo_ASae6g">
@@ -1097,6 +1103,9 @@
     <property role="EcuMT" value="6723982381153800385" />
     <property role="3GE5qa" value="matcher.type" />
     <property role="TrG5h" value="AbstractMatcherType" />
+    <property role="R4oN_" value="--" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="t5JxF" id="5Pgo_ASE532" role="lGtFl" />
     <node concept="sRL9v" id="5Pgo_ASE9mQ" role="lGtFl">
@@ -1112,6 +1121,7 @@
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="AndMatcher" />
     <property role="34LRSv" value="and" />
+    <property role="R4oN_" value="joins two matchers by and" />
     <ref role="1TJDcQ" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
     <node concept="1TJgyj" id="1ESmOTbCHdR" role="1TKVEi">
       <property role="IQ2ns" value="1925389232535425911" />

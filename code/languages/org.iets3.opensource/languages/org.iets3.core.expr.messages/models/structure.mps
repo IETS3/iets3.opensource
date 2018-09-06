@@ -16,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -58,6 +59,7 @@
     <property role="EcuMT" value="4026566441518088783" />
     <property role="TrG5h" value="MessageContainer" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcs9n" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9j" resolve="IMessageNamespace" />
@@ -94,6 +96,7 @@
     <property role="EcuMT" value="4026566441518088795" />
     <property role="TrG5h" value="Group" />
     <property role="34LRSv" value="group" />
+    <property role="R4oN_" value="named group of messages (namespace)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcs9s" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9j" resolve="IMessageNamespace" />
@@ -112,6 +115,7 @@
   <node concept="1TIwiD" id="3vxfdxbcBqr">
     <property role="EcuMT" value="4026566441518134939" />
     <property role="TrG5h" value="MessageDefinition" />
+    <property role="R4oN_" value="a message definition, with args and a value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcBqs" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
@@ -140,6 +144,7 @@
   <node concept="1TIwiD" id="3vxfdxbcS_H">
     <property role="EcuMT" value="4026566441518205293" />
     <property role="TrG5h" value="EmptyMessageContent" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcS_I" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
@@ -151,6 +156,7 @@
   <node concept="1TIwiD" id="3vxfdxbdack">
     <property role="EcuMT" value="4026566441518277396" />
     <property role="TrG5h" value="MessageNamespaceRef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3vxfdxbdacB" role="1TKVEi">
       <property role="IQ2ns" value="4026566441518277415" />
@@ -163,6 +169,7 @@
   <node concept="1TIwiD" id="3vxfdxbdbUS">
     <property role="EcuMT" value="4026566441518284472" />
     <property role="TrG5h" value="MessageTarget" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3vxfdxbjb$U" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519855930" />
@@ -185,6 +192,7 @@
   <node concept="1TIwiD" id="3vxfdxbdUeD">
     <property role="EcuMT" value="4026566441518474153" />
     <property role="TrG5h" value="MessageArg" />
+    <property role="R4oN_" value="a message argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbdUeE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -200,6 +208,7 @@
   <node concept="1TIwiD" id="3vxfdxbeBeR">
     <property role="EcuMT" value="4026566441518658487" />
     <property role="TrG5h" value="MessageArgRef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3vxfdxbeBeS" role="1TKVEi">
       <property role="IQ2ns" value="4026566441518658488" />
@@ -212,6 +221,7 @@
   <node concept="1TIwiD" id="3vxfdxbi6AO">
     <property role="EcuMT" value="4026566441519573428" />
     <property role="TrG5h" value="NamespaceType" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3vxfdxbi77u" role="1TKVEi">
       <property role="IQ2ns" value="4026566441519575518" />
@@ -224,6 +234,7 @@
   <node concept="1TIwiD" id="3vxfdxbiEXG">
     <property role="EcuMT" value="4026566441519722348" />
     <property role="TrG5h" value="GroupTarget" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbiEXH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -242,6 +253,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="kind" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3vxfdxbkQiy">
@@ -249,6 +261,7 @@
     <property role="3GE5qa" value="kind" />
     <property role="TrG5h" value="ErrorKind" />
     <property role="34LRSv" value="error" />
+    <property role="R4oN_" value="a message representing an error" />
     <ref role="1TJDcQ" node="3vxfdxbksat" resolve="MessageKind" />
     <node concept="1TJgyi" id="5ZJ96SJAc3u" role="1TKVEl">
       <property role="IQ2nx" value="6912784008700543198" />
@@ -261,12 +274,14 @@
     <property role="3GE5qa" value="kind" />
     <property role="TrG5h" value="WarningKind" />
     <property role="34LRSv" value="warning" />
+    <property role="R4oN_" value="a message representing a warning" />
     <ref role="1TJDcQ" node="3vxfdxbksat" resolve="MessageKind" />
   </node>
   <node concept="1TIwiD" id="3vxfdxblP3W">
     <property role="EcuMT" value="4026566441520550140" />
     <property role="TrG5h" value="TypeCoercion" />
     <property role="34LRSv" value="coerce" />
+    <property role="R4oN_" value="define how to render an arbitrary type as a string" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3vxfdxblP3X" role="1TKVEi">
       <property role="IQ2ns" value="4026566441520550141" />
@@ -287,6 +302,7 @@
     <property role="EcuMT" value="4026566441521058530" />
     <property role="TrG5h" value="CoercionIt" />
     <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="value on which to coerce" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
