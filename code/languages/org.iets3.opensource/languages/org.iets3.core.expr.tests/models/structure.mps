@@ -149,6 +149,11 @@
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="543569365052056266" />
     <ref role="1TJDcQ" node="78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="1TJgyi" id="75Hf8iHwLVy" role="1TKVEl">
+      <property role="IQ2nx" value="8173255439291719394" />
+      <property role="TrG5h" value="strict" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="ub9nkyHAbb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actual" />
