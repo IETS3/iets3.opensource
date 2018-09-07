@@ -233,6 +233,7 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -1902,7 +1903,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="8XWEtdZOAF">
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <ref role="1XX52x" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
     <node concept="3EZMnI" id="8XWEtdZOCv" role="2wV5jI">
       <node concept="3tD6jV" id="8XWEteklS1" role="3F10Kt">
@@ -1968,8 +1969,11 @@
         </node>
       </node>
       <node concept="2iRfu4" id="8XWEtdZOCw" role="2iSdaV" />
-      <node concept="3F0A7n" id="8XWEtdZOCs" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1kIj98" id="6OunYCf4NrW" role="3EZMnx">
+        <property role="3g2DhO" value="true" />
+        <node concept="3F0A7n" id="8XWEtdZOCs" role="1kIj9b">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3F0ifn" id="8XWEtdZOCC" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -2403,7 +2407,7 @@
                           <node concept="2ShNRf" id="5hullqu1KmV" role="1sKFgg">
                             <node concept="3zrR0B" id="5hullqu1KmW" role="2ShVmc">
                               <node concept="3Tqbb2" id="5hullqu1KmX" role="3zrR0E">
-                                <ref role="ehGHo" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+                                <ref role="ehGHo" to="kfo3:6OunYCeYf_8" resolve="AbstractResultColDef" />
                               </node>
                             </node>
                           </node>
@@ -2548,8 +2552,8 @@
                         </node>
                       </node>
                       <node concept="1mIQ4w" id="5hullqu1KnZ" role="2OqNvi">
-                        <node concept="chp4Y" id="5hullqu1Ko0" role="cj9EA">
-                          <ref role="cht4Q" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+                        <node concept="chp4Y" id="6OunYCf1wE_" role="cj9EA">
+                          <ref role="cht4Q" to="kfo3:6OunYCeYf_8" resolve="AbstractResultColDef" />
                         </node>
                       </node>
                     </node>
@@ -2625,6 +2629,19 @@
       <node concept="2iRkQZ" id="1yFVafcIuqT" role="2iSdaV" />
       <node concept="PMmxH" id="1yFVafcIusk" role="3EZMnx">
         <ref role="PMmxG" node="1yFVafcIlfG" resolve="actualTable" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6OunYCeYfBA">
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <ref role="1XX52x" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
+    <node concept="3EZMnI" id="6OunYCf3ALi" role="2wV5jI">
+      <node concept="2iRfu4" id="6OunYCf3ALj" role="2iSdaV" />
+      <node concept="3F0ifn" id="6OunYCf3ALr" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="6OunYCeYfBP" role="3EZMnx">
+        <ref role="1NtTu8" to="kfo3:6OunYCeYfBN" resolve="varref" />
       </node>
     </node>
   </node>

@@ -12,8 +12,10 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -439,10 +441,10 @@
   </node>
   <node concept="1TIwiD" id="8XWEtdX_Yl">
     <property role="EcuMT" value="161551962036658069" />
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <property role="TrG5h" value="ResultColDef" />
     <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
+    <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
     <node concept="1TJgyj" id="8XWEtdX_Yo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658072" />
       <property role="20lmBu" value="aggregation" />
@@ -450,8 +452,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="8XWEtdX_Ym" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="6OunYCf7fuw" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYdD1">
@@ -714,6 +716,37 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5GPhrsV2kb8" resolve="TopLevelColDef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_8">
+    <property role="EcuMT" value="7862827458313648456" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="AbstractResultColDef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_9">
+    <property role="EcuMT" value="7862827458313648457" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="LocalVarAssignColDef" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="assign result to local variable" />
+    <ref role="1TJDcQ" node="6OunYCeYf_a" resolve="AssigningResultColDef" />
+    <node concept="1TJgyj" id="6OunYCeYfBN" role="1TKVEi">
+      <property role="IQ2ns" value="7862827458313648627" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:1VmWkC0$wKA" resolve="LocalVarRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_a">
+    <property role="EcuMT" value="7862827458313648458" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="AssigningResultColDef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
   </node>
 </model>
 

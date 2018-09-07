@@ -363,5 +363,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6OunYCf3ynl">
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <ref role="1M2myG" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
+  </node>
 </model>
 
