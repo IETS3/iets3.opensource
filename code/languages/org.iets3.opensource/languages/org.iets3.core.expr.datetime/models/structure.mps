@@ -123,6 +123,7 @@
     <property role="3GE5qa" value="range.literals" />
     <property role="TrG5h" value="YearRangeType" />
     <property role="34LRSv" value="year" />
+    <property role="R4oN_" value="a period of a year" />
     <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DateRangeType" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXUVE">

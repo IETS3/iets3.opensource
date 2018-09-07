@@ -683,6 +683,7 @@
     <property role="EcuMT" value="1330041117646892901" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="CollectionSizeSpec" />
+    <property role="R4oN_" value="size specification" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="19PglA20qXJ" role="1TKVEl">
       <property role="IQ2nx" value="1330041117646892911" />

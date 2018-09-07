@@ -462,6 +462,7 @@
     <property role="3GE5qa" value="typedef" />
     <property role="TrG5h" value="TypedefType" />
     <property role="EcuMT" value="7740953487936184022" />
+    <property role="R4oN_" value="a typedef type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="6HHp2WngtVn" role="1TKVEi">
       <property role="20lmBu" value="reference" />
