@@ -3358,5 +3358,9 @@
     <property role="3GE5qa" value="adapter" />
     <ref role="aqKnT" to="yv47:iEqaF0KzE$" resolve="AbstractFunctionLikeAdapter" />
   </node>
+  <node concept="3p36aQ" id="DEFIbRs5CK">
+    <property role="3GE5qa" value="record.project" />
+    <ref role="aqKnT" to="yv47:7cphKbLawNf" resolve="InlineRecordType" />
+  </node>
 </model>
 
