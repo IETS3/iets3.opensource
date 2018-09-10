@@ -209,6 +209,7 @@
     <property role="TrG5h" value="IntermediateRS" />
     <property role="EcuMT" value="1690305638831010259" />
     <property role="R4oN_" value="a range with min/max" />
+    <property role="34LRSv" value="in" />
     <ref role="1TJDcQ" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
     <node concept="1TJgyj" id="1tPb0nsnb7k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -747,6 +748,19 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
+  </node>
+  <node concept="1TIwiD" id="6OunYCfi$ob">
+    <property role="EcuMT" value="7862827458318976523" />
+    <property role="3GE5qa" value="multidectab" />
+    <property role="TrG5h" value="RangeValueExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6OunYCfi$oc" role="1TKVEi">
+      <property role="IQ2ns" value="7862827458318976524" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="range" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
+    </node>
   </node>
 </model>
 
