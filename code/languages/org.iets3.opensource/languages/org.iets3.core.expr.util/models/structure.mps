@@ -444,7 +444,7 @@
     <property role="EcuMT" value="161551962036658069" />
     <property role="3GE5qa" value="multidectab.expr.result" />
     <property role="TrG5h" value="ResultColDef" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a new result column" />
     <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
     <node concept="1TJgyj" id="8XWEtdX_Yo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658072" />
