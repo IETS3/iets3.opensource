@@ -1969,6 +1969,9 @@
     <node concept="PrWs8" id="2IhchUeqne6" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
+    <node concept="PrWs8" id="DEFIbRuSDp" role="PzmwI">
+      <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
   </node>
 </model>
 
