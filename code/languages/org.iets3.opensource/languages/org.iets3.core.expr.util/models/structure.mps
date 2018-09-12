@@ -765,5 +765,13 @@
       <ref role="20lvS9" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4u1MGlrSqFE">
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="ExceptRS" />
+    <property role="34LRSv" value="!=" />
+    <property role="EcuMT" value="5152622397687442154" />
+    <property role="R4oN_" value="all values except the specified one" />
+    <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
+  </node>
 </model>
 
