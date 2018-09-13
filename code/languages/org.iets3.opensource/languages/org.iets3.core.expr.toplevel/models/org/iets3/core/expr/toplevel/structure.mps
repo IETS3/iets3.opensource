@@ -682,6 +682,9 @@
     <node concept="PrWs8" id="5YygIlbmK$X" role="PrDN$">
       <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
     </node>
+    <node concept="PrWs8" id="2iOyL3Byu6r" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKinTJ">
     <property role="3GE5qa" value="record" />
