@@ -356,6 +356,7 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -822,6 +823,10 @@
       </node>
       <node concept="3F1sOY" id="7aipPVpIgC4" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:ub9nkyHAbb" resolve="actual" />
+      </node>
+      <node concept="1kHk_G" id="75Hf8iHwRHH" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:75Hf8iHwLVy" resolve="strict" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F1sOY" id="ub9nkyHAcw" role="3EZMnx">
         <ref role="1NtTu8" to="av4b:ub9nkyHAbI" resolve="op" />

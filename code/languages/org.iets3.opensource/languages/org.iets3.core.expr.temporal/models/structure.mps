@@ -23,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -62,6 +63,7 @@
     <property role="EcuMT" value="5772589292322890249" />
     <property role="TrG5h" value="TemporalType" />
     <property role="34LRSv" value="TT" />
+    <property role="R4oN_" value="temporal type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="50smQ1V8i8a" role="1TKVEi">
       <property role="IQ2ns" value="5772589292322890250" />
@@ -75,6 +77,7 @@
     <property role="EcuMT" value="5772589292323039886" />
     <property role="TrG5h" value="TemporalLiteral" />
     <property role="34LRSv" value="TT" />
+    <property role="R4oN_" value="a temporal value" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="50smQ1V8QEf" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
@@ -90,6 +93,7 @@
   <node concept="1TIwiD" id="50smQ1V8QEh">
     <property role="EcuMT" value="5772589292323039889" />
     <property role="TrG5h" value="Slice" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="50smQ1V8QEi" role="1TKVEi">
       <property role="IQ2ns" value="5772589292323039890" />
@@ -111,6 +115,7 @@
     <property role="TrG5h" value="AbstractTemporalOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="50smQ1Vcw3O" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -120,18 +125,21 @@
     <property role="EcuMT" value="5772589292324006373" />
     <property role="TrG5h" value="NumerOfSlices" />
     <property role="34LRSv" value="numberOfSlices" />
+    <property role="R4oN_" value="returns the number of slices" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
   </node>
   <node concept="1TIwiD" id="50smQ1VdEyv">
     <property role="EcuMT" value="5772589292324300959" />
     <property role="TrG5h" value="IntervalsOp" />
     <property role="34LRSv" value="intervals" />
+    <property role="R4oN_" value="returns a list of the time values of each slice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
   </node>
   <node concept="1TIwiD" id="50smQ1VexVM">
     <property role="EcuMT" value="5772589292324527858" />
     <property role="TrG5h" value="ValueAtOp" />
     <property role="34LRSv" value="valueAt" />
+    <property role="R4oN_" value="returns the value of the slice for the specified date" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="50smQ1VexVQ" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -148,6 +156,7 @@
     <property role="EcuMT" value="3885635233750859763" />
     <property role="TrG5h" value="SpreadValuesOp" />
     <property role="34LRSv" value="spreadValues" />
+    <property role="R4oN_" value="creates a list of values from the temporal slices" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUBq4G" role="1TKVEi">
       <property role="IQ2ns" value="3885635233753440556" />
@@ -197,6 +206,7 @@
     <property role="TrG5h" value="AfterOp" />
     <property role="34LRSv" value="after" />
     <property role="3GE5qa" value="reslice" />
+    <property role="R4oN_" value="a value with all slices after the specified date" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUt$2$" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -214,6 +224,7 @@
     <property role="TrG5h" value="BeforeOp" />
     <property role="34LRSv" value="before" />
     <property role="3GE5qa" value="reslice" />
+    <property role="R4oN_" value="a value with all slices before the specified date" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUyXFf" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -231,6 +242,7 @@
     <property role="TrG5h" value="BetweenOp" />
     <property role="34LRSv" value="between" />
     <property role="3GE5qa" value="reslice" />
+    <property role="R4oN_" value="a value with all slices between the specified dates, or in a range" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="3nGzaxUzMDW" role="1TKVEi">
       <property role="IQ2ns" value="5772589292324527862" />
@@ -254,6 +266,7 @@
     <property role="EcuMT" value="5177002969018979140" />
     <property role="TrG5h" value="AlwaysExpression" />
     <property role="34LRSv" value="always" />
+    <property role="R4oN_" value="a temporal value with one slice, starting at BoT" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="4voqclTxdd8" role="1TKVEi">
       <property role="IQ2ns" value="5177002969018979144" />
@@ -268,6 +281,7 @@
     <property role="TrG5h" value="ReduceOp" />
     <property role="34LRSv" value="reduce" />
     <property role="3GE5qa" value="reduce" />
+    <property role="R4oN_" value="creates a single value from a temporal value" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="1Mp62pP0G9w" role="1TKVEi">
       <property role="IQ2ns" value="2060704857949651552" />
@@ -293,6 +307,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="reduce" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1Mp62pP0G8W">
@@ -300,6 +315,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategyLast" />
     <property role="34LRSv" value="LAST" />
+    <property role="R4oN_" value="reduces to the value from the last slice" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="1TIwiD" id="1Mp62pP0G9y">
@@ -307,6 +323,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategyFirst" />
     <property role="34LRSv" value="FIRST" />
+    <property role="R4oN_" value="reduces to the value from the first slice" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="1TIwiD" id="6nEpT4GTaVD">
@@ -314,6 +331,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategyWeighted" />
     <property role="34LRSv" value="WEIGHTED" />
+    <property role="R4oN_" value="reduces to the average of all values in the slice, weighted by slice duration" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="1TIwiD" id="W7GwMM7AyP">
@@ -321,6 +339,7 @@
     <property role="3GE5qa" value="reduce" />
     <property role="TrG5h" value="ReduceStrategySum" />
     <property role="34LRSv" value="SUM" />
+    <property role="R4oN_" value="reduces to the sum of all values in the slice" />
     <ref role="1TJDcQ" node="1Mp62pP0G8S" resolve="ReduceStrategy" />
   </node>
   <node concept="PlHQZ" id="2qmD4SWBg0S">
@@ -335,6 +354,7 @@
     <property role="EcuMT" value="8266215269024204056" />
     <property role="TrG5h" value="FullOverlapExpr" />
     <property role="34LRSv" value="overlap-fully" />
+    <property role="R4oN_" value="checks if two temporal values overlap fully" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7aRvJQF6gkp" role="1TKVEi">
       <property role="IQ2ns" value="8266215269024204057" />
@@ -348,6 +368,7 @@
     <property role="EcuMT" value="3955961678040440589" />
     <property role="TrG5h" value="DefaultSliceValueExpr" />
     <property role="34LRSv" value="with-default-value" />
+    <property role="R4oN_" value="injects a default value, if no slice covers the date" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3rApyZ4E9We" role="1TKVEi">
       <property role="IQ2ns" value="3955961678040440590" />
@@ -368,6 +389,7 @@
     <property role="EcuMT" value="7638810057890348022" />
     <property role="TrG5h" value="MaskOp" />
     <property role="34LRSv" value="mask" />
+    <property role="R4oN_" value="masks the context with a TT&lt;boolean&gt;, else otherwise" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="6C2wkq7f3JR" role="1TKVEi">
       <property role="IQ2ns" value="7638810057890348023" />
@@ -388,6 +410,7 @@
     <property role="EcuMT" value="7638810057891338019" />
     <property role="TrG5h" value="WithSliceOp" />
     <property role="34LRSv" value="with" />
+    <property role="R4oN_" value="create a new temporal value with an additional slice" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="6C2wkq7iPs$" role="1TKVEi">
       <property role="IQ2ns" value="7638810057891338020" />
@@ -401,6 +424,7 @@
     <property role="EcuMT" value="7638810057892018378" />
     <property role="TrG5h" value="MapSlicesOp" />
     <property role="34LRSv" value="mapEach" />
+    <property role="R4oN_" value="creates a temporal value with the same slices, but mapped values" />
     <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
     <node concept="1TJgyj" id="6C2wkq7lrze" role="1TKVEi">
       <property role="IQ2ns" value="7638810057892018382" />

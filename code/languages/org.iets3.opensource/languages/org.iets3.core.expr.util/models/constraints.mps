@@ -363,5 +363,27 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6OunYCf3ynl">
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <ref role="1M2myG" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
+  </node>
+  <node concept="1M2fIO" id="6OunYCfi$q8">
+    <property role="3GE5qa" value="multidectab" />
+    <ref role="1M2myG" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+    <node concept="9S07l" id="6OunYCfi$q9" role="9Vyp8">
+      <node concept="3clFbS" id="6OunYCfi$qa" role="2VODD2">
+        <node concept="3clFbF" id="6OunYCfi$xv" role="3cqZAp">
+          <node concept="2OqwBi" id="6OunYCfi$KT" role="3clFbG">
+            <node concept="nLn13" id="6OunYCfi$xu" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="6OunYCfi_2F" role="2OqNvi">
+              <node concept="chp4Y" id="6OunYCfi_bU" role="cj9EA">
+                <ref role="cht4Q" to="kfo3:8XWEtdYkhC" resolve="Content" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
