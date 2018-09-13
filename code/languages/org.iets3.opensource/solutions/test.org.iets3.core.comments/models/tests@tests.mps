@@ -112,7 +112,6 @@
     </node>
     <node concept="1i1ALs" id="5kwEgmAi6Gw" role="LiZbd">
       <property role="TrG5h" value="TestChunk" />
-      <node concept="1i1AuW" id="12ACZ2oN$$F" role="1i1AA4" />
       <node concept="1i1XBj" id="5kwEgmAi6Gz" role="1i1AA4">
         <property role="TrG5h" value="CP0" />
         <node concept="H_j2F" id="59rcyU3GDmR" role="1i1XAe">
