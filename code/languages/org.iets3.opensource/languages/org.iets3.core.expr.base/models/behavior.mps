@@ -8519,14 +8519,9 @@
           <node concept="3clFbF" id="5s2rYclkWsR" role="3cqZAp">
             <node concept="37vLTI" id="5s2rYcls_vH" role="3clFbG">
               <node concept="2OqwBi" id="5s2rYclsAZH" role="37vLTx">
-                <node concept="2OqwBi" id="5s2rYclsAE_" role="2Oq$k0">
-                  <node concept="2JrnkZ" id="5s2rYclsAwo" role="2Oq$k0">
-                    <node concept="37vLTw" id="5s2rYcls_KO" role="2JrQYb">
-                      <ref role="3cqZAo" node="5s2rYclkWeK" resolve="node" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5s2rYclsAQw" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <node concept="2JrnkZ" id="5s2rYclsAwo" role="2Oq$k0">
+                  <node concept="37vLTw" id="5s2rYcls_KO" role="2JrQYb">
+                    <ref role="3cqZAo" node="5s2rYclkWeK" resolve="node" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5s2rYclsBe$" role="2OqNvi">
