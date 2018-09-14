@@ -327,6 +327,7 @@
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -925,18 +926,21 @@
                   <node concept="2I9FWS" id="7D7uZV2ogu5" role="1tU5fm">
                     <ref role="2I9WkF" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
                   </node>
-                  <node concept="2OqwBi" id="6NHlpK$$P47" role="33vP2m">
-                    <node concept="2OqwBi" id="7D7uZV2oguf" role="2Oq$k0">
-                      <node concept="37vLTw" id="6NHlpK$$O6Z" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6NHlpK$$NO9" resolve="rt" />
+                  <node concept="2OqwBi" id="58eyHuUmjZN" role="33vP2m">
+                    <node concept="2OqwBi" id="6NHlpK$$P47" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7D7uZV2oguf" role="2Oq$k0">
+                        <node concept="37vLTw" id="6NHlpK$$O6Z" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6NHlpK$$NO9" resolve="rt" />
+                        </node>
+                        <node concept="2qgKlT" id="3KgQFIkgTly" role="2OqNvi">
+                          <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
+                        </node>
                       </node>
-                      <node concept="2qgKlT" id="3KgQFIkgTly" role="2OqNvi">
-                        <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
+                      <node concept="2qgKlT" id="58eyHuUlVVW" role="2OqNvi">
+                        <ref role="37wK5l" to="nu60:58eyHuUgYVm" resolve="nonEmptyMembers" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="6NHlpK$$QOi" role="2OqNvi">
-                      <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
-                    </node>
+                    <node concept="ANE8D" id="58eyHuUmkX3" role="2OqNvi" />
                   </node>
                 </node>
               </node>
