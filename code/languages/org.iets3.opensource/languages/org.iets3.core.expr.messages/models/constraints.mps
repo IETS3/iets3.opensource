@@ -462,5 +462,34 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1CNpG_h7psb">
+    <ref role="1M2myG" to="kelk:3vxfdxblP3W" resolve="TypeCoercion" />
+    <node concept="9SLcT" id="1CNpG_h7psc" role="9SGkU">
+      <node concept="3clFbS" id="1CNpG_h7psd" role="2VODD2">
+        <node concept="3clFbJ" id="1CNpG_h7pzx" role="3cqZAp">
+          <node concept="2OqwBi" id="1CNpG_h7pT2" role="3clFbw">
+            <node concept="2DD5aU" id="1CNpG_h7pEZ" role="2Oq$k0" />
+            <node concept="2Zo12i" id="1CNpG_h7qoW" role="2OqNvi">
+              <node concept="chp4Y" id="1CNpG_h7qyx" role="2Zo12j">
+                <ref role="cht4Q" to="kelk:3vxfdxbi6AO" resolve="NamespaceType" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1CNpG_h7pzz" role="3clFbx">
+            <node concept="3cpWs6" id="1CNpG_h7qGb" role="3cqZAp">
+              <node concept="3clFbT" id="1CNpG_h7qN_" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1CNpG_h7qVq" role="3cqZAp">
+          <node concept="3clFbT" id="1CNpG_h7qVp" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

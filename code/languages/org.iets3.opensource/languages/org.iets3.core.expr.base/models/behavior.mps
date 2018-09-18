@@ -70,6 +70,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5749,6 +5750,46 @@
     </node>
     <node concept="13hLZK" id="4Q4DxjDsh$r" role="13h7CW">
       <node concept="3clFbS" id="4Q4DxjDsh$s" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1CNpG_h2DaL" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="1CNpG_h2DaY" role="1B3o_S" />
+      <node concept="3clFbS" id="1CNpG_h2DaZ" role="3clF47">
+        <node concept="3clFbF" id="1CNpG_h3OBB" role="3cqZAp">
+          <node concept="3cpWs3" id="1CNpG_h3SiG" role="3clFbG">
+            <node concept="Xl_RD" id="1CNpG_h3SiJ" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
+            </node>
+            <node concept="3cpWs3" id="1CNpG_h3Qnf" role="3uHU7B">
+              <node concept="3cpWs3" id="1CNpG_h3PIe" role="3uHU7B">
+                <node concept="2OqwBi" id="1CNpG_h3PhE" role="3uHU7B">
+                  <node concept="13iAh5" id="1CNpG_h3P9$" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1CNpG_h3PoK" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="1CNpG_h3PIh" role="3uHU7w">
+                  <property role="Xl_RC" value=" [" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1CNpG_h3Rw7" role="3uHU7w">
+                <node concept="2OqwBi" id="1CNpG_h3Q$D" role="2Oq$k0">
+                  <node concept="13iPFW" id="1CNpG_h3QnG" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="1CNpG_h3R40" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="1CNpG_h3RTI" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1CNpG_h2Db0" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6XENO0rLjw">
