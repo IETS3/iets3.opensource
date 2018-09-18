@@ -18,7 +18,6 @@
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,9 +51,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -3684,20 +3680,6 @@
     <property role="TrG5h" value="check_IRecordMember" />
     <property role="3GE5qa" value="record" />
     <node concept="3clFbS" id="5YygIlc4dsI" role="18ibNy">
-      <node concept="3clFbF" id="5YygIlc4Jac" role="3cqZAp">
-        <node concept="2OqwBi" id="5YygIlc4Ja9" role="3clFbG">
-          <node concept="10M0yZ" id="5YygIlc4Jaa" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-          </node>
-          <node concept="liA8E" id="5YygIlc4Jab" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-            <node concept="Xl_RD" id="5YygIlc4JbJ" role="37wK5m">
-              <property role="Xl_RC" value="checking" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbJ" id="5YygIlc4dsR" role="3cqZAp">
         <node concept="3y3z36" id="5YygIlc4eFp" role="3clFbw">
           <node concept="10Nm6u" id="5YygIlc4eIS" role="3uHU7w" />
@@ -3711,20 +3693,6 @@
           </node>
         </node>
         <node concept="3clFbS" id="5YygIlc4dsT" role="3clFbx">
-          <node concept="3clFbF" id="5YygIlc4JEJ" role="3cqZAp">
-            <node concept="2OqwBi" id="5YygIlc4JEG" role="3clFbG">
-              <node concept="10M0yZ" id="5YygIlc4JEH" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="5YygIlc4JEI" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="Xl_RD" id="5YygIlc4JUu" role="37wK5m">
-                  <property role="Xl_RC" value="X" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="5YygIlc4inX" role="3cqZAp">
             <node concept="3cpWsn" id="5YygIlc4inY" role="3cpWs9">
               <property role="TrG5h" value="refs" />

@@ -18,7 +18,6 @@
     <import index="a7uw" ref="r:3c3a1789-ef56-43db-a873-55055db3091f(org.iets3.core.expr.repl.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -867,25 +866,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbF" id="NE1gl4EHR3" role="3cqZAp">
-        <node concept="2OqwBi" id="NE1gl4EHR0" role="3clFbG">
-          <node concept="10M0yZ" id="NE1gl4EHR1" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-          </node>
-          <node concept="liA8E" id="NE1gl4EHR2" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-            <node concept="3cpWs3" id="NE1gl4EIC$" role="37wK5m">
-              <node concept="37vLTw" id="NE1gl4EIDw" role="3uHU7w">
-                <ref role="3cqZAo" node="5avmkTFn1jM" resolve="expressions" />
-              </node>
-              <node concept="Xl_RD" id="NE1gl4EIjm" role="3uHU7B">
-                <property role="Xl_RC" value="exprx: " />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbJ" id="5avmkTFn2rv" role="3cqZAp">
         <node concept="3clFbS" id="5avmkTFn2rx" role="3clFbx">
           <node concept="3clFbF" id="2NHHcg2KmZR" role="3cqZAp">
@@ -1697,25 +1677,6 @@
             </node>
             <node concept="2qgKlT" id="4YhD5cZp0dV" role="2OqNvi">
               <ref role="37wK5l" to="31n1:5avmkTFm1S8" resolve="getExpressions" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbF" id="NE1gl4CtAh" role="3cqZAp">
-        <node concept="2OqwBi" id="NE1gl4CtAe" role="3clFbG">
-          <node concept="10M0yZ" id="NE1gl4CtAf" role="2Oq$k0">
-            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-          </node>
-          <node concept="liA8E" id="NE1gl4CtAg" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-            <node concept="3cpWs3" id="NE1gl4CvAy" role="37wK5m">
-              <node concept="37vLTw" id="NE1gl4CvAD" role="3uHU7w">
-                <ref role="3cqZAo" node="4YhD5cZp0dS" resolve="exprs" />
-              </node>
-              <node concept="Xl_RD" id="NE1gl4CtBN" role="3uHU7B">
-                <property role="Xl_RC" value="makeRecord expressions: " />
-              </node>
             </node>
           </node>
         </node>

@@ -18,7 +18,6 @@
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -64,9 +63,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -756,20 +752,6 @@
                                                 <ref role="3Tt5mk" to="kfo3:8XWEtdX_Yh" resolve="expr" />
                                               </node>
                                             </node>
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3clFbF" id="6OunYCflUHM" role="3cqZAp">
-                                      <node concept="2OqwBi" id="6OunYCflUHJ" role="3clFbG">
-                                        <node concept="10M0yZ" id="6OunYCflUHK" role="2Oq$k0">
-                                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                        </node>
-                                        <node concept="liA8E" id="6OunYCflUHL" role="2OqNvi">
-                                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                                          <node concept="37vLTw" id="6OunYCflV6V" role="37wK5m">
-                                            <ref role="3cqZAo" node="6OunYCflTUC" resolve="eee" />
                                           </node>
                                         </node>
                                       </node>

@@ -20,7 +20,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
@@ -55,9 +54,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -182,7 +178,6 @@
       </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
-        <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
@@ -194,7 +189,6 @@
         <child id="1236163223950" name="rightOperandType" index="3h4u2h" />
         <child id="1236163223573" name="leftOperandType" index="3h4u4a" />
       </concept>
-      <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -487,39 +481,6 @@
     <node concept="1YaCAy" id="6eglc2$aivs" role="1YuTPh">
       <property role="TrG5h" value="act" />
       <ref role="1YaFvo" to="l462:50smQ1V8i89" resolve="TemporalType" />
-    </node>
-    <node concept="1xSnZT" id="4eVSC65u7hJ" role="1xSnZW">
-      <node concept="3clFbS" id="4eVSC65u7hK" role="2VODD2">
-        <node concept="3clFbF" id="6C2wkq6Oyo_" role="3cqZAp">
-          <node concept="2OqwBi" id="6C2wkq6Oyoy" role="3clFbG">
-            <node concept="10M0yZ" id="6C2wkq6Oyoz" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="6C2wkq6Oyo$" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="6C2wkq6O$Ex" role="37wK5m">
-                <node concept="1YBJjd" id="6C2wkq6O_8q" role="3uHU7w">
-                  <ref role="1YBMHb" node="6eglc2$aiw0" resolve="exp" />
-                </node>
-                <node concept="3cpWs3" id="6C2wkq6Ozfw" role="3uHU7B">
-                  <node concept="1YBJjd" id="6C2wkq6OywX" role="3uHU7B">
-                    <ref role="1YBMHb" node="6eglc2$aivs" resolve="act" />
-                  </node>
-                  <node concept="Xl_RD" id="6C2wkq6OzfA" role="3uHU7w">
-                    <property role="Xl_RC" value=" / " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4eVSC65u7p1" role="3cqZAp">
-          <node concept="3clFbT" id="4eVSC65u7p0" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="18kY7G" id="50smQ1Va0Ew">

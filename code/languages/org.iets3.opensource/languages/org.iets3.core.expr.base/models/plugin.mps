@@ -36,8 +36,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
@@ -2321,20 +2321,6 @@
                       </node>
                     </node>
                     <node concept="17QB3L" id="7S4tmubW80E" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7S4tmubVzdV" role="3cqZAp">
-                  <node concept="2OqwBi" id="7S4tmubVzdS" role="3clFbG">
-                    <node concept="10M0yZ" id="7S4tmubVzdT" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    </node>
-                    <node concept="liA8E" id="7S4tmubVzdU" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="37vLTw" id="7S4tmubW80Q" role="37wK5m">
-                        <ref role="3cqZAo" node="7S4tmubW80L" resolve="mm" />
-                      </node>
-                    </node>
                   </node>
                 </node>
                 <node concept="RRSsy" id="7S4tmubWk9I" role="3cqZAp">

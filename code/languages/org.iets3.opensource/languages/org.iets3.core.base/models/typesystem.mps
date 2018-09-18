@@ -10,7 +10,6 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,9 +38,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -373,25 +369,6 @@
                                 </node>
                                 <node concept="37vLTw" id="TfYjSVBFVR" role="37vLTJ">
                                   <ref role="3cqZAo" node="5JinICPgrhA" resolve="errorMessage" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbF" id="TfYjSVBGMl" role="3cqZAp">
-                              <node concept="2OqwBi" id="TfYjSVBGMi" role="3clFbG">
-                                <node concept="10M0yZ" id="TfYjSVBGMj" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                </node>
-                                <node concept="liA8E" id="TfYjSVBGMk" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                  <node concept="3cpWs3" id="7eS2goy2A2g" role="37wK5m">
-                                    <node concept="37vLTw" id="7eS2goy2A4o" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
-                                    </node>
-                                    <node concept="Xl_RD" id="7eS2goy2_1E" role="3uHU7B">
-                                      <property role="Xl_RC" value="Ill-formatted Error Message: " />
-                                    </node>
-                                  </node>
                                 </node>
                               </node>
                             </node>

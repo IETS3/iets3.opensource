@@ -22,7 +22,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="uujy" ref="r:41b99bf1-2599-4c6f-86d4-efe6e90bf556(org.iets3.core.expr.process.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -83,9 +82,6 @@
       </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -3600,28 +3596,6 @@
               <node concept="Xjq3P" id="31HpwbwDSKg" role="2Oq$k0" />
               <node concept="2OwXpG" id="31HpwbwDTqQ" role="2OqNvi">
                 <ref role="2Oxat5" node="31HpwbvZv8e" resolve="parties" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="31HpwbwE9WY" role="3cqZAp">
-          <node concept="2OqwBi" id="31HpwbwE9WV" role="3clFbG">
-            <node concept="10M0yZ" id="31HpwbwE9WW" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="31HpwbwE9WX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="31HpwbwEaAq" role="37wK5m">
-                <node concept="2OqwBi" id="31HpwbwEaPZ" role="3uHU7w">
-                  <node concept="Xjq3P" id="31HpwbwEaAG" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="31HpwbwEb6r" role="2OqNvi">
-                    <ref role="2Oxat5" node="31HpwbvZv8e" resolve="parties" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="31HpwbwEagG" role="3uHU7B">
-                  <property role="Xl_RC" value="updating parties to " />
-                </node>
               </node>
             </node>
           </node>
