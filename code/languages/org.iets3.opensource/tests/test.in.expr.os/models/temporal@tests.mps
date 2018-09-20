@@ -202,6 +202,10 @@
       </concept>
     </language>
     <language id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime">
+      <concept id="6891143932407154959" name="org.iets3.core.expr.datetime.structure.YearValue" flags="ng" index="k_sJE" />
+      <concept id="6891143932407155983" name="org.iets3.core.expr.datetime.structure.MonthValue" flags="ng" index="k_sZE" />
+      <concept id="6891143932407162183" name="org.iets3.core.expr.datetime.structure.DayValue" flags="ng" index="k_uuy" />
+      <concept id="8271636411545326830" name="org.iets3.core.expr.datetime.structure.ToStringOp" flags="ng" index="2R$_mj" />
       <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
         <child id="3885635233759216660" name="year" index="1f6kyW" />
       </concept>
@@ -1685,6 +1689,56 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="CornerCases" />
     <node concept="_ixoA" id="5LZ6dfts9NI" role="_iOnB" />
+    <node concept="2zPypq" id="5YygIlbfqnV" role="_iOnB">
+      <property role="TrG5h" value="aDate" />
+      <node concept="1fc2QT" id="5YygIlbfsH2" role="2zPyp_">
+        <property role="1fc2QY" value="2018" />
+        <property role="1fc2QX" value="01" />
+        <property role="1fc2QW" value="01" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="5YygIlbfsH_" role="_iOnB" />
+    <node concept="_fkuM" id="5YygIlbfxPC" role="_iOnB">
+      <property role="TrG5h" value="testDateValues" />
+      <node concept="_fkuZ" id="5YygIlbf$aJ" role="_fkp5">
+        <node concept="_fku$" id="5YygIlbf$aK" role="_fkur" />
+        <node concept="1QScDb" id="5YygIlbf$br" role="_fkuY">
+          <node concept="k_uuy" id="5YygIlbfABr" role="1QScD9" />
+          <node concept="_emDc" id="5YygIlbf$bh" role="30czhm">
+            <ref role="_emDf" node="5YygIlbfqnV" resolve="aDate" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="5YygIlbfAC8" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5YygIlbfEFH" role="_fkp5">
+        <node concept="_fku$" id="5YygIlbfEFI" role="_fkur" />
+        <node concept="1QScDb" id="5YygIlbfEFJ" role="_fkuY">
+          <node concept="k_sZE" id="5YygIlbfHej" role="1QScD9" />
+          <node concept="_emDc" id="5YygIlbfEFL" role="30czhm">
+            <ref role="_emDf" node="5YygIlbfqnV" resolve="aDate" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="5YygIlbfEFM" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5YygIlbfEGP" role="_fkp5">
+        <node concept="_fku$" id="5YygIlbfEGQ" role="_fkur" />
+        <node concept="1QScDb" id="5YygIlbfEGR" role="_fkuY">
+          <node concept="k_sJE" id="5YygIlbfJHr" role="1QScD9" />
+          <node concept="_emDc" id="5YygIlbfEGT" role="30czhm">
+            <ref role="_emDf" node="5YygIlbfqnV" resolve="aDate" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="5YygIlbfEGU" role="_fkuS">
+          <property role="30bXRw" value="2018" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5YygIlbfmym" role="_iOnB" />
+    <node concept="_ixoA" id="5YygIlbfmaK" role="_iOnB" />
     <node concept="2zPypq" id="7aRvJQErM8$" role="_iOnB">
       <property role="TrG5h" value="date01" />
       <property role="0Rz4W" value="-609181071" />
@@ -3522,6 +3576,52 @@
       </node>
     </node>
     <node concept="_ixoA" id="7X4dwX1dy46" role="_iOnB" />
+    <node concept="_ixoA" id="7baKnR5lTcY" role="_iOnB" />
+    <node concept="_ixoA" id="7baKnR5lT_k" role="_iOnB" />
+    <node concept="2zPypq" id="7baKnR5lV_w" role="_iOnB">
+      <property role="TrG5h" value="date1" />
+      <node concept="1fc2QT" id="7baKnR5lXWP" role="2zPyp_">
+        <property role="1fc2QY" value="2018" />
+        <property role="1fc2QX" value="05" />
+        <property role="1fc2QW" value="01" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="7baKnR5nPDj" role="_iOnB">
+      <property role="TrG5h" value="date2" />
+      <node concept="1fc2QT" id="7baKnR5nPDk" role="2zPyp_">
+        <property role="1fc2QY" value="2018" />
+        <property role="1fc2QX" value="10" />
+        <property role="1fc2QW" value="12" />
+      </node>
+    </node>
+    <node concept="_fkuM" id="7baKnR5m59i" role="_iOnB">
+      <property role="TrG5h" value="TestDateToString" />
+      <node concept="_fkuZ" id="7baKnR5m7wD" role="_fkp5">
+        <node concept="_fku$" id="7baKnR5m7wE" role="_fkur" />
+        <node concept="1QScDb" id="7baKnR5mfCL" role="_fkuY">
+          <node concept="2R$_mj" id="7baKnR5mi7b" role="1QScD9" />
+          <node concept="_emDc" id="7baKnR5m7x0" role="30czhm">
+            <ref role="_emDf" node="7baKnR5lV_w" resolve="date1" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="7baKnR5m7yV" role="_fkuS">
+          <property role="30bdrQ" value="01.05.2018" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7baKnR5nQHR" role="_fkp5">
+        <node concept="_fku$" id="7baKnR5nQHS" role="_fkur" />
+        <node concept="1QScDb" id="7baKnR5nQHT" role="_fkuY">
+          <node concept="2R$_mj" id="7baKnR5nQHU" role="1QScD9" />
+          <node concept="_emDc" id="7baKnR5nY8p" role="30czhm">
+            <ref role="_emDf" node="7baKnR5nPDj" resolve="date2" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="7baKnR5nQHW" role="_fkuS">
+          <property role="30bdrQ" value="12.10.2018" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7baKnR5m0kB" role="_iOnB" />
     <node concept="_ixoA" id="7p18LB4QNJI" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0frE" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQF0ft9" role="_iOnB" />

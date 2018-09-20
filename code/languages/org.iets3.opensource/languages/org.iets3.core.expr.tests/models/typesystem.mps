@@ -431,7 +431,46 @@
   <node concept="1YbPZF" id="7ZvWWnqP6GM">
     <property role="TrG5h" value="typeof_AssertTestItem" />
     <property role="3GE5qa" value="" />
-    <node concept="3clFbS" id="7ZvWWnqP6GN" role="18ibNy" />
+    <node concept="3clFbS" id="7ZvWWnqP6GN" role="18ibNy">
+      <node concept="3clFbJ" id="75Hf8iHwTCl" role="3cqZAp">
+        <node concept="3clFbS" id="75Hf8iHwTCn" role="3clFbx">
+          <node concept="1ZobV4" id="75Hf8iHwqvu" role="3cqZAp">
+            <node concept="mw_s8" id="75Hf8iHwqwe" role="1ZfhKB">
+              <node concept="1Z2H0r" id="75Hf8iHwqwa" role="mwGJk">
+                <node concept="2OqwBi" id="75Hf8iHwqOb" role="1Z2MuG">
+                  <node concept="1YBJjd" id="75Hf8iHwqw_" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7ZvWWnqP6GP" resolve="ati" />
+                  </node>
+                  <node concept="3TrEf2" id="75Hf8iHwsKz" role="2OqNvi">
+                    <ref role="3Tt5mk" to="av4b:ub9nkyHAbd" resolve="expected" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="75Hf8iHwqvx" role="1ZfhK$">
+              <node concept="1Z2H0r" id="75Hf8iHwoKv" role="mwGJk">
+                <node concept="2OqwBi" id="75Hf8iHwp5U" role="1Z2MuG">
+                  <node concept="1YBJjd" id="75Hf8iHwoMn" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7ZvWWnqP6GP" resolve="ati" />
+                  </node>
+                  <node concept="3TrEf2" id="75Hf8iHwqck" role="2OqNvi">
+                    <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" resolve="actual" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="75Hf8iHwU0g" role="3clFbw">
+          <node concept="1YBJjd" id="75Hf8iHwTDd" role="2Oq$k0">
+            <ref role="1YBMHb" node="7ZvWWnqP6GP" resolve="ati" />
+          </node>
+          <node concept="3TrcHB" id="75Hf8iHwUC4" role="2OqNvi">
+            <ref role="3TsBF5" to="av4b:75Hf8iHwLVy" resolve="strict" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1YaCAy" id="7ZvWWnqP6GP" role="1YuTPh">
       <property role="TrG5h" value="ati" />
       <ref role="1YaFvo" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />

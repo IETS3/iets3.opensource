@@ -74,6 +74,7 @@
     <property role="34LRSv" value="(" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="7554398283340107702" />
+    <property role="R4oN_" value="function type" />
     <ref role="1TJDcQ" node="5Win3SAb5Rp" resolve="GenericFunctionType" />
     <node concept="1TJgyj" id="6zmBjqUjGYR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -153,6 +154,7 @@
     <property role="TrG5h" value="LambdaArg" />
     <property role="3GE5qa" value="lambda" />
     <property role="EcuMT" value="7554398283340318478" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6zmBjqUkwsf" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUkws9" resolve="IArgument" />
@@ -162,6 +164,7 @@
     <property role="TrG5h" value="LambdaArgRef" />
     <property role="3GE5qa" value="lambda" />
     <property role="EcuMT" value="7554398283340370581" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6zmBjqUkHam" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -187,6 +190,7 @@
     <property role="34LRSv" value="exec" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="7554398283340542342" />
+    <property role="R4oN_" value="executes function value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zmBjqUltlq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -233,6 +237,7 @@
     <property role="34LRSv" value="it" />
     <property role="3GE5qa" value="lambda" />
     <property role="EcuMT" value="7554398283340826520" />
+    <property role="R4oN_" value="the lamba's single argument" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="49WTic8eSCJ">
@@ -297,6 +302,7 @@
     <property role="TrG5h" value="FunctionArgument" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="4790956042240100929" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="49WTic8eSDh" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUkws9" resolve="IArgument" />
@@ -309,6 +315,7 @@
     <property role="TrG5h" value="ArgRef" />
     <property role="3GE5qa" value="function" />
     <property role="EcuMT" value="4790956042240407469" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="49WTic8ggq6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -372,6 +379,7 @@
     <property role="34LRSv" value="{" />
     <property role="3GE5qa" value="block" />
     <property role="EcuMT" value="4790956042240983401" />
+    <property role="R4oN_" value="a block of values" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="6KxoTHgLvIg" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -410,6 +418,7 @@
     <property role="TrG5h" value="ValExpression" />
     <property role="34LRSv" value="val" />
     <property role="EcuMT" value="4790956042241053102" />
+    <property role="R4oN_" value="declares a local, constant value" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="49WTic8ix6L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -450,6 +459,7 @@
     <property role="3GE5qa" value="block" />
     <property role="TrG5h" value="ValRef" />
     <property role="EcuMT" value="4790956042241105569" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="49WTic8iI9_" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -470,6 +480,7 @@
     <property role="TrG5h" value="BindOp" />
     <property role="34LRSv" value="bind" />
     <property role="EcuMT" value="2807135271606959809" />
+    <property role="R4oN_" value="binds values to (some) arguments; returns curried function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2rOWEwsAzV4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -485,6 +496,7 @@
   <node concept="1TIwiD" id="22hm_0zJHU7">
     <property role="TrG5h" value="CapturedValue" />
     <property role="EcuMT" value="2346756181080333959" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="22hm_0zJHV1" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -502,6 +514,7 @@
     <property role="TrG5h" value="ValValueInContractExpr" />
     <property role="34LRSv" value="it" />
     <property role="EcuMT" value="867786408878526214" />
+    <property role="R4oN_" value="value on which to check a constraint" />
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
     <node concept="PrWs8" id="69JueU2AvYo" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69JueU2zshL" resolve="ISSItValueRef" />
@@ -512,6 +525,7 @@
     <property role="TrG5h" value="FunResExpr" />
     <property role="34LRSv" value="res" />
     <property role="EcuMT" value="867786408880429238" />
+    <property role="R4oN_" value="represents the result of the function" />
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
   </node>
   <node concept="1TIwiD" id="6KxoTHgSIr8">
@@ -520,6 +534,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="effectTag" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="2D48zR6a1ez">
@@ -543,12 +558,14 @@
     <property role="TrG5h" value="FunCompose" />
     <property role="34LRSv" value=":o:" />
     <property role="3GE5qa" value="compose" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="5Win3SAb5Rp">
     <property role="EcuMT" value="6850639405182115289" />
     <property role="TrG5h" value="GenericFunctionType" />
     <property role="3GE5qa" value="function" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="5iD_kvlIV0f">
@@ -556,6 +573,7 @@
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="FunctionStyleExecOp" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="executes a function value" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5iD_kvlIV1w" role="1TKVEi">
       <property role="IQ2ns" value="6100571306011111520" />
@@ -579,6 +597,7 @@
     <property role="EcuMT" value="8237981399438528802" />
     <property role="TrG5h" value="AssertExpr" />
     <property role="34LRSv" value="assert" />
+    <property role="R4oN_" value="ensure a boolean expression; fail if otherwise" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="79jc6YzNL4G" role="1TKVEi">
       <property role="IQ2ns" value="8237981399438528812" />
@@ -599,6 +618,7 @@
     <property role="3GE5qa" value="effectTag" />
     <property role="TrG5h" value="ReadEffectTag" />
     <property role="34LRSv" value="/R" />
+    <property role="R4oN_" value="declares a 'reads' effect" />
     <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
   </node>
   <node concept="1TIwiD" id="4qVjx3jYYFH">
@@ -606,6 +626,7 @@
     <property role="3GE5qa" value="effectTag" />
     <property role="TrG5h" value="ModifyEffectTag" />
     <property role="34LRSv" value="/M" />
+    <property role="R4oN_" value="declares a 'modifies' effect" />
     <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
   </node>
   <node concept="1TIwiD" id="4qVjx3jYYFI">
@@ -613,11 +634,13 @@
     <property role="3GE5qa" value="effectTag" />
     <property role="TrG5h" value="ReadModifyEffectTag" />
     <property role="34LRSv" value="/RM" />
+    <property role="R4oN_" value="declares a 'reads' and 'modifies' effect" />
     <ref role="1TJDcQ" node="6KxoTHgSIr8" resolve="EffectTag" />
   </node>
   <node concept="1TIwiD" id="3RtoCziFOU9">
     <property role="EcuMT" value="4457827545956437641" />
     <property role="TrG5h" value="AttachedConstraint" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="3RtoCziFOUj" role="1TKVEi">
       <property role="IQ2ns" value="4457827545956437651" />
@@ -641,6 +664,7 @@
     <property role="3GE5qa" value="var" />
     <property role="TrG5h" value="LocalVarDeclExpr" />
     <property role="34LRSv" value="var" />
+    <property role="R4oN_" value="declares a local, reassignable variable" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1VmWkC0z5Tc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -671,6 +695,7 @@
     <property role="EcuMT" value="2222228766293363750" />
     <property role="3GE5qa" value="var" />
     <property role="TrG5h" value="LocalVarRef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="1VmWkC0$wL2" role="1TKVEi">
       <property role="IQ2ns" value="2222228766293363778" />

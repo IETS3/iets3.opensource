@@ -22,6 +22,7 @@
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -66,6 +67,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -106,6 +108,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -846,21 +849,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="7aRvJQE6iV2" role="3clF47">
-        <node concept="3clFbJ" id="7aRvJQE6lnB" role="3cqZAp">
-          <node concept="3clFbS" id="7aRvJQE6lnD" role="3clFbx">
-            <node concept="3cpWs6" id="7aRvJQE6lAH" role="3cqZAp">
-              <node concept="3clFbT" id="7aRvJQE6lAZ" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="7aRvJQE6lw2" role="3clFbw">
-            <node concept="10Nm6u" id="7aRvJQE6lzc" role="3uHU7w" />
-            <node concept="37vLTw" id="7aRvJQE6lp1" role="3uHU7B">
-              <ref role="3cqZAo" node="7aRvJQE6iV0" resolve="object" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="7aRvJQE6lBl" role="3cqZAp">
           <node concept="3clFbS" id="7aRvJQE6lBm" role="3clFbx">
             <node concept="3cpWs6" id="7aRvJQE6lBn" role="3cqZAp">
@@ -880,6 +868,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5SWSVZ_Lf3i" role="3cqZAp" />
         <node concept="3cpWs8" id="7aRvJQE6n2V" role="3cqZAp">
           <node concept="3cpWsn" id="7aRvJQE6n2W" role="3cpWs9">
             <property role="TrG5h" value="drv" />
@@ -940,6 +929,32 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7aRvJQE6iV3" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5SWSVZ_LiOM" role="jymVt" />
+    <node concept="3clFb_" id="5SWSVZ_Lizh" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="hashCode" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5SWSVZ_Lizi" role="1B3o_S" />
+      <node concept="10Oyi0" id="5SWSVZ_Lizk" role="3clF45" />
+      <node concept="3clFbS" id="5SWSVZ_Lizl" role="3clF47">
+        <node concept="3clFbF" id="5SWSVZ_Lj9U" role="3cqZAp">
+          <node concept="2YIFZM" id="5SWSVZ_Ljmd" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...):int" resolve="hash" />
+            <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+            <node concept="1rXfSq" id="5SWSVZ_LjmK" role="37wK5m">
+              <ref role="37wK5l" node="4voqclTswQa" resolve="begin" />
+            </node>
+            <node concept="1rXfSq" id="5SWSVZ_LjxW" role="37wK5m">
+              <ref role="37wK5l" node="4voqclTsBpn" resolve="end" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5SWSVZ_Lizm" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>

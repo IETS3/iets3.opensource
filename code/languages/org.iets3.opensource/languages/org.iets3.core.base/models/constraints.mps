@@ -195,6 +195,30 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbJ" id="5YygIlbihYE" role="3cqZAp">
+            <node concept="3clFbS" id="5YygIlbihYF" role="3clFbx">
+              <node concept="3cpWs6" id="5YygIlbihYG" role="3cqZAp">
+                <node concept="2OqwBi" id="5YygIlbiiLT" role="3cqZAk">
+                  <node concept="1Wqviy" id="5YygIlbiiLU" role="2Oq$k0" />
+                  <node concept="liA8E" id="5YygIlbiiLV" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <node concept="Xl_RD" id="5YygIlbiiLW" role="37wK5m">
+                      <property role="Xl_RC" value="[äöüÄÖÜa-zA-Z$[_]][äöüÄÖÜa-zA-Z0-9$[_']]*" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5YygIlbihYM" role="3clFbw">
+              <node concept="2OqwBi" id="5YygIlbihYN" role="2Oq$k0">
+                <node concept="EsrRn" id="5YygIlbihYO" role="2Oq$k0" />
+                <node concept="2yIwOk" id="5YygIlbihYP" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="5YygIlbiir8" role="2OqNvi">
+                <ref role="37wK5l" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="cJpacq5Tga" role="3cqZAp">
             <node concept="2OqwBi" id="65XyadYKJgV" role="3clFbG">
               <node concept="1Wqviy" id="65XyadYKJgW" role="2Oq$k0" />

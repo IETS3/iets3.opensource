@@ -10,7 +10,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="kelk" ref="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" implicit="true" />
+    <import index="kelk" ref="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -22,6 +22,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -344,6 +345,35 @@
         <node concept="17QB3L" id="5ZJ96SJAihs" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="5ZJ96SJAiht" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6H01xAn9KoA" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="6H01xAn9KoN" role="1B3o_S" />
+      <node concept="3clFbS" id="6H01xAn9L9w" role="3clF47">
+        <node concept="3cpWs6" id="6H01xAn9LkO" role="3cqZAp">
+          <node concept="3cpWs3" id="6H01xAn9ObC" role="3cqZAk">
+            <node concept="Xl_RD" id="6H01xAn9ObF" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
+            </node>
+            <node concept="3cpWs3" id="6H01xAn9Ndk" role="3uHU7B">
+              <node concept="Xl_RD" id="6H01xAn9MKy" role="3uHU7B">
+                <property role="Xl_RC" value="error[" />
+              </node>
+              <node concept="2OqwBi" id="6H01xAn9NsB" role="3uHU7w">
+                <node concept="13iPFW" id="6H01xAn9NdC" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6H01xAn9NED" role="2OqNvi">
+                  <ref role="3TsBF5" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6H01xAn9L9x" role="3clF45" />
     </node>
   </node>
 </model>

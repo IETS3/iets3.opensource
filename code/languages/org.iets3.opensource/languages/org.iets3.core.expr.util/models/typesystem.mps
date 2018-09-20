@@ -183,6 +183,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -274,6 +275,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="1YbPZF" id="3DYDRw0NrVN">
@@ -1119,7 +1121,7 @@
   </node>
   <node concept="18kY7G" id="8XWEtejAYk">
     <property role="TrG5h" value="check_ResultColDef" />
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <node concept="3clFbS" id="8XWEtejAYl" role="18ibNy">
       <node concept="3clFbJ" id="8XWEtejB0_" role="3cqZAp">
         <node concept="2OqwBi" id="8XWEtejCsn" role="3clFbw">
@@ -1406,7 +1408,7 @@
   </node>
   <node concept="1YbPZF" id="8XWEtejr_y">
     <property role="TrG5h" value="typeof_ResultColDef" />
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <node concept="3clFbS" id="8XWEtejr_z" role="18ibNy">
       <node concept="1Z5TYs" id="8XWEtejrZJ" role="3cqZAp">
         <node concept="mw_s8" id="8XWEtejs03" role="1ZfhKB">
@@ -1582,7 +1584,7 @@
           <node concept="2OqwBi" id="3eQTdYHonjg" role="3uHU7B">
             <node concept="2OqwBi" id="3eQTdYHomRS" role="2Oq$k0">
               <node concept="1YBJjd" id="3eQTdYHomGY" role="2Oq$k0">
-                <ref role="1YBMHb" node="3eQTdYHomG_" resolve="iMultiDecTab" />
+                <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
               </node>
               <node concept="2qgKlT" id="7FuUjk_dXsx" role="2OqNvi">
                 <ref role="37wK5l" to="wthy:7FuUjk_dUMU" resolve="inputColDefs" />
@@ -1597,7 +1599,7 @@
               <property role="Xl_RC" value="at least one query column required" />
             </node>
             <node concept="1YBJjd" id="3eQTdYHopeY" role="2OEOjV">
-              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="iMultiDecTab" />
+              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
           </node>
         </node>
@@ -1610,7 +1612,7 @@
           <node concept="2OqwBi" id="3eQTdYHopfp" role="3uHU7B">
             <node concept="2OqwBi" id="3eQTdYHopfq" role="2Oq$k0">
               <node concept="1YBJjd" id="3eQTdYHopfr" role="2Oq$k0">
-                <ref role="1YBMHb" node="3eQTdYHomG_" resolve="iMultiDecTab" />
+                <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
               </node>
               <node concept="2qgKlT" id="7FuUjk_5eKI" role="2OqNvi">
                 <ref role="37wK5l" to="wthy:7FuUjk_57S0" resolve="resultColDefs" />
@@ -1625,14 +1627,65 @@
               <property role="Xl_RC" value="at least one result column required" />
             </node>
             <node concept="1YBJjd" id="3eQTdYHopfx" role="2OEOjV">
-              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="iMultiDecTab" />
+              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6OunYCf2Q6T" role="3cqZAp">
+        <node concept="3clFbS" id="6OunYCf2Q6V" role="3clFbx">
+          <node concept="2MkqsV" id="6OunYCf2Ts5" role="3cqZAp">
+            <node concept="Xl_RD" id="6OunYCf2Tsk" role="2MkJ7o">
+              <property role="Xl_RC" value="only one kind of results allowed (values vs. assignment)" />
+            </node>
+            <node concept="1YBJjd" id="6OunYCf2Tt9" role="2OEOjV">
+              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="6OunYCf2SRv" role="3clFbw">
+          <node concept="3cmrfG" id="6OunYCf2Tim" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="6OunYCf2QY8" role="3uHU7B">
+            <node concept="2OqwBi" id="6OunYCf2OvK" role="2Oq$k0">
+              <node concept="2OqwBi" id="6OunYCf2N7$" role="2Oq$k0">
+                <node concept="2OqwBi" id="6OunYCf2LpG" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6OunYCf2Lf2" role="2Oq$k0">
+                    <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+                  </node>
+                  <node concept="2qgKlT" id="6OunYCf2LQT" role="2OqNvi">
+                    <ref role="37wK5l" to="wthy:7FuUjk_57S0" resolve="resultColDefs" />
+                  </node>
+                </node>
+                <node concept="3$u5V9" id="6OunYCf2NHV" role="2OqNvi">
+                  <node concept="1bVj0M" id="6OunYCf2NHX" role="23t8la">
+                    <node concept="3clFbS" id="6OunYCf2NHY" role="1bW5cS">
+                      <node concept="3clFbF" id="6OunYCf2NN$" role="3cqZAp">
+                        <node concept="2OqwBi" id="6OunYCf2NXm" role="3clFbG">
+                          <node concept="37vLTw" id="6OunYCf2NNz" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6OunYCf2NHZ" resolve="it" />
+                          </node>
+                          <node concept="2yIwOk" id="6OunYCf2Oc3" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="6OunYCf2NHZ" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="6OunYCf2NI0" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1VAtEI" id="6OunYCf2Pjh" role="2OqNvi" />
+            </node>
+            <node concept="34oBXx" id="6OunYCf2RNA" role="2OqNvi" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="3eQTdYHomG_" role="1YuTPh">
-      <property role="TrG5h" value="iMultiDecTab" />
+      <property role="TrG5h" value="mdt" />
       <ref role="1YaFvo" to="kfo3:7FuUjk_57Bw" resolve="IMultiDecTab" />
     </node>
   </node>
@@ -2116,6 +2169,37 @@
     <node concept="1YaCAy" id="60neiTeB8Cn" role="1YuTPh">
       <property role="TrG5h" value="tableCallExpression" />
       <ref role="1YaFvo" to="kfo3:7FuUjk_mXBJ" resolve="TableCallExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6OunYCfbXV9">
+    <property role="TrG5h" value="typeof_LocalVarAssignColDef" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <node concept="3clFbS" id="6OunYCfbXVa" role="18ibNy">
+      <node concept="1Z5TYs" id="6OunYCfbYa5" role="3cqZAp">
+        <node concept="mw_s8" id="6OunYCfbYap" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6OunYCfbYal" role="mwGJk">
+            <node concept="2OqwBi" id="6OunYCfbYk5" role="1Z2MuG">
+              <node concept="1YBJjd" id="6OunYCfbYaE" role="2Oq$k0">
+                <ref role="1YBMHb" node="6OunYCfbXVc" resolve="cd" />
+              </node>
+              <node concept="3TrEf2" id="6OunYCfbYw4" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:6OunYCeYfBN" resolve="varref" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6OunYCfbYa8" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6OunYCfbXVj" role="mwGJk">
+            <node concept="1YBJjd" id="6OunYCfbXVz" role="1Z2MuG">
+              <ref role="1YBMHb" node="6OunYCfbXVc" resolve="cd" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6OunYCfbXVc" role="1YuTPh">
+      <property role="TrG5h" value="cd" />
+      <ref role="1YaFvo" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
     </node>
   </node>
 </model>

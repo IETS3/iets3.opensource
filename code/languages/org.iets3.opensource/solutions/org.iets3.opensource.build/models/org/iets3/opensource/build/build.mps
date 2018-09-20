@@ -1889,6 +1889,12 @@
             <ref role="1Busuk" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5YygIlbmJ00" role="3bR37C">
+          <node concept="3bR9La" id="5YygIlbmJ01" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396f_" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7336,13 +7342,19 @@
       </node>
     </node>
     <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
-      <property role="3UIfUI" value="6096" />
+      <property role="3UIfUI" value="10000" />
       <property role="1YnnvL" value="1024" />
     </node>
   </node>
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="2_Ic$z" id="mfGoedf1p2" role="3989C9">
+      <property role="TZNOO" value="1.8" />
+    </node>
+    <node concept="2igEWh" id="mfGoedf18r" role="1hWBAP">
+      <property role="3UIfUI" value="6144" />
+    </node>
     <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
       <property role="m$_wk" value="dummy" />
       <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">

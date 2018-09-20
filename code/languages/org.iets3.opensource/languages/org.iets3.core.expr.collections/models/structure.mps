@@ -71,6 +71,7 @@
     <property role="34LRSv" value="collection" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339749509" />
+    <property role="R4oN_" value="collection (unordered, read-only)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="3tudP__pYOT" role="1TKVEi">
       <property role="IQ2ns" value="3989687176989764921" />
@@ -108,6 +109,7 @@
     <property role="34LRSv" value="list" />
     <property role="3GE5qa" value="list" />
     <property role="EcuMT" value="7554398283339759319" />
+    <property role="R4oN_" value="create a new list" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7yDflTqUOmT" role="1TKVEi">
       <property role="IQ2ns" value="8694548031077041593" />
@@ -143,6 +145,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="7554398283339795488" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6zmBjqUiwKE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
@@ -153,6 +156,7 @@
     <property role="34LRSv" value="size" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339796915" />
+    <property role="R4oN_" value="returns size of collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="6zmBjqUiFJs">
@@ -160,6 +164,7 @@
     <property role="34LRSv" value="isEmpty" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="7554398283339840476" />
+    <property role="R4oN_" value="returns whether collection is empty" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHH7">
@@ -180,6 +185,7 @@
     <property role="34LRSv" value="first" />
     <property role="3GE5qa" value="ordered" />
     <property role="EcuMT" value="7554398283339850572" />
+    <property role="R4oN_" value="returns the first element" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUiIZG" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -200,6 +206,7 @@
     <property role="34LRSv" value="last" />
     <property role="3GE5qa" value="ordered" />
     <property role="EcuMT" value="7554398283339853806" />
+    <property role="R4oN_" value="last element" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUiIZJ" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -213,6 +220,7 @@
     <property role="TrG5h" value="AtOp" />
     <property role="34LRSv" value="at" />
     <property role="EcuMT" value="7554398283340004826" />
+    <property role="R4oN_" value="returns the element at a particular index" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUjjRN" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -230,6 +238,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7554398283340020764" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zmBjqUjnKt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -254,6 +263,7 @@
     <property role="TrG5h" value="MapOp" />
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="7554398283340640412" />
+    <property role="R4oN_" value="creates new collection with elements mapped by argument" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
@@ -273,6 +283,7 @@
     <property role="TrG5h" value="WhereOp" />
     <property role="34LRSv" value="where" />
     <property role="EcuMT" value="7554398283340715406" />
+    <property role="R4oN_" value="creates new collection with elements for which predicate holds" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -292,6 +303,7 @@
     <property role="TrG5h" value="DistinctOp" />
     <property role="34LRSv" value="distinct" />
     <property role="EcuMT" value="8872269265511400449" />
+    <property role="R4oN_" value="removes duplicates" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2r4g4" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -302,6 +314,7 @@
     <property role="TrG5h" value="AsImmutableListOp" />
     <property role="34LRSv" value="toList" />
     <property role="EcuMT" value="8872269265513219132" />
+    <property role="R4oN_" value="creates a list from the collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2AdVY">
@@ -309,6 +322,7 @@
     <property role="TrG5h" value="ContainsOp" />
     <property role="34LRSv" value="contains" />
     <property role="EcuMT" value="8872269265514323710" />
+    <property role="R4oN_" value="membership test" />
     <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2AkLs">
@@ -317,6 +331,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265514351708" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4qVjx3k_vab" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
@@ -328,6 +343,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="8872269265515327232" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="7SZA7UeV1IM" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
@@ -344,6 +360,7 @@
     <property role="TrG5h" value="AnyOp" />
     <property role="34LRSv" value="any" />
     <property role="EcuMT" value="8872269265515619803" />
+    <property role="R4oN_" value="existiential quantifier (true if one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
@@ -351,6 +368,7 @@
     <property role="TrG5h" value="AllOp" />
     <property role="34LRSv" value="all" />
     <property role="EcuMT" value="8872269265518788050" />
+    <property role="R4oN_" value="universal quantifier (true if all elements are true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2Wbm7">
@@ -358,6 +376,7 @@
     <property role="34LRSv" value="set" />
     <property role="3GE5qa" value="set" />
     <property role="EcuMT" value="8872269265520080263" />
+    <property role="R4oN_" value="set type" />
     <ref role="1TJDcQ" node="6zmBjqUily5" resolve="CollectionType" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2WbAd">
@@ -365,6 +384,7 @@
     <property role="34LRSv" value="set" />
     <property role="3GE5qa" value="set" />
     <property role="EcuMT" value="8872269265520081293" />
+    <property role="R4oN_" value="create a new set" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7yDflTqXbp_" role="1TKVEi">
       <property role="IQ2ns" value="8694548031077660261" />
@@ -391,12 +411,14 @@
     <property role="TrG5h" value="AsImmutableSetOp" />
     <property role="34LRSv" value="toSet" />
     <property role="EcuMT" value="8872269265522211270" />
+    <property role="R4oN_" value="creates a set from collection or value (removes dups)" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="54HsVvNUXea">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="BracketOp" />
     <property role="EcuMT" value="5849458724932670346" />
+    <property role="R4oN_" value="returns the element at the specified index" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="54HsVvNUXeb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -411,6 +433,7 @@
     <property role="3GE5qa" value="map" />
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163110902" />
+    <property role="R4oN_" value="map of key-value pairs" />
     <ref role="1TJDcQ" node="4_KMC82DFps" resolve="MapLikeType" />
     <node concept="PrWs8" id="60Qa1k_uVII" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
@@ -435,6 +458,7 @@
     <property role="TrG5h" value="MapLiteral" />
     <property role="34LRSv" value="map" />
     <property role="EcuMT" value="8448265401163111272" />
+    <property role="R4oN_" value="create a new map" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7yDflTqZBPP" role="1TKVEi">
       <property role="IQ2ns" value="8694548031078301045" />
@@ -464,6 +488,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="KeyValuePair" />
     <property role="EcuMT" value="8448265401163111273" />
+    <property role="R4oN_" value="key-value pair" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7kYh9WszdHE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -491,6 +516,7 @@
     <property role="TrG5h" value="MapWithOp" />
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="8448265401163555724" />
+    <property role="R4oN_" value="creates a new map with the specified key-value pair appended" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInHjsx" role="PzmwI">
       <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
@@ -501,6 +527,7 @@
     <property role="TrG5h" value="MapWithoutOp" />
     <property role="34LRSv" value="without" />
     <property role="EcuMT" value="8448265401163714133" />
+    <property role="R4oN_" value="creates new list without the particular key" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInHjsz" role="PzmwI">
       <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
@@ -511,6 +538,7 @@
     <property role="TrG5h" value="MaxOp" />
     <property role="34LRSv" value="max" />
     <property role="EcuMT" value="5585772046587930249" />
+    <property role="R4oN_" value="returns biggest element in collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDbyr0" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -521,6 +549,7 @@
     <property role="TrG5h" value="SumOp" />
     <property role="34LRSv" value="sum" />
     <property role="EcuMT" value="5585772046594451299" />
+    <property role="R4oN_" value="returns sum of (numeric) collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjD$qt$" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -531,6 +560,7 @@
     <property role="TrG5h" value="HeadOp" />
     <property role="34LRSv" value="head" />
     <property role="EcuMT" value="5585772046596642164" />
+    <property role="R4oN_" value="returns first element" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktS" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -544,6 +574,7 @@
     <property role="TrG5h" value="TailOp" />
     <property role="34LRSv" value="tail" />
     <property role="EcuMT" value="5585772046597818717" />
+    <property role="R4oN_" value="tail of list (everything except first)" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktY" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -557,6 +588,7 @@
     <property role="TrG5h" value="SimpleSortOp" />
     <property role="34LRSv" value="sort" />
     <property role="EcuMT" value="890435239346753529" />
+    <property role="R4oN_" value="sorts collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="1TJgyi" id="Lrty7CKd0h" role="1TKVEl">
       <property role="TrG5h" value="order" />
@@ -586,6 +618,7 @@
     <property role="TrG5h" value="MinOp" />
     <property role="34LRSv" value="min" />
     <property role="EcuMT" value="7740953487940081584" />
+    <property role="R4oN_" value="returns smallest element in collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6HHp2WnvluL" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
@@ -596,6 +629,7 @@
     <property role="TrG5h" value="ListWithOp" />
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179783739" />
+    <property role="R4oN_" value="create new list with the given element appended" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInBr4F" role="PzmwI">
       <ref role="PrY4T" node="4_KMC82H1yT" resolve="IListOneArgOp" />
@@ -606,6 +640,7 @@
     <property role="TrG5h" value="SetWithOp" />
     <property role="34LRSv" value="with" />
     <property role="EcuMT" value="2156530943179855331" />
+    <property role="R4oN_" value="create a new set with the specified element appended" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInFq9x" role="PzmwI">
       <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
@@ -614,6 +649,7 @@
   <node concept="1TIwiD" id="7yDflTqUNUp">
     <property role="EcuMT" value="8694548031077039769" />
     <property role="TrG5h" value="ElementTypeConstraintSingle" />
+    <property role="R4oN_" value="type constraints" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7yDflTqUNUq" role="1TKVEi">
       <property role="IQ2ns" value="8694548031077039770" />
@@ -626,6 +662,7 @@
   <node concept="1TIwiD" id="7yDflTqZBLC">
     <property role="EcuMT" value="8694548031078300776" />
     <property role="TrG5h" value="ElementTypeConstraintMap" />
+    <property role="R4oN_" value="type constraints" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7yDflTqZBLD" role="1TKVEi">
       <property role="IQ2ns" value="8694548031078300777" />
@@ -646,6 +683,7 @@
     <property role="EcuMT" value="1330041117646892901" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="CollectionSizeSpec" />
+    <property role="R4oN_" value="size specification" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="19PglA20qXJ" role="1TKVEl">
       <property role="IQ2nx" value="1330041117646892911" />
@@ -662,6 +700,7 @@
     <property role="EcuMT" value="3989687177013570767" />
     <property role="TrG5h" value="UpToTarget" />
     <property role="34LRSv" value="upto" />
+    <property role="R4oN_" value="creates list of numbers up to the given maximum" />
     <node concept="1TJgyj" id="3tudP_AOMNg" role="1TKVEi">
       <property role="IQ2ns" value="3989687177013570768" />
       <property role="20lmBu" value="aggregation" />
@@ -681,6 +720,7 @@
     <property role="TrG5h" value="UnpackOptionsOp" />
     <property role="34LRSv" value="unpackOptions" />
     <property role="EcuMT" value="4618483580248255217" />
+    <property role="R4oN_" value="??" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="40o9_yLEYFM" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -691,6 +731,7 @@
     <property role="3GE5qa" value="collection.rnd" />
     <property role="TrG5h" value="CounterExpr" />
     <property role="34LRSv" value="counter" />
+    <property role="R4oN_" value="returns how often the lambda has been executed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="7SZA7Udl6Fm">
@@ -703,6 +744,7 @@
     <property role="TrG5h" value="ForeachOp" />
     <property role="34LRSv" value="foreach" />
     <property role="EcuMT" value="9097157441620016186" />
+    <property role="R4oN_" value="perform action for each element" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="1TJgyj" id="7SZA7UeMt3K" role="1TKVEi">
       <property role="IQ2ns" value="9097157441640583408" />
@@ -728,12 +770,14 @@
     <property role="EcuMT" value="2554784455264825928" />
     <property role="TrG5h" value="FlattenOp" />
     <property role="34LRSv" value="flatten" />
+    <property role="R4oN_" value="flattens a list of lists into a list" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="5$4k7YFgD0B">
     <property role="EcuMT" value="6414340278546763815" />
     <property role="TrG5h" value="AsSingletonList" />
     <property role="34LRSv" value="toList" />
+    <property role="R4oN_" value="creates a list from the single value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5$4k7YFgD0I" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -745,6 +789,7 @@
     <property role="TrG5h" value="AbstractStringListJoiner" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="7GwCuf2AkLs" resolve="OneCollBaseTypedArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="4ptnK4ii9fS">
@@ -752,6 +797,7 @@
     <property role="TrG5h" value="StringJoinOp" />
     <property role="34LRSv" value="join" />
     <property role="EcuMT" value="5070313213695398904" />
+    <property role="R4oN_" value="creates a single string from list of strings" />
     <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
   </node>
   <node concept="1TIwiD" id="4ptnK4irG30">
@@ -759,6 +805,7 @@
     <property role="TrG5h" value="StringTerminateOp" />
     <property role="34LRSv" value="terminate" />
     <property role="EcuMT" value="5070313213697900736" />
+    <property role="R4oN_" value="??" />
     <ref role="1TJDcQ" node="4ptnK4iu3mt" resolve="AbstractStringListJoiner" />
   </node>
   <node concept="1TIwiD" id="3kEBq3lv4rL">
@@ -766,6 +813,7 @@
     <property role="3GE5qa" value="set" />
     <property role="TrG5h" value="SetWithoutOp" />
     <property role="34LRSv" value="without" />
+    <property role="R4oN_" value="create a new set without the specified element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInFq9z" role="PzmwI">
       <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
@@ -776,6 +824,7 @@
     <property role="34LRSv" value="isNotEmpty" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="6095949300270588116" />
+    <property role="R4oN_" value="returns whether collection is not empty" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcf">
@@ -783,6 +832,7 @@
     <property role="3GE5qa" value="collection" />
     <property role="TrG5h" value="FoldLeftOp" />
     <property role="34LRSv" value="foldLeft" />
+    <property role="R4oN_" value="fold left" />
     <ref role="1TJDcQ" node="4hLehKTZXcg" resolve="FoldOp" />
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcg">
@@ -791,6 +841,7 @@
     <property role="TrG5h" value="FoldOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4hLehKU04bM" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
@@ -821,6 +872,7 @@
     <property role="TrG5h" value="AsMapOp" />
     <property role="34LRSv" value="toMap" />
     <property role="EcuMT" value="24388123213992448" />
+    <property role="R4oN_" value="creates a set from a collection of 2-tuples" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
   </node>
   <node concept="1TIwiD" id="1mDdTH0lqM">
@@ -828,6 +880,7 @@
     <property role="34LRSv" value="size" />
     <property role="3GE5qa" value="collection" />
     <property role="EcuMT" value="24388123215615666" />
+    <property role="R4oN_" value="size of map" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1mDdTH0lrV" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -838,6 +891,7 @@
     <property role="TrG5h" value="FindFirstOp" />
     <property role="34LRSv" value="findFirst" />
     <property role="EcuMT" value="24388123216554083" />
+    <property role="R4oN_" value="returns the first element for which condition holds" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="1mDdTH3UxA" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -851,6 +905,7 @@
     <property role="TrG5h" value="ListWithAllOp" />
     <property role="34LRSv" value="withAll" />
     <property role="EcuMT" value="362871314062739301" />
+    <property role="R4oN_" value="create new list with the given elements appended" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="k9boAtSStA" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -866,6 +921,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="mapLike" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="asaX9" id="2uo6UInIEJi" role="lGtFl" />
     <node concept="1TJgyj" id="4_KMC82DZMl" role="1TKVEi">
@@ -890,6 +946,7 @@
     <property role="3GE5qa" value="list" />
     <property role="TrG5h" value="ListInsertOp" />
     <property role="34LRSv" value="insert" />
+    <property role="R4oN_" value="return new list with new element inserted at specified index" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1rPkY5wVdS6" role="1TKVEi">
       <property role="IQ2ns" value="1654320665587408390" />
@@ -914,6 +971,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="MapKeysOp" />
     <property role="34LRSv" value="keys" />
+    <property role="R4oN_" value="returns collection of keys" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6IBT1wUeIoE" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -924,6 +982,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="MapValuesOp" />
     <property role="34LRSv" value="values" />
+    <property role="R4oN_" value="returns collection of values in map" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6IBT1wUeESZ" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -934,6 +993,7 @@
     <property role="3GE5qa" value="list" />
     <property role="TrG5h" value="ListWithoutOp" />
     <property role="34LRSv" value="without" />
+    <property role="R4oN_" value="create new list without the specified element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInBr4H" role="PzmwI">
       <ref role="PrY4T" node="4_KMC82H1yT" resolve="IListOneArgOp" />
@@ -944,6 +1004,7 @@
     <property role="3GE5qa" value="map" />
     <property role="TrG5h" value="MapContainsKeyOp" />
     <property role="34LRSv" value="containsKey" />
+    <property role="R4oN_" value="check if map contains specified key" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2uo6UInHjsF" role="PzmwI">
       <ref role="PrY4T" node="6IBT1wT$hPp" resolve="IMapOneArgOp" />
