@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -60,15 +60,12 @@
     <property role="TrG5h" value="MessageContainer" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="3vxfdxbcs9n" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9j" resolve="IMessageNamespace" />
     </node>
     <node concept="PrWs8" id="3vxfdxbcs9K" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
-    </node>
-    <node concept="PrWs8" id="1CNpG_h50Jx" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     </node>
     <node concept="1TJgyj" id="3vxfdxbmieb" role="1TKVEi">
       <property role="IQ2ns" value="4026566441520669579" />
