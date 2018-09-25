@@ -6811,6 +6811,9 @@
         <node concept="3LEDTM" id="2zpAVpC$UDx" role="3LEDUa">
           <ref role="3LEDTN" node="2zpAVpC$IQf" resolve="org.iets3.core.expr.genjava.advanced.genplan" />
         </node>
+        <node concept="3LEz8M" id="2zpAVpCMBcm" role="3LEz9a">
+          <ref role="3LEz8N" node="2zpAVpC$xZc" resolve="org.iets3.core.expr.genjava.core.devkit" />
+        </node>
       </node>
       <node concept="3LEwk6" id="26tZ$Z4sNNn" role="2G$12L">
         <property role="BnDLt" value="true" />

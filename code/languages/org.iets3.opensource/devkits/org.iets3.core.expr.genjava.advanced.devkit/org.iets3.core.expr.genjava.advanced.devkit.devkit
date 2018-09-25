@@ -2,6 +2,9 @@
 <dev-kit name="org.iets3.core.expr.genjava.advanced.devkit" uuid="ffc660b2-672c-4f91-9291-8426ed4e58de">
   <exported-language name="cc59a077-028a-42b0-ad86-6a1d71258691(org.iets3.core.expr.genjava.datetime)" />
   <exported-language name="4453335f-7c63-4874-b3b1-ece8c37e6d9b(org.iets3.core.expr.genjava.temporal)" />
+  <extendedDevKits>
+    <extendedDevKit>da9c5738-b245-4e38-b52f-e6ee76cadd7f(org.iets3.core.expr.genjava.core.devkit)</extendedDevKit>
+  </extendedDevKits>
   <exported-solutions>
     <exported-solution>fde59617-0336-493b-a7ec-21148c3507f1(org.iets3.core.expr.genjava.temporal.rt)</exported-solution>
     <exported-solution>a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)</exported-solution>
