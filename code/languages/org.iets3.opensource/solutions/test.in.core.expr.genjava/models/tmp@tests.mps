@@ -4,7 +4,6 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <devkit ref="04b65b28-381b-4a5d-aec3-3ccd0071d372(org.iets3.genjava.devkit)" />
   </languages>
   <imports />
   <registry>

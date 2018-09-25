@@ -6,12 +6,10 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="2" />
     <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="0" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="0" />
+    <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
     <import index="ku0a" ref="r:1881124b-7ac4-4b0f-a7dd-12953ac3263b(org.iets3.core.expr.typetags.units.si.units)" />
@@ -175,7 +173,7 @@
           <property role="TrG5h" value="a" />
           <node concept="30dDTi" id="2JXkwhJg4ku" role="2zPyp_">
             <node concept="1PfFCI" id="2JXkwhJg4lN" role="30dEs_">
-              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
+              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
               <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
               <node concept="30dDTi" id="2JXkwhJg4xK" role="30czhm">
                 <node concept="1YnStw" id="2JXkwhJg6VM" role="30dEs_">
@@ -263,7 +261,7 @@
         <node concept="2zPypq" id="2JXkwhJh9KO" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="1PfFCI" id="2JXkwhJh9Po" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int)" />
+            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int [IntegerType])" />
             <ref role="1Pfwd7" node="2JXkwhJfWHv" resolve="percent" />
             <node concept="30bXRB" id="2JXkwhJh9Qc" role="30czhm">
               <property role="30bXRw" value="100" />
@@ -295,7 +293,7 @@
         <node concept="2zPypq" id="2JXkwhJhgkJ" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="1PfFCI" id="2JXkwhJhglJ" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
+            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
             <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
             <node concept="1YnStw" id="2JXkwhJhgq6" role="30czhm">
               <node concept="CIsGf" id="2JXkwhJhgq2" role="2c7tTI">
