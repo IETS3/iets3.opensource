@@ -16404,21 +16404,44 @@
     </node>
     <node concept="2zPypq" id="39iG6BG5ZfT" role="_iOnB">
       <property role="TrG5h" value="i5" />
-      <node concept="2206d8" id="39iG6BG5Zwq" role="2zPyp_">
-        <node concept="19SGf9" id="39iG6BG5Zws" role="2206d9">
-          <node concept="19SUe$" id="39iG6BG60zP" role="19SJt6" />
-          <node concept="2206Zw" id="39iG6BG60zM" role="19SJt6">
-            <node concept="_emDc" id="39iG6BG60$a" role="2206Zx">
+      <node concept="2206d8" id="39iG6BGyHPu" role="2zPyp_">
+        <node concept="19SGf9" id="39iG6BGyHPw" role="2206d9">
+          <node concept="19SUe$" id="39iG6BGyHPP" role="19SJt6" />
+          <node concept="2206Zw" id="39iG6BGyHPM" role="19SJt6">
+            <node concept="30dDZf" id="39iG6BGyHRC" role="2206Zx">
+              <node concept="_emDc" id="39iG6BGyHSc" role="30dEs_">
+                <ref role="_emDf" node="39iG6BG60iG" resolve="g" />
+              </node>
+              <node concept="_emDc" id="39iG6BGyHQa" role="30dEsF">
+                <ref role="_emDf" node="39iG6BG5ZL9" resolve="f" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="39iG6BGyHPQ" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="IYj_dZsNZE" role="_iOnB">
+      <property role="TrG5h" value="i6" />
+      <node concept="2206d8" id="IYj_dZsOpP" role="2zPyp_">
+        <node concept="19SGf9" id="IYj_dZsOpR" role="2206d9">
+          <node concept="19SUe$" id="IYj_dZsOpS" role="19SJt6">
+            <property role="19SUeA" value="  with deliberate" />
+          </node>
+          <node concept="2206Zw" id="IYj_dZsOrO" role="19SJt6">
+            <node concept="_emDc" id="IYj_dZsOrP" role="2206Zx">
               <ref role="_emDf" node="39iG6BG5ZL9" resolve="f" />
             </node>
           </node>
-          <node concept="19SUe$" id="39iG6BG60$n" role="19SJt6" />
-          <node concept="2206Zw" id="39iG6BG60$k" role="19SJt6">
-            <node concept="_emDc" id="39iG6BG60$W" role="2206Zx">
+          <node concept="19SUe$" id="IYj_dZsPwk" role="19SJt6" />
+          <node concept="2206Zw" id="IYj_dZsPwg" role="19SJt6">
+            <node concept="_emDc" id="IYj_dZsPx5" role="2206Zx">
               <ref role="_emDf" node="39iG6BG60iG" resolve="g" />
             </node>
           </node>
-          <node concept="19SUe$" id="39iG6BG60$o" role="19SJt6" />
+          <node concept="19SUe$" id="IYj_dZsPwj" role="19SJt6">
+            <property role="19SUeA" value="spaces   " />
+          </node>
         </node>
       </node>
     </node>
@@ -16440,7 +16463,7 @@
           <ref role="_emDf" node="39iG6BG5RyW" resolve="i2" />
         </node>
         <node concept="30bdrP" id="39iG6BG5SMs" role="_fkuS">
-          <property role="30bdrQ" value="  with some   space   upfront Hallo and some behind" />
+          <property role="30bdrQ" value="  with some   space   upfront Hallo and some behind   " />
         </node>
       </node>
       <node concept="_fkuZ" id="39iG6BG5W1y" role="_fkp5">
@@ -16449,7 +16472,7 @@
           <ref role="_emDf" node="39iG6BG5UAH" resolve="i3" />
         </node>
         <node concept="30bdrP" id="39iG6BG5Wnl" role="_fkuS">
-          <property role="30bdrQ" value=" Hallo at the beginning" />
+          <property role="30bdrQ" value="Hallo at the beginning" />
         </node>
       </node>
       <node concept="_fkuZ" id="39iG6BG5WHe" role="_fkp5">
@@ -16467,7 +16490,16 @@
           <ref role="_emDf" node="39iG6BG5ZfT" resolve="i5" />
         </node>
         <node concept="30bdrP" id="39iG6BG61jg" role="_fkuS">
-          <property role="30bdrQ" value=" foo  bar" />
+          <property role="30bdrQ" value="foobar" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="IYj_dZsOMr" role="_fkp5">
+        <node concept="_fku$" id="IYj_dZsOMs" role="_fkur" />
+        <node concept="_emDc" id="IYj_dZsOMZ" role="_fkuY">
+          <ref role="_emDf" node="IYj_dZsNZE" resolve="i6" />
+        </node>
+        <node concept="30bdrP" id="IYj_dZsON7" role="_fkuS">
+          <property role="30bdrQ" value="  with deliberate foo bar spaces   " />
         </node>
       </node>
     </node>
