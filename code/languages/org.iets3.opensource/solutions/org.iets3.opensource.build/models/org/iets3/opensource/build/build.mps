@@ -4294,7 +4294,7 @@
         </node>
         <node concept="1SiIV0" id="OnhZN9Y$7z" role="3bR37C">
           <node concept="3bR9La" id="OnhZN9Y$7$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
