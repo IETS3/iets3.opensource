@@ -2,9 +2,9 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -4294,7 +4294,7 @@
         </node>
         <node concept="1SiIV0" id="OnhZN9Y$7z" role="3bR37C">
           <node concept="3bR9La" id="OnhZN9Y$7$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="al5i:43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
@@ -7355,6 +7355,12 @@
   <node concept="1l3spW" id="OJuIQpzfqR">
     <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <node concept="2_Ic$z" id="mfGoedf1p2" role="3989C9">
+      <property role="TZNOO" value="1.8" />
+    </node>
+    <node concept="2igEWh" id="mfGoedf18r" role="1hWBAP">
+      <property role="3UIfUI" value="6144" />
+    </node>
     <node concept="m$_wf" id="3gmMi5swQwP" role="3989C9">
       <property role="m$_wk" value="dummy" />
       <node concept="3_J27D" id="3gmMi5swQwR" role="m$_yQ">

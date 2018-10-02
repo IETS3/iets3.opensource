@@ -22,6 +22,7 @@
     <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" />
     <import index="tpcc" ref="r:00000000-0000-4000-0000-011c89590290(jetbrains.mps.lang.structure.plugin)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -231,6 +232,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -367,6 +371,22 @@
     </node>
     <node concept="1SWQZ3" id="5kXA14n1oBf" role="lGtFl">
       <property role="1SWRpm" value="COMPONENTS" />
+    </node>
+    <node concept="2SaL7w" id="68p$MFVptm8" role="2ZfVeh">
+      <node concept="3clFbS" id="68p$MFVptm9" role="2VODD2">
+        <node concept="3clFbF" id="68p$MFVpwXf" role="3cqZAp">
+          <node concept="3fqX7Q" id="68p$MFVpy7X" role="3clFbG">
+            <node concept="2OqwBi" id="68p$MFVpxdu" role="3fr31v">
+              <node concept="2Sf5sV" id="68p$MFVpwXe" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="68p$MFVpx_H" role="2OqNvi">
+                <node concept="chp4Y" id="68p$MFVpxNg" role="cj9EA">
+                  <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2S6QgY" id="1WCh2thb0Dd">

@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
+    <import index="8wxg" ref="r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -167,6 +168,9 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -556,6 +560,20 @@
     </node>
     <node concept="1SWQZ3" id="1QYdL38__oe" role="lGtFl">
       <property role="1SWRpm" value="EXPRESSIONS" />
+    </node>
+    <node concept="2SaL7w" id="2fQoNQ2py4d" role="2ZfVeh">
+      <node concept="3clFbS" id="2fQoNQ2py4e" role="2VODD2">
+        <node concept="3clFbF" id="2fQoNQ2pykT" role="3cqZAp">
+          <node concept="2YIFZM" id="2fQoNQ2pysC" role="3clFbG">
+            <ref role="37wK5l" to="8wxg:4FREEt6vhDG" resolve="canReplaceNodeWithConcept" />
+            <ref role="1Pybhc" to="8wxg:4FREEt6wJnq" resolve="ConstraintHelper" />
+            <node concept="2Sf5sV" id="2fQoNQ2pyR1" role="37wK5m" />
+            <node concept="35c_gC" id="2fQoNQ2pz2C" role="37wK5m">
+              <ref role="35c_gD" to="yv47:69zaTr1HgRc" resolve="Constant" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2S6QgY" id="713ZPaW5rpM">
