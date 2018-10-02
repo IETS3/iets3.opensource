@@ -38,6 +38,12 @@
     <language slang="l:63c1aad1-e2db-439c-a30a-02b5e0bc80f3:org.iets3.core.expr.tracing" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
     <module reference="cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)" version="0" />
     <module reference="07f696b4-29e7-4878-aefb-39cac5e8c6cc(org.iets3.core.expr.collections.interpreter)" version="0" />
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
