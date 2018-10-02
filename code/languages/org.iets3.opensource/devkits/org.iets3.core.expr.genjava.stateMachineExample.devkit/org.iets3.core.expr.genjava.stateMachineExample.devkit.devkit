@@ -4,7 +4,7 @@
   <exported-language name="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" />
   <exported-language name="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" />
   <extendedDevKits>
-    <extendedDevKit>04b65b28-381b-4a5d-aec3-3ccd0071d372(org.iets3.genjava.devkit)</extendedDevKit>
+    <extendedDevKit>ffc660b2-672c-4f91-9291-8426ed4e58de(org.iets3.core.expr.genjava.advanced.devkit)</extendedDevKit>
   </extendedDevKits>
   <exported-solutions>
     <exported-solution>889f307c-31c8-4d64-9e24-a83f15c85f02(org.iets3.core.expr.genjava.stateMachineExample.genplan)</exported-solution>
