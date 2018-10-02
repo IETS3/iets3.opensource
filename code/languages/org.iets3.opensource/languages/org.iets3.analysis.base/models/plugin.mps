@@ -15,6 +15,7 @@
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
@@ -1236,6 +1237,32 @@
         <node concept="TZ5HA" id="6rcydJjjutC" role="TZ5H$">
           <node concept="1dT_AC" id="6rcydJjjutD" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the jSMTLIB ExpressionFactory." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1BirSAt78N$" role="jymVt" />
+    <node concept="2tJIrI" id="1BirSAt7nHV" role="jymVt" />
+    <node concept="3clFb_" id="1BirSAt7d_P" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="registerStringConstant" />
+      <node concept="37vLTG" id="1BirSAt7nC_" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="1BirSAt7nGD" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="1BirSAt7d_R" role="3clF45" />
+      <node concept="3Tm1VV" id="1BirSAt7d_S" role="1B3o_S" />
+      <node concept="3clFbS" id="1BirSAt7d_T" role="3clF47" />
+      <node concept="P$JXv" id="1BirSAt7pYD" role="lGtFl">
+        <node concept="TZ5HA" id="1BirSAt7pYE" role="TZ5H$">
+          <node concept="1dT_AC" id="1BirSAt7pYF" role="1dT_Ay">
+            <property role="1dT_AB" value="Registers a String constant to enable the solver integration to later resolve its value from its hash for presentation purposes." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BirSAt7pYJ" role="3nqlJM">
+          <property role="TUZQ4" value="the string value" />
+          <node concept="zr_55" id="1BirSAt7pYL" role="zr_5Q">
+            <ref role="zr_51" node="1BirSAt7nC_" resolve="value" />
           </node>
         </node>
       </node>

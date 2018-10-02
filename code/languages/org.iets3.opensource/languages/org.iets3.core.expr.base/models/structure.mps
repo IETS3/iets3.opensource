@@ -1848,7 +1848,7 @@
   <node concept="1TIwiD" id="5fy$GmTPJXq">
     <property role="3GE5qa" value="binary.p1100" />
     <property role="TrG5h" value="ModExpression" />
-    <property role="34LRSv" value="%" />
+    <property role="34LRSv" value="mod" />
     <property role="EcuMT" value="6044555027808714586" />
     <property role="R4oN_" value="numeric modulus" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
