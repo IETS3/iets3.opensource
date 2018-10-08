@@ -469,7 +469,7 @@
               <ref role="1Pybhc" to="8wxg:4FREEt6wJnq" resolve="ConstraintHelper" />
               <node concept="2Sf5sV" id="4OsX4vnZEIW" role="37wK5m" />
               <node concept="35c_gC" id="4OsX4vnZFeW" role="37wK5m">
-                <ref role="35c_gD" to="yv47:6HHp2WngtVm" resolve="TypedefType" />
+                <ref role="35c_gD" to="yv47:6HHp2WngtTC" resolve="Typedef" />
               </node>
             </node>
             <node concept="3fqX7Q" id="2NHHcg2BLh0" role="3uHU7B">
