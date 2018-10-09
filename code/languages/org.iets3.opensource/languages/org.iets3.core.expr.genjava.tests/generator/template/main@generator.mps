@@ -1267,7 +1267,7 @@
   </node>
   <node concept="jVnub" id="1Ds3sky_1Zh">
     <property role="TrG5h" value="SwitchTestExpressions" />
-    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression" />
+    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression2Expression" />
     <node concept="3aamgX" id="Ga23IcZOCG" role="3aUrZf">
       <ref role="30HIoZ" to="av4b:6HHp2WmRVXt" resolve="NamedAssertRef" />
       <node concept="1Koe21" id="Ga23IcZOCH" role="1lVwrX">

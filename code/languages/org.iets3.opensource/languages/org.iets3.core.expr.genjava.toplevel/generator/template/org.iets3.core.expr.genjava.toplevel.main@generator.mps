@@ -1099,7 +1099,7 @@
                 </node>
               </node>
               <node concept="1sPUBX" id="zeRLgzMCwm" role="lGtFl">
-                <ref role="v9R2y" to="rw5i:68MLomyagFy" resolve="Expression2NonLastStatement" />
+                <ref role="v9R2y" to="rw5i:68MLomyagFy" resolve="Expression2SideEffectStatement" />
               </node>
             </node>
             <node concept="3clFbJ" id="1QYs15erdJ0" role="3cqZAp">
@@ -2144,7 +2144,7 @@
                 </node>
               </node>
               <node concept="1sPUBX" id="68MLomyYpGM" role="lGtFl">
-                <ref role="v9R2y" to="rw5i:68MLomyagFy" resolve="Expression2NonLastStatement" />
+                <ref role="v9R2y" to="rw5i:68MLomyagFy" resolve="Expression2SideEffectStatement" />
               </node>
             </node>
             <node concept="3clFbJ" id="1QYs15es8sb" role="3cqZAp">
@@ -4650,7 +4650,7 @@
   </node>
   <node concept="jVnub" id="1Ds3sky$5Uq">
     <property role="TrG5h" value="SwitchToplevelExpressions" />
-    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression" />
+    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression2Expression" />
     <node concept="3aamgX" id="1Ds3sky$5Us" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yv47:ub9nkyG$WT" resolve="ConstantRef" />
@@ -10049,7 +10049,7 @@
               <node concept="3cmrfG" id="1QYs15eDt$g" role="33vP2m">
                 <property role="3cmrfH" value="5" />
                 <node concept="1sPUBX" id="1QYs15eDt$h" role="lGtFl">
-                  <ref role="v9R2y" to="rw5i:7bZFIimgIJh" resolve="Expression" />
+                  <ref role="v9R2y" to="rw5i:7bZFIimgIJh" resolve="Expression2Expression" />
                   <node concept="3NFfHV" id="1QYs15eDt$i" role="1sPUBK">
                     <node concept="3clFbS" id="1QYs15eDt$j" role="2VODD2">
                       <node concept="3clFbF" id="1QYs15eDt$k" role="3cqZAp">
@@ -12676,7 +12676,7 @@
   </node>
   <node concept="jVnub" id="68MLomyPd6t">
     <property role="TrG5h" value="switch_Toplevel_Expression2NonLastStatement" />
-    <ref role="phYkn" to="rw5i:68MLomyagFy" resolve="Expression2NonLastStatement" />
+    <ref role="phYkn" to="rw5i:68MLomyagFy" resolve="Expression2SideEffectStatement" />
     <node concept="3aamgX" id="3pkOvRzprR_" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
