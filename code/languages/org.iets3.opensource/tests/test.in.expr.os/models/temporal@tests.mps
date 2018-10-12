@@ -50,6 +50,7 @@
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
       <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
@@ -90,6 +91,7 @@
         <child id="543569365052056368" name="items" index="_fkp5" />
       </concept>
       <concept id="543569365052056266" name="org.iets3.core.expr.tests.structure.AssertTestItem" flags="ng" index="_fkuZ">
+        <property id="8173255439291719394" name="strict" index="3sVy9A" />
         <child id="543569365052056302" name="op" index="_fkur" />
         <child id="543569365052056269" name="expected" index="_fkuS" />
         <child id="543569365052056267" name="actual" index="_fkuY" />
@@ -390,6 +392,93 @@
     <node concept="_ixoA" id="7aRvJQErc4Z" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQEroak" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErqb$" role="_iOnB" />
+    <node concept="_fkuM" id="VFjlN5ID3N" role="_iOnB">
+      <property role="TrG5h" value="Equality" />
+      <node concept="_fkuZ" id="VFjlN5IF5H" role="_fkp5">
+        <property role="3sVy9A" value="true" />
+        <node concept="_fku$" id="VFjlN5IF5I" role="_fkur" />
+        <node concept="30cPrO" id="VFjlN5IF6i" role="_fkuY">
+          <node concept="_emDc" id="VFjlN5L7aZ" role="30dEs_">
+            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+          </node>
+          <node concept="_emDc" id="VFjlN5IF5V" role="30dEsF">
+            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="VFjlN5LVOy" role="_fkuS">
+          <node concept="FfN7L" id="VFjlN5LVON" role="FfN64">
+            <node concept="_emDc" id="VFjlN5LVOM" role="FfN7M">
+              <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+            </node>
+            <node concept="2vmpnb" id="VFjlN5LVPe" role="FfN7O" />
+          </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="VFjlN5MLef" role="_fkp5" />
+      <node concept="_fkuZ" id="VFjlN5L78C" role="_fkp5">
+        <property role="3sVy9A" value="true" />
+        <node concept="_fku$" id="VFjlN5L78D" role="_fkur" />
+        <node concept="30cPrO" id="VFjlN5L78E" role="_fkuY">
+          <node concept="30bXRB" id="VFjlN5L78F" role="30dEs_">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="VFjlN5L78G" role="30dEsF">
+            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="VFjlN5L78H" role="_fkuS" />
+        <node concept="1z9TsT" id="VFjlN5MPFo" role="lGtFl">
+          <node concept="OjmMv" id="VFjlN5MPFp" role="1w35rA">
+            <node concept="19SGf9" id="VFjlN5MPFq" role="OjmMu">
+              <node concept="19SUe$" id="VFjlN5MPFr" role="19SJt6">
+                <property role="19SUeA" value="one problem with the implicit approach here is that&#10;one cannot get feedback on which of the slices failed&#10;the test. Is this ok?" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="VFjlN5M2tP" role="_fkp5">
+        <property role="3sVy9A" value="true" />
+        <node concept="_fku$" id="VFjlN5M2tQ" role="_fkur" />
+        <node concept="30cPrR" id="VFjlN5M2wm" role="_fkuY">
+          <node concept="_emDc" id="VFjlN5M2tT" role="30dEsF">
+            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+          </node>
+          <node concept="30bXRB" id="VFjlN5M2tS" role="30dEs_">
+            <property role="30bXRw" value="100" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="VFjlN5M4wN" role="_fkuS" />
+      </node>
+      <node concept="3dYjL0" id="VFjlN5MLeN" role="_fkp5" />
+      <node concept="_fkuZ" id="VFjlN5KZOF" role="_fkp5">
+        <property role="3sVy9A" value="true" />
+        <node concept="_fku$" id="VFjlN5KZOG" role="_fkur" />
+        <node concept="30cPrO" id="VFjlN5KZOH" role="_fkuY">
+          <node concept="30bXRB" id="VFjlN5KZOI" role="30dEs_">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="_emDc" id="VFjlN5KZQV" role="30dEsF">
+            <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="VFjlN5L2Vy" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="VFjlN5M1gB" role="_fkp5">
+        <property role="3sVy9A" value="true" />
+        <node concept="_fku$" id="VFjlN5M1gC" role="_fkur" />
+        <node concept="30cPrR" id="VFjlN5M1je" role="_fkuY">
+          <node concept="_emDc" id="VFjlN5M1gF" role="30dEsF">
+            <ref role="_emDf" node="7aRvJQErc4W" resolve="v1" />
+          </node>
+          <node concept="30bXRB" id="VFjlN5M1gE" role="30dEs_">
+            <property role="30bXRw" value="10" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="VFjlN5M2tI" role="_fkuS" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="VFjlN5IB1U" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErscP" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErue7" role="_iOnB" />
     <node concept="_fkuM" id="7aRvJQErc50" role="_iOnB">
