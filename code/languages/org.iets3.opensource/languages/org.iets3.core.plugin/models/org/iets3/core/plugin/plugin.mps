@@ -5,9 +5,9 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
@@ -52,6 +52,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="997079742910640235" name="fillActionContext" index="1teQrl" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -566,6 +567,7 @@
     <property role="TrG5h" value="runManuallyOnNode" />
     <property role="2uzpH1" value="Run/Evaluate/Check Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="31wEG_giQ13" role="tncku">
       <node concept="3clFbS" id="31wEG_giQ14" role="2VODD2">
         <node concept="3cpWs8" id="7TU$2foe_N6" role="3cqZAp">
@@ -846,9 +848,10 @@
   </node>
   <node concept="sE7Ow" id="4bmM0avMBSf">
     <property role="TrG5h" value="runAllManuallyOnRoot" />
-    <property role="2uzpH1" value="Run/Evaluate/Check all in Root Manually" />
+    <property role="2uzpH1" value="Run/Evaluate/Check All in Root Manually" />
     <property role="3GE5qa" value="view" />
     <property role="fJN8o" value="true" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="4bmM0avMBSg" role="tncku">
       <node concept="3clFbS" id="4bmM0avMBSh" role="2VODD2">
         <node concept="3cpWs8" id="4bmM0avMH1T" role="3cqZAp">
@@ -1173,6 +1176,7 @@
     <property role="TrG5h" value="runAllManuallyOnModel" />
     <property role="2uzpH1" value="Run/Evaluate/Check All in Model Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="3HmE5WaYae3" role="tncku">
       <node concept="3clFbS" id="3HmE5WaYae4" role="2VODD2">
         <node concept="3cpWs8" id="3HmE5WaYmi_" role="3cqZAp">
@@ -1389,6 +1393,7 @@
     <property role="TrG5h" value="runManuallyOnContainer" />
     <property role="2uzpH1" value="Run/Evaluate/Check Children Manually" />
     <property role="3GE5qa" value="view" />
+    <property role="1teQrl" value="true" />
     <node concept="tnohg" id="TuTPrvRoFc" role="tncku">
       <node concept="3clFbS" id="TuTPrvRoFd" role="2VODD2">
         <node concept="3cpWs8" id="TuTPrvR$bB" role="3cqZAp">

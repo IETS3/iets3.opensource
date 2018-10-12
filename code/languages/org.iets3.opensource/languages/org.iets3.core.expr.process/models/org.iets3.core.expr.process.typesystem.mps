@@ -552,7 +552,7 @@
                     </node>
                     <node concept="1mIQ4w" id="4IV0h48oSPT" role="2OqNvi">
                       <node concept="chp4Y" id="4IV0h48oTF2" role="cj9EA">
-                        <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                        <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
                       </node>
                     </node>
                   </node>
@@ -560,7 +560,7 @@
                     <node concept="2OqwBi" id="4IV0h48oSPW" role="2Oq$k0">
                       <node concept="1PxgMI" id="4IV0h48oSPX" role="2Oq$k0">
                         <node concept="chp4Y" id="4IV0h48oTR3" role="3oSUPX">
-                          <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                          <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
                         </node>
                         <node concept="2OqwBi" id="4IV0h48oSPZ" role="1m5AlR">
                           <node concept="2OqwBi" id="4IV0h48oSQ0" role="2Oq$k0">

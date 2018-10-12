@@ -5,8 +5,8 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
@@ -233,6 +233,7 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -1671,19 +1672,18 @@
     <property role="3GE5qa" value="range" />
     <ref role="1XX52x" to="kfo3:1tPb0nsnb7j" resolve="IntermediateRS" />
     <node concept="3EZMnI" id="1tPb0nsnb7N" role="2wV5jI">
-      <node concept="1kIj98" id="1tPb0nsnb7X" role="3EZMnx">
-        <node concept="3F1sOY" id="1tPb0nsnb83" role="1kIj9b">
-          <ref role="1NtTu8" to="kfo3:1tPb0nsnb7k" resolve="lower" />
-        </node>
+      <node concept="3F0ifn" id="6OunYCfjLSJ" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F1sOY" id="1tPb0nsnb83" role="3EZMnx">
+        <ref role="1NtTu8" to="kfo3:1tPb0nsnb7k" resolve="lower" />
       </node>
       <node concept="2iRfu4" id="2DnmbxU3eIa" role="2iSdaV" />
       <node concept="3F0ifn" id="1tPb0nsnb8a" role="3EZMnx">
         <property role="3F0ifm" value=".." />
       </node>
-      <node concept="1kIj98" id="1tPb0nsnb8C" role="3EZMnx">
-        <node concept="3F1sOY" id="1tPb0nsnb8k" role="1kIj9b">
-          <ref role="1NtTu8" to="kfo3:1tPb0nsnb7m" resolve="upper" />
-        </node>
+      <node concept="3F1sOY" id="1tPb0nsnb8k" role="3EZMnx">
+        <ref role="1NtTu8" to="kfo3:1tPb0nsnb7m" resolve="upper" />
       </node>
     </node>
   </node>
@@ -1902,7 +1902,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="8XWEtdZOAF">
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <ref role="1XX52x" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
     <node concept="3EZMnI" id="8XWEtdZOCv" role="2wV5jI">
       <node concept="3tD6jV" id="8XWEteklS1" role="3F10Kt">
@@ -1968,8 +1968,11 @@
         </node>
       </node>
       <node concept="2iRfu4" id="8XWEtdZOCw" role="2iSdaV" />
-      <node concept="3F0A7n" id="8XWEtdZOCs" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1kIj98" id="6OunYCf4NrW" role="3EZMnx">
+        <property role="3g2DhO" value="true" />
+        <node concept="3F0A7n" id="8XWEtdZOCs" role="1kIj9b">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3F0ifn" id="8XWEtdZOCC" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -2105,6 +2108,9 @@
             <node concept="VPxyj" id="4LQ7f3jE0ZU" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
+          </node>
+          <node concept="VPRnO" id="75Hf8iH$3aJ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
       </node>
@@ -2400,7 +2406,7 @@
                           <node concept="2ShNRf" id="5hullqu1KmV" role="1sKFgg">
                             <node concept="3zrR0B" id="5hullqu1KmW" role="2ShVmc">
                               <node concept="3Tqbb2" id="5hullqu1KmX" role="3zrR0E">
-                                <ref role="ehGHo" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+                                <ref role="ehGHo" to="kfo3:6OunYCeYf_8" resolve="AbstractResultColDef" />
                               </node>
                             </node>
                           </node>
@@ -2545,8 +2551,8 @@
                         </node>
                       </node>
                       <node concept="1mIQ4w" id="5hullqu1KnZ" role="2OqNvi">
-                        <node concept="chp4Y" id="5hullqu1Ko0" role="cj9EA">
-                          <ref role="cht4Q" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+                        <node concept="chp4Y" id="6OunYCf1wE_" role="cj9EA">
+                          <ref role="cht4Q" to="kfo3:6OunYCeYf_8" resolve="AbstractResultColDef" />
                         </node>
                       </node>
                     </node>
@@ -2622,6 +2628,28 @@
       <node concept="2iRkQZ" id="1yFVafcIuqT" role="2iSdaV" />
       <node concept="PMmxH" id="1yFVafcIusk" role="3EZMnx">
         <ref role="PMmxG" node="1yFVafcIlfG" resolve="actualTable" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6OunYCeYfBA">
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <ref role="1XX52x" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
+    <node concept="3EZMnI" id="6OunYCf3ALi" role="2wV5jI">
+      <node concept="2iRfu4" id="6OunYCf3ALj" role="2iSdaV" />
+      <node concept="3F0ifn" id="6OunYCf3ALr" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="6OunYCeYfBP" role="3EZMnx">
+        <ref role="1NtTu8" to="kfo3:6OunYCeYfBN" resolve="varref" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6OunYCfi$px">
+    <property role="3GE5qa" value="multidectab" />
+    <ref role="1XX52x" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+    <node concept="1kIj98" id="6OunYCfi$pB" role="2wV5jI">
+      <node concept="3F1sOY" id="6OunYCfi$pz" role="1kIj9b">
+        <ref role="1NtTu8" to="kfo3:6OunYCfi$oc" resolve="range" />
       </node>
     </node>
   </node>

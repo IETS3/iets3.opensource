@@ -83,6 +83,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -99,6 +102,7 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
@@ -106,10 +110,12 @@
         <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="6738154313879680265" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childNode" flags="nn" index="2H4GUG" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
@@ -287,8 +293,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7kYh9Ws$zBT">
-    <property role="3GE5qa" value="map.immutable" />
-    <ref role="1M2myG" to="700h:7kYh9Ws$zzv" resolve="ImmutableMapOneArgOp" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1M2myG" to="700h:6IBT1wT$hPp" resolve="IMapOneArgOp" />
     <node concept="9S07l" id="6b_jefnKyjO" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKyjP" role="2VODD2">
         <node concept="3cpWs6" id="6IBT1wUeJ8q" role="3cqZAp">
@@ -309,7 +315,7 @@
             </node>
             <node concept="1mIQ4w" id="6IBT1wUeJ8z" role="2OqNvi">
               <node concept="chp4Y" id="6IBT1wUeJ8$" role="cj9EA">
-                <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="ImmutableMapType" />
+                <ref role="cht4Q" to="700h:7kYh9WszdBQ" resolve="MapType" />
               </node>
             </node>
           </node>
@@ -629,8 +635,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1RHynufnBUo">
-    <property role="3GE5qa" value="list.immutable" />
-    <ref role="1M2myG" to="700h:1RHynufnBSS" resolve="ImmutableListOneArgOp" />
+    <property role="3GE5qa" value="list" />
+    <ref role="1M2myG" to="700h:4_KMC82H1yT" resolve="IListOneArgOp" />
     <node concept="9S07l" id="6b_jefnKylt" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKylu" role="2VODD2">
         <node concept="3cpWs6" id="5WlDfyP3qaO" role="3cqZAp">
@@ -651,7 +657,7 @@
             </node>
             <node concept="1mIQ4w" id="5WlDfyP3qaX" role="2OqNvi">
               <node concept="chp4Y" id="5WlDfyP4FQW" role="cj9EA">
-                <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
               </node>
             </node>
           </node>
@@ -660,8 +666,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1RHynufnSQK">
-    <property role="3GE5qa" value="set.immutable" />
-    <ref role="1M2myG" to="700h:1RHynufnSPh" resolve="ImmutableSetOneArgOp" />
+    <property role="3GE5qa" value="set" />
+    <ref role="1M2myG" to="700h:thkha3aNEl" resolve="ISetOneArgOp" />
     <node concept="9S07l" id="6b_jefnKyk0" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKyk1" role="2VODD2">
         <node concept="3cpWs6" id="6QPHMFf1qKm" role="3cqZAp">
@@ -682,7 +688,7 @@
             </node>
             <node concept="1mIQ4w" id="6QPHMFf1qKv" role="2OqNvi">
               <node concept="chp4Y" id="6QPHMFf1qKw" role="cj9EA">
-                <ref role="cht4Q" to="700h:7GwCuf2Wbm7" resolve="ImmutableSetType" />
+                <ref role="cht4Q" to="700h:7GwCuf2Wbm7" resolve="SetType" />
               </node>
             </node>
           </node>
@@ -1160,7 +1166,7 @@
             <node concept="2qgKlT" id="1mDdTH0mF7" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
               <node concept="35c_gC" id="1mDdTH0mST" role="37wK5m">
-                <ref role="35c_gD" to="700h:7kYh9WszdBQ" resolve="ImmutableMapType" />
+                <ref role="35c_gD" to="700h:7kYh9WszdBQ" resolve="MapType" />
               </node>
               <node concept="3clFbT" id="1mDdTH0nGN" role="37wK5m">
                 <property role="3clFbU" value="false" />
@@ -1226,42 +1232,9 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="6IBT1wUeCP4">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1M2myG" to="700h:6IBT1wUeCOW" resolve="MapLikeOneArgOp" />
-    <node concept="9S07l" id="6IBT1wUeCP5" role="9Vyp8">
-      <node concept="3clFbS" id="6IBT1wUeCP6" role="2VODD2">
-        <node concept="3cpWs6" id="55XsL7znDlu" role="3cqZAp">
-          <node concept="3y3z36" id="55XsL7znFb2" role="3cqZAk">
-            <node concept="10Nm6u" id="55XsL7znFc4" role="3uHU7w" />
-            <node concept="1UaxmW" id="55XsL7znDxD" role="3uHU7B">
-              <node concept="1YaCAy" id="55XsL7znDYc" role="1Ub_4A">
-                <property role="TrG5h" value="type" />
-                <ref role="1YaFvo" to="700h:4_KMC82DFps" resolve="MapLikeType" />
-              </node>
-              <node concept="2OqwBi" id="55XsL7znDHi" role="1Ub_4B">
-                <node concept="2OqwBi" id="55XsL7znDHj" role="2Oq$k0">
-                  <node concept="1PxgMI" id="55XsL7znDHk" role="2Oq$k0">
-                    <node concept="nLn13" id="55XsL7znDHl" role="1m5AlR" />
-                    <node concept="chp4Y" id="55XsL7znDHm" role="3oSUPX">
-                      <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="55XsL7znDHn" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                  </node>
-                </node>
-                <node concept="3JvlWi" id="55XsL7znDHo" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="6IBT1wUeIU8">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1M2myG" to="700h:6IBT1wUeIoD" resolve="MapLikeKeysOp" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1M2myG" to="700h:6IBT1wUeIoD" resolve="MapKeysOp" />
     <node concept="9S07l" id="6IBT1wUeJo$" role="9Vyp8">
       <node concept="3clFbS" id="6IBT1wUeJo_" role="2VODD2">
         <node concept="3cpWs6" id="55XsL7znJUC" role="3cqZAp">
@@ -1270,7 +1243,7 @@
             <node concept="1UaxmW" id="55XsL7znJUF" role="3uHU7B">
               <node concept="1YaCAy" id="55XsL7znJUG" role="1Ub_4A">
                 <property role="TrG5h" value="type" />
-                <ref role="1YaFvo" to="700h:4_KMC82DFps" resolve="MapLikeType" />
+                <ref role="1YaFvo" to="700h:7kYh9WszdBQ" resolve="MapType" />
               </node>
               <node concept="2OqwBi" id="55XsL7znJUH" role="1Ub_4B">
                 <node concept="2OqwBi" id="55XsL7znJUI" role="2Oq$k0">
@@ -1293,8 +1266,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6IBT1wUeF4i">
-    <property role="3GE5qa" value="map.common" />
-    <ref role="1M2myG" to="700h:6IBT1wUeESY" resolve="MapLikeValuesOp" />
+    <property role="3GE5qa" value="map" />
+    <ref role="1M2myG" to="700h:6IBT1wUeESY" resolve="MapValuesOp" />
     <node concept="9S07l" id="6IBT1wUeF4j" role="9Vyp8">
       <node concept="3clFbS" id="6IBT1wUeF4k" role="2VODD2">
         <node concept="3cpWs6" id="55XsL7znKnt" role="3cqZAp">
@@ -1303,7 +1276,7 @@
             <node concept="1UaxmW" id="55XsL7znKnw" role="3uHU7B">
               <node concept="1YaCAy" id="55XsL7znKnx" role="1Ub_4A">
                 <property role="TrG5h" value="type" />
-                <ref role="1YaFvo" to="700h:4_KMC82DFps" resolve="MapLikeType" />
+                <ref role="1YaFvo" to="700h:7kYh9WszdBQ" resolve="MapType" />
               </node>
               <node concept="2OqwBi" id="55XsL7znKny" role="1Ub_4B">
                 <node concept="2OqwBi" id="55XsL7znKnz" role="2Oq$k0">
@@ -1326,8 +1299,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="LrvgQhkMdq">
-    <property role="3GE5qa" value="list.immutable" />
-    <ref role="1M2myG" to="700h:LrvgQhjFyf" resolve="ImmutableListInsertOp" />
+    <property role="3GE5qa" value="list" />
+    <ref role="1M2myG" to="700h:LrvgQhjFyf" resolve="ListInsertOp" />
     <node concept="9S07l" id="LrvgQhkMrZ" role="9Vyp8">
       <node concept="3clFbS" id="LrvgQhkMs0" role="2VODD2">
         <node concept="3cpWs6" id="thkha2zByQ" role="3cqZAp">
@@ -1348,7 +1321,30 @@
             </node>
             <node concept="1mIQ4w" id="thkha2zByZ" role="2OqNvi">
               <node concept="chp4Y" id="LrvgQhkMMP" role="cj9EA">
-                <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ImmutableListType" />
+                <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1qAqVwqsHbL">
+    <property role="3GE5qa" value="collection" />
+    <ref role="1M2myG" to="700h:6zmBjqUily5" resolve="CollectionType" />
+    <node concept="9SLcT" id="1qAqVwqsHiX" role="9SGkU">
+      <node concept="3clFbS" id="1qAqVwqsHiY" role="2VODD2">
+        <node concept="3clFbF" id="1qAqVwqsKUt" role="3cqZAp">
+          <node concept="3fqX7Q" id="1qAqVwqsKUr" role="3clFbG">
+            <node concept="2OqwBi" id="1qAqVwqsLZ5" role="3fr31v">
+              <node concept="2OqwBi" id="1qAqVwqsLnX" role="2Oq$k0">
+                <node concept="2H4GUG" id="1qAqVwqsL5o" role="2Oq$k0" />
+                <node concept="3JvlWi" id="1qAqVwqsLBK" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="1qAqVwqsMjS" role="2OqNvi">
+                <node concept="chp4Y" id="1qAqVwqsMww" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:5BNZGjBtUbJ" resolve="AttemptType" />
+                </node>
               </node>
             </node>
           </node>

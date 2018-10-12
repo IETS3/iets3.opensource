@@ -13,6 +13,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
@@ -301,6 +304,9 @@
       <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
+      </concept>
+      <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
+        <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
@@ -1047,6 +1053,33 @@
         <node concept="17QB3L" id="XhdFKvY2nQ" role="A3Ik2" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4cBRAFcj6L_" role="jymVt" />
+    <node concept="3clFb_" id="4cBRAFcj781" role="jymVt">
+      <property role="TrG5h" value="getMessage" />
+      <node concept="17QB3L" id="4cBRAFcj7Wu" role="3clF45" />
+      <node concept="3Tm1VV" id="4cBRAFcj784" role="1B3o_S" />
+      <node concept="3clFbS" id="4cBRAFcj785" role="3clF47">
+        <node concept="3clFbF" id="4cBRAFcj89V" role="3cqZAp">
+          <node concept="2OqwBi" id="4cBRAFcja53" role="3clFbG">
+            <node concept="2OqwBi" id="4cBRAFcj8y0" role="2Oq$k0">
+              <node concept="Xjq3P" id="4cBRAFcj89U" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4cBRAFcj9ou" role="2OqNvi">
+                <ref role="2Oxat5" node="XhdFKvXU0a" resolve="messages" />
+              </node>
+            </node>
+            <node concept="3uJxvA" id="4cBRAFcjaK5" role="2OqNvi">
+              <node concept="Xl_RD" id="4cBRAFcjchY" role="3uJOhx">
+                <property role="Xl_RC" value="; " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4cBRAFcj7H_" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4cBRAFcj3Kk" role="jymVt" />
     <node concept="3Tm1VV" id="XhdFKvMYZZ" role="1B3o_S" />
     <node concept="3uibUv" id="rj7uJEn1FU" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
@@ -1204,6 +1237,32 @@
         <node concept="TZ5HA" id="6rcydJjjutC" role="TZ5H$">
           <node concept="1dT_AC" id="6rcydJjjutD" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the jSMTLIB ExpressionFactory." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1BirSAt78N$" role="jymVt" />
+    <node concept="2tJIrI" id="1BirSAt7nHV" role="jymVt" />
+    <node concept="3clFb_" id="1BirSAt7d_P" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="registerStringConstant" />
+      <node concept="37vLTG" id="1BirSAt7nC_" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="1BirSAt7nGD" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="1BirSAt7d_R" role="3clF45" />
+      <node concept="3Tm1VV" id="1BirSAt7d_S" role="1B3o_S" />
+      <node concept="3clFbS" id="1BirSAt7d_T" role="3clF47" />
+      <node concept="P$JXv" id="1BirSAt7pYD" role="lGtFl">
+        <node concept="TZ5HA" id="1BirSAt7pYE" role="TZ5H$">
+          <node concept="1dT_AC" id="1BirSAt7pYF" role="1dT_Ay">
+            <property role="1dT_AB" value="Registers a String constant to enable the solver integration to later resolve its value from its hash for presentation purposes." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BirSAt7pYJ" role="3nqlJM">
+          <property role="TUZQ4" value="the string value" />
+          <node concept="zr_55" id="1BirSAt7pYL" role="zr_5Q">
+            <ref role="zr_51" node="1BirSAt7nC_" resolve="value" />
           </node>
         </node>
       </node>
@@ -1896,7 +1955,7 @@
     <property role="TrG5h" value="SolverTimeoutException" />
     <property role="3GE5qa" value="" />
     <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
-    <node concept="3uibUv" id="2GQBRFCpFTS" role="1zkMxy">
+    <node concept="3uibUv" id="5ajXTE5TPHi" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
     <node concept="2tJIrI" id="2GQBRFCpFTT" role="jymVt" />
@@ -1906,8 +1965,49 @@
       <node concept="3Tm1VV" id="2GQBRFCpFU3" role="1B3o_S" />
       <node concept="3clFbS" id="2GQBRFCpFU4" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="5ajXTE5TQ9W" role="jymVt" />
+    <node concept="3clFb_" id="5ajXTE5TPOg" role="jymVt">
+      <property role="TrG5h" value="getMessage" />
+      <node concept="17QB3L" id="5ajXTE5TR2d" role="3clF45" />
+      <node concept="3Tm1VV" id="5ajXTE5TPOj" role="1B3o_S" />
+      <node concept="3clFbS" id="5ajXTE5TPOk" role="3clF47">
+        <node concept="3clFbF" id="5ajXTE5TRfb" role="3cqZAp">
+          <node concept="Xl_RD" id="5ajXTE5TRfa" role="3clFbG">
+            <property role="Xl_RC" value="The solver timeout exceeded. Please use the 'Set Timeout'-Intention to increase the timeout." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5ajXTE5TPP5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2GQBRFCpFUp" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFVR" role="jymVt" />
+  </node>
+  <node concept="312cEu" id="4dD4xJJV980">
+    <property role="TrG5h" value="SolverNotInvokedResult" />
+    <node concept="2tJIrI" id="28$LOSAF$zb" role="jymVt" />
+    <node concept="3Tm1VV" id="4dD4xJJV981" role="1B3o_S" />
+    <node concept="3clFb_" id="4dD4xJJVaf1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getErrorMessage" />
+      <node concept="3Tm1VV" id="4dD4xJJVaf3" role="1B3o_S" />
+      <node concept="17QB3L" id="4dD4xJJVaf4" role="3clF45" />
+      <node concept="3clFbS" id="4dD4xJJVaf6" role="3clF47">
+        <node concept="3clFbF" id="4dD4xJJVaxC" role="3cqZAp">
+          <node concept="Xl_RD" id="4dD4xJJVaxB" role="3clFbG">
+            <property role="Xl_RC" value="the solver has not been invoked due to an @solver:ignore annotation. Please remove the annotation and try again." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4dD4xJJVaf7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="mhgVwvXTVd" role="1zkMxy">
+      <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
+    </node>
   </node>
 </model>
 

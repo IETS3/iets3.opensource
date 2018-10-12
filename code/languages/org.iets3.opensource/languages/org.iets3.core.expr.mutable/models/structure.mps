@@ -3,17 +3,21 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
-    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -45,6 +49,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -119,6 +124,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="31BLocd1pR_" role="1TKVEi">
+      <property role="IQ2ns" value="3487973603071598053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="currency" />
+      <ref role="20lvS9" node="31BLocd1pRE" resolve="UpdateCurrencyCheck" />
+    </node>
     <node concept="PrWs8" id="3ni3Wie3gG3" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -151,14 +162,16 @@
   </node>
   <node concept="1TIwiD" id="aPhVmWYxIJ">
     <property role="EcuMT" value="195141004745644975" />
-    <property role="TrG5h" value="AssignmentExpr" />
-    <property role="34LRSv" value=":=" />
+    <property role="TrG5h" value="AssignmentExpr_old" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
     <node concept="PrWs8" id="aPhVmWZ1$P" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="PrWs8" id="2IhchUeqne6" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="asaX9" id="1VmWkBZrB8P" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="1RzljfOfUoH">
@@ -523,6 +536,19 @@
     <ref role="1TJDcQ" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
     <node concept="PrWs8" id="1MjwAV6z_lK" role="PzmwI">
       <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="31BLocd1pRE">
+    <property role="EcuMT" value="3487973603071598058" />
+    <property role="3GE5qa" value="box" />
+    <property role="TrG5h" value="UpdateCurrencyCheck" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="31BLocd1pRF" role="1TKVEi">
+      <property role="IQ2ns" value="3487973603071598059" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="oldValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -10,7 +10,6 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,9 +38,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -175,7 +171,7 @@
                         <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                       </node>
                       <node concept="2qgKlT" id="1996aX85IEq" role="2OqNvi">
-                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeSolved" />
+                        <ref role="37wK5l" to="gdgh:1996aX856sE" resolve="shouldBeChecked" />
                       </node>
                     </node>
                     <node concept="1Wc70l" id="2jITtfD$1z$" role="3uHU7B">
@@ -199,16 +195,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx">
-                    <node concept="Dpp1Q" id="2Fd5B1gQRWM" role="3cqZAp">
-                      <node concept="Xl_RD" id="2Fd5B1gQRX4" role="Dpw9R">
-                        <property role="Xl_RC" value="Manual check availabe; use Ctrl/Cmd+Alt+Enter to run it." />
-                      </node>
-                      <node concept="1YBJjd" id="2Fd5B1gQRYz" role="2OEOjV">
-                        <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
-                      </node>
-                    </node>
-                  </node>
+                  <node concept="3clFbS" id="3ugRfIRAoRb" role="3clFbx" />
                 </node>
               </node>
             </node>
@@ -385,25 +372,6 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbF" id="TfYjSVBGMl" role="3cqZAp">
-                              <node concept="2OqwBi" id="TfYjSVBGMi" role="3clFbG">
-                                <node concept="10M0yZ" id="TfYjSVBGMj" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                </node>
-                                <node concept="liA8E" id="TfYjSVBGMk" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                  <node concept="3cpWs3" id="7eS2goy2A2g" role="37wK5m">
-                                    <node concept="37vLTw" id="7eS2goy2A4o" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7eS2goy14J5" resolve="msg" />
-                                    </node>
-                                    <node concept="Xl_RD" id="7eS2goy2_1E" role="3uHU7B">
-                                      <property role="Xl_RC" value="Ill-formatted Error Message: " />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
                           </node>
                         </node>
                       </node>
@@ -559,23 +527,28 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3eNFk2" id="4dD4xJKjf$Q" role="3eNLev">
-                      <node concept="2ZW3vV" id="4dD4xJKjgbS" role="3eO9$A">
-                        <node concept="3uibUv" id="4dD4xJKjgH0" role="2ZW6by">
-                          <ref role="3uigEE" to="juu2:4dD4xJJV980" resolve="SolverNotInvokedResult" />
-                        </node>
-                        <node concept="37vLTw" id="4dD4xJKjfN$" role="2ZW6bz">
-                          <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="4dD4xJKjf$S" role="3eOfB_">
-                        <node concept="Dpp1Q" id="4dD4xJKjgHg" role="3cqZAp">
-                          <node concept="Xl_RD" id="4dD4xJKjgH_" role="Dpw9R">
-                            <property role="Xl_RC" value="This node is ignored due to an @solver:ignore annotation. The solver was hence not invoked." />
+                    <node concept="3eNFk2" id="mhgVwvWYkG" role="3eNLev">
+                      <node concept="3clFbS" id="mhgVwvWYkI" role="3eOfB_">
+                        <node concept="Dpp1Q" id="mhgVwvX2_a" role="3cqZAp">
+                          <node concept="2OqwBi" id="mhgVwvX2Gn" role="Dpw9R">
+                            <node concept="37vLTw" id="mhgVwvX2_v" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
+                            </node>
+                            <node concept="liA8E" id="mhgVwvX2Rs" role="2OqNvi">
+                              <ref role="37wK5l" to="gdgh:5zG5$LyexiK" resolve="getErrorMessage" />
+                            </node>
                           </node>
-                          <node concept="1YBJjd" id="4dD4xJKjgHO" role="2OEOjV">
+                          <node concept="1YBJjd" id="mhgVwvX2Te" role="2OEOjV">
                             <ref role="1YBMHb" node="3R3AIvunrvL" resolve="icrm" />
                           </node>
+                        </node>
+                      </node>
+                      <node concept="2ZW3vV" id="mhgVwvXRPW" role="3eO9$A">
+                        <node concept="3uibUv" id="mhgVwvYdQq" role="2ZW6by">
+                          <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
+                        </node>
+                        <node concept="37vLTw" id="mhgVwvXQEN" role="2ZW6bz">
+                          <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
                         </node>
                       </node>
                     </node>

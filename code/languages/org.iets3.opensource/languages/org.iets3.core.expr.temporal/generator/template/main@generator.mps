@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c6420e01-b3a7-4f06-8e0d-021c9cb62ebc(org.iets3.core.expr.collections.generator.template.main@generator)">
+<model ref="r:ee6069fb-b0c0-4312-8359-15cacacdb0b9(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" />
+  </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
@@ -15,7 +17,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="6zmBjqUily4">
+  <node concept="bUwia" id="50smQ1V8i88">
     <property role="TrG5h" value="main" />
   </node>
 </model>

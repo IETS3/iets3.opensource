@@ -6,6 +6,9 @@ import java.time.LocalDateTime
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
+    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
+    }
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
@@ -31,14 +34,14 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3.6'
+ext.mpsVersion = '2018.2.3'
 
 def mbeddrVersion = "1.0+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
-def mbeddrBranch = "seca/17-3/v1"
+def mbeddrBranch = "seca/18-2/v1"
 
 
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
@@ -240,6 +243,14 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
         classpath: configurations.junitAnt.asPath)
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
+
+task patchHeapSize4TestsExec {
+    doLast {
+        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
+    }
+}
+tasks['ant-build-and-run-tests'].dependsOn patchHeapSize4TestsExec
 
 check.dependsOn 'ant-build-and-run-tests'
 

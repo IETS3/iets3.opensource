@@ -744,7 +744,7 @@
               </node>
               <node concept="2pJPEk" id="3iESbJshuJK" role="37wK5m">
                 <node concept="2pJPED" id="3iESbJshuQK" role="2pJPEn">
-                  <ref role="2pJxaS" to="700h:7GwCuf2Wbm7" resolve="ImmutableSetType" />
+                  <ref role="2pJxaS" to="700h:7GwCuf2Wbm7" resolve="SetType" />
                   <node concept="2pIpSj" id="3iESbJshv2z" role="2pJxcM">
                     <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
                     <node concept="2pJPED" id="3iESbJshv9o" role="2pJxcZ">

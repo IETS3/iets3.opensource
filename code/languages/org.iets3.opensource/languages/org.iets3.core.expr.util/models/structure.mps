@@ -2,7 +2,8 @@
 <model ref="r:6bb59b1e-6116-48ad-b11d-2641d4f6b6a1(org.iets3.core.expr.util.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -11,8 +12,10 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -21,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -61,12 +65,14 @@
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabColHeader" />
     <property role="EcuMT" value="4214990435115877130" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
   </node>
   <node concept="1TIwiD" id="3DYDRw0K4ce">
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabContent" />
     <property role="EcuMT" value="4214990435115877134" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
     <node concept="1TJgyj" id="3DYDRw0K4cT" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -88,6 +94,7 @@
     <property role="3GE5qa" value="dectab" />
     <property role="34LRSv" value="dectab" />
     <property role="EcuMT" value="4214990435115877128" />
+    <property role="R4oN_" value="a binary decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="3DYDRw0K4d1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -129,6 +136,9 @@
     <node concept="PrWs8" id="1Vx$q3aPcx4" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
+    <node concept="PrWs8" id="2DgHCfuAshl" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3DYDRw0K4cf">
     <property role="3GE5qa" value="dectab" />
@@ -136,6 +146,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="4214990435115877135" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3DYDRw0K4cg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -149,6 +160,7 @@
     <property role="3GE5qa" value="dectab" />
     <property role="TrG5h" value="DecTabRowHeader" />
     <property role="EcuMT" value="4214990435115877129" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsmVBp">
@@ -157,6 +169,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="range" />
     <property role="EcuMT" value="1690305638830946777" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7f">
@@ -164,6 +177,7 @@
     <property role="TrG5h" value="LessThanRS" />
     <property role="34LRSv" value="&lt;" />
     <property role="EcuMT" value="1690305638831010255" />
+    <property role="R4oN_" value="less than" />
     <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7g">
@@ -171,6 +185,7 @@
     <property role="TrG5h" value="LessOrEqualThanRS" />
     <property role="34LRSv" value="&lt;=" />
     <property role="EcuMT" value="1690305638831010256" />
+    <property role="R4oN_" value="less or equal than" />
     <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7h">
@@ -178,6 +193,7 @@
     <property role="TrG5h" value="MoreThanRS" />
     <property role="34LRSv" value="&gt;" />
     <property role="EcuMT" value="1690305638831010257" />
+    <property role="R4oN_" value="greater than" />
     <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7i">
@@ -185,12 +201,15 @@
     <property role="TrG5h" value="MoreOrEqualThanRS" />
     <property role="34LRSv" value="&gt;=" />
     <property role="EcuMT" value="1690305638831010258" />
+    <property role="R4oN_" value="greater or equal than" />
     <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
   </node>
   <node concept="1TIwiD" id="1tPb0nsnb7j">
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="IntermediateRS" />
     <property role="EcuMT" value="1690305638831010259" />
+    <property role="R4oN_" value="a range with min/max" />
+    <property role="34LRSv" value="in" />
     <ref role="1TJDcQ" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
     <node concept="1TJgyj" id="1tPb0nsnb7k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -212,6 +231,7 @@
     <property role="TrG5h" value="SplitExpression" />
     <property role="34LRSv" value="split" />
     <property role="EcuMT" value="2346756181070385929" />
+    <property role="R4oN_" value="split a numeric value into ranges" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="22hm_0z9Lca" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -238,6 +258,7 @@
     <property role="3GE5qa" value="range" />
     <property role="TrG5h" value="SplitValue" />
     <property role="EcuMT" value="2346756181071899790" />
+    <property role="R4oN_" value="the value to be split" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="22hm_0zfyMf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -265,6 +286,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="2346756181072973168" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
     <node concept="1TJgyj" id="22hm_0zjCPL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -278,6 +300,7 @@
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="RootTreeNode" />
     <property role="EcuMT" value="593359455454548610" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="wW2kvIv6nS" resolve="AbstractDecTreeNode" />
     <node concept="1TJgyj" id="1NRU0vciZVm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -293,6 +316,7 @@
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="DecTreeNode" />
     <property role="EcuMT" value="2346756181087515424" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="wW2kvIv6nS" resolve="AbstractDecTreeNode" />
     <node concept="1TJgyj" id="22hm_0$b7cx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -313,6 +337,7 @@
     <property role="34LRSv" value="dectree" />
     <property role="3GE5qa" value="dectree" />
     <property role="EcuMT" value="2346756181087515423" />
+    <property role="R4oN_" value="a decision tree" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="22hm_0$b7oz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -336,6 +361,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="593359455454520824" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="22hm_0$b7pP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -349,6 +375,7 @@
     <property role="EcuMT" value="1564406563501543237" />
     <property role="3GE5qa" value="dectree" />
     <property role="TrG5h" value="TreeGroup" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1mPSRGtN8X6" role="1TKVEl">
       <property role="IQ2nx" value="1564406563501543238" />
@@ -361,6 +388,7 @@
     <property role="TrG5h" value="MultiDecTab" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="34LRSv" value="multidectab" />
+    <property role="R4oN_" value="a multi-criteria decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="8XWEtdX_Yq" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658074" />
@@ -397,11 +425,15 @@
     <node concept="PrWs8" id="3iESbJtqMQ6" role="PzmwI">
       <ref role="PrY4T" to="hm2y:YXKE79ImBi" resolve="IWantNewLine" />
     </node>
+    <node concept="PrWs8" id="4u1MGlrMgRb" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdX_Xw">
     <property role="EcuMT" value="161551962036658016" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="QueryColDef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
     <node concept="1TJgyj" id="8XWEtdX_Yh" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658065" />
@@ -413,9 +445,10 @@
   </node>
   <node concept="1TIwiD" id="8XWEtdX_Yl">
     <property role="EcuMT" value="161551962036658069" />
-    <property role="3GE5qa" value="multidectab.expr" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
     <property role="TrG5h" value="ResultColDef" />
-    <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
+    <property role="R4oN_" value="a new result column" />
+    <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
     <node concept="1TJgyj" id="8XWEtdX_Yo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036658072" />
       <property role="20lmBu" value="aggregation" />
@@ -423,8 +456,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="8XWEtdX_Ym" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="6OunYCf7fuw" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYdD1">
@@ -433,12 +466,14 @@
     <property role="TrG5h" value="ColDef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="8XWEtdYkhC">
     <property role="EcuMT" value="161551962036847720" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="Content" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8XWEtdYkjo" role="1TKVEi">
       <property role="IQ2ns" value="161551962036847832" />
@@ -459,6 +494,7 @@
     <property role="EcuMT" value="161551962036813055" />
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="DataRow" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8XWEtdYkjq" role="1TKVEi">
       <property role="IQ2ns" value="161551962036847834" />
@@ -478,6 +514,7 @@
     <property role="3GE5qa" value="multidectab.expr" />
     <property role="TrG5h" value="EmptyExpression" />
     <property role="34LRSv" value="empty" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5GPhrsV2jf2">
@@ -485,6 +522,7 @@
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelMultiDecTab" />
     <property role="34LRSv" value="decision table" />
+    <property role="R4oN_" value="multi-criteria decision table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5GPhrsV2jl4" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
@@ -509,6 +547,7 @@
     <property role="EcuMT" value="6572235884488901320" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelColDef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
     <node concept="PrWs8" id="5GPhrsV2kbc" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
@@ -541,6 +580,7 @@
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TableCallExpression" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="invoke a decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="7FuUjk_mY8a" role="PzmwI">
       <ref role="PrY4T" node="7FuUjk_mXBZ" resolve="ITopLevelContextProvider" />
@@ -564,6 +604,7 @@
     <property role="EcuMT" value="8853770331926288886" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelTableValueSpec" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7FuUjk_mXBR" role="1TKVEi">
       <property role="IQ2ns" value="8853770331926288887" />
@@ -589,6 +630,7 @@
     <property role="EcuMT" value="8853770331932193109" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="TopLevelDecTabRef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7FuUjk_Hv5m" role="1TKVEi">
       <property role="IQ2ns" value="8853770331932193110" />
@@ -602,6 +644,7 @@
     <property role="EcuMT" value="8840800177405405525" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="DecTableType" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7EKPeIStq_m" role="1TKVEi">
       <property role="IQ2ns" value="8840800177405405526" />
@@ -619,6 +662,7 @@
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="BindColOp" />
     <property role="34LRSv" value="bind column" />
+    <property role="R4oN_" value="create a new table with a particular column bound to a value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7EKPeISwid6" role="1TKVEi">
       <property role="IQ2ns" value="8840800177406157638" />
@@ -643,6 +687,7 @@
     <property role="EcuMT" value="8840800177408330889" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="PartialDecTableType" />
+    <property role="R4oN_" value="a partial decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="7EKPeISC$Ma" role="PzmwI">
       <ref role="PrY4T" node="7EKPeISzR2T" resolve="IColumnBindingType" />
@@ -666,6 +711,7 @@
     <property role="EcuMT" value="8840800177408330898" />
     <property role="3GE5qa" value="multidectab.toplevel" />
     <property role="TrG5h" value="BoundColRef" />
+    <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7EKPeISC$Mj" role="1TKVEi">
       <property role="IQ2ns" value="8840800177408330899" />
@@ -674,6 +720,58 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5GPhrsV2kb8" resolve="TopLevelColDef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_8">
+    <property role="EcuMT" value="7862827458313648456" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="AbstractResultColDef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="8XWEtdYdD1" resolve="ColDef" />
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_9">
+    <property role="EcuMT" value="7862827458313648457" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="LocalVarAssignColDef" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="assign result to local variable" />
+    <ref role="1TJDcQ" node="6OunYCeYf_a" resolve="AssigningResultColDef" />
+    <node concept="1TJgyj" id="6OunYCeYfBN" role="1TKVEi">
+      <property role="IQ2ns" value="7862827458313648627" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="zzzn:1VmWkC0$wKA" resolve="LocalVarRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OunYCeYf_a">
+    <property role="EcuMT" value="7862827458313648458" />
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <property role="TrG5h" value="AssigningResultColDef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6OunYCeYf_8" resolve="AbstractResultColDef" />
+  </node>
+  <node concept="1TIwiD" id="6OunYCfi$ob">
+    <property role="EcuMT" value="7862827458318976523" />
+    <property role="3GE5qa" value="multidectab" />
+    <property role="TrG5h" value="RangeValueExpr" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6OunYCfi$oc" role="1TKVEi">
+      <property role="IQ2ns" value="7862827458318976524" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="range" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1tPb0nsmVBp" resolve="RangeSpecifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4u1MGlrSqFE">
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="ExceptRS" />
+    <property role="34LRSv" value="!=" />
+    <property role="EcuMT" value="5152622397687442154" />
+    <property role="R4oN_" value="all values except the specified one" />
+    <ref role="1TJDcQ" node="22hm_0zjCPK" resolve="SingleValueRS" />
   </node>
 </model>
 
