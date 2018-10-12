@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.iets3.genjava" uuid="5a8dae31-5452-4a2a-86c7-5335f6e6e7ee" moduleVersion="0" compileInMPS="true">
+<solution name="org.iets3.core.expr.genjava.advanced.genplan" uuid="a37d732b-a361-4dba-bc6f-f8e645007559" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -17,7 +17,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="5a8dae31-5452-4a2a-86c7-5335f6e6e7ee(org.iets3.genjava)" version="0" />
+    <module reference="a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)" version="0" />
   </dependencyVersions>
 </solution>
 
