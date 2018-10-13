@@ -7,6 +7,7 @@
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68" name="org.iets3.core.expr.temporal" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
   </languages>
@@ -367,6 +368,28 @@
         </node>
       </node>
     </node>
+    <node concept="2zPypq" id="VFjlN650gh" role="_iOnB">
+      <property role="TrG5h" value="v2b" />
+      <property role="0Rz4W" value="-1843236782" />
+      <node concept="FfN7I" id="VFjlN650gi" role="2zPyp_">
+        <node concept="FfN7L" id="VFjlN650gj" role="FfN64">
+          <node concept="30bXRB" id="VFjlN650gk" role="FfN7O">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="VFjlN650gl" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="VFjlN650gm" role="FfN64">
+          <node concept="30bXRB" id="VFjlN650gn" role="FfN7O">
+            <property role="30bXRw" value="100" />
+          </node>
+          <node concept="_emDc" id="VFjlN650go" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4P" resolve="date05" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2zPypq" id="7aRvJQErc4Y" role="_iOnB">
       <property role="TrG5h" value="v11" />
       <property role="0Rz4W" value="1391826359" />
@@ -391,30 +414,31 @@
     </node>
     <node concept="_ixoA" id="7aRvJQErc4Z" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQEroak" role="_iOnB" />
-    <node concept="_ixoA" id="7aRvJQErqb$" role="_iOnB" />
-    <node concept="_fkuM" id="VFjlN5ID3N" role="_iOnB">
-      <property role="TrG5h" value="Equality" />
-      <node concept="_fkuZ" id="VFjlN5IF5H" role="_fkp5">
-        <property role="3sVy9A" value="false" />
-        <node concept="_fku$" id="VFjlN5IF5I" role="_fkur" />
-        <node concept="30cPrO" id="VFjlN5IF6i" role="_fkuY">
-          <node concept="_emDc" id="VFjlN5L7aZ" role="30dEs_">
-            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+    <node concept="2zPypq" id="VFjlN6eaAm" role="_iOnB">
+      <property role="TrG5h" value="v5" />
+      <property role="0Rz4W" value="34085867" />
+      <node concept="FfN7I" id="VFjlN6eaAn" role="2zPyp_">
+        <node concept="FfN7L" id="VFjlN6eaAo" role="FfN64">
+          <node concept="30bXRB" id="VFjlN6eaAp" role="FfN7O">
+            <property role="30bXRw" value="30" />
           </node>
-          <node concept="_emDc" id="VFjlN5IF5V" role="30dEsF">
-            <ref role="_emDf" node="7aRvJQErc4X" resolve="v2" />
+          <node concept="_emDc" id="VFjlN6eaAq" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
           </node>
         </node>
-        <node concept="FfN7I" id="VFjlN5LVOy" role="_fkuS">
-          <node concept="FfN7L" id="VFjlN5LVON" role="FfN64">
-            <node concept="_emDc" id="VFjlN5LVOM" role="FfN7M">
-              <ref role="_emDf" node="7aRvJQErc4O" resolve="date0" />
-            </node>
-            <node concept="2vmpnb" id="VFjlN5LVPe" role="FfN7O" />
+        <node concept="FfN7L" id="VFjlN6eaAr" role="FfN64">
+          <node concept="_emDc" id="VFjlN6eaAs" role="FfN7M">
+            <ref role="_emDf" node="7aRvJQErc4P" resolve="date05" />
+          </node>
+          <node concept="30bXRB" id="VFjlN6eaAt" role="FfN7O">
+            <property role="30bXRw" value="20" />
           </node>
         </node>
       </node>
-      <node concept="3dYjL0" id="VFjlN5MLef" role="_fkp5" />
+    </node>
+    <node concept="_ixoA" id="7aRvJQErqb$" role="_iOnB" />
+    <node concept="_fkuM" id="VFjlN5ID3N" role="_iOnB">
+      <property role="TrG5h" value="Equality" />
       <node concept="_fkuZ" id="VFjlN5L78C" role="_fkp5">
         <property role="3sVy9A" value="false" />
         <node concept="_fku$" id="VFjlN5L78D" role="_fkur" />
@@ -427,15 +451,6 @@
           </node>
         </node>
         <node concept="2vmpnb" id="VFjlN5L78H" role="_fkuS" />
-        <node concept="1z9TsT" id="VFjlN5MPFo" role="lGtFl">
-          <node concept="OjmMv" id="VFjlN5MPFp" role="1w35rA">
-            <node concept="19SGf9" id="VFjlN5MPFq" role="OjmMu">
-              <node concept="19SUe$" id="VFjlN5MPFr" role="19SJt6">
-                <property role="19SUeA" value="one problem with the implicit approach here is that&#10;one cannot get feedback on which of the slices failed&#10;the test. Is this ok?" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="_fkuZ" id="VFjlN5M2tP" role="_fkp5">
         <property role="3sVy9A" value="false" />
@@ -475,7 +490,20 @@
             <property role="30bXRw" value="10" />
           </node>
         </node>
-        <node concept="2vmpnb" id="VFjlN5M2tI" role="_fkuS" />
+        <node concept="2vmpn$" id="VFjlN6eaAf" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="VFjlN6egW1" role="_fkp5">
+        <property role="3sVy9A" value="false" />
+        <node concept="_fku$" id="VFjlN6egW2" role="_fkur" />
+        <node concept="30cPrR" id="VFjlN6egW3" role="_fkuY">
+          <node concept="_emDc" id="VFjlN6egYN" role="30dEsF">
+            <ref role="_emDf" node="VFjlN6eaAm" resolve="v5" />
+          </node>
+          <node concept="30bXRB" id="VFjlN6egW5" role="30dEs_">
+            <property role="30bXRw" value="10" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="VFjlN6exIs" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="VFjlN5IB1U" role="_iOnB" />

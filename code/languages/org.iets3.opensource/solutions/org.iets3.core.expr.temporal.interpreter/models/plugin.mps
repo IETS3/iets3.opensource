@@ -27,6 +27,7 @@
     <import index="rxpb" ref="r:31fd8edf-66c5-44d7-84a8-5940badb4d17(org.iets3.core.expr.base.interpreter.plugin)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -84,7 +85,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3009,11 +3009,13 @@
                     </node>
                     <node concept="3clFbS" id="VFjlN5LBR_" role="1bW5cS">
                       <node concept="3clFbF" id="VFjlN5LBRA" role="3cqZAp">
-                        <node concept="17R0WA" id="VFjlN5Mx$p" role="3clFbG">
-                          <node concept="37vLTw" id="VFjlN5LBRD" role="3uHU7B">
+                        <node concept="2YIFZM" id="VFjlN7$b$9" role="3clFbG">
+                          <ref role="37wK5l" to="9mim:VFjlN6eX4Y" resolve="ne" />
+                          <ref role="1Pybhc" to="9mim:VFjlN6eQjY" resolve="NumberComparisonHelper" />
+                          <node concept="37vLTw" id="VFjlN7$bF7" role="37wK5m">
                             <ref role="3cqZAo" node="VFjlN5LBRx" resolve="l" />
                           </node>
-                          <node concept="37vLTw" id="VFjlN5LBRC" role="3uHU7w">
+                          <node concept="37vLTw" id="VFjlN7$c7c" role="37wK5m">
                             <ref role="3cqZAo" node="VFjlN5LBRz" resolve="r" />
                           </node>
                         </node>
@@ -3065,7 +3067,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbT" id="VFjlN5NxEl" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -3114,12 +3115,14 @@
                     </node>
                     <node concept="3clFbS" id="VFjlN5K63H" role="1bW5cS">
                       <node concept="3clFbF" id="VFjlN5K63I" role="3cqZAp">
-                        <node concept="17R0WA" id="VFjlN5K7uj" role="3clFbG">
-                          <node concept="37vLTw" id="VFjlN5K7$I" role="3uHU7w">
-                            <ref role="3cqZAo" node="VFjlN5K63F" resolve="r" />
-                          </node>
-                          <node concept="37vLTw" id="VFjlN5K7jm" role="3uHU7B">
+                        <node concept="2YIFZM" id="VFjlN7$clT" role="3clFbG">
+                          <ref role="37wK5l" to="9mim:VFjlN6eV5u" resolve="eq" />
+                          <ref role="1Pybhc" to="9mim:VFjlN6eQjY" resolve="NumberComparisonHelper" />
+                          <node concept="37vLTw" id="VFjlN7$clU" role="37wK5m">
                             <ref role="3cqZAo" node="VFjlN5K63D" resolve="l" />
+                          </node>
+                          <node concept="37vLTw" id="VFjlN7$clV" role="37wK5m">
+                            <ref role="3cqZAo" node="VFjlN5K63F" resolve="r" />
                           </node>
                         </node>
                       </node>
@@ -3169,9 +3172,6 @@
                       <ref role="3uigEE" to="t677:50smQ1V9Ofy" resolve="TemporalValue" />
                     </node>
                   </node>
-                </node>
-                <node concept="3clFbT" id="VFjlN5Nyhv" role="37wK5m">
-                  <property role="3clFbU" value="true" />
                 </node>
               </node>
             </node>
