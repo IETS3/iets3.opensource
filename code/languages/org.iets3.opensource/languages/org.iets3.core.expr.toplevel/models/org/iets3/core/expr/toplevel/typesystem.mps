@@ -3794,5 +3794,39 @@
       <ref role="1YaFvo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3NZW5IrF7Dq">
+    <property role="TrG5h" value="typeof_EnumDeclaration" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="3NZW5IrF7Dr" role="18ibNy">
+      <node concept="1Z5TYs" id="3NZW5IrF7W1" role="3cqZAp">
+        <node concept="mw_s8" id="3NZW5IrF7Wl" role="1ZfhKB">
+          <node concept="2pJPEk" id="3NZW5IrF7Wh" role="mwGJk">
+            <node concept="2pJPED" id="3NZW5IrF7Ww" role="2pJPEn">
+              <ref role="2pJxaS" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+              <node concept="2pIpSj" id="3NZW5IrF7Xz" role="2pJxcM">
+                <ref role="2pIpSl" to="yv47:67Y8mp$DN3N" resolve="enum" />
+                <node concept="36biLy" id="3NZW5IrF7YE" role="2pJxcZ">
+                  <node concept="1YBJjd" id="3NZW5IrF7YP" role="36biLW">
+                    <ref role="1YBMHb" node="3NZW5IrF7Dt" resolve="enumDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3NZW5IrF7W4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3NZW5IrF7Dx" role="mwGJk">
+            <node concept="1YBJjd" id="3NZW5IrF7Fj" role="1Z2MuG">
+              <ref role="1YBMHb" node="3NZW5IrF7Dt" resolve="enumDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3NZW5IrF7Dt" role="1YuTPh">
+      <property role="TrG5h" value="enumDeclaration" />
+      <ref role="1YaFvo" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
+    </node>
+  </node>
 </model>
 
