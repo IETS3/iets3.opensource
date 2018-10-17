@@ -82,6 +82,7 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -94,6 +95,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="13h7C7" id="4iu6t1eB971">
@@ -508,6 +512,27 @@
         </node>
       </node>
       <node concept="17QB3L" id="6kR0qIbHVzX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3SqLunIrsah" role="13h7CS">
+      <property role="TrG5h" value="showParens" />
+      <node concept="3Tm1VV" id="3SqLunIrsai" role="1B3o_S" />
+      <node concept="10P_77" id="3SqLunIrsmi" role="3clF45" />
+      <node concept="3clFbS" id="3SqLunIrsak" role="3clF47">
+        <node concept="3clFbF" id="3SqLunIrsmZ" role="3cqZAp">
+          <node concept="2OqwBi" id="3SqLunIrvqf" role="3clFbG">
+            <node concept="2OqwBi" id="3SqLunIrt38" role="2Oq$k0">
+              <node concept="2OqwBi" id="3SqLunIrsy7" role="2Oq$k0">
+                <node concept="13iPFW" id="3SqLunIrsmY" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3SqLunIrsHG" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                </node>
+              </node>
+              <node concept="2Rf3mk" id="3SqLunIrtsg" role="2OqNvi" />
+            </node>
+            <node concept="3GX2aA" id="3SqLunIrxq9" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="4iu6t1eBd2I">
