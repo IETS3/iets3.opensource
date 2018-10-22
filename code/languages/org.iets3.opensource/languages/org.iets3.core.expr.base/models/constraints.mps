@@ -1240,5 +1240,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4AahbtVE510">
+    <ref role="1M2myG" to="hm2y:4AahbtVAEwi" resolve="InlineMessage" />
+    <node concept="9S07l" id="4AahbtVE511" role="9Vyp8">
+      <node concept="3clFbS" id="4AahbtVE512" role="2VODD2">
+        <node concept="3clFbF" id="4AahbtVE58l" role="3cqZAp">
+          <node concept="2OqwBi" id="4AahbtVE6cX" role="3clFbG">
+            <node concept="2OqwBi" id="4AahbtVE5k1" role="2Oq$k0">
+              <node concept="nLn13" id="4AahbtVE58k" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4AahbtVE5_F" role="2OqNvi">
+                <node concept="1xMEDy" id="4AahbtVE5_H" role="1xVPHs">
+                  <node concept="chp4Y" id="4AahbtVE5Kt" role="ri$Ld">
+                    <ref role="cht4Q" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4AahbtVE5VU" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4AahbtVE6_q" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

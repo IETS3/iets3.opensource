@@ -201,6 +201,9 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -680,6 +683,14 @@
           </node>
         </node>
       </node>
+      <node concept="1kHk_G" id="4AahbtV9GlW" role="3EZMnx">
+        <property role="ZjSer" value="!" />
+        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue" />
+        <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
+        <node concept="11L4FC" id="4AahbtVaxPr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="2iRfu4" id="3vxfdxbjbRV" role="2iSdaV" />
       <node concept="3EZMnI" id="3vxfdxbjc$D" role="3EZMnx">
         <node concept="11L4FC" id="5ZJ96SJCpeP" role="3F10Kt">
@@ -949,13 +960,6 @@
   </node>
   <node concept="3p36aQ" id="VFjlN5HOyp">
     <ref role="aqKnT" to="kelk:3vxfdxbcS_H" resolve="EmptyMessageContent" />
-  </node>
-  <node concept="24kQdi" id="4AahbtULQ$k">
-    <ref role="1XX52x" to="kelk:4AahbtULQzU" resolve="MessageValueType" />
-    <node concept="3F0ifn" id="4AahbtULQ$m" role="2wV5jI">
-      <property role="3F0ifm" value="message" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-    </node>
   </node>
   <node concept="24kQdi" id="4AahbtULQ_V">
     <ref role="1XX52x" to="kelk:4AahbtULQ_v" resolve="MessageValueOp" />

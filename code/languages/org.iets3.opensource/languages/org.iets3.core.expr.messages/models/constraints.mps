@@ -9,9 +9,9 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="kelk" ref="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
@@ -602,7 +602,7 @@
             <node concept="2qgKlT" id="4AahbtULRSs" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
               <node concept="35c_gC" id="4AahbtULS9o" role="37wK5m">
-                <ref role="35c_gD" to="kelk:4AahbtULQzU" resolve="MessageValueType" />
+                <ref role="35c_gD" to="hm2y:4AahbtULQzU" resolve="MessageValueType" />
               </node>
               <node concept="3clFbT" id="4AahbtULT8V" role="37wK5m">
                 <property role="3clFbU" value="false" />

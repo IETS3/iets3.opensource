@@ -232,6 +232,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -313,6 +314,84 @@
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.base.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="4AahbtVDIhI" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4AahbtVAEwi" resolve="InlineMessage" />
+      <node concept="3dA_Gj" id="4AahbtVDLAR" role="3vQZUl">
+        <node concept="9aQIb" id="4AahbtVDLAT" role="3vcmbn">
+          <node concept="3clFbS" id="4AahbtVDLAV" role="9aQI4">
+            <node concept="3cpWs8" id="4AahbtVpkyE" role="3cqZAp">
+              <node concept="3cpWsn" id="4AahbtVpkyF" role="3cpWs9">
+                <property role="TrG5h" value="plp" />
+                <node concept="3Tqbb2" id="4AahbtVpkyD" role="1tU5fm">
+                  <ref role="ehGHo" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
+                </node>
+                <node concept="2OqwBi" id="4AahbtVpkyG" role="33vP2m">
+                  <node concept="oxGPV" id="4AahbtVpkyH" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4AahbtVpkyI" role="2OqNvi">
+                    <node concept="1xMEDy" id="4AahbtVpkyJ" role="1xVPHs">
+                      <node concept="chp4Y" id="4AahbtVpkyK" role="ri$Ld">
+                        <ref role="cht4Q" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4AahbtVpjhb" role="3cqZAp">
+              <node concept="3clFbS" id="4AahbtVpjhd" role="3clFbx">
+                <node concept="3cpWs6" id="4AahbtVDMmD" role="3cqZAp">
+                  <node concept="2ShNRf" id="4AahbtVDMmF" role="3cqZAk">
+                    <node concept="1pGfFk" id="4AahbtVDMmG" role="2ShVmc">
+                      <ref role="37wK5l" to="oq0c:4AahbtULJ$q" resolve="MessageValue" />
+                      <node concept="10QFUN" id="4AahbtVDMmH" role="37wK5m">
+                        <node concept="rqRoa" id="4AahbtVDMmI" role="10QFUP">
+                          <ref role="rqRob" to="hm2y:4AahbtVAEwj" resolve="text" />
+                        </node>
+                        <node concept="17QB3L" id="4AahbtVDMmJ" role="10QFUM" />
+                      </node>
+                      <node concept="2OqwBi" id="4AahbtVDMmK" role="37wK5m">
+                        <node concept="37vLTw" id="4AahbtVDMmL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4AahbtVpkyF" resolve="plp" />
+                        </node>
+                        <node concept="2qgKlT" id="4AahbtVDMmM" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:4AahbtUNHsr" resolve="getProgramLocation" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4AahbtVpjMI" role="3clFbw">
+                <node concept="37vLTw" id="4AahbtVpkyL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4AahbtVpkyF" resolve="plp" />
+                </node>
+                <node concept="3x8VRR" id="4AahbtVpk04" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4AahbtVDMvc" role="3cqZAp">
+              <node concept="2ShNRf" id="4AahbtVDMvd" role="3cqZAk">
+                <node concept="1pGfFk" id="4AahbtVDMve" role="2ShVmc">
+                  <ref role="37wK5l" to="oq0c:4AahbtULJ$q" resolve="MessageValue" />
+                  <node concept="10QFUN" id="4AahbtVDMvf" role="37wK5m">
+                    <node concept="rqRoa" id="4AahbtVDMvg" role="10QFUP">
+                      <ref role="rqRob" to="hm2y:4AahbtVAEwj" resolve="text" />
+                    </node>
+                    <node concept="17QB3L" id="4AahbtVDMvh" role="10QFUM" />
+                  </node>
+                  <node concept="2ShNRf" id="4AahbtVDMWa" role="37wK5m">
+                    <node concept="1pGfFk" id="4AahbtVDMW9" role="2ShVmc">
+                      <ref role="37wK5l" to="oq0c:4AahbtUR_FK" resolve="ProgramLocationValue" />
+                      <node concept="oxGPV" id="4AahbtVDMY9" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="4AahbtUVuN$" role="qq9xR">
