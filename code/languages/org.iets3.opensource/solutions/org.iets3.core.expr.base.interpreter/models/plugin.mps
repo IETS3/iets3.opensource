@@ -8,6 +8,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
@@ -300,6 +301,9 @@
       </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
+    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
+      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
+    </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
     <property role="TrG5h" value="ExprBaseInterpeter" />
@@ -309,6 +313,51 @@
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.base.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="4AahbtUVuN$" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4AahbtUR$iZ" resolve="ProgramLocationUrlOp" />
+      <node concept="3dA_Gj" id="4AahbtUVwz7" role="3vQZUl">
+        <node concept="9aQIb" id="4AahbtUVwz9" role="3vcmbn">
+          <node concept="3clFbS" id="4AahbtUVwzb" role="9aQI4">
+            <node concept="3cpWs8" id="4AahbtUVwzu" role="3cqZAp">
+              <node concept="3cpWsn" id="4AahbtUVwzv" role="3cpWs9">
+                <property role="TrG5h" value="location" />
+                <node concept="10QFUN" id="4AahbtUV$XJ" role="33vP2m">
+                  <node concept="3EllGN" id="4AahbtUV$XE" role="10QFUP">
+                    <node concept="2OqwBi" id="4AahbtUV$XF" role="3ElVtu">
+                      <node concept="oxGPV" id="4AahbtUV$XG" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="4AahbtUV$XH" role="2OqNvi">
+                        <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                      </node>
+                    </node>
+                    <node concept="TvHiN" id="4AahbtUV$XI" role="3ElQJh" />
+                  </node>
+                  <node concept="3uibUv" id="4AahbtUV$XD" role="10QFUM">
+                    <ref role="3uigEE" to="oq0c:4AahbtUR_4_" resolve="ProgramLocationValue" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="4AahbtUVwKo" role="1tU5fm">
+                  <ref role="3uigEE" to="oq0c:4AahbtUR_4_" resolve="ProgramLocationValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4AahbtUV_aO" role="3cqZAp">
+              <node concept="2OqwBi" id="4AahbtUV_C2" role="3cqZAk">
+                <node concept="2OqwBi" id="4AahbtUV_l2" role="2Oq$k0">
+                  <node concept="37vLTw" id="4AahbtUV_gQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4AahbtUVwzv" resolve="location" />
+                  </node>
+                  <node concept="liA8E" id="4AahbtUV_vM" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:4AahbtUR_Y1" resolve="node" />
+                  </node>
+                </node>
+                <node concept="2$mYbS" id="4AahbtUVC7Y" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="YMJl2BJ4RR" role="qq9xR">

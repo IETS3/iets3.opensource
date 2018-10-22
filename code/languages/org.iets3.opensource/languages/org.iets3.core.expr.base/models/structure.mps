@@ -1979,5 +1979,35 @@
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4AahbtUNHrQ">
+    <property role="EcuMT" value="5299123466384889590" />
+    <property role="TrG5h" value="IProgramLocationProvider" />
+    <property role="3GE5qa" value="loc" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtURxgH">
+    <property role="EcuMT" value="5299123466385888301" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationType" />
+    <property role="34LRSv" value="loc" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtURx$c">
+    <property role="EcuMT" value="5299123466385889548" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4AahbtUVx5l" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4AahbtUR$iZ">
+    <property role="EcuMT" value="5299123466385900735" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationUrlOp" />
+    <property role="34LRSv" value="url" />
+    <ref role="1TJDcQ" node="4AahbtURx$c" resolve="ProgramLocationOp" />
+  </node>
 </model>
 
