@@ -162,7 +162,6 @@
         <child id="8615074351687302157" name="evaluators" index="qq9xR" />
       </concept>
       <concept id="8615074351687301435" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluator" flags="ng" index="qq9P1">
-        <property id="1075037996920889252" name="checksTypesInside" index="38rLbS" />
         <reference id="8615074351687302216" name="concept" index="qq9wM" />
       </concept>
       <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa" />
@@ -2369,7 +2368,6 @@
     </node>
     <node concept="qq9P1" id="7kyIuXqvPaB" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <property role="38rLbS" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6N6R9" resolve="EqualsExpression" />
       <node concept="3dA_Gj" id="7kyIuXqx9ZD" role="3vQZUl">
         <node concept="9aQIb" id="7kyIuXqx9ZF" role="3vcmbn">

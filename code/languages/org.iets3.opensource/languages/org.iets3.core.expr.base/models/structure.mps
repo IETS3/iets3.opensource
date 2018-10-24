@@ -733,6 +733,9 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="IAttemptType" />
     <property role="EcuMT" value="1919538606562038159" />
+    <node concept="PrWs8" id="6C0OSEaG_oQ" role="PrDN$">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="TrG5h" value="AttemptType" />
