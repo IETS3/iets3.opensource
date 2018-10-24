@@ -8,6 +8,7 @@
   <imports>
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -126,12 +127,17 @@
           <node concept="3clFbS" id="7wjZwvOaSDK" role="3clFbx">
             <node concept="3xETmq" id="7wjZwvOaTyC" role="3cqZAp">
               <node concept="3_1$Yv" id="7wjZwvOaTyP" role="3_9lra">
-                <node concept="2OqwBi" id="7wjZwvOaTHP" role="3_1BAH">
-                  <node concept="37vLTw" id="7wjZwvOaTzt" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
+                <node concept="2OqwBi" id="2LEfNl_JZ7q" role="3_1BAH">
+                  <node concept="2OqwBi" id="7wjZwvOaTHP" role="2Oq$k0">
+                    <node concept="37vLTw" id="7wjZwvOaTzt" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7wjZwvOaSeT" resolve="executeTest" />
+                    </node>
+                    <node concept="liA8E" id="7wjZwvOaTQc" role="2OqNvi">
+                      <ref role="37wK5l" to="xk6s:ub9nkyPUM2" resolve="getErrorMessage" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="7wjZwvOaTQc" role="2OqNvi">
-                    <ref role="37wK5l" to="xk6s:ub9nkyPUM2" resolve="getErrorMessage" />
+                  <node concept="liA8E" id="2LEfNl_JZko" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:4AahbtV9xyO" resolve="toString" />
                   </node>
                 </node>
               </node>

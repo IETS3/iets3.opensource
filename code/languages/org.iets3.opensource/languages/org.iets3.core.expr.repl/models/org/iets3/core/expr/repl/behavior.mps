@@ -5022,15 +5022,20 @@
             </node>
             <node concept="3clFbF" id="5avmkTFG4SE" role="3cqZAp">
               <node concept="37vLTI" id="5avmkTFG6n8" role="3clFbG">
-                <node concept="Xl_RD" id="5avmkTFG6oe" role="37vLTx">
-                  <property role="Xl_RC" value="some cells failed" />
-                </node>
                 <node concept="2OqwBi" id="5avmkTFG50S" role="37vLTJ">
                   <node concept="37vLTw" id="5avmkTFG4SC" role="2Oq$k0">
                     <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
                   </node>
                   <node concept="2OwXpG" id="5avmkTFG5qR" role="2OqNvi">
                     <ref role="2Oxat5" to="xk6s:ub9nkyQiZj" resolve="errorMessage" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="2LEfNl_HN1a" role="37vLTx">
+                  <node concept="1pGfFk" id="2LEfNl_HX85" role="2ShVmc">
+                    <ref role="37wK5l" to="oq0c:4AahbtULK5l" resolve="MessageValue" />
+                    <node concept="Xl_RD" id="5avmkTFG6oe" role="37wK5m">
+                      <property role="Xl_RC" value="some cells failed" />
+                    </node>
                   </node>
                 </node>
               </node>

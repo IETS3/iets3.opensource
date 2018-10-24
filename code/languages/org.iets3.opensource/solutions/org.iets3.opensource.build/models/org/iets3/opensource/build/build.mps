@@ -210,7 +210,7 @@
                         <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
                           <property role="2Ry0Am" value="Applications" />
                           <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS 2017.1 EAP.app" />
+                            <property role="2Ry0Am" value="MPSfi 2017.1 EAP.app" />
                             <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
                               <property role="2Ry0Am" value="Contents" />
                             </node>
