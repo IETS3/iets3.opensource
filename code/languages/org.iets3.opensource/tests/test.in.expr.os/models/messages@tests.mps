@@ -8,7 +8,9 @@
     <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="-1" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="2tj6" ref="f:diff_old#r:6a32786e-0823-4465-b671-9705159d21d5(test.in.expr.os.messages@tests@old)" implicit="true" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -675,6 +677,39 @@
       </node>
     </node>
     <node concept="_ixoA" id="4AahbtV9DZ6" role="_iOnB" />
+    <node concept="1WOfU3" id="4AahbtVRLs6" role="_iOnB">
+      <property role="TrG5h" value="InlineMessages" />
+      <node concept="1WOOD3" id="4AahbtVRLW6" role="1WOfUI">
+        <property role="TrG5h" value="xeey" />
+        <node concept="30dDZf" id="4AahbtVRMGH" role="1WPxOI">
+          <node concept="30dDZf" id="4AahbtVRMGI" role="30dEsF">
+            <node concept="30dDZf" id="4AahbtVRMGJ" role="30dEsF">
+              <node concept="30bdrP" id="4AahbtVRMGK" role="30dEsF">
+                <property role="30bdrQ" value="x must be y, but they are " />
+              </node>
+              <node concept="1WQOXJ" id="4AahbtVRMC3" role="30dEs_">
+                <ref role="1WQOXw" node="4AahbtVRMAp" resolve="x" />
+              </node>
+            </node>
+            <node concept="30bdrP" id="4AahbtVRMGL" role="30dEs_">
+              <property role="30bdrQ" value=" and " />
+            </node>
+          </node>
+          <node concept="1WQOXJ" id="4AahbtVRMHs" role="30dEs_">
+            <ref role="1WQOXw" node="4AahbtVRMAM" resolve="y" />
+          </node>
+        </node>
+        <node concept="1WPDXL" id="4AahbtVRMAp" role="1WPDXT">
+          <property role="TrG5h" value="x" />
+          <node concept="30bXR$" id="4AahbtVRMAE" role="1WPDXP" />
+        </node>
+        <node concept="1WPDXL" id="4AahbtVRMAM" role="1WPDXT">
+          <property role="TrG5h" value="y" />
+          <node concept="mLuIC" id="4AahbtVRMB5" role="1WPDXP" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4AahbtVRKWd" role="_iOnB" />
     <node concept="2Ss9d8" id="4AahbtV9EwS" role="_iOnB">
       <property role="TrG5h" value="Point1" />
       <node concept="2Ss9d7" id="4AahbtV9ECp" role="S5Trm">
@@ -734,13 +769,19 @@
       </node>
       <node concept="I61D5" id="4AahbtVbbGr" role="I61D6">
         <node concept="InuEK" id="4AahbtVbbGs" role="I61D1">
-          <node concept="1QScDb" id="4AahbtVbbGt" role="2izrR8">
-            <node concept="1WPo9w" id="4AahbtVbbGu" role="1QScD9">
+          <node concept="1QScDb" id="4AahbtVRMRz" role="2izrR8">
+            <node concept="1WPo9w" id="4AahbtVRNhJ" role="1QScD9">
               <property role="MFfev" value="true" />
-              <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
+              <ref role="1WPo9$" node="4AahbtVRLW6" resolve="xeey" />
+              <node concept="XrbUJ" id="4AahbtVRNmn" role="1WFony">
+                <ref role="XrbUP" node="4AahbtVbbGn" resolve="x" />
+              </node>
+              <node concept="XrbUJ" id="4AahbtVRNvB" role="1WFony">
+                <ref role="XrbUP" node="4AahbtVbbGp" resolve="y" />
+              </node>
             </node>
-            <node concept="1WPpZc" id="4AahbtVbbGv" role="30czhm">
-              <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
+            <node concept="1WPpZc" id="4AahbtVRMNa" role="30czhm">
+              <ref role="1WPpZZ" node="4AahbtVRLs6" resolve="InlineMessages" />
             </node>
           </node>
           <node concept="30cPrO" id="4AahbtVbbGw" role="I61DU">
@@ -793,7 +834,7 @@
           </node>
           <node concept="2S399m" id="4AahbtVkeDb" role="_fkuY">
             <node concept="2Ss9cW" id="4AahbtVkeDc" role="2S399n">
-              <ref role="2Ss9cX" node="4AahbtVbbGm" resolve="Point2" />
+              <ref role="2Ss9cX" to="2tj6:4AahbtVbbGm" resolve="Point2" />
             </node>
             <node concept="30bXRB" id="4AahbtVkeDd" role="2S399l">
               <property role="30bXRw" value="1" />
@@ -814,7 +855,7 @@
           </node>
           <node concept="2S399m" id="4AahbtVkj3U" role="_fkuY">
             <node concept="2Ss9cW" id="4AahbtVkj3V" role="2S399n">
-              <ref role="2Ss9cX" node="4AahbtVbbGm" resolve="Point2" />
+              <ref role="2Ss9cX" to="2tj6:4AahbtVbbGm" resolve="Point2" />
             </node>
             <node concept="30bXRB" id="4AahbtVkj3W" role="2S399l">
               <property role="30bXRw" value="101" />
