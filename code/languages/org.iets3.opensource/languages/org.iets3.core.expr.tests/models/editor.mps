@@ -91,8 +91,12 @@
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1160493135005" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues_GetValues" flags="in" index="MLZmj" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
+      <concept id="1164833692343" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues" flags="ng" index="PvTIS">
+        <child id="1164833692344" name="valuesFunction" index="PvTIR" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -1114,6 +1118,27 @@
                         </node>
                       </node>
                       <node concept="10Oyi0" id="5VEHrQd30P9" role="10QFUM" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="OXEIz" id="UwUtc1IlhG" role="P5bDN">
+            <node concept="PvTIS" id="UwUtc1oj6x" role="OY2wv">
+              <node concept="MLZmj" id="UwUtc1oj6y" role="PvTIR">
+                <node concept="3clFbS" id="UwUtc1oj6z" role="2VODD2">
+                  <node concept="3clFbF" id="UwUtc1vXWO" role="3cqZAp">
+                    <node concept="2YIFZM" id="UwUtc1smm3" role="3clFbG">
+                      <ref role="37wK5l" to="oq0c:UwUtc1okvZ" resolve="proposals" />
+                      <ref role="1Pybhc" to="oq0c:UwUtc1nzGQ" resolve="NC" />
+                      <node concept="3GMtW1" id="UwUtc1smm4" role="37wK5m" />
+                      <node concept="2OqwBi" id="UwUtc1smm5" role="37wK5m">
+                        <node concept="3GMtW1" id="UwUtc1smm6" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="UwUtc1smm7" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
