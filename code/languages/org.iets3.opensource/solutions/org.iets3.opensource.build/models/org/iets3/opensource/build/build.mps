@@ -7859,6 +7859,9 @@
         <node concept="L2wRC" id="48ZWgAGrvuG" role="39821P">
           <ref role="L2wRA" node="48ZWgAGrsP1" resolve="test.ts.components.core" />
         </node>
+        <node concept="L2wRC" id="4ToqgmJmVsD" role="39821P">
+          <ref role="L2wRA" node="6xvglc6Du8w" resolve="test.ex.core.expr.genjava" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -8191,6 +8194,7 @@
       <property role="TrG5h" value="test.ex.core.expr.genjava" />
       <property role="3LESm3" value="0a68022c-4e89-4403-a717-1caf19c68980" />
       <property role="2GAjPV" value="false" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="6xvglc6Duc5" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
         <node concept="2Ry0Ak" id="6xvglc6DufD" role="iGT6I">
@@ -8225,6 +8229,22 @@
         <node concept="3bR9La" id="6xvglc6DuQ9" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="5zQvLw7dx1X" resolve="org.iets3.core.expr.datetime" />
+        </node>
+      </node>
+      <node concept="3rtmxn" id="4ToqgmJmVyU" role="3bR31x">
+        <node concept="3LXTmp" id="4ToqgmJmVyV" role="3rtmxm">
+          <node concept="398BVA" id="4ToqgmJmVyW" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <node concept="2Ry0Ak" id="4ToqgmJmVyX" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="4ToqgmJmVyY" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ex.core.expr.genjava" />
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="4ToqgmJmVz0" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
         </node>
       </node>
     </node>
@@ -8262,6 +8282,9 @@
       </node>
       <node concept="22LTRM" id="28$LOSBbspe" role="22LTRK">
         <ref role="22LTRN" node="5b6pzZGWpQv" resolve="test.ts.core.expr" />
+      </node>
+      <node concept="22LTRM" id="4ToqgmJmYtN" role="22LTRK">
+        <ref role="22LTRN" node="6xvglc6Du8w" resolve="test.ex.core.expr.genjava" />
       </node>
     </node>
   </node>
