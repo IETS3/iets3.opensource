@@ -3828,5 +3828,51 @@
       <ref role="1YaFvo" to="yv47:67Y8mp$DMUI" resolve="EnumDeclaration" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4ToqgmJpqcB">
+    <property role="TrG5h" value="typeof_EnumType" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="4ToqgmJpqcC" role="18ibNy">
+      <node concept="3clFbJ" id="4ToqgmJpqcI" role="3cqZAp">
+        <node concept="3y3z36" id="4ToqgmJpqoM" role="3clFbw">
+          <node concept="10Nm6u" id="4ToqgmJpqp6" role="3uHU7w" />
+          <node concept="2OqwBi" id="4ToqgmJpqPF" role="3uHU7B">
+            <node concept="1YBJjd" id="4ToqgmJpqcU" role="2Oq$k0">
+              <ref role="1YBMHb" node="4ToqgmJpqcE" resolve="enumType" />
+            </node>
+            <node concept="3TrEf2" id="4ToqgmJprfM" role="2OqNvi">
+              <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="4ToqgmJpqcK" role="3clFbx">
+          <node concept="1Z5TYs" id="4ToqgmJpqF8" role="3cqZAp">
+            <node concept="mw_s8" id="4ToqgmJpqFs" role="1ZfhKB">
+              <node concept="1Z2H0r" id="4ToqgmJpqFo" role="mwGJk">
+                <node concept="2OqwBi" id="4ToqgmJprsw" role="1Z2MuG">
+                  <node concept="1YBJjd" id="4ToqgmJpqFH" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4ToqgmJpqcE" resolve="enumType" />
+                  </node>
+                  <node concept="3TrEf2" id="4ToqgmJprGn" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="4ToqgmJpqFb" role="1ZfhK$">
+              <node concept="1Z2H0r" id="4ToqgmJpqpp" role="mwGJk">
+                <node concept="1YBJjd" id="4ToqgmJpqrb" role="1Z2MuG">
+                  <ref role="1YBMHb" node="4ToqgmJpqcE" resolve="enumType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4ToqgmJpqcE" role="1YuTPh">
+      <property role="TrG5h" value="enumType" />
+      <ref role="1YaFvo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+    </node>
+  </node>
 </model>
 
