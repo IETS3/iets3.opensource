@@ -1594,8 +1594,13 @@
             <node concept="1pGfFk" id="4IV0h47fTB1" role="2ShVmc">
               <ref role="37wK5l" to="n9sl:4IV0h47fHvn" resolve="InterceptorFailedException" />
               <node concept="13iPFW" id="4IV0h47fTHD" role="37wK5m" />
-              <node concept="Xl_RD" id="4IV0h47fTX8" role="37wK5m">
-                <property role="Xl_RC" value="throwInterceptor" />
+              <node concept="2ShNRf" id="UwUtc3KCJj" role="37wK5m">
+                <node concept="1pGfFk" id="UwUtc3KCJi" role="2ShVmc">
+                  <ref role="37wK5l" to="oq0c:4AahbtULK5l" resolve="MessageValue" />
+                  <node concept="Xl_RD" id="4IV0h47fTX8" role="37wK5m">
+                    <property role="Xl_RC" value="throwInterceptor" />
+                  </node>
+                </node>
               </node>
               <node concept="37vLTw" id="4IV0h47fVfM" role="37wK5m">
                 <ref role="3cqZAo" node="4IV0h47fURu" resolve="ctx" />
@@ -1974,26 +1979,31 @@
                 <node concept="1pGfFk" id="4IV0h48fBeL" role="2ShVmc">
                   <ref role="37wK5l" to="n9sl:4IV0h47fHvn" resolve="InterceptorFailedException" />
                   <node concept="13iPFW" id="4IV0h48fBlB" role="37wK5m" />
-                  <node concept="3cpWs3" id="4IV0h48pYJ3" role="37wK5m">
-                    <node concept="Xl_RD" id="4IV0h48pYJ4" role="3uHU7w">
-                      <property role="Xl_RC" value=" ms" />
-                    </node>
-                    <node concept="3cpWs3" id="4IV0h48pYJ5" role="3uHU7B">
-                      <node concept="3cpWs3" id="4IV0h48pYJ6" role="3uHU7B">
-                        <node concept="3cpWs3" id="4IV0h48pYJ7" role="3uHU7B">
-                          <node concept="Xl_RD" id="4IV0h48pYJ8" role="3uHU7B">
-                            <property role="Xl_RC" value="message rate exceeded; " />
+                  <node concept="2ShNRf" id="UwUtc3KBKm" role="37wK5m">
+                    <node concept="1pGfFk" id="UwUtc3KBKl" role="2ShVmc">
+                      <ref role="37wK5l" to="oq0c:4AahbtULK5l" resolve="MessageValue" />
+                      <node concept="3cpWs3" id="4IV0h48pYJ3" role="37wK5m">
+                        <node concept="Xl_RD" id="4IV0h48pYJ4" role="3uHU7w">
+                          <property role="Xl_RC" value=" ms" />
+                        </node>
+                        <node concept="3cpWs3" id="4IV0h48pYJ5" role="3uHU7B">
+                          <node concept="3cpWs3" id="4IV0h48pYJ6" role="3uHU7B">
+                            <node concept="3cpWs3" id="4IV0h48pYJ7" role="3uHU7B">
+                              <node concept="Xl_RD" id="4IV0h48pYJ8" role="3uHU7B">
+                                <property role="Xl_RC" value="message rate exceeded; " />
+                              </node>
+                              <node concept="37vLTw" id="4IV0h48pYJ9" role="3uHU7w">
+                                <ref role="3cqZAo" node="4IV0h48isRM" resolve="actMsgCount" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4IV0h48pYJa" role="3uHU7w">
+                              <property role="Xl_RC" value=" in the last " />
+                            </node>
                           </node>
-                          <node concept="37vLTw" id="4IV0h48pYJ9" role="3uHU7w">
-                            <ref role="3cqZAo" node="4IV0h48isRM" resolve="actMsgCount" />
+                          <node concept="37vLTw" id="4IV0h48pYJb" role="3uHU7w">
+                            <ref role="3cqZAo" node="4IV0h48fy8P" resolve="inPeriod" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="4IV0h48pYJa" role="3uHU7w">
-                          <property role="Xl_RC" value=" in the last " />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="4IV0h48pYJb" role="3uHU7w">
-                        <ref role="3cqZAo" node="4IV0h48fy8P" resolve="inPeriod" />
                       </node>
                     </node>
                   </node>

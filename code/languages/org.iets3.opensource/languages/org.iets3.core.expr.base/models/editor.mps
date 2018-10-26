@@ -4561,6 +4561,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4AahbtULQ$k">
+    <property role="3GE5qa" value="messages" />
     <ref role="1XX52x" to="hm2y:4AahbtULQzU" resolve="MessageValueType" />
     <node concept="3F0ifn" id="4AahbtULQ$m" role="2wV5jI">
       <property role="3F0ifm" value="message" />
@@ -4568,6 +4569,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4AahbtVAEwI">
+    <property role="3GE5qa" value="messages" />
     <ref role="1XX52x" to="hm2y:4AahbtVAEwi" resolve="InlineMessage" />
     <node concept="3EZMnI" id="4AahbtVAEwN" role="2wV5jI">
       <node concept="2iRfu4" id="4AahbtVAEwO" role="2iSdaV" />

@@ -1241,6 +1241,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4AahbtVE510">
+    <property role="3GE5qa" value="messages" />
     <ref role="1M2myG" to="hm2y:4AahbtVAEwi" resolve="InlineMessage" />
     <node concept="9S07l" id="4AahbtVE511" role="9Vyp8">
       <node concept="3clFbS" id="4AahbtVE512" role="2VODD2">

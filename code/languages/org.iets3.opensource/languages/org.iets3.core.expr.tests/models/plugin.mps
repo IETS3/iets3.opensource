@@ -853,12 +853,17 @@
                 </node>
                 <node concept="liA8E" id="5Pgo_ASaDvw" role="2OqNvi">
                   <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
-                  <node concept="2OqwBi" id="5Pgo_ASaDEZ" role="37wK5m">
-                    <node concept="37vLTw" id="5Pgo_ASaDxP" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5Pgo_ASaANY" resolve="validValue" />
+                  <node concept="2OqwBi" id="UwUtc3zBZa" role="37wK5m">
+                    <node concept="2OqwBi" id="5Pgo_ASaDEZ" role="2Oq$k0">
+                      <node concept="37vLTw" id="5Pgo_ASaDxP" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Pgo_ASaANY" resolve="validValue" />
+                      </node>
+                      <node concept="2OwXpG" id="5Pgo_ASaDT_" role="2OqNvi">
+                        <ref role="2Oxat5" to="oq0c:78hTg1ztFyD" resolve="msg" />
+                      </node>
                     </node>
-                    <node concept="2OwXpG" id="5Pgo_ASaDT_" role="2OqNvi">
-                      <ref role="2Oxat5" to="oq0c:78hTg1ztFyD" resolve="msg" />
+                    <node concept="liA8E" id="UwUtc3zCj7" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:4AahbtV9xyO" resolve="toString" />
                     </node>
                   </node>
                 </node>
