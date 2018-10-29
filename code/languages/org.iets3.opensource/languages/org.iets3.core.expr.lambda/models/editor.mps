@@ -1660,5 +1660,9 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="7EYe2PMegjJ">
+    <property role="3GE5qa" value="function" />
+    <ref role="aqKnT" to="zzzn:5iD_kvlIV0f" resolve="FunctionStyleExecOp" />
+  </node>
 </model>
 

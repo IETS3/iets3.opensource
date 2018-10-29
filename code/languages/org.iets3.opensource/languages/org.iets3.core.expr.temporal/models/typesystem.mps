@@ -3179,5 +3179,71 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="7EYe2PMbndi">
+    <property role="TrG5h" value="typeof_TemporalQuantifier" />
+    <property role="3GE5qa" value="quantifiers" />
+    <node concept="3clFbS" id="7EYe2PMbndj" role="18ibNy">
+      <node concept="nvevp" id="7EYe2PMbnvl" role="3cqZAp">
+        <node concept="3clFbS" id="7EYe2PMbnvn" role="nvhr_">
+          <node concept="1ZobV4" id="7EYe2PMboMV" role="3cqZAp">
+            <node concept="mw_s8" id="7EYe2PMboNA" role="1ZfhKB">
+              <node concept="2pJPEk" id="7EYe2PMboNy" role="mwGJk">
+                <node concept="2pJPED" id="7EYe2PMboNL" role="2pJPEn">
+                  <ref role="2pJxaS" to="l462:50smQ1V8i89" resolve="TemporalType" />
+                  <node concept="2pIpSj" id="7EYe2PMboO9" role="2pJxcM">
+                    <ref role="2pIpSl" to="l462:50smQ1V8i8a" resolve="baseType" />
+                    <node concept="36biLy" id="7EYe2PMboO_" role="2pJxcZ">
+                      <node concept="2YIFZM" id="7EYe2PMboQi" role="36biLW">
+                        <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+                        <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="7EYe2PMboMY" role="1ZfhK$">
+              <node concept="2X3wrD" id="7EYe2PMbo$J" role="mwGJk">
+                <ref role="2X3Bk0" node="7EYe2PMbnvr" resolve="contextType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="7EYe2PMbnwE" role="nvjzm">
+          <node concept="2OqwBi" id="7EYe2PMbnEG" role="1Z2MuG">
+            <node concept="1YBJjd" id="7EYe2PMbnx6" role="2Oq$k0">
+              <ref role="1YBMHb" node="7EYe2PMbndl" resolve="tq" />
+            </node>
+            <node concept="2qgKlT" id="7EYe2PMbo1V" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="7EYe2PMbnvr" role="2X0Ygz">
+          <property role="TrG5h" value="contextType" />
+          <node concept="2jxLKc" id="7EYe2PMbnvs" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="7EYe2PMbnsd" role="3cqZAp">
+        <node concept="mw_s8" id="7EYe2PMbnsu" role="1ZfhKB">
+          <node concept="2YIFZM" id="7EYe2PMbnu1" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7EYe2PMbnsg" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7EYe2PMbnds" role="mwGJk">
+            <node concept="1YBJjd" id="7EYe2PMbnfe" role="1Z2MuG">
+              <ref role="1YBMHb" node="7EYe2PMbndl" resolve="tq" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7EYe2PMbndl" role="1YuTPh">
+      <property role="TrG5h" value="tq" />
+      <ref role="1YaFvo" to="l462:7EYe2PMbncr" resolve="TemporalQuantifier" />
+    </node>
+  </node>
 </model>
 
