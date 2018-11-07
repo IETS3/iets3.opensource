@@ -45,6 +45,7 @@
     <import index="tp6m" ref="r:00000000-0000-4000-0000-011c895903a2(jetbrains.mps.lang.test.runtime)" />
     <import index="4k19" ref="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86/java:org.hamcrest(Hamcrest/)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2271,6 +2272,33 @@
         </node>
       </node>
       <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="709cphaSDZ6" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="getSimpleClassName" />
+      <property role="13i0it" value="false" />
+      <ref role="13i0hy" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+      <node concept="3Tm1VV" id="709cphaSDZg" role="1B3o_S" />
+      <node concept="3clFbS" id="709cphaSDZh" role="3clF47">
+        <node concept="3cpWs6" id="4wqDzu9T4Y0" role="3cqZAp">
+          <node concept="2YIFZM" id="4wqDzu9T5Aa" role="3cqZAk">
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidCamelIdentifier(java.lang.String):java.lang.String" resolve="toValidCamelIdentifier" />
+            <node concept="3cpWs3" id="hSQJJ0r" role="37wK5m">
+              <node concept="2OqwBi" id="hSQJJ0s" role="3uHU7B">
+                <node concept="13iPFW" id="hSQJJ0t" role="2Oq$k0" />
+                <node concept="3TrcHB" id="hSQPI0T" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="hSQJJ0v" role="3uHU7w">
+                <property role="Xl_RC" value="_Generated_Test" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="709cphaSDZi" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="ub9nkyOIeW">
