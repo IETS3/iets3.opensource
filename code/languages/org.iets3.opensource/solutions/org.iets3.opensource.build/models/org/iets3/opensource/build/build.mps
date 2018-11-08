@@ -4334,6 +4334,46 @@
             <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6pNCASbJnjL" role="3bR37C">
+          <node concept="3bR9La" id="6pNCASbJnjM" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="6pNCASbJiT2" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.testExecution" />
+        <property role="3LESm3" value="2022a471-10ba-4431-ba5d-622df898f3c6" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6pNCASbJjFA" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="6pNCASbJksm" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6pNCASbJld5" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.testExecution" />
+              <node concept="2Ry0Ak" id="6pNCASbJlXO" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.testExecution.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6pNCASbJmyo" role="3bR37C">
+          <node concept="3bR9La" id="6pNCASbJmyp" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6pNCASbJmyq" role="3bR37C">
+          <node concept="1Busua" id="6pNCASbJmyr" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6pNCASbJmys" role="1TViLv">
+          <property role="TrG5h" value="org.iets3.core.expr.testExecution#01" />
+          <property role="3LESm3" value="54e229e5-417b-465c-b6fb-ae123701e381" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="1E1JtD" id="OnhZN9YvFC" role="2G$12L">
         <property role="BnDLt" value="true" />

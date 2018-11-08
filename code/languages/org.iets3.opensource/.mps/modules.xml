@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TestExecutionPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.advanced.devkit/org.iets3.core.expr.advanced.devkit.devkit" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.core.devkit/org.iets3.core.expr.core.devkit.devkit" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.genjava.advanced.devkit/org.iets3.core.expr.genjava.advanced.devkit.devkit" folder="expr.genjava" />
@@ -47,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.simpleTypes/org.iets3.core.expr.simpleTypes.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.statemachines/org.iets3.core.expr.statemachines.mpl" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.temporal/org.iets3.core.expr.temporal.mpl" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.testExecution/org.iets3.core.expr.testExecution.mpl" folder="expr" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tests/org.iets3.core.expr.tests.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.mpl" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.expr.tracing/org.iets3.core.expr.tracing.mpl" folder="expr.lang-core" />
