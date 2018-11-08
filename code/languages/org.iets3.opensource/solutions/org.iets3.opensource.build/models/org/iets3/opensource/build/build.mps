@@ -115,6 +115,9 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -448,6 +451,15 @@
       </node>
       <node concept="m$f5U" id="VjQDRHWAjR" role="m$_yh">
         <ref role="m$f5T" node="5wLtKNeSWz5" resolve="iets3.core.os" />
+      </node>
+      <node concept="m$_yB" id="2HxWS56RHdu" role="m$_yh">
+        <ref role="m$_yA" to="al5i:1oM0ei22dHk" resolve="com.mbeddr.mpsutil.spreferences" />
+      </node>
+      <node concept="m$_yB" id="2HxWS56RHZm" role="m$_yh">
+        <ref role="m$_yA" to="al5i:1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
+      </node>
+      <node concept="m$_yB" id="2HxWS56RILg" role="m$_yh">
+        <ref role="m$_yA" to="al5i:KILMQH6GzO" resolve="com.mbeddr.mpsutil.spreferences.context" />
       </node>
       <node concept="m$_yC" id="5wLtKNeSRRJ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

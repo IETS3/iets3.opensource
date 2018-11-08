@@ -79,9 +79,6 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
-      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2374,12 +2371,19 @@
             <node concept="Xl_RD" id="6VjyfUYegC0" role="3uHU7B">
               <property role="Xl_RC" value="Generated + " />
             </node>
-            <node concept="2OqwBi" id="6VjyfUYegVb" role="3uHU7w">
-              <node concept="13iAh5" id="6VjyfUYegVc" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpe3:hGB2rPm" resolve="ITestCase" />
-              </node>
-              <node concept="2qgKlT" id="6VjyfUYegVd" role="2OqNvi">
-                <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+            <node concept="2YIFZM" id="2HxWS56RGqc" role="3uHU7w">
+              <ref role="37wK5l" to="18ew:~NameUtil.toValidCamelIdentifier(java.lang.String):java.lang.String" resolve="toValidCamelIdentifier" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <node concept="3cpWs3" id="2HxWS56RGqd" role="37wK5m">
+                <node concept="2OqwBi" id="2HxWS56RGqe" role="3uHU7B">
+                  <node concept="13iPFW" id="2HxWS56RGqf" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2HxWS56RGqg" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2HxWS56RGqh" role="3uHU7w">
+                  <property role="Xl_RC" value="_Test" />
+                </node>
               </node>
             </node>
           </node>
@@ -2391,13 +2395,20 @@
       <node concept="3Tm1VV" id="6VjyfUYebfI" role="1B3o_S" />
       <node concept="17QB3L" id="6VjyfUYeeBE" role="3clF45" />
       <node concept="3clFbS" id="6VjyfUYebfK" role="3clF47">
-        <node concept="3clFbF" id="6VjyfUYeguW" role="3cqZAp">
-          <node concept="2OqwBi" id="6VjyfUYeguX" role="3clFbG">
-            <node concept="13iAh5" id="6VjyfUYeguY" role="2Oq$k0">
-              <ref role="3eA5LN" to="tpe3:hGB2rPm" resolve="ITestCase" />
-            </node>
-            <node concept="2qgKlT" id="6VjyfUYeguZ" role="2OqNvi">
-              <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+        <node concept="3cpWs6" id="4wqDzu9T4Y0" role="3cqZAp">
+          <node concept="2YIFZM" id="4wqDzu9T5Aa" role="3cqZAk">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidCamelIdentifier(java.lang.String):java.lang.String" resolve="toValidCamelIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="3cpWs3" id="hSQJJ0r" role="37wK5m">
+              <node concept="2OqwBi" id="hSQJJ0s" role="3uHU7B">
+                <node concept="13iPFW" id="hSQJJ0t" role="2Oq$k0" />
+                <node concept="3TrcHB" id="hSQPI0T" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="hSQJJ0v" role="3uHU7w">
+                <property role="Xl_RC" value="_Test" />
+              </node>
             </node>
           </node>
         </node>
