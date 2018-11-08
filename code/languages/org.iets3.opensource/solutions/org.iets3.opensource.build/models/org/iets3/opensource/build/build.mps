@@ -3364,6 +3364,18 @@
             <ref role="1Busuk" to="al5i:2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6VjyfUYequR" role="3bR37C">
+          <node concept="3bR9La" id="6VjyfUYequS" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VjyfUYequT" role="3bR37C">
+          <node concept="3bR9La" id="6VjyfUYequU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:1oM0ei22dHk" resolve="com.mbeddr.mpsutil.spreferences" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396fH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4338,11 +4350,6 @@
           <node concept="3bR9La" id="6pNCASbJnjM" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6pNCASbLO5u" role="3bR37C">
-          <node concept="3bR9La" id="6pNCASbLOv2" role="1SiIV1">
-            <ref role="3bR37D" node="6pNCASbLJpT" resolve="org.iets3.opensource.__spreferences.TestExecutionPreferences" />
           </node>
         </node>
       </node>

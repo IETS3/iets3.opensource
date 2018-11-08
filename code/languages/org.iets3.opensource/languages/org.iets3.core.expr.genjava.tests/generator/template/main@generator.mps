@@ -20,6 +20,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
@@ -606,15 +607,10 @@
       <node concept="3zFVjK" id="21ieoTcCMz3" role="3zH0cK">
         <node concept="3clFbS" id="21ieoTcCMz4" role="2VODD2">
           <node concept="3clFbF" id="hHq$I51" role="3cqZAp">
-            <node concept="3cpWs3" id="709cphbq4f2" role="3clFbG">
-              <node concept="Xl_RD" id="709cphbq4zj" role="3uHU7B">
-                <property role="Xl_RC" value="Generated_" />
-              </node>
-              <node concept="2OqwBi" id="7aUGNm8lno2" role="3uHU7w">
-                <node concept="30H73N" id="hHq$I52" role="2Oq$k0" />
-                <node concept="2qgKlT" id="709cphaVmSW" role="2OqNvi">
-                  <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
-                </node>
+            <node concept="2OqwBi" id="7aUGNm8lno2" role="3clFbG">
+              <node concept="30H73N" id="hHq$I52" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6VjyfUYex3m" role="2OqNvi">
+                <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
               </node>
             </node>
           </node>
