@@ -4340,6 +4340,29 @@
             <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6pNCASbLO5u" role="3bR37C">
+          <node concept="3bR9La" id="6pNCASbLOv2" role="1SiIV1">
+            <ref role="3bR37D" node="6pNCASbLJpT" resolve="org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6pNCASbLJpT" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+        <property role="3LESm3" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6pNCASbLKd1" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="6pNCASbLKYx" role="iGT6I">
+            <property role="2Ry0Am" value="_spreferences" />
+            <node concept="2Ry0Ak" id="6pNCASbLLK0" role="2Ry0An">
+              <property role="2Ry0Am" value="TestExecutionPreferences" />
+              <node concept="2Ry0Ak" id="6pNCASbLMxv" role="2Ry0An">
+                <property role="2Ry0Am" value="module.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6pNCASbJiT2" role="2G$12L">
         <property role="BnDLt" value="true" />
