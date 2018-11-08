@@ -1711,8 +1711,8 @@
                             <node concept="1mfA1w" id="7EIB27g8N4$" role="2OqNvi" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="7EIB27g8POl" role="2OqNvi">
-                          <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+                        <node concept="2qgKlT" id="2HxWS56X$VZ" role="2OqNvi">
+                          <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
                         </node>
                       </node>
                     </node>
@@ -1792,8 +1792,8 @@
                             <node concept="1mfA1w" id="3$XzGmIzdvM" role="2OqNvi" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="3$XzGmIzdvN" role="2OqNvi">
-                          <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+                        <node concept="2qgKlT" id="2HxWS56XAA8" role="2OqNvi">
+                          <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
                         </node>
                       </node>
                     </node>
