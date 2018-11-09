@@ -2426,6 +2426,78 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="ljKHDc3CIV" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getClassName" />
+      <property role="13i0it" value="false" />
+      <ref role="13i0hy" to="tpe5:hGBnqtL" resolve="getClassName" />
+      <node concept="3Tm1VV" id="ljKHDc3CJo" role="1B3o_S" />
+      <node concept="3clFbS" id="ljKHDc3CJp" role="3clF47">
+        <node concept="3cpWs8" id="2_tP28kjNF8" role="3cqZAp">
+          <node concept="3cpWsn" id="2_tP28kjNF9" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="2_tP28kjNF7" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2OqwBi" id="2_tP28kjNFa" role="33vP2m">
+              <node concept="2JrnkZ" id="2_tP28kjNFb" role="2Oq$k0">
+                <node concept="13iPFW" id="2_tP28kjNFc" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="2_tP28kjNFd" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2_tP28kjNSM" role="3cqZAp">
+          <node concept="3clFbS" id="2_tP28kjNSO" role="3clFbx">
+            <node concept="3cpWs6" id="2_tP28kjOgq" role="3cqZAp">
+              <node concept="3cpWs3" id="2_tP28kjPfX" role="3cqZAk">
+                <node concept="BsUDl" id="ljKHDc3NgX" role="3uHU7w">
+                  <ref role="37wK5l" node="6VjyfUYebfH" resolve="getSimpleClassNameForInterpreter" />
+                </node>
+                <node concept="Xl_RD" id="2_tP28kjOmY" role="3uHU7B">
+                  <property role="Xl_RC" value="[null model ]" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2_tP28kjOat" role="3clFbw">
+            <node concept="10Nm6u" id="2_tP28kjOa$" role="3uHU7w" />
+            <node concept="37vLTw" id="2_tP28kjNZh" role="3uHU7B">
+              <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="hSQJTo4" role="3cqZAp">
+          <node concept="3cpWs3" id="hSQJToc" role="3clFbG">
+            <node concept="3cpWs3" id="hSQJTo5" role="3uHU7B">
+              <node concept="Xl_RD" id="hSQJTod" role="3uHU7w">
+                <property role="Xl_RC" value="." />
+              </node>
+              <node concept="2OqwBi" id="2_tP28kjMZk" role="3uHU7B">
+                <node concept="2OqwBi" id="2_tP28kjM_t" role="2Oq$k0">
+                  <node concept="37vLTw" id="2_tP28kjNFe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="2_tP28kjMPv" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2_tP28kjNit" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
+                </node>
+              </node>
+            </node>
+            <node concept="BsUDl" id="ljKHDc3NKo" role="3uHU7w">
+              <ref role="37wK5l" node="6VjyfUYebfH" resolve="getSimpleClassNameForInterpreter" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="ljKHDc3CJq" role="3clF45" />
+    </node>
   </node>
   <node concept="312cEu" id="ub9nkyOIeW">
     <property role="TrG5h" value="EvalResult" />
