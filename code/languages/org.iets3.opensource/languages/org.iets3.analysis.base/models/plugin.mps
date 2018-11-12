@@ -7,6 +7,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -16,6 +17,8 @@
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
+    <import index="9mwl" ref="e510c30a-448b-4831-ad0c-8ef6a9f626fd/java:org.smtlib(org.iets3.tools.SMTLIB/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
@@ -1242,6 +1245,25 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1BirSAt78N$" role="jymVt" />
+    <node concept="3clFb_" id="5$uffF3IaCQ" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getSortFactory" />
+      <node concept="3uibUv" id="5$uffF3IaNf" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="5$uffF3IaCT" role="1B3o_S" />
+      <node concept="3clFbS" id="5$uffF3IaCU" role="3clF47" />
+      <node concept="P$JXv" id="5$uffF3IaNT" role="lGtFl">
+        <node concept="TZ5HA" id="5$uffF3IaNU" role="TZ5H$">
+          <node concept="1dT_AC" id="5$uffF3IaNV" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the jSMTLIB SortFactory." />
+          </node>
+        </node>
+        <node concept="x79VA" id="5$uffF3IaNW" role="3nqlJM">
+          <property role="x79VB" value="an Object that can safely be casted to ISort.IFactory" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="1BirSAt7nHV" role="jymVt" />
     <node concept="3clFb_" id="1BirSAt7d_P" role="jymVt">
       <property role="1EzhhJ" value="true" />
@@ -1312,8 +1334,8 @@
       <property role="TrG5h" value="context" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="7tOaVPfBnPI" role="1B3o_S" />
-      <node concept="3uibUv" id="7tOaVPfBp5u" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      <node concept="3uibUv" id="3Xx5vcO9Iil" role="1tU5fm">
+        <ref role="3uigEE" node="5$uffF3OhdW" resolve="SMTLIBTranslationContext" />
       </node>
     </node>
     <node concept="2tJIrI" id="6rcydJjjdqD" role="jymVt" />
@@ -1437,8 +1459,8 @@
       </node>
       <node concept="37vLTG" id="7tOaVPfBmq9" role="3clF46">
         <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="7tOaVPfBmTr" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        <node concept="3uibUv" id="3Xx5vcO9IpQ" role="1tU5fm">
+          <ref role="3uigEE" node="5$uffF3OhdW" resolve="SMTLIBTranslationContext" />
         </node>
       </node>
     </node>
@@ -1458,11 +1480,7 @@
             <node concept="37vLTw" id="6rcydJjjHyu" role="37wK5m">
               <ref role="3cqZAo" node="6rcydJjjHlG" resolve="api" />
             </node>
-            <node concept="2ShNRf" id="6rcydJjjd6U" role="37wK5m">
-              <node concept="HV5vD" id="6rcydJjjdk0" role="2ShVmc">
-                <ref role="HV5vE" node="6rcydJjj28U" resolve="DefaultSMTLIBTranslatorDriver" />
-              </node>
-            </node>
+            <node concept="10Nm6u" id="3Xx5vcOxlYM" role="37wK5m" />
             <node concept="10Nm6u" id="7tOaVPfBrbu" role="37wK5m" />
           </node>
         </node>
@@ -1527,6 +1545,28 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3Xx5vcOxkS3" role="3cqZAp">
+          <node concept="3clFbS" id="3Xx5vcOxkS5" role="3clFbx">
+            <node concept="3clFbF" id="3Xx5vcOxlfl" role="3cqZAp">
+              <node concept="37vLTI" id="3Xx5vcOxls3" role="3clFbG">
+                <node concept="2ShNRf" id="3Xx5vcOxltw" role="37vLTx">
+                  <node concept="HV5vD" id="3Xx5vcOxlGY" role="2ShVmc">
+                    <ref role="HV5vE" node="5$uffF3OhdW" resolve="SMTLIBTranslationContext" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3Xx5vcOxlfj" role="37vLTJ">
+                  <ref role="3cqZAo" node="7tOaVPfBmay" resolve="context" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3Xx5vcOxl9f" role="3clFbw">
+            <node concept="10Nm6u" id="3Xx5vcOxlbz" role="3uHU7w" />
+            <node concept="37vLTw" id="3Xx5vcOxkVm" role="3uHU7B">
+              <ref role="3cqZAo" node="7tOaVPfBmay" resolve="context" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6rcydJjjgtH" role="3cqZAp">
           <node concept="3cpWsn" id="6rcydJjjgtI" role="3cpWs9">
             <property role="TrG5h" value="instance" />
@@ -1585,8 +1625,8 @@
       </node>
       <node concept="37vLTG" id="7tOaVPfBmay" role="3clF46">
         <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="7tOaVPfBmio" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        <node concept="3uibUv" id="3Xx5vcO9HJp" role="1tU5fm">
+          <ref role="3uigEE" node="5$uffF3OhdW" resolve="SMTLIBTranslationContext" />
         </node>
       </node>
     </node>
@@ -2008,6 +2048,104 @@
     <node concept="3uibUv" id="mhgVwvXTVd" role="1zkMxy">
       <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
     </node>
+  </node>
+  <node concept="312cEu" id="5$uffF3OhdW">
+    <property role="3GE5qa" value="translation" />
+    <property role="TrG5h" value="SMTLIBTranslationContext" />
+    <node concept="2tJIrI" id="5$uffF3Ohfi" role="jymVt" />
+    <node concept="3clFbW" id="5$uffF3OhlB" role="jymVt">
+      <node concept="3cqZAl" id="5$uffF3OhlD" role="3clF45" />
+      <node concept="3Tm1VV" id="5$uffF3OhlE" role="1B3o_S" />
+      <node concept="3clFbS" id="5$uffF3OhlF" role="3clF47">
+        <node concept="3clFbF" id="3Xx5vcO9kVi" role="3cqZAp">
+          <node concept="37vLTI" id="3Xx5vcO9nsT" role="3clFbG">
+            <node concept="2ShNRf" id="3Xx5vcO9nvX" role="37vLTx">
+              <node concept="3rGOSV" id="3Xx5vcO9nvE" role="2ShVmc">
+                <node concept="3Tqbb2" id="3Xx5vcO9nvF" role="3rHrn6" />
+                <node concept="3uibUv" id="1ScogIcyVWh" role="3rHtpV">
+                  <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3Xx5vcO9l12" role="37vLTJ">
+              <node concept="Xjq3P" id="3Xx5vcO9kVh" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3Xx5vcO9mew" role="2OqNvi">
+                <ref role="2Oxat5" node="5$uffF3TY6E" resolve="quantifiedVars" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$uffF3Ohm5" role="jymVt" />
+    <node concept="312cEg" id="5$uffF3TY6E" role="jymVt">
+      <property role="TrG5h" value="quantifiedVars" />
+      <node concept="3Tm6S6" id="5$uffF3TY6F" role="1B3o_S" />
+      <node concept="3rvAFt" id="5$uffF3TY$4" role="1tU5fm">
+        <node concept="3uibUv" id="1ScogIcyWLK" role="3rvSg0">
+          <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+        </node>
+        <node concept="3Tqbb2" id="5$uffF3TYd3" role="3rvQeY" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$uffF3OhfA" role="jymVt" />
+    <node concept="3clFb_" id="3Xx5vcO9qvu" role="jymVt">
+      <property role="TrG5h" value="addQuantifiedVarToEnvironment" />
+      <node concept="37vLTG" id="3Xx5vcO9qVt" role="3clF46">
+        <property role="TrG5h" value="arg" />
+        <node concept="3Tqbb2" id="3Xx5vcO9r47" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3Xx5vcO9r4Q" role="3clF46">
+        <property role="TrG5h" value="expr" />
+        <node concept="3uibUv" id="1ScogIcyVND" role="1tU5fm">
+          <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3Xx5vcO9qvw" role="3clF45" />
+      <node concept="3Tm1VV" id="3Xx5vcO9qvx" role="1B3o_S" />
+      <node concept="3clFbS" id="3Xx5vcO9qvy" role="3clF47">
+        <node concept="3clFbF" id="3Xx5vcO9rBH" role="3cqZAp">
+          <node concept="37vLTI" id="3Xx5vcO9tQJ" role="3clFbG">
+            <node concept="37vLTw" id="3Xx5vcO9tTx" role="37vLTx">
+              <ref role="3cqZAo" node="3Xx5vcO9r4Q" resolve="expr" />
+            </node>
+            <node concept="3EllGN" id="3Xx5vcO9rXD" role="37vLTJ">
+              <node concept="37vLTw" id="3Xx5vcO9s03" role="3ElVtu">
+                <ref role="3cqZAo" node="3Xx5vcO9qVt" resolve="arg" />
+              </node>
+              <node concept="37vLTw" id="3Xx5vcO9rBG" role="3ElQJh">
+                <ref role="3cqZAo" node="5$uffF3TY6E" resolve="quantifiedVars" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3Xx5vcO9u3J" role="jymVt" />
+    <node concept="3clFb_" id="3Xx5vcO9uhS" role="jymVt">
+      <property role="TrG5h" value="getSymbolForQuantifiedVar" />
+      <node concept="37vLTG" id="3Xx5vcO9uKb" role="3clF46">
+        <property role="TrG5h" value="arg" />
+        <node concept="3Tqbb2" id="3Xx5vcO9uTM" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="1ScogIcyW5y" role="3clF45">
+        <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+      </node>
+      <node concept="3Tm1VV" id="3Xx5vcO9uhV" role="1B3o_S" />
+      <node concept="3clFbS" id="3Xx5vcO9uhW" role="3clF47">
+        <node concept="3clFbF" id="3Xx5vcO9v0F" role="3cqZAp">
+          <node concept="3EllGN" id="3Xx5vcO9vmN" role="3clFbG">
+            <node concept="37vLTw" id="3Xx5vcO9vpp" role="3ElVtu">
+              <ref role="3cqZAo" node="3Xx5vcO9uKb" resolve="arg" />
+            </node>
+            <node concept="37vLTw" id="3Xx5vcO9v0E" role="3ElQJh">
+              <ref role="3cqZAo" node="5$uffF3TY6E" resolve="quantifiedVars" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5$uffF3OhdX" role="1B3o_S" />
   </node>
 </model>
 

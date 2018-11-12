@@ -962,9 +962,9 @@
   </node>
   <node concept="24kQdi" id="4bUWUHViFI">
     <property role="3GE5qa" value="collection.rnd" />
-    <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="CounterExpr" />
+    <ref role="1XX52x" to="700h:4bUWUHViF9" resolve="IndexExpr" />
     <node concept="3F0ifn" id="4bUWUHViFN" role="2wV5jI">
-      <property role="3F0ifm" value="counter" />
+      <property role="3F0ifm" value="index" />
     </node>
   </node>
   <node concept="24kQdi" id="5$4k7YFgD1c">

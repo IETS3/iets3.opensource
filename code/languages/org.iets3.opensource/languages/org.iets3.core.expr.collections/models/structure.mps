@@ -269,7 +269,7 @@
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
     <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
@@ -289,7 +289,7 @@
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
     <node concept="PrWs8" id="7SZA7UdrNq5" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="1mDdTH3zTs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -362,6 +362,9 @@
     <property role="EcuMT" value="8872269265515619803" />
     <property role="R4oN_" value="existiential quantifier (true if one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
+    <node concept="PrWs8" id="5$uffF3S6tT" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
     <property role="3GE5qa" value="collection" />
@@ -729,15 +732,15 @@
   <node concept="1TIwiD" id="4bUWUHViF9">
     <property role="EcuMT" value="75413091695536841" />
     <property role="3GE5qa" value="collection.rnd" />
-    <property role="TrG5h" value="CounterExpr" />
-    <property role="34LRSv" value="counter" />
-    <property role="R4oN_" value="returns how often the lambda has been executed" />
+    <property role="TrG5h" value="IndexExpr" />
+    <property role="34LRSv" value="index" />
+    <property role="R4oN_" value="returns the index of the element being processed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="7SZA7Udl6Fm">
     <property role="EcuMT" value="9097157441616112342" />
     <property role="3GE5qa" value="collection.rnd" />
-    <property role="TrG5h" value="IHasRndCounter" />
+    <property role="TrG5h" value="IProvideIndex" />
   </node>
   <node concept="1TIwiD" id="7SZA7UdzZKU">
     <property role="3GE5qa" value="collection" />
@@ -754,7 +757,7 @@
       <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
     </node>
     <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -844,7 +847,7 @@
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4hLehKU04bM" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="4hLehKU05cE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />

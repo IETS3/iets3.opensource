@@ -153,5 +153,9 @@
     <property role="EcuMT" value="9051170899708928820" />
     <property role="TrG5h" value="IUseSolver" />
   </node>
+  <node concept="PlHQZ" id="1ScogIcAG87">
+    <property role="EcuMT" value="2165212223089852935" />
+    <property role="TrG5h" value="ISolverCollectionType" />
+  </node>
 </model>
 
