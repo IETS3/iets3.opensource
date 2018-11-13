@@ -34,14 +34,14 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2018.2.6'
+ext.mpsVersion = '2018.3-EAP8'
 
-def mbeddrVersion = "1.1+"
+def mbeddrVersion = "1.2+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
-def mbeddrBranch = ""
+def mbeddrBranch = "mps/20183"
 
 
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
