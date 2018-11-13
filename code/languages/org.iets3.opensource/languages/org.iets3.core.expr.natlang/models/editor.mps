@@ -171,9 +171,6 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -1712,7 +1709,7 @@
             <node concept="10Nm6u" id="2C8vy9yUdcz" role="3uHU7w" />
             <node concept="2OqwBi" id="2C8vy9yUdc$" role="3uHU7B">
               <node concept="liA8E" id="2C8vy9yUdc_" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.getSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getSRole" />
               </node>
               <node concept="37vLTw" id="2C8vy9yUdcA" role="2Oq$k0">
                 <ref role="3cqZAo" node="2C8vy9yUdcN" resolve="editorCell" />
@@ -1723,23 +1720,9 @@
             <node concept="3clFbF" id="2C8vy9yUdcC" role="3cqZAp">
               <node concept="2OqwBi" id="2C8vy9yUdcD" role="3clFbG">
                 <node concept="liA8E" id="2C8vy9yUdcE" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.setRole(java.lang.String):void" resolve="setRole" />
-                  <node concept="2YIFZM" id="2C8vy9yUdcF" role="37wK5m">
-                    <ref role="37wK5l" to="iwwu:i1dughm" resolve="getGenuineLinkRole" />
-                    <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
-                    <node concept="1PxgMI" id="2C8vy9yUdcG" role="37wK5m">
-                      <node concept="2OqwBi" id="2C8vy9yUdcH" role="1m5AlR">
-                        <node concept="37vLTw" id="2C8vy9yUi4P" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2C8vy9yUdbl" resolve="myLink" />
-                        </node>
-                        <node concept="liA8E" id="2C8vy9yUdcJ" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
-                        </node>
-                      </node>
-                      <node concept="chp4Y" id="1Ap9E00Ar9f" role="3oSUPX">
-                        <ref role="cht4Q" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
-                      </node>
-                    </node>
+                  <ref role="37wK5l" to="f4zo:~EditorCell.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
+                  <node concept="37vLTw" id="7GPsQwM6G$6" role="37wK5m">
+                    <ref role="3cqZAo" node="2C8vy9yUdbl" resolve="myLink" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="2C8vy9yUdcK" role="2Oq$k0">
