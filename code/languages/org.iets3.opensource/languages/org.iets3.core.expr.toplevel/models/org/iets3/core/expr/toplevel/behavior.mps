@@ -7771,8 +7771,8 @@
                 </node>
               </node>
             </node>
-            <node concept="3Tsc0h" id="4ptnK4jbsV2" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+            <node concept="2qgKlT" id="69afQR475wv" role="2OqNvi">
+              <ref role="37wK5l" node="58eyHuUgYVm" resolve="nonEmptyMembers" />
             </node>
           </node>
         </node>
