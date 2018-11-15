@@ -7,18 +7,13 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
-    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="9mwl" ref="e510c30a-448b-4831-ad0c-8ef6a9f626fd/java:org.smtlib(org.iets3.tools.SMTLIB/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
@@ -2062,8 +2057,8 @@
             <node concept="2ShNRf" id="3Xx5vcO9nvX" role="37vLTx">
               <node concept="3rGOSV" id="3Xx5vcO9nvE" role="2ShVmc">
                 <node concept="3Tqbb2" id="3Xx5vcO9nvF" role="3rHrn6" />
-                <node concept="3uibUv" id="1ScogIcyVWh" role="3rHtpV">
-                  <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+                <node concept="3uibUv" id="bVxgPU6Abq" role="3rHtpV">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
               </node>
             </node>
@@ -2082,8 +2077,8 @@
       <property role="TrG5h" value="quantifiedVars" />
       <node concept="3Tm6S6" id="5$uffF3TY6F" role="1B3o_S" />
       <node concept="3rvAFt" id="5$uffF3TY$4" role="1tU5fm">
-        <node concept="3uibUv" id="1ScogIcyWLK" role="3rvSg0">
-          <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+        <node concept="3uibUv" id="bVxgPU6AhN" role="3rvSg0">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
         <node concept="3Tqbb2" id="5$uffF3TYd3" role="3rvQeY" />
       </node>
@@ -2097,8 +2092,8 @@
       </node>
       <node concept="37vLTG" id="3Xx5vcO9r4Q" role="3clF46">
         <property role="TrG5h" value="expr" />
-        <node concept="3uibUv" id="1ScogIcyVND" role="1tU5fm">
-          <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+        <node concept="3uibUv" id="bVxgPU6Apd" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="3cqZAl" id="3Xx5vcO9qvw" role="3clF45" />
@@ -2128,8 +2123,8 @@
         <property role="TrG5h" value="arg" />
         <node concept="3Tqbb2" id="3Xx5vcO9uTM" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="1ScogIcyW5y" role="3clF45">
-        <ref role="3uigEE" to="9mwl:~IExpr" resolve="IExpr" />
+      <node concept="3uibUv" id="bVxgPU6Au4" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="3Xx5vcO9uhV" role="1B3o_S" />
       <node concept="3clFbS" id="3Xx5vcO9uhW" role="3clF47">
