@@ -34,7 +34,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2018.3-EAP8'
+ext.mpsVersion = '2018.3-RC1'
 
 def mbeddrVersion = "1.2+"
 
