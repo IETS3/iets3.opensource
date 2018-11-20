@@ -54,6 +54,10 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -346,6 +350,26 @@
       <node concept="3Tm1VV" id="5iphLhCeqpw" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1thG8hDHvv6" role="jymVt" />
+    <node concept="312cEg" id="2o2_RLEwHPG" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myWithCommandRule" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2o2_RLEwHPH" role="1B3o_S" />
+      <node concept="3uibUv" id="2o2_RLEwHPI" role="1tU5fm">
+        <ref role="3uigEE" to="tp6m:BYb1OGotvJ" resolve="RunWithCommand" />
+      </node>
+      <node concept="2ShNRf" id="2o2_RLEwHPJ" role="33vP2m">
+        <node concept="1pGfFk" id="2o2_RLEwHPK" role="2ShVmc">
+          <ref role="37wK5l" to="tp6m:BYb1OGotCN" resolve="RunWithCommand" />
+          <node concept="Xjq3P" id="2o2_RLEwHPL" role="37wK5m" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2o2_RLEwHPM" role="2AJF6D">
+        <ref role="2AI5Lk" to="rjhg:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2o2_RLEwLYv" role="jymVt" />
     <node concept="3clFbW" id="5iphLhCe51H" role="jymVt">
       <node concept="3cqZAl" id="5iphLhCe51J" role="3clF45" />
       <node concept="3Tm1VV" id="5iphLhCe51K" role="1B3o_S" />
