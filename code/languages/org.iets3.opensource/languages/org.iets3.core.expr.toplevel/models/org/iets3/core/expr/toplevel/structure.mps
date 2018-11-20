@@ -360,6 +360,9 @@
     <node concept="PrWs8" id="3KgQFIke4QZ" role="PzmwI">
       <ref role="PrY4T" node="3KgQFIke4um" resolve="IRecordType" />
     </node>
+    <node concept="PrWs8" id="5FZDsYwdPtf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
     <node concept="1TJgyj" id="7D7uZV2dYz3" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="record" />
