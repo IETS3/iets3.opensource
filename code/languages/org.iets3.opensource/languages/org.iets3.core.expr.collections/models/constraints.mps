@@ -938,7 +938,7 @@
   </node>
   <node concept="1M2fIO" id="4bUWUHVmh6">
     <property role="3GE5qa" value="collection.rnd" />
-    <ref role="1M2myG" to="700h:4bUWUHViF9" resolve="CounterExpr" />
+    <ref role="1M2myG" to="700h:4bUWUHViF9" resolve="IndexExpr" />
     <node concept="9S07l" id="6b_jefnKyko" role="9Vyp8">
       <node concept="3clFbS" id="6b_jefnKykp" role="2VODD2">
         <node concept="3cpWs8" id="6b_jefnKykq" role="3cqZAp">
@@ -985,7 +985,7 @@
                 <node concept="2Xjw5R" id="6b_jefnKykN" role="2OqNvi">
                   <node concept="1xMEDy" id="6b_jefnKykO" role="1xVPHs">
                     <node concept="chp4Y" id="6b_jefnKykP" role="ri$Ld">
-                      <ref role="cht4Q" to="700h:7SZA7Udl6Fm" resolve="IHasRndCounter" />
+                      <ref role="cht4Q" to="700h:7SZA7Udl6Fm" resolve="IProvideIndex" />
                     </node>
                   </node>
                 </node>

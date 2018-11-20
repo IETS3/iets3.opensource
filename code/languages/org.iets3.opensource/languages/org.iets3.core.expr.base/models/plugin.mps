@@ -284,6 +284,7 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+      <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
@@ -11878,9 +11879,11 @@
             <node concept="3cpWs8" id="4Q4DxjDbM42" role="3cqZAp">
               <node concept="3cpWsn" id="4Q4DxjDbM43" role="3cpWs9">
                 <property role="TrG5h" value="max" />
-                <node concept="10M0yZ" id="64rKhdUWzSE" role="33vP2m">
-                  <ref role="1PxDUh" to="wyt6:~Double" resolve="Double" />
-                  <ref role="3cqZAo" to="wyt6:~Double.MIN_VALUE" resolve="MIN_VALUE" />
+                <node concept="1ZRNhn" id="oG0sI$CyzP" role="33vP2m">
+                  <node concept="10M0yZ" id="oG0sI$Cyn4" role="2$L3a6">
+                    <ref role="3cqZAo" to="wyt6:~Double.MAX_VALUE" resolve="MAX_VALUE" />
+                    <ref role="1PxDUh" to="wyt6:~Double" resolve="Double" />
+                  </node>
                 </node>
                 <node concept="10P55v" id="s2V0$5WmDp" role="1tU5fm" />
               </node>
@@ -12126,9 +12129,9 @@
             <node concept="3cpWs8" id="6HHp2WnvqXG" role="3cqZAp">
               <node concept="3cpWsn" id="6HHp2WnvqXH" role="3cpWs9">
                 <property role="TrG5h" value="min" />
-                <node concept="10M0yZ" id="64rKhdUWBFf" role="33vP2m">
-                  <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
-                  <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
+                <node concept="10M0yZ" id="oG0sI$C_Yh" role="33vP2m">
+                  <ref role="3cqZAo" to="wyt6:~Double.MAX_VALUE" resolve="MAX_VALUE" />
+                  <ref role="1PxDUh" to="wyt6:~Double" resolve="Double" />
                 </node>
                 <node concept="10P55v" id="s2V0$5Woaa" role="1tU5fm" />
               </node>

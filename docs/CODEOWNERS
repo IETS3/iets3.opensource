@@ -1,0 +1,31 @@
+# Order is important; the last matching pattern takes the most precedence.
+* @bkolb @coolya @joao-silveira @markusvoelter @wsafonov
+
+# All build related files go here.
+/build/ @IETS3/build
+/code/languages/org.iets3.opensource/solutions/org.iets3.opensource.*.build/ @IETS3/build
+*.gradle @IETS3/build
+/buildSrc/ @IETS3/build
+
+# Order matters here. By default expressions are handled by the kernelf team but the java gen part is more specific
+/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.*/ @IETS3/kernelf
+/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.*/ @IETS3/kernelf
+/code/languages/org.iets3.opensource/tests/test.in.expr.os @IETS3/kernelf
+/code/languages/org.iets3.opensource/tests/test.ts.core.expr @IETS3/kernelf
+/code/languages/org.iets3.opensource/tests/test.ts.expr.os @IETS3/kernelf
+/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.genjava.*/ @IETS3/kernelf-java
+/code/languages/org.iets3.opensource/solutions/test.ex.core.expr.genjava/ @IETS3/kernelf-java
+/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.genjava.*/ @IETS3/kernelf-java
+
+
+/code/languages/org.iets3.opensource/solutions/org.iets3.components.*/ @IETS3/components
+/code/languages/org.iets3.opensource/solutions/test.ts.components.core/ @IETS3/components
+/code/languages/org.iets3.opensource/languages/org.iets3.components.*/ @IETS3/components
+/code/languages/org.iets3.opensource/languages/test.iest3.component.attribute @IETS3/components
+
+/code/languages/org.iets3.opensource/languages/org.iets3.analysis.*/ @IETS3/analyses
+
+
+
+
+
