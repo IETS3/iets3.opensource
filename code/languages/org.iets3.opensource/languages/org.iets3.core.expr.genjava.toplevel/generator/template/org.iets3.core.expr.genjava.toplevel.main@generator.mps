@@ -27,8 +27,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -1046,10 +1046,10 @@
       <ref role="2rTdP9" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
       <ref role="2rZz_L" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
     </node>
-    <node concept="2rT7sh" id="6XE8Bc$jSEa" role="2rTMjI">
-      <property role="TrG5h" value="RecordMemberValueSetter" />
-      <ref role="2rTdP9" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+    <node concept="2rT7sh" id="5B4LAqdW3uT" role="2rTMjI">
+      <property role="TrG5h" value="Getter" />
       <ref role="2rZz_L" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
+      <ref role="2rTdP9" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
     </node>
     <node concept="1puMqW" id="oj24_obl15" role="1puA0r">
       <ref role="1puQsG" node="oj24_oau03" resolve="preprocessRecordChangeTarget" />
@@ -6202,21 +6202,16 @@
                       <property role="2qtEX8" value="baseMethodDeclaration" />
                       <node concept="3$xsQk" id="oj24_o9RPn" role="3$ytzL">
                         <node concept="3clFbS" id="oj24_o9RPo" role="2VODD2">
-                          <node concept="3clFbH" id="4osTgJdfOHk" role="3cqZAp" />
                           <node concept="3clFbF" id="oj24_o9SH8" role="3cqZAp">
-                            <node concept="3cpWs3" id="oj24_o9SH9" role="3clFbG">
-                              <node concept="Xl_RD" id="oj24_o9SHa" role="3uHU7B">
-                                <property role="Xl_RC" value="get" />
-                              </node>
-                              <node concept="2OqwBi" id="oj24_o9SHb" role="3uHU7w">
-                                <node concept="2OqwBi" id="oj24_o9SHc" role="2Oq$k0">
-                                  <node concept="30H73N" id="oj24_o9SHd" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="oj24_o9SHe" role="2OqNvi">
+                            <node concept="2OqwBi" id="5B4LAqdWUd3" role="3clFbG">
+                              <node concept="1iwH7S" id="5B4LAqdWTJf" role="2Oq$k0" />
+                              <node concept="1iwH70" id="5B4LAqdWURj" role="2OqNvi">
+                                <ref role="1iwH77" node="5B4LAqdW3uT" resolve="Getter" />
+                                <node concept="2OqwBi" id="5B4LAqdWWw$" role="1iwH7V">
+                                  <node concept="30H73N" id="5B4LAqdWVUj" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="5B4LAqdWX68" role="2OqNvi">
                                     <ref role="3Tt5mk" to="lmd:6LLGpXJ4YDM" resolve="member" />
                                   </node>
-                                </node>
-                                <node concept="3TrcHB" id="oj24_o9SHf" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                 </node>
                               </node>
                             </node>
@@ -9138,6 +9133,7 @@
       </node>
       <node concept="3Tm1VV" id="6XE8Bc$gDXK" role="1B3o_S" />
       <node concept="1WS0z7" id="6XE8Bc$gDXL" role="lGtFl">
+        <ref role="2rW$FS" node="5B4LAqdW3uT" resolve="Getter" />
         <node concept="3JmXsc" id="6XE8Bc$gDXM" role="3Jn$fo">
           <node concept="3clFbS" id="6XE8Bc$gDXN" role="2VODD2">
             <node concept="3clFbF" id="6XE8Bc$gDXO" role="3cqZAp">
