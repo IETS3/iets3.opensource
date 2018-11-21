@@ -633,6 +633,9 @@
     <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
+    <node concept="PrWs8" id="_kNv2PY6eD" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:_kNv2PXITO" resolve="ITypeSupportsProposals" />
+    </node>
     <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
