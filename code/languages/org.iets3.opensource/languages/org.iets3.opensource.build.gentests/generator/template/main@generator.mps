@@ -785,6 +785,12 @@
                     <property role="2pMdty" value="manifest.classpath.generated" />
                   </node>
                 </node>
+                <node concept="2pNUuL" id="4exQ_IaghMj" role="2pNNFR">
+                  <property role="2pNUuO" value="maxparentlevels" />
+                  <node concept="2pMdtt" id="4exQ_IaghMk" role="2pMdts">
+                    <property role="2pMdty" value="99" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2Vbh7Z" id="3I_AWKAl94U" role="2VaTZU">
