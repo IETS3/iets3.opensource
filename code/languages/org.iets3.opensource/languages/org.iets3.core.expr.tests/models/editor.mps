@@ -1166,19 +1166,10 @@
         <node concept="3XFhqQ" id="7D7uZV2GpGi" role="3EZMnx" />
         <node concept="3EZMnI" id="6HHp2WmWVic" role="3EZMnx">
           <node concept="2iRkQZ" id="6HHp2WmWVid" role="2iSdaV" />
-          <node concept="3EZMnI" id="6HHp2WmWVkn" role="3EZMnx">
-            <node concept="2iRfu4" id="6HHp2WmWVko" role="2iSdaV" />
-            <node concept="3F0ifn" id="7D7uZV2GoKm" role="3EZMnx">
-              <property role="3F0ifm" value="execute automatically  :" />
-            </node>
-            <node concept="3F0A7n" id="7D7uZV2GoKN" role="3EZMnx">
-              <ref role="1NtTu8" to="av4b:7D7uZV2GoIG" resolve="executeAutomatically" />
-            </node>
-          </node>
           <node concept="3EZMnI" id="7m_MLaK8Fm2" role="3EZMnx">
             <node concept="2iRfu4" id="7m_MLaK8Fm3" role="2iSdaV" />
             <node concept="3F0ifn" id="7m_MLaK8Fm4" role="3EZMnx">
-              <property role="3F0ifm" value="Show Types:             " />
+              <property role="3F0ifm" value="show types:             " />
             </node>
             <node concept="3F0A7n" id="7m_MLaK8Fm5" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:7m_MLaK8FlX" resolve="showTypes" />
@@ -1187,7 +1178,7 @@
           <node concept="3EZMnI" id="6HHp2WmWVoa" role="3EZMnx">
             <node concept="2iRfu4" id="6HHp2WmWVob" role="2iSdaV" />
             <node concept="3F0ifn" id="6HHp2WmWVoc" role="3EZMnx">
-              <property role="3F0ifm" value="Only local declarations:" />
+              <property role="3F0ifm" value="only local declarations:" />
             </node>
             <node concept="3F0A7n" id="6HHp2WmWVod" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:6HHp2WmWVi9" resolve="referenceOnlyLocalStuff" />
@@ -1196,7 +1187,7 @@
           <node concept="3EZMnI" id="1KPsfaLHyY0" role="3EZMnx">
             <node concept="2iRfu4" id="1KPsfaLHyY1" role="2iSdaV" />
             <node concept="3F0ifn" id="1KPsfaLHyY2" role="3EZMnx">
-              <property role="3F0ifm" value="Inherit Scope from:     " />
+              <property role="3F0ifm" value="inherit scope from:     " />
             </node>
             <node concept="1iCGBv" id="1KPsfaLHzLs" role="3EZMnx">
               <ref role="1NtTu8" to="av4b:1KPsfaLHqZZ" resolve="scoper" />

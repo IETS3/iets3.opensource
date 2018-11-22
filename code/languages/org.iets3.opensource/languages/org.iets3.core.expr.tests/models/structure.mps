@@ -39,6 +39,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -191,6 +192,7 @@
       <property role="TrG5h" value="executeAutomatically" />
       <property role="IQ2nx" value="8811147530091989932" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="C3ikp72BTm" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="6HHp2WmWVi9" role="1TKVEl">
       <property role="TrG5h" value="referenceOnlyLocalStuff" />
