@@ -839,7 +839,7 @@
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="PrWs8" id="_kNv2Qd9FQ" role="PrDN$">
-      <ref role="PrY4T" node="_kNv2QbVfb" resolve="ITypeContextProvider" />
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1POec">
@@ -1985,7 +1985,7 @@
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
     </node>
     <node concept="PrWs8" id="_kNv2QgxVJ" role="PzmwI">
-      <ref role="PrY4T" node="_kNv2QbVfb" resolve="ITypeContextProvider" />
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="4AahbtUNHrQ">
@@ -2045,7 +2045,7 @@
   </node>
   <node concept="PlHQZ" id="_kNv2QbVfb">
     <property role="EcuMT" value="672388678117471179" />
-    <property role="TrG5h" value="ITypeContextProvider" />
+    <property role="TrG5h" value="IContextAssistantTypeProvider" />
   </node>
 </model>
 
