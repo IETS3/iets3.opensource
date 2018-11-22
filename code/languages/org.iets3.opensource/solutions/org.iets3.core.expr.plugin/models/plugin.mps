@@ -7540,10 +7540,16 @@
     <property role="3GE5qa" value="testExecution" />
     <property role="TrG5h" value="TestExecution" />
     <node concept="tT9cl" id="XC2si3iC_5" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hF$pMQx" resolve="IDEAMainMenu" />
+      <ref role="tU$_T" to="tprs:6gEJNBIezVz" resolve="MPSRunMenu" />
     </node>
     <node concept="fu6FP" id="4ye5wdhZuG9" role="ftER_">
       <node concept="3clFbS" id="4ye5wdhZuGb" role="2VODD2">
+        <node concept="fuyK3" id="3C$MSDk_i3G" role="3cqZAp">
+          <node concept="2YIFZM" id="3C$MSDk_hjC" role="fuByb">
+            <ref role="37wK5l" to="qkt:~Separator.getInstance():com.intellij.openapi.actionSystem.Separator" resolve="getInstance" />
+            <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
+          </node>
+        </node>
         <node concept="fuyK3" id="4BZFyk0pEV2" role="3cqZAp">
           <node concept="2ShNRf" id="4BZFyk0pEV3" role="fuByb">
             <node concept="HV5vD" id="4ye5wdhZKI7" role="2ShVmc">
@@ -7558,8 +7564,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4ye5wdhZKIU" role="3cqZAp" />
-        <node concept="3clFbH" id="4ye5wdhZKIA" role="3cqZAp" />
+        <node concept="fuyK3" id="C3ikp6Zlrs" role="3cqZAp">
+          <node concept="2YIFZM" id="C3ikp6Zlrt" role="fuByb">
+            <ref role="37wK5l" to="qkt:~Separator.getInstance():com.intellij.openapi.actionSystem.Separator" resolve="getInstance" />
+            <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -7573,7 +7583,7 @@
         <node concept="XkiVB" id="4ye5wdi0zPq" role="3cqZAp">
           <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
           <node concept="Xl_RD" id="4ye5wdi0$7s" role="37wK5m">
-            <property role="Xl_RC" value="Generator" />
+            <property role="Xl_RC" value="KernelF Tests: Generator" />
           </node>
         </node>
       </node>
@@ -7781,7 +7791,7 @@
         <node concept="XkiVB" id="4ye5wdi0_cn" role="3cqZAp">
           <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleAction" />
           <node concept="Xl_RD" id="4ye5wdi0_up" role="37wK5m">
-            <property role="Xl_RC" value="Interpreter" />
+            <property role="Xl_RC" value="KernelF Tests: Interpreter" />
           </node>
         </node>
       </node>
