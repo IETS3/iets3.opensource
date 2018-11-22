@@ -838,6 +838,9 @@
       <property role="IQ2ns" value="7089558164905593725" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="_kNv2Qd9FQ" role="PrDN$">
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1POec">
     <property role="TrG5h" value="EmptyExpression" />
@@ -1981,6 +1984,9 @@
     <node concept="PrWs8" id="DEFIbRuSDp" role="PzmwI">
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
     </node>
+    <node concept="PrWs8" id="_kNv2QgxVJ" role="PzmwI">
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4AahbtUNHrQ">
     <property role="EcuMT" value="5299123466384889590" />
@@ -2032,6 +2038,14 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="_kNv2PXITO">
+    <property role="EcuMT" value="672388678113750644" />
+    <property role="TrG5h" value="ITypeSupportsProposals" />
+  </node>
+  <node concept="PlHQZ" id="_kNv2QbVfb">
+    <property role="EcuMT" value="672388678117471179" />
+    <property role="TrG5h" value="IContextAssistantTypeProvider" />
   </node>
 </model>
 
