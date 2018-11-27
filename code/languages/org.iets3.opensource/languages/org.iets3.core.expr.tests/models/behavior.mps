@@ -974,8 +974,23 @@
                       </node>
                       <node concept="BsUDl" id="3YhAT14QmeJ" role="37vLTx">
                         <ref role="37wK5l" node="3YhAT14QasA" resolve="wrapException" />
-                        <node concept="Xl_RD" id="3YhAT14Qmuk" role="37wK5m">
-                          <property role="Xl_RC" value="invalid value detected" />
+                        <node concept="3cpWs3" id="51GICimQrz5" role="37wK5m">
+                          <node concept="2OqwBi" id="51GICimQwSA" role="3uHU7w">
+                            <node concept="2OqwBi" id="51GICimQtvk" role="2Oq$k0">
+                              <node concept="37vLTw" id="51GICimQt1u" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5E2FDFNID$X" resolve="ex" />
+                              </node>
+                              <node concept="2OwXpG" id="51GICimQueF" role="2OqNvi">
+                                <ref role="2Oxat5" to="2ahs:3Y6fbK1oUMZ" resolve="msg" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="51GICimQxoV" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="3YhAT14Qmuk" role="3uHU7B">
+                            <property role="Xl_RC" value="invalid value detected: " />
+                          </node>
                         </node>
                         <node concept="37vLTw" id="3YhAT14Qnix" role="37wK5m">
                           <ref role="3cqZAo" node="5E2FDFNID$X" resolve="ex" />

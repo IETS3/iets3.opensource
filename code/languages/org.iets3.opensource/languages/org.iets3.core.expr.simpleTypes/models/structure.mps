@@ -58,6 +58,9 @@
     <property role="EcuMT" value="7425695345928349207" />
     <property role="R4oN_" value="Represents the truth values of logic and Boolean algebra" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="35CkgbLkSIs" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sdnDbSlcHm">
     <property role="TrG5h" value="BooleanLiteral" />
