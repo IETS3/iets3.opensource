@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
+    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -378,6 +378,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
+      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
+        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
+      </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
@@ -2313,20 +2316,13 @@
             </node>
             <node concept="9H$SH" id="6VjyfUYekA3" role="33vP2m">
               <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
-              <node concept="2OqwBi" id="4qC1am7m4BW" role="9HWM5">
-                <node concept="liA8E" id="4qC1am7m4Tn" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
-                </node>
-                <node concept="2JrnkZ" id="4qC1am7m4C5" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4qC1am7m2Lw" role="2JrQYb">
-                    <node concept="13iPFW" id="4qC1am7m2pu" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="4qC1am7m3lw" role="2OqNvi" />
-                  </node>
-                </node>
+              <node concept="3rM5sP" id="6VjyfUYekA4" role="9HWM5">
+                <property role="3rM5sR" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="UYp_yFoiq2" role="3cqZAp" />
         <node concept="3clFbJ" id="6VjyfUYehd4" role="3cqZAp">
           <node concept="2OqwBi" id="6VjyfUYelqw" role="3clFbw">
             <node concept="2OqwBi" id="6VjyfUYekMg" role="2Oq$k0">
@@ -2422,7 +2418,7 @@
       <node concept="3clFbS" id="ljKHDc3CJp" role="3clF47">
         <node concept="3cpWs8" id="2_tP28kjNF8" role="3cqZAp">
           <node concept="3cpWsn" id="2_tP28kjNF9" role="3cpWs9">
-            <property role="TrG5h" value="model" />
+            <property role="TrG5h" value="mo" />
             <node concept="3uibUv" id="2_tP28kjNF7" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
@@ -2444,16 +2440,8 @@
             </node>
             <node concept="9H$SH" id="ljKHDcIbRV" role="33vP2m">
               <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
-              <node concept="2OqwBi" id="4qC1am7m6TK" role="9HWM5">
-                <node concept="liA8E" id="4qC1am7m7bo" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
-                </node>
-                <node concept="2JrnkZ" id="4qC1am7m6TT" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4qC1am7m61g" role="2JrQYb">
-                    <node concept="13iPFW" id="4qC1am7m5oD" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="4qC1am7m6_t" role="2OqNvi" />
-                  </node>
-                </node>
+              <node concept="3rM5sP" id="ljKHDcIbRW" role="9HWM5">
+                <property role="3rM5sR" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
               </node>
             </node>
           </node>
@@ -2493,7 +2481,7 @@
                   <node concept="3clFbC" id="ljKHDcIfNc" role="3clFbw">
                     <node concept="10Nm6u" id="ljKHDcIfNd" role="3uHU7w" />
                     <node concept="37vLTw" id="ljKHDcIfNe" role="3uHU7B">
-                      <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+                      <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
                     </node>
                   </node>
                 </node>
@@ -2506,7 +2494,7 @@
                       <node concept="2OqwBi" id="ljKHDcIgfr" role="3uHU7B">
                         <node concept="2OqwBi" id="ljKHDcIgfs" role="2Oq$k0">
                           <node concept="37vLTw" id="ljKHDcIgft" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+                            <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
                           </node>
                           <node concept="liA8E" id="ljKHDcIgfu" role="2OqNvi">
                             <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
@@ -2548,7 +2536,7 @@
           <node concept="3clFbC" id="2_tP28kjOat" role="3clFbw">
             <node concept="10Nm6u" id="2_tP28kjOa$" role="3uHU7w" />
             <node concept="37vLTw" id="2_tP28kjNZh" role="3uHU7B">
-              <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+              <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
             </node>
           </node>
         </node>
@@ -2561,7 +2549,7 @@
               <node concept="2OqwBi" id="2_tP28kjMZk" role="3uHU7B">
                 <node concept="2OqwBi" id="2_tP28kjM_t" role="2Oq$k0">
                   <node concept="37vLTw" id="2_tP28kjNFe" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2_tP28kjNF9" resolve="model" />
+                    <ref role="3cqZAo" node="2_tP28kjNF9" resolve="mo" />
                   </node>
                   <node concept="liA8E" id="2_tP28kjMPv" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
