@@ -255,6 +255,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -773,6 +774,31 @@
       <node concept="37vLTG" id="7_$HJtBvjqd" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="7_$HJtBvjqc" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="35CkgbMKKaN" role="jymVt" />
+    <node concept="3clFb_" id="35CkgbMKMzX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="memberNames" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="35CkgbMKM$0" role="3clF47">
+        <node concept="3clFbF" id="35CkgbMKNhr" role="3cqZAp">
+          <node concept="2OqwBi" id="35CkgbMKOlC" role="3clFbG">
+            <node concept="2OqwBi" id="35CkgbMKNsc" role="2Oq$k0">
+              <node concept="Xjq3P" id="35CkgbMKNhq" role="2Oq$k0" />
+              <node concept="2OwXpG" id="35CkgbMKNLp" role="2OqNvi">
+                <ref role="2Oxat5" node="7D7uZV2szuN" resolve="memberData" />
+              </node>
+            </node>
+            <node concept="3lbrtF" id="35CkgbMKOQw" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="35CkgbMKLwL" role="1B3o_S" />
+      <node concept="A3Dl8" id="35CkgbMKMve" role="3clF45">
+        <node concept="17QB3L" id="35CkgbMKMvg" role="A3Ik2" />
       </node>
     </node>
     <node concept="2tJIrI" id="2hAELMM9$Gg" role="jymVt" />

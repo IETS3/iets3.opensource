@@ -540,8 +540,8 @@
       <node concept="m$_yC" id="3HtH8S1CeZC" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
       </node>
-      <node concept="m$_yC" id="gnL8pN4HSe" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      <node concept="m$_yC" id="35CkgbOeHKL" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
       <node concept="3_J27D" id="7$nPgK7zjIR" role="m_cZH">
         <node concept="3Mxwew" id="7$nPgK7zjIS" role="3MwsjC">
@@ -7011,10 +7011,10 @@
         <property role="3LESm3" value="f0fd486f-8577-43e9-b671-3d118449c6e7" />
         <property role="2GAjPV" value="false" />
         <node concept="1E0d5M" id="3gmMi5syCU4" role="1E1XAP">
-          <ref role="1E0d5P" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          <ref role="1E0d5P" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
         </node>
         <node concept="1E0d5M" id="6HTRljZ_OXK" role="1E1XAP">
-          <ref role="1E0d5P" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          <ref role="1E0d5P" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
         </node>
         <node concept="3rtmxn" id="$iFvHj1vsX" role="3bR31x">
           <node concept="3LXTmp" id="$iFvHj1vsY" role="3rtmxm">
@@ -7178,7 +7178,7 @@
         <node concept="1SiIV0" id="6HTRljZ_OXI" role="3bR37C">
           <node concept="3bR9La" id="6HTRljZ_OXJ" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+            <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
       </node>
@@ -7996,9 +7996,6 @@
         <node concept="3Mxwey" id="3gmMi5swQF8" role="3MwsjC">
           <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
         </node>
-      </node>
-      <node concept="m$_yC" id="3gmMi5swQGT" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
       <node concept="m$_yC" id="3gmMi5swQKs" role="m$_yJ">
         <ref role="m$_y1" to="al5i:NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />

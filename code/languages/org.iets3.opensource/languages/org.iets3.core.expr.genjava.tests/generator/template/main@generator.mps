@@ -561,9 +561,6 @@
       <ref role="3lhOvi" node="21ieoTcCJQ7" resolve="MPSTestCase" />
       <ref role="2sgKRv" to="rw5i:68fuVw$Gvt2" resolve="KernelFRoot" />
     </node>
-    <node concept="1puMqW" id="14UVFsPX72I" role="1puA0r">
-      <ref role="1puQsG" node="14UVFsPX5PW" resolve="preprocessComments" />
-    </node>
     <node concept="1puMqW" id="3A3G7AS2fXB" role="1puA0r">
       <ref role="1puQsG" node="27xhIwhh4pd" resolve="preprocessNamedAssertRefs" />
     </node>
