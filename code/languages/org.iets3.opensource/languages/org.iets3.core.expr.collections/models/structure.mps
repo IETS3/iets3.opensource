@@ -360,7 +360,7 @@
     <property role="TrG5h" value="AnyOp" />
     <property role="34LRSv" value="any" />
     <property role="EcuMT" value="8872269265515619803" />
-    <property role="R4oN_" value="existiential quantifier (true if one is true)" />
+    <property role="R4oN_" value="existiential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="5$uffF3S6tT" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
@@ -1072,6 +1072,23 @@
       <property role="IQ2ns" value="527291771311128762" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="oG0sI$GPG4">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AllWithIndexOp" />
+    <property role="34LRSv" value="all_with_index" />
+    <property role="EcuMT" value="444732437356043012" />
+    <property role="R4oN_" value="universal quantifier (true if all elements are true) that passes the element's index into the closure as well" />
+    <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="oG0sI$GQkF">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="TwoArgPredicateCollectionOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="444732437356045611" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
   </node>
 </model>
 
