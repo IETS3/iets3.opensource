@@ -268,6 +268,9 @@
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
+    <node concept="PrWs8" id="6uwQRBjZeLm" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
     <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
@@ -284,6 +287,9 @@
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="6uwQRBkWoyn" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="1mDdTH3zTs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -831,6 +837,9 @@
     <property role="34LRSv" value="foldLeft" />
     <property role="R4oN_" value="fold left" />
     <ref role="1TJDcQ" node="4hLehKTZXcg" resolve="FoldOp" />
+    <node concept="PrWs8" id="6uwQRBlm9Vn" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcg">
     <property role="EcuMT" value="4931785860342338320" />
