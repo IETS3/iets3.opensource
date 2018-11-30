@@ -23,6 +23,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
@@ -194,11 +195,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -247,7 +243,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -4022,81 +4017,47 @@
           <node concept="37vLTw" id="4e_7uAsLni2" role="37wK5m">
             <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
           </node>
-          <node concept="3cpWs3" id="33mFrumM3sR" role="37wK5m">
-            <node concept="2OqwBi" id="33mFrumM3sS" role="3uHU7w">
-              <node concept="37vLTw" id="33mFrumM3sT" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RzljfObxdk" resolve="currentState" />
-              </node>
-              <node concept="3TrcHB" id="33mFrumM3sU" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="33mFrumM3sV" role="3uHU7B">
-              <node concept="3cpWs3" id="33mFrumM3sW" role="3uHU7B">
-                <node concept="Xl_RD" id="33mFrumM3sX" role="3uHU7B">
-                  <property role="Xl_RC" value="No transition found for " />
-                </node>
-                <node concept="2OqwBi" id="33mFrumM3sY" role="3uHU7w">
-                  <node concept="37vLTw" id="33mFrumM3sZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3Y6fbK1oUim" resolve="event" />
+          <node concept="2ShNRf" id="UwUtc3K6z3" role="37wK5m">
+            <node concept="1pGfFk" id="UwUtc3K7o2" role="2ShVmc">
+              <ref role="37wK5l" to="oq0c:6C0OSEaHpjh" resolve="MessageValue" />
+              <node concept="3cpWs3" id="33mFrumM3sR" role="37wK5m">
+                <node concept="2OqwBi" id="33mFrumM3sS" role="3uHU7w">
+                  <node concept="37vLTw" id="33mFrumM3sT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1RzljfObxdk" resolve="currentState" />
                   </node>
-                  <node concept="3TrcHB" id="33mFrumM3t0" role="2OqNvi">
+                  <node concept="3TrcHB" id="33mFrumM3sU" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
-              </node>
-              <node concept="Xl_RD" id="33mFrumM3t1" role="3uHU7w">
-                <property role="Xl_RC" value=" while in state " />
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs3" id="1RzljfOb$io" role="37wK5m">
-            <node concept="2OqwBi" id="1RzljfOb$Qk" role="3uHU7w">
-              <node concept="37vLTw" id="1RzljfOb$Am" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RzljfObxdk" resolve="currentState" />
-              </node>
-              <node concept="3TrcHB" id="1RzljfOb_ix" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="1RzljfObzo2" role="3uHU7B">
-              <node concept="3cpWs3" id="1RzljfObxGH" role="3uHU7B">
-                <node concept="Xl_RD" id="1RzljfObws5" role="3uHU7B">
-                  <property role="Xl_RC" value="No transition found for " />
-                </node>
-                <node concept="2OqwBi" id="1RzljfOby46" role="3uHU7w">
-                  <node concept="37vLTw" id="1RzljfObxKN" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3Y6fbK1oUim" resolve="event" />
+                <node concept="3cpWs3" id="33mFrumM3sV" role="3uHU7B">
+                  <node concept="3cpWs3" id="33mFrumM3sW" role="3uHU7B">
+                    <node concept="Xl_RD" id="33mFrumM3sX" role="3uHU7B">
+                      <property role="Xl_RC" value="No transition found for " />
+                    </node>
+                    <node concept="2OqwBi" id="33mFrumM3sY" role="3uHU7w">
+                      <node concept="37vLTw" id="33mFrumM3sZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3Y6fbK1oUim" resolve="event" />
+                      </node>
+                      <node concept="3TrcHB" id="33mFrumM3t0" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3TrcHB" id="1RzljfObyFp" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="Xl_RD" id="33mFrumM3t1" role="3uHU7w">
+                    <property role="Xl_RC" value=" while in state " />
                   </node>
                 </node>
               </node>
-              <node concept="Xl_RD" id="1RzljfObzoc" role="3uHU7w">
-                <property role="Xl_RC" value=" while in state " />
-              </node>
-            </node>
-          </node>
-          <node concept="3K4zz7" id="4e_7uAsLn_G" role="37wK5m">
-            <node concept="3y3z36" id="4e_7uAsLnvx" role="3K4Cdx">
-              <node concept="10Nm6u" id="4e_7uAsLnvy" role="3uHU7w" />
-              <node concept="2OqwBi" id="4e_7uAsLnvz" role="3uHU7B">
-                <node concept="37vLTw" id="4e_7uAsLnv$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
-                </node>
-                <node concept="I4A8Y" id="4e_7uAsLnv_" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2Cyo7$6iSn6" role="3K4E3e">
-              <node concept="37vLTw" id="2Cyo7$6iQNS" role="2Oq$k0">
+              <node concept="37vLTw" id="UwUtc3K8q1" role="37wK5m">
                 <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
               </node>
-              <node concept="2$mYbS" id="2Cyo7$6iTHf" role="2OqNvi" />
             </node>
-            <node concept="Xl_RD" id="78hTg1_g6$P" role="3K4GZi">
-              <property role="Xl_RC" value="&lt;node not in model&gt;" />
+          </node>
+          <node concept="2OqwBi" id="UwUtc3Kab3" role="37wK5m">
+            <node concept="37vLTw" id="UwUtc3K9K7" role="2Oq$k0">
+              <ref role="3cqZAo" node="3Y6fbK1oUh$" resolve="nodeWithError" />
             </node>
+            <node concept="2$mYbS" id="UwUtc3KbDu" role="2OqNvi" />
           </node>
           <node concept="37vLTw" id="5E2FDFNJ8v_" role="37wK5m">
             <ref role="3cqZAo" node="4_qY3E5j7S5" resolve="context" />

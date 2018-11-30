@@ -818,5 +818,12 @@
       <node concept="l2Vlx" id="6vzDuv8YQqG" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="7EYe2PMbncP">
+    <property role="3GE5qa" value="quantifiers" />
+    <ref role="1XX52x" to="l462:7EYe2PMbncr" resolve="TemporalQuantifier" />
+    <node concept="PMmxH" id="7EYe2PMbncR" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 

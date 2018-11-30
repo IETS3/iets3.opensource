@@ -121,6 +121,9 @@
     <node concept="PrWs8" id="1VmWkC0$cm9" role="PzmwI">
       <ref role="PrY4T" to="zzzn:1VmWkC0z1FS" resolve="IAllowLocalVariables" />
     </node>
+    <node concept="PrWs8" id="4AahbtVpikr" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
     <property role="TrG5h" value="FunctionCall" />
@@ -356,6 +359,9 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="3KgQFIke4QZ" role="PzmwI">
       <ref role="PrY4T" node="3KgQFIke4um" resolve="IRecordType" />
+    </node>
+    <node concept="PrWs8" id="5FZDsYwdPtf" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
     <node concept="1TJgyj" id="7D7uZV2dYz3" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -627,6 +633,9 @@
     <node concept="PrWs8" id="60Qa1k_uJKS" role="PzmwI">
       <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
     </node>
+    <node concept="PrWs8" id="_kNv2PY6eD" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:_kNv2PXITO" resolve="ITypeSupportsProposals" />
+    </node>
     <node concept="1TJgyj" id="67Y8mp$DN3N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
@@ -688,6 +697,9 @@
     <node concept="PrWs8" id="2iOyL3Byu6r" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="4AahbtVqNUR" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="xu7xcKinTJ">
     <property role="3GE5qa" value="record" />
@@ -713,6 +725,9 @@
     </node>
     <node concept="PrWs8" id="6GySMNkKPeT" role="PrDN$">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
+    <node concept="PrWs8" id="4AahbtVpil6" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:4AahbtUNHrQ" resolve="IProgramLocationProvider" />
     </node>
     <node concept="1TJgyj" id="xu7xcKioz5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
@@ -95,7 +96,7 @@
   <node concept="1TIwiD" id="3vxfdxbcs9r">
     <property role="EcuMT" value="4026566441518088795" />
     <property role="TrG5h" value="Group" />
-    <property role="34LRSv" value="group" />
+    <property role="34LRSv" value="messagegroup" />
     <property role="R4oN_" value="named group of messages (namespace)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3vxfdxbcs9s" role="PzmwI">
@@ -103,6 +104,9 @@
     </node>
     <node concept="PrWs8" id="3vxfdxbcs9_" role="PzmwI">
       <ref role="PrY4T" node="3vxfdxbcs9v" resolve="IMessageNamespaceContent" />
+    </node>
+    <node concept="PrWs8" id="VFjlN5$Jc0" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="3vxfdxbcs9v">
@@ -187,6 +191,11 @@
     </node>
     <node concept="PrWs8" id="3vxfdxbdbUT" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyi" id="4AahbtV9FsC" role="1TKVEl">
+      <property role="IQ2nx" value="5299123466390648616" />
+      <property role="TrG5h" value="messageValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3vxfdxbdUeD">
@@ -304,6 +313,34 @@
     <property role="34LRSv" value="it" />
     <property role="R4oN_" value="value on which to coerce" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtULQ_v">
+    <property role="EcuMT" value="5299123466384402783" />
+    <property role="TrG5h" value="MessageValueOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4AahbtULQ_w" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4AahbtULQ_Z">
+    <property role="EcuMT" value="5299123466384402815" />
+    <property role="TrG5h" value="MessageValueTextOp" />
+    <property role="34LRSv" value="text" />
+    <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtURbB3">
+    <property role="EcuMT" value="5299123466385799619" />
+    <property role="TrG5h" value="MessageValueLocationOp" />
+    <property role="34LRSv" value="loc" />
+    <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtV32GF">
+    <property role="EcuMT" value="5299123466388908843" />
+    <property role="TrG5h" value="MessageValueDataOp" />
+    <property role="34LRSv" value="data" />
+    <ref role="1TJDcQ" node="4AahbtULQ_v" resolve="MessageValueOp" />
   </node>
 </model>
 

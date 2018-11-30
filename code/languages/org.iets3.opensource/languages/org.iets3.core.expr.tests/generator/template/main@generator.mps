@@ -619,8 +619,8 @@
           <node concept="3clFbF" id="hHq$I51" role="3cqZAp">
             <node concept="2OqwBi" id="hSMc1SW" role="3clFbG">
               <node concept="30H73N" id="hHq$I52" role="2Oq$k0" />
-              <node concept="2qgKlT" id="hSQPFVO" role="2OqNvi">
-                <ref role="37wK5l" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
+              <node concept="2qgKlT" id="6VjyfUYeuka" role="2OqNvi">
+                <ref role="37wK5l" to="xk6s:6VjyfUYebfH" resolve="getSimpleClassNameForInterpreter" />
               </node>
             </node>
           </node>

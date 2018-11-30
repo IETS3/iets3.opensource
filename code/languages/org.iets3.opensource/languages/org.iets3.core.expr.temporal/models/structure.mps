@@ -437,5 +437,34 @@
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7EYe2PMbncr">
+    <property role="EcuMT" value="8844568486042497819" />
+    <property role="TrG5h" value="TemporalQuantifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="quantifiers" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+  </node>
+  <node concept="1TIwiD" id="7EYe2PMbII_">
+    <property role="EcuMT" value="8844568486042594213" />
+    <property role="3GE5qa" value="quantifiers" />
+    <property role="TrG5h" value="AllTemporalQuantifier" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="7EYe2PMbncr" resolve="TemporalQuantifier" />
+  </node>
+  <node concept="1TIwiD" id="7EYe2PMbIIA">
+    <property role="EcuMT" value="8844568486042594214" />
+    <property role="3GE5qa" value="quantifiers" />
+    <property role="TrG5h" value="AnyTemporalQuantifier" />
+    <property role="34LRSv" value="any" />
+    <ref role="1TJDcQ" node="7EYe2PMbncr" resolve="TemporalQuantifier" />
+  </node>
+  <node concept="1TIwiD" id="7EYe2PMbIIB">
+    <property role="EcuMT" value="8844568486042594215" />
+    <property role="3GE5qa" value="quantifiers" />
+    <property role="TrG5h" value="NoneTemporalQuantifier" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" node="7EYe2PMbncr" resolve="TemporalQuantifier" />
+  </node>
 </model>
 

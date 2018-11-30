@@ -491,6 +491,9 @@
     <node concept="PrWs8" id="4qVjx3kqGdz" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="44yGPKl4JxT" role="PzmwI">
+      <ref role="PrY4T" node="ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
     <node concept="PrWs8" id="5WtF_93$On" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>
@@ -730,6 +733,9 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="IAttemptType" />
     <property role="EcuMT" value="1919538606562038159" />
+    <node concept="PrWs8" id="6C0OSEaG_oQ" role="PrDN$">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="TrG5h" value="AttemptType" />
@@ -831,6 +837,9 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7089558164905593725" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="_kNv2Qd9FQ" role="PrDN$">
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1POec">
@@ -1975,6 +1984,68 @@
     <node concept="PrWs8" id="DEFIbRuSDp" role="PzmwI">
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
     </node>
+    <node concept="PrWs8" id="_kNv2QgxVJ" role="PzmwI">
+      <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4AahbtUNHrQ">
+    <property role="EcuMT" value="5299123466384889590" />
+    <property role="TrG5h" value="IProgramLocationProvider" />
+    <property role="3GE5qa" value="loc" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtURxgH">
+    <property role="EcuMT" value="5299123466385888301" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationType" />
+    <property role="34LRSv" value="loc" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtURx$c">
+    <property role="EcuMT" value="5299123466385889548" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4AahbtUVx5l" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4AahbtUR$iZ">
+    <property role="EcuMT" value="5299123466385900735" />
+    <property role="3GE5qa" value="loc" />
+    <property role="TrG5h" value="ProgramLocationUrlOp" />
+    <property role="34LRSv" value="url" />
+    <ref role="1TJDcQ" node="4AahbtURx$c" resolve="ProgramLocationOp" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtULQzU">
+    <property role="EcuMT" value="5299123466384402682" />
+    <property role="TrG5h" value="MessageValueType" />
+    <property role="34LRSv" value="message" />
+    <property role="3GE5qa" value="messages" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="4AahbtVAEwi">
+    <property role="EcuMT" value="5299123466398246930" />
+    <property role="TrG5h" value="InlineMessage" />
+    <property role="34LRSv" value="message" />
+    <property role="3GE5qa" value="messages" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4AahbtVAEwj" role="1TKVEi">
+      <property role="IQ2ns" value="5299123466398246931" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="_kNv2PXITO">
+    <property role="EcuMT" value="672388678113750644" />
+    <property role="TrG5h" value="ITypeSupportsProposals" />
+  </node>
+  <node concept="PlHQZ" id="_kNv2QbVfb">
+    <property role="EcuMT" value="672388678117471179" />
+    <property role="TrG5h" value="IContextAssistantTypeProvider" />
   </node>
 </model>
 

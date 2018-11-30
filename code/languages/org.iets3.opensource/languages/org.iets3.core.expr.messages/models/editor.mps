@@ -16,6 +16,7 @@
     <import index="kelk" ref="r:1a11ce0d-cf54-4682-9b8a-ab4ee15fc129(org.iets3.core.expr.messages.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -39,6 +40,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -60,6 +64,9 @@
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -74,6 +81,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -192,6 +200,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
@@ -548,8 +559,8 @@
       <node concept="2iRkQZ" id="3vxfdxbcDNX" role="2iSdaV" />
       <node concept="3EZMnI" id="3vxfdxbcDNB" role="3EZMnx">
         <node concept="2iRfu4" id="3vxfdxbcDNC" role="2iSdaV" />
-        <node concept="3F0ifn" id="3vxfdxbcDNz" role="3EZMnx">
-          <property role="3F0ifm" value="group" />
+        <node concept="PMmxH" id="VFjlN5$ZY5" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="3vxfdxbcDNQ" role="3EZMnx">
@@ -670,6 +681,14 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1kHk_G" id="4AahbtV9GlW" role="3EZMnx">
+        <property role="ZjSer" value="!" />
+        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue" />
+        <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
+        <node concept="11L4FC" id="4AahbtVaxPr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="2iRfu4" id="3vxfdxbjbRV" role="2iSdaV" />
@@ -937,6 +956,15 @@
     <ref role="1XX52x" to="kelk:3vxfdxbnLby" resolve="CoercionIt" />
     <node concept="3F0ifn" id="3vxfdxbnLbY" role="2wV5jI">
       <property role="3F0ifm" value="it" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="VFjlN5HOyp">
+    <ref role="aqKnT" to="kelk:3vxfdxbcS_H" resolve="EmptyMessageContent" />
+  </node>
+  <node concept="24kQdi" id="4AahbtULQ_V">
+    <ref role="1XX52x" to="kelk:4AahbtULQ_v" resolve="MessageValueOp" />
+    <node concept="PMmxH" id="4AahbtULQ_X" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

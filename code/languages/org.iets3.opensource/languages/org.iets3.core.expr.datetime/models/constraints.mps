@@ -36,9 +36,13 @@
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -140,6 +144,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="_kNv2PMi2x">
+    <property role="3GE5qa" value="date" />
+    <ref role="1M2myG" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+    <node concept="EnEH3" id="_kNv2PMi2y" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:3nGzaxURa4k" resolve="dd" />
     </node>
   </node>
 </model>

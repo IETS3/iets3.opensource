@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.stateful.devkit" uuid="b2a65b84-7ec9-404f-8602-f16394bb1d98">
+  <exported-language name="fbba5118-5fc6-49ff-9c3b-0b4469830440(org.iets3.core.expr.mutable)" />
+  <exported-language name="50b470e7-14ad-46c3-b540-4586f56d2e9c(org.iets3.core.expr.process)" />
+  <exported-language name="cd87ddab-6434-448e-a011-1e1c898de18e(org.iets3.core.expr.statemachines)" />
+  <exported-solutions>
+    <exported-solution>1c56daef-6a92-4d68-8014-fbbd0240d553(org.iets3.core.expr.mutable.interpreter)</exported-solution>
+    <exported-solution>0a9d9bba-15ce-45fa-ba85-2c2dddcd1ff0(org.iets3.core.expr.process.interpreter)</exported-solution>
+    <exported-solution>b10553c8-9d54-444d-bb92-a27be823b74f(org.iets3.core.expr.statemachines.interpreter)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

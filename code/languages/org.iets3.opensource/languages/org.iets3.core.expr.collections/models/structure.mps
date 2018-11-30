@@ -268,8 +268,8 @@
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
-    <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    <node concept="PrWs8" id="6uwQRBjZeLm" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
@@ -288,8 +288,8 @@
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
-    <node concept="PrWs8" id="7SZA7UdrNq5" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
+    <node concept="PrWs8" id="6uwQRBkWoyn" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="1mDdTH3zTs" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
@@ -360,7 +360,7 @@
     <property role="TrG5h" value="AnyOp" />
     <property role="34LRSv" value="any" />
     <property role="EcuMT" value="8872269265515619803" />
-    <property role="R4oN_" value="existiential quantifier (true if one is true)" />
+    <property role="R4oN_" value="existiential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
@@ -543,6 +543,9 @@
     <node concept="PrWs8" id="4Q4DxjDbyr0" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
     </node>
+    <node concept="PrWs8" id="oG0sIyMLQo" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Q4DxjD$qtz">
     <property role="3GE5qa" value="collection.numeric" />
@@ -622,6 +625,9 @@
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
     <node concept="PrWs8" id="6HHp2WnvluL" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
+    </node>
+    <node concept="PrWs8" id="oG0sIzosGn" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="1RHynufnBSV">
@@ -729,15 +735,15 @@
   <node concept="1TIwiD" id="4bUWUHViF9">
     <property role="EcuMT" value="75413091695536841" />
     <property role="3GE5qa" value="collection.rnd" />
-    <property role="TrG5h" value="CounterExpr" />
-    <property role="34LRSv" value="counter" />
-    <property role="R4oN_" value="returns how often the lambda has been executed" />
+    <property role="TrG5h" value="IndexExpr" />
+    <property role="34LRSv" value="index" />
+    <property role="R4oN_" value="returns the index of the element being processed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="7SZA7Udl6Fm">
     <property role="EcuMT" value="9097157441616112342" />
     <property role="3GE5qa" value="collection.rnd" />
-    <property role="TrG5h" value="IHasRndCounter" />
+    <property role="TrG5h" value="IProvideIndex" />
   </node>
   <node concept="1TIwiD" id="7SZA7UdzZKU">
     <property role="3GE5qa" value="collection" />
@@ -752,9 +758,6 @@
       <property role="20kJfa" value="arg" />
       <ref role="20lvS9" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
       <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
-    </node>
-    <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
     </node>
     <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -834,6 +837,9 @@
     <property role="34LRSv" value="foldLeft" />
     <property role="R4oN_" value="fold left" />
     <ref role="1TJDcQ" node="4hLehKTZXcg" resolve="FoldOp" />
+    <node concept="PrWs8" id="6uwQRBlm9Vn" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcg">
     <property role="EcuMT" value="4931785860342338320" />
@@ -843,9 +849,6 @@
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4hLehKU04bM" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IHasRndCounter" />
-    </node>
     <node concept="PrWs8" id="4hLehKU05cE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
@@ -1063,6 +1066,31 @@
       <property role="IQ2ns" value="527291771311128762" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="oG0sI$GPG4">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AllWithIndexOp" />
+    <property role="34LRSv" value="all_with_index" />
+    <property role="EcuMT" value="444732437356043012" />
+    <property role="R4oN_" value="universal quantifier (true if all elements are true) that passes the element's index into the closure as well" />
+    <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="oG0sI$GQkF">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="TwoArgPredicateCollectionOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="444732437356045611" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="3SMYSUUHlJJ">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AnyWithIndexOp" />
+    <property role="34LRSv" value="any_with_index" />
+    <property role="EcuMT" value="4481921169623440367" />
+    <property role="R4oN_" value="existiential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
+    <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
   </node>
 </model>
 

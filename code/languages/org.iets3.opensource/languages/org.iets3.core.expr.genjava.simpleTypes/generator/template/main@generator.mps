@@ -387,7 +387,7 @@
   </node>
   <node concept="jVnub" id="7bZFIimgIJh">
     <property role="TrG5h" value="SwitchExpressionSimpleTypes" />
-    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression" />
+    <ref role="phYkn" to="rw5i:7bZFIimgIJh" resolve="Expression2Expression" />
     <node concept="3aamgX" id="6IxV2nShci0" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />

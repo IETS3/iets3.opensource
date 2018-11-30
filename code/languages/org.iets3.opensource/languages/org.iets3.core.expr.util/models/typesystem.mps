@@ -183,6 +183,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -1449,12 +1452,19 @@
               <ref role="ehGHo" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
             </node>
           </node>
-          <node concept="2OqwBi" id="8XWEte6zuQ" role="33vP2m">
-            <node concept="1YBJjd" id="8XWEte6zuR" role="2Oq$k0">
-              <ref role="1YBMHb" node="8XWEte6nsv" resolve="iMultiDecTab" />
+          <node concept="2OqwBi" id="5Jw72wd6Ua0" role="33vP2m">
+            <node concept="2OqwBi" id="8XWEte6zuQ" role="2Oq$k0">
+              <node concept="1YBJjd" id="8XWEte6zuR" role="2Oq$k0">
+                <ref role="1YBMHb" node="8XWEte6nsv" resolve="iMultiDecTab" />
+              </node>
+              <node concept="2qgKlT" id="7FuUjk_5fX$" role="2OqNvi">
+                <ref role="37wK5l" to="wthy:7FuUjk_57S0" resolve="resultColDefs" />
+              </node>
             </node>
-            <node concept="2qgKlT" id="7FuUjk_5fX$" role="2OqNvi">
-              <ref role="37wK5l" to="wthy:7FuUjk_57S0" resolve="resultColDefs" />
+            <node concept="v3k3i" id="5Jw72wd6V3S" role="2OqNvi">
+              <node concept="chp4Y" id="5Jw72wd6VHD" role="v3oSu">
+                <ref role="cht4Q" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+              </node>
             </node>
           </node>
         </node>
