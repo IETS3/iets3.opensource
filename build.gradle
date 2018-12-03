@@ -56,7 +56,14 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        version = GitBasedVersioning.getVersionWithCount("0", "1", System.env.BUILD_NUMBER.toInteger())
+        String branch = GitBasedVersioning.gitBranch
+
+        def buildNumber = System.env.BUILD_NUMBER.toInteger()
+        if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+            version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
+        } else {
+            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
+        }
         println "##teamcity[buildNumber '${version}']"
     } else {
         println "Local build detected, version will be SNAPSHOT"
