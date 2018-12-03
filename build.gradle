@@ -32,6 +32,8 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
+def major = "0"
+def minor = "1"
 
 // Dependency versions
 ext.mpsVersion = '2018.3-RC1'
@@ -56,11 +58,18 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
     if (ciBuild) {
-        version = GitBasedVersioning.getVersionWithCount("0", "2", System.env.BUILD_NUMBER.toInteger())
+        String branch = GitBasedVersioning.gitBranch
+
+        def buildNumber = System.env.BUILD_NUMBER.toInteger()
+        if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+            version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
+        } else {
+            version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
+        }
         println "##teamcity[buildNumber '${version}']"
     } else {
         println "Local build detected, version will be SNAPSHOT"
-        version = "1.0-SNAPSHOT"
+        version = "$major.$minor-SNAPSHOT"
     }
 }
 
