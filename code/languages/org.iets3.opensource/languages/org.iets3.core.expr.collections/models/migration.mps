@@ -2,7 +2,7 @@
 <model ref="r:abf78dfc-26ee-400f-8191-4e500c2e26a8(org.iets3.core.expr.collections.migration)">
   <persistence version="9" />
   <languages>
-    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="0" />
+    <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="1" />
   </languages>
   <imports />
   <registry>

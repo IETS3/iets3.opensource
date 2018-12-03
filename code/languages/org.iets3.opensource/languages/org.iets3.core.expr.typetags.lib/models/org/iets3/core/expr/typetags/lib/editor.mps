@@ -2,7 +2,7 @@
 <model ref="r:9122e466-3f90-456e-ad8f-a1e7d08a365f(org.iets3.core.expr.typetags.lib.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
   </languages>
   <imports>
     <import index="f3o0" ref="r:1c0a8177-746c-4e40-aabd-b06f37e1ab08(org.iets3.core.expr.typetags.lib.structure)" implicit="true" />

@@ -4,7 +4,7 @@
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -648,7 +648,6 @@
     <property role="TrG5h" value="SolverTaskFactory" />
     <node concept="2tJIrI" id="7rOSrvnISY1" role="jymVt" />
     <node concept="3clFb_" id="7rOSrvnIT4g" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="createSolverTask" />
       <node concept="3Tqbb2" id="7rOSrvnITfy" role="3clF45">
         <ref role="ehGHo" to="l80j:7rOSrvnFUQX" resolve="AbstractSolverTask" />
@@ -668,7 +667,6 @@
     </node>
     <node concept="2tJIrI" id="XhdFKvOkR2" role="jymVt" />
     <node concept="3clFb_" id="7rOSrvnJ4j5" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="applicableConcepts" />
       <node concept="A3Dl8" id="7rOSrvnJ4sk" role="3clF45">
         <node concept="3bZ5Sz" id="7rOSrvnJ4z5" role="A3Ik2" />
@@ -1220,7 +1218,6 @@
     <property role="TrG5h" value="SolverAPI" />
     <node concept="2tJIrI" id="6rcydJjju7$" role="jymVt" />
     <node concept="3clFb_" id="6rcydJjjumU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getExpressionFactory" />
       <node concept="3clFbS" id="6rcydJjjumX" role="3clF47" />
@@ -1241,7 +1238,6 @@
     </node>
     <node concept="2tJIrI" id="1BirSAt78N$" role="jymVt" />
     <node concept="3clFb_" id="5$uffF3IaCQ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getSortFactory" />
       <node concept="3uibUv" id="5$uffF3IaNf" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -1261,7 +1257,6 @@
     </node>
     <node concept="2tJIrI" id="1BirSAt7nHV" role="jymVt" />
     <node concept="3clFb_" id="1BirSAt7d_P" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="registerStringConstant" />
       <node concept="37vLTG" id="1BirSAt7nC_" role="3clF46">
         <property role="TrG5h" value="value" />
@@ -1858,7 +1853,6 @@
     <property role="TrG5h" value="SMTLIBTranslatorFactory" />
     <node concept="2tJIrI" id="6rcydJjd89V" role="jymVt" />
     <node concept="3clFb_" id="6rcydJjd7SU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getSMTLIBTranslators" />
       <node concept="3Tm1VV" id="6rcydJjd7SX" role="1B3o_S" />
       <node concept="3clFbS" id="6rcydJjd7SY" role="3clF47" />
@@ -1875,7 +1869,6 @@
     <property role="TrG5h" value="SMTLIBTranslatorDriver" />
     <node concept="2tJIrI" id="6rcydJjj1C_" role="jymVt" />
     <node concept="3clFb_" id="6rcydJjj1OV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="choose" />
       <node concept="3clFbS" id="6rcydJjj1OY" role="3clF47" />

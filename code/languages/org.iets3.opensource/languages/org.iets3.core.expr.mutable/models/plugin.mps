@@ -4,7 +4,7 @@
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
@@ -882,7 +882,6 @@
     <property role="TrG5h" value="IBoxValue" />
     <node concept="2tJIrI" id="4lULzfkKSd8" role="jymVt" />
     <node concept="3clFb_" id="4lULzfkKSdk" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getValue" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
