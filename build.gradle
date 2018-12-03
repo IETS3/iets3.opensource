@@ -32,6 +32,8 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
+def major = "0"
+def minor = "1"
 
 // Dependency versions
 ext.mpsVersion = '2018.2.6'
@@ -67,7 +69,7 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         println "##teamcity[buildNumber '${version}']"
     } else {
         println "Local build detected, version will be SNAPSHOT"
-        version = "1.0-SNAPSHOT"
+        version = "$major.$minor-SNAPSHOT"
     }
 }
 
