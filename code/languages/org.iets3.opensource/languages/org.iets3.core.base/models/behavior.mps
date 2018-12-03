@@ -2,11 +2,11 @@
 <model ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -33,7 +33,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -107,9 +106,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -239,7 +236,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -344,7 +341,6 @@
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5YygIlbih$m" resolve="allowUmlaute" />
       <node concept="3Tm1VV" id="5YygIlbjlOR" role="1B3o_S" />
@@ -1102,7 +1098,6 @@
     <property role="TrG5h" value="IResult" />
     <node concept="2tJIrI" id="5zG5$Lyex1Q" role="jymVt" />
     <node concept="3clFb_" id="5zG5$Lyex2e" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isOk" />
       <node concept="3clFbS" id="5zG5$Lyex2h" role="3clF47" />
@@ -1110,7 +1105,6 @@
       <node concept="10P_77" id="5zG5$Lyex23" role="3clF45" />
     </node>
     <node concept="3clFb_" id="5zG5$LyexiK" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getErrorMessage" />
       <node concept="3clFbS" id="5zG5$LyexiN" role="3clF47" />
@@ -1120,7 +1114,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="5zG5$LyyJxU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getDescription" />
       <node concept="3clFbS" id="5zG5$LyyJxX" role="3clF47" />
@@ -1141,7 +1134,6 @@
     <property role="TrG5h" value="IPersistentResult" />
     <node concept="2tJIrI" id="3UrItPob3Yw" role="jymVt" />
     <node concept="3clFb_" id="3UrItPob3YH" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="writeToFile" />
       <node concept="3clFbS" id="3UrItPob3YI" role="3clF47" />
@@ -1251,7 +1243,6 @@
   <node concept="3HP615" id="5JinICPcACI">
     <property role="TrG5h" value="IResultWithTargetNodes" />
     <node concept="3clFb_" id="5JinICPcAPp" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getMessageTargetNodes" />
       <node concept="3clFbS" id="5JinICPcAPs" role="3clF47" />
@@ -1306,7 +1297,6 @@
       <property role="TrG5h" value="allowEverythingExceptWhitespace" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="64w0Iq2$5zF" role="1B3o_S" />
       <node concept="10P_77" id="64w0Iq2$5zG" role="3clF45" />
       <node concept="3clFbS" id="64w0Iq2$5zH" role="3clF47">
@@ -1321,7 +1311,6 @@
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="5YygIlbih$n" role="1B3o_S" />
       <node concept="10P_77" id="5YygIlbih$o" role="3clF45" />
       <node concept="3clFbS" id="5YygIlbih$p" role="3clF47">

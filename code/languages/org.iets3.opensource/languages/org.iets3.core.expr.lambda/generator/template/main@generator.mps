@@ -2,7 +2,7 @@
 <model ref="r:555ebf62-6128-43ec-840c-d35bb3ca55e4(org.iets3.core.expr.lambda.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

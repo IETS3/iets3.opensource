@@ -2,7 +2,7 @@
 <model ref="r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
@@ -197,9 +197,6 @@
     <property role="TrG5h" value="RequirementsDocSection" />
     <property role="EcuMT" value="5151426049053572067" />
     <ref role="1TJDcQ" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
-    <node concept="PrWs8" id="4tXyFaWy_TJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="7Dcax7AgRv3" role="PzmwI">
       <ref role="PrY4T" node="7Dcax7AgAPg" resolve="IReqDocContent" />
     </node>
@@ -364,9 +361,6 @@
     <ref role="1TJDcQ" node="4tXyFaWylGs" resolve="Tag" />
     <node concept="PrWs8" id="5Zn2KFQTtnW" role="PzmwI">
       <ref role="PrY4T" node="5Zn2KFQSRwl" resolve="IRequirementsRelation" />
-    </node>
-    <node concept="PrWs8" id="7P_2dOW6WNj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="3wHxcnxC3W5">

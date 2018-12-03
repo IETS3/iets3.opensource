@@ -2,7 +2,7 @@
 <model ref="r:8a68dc0a-09ac-4a20-bd08-c5ca350aacc6(org.iets3.core.expr.natlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -139,9 +139,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -636,7 +633,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEditorCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="ywgKCSJRuy" role="1B3o_S" />
       <node concept="3uibUv" id="ywgKCSJRu$" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
@@ -694,7 +690,6 @@
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="setCellId" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
                     <node concept="3Tm1VV" id="4iVn6hSWsxV" role="1B3o_S" />
                     <node concept="3cqZAl" id="4iVn6hSWsxX" role="3clF45" />
                     <node concept="37vLTG" id="4iVn6hSWsxY" role="3clF46">
@@ -1766,7 +1761,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEmptyCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="2C8vy9yUdcQ" role="1B3o_S" />
       <node concept="3uibUv" id="2C8vy9yUdcR" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
@@ -1825,7 +1819,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getNoTargetText" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="17QB3L" id="2C8vy9yUddd" role="3clF45" />
       <node concept="3Tmbuc" id="2C8vy9yUdde" role="1B3o_S" />
       <node concept="3clFbS" id="2C8vy9yUddf" role="3clF47">

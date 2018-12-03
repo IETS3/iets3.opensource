@@ -2,9 +2,9 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
     <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="-1" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
   </languages>
@@ -22,10 +22,12 @@
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
+        <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -121,10 +123,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -389,6 +393,7 @@
             </node>
           </node>
         </node>
+        <node concept="pUk6x" id="1D8fMMrKjdM" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="5Ky8UT4nqm_" role="39821P">
         <ref role="m_rDy" node="5Ky8UT4nhy3" resolve="org.iets3.core.expr.genjava" />
@@ -413,12 +418,15 @@
             </node>
           </node>
         </node>
+        <node concept="pUk6x" id="1D8fMMrKjdS" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="7$nPgK7znCB" role="39821P">
         <ref role="m_rDy" node="7$nPgK7zjIH" resolve="org.iets3.comp.os" />
+        <node concept="pUk6x" id="1D8fMMrKjdN" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="7$nPgK7znZI" role="39821P">
         <ref role="m_rDy" node="5wLtKNeT2TB" resolve="org.iets3.req.os" />
+        <node concept="pUk6x" id="1D8fMMrKjdR" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="34v_ns09Wnt" role="39821P">
         <ref role="m_rDy" node="64GCIgM55Fn" resolve="org.iets3.build.os" />
@@ -443,12 +451,15 @@
             </node>
           </node>
         </node>
+        <node concept="pUk6x" id="1D8fMMrKjdQ" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="4VKUGAZP_h_" role="39821P">
         <ref role="m_rDy" node="1lUgLJUn5Hn" resolve="org.iets3.core.assessment" />
+        <node concept="pUk6x" id="1D8fMMrKjdP" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="1PzuxQOWHfM" role="39821P">
         <ref role="m_rDy" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
+        <node concept="pUk6x" id="1D8fMMrKjdO" role="pUk7w" />
       </node>
     </node>
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
@@ -8563,6 +8574,7 @@
       <node concept="22LTRM" id="4ToqgmJmYtN" role="22LTRK">
         <ref role="22LTRN" node="6xvglc6Du8w" resolve="test.ex.core.expr.genjava" />
       </node>
+      <node concept="24cAiW" id="1D8fMMrKjeD" role="24cAkG" />
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
