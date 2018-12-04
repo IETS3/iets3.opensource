@@ -10,6 +10,7 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="9fzk" ref="r:ca744960-a59a-476e-a723-f852da3f606c(org.iets3.core.expr.datetime.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -153,9 +154,6 @@
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -419,24 +417,24 @@
                   <node concept="1YBJjd" id="26CArgTZhuq" role="2Oq$k0">
                     <ref role="1YBMHb" node="26CArgTZ4kQ" resolve="dateLiteral" />
                   </node>
-                  <node concept="3TrcHB" id="26CArgTZizw" role="2OqNvi">
-                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+                  <node concept="2qgKlT" id="3C_9jV2TjC" role="2OqNvi">
+                    <ref role="37wK5l" to="9fzk:3C_9jV2mVw" resolve="yearNumber" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="26CArgTZj3s" role="37wK5m">
                   <node concept="1YBJjd" id="26CArgTZiQM" role="2Oq$k0">
                     <ref role="1YBMHb" node="26CArgTZ4kQ" resolve="dateLiteral" />
                   </node>
-                  <node concept="3TrcHB" id="26CArgTZjro" role="2OqNvi">
-                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4l" resolve="mm" />
+                  <node concept="2qgKlT" id="3C_9jV2TVL" role="2OqNvi">
+                    <ref role="37wK5l" to="9fzk:3C_9jV2p6z" resolve="monthNumber" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="26CArgTZjU4" role="37wK5m">
                   <node concept="1YBJjd" id="26CArgTZjBs" role="2Oq$k0">
                     <ref role="1YBMHb" node="26CArgTZ4kQ" resolve="dateLiteral" />
                   </node>
-                  <node concept="3TrcHB" id="26CArgTZkiL" role="2OqNvi">
-                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4k" resolve="dd" />
+                  <node concept="2qgKlT" id="3C_9jV2UlU" role="2OqNvi">
+                    <ref role="37wK5l" to="9fzk:3C_9jV2pNI" resolve="dayNumber" />
                   </node>
                 </node>
               </node>
