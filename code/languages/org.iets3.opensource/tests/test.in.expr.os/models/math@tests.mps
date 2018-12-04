@@ -188,6 +188,11 @@
       </node>
     </node>
     <node concept="_ixoA" id="642_vmCZrkt" role="_iOnB" />
+    <node concept="1aga60" id="1HyxlLhHYyE" role="_iOnB">
+      <property role="TrG5h" value="getPi" />
+      <node concept="39ZMf5" id="1HyxlLhHYJj" role="1ahQXP" />
+    </node>
+    <node concept="_ixoA" id="1HyxlLhHYd1" role="_iOnB" />
     <node concept="1aga60" id="642_vmCWp_$" role="_iOnB">
       <property role="TrG5h" value="hypotenuseLength" />
       <node concept="a0DgS" id="642_vmCWuHM" role="1ahQXP">
@@ -315,6 +320,15 @@
         </node>
         <node concept="30bXRB" id="1yW0h04DbwO" role="_fkuS">
           <property role="30bXRw" value="5050" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="1HyxlLhHWoq" role="_fkp5">
+        <node concept="_fku$" id="1HyxlLhHWor" role="_fkur" />
+        <node concept="1af_rf" id="1HyxlLhHYMO" role="_fkuY">
+          <ref role="1afhQb" node="1HyxlLhHYyE" resolve="getPi" />
+        </node>
+        <node concept="30bXRB" id="1HyxlLhHYPR" role="_fkuS">
+          <property role="30bXRw" value="3.141592653589793" />
         </node>
       </node>
     </node>

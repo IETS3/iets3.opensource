@@ -50,6 +50,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" />
     <import index="w474" ref="r:06b241ed-1779-4f34-8d6f-e61e9dd94387(org.iets3.core.expr.testExecution.plugin)" />
+    <import index="l6bp" ref="r:97875f9c-321e-405e-a344-6d3deab2bdba(de.q60.mps.shadowmodel.runtime.smodel)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -480,10 +481,22 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
+        <child id="1197687026896" name="keyType" index="3rHrn6" />
+        <child id="1197687035757" name="valueType" index="3rHtpV" />
+      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
+        <child id="1197932505799" name="map" index="3ElQJh" />
+        <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -764,28 +777,97 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3cpWs8" id="1HyxlLhK$c0" role="3cqZAp">
+                                <node concept="3cpWsn" id="1HyxlLhK$c3" role="3cpWs9">
+                                  <property role="TrG5h" value="interpreterResult" />
+                                  <node concept="3rvAFt" id="1HyxlLhK$bU" role="1tU5fm">
+                                    <node concept="3Tqbb2" id="1HyxlLhK$GB" role="3rvQeY" />
+                                    <node concept="3uibUv" id="1HyxlLhK$Va" role="3rvSg0">
+                                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                                    </node>
+                                  </node>
+                                  <node concept="2ShNRf" id="1HyxlLhKAYt" role="33vP2m">
+                                    <node concept="3rGOSV" id="1HyxlLhKAYk" role="2ShVmc">
+                                      <node concept="3Tqbb2" id="1HyxlLhKAYl" role="3rHrn6" />
+                                      <node concept="3uibUv" id="1HyxlLhKAYm" role="3rHtpV">
+                                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2Gpval" id="1HyxlLhKBIV" role="3cqZAp">
+                                <node concept="2GrKxI" id="1HyxlLhKBIX" role="2Gsz3X">
+                                  <property role="TrG5h" value="entry" />
+                                </node>
+                                <node concept="3clFbS" id="1HyxlLhKBJ1" role="2LFqv$">
+                                  <node concept="3cpWs8" id="1HyxlLhKHKQ" role="3cqZAp">
+                                    <node concept="3cpWsn" id="1HyxlLhKHKR" role="3cpWs9">
+                                      <property role="TrG5h" value="inputNode" />
+                                      <node concept="3Tqbb2" id="1HyxlLhKIIs" role="1tU5fm" />
+                                      <node concept="2YIFZM" id="1HyxlLhKHKS" role="33vP2m">
+                                        <ref role="37wK5l" to="l6bp:1HyxlLhK1RN" resolve="getInputNode" />
+                                        <ref role="1Pybhc" to="l6bp:1HyxlLhIXQg" resolve="TransformationTrace" />
+                                        <node concept="2OqwBi" id="1HyxlLhKHKT" role="37wK5m">
+                                          <node concept="2GrUjf" id="1HyxlLhKHKU" role="2Oq$k0">
+                                            <ref role="2Gs0qQ" node="1HyxlLhKBIX" resolve="entry" />
+                                          </node>
+                                          <node concept="liA8E" id="1HyxlLhKHKV" role="2OqNvi">
+                                            <ref role="37wK5l" to="33ny:~Map$Entry.getKey():java.lang.Object" resolve="getKey" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="1HyxlLhKJv7" role="3cqZAp">
+                                    <node concept="37vLTI" id="1HyxlLhKKMC" role="3clFbG">
+                                      <node concept="2OqwBi" id="1HyxlLhKLeo" role="37vLTx">
+                                        <node concept="2GrUjf" id="1HyxlLhKL4w" role="2Oq$k0">
+                                          <ref role="2Gs0qQ" node="1HyxlLhKBIX" resolve="entry" />
+                                        </node>
+                                        <node concept="liA8E" id="1HyxlLhKMh7" role="2OqNvi">
+                                          <ref role="37wK5l" to="33ny:~Map$Entry.getValue():java.lang.Object" resolve="getValue" />
+                                        </node>
+                                      </node>
+                                      <node concept="3EllGN" id="1HyxlLhKKbM" role="37vLTJ">
+                                        <node concept="37vLTw" id="1HyxlLhKKtM" role="3ElVtu">
+                                          <ref role="3cqZAo" node="1HyxlLhKHKR" resolve="inputNode" />
+                                        </node>
+                                        <node concept="37vLTw" id="1HyxlLhKJv5" role="3ElQJh">
+                                          <ref role="3cqZAo" node="1HyxlLhK$c3" resolve="interpreterResult" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="1HyxlLhKCJf" role="2GsD0m">
+                                  <node concept="2OqwBi" id="1HyxlLhKCJg" role="2Oq$k0">
+                                    <node concept="37vLTw" id="1HyxlLhKCJh" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="7obiejCHwiA" resolve="rr" />
+                                    </node>
+                                    <node concept="liA8E" id="1HyxlLhKCJi" role="2OqNvi">
+                                      <ref role="37wK5l" to="pbu6:4Pi6J8CclOV" resolve="env" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="1HyxlLhKCJj" role="2OqNvi">
+                                    <ref role="37wK5l" to="33ny:~Map.entrySet():java.util.Set" resolve="entrySet" />
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="3cpWs8" id="78hTg1$Gqkd" role="3cqZAp">
                                 <node concept="3cpWsn" id="78hTg1$Gqke" role="3cpWs9">
                                   <property role="TrG5h" value="act" />
                                   <node concept="3uibUv" id="78hTg1$Gqkc" role="1tU5fm">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="2OqwBi" id="4Pi6J8CcwT4" role="33vP2m">
-                                    <node concept="2OqwBi" id="4Pi6J8CcuI7" role="2Oq$k0">
-                                      <node concept="37vLTw" id="4Pi6J8CcukF" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="7obiejCHwiA" resolve="rr" />
-                                      </node>
-                                      <node concept="liA8E" id="4Pi6J8CcvAJ" role="2OqNvi">
-                                        <ref role="37wK5l" to="pbu6:4Pi6J8CclOV" resolve="env" />
-                                      </node>
+                                  <node concept="3EllGN" id="1HyxlLhKQfZ" role="33vP2m">
+                                    <node concept="37vLTw" id="1HyxlLhKOhE" role="3ElQJh">
+                                      <ref role="3cqZAo" node="1HyxlLhK$c3" resolve="interpreterResult" />
                                     </node>
-                                    <node concept="liA8E" id="4Pi6J8CcxOi" role="2OqNvi">
-                                      <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                                      <node concept="2OqwBi" id="4Pi6J8CcyLm" role="37wK5m">
-                                        <node concept="13iPFW" id="4Pi6J8CcykJ" role="2Oq$k0" />
-                                        <node concept="3TrEf2" id="4Pi6J8CczKm" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" resolve="actual" />
-                                        </node>
+                                    <node concept="2OqwBi" id="4Pi6J8CcyLm" role="3ElVtu">
+                                      <node concept="13iPFW" id="4Pi6J8CcykJ" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="4Pi6J8CczKm" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="av4b:ub9nkyHAbb" resolve="actual" />
                                       </node>
                                     </node>
                                   </node>
@@ -797,22 +879,14 @@
                                   <node concept="3uibUv" id="4Pi6J8CcADt" role="1tU5fm">
                                     <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                   </node>
-                                  <node concept="2OqwBi" id="4Pi6J8CcADu" role="33vP2m">
-                                    <node concept="2OqwBi" id="4Pi6J8CcADv" role="2Oq$k0">
-                                      <node concept="37vLTw" id="4Pi6J8CcADw" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="7obiejCHwiA" resolve="rr" />
-                                      </node>
-                                      <node concept="liA8E" id="4Pi6J8CcADx" role="2OqNvi">
-                                        <ref role="37wK5l" to="pbu6:4Pi6J8CclOV" resolve="env" />
-                                      </node>
+                                  <node concept="3EllGN" id="1HyxlLhKSKx" role="33vP2m">
+                                    <node concept="37vLTw" id="1HyxlLhKS5b" role="3ElQJh">
+                                      <ref role="3cqZAo" node="1HyxlLhK$c3" resolve="interpreterResult" />
                                     </node>
-                                    <node concept="liA8E" id="4Pi6J8CcADy" role="2OqNvi">
-                                      <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                                      <node concept="2OqwBi" id="4Pi6J8CcADz" role="37wK5m">
-                                        <node concept="13iPFW" id="4Pi6J8CcAD$" role="2Oq$k0" />
-                                        <node concept="3TrEf2" id="4Pi6J8CcCgH" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="av4b:ub9nkyHAbd" resolve="expected" />
-                                        </node>
+                                    <node concept="2OqwBi" id="4Pi6J8CcADz" role="3ElVtu">
+                                      <node concept="13iPFW" id="4Pi6J8CcAD$" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="4Pi6J8CcCgH" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="av4b:ub9nkyHAbd" resolve="expected" />
                                       </node>
                                     </node>
                                   </node>

@@ -405,20 +405,6 @@
         </node>
       </node>
     </node>
-    <node concept="qq9P1" id="1yW0h04F$Ag" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:642_vmCZroK" resolve="PiExpression" />
-      <node concept="3vetai" id="1yW0h04F$Uo" role="3vQZUl">
-        <node concept="2YIFZM" id="1yW0h04F_D8" role="3vdyny">
-          <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double):java.math.BigDecimal" resolve="valueOf" />
-          <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-          <node concept="10M0yZ" id="1yW0h04F$Z3" role="37wK5m">
-            <ref role="3cqZAo" to="wyt6:~Math.PI" resolve="PI" />
-            <ref role="1PxDUh" to="wyt6:~Math" resolve="Math" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
