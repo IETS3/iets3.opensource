@@ -77,7 +77,7 @@
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodel.runtime)</dependency>
     <dependency reexport="false">18463265-6d45-4514-82f1-cf7eb1222492(de.q60.mps.polymorphicfunctions.runtime)</dependency>
-    <dependency reexport="false">94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel)</dependency>
+    <dependency reexport="false">94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel.transformation)</dependency>
     <dependency reexport="false">7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)</dependency>
     <dependency reexport="false">bc963c22-d419-49b6-8543-ea411eb9d3a1(de.q60.mps.polymorphicfunctions)</dependency>
   </dependencies>
@@ -158,9 +158,9 @@
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="bc963c22-d419-49b6-8543-ea411eb9d3a1(de.q60.mps.polymorphicfunctions)" version="0" />
     <module reference="18463265-6d45-4514-82f1-cf7eb1222492(de.q60.mps.polymorphicfunctions.runtime)" version="0" />
-    <module reference="94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel)" version="0" />
     <module reference="f5997610-4d27-40a3-872c-d06cf404755b(de.q60.mps.shadowmodel.genplan)" version="0" />
     <module reference="e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodel.runtime)" version="0" />
+    <module reference="94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel.transformation)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />

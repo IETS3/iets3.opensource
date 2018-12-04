@@ -46,9 +46,9 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="l6bp" ref="r:97875f9c-321e-405e-a344-6d3deab2bdba(de.q60.mps.shadowmodel.runtime.smodel)" />
     <import index="3rqu" ref="r:d7c55f13-f901-4ee1-a73a-11f022c90034(org.iets3.core.expr.base.transformations)" />
-    <import index="hm90" ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.behavior)" />
+    <import index="hm90" ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.transformation.behavior)" />
     <import index="czm" ref="r:e8e03ffa-3c1e-4997-9f51-6f8ca9be2f23(com.mbeddr.mpsutil.grammarcells.runtime)" />
-    <import index="r8po" ref="r:1d515eb3-4574-4003-95ad-9150a9c1623c(de.q60.mps.shadowmodel.polyfun)" />
+    <import index="r8po" ref="r:1d515eb3-4574-4003-95ad-9150a9c1623c(de.q60.mps.shadowmodel.transformation.polyfun)" />
     <import index="e9uj" ref="r:a0737da3-c8e0-437c-a9b2-5b254393a0a1(de.q60.mps.polymorphicfunctions.behavior)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
