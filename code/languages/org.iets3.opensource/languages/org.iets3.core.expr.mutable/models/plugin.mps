@@ -916,6 +916,9 @@
           <node concept="37vLTw" id="33mFrumn$wj" role="37wK5m">
             <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
           </node>
+          <node concept="37vLTw" id="3z0DCrzPavg" role="37wK5m">
+            <ref role="3cqZAo" node="3z0DCrzPakN" resolve="causingValue" />
+          </node>
           <node concept="37vLTw" id="2jL$v5BnAFY" role="37wK5m">
             <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
           </node>
@@ -928,6 +931,12 @@
           <node concept="37vLTw" id="2jL$v5BnDeo" role="37wK5m">
             <ref role="3cqZAo" node="2jL$v5BnBXs" resolve="trace" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3z0DCrzPakN" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzParu" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="2jL$v5BnAGG" role="3clF46">
@@ -1690,6 +1699,7 @@
           <node concept="2ShNRf" id="33mFrumnAoS" role="YScLw">
             <node concept="1pGfFk" id="33mFrumnAC$" role="2ShVmc">
               <ref role="37wK5l" node="2jL$v5BnAFT" resolve="InvalidCommandException" />
+              <node concept="Xjq3P" id="3z0DCr$rseH" role="37wK5m" />
               <node concept="37vLTw" id="33mFrumnAKU" role="37wK5m">
                 <ref role="3cqZAo" node="7WFhXJlVVlx" resolve="myInteractor" />
               </node>
@@ -3728,6 +3738,9 @@
           <node concept="37vLTw" id="4IV0h47fHvs" role="37wK5m">
             <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
           </node>
+          <node concept="37vLTw" id="3z0DCrzPaf$" role="37wK5m">
+            <ref role="3cqZAo" node="3z0DCrzPa57" resolve="causingValue" />
+          </node>
           <node concept="37vLTw" id="4IV0h47fHvt" role="37wK5m">
             <ref role="3cqZAo" node="4IV0h47fHvy" resolve="nodeWithError" />
           </node>
@@ -3740,6 +3753,12 @@
           <node concept="37vLTw" id="4IV0h47fHvx" role="37wK5m">
             <ref role="3cqZAo" node="4IV0h47fHvE" resolve="trace" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3z0DCrzPa57" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzPabM" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="4IV0h47fHvy" role="3clF46">
