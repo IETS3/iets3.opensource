@@ -4740,7 +4740,7 @@
   </node>
   <node concept="24kQdi" id="37V13JR4s$Z">
     <property role="3GE5qa" value="assessment.structural" />
-    <ref role="1XX52x" to="av4b:37V13JR4s$_" resolve="AllFilter" />
+    <ref role="1XX52x" to="av4b:37V13JR4s$_" resolve="AllExpressionsFilter" />
     <node concept="3F0ifn" id="37V13JR4s_1" role="2wV5jI">
       <property role="3F0ifm" value="expressions everywhere" />
     </node>
@@ -6336,6 +6336,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5zhBkzoH3EZ">
+    <property role="3GE5qa" value="assessment.structural" />
+    <ref role="1XX52x" to="av4b:5zhBkzoH3E_" resolve="AllNodesFilter" />
+    <node concept="PMmxH" id="5zhBkzoH3F1" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
