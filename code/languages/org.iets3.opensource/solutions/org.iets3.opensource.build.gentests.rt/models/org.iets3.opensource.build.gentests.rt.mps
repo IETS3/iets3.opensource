@@ -78,6 +78,15 @@
         </node>
       </node>
     </node>
+    <node concept="2AHcQZ" id="4mAIL6pn7MP" role="2AJF6D">
+      <ref role="2AI5Lk" to="uqj:~ClasspathSuite$ClasspathProperty" resolve="ClasspathSuite.ClasspathProperty" />
+      <node concept="2B6LJw" id="4mAIL6pn7Nj" role="2B76xF">
+        <ref role="2B6OnR" to="uqj:~ClasspathSuite$ClasspathProperty.value()" resolve="value" />
+        <node concept="Xl_RD" id="4mAIL6pn7NI" role="2B70Vg">
+          <property role="Xl_RC" value="mps.test.modules" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
