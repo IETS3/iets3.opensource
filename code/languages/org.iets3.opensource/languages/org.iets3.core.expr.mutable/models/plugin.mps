@@ -4,7 +4,7 @@
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
@@ -882,7 +882,6 @@
     <property role="TrG5h" value="IBoxValue" />
     <node concept="2tJIrI" id="4lULzfkKSd8" role="jymVt" />
     <node concept="3clFb_" id="4lULzfkKSdk" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getValue" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -916,6 +915,9 @@
           <node concept="37vLTw" id="33mFrumn$wj" role="37wK5m">
             <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
           </node>
+          <node concept="37vLTw" id="3z0DCrzPavg" role="37wK5m">
+            <ref role="3cqZAo" node="3z0DCrzPakN" resolve="causingValue" />
+          </node>
           <node concept="37vLTw" id="2jL$v5BnAFY" role="37wK5m">
             <ref role="3cqZAo" node="2jL$v5BnAGG" resolve="nodeWithError" />
           </node>
@@ -928,6 +930,12 @@
           <node concept="37vLTw" id="2jL$v5BnDeo" role="37wK5m">
             <ref role="3cqZAo" node="2jL$v5BnBXs" resolve="trace" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3z0DCrzPakN" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzParu" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="2jL$v5BnAGG" role="3clF46">
@@ -1690,6 +1698,7 @@
           <node concept="2ShNRf" id="33mFrumnAoS" role="YScLw">
             <node concept="1pGfFk" id="33mFrumnAC$" role="2ShVmc">
               <ref role="37wK5l" node="2jL$v5BnAFT" resolve="InvalidCommandException" />
+              <node concept="Xjq3P" id="3z0DCr$rseH" role="37wK5m" />
               <node concept="37vLTw" id="33mFrumnAKU" role="37wK5m">
                 <ref role="3cqZAo" node="7WFhXJlVVlx" resolve="myInteractor" />
               </node>
@@ -3728,6 +3737,9 @@
           <node concept="37vLTw" id="4IV0h47fHvs" role="37wK5m">
             <ref role="3cqZAo" to="oq0c:4945UtRC2RH" resolve="PLAIN" />
           </node>
+          <node concept="37vLTw" id="3z0DCrzPaf$" role="37wK5m">
+            <ref role="3cqZAo" node="3z0DCrzPa57" resolve="causingValue" />
+          </node>
           <node concept="37vLTw" id="4IV0h47fHvt" role="37wK5m">
             <ref role="3cqZAo" node="4IV0h47fHvy" resolve="nodeWithError" />
           </node>
@@ -3740,6 +3752,12 @@
           <node concept="37vLTw" id="4IV0h47fHvx" role="37wK5m">
             <ref role="3cqZAo" node="4IV0h47fHvE" resolve="trace" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3z0DCrzPa57" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzPabM" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="4IV0h47fHvy" role="3clF46">

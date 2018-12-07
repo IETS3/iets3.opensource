@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -139,9 +139,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5115872837156576280" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4rZeNQ6O9gL" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="91pmpwXlUo" role="PzmwI">
       <ref role="PrY4T" node="91pmpwTPq5" resolve="IMainSlot" />
@@ -554,9 +551,6 @@
       <property role="IQ2nx" value="8092372783984280584" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="PrWs8" id="6kR0qIbwJhJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsFyNP">
     <property role="3GE5qa" value="option" />
@@ -849,9 +843,6 @@
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="6Y6Jk48g3sL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
-    </node>
-    <node concept="PrWs8" id="RIvadv2u9y" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="YXKE79IuCN" role="PzmwI">
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
@@ -1159,9 +1150,6 @@
       <property role="TrG5h" value="index" />
       <property role="IQ2nx" value="2527679671886575030" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="PrWs8" id="3kzwyUOAjoX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="4qVjx3kr0CS" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />

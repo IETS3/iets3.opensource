@@ -2,7 +2,7 @@
 <model ref="r:8a68dc0a-09ac-4a20-bd08-c5ca350aacc6(org.iets3.core.expr.natlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -140,9 +140,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -170,9 +167,6 @@
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
@@ -639,7 +633,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEditorCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="ywgKCSJRuy" role="1B3o_S" />
       <node concept="3uibUv" id="ywgKCSJRu$" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
@@ -697,7 +690,6 @@
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="setCellId" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
                     <node concept="3Tm1VV" id="4iVn6hSWsxV" role="1B3o_S" />
                     <node concept="3cqZAl" id="4iVn6hSWsxX" role="3clF45" />
                     <node concept="37vLTG" id="4iVn6hSWsxY" role="3clF46">
@@ -1712,7 +1704,7 @@
             <node concept="10Nm6u" id="2C8vy9yUdcz" role="3uHU7w" />
             <node concept="2OqwBi" id="2C8vy9yUdc$" role="3uHU7B">
               <node concept="liA8E" id="2C8vy9yUdc_" role="2OqNvi">
-                <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.getSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getSRole" />
               </node>
               <node concept="37vLTw" id="2C8vy9yUdcA" role="2Oq$k0">
                 <ref role="3cqZAo" node="2C8vy9yUdcN" resolve="editorCell" />
@@ -1723,23 +1715,9 @@
             <node concept="3clFbF" id="2C8vy9yUdcC" role="3cqZAp">
               <node concept="2OqwBi" id="2C8vy9yUdcD" role="3clFbG">
                 <node concept="liA8E" id="2C8vy9yUdcE" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.setRole(java.lang.String):void" resolve="setRole" />
-                  <node concept="2YIFZM" id="2C8vy9yUdcF" role="37wK5m">
-                    <ref role="37wK5l" to="iwwu:i1dughm" resolve="getGenuineLinkRole" />
-                    <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
-                    <node concept="1PxgMI" id="2C8vy9yUdcG" role="37wK5m">
-                      <node concept="2OqwBi" id="2C8vy9yUdcH" role="1m5AlR">
-                        <node concept="37vLTw" id="2C8vy9yUi4P" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2C8vy9yUdbl" resolve="myLink" />
-                        </node>
-                        <node concept="liA8E" id="2C8vy9yUdcJ" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
-                        </node>
-                      </node>
-                      <node concept="chp4Y" id="1Ap9E00Ar9f" role="3oSUPX">
-                        <ref role="cht4Q" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
-                      </node>
-                    </node>
+                  <ref role="37wK5l" to="f4zo:~EditorCell.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
+                  <node concept="37vLTw" id="7GPsQwM6G$6" role="37wK5m">
+                    <ref role="3cqZAo" node="2C8vy9yUdbl" resolve="myLink" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="2C8vy9yUdcK" role="2Oq$k0">
@@ -1783,7 +1761,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEmptyCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="2C8vy9yUdcQ" role="1B3o_S" />
       <node concept="3uibUv" id="2C8vy9yUdcR" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
@@ -1842,7 +1819,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getNoTargetText" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="17QB3L" id="2C8vy9yUddd" role="3clF45" />
       <node concept="3Tmbuc" id="2C8vy9yUdde" role="1B3o_S" />
       <node concept="3clFbS" id="2C8vy9yUddf" role="3clF47">

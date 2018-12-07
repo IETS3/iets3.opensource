@@ -2,7 +2,7 @@
 <model ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -29,7 +29,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -206,7 +205,6 @@
       <node concept="3clFbS" id="50smQ1V9rSy" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="50smQ1V9rSI" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -243,6 +241,26 @@
         </node>
       </node>
       <node concept="17QB3L" id="50smQ1V9rSX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="Ygt3JjmGvH" role="13h7CS">
+      <property role="TrG5h" value="baseType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="pbu6:XhdFKv3UAU" resolve="baseType" />
+      <node concept="3Tm1VV" id="Ygt3JjmGvI" role="1B3o_S" />
+      <node concept="3clFbS" id="Ygt3JjmGvN" role="3clF47">
+        <node concept="3clFbF" id="Ygt3JjmGHM" role="3cqZAp">
+          <node concept="2OqwBi" id="Ygt3JjmGRM" role="3clFbG">
+            <node concept="13iPFW" id="Ygt3JjmGHH" role="2Oq$k0" />
+            <node concept="3TrEf2" id="Ygt3JjmH7K" role="2OqNvi">
+              <ref role="3Tt5mk" to="l462:50smQ1V8i8a" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="Ygt3JjmGvO" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="50smQ1VdacN">

@@ -4,7 +4,7 @@
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -187,7 +187,6 @@
   <node concept="3HP615" id="5aWcZMN3ibs">
     <property role="TrG5h" value="IMandatoryAttributesProvider" />
     <node concept="3clFb_" id="5aWcZMN3ifR" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getSupportedAttributedTypes" />
       <node concept="3clFbS" id="5aWcZMN3ifU" role="3clF47" />
@@ -199,7 +198,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="6TDynbfe$rC" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="requiresMandatoryAttributes" />
       <node concept="37vLTG" id="6TDynbfeAeM" role="3clF46">
@@ -213,7 +211,6 @@
       <node concept="10P_77" id="6TDynbfe$vq" role="3clF45" />
     </node>
     <node concept="3clFb_" id="5aWcZMN3iQj" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="createMandatoryAttributesFor" />
       <node concept="37vLTG" id="5aWcZMN3iTH" role="3clF46">
