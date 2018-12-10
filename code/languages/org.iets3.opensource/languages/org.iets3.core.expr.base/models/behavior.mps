@@ -18030,6 +18030,17 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5DEy7AG5ZDI" role="3cqZAp">
+          <node concept="1rXfSq" id="5DEy7AG5ZDG" role="3clFbG">
+            <ref role="37wK5l" node="6SpoPQg9cKk" resolve="visitedConcept" />
+            <node concept="2OqwBi" id="5DEy7AG60g7" role="37wK5m">
+              <node concept="37vLTw" id="5DEy7AG6029" role="2Oq$k0">
+                <ref role="3cqZAo" node="RaqQlV4uB6" resolve="interpretedNode" />
+              </node>
+              <node concept="2yIwOk" id="5DEy7AG60AX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="RaqQlV4uBb" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
