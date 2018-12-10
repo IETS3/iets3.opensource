@@ -1203,5 +1203,17 @@
     <property role="R4oN_" value="in the coverage measurement allow nodes everywhere" />
     <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
   </node>
+  <node concept="1TIwiD" id="5DEy7AGc9um">
+    <property role="EcuMT" value="6515169867106129814" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="StructuralCoverageAssSummary" />
+    <property role="R4oN_" value="??" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="5DEy7AGc9un" role="1TKVEl">
+      <property role="IQ2nx" value="6515169867106129815" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

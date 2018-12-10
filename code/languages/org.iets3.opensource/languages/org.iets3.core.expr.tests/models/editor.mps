@@ -6345,5 +6345,21 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="5DEy7AGc9uL">
+    <property role="3GE5qa" value="assessment.structural" />
+    <ref role="1XX52x" to="av4b:5DEy7AGc9um" resolve="StructuralCoverageAssSummary" />
+    <node concept="3EZMnI" id="5DEy7AGc9uN" role="2wV5jI">
+      <node concept="l2Vlx" id="5DEy7AGc9uO" role="2iSdaV" />
+      <node concept="3F0ifn" id="5DEy7AGc9uP" role="3EZMnx">
+        <property role="3F0ifm" value="coverage" />
+      </node>
+      <node concept="3F0A7n" id="5DEy7AGc9uQ" role="3EZMnx">
+        <ref role="1NtTu8" to="av4b:5DEy7AGc9un" resolve="coverageRatio" />
+      </node>
+      <node concept="3F0ifn" id="5DEy7AGc9uR" role="3EZMnx">
+        <property role="3F0ifm" value="%" />
+      </node>
+    </node>
+  </node>
 </model>
 
