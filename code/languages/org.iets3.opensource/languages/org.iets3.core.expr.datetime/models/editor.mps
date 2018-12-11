@@ -235,13 +235,6 @@
       <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
-  <node concept="24kQdi" id="3nGzaxUXXm8">
-    <property role="3GE5qa" value="range.toDate" />
-    <ref role="1XX52x" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
-    <node concept="3F0ifn" id="3nGzaxUXXma" role="2wV5jI">
-      <property role="3F0ifm" value="begin" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3nGzaxUXXmA">
     <property role="3GE5qa" value="range.toDate" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXXmc" resolve="EndOp" />
@@ -384,6 +377,13 @@
     <ref role="1XX52x" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
     <node concept="3F0ifn" id="7aRvJQF3Fwi" role="2wV5jI">
       <property role="3F0ifm" value="BoT" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="77QyhEfWhg2">
+    <property role="3GE5qa" value="range.toDate" />
+    <ref role="1XX52x" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
+    <node concept="3F0ifn" id="77QyhEfWhg4" role="2wV5jI">
+      <property role="3F0ifm" value="begin" />
     </node>
   </node>
 </model>
