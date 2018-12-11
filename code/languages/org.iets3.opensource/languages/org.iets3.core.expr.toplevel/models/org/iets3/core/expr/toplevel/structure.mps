@@ -342,7 +342,7 @@
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="RecordMember" />
     <property role="EcuMT" value="8811147530084018361" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a new member in this record" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="xu7xcKdQCE" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKdQCB" resolve="IRecordMember" />
