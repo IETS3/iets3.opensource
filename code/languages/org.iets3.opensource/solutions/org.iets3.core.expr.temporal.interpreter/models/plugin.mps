@@ -28,6 +28,7 @@
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1079,6 +1080,21 @@
                       <node concept="3uibUv" id="1Mp62pP0Y36" role="10QFUM">
                         <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="77QyhEgFGdd" role="3cqZAp">
+                  <node concept="2OqwBi" id="77QyhEgFGkl" role="3clFbG">
+                    <node concept="3fckFw" id="77QyhEgFGdb" role="2Oq$k0" />
+                    <node concept="liA8E" id="77QyhEgFGqj" role="2OqNvi">
+                      <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
+                      <node concept="2OqwBi" id="77QyhEgFG_7" role="37wK5m">
+                        <node concept="oxGPV" id="77QyhEgFGt5" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="77QyhEgFGNz" role="2OqNvi">
+                          <ref role="3Tt5mk" to="l462:1Mp62pP0G9w" resolve="strategy" />
+                        </node>
+                      </node>
+                      <node concept="10Nm6u" id="77QyhEgFGUc" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -2534,6 +2550,38 @@
                 </node>
               </node>
               <node concept="3clFbS" id="50smQ1Va03N" role="2LFqv$">
+                <node concept="3cpWs8" id="77QyhEgGig0" role="3cqZAp">
+                  <node concept="3cpWsn" id="77QyhEgGig1" role="3cpWs9">
+                    <property role="TrG5h" value="v" />
+                    <node concept="3uibUv" id="77QyhEgGifA" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                    <node concept="qpA2v" id="77QyhEgGig2" role="33vP2m">
+                      <node concept="2OqwBi" id="77QyhEgGig3" role="3SLO0q">
+                        <node concept="2GrUjf" id="77QyhEgGig4" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="50smQ1Va03J" resolve="s" />
+                        </node>
+                        <node concept="3TrEf2" id="77QyhEgGig5" role="2OqNvi">
+                          <ref role="3Tt5mk" to="l462:50smQ1V8QEk" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="77QyhEgG7mE" role="3cqZAp">
+                  <node concept="2OqwBi" id="77QyhEgG7rM" role="3clFbG">
+                    <node concept="3fckFw" id="77QyhEgG7mC" role="2Oq$k0" />
+                    <node concept="liA8E" id="77QyhEgG7xI" role="2OqNvi">
+                      <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
+                      <node concept="2GrUjf" id="77QyhEgG7yD" role="37wK5m">
+                        <ref role="2Gs0qQ" node="50smQ1Va03J" resolve="s" />
+                      </node>
+                      <node concept="37vLTw" id="77QyhEgGiux" role="37wK5m">
+                        <ref role="3cqZAo" node="77QyhEgGig1" resolve="v" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="50smQ1Va5eU" role="3cqZAp">
                   <node concept="37vLTI" id="50smQ1Va5kn" role="3clFbG">
                     <node concept="2OqwBi" id="50smQ1Va5qa" role="37vLTx">
@@ -2557,15 +2605,8 @@
                             <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
                           </node>
                         </node>
-                        <node concept="qpA2v" id="50smQ1Va6ki" role="37wK5m">
-                          <node concept="2OqwBi" id="50smQ1Va6tu" role="3SLO0q">
-                            <node concept="2GrUjf" id="50smQ1Va6lW" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="50smQ1Va03J" resolve="s" />
-                            </node>
-                            <node concept="3TrEf2" id="50smQ1Va6YV" role="2OqNvi">
-                              <ref role="3Tt5mk" to="l462:50smQ1V8QEk" resolve="value" />
-                            </node>
-                          </node>
+                        <node concept="37vLTw" id="77QyhEgGig6" role="37wK5m">
+                          <ref role="3cqZAo" node="77QyhEgGig1" resolve="v" />
                         </node>
                       </node>
                     </node>
