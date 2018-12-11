@@ -2053,5 +2053,48 @@
     <property role="EcuMT" value="672388678117471179" />
     <property role="TrG5h" value="IContextAssistantTypeProvider" />
   </node>
+  <node concept="1TIwiD" id="4CksDrmwc1V">
+    <property role="EcuMT" value="5338017450510303355" />
+    <property role="TrG5h" value="OperatorGroup" />
+    <property role="34LRSv" value="join" />
+    <property role="3GE5qa" value="group" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4CksDrmwcd4" role="1TKVEi">
+      <property role="IQ2ns" value="5338017450510304068" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4CksDrmwcd2" role="1TKVEi">
+      <property role="IQ2ns" value="5338017450510304066" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tag" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4CksDrmwc1W" resolve="OperatorTag" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4CksDrmwc1W">
+    <property role="EcuMT" value="5338017450510303356" />
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="OperatorTag" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4CksDrmwdqB">
+    <property role="EcuMT" value="5338017450510309031" />
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="AndTag" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <ref role="1TJDcQ" node="4CksDrmwc1W" resolve="OperatorTag" />
+  </node>
+  <node concept="1TIwiD" id="6WstIz8Gccd">
+    <property role="EcuMT" value="8006404979729416973" />
+    <property role="3GE5qa" value="group" />
+    <property role="TrG5h" value="OrTag" />
+    <property role="34LRSv" value="||" />
+    <ref role="1TJDcQ" node="4CksDrmwc1W" resolve="OperatorTag" />
+  </node>
 </model>
 

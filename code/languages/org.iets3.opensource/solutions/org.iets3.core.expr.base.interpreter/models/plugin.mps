@@ -317,6 +317,20 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="qq9P1" id="6WstIz8FSmQ" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="hm2y:4CksDrmwc1V" resolve="OperatorGroup" />
+      <node concept="3vetai" id="6WstIz8FUmP" role="3vQZUl">
+        <node concept="qpA2v" id="6WstIz8FUNB" role="3vdyny">
+          <node concept="2OqwBi" id="6WstIz8FUvx" role="3SLO0q">
+            <node concept="oxGPV" id="6WstIz8FUn3" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6WstIz8FUGz" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:4CksDrmwwdX" resolve="reduce" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="4AahbtVDIhI" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4AahbtVAEwi" resolve="InlineMessage" />
