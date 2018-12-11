@@ -3917,5 +3917,30 @@
       <ref role="1YaFvo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6WstIz8MQ1T">
+    <property role="TrG5h" value="typeof_EnumIsOneOfTarget" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <node concept="3clFbS" id="6WstIz8MQ1U" role="18ibNy">
+      <node concept="1Z5TYs" id="6WstIz8MQaQ" role="3cqZAp">
+        <node concept="mw_s8" id="6WstIz8MQbf" role="1ZfhKB">
+          <node concept="2YIFZM" id="6WstIz8MQcO" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6WstIz8MQaT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6WstIz8MQ26" role="mwGJk">
+            <node concept="1YBJjd" id="6WstIz8MQ3V" role="1Z2MuG">
+              <ref role="1YBMHb" node="6WstIz8MQ1W" resolve="eio" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6WstIz8MQ1W" role="1YuTPh">
+      <property role="TrG5h" value="eio" />
+      <ref role="1YaFvo" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
+    </node>
+  </node>
 </model>
 

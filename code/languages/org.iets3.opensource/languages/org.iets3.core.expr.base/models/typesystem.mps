@@ -7684,5 +7684,38 @@
       <ref role="1YaFvo" to="hm2y:4CksDrmwdqB" resolve="AndTag" />
     </node>
   </node>
+  <node concept="18kY7G" id="6WstIz8QIcy">
+    <property role="TrG5h" value="check_OperatorGroup" />
+    <property role="3GE5qa" value="group" />
+    <node concept="3clFbS" id="6WstIz8QIcz" role="18ibNy">
+      <node concept="3clFbJ" id="6WstIz8QIcD" role="3cqZAp">
+        <node concept="2OqwBi" id="6WstIz8QLbi" role="3clFbw">
+          <node concept="2OqwBi" id="6WstIz8QInY" role="2Oq$k0">
+            <node concept="1YBJjd" id="6WstIz8QIcS" role="2Oq$k0">
+              <ref role="1YBMHb" node="6WstIz8QIc_" resolve="operatorGroup" />
+            </node>
+            <node concept="3Tsc0h" id="6WstIz8QIzx" role="2OqNvi">
+              <ref role="3TtcxE" to="hm2y:4CksDrmwcd4" resolve="expressions" />
+            </node>
+          </node>
+          <node concept="1v1jN8" id="6WstIz8QSII" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6WstIz8QIcF" role="3clFbx">
+          <node concept="2MkqsV" id="6WstIz8QSLO" role="3cqZAp">
+            <node concept="Xl_RD" id="6WstIz8QSM3" role="2MkJ7o">
+              <property role="Xl_RC" value="empty list is not allowed" />
+            </node>
+            <node concept="1YBJjd" id="6WstIz8QSMt" role="2OEOjV">
+              <ref role="1YBMHb" node="6WstIz8QIc_" resolve="operatorGroup" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6WstIz8QIc_" role="1YuTPh">
+      <property role="TrG5h" value="operatorGroup" />
+      <ref role="1YaFvo" to="hm2y:4CksDrmwc1V" resolve="OperatorGroup" />
+    </node>
+  </node>
 </model>
 

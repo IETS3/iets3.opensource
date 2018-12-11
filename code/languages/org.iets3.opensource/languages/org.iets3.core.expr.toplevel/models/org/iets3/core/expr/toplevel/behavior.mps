@@ -8787,5 +8787,71 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="6WstIz8ML9J">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="13h7C2" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
+    <node concept="13i0hz" id="6WstIz8ML9U" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="6WstIz8ML9V" role="1B3o_S" />
+      <node concept="3clFbS" id="6WstIz8ML9W" role="3clF47">
+        <node concept="3clFbF" id="6WstIz8ML9X" role="3cqZAp">
+          <node concept="3cpWs3" id="6WstIz8MLa0" role="3clFbG">
+            <node concept="Xl_RD" id="6WstIz8MLa1" role="3uHU7B">
+              <property role="Xl_RC" value="isOneOf" />
+            </node>
+            <node concept="2OqwBi" id="6WstIz8MLa2" role="3uHU7w">
+              <node concept="2OqwBi" id="6WstIz8MLa3" role="2Oq$k0">
+                <node concept="13iPFW" id="6WstIz8MLa4" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6WstIz8MMtP" role="2OqNvi">
+                  <ref role="3TtcxE" to="yv47:6WstIz8MK6a" resolve="selectors" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6WstIz8MO14" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6WstIz8MLa7" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6WstIz8ML9K" role="13h7CW">
+      <node concept="3clFbS" id="6WstIz8ML9L" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6WstIz8MOzA">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="13h7C2" to="yv47:6WstIz8MKZd" resolve="EnumIsInSelector" />
+    <node concept="13hLZK" id="6WstIz8MOzB" role="13h7CW">
+      <node concept="3clFbS" id="6WstIz8MOzC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6WstIz8MOzL" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="6WstIz8MOzY" role="1B3o_S" />
+      <node concept="3clFbS" id="6WstIz8MOzZ" role="3clF47">
+        <node concept="3clFbF" id="6WstIz8MOC8" role="3cqZAp">
+          <node concept="2OqwBi" id="6WstIz8MP9F" role="3clFbG">
+            <node concept="2OqwBi" id="6WstIz8MOKU" role="2Oq$k0">
+              <node concept="13iPFW" id="6WstIz8MOC3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6WstIz8MORX" role="2OqNvi">
+                <ref role="3Tt5mk" to="yv47:6WstIz8MKZe" resolve="literal" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6WstIz8MPSV" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6WstIz8MO$0" role="3clF45" />
+    </node>
+  </node>
 </model>
 

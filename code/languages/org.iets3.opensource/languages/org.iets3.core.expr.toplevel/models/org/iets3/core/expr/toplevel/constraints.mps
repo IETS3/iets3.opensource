@@ -1702,5 +1702,83 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6WstIz8MKEg">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="1M2myG" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
+    <node concept="9S07l" id="6WstIz8MKEh" role="9Vyp8">
+      <node concept="3clFbS" id="6WstIz8MKEi" role="2VODD2">
+        <node concept="3clFbF" id="6WstIz8MKEq" role="3cqZAp">
+          <node concept="2OqwBi" id="6WstIz8MKEr" role="3clFbG">
+            <node concept="1PxgMI" id="6WstIz8MKEs" role="2Oq$k0">
+              <node concept="nLn13" id="6WstIz8MKEt" role="1m5AlR" />
+              <node concept="chp4Y" id="6WstIz8MKEu" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6WstIz8MKEv" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="6WstIz8MKEw" role="37wK5m">
+                <ref role="35c_gD" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+              </node>
+              <node concept="3clFbT" id="6WstIz8MKEx" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6WstIz8QSW$">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="1M2myG" to="yv47:6WstIz8MKZd" resolve="EnumIsInSelector" />
+    <node concept="1N5Pfh" id="6WstIz8QSW_" role="1Mr941">
+      <ref role="1N5Vy1" to="yv47:6WstIz8MKZe" resolve="literal" />
+      <node concept="3dgokm" id="6WstIz8QSWC" role="1N6uqs">
+        <node concept="3clFbS" id="6WstIz8QSWD" role="2VODD2">
+          <node concept="3clFbF" id="6WstIz8R0gL" role="3cqZAp">
+            <node concept="2YIFZM" id="6WstIz8R0nI" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="6WstIz8QYQR" role="37wK5m">
+                <node concept="2OqwBi" id="6WstIz8QXP4" role="2Oq$k0">
+                  <node concept="1PxgMI" id="6WstIz8QXtJ" role="2Oq$k0">
+                    <node concept="chp4Y" id="6WstIz8QX_Q" role="3oSUPX">
+                      <ref role="cht4Q" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+                    </node>
+                    <node concept="2OqwBi" id="6WstIz8QWIj" role="1m5AlR">
+                      <node concept="2OqwBi" id="6WstIz8QUc0" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6WstIz8QTfh" role="2Oq$k0">
+                          <node concept="2rP1CM" id="6WstIz8QT5E" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="6WstIz8QTsH" role="2OqNvi">
+                            <node concept="1xMEDy" id="6WstIz8QTsJ" role="1xVPHs">
+                              <node concept="chp4Y" id="6WstIz8QTEL" role="ri$Ld">
+                                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                              </node>
+                            </node>
+                            <node concept="1xIGOp" id="6WstIz8QTTF" role="1xVPHs" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="6WstIz8QUzd" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                        </node>
+                      </node>
+                      <node concept="3JvlWi" id="6WstIz8QWWr" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6WstIz8QYcD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="6WstIz8QZsH" role="2OqNvi">
+                  <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" resolve="literals" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
