@@ -4,17 +4,38 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
+    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
+    <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
     </language>
+    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+        <property id="7831630342157089649" name="__hash" index="0Rz4W" />
+      </concept>
+    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+        <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
+        <child id="5115872837157187954" name="expr" index="30bsDf" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -44,6 +65,7 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="6400069481669081765" name="org.iets3.core.expr.tests.structure.AllNodesFilter" flags="ng" index="20pqvH" />
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -58,11 +80,59 @@
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
+      <concept id="4137027550727647612" name="org.iets3.core.expr.tests.structure.LanguageRef" flags="ng" index="1aipRv">
+        <child id="4137027550727647984" name="lang" index="1aipTj" />
+      </concept>
+      <concept id="4137027550728847170" name="org.iets3.core.expr.tests.structure.IgnoredConcept" flags="ng" index="1amXfx">
+        <reference id="4137027550728847334" name="concept" index="1amXd5" />
+      </concept>
+      <concept id="4137027550720478450" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssQuery" flags="ng" index="1bQQ1h" />
+      <concept id="4137027550720482705" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssResult" flags="ng" index="1bQR4M">
+        <property id="4137027550720484225" name="comment" index="1bQOWy" />
+        <reference id="4137027550720483094" name="concept" index="1bQReP" />
+      </concept>
       <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
+      <concept id="5716711712470882681" name="org.iets3.core.expr.tests.structure.AbstractCoverageQuery" flags="ng" index="3msoTU">
+        <child id="4137027550727662489" name="languages" index="1aissU" />
+        <child id="4137027550729731592" name="scope" index="1al_aF" />
+        <child id="4137027550728939664" name="ignoredConcepts" index="1am$gN" />
+      </concept>
+      <concept id="5716711712471163978" name="org.iets3.core.expr.tests.structure.StructuralCoverageAssQuery" flags="ng" index="3mvnd9">
+        <property id="4874335060888604991" name="lookOutsideTestSuites" index="3vQ$Nm" />
+        <property id="4372229961985409127" name="minimumMaxHetero" index="1WQ8ur" />
+        <property id="4372229961985409120" name="minTestVolume" index="1WQ8us" />
+        <property id="4372229961985409123" name="maximalMinHetero" index="1WQ8uv" />
+        <property id="4372229961985409105" name="minTestCount" index="1WQ8uH" />
+        <child id="728332068654185164" name="nodesFilter" index="1sGZj$" />
+      </concept>
+      <concept id="1307222191605829984" name="org.iets3.core.expr.tests.structure.InterpreterCoverageAssSummary" flags="ng" index="1n27V8">
+        <property id="1307222191605830133" name="coverageRatio" index="1n27Tt" />
+      </concept>
+      <concept id="6515169867106129814" name="org.iets3.core.expr.tests.structure.StructuralCoverageAssSummary" flags="ng" index="3QmxZJ">
+        <property id="6515169867106129815" name="coverageRatio" index="3QmxZI" />
+      </concept>
+      <concept id="993724751390561556" name="org.iets3.core.expr.tests.structure.InterpreterValueStat" flags="ng" index="1QVVTL">
+        <property id="993724751390561557" name="label" index="1QVVTK" />
+        <property id="993724751390561559" name="value" index="1QVVTM" />
+      </concept>
+      <concept id="993724751390561555" name="org.iets3.core.expr.tests.structure.InterpreterValueSummary" flags="ng" index="1QVVTQ">
+        <child id="993724751390561646" name="valueStats" index="1QVVSb" />
+      </concept>
+      <concept id="4372229961985642578" name="org.iets3.core.expr.tests.structure.StructuralCoverageAssResult" flags="ng" index="1WP1uI">
+        <property id="4372229961985642580" name="comment" index="1WP1uC" />
+        <property id="4372229961985674918" name="maxH" index="1WP8_q" />
+        <property id="4372229961985674913" name="minH" index="1WP8_t" />
+        <property id="4372229961985674909" name="testVolume" index="1WP8_x" />
+        <property id="4372229961985674906" name="testCount" index="1WP8_A" />
+        <reference id="4372229961985642579" name="concept" index="1WP1uJ" />
+      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
+      <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
+        <property id="5115872837157252555" name="value" index="30bdrQ" />
+      </concept>
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -77,40 +147,81 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
     </language>
     <language id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime">
-      <concept id="148516613626716160" name="org.iets3.core.expr.datetime.structure.BeginOp" flags="ng" index="2Wukci" />
+      <concept id="6891143932407154959" name="org.iets3.core.expr.datetime.structure.YearValue" flags="ng" index="k_sJE" />
+      <concept id="6891143932407155983" name="org.iets3.core.expr.datetime.structure.MonthValue" flags="ng" index="k_sZE" />
+      <concept id="6891143932407162183" name="org.iets3.core.expr.datetime.structure.DayValue" flags="ng" index="k_uuy" />
+      <concept id="8271636411545326830" name="org.iets3.core.expr.datetime.structure.ToStringOp" flags="ng" index="2R$_mj" />
       <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
         <child id="3885635233759216660" name="year" index="1f6kyW" />
       </concept>
+      <concept id="3885635233759216627" name="org.iets3.core.expr.datetime.structure.DateRangeType" flags="ng" index="1f6kXr" />
       <concept id="3885635233759352204" name="org.iets3.core.expr.datetime.structure.EndOp" flags="ng" index="1f6P$$" />
+      <concept id="3885635233759352108" name="org.iets3.core.expr.datetime.structure.BeginOp" flags="ng" index="1f6PA4" />
+      <concept id="3885635233759311035" name="org.iets3.core.expr.datetime.structure.YearRangeType" flags="ng" index="1f6Vwj" />
       <concept id="3885635233757569297" name="org.iets3.core.expr.datetime.structure.DateLiteral" flags="ng" index="1fc2QT">
         <property id="3885635233757569300" name="dd" index="1fc2QW" />
         <property id="3885635233757569301" name="mm" index="1fc2QX" />
         <property id="3885635233757569302" name="yyyy" index="1fc2QY" />
       </concept>
+      <concept id="3885635233752766664" name="org.iets3.core.expr.datetime.structure.DateType" flags="ng" index="1fvXhw" />
+      <concept id="8266215269009420289" name="org.iets3.core.expr.datetime.structure.WeeksDeltaType" flags="ng" index="3ow0VW" />
       <concept id="8266215269009420246" name="org.iets3.core.expr.datetime.structure.WeeksDeltaLiteral" flags="ng" index="3ow14F" />
+      <concept id="8266215269008981524" name="org.iets3.core.expr.datetime.structure.MonthsDeltaType" flags="ng" index="3oxW3D" />
       <concept id="8266215269008981481" name="org.iets3.core.expr.datetime.structure.MonthsDeltaLiteral" flags="ng" index="3oxWck" />
       <concept id="8266215269009892986" name="org.iets3.core.expr.datetime.structure.MonthOfDateOp" flags="ng" index="3oyty7" />
       <concept id="8266215269009891846" name="org.iets3.core.expr.datetime.structure.YearOfDateOp" flags="ng" index="3oytNV" />
       <concept id="8266215269008723696" name="org.iets3.core.expr.datetime.structure.YearsDeltaLiteral" flags="ng" index="3oAV0d" />
+      <concept id="8266215269008723171" name="org.iets3.core.expr.datetime.structure.YearsDeltaType" flags="ng" index="3oAV8u" />
       <concept id="8266215269007146753" name="org.iets3.core.expr.datetime.structure.NextOp" flags="ng" index="3oCW7W" />
       <concept id="8266215269007680360" name="org.iets3.core.expr.datetime.structure.PrevOp" flags="ng" index="3oETQl" />
+      <concept id="8266215269006573904" name="org.iets3.core.expr.datetime.structure.DaysDeltaType" flags="ng" index="3oIRYH" />
       <concept id="8266215269006408997" name="org.iets3.core.expr.datetime.structure.DaysDeltaLiteral" flags="ng" index="3oJwfo" />
       <concept id="8266215269006408993" name="org.iets3.core.expr.datetime.structure.DateDeltaLiteral" flags="ng" index="3oJwfs">
         <child id="8266215269006408998" name="value" index="3oJwfr" />
       </concept>
       <concept id="8266215269010217661" name="org.iets3.core.expr.datetime.structure.MonthRangeYearOp" flags="ng" index="3oXeh0" />
       <concept id="8266215269023528950" name="org.iets3.core.expr.datetime.structure.BeginningOfTIME" flags="ng" index="3pIs$b" />
+      <concept id="2060704857949559578" name="org.iets3.core.expr.datetime.structure.MonthRangeType" flags="ng" index="1DA4cW" />
       <concept id="2060704857949559990" name="org.iets3.core.expr.datetime.structure.MonthRangeLiteral" flags="ng" index="1DA4ig">
         <child id="2060704857949559991" name="year" index="1DA4ih" />
         <child id="2060704857949559996" name="month" index="1DA4iq" />
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8490595898229124557" name="com.mbeddr.core.base.structure.CurrentModelScope" flags="ng" index="28wkCQ" />
+      <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
+        <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
+        <property id="671216505796623806" name="ok" index="qc_T_" />
+        <property id="671216505796623805" name="totalCount" index="qc_TA" />
+      </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
+      <concept id="865293814733114043" name="com.mbeddr.core.base.structure.AssessmentContainer" flags="ng" index="3pwaUo">
+        <child id="865293814733114045" name="assessments" index="3pwaUu" />
+      </concept>
+      <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
+        <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
+        <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
+        <property id="8691429746170824734" name="sorted" index="1Ema5g" />
+        <child id="671216505796427450" name="summaries" index="q3PPx" />
+        <child id="865293814733115677" name="query" index="3pwbkY" />
+        <child id="865293814733118687" name="results" index="3pwbzW" />
+      </concept>
+      <concept id="865293814733118686" name="com.mbeddr.core.base.structure.AssessmentResultEntry" flags="ng" index="3pwbzX">
+        <property id="6619757161337247129" name="lastFound" index="3J1cY9" />
+        <property id="2711621784018180488" name="isNew" index="1OfcgH" />
+        <child id="865293814733133843" name="result" index="3pwfKK" />
+        <child id="6619757161337461931" name="comment" index="3J00qV" />
+      </concept>
       <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
         <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -128,23 +239,26 @@
     <property role="2SXJ1i" value="true" />
     <node concept="2zPypq" id="26CArgU3lPZ" role="_iOnB">
       <property role="TrG5h" value="feb_1_2017" />
+      <property role="0Rz4W" value="579282025" />
       <node concept="1fc2QT" id="26CArgU3lQC" role="2zPyp_">
         <property role="1fc2QY" value="2017" />
         <property role="1fc2QX" value="02" />
-        <property role="1fc2QW" value="1" />
+        <property role="1fc2QW" value="01" />
       </node>
     </node>
     <node concept="2zPypq" id="26CArgU3lS6" role="_iOnB">
       <property role="TrG5h" value="jan_1_2017" />
+      <property role="0Rz4W" value="1125187882" />
       <node concept="1fc2QT" id="26CArgU3lS7" role="2zPyp_">
         <property role="1fc2QY" value="2017" />
         <property role="1fc2QX" value="01" />
-        <property role="1fc2QW" value="1" />
+        <property role="1fc2QW" value="01" />
       </node>
     </node>
     <node concept="_ixoA" id="6fXpv6P_v8e" role="_iOnB" />
     <node concept="2zPypq" id="26CArgU3mdb" role="_iOnB">
       <property role="TrG5h" value="feb2017" />
+      <property role="0Rz4W" value="-445830225" />
       <node concept="1DA4ig" id="26CArgU3mmP" role="2zPyp_">
         <node concept="30bXRB" id="26CArgU3mnj" role="1DA4ih">
           <property role="30bXRw" value="2017" />
@@ -156,6 +270,7 @@
     </node>
     <node concept="2zPypq" id="26CArgU3mpM" role="_iOnB">
       <property role="TrG5h" value="jan2017" />
+      <property role="0Rz4W" value="-402255020" />
       <node concept="1DA4ig" id="26CArgU3mqR" role="2zPyp_">
         <node concept="30bXRB" id="26CArgU3mrl" role="1DA4ih">
           <property role="30bXRw" value="2017" />
@@ -168,6 +283,7 @@
     <node concept="_ixoA" id="7aRvJQE4T$c" role="_iOnB" />
     <node concept="2zPypq" id="7aRvJQE4Ttl" role="_iOnB">
       <property role="TrG5h" value="y2018" />
+      <property role="0Rz4W" value="-1310341599" />
       <node concept="1f6kyV" id="7aRvJQE4TKv" role="2zPyp_">
         <node concept="30bXRB" id="7aRvJQE4TLm" role="1f6kyW">
           <property role="30bXRw" value="2018" />
@@ -176,6 +292,7 @@
     </node>
     <node concept="2zPypq" id="7aRvJQE4TLW" role="_iOnB">
       <property role="TrG5h" value="y2017" />
+      <property role="0Rz4W" value="-1912509845" />
       <node concept="1f6kyV" id="7aRvJQE4TLX" role="2zPyp_">
         <node concept="30bXRB" id="7aRvJQE4TLY" role="1f6kyW">
           <property role="30bXRw" value="2017" />
@@ -185,6 +302,7 @@
     <node concept="_ixoA" id="26CArgU3msl" role="_iOnB" />
     <node concept="2zPypq" id="26CArgU3mv9" role="_iOnB">
       <property role="TrG5h" value="a" />
+      <property role="0Rz4W" value="-804186644" />
       <node concept="30d7iD" id="26CArgU3m_u" role="2zPyp_">
         <node concept="_emDc" id="26CArgU3mA4" role="30dEs_">
           <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
@@ -196,6 +314,7 @@
     </node>
     <node concept="2zPypq" id="26CArgU3mBH" role="_iOnB">
       <property role="TrG5h" value="a2" />
+      <property role="0Rz4W" value="-1202173315" />
       <node concept="30d6GJ" id="26CArgU3mIa" role="2zPyp_">
         <node concept="_emDc" id="26CArgU3mJk" role="30dEs_">
           <ref role="_emDf" node="26CArgU3mdb" resolve="feb2017" />
@@ -207,6 +326,7 @@
     </node>
     <node concept="2zPypq" id="26CArgU3mLz" role="_iOnB">
       <property role="TrG5h" value="a3" />
+      <property role="0Rz4W" value="1500330166" />
       <node concept="30d6GI" id="26CArgU3mS2" role="2zPyp_">
         <node concept="_emDc" id="26CArgU3mTu" role="30dEs_">
           <ref role="_emDf" node="26CArgU3mdb" resolve="feb2017" />
@@ -218,6 +338,7 @@
     </node>
     <node concept="2zPypq" id="26CArgU3mW3" role="_iOnB">
       <property role="TrG5h" value="a4" />
+      <property role="0Rz4W" value="816869561" />
       <node concept="30d6GG" id="26CArgU3n5P" role="2zPyp_">
         <node concept="_emDc" id="26CArgU3n7v" role="30dEs_">
           <ref role="_emDf" node="26CArgU3mpM" resolve="jan2017" />
@@ -449,8 +570,8 @@
         <node concept="_fku$" id="7aRvJQEcX_X" role="_fkur" />
         <node concept="1fc2QT" id="7aRvJQEcX_Y" role="_fkuS">
           <property role="1fc2QY" value="2017" />
-          <property role="1fc2QX" value="2" />
-          <property role="1fc2QW" value="8" />
+          <property role="1fc2QX" value="02" />
+          <property role="1fc2QW" value="08" />
         </node>
         <node concept="30dDZf" id="7aRvJQEcX_Z" role="_fkuY">
           <node concept="_emDc" id="7aRvJQEcXA0" role="30dEsF">
@@ -485,7 +606,7 @@
         <node concept="_fku$" id="7aRvJQEcXAb" role="_fkur" />
         <node concept="1fc2QT" id="7aRvJQEcXAc" role="_fkuS">
           <property role="1fc2QY" value="2018" />
-          <property role="1fc2QX" value="2" />
+          <property role="1fc2QX" value="02" />
           <property role="1fc2QW" value="15" />
         </node>
         <node concept="30dDZf" id="7aRvJQEcXAd" role="_fkuY">
@@ -527,7 +648,7 @@
         <node concept="1fc2QT" id="7aRvJQEfvcz" role="_fkuS">
           <property role="1fc2QY" value="2017" />
           <property role="1fc2QX" value="03" />
-          <property role="1fc2QW" value="1" />
+          <property role="1fc2QW" value="01" />
         </node>
         <node concept="30dDZf" id="7aRvJQEfvc$" role="_fkuY">
           <node concept="_emDc" id="7aRvJQEfvc_" role="30dEsF">
@@ -1146,10 +1267,10 @@
       <node concept="_fkuZ" id="7aRvJQE4QWI" role="_fkp5">
         <node concept="_fku$" id="7aRvJQE4QWJ" role="_fkur" />
         <node concept="1QScDb" id="7aRvJQE4RAr" role="_fkuY">
-          <node concept="2Wukci" id="7aRvJQE4RNG" role="1QScD9" />
           <node concept="_emDc" id="7aRvJQE4QWM" role="30czhm">
             <ref role="_emDf" node="26CArgU3mdb" resolve="feb2017" />
           </node>
+          <node concept="1f6PA4" id="77QyhEfWhba" role="1QScD9" />
         </node>
         <node concept="1fc2QT" id="7aRvJQE4RR_" role="_fkuS">
           <property role="1fc2QY" value="2017" />
@@ -1176,7 +1297,7 @@
         <node concept="1QScDb" id="7aRvJQEgHFH" role="_fkuY">
           <node concept="3oyty7" id="7aRvJQEgIuj" role="1QScD9" />
           <node concept="1QScDb" id="7aRvJQEgGRX" role="30czhm">
-            <node concept="2Wukci" id="7aRvJQEgGRY" role="1QScD9" />
+            <node concept="1f6PA4" id="77QyhEfWJz6" role="1QScD9" />
             <node concept="_emDc" id="7aRvJQEgGRZ" role="30czhm">
               <ref role="_emDf" node="26CArgU3mdb" resolve="feb2017" />
             </node>
@@ -1312,9 +1433,1096 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="77QyhEfQpsP" role="_iOnB" />
+    <node concept="_fkuM" id="77QyhEfQpI4" role="_iOnB">
+      <property role="TrG5h" value="toString" />
+      <node concept="_fkuZ" id="77QyhEfQq5L" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQq5M" role="_fkur" />
+        <node concept="1QScDb" id="77QyhEfQqmx" role="_fkuY">
+          <node concept="2R$_mj" id="77QyhEfQqnq" role="1QScD9" />
+          <node concept="1fc2QT" id="77QyhEfQq5W" role="30czhm">
+            <property role="1fc2QY" value="2018" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="77QyhEfQtjN" role="_fkuS">
+          <property role="30bdrQ" value="01.01.2018" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQu4m" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQu4n" role="_fkur" />
+        <node concept="1QScDb" id="77QyhEfQu4o" role="_fkuY">
+          <node concept="2R$_mj" id="77QyhEfQu4p" role="1QScD9" />
+          <node concept="1fc2QT" id="77QyhEfQu4q" role="30czhm">
+            <property role="1fc2QY" value="2018" />
+            <property role="1fc2QX" value="12" />
+            <property role="1fc2QW" value="31" />
+          </node>
+        </node>
+        <node concept="30bdrP" id="77QyhEfQu4r" role="_fkuS">
+          <property role="30bdrQ" value="31.12.2018" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="77QyhEfQws_" role="_iOnB" />
+    <node concept="2zPypq" id="77QyhEfQDQG" role="_iOnB">
+      <property role="TrG5h" value="dday" />
+      <property role="0Rz4W" value="1414368327" />
+      <node concept="3oJwfo" id="77QyhEfQEj5" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQDQI" role="3oJwfr">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="3oIRYH" id="77QyhEfQEfX" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfQwIg" role="_iOnB">
+      <property role="TrG5h" value="dweek" />
+      <property role="0Rz4W" value="-974342628" />
+      <node concept="3ow14F" id="77QyhEfQDts" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQDqo" role="3oJwfr">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="3ow0VW" id="77QyhEfQx6t" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfQJsl" role="_iOnB">
+      <property role="TrG5h" value="dmonth" />
+      <property role="0Rz4W" value="2025422414" />
+      <node concept="3oxWck" id="77QyhEfQJGT" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQJsn" role="3oJwfr">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="3oxW3D" id="77QyhEfQJF$" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfQEGY" role="_iOnB">
+      <property role="TrG5h" value="dyear" />
+      <property role="0Rz4W" value="-2011581896" />
+      <node concept="3oAV0d" id="77QyhEfQFbX" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQEH0" role="3oJwfr">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="3oAV8u" id="77QyhEfQF8a" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfQGzq" role="_iOnB">
+      <property role="TrG5h" value="start" />
+      <property role="0Rz4W" value="-1596584422" />
+      <node concept="1fc2QT" id="77QyhEfQGXB" role="2zPyp_">
+        <property role="1fc2QY" value="2018" />
+        <property role="1fc2QX" value="01" />
+        <property role="1fc2QW" value="01" />
+      </node>
+      <node concept="1fvXhw" id="77QyhEfQXGK" role="2zM23F" />
+    </node>
+    <node concept="_ixoA" id="77QyhEfQFcD" role="_iOnB" />
+    <node concept="_fkuM" id="77QyhEfQFJn" role="_iOnB">
+      <property role="TrG5h" value="deltaAdding" />
+      <node concept="_fkuZ" id="77QyhEfQG9i" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQG9j" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQGYu" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQGYO" role="30dEs_">
+            <ref role="_emDf" node="77QyhEfQDQG" resolve="dday" />
+          </node>
+          <node concept="_emDc" id="77QyhEfQGYl" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQGZj" role="_fkuS">
+          <property role="1fc2QY" value="2018" />
+          <property role="1fc2QX" value="01" />
+          <property role="1fc2QW" value="04" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQN4I" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQN4J" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQNh_" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQN4M" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+          <node concept="30bsCy" id="77QyhEfQNhA" role="30dEs_">
+            <node concept="30dDTi" id="77QyhEfQNhB" role="30bsDf">
+              <node concept="_emDc" id="77QyhEfQN4L" role="30dEsF">
+                <ref role="_emDf" node="77QyhEfQDQG" resolve="dday" />
+              </node>
+              <node concept="30bXRB" id="77QyhEfQNhC" role="30dEs_">
+                <property role="30bXRw" value="10" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQN4N" role="_fkuS">
+          <property role="1fc2QY" value="2018" />
+          <property role="1fc2QX" value="01" />
+          <property role="1fc2QW" value="31" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQOcZ" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQOd0" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQOd1" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQOd2" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+          <node concept="30bsCy" id="77QyhEfQOd3" role="30dEs_">
+            <node concept="30dDTi" id="77QyhEfQOd4" role="30bsDf">
+              <node concept="_emDc" id="77QyhEfQOd5" role="30dEsF">
+                <ref role="_emDf" node="77QyhEfQDQG" resolve="dday" />
+              </node>
+              <node concept="30bXRB" id="77QyhEfQOd6" role="30dEs_">
+                <property role="30bXRw" value="11" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQOd7" role="_fkuS">
+          <property role="1fc2QY" value="2018" />
+          <property role="1fc2QX" value="02" />
+          <property role="1fc2QW" value="03" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQHN0" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQHN1" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQHN2" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQHNG" role="30dEs_">
+            <ref role="_emDf" node="77QyhEfQwIg" resolve="dweek" />
+          </node>
+          <node concept="_emDc" id="77QyhEfQHN4" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQHN5" role="_fkuS">
+          <property role="1fc2QY" value="2018" />
+          <property role="1fc2QX" value="01" />
+          <property role="1fc2QW" value="22" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQJrA" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQJrB" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQJrC" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQJHA" role="30dEs_">
+            <ref role="_emDf" node="77QyhEfQJsl" resolve="dmonth" />
+          </node>
+          <node concept="_emDc" id="77QyhEfQJrE" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQJrF" role="_fkuS">
+          <property role="1fc2QY" value="2018" />
+          <property role="1fc2QX" value="04" />
+          <property role="1fc2QW" value="01" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQK$g" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQK$h" role="_fkur" />
+        <node concept="30dDZf" id="77QyhEfQK$i" role="_fkuY">
+          <node concept="_emDc" id="77QyhEfQK_7" role="30dEs_">
+            <ref role="_emDf" node="77QyhEfQEGY" resolve="dyear" />
+          </node>
+          <node concept="_emDc" id="77QyhEfQK$k" role="30dEsF">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="1fc2QT" id="77QyhEfQK$l" role="_fkuS">
+          <property role="1fc2QY" value="2021" />
+          <property role="1fc2QX" value="01" />
+          <property role="1fc2QW" value="01" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="77QyhEfQTin" role="_iOnB" />
+    <node concept="_fkuM" id="77QyhEfQTEX" role="_iOnB">
+      <property role="TrG5h" value="values" />
+      <node concept="_fkuZ" id="77QyhEfQU8_" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQU8A" role="_fkur" />
+        <node concept="1QScDb" id="77QyhEfQU8V" role="_fkuY">
+          <node concept="k_uuy" id="77QyhEfQUeo" role="1QScD9" />
+          <node concept="_emDc" id="77QyhEfQU8M" role="30czhm">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="77QyhEfQUjT" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQVal" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQVam" role="_fkur" />
+        <node concept="1QScDb" id="77QyhEfQVan" role="_fkuY">
+          <node concept="k_sZE" id="77QyhEfQVjz" role="1QScD9" />
+          <node concept="_emDc" id="77QyhEfQVap" role="30czhm">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="77QyhEfQVaq" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="77QyhEfQVbh" role="_fkp5">
+        <node concept="_fku$" id="77QyhEfQVbi" role="_fkur" />
+        <node concept="1QScDb" id="77QyhEfQVbj" role="_fkuY">
+          <node concept="k_sJE" id="77QyhEfQVcD" role="1QScD9" />
+          <node concept="_emDc" id="77QyhEfQVbl" role="30czhm">
+            <ref role="_emDf" node="77QyhEfQGzq" resolve="start" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="77QyhEfQVbm" role="_fkuS">
+          <property role="30bXRw" value="2018" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="77QyhEfQXPR" role="_iOnB" />
+    <node concept="2zPypq" id="77QyhEfQYvg" role="_iOnB">
+      <property role="TrG5h" value="monthRange" />
+      <node concept="1DA4ig" id="77QyhEfQZ0P" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQZ1D" role="1DA4ih">
+          <property role="30bXRw" value="2018" />
+        </node>
+        <node concept="30bXRB" id="77QyhEfQZ3H" role="1DA4iq">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="1DA4cW" id="77QyhEfR0xW" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfQZ4t" role="_iOnB">
+      <property role="TrG5h" value="yearRange" />
+      <node concept="1f6kyV" id="77QyhEfQZA_" role="2zPyp_">
+        <node concept="30bXRB" id="77QyhEfQZAO" role="1f6kyW">
+          <property role="30bXRw" value="2018" />
+        </node>
+      </node>
+      <node concept="1f6Vwj" id="77QyhEfR0wD" role="2zM23F" />
+    </node>
+    <node concept="2zPypq" id="77QyhEfR160" role="_iOnB">
+      <property role="TrG5h" value="x" />
+      <node concept="_emDc" id="77QyhEfR1Sn" role="2zPyp_">
+        <ref role="_emDf" node="77QyhEfQYvg" resolve="monthRange" />
+      </node>
+      <node concept="1f6kXr" id="77QyhEfR1BE" role="2zM23F" />
+    </node>
+    <node concept="_ixoA" id="77QyhEfQXbA" role="_iOnB" />
+    <node concept="_ixoA" id="77QyhEfQXlw" role="_iOnB" />
+    <node concept="_ixoA" id="77QyhEfQDu8" role="_iOnB" />
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
     <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
+  </node>
+  <node concept="3pwaUo" id="3MHhZL0CUW8">
+    <property role="TrG5h" value="StructuralCoverage" />
+    <node concept="3pwaUv" id="3MHhZL0CUW9" role="3pwaUu">
+      <property role="TrG5h" value="StructuralCoverage" />
+      <property role="1Ema5g" value="true" />
+      <property role="2iEbMk" value="1544515220588" />
+      <property role="2iEaKi" value="markusvoelter" />
+      <node concept="3mvnd9" id="3MHhZL0CUWd" role="3pwbkY">
+        <property role="1WQ8us" value="1" />
+        <property role="1WQ8uv" value="1" />
+        <property role="1WQ8ur" value="1" />
+        <property role="3vQ$Nm" value="true" />
+        <property role="1WQ8uH" value="1" />
+        <node concept="20pqvH" id="77QyhEfQwpS" role="1sGZj$" />
+        <node concept="28wkCQ" id="3MHhZL0CUWe" role="1al_aF" />
+        <node concept="1aipRv" id="3MHhZL0CUWi" role="1aissU">
+          <node concept="2V$Bhx" id="2TT24nYAAw_" role="1aipTj">
+            <property role="2V$B1T" value="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" />
+            <property role="2V$B1Q" value="org.iets3.core.expr.datetime" />
+          </node>
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5n" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg5o" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5p" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5q" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4r" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5j" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg5k" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5l" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5m" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4q" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=5, V=10 H=2..2" />
+          <property role="1WP8_A" value="5" />
+          <property role="1WP8_x" value="10" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="2" />
+          <ref role="1WP1uJ" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4V" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg4W" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg4X" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg4Y" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4k" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4N" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220583" />
+        <node concept="OjmMv" id="77QyhEfWg4O" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg4P" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg4Q" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4i" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=33, V=85 H=1..4" />
+          <property role="1WP8_A" value="33" />
+          <property role="1WP8_x" value="85" />
+          <property role="1WP8_t" value="1" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4R" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220583" />
+        <node concept="OjmMv" id="77QyhEfWg4S" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg4T" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg4U" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4j" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg63" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg64" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg65" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg66" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4A" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=5, V=10 H=2..2" />
+          <property role="1WP8_A" value="5" />
+          <property role="1WP8_x" value="10" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="2" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg67" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg68" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg69" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg6a" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4B" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXNiV" resolve="YearRangeType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4F" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220583" />
+        <node concept="OjmMv" id="77QyhEfWg4G" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg4H" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg4I" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4g" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=11 H=3..4" />
+          <property role="1WP8_A" value="0" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="-1" />
+          <property role="1WP8_q" value="-1" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5b" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg5c" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5d" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5e" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4o" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=11 H=3..4" />
+          <property role="1WP8_A" value="2" />
+          <property role="1WP8_x" value="11" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXXmc" resolve="EndOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg6b" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg6c" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg6d" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg6e" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4C" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=3 H=3..3" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="3" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:5YygIlbdS$f" resolve="YearValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5v" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5w" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5x" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5y" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4t" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=3 H=3..3" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="3" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:5YygIlbdSOf" resolve="MonthValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4Z" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg50" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg51" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg52" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4l" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=3 H=3..3" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="3" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:5YygIlbdUl7" resolve="DayValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg53" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg54" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg55" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg56" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4m" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=14, V=70 H=2..4" />
+          <property role="1WP8_A" value="14" />
+          <property role="1WP8_x" value="70" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQE2nO_" resolve="DaysDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg57" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg58" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg59" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5a" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4n" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQE305g" resolve="DaysDeltaType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5F" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5G" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5H" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5I" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4w" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=6 H=3..3" />
+          <property role="1WP8_A" value="2" />
+          <property role="1WP8_x" value="6" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQE5bW1" resolve="NextOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5J" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5K" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5L" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5M" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4x" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=6 H=3..3" />
+          <property role="1WP8_A" value="2" />
+          <property role="1WP8_x" value="6" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQE7edC" resolve="PrevOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg6j" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg6k" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg6l" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg6m" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4E" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEbcNz" resolve="YearsDeltaType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg6f" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg6g" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg6h" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg6i" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4D" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=14, V=70 H=2..4" />
+          <property role="1WP8_A" value="14" />
+          <property role="1WP8_x" value="70" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEbcVK" resolve="YearsDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5z" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5$" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5_" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5A" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4u" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=15, V=78 H=2..4" />
+          <property role="1WP8_A" value="15" />
+          <property role="1WP8_x" value="78" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEcbRD" resolve="MonthsDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5B" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5C" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5D" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5E" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4v" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEcbSk" resolve="MonthsDeltaType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5R" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5S" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5T" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5U" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4z" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=15, V=78 H=2..4" />
+          <property role="1WP8_A" value="15" />
+          <property role="1WP8_x" value="78" />
+          <property role="1WP8_t" value="2" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEdQZm" resolve="WeeksDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5V" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg5W" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5X" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5Y" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4$" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=0 H=0..0" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="0" />
+          <property role="1WP8_t" value="0" />
+          <property role="1WP8_q" value="0" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEdR01" resolve="WeeksDeltaType" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5Z" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220586" />
+        <node concept="OjmMv" id="77QyhEfWg60" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg61" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg62" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4_" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=3 H=3..3" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="3" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEfE86" resolve="YearOfDateOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5f" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220584" />
+        <node concept="OjmMv" id="77QyhEfWg5g" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5h" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5i" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4p" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=3, V=11 H=3..4" />
+          <property role="1WP8_A" value="3" />
+          <property role="1WP8_x" value="11" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="4" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEfEpU" resolve="MonthOfDateOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5r" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5s" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5t" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5u" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4s" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=1, V=3 H=3..3" />
+          <property role="1WP8_A" value="1" />
+          <property role="1WP8_x" value="3" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQEgTEX" resolve="MonthRangeYearOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg4J" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220583" />
+        <node concept="OjmMv" id="77QyhEfWg4K" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg4L" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg4M" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4h" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=12 H=3..3" />
+          <property role="1WP8_A" value="2" />
+          <property role="1WP8_x" value="12" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWg5N" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515220585" />
+        <node concept="OjmMv" id="77QyhEfWg5O" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWg5P" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWg5Q" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1WP1uI" id="77QyhEfWg4y" role="3pwfKK">
+          <property role="1WP1uC" value="Covered. N=2, V=6 H=3..3" />
+          <property role="1WP8_A" value="2" />
+          <property role="1WP8_x" value="6" />
+          <property role="1WP8_t" value="3" />
+          <property role="1WP8_q" value="3" />
+          <ref role="1WP1uJ" to="mi3w:7baKnR5m9jI" resolve="ToStringOp" />
+        </node>
+      </node>
+      <node concept="qc_Tx" id="77QyhEfWP$T" role="q3PPx">
+        <property role="qc_TA" value="27" />
+        <property role="qc_T$" value="0" />
+        <property role="qc_T_" value="0" />
+      </node>
+      <node concept="3QmxZJ" id="77QyhEfWP$U" role="q3PPx">
+        <property role="3QmxZI" value="100" />
+      </node>
+    </node>
+  </node>
+  <node concept="3pwaUo" id="3MHhZL0CVjV">
+    <property role="TrG5h" value="InterpreterCoverage" />
+    <node concept="3pwaUv" id="3MHhZL0CVjW" role="3pwaUu">
+      <property role="TrG5h" value="InterpreterCoverage" />
+      <property role="1Ema5g" value="true" />
+      <property role="2iEbMk" value="1544515262767" />
+      <property role="2iEaKi" value="markusvoelter" />
+      <node concept="1bQQ1h" id="3MHhZL0CVv9" role="3pwbkY">
+        <node concept="1aipRv" id="3MHhZL0CVve" role="1aissU">
+          <node concept="2V$Bhx" id="2TT24nYA_FK" role="1aipTj">
+            <property role="2V$B1T" value="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" />
+            <property role="2V$B1Q" value="org.iets3.core.expr.datetime" />
+          </node>
+        </node>
+        <node concept="28wkCQ" id="3MHhZL0CVva" role="1al_aF" />
+        <node concept="1amXfx" id="77QyhEfWRR_" role="1am$gN">
+          <ref role="1amXd5" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          <node concept="1z9TsT" id="77QyhEfWS3u" role="lGtFl">
+            <node concept="OjmMv" id="77QyhEfWS3v" role="1w35rA">
+              <node concept="19SGf9" id="77QyhEfWS3w" role="OjmMu">
+                <node concept="19SUe$" id="77QyhEfWS3x" role="19SJt6">
+                  <property role="19SUeA" value="types are never executed" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRO0" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRO1" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRO2" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRO3" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN7" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNw" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNx" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNy" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNz" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRMZ" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROK" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROL" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROM" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRON" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNj" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNo" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262762" />
+        <node concept="OjmMv" id="77QyhEfWRNp" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNq" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNr" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRMX" role="3pwfKK">
+          <property role="1bQOWy" value="Missing." />
+          <ref role="1bQReP" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNS" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNT" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNU" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNV" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN5" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:3nGzaxUXXmc" resolve="EndOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROS" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROT" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROU" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROV" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNl" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:5YygIlbdS$f" resolve="YearValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROc" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWROd" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROe" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROf" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNa" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:5YygIlbdSOf" resolve="MonthValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNG" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNH" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNI" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNJ" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN2" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:5YygIlbdUl7" resolve="DayValue" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNK" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNL" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNM" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNN" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN3" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQE2nO_" resolve="DaysDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROo" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROp" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROq" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROr" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNd" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQE5bW1" resolve="NextOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROs" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROt" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROu" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROv" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNe" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQE7edC" resolve="PrevOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROW" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROX" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROY" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROZ" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNm" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEbcVK" resolve="YearsDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROg" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROh" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROi" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROj" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNb" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEcbRD" resolve="MonthsDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRO$" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWRO_" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROA" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROB" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNg" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEdQZm" resolve="WeeksDeltaLiteral" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROG" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROH" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROI" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROJ" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNi" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEfE86" resolve="YearOfDateOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNW" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNX" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNY" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNZ" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN6" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEfEpU" resolve="MonthOfDateOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRO8" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRO9" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROa" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROb" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRN9" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQEgTEX" resolve="MonthRangeYearOp" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWRNs" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262763" />
+        <node concept="OjmMv" id="77QyhEfWRNt" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWRNu" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWRNv" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRMY" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7aRvJQF3FvQ" resolve="BeginningOfTIME" />
+        </node>
+      </node>
+      <node concept="3pwbzX" id="77QyhEfWROw" role="3pwbzW">
+        <property role="1OfcgH" value="false" />
+        <property role="3J1cY9" value="1544515262764" />
+        <node concept="OjmMv" id="77QyhEfWROx" role="3J00qV">
+          <node concept="19SGf9" id="77QyhEfWROy" role="OjmMu">
+            <node concept="19SUe$" id="77QyhEfWROz" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1bQR4M" id="77QyhEfWRNf" role="3pwfKK">
+          <property role="1bQOWy" value="Covered." />
+          <ref role="1bQReP" to="mi3w:7baKnR5m9jI" resolve="ToStringOp" />
+        </node>
+      </node>
+      <node concept="qc_Tx" id="77QyhEfWS1A" role="q3PPx">
+        <property role="qc_TA" value="19" />
+        <property role="qc_T$" value="0" />
+        <property role="qc_T_" value="0" />
+      </node>
+      <node concept="1QVVTQ" id="77QyhEfWS1B" role="q3PPx">
+        <node concept="1QVVTL" id="77QyhEfWS1C" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.max" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1D" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.min" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1E" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.zero" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1F" role="1QVVSb">
+          <property role="1QVVTK" value="integer.zero" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1G" role="1QVVSb">
+          <property role="1QVVTK" value="integer.max" />
+          <property role="1QVVTM" value="2018" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1H" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.minusOne" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1I" role="1QVVSb">
+          <property role="1QVVTK" value="integer.one" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1J" role="1QVVSb">
+          <property role="1QVVTK" value="integer.minusOne" />
+          <property role="1QVVTM" value="true" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1K" role="1QVVSb">
+          <property role="1QVVTK" value="decimal.one" />
+          <property role="1QVVTM" value="&lt;no value&gt;" />
+        </node>
+        <node concept="1QVVTL" id="77QyhEfWS1L" role="1QVVSb">
+          <property role="1QVVTK" value="integer.min" />
+          <property role="1QVVTM" value="1" />
+        </node>
+      </node>
+      <node concept="1n27V8" id="77QyhEfWS1_" role="q3PPx">
+        <property role="1n27Tt" value="95" />
+      </node>
+    </node>
   </node>
 </model>
 
