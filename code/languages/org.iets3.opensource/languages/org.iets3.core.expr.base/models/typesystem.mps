@@ -7811,5 +7811,103 @@
       <ref role="1YaFvo" to="hm2y:7rdMSLlpyHe" resolve="PlusTag" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7rdMSLltkZx">
+    <property role="TrG5h" value="typeof_MulTag" />
+    <property role="3GE5qa" value="group" />
+    <node concept="3clFbS" id="7rdMSLltkZy" role="18ibNy">
+      <node concept="3cpWs8" id="7rdMSLltl92" role="3cqZAp">
+        <node concept="3cpWsn" id="7rdMSLltl93" role="3cpWs9">
+          <property role="TrG5h" value="og" />
+          <node concept="3Tqbb2" id="7rdMSLltl94" role="1tU5fm">
+            <ref role="ehGHo" to="hm2y:4CksDrmwc1V" resolve="OperatorGroup" />
+          </node>
+          <node concept="1PxgMI" id="7rdMSLltl95" role="33vP2m">
+            <node concept="chp4Y" id="7rdMSLltl96" role="3oSUPX">
+              <ref role="cht4Q" to="hm2y:4CksDrmwc1V" resolve="OperatorGroup" />
+            </node>
+            <node concept="2OqwBi" id="7rdMSLltl97" role="1m5AlR">
+              <node concept="1YBJjd" id="7rdMSLltllT" role="2Oq$k0">
+                <ref role="1YBMHb" node="7rdMSLltkZ$" resolve="mulTag" />
+              </node>
+              <node concept="1mfA1w" id="7rdMSLltl99" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="7rdMSLltl9a" role="3cqZAp">
+        <node concept="2YIFZM" id="7rdMSLltl9b" role="3clFbG">
+          <ref role="37wK5l" node="GQFmhcDvZa" resolve="doWithListOfTypes" />
+          <ref role="1Pybhc" node="12WRc28WG_m" resolve="TypingHelper" />
+          <node concept="2OqwBi" id="7rdMSLltl9c" role="37wK5m">
+            <node concept="37vLTw" id="7rdMSLltl9d" role="2Oq$k0">
+              <ref role="3cqZAo" node="7rdMSLltl93" resolve="og" />
+            </node>
+            <node concept="3Tsc0h" id="7rdMSLltl9e" role="2OqNvi">
+              <ref role="3TtcxE" to="hm2y:4CksDrmwcd4" resolve="expressions" />
+            </node>
+          </node>
+          <node concept="1bVj0M" id="7rdMSLltl9f" role="37wK5m">
+            <node concept="3clFbS" id="7rdMSLltl9g" role="1bW5cS">
+              <node concept="3cpWs8" id="7rdMSLltl9h" role="3cqZAp">
+                <node concept="3cpWsn" id="7rdMSLltl9i" role="3cpWs9">
+                  <property role="TrG5h" value="elementSupertype" />
+                  <property role="3TUv4t" value="true" />
+                  <node concept="3Tqbb2" id="7rdMSLltl9j" role="1tU5fm" />
+                  <node concept="2YIFZM" id="7rdMSLltl9k" role="33vP2m">
+                    <ref role="37wK5l" to="oq0c:2NHHcg2KyAX" resolve="computeSupertype" />
+                    <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="37vLTw" id="7rdMSLltl9l" role="37wK5m">
+                      <ref role="3cqZAo" node="7rdMSLltl9x" resolve="types" />
+                    </node>
+                    <node concept="3clFbT" id="7rdMSLltl9m" role="37wK5m">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                    <node concept="2OqwBi" id="7rdMSLltl9n" role="37wK5m">
+                      <node concept="2QUAEa" id="7rdMSLltl9o" role="2Oq$k0" />
+                      <node concept="liA8E" id="7rdMSLltl9p" role="2OqNvi">
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Z5TYs" id="7rdMSLltl9q" role="3cqZAp">
+                <node concept="mw_s8" id="7rdMSLltl9r" role="1ZfhK$">
+                  <node concept="1Z2H0r" id="7rdMSLltl9s" role="mwGJk">
+                    <node concept="1YBJjd" id="7rdMSLltlv4" role="1Z2MuG">
+                      <ref role="1YBMHb" node="7rdMSLltkZ$" resolve="mulTag" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="mw_s8" id="7rdMSLlvxJH" role="1ZfhKB">
+                  <node concept="2YIFZM" id="7rdMSLlvxQm" role="mwGJk">
+                    <ref role="37wK5l" to="oq0c:7rdMSLltmV0" resolve="setInfinityPrecisionIfNotInteger" />
+                    <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                    <node concept="2YIFZM" id="7rdMSLlvy3p" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:7rdMSLlrhA5" resolve="widenToInfinityIfNumber" />
+                      <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                      <node concept="37vLTw" id="7rdMSLlvy96" role="37wK5m">
+                        <ref role="3cqZAo" node="7rdMSLltl9i" resolve="elementSupertype" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTG" id="7rdMSLltl9x" role="1bW2Oz">
+              <property role="TrG5h" value="types" />
+              <node concept="2I9FWS" id="7rdMSLltl9y" role="1tU5fm">
+                <ref role="2I9WkF" to="hm2y:6sdnDbSlaok" resolve="Type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7rdMSLltkZ$" role="1YuTPh">
+      <property role="TrG5h" value="mulTag" />
+      <ref role="1YaFvo" to="hm2y:7rdMSLlsZXJ" resolve="MulTag" />
+    </node>
+  </node>
 </model>
 

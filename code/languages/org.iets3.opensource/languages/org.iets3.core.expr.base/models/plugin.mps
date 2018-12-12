@@ -809,17 +809,6 @@
         <node concept="17QB3L" id="5HLmk5GD8hc" role="1tU5fm" />
       </node>
     </node>
-    <node concept="3clFb_" id="7rdMSLlrifb" role="jymVt">
-      <property role="TrG5h" value="widenToInfinityIfNumber" />
-      <property role="1EzhhJ" value="true" />
-      <node concept="3Tqbb2" id="7rdMSLlrifc" role="3clF45" />
-      <node concept="3Tm1VV" id="7rdMSLlrifd" role="1B3o_S" />
-      <node concept="3clFbS" id="7rdMSLlrife" role="3clF47" />
-      <node concept="37vLTG" id="7rdMSLlrifh" role="3clF46">
-        <property role="TrG5h" value="type" />
-        <node concept="3Tqbb2" id="7rdMSLlrkZq" role="1tU5fm" />
-      </node>
-    </node>
     <node concept="3clFb_" id="2Qbt$1tSx2j" role="jymVt">
       <property role="TrG5h" value="createRealType" />
       <property role="1EzhhJ" value="true" />
@@ -934,6 +923,29 @@
       <node concept="3clFbS" id="2NHHcg2KrmG" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="2Qbt$1tSq4_" role="jymVt" />
+    <node concept="3clFb_" id="7rdMSLlrifb" role="jymVt">
+      <property role="TrG5h" value="widenToInfinityIfNumber" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="7rdMSLlrifc" role="3clF45" />
+      <node concept="3Tm1VV" id="7rdMSLlrifd" role="1B3o_S" />
+      <node concept="3clFbS" id="7rdMSLlrife" role="3clF47" />
+      <node concept="37vLTG" id="7rdMSLlrifh" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="7rdMSLlrkZq" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="7rdMSLltnzc" role="jymVt">
+      <property role="TrG5h" value="setInfinitePrecisionIfNotInteger" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="7rdMSLltnzd" role="3clF45" />
+      <node concept="3Tm1VV" id="7rdMSLltnze" role="1B3o_S" />
+      <node concept="3clFbS" id="7rdMSLltnzf" role="3clF47" />
+      <node concept="37vLTG" id="7rdMSLltnzg" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="7rdMSLltnzh" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7rdMSLlto6X" role="jymVt" />
     <node concept="3clFb_" id="7qm5H0bvl$9" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="reverseValue" />
@@ -1543,6 +1555,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="7rdMSLltmOM" role="jymVt" />
     <node concept="2YIFZL" id="7rdMSLlrhA5" role="jymVt">
       <property role="TrG5h" value="widenToInfinityIfNumber" />
       <node concept="3Tm1VV" id="7rdMSLlrhA7" role="1B3o_S" />
@@ -1565,9 +1578,32 @@
         <property role="TrG5h" value="type" />
         <node concept="3Tqbb2" id="7rdMSLlrhAf" role="1tU5fm" />
       </node>
-      <node concept="3Tqbb2" id="7rdMSLlrlx$" role="3clF45">
-        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      <node concept="3Tqbb2" id="7rdMSLlrlx$" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="7rdMSLltn6w" role="jymVt" />
+    <node concept="2YIFZL" id="7rdMSLltmV0" role="jymVt">
+      <property role="TrG5h" value="setInfinityPrecisionIfNotInteger" />
+      <node concept="3Tm1VV" id="7rdMSLltmV1" role="1B3o_S" />
+      <node concept="3clFbS" id="7rdMSLltmV2" role="3clF47">
+        <node concept="3clFbF" id="7rdMSLltmV3" role="3cqZAp">
+          <node concept="2OqwBi" id="7rdMSLltmV4" role="3clFbG">
+            <node concept="1rXfSq" id="7rdMSLltmV5" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="7rdMSLltmV6" role="2OqNvi">
+              <ref role="37wK5l" node="7rdMSLltnzc" resolve="setInfinitePrecisionIfNotInteger" />
+              <node concept="37vLTw" id="7rdMSLltmV7" role="37wK5m">
+                <ref role="3cqZAo" node="7rdMSLltmV8" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
+      <node concept="37vLTG" id="7rdMSLltmV8" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="7rdMSLltmV9" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="7rdMSLltmVa" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="2NHHcg2KyiY" role="jymVt" />
     <node concept="2YIFZL" id="2NHHcg2KyAX" role="jymVt">
