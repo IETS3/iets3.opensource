@@ -4392,6 +4392,12 @@
             <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="55c_dSQ4QzY" role="3bR37C">
+          <node concept="3bR9La" id="55c_dSQ4QzZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6pNCASbLJpT" role="2G$12L">
         <property role="BnDLt" value="true" />

@@ -14,6 +14,7 @@
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -39,6 +40,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="vzlu" ref="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
@@ -6489,40 +6491,40 @@
         </node>
         <node concept="2iRfu4" id="1vo80oMm0Y" role="2iSdaV" />
       </node>
-      <node concept="3EZMnI" id="1vo80oMm0Z" role="3EZMnx">
-        <node concept="VPM3Z" id="1vo80oMm10" role="3F10Kt">
+      <node concept="3EZMnI" id="3TIaSh_20yv" role="3EZMnx">
+        <node concept="VPM3Z" id="3TIaSh_20yw" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3XFhqQ" id="1vo80oMm11" role="3EZMnx" />
-        <node concept="3F0ifn" id="1vo80oMm12" role="3EZMnx">
-          <property role="3F0ifm" value="ignore:     " />
+        <node concept="3XFhqQ" id="3TIaSh_20yx" role="3EZMnx" />
+        <node concept="3F0ifn" id="3TIaSh_20yy" role="3EZMnx">
+          <property role="3F0ifm" value="ignore:   " />
         </node>
-        <node concept="2iRfu4" id="1vo80oMm13" role="2iSdaV" />
-        <node concept="3F2HdR" id="1vo80oMm14" role="3EZMnx">
+        <node concept="2iRfu4" id="3TIaSh_20yz" role="2iSdaV" />
+        <node concept="3F2HdR" id="3TIaSh_20y$" role="3EZMnx">
           <property role="S$F3r" value="true" />
           <ref role="1NtTu8" to="av4b:3_DFadNcYyg" resolve="ignoredConcepts" />
-          <node concept="2iRkQZ" id="1vo80oMm15" role="2czzBx" />
-          <node concept="1HlG4h" id="1vo80oMm16" role="3EmGlc">
-            <node concept="1HfYo3" id="1vo80oMm17" role="1HlULh">
-              <node concept="3TQlhw" id="1vo80oMm18" role="1Hhtcw">
-                <node concept="3clFbS" id="1vo80oMm19" role="2VODD2">
-                  <node concept="3clFbF" id="1vo80oMm1a" role="3cqZAp">
-                    <node concept="3cpWs3" id="1vo80oMm1b" role="3clFbG">
-                      <node concept="Xl_RD" id="1vo80oMm1c" role="3uHU7w">
+          <node concept="2iRkQZ" id="3TIaSh_20y_" role="2czzBx" />
+          <node concept="1HlG4h" id="3TIaSh_20yA" role="3EmGlc">
+            <node concept="1HfYo3" id="3TIaSh_20yB" role="1HlULh">
+              <node concept="3TQlhw" id="3TIaSh_20yC" role="1Hhtcw">
+                <node concept="3clFbS" id="3TIaSh_20yD" role="2VODD2">
+                  <node concept="3clFbF" id="3TIaSh_20yE" role="3cqZAp">
+                    <node concept="3cpWs3" id="3TIaSh_20yF" role="3clFbG">
+                      <node concept="Xl_RD" id="3TIaSh_20yG" role="3uHU7w">
                         <property role="Xl_RC" value=" ignored concepts}" />
                       </node>
-                      <node concept="3cpWs3" id="1vo80oMm1d" role="3uHU7B">
-                        <node concept="Xl_RD" id="1vo80oMm1e" role="3uHU7B">
+                      <node concept="3cpWs3" id="3TIaSh_20yH" role="3uHU7B">
+                        <node concept="Xl_RD" id="3TIaSh_20yI" role="3uHU7B">
                           <property role="Xl_RC" value="{" />
                         </node>
-                        <node concept="2OqwBi" id="1vo80oMm1f" role="3uHU7w">
-                          <node concept="2OqwBi" id="1vo80oMm1g" role="2Oq$k0">
-                            <node concept="pncrf" id="1vo80oMm1h" role="2Oq$k0" />
-                            <node concept="3Tsc0h" id="1vo80oMm1i" role="2OqNvi">
+                        <node concept="2OqwBi" id="3TIaSh_20yJ" role="3uHU7w">
+                          <node concept="2OqwBi" id="3TIaSh_20yK" role="2Oq$k0">
+                            <node concept="pncrf" id="3TIaSh_20yL" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="3TIaSh_20yM" role="2OqNvi">
                               <ref role="3TtcxE" to="av4b:3_DFadNcYyg" resolve="ignoredConcepts" />
                             </node>
                           </node>
-                          <node concept="34oBXx" id="1vo80oMm1j" role="2OqNvi" />
+                          <node concept="34oBXx" id="3TIaSh_20yN" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

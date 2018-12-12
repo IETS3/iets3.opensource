@@ -1100,6 +1100,42 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="4ptnK4jiyZY" role="3cqZAp">
+              <node concept="3cpWsn" id="4ptnK4jiyZZ" role="3cpWs9">
+                <property role="TrG5h" value="record" />
+                <node concept="3Tqbb2" id="4ptnK4jiz00" role="1tU5fm">
+                  <ref role="ehGHo" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                </node>
+                <node concept="2OqwBi" id="4ptnK4jiz01" role="33vP2m">
+                  <node concept="1PxgMI" id="4ptnK4jiz02" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4ptnK4jiz03" role="1m5AlR">
+                      <node concept="oxGPV" id="4ptnK4jiz04" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="4ptnK4jiz05" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yv47:4ptnK4jbr8W" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="chp4Y" id="5Odw3gxvoNw" role="3oSUPX">
+                      <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5Odw3gxvp20" role="2OqNvi">
+                    <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3TIaSh_h4V2" role="3cqZAp">
+              <node concept="2OqwBi" id="3TIaSh_h4V3" role="3clFbG">
+                <node concept="3fckFw" id="3TIaSh_h4V4" role="2Oq$k0" />
+                <node concept="liA8E" id="3TIaSh_h4V5" role="2OqNvi">
+                  <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
+                  <node concept="37vLTw" id="3TIaSh_h6gf" role="37wK5m">
+                    <ref role="3cqZAo" node="4ptnK4jiyZZ" resolve="record" />
+                  </node>
+                  <node concept="10Nm6u" id="3TIaSh_h6hN" role="37wK5m" />
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="4ptnK4jiF3A" role="3cqZAp">
               <node concept="2GrKxI" id="4ptnK4jiF3C" role="2Gsz3X">
                 <property role="TrG5h" value="setter" />
@@ -1122,30 +1158,6 @@
               <node concept="3clFbS" id="4ptnK4jiF3G" role="2LFqv$">
                 <node concept="36RZgH" id="37V13JRni9w" role="3cqZAp">
                   <ref role="36RZmv" to="yv47:4ptnK4jbqZG" resolve="FieldSetter" />
-                </node>
-                <node concept="3cpWs8" id="4ptnK4jiyZY" role="3cqZAp">
-                  <node concept="3cpWsn" id="4ptnK4jiyZZ" role="3cpWs9">
-                    <property role="TrG5h" value="record" />
-                    <node concept="3Tqbb2" id="4ptnK4jiz00" role="1tU5fm">
-                      <ref role="ehGHo" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
-                    </node>
-                    <node concept="2OqwBi" id="4ptnK4jiz01" role="33vP2m">
-                      <node concept="1PxgMI" id="4ptnK4jiz02" role="2Oq$k0">
-                        <node concept="2OqwBi" id="4ptnK4jiz03" role="1m5AlR">
-                          <node concept="oxGPV" id="4ptnK4jiz04" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="4ptnK4jiz05" role="2OqNvi">
-                            <ref role="3Tt5mk" to="yv47:4ptnK4jbr8W" resolve="type" />
-                          </node>
-                        </node>
-                        <node concept="chp4Y" id="5Odw3gxvoNw" role="3oSUPX">
-                          <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="5Odw3gxvp20" role="2OqNvi">
-                        <ref role="37wK5l" to="nu60:3KgQFIke4EG" resolve="record" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
                 <node concept="3cpWs8" id="4ptnK4jiz08" role="3cqZAp">
                   <node concept="3cpWsn" id="4ptnK4jiz09" role="3cpWs9">
