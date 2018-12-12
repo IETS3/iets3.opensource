@@ -21,9 +21,11 @@
         <child id="5338017450510304068" name="expressions" index="2s_b7i" />
         <child id="5338017450510304066" name="tag" index="2s_b7k" />
       </concept>
+      <concept id="8560722270289800014" name="org.iets3.core.expr.base.structure.PlusTag" flags="ng" index="zEY32" />
       <concept id="8006404979729416973" name="org.iets3.core.expr.base.structure.OrTag" flags="ng" index="2BFbn_" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -256,6 +258,67 @@
         <node concept="2vmpnb" id="6WstIz8HDDc" role="_fkuS" />
       </node>
     </node>
+  </node>
+  <node concept="_iOnU" id="7rdMSLlrdN6">
+    <property role="TrG5h" value="arithgroups" />
+    <property role="2SXJ1i" value="true" />
+    <property role="1XBH2A" value="true" />
+    <node concept="2zPypq" id="7rdMSLlrdN7" role="_iOnB">
+      <property role="TrG5h" value="one" />
+      <node concept="30bXRB" id="7rdMSLlrdN8" role="2zPyp_">
+        <property role="30bXRw" value="1" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="7rdMSLlrdN9" role="_iOnB" />
+    <node concept="_fkuM" id="7rdMSLlrdNa" role="_iOnB">
+      <property role="TrG5h" value="integers" />
+      <node concept="_fkuZ" id="7rdMSLlreyV" role="_fkp5">
+        <node concept="_fku$" id="7rdMSLlreyW" role="_fkur" />
+        <node concept="2s_bbH" id="7rdMSLlrezc" role="_fkuY">
+          <node concept="zEY32" id="7rdMSLlrezP" role="2s_b7k" />
+          <node concept="_emDc" id="7rdMSLlsK3k" role="2s_b7i">
+            <ref role="_emDf" node="7rdMSLlrdN7" resolve="one" />
+          </node>
+          <node concept="30bXRB" id="7rdMSLlre$M" role="2s_b7i">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bXRB" id="7rdMSLlre_G" role="2s_b7i">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="7rdMSLlreB1" role="_fkuS">
+          <property role="30bXRw" value="6" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7rdMSLlsJJy" role="_fkp5">
+        <node concept="_fku$" id="7rdMSLlsJJz" role="_fkur" />
+        <node concept="2s_bbH" id="7rdMSLlsJJ$" role="_fkuY">
+          <node concept="zEY32" id="7rdMSLlsJJ_" role="2s_b7k" />
+          <node concept="30dDTi" id="7rdMSLlsKra" role="2s_b7i">
+            <node concept="30bXRB" id="7rdMSLlsKrv" role="30dEs_">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="30bXRB" id="7rdMSLlsJJA" role="30dEsF">
+              <property role="30bXRw" value="1.1" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="7rdMSLlsJJB" role="2s_b7i">
+            <property role="30bXRw" value="2.2" />
+          </node>
+          <node concept="30bXRB" id="7rdMSLlsJJC" role="2s_b7i">
+            <property role="30bXRw" value="3.3" />
+          </node>
+          <node concept="_emDc" id="7rdMSLlsK5J" role="2s_b7i">
+            <ref role="_emDf" node="7rdMSLlrdN7" resolve="one" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="7rdMSLlsJJD" role="_fkuS">
+          <property role="30bXRw" value="8.7" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7rdMSLlrdNM" role="_iOnB" />
+    <node concept="_ixoA" id="7rdMSLlrdOr" role="_iOnB" />
   </node>
 </model>
 

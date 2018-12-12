@@ -809,6 +809,17 @@
         <node concept="17QB3L" id="5HLmk5GD8hc" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="7rdMSLlrifb" role="jymVt">
+      <property role="TrG5h" value="widenToInfinityIfNumber" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="7rdMSLlrifc" role="3clF45" />
+      <node concept="3Tm1VV" id="7rdMSLlrifd" role="1B3o_S" />
+      <node concept="3clFbS" id="7rdMSLlrife" role="3clF47" />
+      <node concept="37vLTG" id="7rdMSLlrifh" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="7rdMSLlrkZq" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="2Qbt$1tSx2j" role="jymVt">
       <property role="TrG5h" value="createRealType" />
       <property role="1EzhhJ" value="true" />
@@ -1530,6 +1541,32 @@
         <node concept="3Tqbb2" id="3kzwyUOEp9M" role="1tU5fm">
           <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
         </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="7rdMSLlrhA5" role="jymVt">
+      <property role="TrG5h" value="widenToInfinityIfNumber" />
+      <node concept="3Tm1VV" id="7rdMSLlrhA7" role="1B3o_S" />
+      <node concept="3clFbS" id="7rdMSLlrhA8" role="3clF47">
+        <node concept="3clFbF" id="7rdMSLlrhA9" role="3cqZAp">
+          <node concept="2OqwBi" id="7rdMSLlrhAa" role="3clFbG">
+            <node concept="1rXfSq" id="7rdMSLlrhAb" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="7rdMSLlrhAc" role="2OqNvi">
+              <ref role="37wK5l" node="7rdMSLlrifb" resolve="widenToInfinityIfNumber" />
+              <node concept="37vLTw" id="7rdMSLlrhAd" role="37wK5m">
+                <ref role="3cqZAo" node="7rdMSLlrhAe" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7rdMSLlrhAe" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="7rdMSLlrhAf" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="7rdMSLlrlx$" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
     <node concept="2tJIrI" id="2NHHcg2KyiY" role="jymVt" />
