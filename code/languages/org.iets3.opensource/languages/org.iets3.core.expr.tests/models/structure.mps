@@ -601,6 +601,13 @@
     <property role="34LRSv" value="test coverage" />
     <property role="R4oN_" value="assesses coverage of the test code" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+    <node concept="1TJgyj" id="1vo80oMkNK" role="1TKVEi">
+      <property role="IQ2ns" value="26846226075438320" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="measureFor" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1vo80oMkMQ" resolve="MeasureCoverageFor" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4e_7uAt7oTg">
     <property role="EcuMT" value="4874335060898975312" />
@@ -1213,6 +1220,24 @@
       <property role="IQ2nx" value="6515169867106129815" />
       <property role="TrG5h" value="coverageRatio" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vo80oMkMQ">
+    <property role="EcuMT" value="26846226075438262" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="MeasureCoverageFor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1vo80oMkMR" role="1TKVEi">
+      <property role="IQ2ns" value="26846226075438263" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="1vo80oWF62" role="1TKVEl">
+      <property role="IQ2nx" value="26846226078151042" />
+      <property role="TrG5h" value="completeSubtree" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
