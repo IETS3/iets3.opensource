@@ -36,7 +36,9 @@
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
       </concept>
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -3847,6 +3849,33 @@
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="6WstIz8MK6O" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="7rdMSLlhFCc" role="6VMZX">
+      <node concept="2iRfu4" id="7rdMSLlhFCd" role="2iSdaV" />
+      <node concept="3F0ifn" id="7rdMSLlhFKZ" role="3EZMnx">
+        <property role="3F0ifm" value="reduced:" />
+      </node>
+      <node concept="1HlG4h" id="7rdMSLlhFvz" role="3EZMnx">
+        <node concept="1HfYo3" id="7rdMSLlhFv$" role="1HlULh">
+          <node concept="3TQlhw" id="7rdMSLlhFv_" role="1Hhtcw">
+            <node concept="3clFbS" id="7rdMSLlhFvA" role="2VODD2">
+              <node concept="3clFbF" id="7rdMSLlhM3X" role="3cqZAp">
+                <node concept="2OqwBi" id="7rdMSLlhN2I" role="3clFbG">
+                  <node concept="2OqwBi" id="7rdMSLlhMiA" role="2Oq$k0">
+                    <node concept="pncrf" id="7rdMSLlhM3W" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7rdMSLlhMFB" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:4CksDrmwwdX" resolve="reduce" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7rdMSLlhNOm" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
