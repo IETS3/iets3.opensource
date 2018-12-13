@@ -342,7 +342,7 @@
     <property role="3GE5qa" value="record" />
     <property role="TrG5h" value="RecordMember" />
     <property role="EcuMT" value="8811147530084018361" />
-    <property role="R4oN_" value="--" />
+    <property role="R4oN_" value="a new member in this record" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="xu7xcKdQCE" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKdQCB" resolve="IRecordMember" />
@@ -1153,6 +1153,37 @@
     </node>
     <node concept="PrWs8" id="58eyHuUmFNK" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6WstIz8MK67">
+    <property role="EcuMT" value="8006404979731136903" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <property role="TrG5h" value="EnumIsInTarget" />
+    <property role="34LRSv" value="isIn" />
+    <property role="R4oN_" value="check enum against several literals" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6WstIz8MK68" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="6WstIz8MK6a" role="1TKVEi">
+      <property role="IQ2ns" value="8006404979731136906" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selectors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6WstIz8MKZd">
+    <property role="EcuMT" value="8006404979731140557" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <property role="TrG5h" value="EnumIsInSelector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6WstIz8MKZe" role="1TKVEi">
+      <property role="IQ2ns" value="8006404979731140558" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
 </model>

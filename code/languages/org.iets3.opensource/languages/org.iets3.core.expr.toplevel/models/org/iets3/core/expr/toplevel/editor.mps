@@ -36,7 +36,9 @@
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
       </concept>
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -3814,6 +3816,88 @@
   <node concept="3p36aQ" id="3z0DCryc6iR">
     <property role="3GE5qa" value="record" />
     <ref role="aqKnT" to="yv47:58eyHuUiMwN" resolve="EmptyMember" />
+  </node>
+  <node concept="24kQdi" id="6WstIz8MK6A">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="1XX52x" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
+    <node concept="3EZMnI" id="6WstIz8MK6C" role="2wV5jI">
+      <node concept="l2Vlx" id="6WstIz8MK6D" role="2iSdaV" />
+      <node concept="3F0ifn" id="6WstIz8MK6E" role="3EZMnx">
+        <property role="3F0ifm" value="isIn" />
+      </node>
+      <node concept="3F0ifn" id="6WstIz8MK6F" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="6WstIz8MK6G" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6WstIz8MK6H" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6WstIz8MK7E" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="yv47:6WstIz8MK6a" resolve="selectors" />
+        <node concept="l2Vlx" id="6WstIz8MK7G" role="2czzBx" />
+        <node concept="3F0ifn" id="6WstIz8MK7X" role="2czzBI">
+          <property role="3F0ifm" value="" />
+          <node concept="VPxyj" id="6WstIz8MK80" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6WstIz8MK6N" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6WstIz8MK6O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="7rdMSLlhFCc" role="6VMZX">
+      <node concept="2iRfu4" id="7rdMSLlhFCd" role="2iSdaV" />
+      <node concept="3F0ifn" id="7rdMSLlhFKZ" role="3EZMnx">
+        <property role="3F0ifm" value="reduced:" />
+      </node>
+      <node concept="1HlG4h" id="7rdMSLlhFvz" role="3EZMnx">
+        <node concept="1HfYo3" id="7rdMSLlhFv$" role="1HlULh">
+          <node concept="3TQlhw" id="7rdMSLlhFv_" role="1Hhtcw">
+            <node concept="3clFbS" id="7rdMSLlhFvA" role="2VODD2">
+              <node concept="3clFbF" id="7rdMSLlhM3X" role="3cqZAp">
+                <node concept="2OqwBi" id="7rdMSLlhN2I" role="3clFbG">
+                  <node concept="2OqwBi" id="7rdMSLlhMiA" role="2Oq$k0">
+                    <node concept="pncrf" id="7rdMSLlhM3W" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7rdMSLlhMFB" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:4CksDrmwwdX" resolve="reduce" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7rdMSLlhNOm" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6WstIz8MKZE">
+    <property role="3GE5qa" value="enum.oneof" />
+    <ref role="1XX52x" to="yv47:6WstIz8MKZd" resolve="EnumIsInSelector" />
+    <node concept="1iCGBv" id="6WstIz8MKZG" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:6WstIz8MKZe" resolve="literal" />
+      <node concept="1sVBvm" id="6WstIz8MKZI" role="1sWHZn">
+        <node concept="3F0A7n" id="6WstIz8MKZS" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="Vb9p2" id="6WstIz8MKZW" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+          <node concept="VechU" id="6WstIz8MKZX" role="3F10Kt">
+            <property role="Vb096" value="darkGray" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
