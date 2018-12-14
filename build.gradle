@@ -68,15 +68,15 @@ if (project.hasProperty('iets3OpenSourceVersion')) {
         }
         println "##teamcity[buildNumber '${version}']"
     } else {
-        println "Local build detected, version will be SNAPSHOT"
         version = "$major.$minor-SNAPSHOT"
+        println "Local build detected, version will be $version"
     }
 }
 
 if (!project.hasProperty("mbeddrVersion")) {
     if (forceLocal) {
-        logger.log(LogLevel.WARN, "Local SNAPSHOT version forced")
         ext.mbeddrVersionSelector = '1.0-SNAPSHOT'
+        logger.log(LogLevel.WARN, "Local mbeddr version $ext.mbeddrVersionSelector forced")
     }
 } else {
     logger.log(LogLevel.WARN, "mbeddr version externally overwritten to $ext.mbeddrVersion")
