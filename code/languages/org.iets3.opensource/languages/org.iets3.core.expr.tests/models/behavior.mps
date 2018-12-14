@@ -6980,6 +6980,36 @@
             </node>
           </node>
         </node>
+        <node concept="2Gpval" id="3L1$CQtAiKE" role="3cqZAp">
+          <node concept="2GrKxI" id="3L1$CQtAiKF" role="2Gsz3X">
+            <property role="TrG5h" value="mf" />
+          </node>
+          <node concept="2OqwBi" id="3L1$CQtAiKG" role="2GsD0m">
+            <node concept="13iPFW" id="3L1$CQtAiKH" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="3L1$CQtAjB5" role="2OqNvi">
+              <ref role="3TtcxE" to="av4b:1vo80oMkNK" resolve="measureFor" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3L1$CQtAiKJ" role="2LFqv$">
+            <node concept="3clFbF" id="3L1$CQtAiKK" role="3cqZAp">
+              <node concept="2YIFZM" id="3L1$CQtAkff" role="3clFbG">
+                <ref role="37wK5l" to="pbu6:3L1$CQt_kee" resolve="registerMeasuredConcept" />
+                <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
+                <node concept="2OqwBi" id="3L1$CQtAkfg" role="37wK5m">
+                  <node concept="2OqwBi" id="3L1$CQtAkfh" role="2Oq$k0">
+                    <node concept="2GrUjf" id="3L1$CQtAkfi" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3L1$CQtAiKF" resolve="mf" />
+                    </node>
+                    <node concept="3TrEf2" id="3L1$CQtAkfj" role="2OqNvi">
+                      <ref role="3Tt5mk" to="av4b:1vo80oMkMR" resolve="concept" />
+                    </node>
+                  </node>
+                  <node concept="1rGIog" id="3L1$CQtAkfk" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5IKJrJHQ1PS" role="3cqZAp">
           <node concept="3cpWsn" id="5IKJrJHQ1PT" role="3cpWs9">
             <property role="TrG5h" value="suites" />
