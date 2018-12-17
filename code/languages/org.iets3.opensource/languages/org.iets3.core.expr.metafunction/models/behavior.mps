@@ -2,10 +2,10 @@
 <model ref="r:56a608ae-00b6-4898-818c-f6bec09c0336(org.iets3.core.expr.metafunction.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -33,7 +33,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -211,9 +210,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -989,8 +985,8 @@
                 <node concept="37vLTw" id="3WWvqarxHY2" role="2Oq$k0">
                   <ref role="3cqZAo" node="3WWvqarxHfu" resolve="coveredArgs" />
                 </node>
-                <node concept="2l5eF5" id="3WWvqarxJA_" role="2OqNvi">
-                  <node concept="37vLTw" id="3WWvqarxJCH" role="2l6Ag6">
+                <node concept="TSZUe" id="1D8fMMrKjdr" role="2OqNvi">
+                  <node concept="37vLTw" id="1D8fMMrKjdq" role="25WWJ7">
                     <ref role="3cqZAo" node="3WWvqarxz21" resolve="found" />
                   </node>
                 </node>
@@ -1066,8 +1062,8 @@
                       <node concept="37vLTw" id="3WWvqaryemy" role="2Oq$k0">
                         <ref role="3cqZAo" node="3WWvqarxHfu" resolve="coveredArgs" />
                       </node>
-                      <node concept="2l5eF5" id="3WWvqaryemz" role="2OqNvi">
-                        <node concept="37vLTw" id="3WWvqaryiqA" role="2l6Ag6">
+                      <node concept="TSZUe" id="1D8fMMrKjdt" role="2OqNvi">
+                        <node concept="37vLTw" id="1D8fMMrKjds" role="25WWJ7">
                           <ref role="3cqZAo" node="3WWvqaryg0C" resolve="newNewArg" />
                         </node>
                       </node>
@@ -1281,7 +1277,6 @@
       <node concept="3clFbS" id="6dpaV_AQ5X6" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="4HGbj9T3qnj" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

@@ -124,9 +124,6 @@
       <property role="IQ2nx" value="5115872837157054173" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="PrWs8" id="7jF3cv6VCok" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="PrWs8" id="4OgAv3N4SrD" role="PzmwI">
       <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
     </node>

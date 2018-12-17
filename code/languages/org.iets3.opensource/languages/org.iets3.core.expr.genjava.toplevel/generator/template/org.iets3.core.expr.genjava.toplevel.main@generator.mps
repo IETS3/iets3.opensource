@@ -2,8 +2,8 @@
 <model ref="r:77acc36f-5eb1-43af-9f80-e6d4d70bca5f(org.iets3.core.expr.genjava.toplevel.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -487,6 +487,9 @@
   </registry>
   <node concept="bUwia" id="1Ds3skywt4G">
     <property role="TrG5h" value="main" />
+    <node concept="1puMqW" id="7rdMSLlh1ph" role="1puA0r">
+      <ref role="1puQsG" node="7rdMSLlgYa6" resolve="preprocessEnumIsIn" />
+    </node>
     <node concept="3aamgX" id="oj24_nZBY1" role="3acgRq">
       <ref role="30HIoZ" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
       <node concept="1Koe21" id="oj24_nZBYZ" role="1lVwrX">
@@ -1052,9 +1055,6 @@
       <property role="TrG5h" value="Getter" />
       <ref role="2rZz_L" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
       <ref role="2rTdP9" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
-    </node>
-    <node concept="1puMqW" id="7rdMSLlh1ph" role="1puA0r">
-      <ref role="1puQsG" node="7rdMSLlgYa6" resolve="preprocessEnumIsIn" />
     </node>
     <node concept="1puMqW" id="oj24_obl15" role="1puA0r">
       <ref role="1puQsG" node="oj24_oau03" resolve="preprocessRecordChangeTarget" />

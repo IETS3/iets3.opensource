@@ -102,9 +102,6 @@
     <property role="TrG5h" value="GlossaryDocSection" />
     <property role="EcuMT" value="7551038907536072626" />
     <ref role="1TJDcQ" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
-    <node concept="PrWs8" id="4tXyFaWy_TJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6zaFu4oQ9na">
     <property role="TrG5h" value="TermAttribute" />

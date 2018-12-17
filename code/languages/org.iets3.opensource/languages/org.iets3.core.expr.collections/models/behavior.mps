@@ -2,9 +2,9 @@
 <model ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,7 +35,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -323,7 +322,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="6LLGpXJ65dV" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -1574,7 +1572,6 @@
       <node concept="17QB3L" id="6zmBjqUjnLh" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5d4VabvyeaQ" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -1724,7 +1721,6 @@
     <property role="3GE5qa" value="list" />
     <ref role="13h7C2" to="700h:6zmBjqUinsw" resolve="ListType" />
     <node concept="13i0hz" id="2uo6UInBpje" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -2229,7 +2225,6 @@
     <property role="3GE5qa" value="set" />
     <ref role="13h7C2" to="700h:7GwCuf2Wbm7" resolve="SetType" />
     <node concept="13i0hz" id="7GwCuf2Wbni" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -3033,7 +3028,6 @@
     <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
     <node concept="13i0hz" id="3tudP__$H_c" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -4362,7 +4356,6 @@
     <property role="3GE5qa" value="map" />
     <ref role="13h7C2" to="700h:7kYh9WszdBQ" resolve="MapType" />
     <node concept="13i0hz" id="2uo6UInIs13" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

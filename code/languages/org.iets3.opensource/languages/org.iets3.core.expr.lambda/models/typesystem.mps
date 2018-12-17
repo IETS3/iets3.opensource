@@ -288,9 +288,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -1602,12 +1599,12 @@
               <node concept="37vLTw" id="TUBgQ0RcsF" role="2Oq$k0">
                 <ref role="3cqZAo" node="TUBgQ0Rapp" resolve="names" />
               </node>
-              <node concept="2l5eF5" id="TUBgQ0RdKr" role="2OqNvi">
-                <node concept="2OqwBi" id="TUBgQ0RdUI" role="2l6Ag6">
-                  <node concept="2GrUjf" id="TUBgQ0RdKR" role="2Oq$k0">
+              <node concept="TSZUe" id="1D8fMMrKjdl" role="2OqNvi">
+                <node concept="2OqwBi" id="1D8fMMrKjdi" role="25WWJ7">
+                  <node concept="2GrUjf" id="1D8fMMrKjdj" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="TUBgQ0R9Cp" resolve="a" />
                   </node>
-                  <node concept="3TrcHB" id="TUBgQ0RegR" role="2OqNvi">
+                  <node concept="3TrcHB" id="1D8fMMrKjdk" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
