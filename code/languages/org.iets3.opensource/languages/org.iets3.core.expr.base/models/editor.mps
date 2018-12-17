@@ -483,6 +483,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -518,7 +519,6 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -4861,7 +4861,7 @@
               <node concept="2OqwBi" id="_kNv2Qc4V5" role="3clFbw">
                 <node concept="2OqwBi" id="_kNv2QbZqf" role="2Oq$k0">
                   <node concept="7Obwk" id="_kNv2QbZ1d" role="2Oq$k0" />
-                  <node concept="3NT_Vc" id="_kNv2Qc1y8" role="2OqNvi" />
+                  <node concept="2yIwOk" id="7KF_x0FBrnV" role="2OqNvi" />
                 </node>
                 <node concept="3O6GUB" id="_kNv2Qc5KT" role="2OqNvi">
                   <node concept="chp4Y" id="_kNv2Qc7$o" role="3QVz_e">
