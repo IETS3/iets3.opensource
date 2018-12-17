@@ -2,7 +2,7 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -268,7 +268,7 @@
     <node concept="PrWs8" id="6zmBjqUmg4u" role="PzmwI">
       <ref role="PrY4T" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
     </node>
-    <node concept="PrWs8" id="7SZA7Udl6Ft" role="PzmwI">
+    <node concept="PrWs8" id="6uwQRBjZeLm" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="4qVjx3k_rL0" role="PzmwI">
@@ -288,7 +288,7 @@
     <node concept="PrWs8" id="7GwCuf2IX6W" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
-    <node concept="PrWs8" id="7SZA7UdrNq5" role="PzmwI">
+    <node concept="PrWs8" id="6uwQRBkWoyn" role="PzmwI">
       <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
     </node>
     <node concept="PrWs8" id="1mDdTH3zTs" role="PzmwI">
@@ -362,9 +362,6 @@
     <property role="EcuMT" value="8872269265515619803" />
     <property role="R4oN_" value="existiential quantifier (true if at least one is true)" />
     <ref role="1TJDcQ" node="7GwCuf2E2W0" resolve="OneArgPredicateCollectionOp" />
-    <node concept="PrWs8" id="5$uffF3S6tT" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7GwCuf2RfRi">
     <property role="3GE5qa" value="collection" />
@@ -762,9 +759,6 @@
       <ref role="20lvS9" to="zzzn:6zmBjqUm7MQ" resolve="ShortLambdaExpression" />
       <ref role="20ksaX" node="6zmBjqUjnKt" resolve="arg" />
     </node>
-    <node concept="PrWs8" id="7SZA7UdzZKW" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
-    </node>
     <node concept="PrWs8" id="7SZA7Ud$02w" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
     </node>
@@ -843,6 +837,9 @@
     <property role="34LRSv" value="foldLeft" />
     <property role="R4oN_" value="fold left" />
     <ref role="1TJDcQ" node="4hLehKTZXcg" resolve="FoldOp" />
+    <node concept="PrWs8" id="6uwQRBlm9Vn" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hLehKTZXcg">
     <property role="EcuMT" value="4931785860342338320" />
@@ -852,9 +849,6 @@
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4hLehKU04bM" role="PzmwI">
-      <ref role="PrY4T" node="7SZA7Udl6Fm" resolve="IProvideIndex" />
-    </node>
     <node concept="PrWs8" id="4hLehKU05cE" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
     </node>
@@ -1089,6 +1083,14 @@
     <property role="EcuMT" value="444732437356045611" />
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="3SMYSUUHlJJ">
+    <property role="3GE5qa" value="collection" />
+    <property role="TrG5h" value="AnyWithIndexOp" />
+    <property role="34LRSv" value="any_with_index" />
+    <property role="EcuMT" value="4481921169623440367" />
+    <property role="R4oN_" value="existiential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
+    <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
   </node>
 </model>
 

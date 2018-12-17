@@ -145,8 +145,8 @@
                   </node>
                   <node concept="3clFbF" id="5kIYKlpmrgh" role="3cqZAp">
                     <node concept="2YIFZM" id="5kIYKlpmrgO" role="3clFbG">
-                      <ref role="37wK5l" to="i51s:~SLinkOperations.setNewChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SConcept):org.jetbrains.mps.openapi.model.SNode" resolve="setNewChild" />
                       <ref role="1Pybhc" to="i51s:~SLinkOperations" resolve="SLinkOperations" />
+                      <ref role="37wK5l" to="i51s:~SLinkOperations.setNewChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SAbstractConcept):org.jetbrains.mps.openapi.model.SNode" resolve="setNewChild" />
                       <node concept="1r4Lsj" id="5kIYKlpmri5" role="37wK5m" />
                       <node concept="37vLTw" id="5kIYKlpmrl0" role="37wK5m">
                         <ref role="3cqZAo" node="5kIYKlpmota" resolve="link" />

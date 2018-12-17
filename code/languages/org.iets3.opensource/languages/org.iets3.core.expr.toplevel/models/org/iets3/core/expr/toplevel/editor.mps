@@ -3813,10 +3813,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="3z0DCryc6iR">
-    <property role="3GE5qa" value="record" />
-    <ref role="aqKnT" to="yv47:58eyHuUiMwN" resolve="EmptyMember" />
-  </node>
   <node concept="24kQdi" id="6WstIz8MK6A">
     <property role="3GE5qa" value="enum.oneof" />
     <ref role="1XX52x" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
@@ -3879,6 +3875,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="3z0DCryc6iR">
+    <property role="3GE5qa" value="record" />
+    <ref role="aqKnT" to="yv47:58eyHuUiMwN" resolve="EmptyMember" />
   </node>
   <node concept="24kQdi" id="6WstIz8MKZE">
     <property role="3GE5qa" value="enum.oneof" />

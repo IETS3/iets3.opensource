@@ -3219,7 +3219,6 @@
     <property role="3GE5qa" value="interpreter" />
     <node concept="2tJIrI" id="78hTg1zHlLj" role="jymVt" />
     <node concept="3clFb_" id="78hTg1zHlRC" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="asBoolean" />
       <node concept="10P_77" id="78hTg1zHlW2" role="3clF45" />
       <node concept="3Tm1VV" id="78hTg1zHlRF" role="1B3o_S" />
@@ -6707,14 +6706,12 @@
     <property role="TrG5h" value="Mutator" />
     <node concept="2tJIrI" id="7WSgHRKX1Ks" role="jymVt" />
     <node concept="3clFb_" id="7WSgHRKX6hn" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getMutatedConcept" />
       <node concept="3bZ5Sz" id="7WSgHRKX6mh" role="3clF45" />
       <node concept="3Tm1VV" id="7WSgHRKX6hq" role="1B3o_S" />
       <node concept="3clFbS" id="7WSgHRKX6hr" role="3clF47" />
     </node>
     <node concept="3clFb_" id="7WSgHRKY1NI" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="appliesTo" />
       <node concept="10P_77" id="7WSgHRKY90g" role="3clF45" />
       <node concept="3Tm1VV" id="7WSgHRKY1NL" role="1B3o_S" />
@@ -6725,7 +6722,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7WSgHRKX6sV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="mutate" />
       <node concept="3Tqbb2" id="7WSgHRKX6Is" role="3clF45" />
       <node concept="3Tm1VV" id="7WSgHRKX6sY" role="1B3o_S" />
@@ -6736,7 +6732,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7WSgHRKXLZM" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isReversible" />
       <node concept="3clFbS" id="7WSgHRKXLZP" role="3clF47" />
@@ -6744,7 +6739,6 @@
       <node concept="10P_77" id="7WSgHRKXLZg" role="3clF45" />
     </node>
     <node concept="3clFb_" id="7WSgHRKXMbf" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="reversed" />
       <node concept="3clFbS" id="7WSgHRKXMbi" role="3clF47" />
@@ -8881,7 +8875,6 @@
     <property role="TrG5h" value="IDiffable" />
     <node concept="2tJIrI" id="2UfkHNj37Q4" role="jymVt" />
     <node concept="3clFb_" id="2UfkHNj3a$v" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="id" />
       <node concept="3clFbS" id="2UfkHNj3a$y" role="3clF47" />
@@ -10621,7 +10614,6 @@
     <property role="TrG5h" value="IRenderable" />
     <node concept="2tJIrI" id="4nY0kF81$kr" role="jymVt" />
     <node concept="3clFb_" id="4nY0kF81$uf" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="renderTree" />
       <node concept="3clFbS" id="4nY0kF81$ui" role="3clF47" />
@@ -13203,7 +13195,6 @@
     <property role="TrG5h" value="ILValue" />
     <node concept="2tJIrI" id="YMJl2BIYt0" role="jymVt" />
     <node concept="3clFb_" id="YMJl2BIYzo" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="setValue" />
       <node concept="3clFbS" id="YMJl2BIYzr" role="3clF47" />

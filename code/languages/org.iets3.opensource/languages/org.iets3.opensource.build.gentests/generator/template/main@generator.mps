@@ -2,8 +2,8 @@
 <model ref="r:c2c27329-2aa8-44ec-9833-000b664dd0b2(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="0" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -216,7 +216,13 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -685,6 +691,13 @@
                                 <ref role="37wK5l" to="tken:5VKiljgm7i" resolve="collect" />
                                 <node concept="37vLTw" id="4hDF5Qkghqm" role="37wK5m">
                                   <ref role="3cqZAo" node="4hDF5QkghpW" resolve="allModules" />
+                                </node>
+                                <node concept="2ShNRf" id="2xDSjdrWU3J" role="37wK5m">
+                                  <node concept="2T8Vx0" id="2xDSjdrWWGS" role="2ShVmc">
+                                    <node concept="2I9FWS" id="2xDSjdrWWGU" role="2T96Bj">
+                                      <ref role="2I9WkF" to="kdzh:5HVSRHdUrHO" resolve="BuildMps_IdeaPlugin" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>

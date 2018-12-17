@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -305,9 +305,6 @@
     </node>
     <node concept="PrWs8" id="4A8SzOV9V19" role="PzmwI">
       <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
-    <node concept="PrWs8" id="mIQkxfRmg2" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="181CQfpgIQL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />

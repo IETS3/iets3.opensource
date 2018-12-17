@@ -882,7 +882,6 @@
     <property role="TrG5h" value="IBoxValue" />
     <node concept="2tJIrI" id="4lULzfkKSd8" role="jymVt" />
     <node concept="3clFb_" id="4lULzfkKSdk" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getValue" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -908,6 +907,12 @@
     <property role="TrG5h" value="InvalidCommandException" />
     <node concept="2tJIrI" id="33mFrumnxLB" role="jymVt" />
     <node concept="3clFbW" id="2jL$v5BnAFT" role="jymVt">
+      <node concept="37vLTG" id="3z0DCrzPakN" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzParu" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="2jL$v5BnAFU" role="3clF45" />
       <node concept="3Tm1VV" id="2jL$v5BnAFV" role="1B3o_S" />
       <node concept="3clFbS" id="2jL$v5BnAFW" role="3clF47">
@@ -931,12 +936,6 @@
           <node concept="37vLTw" id="2jL$v5BnDeo" role="37wK5m">
             <ref role="3cqZAo" node="2jL$v5BnBXs" resolve="trace" />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="3z0DCrzPakN" role="3clF46">
-        <property role="TrG5h" value="causingValue" />
-        <node concept="3uibUv" id="3z0DCrzParu" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="2jL$v5BnAGG" role="3clF46">
@@ -3730,6 +3729,12 @@
     <property role="TrG5h" value="InterceptorFailedException" />
     <node concept="2tJIrI" id="4IV0h47fHvm" role="jymVt" />
     <node concept="3clFbW" id="4IV0h47fHvn" role="jymVt">
+      <node concept="37vLTG" id="3z0DCrzPa57" role="3clF46">
+        <property role="TrG5h" value="causingValue" />
+        <node concept="3uibUv" id="3z0DCrzPabM" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="4IV0h47fHvo" role="3clF45" />
       <node concept="3Tm1VV" id="4IV0h47fHvp" role="1B3o_S" />
       <node concept="3clFbS" id="4IV0h47fHvq" role="3clF47">
@@ -3753,12 +3758,6 @@
           <node concept="37vLTw" id="4IV0h47fHvx" role="37wK5m">
             <ref role="3cqZAo" node="4IV0h47fHvE" resolve="trace" />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="3z0DCrzPa57" role="3clF46">
-        <property role="TrG5h" value="causingValue" />
-        <node concept="3uibUv" id="3z0DCrzPabM" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="4IV0h47fHvy" role="3clF46">
