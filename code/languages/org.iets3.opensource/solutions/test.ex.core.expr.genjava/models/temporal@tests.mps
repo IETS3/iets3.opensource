@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="t677" ref="r:e44c17a0-d569-437a-a7a1-7c26f734db5f(org.iets3.core.expr.temporal.plugin)" />
-    <import index="bcb8" ref="r:d9a305fe-e034-4899-a382-3c8588d5dff6(org.iets3.core.expr.datetime.plugin)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
