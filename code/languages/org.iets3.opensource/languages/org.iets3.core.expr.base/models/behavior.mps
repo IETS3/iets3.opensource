@@ -14317,6 +14317,28 @@
         </node>
       </node>
     </node>
+    <node concept="Wx3nA" id="4WU0y9qgoyL" role="jymVt">
+      <property role="TrG5h" value="IGNORED_COLOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4WU0y9qgoyM" role="1B3o_S" />
+      <node concept="3uibUv" id="4WU0y9qgoyN" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2ShNRf" id="4WU0y9qgoyO" role="33vP2m">
+        <node concept="1pGfFk" id="4WU0y9qgoyP" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <node concept="3cmrfG" id="4WU0y9qgoyQ" role="37wK5m">
+            <property role="3cmrfH" value="237" />
+          </node>
+          <node concept="3cmrfG" id="4WU0y9qgoyR" role="37wK5m">
+            <property role="3cmrfH" value="134" />
+          </node>
+          <node concept="3cmrfG" id="4WU0y9qgoyS" role="37wK5m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="18$bUx5w_lV" role="jymVt" />
     <node concept="Wx3nA" id="3TIaSh$oHVE" role="jymVt">
       <property role="TrG5h" value="CODE_COVERED_COLOR" />
