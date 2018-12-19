@@ -115,6 +115,9 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="cc59a077-028a-42b0-ad86-6a1d71258691(org.iets3.core.expr.genjava.datetime)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)</dependency>
+  </runtime>
   <extendedLanguages />
 </language>
 
