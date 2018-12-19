@@ -1724,7 +1724,7 @@
                 <node concept="37vLTI" id="5ya_dKpNBt4" role="3clFbG">
                   <node concept="3h4ouC" id="6Mx2TmozGCf" role="37vLTx">
                     <node concept="1YBJjd" id="6Mx2TmozGCh" role="3h4sjZ">
-                      <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                      <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                     </node>
                     <node concept="37vLTw" id="5ya_dKpNE3I" role="3h4u4a">
                       <ref role="3cqZAo" node="5ya_dKpNDyr" resolve="lt" />
@@ -1761,7 +1761,7 @@
                         </node>
                       </node>
                       <node concept="1YBJjd" id="2ck7OjOLa1a" role="2OEOjV">
-                        <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                        <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                       </node>
                     </node>
                     <node concept="1Z5TYs" id="2ck7OjOLd2l" role="3cqZAp">
@@ -1775,7 +1775,7 @@
                       <node concept="mw_s8" id="2ck7OjOLd2o" role="1ZfhK$">
                         <node concept="1Z2H0r" id="2ck7OjOLd05" role="mwGJk">
                           <node concept="1YBJjd" id="2ck7OjOLd0w" role="1Z2MuG">
-                            <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                            <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                           </node>
                         </node>
                       </node>
@@ -1809,7 +1809,7 @@
                         <node concept="mw_s8" id="5ya_dKpNFug" role="1ZfhK$">
                           <node concept="1Z2H0r" id="5ya_dKpNFuh" role="mwGJk">
                             <node concept="1YBJjd" id="5ya_dKpNFui" role="1Z2MuG">
-                              <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                              <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                             </node>
                           </node>
                         </node>
@@ -1829,7 +1829,7 @@
                           <node concept="mw_s8" id="4rZeNQ6PBms" role="1ZfhK$">
                             <node concept="1Z2H0r" id="4rZeNQ6PBk7" role="mwGJk">
                               <node concept="1YBJjd" id="4rZeNQ6PBkz" role="1Z2MuG">
-                                <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                                <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                               </node>
                             </node>
                           </node>
@@ -1865,7 +1865,7 @@
                           <node concept="mw_s8" id="7iroIZHJC6P" role="1ZfhK$">
                             <node concept="1Z2H0r" id="7iroIZHJC6Q" role="mwGJk">
                               <node concept="1YBJjd" id="7iroIZHJC6R" role="1Z2MuG">
-                                <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                                <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                               </node>
                             </node>
                           </node>
@@ -1885,7 +1885,7 @@
             <node concept="1Z2H0r" id="4rZeNQ6PBb3" role="nvjzm">
               <node concept="2OqwBi" id="4rZeNQ6PBb4" role="1Z2MuG">
                 <node concept="1YBJjd" id="4rZeNQ6PBb5" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+                  <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
                 </node>
                 <node concept="3TrEf2" id="4rZeNQ6PBiQ" role="2OqNvi">
                   <ref role="3Tt5mk" to="hm2y:4rZeNQ6MpKo" resolve="right" />
@@ -1897,7 +1897,7 @@
         <node concept="1Z2H0r" id="4rZeNQ6PB1N" role="nvjzm">
           <node concept="2OqwBi" id="4rZeNQ6PB4D" role="1Z2MuG">
             <node concept="1YBJjd" id="4rZeNQ6PB2f" role="2Oq$k0">
-              <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="binaryArithmeticExpression" />
+              <ref role="1YBMHb" node="7iroIZHJ5BU" resolve="bin" />
             </node>
             <node concept="3TrEf2" id="4rZeNQ6PB9D" role="2OqNvi">
               <ref role="3Tt5mk" to="hm2y:4rZeNQ6MpKm" resolve="left" />
@@ -1907,7 +1907,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="7iroIZHJ5BU" role="1YuTPh">
-      <property role="TrG5h" value="binaryArithmeticExpression" />
+      <property role="TrG5h" value="bin" />
       <ref role="1YaFvo" to="hm2y:4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
     </node>
     <node concept="bXqS6" id="7iroIZHLzg6" role="bX4a1">
