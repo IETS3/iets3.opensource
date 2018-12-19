@@ -65,6 +65,12 @@
     <property role="34LRSv" value="TT" />
     <property role="R4oN_" value="temporal type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="1IUuzVr$cdb" role="1TKVEi">
+      <property role="IQ2ns" value="1998043795082494795" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="granularity" />
+      <ref role="20lvS9" node="1IUuzVr$ccD" resolve="TemporalGranularity" />
+    </node>
     <node concept="1TJgyj" id="50smQ1V8i8a" role="1TKVEi">
       <property role="IQ2ns" value="5772589292322890250" />
       <property role="20lmBu" value="aggregation" />
@@ -81,6 +87,12 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="50smQ1V8QEf" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="1TJgyj" id="7J0IXnFhcsx" role="1TKVEi">
+      <property role="IQ2ns" value="8917333789643163425" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="granularity" />
+      <ref role="20lvS9" node="1IUuzVr$ccD" resolve="TemporalGranularity" />
     </node>
     <node concept="1TJgyj" id="50smQ1V8QF$" role="1TKVEi">
       <property role="IQ2ns" value="5772589292323039972" />
@@ -465,6 +477,20 @@
     <property role="TrG5h" value="NoneTemporalQuantifier" />
     <property role="34LRSv" value="none" />
     <ref role="1TJDcQ" node="7EYe2PMbncr" resolve="TemporalQuantifier" />
+  </node>
+  <node concept="1TIwiD" id="1IUuzVr$ccD">
+    <property role="EcuMT" value="1998043795082494761" />
+    <property role="TrG5h" value="TemporalGranularity" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="gran" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1IUuzVr$ccE">
+    <property role="EcuMT" value="1998043795082494762" />
+    <property role="3GE5qa" value="gran" />
+    <property role="TrG5h" value="TemporalGranularityMonth" />
+    <property role="34LRSv" value="monthly" />
+    <ref role="1TJDcQ" node="1IUuzVr$ccD" resolve="TemporalGranularity" />
   </node>
 </model>
 

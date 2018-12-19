@@ -172,6 +172,24 @@
       <node concept="3F1sOY" id="50smQ1V8iHi" role="3EZMnx">
         <ref role="1NtTu8" to="l462:50smQ1V8i8a" resolve="baseType" />
       </node>
+      <node concept="_tjkj" id="1IUuzVr$cdo" role="3EZMnx">
+        <node concept="3EZMnI" id="1IUuzVr$cdA" role="_tjki">
+          <node concept="3F0ifn" id="1IUuzVr$cdJ" role="3EZMnx">
+            <property role="3F0ifm" value="," />
+            <node concept="11L4FC" id="1IUuzVr$cdT" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="1IUuzVr$cdP" role="3EZMnx">
+            <ref role="1NtTu8" to="l462:1IUuzVr$cdb" resolve="granularity" />
+          </node>
+          <node concept="2iRfu4" id="1IUuzVr$cdD" role="2iSdaV" />
+          <node concept="11L4FC" id="7J0IXnFgs7d" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="1IUuzVr$cdE" role="3F10Kt" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="50smQ1V8iGY" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
         <node concept="11L4FC" id="50smQ1V8iHA" role="3F10Kt">
@@ -208,6 +226,24 @@
         <property role="3F0ifm" value="TT" />
         <node concept="Vb9p2" id="3wXkdMVKEtg" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="7J0IXnFhcsT" role="3EZMnx">
+        <node concept="3EZMnI" id="7J0IXnFhcsU" role="_tjki">
+          <node concept="3F0ifn" id="7J0IXnFhcsV" role="3EZMnx">
+            <property role="3F0ifm" value="," />
+            <node concept="11L4FC" id="7J0IXnFhcsW" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="7J0IXnFhcsX" role="3EZMnx">
+            <ref role="1NtTu8" to="l462:7J0IXnFhcsx" resolve="granularity" />
+          </node>
+          <node concept="2iRfu4" id="7J0IXnFhcsY" role="2iSdaV" />
+          <node concept="11L4FC" id="7J0IXnFhcsZ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="7J0IXnFhct0" role="3F10Kt" />
         </node>
       </node>
       <node concept="3F2HdR" id="50smQ1V8QP8" role="3EZMnx">
@@ -822,6 +858,13 @@
     <property role="3GE5qa" value="quantifiers" />
     <ref role="1XX52x" to="l462:7EYe2PMbncr" resolve="TemporalQuantifier" />
     <node concept="PMmxH" id="7EYe2PMbncR" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1IUuzVr$cd4">
+    <property role="3GE5qa" value="gran" />
+    <ref role="1XX52x" to="l462:1IUuzVr$ccD" resolve="TemporalGranularity" />
+    <node concept="PMmxH" id="1IUuzVr$cd9" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
