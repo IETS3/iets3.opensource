@@ -17,10 +17,10 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="c2ue" ref="r:4afe7239-08cb-4b29-acf5-aceed63fe798(org.iets3.core.expr.genjava.temporal.rt.runtime)" />
+    <import index="bcb8" ref="r:d9a305fe-e034-4899-a382-3c8588d5dff6(org.iets3.core.expr.datetime.plugin)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
-    <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
   </imports>
@@ -275,7 +275,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
+        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -4020,11 +4020,11 @@
                     <node concept="3cpWsn" id="4aHVnHIHP2G" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="4aHVnHIHP2H" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="4aHVnHIHPYv" role="33vP2m">
                         <node concept="3uibUv" id="4aHVnHIHPYt" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="4aHVnHIHQd_" role="10QFUP">
                           <ref role="3cqZAo" node="4aHVnHIH$D4" resolve="fromValue" />
@@ -4039,7 +4039,7 @@
                           <ref role="3cqZAo" node="4aHVnHIHP2G" resolve="range" />
                         </node>
                         <node concept="liA8E" id="4aHVnHIHSc8" role="2OqNvi">
-                          <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                          <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="4aHVnHIHQFC" role="37vLTJ">
@@ -4054,7 +4054,7 @@
                           <ref role="3cqZAo" node="4aHVnHIHP2G" resolve="range" />
                         </node>
                         <node concept="liA8E" id="4aHVnHIHUdu" role="2OqNvi">
-                          <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                          <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="4aHVnHIHSFs" role="37vLTJ">
@@ -4929,11 +4929,11 @@
                     <node concept="3cpWsn" id="5v52mTe0_J2" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0_J3" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Bin" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0Bil" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0BDm" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0gRp" resolve="rr" />
@@ -4958,7 +4958,7 @@
                               <ref role="3cqZAo" node="5v52mTe0_J2" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0GOo" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                              <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="5v52mTe0Igw" role="37wK5m">
@@ -4966,7 +4966,7 @@
                               <ref role="3cqZAo" node="5v52mTe0_J2" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0IRO" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                              <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                             </node>
                           </node>
                         </node>
@@ -5016,7 +5016,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0$ic" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0$Es" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0zMB" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0gRp" resolve="rr" />
@@ -5229,11 +5229,11 @@
                     <node concept="3cpWsn" id="5v52mTe0Plz" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0Pl$" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Pl_" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0PlA" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0PlB" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0PkM" resolve="rr" />
@@ -5258,7 +5258,7 @@
                               <ref role="3cqZAo" node="5v52mTe0Plz" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0PlK" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                              <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="5v52mTe0PlL" role="37wK5m">
@@ -5266,7 +5266,7 @@
                               <ref role="3cqZAo" node="5v52mTe0Plz" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0PlN" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                              <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                             </node>
                           </node>
                         </node>
@@ -5315,7 +5315,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0PlP" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0PlQ" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0PlR" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0PkM" resolve="rr" />
@@ -5528,11 +5528,11 @@
                     <node concept="3cpWsn" id="5v52mTe0TRN" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0TRO" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0TRP" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0TRQ" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0TRR" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0TR2" resolve="rr" />
@@ -5557,7 +5557,7 @@
                               <ref role="3cqZAo" node="5v52mTe0TRN" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0TS0" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                              <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="5v52mTe0TS1" role="37wK5m">
@@ -5565,7 +5565,7 @@
                               <ref role="3cqZAo" node="5v52mTe0TRN" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0TS3" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                              <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                             </node>
                           </node>
                         </node>
@@ -5583,7 +5583,7 @@
                           <ref role="3cqZAo" node="5v52mTe0TRN" resolve="range" />
                         </node>
                         <node concept="liA8E" id="5v52mTe1fCf" role="2OqNvi">
-                          <ref role="37wK5l" to="2j0k:6nEpT4GVae9" resolve="durationInDays" />
+                          <ref role="37wK5l" to="bcb8:6nEpT4GVae9" resolve="durationInDays" />
                         </node>
                       </node>
                     </node>
@@ -5633,7 +5633,7 @@
                                     <ref role="3cqZAo" node="5v52mTe0TRN" resolve="range" />
                                   </node>
                                   <node concept="liA8E" id="5v52mTe1rNt" role="2OqNvi">
-                                    <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                                    <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                                   </node>
                                 </node>
                               </node>
@@ -5756,7 +5756,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0TS5" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0TS6" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0TS7" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0TR2" resolve="rr" />
@@ -5969,11 +5969,11 @@
                     <node concept="3cpWsn" id="5v52mTe0Zkj" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0Zkk" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Zkl" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0Zkm" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0Zkn" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0Zjy" resolve="rr" />
@@ -5998,7 +5998,7 @@
                               <ref role="3cqZAo" node="5v52mTe0Zkj" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0Zkw" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                              <ref role="37wK5l" to="bcb8:4voqclTswQa" resolve="begin" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="5v52mTe0Zkx" role="37wK5m">
@@ -6006,7 +6006,7 @@
                               <ref role="3cqZAo" node="5v52mTe0Zkj" resolve="range" />
                             </node>
                             <node concept="liA8E" id="5v52mTe0Zkz" role="2OqNvi">
-                              <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                              <ref role="37wK5l" to="bcb8:4voqclTsBpn" resolve="end" />
                             </node>
                           </node>
                         </node>
@@ -6101,7 +6101,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0Zk_" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0ZkA" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="bcb8:4voqclTstQm" resolve="DateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0ZkB" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0Zjy" resolve="rr" />
