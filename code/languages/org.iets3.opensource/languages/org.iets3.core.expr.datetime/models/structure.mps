@@ -371,5 +371,26 @@
     <property role="R4oN_" value="a string representation of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
   </node>
+  <node concept="1TIwiD" id="7J0IXnFqRy9">
+    <property role="EcuMT" value="8917333789645699209" />
+    <property role="TrG5h" value="MonthLiteral" />
+    <property role="34LRSv" value="m/" />
+    <property role="3GE5qa" value="date" />
+    <property role="R4oN_" value="month literal" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="7J0IXnFqRya" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="1TJgyi" id="7J0IXnFqRyc" role="1TKVEl">
+      <property role="IQ2nx" value="3885635233757569301" />
+      <property role="TrG5h" value="mm" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7J0IXnFqRyd" role="1TKVEl">
+      <property role="IQ2nx" value="3885635233757569302" />
+      <property role="TrG5h" value="yyyy" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

@@ -1487,5 +1487,31 @@
       <ref role="1YaFvo" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7J0IXnFrvh0">
+    <property role="TrG5h" value="typeof_MonthLiteral" />
+    <property role="3GE5qa" value="date" />
+    <node concept="3clFbS" id="7J0IXnFrvh1" role="18ibNy">
+      <node concept="1Z5TYs" id="7J0IXnFrvxh" role="3cqZAp">
+        <node concept="mw_s8" id="7J0IXnFrvxH" role="1ZfhKB">
+          <node concept="2pJPEk" id="7J0IXnFrvxD" role="mwGJk">
+            <node concept="2pJPED" id="7J0IXnFrvxV" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7J0IXnFrvxk" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7J0IXnFrvho" role="mwGJk">
+            <node concept="1YBJjd" id="7J0IXnFrvhF" role="1Z2MuG">
+              <ref role="1YBMHb" node="7J0IXnFrvh3" resolve="ml" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7J0IXnFrvh3" role="1YuTPh">
+      <property role="TrG5h" value="ml" />
+      <ref role="1YaFvo" to="mi3w:7J0IXnFqRy9" resolve="MonthLiteral" />
+    </node>
+  </node>
 </model>
 
