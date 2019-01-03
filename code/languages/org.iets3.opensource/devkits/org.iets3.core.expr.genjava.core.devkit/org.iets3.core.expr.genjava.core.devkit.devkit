@@ -12,6 +12,7 @@
     <exported-solution>68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</exported-solution>
     <exported-solution>336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)</exported-solution>
     <exported-solution>72f3ce09-f244-46a5-88ca-7b98cd2dfb22(org.iets3.core.expr.genjava.core.genplan)</exported-solution>
+    <exported-solution>dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)" />
 </dev-kit>

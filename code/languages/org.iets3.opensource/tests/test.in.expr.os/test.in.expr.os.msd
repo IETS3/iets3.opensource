@@ -48,6 +48,13 @@
     <language slang="l:cee4aa62-aca9-4f26-9602-75129cd457c9:org.iets3.core.expr.dataflow" version="0" />
     <language slang="l:289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998:org.iets3.core.expr.datetime" version="0" />
     <language slang="l:32190be6-23f7-4e17-aad4-fb739bb3569f:org.iets3.core.expr.doc" version="0" />
+    <language slang="l:30254c5b-f87e-4bb3-a60a-77a7ec6ed411:org.iets3.core.expr.genjava.base" version="0" />
+    <language slang="l:cc59a077-028a-42b0-ad86-6a1d71258691:org.iets3.core.expr.genjava.datetime" version="0" />
+    <language slang="l:5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40:org.iets3.core.expr.genjava.simpleTypes" version="0" />
+    <language slang="l:4453335f-7c63-4874-b3b1-ece8c37e6d9b:org.iets3.core.expr.genjava.temporal" version="0" />
+    <language slang="l:e75207bb-7b13-40bd-b80b-c8fe625c4ee2:org.iets3.core.expr.genjava.tests" version="0" />
+    <language slang="l:ddeeec5e-aa31-4c44-bc40-319cd452626e:org.iets3.core.expr.genjava.toplevel" version="0" />
+    <language slang="l:15d858db-2d21-4ae9-90c4-f595086d0bdf:org.iets3.core.expr.genjava.util" version="0" />
     <language slang="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" version="1" />
     <language slang="l:0406e4b3-cffd-4d16-8533-6bc50680ab3b:org.iets3.core.expr.lookup" version="0" />
     <language slang="l:6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0:org.iets3.core.expr.math" version="0" />
@@ -101,13 +108,21 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="79d5345e-e919-477c-b448-d9d5f36e2f92(org.iets3.core.expr.adt.interpreter)" version="0" />
-    <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
+    <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="3" />
     <module reference="cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)" version="0" />
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="5" />
     <module reference="07f696b4-29e7-4878-aefb-39cac5e8c6cc(org.iets3.core.expr.collections.interpreter)" version="0" />
     <module reference="3a79aca0-f4b1-40f1-a3e9-259162afa77b(org.iets3.core.expr.dataflow.interpreter)" version="0" />
     <module reference="356f24c7-748b-463e-a9e4-7973abbf5b8f(org.iets3.core.expr.datetime.interpreter)" version="0" />
     <module reference="e29ad049-74f8-4f02-9561-62d7477f822a(org.iets3.core.expr.doc.plugin)" version="0" />
+    <module reference="a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)" version="0" />
+    <module reference="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" version="0" />
+    <module reference="72f3ce09-f244-46a5-88ca-7b98cd2dfb22(org.iets3.core.expr.genjava.core.genplan)" version="0" />
+    <module reference="708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)" version="0" />
+    <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)" version="0" />
+    <module reference="fde59617-0336-493b-a7ec-21148c3507f1(org.iets3.core.expr.genjava.temporal.rt)" version="0" />
+    <module reference="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" version="0" />
+    <module reference="336cc7f4-18d3-473b-81a1-d8df1c0ad27a(org.iets3.core.expr.genjava.toplevel.rt)" version="0" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
     <module reference="0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b(org.iets3.core.expr.lambda.plugin)" version="0" />

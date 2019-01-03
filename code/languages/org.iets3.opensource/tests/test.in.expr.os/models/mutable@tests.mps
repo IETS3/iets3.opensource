@@ -17365,6 +17365,54 @@
           <property role="30bXRw" value="2" />
         </node>
       </node>
+      <node concept="3dYjL0" id="5wDe8w_WVe9" role="_fkp5" />
+      <node concept="3dYjL0" id="5wDe8w_WVLY" role="_fkp5" />
+    </node>
+    <node concept="1aga60" id="1yEri41g64W" role="_iOnB">
+      <property role="TrG5h" value="withEffect" />
+      <property role="0Rz4W" value="1402895421" />
+      <node concept="1aduha" id="1yEri41gib2" role="1ahQXP">
+        <node concept="3C7svV" id="1yEri41gibc" role="1aduh9" />
+      </node>
+      <node concept="2lgajY" id="1yEri41gFSC" role="28QfE6" />
+    </node>
+    <node concept="_fkuM" id="1yEri41h1ou" role="_iOnB">
+      <property role="TrG5h" value="TestForeach" />
+      <node concept="_fkuZ" id="1yEri41h4ZV" role="_fkp5">
+        <node concept="_fku$" id="1yEri41h4ZW" role="_fkur" />
+        <node concept="1QScDb" id="1yEri41h53G" role="_fkuY">
+          <node concept="3NG6h4" id="1yEri41he42" role="1QScD9">
+            <node concept="3izI60" id="1yEri41he43" role="3iAY4F">
+              <node concept="1af_rf" id="1yEri41hmNi" role="3izI61">
+                <property role="0Rz4W" value="-1258774389" />
+                <ref role="1afhQb" node="1yEri41g64W" resolve="withEffect" />
+              </node>
+            </node>
+          </node>
+          <node concept="3iBYfx" id="1yEri41h50e" role="30czhm">
+            <node concept="30bXRB" id="1yEri41h50m" role="3iBYfI">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="1yEri41h51b" role="3iBYfI">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="30bXRB" id="1yEri41h52l" role="3iBYfI">
+              <property role="30bXRw" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="3iBYfx" id="1yEri41hClf" role="_fkuS">
+          <node concept="30bXRB" id="1yEri41hCqh" role="3iBYfI">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="30bXRB" id="1yEri41hCrs" role="3iBYfI">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bXRB" id="1yEri41hCtf" role="3iBYfI">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="_iOnU" id="2zpAVpC0jnH">

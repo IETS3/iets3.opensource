@@ -69,6 +69,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.components.core.sandbox/org.iets3.components.core.sandbox.msd" folder="comp" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.adt.interpreter/org.iets3.core.expr.adt.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.base.runtime/org.iets3.core.expr.base.runtime.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.dataflow.interpreter/org.iets3.core.expr.dataflow.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.datetime.interpreter/org.iets3.core.expr.datetime.interpreter.msd" folder="expr.lang-advanced" />
