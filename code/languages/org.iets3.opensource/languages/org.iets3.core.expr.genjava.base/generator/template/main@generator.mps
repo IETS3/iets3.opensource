@@ -11108,8 +11108,8 @@
             </node>
             <node concept="3clFbF" id="5wDe8w_FXfT" role="3cqZAp">
               <node concept="2YIFZM" id="5wDe8w_FXhG" role="3clFbG">
-                <ref role="37wK5l" to="j10v:~HashTreePSet.from(java.util.Collection):org.pcollections.MapPSet" resolve="from" />
-                <ref role="1Pybhc" to="j10v:~HashTreePSet" resolve="HashTreePSet" />
+                <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
                 <node concept="2OqwBi" id="5wDe8w_CWNZ" role="37wK5m">
                   <node concept="37vLTw" id="5wDe8w_CWO0" role="2Oq$k0">
                     <ref role="3cqZAo" node="5wDe8w_CWNT" resolve="myMap" />
@@ -11182,8 +11182,8 @@
             </node>
             <node concept="3clFbF" id="5wDe8w_KHb7" role="3cqZAp">
               <node concept="2YIFZM" id="5wDe8w_KHb8" role="3clFbG">
-                <ref role="37wK5l" to="j10v:~HashTreePSet.from(java.util.Collection):org.pcollections.MapPSet" resolve="from" />
-                <ref role="1Pybhc" to="j10v:~HashTreePSet" resolve="HashTreePSet" />
+                <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
                 <node concept="2OqwBi" id="5wDe8w_KHb9" role="37wK5m">
                   <node concept="37vLTw" id="5wDe8w_KHba" role="2Oq$k0">
                     <ref role="3cqZAo" node="5wDe8w_KHb2" resolve="myMap" />
