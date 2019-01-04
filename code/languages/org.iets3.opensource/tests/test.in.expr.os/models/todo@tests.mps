@@ -19,17 +19,7 @@
     <import index="evq" ref="r:cd8f023a-94dd-4e45-bbf0-a419cfafa530(test.in.expr.os.m1@tests)" />
   </imports>
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
-      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
-        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
-      </concept>
-    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ListWithOp" flags="ng" index="2iGZtc" />
-      <concept id="5291952221900249273" name="org.iets3.core.expr.collections.structure.IListOneArgOp" flags="ng" index="1bLd8V">
-        <child id="527291771311128762" name="arg" index="26Ft6C" />
-      </concept>
       <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
       <concept id="7554398283339796915" name="org.iets3.core.expr.collections.structure.SizeOp" flags="ng" index="3iB8M5" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
@@ -141,7 +131,6 @@
       </concept>
       <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
         <property id="8811147530091989932" name="executeAutomatically" index="2SXJ1i" />
-        <property id="8477405154719741309" name="showTypes" index="35xRTJ" />
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <reference id="2032654994493517823" name="scoper" index="2HwdWd" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
@@ -160,13 +149,7 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
-      <concept id="1330041117646892901" name="org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec" flags="ng" index="2gteSW">
-        <property id="1330041117646892912" name="max" index="2gteSD" />
-        <property id="1330041117646892911" name="min" index="2gteSQ" />
-      </concept>
-      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
-        <child id="1330041117646892920" name="range" index="2gteSx" />
-      </concept>
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
@@ -179,17 +162,6 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7061117989422575313" name="org.iets3.core.expr.toplevel.structure.EnumLiteral" flags="ng" index="5mgYR" />
-      <concept id="7061117989422575278" name="org.iets3.core.expr.toplevel.structure.EnumDeclaration" flags="ng" index="5mgZ8">
-        <property id="7061117989424763681" name="qualified" index="5dF97" />
-        <child id="7061117989422575348" name="literals" index="5mgYi" />
-      </concept>
-      <concept id="7061117989422575803" name="org.iets3.core.expr.toplevel.structure.EnumType" flags="ng" index="5mh7t">
-        <reference id="7061117989422575859" name="enum" index="5mh6l" />
-      </concept>
-      <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
-        <reference id="7061117989422577417" name="literal" index="5mhpJ" />
-      </concept>
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
       </concept>
@@ -245,9 +217,6 @@
       </concept>
       <concept id="7740953487936184022" name="org.iets3.core.expr.toplevel.structure.TypedefType" flags="ng" index="1WbbFT">
         <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
-      </concept>
-      <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
-        <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
     </language>
     <language id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages">
@@ -1411,65 +1380,6 @@
     <node concept="_ixoA" id="4C_Rnzf$S$3" role="_iOnB" />
     <node concept="_ixoA" id="7b6J31Doom$" role="_iOnB" />
   </node>
-  <node concept="_iOnU" id="67Y8mp$FfMg">
-    <property role="TrG5h" value="enums" />
-    <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
-    <node concept="1Ws0TD" id="3PrmTp7ow7A" role="_iOnB">
-      <property role="1WsWdv" value="Copied from test.tx.expr.os.m1" />
-    </node>
-    <node concept="_ixoA" id="3PrmTp7ow6g" role="_iOnB" />
-    <node concept="1Ws0TD" id="3Y6fbK1iKNT" role="_iOnB">
-      <property role="1WsWdv" value="Regular Enums" />
-    </node>
-    <node concept="_ixoA" id="3Y6fbK1iKRk" role="_iOnB" />
-    <node concept="5mgZ8" id="67Y8mp$Gkhg" role="_iOnB">
-      <property role="TrG5h" value="Color" />
-      <property role="5dF97" value="false" />
-      <node concept="5mgYR" id="67Y8mp$Gkhk" role="5mgYi">
-        <property role="TrG5h" value="red" />
-      </node>
-      <node concept="5mgYR" id="67Y8mp$HuFV" role="5mgYi">
-        <property role="TrG5h" value="green" />
-      </node>
-      <node concept="5mgYR" id="67Y8mp$HuG1" role="5mgYi">
-        <property role="TrG5h" value="blue" />
-      </node>
-    </node>
-    <node concept="5mgZ8" id="67Y8mp$Kdc2" role="_iOnB">
-      <property role="TrG5h" value="Starbucks" />
-      <property role="5dF97" value="true" />
-      <node concept="5mgYR" id="67Y8mp$KdcH" role="5mgYi">
-        <property role="TrG5h" value="large" />
-      </node>
-      <node concept="5mgYR" id="67Y8mp$KdcL" role="5mgYi">
-        <property role="TrG5h" value="venti" />
-      </node>
-      <node concept="5mgYR" id="67Y8mp$KdcR" role="5mgYi">
-        <property role="TrG5h" value="monster" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="67Y8mp$IHiN" role="_iOnB" />
-    <node concept="2zPypq" id="67Y8mp$IHj_" role="_iOnB">
-      <property role="TrG5h" value="ocean" />
-      <node concept="5mhuz" id="67Y8mp$IHks" role="2zPyp_">
-        <ref role="5mhpJ" node="67Y8mp$HuG1" resolve="blue" />
-      </node>
-    </node>
-    <node concept="2zPypq" id="67Y8mp$KddH" role="_iOnB">
-      <property role="TrG5h" value="forrest" />
-      <node concept="5mhuz" id="67Y8mp$KdeZ" role="2zPyp_">
-        <ref role="5mhpJ" node="67Y8mp$KdcH" resolve="large" />
-        <node concept="7CXmI" id="67Y8mp$KdfD" role="lGtFl">
-          <node concept="1TM$A" id="67Y8mp$KdfE" role="7EUXB" />
-        </node>
-      </node>
-      <node concept="5mh7t" id="67Y8mp$KdeM" role="2zM23F">
-        <ref role="5mh6l" node="67Y8mp$Gkhg" resolve="Color" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="67Y8mp$IxeJ" role="_iOnB" />
-  </node>
   <node concept="_iOnV" id="1VmWkC0I5UE">
     <property role="TrG5h" value="varLib" />
     <node concept="1aga60" id="1VmWkC0GRec" role="_iOnC">
@@ -1608,56 +1518,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="_iOnU" id="6HHp2WmUZLJ">
-    <property role="TrG5h" value="collections" />
-    <property role="1XBH2A" value="true" />
-    <property role="2SXJ1i" value="true" />
-    <property role="35xRTJ" value="true" />
-    <node concept="_ixoA" id="5wDe8w_v8Oo" role="_iOnB" />
-    <node concept="_ixoA" id="38v7GtLWxwP" role="_iOnB" />
-    <node concept="2zPypq" id="6iJ_gQCTDgg" role="_iOnB">
-      <property role="TrG5h" value="restrictedList1" />
-      <property role="0Rz4W" value="-899706511" />
-      <node concept="3iBYfx" id="6iJ_gQCTDwl" role="2zPyp_">
-        <node concept="30bXRB" id="6iJ_gQCTDwv" role="3iBYfI">
-          <property role="30bXRw" value="1" />
-        </node>
-        <node concept="30bXRB" id="6iJ_gQCTDy4" role="3iBYfI">
-          <property role="30bXRw" value="2" />
-        </node>
-        <node concept="30bXRB" id="6iJ_gQCTD$h" role="3iBYfI">
-          <property role="30bXRw" value="3" />
-        </node>
-      </node>
-      <node concept="3iBYCm" id="6iJ_gQCTH5v" role="2zM23F">
-        <node concept="mLuIC" id="6iJ_gQCTH5w" role="3iBWmK">
-          <node concept="2gteSW" id="6iJ_gQCTH5x" role="2gteSx">
-            <property role="2gteSQ" value="1" />
-            <property role="2gteSD" value="3" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_fkuM" id="6iJ_gQCTDP$" role="_iOnB">
-      <property role="TrG5h" value="AddToRestrictedList" />
-      <node concept="mXNUv" id="6iJ_gQCTH89" role="_fkp5">
-        <node concept="1QScDb" id="6iJ_gQCTHT$" role="mXJVd">
-          <node concept="2iGZtc" id="6iJ_gQCTHY1" role="1QScD9">
-            <node concept="30bXRB" id="5xVY7wTDEIE" role="26Ft6C">
-              <property role="30bXRw" value="7" />
-              <node concept="7CXmI" id="5xVY7wTE2ih" role="lGtFl">
-                <node concept="1TM$A" id="5xVY7wTE2ii" role="7EUXB" />
-              </node>
-            </node>
-          </node>
-          <node concept="_emDc" id="6iJ_gQCTHTi" role="30czhm">
-            <ref role="_emDf" node="6iJ_gQCTDgg" resolve="restrictedList1" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="3kEBq3lxy4h" role="_iOnB" />
   </node>
   <node concept="_iOnU" id="5Win3SA8mme">
     <property role="TrG5h" value="composition" />
