@@ -6737,30 +6737,6 @@
           <ref role="3B5MYn" node="3kdFyLX6sx6" resolve="strangeString" />
         </node>
       </node>
-      <node concept="3pwbzX" id="5Jox2ee9a2A" role="3pwbzW">
-        <property role="3J1cY9" value="1537959406393" />
-        <node concept="OjmMv" id="5Jox2ee9a2B" role="3J00qV">
-          <node concept="19SGf9" id="5Jox2ee9a2C" role="OjmMu">
-            <node concept="19SUe$" id="5Jox2ee9a2D" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="2QpIKI" id="5Jox2ee99Ut" role="3pwfKK">
-          <property role="2QpIKG" value="Missing." />
-          <ref role="3B5MYn" node="3tudP__pR0c" resolve="negInf" />
-        </node>
-      </node>
-      <node concept="3pwbzX" id="5Jox2ee9a2E" role="3pwbzW">
-        <property role="3J1cY9" value="1537959406393" />
-        <node concept="OjmMv" id="5Jox2ee9a2F" role="3J00qV">
-          <node concept="19SGf9" id="5Jox2ee9a2G" role="OjmMu">
-            <node concept="19SUe$" id="5Jox2ee9a2H" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="2QpIKI" id="5Jox2ee99Uu" role="3pwfKK">
-          <property role="2QpIKG" value="Missing." />
-          <ref role="3B5MYn" node="3tudP__pSin" resolve="whatHappens" />
-        </node>
-      </node>
       <node concept="3pwbzX" id="5Jox2ee9a8E" role="3pwbzW">
         <property role="3J1cY9" value="1537959406410" />
         <node concept="OjmMv" id="5Jox2ee9a8F" role="3J00qV">
@@ -7347,18 +7323,6 @@
         <node concept="2QpIKI" id="5Jox2ee99Ur" role="3pwfKK">
           <property role="2QpIKG" value="Missing." />
           <ref role="3B5MYn" node="5ElkanPNoot" resolve="validTempInF" />
-        </node>
-      </node>
-      <node concept="3pwbzX" id="5Jox2ee9a2y" role="3pwbzW">
-        <property role="3J1cY9" value="1537959406393" />
-        <node concept="OjmMv" id="5Jox2ee9a2z" role="3J00qV">
-          <node concept="19SGf9" id="5Jox2ee9a2$" role="OjmMu">
-            <node concept="19SUe$" id="5Jox2ee9a2_" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="2QpIKI" id="5Jox2ee99Us" role="3pwfKK">
-          <property role="2QpIKG" value="Missing." />
-          <ref role="3B5MYn" node="5ElkanPNoGg" resolve="invalidTempInF" />
         </node>
       </node>
       <node concept="3pwbzX" id="5Jox2ee99Z2" role="3pwbzW">
