@@ -17068,7 +17068,7 @@
           <ref role="_emDf" node="2ZdhAPhLZNR" resolve="texts" />
         </node>
         <node concept="30bdrP" id="3S4VFRnMSqV" role="_fkuS">
-          <property role="30bdrQ" value="The author Peter has published in CD . The author Jim has published in Book, CD . " />
+          <property role="30bdrQ" value="The author Peter has published in CD. The author Jim has published in Book, CD. " />
         </node>
       </node>
       <node concept="_fkuZ" id="5ipapt3FLeQ" role="_fkp5">
