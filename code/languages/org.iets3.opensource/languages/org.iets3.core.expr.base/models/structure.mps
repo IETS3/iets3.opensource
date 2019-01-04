@@ -1772,6 +1772,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="6jT4GDwgAvP" role="1TKVEi">
+      <property role="IQ2ns" value="7275867333401405429" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4fgA7QrKSsR">
     <property role="EcuMT" value="4886573260948604727" />

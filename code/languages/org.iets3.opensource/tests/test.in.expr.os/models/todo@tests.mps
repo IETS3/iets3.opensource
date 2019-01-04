@@ -57,9 +57,6 @@
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
-      <concept id="411710798114972602" name="org.iets3.core.expr.base.structure.FailExpr" flags="ng" index="qoPdK">
-        <child id="411710798114972606" name="message" index="qoPdO" />
-      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -1467,55 +1464,6 @@
       <node concept="1ahQXy" id="1VmWkC0GRGo" role="1ahQWs">
         <property role="TrG5h" value="cond" />
         <node concept="2vmvy5" id="1VmWkC0GRJA" role="3ix9CU" />
-      </node>
-    </node>
-  </node>
-  <node concept="_iOnU" id="38v7GtLqRlO">
-    <property role="TrG5h" value="base" />
-    <property role="1XBH2A" value="true" />
-    <node concept="_ixoA" id="620LAS5PTZ_" role="_iOnB" />
-    <node concept="1aga60" id="620LAS5PUnS" role="_iOnB">
-      <property role="TrG5h" value="failingFun" />
-      <node concept="1aduha" id="620LAS5PUYF" role="1ahQXP">
-        <node concept="39w5ZF" id="620LAS5PUYQ" role="1aduh9">
-          <node concept="pf3Wd" id="5zQvLw7g6EC" role="pf3W8">
-            <node concept="30bXRB" id="1KPsfaLM_qw" role="pf3We">
-              <property role="30bXRw" value="10" />
-            </node>
-          </node>
-          <node concept="1afdae" id="620LAS5PUZf" role="39w5ZE">
-            <ref role="1afue_" node="620LAS5PUYf" resolve="f" />
-          </node>
-          <node concept="qoPdK" id="620LAS5PUZ$" role="39w5ZG">
-            <node concept="30bdrP" id="620LAS5PV02" role="qoPdO">
-              <property role="30bdrQ" value="Test" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1ahQXy" id="620LAS5PUYf" role="1ahQWs">
-        <property role="TrG5h" value="f" />
-        <node concept="2vmvy5" id="620LAS5PUYx" role="3ix9CU" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="620LAS5PVJw" role="_iOnB" />
-    <node concept="_fkuM" id="620LAS5PVTj" role="_iOnB">
-      <property role="TrG5h" value="testFail" />
-      <node concept="_fkuZ" id="620LAS5PW1p" role="_fkp5">
-        <node concept="_fku$" id="620LAS5PW1q" role="_fkur" />
-        <node concept="1af_rf" id="620LAS5PW1B" role="_fkuY">
-          <ref role="1afhQb" node="620LAS5PUnS" resolve="failingFun" />
-          <node concept="2vmpn$" id="620LAS5PW1T" role="1afhQ5" />
-        </node>
-        <node concept="30bXRB" id="620LAS5PW2K" role="_fkuS">
-          <property role="30bXRw" value="10" />
-        </node>
-      </node>
-      <node concept="mXNUv" id="620LAS5PW3Q" role="_fkp5">
-        <node concept="1af_rf" id="620LAS5PWaL" role="mXJVd">
-          <ref role="1afhQb" node="620LAS5PUnS" resolve="failingFun" />
-          <node concept="2vmpnb" id="620LAS5PWb0" role="1afhQ5" />
-        </node>
       </node>
     </node>
   </node>
