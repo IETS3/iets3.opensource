@@ -31830,7 +31830,7 @@
           <ref role="_emDf" node="3aItn4JOmy9" resolve="i2" />
         </node>
         <node concept="30bdrP" id="3aItn4JOmyw" role="_fkuS">
-          <property role="30bdrQ" value=" Hallo X" />
+          <property role="30bdrQ" value="Hallo X" />
         </node>
       </node>
       <node concept="_fkuZ" id="3aItn4JOmyx" role="_fkp5">
@@ -31839,7 +31839,7 @@
           <ref role="_emDf" node="3aItn4JOmyg" resolve="i3" />
         </node>
         <node concept="30bdrP" id="3aItn4JOmy$" role="_fkuS">
-          <property role="30bdrQ" value="X Hallo " />
+          <property role="30bdrQ" value="X Hallo" />
         </node>
       </node>
     </node>
