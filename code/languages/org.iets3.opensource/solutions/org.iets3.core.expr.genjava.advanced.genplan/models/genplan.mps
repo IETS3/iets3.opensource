@@ -60,6 +60,10 @@
         <property role="2V$B1T" value="4453335f-7c63-4874-b3b1-ece8c37e6d9b" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.temporal" />
       </node>
+      <node concept="2V$Bhx" id="5LerK4rlVSC" role="1t_9vn">
+        <property role="2V$B1T" value="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.messages" />
+      </node>
       <node concept="2V$Bhx" id="6ii4I_AaKi7" role="1t_9vn">
         <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
