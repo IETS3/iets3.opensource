@@ -402,6 +402,9 @@
     <node concept="PrWs8" id="4U5vykeiigH" role="PzmwI">
       <ref role="PrY4T" to="fanb:NrU95lKEWo" resolve="IScopeProvider" />
     </node>
+    <node concept="PrWs8" id="4j3DGEk4dtP" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6NJfo6_rTeO" resolve="IBigExpression" />
+    </node>
     <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
