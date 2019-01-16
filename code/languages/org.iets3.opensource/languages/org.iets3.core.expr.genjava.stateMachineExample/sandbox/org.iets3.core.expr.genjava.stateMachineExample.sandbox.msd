@@ -42,6 +42,7 @@
     <module reference="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" version="0" />
     <module reference="72f3ce09-f244-46a5-88ca-7b98cd2dfb22(org.iets3.core.expr.genjava.core.genplan)" version="0" />
     <module reference="708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)" version="0" />
+    <module reference="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" version="0" />
     <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)" version="0" />
     <module reference="889f307c-31c8-4d64-9e24-a83f15c85f02(org.iets3.core.expr.genjava.stateMachineExample.genplan)" version="0" />
     <module reference="6b5eff48-8eaa-4e24-9818-9fbfa6c3532c(org.iets3.core.expr.genjava.stateMachineExample.sandbox)" version="0" />
