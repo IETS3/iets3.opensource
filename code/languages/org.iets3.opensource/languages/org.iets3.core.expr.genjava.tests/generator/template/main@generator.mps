@@ -572,6 +572,32 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="1LYmOIWMnVz" role="3acgRq">
+      <ref role="30HIoZ" to="av4b:5Pgo_ASrZfv" resolve="ContainsString" />
+      <node concept="gft3U" id="1LYmOIWMpXH" role="1lVwrX">
+        <node concept="2YIFZM" id="1LYmOIWMqp1" role="gfFT$">
+          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String):org.hamcrest.Matcher" resolve="containsString" />
+          <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <node concept="Xl_RD" id="1LYmOIWMqpB" role="37wK5m">
+            <property role="Xl_RC" value="xyz" />
+            <node concept="29HgVG" id="1LYmOIWMqr7" role="lGtFl">
+              <node concept="3NFfHV" id="1LYmOIWMqr8" role="3NFExx">
+                <node concept="3clFbS" id="1LYmOIWMqr9" role="2VODD2">
+                  <node concept="3clFbF" id="1LYmOIWMqrf" role="3cqZAp">
+                    <node concept="2OqwBi" id="1LYmOIWMqra" role="3clFbG">
+                      <node concept="3TrEf2" id="1LYmOIWMqrd" role="2OqNvi">
+                        <ref role="3Tt5mk" to="av4b:5Pgo_ASrZg1" resolve="text" />
+                      </node>
+                      <node concept="30H73N" id="1LYmOIWMqre" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3lhOvk" id="7bZFIimhrCF" role="3lj3bC">
       <ref role="30HIoZ" to="av4b:ub9nkyK62f" resolve="TestSuite" />
       <ref role="3lhOvi" node="21ieoTcCJQ7" resolve="MPSTestCase" />
