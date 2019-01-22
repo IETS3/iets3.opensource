@@ -7910,5 +7910,88 @@
       <ref role="1YaFvo" to="hm2y:4CksDrmwdqB" resolve="AndTag" />
     </node>
   </node>
+  <node concept="1YbPZF" id="24Fec4177M9">
+    <property role="TrG5h" value="typeof_BangOp" />
+    <node concept="3clFbS" id="24Fec4177Ma" role="18ibNy">
+      <node concept="nvevp" id="24Fec4178jc" role="3cqZAp">
+        <node concept="3clFbS" id="24Fec4178jd" role="nvhr_">
+          <node concept="3clFbJ" id="24Fec4178M7" role="3cqZAp">
+            <node concept="2OqwBi" id="24Fec4178YG" role="3clFbw">
+              <node concept="2X3wrD" id="24Fec4179r$" role="2Oq$k0">
+                <ref role="2X3Bk0" node="24Fec4178jf" resolve="base" />
+              </node>
+              <node concept="1mIQ4w" id="24Fec4179hc" role="2OqNvi">
+                <node concept="chp4Y" id="24Fec4179jS" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="24Fec4178M9" role="3clFbx">
+              <node concept="1Z5TYs" id="24Fec4179Hh" role="3cqZAp">
+                <node concept="mw_s8" id="24Fec4179Hz" role="1ZfhKB">
+                  <node concept="2OqwBi" id="24Fec417a3Z" role="mwGJk">
+                    <node concept="1PxgMI" id="24Fec4179Oq" role="2Oq$k0">
+                      <node concept="chp4Y" id="24Fec4179OW" role="3oSUPX">
+                        <ref role="cht4Q" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
+                      </node>
+                      <node concept="2X3wrD" id="24Fec4179Hx" role="1m5AlR">
+                        <ref role="2X3Bk0" node="24Fec4178jf" resolve="base" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="24Fec417apf" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hm2y:2rOWEwsEjch" resolve="baseType" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="mw_s8" id="24Fec4179Hk" role="1ZfhK$">
+                  <node concept="1Z2H0r" id="24Fec4179yF" role="mwGJk">
+                    <node concept="1YBJjd" id="24Fec4179$x" role="1Z2MuG">
+                      <ref role="1YBMHb" node="24Fec4177Mc" resolve="bang" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="24Fec417asu" role="9aQIa">
+              <node concept="3clFbS" id="24Fec417asv" role="9aQI4">
+                <node concept="1Z5TYs" id="24Fec417aBq" role="3cqZAp">
+                  <node concept="mw_s8" id="24Fec417aRU" role="1ZfhKB">
+                    <node concept="2X3wrD" id="24Fec417aRN" role="mwGJk">
+                      <ref role="2X3Bk0" node="24Fec4178jf" resolve="base" />
+                    </node>
+                  </node>
+                  <node concept="mw_s8" id="24Fec417aBx" role="1ZfhK$">
+                    <node concept="1Z2H0r" id="24Fec417aBy" role="mwGJk">
+                      <node concept="1YBJjd" id="24Fec417aBz" role="1Z2MuG">
+                        <ref role="1YBMHb" node="24Fec4177Mc" resolve="bang" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="24Fec4178jY" role="nvjzm">
+          <node concept="2OqwBi" id="24Fec4178va" role="1Z2MuG">
+            <node concept="1YBJjd" id="24Fec4178kq" role="2Oq$k0">
+              <ref role="1YBMHb" node="24Fec4177Mc" resolve="bang" />
+            </node>
+            <node concept="3TrEf2" id="24Fec4178IT" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:24Fec4173Ut" resolve="optionValue" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="24Fec4178jf" role="2X0Ygz">
+          <property role="TrG5h" value="base" />
+          <node concept="2jxLKc" id="24Fec4178jg" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="24Fec4177Mc" role="1YuTPh">
+      <property role="TrG5h" value="bang" />
+      <ref role="1YaFvo" to="hm2y:24Fec4173Us" resolve="BangOp" />
+    </node>
+  </node>
 </model>
 

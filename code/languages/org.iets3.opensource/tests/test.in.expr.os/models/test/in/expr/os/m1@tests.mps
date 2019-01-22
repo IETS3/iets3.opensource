@@ -178,6 +178,9 @@
       <concept id="5974679004769488538" name="org.iets3.core.expr.base.structure.SuccessExpression" flags="ng" index="sFPLW">
         <child id="5974679004769488545" name="expr" index="sFPL7" />
       </concept>
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt">
+        <child id="2390066428848651933" name="optionValue" index="wdKps" />
+      </concept>
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -18918,6 +18921,29 @@
         </node>
         <node concept="30bXRB" id="5$4k7YFjySi" role="_fkuS">
           <property role="30bXRw" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2$mkTNp_3Nq" role="_iOnB" />
+    <node concept="_ixoA" id="2$mkTNp_3Wf" role="_iOnB" />
+    <node concept="_fkuM" id="2$mkTNp_5JJ" role="_iOnB">
+      <property role="TrG5h" value="forceOption" />
+      <node concept="_fkuZ" id="2$mkTNp_6GL" role="_fkp5">
+        <node concept="_fku$" id="2$mkTNp_6GM" role="_fkur" />
+        <node concept="wdKpt" id="2$mkTNp_6Hb" role="_fkuY">
+          <node concept="_emDc" id="2$mkTNp_6GY" role="wdKps">
+            <ref role="_emDf" node="5$4k7YFg8c$" resolve="o2" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2$mkTNp_6K4" role="_fkuS">
+          <property role="30bXRw" value="3" />
+        </node>
+      </node>
+      <node concept="mXNUv" id="2$mkTNp_$Jb" role="_fkp5">
+        <node concept="wdKpt" id="2$mkTNp_95z" role="mXJVd">
+          <node concept="_emDc" id="2$mkTNp_96c" role="wdKps">
+            <ref role="_emDf" node="5$4k7YFgmRn" resolve="o3" />
+          </node>
         </node>
       </node>
     </node>

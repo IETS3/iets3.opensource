@@ -168,6 +168,9 @@
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt">
+        <child id="2390066428848651933" name="optionValue" index="wdKps" />
+      </concept>
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -568,7 +571,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -12904,6 +12907,27 @@
             </node>
           </node>
         </node>
+        <node concept="_ixoA" id="24Fec41awcp" role="_iOnC" />
+        <node concept="2zPypq" id="24Fec41awoY" role="_iOnC">
+          <property role="TrG5h" value="xDeOpted1" />
+          <node concept="_emDc" id="24Fec41aw$C" role="2zPyp_">
+            <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+            <node concept="7CXmI" id="24Fec41awJw" role="lGtFl">
+              <node concept="1TM$A" id="24Fec41awJx" role="7EUXB" />
+            </node>
+          </node>
+          <node concept="mLuIC" id="24Fec41aw$r" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="24Fec41ax4u" role="_iOnC">
+          <property role="TrG5h" value="xDeOpted2" />
+          <node concept="mLuIC" id="24Fec41ax4y" role="2zM23F" />
+          <node concept="wdKpt" id="2$mkTNp$YhK" role="2zPyp_">
+            <node concept="_emDc" id="24Fec41hnmE" role="wdKps">
+              <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="24Fec41awem" role="_iOnC" />
         <node concept="_ixoA" id="3N4k0eSJWQ3" role="_iOnC" />
       </node>
     </node>
