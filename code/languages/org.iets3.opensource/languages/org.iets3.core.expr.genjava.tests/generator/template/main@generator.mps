@@ -17,8 +17,8 @@
     <import index="et52" ref="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)" />
     <import index="bbnd" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runners(JUnit/)" />
     <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
+    <import index="rjhg" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit(JUnit/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="rjhg" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit(JUnit/)" implicit="true" />
     <import index="tpe5" ref="r:00000000-0000-4000-0000-011c895902d1(jetbrains.mps.baseLanguage.unitTest.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" implicit="true" />
@@ -910,6 +910,50 @@
                 </node>
               </node>
               <node concept="raruj" id="66if2wcLFDM" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="26oCwdsqhfn" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="av4b:5Pgo_AS3Joq" resolve="AssertThatTestItem" />
+      <node concept="gft3U" id="26oCwdsqjCd" role="1lVwrX">
+        <node concept="3clFbF" id="26oCwdsqmS4" role="gfFT$">
+          <node concept="2YIFZM" id="26oCwdsqn7O" role="3clFbG">
+            <ref role="37wK5l" to="rjhg:~Assert.assertThat(java.lang.Object,org.hamcrest.Matcher):void" resolve="assertThat" />
+            <ref role="1Pybhc" to="rjhg:~Assert" resolve="Assert" />
+            <node concept="10Nm6u" id="26oCwdsqns0" role="37wK5m">
+              <node concept="29HgVG" id="26oCwdsqnuB" role="lGtFl">
+                <node concept="3NFfHV" id="26oCwdsqnuC" role="3NFExx">
+                  <node concept="3clFbS" id="26oCwdsqnuD" role="2VODD2">
+                    <node concept="3clFbF" id="26oCwdsqnuJ" role="3cqZAp">
+                      <node concept="2OqwBi" id="26oCwdsqnuE" role="3clFbG">
+                        <node concept="3TrEf2" id="26oCwdsqnuH" role="2OqNvi">
+                          <ref role="3Tt5mk" to="av4b:5Pgo_AS3PT3" resolve="value" />
+                        </node>
+                        <node concept="30H73N" id="26oCwdsqnuI" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="10Nm6u" id="26oCwdsqnsz" role="37wK5m">
+              <node concept="29HgVG" id="26oCwdsqn$8" role="lGtFl">
+                <node concept="3NFfHV" id="26oCwdsqn$9" role="3NFExx">
+                  <node concept="3clFbS" id="26oCwdsqn$a" role="2VODD2">
+                    <node concept="3clFbF" id="26oCwdsqn$g" role="3cqZAp">
+                      <node concept="2OqwBi" id="26oCwdsqn$b" role="3clFbG">
+                        <node concept="3TrEf2" id="26oCwdsqn$e" role="2OqNvi">
+                          <ref role="3Tt5mk" to="av4b:5Pgo_AS3PT1" resolve="matcher" />
+                        </node>
+                        <node concept="30H73N" id="26oCwdsqn$f" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
