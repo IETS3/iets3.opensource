@@ -431,7 +431,6 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
-      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -9325,30 +9324,8 @@
         </node>
       </node>
       <node concept="3clFbS" id="KaZMgyh041" role="3clF47">
-        <node concept="3clFbJ" id="KaZMgyh0bc" role="3cqZAp">
-          <node concept="2OqwBi" id="KaZMgyh0jg" role="3clFbw">
-            <node concept="2OqwBi" id="KaZMgyh0cS" role="2Oq$k0">
-              <node concept="13iPFW" id="KaZMgyh0br" role="2Oq$k0" />
-              <node concept="3TrEf2" id="KaZMgyh0fu" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:KaZMgy4Ily" resolve="contract" />
-              </node>
-            </node>
-            <node concept="3w_OXm" id="KaZMgyh0pn" role="2OqNvi" />
-          </node>
-          <node concept="3clFbS" id="KaZMgyh0be" role="3clFbx">
-            <node concept="3cpWs6" id="KaZMgyh0vO" role="3cqZAp">
-              <node concept="2ShNRf" id="KaZMgyh0w6" role="3cqZAk">
-                <node concept="2T8Vx0" id="KaZMgyh0EO" role="2ShVmc">
-                  <node concept="2I9FWS" id="KaZMgyh0EQ" role="2T96Bj">
-                    <ref role="2I9WkF" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="KaZMgyh0J5" role="3cqZAp">
-          <node concept="2OqwBi" id="KaZMgyh0Y3" role="3cqZAk">
+        <node concept="3clFbF" id="2IbOabW38mo" role="3cqZAp">
+          <node concept="2OqwBi" id="KaZMgyh0Y3" role="3clFbG">
             <node concept="2OqwBi" id="KaZMgyh0M7" role="2Oq$k0">
               <node concept="13iPFW" id="KaZMgyh0K6" role="2Oq$k0" />
               <node concept="3TrEf2" id="KaZMgyh0TN" role="2OqNvi">

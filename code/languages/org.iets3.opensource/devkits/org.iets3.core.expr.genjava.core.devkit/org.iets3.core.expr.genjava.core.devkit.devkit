@@ -4,6 +4,7 @@
   <exported-language name="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)" />
   <exported-language name="e75207bb-7b13-40bd-b80b-c8fe625c4ee2(org.iets3.core.expr.genjava.tests)" />
   <exported-language name="ddeeec5e-aa31-4c44-bc40-319cd452626e(org.iets3.core.expr.genjava.toplevel)" />
+  <exported-language name="f2abf2a6-552e-4906-ab58-930f9a79aff4(org.iets3.core.expr.genjava.contracts)" />
   <exported-solutions>
     <exported-solution>3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)</exported-solution>
     <exported-solution>708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)</exported-solution>
