@@ -636,6 +636,22 @@
               </node>
             </node>
             <node concept="raruj" id="lH$PuiWPf1" role="lGtFl" />
+            <node concept="17Uvod" id="lH$PujQBg5" role="lGtFl">
+              <property role="2qtEX9" value="warning" />
+              <property role="P4ACc" value="f2abf2a6-552e-4906-ab58-930f9a79aff4/391130746987872598/391130747002418877" />
+              <node concept="3zFVjK" id="lH$PujQBg6" role="3zH0cK">
+                <node concept="3clFbS" id="lH$PujQBg7" role="2VODD2">
+                  <node concept="3clFbF" id="lH$PujQBu6" role="3cqZAp">
+                    <node concept="2OqwBi" id="lH$PujQBGd" role="3clFbG">
+                      <node concept="30H73N" id="lH$PujQBu5" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="lH$PujQEow" role="2OqNvi">
+                        <ref role="3TsBF5" to="hm2y:3xthw2gJs74" resolve="warning" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2ShNRf" id="lH$PuiWOo5" role="2nBT83">
             <node concept="1pGfFk" id="lH$PuiWOyx" role="2ShVmc">
@@ -17315,39 +17331,6 @@
       </node>
     </node>
   </node>
-  <node concept="jVnub" id="lH$PuiVUun">
-    <property role="TrG5h" value="switch_DefaultErrorMessage" />
-    <node concept="3aamgX" id="lH$PuiVUuo" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
-      <node concept="gft3U" id="lH$PuiVUus" role="1lVwrX">
-        <node concept="10M0yZ" id="lH$PuiVUvi" role="gfFT$">
-          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
-          <ref role="3cqZAo" to="vsv5:1QYs15esRbY" resolve="CONSTRAINT_FAILED" />
-        </node>
-      </node>
-    </node>
-    <node concept="3aamgX" id="lH$PuiVUvv" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
-      <node concept="gft3U" id="lH$PuiVUvA" role="1lVwrX">
-        <node concept="10M0yZ" id="lH$PuiVUvQ" role="gfFT$">
-          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
-          <ref role="3cqZAo" to="vsv5:1QYs15esOAU" resolve="PRE_FAILED" />
-        </node>
-      </node>
-    </node>
-    <node concept="3aamgX" id="lH$PuiVUw2" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hm2y:KaZMgy4InG" resolve="Postcondition" />
-      <node concept="gft3U" id="lH$PuiVUwc" role="1lVwrX">
-        <node concept="10M0yZ" id="lH$PuiVUws" role="gfFT$">
-          <ref role="3cqZAo" to="vsv5:1QYs15esOLp" resolve="POST_FAILED" />
-          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13MO4I" id="lH$Puhb0bi">
     <property role="TrG5h" value="reduce_ContractItemError2MessageValue" />
     <ref role="3gUMe" to="hm2y:KaZMgy4Ils" resolve="ContractItem" />
@@ -17499,6 +17482,39 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="lH$PuiVUun">
+    <property role="TrG5h" value="switch_DefaultErrorMessage" />
+    <node concept="3aamgX" id="lH$PuiVUuo" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
+      <node concept="gft3U" id="lH$PuiVUus" role="1lVwrX">
+        <node concept="10M0yZ" id="lH$PuiVUvi" role="gfFT$">
+          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
+          <ref role="3cqZAo" to="vsv5:1QYs15esRbY" resolve="CONSTRAINT_FAILED" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="lH$PuiVUvv" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
+      <node concept="gft3U" id="lH$PuiVUvA" role="1lVwrX">
+        <node concept="10M0yZ" id="lH$PuiVUvQ" role="gfFT$">
+          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
+          <ref role="3cqZAo" to="vsv5:1QYs15esOAU" resolve="PRE_FAILED" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="lH$PuiVUw2" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:KaZMgy4InG" resolve="Postcondition" />
+      <node concept="gft3U" id="lH$PuiVUwc" role="1lVwrX">
+        <node concept="10M0yZ" id="lH$PuiVUws" role="gfFT$">
+          <ref role="3cqZAo" to="vsv5:1QYs15esOLp" resolve="POST_FAILED" />
+          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
         </node>
       </node>
     </node>
