@@ -461,6 +461,10 @@
         <ref role="m_rDy" node="1PzuxQOW9K2" resolve="org.iets3.trace" />
         <node concept="pUk6x" id="1D8fMMrKjdO" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="6eUEBARnUBR" role="39821P">
+        <ref role="m_rDy" node="6eUEBARnTPj" resolve="org.iets3.py" />
+        <node concept="pUk6x" id="6eUEBARnUDM" role="pUk7w" />
+      </node>
     </node>
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
       <property role="2_GNG2" value="6096" />
@@ -720,6 +724,24 @@
       </node>
       <node concept="m$_yC" id="5Ky8UT4npFF" role="m$_yJ">
         <ref role="m$_y1" node="5wLtKNeSRRD" resolve="org.iets3.core.os" />
+      </node>
+    </node>
+    <node concept="m$_wf" id="6eUEBARnTPj" role="3989C9">
+      <property role="m$_wk" value="org.iets3.py" />
+      <node concept="3_J27D" id="6eUEBARnTPl" role="m$_yQ">
+        <node concept="3Mxwew" id="6eUEBARnUzh" role="3MwsjC">
+          <property role="3MwjfP" value="org.iets3.py" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6eUEBARnTPn" role="m_cZH">
+        <node concept="3Mxwew" id="6eUEBARnUzj" role="3MwsjC">
+          <property role="3MwjfP" value="org.iets3.py" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6eUEBARnTPp" role="m$_w8">
+        <node concept="3Mxwey" id="6eUEBARnUzY" role="3MwsjC">
+          <ref role="3Mxwex" node="2I_jb36R5Ye" resolve="version" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
@@ -7399,6 +7421,61 @@
         <node concept="1yeLz9" id="1lUgLJUn4so" role="1TViLv">
           <property role="TrG5h" value="org.iets3.core.assessment#6913547888673465634" />
           <property role="3LESm3" value="630ff5ee-4c20-48ab-b7f6-bad3a34adac8" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="6eUEBARnSku" role="3989C9">
+      <property role="TrG5h" value="org.iets3.py" />
+      <node concept="1E1JtD" id="6eUEBARnT4C" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.py.lang" />
+        <property role="3LESm3" value="937cc4d6-997d-4b94-b877-f0cb75742dd9" />
+        <node concept="398BVA" id="6eUEBARnT5n" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="6eUEBARnT7o" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6eUEBARnT8J" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.py.lang" />
+              <node concept="2Ry0Ak" id="6eUEBARnTa6" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.py.lang.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6eUEBARnTbq" role="3bR37C">
+          <node concept="3bR9La" id="6eUEBARnTbr" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6eUEBARnTbs" role="3bR37C">
+          <node concept="3bR9La" id="6eUEBARnTbt" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6eUEBARnTbu" role="3bR37C">
+          <node concept="1Busua" id="6eUEBARnTbv" role="1SiIV1">
+            <ref role="1Busuk" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6eUEBARnTbw" role="1TViLv">
+          <property role="TrG5h" value="org.iets3.py.lang#01" />
+          <property role="3LESm3" value="eeb64cb5-20bc-4bf5-ba93-cb7655e279e8" />
+        </node>
+        <node concept="3rtmxn" id="6eUEBARnTch" role="3bR31x">
+          <node concept="3LXTmp" id="6eUEBARnTci" role="3rtmxm">
+            <node concept="398BVA" id="6eUEBARnTcj" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6eUEBARnTck" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6eUEBARnTcl" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.py.lang" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6eUEBARnTcn" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
