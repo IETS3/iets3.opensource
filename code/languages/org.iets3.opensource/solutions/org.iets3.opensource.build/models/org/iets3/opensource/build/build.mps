@@ -5527,6 +5527,11 @@
               <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
             </node>
           </node>
+          <node concept="1SiIV0" id="kKmKqghvE3" role="3bR37C">
+            <node concept="3bR9La" id="kKmKqghvE4" role="1SiIV1">
+              <ref role="3bR37D" node="3vxfdxbuEmk" resolve="org.iets3.core.expr.messages" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="26tZ$Z4s7fa" role="1E1XAP">
           <ref role="1E0d5P" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
