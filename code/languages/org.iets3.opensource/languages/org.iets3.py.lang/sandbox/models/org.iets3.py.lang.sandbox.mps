@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="1019070541450016346" name="org.iets3.core.expr.base.structure.TupleValue" flags="ng" index="m5g4o">
+        <child id="1019070541450016347" name="values" index="m5g4p" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -168,19 +171,20 @@
       <node concept="3kTBcd" id="6eUEBARnRrB" role="T0hIN">
         <property role="TrG5h" value="i" />
       </node>
-      <node concept="T0hIY" id="6eUEBARnRrE" role="T0hIL">
-        <node concept="30bXRB" id="6eUEBARnRrM" role="T0hIV">
-          <property role="30bXRw" value="1" />
-        </node>
-      </node>
       <node concept="T0hIY" id="6eUEBARnRs3" role="T0hIL">
-        <node concept="30bXRB" id="6eUEBARnRsf" role="T0hIV">
-          <property role="30bXRw" value="2" />
-        </node>
-      </node>
-      <node concept="T0hIY" id="6eUEBARnRsy" role="T0hIL">
-        <node concept="30bXRB" id="6eUEBARnRsK" role="T0hIV">
-          <property role="30bXRw" value="3" />
+        <node concept="m5g4o" id="5xfWibxIeLe" role="T0hIV">
+          <node concept="30bXRB" id="5xfWibxIeLl" role="m5g4p">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="30bXRB" id="5xfWibxIeMn" role="m5g4p">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bXRB" id="5xfWibxIeNb" role="m5g4p">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="5xfWibxIePR" role="m5g4p">
+            <property role="30bXRw" value="4" />
+          </node>
         </node>
       </node>
       <node concept="T0hIY" id="6eUEBARnRuM" role="T0rwk">
