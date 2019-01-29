@@ -414,7 +414,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -13212,9 +13212,9 @@
   </node>
   <node concept="312cEu" id="4AahbtUR_4_">
     <property role="TrG5h" value="ProgramLocationValue" />
-    <node concept="2tJIrI" id="4AahbtUR_52" role="jymVt" />
     <node concept="312cEg" id="4AahbtUR_N_" role="jymVt">
       <property role="TrG5h" value="node" />
+      <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="4AahbtUR_NA" role="1B3o_S" />
       <node concept="3Tqbb2" id="4AahbtUR_NC" role="1tU5fm" />
     </node>

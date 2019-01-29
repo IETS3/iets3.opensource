@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6a32786e-0823-4465-b671-9705159d21d5(test.in.expr.os.messages@tests)">
+<model ref="r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
     <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="0" />
-    <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
+    <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
+    <devkit ref="ffc660b2-672c-4f91-9291-8426ed4e58de(org.iets3.core.expr.genjava.advanced.devkit)" />
   </languages>
   <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
-    <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="5849458724932670346" name="org.iets3.core.expr.collections.structure.BracketOp" flags="ng" index="2yLE0X">
-        <child id="5849458724932670347" name="index" index="2yLE0W" />
-      </concept>
-      <concept id="8448265401163111273" name="org.iets3.core.expr.collections.structure.KeyValuePair" flags="ng" index="1DGDZQ">
-        <child id="8448265401163111276" name="val" index="1DGDZN" />
-        <child id="8448265401163111274" name="key" index="1DGDZP" />
-      </concept>
-      <concept id="8448265401163111272" name="org.iets3.core.expr.collections.structure.MapLiteral" flags="ng" index="1DGDZR">
-        <child id="8448265401163120790" name="elements" index="1DGOg9" />
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
@@ -52,7 +44,6 @@
         <child id="867786408877811042" name="contract" index="I61D6" />
       </concept>
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
-      <concept id="5299123466385900735" name="org.iets3.core.expr.base.structure.ProgramLocationUrlOp" flags="ng" index="Nl008" />
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
@@ -125,14 +116,8 @@
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
-      <concept id="842813880843519728" name="org.iets3.core.expr.simpleTypes.structure.StringContainsTarget" flags="ng" index="1gK00M">
-        <child id="842813880843519732" name="value" index="1gK00Q" />
-      </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
-        <child id="7089558164906249715" name="value" index="2zPyp_" />
-      </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
@@ -161,9 +146,7 @@
       </concept>
     </language>
     <language id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages">
-      <concept id="5299123466388908843" name="org.iets3.core.expr.messages.structure.MessageValueDataOp" flags="ng" index="MxAYs" />
       <concept id="5299123466384402815" name="org.iets3.core.expr.messages.structure.MessageValueTextOp" flags="ng" index="NjiR8" />
-      <concept id="5299123466385799619" name="org.iets3.core.expr.messages.structure.MessageValueLocationOp" flags="ng" index="NlJPO" />
       <concept id="4026566441519722348" name="org.iets3.core.expr.messages.structure.GroupTarget" flags="ng" index="1WETeO">
         <reference id="4026566441519722352" name="group" index="1WETeC" />
       </concept>
@@ -257,46 +240,22 @@
       </node>
     </node>
     <node concept="_ixoA" id="4AahbtUNHdd" role="_iOnB" />
-    <node concept="2zPypq" id="4AahbtV2yXd" role="_iOnB">
-      <property role="TrG5h" value="url1" />
-      <property role="0Rz4W" value="1641247204" />
-      <node concept="30bdrP" id="4AahbtV2yXc" role="2zPyp_">
-        <property role="30bdrQ" value="http://127.0.0.1:63320/node?ref=r%3A6a32786e-0823-4465-b671-9705159d21d5%28test.in.expr.os.messages%40tests%29%2F5299123466385887504" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="4AahbtV2yXe" role="_iOnB" />
-    <node concept="2zPypq" id="4AahbtV2_d$" role="_iOnB">
-      <property role="TrG5h" value="url2" />
-      <property role="0Rz4W" value="-1555906997" />
-      <node concept="30bdrP" id="4AahbtV2_dz" role="2zPyp_">
-        <property role="30bdrQ" value="http://127.0.0.1:63320/node?ref=r%3A6a32786e-0823-4465-b671-9705159d21d5%28test.in.expr.os.messages%40tests%29%2F5299123466388782808" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="4AahbtV2_d_" role="_iOnB" />
     <node concept="_ixoA" id="4AahbtV85LX" role="_iOnB" />
     <node concept="_fkuM" id="3vxfdxbrKI$" role="_iOnB">
       <property role="TrG5h" value="MessageEval" />
       <node concept="_fkuZ" id="3vxfdxbrKIC" role="_fkp5">
         <property role="3sVy9A" value="true" />
         <node concept="_fku$" id="3vxfdxbrKID" role="_fkur" />
-        <node concept="1QScDb" id="4AahbtVJY8p" role="_fkuY">
-          <node concept="1gK00M" id="4AahbtVJY9Q" role="1QScD9">
-            <node concept="30bdrP" id="4AahbtVJYaL" role="1gK00Q">
-              <property role="30bdrQ" value="2F5299123466388782808" />
-            </node>
+        <node concept="1QScDb" id="4AahbtUNAep" role="_fkuY">
+          <node concept="1af_rf" id="4AahbtV2$eI" role="30czhm">
+            <property role="0Rz4W" value="-630332183" />
+            <ref role="1afhQb" node="4AahbtV2zVo" resolve="funWithMsg" />
           </node>
-          <node concept="1QScDb" id="4AahbtV2$zI" role="30czhm">
-            <node concept="Nl008" id="4AahbtV2$$G" role="1QScD9" />
-            <node concept="1QScDb" id="4AahbtUNAep" role="30czhm">
-              <node concept="NlJPO" id="4AahbtV2$fe" role="1QScD9" />
-              <node concept="1af_rf" id="4AahbtV2$eI" role="30czhm">
-                <property role="0Rz4W" value="-630332183" />
-                <ref role="1afhQb" node="4AahbtV2zVo" resolve="funWithMsg" />
-              </node>
-            </node>
-          </node>
+          <node concept="NjiR8" id="23q4Crn$i8e" role="1QScD9" />
         </node>
-        <node concept="2vmpnb" id="4AahbtVJYcx" role="_fkuS" />
+        <node concept="30bdrP" id="23q4Crn$i8O" role="_fkuS">
+          <property role="30bdrQ" value="m1" />
+        </node>
       </node>
       <node concept="_fkuZ" id="4AahbtV2$by" role="_fkp5">
         <property role="3sVy9A" value="true" />
@@ -332,33 +291,6 @@
         <node concept="30bdrP" id="4AahbtVb9ac" role="_fkuS">
           <property role="30bdrQ" value="m1" />
         </node>
-      </node>
-      <node concept="_fkuZ" id="4AahbtURx4b" role="_fkp5">
-        <property role="3sVy9A" value="true" />
-        <node concept="_fku$" id="4AahbtURx4c" role="_fkur" />
-        <node concept="1QScDb" id="4AahbtVJYuT" role="_fkuY">
-          <node concept="1gK00M" id="4AahbtVJYwm" role="1QScD9">
-            <node concept="30bdrP" id="4AahbtVJYxv" role="1gK00Q">
-              <property role="30bdrQ" value="2F5299123466385887504" />
-            </node>
-          </node>
-          <node concept="1QScDb" id="4AahbtUW0JJ" role="30czhm">
-            <node concept="Nl008" id="4AahbtUW0KQ" role="1QScD9" />
-            <node concept="1QScDb" id="4AahbtURx4d" role="30czhm">
-              <node concept="NlJPO" id="4AahbtURxg3" role="1QScD9" />
-              <node concept="1QScDb" id="4AahbtURx4f" role="30czhm">
-                <node concept="1WPo9w" id="4AahbtURx4g" role="1QScD9">
-                  <property role="MFfev" value="true" />
-                  <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
-                </node>
-                <node concept="1WPpZc" id="4AahbtURx4h" role="30czhm">
-                  <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2vmpnb" id="4AahbtVJYz1" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="3vxfdxbs7e_" role="_fkp5">
         <property role="3sVy9A" value="true" />
@@ -459,72 +391,6 @@
         </node>
         <node concept="30bdrP" id="3vxfdxbtTgJ" role="_fkuS">
           <property role="30bdrQ" value="m4 42" />
-        </node>
-      </node>
-      <node concept="_fkuZ" id="4AahbtV3f1x" role="_fkp5">
-        <property role="3sVy9A" value="true" />
-        <node concept="_fku$" id="4AahbtV3f1y" role="_fkur" />
-        <node concept="1QScDb" id="4AahbtV3f1z" role="_fkuY">
-          <node concept="MxAYs" id="4AahbtV3fgs" role="1QScD9" />
-          <node concept="1QScDb" id="4AahbtV3f1_" role="30czhm">
-            <node concept="1WPo9w" id="4AahbtV3f1A" role="1QScD9">
-              <property role="MFfev" value="true" />
-              <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
-              <node concept="30bXRB" id="4AahbtV3f1B" role="1WFony">
-                <property role="30bXRw" value="42" />
-              </node>
-            </node>
-            <node concept="1QScDb" id="4AahbtV3f1C" role="30czhm">
-              <node concept="1WETeO" id="4AahbtV3f1D" role="1QScD9">
-                <ref role="1WETeC" node="3vxfdxbthSw" resolve="withIntArgs" />
-              </node>
-              <node concept="1WPpZc" id="4AahbtV3f1E" role="30czhm">
-                <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DGDZR" id="4AahbtV84za" role="_fkuS">
-          <node concept="1DGDZQ" id="4AahbtV84B0" role="1DGOg9">
-            <node concept="30bdrP" id="4AahbtV84AZ" role="1DGDZN">
-              <property role="30bdrQ" value="42" />
-            </node>
-            <node concept="30bdrP" id="4AahbtV84BE" role="1DGDZP">
-              <property role="30bdrQ" value="x" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="_fkuZ" id="4AahbtV85bA" role="_fkp5">
-        <property role="3sVy9A" value="true" />
-        <node concept="_fku$" id="4AahbtV85bB" role="_fkur" />
-        <node concept="2yLE0X" id="4AahbtV85h0" role="_fkuY">
-          <node concept="30bdrP" id="4AahbtV85lW" role="2yLE0W">
-            <property role="30bdrQ" value="x" />
-          </node>
-          <node concept="1QScDb" id="4AahbtV85bC" role="30czhm">
-            <node concept="MxAYs" id="4AahbtV85bD" role="1QScD9" />
-            <node concept="1QScDb" id="4AahbtV85bE" role="30czhm">
-              <node concept="1WPo9w" id="4AahbtV85bF" role="1QScD9">
-                <property role="MFfev" value="true" />
-                <ref role="1WPo9$" node="3vxfdxbthSx" resolve="m4" />
-                <node concept="30bXRB" id="4AahbtV85bG" role="1WFony">
-                  <property role="30bXRw" value="42" />
-                </node>
-              </node>
-              <node concept="1QScDb" id="4AahbtV85bH" role="30czhm">
-                <node concept="1WETeO" id="4AahbtV85bI" role="1QScD9">
-                  <ref role="1WETeC" node="3vxfdxbthSw" resolve="withIntArgs" />
-                </node>
-                <node concept="1WPpZc" id="4AahbtV85bJ" role="30czhm">
-                  <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="30bdrP" id="4AahbtV85tA" role="_fkuS">
-          <property role="30bdrQ" value="42" />
         </node>
       </node>
       <node concept="_fkuZ" id="3vxfdxbtTgu" role="_fkp5">
@@ -885,15 +751,8 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="4AahbtVmw7k" role="_iOnB" />
-    <node concept="_ixoA" id="4AahbtVmwb0" role="_iOnB" />
-    <node concept="_ixoA" id="4AahbtVmweH" role="_iOnB" />
-    <node concept="_ixoA" id="4AahbtVkebP" role="_iOnB" />
     <node concept="_ixoA" id="4AahbtVkefb" role="_iOnB" />
     <node concept="_ixoA" id="4AahbtVbkzw" role="_iOnB" />
-  </node>
-  <node concept="2XOHcx" id="3vxfdxbrceL">
-    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
   <node concept="1WOfUn" id="3vxfdxbret3">
     <property role="TrG5h" value="Messages" />
@@ -1200,11 +1059,11 @@
       <property role="TrG5h" value="Point" />
       <node concept="2Ss9d7" id="1CNpG_h50E4" role="S5Trm">
         <property role="TrG5h" value="x" />
-        <node concept="30bXR$" id="1CNpG_h50En" role="2S399n" />
+        <node concept="mLuIC" id="5LerK4rmZIt" role="2S399n" />
       </node>
       <node concept="2Ss9d7" id="1CNpG_h50Ew" role="S5Trm">
         <property role="TrG5h" value="y" />
-        <node concept="30bXR$" id="1CNpG_h50Ex" role="2S399n" />
+        <node concept="mLuIC" id="5LerK4rmZI8" role="2S399n" />
       </node>
     </node>
     <node concept="_ixoA" id="1CNpG_h8F09" role="_iOnC" />
@@ -1212,6 +1071,9 @@
       <property role="TrG5h" value="money" />
       <node concept="mLuIC" id="1CNpG_h8F11" role="1WbbD4" />
     </node>
+  </node>
+  <node concept="2XOHcx" id="3vxfdxbrceL">
+    <property role="2XOHcw" value="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   </node>
 </model>
 
