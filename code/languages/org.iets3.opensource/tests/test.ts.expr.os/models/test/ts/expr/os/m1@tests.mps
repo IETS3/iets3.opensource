@@ -583,6 +583,9 @@
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="6100571306011111439" name="org.iets3.core.expr.lambda.structure.FunctionStyleExecOp" flags="ng" index="214yl8">
+        <child id="6100571306011111520" name="fun" index="214ykB" />
+      </concept>
       <concept id="5096753237482793708" name="org.iets3.core.expr.lambda.structure.ReadEffectTag" flags="ng" index="2lgajW" />
       <concept id="5096753237482793709" name="org.iets3.core.expr.lambda.structure.ModifyEffectTag" flags="ng" index="2lgajX" />
       <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
@@ -7063,7 +7066,123 @@
           <node concept="2lgajY" id="4qVjx3k0RZa" role="28QfE6" />
         </node>
         <node concept="_ixoA" id="3ni3Wiec5Yd" role="_iOnC" />
-        <node concept="_ixoA" id="6LVVWm$1y8S" role="_iOnC" />
+        <node concept="1aga60" id="6js_s$jh_CJ" role="_iOnC">
+          <property role="TrG5h" value="somethingWithEffect" />
+          <node concept="30bXRB" id="6js_s$jh_Vj" role="1ahQXP">
+            <property role="30bXRw" value="0" />
+            <node concept="7CXmI" id="6js_s$jhAl5" role="lGtFl">
+              <node concept="29bkU" id="6js_s$jhAl6" role="7EUXB" />
+            </node>
+          </node>
+          <node concept="2lgajY" id="6js_s$jh_Va" role="28QfE6" />
+        </node>
+        <node concept="_ixoA" id="6js_s$jhAl_" role="_iOnC" />
+        <node concept="2zPypq" id="6js_s$jhBGE" role="_iOnC">
+          <property role="TrG5h" value="storeALambda" />
+          <node concept="3ix9CK" id="6js_s$jhC9G" role="2zPyp_">
+            <node concept="1af_rf" id="6js_s$jhC9H" role="3ix9pP">
+              <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="6js_s$jhBbV" role="_iOnC">
+          <property role="TrG5h" value="noEffectFun" />
+          <node concept="1aduha" id="6js_s$jhBBq" role="1ahQXP">
+            <node concept="3ix9CK" id="6js_s$jhBBy" role="1aduh9">
+              <node concept="1af_rf" id="6js_s$jhBCD" role="3ix9pP">
+                <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="6NpHfQ5CxHw" role="_iOnC" />
+        <node concept="2zPypq" id="6NpHfQ5CxcR" role="_iOnC">
+          <property role="TrG5h" value="storeALambdaExec" />
+          <node concept="1QScDb" id="6NpHfQ5Cype" role="2zPyp_">
+            <node concept="3iwYMK" id="6NpHfQ5CyuH" role="1QScD9" />
+            <node concept="3ix9CK" id="6NpHfQ5CxcS" role="30czhm">
+              <node concept="1af_rf" id="6NpHfQ5CxcT" role="3ix9pP">
+                <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="6NpHfQ5CW6X" role="lGtFl">
+              <node concept="1TM$A" id="6NpHfQ5CW6Y" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="6NpHfQ5CxcN" role="_iOnC">
+          <property role="TrG5h" value="noEffectFunExec" />
+          <node concept="1aduha" id="6NpHfQ5CxcO" role="1ahQXP">
+            <node concept="1QScDb" id="6NpHfQ5CyFz" role="1aduh9">
+              <node concept="3iwYMK" id="6NpHfQ5CyLC" role="1QScD9" />
+              <node concept="3ix9CK" id="6NpHfQ5CxcP" role="30czhm">
+                <node concept="1af_rf" id="6NpHfQ5CxcQ" role="3ix9pP">
+                  <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="6NpHfQ5CWea" role="28QfE6" />
+        </node>
+        <node concept="1aga60" id="6NpHfQ5Do1q" role="_iOnC">
+          <property role="TrG5h" value="noEffectFunExecPure" />
+          <node concept="1aduha" id="6NpHfQ5Do1r" role="1ahQXP">
+            <node concept="1QScDb" id="6NpHfQ5Do1s" role="1aduh9">
+              <node concept="3iwYMK" id="6NpHfQ5Do1t" role="1QScD9" />
+              <node concept="3ix9CK" id="6NpHfQ5Do1u" role="30czhm">
+                <node concept="1af_rf" id="6NpHfQ5Do1v" role="3ix9pP">
+                  <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+                </node>
+              </node>
+            </node>
+            <node concept="7CXmI" id="6NpHfQ5Dq2M" role="lGtFl">
+              <node concept="1TM$A" id="6NpHfQ5Dq2N" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="6NpHfQ5Cvz1" role="_iOnC" />
+        <node concept="2zPypq" id="6NpHfQ5CWlp" role="_iOnC">
+          <property role="TrG5h" value="storeALambdaExec2" />
+          <node concept="214yl8" id="6NpHfQ5CZCH" role="2zPyp_">
+            <node concept="3ix9CK" id="6NpHfQ5CWls" role="214ykB">
+              <node concept="1af_rf" id="6NpHfQ5CWlt" role="3ix9pP">
+                <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="6NpHfQ5Dn05" role="lGtFl">
+              <node concept="1TM$A" id="6NpHfQ5Dn06" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aga60" id="6NpHfQ5CWli" role="_iOnC">
+          <property role="TrG5h" value="noEffectFunExec2" />
+          <node concept="1aduha" id="6NpHfQ5CWlj" role="1ahQXP">
+            <node concept="214yl8" id="6NpHfQ5CZaD" role="1aduh9">
+              <node concept="3ix9CK" id="6NpHfQ5CWlm" role="214ykB">
+                <node concept="1af_rf" id="6NpHfQ5CWln" role="3ix9pP">
+                  <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="6NpHfQ5CWlo" role="28QfE6" />
+        </node>
+        <node concept="1aga60" id="6NpHfQ5Dqf9" role="_iOnC">
+          <property role="TrG5h" value="noEffectFunExec2Pure" />
+          <node concept="1aduha" id="6NpHfQ5Dqfa" role="1ahQXP">
+            <node concept="214yl8" id="6NpHfQ5Dqfb" role="1aduh9">
+              <node concept="3ix9CK" id="6NpHfQ5Dqfc" role="214ykB">
+                <node concept="1af_rf" id="6NpHfQ5Dqfd" role="3ix9pP">
+                  <ref role="1afhQb" node="6js_s$jh_CJ" resolve="somethingWithEffect" />
+                </node>
+              </node>
+            </node>
+            <node concept="7CXmI" id="6NpHfQ5DsmD" role="lGtFl">
+              <node concept="1TM$A" id="6NpHfQ5DsmE" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="6NpHfQ5CWlh" role="_iOnC" />
         <node concept="_ixoA" id="6LVVWm$1y4S" role="_iOnC" />
       </node>
     </node>
