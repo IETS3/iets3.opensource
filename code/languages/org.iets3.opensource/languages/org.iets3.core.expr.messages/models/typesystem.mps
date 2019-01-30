@@ -631,7 +631,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3vxfdxbiEYV">
-    <property role="TrG5h" value="typeof_SubNamespaceTarget" />
+    <property role="TrG5h" value="typeof_GroupTarget" />
     <node concept="3clFbS" id="3vxfdxbiEYW" role="18ibNy">
       <node concept="1Z5TYs" id="3vxfdxbiF2h" role="3cqZAp">
         <node concept="mw_s8" id="3vxfdxbiF2i" role="1ZfhKB">
