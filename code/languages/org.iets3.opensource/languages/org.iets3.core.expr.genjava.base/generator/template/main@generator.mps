@@ -17448,7 +17448,7 @@
                             <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
                             <ref role="3cqZAo" to="vsv5:1QYs15esRbY" resolve="CONSTRAINT_FAILED" />
                             <node concept="1sPUBX" id="lH$PuiVULP" role="lGtFl">
-                              <ref role="v9R2y" node="lH$PuiVUun" resolve="switch_DefaultErrorMessage" />
+                              <ref role="v9R2y" node="lH$PuiVUun" resolve="switch_ContractItem_DefaultErrorMessage" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="lH$PuiKhfP" role="3uHU7w">
@@ -17608,17 +17608,7 @@
     </node>
   </node>
   <node concept="jVnub" id="lH$PuiVUun">
-    <property role="TrG5h" value="switch_DefaultErrorMessage" />
-    <node concept="3aamgX" id="lH$PuiVUuo" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hm2y:KaZMgylLmk" resolve="PlainConstraint" />
-      <node concept="gft3U" id="lH$PuiVUus" role="1lVwrX">
-        <node concept="10M0yZ" id="lH$PuiVUvi" role="gfFT$">
-          <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
-          <ref role="3cqZAo" to="vsv5:1QYs15esRbY" resolve="CONSTRAINT_FAILED" />
-        </node>
-      </node>
-    </node>
+    <property role="TrG5h" value="switch_ContractItem_DefaultErrorMessage" />
     <node concept="3aamgX" id="lH$PuiVUvv" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="hm2y:KaZMgy4Ilt" resolve="Precondition" />
@@ -17637,6 +17627,12 @@
           <ref role="3cqZAo" to="vsv5:1QYs15esOLp" resolve="POST_FAILED" />
           <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
         </node>
+      </node>
+    </node>
+    <node concept="gft3U" id="KTwQsT5Qib" role="jxRDz">
+      <node concept="10M0yZ" id="KTwQsT5Qic" role="gfFT$">
+        <ref role="3cqZAo" to="vsv5:1QYs15esRbY" resolve="CONSTRAINT_FAILED" />
+        <ref role="1PxDUh" to="vsv5:10wUh3OyTwB" resolve="ContractViolatedException" />
       </node>
     </node>
   </node>

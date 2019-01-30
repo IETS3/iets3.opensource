@@ -1103,5 +1103,9 @@
       <ref role="3uigEE" node="65vXeyMqfS9" resolve="MessageLog" />
     </node>
   </node>
+  <node concept="312cEu" id="48wljxfih6V">
+    <property role="TrG5h" value="ValidValue" />
+    <node concept="3Tm1VV" id="48wljxfih6W" role="1B3o_S" />
+  </node>
 </model>
 
