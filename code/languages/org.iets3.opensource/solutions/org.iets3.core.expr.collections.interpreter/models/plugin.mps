@@ -181,6 +181,7 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
       <concept id="6000180787831028519" name="com.mbeddr.mpsutil.interpreter.structure.TraceExpression" flags="ng" index="2dz_u5" />
@@ -288,7 +289,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -1519,6 +1520,7 @@
               </node>
             </node>
             <node concept="3clFbH" id="1yEri41uo_R" role="3cqZAp" />
+            <node concept="3clFbH" id="6js_s$ifgj0" role="3cqZAp" />
             <node concept="3cpWs8" id="1yEri41u00v" role="3cqZAp">
               <node concept="3cpWsn" id="1yEri41u00w" role="3cpWs9">
                 <property role="TrG5h" value="index" />
@@ -1541,6 +1543,48 @@
               </node>
             </node>
             <node concept="3clFbH" id="1yEri41tZ$0" role="3cqZAp" />
+            <node concept="3SKdUt" id="6js_s$ifhZA" role="3cqZAp">
+              <node concept="3SKdUq" id="6js_s$ifhZC" role="3SKWNk">
+                <property role="3SKdUp" value="if list is empty return a new one" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6js_s$if1dk" role="3cqZAp">
+              <node concept="3clFbS" id="6js_s$if1dm" role="3clFbx">
+                <node concept="3cpWs6" id="6js_s$if7OB" role="3cqZAp">
+                  <node concept="2OqwBi" id="6js_s$if8DQ" role="3cqZAk">
+                    <node concept="2YIFZM" id="6js_s$if7Ph" role="2Oq$k0">
+                      <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                      <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                    </node>
+                    <node concept="liA8E" id="6js_s$ifbwl" role="2OqNvi">
+                      <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                      <node concept="37vLTw" id="6js_s$ifhkd" role="37wK5m">
+                        <ref role="3cqZAo" node="1yEri41tDEk" resolve="evaledArg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="6js_s$iiy6X" role="3clFbw">
+                <node concept="3clFbC" id="6js_s$ii$7D" role="3uHU7w">
+                  <node concept="3cmrfG" id="6js_s$ii$7O" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="6js_s$iizhE" role="3uHU7B">
+                    <ref role="3cqZAo" node="1yEri41u00w" resolve="index" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6js_s$if2zr" role="3uHU7B">
+                  <node concept="37vLTw" id="6js_s$if29S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1yEri41u00k" resolve="l" />
+                  </node>
+                  <node concept="liA8E" id="6js_s$if6H$" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Collection.isEmpty():boolean" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6js_s$iiwO2" role="3cqZAp" />
             <node concept="3clFbJ" id="1yEri41u00C" role="3cqZAp">
               <node concept="3clFbS" id="1yEri41u00D" role="3clFbx">
                 <node concept="3cpWs8" id="1yEri41uTol" role="3cqZAp">
