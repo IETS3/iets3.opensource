@@ -3074,7 +3074,7 @@
     </node>
     <node concept="1YaCAy" id="4Q4DxjDGLn6" role="1YuTPh">
       <property role="TrG5h" value="headOp" />
-      <ref role="1YaFvo" to="700h:4Q4DxjDGLlO" resolve="HeadOp" />
+      <ref role="1YaFvo" to="700h:4Q4DxjDGLlO" resolve="FirstNOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="4Q4DxjDLg_W">
@@ -3106,7 +3106,7 @@
     </node>
     <node concept="1YaCAy" id="4Q4DxjDLg_Z" role="1YuTPh">
       <property role="TrG5h" value="tailOp" />
-      <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="TailOp" />
+      <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="LastNOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="6HHp2Wnvl_f">

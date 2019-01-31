@@ -560,10 +560,10 @@
   </node>
   <node concept="1TIwiD" id="4Q4DxjDGLlO">
     <property role="3GE5qa" value="ordered" />
-    <property role="TrG5h" value="HeadOp" />
-    <property role="34LRSv" value="head" />
+    <property role="TrG5h" value="FirstNOp" />
+    <property role="34LRSv" value="firstN" />
     <property role="EcuMT" value="5585772046596642164" />
-    <property role="R4oN_" value="returns first element" />
+    <property role="R4oN_" value="returns first N elements" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktS" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
@@ -574,10 +574,10 @@
   </node>
   <node concept="1TIwiD" id="4Q4DxjDLg_t">
     <property role="3GE5qa" value="ordered" />
-    <property role="TrG5h" value="TailOp" />
-    <property role="34LRSv" value="tail" />
+    <property role="TrG5h" value="LastNOp" />
+    <property role="34LRSv" value="lastN" />
     <property role="EcuMT" value="5585772046597818717" />
-    <property role="R4oN_" value="tail of list (everything except first)" />
+    <property role="R4oN_" value="last N entries of a list" />
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="4Q4DxjDXktY" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
