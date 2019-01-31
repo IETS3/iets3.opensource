@@ -3078,7 +3078,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="4Q4DxjDLg_W">
-    <property role="TrG5h" value="typeof_TailOp" />
+    <property role="TrG5h" value="typeof_LastNOp" />
     <property role="3GE5qa" value="ordered" />
     <node concept="3clFbS" id="4Q4DxjDLg_X" role="18ibNy">
       <node concept="1ZobV4" id="1RHynufANlK" role="3cqZAp">
@@ -3087,7 +3087,7 @@
           <node concept="1Z2H0r" id="1RHynufANlN" role="mwGJk">
             <node concept="2OqwBi" id="1RHynufANlO" role="1Z2MuG">
               <node concept="1YBJjd" id="1RHynufANlP" role="2Oq$k0">
-                <ref role="1YBMHb" node="4Q4DxjDLg_Z" resolve="tailOp" />
+                <ref role="1YBMHb" node="4Q4DxjDLg_Z" resolve="op" />
               </node>
               <node concept="3TrEf2" id="1RHynufANlQ" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
@@ -3105,7 +3105,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="4Q4DxjDLg_Z" role="1YuTPh">
-      <property role="TrG5h" value="tailOp" />
+      <property role="TrG5h" value="op" />
       <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="LastNOp" />
     </node>
   </node>

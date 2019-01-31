@@ -190,8 +190,8 @@
     <node concept="PrWs8" id="6zmBjqUiIZG" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiIds" resolve="IElementTyped" />
     </node>
-    <node concept="PrWs8" id="DEavrXJ8SL" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUivxU" resolve="ICollectionOp" />
+    <node concept="PrWs8" id="lR2RIFOEji" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUiIds">
@@ -1091,6 +1091,20 @@
     <property role="EcuMT" value="4481921169623440367" />
     <property role="R4oN_" value="existiential quantifier (true if at least one is true) that passes the element's index into the closure as well." />
     <ref role="1TJDcQ" node="oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
+  </node>
+  <node concept="1TIwiD" id="lR2RIFOEit">
+    <property role="EcuMT" value="393796118209799325" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="TailOp" />
+    <property role="34LRSv" value="tail" />
+    <property role="R4oN_" value="returns all but the first element of a list" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="lR2RIFOEjs" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="lR2RIFOEiu" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
   </node>
 </model>
 
