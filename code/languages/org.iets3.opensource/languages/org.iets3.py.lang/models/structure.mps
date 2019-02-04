@@ -263,5 +263,41 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3scS1sNbDCK">
+    <property role="EcuMT" value="3966791762054126128" />
+    <property role="TrG5h" value="PyFunctionDecStmt" />
+    <property role="34LRSv" value="def" />
+    <ref role="1TJDcQ" node="5ygshtx$mCh" resolve="PyStatement" />
+    <node concept="1TJgyj" id="3scS1sNbDCL" role="1TKVEi">
+      <property role="IQ2ns" value="3966791762054126129" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3scS1sNbDCN" role="1TKVEi">
+      <property role="IQ2ns" value="3966791762054126131" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5ygshtx$mCh" resolve="PyStatement" />
+    </node>
+    <node concept="PrWs8" id="3scS1sNbDDq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3scS1sNbDGq">
+    <property role="EcuMT" value="3966791762054126362" />
+    <property role="TrG5h" value="PyReturnStatement" />
+    <property role="34LRSv" value="return" />
+    <ref role="1TJDcQ" node="5ygshtx$mCh" resolve="PyStatement" />
+    <node concept="1TJgyj" id="3scS1sNbDGr" role="1TKVEi">
+      <property role="IQ2ns" value="3966791762054126363" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

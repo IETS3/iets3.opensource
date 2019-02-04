@@ -35,6 +35,13 @@
       </concept>
     </language>
     <language id="937cc4d6-997d-4b94-b877-f0cb75742dd9" name="org.iets3.py.lang">
+      <concept id="3966791762054126128" name="org.iets3.py.lang.structure.PyFunctionDecStmt" flags="ng" index="48BCB">
+        <child id="3966791762054126131" name="body" index="48BC$" />
+        <child id="3966791762054126129" name="parameters" index="48BCA" />
+      </concept>
+      <concept id="3966791762054126362" name="org.iets3.py.lang.structure.PyReturnStatement" flags="ng" index="48BGd">
+        <child id="3966791762054126363" name="expr" index="48BGc" />
+      </concept>
       <concept id="6381725017219068947" name="org.iets3.py.lang.structure.PyDocument" flags="ng" index="T08k4">
         <child id="6381725017219099151" name="content" index="T0hGo" />
       </concept>
@@ -236,6 +243,23 @@
         </node>
         <node concept="T0hIT" id="6eUEBARnRCx" role="30dEsF">
           <ref role="T0hIS" node="6eUEBARnRCb" resolve="z" />
+        </node>
+      </node>
+    </node>
+    <node concept="T0hG3" id="3scS1sNbMOj" role="T0hGo" />
+    <node concept="48BCB" id="3scS1sNbMQp" role="T0hGo">
+      <property role="TrG5h" value="foo" />
+      <node concept="T0p8b" id="3scS1sNbVRG" role="48BCA">
+        <node concept="3kTBcd" id="3scS1sNbVRV" role="T0p8a">
+          <property role="TrG5h" value="a" />
+        </node>
+        <node concept="30bXRB" id="3scS1sNbVS2" role="T0p88">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+      <node concept="48BGd" id="3scS1sNbVSf" role="48BC$">
+        <node concept="T0hIT" id="3scS1sNbVSk" role="48BGc">
+          <ref role="T0hIS" node="3scS1sNbVRV" resolve="a" />
         </node>
       </node>
     </node>

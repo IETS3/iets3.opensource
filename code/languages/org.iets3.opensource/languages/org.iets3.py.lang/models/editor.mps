@@ -317,7 +317,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5xfWibxHUxx">
-    <ref role="1XX52x" to="ns9j:5xfWibxHUx5" resolve="PyListExpression" />
+    <ref role="1XX52x" to="ns9j:5xfWibxHUx5" resolve="PyListExpr" />
     <node concept="3EZMnI" id="5xfWibxHUxC" role="2wV5jI">
       <node concept="2iRfu4" id="5xfWibxHUxD" role="2iSdaV" />
       <node concept="3F0ifn" id="5xfWibxHUxI" role="3EZMnx">
@@ -330,6 +330,63 @@
       </node>
       <node concept="3F0ifn" id="5xfWibxHUy1" role="3EZMnx">
         <property role="3F0ifm" value="]" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3scS1sNbDDf">
+    <ref role="1XX52x" to="ns9j:3scS1sNbDCK" resolve="PyFunctionDecStmt" />
+    <node concept="3EZMnI" id="3scS1sNbDDk" role="2wV5jI">
+      <node concept="l2Vlx" id="3scS1sNbDDl" role="2iSdaV" />
+      <node concept="3F0ifn" id="3scS1sNbDDh" role="3EZMnx">
+        <property role="3F0ifm" value="def" />
+      </node>
+      <node concept="3F0A7n" id="3scS1sNbDDz" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="3scS1sNbDDF" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="3scS1sNbDDV" role="3EZMnx">
+        <ref role="1NtTu8" to="ns9j:3scS1sNbDCL" resolve="parameters" />
+        <node concept="l2Vlx" id="3scS1sNbDDX" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3scS1sNbDEa" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="3scS1sNbDEq" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0ifn" id="3scS1sNbDEG" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="3scS1sNbDFb" role="3EZMnx">
+        <ref role="1NtTu8" to="ns9j:3scS1sNbDCN" resolve="body" />
+        <node concept="l2Vlx" id="3scS1sNbDFd" role="2czzBx" />
+        <node concept="lj46D" id="3scS1sNbDFo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3scS1sNbDFt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3scS1sNbDG9" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="3scS1sNbDGo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3scS1sNbDGQ">
+    <ref role="1XX52x" to="ns9j:3scS1sNbDGq" resolve="PyReturnStatement" />
+    <node concept="3EZMnI" id="3scS1sNbDGS" role="2wV5jI">
+      <node concept="l2Vlx" id="3scS1sNbDGT" role="2iSdaV" />
+      <node concept="3F0ifn" id="3scS1sNbDH1" role="3EZMnx">
+        <property role="3F0ifm" value="return" />
+      </node>
+      <node concept="3F2HdR" id="3scS1sNbDHb" role="3EZMnx">
+        <ref role="1NtTu8" to="ns9j:3scS1sNbDGr" resolve="expr" />
+        <node concept="l2Vlx" id="3scS1sNbDHd" role="2czzBx" />
       </node>
     </node>
   </node>
