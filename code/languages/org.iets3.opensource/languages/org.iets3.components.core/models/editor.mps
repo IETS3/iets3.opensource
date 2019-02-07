@@ -7565,6 +7565,9 @@
             </node>
           </node>
         </node>
+        <node concept="PMmxH" id="6cDi3KAInMq" role="3EZMnx">
+          <ref role="PMmxG" node="3xTZ$YBv7mN" resolve="ComponentInstanceBase_Diagram_Footer" />
+        </node>
         <node concept="2iRkQZ" id="siw10FuWOP" role="2iSdaV" />
         <node concept="VPM3Z" id="siw10FuWOQ" role="3F10Kt">
           <property role="VOm3f" value="false" />
