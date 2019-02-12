@@ -288,7 +288,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -331,7 +331,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="7kYh9WsSh7Y">
-    <property role="TrG5h" value="ExprCollectionsInterpeterPCollections" />
+    <property role="TrG5h" value="ExprCollectionsInterpreterPCollections" />
     <property role="UYu25" value="arithmetic" />
     <node concept="qq9P1" id="cHo4qYgDpQ" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -966,10 +966,10 @@
       </node>
     </node>
     <node concept="1J7WVO" id="3_DFadM_bGC" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
     </node>
     <node concept="1J7WVO" id="3_DFadM_bHk" role="1J4apk">
-      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" resolve="ExprLambdaInterpeter" />
+      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" resolve="ExprLambdaInterpreter" />
     </node>
     <node concept="d$4Dx" id="7kYh9WsSh7Z" role="d$6nW">
       <node concept="BaHAS" id="7kYh9WsSh80" role="cpn$n">

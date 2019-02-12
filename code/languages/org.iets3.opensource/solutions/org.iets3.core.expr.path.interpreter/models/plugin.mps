@@ -156,7 +156,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="2KEm7E5F61K">
-    <property role="TrG5h" value="ExprPathInterpeterPCollections" />
+    <property role="TrG5h" value="ExprPathInterpreterPCollections" />
     <property role="UYu25" value="arithmetic" />
     <node concept="qq9P1" id="2KEm7E5F61L" role="qq9xR">
       <property role="2TnfIJ" value="true" />

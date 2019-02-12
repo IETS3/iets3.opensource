@@ -226,7 +226,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprDataflowInterpeter" />
+    <property role="TrG5h" value="ExprDataflowInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
@@ -235,7 +235,7 @@
       </node>
     </node>
     <node concept="1J7WVO" id="1lon7Xl3CPo" role="1J4apk">
-      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" resolve="ExprLambdaInterpeter" />
+      <ref role="1J7WVQ" to="jpzw:uGVYUiiVGW" resolve="ExprLambdaInterpreter" />
     </node>
     <node concept="qq9P1" id="2vkvJYTeKUo" role="qq9xR">
       <property role="2TnfIJ" value="true" />

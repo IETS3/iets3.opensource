@@ -234,7 +234,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprADTInterpeter" />
+    <property role="TrG5h" value="ExprADTInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <property role="3GE5qa" value="interpreter" />
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">

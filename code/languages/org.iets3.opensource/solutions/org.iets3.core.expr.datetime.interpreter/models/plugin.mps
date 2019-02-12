@@ -158,7 +158,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprDatetimeTypesInterpeter" />
+    <property role="TrG5h" value="ExprDatetimeTypesInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="d$4Dx" id="50smQ1V9EXs" role="d$6nW">
       <node concept="BaHAS" id="50smQ1V9EXt" role="cpn$n">
@@ -253,10 +253,10 @@
       </node>
     </node>
     <node concept="1J7WVO" id="3nGzaxUqYQi" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
     </node>
     <node concept="1J7WVO" id="3nGzaxUr3fU" role="1J4apk">
-      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
+      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
     </node>
     <node concept="qq9P1" id="7baKnR5my0Y" role="qq9xR">
       <property role="2TnfIJ" value="true" />
