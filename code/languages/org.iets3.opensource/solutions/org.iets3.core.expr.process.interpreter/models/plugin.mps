@@ -172,11 +172,11 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprProcessInterpeter" />
+    <property role="TrG5h" value="ExprProcessInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <property role="3GE5qa" value="" />
     <node concept="1J7WVO" id="7WFhXJlVIJG" role="1J4apk">
-      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" resolve="ExprMutateInterpeter" />
+      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" resolve="ExprMutateInterpreter" />
     </node>
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">

@@ -155,7 +155,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprStatemachineInterpeter" />
+    <property role="TrG5h" value="ExprStatemachineInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <property role="3GE5qa" value="" />
     <node concept="qq9P1" id="4J6AqiIV05G" role="qq9xR">
@@ -871,7 +871,7 @@
       </node>
     </node>
     <node concept="1J7WVO" id="YMJl2BJE5A" role="1J4apk">
-      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" resolve="ExprMutateInterpeter" />
+      <ref role="1J7WVQ" to="u5a1:uGVYUiiVGW" resolve="ExprMutateInterpreter" />
     </node>
   </node>
 </model>

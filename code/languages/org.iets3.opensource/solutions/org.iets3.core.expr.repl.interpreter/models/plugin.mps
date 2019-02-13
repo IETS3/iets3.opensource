@@ -211,7 +211,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ReplInterpeter" />
+    <property role="TrG5h" value="ReplInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="qq9P1" id="7HzLUeHFrrW" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -832,13 +832,13 @@
       </node>
     </node>
     <node concept="1J7WVO" id="2HpFPvTaXcy" role="1J4apk">
-      <ref role="1J7WVQ" to="rxyl:uGVYUiiVGW" resolve="ExprToplevelInterpeter" />
+      <ref role="1J7WVQ" to="rxyl:uGVYUiiVGW" resolve="ExprToplevelInterpreter" />
     </node>
     <node concept="1J7WVO" id="2HpFPvTaXcU" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
     </node>
     <node concept="1J7WVO" id="2HpFPvTb2sP" role="1J4apk">
-      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
+      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
     </node>
   </node>
 </model>
