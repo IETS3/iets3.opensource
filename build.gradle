@@ -36,7 +36,7 @@ def major = "0"
 def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2018.3.+'
+ext.mpsVersion = '2019.1-EAP3'
 
 def mbeddrVersion = "1.3+"
 
