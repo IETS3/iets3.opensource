@@ -73,6 +73,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.dataflow.interpreter/org.iets3.core.expr.dataflow.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.datetime.interpreter/org.iets3.core.expr.datetime.interpreter.msd" folder="expr.lang-advanced" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.datetime.runtime/org.iets3.core.expr.datetime.runtime.msd" folder="expr.lang-advanced" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.doc.plugin/org.iets3.core.expr.doc.plugin.msd" folder="expr.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.advanced.genplan/org.iets3.core.expr.genjava.advanced.genplan.msd" folder="expr.genjava" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.core.expr.genjava.base.rt/org.iets3.core.expr.genjava.base.rt.msd" folder="expr.genjava" />

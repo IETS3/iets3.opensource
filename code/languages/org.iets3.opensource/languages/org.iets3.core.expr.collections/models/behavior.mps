@@ -2,9 +2,9 @@
 <model ref="r:2c0153cb-f6d9-49f3-b0fe-e4f726698ef0(org.iets3.core.expr.collections.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -5075,6 +5075,63 @@
     <ref role="13h7C2" to="700h:oG0sI$GQkF" resolve="TwoArgPredicateCollectionOp" />
     <node concept="13hLZK" id="oG0sI$GQsz" role="13h7CW">
       <node concept="3clFbS" id="oG0sI$GQs$" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="24Fec410bjw">
+    <property role="3GE5qa" value="ordered" />
+    <ref role="13h7C2" to="700h:6zmBjqUiIZI" resolve="LastOp" />
+    <node concept="13hLZK" id="24Fec410bjx" role="13h7CW">
+      <node concept="3clFbS" id="24Fec410bjy" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="24Fec410bjF" role="13h7CS">
+      <property role="TrG5h" value="mustBeOption" />
+      <ref role="13i0hy" node="24Fec40WJbb" resolve="mustBeOption" />
+      <node concept="3Tm1VV" id="24Fec410bjG" role="1B3o_S" />
+      <node concept="3clFbS" id="24Fec410bjL" role="3clF47">
+        <node concept="3clFbF" id="24Fec410boQ" role="3cqZAp">
+          <node concept="3clFbT" id="24Fec410boP" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="24Fec410bjM" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="24Fec40WJb0">
+    <ref role="13h7C2" to="700h:6zmBjqUiIds" resolve="IElementTyped" />
+    <node concept="13i0hz" id="24Fec40WJbb" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="mustBeOption" />
+      <node concept="3Tm1VV" id="24Fec40WJbc" role="1B3o_S" />
+      <node concept="10P_77" id="24Fec40WNzA" role="3clF45" />
+      <node concept="3clFbS" id="24Fec40WJbe" role="3clF47">
+        <node concept="3clFbF" id="24Fec40WNzE" role="3cqZAp">
+          <node concept="3clFbT" id="24Fec40WNzD" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="24Fec40WJb1" role="13h7CW">
+      <node concept="3clFbS" id="24Fec40WJb2" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="24Fec40XhyH">
+    <property role="3GE5qa" value="ordered" />
+    <ref role="13h7C2" to="700h:6zmBjqUiIdc" resolve="FirstOp" />
+    <node concept="13hLZK" id="24Fec40XhyI" role="13h7CW">
+      <node concept="3clFbS" id="24Fec40XhyJ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="24Fec40XhyS" role="13h7CS">
+      <property role="TrG5h" value="mustBeOption" />
+      <ref role="13i0hy" node="24Fec40WJbb" resolve="mustBeOption" />
+      <node concept="3Tm1VV" id="24Fec40XhyT" role="1B3o_S" />
+      <node concept="3clFbS" id="24Fec40XhyY" role="3clF47">
+        <node concept="3clFbF" id="24Fec40XhC3" role="3cqZAp">
+          <node concept="3clFbT" id="24Fec40XhC2" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="24Fec40XhyZ" role="3clF45" />
     </node>
   </node>
 </model>

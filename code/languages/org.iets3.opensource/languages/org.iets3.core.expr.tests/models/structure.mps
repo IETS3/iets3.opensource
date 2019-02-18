@@ -601,6 +601,13 @@
     <property role="34LRSv" value="test coverage" />
     <property role="R4oN_" value="assesses coverage of the test code" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
+    <node concept="1TJgyj" id="1vo80oMkNK" role="1TKVEi">
+      <property role="IQ2ns" value="26846226075438320" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="measureFor" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1vo80oMkMQ" resolve="MeasureCoverageFor" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4e_7uAt7oTg">
     <property role="EcuMT" value="4874335060898975312" />
@@ -1002,11 +1009,11 @@
   <node concept="1TIwiD" id="37V13JR4s$_">
     <property role="EcuMT" value="3601476982607563045" />
     <property role="3GE5qa" value="assessment.structural" />
-    <property role="TrG5h" value="AllFilter" />
+    <property role="TrG5h" value="AllExpressionsFilter" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="expressions everywhere" />
-    <property role="R4oN_" value="??" />
+    <property role="R4oN_" value="in the coverage measurement allow expressions everywhere" />
     <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
   </node>
   <node concept="1TIwiD" id="1EZBwZ4mn8x">
@@ -1191,6 +1198,46 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5Pgo_AS3PT0" resolve="AbstractValueMatcher" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5zhBkzoH3E_">
+    <property role="EcuMT" value="6400069481669081765" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="AllNodesFilter" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="nodes everywhere" />
+    <property role="R4oN_" value="in the coverage measurement allow nodes everywhere" />
+    <ref role="1TJDcQ" node="CrzyxmE7bQ" resolve="StructuralCoverageNodesFilter" />
+  </node>
+  <node concept="1TIwiD" id="5DEy7AGc9um">
+    <property role="EcuMT" value="6515169867106129814" />
+    <property role="3GE5qa" value="assessment.structural" />
+    <property role="TrG5h" value="StructuralCoverageAssSummary" />
+    <property role="R4oN_" value="??" />
+    <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+    <node concept="1TJgyi" id="5DEy7AGc9un" role="1TKVEl">
+      <property role="IQ2nx" value="6515169867106129815" />
+      <property role="TrG5h" value="coverageRatio" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vo80oMkMQ">
+    <property role="EcuMT" value="26846226075438262" />
+    <property role="3GE5qa" value="assessment.models" />
+    <property role="TrG5h" value="MeasureCoverageFor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1vo80oMkMR" role="1TKVEi">
+      <property role="IQ2ns" value="26846226075438263" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="1vo80oWF62" role="1TKVEl">
+      <property role="IQ2nx" value="26846226078151042" />
+      <property role="TrG5h" value="completeSubtree" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
