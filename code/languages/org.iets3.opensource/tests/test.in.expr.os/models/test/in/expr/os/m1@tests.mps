@@ -7611,19 +7611,6 @@
           <ref role="3B5MYn" node="38v7GtLHKKm" resolve="list_collection" />
         </node>
       </node>
-      <node concept="3pwbzX" id="1vo80p9ffq" role="3pwbzW">
-        <property role="1OfcgH" value="false" />
-        <property role="3J1cY9" value="1544622940413" />
-        <node concept="OjmMv" id="1vo80p9ffr" role="3J00qV">
-          <node concept="19SGf9" id="1vo80p9ffs" role="OjmMu">
-            <node concept="19SUe$" id="1vo80p9fft" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="2QpIKI" id="1vo80p9f1G" role="3pwfKK">
-          <property role="2QpIKG" value="Covered." />
-          <ref role="3B5MYn" node="38v7GtLWTWN" resolve="set_collection" />
-        </node>
-      </node>
       <node concept="3pwbzX" id="1vo80p9ffy" role="3pwbzW">
         <property role="1OfcgH" value="false" />
         <property role="3J1cY9" value="1544622940413" />
