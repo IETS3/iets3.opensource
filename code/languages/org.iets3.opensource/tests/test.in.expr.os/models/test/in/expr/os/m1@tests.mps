@@ -33946,6 +33946,39 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="4qTaF_EkpZa" role="_iOnB" />
+    <node concept="1WbbD7" id="1uB4LRhNDfb" role="_iOnB">
+      <property role="TrG5h" value="numRange" />
+      <node concept="mLuIC" id="1uB4LRhNDfn" role="1WbbD4">
+        <node concept="2gteSW" id="1uB4LRhNDfv" role="2gteSx">
+          <property role="2gteSQ" value="5" />
+          <property role="2gteSD" value="20" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="1uB4LRhNDgI" role="_iOnB">
+      <property role="TrG5h" value="c1" />
+      <node concept="1WbbFT" id="1uB4LRhNDhh" role="2zM23F">
+        <ref role="1WbbFS" node="1uB4LRhNDfb" resolve="numRange" />
+      </node>
+      <node concept="30bXRB" id="3JZRUPdrOUs" role="2zPyp_">
+        <property role="30bXRw" value="5" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="1uB4LRhNDf5" role="_iOnB" />
+    <node concept="_fkuM" id="1uB4LRhNDeV" role="_iOnB">
+      <property role="TrG5h" value="testPrecisionTypedefs" />
+      <node concept="_fkuZ" id="5Ky8UT4dSid" role="_fkp5">
+        <node concept="_fku$" id="5Ky8UT4dSie" role="_fkur" />
+        <node concept="_emDc" id="5Ky8UT4dSit" role="_fkuY">
+          <ref role="_emDf" node="1uB4LRhNDgI" resolve="c1" />
+        </node>
+        <node concept="30bXRB" id="5Ky8UT4dSjr" role="_fkuS">
+          <property role="30bXRw" value="5" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4qTaF_Ekq7G" role="_iOnB" />
   </node>
   <node concept="_iOnU" id="5ElkanPNlMT">
     <property role="TrG5h" value="temperature" />
