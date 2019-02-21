@@ -5527,6 +5527,11 @@
               <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
             </node>
           </node>
+          <node concept="1SiIV0" id="kKmKqghvE3" role="3bR37C">
+            <node concept="3bR9La" id="kKmKqghvE4" role="1SiIV1">
+              <ref role="3bR37D" node="3vxfdxbuEmk" resolve="org.iets3.core.expr.messages" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="26tZ$Z4s7fa" role="1E1XAP">
           <ref role="1E0d5P" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
@@ -5550,6 +5555,48 @@
         <node concept="1SiIV0" id="7pfuzNDFAym" role="3bR37C">
           <node concept="3bR9La" id="7pfuzNDFAyn" role="1SiIV1">
             <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="lH$Puj5DR8" role="1E1XAP">
+          <ref role="1E0d5P" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
+        </node>
+      </node>
+      <node concept="1E1JtD" id="lH$Puj5DFq" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.genjava.contracts" />
+        <property role="3LESm3" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />
+        <node concept="398BVA" id="lH$Puj5DM8" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="lH$Puj5DNw" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="lH$Puj5DOR" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.genjava.contracts" />
+              <node concept="2Ry0Ak" id="lH$Puj5DQe" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.genjava.contracts.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1E0d5M" id="lH$Puj5DRb" role="1E1XAP">
+          <ref role="1E0d5P" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
+        </node>
+        <node concept="1SiIV0" id="lH$Puj5DRc" role="3bR37C">
+          <node concept="1Busua" id="lH$Puj5DRd" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="lH$Puj5DRe" role="1TViLv">
+          <property role="TrG5h" value="org.iets3.core.expr.genjava.contracts#01" />
+          <property role="3LESm3" value="45f67793-c438-4812-9116-83e3b0dc2224" />
+          <node concept="1SiIV0" id="lH$Puj5DRh" role="3bR37C">
+            <node concept="3bR9La" id="lH$Puj5DRi" role="1SiIV1">
+              <ref role="3bR37D" node="26tZ$Z4roBX" resolve="org.iets3.core.expr.genjava.base.rt" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="lH$Puj5DRj" role="3bR37C">
+            <node concept="3bR9La" id="lH$Puj5DRk" role="1SiIV1">
+              <ref role="3bR37D" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
+            </node>
           </node>
         </node>
       </node>
@@ -5830,6 +5877,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="lH$Puj5DRl" role="3bR37C">
+          <node concept="1Busua" id="lH$Puj5DRm" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="26tZ$Z4qXja" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6036,6 +6088,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="lH$Puj5DRn" role="3bR37C">
+          <node concept="3bR9La" id="lH$Puj5DRo" role="1SiIV1">
+            <ref role="3bR37D" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
           </node>
         </node>
       </node>
@@ -6493,6 +6550,9 @@
         </node>
         <node concept="3LEDTM" id="2zpAVpC$HSM" role="3LEDUa">
           <ref role="3LEDTN" node="2zpAVpC$C_Q" resolve="org.iets3.core.expr.genjava.core.genplan" />
+        </node>
+        <node concept="3LEDTy" id="lH$Puj5DU3" role="3LEDUa">
+          <ref role="3LEDTV" node="lH$Puj5DFq" resolve="org.iets3.core.expr.genjava.contracts" />
         </node>
       </node>
       <node concept="3LEwk6" id="2zpAVpC$OJa" role="2G$12L">

@@ -64,6 +64,10 @@
         <property role="2V$B1T" value="752cf1d3-84d1-4f2b-bbf5-4ef076a62ec7" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.messages" />
       </node>
+      <node concept="2V$Bhx" id="lH$PuhTIAz" role="1t_9vn">
+        <property role="2V$B1T" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.contracts" />
+      </node>
       <node concept="2V$Bhx" id="6ii4I_AaKi7" role="1t_9vn">
         <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
