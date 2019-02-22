@@ -2111,7 +2111,7 @@
       <property role="IQ2ns" value="2390066428848651933" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="optionValue" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
       <node concept="asaX9" id="5Iz9nTHIdkh" role="lGtFl" />
     </node>
