@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="org.iets3.core.expr.genall.core" uuid="ec967770-4707-442f-baaf-a8b7bb554717">
+<dev-kit name="org.iets3.core.expr.genall.core.devkit" uuid="ec967770-4707-442f-baaf-a8b7bb554717">
   <extendedDevKits>
     <extendedDevKit>da9c5738-b245-4e38-b52f-e6ee76cadd7f(org.iets3.core.expr.genjava.core.devkit)</extendedDevKit>
   </extendedDevKits>

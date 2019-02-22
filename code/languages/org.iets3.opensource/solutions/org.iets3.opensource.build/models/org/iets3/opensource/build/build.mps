@@ -5451,6 +5451,26 @@
           <ref role="3LEDTN" node="OnhZN9YvFr" resolve="org.iets3.core.expr.repl.plugin" />
         </node>
       </node>
+      <node concept="3LEwk6" id="kEKsc8qAwu" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.genall.core.devkit" />
+        <property role="3LESm3" value="ec967770-4707-442f-baaf-a8b7bb554717" />
+        <node concept="398BVA" id="kEKsc8qAWO" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="kEKsc8qB5Q" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="kEKsc8qB7d" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.genall.core.devkit" />
+              <node concept="2Ry0Ak" id="kEKsc8qB9d" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.genall.core.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="kEKsc8qBa7" role="3LEz9a">
+          <ref role="3LEz8N" node="2zpAVpC$xZc" resolve="org.iets3.core.expr.genjava.core.devkit" />
+        </node>
+      </node>
       <node concept="3LEwk6" id="2zpAVpC_4Ut" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.iets3.core.expr.advanced.devkit" />
