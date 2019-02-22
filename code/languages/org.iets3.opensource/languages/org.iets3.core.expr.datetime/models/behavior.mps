@@ -57,6 +57,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -69,6 +70,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -504,6 +506,28 @@
       <node concept="3Tm1VV" id="3C_9jV2mVx" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2nyA" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2mVz" role="3clF47">
+        <node concept="3clFbJ" id="7yViwE2Stkm" role="3cqZAp">
+          <node concept="3clFbS" id="7yViwE2Stko" role="3clFbx">
+            <node concept="3cpWs6" id="7yViwE2SzhK" role="3cqZAp">
+              <node concept="2YIFZM" id="7yViwE2SzhM" role="3cqZAk">
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <node concept="3cmrfG" id="7yViwE2SzhN" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yViwE2SuRj" role="3clFbw">
+            <node concept="2OqwBi" id="7yViwE2StIS" role="2Oq$k0">
+              <node concept="13iPFW" id="7yViwE2Stq$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yViwE2SulH" role="2OqNvi">
+                <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="7yViwE2SvZx" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="3C_9jV2oaT" role="3cqZAp">
           <node concept="2YIFZM" id="3C_9jV2obg" role="3clFbG">
             <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
@@ -523,6 +547,29 @@
       <node concept="3Tm1VV" id="3C_9jV2p6$" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2p6_" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2p6A" role="3clF47">
+        <node concept="3clFbJ" id="7yViwE2SwnM" role="3cqZAp">
+          <node concept="3clFbS" id="7yViwE2SwnN" role="3clFbx">
+            <node concept="3cpWs6" id="7yViwE2Szni" role="3cqZAp">
+              <node concept="2YIFZM" id="7yViwE2Sznk" role="3cqZAk">
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
+                <node concept="3cmrfG" id="7yViwE2Sznl" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yViwE2SwnR" role="3clFbw">
+            <node concept="2OqwBi" id="7yViwE2SwnS" role="2Oq$k0">
+              <node concept="13iPFW" id="7yViwE2SwnT" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yViwE2SwnU" role="2OqNvi">
+                <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="7yViwE2SwnV" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yViwE2SwhL" role="3cqZAp" />
         <node concept="3clFbF" id="3C_9jV2p6B" role="3cqZAp">
           <node concept="2YIFZM" id="3C_9jV2p6C" role="3clFbG">
             <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
@@ -542,6 +589,29 @@
       <node concept="3Tm1VV" id="3C_9jV2pNJ" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2pNK" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2pNL" role="3clF47">
+        <node concept="3clFbJ" id="7yViwE2Sw_A" role="3cqZAp">
+          <node concept="3clFbS" id="7yViwE2Sw_B" role="3clFbx">
+            <node concept="3cpWs6" id="7yViwE2Szqm" role="3cqZAp">
+              <node concept="2YIFZM" id="7yViwE2Szqo" role="3cqZAk">
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
+                <node concept="3cmrfG" id="7yViwE2Szqp" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yViwE2Sw_F" role="3clFbw">
+            <node concept="2OqwBi" id="7yViwE2Sw_G" role="2Oq$k0">
+              <node concept="13iPFW" id="7yViwE2Sw_H" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7yViwE2Sw_I" role="2OqNvi">
+                <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="7yViwE2Sw_J" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yViwE2Swv_" role="3cqZAp" />
         <node concept="3clFbF" id="3C_9jV2pNM" role="3cqZAp">
           <node concept="2YIFZM" id="3C_9jV2pNN" role="3clFbG">
             <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
