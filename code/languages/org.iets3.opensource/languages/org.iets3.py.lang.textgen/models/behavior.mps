@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:98611a56-e331-4e92-a4fa-6207bef3a332(de.audi.tm.py.textgen.behavior)">
+<model ref="r:98611a56-e331-4e92-a4fa-6207bef3a332(org.iets3.py.lang.textgen.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />

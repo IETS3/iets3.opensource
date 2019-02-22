@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="de.audi.tm.py.textgen" uuid="9e321807-a16d-4f37-a936-c6fece318b48" languageVersion="0" moduleVersion="0">
+<language namespace="org.iets3.py.lang.textgen" uuid="9e321807-a16d-4f37-a936-c6fece318b48" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="de.audi.tm.py.textgen#01" uuid="8fb22357-22c9-4a60-be15-80a8f5f73b39">
+    <generator alias="main" namespace="org.iets3.py.lang.textgen#01" uuid="8fb22357-22c9-4a60-be15-80a8f5f73b39">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -55,8 +55,6 @@
         <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
         <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
         <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
-        <module reference="9e321807-a16d-4f37-a936-c6fece318b48(de.audi.tm.py.textgen)" version="0" />
-        <module reference="8fb22357-22c9-4a60-be15-80a8f5f73b39(de.audi.tm.py.textgen#01)" version="0" />
         <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
         <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
@@ -74,6 +72,8 @@
         <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
         <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
         <module reference="937cc4d6-997d-4b94-b877-f0cb75742dd9(org.iets3.py.lang)" version="0" />
+        <module reference="9e321807-a16d-4f37-a936-c6fece318b48(org.iets3.py.lang.textgen)" version="0" />
+        <module reference="8fb22357-22c9-4a60-be15-80a8f5f73b39(org.iets3.py.lang.textgen#01)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -84,7 +84,6 @@
     <dependency reexport="false">990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:309e0004-4976-4416-b947-ec02ae4ecef2:com.mbeddr.mpsutil.modellisteners" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -125,7 +124,6 @@
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
-    <module reference="9e321807-a16d-4f37-a936-c6fece318b48(de.audi.tm.py.textgen)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
@@ -143,6 +141,7 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
     <module reference="937cc4d6-997d-4b94-b877-f0cb75742dd9(org.iets3.py.lang)" version="0" />
+    <module reference="9e321807-a16d-4f37-a936-c6fece318b48(org.iets3.py.lang.textgen)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>

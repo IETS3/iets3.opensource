@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.genjava.stateMachineExample.devkit/org.iets3.core.expr.genjava.stateMachineExample.devkit.devkit" folder="expr.genjava.stateMachineExample" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.core.expr.stateful.devkit/org.iets3.core.expr.stateful.devkit.devkit" folder="expr.lang-stateful" />
       <modulePath path="$PROJECT_DIR$/devkits/org.iets3.req/org.iets3.req.devkit" folder="req" />
-      <modulePath path="$PROJECT_DIR$/languages/de.audi.tm.py.textgen/de.audi.tm.py.textgen.mpl" folder="py" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.analysis.base/org.iets3.analysis.base.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.core/org.iets3.components.core.mpl" folder="comp" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.components.plugin/org.iets3.components.plugin.msd" folder="comp" />
@@ -63,6 +62,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.core.users/org.iets3.core.users.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.glossary/org.iets3.glossary.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/languages/org.iets3.py.lang.textgen/org.iets3.py.lang.textgen.mpl" folder="py" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.py.lang/org.iets3.py.lang.mpl" folder="py" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.py.lang/sandbox/org.iets3.py.lang.sandbox.msd" folder="py" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.req.core/org.iets3.req.core.mpl" folder="req" />
