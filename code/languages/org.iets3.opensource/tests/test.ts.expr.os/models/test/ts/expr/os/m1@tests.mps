@@ -168,9 +168,7 @@
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
         <child id="606861080870797310" name="expr" index="pf3We" />
       </concept>
-      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt">
-        <child id="2390066428848651933" name="optionValue" index="wdKps" />
-      </concept>
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -12922,7 +12920,7 @@
           <property role="TrG5h" value="xDeOpted2" />
           <node concept="mLuIC" id="24Fec41ax4y" role="2zM23F" />
           <node concept="wdKpt" id="2$mkTNp$YhK" role="2zPyp_">
-            <node concept="_emDc" id="24Fec41hnmE" role="wdKps">
+            <node concept="_emDc" id="24Fec41hnmE" role="30czhm">
               <ref role="_emDf" node="3N4k0eSJPou" resolve="x" />
             </node>
           </node>
