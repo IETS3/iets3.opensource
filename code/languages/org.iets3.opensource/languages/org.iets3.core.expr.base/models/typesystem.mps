@@ -7915,6 +7915,15 @@
   </node>
   <node concept="1YbPZF" id="24Fec4177M9">
     <property role="TrG5h" value="typeof_BangOp" />
+    <node concept="bXqS6" id="5Iz9nTI1etw" role="bX4a1">
+      <node concept="3clFbS" id="5Iz9nTI1etx" role="2VODD2">
+        <node concept="3clFbF" id="5Iz9nTI1e$N" role="3cqZAp">
+          <node concept="3clFbT" id="5Iz9nTI1e$M" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFbS" id="24Fec4177Ma" role="18ibNy">
       <node concept="nvevp" id="24Fec4178jc" role="3cqZAp">
         <node concept="3clFbS" id="24Fec4178jd" role="nvhr_">
@@ -7977,11 +7986,11 @@
         </node>
         <node concept="1Z2H0r" id="24Fec4178jY" role="nvjzm">
           <node concept="2OqwBi" id="24Fec4178va" role="1Z2MuG">
+            <node concept="3TrEf2" id="5Iz9nTHLO5T" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+            </node>
             <node concept="1YBJjd" id="24Fec4178kq" role="2Oq$k0">
               <ref role="1YBMHb" node="24Fec4177Mc" resolve="bang" />
-            </node>
-            <node concept="3TrEf2" id="24Fec4178IT" role="2OqNvi">
-              <ref role="3Tt5mk" to="hm2y:24Fec4173Ut" resolve="optionValue" />
             </node>
           </node>
         </node>

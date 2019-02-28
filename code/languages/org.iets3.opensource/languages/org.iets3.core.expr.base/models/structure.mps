@@ -2111,13 +2111,14 @@
     <property role="TrG5h" value="BangOp" />
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="force away option" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="24Fec4173Ut" role="1TKVEi">
       <property role="IQ2ns" value="2390066428848651933" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="optionValue" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="5Iz9nTHIdkh" role="lGtFl" />
     </node>
   </node>
 </model>

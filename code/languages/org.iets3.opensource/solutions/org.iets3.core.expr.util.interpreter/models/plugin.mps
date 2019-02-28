@@ -293,7 +293,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="vI4mpo41lz">
-    <property role="TrG5h" value="ExprUtilInterpeter" />
+    <property role="TrG5h" value="ExprUtilInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="d$4Dx" id="vI4mpo41l$" role="d$6nW">
       <node concept="BaHAS" id="vI4mpo41l_" role="cpn$n">
@@ -1762,7 +1762,7 @@
       </node>
     </node>
     <node concept="1J7WVO" id="vI4mpo42YP" role="1J4apk">
-      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpeter" />
+      <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
     </node>
   </node>
   <node concept="312cEu" id="7EKPeISP7Do">

@@ -157,7 +157,7 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="MathInterpeter" />
+    <property role="TrG5h" value="MathInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">

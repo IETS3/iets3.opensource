@@ -242,10 +242,10 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="ExprLambdaInterpeter" />
+    <property role="TrG5h" value="ExprLambdaInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="1J7WVO" id="3_DFadM_bGC" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
     </node>
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">

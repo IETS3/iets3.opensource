@@ -155,10 +155,10 @@
     </language>
   </registry>
   <node concept="qq9qg" id="uGVYUiiVGW">
-    <property role="TrG5h" value="TestsInterpeter" />
+    <property role="TrG5h" value="TestsInterpreter" />
     <property role="UYu25" value="arithmetic" />
     <node concept="1J7WVO" id="4H_8WGVp2o4" role="1J4apk">
-      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpeter" />
+      <ref role="1J7WVQ" to="rxpb:uGVYUiiVGW" resolve="ExprBaseInterpreter" />
     </node>
     <node concept="d$4Dx" id="uGVYUiiVGX" role="d$6nW">
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
