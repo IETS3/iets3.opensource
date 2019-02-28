@@ -122,6 +122,7 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="6358186717179259582" name="jetbrains.mps.lang.constraints.structure.RefPresentationMigrated" flags="ng" index="2dbRIv" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
@@ -138,6 +139,7 @@
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -1776,6 +1778,41 @@
                 <property role="3clFbU" value="true" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6itIYitoKoW">
+    <property role="3GE5qa" value="record" />
+    <ref role="1M2myG" to="yv47:7D7uZV2iYAC" resolve="RecordLiteral" />
+    <node concept="9SLcT" id="6itIYitoKoX" role="9SGkU">
+      <node concept="3clFbS" id="6itIYitoKoY" role="2VODD2">
+        <node concept="3clFbJ" id="6itIYitoKwi" role="3cqZAp">
+          <node concept="2OqwBi" id="6itIYitoL7F" role="3clFbw">
+            <node concept="2DD5aU" id="6itIYitoKBJ" role="2Oq$k0" />
+            <node concept="2Zo12i" id="6itIYitoLEI" role="2OqNvi">
+              <node concept="chp4Y" id="6itIYitoLZW" role="2Zo12j">
+                <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6itIYitoKwk" role="3clFbx">
+            <node concept="3cpWs6" id="6itIYitoMaX" role="3cqZAp">
+              <node concept="2OqwBi" id="6itIYitoMzY" role="3cqZAk">
+                <node concept="2DD5aU" id="6itIYitoMit" role="2Oq$k0" />
+                <node concept="2Zo12i" id="6itIYitoN6Z" role="2OqNvi">
+                  <node concept="chp4Y" id="6itIYitoNhn" role="2Zo12j">
+                    <ref role="cht4Q" to="yv47:3KgQFIke4um" resolve="IRecordType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6itIYitoNAR" role="3cqZAp">
+          <node concept="3clFbT" id="6itIYitoNAQ" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

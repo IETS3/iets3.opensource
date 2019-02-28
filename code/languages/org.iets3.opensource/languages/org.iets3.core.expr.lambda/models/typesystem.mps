@@ -494,8 +494,8 @@
                 <node concept="1YBJjd" id="6KxoTHgTOmm" role="2Oq$k0">
                   <ref role="1YBMHb" node="6zmBjqUkwP5" resolve="le" />
                 </node>
-                <node concept="2qgKlT" id="6GySMNkkTdK" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+                <node concept="2qgKlT" id="6NpHfQ5AueP" role="2OqNvi">
+                  <ref role="37wK5l" to="5s8v:6NpHfQ5A3Wb" resolve="delayedEffectDescriptor" />
                 </node>
               </node>
               <node concept="liA8E" id="6GySMNkkTzt" role="2OqNvi">
