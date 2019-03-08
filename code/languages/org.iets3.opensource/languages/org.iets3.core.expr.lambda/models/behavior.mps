@@ -4737,7 +4737,7 @@
       <node concept="3clFbS" id="3QFQUsN_0PH" role="3clF47">
         <node concept="3clFbF" id="3QFQUsN_14D" role="3cqZAp">
           <node concept="Xl_RD" id="3QFQUsN_14C" role="3clFbG">
-            <property role="Xl_RC" value="Assertion would fail in the following case:\n%model%" />
+            <property role="Xl_RC" value="Assert would fail in the following case:\n%collapsed_model%" />
           </node>
         </node>
       </node>
