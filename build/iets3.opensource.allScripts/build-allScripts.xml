@@ -258,7 +258,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
@@ -309,7 +309,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
