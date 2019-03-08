@@ -34,6 +34,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1460,6 +1463,12 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8811147530085329321" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="t5JxF" id="4WLweXm3TQV" role="lGtFl">
+        <property role="t5JxN" value="type is actually required, but is 0..1 here to improve editor usability" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="4WLweXm3TWP" role="PrDN$">
+      <ref role="PrY4T" node="4WLweXm3SVw" resolve="ITypeable" />
     </node>
   </node>
   <node concept="PlHQZ" id="3pe7Y2RWByP">
@@ -2119,6 +2128,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
       <node concept="asaX9" id="5Iz9nTHIdkh" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4WLweXm3SVw">
+    <property role="EcuMT" value="5706483968284528352" />
+    <property role="TrG5h" value="ITypeable" />
+    <node concept="t5JxF" id="57In_Tx2eIg" role="lGtFl">
+      <property role="t5JxN" value="Nodes that have a defined type but not necessarily specified explicitly in a child" />
     </node>
   </node>
 </model>
