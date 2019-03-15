@@ -2,7 +2,7 @@
 <model ref="r:93292a23-c019-427b-a538-f82bd7e3b15c(org.iets3.core.expr.messages.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -632,7 +632,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3vxfdxbiEYV">
-    <property role="TrG5h" value="typeof_SubNamespaceTarget" />
+    <property role="TrG5h" value="typeof_GroupTarget" />
     <node concept="3clFbS" id="3vxfdxbiEYW" role="18ibNy">
       <node concept="1Z5TYs" id="3vxfdxbiF2h" role="3cqZAp">
         <node concept="mw_s8" id="3vxfdxbiF2i" role="1ZfhKB">

@@ -2,8 +2,8 @@
 <model ref="r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -114,6 +114,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -1691,6 +1694,42 @@
               <node concept="1VAtEI" id="6OunYCf2Pjh" role="2OqNvi" />
             </node>
             <node concept="34oBXx" id="6OunYCf2RNA" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="q825N8QwYw" role="3cqZAp">
+        <node concept="3clFbS" id="q825N8QwYy" role="3clFbx">
+          <node concept="a7r0C" id="q825N8QEZx" role="3cqZAp">
+            <node concept="Xl_RD" id="q825N8QEZN" role="a7wSD">
+              <property role="Xl_RC" value="Decisiontable with only one row. Consider using if instead. " />
+            </node>
+            <node concept="2OqwBi" id="q825N8QWlE" role="2OEOjV">
+              <node concept="2OqwBi" id="q825N8QTL5" role="2Oq$k0">
+                <node concept="1YBJjd" id="q825N8QG8O" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+                </node>
+                <node concept="3Tsc0h" id="q825N8QU$l" role="2OqNvi">
+                  <ref role="3TtcxE" to="kfo3:7FuUjk_57K$" resolve="rows" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="q825N8QYwN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="q825N8QEbb" role="3clFbw">
+          <node concept="3cmrfG" id="q825N8QEFc" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="q825N8Q$9z" role="3uHU7B">
+            <node concept="2OqwBi" id="q825N8QxAb" role="2Oq$k0">
+              <node concept="1YBJjd" id="q825N8QxsT" role="2Oq$k0">
+                <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+              </node>
+              <node concept="3Tsc0h" id="q825N8Qyoh" role="2OqNvi">
+                <ref role="3TtcxE" to="kfo3:7FuUjk_57K$" resolve="rows" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="q825N8QBCs" role="2OqNvi" />
           </node>
         </node>
       </node>

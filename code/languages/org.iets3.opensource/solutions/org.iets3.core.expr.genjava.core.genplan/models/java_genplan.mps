@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.java_genplan)">
+<model ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -45,6 +45,10 @@
       <node concept="2V$Bhx" id="DHMrP91qoE" role="1t_9vn">
         <property role="2V$B1T" value="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40" />
         <property role="2V$B1Q" value="org.iets3.core.expr.genjava.simpleTypes" />
+      </node>
+      <node concept="2V$Bhx" id="lH$PuhTIAz" role="1t_9vn">
+        <property role="2V$B1T" value="f2abf2a6-552e-4906-ab58-930f9a79aff4" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.genjava.contracts" />
       </node>
       <node concept="2V$Bhx" id="6ii4I_AaKi7" role="1t_9vn">
         <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />

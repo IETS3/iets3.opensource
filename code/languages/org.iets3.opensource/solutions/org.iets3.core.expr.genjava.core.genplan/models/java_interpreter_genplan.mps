@@ -5,7 +5,7 @@
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
   </languages>
   <imports>
-    <import index="g6e4" ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.java_genplan)" />
+    <import index="g6e4" ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)" />
     <import index="92dz" ref="r:c682acc3-f675-414f-9d8b-d3d5cd13290e(org.iets3.core.expr.genjava.core.genplan.interpreter_genplan)" />
   </imports>
   <registry>
