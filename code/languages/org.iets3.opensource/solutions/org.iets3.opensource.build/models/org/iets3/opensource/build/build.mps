@@ -848,11 +848,6 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4jhRcv2VADf" role="3bR37C">
-          <node concept="1Busua" id="4jhRcv2VAEr" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="4lBotkP9WfS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2344,6 +2339,10 @@
           <node concept="3bR9La" id="4C_RnzfEEzu" role="1SiIV1">
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
+        </node>
+        <node concept="1yeLz9" id="4jhRcv2Zrib" role="1TViLv">
+          <property role="TrG5h" value="org.iets3.core.expr.toplevel#2861782275883405870" />
+          <property role="3LESm3" value="b60ab6c7-2729-475d-9d89-a803fa7d5ab8" />
         </node>
       </node>
       <node concept="1E1JtD" id="5a_u3OzLedQ" role="2G$12L">
@@ -7534,6 +7533,11 @@
         <node concept="1SiIV0" id="6D$R_XpdM9C" role="3bR37C">
           <node concept="3bR9La" id="6D$R_XpdM9D" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4jhRcv2ZzFU" role="3bR37C">
+          <node concept="3bR9La" id="4jhRcv2ZzFV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
