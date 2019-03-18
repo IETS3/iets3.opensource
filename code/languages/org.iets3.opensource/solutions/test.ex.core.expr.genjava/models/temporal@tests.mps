@@ -203,6 +203,8 @@
       </concept>
       <concept id="8266215269023528950" name="org.iets3.core.expr.datetime.structure.BeginningOfTIME" flags="ng" index="3pIs$b" />
       <concept id="2060704857949559990" name="org.iets3.core.expr.datetime.structure.MonthRangeLiteral" flags="ng" index="1DA4ig">
+        <property id="149305864577023771" name="monthProp" index="2eV8ZZ" />
+        <property id="149305864577017998" name="yearProp" index="2eV9xE" />
         <child id="2060704857949559991" name="year" index="1DA4ih" />
         <child id="2060704857949559996" name="month" index="1DA4iq" />
       </concept>
@@ -1557,6 +1559,8 @@
         <node concept="1DAXCi" id="7X4dwX1j0Zi" role="1QScD9">
           <node concept="1DAXD4" id="7X4dwX1j0Zj" role="1DAXD6" />
           <node concept="1DA4ig" id="7X4dwX1j0Zk" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7X4dwX1j0Zl" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -1577,6 +1581,8 @@
         <node concept="1DAXCi" id="7X4dwX1j0Zq" role="1QScD9">
           <node concept="1DAXCq" id="7X4dwX1j0Zr" role="1DAXD6" />
           <node concept="1DA4ig" id="7X4dwX1j0Zs" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7X4dwX1j0Zt" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -1597,6 +1603,8 @@
         <node concept="1DAXCi" id="7X4dwX1j0Zy" role="1QScD9">
           <node concept="2X6tET" id="7X4dwX1j0Zz" role="1DAXD6" />
           <node concept="1DA4ig" id="7X4dwX1j0Z$" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7X4dwX1j0Z_" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -1617,6 +1625,8 @@
         <node concept="1DAXCi" id="7X4dwX1j0ZE" role="1QScD9">
           <node concept="193G_S" id="7X4dwX1j0ZF" role="1DAXD6" />
           <node concept="1DA4ig" id="7X4dwX1j0ZG" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7X4dwX1j0ZH" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -4849,6 +4859,8 @@
         <node concept="1DAXCi" id="46fmv66qVMV" role="1QScD9">
           <node concept="1DAXD4" id="46fmv66qVMW" role="1DAXD6" />
           <node concept="1DA4ig" id="7p18LB4QgV$" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7p18LB4QgV_" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -4869,6 +4881,8 @@
         <node concept="1DAXCi" id="46fmv66qVN2" role="1QScD9">
           <node concept="1DAXCq" id="46fmv66qVN3" role="1DAXD6" />
           <node concept="1DA4ig" id="7p18LB4Qhic" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7p18LB4Qhid" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -4889,6 +4903,8 @@
         <node concept="1DAXCi" id="46fmv66qVN9" role="1QScD9">
           <node concept="2X6tET" id="46fmv66qVNc" role="1DAXD6" />
           <node concept="1DA4ig" id="46fmv66rl3G" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="46fmv66rl3H" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
@@ -4909,6 +4925,8 @@
         <node concept="1DAXCi" id="46fmv66qVNg" role="1QScD9">
           <node concept="193G_S" id="46fmv66qVNj" role="1DAXD6" />
           <node concept="1DA4ig" id="7p18LB4QhCO" role="1DAXD0">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2004" />
             <node concept="30bXRB" id="7p18LB4QhCP" role="1DA4ih">
               <property role="30bXRw" value="2004" />
             </node>
