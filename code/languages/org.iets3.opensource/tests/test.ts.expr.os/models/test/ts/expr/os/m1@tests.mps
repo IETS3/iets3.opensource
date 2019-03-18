@@ -480,6 +480,8 @@
         <child id="8266215269006408998" name="value" index="3oJwfr" />
       </concept>
       <concept id="2060704857949559990" name="org.iets3.core.expr.datetime.structure.MonthRangeLiteral" flags="ng" index="1DA4ig">
+        <property id="149305864577023771" name="monthProp" index="2eV8ZZ" />
+        <property id="149305864577017998" name="yearProp" index="2eV9xE" />
         <child id="2060704857949559991" name="year" index="1DA4ih" />
         <child id="2060704857949559996" name="month" index="1DA4iq" />
       </concept>
@@ -14021,6 +14023,8 @@
         <node concept="2zPypq" id="26CArgU3mdb" role="_iOnC">
           <property role="TrG5h" value="feb2017" />
           <node concept="1DA4ig" id="26CArgU3mmP" role="2zPyp_">
+            <property role="2eV8ZZ" value="02" />
+            <property role="2eV9xE" value="2017" />
             <node concept="30bXRB" id="26CArgU3mnj" role="1DA4ih">
               <property role="30bXRw" value="2017" />
             </node>
@@ -14032,6 +14036,8 @@
         <node concept="2zPypq" id="26CArgU3mpM" role="_iOnC">
           <property role="TrG5h" value="jan2017" />
           <node concept="1DA4ig" id="26CArgU3mqR" role="2zPyp_">
+            <property role="2eV8ZZ" value="01" />
+            <property role="2eV9xE" value="2017" />
             <node concept="30bXRB" id="26CArgU3mrl" role="1DA4ih">
               <property role="30bXRw" value="2017" />
             </node>

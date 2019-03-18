@@ -183,6 +183,8 @@
       <concept id="8266215269023528950" name="org.iets3.core.expr.datetime.structure.BeginningOfTIME" flags="ng" index="3pIs$b" />
       <concept id="2060704857949559578" name="org.iets3.core.expr.datetime.structure.MonthRangeType" flags="ng" index="1DA4cW" />
       <concept id="2060704857949559990" name="org.iets3.core.expr.datetime.structure.MonthRangeLiteral" flags="ng" index="1DA4ig">
+        <property id="149305864577023771" name="monthProp" index="2eV8ZZ" />
+        <property id="149305864577017998" name="yearProp" index="2eV9xE" />
         <child id="2060704857949559991" name="year" index="1DA4ih" />
         <child id="2060704857949559996" name="month" index="1DA4iq" />
       </concept>
@@ -260,6 +262,8 @@
       <property role="TrG5h" value="feb2017" />
       <property role="0Rz4W" value="-445830225" />
       <node concept="1DA4ig" id="26CArgU3mmP" role="2zPyp_">
+        <property role="2eV8ZZ" value="02" />
+        <property role="2eV9xE" value="2017" />
         <node concept="30bXRB" id="26CArgU3mnj" role="1DA4ih">
           <property role="30bXRw" value="2017" />
         </node>
@@ -272,6 +276,8 @@
       <property role="TrG5h" value="jan2017" />
       <property role="0Rz4W" value="-402255020" />
       <node concept="1DA4ig" id="26CArgU3mqR" role="2zPyp_">
+        <property role="2eV8ZZ" value="01" />
+        <property role="2eV9xE" value="2017" />
         <node concept="30bXRB" id="26CArgU3mrl" role="1DA4ih">
           <property role="30bXRw" value="2017" />
         </node>
@@ -1347,6 +1353,8 @@
           </node>
         </node>
         <node concept="1DA4ig" id="7aRvJQE7O$5" role="_fkuS">
+          <property role="2eV8ZZ" value="12" />
+          <property role="2eV9xE" value="2016" />
           <node concept="30bXRB" id="7aRvJQE7OBT" role="1DA4ih">
             <property role="30bXRw" value="2016" />
           </node>
@@ -1408,6 +1416,8 @@
           </node>
         </node>
         <node concept="1DA4ig" id="7aRvJQEgfBv" role="_fkuS">
+          <property role="2eV8ZZ" value="02" />
+          <property role="2eV9xE" value="2017" />
           <node concept="30bXRB" id="7aRvJQEgfC0" role="1DA4ih">
             <property role="30bXRw" value="2017" />
           </node>
@@ -1674,6 +1684,8 @@
     <node concept="2zPypq" id="77QyhEfQYvg" role="_iOnB">
       <property role="TrG5h" value="monthRange" />
       <node concept="1DA4ig" id="77QyhEfQZ0P" role="2zPyp_">
+        <property role="2eV8ZZ" value="01" />
+        <property role="2eV9xE" value="2018" />
         <node concept="30bXRB" id="77QyhEfQZ1D" role="1DA4ih">
           <property role="30bXRw" value="2018" />
         </node>
@@ -1703,6 +1715,8 @@
     <node concept="2zPypq" id="5wmCCs0hS4d" role="_iOnB">
       <property role="TrG5h" value="january2018" />
       <node concept="1DA4ig" id="5wmCCs0hS_$" role="2zPyp_">
+        <property role="2eV8ZZ" value="01" />
+        <property role="2eV9xE" value="2018" />
         <node concept="30bXRB" id="5wmCCs0hSCm" role="1DA4iq">
           <property role="30bXRw" value="1" />
         </node>
@@ -1714,6 +1728,8 @@
     <node concept="2zPypq" id="5wmCCs0hSNk" role="_iOnB">
       <property role="TrG5h" value="february2018" />
       <node concept="1DA4ig" id="5wmCCs0hTkG" role="2zPyp_">
+        <property role="2eV8ZZ" value="02" />
+        <property role="2eV9xE" value="2018" />
         <node concept="30bXRB" id="5wmCCs0hTlw" role="1DA4ih">
           <property role="30bXRw" value="2018" />
         </node>

@@ -1479,36 +1479,18 @@
       <ref role="qq9wM" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
       <node concept="3vetai" id="1Mp62pP2Sr$" role="3vQZUl">
         <node concept="2YIFZM" id="4eec02GbvVH" role="3vdyny">
-          <ref role="37wK5l" to="2j0k:4eec02Gblno" resolve="month" />
           <ref role="1Pybhc" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
-          <node concept="2OqwBi" id="4eec02Gbyuw" role="37wK5m">
-            <node concept="1eOMI4" id="4eec02GbxfU" role="2Oq$k0">
-              <node concept="10QFUN" id="1Mp62pP2SrB" role="1eOMHV">
-                <node concept="rqRoa" id="1Mp62pP2SrC" role="10QFUP">
-                  <ref role="rqRob" to="mi3w:1Mp62pP0lMR" resolve="year" />
-                </node>
-                <node concept="3uibUv" id="1Mp62pP2SrD" role="10QFUM">
-                  <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="4eec02GbzLE" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+          <ref role="37wK5l" to="2j0k:4eec02Gblno" resolve="month" />
+          <node concept="2OqwBi" id="8iseid1quw" role="37wK5m">
+            <node concept="oxGPV" id="8iseid1qhn" role="2Oq$k0" />
+            <node concept="2qgKlT" id="8iseid1qMR" role="2OqNvi">
+              <ref role="37wK5l" to="9fzk:8iseid0Z09" resolve="yearNumber" />
             </node>
           </node>
-          <node concept="2OqwBi" id="4eec02GbA7P" role="37wK5m">
-            <node concept="1eOMI4" id="4eec02Gb$SX" role="2Oq$k0">
-              <node concept="10QFUN" id="1Mp62pP2U5F" role="1eOMHV">
-                <node concept="rqRoa" id="1Mp62pP2U5G" role="10QFUP">
-                  <ref role="rqRob" to="mi3w:1Mp62pP0lMW" resolve="month" />
-                </node>
-                <node concept="3uibUv" id="1Mp62pP2U5H" role="10QFUM">
-                  <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="4eec02GbBXv" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+          <node concept="2OqwBi" id="8iseid1sgj" role="37wK5m">
+            <node concept="oxGPV" id="8iseid1s3s" role="2Oq$k0" />
+            <node concept="2qgKlT" id="8iseid1sE8" role="2OqNvi">
+              <ref role="37wK5l" to="9fzk:8iseid0Z0q" resolve="monthNumber" />
             </node>
           </node>
         </node>
