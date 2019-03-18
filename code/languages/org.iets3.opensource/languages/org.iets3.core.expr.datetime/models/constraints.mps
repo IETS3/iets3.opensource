@@ -158,7 +158,7 @@
     <property role="3GE5qa" value="date" />
     <ref role="1M2myG" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
     <node concept="EnEH3" id="_kNv2PMi2y" role="1MhHOB">
-      <ref role="EomxK" to="mi3w:3nGzaxURa4k" resolve="dd" />
+      <ref role="EomxK" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
       <node concept="QB0g5" id="3C_9jV3nGd" role="QCWH9">
         <node concept="3clFbS" id="3C_9jV3nGe" role="2VODD2">
           <node concept="3clFbF" id="3C_9jV3nNz" role="3cqZAp">
@@ -167,6 +167,24 @@
               <node concept="liA8E" id="3C_9jV3oAy" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="3z0DCrxLkJ4" role="37wK5m">
+                  <property role="Xl_RC" value="\\d\\d\\d\\d" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="8iseid1uG_" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:3nGzaxURa4k" resolve="dd" />
+      <node concept="QB0g5" id="8iseid1uGA" role="QCWH9">
+        <node concept="3clFbS" id="8iseid1uGB" role="2VODD2">
+          <node concept="3clFbF" id="8iseid1uGC" role="3cqZAp">
+            <node concept="2OqwBi" id="8iseid1uGD" role="3clFbG">
+              <node concept="1Wqviy" id="8iseid1uGE" role="2Oq$k0" />
+              <node concept="liA8E" id="8iseid1uGF" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="8iseid1uGG" role="37wK5m">
                   <property role="Xl_RC" value="\\d\\d" />
                 </node>
               </node>
@@ -185,6 +203,46 @@
               <node concept="liA8E" id="3C_9jV3oYv" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="3C_9jV3oYw" role="37wK5m">
+                  <property role="Xl_RC" value="\\d\\d" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="8iseid1vFe">
+    <property role="3GE5qa" value="range.literals" />
+    <ref role="1M2myG" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
+    <node concept="EnEH3" id="8iseid1vFf" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:8iseicZIye" resolve="yearProp" />
+      <node concept="QB0g5" id="8iseid1vFg" role="QCWH9">
+        <node concept="3clFbS" id="8iseid1vFh" role="2VODD2">
+          <node concept="3clFbF" id="8iseid1vFi" role="3cqZAp">
+            <node concept="2OqwBi" id="8iseid1vFj" role="3clFbG">
+              <node concept="1Wqviy" id="8iseid1vFk" role="2Oq$k0" />
+              <node concept="liA8E" id="8iseid1vFl" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="8iseid1vFm" role="37wK5m">
+                  <property role="Xl_RC" value="\\d\\d\\d\\d" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="8iseid1vFn" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:8iseicZJWr" resolve="monthProp" />
+      <node concept="QB0g5" id="8iseid1vFo" role="QCWH9">
+        <node concept="3clFbS" id="8iseid1vFp" role="2VODD2">
+          <node concept="3clFbF" id="8iseid1vFq" role="3cqZAp">
+            <node concept="2OqwBi" id="8iseid1vFr" role="3clFbG">
+              <node concept="1Wqviy" id="8iseid1vFs" role="2Oq$k0" />
+              <node concept="liA8E" id="8iseid1vFt" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="8iseid1vFu" role="37wK5m">
                   <property role="Xl_RC" value="\\d\\d" />
                 </node>
               </node>
