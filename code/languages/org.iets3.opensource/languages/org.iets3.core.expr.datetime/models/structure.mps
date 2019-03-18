@@ -173,14 +173,14 @@
       <property role="IQ2ns" value="2060704857949559991" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="year" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="1Mp62pP0lMW" role="1TKVEi">
       <property role="IQ2ns" value="2060704857949559996" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="month" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1Mp62pP0lMS" role="PzmwI">
