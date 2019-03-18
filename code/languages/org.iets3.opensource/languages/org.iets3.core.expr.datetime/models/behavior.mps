@@ -35,8 +35,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -504,14 +512,33 @@
       <node concept="3Tm1VV" id="3C_9jV2mVx" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2nyA" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2mVz" role="3clF47">
-        <node concept="3clFbF" id="3C_9jV2oaT" role="3cqZAp">
-          <node concept="2YIFZM" id="3C_9jV2obg" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-            <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-            <node concept="2OqwBi" id="3C_9jV2nJT" role="37wK5m">
-              <node concept="13iPFW" id="3C_9jV2nzc" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3C_9jV2o3z" role="2OqNvi">
-                <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+        <node concept="SfApY" id="8iseicYDcG" role="3cqZAp">
+          <node concept="3clFbS" id="8iseicYDcI" role="SfCbr">
+            <node concept="3cpWs6" id="8iseicYDrj" role="3cqZAp">
+              <node concept="2YIFZM" id="8iseicYDrl" role="3cqZAk">
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <node concept="2OqwBi" id="8iseicYDrm" role="37wK5m">
+                  <node concept="13iPFW" id="8iseicYDrn" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="8iseicYDro" role="2OqNvi">
+                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="8iseicYDcJ" role="TEbGg">
+            <node concept="3cpWsn" id="8iseicYDcL" role="TDEfY">
+              <property role="TrG5h" value="nfe" />
+              <node concept="3uibUv" id="8iseicYFak" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="8iseicYDcP" role="TDEfX">
+              <node concept="3cpWs6" id="8iseicYFth" role="3cqZAp">
+                <node concept="3cmrfG" id="8iseicYFwo" role="3cqZAk">
+                  <property role="3cmrfH" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -523,14 +550,33 @@
       <node concept="3Tm1VV" id="3C_9jV2p6$" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2p6_" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2p6A" role="3clF47">
-        <node concept="3clFbF" id="3C_9jV2p6B" role="3cqZAp">
-          <node concept="2YIFZM" id="3C_9jV2p6C" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-            <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-            <node concept="2OqwBi" id="3C_9jV2p6D" role="37wK5m">
-              <node concept="13iPFW" id="3C_9jV2p6E" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3C_9jV2rKV" role="2OqNvi">
-                <ref role="3TsBF5" to="mi3w:3nGzaxURa4l" resolve="mm" />
+        <node concept="SfApY" id="8iseicYGyN" role="3cqZAp">
+          <node concept="3clFbS" id="8iseicYGyO" role="SfCbr">
+            <node concept="3cpWs6" id="8iseicYGyP" role="3cqZAp">
+              <node concept="2YIFZM" id="8iseicYGyQ" role="3cqZAk">
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <node concept="2OqwBi" id="8iseicYGyR" role="37wK5m">
+                  <node concept="13iPFW" id="8iseicYGyS" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="8iseicYHip" role="2OqNvi">
+                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4l" resolve="mm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="8iseicYGyU" role="TEbGg">
+            <node concept="3cpWsn" id="8iseicYGyV" role="TDEfY">
+              <property role="TrG5h" value="nfe" />
+              <node concept="3uibUv" id="8iseicYGyW" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="8iseicYGyX" role="TDEfX">
+              <node concept="3cpWs6" id="8iseicYGyY" role="3cqZAp">
+                <node concept="3cmrfG" id="8iseicYGyZ" role="3cqZAk">
+                  <property role="3cmrfH" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -542,14 +588,33 @@
       <node concept="3Tm1VV" id="3C_9jV2pNJ" role="1B3o_S" />
       <node concept="10Oyi0" id="3C_9jV2pNK" role="3clF45" />
       <node concept="3clFbS" id="3C_9jV2pNL" role="3clF47">
-        <node concept="3clFbF" id="3C_9jV2pNM" role="3cqZAp">
-          <node concept="2YIFZM" id="3C_9jV2pNN" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-            <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-            <node concept="2OqwBi" id="3C_9jV2pNO" role="37wK5m">
-              <node concept="13iPFW" id="3C_9jV2pNP" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3C_9jV2sqf" role="2OqNvi">
-                <ref role="3TsBF5" to="mi3w:3nGzaxURa4k" resolve="dd" />
+        <node concept="SfApY" id="8iseicYJoV" role="3cqZAp">
+          <node concept="3clFbS" id="8iseicYJoW" role="SfCbr">
+            <node concept="3cpWs6" id="8iseicYJoX" role="3cqZAp">
+              <node concept="2YIFZM" id="8iseicYJoY" role="3cqZAk">
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <node concept="2OqwBi" id="8iseicYJoZ" role="37wK5m">
+                  <node concept="13iPFW" id="8iseicYJp0" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="8iseicYK8z" role="2OqNvi">
+                    <ref role="3TsBF5" to="mi3w:3nGzaxURa4k" resolve="dd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="8iseicYJp2" role="TEbGg">
+            <node concept="3cpWsn" id="8iseicYJp3" role="TDEfY">
+              <property role="TrG5h" value="nfe" />
+              <node concept="3uibUv" id="8iseicYJp4" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="8iseicYJp5" role="TDEfX">
+              <node concept="3cpWs6" id="8iseicYJp6" role="3cqZAp">
+                <node concept="3cmrfG" id="8iseicYJp7" role="3cqZAk">
+                  <property role="3cmrfH" value="0" />
+                </node>
               </node>
             </node>
           </node>
