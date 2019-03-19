@@ -2,8 +2,8 @@
 <model ref="r:44582398-dfcf-40ad-bb09-b88bb3cc5de2(org.iets3.core.expr.genjava.core.genplan.genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -28,7 +28,7 @@
     </language>
   </registry>
   <node concept="2VgMpV" id="6FvSwHlc883">
-    <property role="TrG5h" value="Plan" />
+    <property role="TrG5h" value="Java_genplan" />
     <node concept="2VgMA2" id="7bZFIimhGaU" role="2VgMA7">
       <node concept="2V$Bhx" id="DHMrP91qoC" role="1t_9vn">
         <property role="2V$B1T" value="e75207bb-7b13-40bd-b80b-c8fe625c4ee2" />

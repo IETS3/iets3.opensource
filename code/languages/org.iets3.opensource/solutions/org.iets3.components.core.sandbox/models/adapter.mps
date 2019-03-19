@@ -53,6 +53,10 @@
       <concept id="3788552209998204407" name="org.iets3.components.core.structure.CompConstantAdapter" flags="ng" index="2_pmBu" />
       <concept id="3788552210010232026" name="org.iets3.components.core.structure.CompStateMachineAdapter" flags="ng" index="2Afv3N" />
       <concept id="3788552210011763141" name="org.iets3.components.core.structure.CompFunctionAdapter" flags="ng" index="2AlxnG" />
+      <concept id="596856272727131445" name="org.iets3.components.core.structure.ComponentInterface" flags="ng" index="H_j2F">
+        <child id="596856272727132646" name="content" index="H_jLS" />
+      </concept>
+      <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
         <child id="7804632404593342038" name="contents" index="1i1AA4" />
       </concept>
@@ -88,6 +92,9 @@
     <property role="TrG5h" value="MyChunk" />
     <node concept="1i1XBj" id="_aJC6nSg1d" role="1i1AA4">
       <property role="TrG5h" value="myComponent" />
+      <node concept="H_j2F" id="7B4QWuf$8mW" role="1i1XAe">
+        <node concept="H_vQO" id="7B4QWuf$8mX" role="H_jLS" />
+      </node>
       <node concept="1i1Xx2" id="_aJC6nSg1X" role="1i1XAe" />
       <node concept="2_pmBu" id="_aJC6nSg2a" role="1i1XAe">
         <node concept="2zPypq" id="_aJC6nSg2b" role="2_nkoE">

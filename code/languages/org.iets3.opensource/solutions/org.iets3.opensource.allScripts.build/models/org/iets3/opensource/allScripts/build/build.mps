@@ -2,7 +2,7 @@
 <model ref="r:2dd6bcf7-29b5-4f7c-9303-3883db63b802(org.iets3.opensource.allScripts.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
   </languages>
   <imports>
@@ -272,6 +272,27 @@
             <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4jhRcv2ZzH9" role="3bR37C">
+          <node concept="3bR9La" id="4jhRcv2ZzHa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7B4QWuf$9Eh" role="3bR31x">
+          <node concept="3LXTmp" id="7B4QWuf$9Ei" role="3rtmxm">
+            <node concept="3qWCbU" id="7B4QWuf$9Ej" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7B4QWuf$9Ek" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
+              <node concept="2Ry0Ak" id="7B4QWuf$9El" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7B4QWuf$9Em" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3ZBI8Awh4ux" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -313,6 +334,22 @@
                       <property role="2Ry0Am" value="takari-cpsuite-1.2.7.jar" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7B4QWuf$9Ea" role="3bR31x">
+          <node concept="3LXTmp" id="7B4QWuf$9Eb" role="3rtmxm">
+            <node concept="3qWCbU" id="7B4QWuf$9Ec" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7B4QWuf$9Ed" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
+              <node concept="2Ry0Ak" id="7B4QWuf$9Ee" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7B4QWuf$9Ef" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
                 </node>
               </node>
             </node>

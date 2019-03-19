@@ -9,15 +9,20 @@
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -36,10 +41,17 @@
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+        <child id="1212097481299" name="propertyValidator" index="QCWH9" />
+      </concept>
+      <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
+      <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -145,6 +157,46 @@
   <node concept="1M2fIO" id="_kNv2PMi2x">
     <property role="3GE5qa" value="date" />
     <ref role="1M2myG" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+  </node>
+  <node concept="1M2fIO" id="8iseid1vFe">
+    <property role="3GE5qa" value="range.literals" />
+    <ref role="1M2myG" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
+    <node concept="EnEH3" id="8iseid1vFf" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:8iseicZIye" resolve="yearProp" />
+      <node concept="QB0g5" id="8iseid1vFg" role="QCWH9">
+        <node concept="3clFbS" id="8iseid1vFh" role="2VODD2">
+          <node concept="3clFbF" id="8iseid1vFi" role="3cqZAp">
+            <node concept="2OqwBi" id="8iseid1vFj" role="3clFbG">
+              <node concept="1Wqviy" id="8iseid1vFk" role="2Oq$k0" />
+              <node concept="liA8E" id="8iseid1vFl" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="8iseid1vFm" role="37wK5m">
+                  <property role="Xl_RC" value="\\d\\d\\d\\d" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="8iseid1vFn" role="1MhHOB">
+      <ref role="EomxK" to="mi3w:8iseicZJWr" resolve="monthProp" />
+      <node concept="QB0g5" id="8iseid1vFo" role="QCWH9">
+        <node concept="3clFbS" id="8iseid1vFp" role="2VODD2">
+          <node concept="3clFbF" id="8iseid1vFq" role="3cqZAp">
+            <node concept="2OqwBi" id="8iseid1vFr" role="3clFbG">
+              <node concept="1Wqviy" id="8iseid1vFs" role="2Oq$k0" />
+              <node concept="liA8E" id="8iseid1vFt" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="8iseid1vFu" role="37wK5m">
+                  <property role="Xl_RC" value="\\d\\d" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -173,18 +173,28 @@
       <property role="IQ2ns" value="2060704857949559991" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="year" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="1Mp62pP0lMW" role="1TKVEi">
       <property role="IQ2ns" value="2060704857949559996" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="month" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1Mp62pP0lMS" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="1TJgyi" id="8iseicZIye" role="1TKVEl">
+      <property role="IQ2nx" value="149305864577017998" />
+      <property role="TrG5h" value="yearProp" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="8iseicZJWr" role="1TKVEl">
+      <property role="IQ2nx" value="149305864577023771" />
+      <property role="TrG5h" value="monthProp" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="7aRvJQE2nOx">

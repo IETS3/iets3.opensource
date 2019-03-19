@@ -10,6 +10,7 @@
     <import index="av4b" ref="r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
@@ -884,9 +885,9 @@
           </node>
         </node>
         <node concept="mw_s8" id="5Pgo_ASrZ$g" role="1ZfhKB">
-          <node concept="2YIFZM" id="5Pgo_ASrZ_Y" role="mwGJk">
-            <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
-            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          <node concept="2YIFZM" id="5wDe8wA6zrV" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
       </node>
@@ -898,9 +899,9 @@
               <node concept="2pIpSj" id="5Pgo_ASByrL" role="2pJxcM">
                 <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
                 <node concept="36biLy" id="5Pgo_ASBysc" role="2pJxcZ">
-                  <node concept="2YIFZM" id="5Pgo_ASByvo" role="36biLW">
-                    <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
-                    <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                  <node concept="2YIFZM" id="5wDe8wA6zrW" role="36biLW">
+                    <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+                    <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
                   </node>
                 </node>
               </node>
@@ -951,9 +952,9 @@
                   <node concept="2pIpSj" id="5Pgo_ASHvQh" role="2pJxcM">
                     <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
                     <node concept="36biLy" id="5Pgo_ASHvQG" role="2pJxcZ">
-                      <node concept="2YIFZM" id="5Pgo_ASHvSs" role="36biLW">
-                        <ref role="37wK5l" to="oq0c:2Qbt$1tTQdA" resolve="createStringType" />
-                        <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                      <node concept="2YIFZM" id="5wDe8wA6zrX" role="36biLW">
+                        <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+                        <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
                       </node>
                     </node>
                   </node>
