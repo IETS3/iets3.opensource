@@ -50,8 +50,8 @@
         <child id="5849458724932670347" name="index" index="2yLE0W" />
       </concept>
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
-      <concept id="5585772046596642164" name="org.iets3.core.expr.collections.structure.HeadOp" flags="ng" index="2$dVdw" />
-      <concept id="5585772046597818717" name="org.iets3.core.expr.collections.structure.TailOp" flags="ng" index="2$gqX9" />
+      <concept id="5585772046596642164" name="org.iets3.core.expr.collections.structure.FirstNOp" flags="ng" index="2$dVdw" />
+      <concept id="5585772046597818717" name="org.iets3.core.expr.collections.structure.LastNOp" flags="ng" index="2$gqX9" />
       <concept id="5585772046587930249" name="org.iets3.core.expr.collections.structure.MaxOp" flags="ng" index="2$EC2t" />
       <concept id="75413091695536841" name="org.iets3.core.expr.collections.structure.IndexExpr" flags="ng" index="2GTG47" />
       <concept id="393796118209799325" name="org.iets3.core.expr.collections.structure.TailOp" flags="ng" index="2IDqZA" />
@@ -208,9 +208,6 @@
       <concept id="867786408882279828" name="org.iets3.core.expr.base.structure.PlainConstraint" flags="ng" index="InuEK" />
       <concept id="6527211908668938616" name="org.iets3.core.expr.base.structure.DocWordRef" flags="ng" index="2Jv0Bt">
         <reference id="6527211908668938619" name="node" index="2Jv0Bu" />
-      </concept>
-      <concept id="5299123466398246930" name="org.iets3.core.expr.base.structure.InlineMessage" flags="ng" index="M4eM_">
-        <child id="5299123466398246931" name="text" index="M4eM$" />
       </concept>
       <concept id="2807135271608145920" name="org.iets3.core.expr.base.structure.IsSomeExpression" flags="ng" index="UmaEC">
         <child id="2807135271608145921" name="expr" index="UmaED" />
@@ -2340,7 +2337,7 @@
           <property role="1WP8_x" value="0" />
           <property role="1WP8_t" value="-1" />
           <property role="1WP8_q" value="-1" />
-          <ref role="1WP1uJ" to="700h:4Q4DxjDGLlO" resolve="HeadOp" />
+          <ref role="1WP1uJ" to="700h:4Q4DxjDGLlO" resolve="FirstNOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6V3iu1ff0Bz" role="3pwbzW">
@@ -2357,7 +2354,7 @@
           <property role="1WP8_x" value="0" />
           <property role="1WP8_t" value="-1" />
           <property role="1WP8_q" value="-1" />
-          <ref role="1WP1uJ" to="700h:4Q4DxjDLg_t" resolve="TailOp" />
+          <ref role="1WP1uJ" to="700h:4Q4DxjDLg_t" resolve="LastNOp" />
         </node>
       </node>
       <node concept="3pwbzX" id="6V3iu1ff0_3" role="3pwbzW">
@@ -40027,11 +40024,6 @@
               <property role="30bXRw" value="30" />
             </node>
             <node concept="QCKKy" id="4AahbtVE2_z" role="30dEsF" />
-          </node>
-          <node concept="M4eM_" id="4AahbtVEh0P" role="2izrR8">
-            <node concept="30bdrP" id="4AahbtVEh1X" role="M4eM$">
-              <property role="30bdrQ" value="must be &gt; 30" />
-            </node>
           </node>
         </node>
       </node>
