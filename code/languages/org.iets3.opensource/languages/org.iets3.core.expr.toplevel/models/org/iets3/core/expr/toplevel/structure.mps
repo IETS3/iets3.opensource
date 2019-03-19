@@ -347,6 +347,9 @@
     <node concept="PrWs8" id="xu7xcKdQCE" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKdQCB" resolve="IRecordMember" />
     </node>
+    <node concept="PrWs8" id="4WLweXm3Vmv" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    </node>
     <node concept="PrWs8" id="46cplYy1Svf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
@@ -685,8 +688,8 @@
     <node concept="PrWs8" id="5YygIlbfTYR" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="54pTGl8og01" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
+    <node concept="PrWs8" id="4WLweXm3V3Q" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:4WLweXm3SVw" resolve="ITypeable" />
     </node>
     <node concept="PrWs8" id="3z0ZJXm0MfZ" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />

@@ -71,6 +71,9 @@
     <node concept="PrWs8" id="4o9aP47qdjx" role="PzmwI">
       <ref role="PrY4T" node="4o9aP47qdic" resolve="IComparablePathPart" />
     </node>
+    <node concept="PrWs8" id="2bmnJndGtf5" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o9aP47qdic">
     <property role="TrG5h" value="IComparablePathPart" />

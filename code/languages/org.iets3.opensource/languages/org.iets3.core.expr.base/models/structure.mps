@@ -5,7 +5,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -33,6 +33,9 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
@@ -1003,6 +1006,11 @@
     <property role="EcuMT" value="867786408877811036" />
     <property role="R4oN_" value="a constraint plus an optional error message" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3xthw2gJs74" role="1TKVEl">
+      <property role="IQ2nx" value="4061479407200354756" />
+      <property role="TrG5h" value="warning" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="4v5hZndi2Ow" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -1455,6 +1463,12 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8811147530085329321" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+      <node concept="t5JxF" id="4WLweXm3TQV" role="lGtFl">
+        <property role="t5JxN" value="type is actually required, but is 0..1 here to improve editor usability" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="4WLweXm3TWP" role="PrDN$">
+      <ref role="PrY4T" node="4WLweXm3SVw" resolve="ITypeable" />
     </node>
   </node>
   <node concept="PlHQZ" id="3pe7Y2RWByP">
@@ -2106,13 +2120,21 @@
     <property role="TrG5h" value="BangOp" />
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="force away option" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="24Fec4173Ut" role="1TKVEi">
       <property role="IQ2ns" value="2390066428848651933" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="optionValue" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="5Iz9nTHIdkh" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4WLweXm3SVw">
+    <property role="EcuMT" value="5706483968284528352" />
+    <property role="TrG5h" value="ITypeable" />
+    <node concept="t5JxF" id="57In_Tx2eIg" role="lGtFl">
+      <property role="t5JxN" value="Nodes that have a defined type but not necessarily specified explicitly in a child" />
     </node>
   </node>
 </model>

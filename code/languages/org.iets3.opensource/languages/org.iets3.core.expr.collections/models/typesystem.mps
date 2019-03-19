@@ -22,6 +22,7 @@
     <import index="ukm0" ref="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)" />
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
     <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" implicit="true" />
+    <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3074,11 +3075,11 @@
     </node>
     <node concept="1YaCAy" id="4Q4DxjDGLn6" role="1YuTPh">
       <property role="TrG5h" value="headOp" />
-      <ref role="1YaFvo" to="700h:4Q4DxjDGLlO" resolve="HeadOp" />
+      <ref role="1YaFvo" to="700h:4Q4DxjDGLlO" resolve="FirstNOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="4Q4DxjDLg_W">
-    <property role="TrG5h" value="typeof_TailOp" />
+    <property role="TrG5h" value="typeof_LastNOp" />
     <property role="3GE5qa" value="ordered" />
     <node concept="3clFbS" id="4Q4DxjDLg_X" role="18ibNy">
       <node concept="1ZobV4" id="1RHynufANlK" role="3cqZAp">
@@ -3087,7 +3088,7 @@
           <node concept="1Z2H0r" id="1RHynufANlN" role="mwGJk">
             <node concept="2OqwBi" id="1RHynufANlO" role="1Z2MuG">
               <node concept="1YBJjd" id="1RHynufANlP" role="2Oq$k0">
-                <ref role="1YBMHb" node="4Q4DxjDLg_Z" resolve="tailOp" />
+                <ref role="1YBMHb" node="4Q4DxjDLg_Z" resolve="op" />
               </node>
               <node concept="3TrEf2" id="1RHynufANlQ" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
@@ -3105,8 +3106,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="4Q4DxjDLg_Z" role="1YuTPh">
-      <property role="TrG5h" value="tailOp" />
-      <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="TailOp" />
+      <property role="TrG5h" value="op" />
+      <ref role="1YaFvo" to="700h:4Q4DxjDLg_t" resolve="LastNOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="6HHp2Wnvl_f">
@@ -3828,16 +3829,21 @@
         </node>
         <node concept="3fqX7Q" id="7SZA7Ud$287" role="3clFbw">
           <node concept="2OqwBi" id="6GySMNjYF2A" role="3fr31v">
-            <node concept="2OqwBi" id="7SZA7Ud$2nl" role="2Oq$k0">
-              <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
-                <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+            <node concept="2OqwBi" id="5vAcs0YtS$f" role="2Oq$k0">
+              <node concept="2OqwBi" id="7SZA7Ud$2nl" role="2Oq$k0">
+                <node concept="1YBJjd" id="7SZA7Ud$28d" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
+                </node>
+                <node concept="3TrEf2" id="5vAcs0YtRHG" role="2OqNvi">
+                  <ref role="3Tt5mk" to="700h:7SZA7UeMt3K" resolve="arg" />
+                </node>
               </node>
-              <node concept="2qgKlT" id="6GySMNjYEVI" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:6GySMNjjWfO" resolve="effectDescriptor" />
+              <node concept="2qgKlT" id="5vAcs0YtTGY" role="2OqNvi">
+                <ref role="37wK5l" to="5s8v:6NpHfQ5A3Wb" resolve="delayedEffectDescriptor" />
               </node>
             </node>
             <node concept="liA8E" id="6GySMNjYF$H" role="2OqNvi">
-              <ref role="37wK5l" to="oq0c:6GySMNjNHYC" resolve="readsOrModifiesMutableState" />
+              <ref role="37wK5l" to="oq0c:6GySMNjje8w" resolve="modifiesState" />
             </node>
           </node>
         </node>
