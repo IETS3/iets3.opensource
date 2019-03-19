@@ -2,7 +2,7 @@
 <model ref="r:2dd6bcf7-29b5-4f7c-9303-3883db63b802(org.iets3.opensource.allScripts.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
   </languages>
   <imports>
@@ -270,6 +270,11 @@
         <node concept="1SiIV0" id="6D$R_XpdMC1" role="3bR37C">
           <node concept="3bR9La" id="6D$R_XpdMC2" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4jhRcv2ZzH9" role="3bR37C">
+          <node concept="3bR9La" id="4jhRcv2ZzHa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
