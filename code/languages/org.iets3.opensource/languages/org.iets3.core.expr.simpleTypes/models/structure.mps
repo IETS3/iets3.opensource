@@ -357,7 +357,7 @@
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
     <node concept="PrWs8" id="39iG6BG0QX6" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:71dSyJVoY0O" resolve="IReducableExpression" />
+      <ref role="PrY4T" to="hm2y:71dSyJVoY0O" resolve="IReducibleExpression" />
     </node>
     <node concept="1TJgyj" id="7cphKbL6ihb" role="1TKVEi">
       <property role="IQ2ns" value="8293738266739942475" />
@@ -430,6 +430,20 @@
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5sQGZK2r0hZ">
+    <property role="EcuMT" value="6284408224995869823" />
+    <property role="3GE5qa" value="string.interpol" />
+    <property role="TrG5h" value="InterpolExprJoiner" />
+    <property role="34LRSv" value="~" />
+    <property role="R4oN_" value="in an interpolated string, suppresses spaces otherwise inserted between words in its vicinity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="nFAAeTf_HC" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="PrWs8" id="5sQGZK2r2tU" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>
   <node concept="1TIwiD" id="3UyUcqtl81P">

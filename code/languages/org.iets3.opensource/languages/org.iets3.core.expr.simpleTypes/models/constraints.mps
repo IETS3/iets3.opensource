@@ -574,5 +574,29 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5sQGZK38ggb">
+    <property role="3GE5qa" value="string.interpol" />
+    <ref role="1M2myG" to="5qo5:5sQGZK2r0hZ" resolve="InterpolExprJoiner" />
+    <node concept="9S07l" id="5sQGZK38gjH" role="9Vyp8">
+      <node concept="3clFbS" id="5sQGZK38gjI" role="2VODD2">
+        <node concept="3clFbF" id="5sQGZK38gr6" role="3cqZAp">
+          <node concept="2OqwBi" id="5sQGZK38gr7" role="3clFbG">
+            <node concept="2OqwBi" id="5sQGZK38gr8" role="2Oq$k0">
+              <node concept="nLn13" id="5sQGZK38gr9" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5sQGZK38gra" role="2OqNvi">
+                <node concept="1xMEDy" id="5sQGZK38grb" role="1xVPHs">
+                  <node concept="chp4Y" id="5sQGZK38grc" role="ri$Ld">
+                    <ref role="cht4Q" to="5qo5:7cphKbL6iha" resolve="StringInterpolationExpr" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5sQGZK38grd" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5sQGZK38gre" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

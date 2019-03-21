@@ -305,7 +305,7 @@
   </registry>
   <node concept="2S6QgY" id="71dSyJVpprK">
     <property role="TrG5h" value="attachReductionInspector" />
-    <ref role="2ZfgGC" to="hm2y:71dSyJVoY0O" resolve="IReducableExpression" />
+    <ref role="2ZfgGC" to="hm2y:71dSyJVoY0O" resolve="IReducibleExpression" />
     <node concept="2S6ZIM" id="71dSyJVpprL" role="2ZfVej">
       <node concept="3clFbS" id="71dSyJVpprM" role="2VODD2">
         <node concept="3clFbF" id="71dSyJVpptb" role="3cqZAp">

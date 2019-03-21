@@ -4741,6 +4741,32 @@
       <ref role="1YaFvo" to="5qo5:4eVSC65JA4O" resolve="BoundsExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5sQGZK2rhsf">
+    <property role="TrG5h" value="typeof_InterpolExprJoiner" />
+    <property role="3GE5qa" value="string.interpol" />
+    <node concept="3clFbS" id="5sQGZK2rhsg" role="18ibNy">
+      <node concept="1ZobV4" id="5sQGZK2rhsm" role="3cqZAp">
+        <node concept="mw_s8" id="5sQGZK2rhsn" role="1ZfhKB">
+          <node concept="2pJPEk" id="5sQGZK2rhso" role="mwGJk">
+            <node concept="2pJPED" id="5sQGZK2rhsp" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5sQGZK2rhsq" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5sQGZK2rhsr" role="mwGJk">
+            <node concept="1YBJjd" id="6f3UnGf59gj" role="1Z2MuG">
+              <ref role="1YBMHb" node="5sQGZK2rhsi" resolve="interpolExprJoiner" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5sQGZK2rhsi" role="1YuTPh">
+      <property role="TrG5h" value="interpolExprJoiner" />
+      <ref role="1YaFvo" to="5qo5:5sQGZK2r0hZ" resolve="InterpolExprJoiner" />
+    </node>
+  </node>
   <node concept="1YbPZF" id="3UyUcqtl8l_">
     <property role="TrG5h" value="typeof_StringParseIntTarget" />
     <property role="3GE5qa" value="string" />
