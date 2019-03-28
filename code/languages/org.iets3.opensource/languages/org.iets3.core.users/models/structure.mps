@@ -2,9 +2,9 @@
 <model ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -93,6 +93,9 @@
     </node>
     <node concept="PrWs8" id="6LfBX8YlYHb" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
+    </node>
+    <node concept="1QGGSu" id="6OSxRNjgzR8" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/userDirectory.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mG7sQPpUfB">
