@@ -972,6 +972,9 @@
     <node concept="PrWs8" id="kYh4fk$jxE" role="PzmwI">
       <ref role="PrY4T" node="1Zi765Epcf" resolve="IAnimatableElement" />
     </node>
+    <node concept="PrWs8" id="7XJT36hrGE7" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7kdj6EM27c1">
     <property role="3GE5qa" value="behavior.simple" />
