@@ -57,9 +57,6 @@
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
@@ -409,6 +406,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -4812,7 +4810,7 @@
                                 <node concept="2ShNRf" id="4dpHp7PqEHE" role="37wK5m">
                                   <node concept="1pGfFk" id="4dpHp7PqEHF" role="2ShVmc">
                                     <ref role="37wK5l" to="tc27:4KKQOHIYPwM" resolve="SubstituteInfoFactory" />
-                                    <node concept="1XNTG" id="4dpHp7PqEHG" role="37wK5m" />
+                                    <node concept="1Q80Hx" id="1$JL75h6gcD" role="37wK5m" />
                                     <node concept="2ZN8Hh" id="4dpHp7PqEHH" role="37wK5m" />
                                   </node>
                                 </node>
@@ -7035,7 +7033,7 @@
                                   <node concept="2ShNRf" id="2Dqu$yTjPYi" role="37wK5m">
                                     <node concept="1pGfFk" id="2Dqu$yTjPYj" role="2ShVmc">
                                       <ref role="37wK5l" to="tc27:4KKQOHIYPwM" resolve="SubstituteInfoFactory" />
-                                      <node concept="1XNTG" id="2Dqu$yTjPYk" role="37wK5m" />
+                                      <node concept="1Q80Hx" id="1$JL75h6aW7" role="37wK5m" />
                                       <node concept="2ZN8Hh" id="2Dqu$yTjPYl" role="37wK5m" />
                                     </node>
                                   </node>
@@ -9422,6 +9420,7 @@
       </node>
       <node concept="37vLTG" id="5$bT90ZdOUV" role="3clF46">
         <property role="TrG5h" value="context" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7XIXMBMWWhi" role="1tU5fm">
           <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
@@ -9548,6 +9547,14 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1$JL75h6j2v" role="ukAjM">
+                          <node concept="37vLTw" id="1$JL75h6ibE" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5$bT90ZdOUV" resolve="context" />
+                          </node>
+                          <node concept="liA8E" id="1$JL75h6jA$" role="2OqNvi">
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                           </node>
                         </node>
                       </node>

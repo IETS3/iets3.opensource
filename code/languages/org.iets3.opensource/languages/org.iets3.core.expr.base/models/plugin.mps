@@ -12,6 +12,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,7 +36,10 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" implicit="true" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -305,6 +309,14 @@
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
         <reference id="126958800891274597" name="extensionPoint" index="1lYe$Y" />
       </concept>
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1000,8 +1012,8 @@
                 <ref role="3cqZAo" node="2q0DACtKs0n" resolve="type" />
               </node>
               <node concept="2YIFZM" id="5wDe8wA6zrt" role="37wK5m">
-                <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
-                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                <ref role="1Pybhc" node="2Qbt$1tTQaH" resolve="PTF" />
+                <ref role="37wK5l" node="2Qbt$1tTQdc" resolve="createRealType" />
                 <node concept="10Nm6u" id="2q0DACtKs0m" role="37wK5m" />
               </node>
             </node>
@@ -6178,72 +6190,76 @@
         </node>
         <node concept="3cpWs8" id="3C$MSDk$deE" role="3cqZAp">
           <node concept="3cpWsn" id="3C$MSDk$deF" role="3cpWs9">
-            <property role="TrG5h" value="project" />
+            <property role="TrG5h" value="mpsProject" />
             <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="3C$MSDk$dey" role="1tU5fm">
-              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            <node concept="3uibUv" id="1$JL75hr7T$" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="2OqwBi" id="3C$MSDk$deG" role="33vP2m">
               <node concept="37vLTw" id="3C$MSDk$deH" role="2Oq$k0">
                 <ref role="3cqZAo" node="2udM7u8XFzD" resolve="event" />
               </node>
               <node concept="liA8E" id="3C$MSDk$deI" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
-                <node concept="10M0yZ" id="3C$MSDk$deJ" role="37wK5m">
-                  <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
-                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getRequiredData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getRequiredData" />
+                <node concept="10M0yZ" id="1$JL75hr69A" role="37wK5m">
+                  <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+                  <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3C$MSDkzsPa" role="3cqZAp">
-          <node concept="2OqwBi" id="3C$MSDkztgW" role="3clFbG">
-            <node concept="2YIFZM" id="3C$MSDkzt9n" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-            </node>
-            <node concept="liA8E" id="3C$MSDkztWZ" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
-              <node concept="1bVj0M" id="2B_XTD7i7rg" role="37wK5m">
-                <node concept="3clFbS" id="2B_XTD7i7rp" role="1bW5cS">
-                  <node concept="1DcWWT" id="3C$MSDkzno6" role="3cqZAp">
-                    <node concept="2YIFZM" id="3C$MSDkzE3e" role="1DdaDG">
-                      <ref role="37wK5l" to="7lvn:3TltS6fENwY" resolve="getAllEditorComponents" />
-                      <ref role="1Pybhc" to="7lvn:3TltS6fENti" resolve="EditorComponentUtil" />
-                      <node concept="2YIFZM" id="3C$MSDk$2oV" role="37wK5m">
-                        <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
-                        <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
-                        <node concept="37vLTw" id="3C$MSDk$d$I" role="37wK5m">
-                          <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
-                        </node>
+        <node concept="1QHqEK" id="1$JL75hqNxx" role="3cqZAp">
+          <node concept="1QHqEC" id="1$JL75hqNxz" role="1QHqEI">
+            <node concept="3clFbS" id="1$JL75hqNx_" role="1bW5cS">
+              <node concept="1DcWWT" id="3C$MSDkzno6" role="3cqZAp">
+                <node concept="2YIFZM" id="3C$MSDkzE3e" role="1DdaDG">
+                  <ref role="37wK5l" to="7lvn:3TltS6fENwY" resolve="getAllEditorComponents" />
+                  <ref role="1Pybhc" to="7lvn:3TltS6fENti" resolve="EditorComponentUtil" />
+                  <node concept="2YIFZM" id="3C$MSDk$2oV" role="37wK5m">
+                    <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+                    <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
+                    <node concept="2OqwBi" id="1$JL75hr8RF" role="37wK5m">
+                      <node concept="37vLTw" id="3C$MSDk$d$I" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3C$MSDk$deF" resolve="mpsProject" />
                       </node>
-                      <node concept="3clFbT" id="3C$MSDkzE3j" role="37wK5m">
-                        <property role="3clFbU" value="true" />
+                      <node concept="liA8E" id="1$JL75hra1o" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
                       </node>
                     </node>
-                    <node concept="3cpWsn" id="3C$MSDkznob" role="1Duv9x">
-                      <property role="3TUv4t" value="false" />
-                      <property role="TrG5h" value="component" />
-                      <node concept="3uibUv" id="3C$MSDk$24B" role="1tU5fm">
-                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                  </node>
+                  <node concept="3clFbT" id="3C$MSDkzE3j" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="3C$MSDkznob" role="1Duv9x">
+                  <property role="3TUv4t" value="false" />
+                  <property role="TrG5h" value="component" />
+                  <node concept="3uibUv" id="3C$MSDk$24B" role="1tU5fm">
+                    <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="3C$MSDkzno8" role="2LFqv$">
+                  <node concept="3clFbF" id="3C$MSDkzno9" role="3cqZAp">
+                    <node concept="2OqwBi" id="3C$MSDkznDP" role="3clFbG">
+                      <node concept="37vLTw" id="3C$MSDkznDO" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3C$MSDkznob" resolve="component" />
                       </node>
-                    </node>
-                    <node concept="3clFbS" id="3C$MSDkzno8" role="2LFqv$">
-                      <node concept="3clFbF" id="3C$MSDkzno9" role="3cqZAp">
-                        <node concept="2OqwBi" id="3C$MSDkznDP" role="3clFbG">
-                          <node concept="37vLTw" id="3C$MSDkznDO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3C$MSDkznob" resolve="component" />
-                          </node>
-                          <node concept="liA8E" id="3C$MSDkznDQ" role="2OqNvi">
-                            <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
-                          </node>
-                        </node>
+                      <node concept="liA8E" id="3C$MSDkznDQ" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1$JL75hrrVZ" role="ukAjM">
+            <node concept="37vLTw" id="1$JL75hrqwz" role="2Oq$k0">
+              <ref role="3cqZAo" node="3C$MSDk$deF" resolve="mpsProject" />
+            </node>
+            <node concept="liA8E" id="1$JL75hrqw$" role="2OqNvi">
+              <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -6677,8 +6693,8 @@
                                       <node concept="1Wc70l" id="7WSgHRLgLL4" role="3clFbG">
                                         <node concept="3fqX7Q" id="7WSgHRLgLYS" role="3uHU7w">
                                           <node concept="2YIFZM" id="5wDe8wA6zss" role="3fr31v">
-                                            <ref role="37wK5l" to="xfg9:5ye9uPrx0ez" resolve="isOtherwiseLiteral" />
-                                            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                                            <ref role="1Pybhc" node="2Qbt$1tTQaH" resolve="PTF" />
+                                            <ref role="37wK5l" node="5ye9uPrx0ez" resolve="isOtherwiseLiteral" />
                                             <node concept="1PxgMI" id="7WSgHRLgNbS" role="37wK5m">
                                               <node concept="chp4Y" id="7WSgHRLgNmx" role="3oSUPX">
                                                 <ref role="cht4Q" to="hm2y:6sdnDbSla17" resolve="Expression" />
@@ -6691,8 +6707,8 @@
                                         </node>
                                         <node concept="1Wc70l" id="7WSgHRKY5U7" role="3uHU7B">
                                           <node concept="2YIFZM" id="5wDe8wA6zrY" role="3uHU7w">
-                                            <ref role="37wK5l" to="xfg9:2Qbt$1tTWDY" resolve="isBooleanType" />
-                                            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                                            <ref role="1Pybhc" node="2Qbt$1tTQaH" resolve="PTF" />
+                                            <ref role="37wK5l" node="2Qbt$1tTWDY" resolve="isBooleanType" />
                                             <node concept="1PxgMI" id="7WSgHRKY9y7" role="37wK5m">
                                               <node concept="chp4Y" id="7WSgHRKY9Gr" role="3oSUPX">
                                                 <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />

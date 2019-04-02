@@ -52,7 +52,6 @@
     <language slang="l:6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0:org.iets3.core.expr.math" version="0" />
     <language slang="l:553a35c5-ccd6-40ba-9923-5e3b354d0c76:org.iets3.core.expr.messages" version="0" />
     <language slang="l:711a16d7-99e8-4e1d-b20c-99c0b7309cd8:org.iets3.core.expr.metafunction" version="0" />
-    <language slang="l:fbba5118-5fc6-49ff-9c3b-0b4469830440:org.iets3.core.expr.mutable" version="1" />
     <language slang="l:64e79176-30a1-4836-821c-bf62ff6c6091:org.iets3.core.expr.natlang" version="0" />
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
     <language slang="l:18001c94-33a7-4f68-a7c1-ffddc4b39be1:org.iets3.core.expr.repl" version="0" />
@@ -100,6 +99,7 @@
     <module reference="79d5345e-e919-477c-b448-d9d5f36e2f92(org.iets3.core.expr.adt.interpreter)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="3" />
     <module reference="cf90f965-8554-4a16-aa0b-6387f27474ab(org.iets3.core.expr.base.interpreter)" version="0" />
+    <module reference="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" version="0" />
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="5" />
     <module reference="07f696b4-29e7-4878-aefb-39cac5e8c6cc(org.iets3.core.expr.collections.interpreter)" version="0" />
     <module reference="3a79aca0-f4b1-40f1-a3e9-259162afa77b(org.iets3.core.expr.dataflow.interpreter)" version="0" />

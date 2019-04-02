@@ -22,7 +22,6 @@
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -4923,8 +4922,8 @@
       <node concept="3clFbS" id="35CkgbLkSIS" role="3clF47">
         <node concept="3clFbF" id="35CkgbLkTyu" role="3cqZAp">
           <node concept="2YIFZM" id="5wDe8wA6zsM" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:35CkgbLlhpQ" resolve="createFalseLiteral" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+            <ref role="37wK5l" to="oq0c:35CkgbLlhpQ" resolve="createFalseLiteral" />
           </node>
         </node>
       </node>

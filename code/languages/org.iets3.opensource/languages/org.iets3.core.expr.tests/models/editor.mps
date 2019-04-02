@@ -455,7 +455,9 @@
       </concept>
       <concept id="1397920687866927557" name="de.slisson.mps.tables.structure.TableCellQueryColumnCount" flags="ig" index="2r732K" />
       <concept id="1397920687866927536" name="de.slisson.mps.tables.structure.TableCellQueryRowCount" flags="ig" index="2r7335" />
-      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ig" index="2r73lj" />
+      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ig" index="2r73lj">
+        <property id="3785936898452719116" name="displayType" index="3iQXY0" />
+      </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865685" name="rowHeaders" index="2rf8Fw" />
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
@@ -3456,6 +3458,7 @@
               </node>
             </node>
             <node concept="2r73lj" id="6VI$CV8uQO$" role="2r70CL">
+              <property role="3iQXY0" value="vlist" />
               <node concept="3clFbS" id="6VI$CV8uQO_" role="2VODD2">
                 <node concept="3cpWs8" id="1bwJEEf3w3g" role="3cqZAp">
                   <node concept="3cpWsn" id="1bwJEEf3w3h" role="3cpWs9">

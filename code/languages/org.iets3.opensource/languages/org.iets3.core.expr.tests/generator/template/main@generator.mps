@@ -672,6 +672,24 @@
       <node concept="1Koe21" id="7wjZwvO2Lhu" role="1lVwrX">
         <node concept="312cEu" id="7wjZwvO2LhC" role="1Koe22">
           <property role="TrG5h" value="Body" />
+          <node concept="3clFbW" id="XlcHWd_orA" role="jymVt">
+            <node concept="37vLTG" id="BYb1OG0zxx" role="3clF46">
+              <property role="TrG5h" value="owner" />
+              <node concept="3uibUv" id="BYb1OG0zxw" role="1tU5fm">
+                <ref role="3uigEE" to="tp6m:e$hNri9cbt" resolve="TransformationTest" />
+              </node>
+            </node>
+            <node concept="3cqZAl" id="XlcHWd_orB" role="3clF45" />
+            <node concept="3clFbS" id="XlcHWd_orD" role="3clF47">
+              <node concept="XkiVB" id="XlcHWd_p0r" role="3cqZAp">
+                <ref role="37wK5l" to="tp6m:BYb1OG0zfm" resolve="BaseTestBody" />
+                <node concept="37vLTw" id="XlcHWd_p23" role="37wK5m">
+                  <ref role="3cqZAo" node="BYb1OG0zxx" resolve="owner" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tm1VV" id="XlcHWd_orE" role="1B3o_S" />
+          </node>
           <node concept="3clFb_" id="7wjZwvO2LhD" role="jymVt">
             <property role="TrG5h" value="test_NodesTestMethod" />
             <node concept="3cqZAl" id="7wjZwvO2LhE" role="3clF45" />
@@ -761,6 +779,24 @@
     <node concept="1Koe21" id="7wjZwvO2HgU" role="jxRDz">
       <node concept="312cEu" id="7wjZwvO2Hh2" role="1Koe22">
         <property role="TrG5h" value="Body" />
+        <node concept="3clFbW" id="XlcHWd_plA" role="jymVt">
+          <node concept="37vLTG" id="XlcHWd_pD3" role="3clF46">
+            <property role="TrG5h" value="owner" />
+            <node concept="3uibUv" id="XlcHWd_pD4" role="1tU5fm">
+              <ref role="3uigEE" to="tp6m:e$hNri9cbt" resolve="TransformationTest" />
+            </node>
+          </node>
+          <node concept="3cqZAl" id="XlcHWd_plB" role="3clF45" />
+          <node concept="3clFbS" id="XlcHWd_plD" role="3clF47">
+            <node concept="XkiVB" id="XlcHWd_pEe" role="3cqZAp">
+              <ref role="37wK5l" to="tp6m:BYb1OG0zfm" resolve="BaseTestBody" />
+              <node concept="37vLTw" id="XlcHWd_pFH" role="37wK5m">
+                <ref role="3cqZAo" node="XlcHWd_pD3" resolve="owner" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="XlcHWd_plE" role="1B3o_S" />
+        </node>
         <node concept="3clFb_" id="7wjZwvO2Hpo" role="jymVt">
           <property role="TrG5h" value="test_NodesTestMethod" />
           <node concept="3cqZAl" id="7wjZwvO2Hpp" role="3clF45" />
