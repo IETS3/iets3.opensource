@@ -41,8 +41,8 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="19m5" ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)" implicit="true" />
   </imports>
   <registry>
@@ -5834,21 +5834,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="7kdj6EM6LWN" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="7kdj6EM6N8l" role="13h7CS">
-      <property role="TrG5h" value="isLValue" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="pbu6:7kdj6EM6N7N" resolve="isLValue" />
-      <node concept="3Tm1VV" id="7kdj6EM6N8m" role="1B3o_S" />
-      <node concept="3clFbS" id="7kdj6EM6N8r" role="3clF47">
-        <node concept="3clFbF" id="7kdj6EM6N9w" role="3cqZAp">
-          <node concept="3clFbT" id="7kdj6EM6N9v" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="7kdj6EM6N8s" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="435Eqf9c0kq">
