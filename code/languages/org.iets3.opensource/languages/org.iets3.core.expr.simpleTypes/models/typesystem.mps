@@ -4741,5 +4741,31 @@
       <ref role="1YaFvo" to="5qo5:4eVSC65JA4O" resolve="BoundsExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3UyUcqtl8l_">
+    <property role="TrG5h" value="typeof_StringParseNumberTarget" />
+    <property role="3GE5qa" value="string" />
+    <node concept="3clFbS" id="3UyUcqtl8lA" role="18ibNy">
+      <node concept="1Z5TYs" id="3UyUcqtl91G" role="3cqZAp">
+        <node concept="mw_s8" id="3UyUcqtl925" role="1ZfhKB">
+          <node concept="2YIFZM" id="3UyUcqtl93E" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQcM" resolve="createIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="3UyUcqtlfOc" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3UyUcqtl91J" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3UyUcqtl8Of" role="mwGJk">
+            <node concept="1YBJjd" id="3UyUcqtl8Q8" role="1Z2MuG">
+              <ref role="1YBMHb" node="3UyUcqtl8lC" resolve="spnt" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3UyUcqtl8lC" role="1YuTPh">
+      <property role="TrG5h" value="spnt" />
+      <ref role="1YaFvo" to="5qo5:3UyUcqtl81P" resolve="StringParseIntegerTarget" />
+    </node>
+  </node>
 </model>
 

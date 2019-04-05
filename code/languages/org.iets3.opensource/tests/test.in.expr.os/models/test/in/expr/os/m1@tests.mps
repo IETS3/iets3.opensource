@@ -435,6 +435,7 @@
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="4513425716319387765" name="org.iets3.core.expr.simpleTypes.structure.StringParseIntegerTarget" flags="ng" index="2zXAyN" />
       <concept id="5880303268806840041" name="org.iets3.core.expr.simpleTypes.structure.StringStartsWithTarget" flags="ng" index="2_lWp3">
         <child id="842813880843519732" name="value" index="1gK00Q" />
       </concept>
@@ -35060,6 +35061,72 @@
       </node>
     </node>
     <node concept="_ixoA" id="5jYrMSmS0L9" role="_iOnB" />
+    <node concept="_fkuM" id="3UyUcqtmKqH" role="_iOnB">
+      <property role="TrG5h" value="parseNumber" />
+      <node concept="_fkuZ" id="3UyUcqtmL4w" role="_fkp5">
+        <node concept="_fku$" id="3UyUcqtmL4x" role="_fkur" />
+        <node concept="1QScDb" id="3UyUcqtmL4W" role="_fkuY">
+          <node concept="2zXAyN" id="3UyUcqtmLtJ" role="1QScD9" />
+          <node concept="30bdrP" id="3UyUcqtmL4J" role="30czhm">
+            <property role="30bdrQ" value="0" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="3UyUcqtmLR7" role="_fkuS">
+          <property role="30bXRw" value="0" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3UyUcqtmLRA" role="_fkp5">
+        <node concept="_fku$" id="3UyUcqtmLRB" role="_fkur" />
+        <node concept="1QScDb" id="3UyUcqtmLRC" role="_fkuY">
+          <node concept="2zXAyN" id="3UyUcqtmLRD" role="1QScD9" />
+          <node concept="30bdrP" id="3UyUcqtmLRE" role="30czhm">
+            <property role="30bdrQ" value="1" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="3UyUcqtmMmB" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3UyUcqtmLSB" role="_fkp5">
+        <node concept="_fku$" id="3UyUcqtmLSC" role="_fkur" />
+        <node concept="1QScDb" id="3UyUcqtmLSD" role="_fkuY">
+          <node concept="2zXAyN" id="3UyUcqtmLSE" role="1QScD9" />
+          <node concept="30bdrP" id="3UyUcqtmLSF" role="30czhm">
+            <property role="30bdrQ" value="-1" />
+          </node>
+        </node>
+        <node concept="30cIq6" id="3UyUcqtmOM$" role="_fkuS">
+          <node concept="30bXRB" id="3UyUcqtmOML" role="30czhm">
+            <property role="30bXRw" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3UyUcqtmRaX" role="_fkp5">
+        <node concept="_fku$" id="3UyUcqtmRaY" role="_fkur" />
+        <node concept="1QScDb" id="3UyUcqtmRaZ" role="_fkuY">
+          <node concept="2zXAyN" id="3UyUcqtmRb0" role="1QScD9" />
+          <node concept="30bdrP" id="3UyUcqtmRb1" role="30czhm">
+            <property role="30bdrQ" value="10000000" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="3UyUcqtmRb2" role="_fkuS">
+          <property role="30bXRw" value="10000000" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="3UyUcqtmMjF" role="_fkp5">
+        <node concept="_fku$" id="3UyUcqtmMjG" role="_fkur" />
+        <node concept="1QScDb" id="3UyUcqtmMjH" role="_fkuY">
+          <node concept="2zXAyN" id="3UyUcqtmMjI" role="1QScD9" />
+          <node concept="30bdrP" id="3UyUcqtmMjJ" role="30czhm">
+            <property role="30bdrQ" value="-10000000" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="3UyUcqtmMjK" role="_fkuS">
+          <property role="30bXRw" value="-10000000" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="3UyUcqtmKJA" role="_iOnB" />
     <node concept="_fkuM" id="5WNmJ7Du$91" role="_iOnB">
       <property role="TrG5h" value="optionStuff" />
       <node concept="_fkuZ" id="5WNmJ7Du$aE" role="_fkp5">
