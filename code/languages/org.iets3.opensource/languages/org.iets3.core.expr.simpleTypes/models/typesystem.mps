@@ -283,7 +283,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -2854,7 +2854,7 @@
   </node>
   <node concept="2sgARr" id="78hTg1$TqUY">
     <property role="3GE5qa" value="numeric.number" />
-    <property role="TrG5h" value="supertypeOf_NumberTypeyx" />
+    <property role="TrG5h" value="supertypeOf_NumberType" />
     <node concept="3clFbS" id="78hTg1$TqUZ" role="2sgrp5">
       <node concept="3cpWs8" id="7Wa2sv3FXgN" role="3cqZAp">
         <node concept="3cpWsn" id="7Wa2sv3FXgQ" role="3cpWs9">
