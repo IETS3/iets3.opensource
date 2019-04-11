@@ -23,7 +23,6 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -724,8 +723,8 @@
             <node concept="BsUDl" id="3iESbJshu3C" role="33vP2m">
               <ref role="37wK5l" to="rnpa:6dpaV_AQiiy" resolve="createNew" />
               <node concept="2YIFZM" id="5wDe8wA6zqB" role="37wK5m">
-                <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
-                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
               </node>
               <node concept="Xl_RD" id="3iESbJshu7J" role="37wK5m">
                 <property role="Xl_RC" value="custom decision procedure" />
