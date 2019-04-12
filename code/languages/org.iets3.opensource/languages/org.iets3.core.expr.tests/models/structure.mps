@@ -490,6 +490,11 @@
       <property role="TrG5h" value="lookOutsideTestSuites" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5s_NuasW9F6" role="1TKVEl">
+      <property role="IQ2nx" value="6279651628617341638" />
+      <property role="TrG5h" value="trackProperties" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MHhZL0ul1i">
     <property role="EcuMT" value="4372229961985642578" />
