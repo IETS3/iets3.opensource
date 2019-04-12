@@ -5809,7 +5809,7 @@
   </node>
   <node concept="13h7C7" id="3UyUcqtl82H">
     <property role="3GE5qa" value="string" />
-    <ref role="13h7C2" to="5qo5:3UyUcqtl81P" resolve="StringParseIntegerTarget" />
+    <ref role="13h7C2" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
     <node concept="13i0hz" id="3UyUcqtl82S" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -5819,7 +5819,7 @@
       <node concept="3clFbS" id="3UyUcqtl82U" role="3clF47">
         <node concept="3clFbF" id="3UyUcqtl82V" role="3cqZAp">
           <node concept="Xl_RD" id="3UyUcqtl82W" role="3clFbG">
-            <property role="Xl_RC" value="parseNumber" />
+            <property role="Xl_RC" value="parseInt" />
           </node>
         </node>
       </node>

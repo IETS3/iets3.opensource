@@ -786,7 +786,7 @@
   </node>
   <node concept="24kQdi" id="3UyUcqtl81Q">
     <property role="3GE5qa" value="string" />
-    <ref role="1XX52x" to="5qo5:3UyUcqtl81P" resolve="StringParseIntegerTarget" />
+    <ref role="1XX52x" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
     <node concept="PMmxH" id="3UyUcqtl81W" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>

@@ -4742,7 +4742,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3UyUcqtl8l_">
-    <property role="TrG5h" value="typeof_StringParseNumberTarget" />
+    <property role="TrG5h" value="typeof_StringParseIntTarget" />
     <property role="3GE5qa" value="string" />
     <node concept="3clFbS" id="3UyUcqtl8lA" role="18ibNy">
       <node concept="1Z5TYs" id="3UyUcqtl91G" role="3cqZAp">
@@ -4764,7 +4764,7 @@
     </node>
     <node concept="1YaCAy" id="3UyUcqtl8lC" role="1YuTPh">
       <property role="TrG5h" value="spnt" />
-      <ref role="1YaFvo" to="5qo5:3UyUcqtl81P" resolve="StringParseIntegerTarget" />
+      <ref role="1YaFvo" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
     </node>
   </node>
 </model>
