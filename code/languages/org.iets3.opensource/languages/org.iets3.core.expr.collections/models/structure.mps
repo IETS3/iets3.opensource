@@ -1106,5 +1106,19 @@
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4F_NhVzcaCL">
+    <property role="EcuMT" value="5396945261017737777" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="ReverseOp" />
+    <property role="34LRSv" value="reverse" />
+    <property role="R4oN_" value="returns the collection's elements in reverse order" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="4F_NhVzcaCM" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="4F_NhVzcaCN" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
 </model>
 
