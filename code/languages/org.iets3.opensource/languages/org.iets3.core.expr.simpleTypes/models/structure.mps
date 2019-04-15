@@ -432,5 +432,13 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3UyUcqtl81P">
+    <property role="EcuMT" value="4513425716319387765" />
+    <property role="TrG5h" value="StringParseIntTarget" />
+    <property role="34LRSv" value="parseInt" />
+    <property role="3GE5qa" value="string" />
+    <property role="R4oN_" value="convert a string to an integer" />
+    <ref role="1TJDcQ" node="5cK3QOdYQ7D" resolve="AbstractStringDotTarget" />
+  </node>
 </model>
 

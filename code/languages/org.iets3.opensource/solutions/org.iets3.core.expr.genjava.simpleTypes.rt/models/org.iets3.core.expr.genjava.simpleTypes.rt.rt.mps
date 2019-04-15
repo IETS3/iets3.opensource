@@ -1984,6 +1984,45 @@
         <node concept="17QB3L" id="4JUAg98VdJ_" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2YIFZL" id="qI8drZti6b" role="jymVt">
+      <property role="TrG5h" value="parseInteger" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="qI8drZti6c" role="3clF47">
+        <node concept="3clFbJ" id="qI8drZti6d" role="3cqZAp">
+          <node concept="3clFbS" id="qI8drZti6e" role="3clFbx">
+            <node concept="3cpWs6" id="qI8drZti6f" role="3cqZAp">
+              <node concept="10Nm6u" id="qI8drZti6g" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="qI8drZti6h" role="3clFbw">
+            <node concept="10Nm6u" id="qI8drZti6i" role="3uHU7w" />
+            <node concept="37vLTw" id="qI8drZti6j" role="3uHU7B">
+              <ref role="3cqZAo" node="qI8drZti6r" resolve="s" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="qI8drZti6k" role="3cqZAp">
+          <node concept="2ShNRf" id="qI8drZtj4H" role="3cqZAk">
+            <node concept="1pGfFk" id="qI8drZtkjs" role="2ShVmc">
+              <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+              <node concept="37vLTw" id="qI8drZtknF" role="37wK5m">
+                <ref role="3cqZAo" node="qI8drZti6r" resolve="s" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="qI8drZti6p" role="1B3o_S" />
+      <node concept="3uibUv" id="qI8drZti6q" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+      </node>
+      <node concept="37vLTG" id="qI8drZti6r" role="3clF46">
+        <property role="TrG5h" value="s" />
+        <node concept="17QB3L" id="qI8drZti6s" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2YIFZL" id="d8Mtt0J101" role="jymVt">
       <property role="TrG5h" value="bounds" />
       <property role="DiZV1" value="false" />
