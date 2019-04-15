@@ -1106,5 +1106,41 @@
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4F_NhVzcaCL">
+    <property role="EcuMT" value="5396945261017737777" />
+    <property role="3GE5qa" value="ordered" />
+    <property role="TrG5h" value="ReverseOp" />
+    <property role="34LRSv" value="reverse" />
+    <property role="R4oN_" value="returns the collection's elements in reverse order" />
+    <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="4F_NhVzcaCM" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUjnPd" resolve="IContextTypedCollOp" />
+    </node>
+    <node concept="PrWs8" id="4F_NhVzcaCN" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4F_NhVzXhIl">
+    <property role="3GE5qa" value="set" />
+    <property role="TrG5h" value="SetUnionOp" />
+    <property role="34LRSv" value="union" />
+    <property role="EcuMT" value="5396945261030611861" />
+    <property role="R4oN_" value="create a new set with the union of all elements" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4F_NhVzXhIm" role="PzmwI">
+      <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4F_NhV$r8CS">
+    <property role="3GE5qa" value="set" />
+    <property role="TrG5h" value="SetDiffOp" />
+    <property role="34LRSv" value="diff" />
+    <property role="EcuMT" value="5396945261038438968" />
+    <property role="R4oN_" value="create a new set which is the difference of two sets" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4F_NhV$r8CT" role="PzmwI">
+      <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
+    </node>
+  </node>
 </model>
 
