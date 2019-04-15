@@ -2223,7 +2223,7 @@
         </node>
         <node concept="3XFhqQ" id="3MHhZL0ts3h" role="3EZMnx" />
         <node concept="3F0ifn" id="3MHhZL0ts3i" role="3EZMnx">
-          <property role="3F0ifm" value="limits:              " />
+          <property role="3F0ifm" value="limits:             " />
         </node>
         <node concept="2iRfu4" id="3MHhZL0ts3k" role="2iSdaV" />
         <node concept="3EZMnI" id="3MHhZL0ts4q" role="3EZMnx">
@@ -2287,7 +2287,7 @@
         </node>
         <node concept="3XFhqQ" id="3MHhZL0$oIK" role="3EZMnx" />
         <node concept="3F0ifn" id="3MHhZL0$oIL" role="3EZMnx">
-          <property role="3F0ifm" value="show limt errors:    " />
+          <property role="3F0ifm" value="show limit errors:  " />
         </node>
         <node concept="27S6Sx" id="3MHhZL0$oIM" role="3EZMnx">
           <ref role="1NtTu8" to="av4b:3MHhZL0$oIw" resolve="highlightErrors" />
@@ -2300,12 +2300,25 @@
         </node>
         <node concept="3XFhqQ" id="4e_7uAsvP5e" role="3EZMnx" />
         <node concept="3F0ifn" id="4e_7uAsvP5f" role="3EZMnx">
-          <property role="3F0ifm" value="look outsides suites:" />
+          <property role="3F0ifm" value="look outside suites:" />
         </node>
         <node concept="27S6Sx" id="4e_7uAsvP5g" role="3EZMnx">
           <ref role="1NtTu8" to="av4b:4e_7uAsvP4Z" resolve="lookOutsideTestSuites" />
         </node>
         <node concept="2iRfu4" id="4e_7uAsvP5h" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5s_NuasYe_Q" role="3EZMnx">
+        <node concept="VPM3Z" id="5s_NuasYe_R" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="5s_NuasYe_S" role="3EZMnx" />
+        <node concept="3F0ifn" id="5s_NuasYe_T" role="3EZMnx">
+          <property role="3F0ifm" value="track properties:   " />
+        </node>
+        <node concept="27S6Sx" id="5s_NuasYe_U" role="3EZMnx">
+          <ref role="1NtTu8" to="av4b:5s_NuasW9F6" resolve="trackProperties" />
+        </node>
+        <node concept="2iRfu4" id="5s_NuasYe_V" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="CrzyxmE7H8" role="3EZMnx">
         <node concept="VPM3Z" id="CrzyxmE7H9" role="3F10Kt">
@@ -2313,7 +2326,7 @@
         </node>
         <node concept="3XFhqQ" id="CrzyxmE7Ha" role="3EZMnx" />
         <node concept="3F0ifn" id="CrzyxmE7Hb" role="3EZMnx">
-          <property role="3F0ifm" value="nodes filter:        " />
+          <property role="3F0ifm" value="nodes filter:       " />
         </node>
         <node concept="3F1sOY" id="CrzyxmE7M5" role="3EZMnx">
           <property role="2ru_X1" value="true" />
@@ -2333,7 +2346,7 @@
         </node>
         <node concept="3XFhqQ" id="3MHhZL0ts2o" role="3EZMnx" />
         <node concept="3F0ifn" id="3MHhZL0ts2p" role="3EZMnx">
-          <property role="3F0ifm" value="languages:           " />
+          <property role="3F0ifm" value="languages:          " />
         </node>
         <node concept="3F2HdR" id="3MHhZL0ts2q" role="3EZMnx">
           <ref role="1NtTu8" to="av4b:3_DFadN86Ip" resolve="languages" />
@@ -2347,7 +2360,7 @@
         </node>
         <node concept="3XFhqQ" id="3MHhZL0ts2v" role="3EZMnx" />
         <node concept="3F0ifn" id="3MHhZL0ts2w" role="3EZMnx">
-          <property role="3F0ifm" value="ignore:              " />
+          <property role="3F0ifm" value="ignore:             " />
         </node>
         <node concept="2iRfu4" id="3MHhZL0ts2x" role="2iSdaV" />
         <node concept="3F2HdR" id="3MHhZL0ts2y" role="3EZMnx">
