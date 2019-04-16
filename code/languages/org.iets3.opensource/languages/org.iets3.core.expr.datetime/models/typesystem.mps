@@ -1488,5 +1488,91 @@
       <ref role="1YaFvo" to="mi3w:3nGzaxUXXkG" resolve="BeginOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7khFtBHlVuY">
+    <property role="TrG5h" value="typeof_MakeDate" />
+    <property role="3GE5qa" value="date" />
+    <node concept="3clFbS" id="7khFtBHlVuZ" role="18ibNy">
+      <node concept="1ZobV4" id="7khFtBHnE1c" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHnE1g" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHnE1h" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBHnE1i" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBHnE1j" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBHlVv1" resolve="makeDate" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBHnE1k" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:7khFtBHlNKf" resolve="year" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHnE1e" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHnE1f" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="7khFtBHnE7l" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHnE7p" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHnE7q" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBHnE7r" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBHnE7s" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBHlVv1" resolve="makeDate" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBHnE7t" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:7khFtBHlNKh" resolve="month" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHnE7n" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHnE7o" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="7khFtBHnEdu" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHnEdy" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHnEdz" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBHnEd$" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBHnEd_" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBHlVv1" resolve="makeDate" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBHnEdA" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:7khFtBHlNKk" resolve="day" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHnEdw" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHnEdx" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="7khFtBHlZ8_" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHlZb1" role="1ZfhKB">
+          <node concept="2pJPEk" id="7khFtBHlZaX" role="mwGJk">
+            <node concept="2pJPED" id="7khFtBHlZbc" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHlZ8C" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHlYX8" role="mwGJk">
+            <node concept="1YBJjd" id="7khFtBHlZ1r" role="1Z2MuG">
+              <ref role="1YBMHb" node="7khFtBHlVv1" resolve="makeDate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHlVv1" role="1YuTPh">
+      <property role="TrG5h" value="makeDate" />
+      <ref role="1YaFvo" to="mi3w:7khFtBHlNKe" resolve="MakeDate" />
+    </node>
+  </node>
 </model>
 
