@@ -8049,5 +8049,35 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="7khFtBHnQR3">
+    <property role="TrG5h" value="typeof_ConvenientValueCond" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <node concept="3clFbS" id="7khFtBHnQR4" role="18ibNy">
+      <node concept="1Z5TYs" id="7khFtBHnRUr" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHnRUK" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHnRZC" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHnRUu" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHnRo3" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBHnR$k" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBHnRoj" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBHnQR6" resolve="cvc" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBHnRJu" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:7khFtBHnQPX" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHnQR6" role="1YuTPh">
+      <property role="TrG5h" value="cvc" />
+      <ref role="1YaFvo" to="hm2y:7khFtBHnQPW" resolve="ConvenientValueCond" />
+    </node>
+  </node>
 </model>
 
