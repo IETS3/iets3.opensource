@@ -273,7 +273,7 @@
       <node concept="3clFbF" id="3nGzaxUXNt7" role="3cqZAp">
         <node concept="2pJPEk" id="3nGzaxUXNt5" role="3clFbG">
           <node concept="2pJPED" id="3nGzaxUXNv3" role="2pJPEn">
-            <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
           </node>
         </node>
       </node>
@@ -316,7 +316,7 @@
       <node concept="3clFbF" id="1Mp62pP0lLd" role="3cqZAp">
         <node concept="2pJPEk" id="1Mp62pP0lLe" role="3clFbG">
           <node concept="2pJPED" id="1Mp62pP0lLf" role="2pJPEn">
-            <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
           </node>
         </node>
       </node>
@@ -580,7 +580,7 @@
       </node>
       <node concept="2pJPEk" id="26CArgU3n9j" role="3ciSkW">
         <node concept="2pJPED" id="26CArgU3nsV" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="3gn64h" id="26CArgU3n9l" role="32tDTA">
@@ -588,7 +588,7 @@
       </node>
       <node concept="2pJPEk" id="26CArgU3n9m" role="3ciSnv">
         <node concept="2pJPED" id="26CArgU3nuR" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="1QeDOX" id="26CArgU3n9o" role="1QeD3i">
@@ -636,7 +636,7 @@
       </node>
       <node concept="2pJPEk" id="26CArgU3pGa" role="3ciSkW">
         <node concept="2pJPED" id="26CArgU3pGb" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="3gn64h" id="26CArgU3q0O" role="32tDTA">
@@ -644,7 +644,7 @@
       </node>
       <node concept="2pJPEk" id="26CArgU3pGd" role="3ciSnv">
         <node concept="2pJPED" id="26CArgU3pGe" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="1QeDOX" id="26CArgU3pGf" role="1QeD3i">
@@ -692,7 +692,7 @@
       </node>
       <node concept="2pJPEk" id="6fXpv6P$7us" role="3ciSkW">
         <node concept="2pJPED" id="6fXpv6P$7VK" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="3gn64h" id="6fXpv6P$7Jf" role="32tDTA">
@@ -744,7 +744,7 @@
       </node>
       <node concept="2pJPEk" id="6fXpv6P$8o_" role="3ciSkW">
         <node concept="2pJPED" id="6fXpv6P$8oA" role="2pJPEn">
-          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="3gn64h" id="6fXpv6P$8DU" role="32tDTA">
@@ -1593,8 +1593,8 @@
         </node>
         <node concept="mw_s8" id="7khFtBH$Fch" role="1ZfhKB">
           <node concept="2pJPEk" id="7khFtBH$Fci" role="mwGJk">
-            <node concept="2pJPED" id="7khFtBH$Fcj" role="2pJPEn">
-              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            <node concept="2pJPED" id="7khFtBHJt8d" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
             </node>
           </node>
         </node>
@@ -1648,8 +1648,8 @@
       <node concept="1Z5TYs" id="7khFtBH_DJ8" role="3cqZAp">
         <node concept="mw_s8" id="7khFtBH_DJ_" role="1ZfhKB">
           <node concept="2pJPEk" id="7khFtBH_DJx" role="mwGJk">
-            <node concept="2pJPED" id="7khFtBH_DJK" role="2pJPEn">
-              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            <node concept="2pJPED" id="7khFtBHLrir" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPm" resolve="ArbitraryDateRangeType" />
             </node>
           </node>
         </node>
@@ -1690,6 +1690,40 @@
     <node concept="1YaCAy" id="7khFtBHCkaj" role="1YuTPh">
       <property role="TrG5h" value="aco" />
       <ref role="1YaFvo" to="mi3w:7khFtBHCk9p" resolve="AbstractCountOp" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="7khFtBHJqPL">
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="supertypeOf_ArbitaryDateRangeType" />
+    <node concept="3clFbS" id="7khFtBHJqPM" role="2sgrp5">
+      <node concept="3clFbF" id="7khFtBHJqRE" role="3cqZAp">
+        <node concept="2pJPEk" id="7khFtBHJqRC" role="3clFbG">
+          <node concept="2pJPED" id="7khFtBHJqTJ" role="2pJPEn">
+            <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHJqPO" role="1YuTPh">
+      <property role="TrG5h" value="arbitraryDateRangeType" />
+      <ref role="1YaFvo" to="mi3w:7khFtBHJqPm" resolve="ArbitraryDateRangeType" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="7khFtBHJqWN">
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="supertypeOf_DiscreteDateRangeType" />
+    <node concept="3clFbS" id="7khFtBHJqWO" role="2sgrp5">
+      <node concept="3clFbF" id="7khFtBHJqXW" role="3cqZAp">
+        <node concept="2pJPEk" id="7khFtBHJqXU" role="3clFbG">
+          <node concept="2pJPED" id="7khFtBHJr01" role="2pJPEn">
+            <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHJqWQ" role="1YuTPh">
+      <property role="TrG5h" value="discreteDateRangeType" />
+      <ref role="1YaFvo" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
     </node>
   </node>
 </model>

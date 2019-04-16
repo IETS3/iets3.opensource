@@ -201,7 +201,7 @@
   </node>
   <node concept="24kQdi" id="3nGzaxUXsgf">
     <property role="3GE5qa" value="range" />
-    <ref role="1XX52x" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+    <ref role="1XX52x" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
     <node concept="3F0ifn" id="3nGzaxUXsgh" role="2wV5jI">
       <property role="3F0ifm" value="daterange" />
       <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
@@ -531,6 +531,14 @@
     <ref role="1XX52x" to="mi3w:7khFtBHCk9p" resolve="AbstractCountOp" />
     <node concept="PMmxH" id="7khFtBHCk9P" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7khFtBHJr35">
+    <property role="3GE5qa" value="range" />
+    <ref role="1XX52x" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+    <node concept="3F0ifn" id="7khFtBHJr37" role="2wV5jI">
+      <property role="3F0ifm" value="period" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
 </model>

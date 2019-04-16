@@ -173,7 +173,7 @@
       <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
         <child id="3885635233759216660" name="year" index="1f6kyW" />
       </concept>
-      <concept id="3885635233759216627" name="org.iets3.core.expr.datetime.structure.DateRangeType" flags="ng" index="1f6kXr" />
+      <concept id="3885635233759216627" name="org.iets3.core.expr.datetime.structure.DiscreteDateRangeType" flags="ng" index="1f6kXr" />
       <concept id="3885635233759352204" name="org.iets3.core.expr.datetime.structure.EndOp" flags="ng" index="1f6P$$" />
       <concept id="3885635233759352108" name="org.iets3.core.expr.datetime.structure.BeginOp" flags="ng" index="1f6PA4" />
       <concept id="3885635233759311035" name="org.iets3.core.expr.datetime.structure.YearRangeType" flags="ng" index="1f6Vwj" />
@@ -1727,7 +1727,7 @@
     </node>
     <node concept="2zPypq" id="77QyhEfR160" role="_iOnB">
       <property role="TrG5h" value="x" />
-      <property role="0Rz4W" value="1146399731" />
+      <property role="0Rz4W" value="-1657990836" />
       <node concept="_emDc" id="77QyhEfR1Sn" role="2zPyp_">
         <ref role="_emDf" node="77QyhEfQYvg" resolve="monthRange" />
       </node>
@@ -2217,15 +2217,15 @@
     </node>
     <node concept="_fkuM" id="7khFtBHGwps" role="_iOnB">
       <property role="TrG5h" value="OneYear" />
-      <node concept="_fkuZ" id="7khFtBHGwpt" role="_fkp5">
-        <node concept="_fku$" id="7khFtBHGwpu" role="_fkur" />
-        <node concept="1QScDb" id="7khFtBHGwpv" role="_fkuY">
-          <node concept="1f6PA4" id="7khFtBHG_9Y" role="1QScD9" />
-          <node concept="_emDc" id="7khFtBHGxdF" role="30czhm">
+      <node concept="_fkuZ" id="7khFtBHLeHW" role="_fkp5">
+        <node concept="_fku$" id="7khFtBHLeHX" role="_fkur" />
+        <node concept="1QScDb" id="7khFtBHLeHY" role="_fkuY">
+          <node concept="1f6PA4" id="7khFtBHLeHZ" role="1QScD9" />
+          <node concept="_emDc" id="7khFtBHLeI0" role="30czhm">
             <ref role="_emDf" node="7khFtBHGwpJ" resolve="oneYear" />
           </node>
         </node>
-        <node concept="1fc2QT" id="7khFtBHG_cO" role="_fkuS">
+        <node concept="1fc2QT" id="7khFtBHLeI1" role="_fkuS">
           <property role="1fc2QY" value="2019" />
           <property role="1fc2QX" value="04" />
           <property role="1fc2QW" value="16" />
@@ -2306,10 +2306,35 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="7khFtBHLiMZ" role="_iOnB" />
+    <node concept="2zPypq" id="7khFtBHLdJd" role="_iOnB">
+      <property role="TrG5h" value="theYear2019" />
+      <property role="0Rz4W" value="877237040" />
+      <node concept="1f6kyV" id="7khFtBHLeF0" role="2zPyp_">
+        <node concept="30bXRB" id="7khFtBHLeFL" role="1f6kyW">
+          <property role="30bXRw" value="2019" />
+        </node>
+      </node>
+    </node>
+    <node concept="_fkuM" id="7khFtBHLjJ1" role="_iOnB">
+      <property role="TrG5h" value="TheYear" />
+      <node concept="_fkuZ" id="7khFtBHLjJ2" role="_fkp5">
+        <node concept="_fku$" id="7khFtBHLjJ3" role="_fkur" />
+        <node concept="1QScDb" id="7khFtBHLjJ4" role="_fkuY">
+          <node concept="2oGJ$0" id="7khFtBHLmU$" role="1QScD9" />
+          <node concept="_emDc" id="7khFtBHLmKD" role="30czhm">
+            <ref role="_emDf" node="7khFtBHLdJd" resolve="theYear2019" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="7khFtBHLmYE" role="_fkuS">
+          <property role="30bXRw" value="365" />
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="7khFtBHGwpr" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHGRfQ" role="_iOnB">
       <property role="TrG5h" value="full13Months" />
-      <property role="0Rz4W" value="-987710320" />
+      <property role="0Rz4W" value="1685796119" />
       <node concept="1QScDb" id="7khFtBHGRfR" role="2zPyp_">
         <node concept="2oxMaX" id="7khFtBHGRfS" role="1QScD9">
           <node concept="1fc2QT" id="7khFtBHGRfT" role="2oxMaW">
@@ -2419,7 +2444,7 @@
     <node concept="_ixoA" id="7khFtBHGRfa" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHGVcd" role="_iOnB">
       <property role="TrG5h" value="d13MonthsAndThreeDays" />
-      <property role="0Rz4W" value="-987710320" />
+      <property role="0Rz4W" value="-410432961" />
       <node concept="1QScDb" id="7khFtBHGVce" role="2zPyp_">
         <node concept="2oxMaX" id="7khFtBHGVcf" role="1QScD9">
           <node concept="1fc2QT" id="7khFtBHGVcg" role="2oxMaW">
@@ -2440,7 +2465,7 @@
       <node concept="_fkuZ" id="7khFtBHGVbz" role="_fkp5">
         <node concept="_fku$" id="7khFtBHGVb$" role="_fkur" />
         <node concept="1QScDb" id="7khFtBHGVb_" role="_fkuY">
-          <node concept="1f6PA4" id="7khFtBHGVbA" role="1QScD9" />
+          <node concept="1f6PA4" id="7khFtBHLFaR" role="1QScD9" />
           <node concept="_emDc" id="7khFtBHGVE7" role="30czhm">
             <ref role="_emDf" node="7khFtBHGVcd" resolve="d13MonthsAndThreeDays" />
           </node>
@@ -2968,7 +2993,7 @@
           <property role="1WP8_x" value="0" />
           <property role="1WP8_t" value="0" />
           <property role="1WP8_q" value="0" />
-          <ref role="1WP1uJ" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+          <ref role="1WP1uJ" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
         </node>
       </node>
       <node concept="3pwbzX" id="77QyhEfWg63" role="3pwbzW">

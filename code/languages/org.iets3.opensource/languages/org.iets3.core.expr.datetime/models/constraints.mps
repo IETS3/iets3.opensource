@@ -75,7 +75,7 @@
   </registry>
   <node concept="1M2fIO" id="3nGzaxUXUW5">
     <property role="3GE5qa" value="range" />
-    <ref role="1M2myG" to="mi3w:3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1M2myG" to="mi3w:3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
     <node concept="9S07l" id="3nGzaxUXUW6" role="9Vyp8">
       <node concept="3clFbS" id="3nGzaxUXUW7" role="2VODD2">
         <node concept="3clFbF" id="3nGzaxUXV36" role="3cqZAp">
@@ -89,7 +89,7 @@
             <node concept="2qgKlT" id="3nGzaxUXWhx" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
               <node concept="35c_gC" id="3nGzaxUXWvD" role="37wK5m">
-                <ref role="35c_gD" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+                <ref role="35c_gD" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
               </node>
               <node concept="3clFbT" id="3nGzaxUXX1z" role="37wK5m">
                 <property role="3clFbU" value="false" />
@@ -245,6 +245,37 @@
                 <node concept="Xl_RD" id="8iseid1vFu" role="37wK5m">
                   <property role="Xl_RC" value="\\d\\d" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7khFtBHJrRC">
+    <property role="3GE5qa" value="range.count" />
+    <ref role="1M2myG" to="mi3w:7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1M2fIO" id="7khFtBHJt9S">
+    <property role="3GE5qa" value="range" />
+    <ref role="1M2myG" to="mi3w:7khFtBHJt9t" resolve="PeriodRangeOp" />
+    <node concept="9S07l" id="7khFtBHJttC" role="9Vyp8">
+      <node concept="3clFbS" id="7khFtBHJttD" role="2VODD2">
+        <node concept="3clFbF" id="7khFtBHJt$X" role="3cqZAp">
+          <node concept="2OqwBi" id="7khFtBHJt$Y" role="3clFbG">
+            <node concept="1PxgMI" id="7khFtBHJt$Z" role="2Oq$k0">
+              <node concept="chp4Y" id="7khFtBHJt_0" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="7khFtBHJt_1" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="7khFtBHJt_2" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="7khFtBHJt_3" role="37wK5m">
+                <ref role="35c_gD" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+              </node>
+              <node concept="3clFbT" id="7khFtBHJt_4" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
