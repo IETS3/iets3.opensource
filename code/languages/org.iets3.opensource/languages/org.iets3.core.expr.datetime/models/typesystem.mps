@@ -1667,5 +1667,30 @@
       <ref role="1YaFvo" to="mi3w:7khFtBH_CX$" resolve="UntilOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7khFtBHCkag">
+    <property role="TrG5h" value="typeof_AbstractCountOp" />
+    <property role="3GE5qa" value="range.count" />
+    <node concept="3clFbS" id="7khFtBHCkah" role="18ibNy">
+      <node concept="1Z5TYs" id="7khFtBHCkhO" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHCkhR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHCkaq" role="mwGJk">
+            <node concept="1YBJjd" id="7khFtBHCkaE" role="1Z2MuG">
+              <ref role="1YBMHb" node="7khFtBHCkaj" resolve="aco" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHCkmV" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHCkoA" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHCkaj" role="1YuTPh">
+      <property role="TrG5h" value="aco" />
+      <ref role="1YaFvo" to="mi3w:7khFtBHCk9p" resolve="AbstractCountOp" />
+    </node>
+  </node>
 </model>
 

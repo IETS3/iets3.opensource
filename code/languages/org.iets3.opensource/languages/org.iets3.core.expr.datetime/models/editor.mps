@@ -526,5 +526,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7khFtBHCk9N">
+    <property role="3GE5qa" value="range.count" />
+    <ref role="1XX52x" to="mi3w:7khFtBHCk9p" resolve="AbstractCountOp" />
+    <node concept="PMmxH" id="7khFtBHCk9P" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 

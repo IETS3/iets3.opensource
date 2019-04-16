@@ -458,5 +458,46 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7khFtBHCk9p">
+    <property role="EcuMT" value="8435714728547926617" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="AbstractCountOp" />
+    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjp">
+    <property role="EcuMT" value="8435714728548062425" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="DaysCountOp" />
+    <property role="34LRSv" value="days" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjq">
+    <property role="EcuMT" value="8435714728548062426" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="FullMonthsCountOp" />
+    <property role="34LRSv" value="fullMonths" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjr">
+    <property role="EcuMT" value="8435714728548062427" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="StartedMonthsCountOp" />
+    <property role="34LRSv" value="startedMonths" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjs">
+    <property role="EcuMT" value="8435714728548062428" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="StartedYearsCountOp" />
+    <property role="34LRSv" value="startedYears" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjt">
+    <property role="EcuMT" value="8435714728548062429" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="FullYearsCountOp" />
+    <property role="34LRSv" value="fullYears" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
 </model>
 
