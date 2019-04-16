@@ -1574,5 +1574,98 @@
       <ref role="1YaFvo" to="mi3w:7khFtBHlNKe" resolve="MakeDate" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7khFtBHyEln">
+    <property role="TrG5h" value="typeof_RangeRelOp" />
+    <property role="3GE5qa" value="range.rel" />
+    <node concept="3clFbS" id="7khFtBHyElo" role="18ibNy">
+      <node concept="1ZobV4" id="7khFtBH$Fcf" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBH$Fck" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBH$Fcl" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBH$Fcm" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBH$Fcn" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBHyElq" resolve="rangeRelOp" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBH$Fco" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:7khFtBHyEjN" resolve="other" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBH$Fch" role="1ZfhKB">
+          <node concept="2pJPEk" id="7khFtBH$Fci" role="mwGJk">
+            <node concept="2pJPED" id="7khFtBH$Fcj" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="7khFtBHyGrF" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBHyGs6" role="1ZfhKB">
+          <node concept="2YIFZM" id="7khFtBHyGvt" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBHyGrI" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBHyF6W" role="mwGJk">
+            <node concept="1YBJjd" id="7khFtBHyGiV" role="1Z2MuG">
+              <ref role="1YBMHb" node="7khFtBHyElq" resolve="rangeRelOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBHyElq" role="1YuTPh">
+      <property role="TrG5h" value="rangeRelOp" />
+      <ref role="1YaFvo" to="mi3w:7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7khFtBH_CZa">
+    <property role="TrG5h" value="typeof_UntilOp" />
+    <property role="3GE5qa" value="date.op" />
+    <node concept="3clFbS" id="7khFtBH_CZb" role="18ibNy">
+      <node concept="1Z5TYs" id="7khFtBH_D$P" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBH_D_d" role="1ZfhKB">
+          <node concept="2pJPEk" id="7khFtBH_D_9" role="mwGJk">
+            <node concept="2pJPED" id="7khFtBH_D_o" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBH_D$S" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBH_CZh" role="mwGJk">
+            <node concept="2OqwBi" id="7khFtBH_DbC" role="1Z2MuG">
+              <node concept="1YBJjd" id="7khFtBH_D17" role="2Oq$k0">
+                <ref role="1YBMHb" node="7khFtBH_CZd" resolve="untilOp" />
+              </node>
+              <node concept="3TrEf2" id="7khFtBH_Dr8" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:7khFtBH_CX_" resolve="endDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="7khFtBH_DJ8" role="3cqZAp">
+        <node concept="mw_s8" id="7khFtBH_DJ_" role="1ZfhKB">
+          <node concept="2pJPEk" id="7khFtBH_DJx" role="mwGJk">
+            <node concept="2pJPED" id="7khFtBH_DJK" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7khFtBH_DJb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7khFtBH_D_X" role="mwGJk">
+            <node concept="1YBJjd" id="7khFtBH_DBY" role="1Z2MuG">
+              <ref role="1YBMHb" node="7khFtBH_CZd" resolve="untilOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7khFtBH_CZd" role="1YuTPh">
+      <property role="TrG5h" value="untilOp" />
+      <ref role="1YaFvo" to="mi3w:7khFtBH_CX$" resolve="UntilOp" />
+    </node>
+  </node>
 </model>
 

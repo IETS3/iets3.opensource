@@ -409,5 +409,54 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7khFtBHyEjM">
+    <property role="EcuMT" value="8435714728546444530" />
+    <property role="TrG5h" value="AbstractRangeRelOp" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="range.rel" />
+    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <node concept="1TJgyj" id="7khFtBHyEjN" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728546444531" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="other" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$x">
+    <property role="EcuMT" value="8435714728546453793" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="OverlapsRangeRelOp" />
+    <property role="34LRSv" value="overlaps" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$y">
+    <property role="EcuMT" value="8435714728546453794" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="ContainsRangeRelOp" />
+    <property role="34LRSv" value="contains" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$z">
+    <property role="EcuMT" value="8435714728546453795" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="FitsInRangeRelOp" />
+    <property role="34LRSv" value="fitsIn" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBH_CX$">
+    <property role="EcuMT" value="8435714728547225444" />
+    <property role="3GE5qa" value="date.op" />
+    <property role="TrG5h" value="UntilOp" />
+    <property role="34LRSv" value="until" />
+    <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+    <node concept="1TJgyj" id="7khFtBH_CX_" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728547225445" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="endDate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
