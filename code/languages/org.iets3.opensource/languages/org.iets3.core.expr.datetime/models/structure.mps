@@ -95,10 +95,10 @@
   <node concept="1TIwiD" id="3nGzaxUXsfN">
     <property role="EcuMT" value="3885635233759216627" />
     <property role="3GE5qa" value="range" />
-    <property role="TrG5h" value="DateRangeType" />
+    <property role="TrG5h" value="DiscreteDateRangeType" />
     <property role="34LRSv" value="daterange" />
-    <property role="R4oN_" value="a period of time (days)" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <property role="R4oN_" value="a discrete time period (month, year)" />
+    <ref role="1TJDcQ" node="7khFtBHJqPn" resolve="PeriodType" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXsgj">
     <property role="EcuMT" value="3885635233759216659" />
@@ -124,12 +124,12 @@
     <property role="TrG5h" value="YearRangeType" />
     <property role="34LRSv" value="year" />
     <property role="R4oN_" value="a period of a year" />
-    <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DateRangeType" />
+    <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXUVE">
     <property role="EcuMT" value="3885635233759342314" />
     <property role="3GE5qa" value="range" />
-    <property role="TrG5h" value="AbstractDateRangeOp" />
+    <property role="TrG5h" value="DiscreteDateRangeOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="--" />
@@ -144,7 +144,7 @@
     <property role="TrG5h" value="BeginOp" />
     <property role="34LRSv" value="begin" />
     <property role="R4oN_" value="begin date of a period" />
-    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
   </node>
   <node concept="1TIwiD" id="3nGzaxUXXmc">
     <property role="EcuMT" value="3885635233759352204" />
@@ -152,7 +152,7 @@
     <property role="TrG5h" value="EndOp" />
     <property role="34LRSv" value="end" />
     <property role="R4oN_" value="end date of a period" />
-    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
   </node>
   <node concept="1TIwiD" id="1Mp62pP0lGq">
     <property role="EcuMT" value="2060704857949559578" />
@@ -160,7 +160,7 @@
     <property role="TrG5h" value="MonthRangeType" />
     <property role="34LRSv" value="month" />
     <property role="R4oN_" value="a period of a month" />
-    <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DateRangeType" />
+    <ref role="1TJDcQ" node="3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
   </node>
   <node concept="1TIwiD" id="1Mp62pP0lMQ">
     <property role="EcuMT" value="2060704857949559990" />
@@ -247,7 +247,7 @@
     <property role="TrG5h" value="NextOp" />
     <property role="34LRSv" value="next" />
     <property role="R4oN_" value="returns the next (similarly sized) period" />
-    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQE7edC">
     <property role="EcuMT" value="8266215269007680360" />
@@ -255,7 +255,7 @@
     <property role="TrG5h" value="PrevOp" />
     <property role="34LRSv" value="prev" />
     <property role="R4oN_" value="returns the previous (similarly sized) period" />
-    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQEbcNz">
     <property role="EcuMT" value="8266215269008723171" />
@@ -339,7 +339,7 @@
     <property role="TrG5h" value="MonthRangeYearOp" />
     <property role="34LRSv" value="yearRange" />
     <property role="R4oN_" value="returns the year component of a date" />
-    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="AbstractDateRangeOp" />
+    <ref role="1TJDcQ" node="3nGzaxUXUVE" resolve="DiscreteDateRangeOp" />
   </node>
   <node concept="1TIwiD" id="7aRvJQF3FvQ">
     <property role="EcuMT" value="8266215269023528950" />
@@ -380,6 +380,152 @@
     <property role="34LRSv" value="toString" />
     <property role="R4oN_" value="a string representation of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHlNKe">
+    <property role="EcuMT" value="8435714728543075342" />
+    <property role="3GE5qa" value="date" />
+    <property role="TrG5h" value="MakeDate" />
+    <property role="34LRSv" value="make/" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="7khFtBHlNKf" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728543075343" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="year" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7khFtBHlNKh" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728543075345" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="month" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7khFtBHlNKk" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728543075348" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="day" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyEjM">
+    <property role="EcuMT" value="8435714728546444530" />
+    <property role="TrG5h" value="AbstractRangeRelOp" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="range.rel" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+    <node concept="1TJgyj" id="7khFtBHyEjN" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728546444531" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="other" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$x">
+    <property role="EcuMT" value="8435714728546453793" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="OverlapsRangeRelOp" />
+    <property role="34LRSv" value="overlaps" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$y">
+    <property role="EcuMT" value="8435714728546453794" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="ContainsRangeRelOp" />
+    <property role="34LRSv" value="contains" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHyG$z">
+    <property role="EcuMT" value="8435714728546453795" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="FitsInRangeRelOp" />
+    <property role="34LRSv" value="fitsIn" />
+    <ref role="1TJDcQ" node="7khFtBHyEjM" resolve="AbstractRangeRelOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBH_CX$">
+    <property role="EcuMT" value="8435714728547225444" />
+    <property role="3GE5qa" value="date.op" />
+    <property role="TrG5h" value="UntilOp" />
+    <property role="34LRSv" value="until" />
+    <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+    <node concept="1TJgyj" id="7khFtBH_CX_" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728547225445" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="endDate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCk9p">
+    <property role="EcuMT" value="8435714728547926617" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="AbstractCountOp" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjp">
+    <property role="EcuMT" value="8435714728548062425" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="DaysCountOp" />
+    <property role="34LRSv" value="days" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjq">
+    <property role="EcuMT" value="8435714728548062426" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="FullMonthsCountOp" />
+    <property role="34LRSv" value="fullMonths" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjr">
+    <property role="EcuMT" value="8435714728548062427" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="StartedMonthsCountOp" />
+    <property role="34LRSv" value="startedMonths" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjs">
+    <property role="EcuMT" value="8435714728548062428" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="StartedYearsCountOp" />
+    <property role="34LRSv" value="startedYears" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHCPjt">
+    <property role="EcuMT" value="8435714728548062429" />
+    <property role="3GE5qa" value="range.count" />
+    <property role="TrG5h" value="FullYearsCountOp" />
+    <property role="34LRSv" value="fullYears" />
+    <ref role="1TJDcQ" node="7khFtBHCk9p" resolve="AbstractCountOp" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHJqPm">
+    <property role="EcuMT" value="8435714728549789014" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="ArbitraryDateRangeType" />
+    <property role="34LRSv" value="timespan" />
+    <property role="R4oN_" value="an arbitrary period of time" />
+    <ref role="1TJDcQ" node="7khFtBHJqPn" resolve="PeriodType" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHJqPn">
+    <property role="EcuMT" value="8435714728549789015" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="PeriodType" />
+    <property role="34LRSv" value="period" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHJt9t">
+    <property role="EcuMT" value="8435714728549798493" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="PeriodRangeOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7khFtBHJt9u" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
   </node>
 </model>
 

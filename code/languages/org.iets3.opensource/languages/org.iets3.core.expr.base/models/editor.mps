@@ -5348,5 +5348,44 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7khFtBHnQPo">
+    <property role="3GE5qa" value="convenientBoolean" />
+    <ref role="1XX52x" to="hm2y:7khFtBHnQOY" resolve="AlwaysValue" />
+    <node concept="3F0ifn" id="7khFtBHnQPq" role="2wV5jI">
+      <property role="3F0ifm" value="always" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7khFtBHnQPR">
+    <property role="3GE5qa" value="convenientBoolean" />
+    <ref role="1XX52x" to="hm2y:7khFtBHnQPt" resolve="NeverValue" />
+    <node concept="3F0ifn" id="7khFtBHnQPT" role="2wV5jI">
+      <property role="3F0ifm" value="never" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7khFtBHnQQo">
+    <property role="3GE5qa" value="convenientBoolean" />
+    <ref role="1XX52x" to="hm2y:7khFtBHnQPW" resolve="ConvenientValueCond" />
+    <node concept="3EZMnI" id="7khFtBHnQQt" role="2wV5jI">
+      <node concept="2iRfu4" id="7khFtBHnQQu" role="2iSdaV" />
+      <node concept="3F0ifn" id="7khFtBHnQQq" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F1sOY" id="7khFtBHnQQA" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:7khFtBHnQPX" resolve="expr" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7khFtBHrBD7">
+    <property role="3GE5qa" value="convenientBoolean" />
+    <ref role="1XX52x" to="hm2y:7khFtBHnQOW" resolve="ConvenientBoolean" />
+    <node concept="1kIj98" id="7khFtBHrBD9" role="2wV5jI">
+      <node concept="3F1sOY" id="7khFtBHrBDf" role="1kIj9b">
+        <ref role="1NtTu8" to="hm2y:7khFtBHrBCG" resolve="value" />
+        <node concept="VPRnO" id="7khFtBHrBDi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

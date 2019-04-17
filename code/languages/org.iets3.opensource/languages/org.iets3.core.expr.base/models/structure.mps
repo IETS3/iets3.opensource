@@ -2143,5 +2143,53 @@
       <property role="t5JxN" value="Nodes that have a defined type but not necessarily specified explicitly in a child" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7khFtBHnQOW">
+    <property role="EcuMT" value="8435714728543612220" />
+    <property role="TrG5h" value="ConvenientBoolean" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7khFtBHrBCG" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728544598572" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7khFtBHnQOX" resolve="ConvenientBooleanValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7khFtBHnQOX">
+    <property role="EcuMT" value="8435714728543612221" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <property role="TrG5h" value="ConvenientBooleanValue" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHnQOY">
+    <property role="EcuMT" value="8435714728543612222" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <property role="TrG5h" value="AlwaysValue" />
+    <property role="34LRSv" value="always" />
+    <ref role="1TJDcQ" node="7khFtBHnQOX" resolve="ConvenientBooleanValue" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHnQPt">
+    <property role="EcuMT" value="8435714728543612253" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <property role="TrG5h" value="NeverValue" />
+    <property role="34LRSv" value="never" />
+    <ref role="1TJDcQ" node="7khFtBHnQOX" resolve="ConvenientBooleanValue" />
+  </node>
+  <node concept="1TIwiD" id="7khFtBHnQPW">
+    <property role="EcuMT" value="8435714728543612284" />
+    <property role="3GE5qa" value="convenientBoolean" />
+    <property role="TrG5h" value="ConvenientValueCond" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" node="7khFtBHnQOX" resolve="ConvenientBooleanValue" />
+    <node concept="1TJgyj" id="7khFtBHnQPX" role="1TKVEi">
+      <property role="IQ2ns" value="8435714728543612285" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
