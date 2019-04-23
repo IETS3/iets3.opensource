@@ -294,6 +294,7 @@
       <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
+      <concept id="2728748097294299887" name="de.itemis.mps.editor.celllayout.structure.MarginBottomStyle" flags="lg" index="3Toos0" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
       <concept id="4299801941278883994" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_QueryPropertyData" flags="ng" index="2DRnuf" />
@@ -640,6 +641,9 @@
             <node concept="3hWdWw" id="6VI$CVnL2M9" role="3hTmz4">
               <property role="Vb097" value="lightGray" />
             </node>
+            <node concept="3Toos0" id="Swyvy53yEE" role="3F10Kt">
+              <property role="1lJzqX" value="3" />
+            </node>
           </node>
         </node>
         <node concept="2r3VGE" id="6VI$CV8dGjZ" role="2rf8Fw">
@@ -765,6 +769,9 @@
             </node>
             <node concept="3hWdWw" id="6VI$CVnLosM" role="3hTmz4">
               <property role="Vb097" value="lightGray" />
+            </node>
+            <node concept="3Toos0" id="Swyvy5If9u" role="3F10Kt">
+              <property role="1lJzqX" value="3" />
             </node>
           </node>
         </node>
