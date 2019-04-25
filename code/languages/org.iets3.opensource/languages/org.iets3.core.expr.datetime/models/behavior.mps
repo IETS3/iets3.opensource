@@ -10,6 +10,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -54,6 +55,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -135,6 +139,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -910,6 +917,37 @@
         </node>
       </node>
       <node concept="17QB3L" id="7khFtBHLPGV" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7zAZa_uhaGg">
+    <property role="3GE5qa" value="date" />
+    <ref role="13h7C2" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+    <node concept="13hLZK" id="7zAZa_uhaGh" role="13h7CW">
+      <node concept="3clFbS" id="7zAZa_uhaGi" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7zAZa_uhaMb" role="13h7CS">
+      <property role="TrG5h" value="createDefaultVarExpr" />
+      <ref role="13i0hy" to="pbu6:60Qa1k_nI2O" resolve="createDefaultVarExpr" />
+      <node concept="3Tm1VV" id="7zAZa_uhaMc" role="1B3o_S" />
+      <node concept="3clFbS" id="7zAZa_uhaMf" role="3clF47">
+        <node concept="3clFbF" id="7zAZa_uhdUO" role="3cqZAp">
+          <node concept="2OqwBi" id="7zAZa_uhelr" role="3clFbG">
+            <node concept="35c_gC" id="7zAZa_uhdUN" role="2Oq$k0">
+              <ref role="35c_gD" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
+            </node>
+            <node concept="2qgKlT" id="7zAZa_uheLe" role="2OqNvi">
+              <ref role="37wK5l" node="26CArgU3T0X" resolve="ofLocalDate" />
+              <node concept="10M0yZ" id="7zAZa_uheXR" role="37wK5m">
+                <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7zAZa_uhaMg" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
     </node>
   </node>
 </model>
