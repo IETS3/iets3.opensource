@@ -56,6 +56,9 @@
     <property role="3GE5qa" value="date" />
     <property role="R4oN_" value="a date" />
     <ref role="1TJDcQ" node="3nGzaxURzmv" resolve="AbstractDateType" />
+    <node concept="PrWs8" id="7zAZa_uhaGd" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3nGzaxURa4h">
     <property role="EcuMT" value="3885635233757569297" />
