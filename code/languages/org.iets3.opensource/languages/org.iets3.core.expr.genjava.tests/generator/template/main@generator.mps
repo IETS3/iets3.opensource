@@ -598,6 +598,51 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="1vVFmkXGS1r" role="3acgRq">
+      <ref role="30HIoZ" to="av4b:1ESmOTbCHcU" resolve="AndMatcher" />
+      <node concept="gft3U" id="1vVFmkXGS1s" role="1lVwrX">
+        <node concept="2YIFZM" id="1vVFmkXGWmK" role="gfFT$">
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher,org.hamcrest.Matcher):org.hamcrest.Matcher" resolve="allOf" />
+          <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+          <node concept="2YIFZM" id="1vVFmkXGYF4" role="37wK5m">
+            <ref role="37wK5l" to="4k19:~CoreMatchers.anything():org.hamcrest.Matcher" resolve="anything" />
+            <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+            <node concept="29HgVG" id="1vVFmkXGZ0d" role="lGtFl">
+              <node concept="3NFfHV" id="1vVFmkXGZ0e" role="3NFExx">
+                <node concept="3clFbS" id="1vVFmkXGZ0f" role="2VODD2">
+                  <node concept="3clFbF" id="1vVFmkXGZ0l" role="3cqZAp">
+                    <node concept="2OqwBi" id="1vVFmkXGZ0g" role="3clFbG">
+                      <node concept="3TrEf2" id="1vVFmkXGZ0j" role="2OqNvi">
+                        <ref role="3Tt5mk" to="av4b:1ESmOTbCHdR" resolve="left" />
+                      </node>
+                      <node concept="30H73N" id="1vVFmkXGZ0k" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1vVFmkXGYVD" role="37wK5m">
+            <ref role="37wK5l" to="4k19:~CoreMatchers.anything():org.hamcrest.Matcher" resolve="anything" />
+            <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
+            <node concept="29HgVG" id="1vVFmkXGZaU" role="lGtFl">
+              <node concept="3NFfHV" id="1vVFmkXGZaV" role="3NFExx">
+                <node concept="3clFbS" id="1vVFmkXGZaW" role="2VODD2">
+                  <node concept="3clFbF" id="1vVFmkXGZb2" role="3cqZAp">
+                    <node concept="2OqwBi" id="1vVFmkXGZaX" role="3clFbG">
+                      <node concept="3TrEf2" id="1vVFmkXGZb0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="av4b:1ESmOTbCHdT" resolve="right" />
+                      </node>
+                      <node concept="30H73N" id="1vVFmkXGZb1" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3lhOvk" id="7bZFIimhrCF" role="3lj3bC">
       <ref role="30HIoZ" to="av4b:ub9nkyK62f" resolve="TestSuite" />
       <ref role="3lhOvi" node="21ieoTcCJQ7" resolve="MPSTestCase" />
