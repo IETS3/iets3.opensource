@@ -517,6 +517,9 @@
     <property role="TrG5h" value="PeriodType" />
     <property role="34LRSv" value="period" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="PrWs8" id="7zAZa_vg5yL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:60Qa1k_nI2f" resolve="ITypeSupportsDefaultValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7khFtBHJt9t">
     <property role="EcuMT" value="8435714728549798493" />
