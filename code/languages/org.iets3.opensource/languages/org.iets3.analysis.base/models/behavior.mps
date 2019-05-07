@@ -617,7 +617,7 @@
                 <node concept="13iPFW" id="5E4c7udFBKV" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="5E4c7udFBKW" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                 <node concept="37vLTw" id="5E4c7udFBKX" role="37wK5m">
                   <ref role="3cqZAo" node="5E4c7udFBCV" resolve="checkName" />
                 </node>

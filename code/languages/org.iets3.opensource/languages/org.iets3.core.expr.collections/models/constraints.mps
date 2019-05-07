@@ -337,10 +337,10 @@
             <node concept="2OqwBi" id="6b_jefnKykX" role="33vP2m">
               <node concept="2YIFZM" id="6b_jefnKykY" role="2Oq$k0">
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="6b_jefnKykZ" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
           </node>
@@ -371,7 +371,7 @@
               <ref role="3cqZAo" node="6b_jefnKykV" resolve="mgr" />
             </node>
             <node concept="liA8E" id="6b_jefnKylc" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="6b_jefnKyld" role="37wK5m">
                 <ref role="3cqZAo" node="6b_jefnKyl1" resolve="ct" />
               </node>
@@ -410,10 +410,10 @@
             <node concept="2OqwBi" id="6b_jefnKyj1" role="33vP2m">
               <node concept="2YIFZM" id="6b_jefnKyj2" role="2Oq$k0">
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="6b_jefnKyj3" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
           </node>
@@ -444,7 +444,7 @@
               <ref role="3cqZAo" node="6b_jefnKyiZ" resolve="mgr" />
             </node>
             <node concept="liA8E" id="6b_jefnKyjg" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="6b_jefnKyjh" role="37wK5m">
                 <ref role="3cqZAo" node="6b_jefnKyj5" resolve="ct" />
               </node>
@@ -504,11 +504,11 @@
                 </node>
                 <node concept="2OqwBi" id="6b_jefnKxOg" role="33vP2m">
                   <node concept="2YIFZM" id="6b_jefnKxOh" role="2Oq$k0">
-                    <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                     <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
                   </node>
                   <node concept="liA8E" id="6b_jefnKxOi" role="2OqNvi">
-                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                   </node>
                 </node>
               </node>
@@ -519,7 +519,7 @@
                   <ref role="3cqZAo" node="6b_jefnKxOe" resolve="mgr" />
                 </node>
                 <node concept="liA8E" id="4ptnK4j_0S3" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
                   <node concept="2OqwBi" id="4ptnK4j_0S4" role="37wK5m">
                     <node concept="1PxgMI" id="4ptnK4j_0S5" role="2Oq$k0">
                       <node concept="chp4Y" id="4ptnK4j_0S6" role="3oSUPX">
@@ -575,10 +575,10 @@
             <node concept="2OqwBi" id="6b_jefnKyjt" role="33vP2m">
               <node concept="2YIFZM" id="6b_jefnKyju" role="2Oq$k0">
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="6b_jefnKyjv" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
           </node>
@@ -609,7 +609,7 @@
               <ref role="3cqZAo" node="6b_jefnKyjr" resolve="mgr" />
             </node>
             <node concept="liA8E" id="6b_jefnKyjG" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="6b_jefnKyjH" role="37wK5m">
                 <ref role="3cqZAo" node="6b_jefnKyjx" resolve="ct" />
               </node>
@@ -723,7 +723,7 @@
             <node concept="2OqwBi" id="3tudP___r2$" role="3clFbw">
               <node concept="1Wqviy" id="3tudP___qHm" role="2Oq$k0" />
               <node concept="liA8E" id="3tudP___rtO" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="3tudP___rtU" role="37wK5m">
                   <property role="Xl_RC" value="inf" />
                 </node>
@@ -753,7 +753,7 @@
             <node concept="2OqwBi" id="3tudP___AaE" role="3clFbw">
               <node concept="1Wqviy" id="3tudP___AaF" role="2Oq$k0" />
               <node concept="liA8E" id="3tudP___AaG" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="3tudP___AaH" role="37wK5m">
                   <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   <ref role="3cqZAo" to="oq0c:2NHHcg2FYHt" resolve="POSINF" />
@@ -773,7 +773,7 @@
               <node concept="3clFbF" id="3tudP___AaN" role="3cqZAp">
                 <node concept="2YIFZM" id="3tudP___AaO" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                   <node concept="1Wqviy" id="3tudP___AaP" role="37wK5m" />
                 </node>
               </node>
@@ -826,7 +826,7 @@
             <node concept="2OqwBi" id="3tudP___tgI" role="3clFbw">
               <node concept="1Wqviy" id="3tudP___tgJ" role="2Oq$k0" />
               <node concept="liA8E" id="3tudP___tgK" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="3tudP___tgL" role="37wK5m">
                   <property role="Xl_RC" value="-inf" />
                 </node>
@@ -856,7 +856,7 @@
             <node concept="2OqwBi" id="3tudP___ubZ" role="3clFbw">
               <node concept="1Wqviy" id="3tudP___tNx" role="2Oq$k0" />
               <node concept="liA8E" id="3tudP___uI5" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="10M0yZ" id="3tudP___vqJ" role="37wK5m">
                   <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   <ref role="3cqZAo" to="oq0c:2NHHcg2FVhN" resolve="NEGINF" />
@@ -875,7 +875,7 @@
             <node concept="3clFbS" id="3tudP___zEj" role="SfCbr">
               <node concept="3clFbF" id="3tudP___vZn" role="3cqZAp">
                 <node concept="2YIFZM" id="3tudP___wgN" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <node concept="1Wqviy" id="3tudP___xmM" role="37wK5m" />
                 </node>

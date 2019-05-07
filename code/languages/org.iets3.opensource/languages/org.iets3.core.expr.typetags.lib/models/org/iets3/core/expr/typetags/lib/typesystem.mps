@@ -363,7 +363,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="sflsE7pzY0" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="Xl_RD" id="sflsE7pzY1" role="37wK5m">
                                   <property role="Xl_RC" value="Patient" />
                                 </node>

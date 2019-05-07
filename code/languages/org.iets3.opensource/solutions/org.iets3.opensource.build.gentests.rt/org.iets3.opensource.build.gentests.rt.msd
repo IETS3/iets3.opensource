@@ -4,7 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/takari-cpsuite-1.2.7.jar!" type="java_classes">
+    <modelRoot contentPath="${module}/lib/takari-cpsuite-1.2.7.jar!/" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>

@@ -512,7 +512,7 @@
       <ref role="qq9wM" to="av4b:5Pgo_ASrZfv" resolve="ContainsString" />
       <node concept="3vetai" id="5Pgo_AStUSX" role="3vQZUl">
         <node concept="2YIFZM" id="5Pgo_AStUTO" role="3vdyny">
-          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String):org.hamcrest.Matcher" resolve="containsString" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.containsString(java.lang.String)" resolve="containsString" />
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
           <node concept="10QFUN" id="5Pgo_ASu0gj" role="37wK5m">
             <node concept="17QB3L" id="5Pgo_ASu0ka" role="10QFUM" />
@@ -529,7 +529,7 @@
       <node concept="3vetai" id="62DU45CA$YH" role="3vQZUl">
         <node concept="2YIFZM" id="62DU45CA_iq" role="3vdyny">
           <ref role="1Pybhc" to="4k19:~CoreMatchers" resolve="CoreMatchers" />
-          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...):org.hamcrest.Matcher" resolve="allOf" />
+          <ref role="37wK5l" to="4k19:~CoreMatchers.allOf(org.hamcrest.Matcher...)" resolve="allOf" />
           <node concept="10QFUN" id="62DU45CAAk1" role="37wK5m">
             <node concept="3uibUv" id="62DU45CAAqr" role="10QFUM">
               <ref role="3uigEE" to="4k19:~Matcher" resolve="Matcher" />

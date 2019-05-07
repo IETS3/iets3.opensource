@@ -172,16 +172,16 @@
         <node concept="3clFbF" id="7aH5t2gCbtb" role="3cqZAp">
           <node concept="2OqwBi" id="7aH5t2gCbZ8" role="3clFbG">
             <node concept="2YIFZM" id="7aH5t2gCbRh" role="2Oq$k0">
-              <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
               <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
               <node concept="3VsKOn" id="7aH5t2gCbWc" role="37wK5m">
                 <ref role="3VsUkX" node="L0xQjiTXbn" resolve="TestsUtil" />
               </node>
             </node>
             <node concept="liA8E" id="7aH5t2gCc9U" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object):void" resolve="error" />
+              <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object)" resolve="error" />
               <node concept="2YIFZM" id="7aH5t2gCcho" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="Xl_RD" id="7aH5t2gCcjz" role="37wK5m">
                   <property role="Xl_RC" value="Model %s (from %s) doesn't specify TestInfo and relies on deprecated way to locate an active project, please FIX!" />
@@ -199,7 +199,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7aH5t2gCei6" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.getSource():org.jetbrains.mps.openapi.persistence.DataSource" resolve="getSource" />
+                    <ref role="37wK5l" to="mhbf:~SModel.getSource()" resolve="getSource" />
                   </node>
                 </node>
               </node>

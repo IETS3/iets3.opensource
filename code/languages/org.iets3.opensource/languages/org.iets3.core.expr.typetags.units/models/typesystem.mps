@@ -420,7 +420,7 @@
                     <ref role="3cqZAo" node="5XaocLWJV2Y" resolve="tagMap" />
                   </node>
                   <node concept="liA8E" id="5XaocLWJX6A" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
+                    <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object)" resolve="remove" />
                     <node concept="35c_gC" id="5XaocLWJXrI" role="37wK5m">
                       <ref role="35c_gD" to="b0gq:7eOyx9r3k4t" resolve="UnitSpecification" />
                     </node>
@@ -442,7 +442,7 @@
                       <ref role="3cqZAo" node="5XaocLWJV2Y" resolve="tagMap" />
                     </node>
                     <node concept="liA8E" id="5XaocLWK0W9" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.values():java.util.Collection" resolve="values" />
+                      <ref role="37wK5l" to="33ny:~Map.values()" resolve="values" />
                     </node>
                   </node>
                 </node>
@@ -567,7 +567,7 @@
                 <ref role="3cqZAo" node="5XaocLWKlh$" resolve="tagMap" />
               </node>
               <node concept="liA8E" id="5XaocLWKm_O" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                 <node concept="35c_gC" id="5XaocLWKmQy" role="37wK5m">
                   <ref role="35c_gD" to="b0gq:7eOyx9r3k4t" resolve="UnitSpecification" />
                 </node>
@@ -1424,7 +1424,7 @@
                   <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
                 </node>
                 <node concept="liA8E" id="52UOzzPp0Rp" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="yGiRIEWwlX" role="37wK5m">
                     <property role="Xl_RC" value="Multiple matching conversion specifiers have been found!" />
                   </node>
@@ -1446,7 +1446,7 @@
                       <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
                     </node>
                     <node concept="liA8E" id="52UOzzPp1Wt" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                       <node concept="Xl_RD" id="52UOzzPp1WW" role="37wK5m">
                         <property role="Xl_RC" value="\n" />
                       </node>
@@ -1459,7 +1459,7 @@
                       <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
                     </node>
                     <node concept="liA8E" id="52UOzzPp4cF" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                       <node concept="3cpWs3" id="52UOzzPpYqW" role="37wK5m">
                         <node concept="3cpWs3" id="52UOzzPpY1L" role="3uHU7B">
                           <node concept="2OqwBi" id="52UOzzPp4kC" role="3uHU7B">
@@ -1503,7 +1503,7 @@
                   <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
                 </node>
                 <node concept="liA8E" id="52UOzzPp2YP" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
                 </node>
               </node>
             </node>

@@ -830,7 +830,7 @@
                             <ref role="3cqZAo" node="mQGcCvQ1H2" resolve="msg" />
                           </node>
                           <node concept="liA8E" id="UwUtc3nlEL" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                         <node concept="oxGPV" id="UwUtc3nlew" role="37wK5m" />
@@ -1332,7 +1332,7 @@
                           <ref role="3cqZAo" node="1QYdL38n5cI" resolve="msg" />
                         </node>
                         <node concept="liA8E" id="UwUtc4sPhw" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                         </node>
                       </node>
                     </node>
@@ -1634,7 +1634,7 @@
                     </node>
                     <node concept="3cpWs6" id="5WNmJ7DoUKQ" role="3cqZAp">
                       <node concept="2YIFZM" id="6bG6MAFxrWw" role="3cqZAk">
-                        <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                        <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                         <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
                       </node>
                     </node>
@@ -2526,7 +2526,7 @@
                             <ref role="3cqZAo" node="2PhSkOglC1m" resolve="ctxValue" />
                           </node>
                           <node concept="liA8E" id="7CG1yne0JP" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -2550,7 +2550,7 @@
                             <ref role="3cqZAo" node="64rKhdUBhL0" resolve="minVal" />
                           </node>
                           <node concept="liA8E" id="7CG1yne19R" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -2582,7 +2582,7 @@
                             <ref role="3cqZAo" node="64rKhdUBiuw" resolve="maxVal" />
                           </node>
                           <node concept="liA8E" id="7CG1yne1h3" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -2616,7 +2616,7 @@
                         <ref role="3cqZAo" node="64rKhdUBeTs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="1oYSzEGMe0q" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                         <node concept="37vLTw" id="64rKhdUBk9E" role="37wK5m">
                           <ref role="3cqZAo" node="64rKhdUBf0y" resolve="min" />
                         </node>
@@ -2632,7 +2632,7 @@
                         <ref role="3cqZAo" node="64rKhdUBeTs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="7CG1yndWiU" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                         <node concept="37vLTw" id="7CG1yndWiV" role="37wK5m">
                           <ref role="3cqZAo" node="64rKhdUBf0y" resolve="min" />
                         </node>
@@ -2665,7 +2665,7 @@
                         <ref role="3cqZAo" node="64rKhdUBeTs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="1oYSzEGMeof" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                         <node concept="37vLTw" id="64rKhdUBlaB" role="37wK5m">
                           <ref role="3cqZAo" node="64rKhdUBf6t" resolve="max" />
                         </node>
@@ -2678,7 +2678,7 @@
                         <ref role="3cqZAo" node="64rKhdUBeTs" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="7CG1yndWxd" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                         <node concept="37vLTw" id="7CG1yndWxe" role="37wK5m">
                           <ref role="3cqZAo" node="64rKhdUBf6t" resolve="max" />
                         </node>
@@ -2796,7 +2796,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6AWOaOipv6E" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Boolean.booleanValue():boolean" resolve="booleanValue" />
+                      <ref role="37wK5l" to="wyt6:~Boolean.booleanValue()" resolve="booleanValue" />
                     </node>
                   </node>
                   <node concept="9aQIb" id="6AWOaOipvaZ" role="9aQIa">

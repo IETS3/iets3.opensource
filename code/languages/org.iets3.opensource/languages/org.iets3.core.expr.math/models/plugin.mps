@@ -181,7 +181,7 @@
             </node>
           </node>
           <node concept="liA8E" id="13LyZYiLfUs" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
             <node concept="Xl_RD" id="13LyZYiLfVa" role="37wK5m">
               <property role="Xl_RC" value="math" />
             </node>
@@ -215,7 +215,7 @@
                 <node concept="2yIwOk" id="4v5hZncVr8K" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="4v5hZncVr8L" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
               </node>
             </node>
             <node concept="2OqwBi" id="4v5hZncVr8M" role="3uHU7w">
@@ -230,11 +230,11 @@
                   <node concept="2yIwOk" id="4v5hZncVr8S" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="4v5hZncVr8T" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                 </node>
               </node>
               <node concept="liA8E" id="4v5hZncVr8U" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                 <node concept="Xl_RD" id="4v5hZncVr8V" role="37wK5m">
                   <property role="Xl_RC" value="EmptyExpression" />
                 </node>
@@ -259,11 +259,11 @@
                 <node concept="2yIwOk" id="4v5hZncUvH7" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="4v5hZncURoL" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="liA8E" id="4v5hZncUTp2" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="4v5hZncUTrD" role="37wK5m">
                 <property role="Xl_RC" value="EmptyExpression" />
               </node>
@@ -296,7 +296,7 @@
                 <node concept="2yIwOk" id="1yW0h04Dxcv" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="1yW0h04Dxcw" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
               </node>
             </node>
           </node>
@@ -320,7 +320,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1yW0h04CwD5" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SLanguage.getConcepts():java.lang.Iterable" resolve="getConcepts" />
+                  <ref role="37wK5l" to="c17a:~SLanguage.getConcepts()" resolve="getConcepts" />
                 </node>
               </node>
               <node concept="A3Dl8" id="1yW0h04CwK$" role="10QFUM">
@@ -341,7 +341,7 @@
                           <ref role="3cqZAo" node="1yW0h04CzsI" resolve="it" />
                         </node>
                         <node concept="liA8E" id="1yW0h04DHXV" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                         </node>
                       </node>
                     </node>
@@ -436,7 +436,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1yW0h04D4GS" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+              <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
               <node concept="3VsKOn" id="1yW0h04D4Ow" role="37wK5m">
                 <ref role="3VsUkX" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
               </node>

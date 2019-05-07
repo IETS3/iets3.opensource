@@ -477,7 +477,7 @@
                         <ref role="3cqZAo" node="1mDdTFSsdB" resolve="whoVoted" />
                       </node>
                       <node concept="liA8E" id="1mDdTFSvNt" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object):boolean" resolve="contains" />
+                        <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
                         <node concept="37vLTw" id="1mDdTFSvRG" role="37wK5m">
                           <ref role="3cqZAo" node="1mDdTFSuIL" resolve="it" />
                         </node>
@@ -557,7 +557,7 @@
                 <ref role="3cqZAo" node="1mDdTFSsis" resolve="whoVoted" />
               </node>
               <node concept="liA8E" id="1mDdTFSzjH" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
               </node>
             </node>
           </node>
@@ -826,7 +826,7 @@
                 <ref role="3cqZAo" node="3wXkdMVmHaP" resolve="whoVoted" />
               </node>
               <node concept="liA8E" id="3wXkdMVmMDq" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
               </node>
             </node>
             <node concept="2OqwBi" id="3wXkdMVmHVw" role="3uHU7B">
@@ -834,7 +834,7 @@
                 <ref role="3cqZAo" node="3wXkdMVmHaM" resolve="parties" />
               </node>
               <node concept="liA8E" id="VApoyDGnhe" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
               </node>
             </node>
           </node>
@@ -1641,13 +1641,13 @@
                                 <ref role="3cqZAo" node="31HpwbvZbsK" resolve="now" />
                               </node>
                               <node concept="liA8E" id="31HpwbvZcAE" role="2OqNvi">
-                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                                 <node concept="2OqwBi" id="31HpwbvZmfa" role="37wK5m">
                                   <node concept="37vLTw" id="31HpwbwBU_z" role="2Oq$k0">
                                     <ref role="3cqZAo" node="31HpwbwBU_u" resolve="lastCommandTime" />
                                   </node>
                                   <node concept="liA8E" id="31HpwbvZmMF" role="2OqNvi">
-                                    <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger):java.math.BigInteger" resolve="add" />
+                                    <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger)" resolve="add" />
                                     <node concept="37vLTw" id="31HpwbvZmV7" role="37wK5m">
                                       <ref role="3cqZAo" node="31HpwbvYXCb" resolve="timeout" />
                                     </node>

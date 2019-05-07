@@ -390,7 +390,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="7b6J31DoQw3" role="2OqNvi">
-                                    <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                                     <node concept="2OqwBi" id="7b6J31DoQOl" role="37wK5m">
                                       <node concept="2GrUjf" id="7b6J31DoQC2" role="2Oq$k0">
                                         <ref role="2Gs0qQ" node="7b6J31DoMA8" resolve="element" />

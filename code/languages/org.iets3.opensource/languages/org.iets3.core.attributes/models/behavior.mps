@@ -799,7 +799,7 @@
                               <ref role="3cqZAo" node="5ZBgTg_Iy85" resolve="it" />
                             </node>
                             <node concept="liA8E" id="5ZBgTg_Izo0" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                             </node>
                           </node>
                         </node>
@@ -813,7 +813,7 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="7VZAX31dZ6l" role="3uHU7w">
-                        <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                        <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeChild" />
                         <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
                         <node concept="13iPFW" id="4um6WxnZX4M" role="37wK5m" />
                         <node concept="37vLTw" id="4um6WxnZXZN" role="37wK5m">

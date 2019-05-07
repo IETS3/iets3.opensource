@@ -430,7 +430,7 @@
                     <ref role="3cqZAo" node="5AlTalNZ8XU" resolve="button" />
                   </node>
                   <node concept="liA8E" id="5AlTalNZbzY" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="5AlTalNZbLW" role="37wK5m">
                       <node concept="YeOm9" id="5AlTalNZcUq" role="2ShVmc">
                         <node concept="1Y3b0j" id="5AlTalNZcUt" role="YeSDq">
@@ -473,7 +473,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1$JL75hX7zF" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                                   </node>
                                 </node>
                               </node>

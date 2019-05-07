@@ -147,7 +147,7 @@
               <ref role="359W_F" to="w1hl:1xEzHAktP2R" resolve="tags" />
             </node>
             <node concept="liA8E" id="7g8Em6uqEz7" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="2DA6wF" id="7g8Em6uqEiT" role="37wK5m" />
             </node>
           </node>

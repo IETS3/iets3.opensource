@@ -392,7 +392,7 @@
             </node>
           </node>
           <node concept="liA8E" id="13LyZYiLfUs" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
             <node concept="Xl_RD" id="13LyZYiLfVa" role="37wK5m">
               <property role="Xl_RC" value="test" />
             </node>
@@ -426,7 +426,7 @@
                 <node concept="2yIwOk" id="4v5hZncVr8K" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="4v5hZncVr8L" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
               </node>
             </node>
             <node concept="2OqwBi" id="4v5hZncVr8N" role="3uHU7w">
@@ -688,7 +688,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASbSCQ" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_ASbXnG" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="Xl_RD" id="5Pgo_ASbXpy" role="37wK5m">
                     <property role="Xl_RC" value="was null" />
                   </node>
@@ -717,7 +717,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASbSCQ" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_ASc3sj" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="3cpWs3" id="5Pgo_ASkuaC" role="37wK5m">
                     <node concept="37vLTw" id="5Pgo_ASkubu" role="3uHU7w">
                       <ref role="3cqZAo" node="5Pgo_ASbSCO" resolve="value" />
@@ -791,7 +791,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASbSCQ" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_ASch0R" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="Xl_RD" id="5Pgo_ASchd_" role="37wK5m">
                     <property role="Xl_RC" value="was a record value with no associated record declaration" />
                   </node>
@@ -832,7 +832,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASbSCQ" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_AScpCQ" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="3cpWs3" id="5Pgo_AScq22" role="37wK5m">
                     <node concept="37vLTw" id="5Pgo_AScq4c" role="3uHU7w">
                       <ref role="3cqZAo" node="5Pgo_AScl1V" resolve="type" />
@@ -902,7 +902,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASbSCQ" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_ASaDvw" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="2OqwBi" id="UwUtc3zBZa" role="37wK5m">
                     <node concept="2OqwBi" id="5Pgo_ASaDEZ" role="2Oq$k0">
                       <node concept="37vLTw" id="5Pgo_ASaDxP" role="2Oq$k0">
@@ -913,7 +913,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="UwUtc3zCj7" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                     </node>
                   </node>
                 </node>
@@ -968,7 +968,7 @@
               <ref role="3cqZAo" node="5Pgo_ASahM6" resolve="description" />
             </node>
             <node concept="liA8E" id="5Pgo_ASaiVN" role="2OqNvi">
-              <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+              <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
               <node concept="Xl_RD" id="5Pgo_ASbokK" role="37wK5m">
                 <property role="Xl_RC" value="a valid record" />
               </node>
@@ -1064,7 +1064,7 @@
                   <ref role="3cqZAo" node="5Pgo_ASmSdT" resolve="description" />
                 </node>
                 <node concept="liA8E" id="5Pgo_ASmUZJ" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                  <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                   <node concept="Xl_RD" id="5Pgo_ASmV1m" role="37wK5m">
                     <property role="Xl_RC" value="was null" />
                   </node>
@@ -1094,14 +1094,14 @@
                     <ref role="3cqZAo" node="5Pgo_ASmSdT" resolve="description" />
                   </node>
                   <node concept="liA8E" id="5Pgo_ASmYJi" role="2OqNvi">
-                    <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+                    <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
                     <node concept="Xl_RD" id="5Pgo_ASmYKW" role="37wK5m">
                       <property role="Xl_RC" value="was " />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="5Pgo_ASn03h" role="2OqNvi">
-                  <ref role="37wK5l" to="4k19:~Description.appendValue(java.lang.Object):org.hamcrest.Description" resolve="appendValue" />
+                  <ref role="37wK5l" to="4k19:~Description.appendValue(java.lang.Object)" resolve="appendValue" />
                   <node concept="37vLTw" id="5Pgo_ASn073" role="37wK5m">
                     <ref role="3cqZAo" node="5Pgo_ASmSdR" resolve="object" />
                   </node>
@@ -1156,7 +1156,7 @@
               <ref role="3cqZAo" node="5Pgo_ASmSe3" resolve="description" />
             </node>
             <node concept="liA8E" id="5Pgo_ASn2kW" role="2OqNvi">
-              <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String):org.hamcrest.Description" resolve="appendText" />
+              <ref role="37wK5l" to="4k19:~Description.appendText(java.lang.String)" resolve="appendText" />
               <node concept="Xl_RD" id="5Pgo_ASn2m$" role="37wK5m">
                 <property role="Xl_RC" value="constraint failure" />
               </node>

@@ -252,7 +252,7 @@
                           <ref role="3cqZAo" node="4kV9Ob9YK32" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="4kV9Ob9YJdR" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode):java.math.BigDecimal" resolve="setScale" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode)" resolve="setScale" />
                           <node concept="37vLTw" id="7bZFIimi6nX" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi5d2" resolve="decimals" />
                           </node>
@@ -274,7 +274,7 @@
                           <ref role="3cqZAo" node="4kV9Ob9YKsi" resolve="bde" />
                         </node>
                         <node concept="liA8E" id="4kV9Ob9YJ_Q" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode):java.math.BigDecimal" resolve="setScale" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode)" resolve="setScale" />
                           <node concept="37vLTw" id="7bZFIimi6zl" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi5d2" resolve="decimals" />
                           </node>
@@ -296,7 +296,7 @@
                           <ref role="3cqZAo" node="4kV9Ob9YK32" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="4kV9Ob9YLvV" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="37vLTw" id="4kV9Ob9YL$h" role="37wK5m">
                             <ref role="3cqZAo" node="4kV9Ob9YKsi" resolve="bde" />
                           </node>
@@ -330,7 +330,7 @@
                     <ref role="3cqZAo" node="7bZFIimi31I" resolve="act" />
                   </node>
                   <node concept="liA8E" id="4kV9Ob9XpTN" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                     <node concept="37vLTw" id="4kV9Ob9XpTO" role="37wK5m">
                       <ref role="3cqZAo" node="7bZFIimi31K" resolve="exp" />
                     </node>
@@ -489,7 +489,7 @@
                           <ref role="3cqZAo" node="7bZFIimi9WE" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="7bZFIimi9WW" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="37vLTw" id="7bZFIimi9WX" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi9WL" resolve="bde" />
                           </node>
@@ -565,7 +565,7 @@
                           <ref role="3cqZAo" node="7bZFIimi9X8" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="7bZFIimi9Xq" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                           <node concept="37vLTw" id="7bZFIimi9Xr" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi9Xf" resolve="bde" />
                           </node>
@@ -646,7 +646,7 @@
                           <ref role="3cqZAo" node="7bZFIimi9XA" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="7bZFIimi9XU" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="37vLTw" id="7bZFIimi9XV" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi9XH" resolve="bde" />
                           </node>
@@ -727,7 +727,7 @@
                           <ref role="3cqZAo" node="7bZFIimi9Y6" resolve="bda" />
                         </node>
                         <node concept="liA8E" id="7bZFIimi9Yq" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="37vLTw" id="7bZFIimi9Yr" role="37wK5m">
                             <ref role="3cqZAo" node="7bZFIimi9Yf" resolve="bde" />
                           </node>
@@ -761,7 +761,7 @@
                     <ref role="3cqZAo" node="7bZFIimi9VX" resolve="act" />
                   </node>
                   <node concept="liA8E" id="7bZFIimi9YA" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                     <node concept="37vLTw" id="7bZFIimi9YB" role="37wK5m">
                       <ref role="3cqZAo" node="7bZFIimi9VZ" resolve="exp" />
                     </node>

@@ -1981,7 +1981,7 @@
         <node concept="3clFbF" id="u9itSZPFIG" role="3cqZAp">
           <node concept="2YIFZM" id="u9itSZPFII" role="3clFbG">
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
             <node concept="3cpWs3" id="u9itSZPJeQ" role="37wK5m">
               <node concept="Xl_RD" id="u9itSZPJeT" role="3uHU7w">
                 <property role="Xl_RC" value="f" />
@@ -3064,7 +3064,7 @@
           <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
           <node concept="2YIFZM" id="1bwJEEfIHXU" role="37wK5m">
             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
           </node>
         </node>
       </node>
@@ -3634,7 +3634,7 @@
         <node concept="1pGfFk" id="3M8$Imsv5qE" role="2ShVmc">
           <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
           <node concept="2YIFZM" id="3M8$Imsv5qF" role="37wK5m">
-            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
           </node>
         </node>
@@ -3704,7 +3704,7 @@
                     <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                   </node>
                   <node concept="liA8E" id="3M8$Imsuzf4" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Random.nextBoolean():boolean" resolve="nextBoolean" />
+                    <ref role="37wK5l" to="33ny:~Random.nextBoolean()" resolve="nextBoolean" />
                   </node>
                 </node>
               </node>
@@ -3731,7 +3731,7 @@
                       <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                     </node>
                     <node concept="liA8E" id="3M8$Imsuzfg" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                      <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                       <node concept="37vLTw" id="3M8$Imsuzfh" role="37wK5m">
                         <ref role="3cqZAo" node="4o7_AWguuVI" resolve="OPTION_ONE_IN" />
                       </node>
@@ -3982,7 +3982,7 @@
                             <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                           </node>
                           <node concept="liA8E" id="3M8$Imsuzhx" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                            <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                             <node concept="37vLTw" id="3M8$Imsuzhy" role="37wK5m">
                               <ref role="3cqZAo" node="3M8$ImsuzgH" resolve="d" />
                             </node>
@@ -4895,7 +4895,7 @@
                       <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                     </node>
                     <node concept="liA8E" id="4o7_AWgO_$k" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Random.nextFloat():float" resolve="nextFloat" />
+                      <ref role="37wK5l" to="33ny:~Random.nextFloat()" resolve="nextFloat" />
                     </node>
                   </node>
                 </node>
@@ -4928,7 +4928,7 @@
                       <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                     </node>
                     <node concept="liA8E" id="4o7_AWgOnKn" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Random.nextInt():int" resolve="nextInt" />
+                      <ref role="37wK5l" to="33ny:~Random.nextInt()" resolve="nextInt" />
                     </node>
                   </node>
                 </node>
@@ -5121,7 +5121,7 @@
                 <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
               </node>
               <node concept="liA8E" id="4o7_AWgGy9Q" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                 <node concept="2OqwBi" id="4o7_AWgGy9R" role="37wK5m">
                   <node concept="2OqwBi" id="4o7_AWgGy9S" role="2Oq$k0">
                     <node concept="37vLTw" id="4o7_AWgGy9T" role="2Oq$k0">
@@ -5260,7 +5260,7 @@
                                   <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                                 </node>
                                 <node concept="liA8E" id="4o7_AWgGpuL" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                                  <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                                   <node concept="37vLTw" id="4o7_AWgGpuM" role="37wK5m">
                                     <ref role="3cqZAo" node="4o7_AWgGpum" resolve="delta" />
                                   </node>
@@ -5337,10 +5337,10 @@
                       <node concept="2OqwBi" id="4o7_AWgGpv5" role="33vP2m">
                         <node concept="2YIFZM" id="4o7_AWgGpv6" role="2Oq$k0">
                           <ref role="1Pybhc" to="5zyv:~ThreadLocalRandom" resolve="ThreadLocalRandom" />
-                          <ref role="37wK5l" to="5zyv:~ThreadLocalRandom.current():java.util.concurrent.ThreadLocalRandom" resolve="current" />
+                          <ref role="37wK5l" to="5zyv:~ThreadLocalRandom.current()" resolve="current" />
                         </node>
                         <node concept="liA8E" id="4o7_AWgGpv7" role="2OqNvi">
-                          <ref role="37wK5l" to="5zyv:~ThreadLocalRandom.nextDouble(double,double):double" resolve="nextDouble" />
+                          <ref role="37wK5l" to="5zyv:~ThreadLocalRandom.nextDouble(double,double)" resolve="nextDouble" />
                           <node concept="1LFfDK" id="4o7_AWgGpv8" role="37wK5m">
                             <node concept="3cmrfG" id="4o7_AWgGpv9" role="1LF_Uc">
                               <property role="3cmrfH" value="0" />
@@ -5373,7 +5373,7 @@
                             </node>
                             <node concept="2YIFZM" id="4o7_AWgGpvk" role="3uHU7B">
                               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                               <node concept="Xl_RD" id="4o7_AWgGpvl" role="37wK5m">
                                 <property role="Xl_RC" value="%.2f" />
                               </node>
@@ -5441,7 +5441,7 @@
                 <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
               </node>
               <node concept="liA8E" id="4o7_AWgGgnj" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                 <node concept="3cmrfG" id="4o7_AWgGgnk" role="37wK5m">
                   <property role="3cmrfH" value="40" />
                 </node>
@@ -5473,13 +5473,13 @@
                     <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
                   </node>
                   <node concept="liA8E" id="4o7_AWgGgnx" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                    <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                     <node concept="2OqwBi" id="4o7_AWgGgny" role="37wK5m">
                       <node concept="37vLTw" id="4o7_AWgGgnz" role="2Oq$k0">
                         <ref role="3cqZAo" node="4o7_AWgGgnb" resolve="seed" />
                       </node>
                       <node concept="liA8E" id="4o7_AWgGgn$" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                       </node>
                     </node>
                   </node>
@@ -5492,13 +5492,13 @@
                   <ref role="3cqZAo" node="4o7_AWgGgnm" resolve="bf" />
                 </node>
                 <node concept="liA8E" id="4o7_AWgGgnC" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(char):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(char)" resolve="append" />
                   <node concept="2OqwBi" id="4o7_AWgGgnD" role="37wK5m">
                     <node concept="37vLTw" id="4o7_AWgGgnE" role="2Oq$k0">
                       <ref role="3cqZAo" node="4o7_AWgGgnb" resolve="seed" />
                     </node>
                     <node concept="liA8E" id="4o7_AWgGgnF" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                       <node concept="37vLTw" id="4o7_AWgGgnG" role="37wK5m">
                         <ref role="3cqZAo" node="4o7_AWgGgnt" resolve="pos" />
                       </node>
@@ -5540,7 +5540,7 @@
                     <ref role="3cqZAo" node="4o7_AWgGgnm" resolve="bf" />
                   </node>
                   <node concept="liA8E" id="4o7_AWgGgnV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                   </node>
                 </node>
               </node>
@@ -5566,7 +5566,7 @@
                 <ref role="3cqZAo" node="3M8$Imsv5qA" resolve="rand" />
               </node>
               <node concept="liA8E" id="4o7_AWgRBDt" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                 <node concept="2OqwBi" id="4o7_AWgRBDu" role="37wK5m">
                   <node concept="37vLTw" id="4o7_AWgRBDv" role="2Oq$k0">
                     <ref role="3cqZAo" node="4o7_AWgz_7b" resolve="expressions" />
@@ -7159,7 +7159,7 @@
       <node concept="3clFbS" id="4o7_AWgCmKo" role="3clF47">
         <node concept="3clFbF" id="4o7_AWgCmKp" role="3cqZAp">
           <node concept="2YIFZM" id="4o7_AWgCmKq" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
             <node concept="3cpWs3" id="4o7_AWgCmKr" role="37wK5m">
               <node concept="Xl_RD" id="4o7_AWgCmKs" role="3uHU7w">

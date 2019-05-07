@@ -387,7 +387,7 @@
               </node>
               <node concept="2YIFZM" id="26CArgTZhoP" role="33vP2m">
                 <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
-                <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int):java.time.LocalDate" resolve="of" />
+                <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int)" resolve="of" />
                 <node concept="2OqwBi" id="26CArgTZhFs" role="37wK5m">
                   <node concept="2qgKlT" id="3C_9jV2TjC" role="2OqNvi">
                     <ref role="37wK5l" to="9fzk:3C_9jV2mVw" resolve="yearNumber" />
@@ -431,7 +431,7 @@
                     <ref role="3cqZAo" node="26CArgTZgsO" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="26CArgTZnWI" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="26CArgTZmTm" role="3uHU7B">

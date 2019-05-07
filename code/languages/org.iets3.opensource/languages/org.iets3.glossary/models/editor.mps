@@ -905,11 +905,11 @@
                     </node>
                     <node concept="2OqwBi" id="lp3OKviG75" role="3uHU7B">
                       <node concept="2YIFZM" id="lp3OKviG2p" role="2Oq$k0">
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                         <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                       </node>
                       <node concept="liA8E" id="lp3OKviGh4" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                       </node>
                     </node>
                   </node>
@@ -1052,7 +1052,7 @@
                           <ref role="3cqZAo" node="6zaFu4oSSBq" resolve="t" />
                         </node>
                         <node concept="liA8E" id="6zaFu4oSWDw" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                          <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="6zaFu4oSVRT" role="37vLTJ">
@@ -1067,7 +1067,7 @@
                       <ref role="3cqZAo" node="6zaFu4oSSBq" resolve="t" />
                     </node>
                     <node concept="liA8E" id="6zaFu4oSVBo" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                      <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="6zaFu4oSV8a" role="3uHU7B">
@@ -1082,7 +1082,7 @@
                       <ref role="3cqZAo" node="6zaFu4oSSBq" resolve="t" />
                     </node>
                     <node concept="liA8E" id="6zaFu4oSXXe" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                       <node concept="37vLTw" id="6zaFu4oSYae" role="37wK5m">
                         <ref role="3cqZAo" node="6zaFu4oST7F" resolve="b" />
                       </node>

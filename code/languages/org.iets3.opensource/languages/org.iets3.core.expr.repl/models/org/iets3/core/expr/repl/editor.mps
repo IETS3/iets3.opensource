@@ -534,7 +534,7 @@
             <node concept="3clFbS" id="5U8d23QsP3H" role="2VODD2">
               <node concept="3clFbF" id="4nY0kF8n3UW" role="3cqZAp">
                 <node concept="2YIFZM" id="4nY0kF8n3UY" role="3clFbG">
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                   <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                   <node concept="Xl_RD" id="4nY0kF8n3UZ" role="37wK5m">
                     <property role="Xl_RC" value="#EDEDED" />
@@ -551,7 +551,7 @@
               <node concept="3clFbF" id="4nY0kF8miiU" role="3cqZAp">
                 <node concept="2YIFZM" id="4nY0kF8mhA3" role="3clFbG">
                   <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                  <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                   <node concept="Xl_RD" id="4nY0kF8mhKH" role="37wK5m">
                     <property role="Xl_RC" value="#EDEDED" />
                   </node>
@@ -792,7 +792,7 @@
                 <node concept="3clFbS" id="4nY0kF8ufkO" role="3clFbx">
                   <node concept="3cpWs6" id="4nY0kF8upGu" role="3cqZAp">
                     <node concept="2YIFZM" id="4nY0kF8upGw" role="3cqZAk">
-                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                       <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                       <node concept="Xl_RD" id="4nY0kF8upGx" role="37wK5m">
                         <property role="Xl_RC" value="#EDEDED" />
@@ -822,7 +822,7 @@
                   <node concept="3cpWs6" id="4nY0kF8uqMX" role="3cqZAp">
                     <node concept="2YIFZM" id="4nY0kF8uqMY" role="3cqZAk">
                       <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                       <node concept="Xl_RD" id="4nY0kF8uqMZ" role="37wK5m">
                         <property role="Xl_RC" value="#EDEDED" />
                       </node>
@@ -1363,7 +1363,7 @@
                               <ref role="3cqZAo" node="2AmZaIYlKK4" resolve="ignore" />
                             </node>
                             <node concept="liA8E" id="2AmZaIYlKKa" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                              <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                             </node>
                           </node>
                         </node>
@@ -1483,7 +1483,7 @@
                                 <ref role="3cqZAo" node="69FYpZqtgg7" resolve="ignore" />
                               </node>
                               <node concept="liA8E" id="69FYpZqtggd" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>
@@ -2886,7 +2886,7 @@
                           <ref role="3cqZAo" node="5avmkTFzrOw" resolve="cs" />
                         </node>
                         <node concept="liA8E" id="5avmkTFzVuU" role="2OqNvi">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color):void" resolve="setTextColor" />
+                          <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color)" resolve="setTextColor" />
                           <node concept="10M0yZ" id="5avmkTFzWE7" role="37wK5m">
                             <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
                             <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -3019,7 +3019,7 @@
                           <ref role="3cqZAo" node="5avmkTF$j5O" resolve="cs" />
                         </node>
                         <node concept="liA8E" id="5avmkTF$j60" role="2OqNvi">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color):void" resolve="setTextColor" />
+                          <ref role="37wK5l" to="g51k:~EditorCell_Label.setTextColor(java.awt.Color)" resolve="setTextColor" />
                           <node concept="10M0yZ" id="5avmkTF$j61" role="37wK5m">
                             <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
                             <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -3446,7 +3446,7 @@
                     <node concept="pncrf" id="5xEoEMrzh2m" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="5xEoEMrzh2n" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                     <node concept="Xl_RD" id="5xEoEMrzh2o" role="37wK5m">
                       <property role="Xl_RC" value="___val" />
                     </node>
@@ -4377,7 +4377,7 @@
                           <node concept="pncrf" id="6GwlCCBaoFz" role="2JrQYb" />
                         </node>
                         <node concept="liA8E" id="6GwlCCBaoF$" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                          <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                           <node concept="Xl_RD" id="6GwlCCBaoF_" role="37wK5m">
                             <property role="Xl_RC" value="___val" />
                           </node>
@@ -4408,7 +4408,7 @@
                               <ref role="3cqZAo" node="6GwlCCBaoXh" resolve="s" />
                             </node>
                             <node concept="liA8E" id="6GwlCCBarpB" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                              <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                             </node>
                           </node>
                           <node concept="3cmrfG" id="6GwlCCBaudY" role="3uHU7w">
@@ -4446,7 +4446,7 @@
                               <node concept="pncrf" id="5avmkTFxQi_" role="2JrQYb" />
                             </node>
                             <node concept="liA8E" id="5avmkTFxQiA" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                               <node concept="Xl_RD" id="5avmkTFxQiB" role="37wK5m">
                                 <property role="Xl_RC" value="___val" />
                               </node>
@@ -4553,7 +4553,7 @@
                             <node concept="pncrf" id="6GwlCCBaEZU" role="2JrQYb" />
                           </node>
                           <node concept="liA8E" id="6GwlCCBaEZV" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                             <node concept="Xl_RD" id="6GwlCCBaEZW" role="37wK5m">
                               <property role="Xl_RC" value="___val" />
                             </node>
@@ -4602,7 +4602,7 @@
                                     <ref role="3cqZAo" node="6GwlCCBaFv3" resolve="s" />
                                   </node>
                                   <node concept="liA8E" id="6GwlCCBaTvQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                                   </node>
                                 </node>
                               </node>
@@ -4613,7 +4613,7 @@
                                       <ref role="3cqZAo" node="6GwlCCBaN1i" resolve="sb" />
                                     </node>
                                     <node concept="liA8E" id="6GwlCCBaWvO" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                                       <node concept="3cpWs3" id="6GwlCCBbdJw" role="37wK5m">
                                         <node concept="Xl_RD" id="6GwlCCBbdJA" role="3uHU7w">
                                           <property role="Xl_RC" value="\n" />
@@ -4623,7 +4623,7 @@
                                             <ref role="3cqZAo" node="6GwlCCBaFv3" resolve="s" />
                                           </node>
                                           <node concept="liA8E" id="6GwlCCBb0p0" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                                            <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                                             <node concept="3cmrfG" id="6GwlCCBb0Ml" role="37wK5m">
                                               <property role="3cmrfH" value="0" />
                                             </node>
@@ -4643,7 +4643,7 @@
                                         <ref role="3cqZAo" node="6GwlCCBaFv3" resolve="s" />
                                       </node>
                                       <node concept="liA8E" id="6GwlCCBb7cL" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                                        <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                                         <node concept="3cmrfG" id="6GwlCCBb7cR" role="37wK5m">
                                           <property role="3cmrfH" value="20" />
                                         </node>
@@ -4663,7 +4663,7 @@
                                         <ref role="3cqZAo" node="6GwlCCBaN1i" resolve="sb" />
                                       </node>
                                       <node concept="liA8E" id="6GwlCCBba$h" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                        <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                                         <node concept="37vLTw" id="6GwlCCBbbCj" role="37wK5m">
                                           <ref role="3cqZAo" node="6GwlCCBaFv3" resolve="s" />
                                         </node>
@@ -4702,7 +4702,7 @@
                                     <ref role="3cqZAo" node="6GwlCCBaN1i" resolve="sb" />
                                   </node>
                                   <node concept="liA8E" id="6GwlCCBaPTc" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
                                   </node>
                                 </node>
                                 <node concept="10M0yZ" id="6GwlCCBaM$5" role="37wK5m">

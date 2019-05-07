@@ -316,11 +316,11 @@
       </node>
       <node concept="2OqwBi" id="7GPsQwM6x5Y" role="3actZa">
         <node concept="2YIFZM" id="7GPsQwM6wFf" role="2Oq$k0">
-          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance():jetbrains.mps.ide.icons.GlobalIconManager" resolve="getInstance" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
           <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
         </node>
         <node concept="liA8E" id="7GPsQwM6xBL" role="2OqNvi">
-          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+          <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="14b0Wr" id="7GPsQwM6xBO" role="37wK5m">
             <ref role="14b0Uw" node="1ognOHjyj2a" resolve="componentsModule" />
           </node>

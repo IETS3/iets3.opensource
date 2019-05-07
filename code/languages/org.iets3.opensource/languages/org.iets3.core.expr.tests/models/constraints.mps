@@ -214,7 +214,7 @@
               <node concept="3x8VRR" id="6b_jefnKzc1" role="2OqNvi" />
             </node>
             <node concept="2YIFZM" id="7Z_pmaBM_fq" role="3uHU7B">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isTestModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="2OqwBi" id="7Z_pmaBM_To" role="37wK5m">
                 <node concept="nLn13" id="7Z_pmaBM_ww" role="2Oq$k0" />
@@ -247,7 +247,7 @@
               <node concept="3x8VRR" id="7Z_pmaBMGnX" role="2OqNvi" />
             </node>
             <node concept="2YIFZM" id="7Z_pmaBMGnY" role="3uHU7B">
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isTestModel" />
               <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
               <node concept="2OqwBi" id="7Z_pmaBMGnZ" role="37wK5m">
                 <node concept="nLn13" id="7Z_pmaBMGo0" role="2Oq$k0" />

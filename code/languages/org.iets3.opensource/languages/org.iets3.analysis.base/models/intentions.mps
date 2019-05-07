@@ -695,7 +695,7 @@
                 <ref role="3cqZAo" node="2zI9HllF8DE" resolve="m" />
               </node>
               <node concept="liA8E" id="2zI9HllFgoO" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                 <node concept="3cmrfG" id="2zI9HllFgYg" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -711,7 +711,7 @@
                     <ref role="3cqZAo" node="2zI9HllF8DE" resolve="m" />
                   </node>
                   <node concept="liA8E" id="2zI9HllFaaL" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="2zI9HllFasM" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -721,7 +721,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2zI9HllFe3f" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                 </node>
               </node>
             </node>

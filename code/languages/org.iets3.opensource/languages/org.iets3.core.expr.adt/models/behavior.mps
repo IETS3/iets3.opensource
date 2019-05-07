@@ -1186,7 +1186,7 @@
                   <ref role="3cqZAo" node="7aipPVpERzC" resolve="pp" />
                 </node>
                 <node concept="liA8E" id="7aipPVpF4vC" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                  <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                   <node concept="3cmrfG" id="7aipPVpF5yh" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -1199,7 +1199,7 @@
                         <ref role="3cqZAo" node="7aipPVpERzC" resolve="pp" />
                       </node>
                       <node concept="liA8E" id="7aipPVpFbEM" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                       </node>
                     </node>
                   </node>
@@ -1212,7 +1212,7 @@
               <ref role="3cqZAo" node="7aipPVpERzC" resolve="pp" />
             </node>
             <node concept="liA8E" id="7aipPVpETAS" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
               <node concept="Xl_RD" id="7aipPVpEUie" role="37wK5m">
                 <property role="Xl_RC" value="." />
               </node>
@@ -1886,7 +1886,7 @@
             </node>
             <node concept="2YIFZM" id="5a_u3OznyBZ" role="33vP2m">
               <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
-              <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+              <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
             </node>
           </node>
         </node>
@@ -1910,7 +1910,7 @@
                     <ref role="3cqZAo" node="5a_u3OznyBW" resolve="res" />
                   </node>
                   <node concept="liA8E" id="7c8WaAX8YTs" role="2OqNvi">
-                    <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection):org.pcollections.PVector" resolve="plusAll" />
+                    <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection)" resolve="plusAll" />
                     <node concept="10QFUN" id="7c8WaAX8YTt" role="37wK5m">
                       <node concept="BsUDl" id="7c8WaAX8YTu" role="10QFUP">
                         <ref role="37wK5l" node="5a_u3Ozn4SP" resolve="perform" />
@@ -1941,7 +1941,7 @@
                 <ref role="3cqZAo" node="5a_u3OznyBW" resolve="res" />
               </node>
               <node concept="liA8E" id="5a_u3OznShR" role="2OqNvi">
-                <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                 <node concept="37vLTw" id="5a_u3OznShS" role="37wK5m">
                   <ref role="3cqZAo" node="5a_u3OznyCl" resolve="root" />
                 </node>
@@ -1989,7 +1989,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="5a_u3Ozn7IY" role="33vP2m">
-              <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+              <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
               <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
             </node>
           </node>
@@ -2004,7 +2004,7 @@
                 <ref role="3cqZAo" node="5a_u3Ozn7IX" resolve="res" />
               </node>
               <node concept="liA8E" id="5a_u3Ozna4J" role="2OqNvi">
-                <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                 <node concept="37vLTw" id="5a_u3OznahE" role="37wK5m">
                   <ref role="3cqZAo" node="5a_u3Ozn5Mo" resolve="root" />
                 </node>
@@ -2032,7 +2032,7 @@
                     <ref role="3cqZAo" node="5a_u3Ozn7IX" resolve="res" />
                   </node>
                   <node concept="liA8E" id="5a_u3Ozntmh" role="2OqNvi">
-                    <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection):org.pcollections.PVector" resolve="plusAll" />
+                    <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection)" resolve="plusAll" />
                     <node concept="10QFUN" id="7c8WaAX8ME4" role="37wK5m">
                       <node concept="BsUDl" id="7c8WaAX8ME2" role="10QFUP">
                         <ref role="37wK5l" node="5a_u3Ozn4SP" resolve="perform" />

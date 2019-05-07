@@ -467,7 +467,7 @@
                   <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
                 </node>
                 <node concept="liA8E" id="3A3G7ASq8SI" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                  <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                   <node concept="2GrUjf" id="3A3G7ASq9gy" role="37wK5m">
                     <ref role="2Gs0qQ" node="3A3G7ASlX$P" resolve="coll" />
                   </node>
@@ -486,7 +486,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="3A3G7ASqbXy" role="33vP2m">
-              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
+              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
               <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
               <node concept="37vLTw" id="3A3G7ASqc7S" role="37wK5m">
                 <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
@@ -991,7 +991,7 @@
               <ref role="3cqZAo" node="VXV$b3qj39" resolve="parameters" />
             </node>
             <node concept="liA8E" id="VXV$b5mcKj" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="VXV$b5mfGL" role="37wK5m">
                 <node concept="2OqwBi" id="VXV$b5mdZZ" role="2Oq$k0">
                   <node concept="37vLTw" id="VXV$b5md6I" role="2Oq$k0">

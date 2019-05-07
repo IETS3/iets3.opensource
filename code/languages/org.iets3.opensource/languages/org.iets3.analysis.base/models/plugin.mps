@@ -450,7 +450,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="2s2qa7R0NkR" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2s2qa7R0NOt" role="37wK5m">
                     <node concept="2OqwBi" id="2s2qa7R0Oe1" role="3uHU7w">
                       <node concept="37vLTw" id="2s2qa7R0NOK" role="2Oq$k0">
@@ -875,7 +875,7 @@
       <node concept="3clFbS" id="1kfQzZFA_0j" role="3clF47">
         <node concept="3clFbF" id="1kfQzZFA_0m" role="3cqZAp">
           <node concept="3nyPlj" id="1kfQzZFA_0l" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
           </node>
         </node>
         <node concept="3clFbJ" id="1kfQzZFAFm5" role="3cqZAp">
@@ -900,7 +900,7 @@
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                           </node>
                           <node concept="liA8E" id="1kfQzZFAAR8" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="1kfQzZFABkd" role="37wK5m">
                               <node concept="2OqwBi" id="1kfQzZFABnW" role="3uHU7w">
                                 <node concept="37vLTw" id="1kfQzZFABkr" role="2Oq$k0">
@@ -1175,7 +1175,7 @@
                     <node concept="2yIwOk" id="3ugRfIRpWap" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="3ugRfIRpXh7" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="3cpWs3" id="3ugRfIRpTs0" role="3uHU7B">

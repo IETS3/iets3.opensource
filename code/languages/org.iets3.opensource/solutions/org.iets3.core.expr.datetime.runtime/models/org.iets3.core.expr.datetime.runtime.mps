@@ -283,7 +283,7 @@
                   <ref role="3cqZAo" node="7aRvJQE3q_s" resolve="myDelta" />
                 </node>
                 <node concept="liA8E" id="7aRvJQE4A1$" role="2OqNvi">
-                  <ref role="37wK5l" to="xlxw:~BigInteger.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="xlxw:~BigInteger.toString()" resolve="toString" />
                 </node>
               </node>
               <node concept="Xl_RD" id="7aRvJQE4AEm" role="3uHU7w">
@@ -372,7 +372,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7aRvJQE4OhL" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="7aRvJQE4OAq" role="37wK5m">
                   <node concept="37vLTw" id="7aRvJQE4Or9" role="2Oq$k0">
                     <ref role="3cqZAo" node="7aRvJQE4K4d" resolve="ddv" />
@@ -391,7 +391,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7aRvJQE4LmR" role="2OqNvi">
-                <ref role="37wK5l" to="xlxw:~BigInteger.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.equals(java.lang.Object)" resolve="equals" />
                 <node concept="2OqwBi" id="7aRvJQE4LvZ" role="37wK5m">
                   <node concept="37vLTw" id="7aRvJQE4Lp6" role="2Oq$k0">
                     <ref role="3cqZAo" node="7aRvJQE4K4d" resolve="ddv" />
@@ -704,7 +704,7 @@
                 <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
               </node>
               <node concept="liA8E" id="5wmCCs0h_Zo" role="2OqNvi">
-                <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="plus" />
+                <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit)" resolve="plus" />
                 <node concept="37vLTw" id="5wmCCs0iNtp" role="37wK5m">
                   <ref role="3cqZAo" node="5wmCCs0iFni" resolve="count" />
                 </node>
@@ -714,7 +714,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7khFtBHHGvr" role="2OqNvi">
-              <ref role="37wK5l" to="28m1:~LocalDate.minus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="minus" />
+              <ref role="37wK5l" to="28m1:~LocalDate.minus(long,java.time.temporal.TemporalUnit)" resolve="minus" />
               <node concept="1adDum" id="7khFtBHHOrZ" role="37wK5m">
                 <property role="1adDun" value="1L" />
               </node>
@@ -775,7 +775,7 @@
                   <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                 </node>
                 <node concept="liA8E" id="4eec02G9SW_" role="2OqNvi">
-                  <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="plus" />
+                  <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit)" resolve="plus" />
                   <node concept="37vLTw" id="5wmCCs0iOo8" role="37wK5m">
                     <ref role="3cqZAo" node="5wmCCs0iFni" resolve="count" />
                   </node>
@@ -812,7 +812,7 @@
                   <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                 </node>
                 <node concept="liA8E" id="4eec02G9YmB" role="2OqNvi">
-                  <ref role="37wK5l" to="28m1:~LocalDate.minus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="minus" />
+                  <ref role="37wK5l" to="28m1:~LocalDate.minus(long,java.time.temporal.TemporalUnit)" resolve="minus" />
                   <node concept="37vLTw" id="5wmCCs0iQd7" role="37wK5m">
                     <ref role="3cqZAo" node="5wmCCs0iFni" resolve="count" />
                   </node>
@@ -848,7 +848,7 @@
                 <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
               </node>
               <node concept="liA8E" id="4eec02GbfdR" role="2OqNvi">
-                <ref role="37wK5l" to="28m1:~LocalDate.getYear():int" resolve="getYear" />
+                <ref role="37wK5l" to="28m1:~LocalDate.getYear()" resolve="getYear" />
               </node>
             </node>
           </node>
@@ -865,7 +865,7 @@
       <node concept="3clFbS" id="6nEpT4GVaed" role="3clF47">
         <node concept="3cpWs6" id="4eec02Gcdgb" role="3cqZAp">
           <node concept="2YIFZM" id="4eec02Gcdgc" role="3cqZAk">
-            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
             <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
             <node concept="3cpWs3" id="2NJ03prY23P" role="37wK5m">
               <node concept="3cmrfG" id="2NJ03prY240" role="3uHU7w">
@@ -877,7 +877,7 @@
                   <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
                 </node>
                 <node concept="liA8E" id="4eec02Gcdgf" role="2OqNvi">
-                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                   <node concept="37vLTw" id="4eec02Gcdgg" role="37wK5m">
                     <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                   </node>
@@ -915,7 +915,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4eec02GaX28" role="2OqNvi">
-              <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
+              <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate)" resolve="isEqual" />
               <node concept="2OqwBi" id="4eec02GaXUl" role="37wK5m">
                 <node concept="37vLTw" id="4eec02GaXwC" role="2Oq$k0">
                   <ref role="3cqZAo" node="9FpJg5nI1$" resolve="other" />
@@ -960,7 +960,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4eec02GaYYw" role="2OqNvi">
-              <ref role="37wK5l" to="28m1:~LocalDate.isAfter(java.time.chrono.ChronoLocalDate):boolean" resolve="isAfter" />
+              <ref role="37wK5l" to="28m1:~LocalDate.isAfter(java.time.chrono.ChronoLocalDate)" resolve="isAfter" />
               <node concept="2OqwBi" id="4eec02GaYYx" role="37wK5m">
                 <node concept="37vLTw" id="4eec02GaYYy" role="2Oq$k0">
                   <ref role="3cqZAo" node="9FpJg5nHYj" resolve="other" />
@@ -1006,7 +1006,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4eec02Gb04a" role="2OqNvi">
-              <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate):boolean" resolve="isBefore" />
+              <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate)" resolve="isBefore" />
               <node concept="2OqwBi" id="4eec02Gb04b" role="37wK5m">
                 <node concept="37vLTw" id="4eec02Gb04c" role="2Oq$k0">
                   <ref role="3cqZAo" node="9FpJg5nIf5" resolve="other" />
@@ -1065,7 +1065,7 @@
                       <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                     </node>
                     <node concept="liA8E" id="4eec02GbV0J" role="2OqNvi">
-                      <ref role="37wK5l" to="28m1:~LocalDate.getYear():int" resolve="getYear" />
+                      <ref role="37wK5l" to="28m1:~LocalDate.getYear()" resolve="getYear" />
                     </node>
                   </node>
                 </node>
@@ -1094,7 +1094,7 @@
                           <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                         </node>
                         <node concept="liA8E" id="4eec02Gc3HH" role="2OqNvi">
-                          <ref role="37wK5l" to="28m1:~LocalDate.getYear():int" resolve="getYear" />
+                          <ref role="37wK5l" to="28m1:~LocalDate.getYear()" resolve="getYear" />
                         </node>
                       </node>
                     </node>
@@ -1107,7 +1107,7 @@
                       <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
                     </node>
                     <node concept="liA8E" id="4eec02Gc84Z" role="2OqNvi">
-                      <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue():int" resolve="getMonthValue" />
+                      <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue()" resolve="getMonthValue" />
                     </node>
                   </node>
                 </node>
@@ -1269,7 +1269,7 @@
       <node concept="3clFbS" id="5SWSVZ_Lizl" role="3clF47">
         <node concept="3clFbF" id="5SWSVZ_Lj9U" role="3cqZAp">
           <node concept="2YIFZM" id="5SWSVZ_Ljmd" role="3clFbG">
-            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...):int" resolve="hash" />
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
             <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
             <node concept="37vLTw" id="4eec02Gaot$" role="37wK5m">
               <ref role="3cqZAo" node="26CArgU3vt4" resolve="begin" />
@@ -1302,7 +1302,7 @@
                 <node concept="1pGfFk" id="4eec02GaEif" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~ArithmeticException.&lt;init&gt;(java.lang.String)" resolve="ArithmeticException" />
                   <node concept="2YIFZM" id="5wmCCs0j6U$" role="37wK5m">
-                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                     <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                     <node concept="Xl_RD" id="5wmCCs0j76C" role="37wK5m">
                       <property role="Xl_RC" value="Cannot compare %d %s to %d %s" />
@@ -1432,7 +1432,7 @@
               <ref role="37wK5l" node="4eec02G9NHs" resolve="DiscreteDateRangeValue" />
               <node concept="2YIFZM" id="5wmCCs0jc21" role="37wK5m">
                 <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
-                <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int):java.time.LocalDate" resolve="of" />
+                <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int)" resolve="of" />
                 <node concept="37vLTw" id="5wmCCs0jgih" role="37wK5m">
                   <ref role="3cqZAo" node="4eec02GbbE_" resolve="y" />
                 </node>
@@ -1469,7 +1469,7 @@
             <ref role="37wK5l" node="4eec02GcnX4" resolve="month" />
             <node concept="2YIFZM" id="4eec02GcslG" role="37wK5m">
               <ref role="1Pybhc" to="28m1:~YearMonth" resolve="YearMonth" />
-              <ref role="37wK5l" to="28m1:~YearMonth.of(int,int):java.time.YearMonth" resolve="of" />
+              <ref role="37wK5l" to="28m1:~YearMonth.of(int,int)" resolve="of" />
               <node concept="37vLTw" id="4eec02GcslH" role="37wK5m">
                 <ref role="3cqZAo" node="4eec02Gbm0D" resolve="y" />
               </node>
@@ -1505,7 +1505,7 @@
                   <ref role="3cqZAo" node="4eec02GcnXp" resolve="yearMonth" />
                 </node>
                 <node concept="liA8E" id="4eec02GcnXh" role="2OqNvi">
-                  <ref role="37wK5l" to="28m1:~YearMonth.atDay(int):java.time.LocalDate" resolve="atDay" />
+                  <ref role="37wK5l" to="28m1:~YearMonth.atDay(int)" resolve="atDay" />
                   <node concept="3cmrfG" id="4eec02GcnXi" role="37wK5m">
                     <property role="3cmrfH" value="1" />
                   </node>
@@ -1788,7 +1788,7 @@
       <node concept="3clFbS" id="7khFtBHHXN3" role="3clF47">
         <node concept="3clFbF" id="7khFtBHHXN4" role="3cqZAp">
           <node concept="2YIFZM" id="7khFtBHHXN5" role="3clFbG">
-            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...):int" resolve="hash" />
+            <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
             <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
             <node concept="37vLTw" id="7khFtBHHXN6" role="37wK5m">
               <ref role="3cqZAo" node="7khFtBHHXIj" resolve="begin" />
@@ -1874,7 +1874,7 @@
                 <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
               <node concept="liA8E" id="7khFtBHDcZg" role="2OqNvi">
-                <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                 <node concept="1rXfSq" id="7khFtBHDdCV" role="37wK5m">
                   <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                 </node>
@@ -1902,7 +1902,7 @@
                   <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
                 </node>
                 <node concept="liA8E" id="7khFtBHDAfx" role="2OqNvi">
-                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                   <node concept="1rXfSq" id="7khFtBHDBx1" role="37wK5m">
                     <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                   </node>
@@ -1926,7 +1926,7 @@
                   </node>
                   <node concept="2YIFZM" id="7khFtBHDAfE" role="33vP2m">
                     <ref role="1Pybhc" to="28m1:~Period" resolve="Period" />
-                    <ref role="37wK5l" to="28m1:~Period.between(java.time.LocalDate,java.time.LocalDate):java.time.Period" resolve="between" />
+                    <ref role="37wK5l" to="28m1:~Period.between(java.time.LocalDate,java.time.LocalDate)" resolve="between" />
                     <node concept="1rXfSq" id="7khFtBHDCK3" role="37wK5m">
                       <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                     </node>
@@ -1945,7 +1945,7 @@
                       <ref role="3cqZAo" node="7khFtBHDAfC" resolve="p" />
                     </node>
                     <node concept="liA8E" id="7khFtBHDAfM" role="2OqNvi">
-                      <ref role="37wK5l" to="28m1:~Period.getYears():int" resolve="getYears" />
+                      <ref role="37wK5l" to="28m1:~Period.getYears()" resolve="getYears" />
                     </node>
                   </node>
                 </node>
@@ -1973,7 +1973,7 @@
                         <ref role="3cqZAo" node="7khFtBHDAfC" resolve="p" />
                       </node>
                       <node concept="liA8E" id="7khFtBHDAfY" role="2OqNvi">
-                        <ref role="37wK5l" to="28m1:~Period.getMonths():int" resolve="getMonths" />
+                        <ref role="37wK5l" to="28m1:~Period.getMonths()" resolve="getMonths" />
                       </node>
                     </node>
                   </node>
@@ -1983,7 +1983,7 @@
                         <ref role="3cqZAo" node="7khFtBHDAfC" resolve="p" />
                       </node>
                       <node concept="liA8E" id="7khFtBHDAg2" role="2OqNvi">
-                        <ref role="37wK5l" to="28m1:~Period.getDays():int" resolve="getDays" />
+                        <ref role="37wK5l" to="28m1:~Period.getDays()" resolve="getDays" />
                       </node>
                     </node>
                     <node concept="3cmrfG" id="7khFtBHDAg3" role="3uHU7w">
@@ -2025,7 +2025,7 @@
                   <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
                 </node>
                 <node concept="liA8E" id="7khFtBHDwJB" role="2OqNvi">
-                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                  <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                   <node concept="1rXfSq" id="7khFtBHDx8u" role="37wK5m">
                     <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
                   </node>
@@ -2048,7 +2048,7 @@
                     <ref role="3uigEE" to="28m1:~Period" resolve="Period" />
                   </node>
                   <node concept="2YIFZM" id="7khFtBHDwJK" role="33vP2m">
-                    <ref role="37wK5l" to="28m1:~Period.between(java.time.LocalDate,java.time.LocalDate):java.time.Period" resolve="between" />
+                    <ref role="37wK5l" to="28m1:~Period.between(java.time.LocalDate,java.time.LocalDate)" resolve="between" />
                     <ref role="1Pybhc" to="28m1:~Period" resolve="Period" />
                     <node concept="1rXfSq" id="7khFtBHDzvm" role="37wK5m">
                       <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
@@ -2069,7 +2069,7 @@
                         <ref role="3cqZAo" node="7khFtBHDwJI" resolve="p" />
                       </node>
                       <node concept="liA8E" id="7khFtBHDwJT" role="2OqNvi">
-                        <ref role="37wK5l" to="28m1:~Period.getMonths():int" resolve="getMonths" />
+                        <ref role="37wK5l" to="28m1:~Period.getMonths()" resolve="getMonths" />
                       </node>
                     </node>
                     <node concept="17qRlL" id="7khFtBHDwJU" role="3uHU7B">
@@ -2078,7 +2078,7 @@
                           <ref role="3cqZAo" node="7khFtBHDwJI" resolve="p" />
                         </node>
                         <node concept="liA8E" id="7khFtBHDwJX" role="2OqNvi">
-                          <ref role="37wK5l" to="28m1:~Period.getYears():int" resolve="getYears" />
+                          <ref role="37wK5l" to="28m1:~Period.getYears()" resolve="getYears" />
                         </node>
                       </node>
                       <node concept="3cmrfG" id="7khFtBHDwJY" role="3uHU7w">
@@ -2110,7 +2110,7 @@
                       <ref role="3cqZAo" node="7khFtBHDwJI" resolve="p" />
                     </node>
                     <node concept="liA8E" id="7khFtBHDwK9" role="2OqNvi">
-                      <ref role="37wK5l" to="28m1:~Period.getDays():int" resolve="getDays" />
+                      <ref role="37wK5l" to="28m1:~Period.getDays()" resolve="getDays" />
                     </node>
                   </node>
                 </node>
