@@ -28,6 +28,9 @@
     <node concept="NozSJ" id="1CDyVrzyHwD" role="2VgMA7">
       <ref role="NozSM" to="92dz:4Egp0F2svxk" resolve="Interpreter_genplan" />
     </node>
+    <node concept="NozSJ" id="4WyEzK6yvgP" role="2VgMA7">
+      <ref role="NozSM" to="g6e4:6FvSwHlc883" resolve="Java_genplan" />
+    </node>
   </node>
 </model>
 
