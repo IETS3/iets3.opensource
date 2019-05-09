@@ -3,5 +3,6 @@
   <extendedDevKits>
     <extendedDevKit>da9c5738-b245-4e38-b52f-e6ee76cadd7f(org.iets3.core.expr.genjava.core.devkit)</extendedDevKit>
   </extendedDevKits>
+  <generation-plan model="r:5a45d31c-961e-446a-984a-d453af8ce385(org.iets3.core.expr.genjava.core.genplan.java_interpreter_genplan)" />
 </dev-kit>
 

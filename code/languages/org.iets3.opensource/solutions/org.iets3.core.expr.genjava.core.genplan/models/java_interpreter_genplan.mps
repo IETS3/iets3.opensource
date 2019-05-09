@@ -16,6 +16,9 @@
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
+      <concept id="3167863533095527371" name="jetbrains.mps.lang.generator.plan.structure.Fork" flags="ng" index="10T23i">
+        <reference id="3167863533095527372" name="plan" index="10T23l" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -25,8 +28,8 @@
   </registry>
   <node concept="2VgMpV" id="4Egp0F2sAfE">
     <property role="TrG5h" value="Java_Interpreter_Genplan" />
-    <node concept="NozSJ" id="1CDyVrzyHwD" role="2VgMA7">
-      <ref role="NozSM" to="92dz:4Egp0F2svxk" resolve="Interpreter_genplan" />
+    <node concept="10T23i" id="6N3Rwqvdn_i" role="2VgMA7">
+      <ref role="10T23l" to="92dz:4Egp0F2svxk" resolve="Interpreter_genplan" />
     </node>
     <node concept="NozSJ" id="4WyEzK6yvgP" role="2VgMA7">
       <ref role="NozSM" to="g6e4:6FvSwHlc883" resolve="Java_genplan" />
