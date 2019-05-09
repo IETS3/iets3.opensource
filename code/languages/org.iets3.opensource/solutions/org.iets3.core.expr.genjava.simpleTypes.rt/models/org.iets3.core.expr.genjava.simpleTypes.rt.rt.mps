@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -3092,8 +3092,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="4lRNjFX4Q9n" role="33vP2m">
-              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
               <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
               <node concept="37vLTw" id="4lRNjFX4Qfl" role="37wK5m">
                 <ref role="3cqZAo" node="4lRNjFX4rMR" resolve="l" />
               </node>

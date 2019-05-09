@@ -13,9 +13,9 @@
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -2284,8 +2284,8 @@
                           <node concept="37vLTI" id="28$LOSBR8vY" role="3clFbG">
                             <node concept="2OqwBi" id="28$LOSBR9nB" role="37vLTx">
                               <node concept="2YIFZM" id="28$LOSBR8z7" role="2Oq$k0">
-                                <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                                 <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                                <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                               </node>
                               <node concept="liA8E" id="28$LOSBRc4N" role="2OqNvi">
                                 <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
@@ -2316,8 +2316,8 @@
                           <node concept="3clFbF" id="28$LOSBTEga" role="3cqZAp">
                             <node concept="37vLTI" id="28$LOSBTEgb" role="3clFbG">
                               <node concept="2YIFZM" id="28$LOSBTEgd" role="37vLTx">
-                                <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                                 <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                                <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                               </node>
                               <node concept="3EllGN" id="28$LOSBTEgg" role="37vLTJ">
                                 <node concept="37vLTw" id="28$LOSBTEgh" role="3ElVtu">

@@ -14,7 +14,6 @@
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="wfax" ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
@@ -26,6 +25,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -3692,8 +3692,8 @@
                             </node>
                           </node>
                           <node concept="2YIFZM" id="3pkOvRx8udd" role="33vP2m">
-                            <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                            <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                           </node>
                         </node>
                       </node>
@@ -3998,8 +3998,8 @@
                       <node concept="3clFbH" id="4osTgJd2pyq" role="3cqZAp" />
                       <node concept="3cpWs6" id="4osTgJd2oSq" role="3cqZAp">
                         <node concept="2YIFZM" id="4osTgJd2uMj" role="3cqZAk">
-                          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                           <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                           <node concept="37vLTw" id="4osTgJd2v4W" role="37wK5m">
                             <ref role="3cqZAo" node="4osTgJd2nZK" resolve="result" />
                           </node>
@@ -4585,8 +4585,8 @@
                               </node>
                             </node>
                             <node concept="2YIFZM" id="5ymSrLXGSs5" role="33vP2m">
-                              <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                               <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                              <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                             </node>
                           </node>
                         </node>

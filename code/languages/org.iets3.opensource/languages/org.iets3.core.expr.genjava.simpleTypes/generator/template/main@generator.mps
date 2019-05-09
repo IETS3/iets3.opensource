@@ -13,9 +13,9 @@
     <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(main@generator)" />
     <import index="wfax" ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
@@ -4398,8 +4398,8 @@
           <ref role="37wK5l" to="wfax:4lRNjFWSwgW" resolve="max" />
           <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
           <node concept="2YIFZM" id="4lRNjFWT6dW" role="37wK5m">
-            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <node concept="2ShNRf" id="4lRNjFWT6j3" role="37wK5m">
               <node concept="Tc6Ow" id="4lRNjFWT6Wx" role="2ShVmc">
                 <node concept="3uibUv" id="4lRNjFWT8Gt" role="HW$YZ">
@@ -4452,8 +4452,8 @@
           <ref role="37wK5l" to="wfax:4lRNjFWSiFT" resolve="min" />
           <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
           <node concept="2YIFZM" id="4lRNjFWTmHp" role="37wK5m">
-            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <node concept="2ShNRf" id="4lRNjFWTmHq" role="37wK5m">
               <node concept="Tc6Ow" id="4lRNjFWTmHr" role="2ShVmc">
                 <node concept="3uibUv" id="4lRNjFWTmHs" role="HW$YZ">
@@ -4506,8 +4506,8 @@
           <ref role="37wK5l" to="wfax:4lRNjFWSwEt" resolve="sum" />
           <ref role="1Pybhc" to="wfax:4lRNjFWGzDc" resolve="CollectionHelper" />
           <node concept="2YIFZM" id="4lRNjFWTnjx" role="37wK5m">
-            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+            <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
             <node concept="2ShNRf" id="4lRNjFWTnjy" role="37wK5m">
               <node concept="Tc6Ow" id="4lRNjFWTnjz" role="2ShVmc">
                 <node concept="3uibUv" id="4lRNjFWTnj$" role="HW$YZ">
@@ -4623,8 +4623,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="7Pk458F4Dbn" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                   <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                  <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                 </node>
               </node>
             </node>
@@ -4766,8 +4766,8 @@
                   <node concept="3clFbS" id="7Pk458FfhGb" role="1bW5cS">
                     <node concept="3cpWs6" id="7Pk458FfhGc" role="3cqZAp">
                       <node concept="2YIFZM" id="7Pk458FfhGd" role="3cqZAk">
-                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                         <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                         <node concept="2OqwBi" id="7Pk458FfhGe" role="37wK5m">
                           <node concept="2OqwBi" id="7Pk458FfhGf" role="2Oq$k0">
                             <node concept="2OqwBi" id="7Pk458FfhGg" role="2Oq$k0">

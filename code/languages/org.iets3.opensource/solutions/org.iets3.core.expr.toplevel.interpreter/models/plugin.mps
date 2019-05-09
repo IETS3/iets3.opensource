@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -24,6 +23,7 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="jpzw" ref="r:a61c1d06-4553-4044-9d05-d40e966a3210(org.iets3.core.expr.lambda.interpreter.plugin)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -331,8 +331,8 @@
                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                 </node>
                 <node concept="2YIFZM" id="7_$HJtBusz5" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                   <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                 </node>
               </node>
             </node>
@@ -783,8 +783,8 @@
                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                 </node>
                 <node concept="2YIFZM" id="7cphKbKxjsi" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                   <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                 </node>
               </node>
             </node>

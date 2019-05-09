@@ -21,13 +21,13 @@
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" />
     <import index="sxpq" ref="r:51edfe99-0380-475c-a3e9-1d4425eac12f(org.iets3.core.expr.lambda.plugin)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="rxpb" ref="r:31fd8edf-66c5-44d7-84a8-5940badb4d17(org.iets3.core.expr.base.interpreter.plugin)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="9mim" ref="r:5bf19129-2710-45a6-906e-9ee2d0977853(org.iets3.core.expr.simpleTypes.plugin)" />
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
   <registry>
@@ -1619,8 +1619,8 @@
                 <node concept="3cpWs6" id="3nGzaxUC18Y" role="3cqZAp">
                   <node concept="2OqwBi" id="3nGzaxUC7sA" role="3cqZAk">
                     <node concept="2YIFZM" id="3nGzaxUC6CM" role="2Oq$k0">
-                      <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                       <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                      <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                     </node>
                     <node concept="liA8E" id="3nGzaxUC8N5" role="2OqNvi">
                       <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection)" resolve="plusAll" />
@@ -1750,8 +1750,8 @@
                 <node concept="3cpWs6" id="3nGzaxUW0uc" role="3cqZAp">
                   <node concept="2OqwBi" id="3nGzaxUW0ud" role="3cqZAk">
                     <node concept="2YIFZM" id="3nGzaxUW0ue" role="2Oq$k0">
-                      <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                       <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                      <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                     </node>
                     <node concept="liA8E" id="3nGzaxUW0uf" role="2OqNvi">
                       <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection)" resolve="plusAll" />
@@ -2468,8 +2468,8 @@
             <node concept="3cpWs6" id="50smQ1VdXYl" role="3cqZAp">
               <node concept="2OqwBi" id="50smQ1VdXYn" role="3cqZAk">
                 <node concept="2YIFZM" id="50smQ1VdXYo" role="2Oq$k0">
-                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                   <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                 </node>
                 <node concept="liA8E" id="50smQ1VdXYp" role="2OqNvi">
                   <ref role="37wK5l" to="j10v:~PVector.plusAll(java.util.Collection)" resolve="plusAll" />
