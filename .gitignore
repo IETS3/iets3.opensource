@@ -61,6 +61,7 @@ code/languages/org.iets3.opensource/.mps/libraries.xml
 # DV
 # ----------------
 ddgconfig.gradle
+/ddg-error-log/*
 
 # -----------------------------------------------------------
 # Auto-generated icons
