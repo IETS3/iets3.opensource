@@ -37,13 +37,13 @@ def java_args_config = {
   }
 
   //class path for ddg
-  classpath file('ddg-pipe.jar')
-  classpath file('./gc-client.jar')
-  classpath file('./ddg.jar')
-  classpath fileTree('./dm.client.lib/')
+  classpath file('./dv-ddg-client/ddg-pipe.jar')
+  classpath file('./dv-ddg-client/gc-client.jar')
+  classpath file('./dv-ddg-client/ddg.jar')
+  classpath fileTree('./dv-ddg-client/dm.client.lib/')
 
   //mps-specific class path
-  classpath file('jdi.jar')
+  classpath file('./dv-ddg-client/jdi.jar')
 
   classpath fileTree("${mps_home}/lib") // $mps_home points to the MPS installation
   classpath fileTree("${mps_home}/plugins")
@@ -55,10 +55,10 @@ def java_args_config = {
 task newVersion_defaultGraph(type: JavaExec){
   main = 'ddg.util.external_graphdb_management.NewVersion_GradleOnly'
   //class path for ddg
-  classpath file('ddg-pipe.jar')
-  classpath file('./gc-client.jar')
-  classpath file('./ddg.jar')
-  classpath fileTree('./dm.client.lib/')
+  classpath file('./dv-ddg-client/ddg-pipe.jar')
+  classpath file('./dv-ddg-client/gc-client.jar')
+  classpath file('./dv-ddg-client/ddg.jar')
+  classpath fileTree('./dv-ddg-client/dm.client.lib/')
 
   args "default_graph"
   if(remote){

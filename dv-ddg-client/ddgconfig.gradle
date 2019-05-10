@@ -21,7 +21,7 @@ project.ext.url = 'http://52.166.104.82:80'
 project.ext.remote = false
 
 //project.ext.mps_home = '/Applications/mps-2018-3-6.app/Contents'
-project.ext.mps_home = './../build/mps'
+project.ext.mps_home = './build/mps'
 
 project.ext.projects_home = './../..'
 //not used for iets3
