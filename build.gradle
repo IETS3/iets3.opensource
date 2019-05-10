@@ -4,6 +4,7 @@ import de.itemis.mps.gradle.GitBasedVersioning
 import java.time.LocalDateTime
 
 
+
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     if(JavaVersion.current() != JavaVersion.VERSION_1_8){
@@ -20,6 +21,8 @@ buildscript {
 plugins {
     id "co.riiid.gradle" version "0.4.2"
 }
+
+apply from: 'dv-ddg-client/build.gradle'
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
