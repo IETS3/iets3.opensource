@@ -283,15 +283,26 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks 'ant-clean-and-build', 'ddg'
+defaultTasks 'buildWithDdg'
+
+
+task antCleanAndBuildBeforeDdg {
+    println "task ant-clean-and-build"
+    dependsOn 'ant-clean-and-build'
+}
+
 
 task setupForDdg {
     dependsOn 'ant-clean-and-build'
-    doLast {setup}
+    println "setup-task before ddg"
+    dependsOn setup
 }
 
-task ddg {
-    dependsOn setupForDdg
+run_ddg_iets3_opensource.dependsOn setupForDdg
+
+task buildWithDdg {
+    println 'ddg'
+    dependsOn run_ddg_iets3_opensource
 }
 
 LocalDateTime t = LocalDateTime.now()
