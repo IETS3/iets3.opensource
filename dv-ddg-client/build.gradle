@@ -49,26 +49,6 @@ def java_args_config = {
   classpath fileTree("${mps_home}/plugins")
 }
 
-
-// ############################# new-graph-version ##################
-
-task newVersion_defaultGraph(type: JavaExec){
-  main = 'ddg.util.external_graphdb_management.NewVersion_GradleOnly'
-  //class path for ddg
-  classpath file('./dv-ddg-client/ddg-pipe.jar')
-  classpath file('./dv-ddg-client/gc-client.jar')
-  classpath file('./dv-ddg-client/ddg.jar')
-  classpath fileTree('./dv-ddg-client/dm.client.lib/')
-
-  args "default_graph"
-  if(remote){
-      args "${url}"
-  }
-  else{
-      args "http://localhost:4434"
-  }
-}
-
 // ##################### iets3 #####################
 
 task run_ddg_iets3_opensource(type: JavaExec) {
