@@ -281,7 +281,16 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks 'ant-clean-and-build'
+defaultTasks 'ant-clean-and-build', 'ddg'
+
+task setupForDdg {
+    dependsOn 'ant-clean-and-build'
+    doLast {setup refresh-dependencies}
+}
+
+task ddg {
+    dependsOn setupForDdg
+}
 
 LocalDateTime t = LocalDateTime.now()
 
