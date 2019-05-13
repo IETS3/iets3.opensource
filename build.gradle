@@ -20,10 +20,7 @@ plugins {
     id "co.riiid.gradle" version "0.4.2"
 }
 
-configurations.all {
-    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
-}
-
+// DependenciesViewer
 apply from: 'dv-ddg-client/build.gradle'
 
 // detect if we are in a CI build
@@ -283,27 +280,27 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks 'buildWithDdg'
+defaultTasks 'ant-clean-and-build'
 
-
+//DependenciesViewer
 task antCleanAndBuildBeforeDdg {
     println "task ant-clean-and-build"
     dependsOn 'ant-clean-and-build'
 }
 
-
-task setupForDdg {
-    dependsOn 'ant-clean-and-build'
+task setupBeforeDdg {
+    dependsOn antCleanAndBuildBeforeDdg
     println "setup-task before ddg"
     dependsOn setup
 }
 
-run_ddg_iets3_opensource.dependsOn setupForDdg
+run_ddg_iets3_opensource.dependsOn setupBeforeDdg
 
 task buildWithDdg {
     println 'ddg'
     dependsOn run_ddg_iets3_opensource
 }
+//End DependenciesViewer
 
 LocalDateTime t = LocalDateTime.now()
 
