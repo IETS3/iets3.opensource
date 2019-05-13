@@ -12,5 +12,6 @@
     <exported-solution>a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)</exported-solution>
     <exported-solution>646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)</exported-solution>
   </exported-solutions>
+  <generation-plan model="r:b6940564-70dd-428c-9fbc-f83a23b7043b(org.iets3.core.expr.genjava.advanced.genplan.genplan)" />
 </dev-kit>
 
