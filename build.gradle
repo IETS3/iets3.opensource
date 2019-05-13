@@ -3,8 +3,6 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 import java.time.LocalDateTime
 
-
-
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     if(JavaVersion.current() != JavaVersion.VERSION_1_8){
@@ -20,6 +18,10 @@ buildscript {
 
 plugins {
     id "co.riiid.gradle" version "0.4.2"
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 
 apply from: 'dv-ddg-client/build.gradle'
@@ -285,7 +287,7 @@ defaultTasks 'ant-clean-and-build', 'ddg'
 
 task setupForDdg {
     dependsOn 'ant-clean-and-build'
-    doLast {setup refresh-dependencies}
+    doLast {setup}
 }
 
 task ddg {
