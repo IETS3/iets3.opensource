@@ -54,7 +54,6 @@ if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
     ext.mbeddrVersionSelector = mbeddrVersion
 }
 
-
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
@@ -319,3 +318,7 @@ github {
 }
 
 githubRelease.dependsOn packageOpenSource
+
+//DependenciesViewer
+tasks.getByName("publish").dependsOn buildWithDdg
+//End DependenciesViewer
