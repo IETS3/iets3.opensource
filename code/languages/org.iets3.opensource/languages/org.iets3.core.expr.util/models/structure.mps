@@ -131,7 +131,7 @@
       <ref role="PrY4T" to="hm2y:6NJfo6_rTeO" resolve="IBigExpression" />
     </node>
     <node concept="PrWs8" id="6kR0qIbwKoy" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:71dSyJVoY0O" resolve="IReducableExpression" />
+      <ref role="PrY4T" to="hm2y:71dSyJVoY0O" resolve="IReducibleExpression" />
     </node>
     <node concept="PrWs8" id="1Vx$q3aPcx4" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />

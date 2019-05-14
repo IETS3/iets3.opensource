@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
@@ -780,6 +780,18 @@
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="4eVSC65NNAJ" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5sQGZK2r2MW">
+    <property role="3GE5qa" value="string.interpol" />
+    <ref role="1XX52x" to="5qo5:5sQGZK2r0hZ" resolve="InterpolExprJoiner" />
+    <node concept="3F0ifn" id="5sQGZK2r2MY" role="2wV5jI">
+      <property role="3F0ifm" value="~" />
+      <node concept="3XB9Gl" id="5sQGZK2rg_8" role="3F10Kt">
+        <node concept="1wgc9g" id="5sQGZK2rg_9" role="3XB9FH">
+          <ref role="1wgcnl" to="itrz:4rZeNQ6OYRX" resolve="IETS3String" />
         </node>
       </node>
     </node>
