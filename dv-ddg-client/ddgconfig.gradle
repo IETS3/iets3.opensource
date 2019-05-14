@@ -24,6 +24,7 @@ project.ext.remote = true
 project.ext.mps_home = './build/mps'
 
 //relative to iets3.opensoure/build.gradle
+//seems not be applicable on ci-server
 project.ext.projects_home = './..'
 //not used for iets3
 project.ext.user_home = '-'

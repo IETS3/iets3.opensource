@@ -59,5 +59,6 @@ task run_ddg_iets3_opensource(type: JavaExec) {
     args 'iets3.opensource'
 
     args '---f'
-    args "${projects_home}/iets3.opensource/code/languages/org.iets3.opensource"
+    //args "${projects_home}/iets3.opensource/code/languages/org.iets3.opensource"
+    args "./code/languages/org.iets3.opensource"
 }
