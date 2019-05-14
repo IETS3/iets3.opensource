@@ -1034,6 +1034,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3KgQFIke4um" resolve="IRecordType" />
     </node>
+    <node concept="PrWs8" id="2U$lnbP59s1" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="PlHQZ" id="mQGcCvDdrZ">
     <property role="EcuMT" value="411710798111758079" />
