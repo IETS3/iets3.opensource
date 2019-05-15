@@ -2022,7 +2022,7 @@
                 <ref role="3cqZAo" node="4IV0h48isRM" resolve="actMsgCount" />
               </node>
               <node concept="liA8E" id="4IV0h48f_6D" role="2OqNvi">
-                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                 <node concept="37vLTw" id="4IV0h48f_nL" role="37wK5m">
                   <ref role="3cqZAo" node="4IV0h48fxAR" resolve="allowedCount" />
                 </node>

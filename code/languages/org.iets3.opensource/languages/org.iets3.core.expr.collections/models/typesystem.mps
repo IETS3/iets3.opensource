@@ -457,7 +457,7 @@
                           <node concept="2OqwBi" id="7rdMSLlpzv7" role="37wK5m">
                             <node concept="2QUAEa" id="7rdMSLlpzv8" role="2Oq$k0" />
                             <node concept="liA8E" id="7rdMSLlpzv9" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                             </node>
                           </node>
                         </node>
@@ -1902,7 +1902,7 @@
                           <node concept="2OqwBi" id="2ufoZQJ05rF" role="37wK5m">
                             <node concept="2QUAEa" id="2ufoZQJ05rG" role="2Oq$k0" />
                             <node concept="liA8E" id="2ufoZQJ05rH" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                             </node>
                           </node>
                         </node>
@@ -2606,7 +2606,7 @@
                           <node concept="2OqwBi" id="7yDflTr1rDi" role="37wK5m">
                             <node concept="2QUAEa" id="7yDflTr1rDj" role="2Oq$k0" />
                             <node concept="liA8E" id="7yDflTr1rDk" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                             </node>
                           </node>
                         </node>

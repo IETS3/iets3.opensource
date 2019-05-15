@@ -355,7 +355,7 @@
               <ref role="3cqZAo" node="xG0f0hk3Yt" resolve="m" />
             </node>
             <node concept="liA8E" id="5iokRED7Z6c" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

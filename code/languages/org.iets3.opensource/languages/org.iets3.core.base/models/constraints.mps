@@ -176,7 +176,7 @@
                   <node concept="2OqwBi" id="8q0nkX_l9N" role="3fr31v">
                     <node concept="1Wqviy" id="8q0nkX_l9O" role="2Oq$k0" />
                     <node concept="liA8E" id="8q0nkX_l9P" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="Xl_RD" id="8q0nkX_l9Q" role="37wK5m">
                         <property role="Xl_RC" value=" " />
                       </node>
@@ -201,7 +201,7 @@
                 <node concept="2OqwBi" id="5YygIlbiiLT" role="3cqZAk">
                   <node concept="1Wqviy" id="5YygIlbiiLU" role="2Oq$k0" />
                   <node concept="liA8E" id="5YygIlbiiLV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="5YygIlbiiLW" role="37wK5m">
                       <property role="Xl_RC" value="[äöüÄÖÜa-zA-Z$[_]][äöüÄÖÜa-zA-Z0-9$[_']]*" />
                     </node>
@@ -223,7 +223,7 @@
             <node concept="2OqwBi" id="65XyadYKJgV" role="3clFbG">
               <node concept="1Wqviy" id="65XyadYKJgW" role="2Oq$k0" />
               <node concept="liA8E" id="65XyadYKJgX" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="65XyadYKJgY" role="37wK5m">
                   <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_']]*" />
                 </node>

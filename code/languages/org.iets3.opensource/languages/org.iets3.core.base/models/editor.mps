@@ -434,11 +434,11 @@
                       </node>
                       <node concept="2OqwBi" id="6zaFu4oPWEU" role="3uHU7B">
                         <node concept="2YIFZM" id="6zaFu4oPWEV" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                         </node>
                         <node concept="liA8E" id="6zaFu4oPWEW" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                     </node>
@@ -466,11 +466,11 @@
                       </node>
                       <node concept="2OqwBi" id="6zaFu4oRq50" role="3uHU7B">
                         <node concept="2YIFZM" id="6zaFu4oRq51" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                         </node>
                         <node concept="liA8E" id="6zaFu4oRq52" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                     </node>
@@ -498,11 +498,11 @@
                       </node>
                       <node concept="2OqwBi" id="6zaFu4oRqif" role="3uHU7B">
                         <node concept="2YIFZM" id="6zaFu4oRqig" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                         </node>
                         <node concept="liA8E" id="6zaFu4oRqih" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                     </node>
@@ -530,11 +530,11 @@
                       </node>
                       <node concept="2OqwBi" id="7Nu9WvXzjcp" role="3uHU7B">
                         <node concept="2YIFZM" id="7Nu9WvXzjcq" role="2Oq$k0">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                         </node>
                         <node concept="liA8E" id="7Nu9WvXzjcr" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                     </node>
@@ -588,7 +588,7 @@
       </node>
       <node concept="2OqwBi" id="3Ib5UJg40yq" role="33vP2m">
         <node concept="liA8E" id="3Ib5UJg41em" role="2OqNvi">
-          <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color):java.awt.Color" resolve="getSimpleColor" />
+          <ref role="37wK5l" to="hox0:~StyleRegistry.getSimpleColor(java.awt.Color)" resolve="getSimpleColor" />
           <node concept="10M0yZ" id="4A7H4EzineK" role="37wK5m">
             <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
             <ref role="3cqZAo" to="exr9:~MPSColors.DARK_BLUE" resolve="DARK_BLUE" />
@@ -596,7 +596,7 @@
         </node>
         <node concept="2YIFZM" id="3Ib5UJg40tX" role="2Oq$k0">
           <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
-          <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance():jetbrains.mps.openapi.editor.style.StyleRegistry" resolve="getInstance" />
+          <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
         </node>
       </node>
     </node>

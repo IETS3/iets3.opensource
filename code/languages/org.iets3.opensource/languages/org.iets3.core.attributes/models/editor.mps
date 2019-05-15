@@ -716,7 +716,7 @@
                     <node concept="2yIwOk" id="3fP_noBdH3U" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="3fP_noBdIGT" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5mFzepP4YIi" role="3uHU7B">

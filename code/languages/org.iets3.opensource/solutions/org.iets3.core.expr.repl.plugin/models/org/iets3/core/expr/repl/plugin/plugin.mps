@@ -462,7 +462,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1mFXz_FRxzU" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                       <node concept="Xl_RD" id="1mFXz_FRxzV" role="37wK5m">
                         <property role="Xl_RC" value="___edit" />
                       </node>
@@ -480,11 +480,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1mFXz_FVDkR" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1mFXz_FVDkS" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                      <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                     </node>
                   </node>
                 </node>
@@ -513,7 +513,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1mFXz_FRwUH" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                     <node concept="Xl_RD" id="1mFXz_FRwUI" role="37wK5m">
                       <property role="Xl_RC" value="___edit" />
                     </node>
@@ -530,7 +530,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1mFXz_FRwwF" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                        <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                         <node concept="Xl_RD" id="1mFXz_FRwyq" role="37wK5m">
                           <property role="Xl_RC" value="___edit" />
                         </node>
@@ -550,11 +550,11 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1mFXz_FT49s" role="2OqNvi">
-                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                         </node>
                       </node>
                       <node concept="liA8E" id="1mFXz_FT4M8" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                        <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                       </node>
                     </node>
                   </node>
@@ -1069,7 +1069,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1mFXz_G2eVf" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="1mFXz_G2eVg" role="37wK5m">
                     <property role="Xl_RC" value="___highlight" />
                   </node>
@@ -1088,11 +1088,11 @@
                 <ref role="3cqZAo" node="1mFXz_G2eVs" resolve="ctx" />
               </node>
               <node concept="liA8E" id="1mFXz_G2eVm" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="1mFXz_G2eVn" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
             </node>
           </node>
         </node>
@@ -1141,7 +1141,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1mFXz_G2k2s" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="1mFXz_G2k2t" role="37wK5m">
                     <property role="Xl_RC" value="___highlight" />
                   </node>
@@ -1158,11 +1158,11 @@
                 <ref role="3cqZAo" node="1mFXz_G2k2D" resolve="ctx" />
               </node>
               <node concept="liA8E" id="1mFXz_G2k2z" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="1mFXz_G2k2$" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
             </node>
           </node>
         </node>

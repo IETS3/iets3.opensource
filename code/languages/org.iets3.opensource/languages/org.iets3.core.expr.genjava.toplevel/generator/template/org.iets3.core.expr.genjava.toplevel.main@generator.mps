@@ -14,7 +14,6 @@
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="wfax" ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
@@ -26,6 +25,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -1743,7 +1743,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5ymSrLXVTaN" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                         <node concept="Xl_RD" id="5ymSrLXVToS" role="37wK5m">
                           <property role="Xl_RC" value="hi" />
                           <node concept="17Uvod" id="5ymSrLXVUmF" role="lGtFl">
@@ -2336,7 +2336,7 @@
                 <node concept="2OqwBi" id="lH$Puj3$Hz" role="3uHU7B">
                   <node concept="2kixu8" id="lH$Puj3$H$" role="2Oq$k0" />
                   <node concept="liA8E" id="lH$Puj3$H_" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                    <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
                     <node concept="1ZhdrF" id="lH$Puj3$HA" role="lGtFl">
                       <property role="2qtEX8" value="baseMethodDeclaration" />
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
@@ -2731,7 +2731,7 @@
                       </node>
                       <node concept="tyxLq" id="1s3ECkt422V" role="2OqNvi">
                         <node concept="2YIFZM" id="1s3ECkt47pA" role="tz02z">
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                           <node concept="1LFfDK" id="1s3ECkt42te" role="37wK5m">
                             <node concept="3cmrfG" id="1s3ECkt42tf" role="1LF_Uc">
@@ -2825,7 +2825,7 @@
                       <node concept="tyxLq" id="1s3ECkt48v7" role="2OqNvi">
                         <node concept="2YIFZM" id="1s3ECkt48v8" role="tz02z">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
                           <node concept="1LFfDK" id="1s3ECkt48v9" role="37wK5m">
                             <node concept="2OqwBi" id="1s3ECkt48vb" role="1LFl5Q">
                               <node concept="1eOMI4" id="1s3ECkt48vc" role="2Oq$k0">
@@ -3067,7 +3067,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="VXV$b4c581" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                              <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                               <node concept="3cmrfG" id="VXV$b4c6i2" role="37wK5m">
                                 <property role="3cmrfH" value="0" />
                                 <node concept="17Uvod" id="VXV$b4c7rV" role="lGtFl">
@@ -3421,14 +3421,14 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="3pkOvRx8uc4" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~Collection.stream():java.util.stream.Stream" resolve="stream" />
+                                <ref role="37wK5l" to="33ny:~Collection.stream()" resolve="stream" />
                               </node>
                             </node>
                             <node concept="liA8E" id="3pkOvRx8uc5" role="2OqNvi">
-                              <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector):java.lang.Object" resolve="collect" />
+                              <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector)" resolve="collect" />
                               <node concept="2YIFZM" id="3pkOvRx8uc6" role="37wK5m">
                                 <ref role="1Pybhc" to="1ctc:~Collectors" resolve="Collectors" />
-                                <ref role="37wK5l" to="1ctc:~Collectors.groupingBy(java.util.function.Function):java.util.stream.Collector" resolve="groupingBy" />
+                                <ref role="37wK5l" to="1ctc:~Collectors.groupingBy(java.util.function.Function)" resolve="groupingBy" />
                                 <node concept="2ShNRf" id="3pkOvRx8uc7" role="37wK5m">
                                   <node concept="YeOm9" id="3pkOvRx8uc8" role="2ShVmc">
                                     <node concept="1Y3b0j" id="3pkOvRx8uc9" role="YeSDq">
@@ -3588,7 +3588,7 @@
                                                     </node>
                                                   </node>
                                                   <node concept="liA8E" id="68fuVwz8Hjq" role="2OqNvi">
-                                                    <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object):java.lang.Object" resolve="apply" />
+                                                    <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object)" resolve="apply" />
                                                     <node concept="2ShNRf" id="68fuVwz96LN" role="37wK5m">
                                                       <node concept="1pGfFk" id="68fuVwz9cKG" role="2ShVmc">
                                                         <ref role="37wK5l" to="vsv5:VXV$b5mbm6" resolve="ParameterSetWrapper" />
@@ -3692,8 +3692,8 @@
                             </node>
                           </node>
                           <node concept="2YIFZM" id="3pkOvRx8udd" role="33vP2m">
-                            <ref role="37wK5l" to="j10v:~TreePVector.empty():org.pcollections.TreePVector" resolve="empty" />
                             <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                            <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                           </node>
                         </node>
                       </node>
@@ -3706,7 +3706,7 @@
                             <ref role="3cqZAo" node="3pkOvRx8uaK" resolve="grouped" />
                           </node>
                           <node concept="liA8E" id="3pkOvRx8udi" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                            <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="3pkOvRx8udj" role="2LFqv$">
@@ -3727,7 +3727,7 @@
                                       <ref role="3cqZAo" node="3pkOvRx8uaK" resolve="grouped" />
                                     </node>
                                     <node concept="liA8E" id="3pkOvRx8uds" role="2OqNvi">
-                                      <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                                      <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                                       <node concept="2GrUjf" id="3pkOvRx8udt" role="37wK5m">
                                         <ref role="2Gs0qQ" node="3pkOvRx8udf" resolve="k" />
                                       </node>
@@ -3766,7 +3766,7 @@
                                   <ref role="3cqZAo" node="3pkOvRx8uda" resolve="result" />
                                 </node>
                                 <node concept="liA8E" id="3pkOvRx8udE" role="2OqNvi">
-                                  <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                                  <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                                   <node concept="37vLTw" id="3pkOvRx8udF" role="37wK5m">
                                     <ref role="3cqZAo" node="3pkOvRx8udw" resolve="g" />
                                   </node>
@@ -3951,7 +3951,7 @@
                                 <ref role="3cqZAo" node="4osTgJd2nZK" resolve="result" />
                               </node>
                               <node concept="liA8E" id="4osTgJd2r$Q" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                                 <node concept="1eOMI4" id="4osTgJd2rWu" role="37wK5m">
                                   <node concept="10QFUN" id="4osTgJd2rWr" role="1eOMHV">
                                     <node concept="17QB3L" id="4osTgJd2sjr" role="10QFUM">
@@ -3998,8 +3998,8 @@
                       <node concept="3clFbH" id="4osTgJd2pyq" role="3cqZAp" />
                       <node concept="3cpWs6" id="4osTgJd2oSq" role="3cqZAp">
                         <node concept="2YIFZM" id="4osTgJd2uMj" role="3cqZAk">
-                          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
                           <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                           <node concept="37vLTw" id="4osTgJd2v4W" role="37wK5m">
                             <ref role="3cqZAo" node="4osTgJd2nZK" resolve="result" />
                           </node>
@@ -4585,8 +4585,8 @@
                               </node>
                             </node>
                             <node concept="2YIFZM" id="5ymSrLXGSs5" role="33vP2m">
-                              <ref role="37wK5l" to="j10v:~TreePVector.empty():org.pcollections.TreePVector" resolve="empty" />
                               <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                              <ref role="37wK5l" to="j10v:~TreePVector.empty()" resolve="empty" />
                             </node>
                           </node>
                         </node>
@@ -4636,7 +4636,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5ymSrLXHUgr" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                                   <node concept="Xl_RD" id="5ymSrLXHV43" role="37wK5m">
                                     <property role="Xl_RC" value="hi" />
                                     <node concept="17Uvod" id="5ymSrLXJlT$" role="lGtFl">
@@ -4733,7 +4733,7 @@
                                     <ref role="3cqZAo" node="3EtMOrHdFet" resolve="result" />
                                   </node>
                                   <node concept="liA8E" id="5ymSrLXYAEo" role="2OqNvi">
-                                    <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                                    <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                                     <node concept="37vLTw" id="5ymSrLXYBql" role="37wK5m">
                                       <ref role="3cqZAo" node="5ymSrLXGW3m" resolve="irt" />
                                     </node>
@@ -4962,7 +4962,7 @@
                                           <ref role="3cqZAo" node="1A$_Wy91cL3" resolve="result" />
                                         </node>
                                         <node concept="liA8E" id="1A$_Wy96WHQ" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                                           <node concept="2OqwBi" id="1A$_Wy974_z" role="37wK5m">
                                             <node concept="2OqwBi" id="1A$_Wy972xQ" role="2Oq$k0">
                                               <node concept="2OqwBi" id="1A$_Wy970K0" role="2Oq$k0">
@@ -5316,7 +5316,7 @@
                                           <ref role="3cqZAo" node="1A$_Wy98K3n" resolve="result" />
                                         </node>
                                         <node concept="liA8E" id="1A$_Wy98K3B" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                                           <node concept="2OqwBi" id="1A$_Wy98K3C" role="37wK5m">
                                             <node concept="2OqwBi" id="1A$_Wy98K3D" role="2Oq$k0">
                                               <node concept="2OqwBi" id="1A$_Wy98K3E" role="2Oq$k0">
@@ -7512,7 +7512,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7EIB27g8JFF" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                       <node concept="Xl_RD" id="7EIB27g8JP6" role="37wK5m">
                         <property role="Xl_RC" value="classname" />
                       </node>
@@ -7593,7 +7593,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="3$XzGmIz9Vo" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                       <node concept="Xl_RD" id="3$XzGmIz9Vp" role="37wK5m">
                         <property role="Xl_RC" value="classname" />
                       </node>
@@ -7927,7 +7927,7 @@
                                           <ref role="3cqZAo" node="lH$Puj77KR" resolve="result" />
                                         </node>
                                         <node concept="liA8E" id="lH$Puj77Lg" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                                          <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                                           <node concept="2OqwBi" id="lH$Puj77Lh" role="37wK5m">
                                             <node concept="2OqwBi" id="lH$Puj77Li" role="2Oq$k0">
                                               <node concept="2OqwBi" id="lH$Puj77Lj" role="2Oq$k0">
@@ -8209,7 +8209,7 @@
                             <ref role="3cqZAo" node="lH$Puj43PE" resolve="result" />
                           </node>
                           <node concept="liA8E" id="lH$Puj43PU" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                            <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                             <node concept="2OqwBi" id="lH$Puj43PV" role="37wK5m">
                               <node concept="2OqwBi" id="lH$Puj43PW" role="2Oq$k0">
                                 <node concept="3TrEf2" id="lH$Puj43PX" role="2OqNvi">
@@ -8557,7 +8557,7 @@
                             <ref role="3cqZAo" node="lH$Puj4Yug" resolve="result" />
                           </node>
                           <node concept="liA8E" id="lH$Puj4Yuw" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                            <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                             <node concept="2OqwBi" id="lH$Puj4Yux" role="37wK5m">
                               <node concept="2OqwBi" id="lH$Puj4Yuy" role="2Oq$k0">
                                 <node concept="2OqwBi" id="lH$Puj4Yuz" role="2Oq$k0">
@@ -9755,7 +9755,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6XE8Bc$gE3f" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="6XE8Bc$gE3g" role="37wK5m">
                       <node concept="37vLTw" id="6XE8Bc$gE3h" role="2Oq$k0">
                         <ref role="3cqZAo" node="6XE8Bc$gE2E" resolve="rd" />
@@ -10026,7 +10026,7 @@
                     <ref role="3cqZAo" node="6XE8Bc$gE58" resolve="result" />
                   </node>
                   <node concept="liA8E" id="6XE8Bc$gE5g" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
+                    <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String)" resolve="concat" />
                     <node concept="3cpWs3" id="6XE8Bc$gE5h" role="37wK5m">
                       <node concept="Xl_RD" id="6XE8Bc$gE5i" role="3uHU7w">
                         <property role="Xl_RC" value=";  " />
@@ -10077,7 +10077,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="6XE8Bc$gE5B" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>

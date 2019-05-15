@@ -130,7 +130,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2c2AzQdfi95" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
               <node concept="Xl_RD" id="2c2AzQcGd9w" role="3uHU7B">
@@ -177,7 +177,7 @@
               <node concept="2OqwBi" id="4vZ65iKjFyX" role="3fr31v">
                 <node concept="1Wqviy" id="4vZ65iKjFyY" role="2Oq$k0" />
                 <node concept="liA8E" id="4vZ65iKjFyZ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="4vZ65iKjFz0" role="37wK5m">
                     <property role="Xl_RC" value="-" />
                   </node>
@@ -205,7 +205,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4vZ65iK7x1J" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="4vZ65iK7xf5" role="37wK5m">
                     <property role="Xl_RC" value="\\." />
                   </node>

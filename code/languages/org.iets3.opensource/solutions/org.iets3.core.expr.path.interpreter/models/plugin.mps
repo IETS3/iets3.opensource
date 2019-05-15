@@ -13,9 +13,9 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="sxp1" ref="r:14d19f45-b1ff-401e-875c-62c48d110e0a(org.iets3.core.expr.path.plugin)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
   </imports>
   <registry>
@@ -310,7 +310,7 @@
                         </node>
                         <node concept="2YIFZM" id="2KEm7E5ItRU" role="33vP2m">
                           <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
-                          <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
+                          <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                         </node>
                       </node>
                     </node>
@@ -328,7 +328,7 @@
                             <ref role="3cqZAo" node="2KEm7E5F62_" resolve="ctxList" />
                           </node>
                           <node concept="liA8E" id="2KEm7E5Ivzb" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                            <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                           </node>
                         </node>
                       </node>
@@ -346,7 +346,7 @@
                                 <ref role="3cqZAo" node="2KEm7E5Ivz8" resolve="it" />
                               </node>
                               <node concept="liA8E" id="2KEm7E5IwVm" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                                <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                               </node>
                             </node>
                           </node>
@@ -383,7 +383,7 @@
                                     <ref role="3cqZAo" node="2KEm7E5IyU7" resolve="innerVec" />
                                   </node>
                                   <node concept="liA8E" id="2KEm7E5I$0i" role="2OqNvi">
-                                    <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                                    <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                                   </node>
                                 </node>
                               </node>
@@ -401,7 +401,7 @@
                                         <ref role="3cqZAo" node="2KEm7E5I$0f" resolve="iit" />
                                       </node>
                                       <node concept="liA8E" id="2KEm7E5I_tF" role="2OqNvi">
-                                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                                        <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                                       </node>
                                     </node>
                                   </node>
@@ -444,7 +444,7 @@
                                             <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
                                           </node>
                                           <node concept="liA8E" id="2KEm7E5IAIA" role="2OqNvi">
-                                            <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                                            <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                                             <node concept="37vLTw" id="2KEm7E5IANO" role="37wK5m">
                                               <ref role="3cqZAo" node="2KEm7E5F62X" resolve="v" />
                                             </node>
@@ -469,7 +469,7 @@
                                   <ref role="3cqZAo" node="2KEm7E5I$0f" resolve="iit" />
                                 </node>
                                 <node concept="liA8E" id="2KEm7E5I$Nn" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                                  <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                                 </node>
                               </node>
                             </node>
@@ -524,7 +524,7 @@
                                               <ref role="3cqZAo" node="2KEm7E5F62I" resolve="res" />
                                             </node>
                                             <node concept="liA8E" id="2KEm7E5Iyro" role="2OqNvi">
-                                              <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                                              <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                                               <node concept="37vLTw" id="2KEm7E5IyuC" role="37wK5m">
                                                 <ref role="3cqZAo" node="2KEm7E5F63t" resolve="v" />
                                               </node>
@@ -565,7 +565,7 @@
                           <ref role="3cqZAo" node="2KEm7E5Ivz8" resolve="it" />
                         </node>
                         <node concept="liA8E" id="2KEm7E5IwKa" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                          <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                         </node>
                       </node>
                     </node>

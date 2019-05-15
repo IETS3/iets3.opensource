@@ -920,7 +920,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="22hm_0zJYL6" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                   </node>
                 </node>
               </node>
@@ -1157,7 +1157,7 @@
           <node concept="3clFbS" id="4qVjx3jYYFP" role="2VODD2">
             <node concept="3clFbF" id="4qVjx3jZ2fk" role="3cqZAp">
               <node concept="2YIFZM" id="4qVjx3jZ2tu" role="3clFbG">
-                <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                 <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                 <node concept="Xl_RD" id="4qVjx3jZ2_X" role="37wK5m">
                   <property role="Xl_RC" value="#FF5319" />
@@ -1183,10 +1183,10 @@
                     <node concept="2OqwBi" id="aPhVmWON6c" role="3uHU7B">
                       <node concept="2YIFZM" id="aPhVmWON6d" role="2Oq$k0">
                         <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="aPhVmWON6e" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                       </node>
                     </node>
                   </node>

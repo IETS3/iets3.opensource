@@ -510,7 +510,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7bd8pkkAJlT" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="7bd8pkkAJLt" role="37wK5m">
                           <ref role="3cqZAo" node="7bd8pkkAHSO" resolve="name" />
                         </node>
@@ -584,7 +584,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7bd8pkk$B6I" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="7bd8pkk$BfU" role="37wK5m">
                           <ref role="3cqZAo" node="7bd8pkk$_xU" resolve="name" />
                         </node>
@@ -632,7 +632,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4J6AqiIYd9i" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="4J6AqiIYd9j" role="37wK5m">
                           <ref role="3cqZAo" node="4J6AqiIYd9m" resolve="name" />
                         </node>
@@ -1669,7 +1669,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="5IrXfgd3cKt" role="3uHU7w">
-              <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object)" resolve="equals" />
               <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
               <node concept="2OqwBi" id="5IrXfgd3bpN" role="37wK5m">
                 <node concept="13iPFW" id="5IrXfgd3bpO" role="2Oq$k0" />

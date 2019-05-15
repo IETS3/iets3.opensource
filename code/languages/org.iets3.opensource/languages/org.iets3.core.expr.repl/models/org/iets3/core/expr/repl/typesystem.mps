@@ -894,7 +894,7 @@
                         <node concept="2OqwBi" id="2NHHcg2MxTa" role="37wK5m">
                           <node concept="2QUAEa" id="2NHHcg2MxTb" role="2Oq$k0" />
                           <node concept="liA8E" id="2NHHcg2MxTc" role="2OqNvi">
-                            <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                            <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                           </node>
                         </node>
                       </node>
@@ -1321,7 +1321,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5avmkTFxQiA" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
               <node concept="Xl_RD" id="5avmkTFxQiB" role="37wK5m">
                 <property role="Xl_RC" value="___val" />
               </node>
@@ -1360,7 +1360,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7HzLUeHnDUF" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                 <node concept="10M0yZ" id="7HzLUeHnEcH" role="37wK5m">
                   <ref role="3cqZAo" to="a7uw:7HzLUeHnmW9" resolve="IT" />
                   <ref role="1PxDUh" to="a7uw:7HzLUeHnk3$" resolve="ConstraintHelper" />

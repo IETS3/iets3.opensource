@@ -223,7 +223,7 @@
             <node concept="2OqwBi" id="2HpFPvTcjEj" role="2GsD0m">
               <node concept="1Wqviy" id="2HpFPvTcjjR" role="2Oq$k0" />
               <node concept="liA8E" id="2HpFPvTckub" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.toCharArray():char[]" resolve="toCharArray" />
+                <ref role="37wK5l" to="wyt6:~String.toCharArray()" resolve="toCharArray" />
               </node>
             </node>
             <node concept="3clFbS" id="2HpFPvTcja$" role="2LFqv$">
@@ -231,7 +231,7 @@
                 <node concept="1Wc70l" id="2HpFPvTcnHG" role="3clFbw">
                   <node concept="3fqX7Q" id="2HpFPvTcnVg" role="3uHU7w">
                     <node concept="2YIFZM" id="2HpFPvTcofI" role="3fr31v">
-                      <ref role="37wK5l" to="wyt6:~Character.isAlphabetic(int):boolean" resolve="isAlphabetic" />
+                      <ref role="37wK5l" to="wyt6:~Character.isAlphabetic(int)" resolve="isAlphabetic" />
                       <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                       <node concept="2GrUjf" id="2HpFPvTcopY" role="37wK5m">
                         <ref role="2Gs0qQ" node="2HpFPvTcjaw" resolve="c" />
@@ -240,7 +240,7 @@
                   </node>
                   <node concept="3fqX7Q" id="2HpFPvTckLN" role="3uHU7B">
                     <node concept="2YIFZM" id="2HpFPvTcn3j" role="3fr31v">
-                      <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                      <ref role="37wK5l" to="wyt6:~Character.isDigit(char)" resolve="isDigit" />
                       <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                       <node concept="2GrUjf" id="2HpFPvTcndc" role="37wK5m">
                         <ref role="2Gs0qQ" node="2HpFPvTcjaw" resolve="c" />
@@ -629,7 +629,7 @@
               <node concept="2OqwBi" id="5avmkTFkueK" role="33vP2m">
                 <node concept="1Wqviy" id="5avmkTFkueL" role="2Oq$k0" />
                 <node concept="liA8E" id="5avmkTFkueM" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                  <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                   <node concept="3cpWsd" id="5avmkTFkueN" role="37wK5m">
                     <node concept="3cmrfG" id="5avmkTFkueO" role="3uHU7w">
                       <property role="3cmrfH" value="1" />
@@ -637,7 +637,7 @@
                     <node concept="2OqwBi" id="5avmkTFkueP" role="3uHU7B">
                       <node concept="1Wqviy" id="5avmkTFkueQ" role="2Oq$k0" />
                       <node concept="liA8E" id="5avmkTFkueR" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                       </node>
                     </node>
                   </node>
@@ -648,7 +648,7 @@
           <node concept="3clFbF" id="5avmkTFdmP8" role="3cqZAp">
             <node concept="22lmx$" id="5avmkTFkvbU" role="3clFbG">
               <node concept="2YIFZM" id="5avmkTFkvBJ" role="3uHU7w">
-                <ref role="37wK5l" to="wyt6:~Character.isLetter(char):boolean" resolve="isLetter" />
+                <ref role="37wK5l" to="wyt6:~Character.isLetter(char)" resolve="isLetter" />
                 <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                 <node concept="37vLTw" id="5avmkTFkvPu" role="37wK5m">
                   <ref role="3cqZAo" node="5avmkTFkueJ" resolve="last" />
@@ -656,7 +656,7 @@
               </node>
               <node concept="2YIFZM" id="5avmkTFdnnU" role="3uHU7B">
                 <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-                <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                <ref role="37wK5l" to="wyt6:~Character.isDigit(char)" resolve="isDigit" />
                 <node concept="37vLTw" id="5avmkTFkueS" role="37wK5m">
                   <ref role="3cqZAo" node="5avmkTFkueJ" resolve="last" />
                 </node>

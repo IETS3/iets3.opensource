@@ -478,7 +478,7 @@
                         <ref role="3cqZAo" node="6zaFu4oSAMF" resolve="text" />
                       </node>
                       <node concept="liA8E" id="6zaFu4oSGXs" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
+                        <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
                         <node concept="2OqwBi" id="6zaFu4oSGXt" role="37wK5m">
                           <node concept="2GrUjf" id="6zaFu4oSGXu" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="6zaFu4oSGCZ" resolve="term" />
@@ -567,7 +567,7 @@
                             <ref role="3cqZAo" node="6zaFu4oSAMF" resolve="text" />
                           </node>
                           <node concept="liA8E" id="lp3OKvgbwI" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
+                            <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
                             <node concept="37vLTw" id="lp3OKvgbxd" role="37wK5m">
                               <ref role="3cqZAo" node="lp3OKvgaNr" resolve="t" />
                             </node>
@@ -694,11 +694,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="6zaFu4oSApv" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
               </node>
             </node>
             <node concept="liA8E" id="6zaFu4oSAv0" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -835,7 +835,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="lp3OKvgwG1" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                       <node concept="2OqwBi" id="lp3OKvgwG2" role="37wK5m">
                         <node concept="2OqwBi" id="lp3OKvgwG4" role="2Oq$k0">
                           <node concept="13iPFW" id="lp3OKvgwG5" role="2Oq$k0" />
@@ -844,7 +844,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="lp3OKvgwG8" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                          <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                         </node>
                       </node>
                     </node>
@@ -918,7 +918,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="lp3OKvfNtO" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                         <node concept="2OqwBi" id="lp3OKvfObR" role="37wK5m">
                           <node concept="2OqwBi" id="lp3OKvfNIS" role="2Oq$k0">
                             <node concept="2OqwBi" id="lp3OKvfNyM" role="2Oq$k0">
@@ -932,7 +932,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="lp3OKvfOnN" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                            <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                           </node>
                         </node>
                       </node>
@@ -978,15 +978,15 @@
                     <ref role="3cqZAo" node="3OiIliPRxrm" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="3OiIliPRxry" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3OiIliPRxrz" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                 </node>
               </node>
               <node concept="liA8E" id="3OiIliPRxr$" role="2OqNvi">
-                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
               </node>
             </node>
           </node>
@@ -1040,15 +1040,15 @@
                     <ref role="3cqZAo" node="lp3OKvinq$" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="lp3OKvinqo" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="lp3OKvinqp" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                 </node>
               </node>
               <node concept="liA8E" id="lp3OKvinqq" role="2OqNvi">
-                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
               </node>
             </node>
           </node>
@@ -1140,15 +1140,15 @@
                       <ref role="3cqZAo" node="3OiIliPRxsz" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="3OiIliPRxs6" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3OiIliPRxs7" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectionManager()" resolve="getSelectionManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3OiIliPRxs8" role="2OqNvi">
-                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection():jetbrains.mps.openapi.editor.selection.Selection" resolve="getSelection" />
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.getSelection()" resolve="getSelection" />
                 </node>
               </node>
             </node>

@@ -1251,11 +1251,11 @@
                       <ref role="3cqZAo" node="1oYSzEGJtYM" resolve="result" />
                     </node>
                     <node concept="liA8E" id="7kyIuXqwyKS" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7kyIuXqw$6v" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -1265,7 +1265,7 @@
         <node concept="3clFbF" id="1oYSzEGJr$y" role="3cqZAp">
           <node concept="2YIFZM" id="1oYSzEGJtPT" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <node concept="10Nm6u" id="1oYSzEGJtQG" role="37wK5m" />
             <node concept="3cpWs3" id="1oYSzEGJtX_" role="37wK5m">
               <node concept="37vLTw" id="7kyIuXqwvT9" role="3uHU7w">
@@ -1912,7 +1912,7 @@
           <node concept="1Wc70l" id="4FREEt6vga8" role="3clFbG">
             <node concept="2YIFZM" id="4FREEt6vga9" role="3uHU7B">
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeChild" />
               <node concept="2OqwBi" id="4FREEt6vgaa" role="37wK5m">
                 <node concept="37vLTw" id="4FREEt6vhSD" role="2Oq$k0">
                   <ref role="3cqZAo" node="4FREEt6vhH9" resolve="node" />
@@ -1931,7 +1931,7 @@
               <node concept="10Nm6u" id="4FREEt6vgah" role="37wK5m" />
             </node>
             <node concept="2YIFZM" id="4FREEt6vgai" role="3uHU7w">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="canBeAncestor" />
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
               <node concept="2OqwBi" id="4FREEt6vgaj" role="37wK5m">
                 <node concept="37vLTw" id="4FREEt6vifn" role="2Oq$k0">
@@ -2030,9 +2030,9 @@
               <ref role="3cqZAo" node="70aAUsa55dO" resolve="label" />
             </node>
             <node concept="liA8E" id="70aAUsa55dW" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border)" resolve="setBorder" />
               <node concept="2YIFZM" id="70aAUsa55dX" role="37wK5m">
-                <ref role="37wK5l" to="dxuu:~BorderFactory.createEmptyBorder(int,int,int,int):javax.swing.border.Border" resolve="createEmptyBorder" />
+                <ref role="37wK5l" to="dxuu:~BorderFactory.createEmptyBorder(int,int,int,int)" resolve="createEmptyBorder" />
                 <ref role="1Pybhc" to="dxuu:~BorderFactory" resolve="BorderFactory" />
                 <node concept="3cmrfG" id="70aAUsa55dY" role="37wK5m">
                   <property role="3cmrfH" value="20" />
@@ -2056,7 +2056,7 @@
               <ref role="3cqZAo" node="70aAUsa55dJ" resolve="win" />
             </node>
             <node concept="liA8E" id="70aAUsa55e5" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
               <node concept="37vLTw" id="70aAUsa55e6" role="37wK5m">
                 <ref role="3cqZAo" node="70aAUsa55dO" resolve="label" />
               </node>
@@ -2069,7 +2069,7 @@
               <ref role="3cqZAo" node="70aAUsa55dJ" resolve="win" />
             </node>
             <node concept="liA8E" id="70aAUsa55ea" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Window.pack():void" resolve="pack" />
+              <ref role="37wK5l" to="z60i:~Window.pack()" resolve="pack" />
             </node>
           </node>
         </node>
@@ -2079,7 +2079,7 @@
               <ref role="3cqZAo" node="70aAUsa55dJ" resolve="win" />
             </node>
             <node concept="liA8E" id="70aAUsa55ee" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Window.setLocationRelativeTo(java.awt.Component):void" resolve="setLocationRelativeTo" />
+              <ref role="37wK5l" to="z60i:~Window.setLocationRelativeTo(java.awt.Component)" resolve="setLocationRelativeTo" />
               <node concept="10Nm6u" id="70aAUsa55ef" role="37wK5m" />
             </node>
           </node>
@@ -2090,7 +2090,7 @@
               <ref role="3cqZAo" node="70aAUsa55dJ" resolve="win" />
             </node>
             <node concept="liA8E" id="70aAUsa55ej" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Window.setVisible(boolean):void" resolve="setVisible" />
+              <ref role="37wK5l" to="z60i:~Window.setVisible(boolean)" resolve="setVisible" />
               <node concept="3clFbT" id="70aAUsa55ek" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -2105,21 +2105,21 @@
         </node>
         <node concept="3clFbF" id="70aAUsa55eo" role="3cqZAp">
           <node concept="2YIFZM" id="70aAUsa55ep" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
             <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
             <node concept="1bVj0M" id="70aAUsa55eq" role="37wK5m">
               <property role="3yWfEV" value="true" />
               <node concept="3clFbS" id="70aAUsa55er" role="1bW5cS">
                 <node concept="3clFbF" id="70aAUsa55es" role="3cqZAp">
                   <node concept="2YIFZM" id="70aAUsa55et" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+                    <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                     <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
                     <node concept="1bVj0M" id="70aAUsa55eu" role="37wK5m">
                       <property role="3yWfEV" value="true" />
                       <node concept="3clFbS" id="70aAUsa55ev" role="1bW5cS">
                         <node concept="3clFbF" id="70aAUsa55ew" role="3cqZAp">
                           <node concept="2YIFZM" id="70aAUsa55ex" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+                            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
                             <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
                             <node concept="1bVj0M" id="70aAUsa55ey" role="37wK5m">
                               <property role="3yWfEV" value="true" />
@@ -2135,7 +2135,7 @@
                                                 <ref role="3cqZAo" node="70aAUsa552O" resolve="runnable" />
                                               </node>
                                               <node concept="liA8E" id="70aAUsa57HI" role="2OqNvi">
-                                                <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                                                <ref role="37wK5l" to="wyt6:~Runnable.run()" resolve="run" />
                                               </node>
                                             </node>
                                           </node>
@@ -2153,7 +2153,7 @@
                                           <ref role="3cqZAo" node="70aAUsa55dJ" resolve="win" />
                                         </node>
                                         <node concept="liA8E" id="70aAUsa55f0" role="2OqNvi">
-                                          <ref role="37wK5l" to="z60i:~Window.setVisible(boolean):void" resolve="setVisible" />
+                                          <ref role="37wK5l" to="z60i:~Window.setVisible(boolean)" resolve="setVisible" />
                                           <node concept="3clFbT" id="70aAUsa55f1" role="37wK5m">
                                             <property role="3clFbU" value="false" />
                                           </node>
@@ -2653,13 +2653,13 @@
         </node>
         <node concept="3clFbF" id="aFEf9z6SuH" role="3cqZAp">
           <node concept="2YIFZM" id="aFEf9z6SAm" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
+            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
             <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
             <node concept="1bVj0M" id="aFEf9z6SFq" role="37wK5m">
               <node concept="3clFbS" id="aFEf9z6SFr" role="1bW5cS">
                 <node concept="3clFbF" id="4qVjx3jDcqa" role="3cqZAp">
                   <node concept="2YIFZM" id="4qVjx3jDcqV" role="3clFbG">
-                    <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon):void" resolve="showMessageDialog" />
+                    <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
                     <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                     <node concept="37vLTw" id="aFEf9z7b39" role="37wK5m">
                       <ref role="3cqZAo" node="aFEf9z79Hk" resolve="message" />

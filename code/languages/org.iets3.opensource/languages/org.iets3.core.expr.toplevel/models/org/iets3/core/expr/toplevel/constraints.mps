@@ -587,7 +587,7 @@
                       <ref role="3cqZAo" node="6rdp$3yw0UB" resolve="label" />
                     </node>
                     <node concept="liA8E" id="6rdp$3ywewz" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                       <node concept="37vLTw" id="6rdp$3ywew$" role="37wK5m">
                         <ref role="3cqZAo" node="6rdp$3yw54t" resolve="i" />
                       </node>
@@ -603,7 +603,7 @@
                         <ref role="3cqZAo" node="6rdp$3yvX5m" resolve="bf" />
                       </node>
                       <node concept="liA8E" id="6rdp$3ywk6L" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                         <node concept="3cpWs3" id="6rdp$3ywm54" role="37wK5m">
                           <node concept="Xl_RD" id="6rdp$3ywm5a" role="3uHU7w">
                             <property role="Xl_RC" value="" />
@@ -618,14 +618,14 @@
                 </node>
                 <node concept="22lmx$" id="6rdp$3ywhfc" role="3clFbw">
                   <node concept="2YIFZM" id="6rdp$3ywi5K" role="3uHU7w">
-                    <ref role="37wK5l" to="wyt6:~Character.isAlphabetic(int):boolean" resolve="isAlphabetic" />
+                    <ref role="37wK5l" to="wyt6:~Character.isAlphabetic(int)" resolve="isAlphabetic" />
                     <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                     <node concept="37vLTw" id="6rdp$3ywiwF" role="37wK5m">
                       <ref role="3cqZAo" node="6rdp$3yweww" resolve="c" />
                     </node>
                   </node>
                   <node concept="2YIFZM" id="6rdp$3ywgc2" role="3uHU7B">
-                    <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                    <ref role="37wK5l" to="wyt6:~Character.isDigit(char)" resolve="isDigit" />
                     <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                     <node concept="37vLTw" id="6rdp$3ywgAE" role="37wK5m">
                       <ref role="3cqZAo" node="6rdp$3yweww" resolve="c" />
@@ -640,7 +640,7 @@
                           <ref role="3cqZAo" node="6rdp$3yvX5m" resolve="bf" />
                         </node>
                         <node concept="liA8E" id="6rdp$3ywqFi" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                          <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                           <node concept="Xl_RD" id="6rdp$3ywro3" role="37wK5m">
                             <property role="Xl_RC" value="_" />
                           </node>
@@ -664,7 +664,7 @@
                   <ref role="3cqZAo" node="6rdp$3yw0UB" resolve="label" />
                 </node>
                 <node concept="liA8E" id="6rdp$3ywa2U" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
               <node concept="37vLTw" id="6rdp$3yw6K2" role="3uHU7B">
@@ -687,7 +687,7 @@
                   <ref role="3cqZAo" node="6rdp$3yvX5m" resolve="bf" />
                 </node>
                 <node concept="liA8E" id="6rdp$3yvZ0H" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                 </node>
               </node>
             </node>

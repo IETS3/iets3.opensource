@@ -159,7 +159,7 @@
                 <node concept="2yIwOk" id="3NBP8_O3JF2" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="3NBP8_O3JRn" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
             <node concept="Xl_RD" id="4UgzZxsHH7s" role="3uHU7B">
@@ -269,11 +269,11 @@
                               <ref role="3cqZAo" node="6js_s$imKOO" resolve="it" />
                             </node>
                             <node concept="liA8E" id="6js_s$imKOM" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getRootCell" />
+                              <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
                             </node>
                           </node>
                           <node concept="liA8E" id="6js_s$imKON" role="2OqNvi">
-                            <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                            <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
                           </node>
                         </node>
                       </node>
@@ -295,7 +295,7 @@
                         <ref role="3cqZAo" node="6js_s$imKOX" resolve="it" />
                       </node>
                       <node concept="liA8E" id="6js_s$imKOW" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorComponent.update():void" resolve="update" />
+                        <ref role="37wK5l" to="exr9:~EditorComponent.update()" resolve="update" />
                       </node>
                     </node>
                   </node>

@@ -2658,7 +2658,7 @@
                         <ref role="3cqZAo" node="12WRc28Vuej" resolve="counter" />
                       </node>
                       <node concept="liA8E" id="12WRc28V$kZ" role="2OqNvi">
-                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet():int" resolve="decrementAndGet" />
+                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet()" resolve="decrementAndGet" />
                       </node>
                     </node>
                   </node>
@@ -2860,7 +2860,7 @@
                         <ref role="3cqZAo" node="15f5yXE9uu1" resolve="counter" />
                       </node>
                       <node concept="liA8E" id="15f5yXE9uuL" role="2OqNvi">
-                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet():int" resolve="decrementAndGet" />
+                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet()" resolve="decrementAndGet" />
                       </node>
                     </node>
                   </node>
@@ -3542,7 +3542,7 @@
                         <ref role="3cqZAo" node="GQFmhcDvZp" resolve="counter" />
                       </node>
                       <node concept="liA8E" id="GQFmhcDw28" role="2OqNvi">
-                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet():int" resolve="decrementAndGet" />
+                        <ref role="37wK5l" to="i5cy:~AtomicInteger.decrementAndGet()" resolve="decrementAndGet" />
                       </node>
                     </node>
                   </node>
@@ -3637,7 +3637,7 @@
               <node concept="2OqwBi" id="TuTPrvG3mO" role="37wK5m">
                 <node concept="2QUAEa" id="TuTPrvG3mP" role="2Oq$k0" />
                 <node concept="liA8E" id="TuTPrvG3mQ" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>
@@ -5400,11 +5400,11 @@
             <node concept="2OqwBi" id="3gjm1nJQt45" role="2Oq$k0">
               <node concept="2QUAEa" id="3gjm1nJQt46" role="2Oq$k0" />
               <node concept="liA8E" id="3gjm1nJQt47" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
             <node concept="liA8E" id="3gjm1nJQt48" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.collectImmediateSupertypes(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.typesystem.inference.util.StructuralNodeSet" resolve="collectImmediateSupertypes" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.collectImmediateSupertypes(org.jetbrains.mps.openapi.model.SNode)" resolve="collectImmediateSupertypes" />
               <node concept="2OqwBi" id="3gjm1nJQt49" role="37wK5m">
                 <node concept="1YBJjd" id="3gjm1nJQt4a" role="2Oq$k0">
                   <ref role="1YBMHb" node="3gjm1nJQpsI" resolve="ot" />
@@ -5825,11 +5825,11 @@
           </node>
           <node concept="2OqwBi" id="3zml08RoB62" role="33vP2m">
             <node concept="2YIFZM" id="3zml08RoB63" role="2Oq$k0">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
             </node>
             <node concept="liA8E" id="3zml08RoB64" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
             </node>
           </node>
         </node>
@@ -6554,11 +6554,11 @@
                 <node concept="2OqwBi" id="7VuYlCQZiSx" role="2Oq$k0">
                   <node concept="2QUAEa" id="7VuYlCQZiBr" role="2Oq$k0" />
                   <node concept="liA8E" id="7VuYlCQZjam" role="2OqNvi">
-                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7VuYlCQZjye" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
                   <node concept="1YBJjd" id="7VuYlCQZjEz" role="37wK5m">
                     <ref role="1YBMHb" node="7VuYlCQZbTj" resolve="type" />
                   </node>
@@ -6638,11 +6638,11 @@
                             <node concept="2OqwBi" id="7VuYlCR5RbW" role="2Oq$k0">
                               <node concept="2QUAEa" id="7VuYlCR5RbX" role="2Oq$k0" />
                               <node concept="liA8E" id="7VuYlCR5RbY" role="2OqNvi">
-                                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                               </node>
                             </node>
                             <node concept="liA8E" id="7VuYlCR5RbZ" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
                               <node concept="2GrUjf" id="7VuYlCR5Rc0" role="37wK5m">
                                 <ref role="2Gs0qQ" node="7VuYlCR5J9z" resolve="tt" />
                               </node>
@@ -6814,7 +6814,7 @@
                               <ref role="3cqZAo" node="ORfz$Ec2IF" resolve="effectError" />
                             </node>
                             <node concept="liA8E" id="ORfz$E_hLk" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="ORfz$E_mn0" role="37wK5m">
                                 <node concept="37vLTw" id="ORfz$E_leG" role="2Oq$k0">
                                   <ref role="3cqZAo" node="ORfz$DSbF7" resolve="allower" />
@@ -7344,10 +7344,10 @@
           <node concept="2OqwBi" id="5a_u3OzTDoj" role="33vP2m">
             <node concept="2YIFZM" id="5a_u3OzTDok" role="2Oq$k0">
               <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
-              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="5a_u3OzTDol" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
             </node>
           </node>
         </node>
@@ -7621,7 +7621,7 @@
                           <node concept="2OqwBi" id="1RwPUjzgmSf" role="37wK5m">
                             <node concept="2QUAEa" id="1RwPUjzgmSg" role="2Oq$k0" />
                             <node concept="liA8E" id="1RwPUjzgmSh" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                             </node>
                           </node>
                         </node>
@@ -7940,7 +7940,7 @@
                     <node concept="2OqwBi" id="7rdMSLlpzv7" role="37wK5m">
                       <node concept="2QUAEa" id="7rdMSLlpzv8" role="2Oq$k0" />
                       <node concept="liA8E" id="7rdMSLlpzv9" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                       </node>
                     </node>
                   </node>
@@ -8098,7 +8098,7 @@
                     <node concept="2OqwBi" id="7rdMSLltl9n" role="37wK5m">
                       <node concept="2QUAEa" id="7rdMSLltl9o" role="2Oq$k0" />
                       <node concept="liA8E" id="7rdMSLltl9p" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                       </node>
                     </node>
                   </node>

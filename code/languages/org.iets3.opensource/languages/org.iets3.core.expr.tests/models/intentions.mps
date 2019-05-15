@@ -754,7 +754,7 @@
             <node concept="2OqwBi" id="70aAUsa5cV_" role="37wK5m">
               <node concept="1XNTG" id="70aAUsa5cVA" role="2Oq$k0" />
               <node concept="liA8E" id="70aAUsa5cVB" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
               </node>
             </node>
             <node concept="1bVj0M" id="70aAUsa5cVC" role="37wK5m">
@@ -1086,11 +1086,11 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6C0OSEaZGNV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7FZzGJZWDRt" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                   <node concept="Xl_RD" id="7FZzGJZWDRz" role="37wK5m">
                     <property role="Xl_RC" value="[PRE]" />
                   </node>
@@ -1603,7 +1603,7 @@
             <node concept="2OqwBi" id="16bFv1_q7uE" role="37wK5m">
               <node concept="1XNTG" id="16bFv1_q7uF" role="2Oq$k0" />
               <node concept="liA8E" id="16bFv1_q7uG" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
               </node>
             </node>
             <node concept="1bVj0M" id="16bFv1_q7uH" role="37wK5m">

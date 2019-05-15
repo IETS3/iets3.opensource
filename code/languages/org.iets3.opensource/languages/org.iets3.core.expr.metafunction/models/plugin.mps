@@ -379,7 +379,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5cK3QOdiKgQ" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="5cK3QOdiKgR" role="37wK5m">
                             <ref role="3cqZAo" node="5cK3QOdhJh8" resolve="name" />
                           </node>
@@ -437,7 +437,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5cK3QOdiAri" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="37vLTw" id="5cK3QOdiOPg" role="37wK5m">
                 <ref role="3cqZAo" node="5cK3QOdiKgD" resolve="arg" />
               </node>
@@ -502,7 +502,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="559q5A2CC9_" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="559q5A2CC9A" role="37wK5m">
                             <ref role="3cqZAo" node="559q5A2CCa0" resolve="name" />
                           </node>
@@ -560,7 +560,7 @@
               </node>
             </node>
             <node concept="liA8E" id="559q5A2CC9V" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="37vLTw" id="559q5A2CC9W" role="37wK5m">
                 <ref role="3cqZAo" node="559q5A2CC9n" resolve="arg" />
               </node>
@@ -649,7 +649,7 @@
                     <ref role="3cqZAo" node="5cK3QOdiRrG" resolve="env" />
                   </node>
                   <node concept="liA8E" id="5cK3QOdiU0Z" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                     <node concept="2GrUjf" id="5cK3QOdiU9L" role="37wK5m">
                       <ref role="2Gs0qQ" node="5cK3QOdiQIR" resolve="arg" />
                     </node>

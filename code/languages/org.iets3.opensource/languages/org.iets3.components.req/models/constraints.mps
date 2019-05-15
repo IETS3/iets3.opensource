@@ -73,7 +73,7 @@
                     <node concept="2yIwOk" id="cJpacq6s_H" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="cJpacq6sZS" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="cJpacq6t6Z" role="3uHU7w">

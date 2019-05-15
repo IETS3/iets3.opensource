@@ -226,7 +226,7 @@
                   <ref role="3cqZAo" node="1sudaVNrV5Q" resolve="f" />
                 </node>
                 <node concept="liA8E" id="1sudaVNrX$n" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                  <ref role="37wK5l" to="guwi:~File.isDirectory()" resolve="isDirectory" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1sudaVNrX$o" role="3uHU7B">
@@ -234,7 +234,7 @@
                   <ref role="3cqZAo" node="1sudaVNrV5Q" resolve="f" />
                 </node>
                 <node concept="liA8E" id="1sudaVNrX$q" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                  <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                 </node>
               </node>
             </node>

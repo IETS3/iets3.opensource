@@ -287,7 +287,7 @@
                         <node concept="3clFbF" id="mhbzaHqfac" role="3cqZAp">
                           <node concept="2OqwBi" id="mhbzaHmVNC" role="3clFbG">
                             <node concept="liA8E" id="mhbzaHmYs9" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
                               <node concept="2OqwBi" id="mhbzaHnEqK" role="37wK5m">
                                 <node concept="37vLTw" id="mhbzaHnaw9" role="2Oq$k0">
                                   <ref role="3cqZAo" node="4I$2FraqNWW" resolve="from" />
@@ -373,7 +373,7 @@
                                           <node concept="2yIwOk" id="mhbzaHmpxK" role="2OqNvi" />
                                         </node>
                                         <node concept="liA8E" id="mhbzaHmpxL" role="2OqNvi">
-                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
                                           <node concept="2OqwBi" id="mhbzaHnFZA" role="37wK5m">
                                             <node concept="37vLTw" id="mhbzaHmpxN" role="2Oq$k0">
                                               <ref role="3cqZAo" node="4I$2FraqNWY" resolve="to" />
@@ -1006,7 +1006,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="6_Ift$_DjDN" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.isEmpty():boolean" resolve="isEmpty" />
+                        <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                       </node>
                     </node>
                   </node>

@@ -372,10 +372,10 @@
                             <node concept="2OqwBi" id="4tXyFaWyeMJ" role="3uHU7B">
                               <node concept="2YIFZM" id="4tXyFaWyeMK" role="2Oq$k0">
                                 <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               </node>
                               <node concept="liA8E" id="4tXyFaWyeML" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                               </node>
                             </node>
                           </node>
@@ -405,11 +405,11 @@
                           </node>
                           <node concept="2OqwBi" id="7Dcax7AhR3a" role="3uHU7B">
                             <node concept="2YIFZM" id="7Dcax7AhR3b" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="7Dcax7AhR3c" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -673,11 +673,11 @@
                           </node>
                           <node concept="2OqwBi" id="4tXyFaWyy6S" role="3uHU7B">
                             <node concept="2YIFZM" id="4tXyFaWyy6T" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="4tXyFaWyy6U" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -705,11 +705,11 @@
                           </node>
                           <node concept="2OqwBi" id="4tXyFaWyynS" role="3uHU7B">
                             <node concept="2YIFZM" id="4tXyFaWyynT" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="4tXyFaWyynU" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -1091,10 +1091,10 @@
                             <node concept="2OqwBi" id="7Dcax7Ahwsm" role="3uHU7B">
                               <node concept="2YIFZM" id="7Dcax7Ahwsn" role="2Oq$k0">
                                 <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               </node>
                               <node concept="liA8E" id="7Dcax7Ahwso" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                                <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                               </node>
                             </node>
                           </node>
@@ -1713,11 +1713,11 @@
                           </node>
                           <node concept="2OqwBi" id="4Etk_BWvNJH" role="3uHU7B">
                             <node concept="2YIFZM" id="4Etk_BWvNJI" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="4Etk_BWvNJJ" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -1745,11 +1745,11 @@
                           </node>
                           <node concept="2OqwBi" id="4Etk_BWvNJV" role="3uHU7B">
                             <node concept="2YIFZM" id="4Etk_BWvNJW" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="4Etk_BWvNJX" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -1856,7 +1856,7 @@
                       </node>
                       <node concept="3clFbF" id="3FGEpLFjoX8" role="3cqZAp">
                         <node concept="2YIFZM" id="3FGEpLFjp2z" role="3clFbG">
-                          <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int):java.lang.String" resolve="repeat" />
+                          <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int)" resolve="repeat" />
                           <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                           <node concept="Xl_RD" id="3FGEpLFjp3P" role="37wK5m">
                             <property role="Xl_RC" value="  " />
@@ -2039,7 +2039,7 @@
                       </node>
                       <node concept="3clFbF" id="3FGEpLFjzYW" role="3cqZAp">
                         <node concept="2YIFZM" id="3FGEpLFjzYX" role="3clFbG">
-                          <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int):java.lang.String" resolve="repeat" />
+                          <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int)" resolve="repeat" />
                           <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                           <node concept="Xl_RD" id="3FGEpLFjzYY" role="37wK5m">
                             <property role="Xl_RC" value="  " />

@@ -795,7 +795,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="6OunYCfl8Rv" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                                             <node concept="37vLTw" id="6OunYCfl8Rw" role="37wK5m">
                                               <ref role="3cqZAo" node="4LQ7f3j_Lyg" resolve="expected" />
                                             </node>
@@ -1214,7 +1214,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="wW2kvID8lN" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Boolean.booleanValue():boolean" resolve="booleanValue" />
+                        <ref role="37wK5l" to="wyt6:~Boolean.booleanValue()" resolve="booleanValue" />
                       </node>
                     </node>
                     <node concept="2ZW3vV" id="wW2kvID7op" role="3uHU7B">
@@ -1371,7 +1371,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="7FuUjk_r6Mt" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="37vLTw" id="7FuUjk_r6Mu" role="37wK5m">
                                         <ref role="3cqZAo" node="7FuUjk_rimK" resolve="expected" />
                                       </node>
@@ -1961,7 +1961,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="$yb$20l2BB" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="1LFfDK" id="7EKPeISPELL" role="37wK5m">
                     <node concept="3cmrfG" id="7EKPeISPF7H" role="1LF_Uc">
                       <property role="3cmrfH" value="0" />

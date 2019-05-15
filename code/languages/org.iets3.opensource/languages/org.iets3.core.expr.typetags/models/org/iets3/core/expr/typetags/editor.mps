@@ -418,7 +418,7 @@
                   <ref role="3cqZAo" to="itrz:7D7uZV2gA03" resolve="TYPE" />
                 </node>
                 <node concept="liA8E" id="sflsE7mneg" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Color.brighter():java.awt.Color" resolve="brighter" />
+                  <ref role="37wK5l" to="z60i:~Color.brighter()" resolve="brighter" />
                 </node>
               </node>
             </node>
@@ -455,7 +455,7 @@
                     <ref role="3cqZAo" to="itrz:7D7uZV2gA03" resolve="TYPE" />
                   </node>
                   <node concept="liA8E" id="sflsE7myyU" role="2OqNvi">
-                    <ref role="37wK5l" to="z60i:~Color.brighter():java.awt.Color" resolve="brighter" />
+                    <ref role="37wK5l" to="z60i:~Color.brighter()" resolve="brighter" />
                   </node>
                 </node>
               </node>

@@ -187,11 +187,11 @@
                           </node>
                           <node concept="2OqwBi" id="7mG7sQPAivD" role="3uHU7B">
                             <node concept="2YIFZM" id="7mG7sQPAivE" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="7mG7sQPAivF" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>

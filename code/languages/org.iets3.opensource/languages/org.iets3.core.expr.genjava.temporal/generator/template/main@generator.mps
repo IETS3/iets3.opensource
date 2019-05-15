@@ -10,7 +10,6 @@
     <import index="t677" ref="r:e44c17a0-d569-437a-a7a1-7c26f734db5f(org.iets3.core.expr.temporal.plugin)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="l462" ref="r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)" />
@@ -21,6 +20,7 @@
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="x8ug" ref="r:761e0f2a-4ffc-4d74-83bd-c6255a04ca73(org.iets3.core.expr.temporal.behavior)" implicit="true" />
   </imports>
@@ -611,7 +611,7 @@
                                 <ref role="3cqZAo" node="2T4w_AkF$MM" resolve="last" />
                               </node>
                               <node concept="liA8E" id="2T4w_AkFD6s" role="2OqNvi">
-                                <ref role="37wK5l" to="28m1:~LocalDate.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="28m1:~LocalDate.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="2T4w_AkFD8k" role="37wK5m">
                                   <ref role="3cqZAo" node="2T4w_AkF_KC" resolve="time" />
                                 </node>
@@ -2323,7 +2323,7 @@
       <node concept="gft3U" id="5CiP6OGgFDa" role="1lVwrX">
         <node concept="2YIFZM" id="5CiP6OGiz$T" role="gfFT$">
           <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
-          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
+          <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
           <node concept="2OqwBi" id="5CiP6OGi$oX" role="37wK5m">
             <node concept="1eOMI4" id="5CiP6OGi$4s" role="2Oq$k0">
               <node concept="10QFUN" id="5CiP6OGi$4t" role="1eOMHV">
@@ -3767,7 +3767,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4aHVnHIBONf" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Boolean.booleanValue():boolean" resolve="booleanValue" />
+                      <ref role="37wK5l" to="wyt6:~Boolean.booleanValue()" resolve="booleanValue" />
                     </node>
                   </node>
                   <node concept="2ZW3vV" id="4aHVnHIBM9D" role="3uHU7B">
@@ -4020,11 +4020,11 @@
                     <node concept="3cpWsn" id="4aHVnHIHP2G" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="4aHVnHIHP2H" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="4aHVnHIHPYv" role="33vP2m">
                         <node concept="3uibUv" id="4aHVnHIHPYt" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="4aHVnHIHQd_" role="10QFUP">
                           <ref role="3cqZAo" node="4aHVnHIH$D4" resolve="fromValue" />
@@ -4089,7 +4089,7 @@
                           </node>
                           <node concept="1mIQ4w" id="4aHVnHIOdq_" role="2OqNvi">
                             <node concept="chp4Y" id="4aHVnHIOeuS" role="cj9EA">
-                              <ref role="cht4Q" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+                              <ref role="cht4Q" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
                             </node>
                           </node>
                         </node>
@@ -4176,7 +4176,7 @@
                           <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
                         </node>
                         <node concept="liA8E" id="4aHVnHIINnz" role="2OqNvi">
-                          <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                          <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                           <node concept="37vLTw" id="4aHVnHIINNv" role="37wK5m">
                             <ref role="3cqZAo" node="4aHVnHIHKUc" resolve="fromTime" />
                           </node>
@@ -4285,7 +4285,7 @@
                                         <ref role="3cqZAo" node="4aHVnHIHKUc" resolve="fromTime" />
                                       </node>
                                       <node concept="liA8E" id="4aHVnHIJbCK" role="2OqNvi">
-                                        <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="plus" />
+                                        <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit)" resolve="plus" />
                                         <node concept="37vLTw" id="4aHVnHIJcgz" role="37wK5m">
                                           <ref role="3cqZAo" node="4aHVnHIIX0J" resolve="i" />
                                         </node>
@@ -4391,8 +4391,8 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="4aHVnHIUN7I" role="33vP2m">
-                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
                         <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                         <node concept="37vLTw" id="4aHVnHIUN7J" role="37wK5m">
                           <ref role="3cqZAo" node="4aHVnHIIPD0" resolve="spreaded" />
                         </node>
@@ -4407,7 +4407,7 @@
                 </node>
                 <node concept="2OqwBi" id="4aHVnHII2xZ" role="3clFbw">
                   <node concept="liA8E" id="4aHVnHII2PR" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="4aHVnHIInuX" role="37wK5m">
                       <property role="Xl_RC" value=" " />
                       <node concept="17Uvod" id="4aHVnHIIvBt" role="lGtFl">
@@ -4469,7 +4469,7 @@
                           <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
                         </node>
                         <node concept="liA8E" id="4aHVnHIJmfQ" role="2OqNvi">
-                          <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
+                          <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal)" resolve="between" />
                           <node concept="37vLTw" id="4aHVnHIJmfR" role="37wK5m">
                             <ref role="3cqZAo" node="4aHVnHIHKUc" resolve="fromTime" />
                           </node>
@@ -4577,7 +4577,7 @@
                                       <ref role="3cqZAo" node="4aHVnHIHKUc" resolve="fromTime" />
                                     </node>
                                     <node concept="liA8E" id="4aHVnHIJmge" role="2OqNvi">
-                                      <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit):java.time.LocalDate" resolve="plus" />
+                                      <ref role="37wK5l" to="28m1:~LocalDate.plus(long,java.time.temporal.TemporalUnit)" resolve="plus" />
                                       <node concept="37vLTw" id="4aHVnHIJmgf" role="37wK5m">
                                         <ref role="3cqZAo" node="4aHVnHIJmgh" resolve="i" />
                                       </node>
@@ -4683,7 +4683,7 @@
                       </node>
                       <node concept="2YIFZM" id="4aHVnHISUIh" role="33vP2m">
                         <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
-                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
+                        <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
                         <node concept="37vLTw" id="4aHVnHIU9Wh" role="37wK5m">
                           <ref role="3cqZAo" node="4aHVnHITz9k" resolve="spreaded" />
                         </node>
@@ -4698,7 +4698,7 @@
                 </node>
                 <node concept="2OqwBi" id="4aHVnHIJmgs" role="3clFbw">
                   <node concept="liA8E" id="4aHVnHIJmgt" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="4aHVnHIJmgu" role="37wK5m">
                       <property role="Xl_RC" value=" " />
                       <node concept="17Uvod" id="4aHVnHIJmgv" role="lGtFl">
@@ -4929,11 +4929,11 @@
                     <node concept="3cpWsn" id="5v52mTe0_J2" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0_J3" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Bin" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0Bil" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0BDm" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0gRp" resolve="rr" />
@@ -5016,7 +5016,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0$ic" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0$Es" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0zMB" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0gRp" resolve="rr" />
@@ -5229,11 +5229,11 @@
                     <node concept="3cpWsn" id="5v52mTe0Plz" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0Pl$" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Pl_" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0PlA" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0PlB" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0PkM" resolve="rr" />
@@ -5315,7 +5315,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0PlP" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0PlQ" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0PlR" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0PkM" resolve="rr" />
@@ -5528,11 +5528,11 @@
                     <node concept="3cpWsn" id="5v52mTe0TRN" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0TRO" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0TRP" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0TRQ" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0TRR" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0TR2" resolve="rr" />
@@ -5620,7 +5620,7 @@
                             <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                           </node>
                           <node concept="2YIFZM" id="5v52mTe1pAT" role="33vP2m">
-                            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                            <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                             <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                             <node concept="2OqwBi" id="5v52mTe1qgh" role="37wK5m">
                               <node concept="2GrUjf" id="5v52mTe1pZF" role="2Oq$k0">
@@ -5657,7 +5657,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="5v52mTe1xCW" role="2OqNvi">
-                              <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,int,java.math.RoundingMode):java.math.BigDecimal" resolve="divide" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,int,java.math.RoundingMode)" resolve="divide" />
                               <node concept="2ShNRf" id="5v52mTe1yeg" role="37wK5m">
                                 <node concept="1pGfFk" id="5v52mTe1z21" role="2ShVmc">
                                   <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.math.BigInteger)" resolve="BigDecimal" />
@@ -5756,7 +5756,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0TS5" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0TS6" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0TS7" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0TR2" resolve="rr" />
@@ -5969,11 +5969,11 @@
                     <node concept="3cpWsn" id="5v52mTe0Zkj" role="3cpWs9">
                       <property role="TrG5h" value="range" />
                       <node concept="3uibUv" id="5v52mTe0Zkk" role="1tU5fm">
-                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                        <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                       </node>
                       <node concept="10QFUN" id="5v52mTe0Zkl" role="33vP2m">
                         <node concept="3uibUv" id="5v52mTe0Zkm" role="10QFUM">
-                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                         </node>
                         <node concept="37vLTw" id="5v52mTe0Zkn" role="10QFUP">
                           <ref role="3cqZAo" node="5v52mTe0Zjy" resolve="rr" />
@@ -6101,7 +6101,7 @@
                 </node>
                 <node concept="2ZW3vV" id="5v52mTe0Zk_" role="3clFbw">
                   <node concept="3uibUv" id="5v52mTe0ZkA" role="2ZW6by">
-                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DateRangeValue" />
+                    <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
                   </node>
                   <node concept="37vLTw" id="5v52mTe0ZkB" role="2ZW6bz">
                     <ref role="3cqZAo" node="5v52mTe0Zjy" resolve="rr" />
@@ -6298,7 +6298,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5xKeM9jvKyx" role="2OqNvi">
-                                <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object):java.lang.Object" resolve="apply" />
+                                <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object)" resolve="apply" />
                                 <node concept="2ShNRf" id="5xKeM9jvKyy" role="37wK5m">
                                   <node concept="1pGfFk" id="5xKeM9jvKyz" role="2ShVmc">
                                     <ref role="37wK5l" to="vsv5:VXV$b5mbm6" resolve="ParameterSetWrapper" />
@@ -6365,7 +6365,7 @@
                                   <ref role="3cqZAo" node="5xKeM9jvJ_d" resolve="o" />
                                 </node>
                                 <node concept="liA8E" id="5xKeM9jvNI5" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="5xKeM9jvQE7" role="37wK5m">
                                     <node concept="2OqwBi" id="5xKeM9jvP6Q" role="2Oq$k0">
                                       <node concept="37vLTw" id="5xKeM9jvOmn" role="2Oq$k0">

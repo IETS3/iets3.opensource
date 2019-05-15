@@ -126,7 +126,7 @@
                                   <ref role="3cqZAo" node="48ZWgAGrgHd" resolve="it" />
                                 </node>
                                 <node concept="liA8E" id="48ZWgAGris4" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                             </node>

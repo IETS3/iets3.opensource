@@ -28,10 +28,10 @@
   </registry>
   <node concept="2VgMpV" id="4Egp0F2sAfE">
     <property role="TrG5h" value="Java_Interpreter_Genplan" />
-    <node concept="10T23i" id="4Egp0F2sAfG" role="2VgMA7">
+    <node concept="10T23i" id="6N3Rwqvdn_i" role="2VgMA7">
       <ref role="10T23l" to="92dz:4Egp0F2svxk" resolve="Interpreter_genplan" />
     </node>
-    <node concept="NozSJ" id="4Egp0F2sAfP" role="2VgMA7">
+    <node concept="NozSJ" id="4WyEzK6yvgP" role="2VgMA7">
       <ref role="NozSM" to="g6e4:6FvSwHlc883" resolve="Java_genplan" />
     </node>
   </node>
