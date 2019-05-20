@@ -216,7 +216,7 @@
               </node>
             </node>
             <node concept="liA8E" id="aplxSInJ5C" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
               <node concept="37vLTw" id="1rUbSenNLO" role="37wK5m">
                 <ref role="3cqZAo" node="aplxSInIeW" resolve="USER_OBJECT_KEY" />
               </node>
@@ -288,7 +288,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="aplxSInLAk" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                 <node concept="37vLTw" id="1rUbSenNLW" role="37wK5m">
                   <ref role="3cqZAo" node="aplxSInIeW" resolve="USER_OBJECT_KEY" />
                 </node>

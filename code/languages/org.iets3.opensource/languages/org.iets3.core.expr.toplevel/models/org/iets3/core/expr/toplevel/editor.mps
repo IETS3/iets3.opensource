@@ -2540,11 +2540,11 @@
                           </node>
                           <node concept="2OqwBi" id="4tXyFaWyy6S" role="3uHU7B">
                             <node concept="2YIFZM" id="4tXyFaWyy6T" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="4tXyFaWyy6U" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -2594,11 +2594,11 @@
                           </node>
                           <node concept="2OqwBi" id="5VEHrQd2Zip" role="3uHU7B">
                             <node concept="2YIFZM" id="5VEHrQd2Ziq" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="5VEHrQd2Zir" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -3320,7 +3320,7 @@
                 <ref role="3cqZAo" node="LBlPJUzjxw" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="LBlPJUzjxD" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
               </node>
             </node>
           </node>

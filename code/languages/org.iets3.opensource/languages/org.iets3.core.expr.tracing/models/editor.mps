@@ -486,11 +486,11 @@
                           </node>
                           <node concept="2OqwBi" id="7cNsFS_gJva" role="3uHU7B">
                             <node concept="2YIFZM" id="7cNsFS_gJvb" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="7cNsFS_gJvc" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -551,7 +551,7 @@
                       <ref role="3cqZAo" node="YcTL0fyG0" resolve="v" />
                     </node>
                     <node concept="liA8E" id="YcTL0fyGe" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                       <node concept="Xl_RD" id="YcTL0fyGf" role="37wK5m">
                         <property role="Xl_RC" value="FAIL:" />
                       </node>
@@ -628,10 +628,10 @@
                           <node concept="2OqwBi" id="5U8d23Qpo4q" role="3uHU7B">
                             <node concept="2YIFZM" id="5U8d23Qpo4r" role="2Oq$k0">
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                             </node>
                             <node concept="liA8E" id="5U8d23Qpo4s" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -692,7 +692,7 @@
                       <ref role="3cqZAo" node="5U8d23Qpo4B" resolve="v" />
                     </node>
                     <node concept="liA8E" id="5U8d23Qpo4P" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                       <node concept="Xl_RD" id="5U8d23Qpo4Q" role="37wK5m">
                         <property role="Xl_RC" value="FAIL:" />
                       </node>
@@ -856,11 +856,11 @@
                           </node>
                           <node concept="2OqwBi" id="2CFPPn7pH95" role="3uHU7B">
                             <node concept="2YIFZM" id="2CFPPn7pH96" role="2Oq$k0">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                               <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                             </node>
                             <node concept="liA8E" id="2CFPPn7pH97" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                              <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                             </node>
                           </node>
                         </node>
@@ -1198,7 +1198,7 @@
       <node concept="3clFbS" id="58kj$e4wno$" role="3clF47">
         <node concept="3cpWs6" id="58kj$e4wnCf" role="3cqZAp">
           <node concept="2YIFZM" id="58kj$e4wnFW" role="3cqZAk">
-            <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+            <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
             <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
             <node concept="3cpWs3" id="58kj$e4wo7C" role="37wK5m">
               <node concept="37vLTw" id="58kj$e4wobg" role="3uHU7w">
@@ -1374,7 +1374,7 @@
                 <ref role="3cqZAo" node="5syY_AKQ7ac" resolve="val" />
               </node>
               <node concept="liA8E" id="YcTL0wD4r" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                 <node concept="Xl_RD" id="YcTL0wD4s" role="37wK5m">
                   <property role="Xl_RC" value="FAIL:" />
                 </node>
@@ -1569,7 +1569,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1_8vgjd67pm" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="10M0yZ" id="1_8vgjd67pn" role="37wK5m">
                     <ref role="1PxDUh" to="jpm3:3pe13QaxwvP" resolve="InterpreterValueHighlighter" />
                     <ref role="3cqZAo" to="jpm3:3pe13QaxwvV" resolve="COLORIZE_VALUE" />
@@ -1589,7 +1589,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1_8vgjd6ar5" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="10M0yZ" id="1_8vgjd6br7" role="37wK5m">
                     <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
                     <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
@@ -1626,7 +1626,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7IhZGc$AjfD" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                     <node concept="10M0yZ" id="3pe13Qayghq" role="37wK5m">
                       <ref role="3cqZAo" to="jpm3:3pe13QaxwvV" resolve="COLORIZE_VALUE" />
                       <ref role="1PxDUh" to="jpm3:3pe13QaxwvP" resolve="InterpreterValueHighlighter" />
@@ -1639,7 +1639,7 @@
               <node concept="3clFbS" id="7IhZGc$Akj6" role="3clFbx">
                 <node concept="3cpWs6" id="7IhZGc$Akj7" role="3cqZAp">
                   <node concept="2YIFZM" id="7IhZGc$AkMZ" role="3cqZAk">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                     <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                     <node concept="Xl_RD" id="7IhZGc$Al1D" role="37wK5m">
                       <property role="Xl_RC" value="#C4F0FF" />
@@ -1670,7 +1670,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5U8d23QfV7o" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                     <node concept="10M0yZ" id="7IhZGc$AiEK" role="37wK5m">
                       <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
                       <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
@@ -1683,7 +1683,7 @@
               <node concept="3clFbS" id="5U8d23QfXe4" role="3clFbx">
                 <node concept="3cpWs6" id="5U8d23QfXS4" role="3cqZAp">
                   <node concept="2YIFZM" id="7IhZGc$AmEZ" role="3cqZAk">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                     <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                     <node concept="Xl_RD" id="7IhZGc$AmTy" role="37wK5m">
                       <property role="Xl_RC" value="#D2FFC4" />
@@ -1702,7 +1702,7 @@
               <node concept="3clFbS" id="5U8d23QlKce" role="3clFbx">
                 <node concept="3cpWs6" id="5U8d23QlSt$" role="3cqZAp">
                   <node concept="2YIFZM" id="7IhZGc$AogA" role="3cqZAk">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String):java.awt.Color" resolve="decode" />
+                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
                     <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
                     <node concept="Xl_RD" id="7IhZGc$Aov1" role="37wK5m">
                       <property role="Xl_RC" value="#FFD3C4" />
@@ -1728,7 +1728,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="5U8d23QlQhh" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                              <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                               <node concept="10M0yZ" id="7IhZGc$AiVx" role="37wK5m">
                                 <ref role="1PxDUh" to="jpm3:5U8d23PZEiP" resolve="InterpreterCodeHighlighter" />
                                 <ref role="3cqZAo" to="jpm3:7IhZGc$zknx" resolve="COLORIZE_CODE" />
@@ -1771,11 +1771,11 @@
                 <node concept="2OqwBi" id="4p7g2DNgUAE" role="2Oq$k0">
                   <node concept="1Q80Hx" id="4p7g2DNgUAF" role="2Oq$k0" />
                   <node concept="liA8E" id="4p7g2DNgUAG" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4p7g2DNgUAH" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
                 </node>
               </node>
             </node>
@@ -1787,7 +1787,7 @@
                 <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
               </node>
               <node concept="2YIFZM" id="4p7g2DNgZo_" role="33vP2m">
-                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                 <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                 <node concept="37vLTw" id="4p7g2DNgZoA" role="37wK5m">
                   <ref role="3cqZAo" node="4p7g2DNgUAC" resolve="pp" />

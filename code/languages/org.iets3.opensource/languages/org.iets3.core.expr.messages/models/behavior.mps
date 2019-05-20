@@ -630,11 +630,11 @@
                           <node concept="2OqwBi" id="1CNpG_h8NWN" role="2Oq$k0">
                             <node concept="2QUAEa" id="1CNpG_h8NWO" role="2Oq$k0" />
                             <node concept="liA8E" id="1CNpG_h8NWP" role="2OqNvi">
-                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1CNpG_h8NWQ" role="2OqNvi">
-                            <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):boolean" resolve="isSubtype" />
+                            <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="isSubtype" />
                             <node concept="37vLTw" id="1CNpG_h8NWR" role="37wK5m">
                               <ref role="3cqZAo" node="1CNpG_h8kHz" resolve="t" />
                             </node>

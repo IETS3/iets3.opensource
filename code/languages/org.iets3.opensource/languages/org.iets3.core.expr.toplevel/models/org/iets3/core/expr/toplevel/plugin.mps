@@ -451,7 +451,7 @@
                               <ref role="3cqZAo" node="5F4AdUj4CuN" resolve="v" />
                             </node>
                             <node concept="liA8E" id="7D7uZV2wYtN" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                             </node>
                           </node>
                         </node>
@@ -689,7 +689,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="35CkgbLJRT5" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                         <node concept="2OqwBi" id="35CkgbLJZzZ" role="37wK5m">
                           <node concept="2GrUjf" id="35CkgbLJXGU" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="35CkgbLJo5t" resolve="e" />
@@ -1024,7 +1024,7 @@
             </node>
           </node>
           <node concept="liA8E" id="13LyZYiLfUs" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
             <node concept="Xl_RD" id="13LyZYiLfVa" role="37wK5m">
               <property role="Xl_RC" value="toplevel" />
             </node>
@@ -1058,7 +1058,7 @@
                 <node concept="2yIwOk" id="4v5hZncVr8K" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="4v5hZncVr8L" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract()" resolve="isAbstract" />
               </node>
             </node>
             <node concept="2OqwBi" id="4v5hZncVr8N" role="3uHU7w">

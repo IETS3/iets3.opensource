@@ -347,13 +347,13 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1$JL75hqIoC" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="3clFbF" id="2g6f$bapWPX" role="3cqZAp">
                                 <node concept="3nyPlj" id="2g6f$bapWPW" role="3clFbG">
-                                  <ref role="37wK5l" to="zj86:~BaseListPopupStep.onChosen(java.lang.Object,boolean):com.intellij.openapi.ui.popup.PopupStep" resolve="onChosen" />
+                                  <ref role="37wK5l" to="zj86:~BaseListPopupStep.onChosen(java.lang.Object,boolean)" resolve="onChosen" />
                                   <node concept="37vLTw" id="2g6f$bapWPU" role="37wK5m">
                                     <ref role="3cqZAo" node="2g6f$bapWPM" resolve="selectedValue" />
                                   </node>
@@ -381,10 +381,10 @@
                     <node concept="2OqwBi" id="XblfskUaIh" role="33vP2m">
                       <node concept="2YIFZM" id="XblfskUaIi" role="2Oq$k0">
                         <ref role="1Pybhc" to="gspm:~JBPopupFactory" resolve="JBPopupFactory" />
-                        <ref role="37wK5l" to="gspm:~JBPopupFactory.getInstance():com.intellij.openapi.ui.popup.JBPopupFactory" resolve="getInstance" />
+                        <ref role="37wK5l" to="gspm:~JBPopupFactory.getInstance()" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="XblfskUaIj" role="2OqNvi">
-                        <ref role="37wK5l" to="gspm:~JBPopupFactory.createListPopup(com.intellij.openapi.ui.popup.ListPopupStep):com.intellij.openapi.ui.popup.ListPopup" resolve="createListPopup" />
+                        <ref role="37wK5l" to="gspm:~JBPopupFactory.createListPopup(com.intellij.openapi.ui.popup.ListPopupStep)" resolve="createListPopup" />
                         <node concept="37vLTw" id="2g6f$bapOlh" role="37wK5m">
                           <ref role="3cqZAo" node="2g6f$bapOlc" resolve="step" />
                         </node>
@@ -398,7 +398,7 @@
                       <ref role="3cqZAo" node="XblfskUaIf" resolve="pp" />
                     </node>
                     <node concept="liA8E" id="XblfskUaIr" role="2OqNvi">
-                      <ref role="37wK5l" to="gspm:~JBPopup.showInFocusCenter():void" resolve="showInFocusCenter" />
+                      <ref role="37wK5l" to="gspm:~JBPopup.showInFocusCenter()" resolve="showInFocusCenter" />
                     </node>
                   </node>
                 </node>
@@ -474,7 +474,7 @@
                       <node concept="2yIwOk" id="5sTgzMCcSSU" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="5sTgzMCcSSV" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks():java.util.Collection" resolve="getContainmentLinks" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks()" resolve="getContainmentLinks" />
                     </node>
                   </node>
                 </node>
@@ -493,7 +493,7 @@
                       <ref role="3cqZAo" node="5sTgzMCcSSQ" resolve="allLinks" />
                     </node>
                     <node concept="liA8E" id="5sTgzMCd7vW" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                      <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                     </node>
                   </node>
                 </node>
@@ -519,7 +519,7 @@
                           <ref role="3cqZAo" node="5sTgzMCd7vT" resolve="iterator" />
                         </node>
                         <node concept="liA8E" id="5sTgzMCdb8K" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                          <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                         </node>
                       </node>
                     </node>
@@ -538,7 +538,7 @@
                                   <ref role="3cqZAo" node="5sTgzMCd7vT" resolve="iterator" />
                                 </node>
                                 <node concept="liA8E" id="5sTgzMCdeTv" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                                  <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                                 </node>
                               </node>
                             </node>
@@ -549,7 +549,7 @@
                             <ref role="3cqZAo" node="5sTgzMCd7vT" resolve="iterator" />
                           </node>
                           <node concept="liA8E" id="5sTgzMCdeIK" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                            <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                           </node>
                         </node>
                       </node>
@@ -560,11 +560,11 @@
                           <ref role="3cqZAo" node="5sTgzMCd90s" resolve="link" />
                         </node>
                         <node concept="liA8E" id="5sTgzMCdd01" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5sTgzMCde4N" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="Xl_RD" id="5sTgzMCde4R" role="37wK5m">
                           <property role="Xl_RC" value="smodelAttribute" />
                         </node>
@@ -577,7 +577,7 @@
                     <ref role="3cqZAo" node="5sTgzMCd7vT" resolve="iterator" />
                   </node>
                   <node concept="liA8E" id="5sTgzMCdaBs" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                    <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                   </node>
                 </node>
               </node>
@@ -589,7 +589,7 @@
                         <node concept="j_sak" id="5sTgzMCcOzY" role="2JrQYb" />
                       </node>
                       <node concept="liA8E" id="5sTgzMCcPJu" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.addChild(org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                        <ref role="37wK5l" to="mhbf:~SNode.addChild(org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.model.SNode)" resolve="addChild" />
                         <node concept="37vLTw" id="5sTgzMCdilH" role="37wK5m">
                           <ref role="3cqZAo" node="5sTgzMCd90s" resolve="link" />
                         </node>

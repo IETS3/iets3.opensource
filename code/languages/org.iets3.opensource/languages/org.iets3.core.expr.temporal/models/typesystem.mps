@@ -345,7 +345,7 @@
                     <node concept="2OqwBi" id="2NHHcg2MxTa" role="37wK5m">
                       <node concept="2QUAEa" id="2NHHcg2MxTb" role="2Oq$k0" />
                       <node concept="liA8E" id="2NHHcg2MxTc" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                       </node>
                     </node>
                   </node>
@@ -817,7 +817,7 @@
                   </node>
                   <node concept="1mIQ4w" id="4voqclT$8Jx" role="2OqNvi">
                     <node concept="chp4Y" id="4voqclT$8XW" role="cj9EA">
-                      <ref role="cht4Q" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+                      <ref role="cht4Q" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
                     </node>
                   </node>
                 </node>
@@ -1616,7 +1616,7 @@
         <node concept="mw_s8" id="1Mp62pP0Iqz" role="1ZfhKB">
           <node concept="2pJPEk" id="1Mp62pP0Iqv" role="mwGJk">
             <node concept="2pJPED" id="1Mp62pP0IqI" role="2pJPEn">
-              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DateRangeType" />
+              <ref role="2pJxaS" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
             </node>
           </node>
         </node>
@@ -1667,7 +1667,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5kIYKlpqGPy" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getChildren(org.jetbrains.mps.openapi.language.SContainmentLink):java.lang.Iterable" resolve="getChildren" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getChildren(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="getChildren" />
                       <node concept="2GrUjf" id="5kIYKlpqGPz" role="37wK5m">
                         <ref role="2Gs0qQ" node="5kIYKlpqDvV" resolve="part" />
                       </node>
@@ -1690,7 +1690,7 @@
                           <ref role="2Gs0qQ" node="5kIYKlpqDvV" resolve="part" />
                         </node>
                         <node concept="liA8E" id="5kIYKlpqLkl" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                          <ref role="37wK5l" to="c17a:~SContainmentLink.getRoleName()" resolve="getRoleName" />
                         </node>
                       </node>
                     </node>
@@ -1704,11 +1704,11 @@
                           <ref role="3cqZAo" node="5kIYKlpqGPu" resolve="children" />
                         </node>
                         <node concept="liA8E" id="5kIYKlpqJFn" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                          <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5kIYKlpqJFo" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                        <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                       </node>
                     </node>
                   </node>

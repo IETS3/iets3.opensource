@@ -341,7 +341,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1wGuEUwtQtA" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                        <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                       </node>
                     </node>
                   </node>
@@ -457,14 +457,14 @@
               <node concept="2OqwBi" id="79uxL3R5lQB" role="3uHU7w">
                 <node concept="1Wqviy" id="79uxL3R5lra" role="2Oq$k0" />
                 <node concept="liA8E" id="79uxL3R5mPd" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4SwD0JTntrL" role="3uHU7B">
                 <node concept="2OqwBi" id="4SwD0JTnstW" role="2Oq$k0">
                   <node concept="1Wqviy" id="79uxL3R5i7_" role="2Oq$k0" />
                   <node concept="liA8E" id="4SwD0JToe6b" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="4SwD0JToeva" role="37wK5m">
                       <property role="Xl_RC" value="\\s+" />
                     </node>
@@ -474,7 +474,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4SwD0JTntUh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>

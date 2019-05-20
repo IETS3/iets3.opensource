@@ -14,11 +14,11 @@
     <import index="rxpb" ref="r:31fd8edf-66c5-44d7-84a8-5940badb4d17(org.iets3.core.expr.base.interpreter.plugin)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="a7uw" ref="r:3c3a1789-ef56-43db-a873-55055db3091f(org.iets3.core.expr.repl.plugin)" />
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="pq1l" ref="r:93cd1fe8-b296-405c-a6e6-040c940ccfa1(org.iets3.core.expr.toplevel.plugin)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="31n1" ref="r:bd596a19-3b83-4e59-b025-d69b2d8f8fd6(org.iets3.core.expr.repl.behavior)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -632,8 +632,8 @@
               <node concept="3clFbS" id="5avmkTFo4NE" role="3clFbx">
                 <node concept="3cpWs6" id="5avmkTFo6Co" role="3cqZAp">
                   <node concept="2YIFZM" id="5avmkTFo6CS" role="3cqZAk">
-                    <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
                     <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                    <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                   </node>
                 </node>
               </node>
@@ -651,8 +651,8 @@
                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                 </node>
                 <node concept="2YIFZM" id="6bG6MAFDGt9" role="33vP2m">
-                  <ref role="37wK5l" to="j10v:~Empty.vector():org.pcollections.PVector" resolve="vector" />
                   <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
+                  <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
                 </node>
               </node>
             </node>
@@ -671,7 +671,7 @@
                         <ref role="3cqZAo" node="v9lBEVgHnA" resolve="l" />
                       </node>
                       <node concept="liA8E" id="v9lBEVgIO7" role="2OqNvi">
-                        <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object):org.pcollections.PVector" resolve="plus" />
+                        <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
                         <node concept="qpA2v" id="7kYh9WsShaj" role="37wK5m">
                           <node concept="2GrUjf" id="46cplYxUvFB" role="3SLO0q">
                             <ref role="2Gs0qQ" node="46cplYxUuxv" resolve="e" />

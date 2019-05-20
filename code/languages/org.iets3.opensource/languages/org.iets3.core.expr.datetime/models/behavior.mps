@@ -246,7 +246,7 @@
                     <ref role="3cqZAo" node="26CArgU3TGe" resolve="date" />
                   </node>
                   <node concept="liA8E" id="3z0DCrxKxKt" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.getDayOfMonth():int" resolve="getDayOfMonth" />
+                    <ref role="37wK5l" to="28m1:~LocalDate.getDayOfMonth()" resolve="getDayOfMonth" />
                   </node>
                 </node>
               </node>
@@ -268,7 +268,7 @@
                     <ref role="3cqZAo" node="26CArgU3TGe" resolve="date" />
                   </node>
                   <node concept="liA8E" id="3z0DCrxKy_0" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue():int" resolve="getMonthValue" />
+                    <ref role="37wK5l" to="28m1:~LocalDate.getMonthValue()" resolve="getMonthValue" />
                   </node>
                 </node>
               </node>
@@ -288,7 +288,7 @@
                   <ref role="3cqZAo" node="26CArgU3TGe" resolve="date" />
                 </node>
                 <node concept="liA8E" id="3z0DCrxKzrR" role="2OqNvi">
-                  <ref role="37wK5l" to="28m1:~LocalDate.getYear():int" resolve="getYear" />
+                  <ref role="37wK5l" to="28m1:~LocalDate.getYear()" resolve="getYear" />
                 </node>
               </node>
             </node>
@@ -343,7 +343,7 @@
                 <ref role="3cqZAo" node="3C_9jV2tW0" resolve="v" />
               </node>
               <node concept="liA8E" id="3C_9jV2uDZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
               </node>
             </node>
           </node>
@@ -381,7 +381,7 @@
         <node concept="3clFbF" id="26CArgU4pMz" role="3cqZAp">
           <node concept="2YIFZM" id="26CArgU4pMV" role="3clFbG">
             <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
-            <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int):java.time.LocalDate" resolve="of" />
+            <ref role="37wK5l" to="28m1:~LocalDate.of(int,int,int)" resolve="of" />
             <node concept="2OqwBi" id="26CArgU4pZS" role="37wK5m">
               <node concept="2qgKlT" id="3C_9jV2L5h" role="2OqNvi">
                 <ref role="37wK5l" node="3C_9jV2mVw" resolve="yearNumber" />
@@ -524,7 +524,7 @@
           <node concept="3clFbS" id="8iseicYDcI" role="SfCbr">
             <node concept="3cpWs6" id="8iseicYDrj" role="3cqZAp">
               <node concept="2YIFZM" id="8iseicYDrl" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                 <node concept="2OqwBi" id="8iseicYDrm" role="37wK5m">
                   <node concept="13iPFW" id="8iseicYDrn" role="2Oq$k0" />
@@ -563,7 +563,7 @@
             <node concept="3cpWs6" id="8iseicYGyP" role="3cqZAp">
               <node concept="2YIFZM" id="8iseicYGyQ" role="3cqZAk">
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <node concept="2OqwBi" id="8iseicYGyR" role="37wK5m">
                   <node concept="13iPFW" id="8iseicYGyS" role="2Oq$k0" />
                   <node concept="3TrcHB" id="8iseicYHip" role="2OqNvi">
@@ -601,7 +601,7 @@
             <node concept="3cpWs6" id="8iseicYJoX" role="3cqZAp">
               <node concept="2YIFZM" id="8iseicYJoY" role="3cqZAk">
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <node concept="2OqwBi" id="8iseicYJoZ" role="37wK5m">
                   <node concept="13iPFW" id="8iseicYJp0" role="2Oq$k0" />
                   <node concept="3TrcHB" id="8iseicYK8z" role="2OqNvi">
@@ -737,7 +737,7 @@
           <node concept="3clFbS" id="8iseid0Z0e" role="SfCbr">
             <node concept="3cpWs6" id="8iseid0Z0f" role="3cqZAp">
               <node concept="2YIFZM" id="8iseid0Z0g" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                 <node concept="2OqwBi" id="8iseid0Z0h" role="37wK5m">
                   <node concept="13iPFW" id="8iseid0Z0i" role="2Oq$k0" />
@@ -775,7 +775,7 @@
           <node concept="3clFbS" id="8iseid0Z0v" role="SfCbr">
             <node concept="3cpWs6" id="8iseid0Z0w" role="3cqZAp">
               <node concept="2YIFZM" id="8iseid0Z0x" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                 <node concept="2OqwBi" id="8iseid0Z0y" role="37wK5m">
                   <node concept="13iPFW" id="8iseid0Z0z" role="2Oq$k0" />

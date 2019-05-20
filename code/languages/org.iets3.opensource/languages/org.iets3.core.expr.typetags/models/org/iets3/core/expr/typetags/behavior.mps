@@ -10,7 +10,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -446,7 +446,7 @@
                   <ref role="3cqZAo" node="2JXkwhJ88lF" resolve="tagMap" />
                 </node>
                 <node concept="liA8E" id="2JXkwhJ8bcS" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="2OqwBi" id="2JXkwhJ8dP0" role="37wK5m">
                     <node concept="37vLTw" id="2JXkwhJ8cYp" role="2Oq$k0">
                       <ref role="3cqZAo" node="2JXkwhJ8cYl" resolve="concept" />
@@ -480,7 +480,7 @@
                   <ref role="3cqZAo" node="2JXkwhJ88lF" resolve="tagMap" />
                 </node>
                 <node concept="liA8E" id="2JXkwhJ8pdP" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.values():java.util.Collection" resolve="values" />
+                  <ref role="37wK5l" to="33ny:~Map.values()" resolve="values" />
                 </node>
               </node>
             </node>
@@ -1831,7 +1831,7 @@
                       <ref role="3cqZAo" node="5SUxxv_T7o8" resolve="tagMap" />
                     </node>
                     <node concept="liA8E" id="1WJTL5jx4i3" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="2OqwBi" id="x_aN5M6bo0" role="37wK5m">
                         <node concept="37vLTw" id="x_aN5M7Mdl" role="2Oq$k0">
                           <ref role="3cqZAo" node="x_aN5M7LJX" resolve="concept" />
@@ -1968,7 +1968,7 @@
                       <ref role="3cqZAo" node="1WJTL5jynZL" resolve="map" />
                     </node>
                     <node concept="liA8E" id="1WJTL5jyqwy" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                      <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="2GrUjf" id="1WJTL5jyqCf" role="37wK5m">
                         <ref role="2Gs0qQ" node="1WJTL5jyo65" resolve="key" />
                       </node>
@@ -1983,7 +1983,7 @@
                     <ref role="3cqZAo" node="1WJTL5jynZL" resolve="map" />
                   </node>
                   <node concept="liA8E" id="1WJTL5jypuh" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                    <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
                     <node concept="2GrUjf" id="1WJTL5jypui" role="37wK5m">
                       <ref role="2Gs0qQ" node="1WJTL5jyo65" resolve="key" />
                     </node>
@@ -2163,13 +2163,13 @@
               <ref role="3cqZAo" node="2nD5pWr78nz" resolve="keys" />
             </node>
             <node concept="liA8E" id="1WJTL5jxFyo" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~Set.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="1WJTL5jxe1T" role="37wK5m">
                 <node concept="37vLTw" id="2nD5pWr79Bv" role="2Oq$k0">
                   <ref role="3cqZAo" node="2nD5pWr76zz" resolve="leftTagMap" />
                 </node>
                 <node concept="liA8E" id="1WJTL5jxgOp" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>
@@ -2181,13 +2181,13 @@
               <ref role="3cqZAo" node="2nD5pWr78nz" resolve="keys" />
             </node>
             <node concept="liA8E" id="1WJTL5jxHRN" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~Set.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="2nD5pWr7aMx" role="37wK5m">
                 <node concept="37vLTw" id="2nD5pWr7bnL" role="2Oq$k0">
                   <ref role="3cqZAo" node="2nD5pWr76Dk" resolve="rightTagMap" />
                 </node>
                 <node concept="liA8E" id="1WJTL5jxja6" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>
@@ -2225,11 +2225,11 @@
               <node concept="2OqwBi" id="5XaocLWP2iX" role="2Oq$k0">
                 <node concept="2QUAEa" id="5XaocLWP1q1" role="2Oq$k0" />
                 <node concept="liA8E" id="5XaocLWP2WD" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getRulesManager():jetbrains.mps.typesystem.inference.RulesManager" resolve="getRulesManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getRulesManager()" resolve="getRulesManager" />
                 </node>
               </node>
               <node concept="liA8E" id="5XaocLWP3DU" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~RulesManager.getOperationType(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getOperationType" />
+                <ref role="37wK5l" to="u78q:~RulesManager.getOperationType(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="getOperationType" />
                 <node concept="37vLTw" id="5XaocLWP3Hr" role="37wK5m">
                   <ref role="3cqZAo" node="2nD5pWr76yh" resolve="operator" />
                 </node>

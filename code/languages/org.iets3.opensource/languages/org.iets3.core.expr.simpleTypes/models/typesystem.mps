@@ -1208,7 +1208,7 @@
               <node concept="2OqwBi" id="2NHHcg2CVTM" role="37wK5m">
                 <node concept="2QUAEa" id="2NHHcg2CVTN" role="2Oq$k0" />
                 <node concept="liA8E" id="2NHHcg2CVTO" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>
@@ -1416,7 +1416,7 @@
               <node concept="2OqwBi" id="3f3yNhCUndq" role="37wK5m">
                 <node concept="2QUAEa" id="3f3yNhCUndr" role="2Oq$k0" />
                 <node concept="liA8E" id="3f3yNhCUnds" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>
@@ -1768,7 +1768,7 @@
               <node concept="2OqwBi" id="3f3yNhCUu8a" role="37wK5m">
                 <node concept="2QUAEa" id="3f3yNhCUu8b" role="2Oq$k0" />
                 <node concept="liA8E" id="3f3yNhCUu8c" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>
@@ -2239,7 +2239,7 @@
               <node concept="2OqwBi" id="3f3yNhCUv35" role="37wK5m">
                 <node concept="2QUAEa" id="3f3yNhCUv36" role="2Oq$k0" />
                 <node concept="liA8E" id="3f3yNhCUv37" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>
@@ -2440,7 +2440,7 @@
               <node concept="2OqwBi" id="5fy$GmTUms6" role="37wK5m">
                 <node concept="2QUAEa" id="5fy$GmTUms7" role="2Oq$k0" />
                 <node concept="liA8E" id="5fy$GmTUms8" role="2OqNvi">
-                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
                 </node>
               </node>
             </node>

@@ -216,7 +216,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="55lPkJH4kCi" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                     <node concept="oxGPV" id="55lPkJH4kCj" role="37wK5m" />
                   </node>
                 </node>
@@ -481,7 +481,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="55lPkJH4lH2" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="oxGPV" id="55lPkJH4lH3" role="37wK5m" />
                   <node concept="37vLTw" id="55lPkJH4ZfG" role="37wK5m">
                     <ref role="3cqZAo" node="55lPkJH4r6r" resolve="result" />

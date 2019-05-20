@@ -1692,7 +1692,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7bd8pkk$kbL" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="7bd8pkk$ke5" role="37wK5m">
                       <property role="Xl_RC" value="state" />
                     </node>
@@ -3191,7 +3191,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="6XMQOZeaC1d" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="6XMQOZeaC1e" role="37wK5m">
                               <node concept="37vLTw" id="6XMQOZeaC1f" role="2Oq$k0">
                                 <ref role="3cqZAo" node="6XMQOZea6v2" resolve="element" />
@@ -3271,7 +3271,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7Z_fDCwqdrH" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.subtract(java.math.BigInteger):java.math.BigInteger" resolve="subtract" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.subtract(java.math.BigInteger)" resolve="subtract" />
               <node concept="37vLTw" id="7Z_fDCwqdyt" role="37wK5m">
                 <ref role="3cqZAo" node="7Z_fDCwqaPt" resolve="entered" />
               </node>
@@ -3319,7 +3319,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5hiN5PknViP" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigInteger.subtract(java.math.BigInteger):java.math.BigInteger" resolve="subtract" />
+              <ref role="37wK5l" to="xlxw:~BigInteger.subtract(java.math.BigInteger)" resolve="subtract" />
               <node concept="37vLTw" id="5hiN5PknViQ" role="37wK5m">
                 <ref role="3cqZAo" node="5hiN5PknViD" resolve="entered" />
               </node>
@@ -3696,7 +3696,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7dN4gbaeCoW" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                               </node>
                             </node>
                           </node>
@@ -3989,7 +3989,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7dN4gbaeNTC" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
             </node>
           </node>
         </node>

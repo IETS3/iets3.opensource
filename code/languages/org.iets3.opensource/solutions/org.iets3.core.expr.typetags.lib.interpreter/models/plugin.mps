@@ -167,7 +167,7 @@
                   <ref role="3cqZAo" node="6KxoTHgJnm2" resolve="s" />
                 </node>
                 <node concept="liA8E" id="6KxoTHgJn$J" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="6KxoTHgJn_b" role="37wK5m">
                     <property role="Xl_RC" value="&lt;script&gt;" />
                   </node>

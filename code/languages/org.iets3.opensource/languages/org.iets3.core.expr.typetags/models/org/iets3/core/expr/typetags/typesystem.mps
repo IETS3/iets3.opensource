@@ -802,7 +802,7 @@
                   <ref role="3cqZAo" node="5SUxxv_TrRj" resolve="subTagMap" />
                 </node>
                 <node concept="liA8E" id="1WJTL5jywwf" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>
@@ -819,7 +819,7 @@
                   <ref role="3cqZAo" node="5SUxxv_TrRr" resolve="supTagMap" />
                 </node>
                 <node concept="liA8E" id="1WJTL5jyzYr" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+                  <ref role="37wK5l" to="33ny:~Map.keySet()" resolve="keySet" />
                 </node>
               </node>
             </node>

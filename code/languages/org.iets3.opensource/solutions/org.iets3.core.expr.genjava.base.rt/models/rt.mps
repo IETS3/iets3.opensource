@@ -5,12 +5,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="j10v" ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290/java:org.pcollections(org.iets3.core.expr.base/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="vj64" ref="r:bc28ef12-2b45-4cb1-adef-885617bf3e39(org.iets3.core.expr.genjava.messages.rt.rt)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -467,7 +467,7 @@
                   <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
                 </node>
                 <node concept="liA8E" id="3A3G7ASq8SI" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                  <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
                   <node concept="2GrUjf" id="3A3G7ASq9gy" role="37wK5m">
                     <ref role="2Gs0qQ" node="3A3G7ASlX$P" resolve="coll" />
                   </node>
@@ -486,8 +486,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="3A3G7ASqbXy" role="33vP2m">
-              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection):org.pcollections.TreePVector" resolve="from" />
               <ref role="1Pybhc" to="j10v:~TreePVector" resolve="TreePVector" />
+              <ref role="37wK5l" to="j10v:~TreePVector.from(java.util.Collection)" resolve="from" />
               <node concept="37vLTw" id="3A3G7ASqc7S" role="37wK5m">
                 <ref role="3cqZAo" node="3A3G7ASlXHH" resolve="r" />
               </node>
@@ -991,7 +991,7 @@
               <ref role="3cqZAo" node="VXV$b3qj39" resolve="parameters" />
             </node>
             <node concept="liA8E" id="VXV$b5mcKj" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="VXV$b5mfGL" role="37wK5m">
                 <node concept="2OqwBi" id="VXV$b5mdZZ" role="2Oq$k0">
                   <node concept="37vLTw" id="VXV$b5md6I" role="2Oq$k0">

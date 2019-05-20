@@ -513,7 +513,7 @@
                   <ref role="1PxDUh" to="vsv5:65vXeyMqfR8" resolve="GlobalContext" />
                 </node>
                 <node concept="liA8E" id="lH$PujR70q" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~ThreadLocal.get():java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="wyt6:~ThreadLocal.get()" resolve="get" />
                 </node>
               </node>
               <node concept="liA8E" id="lH$PujR7dU" role="2OqNvi">
@@ -592,7 +592,7 @@
                   <ref role="1PxDUh" to="vsv5:65vXeyMqfR8" resolve="GlobalContext" />
                 </node>
                 <node concept="liA8E" id="lH$PujR7pQ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~ThreadLocal.get():java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="wyt6:~ThreadLocal.get()" resolve="get" />
                 </node>
               </node>
               <node concept="liA8E" id="lH$PujR7pR" role="2OqNvi">

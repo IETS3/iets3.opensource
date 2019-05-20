@@ -706,7 +706,7 @@
                     <node concept="2yIwOk" id="3n7Va9CMIBl" role="2OqNvi" />
                   </node>
                   <node concept="liA8E" id="agNjvG71mD" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3n7Va9CMKpD" role="3uHU7w">

@@ -571,7 +571,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5cK3QOcKJR3" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="5cK3QOcKJR4" role="37wK5m">
                             <node concept="2GrUjf" id="5cK3QOcKJR5" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="5cK3QOcKBZb" resolve="aa" />
@@ -1320,7 +1320,7 @@
               <node concept="2yIwOk" id="4HGbj9TgGcf" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="4HGbj9TgGKE" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
             </node>
           </node>
         </node>

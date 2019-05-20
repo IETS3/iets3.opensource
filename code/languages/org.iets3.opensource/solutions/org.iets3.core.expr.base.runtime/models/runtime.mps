@@ -519,15 +519,15 @@
           <node concept="2OqwBi" id="2Qbt$1tTX2i" role="3clFbG">
             <node concept="2OqwBi" id="2Qbt$1tTWYB" role="2Oq$k0">
               <node concept="2YIFZM" id="2Qbt$1tTWXG" role="2Oq$k0">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
               </node>
               <node concept="liA8E" id="2Qbt$1tTX1z" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
             <node concept="liA8E" id="2Qbt$1tTX43" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="2Qbt$1tTX4L" role="37wK5m">
                 <ref role="3cqZAo" node="2Qbt$1tTWLN" resolve="type" />
               </node>
@@ -555,15 +555,15 @@
           <node concept="2OqwBi" id="4ptnK4ii8Wj" role="3clFbG">
             <node concept="2OqwBi" id="4ptnK4ii8Wk" role="2Oq$k0">
               <node concept="2YIFZM" id="4ptnK4ii8Wl" role="2Oq$k0">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
               </node>
               <node concept="liA8E" id="4ptnK4ii8Wm" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
             <node concept="liA8E" id="4ptnK4ii8Wn" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="4ptnK4ii8Wo" role="37wK5m">
                 <ref role="3cqZAo" node="4ptnK4ii8Wq" resolve="type" />
               </node>
@@ -591,15 +591,15 @@
           <node concept="2OqwBi" id="2Qbt$1tU33j" role="3clFbG">
             <node concept="2OqwBi" id="2Qbt$1tU33k" role="2Oq$k0">
               <node concept="2YIFZM" id="2Qbt$1tU33l" role="2Oq$k0">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
               </node>
               <node concept="liA8E" id="2Qbt$1tU33m" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
             <node concept="liA8E" id="2Qbt$1tU33n" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
               <node concept="37vLTw" id="2Qbt$1tU33o" role="37wK5m">
                 <ref role="3cqZAo" node="2Qbt$1tU33q" resolve="type" />
               </node>
@@ -994,7 +994,7 @@
                     <ref role="3cqZAo" node="1RwPUjzi$ax" resolve="values" />
                   </node>
                   <node concept="liA8E" id="4Q4DxjDbM41" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                    <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                   </node>
                 </node>
               </node>
@@ -1021,7 +1021,7 @@
                         <ref role="3cqZAo" node="4Q4DxjDbM3W" resolve="iterator" />
                       </node>
                       <node concept="liA8E" id="4Q4DxjDbM4d" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                        <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                       </node>
                     </node>
                   </node>
@@ -1093,7 +1093,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3SMYSUUkg6k" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                 </node>
                               </node>
                             </node>
@@ -1121,7 +1121,7 @@
                                     <ref role="3cqZAo" node="4Q4DxjDbM49" resolve="next" />
                                   </node>
                                   <node concept="liA8E" id="3SMYSUUklLA" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                   </node>
                                 </node>
                               </node>
@@ -1175,7 +1175,7 @@
                               <ref role="3cqZAo" node="3SMYSUUk50_" resolve="element" />
                             </node>
                             <node concept="liA8E" id="3SMYSUUk0pU" role="2OqNvi">
-                              <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                               <node concept="37vLTw" id="3SMYSUUk0LZ" role="37wK5m">
                                 <ref role="3cqZAo" node="4Q4DxjDbM43" resolve="max" />
                               </node>
@@ -1192,7 +1192,7 @@
                   <ref role="3cqZAo" node="4Q4DxjDbM3W" resolve="iterator" />
                 </node>
                 <node concept="liA8E" id="4Q4DxjDbM4y" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                  <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                 </node>
               </node>
             </node>
@@ -1218,7 +1218,7 @@
             </node>
             <node concept="3cpWs6" id="3SMYSUUk_xj" role="3cqZAp">
               <node concept="2YIFZM" id="3SMYSUUkAqv" role="3cqZAk">
-                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double):java.math.BigDecimal" resolve="valueOf" />
+                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
                 <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                 <node concept="1ZRNhn" id="3SMYSUUkBhn" role="37wK5m">
                   <node concept="10M0yZ" id="3SMYSUUkAYT" role="2$L3a6">
@@ -1245,7 +1245,7 @@
                       <ref role="3cqZAo" node="1RwPUjzi$ax" resolve="values" />
                     </node>
                     <node concept="liA8E" id="4Q4DxjDbJJj" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                      <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                     </node>
                   </node>
                 </node>
@@ -1272,7 +1272,7 @@
                           <ref role="3cqZAo" node="4Q4DxjDbJJg" resolve="iterator" />
                         </node>
                         <node concept="liA8E" id="4Q4DxjDbKj3" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                          <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                         </node>
                       </node>
                     </node>
@@ -1332,7 +1332,7 @@
                                     <ref role="3cqZAo" node="4Q4DxjDbKj0" resolve="next" />
                                   </node>
                                   <node concept="liA8E" id="3SMYSUUkZPY" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                   </node>
                                 </node>
                               </node>
@@ -1363,7 +1363,7 @@
                                       <ref role="3cqZAo" node="4Q4DxjDbKj0" resolve="next" />
                                     </node>
                                     <node concept="liA8E" id="3SMYSUUlecc" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                     </node>
                                   </node>
                                 </node>
@@ -1417,7 +1417,7 @@
                                 <ref role="3cqZAo" node="3SMYSUUkVkf" resolve="element" />
                               </node>
                               <node concept="liA8E" id="3SMYSUUl63$" role="2OqNvi">
-                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                                 <node concept="37vLTw" id="3SMYSUUl6mm" role="37wK5m">
                                   <ref role="3cqZAo" node="4Q4DxjDbLbS" resolve="max" />
                                 </node>
@@ -1434,7 +1434,7 @@
                     <ref role="3cqZAo" node="4Q4DxjDbJJg" resolve="iterator" />
                   </node>
                   <node concept="liA8E" id="4Q4DxjDbK5j" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                    <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                   </node>
                 </node>
               </node>
@@ -1461,7 +1461,7 @@
               <node concept="3cpWs6" id="1RwPUjzjmil" role="3cqZAp">
                 <node concept="2YIFZM" id="1RwPUjzjmim" role="3cqZAk">
                   <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
-                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                   <node concept="10M0yZ" id="3SMYSUUkLkN" role="37wK5m">
                     <ref role="3cqZAo" to="wyt6:~Long.MIN_VALUE" resolve="MIN_VALUE" />
                     <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
@@ -1509,7 +1509,7 @@
                     <ref role="3cqZAo" node="1RwPUjzjkm3" resolve="values" />
                   </node>
                   <node concept="liA8E" id="6HHp2WnvqXF" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                    <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                   </node>
                 </node>
               </node>
@@ -1536,7 +1536,7 @@
                         <ref role="3cqZAo" node="6HHp2WnvqXA" resolve="iterator" />
                       </node>
                       <node concept="liA8E" id="6HHp2WnvqXR" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                        <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                       </node>
                     </node>
                   </node>
@@ -1608,7 +1608,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3SMYSUUtzFn" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                 </node>
                               </node>
                             </node>
@@ -1636,7 +1636,7 @@
                                     <ref role="3cqZAo" node="6HHp2WnvqXN" resolve="next" />
                                   </node>
                                   <node concept="liA8E" id="3SMYSUUtzFz" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                   </node>
                                 </node>
                               </node>
@@ -1679,7 +1679,7 @@
                               <ref role="3cqZAo" node="3SMYSUUtzET" resolve="element" />
                             </node>
                             <node concept="liA8E" id="3SMYSUUtDLe" role="2OqNvi">
-                              <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                               <node concept="37vLTw" id="3SMYSUUtE4c" role="37wK5m">
                                 <ref role="3cqZAo" node="6HHp2WnvqXH" resolve="min" />
                               </node>
@@ -1708,7 +1708,7 @@
                   <ref role="3cqZAo" node="6HHp2WnvqXA" resolve="iterator" />
                 </node>
                 <node concept="liA8E" id="6HHp2WnvqYc" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                  <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                 </node>
               </node>
             </node>
@@ -1735,7 +1735,7 @@
             <node concept="3cpWs6" id="6HHp2WnvqYd" role="3cqZAp">
               <node concept="2YIFZM" id="s2V0$62ke1" role="3cqZAk">
                 <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double):java.math.BigDecimal" resolve="valueOf" />
+                <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(double)" resolve="valueOf" />
                 <node concept="10M0yZ" id="oG0sI$C_Yh" role="37wK5m">
                   <ref role="1PxDUh" to="wyt6:~Double" resolve="Double" />
                   <ref role="3cqZAo" to="wyt6:~Double.MAX_VALUE" resolve="MAX_VALUE" />
@@ -1759,7 +1759,7 @@
                       <ref role="3cqZAo" node="1RwPUjzjkm3" resolve="values" />
                     </node>
                     <node concept="liA8E" id="6HHp2WnvqWK" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Collection.iterator():java.util.Iterator" resolve="iterator" />
+                      <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
                     </node>
                   </node>
                 </node>
@@ -1786,7 +1786,7 @@
                           <ref role="3cqZAo" node="6HHp2WnvqWF" resolve="iterator" />
                         </node>
                         <node concept="liA8E" id="6HHp2WnvqWW" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                          <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                         </node>
                       </node>
                     </node>
@@ -1846,7 +1846,7 @@
                                     <ref role="3cqZAo" node="6HHp2WnvqWS" resolve="next" />
                                   </node>
                                   <node concept="liA8E" id="3SMYSUUtT_8" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                   </node>
                                 </node>
                               </node>
@@ -1877,7 +1877,7 @@
                                       <ref role="3cqZAo" node="6HHp2WnvqWS" resolve="next" />
                                     </node>
                                     <node concept="liA8E" id="3SMYSUUtT_l" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                     </node>
                                   </node>
                                 </node>
@@ -1920,7 +1920,7 @@
                                 <ref role="3cqZAo" node="3SMYSUUtT$J" resolve="element" />
                               </node>
                               <node concept="liA8E" id="3SMYSUUtZCG" role="2OqNvi">
-                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
                                 <node concept="37vLTw" id="3SMYSUUtZVD" role="37wK5m">
                                   <ref role="3cqZAo" node="6HHp2WnvqWM" resolve="min" />
                                 </node>
@@ -1949,7 +1949,7 @@
                     <ref role="3cqZAo" node="6HHp2WnvqWF" resolve="iterator" />
                   </node>
                   <node concept="liA8E" id="6HHp2WnvqXh" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                    <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
                   </node>
                 </node>
               </node>
@@ -1976,7 +1976,7 @@
               <node concept="3cpWs6" id="6HHp2WnvqXi" role="3cqZAp">
                 <node concept="2YIFZM" id="s2V0$62kcN" role="3cqZAk">
                   <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
-                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                  <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long)" resolve="valueOf" />
                   <node concept="10M0yZ" id="6HHp2Wnvrjy" role="37wK5m">
                     <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
                     <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
