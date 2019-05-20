@@ -29,8 +29,10 @@ def java_args_config = {
       args '---l'
   }
 
-  args '---a-p-u'
-  args "${plugins_location}"
+  // not applicable with mps-19-1
+  //args '---a-p-u'
+  //args "${plugins_location}"
+  //end not applicable
 
   ddg_use_cases.each { use_case ->
       args "${use_case}"
