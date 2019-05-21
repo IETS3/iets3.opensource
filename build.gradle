@@ -320,5 +320,5 @@ github {
 githubRelease.dependsOn packageOpenSource
 
 //DependenciesViewer
-tasks.getByName("publish").dependsOn buildWithDdg
+tasks.getByName("publish").doLast {buildWithDdg}
 //End DependenciesViewer
