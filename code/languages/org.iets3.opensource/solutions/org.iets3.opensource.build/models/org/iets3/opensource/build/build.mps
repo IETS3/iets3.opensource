@@ -5171,6 +5171,11 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3pGKFC7NWjS" role="3bR37C">
+          <node concept="3bR9La" id="3pGKFC7NWjT" role="1SiIV1">
+            <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3vxfdxbuJq7" role="2G$12L">
         <property role="BnDLt" value="true" />
