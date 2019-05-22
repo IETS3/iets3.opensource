@@ -283,20 +283,19 @@ defaultTasks 'ant-clean-and-build'
 
 //DependenciesViewer
 task antCleanAndBuildBeforeDdg {
-    println "task ant-clean-and-build"
+    doFirst {println "task ant-clean-and-build"}
     dependsOn 'ant-clean-and-build'
 }
 
 task setupBeforeDdg {
     dependsOn antCleanAndBuildBeforeDdg
-    println "setup-task before ddg"
     dependsOn setup
 }
 
 run_ddg_iets3_opensource.dependsOn setupBeforeDdg
 
 task buildWithDdg {
-    println 'ddg'
+    doFirst {println 'ddg'}
     dependsOn run_ddg_iets3_opensource
 }
 //End DependenciesViewer
@@ -320,5 +319,14 @@ github {
 githubRelease.dependsOn packageOpenSource
 
 //DependenciesViewer
-tasks.getByName("publish").dependsOn buildWithDdg
+if(project.ext.ciBuild && ddgEnabled){
+    println "ddg is executed."
+    tasks.getByName("publish").dependsOn buildWithDdg
+}else{
+    println "run_ddg: ciBuild: " + project.ext.ciBuild
+    if(project.ext.ciBuild){
+        println "run_ddg: ddgEnabled: " + ddgEnabled
+    }
+    println "run_ddg: SKIPPED"
+}
 //End DependenciesViewer
