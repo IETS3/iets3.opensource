@@ -2204,6 +2204,9 @@
           <node concept="VechU" id="67Y8mp$MWs7" role="3F10Kt">
             <property role="Vb096" value="darkGray" />
           </node>
+          <node concept="VPxyj" id="14te8iJyb8p" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="OXEIz" id="7cBI1LfPKUe" role="P5bDN">
