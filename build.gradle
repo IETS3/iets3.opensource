@@ -20,9 +20,6 @@ plugins {
     id "co.riiid.gradle" version "0.4.2"
 }
 
-// DependenciesViewer
-apply from: 'dv-ddg-client/build.gradle'
-
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
@@ -281,6 +278,27 @@ task setup {
 
 defaultTasks 'ant-clean-and-build'
 
+LocalDateTime t = LocalDateTime.now()
+
+def releaseNotes = """Automated Nighly build from ${t as String}."""
+
+github {
+    owner = 'IETS3'
+    repo = 'iets3.opensource'
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    tagName = 'nightly-release-' + version
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nighly Build ' + version
+    body = releaseNotes
+    prerelease = true
+    assets = packageOpenSource.outputs.files
+}
+
+githubRelease.dependsOn packageOpenSource
+
+// DependenciesViewer
+apply from: 'dv-ddg-client/build.gradle'
+
 //DependenciesViewer
 task antCleanAndBuildBeforeDdg {
     doFirst {println "task ant-clean-and-build"}
@@ -299,24 +317,6 @@ task buildWithDdg {
     dependsOn run_ddg_iets3_opensource
 }
 //End DependenciesViewer
-
-LocalDateTime t = LocalDateTime.now()
-
-def releaseNotes = """Automated Nighly build from ${t as String}."""
-
-github {
-    owner = 'IETS3'
-    repo = 'iets3.opensource'
-    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
-    tagName = 'nightly-release-' + version
-    targetCommitish = GitBasedVersioning.getGitCommitHash()
-    name = 'Nighly Build ' + version
-    body = releaseNotes
-    prerelease = true
-    assets = packageOpenSource.outputs.files
-}
-
-githubRelease.dependsOn packageOpenSource
 
 //DependenciesViewer
 if(project.ext.ciBuild && ddgEnabled){
