@@ -320,8 +320,8 @@ task buildWithDdg {
 
 //DependenciesViewer
 if(project.ext.ciBuild && ddgEnabled){
-    urlTemp = remote? url : "localhost"
-    println "ddg is executed. Sending to url: " + urlTemp
+    def urlTemp = remote? url : "localhost"
+    println "ddg is executed. Sending to url: ${urlTemp}"
     tasks.getByName("publish").dependsOn buildWithDdg
 }else{
     println "run_ddg: ciBuild: " + project.ext.ciBuild
