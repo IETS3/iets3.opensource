@@ -299,6 +299,11 @@ githubRelease.dependsOn packageOpenSource
 // DependenciesViewer
 apply from: 'dv-ddg-client/build.gradle'
 
+//-DddgEnabled=true
+project.ext.ddgEnabled = System.getProperty("ddgEnabledCi") != null && System.getProperty("ddgEnabledCi").equalsIgnoreCase("true")
+println "System-property ddgEndabled: " + System.getProperty("ddgEnabledCi")
+println "project.ext.ddgEnabled: ${ddgEnabled}"
+
 //DependenciesViewer
 task antCleanAndBuildBeforeDdg {
     doFirst {println "task ant-clean-and-build"}
