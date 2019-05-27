@@ -308,7 +308,6 @@ if(ciBuild){
 }
 println "project.ext.ddgEnabled: ${ddgEnabled}"
 
-//DependenciesViewer
 task antCleanAndBuildBeforeDdg {
     doFirst {println "task ant-clean-and-build"}
     dependsOn 'ant-clean-and-build'
@@ -325,9 +324,7 @@ task buildWithDdg {
     doFirst {println 'ddg'}
     dependsOn run_ddg_iets3_opensource
 }
-//End DependenciesViewer
 
-//DependenciesViewer
 if(project.ext.ciBuild && ddgEnabled){
     def urlTemp = remote? url : "localhost"
     println "ddg is executed. Sending to url: ${urlTemp}"
