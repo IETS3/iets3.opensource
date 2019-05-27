@@ -299,9 +299,13 @@ githubRelease.dependsOn packageOpenSource
 // DependenciesViewer
 apply from: 'dv-ddg-client/build.gradle'
 
-//-DddgEnabled=true
-project.ext.ddgEnabled = System.getProperty("ddgEnabledCi") != null && System.getProperty("ddgEnabledCi").equalsIgnoreCase("true")
-println "System-property ddgEndabled: " + System.getProperty("ddgEnabledCi")
+if(ciBuild){
+    project.ext.ddgEnabled = hasProperty("ddgEnabledCi") && property("ddgEnabledCi").equalsIgnoreCase("true")
+    println "findProperty ddgEnabledCi: " + findProperty("ddgEnabledCi")
+}else{
+    project.ext.ddgEnabled = System.getProperty("ddgEnabledLocal") != null && System.getProperty("ddgEnabledLocal").equalsIgnoreCase("true")
+    println "System-property ddgEndabledLocal: " + System.getProperty("ddgEnabledLocal")
+}
 println "project.ext.ddgEnabled: ${ddgEnabled}"
 
 //DependenciesViewer
