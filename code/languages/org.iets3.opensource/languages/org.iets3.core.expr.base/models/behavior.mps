@@ -24711,5 +24711,38 @@
       <node concept="10Oyi0" id="5Iz9nTHIbAh" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="7KDVkAEm18s">
+    <ref role="13h7C2" to="hm2y:7KDVkAEm18o" resolve="IParameterizedTypeSupportsEquals" />
+    <node concept="13i0hz" id="7KDVkAEr1El" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTypeParameters" />
+      <node concept="3Tm1VV" id="7KDVkAEr1Em" role="1B3o_S" />
+      <node concept="3uibUv" id="7KDVkAEr1EX" role="3clF45">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="3Tqbb2" id="7KDVkAEr1Fm" role="11_B2D">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7KDVkAEr1Eo" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="7KDVkAErfTB" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isTypeCompatibleTo" />
+      <node concept="37vLTG" id="7KDVkAErfVL" role="3clF46">
+        <property role="TrG5h" value="otherType" />
+        <node concept="3Tqbb2" id="7KDVkAErfW1" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7KDVkAErfTC" role="1B3o_S" />
+      <node concept="10P_77" id="7KDVkAErfUd" role="3clF45" />
+      <node concept="3clFbS" id="7KDVkAErfTE" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="7KDVkAEm18t" role="13h7CW">
+      <node concept="3clFbS" id="7KDVkAEm18u" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

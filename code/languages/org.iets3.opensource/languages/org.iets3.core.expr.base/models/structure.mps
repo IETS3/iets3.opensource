@@ -2191,5 +2191,9 @@
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="PlHQZ" id="7KDVkAEm18o">
+    <property role="EcuMT" value="8946943035394495000" />
+    <property role="TrG5h" value="IParameterizedTypeSupportsEquals" />
+  </node>
 </model>
 
