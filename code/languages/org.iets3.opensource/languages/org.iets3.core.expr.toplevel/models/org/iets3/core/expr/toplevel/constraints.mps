@@ -933,13 +933,25 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="B4Soa85gaO" role="3uHU7B">
-              <node concept="37vLTw" id="B4Soa85Bmy" role="2Oq$k0">
-                <ref role="3cqZAo" node="B4Soa85v4S" resolve="contracted" />
+            <node concept="22lmx$" id="1ZUMnOwC_c$" role="3uHU7B">
+              <node concept="2OqwBi" id="1ZUMnOwCA1u" role="3uHU7B">
+                <node concept="37vLTw" id="1ZUMnOwC_$8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="B4Soa85v4S" resolve="contracted" />
+                </node>
+                <node concept="1mIQ4w" id="1ZUMnOwCDm5" role="2OqNvi">
+                  <node concept="chp4Y" id="1ZUMnOwCDN_" role="cj9EA">
+                    <ref role="cht4Q" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
+                  </node>
+                </node>
               </node>
-              <node concept="1mIQ4w" id="B4Soa85j2u" role="2OqNvi">
-                <node concept="chp4Y" id="B4Soa85jvt" role="cj9EA">
-                  <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+              <node concept="2OqwBi" id="B4Soa85gaO" role="3uHU7w">
+                <node concept="37vLTw" id="B4Soa85Bmy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="B4Soa85v4S" resolve="contracted" />
+                </node>
+                <node concept="1mIQ4w" id="B4Soa85j2u" role="2OqNvi">
+                  <node concept="chp4Y" id="B4Soa85jvt" role="cj9EA">
+                    <ref role="cht4Q" to="yv47:xu7xcKinTJ" resolve="IRecordDeclaration" />
+                  </node>
                 </node>
               </node>
             </node>
