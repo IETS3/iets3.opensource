@@ -670,6 +670,26 @@
                             <property role="3SKdUp" value="Equality deserves a special handling as it should also be applicable to compound types like Lists, which unfortunately is not possible with Overloaded Operation Containers." />
                           </node>
                         </node>
+                        <node concept="3SKdUt" id="KoRsm$BjSz" role="3cqZAp">
+                          <node concept="3SKdUq" id="KoRsm$BjS_" role="3SKWNk">
+                            <property role="3SKdUp" value="NOTE: usually ComparisonRule are used for cases like this one, but ComparisonRules" />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="KoRsm$BkQG" role="3cqZAp">
+                          <node concept="3SKdUq" id="KoRsm$BkQI" role="3SKWNk">
+                            <property role="3SKdUp" value="a) cannot be recursive (it is not allowed to use :~: within a ComparisonRule), and" />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="KoRsm$BlPv" role="3cqZAp">
+                          <node concept="3SKdUq" id="KoRsm$BlPx" role="3SKWNk">
+                            <property role="3SKdUp" value="b) do not allow querying operation types as they do not provide a typeCheckingContext" />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="KoRsm$BmNK" role="3cqZAp">
+                          <node concept="3SKdUq" id="KoRsm$BmNM" role="3SKWNk">
+                            <property role="3SKdUp" value="hence this type system could not be realized using ComparisonRules." />
+                          </node>
+                        </node>
                         <node concept="3clFbF" id="7KDVkAEtzrx" role="3cqZAp">
                           <node concept="2YIFZM" id="7KDVkAEtAuR" role="3clFbG">
                             <ref role="37wK5l" node="7KDVkAEt$sM" resolve="ensureTypeCompatibility" />
