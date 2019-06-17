@@ -103,6 +103,9 @@
     <node concept="PrWs8" id="2uo6UInBpUp" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHH7" resolve="IOrderedCollection" />
     </node>
+    <node concept="PrWs8" id="7KDVkAEqWmi" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7KDVkAEm18o" resolve="ITypeSupportsEquals" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6zmBjqUinVn">
     <property role="TrG5h" value="ListLiteral" />
