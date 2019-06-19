@@ -52,6 +52,7 @@
     <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" />
     <import index="w474" ref="r:06b241ed-1779-4f34-8d6f-e61e9dd94387(org.iets3.core.expr.testExecution.plugin)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
+    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -390,9 +391,6 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
-      </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
@@ -2346,6 +2344,22 @@
       <ref role="13i0hy" to="tpe5:hSQIE8p" resolve="getSimpleClassName" />
       <node concept="3Tm1VV" id="6VjyfUYe1Ga" role="1B3o_S" />
       <node concept="3clFbS" id="6VjyfUYe2XB" role="3clF47">
+        <node concept="3cpWs8" id="57VdFqPiDia" role="3cqZAp">
+          <node concept="3cpWsn" id="57VdFqPiDib" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="57VdFqPiDic" role="1tU5fm" />
+            <node concept="2OqwBi" id="57VdFqPiDid" role="33vP2m">
+              <node concept="liA8E" id="57VdFqPiDie" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+              </node>
+              <node concept="2JrnkZ" id="57VdFqPiDif" role="2Oq$k0">
+                <node concept="13iPFW" id="57VdFqPiDig" role="2JrQYb" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="57VdFqPiDih" role="3cqZAp" />
+        <node concept="3clFbH" id="57VdFqPiDhq" role="3cqZAp" />
         <node concept="3cpWs8" id="6VjyfUYekA1" role="3cqZAp">
           <node concept="3cpWsn" id="6VjyfUYekA2" role="3cpWs9">
             <property role="TrG5h" value="tec" />
@@ -2354,8 +2368,15 @@
             </node>
             <node concept="9H$SH" id="6VjyfUYekA3" role="33vP2m">
               <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
-              <node concept="3rM5sP" id="6VjyfUYekA4" role="9HWM5">
-                <property role="3rM5sR" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+              <node concept="2OqwBi" id="57VdFqPlqll" role="9HWM5">
+                <node concept="liA8E" id="57VdFqPlqzy" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                </node>
+                <node concept="2JrnkZ" id="57VdFqPlqlq" role="2Oq$k0">
+                  <node concept="37vLTw" id="57VdFqPkSll" role="2JrQYb">
+                    <ref role="3cqZAo" node="57VdFqPiDib" resolve="m" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2491,6 +2512,22 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="57VdFqPfgDI" role="3cqZAp">
+          <node concept="3cpWsn" id="57VdFqPfgDL" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="57VdFqPfgDG" role="1tU5fm" />
+            <node concept="2OqwBi" id="57VdFqPfhOt" role="33vP2m">
+              <node concept="2JrnkZ" id="57VdFqPfhOy" role="2Oq$k0">
+                <node concept="13iPFW" id="57VdFqPfh09" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="57VdFqPkJwF" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="57VdFqPkLxS" role="3cqZAp" />
+        <node concept="3clFbH" id="57VdFqPikSS" role="3cqZAp" />
         <node concept="3clFbF" id="3GEHGglRraj" role="3cqZAp">
           <node concept="2OqwBi" id="3GEHGglRrWn" role="3clFbG">
             <node concept="10M0yZ" id="3GEHGglRrmL" role="2Oq$k0">
@@ -2503,8 +2540,15 @@
                 <node concept="Xl_RD" id="3GEHGglRsEW" role="3uHU7B">
                   <property role="Xl_RC" value="!!!!! module " />
                 </node>
-                <node concept="3rM5sP" id="3GEHGglRty6" role="3uHU7w">
-                  <property role="3rM5sR" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+                <node concept="2OqwBi" id="57VdFqPlreT" role="3uHU7w">
+                  <node concept="liA8E" id="57VdFqPltIx" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                  </node>
+                  <node concept="2JrnkZ" id="57VdFqPlreY" role="2Oq$k0">
+                    <node concept="37vLTw" id="57VdFqPkMTw" role="2JrQYb">
+                      <ref role="3cqZAo" node="57VdFqPfgDL" resolve="m" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2518,8 +2562,15 @@
             </node>
             <node concept="9H$SH" id="ljKHDcIbRV" role="33vP2m">
               <ref role="9Hxhg" to="w474:3SkjTN1M1kS" resolve="TestExecutionPreferences" />
-              <node concept="3rM5sP" id="3GEHGglTZmf" role="9HWM5">
-                <property role="3rM5sR" value="~_PreferencesModule#org.iets3.opensource.__spreferences.TestExecutionPreferences" />
+              <node concept="2OqwBi" id="57VdFqPlujP" role="9HWM5">
+                <node concept="liA8E" id="57VdFqPlx1b" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                </node>
+                <node concept="2JrnkZ" id="57VdFqPlujU" role="2Oq$k0">
+                  <node concept="37vLTw" id="57VdFqPkPAU" role="2JrQYb">
+                    <ref role="3cqZAo" node="57VdFqPfgDL" resolve="m" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
