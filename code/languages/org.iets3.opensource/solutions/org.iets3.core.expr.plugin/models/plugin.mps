@@ -75,6 +75,7 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -7806,6 +7807,35 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="AG_FWsrTgJ" role="3cqZAp">
+                    <node concept="2OqwBi" id="AG_FWsrTVC" role="3clFbG">
+                      <node concept="10M0yZ" id="AG_FWsrToU" role="2Oq$k0">
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      </node>
+                      <node concept="liA8E" id="AG_FWsrVam" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                        <node concept="3cpWs3" id="AG_FWsrYxk" role="37wK5m">
+                          <node concept="37vLTw" id="AG_FWsrZhu" role="3uHU7w">
+                            <ref role="3cqZAo" node="57VdFqPmOkv" resolve="projectModules" />
+                          </node>
+                          <node concept="3cpWs3" id="AG_FWssx2L" role="3uHU7B">
+                            <node concept="Xl_RD" id="AG_FWsswch" role="3uHU7w">
+                              <property role="Xl_RC" value=" " />
+                            </node>
+                            <node concept="3cpWs3" id="AG_FWssvKe" role="3uHU7B">
+                              <node concept="Xl_RD" id="AG_FWsrVAT" role="3uHU7B">
+                                <property role="Xl_RC" value="!!!!! plugin: " />
+                              </node>
+                              <node concept="37vLTw" id="AG_FWssxGu" role="3uHU7w">
+                                <ref role="3cqZAo" node="57VdFqPmBm_" resolve="mpsproj" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="6pNCASbIAyC" role="3cqZAp">
                     <node concept="3cpWsn" id="6pNCASbIAyD" role="3cpWs9">
                       <property role="TrG5h" value="tec" />
@@ -7937,6 +7967,35 @@
                         </node>
                         <node concept="liA8E" id="57VdFqPmRIQ" role="2OqNvi">
                           <ref role="37wK5l" to="z1c4:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="AG_FWss05v" role="3cqZAp">
+                    <node concept="2OqwBi" id="AG_FWss0D1" role="3clFbG">
+                      <node concept="10M0yZ" id="AG_FWss0cv" role="2Oq$k0">
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      </node>
+                      <node concept="liA8E" id="AG_FWss1se" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                        <node concept="3cpWs3" id="AG_FWss48x" role="37wK5m">
+                          <node concept="37vLTw" id="AG_FWss4xf" role="3uHU7w">
+                            <ref role="3cqZAo" node="57VdFqPmRIL" resolve="projectModules" />
+                          </node>
+                          <node concept="3cpWs3" id="AG_FWsszFs" role="3uHU7B">
+                            <node concept="Xl_RD" id="AG_FWssyK$" role="3uHU7w">
+                              <property role="Xl_RC" value=" " />
+                            </node>
+                            <node concept="3cpWs3" id="AG_FWssyqW" role="3uHU7B">
+                              <node concept="Xl_RD" id="AG_FWss1T8" role="3uHU7B">
+                                <property role="Xl_RC" value="!!!!!! plugin: " />
+                              </node>
+                              <node concept="37vLTw" id="AG_FWss$eI" role="3uHU7w">
+                                <ref role="3cqZAo" node="57VdFqPmRnB" resolve="mpsproj" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
