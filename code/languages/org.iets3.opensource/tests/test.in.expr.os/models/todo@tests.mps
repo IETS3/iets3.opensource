@@ -227,6 +227,10 @@
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
       <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
+      <concept id="1925389232535425850" name="org.iets3.core.expr.tests.structure.AndMatcher" flags="ng" index="1h6CxO">
+        <child id="1925389232535425913" name="right" index="1h6CwR" />
+        <child id="1925389232535425911" name="left" index="1h6CwT" />
+      </concept>
       <concept id="6723982381150106591" name="org.iets3.core.expr.tests.structure.ContainsString" flags="ng" index="3_fT66">
         <child id="6723982381150106625" name="text" index="3_fTpo" />
       </concept>
@@ -2140,6 +2144,33 @@
           <node concept="3_fT66" id="5Pgo_ASz3wC" role="3_bYPF">
             <node concept="30bdrP" id="5Pgo_ASz3wQ" role="3_fTpo">
               <property role="30bdrQ" value="to &gt; from" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3_nDh3" id="1vVFmkXH7wC" role="_fkp5">
+        <node concept="2S399m" id="1vVFmkXH7wD" role="3_nNKq">
+          <node concept="2Ss9cW" id="1vVFmkXH7wE" role="2S399n">
+            <ref role="2Ss9cX" node="1QYdL39G9Vz" resolve="AgeRange" />
+          </node>
+          <node concept="30bXRB" id="1vVFmkXH7wF" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="1vVFmkXH7wG" role="2S399l">
+            <property role="30bXRw" value="3" />
+          </node>
+        </node>
+        <node concept="3_vHme" id="1vVFmkXH7wH" role="3_nNKo">
+          <node concept="1h6CxO" id="1vVFmkXH8l9" role="3_bYPF">
+            <node concept="3_fT66" id="1vVFmkXH95l" role="1h6CwR">
+              <node concept="30bdrP" id="1vVFmkXH97s" role="3_fTpo">
+                <property role="30bdrQ" value="&gt; from" />
+              </node>
+            </node>
+            <node concept="3_fT66" id="1vVFmkXH7wI" role="1h6CwT">
+              <node concept="30bdrP" id="1vVFmkXH7wJ" role="3_fTpo">
+                <property role="30bdrQ" value="to" />
+              </node>
             </node>
           </node>
         </node>
