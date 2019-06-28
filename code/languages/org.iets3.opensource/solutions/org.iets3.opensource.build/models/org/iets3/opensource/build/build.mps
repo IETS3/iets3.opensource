@@ -3320,11 +3320,6 @@
             <ref role="3bR37D" node="6pNCASbJiT2" resolve="org.iets3.core.expr.testExecution" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6VjyfUYequT" role="3bR37C">
-          <node concept="3bR9La" id="6VjyfUYequU" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:1oM0ei22dHk" resolve="com.mbeddr.mpsutil.spreferences" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4C_RnzfEEz_" role="3bR37C">
           <node concept="3bR9La" id="4C_RnzfEEzA" role="1SiIV1">
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
@@ -6240,6 +6235,11 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
             </node>
           </node>
+          <node concept="1SiIV0" id="j5CxBKa8fp" role="3bR37C">
+            <node concept="3bR9La" id="j5CxBKa8fq" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="P6L6fze5yz" role="1E1XAP">
           <ref role="1E0d5P" node="4eec02G9w48" resolve="org.iets3.core.expr.datetime.runtime" />
@@ -6870,6 +6870,23 @@
         </node>
         <node concept="3LEDTM" id="3xthw2gUq_V" role="3LEDUa">
           <ref role="3LEDTN" node="23q4CrmMjed" resolve="org.iets3.core.expr.genjava.messages.rt" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="j5CxBKa9ks" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.genall.advanced.devkit" />
+        <property role="3LESm3" value="33eb240b-05aa-417a-b719-386d26df80b8" />
+        <node concept="398BVA" id="j5CxBKa9V6" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="j5CxBKa9Yi" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="j5CxBKaazj" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.genall.advanced.devkit" />
+              <node concept="2Ry0Ak" id="j5CxBKaaEU" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.genall.advanced.devkit.devkit" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3LEwk6" id="26tZ$Z4sNNn" role="2G$12L">
