@@ -79,9 +79,13 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -6919,6 +6923,349 @@
               <node concept="1mIQ4w" id="j5CxBK6l07" role="2OqNvi">
                 <node concept="chp4Y" id="j5CxBK6qil" role="cj9EA">
                   <ref role="cht4Q" to="mi3w:7khFtBHyG$x" resolve="OverlapsRangeRelOp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="j5CxBK7DJw" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="j5CxBK7Q6B" role="1lVwrX">
+        <node concept="2ShNRf" id="j5CxBK7Uc2" role="gfFT$">
+          <node concept="1pGfFk" id="j5CxBK7U$s" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="j5CxBK87ft" role="37wK5m">
+              <node concept="Xl_RD" id="j5CxBK87fw" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="j5CxBK7VbS" role="3uHU7B">
+                <node concept="2ShNRf" id="j5CxBK7QFp" role="2Oq$k0">
+                  <node concept="1pGfFk" id="j5CxBK7Rj5" role="2ShVmc">
+                    <ref role="37wK5l" to="2j0k:4eec02G9NHs" resolve="DiscreteDateRangeValue" />
+                    <node concept="10M0yZ" id="j5CxBK7S3t" role="37wK5m">
+                      <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                      <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+                    </node>
+                    <node concept="Rm8GO" id="j5CxBK7SKc" role="37wK5m">
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                      <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="j5CxBK88Q4" role="lGtFl">
+                    <node concept="3NFfHV" id="j5CxBK88Q5" role="3NFExx">
+                      <node concept="3clFbS" id="j5CxBK88Q6" role="2VODD2">
+                        <node concept="3clFbF" id="j5CxBK88Qc" role="3cqZAp">
+                          <node concept="2OqwBi" id="j5CxBK88Q7" role="3clFbG">
+                            <node concept="3TrEf2" id="j5CxBK88Qa" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                            </node>
+                            <node concept="30H73N" id="j5CxBK88Qb" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="j5CxBK85AE" role="2OqNvi">
+                  <ref role="37wK5l" to="2j0k:7khFtBHDa1x" resolve="countDays" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="j5CxBK7LTQ" role="30HLyM">
+        <node concept="3clFbS" id="j5CxBK7LTR" role="2VODD2">
+          <node concept="3clFbF" id="j5CxBK7M8R" role="3cqZAp">
+            <node concept="2OqwBi" id="j5CxBK7NUx" role="3clFbG">
+              <node concept="2OqwBi" id="j5CxBK7Mx4" role="2Oq$k0">
+                <node concept="30H73N" id="j5CxBK7M8Q" role="2Oq$k0" />
+                <node concept="3TrEf2" id="j5CxBK7N9Q" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="j5CxBK7OXO" role="2OqNvi">
+                <node concept="chp4Y" id="j5CxBK7PxQ" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:7khFtBHCPjp" resolve="DaysCountOp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="j5CxBK8bhI" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="j5CxBK8bhJ" role="1lVwrX">
+        <node concept="2ShNRf" id="j5CxBK8bhK" role="gfFT$">
+          <node concept="1pGfFk" id="j5CxBK8bhL" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="j5CxBK8bhM" role="37wK5m">
+              <node concept="Xl_RD" id="j5CxBK8bhN" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="j5CxBK8bhO" role="3uHU7B">
+                <node concept="2ShNRf" id="j5CxBK8bhP" role="2Oq$k0">
+                  <node concept="1pGfFk" id="j5CxBK8bhQ" role="2ShVmc">
+                    <ref role="37wK5l" to="2j0k:4eec02G9NHs" resolve="DiscreteDateRangeValue" />
+                    <node concept="10M0yZ" id="j5CxBK8bhR" role="37wK5m">
+                      <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                      <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+                    </node>
+                    <node concept="Rm8GO" id="j5CxBK8bhS" role="37wK5m">
+                      <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="j5CxBK8bhT" role="lGtFl">
+                    <node concept="3NFfHV" id="j5CxBK8bhU" role="3NFExx">
+                      <node concept="3clFbS" id="j5CxBK8bhV" role="2VODD2">
+                        <node concept="3clFbF" id="j5CxBK8bhW" role="3cqZAp">
+                          <node concept="2OqwBi" id="j5CxBK8bhX" role="3clFbG">
+                            <node concept="3TrEf2" id="j5CxBK8bhY" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                            </node>
+                            <node concept="30H73N" id="j5CxBK8bhZ" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="j5CxBK8tCo" role="2OqNvi">
+                  <ref role="37wK5l" to="2j0k:7khFtBHDogJ" resolve="countMonths" />
+                  <node concept="3clFbT" id="j5CxBK8uMn" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="j5CxBK8bi1" role="30HLyM">
+        <node concept="3clFbS" id="j5CxBK8bi2" role="2VODD2">
+          <node concept="3clFbF" id="j5CxBK8bi3" role="3cqZAp">
+            <node concept="2OqwBi" id="j5CxBK8bi4" role="3clFbG">
+              <node concept="2OqwBi" id="j5CxBK8bi5" role="2Oq$k0">
+                <node concept="30H73N" id="j5CxBK8bi6" role="2Oq$k0" />
+                <node concept="3TrEf2" id="j5CxBK8bi7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="j5CxBK8bi8" role="2OqNvi">
+                <node concept="chp4Y" id="j5CxBK8gSm" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:7khFtBHCPjr" resolve="StartedMonthsCountOp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="j5CxBK8Dmo" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="j5CxBK8Dmp" role="1lVwrX">
+        <node concept="2ShNRf" id="j5CxBK8Dmq" role="gfFT$">
+          <node concept="1pGfFk" id="j5CxBK8Dmr" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="j5CxBK8Dms" role="37wK5m">
+              <node concept="Xl_RD" id="j5CxBK8Dmt" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="j5CxBK8Dmu" role="3uHU7B">
+                <node concept="2ShNRf" id="j5CxBK8Dmv" role="2Oq$k0">
+                  <node concept="1pGfFk" id="j5CxBK8Dmw" role="2ShVmc">
+                    <ref role="37wK5l" to="2j0k:4eec02G9NHs" resolve="DiscreteDateRangeValue" />
+                    <node concept="10M0yZ" id="j5CxBK8Dmx" role="37wK5m">
+                      <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                    </node>
+                    <node concept="Rm8GO" id="j5CxBK8Dmy" role="37wK5m">
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                      <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="j5CxBK8Dmz" role="lGtFl">
+                    <node concept="3NFfHV" id="j5CxBK8Dm$" role="3NFExx">
+                      <node concept="3clFbS" id="j5CxBK8Dm_" role="2VODD2">
+                        <node concept="3clFbF" id="j5CxBK8DmA" role="3cqZAp">
+                          <node concept="2OqwBi" id="j5CxBK8DmB" role="3clFbG">
+                            <node concept="3TrEf2" id="j5CxBK8DmC" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                            </node>
+                            <node concept="30H73N" id="j5CxBK8DmD" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="j5CxBK8DmE" role="2OqNvi">
+                  <ref role="37wK5l" to="2j0k:7khFtBHDogJ" resolve="countMonths" />
+                  <node concept="3clFbT" id="j5CxBK8DmF" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="j5CxBK8DmG" role="30HLyM">
+        <node concept="3clFbS" id="j5CxBK8DmH" role="2VODD2">
+          <node concept="3clFbF" id="j5CxBK8DmI" role="3cqZAp">
+            <node concept="2OqwBi" id="j5CxBK8DmJ" role="3clFbG">
+              <node concept="2OqwBi" id="j5CxBK8DmK" role="2Oq$k0">
+                <node concept="30H73N" id="j5CxBK8DmL" role="2Oq$k0" />
+                <node concept="3TrEf2" id="j5CxBK8DmM" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="j5CxBK8DmN" role="2OqNvi">
+                <node concept="chp4Y" id="j5CxBK8JE_" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:7khFtBHCPjq" resolve="FullMonthsCountOp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="j5CxBK8wrR" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="j5CxBK8wrS" role="1lVwrX">
+        <node concept="2ShNRf" id="j5CxBK8wrT" role="gfFT$">
+          <node concept="1pGfFk" id="j5CxBK8wrU" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="j5CxBK8wrV" role="37wK5m">
+              <node concept="Xl_RD" id="j5CxBK8wrW" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="j5CxBK8wrX" role="3uHU7B">
+                <node concept="2ShNRf" id="j5CxBK8wrY" role="2Oq$k0">
+                  <node concept="1pGfFk" id="j5CxBK8wrZ" role="2ShVmc">
+                    <ref role="37wK5l" to="2j0k:4eec02G9NHs" resolve="DiscreteDateRangeValue" />
+                    <node concept="10M0yZ" id="j5CxBK8ws0" role="37wK5m">
+                      <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                    </node>
+                    <node concept="Rm8GO" id="j5CxBK8ws1" role="37wK5m">
+                      <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="j5CxBK8ws2" role="lGtFl">
+                    <node concept="3NFfHV" id="j5CxBK8ws3" role="3NFExx">
+                      <node concept="3clFbS" id="j5CxBK8ws4" role="2VODD2">
+                        <node concept="3clFbF" id="j5CxBK8ws5" role="3cqZAp">
+                          <node concept="2OqwBi" id="j5CxBK8ws6" role="3clFbG">
+                            <node concept="3TrEf2" id="j5CxBK8ws7" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                            </node>
+                            <node concept="30H73N" id="j5CxBK8ws8" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="j5CxBK8ws9" role="2OqNvi">
+                  <ref role="37wK5l" to="2j0k:7khFtBHDgzW" resolve="countYears" />
+                  <node concept="3clFbT" id="j5CxBK8wsa" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="j5CxBK8wsb" role="30HLyM">
+        <node concept="3clFbS" id="j5CxBK8wsc" role="2VODD2">
+          <node concept="3clFbF" id="j5CxBK8wsd" role="3cqZAp">
+            <node concept="2OqwBi" id="j5CxBK8wse" role="3clFbG">
+              <node concept="2OqwBi" id="j5CxBK8wsf" role="2Oq$k0">
+                <node concept="30H73N" id="j5CxBK8wsg" role="2Oq$k0" />
+                <node concept="3TrEf2" id="j5CxBK8wsh" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="j5CxBK8wsi" role="2OqNvi">
+                <node concept="chp4Y" id="j5CxBK8AB8" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:7khFtBHCPjs" resolve="StartedYearsCountOp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="j5CxBK8MtN" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="gft3U" id="j5CxBK8MtO" role="1lVwrX">
+        <node concept="2ShNRf" id="j5CxBK8MtP" role="gfFT$">
+          <node concept="1pGfFk" id="j5CxBK8MtQ" role="2ShVmc">
+            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+            <node concept="3cpWs3" id="j5CxBK8MtR" role="37wK5m">
+              <node concept="Xl_RD" id="j5CxBK8MtS" role="3uHU7w">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="j5CxBK8MtT" role="3uHU7B">
+                <node concept="2ShNRf" id="j5CxBK8MtU" role="2Oq$k0">
+                  <node concept="1pGfFk" id="j5CxBK8MtV" role="2ShVmc">
+                    <ref role="37wK5l" to="2j0k:4eec02G9NHs" resolve="DiscreteDateRangeValue" />
+                    <node concept="10M0yZ" id="j5CxBK8MtW" role="37wK5m">
+                      <ref role="1PxDUh" to="28m1:~LocalDate" resolve="LocalDate" />
+                      <ref role="3cqZAo" to="28m1:~LocalDate.MIN" resolve="MIN" />
+                    </node>
+                    <node concept="Rm8GO" id="j5CxBK8MtX" role="37wK5m">
+                      <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                    </node>
+                  </node>
+                  <node concept="29HgVG" id="j5CxBK8MtY" role="lGtFl">
+                    <node concept="3NFfHV" id="j5CxBK8MtZ" role="3NFExx">
+                      <node concept="3clFbS" id="j5CxBK8Mu0" role="2VODD2">
+                        <node concept="3clFbF" id="j5CxBK8Mu1" role="3cqZAp">
+                          <node concept="2OqwBi" id="j5CxBK8Mu2" role="3clFbG">
+                            <node concept="3TrEf2" id="j5CxBK8Mu3" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                            </node>
+                            <node concept="30H73N" id="j5CxBK8Mu4" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="j5CxBK8Mu5" role="2OqNvi">
+                  <ref role="37wK5l" to="2j0k:7khFtBHDgzW" resolve="countYears" />
+                  <node concept="3clFbT" id="j5CxBK8Mu6" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="j5CxBK8Mu7" role="30HLyM">
+        <node concept="3clFbS" id="j5CxBK8Mu8" role="2VODD2">
+          <node concept="3clFbF" id="j5CxBK8Mu9" role="3cqZAp">
+            <node concept="2OqwBi" id="j5CxBK8Mua" role="3clFbG">
+              <node concept="2OqwBi" id="j5CxBK8Mub" role="2Oq$k0">
+                <node concept="30H73N" id="j5CxBK8Muc" role="2Oq$k0" />
+                <node concept="3TrEf2" id="j5CxBK8Mud" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="j5CxBK8Mue" role="2OqNvi">
+                <node concept="chp4Y" id="j5CxBK9b49" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:7khFtBHCPjt" resolve="FullYearsCountOp" />
                 </node>
               </node>
             </node>
