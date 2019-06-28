@@ -173,9 +173,6 @@
     <property role="EcuMT" value="7971844778467001950" />
     <property role="R4oN_" value="equal to true, but used to represent default case" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
-    <node concept="PrWs8" id="4146AzF0jsF" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJIaLee" resolve="IExcludeFromCoverage" />
-    </node>
   </node>
   <node concept="1TIwiD" id="19PglA20qX_">
     <property role="EcuMT" value="1330041117646892901" />

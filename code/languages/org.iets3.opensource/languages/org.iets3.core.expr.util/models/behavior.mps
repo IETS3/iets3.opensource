@@ -26,6 +26,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -219,6 +221,7 @@
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -3471,6 +3474,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2U$lnbPiBeW" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isToplevelCoverageContent" />
+      <ref role="13i0hy" to="kqnq:2hXd3rsZYy8" resolve="isToplevelCoverageContent" />
+      <node concept="3Tm1VV" id="2U$lnbPiBeX" role="1B3o_S" />
+      <node concept="3clFbS" id="2U$lnbPiBf2" role="3clF47">
+        <node concept="3clFbF" id="2U$lnbPiERR" role="3cqZAp">
+          <node concept="3clFbT" id="2U$lnbPiERQ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2U$lnbPiBf3" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7FuUjk_57RP">
     <property role="3GE5qa" value="multidectab.expr" />
@@ -3516,6 +3534,34 @@
     </node>
     <node concept="13hLZK" id="7FuUjk_57RQ" role="13h7CW">
       <node concept="3clFbS" id="7FuUjk_57RR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2U$lnbPqLtf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getChildrenForCoverage" />
+      <ref role="13i0hy" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
+      <node concept="3Tm1VV" id="2U$lnbPqLtg" role="1B3o_S" />
+      <node concept="3clFbS" id="2U$lnbPqLto" role="3clF47">
+        <node concept="3clFbF" id="2U$lnbPqLAk" role="3cqZAp">
+          <node concept="2OqwBi" id="2U$lnbPqN0F" role="3clFbG">
+            <node concept="2OqwBi" id="2U$lnbPqLLz" role="2Oq$k0">
+              <node concept="13iPFW" id="2U$lnbPqLAf" role="2Oq$k0" />
+              <node concept="32TBzR" id="2U$lnbPqM1B" role="2OqNvi" />
+            </node>
+            <node concept="66VNe" id="2U$lnbPqOCB" role="2OqNvi">
+              <node concept="2OqwBi" id="2U$lnbPqOOz" role="576Qk">
+                <node concept="13iPFW" id="2U$lnbPqOEf" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="2U$lnbPqP5Y" role="2OqNvi">
+                  <ref role="3TtcxE" to="kfo3:7FuUjk_57Cw" resolve="colDefs" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="2U$lnbPqLtp" role="3clF45">
+        <node concept="3Tqbb2" id="2U$lnbPqLtq" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7FuUjk_mXC0">
