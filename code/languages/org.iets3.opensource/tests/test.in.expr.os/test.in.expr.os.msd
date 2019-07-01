@@ -120,6 +120,7 @@
     <module reference="3a79aca0-f4b1-40f1-a3e9-259162afa77b(org.iets3.core.expr.dataflow.interpreter)" version="0" />
     <module reference="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)" version="1" />
     <module reference="356f24c7-748b-463e-a9e4-7973abbf5b8f(org.iets3.core.expr.datetime.interpreter)" version="0" />
+    <module reference="957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)" version="0" />
     <module reference="e29ad049-74f8-4f02-9561-62d7477f822a(org.iets3.core.expr.doc.plugin)" version="0" />
     <module reference="a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)" version="0" />
     <module reference="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" version="0" />

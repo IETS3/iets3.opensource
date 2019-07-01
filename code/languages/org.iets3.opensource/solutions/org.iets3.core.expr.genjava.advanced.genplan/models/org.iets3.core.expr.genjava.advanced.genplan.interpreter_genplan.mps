@@ -146,6 +146,10 @@
         <property role="2V$B1T" value="6b277d9a-d52d-416f-a209-1919bd737f50" />
         <property role="2V$B1Q" value="org.iets3.core.expr.simpleTypes" />
       </node>
+      <node concept="2V$Bhx" id="j5CxBKgAhX" role="1t_9vn">
+        <property role="2V$B1T" value="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68" />
+        <property role="2V$B1Q" value="org.iets3.core.expr.temporal" />
+      </node>
     </node>
   </node>
 </model>
