@@ -2174,9 +2174,7 @@
                 <node concept="3clFbS" id="j5CxBKlPBB" role="1bW5cS">
                   <node concept="3clFbF" id="j5CxBKlSJD" role="3cqZAp">
                     <node concept="17R0WA" id="j5CxBKm2e3" role="3clFbG">
-                      <node concept="3clFbT" id="j5CxBKm5a0" role="3uHU7w">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="j5CxBKm5a0" role="3uHU7w" />
                       <node concept="2OqwBi" id="j5CxBKlUZg" role="3uHU7B">
                         <node concept="37vLTw" id="j5CxBKlSJC" role="2Oq$k0">
                           <ref role="3cqZAo" node="j5CxBKlPBC" resolve="it" />
