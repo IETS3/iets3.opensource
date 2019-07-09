@@ -67,6 +67,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -98,6 +99,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -114,6 +118,11 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -395,14 +404,37 @@
               <node concept="Xl_RD" id="5ZJ96SJAjDT" role="3uHU7w">
                 <property role="Xl_RC" value=": " />
               </node>
-              <node concept="3cpWs3" id="5ZJ96SJAiOP" role="3uHU7B">
-                <node concept="Xl_RD" id="5ZJ96SJAiqJ" role="3uHU7B">
-                  <property role="Xl_RC" value="ERROR " />
+              <node concept="3cpWs3" id="4FLl$MLM9yv" role="3uHU7B">
+                <node concept="Xl_RD" id="4FLl$MLM9y_" role="3uHU7B">
+                  <property role="Xl_RC" value="ERROR" />
                 </node>
-                <node concept="2OqwBi" id="5ZJ96SJAj1b" role="3uHU7w">
-                  <node concept="13iPFW" id="5ZJ96SJAiP0" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="5ZJ96SJAj9R" role="2OqNvi">
-                    <ref role="3TsBF5" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
+                <node concept="1eOMI4" id="4FLl$MLMfAu" role="3uHU7w">
+                  <node concept="3K4zz7" id="4FLl$MLMggY" role="1eOMHV">
+                    <node concept="Xl_RD" id="4FLl$MLMgkh" role="3K4E3e">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                    <node concept="2OqwBi" id="4FLl$MLMcCR" role="3K4Cdx">
+                      <node concept="2OqwBi" id="4FLl$MLMbLc" role="2Oq$k0">
+                        <node concept="13iPFW" id="4FLl$MLMb$7" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="4FLl$MLMc9R" role="2OqNvi">
+                          <ref role="3TsBF5" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
+                        </node>
+                      </node>
+                      <node concept="17RlXB" id="4FLl$MLMdqc" role="2OqNvi" />
+                    </node>
+                    <node concept="1eOMI4" id="4FLl$MLMa_P" role="3K4GZi">
+                      <node concept="3cpWs3" id="5ZJ96SJAiOP" role="1eOMHV">
+                        <node concept="Xl_RD" id="4FLl$MLM9yB" role="3uHU7B">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                        <node concept="2OqwBi" id="5ZJ96SJAj1b" role="3uHU7w">
+                          <node concept="13iPFW" id="5ZJ96SJAiP0" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="5ZJ96SJAj9R" role="2OqNvi">
+                            <ref role="3TsBF5" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

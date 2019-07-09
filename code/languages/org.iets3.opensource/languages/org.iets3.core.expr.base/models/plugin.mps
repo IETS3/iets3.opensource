@@ -13022,7 +13022,7 @@
               <node concept="3K4zz7" id="UwUtc3nqei" role="1eOMHV">
                 <node concept="3cpWs3" id="UwUtc3nqFa" role="3K4E3e">
                   <node concept="Xl_RD" id="UwUtc3nqHx" role="3uHU7w">
-                    <property role="Xl_RC" value=":" />
+                    <property role="Xl_RC" value=": " />
                   </node>
                   <node concept="37vLTw" id="UwUtc3nqm8" role="3uHU7B">
                     <ref role="3cqZAo" node="UwUtc3nmQn" resolve="kind" />

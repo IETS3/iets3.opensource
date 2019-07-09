@@ -85,6 +85,7 @@
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -897,6 +898,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="5ZJ96SJAifR" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
         <node concept="VechU" id="5ZJ96SJAig7" role="3F10Kt">
           <property role="Vb096" value="red" />
