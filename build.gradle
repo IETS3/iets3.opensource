@@ -1,5 +1,4 @@
-import de.itemis.mps.gradle.GenerateLibrariesXml
-import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.*
 
 import java.time.LocalDateTime
 
@@ -13,13 +12,26 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.55.678ba7a'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.148.1eeeded'
     }
 }
 
 plugins {
-    id "co.riiid.gradle" version "0.4.2"
+    id 'base'
+    id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'
 }
+
+// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
+def java_home = System.properties['java.home']
+def jdk_home = java_home
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    jdk_home = jdk_home + "/.."
+}
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+}
+ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
@@ -95,8 +107,6 @@ ext.dependencyRepositories = [
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
-apply plugin: 'maven-publish'
-apply plugin: 'base'
 
 
 task wrapper(type: Wrapper) {
@@ -107,26 +117,29 @@ task wrapper(type: Wrapper) {
 configurations {
     mps
     mpsArtifacts
+    junitAnt
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     mpsArtifacts "com.mbeddr:platform:$mbeddrVersionSelector"
+    junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
 
 repositories {
-        mavenLocal()
-        for (repoUrl in project.dependencyRepositories) {
-            maven {
-                url repoUrl
-                if (project.hasProperty('nexusUsername')) {
-                    credentials {
-                        username project.nexusUsername
-                        password project.nexusPassword
-                    }
+    mavenLocal()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
                 }
             }
         }
+    }
+    mavenCentral()
 }
 
 task resolveMps(type: Copy) {
@@ -144,35 +157,68 @@ task resolveMpsArtifacts(type: Copy) {
     into artifactsDir
 }
 
-ant.properties['mps.home'] = resolveMps.destinationDir
-ant.properties['iets3.github.opensource.home'] = rootDir
-ant.properties['build.dir'] = rootDir
-ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
-ant.properties['mps.generator.skipUnmodifiedModels'] = incrementalBuild
-ant.properties['version'] = version
-ant.importBuild('code/languages/build.xml') { target -> 'ant-' + target }
+// Default arguments for ant scripts
+def defaultScriptArgs = [
+        'mps.home'                          : resolveMps.destinationDir,
+        'iets3.github.opensource.home'      : rootDir,
+        'build.dir'                         : rootDir,
+        'mps.generator.skipUnmodifiedModels': incrementalBuild,
+        'version'                           : version
+]
+def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
+        project.files("$project.jdk_home/lib/tools.jar")
 
-tasks['ant-check-mps-home'].dependsOn resolveMps
-tasks['ant-clean-and-build'].dependsOn resolveMps, resolveMpsArtifacts
+// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value" }
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 
-task packageAllScripts(type: Zip, dependsOn: 'ant-clean-and-build') {
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+    script "$buildDir/iets3.opensource.allScripts/build-allScripts.xml"
+    doLast {
+        // patch heap size setting for tests execution
+        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
+    }
+}
+
+task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
+    script "$buildDir/iets3.opensource/build.xml"
+}
+
+task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
+    script "$buildDir/iets3.opensource.tests/build.xml"
+    doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.junitAnt.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
+check.dependsOn buildAndRunTests
+
+task packageAllScripts(type: Zip, dependsOn: buildAllScripts) {
     baseName 'org.iets3.opensource.allScripts'
     from artifactsDir
     include 'org.iets3.opensource.allScripts.build/**'
 }
 
-task packageOpenSource(type: Zip, dependsOn: 'ant-clean-and-build') {
+task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     baseName 'org.iets3.opensource'
     from artifactsDir
     include 'org.iets3.opensource/**'
 }
 
-task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
+task packageTests(type: Zip, dependsOn: buildAndRunTests) {
     baseName 'org.iets3.opensource.tests'
     from new File(artifactsDir, 'org.iets3.opensource.tests')
 }
 
-assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
+assemble.dependsOn packageAllScripts, packageLanguages, packageTests
 
 publishing {
     repositories {
@@ -195,7 +241,7 @@ publishing {
         openSource(MavenPublication) {
             groupId 'org.iets3'
             artifactId 'opensource'
-            artifact packageOpenSource
+            artifact packageLanguages
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
@@ -233,37 +279,6 @@ publishing {
     }
 }
 
-// Ant <junit> task support
-repositories {
-    mavenCentral()
-}
-configurations {
-    junitAnt
-}
-dependencies {
-    junitAnt 'junit:junit:4.12'
-    junitAnt('org.apache.ant:ant-junit:1.9.7') {
-        transitive = false
-    }
-    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
-        transitive = false
-    }
-}
-ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
-        classpath: configurations.junitAnt.asPath)
-ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
-        classpath: configurations.junitAnt.asPath)
-
-task patchHeapSize4TestsExec {
-    doLast {
-        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-    }
-}
-tasks['ant-build-and-run-tests'].dependsOn patchHeapSize4TestsExec
-
-check.dependsOn 'ant-build-and-run-tests'
-
 task generateLibrariesXml(type: GenerateLibrariesXml) {
     dependsOn resolveMpsArtifacts
     description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
@@ -278,22 +293,20 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks 'ant-clean-and-build'
+defaultTasks 'buildLanguages'
 
-LocalDateTime t = LocalDateTime.now()
-
-def releaseNotes = """Automated Nighly build from ${t as String}."""
+def releaseNotes = """Automated Nighly build from ${LocalDateTime.now() as String}."""
 
 github {
     owner = 'IETS3'
     repo = 'iets3.opensource'
-    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    token = rootProject.findProperty('github.token') ?: 'empty'
     tagName = 'nightly-release-' + version
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     name = 'Nighly Build ' + version
     body = releaseNotes
     prerelease = true
-    assets = packageOpenSource.outputs.files
+    assets = packageLanguages.outputs.files
 }
 
-githubRelease.dependsOn packageOpenSource
+githubRelease.dependsOn packageLanguages
