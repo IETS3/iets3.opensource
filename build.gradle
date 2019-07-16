@@ -109,9 +109,9 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
-task wrapper(type: Wrapper) {
-    gradleVersion '4.4.1'
-    distributionType 'all'
+wrapper {
+    gradleVersion '5.5.1'
+    distributionType Wrapper.DistributionType.ALL
 }
 
 configurations {
@@ -202,20 +202,21 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 check.dependsOn buildAndRunTests
 
 task packageAllScripts(type: Zip, dependsOn: buildAllScripts) {
-    baseName 'org.iets3.opensource.allScripts'
+    archiveBaseName = 'org.iets3.opensource.allScripts'
     from artifactsDir
     include 'org.iets3.opensource.allScripts.build/**'
 }
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
-    baseName 'org.iets3.opensource'
+    archiveBaseName = 'org.iets3.opensource'
     from artifactsDir
     include 'org.iets3.opensource/**'
 }
 
 task packageTests(type: Zip, dependsOn: buildAndRunTests) {
-    baseName 'org.iets3.opensource.tests'
-    from new File(artifactsDir, 'org.iets3.opensource.tests')
+    archiveBaseName = 'org.iets3.opensource.tests'
+    from artifactsDir
+    include 'org.iets3.opensource.tests/**'
 }
 
 assemble.dependsOn packageAllScripts, packageLanguages, packageTests
