@@ -116,6 +116,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -1125,8 +1128,25 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="4l1K8AD34vO" role="3cqZAp">
-                <node concept="10Nm6u" id="4l1K8AD34SC" role="3cqZAk" />
+              <node concept="YS8fn" id="4l1K8ADY4tK" role="3cqZAp">
+                <node concept="2ShNRf" id="4l1K8ADY5q0" role="YScLw">
+                  <node concept="1pGfFk" id="4l1K8ADY6Ns" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                    <node concept="3cpWs3" id="4l1K8ADYbnm" role="37wK5m">
+                      <node concept="Xl_RD" id="4l1K8ADYbTf" role="3uHU7w">
+                        <property role="Xl_RC" value="'" />
+                      </node>
+                      <node concept="3cpWs3" id="4l1K8ADYag8" role="3uHU7B">
+                        <node concept="Xl_RD" id="4l1K8ADY7xn" role="3uHU7B">
+                          <property role="Xl_RC" value="Unexpected value '" />
+                        </node>
+                        <node concept="37vLTw" id="4l1K8ADYa$d" role="3uHU7w">
+                          <ref role="3cqZAo" node="4l1K8AD2dNj" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3Tm1VV" id="4l1K8AD28OH" role="1B3o_S" />
