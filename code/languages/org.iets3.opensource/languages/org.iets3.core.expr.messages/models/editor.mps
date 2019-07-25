@@ -685,10 +685,13 @@
       </node>
       <node concept="1kHk_G" id="4AahbtV9GlW" role="3EZMnx">
         <property role="ZjSer" value="!" />
-        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue" />
+        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue_DEPRECATED" />
         <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
         <node concept="11L4FC" id="4AahbtVaxPr" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="7OtDX6qkaOM" role="3F10Kt">
+          <property role="Vb096" value="red" />
         </node>
       </node>
       <node concept="2iRfu4" id="3vxfdxbjbRV" role="2iSdaV" />
