@@ -685,8 +685,8 @@
       </node>
       <node concept="1kHk_G" id="4AahbtV9GlW" role="3EZMnx">
         <property role="ZjSer" value="!" />
-        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue_DEPRECATED" />
         <ref role="1k5W1q" node="3vxfdxbhnuU" resolve="message" />
+        <ref role="1NtTu8" to="kelk:4AahbtV9FsC" resolve="messageValue_DEPRECATED" />
         <node concept="11L4FC" id="4AahbtVaxPr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -919,12 +919,27 @@
   <node concept="24kQdi" id="3vxfdxbkQjz">
     <property role="3GE5qa" value="kind" />
     <ref role="1XX52x" to="kelk:3vxfdxbkQj9" resolve="WarningKind" />
-    <node concept="3F0ifn" id="3vxfdxbkQj_" role="2wV5jI">
-      <property role="3F0ifm" value="warning" />
-      <node concept="VechU" id="3vxfdxbkQjD" role="3F10Kt">
-        <node concept="1iSF2X" id="3vxfdxbkQjG" role="VblUZ">
-          <property role="1iTho6" value="FD7D01" />
+    <node concept="3EZMnI" id="7OtDX6qjWPQ" role="2wV5jI">
+      <node concept="2iRfu4" id="7OtDX6qjWPR" role="2iSdaV" />
+      <node concept="3F0ifn" id="3vxfdxbkQj_" role="3EZMnx">
+        <property role="3F0ifm" value="warning[" />
+        <node concept="VechU" id="3vxfdxbkQjD" role="3F10Kt">
+          <node concept="1iSF2X" id="3vxfdxbkQjG" role="VblUZ">
+            <property role="1iTho6" value="FD7D01" />
+          </node>
         </node>
+      </node>
+      <node concept="3F0A7n" id="7OtDX6qjWQd" role="3EZMnx">
+        <ref role="1NtTu8" to="kelk:7OtDX6qjWPO" resolve="warningID" />
+        <node concept="VechU" id="7OtDX6qjWQe" role="3F10Kt">
+          <property role="Vb096" value="red" />
+          <node concept="1iSF2X" id="7OtDX6qjWQz" role="VblUZ">
+            <property role="1iTho6" value="FD7D01" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7OtDX6qjWQr" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
       </node>
     </node>
   </node>

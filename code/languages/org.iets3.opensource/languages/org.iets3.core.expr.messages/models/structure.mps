@@ -293,6 +293,11 @@
     <property role="34LRSv" value="warning" />
     <property role="R4oN_" value="a message representing a warning" />
     <ref role="1TJDcQ" node="3vxfdxbksat" resolve="MessageKind" />
+    <node concept="1TJgyi" id="7OtDX6qjWPO" role="1TKVEl">
+      <property role="IQ2nx" value="9015546547744525684" />
+      <property role="TrG5h" value="warningID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3vxfdxblP3W">
     <property role="EcuMT" value="4026566441520550140" />
