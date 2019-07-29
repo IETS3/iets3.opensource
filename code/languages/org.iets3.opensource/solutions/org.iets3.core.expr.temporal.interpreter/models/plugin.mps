@@ -813,8 +813,8 @@
                   <ref role="3uigEE" to="8rdi:50smQ1V9Ofy" resolve="TemporalValue" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6Ysz3" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3nGzaxUtfR9" resolve="doWithTwoTemporals" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3nGzaxUtfR9" resolve="doWithTwoTemporals" />
                   <node concept="37vLTw" id="6C2wkq7g_pA" role="37wK5m">
                     <ref role="3cqZAo" node="6C2wkq7gzu3" resolve="ctxNode" />
                   </node>
@@ -1019,10 +1019,14 @@
                     </node>
                     <node concept="liA8E" id="3z0DCryv0Iz" role="2OqNvi">
                       <ref role="37wK5l" to="8rdi:3z0DCryugqf" resolve="reduce" />
-                      <node concept="2OqwBi" id="3z0DCryv0I$" role="37wK5m">
-                        <node concept="oxGPV" id="3z0DCryv0I_" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="3z0DCryv0IA" role="2OqNvi">
-                          <ref role="3Tt5mk" to="l462:1Mp62pP0G9w" resolve="strategy" />
+                      <node concept="1eOMI4" id="6AGD1sTrviD" role="37wK5m">
+                        <node concept="10QFUN" id="6AGD1sTrviA" role="1eOMHV">
+                          <node concept="3uibUv" id="6AGD1sTrviF" role="10QFUM">
+                            <ref role="3uigEE" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
+                          </node>
+                          <node concept="rqRoa" id="6AGD1sTrvmb" role="10QFUP">
+                            <ref role="rqRob" to="l462:1Mp62pP0G9w" resolve="strategy" />
+                          </node>
                         </node>
                       </node>
                       <node concept="37vLTw" id="3z0DCryv0IB" role="37wK5m">
@@ -1045,6 +1049,46 @@
               <node concept="10Nm6u" id="1Mp62pP1nUC" role="3cqZAk" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6AGD1sTqUPA" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="l462:1Mp62pP0G9y" resolve="ReduceStrategyFirst" />
+      <node concept="3vetai" id="6AGD1sTqZlN" role="3vQZUl">
+        <node concept="Rm8GO" id="6AGD1sTqZmX" role="3vdyny">
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_BD" resolve="First" />
+          <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6AGD1sTr3PZ" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="l462:1Mp62pP0G8W" resolve="ReduceStrategyLast" />
+      <node concept="3vetai" id="6AGD1sTr8Hl" role="3vQZUl">
+        <node concept="Rm8GO" id="6AGD1sTr8I4" role="3vdyny">
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_xv" resolve="Last" />
+          <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6AGD1sTrdd_" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="l462:W7GwMM7AyP" resolve="ReduceStrategySum" />
+      <node concept="3vetai" id="6AGD1sTrhFP" role="3vQZUl">
+        <node concept="Rm8GO" id="6AGD1sTrhGZ" role="3vdyny">
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTqA6R" resolve="Sum" />
+          <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6AGD1sTrmak" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="l462:6nEpT4GTaVD" resolve="ReduceStrategyWeighted" />
+      <node concept="3vetai" id="6AGD1sTrqCB" role="3vQZUl">
+        <node concept="Rm8GO" id="6AGD1sTrqDm" role="3vdyny">
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_MH" resolve="Weighted" />
+          <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
         </node>
       </node>
     </node>
@@ -2553,8 +2597,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyR" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78Usn" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78Uso" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78Usp" role="2OqNvi">
@@ -2636,8 +2680,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyS" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78W6d" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78W6e" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78W6f" role="2OqNvi">
@@ -2719,8 +2763,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyT" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78WeH" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78WeI" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78WeJ" role="2OqNvi">
@@ -2802,8 +2846,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyU" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="VFjlN5LBRq" role="37wK5m">
                     <node concept="oxGPV" id="VFjlN5LBRr" role="2Oq$k0" />
                     <node concept="3TrEf2" id="VFjlN5LBRs" role="2OqNvi">
@@ -2892,8 +2936,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyV" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="VFjlN5K63y" role="37wK5m">
                     <node concept="oxGPV" id="VFjlN5K63z" role="2Oq$k0" />
                     <node concept="3TrEf2" id="VFjlN5K63$" role="2OqNvi">
@@ -2982,8 +3026,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyW" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78Wnm" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78Wnn" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78Wno" role="2OqNvi">
@@ -3065,8 +3109,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyX" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78Ww8" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78Ww9" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78Wwa" role="2OqNvi">
@@ -3148,8 +3192,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyY" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="4MUSbESJfoL" role="37wK5m">
                     <node concept="oxGPV" id="4MUSbESJfoM" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4MUSbESJfoN" role="2OqNvi">
@@ -3231,8 +3275,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6YsyZ" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="4MUSbESJFwZ" role="37wK5m">
                     <node concept="oxGPV" id="4MUSbESJFx0" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4MUSbESJFx1" role="2OqNvi">
@@ -3314,8 +3358,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6Ysz0" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="4MUSbESJFN1" role="37wK5m">
                     <node concept="oxGPV" id="4MUSbESJFN2" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4MUSbESJFN3" role="2OqNvi">
@@ -3397,8 +3441,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6Ysz1" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="4MUSbESJG5I" role="37wK5m">
                     <node concept="oxGPV" id="4MUSbESJG5J" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4MUSbESJG5K" role="2OqNvi">
@@ -3480,8 +3524,8 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="Lq1Jk6Ysz2" role="33vP2m">
-                  <ref role="37wK5l" to="8rdi:3rApyZ4I0bR" resolve="peform" />
-                  <ref role="1Pybhc" to="8rdi:3nGzaxUs53y" resolve="TemporalOps" />
+                  <ref role="1Pybhc" to="t677:6AGD1sTq8oF" resolve="TemporalOpsInterpreter" />
+                  <ref role="37wK5l" to="t677:3rApyZ4I0bR" resolve="peform" />
                   <node concept="2OqwBi" id="6C2wkq78WD3" role="37wK5m">
                     <node concept="oxGPV" id="6C2wkq78WD4" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6C2wkq78WD5" role="2OqNvi">
