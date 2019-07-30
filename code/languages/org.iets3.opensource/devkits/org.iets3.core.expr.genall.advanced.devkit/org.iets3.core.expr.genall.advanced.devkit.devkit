@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.iets3.core.expr.genall.advanced.devkit" uuid="33eb240b-05aa-417a-b719-386d26df80b8">
+  <extendedDevKits>
+    <extendedDevKit>ffc660b2-672c-4f91-9291-8426ed4e58de(org.iets3.core.expr.genjava.advanced.devkit)</extendedDevKit>
+    <extendedDevKit>ec967770-4707-442f-baaf-a8b7bb554717(org.iets3.core.expr.genall.core.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>a37d732b-a361-4dba-bc6f-f8e645007559(org.iets3.core.expr.genjava.advanced.genplan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:c82dc9dc-2233-4f6c-9376-13815741f59b(org.iets3.core.expr.genjava.advanced.genplan.java_interpreter_genplan)" />
+</dev-kit>
+

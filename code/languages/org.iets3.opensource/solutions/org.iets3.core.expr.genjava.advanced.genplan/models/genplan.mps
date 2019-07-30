@@ -28,7 +28,7 @@
     </language>
   </registry>
   <node concept="2VgMpV" id="6FvSwHlc89Q">
-    <property role="TrG5h" value="Plan" />
+    <property role="TrG5h" value="Java_genplan" />
     <node concept="2VgMA2" id="pogkgseUJX" role="2VgMA7">
       <node concept="2V$Bhx" id="5Jw72wd6f6i" role="1t_9vn">
         <property role="2V$B1T" value="15d858db-2d21-4ae9-90c4-f595086d0bdf" />

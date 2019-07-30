@@ -34,7 +34,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-        <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -960,9 +959,9 @@
         </node>
       </node>
       <node concept="2ShNRf" id="VXV$b3qj3g" role="33vP2m">
-        <node concept="HV5vD" id="VXV$b3J0Uc" role="2ShVmc">
-          <ref role="HV5vE" to="33ny:~ArrayList" resolve="ArrayList" />
-          <node concept="3uibUv" id="VXV$b3J3L3" role="HU9BZ">
+        <node concept="1pGfFk" id="3YtZ71SfmE2" role="2ShVmc">
+          <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+          <node concept="3uibUv" id="3YtZ71SfmE3" role="1pMfVU">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>

@@ -27,6 +27,8 @@
     <exported-solution>1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)</exported-solution>
     <exported-solution>4289e037-cc03-4bfe-bf89-2db268aec73a(org.iets3.core.expr.util.interpreter)</exported-solution>
     <exported-solution>e29ad049-74f8-4f02-9561-62d7477f822a(org.iets3.core.expr.doc.plugin)</exported-solution>
+    <exported-solution>957f018c-4561-4081-9ad3-b8618bf1160d(org.iets3.core.expr.datetime.runtime)</exported-solution>
+    <exported-solution>17ecc6b6-d106-4b60-87a9-3fde52f92301(org.iets3.core.expr.temporal.runtime)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
