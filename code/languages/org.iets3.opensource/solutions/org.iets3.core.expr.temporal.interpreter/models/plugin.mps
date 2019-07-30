@@ -1057,7 +1057,7 @@
       <ref role="qq9wM" to="l462:1Mp62pP0G9y" resolve="ReduceStrategyFirst" />
       <node concept="3vetai" id="6AGD1sTqZlN" role="3vQZUl">
         <node concept="Rm8GO" id="6AGD1sTqZmX" role="3vdyny">
-          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_BD" resolve="First" />
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_BD" resolve="FIRST" />
           <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
         </node>
       </node>
@@ -1067,7 +1067,7 @@
       <ref role="qq9wM" to="l462:1Mp62pP0G8W" resolve="ReduceStrategyLast" />
       <node concept="3vetai" id="6AGD1sTr8Hl" role="3vQZUl">
         <node concept="Rm8GO" id="6AGD1sTr8I4" role="3vdyny">
-          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_xv" resolve="Last" />
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_xv" resolve="LAST" />
           <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
         </node>
       </node>
@@ -1077,7 +1077,7 @@
       <ref role="qq9wM" to="l462:W7GwMM7AyP" resolve="ReduceStrategySum" />
       <node concept="3vetai" id="6AGD1sTrhFP" role="3vQZUl">
         <node concept="Rm8GO" id="6AGD1sTrhGZ" role="3vdyny">
-          <ref role="Rm8GQ" to="8rdi:6AGD1sTqA6R" resolve="Sum" />
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTqA6R" resolve="SUM" />
           <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
         </node>
       </node>
@@ -1087,7 +1087,7 @@
       <ref role="qq9wM" to="l462:6nEpT4GTaVD" resolve="ReduceStrategyWeighted" />
       <node concept="3vetai" id="6AGD1sTrqCB" role="3vQZUl">
         <node concept="Rm8GO" id="6AGD1sTrqDm" role="3vdyny">
-          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_MH" resolve="Weighted" />
+          <ref role="Rm8GQ" to="8rdi:6AGD1sTq_MH" resolve="WEIGHTED" />
           <ref role="1Px2BO" to="8rdi:6AGD1sTq$nE" resolve="ReduceStrategy" />
         </node>
       </node>

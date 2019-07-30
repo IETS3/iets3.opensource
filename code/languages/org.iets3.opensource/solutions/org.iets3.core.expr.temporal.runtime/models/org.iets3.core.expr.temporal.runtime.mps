@@ -4649,7 +4649,7 @@
           <node concept="17R0WA" id="6AGD1sTrILC" role="3clFbw">
             <node concept="Rm8GO" id="6AGD1sTrLbp" role="3uHU7w">
               <ref role="1Px2BO" node="6AGD1sTq$nE" resolve="ReduceStrategy" />
-              <ref role="Rm8GQ" node="6AGD1sTq_xv" resolve="Last" />
+              <ref role="Rm8GQ" node="6AGD1sTq_xv" resolve="LAST" />
             </node>
             <node concept="37vLTw" id="3z0DCryuK4a" role="3uHU7B">
               <ref role="3cqZAo" node="3z0DCryutn$" resolve="strategy" />
@@ -4676,7 +4676,7 @@
             <node concept="17R0WA" id="6AGD1sTrOmo" role="3eO9$A">
               <node concept="Rm8GO" id="6AGD1sTrQKY" role="3uHU7w">
                 <ref role="1Px2BO" node="6AGD1sTq$nE" resolve="ReduceStrategy" />
-                <ref role="Rm8GQ" node="6AGD1sTq_BD" resolve="First" />
+                <ref role="Rm8GQ" node="6AGD1sTq_BD" resolve="FIRST" />
               </node>
               <node concept="37vLTw" id="3z0DCryuKjS" role="3uHU7B">
                 <ref role="3cqZAo" node="3z0DCryutn$" resolve="strategy" />
@@ -4846,7 +4846,7 @@
             <node concept="17R0WA" id="6AGD1sTrTMW" role="3eO9$A">
               <node concept="Rm8GO" id="6AGD1sTrWm$" role="3uHU7w">
                 <ref role="1Px2BO" node="6AGD1sTq$nE" resolve="ReduceStrategy" />
-                <ref role="Rm8GQ" node="6AGD1sTq_MH" resolve="Weighted" />
+                <ref role="Rm8GQ" node="6AGD1sTq_MH" resolve="WEIGHTED" />
               </node>
               <node concept="37vLTw" id="3z0DCryuKz_" role="3uHU7B">
                 <ref role="3cqZAo" node="3z0DCryutn$" resolve="strategy" />
@@ -4918,7 +4918,7 @@
             <node concept="17R0WA" id="6AGD1sTrZDb" role="3eO9$A">
               <node concept="Rm8GO" id="6AGD1sTs23L" role="3uHU7w">
                 <ref role="1Px2BO" node="6AGD1sTq$nE" resolve="ReduceStrategy" />
-                <ref role="Rm8GQ" node="6AGD1sTqA6R" resolve="Sum" />
+                <ref role="Rm8GQ" node="6AGD1sTqA6R" resolve="SUM" />
               </node>
               <node concept="37vLTw" id="3z0DCryuKWZ" role="3uHU7B">
                 <ref role="3cqZAo" node="3z0DCryutn$" resolve="strategy" />
@@ -5076,19 +5076,19 @@
     <property role="TrG5h" value="ReduceStrategy" />
     <node concept="3Tm1VV" id="6AGD1sTq$nF" role="1B3o_S" />
     <node concept="QsSxf" id="6AGD1sTq_xv" role="Qtgdg">
-      <property role="TrG5h" value="Last" />
+      <property role="TrG5h" value="LAST" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="6AGD1sTq_BD" role="Qtgdg">
-      <property role="TrG5h" value="First" />
+      <property role="TrG5h" value="FIRST" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="6AGD1sTq_MH" role="Qtgdg">
-      <property role="TrG5h" value="Weighted" />
+      <property role="TrG5h" value="WEIGHTED" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="6AGD1sTqA6R" role="Qtgdg">
-      <property role="TrG5h" value="Sum" />
+      <property role="TrG5h" value="SUM" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
   </node>
