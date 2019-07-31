@@ -1116,6 +1116,44 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="Xajza46Q5y" role="_iOnB" />
+    <node concept="_fkuM" id="Xajza46Rra" role="_iOnB">
+      <property role="TrG5h" value="deltaArithMixed" />
+      <node concept="_fkuZ" id="Xajza46SnY" role="_fkp5">
+        <node concept="_fku$" id="Xajza46SnZ" role="_fkur" />
+        <node concept="30dDZf" id="Xajza46Tat" role="_fkuS">
+          <node concept="3oJwfo" id="Xajza46SFe" role="30dEsF">
+            <node concept="30bXRB" id="Xajza46SAc" role="3oJwfr">
+              <property role="30bXRw" value="10" />
+            </node>
+          </node>
+          <node concept="3oxWck" id="Xajza46SUj" role="30dEs_">
+            <node concept="30bXRB" id="Xajza46SGE" role="3oJwfr">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="30dDTi" id="Xajza46T3R" role="_fkuY">
+          <node concept="30bXRB" id="Xajza46T4e" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bsCy" id="Xajza46T2k" role="30dEsF">
+            <node concept="30dDZf" id="Xajza46T0U" role="30bsDf">
+              <node concept="3oJwfo" id="Xajza46St5" role="30dEsF">
+                <node concept="30bXRB" id="Xajza46Sob" role="3oJwfr">
+                  <property role="30bXRw" value="5" />
+                </node>
+              </node>
+              <node concept="3oxWck" id="Xajza46SOh" role="30dEs_">
+                <node concept="30bXRB" id="Xajza46SIa" role="3oJwfr">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="7aRvJQE4asE" role="_iOnB" />
     <node concept="_fkuM" id="6fXpv6P_wWb" role="_iOnB">
       <property role="TrG5h" value="monthRangeComparison" />
