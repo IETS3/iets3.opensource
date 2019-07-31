@@ -231,9 +231,9 @@
     <property role="EcuMT" value="8266215269006573903" />
     <property role="3GE5qa" value="delta" />
     <property role="TrG5h" value="DateDeltaType" />
-    <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="--" />
+    <property role="34LRSv" value="datedelta" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="7aRvJQE305g">
