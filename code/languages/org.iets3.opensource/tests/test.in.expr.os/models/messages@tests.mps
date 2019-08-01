@@ -38,6 +38,9 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
+      <concept id="411710798114972602" name="org.iets3.core.expr.base.structure.FailExpr" flags="ng" index="qoPdK">
+        <child id="411710798114972606" name="message" index="qoPdO" />
+      </concept>
       <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
@@ -895,6 +898,22 @@
           </node>
           <node concept="30bXRB" id="4AahbtVmxsq" role="_fkuS">
             <property role="30bXRw" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="5GmVcyjQtDK" role="_iOnB" />
+    <node concept="_fkuM" id="5GmVcyjQtQQ" role="_iOnB">
+      <property role="TrG5h" value="failWithAMessage" />
+      <node concept="mXNUv" id="5GmVcyjQtZA" role="_fkp5">
+        <node concept="qoPdK" id="5GmVcyjQtZN" role="mXJVd">
+          <node concept="1QScDb" id="5GmVcyjQuqS" role="qoPdO">
+            <node concept="1WPo9w" id="5GmVcyjQuI$" role="1QScD9">
+              <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
+            </node>
+            <node concept="1WPpZc" id="5GmVcyjQuqF" role="30czhm">
+              <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
+            </node>
           </node>
         </node>
       </node>
