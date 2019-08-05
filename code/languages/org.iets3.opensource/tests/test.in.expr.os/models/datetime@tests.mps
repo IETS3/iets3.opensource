@@ -3,21 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
   </languages>
   <imports>
-    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1118,6 +1111,44 @@
           <node concept="19SGf9" id="7aRvJQE4bB7" role="OjmMu">
             <node concept="19SUe$" id="7aRvJQE4bB8" role="19SJt6">
               <property role="19SUeA" value="We should also be able to add/substract deltas from &#10;each other, also for differnet kinds of deltas" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="Xajza46Q5y" role="_iOnB" />
+    <node concept="_fkuM" id="Xajza46Rra" role="_iOnB">
+      <property role="TrG5h" value="deltaArithMixed" />
+      <node concept="_fkuZ" id="Xajza46SnY" role="_fkp5">
+        <node concept="_fku$" id="Xajza46SnZ" role="_fkur" />
+        <node concept="30dDZf" id="Xajza46Tat" role="_fkuS">
+          <node concept="3oJwfo" id="Xajza46SFe" role="30dEsF">
+            <node concept="30bXRB" id="Xajza46SAc" role="3oJwfr">
+              <property role="30bXRw" value="10" />
+            </node>
+          </node>
+          <node concept="3oxWck" id="Xajza46SUj" role="30dEs_">
+            <node concept="30bXRB" id="Xajza46SGE" role="3oJwfr">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="30dDTi" id="Xajza46T3R" role="_fkuY">
+          <node concept="30bXRB" id="Xajza46T4e" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bsCy" id="Xajza46T2k" role="30dEsF">
+            <node concept="30dDZf" id="Xajza46T0U" role="30bsDf">
+              <node concept="3oJwfo" id="Xajza46St5" role="30dEsF">
+                <node concept="30bXRB" id="Xajza46Sob" role="3oJwfr">
+                  <property role="30bXRw" value="5" />
+                </node>
+              </node>
+              <node concept="3oxWck" id="Xajza46SOh" role="30dEs_">
+                <node concept="30bXRB" id="Xajza46SIa" role="3oJwfr">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

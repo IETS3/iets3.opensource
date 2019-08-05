@@ -62,3 +62,7 @@ code/languages/org.iets3.opensource/.mps/libraries.xml
 # -----------------------------------------------------------
 *CharIcon.png
 projectlibraries.overrides.properties
+
+# Test results
+TESTS-*.xml
+/system/

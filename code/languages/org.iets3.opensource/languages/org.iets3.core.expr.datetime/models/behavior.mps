@@ -61,6 +61,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -88,6 +89,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -1132,6 +1136,26 @@
       <node concept="3Tqbb2" id="7zAZa_vg93u" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="32A11Qm2Xhz">
+    <property role="3GE5qa" value="delta" />
+    <ref role="13h7C2" to="mi3w:7aRvJQE305f" resolve="DateDeltaType" />
+    <node concept="13hLZK" id="32A11Qm2Xh$" role="13h7CW">
+      <node concept="3clFbS" id="32A11Qm2Xh_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="32A11Qm2XhI" role="13h7CS">
+      <property role="TrG5h" value="isDiscrete" />
+      <ref role="13i0hy" to="pbu6:8XWEtesn15" resolve="isDiscrete" />
+      <node concept="3Tm1VV" id="32A11Qm2XhJ" role="1B3o_S" />
+      <node concept="3clFbS" id="32A11Qm2XhO" role="3clF47">
+        <node concept="3cpWs6" id="32A11Qm2Xqz" role="3cqZAp">
+          <node concept="3clFbT" id="32A11Qm2Yib" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="32A11Qm2XhP" role="3clF45" />
     </node>
   </node>
 </model>
