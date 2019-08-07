@@ -1801,6 +1801,9 @@
         </node>
       </node>
     </node>
+    <node concept="PMmxH" id="6UrZmTWpShN" role="6VMZX">
+      <ref role="PMmxG" node="5Pgo_ASgPrj" resolve="StackTrace_EditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="4_qY3E4CWiZ">
     <ref role="1XX52x" to="av4b:4_qY3E4CWhU" resolve="EmptyTestItem" />
