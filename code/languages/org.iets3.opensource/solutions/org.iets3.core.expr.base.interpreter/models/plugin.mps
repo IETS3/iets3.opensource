@@ -810,11 +810,8 @@
                 <node concept="3uibUv" id="UwUtc3njGy" role="1tU5fm">
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
-                <node concept="10QFUN" id="mQGcCvQ2J9" role="33vP2m">
-                  <node concept="rqRoa" id="mQGcCvQ2J8" role="10QFUP">
-                    <ref role="rqRob" to="hm2y:mQGcCvPueY" resolve="message" />
-                  </node>
-                  <node concept="17QB3L" id="mQGcCvQ2Tq" role="10QFUM" />
+                <node concept="rqRoa" id="mQGcCvQ2J8" role="33vP2m">
+                  <ref role="rqRob" to="hm2y:mQGcCvPueY" resolve="message" />
                 </node>
               </node>
             </node>

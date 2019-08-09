@@ -76,6 +76,7 @@
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
       <concept id="8219602584783477663" name="org.iets3.core.expr.tests.structure.ConstraintFailedTestItem" flags="ng" index="mXNUv">
+        <property id="5974682372640371252" name="errmsg" index="xVyv2" />
         <child id="8219602584783494093" name="actual" index="mXJVd" />
       </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
@@ -772,10 +773,11 @@
     <node concept="_fkuM" id="5GmVcyjQtQQ" role="_iOnB">
       <property role="TrG5h" value="failWithAMessage" />
       <node concept="mXNUv" id="5GmVcyjQtZA" role="_fkp5">
+        <property role="xVyv2" value="failure number 42" />
         <node concept="qoPdK" id="5GmVcyjQtZN" role="mXJVd">
           <node concept="1QScDb" id="5GmVcyjQuqS" role="qoPdO">
-            <node concept="1WPo9w" id="3HIl9G7kxYY" role="1QScD9">
-              <ref role="1WPo9$" node="3vxfdxbrKAj" resolve="m1" />
+            <node concept="1WPo9w" id="6UrZmTWroOc" role="1QScD9">
+              <ref role="1WPo9$" node="6UrZmTWnBVH" resolve="failure42" />
             </node>
             <node concept="1WPpZc" id="5GmVcyjQuqF" role="30czhm">
               <ref role="1WPpZZ" node="3vxfdxbret3" resolve="Messages" />
@@ -853,6 +855,12 @@
             <property role="19SUeA" value="m3" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1WOOD3" id="6UrZmTWnBVH" role="1WOfUI">
+      <property role="TrG5h" value="failure42" />
+      <node concept="30bdrP" id="6UrZmTWnC1k" role="1WPxOI">
+        <property role="30bdrQ" value="failure number 42" />
       </node>
     </node>
     <node concept="1WOfU3" id="3vxfdxbthIg" role="1WOfUI">
