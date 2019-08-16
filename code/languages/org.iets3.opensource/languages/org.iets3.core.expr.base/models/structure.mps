@@ -2195,5 +2195,12 @@
     <property role="EcuMT" value="8946943035394495000" />
     <property role="TrG5h" value="IParameterizedTypeSupportsEquals" />
   </node>
+  <node concept="PlHQZ" id="6z5WYdPcLnz">
+    <property role="EcuMT" value="7549708508605912547" />
+    <property role="TrG5h" value="IContextTypedOp" />
+    <node concept="PrWs8" id="6z5WYdPcLtB" role="PrDN$">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 

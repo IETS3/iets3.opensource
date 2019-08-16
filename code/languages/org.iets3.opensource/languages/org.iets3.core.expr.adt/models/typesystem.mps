@@ -19,7 +19,6 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1957,48 +1956,6 @@
     <node concept="1YaCAy" id="28$LOSAMCi0" role="1YuTPh">
       <property role="TrG5h" value="size" />
       <ref role="1YaFvo" to="v0r8:28$LOSAMCgX" resolve="Size" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="28$LOSANXqe">
-    <property role="TrG5h" value="typeof_Copy" />
-    <property role="3GE5qa" value="dot" />
-    <node concept="3clFbS" id="28$LOSANXqf" role="18ibNy">
-      <node concept="nvevp" id="28$LOSALaBc" role="3cqZAp">
-        <node concept="3clFbS" id="28$LOSALaBd" role="nvhr_">
-          <node concept="1Z5TYs" id="28$LOSALbtf" role="3cqZAp">
-            <node concept="mw_s8" id="28$LOSALbtD" role="1ZfhKB">
-              <node concept="2X3wrD" id="28$LOSALbtB" role="mwGJk">
-                <ref role="2X3Bk0" node="28$LOSALaBf" resolve="contextType" />
-              </node>
-            </node>
-            <node concept="mw_s8" id="28$LOSALbti" role="1ZfhK$">
-              <node concept="1Z2H0r" id="28$LOSALbc$" role="mwGJk">
-                <node concept="1YBJjd" id="28$LOSANXy5" role="1Z2MuG">
-                  <ref role="1YBMHb" node="28$LOSANXqh" resolve="copy" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1Z2H0r" id="28$LOSALaC3" role="nvjzm">
-          <node concept="2OqwBi" id="28$LOSALaMD" role="1Z2MuG">
-            <node concept="1YBJjd" id="28$LOSANXss" role="2Oq$k0">
-              <ref role="1YBMHb" node="28$LOSANXqh" resolve="copy" />
-            </node>
-            <node concept="2qgKlT" id="28$LOSALb6T" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-            </node>
-          </node>
-        </node>
-        <node concept="2X1qdy" id="28$LOSALaBf" role="2X0Ygz">
-          <property role="TrG5h" value="contextType" />
-          <node concept="2jxLKc" id="28$LOSALaBg" role="1tU5fm" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="28$LOSANXqh" role="1YuTPh">
-      <property role="TrG5h" value="copy" />
-      <ref role="1YaFvo" to="v0r8:28$LOSALaA2" resolve="Copy" />
     </node>
   </node>
   <node concept="1YbPZF" id="28$LOSBq9c_">
