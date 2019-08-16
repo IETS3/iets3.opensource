@@ -5169,11 +5169,6 @@
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3vxfdxbuGqG" role="3bR37C">
-          <node concept="3bR9La" id="3vxfdxbuGqH" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3vxfdxbuGqI" role="3bR37C">
           <node concept="3bR9La" id="3vxfdxbuGqJ" role="1SiIV1">
             <ref role="3bR37D" node="3vxfdxbuEmk" resolve="org.iets3.core.expr.messages" />
@@ -6800,6 +6795,11 @@
           <node concept="1SiIV0" id="6hYPZtwrXq$" role="3bR37C">
             <node concept="3bR9La" id="6hYPZtwrXq_" role="1SiIV1">
               <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="32Mgz$buMoE" role="3bR37C">
+            <node concept="3bR9La" id="32Mgz$buMoF" role="1SiIV1">
+              <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
             </node>
           </node>
         </node>

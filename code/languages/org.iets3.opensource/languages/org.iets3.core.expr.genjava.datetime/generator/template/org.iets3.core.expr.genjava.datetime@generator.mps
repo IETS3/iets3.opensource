@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b8c087fd-3b95-4bc9-873f-612d5c8e00f9(main@generator)">
+<model ref="r:b8c087fd-3b95-4bc9-873f-612d5c8e00f9(org.iets3.core.expr.genjava.datetime@generator)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="dyw1" ref="r:1bfba2ec-5951-40d1-b23d-5e10b3fd8ecc(org.iets3.core.expr.genjava.datetime.structure)" />
-    <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(main@generator)" />
+    <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />

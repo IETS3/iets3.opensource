@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:77acc36f-5eb1-43af-9f80-e6d4d70bca5f(org.iets3.core.expr.genjava.toplevel.main@generator)">
+<model ref="r:77acc36f-5eb1-43af-9f80-e6d4d70bca5f(org.iets3.core.expr.genjava.toplevel@generator)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
