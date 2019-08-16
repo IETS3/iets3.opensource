@@ -1211,7 +1211,7 @@
           <property role="1WP8_x" value="0" />
           <property role="1WP8_t" value="-1" />
           <property role="1WP8_q" value="-1" />
-          <ref role="1WP1uJ" to="hm2y:2U5Q01UkDMQ" resolve="InTarget" />
+          <ref role="1WP1uJ" to="hm2y:2U5Q01UkDMQ" resolve="OneOfTarget" />
         </node>
       </node>
       <node concept="3pwbzX" id="6V3iu1ff0FZ" role="3pwbzW">
@@ -4542,7 +4542,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVB6" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="hm2y:2U5Q01UkDMQ" resolve="InTarget" />
+          <ref role="1bQReP" to="hm2y:2U5Q01UkDMQ" resolve="OneOfTarget" />
         </node>
       </node>
       <node concept="3pwbzX" id="5DEy7AG9E6d" role="3pwbzW">
