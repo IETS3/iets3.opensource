@@ -1044,7 +1044,7 @@
     <ref role="1TJDcQ" node="KaZMgy4Ils" resolve="ContractItem" />
   </node>
   <node concept="1TIwiD" id="2U5Q01UkDMQ">
-    <property role="TrG5h" value="InTarget" />
+    <property role="TrG5h" value="OneOfTarget" />
     <property role="34LRSv" value="oneOf" />
     <property role="3GE5qa" value="targets" />
     <property role="EcuMT" value="3352322994211036342" />
