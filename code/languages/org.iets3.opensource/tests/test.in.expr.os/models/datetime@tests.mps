@@ -33,6 +33,7 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
@@ -793,6 +794,75 @@
           <property role="1fc2QY" value="2019" />
           <property role="1fc2QX" value="12" />
           <property role="1fc2QW" value="31" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7RGJ_88mK2i" role="_iOnB" />
+    <node concept="_fkuM" id="7RGJ_88mLns" role="_iOnB">
+      <property role="TrG5h" value="negativeDateDeltas" />
+      <node concept="_fkuZ" id="7RGJ_88mDd4" role="_fkp5">
+        <node concept="_fku$" id="7RGJ_88mDd5" role="_fkur" />
+        <node concept="30dvUo" id="7RGJ_88mGaI" role="_fkuY">
+          <node concept="_emDc" id="7RGJ_88mDeV" role="30dEsF">
+            <ref role="_emDf" node="26CArgU3lPZ" resolve="feb_1_2017" />
+          </node>
+          <node concept="3oJwfo" id="7RGJ_88mGk4" role="30dEs_">
+            <node concept="30bsCy" id="7RGJ_88mGaJ" role="3oJwfr">
+              <node concept="30cIq6" id="7RGJ_88mGaK" role="30bsDf">
+                <node concept="30bXRB" id="7RGJ_88mGaL" role="30czhm">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1fc2QT" id="7RGJ_88mGt7" role="_fkuS">
+          <property role="1fc2QY" value="2017" />
+          <property role="1fc2QX" value="02" />
+          <property role="1fc2QW" value="02" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7RGJ_88mMlt" role="_fkp5">
+        <node concept="_fku$" id="7RGJ_88mMlu" role="_fkur" />
+        <node concept="30dDZf" id="7RGJ_88mMp1" role="_fkuY">
+          <node concept="3oJwfo" id="7RGJ_88mMPJ" role="30dEs_">
+            <node concept="30bsCy" id="7RGJ_88mMy8" role="3oJwfr">
+              <node concept="30cIq6" id="7RGJ_88mMFe" role="30bsDf">
+                <node concept="30bXRB" id="7RGJ_88mMFp" role="30czhm">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="7RGJ_88mMlS" role="30dEsF">
+            <ref role="_emDf" node="26CArgU3lPZ" resolve="feb_1_2017" />
+          </node>
+        </node>
+        <node concept="1fc2QT" id="7RGJ_88mN0r" role="_fkuS">
+          <property role="1fc2QY" value="2017" />
+          <property role="1fc2QX" value="01" />
+          <property role="1fc2QW" value="31" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="7RGJ_88mOtJ" role="_fkp5">
+        <node concept="_fku$" id="7RGJ_88mOtK" role="_fkur" />
+        <node concept="30cIq6" id="7RGJ_88mOuf" role="_fkuY">
+          <node concept="30bsCy" id="7RGJ_88mOuq" role="30czhm">
+            <node concept="3oJwfo" id="7RGJ_88mOzm" role="30bsDf">
+              <node concept="30bXRB" id="7RGJ_88mOuB" role="3oJwfr">
+                <property role="30bXRw" value="5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3oJwfo" id="7RGJ_88nJO1" role="_fkuS">
+          <node concept="30bsCy" id="7RGJ_88nJO2" role="3oJwfr">
+            <node concept="30cIq6" id="7RGJ_88nJO3" role="30bsDf">
+              <node concept="30bXRB" id="7RGJ_88nJO4" role="30czhm">
+                <property role="30bXRw" value="5" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
