@@ -5168,6 +5168,9 @@
                     </node>
                     <node concept="liA8E" id="olugnm1tlZ" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                      <node concept="37vLTw" id="olugnm6G70" role="37wK5m">
+                        <ref role="3cqZAo" node="4o7_AWgGy9M" resolve="idx" />
+                      </node>
                     </node>
                   </node>
                 </node>
