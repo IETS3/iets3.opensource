@@ -1742,8 +1742,8 @@
                       <node concept="QwW4i" id="7Xf3oOM1BrW" role="2Oq$k0">
                         <ref role="QwW4h" node="7Xf3oOM1AEM" resolve="enumDeclaration" />
                       </node>
-                      <node concept="3Tsc0h" id="7Xf3oOLUYfj" role="2OqNvi">
-                        <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" resolve="literals" />
+                      <node concept="2qgKlT" id="olugnm0NqC" role="2OqNvi">
+                        <ref role="37wK5l" to="nu60:olugnm0Egc" resolve="effectiveLiterals" />
                       </node>
                     </node>
                     <node concept="3zZkjj" id="7Xf3oOLUYfk" role="2OqNvi">
