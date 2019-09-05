@@ -244,6 +244,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -1451,17 +1452,20 @@
                     <node concept="3Tqbb2" id="15mJ3JeE5UH" role="1tU5fm">
                       <ref role="ehGHo" to="yv47:xu7xcKdQCB" resolve="IRecordMember" />
                     </node>
-                    <node concept="2OqwBi" id="15mJ3JeE5UK" role="33vP2m">
-                      <node concept="2OqwBi" id="15mJ3JeE5UL" role="2Oq$k0">
-                        <node concept="37vLTw" id="7cphKbKJd7W" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7cphKbKJd7M" resolve="record" />
+                    <node concept="2OqwBi" id="1qrYg08i$De" role="33vP2m">
+                      <node concept="2OqwBi" id="1qrYg08inzb" role="2Oq$k0">
+                        <node concept="2OqwBi" id="15mJ3JeE5UL" role="2Oq$k0">
+                          <node concept="37vLTw" id="7cphKbKJd7W" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7cphKbKJd7M" resolve="record" />
+                          </node>
+                          <node concept="2qgKlT" id="1qrYg08ihjV" role="2OqNvi">
+                            <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
+                          </node>
                         </node>
-                        <node concept="3Tsc0h" id="15mJ3JeE5UR" role="2OqNvi">
-                          <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
-                        </node>
+                        <node concept="ANE8D" id="1qrYg08isRJ" role="2OqNvi" />
                       </node>
-                      <node concept="34jXtK" id="15mJ3JeE5US" role="2OqNvi">
-                        <node concept="37vLTw" id="15mJ3JeE5UT" role="25WWJ7">
+                      <node concept="34jXtK" id="1qrYg08iB$s" role="2OqNvi">
+                        <node concept="37vLTw" id="1qrYg08iBVj" role="25WWJ7">
                           <ref role="3cqZAo" node="7D7uZV2zfdW" resolve="i" />
                         </node>
                       </node>

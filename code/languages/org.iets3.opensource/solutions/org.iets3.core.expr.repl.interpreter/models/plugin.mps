@@ -20,6 +20,7 @@
     <import index="31n1" ref="r:bd596a19-3b83-4e59-b025-d69b2d8f8fd6(org.iets3.core.expr.repl.behavior)" />
     <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -559,8 +560,8 @@
                     <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="4YhD5cZq7lI" role="2OqNvi">
-                  <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+                <node concept="2qgKlT" id="1qrYg08iXxd" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
                 </node>
               </node>
               <node concept="3clFbS" id="4YhD5cZq4w4" role="2LFqv$">
