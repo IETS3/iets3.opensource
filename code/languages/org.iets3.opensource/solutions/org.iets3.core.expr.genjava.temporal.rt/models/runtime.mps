@@ -914,13 +914,8 @@
                         <ref role="3cqZAo" node="4eVSC65wKJN" resolve="binop" />
                       </node>
                       <node concept="1Bd96e" id="4eVSC65wKJt" role="2OqNvi">
-                        <node concept="10QFUN" id="4eVSC65wKJu" role="1BdPVh">
-                          <node concept="37vLTw" id="3rApyZ4Frru" role="10QFUP">
-                            <ref role="3cqZAo" node="3rApyZ4Frrp" resolve="leftSliceVal" />
-                          </node>
-                          <node concept="3uibUv" id="3wXkdMW0zbv" role="10QFUM">
-                            <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
-                          </node>
+                        <node concept="37vLTw" id="3rApyZ4Frru" role="1BdPVh">
+                          <ref role="3cqZAo" node="3rApyZ4Frrp" resolve="leftSliceVal" />
                         </node>
                         <node concept="37vLTw" id="4eVSC65wSc2" role="1BdPVh">
                           <ref role="3cqZAo" node="_ggAdDuHB1" resolve="rightValue" />
