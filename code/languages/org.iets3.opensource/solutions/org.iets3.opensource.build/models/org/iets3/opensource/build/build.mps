@@ -6727,16 +6727,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7sID8G9tpuN" role="3bR37C">
-          <node concept="3bR9La" id="7sID8G9tpuO" role="1SiIV1">
-            <ref role="3bR37D" node="5zQvLw7dsP5" resolve="org.iets3.core.expr.temporal" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7sID8G9tpuP" role="3bR37C">
-          <node concept="3bR9La" id="7sID8G9tpuQ" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="Lq1Jk6ZaX4" role="3bR37C">
           <node concept="3bR9La" id="Lq1Jk6ZaX5" role="1SiIV1">
             <ref role="3bR37D" node="Lq1Jk6Z9gd" resolve="org.iets3.core.expr.temporal.runtime" />
