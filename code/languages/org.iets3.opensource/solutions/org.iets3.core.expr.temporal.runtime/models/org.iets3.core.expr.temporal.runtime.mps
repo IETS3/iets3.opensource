@@ -4602,7 +4602,7 @@
                     <ref role="3cqZAo" node="3z0DCryuwD9" resolve="range" />
                   </node>
                   <node concept="liA8E" id="1Mp62pP1on6" role="2OqNvi">
-                    <ref role="37wK5l" to="2j0k:4voqclTswQa" resolve="begin" />
+                    <ref role="37wK5l" to="2j0k:7khFtBHIiHK" resolve="begin" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="1Mp62pP1on7" role="37wK5m">
@@ -4610,7 +4610,7 @@
                     <ref role="3cqZAo" node="3z0DCryuwD9" resolve="range" />
                   </node>
                   <node concept="liA8E" id="1Mp62pP1on9" role="2OqNvi">
-                    <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                    <ref role="37wK5l" to="2j0k:7khFtBHIiHR" resolve="end" />
                   </node>
                 </node>
               </node>
@@ -4691,12 +4691,22 @@
                   <node concept="3uibUv" id="6nEpT4GVeJ5" role="1tU5fm">
                     <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                   </node>
-                  <node concept="2OqwBi" id="6nEpT4GVeJe" role="33vP2m">
-                    <node concept="37vLTw" id="6nEpT4GVeJf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3z0DCryuwD9" resolve="range" />
-                    </node>
-                    <node concept="liA8E" id="6nEpT4GVeJg" role="2OqNvi">
-                      <ref role="37wK5l" to="2j0k:6nEpT4GVae9" resolve="durationInDays" />
+                  <node concept="2ShNRf" id="4OlDUX1mb6f" role="33vP2m">
+                    <node concept="1pGfFk" id="4OlDUX1mb60" role="2ShVmc">
+                      <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                      <node concept="3cpWs3" id="4OlDUX1mc0t" role="37wK5m">
+                        <node concept="Xl_RD" id="4OlDUX1mc0I" role="3uHU7w">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                        <node concept="2OqwBi" id="6nEpT4GVeJe" role="3uHU7B">
+                          <node concept="37vLTw" id="6nEpT4GVeJf" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3z0DCryuwD9" resolve="range" />
+                          </node>
+                          <node concept="liA8E" id="4OlDUX1maJn" role="2OqNvi">
+                            <ref role="37wK5l" to="2j0k:7khFtBHDa1x" resolve="countDays" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4738,7 +4748,7 @@
                                 <ref role="3cqZAo" node="3z0DCryuwD9" resolve="range" />
                               </node>
                               <node concept="liA8E" id="6nEpT4GVgrj" role="2OqNvi">
-                                <ref role="37wK5l" to="2j0k:4voqclTsBpn" resolve="end" />
+                                <ref role="37wK5l" to="2j0k:7khFtBHIiHR" resolve="end" />
                               </node>
                             </node>
                           </node>
@@ -4938,8 +4948,8 @@
       </node>
       <node concept="37vLTG" id="3z0DCryuwD9" role="3clF46">
         <property role="TrG5h" value="range" />
-        <node concept="3uibUv" id="3z0DCryuDJg" role="1tU5fm">
-          <ref role="3uigEE" to="2j0k:4voqclTstQm" resolve="DiscreteDateRangeValue" />
+        <node concept="3uibUv" id="4OlDUX1lMZm" role="1tU5fm">
+          <ref role="3uigEE" to="2j0k:7khFtBHIbg6" resolve="AbstractDateRangeValue" />
         </node>
       </node>
     </node>
