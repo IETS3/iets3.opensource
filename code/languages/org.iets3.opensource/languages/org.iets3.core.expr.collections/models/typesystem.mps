@@ -2,10 +2,10 @@
 <model ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="1" />
-    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2216,15 +2216,15 @@
                 <node concept="mw_s8" id="7kYh9Ws$4ah" role="1ZfhKB">
                   <node concept="2OqwBi" id="7kYh9Ws$4ai" role="mwGJk">
                     <node concept="1PxgMI" id="7kYh9Ws$4aj" role="2Oq$k0">
-                      <node concept="chp4Y" id="2uo6UInBSUx" role="3oSUPX">
-                        <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
-                      </node>
                       <node concept="2X3wrD" id="7kYh9Ws$4ak" role="1m5AlR">
                         <ref role="2X3Bk0" node="54HsVvNVcz_" resolve="contextType" />
                       </node>
+                      <node concept="chp4Y" id="1SHQl3ygg3H" role="3oSUPX">
+                        <ref role="cht4Q" to="700h:6zmBjqUiHH7" resolve="IOrderedCollection" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="7kYh9Ws$4al" role="2OqNvi">
-                      <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
+                    <node concept="2qgKlT" id="1SHQl3yggm5" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:3oWFox95OZf" resolve="getBaseType" />
                     </node>
                   </node>
                 </node>
@@ -2263,8 +2263,8 @@
                 <ref role="2X3Bk0" node="54HsVvNVcz_" resolve="contextType" />
               </node>
               <node concept="1mIQ4w" id="54HsVvNVczz" role="2OqNvi">
-                <node concept="chp4Y" id="2uo6UInBSPy" role="cj9EA">
-                  <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
+                <node concept="chp4Y" id="1SHQl3ygfZQ" role="cj9EA">
+                  <ref role="cht4Q" to="700h:6zmBjqUiHH7" resolve="IOrderedCollection" />
                 </node>
               </node>
             </node>
