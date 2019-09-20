@@ -1716,6 +1716,39 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3eNFk2" id="5QDPRL$feXr" role="3eNLev">
+                    <node concept="1Wc70l" id="5QDPRL$feXs" role="3eO9$A">
+                      <node concept="2OqwBi" id="5QDPRL$feXt" role="3uHU7w">
+                        <node concept="37vLTw" id="5QDPRL$feXu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="ncXQh4qfxK" resolve="nothingType" />
+                        </node>
+                        <node concept="liA8E" id="5QDPRL$feXv" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Class.isInstance(java.lang.Object)" resolve="isInstance" />
+                          <node concept="37vLTw" id="5QDPRL$feXw" role="37wK5m">
+                            <ref role="3cqZAo" node="6HHp2WnvqXN" resolve="next" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="5QDPRL$feXx" role="3uHU7B">
+                        <node concept="37vLTw" id="5QDPRL$feXy" role="3uHU7B">
+                          <ref role="3cqZAo" node="ncXQh4qfxK" resolve="nothingType" />
+                        </node>
+                        <node concept="10Nm6u" id="5QDPRL$feXz" role="3uHU7w" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5QDPRL$feX$" role="3eOfB_">
+                      <node concept="3clFbF" id="5QDPRL$feX_" role="3cqZAp">
+                        <node concept="37vLTI" id="5QDPRL$feXA" role="3clFbG">
+                          <node concept="37vLTw" id="5QDPRL$feXB" role="37vLTx">
+                            <ref role="3cqZAo" node="6HHp2WnvqXN" resolve="next" />
+                          </node>
+                          <node concept="37vLTw" id="5QDPRL$feXC" role="37vLTJ">
+                            <ref role="3cqZAo" node="3SMYSUUtzET" resolve="element" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="9aQIb" id="3SMYSUUtzFo" role="9aQIa">
                     <node concept="3clFbS" id="3SMYSUUtzFp" role="9aQI4">
                       <node concept="YS8fn" id="3SMYSUUtzFq" role="3cqZAp">
