@@ -65,6 +65,12 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5QDPRL$qhvL" resolve="QueryTransform" />
     </node>
+    <node concept="1TJgyj" id="5QDPRL$x5n_" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445853709797" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="group" />
+      <ref role="20lvS9" node="5QDPRL$x2oZ" resolve="QueryGroup" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5QDPRL$oUsO">
     <property role="EcuMT" value="6749162445851567924" />
@@ -97,6 +103,35 @@
     <property role="EcuMT" value="6749162445851924465" />
     <property role="TrG5h" value="QueryTransform" />
     <property role="34LRSv" value="transform" />
+    <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$x2oZ">
+    <property role="EcuMT" value="6749162445853697599" />
+    <property role="TrG5h" value="QueryGroup" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5QDPRL$x3ZY" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445853704190" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="by" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QDPRL$x3FP" resolve="QueryGroupBy" />
+    </node>
+    <node concept="1TJgyj" id="5QDPRL$xyOH" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445853830445" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="build" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QDPRL$xy5s" resolve="QueryGroupBuild" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$x3FP">
+    <property role="EcuMT" value="6749162445853702901" />
+    <property role="TrG5h" value="QueryGroupBy" />
+    <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$xy5s">
+    <property role="EcuMT" value="6749162445853827420" />
+    <property role="TrG5h" value="QueryGroupBuild" />
     <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
   </node>
 </model>
