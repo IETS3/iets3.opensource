@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:9ed37aa3-295d-400f-9a08-9c363b19e30b(org.iets3.core.expr.query.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
+  </languages>
+  <imports>
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="5QDPRL$ohHz">
+    <property role="EcuMT" value="6749162445851401059" />
+    <property role="TrG5h" value="QueryExpr" />
+    <property role="34LRSv" value="query" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5QDPRL$oi4v" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445851402527" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="source" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QDPRL$pwTW" resolve="QuerySource" />
+    </node>
+    <node concept="1TJgyj" id="5QDPRL$pd_y" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445851646306" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="filter" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5QDPRL$oUsO" resolve="QueryFilter" />
+    </node>
+    <node concept="1TJgyj" id="5QDPRL$qmK4" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445851945988" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="transform" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5QDPRL$qhvL" resolve="QueryTransform" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$oUsO">
+    <property role="EcuMT" value="6749162445851567924" />
+    <property role="TrG5h" value="QueryFilter" />
+    <property role="34LRSv" value="filter" />
+    <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$oYTs">
+    <property role="EcuMT" value="6749162445851586140" />
+    <property role="TrG5h" value="AbstractQueryComponent" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5QDPRL$oZ8V" role="PzmwI">
+      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$pwTW">
+    <property role="EcuMT" value="6749162445851725436" />
+    <property role="TrG5h" value="QuerySource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5QDPRL$px4h" role="1TKVEi">
+      <property role="IQ2ns" value="6749162445851726097" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5QDPRL$qhvL">
+    <property role="EcuMT" value="6749162445851924465" />
+    <property role="TrG5h" value="QueryTransform" />
+    <property role="34LRSv" value="transform" />
+    <ref role="1TJDcQ" node="5QDPRL$oYTs" resolve="AbstractQueryComponent" />
+  </node>
+</model>
+
