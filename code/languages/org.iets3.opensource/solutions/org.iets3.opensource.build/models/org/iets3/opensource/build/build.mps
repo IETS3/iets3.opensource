@@ -1235,6 +1235,11 @@
             <ref role="1Busuk" node="3iESbJs02VW" resolve="org.iets3.core.expr.metafunction" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2vo2INnDW$V" role="3bR37C">
+          <node concept="3bR9La" id="2vo2INnDW$W" role="1SiIV1">
+            <ref role="3bR37D" node="5QDPRL$oRBh" resolve="org.iets3.core.expr.query" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5QDPRL$oT7a" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1286,6 +1291,16 @@
         <node concept="1SiIV0" id="5QDPRL$oT7r" role="3bR37C">
           <node concept="3bR9La" id="5QDPRL$oT7s" role="1SiIV1">
             <ref role="3bR37D" node="5QDPRL$oRBh" resolve="org.iets3.core.expr.query" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2vo2INnDW$X" role="3bR37C">
+          <node concept="3bR9La" id="2vo2INnDW$Y" role="1SiIV1">
+            <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2vo2INnDW$Z" role="3bR37C">
+          <node concept="3bR9La" id="2vo2INnDW_0" role="1SiIV1">
+            <ref role="3bR37D" node="3iESbJs02VW" resolve="org.iets3.core.expr.metafunction" />
           </node>
         </node>
       </node>
