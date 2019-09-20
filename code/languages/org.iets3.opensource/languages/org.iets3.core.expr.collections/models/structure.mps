@@ -2,8 +2,8 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -174,6 +174,9 @@
     <property role="TrG5h" value="IOrderedCollection" />
     <property role="3GE5qa" value="ordered" />
     <property role="EcuMT" value="7554398283339848519" />
+    <node concept="PrWs8" id="1SHQl3yge92" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5WNmJ7DoRmx" resolve="ICollectionType" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHHJ">
     <property role="TrG5h" value="IOrderedCollectionOp" />
