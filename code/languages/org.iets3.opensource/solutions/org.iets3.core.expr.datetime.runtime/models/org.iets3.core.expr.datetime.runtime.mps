@@ -3423,6 +3423,50 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4O9rw8aIFdi" role="jymVt" />
+    <node concept="3clFb_" id="4O9rw8aIBCS" role="jymVt">
+      <property role="TrG5h" value="containsDate" />
+      <node concept="3clFbS" id="4O9rw8aIBCT" role="3clF47">
+        <node concept="3cpWs8" id="4O9rw8aISCY" role="3cqZAp">
+          <node concept="3cpWsn" id="4O9rw8aISCZ" role="3cpWs9">
+            <property role="TrG5h" value="o" />
+            <node concept="3uibUv" id="4O9rw8aISCX" role="1tU5fm">
+              <ref role="3uigEE" node="7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
+            </node>
+            <node concept="2ShNRf" id="4O9rw8aISD0" role="33vP2m">
+              <node concept="1pGfFk" id="4O9rw8aISD1" role="2ShVmc">
+                <ref role="37wK5l" node="7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
+                <node concept="37vLTw" id="4O9rw8aISD2" role="37wK5m">
+                  <ref role="3cqZAo" node="4O9rw8aIBDC" resolve="other" />
+                </node>
+                <node concept="37vLTw" id="4O9rw8aISD3" role="37wK5m">
+                  <ref role="3cqZAo" node="4O9rw8aIBDC" resolve="other" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4O9rw8aIVYv" role="3cqZAp">
+          <node concept="2OqwBi" id="4O9rw8aIWVG" role="3clFbG">
+            <node concept="Xjq3P" id="4O9rw8aIVYt" role="2Oq$k0" />
+            <node concept="liA8E" id="4O9rw8aIY1o" role="2OqNvi">
+              <ref role="37wK5l" node="j5CxBK4K7L" resolve="contains" />
+              <node concept="37vLTw" id="4O9rw8aIYa0" role="37wK5m">
+                <ref role="3cqZAo" node="4O9rw8aISCZ" resolve="o" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4O9rw8aIBDA" role="1B3o_S" />
+      <node concept="10P_77" id="4O9rw8aIBDB" role="3clF45" />
+      <node concept="37vLTG" id="4O9rw8aIBDC" role="3clF46">
+        <property role="TrG5h" value="other" />
+        <node concept="3uibUv" id="4O9rw8aIIR8" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="j5CxBK5hR6" role="jymVt" />
     <node concept="3clFb_" id="j5CxBK5tEE" role="jymVt">
       <property role="TrG5h" value="overlaps" />

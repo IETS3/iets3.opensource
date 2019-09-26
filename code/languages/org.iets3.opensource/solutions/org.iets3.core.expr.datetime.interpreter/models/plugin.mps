@@ -626,17 +626,9 @@
                         <ref role="3cqZAo" node="7khFtBHzuiH" resolve="ctx" />
                       </node>
                       <node concept="liA8E" id="4O9rw8aCba2" role="2OqNvi">
-                        <ref role="37wK5l" to="2j0k:j5CxBK4K7L" resolve="contains" />
-                        <node concept="2ShNRf" id="4O9rw8aCbdC" role="37wK5m">
-                          <node concept="1pGfFk" id="4O9rw8aCbt3" role="2ShVmc">
-                            <ref role="37wK5l" to="2j0k:7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
-                            <node concept="37vLTw" id="4O9rw8aCbwU" role="37wK5m">
-                              <ref role="3cqZAo" node="4O9rw8aC1pK" resolve="other" />
-                            </node>
-                            <node concept="37vLTw" id="4O9rw8aCb$K" role="37wK5m">
-                              <ref role="3cqZAo" node="4O9rw8aC1pK" resolve="other" />
-                            </node>
-                          </node>
+                        <ref role="37wK5l" to="2j0k:4O9rw8aIBCS" resolve="containsDate" />
+                        <node concept="37vLTw" id="4O9rw8aJ5wZ" role="37wK5m">
+                          <ref role="3cqZAo" node="4O9rw8aC1pK" resolve="other" />
                         </node>
                       </node>
                     </node>
