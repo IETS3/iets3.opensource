@@ -20,7 +20,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4064,8 +4063,8 @@
                     <node concept="3clFbF" id="4O9rw8aJIwt" role="3cqZAp">
                       <node concept="2OqwBi" id="4O9rw8aJIwu" role="3clFbG">
                         <node concept="1PxgMI" id="4O9rw8aJIwv" role="2Oq$k0">
-                          <node concept="chp4Y" id="4O9rw8aJIww" role="3oSUPX">
-                            <ref role="cht4Q" to="mi3w:7khFtBHyG$y" resolve="ContainsRangeRelOp" />
+                          <node concept="chp4Y" id="4ygzLy87Wcx" role="3oSUPX">
+                            <ref role="cht4Q" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeRelOp" />
                           </node>
                           <node concept="2OqwBi" id="4O9rw8aJIwx" role="1m5AlR">
                             <node concept="3TrEf2" id="4O9rw8aJIwy" role="2OqNvi">
@@ -4074,8 +4073,8 @@
                             <node concept="30H73N" id="4O9rw8aJIwz" role="2Oq$k0" />
                           </node>
                         </node>
-                        <node concept="3TrEf2" id="4O9rw8aJIw$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="mi3w:7khFtBHyEjN" resolve="other" />
+                        <node concept="3TrEf2" id="4ygzLy87Z1R" role="2OqNvi">
+                          <ref role="3Tt5mk" to="mi3w:4O9rw8aD8PU" resolve="other" />
                         </node>
                       </node>
                     </node>
@@ -4097,8 +4096,8 @@
                 </node>
               </node>
               <node concept="1mIQ4w" id="4O9rw8aJIwH" role="2OqNvi">
-                <node concept="chp4Y" id="4O9rw8aJNxo" role="cj9EA">
-                  <ref role="cht4Q" to="tp2q:h860Fb$" resolve="IntersectOperation" />
+                <node concept="chp4Y" id="4ygzLy87skQ" role="cj9EA">
+                  <ref role="cht4Q" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeRelOp" />
                 </node>
               </node>
             </node>
