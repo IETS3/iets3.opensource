@@ -536,7 +536,7 @@
   <node concept="1TIwiD" id="4O9rw8aD7_O">
     <property role="EcuMT" value="5551088970758388084" />
     <property role="3GE5qa" value="range.rel" />
-    <property role="TrG5h" value="IntersectRangeRelOp" />
+    <property role="TrG5h" value="IntersectRangeOp" />
     <property role="34LRSv" value="intersect" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
     <node concept="1TJgyj" id="4O9rw8aD8PU" role="1TKVEi">

@@ -29,6 +29,9 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -497,6 +500,28 @@
                   </node>
                   <node concept="3uibUv" id="7khFtBHAz8F" role="10QFUM">
                     <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7fmv$FC5ZG$" role="3cqZAp">
+              <node concept="3clFbS" id="7fmv$FC5ZGA" role="3clFbx">
+                <node concept="3cpWs6" id="7fmv$FC61n5" role="3cqZAp">
+                  <node concept="2ShNRf" id="7fmv$FC61pJ" role="3cqZAk">
+                    <node concept="HV5vD" id="7fmv$FC62ye" role="2ShVmc">
+                      <ref role="HV5vE" to="2j0k:4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7fmv$FC60FN" role="3clFbw">
+                <node concept="37vLTw" id="7fmv$FC5ZNN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7khFtBHAtAr" resolve="end" />
+                </node>
+                <node concept="liA8E" id="7fmv$FC618u" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate)" resolve="isBefore" />
+                  <node concept="37vLTw" id="7fmv$FC619z" role="37wK5m">
+                    <ref role="3cqZAo" node="7khFtBHAtsQ" resolve="ctx" />
                   </node>
                 </node>
               </node>
