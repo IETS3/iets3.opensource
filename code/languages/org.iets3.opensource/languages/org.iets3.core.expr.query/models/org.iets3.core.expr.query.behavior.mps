@@ -86,6 +86,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -481,6 +482,35 @@
       </node>
       <node concept="3Tqbb2" id="5QDPRL$xztK" role="3clF45">
         <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2wBVN3z_B$M">
+    <ref role="13h7C2" to="ysgh:5QDPRL$x2oZ" resolve="QueryGroup" />
+    <node concept="13hLZK" id="2wBVN3z_B$N" role="13h7CW">
+      <node concept="3clFbS" id="2wBVN3z_B$O" role="2VODD2">
+        <node concept="3clFbF" id="2wBVN3z_BHA" role="3cqZAp">
+          <node concept="2OqwBi" id="2wBVN3z_CqA" role="3clFbG">
+            <node concept="2OqwBi" id="2wBVN3z_BPi" role="2Oq$k0">
+              <node concept="13iPFW" id="2wBVN3z_BH_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2wBVN3z_C1d" role="2OqNvi">
+                <ref role="3Tt5mk" to="ysgh:5QDPRL$x3ZY" resolve="by" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="2wBVN3z_CNH" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2wBVN3z_D0C" role="3cqZAp">
+          <node concept="2OqwBi" id="2wBVN3z_DL7" role="3clFbG">
+            <node concept="2OqwBi" id="2wBVN3z_D9S" role="2Oq$k0">
+              <node concept="13iPFW" id="2wBVN3z_D0A" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2wBVN3z_DkQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ysgh:5QDPRL$xyOH" resolve="build" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="2wBVN3z_E4s" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
