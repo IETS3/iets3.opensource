@@ -166,7 +166,7 @@
       <concept id="8435714728548062429" name="org.iets3.core.expr.datetime.structure.FullYearsCountOp" flags="ng" index="2oGJ$4" />
       <concept id="8435714728548062428" name="org.iets3.core.expr.datetime.structure.StartedYearsCountOp" flags="ng" index="2oGJ$5" />
       <concept id="8271636411545326830" name="org.iets3.core.expr.datetime.structure.ToStringOp" flags="ng" index="2R$_mj" />
-      <concept id="5551088970758388084" name="org.iets3.core.expr.datetime.structure.IntersectRangeRelOp" flags="ng" index="17FhtQ">
+      <concept id="5551088970758388084" name="org.iets3.core.expr.datetime.structure.IntersectRangeOp" flags="ng" index="17FhtQ">
         <child id="5551088970758393210" name="other" index="17FudS" />
       </concept>
       <concept id="5551088970758490176" name="org.iets3.core.expr.datetime.structure.IsEmptyRangeOp" flags="ng" index="17FQp2" />
@@ -2157,7 +2157,7 @@
             </node>
           </node>
         </node>
-        <node concept="2vmpn$" id="7khFtBHBrGn" role="_fkuS" />
+        <node concept="2vmpnb" id="7fmv$FCclpl" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7khFtBH$THj" role="_fkp5">
         <node concept="_fku$" id="7khFtBH$THk" role="_fkur" />
@@ -2516,27 +2516,6 @@
             <property role="1fc2QW" value="15" />
           </node>
         </node>
-      </node>
-      <node concept="_fkuZ" id="7fmv$FC5OYP" role="_fkp5">
-        <node concept="_fku$" id="7fmv$FC5OYQ" role="_fkur" />
-        <node concept="1QScDb" id="7fmv$FC5PEC" role="_fkuY">
-          <node concept="17FQp2" id="7fmv$FC5PFq" role="1QScD9" />
-          <node concept="1QScDb" id="7fmv$FC5Pd1" role="30czhm">
-            <node concept="2oxMaX" id="7fmv$FC5Ppp" role="1QScD9">
-              <node concept="1fc2QT" id="7fmv$FC5Pvi" role="2oxMaW">
-                <property role="1fc2QY" value="2019" />
-                <property role="1fc2QX" value="01" />
-                <property role="1fc2QW" value="01" />
-              </node>
-            </node>
-            <node concept="1fc2QT" id="7fmv$FC5P2k" role="30czhm">
-              <property role="1fc2QY" value="2019" />
-              <property role="1fc2QX" value="02" />
-              <property role="1fc2QW" value="01" />
-            </node>
-          </node>
-        </node>
-        <node concept="2vmpnb" id="7fmv$FC5PIy" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="7khFtBHFoZL" role="_iOnB" />
