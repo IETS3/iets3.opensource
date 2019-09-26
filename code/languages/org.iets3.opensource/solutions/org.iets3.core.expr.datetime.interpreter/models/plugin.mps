@@ -29,9 +29,6 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -504,38 +501,15 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="7fmv$FC5ZG$" role="3cqZAp">
-              <node concept="3clFbS" id="7fmv$FC5ZGA" role="3clFbx">
-                <node concept="3cpWs6" id="7fmv$FC61n5" role="3cqZAp">
-                  <node concept="2ShNRf" id="7fmv$FC61pJ" role="3cqZAk">
-                    <node concept="HV5vD" id="7fmv$FC62ye" role="2ShVmc">
-                      <ref role="HV5vE" to="2j0k:4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
-                    </node>
-                  </node>
+            <node concept="3cpWs6" id="7fmv$FC7LFr" role="3cqZAp">
+              <node concept="2YIFZM" id="7fmv$FC7LSD" role="3cqZAk">
+                <ref role="37wK5l" to="2j0k:7fmv$FC7j0i" resolve="make" />
+                <ref role="1Pybhc" to="2j0k:7khFtBHHXIi" resolve="ArbitraryDateRangeValue" />
+                <node concept="37vLTw" id="7fmv$FC7LY2" role="37wK5m">
+                  <ref role="3cqZAo" node="7khFtBHAtsQ" resolve="ctx" />
                 </node>
-              </node>
-              <node concept="2OqwBi" id="7fmv$FC60FN" role="3clFbw">
-                <node concept="37vLTw" id="7fmv$FC5ZNN" role="2Oq$k0">
+                <node concept="37vLTw" id="7fmv$FC7LYK" role="37wK5m">
                   <ref role="3cqZAo" node="7khFtBHAtAr" resolve="end" />
-                </node>
-                <node concept="liA8E" id="7fmv$FC618u" role="2OqNvi">
-                  <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate)" resolve="isBefore" />
-                  <node concept="37vLTw" id="7fmv$FC619z" role="37wK5m">
-                    <ref role="3cqZAo" node="7khFtBHAtsQ" resolve="ctx" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="7khFtBHAKwD" role="3cqZAp">
-              <node concept="2ShNRf" id="7khFtBHAKwF" role="3cqZAk">
-                <node concept="1pGfFk" id="7khFtBHAKwG" role="2ShVmc">
-                  <ref role="37wK5l" to="2j0k:7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
-                  <node concept="37vLTw" id="7khFtBHAKwH" role="37wK5m">
-                    <ref role="3cqZAo" node="7khFtBHAtsQ" resolve="ctx" />
-                  </node>
-                  <node concept="37vLTw" id="7khFtBHJd8H" role="37wK5m">
-                    <ref role="3cqZAo" node="7khFtBHAtAr" resolve="end" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -847,7 +821,7 @@
     </node>
     <node concept="qq9P1" id="4O9rw8aEF1O" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeRelOp" />
+      <ref role="qq9wM" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeOp" />
       <node concept="3dA_Gj" id="4O9rw8aEKzz" role="3vQZUl">
         <node concept="9aQIb" id="4O9rw8aEKz$" role="3vcmbn">
           <node concept="3clFbS" id="4O9rw8aEKz_" role="9aQI4">
