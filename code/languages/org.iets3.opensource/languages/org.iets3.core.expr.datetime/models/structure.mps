@@ -533,5 +533,26 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4O9rw8aD7_O">
+    <property role="EcuMT" value="5551088970758388084" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="IntersectRangeOp" />
+    <property role="34LRSv" value="intersect" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+    <node concept="1TJgyj" id="4O9rw8aD8PU" role="1TKVEi">
+      <property role="IQ2ns" value="5551088970758393210" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="other" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4O9rw8aDwx0">
+    <property role="EcuMT" value="5551088970758490176" />
+    <property role="3GE5qa" value="range.rel" />
+    <property role="TrG5h" value="IsEmptyRangeOp" />
+    <property role="34LRSv" value="isEmpty" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+  </node>
 </model>
 

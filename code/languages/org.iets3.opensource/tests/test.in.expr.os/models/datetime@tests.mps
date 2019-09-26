@@ -2,8 +2,8 @@
 <model ref="r:55f7f54b-9ace-4846-b63e-350652706af1(test.in.expr.os.datetime@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
@@ -33,6 +33,7 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
@@ -165,6 +166,10 @@
       <concept id="8435714728548062429" name="org.iets3.core.expr.datetime.structure.FullYearsCountOp" flags="ng" index="2oGJ$4" />
       <concept id="8435714728548062428" name="org.iets3.core.expr.datetime.structure.StartedYearsCountOp" flags="ng" index="2oGJ$5" />
       <concept id="8271636411545326830" name="org.iets3.core.expr.datetime.structure.ToStringOp" flags="ng" index="2R$_mj" />
+      <concept id="5551088970758388084" name="org.iets3.core.expr.datetime.structure.IntersectRangeOp" flags="ng" index="17FhtQ">
+        <child id="5551088970758393210" name="other" index="17FudS" />
+      </concept>
+      <concept id="5551088970758490176" name="org.iets3.core.expr.datetime.structure.IsEmptyRangeOp" flags="ng" index="17FQp2" />
       <concept id="3885635233759216659" name="org.iets3.core.expr.datetime.structure.YearRangeLiteral" flags="ng" index="1f6kyV">
         <child id="3885635233759216660" name="year" index="1f6kyW" />
       </concept>
@@ -2152,7 +2157,21 @@
             </node>
           </node>
         </node>
-        <node concept="2vmpn$" id="7khFtBHBrGn" role="_fkuS" />
+        <node concept="2vmpnb" id="7fmv$FCclpl" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3k8r2BBaZjP" role="_fkp5">
+        <node concept="_fku$" id="3k8r2BBaZjQ" role="_fkur" />
+        <node concept="1QScDb" id="3k8r2BBaZjR" role="_fkuY">
+          <node concept="_emDc" id="3k8r2BBaZlZ" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+          </node>
+          <node concept="2oAQjS" id="3k8r2BBaZjT" role="1QScD9">
+            <node concept="_emDc" id="3k8r2BBaZt8" role="2oAK$E">
+              <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="3k8r2BBaZjV" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7khFtBH$THj" role="_fkp5">
         <node concept="_fku$" id="7khFtBH$THk" role="_fkur" />
@@ -2166,7 +2185,7 @@
             </node>
           </node>
         </node>
-        <node concept="2vmpn$" id="7khFtBHBr$5" role="_fkuS" />
+        <node concept="2vmpnb" id="7fmv$FC72Gc" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="7khFtBHB45S" role="_fkp5">
         <node concept="_fku$" id="7khFtBHB45T" role="_fkur" />
@@ -2223,6 +2242,294 @@
           </node>
         </node>
         <node concept="2vmpn$" id="7khFtBHBrzo" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="7fmv$FC6htx" role="_fkp5">
+        <node concept="_fku$" id="7fmv$FC6hty" role="_fkur" />
+        <node concept="1QScDb" id="7fmv$FC6hAJ" role="_fkuY">
+          <node concept="2oAQjS" id="7fmv$FC6ilo" role="1QScD9">
+            <node concept="1QScDb" id="7fmv$FC6ixn" role="2oAK$E">
+              <node concept="2oxMaX" id="7fmv$FC6iFN" role="1QScD9">
+                <node concept="1fc2QT" id="7fmv$FC6iIJ" role="2oxMaW">
+                  <property role="1fc2QY" value="2019" />
+                  <property role="1fc2QX" value="11" />
+                  <property role="1fc2QW" value="15" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="7fmv$FC6ioI" role="30czhm">
+                <property role="1fc2QY" value="2019" />
+                <property role="1fc2QX" value="11" />
+                <property role="1fc2QW" value="14" />
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="7fmv$FC6hxs" role="30czhm">
+            <ref role="_emDf" node="7khFtBHBpUc" resolve="nov15toDec152019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="7fmv$FC6iRA" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="7fmv$FC6YVz" role="_fkp5">
+        <node concept="_fku$" id="7fmv$FC6YV$" role="_fkur" />
+        <node concept="1QScDb" id="7fmv$FC6YV_" role="_fkuY">
+          <node concept="2oAQjS" id="7fmv$FC6YVA" role="1QScD9">
+            <node concept="1QScDb" id="7fmv$FC6YVB" role="2oAK$E">
+              <node concept="2oxMaX" id="7fmv$FC6YVC" role="1QScD9">
+                <node concept="1fc2QT" id="7fmv$FC6YVD" role="2oxMaW">
+                  <property role="1fc2QY" value="2019" />
+                  <property role="1fc2QX" value="12" />
+                  <property role="1fc2QW" value="16" />
+                </node>
+              </node>
+              <node concept="1fc2QT" id="7fmv$FC6YVE" role="30czhm">
+                <property role="1fc2QY" value="2019" />
+                <property role="1fc2QX" value="12" />
+                <property role="1fc2QW" value="15" />
+              </node>
+            </node>
+          </node>
+          <node concept="_emDc" id="7fmv$FC6YVF" role="30czhm">
+            <ref role="_emDf" node="7khFtBHBpUc" resolve="nov15toDec152019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="7fmv$FC6YVG" role="_fkuS" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="4O9rw8aBCq7" role="_iOnB" />
+    <node concept="_fkuM" id="4O9rw8aBBTG" role="_iOnB">
+      <property role="TrG5h" value="TestCOntainmentWithSingleDates" />
+      <node concept="_fkuZ" id="4O9rw8aBBTH" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBBTI" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aBBTJ" role="_fkuY">
+          <node concept="2oAQjV" id="4O9rw8aBEok" role="1QScD9">
+            <node concept="1fc2QT" id="4O9rw8aBEsg" role="2oAK$E">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+          <node concept="_emDc" id="4O9rw8aBBTM" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBBTN" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aBE_r" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBE_s" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aBE_t" role="_fkuY">
+          <node concept="2oAQjV" id="4O9rw8aBE_u" role="1QScD9">
+            <node concept="1fc2QT" id="4O9rw8aBE_v" role="2oAK$E">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="_emDc" id="4O9rw8aBE_w" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBE_x" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aCS9o" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aCS9p" role="_fkur" />
+        <node concept="30czhn" id="4O9rw8aCSfP" role="_fkuY">
+          <node concept="1QScDb" id="4O9rw8aCSfQ" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aCS9t" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+            </node>
+            <node concept="2oAQjV" id="4O9rw8aCS9r" role="1QScD9">
+              <node concept="1fc2QT" id="4O9rw8aCS9s" role="2oAK$E">
+                <property role="1fc2QY" value="2019" />
+                <property role="1fc2QX" value="09" />
+                <property role="1fc2QW" value="30" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aCS9u" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aCSrY" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aCSrZ" role="_fkur" />
+        <node concept="30czhn" id="4O9rw8aCSs0" role="_fkuY">
+          <node concept="1QScDb" id="4O9rw8aCSs1" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aCSs2" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+            </node>
+            <node concept="2oAQjV" id="4O9rw8aCSs3" role="1QScD9">
+              <node concept="1fc2QT" id="4O9rw8aCSs4" role="2oAK$E">
+                <property role="1fc2QY" value="2019" />
+                <property role="1fc2QX" value="11" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aCSs5" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aBEHN" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBEHO" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aBEHP" role="_fkuY">
+          <node concept="2oAQjV" id="4O9rw8aBEHQ" role="1QScD9">
+            <node concept="1fc2QT" id="4O9rw8aBEHR" role="2oAK$E">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="_emDc" id="4O9rw8aBEQk" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBEHT" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aBEUt" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBEUu" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aBEUv" role="_fkuY">
+          <node concept="2oAQjV" id="4O9rw8aBEUw" role="1QScD9">
+            <node concept="1fc2QT" id="4O9rw8aBEUx" role="2oAK$E">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+          </node>
+          <node concept="_emDc" id="4O9rw8aBEUy" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBEUz" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aBF36" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBF37" role="_fkur" />
+        <node concept="30czhn" id="4O9rw8aBF9j" role="_fkuY">
+          <node concept="1QScDb" id="4O9rw8aBF9k" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aBF3b" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+            </node>
+            <node concept="2oAQjV" id="4O9rw8aBF39" role="1QScD9">
+              <node concept="1fc2QT" id="4O9rw8aBF3a" role="2oAK$E">
+                <property role="1fc2QY" value="2017" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBF3c" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aBFhN" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aBFhO" role="_fkur" />
+        <node concept="30czhn" id="4O9rw8aBFhP" role="_fkuY">
+          <node concept="1QScDb" id="4O9rw8aBFhQ" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aBFlB" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$TmG" resolve="october15toNov152019" />
+            </node>
+            <node concept="2oAQjV" id="4O9rw8aBFhS" role="1QScD9">
+              <node concept="1fc2QT" id="4O9rw8aBFhT" role="2oAK$E">
+                <property role="1fc2QY" value="2017" />
+                <property role="1fc2QX" value="01" />
+                <property role="1fc2QW" value="01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aBFhU" role="_fkuS" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="4O9rw8aDQG2" role="_iOnB" />
+    <node concept="_fkuM" id="4O9rw8aDRqo" role="_iOnB">
+      <property role="TrG5h" value="Intersection" />
+      <node concept="_fkuZ" id="4O9rw8aHOwf" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aHOwg" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aHOwh" role="_fkuY">
+          <node concept="_emDc" id="4O9rw8aHOwi" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+          </node>
+          <node concept="17FhtQ" id="4O9rw8aHOwj" role="1QScD9">
+            <node concept="_emDc" id="4O9rw8aHOwk" role="17FudS">
+              <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+            </node>
+          </node>
+        </node>
+        <node concept="_emDc" id="4O9rw8aHOwl" role="_fkuS">
+          <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aEgQj" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aEgQk" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aEhaS" role="_fkuY">
+          <node concept="17FQp2" id="4O9rw8aEhlv" role="1QScD9" />
+          <node concept="1QScDb" id="4O9rw8aEgQl" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aEgQm" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+            </node>
+            <node concept="17FhtQ" id="4O9rw8aEgQn" role="1QScD9">
+              <node concept="_emDc" id="4O9rw8aEgYI" role="17FudS">
+                <ref role="_emDf" node="5wmCCs0hYem" resolve="year2017" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aEhvU" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aHvbf" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aHvbg" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aHJCV" role="_fkuY">
+          <node concept="17FQp2" id="4O9rw8aHMCk" role="1QScD9" />
+          <node concept="1QScDb" id="4O9rw8aHvbj" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aHvbk" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$CAS" resolve="year2019" />
+            </node>
+            <node concept="17FhtQ" id="4O9rw8aHvbl" role="1QScD9">
+              <node concept="_emDc" id="4O9rw8aHvbm" role="17FudS">
+                <ref role="_emDf" node="5wmCCs0hYem" resolve="year2017" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="4O9rw8aHvbn" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aEhGS" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aEhGT" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aEhGU" role="_fkuY">
+          <node concept="17FQp2" id="4O9rw8aEhGV" role="1QScD9" />
+          <node concept="1QScDb" id="4O9rw8aEhGW" role="30czhm">
+            <node concept="_emDc" id="4O9rw8aEi0q" role="30czhm">
+              <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+            </node>
+            <node concept="17FhtQ" id="4O9rw8aEhGY" role="1QScD9">
+              <node concept="_emDc" id="4O9rw8aEiba" role="17FudS">
+                <ref role="_emDf" node="7khFtBH$TmG" resolve="october15toNov152019" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpn$" id="4O9rw8aEiow" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="4O9rw8aEirc" role="_fkp5">
+        <node concept="_fku$" id="4O9rw8aEird" role="_fkur" />
+        <node concept="1QScDb" id="4O9rw8aEirg" role="_fkuY">
+          <node concept="_emDc" id="4O9rw8aEirh" role="30czhm">
+            <ref role="_emDf" node="7khFtBH$BV9" resolve="october2019" />
+          </node>
+          <node concept="17FhtQ" id="4O9rw8aEiri" role="1QScD9">
+            <node concept="_emDc" id="4O9rw8aEirj" role="17FudS">
+              <ref role="_emDf" node="7khFtBH$TmG" resolve="october15toNov152019" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QScDb" id="4O9rw8aEiRT" role="_fkuS">
+          <node concept="2oxMaX" id="4O9rw8aEj1G" role="1QScD9">
+            <node concept="1fc2QT" id="4O9rw8aEj4C" role="2oxMaW">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="1fc2QT" id="4O9rw8aEiMq" role="30czhm">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="10" />
+            <property role="1fc2QW" value="15" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="_ixoA" id="7khFtBHFoZL" role="_iOnB" />
@@ -2311,6 +2618,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="7fmv$FC5ObT" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHGwpJ" role="_iOnB">
       <property role="TrG5h" value="oneYear" />
       <property role="0Rz4W" value="-987710320" />
