@@ -542,5 +542,40 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4O9rw8aD8ak">
+    <property role="3GE5qa" value="range.rel" />
+    <ref role="1XX52x" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeRelOp" />
+    <node concept="3EZMnI" id="4O9rw8aD8cV" role="2wV5jI">
+      <node concept="2iRfu4" id="4O9rw8aD8cW" role="2iSdaV" />
+      <node concept="PMmxH" id="4O9rw8aD8cX" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="4O9rw8aD8cY" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="4O9rw8aD8cZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4O9rw8aD8d0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4O9rw8aD8d1" role="3EZMnx">
+        <ref role="1NtTu8" to="mi3w:4O9rw8aD8PU" resolve="other" />
+      </node>
+      <node concept="3F0ifn" id="4O9rw8aD8d2" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="4O9rw8aD8d3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4O9rw8aDx0n">
+    <property role="3GE5qa" value="range.rel" />
+    <ref role="1XX52x" to="mi3w:4O9rw8aDwx0" resolve="IsEmptyRangeOp" />
+    <node concept="3F0ifn" id="4O9rw8aDx2Y" role="2wV5jI">
+      <property role="3F0ifm" value="isEmpty" />
+    </node>
+  </node>
 </model>
 

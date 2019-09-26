@@ -1895,5 +1895,77 @@
       <ref role="1YaFvo" to="mi3w:7khFtBHyEjM" resolve="AbstractRangeRelOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4O9rw8aD90D">
+    <property role="TrG5h" value="typeof_IntersectRangeRelOp" />
+    <property role="3GE5qa" value="range.rel" />
+    <node concept="3clFbS" id="4O9rw8aD90E" role="18ibNy">
+      <node concept="1Z5TYs" id="4O9rw8aD98_" role="3cqZAp">
+        <node concept="mw_s8" id="4O9rw8aD98C" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4O9rw8aD98D" role="mwGJk">
+            <node concept="1YBJjd" id="4O9rw8aD9Nz" role="1Z2MuG">
+              <ref role="1YBMHb" node="4O9rw8aD90G" resolve="iro" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4O9rw8aD9tq" role="1ZfhKB">
+          <node concept="2pJPEk" id="4O9rw8aD9tm" role="mwGJk">
+            <node concept="2pJPED" id="4O9rw8aD9_k" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="4O9rw8aDarC" role="3cqZAp">
+        <node concept="mw_s8" id="4O9rw8aDarE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4O9rw8aDarF" role="mwGJk">
+            <node concept="2OqwBi" id="4O9rw8aDarG" role="1Z2MuG">
+              <node concept="1YBJjd" id="4O9rw8aDarH" role="2Oq$k0">
+                <ref role="1YBMHb" node="4O9rw8aD90G" resolve="iro" />
+              </node>
+              <node concept="3TrEf2" id="4O9rw8aDarI" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:4O9rw8aD8PU" resolve="other" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4O9rw8aDarJ" role="1ZfhKB">
+          <node concept="2pJPEk" id="4O9rw8aDarK" role="mwGJk">
+            <node concept="2pJPED" id="4O9rw8aDarL" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4O9rw8aD90G" role="1YuTPh">
+      <property role="TrG5h" value="iro" />
+      <ref role="1YaFvo" to="mi3w:4O9rw8aD7_O" resolve="IntersectRangeRelOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4O9rw8aDx8$">
+    <property role="TrG5h" value="typeof_IsEmptyRangeOp" />
+    <property role="3GE5qa" value="range.rel" />
+    <node concept="3clFbS" id="4O9rw8aDx8_" role="18ibNy">
+      <node concept="1Z5TYs" id="4O9rw8aDxwk" role="3cqZAp">
+        <node concept="mw_s8" id="4O9rw8aDxza" role="1ZfhKB">
+          <node concept="2YIFZM" id="4O9rw8aDxBq" role="mwGJk">
+            <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4O9rw8aDxwn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4O9rw8aDxbg" role="mwGJk">
+            <node concept="1YBJjd" id="4O9rw8aDxig" role="1Z2MuG">
+              <ref role="1YBMHb" node="4O9rw8aDx8B" resolve="isEmptyRangeOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4O9rw8aDx8B" role="1YuTPh">
+      <property role="TrG5h" value="isEmptyRangeOp" />
+      <ref role="1YaFvo" to="mi3w:4O9rw8aDwx0" resolve="IsEmptyRangeOp" />
+    </node>
+  </node>
 </model>
 
