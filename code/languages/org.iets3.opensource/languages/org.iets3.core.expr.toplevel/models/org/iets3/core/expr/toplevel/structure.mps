@@ -1189,5 +1189,9 @@
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
+  <node concept="PlHQZ" id="olugnm5RHo">
+    <property role="EcuMT" value="438389604712151896" />
+    <property role="TrG5h" value="IDeclarationExtensionContext" />
+  </node>
 </model>
 

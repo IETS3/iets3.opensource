@@ -19,6 +19,7 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -305,6 +306,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -1330,8 +1332,8 @@
                     <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="u9itSZP3Jb" role="2OqNvi">
-                  <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" resolve="literals" />
+                <node concept="2qgKlT" id="olugnm1GtI" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:olugnm0Egc" resolve="effectiveLiterals" />
                 </node>
               </node>
               <node concept="3clFbS" id="u9itSZP1V3" role="2LFqv$">
@@ -5112,6 +5114,27 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="olugnm1eJa" role="3cqZAp">
+          <node concept="3cpWsn" id="olugnm1eJb" role="3cpWs9">
+            <property role="TrG5h" value="lits" />
+            <node concept="_YKpA" id="olugnm1eJ1" role="1tU5fm">
+              <node concept="3Tqbb2" id="olugnm1eJ4" role="_ZDj9">
+                <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="olugnm1eJc" role="33vP2m">
+              <node concept="2OqwBi" id="olugnm1eJd" role="2Oq$k0">
+                <node concept="37vLTw" id="olugnm1eJe" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4o7_AWgGy9E" resolve="enumm" />
+                </node>
+                <node concept="2qgKlT" id="olugnm1eJf" role="2OqNvi">
+                  <ref role="37wK5l" to="nu60:olugnm0Egc" resolve="effectiveLiterals" />
+                </node>
+              </node>
+              <node concept="ANE8D" id="olugnm1eJg" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4o7_AWgGy9L" role="3cqZAp">
           <node concept="3cpWsn" id="4o7_AWgGy9M" role="3cpWs9">
             <property role="TrG5h" value="idx" />
@@ -5123,13 +5146,8 @@
               <node concept="liA8E" id="4o7_AWgGy9Q" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                 <node concept="2OqwBi" id="4o7_AWgGy9R" role="37wK5m">
-                  <node concept="2OqwBi" id="4o7_AWgGy9S" role="2Oq$k0">
-                    <node concept="37vLTw" id="4o7_AWgGy9T" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4o7_AWgGy9E" resolve="enumm" />
-                    </node>
-                    <node concept="3Tsc0h" id="4o7_AWgGy9U" role="2OqNvi">
-                      <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" resolve="literals" />
-                    </node>
+                  <node concept="37vLTw" id="olugnm1qM5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="olugnm1eJb" resolve="lits" />
                   </node>
                   <node concept="34oBXx" id="4o7_AWgGy9V" role="2OqNvi" />
                 </node>
@@ -5145,16 +5163,12 @@
                 <ref role="2pIpSl" to="yv47:67Y8mp$DNs9" resolve="literal" />
                 <node concept="36biLy" id="4o7_AWgGya0" role="2pJxcZ">
                   <node concept="2OqwBi" id="4o7_AWgGya1" role="36biLW">
-                    <node concept="2OqwBi" id="4o7_AWgGya2" role="2Oq$k0">
-                      <node concept="37vLTw" id="4o7_AWgGya3" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4o7_AWgGy9E" resolve="enumm" />
-                      </node>
-                      <node concept="3Tsc0h" id="4o7_AWgGya4" role="2OqNvi">
-                        <ref role="3TtcxE" to="yv47:67Y8mp$DMVO" resolve="literals" />
-                      </node>
+                    <node concept="37vLTw" id="olugnm1qQj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="olugnm1eJb" resolve="lits" />
                     </node>
-                    <node concept="34jXtK" id="4o7_AWgGya5" role="2OqNvi">
-                      <node concept="37vLTw" id="4o7_AWgGya6" role="25WWJ7">
+                    <node concept="liA8E" id="olugnm1tlZ" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                      <node concept="37vLTw" id="olugnm6G70" role="37wK5m">
                         <ref role="3cqZAo" node="4o7_AWgGy9M" resolve="idx" />
                       </node>
                     </node>

@@ -23,6 +23,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1765,8 +1766,8 @@
                   <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="4YhD5cZprtg" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+              <node concept="2qgKlT" id="1qrYg08j0qK" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
               </node>
             </node>
           </node>
@@ -1787,8 +1788,8 @@
                   <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="4YhD5cZpacc" role="2OqNvi">
-                <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+              <node concept="2qgKlT" id="1qrYg08j1xa" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
               </node>
             </node>
             <node concept="34oBXx" id="4YhD5cZpgzI" role="2OqNvi" />
@@ -1822,8 +1823,8 @@
                         <ref role="3Tt5mk" to="yv47:7D7uZV2dYz3" resolve="record" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="4YhD5cZphNK" role="2OqNvi">
-                      <ref role="3TtcxE" to="yv47:xu7xcKioz5" resolve="members" />
+                    <node concept="2qgKlT" id="1qrYg08iZql" role="2OqNvi">
+                      <ref role="37wK5l" to="nu60:1qrYg08iahZ" resolve="effectiveMembers" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="4YhD5cZphNL" role="2OqNvi" />
