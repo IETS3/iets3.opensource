@@ -5,9 +5,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="8rdi" ref="r:f17e1021-3869-4fe5-b3c7-0b2a9149a478(org.iets3.core.expr.temporal.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -914,13 +912,8 @@
                         <ref role="3cqZAo" node="4eVSC65wKJN" resolve="binop" />
                       </node>
                       <node concept="1Bd96e" id="4eVSC65wKJt" role="2OqNvi">
-                        <node concept="10QFUN" id="4eVSC65wKJu" role="1BdPVh">
-                          <node concept="37vLTw" id="3rApyZ4Frru" role="10QFUP">
-                            <ref role="3cqZAo" node="3rApyZ4Frrp" resolve="leftSliceVal" />
-                          </node>
-                          <node concept="3uibUv" id="3wXkdMW0zbv" role="10QFUM">
-                            <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
-                          </node>
+                        <node concept="37vLTw" id="3rApyZ4Frru" role="1BdPVh">
+                          <ref role="3cqZAo" node="3rApyZ4Frrp" resolve="leftSliceVal" />
                         </node>
                         <node concept="37vLTw" id="4eVSC65wSc2" role="1BdPVh">
                           <ref role="3cqZAo" node="_ggAdDuHB1" resolve="rightValue" />
