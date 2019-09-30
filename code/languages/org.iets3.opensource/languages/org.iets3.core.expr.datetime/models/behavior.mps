@@ -1196,5 +1196,25 @@
       <node concept="10P_77" id="4O9rw8aBrKi" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="4V0FBnKJAZA">
+    <property role="3GE5qa" value="delta" />
+    <ref role="13h7C2" to="mi3w:4V0FBnKIL4d" resolve="DateDeltaToNumberOp" />
+    <node concept="13hLZK" id="4V0FBnKJAZB" role="13h7CW">
+      <node concept="3clFbS" id="4V0FBnKJAZC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4V0FBnKJBWV" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4V0FBnKJBWW" role="1B3o_S" />
+      <node concept="3clFbS" id="4V0FBnKJBWZ" role="3clF47">
+        <node concept="3clFbF" id="4V0FBnKJC32" role="3cqZAp">
+          <node concept="Xl_RD" id="4V0FBnKJC31" role="3clFbG">
+            <property role="Xl_RC" value="toNumber" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4V0FBnKJBX0" role="3clF45" />
+    </node>
+  </node>
 </model>
 

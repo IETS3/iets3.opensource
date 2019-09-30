@@ -283,5 +283,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4V0FBnKIL$L">
+    <property role="3GE5qa" value="delta" />
+    <ref role="1M2myG" to="mi3w:4V0FBnKIL4d" resolve="DateDeltaToNumberOp" />
+    <node concept="9S07l" id="4V0FBnKILBE" role="9Vyp8">
+      <node concept="3clFbS" id="4V0FBnKILBF" role="2VODD2">
+        <node concept="3clFbF" id="4V0FBnKILLU" role="3cqZAp">
+          <node concept="2OqwBi" id="4V0FBnKIM_R" role="3clFbG">
+            <node concept="1PxgMI" id="4V0FBnKIM1O" role="2Oq$k0">
+              <node concept="chp4Y" id="4V0FBnKIMfp" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="4V0FBnKILLT" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="4V0FBnKIN9L" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="4V0FBnKINs5" role="37wK5m">
+                <ref role="35c_gD" to="mi3w:7aRvJQE305f" resolve="DateDeltaType" />
+              </node>
+              <node concept="3clFbT" id="4V0FBnKIOwE" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

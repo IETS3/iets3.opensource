@@ -1967,5 +1967,30 @@
       <ref role="1YaFvo" to="mi3w:4O9rw8aDwx0" resolve="IsEmptyRangeOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4V0FBnKIOVm">
+    <property role="TrG5h" value="typeof_ToNumberOp" />
+    <property role="3GE5qa" value="delta" />
+    <node concept="3clFbS" id="4V0FBnKIOVn" role="18ibNy">
+      <node concept="1Z5TYs" id="4V0FBnKIPgf" role="3cqZAp">
+        <node concept="mw_s8" id="4V0FBnKIPvU" role="1ZfhKB">
+          <node concept="2YIFZM" id="4V0FBnKIPBf" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4V0FBnKIPgi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4V0FBnKIP1g" role="mwGJk">
+            <node concept="1YBJjd" id="4V0FBnKIP61" role="1Z2MuG">
+              <ref role="1YBMHb" node="4V0FBnKIOVp" resolve="toNumberOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4V0FBnKIOVp" role="1YuTPh">
+      <property role="TrG5h" value="toNumberOp" />
+      <ref role="1YaFvo" to="mi3w:4V0FBnKIL4d" resolve="DateDeltaToNumberOp" />
+    </node>
+  </node>
 </model>
 

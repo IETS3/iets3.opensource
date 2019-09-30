@@ -554,5 +554,15 @@
     <property role="34LRSv" value="isEmpty" />
     <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
   </node>
+  <node concept="1TIwiD" id="4V0FBnKIL4d">
+    <property role="EcuMT" value="5674727352060023053" />
+    <property role="3GE5qa" value="delta" />
+    <property role="TrG5h" value="DateDeltaToNumberOp" />
+    <property role="34LRSv" value="toNumber" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4V0FBnKILiA" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 
