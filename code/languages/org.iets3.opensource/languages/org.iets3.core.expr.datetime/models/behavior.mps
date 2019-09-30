@@ -12,6 +12,8 @@
     <import index="mi3w" ref="r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1194,6 +1196,26 @@
         </node>
       </node>
       <node concept="10P_77" id="4O9rw8aBrKi" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4V0FBnKJAZA">
+    <property role="3GE5qa" value="delta" />
+    <ref role="13h7C2" to="mi3w:4V0FBnKIL4d" resolve="DateDeltaToNumberOp" />
+    <node concept="13hLZK" id="4V0FBnKJAZB" role="13h7CW">
+      <node concept="3clFbS" id="4V0FBnKJAZC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4V0FBnKJBWV" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4V0FBnKJBWW" role="1B3o_S" />
+      <node concept="3clFbS" id="4V0FBnKJBWZ" role="3clF47">
+        <node concept="3clFbF" id="4V0FBnKJC32" role="3cqZAp">
+          <node concept="Xl_RD" id="4V0FBnKJC31" role="3clFbG">
+            <property role="Xl_RC" value="toNumber" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4V0FBnKJBX0" role="3clF45" />
     </node>
   </node>
 </model>
