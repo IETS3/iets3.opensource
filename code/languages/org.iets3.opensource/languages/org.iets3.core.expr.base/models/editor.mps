@@ -601,7 +601,7 @@
             <node concept="2OqwBi" id="15gN1OJkDFA" role="3clFbG">
               <node concept="pncrf" id="15gN1OJkDp6" role="2Oq$k0" />
               <node concept="2qgKlT" id="15gN1OJkEpW" role="2OqNvi">
-                <ref role="37wK5l" to="pbu6:15gN1OJkoy_" resolve="requiresSpecialLayout" />
+                <ref role="37wK5l" to="pbu6:15gN1OJkoy_" resolve="requiresVerticalLayout" />
               </node>
             </node>
           </node>
