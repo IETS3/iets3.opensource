@@ -406,6 +406,15 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="29E93V1S8os" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+      <node concept="gft3U" id="29E93V1S8ot" role="1lVwrX">
+        <node concept="3uibUv" id="29E93V1S8oI" role="gfFT$">
+          <ref role="3uigEE" to="2j0k:7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="jVnub" id="7LS9WbOdvhZ">
     <property role="TrG5h" value="switch_DateTimeExpression" />
