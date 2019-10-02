@@ -2444,6 +2444,97 @@
         <node concept="2vmpnb" id="4O9rw8aBFhU" role="_fkuS" />
       </node>
     </node>
+    <node concept="_ixoA" id="2sG9$0Cf_ZC" role="_iOnB" />
+    <node concept="_fkuM" id="2sG9$0CfBND" role="_iOnB">
+      <property role="TrG5h" value="TestDiscreteAndArbitraryRanges" />
+      <node concept="_fkuZ" id="2sG9$0CfDx4" role="_fkp5">
+        <node concept="_fku$" id="2sG9$0CfDx5" role="_fkur" />
+        <node concept="1f6kyV" id="2sG9$0CfDxC" role="_fkuY">
+          <node concept="30bXRB" id="2sG9$0CfDym" role="1f6kyW">
+            <property role="30bXRw" value="2019" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="2sG9$0CfDzn" role="_fkuS">
+          <node concept="2oxMaX" id="2sG9$0CfDzo" role="1QScD9">
+            <node concept="1fc2QT" id="2sG9$0CfDzp" role="2oxMaW">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="12" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="1fc2QT" id="2sG9$0CfDzq" role="30czhm">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2sG9$0CfD$d" role="_fkp5">
+        <node concept="_fku$" id="2sG9$0CfD$e" role="_fkur" />
+        <node concept="1QScDb" id="2sG9$0CfD$h" role="_fkuY">
+          <node concept="2oxMaX" id="2sG9$0CfD$i" role="1QScD9">
+            <node concept="1fc2QT" id="2sG9$0CfD$j" role="2oxMaW">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="12" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="1fc2QT" id="2sG9$0CfD$k" role="30czhm">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+        <node concept="1f6kyV" id="2sG9$0CfDA2" role="_fkuS">
+          <node concept="30bXRB" id="2sG9$0CfDAI" role="1f6kyW">
+            <property role="30bXRw" value="2019" />
+          </node>
+        </node>
+      </node>
+      <node concept="3dYjL0" id="2sG9$0CfDwM" role="_fkp5" />
+      <node concept="_fkuZ" id="2sG9$0Cd$rJ" role="_fkp5">
+        <node concept="_fku$" id="2sG9$0Cd$rK" role="_fkur" />
+        <node concept="1QScDb" id="2sG9$0CdA3Y" role="_fkuS">
+          <node concept="2oxMaX" id="2sG9$0CdA3Z" role="1QScD9">
+            <node concept="1fc2QT" id="2sG9$0CdA40" role="2oxMaW">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="1fc2QT" id="2sG9$0CdA41" role="30czhm">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="10" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+        <node concept="1DA4ig" id="2sG9$0CfD9d" role="_fkuY">
+          <property role="2eV8ZZ" value="10" />
+          <property role="2eV9xE" value="2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2sG9$0Ce2f9" role="_fkp5">
+        <node concept="_fku$" id="2sG9$0Ce2fa" role="_fkur" />
+        <node concept="1QScDb" id="2sG9$0Ce2fc" role="_fkuY">
+          <node concept="2oxMaX" id="2sG9$0Ce2fd" role="1QScD9">
+            <node concept="1fc2QT" id="2sG9$0Ce2fe" role="2oxMaW">
+              <property role="1fc2QY" value="2019" />
+              <property role="1fc2QX" value="10" />
+              <property role="1fc2QW" value="31" />
+            </node>
+          </node>
+          <node concept="1fc2QT" id="2sG9$0Ce2ff" role="30czhm">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="10" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+        <node concept="1DA4ig" id="2sG9$0CfDkS" role="_fkuS">
+          <property role="2eV8ZZ" value="10" />
+          <property role="2eV9xE" value="2019" />
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="4O9rw8aDQG2" role="_iOnB" />
     <node concept="_fkuM" id="4O9rw8aDRqo" role="_iOnB">
       <property role="TrG5h" value="Intersection" />
