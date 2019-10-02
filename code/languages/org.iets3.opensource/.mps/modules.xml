@@ -106,6 +106,7 @@
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.repl.interpreter/org.iets3.core.expr.repl.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.repl.plugin/org.iets3.core.expr.repl.plugin.msd" folder="expr.plugins" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.simpleTypes.interpreter/org.iets3.core.expr.simpleTypes.interpreter.msd" folder="expr.lang-core" />
+      <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.simpleTypes.runtime/org.iets3.core.expr.simpleTypes.runtime.msd" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.statemachines.interpreter/org.iets3.core.expr.statemachines.interpreter.msd" folder="expr.lang-stateful" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.temporal.interpreter/org.iets3.core.expr.temporal.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.temporal.runtime/org.iets3.core.expr.temporal.runtime.msd" folder="expr.lang-advanced" />

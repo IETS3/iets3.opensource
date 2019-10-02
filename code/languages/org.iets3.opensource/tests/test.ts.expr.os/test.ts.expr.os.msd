@@ -104,7 +104,7 @@
     <module reference="cbb71b24-470d-4374-b77c-ebd0d3b3bb27(org.iets3.core.expr.plugin)" version="0" />
     <module reference="bd5d2f0b-399d-4cb7-b981-7a3f9ce7bc78(org.iets3.core.expr.repl.interpreter)" version="0" />
     <module reference="1157d4c9-6175-4550-96aa-aae0a9fdc06f(org.iets3.core.expr.repl.plugin)" version="0" />
-    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
+    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="6effa8ea-ddf9-441a-a29e-80a73b7d0fc7(org.iets3.core.expr.tests.rt)" version="0" />

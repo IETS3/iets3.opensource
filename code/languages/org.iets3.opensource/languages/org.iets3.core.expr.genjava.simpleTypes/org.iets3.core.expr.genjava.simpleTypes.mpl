@@ -80,7 +80,7 @@
         <module reference="0ab6f947-2451-4a3a-80a3-33b77e399874(org.iets3.core.expr.genjava.simpleTypes#8286534136182342700)" version="0" />
         <module reference="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.genjava.simpleTypes.rt)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
-        <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
+        <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>

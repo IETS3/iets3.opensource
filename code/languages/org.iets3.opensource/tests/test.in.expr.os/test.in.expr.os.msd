@@ -149,7 +149,7 @@
     <module reference="0a9d9bba-15ce-45fa-ba85-2c2dddcd1ff0(org.iets3.core.expr.process.interpreter)" version="0" />
     <module reference="bd5d2f0b-399d-4cb7-b981-7a3f9ce7bc78(org.iets3.core.expr.repl.interpreter)" version="0" />
     <module reference="1157d4c9-6175-4550-96aa-aae0a9fdc06f(org.iets3.core.expr.repl.plugin)" version="0" />
-    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="0" />
+    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="cd87ddab-6434-448e-a011-1e1c898de18e(org.iets3.core.expr.statemachines)" version="0" />
     <module reference="b10553c8-9d54-444d-bb92-a27be823b74f(org.iets3.core.expr.statemachines.interpreter)" version="0" />
