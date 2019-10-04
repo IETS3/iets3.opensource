@@ -23,7 +23,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="gsp2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference.util(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -775,11 +774,10 @@
                         </node>
                         <node concept="3clFbH" id="7KDVkAF4ODH" role="3cqZAp" />
                         <node concept="1Z5TYs" id="7KDVkAEmjpg" role="3cqZAp">
-                          <node concept="mw_s8" id="7KDVkAEmjpG" role="1ZfhKB">
-                            <node concept="2pJPEk" id="7KDVkAEmjpC" role="mwGJk">
-                              <node concept="2pJPED" id="7KDVkAEmjpU" role="2pJPEn">
-                                <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
-                              </node>
+                          <node concept="mw_s8" id="7aPbRR44gKC" role="1ZfhKB">
+                            <node concept="2YIFZM" id="7aPbRR44io1" role="mwGJk">
+                              <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
+                              <ref role="37wK5l" to="oq0c:2Qbt$1tTQco" resolve="createBooleanType" />
                             </node>
                           </node>
                           <node concept="mw_s8" id="7KDVkAEmjpj" role="1ZfhK$">
