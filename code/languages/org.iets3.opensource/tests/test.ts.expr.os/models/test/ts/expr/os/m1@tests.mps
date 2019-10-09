@@ -259,7 +259,7 @@
       <concept id="1919538606560895472" name="org.iets3.core.expr.base.structure.ErrorExpression" flags="ng" index="1i5Bf1">
         <child id="1919538606560895473" name="error" index="1i5Bf0" />
       </concept>
-      <concept id="3352322994211036342" name="org.iets3.core.expr.base.structure.InTarget" flags="ng" index="1kPOiQ">
+      <concept id="3352322994211036342" name="org.iets3.core.expr.base.structure.OneOfTarget" flags="ng" index="1kPOiQ">
         <child id="3352322994211036351" name="values" index="1kPOiZ" />
       </concept>
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
@@ -351,6 +351,10 @@
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="4668305294413323442" name="org.iets3.core.expr.simpleTypes.structure.ToleranceExpr" flags="ng" index="SnvDs">
+        <child id="4668305294413325678" name="tolerance" index="Snse0" />
+        <child id="4668305294413324931" name="value" index="SnshH" />
+      </concept>
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -14851,6 +14855,38 @@
         <node concept="7CXmI" id="KoRsm$uD9l" role="lGtFl">
           <node concept="7OXhh" id="KoRsm$uDXP" role="7EUXB" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4399ITS_JbD">
+    <property role="TrG5h" value="tolerance" />
+    <node concept="1qefOq" id="4399ITS_JbE" role="1SKRRt">
+      <node concept="_iOnV" id="4399ITS_JbF" role="1qenE9">
+        <property role="TrG5h" value="effects2" />
+        <node concept="2zPypq" id="4399ITS_JbG" role="_iOnC">
+          <property role="TrG5h" value="x" />
+          <node concept="30bXRB" id="4399ITS_JbH" role="2zPyp_">
+            <property role="30bXRw" value="100" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="4399ITS_M5X" role="_iOnC">
+          <property role="TrG5h" value="xt" />
+          <node concept="30cPrO" id="4399ITSA595" role="2zPyp_">
+            <node concept="SnvDs" id="4399ITSA5eT" role="30dEs_">
+              <node concept="30bXRB" id="4399ITSA5fU" role="Snse0">
+                <property role="30bXRw" value="0.001" />
+              </node>
+              <node concept="30bXRB" id="4399ITSA59V" role="SnshH">
+                <property role="30bXRw" value="100" />
+              </node>
+            </node>
+            <node concept="_emDc" id="4399ITSA58$" role="30dEsF">
+              <ref role="_emDf" node="4399ITS_JbG" resolve="x" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="4399ITS_LZm" role="_iOnC" />
+        <node concept="_ixoA" id="4399ITS_JbI" role="_iOnC" />
       </node>
     </node>
   </node>
