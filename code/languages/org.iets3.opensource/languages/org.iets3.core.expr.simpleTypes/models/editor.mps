@@ -791,5 +791,34 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="4399ITS_eHs">
+    <ref role="1XX52x" to="5qo5:4399ITS_dMM" resolve="ToleranceExpr" />
+    <node concept="3EZMnI" id="4399ITS_eQc" role="2wV5jI">
+      <node concept="3F0ifn" id="4399ITS_fJ1" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="4399ITS_fRV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1kIj98" id="4399ITS_fbA" role="3EZMnx">
+        <node concept="3F1sOY" id="4399ITS_eTk" role="1kIj9b">
+          <ref role="1NtTu8" to="5qo5:4399ITS_ea3" resolve="value" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4399ITS_eWn" role="3EZMnx">
+        <property role="3F0ifm" value="tolerance" />
+      </node>
+      <node concept="3F1sOY" id="4399ITS_f2o" role="3EZMnx">
+        <ref role="1NtTu8" to="5qo5:4399ITS_elI" resolve="tolerance" />
+      </node>
+      <node concept="2iRfu4" id="4399ITS_eQf" role="2iSdaV" />
+      <node concept="3F0ifn" id="4399ITS_fV7" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="4399ITS_g1b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
