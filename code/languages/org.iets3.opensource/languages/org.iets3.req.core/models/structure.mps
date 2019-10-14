@@ -16,22 +16,6 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
-        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
-      </concept>
-      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
-        <property id="2756621024541681854" name="text" index="1irPi9" />
-        <child id="1860120738943552534" name="color" index="3PKjny" />
-      </concept>
-      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
-        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
-        <child id="2756621024541675110" name="layers" index="1irR9h" />
-      </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
-      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
-        <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
@@ -96,22 +80,8 @@
     <node concept="PrWs8" id="6LfBX8YlYHo" role="PzmwI">
       <ref role="PrY4T" to="4kwy:6LfBX8YlYGS" resolve="ISpecRoot" />
     </node>
-    <node concept="1irR5M" id="72HfR5QcT_v" role="rwd14">
-      <property role="2$rrk2" value="1" />
-      <node concept="1irPie" id="72HfR5QcT_w" role="1irR9h">
-        <property role="1irPi9" value="R" />
-        <node concept="3PKj8D" id="72HfR5QcT_x" role="3PKjny">
-          <property role="3PKj8l" value="FFFFFF" />
-        </node>
-      </node>
-      <node concept="1irR9n" id="72HfR5QcT_y" role="1irR9h">
-        <node concept="3PKj8D" id="72HfR5QcT_z" role="3PKjnB">
-          <property role="3PKj8l" value="78C45E" />
-        </node>
-        <node concept="3PKj8D" id="72HfR5QcT_$" role="3PKjn_">
-          <property role="3PKj8l" value="78C45E" />
-        </node>
-      </node>
+    <node concept="1QGGSu" id="4llm6dDjViS" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/reqchunk.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4tXyFaWwpmI">
@@ -367,33 +337,6 @@
     <property role="3GE5qa" value="rel" />
     <property role="TrG5h" value="IReqRefCtx" />
     <property role="EcuMT" value="4048037625504743173" />
-  </node>
-  <node concept="1TIwiD" id="4Etk_BWsaxl">
-    <property role="TrG5h" value="IconDummyAddChildReq" />
-    <property role="3GE5qa" value="icons" />
-    <property role="EcuMT" value="5376544076591048789" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="cEt5uj8NH1" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/addChild.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4Etk_BWsaxv">
-    <property role="TrG5h" value="IconDummyAddSiblingReq" />
-    <property role="3GE5qa" value="icons" />
-    <property role="EcuMT" value="5376544076591048799" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="cEt5uj8NH2" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/addSibling.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4Etk_BWsaxD">
-    <property role="TrG5h" value="IconDummyDeleteReq" />
-    <property role="3GE5qa" value="icons" />
-    <property role="EcuMT" value="5376544076591048809" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="cEt5uj8NH3" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/delete.png" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7mG7sQPy9qR">
     <property role="3GE5qa" value="tag" />

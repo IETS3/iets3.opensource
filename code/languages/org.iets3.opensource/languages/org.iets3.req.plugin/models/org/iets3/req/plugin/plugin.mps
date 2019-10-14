@@ -34,11 +34,15 @@
     <import index="bemq" ref="r:4cfa8b0a-7754-4d3d-9e06-0ce9d427860c(org.iets3.req.core.behavior)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
+        <child id="8974276187400029893" name="icon" index="1QGGTw" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -48,10 +52,12 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
         <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
+      <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <child id="1207145245948" name="contents" index="ftER_" />
@@ -64,6 +70,7 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
+      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
@@ -379,49 +386,19 @@
         <node concept="gKNx_" id="4OH$Ti$m$xg" role="37wK5m" />
       </node>
       <node concept="3_N$aR" id="4tXyFaWyEn2" role="3_Xtdj">
-        <node concept="2OqwBi" id="6b_jefnVyvT" role="3_N$db">
-          <node concept="2OqwBi" id="6b_jefnVyvU" role="2Oq$k0">
-            <node concept="2YIFZM" id="6b_jefnVyvV" role="2Oq$k0">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-            </node>
-            <node concept="liA8E" id="6b_jefnVyvW" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-              <node concept="3VsKOn" id="6b_jefnVyvX" role="37wK5m">
-                <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-              </node>
-            </node>
-          </node>
-          <node concept="liA8E" id="6b_jefnVyvY" role="2OqNvi">
-            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-            <node concept="35c_gC" id="6b_jefnVyvZ" role="37wK5m">
-              <ref role="35c_gD" to="plfp:4Etk_BWsaxl" resolve="IconDummyAddChildReq" />
-            </node>
-          </node>
-        </node>
         <node concept="2p1MsB" id="4tXyFaWyEzd" role="3_N$d4">
           <ref role="2p1Luo" to="m4ta:4tXyFaWyCnG" resolve="AddChildRequirement" />
         </node>
+        <node concept="1QGGTA" id="pK4$jT2ZLt" role="3_N$db">
+          <node concept="1QGGSu" id="pK4$jT2ZLD" role="1QGGTw">
+            <property role="1iqoE4" value="${module}/icons/addChild.png" />
+          </node>
+        </node>
       </node>
       <node concept="3_N$aR" id="7Dcax7Agm1L" role="3_Xtdj">
-        <node concept="2OqwBi" id="6b_jefnVyo$" role="3_N$db">
-          <node concept="2OqwBi" id="6b_jefnVyo_" role="2Oq$k0">
-            <node concept="2YIFZM" id="6b_jefnVyoA" role="2Oq$k0">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-            </node>
-            <node concept="liA8E" id="6b_jefnVyoB" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-              <node concept="3VsKOn" id="6b_jefnVyoC" role="37wK5m">
-                <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-              </node>
-            </node>
-          </node>
-          <node concept="liA8E" id="6b_jefnVyoD" role="2OqNvi">
-            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-            <node concept="35c_gC" id="6b_jefnVyoE" role="37wK5m">
-              <ref role="35c_gD" to="plfp:4Etk_BWsaxv" resolve="IconDummyAddSiblingReq" />
-            </node>
+        <node concept="1QGGTA" id="pK4$jT3ShS" role="3_N$db">
+          <node concept="1QGGSu" id="pK4$jT3Skv" role="1QGGTw">
+            <property role="1iqoE4" value="${module}/icons/addSibling.png" />
           </node>
         </node>
         <node concept="2p1MsB" id="7Dcax7Agm25" role="3_N$d4">
@@ -429,24 +406,9 @@
         </node>
       </node>
       <node concept="3_N$aR" id="4Etk_BWsbo0" role="3_Xtdj">
-        <node concept="2OqwBi" id="6b_jefnVy54" role="3_N$db">
-          <node concept="2OqwBi" id="6b_jefnVy55" role="2Oq$k0">
-            <node concept="2YIFZM" id="6b_jefnVy56" role="2Oq$k0">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-            </node>
-            <node concept="liA8E" id="6b_jefnVy57" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-              <node concept="3VsKOn" id="6b_jefnVy58" role="37wK5m">
-                <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-              </node>
-            </node>
-          </node>
-          <node concept="liA8E" id="6b_jefnVy59" role="2OqNvi">
-            <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
-            <node concept="35c_gC" id="7gL8KYmG9fh" role="37wK5m">
-              <ref role="35c_gD" to="plfp:4Etk_BWsaxD" resolve="IconDummyDeleteReq" />
-            </node>
+        <node concept="1QGGTA" id="pK4$jT3SAi" role="3_N$db">
+          <node concept="1QGGSu" id="pK4$jT3SA_" role="1QGGTw">
+            <property role="1iqoE4" value="${module}/icons/delete.png" />
           </node>
         </node>
         <node concept="2p1MsB" id="4Etk_BWsbpq" role="3_N$d4">
@@ -1789,7 +1751,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUj2" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/addChild.png" />
+      <property role="1iqoE4" value="${module}/icons/addChild.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="1ognOHj$IOp">
@@ -1843,8 +1805,39 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6LfBX8YhUC8" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/req.png" />
+    <node concept="2ScWuX" id="4llm6dDhOj5" role="tmbBb">
+      <node concept="3clFbS" id="4llm6dDhOj6" role="2VODD2">
+        <node concept="3clFbF" id="4llm6dDhOGb" role="3cqZAp">
+          <node concept="2OqwBi" id="4llm6dDiuqK" role="3clFbG">
+            <node concept="2OqwBi" id="4llm6dDhOWg" role="2Oq$k0">
+              <node concept="tl45R" id="4llm6dDhOGa" role="2Oq$k0" />
+              <node concept="liA8E" id="4llm6dDhPbV" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4llm6dDiuC7" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
+              <node concept="2OqwBi" id="4llm6dDivbY" role="37wK5m">
+                <node concept="2YIFZM" id="4llm6dDiuZW" role="2Oq$k0">
+                  <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                </node>
+                <node concept="liA8E" id="4llm6dDivvt" role="2OqNvi">
+                  <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
+                  <node concept="35c_gC" id="4llm6dDiv_9" role="37wK5m">
+                    <ref role="35c_gD" to="plfp:4tXyFaWwpmT" resolve="DefaultRequirement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4llm6dDi5W7" role="3cqZAp">
+          <node concept="3clFbT" id="4llm6dDi5W6" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8Yg5OP">
@@ -1877,7 +1870,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUoA" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/addSibling.png" />
+      <property role="1iqoE4" value="${module}/icons/addSibling.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8Yg60R">
@@ -1908,7 +1901,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6LfBX8YhUrc" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/reqchunk.png" />
+      <property role="1iqoE4" value="${module}/icons/delete.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="6LfBX8YheFX">
@@ -1944,8 +1937,39 @@
       <node concept="1oajcY" id="6LfBX8Yhl8$" role="1oa70y" />
       <node concept="H_c77" id="6LfBX8Yhl4M" role="1tU5fm" />
     </node>
-    <node concept="1QGGSu" id="6LfBX8YhUrX" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/berndkolb/mps/_mps35/IETS3/iets3.opensource/code/languages/org.iets3.opensource/languages/org.iets3.req.core/icons/reqchunk.png" />
+    <node concept="2ScWuX" id="4llm6dDjVlQ" role="tmbBb">
+      <node concept="3clFbS" id="4llm6dDjVlR" role="2VODD2">
+        <node concept="3clFbF" id="4llm6dDk5E7" role="3cqZAp">
+          <node concept="2OqwBi" id="4llm6dDk5E8" role="3clFbG">
+            <node concept="2OqwBi" id="4llm6dDk5E9" role="2Oq$k0">
+              <node concept="tl45R" id="4llm6dDk5Ea" role="2Oq$k0" />
+              <node concept="liA8E" id="4llm6dDk5Eb" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4llm6dDk5Ec" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
+              <node concept="2OqwBi" id="4llm6dDk5Ed" role="37wK5m">
+                <node concept="2YIFZM" id="4llm6dDk5Ee" role="2Oq$k0">
+                  <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                </node>
+                <node concept="liA8E" id="4llm6dDk5Ef" role="2OqNvi">
+                  <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
+                  <node concept="35c_gC" id="4llm6dDk5Eg" role="37wK5m">
+                    <ref role="35c_gD" to="plfp:4tXyFaWwpis" resolve="RequirementsChunk" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4llm6dDjVum" role="3cqZAp">
+          <node concept="3clFbT" id="4llm6dDjVul" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
