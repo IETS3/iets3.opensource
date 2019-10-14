@@ -376,10 +376,10 @@
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
-      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
+      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
-      <concept id="1240171359678" name="jetbrains.mps.lang.smodel.structure.EnumMember_ValueOperation" flags="nn" index="2ZYiMu" />
+      <concept id="1240171359678" name="jetbrains.mps.lang.smodel.structure.EnumMember_ValueOperation_Old" flags="nn" index="2ZYiMu" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -5697,6 +5697,17 @@
         </node>
       </node>
       <node concept="17QB3L" id="7kdj6EM6LWN" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4llm6dFyLw8" role="13h7CS">
+      <property role="TrG5h" value="isUsedAsLValue" />
+      <ref role="13i0hy" to="pbu6:YMJl2BJIOO" resolve="isUsedAsLValue" />
+      <node concept="3Tm1VV" id="4llm6dFyLw9" role="1B3o_S" />
+      <node concept="3clFbS" id="4llm6dFyLwc" role="3clF47">
+        <node concept="3clFbF" id="4llm6dFyLwf" role="3cqZAp">
+          <node concept="3clFbT" id="4llm6dFyLwe" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="4llm6dFyLwd" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="435Eqf9c0kq">

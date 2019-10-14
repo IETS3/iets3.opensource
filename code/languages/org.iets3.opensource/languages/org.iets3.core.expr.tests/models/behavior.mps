@@ -332,7 +332,6 @@
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
       </concept>
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -341,7 +340,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
@@ -366,6 +365,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -5813,14 +5813,24 @@
                     <node concept="3cpWs8" id="ucawTXJKal" role="3cqZAp">
                       <node concept="3cpWsn" id="ucawTXJKam" role="3cpWs9">
                         <property role="TrG5h" value="ld" />
+                        <node concept="1PxgMI" id="4llm6dEryI4" role="33vP2m">
+                          <node concept="chp4Y" id="4llm6dEryIt" role="3oSUPX">
+                            <ref role="cht4Q" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+                          </node>
+                          <node concept="2OqwBi" id="4llm6dErxNG" role="1m5AlR">
+                            <node concept="2OqwBi" id="ucawTXJKao" role="2Oq$k0">
+                              <node concept="2GrUjf" id="ucawTXJKap" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="ucawTXJKa1" resolve="n" />
+                              </node>
+                              <node concept="2NL2c5" id="4llm6dErxDh" role="2OqNvi" />
+                            </node>
+                            <node concept="liA8E" id="4llm6dErygO" role="2OqNvi">
+                              <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode()" resolve="getDeclarationNode" />
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3Tqbb2" id="ucawTXJKan" role="1tU5fm">
                           <ref role="ehGHo" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
-                        </node>
-                        <node concept="2OqwBi" id="ucawTXJKao" role="33vP2m">
-                          <node concept="2GrUjf" id="ucawTXJKap" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="ucawTXJKa1" resolve="n" />
-                          </node>
-                          <node concept="25OxAV" id="ucawTXJKaq" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

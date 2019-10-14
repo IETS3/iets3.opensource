@@ -227,11 +227,6 @@
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
       </concept>
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
-      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
-        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
-        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
-      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -248,10 +243,15 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -2043,11 +2043,11 @@
                           <node concept="37vLTw" id="_igokwKj_P" role="2Oq$k0">
                             <ref role="3cqZAo" node="_igokwK5R8" resolve="port" />
                           </node>
-                          <node concept="25OxAV" id="_igokwKkp$" role="2OqNvi" />
+                          <node concept="2NL2c5" id="4llm6dFyM69" role="2OqNvi" />
                         </node>
-                        <node concept="28GBK8" id="_igokwKkZE" role="3uHU7w">
-                          <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
-                          <ref role="28H3Ia" to="w9y2:x8tpSAXuOU" resolve="governingPorts" />
+                        <node concept="359W_D" id="4llm6dFyMj9" role="3uHU7w">
+                          <ref role="359W_E" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                          <ref role="359W_F" to="w9y2:x8tpSAXuOU" resolve="governingPorts" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="_igokwKlmV" role="2OEOjV">
@@ -2076,11 +2076,11 @@
                             <node concept="37vLTw" id="_igokwKsvG" role="2Oq$k0">
                               <ref role="3cqZAo" node="_igokwK5R8" resolve="port" />
                             </node>
-                            <node concept="25OxAV" id="_igokwKtas" role="2OqNvi" />
+                            <node concept="2NL2c5" id="4llm6dFyMgv" role="2OqNvi" />
                           </node>
-                          <node concept="28GBK8" id="_igokwKuMj" role="3uHU7w">
-                            <ref role="28GBKb" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
-                            <ref role="28H3Ia" to="w9y2:x8tpSAXvhR" resolve="subordinatePorts" />
+                          <node concept="359W_D" id="4llm6dFyMjc" role="3uHU7w">
+                            <ref role="359W_E" to="w9y2:x8tpS_RkkP" resolve="ComponentInterface" />
+                            <ref role="359W_F" to="w9y2:x8tpSAXvhR" resolve="subordinatePorts" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="_igokwKtnx" role="2MkJ7o">
