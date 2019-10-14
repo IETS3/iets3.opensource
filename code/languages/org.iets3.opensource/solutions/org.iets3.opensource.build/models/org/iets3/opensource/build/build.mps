@@ -1230,6 +1230,11 @@
             <ref role="3bR37D" node="5QDPRL$oRBh" resolve="org.iets3.core.expr.query" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3h73ZjvSBBE" role="3bR37C">
+          <node concept="3bR9La" id="3h73ZjvSBBF" role="1SiIV1">
+            <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5QDPRL$oT7a" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1882,6 +1887,11 @@
             <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3h73ZjvSBBG" role="3bR37C">
+          <node concept="3bR9La" id="3h73ZjvSBBH" role="1SiIV1">
+            <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396ft" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2235,6 +2245,11 @@
         <node concept="1SiIV0" id="6M49e_6bQWF" role="3bR37C">
           <node concept="3bR9La" id="6M49e_6bQWG" role="1SiIV1">
             <ref role="3bR37D" to="al5i:5ovySaD312W" resolve="com.mbeddr.mpsutil.varscope" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3h73ZjvSBBX" role="3bR37C">
+          <node concept="3bR9La" id="3h73ZjvSBBY" role="1SiIV1">
+            <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
       </node>
@@ -5012,11 +5027,6 @@
         <node concept="1SiIV0" id="4C_RnzfEEzJ" role="3bR37C">
           <node concept="3bR9La" id="4C_RnzfEEzK" role="1SiIV1">
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5Iz9nTHWzQn" role="3bR37C">
-          <node concept="3bR9La" id="5Iz9nTHWzQo" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
       </node>
