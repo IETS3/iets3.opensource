@@ -5345,26 +5345,6 @@
           </node>
           <node concept="2e7140" id="24Fec4174pp" role="2e1Fq_">
             <node concept="3clFbS" id="24Fec4174pq" role="2VODD2">
-              <node concept="3clFbF" id="24Fec41azf3" role="3cqZAp">
-                <node concept="2OqwBi" id="24Fec41azf0" role="3clFbG">
-                  <node concept="10M0yZ" id="24Fec41azf1" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="liA8E" id="24Fec41azf2" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="3cpWs3" id="24Fec41aAc0" role="37wK5m">
-                      <node concept="Xl_RD" id="24Fec41azfj" role="3uHU7B">
-                        <property role="Xl_RC" value="Tyoe: " />
-                      </node>
-                      <node concept="2OqwBi" id="24Fec41aAca" role="3uHU7w">
-                        <node concept="2e73FJ" id="24Fec41aAcb" role="2Oq$k0" />
-                        <node concept="3JvlWi" id="24Fec41aAcc" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="24Fec4174wL" role="3cqZAp">
                 <node concept="2OqwBi" id="24Fec4175xa" role="3clFbG">
                   <node concept="2OqwBi" id="24Fec4174HU" role="2Oq$k0">
