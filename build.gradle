@@ -9,7 +9,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.148.1eeeded'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
     }
 }
 
@@ -44,12 +44,6 @@ if (!new File(jdk_home, "lib").exists()) {
 
 logger.info 'Using JDK at {}', jdk_home
 
-//if (!file("$jdk_home/lib/tools.jar").isFile()) {
-//    jdk_home = jdk_home + "/.."
-//}
-//if (!file("$jdk_home/lib/tools.jar").isFile()) {
-//    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
-//}
 ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
@@ -185,11 +179,12 @@ def defaultScriptArgs = [
         'version'                           : version
 ]
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
-        project.files("$project.jdk_home/lib/tools.jar")
+        project.files("$ext.jdk_home/lib/tools.jar")
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value" }
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
     script "$buildDir/iets3.opensource.allScripts/build-allScripts.xml"
