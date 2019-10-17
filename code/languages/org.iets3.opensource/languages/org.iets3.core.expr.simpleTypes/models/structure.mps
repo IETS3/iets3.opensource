@@ -252,6 +252,9 @@
       <property role="TrG5h" value="targetPrecision" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="PrWs8" id="5wVMwYHjrKa" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DTWJ$8kg8g">
     <property role="EcuMT" value="8825352096209502736" />
