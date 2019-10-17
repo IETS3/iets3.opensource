@@ -154,6 +154,12 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -3542,6 +3548,11 @@
       <ref role="13i0hy" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
       <node concept="3Tm1VV" id="2U$lnbPqLtg" role="1B3o_S" />
       <node concept="3clFbS" id="2U$lnbPqLto" role="3clF47">
+        <node concept="3SKdUt" id="5wVMwYHzAbw" role="3cqZAp">
+          <node concept="3SKdUq" id="5wVMwYHzAby" role="3SKWNk">
+            <property role="3SKdUp" value="all other ColumnDefs other than QueryColDef are not relevant for coverage (hence exclude them)" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2U$lnbPqLAk" role="3cqZAp">
           <node concept="2OqwBi" id="2U$lnbPqN0F" role="3clFbG">
             <node concept="2OqwBi" id="2U$lnbPqLLz" role="2Oq$k0">
@@ -3549,10 +3560,36 @@
               <node concept="32TBzR" id="2U$lnbPqM1B" role="2OqNvi" />
             </node>
             <node concept="66VNe" id="2U$lnbPqOCB" role="2OqNvi">
-              <node concept="2OqwBi" id="2U$lnbPqOOz" role="576Qk">
-                <node concept="13iPFW" id="2U$lnbPqOEf" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="2U$lnbPqP5Y" role="2OqNvi">
-                  <ref role="3TtcxE" to="kfo3:7FuUjk_57Cw" resolve="colDefs" />
+              <node concept="2OqwBi" id="5wVMwYHzwOb" role="576Qk">
+                <node concept="2OqwBi" id="2U$lnbPqOOz" role="2Oq$k0">
+                  <node concept="13iPFW" id="2U$lnbPqOEf" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2U$lnbPqP5Y" role="2OqNvi">
+                    <ref role="3TtcxE" to="kfo3:7FuUjk_57Cw" resolve="colDefs" />
+                  </node>
+                </node>
+                <node concept="3zZkjj" id="5wVMwYHz$_8" role="2OqNvi">
+                  <node concept="1bVj0M" id="5wVMwYHz$_a" role="23t8la">
+                    <node concept="3clFbS" id="5wVMwYHz$_b" role="1bW5cS">
+                      <node concept="3clFbF" id="5wVMwYHz$Ge" role="3cqZAp">
+                        <node concept="3fqX7Q" id="5wVMwYHz_Ll" role="3clFbG">
+                          <node concept="2OqwBi" id="5wVMwYHz_Ln" role="3fr31v">
+                            <node concept="37vLTw" id="5wVMwYHz_Lo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5wVMwYHz$_c" resolve="it" />
+                            </node>
+                            <node concept="1mIQ4w" id="5wVMwYHz_Lp" role="2OqNvi">
+                              <node concept="chp4Y" id="5wVMwYHz_Lq" role="cj9EA">
+                                <ref role="cht4Q" to="kfo3:8XWEtdX_Xw" resolve="QueryColDef" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="5wVMwYHz$_c" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="5wVMwYHz$_d" role="1tU5fm" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
