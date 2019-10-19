@@ -38,6 +38,7 @@
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.genjava.tests/org.iets3.core.expr.genjava.tests.mpl" folder="expr.genjava" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.genjava.toplevel/org.iets3.core.expr.genjava.toplevel.mpl" folder="expr.genjava" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.genjava.util/org.iets3.core.expr.genjava.util.mpl" folder="expr.genjava" />
+      <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.internalDSL/org.iets3.core.expr.internalDSL.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.lambda/org.iets3.core.expr.lambda.mpl" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.lookup/org.iets3.core.expr.lookup.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.math/org.iets3.core.expr.math.mpl" folder="expr.lang-advanced" />
@@ -91,6 +92,7 @@
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.genjava.temporal.rt/org.iets3.core.expr.genjava.temporal.rt.msd" folder="expr.genjava" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.genjava.tests.rt/org.iets3.core.expr.genjava.tests.rt.msd" folder="expr.genjava" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.genjava.toplevel.rt/org.iets3.core.expr.genjava.toplevel.rt.msd" folder="expr.genjava" />
+      <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.internalDSL.interpreter/org.iets3.core.expr.internalDSL.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.lambda.interpreter/org.iets3.core.expr.lambda.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.lambda.plugin/org.iets3.core.expr.lambda.plugin.msd" folder="expr.plugins" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.lookup.interpreter/org.iets3.core.expr.lookup.interpreter.msd" folder="expr.lang-advanced" />
