@@ -190,5 +190,8 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7LiXavR8wm2">
+    <ref role="1M2myG" to="3lvb:7LiXavR8tT8" resolve="DefineCustomBinOp" />
+  </node>
 </model>
 

@@ -142,5 +142,62 @@
     <property role="34LRSv" value="error" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="7LiXavR8tT8">
+    <property role="EcuMT" value="8958491611036245576" />
+    <property role="TrG5h" value="DefineCustomBinOp" />
+    <property role="34LRSv" value="define bin op" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7LiXavR8tT9" role="1TKVEi">
+      <property role="IQ2ns" value="8958491611036245577" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="leftType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7LiXavR8tTa" role="1TKVEi">
+      <property role="IQ2ns" value="8958491611036245578" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rightType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7LiXavR8tTb" role="1TKVEi">
+      <property role="IQ2ns" value="8958491611036245579" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7LiXavR8tTc" role="1TKVEi">
+      <property role="IQ2ns" value="8958491611036245580" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exec" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7LiXavR8NbI" resolve="DefineCustomBinOpSem" />
+    </node>
+    <node concept="PrWs8" id="7LiXavR8tTd" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7LiXavR8NbI">
+    <property role="EcuMT" value="8958491611036332782" />
+    <property role="TrG5h" value="DefineCustomBinOpSem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7LiXavR8NbJ" role="PzmwI">
+      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7LiXavR93IJ">
+    <property role="EcuMT" value="8958491611036400559" />
+    <property role="TrG5h" value="CustomBinOpExpression" />
+    <property role="34LRSv" value="custom operator" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="1TJgyj" id="7LiXavR999T" role="1TKVEi">
+      <property role="IQ2ns" value="8958491611036422777" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="op" />
+      <ref role="20lvS9" node="7LiXavR8tT8" resolve="DefineCustomBinOp" />
+    </node>
+  </node>
 </model>
 

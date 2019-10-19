@@ -11,6 +11,8 @@
     <import index="s7zn" ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)" />
     <import index="3lvb" ref="r:d4b4a375-ec81-413f-8538-870652f0943b(org.iets3.core.expr.internalDSL.structure)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -230,6 +232,138 @@
         </node>
       </node>
       <node concept="10Oyi0" id="2DR7y1rKXW7" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7LiXavR8NnL">
+    <ref role="13h7C2" to="3lvb:7LiXavR8NbI" resolve="DefineCustomBinOpSem" />
+    <node concept="13i0hz" id="7LiXavR8NnW" role="13h7CS">
+      <property role="TrG5h" value="createMetaFunction" />
+      <ref role="13i0hy" to="rnpa:5cK3QOc9qti" resolve="createMetaFunction" />
+      <node concept="3Tm1VV" id="7LiXavR8NnX" role="1B3o_S" />
+      <node concept="3clFbS" id="7LiXavR8NnY" role="3clF47">
+        <node concept="3cpWs8" id="7LiXavR8NnZ" role="3cqZAp">
+          <node concept="3cpWsn" id="7LiXavR8No0" role="3cpWs9">
+            <property role="TrG5h" value="def" />
+            <node concept="3Tqbb2" id="7LiXavR8No1" role="1tU5fm">
+              <ref role="ehGHo" to="3lvb:7LiXavR8tT8" resolve="DefineCustomBinOp" />
+            </node>
+            <node concept="2OqwBi" id="7LiXavR8No2" role="33vP2m">
+              <node concept="13iPFW" id="7LiXavR8No3" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7LiXavR8No4" role="2OqNvi">
+                <node concept="1xMEDy" id="7LiXavR8No5" role="1xVPHs">
+                  <node concept="chp4Y" id="7LiXavR8N$w" role="ri$Ld">
+                    <ref role="cht4Q" to="3lvb:7LiXavR8tT8" resolve="DefineCustomBinOp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7LiXavR8No7" role="3cqZAp">
+          <node concept="3cpWsn" id="7LiXavR8No8" role="3cpWs9">
+            <property role="TrG5h" value="mf" />
+            <node concept="3Tqbb2" id="7LiXavR8No9" role="1tU5fm">
+              <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+            </node>
+            <node concept="BsUDl" id="7LiXavR8Noa" role="33vP2m">
+              <ref role="37wK5l" to="rnpa:6dpaV_AQiiy" resolve="createNew" />
+              <node concept="2OqwBi" id="7LiXavR8Nob" role="37wK5m">
+                <node concept="2OqwBi" id="7LiXavR8Noc" role="2Oq$k0">
+                  <node concept="37vLTw" id="7LiXavR8Nod" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7LiXavR8No0" resolve="def" />
+                  </node>
+                  <node concept="3TrEf2" id="7LiXavR8VE5" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:7LiXavR8tTb" resolve="resType" />
+                  </node>
+                </node>
+                <node concept="1$rogu" id="7LiXavR8Nof" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="7LiXavR8Nog" role="37wK5m">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7LiXavR8Noh" role="3cqZAp">
+          <node concept="2OqwBi" id="7LiXavR8Noi" role="3clFbG">
+            <node concept="37vLTw" id="7LiXavR8Noj" role="2Oq$k0">
+              <ref role="3cqZAo" node="7LiXavR8No8" resolve="mf" />
+            </node>
+            <node concept="2qgKlT" id="7LiXavR8Nok" role="2OqNvi">
+              <ref role="37wK5l" to="rnpa:6dpaV_AQ5Xf" resolve="addArg" />
+              <node concept="Xl_RD" id="7LiXavR8Nol" role="37wK5m">
+                <property role="Xl_RC" value="left" />
+              </node>
+              <node concept="2OqwBi" id="7LiXavR8Nom" role="37wK5m">
+                <node concept="2OqwBi" id="7LiXavR8Non" role="2Oq$k0">
+                  <node concept="37vLTw" id="7LiXavR8Noo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7LiXavR8No0" resolve="def" />
+                  </node>
+                  <node concept="3TrEf2" id="7LiXavR8Nop" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:7LiXavR8tT9" resolve="leftType" />
+                  </node>
+                </node>
+                <node concept="1$rogu" id="7LiXavR8Noq" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7LiXavR8Nor" role="3cqZAp">
+          <node concept="2OqwBi" id="7LiXavR8Nos" role="3clFbG">
+            <node concept="37vLTw" id="7LiXavR8Not" role="2Oq$k0">
+              <ref role="3cqZAo" node="7LiXavR8No8" resolve="mf" />
+            </node>
+            <node concept="2qgKlT" id="7LiXavR8Nou" role="2OqNvi">
+              <ref role="37wK5l" to="rnpa:6dpaV_AQ5Xf" resolve="addArg" />
+              <node concept="Xl_RD" id="7LiXavR8Nov" role="37wK5m">
+                <property role="Xl_RC" value="right" />
+              </node>
+              <node concept="2OqwBi" id="7LiXavR8Now" role="37wK5m">
+                <node concept="2OqwBi" id="7LiXavR8Nox" role="2Oq$k0">
+                  <node concept="37vLTw" id="7LiXavR8Noy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7LiXavR8No0" resolve="def" />
+                  </node>
+                  <node concept="3TrEf2" id="7LiXavR8Noz" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:7LiXavR8tTa" resolve="rightType" />
+                  </node>
+                </node>
+                <node concept="1$rogu" id="7LiXavR8No$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7LiXavR8No_" role="3cqZAp">
+          <node concept="37vLTw" id="7LiXavR8NoA" role="3clFbG">
+            <ref role="3cqZAo" node="7LiXavR8No8" resolve="mf" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7LiXavR8NoB" role="3clF45">
+        <ref role="ehGHo" to="s7zn:5cK3QOc9hog" resolve="MetaFunction" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="7LiXavR8NnM" role="13h7CW">
+      <node concept="3clFbS" id="7LiXavR8NnN" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7LiXavR9xtU">
+    <ref role="13h7C2" to="3lvb:7LiXavR93IJ" resolve="CustomBinOpExpression" />
+    <node concept="13hLZK" id="7LiXavR9xtV" role="13h7CW">
+      <node concept="3clFbS" id="7LiXavR9xtW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7LiXavR9xu5" role="13h7CS">
+      <property role="TrG5h" value="priority" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="pbu6:4rZeNQ6MpZB" resolve="priority" />
+      <node concept="3Tm1VV" id="7LiXavR9xu6" role="1B3o_S" />
+      <node concept="3clFbS" id="7LiXavR9xu9" role="3clF47">
+        <node concept="3clFbF" id="7LiXavR9xuo" role="3cqZAp">
+          <node concept="3cmrfG" id="7LiXavR9xun" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7LiXavR9xua" role="3clF45" />
     </node>
   </node>
 </model>
