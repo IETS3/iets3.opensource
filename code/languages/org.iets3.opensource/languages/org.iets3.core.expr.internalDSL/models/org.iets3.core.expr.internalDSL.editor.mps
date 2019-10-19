@@ -53,8 +53,14 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="2DR7y1rJuJB">
+    <property role="3GE5qa" value="binop" />
     <ref role="1XX52x" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
     <node concept="3EZMnI" id="2DR7y1rJuKd" role="2wV5jI">
       <node concept="2iRkQZ" id="2DR7y1rJuKe" role="2iSdaV" />
@@ -107,6 +113,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2DR7y1rJvgp">
+    <property role="3GE5qa" value="binop" />
     <ref role="1XX52x" to="3lvb:2DR7y1rJuJ0" resolve="DefineBinOpSem" />
     <node concept="3F1sOY" id="2DR7y1rJvgr" role="2wV5jI">
       <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
@@ -135,6 +142,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2DR7y1rKXUR">
+    <property role="3GE5qa" value="binop" />
     <ref role="1XX52x" to="3lvb:2DR7y1rKXUp" resolve="InternalBinOp" />
     <node concept="3F0ifn" id="6AQsn5_t38J" role="2wV5jI">
       <property role="3F0ifm" value="%%" />

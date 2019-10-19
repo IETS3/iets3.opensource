@@ -35,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -44,6 +47,7 @@
     <property role="EcuMT" value="3059947596148501405" />
     <property role="TrG5h" value="DefineBinOp" />
     <property role="34LRSv" value="overload bin op" />
+    <property role="3GE5qa" value="binop" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2DR7y1rJuIy" role="1TKVEi">
       <property role="IQ2ns" value="3059947596148501410" />
@@ -87,6 +91,7 @@
   <node concept="1TIwiD" id="2DR7y1rJuJ0">
     <property role="EcuMT" value="3059947596148501440" />
     <property role="TrG5h" value="DefineBinOpSem" />
+    <property role="3GE5qa" value="binop" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2DR7y1rJuJ1" role="PzmwI">
       <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
@@ -121,6 +126,7 @@
     <property role="EcuMT" value="3059947596148891289" />
     <property role="TrG5h" value="InternalBinOp" />
     <property role="34LRSv" value="%%" />
+    <property role="3GE5qa" value="binop" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="1opCYOqXl_Y">
