@@ -156,6 +156,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -629,6 +630,29 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="65YflFcy0iW">
+    <property role="3GE5qa" value="quote" />
+    <ref role="1M2myG" to="3lvb:65YflFcy0eN" resolve="QuoteType" />
+    <node concept="9S07l" id="65YflFcy0iX" role="9Vyp8">
+      <node concept="3clFbS" id="65YflFcy0iY" role="2VODD2">
+        <node concept="3clFbF" id="65YflFcy0qj" role="3cqZAp">
+          <node concept="2OqwBi" id="65YflFcy1h3" role="3clFbG">
+            <node concept="2OqwBi" id="65YflFcy0As" role="2Oq$k0">
+              <node concept="nLn13" id="65YflFcy0qi" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="65YflFcy0Oo" role="2OqNvi">
+                <node concept="1xMEDy" id="65YflFcy0Oq" role="1xVPHs">
+                  <node concept="chp4Y" id="65YflFcy4kj" role="ri$Ld">
+                    <ref role="cht4Q" to="3lvb:65YflFcy3Z_" resolve="ISupportsQuote" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="65YflFcy3Mg" role="2OqNvi" />
           </node>
         </node>
       </node>

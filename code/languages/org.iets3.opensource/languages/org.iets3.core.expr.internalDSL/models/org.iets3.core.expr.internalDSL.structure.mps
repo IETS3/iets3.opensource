@@ -162,6 +162,9 @@
     <node concept="PrWs8" id="1opCYOr2CgD" role="PzmwI">
       <ref role="PrY4T" node="1opCYOr2AoG" resolve="IDefine" />
     </node>
+    <node concept="PrWs8" id="65YflFcy4uw" role="PzmwI">
+      <ref role="PrY4T" node="65YflFcy3Z_" resolve="ISupportsQuote" />
+    </node>
     <node concept="1TJgyj" id="1opCYOr29lS" role="1TKVEi">
       <property role="IQ2ns" value="1592484182008305016" />
       <property role="20lmBu" value="aggregation" />
@@ -324,6 +327,38 @@
     <property role="TrG5h" value="SentencePartDefType" />
     <property role="34LRSv" value="partdef" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="65YflFcy0eN">
+    <property role="EcuMT" value="7025119928932369331" />
+    <property role="TrG5h" value="QuoteType" />
+    <property role="3GE5qa" value="quote" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="65YflFcy0eO" role="1TKVEi">
+      <property role="IQ2ns" value="7025119928932369332" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="quoted" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="65YflFcy3Z_">
+    <property role="EcuMT" value="7025119928932384741" />
+    <property role="3GE5qa" value="quote" />
+    <property role="TrG5h" value="ISupportsQuote" />
+  </node>
+  <node concept="1TIwiD" id="65YflFcyADJ">
+    <property role="EcuMT" value="7025119928932526703" />
+    <property role="3GE5qa" value="quote" />
+    <property role="TrG5h" value="Eval" />
+    <property role="34LRSv" value="eval" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="65YflFcyADK" role="1TKVEi">
+      <property role="IQ2ns" value="7025119928932526704" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 
