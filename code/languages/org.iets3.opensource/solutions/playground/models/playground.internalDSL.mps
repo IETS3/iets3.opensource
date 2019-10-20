@@ -18,6 +18,9 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
+      <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
+        <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
+      </concept>
       <concept id="3989687177013570767" name="org.iets3.core.expr.collections.structure.UpToTarget" flags="ng" index="1hzhIm">
         <child id="3989687177013570768" name="max" index="1hzhI9" />
       </concept>
@@ -27,10 +30,12 @@
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
       </concept>
       <concept id="7554398283339850572" name="org.iets3.core.expr.collections.structure.FirstOp" flags="ng" index="3iB7TU" />
+      <concept id="7554398283339796915" name="org.iets3.core.expr.collections.structure.SizeOp" flags="ng" index="3iB8M5" />
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
       </concept>
       <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+        <child id="8694548031077041593" name="typeConstraint" index="ygBzB" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
@@ -51,11 +56,13 @@
       <concept id="8958491611036400559" name="org.iets3.core.expr.internalDSL.structure.CustomBinOpExpression" flags="ng" index="2btGW8">
         <reference id="8958491611036422777" name="op" index="2btAru" />
       </concept>
-      <concept id="1592484182007044478" name="org.iets3.core.expr.internalDSL.structure.MessageExpression" flags="ng" index="cVfEj">
+      <concept id="1592484182007044478" name="org.iets3.core.expr.internalDSL.structure.ErrorMessageExpression" flags="ng" index="cVfEj">
         <child id="1592484182007044479" name="text" index="cVfEi" />
+        <child id="1198396570261949216" name="node" index="3u8KhO" />
       </concept>
+      <concept id="1592484182007104207" name="org.iets3.core.expr.internalDSL.structure.ErrorType" flags="ng" index="cVY4y" />
       <concept id="1592484182009522790" name="org.iets3.core.expr.internalDSL.structure.NextPart" flags="ng" index="d0CAb" />
-      <concept id="1592484182008812071" name="org.iets3.core.expr.internalDSL.structure.SentenceSemantics" flags="ng" index="d2v7a" />
+      <concept id="1592484182008812071" name="org.iets3.core.expr.internalDSL.structure.SentenceRuntimeSemantics" flags="ng" index="d2v7a" />
       <concept id="1592484182008812070" name="org.iets3.core.expr.internalDSL.structure.SentenceInitialCallExpr" flags="ng" index="d2v7b" />
       <concept id="1592484182008304926" name="org.iets3.core.expr.internalDSL.structure.SentencePart" flags="ng" index="d4jrN">
         <property id="7025119928933064425" name="helpText" index="2HVaeN" />
@@ -65,7 +72,8 @@
       </concept>
       <concept id="1592484182008304923" name="org.iets3.core.expr.internalDSL.structure.SentenceDefinition" flags="ng" index="d4jrQ">
         <child id="1592484182008305016" name="firstPart" index="d4jql" />
-        <child id="3562644288778858632" name="semantics" index="3GNvUi" />
+        <child id="1198396570262664991" name="staticSemantics" index="3ubfxb" />
+        <child id="3562644288778858632" name="runtimeSemantics" index="3GNvUi" />
       </concept>
       <concept id="1592484182009890890" name="org.iets3.core.expr.internalDSL.structure.ISentenceCall" flags="ng" index="demIB">
         <reference id="1592484182009224847" name="part" index="d3NPy" />
@@ -78,8 +86,10 @@
       <concept id="7025119928932369331" name="org.iets3.core.expr.internalDSL.structure.QuoteType" flags="ng" index="2HXzVD">
         <child id="7025119928932369332" name="quoted" index="2HXzVI" />
       </concept>
+      <concept id="1198396570262508276" name="org.iets3.core.expr.internalDSL.structure.SentenceStaticSemantics" flags="ng" index="3uaDQw" />
+      <concept id="1198396570263217234" name="org.iets3.core.expr.internalDSL.structure.PartPartOp" flags="ng" index="3ud6G6" />
       <concept id="3562644288779174438" name="org.iets3.core.expr.internalDSL.structure.ValuePartOp" flags="ng" index="3GGcKW" />
-      <concept id="3562644288779451129" name="org.iets3.core.expr.internalDSL.structure.PartPartOp" flags="ng" index="3GHfjz">
+      <concept id="3562644288779451129" name="org.iets3.core.expr.internalDSL.structure.IsPartOp" flags="ng" index="3GHfjz">
         <reference id="3562644288779516037" name="part" index="3GHZqv" />
       </concept>
       <concept id="3562644288778823826" name="org.iets3.core.expr.internalDSL.structure.SentencePartCallType" flags="ng" index="3GNmq8" />
@@ -116,6 +126,7 @@
       </concept>
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
@@ -422,6 +433,9 @@
               <node concept="cVfEj" id="1opCYOr1Izn" role="2fGnzA">
                 <node concept="30bdrP" id="1opCYOr1IAw" role="cVfEi">
                   <property role="30bdrQ" value="zero does not work" />
+                </node>
+                <node concept="1vwrg0" id="12xzPjexe1Z" role="3u8KhO">
+                  <ref role="1vwrg3" node="2DR7y1rJFFW" resolve="right" />
                 </node>
               </node>
             </node>
@@ -1106,6 +1120,60 @@
                   <node concept="1vwrg0" id="12xzPjevFIH" role="30czhm">
                     <ref role="1vwrg3" node="12xzPjevDnB" resolve="parts" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uaDQw" id="12xzPje$9jP" role="3ubfxb">
+        <node concept="1v5h_X" id="12xzPje$9kr" role="1v5wSW">
+          <node concept="3iBYCm" id="12xzPje$9kp" role="1v5isi">
+            <node concept="cVY4y" id="12xzPje$9kq" role="3iBWmK" />
+          </node>
+          <node concept="1v5heA" id="12xzPje$9ku" role="1v5heY">
+            <property role="TrG5h" value="parts" />
+            <node concept="3iBYCm" id="12xzPje$9ks" role="1v5hez">
+              <node concept="3GNmq8" id="12xzPje$9kt" role="3iBWmK" />
+            </node>
+          </node>
+          <node concept="2fGnzi" id="12xzPjeDqmO" role="1v5heX">
+            <node concept="2fGnzd" id="12xzPjeDqmP" role="2fGnxs">
+              <node concept="30cPrR" id="12xzPjeDqNp" role="2fGnzS">
+                <node concept="30bXRB" id="12xzPjeDqPa" role="30dEs_">
+                  <property role="30bXRw" value="4" />
+                </node>
+                <node concept="1QScDb" id="12xzPjeDqos" role="30dEsF">
+                  <node concept="3iB8M5" id="12xzPjeDqpC" role="1QScD9" />
+                  <node concept="1vwrg0" id="12xzPjeDqo3" role="30czhm">
+                    <ref role="1vwrg3" node="12xzPje$9ku" resolve="parts" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3iBYfx" id="12xzPje$9n0" role="2fGnzA">
+                <node concept="cVfEj" id="12xzPje$9nV" role="3iBYfI">
+                  <node concept="30bdrP" id="12xzPje$9S3" role="cVfEi">
+                    <property role="30bdrQ" value="Four Parts Needed" />
+                  </node>
+                  <node concept="1QScDb" id="12xzPje_uds" role="3u8KhO">
+                    <node concept="wdKpt" id="12xzPje$9PL" role="30czhm">
+                      <node concept="1QScDb" id="12xzPje$9qf" role="30czhm">
+                        <node concept="3iB7TU" id="12xzPje$9so" role="1QScD9" />
+                        <node concept="1vwrg0" id="12xzPje$9p6" role="30czhm">
+                          <ref role="1vwrg3" node="12xzPje$9ku" resolve="parts" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3ud6G6" id="12xzPjeAaep" role="1QScD9" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2fGnzd" id="12xzPjeDqmQ" role="2fGnxs">
+              <node concept="2fHqz8" id="12xzPjeDrjv" role="2fGnzS" />
+              <node concept="3iBYfx" id="12xzPjeDrpm" role="2fGnzA">
+                <node concept="ygwf7" id="12xzPjeDruW" role="ygBzB">
+                  <node concept="cVY4y" id="12xzPjeE0IZ" role="ygwf4" />
                 </node>
               </node>
             </node>

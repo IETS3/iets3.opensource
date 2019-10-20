@@ -319,7 +319,7 @@
   </node>
   <node concept="1M2fIO" id="35L3xFtMvdP">
     <property role="3GE5qa" value="sentence.sem" />
-    <ref role="1M2myG" to="3lvb:35L3xFtLvFT" resolve="PartPartOp" />
+    <ref role="1M2myG" to="3lvb:35L3xFtLvFT" resolve="IsPartOp" />
     <node concept="1N5Pfh" id="35L3xFtMvdQ" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:35L3xFtLJy5" resolve="part" />
       <node concept="3dgokm" id="35L3xFtMvdS" role="1N6uqs">

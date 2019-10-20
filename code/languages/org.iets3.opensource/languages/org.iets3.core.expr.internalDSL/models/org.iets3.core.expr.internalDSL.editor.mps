@@ -174,6 +174,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -286,12 +287,24 @@
     </node>
   </node>
   <node concept="24kQdi" id="1opCYOqXlAq">
-    <ref role="1XX52x" to="3lvb:1opCYOqXl_Y" resolve="MessageExpression" />
+    <ref role="1XX52x" to="3lvb:1opCYOqXl_Y" resolve="ErrorMessageExpression" />
     <node concept="3EZMnI" id="1opCYOqXlAv" role="2wV5jI">
       <node concept="2iRfu4" id="1opCYOqXlAw" role="2iSdaV" />
       <node concept="3F0ifn" id="1opCYOqXlAs" role="3EZMnx">
         <property role="3F0ifm" value="error[" />
         <node concept="11LMrY" id="1opCYOqXlAR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="12xzPjewCGJ" role="3EZMnx">
+        <ref role="1NtTu8" to="3lvb:12xzPjewCGw" resolve="node" />
+      </node>
+      <node concept="3F0ifn" id="12xzPjewCGZ" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="11L4FC" id="12xzPjexe5f" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="12xzPjexe5k" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -557,12 +570,38 @@
       <node concept="3EZMnI" id="35L3xFtJfjm" role="3EZMnx">
         <node concept="VPM3Z" id="35L3xFtJfjo" role="3F10Kt" />
         <node concept="3F0ifn" id="35L3xFtJfjq" role="3EZMnx">
-          <property role="3F0ifm" value="    exec" />
+          <property role="3F0ifm" value="   check" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="2iRfu4" id="35L3xFtJfjr" role="2iSdaV" />
         <node concept="3F1sOY" id="35L3xFtJfjD" role="3EZMnx">
-          <ref role="1NtTu8" to="3lvb:35L3xFtJf28" resolve="semantics" />
+          <ref role="1NtTu8" to="3lvb:12xzPjeznsv" resolve="staticSemantics" />
+        </node>
+        <node concept="pkWqt" id="12xzPjezo5S" role="pqm2j">
+          <node concept="3clFbS" id="12xzPjezo5T" role="2VODD2">
+            <node concept="3clFbF" id="12xzPjezode" role="3cqZAp">
+              <node concept="2OqwBi" id="12xzPjezqlV" role="3clFbG">
+                <node concept="2OqwBi" id="12xzPjezo$z" role="2Oq$k0">
+                  <node concept="pncrf" id="12xzPjezodd" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="12xzPjezpsi" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:12xzPjeznsv" resolve="staticSemantics" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="12xzPjezrw_" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="12xzPjeznL7" role="3EZMnx">
+        <node concept="VPM3Z" id="12xzPjeznL8" role="3F10Kt" />
+        <node concept="3F0ifn" id="12xzPjeznL9" role="3EZMnx">
+          <property role="3F0ifm" value="    exec" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="2iRfu4" id="12xzPjeznLa" role="2iSdaV" />
+        <node concept="3F1sOY" id="12xzPjeznLb" role="3EZMnx">
+          <ref role="1NtTu8" to="3lvb:35L3xFtJf28" resolve="runtimeSemantics" />
         </node>
       </node>
       <node concept="3EZMnI" id="65YflFcqc5$" role="AHCbl">
@@ -616,14 +655,14 @@
   </node>
   <node concept="24kQdi" id="35L3xFtJBk2">
     <property role="3GE5qa" value="sentence.sem" />
-    <ref role="1XX52x" to="3lvb:1opCYOr458B" resolve="SentenceSemantics" />
+    <ref role="1XX52x" to="3lvb:1opCYOr458B" resolve="SentenceRuntimeSemantics" />
     <node concept="3F1sOY" id="35L3xFtJBk4" role="2wV5jI">
       <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
     </node>
   </node>
   <node concept="24kQdi" id="35L3xFtLMNk">
     <property role="3GE5qa" value="sentence.sem" />
-    <ref role="1XX52x" to="3lvb:35L3xFtLvFT" resolve="PartPartOp" />
+    <ref role="1XX52x" to="3lvb:35L3xFtLvFT" resolve="IsPartOp" />
     <node concept="3EZMnI" id="35L3xFtLMNy" role="2wV5jI">
       <node concept="2iRfu4" id="35L3xFtLMNz" role="2iSdaV" />
       <node concept="3F0ifn" id="35L3xFtLMNL" role="3EZMnx">
@@ -863,6 +902,28 @@
         </node>
         <node concept="2iRfu4" id="7LiXavR8vNI" role="2iSdaV" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="12xzPjexJ6F">
+    <ref role="1XX52x" to="3lvb:1opCYOqX$bf" resolve="ErrorType" />
+    <node concept="3F0ifn" id="12xzPjexJ6H" role="2wV5jI">
+      <property role="3F0ifm" value="error" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="12xzPjeyLpe">
+    <property role="3GE5qa" value="sentence.sem" />
+    <ref role="1XX52x" to="3lvb:12xzPjeyLbO" resolve="SentenceStaticSemantics" />
+    <node concept="3F1sOY" id="12xzPjeyLpg" role="2wV5jI">
+      <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="12xzPjeDrHe">
+    <property role="3GE5qa" value="sentence.sem" />
+    <ref role="1XX52x" to="3lvb:35L3xFtJ6yi" resolve="SentencePartCallType" />
+    <node concept="3F0ifn" id="12xzPjeDrHg" role="2wV5jI">
+      <property role="3F0ifm" value="part" />
+      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
 </model>
