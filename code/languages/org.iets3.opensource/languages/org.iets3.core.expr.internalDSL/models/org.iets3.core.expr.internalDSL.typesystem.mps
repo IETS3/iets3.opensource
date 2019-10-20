@@ -1612,5 +1612,69 @@
       <ref role="1YaFvo" to="3lvb:2DbtJhuCAuT" resolve="SuffixRawOp" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2DbtJhuFzKN">
+    <property role="TrG5h" value="typeof_SuffixConvertOp" />
+    <property role="3GE5qa" value="suffix" />
+    <node concept="3clFbS" id="2DbtJhuFzKO" role="18ibNy">
+      <node concept="1Z5TYs" id="2DbtJhuFzSU" role="3cqZAp">
+        <node concept="mw_s8" id="2DbtJhuFzTe" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2DbtJhuFzTa" role="mwGJk">
+            <node concept="2OqwBi" id="2DbtJhuF$3J" role="1Z2MuG">
+              <node concept="1YBJjd" id="2DbtJhuFzTv" role="2Oq$k0">
+                <ref role="1YBMHb" node="2DbtJhuFzKQ" resolve="s" />
+              </node>
+              <node concept="3TrEf2" id="2DbtJhuF$i6" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:2DbtJhuFzJ8" resolve="targetType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2DbtJhuFzSX" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2DbtJhuFzKX" role="mwGJk">
+            <node concept="1YBJjd" id="2DbtJhuFzLd" role="1Z2MuG">
+              <ref role="1YBMHb" node="2DbtJhuFzKQ" resolve="s" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2DbtJhuFzKQ" role="1YuTPh">
+      <property role="TrG5h" value="s" />
+      <ref role="1YaFvo" to="3lvb:2DbtJhuFzJ5" resolve="SuffixConvertOp" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2DbtJhuGvu6">
+    <property role="TrG5h" value="check_SuffixConvertOp" />
+    <property role="3GE5qa" value="suffix" />
+    <node concept="3clFbS" id="2DbtJhuGvu7" role="18ibNy">
+      <node concept="3clFbJ" id="2DbtJhuHdjM" role="3cqZAp">
+        <node concept="3clFbS" id="2DbtJhuHdjO" role="3clFbx">
+          <node concept="2MkqsV" id="2DbtJhuHev5" role="3cqZAp">
+            <node concept="Xl_RD" id="2DbtJhuHevk" role="2MkJ7o">
+              <property role="Xl_RC" value="no conversion found" />
+            </node>
+            <node concept="1YBJjd" id="2DbtJhuHfah" role="2OEOjV">
+              <ref role="1YBMHb" node="2DbtJhuGvu9" resolve="sco" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="2DbtJhuHeez" role="3clFbw">
+          <node concept="10Nm6u" id="2DbtJhuHeqy" role="3uHU7w" />
+          <node concept="2OqwBi" id="2DbtJhuHdzR" role="3uHU7B">
+            <node concept="1YBJjd" id="2DbtJhuHdk1" role="2Oq$k0">
+              <ref role="1YBMHb" node="2DbtJhuGvu9" resolve="sco" />
+            </node>
+            <node concept="2qgKlT" id="2DbtJhuHdPC" role="2OqNvi">
+              <ref role="37wK5l" to="ppli:2DbtJhuGX9r" resolve="findConverter" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2DbtJhuGvu9" role="1YuTPh">
+      <property role="TrG5h" value="sco" />
+      <ref role="1YaFvo" to="3lvb:2DbtJhuFzJ5" resolve="SuffixConvertOp" />
+    </node>
+  </node>
 </model>
 

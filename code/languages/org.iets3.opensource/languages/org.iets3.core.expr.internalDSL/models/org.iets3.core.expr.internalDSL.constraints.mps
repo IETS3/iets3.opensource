@@ -743,5 +743,30 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2DbtJhuGjHx">
+    <property role="3GE5qa" value="suffix" />
+    <ref role="1M2myG" to="3lvb:2DbtJhuFzJ5" resolve="SuffixConvertOp" />
+    <node concept="9S07l" id="2DbtJhuGjHy" role="9Vyp8">
+      <node concept="3clFbS" id="2DbtJhuGjHz" role="2VODD2">
+        <node concept="3clFbF" id="2DbtJhuGjOS" role="3cqZAp">
+          <node concept="2OqwBi" id="2DbtJhuGkyX" role="3clFbG">
+            <node concept="1PxgMI" id="2DbtJhuGk4J" role="2Oq$k0">
+              <node concept="chp4Y" id="2DbtJhuGkcw" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="2DbtJhuGjOR" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="2DbtJhuGl6I" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="2DbtJhuGllI" role="37wK5m">
+                <ref role="35c_gD" to="3lvb:2DbtJhuzo2r" resolve="SuffixType" />
+              </node>
+              <node concept="3clFbT" id="2DbtJhuGmdz" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

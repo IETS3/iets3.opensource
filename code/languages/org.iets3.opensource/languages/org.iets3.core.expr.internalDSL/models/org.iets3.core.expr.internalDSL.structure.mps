@@ -659,5 +659,49 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2DbtJhuEvMx">
+    <property role="EcuMT" value="3047660364778568865" />
+    <property role="3GE5qa" value="suffix" />
+    <property role="TrG5h" value="SuffixConvertDecl" />
+    <property role="34LRSv" value="meta suffix convert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2DbtJhuEvMy" role="PzmwI">
+      <ref role="PrY4T" node="1opCYOr2AoG" resolve="IMetaDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2DbtJhuEvOj" role="PzmwI">
+      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
+    </node>
+    <node concept="1TJgyj" id="2DbtJhuEvM$" role="1TKVEi">
+      <property role="IQ2ns" value="3047660364778568868" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DbtJhuzo2r" resolve="SuffixType" />
+    </node>
+    <node concept="1TJgyj" id="2DbtJhuEvMA" role="1TKVEi">
+      <property role="IQ2ns" value="3047660364778568870" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DbtJhuzo2r" resolve="SuffixType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2DbtJhuFzJ5">
+    <property role="EcuMT" value="3047660364778847173" />
+    <property role="3GE5qa" value="suffix" />
+    <property role="TrG5h" value="SuffixConvertOp" />
+    <property role="34LRSv" value="to" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2DbtJhuFzJ8" role="1TKVEi">
+      <property role="IQ2ns" value="3047660364778847176" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DbtJhuzo2r" resolve="SuffixType" />
+    </node>
+    <node concept="PrWs8" id="2DbtJhuFzJ6" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 

@@ -133,6 +133,13 @@
       <concept id="3047660364776702107" name="org.iets3.core.expr.internalDSL.structure.SuffixType" flags="ng" index="1OLJpJ">
         <reference id="3047660364776702108" name="suffix" index="1OLJpC" />
       </concept>
+      <concept id="3047660364778568865" name="org.iets3.core.expr.internalDSL.structure.SuffixConvert" flags="ng" index="1OSCDl">
+        <child id="3047660364778568868" name="from" index="1OSCDg" />
+        <child id="3047660364778568870" name="to" index="1OSCDi" />
+      </concept>
+      <concept id="3047660364778847173" name="org.iets3.core.expr.internalDSL.structure.SuffixConvertOp" flags="ng" index="1OTkOL">
+        <child id="3047660364778847176" name="targetType" index="1OTkOW" />
+      </concept>
       <concept id="3047660364778071993" name="org.iets3.core.expr.internalDSL.structure.SuffixRawOp" flags="ng" index="1OUh5d" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -2012,6 +2019,11 @@
       <property role="TrG5h" value="EUR" />
       <node concept="mLuIC" id="2DbtJhuvo3p" role="1OclXa" />
     </node>
+    <node concept="1OclXF" id="2DbtJhuFjpt" role="_iOnB">
+      <property role="TrG5h" value="USD" />
+      <node concept="mLuIC" id="2DbtJhuFjpu" role="1OclXa" />
+    </node>
+    <node concept="_ixoA" id="2DbtJhuFj9I" role="_iOnB" />
     <node concept="1LMJmX" id="2DbtJhuBPZb" role="_iOnB">
       <ref role="cVZp0" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
       <node concept="1OLJpJ" id="2DbtJhuBQ1Y" role="1LMJm2">
@@ -2055,6 +2067,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="2DbtJhuEvFl" role="_iOnB" />
     <node concept="1LMJmX" id="2DbtJhuCzFP" role="_iOnB">
       <ref role="cVZp0" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
       <node concept="1OLJpJ" id="2DbtJhuCzFQ" role="1LMJm2">
@@ -2092,6 +2105,29 @@
       </node>
     </node>
     <node concept="_ixoA" id="2DbtJhuBPWL" role="_iOnB" />
+    <node concept="1OSCDl" id="2DbtJhuFl2_" role="_iOnB">
+      <node concept="1OLJpJ" id="2DbtJhuFlal" role="1OSCDg">
+        <ref role="1OLJpC" node="2DbtJhuvbxc" resolve="EUR" />
+      </node>
+      <node concept="1OLJpJ" id="2DbtJhuFlaF" role="1OSCDi">
+        <ref role="1OLJpC" node="2DbtJhuFjpt" resolve="USD" />
+      </node>
+      <node concept="1v5h_X" id="2DbtJhuFmEu" role="1v5wSW">
+        <node concept="1v5heA" id="2DbtJhuFmEw" role="1v5heY">
+          <property role="TrG5h" value="from" />
+          <node concept="mLuIC" id="2DbtJhuFzeW" role="1v5hez" />
+        </node>
+        <node concept="30dDTi" id="2DbtJhuFzgy" role="1v5heX">
+          <node concept="30bXRB" id="2DbtJhuFzgI" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="1vwrg0" id="2DbtJhuFzg3" role="30dEsF">
+            <ref role="1vwrg3" node="2DbtJhuFmEw" resolve="from" />
+          </node>
+        </node>
+        <node concept="mLuIC" id="2DbtJhuFzeV" role="1v5isi" />
+      </node>
+    </node>
     <node concept="_ixoA" id="2DbtJhuBPXb" role="_iOnB" />
     <node concept="2zPypq" id="2DbtJhuwED4" role="_iOnB">
       <property role="TrG5h" value="x" />
@@ -2197,6 +2233,25 @@
         </node>
         <node concept="_emDc" id="2DbtJhuDRKv" role="_fkuS">
           <ref role="_emDf" node="2DbtJhu_cOU" resolve="n" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2DbtJhuGgQG" role="_fkp5">
+        <node concept="_fku$" id="2DbtJhuGgQH" role="_fkur" />
+        <node concept="1QScDb" id="2DbtJhuGgRu" role="_fkuY">
+          <node concept="1OTkOL" id="2DbtJhuGgY$" role="1QScD9">
+            <node concept="1OLJpJ" id="2DbtJhuGh5_" role="1OTkOW">
+              <ref role="1OLJpC" node="2DbtJhuFjpt" resolve="USD" />
+            </node>
+          </node>
+          <node concept="_emDc" id="2DbtJhuGgRl" role="30czhm">
+            <ref role="_emDf" node="2DbtJhuwED4" resolve="x" />
+          </node>
+        </node>
+        <node concept="1OdbdM" id="2DbtJhuGhft" role="_fkuS">
+          <ref role="1Odbdd" node="2DbtJhuFjpt" resolve="USD" />
+          <node concept="30bXRB" id="2DbtJhuGhfu" role="1Odbds">
+            <property role="30bXRw" value="20" />
+          </node>
         </node>
       </node>
     </node>
