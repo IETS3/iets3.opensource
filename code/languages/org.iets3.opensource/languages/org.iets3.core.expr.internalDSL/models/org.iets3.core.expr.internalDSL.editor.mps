@@ -44,6 +44,9 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -381,7 +384,7 @@
     <node concept="3EZMnI" id="65YflFc$DKO" role="6VMZX">
       <node concept="2iRfu4" id="65YflFc$DKP" role="2iSdaV" />
       <node concept="3F0ifn" id="65YflFc$DA6" role="3EZMnx">
-        <property role="3F0ifm" value="help text" />
+        <property role="3F0ifm" value="tooltip text" />
       </node>
       <node concept="3F0A7n" id="65YflFc$Eea" role="3EZMnx">
         <ref role="1NtTu8" to="3lvb:65YflFc$DVD" resolve="helpText" />
@@ -535,6 +538,9 @@
             <node concept="3F0A7n" id="65YflFcA4rv" role="1j7Clw">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <node concept="Vb9p2" id="65YflFcAW28" role="3F10Kt">
+                <property role="Vbekb" value="BOLD" />
+              </node>
             </node>
           </node>
         </node>
@@ -663,7 +669,7 @@
   </node>
   <node concept="24kQdi" id="65YflFcyAEb">
     <property role="3GE5qa" value="quote" />
-    <ref role="1XX52x" to="3lvb:65YflFcyADJ" resolve="Eval" />
+    <ref role="1XX52x" to="3lvb:65YflFcyADJ" resolve="EvalExpr" />
     <node concept="3EZMnI" id="65YflFcyAEg" role="2wV5jI">
       <node concept="2iRfu4" id="65YflFcyAEh" role="2iSdaV" />
       <node concept="3F0ifn" id="65YflFcyAEd" role="3EZMnx">
