@@ -68,13 +68,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
-      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -777,25 +773,13 @@
     <ref role="1XX52x" to="3lvb:1opCYOr458A" resolve="SentenceInitialCallExpr" />
     <node concept="3EZMnI" id="35L3xFtHTd4" role="2wV5jI">
       <node concept="2iRfu4" id="35L3xFtHTd5" role="2iSdaV" />
-      <node concept="3F0ifn" id="35L3xFtHTdd" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-        <node concept="11LMrY" id="35L3xFtIJ6H" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="35L3xFtInGe" role="3F10Kt">
-          <property role="Vb096" value="gray" />
-        </node>
-      </node>
       <node concept="PMmxH" id="1opCYOr8dkq" role="3EZMnx">
         <ref role="PMmxG" node="1opCYOr8d4Q" resolve="callEditor" />
       </node>
-      <node concept="3F0ifn" id="12xzPjeIRyc" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-        <node concept="11L4FC" id="12xzPjeIRyd" role="3F10Kt">
+      <node concept="3F0ifn" id="2DbtJhuqMk7" role="3EZMnx">
+        <property role="3F0ifm" value="\" />
+        <node concept="11L4FC" id="2DbtJhuqMko" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="12xzPjeIRye" role="3F10Kt">
-          <property role="Vb096" value="gray" />
         </node>
       </node>
     </node>
