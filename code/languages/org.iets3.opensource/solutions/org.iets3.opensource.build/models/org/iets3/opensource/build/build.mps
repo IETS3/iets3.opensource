@@ -3182,11 +3182,6 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1opCYOr1Iar" role="3bR37C">
-          <node concept="3bR9La" id="1opCYOr1Ias" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1opCYOr1Iat" role="3bR37C">
           <node concept="3bR9La" id="1opCYOr1Iau" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
@@ -3202,11 +3197,6 @@
             <ref role="1Busuk" node="3iESbJs02VW" resolve="org.iets3.core.expr.metafunction" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1opCYOr1Icn" role="3bR37C">
-          <node concept="3bR9La" id="1opCYOr1Ico" role="1SiIV1">
-            <ref role="3bR37D" node="1opCYOr1HDp" resolve="org.iets3.core.expr.internalDSL" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="12xzPjejJ3V" role="3bR37C">
           <node concept="3bR9La" id="12xzPjejJ3W" role="1SiIV1">
             <ref role="3bR37D" to="al5i:2jlBy7bQp6P" resolve="com.mbeddr.mpsutil.treenotation.runtime" />
@@ -3217,14 +3207,19 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="12xzPjejJ3Z" role="3bR37C">
-          <node concept="3bR9La" id="12xzPjejJ40" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:7dbZP3ALmjO" resolve="com.mbeddr.mpsutil.editingGuide.execution.lang" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="12xzPjejJ41" role="3bR37C">
           <node concept="3bR9La" id="12xzPjejJ42" role="1SiIV1">
             <ref role="3bR37D" to="al5i:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="12xzPjekPx1" role="3bR37C">
+          <node concept="3bR9La" id="12xzPjekPx2" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="12xzPjekPx3" role="3bR37C">
+          <node concept="3bR9La" id="12xzPjekPx4" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRRB" resolve="org.iets3.core.base" />
           </node>
         </node>
       </node>
