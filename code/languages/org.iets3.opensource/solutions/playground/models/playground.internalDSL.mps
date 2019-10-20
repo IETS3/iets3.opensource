@@ -43,6 +43,7 @@
       <concept id="1592484182008812071" name="org.iets3.core.expr.internalDSL.structure.SentenceSemantics" flags="ng" index="d2v7a" />
       <concept id="1592484182008812070" name="org.iets3.core.expr.internalDSL.structure.SentenceInitialCallExpr" flags="ng" index="d2v7b" />
       <concept id="1592484182008304926" name="org.iets3.core.expr.internalDSL.structure.SentencePart" flags="ng" index="d4jrN">
+        <property id="7025119928933064425" name="helpText" index="2HVaeN" />
         <child id="1592484182008812074" name="resultType" index="d2v77" />
         <child id="1592484182008305061" name="nextparts" index="d4jp8" />
         <child id="1592484182008304929" name="argType" index="d4jrc" />
@@ -786,6 +787,7 @@
     <node concept="d4jrQ" id="65YflFczF6L" role="_iOnB">
       <node concept="d4jrN" id="65YflFczF6M" role="d4jql">
         <property role="TrG5h" value="wenn" />
+        <property role="2HVaeN" value="die Bedingung" />
         <node concept="2vmvy5" id="65YflFczF6N" role="d4jrc" />
         <node concept="d4jrN" id="65YflFczF6O" role="d4jp8">
           <property role="TrG5h" value="dann" />
