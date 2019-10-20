@@ -204,6 +204,9 @@
         <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
+      <concept id="5934114435582125873" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorInline" flags="ng" index="3vetai">
+        <child id="5934114435582660673" name="expression" index="3vdyny" />
+      </concept>
       <concept id="6663324787724559041" name="com.mbeddr.mpsutil.interpreter.structure.AbstractInterpreterRelationship" flags="ng" index="1J641m">
         <reference id="6663324787724987489" name="target" index="1J7WVQ" />
       </concept>
@@ -324,6 +327,30 @@
     </node>
     <node concept="1J7WVO" id="3nGzaxUr3fU" role="1J4apk">
       <ref role="1J7WVQ" to="km5y:uGVYUiiVGW" resolve="ExprSimpleTypesInterpreter" />
+    </node>
+    <node concept="qq9P1" id="2DbtJhuDHJv" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="3lvb:2DbtJhuCAuT" resolve="SuffixRawOp" />
+      <node concept="3vetai" id="2DbtJhuDJti" role="3vQZUl">
+        <node concept="3EllGN" id="2DbtJhuDJtw" role="3vdyny">
+          <node concept="2OqwBi" id="2DbtJhuDJtx" role="3ElVtu">
+            <node concept="oxGPV" id="2DbtJhuDJty" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2DbtJhuDJtz" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+            </node>
+          </node>
+          <node concept="TvHiN" id="2DbtJhuDJt$" role="3ElQJh" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="2DbtJhu$k0I" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="3lvb:2DbtJhuvWm6" resolve="SuffixExpr" />
+      <node concept="3vetai" id="2DbtJhu$lLy" role="3vQZUl">
+        <node concept="rqRoa" id="2DbtJhu$lLK" role="3vdyny">
+          <ref role="rqRob" to="3lvb:2DbtJhuvWmC" resolve="baseValue" />
+        </node>
+      </node>
     </node>
     <node concept="qq9P1" id="65YflFczvTQ" role="qq9xR">
       <property role="2TnfIJ" value="true" />
