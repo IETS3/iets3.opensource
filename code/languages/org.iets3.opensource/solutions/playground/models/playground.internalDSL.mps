@@ -1030,6 +1030,90 @@
       </node>
     </node>
     <node concept="_ixoA" id="7LiXavRaW3Q" role="_iOnB" />
+    <node concept="d4jrQ" id="12xzPjevD98" role="_iOnB">
+      <node concept="d4jrN" id="12xzPjevDo6" role="d4jql">
+        <property role="TrG5h" value="makeVector" />
+        <node concept="d4jrN" id="12xzPjevDCe" role="d4jp8">
+          <property role="TrG5h" value="x" />
+          <node concept="mLuIC" id="12xzPjevDCp" role="d4jrc" />
+          <node concept="d4jrN" id="12xzPjevE88" role="d4jp8">
+            <property role="TrG5h" value="y" />
+            <node concept="mLuIC" id="12xzPjevE8j" role="d4jrc" />
+            <node concept="d4jrN" id="12xzPjevEoj" role="d4jp8">
+              <property role="TrG5h" value="z" />
+              <node concept="mLuIC" id="12xzPjevEou" role="d4jrc" />
+              <node concept="2Ss9cW" id="12xzPjevEoI" role="d2v77">
+                <ref role="2Ss9cX" node="7LiXavRaW3J" resolve="Vector3" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="d2v7a" id="12xzPjevD9c" role="3GNvUi">
+        <node concept="1v5h_X" id="12xzPjevDn$" role="1v5wSW">
+          <node concept="1v5heA" id="12xzPjevDnB" role="1v5heY">
+            <property role="TrG5h" value="parts" />
+            <node concept="3iBYCm" id="12xzPjevDn_" role="1v5hez">
+              <node concept="3GNmq8" id="12xzPjevDnA" role="3iBWmK" />
+            </node>
+          </node>
+          <node concept="2S399m" id="12xzPjevEoW" role="1v5heX">
+            <node concept="2Ss9cW" id="12xzPjevEp7" role="2S399n">
+              <ref role="2Ss9cX" node="7LiXavRaW3J" resolve="Vector3" />
+            </node>
+            <node concept="1LgZZ2" id="12xzPjevFG9" role="2S399l">
+              <node concept="mLuIC" id="12xzPjevFHT" role="1LgZ0O" />
+              <node concept="1QScDb" id="12xzPjevEtA" role="1LgZ0V">
+                <node concept="3GGcKW" id="12xzPjevEvj" role="1QScD9" />
+                <node concept="1QScDb" id="12xzPjevEpS" role="30czhm">
+                  <node concept="3iAU3G" id="12xzPjevEr6" role="1QScD9">
+                    <node concept="30bXRB" id="12xzPjevEsf" role="3iAY4F">
+                      <property role="30bXRw" value="1" />
+                    </node>
+                  </node>
+                  <node concept="1vwrg0" id="12xzPjevEpx" role="30czhm">
+                    <ref role="1vwrg3" node="12xzPjevDnB" resolve="parts" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1LgZZ2" id="12xzPjevFId" role="2S399l">
+              <node concept="mLuIC" id="12xzPjevFIe" role="1LgZ0O" />
+              <node concept="1QScDb" id="12xzPjevFIf" role="1LgZ0V">
+                <node concept="3GGcKW" id="12xzPjevFIg" role="1QScD9" />
+                <node concept="1QScDb" id="12xzPjevFIh" role="30czhm">
+                  <node concept="3iAU3G" id="12xzPjevFIi" role="1QScD9">
+                    <node concept="30bXRB" id="12xzPjevFIj" role="3iAY4F">
+                      <property role="30bXRw" value="2" />
+                    </node>
+                  </node>
+                  <node concept="1vwrg0" id="12xzPjevFIk" role="30czhm">
+                    <ref role="1vwrg3" node="12xzPjevDnB" resolve="parts" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1LgZZ2" id="12xzPjevFIA" role="2S399l">
+              <node concept="mLuIC" id="12xzPjevFIB" role="1LgZ0O" />
+              <node concept="1QScDb" id="12xzPjevFIC" role="1LgZ0V">
+                <node concept="3GGcKW" id="12xzPjevFID" role="1QScD9" />
+                <node concept="1QScDb" id="12xzPjevFIE" role="30czhm">
+                  <node concept="3iAU3G" id="12xzPjevFIF" role="1QScD9">
+                    <node concept="30bXRB" id="12xzPjevFIG" role="3iAY4F">
+                      <property role="30bXRw" value="3" />
+                    </node>
+                  </node>
+                  <node concept="1vwrg0" id="12xzPjevFIH" role="30czhm">
+                    <ref role="1vwrg3" node="12xzPjevDnB" resolve="parts" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="12xzPjevCUN" role="_iOnB" />
     <node concept="2bsMFJ" id="7LiXavRaW3R" role="_iOnB">
       <property role="TrG5h" value="x" />
       <node concept="2Ss9cW" id="7LiXavRaW3S" role="2bsMFI">
@@ -1282,6 +1366,44 @@
                 <property role="19SUeA" value="TBD: fix CC for these" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="12xzPjewdUp" role="_fkp5">
+        <node concept="_fku$" id="12xzPjewdUq" role="_fkur" />
+        <node concept="d2v7b" id="12xzPjewe0g" role="_fkuY">
+          <ref role="d3NPy" node="12xzPjevDo6" resolve="makeVector" />
+          <node concept="d0CAb" id="12xzPjewe0l" role="d0CAf">
+            <ref role="d3NPy" node="12xzPjevDCe" resolve="x" />
+            <node concept="30bXRB" id="12xzPjewe0$" role="d0nuC">
+              <property role="30bXRw" value="10" />
+            </node>
+            <node concept="d0CAb" id="12xzPjewe0X" role="d0CAf">
+              <ref role="d3NPy" node="12xzPjevE88" resolve="y" />
+              <node concept="30bXRB" id="12xzPjewe1x" role="d0nuC">
+                <property role="30bXRw" value="20" />
+              </node>
+              <node concept="d0CAb" id="12xzPjewe2d" role="d0CAf">
+                <ref role="d3NPy" node="12xzPjevEoj" resolve="z" />
+                <node concept="30bXRB" id="12xzPjewe2M" role="d0nuC">
+                  <property role="30bXRw" value="30" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="12xzPjewe3g" role="_fkuS">
+          <node concept="2Ss9cW" id="12xzPjewe3k" role="2S399n">
+            <ref role="2Ss9cX" node="7LiXavRaW3J" resolve="Vector3" />
+          </node>
+          <node concept="30bXRB" id="12xzPjewe3B" role="2S399l">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="30bXRB" id="12xzPjewe4C" role="2S399l">
+            <property role="30bXRw" value="20" />
+          </node>
+          <node concept="30bXRB" id="12xzPjewe5L" role="2S399l">
+            <property role="30bXRw" value="30" />
           </node>
         </node>
       </node>
