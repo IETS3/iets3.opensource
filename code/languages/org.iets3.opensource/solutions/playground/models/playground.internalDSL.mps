@@ -60,6 +60,11 @@
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
+      <concept id="4931785860342338320" name="org.iets3.core.expr.collections.structure.FoldOp" flags="ng" index="1XzICc">
+        <child id="4931785860342371144" name="combiner" index="1YsmDk" />
+        <child id="4931785860342371141" name="seed" index="1YsmDp" />
+      </concept>
+      <concept id="4931785860342338319" name="org.iets3.core.expr.collections.structure.FoldLeftOp" flags="ng" index="1XzICj" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
       <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
@@ -108,6 +113,7 @@
       <concept id="1592484182008812070" name="org.iets3.core.expr.internalDSL.structure.SentenceInitialCallExpr" flags="ng" index="d2v7b" />
       <concept id="1592484182008304926" name="org.iets3.core.expr.internalDSL.structure.SentencePart" flags="ng" index="d4jrN">
         <property id="7025119928933064425" name="helpText" index="2HVaeN" />
+        <property id="6428043422049633960" name="multiple" index="XeJB7" />
         <child id="1592484182008812074" name="resultType" index="d2v77" />
         <child id="1592484182008305061" name="nextparts" index="d4jp8" />
         <child id="1592484182008304929" name="argType" index="d4jrc" />
@@ -365,6 +371,9 @@
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
+      <concept id="7554398283340370581" name="org.iets3.core.expr.lambda.structure.LambdaArgRef" flags="ng" index="3ix4Yz">
+        <reference id="7554398283340370582" name="arg" index="3ix4Yw" />
+      </concept>
       <concept id="7554398283340318470" name="org.iets3.core.expr.lambda.structure.LambdaExpression" flags="ng" index="3ix9CK">
         <child id="7554398283340319555" name="expression" index="3ix9pP" />
         <child id="7554398283340318471" name="args" index="3ix9CL" />
@@ -1134,14 +1143,127 @@
         </node>
       </node>
     </node>
+    <node concept="1aga60" id="5$OZQX$6LCK" role="_iOnB">
+      <property role="TrG5h" value="next" />
+      <node concept="1ahQXy" id="5$OZQX$6LWj" role="1ahQWs">
+        <property role="TrG5h" value="p" />
+        <node concept="2Ss9cW" id="5$OZQX$6LW_" role="3ix9CU">
+          <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="5$OZQX$6LWH" role="1ahQWs">
+        <property role="TrG5h" value="c" />
+        <node concept="5mh7t" id="5$OZQX$6LX4" role="3ix9CU">
+          <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
+        </node>
+      </node>
+      <node concept="1QScDb" id="5$OZQX$6LXc" role="1ahQXP">
+        <node concept="3vStjw" id="5$OZQX$6LXd" role="1QScD9">
+          <node concept="3vStjd" id="5$OZQX$6LXe" role="3vSgwc">
+            <ref role="3vStjc" node="5$OZQX$3l0F" resolve="state" />
+            <node concept="1fMURV" id="5$OZQX$6LXf" role="3vStj2">
+              <node concept="1fLkTo" id="5$OZQX$6LXg" role="1vMDkh">
+                <node concept="1fLbrf" id="5$OZQX$6LXh" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LX$" />
+                  <node concept="5mhuz" id="5$OZQX$6LXi" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXj" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXA" />
+                  <node concept="5mhuz" id="5$OZQX$6LXk" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXl" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXC" resolve="res" />
+                  <node concept="5mhuz" id="5$OZQX$6LXm" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fLkTo" id="5$OZQX$6LXn" role="1vMDkh">
+                <node concept="1fLbrf" id="5$OZQX$6LXo" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LX$" />
+                  <node concept="5mhuz" id="5$OZQX$6LXp" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXq" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXA" />
+                  <node concept="5mhuz" id="5$OZQX$6LXr" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXs" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXC" resolve="res" />
+                  <node concept="5mhuz" id="5$OZQX$6LXt" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fLkTo" id="5$OZQX$6LXu" role="1vMDkh">
+                <node concept="1fLbrf" id="5$OZQX$6LXv" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LX$" />
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXw" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXA" />
+                  <node concept="5mhuz" id="5$OZQX$6LXx" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3jkr" resolve="PLUG" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="5$OZQX$6LXy" role="1fLbpX">
+                  <ref role="1fLbst" node="5$OZQX$6LXC" resolve="res" />
+                  <node concept="5mhuz" id="5$OZQX$6LXz" role="1fLbpZ">
+                    <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fMUR7" id="5$OZQX$6LX$" role="1vMDcl">
+                <node concept="1ooT$K" id="5$OZQX$6LX_" role="1fMUOQ" />
+              </node>
+              <node concept="1fMUR7" id="5$OZQX$6LXA" role="1vMDcl">
+                <node concept="1afdae" id="5$OZQX$6M4v" role="1fMUOQ">
+                  <ref role="1afue_" node="5$OZQX$6LWH" resolve="c" />
+                </node>
+              </node>
+              <node concept="1fMUOM" id="5$OZQX$6LXC" role="1vMDcl">
+                <property role="TrG5h" value="res" />
+                <node concept="5mh7t" id="5$OZQX$6LXD" role="1fMUOZ">
+                  <ref role="5mh6l" node="5$OZQX$3rJu" resolve="State" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1afdae" id="5$OZQX$6M0_" role="30czhm">
+          <ref role="1afue_" node="5$OZQX$6LWj" resolve="p" />
+        </node>
+      </node>
+      <node concept="2Ss9cW" id="5$OZQX$9ope" role="2zM23F">
+        <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+      </node>
+    </node>
     <node concept="d4jrQ" id="5$OZQX$3k9a" role="_iOnB">
       <node concept="d4jrN" id="5$OZQX$3kpb" role="d4jql">
         <property role="TrG5h" value="with" />
         <node concept="2Ss9cW" id="5$OZQX$3kpv" role="d4jrc">
           <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
         </node>
+        <node concept="d4jrN" id="5$OZQX$6Lhf" role="d4jp8">
+          <property role="TrG5h" value="switchAll" />
+          <node concept="3iBYCm" id="5$OZQX$6Li8" role="d4jrc">
+            <node concept="5mh7t" id="5$OZQX$6Liq" role="3iBWmK">
+              <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
+            </node>
+          </node>
+          <node concept="2Ss9cW" id="5$OZQX$6Llm" role="d2v77">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+        </node>
         <node concept="d4jrN" id="5$OZQX$3kZQ" role="d4jp8">
           <property role="TrG5h" value="switch" />
+          <property role="XeJB7" value="true" />
           <node concept="5mh7t" id="5$OZQX$3l01" role="d4jrc">
             <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
           </node>
@@ -1158,136 +1280,122 @@
               <node concept="3GNmq8" id="5$OZQX$3koF" role="3iBWmK" />
             </node>
           </node>
-          <node concept="1aduha" id="5$OZQX$3l0s" role="1v5heX">
-            <node concept="1adJid" id="5$OZQX$3qt0" role="1aduh9">
+          <node concept="1aduha" id="5$OZQX$6MJV" role="1v5heX">
+            <node concept="1adJid" id="5$OZQX$6MRu" role="1aduh9">
               <property role="TrG5h" value="player" />
-              <node concept="1LgZZ2" id="5$OZQX$3qt1" role="1adJii">
-                <node concept="2Ss9cW" id="5$OZQX$3qt2" role="1LgZ0O">
+              <node concept="1LgZZ2" id="5$OZQX$6MRv" role="1adJii">
+                <node concept="2Ss9cW" id="5$OZQX$6MRw" role="1LgZ0O">
                   <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
                 </node>
-                <node concept="1QScDb" id="5$OZQX$3qt3" role="1LgZ0V">
-                  <node concept="3GGcKW" id="5$OZQX$3qt4" role="1QScD9" />
-                  <node concept="1QScDb" id="5$OZQX$3qt5" role="30czhm">
-                    <node concept="3iAU3G" id="5$OZQX$3qt6" role="1QScD9">
-                      <node concept="30bXRB" id="5$OZQX$3qt7" role="3iAY4F">
+                <node concept="1QScDb" id="5$OZQX$6MRx" role="1LgZ0V">
+                  <node concept="3GGcKW" id="5$OZQX$6MRy" role="1QScD9" />
+                  <node concept="1QScDb" id="5$OZQX$6MRz" role="30czhm">
+                    <node concept="3iAU3G" id="5$OZQX$6MR$" role="1QScD9">
+                      <node concept="30bXRB" id="5$OZQX$6MR_" role="3iAY4F">
                         <property role="30bXRw" value="0" />
                       </node>
                     </node>
-                    <node concept="1vwrg0" id="5$OZQX$3qt8" role="30czhm">
+                    <node concept="1vwrg0" id="5$OZQX$6MRA" role="30czhm">
                       <ref role="1vwrg3" node="5$OZQX$3koG" resolve="parts" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1adJid" id="5$OZQX$3qPb" role="1aduh9">
+            <node concept="1adJid" id="5$OZQX$6OdH" role="1aduh9">
               <property role="TrG5h" value="cmd" />
-              <node concept="1LgZZ2" id="5$OZQX$3qPc" role="1adJii">
-                <node concept="5mh7t" id="5$OZQX$3r57" role="1LgZ0O">
-                  <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
-                </node>
-                <node concept="1QScDb" id="5$OZQX$3qPe" role="1LgZ0V">
-                  <node concept="3GGcKW" id="5$OZQX$3qPf" role="1QScD9" />
-                  <node concept="1QScDb" id="5$OZQX$3qPg" role="30czhm">
-                    <node concept="3iAU3G" id="5$OZQX$3qPh" role="1QScD9">
-                      <node concept="30bXRB" id="5$OZQX$3qPi" role="3iAY4F">
-                        <property role="30bXRw" value="1" />
-                      </node>
-                    </node>
-                    <node concept="1vwrg0" id="5$OZQX$3qPj" role="30czhm">
-                      <ref role="1vwrg3" node="5$OZQX$3koG" resolve="parts" />
-                    </node>
+              <node concept="1QScDb" id="5$OZQX$6OdI" role="1adJii">
+                <node concept="3iAU3G" id="5$OZQX$6OdJ" role="1QScD9">
+                  <node concept="30bXRB" id="5$OZQX$6OdK" role="3iAY4F">
+                    <property role="30bXRw" value="1" />
                   </node>
+                </node>
+                <node concept="1vwrg0" id="5$OZQX$6OdL" role="30czhm">
+                  <ref role="1vwrg3" node="5$OZQX$3koG" resolve="parts" />
                 </node>
               </node>
             </node>
-            <node concept="1QScDb" id="5$OZQX$3nE4" role="1aduh9">
-              <node concept="3vStjw" id="5$OZQX$3nG3" role="1QScD9">
-                <node concept="3vStjd" id="5$OZQX$3nHC" role="3vSgwc">
-                  <ref role="3vStjc" node="5$OZQX$3l0F" resolve="state" />
-                  <node concept="1fMURV" id="5$OZQX$3nZ4" role="3vStj2">
-                    <node concept="1fLkTo" id="5$OZQX$3trG" role="1vMDkh">
-                      <node concept="1fLbrf" id="5$OZQX$3tx3" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ5" />
-                        <node concept="5mhuz" id="5$OZQX$3tx2" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
-                        </node>
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3txf" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ6" />
-                        <node concept="5mhuz" id="5$OZQX$3tYN" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
-                        </node>
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3tyT" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3q4k" resolve="res" />
-                        <node concept="5mhuz" id="5$OZQX$3tyS" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
-                        </node>
-                      </node>
+            <node concept="2fGnzi" id="5$OZQX$6O3I" role="1aduh9">
+              <property role="0Rz4W" value="-714130982" />
+              <node concept="2fGnzd" id="5$OZQX$6O3J" role="2fGnxs">
+                <node concept="1QScDb" id="5$OZQX$6NQ7" role="2fGnzS">
+                  <node concept="3GHfjz" id="5$OZQX$6NWx" role="1QScD9">
+                    <ref role="3GHZqv" node="5$OZQX$3kZQ" resolve="switch" />
+                  </node>
+                  <node concept="1adzI2" id="5$OZQX$6OdM" role="30czhm">
+                    <ref role="1adwt6" node="5$OZQX$6OdH" resolve="cmd" />
+                  </node>
+                </node>
+                <node concept="1af_rf" id="5$OZQX$6OwW" role="2fGnzA">
+                  <ref role="1afhQb" node="5$OZQX$6LCK" resolve="next" />
+                  <node concept="1adzI2" id="5$OZQX$6OBr" role="1afhQ5">
+                    <ref role="1adwt6" node="5$OZQX$6MRu" resolve="player" />
+                  </node>
+                  <node concept="1LgZZ2" id="5$OZQX$6Qkf" role="1afhQ5">
+                    <node concept="5mh7t" id="5$OZQX$6QpR" role="1LgZ0O">
+                      <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
                     </node>
-                    <node concept="1fLkTo" id="5$OZQX$3sXw" role="1vMDkh">
-                      <node concept="1fLbrf" id="5$OZQX$3t2L" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ5" />
-                        <node concept="5mhuz" id="5$OZQX$3t2K" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
-                        </node>
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3u7T" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ6" />
-                        <node concept="5mhuz" id="5$OZQX$3u7S" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
-                        </node>
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3uaP" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3q4k" resolve="res" />
-                        <node concept="5mhuz" id="5$OZQX$3uaO" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1fLkTo" id="5$OZQX$3qdr" role="1vMDkh">
-                      <node concept="1fLbrf" id="5$OZQX$3qhF" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ5" />
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3qj7" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3nZ6" />
-                        <node concept="5mhuz" id="5$OZQX$3tQZ" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3jkr" resolve="PLUG" />
-                        </node>
-                      </node>
-                      <node concept="1fLbrf" id="5$OZQX$3qkE" role="1fLbpX">
-                        <ref role="1fLbst" node="5$OZQX$3q4k" resolve="res" />
-                        <node concept="5mhuz" id="5$OZQX$3tUT" role="1fLbpZ">
-                          <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1fMUR7" id="5$OZQX$3nZ5" role="1vMDcl">
-                      <node concept="1ooT$K" id="5$OZQX$3o6t" role="1fMUOQ" />
-                    </node>
-                    <node concept="1fMUR7" id="5$OZQX$3nZ6" role="1vMDcl">
-                      <node concept="1adzI2" id="5$OZQX$3rjo" role="1fMUOQ">
-                        <ref role="1adwt6" node="5$OZQX$3qPb" resolve="cmd" />
-                      </node>
-                    </node>
-                    <node concept="1fMUOM" id="5$OZQX$3q4k" role="1vMDcl">
-                      <property role="TrG5h" value="res" />
-                      <node concept="5mh7t" id="5$OZQX$3t6H" role="1fMUOZ">
-                        <ref role="5mh6l" node="5$OZQX$3rJu" resolve="State" />
+                    <node concept="1QScDb" id="5$OZQX$6ONE" role="1LgZ0V">
+                      <node concept="3GGcKW" id="5$OZQX$6OTi" role="1QScD9" />
+                      <node concept="1adzI2" id="5$OZQX$6OBC" role="30czhm">
+                        <ref role="1adwt6" node="5$OZQX$6OdH" resolve="cmd" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="1adzI2" id="5$OZQX$3qt9" role="30czhm">
-                <ref role="1adwt6" node="5$OZQX$3qt0" resolve="player" />
+              <node concept="2fGnzd" id="5$OZQX$6O3K" role="2fGnxs">
+                <node concept="2fHqz8" id="5$OZQX$6Qvq" role="2fGnzS" />
+                <node concept="1QScDb" id="5$OZQX$6Ri0" role="2fGnzA">
+                  <node concept="1XzICj" id="5$OZQX$6RoT" role="1QScD9">
+                    <node concept="3ix9CK" id="5$OZQX$6RoU" role="1YsmDk">
+                      <node concept="3ix9CS" id="5$OZQX$6RoV" role="3ix9CL">
+                        <property role="TrG5h" value="seed" />
+                        <node concept="2Ss9cW" id="5$OZQX$7xtm" role="3ix9CU">
+                          <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+                        </node>
+                      </node>
+                      <node concept="3ix9CS" id="5$OZQX$6RoW" role="3ix9CL">
+                        <property role="TrG5h" value="current" />
+                        <node concept="5mh7t" id="5$OZQX$9pBG" role="3ix9CU">
+                          <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
+                        </node>
+                      </node>
+                      <node concept="1af_rf" id="5$OZQX$9rIu" role="3ix9pP">
+                        <ref role="1afhQb" node="5$OZQX$6LCK" resolve="next" />
+                        <node concept="1adzI2" id="5$OZQX$9sfM" role="1afhQ5">
+                          <ref role="1adwt6" node="5$OZQX$6MRu" resolve="player" />
+                        </node>
+                        <node concept="3ix4Yz" id="5$OZQX$9s_W" role="1afhQ5">
+                          <ref role="3ix4Yw" node="5$OZQX$6RoW" resolve="current" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1adzI2" id="5$OZQX$6RvZ" role="1YsmDp">
+                      <ref role="1adwt6" node="5$OZQX$6MRu" resolve="player" />
+                    </node>
+                  </node>
+                  <node concept="1LgZZ2" id="5$OZQX$9oVi" role="30czhm">
+                    <node concept="3iBYCm" id="5$OZQX$9p3B" role="1LgZ0O">
+                      <node concept="5mh7t" id="5$OZQX$9pcn" role="3iBWmK">
+                        <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
+                      </node>
+                    </node>
+                    <node concept="1QScDb" id="5$OZQX$9plN" role="1LgZ0V">
+                      <node concept="3GGcKW" id="5$OZQX$9puO" role="1QScD9" />
+                      <node concept="1adzI2" id="5$OZQX$9oyj" role="30czhm">
+                        <ref role="1adwt6" node="5$OZQX$6OdH" resolve="cmd" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="5$OZQX$9tsF" role="_iOnB" />
     <node concept="_ixoA" id="5$OZQX$3jQH" role="_iOnB" />
     <node concept="2zPypq" id="5$OZQX$3ubc" role="_iOnB">
       <property role="TrG5h" value="p" />
@@ -1304,27 +1412,15 @@
       <property role="TrG5h" value="PlayerTests" />
       <node concept="_fkuZ" id="5$OZQX$3v9h" role="_fkp5">
         <node concept="_fku$" id="5$OZQX$3v9i" role="_fkur" />
-        <node concept="ULlqQ" id="5$OZQX$3vPk" role="_fkuY">
-          <node concept="d2v7b" id="5$OZQX$3vPm" role="ULlqo">
-            <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
-            <node concept="UKoaq" id="5$OZQX$3vS4" role="d0nuC" />
-            <node concept="d0CAb" id="5$OZQX$3vSG" role="d0CAf">
-              <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
-              <node concept="5mhuz" id="5$OZQX$3vTw" role="d0nuC">
-                <ref role="5mhpJ" node="5$OZQX$3jkr" resolve="PLUG" />
-              </node>
-            </node>
+        <node concept="d2v7b" id="5$OZQX$3v9w" role="_fkuY">
+          <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+          <node concept="_emDc" id="5$OZQX$3v9J" role="d0nuC">
+            <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
           </node>
-          <node concept="d2v7b" id="5$OZQX$3v9w" role="ULlqq">
-            <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
-            <node concept="_emDc" id="5$OZQX$3v9J" role="d0nuC">
-              <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
-            </node>
-            <node concept="d0CAb" id="5$OZQX$3v9U" role="d0CAf">
-              <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
-              <node concept="5mhuz" id="5$OZQX$3vat" role="d0nuC">
-                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
-              </node>
+          <node concept="d0CAb" id="5$OZQX$3v9U" role="d0CAf">
+            <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
+            <node concept="5mhuz" id="5$OZQX$3vat" role="d0nuC">
+              <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
             </node>
           </node>
         </node>
@@ -1332,8 +1428,130 @@
           <node concept="2Ss9cW" id="5$OZQX$3veT" role="2S399n">
             <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
           </node>
-          <node concept="5mhuz" id="5$OZQX$3vW1" role="2S399l">
+          <node concept="5mhuz" id="5$OZQX$7_Z7" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$7_ph" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$7_pi" role="_fkur" />
+        <node concept="ULlqQ" id="5$OZQX$7_pj" role="_fkuY">
+          <node concept="d2v7b" id="5$OZQX$7_pk" role="ULlqo">
+            <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+            <node concept="UKoaq" id="5$OZQX$7_pl" role="d0nuC" />
+            <node concept="d0CAb" id="5$OZQX$7_pm" role="d0CAf">
+              <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
+              <node concept="5mhuz" id="5$OZQX$7_pn" role="d0nuC">
+                <ref role="5mhpJ" node="5$OZQX$3jkr" resolve="PLUG" />
+              </node>
+            </node>
+          </node>
+          <node concept="d2v7b" id="5$OZQX$7_po" role="ULlqq">
+            <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+            <node concept="_emDc" id="5$OZQX$7_pp" role="d0nuC">
+              <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+            </node>
+            <node concept="d0CAb" id="5$OZQX$7_pq" role="d0CAf">
+              <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
+              <node concept="5mhuz" id="5$OZQX$7_pr" role="d0nuC">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$7_ps" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$7_pt" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$7_pu" role="2S399l">
             <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$7Ary" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$7Arz" role="_fkur" />
+        <node concept="d2v7b" id="5$OZQX$7ArD" role="_fkuY">
+          <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+          <node concept="_emDc" id="5$OZQX$7ArE" role="d0nuC">
+            <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+          </node>
+          <node concept="d0CAb" id="5$OZQX$7ArF" role="d0CAf">
+            <ref role="d3NPy" node="5$OZQX$6Lhf" resolve="switchAll" />
+            <node concept="3iBYfx" id="5$OZQX$7AAq" role="d0nuC">
+              <node concept="5mhuz" id="5$OZQX$7AJj" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$9qBX" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$7ArH" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$7ArI" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$7ArJ" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$9r4r" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$9r4s" role="_fkur" />
+        <node concept="d2v7b" id="5$OZQX$9r4t" role="_fkuY">
+          <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+          <node concept="_emDc" id="5$OZQX$9r4u" role="d0nuC">
+            <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+          </node>
+          <node concept="d0CAb" id="5$OZQX$9r4v" role="d0CAf">
+            <ref role="d3NPy" node="5$OZQX$6Lhf" resolve="switchAll" />
+            <node concept="3iBYfx" id="5$OZQX$9r4w" role="d0nuC">
+              <node concept="5mhuz" id="5$OZQX$9r4x" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$9r9C" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkr" resolve="PLUG" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$9r4z" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$9r4$" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$9r4_" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$9rap" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$9raq" role="_fkur" />
+        <node concept="d2v7b" id="5$OZQX$9rar" role="_fkuY">
+          <ref role="d3NPy" node="5$OZQX$3kpb" resolve="with" />
+          <node concept="_emDc" id="5$OZQX$9ras" role="d0nuC">
+            <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+          </node>
+          <node concept="d0CAb" id="5$OZQX$9rat" role="d0CAf">
+            <ref role="d3NPy" node="5$OZQX$6Lhf" resolve="switchAll" />
+            <node concept="3iBYfx" id="5$OZQX$9rau" role="d0nuC">
+              <node concept="5mhuz" id="5$OZQX$9rav" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$9rfr" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$9rfv" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="TOGGLE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$9rax" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$9ray" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$9rgo" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
           </node>
         </node>
       </node>
