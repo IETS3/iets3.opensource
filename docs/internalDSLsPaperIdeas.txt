@@ -1,0 +1,48 @@
+Internal DSLs with Full IDE support
+
+CC, coloring, custom type checks / errors, scopes, and debugger
+
+internal dsl build by writing code in HL, usually by using
+reflection facilities, relying on syntactic degrees of freedom
+(leaving dots and parens away)
+Resulting lang then also usually embedded inHL
+
+extremer case:
+  defining syntactic forms in Lisp
+  and embedding grammars as in Laurent tratt's thingy
+
+usually in dyn lang => no static tool support anyway
+but also in scala using type meta prog
+
+Sophisticated built-in means for defining DSLs makes the HL 
+more complex. Scala. You don't want that.
+
+IDE is separate does not know about the extensions
+exception: smalltalk, where the IDE MOP-inspects the program
+
+you can build static IDE support, but you'd do it "again"
+externally, in the IDE, implicitly knowing the lang def. 
+Hard, especially when mixed with HL
+
+problem: to get tool support for internally defined DSLs 
+- IDE needs access to DSL def
+- and the definitions must be "declarative" enough to be useful for the IDE
+
+approach: two levels
+* extend GPL statically/externally with means for defining specific 
+  kinds of internal DSLs. Identify these kinds explicitly. Finite.
+* Users then use these extensions to define "isntances" of the kind
+
+Pros:
+* b/c the static extensions can be chosen arbitrarily, you can make them "declaative"
+  so you get full tool support
+* the defining extensions are modular, and hence also extensible
+* host GPL needs no support for internal DSLs -> simpler
+* can be done with any host lang (C example?)
+
+Cons:
+* you need the static extension capability: here, MPS. ONly works in MPS
+  But that's just like Smalltalk ....
+  
+
+
