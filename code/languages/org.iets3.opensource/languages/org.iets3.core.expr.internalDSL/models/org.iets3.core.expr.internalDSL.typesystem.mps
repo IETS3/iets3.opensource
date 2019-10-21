@@ -221,6 +221,7 @@
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -926,6 +927,53 @@
     <property role="TrG5h" value="check_SentenceInitialCallExpr" />
     <property role="3GE5qa" value="sentence.call" />
     <node concept="3clFbS" id="1opCYOr7JNh" role="18ibNy">
+      <node concept="3clFbJ" id="5$OZQX$gevD" role="3cqZAp">
+        <node concept="3clFbS" id="5$OZQX$gevF" role="3clFbx">
+          <node concept="3clFbJ" id="5$OZQX$gpNU" role="3cqZAp">
+            <node concept="3clFbS" id="5$OZQX$gpNW" role="3clFbx">
+              <node concept="2MkqsV" id="5$OZQX$gtng" role="3cqZAp">
+                <node concept="Xl_RD" id="5$OZQX$gtny" role="2MkJ7o">
+                  <property role="Xl_RC" value="cannot be used here; no ‘implicit' context" />
+                </node>
+                <node concept="1YBJjd" id="5$OZQX$gtoG" role="2OEOjV">
+                  <ref role="1YBMHb" node="1opCYOr7JNj" resolve="sic" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="5$OZQX$gsJJ" role="3clFbw">
+              <node concept="2OqwBi" id="5$OZQX$gsJL" role="3fr31v">
+                <node concept="2OqwBi" id="5$OZQX$gsJM" role="2Oq$k0">
+                  <node concept="1YBJjd" id="5$OZQX$gsJN" role="2Oq$k0">
+                    <ref role="1YBMHb" node="1opCYOr7JNj" resolve="sic" />
+                  </node>
+                  <node concept="1mfA1w" id="5$OZQX$gsJO" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="5$OZQX$gsJP" role="2OqNvi">
+                  <node concept="chp4Y" id="5$OZQX$gsJQ" role="cj9EA">
+                    <ref role="cht4Q" to="3lvb:5$OZQX$gdla" resolve="IImplicitContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="5$OZQX$gp3$" role="3clFbw">
+          <node concept="10Nm6u" id="5$OZQX$gpET" role="3uHU7w" />
+          <node concept="2OqwBi" id="5$OZQX$gmkX" role="3uHU7B">
+            <node concept="2OqwBi" id="5$OZQX$gl1F" role="2Oq$k0">
+              <node concept="1YBJjd" id="5$OZQX$gku8" role="2Oq$k0">
+                <ref role="1YBMHb" node="1opCYOr7JNj" resolve="sic" />
+              </node>
+              <node concept="2qgKlT" id="5$OZQX$glTB" role="2OqNvi">
+                <ref role="37wK5l" to="ppli:12xzPje$H9i" resolve="sentence" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="5$OZQX$goky" role="2OqNvi">
+              <ref role="3Tt5mk" to="3lvb:5$OZQX$9A$v" resolve="implicitType" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3cpWs8" id="12xzPje$TFL" role="3cqZAp">
         <node concept="3cpWsn" id="12xzPje$TFM" role="3cpWs9">
           <property role="TrG5h" value="sem" />
