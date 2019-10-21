@@ -90,6 +90,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -225,6 +228,9 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -373,7 +379,7 @@
             <node concept="3cpWsn" id="1opCYOqZ$30" role="3cpWs9">
               <property role="TrG5h" value="binOpDefs" />
               <node concept="2I9FWS" id="1opCYOqZ$31" role="1tU5fm">
-                <ref role="2I9WkF" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+                <ref role="2I9WkF" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
               </node>
               <node concept="2OqwBi" id="1opCYOqZ$32" role="33vP2m">
                 <node concept="2OqwBi" id="1opCYOqZ$33" role="2Oq$k0">
@@ -381,7 +387,7 @@
                   <node concept="I4A8Y" id="1opCYOqZ$35" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="1opCYOqZ$36" role="2OqNvi">
-                  <ref role="1j9C0d" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+                  <ref role="1j9C0d" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
                 </node>
               </node>
             </node>
@@ -499,7 +505,7 @@
             <node concept="3cpWsn" id="1opCYOqYulL" role="3cpWs9">
               <property role="TrG5h" value="binOpDefs" />
               <node concept="2I9FWS" id="1opCYOqYulI" role="1tU5fm">
-                <ref role="2I9WkF" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+                <ref role="2I9WkF" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
               </node>
               <node concept="2OqwBi" id="1opCYOqYulM" role="33vP2m">
                 <node concept="2OqwBi" id="1opCYOqYulN" role="2Oq$k0">
@@ -507,7 +513,7 @@
                   <node concept="I4A8Y" id="1opCYOqYulP" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="1opCYOqYulQ" role="2OqNvi">
-                  <ref role="1j9C0d" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+                  <ref role="1j9C0d" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
                 </node>
               </node>
             </node>
@@ -569,8 +575,15 @@
               <node concept="3clFbJ" id="1opCYOqZ6qj" role="3cqZAp">
                 <node concept="3clFbS" id="1opCYOqZ6ql" role="3clFbx">
                   <node concept="3cpWs6" id="1opCYOqZxQi" role="3cqZAp">
-                    <node concept="3clFbT" id="1opCYOqZy9D" role="3cqZAk">
-                      <property role="3clFbU" value="true" />
+                    <node concept="3fqX7Q" id="2DbtJhuLGg1" role="3cqZAk">
+                      <node concept="2OqwBi" id="2DbtJhuLGg3" role="3fr31v">
+                        <node concept="2GrUjf" id="2DbtJhuLGg4" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1opCYOqYxvm" resolve="b" />
+                        </node>
+                        <node concept="3TrcHB" id="2DbtJhuLGg5" role="2OqNvi">
+                          <ref role="3TsBF5" to="3lvb:2DbtJhuJphO" resolve="noNewTypingRule" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

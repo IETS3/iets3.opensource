@@ -115,7 +115,8 @@
       </concept>
       <concept id="3562644288778823826" name="org.iets3.core.expr.internalDSL.structure.SentencePartCallType" flags="ng" index="3GNmq8" />
       <concept id="3059947596148503656" name="org.iets3.core.expr.internalDSL.structure.AnyType" flags="ng" index="1LMID8" />
-      <concept id="3059947596148501405" name="org.iets3.core.expr.internalDSL.structure.DefineBinOp" flags="ng" index="1LMJmX">
+      <concept id="3059947596148501405" name="org.iets3.core.expr.internalDSL.structure.OverloadBinOp" flags="ng" index="1LMJmX">
+        <property id="3047660364779852916" name="noNewTypingRule" index="1OXIa0" />
         <reference id="1592484182007109037" name="op" index="cVZp0" />
         <child id="1592484182007644266" name="resType" index="cTMe7" />
         <child id="3059947596148501410" name="leftType" index="1LMJm2" />
@@ -253,6 +254,8 @@
       </concept>
       <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
       <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8" />
+      <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
+      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="820361861852634100" name="org.iets3.core.expr.toplevel.structure.OldValueExpr" flags="ng" index="1ooT$K" />
       <concept id="1249392911699110134" name="org.iets3.core.expr.toplevel.structure.NewValueSetter" flags="ng" index="3vStjd">
         <reference id="1249392911699110135" name="member" index="3vStjc" />
@@ -313,6 +316,18 @@
       <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
         <child id="4790956042241053105" name="expr" index="1adJii" />
       </concept>
+      <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
+        <reference id="4790956042240460422" name="arg" index="1afue_" />
+      </concept>
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+        <reference id="4790956042240522408" name="function" index="1afhQb" />
+        <child id="4790956042240522406" name="args" index="1afhQ5" />
+      </concept>
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+        <child id="4790956042240100927" name="args" index="1ahQWs" />
+        <child id="4790956042240100950" name="body" index="1ahQXP" />
+      </concept>
+      <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
       <concept id="7554398283340318470" name="org.iets3.core.expr.lambda.structure.LambdaExpression" flags="ng" index="3ix9CK">
         <child id="7554398283340319555" name="expression" index="3ix9pP" />
         <child id="7554398283340318471" name="args" index="3ix9CL" />
@@ -2376,7 +2391,42 @@
       <node concept="mLuIC" id="2DbtJhuI_Qu" role="1OclXa" />
     </node>
     <node concept="_ixoA" id="2DbtJhuI_vh" role="_iOnB" />
+    <node concept="1aga60" id="2DbtJhuIEWI" role="_iOnB">
+      <property role="TrG5h" value="dateIsGreater" />
+      <node concept="30d7iD" id="2DbtJhuIFk4" role="1ahQXP">
+        <node concept="1QScDb" id="2DbtJhuIFy4" role="30dEs_">
+          <node concept="3o_JK" id="2DbtJhuIFDa" role="1QScD9">
+            <ref role="3o_JH" node="2DbtJhuIqHR" resolve="day" />
+          </node>
+          <node concept="1afdae" id="2DbtJhuIFr6" role="30czhm">
+            <ref role="1afue_" node="2DbtJhuIFa5" resolve="d2" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="2DbtJhuIFbH" role="30dEsF">
+          <node concept="3o_JK" id="2DbtJhuIFca" role="1QScD9">
+            <ref role="3o_JH" node="2DbtJhuIqHR" resolve="day" />
+          </node>
+          <node concept="1afdae" id="2DbtJhuIFbx" role="30czhm">
+            <ref role="1afue_" node="2DbtJhuIF9J" resolve="d1" />
+          </node>
+        </node>
+      </node>
+      <node concept="1ahQXy" id="2DbtJhuIF9J" role="1ahQWs">
+        <property role="TrG5h" value="d1" />
+        <node concept="2Ss9cW" id="2DbtJhuIFa1" role="3ix9CU">
+          <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="2DbtJhuIFa5" role="1ahQWs">
+        <property role="TrG5h" value="d2" />
+        <node concept="2Ss9cW" id="2DbtJhuIFaV" role="3ix9CU">
+          <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2DbtJhuIENj" role="_iOnB" />
     <node concept="1LMJmX" id="2DbtJhuIyN$" role="_iOnB">
+      <property role="1OXIa0" value="true" />
       <ref role="cVZp0" to="hm2y:4rZeNQ6MOYk" resolve="GreaterExpression" />
       <node concept="2Ss9cW" id="2DbtJhuIyQI" role="1LMJm2">
         <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
@@ -2399,22 +2449,13 @@
               <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
             </node>
           </node>
-          <node concept="30d7iD" id="2DbtJhuIzYg" role="1v5heX">
-            <node concept="1QScDb" id="2DbtJhuIyZT" role="30dEsF">
-              <node concept="3o_JK" id="2DbtJhuIz1m" role="1QScD9">
-                <ref role="3o_JH" node="2DbtJhuIqHR" resolve="day" />
-              </node>
-              <node concept="1vwrg0" id="2DbtJhuI$Sz" role="30czhm">
-                <ref role="1vwrg3" node="2DbtJhuIyQh" resolve="left" />
-              </node>
+          <node concept="1af_rf" id="2DbtJhuIFR0" role="1v5heX">
+            <ref role="1afhQb" node="2DbtJhuIEWI" resolve="dateIsGreater" />
+            <node concept="1vwrg0" id="2DbtJhuIGb0" role="1afhQ5">
+              <ref role="1vwrg3" node="2DbtJhuIyQh" resolve="left" />
             </node>
-            <node concept="1QScDb" id="2DbtJhuIzk4" role="30dEs_">
-              <node concept="3o_JK" id="2DbtJhuIzlA" role="1QScD9">
-                <ref role="3o_JH" node="2DbtJhuIqHR" resolve="day" />
-              </node>
-              <node concept="1vwrg0" id="2DbtJhuI$WQ" role="30czhm">
-                <ref role="1vwrg3" node="2DbtJhuIyQj" resolve="right" />
-              </node>
+            <node concept="1vwrg0" id="2DbtJhuIGhT" role="1afhQ5">
+              <ref role="1vwrg3" node="2DbtJhuIyQj" resolve="right" />
             </node>
           </node>
           <node concept="1LMID8" id="2DbtJhuIz0D" role="1v5isi" />
@@ -2423,6 +2464,7 @@
     </node>
     <node concept="_ixoA" id="2DbtJhuIA60" role="_iOnB" />
     <node concept="1LMJmX" id="2DbtJhuI_Xx" role="_iOnB">
+      <property role="1OXIa0" value="false" />
       <ref role="cVZp0" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
       <node concept="2Ss9cW" id="2DbtJhuI_Xy" role="1LMJm2">
         <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
@@ -2430,7 +2472,7 @@
       <node concept="1OLJpJ" id="2DbtJhuIAkg" role="1LMJm4">
         <ref role="1OLJpC" node="2DbtJhuI__i" resolve="day" />
       </node>
-      <node concept="2Ss9cW" id="2DbtJhuIAuH" role="cTMe7">
+      <node concept="2Ss9cW" id="2DbtJhuNRt8" role="cTMe7">
         <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
       </node>
       <node concept="1LMJnw" id="2DbtJhuI_X_" role="1LMJnD">
@@ -2471,7 +2513,45 @@
       </node>
     </node>
     <node concept="_ixoA" id="2DbtJhuICaj" role="_iOnB" />
+    <node concept="2bsMFJ" id="2DbtJhuIDNf" role="_iOnB">
+      <property role="TrG5h" value="laterThan" />
+      <node concept="2Ss9cW" id="2DbtJhuIE01" role="2bsMFI">
+        <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+      </node>
+      <node concept="2Ss9cW" id="2DbtJhuIEay" role="2bsMFH">
+        <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+      </node>
+      <node concept="2vmvy5" id="2DbtJhuIEjX" role="2bsMFG" />
+      <node concept="2bssp9" id="2DbtJhuIDNn" role="2bsMFF">
+        <node concept="1v5h_X" id="2DbtJhuIDZy" role="1v5wSW">
+          <node concept="1v5heA" id="2DbtJhuIDZ$" role="1v5heY">
+            <property role="TrG5h" value="left" />
+            <node concept="2Ss9cW" id="2DbtJhuIEuF" role="1v5hez">
+              <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+            </node>
+          </node>
+          <node concept="1v5heA" id="2DbtJhuIDZA" role="1v5heY">
+            <property role="TrG5h" value="right" />
+            <node concept="2Ss9cW" id="2DbtJhuIEuG" role="1v5hez">
+              <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
+            </node>
+          </node>
+          <node concept="1af_rf" id="2DbtJhuIGp7" role="1v5heX">
+            <ref role="1afhQb" node="2DbtJhuIEWI" resolve="dateIsGreater" />
+            <node concept="1vwrg0" id="2DbtJhuIGpE" role="1afhQ5">
+              <ref role="1vwrg3" node="2DbtJhuIDZ$" resolve="left" />
+            </node>
+            <node concept="1vwrg0" id="2DbtJhuIGC2" role="1afhQ5">
+              <ref role="1vwrg3" node="2DbtJhuIDZA" resolve="right" />
+            </node>
+          </node>
+          <node concept="2vmvy5" id="2DbtJhuIEuE" role="1v5isi" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2DbtJhuIDu9" role="_iOnB" />
     <node concept="1LMJmX" id="2DbtJhuIC1j" role="_iOnB">
+      <property role="1OXIa0" value="false" />
       <ref role="cVZp0" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
       <node concept="2Ss9cW" id="2DbtJhuIC1k" role="1LMJm2">
         <ref role="2Ss9cX" node="2DbtJhuIqHE" resolve="Date" />
@@ -2661,6 +2741,19 @@
           </node>
         </node>
         <node concept="2vmpnb" id="2DbtJhuIzxX" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="2DbtJhuIGYP" role="_fkp5">
+        <node concept="_fku$" id="2DbtJhuIGYQ" role="_fkur" />
+        <node concept="2vmpnb" id="2DbtJhuIGYU" role="_fkuS" />
+        <node concept="2btGW8" id="2DbtJhuIHrz" role="_fkuY">
+          <ref role="2btAru" node="2DbtJhuIDNf" resolve="laterThan" />
+          <node concept="_emDc" id="2DbtJhuIHAp" role="30dEsF">
+            <ref role="_emDf" node="2DbtJhuIyEJ" resolve="d2" />
+          </node>
+          <node concept="_emDc" id="2DbtJhuIHAO" role="30dEs_">
+            <ref role="_emDf" node="2DbtJhuIwL6" resolve="d1" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

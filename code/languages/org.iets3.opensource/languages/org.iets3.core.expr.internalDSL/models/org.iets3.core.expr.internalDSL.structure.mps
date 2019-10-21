@@ -60,7 +60,7 @@
   </registry>
   <node concept="1TIwiD" id="2DR7y1rJuIt">
     <property role="EcuMT" value="3059947596148501405" />
-    <property role="TrG5h" value="DefineBinOp" />
+    <property role="TrG5h" value="OverloadBinOp" />
     <property role="34LRSv" value="meta overload bin op" />
     <property role="3GE5qa" value="binop" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -101,6 +101,11 @@
       <property role="20kJfa" value="op" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="2DbtJhuJphO" role="1TKVEl">
+      <property role="IQ2nx" value="3047660364779852916" />
+      <property role="TrG5h" value="noNewTypingRule" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="2DR7y1rJuJ0">

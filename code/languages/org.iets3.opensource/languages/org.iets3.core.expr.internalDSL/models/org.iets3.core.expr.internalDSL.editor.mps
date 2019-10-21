@@ -8,6 +8,7 @@
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -247,6 +248,9 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -321,7 +325,7 @@
   </registry>
   <node concept="24kQdi" id="2DR7y1rJuJB">
     <property role="3GE5qa" value="binop" />
-    <ref role="1XX52x" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+    <ref role="1XX52x" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
     <node concept="3EZMnI" id="2DR7y1rJuKd" role="2wV5jI">
       <node concept="2iRkQZ" id="2DR7y1rJuKe" role="2iSdaV" />
       <node concept="3EZMnI" id="2DR7y1rJuJG" role="3EZMnx">
@@ -350,6 +354,10 @@
         </node>
         <node concept="3F1sOY" id="1opCYOqZC2s" role="3EZMnx">
           <ref role="1NtTu8" to="3lvb:1opCYOqZC1E" resolve="resType" />
+        </node>
+        <node concept="1kHk_G" id="2DbtJhuKYZK" role="3EZMnx">
+          <property role="ZjSer" value="covered by existing rule" />
+          <ref role="1NtTu8" to="3lvb:2DbtJhuJphO" resolve="noNewTypingRule" />
         </node>
       </node>
       <node concept="3EZMnI" id="2DR7y1rJuL6" role="3EZMnx">
@@ -955,6 +963,9 @@
               <node concept="3F0A7n" id="7LiXavR9zaH" role="2wV5jI">
                 <property role="1Intyy" value="true" />
                 <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <node concept="Vb9p2" id="2DbtJhuIIDf" role="3F10Kt">
+                  <property role="Vbekb" value="BOLD" />
+                </node>
               </node>
             </node>
           </node>

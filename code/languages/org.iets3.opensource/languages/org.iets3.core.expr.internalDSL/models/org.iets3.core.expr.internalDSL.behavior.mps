@@ -267,14 +267,14 @@
           <node concept="3cpWsn" id="1opCYOqZCfc" role="3cpWs9">
             <property role="TrG5h" value="def" />
             <node concept="3Tqbb2" id="1opCYOqZCf9" role="1tU5fm">
-              <ref role="ehGHo" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+              <ref role="ehGHo" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
             </node>
             <node concept="2OqwBi" id="1opCYOqZCfd" role="33vP2m">
               <node concept="13iPFW" id="1opCYOqZCfe" role="2Oq$k0" />
               <node concept="2Xjw5R" id="1opCYOqZCff" role="2OqNvi">
                 <node concept="1xMEDy" id="1opCYOqZCfg" role="1xVPHs">
                   <node concept="chp4Y" id="1opCYOqZCfh" role="ri$Ld">
-                    <ref role="cht4Q" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+                    <ref role="cht4Q" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
                   </node>
                 </node>
               </node>

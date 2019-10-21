@@ -190,7 +190,7 @@
   </registry>
   <node concept="1M2fIO" id="2DR7y1rJFIi">
     <property role="3GE5qa" value="binop" />
-    <ref role="1M2myG" to="3lvb:2DR7y1rJuIt" resolve="DefineBinOp" />
+    <ref role="1M2myG" to="3lvb:2DR7y1rJuIt" resolve="OverloadBinOp" />
     <node concept="EnEH3" id="2DR7y1rJFIj" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
     </node>
