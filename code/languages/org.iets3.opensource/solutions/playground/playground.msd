@@ -41,6 +41,7 @@
     <language slang="l:d441fba0-f46b-43cd-b723-dad7b65da615:org.iets3.core.expr.tests" version="1" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
     <language slang="l:63c1aad1-e2db-439c-a30a-02b5e0bc80f3:org.iets3.core.expr.tracing" version="0" />
+    <language slang="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

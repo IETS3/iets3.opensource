@@ -254,6 +254,9 @@
     <node concept="PrWs8" id="1opCYOr8cxh" role="PzmwI">
       <ref role="PrY4T" node="1opCYOr8cxa" resolve="ISentenceCall" />
     </node>
+    <node concept="PrWs8" id="5$OZQX$16TK" role="PzmwI">
+      <ref role="PrY4T" node="5$OZQX$16TE" resolve="IProseLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1opCYOr458B">
     <property role="EcuMT" value="1592484182008812071" />
@@ -707,6 +710,42 @@
     <node concept="PrWs8" id="2DbtJhuFzJ6" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5$OZQXzWqBp">
+    <property role="EcuMT" value="6428043422047775193" />
+    <property role="3GE5qa" value="sentence.call" />
+    <property role="TrG5h" value="AndThenExpr" />
+    <property role="34LRSv" value="then" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5$OZQXzWqBP" role="1TKVEi">
+      <property role="IQ2ns" value="6428043422047775221" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="first" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5$OZQX$16TE" resolve="IProseLike" />
+    </node>
+    <node concept="1TJgyj" id="5$OZQXzWqBR" role="1TKVEi">
+      <property role="IQ2ns" value="6428043422047775223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="second" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1opCYOr458A" resolve="SentenceInitialCallExpr" />
+    </node>
+    <node concept="PrWs8" id="5$OZQX$16TF" role="PzmwI">
+      <ref role="PrY4T" node="5$OZQX$16TE" resolve="IProseLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5$OZQXzXnRP">
+    <property role="EcuMT" value="6428043422048026101" />
+    <property role="3GE5qa" value="sentence.call" />
+    <property role="TrG5h" value="AndThenItExpr" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="5$OZQX$16TE">
+    <property role="EcuMT" value="6428043422049005162" />
+    <property role="3GE5qa" value="sentence.call" />
+    <property role="TrG5h" value="IProseLike" />
   </node>
 </model>
 
