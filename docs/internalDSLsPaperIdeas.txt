@@ -1,4 +1,8 @@
-Internal DSLs with Full IDE support
+starting assumption. IDE support is good
+
+either prog has to run all the time (access to lang def dynamic smalltalk) or it must be declarative.
+
+Modular Internal DSLs with Full IDE support
 
 CC, coloring, custom type checks / errors, scopes, and debugger
 
@@ -45,4 +49,8 @@ Cons:
   But that's just like Smalltalk ....
   
 
-
+Rel WOrk:
+* Ruby DSLs
+* Scala DSLs
+* Helvetia? 
+* Laurie's stuff
