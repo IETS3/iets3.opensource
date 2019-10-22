@@ -1336,6 +1336,13 @@
             <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
           </node>
         </node>
+        <node concept="d4jrN" id="5$OZQX$Ci3Y" role="d4jp8">
+          <property role="TrG5h" value="reset" />
+          <property role="XeJB7" value="false" />
+          <node concept="2Ss9cW" id="5$OZQX$Ci40" role="d2v77">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+        </node>
       </node>
       <node concept="d2v7a" id="5$OZQX$3k9e" role="3GNvUi">
         <node concept="1v5h_X" id="5$OZQX$3koD" role="1v5wSW">
@@ -1414,6 +1421,29 @@
                   </node>
                 </node>
               </node>
+              <node concept="2fGnzd" id="5$OZQX$CivV" role="2fGnxs">
+                <node concept="1QScDb" id="5$OZQX$CivW" role="2fGnzS">
+                  <node concept="3GHfjz" id="5$OZQX$CivX" role="1QScD9">
+                    <ref role="3GHZqv" node="5$OZQX$Ci3Y" resolve="reset" />
+                  </node>
+                  <node concept="1adzI2" id="5$OZQX$CivY" role="30czhm">
+                    <ref role="1adwt6" node="5$OZQX$6OdH" resolve="cmd" />
+                  </node>
+                </node>
+                <node concept="1QScDb" id="5$OZQX$Ck4Q" role="2fGnzA">
+                  <node concept="3vStjw" id="5$OZQX$Ckjk" role="1QScD9">
+                    <node concept="3vStjd" id="5$OZQX$CkxA" role="3vSgwc">
+                      <ref role="3vStjc" node="5$OZQX$3l0F" resolve="state" />
+                      <node concept="5mhuz" id="5$OZQX$CkLm" role="3vStj2">
+                        <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1adzI2" id="5$OZQX$CjQK" role="30czhm">
+                    <ref role="1adwt6" node="5$OZQX$6MRu" resolve="player" />
+                  </node>
+                </node>
+              </node>
               <node concept="2fGnzd" id="5$OZQX$6O3K" role="2fGnxs">
                 <node concept="2fHqz8" id="5$OZQX$6Qvq" role="2fGnzS" />
                 <node concept="1QScDb" id="5$OZQX$6Ri0" role="2fGnzA">
@@ -1469,7 +1499,7 @@
       </node>
     </node>
     <node concept="_ixoA" id="5$OZQX$9tsF" role="_iOnB" />
-    <node concept="_ixoA" id="5$OZQX$3jQH" role="_iOnB" />
+    <node concept="_ixoA" id="5$OZQX$Cojs" role="_iOnB" />
     <node concept="2zPypq" id="5$OZQX$3ubc" role="_iOnB">
       <property role="TrG5h" value="p" />
       <property role="0Rz4W" value="-345066362" />
@@ -1482,6 +1512,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="5$OZQX$CnK5" role="_iOnB" />
     <node concept="_fkuM" id="5$OZQX$3uOP" role="_iOnB">
       <property role="TrG5h" value="PlayerTests" />
       <node concept="_fkuZ" id="5$OZQX$3v9h" role="_fkp5">
@@ -1664,6 +1695,47 @@
           </node>
         </node>
       </node>
+      <node concept="_fkuZ" id="5$OZQX$CkZH" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$CkZI" role="_fkur" />
+        <node concept="ULlqQ" id="5$OZQX$ClG$" role="_fkuY">
+          <node concept="d2v7b" id="5$OZQX$ClGA" role="ULlqo">
+            <ref role="d3NPy" node="5$OZQX$Ci3Y" resolve="reset" />
+          </node>
+          <node concept="ULlqQ" id="5$OZQX$CkZJ" role="ULlqq">
+            <node concept="d2v7b" id="5$OZQX$CkZK" role="ULlqo">
+              <ref role="d3NPy" node="5$OZQX$ymI1" resolve="switchAll" />
+              <node concept="3iBYfx" id="5$OZQX$CkZL" role="d0nuC">
+                <node concept="5mhuz" id="5$OZQX$CkZM" role="3iBYfI">
+                  <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+                </node>
+                <node concept="5mhuz" id="5$OZQX$CkZN" role="3iBYfI">
+                  <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+                </node>
+              </node>
+            </node>
+            <node concept="d2v7b" id="5$OZQX$CkZO" role="ULlqq">
+              <ref role="d3NPy" node="5$OZQX$3kpb" resolve="player" />
+              <node concept="_emDc" id="5$OZQX$CkZP" role="d0nuC">
+                <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+              </node>
+              <node concept="d0CAb" id="5$OZQX$CkZQ" role="d0CAf">
+                <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
+                <node concept="5mhuz" id="5$OZQX$CkZR" role="d0nuC">
+                  <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$CkZS" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$CkZT" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$CmbS" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
       <node concept="_fkuZ" id="5$OZQX$lyxQ" role="_fkp5">
         <node concept="_fku$" id="5$OZQX$lyxR" role="_fkur" />
         <node concept="ULlqQ" id="5$OZQX$unR6" role="_fkuY">
@@ -1806,7 +1878,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="5$OZQX$3uwq" role="_iOnB" />
-    <node concept="_ixoA" id="5$OZQX$3iOZ" role="_iOnB" />
   </node>
   <node concept="_iOnU" id="65YflFczF6K">
     <property role="1XBH2A" value="true" />
