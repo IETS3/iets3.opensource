@@ -14,6 +14,7 @@
     <use id="64e79176-30a1-4836-821c-bf62ff6c6091" name="org.iets3.core.expr.natlang" version="-1" />
     <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="-1" />
     <use id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime" version="-1" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
@@ -22,6 +23,8 @@
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="u2uj" ref="r:d1eedef5-09a1-4dfa-9889-4ee05f2dba04(org.iets3.core.expr.lambda.migration)" />
     <import index="tzmp" ref="r:f5acf2a8-a07b-4b65-be39-d3d160ae00bd(org.iets3.core.expr.lambda.intentions)" />
+    <import index="ut5p" ref="r:ae52e1b7-6479-4187-9e09-836b57124d46(test.in.expr.os.utils@tests)" />
+    <import index="523r" ref="r:9c5c2614-fd32-4054-b6ea-f1ceb6bdd369(org.iets3.core.expr.util.typesystem)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -65,6 +68,26 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util">
+      <concept id="161551962036847720" name="org.iets3.core.expr.util.structure.Content" flags="ng" index="1fLbrf">
+        <reference id="161551962036848058" name="col" index="1fLbst" />
+        <child id="161551962036847832" name="exprs" index="1fLbpZ" />
+      </concept>
+      <concept id="161551962036813055" name="org.iets3.core.expr.util.structure.DataRow" flags="ng" index="1fLkTo">
+        <child id="161551962036847834" name="contents" index="1fLbpX" />
+      </concept>
+      <concept id="161551962036658016" name="org.iets3.core.expr.util.structure.QueryColDef" flags="ng" index="1fMUR7">
+        <child id="161551962036658065" name="expr" index="1fMUOQ" />
+      </concept>
+      <concept id="161551962036658012" name="org.iets3.core.expr.util.structure.MultiDecTab" flags="ng" index="1fMURV" />
+      <concept id="8853770331921611232" name="org.iets3.core.expr.util.structure.IMultiDecTab" flags="ng" index="1vMD3l">
+        <child id="8853770331921611296" name="colDefs" index="1vMDcl" />
+        <child id="8853770331921611812" name="rows" index="1vMDkh" />
+      </concept>
+      <concept id="7862827458313648457" name="org.iets3.core.expr.util.structure.LocalVarAssignColDef" flags="ng" index="1zTEqz">
+        <child id="7862827458313648627" name="varref" index="1zTEop" />
+      </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="527291771330968213" name="org.iets3.core.expr.collections.structure.ISetOneArgOp" flags="ng" index="24uAI7">
@@ -14887,6 +14910,91 @@
         </node>
         <node concept="_ixoA" id="4399ITS_LZm" role="_iOnC" />
         <node concept="_ixoA" id="4399ITS_JbI" role="_iOnC" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5aYM8itcbxS">
+    <property role="TrG5h" value="multidectab" />
+    <node concept="1qefOq" id="5aYM8itcbxT" role="1SKRRt">
+      <node concept="_iOnV" id="5aYM8itcbxW" role="1qenE9">
+        <property role="TrG5h" value="lib" />
+        <node concept="1aga60" id="6hYPZtwvBlr" role="_iOnC">
+          <property role="TrG5h" value="usesVar" />
+          <property role="0Rz4W" value="1467106227" />
+          <node concept="1aduha" id="6hYPZtwvBul" role="1ahQXP">
+            <node concept="umIIN" id="6hYPZtwvBuy" role="1aduh9">
+              <property role="TrG5h" value="x" />
+              <node concept="30bXRB" id="6hYPZtwvBuR" role="1adJii">
+                <property role="30bXRw" value="0" />
+              </node>
+              <node concept="mLuIC" id="6hYPZtwvBPB" role="2zM23F" />
+            </node>
+            <node concept="1fMURV" id="6hYPZtwvBwC" role="1aduh9">
+              <property role="0Rz4W" value="861670079" />
+              <node concept="1fLkTo" id="6hYPZtwvBAC" role="1vMDkh">
+                <node concept="1fLbrf" id="6hYPZtwvBBy" role="1fLbpX">
+                  <ref role="1fLbst" node="6hYPZtwvBwD" />
+                  <node concept="30bXRB" id="6hYPZtwvBBx" role="1fLbpZ">
+                    <property role="30bXRw" value="10" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="6hYPZtwvBCh" role="1fLbpX">
+                  <ref role="1fLbst" node="6hYPZtwvBwE" />
+                  <node concept="30bXRB" id="6hYPZtwvBCg" role="1fLbpZ">
+                    <property role="30bXRw" value="20" />
+                  </node>
+                </node>
+                <node concept="1fLbrf" id="6hYPZtwvBCJ" role="1fLbpX">
+                  <ref role="1fLbst" node="6hYPZtwvBz6" />
+                  <node concept="30bXRB" id="6hYPZtwvBCI" role="1fLbpZ">
+                    <property role="30bXRw" value="42" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fLkTo" id="5aYM8itcb_z" role="1vMDkh">
+                <node concept="1fLbrf" id="5aYM8itcbAT" role="1fLbpX">
+                  <ref role="1fLbst" node="6hYPZtwvBz6" />
+                  <node concept="30bXRB" id="5aYM8itcbAS" role="1fLbpZ">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fLkTo" id="5aYM8itcbBi" role="1vMDkh">
+                <node concept="1fLbrf" id="5aYM8itcbCQ" role="1fLbpX">
+                  <ref role="1fLbst" node="6hYPZtwvBz6" />
+                  <node concept="30bXRB" id="5aYM8itcbCP" role="1fLbpZ">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1fMUR7" id="6hYPZtwvBwD" role="1vMDcl">
+                <node concept="_emDc" id="6hYPZtwvBxu" role="1fMUOQ">
+                  <ref role="_emDf" to="ut5p:pogkgseX6Z" resolve="ten" />
+                </node>
+              </node>
+              <node concept="1fMUR7" id="6hYPZtwvBwE" role="1vMDcl">
+                <node concept="_emDc" id="6hYPZtwvByj" role="1fMUOQ">
+                  <ref role="_emDf" to="ut5p:pogkgseX9x" resolve="twenty" />
+                </node>
+              </node>
+              <node concept="1zTEqz" id="6hYPZtwvBz6" role="1vMDcl">
+                <node concept="uhfPG" id="6hYPZtwvBzP" role="1zTEop">
+                  <ref role="uhfO8" node="6hYPZtwvBuy" resolve="x" />
+                </node>
+              </node>
+              <node concept="7CXmI" id="5aYM8itcbGu" role="lGtFl">
+                <node concept="1TM$A" id="5aYM8itcbGv" role="7EUXB">
+                  <node concept="2PYRI3" id="5aYM8itcbJy" role="3lydEf">
+                    <ref role="39XzEq" to="523r:5aYM8itc26_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="uhfPG" id="6hYPZtwvBHL" role="1aduh9">
+              <ref role="uhfO8" node="6hYPZtwvBuy" resolve="x" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
