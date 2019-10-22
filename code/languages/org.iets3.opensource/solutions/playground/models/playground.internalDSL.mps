@@ -119,6 +119,7 @@
         <child id="1592484182008304929" name="argType" index="d4jrc" />
       </concept>
       <concept id="1592484182008304923" name="org.iets3.core.expr.internalDSL.structure.SentenceDefinition" flags="ng" index="d4jrQ">
+        <property id="6428043422058062197" name="allowImplicit" index="XI_Sq" />
         <child id="1592484182008305016" name="firstPart" index="d4jql" />
         <child id="1198396570262664991" name="staticSemantics" index="3ubfxb" />
         <child id="3562644288778858632" name="runtimeSemantics" index="3GNvUi" />
@@ -1308,10 +1309,22 @@
     </node>
     <node concept="_ixoA" id="5$OZQX$9$WM" role="_iOnB" />
     <node concept="d4jrQ" id="5$OZQX$3k9a" role="_iOnB">
+      <property role="XI_Sq" value="true" />
       <node concept="d4jrN" id="5$OZQX$3kpb" role="d4jql">
         <property role="TrG5h" value="player" />
         <node concept="2Ss9cW" id="5$OZQX$3kpv" role="d4jrc">
           <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+        </node>
+        <node concept="d4jrN" id="5$OZQX$ymI1" role="d4jp8">
+          <property role="TrG5h" value="switchAll" />
+          <node concept="3iBYCm" id="5$OZQX$ymTV" role="d4jrc">
+            <node concept="5mh7t" id="5$OZQX$ymUd" role="3iBWmK">
+              <ref role="5mh6l" node="5$OZQX$3j4g" resolve="Command" />
+            </node>
+          </node>
+          <node concept="2Ss9cW" id="5$OZQX$ymU$" role="d2v77">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
         </node>
         <node concept="d4jrN" id="5$OZQX$3kZQ" role="d4jp8">
           <property role="TrG5h" value="switch" />
@@ -1421,8 +1434,8 @@
                       <node concept="1af_rf" id="5$OZQX$9rIu" role="3ix9pP">
                         <property role="0Rz4W" value="-883595172" />
                         <ref role="1afhQb" node="5$OZQX$6LCK" resolve="next" />
-                        <node concept="1adzI2" id="5$OZQX$9sfM" role="1afhQ5">
-                          <ref role="1adwt6" node="5$OZQX$6MRu" resolve="player" />
+                        <node concept="3ix4Yz" id="5$OZQX$CbY_" role="1afhQ5">
+                          <ref role="3ix4Yw" node="5$OZQX$6RoV" resolve="seed" />
                         </node>
                         <node concept="3ix4Yz" id="5$OZQX$9s_W" role="1afhQ5">
                           <ref role="3ix4Yw" node="5$OZQX$6RoW" resolve="cmd" />
@@ -1584,6 +1597,70 @@
           </node>
           <node concept="5mhuz" id="5$OZQX$lxec" role="2S399l">
             <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$zw5B" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$zw5C" role="_fkur" />
+        <node concept="d2v7b" id="5$OZQX$zw5I" role="_fkuY">
+          <ref role="d3NPy" node="5$OZQX$3kpb" resolve="player" />
+          <node concept="_emDc" id="5$OZQX$zw5J" role="d0nuC">
+            <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+          </node>
+          <node concept="d0CAb" id="5$OZQX$zw5K" role="d0CAf">
+            <ref role="d3NPy" node="5$OZQX$ymI1" resolve="switchAll" />
+            <node concept="3iBYfx" id="5$OZQX$zArU" role="d0nuC">
+              <node concept="5mhuz" id="5$OZQX$zAE8" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$zAFh" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$zw5M" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$zw5N" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$zATV" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3sMc" resolve="OFF" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5$OZQX$z_JN" role="_fkp5">
+        <node concept="_fku$" id="5$OZQX$z_JO" role="_fkur" />
+        <node concept="ULlqQ" id="5$OZQX$z_JP" role="_fkuY">
+          <node concept="d2v7b" id="5$OZQX$z_JQ" role="ULlqo">
+            <ref role="d3NPy" node="5$OZQX$ymI1" resolve="switchAll" />
+            <node concept="3iBYfx" id="5$OZQX$z_JR" role="d0nuC">
+              <node concept="5mhuz" id="5$OZQX$z_JS" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+              </node>
+              <node concept="5mhuz" id="5$OZQX$z_JT" role="3iBYfI">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+              </node>
+            </node>
+          </node>
+          <node concept="d2v7b" id="5$OZQX$z_JU" role="ULlqq">
+            <ref role="d3NPy" node="5$OZQX$3kpb" resolve="player" />
+            <node concept="_emDc" id="5$OZQX$z_JV" role="d0nuC">
+              <ref role="_emDf" node="5$OZQX$3ubc" resolve="p" />
+            </node>
+            <node concept="d0CAb" id="5$OZQX$z_JW" role="d0CAf">
+              <ref role="d3NPy" node="5$OZQX$3kZQ" resolve="switch" />
+              <node concept="5mhuz" id="5$OZQX$z_JX" role="d0nuC">
+                <ref role="5mhpJ" node="5$OZQX$3jkl" resolve="toggle" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2S399m" id="5$OZQX$z_JY" role="_fkuS">
+          <node concept="2Ss9cW" id="5$OZQX$z_JZ" role="2S399n">
+            <ref role="2Ss9cX" node="5$OZQX$3jzZ" resolve="Player" />
+          </node>
+          <node concept="5mhuz" id="5$OZQX$z_K0" role="2S399l">
+            <ref role="5mhpJ" node="5$OZQX$3rJv" resolve="PLAYING" />
           </node>
         </node>
       </node>
