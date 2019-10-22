@@ -249,7 +249,7 @@
   <node concept="1TIwiD" id="1opCYOr458A">
     <property role="EcuMT" value="1592484182008812070" />
     <property role="3GE5qa" value="sentence.call" />
-    <property role="TrG5h" value="SentenceInitialCallExpr" />
+    <property role="TrG5h" value="SentenceCallExpr" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="1opCYOr8cxh" role="PzmwI">
       <ref role="PrY4T" node="1opCYOr8cxa" resolve="ISentenceCall" />
@@ -408,7 +408,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nextparts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1opCYOr3azH" resolve="AbstractPart" />
+      <ref role="20lvS9" node="1opCYOr29ku" resolve="SentencePart" />
     </node>
     <node concept="1TJgyj" id="1opCYOr458E" role="1TKVEi">
       <property role="IQ2ns" value="1592484182008812074" />
@@ -443,19 +443,12 @@
     <node concept="PrWs8" id="65YflFcy4uw" role="PzmwI">
       <ref role="PrY4T" node="65YflFcy3Z_" resolve="ISupportsQuote" />
     </node>
-    <node concept="1TJgyj" id="5$OZQX$9A$v" role="1TKVEi">
-      <property role="IQ2ns" value="6428043422051232031" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="implicitType" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
     <node concept="1TJgyj" id="1opCYOr29lS" role="1TKVEi">
       <property role="IQ2ns" value="1592484182008305016" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="firstPart" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1opCYOr3azH" resolve="AbstractPart" />
+      <ref role="20lvS9" node="1opCYOr29ku" resolve="SentencePart" />
     </node>
     <node concept="1TJgyj" id="35L3xFtJf28" role="1TKVEi">
       <property role="IQ2ns" value="3562644288778858632" />
@@ -748,13 +741,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="second" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1opCYOr458A" resolve="SentenceInitialCallExpr" />
+      <ref role="20lvS9" node="1opCYOr458A" resolve="SentenceCallExpr" />
     </node>
     <node concept="PrWs8" id="5$OZQX$16TF" role="PzmwI">
       <ref role="PrY4T" node="5$OZQX$16TE" resolve="IProseLike" />
     </node>
     <node concept="PrWs8" id="5$OZQX$gdle" role="PzmwI">
-      <ref role="PrY4T" node="5$OZQX$gdla" resolve="IImplicitContext" />
+      <ref role="PrY4T" node="5$OZQX$gdla" resolve="IImplicitContextProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5$OZQXzXnRP">
@@ -772,7 +765,7 @@
   <node concept="PlHQZ" id="5$OZQX$gdla">
     <property role="EcuMT" value="6428043422052963658" />
     <property role="3GE5qa" value="sentence.call" />
-    <property role="TrG5h" value="IImplicitContext" />
+    <property role="TrG5h" value="IImplicitContextProvider" />
   </node>
 </model>
 
