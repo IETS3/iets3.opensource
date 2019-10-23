@@ -1733,6 +1733,56 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="5aYM8itbFQs" role="3cqZAp">
+        <node concept="3clFbS" id="5aYM8itbFQu" role="3clFbx">
+          <node concept="2MkqsV" id="5aYM8itc26_" role="3cqZAp">
+            <node concept="Xl_RD" id="5aYM8itc26R" role="2MkJ7o">
+              <property role="Xl_RC" value="Only one default row allowed per Decisiontable. " />
+            </node>
+            <node concept="1YBJjd" id="5aYM8itc2bk" role="2OEOjV">
+              <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5aYM8itc1nJ" role="3clFbw">
+          <node concept="3cmrfG" id="5aYM8itc1nM" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="5aYM8itbN_D" role="3uHU7B">
+            <node concept="2OqwBi" id="5aYM8itbJlu" role="2Oq$k0">
+              <node concept="2OqwBi" id="5aYM8itbGvE" role="2Oq$k0">
+                <node concept="1YBJjd" id="5aYM8itbGmn" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
+                </node>
+                <node concept="3Tsc0h" id="5aYM8itbHjL" role="2OqNvi">
+                  <ref role="3TtcxE" to="kfo3:7FuUjk_57K$" resolve="rows" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="5aYM8itbL$k" role="2OqNvi">
+                <node concept="1bVj0M" id="5aYM8itbL$m" role="23t8la">
+                  <node concept="3clFbS" id="5aYM8itbL$n" role="1bW5cS">
+                    <node concept="3clFbF" id="5aYM8itbLEg" role="3cqZAp">
+                      <node concept="2OqwBi" id="5aYM8itbLSL" role="3clFbG">
+                        <node concept="37vLTw" id="5aYM8itbLEf" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5aYM8itbL$o" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="5aYM8itbNfB" role="2OqNvi">
+                          <ref role="37wK5l" to="wthy:3V7UZBYyZ4" resolve="isDefault" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5aYM8itbL$o" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5aYM8itbL$p" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="5aYM8itbUr1" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="3eQTdYHomG_" role="1YuTPh">
       <property role="TrG5h" value="mdt" />
