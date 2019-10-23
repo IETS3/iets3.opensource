@@ -1,3 +1,6 @@
+gradle als bsp f externe DSl mit internen Mittel.
+fluent und xml keine dsl
+
 starting assumption. IDE support is good
 
 either prog has to run all the time (access to lang def dynamic smalltalk) or it must be declarative.
