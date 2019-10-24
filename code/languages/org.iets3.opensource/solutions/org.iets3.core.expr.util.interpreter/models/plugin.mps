@@ -60,9 +60,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -746,12 +743,15 @@
                                         <node concept="2es0OD" id="Om1N8TzIZu" role="2OqNvi">
                                           <node concept="1bVj0M" id="Om1N8TzIZw" role="23t8la">
                                             <node concept="3clFbS" id="Om1N8TzIZx" role="1bW5cS">
-                                              <node concept="3clFbF" id="Om1N8TyUC2" role="3cqZAp">
-                                                <node concept="2YIFZM" id="Om1N8TyUC3" role="3clFbG">
-                                                  <ref role="37wK5l" to="pbu6:2udM7u90M1w" resolve="visitNode" />
-                                                  <ref role="1Pybhc" to="pbu6:4_qY3E5IXRD" resolve="DefaultCoverageAnalyzer" />
-                                                  <node concept="37vLTw" id="Om1N8TzKNV" role="37wK5m">
-                                                    <ref role="3cqZAo" node="Om1N8TzIZy" resolve="n" />
+                                              <node concept="3clFbF" id="Om1N8V9f$h" role="3cqZAp">
+                                                <node concept="2OqwBi" id="Om1N8V9gSW" role="3clFbG">
+                                                  <node concept="3fckFw" id="Om1N8V9f$f" role="2Oq$k0" />
+                                                  <node concept="liA8E" id="Om1N8V9h9v" role="2OqNvi">
+                                                    <ref role="37wK5l" to="2ahs:RaqQlV4lZg" resolve="coverValue" />
+                                                    <node concept="37vLTw" id="Om1N8V9h9y" role="37wK5m">
+                                                      <ref role="3cqZAo" node="Om1N8TzIZy" resolve="n" />
+                                                    </node>
+                                                    <node concept="10Nm6u" id="Om1N8V9hAh" role="37wK5m" />
                                                   </node>
                                                 </node>
                                               </node>

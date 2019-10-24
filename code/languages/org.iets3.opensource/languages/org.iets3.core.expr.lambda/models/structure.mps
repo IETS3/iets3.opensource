@@ -292,6 +292,9 @@
     <node concept="PrWs8" id="3z0ZJXm0Mp3" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
+    <node concept="PrWs8" id="Om1N8V9_JH" role="PrDN$">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
     <node concept="1TJgyi" id="2uR5X5azvjH" role="1TKVEl">
       <property role="TrG5h" value="ext" />
       <property role="IQ2nx" value="2861782275883660525" />

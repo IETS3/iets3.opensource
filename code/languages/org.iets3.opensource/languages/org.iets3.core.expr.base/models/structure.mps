@@ -838,6 +838,9 @@
     <node concept="PrWs8" id="_kNv2Qd9FQ" role="PrDN$">
       <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
     </node>
+    <node concept="PrWs8" id="Om1N8VbyAv" role="PrDN$">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1POec">
     <property role="TrG5h" value="EmptyExpression" />
