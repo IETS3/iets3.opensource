@@ -2,7 +2,7 @@
 <model ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -170,9 +170,6 @@
     <property role="EcuMT" value="7971844778467001950" />
     <property role="R4oN_" value="equal to true, but used to represent default case" />
     <ref role="1TJDcQ" node="6sdnDbSlcHm" resolve="BooleanLiteral" />
-    <node concept="PrWs8" id="4146AzF0jsF" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJIaLee" resolve="IExcludeFromCoverage" />
-    </node>
   </node>
   <node concept="1TIwiD" id="19PglA20qX_">
     <property role="EcuMT" value="1330041117646892901" />
@@ -251,6 +248,9 @@
       <property role="IQ2nx" value="8825352096209722453" />
       <property role="TrG5h" value="targetPrecision" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="5wVMwYHjrKa" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     </node>
   </node>
   <node concept="1TIwiD" id="7DTWJ$8kg8g">
