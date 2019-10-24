@@ -426,10 +426,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="7LiXavRiRK_">
-    <property role="3GE5qa" value="structures" />
-    <ref role="1M2myG" to="3lvb:7LiXavRiRJD" resolve="AbstractStructureContent" />
-  </node>
   <node concept="1M2fIO" id="7LiXavRkDzq">
     <property role="3GE5qa" value="structures" />
     <ref role="1M2myG" to="3lvb:7LiXavRk2D4" resolve="StructureContentRef" />
@@ -448,6 +444,28 @@
               </node>
             </node>
             <node concept="3x8VRR" id="7LiXavRkFhc" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5$OZQX$CuTt">
+    <property role="3GE5qa" value="sentence" />
+    <ref role="1M2myG" to="3lvb:1opCYOr29ku" resolve="SentencePart" />
+    <node concept="EnEH3" id="5$OZQX$CuTu" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="5$OZQX$CuTw" role="QCWH9">
+        <node concept="3clFbS" id="5$OZQX$CuTx" role="2VODD2">
+          <node concept="3cpWs6" id="5YygIlbihYG" role="3cqZAp">
+            <node concept="2OqwBi" id="5YygIlbiiLT" role="3cqZAk">
+              <node concept="1Wqviy" id="5YygIlbiiLU" role="2Oq$k0" />
+              <node concept="liA8E" id="5YygIlbiiLV" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="5YygIlbiiLW" role="37wK5m">
+                  <property role="Xl_RC" value="[äöüÄÖÜa-zA-Z$[_]][äöüÄÖÜa-zA-Z0-9$[_'] ]*" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -524,30 +542,6 @@
               </node>
               <node concept="3clFbT" id="2DbtJhuGmdz" role="37wK5m" />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="5$OZQXzXqIK">
-    <property role="3GE5qa" value="sentence.call" />
-    <ref role="1M2myG" to="3lvb:5$OZQXzXnRP" resolve="AndThenItExpr" />
-    <node concept="9S07l" id="5$OZQXzXqIL" role="9Vyp8">
-      <node concept="3clFbS" id="5$OZQXzXqIM" role="2VODD2">
-        <node concept="3clFbF" id="5$OZQXzXqQ7" role="3cqZAp">
-          <node concept="2OqwBi" id="5$OZQXzXs5M" role="3clFbG">
-            <node concept="2OqwBi" id="5$OZQXzXr2g" role="2Oq$k0">
-              <node concept="nLn13" id="5$OZQXzXqQ6" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="5$OZQXzXrgc" role="2OqNvi">
-                <node concept="1xMEDy" id="5$OZQXzXrge" role="1xVPHs">
-                  <node concept="chp4Y" id="5$OZQXzXrr8" role="ri$Ld">
-                    <ref role="cht4Q" to="3lvb:5$OZQXzWqBp" resolve="AndThenExpr" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="5$OZQXzXrJA" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="5$OZQXzXuTT" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -882,23 +876,25 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5$OZQX$CuTt">
-    <property role="3GE5qa" value="sentence" />
-    <ref role="1M2myG" to="3lvb:1opCYOr29ku" resolve="SentencePart" />
-    <node concept="EnEH3" id="5$OZQX$CuTu" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="QB0g5" id="5$OZQX$CuTw" role="QCWH9">
-        <node concept="3clFbS" id="5$OZQX$CuTx" role="2VODD2">
-          <node concept="3cpWs6" id="5YygIlbihYG" role="3cqZAp">
-            <node concept="2OqwBi" id="5YygIlbiiLT" role="3cqZAk">
-              <node concept="1Wqviy" id="5YygIlbiiLU" role="2Oq$k0" />
-              <node concept="liA8E" id="5YygIlbiiLV" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="5YygIlbiiLW" role="37wK5m">
-                  <property role="Xl_RC" value="[äöüÄÖÜa-zA-Z$[_]][äöüÄÖÜa-zA-Z0-9$[_'] ]*" />
+  <node concept="1M2fIO" id="5$OZQXzXqIK">
+    <property role="3GE5qa" value="sentence.call" />
+    <ref role="1M2myG" to="3lvb:5$OZQXzXnRP" resolve="AndThenItExpr" />
+    <node concept="9S07l" id="5$OZQXzXqIL" role="9Vyp8">
+      <node concept="3clFbS" id="5$OZQXzXqIM" role="2VODD2">
+        <node concept="3clFbF" id="5$OZQXzXqQ7" role="3cqZAp">
+          <node concept="2OqwBi" id="5$OZQXzXs5M" role="3clFbG">
+            <node concept="2OqwBi" id="5$OZQXzXr2g" role="2Oq$k0">
+              <node concept="nLn13" id="5$OZQXzXqQ6" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5$OZQXzXrgc" role="2OqNvi">
+                <node concept="1xMEDy" id="5$OZQXzXrge" role="1xVPHs">
+                  <node concept="chp4Y" id="5$OZQXzXrr8" role="ri$Ld">
+                    <ref role="cht4Q" to="3lvb:5$OZQXzWqBp" resolve="AndThenExpr" />
+                  </node>
                 </node>
+                <node concept="1xIGOp" id="5$OZQXzXrJA" role="1xVPHs" />
               </node>
             </node>
+            <node concept="3x8VRR" id="5$OZQXzXuTT" role="2OqNvi" />
           </node>
         </node>
       </node>
