@@ -298,11 +298,13 @@
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="5232196642625575054" name="jetbrains.mps.baseLanguage.collections.structure.TailListOperation" flags="nn" index="1eb2uI">
         <child id="5232196642625575056" name="fromIndex" index="1eb2uK" />
       </concept>
+      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
@@ -3548,51 +3550,87 @@
       <ref role="13i0hy" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
       <node concept="3Tm1VV" id="2U$lnbPqLtg" role="1B3o_S" />
       <node concept="3clFbS" id="2U$lnbPqLto" role="3clF47">
-        <node concept="3SKdUt" id="5wVMwYHzAbw" role="3cqZAp">
-          <node concept="3SKdUq" id="5wVMwYHzAby" role="3SKWNk">
-            <property role="3SKdUp" value="all other ColumnDefs other than QueryColDef are not relevant for coverage (hence exclude them)" />
+        <node concept="3cpWs8" id="Om1N8V0qYs" role="3cqZAp">
+          <node concept="3cpWsn" id="Om1N8V0qYt" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="2I9FWS" id="Om1N8V0qYr" role="1tU5fm" />
+            <node concept="2ShNRf" id="Om1N8V0qYu" role="33vP2m">
+              <node concept="2T8Vx0" id="Om1N8V0qYv" role="2ShVmc">
+                <node concept="2I9FWS" id="Om1N8V0qYw" role="2T96Bj" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2U$lnbPqLAk" role="3cqZAp">
-          <node concept="2OqwBi" id="2U$lnbPqN0F" role="3clFbG">
-            <node concept="2OqwBi" id="2U$lnbPqLLz" role="2Oq$k0">
-              <node concept="13iPFW" id="2U$lnbPqLAf" role="2Oq$k0" />
-              <node concept="32TBzR" id="2U$lnbPqM1B" role="2OqNvi" />
+        <node concept="3SKdUt" id="5wVMwYHzAbw" role="3cqZAp">
+          <node concept="3SKdUq" id="5wVMwYHzAby" role="3SKWNk">
+            <property role="3SKdUp" value="only QueryColDef are relevant for coverage" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="Om1N8V0rS0" role="3cqZAp">
+          <node concept="2OqwBi" id="Om1N8V0t19" role="3clFbG">
+            <node concept="37vLTw" id="Om1N8V0rRY" role="2Oq$k0">
+              <ref role="3cqZAo" node="Om1N8V0qYt" resolve="result" />
             </node>
-            <node concept="66VNe" id="2U$lnbPqOCB" role="2OqNvi">
-              <node concept="2OqwBi" id="5wVMwYHzwOb" role="576Qk">
-                <node concept="2OqwBi" id="2U$lnbPqOOz" role="2Oq$k0">
-                  <node concept="13iPFW" id="2U$lnbPqOEf" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="2U$lnbPqP5Y" role="2OqNvi">
+            <node concept="X8dFx" id="Om1N8V0uQo" role="2OqNvi">
+              <node concept="2OqwBi" id="Om1N8V0yNp" role="25WWJ7">
+                <node concept="2OqwBi" id="Om1N8V0vMN" role="2Oq$k0">
+                  <node concept="13iPFW" id="Om1N8V0vuW" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="Om1N8V0wG$" role="2OqNvi">
                     <ref role="3TtcxE" to="kfo3:7FuUjk_57Cw" resolve="colDefs" />
                   </node>
                 </node>
-                <node concept="3zZkjj" id="5wVMwYHz$_8" role="2OqNvi">
-                  <node concept="1bVj0M" id="5wVMwYHz$_a" role="23t8la">
-                    <node concept="3clFbS" id="5wVMwYHz$_b" role="1bW5cS">
-                      <node concept="3clFbF" id="5wVMwYHz$Ge" role="3cqZAp">
-                        <node concept="3fqX7Q" id="5wVMwYHz_Ll" role="3clFbG">
-                          <node concept="2OqwBi" id="5wVMwYHz_Ln" role="3fr31v">
-                            <node concept="37vLTw" id="5wVMwYHz_Lo" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5wVMwYHz$_c" resolve="it" />
-                            </node>
-                            <node concept="1mIQ4w" id="5wVMwYHz_Lp" role="2OqNvi">
-                              <node concept="chp4Y" id="5wVMwYHz_Lq" role="cj9EA">
-                                <ref role="cht4Q" to="kfo3:8XWEtdX_Xw" resolve="QueryColDef" />
-                              </node>
-                            </node>
+                <node concept="v3k3i" id="Om1N8V0_WL" role="2OqNvi">
+                  <node concept="chp4Y" id="Om1N8V0Aes" role="v3oSu">
+                    <ref role="cht4Q" to="kfo3:8XWEtdX_Xw" resolve="QueryColDef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="Om1N8V81ul" role="3cqZAp">
+          <node concept="3SKdUq" id="Om1N8V81un" role="3SKWNk">
+            <property role="3SKdUp" value="only consider children of DataRows to not render coverage for table rows (breaks layout)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="Om1N8V0E0R" role="3cqZAp">
+          <node concept="2OqwBi" id="Om1N8V0FBz" role="3clFbG">
+            <node concept="37vLTw" id="Om1N8V0E0P" role="2Oq$k0">
+              <ref role="3cqZAo" node="Om1N8V0qYt" resolve="result" />
+            </node>
+            <node concept="X8dFx" id="Om1N8V0HtI" role="2OqNvi">
+              <node concept="2OqwBi" id="Om1N8V0NwI" role="25WWJ7">
+                <node concept="2OqwBi" id="Om1N8V0Jm5" role="2Oq$k0">
+                  <node concept="13iPFW" id="Om1N8V0J4o" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="Om1N8V0KK1" role="2OqNvi">
+                    <ref role="3TtcxE" to="kfo3:7FuUjk_57K$" resolve="rows" />
+                  </node>
+                </node>
+                <node concept="3goQfb" id="Om1N8V0Q31" role="2OqNvi">
+                  <node concept="1bVj0M" id="Om1N8V0Q33" role="23t8la">
+                    <node concept="3clFbS" id="Om1N8V0Q34" role="1bW5cS">
+                      <node concept="3clFbF" id="Om1N8V0QM1" role="3cqZAp">
+                        <node concept="2OqwBi" id="Om1N8V0S8s" role="3clFbG">
+                          <node concept="37vLTw" id="Om1N8V0QM0" role="2Oq$k0">
+                            <ref role="3cqZAo" node="Om1N8V0Q35" resolve="it" />
                           </node>
+                          <node concept="32TBzR" id="Om1N8V0Tkm" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="5wVMwYHz$_c" role="1bW2Oz">
+                    <node concept="Rh6nW" id="Om1N8V0Q35" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="5wVMwYHz$_d" role="1tU5fm" />
+                      <node concept="2jxLKc" id="Om1N8V0Q36" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Om1N8V0qiZ" role="3cqZAp">
+          <node concept="37vLTw" id="Om1N8V0qYx" role="3clFbG">
+            <ref role="3cqZAo" node="Om1N8V0qYt" resolve="result" />
           </node>
         </node>
       </node>

@@ -344,7 +344,7 @@
   <node concept="1TIwiD" id="3_DFadMGGNM">
     <property role="EcuMT" value="4137027550720478450" />
     <property role="TrG5h" value="InterpreterCoverageAssQuery" />
-    <property role="34LRSv" value="interpreter test coverage" />
+    <property role="34LRSv" value="interpreter coverage" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="R4oN_" value="reports coverage of interpreter implementation" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
@@ -454,7 +454,7 @@
   <node concept="1TIwiD" id="4XlPKepaaha">
     <property role="EcuMT" value="5716711712471163978" />
     <property role="TrG5h" value="StructuralCoverageAssQuery" />
-    <property role="34LRSv" value="structural test coverage" />
+    <property role="34LRSv" value="structural coverage" />
     <property role="3GE5qa" value="assessment.structural" />
     <property role="R4oN_" value="reports coverage of the concept's structure" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
