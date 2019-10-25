@@ -23,8 +23,8 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="jpzw" ref="r:a61c1d06-4553-4044-9d05-d40e966a3210(org.iets3.core.expr.lambda.interpreter.plugin)" />
-    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="nu60" ref="r:cfd59c48-ecc8-4b0c-8ae8-6d876c46ebbb(org.iets3.core.expr.toplevel.behavior)" />
+    <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -332,8 +332,8 @@
                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                 </node>
                 <node concept="2YIFZM" id="7_$HJtBusz5" role="33vP2m">
-                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
                   <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
+                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
                 </node>
               </node>
             </node>
@@ -784,8 +784,8 @@
                   <ref role="3uigEE" to="j10v:~PVector" resolve="PVector" />
                 </node>
                 <node concept="2YIFZM" id="7cphKbKxjsi" role="33vP2m">
-                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
                   <ref role="37wK5l" to="j10v:~Empty.vector()" resolve="vector" />
+                  <ref role="1Pybhc" to="j10v:~Empty" resolve="Empty" />
                 </node>
               </node>
             </node>
@@ -1181,20 +1181,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="4ptnK4jiz0h" role="3cqZAp">
-                  <node concept="3cpWsn" id="4ptnK4jiz0i" role="3cpWs9">
-                    <property role="TrG5h" value="memberName" />
-                    <node concept="17QB3L" id="4ptnK4jiz0j" role="1tU5fm" />
-                    <node concept="2OqwBi" id="4ptnK4jiz0k" role="33vP2m">
-                      <node concept="37vLTw" id="4ptnK4jiz0l" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4ptnK4jiz09" resolve="member" />
-                      </node>
-                      <node concept="3TrcHB" id="4ptnK4jiz0m" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs8" id="4ptnK4jiz0n" role="3cqZAp">
                   <node concept="3cpWsn" id="4ptnK4jiz0o" role="3cpWs9">
                     <property role="TrG5h" value="value" />
@@ -1277,8 +1263,13 @@
                     </node>
                     <node concept="liA8E" id="4ptnK4jiz0O" role="2OqNvi">
                       <ref role="37wK5l" to="pq1l:7D7uZV2yclI" resolve="add" />
-                      <node concept="37vLTw" id="4ptnK4jiz0P" role="37wK5m">
-                        <ref role="3cqZAo" node="4ptnK4jiz0i" resolve="memberName" />
+                      <node concept="2OqwBi" id="2U$lnbPygyj" role="37wK5m">
+                        <node concept="37vLTw" id="2U$lnbPygyk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4ptnK4jiz09" resolve="member" />
+                        </node>
+                        <node concept="3TrcHB" id="2U$lnbPygyl" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
                       </node>
                       <node concept="37vLTw" id="4ptnK4jiz0Q" role="37wK5m">
                         <ref role="3cqZAo" node="4ptnK4jiz0x" resolve="evaluatedValue" />

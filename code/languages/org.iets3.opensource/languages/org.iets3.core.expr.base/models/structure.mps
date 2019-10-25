@@ -838,6 +838,9 @@
     <node concept="PrWs8" id="_kNv2Qd9FQ" role="PrDN$">
       <ref role="PrY4T" node="_kNv2QbVfb" resolve="IContextAssistantTypeProvider" />
     </node>
+    <node concept="PrWs8" id="Om1N8VbyAv" role="PrDN$">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69zaTr1POec">
     <property role="TrG5h" value="EmptyExpression" />
@@ -1160,77 +1163,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="4qVjx3kr0CS" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="71dSyJVnXem">
-    <property role="3GE5qa" value="deprecated_let" />
-    <property role="TrG5h" value="LetSubVariable_old" />
-    <property role="EcuMT" value="8092372783983481750" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="asaX9" id="5iokRED1I_5" role="lGtFl" />
-    <node concept="1TJgyj" id="71dSyJVnXep" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8092372783983481753" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="71dSyJVnXen" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3kqTzt" role="PzmwI">
-      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="71dSyJVnXlH">
-    <property role="3GE5qa" value="deprecated_let" />
-    <property role="TrG5h" value="LetSubVarRef_old" />
-    <property role="EcuMT" value="8092372783983482221" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="asaX9" id="5iokRED1I_8" role="lGtFl" />
-    <node concept="1TJgyj" id="71dSyJVnXlI" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="var" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8092372783983482222" />
-      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable_old" />
-    </node>
-    <node concept="PrWs8" id="3kzwyUOJ5i$" role="PzmwI">
-      <ref role="PrY4T" node="3kzwyUOs05a" resolve="ISingleSymbolRef" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="71dSyJVnXcK">
-    <property role="TrG5h" value="LetExpression_old" />
-    <property role="3GE5qa" value="deprecated_let" />
-    <property role="34LRSv" value="let" />
-    <property role="EcuMT" value="8092372783983481648" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="asaX9" id="5iokRED1I_2" role="lGtFl" />
-    <node concept="1TJgyj" id="71dSyJVnXek" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="main" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8092372783983481748" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="71dSyJVnXff" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="subs" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="8092372783983481807" />
-      <ref role="20lvS9" node="71dSyJVnXem" resolve="LetSubVariable_old" />
-    </node>
-    <node concept="PrWs8" id="71dSyJVoUCe" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
-    </node>
-    <node concept="PrWs8" id="71dSyJVnXe4" role="PzmwI">
-      <ref role="PrY4T" node="6NJfo6_rTeO" resolve="IBigExpression" />
-    </node>
-    <node concept="PrWs8" id="4qVjx3kqKkr" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
   </node>

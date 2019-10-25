@@ -19,6 +19,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
@@ -318,7 +319,7 @@
   <node concept="2S6QgY" id="ub9nkyPcj2">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="evaluateTestCase" />
-    <ref role="2ZfgGC" to="av4b:ub9nkyHAb7" resolve="TestCase" />
+    <ref role="2ZfgGC" to="av4b:59WscmUTdO4" resolve="ITestItemContainer" />
     <node concept="2S6ZIM" id="ub9nkyPcj3" role="2ZfVej">
       <node concept="3clFbS" id="ub9nkyPcj4" role="2VODD2">
         <node concept="3clFbF" id="ub9nkyPcj5" role="3cqZAp">
@@ -335,7 +336,7 @@
             <node concept="2OqwBi" id="ub9nkyPduT" role="2Oq$k0">
               <node concept="2Sf5sV" id="ub9nkyPds1" role="2Oq$k0" />
               <node concept="2qgKlT" id="4_qY3E4Dr0U" role="2OqNvi">
-                <ref role="37wK5l" to="xk6s:4_qY3E4DfiR" resolve="nonEmptyItems" />
+                <ref role="37wK5l" to="xk6s:59WscmUTju7" resolve="nonEmptyItems" />
               </node>
             </node>
             <node concept="2es0OD" id="ub9nkyPfpg" role="2OqNvi">
@@ -1334,8 +1335,8 @@
                       <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
                     </node>
                     <node concept="2YIFZM" id="5wDe8wA6zsL" role="33vP2m">
-                      <ref role="1Pybhc" to="oq0c:2Qbt$1tTQaH" resolve="PTF" />
-                      <ref role="37wK5l" to="oq0c:7qm5H0bw7IN" resolve="reverseValue" />
+                      <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                      <ref role="37wK5l" to="xfg9:7qm5H0bw7IN" resolve="reverseValue" />
                       <node concept="37vLTw" id="3FKUaHrUZwn" role="37wK5m">
                         <ref role="3cqZAo" node="3FKUaHrUZmT" resolve="expectedType" />
                       </node>

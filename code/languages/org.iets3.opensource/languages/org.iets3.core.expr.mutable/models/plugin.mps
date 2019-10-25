@@ -2647,8 +2647,8 @@
                         <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
                       </node>
                       <node concept="2ShNRf" id="5cHMZISBu0q" role="33vP2m">
-                        <node concept="HV5vD" id="5cHMZISBxPQ" role="2ShVmc">
-                          <ref role="HV5vE" to="33ny:~HashMap" resolve="HashMap" />
+                        <node concept="1pGfFk" id="3h73ZjuqQhx" role="2ShVmc">
+                          <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
                         </node>
                       </node>
                     </node>

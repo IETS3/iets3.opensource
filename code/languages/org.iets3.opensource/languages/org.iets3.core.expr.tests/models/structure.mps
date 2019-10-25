@@ -67,6 +67,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -143,6 +144,9 @@
     </node>
     <node concept="PrWs8" id="7yDflTqQ5$F" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="59WscmUTdOa" role="PzmwI">
+      <ref role="PrY4T" node="59WscmUTdO4" resolve="ITestItemContainer" />
     </node>
     <node concept="1QGGSu" id="30VF9hLosIZ" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testcase.png" />
@@ -340,7 +344,7 @@
   <node concept="1TIwiD" id="3_DFadMGGNM">
     <property role="EcuMT" value="4137027550720478450" />
     <property role="TrG5h" value="InterpreterCoverageAssQuery" />
-    <property role="34LRSv" value="interpreter test coverage" />
+    <property role="34LRSv" value="interpreter coverage" />
     <property role="3GE5qa" value="assessment.interpreter" />
     <property role="R4oN_" value="reports coverage of interpreter implementation" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
@@ -450,7 +454,7 @@
   <node concept="1TIwiD" id="4XlPKepaaha">
     <property role="EcuMT" value="5716711712471163978" />
     <property role="TrG5h" value="StructuralCoverageAssQuery" />
-    <property role="34LRSv" value="structural test coverage" />
+    <property role="34LRSv" value="structural coverage" />
     <property role="3GE5qa" value="assessment.structural" />
     <property role="R4oN_" value="reports coverage of the concept's structure" />
     <ref role="1TJDcQ" node="4XlPKep95_T" resolve="AbstractCoverageQuery" />
@@ -1257,6 +1261,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="59WscmUTdO4">
+    <property role="EcuMT" value="5943749602768641284" />
+    <property role="TrG5h" value="ITestItemContainer" />
   </node>
 </model>
 
