@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -63,9 +63,9 @@
     <property role="TrG5h" value="IAttributed" />
     <property role="EcuMT" value="4388710048722005709" />
     <node concept="1TJgyj" id="3NBP8_OgMVe" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="4388710048722005710" />
       <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
@@ -83,7 +83,7 @@
     <property role="TrG5h" value="IValueAttribute" />
     <property role="EcuMT" value="1970998948978453245" />
     <node concept="1TJgyj" id="1HqphBIBJyQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
       <property role="IQ2ns" value="1970998948979996854" />
       <ref role="20lvS9" node="1HqphBI_m86" resolve="AttributeValue" />
@@ -101,9 +101,9 @@
     </node>
     <node concept="1TJgyj" id="43MQ47XHSpR" role="1TKVEi">
       <property role="IQ2ns" value="4680040740732503671" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
@@ -126,9 +126,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="GKE0N8VlFG" role="1TKVEi">
       <property role="IQ2ns" value="806329106163391212" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="container" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="GKE0N8V88V" resolve="AttributeContainer" />
     </node>
     <node concept="PrWs8" id="4fgA7QrDo$v" role="PzmwI">
@@ -142,9 +142,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="GKE0N8V89c" role="1TKVEi">
       <property role="IQ2ns" value="806329106163335756" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedAttributes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3NBP8_OgMyV" resolve="IAttribute" />
     </node>
     <node concept="PrWs8" id="GKE0N9m3Me" role="PzmwI">
@@ -157,9 +157,9 @@
     <property role="TrG5h" value="IAttributeWithContext" />
     <node concept="1TJgyj" id="4fgA7QrBOn0" role="1TKVEi">
       <property role="IQ2ns" value="4886573260946228672" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ctx" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4fgA7QrBO_F" role="PrDN$">

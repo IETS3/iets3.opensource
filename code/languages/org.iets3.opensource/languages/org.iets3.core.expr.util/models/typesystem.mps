@@ -98,9 +98,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1907,7 +1905,7 @@
               <ref role="2pJxaS" to="kfo3:7EKPeIStq_l" resolve="DecTableType" />
               <node concept="2pIpSj" id="7EKPeIStrsz" role="2pJxcM">
                 <ref role="2pIpSl" to="kfo3:7EKPeIStq_m" resolve="table" />
-                <node concept="36biLy" id="7EKPeIStrtG" role="2pJxcZ">
+                <node concept="36biLy" id="7EKPeIStrtG" role="28nt2d">
                   <node concept="2OqwBi" id="7EKPeIStrCM" role="36biLW">
                     <node concept="1YBJjd" id="7EKPeIStrtR" role="2Oq$k0">
                       <ref role="1YBMHb" node="7EKPeIStq_x" resolve="topLevelDecTabRef" />
@@ -1978,7 +1976,7 @@
                                 <ref role="2pJxaS" to="kfo3:7EKPeISC$Mi" resolve="BoundColRef" />
                                 <node concept="2pIpSj" id="7EKPeISCZcJ" role="2pJxcM">
                                   <ref role="2pIpSl" to="kfo3:7EKPeISC$Mj" resolve="col" />
-                                  <node concept="36biLy" id="7EKPeISCZcK" role="2pJxcZ">
+                                  <node concept="36biLy" id="7EKPeISCZcK" role="28nt2d">
                                     <node concept="37vLTw" id="7EKPeISCZcL" role="36biLW">
                                       <ref role="3cqZAo" node="7EKPeISCZcM" resolve="it" />
                                     </node>
@@ -2004,7 +2002,7 @@
                       <ref role="2pJxaS" to="kfo3:7EKPeISC$M9" resolve="PartialDecTableType" />
                       <node concept="2pIpSj" id="7EKPeISCRs3" role="2pJxcM">
                         <ref role="2pIpSl" to="kfo3:7EKPeISC$Mc" resolve="table" />
-                        <node concept="36biLy" id="7EKPeISCRtd" role="2pJxcZ">
+                        <node concept="36biLy" id="7EKPeISCRtd" role="28nt2d">
                           <node concept="2OqwBi" id="7EKPeISCSvx" role="36biLW">
                             <node concept="Jnkvi" id="7EKPeISCSn3" role="2Oq$k0">
                               <ref role="1M0zk5" node="7EKPeISCS0K" resolve="ict" />
@@ -2017,7 +2015,7 @@
                       </node>
                       <node concept="2pIpSj" id="7EKPeISCT42" role="2pJxcM">
                         <ref role="2pIpSl" to="kfo3:7EKPeISC$Ml" resolve="boundCols" />
-                        <node concept="36biLy" id="7EKPeISCT9T" role="2pJxcZ">
+                        <node concept="36biLy" id="7EKPeISCT9T" role="28nt2d">
                           <node concept="37vLTw" id="7EKPeISCZ_a" role="36biLW">
                             <ref role="3cqZAo" node="7EKPeISCZcy" resolve="boundCols" />
                           </node>

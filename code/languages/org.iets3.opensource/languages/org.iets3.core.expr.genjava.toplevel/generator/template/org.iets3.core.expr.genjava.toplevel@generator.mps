@@ -2,14 +2,15 @@
 <model ref="r:77acc36f-5eb1-43af-9f80-e6d4d70bca5f(org.iets3.core.expr.genjava.toplevel@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="f2abf2a6-552e-4906-ab58-930f9a79aff4" name="org.iets3.core.expr.genjava.contracts" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(main@generator)" />
+    <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="vsv5" ref="r:7df3c033-0c27-4a50-97c3-f940e7dd27c2(org.iets3.core.expr.genjava.base.rt.rt)" />
     <import index="wfax" ref="r:5d67e954-7960-4214-97d1-8f5d3823a964(org.iets3.core.expr.genjava.simpleTypes.rt.rt)" />
@@ -233,11 +234,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -475,6 +473,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2372,8 +2378,25 @@
       <node concept="30G5F_" id="lH$PuhxrlH" role="30HLyM">
         <node concept="3clFbS" id="lH$PuhxrlI" role="2VODD2">
           <node concept="3SKdUt" id="lH$PujDRy1" role="3cqZAp">
-            <node concept="3SKdUq" id="lH$PujDRy3" role="3SKWNk">
-              <property role="3SKdUp" value="Used inside a member contract item" />
+            <node concept="1PaTwC" id="17Nm8oCo8_W" role="3ndbpf">
+              <node concept="3oM_SD" id="17Nm8oCo8_X" role="1PaTwD">
+                <property role="3oM_SC" value="Used" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8_Y" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8_Z" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A0" role="1PaTwD">
+                <property role="3oM_SC" value="member" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A1" role="1PaTwD">
+                <property role="3oM_SC" value="contract" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A2" role="1PaTwD">
+                <property role="3oM_SC" value="item" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="lH$Puhxrt3" role="3cqZAp">
@@ -2435,8 +2458,28 @@
       <node concept="30G5F_" id="lH$Puhxtep" role="30HLyM">
         <node concept="3clFbS" id="lH$Puhxteq" role="2VODD2">
           <node concept="3SKdUt" id="lH$PujDRMQ" role="3cqZAp">
-            <node concept="3SKdUq" id="lH$PujDRMR" role="3SKWNk">
-              <property role="3SKdUp" value="Used NOT inside a member contract item" />
+            <node concept="1PaTwC" id="17Nm8oCo8A3" role="3ndbpf">
+              <node concept="3oM_SD" id="17Nm8oCo8A4" role="1PaTwD">
+                <property role="3oM_SC" value="Used" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A5" role="1PaTwD">
+                <property role="3oM_SC" value="NOT" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A6" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A7" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A8" role="1PaTwD">
+                <property role="3oM_SC" value="member" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8A9" role="1PaTwD">
+                <property role="3oM_SC" value="contract" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Aa" role="1PaTwD">
+                <property role="3oM_SC" value="item" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="lH$Puh$RFa" role="3cqZAp">
@@ -6890,7 +6933,7 @@
     </node>
   </node>
   <node concept="1pmfR0" id="oj24_oau03">
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="TrG5h" value="preprocessRecordChangeTarget" />
     <node concept="1pplIY" id="oj24_oau04" role="1pqMTA">
       <node concept="3clFbS" id="oj24_oau05" role="2VODD2">
@@ -7619,7 +7662,7 @@
   </node>
   <node concept="1pmfR0" id="7EIB27g8y97">
     <property role="TrG5h" value="preprocessConstantRefNames" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="7EIB27g8y98" role="1pqMTA">
       <node concept="3clFbS" id="7EIB27g8y99" role="2VODD2">
         <node concept="2Gpval" id="7EIB27g8FDk" role="3cqZAp">
@@ -7700,7 +7743,7 @@
   </node>
   <node concept="1pmfR0" id="3$XzGmIz9V0">
     <property role="TrG5h" value="preprocessFunctionCallNames" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="3$XzGmIz9V1" role="1pqMTA">
       <node concept="3clFbS" id="3$XzGmIz9V2" role="2VODD2">
         <node concept="2Gpval" id="3$XzGmIz9V3" role="3cqZAp">
@@ -8952,7 +8995,7 @@
     </node>
   </node>
   <node concept="1pmfR0" id="7rdMSLlgYa6">
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="TrG5h" value="preprocessEnumIsIn" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="7rdMSLlgYa7" role="1pqMTA">

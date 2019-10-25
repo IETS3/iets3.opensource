@@ -2,10 +2,10 @@
 <model ref="r:2261c766-d7b6-49d7-91bd-1207e471af0b(org.iets3.core.expr.lambda.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -441,7 +441,7 @@
       </node>
       <node concept="3F2HdR" id="6zmBjqUkwHG" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <property role="1cu_pB" value="3" />
+        <property role="1cu_pB" value="hQNNVxO/attractsRecursively" />
         <ref role="1NtTu8" to="zzzn:6zmBjqUkws7" resolve="args" />
         <node concept="2iRfu4" id="6zmBjqUkwHI" role="2czzBx" />
         <node concept="3F0ifn" id="6zmBjqUkwHM" role="2czzBI">
@@ -956,7 +956,7 @@
     <property role="TrG5h" value="DeleteBlockExpression" />
     <ref role="1h_SK9" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
     <node concept="1hA7zw" id="3kzwyUO7DfC" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3kzwyUO7DfD" role="1hA7z_">
         <node concept="3clFbS" id="3kzwyUO7DfE" role="2VODD2">
           <node concept="3clFbF" id="3kzwyUO7Gp0" role="3cqZAp">
@@ -999,7 +999,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="3kzwyUO7JtB" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="3kzwyUO7JtC" role="1hA7z_">
         <node concept="3clFbS" id="3kzwyUO7JtD" role="2VODD2">
           <node concept="3clFbF" id="3kzwyUO7JtE" role="3cqZAp">
@@ -1168,7 +1168,7 @@
         </node>
       </node>
       <node concept="Vb9p2" id="aPhVmWPYiS" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
       <node concept="VSNWy" id="aPhVmWODyt" role="3F10Kt">
         <node concept="1cFabM" id="aPhVmWODJC" role="1d8cEk">
@@ -1211,7 +1211,7 @@
     <node concept="1Qtc8_" id="3wXkdMVrgIe" role="IW6Ez">
       <node concept="3cWJ9i" id="3wXkdMVrgIi" role="1Qtc8$">
         <node concept="CtIbL" id="3wXkdMVrgIk" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
       </node>
       <node concept="IWgqT" id="3wXkdMVrgIo" role="1Qtc8A">
@@ -1273,7 +1273,7 @@
     <node concept="1Qtc8_" id="3wXkdMVsKfa" role="IW6Ez">
       <node concept="3cWJ9i" id="3wXkdMVsKfb" role="1Qtc8$">
         <node concept="CtIbL" id="3wXkdMVsKfc" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="3wXkdMVsKfd" role="1Qtc8A">
@@ -1572,7 +1572,7 @@
     <node concept="1Qtc8_" id="3WWvqarSfeU" role="IW6Ez">
       <node concept="3cWJ9i" id="3WWvqarSff0" role="1Qtc8$">
         <node concept="CtIbL" id="3WWvqarSff2" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="1A4kJjlVmVt/LEFT" />
         </node>
       </node>
       <node concept="IWgqT" id="3WWvqarSff8" role="1Qtc8A">
@@ -1633,7 +1633,7 @@
                 <node concept="1OKiuA" id="3WWvqarTPEh" role="2OqNvi">
                   <node concept="1Q80Hx" id="3WWvqarTPGo" role="lBI5i" />
                   <node concept="2B6iha" id="3WWvqarTPPL" role="lGT1i">
-                    <property role="1lyBwo" value="firstEditable" />
+                    <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
                   </node>
                 </node>
               </node>

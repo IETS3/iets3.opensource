@@ -2,7 +2,7 @@
 <model ref="r:9122e466-3f90-456e-ad8f-a1e7d08a365f(org.iets3.core.expr.typetags.lib.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="f3o0" ref="r:1c0a8177-746c-4e40-aabd-b06f37e1ab08(org.iets3.core.expr.typetags.lib.structure)" implicit="true" />
@@ -218,10 +218,10 @@
     <node concept="3F0ifn" id="sflsE7piEk" role="2wV5jI">
       <property role="3F0ifm" value="cur-patient" />
       <node concept="VechU" id="sflsE7pntl" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="Vb9p2" id="sflsE7pntm" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
   </node>
@@ -230,10 +230,10 @@
     <node concept="3F0ifn" id="sflsE7pjN8" role="2wV5jI">
       <property role="3F0ifm" value="cur-time" />
       <node concept="VechU" id="sflsE7pogr" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="Vb9p2" id="sflsE7pntq" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
   </node>
@@ -242,10 +242,10 @@
     <node concept="3F0ifn" id="sflsE7pjNA" role="2wV5jI">
       <property role="3F0ifm" value="cur-date" />
       <node concept="VechU" id="sflsE7pogu" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="Vb9p2" id="sflsE7pnth" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
   </node>

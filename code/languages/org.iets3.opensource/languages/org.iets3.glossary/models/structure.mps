@@ -63,9 +63,9 @@
     <property role="EcuMT" value="7551038907536067158" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="6zaFu4oPODo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="terms" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7551038907536067160" />
       <ref role="20lvS9" node="6zaFu4oPODn" resolve="GlossaryTerm" />
     </node>
@@ -84,16 +84,16 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oPQrq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="doc" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7551038907536074458" />
       <ref role="20lvS9" node="6zaFu4oPPYM" resolve="GlossaryDocSection" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oQ9ne" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attrs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="7551038907536152014" />
       <ref role="20lvS9" node="6zaFu4oQ9na" resolve="TermAttribute" />
     </node>
@@ -117,9 +117,8 @@
     <property role="EcuMT" value="7551038907536168764" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6zaFu4oQdt2" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="term" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7551038907536168770" />
       <ref role="20lvS9" node="6zaFu4oPODn" resolve="GlossaryTerm" />
     </node>
@@ -127,7 +126,7 @@
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oQfuc" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="alternate" />
       <property role="IQ2ns" value="7551038907536177036" />
       <ref role="20lvS9" node="6zaFu4oQfqR" resolve="AlternateText" />
@@ -151,9 +150,8 @@
     <property role="EcuMT" value="7551038907536661369" />
     <ref role="1TJDcQ" node="6zaFu4oQ9na" resolve="TermAttribute" />
     <node concept="1TJgyj" id="6zaFu4oS5HU" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="term" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7551038907536661370" />
       <ref role="20lvS9" node="6zaFu4oPODn" resolve="GlossaryTerm" />
     </node>
@@ -188,16 +186,14 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oSAXF" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="term" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7551038907536797547" />
       <ref role="20lvS9" node="6zaFu4oPODn" resolve="GlossaryTerm" />
     </node>
     <node concept="1TJgyj" id="6zaFu4oS_bx" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="word" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7551038907536790241" />
       <ref role="20lvS9" to="87nw:2dWzqxEBMSc" resolve="Word" />
     </node>

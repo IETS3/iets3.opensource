@@ -2,11 +2,11 @@
 <model ref="r:2780c3a3-2a9a-40e4-9d39-06e4aad0b26a(org.iets3.core.expr.util.interpreter.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
@@ -155,11 +155,8 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -250,6 +247,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -726,8 +731,40 @@
                                 <node concept="3clFbJ" id="6OunYCfkUBj" role="3cqZAp">
                                   <node concept="3clFbS" id="6OunYCfkUBl" role="3clFbx">
                                     <node concept="3SKdUt" id="Om1N8TykTj" role="3cqZAp">
-                                      <node concept="3SKdUq" id="Om1N8TykTl" role="3SKWNk">
-                                        <property role="3SKdUp" value="need to add coverage explicitly, as only its copy is evaluated" />
+                                      <node concept="1PaTwC" id="17Nm8oCo8Nr" role="3ndbpf">
+                                        <node concept="3oM_SD" id="17Nm8oCo8Ns" role="1PaTwD">
+                                          <property role="3oM_SC" value="need" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nt" role="1PaTwD">
+                                          <property role="3oM_SC" value="to" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nu" role="1PaTwD">
+                                          <property role="3oM_SC" value="add" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nv" role="1PaTwD">
+                                          <property role="3oM_SC" value="coverage" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nw" role="1PaTwD">
+                                          <property role="3oM_SC" value="explicitly," />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nx" role="1PaTwD">
+                                          <property role="3oM_SC" value="as" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Ny" role="1PaTwD">
+                                          <property role="3oM_SC" value="only" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8Nz" role="1PaTwD">
+                                          <property role="3oM_SC" value="its" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8N$" role="1PaTwD">
+                                          <property role="3oM_SC" value="copy" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8N_" role="1PaTwD">
+                                          <property role="3oM_SC" value="is" />
+                                        </node>
+                                        <node concept="3oM_SD" id="17Nm8oCo8NA" role="1PaTwD">
+                                          <property role="3oM_SC" value="evaluated" />
+                                        </node>
                                       </node>
                                     </node>
                                     <node concept="3clFbF" id="Om1N8TzAfK" role="3cqZAp">

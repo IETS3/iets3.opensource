@@ -2,8 +2,8 @@
 <model ref="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -113,9 +113,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -157,7 +155,6 @@
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -174,7 +171,9 @@
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
-      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF" />
+      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
+        <child id="422148324487088858" name="overridesFun" index="ujSXK" />
+      </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
@@ -283,7 +282,7 @@
             <ref role="2pJxaS" to="v0r8:5a_u3OyMvaf" resolve="AlgebraicType" />
             <node concept="2pIpSj" id="5a_u3OyMCQU" role="2pJxcM">
               <ref role="2pIpSl" to="v0r8:5a_u3OyMvag" resolve="declaration" />
-              <node concept="36biLy" id="5a_u3OyMD5Z" role="2pJxcZ">
+              <node concept="36biLy" id="5a_u3OyMD5Z" role="28nt2d">
                 <node concept="2OqwBi" id="5a_u3OyMAL_" role="36biLW">
                   <node concept="2OqwBi" id="5a_u3OyMAkt" role="2Oq$k0">
                     <node concept="1YBJjd" id="5a_u3OyMAbx" role="2Oq$k0">
@@ -708,7 +707,7 @@
       <property role="TrG5h" value="aaa" />
       <ref role="1YaFvo" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
     </node>
-    <node concept="bXqS6" id="54HsVvOk1Aa" role="bX4a1">
+    <node concept="bXqS6" id="54HsVvOk1Aa" role="ujSXK">
       <node concept="3clFbS" id="54HsVvOk1Ab" role="2VODD2">
         <node concept="3clFbF" id="54HsVvOk1FQ" role="3cqZAp">
           <node concept="3clFbT" id="54HsVvOk1FP" role="3clFbG">
@@ -1160,7 +1159,7 @@
               <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
               <node concept="2pIpSj" id="5a_u3Ozm5qs" role="2pJxcM">
                 <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
-                <node concept="2pJPED" id="5a_u3Ozm5r0" role="2pJxcZ">
+                <node concept="2pJPED" id="5a_u3Ozm5r0" role="28nt2d">
                   <ref role="2pJxaS" to="v0r8:5a_u3Ozm4Y3" resolve="GenericAlgebraicType" />
                 </node>
               </node>
@@ -1726,7 +1725,7 @@
               <ref role="2pJxaS" to="v0r8:28$LOSAcnob" resolve="QuotedTermType" />
               <node concept="2pIpSj" id="28$LOSAflue" role="2pJxcM">
                 <ref role="2pIpSl" to="v0r8:28$LOSAflsv" resolve="type" />
-                <node concept="36biLy" id="28$LOSAflu_" role="2pJxcZ">
+                <node concept="36biLy" id="28$LOSAflu_" role="28nt2d">
                   <node concept="2OqwBi" id="28$LOSAfmJu" role="36biLW">
                     <node concept="2OqwBi" id="28$LOSAfmbu" role="2Oq$k0">
                       <node concept="2OqwBi" id="28$LOSAflDK" role="2Oq$k0">
