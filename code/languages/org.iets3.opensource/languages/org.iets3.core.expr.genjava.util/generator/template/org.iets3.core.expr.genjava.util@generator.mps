@@ -12,7 +12,6 @@
   </languages>
   <imports>
     <import index="5pht" ref="r:2963f1d9-ee74-48d9-8a07-471e05081e4f(org.iets3.core.expr.genjava.util.structure)" />
-    <import index="rw5i" ref="r:4243557f-1c7a-4d6b-953a-807576e4bee7(org.iets3.core.expr.genjava.base@generator)" />
     <import index="kfo3" ref="r:6bb59b1e-6116-48ad-b11d-2641d4f6b6a1(org.iets3.core.expr.util.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />

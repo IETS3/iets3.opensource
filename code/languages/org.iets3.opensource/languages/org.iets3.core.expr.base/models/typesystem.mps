@@ -5328,99 +5328,6 @@
       <ref role="1YaFvo" to="hm2y:2ck7OjOLg5a" resolve="TupleAccessExpr" />
     </node>
   </node>
-  <node concept="1YbPZF" id="71dSyJVnX$N">
-    <property role="TrG5h" value="typeof_LetSubVariable" />
-    <property role="3GE5qa" value="deprecated_let" />
-    <node concept="3clFbS" id="71dSyJVnX$O" role="18ibNy">
-      <node concept="1Z5TYs" id="71dSyJVnXBm" role="3cqZAp">
-        <node concept="mw_s8" id="71dSyJVnXBE" role="1ZfhKB">
-          <node concept="1Z2H0r" id="71dSyJVnXBA" role="mwGJk">
-            <node concept="2OqwBi" id="71dSyJVnXDQ" role="1Z2MuG">
-              <node concept="1YBJjd" id="71dSyJVnXBV" role="2Oq$k0">
-                <ref role="1YBMHb" node="71dSyJVnX$Q" resolve="lsv" />
-              </node>
-              <node concept="3TrEf2" id="71dSyJVnXI5" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:71dSyJVnXep" resolve="expr" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="71dSyJVnXBp" role="1ZfhK$">
-          <node concept="1Z2H0r" id="71dSyJVnX_0" role="mwGJk">
-            <node concept="1YBJjd" id="71dSyJVnX_s" role="1Z2MuG">
-              <ref role="1YBMHb" node="71dSyJVnX$Q" resolve="lsv" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="71dSyJVnX$Q" role="1YuTPh">
-      <property role="TrG5h" value="lsv" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXem" resolve="LetSubVariable_old" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="71dSyJVnXmL">
-    <property role="TrG5h" value="typeof_LetSubVarRef" />
-    <property role="3GE5qa" value="deprecated_let" />
-    <node concept="3clFbS" id="71dSyJVnXmM" role="18ibNy">
-      <node concept="1Z5TYs" id="71dSyJVnXr5" role="3cqZAp">
-        <node concept="mw_s8" id="71dSyJVnXrp" role="1ZfhKB">
-          <node concept="1Z2H0r" id="71dSyJVnXrl" role="mwGJk">
-            <node concept="2OqwBi" id="71dSyJVnXtx" role="1Z2MuG">
-              <node concept="1YBJjd" id="71dSyJVnXrE" role="2Oq$k0">
-                <ref role="1YBMHb" node="71dSyJVnXmO" resolve="vr" />
-              </node>
-              <node concept="3TrEf2" id="71dSyJVnXxG" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:71dSyJVnXlI" resolve="var" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="71dSyJVnXr8" role="1ZfhK$">
-          <node concept="1Z2H0r" id="71dSyJVnXmY" role="mwGJk">
-            <node concept="1YBJjd" id="71dSyJVnXnq" role="1Z2MuG">
-              <ref role="1YBMHb" node="71dSyJVnXmO" resolve="vr" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="71dSyJVnXmO" role="1YuTPh">
-      <property role="TrG5h" value="vr" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXlH" resolve="LetSubVarRef_old" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="2sdKjoPEzDO">
-    <property role="TrG5h" value="typeof_LetExpression" />
-    <property role="3GE5qa" value="deprecated_let" />
-    <node concept="3clFbS" id="2sdKjoPEzDP" role="18ibNy">
-      <node concept="1Z5TYs" id="2sdKjoPEzGx" role="3cqZAp">
-        <node concept="mw_s8" id="2sdKjoPEzGX" role="1ZfhKB">
-          <node concept="1Z2H0r" id="2sdKjoPEzGT" role="mwGJk">
-            <node concept="2OqwBi" id="2sdKjoPEzJR" role="1Z2MuG">
-              <node concept="1YBJjd" id="2sdKjoPEzHh" role="2Oq$k0">
-                <ref role="1YBMHb" node="2sdKjoPEzDR" resolve="letExpression" />
-              </node>
-              <node concept="3TrEf2" id="2sdKjoPEzQ3" role="2OqNvi">
-                <ref role="3Tt5mk" to="hm2y:71dSyJVnXek" resolve="main" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="2sdKjoPEzG$" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2sdKjoPEzDY" role="mwGJk">
-            <node concept="1YBJjd" id="2sdKjoPEzEt" role="1Z2MuG">
-              <ref role="1YBMHb" node="2sdKjoPEzDR" resolve="letExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2sdKjoPEzDR" role="1YuTPh">
-      <property role="TrG5h" value="letExpression" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="6UxFDrx4dTL">
     <property role="TrG5h" value="typeof_AlternativesExpression" />
     <property role="3GE5qa" value="alt" />
@@ -7665,24 +7572,6 @@
     <node concept="1YaCAy" id="4Pi6J8BVmrn" role="1YuTPh">
       <property role="TrG5h" value="pe" />
       <ref role="1YaFvo" to="hm2y:4Pi6J8BU$OM" resolve="PragmaExpression" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="4qowQiBshwl">
-    <property role="3GE5qa" value="deprecated_let" />
-    <property role="TrG5h" value="checkLetExpression_old" />
-    <node concept="3clFbS" id="4qowQiBshwm" role="18ibNy">
-      <node concept="2MkqsV" id="4qowQiBshwy" role="3cqZAp">
-        <node concept="1YBJjd" id="4qowQiBstLt" role="2OEOjV">
-          <ref role="1YBMHb" node="4qowQiBshwo" resolve="letExpression_old" />
-        </node>
-        <node concept="Xl_RD" id="4qowQiBvTI4" role="2MkJ7o">
-          <property role="Xl_RC" value="Let expressions are deprecated and will be removed soon.\nPlease make sure the language org.iets3.core.expr.lambda is imported and apply the intention 'Replace Let Expression by Block'" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4qowQiBshwo" role="1YuTPh">
-      <property role="TrG5h" value="letExpression_old" />
-      <ref role="1YaFvo" to="hm2y:71dSyJVnXcK" resolve="LetExpression_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="mQGcCvPugH">
