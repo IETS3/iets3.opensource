@@ -99,9 +99,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -366,7 +364,7 @@
                   <ref role="2pJxaS" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
                   <node concept="2pIpSj" id="1$1rueeDjgd" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
-                    <node concept="36biLy" id="1$1rueeDjQ5" role="2pJxcZ">
+                    <node concept="36biLy" id="1$1rueeDjQ5" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBnY_" role="36biLW">
                         <node concept="chp4Y" id="1mDdTGBnZ0" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -423,7 +421,7 @@
                   <ref role="2pJxaS" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
                   <node concept="2pIpSj" id="1$1rueeG2BW" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
-                    <node concept="36biLy" id="1$1rueeG2BX" role="2pJxcZ">
+                    <node concept="36biLy" id="1$1rueeG2BX" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBobE" role="36biLW">
                         <node concept="chp4Y" id="1mDdTGBoc5" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -898,7 +896,7 @@
               <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
               <node concept="2pIpSj" id="5Pgo_ASByrL" role="2pJxcM">
                 <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                <node concept="36biLy" id="5Pgo_ASBysc" role="2pJxcZ">
+                <node concept="36biLy" id="5Pgo_ASBysc" role="28nt2d">
                   <node concept="2YIFZM" id="5wDe8wA6zrW" role="36biLW">
                     <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
@@ -951,7 +949,7 @@
                   <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
                   <node concept="2pIpSj" id="5Pgo_ASHvQh" role="2pJxcM">
                     <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                    <node concept="36biLy" id="5Pgo_ASHvQG" role="2pJxcZ">
+                    <node concept="36biLy" id="5Pgo_ASHvQG" role="28nt2d">
                       <node concept="2YIFZM" id="5wDe8wA6zrX" role="36biLW">
                         <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
                         <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
@@ -1182,7 +1180,7 @@
                   <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
                   <node concept="2pIpSj" id="5Pgo_ASD30p" role="2pJxcM">
                     <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                    <node concept="36biLy" id="5Pgo_ASD30P" role="2pJxcZ">
+                    <node concept="36biLy" id="5Pgo_ASD30P" role="28nt2d">
                       <node concept="2X3wrD" id="5Pgo_ASDX5R" role="36biLW">
                         <ref role="2X3Bk0" node="5Pgo_ASDVW3" resolve="valueType" />
                       </node>

@@ -92,10 +92,6 @@
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -104,8 +100,9 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="2469893808086079682" name="jetbrains.mps.lang.smodel.structure.LanguageIdentityBySourceModule" flags="ng" index="PFCIn">
-        <child id="2469893808086079721" name="moduleReference" index="PFCIW" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -312,11 +309,9 @@
             <node concept="10QFUN" id="1yW0h04CwD6" role="1eOMHV">
               <node concept="2OqwBi" id="1yW0h04CwD1" role="10QFUP">
                 <node concept="pHN19" id="1yW0h04CwD2" role="2Oq$k0">
-                  <node concept="PFCIn" id="1yW0h04CwD3" role="2V$M_3">
-                    <node concept="20RdaH" id="1yW0h04CwD4" role="PFCIW">
-                      <property role="20Rdg5" value="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" />
-                      <property role="20Rdg7" value="org.iets3.core.expr.math" />
-                    </node>
+                  <node concept="2V$Bhx" id="17Nm8oCo8Oa" role="2V$M_3">
+                    <property role="2V$B1T" value="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" />
+                    <property role="2V$B1Q" value="org.iets3.core.expr.math" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1yW0h04CwD5" role="2OqNvi">

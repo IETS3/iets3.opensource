@@ -132,12 +132,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -517,7 +516,7 @@
                               <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                               <node concept="2pJxcG" id="5xEoEMrDWx1" role="2pJxcM">
                                 <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                                <node concept="Xl_RD" id="5xEoEMrDWx2" role="2pJxcZ">
+                                <node concept="Xl_RD" id="5xEoEMrDWx2" role="28ntcv">
                                   <property role="Xl_RC" value="no value in that cell" />
                                 </node>
                               </node>
@@ -912,11 +911,11 @@
                           <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
                           <node concept="2pIpSj" id="VApoyDzGC0" role="2pJxcM">
                             <ref role="2pIpSl" to="700h:3tudP__pYOT" resolve="sizeConstraint" />
-                            <node concept="2pJPED" id="VApoyDzGC1" role="2pJxcZ">
+                            <node concept="2pJPED" id="VApoyDzGC1" role="28nt2d">
                               <ref role="2pJxaS" to="700h:19PglA20qX_" resolve="CollectionSizeSpec" />
                               <node concept="2pJxcG" id="VApoyDzGC2" role="2pJxcM">
                                 <ref role="2pJxcJ" to="700h:19PglA20qXJ" resolve="min" />
-                                <node concept="3cpWs3" id="VApoyDzGC3" role="2pJxcZ">
+                                <node concept="3cpWs3" id="VApoyDzGC3" role="28ntcv">
                                   <node concept="Xl_RD" id="VApoyDzGC4" role="3uHU7w">
                                     <property role="Xl_RC" value="" />
                                   </node>
@@ -930,7 +929,7 @@
                               </node>
                               <node concept="2pJxcG" id="VApoyDzGCa" role="2pJxcM">
                                 <ref role="2pJxcJ" to="700h:19PglA20qXK" resolve="max" />
-                                <node concept="3cpWs3" id="VApoyDzGCb" role="2pJxcZ">
+                                <node concept="3cpWs3" id="VApoyDzGCb" role="28ntcv">
                                   <node concept="Xl_RD" id="VApoyDzGCc" role="3uHU7w">
                                     <property role="Xl_RC" value="" />
                                   </node>
@@ -946,7 +945,7 @@
                           </node>
                           <node concept="2pIpSj" id="VApoyDzGCi" role="2pJxcM">
                             <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
-                            <node concept="36biLy" id="VApoyDzGCj" role="2pJxcZ">
+                            <node concept="36biLy" id="VApoyDzGCj" role="28nt2d">
                               <node concept="1PxgMI" id="VApoyDzGCk" role="36biLW">
                                 <node concept="chp4Y" id="VApoyDzGCl" role="3oSUPX">
                                   <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -1001,7 +1000,7 @@
                     <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                     <node concept="2pJxcG" id="5avmkTFm1Qw" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                      <node concept="Xl_RD" id="5avmkTFm1RI" role="2pJxcZ">
+                      <node concept="Xl_RD" id="5avmkTFm1RI" role="28ntcv">
                         <property role="Xl_RC" value="not a linear range" />
                       </node>
                     </node>

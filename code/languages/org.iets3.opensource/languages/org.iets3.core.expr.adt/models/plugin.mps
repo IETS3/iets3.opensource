@@ -6,6 +6,7 @@
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -183,11 +184,8 @@
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -234,6 +232,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1391,8 +1397,19 @@
           </node>
         </node>
         <node concept="3SKdUt" id="28$LOSBSYWA" role="3cqZAp">
-          <node concept="3SKdUq" id="28$LOSBSYWC" role="3SKWNk">
-            <property role="3SKdUp" value="toplevel wildcard or name" />
+          <node concept="1PaTwC" id="17Nm8oCo8vt" role="3ndbpf">
+            <node concept="3oM_SD" id="17Nm8oCo8vu" role="1PaTwD">
+              <property role="3oM_SC" value="toplevel" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vv" role="1PaTwD">
+              <property role="3oM_SC" value="wildcard" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vw" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vx" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="5a_u3Ozt3gL" role="3cqZAp">
@@ -1632,8 +1649,40 @@
         </node>
         <node concept="3clFbH" id="28$LOSBTKfY" role="3cqZAp" />
         <node concept="3SKdUt" id="28$LOSBTMDQ" role="3cqZAp">
-          <node concept="3SKdUq" id="28$LOSBTMDS" role="3SKWNk">
-            <property role="3SKdUp" value="add empty list binding in any case for last (list) argument" />
+          <node concept="1PaTwC" id="17Nm8oCo8vy" role="3ndbpf">
+            <node concept="3oM_SD" id="17Nm8oCo8vz" role="1PaTwD">
+              <property role="3oM_SC" value="add" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8v$" role="1PaTwD">
+              <property role="3oM_SC" value="empty" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8v_" role="1PaTwD">
+              <property role="3oM_SC" value="list" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vA" role="1PaTwD">
+              <property role="3oM_SC" value="binding" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vB" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vC" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vD" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vE" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vF" role="1PaTwD">
+              <property role="3oM_SC" value="last" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vG" role="1PaTwD">
+              <property role="3oM_SC" value="(list)" />
+            </node>
+            <node concept="3oM_SD" id="17Nm8oCo8vH" role="1PaTwD">
+              <property role="3oM_SC" value="argument" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="28$LOSBTp12" role="3cqZAp">
@@ -1849,8 +1898,16 @@
             <node concept="3clFbJ" id="5a_u3OyX3R5" role="3cqZAp">
               <node concept="3clFbS" id="5a_u3OyX3R7" role="3clFbx">
                 <node concept="3SKdUt" id="5a_u3OyX4Lo" role="3cqZAp">
-                  <node concept="3SKdUq" id="5a_u3OyX4Lq" role="3SKWNk">
-                    <property role="3SKdUp" value="ok, matches always" />
+                  <node concept="1PaTwC" id="17Nm8oCo8vI" role="3ndbpf">
+                    <node concept="3oM_SD" id="17Nm8oCo8vJ" role="1PaTwD">
+                      <property role="3oM_SC" value="ok," />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8vK" role="1PaTwD">
+                      <property role="3oM_SC" value="matches" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8vL" role="1PaTwD">
+                      <property role="3oM_SC" value="always" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2274,8 +2331,16 @@
                 <node concept="3clFbJ" id="28$LOSBQvls" role="3cqZAp">
                   <node concept="3clFbS" id="28$LOSBQvlu" role="3clFbx">
                     <node concept="3SKdUt" id="28$LOSBQLcr" role="3cqZAp">
-                      <node concept="3SKdUq" id="28$LOSBQLct" role="3SKWNk">
-                        <property role="3SKdUp" value="store single value" />
+                      <node concept="1PaTwC" id="17Nm8oCo8vM" role="3ndbpf">
+                        <node concept="3oM_SD" id="17Nm8oCo8vN" role="1PaTwD">
+                          <property role="3oM_SC" value="store" />
+                        </node>
+                        <node concept="3oM_SD" id="17Nm8oCo8vO" role="1PaTwD">
+                          <property role="3oM_SC" value="single" />
+                        </node>
+                        <node concept="3oM_SD" id="17Nm8oCo8vP" role="1PaTwD">
+                          <property role="3oM_SC" value="value" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbJ" id="28$LOSBTDaH" role="3cqZAp">
@@ -2347,8 +2412,19 @@
                   <node concept="3eNFk2" id="28$LOSBQxiX" role="3eNLev">
                     <node concept="3clFbS" id="28$LOSBQxiZ" role="3eOfB_">
                       <node concept="3SKdUt" id="28$LOSBQLrg" role="3cqZAp">
-                        <node concept="3SKdUq" id="28$LOSBQLri" role="3SKWNk">
-                          <property role="3SKdUp" value="append to existing list" />
+                        <node concept="1PaTwC" id="17Nm8oCo8vQ" role="3ndbpf">
+                          <node concept="3oM_SD" id="17Nm8oCo8vR" role="1PaTwD">
+                            <property role="3oM_SC" value="append" />
+                          </node>
+                          <node concept="3oM_SD" id="17Nm8oCo8vS" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="17Nm8oCo8vT" role="1PaTwD">
+                            <property role="3oM_SC" value="existing" />
+                          </node>
+                          <node concept="3oM_SD" id="17Nm8oCo8vU" role="1PaTwD">
+                            <property role="3oM_SC" value="list" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="28$LOSBQz6W" role="3cqZAp">

@@ -2,11 +2,11 @@
 <model ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
   </languages>
   <imports>
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
@@ -153,11 +153,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -194,6 +191,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1308,8 +1313,58 @@
               </node>
             </node>
             <node concept="3SKdUt" id="3SMYSUUkBZX" role="3cqZAp">
-              <node concept="3SKdUq" id="3SMYSUUkBZZ" role="3SKWNk">
-                <property role="3SKdUp" value="max of the empty list (arbitrarily chosen as -Double.MAX_VALUE since there is no -INF in type BigDecimal)" />
+              <node concept="1PaTwC" id="17Nm8oCo8Kh" role="3ndbpf">
+                <node concept="3oM_SD" id="17Nm8oCo8Ki" role="1PaTwD">
+                  <property role="3oM_SC" value="max" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kj" role="1PaTwD">
+                  <property role="3oM_SC" value="of" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kk" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kl" role="1PaTwD">
+                  <property role="3oM_SC" value="empty" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Km" role="1PaTwD">
+                  <property role="3oM_SC" value="list" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kn" role="1PaTwD">
+                  <property role="3oM_SC" value="(arbitrarily" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Ko" role="1PaTwD">
+                  <property role="3oM_SC" value="chosen" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kp" role="1PaTwD">
+                  <property role="3oM_SC" value="as" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kq" role="1PaTwD">
+                  <property role="3oM_SC" value="-Double.MAX_VALUE" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kr" role="1PaTwD">
+                  <property role="3oM_SC" value="since" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Ks" role="1PaTwD">
+                  <property role="3oM_SC" value="there" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kt" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Ku" role="1PaTwD">
+                  <property role="3oM_SC" value="no" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kv" role="1PaTwD">
+                  <property role="3oM_SC" value="-INF" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kw" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Kx" role="1PaTwD">
+                  <property role="3oM_SC" value="type" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8Ky" role="1PaTwD">
+                  <property role="3oM_SC" value="BigDecimal)" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="3SMYSUUk_xj" role="3cqZAp">
@@ -1595,8 +1650,58 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="3SMYSUUkN4N" role="3cqZAp">
-                <node concept="3SKdUq" id="3SMYSUUkN4P" role="3SKWNk">
-                  <property role="3SKdUp" value="max of the empty list (arbitrarily chosen as Long.MIN_VALUE since there is no -INF in type BigInteger)" />
+                <node concept="1PaTwC" id="17Nm8oCo8Kz" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8K$" role="1PaTwD">
+                    <property role="3oM_SC" value="max" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8K_" role="1PaTwD">
+                    <property role="3oM_SC" value="of" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KA" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KB" role="1PaTwD">
+                    <property role="3oM_SC" value="empty" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KC" role="1PaTwD">
+                    <property role="3oM_SC" value="list" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KD" role="1PaTwD">
+                    <property role="3oM_SC" value="(arbitrarily" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KE" role="1PaTwD">
+                    <property role="3oM_SC" value="chosen" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KF" role="1PaTwD">
+                    <property role="3oM_SC" value="as" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KG" role="1PaTwD">
+                    <property role="3oM_SC" value="Long.MIN_VALUE" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KH" role="1PaTwD">
+                    <property role="3oM_SC" value="since" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KI" role="1PaTwD">
+                    <property role="3oM_SC" value="there" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KJ" role="1PaTwD">
+                    <property role="3oM_SC" value="is" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KK" role="1PaTwD">
+                    <property role="3oM_SC" value="no" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KL" role="1PaTwD">
+                    <property role="3oM_SC" value="-INF" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KM" role="1PaTwD">
+                    <property role="3oM_SC" value="in" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KN" role="1PaTwD">
+                    <property role="3oM_SC" value="type" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8KO" role="1PaTwD">
+                    <property role="3oM_SC" value="BigInteger)" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="1RwPUjzjmil" role="3cqZAp">
@@ -1922,8 +2027,58 @@
               </node>
             </node>
             <node concept="3SKdUt" id="3SMYSUUtyy8" role="3cqZAp">
-              <node concept="3SKdUq" id="3SMYSUUtyy9" role="3SKWNk">
-                <property role="3SKdUp" value="min of the empty list (arbitrarily chosen as Double.MAX_VALUE since there is no INF in type BigDecimal)" />
+              <node concept="1PaTwC" id="17Nm8oCo8KP" role="3ndbpf">
+                <node concept="3oM_SD" id="17Nm8oCo8KQ" role="1PaTwD">
+                  <property role="3oM_SC" value="min" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KR" role="1PaTwD">
+                  <property role="3oM_SC" value="of" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KS" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KT" role="1PaTwD">
+                  <property role="3oM_SC" value="empty" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KU" role="1PaTwD">
+                  <property role="3oM_SC" value="list" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KV" role="1PaTwD">
+                  <property role="3oM_SC" value="(arbitrarily" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KW" role="1PaTwD">
+                  <property role="3oM_SC" value="chosen" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KX" role="1PaTwD">
+                  <property role="3oM_SC" value="as" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KY" role="1PaTwD">
+                  <property role="3oM_SC" value="Double.MAX_VALUE" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8KZ" role="1PaTwD">
+                  <property role="3oM_SC" value="since" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L0" role="1PaTwD">
+                  <property role="3oM_SC" value="there" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L1" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L2" role="1PaTwD">
+                  <property role="3oM_SC" value="no" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L3" role="1PaTwD">
+                  <property role="3oM_SC" value="INF" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L4" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L5" role="1PaTwD">
+                  <property role="3oM_SC" value="type" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8L6" role="1PaTwD">
+                  <property role="3oM_SC" value="BigDecimal)" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="6HHp2WnvqYd" role="3cqZAp">
@@ -2208,8 +2363,58 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="3SMYSUUtS4K" role="3cqZAp">
-                <node concept="3SKdUq" id="3SMYSUUtS4L" role="3SKWNk">
-                  <property role="3SKdUp" value="min of the empty list (arbitrarily chosen as Long.MAX_VALUE since there is no INF in type BigInteger)" />
+                <node concept="1PaTwC" id="17Nm8oCo8L7" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8L8" role="1PaTwD">
+                    <property role="3oM_SC" value="min" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8L9" role="1PaTwD">
+                    <property role="3oM_SC" value="of" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8La" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lb" role="1PaTwD">
+                    <property role="3oM_SC" value="empty" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lc" role="1PaTwD">
+                    <property role="3oM_SC" value="list" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ld" role="1PaTwD">
+                    <property role="3oM_SC" value="(arbitrarily" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Le" role="1PaTwD">
+                    <property role="3oM_SC" value="chosen" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lf" role="1PaTwD">
+                    <property role="3oM_SC" value="as" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lg" role="1PaTwD">
+                    <property role="3oM_SC" value="Long.MAX_VALUE" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lh" role="1PaTwD">
+                    <property role="3oM_SC" value="since" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Li" role="1PaTwD">
+                    <property role="3oM_SC" value="there" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lj" role="1PaTwD">
+                    <property role="3oM_SC" value="is" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lk" role="1PaTwD">
+                    <property role="3oM_SC" value="no" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ll" role="1PaTwD">
+                    <property role="3oM_SC" value="INF" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lm" role="1PaTwD">
+                    <property role="3oM_SC" value="in" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ln" role="1PaTwD">
+                    <property role="3oM_SC" value="type" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Lo" role="1PaTwD">
+                    <property role="3oM_SC" value="BigInteger)" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="6HHp2WnvqXi" role="3cqZAp">

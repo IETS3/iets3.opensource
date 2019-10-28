@@ -2,7 +2,7 @@
 <model ref="r:b170f72b-a617-47ec-b912-df3f2965e1b4(org.iets3.core.expr.process.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
@@ -718,7 +718,7 @@
         <property role="2aYyvO" value="unordered" />
         <ref role="1NtTu8" to="7y2b:4IV0h48lf9e" resolve="ordered" />
         <node concept="Vb9p2" id="5mZZgpx37EK" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3EZMnI" id="31HpwbvYAF7" role="3EZMnx">
@@ -748,7 +748,7 @@
           <property role="2aYyvO" value="skip" />
           <ref role="1NtTu8" to="7y2b:31HpwbwIFcD" resolve="removeInsteadOfSkip" />
           <node concept="Vb9p2" id="31HpwbwIFvx" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="2iRfu4" id="31HpwbvYAFc" role="2iSdaV" />

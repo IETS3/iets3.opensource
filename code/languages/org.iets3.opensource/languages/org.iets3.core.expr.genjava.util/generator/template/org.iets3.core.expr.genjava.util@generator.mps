@@ -2,7 +2,7 @@
 <model ref="r:1dfe8d4f-ee6a-48e4-a00f-b8497efb0e5c(org.iets3.core.expr.genjava.util@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="15d858db-2d21-4ae9-90c4-f595086d0bdf" name="org.iets3.core.expr.genjava.util" version="-1" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />

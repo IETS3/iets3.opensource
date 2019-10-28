@@ -2,7 +2,7 @@
 <model ref="r:c2a678e3-bb82-476e-97a6-99ae6486dd17(org.iets3.core.expr.doc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -94,7 +94,7 @@
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
       <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
-        <child id="7307171874933775112" name="supercedesFun" index="2bjP4i" />
+        <child id="7307171874933775112" name="supersedesFun" index="2bjP4i" />
       </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />

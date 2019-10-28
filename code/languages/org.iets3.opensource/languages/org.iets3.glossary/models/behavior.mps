@@ -129,12 +129,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -504,13 +503,13 @@
                               <ref role="2pJxaS" to="tuf9:6zaFu4oS_ac" resolve="FoundWordAssResult" />
                               <node concept="2pJxcG" id="6zaFu4oSJ0n" role="2pJxcM">
                                 <ref role="2pJxcJ" to="tuf9:6zaFu4oS_bz" resolve="position" />
-                                <node concept="37vLTw" id="6zaFu4oSJ70" role="2pJxcZ">
+                                <node concept="37vLTw" id="6zaFu4oSJ70" role="28ntcv">
                                   <ref role="3cqZAo" node="6zaFu4oSGXp" resolve="pos" />
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="6zaFu4oSJiP" role="2pJxcM">
                                 <ref role="2pIpSl" to="tuf9:6zaFu4oSAXF" resolve="term" />
-                                <node concept="36biLy" id="6zaFu4oSJo_" role="2pJxcZ">
+                                <node concept="36biLy" id="6zaFu4oSJo_" role="28nt2d">
                                   <node concept="2GrUjf" id="6zaFu4oSJFm" role="36biLW">
                                     <ref role="2Gs0qQ" node="6zaFu4oSGCZ" resolve="term" />
                                   </node>
@@ -518,7 +517,7 @@
                               </node>
                               <node concept="2pIpSj" id="6zaFu4oSJqd" role="2pJxcM">
                                 <ref role="2pIpSl" to="tuf9:6zaFu4oS_bx" resolve="word" />
-                                <node concept="36biLy" id="6zaFu4oSJwT" role="2pJxcZ">
+                                <node concept="36biLy" id="6zaFu4oSJwT" role="28nt2d">
                                   <node concept="2GrUjf" id="6zaFu4oSJx6" role="36biLW">
                                     <ref role="2Gs0qQ" node="6zaFu4oS$Pw" resolve="w" />
                                   </node>
@@ -588,13 +587,13 @@
                                   <ref role="2pJxaS" to="tuf9:6zaFu4oS_ac" resolve="FoundWordAssResult" />
                                   <node concept="2pJxcG" id="lp3OKvgbMl" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tuf9:6zaFu4oS_bz" resolve="position" />
-                                    <node concept="37vLTw" id="lp3OKvg$Pi" role="2pJxcZ">
+                                    <node concept="37vLTw" id="lp3OKvg$Pi" role="28ntcv">
                                       <ref role="3cqZAo" node="lp3OKvgaSY" resolve="aliasPos" />
                                     </node>
                                   </node>
                                   <node concept="2pIpSj" id="lp3OKvgbMn" role="2pJxcM">
                                     <ref role="2pIpSl" to="tuf9:6zaFu4oSAXF" resolve="term" />
-                                    <node concept="36biLy" id="lp3OKvgbMo" role="2pJxcZ">
+                                    <node concept="36biLy" id="lp3OKvgbMo" role="28nt2d">
                                       <node concept="2GrUjf" id="lp3OKvgbMp" role="36biLW">
                                         <ref role="2Gs0qQ" node="6zaFu4oSGCZ" resolve="term" />
                                       </node>
@@ -602,13 +601,13 @@
                                   </node>
                                   <node concept="2pJxcG" id="lp3OKvgbY5" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tuf9:lp3OKvg8mt" resolve="foundAlias" />
-                                    <node concept="37vLTw" id="lp3OKvgc3f" role="2pJxcZ">
+                                    <node concept="37vLTw" id="lp3OKvgc3f" role="28ntcv">
                                       <ref role="3cqZAo" node="lp3OKvgaNr" resolve="t" />
                                     </node>
                                   </node>
                                   <node concept="2pIpSj" id="lp3OKvgbMq" role="2pJxcM">
                                     <ref role="2pIpSl" to="tuf9:6zaFu4oS_bx" resolve="word" />
-                                    <node concept="36biLy" id="lp3OKvgbMr" role="2pJxcZ">
+                                    <node concept="36biLy" id="lp3OKvgbMr" role="28nt2d">
                                       <node concept="2GrUjf" id="lp3OKvgbMs" role="36biLW">
                                         <ref role="2Gs0qQ" node="6zaFu4oS$Pw" resolve="w" />
                                       </node>
@@ -750,7 +749,7 @@
                 <ref role="2pJxaS" to="tuf9:6zaFu4oQdsW" resolve="TermRefWord" />
                 <node concept="2pIpSj" id="lp3OKvfLf1" role="2pJxcM">
                   <ref role="2pIpSl" to="tuf9:6zaFu4oQdt2" resolve="term" />
-                  <node concept="36biLy" id="lp3OKvfLf2" role="2pJxcZ">
+                  <node concept="36biLy" id="lp3OKvfLf2" role="28nt2d">
                     <node concept="2OqwBi" id="lp3OKvfLf3" role="36biLW">
                       <node concept="13iPFW" id="lp3OKvfLf4" role="2Oq$k0" />
                       <node concept="3TrEf2" id="lp3OKvfLf5" role="2OqNvi">

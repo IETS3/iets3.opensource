@@ -2,7 +2,7 @@
 <model ref="r:c1f7e681-4373-4429-b23f-337a1dd93658(org.iets3.core.users.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
@@ -82,9 +82,9 @@
     <property role="EcuMT" value="8479184967780604478" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="7mG7sQPphD1" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="users" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="8479184967780604481" />
       <ref role="20lvS9" node="7mG7sQPphB4" resolve="User" />
     </node>
@@ -100,9 +100,8 @@
     <property role="EcuMT" value="8479184967780770791" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mG7sQPpUfC" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="user" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8479184967780770792" />
       <ref role="20lvS9" node="7mG7sQPphB4" resolve="User" />
     </node>

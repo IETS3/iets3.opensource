@@ -2,7 +2,7 @@
 <model ref="r:66e1c722-f2ec-477b-9124-a248fe43156a(org.iets3.core.expr.messages.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -691,7 +691,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="7OtDX6qkaOM" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
       </node>
       <node concept="2iRfu4" id="3vxfdxbjbRV" role="2iSdaV" />
@@ -828,10 +828,10 @@
     <node concept="14StLt" id="3vxfdxbhnuU" role="V601i">
       <property role="TrG5h" value="message" />
       <node concept="Vb9p2" id="3vxfdxbhnuX" role="3F10Kt">
-        <property role="Vbekb" value="BOLD_ITALIC" />
+        <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
       </node>
       <node concept="VechU" id="3vxfdxbhnv5" role="3F10Kt">
-        <property role="Vb096" value="orange" />
+        <property role="Vb096" value="fLwANPp/orange" />
         <node concept="1iSF2X" id="3vxfdxbhJsh" role="VblUZ">
           <property role="1iTho6" value="44728F" />
         </node>
@@ -893,7 +893,7 @@
       <node concept="3F0ifn" id="3vxfdxbkQiY" role="3EZMnx">
         <property role="3F0ifm" value="error[" />
         <node concept="VechU" id="3vxfdxbkQj5" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
         <node concept="11LMrY" id="5ZJ96SJAifL" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -902,13 +902,13 @@
       <node concept="3F0A7n" id="5ZJ96SJAifR" role="3EZMnx">
         <ref role="1NtTu8" to="kelk:5ZJ96SJAc3u" resolve="errorID" />
         <node concept="VechU" id="5ZJ96SJAig7" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
       </node>
       <node concept="3F0ifn" id="5ZJ96SJAc3Y" role="3EZMnx">
         <property role="3F0ifm" value="]" />
         <node concept="VechU" id="5ZJ96SJAc3Z" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
         <node concept="11L4FC" id="5ZJ96SJAifA" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -935,7 +935,7 @@
       <node concept="3F0A7n" id="7OtDX6qjWQd" role="3EZMnx">
         <ref role="1NtTu8" to="kelk:7OtDX6qjWPO" resolve="warningID" />
         <node concept="VechU" id="7OtDX6qjWQe" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
           <node concept="1iSF2X" id="7OtDX6qjWQz" role="VblUZ">
             <property role="1iTho6" value="FD7D01" />
           </node>

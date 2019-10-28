@@ -2,7 +2,7 @@
 <model ref="r:9ed37aa3-295d-400f-9a08-9c363b19e30b(org.iets3.core.expr.query.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -46,28 +46,26 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5QDPRL$oi4v" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851402527" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5QDPRL$pwTW" resolve="QuerySource" />
     </node>
     <node concept="1TJgyj" id="5QDPRL$pd_y" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851646306" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="filter" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5QDPRL$oUsO" resolve="QueryFilter" />
     </node>
     <node concept="1TJgyj" id="5QDPRL$qmK4" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851945988" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="transform" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5QDPRL$qhvL" resolve="QueryTransform" />
     </node>
     <node concept="1TJgyj" id="5QDPRL$x5n_" role="1TKVEi">
       <property role="IQ2ns" value="6749162445853709797" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="group" />
       <ref role="20lvS9" node="5QDPRL$x2oZ" resolve="QueryGroup" />
     </node>
@@ -93,9 +91,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5QDPRL$px4h" role="1TKVEi">
       <property role="IQ2ns" value="6749162445851726097" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
@@ -111,16 +109,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5QDPRL$x3ZY" role="1TKVEi">
       <property role="IQ2ns" value="6749162445853704190" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="by" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5QDPRL$x3FP" resolve="QueryGroupBy" />
     </node>
     <node concept="1TJgyj" id="5QDPRL$xyOH" role="1TKVEi">
       <property role="IQ2ns" value="6749162445853830445" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="build" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5QDPRL$xy5s" resolve="QueryGroupBuild" />
     </node>
   </node>

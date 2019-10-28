@@ -2,7 +2,7 @@
 <model ref="r:8e857b0d-9257-4141-8e2f-d4cb950b0f1f(org.iets3.core.assessment.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -234,7 +234,7 @@
           </node>
         </node>
         <node concept="VechU" id="mhbzaHsjb1" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
       <node concept="3F0ifn" id="mhbzaHsvJ2" role="3EZMnx">
@@ -291,7 +291,7 @@
       <node concept="3F1sOY" id="5ZLQMNq2l7d" role="3EZMnx">
         <ref role="1NtTu8" to="330h:5ZLQMNq2hPP" resolve="traceKind" />
         <node concept="VechU" id="1SeAacxoe9D" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
       <node concept="3F0ifn" id="5ZLQMNq2l7p" role="3EZMnx">
@@ -382,7 +382,7 @@
       <node concept="3F1sOY" id="6_Ift$_MtRh" role="3EZMnx">
         <ref role="1NtTu8" to="330h:6_Ift$_LXGg" resolve="kind" />
         <node concept="VechU" id="2eLegUqgCHZ" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
       <node concept="3F0ifn" id="6_Ift$_MtR_" role="3EZMnx">

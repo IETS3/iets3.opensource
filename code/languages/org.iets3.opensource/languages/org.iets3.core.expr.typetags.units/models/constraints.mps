@@ -2,6 +2,7 @@
 <model ref="r:4227d408-7161-4955-b7a5-192aa7acfafc(org.iets3.core.expr.typetags.units.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -66,11 +67,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -140,6 +138,14 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -448,8 +454,28 @@
       <node concept="QB0g5" id="4SwD0JTm9Yu" role="QCWH9">
         <node concept="3clFbS" id="4SwD0JTm9Yv" role="2VODD2">
           <node concept="3SKdUt" id="4SwD0JTohel" role="3cqZAp">
-            <node concept="3SKdUq" id="4SwD0JTohen" role="3SKWNk">
-              <property role="3SKdUp" value="white spaces not allowed in unit names" />
+            <node concept="1PaTwC" id="17Nm8oCo8Hs" role="3ndbpf">
+              <node concept="3oM_SD" id="17Nm8oCo8Ht" role="1PaTwD">
+                <property role="3oM_SC" value="white" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hu" role="1PaTwD">
+                <property role="3oM_SC" value="spaces" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hv" role="1PaTwD">
+                <property role="3oM_SC" value="not" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hw" role="1PaTwD">
+                <property role="3oM_SC" value="allowed" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hx" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hy" role="1PaTwD">
+                <property role="3oM_SC" value="unit" />
+              </node>
+              <node concept="3oM_SD" id="17Nm8oCo8Hz" role="1PaTwD">
+                <property role="3oM_SC" value="names" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs6" id="79uxL3R5hXb" role="3cqZAp">
