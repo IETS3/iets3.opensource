@@ -209,6 +209,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -226,6 +229,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4iu6t1eAWPB">
+    <property role="3GE5qa" value="rat" />
     <ref role="1XX52x" to="1qv1:4iu6t1eAWP6" resolve="FractionExpression" />
     <node concept="jtDVG" id="4r1mNB_wbxJ" role="2wV5jI">
       <node concept="2R9Tw8" id="4iu6t1eBmDL" role="3F10Kt">
@@ -688,6 +692,76 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5mz5Tt_h1e9">
+    <property role="3GE5qa" value="rat" />
+    <ref role="1XX52x" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+    <node concept="3F0ifn" id="5mz5Tt_h1eb" role="2wV5jI">
+      <property role="3F0ifm" value="rat" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5mz5Tt_ip3z">
+    <property role="3GE5qa" value="rat" />
+    <ref role="1XX52x" to="1qv1:5mz5Tt_ip39" resolve="RatExpr" />
+    <node concept="3EZMnI" id="5mz5Tt_ip3C" role="2wV5jI">
+      <node concept="2iRfu4" id="5mz5Tt_ip3D" role="2iSdaV" />
+      <node concept="3F0ifn" id="5mz5Tt_ip3_" role="3EZMnx">
+        <property role="3F0ifm" value="rat" />
+      </node>
+      <node concept="3F0ifn" id="5mz5Tt_ip3L" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="5mz5Tt_ip4b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5mz5Tt_ip4g" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5mz5Tt_ip45" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:5mz5Tt_ip43" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="5mz5Tt_ip3T" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="5mz5Tt_ip4k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5mz5Tt_jL6x">
+    <property role="3GE5qa" value="rat" />
+    <ref role="1XX52x" to="1qv1:5mz5Tt_jL63" resolve="ToDecimalTarget" />
+    <node concept="3EZMnI" id="5mz5Tt_jL6A" role="2wV5jI">
+      <node concept="2iRfu4" id="5mz5Tt_jL6B" role="2iSdaV" />
+      <node concept="3F0ifn" id="5mz5Tt_jL6z" role="3EZMnx">
+        <property role="3F0ifm" value="toDecimal" />
+      </node>
+      <node concept="3F0ifn" id="5mz5Tt_jL6N" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="5mz5Tt_jL75" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5mz5Tt_jL7r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5mz5Tt_jL7B" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:5mz5Tt_jL66" resolve="digits" />
+      </node>
+      <node concept="3F0ifn" id="5mz5Tt_jL7c" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="5mz5Tt_jL7i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5mz5Tt_jQxl">
+    <property role="3GE5qa" value="rat" />
+    <ref role="1XX52x" to="1qv1:5mz5Tt_jQwU" resolve="ToInteger" />
+    <node concept="3F0ifn" id="5mz5Tt_jQxn" role="2wV5jI">
+      <property role="3F0ifm" value="toInt" />
     </node>
   </node>
 </model>
