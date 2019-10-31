@@ -2,12 +2,13 @@
 <model ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -166,6 +167,9 @@
     <node concept="PrWs8" id="1yW0h04DlXo" role="PzmwI">
       <ref role="PrY4T" to="hm2y:91pmpwTPq5" resolve="IMainSlot" />
     </node>
+    <node concept="PrWs8" id="Om1N8VdQrO" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4iu6t1eAYrL">
     <property role="TrG5h" value="LoopVarRef" />
@@ -248,12 +252,21 @@
       <property role="1iqoE4" value="${module}/icons/pi.png" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5mz5Tt_h1dJ">
-    <property role="EcuMT" value="6170801853434172271" />
-    <property role="TrG5h" value="RationalType" />
-    <property role="34LRSv" value="rat" />
+  <node concept="1TIwiD" id="5mz5Tt_jQwU">
+    <property role="EcuMT" value="6170801853434914874" />
+    <property role="TrG5h" value="ToInteger" />
+    <property role="34LRSv" value="toInt" />
     <property role="3GE5qa" value="rat" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
+  </node>
+  <node concept="1TIwiD" id="5mz5Tt_jNyK">
+    <property role="EcuMT" value="6170801853434902704" />
+    <property role="TrG5h" value="AbstractRatTarget" />
+    <property role="3GE5qa" value="rat" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5mz5Tt_jNyL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mz5Tt_ip39">
     <property role="EcuMT" value="6170801853434532041" />
@@ -281,21 +294,12 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5mz5Tt_jNyK">
-    <property role="EcuMT" value="6170801853434902704" />
-    <property role="TrG5h" value="AbstractRatTarget" />
+  <node concept="1TIwiD" id="5mz5Tt_h1dJ">
+    <property role="EcuMT" value="6170801853434172271" />
+    <property role="TrG5h" value="RationalType" />
+    <property role="34LRSv" value="rat" />
     <property role="3GE5qa" value="rat" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5mz5Tt_jNyL" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5mz5Tt_jQwU">
-    <property role="EcuMT" value="6170801853434914874" />
-    <property role="TrG5h" value="ToInteger" />
-    <property role="34LRSv" value="toInt" />
-    <property role="3GE5qa" value="rat" />
-    <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
 

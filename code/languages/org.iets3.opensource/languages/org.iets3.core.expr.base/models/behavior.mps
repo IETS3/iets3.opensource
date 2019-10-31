@@ -7613,6 +7613,28 @@
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="Om1N8VbyAz" role="13h7CS">
+      <property role="TrG5h" value="getChildrenForCoverage" />
+      <ref role="13i0hy" to="kqnq:5IKJrJHNCE8" resolve="getChildrenForCoverage" />
+      <node concept="3Tm1VV" id="Om1N8VbyA$" role="1B3o_S" />
+      <node concept="3clFbS" id="Om1N8VbyAG" role="3clF47">
+        <node concept="3SKdUt" id="Om1N8Vb$_b" role="3cqZAp">
+          <node concept="3SKdUq" id="Om1N8Vb$_d" role="3SKWNk">
+            <property role="3SKdUp" value="exclude type from coverage" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="Om1N8VbyG9" role="3cqZAp">
+          <node concept="2ShNRf" id="Om1N8VbyG7" role="3clFbG">
+            <node concept="2T8Vx0" id="Om1N8Vb$$Z" role="2ShVmc">
+              <node concept="2I9FWS" id="Om1N8Vb$_1" role="2T96Bj" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="Om1N8VbyAH" role="3clF45">
+        <node concept="3Tqbb2" id="Om1N8VbyAI" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="69zaTr1W0ux">
     <property role="3GE5qa" value="error" />

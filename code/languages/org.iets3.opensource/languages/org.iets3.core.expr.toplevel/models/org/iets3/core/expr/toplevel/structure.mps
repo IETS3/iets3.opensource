@@ -97,9 +97,6 @@
     <node concept="PrWs8" id="5ElkanPXvCr" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
     </node>
-    <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
-      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
-    </node>
     <node concept="PrWs8" id="7lHetQxE0qg" role="PzmwI">
       <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
     </node>
