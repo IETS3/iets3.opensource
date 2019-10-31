@@ -9,6 +9,7 @@
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="1qv1" ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -570,6 +571,32 @@
   </node>
   <node concept="3hdX5o" id="5mz5Tt_hsT_">
     <property role="TrG5h" value="rational" />
+    <node concept="3ciAk0" id="1ghGxCiSoMY" role="3he0YX">
+      <node concept="2pJPEk" id="1ghGxCiSoSg" role="3ciSkW">
+        <node concept="2pJPED" id="1ghGxCiSoS$" role="2pJPEn">
+          <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1ghGxCiSoTQ" role="3ciSnv">
+        <node concept="2pJPED" id="1ghGxCiSoVg" role="2pJPEn">
+          <ref role="2pJxaS" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+      <node concept="3gn64h" id="1ghGxCiSoRZ" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
+      </node>
+      <node concept="3ciZUL" id="1ghGxCiSoNi" role="32tDT$">
+        <node concept="3clFbS" id="1ghGxCiSoNn" role="2VODD2">
+          <node concept="3clFbF" id="1ghGxCiSoXm" role="3cqZAp">
+            <node concept="2pJPEk" id="1ghGxCiSoXk" role="3clFbG">
+              <node concept="2pJPED" id="1ghGxCiSp2G" role="2pJPEn">
+                <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3ciAk0" id="5mz5Tt_iVVR" role="3he0YX">
       <node concept="3gn64h" id="5mz5Tt_iW0w" role="32tDTA">
         <ref role="3gnhBz" to="hm2y:4rZeNQ6N6R9" resolve="EqualsExpression" />
@@ -625,6 +652,35 @@
       <node concept="2pJPEk" id="5mz5Tt_j9Dy" role="3ciSnv">
         <node concept="2pJPED" id="5mz5Tt_j9Ix" role="2pJPEn">
           <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="1ghGxCiVcXk" role="3he0YX">
+      <node concept="3gn64h" id="1ghGxCiVcXl" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6N6R9" resolve="EqualsExpression" />
+      </node>
+      <node concept="3gn64h" id="1ghGxCiVcXm" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6N6Ra" resolve="NotEqualsExpression" />
+      </node>
+      <node concept="3ciZUL" id="1ghGxCiVcXn" role="32tDT$">
+        <node concept="3clFbS" id="1ghGxCiVcXo" role="2VODD2">
+          <node concept="3clFbF" id="1ghGxCiVcXp" role="3cqZAp">
+            <node concept="2pJPEk" id="1ghGxCiVcXq" role="3clFbG">
+              <node concept="2pJPED" id="1ghGxCiVcXr" role="2pJPEn">
+                <ref role="2pJxaS" to="5qo5:6sdnDbSlaon" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1ghGxCiVcXu" role="3ciSkW">
+        <node concept="2pJPED" id="1ghGxCiVcXv" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1ghGxCiVd8$" role="3ciSnv">
+        <node concept="2pJPED" id="1ghGxCiVdcm" role="2pJPEn">
+          <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
         </node>
       </node>
     </node>
@@ -695,6 +751,41 @@
       <node concept="2pJPEk" id="5mz5Tt_ibUE" role="3ciSnv">
         <node concept="2pJPED" id="5mz5Tt_ibZ7" role="2pJPEn">
           <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="1ghGxCiUkOp" role="3he0YX">
+      <node concept="3gn64h" id="1ghGxCiUkOs" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
+      </node>
+      <node concept="3gn64h" id="1ghGxCiUkOt" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
+      </node>
+      <node concept="3gn64h" id="1ghGxCiUkOu" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
+      </node>
+      <node concept="3gn64h" id="1ghGxCiUkOv" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
+      </node>
+      <node concept="3ciZUL" id="1ghGxCiUkOw" role="32tDT$">
+        <node concept="3clFbS" id="1ghGxCiUkOx" role="2VODD2">
+          <node concept="3clFbF" id="1ghGxCiUkOy" role="3cqZAp">
+            <node concept="2pJPEk" id="1ghGxCiUkOz" role="3clFbG">
+              <node concept="2pJPED" id="1ghGxCiUkO$" role="2pJPEn">
+                <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1ghGxCiUkO_" role="3ciSkW">
+        <node concept="2pJPED" id="1ghGxCiUkOA" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1ghGxCiUkYi" role="3ciSnv">
+        <node concept="2pJPED" id="1ghGxCiUkZB" role="2pJPEn">
+          <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
         </node>
       </node>
     </node>
