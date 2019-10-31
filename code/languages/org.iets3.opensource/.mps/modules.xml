@@ -23,6 +23,7 @@
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.adt/org.iets3.core.expr.adt.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.base/org.iets3.core.expr.base.mpl" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.collections/org.iets3.core.expr.collections.mpl" folder="expr.lang-core" />
+      <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.currency/org.iets3.core.expr.currency.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.dataflow/org.iets3.core.expr.dataflow.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.datetime/org.iets3.core.expr.datetime.mpl" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/languages/org.iets3.core.expr.doc/org.iets3.core.expr.doc.mpl" folder="expr.lang-advanced" />
@@ -77,6 +78,7 @@
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.interpreter/org.iets3.core.expr.base.interpreter.msd" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.base.runtime/org.iets3.core.expr.base.runtime.msd" folder="expr.lang-core" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.collections.interpreter/org.iets3.core.expr.collections.interpreter.msd" folder="expr.lang-core" />
+      <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.currency.interpreter/org.iets3.core.expr.currency.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.dataflow.interpreter/org.iets3.core.expr.dataflow.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.datetime.interpreter/org.iets3.core.expr.datetime.interpreter.msd" folder="expr.lang-advanced" />
       <modulePath path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/org.iets3.core.expr.datetime.runtime/org.iets3.core.expr.datetime.runtime.msd" folder="expr.lang-advanced" />
