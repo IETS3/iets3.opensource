@@ -842,6 +842,7 @@
         </node>
         <node concept="1SiIV0" id="2U$lnbPyddL" role="3bR37C">
           <node concept="3bR9La" id="2U$lnbPyddM" role="1SiIV1">
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
@@ -995,9 +996,9 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2qZhXZTqpEl" role="3bR37C">
-          <node concept="3bR9La" id="2qZhXZTqpEm" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+        <node concept="1SiIV0" id="5mz5Tt_kPqG" role="3bR37C">
+          <node concept="3bR9La" id="5mz5Tt_kPqH" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
