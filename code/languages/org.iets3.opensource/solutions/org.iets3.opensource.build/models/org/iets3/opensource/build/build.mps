@@ -3992,6 +3992,11 @@
             <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="64dkh69XBEA" role="3bR37C">
+          <node concept="3bR9La" id="64dkh69XBEB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4eec02G9w48" role="2G$12L">
         <property role="BnDLt" value="true" />
