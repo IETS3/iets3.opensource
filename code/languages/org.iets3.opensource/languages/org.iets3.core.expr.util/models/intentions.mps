@@ -176,6 +176,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -2514,6 +2515,102 @@
     </node>
     <node concept="1SWQZ3" id="6vi7U_pzp9J" role="lGtFl">
       <property role="1SWRpm" value="TABLE" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="Nuz63f1gff">
+    <property role="3GE5qa" value="dectab" />
+    <property role="TrG5h" value="addYPredef" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+    <node concept="2S6ZIM" id="Nuz63f1gfg" role="2ZfVej">
+      <node concept="3clFbS" id="Nuz63f1gfh" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1gos" role="3cqZAp">
+          <node concept="Xl_RD" id="Nuz63f1gor" role="3clFbG">
+            <property role="Xl_RC" value="Add predefined expression for y axis" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="Nuz63f1gfi" role="2ZfgGD">
+      <node concept="3clFbS" id="Nuz63f1gfj" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1lgf" role="3cqZAp">
+          <node concept="2OqwBi" id="Nuz63f1mRY" role="3clFbG">
+            <node concept="2OqwBi" id="Nuz63f1ly5" role="2Oq$k0">
+              <node concept="2Sf5sV" id="Nuz63f1lge" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Nuz63f1xk_" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZxZA" resolve="predefY" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="Nuz63f1nbw" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="Nuz63f1g_q" role="lGtFl">
+      <property role="1SWRpm" value="TABLE" />
+    </node>
+    <node concept="2SaL7w" id="Nuz63f1i5k" role="2ZfVeh">
+      <node concept="3clFbS" id="Nuz63f1i5l" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1icN" role="3cqZAp">
+          <node concept="2OqwBi" id="Nuz63f1k8_" role="3clFbG">
+            <node concept="2OqwBi" id="Nuz63f1i_U" role="2Oq$k0">
+              <node concept="2Sf5sV" id="Nuz63f1icM" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Nuz63f1vQL" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZxZA" resolve="predefY" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="Nuz63f1l2R" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="Nuz63f1njf">
+    <property role="3GE5qa" value="dectab" />
+    <property role="TrG5h" value="addXPredef" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+    <node concept="2S6ZIM" id="Nuz63f1njg" role="2ZfVej">
+      <node concept="3clFbS" id="Nuz63f1njh" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1nji" role="3cqZAp">
+          <node concept="Xl_RD" id="Nuz63f1njj" role="3clFbG">
+            <property role="Xl_RC" value="Add predefined expression for x axis" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="Nuz63f1njk" role="2ZfgGD">
+      <node concept="3clFbS" id="Nuz63f1njl" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1njm" role="3cqZAp">
+          <node concept="2OqwBi" id="Nuz63f1njn" role="3clFbG">
+            <node concept="2OqwBi" id="Nuz63f1njo" role="2Oq$k0">
+              <node concept="2Sf5sV" id="Nuz63f1njp" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Nuz63f1njq" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZ3Kj" resolve="predefX" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="Nuz63f1njr" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="Nuz63f1njs" role="lGtFl">
+      <property role="1SWRpm" value="TABLE" />
+    </node>
+    <node concept="2SaL7w" id="Nuz63f1njt" role="2ZfVeh">
+      <node concept="3clFbS" id="Nuz63f1nju" role="2VODD2">
+        <node concept="3clFbF" id="Nuz63f1njv" role="3cqZAp">
+          <node concept="2OqwBi" id="Nuz63f1njw" role="3clFbG">
+            <node concept="2OqwBi" id="Nuz63f1njx" role="2Oq$k0">
+              <node concept="2Sf5sV" id="Nuz63f1njy" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Nuz63f1njz" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZ3Kj" resolve="predefX" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="Nuz63f1nj$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
