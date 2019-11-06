@@ -251,6 +251,9 @@
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
+      <concept id="7832682464427207130" name="com.mbeddr.mpsutil.interpreter.structure.StopExpression" flags="ng" index="3mbyVD">
+        <child id="7832682464426609245" name="expression" index="3m9KPI" />
+      </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
         <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435583235459" name="constraints" index="3vbI0w" />
@@ -1605,6 +1608,47 @@
             </node>
             <node concept="liA8E" id="5mz5Tt_i1sZ" role="2OqNvi">
               <ref role="37wK5l" to="xlxw:~BigInteger.longValue()" resolve="longValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="7BZzIqkmzsW" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:4iu6t1eAWP6" resolve="FractionExpression" />
+      <node concept="qpFDx" id="7BZzIqkmzsX" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:4iu6t1eAWPa" resolve="denominator" />
+        <node concept="rxStX" id="7BZzIqkmzsY" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="7BZzIqkmzsZ" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:4iu6t1eAWP7" resolve="numerator" />
+        <node concept="rxStX" id="7BZzIqkmzt0" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="3vetai" id="7BZzIqkmzt1" role="3vQZUl">
+        <node concept="2OqwBi" id="5BKAaizE7D0" role="3vdyny">
+          <node concept="3mbyVD" id="6MNhNeUJZat" role="2Oq$k0">
+            <node concept="rqRoa" id="6MNhNeUJZas" role="3m9KPI">
+              <ref role="rqRob" to="1qv1:4iu6t1eAWP7" resolve="numerator" />
+            </node>
+          </node>
+          <node concept="liA8E" id="5BKAaizE7D2" role="2OqNvi">
+            <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,int,java.math.RoundingMode)" resolve="divide" />
+            <node concept="3mbyVD" id="6MNhNeUK5lH" role="37wK5m">
+              <node concept="rqRoa" id="6MNhNeUK5lG" role="3m9KPI">
+                <ref role="rqRob" to="1qv1:4iu6t1eAWPa" resolve="denominator" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="7kyIuXq$8EZ" role="37wK5m">
+              <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+              <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+            </node>
+            <node concept="10M0yZ" id="4Yc4IDSC$5m" role="37wK5m">
+              <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DIV_ROUNDING" />
+              <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
             </node>
           </node>
         </node>
