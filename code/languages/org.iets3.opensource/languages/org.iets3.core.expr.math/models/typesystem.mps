@@ -11,6 +11,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -18,6 +19,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -59,6 +61,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -100,6 +105,7 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -107,6 +113,7 @@
       <concept id="8124453027370845339" name="jetbrains.mps.lang.typesystem.structure.AbstractOverloadedOpsTypeRule" flags="ng" index="32tDTw">
         <child id="8124453027370845343" name="function" index="32tDT$" />
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
+        <child id="6136676636349909553" name="isApplicable" index="1QeD3i" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
@@ -117,6 +124,8 @@
         <child id="1236083115200" name="rightOperandType" index="3ciSnv" />
       </concept>
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
+      <concept id="1236083209648" name="jetbrains.mps.lang.typesystem.structure.LeftOperandType_parameter" flags="nn" index="3cjfiJ" />
+      <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236163200695" name="jetbrains.mps.lang.typesystem.structure.GetOperationType" flags="nn" index="3h4ouC">
         <child id="1236163216864" name="operation" index="3h4sjZ" />
         <child id="1236163223950" name="rightOperandType" index="3h4u2h" />
@@ -125,6 +134,7 @@
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
+      <concept id="6136676636349908958" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpIsApplicableFunction" flags="in" index="1QeDOX" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -920,6 +930,118 @@
       <node concept="2pJPEk" id="1ghGxCiUkYi" role="3ciSnv">
         <node concept="2pJPED" id="1ghGxCiUkZB" role="2pJPEn">
           <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="6Ywz62j3nIz" role="3he0YX">
+      <node concept="2pJPEk" id="6Ywz62j3nI$" role="3ciSkW">
+        <node concept="2pJPED" id="6Ywz62j3nI_" role="2pJPEn">
+          <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+        </node>
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIA" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIB" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIC" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nID" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
+      </node>
+      <node concept="3ciZUL" id="6Ywz62j3nIE" role="32tDT$">
+        <node concept="3clFbS" id="6Ywz62j3nIF" role="2VODD2">
+          <node concept="3clFbF" id="6Ywz62j3nIG" role="3cqZAp">
+            <node concept="3cjoZ5" id="6Ywz62j4bN0" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="6Ywz62j3nIJ" role="3ciSnv">
+        <node concept="2pJPED" id="6Ywz62j3nRG" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="1QeDOX" id="6Ywz62j3Bwj" role="1QeD3i">
+        <node concept="3clFbS" id="6Ywz62j3Bwk" role="2VODD2">
+          <node concept="3clFbF" id="6Ywz62j3Ctu" role="3cqZAp">
+            <node concept="3fqX7Q" id="6Ywz62j3ElZ" role="3clFbG">
+              <node concept="2OqwBi" id="6Ywz62j3Em1" role="3fr31v">
+                <node concept="2OqwBi" id="6Ywz62j3Em2" role="2Oq$k0">
+                  <node concept="2QUAEa" id="6Ywz62j3Em3" role="2Oq$k0" />
+                  <node concept="liA8E" id="6Ywz62j3Em4" role="2OqNvi">
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6Ywz62j3Em5" role="2OqNvi">
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
+                  <node concept="3cjoZ5" id="6Ywz62j3Em6" role="37wK5m" />
+                  <node concept="2pJPEk" id="6Ywz62j3Em7" role="37wK5m">
+                    <node concept="2pJPED" id="6Ywz62j3Em8" role="2pJPEn">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="6Ywz62j3nIl" role="3he0YX">
+      <node concept="3gn64h" id="6Ywz62j3nIm" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIn" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGm_" resolve="MinusExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIo" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MqlJ" resolve="MulExpression" />
+      </node>
+      <node concept="3gn64h" id="6Ywz62j3nIp" role="32tDTA">
+        <ref role="3gnhBz" to="hm2y:4rZeNQ6MGoV" resolve="DivExpression" />
+      </node>
+      <node concept="3ciZUL" id="6Ywz62j3nIq" role="32tDT$">
+        <node concept="3clFbS" id="6Ywz62j3nIr" role="2VODD2">
+          <node concept="3clFbF" id="6Ywz62j3nIs" role="3cqZAp">
+            <node concept="3cjfiJ" id="6Ywz62j4bSq" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="6Ywz62j3nIv" role="3ciSkW">
+        <node concept="2pJPED" id="6Ywz62j3o3l" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="2pJPEk" id="6Ywz62j3nIx" role="3ciSnv">
+        <node concept="2pJPED" id="6Ywz62j3nIy" role="2pJPEn">
+          <ref role="2pJxaS" to="1qv1:5mz5Tt_h1dJ" resolve="RationalType" />
+        </node>
+      </node>
+      <node concept="1QeDOX" id="6Ywz62j3Ev9" role="1QeD3i">
+        <node concept="3clFbS" id="6Ywz62j3Eva" role="2VODD2">
+          <node concept="3clFbF" id="6Ywz62j3Evg" role="3cqZAp">
+            <node concept="3fqX7Q" id="6Ywz62j3Evh" role="3clFbG">
+              <node concept="2OqwBi" id="6Ywz62j3Evi" role="3fr31v">
+                <node concept="2OqwBi" id="6Ywz62j3Evj" role="2Oq$k0">
+                  <node concept="2QUAEa" id="6Ywz62j3Evk" role="2Oq$k0" />
+                  <node concept="liA8E" id="6Ywz62j3Evl" role="2OqNvi">
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6Ywz62j3Evm" role="2OqNvi">
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
+                  <node concept="3cjfiJ" id="6Ywz62j3ELK" role="37wK5m" />
+                  <node concept="2pJPEk" id="6Ywz62j3Evo" role="37wK5m">
+                    <node concept="2pJPED" id="6Ywz62j3Evp" role="2pJPEn">
+                      <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
