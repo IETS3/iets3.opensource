@@ -98,6 +98,18 @@
     <property role="EcuMT" value="4214990435115877128" />
     <property role="R4oN_" value="a binary decision table" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="Nuz63eZ3Kj" role="1TKVEi">
+      <property role="IQ2ns" value="927332920702286867" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="predefX" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="Nuz63eZxZA" role="1TKVEi">
+      <property role="IQ2ns" value="927332920702410726" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="predefY" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="3DYDRw0K4d1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rowHeaders" />
