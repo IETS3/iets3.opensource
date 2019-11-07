@@ -15,6 +15,7 @@
     <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -71,6 +72,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -2492,6 +2496,165 @@
     <node concept="1YaCAy" id="Nuz63e$bK$" role="1YuTPh">
       <property role="TrG5h" value="se" />
       <ref role="1YaFvo" to="kfo3:Nuz63e$a8H" resolve="SameExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5crSXLvPjq">
+    <property role="TrG5h" value="check_DecTabExpression" />
+    <property role="3GE5qa" value="dectab" />
+    <node concept="3clFbS" id="5crSXLvPjr" role="18ibNy">
+      <node concept="3clFbJ" id="5crSXLwWrR" role="3cqZAp">
+        <node concept="3clFbS" id="5crSXLwWrT" role="3clFbx">
+          <node concept="3clFbJ" id="5crSXLvPjx" role="3cqZAp">
+            <node concept="1eOMI4" id="5crSXLwU$1" role="3clFbw">
+              <node concept="1Wc70l" id="5crSXLwfMF" role="1eOMHV">
+                <node concept="2OqwBi" id="5crSXLwwif" role="3uHU7w">
+                  <node concept="2OqwBi" id="5crSXLwjnV" role="2Oq$k0">
+                    <node concept="1PxgMI" id="5crSXLwi9D" role="2Oq$k0">
+                      <node concept="chp4Y" id="5crSXLwiCK" role="3oSUPX">
+                        <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                      </node>
+                      <node concept="2OqwBi" id="5crSXLwgJn" role="1m5AlR">
+                        <node concept="1YBJjd" id="5crSXLwgcu" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                        </node>
+                        <node concept="1mfA1w" id="5crSXLwhsy" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5crSXLxgxQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="kfo3:Nuz63eZ3Kj" resolve="predefX" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="5crSXLw$oK" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="5crSXLvQ_P" role="3uHU7B">
+                  <node concept="1YBJjd" id="5crSXLvQnr" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                  </node>
+                  <node concept="1mIQ4w" id="5crSXLvR74" role="2OqNvi">
+                    <node concept="chp4Y" id="5crSXLvRcs" role="cj9EA">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4ca" resolve="DecTabColHeader" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="5crSXLvPjz" role="3clFbx">
+              <node concept="2MkqsV" id="5crSXLvUMm" role="3cqZAp">
+                <node concept="2OqwBi" id="5crSXLvUUJ" role="2OEOjV">
+                  <node concept="1YBJjd" id="5crSXLvUMH" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                  </node>
+                  <node concept="3TrEf2" id="5crSXLvVsj" role="2OqNvi">
+                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="5crSXLw0V9" role="2MkJ7o">
+                  <node concept="Xl_RD" id="5crSXLw1ck" role="3uHU7w">
+                    <property role="Xl_RC" value=" can only be used in combination with predefined x axis." />
+                  </node>
+                  <node concept="2OqwBi" id="5crSXLvZzC" role="3uHU7B">
+                    <node concept="2OqwBi" id="5crSXLvYwc" role="2Oq$k0">
+                      <node concept="1YBJjd" id="5crSXLvY8h" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                      </node>
+                      <node concept="3TrEf2" id="5crSXLvZ2m" role="2OqNvi">
+                        <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="5crSXLw0$C" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5crSXLwNNk" role="3cqZAp">
+            <node concept="1eOMI4" id="5crSXLwVqw" role="3clFbw">
+              <node concept="1Wc70l" id="5crSXLwNNv" role="1eOMHV">
+                <node concept="2OqwBi" id="5crSXLwNNw" role="3uHU7w">
+                  <node concept="2OqwBi" id="5crSXLwNNx" role="2Oq$k0">
+                    <node concept="1PxgMI" id="5crSXLwNNy" role="2Oq$k0">
+                      <node concept="chp4Y" id="5crSXLwNNz" role="3oSUPX">
+                        <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                      </node>
+                      <node concept="2OqwBi" id="5crSXLwNN$" role="1m5AlR">
+                        <node concept="1YBJjd" id="5crSXLwNN_" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                        </node>
+                        <node concept="1mfA1w" id="5crSXLwNNA" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5crSXLxkS0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="kfo3:Nuz63eZxZA" resolve="predefY" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="5crSXLwNNC" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="5crSXLwNND" role="3uHU7B">
+                  <node concept="1YBJjd" id="5crSXLwNNE" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                  </node>
+                  <node concept="1mIQ4w" id="5crSXLwNNF" role="2OqNvi">
+                    <node concept="chp4Y" id="5crSXLwNNG" role="cj9EA">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4c9" resolve="DecTabRowHeader" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="5crSXLwNNW" role="3clFbx">
+              <node concept="2MkqsV" id="5crSXLwNNX" role="3cqZAp">
+                <node concept="2OqwBi" id="5crSXLwNNY" role="2OEOjV">
+                  <node concept="1YBJjd" id="5crSXLwNNZ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                  </node>
+                  <node concept="3TrEf2" id="5crSXLwNO0" role="2OqNvi">
+                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="5crSXLwNO1" role="2MkJ7o">
+                  <node concept="Xl_RD" id="5crSXLwNO2" role="3uHU7w">
+                    <property role="Xl_RC" value=" can only be used in combination with predefined y axis." />
+                  </node>
+                  <node concept="2OqwBi" id="5crSXLwNO3" role="3uHU7B">
+                    <node concept="2OqwBi" id="5crSXLwNO4" role="2Oq$k0">
+                      <node concept="1YBJjd" id="5crSXLwNO5" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                      </node>
+                      <node concept="3TrEf2" id="5crSXLwNO6" role="2OqNvi">
+                        <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="5crSXLwNO7" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5crSXLvTuS" role="3clFbw">
+          <node concept="2OqwBi" id="5crSXLvSy6" role="2Oq$k0">
+            <node concept="1YBJjd" id="5crSXLvSg_" role="2Oq$k0">
+              <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+            </node>
+            <node concept="3TrEf2" id="5crSXLvSXT" role="2OqNvi">
+              <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="5crSXLvUpx" role="2OqNvi">
+            <node concept="chp4Y" id="5crSXLvU$t" role="cj9EA">
+              <ref role="cht4Q" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5crSXLvPjt" role="1YuTPh">
+      <property role="TrG5h" value="dte" />
+      <ref role="1YaFvo" to="kfo3:3DYDRw0K4cf" resolve="DecTabExpression" />
     </node>
   </node>
 </model>

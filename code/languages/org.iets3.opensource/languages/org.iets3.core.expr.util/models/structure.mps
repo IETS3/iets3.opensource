@@ -69,6 +69,9 @@
     <property role="EcuMT" value="4214990435115877130" />
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
+    <node concept="PrWs8" id="5crSXLq6k_" role="PzmwI">
+      <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3DYDRw0K4ce">
     <property role="3GE5qa" value="dectab" />
@@ -176,6 +179,9 @@
     <property role="EcuMT" value="4214990435115877129" />
     <property role="R4oN_" value="--" />
     <ref role="1TJDcQ" node="3DYDRw0K4cf" resolve="DecTabExpression" />
+    <node concept="PrWs8" id="5crSXLq6kB" role="PzmwI">
+      <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1tPb0nsmVBp">
     <property role="TrG5h" value="RangeSpecifier" />
@@ -503,6 +509,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8XWEtdYdD1" resolve="ColDef" />
     </node>
+    <node concept="PrWs8" id="5crSXLq5Rr" role="PzmwI">
+      <ref role="PrY4T" node="5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="8XWEtdYbNZ">
     <property role="EcuMT" value="161551962036813055" />
@@ -796,6 +805,11 @@
     <property role="TrG5h" value="SameExpression" />
     <property role="34LRSv" value="^" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="5crSXLq2_c">
+    <property role="EcuMT" value="93572354141595980" />
+    <property role="3GE5qa" value="range" />
+    <property role="TrG5h" value="ICanHaveRangeValueExpr" />
   </node>
 </model>
 

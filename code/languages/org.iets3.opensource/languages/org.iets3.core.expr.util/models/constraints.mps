@@ -377,8 +377,8 @@
           <node concept="2OqwBi" id="6OunYCfi$KT" role="3clFbG">
             <node concept="nLn13" id="6OunYCfi$xu" role="2Oq$k0" />
             <node concept="1mIQ4w" id="6OunYCfi_2F" role="2OqNvi">
-              <node concept="chp4Y" id="6OunYCfi_bU" role="cj9EA">
-                <ref role="cht4Q" to="kfo3:8XWEtdYkhC" resolve="Content" />
+              <node concept="chp4Y" id="5crSXLq674" role="cj9EA">
+                <ref role="cht4Q" to="kfo3:5crSXLq2_c" resolve="ICanHaveRangeValueExpr" />
               </node>
             </node>
           </node>
