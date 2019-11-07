@@ -14,6 +14,7 @@
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -51,6 +52,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -64,6 +66,7 @@
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -231,6 +234,12 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
+      <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
+        <child id="9185659875393569181" name="anchor" index="1j7Clw" />
+        <child id="9185659875393569179" name="tooltip" index="1j7ClA" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -297,6 +306,13 @@
       <concept id="2728748097294299887" name="de.itemis.mps.editor.celllayout.structure.MarginBottomStyle" flags="lg" index="3Toos0" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
+        <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
+        <property id="1140524450557" name="separatorText" index="2czwfP" />
+        <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
+        <child id="6202678563380433923" name="query" index="sbcd9" />
+      </concept>
       <concept id="4299801941278883994" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_QueryPropertyData" flags="ng" index="2DRnuf" />
       <concept id="4299801941278883756" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_LoadQueryPropertyData" flags="ig" index="2DRoyT" />
       <concept id="4299801941278870712" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryProperty" flags="ng" index="2DRrIH">
@@ -2835,6 +2851,38 @@
   <node concept="3p36aQ" id="7EYe2PMegk_">
     <property role="3GE5qa" value="multidectab.toplevel" />
     <ref role="aqKnT" to="kfo3:7FuUjk_mXBJ" resolve="TableCallExpression" />
+  </node>
+  <node concept="24kQdi" id="Nuz63e$a97">
+    <property role="3GE5qa" value="multidectab.expr" />
+    <ref role="1XX52x" to="kfo3:Nuz63e$a8H" resolve="SameExpression" />
+    <node concept="1j7BWu" id="Nuz63eFsUq" role="2wV5jI">
+      <node concept="s8t4o" id="Nuz63eFsUC" role="1j7ClA">
+        <property role="28Zw97" value="true" />
+        <property role="2czwfP" value="," />
+        <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        <node concept="xShMh" id="Nuz63eFsUE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="s8sZD" id="Nuz63eFsUF" role="sbcd9">
+          <node concept="3clFbS" id="Nuz63eFsUG" role="2VODD2">
+            <node concept="3clFbF" id="Nuz63eFsUH" role="3cqZAp">
+              <node concept="2OqwBi" id="Nuz63eFtaS" role="3clFbG">
+                <node concept="pncrf" id="Nuz63eFsX7" role="2Oq$k0" />
+                <node concept="2qgKlT" id="Nuz63eFtwr" role="2OqNvi">
+                  <ref role="37wK5l" to="wthy:Nuz63e$fnb" resolve="effectiveContents" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="Nuz63eFsUz" role="1j7Clw">
+        <property role="3F0ifm" value="^" />
+        <node concept="VechU" id="Nuz63eFsUA" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
