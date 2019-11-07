@@ -211,6 +211,7 @@
       </concept>
       <concept id="1145570846907" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingsOperation" flags="nn" index="2TlYAL" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -221,6 +222,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -281,6 +283,7 @@
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
@@ -2300,6 +2303,74 @@
     <node concept="1YaCAy" id="6OunYCfbXVc" role="1YuTPh">
       <property role="TrG5h" value="cd" />
       <ref role="1YaFvo" to="kfo3:6OunYCeYf_9" resolve="LocalVarAssignColDef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="Nuz63e$bKx">
+    <property role="TrG5h" value="check_SameExpression" />
+    <property role="3GE5qa" value="multidectab.expr" />
+    <node concept="3clFbS" id="Nuz63e$bKy" role="18ibNy">
+      <node concept="3clFbJ" id="Nuz63e$bKI" role="3cqZAp">
+        <node concept="2OqwBi" id="Nuz63e$dLE" role="3clFbw">
+          <node concept="2OqwBi" id="Nuz63e$cJg" role="2Oq$k0">
+            <node concept="2OqwBi" id="Nuz63e$bXi" role="2Oq$k0">
+              <node concept="1YBJjd" id="Nuz63e$bKU" role="2Oq$k0">
+                <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
+              </node>
+              <node concept="2qgKlT" id="Nuz63eBhc0" role="2OqNvi">
+                <ref role="37wK5l" to="wthy:Nuz63e_bQj" resolve="row" />
+              </node>
+            </node>
+            <node concept="YBYNd" id="Nuz63e$diR" role="2OqNvi" />
+          </node>
+          <node concept="3w_OXm" id="Nuz63e$eqt" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="Nuz63e$bKK" role="3clFbx">
+          <node concept="2MkqsV" id="Nuz63e$fl4" role="3cqZAp">
+            <node concept="Xl_RD" id="Nuz63e$flg" role="2MkJ7o">
+              <property role="Xl_RC" value="cannot be used in the first row" />
+            </node>
+            <node concept="1YBJjd" id="Nuz63e$fm5" role="2OEOjV">
+              <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="Nuz63e_ag9" role="3cqZAp">
+        <node concept="3clFbS" id="Nuz63e_agb" role="3clFbx">
+          <node concept="2MkqsV" id="Nuz63e_kDR" role="3cqZAp">
+            <node concept="Xl_RD" id="Nuz63e_kE0" role="2MkJ7o">
+              <property role="Xl_RC" value="can only be used alone" />
+            </node>
+            <node concept="1YBJjd" id="Nuz63e_kEB" role="2OEOjV">
+              <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="Nuz63e_iN3" role="3clFbw">
+          <node concept="2OqwBi" id="Nuz63e_ieQ" role="2Oq$k0">
+            <node concept="1YBJjd" id="Nuz63e_i1N" role="2Oq$k0">
+              <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
+            </node>
+            <node concept="2qgKlT" id="Nuz63e_iwK" role="2OqNvi">
+              <ref role="37wK5l" to="wthy:Nuz63e_d0o" resolve="siblings" />
+            </node>
+          </node>
+          <node concept="3GX2aA" id="Nuz63e_kzb" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="Nuz63e$bK$" role="1YuTPh">
+      <property role="TrG5h" value="se" />
+      <ref role="1YaFvo" to="kfo3:Nuz63e$a8H" resolve="SameExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="Nuz63e_n0z">
+    <property role="TrG5h" value="typeof_SameExpression" />
+    <property role="3GE5qa" value="multidectab.expr" />
+    <node concept="3clFbS" id="Nuz63e_n0$" role="18ibNy" />
+    <node concept="1YaCAy" id="Nuz63e_n0A" role="1YuTPh">
+      <property role="TrG5h" value="sameExpression" />
+      <ref role="1YaFvo" to="kfo3:Nuz63e$a8H" resolve="SameExpression" />
     </node>
   </node>
 </model>
