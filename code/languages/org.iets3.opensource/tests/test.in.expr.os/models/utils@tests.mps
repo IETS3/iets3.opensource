@@ -2823,6 +2823,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="2kKAjiTy3hf" role="_iOnB" />
     <node concept="1aga60" id="5crSXLATDc" role="_iOnB">
       <property role="TrG5h" value="decideRanges2" />
       <property role="0Rz4W" value="467264629" />
@@ -3007,7 +3008,203 @@
       </node>
     </node>
     <node concept="_ixoA" id="5crSXLATaJ" role="_iOnB" />
-    <node concept="_ixoA" id="5crSXLqhfx" role="_iOnB" />
+    <node concept="5mgZ8" id="2kKAjiTy9A$" role="_iOnB">
+      <property role="TrG5h" value="art" />
+      <node concept="5mgYR" id="2kKAjiTybgI" role="5mgYi">
+        <property role="TrG5h" value="Wohnhaus" />
+      </node>
+      <node concept="5mgYR" id="2kKAjiTybh0" role="5mgYi">
+        <property role="TrG5h" value="Doppelhaus" />
+      </node>
+      <node concept="5mgYR" id="2kKAjiTycht" role="5mgYi">
+        <property role="TrG5h" value="Industriegebaeude" />
+      </node>
+      <node concept="5mgYR" id="2kKAjiTydib" role="5mgYi">
+        <property role="TrG5h" value="Kirche" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="2kKAjiTydik" role="_iOnB" />
+    <node concept="1aga60" id="2kKAjiTygmk" role="_iOnB">
+      <property role="TrG5h" value="grundsteuer" />
+      <node concept="UJIhK" id="2kKAjiTyi11" role="1ahQXP">
+        <node concept="UJIhM" id="2kKAjiTyi12" role="UJIgW">
+          <node concept="1yl1Bx" id="2kKAjiTylaV" role="UJIhC">
+            <node concept="3bapRa" id="2kKAjiTylaR" role="1yl1BA">
+              <node concept="30bXRB" id="2kKAjiTylbs" role="3RXsx">
+                <property role="30bXRw" value="100000" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="UJIhM" id="2kKAjiTyi14" role="UJIgW">
+          <node concept="1yl1Bx" id="2kKAjiTylgz" role="UJIhC">
+            <node concept="3bapRm" id="2kKAjiTylgt" role="1yl1BA">
+              <node concept="30bXRB" id="2kKAjiTylhc" role="3bapRh">
+                <property role="30bXRw" value="100000" />
+              </node>
+              <node concept="30bXRB" id="2kKAjiTylhT" role="3bapRj">
+                <property role="30bXRw" value="200000" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="UJIhM" id="2kKAjiTyliw" role="UJIgW">
+          <node concept="1yl1Bx" id="2kKAjiTylka" role="UJIhC">
+            <node concept="3bapRn" id="2kKAjiTylk6" role="1yl1BA">
+              <node concept="30bXRB" id="2kKAjiTyll5" role="3RXsx">
+                <property role="30bXRw" value="200001" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="UJIhL" id="2kKAjiTyi16" role="UJIgT">
+          <node concept="5mhuz" id="2kKAjiTyi1V" role="UJIhC">
+            <ref role="5mhpJ" node="2kKAjiTybgI" resolve="Wohnhaus" />
+          </node>
+          <node concept="5mhuz" id="2kKAjiTyi2i" role="UJIhC">
+            <ref role="5mhpJ" node="2kKAjiTybh0" resolve="Doppelhaus" />
+          </node>
+        </node>
+        <node concept="UJIhL" id="2kKAjiTyi18" role="UJIgT">
+          <node concept="5mhuz" id="2kKAjiTyi2D" role="UJIhC">
+            <ref role="5mhpJ" node="2kKAjiTycht" resolve="Industriegebaeude" />
+          </node>
+        </node>
+        <node concept="UJIhL" id="2kKAjiTyi2Q" role="UJIgT">
+          <node concept="5mhuz" id="2kKAjiTyi3O" role="UJIhC">
+            <ref role="5mhpJ" node="2kKAjiTydib" resolve="Kirche" />
+          </node>
+        </node>
+        <node concept="1afdae" id="2kKAjiTyk7a" role="328F1N">
+          <ref role="1afue_" node="2kKAjiTygZR" resolve="einwohner" />
+        </node>
+        <node concept="1afdae" id="2kKAjiTyl9Z" role="3289e6">
+          <ref role="1afue_" node="2kKAjiTygZh" resolve="art" />
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTylm3" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi16" />
+          <ref role="UJIh4" node="2kKAjiTyi12" />
+          <node concept="30bXRB" id="2kKAjiTylm2" role="UJIhC">
+            <property role="30bXRw" value="0.24" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTyluW" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi18" />
+          <ref role="UJIh4" node="2kKAjiTyi12" />
+          <node concept="30bXRB" id="2kKAjiTyluV" role="UJIhC">
+            <property role="30bXRw" value="0.23" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTyl$j" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi2Q" />
+          <ref role="UJIh4" node="2kKAjiTyi12" />
+          <node concept="30bXRB" id="2kKAjiTyl$i" role="UJIhC">
+            <property role="30bXRw" value="0.25" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTylEw" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi16" />
+          <ref role="UJIh4" node="2kKAjiTyi14" />
+          <node concept="30bXRB" id="2kKAjiTylEv" role="UJIhC">
+            <property role="30bXRw" value="0.31" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTylOX" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi18" />
+          <ref role="UJIh4" node="2kKAjiTyi14" />
+          <node concept="30bXRB" id="2kKAjiTylOW" role="UJIhC">
+            <property role="30bXRw" value="0.31" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTylT2" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi2Q" />
+          <ref role="UJIh4" node="2kKAjiTyi14" />
+          <node concept="30bXRB" id="2kKAjiTylT1" role="UJIhC">
+            <property role="30bXRw" value="0.20" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTym1L" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi16" />
+          <ref role="UJIh4" node="2kKAjiTyliw" />
+          <node concept="30bXRB" id="2kKAjiTym1K" role="UJIhC">
+            <property role="30bXRw" value="0.1" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTymfY" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi18" />
+          <ref role="UJIh4" node="2kKAjiTyliw" />
+          <node concept="30bXRB" id="2kKAjiTymfX" role="UJIhC">
+            <property role="30bXRw" value="0.2" />
+          </node>
+        </node>
+        <node concept="UJIhQ" id="2kKAjiTymln" role="UJIgL">
+          <ref role="UJIh1" node="2kKAjiTyi2Q" />
+          <ref role="UJIh4" node="2kKAjiTyliw" />
+          <node concept="30bXRB" id="2kKAjiTymrc" role="UJIhC">
+            <property role="30bXRw" value="0.4" />
+          </node>
+        </node>
+      </node>
+      <node concept="1ahQXy" id="2kKAjiTygZh" role="1ahQWs">
+        <property role="TrG5h" value="art" />
+        <node concept="5mh7t" id="2kKAjiTygZN" role="3ix9CU">
+          <ref role="5mh6l" node="2kKAjiTy9A$" resolve="art" />
+        </node>
+      </node>
+      <node concept="1ahQXy" id="2kKAjiTygZR" role="1ahQWs">
+        <property role="TrG5h" value="einwohner" />
+        <node concept="30bXR$" id="2kKAjiTyi0N" role="3ix9CU" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="2kKAjiTy53y" role="_iOnB" />
+    <node concept="_fkuM" id="2kKAjiTyoy_" role="_iOnB">
+      <property role="TrG5h" value="Grundsteuer" />
+      <node concept="_fkuZ" id="2kKAjiTyphs" role="_fkp5">
+        <node concept="_fku$" id="2kKAjiTypht" role="_fkur" />
+        <node concept="1af_rf" id="2kKAjiTyphE" role="_fkuY">
+          <ref role="1afhQb" node="2kKAjiTygmk" resolve="grundsteuer" />
+          <node concept="5mhuz" id="2kKAjiTyphV" role="1afhQ5">
+            <ref role="5mhpJ" node="2kKAjiTydib" resolve="Kirche" />
+          </node>
+          <node concept="30bXRB" id="2kKAjiTyptr" role="1afhQ5">
+            <property role="30bXRw" value="150000" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2kKAjiTyqK_" role="_fkuS">
+          <property role="30bXRw" value="0.20" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2kKAjiTyutw" role="_fkp5">
+        <node concept="_fku$" id="2kKAjiTyutx" role="_fkur" />
+        <node concept="1af_rf" id="2kKAjiTyuty" role="_fkuY">
+          <ref role="1afhQb" node="2kKAjiTygmk" resolve="grundsteuer" />
+          <node concept="5mhuz" id="2kKAjiTyutz" role="1afhQ5">
+            <ref role="5mhpJ" node="2kKAjiTydib" resolve="Kirche" />
+          </node>
+          <node concept="30bXRB" id="2kKAjiTyut$" role="1afhQ5">
+            <property role="30bXRw" value="90000" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2kKAjiTyut_" role="_fkuS">
+          <property role="30bXRw" value="0.25" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2kKAjiTyuLT" role="_fkp5">
+        <node concept="_fku$" id="2kKAjiTyuLU" role="_fkur" />
+        <node concept="1af_rf" id="2kKAjiTyuLV" role="_fkuY">
+          <ref role="1afhQb" node="2kKAjiTygmk" resolve="grundsteuer" />
+          <node concept="5mhuz" id="2kKAjiTyuTA" role="1afhQ5">
+            <ref role="5mhpJ" node="2kKAjiTybh0" resolve="Doppelhaus" />
+          </node>
+          <node concept="30bXRB" id="2kKAjiTyuLX" role="1afhQ5">
+            <property role="30bXRw" value="200001" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2kKAjiTyuLY" role="_fkuS">
+          <property role="30bXRw" value="0.1" />
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="6OunYCfqu1r" role="_iOnB" />
     <node concept="_ixoA" id="6OunYCfqu5l" role="_iOnB" />
     <node concept="_ixoA" id="6OunYCfqu9h" role="_iOnB" />
