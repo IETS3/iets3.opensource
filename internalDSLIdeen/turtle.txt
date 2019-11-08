@@ -1,0 +1,33 @@
+meta structure turtleDSL { 
+  query lastPos = [int,int] = {rumtime.pos}
+  content forward(d: int) 
+  content turnLeft(d: int) 
+  command run = {
+    val start = #(0,0,0)
+    ... iterate over contents...
+  }
+} runtime(pos:[int,int], orientation:int) 
+
+
+turtleDSL WalkSquare(x: int, y: int) { 
+  forward x
+  turnright 90
+  forward y
+  forward 10
+  turnLeft 90
+  forward 10
+  turnLeft 90
+  forward 10
+  turnLeft 90
+  forward 10
+} 
+
+
+val drawing = new WalkSquare(20,20)
+val p = {
+  drawing.run
+  drawing.lastPos
+}
+
+val p = new WalkSquare.run.lastPost // assume commands return the object
+
