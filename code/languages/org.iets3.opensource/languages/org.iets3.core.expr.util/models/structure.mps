@@ -167,8 +167,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3DYDRw0K4cg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="4214990435115877136" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>

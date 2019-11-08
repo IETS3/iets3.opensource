@@ -56,6 +56,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -339,7 +340,7 @@
                     <ref role="1YBMHb" node="3DYDRw0NrVQ" resolve="h" />
                   </node>
                   <node concept="3TrEf2" id="Nuz63f4oXr" role="2OqNvi">
-                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
                   </node>
                 </node>
               </node>
@@ -368,7 +369,7 @@
                       <ref role="1YBMHb" node="3DYDRw0NrVQ" resolve="h" />
                     </node>
                     <node concept="3TrEf2" id="Nuz63f4oXC" role="2OqNvi">
-                      <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                      <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
                     </node>
                   </node>
                 </node>
@@ -414,7 +415,7 @@
                 </node>
               </node>
               <node concept="13MTOL" id="12WRc297dNM" role="2OqNvi">
-                <ref role="13MTZf" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                <ref role="13MTZf" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
               </node>
             </node>
           </node>
@@ -647,7 +648,7 @@
                 <ref role="1YBMHb" node="3DYDRw0Nqza" resolve="dte" />
               </node>
               <node concept="3TrEf2" id="3DYDRw0NqFP" role="2OqNvi">
-                <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
               </node>
             </node>
           </node>
@@ -712,7 +713,7 @@
                     <ref role="1YBMHb" node="3DYDRw0Nsi_" resolve="h" />
                   </node>
                   <node concept="3TrEf2" id="Nuz63f4nY7" role="2OqNvi">
-                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
                   </node>
                 </node>
               </node>
@@ -741,7 +742,7 @@
                       <ref role="1YBMHb" node="3DYDRw0Nsi_" resolve="h" />
                     </node>
                     <node concept="3TrEf2" id="3DYDRw0NsjR" role="2OqNvi">
-                      <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+                      <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
                     </node>
                   </node>
                 </node>
@@ -2502,6 +2503,32 @@
     <property role="TrG5h" value="check_DecTabExpression" />
     <property role="3GE5qa" value="dectab" />
     <node concept="3clFbS" id="5crSXLvPjr" role="18ibNy">
+      <node concept="3cpWs8" id="5crSXLzyCy" role="3cqZAp">
+        <node concept="3cpWsn" id="5crSXLzyC_" role="3cpWs9">
+          <property role="TrG5h" value="rve" />
+          <node concept="3Tqbb2" id="5crSXLzyCw" role="1tU5fm">
+            <ref role="ehGHo" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+          </node>
+          <node concept="2OqwBi" id="5crSXL$6NR" role="33vP2m">
+            <node concept="2OqwBi" id="5crSXLzKiX" role="2Oq$k0">
+              <node concept="2OqwBi" id="5crSXLzKiY" role="2Oq$k0">
+                <node concept="1YBJjd" id="5crSXLzKiZ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="3Tsc0h" id="5crSXLzKj0" role="2OqNvi">
+                  <ref role="3TtcxE" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="5crSXL$0xK" role="2OqNvi">
+                <node concept="chp4Y" id="5crSXL$3zj" role="v3oSu">
+                  <ref role="cht4Q" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+                </node>
+              </node>
+            </node>
+            <node concept="1uHKPH" id="5crSXL$ezW" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="5crSXLwWrR" role="3cqZAp">
         <node concept="3clFbS" id="5crSXLwWrT" role="3clFbx">
           <node concept="3clFbJ" id="5crSXLvPjx" role="3cqZAp">
@@ -2540,26 +2567,16 @@
             </node>
             <node concept="3clFbS" id="5crSXLvPjz" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLvUMm" role="3cqZAp">
-                <node concept="2OqwBi" id="5crSXLvUUJ" role="2OEOjV">
-                  <node concept="1YBJjd" id="5crSXLvUMH" role="2Oq$k0">
-                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                  </node>
-                  <node concept="3TrEf2" id="5crSXLvVsj" role="2OqNvi">
-                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
-                  </node>
+                <node concept="37vLTw" id="5crSXL$GKa" role="2OEOjV">
+                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                 </node>
                 <node concept="3cpWs3" id="5crSXLw0V9" role="2MkJ7o">
                   <node concept="Xl_RD" id="5crSXLw1ck" role="3uHU7w">
                     <property role="Xl_RC" value=" can only be used in combination with predefined x axis." />
                   </node>
                   <node concept="2OqwBi" id="5crSXLvZzC" role="3uHU7B">
-                    <node concept="2OqwBi" id="5crSXLvYwc" role="2Oq$k0">
-                      <node concept="1YBJjd" id="5crSXLvY8h" role="2Oq$k0">
-                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                      </node>
-                      <node concept="3TrEf2" id="5crSXLvZ2m" role="2OqNvi">
-                        <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
-                      </node>
+                    <node concept="37vLTw" id="5crSXL$AoH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                     </node>
                     <node concept="2qgKlT" id="5crSXLw0$C" role="2OqNvi">
                       <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -2605,26 +2622,16 @@
             </node>
             <node concept="3clFbS" id="5crSXLwNNW" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLwNNX" role="3cqZAp">
-                <node concept="2OqwBi" id="5crSXLwNNY" role="2OEOjV">
-                  <node concept="1YBJjd" id="5crSXLwNNZ" role="2Oq$k0">
-                    <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                  </node>
-                  <node concept="3TrEf2" id="5crSXLwNO0" role="2OqNvi">
-                    <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
-                  </node>
+                <node concept="37vLTw" id="5crSXL$Lnv" role="2OEOjV">
+                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                 </node>
                 <node concept="3cpWs3" id="5crSXLwNO1" role="2MkJ7o">
                   <node concept="Xl_RD" id="5crSXLwNO2" role="3uHU7w">
                     <property role="Xl_RC" value=" can only be used in combination with predefined y axis." />
                   </node>
                   <node concept="2OqwBi" id="5crSXLwNO3" role="3uHU7B">
-                    <node concept="2OqwBi" id="5crSXLwNO4" role="2Oq$k0">
-                      <node concept="1YBJjd" id="5crSXLwNO5" role="2Oq$k0">
-                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                      </node>
-                      <node concept="3TrEf2" id="5crSXLwNO6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
-                      </node>
+                    <node concept="37vLTw" id="5crSXL$JRo" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                     </node>
                     <node concept="2qgKlT" id="5crSXLwNO7" role="2OqNvi">
                       <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -2635,19 +2642,158 @@
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="5crSXLvTuS" role="3clFbw">
-          <node concept="2OqwBi" id="5crSXLvSy6" role="2Oq$k0">
-            <node concept="1YBJjd" id="5crSXLvSg_" role="2Oq$k0">
+        <node concept="2OqwBi" id="5crSXL$qkA" role="3clFbw">
+          <node concept="37vLTw" id="5crSXL$lYC" role="2Oq$k0">
+            <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
+          </node>
+          <node concept="3x8VRR" id="5crSXL$x5b" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5crSXLMdMO" role="3cqZAp">
+        <node concept="3clFbS" id="5crSXLMdMQ" role="3clFbx">
+          <node concept="2MkqsV" id="5crSXLMrr7" role="3cqZAp">
+            <node concept="Xl_RD" id="5crSXLMrrm" role="2MkJ7o">
+              <property role="Xl_RC" value="only one expression is allowed here" />
+            </node>
+            <node concept="1YBJjd" id="5crSXLMrta" role="2OEOjV">
               <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
             </node>
-            <node concept="3TrEf2" id="5crSXLvSXT" role="2OqNvi">
-              <ref role="3Tt5mk" to="kfo3:3DYDRw0K4cg" resolve="expr" />
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5crSXLMfkH" role="3clFbw">
+          <node concept="3eOSWO" id="5crSXLMqPe" role="3uHU7w">
+            <node concept="3cmrfG" id="5crSXLMqPh" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="5crSXLMko1" role="3uHU7B">
+              <node concept="2OqwBi" id="5crSXLMgtb" role="2Oq$k0">
+                <node concept="1YBJjd" id="5crSXLMfOp" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="3Tsc0h" id="5crSXLMhgf" role="2OqNvi">
+                  <ref role="3TtcxE" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="5crSXLMoHL" role="2OqNvi" />
             </node>
           </node>
-          <node concept="1mIQ4w" id="5crSXLvUpx" role="2OqNvi">
-            <node concept="chp4Y" id="5crSXLvU$t" role="cj9EA">
-              <ref role="cht4Q" to="kfo3:6OunYCfi$ob" resolve="RangeValueExpr" />
+          <node concept="2OqwBi" id="5crSXLMe7b" role="3uHU7B">
+            <node concept="1YBJjd" id="5crSXLMdXM" role="2Oq$k0">
+              <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
             </node>
+            <node concept="1mIQ4w" id="5crSXLMeWa" role="2OqNvi">
+              <node concept="chp4Y" id="5crSXLMeYo" role="cj9EA">
+                <ref role="cht4Q" to="kfo3:3DYDRw0K4ce" resolve="DecTabContent" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5crSXLMOjH" role="3cqZAp">
+        <node concept="3clFbS" id="5crSXLMOjJ" role="3clFbx">
+          <node concept="3clFbJ" id="5crSXLMu8l" role="3cqZAp">
+            <node concept="3clFbS" id="5crSXLMu8n" role="3clFbx">
+              <node concept="2MkqsV" id="5crSXLNcvP" role="3cqZAp">
+                <node concept="1YBJjd" id="5crSXLNcFo" role="2OEOjV">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="Xl_RD" id="5crSXLNcvS" role="2MkJ7o">
+                  <property role="Xl_RC" value="multiple expressions can only be used in combination with predefined x axis." />
+                </node>
+              </node>
+              <node concept="3clFbH" id="5crSXLMu8m" role="3cqZAp" />
+            </node>
+            <node concept="1Wc70l" id="5crSXLMM9O" role="3clFbw">
+              <node concept="2OqwBi" id="5crSXLMJ_l" role="3uHU7B">
+                <node concept="1YBJjd" id="5crSXLMIOA" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="1mIQ4w" id="5crSXLMKCT" role="2OqNvi">
+                  <node concept="chp4Y" id="5crSXLMLgA" role="cj9EA">
+                    <ref role="cht4Q" to="kfo3:3DYDRw0K4ca" resolve="DecTabColHeader" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5crSXLMMMf" role="3uHU7w">
+                <node concept="2OqwBi" id="5crSXLMMMg" role="2Oq$k0">
+                  <node concept="1PxgMI" id="5crSXLMMMh" role="2Oq$k0">
+                    <node concept="chp4Y" id="5crSXLMMMi" role="3oSUPX">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                    </node>
+                    <node concept="2OqwBi" id="5crSXLMMMj" role="1m5AlR">
+                      <node concept="1YBJjd" id="5crSXLMMMk" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                      </node>
+                      <node concept="1mfA1w" id="5crSXLMMMl" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5crSXLMMMm" role="2OqNvi">
+                    <ref role="3Tt5mk" to="kfo3:Nuz63eZ3Kj" resolve="predefX" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="5crSXLMMMn" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5crSXLMNBQ" role="3cqZAp">
+            <node concept="3clFbS" id="5crSXLMNBR" role="3clFbx">
+              <node concept="2MkqsV" id="5crSXLNdyx" role="3cqZAp">
+                <node concept="1YBJjd" id="5crSXLNdyy" role="2OEOjV">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="Xl_RD" id="5crSXLNdyz" role="2MkJ7o">
+                  <property role="Xl_RC" value="multiple expressions can only be used in combination with predefined y axis." />
+                </node>
+              </node>
+              <node concept="3clFbH" id="5crSXLMNBS" role="3cqZAp" />
+            </node>
+            <node concept="1Wc70l" id="5crSXLMNBT" role="3clFbw">
+              <node concept="2OqwBi" id="5crSXLMNC2" role="3uHU7B">
+                <node concept="1YBJjd" id="5crSXLMNC3" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                </node>
+                <node concept="1mIQ4w" id="5crSXLMNC4" role="2OqNvi">
+                  <node concept="chp4Y" id="5crSXLN7iJ" role="cj9EA">
+                    <ref role="cht4Q" to="kfo3:3DYDRw0K4c9" resolve="DecTabRowHeader" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5crSXLMNC6" role="3uHU7w">
+                <node concept="2OqwBi" id="5crSXLMNC7" role="2Oq$k0">
+                  <node concept="1PxgMI" id="5crSXLMNC8" role="2Oq$k0">
+                    <node concept="chp4Y" id="5crSXLMNC9" role="3oSUPX">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                    </node>
+                    <node concept="2OqwBi" id="5crSXLMNCa" role="1m5AlR">
+                      <node concept="1YBJjd" id="5crSXLMNCb" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+                      </node>
+                      <node concept="1mfA1w" id="5crSXLMNCc" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5crSXLNbQF" role="2OqNvi">
+                    <ref role="3Tt5mk" to="kfo3:Nuz63eZxZA" resolve="predefY" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="5crSXLMNCe" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5crSXLMZxK" role="3clFbw">
+          <node concept="3cmrfG" id="5crSXLMZxN" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="5crSXLMS3M" role="3uHU7B">
+            <node concept="2OqwBi" id="5crSXLMOD8" role="2Oq$k0">
+              <node concept="1YBJjd" id="5crSXLMOvJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
+              </node>
+              <node concept="3Tsc0h" id="5crSXLMPJ$" role="2OqNvi">
+                <ref role="3TtcxE" to="kfo3:3DYDRw0K4cg" resolve="expressions" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="5crSXLMW$P" role="2OqNvi" />
           </node>
         </node>
       </node>
