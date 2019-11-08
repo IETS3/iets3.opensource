@@ -1,0 +1,19 @@
+meta structure device config { 
+  content name(name: string)
+  content* app(name: string) 
+  content* ip(name: string) {
+    content address(addr: string) 
+    content gateway(addr: string) 
+  }
+} 
+
+
+device config MyIPhone { 
+  name "MarkusIphone
+  ip "networkcfg1"  
+    address 123.156.143.232
+    gateway 111.194.231.42
+  app "Whatsapp"
+  app "Threema"
+} 
+

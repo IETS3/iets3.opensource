@@ -1,11 +1,6 @@
-
-record T {
-  
-}
-
 meta structure state machine { 
-  query content currentState() = (runtime):string = {runtime.current.name} 
-  command content* event(name: string) = (runtime):runtime = {...contentsOf<state>.} 
+  query currentState() => string = {runtime.current.name}
+  command* event(name: string) = {...contentsOf<state>.} 
   content* state(name: string, initial: boolean, tx:list<[event, state]>) 
   command init() {
     #(...contentsOf<state>... where initial)
@@ -13,16 +8,17 @@ meta structure state machine {
 } runtime(curr: state) 
 
 
-state machine FlipFlop { 
-  event PED_BUTTON(whoPressed: string)
-  event AUS()
+state machine FlipFlop {
+  currentState
+  event PED_BUTTON
+  event AUS
   state ON, list([PED_BUTTON, OFF], [AUS, AUS])
   state OFF, list([PED_BUTTON, ON])
-  state AUS
+  state AUS, list()
 } 
 
 
 val sm = new FlipFlop.init()
 
-sm.PED_BUTTON("makrus")
+sm.PED_BUTTON("markus")
 val s: string = sm.currentState

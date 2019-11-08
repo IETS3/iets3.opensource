@@ -176,7 +176,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
@@ -1516,8 +1515,8 @@
                       <ref role="3Tt5mk" to="3lvb:7LiXavRg_qU" resolve="declaration" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="7LiXavS37AS" role="2OqNvi">
-                    <ref role="3Tt5mk" to="3lvb:7LiXavRck7b" resolve="record" />
+                  <node concept="3TrEf2" id="2DTaqD1DABE" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:2DTaqD1$ucj" resolve="parameterTypes" />
                   </node>
                 </node>
               </node>
@@ -1711,8 +1710,8 @@
                   <node concept="37vLTw" id="7LiXavS3Vto" role="2Oq$k0">
                     <ref role="3cqZAo" node="7LiXavS37AN" resolve="record" />
                   </node>
-                  <node concept="3TrEf2" id="7LiXavS3V7g" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                  <node concept="2qgKlT" id="2DTaqD1DDW2" role="2OqNvi">
+                    <ref role="37wK5l" to="nu60:42g3Tih0Tsk" resolve="createTypeNode" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7LiXavS3$l3" role="37wK5m">
@@ -1753,16 +1752,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="qq9P1" id="6zOUPxLRvCn" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="3lvb:1V2v6rwJrUq" resolve="StructureInstanceRef" />
-      <node concept="3vetai" id="6zOUPxLRzIf" role="3vQZUl">
-        <node concept="2OqwBi" id="6zOUPxLRzNm" role="3vdyny">
-          <node concept="oxNuS" id="6zOUPxLRzIt" role="2Oq$k0" />
-          <node concept="1B$H19" id="6zOUPxLRzNr" role="2OqNvi" />
         </node>
       </node>
     </node>

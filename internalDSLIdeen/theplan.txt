@@ -1,0 +1,22 @@
+3 language levels
+- program (written by domain-consuming programmer)
+- structure (written by domain expert)
+- meta-structure (written by domain-creating programmer)
+
+
+- MetaStructureContent
+-- MetaStructureContent_Internal
+-- MetaStructureContent_Query
+-- MetaStructureContent_Command
+
+
+# Roadmap
+
+- [x] inline types
+- [x] commands
+- [x] queries
+- [ ] interpreter
+- [ ] content with content
+- [ ] structure parameters
+- [ ] * to allow-multiple
+- [ ] currying query and command parameters in the structure definition
