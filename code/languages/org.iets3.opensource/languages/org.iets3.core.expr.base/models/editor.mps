@@ -90,7 +90,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
         <child id="5944657839000877563" name="hints" index="2ABdcP" />
@@ -1165,58 +1164,6 @@
               <node concept="Xl_RD" id="xG0f0hsgfq" role="3clFbG">
                 <property role="Xl_RC" value="else" />
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="71dSyJVppgW">
-    <ref role="1XX52x" to="hm2y:71dSyJVppgt" resolve="ReductionInspector" />
-    <node concept="3EZMnI" id="71dSyJVppgY" role="2wV5jI">
-      <node concept="2SsqMj" id="71dSyJVpph5" role="3EZMnx" />
-      <node concept="2iRkQZ" id="71dSyJVpph1" role="2iSdaV" />
-      <node concept="2T_mXK" id="71dSyJVppp_" role="3EZMnx" />
-      <node concept="3EZMnI" id="71dSyJVppr5" role="3EZMnx">
-        <ref role="1ERwB7" node="71dSyJVpVG$" resolve="deleteInspector" />
-        <ref role="1k5W1q" to="itrz:6zaFu4oRqi5" resolve="iets3Smaller" />
-        <node concept="2iRfu4" id="71dSyJVppr6" role="2iSdaV" />
-        <node concept="3F0ifn" id="71dSyJVpprk" role="3EZMnx">
-          <property role="3F0ifm" value="-&gt;" />
-        </node>
-        <node concept="3F1sOY" id="71dSyJVppr0" role="3EZMnx">
-          <ref role="1NtTu8" to="hm2y:71dSyJVppgy" resolve="reduced" />
-          <node concept="xShMh" id="71dSyJVsOal" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="71dSyJVpVG$">
-    <property role="TrG5h" value="deleteInspector" />
-    <ref role="1h_SK9" to="hm2y:71dSyJVppgt" resolve="ReductionInspector" />
-    <node concept="1hA7zw" id="71dSyJVpVG_" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="71dSyJVpVGA" role="1hA7z_">
-        <node concept="3clFbS" id="71dSyJVpVGB" role="2VODD2">
-          <node concept="3clFbF" id="71dSyJVpVGG" role="3cqZAp">
-            <node concept="2OqwBi" id="71dSyJVpVIB" role="3clFbG">
-              <node concept="0IXxy" id="71dSyJVpVGF" role="2Oq$k0" />
-              <node concept="3YRAZt" id="71dSyJVpVTm" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="71dSyJVpVTx" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
-      <node concept="1hAIg9" id="71dSyJVpVTy" role="1hA7z_">
-        <node concept="3clFbS" id="71dSyJVpVTz" role="2VODD2">
-          <node concept="3clFbF" id="71dSyJVpVT$" role="3cqZAp">
-            <node concept="2OqwBi" id="71dSyJVpVT_" role="3clFbG">
-              <node concept="0IXxy" id="71dSyJVpVTA" role="2Oq$k0" />
-              <node concept="3YRAZt" id="71dSyJVpVTB" role="2OqNvi" />
             </node>
           </node>
         </node>
