@@ -508,29 +508,6 @@
       <ref role="PrY4T" node="YXKE79ImBi" resolve="IWantNewLine" />
     </node>
   </node>
-  <node concept="PlHQZ" id="71dSyJVoY0O">
-    <property role="TrG5h" value="IReducableExpression" />
-    <property role="EcuMT" value="8092372783983747124" />
-  </node>
-  <node concept="1TIwiD" id="71dSyJVppgt">
-    <property role="TrG5h" value="ReductionInspector" />
-    <property role="EcuMT" value="8092372783983858717" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyj" id="71dSyJVppgy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="reduced" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8092372783983858722" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="M6xJ_" id="71dSyJVppgu" role="lGtFl">
-      <property role="Hh88m" value="reduction" />
-      <node concept="trNpa" id="71dSyJVppgw" role="EQaZv">
-        <ref role="trN6q" node="71dSyJVoY0O" resolve="IReducableExpression" />
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="71dSyJVqZSe">
     <property role="TrG5h" value="TracerExpression" />
     <property role="EcuMT" value="8092372783984279054" />
@@ -1182,9 +1159,6 @@
     </node>
     <node concept="PrWs8" id="71dSyJVnXe9" role="PzmwI">
       <ref role="PrY4T" node="6NJfo6_rTeO" resolve="IBigExpression" />
-    </node>
-    <node concept="PrWs8" id="71dSyJVoY1v" role="PzmwI">
-      <ref role="PrY4T" node="71dSyJVoY0O" resolve="IReducableExpression" />
     </node>
     <node concept="PrWs8" id="12WRc28VYGJ" role="PzmwI">
       <ref role="PrY4T" node="12WRc28VYGq" resolve="ITypeFromMultiple" />
