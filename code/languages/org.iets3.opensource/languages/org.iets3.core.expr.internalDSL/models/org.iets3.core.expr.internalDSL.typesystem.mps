@@ -2118,25 +2118,37 @@
     <property role="3GE5qa" value="structures.3_meta-structure" />
     <node concept="3clFbS" id="2DTaqD2k_uA" role="18ibNy">
       <node concept="1Z5TYs" id="2DTaqD2kAma" role="3cqZAp">
-        <node concept="mw_s8" id="2DTaqD2kAqR" role="1ZfhKB">
-          <node concept="2OqwBi" id="2DTaqD2kB4W" role="mwGJk">
-            <node concept="1YBJjd" id="2DTaqD2kAqP" role="2Oq$k0">
-              <ref role="1YBMHb" node="2DTaqD2k_uC" resolve="metaStructureContentRef" />
+        <node concept="mw_s8" id="HXhvgThvlr" role="1ZfhKB">
+          <node concept="2pJPEk" id="HXhvgThvlh" role="mwGJk">
+            <node concept="2pJPED" id="HXhvgThvlA" role="2pJPEn">
+              <ref role="2pJxaS" to="3lvb:HXhvgThvjg" resolve="ContentType" />
+              <node concept="2pIpSj" id="HXhvgThvo7" role="2pJxcM">
+                <ref role="2pIpSl" to="3lvb:HXhvgThvjh" resolve="content" />
+                <node concept="36biLy" id="HXhvgThvpv" role="2pJxcZ">
+                  <node concept="2OqwBi" id="HXhvgThvA5" role="36biLW">
+                    <node concept="1YBJjd" id="HXhvgThvpE" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2DTaqD2k_uC" resolve="r" />
+                    </node>
+                    <node concept="3TrEf2" id="HXhvgThvQN" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3lvb:2DTaqD1F2nN" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="1$rogu" id="2DTaqD2kBln" role="2OqNvi" />
           </node>
         </node>
         <node concept="mw_s8" id="2DTaqD2kAmd" role="1ZfhK$">
           <node concept="1Z2H0r" id="2DTaqD2k_ZY" role="mwGJk">
             <node concept="1YBJjd" id="2DTaqD2kA6h" role="1Z2MuG">
-              <ref role="1YBMHb" node="2DTaqD2k_uC" resolve="metaStructureContentRef" />
+              <ref role="1YBMHb" node="2DTaqD2k_uC" resolve="r" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="2DTaqD2k_uC" role="1YuTPh">
-      <property role="TrG5h" value="metaStructureContentRef" />
+      <property role="TrG5h" value="r" />
       <ref role="1YaFvo" to="3lvb:2DTaqD1F2m8" resolve="MetaStructureContentRef" />
     </node>
   </node>

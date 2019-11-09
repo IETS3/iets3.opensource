@@ -149,6 +149,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -1068,7 +1071,7 @@
                   <ref role="3cqZAo" node="2DTaqD2j2LU" resolve="metaStructure" />
                 </node>
                 <node concept="3Tsc0h" id="2DTaqD2j9Dq" role="2OqNvi">
-                  <ref role="3TtcxE" to="3lvb:7LiXavRbxvY" resolve="contentDeclaration" />
+                  <ref role="3TtcxE" to="3lvb:7LiXavRbxvY" resolve="contents" />
                 </node>
               </node>
             </node>
@@ -1165,6 +1168,132 @@
               </node>
               <node concept="2qgKlT" id="2DTaqD2o$mq" role="2OqNvi">
                 <ref role="37wK5l" to="ppli:7LiXavRk334" resolve="getName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="HXhvgTjZ3F">
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:HXhvgTjZ2a" resolve="ContentPointerType" />
+    <node concept="9S07l" id="HXhvgTjZ3G" role="9Vyp8">
+      <node concept="3clFbS" id="HXhvgTjZ3H" role="2VODD2">
+        <node concept="3clFbF" id="HXhvgTjZb2" role="3cqZAp">
+          <node concept="2OqwBi" id="HXhvgTk0zl" role="3clFbG">
+            <node concept="2OqwBi" id="HXhvgTjZyr" role="2Oq$k0">
+              <node concept="nLn13" id="HXhvgTjZiA" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="HXhvgTjZKn" role="2OqNvi">
+                <node concept="1xMEDy" id="HXhvgTjZKp" role="1xVPHs">
+                  <node concept="chp4Y" id="HXhvgTjZVj" role="ri$Ld">
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="HXhvgTk2uq" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="HXhvgTlphZ" role="1Mr941">
+      <ref role="1N5Vy1" to="3lvb:HXhvgTjZ2b" resolve="content" />
+      <node concept="3dgokm" id="HXhvgTlpi1" role="1N6uqs">
+        <node concept="3clFbS" id="HXhvgTlpi2" role="2VODD2">
+          <node concept="3clFbF" id="HXhvgTl$KX" role="3cqZAp">
+            <node concept="2YIFZM" id="HXhvgTl_3v" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="HXhvgTlu5p" role="37wK5m">
+                <node concept="2OqwBi" id="HXhvgTlq48" role="2Oq$k0">
+                  <node concept="2OqwBi" id="HXhvgTlpuW" role="2Oq$k0">
+                    <node concept="2rP1CM" id="HXhvgTlpkY" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="HXhvgTlpCw" role="2OqNvi">
+                      <node concept="1xMEDy" id="HXhvgTlpCy" role="1xVPHs">
+                        <node concept="chp4Y" id="HXhvgTlpJ4" role="ri$Ld">
+                          <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="HXhvgTlqyA" role="2OqNvi">
+                    <ref role="3TtcxE" to="3lvb:7LiXavRbxvY" resolve="contents" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="HXhvgTl$p3" role="2OqNvi">
+                  <node concept="chp4Y" id="HXhvgTl$wz" role="v3oSu">
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="HXhvgTrzFj">
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:HXhvgTrzDY" resolve="PointerMemberTarget" />
+    <node concept="9S07l" id="HXhvgTrzFk" role="9Vyp8">
+      <node concept="3clFbS" id="HXhvgTrzFl" role="2VODD2">
+        <node concept="3clFbF" id="HXhvgTrzME" role="3cqZAp">
+          <node concept="2OqwBi" id="HXhvgTr$P4" role="3clFbG">
+            <node concept="1PxgMI" id="HXhvgTr$sA" role="2Oq$k0">
+              <node concept="chp4Y" id="HXhvgTr_bR" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+              <node concept="nLn13" id="HXhvgTrzMD" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="HXhvgTr_K8" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="HXhvgTrB_l" role="37wK5m">
+                <ref role="35c_gD" to="3lvb:HXhvgTjZ2a" resolve="ContentPointerType" />
+              </node>
+              <node concept="3clFbT" id="HXhvgTrAUj" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="HXhvgTrBUM" role="1Mr941">
+      <ref role="1N5Vy1" to="3lvb:HXhvgTrzEh" resolve="member" />
+      <node concept="3dgokm" id="HXhvgTrBUR" role="1N6uqs">
+        <node concept="3clFbS" id="HXhvgTrBUS" role="2VODD2">
+          <node concept="3clFbF" id="HXhvgTrBXP" role="3cqZAp">
+            <node concept="2OqwBi" id="HXhvgTsp9g" role="3clFbG">
+              <node concept="1PxgMI" id="HXhvgTso7p" role="2Oq$k0">
+                <node concept="chp4Y" id="HXhvgTsoAW" role="3oSUPX">
+                  <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                </node>
+                <node concept="2OqwBi" id="HXhvgTrWsF" role="1m5AlR">
+                  <node concept="1PxgMI" id="HXhvgTrVWw" role="2Oq$k0">
+                    <node concept="chp4Y" id="HXhvgTrW62" role="3oSUPX">
+                      <ref role="cht4Q" to="3lvb:HXhvgTjZ2a" resolve="ContentPointerType" />
+                    </node>
+                    <node concept="2OqwBi" id="HXhvgTrQtE" role="1m5AlR">
+                      <node concept="2OqwBi" id="HXhvgTrE5W" role="2Oq$k0">
+                        <node concept="1PxgMI" id="HXhvgTrDFY" role="2Oq$k0">
+                          <node concept="chp4Y" id="HXhvgTrDJn" role="3oSUPX">
+                            <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                          </node>
+                          <node concept="2rP1CM" id="HXhvgTrDd2" role="1m5AlR" />
+                        </node>
+                        <node concept="3TrEf2" id="HXhvgTrLh2" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                        </node>
+                      </node>
+                      <node concept="3JvlWi" id="HXhvgTrQPl" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="HXhvgTrWRi" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3lvb:HXhvgTjZ2b" resolve="content" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="HXhvgTspVk" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:2DTaqD1$ucj" resolve="parameteargrTypes" />
               </node>
             </node>
           </node>
