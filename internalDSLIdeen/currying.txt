@@ -1,0 +1,24 @@
+meta structure machine {
+  query calculate(a: number, b: number) => number = a + b + runtime.x
+} runtime x: number
+
+machine Computer {
+}
+
+assert new Computer(3).calculate(1, 2)  equals 6
+assert new Computer(3).calculate(1) yields NoSuchMethodError
+
+machine Abakus {
+  calculate 0
+}
+
+assert new Abakus(3).calculate(2) equals 5
+assert new Abakus(3).calculate(1,2) yields NoSuchMethodError
+
+machine Spickzettel {
+  calculate 1, 2
+}
+
+assert new Spickzettel(3).calculate(2)  yields NoSuchMethodError
+assert new Spickzettel(3).calculate(1,2) yields NoSuchMethodError
+assert new Spickzettel(3).calculate() equals 6
