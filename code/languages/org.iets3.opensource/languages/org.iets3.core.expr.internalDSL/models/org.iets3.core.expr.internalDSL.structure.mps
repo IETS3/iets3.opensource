@@ -963,7 +963,7 @@
     <node concept="1TJgyj" id="2DTaqD1$ucj" role="1TKVEi">
       <property role="IQ2ns" value="3060523232996221715" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameteargrTypes" />
+      <property role="20kJfa" value="parameterTypes" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2DTaqD1$bbj" resolve="InlineRecordDeclaration" />
     </node>
