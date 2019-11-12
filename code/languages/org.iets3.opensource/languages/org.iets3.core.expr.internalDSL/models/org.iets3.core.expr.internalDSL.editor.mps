@@ -9,6 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -127,6 +128,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1154465273778" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ParentNode" flags="nn" index="3bvxqY" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -453,6 +455,9 @@
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
+    </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
@@ -3395,14 +3400,29 @@
   </node>
   <node concept="24kQdi" id="2DTaqD2o_7Q">
     <property role="3GE5qa" value="structures.1_program" />
-    <ref role="1XX52x" to="3lvb:2DTaqD2ooo7" resolve="StructureInstBehaviorAccess" />
-    <node concept="3F0A7n" id="2DTaqD2o_7S" role="2wV5jI">
+    <ref role="1XX52x" to="3lvb:2DTaqD2ooo7" resolve="StructureInstBoundBehaviorAccess" />
+    <node concept="3F0A7n" id="4s7mJiwr1JA" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="VPxyj" id="4s7mJiwr1JD" role="3F10Kt" />
+      <node concept="3k4GqR" id="4s7mJiwsj6$" role="3F10Kt">
+        <node concept="3k4GqP" id="4s7mJiwsj6A" role="3k4GqO">
+          <node concept="3clFbS" id="4s7mJiwsj6C" role="2VODD2">
+            <node concept="3clFbF" id="4s7mJiwsjac" role="3cqZAp">
+              <node concept="2OqwBi" id="4s7mJiwsjnn" role="3clFbG">
+                <node concept="pncrf" id="4s7mJiwsjab" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4s7mJiwsjLi" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3lvb:2DTaqD2ovOw" resolve="accessedContent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="HXhvgThvjG">
     <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1XX52x" to="3lvb:HXhvgThvjg" resolve="ContentType" />
+    <ref role="1XX52x" to="3lvb:HXhvgThvjg" resolve="MetaStructureContent_Type" />
     <node concept="1iCGBv" id="HXhvgThvjI" role="2wV5jI">
       <ref role="1NtTu8" to="3lvb:HXhvgThvjh" resolve="content" />
       <node concept="1sVBvm" id="HXhvgThvjK" role="1sWHZn">
@@ -3453,6 +3473,91 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4s7mJiwbxEc">
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <ref role="1XX52x" to="3lvb:4s7mJiwbxCO" resolve="MetaStructureContent_TypeMemberTarget" />
+    <node concept="1iCGBv" id="4s7mJiwbxEe" role="2wV5jI">
+      <ref role="1NtTu8" to="3lvb:4s7mJiwbxDL" resolve="member" />
+      <node concept="1sVBvm" id="4s7mJiwbxEg" role="1sWHZn">
+        <node concept="3F0A7n" id="4s7mJiwbxEn" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4s7mJiwlvGf">
+    <property role="3GE5qa" value="structures.1_program" />
+    <ref role="1XX52x" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
+    <node concept="1iCGBv" id="4s7mJiwlvGi" role="2wV5jI">
+      <ref role="1NtTu8" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+      <node concept="1sVBvm" id="4s7mJiwlvGk" role="1sWHZn">
+        <node concept="3F0A7n" id="4s7mJiwlvGr" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="4s7mJiwvdZB">
+    <property role="3GE5qa" value="structures.1_program" />
+    <ref role="aqKnT" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
+    <node concept="3N5dw7" id="4s7mJiwve4N" role="3ft7WO">
+      <node concept="3N5aqt" id="4s7mJiwve4O" role="3Na0zg">
+        <node concept="3clFbS" id="4s7mJiwve4P" role="2VODD2">
+          <node concept="3clFbF" id="4s7mJiwvr7O" role="3cqZAp">
+            <node concept="37vLTI" id="4s7mJiwvsOP" role="3clFbG">
+              <node concept="2OqwBi" id="4s7mJiwvr$u" role="37vLTJ">
+                <node concept="3N4pyC" id="4s7mJiwvr7M" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4s7mJiwvs0I" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3lvb:4s7mJiwvc$I" resolve="structure" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4s7mJiwvsZz" role="37vLTx">
+                <node concept="1PxgMI" id="4s7mJiwvsZ$" role="2Oq$k0">
+                  <node concept="chp4Y" id="4s7mJiwvsZ_" role="3oSUPX">
+                    <ref role="cht4Q" to="3lvb:1V2v6rwW3uL" resolve="StructureInstanceType" />
+                  </node>
+                  <node concept="2OqwBi" id="4s7mJiwvsZA" role="1m5AlR">
+                    <node concept="2OqwBi" id="4s7mJiwvsZB" role="2Oq$k0">
+                      <node concept="1PxgMI" id="4s7mJiwvsZC" role="2Oq$k0">
+                        <node concept="chp4Y" id="4s7mJiwvsZD" role="3oSUPX">
+                          <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+                        </node>
+                        <node concept="3bvxqY" id="4s7mJiwvsZE" role="1m5AlR" />
+                      </node>
+                      <node concept="3TrEf2" id="4s7mJiwvsZF" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="3JvlWi" id="4s7mJiwvsZG" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="4s7mJiwvsZH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3lvb:1V2v6rwW3uM" resolve="structure" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4s7mJiwvuZ6" role="3cqZAp" />
+          <node concept="3clFbF" id="4s7mJiwvua6" role="3cqZAp">
+            <node concept="3N4pyC" id="4s7mJiwvua4" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPI" id="4s7mJiwvefs" role="2klrvf">
+        <ref role="2kkw0f" node="4s7mJiwvgHo" resolve="StructureInstUnboundBehaviorAccess_reference_actions" />
+      </node>
+    </node>
+  </node>
+  <node concept="Q6S24" id="4s7mJiwvgHo">
+    <property role="3GE5qa" value="structures.1_program" />
+    <property role="TrG5h" value="StructureInstUnboundBehaviorAccess_reference_actions" />
+    <ref role="aqKnT" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
+    <node concept="3XHNnq" id="4s7mJiwvgHs" role="3ft7WO">
+      <ref role="3XGfJA" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
     </node>
   </node>
 </model>

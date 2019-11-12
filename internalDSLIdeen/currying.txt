@@ -5,20 +5,20 @@ meta structure machine {
 machine Computer {
 }
 
-assert new Computer(3).calculate(1, 2)  equals 6
+assert new Computer(3).calculate(1, 2) equals 6
 assert new Computer(3).calculate(1) yields NoSuchMethodError
 
 machine Abakus {
-  calculate 0
+  calculate calcWithZero 0
 }
 
-assert new Abakus(3).calculate(2) equals 5
-assert new Abakus(3).calculate(1,2) yields NoSuchMethodError
+assert new Abakus(3).calcWithZero(2) equals 5
+assert new Abakus(3).calculate(1,2) equals 6
 
 machine Spickzettel {
-  calculate 1, 2
+  calculate calcWithOneAndTwo 1, 2
 }
 
 assert new Spickzettel(3).calculate(2)  yields NoSuchMethodError
-assert new Spickzettel(3).calculate(1,2) yields NoSuchMethodError
-assert new Spickzettel(3).calculate() equals 6
+assert new Spickzettel(3).calculate(1,2) equals 6
+assert new Spickzettel(3).calcWithOneAndTwo() equals 6

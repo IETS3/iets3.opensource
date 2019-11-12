@@ -868,9 +868,6 @@
       <ref role="RPilL" node="1V2v6rwW3uM" resolve="structure" />
       <node concept="ROjv2" id="1V2v6rwW3uO" role="ROhUF" />
     </node>
-    <node concept="PrWs8" id="2DTaqD2mZiW" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KPJ" resolve="ICanHaveMembersType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2DTaqD1$bbj">
     <property role="EcuMT" value="3060523232996143827" />
@@ -890,7 +887,7 @@
     <property role="EcuMT" value="3060523232997942664" />
     <property role="3GE5qa" value="structures.3_meta-structure" />
     <property role="TrG5h" value="MetaStructureContentRef" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2DTaqD1F2nN" role="1TKVEi">
       <property role="IQ2ns" value="3060523232997942771" />
       <property role="20lmBu" value="reference" />
@@ -955,6 +952,9 @@
     <node concept="PrWs8" id="2DTaqD1F2nY" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="4s7mJiwmM5J" role="PrDN$">
+      <ref role="PrY4T" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2DTaqD1GEEr">
     <property role="EcuMT" value="3060523232998369947" />
@@ -969,9 +969,6 @@
     </node>
     <node concept="PrWs8" id="2DTaqD215Om" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="2DTaqD2gWW9" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:4WLweXm3SVw" resolve="ITypeable" />
     </node>
   </node>
   <node concept="1TIwiD" id="2DTaqD1V$hM">
@@ -995,13 +992,13 @@
   <node concept="1TIwiD" id="2DTaqD2ooo7">
     <property role="EcuMT" value="3060523233009829383" />
     <property role="3GE5qa" value="structures.1_program" />
-    <property role="TrG5h" value="StructureInstBehaviorAccess" />
+    <property role="TrG5h" value="StructureInstBoundBehaviorAccess" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2DTaqD2oq4C" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
     </node>
-    <node concept="PrWs8" id="2DTaqD2oysK" role="PzmwI">
-      <ref role="PrY4T" to="lmd:6LLGpXJ1KSq" resolve="IMember" />
+    <node concept="PrWs8" id="4s7mJiw703J" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
     <node concept="1TJgyj" id="2DTaqD2ovOw" role="1TKVEi">
       <property role="IQ2ns" value="3060523233009859872" />
@@ -1014,14 +1011,14 @@
   <node concept="1TIwiD" id="HXhvgThvjg">
     <property role="EcuMT" value="827894821741262032" />
     <property role="3GE5qa" value="structures.3_meta-structure" />
-    <property role="TrG5h" value="ContentType" />
+    <property role="TrG5h" value="MetaStructureContent_Type" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="HXhvgThvjh" role="1TKVEi">
       <property role="IQ2ns" value="827894821741262033" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+      <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="HXhvgTjZ2a">
@@ -1052,6 +1049,47 @@
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4s7mJiwbxCO">
+    <property role="EcuMT" value="5118159508235754036" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="TrG5h" value="MetaStructureContent_TypeMemberTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4s7mJiwbxDL" role="1TKVEi">
+      <property role="IQ2ns" value="5118159508235754097" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
+    </node>
+    <node concept="PrWs8" id="4s7mJiwbxCS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4s7mJiwjv8r">
+    <property role="EcuMT" value="5118159508237840923" />
+    <property role="3GE5qa" value="structures.1_program" />
+    <property role="TrG5h" value="StructureInstUnboundBehaviorAccess" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4s7mJiwjv8s" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
+    <node concept="PrWs8" id="4s7mJiwjv8t" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="4s7mJiwjv8u" role="1TKVEi">
+      <property role="IQ2ns" value="5118159508237840926" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="accessedContent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DTaqD1F2nI" resolve="IMetaStructureContent_Behavioral" />
+    </node>
+    <node concept="1TJgyj" id="4s7mJiwvc$I" role="1TKVEi">
+      <property role="IQ2ns" value="5118159508240910638" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="structure" />
+      <ref role="20lvS9" node="7LiXavRfjak" resolve="Structure" />
     </node>
   </node>
 </model>

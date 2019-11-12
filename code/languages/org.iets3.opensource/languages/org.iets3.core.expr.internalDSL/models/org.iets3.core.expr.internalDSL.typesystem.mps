@@ -2121,7 +2121,7 @@
         <node concept="mw_s8" id="HXhvgThvlr" role="1ZfhKB">
           <node concept="2pJPEk" id="HXhvgThvlh" role="mwGJk">
             <node concept="2pJPED" id="HXhvgThvlA" role="2pJPEn">
-              <ref role="2pJxaS" to="3lvb:HXhvgThvjg" resolve="ContentType" />
+              <ref role="2pJxaS" to="3lvb:HXhvgThvjg" resolve="MetaStructureContent_Type" />
               <node concept="2pIpSj" id="HXhvgThvo7" role="2pJxcM">
                 <ref role="2pIpSl" to="3lvb:HXhvgThvjh" resolve="content" />
                 <node concept="36biLy" id="HXhvgThvpv" role="2pJxcZ">
@@ -2157,25 +2157,30 @@
     <property role="3GE5qa" value="structures.2_structure" />
     <node concept="3clFbS" id="2DTaqD2o22N" role="18ibNy">
       <node concept="1ZobV4" id="2DTaqD2o2e2" role="3cqZAp">
-        <node concept="mw_s8" id="2DTaqD2o2kq" role="1ZfhKB">
-          <node concept="2OqwBi" id="2DTaqD2o3RT" role="mwGJk">
-            <node concept="2OqwBi" id="2DTaqD2o2x8" role="2Oq$k0">
-              <node concept="1YBJjd" id="2DTaqD2o2ko" role="2Oq$k0">
-                <ref role="1YBMHb" node="2DTaqD2o22P" resolve="structureContent" />
-              </node>
-              <node concept="3TrEf2" id="2DTaqD2o3cW" role="2OqNvi">
-                <ref role="3Tt5mk" to="3lvb:7LiXavRg_qU" resolve="declaration" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2DTaqD2o4af" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
-            </node>
-          </node>
-        </node>
         <node concept="mw_s8" id="2DTaqD2o2e5" role="1ZfhK$">
           <node concept="1Z2H0r" id="2DTaqD2o22T" role="mwGJk">
             <node concept="1YBJjd" id="2DTaqD2o24J" role="1Z2MuG">
               <ref role="1YBMHb" node="2DTaqD2o22P" resolve="structureContent" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4s7mJiw9_57" role="1ZfhKB">
+          <node concept="2pJPEk" id="4s7mJiw9_53" role="mwGJk">
+            <node concept="2pJPED" id="4s7mJiw9_5i" role="2pJPEn">
+              <ref role="2pJxaS" to="3lvb:2DTaqD1F2m8" resolve="MetaStructureContentRef" />
+              <node concept="2pIpSj" id="4s7mJiw9_5H" role="2pJxcM">
+                <ref role="2pIpSl" to="3lvb:2DTaqD1F2nN" resolve="content" />
+                <node concept="36biLy" id="4s7mJiw9_6c" role="2pJxcZ">
+                  <node concept="2OqwBi" id="4s7mJiw9_gM" role="36biLW">
+                    <node concept="1YBJjd" id="4s7mJiw9_6n" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2DTaqD2o22P" resolve="structureContent" />
+                    </node>
+                    <node concept="3TrEf2" id="4s7mJiw9_sl" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3lvb:7LiXavRg_qU" resolve="declaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2184,6 +2189,145 @@
     <node concept="1YaCAy" id="2DTaqD2o22P" role="1YuTPh">
       <property role="TrG5h" value="structureContent" />
       <ref role="1YaFvo" to="3lvb:7LiXavRg_eE" resolve="StructureContent" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4s7mJiw6OLT">
+    <property role="TrG5h" value="typeof_PointerMemberTarget" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <node concept="3clFbS" id="4s7mJiw6OLU" role="18ibNy">
+      <node concept="1Z5TYs" id="4s7mJiw6OYe" role="3cqZAp">
+        <node concept="mw_s8" id="4s7mJiw6OYh" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4s7mJiw6OM0" role="mwGJk">
+            <node concept="1YBJjd" id="4s7mJiw6ONQ" role="1Z2MuG">
+              <ref role="1YBMHb" node="4s7mJiw6OLW" resolve="pointerMemberTarget" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4s7mJiw6QP9" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4s7mJiw6QP7" role="mwGJk">
+            <node concept="2OqwBi" id="4s7mJiw6QZa" role="1Z2MuG">
+              <node concept="1YBJjd" id="4s7mJiw6QPq" role="2Oq$k0">
+                <ref role="1YBMHb" node="4s7mJiw6OLW" resolve="pointerMemberTarget" />
+              </node>
+              <node concept="3TrEf2" id="4s7mJiw6Rd0" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:HXhvgTrzEh" resolve="member" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4s7mJiw6OLW" role="1YuTPh">
+      <property role="TrG5h" value="pointerMemberTarget" />
+      <ref role="1YaFvo" to="3lvb:HXhvgTrzDY" resolve="PointerMemberTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4s7mJiw8Nxf">
+    <property role="TrG5h" value="typeof_StructureInstBoundBehaviorAccess" />
+    <property role="3GE5qa" value="structures.1_program" />
+    <node concept="3clFbS" id="4s7mJiw8Nxg" role="18ibNy">
+      <node concept="1Z5TYs" id="4s7mJiwnNN$" role="3cqZAp">
+        <node concept="mw_s8" id="4s7mJiwnNN_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4s7mJiwnNNA" role="mwGJk">
+            <node concept="1YBJjd" id="4s7mJiwnO12" role="1Z2MuG">
+              <ref role="1YBMHb" node="4s7mJiw8Nxi" resolve="access" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4s7mJiwnNNC" role="1ZfhKB">
+          <node concept="2OqwBi" id="4s7mJiwnNND" role="mwGJk">
+            <node concept="2OqwBi" id="4s7mJiwwZoN" role="2Oq$k0">
+              <node concept="1YBJjd" id="4s7mJiwnO93" role="2Oq$k0">
+                <ref role="1YBMHb" node="4s7mJiw8Nxi" resolve="access" />
+              </node>
+              <node concept="3TrEf2" id="4s7mJiwwZFn" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:2DTaqD2ovOw" resolve="accessedContent" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4s7mJiwprhn" role="2OqNvi">
+              <ref role="37wK5l" to="ppli:4s7mJiwnZg4" resolve="createOuterFunctionType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4s7mJiw8Nxi" role="1YuTPh">
+      <property role="TrG5h" value="access" />
+      <ref role="1YaFvo" to="3lvb:2DTaqD2ooo7" resolve="StructureInstBoundBehaviorAccess" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4s7mJiwd815">
+    <property role="TrG5h" value="typeof_MetaStructureContent_TypeMemberTarget" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <node concept="3clFbS" id="4s7mJiwd816" role="18ibNy">
+      <node concept="3clFbH" id="4s7mJiwd8Rq" role="3cqZAp" />
+      <node concept="1Z5TYs" id="4s7mJiwd8s8" role="3cqZAp">
+        <node concept="mw_s8" id="4s7mJiwd8sb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4s7mJiwd81c" role="mwGJk">
+            <node concept="1YBJjd" id="4s7mJiwd832" role="1Z2MuG">
+              <ref role="1YBMHb" node="4s7mJiwd818" resolve="metaStructureContent_TypeMemberTarget" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4s7mJiwd8R9" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4s7mJiwd8R7" role="mwGJk">
+            <node concept="2OqwBi" id="4s7mJiwd91j" role="1Z2MuG">
+              <node concept="1YBJjd" id="4s7mJiwd8Rz" role="2Oq$k0">
+                <ref role="1YBMHb" node="4s7mJiwd818" resolve="metaStructureContent_TypeMemberTarget" />
+              </node>
+              <node concept="3TrEf2" id="4s7mJiwd9f9" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:4s7mJiwbxDL" resolve="member" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4s7mJiwd818" role="1YuTPh">
+      <property role="TrG5h" value="metaStructureContent_TypeMemberTarget" />
+      <ref role="1YaFvo" to="3lvb:4s7mJiwbxCO" resolve="MetaStructureContent_TypeMemberTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4s7mJiwmIR3">
+    <property role="TrG5h" value="typeof_StructureInstStaticBehaviorAccess" />
+    <property role="3GE5qa" value="structures.1_program" />
+    <node concept="3clFbS" id="4s7mJiwmIR4" role="18ibNy">
+      <node concept="1Z5TYs" id="4s7mJiwmJt7" role="3cqZAp">
+        <node concept="mw_s8" id="4s7mJiwmJta" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4s7mJiwmIRa" role="mwGJk">
+            <node concept="1YBJjd" id="4s7mJiwmIT0" role="1Z2MuG">
+              <ref role="1YBMHb" node="4s7mJiwmIR6" resolve="access" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4s7mJiwnga_" role="1ZfhKB">
+          <node concept="2OqwBi" id="4s7mJiwnhpm" role="mwGJk">
+            <node concept="2OqwBi" id="4s7mJiwnglX" role="2Oq$k0">
+              <node concept="1YBJjd" id="4s7mJiwngaz" role="2Oq$k0">
+                <ref role="1YBMHb" node="4s7mJiwmIR6" resolve="access" />
+              </node>
+              <node concept="3TrEf2" id="4s7mJiwngLV" role="2OqNvi">
+                <ref role="3Tt5mk" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4s7mJiwugTK" role="2OqNvi">
+              <ref role="37wK5l" to="ppli:4s7mJiwtZig" resolve="createOuterFunctionType" />
+              <node concept="2OqwBi" id="4s7mJiwuiwK" role="37wK5m">
+                <node concept="1YBJjd" id="4s7mJiwuj_o" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4s7mJiwmIR6" resolve="access" />
+                </node>
+                <node concept="3TrEf2" id="4s7mJiwwLWa" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3lvb:4s7mJiwvc$I" resolve="structure" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4s7mJiwmIR6" role="1YuTPh">
+      <property role="TrG5h" value="access" />
+      <ref role="1YaFvo" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     </node>
   </node>
 </model>
