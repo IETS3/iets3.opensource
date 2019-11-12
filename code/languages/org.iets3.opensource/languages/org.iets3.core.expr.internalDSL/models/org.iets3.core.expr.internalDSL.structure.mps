@@ -828,7 +828,7 @@
   </node>
   <node concept="1TIwiD" id="1V2v6rwJrUq">
     <property role="EcuMT" value="2216470747918745242" />
-    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
     <property role="TrG5h" value="StructureRuntime" />
     <property role="34LRSv" value="runtime" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
@@ -1090,6 +1090,41 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="structure" />
       <ref role="20lvS9" node="7LiXavRfjak" resolve="Structure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4s7mJiwxdSg">
+    <property role="EcuMT" value="5118159508241440272" />
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <property role="TrG5h" value="StructureExpr" />
+    <property role="34LRSv" value="structure" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4s7mJiwyC2I">
+    <property role="EcuMT" value="5118159508241809582" />
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <property role="TrG5h" value="ContentsOf" />
+    <property role="34LRSv" value="contentsOf&lt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4s7mJiwyFL9" role="1TKVEi">
+      <property role="IQ2ns" value="5118159508241824841" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="metaContent" />
+      <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
+    </node>
+    <node concept="PrWs8" id="4s7mJiwyC2J" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4s7mJiw$K45">
+    <property role="EcuMT" value="5118159508242366725" />
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <property role="TrG5h" value="MetaStructure_Type" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="4s7mJiw$K46" role="1TKVEi">
+      <property role="IQ2ns" value="5118159508242366726" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="7LiXavRbwCc" resolve="MetaStructure" />
     </node>
   </node>
 </model>

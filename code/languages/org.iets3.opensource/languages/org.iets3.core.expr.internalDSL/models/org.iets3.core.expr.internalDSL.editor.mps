@@ -3215,7 +3215,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1V2v6rwJx_R">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
     <ref role="1XX52x" to="3lvb:1V2v6rwJrUq" resolve="StructureRuntime" />
     <node concept="3F0ifn" id="HXhvgTpbS6" role="2wV5jI">
       <property role="3F0ifm" value="runtime" />
@@ -3558,6 +3558,44 @@
     <ref role="aqKnT" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     <node concept="3XHNnq" id="4s7mJiwvgHs" role="3ft7WO">
       <ref role="3XGfJA" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4s7mJiwxdT3">
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <ref role="1XX52x" to="3lvb:4s7mJiwxdSg" resolve="StructureExpr" />
+    <node concept="3F0ifn" id="4s7mJiwxdT5" role="2wV5jI">
+      <property role="3F0ifm" value="structure" />
+      <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4s7mJiwyZOJ">
+    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <ref role="1XX52x" to="3lvb:4s7mJiwyC2I" resolve="ContentsOf" />
+    <node concept="3EZMnI" id="4s7mJiwyZOO" role="2wV5jI">
+      <node concept="2iRfu4" id="4s7mJiwyZOP" role="2iSdaV" />
+      <node concept="3F0ifn" id="4s7mJiwyZOL" role="3EZMnx">
+        <property role="3F0ifm" value="contentsOf&lt;" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11LMrY" id="4s7mJiwyZPp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4s7mJiwyZOX" role="3EZMnx">
+        <ref role="1NtTu8" to="3lvb:4s7mJiwyFL9" resolve="metaContent" />
+        <node concept="1sVBvm" id="4s7mJiwyZOZ" role="1sWHZn">
+          <node concept="3F0A7n" id="4s7mJiwyZP7" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4s7mJiwyZPg" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        <node concept="11L4FC" id="4s7mJiwyZPn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
