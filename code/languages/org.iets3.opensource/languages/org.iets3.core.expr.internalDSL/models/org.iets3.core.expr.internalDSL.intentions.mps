@@ -27,6 +27,11 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
@@ -47,9 +52,22 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -65,6 +83,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="2S6QgY" id="65YflFcv5pQ">
@@ -141,6 +162,109 @@
               </node>
             </node>
             <node concept="3w_OXm" id="12xzPje$8dA" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5in0T3SgU7y">
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="TrG5h" value="addChild" />
+    <ref role="2ZfgGC" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+    <node concept="2S6ZIM" id="5in0T3SgU7z" role="2ZfVej">
+      <node concept="3clFbS" id="5in0T3SgU7$" role="2VODD2">
+        <node concept="3clFbF" id="5in0T3SgUgA" role="3cqZAp">
+          <node concept="Xl_RD" id="5in0T3SgUg_" role="3clFbG">
+            <property role="Xl_RC" value="Add Child" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5in0T3SgU7_" role="2ZfgGD">
+      <node concept="3clFbS" id="5in0T3SgU7A" role="2VODD2">
+        <node concept="3clFbF" id="5in0T3SgURR" role="3cqZAp">
+          <node concept="2OqwBi" id="5in0T3SgWKp" role="3clFbG">
+            <node concept="2OqwBi" id="5in0T3SgV1n" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5in0T3SgURQ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5in0T3SgVf9" role="2OqNvi">
+                <ref role="3TtcxE" to="3lvb:5in0T3SgI1d" resolve="children" />
+              </node>
+            </node>
+            <node concept="WFELt" id="5in0T3SgY65" role="2OqNvi">
+              <ref role="1A0vxQ" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="5in0T3SgURF" role="lGtFl">
+      <property role="1SWRpm" value="STRUCTURE" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5in0T3SinMM">
+    <property role="3GE5qa" value="structures.2_structure" />
+    <property role="TrG5h" value="addChildInstance" />
+    <ref role="2ZfgGC" to="3lvb:7LiXavRg_eE" resolve="StructureContent" />
+    <node concept="2S6ZIM" id="5in0T3SinMN" role="2ZfVej">
+      <node concept="3clFbS" id="5in0T3SinMO" role="2VODD2">
+        <node concept="3clFbF" id="5in0T3SinVV" role="3cqZAp">
+          <node concept="Xl_RD" id="5in0T3SinVU" role="3clFbG">
+            <property role="Xl_RC" value="Add Child" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5in0T3SinMP" role="2ZfgGD">
+      <node concept="3clFbS" id="5in0T3SinMQ" role="2VODD2">
+        <node concept="3clFbF" id="5in0T3SiE0L" role="3cqZAp">
+          <node concept="2OqwBi" id="5in0T3SiG27" role="3clFbG">
+            <node concept="2OqwBi" id="5in0T3SiE9A" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5in0T3SiE0K" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5in0T3SiEkQ" role="2OqNvi">
+                <ref role="3TtcxE" to="3lvb:5in0T3SiyxC" resolve="childContents" />
+              </node>
+            </node>
+            <node concept="WFELt" id="5in0T3SiHze" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5in0T3Sioqw" role="2ZfVeh">
+      <node concept="3clFbS" id="5in0T3Sioqx" role="2VODD2">
+        <node concept="3clFbF" id="5in0T3SioxZ" role="3cqZAp">
+          <node concept="1Wc70l" id="5in0T3Sir8K" role="3clFbG">
+            <node concept="2OqwBi" id="5in0T3Sivma" role="3uHU7w">
+              <node concept="2OqwBi" id="5in0T3SisZu" role="2Oq$k0">
+                <node concept="1PxgMI" id="5in0T3Sissx" role="2Oq$k0">
+                  <node concept="chp4Y" id="5in0T3SisIY" role="3oSUPX">
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                  </node>
+                  <node concept="2OqwBi" id="5in0T3Sir$2" role="1m5AlR">
+                    <node concept="2Sf5sV" id="5in0T3Sirlj" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5in0T3SirVe" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3lvb:7LiXavRg_qU" resolve="declaration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="5in0T3SituA" role="2OqNvi">
+                  <ref role="3TtcxE" to="3lvb:5in0T3SgI1d" resolve="children" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="5in0T3Siyb1" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5in0T3Siprh" role="3uHU7B">
+              <node concept="2OqwBi" id="5in0T3SioK6" role="2Oq$k0">
+                <node concept="2Sf5sV" id="5in0T3SioxY" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5in0T3Sip2v" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3lvb:7LiXavRg_qU" resolve="declaration" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="5in0T3SiqrJ" role="2OqNvi">
+                <node concept="chp4Y" id="5in0T3SiqF8" role="cj9EA">
+                  <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
