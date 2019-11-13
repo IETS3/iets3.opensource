@@ -15,12 +15,12 @@
       <concept id="4473287864570292399" name="org.iets3.core.expr.testExecution.structure.TestExecutionConfig" flags="ng" index="3ZOQsN">
         <child id="4473287864570320758" name="executionMode" index="3ZOXzE" />
       </concept>
-      <concept id="4473287864570320840" name="org.iets3.core.expr.testExecution.structure.InterpreterExecutionMode" flags="ng" index="3ZOXxk" />
+      <concept id="4473287864570320810" name="org.iets3.core.expr.testExecution.structure.GeneratorExecutionMode" flags="ng" index="3ZOXwQ" />
     </language>
   </registry>
   <node concept="3ZOQsN" id="6pNCASbHXH8">
     <property role="TrG5h" value="KernelFTestExecution" />
-    <node concept="3ZOXxk" id="2YQA$NZJM3_" role="3ZOXzE" />
+    <node concept="3ZOXwQ" id="5crSXMg57x" role="3ZOXzE" />
   </node>
 </model>
 
