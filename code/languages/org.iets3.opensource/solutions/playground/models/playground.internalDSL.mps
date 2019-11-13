@@ -47,7 +47,6 @@
         <child id="3989687177013570768" name="max" index="1hzhI9" />
       </concept>
       <concept id="7554398283340640412" name="org.iets3.core.expr.collections.structure.MapOp" flags="ng" index="3iw6QE" />
-      <concept id="7554398283340715406" name="org.iets3.core.expr.collections.structure.WhereOp" flags="ng" index="3izCyS" />
       <concept id="7554398283340004826" name="org.iets3.core.expr.collections.structure.AtOp" flags="ng" index="3iAU3G" />
       <concept id="7554398283340020764" name="org.iets3.core.expr.collections.structure.OneArgCollectionOp" flags="ng" index="3iAY4E">
         <child id="7554398283340020765" name="arg" index="3iAY4F" />
@@ -77,6 +76,15 @@
     <language id="244a1c6f-564e-4227-996d-03387774db95" name="org.iets3.core.expr.internalDSL">
       <concept id="2992977600325196985" name="org.iets3.core.expr.internalDSL.structure.ChildrenOp" flags="ng" index="9BaRW">
         <reference id="2992977600326654558" name="content" index="9CIGr" />
+      </concept>
+      <concept id="2992977600328797601" name="org.iets3.core.expr.internalDSL.structure.MetaStructureType" flags="ng" index="9LrN$">
+        <reference id="2992977600328797602" name="structure" index="9LrNB" />
+      </concept>
+      <concept id="2992977600327983729" name="org.iets3.core.expr.internalDSL.structure.LabelExpr" flags="ng" index="9MhcO">
+        <property id="2992977600327983730" name="value" index="9MhcR" />
+      </concept>
+      <concept id="2992977600329131155" name="org.iets3.core.expr.internalDSL.structure.MetaStructureContentOp" flags="ng" index="9Q9nm">
+        <reference id="2992977600329131160" name="contentKind" index="9Q9nt" />
       </concept>
       <concept id="8958491611039279684" name="org.iets3.core.expr.internalDSL.structure.StructureContentRef" flags="ng" index="2b0HVz">
         <reference id="8958491611039279685" name="structureContent" index="2b0HVy" />
@@ -171,9 +179,6 @@
         <reference id="5118159508240910638" name="structure" index="3BuTfq" />
       </concept>
       <concept id="5118159508241440272" name="org.iets3.core.expr.internalDSL.structure.StructureExpr" flags="ng" index="3BwSj$" />
-      <concept id="5118159508241809582" name="org.iets3.core.expr.internalDSL.structure.ContentsOf" flags="ng" index="3BztDq">
-        <reference id="5118159508241824841" name="metaContent" index="3BzuqX" />
-      </concept>
       <concept id="3060523233009829383" name="org.iets3.core.expr.internalDSL.structure.StructureInstBoundBehaviorAccess" flags="ng" index="1C6aYH">
         <reference id="3060523233009859872" name="accessedContent" index="1C6dia" />
       </concept>
@@ -402,6 +407,9 @@
       <concept id="1249392911699110107" name="org.iets3.core.expr.toplevel.structure.RecordChangeTarget" flags="ng" index="3vStjw">
         <child id="1249392911699129399" name="setters" index="3vSgwc" />
       </concept>
+      <concept id="2861782275883762391" name="org.iets3.core.expr.toplevel.structure.ExtensionFunctionCall" flags="ng" index="1He9k6">
+        <reference id="2861782275883762408" name="extFun" index="1He9kT" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -483,6 +491,7 @@
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
       <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+        <property id="2861782275883660525" name="ext" index="1HeIcW" />
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
@@ -2951,6 +2960,39 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="TestStructure_FlipFlop" />
     <property role="3GE5qa" value="structure" />
+    <node concept="1aga60" id="2A9ckkwhKmB" role="_iOnB">
+      <property role="TrG5h" value="initialState" />
+      <property role="1HeIcW" value="true" />
+      <node concept="1ahQXy" id="2A9ckkwhK$r" role="1ahQWs">
+        <property role="TrG5h" value="s" />
+        <node concept="9LrN$" id="2A9ckkwkqhz" role="3ix9CU">
+          <ref role="9LrNB" node="1V2v6rwPXJR" resolve="state machine" />
+        </node>
+      </node>
+      <node concept="wdKpt" id="2A9ckkwm76d" role="1ahQXP">
+        <node concept="1QScDb" id="2A9ckkwlZ$q" role="30czhm">
+          <node concept="1HmgMX" id="2A9ckkwlZAn" role="1QScD9">
+            <node concept="3izI60" id="2A9ckkwlZAo" role="3iAY4F">
+              <node concept="1QScDb" id="2A9ckkwlZCr" role="3izI61">
+                <node concept="3Bak30" id="2A9ckkwlZE5" role="1QScD9">
+                  <ref role="3Bak25" node="2DTaqD215_2" resolve="initial" />
+                </node>
+                <node concept="3izPEI" id="2A9ckkwlZAq" role="30czhm" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="2A9ckkwlZyx" role="30czhm">
+            <node concept="9Q9nm" id="2A9ckkwlZyY" role="1QScD9">
+              <ref role="9Q9nt" node="2DTaqD215gv" resolve="state" />
+            </node>
+            <node concept="1afdae" id="2A9ckkwlZyd" role="30czhm">
+              <ref role="1afue_" node="2A9ckkwhK$r" resolve="s" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2A9ckkwhK6c" role="_iOnB" />
     <node concept="2bvfUF" id="1V2v6rwPXJR" role="_iOnB">
       <property role="TrG5h" value="state machine" />
       <node concept="1FPgKZ" id="4s7mJiwojg5" role="2bvedp">
@@ -2968,28 +3010,11 @@
               <node concept="30bXRB" id="4s7mJiwojwz" role="m5g4p">
                 <property role="30bXRw" value="0" />
               </node>
-              <node concept="wdKpt" id="5in0T3Sim53" role="m5g4p">
-                <node concept="1QScDb" id="4s7mJiwARu7" role="30czhm">
-                  <node concept="3iB7TU" id="5in0T3SilUW" role="1QScD9" />
-                  <node concept="1QScDb" id="4s7mJiwAQm0" role="30czhm">
-                    <node concept="3izCyS" id="4s7mJiwARk3" role="1QScD9">
-                      <node concept="3izI60" id="4s7mJiwARk4" role="3iAY4F">
-                        <node concept="1QScDb" id="4s7mJiwAQzi" role="3izI61">
-                          <node concept="3Bak30" id="4s7mJiwAQA_" role="1QScD9">
-                            <ref role="3Bak25" node="2DTaqD215_2" resolve="initial" />
-                          </node>
-                          <node concept="3izPEI" id="4s7mJiwAQvK" role="30czhm" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1QScDb" id="4s7mJiw$wrS" role="30czhm">
-                      <node concept="3BztDq" id="4s7mJiw$GXG" role="1QScD9">
-                        <ref role="3BzuqX" node="2DTaqD215gv" resolve="state" />
-                      </node>
-                      <node concept="3BwSj$" id="4s7mJiwyBZY" role="30czhm" />
-                    </node>
-                  </node>
+              <node concept="1QScDb" id="2A9ckkwlZUV" role="m5g4p">
+                <node concept="1He9k6" id="2A9ckkwm6WQ" role="1QScD9">
+                  <ref role="1He9kT" node="2A9ckkwhKmB" resolve="initialState" />
                 </node>
+                <node concept="3BwSj$" id="2A9ckkwlZQ$" role="30czhm" />
               </node>
             </node>
           </node>
@@ -3162,20 +3187,20 @@
       <ref role="2brW6K" node="1V2v6rwPXJR" resolve="state machine" />
       <node concept="2b4asd" id="2DTaqD24nyP" role="2b4a8g">
         <ref role="2b4a8t" node="4s7mJiwokuK" resolve="event" />
-        <node concept="30bdrP" id="2DTaqD24nyR" role="2b4a8r">
-          <property role="30bdrQ" value="toggle" />
+        <node concept="9MhcO" id="2A9ckkwh$Z7" role="2b4a8r">
+          <property role="9MhcR" value="toggle" />
         </node>
       </node>
       <node concept="2b4asd" id="2DTaqD24nE1" role="2b4a8g">
         <ref role="2b4a8t" node="4s7mJiwokuK" resolve="event" />
-        <node concept="30bdrP" id="2DTaqD24nE3" role="2b4a8r">
-          <property role="30bdrQ" value="shutdown" />
+        <node concept="9MhcO" id="2A9ckkwh_x9" role="2b4a8r">
+          <property role="9MhcR" value="shutdown" />
         </node>
       </node>
       <node concept="2b4asd" id="2DTaqD24iPi" role="2b4a8g">
         <ref role="2b4a8t" node="2DTaqD215gv" resolve="state" />
-        <node concept="30bdrP" id="2DTaqD24iPk" role="2b4a8r">
-          <property role="30bdrQ" value="ON" />
+        <node concept="9MhcO" id="2A9ckkwh_Cj" role="2b4a8r">
+          <property role="9MhcR" value="ON" />
         </node>
         <node concept="2vmpnb" id="2DTaqD24o2T" role="2b4a8r" />
         <node concept="2b4asd" id="5in0T3SjYNg" role="2GRiJS">
@@ -3199,8 +3224,8 @@
       </node>
       <node concept="2b4asd" id="2DTaqD24o6M" role="2b4a8g">
         <ref role="2b4a8t" node="2DTaqD215gv" resolve="state" />
-        <node concept="30bdrP" id="2DTaqD24o6O" role="2b4a8r">
-          <property role="30bdrQ" value="OFF" />
+        <node concept="9MhcO" id="2A9ckkwh_F$" role="2b4a8r">
+          <property role="9MhcR" value="OFF" />
         </node>
         <node concept="2vmpn$" id="2DTaqD24o6P" role="2b4a8r" />
         <node concept="2b4asd" id="5in0T3SjZoM" role="2GRiJS">
@@ -3224,8 +3249,8 @@
       </node>
       <node concept="2b4asd" id="2DTaqD24obB" role="2b4a8g">
         <ref role="2b4a8t" node="2DTaqD215gv" resolve="state" />
-        <node concept="30bdrP" id="2DTaqD24obC" role="2b4a8r">
-          <property role="30bdrQ" value="SHUTDOWN" />
+        <node concept="9MhcO" id="2A9ckkwh_HK" role="2b4a8r">
+          <property role="9MhcR" value="SHUTDOWN" />
         </node>
         <node concept="2vmpn$" id="2DTaqD24obD" role="2b4a8r" />
       </node>

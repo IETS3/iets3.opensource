@@ -1141,5 +1141,46 @@
       <ref role="20lvS9" node="7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2A9ckkwg29L">
+    <property role="EcuMT" value="2992977600327983729" />
+    <property role="TrG5h" value="LabelExpr" />
+    <property role="34LRSv" value="'" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="2A9ckkwg29M" role="1TKVEl">
+      <property role="IQ2nx" value="2992977600327983730" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2A9ckkwj8Qx">
+    <property role="EcuMT" value="2992977600328797601" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="TrG5h" value="MetaStructureType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="2A9ckkwj8Qy" role="1TKVEi">
+      <property role="IQ2ns" value="2992977600328797602" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="structure" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7LiXavRbwCc" resolve="MetaStructure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2A9ckkwkqij">
+    <property role="EcuMT" value="2992977600329131155" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="TrG5h" value="MetaStructureContentOp" />
+    <property role="34LRSv" value="contents" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2A9ckkwkqik" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="2A9ckkwkqio" role="1TKVEi">
+      <property role="IQ2ns" value="2992977600329131160" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contentKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
+    </node>
+  </node>
 </model>
 

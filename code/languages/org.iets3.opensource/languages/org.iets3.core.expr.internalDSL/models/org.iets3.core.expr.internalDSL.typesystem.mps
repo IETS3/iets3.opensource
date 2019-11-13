@@ -2306,7 +2306,7 @@
     <node concept="3clFbS" id="4s7mJiw$Juq" role="18ibNy">
       <node concept="3cpWs8" id="4s7mJiw$KQ0" role="3cqZAp">
         <node concept="3cpWsn" id="4s7mJiw$KQ1" role="3cpWs9">
-          <property role="TrG5h" value="ancestor" />
+          <property role="TrG5h" value="s" />
           <node concept="3Tqbb2" id="4s7mJiw$KPZ" role="1tU5fm">
             <ref role="ehGHo" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
           </node>
@@ -2330,12 +2330,12 @@
             <node concept="mw_s8" id="4s7mJiw$JBN" role="1ZfhKB">
               <node concept="2pJPEk" id="4s7mJiw$K4I" role="mwGJk">
                 <node concept="2pJPED" id="4s7mJiw$K4U" role="2pJPEn">
-                  <ref role="2pJxaS" to="3lvb:4s7mJiw$K45" resolve="MetaStructure_Type" />
+                  <ref role="2pJxaS" to="3lvb:2A9ckkwj8Qx" resolve="MetaStructureType" />
                   <node concept="2pIpSj" id="4s7mJiw$K5l" role="2pJxcM">
-                    <ref role="2pIpSl" to="3lvb:4s7mJiw$K46" resolve="target" />
+                    <ref role="2pIpSl" to="3lvb:2A9ckkwj8Qy" resolve="structure" />
                     <node concept="36biLy" id="4s7mJiw$K5O" role="2pJxcZ">
                       <node concept="37vLTw" id="4s7mJiw$KQ7" role="36biLW">
-                        <ref role="3cqZAo" node="4s7mJiw$KQ1" resolve="ancestor" />
+                        <ref role="3cqZAo" node="4s7mJiw$KQ1" resolve="s" />
                       </node>
                     </node>
                   </node>
@@ -2353,7 +2353,7 @@
         </node>
         <node concept="2OqwBi" id="4s7mJiw$LaO" role="3clFbw">
           <node concept="37vLTw" id="4s7mJiw$KTd" role="2Oq$k0">
-            <ref role="3cqZAo" node="4s7mJiw$KQ1" resolve="ancestor" />
+            <ref role="3cqZAo" node="4s7mJiw$KQ1" resolve="s" />
           </node>
           <node concept="3x8VRR" id="4s7mJiw$L_D" role="2OqNvi" />
         </node>
@@ -2452,6 +2452,75 @@
     <node concept="1YaCAy" id="2A9ckkw5pOA" role="1YuTPh">
       <property role="TrG5h" value="childrenOp" />
       <ref role="1YaFvo" to="3lvb:2A9ckkw5pMT" resolve="ChildrenOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2A9ckkwg2bB">
+    <property role="TrG5h" value="typeof_LabelExpr" />
+    <node concept="3clFbS" id="2A9ckkwg2bC" role="18ibNy">
+      <node concept="1Z5TYs" id="2A9ckkwg2n1" role="3cqZAp">
+        <node concept="mw_s8" id="2A9ckkwg2ni" role="1ZfhKB">
+          <node concept="2YIFZM" id="2A9ckkwg2oX" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="2A9ckkwg2n4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2A9ckkwg2bI" role="mwGJk">
+            <node concept="1YBJjd" id="2A9ckkwg2d$" role="1Z2MuG">
+              <ref role="1YBMHb" node="2A9ckkwg2bE" resolve="l" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2A9ckkwg2bE" role="1YuTPh">
+      <property role="TrG5h" value="l" />
+      <ref role="1YaFvo" to="3lvb:2A9ckkwg29L" resolve="LabelExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2A9ckkwkzJi">
+    <property role="TrG5h" value="typeof_MetaStructureContentOp" />
+    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <node concept="3clFbS" id="2A9ckkwkzJj" role="18ibNy">
+      <node concept="1Z5TYs" id="2A9ckkwkzTp" role="3cqZAp">
+        <node concept="mw_s8" id="2A9ckkwkzTH" role="1ZfhKB">
+          <node concept="2pJPEk" id="2A9ckkwkzTD" role="mwGJk">
+            <node concept="2pJPED" id="2A9ckkwkzTS" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="2pIpSj" id="2A9ckkwkzWF" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="2pJPED" id="2A9ckkwkzYc" role="2pJxcZ">
+                  <ref role="2pJxaS" to="3lvb:HXhvgThvjg" resolve="MetaStructureContentType" />
+                  <node concept="2pIpSj" id="2A9ckkwkzYi" role="2pJxcM">
+                    <ref role="2pIpSl" to="3lvb:HXhvgThvjh" resolve="content" />
+                    <node concept="36biLy" id="2A9ckkwkzYs" role="2pJxcZ">
+                      <node concept="2OqwBi" id="2A9ckkwk$a1" role="36biLW">
+                        <node concept="1YBJjd" id="2A9ckkwkzYB" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2A9ckkwkzJl" resolve="op" />
+                        </node>
+                        <node concept="3TrEf2" id="2A9ckkwk$_r" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3lvb:2A9ckkwkqio" resolve="contentKind" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2A9ckkwkzTs" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2A9ckkwkzJ_" role="mwGJk">
+            <node concept="1YBJjd" id="2A9ckkwkzJP" role="1Z2MuG">
+              <ref role="1YBMHb" node="2A9ckkwkzJl" resolve="op" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2A9ckkwkzJl" role="1YuTPh">
+      <property role="TrG5h" value="op" />
+      <ref role="1YaFvo" to="3lvb:2A9ckkwkqij" resolve="MetaStructureContentOp" />
     </node>
   </node>
 </model>
