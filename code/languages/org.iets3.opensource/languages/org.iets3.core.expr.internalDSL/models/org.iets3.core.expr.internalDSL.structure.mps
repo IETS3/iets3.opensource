@@ -1182,5 +1182,16 @@
       <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2A9ckkwmbl5">
+    <property role="EcuMT" value="2992977600329594181" />
+    <property role="TrG5h" value="EmptyMetaStructureContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2A9ckkwmbl6" role="PzmwI">
+      <ref role="PrY4T" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
+    </node>
+    <node concept="PrWs8" id="2A9ckkwmblb" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+  </node>
 </model>
 
