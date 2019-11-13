@@ -1691,25 +1691,13 @@
     <ref role="1XX52x" to="3lvb:7LiXavRfjak" resolve="Structure" />
     <node concept="3EZMnI" id="7LiXavRfmyo" role="2wV5jI">
       <node concept="l2Vlx" id="7LiXavRfmyp" role="2iSdaV" />
-      <node concept="1HlG4h" id="7LiXavRfF9m" role="3EZMnx">
-        <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
-        <node concept="1HfYo3" id="7LiXavRfF9o" role="1HlULh">
-          <node concept="3TQlhw" id="7LiXavRfF9q" role="1Hhtcw">
-            <node concept="3clFbS" id="7LiXavRfF9s" role="2VODD2">
-              <node concept="3clFbF" id="7LiXavRfFic" role="3cqZAp">
-                <node concept="2OqwBi" id="7LiXavRfI3v" role="3clFbG">
-                  <node concept="2OqwBi" id="7LiXavRfFFa" role="2Oq$k0">
-                    <node concept="pncrf" id="7LiXavRfFib" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="7LiXavRfGn8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3lvb:7LiXavRfjkn" resolve="structureDeclaration" />
-                    </node>
-                  </node>
-                  <node concept="3TrcHB" id="7LiXavRfJB3" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
+      <node concept="1iCGBv" id="7eYRyEsiEVQ" role="3EZMnx">
+        <ref role="1NtTu8" to="3lvb:7LiXavRfjkn" resolve="structureDeclaration" />
+        <node concept="1sVBvm" id="7eYRyEsiEVS" role="1sWHZn">
+          <node concept="3F0A7n" id="7eYRyEsiEWj" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
           </node>
         </node>
       </node>
