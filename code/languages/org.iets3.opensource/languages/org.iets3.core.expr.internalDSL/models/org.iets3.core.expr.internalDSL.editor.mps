@@ -1796,9 +1796,10 @@
     <property role="3GE5qa" value="structures.m3_meta-structure" />
     <ref role="1XX52x" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
     <node concept="3EZMnI" id="7LiXavRcjU3" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="2iRkQZ" id="7LiXavRcjU4" role="2iSdaV" />
-      <node concept="3EZMnI" id="7LiXavRbyK1" role="3EZMnx">
-        <node concept="l2Vlx" id="7LiXavRbyK2" role="2iSdaV" />
+      <node concept="3EZMnI" id="7eYRyEsfUif" role="3EZMnx">
+        <node concept="2iRfu4" id="7eYRyEsfUig" role="2iSdaV" />
         <node concept="3F0ifn" id="7LiXavRbyK3" role="3EZMnx">
           <property role="3F0ifm" value="meta structure" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
@@ -1822,18 +1823,13 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="3EZMnI" id="7eYRyEsfUsh" role="3EZMnx">
+        <node concept="2iRfu4" id="7eYRyEsfUsi" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7eYRyEsfUwT" role="3EZMnx" />
         <node concept="3F2HdR" id="7LiXavRbyKk" role="3EZMnx">
           <ref role="1NtTu8" to="3lvb:7LiXavRbxvY" resolve="contents" />
-          <node concept="l2Vlx" id="7LiXavRbyKl" role="2czzBx" />
-          <node concept="pj6Ft" id="7$TgoCYjTFW" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="pVoyu" id="7$TgoCYjTFX" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="7$TgoCYjTFY" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+          <node concept="2iRkQZ" id="7eYRyEsfUxd" role="2czzBx" />
           <node concept="4$FPG" id="2A9ckkwmblL" role="4_6I_">
             <node concept="3clFbS" id="2A9ckkwmblM" role="2VODD2">
               <node concept="3clFbF" id="2A9ckkwmz0Q" role="3cqZAp">
@@ -1848,13 +1844,36 @@
             </node>
           </node>
         </node>
-        <node concept="3F0ifn" id="7LiXavRbyKm" role="3EZMnx">
-          <property role="3F0ifm" value="}" />
-          <node concept="11L4FC" id="7LiXavRbyKn" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="3mYdg7" id="7LiXavRbyKo" role="3F10Kt">
+      </node>
+      <node concept="3F0ifn" id="7LiXavRbyKm" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="11L4FC" id="7LiXavRbyKn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7LiXavRbyKo" role="3F10Kt">
+          <property role="1413C4" value="paren-contentDeclaration" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7eYRyEshcUS" role="AHCbl">
+        <node concept="2iRfu4" id="7eYRyEshcUT" role="2iSdaV" />
+        <node concept="3F0ifn" id="7eYRyEshcUU" role="3EZMnx">
+          <property role="3F0ifm" value="meta structure" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0A7n" id="7eYRyEshcUV" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="7eYRyEshcUW" role="3EZMnx">
+          <property role="3F0ifm" value="..." />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+        </node>
+        <node concept="3F0ifn" id="7eYRyEshcUY" role="3EZMnx">
+          <property role="3F0ifm" value="{...}" />
+          <node concept="3mYdg7" id="7eYRyEshcUZ" role="3F10Kt">
             <property role="1413C4" value="paren-contentDeclaration" />
+          </node>
+          <node concept="11LMrY" id="7eYRyEshcV0" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
       </node>
