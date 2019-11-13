@@ -447,7 +447,7 @@
     <ref role="1M2myG" to="3lvb:1opCYOr8cxa" resolve="ISentenceCall" />
   </node>
   <node concept="1M2fIO" id="7LiXavRkDzq">
-    <property role="3GE5qa" value="structures.2_structure" />
+    <property role="3GE5qa" value="structures.m2_structure" />
     <ref role="1M2myG" to="3lvb:7LiXavRk2D4" resolve="StructureContentRef" />
     <node concept="1N5Pfh" id="1V2v6rwR3n_" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:7LiXavRk2D5" resolve="structureContent" />
@@ -974,7 +974,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2DTaqD1RAIH">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
     <ref role="1M2myG" to="3lvb:2DTaqD1$bbj" resolve="InlineRecordDeclaration" />
     <node concept="EnEH3" id="2DTaqD1RAII" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -1005,8 +1005,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2DTaqD22geT">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1M2myG" to="3lvb:2DTaqD1F2m8" resolve="MetaStructureContentRef" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:2DTaqD1F2m8" resolve="ContentRef" />
     <node concept="1N5Pfh" id="2DTaqD22rGB" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:2DTaqD1F2nN" resolve="content" />
       <node concept="3dgokm" id="2DTaqD22yA_" role="1N6uqs">
@@ -1020,7 +1020,7 @@
             <node concept="3cpWsn" id="2DTaqD2j2LU" role="3cpWs9">
               <property role="TrG5h" value="metaStructure" />
               <node concept="3Tqbb2" id="2DTaqD2j2LQ" role="1tU5fm">
-                <ref role="ehGHo" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                <ref role="ehGHo" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
               </node>
               <node concept="2OqwBi" id="2DTaqD2j4Od" role="33vP2m">
                 <node concept="2OqwBi" id="2DTaqD2j2LV" role="2Oq$k0">
@@ -1054,7 +1054,7 @@
                     <node concept="2Xjw5R" id="2DTaqD2j7HX" role="2OqNvi">
                       <node concept="1xMEDy" id="2DTaqD2j7HZ" role="1xVPHs">
                         <node concept="chp4Y" id="2DTaqD2j7Vx" role="ri$Ld">
-                          <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                          <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
                         </node>
                       </node>
                     </node>
@@ -1102,7 +1102,7 @@
                     <ref role="3gnhBz" to="3lvb:7LiXavRfjak" resolve="Structure" />
                   </node>
                   <node concept="3gn64h" id="2DTaqD2kuTy" role="3gmYPZ">
-                    <ref role="3gnhBz" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                    <ref role="3gnhBz" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
                   </node>
                 </node>
               </node>
@@ -1144,11 +1144,11 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2DTaqD2nqfH">
-    <property role="3GE5qa" value="structures.2_structure" />
+    <property role="3GE5qa" value="structures.m2_structure" />
     <ref role="1M2myG" to="3lvb:7LiXavRg_eE" resolve="StructureContent" />
   </node>
   <node concept="1M2fIO" id="2DTaqD2oytd">
-    <property role="3GE5qa" value="structures.1_program" />
+    <property role="3GE5qa" value="structures.m1_program" />
     <ref role="1M2myG" to="3lvb:2DTaqD2ooo7" resolve="StructureInstBoundBehaviorAccess" />
     <node concept="1N5Pfh" id="4s7mJiw73nD" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:2DTaqD2ovOw" resolve="accessedContent" />
@@ -1222,7 +1222,7 @@
                           </node>
                           <node concept="1mIQ4w" id="4s7mJiw8ih1" role="2OqNvi">
                             <node concept="chp4Y" id="4s7mJiw8ih2" role="cj9EA">
-                              <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="IMetaStructureContent_Behavioral" />
+                              <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="Content_Behavioral" />
                             </node>
                           </node>
                         </node>
@@ -1283,8 +1283,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4s7mJiwbyeN">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1M2myG" to="3lvb:4s7mJiwbxCO" resolve="MetaStructureContent_TypeMemberTarget" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:4s7mJiwbxCO" resolve="ContentMemberOp" />
     <node concept="1N5Pfh" id="4s7mJiwbzd7" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:4s7mJiwbxDL" resolve="member" />
       <node concept="3dgokm" id="4s7mJiwbzdb" role="1N6uqs">
@@ -1298,7 +1298,7 @@
                   <node concept="2OqwBi" id="2A9ckkwcCOH" role="2Oq$k0">
                     <node concept="1PxgMI" id="2A9ckkwcC2A" role="2Oq$k0">
                       <node concept="chp4Y" id="2A9ckkwcCoC" role="3oSUPX">
-                        <ref role="cht4Q" to="3lvb:HXhvgThvjg" resolve="MetaStructureContentType" />
+                        <ref role="cht4Q" to="3lvb:HXhvgThvjg" resolve="ContentType" />
                       </node>
                       <node concept="2OqwBi" id="2A9ckkwcAQS" role="1m5AlR">
                         <node concept="2OqwBi" id="2A9ckkwc_wl" role="2Oq$k0">
@@ -1306,7 +1306,7 @@
                             <node concept="2rP1CM" id="2A9ckkwc$7Q" role="2Oq$k0" />
                             <node concept="2Xjw5R" id="2A9ckkwc$If" role="2OqNvi">
                               <node concept="1xMEDy" id="2A9ckkwc$Ih" role="1xVPHs">
-                                <node concept="chp4Y" id="2A9ckkwc_0r" role="ri$Ld">
+                                <node concept="chp4Y" id="7eYRyEsaeSZ" role="ri$Ld">
                                   <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
                                 </node>
                               </node>
@@ -1350,7 +1350,7 @@
             <node concept="2qgKlT" id="4s7mJiwbymf" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
               <node concept="35c_gC" id="4s7mJiwbymg" role="37wK5m">
-                <ref role="35c_gD" to="3lvb:HXhvgThvjg" resolve="MetaStructureContentType" />
+                <ref role="35c_gD" to="3lvb:HXhvgThvjg" resolve="ContentType" />
               </node>
               <node concept="3clFbT" id="4s7mJiwbymh" role="37wK5m" />
             </node>
@@ -1360,7 +1360,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4s7mJiwjveV">
-    <property role="3GE5qa" value="structures.1_program" />
+    <property role="3GE5qa" value="structures.m1_program" />
     <ref role="1M2myG" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     <node concept="1N5Pfh" id="4s7mJiwjy6k" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
@@ -1419,7 +1419,7 @@
                 </node>
                 <node concept="v3k3i" id="4s7mJiwjX6t" role="2OqNvi">
                   <node concept="chp4Y" id="4s7mJiwjXqN" role="v3oSu">
-                    <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="IMetaStructureContent_Behavioral" />
+                    <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="Content_Behavioral" />
                   </node>
                 </node>
               </node>
@@ -1450,87 +1450,8 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="4s7mJiwyC3a">
-    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
-    <ref role="1M2myG" to="3lvb:4s7mJiwyC2I" resolve="ContentsOf" />
-    <node concept="1N5Pfh" id="4s7mJiwyG1k" role="1Mr941">
-      <ref role="1N5Vy1" to="3lvb:4s7mJiwyFL9" resolve="metaContent" />
-      <node concept="3dgokm" id="4s7mJiwyG1o" role="1N6uqs">
-        <node concept="3clFbS" id="4s7mJiwyG1q" role="2VODD2">
-          <node concept="3clFbF" id="4s7mJiwyG4n" role="3cqZAp">
-            <node concept="2YIFZM" id="4s7mJiwyG4o" role="3clFbG">
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
-              <node concept="2OqwBi" id="4s7mJiwyJmG" role="37wK5m">
-                <node concept="2OqwBi" id="4s7mJiwyIDs" role="2Oq$k0">
-                  <node concept="3TrEf2" id="4s7mJiw_9qK" role="2OqNvi">
-                    <ref role="3Tt5mk" to="3lvb:4s7mJiw$K46" resolve="target" />
-                  </node>
-                  <node concept="1PxgMI" id="4s7mJiw_8SF" role="2Oq$k0">
-                    <node concept="chp4Y" id="4s7mJiw_9am" role="3oSUPX">
-                      <ref role="cht4Q" to="3lvb:4s7mJiw$K45" resolve="MetaStructure_Type" />
-                    </node>
-                    <node concept="2OqwBi" id="4s7mJiw_8SH" role="1m5AlR">
-                      <node concept="2OqwBi" id="4s7mJiw_8SI" role="2Oq$k0">
-                        <node concept="1PxgMI" id="4s7mJiw_8SJ" role="2Oq$k0">
-                          <node concept="chp4Y" id="4s7mJiw_8SK" role="3oSUPX">
-                            <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-                          </node>
-                          <node concept="1eOMI4" id="4s7mJiw_8SL" role="1m5AlR">
-                            <node concept="3K4zz7" id="4s7mJiw_8SM" role="1eOMHV">
-                              <node concept="2rP1CM" id="4s7mJiw_8SN" role="3K4E3e" />
-                              <node concept="2OqwBi" id="4s7mJiw_8SO" role="3K4Cdx">
-                                <node concept="3kakTB" id="4s7mJiw_8SP" role="2Oq$k0" />
-                                <node concept="3w_OXm" id="4s7mJiw_8SQ" role="2OqNvi" />
-                              </node>
-                              <node concept="2OqwBi" id="4s7mJiw_8SR" role="3K4GZi">
-                                <node concept="3kakTB" id="4s7mJiw_8SS" role="2Oq$k0" />
-                                <node concept="1mfA1w" id="4s7mJiw_8ST" role="2OqNvi" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="4s7mJiw_8SU" role="2OqNvi">
-                          <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                        </node>
-                      </node>
-                      <node concept="3JvlWi" id="4s7mJiw_8SV" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="4s7mJiwyZA2" role="2OqNvi">
-                  <ref role="3TtcxE" to="3lvb:7LiXavRbxvY" resolve="contents" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="9S07l" id="4s7mJiwyCId" role="9Vyp8">
-      <node concept="3clFbS" id="4s7mJiwyCIe" role="2VODD2">
-        <node concept="3clFbF" id="4s7mJiwyCPy" role="3cqZAp">
-          <node concept="2OqwBi" id="4s7mJiwyCPz" role="3clFbG">
-            <node concept="1PxgMI" id="4s7mJiwyCP$" role="2Oq$k0">
-              <node concept="chp4Y" id="4s7mJiwyCP_" role="3oSUPX">
-                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-              </node>
-              <node concept="nLn13" id="4s7mJiwyCPA" role="1m5AlR" />
-            </node>
-            <node concept="2qgKlT" id="4s7mJiwyCPB" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="4s7mJiwyCPC" role="37wK5m">
-                <ref role="35c_gD" to="3lvb:4s7mJiw$K45" resolve="MetaStructure_Type" />
-              </node>
-              <node concept="3clFbT" id="4s7mJiwyCPD" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="4s7mJiwyE$Z">
-    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <property role="3GE5qa" value="structures.m3_meta-structure.reflection" />
     <ref role="1M2myG" to="3lvb:1V2v6rwJrUq" resolve="StructureRuntime" />
     <node concept="9S07l" id="4s7mJiwyE_0" role="9Vyp8">
       <node concept="3clFbS" id="4s7mJiwyE_1" role="2VODD2">
@@ -1541,7 +1462,7 @@
               <node concept="2Xjw5R" id="4s7mJiwyFab" role="2OqNvi">
                 <node concept="1xMEDy" id="4s7mJiwyFad" role="1xVPHs">
                   <node concept="chp4Y" id="4s7mJiwyFl7" role="ri$Ld">
-                    <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
                   </node>
                 </node>
               </node>
@@ -1553,7 +1474,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4s7mJiwyXx1">
-    <property role="3GE5qa" value="structures.3_meta-structure.reflection" />
+    <property role="3GE5qa" value="structures.m3_meta-structure.reflection" />
     <ref role="1M2myG" to="3lvb:4s7mJiwxdSg" resolve="StructureExpr" />
     <node concept="9S07l" id="4s7mJiwyXx2" role="9Vyp8">
       <node concept="3clFbS" id="4s7mJiwyXx3" role="2VODD2">
@@ -1564,7 +1485,7 @@
               <node concept="2Xjw5R" id="4s7mJiwyXVM" role="2OqNvi">
                 <node concept="1xMEDy" id="4s7mJiwyXVN" role="1xVPHs">
                   <node concept="chp4Y" id="4s7mJiwyXVO" role="ri$Ld">
-                    <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructure" />
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
                   </node>
                 </node>
               </node>
@@ -1576,8 +1497,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5in0T3SgRiQ">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1M2myG" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:7LiXavRbwCD" resolve="Content_Internal" />
     <node concept="9S07l" id="5in0T3SgRiR" role="9Vyp8">
       <node concept="3clFbS" id="5in0T3SgRiS" role="2VODD2">
         <node concept="3clFbJ" id="5in0T3SgRqc" role="3cqZAp">
@@ -1595,7 +1516,7 @@
                 <node concept="2DD5aU" id="5in0T3SgSFF" role="2Oq$k0" />
                 <node concept="2Zo12i" id="5in0T3SgTpM" role="2OqNvi">
                   <node concept="chp4Y" id="5in0T3SgT$a" role="2Zo12j">
-                    <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                    <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="Content_Internal" />
                   </node>
                 </node>
               </node>
@@ -1611,8 +1532,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2A9ckkw5rge">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1M2myG" to="3lvb:2A9ckkw5pMT" resolve="ChildrenOp" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:2A9ckkw5pMT" resolve="ContentChildrenOp" />
     <node concept="1N5Pfh" id="2A9ckkwaXVz" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:2A9ckkwaXDu" resolve="content" />
       <node concept="3dgokm" id="2A9ckkwaXV_" role="1N6uqs">
@@ -1626,7 +1547,7 @@
               <node concept="2OqwBi" id="2A9ckkwb2S1" role="33vP2m">
                 <node concept="1PxgMI" id="2A9ckkwb2S2" role="2Oq$k0">
                   <node concept="chp4Y" id="2A9ckkwb2S3" role="3oSUPX">
-                    <ref role="cht4Q" to="3lvb:HXhvgThvjg" resolve="MetaStructureContentType" />
+                    <ref role="cht4Q" to="3lvb:HXhvgThvjg" resolve="ContentType" />
                   </node>
                   <node concept="2OqwBi" id="2A9ckkwb2S4" role="1m5AlR">
                     <node concept="2OqwBi" id="2A9ckkwb2S5" role="2Oq$k0">
@@ -1663,7 +1584,7 @@
                   <node concept="2OqwBi" id="2A9ckkwb5ct" role="37wK5m">
                     <node concept="1PxgMI" id="2A9ckkwb4Qe" role="2Oq$k0">
                       <node concept="chp4Y" id="2A9ckkwb4VW" role="3oSUPX">
-                        <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                        <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="Content_Internal" />
                       </node>
                       <node concept="37vLTw" id="2A9ckkwb4Ef" role="1m5AlR">
                         <ref role="3cqZAo" node="2A9ckkwb2S0" resolve="c" />
@@ -1682,7 +1603,7 @@
               </node>
               <node concept="1mIQ4w" id="2A9ckkwb4lz" role="2OqNvi">
                 <node concept="chp4Y" id="2A9ckkwb4sR" role="cj9EA">
-                  <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="MetaStructureContent_Internal" />
+                  <ref role="cht4Q" to="3lvb:7LiXavRbwCD" resolve="Content_Internal" />
                 </node>
               </node>
             </node>
@@ -1706,7 +1627,7 @@
             <node concept="2qgKlT" id="2A9ckkw5tJZ" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
               <node concept="35c_gC" id="2A9ckkw5u04" role="37wK5m">
-                <ref role="35c_gD" to="3lvb:HXhvgThvjg" resolve="MetaStructureContentType" />
+                <ref role="35c_gD" to="3lvb:HXhvgThvjg" resolve="ContentType" />
               </node>
               <node concept="3clFbT" id="2A9ckkw5uKq" role="37wK5m" />
             </node>
@@ -1737,8 +1658,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2A9ckkwkqjS">
-    <property role="3GE5qa" value="structures.3_meta-structure" />
-    <ref role="1M2myG" to="3lvb:2A9ckkwkqij" resolve="MetaStructureContentOp" />
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <ref role="1M2myG" to="3lvb:2A9ckkwkqij" resolve="StructureContentOp" />
     <node concept="1N5Pfh" id="2A9ckkwktAv" role="1Mr941">
       <ref role="1N5Vy1" to="3lvb:2A9ckkwkqio" resolve="contentKind" />
       <node concept="3dgokm" id="2A9ckkwktAB" role="1N6uqs">
