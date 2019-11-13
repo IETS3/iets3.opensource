@@ -3272,6 +3272,21 @@
             <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
           </node>
         </node>
+        <node concept="1SiIV0" id="51SjSl3xtzl" role="3bR37C">
+          <node concept="3bR9La" id="51SjSl3xtzm" role="1SiIV1">
+            <ref role="3bR37D" node="5FYd8xZZj2s" resolve="org.iets3.core.expr.path" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51SjSl3xtzn" role="3bR37C">
+          <node concept="3bR9La" id="51SjSl3xtzo" role="1SiIV1">
+            <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51SjSl3xtzp" role="3bR37C">
+          <node concept="3bR9La" id="51SjSl3xtzq" role="1SiIV1">
+            <ref role="3bR37D" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1opCYOr1HD6" role="2G$12L">
         <property role="BnDLt" value="true" />
