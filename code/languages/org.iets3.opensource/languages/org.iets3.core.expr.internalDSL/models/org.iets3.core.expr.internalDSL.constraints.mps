@@ -1251,7 +1251,7 @@
                           </node>
                           <node concept="1mIQ4w" id="4s7mJiw8ih1" role="2OqNvi">
                             <node concept="chp4Y" id="4s7mJiw8ih2" role="cj9EA">
-                              <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="Content_Behavioral" />
+                              <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
                             </node>
                           </node>
                         </node>
@@ -1273,16 +1273,11 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="2DTaqD2oyti" role="EtsB7">
         <node concept="3clFbS" id="2DTaqD2oytj" role="2VODD2">
-          <node concept="3clFbF" id="2DTaqD2oy_U" role="3cqZAp">
-            <node concept="2OqwBi" id="2DTaqD2ozYq" role="3clFbG">
-              <node concept="2OqwBi" id="2DTaqD2oySL" role="2Oq$k0">
-                <node concept="EsrRn" id="2DTaqD2oy_T" role="2Oq$k0" />
-                <node concept="3TrEf2" id="2DTaqD2ozlr" role="2OqNvi">
-                  <ref role="3Tt5mk" to="3lvb:2DTaqD2ovOw" resolve="accessedContent" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="2DTaqD2o$mq" role="2OqNvi">
-                <ref role="37wK5l" to="ppli:7LiXavRk334" resolve="getLabel" />
+          <node concept="3clFbF" id="6hjEISjW_8I" role="3cqZAp">
+            <node concept="2OqwBi" id="6hjEISjW_qE" role="3clFbG">
+              <node concept="EsrRn" id="6hjEISjW_8G" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6hjEISjW_VS" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
               </node>
             </node>
           </node>
@@ -1392,7 +1387,7 @@
     <property role="3GE5qa" value="structures.m1_program" />
     <ref role="1M2myG" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     <node concept="1N5Pfh" id="4s7mJiwjy6k" role="1Mr941">
-      <ref role="1N5Vy1" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+      <ref role="1N5Vy1" to="3lvb:4s7mJiwjv8u" resolve="accessedMetaContent" />
       <node concept="3dgokm" id="4s7mJiwjy6o" role="1N6uqs">
         <node concept="3clFbS" id="4s7mJiwjy6q" role="2VODD2">
           <node concept="3clFbF" id="4s7mJiwjy9n" role="3cqZAp">
@@ -1448,7 +1443,7 @@
                 </node>
                 <node concept="v3k3i" id="4s7mJiwjX6t" role="2OqNvi">
                   <node concept="chp4Y" id="4s7mJiwjXqN" role="v3oSu">
-                    <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="Content_Behavioral" />
+                    <ref role="cht4Q" to="3lvb:2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
                   </node>
                 </node>
               </node>

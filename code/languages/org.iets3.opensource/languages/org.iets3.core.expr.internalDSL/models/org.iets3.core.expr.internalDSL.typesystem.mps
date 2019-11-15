@@ -2037,12 +2037,8 @@
             <node concept="1YBJjd" id="2DTaqD2475O" role="2Oq$k0">
               <ref role="1YBMHb" node="1V2v6rwJEp1" resolve="structureInstanceRef" />
             </node>
-            <node concept="2Xjw5R" id="2DTaqD2475P" role="2OqNvi">
-              <node concept="1xMEDy" id="2DTaqD2475Q" role="1xVPHs">
-                <node concept="chp4Y" id="2DTaqD2475R" role="ri$Ld">
-                  <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
-                </node>
-              </node>
+            <node concept="2qgKlT" id="6hjEISjY_$5" role="2OqNvi">
+              <ref role="37wK5l" to="ppli:6hjEISjYz3D" resolve="getMetaStrDeclaration" />
             </node>
           </node>
         </node>
@@ -2257,7 +2253,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="4s7mJiwmIR3">
-    <property role="TrG5h" value="typeof_StructureInstStaticBehaviorAccess" />
+    <property role="TrG5h" value="typeof_StructureInstUnboundBehaviorAccess" />
     <property role="3GE5qa" value="structures.m1_program" />
     <node concept="3clFbS" id="4s7mJiwmIR4" role="18ibNy">
       <node concept="1Z5TYs" id="4s7mJiwmJt7" role="3cqZAp">
@@ -2275,7 +2271,7 @@
                 <ref role="1YBMHb" node="4s7mJiwmIR6" resolve="access" />
               </node>
               <node concept="3TrEf2" id="4s7mJiwngLV" role="2OqNvi">
-                <ref role="3Tt5mk" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+                <ref role="3Tt5mk" to="3lvb:4s7mJiwjv8u" resolve="accessedMetaContent" />
               </node>
             </node>
             <node concept="2qgKlT" id="4s7mJiwugTK" role="2OqNvi">
@@ -2312,12 +2308,8 @@
             <node concept="1YBJjd" id="4s7mJiw$KQ3" role="2Oq$k0">
               <ref role="1YBMHb" node="4s7mJiw$Jus" resolve="structureExpr" />
             </node>
-            <node concept="2Xjw5R" id="4s7mJiw$KQ4" role="2OqNvi">
-              <node concept="1xMEDy" id="4s7mJiw$KQ5" role="1xVPHs">
-                <node concept="chp4Y" id="4s7mJiw$KQ6" role="ri$Ld">
-                  <ref role="cht4Q" to="3lvb:7LiXavRbwCc" resolve="MetaStructureDeclaration" />
-                </node>
-              </node>
+            <node concept="2qgKlT" id="6hjEISjQypT" role="2OqNvi">
+              <ref role="37wK5l" to="ppli:6hjEISjQxCT" resolve="getMetaStrDeclaration" />
             </node>
           </node>
         </node>

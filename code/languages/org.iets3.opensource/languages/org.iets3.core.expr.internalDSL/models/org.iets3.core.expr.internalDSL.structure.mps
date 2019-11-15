@@ -776,21 +776,6 @@
       <ref role="20lvS9" node="2DbtJhuzo2r" resolve="SuffixType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7LiXavRATiH">
-    <property role="EcuMT" value="8958491611044222125" />
-    <property role="3GE5qa" value="structures.m2_structure" />
-    <property role="TrG5h" value="StructureContentValueFunction" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="PrWs8" id="7LiXavRATiR" role="PzmwI">
-      <ref role="PrY4T" to="s7zn:5cK3QOc9qsF" resolve="IMetaFunctionContext" />
-    </node>
-    <node concept="1TJgyj" id="7LiXavRAUhu" role="1TKVEi">
-      <property role="IQ2ns" value="8958491611044226142" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <ref role="20lvS9" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7LiXavRl02N">
     <property role="EcuMT" value="8958491611039531187" />
     <property role="TrG5h" value="StructureRef" />
@@ -910,7 +895,7 @@
   <node concept="1TIwiD" id="2DTaqD1F2mk">
     <property role="EcuMT" value="3060523232997942676" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
-    <property role="TrG5h" value="Content_Query" />
+    <property role="TrG5h" value="MetaContent_Query" />
     <property role="R4oN_" value="behavior that returns a value and does not mutate the state of the structure" />
     <property role="34LRSv" value="query" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -932,13 +917,13 @@
       <ref role="PrY4T" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
     </node>
     <node concept="PrWs8" id="2DTaqD1F2nJ" role="PzmwI">
-      <ref role="PrY4T" node="2DTaqD1F2nI" resolve="Content_Behavioral" />
+      <ref role="PrY4T" node="2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
     </node>
   </node>
   <node concept="1TIwiD" id="2DTaqD1F2ml">
     <property role="EcuMT" value="3060523232997942677" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
-    <property role="TrG5h" value="Content_Command" />
+    <property role="TrG5h" value="MetaContent_Command" />
     <property role="34LRSv" value="command" />
     <property role="R4oN_" value="behavior that mutates the runtime state and does not return any value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -953,13 +938,13 @@
       <ref role="PrY4T" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
     </node>
     <node concept="PrWs8" id="2DTaqD1F2nL" role="PzmwI">
-      <ref role="PrY4T" node="2DTaqD1F2nI" resolve="Content_Behavioral" />
+      <ref role="PrY4T" node="2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
     </node>
   </node>
   <node concept="PlHQZ" id="2DTaqD1F2nI">
     <property role="EcuMT" value="3060523232997942766" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
-    <property role="TrG5h" value="Content_Behavioral" />
+    <property role="TrG5h" value="MetaContent_Behavioral" />
     <node concept="PrWs8" id="2DTaqD1F2nY" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -1027,6 +1012,7 @@
     <property role="EcuMT" value="5118159508235754036" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
     <property role="TrG5h" value="ContentMemberOp" />
+    <property role="34LRSv" value="content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4s7mJiwbxDL" role="1TKVEi">
       <property role="IQ2ns" value="5118159508235754097" />
@@ -1053,9 +1039,9 @@
     <node concept="1TJgyj" id="4s7mJiwjv8u" role="1TKVEi">
       <property role="IQ2ns" value="5118159508237840926" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="accessedContent" />
+      <property role="20kJfa" value="accessedMetaContent" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2DTaqD1F2nI" resolve="Content_Behavioral" />
+      <ref role="20lvS9" node="2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
     </node>
     <node concept="1TJgyj" id="4s7mJiwvc$I" role="1TKVEi">
       <property role="IQ2ns" value="5118159508240910638" />

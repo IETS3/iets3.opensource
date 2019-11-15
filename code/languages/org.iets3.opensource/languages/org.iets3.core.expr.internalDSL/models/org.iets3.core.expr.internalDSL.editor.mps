@@ -1620,44 +1620,6 @@
                           <node concept="2jxLKc" id="5Lx2_X6pk4L" role="1tU5fm" />
                         </node>
                       </node>
-                      <node concept="3clFbH" id="5Lx2_X6pk4M" role="3cqZAp" />
-                      <node concept="Jncv_" id="5Lx2_X6pk4N" role="3cqZAp">
-                        <ref role="JncvD" to="zzzn:6zmBjqUjGYQ" resolve="FunctionType" />
-                        <node concept="2OqwBi" id="5Lx2_X6pk4O" role="JncvB">
-                          <node concept="37vLTw" id="5Lx2_X6pk4P" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Lx2_X6pk56" resolve="member" />
-                          </node>
-                          <node concept="2qgKlT" id="5Lx2_X6pk4Q" role="2OqNvi">
-                            <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
-                          </node>
-                        </node>
-                        <node concept="3clFbS" id="5Lx2_X6pk4R" role="Jncv$">
-                          <node concept="3cpWs6" id="5Lx2_X6pk4S" role="3cqZAp">
-                            <node concept="2pJPEk" id="5Lx2_X6pk4T" role="3cqZAk">
-                              <node concept="2pJPED" id="5Lx2_X6pk4U" role="2pJPEn">
-                                <ref role="2pJxaS" to="3lvb:7LiXavRATiH" resolve="StructureContentValueFunction" />
-                                <node concept="2pIpSj" id="5Lx2_X6pk4V" role="2pJxcM">
-                                  <ref role="2pIpSl" to="3lvb:7LiXavRAUhu" resolve="declaration" />
-                                  <node concept="36biLy" id="5Lx2_X6pk4W" role="2pJxcZ">
-                                    <node concept="1PxgMI" id="5Lx2_X6pk4X" role="36biLW">
-                                      <node concept="chp4Y" id="5Lx2_X6pk4Y" role="3oSUPX">
-                                        <ref role="cht4Q" to="yv47:7D7uZV2dYyT" resolve="RecordMember" />
-                                      </node>
-                                      <node concept="37vLTw" id="5Lx2_X6pk4Z" role="1m5AlR">
-                                        <ref role="3cqZAo" node="5Lx2_X6pk56" resolve="member" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="JncvC" id="5Lx2_X6pk50" role="JncvA">
-                          <property role="TrG5h" value="functionType" />
-                          <node concept="2jxLKc" id="5Lx2_X6pk51" role="1tU5fm" />
-                        </node>
-                      </node>
                       <node concept="3clFbH" id="5Lx2_X6pk52" role="3cqZAp" />
                       <node concept="3clFbF" id="5Lx2_X6pk53" role="3cqZAp">
                         <node concept="2pJPEk" id="5Lx2_X6pk54" role="3clFbG">
@@ -2540,13 +2502,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="7LiXavRD7Dn">
-    <property role="3GE5qa" value="structures.m2_structure" />
-    <ref role="1XX52x" to="3lvb:7LiXavRATiH" resolve="StructureContentValueFunction" />
-    <node concept="3F1sOY" id="7LiXavRD7Dp" role="2wV5jI">
-      <ref role="1NtTu8" to="s7zn:5cK3QOc9w5h" resolve="function" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7LiXavRl02P">
     <property role="3GE5qa" value="structures.deprecated" />
     <ref role="1XX52x" to="3lvb:7LiXavRl02N" resolve="StructureRef" />
@@ -3416,7 +3371,7 @@
   </node>
   <node concept="24kQdi" id="2DTaqD1HYba">
     <property role="3GE5qa" value="structures.m3_meta-structure" />
-    <ref role="1XX52x" to="3lvb:2DTaqD1F2mk" resolve="Content_Query" />
+    <ref role="1XX52x" to="3lvb:2DTaqD1F2mk" resolve="MetaContent_Query" />
     <node concept="3EZMnI" id="2DTaqD1HYbc" role="2wV5jI">
       <node concept="l2Vlx" id="2DTaqD1HYbd" role="2iSdaV" />
       <node concept="PMmxH" id="2DTaqD1HYbq" role="3EZMnx">
@@ -3467,7 +3422,7 @@
   </node>
   <node concept="24kQdi" id="2DTaqD1HYc8">
     <property role="3GE5qa" value="structures.m3_meta-structure" />
-    <ref role="1XX52x" to="3lvb:2DTaqD1F2ml" resolve="Content_Command" />
+    <ref role="1XX52x" to="3lvb:2DTaqD1F2ml" resolve="MetaContent_Command" />
     <node concept="3EZMnI" id="2DTaqD1HYca" role="2wV5jI">
       <node concept="l2Vlx" id="2DTaqD1HYcb" role="2iSdaV" />
       <node concept="PMmxH" id="2DTaqD1HYcc" role="3EZMnx">
@@ -3643,7 +3598,7 @@
     <property role="3GE5qa" value="structures.m1_program" />
     <ref role="1XX52x" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     <node concept="1iCGBv" id="4s7mJiwlvGi" role="2wV5jI">
-      <ref role="1NtTu8" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+      <ref role="1NtTu8" to="3lvb:4s7mJiwjv8u" resolve="accessedMetaContent" />
       <node concept="1sVBvm" id="4s7mJiwlvGk" role="1sWHZn">
         <node concept="3F0A7n" id="4s7mJiwlvGr" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -3708,7 +3663,7 @@
     <property role="TrG5h" value="StructureInstUnboundBehaviorAccess_reference_actions" />
     <ref role="aqKnT" to="3lvb:4s7mJiwjv8r" resolve="StructureInstUnboundBehaviorAccess" />
     <node concept="3XHNnq" id="4s7mJiwvgHs" role="3ft7WO">
-      <ref role="3XGfJA" to="3lvb:4s7mJiwjv8u" resolve="accessedContent" />
+      <ref role="3XGfJA" to="3lvb:4s7mJiwjv8u" resolve="accessedMetaContent" />
     </node>
   </node>
   <node concept="24kQdi" id="4s7mJiwxdT3">
