@@ -2513,12 +2513,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="2pIpSj" id="4s7mJiwuQgQ" role="2pJxcM">
-                <ref role="2pIpSl" to="zzzn:6KxoTHgSIsv" resolve="effect" />
-                <node concept="2pJPED" id="6hjEISk5$WV" role="2pJxcZ">
-                  <ref role="2pJxaS" to="zzzn:4qVjx3jYYFG" resolve="ReadEffectTag" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -2764,12 +2758,6 @@
                     </node>
                     <node concept="1$rogu" id="4s7mJiwn97B" role="2OqNvi" />
                   </node>
-                </node>
-              </node>
-              <node concept="2pIpSj" id="4s7mJiwuSSc" role="2pJxcM">
-                <ref role="2pIpSl" to="zzzn:6KxoTHgSIsv" resolve="effect" />
-                <node concept="2pJPED" id="6hjEISk5_9x" role="2pJxcZ">
-                  <ref role="2pJxaS" to="zzzn:4qVjx3jYYFG" resolve="ReadEffectTag" />
                 </node>
               </node>
             </node>
