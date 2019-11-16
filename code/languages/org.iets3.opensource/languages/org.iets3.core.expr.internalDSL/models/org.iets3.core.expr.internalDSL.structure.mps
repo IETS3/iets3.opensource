@@ -33,7 +33,6 @@
       </concept>
       <concept id="8842732777748464990" name="jetbrains.mps.lang.structure.structure.RefPresentationTemplate" flags="ng" index="ROjv2">
         <property id="4307758654697524060" name="suffix" index="1W_73K" />
-        <property id="4307758654697524057" name="prefix" index="1W_73P" />
       </concept>
       <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
         <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
@@ -840,13 +839,8 @@
       <property role="IQ2ns" value="2216470747918745406" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="structure" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7LiXavRfjak" resolve="Structure" />
-    </node>
-    <node concept="RPilO" id="1V2v6rwJsaZ" role="lGtFl">
-      <ref role="RPilL" node="1V2v6rwJrWY" resolve="structure" />
-      <node concept="ROjv2" id="1V2v6rwJsb1" role="ROhUF">
-        <property role="1W_73P" value="new " />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1V2v6rwW3uL">
