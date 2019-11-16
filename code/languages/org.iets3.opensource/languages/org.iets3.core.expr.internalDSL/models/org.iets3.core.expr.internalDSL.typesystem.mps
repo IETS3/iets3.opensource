@@ -2504,5 +2504,47 @@
       <ref role="1YaFvo" to="3lvb:5Lx2_X6iKur" resolve="MemberValue" />
     </node>
   </node>
+  <node concept="2sgARr" id="3Ys4xRzghzo">
+    <property role="3GE5qa" value="structures.m3_meta-structure" />
+    <property role="TrG5h" value="supertypeof_ContentType" />
+    <node concept="3clFbS" id="3Ys4xRzghzp" role="2sgrp5">
+      <node concept="3clFbF" id="3Ys4xRzgh$p" role="3cqZAp">
+        <node concept="2pJPEk" id="3Ys4xRzgh$n" role="3clFbG">
+          <node concept="2pJPED" id="3Ys4xRzghAu" role="2pJPEn">
+            <ref role="2pJxaS" to="3lvb:3Ys4xRzePzy" resolve="AnyContentType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3Ys4xRzghzr" role="1YuTPh">
+      <property role="TrG5h" value="contentType" />
+      <ref role="1YaFvo" to="3lvb:HXhvgThvjg" resolve="ContentType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3Ys4xRzih9v">
+    <property role="TrG5h" value="typeof_ContentIsTypeOp" />
+    <property role="3GE5qa" value="structures.m1_program" />
+    <node concept="3clFbS" id="3Ys4xRzih9w" role="18ibNy">
+      <node concept="1Z5TYs" id="3Ys4xRzihm0" role="3cqZAp">
+        <node concept="mw_s8" id="3Ys4xRzihmi" role="1ZfhKB">
+          <node concept="2YIFZM" id="3Ys4xRzihuO" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3Ys4xRzihm3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3Ys4xRzih9A" role="mwGJk">
+            <node concept="1YBJjd" id="3Ys4xRzihbs" role="1Z2MuG">
+              <ref role="1YBMHb" node="3Ys4xRzih9y" resolve="op" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3Ys4xRzih9y" role="1YuTPh">
+      <property role="TrG5h" value="op" />
+      <ref role="1YaFvo" to="3lvb:3Ys4xRzghDb" resolve="ContentIsTypeOp" />
+    </node>
+  </node>
 </model>
 

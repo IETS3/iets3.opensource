@@ -14,6 +14,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -934,6 +935,9 @@
     <node concept="PrWs8" id="2DTaqD1F2nL" role="PzmwI">
       <ref role="PrY4T" node="2DTaqD1F2nI" resolve="MetaContent_Behavioral" />
     </node>
+    <node concept="PrWs8" id="3Ys4xRzeKnx" role="PzmwI">
+      <ref role="PrY4T" to="zzzn:1VmWkC0z1FS" resolve="IAllowLocalVariables" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2DTaqD1F2nI">
     <property role="EcuMT" value="3060523232997942766" />
@@ -993,7 +997,7 @@
     <property role="EcuMT" value="827894821741262032" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
     <property role="TrG5h" value="ContentType" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <ref role="1TJDcQ" node="3Ys4xRzePzy" resolve="AnyContentType" />
     <node concept="1TJgyj" id="HXhvgThvjh" role="1TKVEi">
       <property role="IQ2ns" value="827894821741262033" />
       <property role="20lmBu" value="reference" />
@@ -1006,7 +1010,7 @@
     <property role="EcuMT" value="5118159508235754036" />
     <property role="3GE5qa" value="structures.m3_meta-structure" />
     <property role="TrG5h" value="ContentMemberOp" />
-    <property role="34LRSv" value="content" />
+    <property role="34LRSv" value="member" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4s7mJiwbxDL" role="1TKVEi">
       <property role="IQ2ns" value="5118159508235754097" />
@@ -1105,7 +1109,7 @@
       <property role="IQ2ns" value="2992977600329131160" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="contentKind" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
     </node>
   </node>
@@ -1131,6 +1135,30 @@
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ys4xRzePzy">
+    <property role="EcuMT" value="4583558440331991266" />
+    <property role="3GE5qa" value="structures.m2_structure" />
+    <property role="TrG5h" value="AnyContentType" />
+    <property role="34LRSv" value="content" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3Ys4xRzghDb">
+    <property role="EcuMT" value="4583558440332368459" />
+    <property role="3GE5qa" value="structures.m1_program" />
+    <property role="TrG5h" value="ContentIsTypeOp" />
+    <property role="34LRSv" value="is" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Ys4xRzghDG" role="1TKVEi">
+      <property role="IQ2ns" value="4583558440332368492" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contentKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2DTaqD1GEEr" resolve="IMetaStructureContent" />
+    </node>
+    <node concept="PrWs8" id="3Ys4xRzghDc" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
 </model>
