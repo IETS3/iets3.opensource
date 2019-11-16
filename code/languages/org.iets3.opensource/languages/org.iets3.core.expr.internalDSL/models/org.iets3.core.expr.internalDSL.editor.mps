@@ -3925,5 +3925,8 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="1SLEMFHeLEU">
+    <ref role="aqKnT" to="3lvb:2A9ckkwmbl5" resolve="EmptyMetaStructureContent" />
+  </node>
 </model>
 
