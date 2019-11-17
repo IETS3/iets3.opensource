@@ -1604,26 +1604,6 @@
     <property role="EcuMT" value="3878179565981658347" />
     <property role="TrG5h" value="IAllowsDocInChildExpressions" />
   </node>
-  <node concept="1TIwiD" id="5sTgzMC4Rb0">
-    <property role="EcuMT" value="6285127583257555648" />
-    <property role="TrG5h" value="TempWrapExpr" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="5sTgzMC4Rc3" role="1TKVEi">
-      <property role="IQ2ns" value="6285127583257555715" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="wrap" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="5sTgzMC4Rb1" role="1TKVEi">
-      <property role="IQ2ns" value="6285127583257555649" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="temp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="79jc6Yz3CVE">
     <property role="EcuMT" value="8237981399425912554" />
     <property role="3GE5qa" value="void" />
