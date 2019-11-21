@@ -13,6 +13,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
+    <import index="aafr" ref="r:fc2b8fcf-559d-4f16-ae65-376838b59be6(org.iets3.core.expr.messages.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
@@ -294,8 +295,8 @@
                     <ref role="3Tt5mk" to="kelk:3vxfdxbi77u" resolve="namespace" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="3vxfdxbigaq" role="2OqNvi">
-                  <ref role="3TtcxE" to="kelk:3vxfdxbcs9Q" resolve="contents" />
+                <node concept="2qgKlT" id="5crSXMDZh2" role="2OqNvi">
+                  <ref role="37wK5l" to="aafr:5crSXMDrDR" resolve="effectiveContext" />
                 </node>
               </node>
             </node>
@@ -397,8 +398,8 @@
                       <ref role="3Tt5mk" to="kelk:3vxfdxbi77u" resolve="namespace" />
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="3vxfdxbiH21" role="2OqNvi">
-                    <ref role="3TtcxE" to="kelk:3vxfdxbcs9Q" resolve="contents" />
+                  <node concept="2qgKlT" id="5crSXMDTEi" role="2OqNvi">
+                    <ref role="37wK5l" to="aafr:5crSXMDrDR" resolve="effectiveContext" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5LerK4sE_92" role="2OqNvi">
