@@ -3030,7 +3030,9 @@
         <node concept="UJIhM" id="2kKAjiTyi12" role="UJIgW">
           <node concept="1yl1Bx" id="2kKAjiTylaV" role="UJIhC">
             <node concept="3bapRa" id="2kKAjiTylaR" role="1yl1BA">
-              <node concept="2vmpnb" id="2kKAjiT$IlT" role="3RXsx" />
+              <node concept="30bXRB" id="2kKAjiTylbs" role="3RXsx">
+                <property role="30bXRw" value="100000" />
+              </node>
             </node>
           </node>
         </node>
@@ -3059,7 +3061,9 @@
           <node concept="5mhuz" id="2kKAjiTyi1V" role="UJIhC">
             <ref role="5mhpJ" node="2kKAjiTybgI" resolve="Wohnhaus" />
           </node>
-          <node concept="2vmpnb" id="2kKAjiT$IdX" role="UJIhC" />
+          <node concept="5mhuz" id="2kKAjiTyi2i" role="UJIhC">
+            <ref role="5mhpJ" node="2kKAjiTybh0" resolve="Doppelhaus" />
+          </node>
         </node>
         <node concept="UJIhL" id="2kKAjiTyi18" role="UJIgT">
           <node concept="5mhuz" id="2kKAjiTyi2D" role="UJIhC">

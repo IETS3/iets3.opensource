@@ -2,16 +2,16 @@
 <model ref="r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
-    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
+    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -90,6 +90,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
         <child id="5944657839000877563" name="hints" index="2ABdcP" />
@@ -5614,6 +5615,58 @@
     </node>
     <node concept="2tJIrI" id="43wAXFpMrbe" role="jymVt" />
     <node concept="3Tm1VV" id="43wAXFpMhrx" role="1B3o_S" />
+  </node>
+  <node concept="1h_SRR" id="71dSyJVpVG$">
+    <property role="TrG5h" value="deleteInspector" />
+    <ref role="1h_SK9" to="hm2y:71dSyJVppgt" resolve="ReductionInspector" />
+    <node concept="1hA7zw" id="71dSyJVpVG_" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="71dSyJVpVGA" role="1hA7z_">
+        <node concept="3clFbS" id="71dSyJVpVGB" role="2VODD2">
+          <node concept="3clFbF" id="71dSyJVpVGG" role="3cqZAp">
+            <node concept="2OqwBi" id="71dSyJVpVIB" role="3clFbG">
+              <node concept="0IXxy" id="71dSyJVpVGF" role="2Oq$k0" />
+              <node concept="3YRAZt" id="71dSyJVpVTm" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="71dSyJVpVTx" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <node concept="1hAIg9" id="71dSyJVpVTy" role="1hA7z_">
+        <node concept="3clFbS" id="71dSyJVpVTz" role="2VODD2">
+          <node concept="3clFbF" id="71dSyJVpVT$" role="3cqZAp">
+            <node concept="2OqwBi" id="71dSyJVpVT_" role="3clFbG">
+              <node concept="0IXxy" id="71dSyJVpVTA" role="2Oq$k0" />
+              <node concept="3YRAZt" id="71dSyJVpVTB" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="71dSyJVppgW">
+    <ref role="1XX52x" to="hm2y:71dSyJVppgt" resolve="ReductionInspector" />
+    <node concept="3EZMnI" id="71dSyJVppgY" role="2wV5jI">
+      <node concept="2SsqMj" id="71dSyJVpph5" role="3EZMnx" />
+      <node concept="2iRkQZ" id="71dSyJVpph1" role="2iSdaV" />
+      <node concept="2T_mXK" id="71dSyJVppp_" role="3EZMnx" />
+      <node concept="3EZMnI" id="71dSyJVppr5" role="3EZMnx">
+        <ref role="1ERwB7" node="71dSyJVpVG$" resolve="deleteInspector" />
+        <ref role="1k5W1q" to="itrz:6zaFu4oRqi5" resolve="iets3Smaller" />
+        <node concept="2iRfu4" id="71dSyJVppr6" role="2iSdaV" />
+        <node concept="3F0ifn" id="71dSyJVpprk" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="3F1sOY" id="71dSyJVppr0" role="3EZMnx">
+          <ref role="1NtTu8" to="hm2y:71dSyJVppgy" resolve="reduced" />
+          <node concept="xShMh" id="71dSyJVsOal" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
