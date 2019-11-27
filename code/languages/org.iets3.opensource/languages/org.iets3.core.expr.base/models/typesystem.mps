@@ -2,12 +2,12 @@
 <model ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -7917,14 +7917,6 @@
     <node concept="1YaCAy" id="ORfz$DSb0p" role="1YuTPh">
       <property role="TrG5h" value="ie" />
       <ref role="1YaFvo" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="5sTgzMC85RN">
-    <property role="TrG5h" value="check_TempWrapExpr" />
-    <node concept="3clFbS" id="5sTgzMC85RO" role="18ibNy" />
-    <node concept="1YaCAy" id="5sTgzMC85RQ" role="1YuTPh">
-      <property role="TrG5h" value="twe" />
-      <ref role="1YaFvo" to="hm2y:5sTgzMC4Rb0" resolve="TempWrapExpr" />
     </node>
   </node>
   <node concept="1YbPZF" id="4Pi6J8BVmrk">

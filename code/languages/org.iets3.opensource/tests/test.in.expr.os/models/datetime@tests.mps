@@ -2,8 +2,8 @@
 <model ref="r:55f7f54b-9ace-4846-b63e-350652706af1(test.in.expr.os.datetime@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="ce1cf8e2-ad23-4a29-b20d-ca13a97e194f(org.iets3.core.expr.advanced.devkit)" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
     <devkit ref="33eb240b-05aa-417a-b719-386d26df80b8(org.iets3.core.expr.genall.advanced.devkit)" />
@@ -208,6 +208,11 @@
         <child id="2060704857949559991" name="year" index="1DA4ih" />
         <child id="2060704857949559996" name="month" index="1DA4iq" />
       </concept>
+      <concept id="2152957725070409762" name="org.iets3.core.expr.datetime.structure.AbstractEarliestLastestExpression" flags="ng" index="3YCpu6">
+        <child id="2152957725070409763" name="values" index="3YCpu7" />
+      </concept>
+      <concept id="2152957725070518937" name="org.iets3.core.expr.datetime.structure.EarliestExpression" flags="ng" index="3YCzOX" />
+      <concept id="2152957725070518938" name="org.iets3.core.expr.datetime.structure.LatestExpression" flags="ng" index="3YCzOY" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8490595898229124557" name="com.mbeddr.core.base.structure.CurrentModelScope" flags="ng" index="28wkCQ" />
@@ -1904,7 +1909,7 @@
     </node>
     <node concept="2zPypq" id="5OHvfQ$d7Fr" role="_iOnB">
       <property role="TrG5h" value="year2018" />
-      <property role="0Rz4W" value="-771745780" />
+      <property role="0Rz4W" value="1057293526" />
       <node concept="1f6kyV" id="5OHvfQ$d7Fs" role="2zPyp_">
         <node concept="30bXRB" id="5OHvfQ$d7Ft" role="1f6kyW">
           <property role="30bXRw" value="2018" />
@@ -3183,7 +3188,7 @@
     <node concept="_ixoA" id="7khFtBHFoZL" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHFtNk" role="_iOnB">
       <property role="TrG5h" value="fullMonth" />
-      <property role="0Rz4W" value="-1434305094" />
+      <property role="0Rz4W" value="1183638875" />
       <node concept="1QScDb" id="7khFtBHFux_" role="2zPyp_">
         <node concept="2oxMaX" id="7khFtBHFuCV" role="1QScD9">
           <node concept="1fc2QT" id="7khFtBHFuDj" role="2oxMaW">
@@ -3384,7 +3389,7 @@
     <node concept="_ixoA" id="2sG9$0CEgE2" role="_iOnB" />
     <node concept="2zPypq" id="2sG9$0CEgiI" role="_iOnB">
       <property role="TrG5h" value="fullMonthPlus1Day" />
-      <property role="0Rz4W" value="-1434305094" />
+      <property role="0Rz4W" value="45997534" />
       <node concept="1QScDb" id="2sG9$0CEgiJ" role="2zPyp_">
         <node concept="2oxMaX" id="2sG9$0CEgiK" role="1QScD9">
           <node concept="1fc2QT" id="2sG9$0CEgiL" role="2oxMaW">
@@ -3516,7 +3521,7 @@
     <node concept="_ixoA" id="7fmv$FC5ObT" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHGwpJ" role="_iOnB">
       <property role="TrG5h" value="oneYear" />
-      <property role="0Rz4W" value="-987710320" />
+      <property role="0Rz4W" value="1630233649" />
       <node concept="1QScDb" id="7khFtBHGwpK" role="2zPyp_">
         <node concept="2oxMaX" id="7khFtBHGwpL" role="1QScD9">
           <node concept="1fc2QT" id="7khFtBHGxcH" role="2oxMaW">
@@ -3672,7 +3677,7 @@
     <node concept="_ixoA" id="2sG9$0CsH3W" role="_iOnB" />
     <node concept="2zPypq" id="2sG9$0Cs_mM" role="_iOnB">
       <property role="TrG5h" value="oneYearPlus1Day" />
-      <property role="0Rz4W" value="-987710320" />
+      <property role="0Rz4W" value="-125611890" />
       <node concept="1QScDb" id="2sG9$0Cs_mN" role="2zPyp_">
         <node concept="2oxMaX" id="2sG9$0Cs_mO" role="1QScD9">
           <node concept="1fc2QT" id="2sG9$0Cs_mP" role="2oxMaW">
@@ -3841,6 +3846,7 @@
     <node concept="_ixoA" id="2sG9$0CE9Wo" role="_iOnB" />
     <node concept="2zPypq" id="2sG9$0CEbji" role="_iOnB">
       <property role="TrG5h" value="emptyRange" />
+      <property role="0Rz4W" value="-815462428" />
       <node concept="1QScDb" id="2sG9$0CE4vI" role="2zPyp_">
         <node concept="17FhtQ" id="2sG9$0CE4x0" role="1QScD9">
           <node concept="1QScDb" id="2sG9$0CE4x7" role="17FudS">
@@ -3914,7 +3920,7 @@
     <node concept="_ixoA" id="7khFtBHGwpr" role="_iOnB" />
     <node concept="2zPypq" id="7khFtBHGRfQ" role="_iOnB">
       <property role="TrG5h" value="full13Months" />
-      <property role="0Rz4W" value="1685796119" />
+      <property role="0Rz4W" value="8772792" />
       <node concept="1QScDb" id="7khFtBHGRfR" role="2zPyp_">
         <node concept="2oxMaX" id="7khFtBHGRfS" role="1QScD9">
           <node concept="1fc2QT" id="7khFtBHGRfT" role="2oxMaW">
@@ -4134,6 +4140,7 @@
     <node concept="_ixoA" id="4V0FBnKJggQ" role="_iOnB" />
     <node concept="2zPypq" id="4V0FBnKHTGZ" role="_iOnB">
       <property role="TrG5h" value="fiveYears" />
+      <property role="0Rz4W" value="972556226" />
       <node concept="3oAV0d" id="4V0FBnKHVjr" role="2zPyp_">
         <node concept="30bXRB" id="4V0FBnKHVg0" role="3oJwfr">
           <property role="30bXRw" value="5" />
@@ -4142,6 +4149,7 @@
     </node>
     <node concept="2zPypq" id="4V0FBnKJkT7" role="_iOnB">
       <property role="TrG5h" value="fiveMonths" />
+      <property role="0Rz4W" value="-423448678" />
       <node concept="3oxWck" id="4V0FBnKJmri" role="2zPyp_">
         <node concept="30bXRB" id="4V0FBnKJkT9" role="3oJwfr">
           <property role="30bXRw" value="5" />
@@ -4150,6 +4158,7 @@
     </node>
     <node concept="2zPypq" id="4V0FBnKJqFL" role="_iOnB">
       <property role="TrG5h" value="fiveWeeks" />
+      <property role="0Rz4W" value="-714377846" />
       <node concept="3ow14F" id="4V0FBnKJsl3" role="2zPyp_">
         <node concept="30bXRB" id="4V0FBnKJqFN" role="3oJwfr">
           <property role="30bXRw" value="5" />
@@ -4158,6 +4167,7 @@
     </node>
     <node concept="2zPypq" id="4V0FBnKJslI" role="_iOnB">
       <property role="TrG5h" value="fiveDays" />
+      <property role="0Rz4W" value="1965067769" />
       <node concept="3oJwfo" id="4V0FBnKJtUR" role="2zPyp_">
         <node concept="30bXRB" id="4V0FBnKJslK" role="3oJwfr">
           <property role="30bXRw" value="5" />
@@ -4232,6 +4242,122 @@
         </node>
         <node concept="30bXRB" id="4V0FBnKLE$2" role="_fkuS">
           <property role="30bXRw" value="4" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="64dkh69U2Y9" role="_iOnB" />
+    <node concept="2zPypq" id="64dkh69U5m4" role="_iOnB">
+      <property role="TrG5h" value="jan2019" />
+      <property role="0Rz4W" value="-1640137585" />
+      <node concept="1fc2QT" id="64dkh69U6SG" role="2zPyp_">
+        <property role="1fc2QY" value="2019" />
+        <property role="1fc2QX" value="01" />
+        <property role="1fc2QW" value="01" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="64dkh69U6T2" role="_iOnB">
+      <property role="TrG5h" value="feb2019" />
+      <property role="0Rz4W" value="-1557890998" />
+      <node concept="1fc2QT" id="64dkh69U6T3" role="2zPyp_">
+        <property role="1fc2QY" value="2019" />
+        <property role="1fc2QX" value="02" />
+        <property role="1fc2QW" value="01" />
+      </node>
+    </node>
+    <node concept="2zPypq" id="64dkh69U8rB" role="_iOnB">
+      <property role="TrG5h" value="mar2019" />
+      <property role="0Rz4W" value="443267150" />
+      <node concept="1fc2QT" id="64dkh69U8rC" role="2zPyp_">
+        <property role="1fc2QY" value="2019" />
+        <property role="1fc2QX" value="03" />
+        <property role="1fc2QW" value="01" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="64dkh69U3NG" role="_iOnB" />
+    <node concept="_fkuM" id="64dkh69U2l7" role="_iOnB">
+      <property role="TrG5h" value="EarlierLAter" />
+      <node concept="_fkuZ" id="64dkh69Ua4j" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua4k" role="_fkur" />
+        <node concept="3YCzOX" id="64dkh69Ua4y" role="_fkuY">
+          <node concept="_emDc" id="64dkh69UdvR" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69Umjg" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="64dkh69Ua53" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua54" role="_fkur" />
+        <node concept="3YCzOX" id="64dkh69Ua55" role="_fkuY">
+          <node concept="_emDc" id="64dkh69Ud_M" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69UdFG" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U6T2" resolve="feb2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69Umq5" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="64dkh69Ua5U" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua5V" role="_fkur" />
+        <node concept="3YCzOX" id="64dkh69Ua5W" role="_fkuY">
+          <node concept="_emDc" id="64dkh69UdL$" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69UdRr" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U6T2" resolve="feb2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69Ua6J" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U8rB" resolve="mar2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69UmwU" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="64dkh69Ua6X" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua6Y" role="_fkur" />
+        <node concept="3YCzOY" id="64dkh69Uafw" role="_fkuY">
+          <node concept="_emDc" id="64dkh69UdXg" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69UmwZ" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="64dkh69Ua7G" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua7H" role="_fkur" />
+        <node concept="3YCzOY" id="64dkh69UalS" role="_fkuY">
+          <node concept="_emDc" id="64dkh69Ue31" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69Umcq" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U6T2" resolve="feb2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69UmBS" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U6T2" resolve="feb2019" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="64dkh69Ua8y" role="_fkp5">
+        <node concept="_fku$" id="64dkh69Ua8z" role="_fkur" />
+        <node concept="3YCzOY" id="64dkh69W_vU" role="_fkuY">
+          <node concept="_emDc" id="64dkh69W_w8" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U5m4" resolve="jan2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69W_yu" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U6T2" resolve="feb2019" />
+          </node>
+          <node concept="_emDc" id="64dkh69W_AA" role="3YCpu7">
+            <ref role="_emDf" node="64dkh69U8rB" resolve="mar2019" />
+          </node>
+        </node>
+        <node concept="_emDc" id="64dkh69UmWw" role="_fkuS">
+          <ref role="_emDf" node="64dkh69U8rB" resolve="mar2019" />
         </node>
       </node>
     </node>
