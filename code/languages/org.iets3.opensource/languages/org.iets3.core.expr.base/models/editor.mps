@@ -64,6 +64,7 @@
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="4601216887035799527" name="usesFoldingCondition" index="1p_IA6" />
         <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
@@ -400,6 +401,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -2106,6 +2108,7 @@
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
       </node>
       <node concept="3F2HdR" id="KaZMgy4Iml" role="3EZMnx">
+        <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="hm2y:KaZMgy4Il_" resolve="items" />
         <node concept="2EHx9g" id="KaZMgy4J$M" role="2czzBx" />
         <node concept="3vyZuw" id="KaZMgy4InD" role="3F10Kt">
@@ -2115,6 +2118,26 @@
           <property role="3F0ifm" value="" />
           <node concept="VPxyj" id="mM1quA7$U0" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pkWqt" id="4zsmO3Kp1$j" role="1p_IA6">
+          <node concept="3clFbS" id="4zsmO3Kp1$k" role="2VODD2">
+            <node concept="3clFbF" id="4zsmO3Kp1Ch" role="3cqZAp">
+              <node concept="3eOSWO" id="4zsmO3Kp7uF" role="3clFbG">
+                <node concept="3cmrfG" id="4zsmO3Kp7uL" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="4zsmO3Kp43a" role="3uHU7B">
+                  <node concept="2OqwBi" id="4zsmO3Kp1QB" role="2Oq$k0">
+                    <node concept="pncrf" id="4zsmO3Kp1Cg" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="4zsmO3Kp2aJ" role="2OqNvi">
+                      <ref role="3TtcxE" to="hm2y:KaZMgy4Il_" resolve="items" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="4zsmO3Kp6gH" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
