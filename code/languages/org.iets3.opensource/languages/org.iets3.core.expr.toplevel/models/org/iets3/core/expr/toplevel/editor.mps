@@ -3941,5 +3941,53 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4zsmO3KtfWl">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:4zsmO3KtfVR" resolve="QualifierRef" />
+    <node concept="3EZMnI" id="4zsmO3KtfWP" role="2wV5jI">
+      <node concept="2iRfu4" id="4zsmO3KtfWQ" role="2iSdaV" />
+      <node concept="1kIj98" id="4zsmO3KzJas" role="3EZMnx">
+        <node concept="1iCGBv" id="4zsmO3KtfWn" role="1kIj9b">
+          <ref role="1NtTu8" to="yv47:4zsmO3KtfVS" resolve="enum" />
+          <node concept="1sVBvm" id="4zsmO3KtfWp" role="1sWHZn">
+            <node concept="3F0A7n" id="4zsmO3KtfWz" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <node concept="Vb9p2" id="4zsmO3KA$kH" role="3F10Kt">
+                <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
+              </node>
+              <node concept="VechU" id="4zsmO3KA$kI" role="3F10Kt">
+                <property role="Vb096" value="fLJRk5B/darkGray" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4zsmO3KtfWJ" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="4zsmO3KtfWN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4zsmO3KA$5b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4zsmO3Kwq3j" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:4zsmO3Kwq31" resolve="lit" />
+        <node concept="1sVBvm" id="4zsmO3Kwq3l" role="1sWHZn">
+          <node concept="3F0A7n" id="4zsmO3Kwq3x" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="4zsmO3KA$kL" role="3F10Kt">
+              <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
+            </node>
+            <node concept="VechU" id="4zsmO3KA$kM" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5B/darkGray" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
