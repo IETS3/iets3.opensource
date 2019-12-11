@@ -27,6 +27,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -1205,6 +1208,9 @@
     </node>
     <node concept="RPilO" id="4zsmO3Kz$pa" role="lGtFl">
       <ref role="RPilL" node="4zsmO3KtfVS" resolve="enum" />
+    </node>
+    <node concept="t5JxF" id="7hawBYG7tjX" role="lGtFl">
+      <property role="t5JxN" value="Auxiliary concept used only when creating EnumLiteralRefs to qualified enums (replaced by EnumLiteralRef when EnumLiteral is selected)" />
     </node>
   </node>
 </model>
