@@ -1956,6 +1956,25 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="4kor_v$1iuX" role="jymVt">
+      <property role="TrG5h" value="createGenericIntegerType" />
+      <node concept="3Tqbb2" id="4kor_v$1iuY" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="4kor_v$1iuZ" role="1B3o_S" />
+      <node concept="3clFbS" id="4kor_v$1iv1" role="3clF47">
+        <node concept="3clFbF" id="4kor_v$1nUa" role="3cqZAp">
+          <node concept="2pJPEk" id="4kor_v$1nU8" role="3clFbG">
+            <node concept="2pJPED" id="4kor_v$1nXE" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4kor_v$1iv2" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="1lYeZD" id="7WSgHRKYas3">
     <property role="2bfB8j" value="true" />
