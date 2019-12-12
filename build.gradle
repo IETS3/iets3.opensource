@@ -63,13 +63,12 @@ def minor = "2"
 // Dependency versions
 ext.mpsVersion = '2019.2.4'
 
-// def mbeddrVersion = "2019.2+"
-def mbeddrVersion = "feature-tracerSkipNodes.2019.2.22001.4e86e90" // to see the tracer improvments
+def mbeddrVersion = "2019.2+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
 // be used here. No need to convert "/" the script will take care of that.
-def mbeddrBranch = ""
+def mbeddrBranch = "feature/tracerSkipNodes"
 
 
 if (mbeddrBranch != null && !mbeddrBranch.trim().isEmpty()) {
