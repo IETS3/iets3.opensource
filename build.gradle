@@ -47,7 +47,7 @@ logger.info 'Using JDK at {}', jdk_home
 ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
-if (project.hasProÏperty("forceCI")) {
+if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
 } else {
     //on teamcity we are in a CI build
