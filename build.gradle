@@ -47,7 +47,7 @@ logger.info 'Using JDK at {}', jdk_home
 ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
-if (project.hasProperty("forceCI")) {
+if (project.hasProÏperty("forceCI")) {
     ext.ciBuild = true
 } else {
     //on teamcity we are in a CI build
@@ -63,7 +63,8 @@ def minor = "2"
 // Dependency versions
 ext.mpsVersion = '2019.2.4'
 
-def mbeddrVersion = "2019.2+"
+// def mbeddrVersion = "2019.2+"
+def mbeddrVersion = "feature-tracerSkipNodes.2019.2.22001.4e86e90" // to see the tracer improvments
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
