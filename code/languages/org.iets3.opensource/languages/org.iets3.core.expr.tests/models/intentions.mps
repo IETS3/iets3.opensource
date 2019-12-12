@@ -2,9 +2,9 @@
 <model ref="r:8241cf16-ed00-4446-90c3-ffa2d75ad75a(org.iets3.core.expr.tests.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -122,6 +122,9 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -287,7 +290,7 @@
   <node concept="2S6QgY" id="ub9nkyP9Oe">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="evaluateTestItem" />
-    <ref role="2ZfgGC" to="av4b:ub9nkyHAba" resolve="AssertTestItem" />
+    <ref role="2ZfgGC" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="2S6ZIM" id="ub9nkyP9Of" role="2ZfVej">
       <node concept="3clFbS" id="ub9nkyP9Og" role="2VODD2">
         <node concept="3clFbF" id="ub9nkyPa_c" role="3cqZAp">
@@ -312,6 +315,22 @@
     </node>
     <node concept="1SWQZ3" id="ub9nkyPbnE" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
+    </node>
+    <node concept="2SaL7w" id="2y3q4eTc4s2" role="2ZfVeh">
+      <node concept="3clFbS" id="2y3q4eTc4s3" role="2VODD2">
+        <node concept="3clFbF" id="2y3q4eTc4KH" role="3cqZAp">
+          <node concept="3fqX7Q" id="2y3q4eTc8hH" role="3clFbG">
+            <node concept="2OqwBi" id="2y3q4eTc8hJ" role="3fr31v">
+              <node concept="2Sf5sV" id="2y3q4eTc8hK" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="2y3q4eTc8hL" role="2OqNvi">
+                <node concept="chp4Y" id="2y3q4eTc8hM" role="cj9EA">
+                  <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2S6QgY" id="ub9nkyPcj2">
