@@ -811,6 +811,15 @@
         <node concept="17QB3L" id="3p6$WoErLfy" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="4kor_v$1eBp" role="jymVt">
+      <property role="TrG5h" value="createGenericIntegerType" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tqbb2" id="4kor_v$1eBq" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="4kor_v$1eBr" role="1B3o_S" />
+      <node concept="3clFbS" id="4kor_v$1eBs" role="3clF47" />
+    </node>
     <node concept="3clFb_" id="5HLmk5GD8c_" role="jymVt">
       <property role="TrG5h" value="createIntegerType" />
       <property role="1EzhhJ" value="true" />

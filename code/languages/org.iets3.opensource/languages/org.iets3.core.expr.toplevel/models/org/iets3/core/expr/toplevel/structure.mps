@@ -27,6 +27,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -41,6 +44,9 @@
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -587,6 +593,9 @@
     </node>
     <node concept="PrWs8" id="67Y8mp$HxXI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="4zsmO3KzGuq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
     <node concept="1TJgyj" id="67Y8mp$DMVO" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1179,6 +1188,30 @@
   <node concept="PlHQZ" id="olugnm5RHo">
     <property role="EcuMT" value="438389604712151896" />
     <property role="TrG5h" value="IDeclarationExtensionContext" />
+  </node>
+  <node concept="1TIwiD" id="4zsmO3KtfVR">
+    <property role="EcuMT" value="5250171600077389559" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="QualifierRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4zsmO3KtfVS" role="1TKVEi">
+      <property role="IQ2ns" value="5250171600077389560" />
+      <property role="20kJfa" value="enum" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="67Y8mp$DMUI" resolve="EnumDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="4zsmO3Kwq31" role="1TKVEi">
+      <property role="IQ2ns" value="5250171600078217409" />
+      <property role="20kJfa" value="lit" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
+    <node concept="RPilO" id="4zsmO3Kz$pa" role="lGtFl">
+      <ref role="RPilL" node="4zsmO3KtfVS" resolve="enum" />
+    </node>
+    <node concept="t5JxF" id="7hawBYG7tjX" role="lGtFl">
+      <property role="t5JxN" value="Auxiliary concept used only when creating EnumLiteralRefs to qualified enums (replaced by EnumLiteralRef when EnumLiteral is selected)" />
+    </node>
   </node>
 </model>
 

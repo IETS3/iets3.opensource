@@ -18,6 +18,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -399,6 +400,28 @@
         <node concept="17QB3L" id="3p6$WoErKQV" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4kor_v$1rdS" role="jymVt" />
+    <node concept="2YIFZL" id="4kor_v$1qpx" role="jymVt">
+      <property role="TrG5h" value="createGenericIntegerType" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="4kor_v$1qpy" role="3clF47">
+        <node concept="3clFbF" id="4kor_v$1qpz" role="3cqZAp">
+          <node concept="2OqwBi" id="4kor_v$1qp$" role="3clFbG">
+            <node concept="1rXfSq" id="4kor_v$1qp_" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="4kor_v$1qpA" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:4kor_v$1eBp" resolve="createGenericIntegerType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4kor_v$1qpC" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="4kor_v$1qpD" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="5HLmk5GDow6" role="jymVt" />
     <node concept="2YIFZL" id="5HLmk5GDobX" role="jymVt">
       <property role="TrG5h" value="createIntegerType" />
@@ -593,25 +616,52 @@
       <node concept="10P_77" id="2Qbt$1tU33f" role="3clF45" />
       <node concept="3Tm1VV" id="2Qbt$1tU33g" role="1B3o_S" />
       <node concept="3clFbS" id="2Qbt$1tU33h" role="3clF47">
-        <node concept="3clFbF" id="2Qbt$1tU33i" role="3cqZAp">
-          <node concept="2OqwBi" id="2Qbt$1tU33j" role="3clFbG">
-            <node concept="2OqwBi" id="2Qbt$1tU33k" role="2Oq$k0">
-              <node concept="2YIFZM" id="2Qbt$1tU33l" role="2Oq$k0">
+        <node concept="3cpWs8" id="4kor_v$1pjW" role="3cqZAp">
+          <node concept="3cpWsn" id="4kor_v$1pjX" role="3cpWs9">
+            <property role="TrG5h" value="sm" />
+            <node concept="3uibUv" id="4kor_v$16uD" role="1tU5fm">
+              <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
+            </node>
+            <node concept="2OqwBi" id="4kor_v$1pjY" role="33vP2m">
+              <node concept="2YIFZM" id="4kor_v$1pjZ" role="2Oq$k0">
                 <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
                 <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
               </node>
-              <node concept="liA8E" id="2Qbt$1tU33m" role="2OqNvi">
+              <node concept="liA8E" id="4kor_v$1pk0" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
               </node>
             </node>
-            <node concept="liA8E" id="2Qbt$1tU33n" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
-              <node concept="37vLTw" id="2Qbt$1tU33o" role="37wK5m">
-                <ref role="3cqZAo" node="2Qbt$1tU33q" resolve="type" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Qbt$1tU33i" role="3cqZAp">
+          <node concept="22lmx$" id="4kor_v$1pTe" role="3clFbG">
+            <node concept="2OqwBi" id="2Qbt$1tU33j" role="3uHU7B">
+              <node concept="37vLTw" id="4kor_v$1pk1" role="2Oq$k0">
+                <ref role="3cqZAo" node="4kor_v$1pjX" resolve="sm" />
               </node>
-              <node concept="1rXfSq" id="2Qbt$1tU33p" role="37wK5m">
-                <ref role="37wK5l" node="2Qbt$1tTQcM" resolve="createIntegerType" />
-                <node concept="10Nm6u" id="3p6$WoErNaH" role="37wK5m" />
+              <node concept="liA8E" id="2Qbt$1tU33n" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
+                <node concept="37vLTw" id="2Qbt$1tU33o" role="37wK5m">
+                  <ref role="3cqZAo" node="2Qbt$1tU33q" resolve="type" />
+                </node>
+                <node concept="1rXfSq" id="2Qbt$1tU33p" role="37wK5m">
+                  <ref role="37wK5l" node="2Qbt$1tTQcM" resolve="createIntegerType" />
+                  <node concept="10Nm6u" id="3p6$WoErNaH" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4kor_v$1q8S" role="3uHU7w">
+              <node concept="37vLTw" id="4kor_v$1q8T" role="2Oq$k0">
+                <ref role="3cqZAo" node="4kor_v$1pjX" resolve="sm" />
+              </node>
+              <node concept="liA8E" id="4kor_v$1q8U" role="2OqNvi">
+                <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode)" resolve="isSubtype" />
+                <node concept="37vLTw" id="4kor_v$1q8V" role="37wK5m">
+                  <ref role="3cqZAo" node="2Qbt$1tU33q" resolve="type" />
+                </node>
+                <node concept="1rXfSq" id="4kor_v$1q8W" role="37wK5m">
+                  <ref role="37wK5l" node="4kor_v$1qpx" resolve="createGenericIntegerType" />
+                </node>
               </node>
             </node>
           </node>

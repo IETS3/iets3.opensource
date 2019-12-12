@@ -89,9 +89,6 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR">
-        <property id="1225271546413" name="trimKind" index="17S1cK" />
-      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2858,8 +2855,13 @@
             <node concept="2ShNRf" id="6GGzMC65hcf" role="33vP2m">
               <node concept="1pGfFk" id="6GGzMC65hap" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~StringTokenizer.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="StringTokenizer" />
-                <node concept="37vLTw" id="6GGzMC65heg" role="37wK5m">
-                  <ref role="3cqZAo" node="6GGzMC65c$y" resolve="s" />
+                <node concept="2OqwBi" id="79chd_EKDSK" role="37wK5m">
+                  <node concept="37vLTw" id="79chd_EKDSL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6GGzMC65c$y" resolve="s" />
+                  </node>
+                  <node concept="liA8E" id="79chd_EKDSM" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+                  </node>
                 </node>
                 <node concept="Xl_RD" id="6GGzMC65hP2" role="37wK5m">
                   <property role="Xl_RC" value="\t" />
@@ -3082,8 +3084,13 @@
                 <node concept="2ShNRf" id="6GGzMC69nz3" role="37vLTx">
                   <node concept="1pGfFk" id="6GGzMC69nz4" role="2ShVmc">
                     <ref role="37wK5l" to="33ny:~StringTokenizer.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="StringTokenizer" />
-                    <node concept="37vLTw" id="6GGzMC69nz5" role="37wK5m">
-                      <ref role="3cqZAo" node="6GGzMC67UHA" resolve="s" />
+                    <node concept="2OqwBi" id="79chd_EKDnt" role="37wK5m">
+                      <node concept="37vLTw" id="6GGzMC69nz5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6GGzMC67UHA" resolve="s" />
+                      </node>
+                      <node concept="liA8E" id="79chd_EKDKH" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+                      </node>
                     </node>
                     <node concept="Xl_RD" id="6GGzMC69nz6" role="37wK5m">
                       <property role="Xl_RC" value="\n" />
@@ -3114,8 +3121,13 @@
                   <node concept="2ShNRf" id="6GGzMC69o$y" role="37vLTx">
                     <node concept="1pGfFk" id="6GGzMC69o$z" role="2ShVmc">
                       <ref role="37wK5l" to="33ny:~StringTokenizer.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="StringTokenizer" />
-                      <node concept="37vLTw" id="6GGzMC69o$$" role="37wK5m">
-                        <ref role="3cqZAo" node="6GGzMC67UHA" resolve="s" />
+                      <node concept="2OqwBi" id="79chd_EKDPi" role="37wK5m">
+                        <node concept="37vLTw" id="79chd_EKDPj" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6GGzMC67UHA" resolve="s" />
+                        </node>
+                        <node concept="liA8E" id="79chd_EKDPk" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+                        </node>
                       </node>
                       <node concept="Xl_RD" id="6GGzMC69o$_" role="37wK5m">
                         <property role="Xl_RC" value="\r" />
@@ -3248,8 +3260,8 @@
                 <node concept="37vLTw" id="6GGzMC67Efk" role="2Oq$k0">
                   <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
                 </node>
-                <node concept="17S1cR" id="6GGzMC67Efl" role="2OqNvi">
-                  <property role="17S1cK" value="both" />
+                <node concept="liA8E" id="79chd_EKEVT" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                 </node>
               </node>
               <node concept="liA8E" id="6GGzMC67Efm" role="2OqNvi">

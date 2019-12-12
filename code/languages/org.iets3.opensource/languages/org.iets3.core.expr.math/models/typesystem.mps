@@ -246,6 +246,7 @@
           <node concept="nvevp" id="7BZzIqkloWC" role="3cqZAp">
             <node concept="3clFbS" id="7BZzIqkloWD" role="nvhr_">
               <node concept="1ZobV4" id="5mz5Tt_hl4X" role="3cqZAp">
+                <property role="3wDh2S" value="true" />
                 <node concept="mw_s8" id="5mz5Tt_hl5w" role="1ZfhKB">
                   <node concept="2YIFZM" id="7BZzIqkljhU" role="mwGJk">
                     <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
@@ -260,6 +261,7 @@
                 </node>
               </node>
               <node concept="1ZobV4" id="5mz5Tt_hl95" role="3cqZAp">
+                <property role="3wDh2S" value="true" />
                 <node concept="mw_s8" id="5mz5Tt_hl96" role="1ZfhKB">
                   <node concept="2YIFZM" id="7BZzIqkloKD" role="mwGJk">
                     <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
@@ -293,18 +295,18 @@
                   </node>
                 </node>
                 <node concept="1Wc70l" id="7BZzIqklqqO" role="3clFbw">
-                  <node concept="2YIFZM" id="7BZzIqklqvZ" role="3uHU7w">
+                  <node concept="2YIFZM" id="4kor_v$0ywt" role="3uHU7B">
                     <ref role="37wK5l" to="xfg9:2Qbt$1tU33e" resolve="isIntegerType" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                    <node concept="2X3wrD" id="7BZzIqklqyo" role="37wK5m">
-                      <ref role="2X3Bk0" node="7BZzIqkloWI" resolve="denType" />
+                    <node concept="2X3wrD" id="4kor_v$0ywu" role="37wK5m">
+                      <ref role="2X3Bk0" node="7BZzIqkloOU" resolve="numType" />
                     </node>
                   </node>
-                  <node concept="2YIFZM" id="7BZzIqklq6d" role="3uHU7B">
-                    <ref role="37wK5l" to="xfg9:2Qbt$1tU33e" resolve="isIntegerType" />
+                  <node concept="2YIFZM" id="4kor_v$0ySo" role="3uHU7w">
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                    <node concept="2X3wrD" id="7BZzIqklq7V" role="37wK5m">
-                      <ref role="2X3Bk0" node="7BZzIqkloOU" resolve="numType" />
+                    <ref role="37wK5l" to="xfg9:2Qbt$1tU33e" resolve="isIntegerType" />
+                    <node concept="2X3wrD" id="4kor_v$0ySp" role="37wK5m">
+                      <ref role="2X3Bk0" node="7BZzIqkloWI" resolve="denType" />
                     </node>
                   </node>
                 </node>
