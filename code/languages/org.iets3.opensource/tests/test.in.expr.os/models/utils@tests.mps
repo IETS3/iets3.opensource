@@ -33,7 +33,7 @@
         <reference id="4214990435115877180" name="col" index="UJIh4" />
       </concept>
       <concept id="4214990435115877135" name="org.iets3.core.expr.util.structure.DecTabExpression" flags="ng" index="UJIhR">
-        <child id="4214990435115877136" name="expr" index="UJIhC" />
+        <child id="4214990435115877136" name="expressions" index="UJIhC" />
       </concept>
       <concept id="8840800177406144404" name="org.iets3.core.expr.util.structure.BindColOp" flags="ng" index="32c3HZ">
         <child id="8840800177406157638" name="values" index="32cvuH" />

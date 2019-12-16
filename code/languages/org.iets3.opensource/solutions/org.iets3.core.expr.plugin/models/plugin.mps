@@ -6369,7 +6369,7 @@
     <property role="2bfB8j" value="true" />
     <property role="TrG5h" value="expressionValueRenderer" />
     <property role="3GE5qa" value="valueRenderer" />
-    <ref role="1lYe$Y" to="pu3r:13FXotcVDbM" resolve="cutomValueRenderer" />
+    <ref role="1lYe$Y" to="pu3r:13FXotcVDbM" resolve="customValueRenderer" />
     <node concept="3Tm1VV" id="5NPKd17x9zQ" role="1B3o_S" />
     <node concept="2tJIrI" id="5NPKd17x9zR" role="jymVt" />
     <node concept="2tJIrI" id="5NPKd17x9zS" role="jymVt" />

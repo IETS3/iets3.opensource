@@ -119,7 +119,7 @@
         <reference id="4214990435115877180" name="col" index="UJIh4" />
       </concept>
       <concept id="4214990435115877135" name="org.iets3.core.expr.util.structure.DecTabExpression" flags="ng" index="UJIhR">
-        <child id="4214990435115877136" name="expr" index="UJIhC" />
+        <child id="4214990435115877136" name="expressions" index="UJIhC" />
       </concept>
     </language>
     <language id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process">
