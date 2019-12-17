@@ -62,6 +62,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -996,8 +999,18 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="vI4mpo41rB" role="3cqZAp">
-              <node concept="10Nm6u" id="vI4mpo41rC" role="3cqZAk" />
+            <node concept="YS8fn" id="7xL5W4zptcQ" role="3cqZAp">
+              <node concept="2ShNRf" id="7xL5W4zptkj" role="YScLw">
+                <node concept="1pGfFk" id="7xL5W4zpvIl" role="2ShVmc">
+                  <ref role="37wK5l" to="2ahs:2jL$v5BnA2g" resolve="InvalidValueException" />
+                  <node concept="oxGPV" id="7xL5W4zpvQJ" role="37wK5m" />
+                  <node concept="Xl_RD" id="7xL5W4zpwfE" role="37wK5m">
+                    <property role="Xl_RC" value="none of the combinations was true" />
+                  </node>
+                  <node concept="oxNuS" id="7xL5W4zpxvh" role="37wK5m" />
+                  <node concept="2dz_u5" id="7xL5W4zpxJI" role="37wK5m" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
