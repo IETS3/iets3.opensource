@@ -1189,5 +1189,22 @@
       <ref role="2wpffI" node="Lrty7CKd0e" />
     </node>
   </node>
+  <node concept="1TIwiD" id="twWOnQMGuT">
+    <property role="EcuMT" value="531692237848496057" />
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="ListPickOp" />
+    <property role="34LRSv" value="pick" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="twWOnQMH4e" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="twWOnQMHdg" role="1TKVEi">
+      <property role="IQ2ns" value="531692237848499024" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectorList" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
