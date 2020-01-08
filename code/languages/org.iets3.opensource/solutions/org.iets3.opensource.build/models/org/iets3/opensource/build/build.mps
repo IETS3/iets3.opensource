@@ -645,7 +645,7 @@
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="m$_yC" id="33r_JpYZ3rE" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
       <node concept="m$_yC" id="33r_JpZ9G8E" role="m$_yJ">
         <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
@@ -6355,15 +6355,15 @@
               <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
             </node>
           </node>
-          <node concept="1SiIV0" id="2YQA$O1yrFQ" role="3bR37C">
-            <node concept="3bR9La" id="2YQA$O1yrFR" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          <node concept="1SiIV0" id="2zwra1_8eOf" role="3bR37C">
+            <node concept="3bR9La" id="2zwra1_8eOg" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
           </node>
-        </node>
-        <node concept="1SiIV0" id="4C_RnzfEE$9" role="3bR37C">
-          <node concept="3bR9La" id="4C_RnzfEE$a" role="1SiIV1">
-            <ref role="3bR37D" node="4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+          <node concept="1SiIV0" id="2zwra1_8eOh" role="3bR37C">
+            <node concept="3bR9La" id="2zwra1_8eOi" role="1SiIV1">
+              <ref role="3bR37D" node="6JPXQMQs0pX" resolve="org.iets3.core.expr.collections" />
+            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="2YQA$O1yrFO" role="3bR37C">
