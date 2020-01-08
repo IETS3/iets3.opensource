@@ -175,7 +175,7 @@
           <property role="TrG5h" value="a" />
           <node concept="30dDTi" id="2JXkwhJg4ku" role="2zPyp_">
             <node concept="1PfFCI" id="2JXkwhJg4lN" role="30dEs_">
-              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
+              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
               <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
               <node concept="30dDTi" id="2JXkwhJg4xK" role="30czhm">
                 <node concept="1YnStw" id="2JXkwhJg6VM" role="30dEs_">
@@ -263,7 +263,7 @@
         <node concept="2zPypq" id="2JXkwhJh9KO" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="1PfFCI" id="2JXkwhJh9Po" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int [IntegerType])" />
+            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int)" />
             <ref role="1Pfwd7" node="2JXkwhJfWHv" resolve="percent" />
             <node concept="30bXRB" id="2JXkwhJh9Qc" role="30czhm">
               <property role="30bXRw" value="100" />
@@ -295,7 +295,7 @@
         <node concept="2zPypq" id="2JXkwhJhgkJ" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="1PfFCI" id="2JXkwhJhglJ" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
+            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
             <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
             <node concept="1YnStw" id="2JXkwhJhgq6" role="30czhm">
               <node concept="CIsGf" id="2JXkwhJhgq2" role="2c7tTI">

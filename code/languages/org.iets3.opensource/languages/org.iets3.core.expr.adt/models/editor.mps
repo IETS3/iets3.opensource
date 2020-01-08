@@ -17,6 +17,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="v0r8" ref="r:8ef260d4-7762-457a-8d33-23916aa626ab(org.iets3.core.expr.adt.structure)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
@@ -911,9 +912,9 @@
                   <node concept="1pGfFk" id="5a_u3OzouNF" role="2ShVmc">
                     <ref role="37wK5l" to="r4b4:4lA4bzwmp54" resolve="ColoredVerticalBarCell" />
                     <node concept="pncrf" id="5a_u3OzouR_" role="37wK5m" />
-                    <node concept="10M0yZ" id="5a_u3Ozovjb" role="37wK5m">
-                      <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <node concept="2YIFZM" id="6lCdCJohdZ$" role="37wK5m">
+                      <ref role="37wK5l" to="lzb2:~JBColor.foreground()" resolve="foreground" />
+                      <ref role="1Pybhc" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
                     <node concept="3cmrfG" id="5a_u3Ozovsh" role="37wK5m">
                       <property role="3cmrfH" value="0" />
