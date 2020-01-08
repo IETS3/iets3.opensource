@@ -3954,5 +3954,47 @@
       <ref role="1YaFvo" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2zwra1$Qju3">
+    <property role="TrG5h" value="typeof_AllLitList" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="2zwra1$Qju4" role="18ibNy">
+      <node concept="1Z5TYs" id="2zwra1$QjMN" role="3cqZAp">
+        <node concept="mw_s8" id="2zwra1$QjN7" role="1ZfhKB">
+          <node concept="2pJPEk" id="2zwra1$QjN3" role="mwGJk">
+            <node concept="2pJPED" id="2zwra1$QjT0" role="2pJPEn">
+              <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
+              <node concept="2pIpSj" id="2zwra1$QjWI" role="2pJxcM">
+                <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
+                <node concept="36biLy" id="2zwra1$QjWX" role="28nt2d">
+                  <node concept="2OqwBi" id="2zwra1$QkPX" role="36biLW">
+                    <node concept="2OqwBi" id="2zwra1$QkeT" role="2Oq$k0">
+                      <node concept="1YBJjd" id="2zwra1$Qk2Q" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2zwra1$Qju6" resolve="allLitList" />
+                      </node>
+                      <node concept="3TrEf2" id="2zwra1$Qkvv" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yv47:2zwra1$QhMx" resolve="enumType" />
+                      </node>
+                    </node>
+                    <node concept="1$rogu" id="2zwra1$Qlfz" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2zwra1$QjMQ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2zwra1$QjzS" role="mwGJk">
+            <node concept="1YBJjd" id="2zwra1$QjCB" role="1Z2MuG">
+              <ref role="1YBMHb" node="2zwra1$Qju6" resolve="allLitList" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2zwra1$Qju6" role="1YuTPh">
+      <property role="TrG5h" value="allLitList" />
+      <ref role="1YaFvo" to="yv47:2zwra1$QhrC" resolve="AllLitList" />
+    </node>
+  </node>
 </model>
 

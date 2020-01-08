@@ -1213,5 +1213,19 @@
       <property role="t5JxN" value="Auxiliary concept used only when creating EnumLiteralRefs to qualified enums (replaced by EnumLiteralRef when EnumLiteral is selected)" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2zwra1$QhrC">
+    <property role="EcuMT" value="2945473592442820328" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="AllLitList" />
+    <property role="34LRSv" value="literals" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2zwra1$QhMx" role="1TKVEi">
+      <property role="IQ2ns" value="2945473592442821793" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="enumType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="67Y8mp$DN2V" resolve="EnumType" />
+    </node>
+  </node>
 </model>
 
