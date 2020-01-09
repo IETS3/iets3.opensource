@@ -4187,5 +4187,40 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2zwra1$Qiir">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:2zwra1$QhrC" resolve="AllLitList" />
+    <node concept="3EZMnI" id="2zwra1$QitW" role="2wV5jI">
+      <node concept="2iRfu4" id="2zwra1$QitX" role="2iSdaV" />
+      <node concept="3F0ifn" id="2zwra1$Qilk" role="3EZMnx">
+        <property role="3F0ifm" value="literals" />
+      </node>
+      <node concept="3F0ifn" id="2zwra1$QizN" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="2zwra1$QiS3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2zwra1$QiXQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2zwra1$Qj6B" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:2zwra1$QhMx" resolve="enumType" />
+      </node>
+      <node concept="3F0ifn" id="2zwra1$QiAM" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="2zwra1$QiMj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="c36CPsxPxs">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:c36CPsxOj8" resolve="EnumIndexOp" />
+    <node concept="3F0ifn" id="c36CPsxP$l" role="2wV5jI">
+      <property role="3F0ifm" value="index" />
+    </node>
+  </node>
 </model>
 

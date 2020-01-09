@@ -1213,5 +1213,29 @@
       <property role="t5JxN" value="Auxiliary concept used only when creating EnumLiteralRefs to qualified enums (replaced by EnumLiteralRef when EnumLiteral is selected)" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2zwra1$QhrC">
+    <property role="EcuMT" value="2945473592442820328" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="AllLitList" />
+    <property role="34LRSv" value="literals" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2zwra1$QhMx" role="1TKVEi">
+      <property role="IQ2ns" value="2945473592442821793" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="enumType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="67Y8mp$DN2V" resolve="EnumType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="c36CPsxOj8">
+    <property role="EcuMT" value="217046401488995528" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumIndexOp" />
+    <property role="34LRSv" value="index" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="c36CPsxOxs" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 

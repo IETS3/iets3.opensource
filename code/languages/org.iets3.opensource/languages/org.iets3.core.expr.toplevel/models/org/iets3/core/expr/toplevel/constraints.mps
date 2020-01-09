@@ -2151,5 +2151,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="c36CPsxQrh">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1M2myG" to="yv47:c36CPsxOj8" resolve="EnumIndexOp" />
+    <node concept="9S07l" id="c36CPsxQu9" role="9Vyp8">
+      <node concept="3clFbS" id="c36CPsxQua" role="2VODD2">
+        <node concept="3clFbF" id="c36CPsxQum" role="3cqZAp">
+          <node concept="2OqwBi" id="c36CPsxQux" role="3clFbG">
+            <node concept="2qgKlT" id="c36CPsxQuz" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="c36CPsxQu$" role="37wK5m">
+                <ref role="35c_gD" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
+              </node>
+              <node concept="3clFbT" id="c36CPsxQu_" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+            <node concept="1PxgMI" id="c36CPsxQuj" role="2Oq$k0">
+              <node concept="nLn13" id="c36CPsxQuk" role="1m5AlR" />
+              <node concept="chp4Y" id="c36CPsxQul" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
