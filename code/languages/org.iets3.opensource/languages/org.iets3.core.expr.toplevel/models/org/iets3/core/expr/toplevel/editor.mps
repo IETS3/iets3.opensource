@@ -4215,5 +4215,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="c36CPsxPxs">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:c36CPsxOj8" resolve="EnumIndexOp" />
+    <node concept="3F0ifn" id="c36CPsxP$l" role="2wV5jI">
+      <property role="3F0ifm" value="index" />
+    </node>
+  </node>
 </model>
 

@@ -29,6 +29,7 @@
     <import index="j10v" ref="b76a0f63-5959-456b-993a-c796cc0d0c13/java:org.pcollections(org.iets3.core.expr.base.collections.stubs/)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
@@ -1640,6 +1641,100 @@
               <node concept="1mIQ4w" id="6I2TeLIcFhh" role="2OqNvi">
                 <node concept="chp4Y" id="6I2TeLIcFtJ" role="cj9EA">
                   <ref role="cht4Q" to="yv47:2uR5X5azSbn" resolve="ExtensionFunctionCall" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="c36CPsEiHV" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+      <node concept="1Koe21" id="c36CPsER48" role="1lVwrX">
+        <node concept="312cEu" id="c36CPsBR8w" role="1Koe22">
+          <property role="TrG5h" value="EVA" />
+          <node concept="Qs71p" id="c36CPsBR8x" role="jymVt">
+            <property role="2bfB8j" value="true" />
+            <property role="TrG5h" value="EVAEnum" />
+            <node concept="3Tm1VV" id="c36CPsBR8y" role="1B3o_S" />
+            <node concept="QsSxf" id="c36CPsBR8z" role="Qtgdg">
+              <property role="TrG5h" value="e" />
+              <ref role="37wK5l" node="c36CPsBR8C" resolve="EVA.EVAEnum" />
+              <node concept="Xl_RD" id="c36CPsBR8$" role="37wK5m">
+                <property role="Xl_RC" value="hi" />
+              </node>
+            </node>
+            <node concept="3clFbW" id="c36CPsBR8C" role="jymVt">
+              <node concept="3cqZAl" id="c36CPsBR8D" role="3clF45" />
+              <node concept="3clFbS" id="c36CPsBR8E" role="3clF47" />
+              <node concept="37vLTG" id="c36CPsBR8L" role="3clF46">
+                <property role="TrG5h" value="value" />
+                <node concept="17QB3L" id="c36CPsBR8M" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFb_" id="c36CPsBR8T" role="jymVt">
+            <property role="TrG5h" value="foo" />
+            <node concept="3uibUv" id="c36CPsEZ28" role="3clF45">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
+            <node concept="3Tm1VV" id="c36CPsBR8V" role="1B3o_S" />
+            <node concept="3clFbS" id="c36CPsBR8W" role="3clF47">
+              <node concept="3clFbF" id="c36CPsERGi" role="3cqZAp">
+                <node concept="2ShNRf" id="c36CPsERGe" role="3clFbG">
+                  <node concept="1pGfFk" id="c36CPsES8d" role="2ShVmc">
+                    <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                    <node concept="3cpWs3" id="c36CPsEWF$" role="37wK5m">
+                      <node concept="Xl_RD" id="c36CPsEWFJ" role="3uHU7w">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                      <node concept="2OqwBi" id="c36CPsESjX" role="3uHU7B">
+                        <node concept="Rm8GO" id="c36CPsESjY" role="2Oq$k0">
+                          <ref role="Rm8GQ" node="c36CPsBR8z" resolve="e" />
+                          <ref role="1Px2BO" node="c36CPsBR8x" resolve="EVA.EVAEnum" />
+                          <node concept="29HgVG" id="c36CPsETZk" role="lGtFl">
+                            <node concept="3NFfHV" id="c36CPsETZl" role="3NFExx">
+                              <node concept="3clFbS" id="c36CPsETZm" role="2VODD2">
+                                <node concept="3clFbF" id="c36CPsETZs" role="3cqZAp">
+                                  <node concept="2OqwBi" id="c36CPsETZn" role="3clFbG">
+                                    <node concept="3TrEf2" id="c36CPsETZq" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
+                                    </node>
+                                    <node concept="30H73N" id="c36CPsETZr" role="2Oq$k0" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="c36CPsESjZ" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Enum.ordinal()" resolve="ordinal" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="raruj" id="c36CPsESWt" role="lGtFl" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="c36CPsBR92" role="1B3o_S" />
+        </node>
+      </node>
+      <node concept="30G5F_" id="c36CPsENAk" role="30HLyM">
+        <node concept="3clFbS" id="c36CPsENAl" role="2VODD2">
+          <node concept="3clFbF" id="c36CPsENGs" role="3cqZAp">
+            <node concept="2OqwBi" id="c36CPsEO_A" role="3clFbG">
+              <node concept="2OqwBi" id="c36CPsEO1T" role="2Oq$k0">
+                <node concept="30H73N" id="c36CPsENGr" role="2Oq$k0" />
+                <node concept="3TrEf2" id="c36CPsEOqx" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="c36CPsEQHD" role="2OqNvi">
+                <node concept="chp4Y" id="c36CPsEQQi" role="cj9EA">
+                  <ref role="cht4Q" to="yv47:c36CPsxOj8" resolve="EnumIndexOp" />
                 </node>
               </node>
             </node>
