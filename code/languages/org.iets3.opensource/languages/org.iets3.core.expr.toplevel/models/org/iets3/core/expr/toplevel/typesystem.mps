@@ -3996,5 +3996,30 @@
       <ref role="1YaFvo" to="yv47:2zwra1$QhrC" resolve="AllLitList" />
     </node>
   </node>
+  <node concept="1YbPZF" id="c36CPsxRSn">
+    <property role="TrG5h" value="typeof_EnumIndexOp" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="c36CPsxRSo" role="18ibNy">
+      <node concept="1Z5TYs" id="c36CPsxSfs" role="3cqZAp">
+        <node concept="mw_s8" id="c36CPsxSi$" role="1ZfhKB">
+          <node concept="2YIFZM" id="c36CPsxSpX" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4bUWUHVjHt" resolve="createPositiveIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="c36CPsxSfv" role="1ZfhK$">
+          <node concept="1Z2H0r" id="c36CPsxRYf" role="mwGJk">
+            <node concept="1YBJjd" id="c36CPsxS07" role="1Z2MuG">
+              <ref role="1YBMHb" node="c36CPsxRSq" resolve="enumIndexOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="c36CPsxRSq" role="1YuTPh">
+      <property role="TrG5h" value="enumIndexOp" />
+      <ref role="1YaFvo" to="yv47:c36CPsxOj8" resolve="EnumIndexOp" />
+    </node>
+  </node>
 </model>
 

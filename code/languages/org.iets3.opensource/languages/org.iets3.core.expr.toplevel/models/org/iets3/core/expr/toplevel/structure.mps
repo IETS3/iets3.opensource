@@ -1227,5 +1227,15 @@
       <ref role="20lvS9" node="67Y8mp$DN2V" resolve="EnumType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="c36CPsxOj8">
+    <property role="EcuMT" value="217046401488995528" />
+    <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="EnumIndexOp" />
+    <property role="34LRSv" value="index" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="c36CPsxOxs" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
 </model>
 
