@@ -2120,5 +2120,9 @@
     <property role="34LRSv" value="revealed" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
   </node>
+  <node concept="PlHQZ" id="4nmY9n8I3gn">
+    <property role="EcuMT" value="5032482955834438679" />
+    <property role="TrG5h" value="IAllowDotOnLeft" />
+  </node>
 </model>
 
