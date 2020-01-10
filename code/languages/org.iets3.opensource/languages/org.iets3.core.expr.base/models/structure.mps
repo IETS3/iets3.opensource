@@ -2124,5 +2124,9 @@
     <property role="EcuMT" value="5032482955834438679" />
     <property role="TrG5h" value="IAllowDotOnLeft" />
   </node>
+  <node concept="PlHQZ" id="4nmY9n8OEkH">
+    <property role="EcuMT" value="5032482955836171565" />
+    <property role="TrG5h" value="IAllowDeletionOfDot" />
+  </node>
 </model>
 
