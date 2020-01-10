@@ -25158,5 +25158,29 @@
       <node concept="3clFbS" id="7KDVkAEm18u" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4nmY9n8I3KI">
+    <ref role="13h7C2" to="hm2y:4nmY9n8I3gn" resolve="IAllowDotOnLeft" />
+    <node concept="13i0hz" id="4nmY9n8I3O7" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowsDotOnLeft" />
+      <node concept="3Tm1VV" id="4nmY9n8I3O8" role="1B3o_S" />
+      <node concept="10P_77" id="4nmY9n8I3R_" role="3clF45" />
+      <node concept="3clFbS" id="4nmY9n8I3Oa" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="4nmY9n8I45o" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="createTarget" />
+      <node concept="3Tm1VV" id="4nmY9n8I45p" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4nmY9n8I4fm" role="3clF45">
+        <ref role="ehGHo" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+      </node>
+      <node concept="3clFbS" id="4nmY9n8I45r" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4nmY9n8I3KJ" role="13h7CW">
+      <node concept="3clFbS" id="4nmY9n8I3KK" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
