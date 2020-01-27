@@ -49,6 +49,8 @@
     <import index="6yn5" ref="r:2bfc35a4-8334-4342-8e2a-a54b7cda4a4c(org.iets3.core.expr.testExecution.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="w474" ref="r:06b241ed-1779-4f34-8d6f-e61e9dd94387(org.iets3.core.expr.testExecution.plugin)" />
+    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
@@ -3735,6 +3737,9 @@
                 <node concept="3clFbT" id="36bouteph$L" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
+                <node concept="37vLTw" id="1RMC8GHEUkS" role="37wK5m">
+                  <ref role="3cqZAo" node="1RMC8GHETKw" resolve="host" />
+                </node>
               </node>
             </node>
           </node>
@@ -3774,10 +3779,19 @@
       </node>
       <node concept="37vLTG" id="dCRb6FLBBF" role="3clF46">
         <property role="TrG5h" value="node2Check" />
-        <node concept="3Tqbb2" id="dCRb6FLBBG" role="1tU5fm" />
+        <node concept="3Tqbb2" id="1RMC8GHETKv" role="1tU5fm" />
       </node>
-      <node concept="3cqZAl" id="dCRb6FLBBH" role="3clF45" />
       <node concept="3Tm1VV" id="dCRb6FLBBI" role="1B3o_S" />
+      <node concept="3cqZAl" id="1RMC8GHETKu" role="3clF45" />
+      <node concept="37vLTG" id="1RMC8GHETKw" role="3clF46">
+        <property role="TrG5h" value="host" />
+        <node concept="3uibUv" id="1RMC8GHETKx" role="1tU5fm">
+          <ref role="3uigEE" to="wyuk:~ComponentHost" resolve="ComponentHost" />
+        </node>
+        <node concept="2AHcQZ" id="1RMC8GHETKy" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="7scb9XJeIyn" role="13h7CS">
       <property role="TrG5h" value="getDefaultName" />
