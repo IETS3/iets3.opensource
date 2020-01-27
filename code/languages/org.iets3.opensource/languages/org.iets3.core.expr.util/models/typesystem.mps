@@ -132,9 +132,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -157,6 +154,9 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="6136676636349908958" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpIsApplicableFunction" flags="in" index="1QeDOX" />
@@ -515,7 +515,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2GrUjf" id="3DYDRw0NFMD" role="2OEOjV">
+                    <node concept="2GrUjf" id="3DYDRw0NFMD" role="1urrMF">
                       <ref role="2Gs0qQ" node="3DYDRw0N_bE" resolve="c" />
                     </node>
                   </node>
@@ -549,7 +549,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2GrUjf" id="3DYDRw0NFVq" role="2OEOjV">
+                    <node concept="2GrUjf" id="3DYDRw0NFVq" role="1urrMF">
                       <ref role="2Gs0qQ" node="3DYDRw0N_iY" resolve="r" />
                     </node>
                   </node>
@@ -1077,7 +1077,7 @@
             <node concept="Xl_RD" id="wW2kvILYW9" role="2MkJ7o">
               <property role="Xl_RC" value="can only have one non-branching leaf child" />
             </node>
-            <node concept="1YBJjd" id="wW2kvILYYp" role="2OEOjV">
+            <node concept="1YBJjd" id="wW2kvILYYp" role="1urrMF">
               <ref role="1YBMHb" node="wW2kvILWMr" resolve="tn" />
             </node>
           </node>
@@ -1228,7 +1228,7 @@
             <node concept="Xl_RD" id="2vr5lQPTJkH" role="2MkJ7o">
               <property role="Xl_RC" value="no common supertype found for the leaves" />
             </node>
-            <node concept="1YBJjd" id="2vr5lQPTJls" role="2OEOjV">
+            <node concept="1YBJjd" id="2vr5lQPTJls" role="1urrMF">
               <ref role="1YBMHb" node="2vr5lQPTJ4n" resolve="r" />
             </node>
           </node>
@@ -1293,7 +1293,7 @@
             <node concept="Xl_RD" id="8XWEtejDSn" role="2MkJ7o">
               <property role="Xl_RC" value="wrong order; first all queries, then all results" />
             </node>
-            <node concept="1YBJjd" id="8XWEtejDXT" role="2OEOjV">
+            <node concept="1YBJjd" id="8XWEtejDXT" role="1urrMF">
               <ref role="1YBMHb" node="8XWEtejAYn" resolve="rcd" />
             </node>
           </node>
@@ -1392,7 +1392,7 @@
             <node concept="Xl_RD" id="8XWEtetRDl" role="2MkJ7o">
               <property role="Xl_RC" value="only discrete types can be used here" />
             </node>
-            <node concept="2OqwBi" id="8XWEtetRMq" role="2OEOjV">
+            <node concept="2OqwBi" id="8XWEtetRMq" role="1urrMF">
               <node concept="1YBJjd" id="8XWEtetRDP" role="2Oq$k0">
                 <ref role="1YBMHb" node="8XWEtejlzD" resolve="qcd" />
               </node>
@@ -1485,7 +1485,7 @@
             <node concept="Xl_RD" id="8XWEtek2IX" role="2MkJ7o">
               <property role="Xl_RC" value="at least one result is missing" />
             </node>
-            <node concept="1YBJjd" id="8XWEtek2Jf" role="2OEOjV">
+            <node concept="1YBJjd" id="8XWEtek2Jf" role="1urrMF">
               <ref role="1YBMHb" node="8XWEtejJWC" resolve="dataRow" />
             </node>
           </node>
@@ -1526,7 +1526,7 @@
                 <node concept="Xl_RD" id="4LQ7f3j$OrG" role="2MkJ7o">
                   <property role="Xl_RC" value="exactly one value required" />
                 </node>
-                <node concept="2GrUjf" id="4LQ7f3j$Osr" role="2OEOjV">
+                <node concept="2GrUjf" id="4LQ7f3j$Osr" role="1urrMF">
                   <ref role="2Gs0qQ" node="4LQ7f3j$DF9" resolve="r" />
                 </node>
               </node>
@@ -1739,7 +1739,7 @@
             <node concept="Xl_RD" id="3eQTdYHopem" role="2MkJ7o">
               <property role="Xl_RC" value="at least one query column required" />
             </node>
-            <node concept="1YBJjd" id="3eQTdYHopeY" role="2OEOjV">
+            <node concept="1YBJjd" id="3eQTdYHopeY" role="1urrMF">
               <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
           </node>
@@ -1767,7 +1767,7 @@
             <node concept="Xl_RD" id="3eQTdYHopfw" role="2MkJ7o">
               <property role="Xl_RC" value="at least one result column required" />
             </node>
-            <node concept="1YBJjd" id="3eQTdYHopfx" role="2OEOjV">
+            <node concept="1YBJjd" id="3eQTdYHopfx" role="1urrMF">
               <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
           </node>
@@ -1779,7 +1779,7 @@
             <node concept="Xl_RD" id="6OunYCf2Tsk" role="2MkJ7o">
               <property role="Xl_RC" value="only one kind of results allowed (values vs. assignment)" />
             </node>
-            <node concept="1YBJjd" id="6OunYCf2Tt9" role="2OEOjV">
+            <node concept="1YBJjd" id="6OunYCf2Tt9" role="1urrMF">
               <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
           </node>
@@ -1830,7 +1830,7 @@
             <node concept="Xl_RD" id="q825N8QEZN" role="a7wSD">
               <property role="Xl_RC" value="Decisiontable with only one row. Consider using if instead. " />
             </node>
-            <node concept="2OqwBi" id="q825N8QWlE" role="2OEOjV">
+            <node concept="2OqwBi" id="q825N8QWlE" role="1urrMF">
               <node concept="2OqwBi" id="q825N8QTL5" role="2Oq$k0">
                 <node concept="1YBJjd" id="q825N8QG8O" role="2Oq$k0">
                   <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
@@ -1866,7 +1866,7 @@
             <node concept="Xl_RD" id="5aYM8itc26R" role="2MkJ7o">
               <property role="Xl_RC" value="Only one default row allowed per Decisiontable. " />
             </node>
-            <node concept="1YBJjd" id="5aYM8itc2bk" role="2OEOjV">
+            <node concept="1YBJjd" id="5aYM8itc2bk" role="1urrMF">
               <ref role="1YBMHb" node="3eQTdYHomG_" resolve="mdt" />
             </node>
           </node>
@@ -2244,7 +2244,7 @@
                 <node concept="Xl_RD" id="60neiTeANfr" role="2MkJ7o">
                   <property role="Xl_RC" value="Column has already been bound to a value" />
                 </node>
-                <node concept="2GrUjf" id="60neiTeANgG" role="2OEOjV">
+                <node concept="2GrUjf" id="60neiTeANgG" role="1urrMF">
                   <ref role="2Gs0qQ" node="60neiTeAB$h" resolve="binding" />
                 </node>
               </node>
@@ -2332,7 +2332,7 @@
                 <node concept="Xl_RD" id="60neiTeBf$n" role="2MkJ7o">
                   <property role="Xl_RC" value="Column has already been bound to a value" />
                 </node>
-                <node concept="2GrUjf" id="60neiTeBf_c" role="2OEOjV">
+                <node concept="2GrUjf" id="60neiTeBf_c" role="1urrMF">
                   <ref role="2Gs0qQ" node="60neiTeB8Dt" resolve="binding" />
                 </node>
               </node>
@@ -2367,7 +2367,7 @@
             <node concept="Xl_RD" id="60neiTeBC4s" role="2MkJ7o">
               <property role="Xl_RC" value="Not all Columns have a value" />
             </node>
-            <node concept="1YBJjd" id="60neiTeBC6_" role="2OEOjV">
+            <node concept="1YBJjd" id="60neiTeBC6_" role="1urrMF">
               <ref role="1YBMHb" node="60neiTeB8Cn" resolve="tableCallExpression" />
             </node>
           </node>
@@ -2462,7 +2462,7 @@
             <node concept="Xl_RD" id="Nuz63e$flg" role="2MkJ7o">
               <property role="Xl_RC" value="cannot be used in the first row" />
             </node>
-            <node concept="1YBJjd" id="Nuz63e$fm5" role="2OEOjV">
+            <node concept="1YBJjd" id="Nuz63e$fm5" role="1urrMF">
               <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
             </node>
           </node>
@@ -2474,7 +2474,7 @@
             <node concept="Xl_RD" id="Nuz63e_kE0" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used alone" />
             </node>
-            <node concept="1YBJjd" id="Nuz63e_kEB" role="2OEOjV">
+            <node concept="1YBJjd" id="Nuz63e_kEB" role="1urrMF">
               <ref role="1YBMHb" node="Nuz63e$bK$" resolve="se" />
             </node>
           </node>
@@ -2565,9 +2565,6 @@
             </node>
             <node concept="3clFbS" id="5crSXLvPjz" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLvUMm" role="3cqZAp">
-                <node concept="37vLTw" id="5crSXL$GKa" role="2OEOjV">
-                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
-                </node>
                 <node concept="3cpWs3" id="5crSXLw0V9" role="2MkJ7o">
                   <node concept="Xl_RD" id="5crSXLw1ck" role="3uHU7w">
                     <property role="Xl_RC" value=" can only be used in combination with predefined x axis." />
@@ -2580,6 +2577,9 @@
                       <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="5crSXL$GKa" role="1urrMF">
+                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                 </node>
               </node>
             </node>
@@ -2620,9 +2620,6 @@
             </node>
             <node concept="3clFbS" id="5crSXLwNNW" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLwNNX" role="3cqZAp">
-                <node concept="37vLTw" id="5crSXL$Lnv" role="2OEOjV">
-                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
-                </node>
                 <node concept="3cpWs3" id="5crSXLwNO1" role="2MkJ7o">
                   <node concept="Xl_RD" id="5crSXLwNO2" role="3uHU7w">
                     <property role="Xl_RC" value=" can only be used in combination with predefined y axis." />
@@ -2635,6 +2632,9 @@
                       <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="5crSXL$Lnv" role="1urrMF">
+                  <ref role="3cqZAo" node="5crSXLzyC_" resolve="rve" />
                 </node>
               </node>
             </node>
@@ -2653,7 +2653,7 @@
             <node concept="Xl_RD" id="5crSXLMrrm" role="2MkJ7o">
               <property role="Xl_RC" value="only one expression is allowed here" />
             </node>
-            <node concept="1YBJjd" id="5crSXLMrta" role="2OEOjV">
+            <node concept="1YBJjd" id="5crSXLMrta" role="1urrMF">
               <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
             </node>
           </node>
@@ -2692,11 +2692,11 @@
           <node concept="3clFbJ" id="5crSXLMu8l" role="3cqZAp">
             <node concept="3clFbS" id="5crSXLMu8n" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLNcvP" role="3cqZAp">
-                <node concept="1YBJjd" id="5crSXLNcFo" role="2OEOjV">
-                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                </node>
                 <node concept="Xl_RD" id="5crSXLNcvS" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple expressions can only be used in combination with predefined x axis." />
+                </node>
+                <node concept="1YBJjd" id="5crSXLNcFo" role="1urrMF">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
                 </node>
               </node>
               <node concept="3clFbH" id="5crSXLMu8m" role="3cqZAp" />
@@ -2736,11 +2736,11 @@
           <node concept="3clFbJ" id="5crSXLMNBQ" role="3cqZAp">
             <node concept="3clFbS" id="5crSXLMNBR" role="3clFbx">
               <node concept="2MkqsV" id="5crSXLNdyx" role="3cqZAp">
-                <node concept="1YBJjd" id="5crSXLNdyy" role="2OEOjV">
-                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
-                </node>
                 <node concept="Xl_RD" id="5crSXLNdyz" role="2MkJ7o">
                   <property role="Xl_RC" value="multiple expressions can only be used in combination with predefined y axis." />
+                </node>
+                <node concept="1YBJjd" id="5crSXLNdyy" role="1urrMF">
+                  <ref role="1YBMHb" node="5crSXLvPjt" resolve="dte" />
                 </node>
               </node>
               <node concept="3clFbH" id="5crSXLMNBS" role="3cqZAp" />

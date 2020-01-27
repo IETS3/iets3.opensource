@@ -148,10 +148,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -193,6 +189,10 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -3514,7 +3514,7 @@
                 <node concept="Xl_RD" id="3p6$WoEzUAm" role="2MkJ7o">
                   <property role="Xl_RC" value="invalid range (max &lt; min or precison error)" />
                 </node>
-                <node concept="1YBJjd" id="3p6$WoEzUBQ" role="2OEOjV">
+                <node concept="1YBJjd" id="3p6$WoEzUBQ" role="1urrMF">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />
                 </node>
               </node>
@@ -3549,7 +3549,7 @@
                 <node concept="Xl_RD" id="19PglA255ds" role="2MkJ7o">
                   <property role="Xl_RC" value="precision cannot be derived from range" />
                 </node>
-                <node concept="1YBJjd" id="19PglA256Ii" role="2OEOjV">
+                <node concept="1YBJjd" id="19PglA256Ii" role="1urrMF">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />
                 </node>
               </node>
@@ -3665,7 +3665,7 @@
             <node concept="Xl_RD" id="7DTWJ$8l1Ci" role="2MkJ7o">
               <property role="Xl_RC" value="only number types can be used here" />
             </node>
-            <node concept="2OqwBi" id="7DTWJ$8l1JQ" role="2OEOjV">
+            <node concept="2OqwBi" id="7DTWJ$8l1JQ" role="1urrMF">
               <node concept="1YBJjd" id="7DTWJ$8l1CF" role="2Oq$k0">
                 <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
               </node>
@@ -3728,11 +3728,11 @@
                           <property role="Xl_RC" value="target precision must be lower than " />
                         </node>
                       </node>
-                      <node concept="1YBJjd" id="7DTWJ$8l6tx" role="2OEOjV">
-                        <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
-                      </node>
-                      <node concept="2ODE4t" id="7DTWJ$8l6y0" role="2OEWyd">
+                      <node concept="2ODE4t" id="7DTWJ$8l6y0" role="1urrC5">
                         <ref role="2ODJFN" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
+                      </node>
+                      <node concept="1YBJjd" id="7DTWJ$8l6tx" role="1urrMF">
+                        <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                       </node>
                     </node>
                   </node>
@@ -3948,7 +3948,7 @@
             <node concept="Xl_RD" id="46cplYy1TH1" role="2MkJ7o">
               <property role="Xl_RC" value="only number types can be used here" />
             </node>
-            <node concept="2OqwBi" id="46cplYy1TH2" role="2OEOjV">
+            <node concept="2OqwBi" id="46cplYy1TH2" role="1urrMF">
               <node concept="1YBJjd" id="46cplYy1TH3" role="2Oq$k0">
                 <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
               </node>
@@ -3966,7 +3966,7 @@
                   <node concept="Xl_RD" id="46cplYy1YG_" role="2MkJ7o">
                     <property role="Xl_RC" value="only number types can be used here" />
                   </node>
-                  <node concept="2OqwBi" id="46cplYy1YOA" role="2OEOjV">
+                  <node concept="2OqwBi" id="46cplYy1YOA" role="1urrMF">
                     <node concept="1YBJjd" id="46cplYy1YGL" role="2Oq$k0">
                       <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
                     </node>
@@ -4025,7 +4025,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="46cplYy290c" role="2OEOjV">
+                        <node concept="2OqwBi" id="46cplYy290c" role="1urrMF">
                           <node concept="1YBJjd" id="46cplYy28N1" role="2Oq$k0">
                             <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
                           </node>
@@ -4190,7 +4190,7 @@
                                   <node concept="Xl_RD" id="53cOfDpd5Z7" role="2MkJ7o">
                                     <property role="Xl_RC" value="Multiple otherwise literals are not allowed" />
                                   </node>
-                                  <node concept="37vLTw" id="53cOfDpd6ik" role="2OEOjV">
+                                  <node concept="37vLTw" id="53cOfDpd6ik" role="1urrMF">
                                     <ref role="3cqZAo" node="53cOfDpd5JT" resolve="it" />
                                   </node>
                                 </node>
@@ -4221,7 +4221,7 @@
                           <node concept="Xl_RD" id="53cOfDpd9Zb" role="a7wSD">
                             <property role="Xl_RC" value="Otherwise literal should be used at the last position of all options" />
                           </node>
-                          <node concept="1YBJjd" id="53cOfDpda0G" role="2OEOjV">
+                          <node concept="1YBJjd" id="53cOfDpda0G" role="1urrMF">
                             <ref role="1YBMHb" node="53cOfDpd0AS" resolve="otherwiseLiteral" />
                           </node>
                         </node>
@@ -4269,7 +4269,7 @@
             <node concept="Xl_RD" id="53cOfDpd1C5" role="a7wSD">
               <property role="Xl_RC" value="Otherwise literal may not be used at this location" />
             </node>
-            <node concept="1YBJjd" id="53cOfDpd1DS" role="2OEOjV">
+            <node concept="1YBJjd" id="53cOfDpd1DS" role="1urrMF">
               <ref role="1YBMHb" node="53cOfDpd0AS" resolve="otherwiseLiteral" />
             </node>
           </node>
@@ -4625,7 +4625,7 @@
                             <node concept="Xl_RD" id="vVoQWC6haL" role="2MkJ7o">
                               <property role="Xl_RC" value="bounds must be the same precision" />
                             </node>
-                            <node concept="1YBJjd" id="vVoQWC6hbv" role="2OEOjV">
+                            <node concept="1YBJjd" id="vVoQWC6hbv" role="1urrMF">
                               <ref role="1YBMHb" node="vVoQWC58sV" resolve="be" />
                             </node>
                           </node>
@@ -4728,7 +4728,7 @@
                           <node concept="Xl_RD" id="1VmWkC1rFWV" role="2MkJ7o">
                             <property role="Xl_RC" value="can only work with numbers" />
                           </node>
-                          <node concept="1YBJjd" id="1VmWkC1rFXR" role="2OEOjV">
+                          <node concept="1YBJjd" id="1VmWkC1rFXR" role="1urrMF">
                             <ref role="1YBMHb" node="vVoQWC58sV" resolve="be" />
                           </node>
                         </node>

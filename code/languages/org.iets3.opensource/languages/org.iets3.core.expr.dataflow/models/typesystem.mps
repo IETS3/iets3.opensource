@@ -2,7 +2,7 @@
 <model ref="r:b23afcd1-7574-4ab9-9fb9-51aff88fd512(org.iets3.core.expr.dataflow.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -93,13 +93,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -244,7 +244,7 @@
             <node concept="Xl_RD" id="4YhD5cZsJlQ" role="2MkJ7o">
               <property role="Xl_RC" value="type required" />
             </node>
-            <node concept="1YBJjd" id="4YhD5cZsJmf" role="2OEOjV">
+            <node concept="1YBJjd" id="4YhD5cZsJmf" role="1urrMF">
               <ref role="1YBMHb" node="4YhD5cZsIxq" resolve="inPort" />
             </node>
           </node>
@@ -323,7 +323,7 @@
                     <property role="Xl_RC" value=" must be connected" />
                   </node>
                 </node>
-                <node concept="2GrUjf" id="5Q9FzcI5bU4" role="2OEOjV">
+                <node concept="2GrUjf" id="5Q9FzcI5bU4" role="1urrMF">
                   <ref role="2Gs0qQ" node="5Q9FzcI51Vf" resolve="op" />
                 </node>
               </node>
@@ -437,7 +437,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="5Q9FzcI6yc1" role="2OEOjV">
+                <node concept="1YBJjd" id="5Q9FzcI6yc1" role="1urrMF">
                   <ref role="1YBMHb" node="5Q9FzcI6hvL" resolve="i" />
                 </node>
               </node>
@@ -467,7 +467,7 @@
                 <property role="Xl_RC" value="missing parameter value for " />
               </node>
             </node>
-            <node concept="1YBJjd" id="2vkvJYSSe0c" role="2OEOjV">
+            <node concept="1YBJjd" id="2vkvJYSSe0c" role="1urrMF">
               <ref role="1YBMHb" node="5Q9FzcI6hvL" resolve="i" />
             </node>
           </node>
@@ -523,7 +523,7 @@
               <node concept="Xl_RD" id="2vkvJYSMWHs" role="2MkJ7o">
                 <property role="Xl_RC" value="type required" />
               </node>
-              <node concept="1YBJjd" id="2vkvJYSMWI3" role="2OEOjV">
+              <node concept="1YBJjd" id="2vkvJYSMWI3" role="1urrMF">
                 <ref role="1YBMHb" node="2vkvJYSMVq_" resolve="bp" />
               </node>
             </node>
@@ -628,7 +628,7 @@
                 <node concept="Xl_RD" id="2vkvJYT280t" role="2MkJ7o">
                   <property role="Xl_RC" value="port already has a value defined; cannot connect to it" />
                 </node>
-                <node concept="1YBJjd" id="2vkvJYT280X" role="2OEOjV">
+                <node concept="1YBJjd" id="2vkvJYT280X" role="1urrMF">
                   <ref role="1YBMHb" node="2vkvJYSX4AF" resolve="c" />
                 </node>
               </node>
@@ -852,7 +852,7 @@
               <node concept="Xl_RD" id="2vkvJYT6asU" role="2MkJ7o">
                 <property role="Xl_RC" value="wrong direction for connector" />
               </node>
-              <node concept="1YBJjd" id="2vkvJYT6atC" role="2OEOjV">
+              <node concept="1YBJjd" id="2vkvJYT6atC" role="1urrMF">
                 <ref role="1YBMHb" node="2vkvJYSX4AF" resolve="c" />
               </node>
             </node>
@@ -932,7 +932,7 @@
                 <node concept="Xl_RD" id="2vkvJYT3gxp" role="2MkJ7o">
                   <property role="Xl_RC" value="must define a value for out port" />
                 </node>
-                <node concept="1YBJjd" id="2vkvJYT3gys" role="2OEOjV">
+                <node concept="1YBJjd" id="2vkvJYT3gys" role="1urrMF">
                   <ref role="1YBMHb" node="2vkvJYT218J" resolve="outPort" />
                 </node>
               </node>
@@ -1302,7 +1302,7 @@
               <node concept="Xl_RD" id="2vkvJYTecCA" role="2MkJ7o">
                 <property role="Xl_RC" value="wrong number of block parameters" />
               </node>
-              <node concept="1YBJjd" id="2vkvJYTecDk" role="2OEOjV">
+              <node concept="1YBJjd" id="2vkvJYTecDk" role="1urrMF">
                 <ref role="1YBMHb" node="2vkvJYTdtVk" resolve="bce" />
               </node>
             </node>
@@ -1399,7 +1399,7 @@
               <node concept="Xl_RD" id="2vkvJYTexBb" role="2MkJ7o">
                 <property role="Xl_RC" value="wrong number of inputs" />
               </node>
-              <node concept="1YBJjd" id="2vkvJYTexBc" role="2OEOjV">
+              <node concept="1YBJjd" id="2vkvJYTexBc" role="1urrMF">
                 <ref role="1YBMHb" node="2vkvJYTdtVk" resolve="bce" />
               </node>
             </node>

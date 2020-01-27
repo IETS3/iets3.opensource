@@ -111,13 +111,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -382,7 +382,7 @@
                                 <node concept="37vLTw" id="2BX$1355wUs" role="a7wSD">
                                   <ref role="3cqZAo" node="2BX$1355wSP" resolve="errorMessage" />
                                 </node>
-                                <node concept="2GrUjf" id="2BX$1355wUt" role="2OEOjV">
+                                <node concept="2GrUjf" id="2BX$1355wUt" role="1urrMF">
                                   <ref role="2Gs0qQ" node="2BX$1355wUd" resolve="target" />
                                 </node>
                               </node>
@@ -396,7 +396,7 @@
                                   <node concept="37vLTw" id="2BX$1355wUl" role="2MkJ7o">
                                     <ref role="3cqZAo" node="2BX$1355wSP" resolve="errorMessage" />
                                   </node>
-                                  <node concept="2GrUjf" id="2BX$1355wUm" role="2OEOjV">
+                                  <node concept="2GrUjf" id="2BX$1355wUm" role="1urrMF">
                                     <ref role="2Gs0qQ" node="2BX$1355wUd" resolve="target" />
                                   </node>
                                 </node>
@@ -442,7 +442,7 @@
                               <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="2BX$1355wV7" role="2OEOjV">
+                          <node concept="1YBJjd" id="2BX$1355wV7" role="1urrMF">
                             <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
                           </node>
                         </node>
@@ -529,11 +529,11 @@
           <node concept="3clFbJ" id="2BX$1355wVh" role="3cqZAp">
             <node concept="3clFbS" id="2BX$1355wVi" role="3clFbx">
               <node concept="a7r0C" id="2BX$1355wVl" role="3cqZAp">
-                <node concept="1YBJjd" id="2BX$1355wVm" role="2OEOjV">
-                  <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
-                </node>
                 <node concept="Xl_RD" id="2BX$1355wVn" role="a7wSD">
                   <property role="Xl_RC" value="This code has changed; check must be run manually" />
+                </node>
+                <node concept="1YBJjd" id="2BX$1355wVm" role="1urrMF">
+                  <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
                 </node>
               </node>
             </node>

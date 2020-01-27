@@ -66,13 +66,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -136,9 +136,6 @@
       <node concept="3clFbJ" id="76PiIP0IhKj" role="3cqZAp">
         <node concept="3clFbS" id="76PiIP0IhKl" role="3clFbx">
           <node concept="2Mj0R9" id="7mG7sQPpj_f" role="3cqZAp">
-            <node concept="1YBJjd" id="7mG7sQPpjQN" role="2OEOjV">
-              <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
-            </node>
             <node concept="Xl_RD" id="7mG7sQPpjJw" role="2MkJ7o">
               <property role="Xl_RC" value="invalid email address" />
             </node>
@@ -153,11 +150,11 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="2Mj0R9" id="7mG7sQPpjNb" role="3cqZAp">
-            <node concept="1YBJjd" id="7mG7sQPpjRU" role="2OEOjV">
+            <node concept="1YBJjd" id="7mG7sQPpjQN" role="1urrMF">
               <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
             </node>
+          </node>
+          <node concept="2Mj0R9" id="7mG7sQPpjNb" role="3cqZAp">
             <node concept="Xl_RD" id="7mG7sQPpjNd" role="2MkJ7o">
               <property role="Xl_RC" value="invalid email address" />
             </node>
@@ -171,6 +168,9 @@
                   <property role="Xl_RC" value="." />
                 </node>
               </node>
+            </node>
+            <node concept="1YBJjd" id="7mG7sQPpjRU" role="1urrMF">
+              <ref role="1YBMHb" node="7mG7sQPpjqD" resolve="user" />
             </node>
           </node>
         </node>
@@ -219,11 +219,11 @@
                 <node concept="3clFbJ" id="7mG7sQPplLq" role="3cqZAp">
                   <node concept="3clFbS" id="7mG7sQPplLr" role="3clFbx">
                     <node concept="2MkqsV" id="7mG7sQPpmwU" role="3cqZAp">
-                      <node concept="37vLTw" id="7mG7sQPpng9" role="2OEOjV">
-                        <ref role="3cqZAo" node="7mG7sQPplJp" resolve="u" />
-                      </node>
                       <node concept="Xl_RD" id="7mG7sQPpmz1" role="2MkJ7o">
                         <property role="Xl_RC" value="duplicate user name" />
+                      </node>
+                      <node concept="37vLTw" id="7mG7sQPpng9" role="1urrMF">
+                        <ref role="3cqZAo" node="7mG7sQPplJp" resolve="u" />
                       </node>
                     </node>
                   </node>

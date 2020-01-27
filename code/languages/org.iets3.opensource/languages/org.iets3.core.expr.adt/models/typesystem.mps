@@ -2,8 +2,8 @@
 <model ref="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="5" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -143,9 +143,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -167,6 +164,9 @@
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -377,7 +377,7 @@
                 <node concept="Xl_RD" id="28$LOSBLt2U" role="2MkJ7o">
                   <property role="Xl_RC" value="wrong number of args" />
                 </node>
-                <node concept="1YBJjd" id="28$LOSBLt2V" role="2OEOjV">
+                <node concept="1YBJjd" id="28$LOSBLt2V" role="1urrMF">
                   <ref role="1YBMHb" node="5a_u3OyMT93" resolve="term" />
                 </node>
               </node>
@@ -414,7 +414,7 @@
                   <node concept="Xl_RD" id="28$LOSBJTSr" role="2MkJ7o">
                     <property role="Xl_RC" value="arguments missing" />
                   </node>
-                  <node concept="1YBJjd" id="28$LOSBJTSV" role="2OEOjV">
+                  <node concept="1YBJjd" id="28$LOSBJTSV" role="1urrMF">
                     <ref role="1YBMHb" node="5a_u3OyMT93" resolve="term" />
                   </node>
                 </node>
@@ -442,7 +442,7 @@
                       <node concept="Xl_RD" id="28$LOSBJYja" role="2MkJ7o">
                         <property role="Xl_RC" value="too many arguments" />
                       </node>
-                      <node concept="1YBJjd" id="28$LOSBJYjb" role="2OEOjV">
+                      <node concept="1YBJjd" id="28$LOSBJYjb" role="1urrMF">
                         <ref role="1YBMHb" node="5a_u3OyMT93" resolve="term" />
                       </node>
                     </node>
@@ -493,7 +493,7 @@
                     <node concept="Xl_RD" id="5a_u3OyT1er" role="2MkJ7o">
                       <property role="Xl_RC" value="wildcards can only be used in pattern" />
                     </node>
-                    <node concept="2GrUjf" id="5a_u3OyT1fR" role="2OEOjV">
+                    <node concept="2GrUjf" id="5a_u3OyT1fR" role="1urrMF">
                       <ref role="2Gs0qQ" node="5a_u3OyNaXG" resolve="a" />
                     </node>
                   </node>
@@ -629,7 +629,7 @@
                     <node concept="Xl_RD" id="5a_u3OyRzzV" role="2MkJ7o">
                       <property role="Xl_RC" value="invalid index" />
                     </node>
-                    <node concept="1YBJjd" id="5a_u3OyRz$d" role="2OEOjV">
+                    <node concept="1YBJjd" id="5a_u3OyRz$d" role="1urrMF">
                       <ref role="1YBMHb" node="54HsVvNVczg" resolve="aaa" />
                     </node>
                   </node>
@@ -674,7 +674,7 @@
                   <node concept="Xl_RD" id="5a_u3OyRoMl" role="2MkJ7o">
                     <property role="Xl_RC" value="invalid context" />
                   </node>
-                  <node concept="2OqwBi" id="5a_u3OyRpOh" role="2OEOjV">
+                  <node concept="2OqwBi" id="5a_u3OyRpOh" role="1urrMF">
                     <node concept="1YBJjd" id="5a_u3OyRp_V" role="2Oq$k0">
                       <ref role="1YBMHb" node="54HsVvNVczg" resolve="aaa" />
                     </node>
@@ -746,7 +746,7 @@
             <node concept="Xl_RD" id="5a_u3OyU0n0" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used on the result side" />
             </node>
-            <node concept="1YBJjd" id="5a_u3OyU0nW" role="2OEOjV">
+            <node concept="1YBJjd" id="5a_u3OyU0nW" role="1urrMF">
               <ref role="1YBMHb" node="5a_u3OyTSGP" resolve="ci" />
             </node>
           </node>
@@ -991,7 +991,7 @@
             <node concept="Xl_RD" id="5a_u3OyZiJr" role="2MkJ7o">
               <property role="Xl_RC" value="must be used in the pattern" />
             </node>
-            <node concept="1YBJjd" id="5a_u3OyZiJV" role="2OEOjV">
+            <node concept="1YBJjd" id="5a_u3OyZiJV" role="1urrMF">
               <ref role="1YBMHb" node="5a_u3OyZhX0" resolve="ins" />
             </node>
           </node>
@@ -1210,7 +1210,7 @@
             <node concept="Xl_RD" id="5a_u3OzNHmm" role="2MkJ7o">
               <property role="Xl_RC" value="cannot have its own arguments" />
             </node>
-            <node concept="1YBJjd" id="5a_u3OzNHmY" role="2OEOjV">
+            <node concept="1YBJjd" id="5a_u3OzNHmY" role="1urrMF">
               <ref role="1YBMHb" node="5a_u3OzN$S5" resolve="ac" />
             </node>
           </node>
@@ -1268,7 +1268,7 @@
             <node concept="Xl_RD" id="5a_u3OzSEa_" role="2MkJ7o">
               <property role="Xl_RC" value="abstract constructors can only be used in pattern" />
             </node>
-            <node concept="1YBJjd" id="5a_u3OzSFTa" role="2OEOjV">
+            <node concept="1YBJjd" id="5a_u3OzSFTa" role="1urrMF">
               <ref role="1YBMHb" node="5a_u3OzStOi" resolve="act" />
             </node>
           </node>
@@ -1624,7 +1624,7 @@
                   <node concept="Xl_RD" id="5a_u3OzZqjl" role="2MkJ7o">
                     <property role="Xl_RC" value="can only be used for non-nested terms" />
                   </node>
-                  <node concept="1YBJjd" id="5a_u3OzZqkA" role="2OEOjV">
+                  <node concept="1YBJjd" id="5a_u3OzZqkA" role="1urrMF">
                     <ref role="1YBMHb" node="5a_u3OzZebW" resolve="ace" />
                   </node>
                 </node>
@@ -1648,7 +1648,7 @@
               <node concept="Xl_RD" id="5a_u3OzZfFs" role="2MkJ7o">
                 <property role="Xl_RC" value="* can only be used if a term is used as a pattern" />
               </node>
-              <node concept="1YBJjd" id="5a_u3OzZfGb" role="2OEOjV">
+              <node concept="1YBJjd" id="5a_u3OzZfGb" role="1urrMF">
                 <ref role="1YBMHb" node="5a_u3OzZebW" resolve="ace" />
               </node>
             </node>
@@ -1785,7 +1785,7 @@
                 <node concept="Xl_RD" id="28$LOSAgl4N" role="2MkJ7o">
                   <property role="Xl_RC" value="not a quoted term" />
                 </node>
-                <node concept="1YBJjd" id="28$LOSAgl5k" role="2OEOjV">
+                <node concept="1YBJjd" id="28$LOSAgl5k" role="1urrMF">
                   <ref role="1YBMHb" node="28$LOSAeeEj" resolve="uq" />
                 </node>
               </node>
@@ -2065,7 +2065,7 @@
             <node concept="Xl_RD" id="28$LOSBI9$f" role="2MkJ7o">
               <property role="Xl_RC" value="multi-arguments must be the last argument" />
             </node>
-            <node concept="1YBJjd" id="28$LOSBI9_4" role="2OEOjV">
+            <node concept="1YBJjd" id="28$LOSBI9_4" role="1urrMF">
               <ref role="1YBMHb" node="28$LOSBI8jt" resolve="aca" />
             </node>
           </node>
