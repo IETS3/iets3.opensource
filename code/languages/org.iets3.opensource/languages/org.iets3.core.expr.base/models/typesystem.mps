@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -263,9 +263,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -283,6 +280,9 @@
         <child id="1236163216864" name="operation" index="3h4sjZ" />
         <child id="1236163223950" name="rightOperandType" index="3h4u2h" />
         <child id="1236163223573" name="leftOperandType" index="3h4u4a" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
@@ -1007,7 +1007,7 @@
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1YBJjd" id="7KDVkAEtNAS" role="2OEOjV">
+                                  <node concept="1YBJjd" id="7KDVkAEtNAS" role="1urrMF">
                                     <ref role="1YBMHb" node="4rZeNQ6PB0M" resolve="be" />
                                   </node>
                                 </node>
@@ -1074,7 +1074,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="2ck7OjOLa1a" role="2OEOjV">
+                            <node concept="1YBJjd" id="2ck7OjOLa1a" role="1urrMF">
                               <ref role="1YBMHb" node="4rZeNQ6PB0M" resolve="be" />
                             </node>
                           </node>
@@ -1635,9 +1635,6 @@
             <node concept="9aQIb" id="117BaR7EhqR" role="9aQIa">
               <node concept="3clFbS" id="117BaR7EhqS" role="9aQI4">
                 <node concept="2MkqsV" id="2xACJhqUgYL" role="3cqZAp">
-                  <node concept="1YBJjd" id="2xACJhqUhno" role="2OEOjV">
-                    <ref role="1YBMHb" node="5ScITQbnltZ" resolve="unaryExpression" />
-                  </node>
                   <node concept="3cpWs3" id="2xACJhqUhbc" role="2MkJ7o">
                     <node concept="2OqwBi" id="2xACJhqUhbd" role="3uHU7w">
                       <node concept="37vLTw" id="2xACJhqYZX6" role="2Oq$k0">
@@ -1661,6 +1658,9 @@
                         <property role="Xl_RC" value=" cannot applied to " />
                       </node>
                     </node>
+                  </node>
+                  <node concept="1YBJjd" id="2xACJhqUhno" role="1urrMF">
+                    <ref role="1YBMHb" node="5ScITQbnltZ" resolve="unaryExpression" />
                   </node>
                 </node>
                 <node concept="1Z5TYs" id="117BaR7EhtM" role="3cqZAp">
@@ -2176,7 +2176,7 @@
             <node concept="Xl_RD" id="UN2ftLVGu8" role="2MkJ7o">
               <property role="Xl_RC" value="val cannot be used in a context where some value is found" />
             </node>
-            <node concept="1YBJjd" id="UN2ftLVQvh" role="2OEOjV">
+            <node concept="1YBJjd" id="UN2ftLVQvh" role="1urrMF">
               <ref role="1YBMHb" node="UN2ftLVDq2" resolve="val" />
             </node>
           </node>
@@ -2313,7 +2313,7 @@
                 <property role="Xl_RC" value="'try' can only be used with attempt[] types; it is " />
               </node>
             </node>
-            <node concept="2OqwBi" id="5BNZGjBvZhS" role="2OEOjV">
+            <node concept="2OqwBi" id="5BNZGjBvZhS" role="1urrMF">
               <node concept="1YBJjd" id="5BNZGjBvZg1" role="2Oq$k0">
                 <ref role="1YBMHb" node="5BNZGjBvVio" resolve="te" />
               </node>
@@ -2368,7 +2368,7 @@
                               <property role="Xl_RC" value="missing error clause for " />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="12WRc2944m5" role="2OEOjV">
+                          <node concept="1YBJjd" id="12WRc2944m5" role="1urrMF">
                             <ref role="1YBMHb" node="5BNZGjBvVio" resolve="te" />
                           </node>
                         </node>
@@ -2966,7 +2966,7 @@
                 <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
               </node>
             </node>
-            <node concept="1YBJjd" id="12WRc28VZb7" role="2OEOjV">
+            <node concept="1YBJjd" id="12WRc28VZb7" role="1urrMF">
               <ref role="1YBMHb" node="12WRc28VYHg" resolve="fm" />
             </node>
           </node>
@@ -5369,7 +5369,7 @@
             <node concept="Xl_RD" id="5_IWTcLG9_E" role="2MkJ7o">
               <property role="Xl_RC" value="inRange() is only applicable to int or real values." />
             </node>
-            <node concept="1YBJjd" id="5_IWTcLG9_Q" role="2OEOjV">
+            <node concept="1YBJjd" id="5_IWTcLG9_Q" role="1urrMF">
               <ref role="1YBMHb" node="6Mx2TmozT2z" resolve="target" />
             </node>
           </node>
@@ -5625,7 +5625,7 @@
                     <node concept="Xl_RD" id="2ck7OjOLF17" role="2MkJ7o">
                       <property role="Xl_RC" value="invalid index" />
                     </node>
-                    <node concept="1YBJjd" id="2ck7OjOM2tA" role="2OEOjV">
+                    <node concept="1YBJjd" id="2ck7OjOM2tA" role="1urrMF">
                       <ref role="1YBMHb" node="2ck7OjOM1no" resolve="tae" />
                     </node>
                   </node>
@@ -5694,7 +5694,7 @@
               <node concept="Xl_RD" id="2ck7OjOM2yN" role="2MkJ7o">
                 <property role="Xl_RC" value="expression must be a tuple" />
               </node>
-              <node concept="2OqwBi" id="2ck7OjOM2_F" role="2OEOjV">
+              <node concept="2OqwBi" id="2ck7OjOM2_F" role="1urrMF">
                 <node concept="1YBJjd" id="2ck7OjOM2zQ" role="2Oq$k0">
                   <ref role="1YBMHb" node="2ck7OjOM1no" resolve="tae" />
                 </node>
@@ -5801,7 +5801,7 @@
             <node concept="Xl_RD" id="6UxFDrx6JOZ" role="2MkJ7o">
               <property role="Xl_RC" value="do not use true and false for the left part; use 'otherwise' to handle the default case" />
             </node>
-            <node concept="1YBJjd" id="6UxFDrx6JRF" role="2OEOjV">
+            <node concept="1YBJjd" id="6UxFDrx6JRF" role="1urrMF">
               <ref role="1YBMHb" node="6UxFDrx6JlR" resolve="ao" />
             </node>
           </node>
@@ -5902,7 +5902,7 @@
             <node concept="Xl_RD" id="5ye9uPrimCs" role="2MkJ7o">
               <property role="Xl_RC" value="name can only be specified if some(..) is used in query mode" />
             </node>
-            <node concept="1YBJjd" id="5ye9uPrimFm" role="2OEOjV">
+            <node concept="1YBJjd" id="5ye9uPrimFm" role="1urrMF">
               <ref role="1YBMHb" node="5ye9uPrilMI" resolve="se" />
             </node>
           </node>
@@ -6017,7 +6017,7 @@
                   <node concept="Xl_RD" id="3kzwyUORdlR" role="2MkJ7o">
                     <property role="Xl_RC" value="option type required as the left argument" />
                   </node>
-                  <node concept="1YBJjd" id="3kzwyUORdm9" role="2OEOjV">
+                  <node concept="1YBJjd" id="3kzwyUORdm9" role="1urrMF">
                     <ref role="1YBMHb" node="3kzwyUORcn9" resolve="ooe" />
                   </node>
                 </node>
@@ -6738,7 +6738,7 @@
             <node concept="Xl_RD" id="54pTGl8jAv2" role="2MkJ7o">
               <property role="Xl_RC" value="type required" />
             </node>
-            <node concept="1YBJjd" id="54pTGl8jA_A" role="2OEOjV">
+            <node concept="1YBJjd" id="54pTGl8jA_A" role="1urrMF">
               <ref role="1YBMHb" node="54pTGl8j_uY" resolve="it" />
             </node>
           </node>
@@ -6873,7 +6873,7 @@
             <node concept="Xl_RD" id="6iJ_gQBeVB_" role="2MkJ7o">
               <property role="Xl_RC" value="the success type of an attempt type cannot be another attempt type" />
             </node>
-            <node concept="2OqwBi" id="6iJ_gQBeVJX" role="2OEOjV">
+            <node concept="2OqwBi" id="6iJ_gQBeVJX" role="1urrMF">
               <node concept="1YBJjd" id="6iJ_gQBeVCx" role="2Oq$k0">
                 <ref role="1YBMHb" node="6iJ_gQBeU1R" resolve="attemptType" />
               </node>
@@ -6916,7 +6916,7 @@
             <node concept="Xl_RD" id="6iJ_gQCtexp" role="2MkJ7o">
               <property role="Xl_RC" value="an alt expression with less than two alternatives is not allowed" />
             </node>
-            <node concept="1YBJjd" id="6iJ_gQCteys" role="2OEOjV">
+            <node concept="1YBJjd" id="6iJ_gQCteys" role="1urrMF">
               <ref role="1YBMHb" node="6iJ_gQCt948" resolve="ae" />
             </node>
           </node>
@@ -7024,7 +7024,7 @@
             <node concept="Xl_RD" id="3zml08RoH70" role="2MkJ7o">
               <property role="Xl_RC" value="cast not allowed; no common supertype found." />
             </node>
-            <node concept="2OqwBi" id="3zml08RoHfl" role="2OEOjV">
+            <node concept="2OqwBi" id="3zml08RoHfl" role="1urrMF">
               <node concept="1YBJjd" id="3zml08RoH7W" role="2Oq$k0">
                 <ref role="1YBMHb" node="3zml08RoAfJ" resolve="ce" />
               </node>
@@ -7247,7 +7247,7 @@
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="5ipapt3ECyp" role="2OEOjV">
+            <node concept="37vLTw" id="5ipapt3ECyp" role="1urrMF">
               <ref role="3cqZAo" node="5ipapt3ECyj" resolve="bt" />
             </node>
           </node>
@@ -7346,7 +7346,7 @@
             <node concept="Xl_RD" id="6JZACDWQVDN" role="2MkJ7o">
               <property role="Xl_RC" value="cannot make a reference from a literal" />
             </node>
-            <node concept="2OqwBi" id="6JZACDWRaT0" role="2OEOjV">
+            <node concept="2OqwBi" id="6JZACDWRaT0" role="1urrMF">
               <node concept="1YBJjd" id="6JZACDWQVEQ" role="2Oq$k0">
                 <ref role="1YBMHb" node="6JZACDWO2ET" resolve="mrt" />
               </node>
@@ -7402,14 +7402,6 @@
             </node>
             <node concept="3clFbS" id="6JZACDWO8nH" role="3clFbx">
               <node concept="2MkqsV" id="6JZACDWO95_" role="3cqZAp">
-                <node concept="2OqwBi" id="6JZACDWO9tj" role="2OEOjV">
-                  <node concept="1YBJjd" id="6JZACDWO9gw" role="2Oq$k0">
-                    <ref role="1YBMHb" node="6JZACDWO2ET" resolve="mrt" />
-                  </node>
-                  <node concept="2qgKlT" id="6JZACDWO9P9" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-                  </node>
-                </node>
                 <node concept="3cpWs3" id="6JZACDWO9bU" role="2MkJ7o">
                   <node concept="Xl_RD" id="6JZACDWO9bV" role="3uHU7w">
                     <property role="Xl_RC" value=" is not referenceable." />
@@ -7421,6 +7413,14 @@
                     <node concept="37vLTw" id="6JZACDWO9bY" role="3uHU7w">
                       <ref role="3cqZAo" node="6JZACDWO7jT" resolve="ctxType" />
                     </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6JZACDWO9tj" role="1urrMF">
+                  <node concept="1YBJjd" id="6JZACDWO9gw" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6JZACDWO2ET" resolve="mrt" />
+                  </node>
+                  <node concept="2qgKlT" id="6JZACDWO9P9" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
                   </node>
                 </node>
               </node>
@@ -7443,7 +7443,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="6JZACDWO9Tn" role="2OEOjV">
+              <node concept="2OqwBi" id="6JZACDWO9Tn" role="1urrMF">
                 <node concept="1YBJjd" id="6JZACDWO9To" role="2Oq$k0">
                   <ref role="1YBMHb" node="6JZACDWO2ET" resolve="mrt" />
                 </node>
@@ -7539,7 +7539,7 @@
             <node concept="Xl_RD" id="7VuYlCQZbQU" role="2MkJ7o">
               <property role="Xl_RC" value="a join type should at least contain two types" />
             </node>
-            <node concept="1YBJjd" id="7VuYlCQZbSw" role="2OEOjV">
+            <node concept="1YBJjd" id="7VuYlCQZbSw" role="1urrMF">
               <ref role="1YBMHb" node="7VuYlCQZ3n4" resolve="jt" />
             </node>
           </node>
@@ -7802,7 +7802,7 @@
                 <node concept="Xl_RD" id="ORfz$DSc2x" role="2MkJ7o">
                   <property role="Xl_RC" value="no effect allowed in this context." />
                 </node>
-                <node concept="1YBJjd" id="ORfz$DSc3I" role="2OEOjV">
+                <node concept="1YBJjd" id="ORfz$DSc3I" role="1urrMF">
                   <ref role="1YBMHb" node="ORfz$DSb0p" resolve="ie" />
                 </node>
               </node>
@@ -7894,7 +7894,7 @@
                           <ref role="3cqZAo" node="ORfz$Ec2IF" resolve="effectError" />
                         </node>
                       </node>
-                      <node concept="1YBJjd" id="ORfz$DSdtx" role="2OEOjV">
+                      <node concept="1YBJjd" id="ORfz$DSdtx" role="1urrMF">
                         <ref role="1YBMHb" node="ORfz$DSb0p" resolve="ie" />
                       </node>
                     </node>
@@ -8081,7 +8081,7 @@
             <node concept="Xl_RD" id="60Qa1k_s383" role="2MkJ7o">
               <property role="Xl_RC" value="type does not support default values" />
             </node>
-            <node concept="2OqwBi" id="60Qa1k_s3ih" role="2OEOjV">
+            <node concept="2OqwBi" id="60Qa1k_s3ih" role="1urrMF">
               <node concept="1YBJjd" id="60Qa1k_s396" role="2Oq$k0">
                 <ref role="1YBMHb" node="60Qa1k_s1Vz" resolve="dve" />
               </node>
@@ -8189,7 +8189,7 @@
                 <node concept="Xl_RD" id="53f0GWGHH3F" role="2MkJ7o">
                   <property role="Xl_RC" value="an if without an else is only allowed if the then expression has an effect" />
                 </node>
-                <node concept="1YBJjd" id="53f0GWGHH4W" role="2OEOjV">
+                <node concept="1YBJjd" id="53f0GWGHH4W" role="1urrMF">
                   <ref role="1YBMHb" node="53f0GWGHz4d" resolve="ife" />
                 </node>
               </node>
@@ -8278,7 +8278,7 @@
             <node concept="Xl_RD" id="37t_e$L3pVi" role="2MkJ7o">
               <property role="Xl_RC" value="'isSome(&lt;expr&gt;) as &lt;name&gt;' is allowed only within a conjunction (&amp;&amp;) of 'isSome(&lt;expr&gt;) as &lt;name&gt;' as a branching condition." />
             </node>
-            <node concept="2OqwBi" id="37t_e$LfWEl" role="2OEOjV">
+            <node concept="2OqwBi" id="37t_e$LfWEl" role="1urrMF">
               <node concept="1YBJjd" id="37t_e$LfWc3" role="2Oq$k0">
                 <ref role="1YBMHb" node="53f0GWGHz4d" resolve="ife" />
               </node>
@@ -8465,7 +8465,7 @@
             <node concept="Xl_RD" id="5a_u3OzTDoS" role="2MkJ7o">
               <property role="Xl_RC" value="cast not allowed; no common supertype found." />
             </node>
-            <node concept="2OqwBi" id="5a_u3OzTDoT" role="2OEOjV">
+            <node concept="2OqwBi" id="5a_u3OzTDoT" role="1urrMF">
               <node concept="1YBJjd" id="5a_u3OzTGAk" role="2Oq$k0">
                 <ref role="1YBMHb" node="5a_u3OzTDo3" resolve="cc" />
               </node>
@@ -8609,7 +8609,7 @@
             <node concept="Xl_RD" id="1RwPUjzvs2C" role="2MkJ7o">
               <property role="Xl_RC" value="empty list of values is not allowed" />
             </node>
-            <node concept="1YBJjd" id="1RwPUjzvs3M" role="2OEOjV">
+            <node concept="1YBJjd" id="1RwPUjzvs3M" role="1urrMF">
               <ref role="1YBMHb" node="1RwPUjzgk2X" resolve="amme" />
             </node>
           </node>
@@ -8825,7 +8825,7 @@
                 <node concept="Xl_RD" id="aPhVmWYPQd" role="2MkJ7o">
                   <property role="Xl_RC" value="not an lvalue" />
                 </node>
-                <node concept="1YBJjd" id="aPhVmWYPQe" role="2OEOjV">
+                <node concept="1YBJjd" id="aPhVmWYPQe" role="1urrMF">
                   <ref role="1YBMHb" node="aPhVmWYMGL" resolve="ae" />
                 </node>
               </node>
@@ -8838,7 +8838,7 @@
               <node concept="Xl_RD" id="aPhVmWYO_N" role="2MkJ7o">
                 <property role="Xl_RC" value="not an lvalue" />
               </node>
-              <node concept="1YBJjd" id="aPhVmWYOAx" role="2OEOjV">
+              <node concept="1YBJjd" id="aPhVmWYOAx" role="1urrMF">
                 <ref role="1YBMHb" node="aPhVmWYMGL" resolve="ae" />
               </node>
             </node>
@@ -9038,7 +9038,7 @@
             <node concept="Xl_RD" id="6WstIz8QSM3" role="2MkJ7o">
               <property role="Xl_RC" value="empty list is not allowed" />
             </node>
-            <node concept="1YBJjd" id="6WstIz8QSMt" role="2OEOjV">
+            <node concept="1YBJjd" id="6WstIz8QSMt" role="1urrMF">
               <ref role="1YBMHb" node="6WstIz8QIc_" resolve="operatorGroup" />
             </node>
           </node>

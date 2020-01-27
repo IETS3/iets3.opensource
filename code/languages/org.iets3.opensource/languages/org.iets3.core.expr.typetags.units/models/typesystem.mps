@@ -194,10 +194,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -217,6 +213,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -598,7 +598,7 @@
             <node concept="Xl_RD" id="5XaocLWKnEi" role="2MkJ7o">
               <property role="Xl_RC" value="There is no unit to strip!" />
             </node>
-            <node concept="1YBJjd" id="5XaocLWKnEU" role="2OEOjV">
+            <node concept="1YBJjd" id="5XaocLWKnEU" role="1urrMF">
               <ref role="1YBMHb" node="5XaocLWKjTW" resolve="expression" />
             </node>
           </node>
@@ -808,7 +808,7 @@
                   <node concept="Xl_RD" id="1wGuEUwrqxT" role="2MkJ7o">
                     <property role="Xl_RC" value="The specifier's type is already covered!" />
                   </node>
-                  <node concept="37vLTw" id="1wGuEUwrs0w" role="2OEOjV">
+                  <node concept="37vLTw" id="1wGuEUwrs0w" role="1urrMF">
                     <ref role="3cqZAo" node="1wGuEUwrqnn" resolve="it" />
                   </node>
                 </node>
@@ -913,7 +913,7 @@
                     <node concept="Xl_RD" id="20xYXnqtdGq" role="2MkJ7o">
                       <property role="Xl_RC" value="The conversion expression's unit and the rule's target unit do not match!" />
                     </node>
-                    <node concept="2OqwBi" id="20xYXnqtdR3" role="2OEOjV">
+                    <node concept="2OqwBi" id="20xYXnqtdR3" role="1urrMF">
                       <node concept="1YBJjd" id="1wGuEUvYEHj" role="2Oq$k0">
                         <ref role="1YBMHb" node="1wGuEUvYexJ" resolve="specifier" />
                       </node>
@@ -1069,7 +1069,7 @@
                       <node concept="Xl_RD" id="20xYXnqtiV$" role="2MkJ7o">
                         <property role="Xl_RC" value="A lazy conversion expression must not have a type with unit!" />
                       </node>
-                      <node concept="2OqwBi" id="20xYXnqtibs" role="2OEOjV">
+                      <node concept="2OqwBi" id="20xYXnqtibs" role="1urrMF">
                         <node concept="1YBJjd" id="1wGuEUvYGm$" role="2Oq$k0">
                           <ref role="1YBMHb" node="1wGuEUvYexJ" resolve="specifier" />
                         </node>
@@ -1102,7 +1102,7 @@
                 <node concept="Xl_RD" id="4V8dpOkajfN" role="a7wSD">
                   <property role="Xl_RC" value="Possible loss of precision (div before mul)!" />
                 </node>
-                <node concept="2OqwBi" id="4V8dpOkajpm" role="2OEOjV">
+                <node concept="2OqwBi" id="4V8dpOkajpm" role="1urrMF">
                   <node concept="1YBJjd" id="1wGuEUvYH0W" role="2Oq$k0">
                     <ref role="1YBMHb" node="1wGuEUvYexJ" resolve="specifier" />
                   </node>
@@ -1468,7 +1468,7 @@
                         <node concept="Xl_RD" id="4HIG6OSDiqC" role="2MkJ7o">
                           <property role="Xl_RC" value="More restrictive type is used in the conversion specifier!" />
                         </node>
-                        <node concept="2GrUjf" id="4HIG6OSDiwd" role="2OEOjV">
+                        <node concept="2GrUjf" id="4HIG6OSDiwd" role="1urrMF">
                           <ref role="2Gs0qQ" node="4HIG6OSCNE$" resolve="convertExpression" />
                         </node>
                       </node>
@@ -1504,7 +1504,7 @@
                 <node concept="Xl_RD" id="2Jcs$lvwT$A" role="2MkJ7o">
                   <property role="Xl_RC" value="Self referencing convert expression!" />
                 </node>
-                <node concept="1YBJjd" id="2Jcs$lvwTDx" role="2OEOjV">
+                <node concept="1YBJjd" id="2Jcs$lvwTDx" role="1urrMF">
                   <ref role="1YBMHb" node="1wGuEUvYexJ" resolve="specifier" />
                 </node>
               </node>
@@ -1563,7 +1563,7 @@
             <node concept="Xl_RD" id="yGiRIEWkAF" role="2MkJ7o">
               <property role="Xl_RC" value="No matching conversion specifier can be found!" />
             </node>
-            <node concept="1YBJjd" id="yGiRIEWkCy" role="2OEOjV">
+            <node concept="1YBJjd" id="yGiRIEWkCy" role="1urrMF">
               <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
             </node>
           </node>
@@ -1677,9 +1677,6 @@
             </node>
             <node concept="3clFbH" id="52UOzzPoYQF" role="3cqZAp" />
             <node concept="a7r0C" id="yGiRIEWwls" role="3cqZAp">
-              <node concept="1YBJjd" id="yGiRIEWwnM" role="2OEOjV">
-                <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
-              </node>
               <node concept="2OqwBi" id="52UOzzPp2bG" role="a7wSD">
                 <node concept="37vLTw" id="52UOzzPp27j" role="2Oq$k0">
                   <ref role="3cqZAo" node="52UOzzPoZFv" resolve="builder" />
@@ -1687,6 +1684,9 @@
                 <node concept="liA8E" id="52UOzzPp2YP" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuilder.toString()" resolve="toString" />
                 </node>
+              </node>
+              <node concept="1YBJjd" id="yGiRIEWwnM" role="1urrMF">
+                <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
               </node>
             </node>
           </node>
@@ -1721,10 +1721,10 @@
               <node concept="Xl_RD" id="12tdV5AgRu3" role="2MkJ7o">
                 <property role="Xl_RC" value="The conversion specifier must be set!" />
               </node>
-              <node concept="1YBJjd" id="5Q6EZP6JBMZ" role="2OEOjV">
+              <node concept="1YBJjd" id="5Q6EZP6JBMZ" role="1urrMF">
                 <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
               </node>
-              <node concept="3Cnw8n" id="12tdV5AgSVj" role="2OEOjU">
+              <node concept="3Cnw8n" id="12tdV5AgSVj" role="1urrFz">
                 <property role="ARO6o" value="true" />
                 <ref role="QpYPw" node="12tdV5AgRXE" resolve="quickfix_SetConversionRule" />
                 <node concept="3CnSsL" id="12tdV5Alk8Q" role="3Coj4f">
@@ -1928,7 +1928,7 @@
                     <node concept="Xl_RD" id="yGiRIEVxwY" role="2MkJ7o">
                       <property role="Xl_RC" value="Expression must evaluate to an annotated type with the defined source unit!" />
                     </node>
-                    <node concept="2OqwBi" id="yGiRIEVxwZ" role="2OEOjV">
+                    <node concept="2OqwBi" id="yGiRIEVxwZ" role="1urrMF">
                       <node concept="1YBJjd" id="yGiRIEVxx0" role="2Oq$k0">
                         <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
                       </node>
@@ -2026,7 +2026,7 @@
                   <node concept="Xl_RD" id="6CnXAkqyR2v" role="2MkJ7o">
                     <property role="Xl_RC" value="The expression's type is not applicable for the specifier!" />
                   </node>
-                  <node concept="2OqwBi" id="6CnXAkqyRfJ" role="2OEOjV">
+                  <node concept="2OqwBi" id="6CnXAkqyRfJ" role="1urrMF">
                     <node concept="1YBJjd" id="6CnXAkqyR6Y" role="2Oq$k0">
                       <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
                     </node>

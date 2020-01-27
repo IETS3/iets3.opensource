@@ -183,9 +183,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -219,6 +216,9 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
@@ -1084,7 +1084,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="6KxoTHgKmuS" role="2OEOjV">
+            <node concept="1YBJjd" id="6KxoTHgKmuS" role="1urrMF">
               <ref role="1YBMHb" node="6KxoTHgKlzm" resolve="tag" />
             </node>
           </node>
@@ -1116,7 +1116,7 @@
             <node concept="Xl_RD" id="TUBgQ0G0Ho" role="2MkJ7o">
               <property role="Xl_RC" value="empty tag list is not allowed (delete the &lt;&gt;)" />
             </node>
-            <node concept="1YBJjd" id="TUBgQ0G0Ir" role="2OEOjV">
+            <node concept="1YBJjd" id="TUBgQ0G0Ir" role="1urrMF">
               <ref role="1YBMHb" node="TUBgQ0FXcM" resolve="context" />
             </node>
           </node>
@@ -1293,7 +1293,7 @@
                     <node concept="Xl_RD" id="x_aN5M7aDu" role="2MkJ7o">
                       <property role="Xl_RC" value="Multiple tags in the same tag category!" />
                     </node>
-                    <node concept="2GrUjf" id="x_aN5M7aEd" role="2OEOjV">
+                    <node concept="2GrUjf" id="x_aN5M7aEd" role="1urrMF">
                       <ref role="2Gs0qQ" node="x_aN5M79tj" resolve="tag" />
                     </node>
                   </node>

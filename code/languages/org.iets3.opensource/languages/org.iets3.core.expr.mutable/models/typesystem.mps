@@ -2,7 +2,7 @@
 <model ref="r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -138,9 +138,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -152,6 +149,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -676,7 +676,7 @@
             <node concept="Xl_RD" id="79jc6YzKp72" role="2MkJ7o">
               <property role="Xl_RC" value="transactions can only be used directly under a function" />
             </node>
-            <node concept="1YBJjd" id="79jc6YzKp7K" role="2OEOjV">
+            <node concept="1YBJjd" id="79jc6YzKp7K" role="1urrMF">
               <ref role="1YBMHb" node="79jc6YzKnBc" resolve="tx" />
             </node>
           </node>
@@ -800,7 +800,7 @@
                 <node concept="Xl_RD" id="aPhVmWYPQd" role="2MkJ7o">
                   <property role="Xl_RC" value="not an lvalue" />
                 </node>
-                <node concept="1YBJjd" id="aPhVmWYPQe" role="2OEOjV">
+                <node concept="1YBJjd" id="aPhVmWYPQe" role="1urrMF">
                   <ref role="1YBMHb" node="aPhVmWYMGL" resolve="ae" />
                 </node>
               </node>
@@ -813,7 +813,7 @@
               <node concept="Xl_RD" id="aPhVmWYO_N" role="2MkJ7o">
                 <property role="Xl_RC" value="not an lvalue" />
               </node>
-              <node concept="1YBJjd" id="aPhVmWYOAx" role="2OEOjV">
+              <node concept="1YBJjd" id="aPhVmWYOAx" role="1urrMF">
                 <ref role="1YBMHb" node="aPhVmWYMGL" resolve="ae" />
               </node>
             </node>
@@ -935,7 +935,7 @@
                     <node concept="Xl_RD" id="5kGo$yLONCt" role="2MkJ7o">
                       <property role="Xl_RC" value="not a valid command" />
                     </node>
-                    <node concept="1YBJjd" id="5kGo$yLONCJ" role="2OEOjV">
+                    <node concept="1YBJjd" id="5kGo$yLONCJ" role="1urrMF">
                       <ref role="1YBMHb" node="7WFhXJlV9Z9" resolve="ict" />
                     </node>
                   </node>
@@ -982,7 +982,7 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="1YBJjd" id="Z4fkwzb1oN" role="2OEOjV">
+                              <node concept="1YBJjd" id="Z4fkwzb1oN" role="1urrMF">
                                 <ref role="1YBMHb" node="7WFhXJlV9Z9" resolve="ict" />
                               </node>
                             </node>
@@ -1205,7 +1205,7 @@
                       <node concept="Xl_RD" id="5kGo$yLOOv$" role="2MkJ7o">
                         <property role="Xl_RC" value="not a valid value" />
                       </node>
-                      <node concept="1YBJjd" id="5kGo$yLOOw0" role="2OEOjV">
+                      <node concept="1YBJjd" id="5kGo$yLOOw0" role="1urrMF">
                         <ref role="1YBMHb" node="Z4fkwz6NNx" resolve="ivt" />
                       </node>
                     </node>
@@ -1320,7 +1320,7 @@
             <node concept="Xl_RD" id="7bd8pkl7yi0" role="2MkJ7o">
               <property role="Xl_RC" value="not an interactor type" />
             </node>
-            <node concept="1YBJjd" id="7bd8pkl9T7T" role="2OEOjV">
+            <node concept="1YBJjd" id="7bd8pkl9T7T" role="1urrMF">
               <ref role="1YBMHb" node="7bd8pkl7v08" resolve="lt" />
             </node>
           </node>
@@ -1362,7 +1362,7 @@
             <node concept="Xl_RD" id="7bd8pkl7xT5" role="2MkJ7o">
               <property role="Xl_RC" value="not an interactor type" />
             </node>
-            <node concept="1YBJjd" id="7bd8pkl7xTU" role="2OEOjV">
+            <node concept="1YBJjd" id="7bd8pkl7xTU" role="1urrMF">
               <ref role="1YBMHb" node="7bd8pkl9Mf3" resolve="le" />
             </node>
           </node>

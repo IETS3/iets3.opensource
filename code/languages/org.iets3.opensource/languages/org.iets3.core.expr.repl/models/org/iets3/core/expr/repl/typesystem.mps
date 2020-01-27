@@ -156,14 +156,14 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -383,7 +383,7 @@
                 <node concept="Xl_RD" id="1mFXz_FVRw6" role="2MkJ7o">
                   <property role="Xl_RC" value="cannot refer to this cell, it is marked as internal" />
                 </node>
-                <node concept="1YBJjd" id="1mFXz_FVVfi" role="2OEOjV">
+                <node concept="1YBJjd" id="1mFXz_FVVfi" role="1urrMF">
                   <ref role="1YBMHb" node="5xEoEMrvsnJ" resolve="cr" />
                 </node>
               </node>
@@ -552,7 +552,7 @@
                               <property role="Xl_RC" value="wrong number of args; expecting " />
                             </node>
                           </node>
-                          <node concept="1YBJjd" id="5avmkTFiyZ_" role="2OEOjV">
+                          <node concept="1YBJjd" id="5avmkTFiyZ_" role="1urrMF">
                             <ref role="1YBMHb" node="5xEoEMrvsnJ" resolve="cr" />
                           </node>
                         </node>
@@ -787,7 +787,7 @@
             <node concept="Xl_RD" id="5avmkTFe1l$" role="2MkJ7o">
               <property role="Xl_RC" value="not a valid cell ref" />
             </node>
-            <node concept="1YBJjd" id="5avmkTFe1lX" role="2OEOjV">
+            <node concept="1YBJjd" id="5avmkTFe1lX" role="1urrMF">
               <ref role="1YBMHb" node="5avmkTFe0mC" resolve="cr" />
             </node>
           </node>
@@ -807,7 +807,7 @@
                 <node concept="Xl_RD" id="3pIANU_6Tun" role="2MkJ7o">
                   <property role="Xl_RC" value="outside of sheets, this must be used with a finder" />
                 </node>
-                <node concept="1YBJjd" id="3pIANU_6Tvq" role="2OEOjV">
+                <node concept="1YBJjd" id="3pIANU_6Tvq" role="1urrMF">
                   <ref role="1YBMHb" node="5avmkTFe0mC" resolve="cr" />
                 </node>
               </node>
@@ -1083,11 +1083,11 @@
           <node concept="3clFbJ" id="48DDwlwVEbr" role="3cqZAp">
             <node concept="3clFbS" id="48DDwlwVEbt" role="3clFbx">
               <node concept="2MkqsV" id="48DDwlwVHp2" role="3cqZAp">
-                <node concept="1YBJjd" id="48DDwlwVHp3" role="2OEOjV">
-                  <ref role="1YBMHb" node="48DDwlwV$uQ" resolve="see" />
-                </node>
                 <node concept="Xl_RD" id="48DDwlwVHp4" role="2MkJ7o">
                   <property role="Xl_RC" value="a result cell is required" />
+                </node>
+                <node concept="1YBJjd" id="48DDwlwVHp3" role="1urrMF">
+                  <ref role="1YBMHb" node="48DDwlwV$uQ" resolve="see" />
                 </node>
               </node>
             </node>
@@ -1111,11 +1111,11 @@
               </node>
               <node concept="3clFbS" id="48DDwlwVECt" role="3eOfB_">
                 <node concept="2MkqsV" id="48DDwlwVHfG" role="3cqZAp">
-                  <node concept="1YBJjd" id="48DDwlwVHo3" role="2OEOjV">
-                    <ref role="1YBMHb" node="48DDwlwV$uQ" resolve="see" />
-                  </node>
                   <node concept="Xl_RD" id="48DDwlwVHne" role="2MkJ7o">
                     <property role="Xl_RC" value="only one public cell allowed" />
+                  </node>
+                  <node concept="1YBJjd" id="48DDwlwVHo3" role="1urrMF">
+                    <ref role="1YBMHb" node="48DDwlwV$uQ" resolve="see" />
                   </node>
                 </node>
               </node>
@@ -1425,7 +1425,7 @@
                     <property role="Xl_RC" value="constraint violated: " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="7HzLUeHnKr2" role="2OEOjV">
+                <node concept="1YBJjd" id="7HzLUeHnKr2" role="1urrMF">
                   <ref role="1YBMHb" node="3_Nra3EaXXG" resolve="cell" />
                 </node>
               </node>
@@ -1614,7 +1614,7 @@
             <node concept="Xl_RD" id="3pIANU$YCgM" role="2MkJ7o">
               <property role="Xl_RC" value="can only be used in nested sheets" />
             </node>
-            <node concept="1YBJjd" id="3pIANU$YChw" role="2OEOjV">
+            <node concept="1YBJjd" id="3pIANU$YChw" role="1urrMF">
               <ref role="1YBMHb" node="3pIANU$YAsl" resolve="usf" />
             </node>
           </node>
@@ -1829,7 +1829,7 @@
                   <node concept="34oBXx" id="4YhD5cZphNL" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="1YBJjd" id="4YhD5cZpi1U" role="2OEOjV">
+              <node concept="1YBJjd" id="4YhD5cZpi1U" role="1urrMF">
                 <ref role="1YBMHb" node="4YhD5cZo8OQ" resolve="mre" />
               </node>
             </node>

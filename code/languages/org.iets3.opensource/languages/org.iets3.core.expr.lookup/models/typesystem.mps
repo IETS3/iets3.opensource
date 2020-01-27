@@ -2,7 +2,7 @@
 <model ref="r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -73,9 +73,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -84,6 +81,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -168,7 +168,7 @@
         <node concept="Xl_RD" id="55lPkJGG1Vw" role="2MkJ7o">
           <property role="Xl_RC" value="type must be discrete" />
         </node>
-        <node concept="2OqwBi" id="55lPkJGG2rE" role="2OEOjV">
+        <node concept="2OqwBi" id="55lPkJGG2rE" role="1urrMF">
           <node concept="1YBJjd" id="55lPkJGG28r" role="2Oq$k0">
             <ref role="1YBMHb" node="55lPkJGFLUP" resolve="lookupTable" />
           </node>
@@ -194,7 +194,7 @@
         <node concept="Xl_RD" id="55lPkJGG249" role="2MkJ7o">
           <property role="Xl_RC" value="type must be discrete" />
         </node>
-        <node concept="2OqwBi" id="55lPkJGG34P" role="2OEOjV">
+        <node concept="2OqwBi" id="55lPkJGG34P" role="1urrMF">
           <node concept="1YBJjd" id="55lPkJGG34Q" role="2Oq$k0">
             <ref role="1YBMHb" node="55lPkJGFLUP" resolve="lookupTable" />
           </node>

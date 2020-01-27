@@ -2,7 +2,7 @@
 <model ref="r:f58f4a3c-02d7-4cfe-abe9-c107d957e34d(org.iets3.core.expr.process.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -103,9 +103,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="8124453027370845339" name="jetbrains.mps.lang.typesystem.structure.AbstractOverloadedOpsTypeRule" flags="ng" index="32tDTw">
         <child id="8124453027370845343" name="function" index="32tDT$" />
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
@@ -121,6 +118,9 @@
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -404,7 +404,7 @@
             <node concept="Xl_RD" id="4IV0h47EjUT" role="2MkJ7o">
               <property role="Xl_RC" value="party or collectio&lt;party&gt; required" />
             </node>
-            <node concept="2OqwBi" id="4IV0h47Ek4t" role="2OEOjV">
+            <node concept="2OqwBi" id="4IV0h47Ek4t" role="1urrMF">
               <node concept="1YBJjd" id="4IV0h47EjVI" role="2Oq$k0">
                 <ref role="1YBMHb" node="4IV0h47EdD2" resolve="spi" />
               </node>
@@ -591,7 +591,7 @@
                 <node concept="Xl_RD" id="4IV0h48oSQ9" role="2MkJ7o">
                   <property role="Xl_RC" value="expecting a (ordered!) list of parties" />
                 </node>
-                <node concept="2OqwBi" id="4IV0h48oSQa" role="2OEOjV">
+                <node concept="2OqwBi" id="4IV0h48oSQa" role="1urrMF">
                   <node concept="1YBJjd" id="4IV0h48oSQb" role="2Oq$k0">
                     <ref role="1YBMHb" node="4IV0h48mbq1" resolve="tti" />
                   </node>
@@ -671,7 +671,7 @@
                   <node concept="Xl_RD" id="4IV0h48mfMF" role="2MkJ7o">
                     <property role="Xl_RC" value="expecting a collection of parties" />
                   </node>
-                  <node concept="2OqwBi" id="4IV0h48mfVN" role="2OEOjV">
+                  <node concept="2OqwBi" id="4IV0h48mfVN" role="1urrMF">
                     <node concept="1YBJjd" id="4IV0h48mfN4" role="2Oq$k0">
                       <ref role="1YBMHb" node="4IV0h48mbq1" resolve="tti" />
                     </node>
@@ -777,7 +777,7 @@
             <node concept="Xl_RD" id="31HpwbwEETO" role="2MkJ7o">
               <property role="Xl_RC" value="currently cannot be used inside a lambda" />
             </node>
-            <node concept="1YBJjd" id="31HpwbwEEUr" role="2OEOjV">
+            <node concept="1YBJjd" id="31HpwbwEEUr" role="1urrMF">
               <ref role="1YBMHb" node="31HpwbwEDRc" resolve="whis" />
             </node>
           </node>

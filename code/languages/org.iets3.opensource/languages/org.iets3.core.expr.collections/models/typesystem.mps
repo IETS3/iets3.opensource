@@ -2,7 +2,7 @@
 <model ref="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
@@ -173,10 +173,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -203,6 +199,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -344,7 +344,7 @@
                 <node concept="Xl_RD" id="2ufoZQJ1aXw" role="2MkJ7o">
                   <property role="Xl_RC" value="empty lists require a type" />
                 </node>
-                <node concept="1YBJjd" id="2ufoZQJ1aXx" role="2OEOjV">
+                <node concept="1YBJjd" id="2ufoZQJ1aXx" role="1urrMF">
                   <ref role="1YBMHb" node="6zmBjqUipC$" resolve="literal" />
                 </node>
               </node>
@@ -1025,7 +1025,7 @@
                     <node concept="Xl_RD" id="6zmBjqUlPyZ" role="2MkJ7o">
                       <property role="Xl_RC" value="exactly one argument expected" />
                     </node>
-                    <node concept="2OqwBi" id="6zmBjqUlPBl" role="2OEOjV">
+                    <node concept="2OqwBi" id="6zmBjqUlPBl" role="1urrMF">
                       <node concept="1YBJjd" id="6zmBjqUlP$J" role="2Oq$k0">
                         <ref role="1YBMHb" node="6zmBjqUlLnH" resolve="mapOp" />
                       </node>
@@ -1193,7 +1193,7 @@
                   <node concept="Xl_RD" id="6zmBjqUlLG3" role="2MkJ7o">
                     <property role="Xl_RC" value="Function type expected" />
                   </node>
-                  <node concept="2OqwBi" id="6zmBjqUlLJ9" role="2OEOjV">
+                  <node concept="2OqwBi" id="6zmBjqUlLJ9" role="1urrMF">
                     <node concept="1YBJjd" id="6zmBjqUlLGz" role="2Oq$k0">
                       <ref role="1YBMHb" node="6zmBjqUlLnH" resolve="mapOp" />
                     </node>
@@ -1258,7 +1258,7 @@
                     <node concept="Xl_RD" id="6zmBjqUm1mU" role="2MkJ7o">
                       <property role="Xl_RC" value="exactly one argument expected" />
                     </node>
-                    <node concept="1YBJjd" id="6zmBjqUm1Qm" role="2OEOjV">
+                    <node concept="1YBJjd" id="6zmBjqUm1Qm" role="1urrMF">
                       <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                     </node>
                   </node>
@@ -1389,16 +1389,16 @@
                         <node concept="3clFbJ" id="2Qbt$1tTX8w" role="3cqZAp">
                           <node concept="3clFbS" id="2Qbt$1tTX8x" role="3clFbx">
                             <node concept="2MkqsV" id="2Qbt$1tTX8y" role="3cqZAp">
-                              <node concept="2OqwBi" id="4pyjK6aQkVV" role="2OEOjV">
+                              <node concept="Xl_RD" id="2Qbt$1tTX8z" role="2MkJ7o">
+                                <property role="Xl_RC" value="Boolean expression expected" />
+                              </node>
+                              <node concept="2OqwBi" id="4pyjK6aQkVV" role="1urrMF">
                                 <node concept="1YBJjd" id="2Qbt$1tTX8_" role="2Oq$k0">
                                   <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                                 </node>
                                 <node concept="3TrEf2" id="4pyjK6aQlxH" role="2OqNvi">
                                   <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
                                 </node>
-                              </node>
-                              <node concept="Xl_RD" id="2Qbt$1tTX8z" role="2MkJ7o">
-                                <property role="Xl_RC" value="Boolean expression expected" />
                               </node>
                             </node>
                           </node>
@@ -1453,7 +1453,7 @@
                   <node concept="Xl_RD" id="6zmBjqUm1nS" role="2MkJ7o">
                     <property role="Xl_RC" value="Function type expected" />
                   </node>
-                  <node concept="1YBJjd" id="6zmBjqUm2jh" role="2OEOjV">
+                  <node concept="1YBJjd" id="6zmBjqUm2jh" role="1urrMF">
                     <ref role="1YBMHb" node="6zmBjqUm1mE" resolve="op" />
                   </node>
                 </node>
@@ -1790,7 +1790,7 @@
                 <node concept="Xl_RD" id="2ufoZQIYvpk" role="2MkJ7o">
                   <property role="Xl_RC" value="empty sets require a type" />
                 </node>
-                <node concept="1YBJjd" id="2ufoZQIYvpl" role="2OEOjV">
+                <node concept="1YBJjd" id="2ufoZQIYvpl" role="1urrMF">
                   <ref role="1YBMHb" node="7GwCuf2WbPx" resolve="literal" />
                 </node>
               </node>
@@ -2495,7 +2495,7 @@
                 <node concept="Xl_RD" id="7yDflTr1rCG" role="2MkJ7o">
                   <property role="Xl_RC" value="empty maps require a type" />
                 </node>
-                <node concept="1YBJjd" id="7yDflTr1_0a" role="2OEOjV">
+                <node concept="1YBJjd" id="7yDflTr1_0a" role="1urrMF">
                   <ref role="1YBMHb" node="7kYh9Wszg7q" resolve="literal" />
                 </node>
               </node>
@@ -3741,7 +3741,7 @@
                       <node concept="Xl_RD" id="40o9_yLF2ng" role="2MkJ7o">
                         <property role="Xl_RC" value="can only be used on collections of option types" />
                       </node>
-                      <node concept="1YBJjd" id="40o9_yLF2ot" role="2OEOjV">
+                      <node concept="1YBJjd" id="40o9_yLF2ot" role="1urrMF">
                         <ref role="1YBMHb" node="40o9_yLEYHC" resolve="uoo" />
                       </node>
                     </node>
@@ -3755,7 +3755,7 @@
                   <node concept="Xl_RD" id="40o9_yLFi6C" role="2MkJ7o">
                     <property role="Xl_RC" value="can only be used on collections of option types" />
                   </node>
-                  <node concept="1YBJjd" id="40o9_yLFi6D" role="2OEOjV">
+                  <node concept="1YBJjd" id="40o9_yLFi6D" role="1urrMF">
                     <ref role="1YBMHb" node="40o9_yLEYHC" resolve="uoo" />
                   </node>
                 </node>
@@ -3828,7 +3828,7 @@
             <node concept="Xl_RD" id="7SZA7Ud$2IB" role="2MkJ7o">
               <property role="Xl_RC" value="foreach requires the lambda expression to have an effect" />
             </node>
-            <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="2OEOjV">
+            <node concept="1YBJjd" id="7SZA7Ud$2Jt" role="1urrMF">
               <ref role="1YBMHb" node="7SZA7Ud$034" resolve="fo" />
             </node>
           </node>
@@ -3934,7 +3934,7 @@
                       <node concept="Xl_RD" id="2dOqIOtK1zl" role="2MkJ7o">
                         <property role="Xl_RC" value="collection&lt;collection&lt;T&gt;&gt; is expected" />
                       </node>
-                      <node concept="1YBJjd" id="2dOqIOtK28H" role="2OEOjV">
+                      <node concept="1YBJjd" id="2dOqIOtK28H" role="1urrMF">
                         <ref role="1YBMHb" node="2dOqIOtK1Az" resolve="flattenOp" />
                       </node>
                     </node>
@@ -3948,7 +3948,7 @@
                   <node concept="Xl_RD" id="2dOqIOtK05r" role="2MkJ7o">
                     <property role="Xl_RC" value="collection&lt;collection&lt;T&gt;&gt; is expected" />
                   </node>
-                  <node concept="1YBJjd" id="2dOqIOtK29X" role="2OEOjV">
+                  <node concept="1YBJjd" id="2dOqIOtK29X" role="1urrMF">
                     <ref role="1YBMHb" node="2dOqIOtK1Az" resolve="flattenOp" />
                   </node>
                 </node>
@@ -4200,7 +4200,7 @@
                   <node concept="Xl_RD" id="4ptnK4iiaJQ" role="2MkJ7o">
                     <property role="Xl_RC" value="can only be used with collections of strings" />
                   </node>
-                  <node concept="1YBJjd" id="4ptnK4iiaKm" role="2OEOjV">
+                  <node concept="1YBJjd" id="4ptnK4iiaKm" role="1urrMF">
                     <ref role="1YBMHb" node="4ptnK4ii9gx" resolve="joiner" />
                   </node>
                 </node>
@@ -4313,7 +4313,7 @@
             <node concept="Xl_RD" id="$lfQMoei$l" role="2MkJ7o">
               <property role="Xl_RC" value="max must be &gt;= min" />
             </node>
-            <node concept="1YBJjd" id="$lfQMoei_3" role="2OEOjV">
+            <node concept="1YBJjd" id="$lfQMoei_3" role="1urrMF">
               <ref role="1YBMHb" node="$lfQMoeh5L" resolve="csc" />
             </node>
           </node>
@@ -4742,10 +4742,10 @@
         <node concept="Xl_RD" id="4hLehKU4DLD" role="2MkJ7o">
           <property role="Xl_RC" value="type of combiner is wrong" />
         </node>
-        <node concept="1YBJjd" id="4hLehKU4DVV" role="2OEOjV">
+        <node concept="1YBJjd" id="4hLehKU4DVV" role="1urrMF">
           <ref role="1YBMHb" node="4hLehKU4A8w" resolve="foldOp" />
         </node>
-        <node concept="3Cnw8n" id="4hLehKU5rux" role="2OEOjU">
+        <node concept="3Cnw8n" id="4hLehKU5rux" role="1urrFz">
           <ref role="QpYPw" node="4hLehKU5rjU" resolve="fix_combinerTypeShape" />
           <node concept="3CnSsL" id="4hLehKU5rCy" role="3Coj4f">
             <ref role="QkamJ" node="4hLehKU5ruf" resolve="foldOp" />
@@ -5420,7 +5420,7 @@
                       <node concept="Xl_RD" id="1mDdTGURY1" role="2MkJ7o">
                         <property role="Xl_RC" value="two-element tuples are required to build a map" />
                       </node>
-                      <node concept="1YBJjd" id="1mDdTGURYQ" role="2OEOjV">
+                      <node concept="1YBJjd" id="1mDdTGURYQ" role="1urrMF">
                         <ref role="1YBMHb" node="1mDdTGU99y" resolve="amo" />
                       </node>
                     </node>
@@ -5444,7 +5444,7 @@
                   <node concept="Xl_RD" id="1mDdTGUSds" role="2MkJ7o">
                     <property role="Xl_RC" value="can only be used with collections of two-element tuples" />
                   </node>
-                  <node concept="1YBJjd" id="1mDdTGUSdt" role="2OEOjV">
+                  <node concept="1YBJjd" id="1mDdTGUSdt" role="1urrMF">
                     <ref role="1YBMHb" node="1mDdTGU99y" resolve="amo" />
                   </node>
                 </node>
@@ -5764,7 +5764,7 @@
                     <node concept="Xl_RD" id="oG0sI$Hie$" role="2MkJ7o">
                       <property role="Xl_RC" value="exactly two arguments expected" />
                     </node>
-                    <node concept="1YBJjd" id="oG0sI$Hie_" role="2OEOjV">
+                    <node concept="1YBJjd" id="oG0sI$Hie_" role="1urrMF">
                       <ref role="1YBMHb" node="oG0sI$Hib7" resolve="op" />
                     </node>
                   </node>
@@ -5935,16 +5935,16 @@
                         <node concept="3clFbJ" id="oG0sI$Hifs" role="3cqZAp">
                           <node concept="3clFbS" id="oG0sI$Hift" role="3clFbx">
                             <node concept="2MkqsV" id="oG0sI$Hifu" role="3cqZAp">
-                              <node concept="2OqwBi" id="oG0sI$Hifv" role="2OEOjV">
+                              <node concept="Xl_RD" id="oG0sI$Hify" role="2MkJ7o">
+                                <property role="Xl_RC" value="Boolean expression expected" />
+                              </node>
+                              <node concept="2OqwBi" id="oG0sI$Hifv" role="1urrMF">
                                 <node concept="1YBJjd" id="oG0sI$Hifw" role="2Oq$k0">
                                   <ref role="1YBMHb" node="oG0sI$Hib7" resolve="op" />
                                 </node>
                                 <node concept="3TrEf2" id="oG0sI$Hifx" role="2OqNvi">
                                   <ref role="3Tt5mk" to="700h:6zmBjqUjnKt" resolve="arg" />
                                 </node>
-                              </node>
-                              <node concept="Xl_RD" id="oG0sI$Hify" role="2MkJ7o">
-                                <property role="Xl_RC" value="Boolean expression expected" />
                               </node>
                             </node>
                           </node>
@@ -5999,7 +5999,7 @@
                   <node concept="Xl_RD" id="oG0sI$HifP" role="2MkJ7o">
                     <property role="Xl_RC" value="Function type expected" />
                   </node>
-                  <node concept="1YBJjd" id="oG0sI$HifQ" role="2OEOjV">
+                  <node concept="1YBJjd" id="oG0sI$HifQ" role="1urrMF">
                     <ref role="1YBMHb" node="oG0sI$Hib7" resolve="op" />
                   </node>
                 </node>
