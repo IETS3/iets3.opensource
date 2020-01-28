@@ -49,7 +49,7 @@
     <import index="6yn5" ref="r:2bfc35a4-8334-4342-8e2a-a54b7cda4a4c(org.iets3.core.expr.testExecution.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="w474" ref="r:06b241ed-1779-4f34-8d6f-e61e9dd94387(org.iets3.core.expr.testExecution.plugin)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1604,6 +1604,19 @@
         </node>
       </node>
       <node concept="17QB3L" id="2CFPPn7rGPH" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="48NC6VzTwj$" role="13h7CS">
+      <property role="TrG5h" value="canBeIgnored" />
+      <ref role="13i0hy" node="48NC6VzTkMS" resolve="canBeIgnored" />
+      <node concept="3Tm1VV" id="48NC6VzTwj_" role="1B3o_S" />
+      <node concept="3clFbS" id="48NC6VzTwjE" role="3clF47">
+        <node concept="3clFbF" id="48NC6VzTxXJ" role="3cqZAp">
+          <node concept="3clFbT" id="48NC6VzTxXI" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="48NC6VzTwjF" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="ub9nkyO0Fd">
@@ -3411,14 +3424,36 @@
         <ref role="3uigEE" node="ub9nkyOIeW" resolve="EvalResult" />
       </node>
       <node concept="3clFbS" id="4KZjPKUdEYp" role="3clF47">
-        <node concept="3clFbF" id="4KZjPKUfBgb" role="3cqZAp">
-          <node concept="BsUDl" id="4KZjPKUfBg9" role="3clFbG">
-            <ref role="37wK5l" node="1cd9HYW_D_k" resolve="executeSetupInternal" />
+        <node concept="3clFbJ" id="48NC6VzTD8v" role="3cqZAp">
+          <node concept="3clFbS" id="48NC6VzTD8x" role="3clFbx">
+            <node concept="3clFbF" id="4KZjPKUfBgb" role="3cqZAp">
+              <node concept="BsUDl" id="4KZjPKUfBg9" role="3clFbG">
+                <ref role="37wK5l" node="1cd9HYW_D_k" resolve="executeSetupInternal" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4KZjPKUdFNe" role="3cqZAp">
+              <node concept="BsUDl" id="4KZjPKUdFNg" role="3cqZAk">
+                <ref role="37wK5l" node="78hTg1$THJg" resolve="executeTestInternal" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="48NC6VzTEKT" role="3clFbw">
+            <node concept="2OqwBi" id="48NC6VzTEKV" role="3fr31v">
+              <node concept="13iPFW" id="48NC6VzTEKW" role="2Oq$k0" />
+              <node concept="3TrcHB" id="48NC6VzTEKX" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="4KZjPKUdFNe" role="3cqZAp">
-          <node concept="BsUDl" id="4KZjPKUdFNg" role="3cqZAk">
-            <ref role="37wK5l" node="78hTg1$THJg" resolve="executeTestInternal" />
+        <node concept="3cpWs6" id="48NC6VzTFLl" role="3cqZAp">
+          <node concept="2ShNRf" id="48NC6VzZZNv" role="3cqZAk">
+            <node concept="1pGfFk" id="48NC6VzZZNu" role="2ShVmc">
+              <ref role="37wK5l" node="5AG05XYBpkz" resolve="EvalResult" />
+              <node concept="3clFbT" id="48NC6V$00ib" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -4137,6 +4172,17 @@
         <property role="TrG5h" value="t" />
         <node concept="3uibUv" id="3YhAT14Qw_R" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="48NC6VzTkMS" role="13h7CS">
+      <property role="TrG5h" value="canBeIgnored" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="48NC6VzTkMT" role="1B3o_S" />
+      <node concept="10P_77" id="48NC6VzToK8" role="3clF45" />
+      <node concept="3clFbS" id="48NC6VzTkMV" role="3clF47">
+        <node concept="3clFbF" id="48NC6VzToR3" role="3cqZAp">
+          <node concept="3clFbT" id="48NC6VzToR2" role="3clFbG" />
         </node>
       </node>
     </node>

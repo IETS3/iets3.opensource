@@ -370,6 +370,7 @@
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -680,6 +681,9 @@
     </node>
     <node concept="1puMqW" id="3A3G7AS2fXB" role="1puA0r">
       <ref role="1puQsG" node="27xhIwhh4pd" resolve="preprocessNamedAssertRefs" />
+    </node>
+    <node concept="1puMqW" id="48NC6V$2i8C" role="1puA0r">
+      <ref role="1puQsG" node="48NC6V$2c$1" resolve="preprocessIgnoredItems" />
     </node>
     <node concept="1puMqW" id="7EIB27ge2PZ" role="1puA0r">
       <ref role="1puQsG" node="7EIB27g8y97" resolve="preprocessConstantRefNamesTest" />
@@ -2510,6 +2514,50 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="48NC6V$2c$1">
+    <property role="TrG5h" value="preprocessIgnoredItems" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
+    <property role="1v3jST" value="true" />
+    <node concept="1pplIY" id="48NC6V$2c$2" role="1pqMTA">
+      <node concept="3clFbS" id="48NC6V$2c$3" role="2VODD2">
+        <node concept="2Gpval" id="48NC6V$2c$4" role="3cqZAp">
+          <node concept="2GrKxI" id="48NC6V$2c$5" role="2Gsz3X">
+            <property role="TrG5h" value="ti" />
+          </node>
+          <node concept="2OqwBi" id="48NC6V$2c$6" role="2GsD0m">
+            <node concept="1Q6Npb" id="48NC6V$2c$7" role="2Oq$k0" />
+            <node concept="2SmgA7" id="48NC6V$2c$8" role="2OqNvi">
+              <node concept="chp4Y" id="48NC6V$2dn9" role="1dBWTz">
+                <ref role="cht4Q" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="48NC6V$2c$a" role="2LFqv$">
+            <node concept="3clFbJ" id="48NC6V$2emJ" role="3cqZAp">
+              <node concept="3clFbS" id="48NC6V$2emL" role="3clFbx">
+                <node concept="3clFbF" id="48NC6V$2fZh" role="3cqZAp">
+                  <node concept="2OqwBi" id="48NC6V$2gl$" role="3clFbG">
+                    <node concept="2GrUjf" id="48NC6V$2fZf" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="48NC6V$2c$5" resolve="ti" />
+                    </node>
+                    <node concept="3YRAZt" id="48NC6V$2htk" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="48NC6V$2ePC" role="3clFbw">
+                <node concept="2GrUjf" id="48NC6V$2eqR" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="48NC6V$2c$5" resolve="ti" />
+                </node>
+                <node concept="3TrcHB" id="48NC6V$2fW2" role="2OqNvi">
+                  <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
                 </node>
               </node>
             </node>

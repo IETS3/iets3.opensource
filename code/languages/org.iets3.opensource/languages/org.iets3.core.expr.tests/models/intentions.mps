@@ -1989,5 +1989,53 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="48NC6VzT8Kn">
+    <property role="TrG5h" value="toggleIgnored" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
+    <node concept="2S6ZIM" id="48NC6VzT8Ko" role="2ZfVej">
+      <node concept="3clFbS" id="48NC6VzT8Kp" role="2VODD2">
+        <node concept="3clFbF" id="48NC6VzT96H" role="3cqZAp">
+          <node concept="Xl_RD" id="48NC6VzT96G" role="3clFbG">
+            <property role="Xl_RC" value="Flag as [ignored]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="48NC6VzT8Kq" role="2ZfgGD">
+      <node concept="3clFbS" id="48NC6VzT8Kr" role="2VODD2">
+        <node concept="3clFbF" id="48NC6VzT9Cm" role="3cqZAp">
+          <node concept="37vLTI" id="48NC6VzTb9M" role="3clFbG">
+            <node concept="3fqX7Q" id="48NC6VzTba7" role="37vLTx">
+              <node concept="2OqwBi" id="48NC6VzTbwj" role="3fr31v">
+                <node concept="2Sf5sV" id="48NC6VzTbmP" role="2Oq$k0" />
+                <node concept="3TrcHB" id="48NC6VzTbE9" role="2OqNvi">
+                  <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="48NC6VzT9YI" role="37vLTJ">
+              <node concept="2Sf5sV" id="48NC6VzT9Cl" role="2Oq$k0" />
+              <node concept="3TrcHB" id="48NC6VzTaI8" role="2OqNvi">
+                <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="48NC6VzT$iK" role="2ZfVeh">
+      <node concept="3clFbS" id="48NC6VzT$iL" role="2VODD2">
+        <node concept="3clFbF" id="48NC6VzT$ql" role="3cqZAp">
+          <node concept="2OqwBi" id="48NC6VzT$ST" role="3clFbG">
+            <node concept="2Sf5sV" id="48NC6VzT$qk" role="2Oq$k0" />
+            <node concept="2qgKlT" id="48NC6VzT_Cs" role="2OqNvi">
+              <ref role="37wK5l" to="xk6s:48NC6VzTkMS" resolve="canBeIgnored" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
