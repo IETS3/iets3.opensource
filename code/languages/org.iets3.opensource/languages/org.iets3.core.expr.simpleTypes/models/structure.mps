@@ -228,7 +228,7 @@
     <property role="3GE5qa" value="numeric.number.precision" />
     <property role="TrG5h" value="ConvertPrecisionNumberExpression" />
     <property role="34LRSv" value="precision" />
-    <property role="R4oN_" value="change the precision of a numner (rounding, truncating)" />
+    <property role="R4oN_" value="change the precision of a number (rounding, truncating)" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="7DTWJ$8kg5h" role="1TKVEi">
       <property role="IQ2ns" value="8825352096209502545" />
