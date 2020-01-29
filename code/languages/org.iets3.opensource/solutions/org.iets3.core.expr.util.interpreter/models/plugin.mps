@@ -170,12 +170,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -436,8 +432,40 @@
                     <node concept="3clFbJ" id="5crSXLqy4D" role="3cqZAp">
                       <node concept="3clFbS" id="5crSXLqy4F" role="3clFbx">
                         <node concept="3SKdUt" id="5crSXLqRna" role="3cqZAp">
-                          <node concept="3SKdUq" id="5crSXLqRnb" role="3SKWNk">
-                            <property role="3SKdUp" value="need to add coverage explicitly, as only its copy is evaluated" />
+                          <node concept="1PaTwC" id="7759dYaYs0H" role="3ndbpf">
+                            <node concept="3oM_SD" id="7759dYaYs0I" role="1PaTwD">
+                              <property role="3oM_SC" value="need" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0J" role="1PaTwD">
+                              <property role="3oM_SC" value="to" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0K" role="1PaTwD">
+                              <property role="3oM_SC" value="add" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0L" role="1PaTwD">
+                              <property role="3oM_SC" value="coverage" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0M" role="1PaTwD">
+                              <property role="3oM_SC" value="explicitly," />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0N" role="1PaTwD">
+                              <property role="3oM_SC" value="as" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0O" role="1PaTwD">
+                              <property role="3oM_SC" value="only" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0P" role="1PaTwD">
+                              <property role="3oM_SC" value="its" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0Q" role="1PaTwD">
+                              <property role="3oM_SC" value="copy" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0R" role="1PaTwD">
+                              <property role="3oM_SC" value="is" />
+                            </node>
+                            <node concept="3oM_SD" id="7759dYaYs0S" role="1PaTwD">
+                              <property role="3oM_SC" value="evaluated" />
+                            </node>
                           </node>
                         </node>
                         <node concept="3clFbF" id="5crSXLqRnc" role="3cqZAp">
@@ -674,8 +702,40 @@
                             <node concept="3clFbJ" id="5crSXLuFfG" role="3cqZAp">
                               <node concept="3clFbS" id="5crSXLuFfH" role="3clFbx">
                                 <node concept="3SKdUt" id="5crSXLuFfI" role="3cqZAp">
-                                  <node concept="3SKdUq" id="5crSXLuFfJ" role="3SKWNk">
-                                    <property role="3SKdUp" value="need to add coverage explicitly, as only its copy is evaluated" />
+                                  <node concept="1PaTwC" id="7759dYaYs0T" role="3ndbpf">
+                                    <node concept="3oM_SD" id="7759dYaYs0U" role="1PaTwD">
+                                      <property role="3oM_SC" value="need" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs0V" role="1PaTwD">
+                                      <property role="3oM_SC" value="to" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs0W" role="1PaTwD">
+                                      <property role="3oM_SC" value="add" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs0X" role="1PaTwD">
+                                      <property role="3oM_SC" value="coverage" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs0Y" role="1PaTwD">
+                                      <property role="3oM_SC" value="explicitly," />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs0Z" role="1PaTwD">
+                                      <property role="3oM_SC" value="as" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs10" role="1PaTwD">
+                                      <property role="3oM_SC" value="only" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs11" role="1PaTwD">
+                                      <property role="3oM_SC" value="its" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs12" role="1PaTwD">
+                                      <property role="3oM_SC" value="copy" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs13" role="1PaTwD">
+                                      <property role="3oM_SC" value="is" />
+                                    </node>
+                                    <node concept="3oM_SD" id="7759dYaYs14" role="1PaTwD">
+                                      <property role="3oM_SC" value="evaluated" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="3clFbF" id="5crSXLuFfK" role="3cqZAp">

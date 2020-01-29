@@ -534,9 +534,6 @@
       <concept id="1207233427108" name="jetbrains.mps.baseLanguage.collections.structure.MapRemoveOperation" flags="nn" index="kI3uX">
         <child id="1207233489861" name="key" index="kIiFs" />
       </concept>
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
-      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -8553,8 +8550,8 @@
                   <node concept="37vLTw" id="3TIaSh$PzK$" role="2Oq$k0">
                     <ref role="3cqZAo" node="5h2rxDjXmMG" resolve="hints" />
                   </node>
-                  <node concept="2l5eF5" id="3TIaSh$P_eJ" role="2OqNvi">
-                    <node concept="2pYGij" id="3TIaSh$P_fx" role="2l6Ag6">
+                  <node concept="TSZUe" id="7759dYaYrzb" role="2OqNvi">
+                    <node concept="2pYGij" id="7759dYaYrza" role="25WWJ7">
                       <ref role="2pYH_C" to="461n:2kbUaNP7dpe" resolve="conditionalEditor" />
                     </node>
                   </node>
