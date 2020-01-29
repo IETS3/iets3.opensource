@@ -2,11 +2,11 @@
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
-    <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="-1" />
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
+    <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -842,6 +842,7 @@
         </node>
         <node concept="1SiIV0" id="2U$lnbPyddL" role="3bR37C">
           <node concept="3bR9La" id="2U$lnbPyddM" role="1SiIV1">
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
@@ -8275,7 +8276,7 @@
       <property role="TrG5h" value="test.ts.core.expr" />
       <property role="3LESm3" value="d66ab0cb-aa30-4aff-80a7-b2ccc8105e0f" />
       <property role="2GAjPV" value="false" />
-      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="3rtmxn" id="7235WRFl_SN" role="3bR31x">
         <node concept="3LXTmp" id="7235WRFl_SO" role="3rtmxm">
           <node concept="3qWCbU" id="7235WRFl_SP" role="3LXTna">
@@ -8351,7 +8352,7 @@
       <property role="BnDLt" value="true" />
       <property role="3LESm3" value="2614fab6-e994-4127-9a5d-8c8cd7ba2833" />
       <property role="2GAjPV" value="false" />
-      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <property role="aoJFB" value="sources and tests" />
       <property role="TrG5h" value="test.in.expr.os" />
       <node concept="3rtmxn" id="$iFvHj1vsq" role="3bR31x">
         <node concept="3LXTmp" id="$iFvHj1vsr" role="3rtmxm">
@@ -8465,7 +8466,7 @@
       <property role="TrG5h" value="test.org.iets3.core.comments" />
       <property role="3LESm3" value="5b2a22be-3ce2-4929-be5b-e39b8b142a74" />
       <property role="2GAjPV" value="false" />
-      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="5kwEgmAh8LC" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
         <node concept="2Ry0Ak" id="5kwEgmAh8QZ" role="iGT6I">
@@ -8500,7 +8501,7 @@
       <property role="TrG5h" value="test.ts.components.core" />
       <property role="3LESm3" value="8239233b-13cc-4bd1-842b-cf2561ff9a12" />
       <property role="2GAjPV" value="false" />
-      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="3rtmxn" id="5L_xiGQ8vhf" role="3bR31x">
         <node concept="3LXTmp" id="5L_xiGQ8vhg" role="3rtmxm">
           <node concept="3qWCbU" id="5L_xiGQ8vhh" role="3LXTna">
@@ -8609,7 +8610,7 @@
       <property role="TrG5h" value="test.ex.core.expr.genjava" />
       <property role="3LESm3" value="0a68022c-4e89-4403-a717-1caf19c68980" />
       <property role="2GAjPV" value="false" />
-      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <property role="aoJFB" value="sources and tests" />
       <node concept="398BVA" id="6xvglc6Duc5" role="3LF7KH">
         <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
         <node concept="2Ry0Ak" id="6xvglc6DufD" role="iGT6I">
