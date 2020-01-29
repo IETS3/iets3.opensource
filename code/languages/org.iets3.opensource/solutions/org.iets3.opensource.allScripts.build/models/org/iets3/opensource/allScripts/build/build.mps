@@ -352,6 +352,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7759dYaYs1f" role="3bR31x">
+          <node concept="3LXTmp" id="7759dYaYs1g" role="3rtmxm">
+            <node concept="3qWCbU" id="7759dYaYs1h" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7759dYaYs1i" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
+              <node concept="2Ry0Ak" id="7759dYaYs1j" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7759dYaYs1k" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3ZBI8Awh4ux" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -417,6 +433,22 @@
             </node>
             <node concept="3qWCbU" id="1RMC8GHIDdd" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7759dYaYs18" role="3bR31x">
+          <node concept="3LXTmp" id="7759dYaYs19" role="3rtmxm">
+            <node concept="3qWCbU" id="7759dYaYs1a" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7759dYaYs1b" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.os.home" />
+              <node concept="2Ry0Ak" id="7759dYaYs1c" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7759dYaYs1d" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.build.gentests.rt" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

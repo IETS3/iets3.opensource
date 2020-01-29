@@ -283,12 +283,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -584,8 +580,58 @@
       <node concept="10Oyi0" id="zL6B4JnVIR" role="3clF45" />
       <node concept="3clFbS" id="zL6B4JnVIS" role="3clF47">
         <node concept="3SKdUt" id="zL6B4Jo8pj" role="3cqZAp">
-          <node concept="3SKdUq" id="zL6B4Jo8pl" role="3SKWNk">
-            <property role="3SKdUp" value="Since all NoneValues are equal to each other, they all must have the same hash code too." />
+          <node concept="1PaTwC" id="7759dYaYnhI" role="3ndbpf">
+            <node concept="3oM_SD" id="7759dYaYnhJ" role="1PaTwD">
+              <property role="3oM_SC" value="Since" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhK" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhL" role="1PaTwD">
+              <property role="3oM_SC" value="NoneValues" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhM" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhN" role="1PaTwD">
+              <property role="3oM_SC" value="equal" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhO" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhP" role="1PaTwD">
+              <property role="3oM_SC" value="each" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhQ" role="1PaTwD">
+              <property role="3oM_SC" value="other," />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhR" role="1PaTwD">
+              <property role="3oM_SC" value="they" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhS" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhT" role="1PaTwD">
+              <property role="3oM_SC" value="must" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhU" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhV" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhW" role="1PaTwD">
+              <property role="3oM_SC" value="same" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhX" role="1PaTwD">
+              <property role="3oM_SC" value="hash" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhY" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="7759dYaYnhZ" role="1PaTwD">
+              <property role="3oM_SC" value="too." />
+            </node>
           </node>
         </node>
         <node concept="3cpWs6" id="zL6B4Jo7JX" role="3cqZAp">

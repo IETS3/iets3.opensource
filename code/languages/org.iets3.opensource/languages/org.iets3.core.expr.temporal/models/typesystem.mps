@@ -140,9 +140,7 @@
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -171,9 +169,6 @@
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
-      </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport_old" index="2OEOjV" />
       </concept>
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
@@ -3060,7 +3055,7 @@
                               <ref role="2pJxaS" to="l462:50smQ1V8i89" resolve="TemporalType" />
                               <node concept="2pIpSj" id="VFjlN5IH4i" role="2pJxcM">
                                 <ref role="2pIpSl" to="l462:50smQ1V8i8a" resolve="baseType" />
-                                <node concept="36biLy" id="VFjlN5IH4j" role="2pJxcZ">
+                                <node concept="36biLy" id="VFjlN5IH4j" role="28nt2d">
                                   <node concept="1PxgMI" id="VFjlN5IH4k" role="36biLW">
                                     <node concept="chp4Y" id="VFjlN5IH4l" role="3oSUPX">
                                       <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -3143,7 +3138,7 @@
                 <node concept="37vLTw" id="$UzLJuXIim" role="2MkJ7o">
                   <ref role="3cqZAo" node="$UzLJuXIie" resolve="message" />
                 </node>
-                <node concept="1YBJjd" id="VFjlN5IH3F" role="2OEOjV">
+                <node concept="1YBJjd" id="VFjlN5IH3F" role="1urrMF">
                   <ref role="1YBMHb" node="VFjlN5IH4_" resolve="beq" />
                 </node>
               </node>
@@ -3154,7 +3149,7 @@
                       <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                       <node concept="2pJxcG" id="$UzLJuXIJy" role="2pJxcM">
                         <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                        <node concept="37vLTw" id="$UzLJuXIK6" role="2pJxcZ">
+                        <node concept="37vLTw" id="$UzLJuXIK6" role="28ntcv">
                           <ref role="3cqZAo" node="$UzLJuXIie" resolve="message" />
                         </node>
                       </node>
