@@ -570,6 +570,27 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="zL6B4Jo6av" role="jymVt" />
+    <node concept="3clFb_" id="zL6B4JnVIO" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="zL6B4JnVIP" role="1B3o_S" />
+      <node concept="10Oyi0" id="zL6B4JnVIR" role="3clF45" />
+      <node concept="3clFbS" id="zL6B4JnVIS" role="3clF47">
+        <node concept="3SKdUt" id="zL6B4Jo8pj" role="3cqZAp">
+          <node concept="3SKdUq" id="zL6B4Jo8pl" role="3SKWNk">
+            <property role="3SKdUp" value="Since all NoneValues are equal to each other, they all must have the same hash code too." />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="zL6B4Jo7JX" role="3cqZAp">
+          <node concept="3cmrfG" id="zL6B4Jo7Nq" role="3cqZAk">
+            <property role="3cmrfH" value="123456789" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="zL6B4JnVIT" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="12WRc298rqY">
     <property role="TrG5h" value="SpecificErrorValue" />
