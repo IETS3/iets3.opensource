@@ -283,8 +283,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -570,6 +574,27 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="HywGhj00n7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="zL6B4Jo6av" role="jymVt" />
+    <node concept="3clFb_" id="zL6B4JnVIO" role="jymVt">
+      <property role="TrG5h" value="hashCode" />
+      <node concept="3Tm1VV" id="zL6B4JnVIP" role="1B3o_S" />
+      <node concept="10Oyi0" id="zL6B4JnVIR" role="3clF45" />
+      <node concept="3clFbS" id="zL6B4JnVIS" role="3clF47">
+        <node concept="3SKdUt" id="zL6B4Jo8pj" role="3cqZAp">
+          <node concept="3SKdUq" id="zL6B4Jo8pl" role="3SKWNk">
+            <property role="3SKdUp" value="Since all NoneValues are equal to each other, they all must have the same hash code too." />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="zL6B4Jo7JX" role="3cqZAp">
+          <node concept="3cmrfG" id="zL6B4Jo7Nq" role="3cqZAk">
+            <property role="3cmrfH" value="123456789" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="zL6B4JnVIT" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
