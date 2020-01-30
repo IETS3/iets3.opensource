@@ -6983,6 +6983,11 @@
               <ref role="3bR37D" node="5khwDRKS378" resolve="org.iets3.core.expr.base.collections.stubs" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7vcJOhhDvMi" role="3bR37C">
+            <node concept="3bR9La" id="7vcJOhhDvMj" role="1SiIV1">
+              <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2YQA$O1yrG5" role="3bR37C">
           <node concept="3bR9La" id="2YQA$O1yrG6" role="1SiIV1">
