@@ -592,5 +592,16 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="41xkdV7Z9B0">
+    <property role="EcuMT" value="4639078008936503744" />
+    <property role="3GE5qa" value="range.literals" />
+    <property role="TrG5h" value="EmptyRangeLiteral" />
+    <property role="34LRSv" value="empty-range" />
+    <property role="R4oN_" value="an empty date range" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="41xkdV7Z9B2" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
 </model>
 

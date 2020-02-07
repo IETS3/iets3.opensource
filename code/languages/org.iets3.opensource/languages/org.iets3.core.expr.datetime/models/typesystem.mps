@@ -2091,5 +2091,31 @@
       <ref role="1YaFvo" to="mi3w:1RwPUjzgk0y" resolve="AbstractEarliestLastestExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="41xkdV7Z9BX">
+    <property role="TrG5h" value="typeof_EmptyRangeLiteral" />
+    <property role="3GE5qa" value="range.literals" />
+    <node concept="3clFbS" id="41xkdV7Z9BY" role="18ibNy">
+      <node concept="1Z5TYs" id="41xkdV7Zaa6" role="3cqZAp">
+        <node concept="mw_s8" id="41xkdV7Zaaq" role="1ZfhKB">
+          <node concept="2pJPEk" id="41xkdV7Zaam" role="mwGJk">
+            <node concept="2pJPED" id="41xkdV7Zaa_" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="41xkdV7Zaa9" role="1ZfhK$">
+          <node concept="1Z2H0r" id="41xkdV7Z9C4" role="mwGJk">
+            <node concept="1YBJjd" id="41xkdV7Za0N" role="1Z2MuG">
+              <ref role="1YBMHb" node="41xkdV7Z9C0" resolve="emptyRangeLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="41xkdV7Z9C0" role="1YuTPh">
+      <property role="TrG5h" value="emptyRangeLiteral" />
+      <ref role="1YaFvo" to="mi3w:41xkdV7Z9B0" resolve="EmptyRangeLiteral" />
+    </node>
+  </node>
 </model>
 

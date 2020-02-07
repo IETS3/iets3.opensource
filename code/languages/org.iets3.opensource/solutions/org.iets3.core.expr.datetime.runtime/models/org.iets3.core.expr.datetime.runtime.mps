@@ -4419,8 +4419,8 @@
       </node>
       <node concept="3clFbS" id="4O9rw8aCZcy" role="3clF47">
         <node concept="3clFbF" id="4O9rw8aCZc_" role="3cqZAp">
-          <node concept="3nyPlj" id="4O9rw8aCZc$" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+          <node concept="Xl_RD" id="41xkdV7Z8Ps" role="3clFbG">
+            <property role="Xl_RC" value="[date range: empty]" />
           </node>
         </node>
       </node>
