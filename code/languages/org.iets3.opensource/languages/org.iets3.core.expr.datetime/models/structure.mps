@@ -603,5 +603,33 @@
       <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5LVdhDvvwwu">
+    <property role="EcuMT" value="6663978461012297758" />
+    <property role="3GE5qa" value="range.cut" />
+    <property role="TrG5h" value="FromOp" />
+    <property role="34LRSv" value="from" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+    <node concept="1TJgyj" id="5LVdhDvvxT8" role="1TKVEi">
+      <property role="IQ2ns" value="6663978461012303432" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="date" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5LVdhDvvyER">
+    <property role="EcuMT" value="6663978461012306615" />
+    <property role="3GE5qa" value="range.cut" />
+    <property role="TrG5h" value="UpToOp" />
+    <property role="34LRSv" value="upto" />
+    <ref role="1TJDcQ" node="7khFtBHJt9t" resolve="PeriodRangeOp" />
+    <node concept="1TJgyj" id="5LVdhDvvyES" role="1TKVEi">
+      <property role="IQ2ns" value="6663978461012303432" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="date" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
