@@ -188,11 +188,6 @@ ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/jav
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
     script "$buildDir/iets3.opensource.allScripts/build-allScripts.xml"
-    doLast {
-        // patch heap size setting for tests execution
-        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-    }
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
@@ -200,6 +195,17 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
 }
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
+    doFirst {
+        def antTestScriptFile = file(it['script'])
+        // patch heap size setting for tests execution
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
+
+        // provide workaround for command-line length limitation under Windows (when forking junit process)
+        antTestScriptFile.text = antTestScriptFile.text
+                .replace('<sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />', '')
+                .replace('<sysproperty key="plugin.path" value="${mps.plugins.path.string}" />',
+                        '<env key="JAVA_TOOL_OPTIONS" value="-Dplugin.path=${mps.plugins.path.string} -Dmps.libraries=${mps.libraries.path.string}" />')
+    }
     script "$buildDir/iets3.opensource.tests/build.xml"
     doLast {
         ant.taskdef(name: 'junitreport',
