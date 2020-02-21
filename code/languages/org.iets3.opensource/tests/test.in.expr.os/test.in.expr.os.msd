@@ -45,6 +45,7 @@
     <language slang="l:5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1:org.iets3.core.expr.adt" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
     <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="5" />
+    <language slang="l:b25b8ad1-4d3d-4e45-8c78-72091b39fdda:org.iets3.core.expr.data" version="0" />
     <language slang="l:cee4aa62-aca9-4f26-9602-75129cd457c9:org.iets3.core.expr.dataflow" version="0" />
     <language slang="l:289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998:org.iets3.core.expr.datetime" version="0" />
     <language slang="l:32190be6-23f7-4e17-aad4-fb739bb3569f:org.iets3.core.expr.doc" version="0" />
@@ -99,7 +100,6 @@
     <module reference="3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
-    <module reference="3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />

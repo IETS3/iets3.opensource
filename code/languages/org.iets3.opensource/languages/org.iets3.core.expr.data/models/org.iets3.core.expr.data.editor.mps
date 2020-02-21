@@ -11,6 +11,7 @@
     <import index="reoo" ref="r:1e59a084-7ebe-4e95-89ab-c58a7e396583(de.slisson.mps.tables.editor)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="e9k1" ref="r:00903dee-f0b0-48de-9335-7cb3f90ae462(org.iets3.core.expr.data.structure)" implicit="true" />
+    <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -25,13 +26,21 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="3982520150122341378" name="jetbrains.mps.lang.editor.structure.AttributeStyleClassItem" flags="lg" index="3tD6jV">
         <reference id="3982520150122346707" name="attribute" index="3tD7wE" />
         <child id="3982520150122341379" name="query" index="3tD6jU" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -261,14 +270,8 @@
   <node concept="24kQdi" id="cPLa7FpdIL">
     <ref role="1XX52x" to="e9k1:cPLa7FpcCS" resolve="DataCell" />
     <node concept="3EZMnI" id="cPLa7FpdRu" role="2wV5jI">
-      <node concept="3F0ifn" id="cPLa7FpdXn" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-      </node>
       <node concept="3F1sOY" id="cPLa7Fqq09" role="3EZMnx">
         <ref role="1NtTu8" to="e9k1:cPLa7Fpe9f" resolve="value" />
-      </node>
-      <node concept="3F0ifn" id="cPLa7Fpe0m" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
       </node>
       <node concept="2iRfu4" id="cPLa7FpdRx" role="2iSdaV" />
     </node>
@@ -280,7 +283,8 @@
       <node concept="3EZMnI" id="cPLa7Fpje4" role="3EZMnx">
         <node concept="2iRfu4" id="cPLa7Fpje5" role="2iSdaV" />
         <node concept="3F0ifn" id="cPLa7Fpj8f" role="3EZMnx">
-          <property role="3F0ifm" value="table" />
+          <property role="3F0ifm" value="data" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F0A7n" id="cPLa7FpjmS" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -703,6 +707,56 @@
         <ref role="1NtTu8" to="e9k1:cPLa7FpbAi" resolve="type" />
       </node>
       <node concept="2iRfu4" id="cPLa7FqmpM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="cPLa7Fs1I7">
+    <ref role="1XX52x" to="e9k1:cPLa7Fs1v4" resolve="DataTableType" />
+    <node concept="1iCGBv" id="cPLa7Fs22C" role="2wV5jI">
+      <ref role="1NtTu8" to="e9k1:cPLa7Fs1QU" resolve="table" />
+      <node concept="1sVBvm" id="cPLa7Fs22E" role="1sWHZn">
+        <node concept="3F0A7n" id="cPLa7Fs25G" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="cPLa7Fsu0T">
+    <ref role="1XX52x" to="e9k1:cPLa7Fstqs" resolve="DataSelector" />
+    <node concept="1iCGBv" id="cPLa7Fsu3Q" role="2wV5jI">
+      <ref role="1NtTu8" to="e9k1:cPLa7FstD4" resolve="table" />
+      <node concept="1sVBvm" id="cPLa7Fsu3S" role="1sWHZn">
+        <node concept="3F0A7n" id="cPLa7FsucN" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="cPLa7Ft0Bx">
+    <ref role="1XX52x" to="e9k1:cPLa7Ft09N" resolve="DataColOp" />
+    <node concept="1iCGBv" id="cPLa7Ft0Eu" role="2wV5jI">
+      <ref role="1NtTu8" to="e9k1:cPLa7Ft0ro" resolve="col" />
+      <node concept="1sVBvm" id="cPLa7Ft0Ew" role="1sWHZn">
+        <node concept="3F0A7n" id="cPLa7Ft0Hy" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="cPLa7FtB0x">
+    <ref role="1XX52x" to="e9k1:cPLa7FtAvS" resolve="DataRowOp" />
+    <node concept="1iCGBv" id="cPLa7FtB3u" role="2wV5jI">
+      <ref role="1NtTu8" to="e9k1:cPLa7FtAIy" resolve="row" />
+      <node concept="1sVBvm" id="cPLa7FtB3w" role="1sWHZn">
+        <node concept="3F0A7n" id="cPLa7FtB9t" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
@@ -46,6 +47,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cPLa7Fp9qy" role="PzmwI">
       <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="cPLa7FrPwD" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
     <node concept="1TJgyj" id="cPLa7FpckA" role="1TKVEi">
       <property role="IQ2ns" value="231307155597477158" />
@@ -109,6 +113,61 @@
     <node concept="PrWs8" id="cPLa7FpiEP" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="cPLa7Fs1v4">
+    <property role="EcuMT" value="231307155598219204" />
+    <property role="TrG5h" value="DataTableType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="cPLa7Fs1QU" role="1TKVEi">
+      <property role="IQ2ns" value="231307155598220730" />
+      <property role="20kJfa" value="table" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7Fp8FI" resolve="DataTable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cPLa7Fstqs">
+    <property role="EcuMT" value="231307155598333596" />
+    <property role="TrG5h" value="DataSelector" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="cPLa7FstD4" role="1TKVEi">
+      <property role="IQ2ns" value="231307155598334532" />
+      <property role="20kJfa" value="table" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7Fp8FI" resolve="DataTable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cPLa7Ft09N">
+    <property role="EcuMT" value="231307155598475891" />
+    <property role="TrG5h" value="DataColOp" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="cPLa7Ft0lw" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="cPLa7Ft0ro" role="1TKVEi">
+      <property role="IQ2ns" value="231307155598477016" />
+      <property role="20kJfa" value="col" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7FpaUQ" resolve="DataColDef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cPLa7FtAvS">
+    <property role="EcuMT" value="231307155598632952" />
+    <property role="TrG5h" value="DataRowOp" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="cPLa7FtAIy" role="1TKVEi">
+      <property role="IQ2ns" value="231307155598633890" />
+      <property role="20kJfa" value="row" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7Fpiy9" resolve="DataRow" />
+    </node>
+    <node concept="PrWs8" id="cPLa7FtAF_" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cPLa7Fu7zn">
+    <property role="EcuMT" value="231307155598768343" />
+    <property role="TrG5h" value="DummyDataSelectorType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
 
