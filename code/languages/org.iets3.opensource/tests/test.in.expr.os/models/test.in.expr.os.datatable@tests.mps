@@ -23,6 +23,8 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
+      <concept id="5115872837156761034" name="org.iets3.core.expr.base.structure.NotEqualsExpression" flags="ng" index="30cPrR" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -48,6 +50,7 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
@@ -103,7 +106,7 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="DataTable" />
     <node concept="3CkkTf" id="cPLa7FroL4" role="_iOnB">
-      <property role="TrG5h" value="Bundesländer" />
+      <property role="TrG5h" value="ExampleTable" />
       <node concept="3CkmCn" id="cPLa7FroL6" role="3Ckg67">
         <property role="TrG5h" value="val1" />
         <node concept="30bXR$" id="cPLa7FroL5" role="3CknON" />
@@ -160,27 +163,27 @@
     </node>
     <node concept="_ixoA" id="cPLa7Ft_kL" role="_iOnB" />
     <node concept="2zPypq" id="cPLa7Ft_oJ" role="_iOnB">
-      <property role="TrG5h" value="einland" />
+      <property role="TrG5h" value="exampleA" />
       <node concept="3Chtd_" id="cPLa7Ft_sv" role="2zM23F">
-        <ref role="3Cht$r" node="cPLa7FroL4" resolve="Bundesländer" />
+        <ref role="3Cht$r" node="cPLa7FroL4" resolve="ExampleTable" />
       </node>
       <node concept="1QScDb" id="cPLa7Fu3u7" role="2zPyp_">
         <node concept="3CgUdp" id="cPLa7Fu3wp" role="1QScD9">
           <ref role="3CgUW3" node="cPLa7FroLb" resolve="keyA" />
         </node>
         <node concept="3Ch18X" id="cPLa7Fu9Gm" role="30czhm">
-          <ref role="3Ch1V_" node="cPLa7FroL4" resolve="Bundesländer" />
+          <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
         </node>
       </node>
     </node>
     <node concept="_ixoA" id="cPLa7Ft_v$" role="_iOnB" />
     <node concept="2zPypq" id="cPLa7Ft_zE" role="_iOnB">
-      <property role="TrG5h" value="einInt" />
+      <property role="TrG5h" value="aNumber" />
       <node concept="30dDZf" id="cPLa7FugTZ" role="2zPyp_">
         <node concept="30dDZf" id="cPLa7FugU0" role="30dEsF">
           <node concept="1QScDb" id="cPLa7FugU1" role="30dEsF">
             <node concept="_emDc" id="cPLa7Ft_Eo" role="30czhm">
-              <ref role="_emDf" node="cPLa7Ft_oJ" resolve="einland" />
+              <ref role="_emDf" node="cPLa7Ft_oJ" resolve="exampleA" />
             </node>
             <node concept="3Cgsri" id="cPLa7Ft_HZ" role="1QScD9">
               <ref role="3Cgs9T" node="cPLa7FroL6" resolve="val1" />
@@ -192,7 +195,7 @@
             </node>
             <node concept="1QScDb" id="cPLa7FugU2" role="30czhm">
               <node concept="3Ch18X" id="cPLa7FucVF" role="30czhm">
-                <ref role="3Ch1V_" node="cPLa7FroL4" resolve="Bundesländer" />
+                <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
               </node>
               <node concept="3CgUdp" id="cPLa7Fud2l" role="1QScD9">
                 <ref role="3CgUW3" node="cPLa7FroLg" resolve="keyB" />
@@ -211,21 +214,55 @@
       <node concept="_fkuZ" id="cPLa7FuhxV" role="_fkp5">
         <node concept="_fku$" id="cPLa7FuhxW" role="_fkur" />
         <node concept="_emDc" id="cPLa7FuhC0" role="_fkuY">
-          <ref role="_emDf" node="cPLa7Ft_oJ" resolve="einland" />
+          <ref role="_emDf" node="cPLa7Ft_oJ" resolve="exampleA" />
         </node>
         <node concept="1QScDb" id="cPLa7FuhFl" role="_fkuS">
           <node concept="3CgUdp" id="cPLa7FuhID" role="1QScD9">
             <ref role="3CgUW3" node="cPLa7FroLb" resolve="keyA" />
           </node>
           <node concept="3Ch18X" id="cPLa7FuhFb" role="30czhm">
-            <ref role="3Ch1V_" node="cPLa7FroL4" resolve="Bundesländer" />
+            <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
           </node>
         </node>
+      </node>
+      <node concept="_fkuZ" id="cPLa7Fv1SM" role="_fkp5">
+        <node concept="_fku$" id="cPLa7Fv1SN" role="_fkur" />
+        <node concept="30cPrO" id="cPLa7Fv1Wt" role="_fkuY">
+          <node concept="_emDc" id="cPLa7FvjXQ" role="30dEsF">
+            <ref role="_emDf" node="cPLa7Ft_oJ" resolve="exampleA" />
+          </node>
+          <node concept="1QScDb" id="cPLa7Fv29a" role="30dEs_">
+            <node concept="3CgUdp" id="cPLa7FvfaP" role="1QScD9">
+              <ref role="3CgUW3" node="cPLa7FroLb" resolve="keyA" />
+            </node>
+            <node concept="3Ch18X" id="cPLa7Fv29c" role="30czhm">
+              <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpnb" id="cPLa7FvmZO" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="cPLa7Fv0UM" role="_fkp5">
+        <node concept="_fku$" id="cPLa7Fv0UN" role="_fkur" />
+        <node concept="30cPrR" id="cPLa7Fv14b" role="_fkuY">
+          <node concept="1QScDb" id="cPLa7Fv1jZ" role="30dEs_">
+            <node concept="3CgUdp" id="cPLa7Fv1tp" role="1QScD9">
+              <ref role="3CgUW3" node="cPLa7FroLg" resolve="keyB" />
+            </node>
+            <node concept="3Ch18X" id="cPLa7Fv1dM" role="30czhm">
+              <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
+            </node>
+          </node>
+          <node concept="_emDc" id="cPLa7Fv0UO" role="30dEsF">
+            <ref role="_emDf" node="cPLa7Ft_oJ" resolve="exampleA" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="cPLa7Fv1AL" role="_fkuS" />
       </node>
       <node concept="_fkuZ" id="cPLa7FuEVv" role="_fkp5">
         <node concept="_fku$" id="cPLa7FuEVw" role="_fkur" />
         <node concept="_emDc" id="cPLa7FuEZ4" role="_fkuY">
-          <ref role="_emDf" node="cPLa7Ft_zE" resolve="einInt" />
+          <ref role="_emDf" node="cPLa7Ft_zE" resolve="aNumber" />
         </node>
         <node concept="30bXRB" id="cPLa7FuF8s" role="_fkuS">
           <property role="30bXRw" value="5" />
