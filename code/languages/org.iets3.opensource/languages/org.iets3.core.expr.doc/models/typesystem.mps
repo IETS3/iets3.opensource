@@ -2,7 +2,7 @@
 <model ref="r:c2a678e3-bb82-476e-97a6-99ae6486dd17(org.iets3.core.expr.doc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -83,18 +83,18 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
       <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
-        <child id="7307171874933775112" name="supercedesFun" index="2bjP4i" />
+        <child id="7307171874933775112" name="supersedesFun" index="2bjP4i" />
       </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
@@ -160,7 +160,7 @@
             <node concept="Xl_RD" id="1sudaVNr1tm" role="2MkJ7o">
               <property role="Xl_RC" value="no screenshot-path found in this model" />
             </node>
-            <node concept="1YBJjd" id="1sudaVNr1u5" role="2OEOjV">
+            <node concept="1YBJjd" id="1sudaVNr1u5" role="1urrMF">
               <ref role="1YBMHb" node="1sudaVNqWjW" resolve="frame" />
             </node>
           </node>
@@ -213,7 +213,7 @@
             <node concept="Xl_RD" id="1sudaVNrXCS" role="2MkJ7o">
               <property role="Xl_RC" value="not a valid directory" />
             </node>
-            <node concept="1YBJjd" id="1sudaVNrXDb" role="2OEOjV">
+            <node concept="1YBJjd" id="1sudaVNrXDb" role="1urrMF">
               <ref role="1YBMHb" node="1sudaVNrKvK" resolve="spec" />
             </node>
           </node>

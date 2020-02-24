@@ -2,8 +2,8 @@
 <model ref="r:0f46ac0f-8ffe-4980-b3f0-4c60a1f0312c(org.iets3.core.expr.genjava.messages@generator)">
   <persistence version="9" />
   <languages>
-    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -502,8 +502,8 @@
             <node concept="3clFbF" id="5LerK4rkNB6" role="3cqZAp">
               <node concept="2OqwBi" id="5LerK4rkNZm" role="3clFbG">
                 <node concept="30H73N" id="5LerK4rkNB5" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="5LerK4rkODx" role="2OqNvi">
-                  <ref role="3TtcxE" to="kelk:3vxfdxbcs9Q" resolve="contents" />
+                <node concept="2qgKlT" id="5crSXMDK$9" role="2OqNvi">
+                  <ref role="37wK5l" to="aafr:5crSXMDrDR" resolve="effectiveContents" />
                 </node>
               </node>
             </node>
@@ -677,8 +677,8 @@
                 <node concept="3clFbF" id="23q4Crn_uT_" role="3cqZAp">
                   <node concept="2OqwBi" id="23q4Crn_vh3" role="3clFbG">
                     <node concept="30H73N" id="23q4Crn_uT$" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="23q4Crn_wLg" role="2OqNvi">
-                      <ref role="3TtcxE" to="kelk:3vxfdxbcs9Q" resolve="contents" />
+                    <node concept="2qgKlT" id="5crSXMDMLQ" role="2OqNvi">
+                      <ref role="37wK5l" to="aafr:5crSXMDrDR" resolve="effectiveContents" />
                     </node>
                   </node>
                 </node>

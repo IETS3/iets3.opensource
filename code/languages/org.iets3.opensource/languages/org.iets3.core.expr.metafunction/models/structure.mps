@@ -2,7 +2,7 @@
 <model ref="r:b65cb578-8493-4caa-a542-f37923f34ed8(org.iets3.core.expr.metafunction.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -59,9 +59,8 @@
     <property role="TrG5h" value="IMetaFunctionContext" />
     <node concept="1TJgyj" id="5cK3QOc9w5h" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059799377" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="function" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5cK3QOc9hog" resolve="MetaFunction" />
     </node>
     <node concept="PrWs8" id="4HGbj9TgAwU" role="PrDN$">
@@ -75,9 +74,8 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5cK3QOcGrHI" role="1TKVEi">
       <property role="IQ2ns" value="5994308065068956526" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="arg" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5cK3QOc9hNb" resolve="MetaFunctionArgument" />
     </node>
   </node>
@@ -90,28 +88,27 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cK3QOc9hNj" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059740883" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="args" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5cK3QOc9hNb" resolve="MetaFunctionArgument" />
     </node>
     <node concept="1TJgyj" id="5cK3QOc9hNg" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059740880" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="5cK3QOc9ixZ" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059743871" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="3iESbJsi7uJ" role="1TKVEi">
       <property role="IQ2ns" value="3795092733472307119" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="effect" />
       <ref role="20lvS9" to="zzzn:6KxoTHgSIr8" resolve="EffectTag" />
     </node>
@@ -131,9 +128,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cK3QOc9hNe" role="1TKVEi">
       <property role="IQ2ns" value="5994308065059740878" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="PrWs8" id="38qXCODmWjI" role="PzmwI">

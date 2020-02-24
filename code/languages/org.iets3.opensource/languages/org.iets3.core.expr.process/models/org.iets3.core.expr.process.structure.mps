@@ -2,7 +2,7 @@
 <model ref="r:13070af3-81df-4cc3-ad8a-1790d69e5b93(org.iets3.core.expr.process.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -90,30 +90,28 @@
     </node>
     <node concept="1TJgyj" id="Z4fkwzeLcO" role="1TKVEi">
       <property role="IQ2ns" value="1136100386042221364" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parties" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="33mFrumMoXi" role="1TKVEi">
       <property role="IQ2ns" value="3519191162857033554" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="procedure" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="33mFrumMoWZ" resolve="AbstractDecisionProcedure" />
     </node>
     <node concept="1TJgyj" id="4voDClGzENw" role="1TKVEi">
       <property role="IQ2ns" value="5177070863644536032" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="timeLimit" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="3wXkdMVkc9Y" role="1TKVEi">
       <property role="IQ2ns" value="4052484148668973694" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="turnout" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3wXkdMVkca7" resolve="AbstractTurnoutPolicy" />
     </node>
   </node>
@@ -139,9 +137,9 @@
     </node>
     <node concept="1TJgyj" id="1mDdTGkuFU" role="1TKVEi">
       <property role="IQ2ns" value="24388123204119290" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="process" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7WFhXJlQoxJ" resolve="ProcessType" />
     </node>
   </node>
@@ -166,9 +164,8 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="7WFhXJlQoxK" role="1TKVEi">
       <property role="IQ2ns" value="9163496876326619248" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="process" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7WFhXJlQowD" resolve="Process" />
     </node>
     <node concept="PrWs8" id="7WFhXJlQoxM" role="PzmwI">
@@ -247,9 +244,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IV0h47EaiE" role="1TKVEi">
       <property role="IQ2ns" value="5456956546144052394" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="party" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4IV0h47Eaif" role="PzmwI">
@@ -291,16 +288,15 @@
     </node>
     <node concept="1TJgyj" id="4IV0h48lf7v" role="1TKVEi">
       <property role="IQ2ns" value="5456956546155344351" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parties" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="31HpwbvYACZ" role="1TKVEi">
       <property role="IQ2ns" value="3489557448815700543" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="boottimeout" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4IV0h48lf7w" role="PzmwI">

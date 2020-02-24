@@ -2,7 +2,7 @@
 <model ref="r:ee5b1a89-4907-4bd7-bb79-ba99ef537bd3(test.ts.expr.os.unitsonly@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -85,6 +85,7 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
@@ -110,6 +111,7 @@
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
         <child id="1330041117646892937" name="prec" index="2gteVg" />
       </concept>
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157054284" name="org.iets3.core.expr.simpleTypes.structure.RealType" flags="ng" index="30bXLL" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
@@ -173,7 +175,7 @@
           <property role="TrG5h" value="a" />
           <node concept="30dDTi" id="2JXkwhJg4ku" role="2zPyp_">
             <node concept="1PfFCI" id="2JXkwhJg4lN" role="30dEs_">
-              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
+              <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
               <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
               <node concept="30dDTi" id="2JXkwhJg4xK" role="30czhm">
                 <node concept="1YnStw" id="2JXkwhJg6VM" role="30dEs_">
@@ -261,7 +263,7 @@
         <node concept="2zPypq" id="2JXkwhJh9KO" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="1PfFCI" id="2JXkwhJh9Po" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int [IntegerType])" />
+            <ref role="2yhJs8" node="2JXkwhJfX3h" resolve="conversion_nounit_percent (int)" />
             <ref role="1Pfwd7" node="2JXkwhJfWHv" resolve="percent" />
             <node concept="30bXRB" id="2JXkwhJh9Qc" role="30czhm">
               <property role="30bXRw" value="100" />
@@ -293,7 +295,7 @@
         <node concept="2zPypq" id="2JXkwhJhgkJ" role="_iOnB">
           <property role="TrG5h" value="a" />
           <node concept="1PfFCI" id="2JXkwhJhglJ" role="2zPyp_">
-            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int [IntegerType])" />
+            <ref role="2yhJs8" node="2JXkwhJgCE7" resolve="conversion_m_s (int)" />
             <ref role="1Pfwd7" to="ku0a:5XaocLWHSS5" resolve="s" />
             <node concept="1YnStw" id="2JXkwhJhgq6" role="30czhm">
               <node concept="CIsGf" id="2JXkwhJhgq2" role="2c7tTI">
@@ -689,6 +691,44 @@
             </node>
           </node>
           <node concept="2vmvy5" id="1fzaMYHrwaK" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5aYM8it48mb" role="_iOnB">
+          <property role="TrG5h" value="h" />
+          <node concept="30dDZf" id="5aYM8it4aHB" role="2zPyp_">
+            <node concept="1YnStw" id="5aYM8it4aM5" role="30dEs_">
+              <node concept="CIsGf" id="5aYM8it4aLX" role="2c7tTI">
+                <node concept="CIsvn" id="5aYM8it4aLY" role="CIi4h">
+                  <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+                </node>
+              </node>
+              <node concept="30bXRB" id="5aYM8it4aHU" role="1YnStB">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="2vmpnb" id="5aYM8it4awK" role="30dEsF" />
+          </node>
+          <node concept="7CXmI" id="5aYM8it7yju" role="lGtFl">
+            <node concept="1TM$A" id="5aYM8it7yjv" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="5aYM8it4c7q" role="_iOnB">
+          <property role="TrG5h" value="i" />
+          <node concept="30cPrO" id="5aYM8it4cJF" role="2zPyp_">
+            <node concept="1YnStw" id="5aYM8it4cO1" role="30dEs_">
+              <node concept="CIsGf" id="5aYM8it4cNT" role="2c7tTI">
+                <node concept="CIsvn" id="5aYM8it4cNU" role="CIi4h">
+                  <ref role="CIi3I" to="ku0a:5XaocLWHSS4" resolve="m" />
+                </node>
+              </node>
+              <node concept="30bXRB" id="5aYM8it4cJY" role="1YnStB">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="2vmpnb" id="5aYM8it4cGP" role="30dEsF" />
+          </node>
+          <node concept="7CXmI" id="5aYM8it7xCT" role="lGtFl">
+            <node concept="1TM$A" id="5aYM8it7xCU" role="7EUXB" />
+          </node>
         </node>
         <node concept="7CXmI" id="2S3ZC$oC8QF" role="lGtFl">
           <node concept="7OXhh" id="2S3ZC$oC8QG" role="7EUXB" />

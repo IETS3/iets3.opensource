@@ -5,14 +5,11 @@ import java.time.LocalDateTime
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
-    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
-        throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
-    }
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.148.1eeeded'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
     }
 }
 
@@ -23,14 +20,30 @@ plugins {
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def java_home = System.properties['java.home']
-def jdk_home = java_home
-if (!file("$jdk_home/lib/tools.jar").isFile()) {
-    jdk_home = jdk_home + "/.."
+def jdk_home
+
+if (ext.has('java11_home')) {
+    jdk_home = ext.get('java11_home')
+} else if (System.getenv('JB_JAVA11_HOME') != null) {
+    jdk_home = System.getenv('JB_JAVA11_HOME')
+} else {
+    def expected = JavaVersion.VERSION_11
+    if (JavaVersion.current() != expected) {
+        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
+                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
+                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
+                + "  * Run Gradle using Java 11")
+    }
+    jdk_home = System.getProperty('java.home')
 }
-if (!file("$jdk_home/lib/tools.jar").isFile()) {
-    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+
+// Check JDK location
+if (!new File(jdk_home, "lib").exists()) {
+    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
 }
+
+logger.info 'Using JDK at {}', jdk_home
+
 ext.jdk_home = jdk_home
 
 // detect if we are in a CI build
@@ -44,13 +57,13 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "0"
+def major = "2019"
 def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2019.1.1'
+ext.mpsVersion = '2019.3.2'
 
-def mbeddrVersion = "1.3+"
+def mbeddrVersion = "2019.3+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -166,19 +179,15 @@ def defaultScriptArgs = [
         'version'                           : version
 ]
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
-        project.files("$project.jdk_home/lib/tools.jar")
+        project.files("$ext.jdk_home/lib/tools.jar")
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value" }
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
     script "$buildDir/iets3.opensource.allScripts/build-allScripts.xml"
-    doLast {
-        // patch heap size setting for tests execution
-        def antTestScriptFile = rootProject.file('build/iets3.opensource.tests/build.xml')
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-    }
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
@@ -186,6 +195,17 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
 }
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
+    doFirst {
+        def antTestScriptFile = file(it['script'])
+        // patch heap size setting for tests execution
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
+
+        // provide workaround for command-line length limitation under Windows (when forking junit process)
+        antTestScriptFile.text = antTestScriptFile.text
+                .replace('<sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />', '')
+                .replace('<sysproperty key="plugin.path" value="${mps.plugins.path.string}" />',
+                        '<env key="JAVA_TOOL_OPTIONS" value="-Dplugin.path=${mps.plugins.path.string} -Dmps.libraries=${mps.libraries.path.string}" />')
+    }
     script "$buildDir/iets3.opensource.tests/build.xml"
     doLast {
         ant.taskdef(name: 'junitreport',

@@ -2,10 +2,10 @@
 <model ref="r:a135044f-9115-4e5b-b1fb-e31c24d74be3(org.iets3.core.expr.statemachines.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -80,9 +80,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -332,7 +330,7 @@
                     <ref role="2pJxaS" to="19m5:7$TgoCYlrCx" resolve="EntryAction" />
                     <node concept="2pIpSj" id="agNjvGgZo4" role="2pJxcM">
                       <ref role="2pIpSl" to="19m5:7$TgoCYhZdu" resolve="expr" />
-                      <node concept="36biLy" id="agNjvGgZo5" role="2pJxcZ">
+                      <node concept="36biLy" id="agNjvGgZo5" role="28nt2d">
                         <node concept="37vLTw" id="agNjvGgZo6" role="36biLW">
                           <ref role="3cqZAo" node="agNjvGgZni" resolve="squashBlock" />
                         </node>
@@ -565,7 +563,7 @@
                     <ref role="2pJxaS" to="19m5:7$TgoCYlwRo" resolve="ExitAction" />
                     <node concept="2pIpSj" id="agNjvGsqzj" role="2pJxcM">
                       <ref role="2pIpSl" to="19m5:7$TgoCYhZdu" resolve="expr" />
-                      <node concept="36biLy" id="agNjvGsqzk" role="2pJxcZ">
+                      <node concept="36biLy" id="agNjvGsqzk" role="28nt2d">
                         <node concept="37vLTw" id="agNjvGsqzl" role="36biLW">
                           <ref role="3cqZAo" node="agNjvGrMk2" resolve="squashBlock" />
                         </node>

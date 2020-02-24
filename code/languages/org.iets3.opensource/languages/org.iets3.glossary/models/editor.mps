@@ -2,7 +2,7 @@
 <model ref="r:8247c703-9501-4a4d-86f0-7f3db2c2b643(org.iets3.glossary.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -487,7 +487,7 @@
               <node concept="3F0ifn" id="6zaFu4oQa_n" role="2czzBI">
                 <property role="3F0ifm" value="&lt;attributes&gt;" />
                 <node concept="VechU" id="6zaFu4oQaGY" role="3F10Kt">
-                  <property role="Vb096" value="lightGray" />
+                  <property role="Vb096" value="fLJRk5A/lightGray" />
                 </node>
               </node>
             </node>
@@ -541,16 +541,16 @@
     <node concept="14StLt" id="6zaFu4oPQsg" role="V601i">
       <property role="TrG5h" value="term" />
       <node concept="Vb9p2" id="6zaFu4oPQso" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
       <node concept="VechU" id="6zaFu4oPQsj" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="6zaFu4oQ9o9" role="V601i">
       <property role="TrG5h" value="termAttribute" />
       <node concept="VechU" id="6zaFu4oQ9ob" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
       </node>
     </node>
   </node>
@@ -754,7 +754,7 @@
             <node concept="3F0ifn" id="6zaFu4oRD5W" role="2czzBI">
               <property role="3F0ifm" value="&lt;attributes&gt;" />
               <node concept="VechU" id="6zaFu4oRD5X" role="3F10Kt">
-                <property role="Vb096" value="lightGray" />
+                <property role="Vb096" value="fLJRk5A/lightGray" />
               </node>
             </node>
             <node concept="pkWqt" id="6zaFu4oRJj3" role="pqm2j">

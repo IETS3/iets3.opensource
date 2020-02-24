@@ -2,7 +2,8 @@
 <model ref="r:d262ac25-cee7-4097-ba94-1f4ad5204b8c(org.iets3.core.expr.genjava.contracts@generator)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -88,11 +89,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -168,6 +166,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -365,8 +371,13 @@
         <node concept="3clFbJ" id="lH$PuiWGjg" role="3cqZAp">
           <node concept="3clFbS" id="lH$PuiWGji" role="3clFbx">
             <node concept="3SKdUt" id="lH$PujRdsS" role="3cqZAp">
-              <node concept="3SKdUq" id="lH$PujRdsT" role="3SKWNk">
-                <property role="3SKdUp" value="Do something" />
+              <node concept="1PaTwC" id="17Nm8oCo8_p" role="3ndbpf">
+                <node concept="3oM_SD" id="17Nm8oCo8_q" role="1PaTwD">
+                  <property role="3oM_SC" value="Do" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8_r" role="1PaTwD">
+                  <property role="3oM_SC" value="something" />
+                </node>
               </node>
             </node>
           </node>
@@ -380,8 +391,28 @@
             <node concept="3JmXsc" id="lH$PuiWGNI" role="2P8S$">
               <node concept="3clFbS" id="lH$PuiWGNJ" role="2VODD2">
                 <node concept="3SKdUt" id="kKmKqghkyu" role="3cqZAp">
-                  <node concept="3SKdUq" id="kKmKqghkyw" role="3SKWNk">
-                    <property role="3SKdUp" value="Generate non-warnings (= errors) first, warnings last." />
+                  <node concept="1PaTwC" id="17Nm8oCo8_s" role="3ndbpf">
+                    <node concept="3oM_SD" id="17Nm8oCo8_t" role="1PaTwD">
+                      <property role="3oM_SC" value="Generate" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_u" role="1PaTwD">
+                      <property role="3oM_SC" value="non-warnings" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_v" role="1PaTwD">
+                      <property role="3oM_SC" value="(=" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_w" role="1PaTwD">
+                      <property role="3oM_SC" value="errors)" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_x" role="1PaTwD">
+                      <property role="3oM_SC" value="first," />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_y" role="1PaTwD">
+                      <property role="3oM_SC" value="warnings" />
+                    </node>
+                    <node concept="3oM_SD" id="17Nm8oCo8_z" role="1PaTwD">
+                      <property role="3oM_SC" value="last." />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="lH$PuiWGNP" role="3cqZAp">

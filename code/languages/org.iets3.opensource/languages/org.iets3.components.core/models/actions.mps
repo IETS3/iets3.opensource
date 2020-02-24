@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
   </languages>
   <imports>
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
@@ -36,9 +36,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -94,7 +92,7 @@
                 <ref role="2pJxaS" to="w9y2:2KohUff$lmX" resolve="CompFunctionAdapter_old" />
                 <node concept="2pIpSj" id="2KohUffA8EY" role="2pJxcM">
                   <ref role="2pIpSl" to="yv47:mQGcCvwSTn" resolve="fun" />
-                  <node concept="36biLy" id="2KohUffA8Sr" role="2pJxcZ">
+                  <node concept="36biLy" id="2KohUffA8Sr" role="28nt2d">
                     <node concept="1ht04C" id="2KohUffA90u" role="36biLW" />
                   </node>
                 </node>
@@ -135,7 +133,7 @@
                 <ref role="2pJxaS" to="w9y2:3ijD2AhXGRR" resolve="CompConstantAdapter" />
                 <node concept="2pIpSj" id="3ijD2Ai0qgH" role="2pJxcM">
                   <ref role="2pIpSl" to="yv47:3ijD2AhNI83" resolve="toplevelExprContent" />
-                  <node concept="36biLy" id="3ijD2Ai0qoN" role="2pJxcZ">
+                  <node concept="36biLy" id="3ijD2Ai0qoN" role="28nt2d">
                     <node concept="1ht04C" id="3ijD2Ai0qwX" role="36biLW" />
                   </node>
                 </node>
@@ -183,7 +181,7 @@
                 <ref role="2pJxaS" to="w9y2:3ijD2AiF_jq" resolve="CompStateMachineAdapter" />
                 <node concept="2pIpSj" id="3ijD2AiFFZL" role="2pJxcM">
                   <ref role="2pIpSl" to="yv47:3ijD2AhNI83" resolve="toplevelExprContent" />
-                  <node concept="36biLy" id="3ijD2AiFG70" role="2pJxcZ">
+                  <node concept="36biLy" id="3ijD2AiFG70" role="28nt2d">
                     <node concept="1ht04C" id="3ijD2AiFGej" role="36biLW" />
                   </node>
                 </node>
@@ -231,7 +229,7 @@
                 <ref role="2pJxaS" to="w9y2:3ijD2AiLr75" resolve="CompFunctionAdapter" />
                 <node concept="2pIpSj" id="3ijD2AiLunC" role="2pJxcM">
                   <ref role="2pIpSl" to="yv47:iEqaF0KAvN" resolve="functionLike" />
-                  <node concept="36biLy" id="3ijD2AiLunD" role="2pJxcZ">
+                  <node concept="36biLy" id="3ijD2AiLunD" role="28nt2d">
                     <node concept="1ht04C" id="3ijD2AiLunE" role="36biLW" />
                   </node>
                 </node>

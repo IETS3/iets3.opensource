@@ -2,7 +2,7 @@
 <model ref="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -80,9 +80,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -238,7 +236,7 @@
                           <ref role="2pJxaS" to="hm2y:4rZeNQ6NgXE" resolve="LogicalNotExpression" />
                           <node concept="2pIpSj" id="6MNhNeUcZGH" role="2pJxcM">
                             <ref role="2pIpSl" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                            <node concept="36biLy" id="6MNhNeUcZMj" role="2pJxcZ">
+                            <node concept="36biLy" id="6MNhNeUcZMj" role="28nt2d">
                               <node concept="2OqwBi" id="6MNhNeUcZX8" role="36biLW">
                                 <node concept="37vLTw" id="6MNhNeUcZOw" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6MNhNeUcQFD" resolve="sle" />
@@ -357,7 +355,7 @@
                           <ref role="2pJxaS" to="hm2y:4rZeNQ6NgXE" resolve="LogicalNotExpression" />
                           <node concept="2pIpSj" id="6MNhNeUd0wL" role="2pJxcM">
                             <ref role="2pIpSl" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                            <node concept="36biLy" id="6MNhNeUd0wM" role="2pJxcZ">
+                            <node concept="36biLy" id="6MNhNeUd0wM" role="28nt2d">
                               <node concept="2OqwBi" id="6MNhNeUd0wN" role="36biLW">
                                 <node concept="37vLTw" id="6MNhNeUd0wO" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6MNhNeUd0wi" resolve="sle" />
@@ -494,7 +492,7 @@
                           <ref role="2pJxaS" to="hm2y:4rZeNQ6NgXE" resolve="LogicalNotExpression" />
                           <node concept="2pIpSj" id="6MNhNeUdtdH" role="2pJxcM">
                             <ref role="2pIpSl" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                            <node concept="36biLy" id="6MNhNeUdtdI" role="2pJxcZ">
+                            <node concept="36biLy" id="6MNhNeUdtdI" role="28nt2d">
                               <node concept="2OqwBi" id="6MNhNeUdtdJ" role="36biLW">
                                 <node concept="37vLTw" id="6MNhNeUdtdK" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6MNhNeUdtde" resolve="sle" />
@@ -613,7 +611,7 @@
                           <ref role="2pJxaS" to="hm2y:4rZeNQ6NgXE" resolve="LogicalNotExpression" />
                           <node concept="2pIpSj" id="6MNhNeUdtet" role="2pJxcM">
                             <ref role="2pIpSl" to="hm2y:4rZeNQ6NgXF" resolve="expr" />
-                            <node concept="36biLy" id="6MNhNeUdteu" role="2pJxcZ">
+                            <node concept="36biLy" id="6MNhNeUdteu" role="28nt2d">
                               <node concept="2OqwBi" id="6MNhNeUdtev" role="36biLW">
                                 <node concept="37vLTw" id="6MNhNeUdtew" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6MNhNeUdtdY" resolve="sle" />

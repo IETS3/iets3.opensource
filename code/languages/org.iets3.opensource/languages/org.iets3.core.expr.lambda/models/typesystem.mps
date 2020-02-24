@@ -152,9 +152,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -180,6 +177,9 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
@@ -672,7 +672,7 @@
                   <node concept="Xl_RD" id="6zmBjqUlAoS" role="2MkJ7o">
                     <property role="Xl_RC" value="wrong number of arguments" />
                   </node>
-                  <node concept="1YBJjd" id="6zmBjqUlAq2" role="2OEOjV">
+                  <node concept="1YBJjd" id="6zmBjqUlAq2" role="1urrMF">
                     <ref role="1YBMHb" node="6zmBjqUln7d" resolve="edt" />
                   </node>
                 </node>
@@ -1129,7 +1129,7 @@
             <node concept="Xl_RD" id="49WTic8gDtm" role="2MkJ7o">
               <property role="Xl_RC" value="wrong number of args" />
             </node>
-            <node concept="1YBJjd" id="49WTic8gDtQ" role="2OEOjV">
+            <node concept="1YBJjd" id="49WTic8gDtQ" role="1urrMF">
               <ref role="1YBMHb" node="49WTic8gvz6" resolve="ifc" />
             </node>
           </node>
@@ -1524,7 +1524,7 @@
             <node concept="Xl_RD" id="2rOWEwsAvWA" role="2MkJ7o">
               <property role="Xl_RC" value="expression must be specified" />
             </node>
-            <node concept="1YBJjd" id="2rOWEwsAvX6" role="2OEOjV">
+            <node concept="1YBJjd" id="2rOWEwsAvX6" role="1urrMF">
               <ref role="1YBMHb" node="2rOWEwsAvCn" resolve="le" />
             </node>
           </node>
@@ -1589,7 +1589,7 @@
                 <node concept="Xl_RD" id="TUBgQ0Rcrb" role="2MkJ7o">
                   <property role="Xl_RC" value="duplicate lambda arg name in nesting hierarchy" />
                 </node>
-                <node concept="2GrUjf" id="TUBgQ0Rcs7" role="2OEOjV">
+                <node concept="2GrUjf" id="TUBgQ0Rcs7" role="1urrMF">
                   <ref role="2Gs0qQ" node="TUBgQ0R9Cp" resolve="a" />
                 </node>
               </node>
@@ -1648,7 +1648,7 @@
                 <node concept="Xl_RD" id="1QYdL38SKhM" role="2MkJ7o">
                   <property role="Xl_RC" value="binding no argument has no purpose" />
                 </node>
-                <node concept="1YBJjd" id="1QYdL38SKhN" role="2OEOjV">
+                <node concept="1YBJjd" id="1QYdL38SKhN" role="1urrMF">
                   <ref role="1YBMHb" node="2rOWEwsAzX0" resolve="bind" />
                 </node>
               </node>
@@ -1677,7 +1677,7 @@
                 <node concept="Xl_RD" id="1QYdL38STUv" role="2MkJ7o">
                   <property role="Xl_RC" value="bind should leave some parameters unbound" />
                 </node>
-                <node concept="1YBJjd" id="1QYdL38STUw" role="2OEOjV">
+                <node concept="1YBJjd" id="1QYdL38STUw" role="1urrMF">
                   <ref role="1YBMHb" node="2rOWEwsAzX0" resolve="bind" />
                 </node>
               </node>
@@ -2096,11 +2096,11 @@
           <node concept="3clFbJ" id="22hm_0zqYup" role="3cqZAp">
             <node concept="3clFbS" id="22hm_0zqYur" role="3clFbx">
               <node concept="a7r0C" id="sflsE7lTYD" role="3cqZAp">
-                <node concept="1YBJjd" id="sflsE7lU8t" role="2OEOjV">
-                  <ref role="1YBMHb" node="22hm_0zqUsU" resolve="ve" />
-                </node>
                 <node concept="Xl_RD" id="22hm_0zqY_p" role="a7wSD">
                   <property role="Xl_RC" value="value never used" />
+                </node>
+                <node concept="1YBJjd" id="sflsE7lU8t" role="1urrMF">
+                  <ref role="1YBMHb" node="22hm_0zqUsU" resolve="ve" />
                 </node>
               </node>
             </node>
@@ -2167,7 +2167,7 @@
             <node concept="Xl_RD" id="53f0GWH8NoE" role="2MkJ7o">
               <property role="Xl_RC" value="cannot assign value of type void" />
             </node>
-            <node concept="37vLTw" id="53f0GWHcgL4" role="2OEOjV">
+            <node concept="37vLTw" id="53f0GWHcgL4" role="1urrMF">
               <ref role="3cqZAo" node="53f0GWHcgKZ" resolve="value" />
             </node>
           </node>
@@ -2192,7 +2192,7 @@
             <node concept="Xl_RD" id="53f0GWGHH3F" role="2MkJ7o">
               <property role="Xl_RC" value="cannot assign expression that has a modifies effect" />
             </node>
-            <node concept="37vLTw" id="53f0GWHcgL5" role="2OEOjV">
+            <node concept="37vLTw" id="53f0GWHcgL5" role="1urrMF">
               <ref role="3cqZAo" node="53f0GWHcgKZ" resolve="value" />
             </node>
           </node>
@@ -2327,7 +2327,7 @@
             <node concept="Xl_RD" id="5WJNTMTyQ8l" role="2MkJ7o">
               <property role="Xl_RC" value="arguments require types" />
             </node>
-            <node concept="1YBJjd" id="5WJNTMTyR9z" role="2OEOjV">
+            <node concept="1YBJjd" id="5WJNTMTyR9z" role="1urrMF">
               <ref role="1YBMHb" node="5WJNTMTyPQC" resolve="ia" />
             </node>
           </node>
@@ -2618,7 +2618,7 @@
                 <node concept="Xl_RD" id="2uR5X5az$tv" role="2MkJ7o">
                   <property role="Xl_RC" value="extension functions must have at least one argument (the 'this' object)" />
                 </node>
-                <node concept="1YBJjd" id="ZV9S9WvAV4" role="2OEOjV">
+                <node concept="1YBJjd" id="ZV9S9WvAV4" role="1urrMF">
                   <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
                 </node>
               </node>
@@ -2691,7 +2691,7 @@
                     <property role="Xl_RC" value="untyped cycle detected; at least one function must have a type: " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="RIvadv3usJ" role="2OEOjV">
+                <node concept="1YBJjd" id="RIvadv3usJ" role="1urrMF">
                   <ref role="1YBMHb" node="RIvadv35Ty" resolve="fl" />
                 </node>
               </node>
@@ -2749,7 +2749,7 @@
                 <node concept="Xl_RD" id="18$bUx58hI5" role="2MkJ7o">
                   <property role="Xl_RC" value="empty blocks are not allowed" />
                 </node>
-                <node concept="1YBJjd" id="18$bUx58hIH" role="2OEOjV">
+                <node concept="1YBJjd" id="18$bUx58hIH" role="1urrMF">
                   <ref role="1YBMHb" node="18$bUx588ef" resolve="be" />
                 </node>
               </node>
@@ -2803,7 +2803,7 @@
                         <node concept="Xl_RD" id="3hsdwqFI3rT" role="2MkJ7o">
                           <property role="Xl_RC" value="the expression does not have an effect. Capture it in a val expression, make it effectful or remove it." />
                         </node>
-                        <node concept="2GrUjf" id="3hsdwqFI3rU" role="2OEOjV">
+                        <node concept="2GrUjf" id="3hsdwqFI3rU" role="1urrMF">
                           <ref role="2Gs0qQ" node="3hsdwqFI3ru" resolve="e" />
                         </node>
                       </node>
@@ -3022,7 +3022,7 @@
             <node concept="Xl_RD" id="5Win3SAgAHQ" role="2MkJ7o">
               <property role="Xl_RC" value="expected a function type" />
             </node>
-            <node concept="2OqwBi" id="5Win3SAgAHR" role="2OEOjV">
+            <node concept="2OqwBi" id="5Win3SAgAHR" role="1urrMF">
               <node concept="1YBJjd" id="5Win3SAgAHS" role="2Oq$k0">
                 <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
               </node>
@@ -3052,7 +3052,7 @@
             <node concept="Xl_RD" id="5Win3SAgAO0" role="2MkJ7o">
               <property role="Xl_RC" value="expected a function type" />
             </node>
-            <node concept="2OqwBi" id="5Win3SAgAO1" role="2OEOjV">
+            <node concept="2OqwBi" id="5Win3SAgAO1" role="1urrMF">
               <node concept="1YBJjd" id="5Win3SAgAO2" role="2Oq$k0">
                 <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
               </node>
@@ -3083,7 +3083,7 @@
             <node concept="Xl_RD" id="5Win3SAcv$q" role="2MkJ7o">
               <property role="Xl_RC" value="can only compose functions with one argument" />
             </node>
-            <node concept="2OqwBi" id="5Win3SAcvO8" role="2OEOjV">
+            <node concept="2OqwBi" id="5Win3SAcvO8" role="1urrMF">
               <node concept="1YBJjd" id="5Win3SAcv__" role="2Oq$k0">
                 <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
               </node>
@@ -3182,7 +3182,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1YBJjd" id="5Win3SAcKAm" role="2OEOjV">
+                  <node concept="1YBJjd" id="5Win3SAcKAm" role="1urrMF">
                     <ref role="1YBMHb" node="5Win3SAclb$" resolve="funCompose" />
                   </node>
                 </node>
@@ -3310,7 +3310,7 @@
                       <node concept="Xl_RD" id="5iD_kvlIV6k" role="2MkJ7o">
                         <property role="Xl_RC" value="wrong number of arguments" />
                       </node>
-                      <node concept="1YBJjd" id="5iD_kvlIV6l" role="2OEOjV">
+                      <node concept="1YBJjd" id="5iD_kvlIV6l" role="1urrMF">
                         <ref role="1YBMHb" node="5iD_kvlIV5u" resolve="eo" />
                       </node>
                     </node>
@@ -3353,7 +3353,7 @@
                   <node concept="Xl_RD" id="5iD_kvlJ2ts" role="2MkJ7o">
                     <property role="Xl_RC" value="not a function type" />
                   </node>
-                  <node concept="2OqwBi" id="5iD_kvlJ2AY" role="2OEOjV">
+                  <node concept="2OqwBi" id="5iD_kvlJ2AY" role="1urrMF">
                     <node concept="1YBJjd" id="5iD_kvlJ2tI" role="2Oq$k0">
                       <ref role="1YBMHb" node="5iD_kvlIV5u" resolve="eo" />
                     </node>
@@ -3441,7 +3441,7 @@
             <node concept="Xl_RD" id="1VmWkC0zb$E" role="2MkJ7o">
               <property role="Xl_RC" value="cannot assign value of type void" />
             </node>
-            <node concept="2OqwBi" id="1VmWkC0zcNj" role="2OEOjV">
+            <node concept="2OqwBi" id="1VmWkC0zcNj" role="1urrMF">
               <node concept="1YBJjd" id="1VmWkC0zczS" role="2Oq$k0">
                 <ref role="1YBMHb" node="1VmWkC0zb$z" resolve="lv" />
               </node>
@@ -3517,7 +3517,7 @@
             <node concept="Xl_RD" id="1VmWkC0F0Ru" role="2MkJ7o">
               <property role="Xl_RC" value="duplicate local variable name (no shadowing!)" />
             </node>
-            <node concept="1YBJjd" id="1VmWkC0F0Sx" role="2OEOjV">
+            <node concept="1YBJjd" id="1VmWkC0F0Sx" role="1urrMF">
               <ref role="1YBMHb" node="1VmWkC0zb$z" resolve="lv" />
             </node>
           </node>
@@ -3650,7 +3650,7 @@
             <node concept="Xl_RD" id="1VmWkC0I8v6" role="2MkJ7o">
               <property role="Xl_RC" value="cannot be used inside of lambdas" />
             </node>
-            <node concept="1YBJjd" id="1VmWkC0I8vA" role="2OEOjV">
+            <node concept="1YBJjd" id="1VmWkC0I8vA" role="1urrMF">
               <ref role="1YBMHb" node="1VmWkC0I7xr" resolve="ref" />
             </node>
           </node>

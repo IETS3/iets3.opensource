@@ -99,9 +99,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -129,9 +127,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -155,6 +150,9 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1188811367543" name="jetbrains.mps.lang.typesystem.structure.ComparisonRule" flags="ig" index="3aFulz">
         <child id="1188820750135" name="anotherNode" index="3bfgSz" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
         <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
@@ -366,7 +364,7 @@
                   <ref role="2pJxaS" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
                   <node concept="2pIpSj" id="1$1rueeDjgd" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
-                    <node concept="36biLy" id="1$1rueeDjQ5" role="2pJxcZ">
+                    <node concept="36biLy" id="1$1rueeDjQ5" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBnY_" role="36biLW">
                         <node concept="chp4Y" id="1mDdTGBnZ0" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -423,7 +421,7 @@
                   <ref role="2pJxaS" to="hm2y:2rOWEwsEjcg" resolve="OptionType" />
                   <node concept="2pIpSj" id="1$1rueeG2BW" role="2pJxcM">
                     <ref role="2pIpSl" to="hm2y:2rOWEwsEjch" resolve="baseType" />
-                    <node concept="36biLy" id="1$1rueeG2BX" role="2pJxcZ">
+                    <node concept="36biLy" id="1$1rueeG2BX" role="28nt2d">
                       <node concept="1PxgMI" id="1mDdTGBobE" role="36biLW">
                         <node concept="chp4Y" id="1mDdTGBoc5" role="3oSUPX">
                           <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
@@ -582,7 +580,7 @@
             <node concept="Xl_RD" id="1bwJEEfiM_Q" role="2MkJ7o">
               <property role="Xl_RC" value="missing input" />
             </node>
-            <node concept="2OqwBi" id="1bwJEEgt7Gl" role="2OEOjV">
+            <node concept="2OqwBi" id="1bwJEEgt7Gl" role="1urrMF">
               <node concept="1YBJjd" id="1bwJEEfiMAa" role="2Oq$k0">
                 <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
               </node>
@@ -661,7 +659,7 @@
                 <node concept="Xl_RD" id="1bwJEEgrcJo" role="2MkJ7o">
                   <property role="Xl_RC" value="missing output" />
                 </node>
-                <node concept="2OqwBi" id="1bwJEEgt6UF" role="2OEOjV">
+                <node concept="2OqwBi" id="1bwJEEgt6UF" role="1urrMF">
                   <node concept="1YBJjd" id="1bwJEEgrcJp" role="2Oq$k0">
                     <ref role="1YBMHb" node="1bwJEEf1Pnj" resolve="iv" />
                   </node>
@@ -792,7 +790,7 @@
                     <property role="Xl_RC" value="type not supported: " />
                   </node>
                 </node>
-                <node concept="1YBJjd" id="1bwJEEfKC6D" role="2OEOjV">
+                <node concept="1YBJjd" id="1bwJEEfKC6D" role="1urrMF">
                   <ref role="1YBMHb" node="1bwJEEfKxKp" resolve="vp" />
                 </node>
               </node>
@@ -898,7 +896,7 @@
               <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
               <node concept="2pIpSj" id="5Pgo_ASByrL" role="2pJxcM">
                 <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                <node concept="36biLy" id="5Pgo_ASBysc" role="2pJxcZ">
+                <node concept="36biLy" id="5Pgo_ASBysc" role="28nt2d">
                   <node concept="2YIFZM" id="5wDe8wA6zrW" role="36biLW">
                     <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
                     <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
@@ -951,7 +949,7 @@
                   <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
                   <node concept="2pIpSj" id="5Pgo_ASHvQh" role="2pJxcM">
                     <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                    <node concept="36biLy" id="5Pgo_ASHvQG" role="2pJxcZ">
+                    <node concept="36biLy" id="5Pgo_ASHvQG" role="28nt2d">
                       <node concept="2YIFZM" id="5wDe8wA6zrX" role="36biLW">
                         <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
                         <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
@@ -1182,7 +1180,7 @@
                   <ref role="2pJxaS" to="av4b:5Pgo_ASAjDx" resolve="MatcherType" />
                   <node concept="2pIpSj" id="5Pgo_ASD30p" role="2pJxcM">
                     <ref role="2pIpSl" to="av4b:5Pgo_ASAjDE" resolve="forType" />
-                    <node concept="36biLy" id="5Pgo_ASD30P" role="2pJxcZ">
+                    <node concept="36biLy" id="5Pgo_ASD30P" role="28nt2d">
                       <node concept="2X3wrD" id="5Pgo_ASDX5R" role="36biLW">
                         <ref role="2X3Bk0" node="5Pgo_ASDVW3" resolve="valueType" />
                       </node>

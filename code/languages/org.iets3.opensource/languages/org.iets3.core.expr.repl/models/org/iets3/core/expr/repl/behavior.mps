@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -246,11 +247,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -347,6 +345,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -592,7 +598,7 @@
                         <ref role="3cqZAo" node="3a2FJuC70OS" resolve="edCtxOrNull" />
                       </node>
                       <node concept="2B6iha" id="3a2FJuC73fz" role="lGT1i">
-                        <property role="1lyBwo" value="firstError" />
+                        <property role="1lyBwo" value="1MdDphCk0iX/firstError" />
                       </node>
                     </node>
                   </node>
@@ -2041,7 +2047,7 @@
                     <ref role="3cqZAo" node="69FYpZqzUiV" resolve="ctx" />
                   </node>
                   <node concept="2B6iha" id="3a2FJuCn_9Y" role="lGT1i">
-                    <property role="1lyBwo" value="firstError" />
+                    <property role="1lyBwo" value="1MdDphCk0iX/firstError" />
                   </node>
                 </node>
               </node>
@@ -5835,8 +5841,13 @@
         <node concept="3clFbJ" id="5avmkTFm3nJ" role="3cqZAp">
           <node concept="3clFbS" id="5avmkTFm3nL" role="3clFbx">
             <node concept="3SKdUt" id="5avmkTFmdcW" role="3cqZAp">
-              <node concept="3SKdUq" id="5avmkTFmdcY" role="3SKWNk">
-                <property role="3SKdUp" value="vertical list" />
+              <node concept="1PaTwC" id="17Nm8oCo8B$" role="3ndbpf">
+                <node concept="3oM_SD" id="17Nm8oCo8B_" role="1PaTwD">
+                  <property role="3oM_SC" value="vertical" />
+                </node>
+                <node concept="3oM_SD" id="17Nm8oCo8BA" role="1PaTwD">
+                  <property role="3oM_SC" value="list" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="5avmkTFmOxj" role="3cqZAp">
@@ -5871,8 +5882,13 @@
           <node concept="3eNFk2" id="5avmkTFm5xN" role="3eNLev">
             <node concept="3clFbS" id="5avmkTFm5xP" role="3eOfB_">
               <node concept="3SKdUt" id="5avmkTFmDF3" role="3cqZAp">
-                <node concept="3SKdUq" id="5avmkTFmDF4" role="3SKWNk">
-                  <property role="3SKdUp" value="horiz list" />
+                <node concept="1PaTwC" id="17Nm8oCo8BB" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8BC" role="1PaTwD">
+                    <property role="3oM_SC" value="horiz" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BD" role="1PaTwD">
+                    <property role="3oM_SC" value="list" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="5avmkTFmUKK" role="3cqZAp">

@@ -2,7 +2,7 @@
 <model ref="r:1a74c105-32ef-4c70-8668-29d413ed1637(org.iets3.core.expr.doc.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
@@ -711,7 +711,7 @@
     <property role="TrG5h" value="DeleteDDD" />
     <ref role="1h_SK9" to="34lm:NE1gl52$xw" resolve="DotDotDot" />
     <node concept="1hA7zw" id="NE1gl52AW2" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="NE1gl52AW3" role="1hA7z_">
         <node concept="3clFbS" id="NE1gl52AW4" role="2VODD2">
           <node concept="3clFbF" id="NE1gl52AWh" role="3cqZAp">
@@ -724,7 +724,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="NE1gl52BMK" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="NE1gl52BML" role="1hA7z_">
         <node concept="3clFbS" id="NE1gl52BMM" role="2VODD2">
           <node concept="3clFbF" id="NE1gl52BMN" role="3cqZAp">
@@ -746,13 +746,13 @@
           <property role="3F0ifm" value="@bookmark" />
           <ref role="1ERwB7" node="4vZ65iKq6xG" resolve="deleteAnnotation" />
           <node concept="VechU" id="4vZ65iKiy9t" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0A7n" id="4vZ65iKiy90" role="3EZMnx">
           <ref role="1NtTu8" to="34lm:4vZ65iKiy85" resolve="label" />
           <node concept="VechU" id="4vZ65iKiy9w" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
       </node>
@@ -800,7 +800,7 @@
     <property role="TrG5h" value="deleteAnnotation" />
     <ref role="1h_SK9" to="34lm:4vZ65iKiy7Y" resolve="BookmarkAnnotation" />
     <node concept="1hA7zw" id="4vZ65iKq6xH" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="4vZ65iKq6xI" role="1hA7z_">
         <node concept="3clFbS" id="4vZ65iKq6xJ" role="2VODD2">
           <node concept="3clFbF" id="4vZ65iKq6xZ" role="3cqZAp">
@@ -813,7 +813,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="4vZ65iKq6Xw" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="4vZ65iKq6Xx" role="1hA7z_">
         <node concept="3clFbS" id="4vZ65iKq6Xy" role="2VODD2">
           <node concept="3clFbF" id="4vZ65iKq6Xz" role="3cqZAp">

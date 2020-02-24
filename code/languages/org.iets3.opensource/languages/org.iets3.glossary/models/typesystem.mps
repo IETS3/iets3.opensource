@@ -74,10 +74,6 @@
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -95,6 +91,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
@@ -207,9 +207,6 @@
           <node concept="3clFbJ" id="6zaFu4oSdrF" role="3cqZAp">
             <node concept="3clFbS" id="6zaFu4oSdrH" role="3clFbx">
               <node concept="a7r0C" id="6zaFu4oSj3_" role="3cqZAp">
-                <node concept="1YBJjd" id="6zaFu4oSjj1" role="2OEOjV">
-                  <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
-                </node>
                 <node concept="3cpWs3" id="6zaFu4oSj76" role="a7wSD">
                   <node concept="2OqwBi" id="6zaFu4oSjae" role="3uHU7w">
                     <node concept="37vLTw" id="6zaFu4oSj7d" role="2Oq$k0">
@@ -239,7 +236,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3Cnw8n" id="6zaFu4oSxvy" role="2OEOjU">
+                <node concept="1YBJjd" id="6zaFu4oSjj1" role="1urrMF">
+                  <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
+                </node>
+                <node concept="3Cnw8n" id="6zaFu4oSxvy" role="1urrFz">
                   <ref role="QpYPw" node="6zaFu4oSv2p" resolve="addBackReference" />
                   <node concept="3CnSsL" id="6zaFu4oSxBW" role="3Coj4f">
                     <ref role="QkamJ" node="6zaFu4oSv2A" resolve="theOneThatExists" />
@@ -256,24 +256,6 @@
                 </node>
               </node>
               <node concept="a7r0C" id="6zaFu4oSjkE" role="3cqZAp">
-                <node concept="3Cnw8n" id="6zaFu4oSxO5" role="2OEOjU">
-                  <ref role="QpYPw" node="6zaFu4oSv2p" resolve="addBackReference" />
-                  <node concept="3CnSsL" id="6zaFu4oSxO6" role="3Coj4f">
-                    <ref role="QkamJ" node="6zaFu4oSv2A" resolve="theOneThatExists" />
-                    <node concept="1YBJjd" id="6zaFu4oSxO7" role="3CoRuB">
-                      <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
-                    </node>
-                  </node>
-                  <node concept="3CnSsL" id="6zaFu4oSxO8" role="3Coj4f">
-                    <ref role="QkamJ" node="6zaFu4oSv2T" resolve="theOneThatMissesIt" />
-                    <node concept="37vLTw" id="6zaFu4oSxO9" role="3CoRuB">
-                      <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="6zaFu4oSn1F" role="2OEOjV">
-                  <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
-                </node>
                 <node concept="3cpWs3" id="6zaFu4oSkTV" role="a7wSD">
                   <node concept="2OqwBi" id="6zaFu4oSl8E" role="3uHU7w">
                     <node concept="37vLTw" id="6zaFu4oSl27" role="2Oq$k0">
@@ -300,6 +282,24 @@
                     </node>
                     <node concept="Xl_RD" id="6zaFu4oSktn" role="3uHU7w">
                       <property role="Xl_RC" value=" that points to " />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6zaFu4oSn1F" role="1urrMF">
+                  <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
+                </node>
+                <node concept="3Cnw8n" id="6zaFu4oSxO5" role="1urrFz">
+                  <ref role="QpYPw" node="6zaFu4oSv2p" resolve="addBackReference" />
+                  <node concept="3CnSsL" id="6zaFu4oSxO6" role="3Coj4f">
+                    <ref role="QkamJ" node="6zaFu4oSv2A" resolve="theOneThatExists" />
+                    <node concept="1YBJjd" id="6zaFu4oSxO7" role="3CoRuB">
+                      <ref role="1YBMHb" node="6zaFu4oSd8Y" resolve="ta" />
+                    </node>
+                  </node>
+                  <node concept="3CnSsL" id="6zaFu4oSxO8" role="3Coj4f">
+                    <ref role="QkamJ" node="6zaFu4oSv2T" resolve="theOneThatMissesIt" />
+                    <node concept="37vLTw" id="6zaFu4oSxO9" role="3CoRuB">
+                      <ref role="3cqZAo" node="6zaFu4oSdoU" resolve="other" />
                     </node>
                   </node>
                 </node>

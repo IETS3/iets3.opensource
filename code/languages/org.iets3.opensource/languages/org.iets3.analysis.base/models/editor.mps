@@ -2,9 +2,9 @@
 <model ref="r:d5e9e54b-cab2-4bc4-800f-1952f775974d(org.iets3.analysis.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -138,42 +138,42 @@
           <property role="3F0ifm" value="@solver:" />
           <ref role="1ERwB7" node="3DYDRw0XrFI" resolve="deleteSolverControl" />
           <node concept="VechU" id="3DYDRw0WRuf" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
         </node>
         <node concept="3F0A7n" id="3DYDRw0WRva" role="3EZMnx">
-          <ref role="1NtTu8" to="l80j:3DYDRw0WRuK" resolve="mode" />
+          <ref role="1NtTu8" to="l80j:17Nm8oCo8O2" resolve="mode" />
           <node concept="VechU" id="3DYDRw0WRw6" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
           <node concept="Vb9p2" id="2GQBRFARI_x" role="3F10Kt">
-            <property role="Vbekb" value="BOLD" />
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
         </node>
         <node concept="3EZMnI" id="2GQBRFCFw0y" role="3EZMnx">
           <node concept="3F0ifn" id="2GQBRFCFw12" role="3EZMnx">
             <property role="3F0ifm" value="with timeout" />
             <node concept="VechU" id="2ZalWa8HPVn" role="3F10Kt">
-              <property role="Vb096" value="red" />
+              <property role="Vb096" value="fLwANPn/red" />
             </node>
           </node>
           <node concept="3F0ifn" id="2GQBRFCFw1j" role="3EZMnx">
             <property role="3F0ifm" value="=" />
             <node concept="VechU" id="2ZalWa8HPVq" role="3F10Kt">
-              <property role="Vb096" value="red" />
+              <property role="Vb096" value="fLwANPn/red" />
             </node>
           </node>
           <node concept="3F0A7n" id="2GQBRFCFw1C" role="3EZMnx">
             <property role="1$x2rV" value="&lt;global default timeout&gt;" />
             <ref role="1NtTu8" to="l80j:2GQBRFCFk_3" resolve="timeout" />
             <node concept="VechU" id="2ZalWa8HPVt" role="3F10Kt">
-              <property role="Vb096" value="red" />
+              <property role="Vb096" value="fLwANPn/red" />
             </node>
           </node>
           <node concept="3F0ifn" id="2ZalWa8HPVJ" role="3EZMnx">
             <property role="3F0ifm" value="s" />
             <node concept="VechU" id="2ZalWa8HPVZ" role="3F10Kt">
-              <property role="Vb096" value="red" />
+              <property role="Vb096" value="fLwANPn/red" />
             </node>
             <node concept="11L4FC" id="2zI9HllG9i1" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -211,7 +211,7 @@
     <property role="3GE5qa" value="control" />
     <ref role="1h_SK9" to="l80j:3DYDRw0WRrP" resolve="SolveControl" />
     <node concept="1hA7zw" id="3DYDRw0XrFJ" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="3DYDRw0XrFK" role="1hA7z_">
         <node concept="3clFbS" id="3DYDRw0XrFL" role="2VODD2">
           <node concept="3clFbF" id="3DYDRw0XrFT" role="3cqZAp">
@@ -224,7 +224,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="3DYDRw0XrNg" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="3DYDRw0XrNh" role="1hA7z_">
         <node concept="3clFbS" id="3DYDRw0XrNi" role="2VODD2">
           <node concept="3clFbF" id="3DYDRw0XrNj" role="3cqZAp">

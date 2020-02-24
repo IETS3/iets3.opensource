@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -157,9 +157,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -405,7 +403,7 @@
                     <ref role="2pJxaS" to="zzzn:22hm_0zJHU7" resolve="CapturedValue" />
                     <node concept="2pIpSj" id="22hm_0$0WTQ" role="2pJxcM">
                       <ref role="2pIpSl" to="zzzn:22hm_0$0c7L" resolve="type" />
-                      <node concept="36biLy" id="22hm_0$0WYU" role="2pJxcZ">
+                      <node concept="36biLy" id="22hm_0$0WYU" role="28nt2d">
                         <node concept="1PxgMI" id="22hm_0$0Y8D" role="36biLW">
                           <node concept="chp4Y" id="6b_jefnKyD6" role="3oSUPX">
                             <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />

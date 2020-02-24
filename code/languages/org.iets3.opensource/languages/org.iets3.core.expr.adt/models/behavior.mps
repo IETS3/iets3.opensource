@@ -147,9 +147,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -1645,7 +1643,7 @@
                         <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
                         <node concept="2pIpSj" id="28$LOSBZopj" role="2pJxcM">
                           <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
-                          <node concept="36biLy" id="28$LOSBZoLk" role="2pJxcZ">
+                          <node concept="36biLy" id="28$LOSBZoLk" role="28nt2d">
                             <node concept="2OqwBi" id="28$LOSBZoVu" role="36biLW">
                               <node concept="2OqwBi" id="28$LOSBZoLD" role="2Oq$k0">
                                 <node concept="1PxgMI" id="28$LOSBZCRZ" role="2Oq$k0">
@@ -2451,7 +2449,7 @@
                   <ref role="2pJxaS" to="700h:6zmBjqUinsw" resolve="ListType" />
                   <node concept="2pIpSj" id="28$LOSBIqKc" role="2pJxcM">
                     <ref role="2pIpSl" to="700h:6zmBjqUily6" resolve="baseType" />
-                    <node concept="36biLy" id="28$LOSBIqQo" role="2pJxcZ">
+                    <node concept="36biLy" id="28$LOSBIqQo" role="28nt2d">
                       <node concept="2OqwBi" id="28$LOSBIrHo" role="36biLW">
                         <node concept="2OqwBi" id="28$LOSBIqZj" role="2Oq$k0">
                           <node concept="13iPFW" id="28$LOSBIqQF" role="2Oq$k0" />

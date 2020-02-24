@@ -129,12 +129,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -304,19 +303,19 @@
               <ref role="2pJxaS" to="mi3w:3nGzaxURa4h" resolve="DateLiteral" />
               <node concept="2pJxcG" id="26CArgU3TPE" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:3nGzaxURa4k" resolve="dd" />
-                <node concept="37vLTw" id="3z0DCrxKxKu" role="2pJxcZ">
+                <node concept="37vLTw" id="3z0DCrxKxKu" role="28ntcv">
                   <ref role="3cqZAo" node="3z0DCrxKxKn" resolve="d" />
                 </node>
               </node>
               <node concept="2pJxcG" id="26CArgU3V23" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:3nGzaxURa4l" resolve="mm" />
-                <node concept="37vLTw" id="3z0DCrxKy_1" role="2pJxcZ">
+                <node concept="37vLTw" id="3z0DCrxKy_1" role="28ntcv">
                   <ref role="3cqZAo" node="3z0DCrxKy$U" resolve="m" />
                 </node>
               </node>
               <node concept="2pJxcG" id="26CArgU3WOx" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:3nGzaxURa4m" resolve="yyyy" />
-                <node concept="37vLTw" id="3z0DCrxKzrS" role="2pJxcZ">
+                <node concept="37vLTw" id="3z0DCrxKzrS" role="28ntcv">
                   <ref role="3cqZAo" node="3z0DCrxKzrM" resolve="y" />
                 </node>
               </node>
@@ -975,13 +974,13 @@
               <ref role="2pJxaS" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
               <node concept="2pJxcG" id="7zAZa_vg4IV" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZJWr" resolve="monthProp" />
-                <node concept="Xl_RD" id="7zAZa_vg4M0" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg4M0" role="28ntcv">
                   <property role="Xl_RC" value="01" />
                 </node>
               </node>
               <node concept="2pJxcG" id="7zAZa_vg4Q2" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZIye" resolve="yearProp" />
-                <node concept="Xl_RD" id="7zAZa_vg4Th" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg4Th" role="28ntcv">
                   <property role="Xl_RC" value="1970" />
                 </node>
               </node>
@@ -1011,11 +1010,11 @@
               <ref role="2pJxaS" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
               <node concept="2pIpSj" id="7zAZa_vg52d" role="2pJxcM">
                 <ref role="2pIpSl" to="mi3w:3nGzaxUXsgk" resolve="year" />
-                <node concept="2pJPED" id="7zAZa_vg5lu" role="2pJxcZ">
+                <node concept="2pJPED" id="7zAZa_vg5lu" role="28nt2d">
                   <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                   <node concept="2pJxcG" id="7zAZa_vg5qZ" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                    <node concept="Xl_RD" id="7zAZa_vg5wA" role="2pJxcZ">
+                    <node concept="Xl_RD" id="7zAZa_vg5wA" role="28ntcv">
                       <property role="Xl_RC" value="1970" />
                     </node>
                   </node>
@@ -1047,13 +1046,13 @@
               <ref role="2pJxaS" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
               <node concept="2pJxcG" id="7zAZa_vg8aR" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZJWr" resolve="monthProp" />
-                <node concept="Xl_RD" id="7zAZa_vg8dW" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg8dW" role="28ntcv">
                   <property role="Xl_RC" value="01" />
                 </node>
               </node>
               <node concept="2pJxcG" id="7zAZa_vg8hY" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZIye" resolve="yearProp" />
-                <node concept="Xl_RD" id="7zAZa_vg8ld" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg8ld" role="28ntcv">
                   <property role="Xl_RC" value="1970" />
                 </node>
               </node>
@@ -1083,13 +1082,13 @@
               <ref role="2pJxaS" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
               <node concept="2pJxcG" id="7zAZa_vg8H9" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZJWr" resolve="monthProp" />
-                <node concept="Xl_RD" id="7zAZa_vg8TF" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg8TF" role="28ntcv">
                   <property role="Xl_RC" value="01" />
                 </node>
               </node>
               <node concept="2pJxcG" id="7zAZa_vg8XH" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZIye" resolve="yearProp" />
-                <node concept="Xl_RD" id="7zAZa_vg90W" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg90W" role="28ntcv">
                   <property role="Xl_RC" value="1970" />
                 </node>
               </node>
@@ -1119,13 +1118,13 @@
               <ref role="2pJxaS" to="mi3w:1Mp62pP0lMQ" resolve="MonthRangeLiteral" />
               <node concept="2pJxcG" id="7zAZa_vg9k$" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZJWr" resolve="monthProp" />
-                <node concept="Xl_RD" id="7zAZa_vg9nD" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vg9nD" role="28ntcv">
                   <property role="Xl_RC" value="01" />
                 </node>
               </node>
               <node concept="2pJxcG" id="7zAZa_vg9rF" role="2pJxcM">
                 <ref role="2pJxcJ" to="mi3w:8iseicZIye" resolve="yearProp" />
-                <node concept="Xl_RD" id="7zAZa_vgajL" role="2pJxcZ">
+                <node concept="Xl_RD" id="7zAZa_vgajL" role="28ntcv">
                   <property role="Xl_RC" value="1970" />
                 </node>
               </node>

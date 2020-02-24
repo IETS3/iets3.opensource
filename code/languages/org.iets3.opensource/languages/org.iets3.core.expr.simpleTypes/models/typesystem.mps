@@ -2,6 +2,7 @@
 <model ref="r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -106,11 +107,8 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -149,10 +147,6 @@
       </concept>
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
-      </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
@@ -195,6 +189,10 @@
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -271,6 +269,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1906,8 +1912,43 @@
                 </node>
               </node>
               <node concept="3SKdUt" id="5cWGVRfXjAM" role="3cqZAp">
-                <node concept="3SKdUq" id="5cWGVRfXjAO" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: add proper handling for ranges including zero limit (possibly using POSINF/NEGINF?)" />
+                <node concept="1PaTwC" id="17Nm8oCo8BE" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8BF" role="1PaTwD">
+                    <property role="3oM_SC" value="TODO:" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BG" role="1PaTwD">
+                    <property role="3oM_SC" value="add" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BH" role="1PaTwD">
+                    <property role="3oM_SC" value="proper" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BI" role="1PaTwD">
+                    <property role="3oM_SC" value="handling" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BJ" role="1PaTwD">
+                    <property role="3oM_SC" value="for" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BK" role="1PaTwD">
+                    <property role="3oM_SC" value="ranges" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BL" role="1PaTwD">
+                    <property role="3oM_SC" value="including" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BM" role="1PaTwD">
+                    <property role="3oM_SC" value="zero" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BN" role="1PaTwD">
+                    <property role="3oM_SC" value="limit" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BO" role="1PaTwD">
+                    <property role="3oM_SC" value="(possibly" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BP" role="1PaTwD">
+                    <property role="3oM_SC" value="using" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BQ" role="1PaTwD">
+                    <property role="3oM_SC" value="POSINF/NEGINF?)" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="5cWGVRfTrwf" role="3cqZAp">
@@ -2810,8 +2851,10 @@
           <node concept="3clFbJ" id="3gjm1nJOdAx" role="3cqZAp">
             <node concept="3clFbS" id="3gjm1nJOdAz" role="3clFbx">
               <node concept="3SKdUt" id="7Wa2sv3GAEv" role="3cqZAp">
-                <node concept="3SKdUq" id="7Wa2sv3GAEx" role="3SKWNk">
-                  <property role="3SKdUp" value="number[a|b]{0}" />
+                <node concept="1PaTwC" id="17Nm8oCo8BR" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8BS" role="1PaTwD">
+                    <property role="3oM_SC" value="number[a|b]{0}" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="7Wa2sv3Gd3r" role="3cqZAp">
@@ -2853,18 +2896,123 @@
               </node>
               <node concept="3clFbH" id="AYZEgqdxjn" role="3cqZAp" />
               <node concept="3SKdUt" id="AYZEgqdCQO" role="3cqZAp">
-                <node concept="3SKdUq" id="AYZEgqdCQQ" role="3SKWNk">
-                  <property role="3SKdUp" value="Probably a number should be a subtype of all numbers with the same" />
+                <node concept="1PaTwC" id="17Nm8oCo8BT" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8BU" role="1PaTwD">
+                    <property role="3oM_SC" value="Probably" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BV" role="1PaTwD">
+                    <property role="3oM_SC" value="a" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BW" role="1PaTwD">
+                    <property role="3oM_SC" value="number" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BX" role="1PaTwD">
+                    <property role="3oM_SC" value="should" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BY" role="1PaTwD">
+                    <property role="3oM_SC" value="be" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8BZ" role="1PaTwD">
+                    <property role="3oM_SC" value="a" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C0" role="1PaTwD">
+                    <property role="3oM_SC" value="subtype" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C1" role="1PaTwD">
+                    <property role="3oM_SC" value="of" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C2" role="1PaTwD">
+                    <property role="3oM_SC" value="all" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C3" role="1PaTwD">
+                    <property role="3oM_SC" value="numbers" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C4" role="1PaTwD">
+                    <property role="3oM_SC" value="with" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C5" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C6" role="1PaTwD">
+                    <property role="3oM_SC" value="same" />
+                  </node>
                 </node>
               </node>
               <node concept="3SKdUt" id="AYZEgqdD3N" role="3cqZAp">
-                <node concept="3SKdUq" id="AYZEgqdD3P" role="3SKWNk">
-                  <property role="3SKdUp" value="range or larger range and the same or higher precision" />
+                <node concept="1PaTwC" id="17Nm8oCo8C7" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8C8" role="1PaTwD">
+                    <property role="3oM_SC" value="range" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8C9" role="1PaTwD">
+                    <property role="3oM_SC" value="or" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ca" role="1PaTwD">
+                    <property role="3oM_SC" value="larger" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cb" role="1PaTwD">
+                    <property role="3oM_SC" value="range" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cc" role="1PaTwD">
+                    <property role="3oM_SC" value="and" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cd" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ce" role="1PaTwD">
+                    <property role="3oM_SC" value="same" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cf" role="1PaTwD">
+                    <property role="3oM_SC" value="or" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cg" role="1PaTwD">
+                    <property role="3oM_SC" value="higher" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ch" role="1PaTwD">
+                    <property role="3oM_SC" value="precision" />
+                  </node>
                 </node>
               </node>
               <node concept="3SKdUt" id="AYZEgqdDeK" role="3cqZAp">
-                <node concept="3SKdUq" id="AYZEgqdDeM" role="3SKWNk">
-                  <property role="3SKdUp" value="however I am not sure it is possible to represent that in MPS" />
+                <node concept="1PaTwC" id="17Nm8oCo8Ci" role="3ndbpf">
+                  <node concept="3oM_SD" id="17Nm8oCo8Cj" role="1PaTwD">
+                    <property role="3oM_SC" value="however" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ck" role="1PaTwD">
+                    <property role="3oM_SC" value="I" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cl" role="1PaTwD">
+                    <property role="3oM_SC" value="am" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cm" role="1PaTwD">
+                    <property role="3oM_SC" value="not" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cn" role="1PaTwD">
+                    <property role="3oM_SC" value="sure" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Co" role="1PaTwD">
+                    <property role="3oM_SC" value="it" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cp" role="1PaTwD">
+                    <property role="3oM_SC" value="is" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cq" role="1PaTwD">
+                    <property role="3oM_SC" value="possible" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cr" role="1PaTwD">
+                    <property role="3oM_SC" value="to" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cs" role="1PaTwD">
+                    <property role="3oM_SC" value="represent" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Ct" role="1PaTwD">
+                    <property role="3oM_SC" value="that" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cu" role="1PaTwD">
+                    <property role="3oM_SC" value="in" />
+                  </node>
+                  <node concept="3oM_SD" id="17Nm8oCo8Cv" role="1PaTwD">
+                    <property role="3oM_SC" value="MPS" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="AYZEgqdxtu" role="3cqZAp">
@@ -2916,8 +3064,10 @@
             <node concept="9aQIb" id="3gjm1nJOiAl" role="9aQIa">
               <node concept="3clFbS" id="3gjm1nJOiAm" role="9aQI4">
                 <node concept="3SKdUt" id="7Wa2sv3GB2H" role="3cqZAp">
-                  <node concept="3SKdUq" id="7Wa2sv3GB2I" role="3SKWNk">
-                    <property role="3SKdUp" value="number[inf|inf]{0}" />
+                  <node concept="1PaTwC" id="17Nm8oCo8Cw" role="3ndbpf">
+                    <node concept="3oM_SD" id="17Nm8oCo8Cx" role="1PaTwD">
+                      <property role="3oM_SC" value="number[inf|inf]{0}" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="7Wa2sv3G19p" role="3cqZAp">
@@ -3018,8 +3168,10 @@
                 <node concept="3clFbJ" id="7Wa2sv3GBze" role="3cqZAp">
                   <node concept="3clFbS" id="7Wa2sv3GBzg" role="3clFbx">
                     <node concept="3SKdUt" id="7Wa2sv3GBp8" role="3cqZAp">
-                      <node concept="3SKdUq" id="7Wa2sv3GBpa" role="3SKWNk">
-                        <property role="3SKdUp" value="number[a|b]{p}" />
+                      <node concept="1PaTwC" id="17Nm8oCo8Cy" role="3ndbpf">
+                        <node concept="3oM_SD" id="17Nm8oCo8Cz" role="1PaTwD">
+                          <property role="3oM_SC" value="number[a|b]{p}" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3cpWs8" id="7Wa2sv3GCqy" role="3cqZAp">
@@ -3096,8 +3248,10 @@
                   <node concept="9aQIb" id="7Wa2sv3GDsO" role="9aQIa">
                     <node concept="3clFbS" id="7Wa2sv3GDsP" role="9aQI4">
                       <node concept="3SKdUt" id="7Wa2sv3GEws" role="3cqZAp">
-                        <node concept="3SKdUq" id="7Wa2sv3GEwt" role="3SKWNk">
-                          <property role="3SKdUp" value="number[a|b]{inf}" />
+                        <node concept="1PaTwC" id="17Nm8oCo8C$" role="3ndbpf">
+                          <node concept="3oM_SD" id="17Nm8oCo8C_" role="1PaTwD">
+                            <property role="3oM_SC" value="number[a|b]{inf}" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3cpWs8" id="7Wa2sv3GD$f" role="3cqZAp">
@@ -3164,8 +3318,10 @@
                   <node concept="3clFbJ" id="7Wa2sv3Gi0A" role="3cqZAp">
                     <node concept="3clFbS" id="7Wa2sv3Gi0C" role="3clFbx">
                       <node concept="3SKdUt" id="7Wa2sv3GEEr" role="3cqZAp">
-                        <node concept="3SKdUq" id="7Wa2sv3GEEt" role="3SKWNk">
-                          <property role="3SKdUp" value="number[inf|inf]{inf}" />
+                        <node concept="1PaTwC" id="17Nm8oCo8CA" role="3ndbpf">
+                          <node concept="3oM_SD" id="17Nm8oCo8CB" role="1PaTwD">
+                            <property role="3oM_SC" value="number[inf|inf]{inf}" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="7Wa2sv3Gn9D" role="3cqZAp">
@@ -3196,8 +3352,10 @@
                     <node concept="9aQIb" id="7Wa2sv3Gp7U" role="9aQIa">
                       <node concept="3clFbS" id="7Wa2sv3Gp7V" role="9aQI4">
                         <node concept="3SKdUt" id="7Wa2sv3GEMi" role="3cqZAp">
-                          <node concept="3SKdUq" id="7Wa2sv3GEMj" role="3SKWNk">
-                            <property role="3SKdUp" value="number[inf|inf]{p}" />
+                          <node concept="1PaTwC" id="17Nm8oCo8CC" role="3ndbpf">
+                            <node concept="3oM_SD" id="17Nm8oCo8CD" role="1PaTwD">
+                              <property role="3oM_SC" value="number[inf|inf]{p}" />
+                            </node>
                           </node>
                         </node>
                         <node concept="3cpWs8" id="7Wa2sv3Gpi$" role="3cqZAp">
@@ -3356,7 +3514,7 @@
                 <node concept="Xl_RD" id="3p6$WoEzUAm" role="2MkJ7o">
                   <property role="Xl_RC" value="invalid range (max &lt; min or precison error)" />
                 </node>
-                <node concept="1YBJjd" id="3p6$WoEzUBQ" role="2OEOjV">
+                <node concept="1YBJjd" id="3p6$WoEzUBQ" role="1urrMF">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />
                 </node>
               </node>
@@ -3391,7 +3549,7 @@
                 <node concept="Xl_RD" id="19PglA255ds" role="2MkJ7o">
                   <property role="Xl_RC" value="precision cannot be derived from range" />
                 </node>
-                <node concept="1YBJjd" id="19PglA256Ii" role="2OEOjV">
+                <node concept="1YBJjd" id="19PglA256Ii" role="1urrMF">
                   <ref role="1YBMHb" node="3p6$WoEzUg2" resolve="nt" />
                 </node>
               </node>
@@ -3507,7 +3665,7 @@
             <node concept="Xl_RD" id="7DTWJ$8l1Ci" role="2MkJ7o">
               <property role="Xl_RC" value="only number types can be used here" />
             </node>
-            <node concept="2OqwBi" id="7DTWJ$8l1JQ" role="2OEOjV">
+            <node concept="2OqwBi" id="7DTWJ$8l1JQ" role="1urrMF">
               <node concept="1YBJjd" id="7DTWJ$8l1CF" role="2Oq$k0">
                 <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
               </node>
@@ -3570,11 +3728,11 @@
                           <property role="Xl_RC" value="target precision must be lower than " />
                         </node>
                       </node>
-                      <node concept="1YBJjd" id="7DTWJ$8l6tx" role="2OEOjV">
-                        <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
-                      </node>
-                      <node concept="2ODE4t" id="7DTWJ$8l6y0" role="2OEWyd">
+                      <node concept="2ODE4t" id="7DTWJ$8l6y0" role="1urrC5">
                         <ref role="2ODJFN" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
+                      </node>
+                      <node concept="1YBJjd" id="7DTWJ$8l6tx" role="1urrMF">
+                        <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                       </node>
                     </node>
                   </node>
@@ -3790,7 +3948,7 @@
             <node concept="Xl_RD" id="46cplYy1TH1" role="2MkJ7o">
               <property role="Xl_RC" value="only number types can be used here" />
             </node>
-            <node concept="2OqwBi" id="46cplYy1TH2" role="2OEOjV">
+            <node concept="2OqwBi" id="46cplYy1TH2" role="1urrMF">
               <node concept="1YBJjd" id="46cplYy1TH3" role="2Oq$k0">
                 <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
               </node>
@@ -3808,7 +3966,7 @@
                   <node concept="Xl_RD" id="46cplYy1YG_" role="2MkJ7o">
                     <property role="Xl_RC" value="only number types can be used here" />
                   </node>
-                  <node concept="2OqwBi" id="46cplYy1YOA" role="2OEOjV">
+                  <node concept="2OqwBi" id="46cplYy1YOA" role="1urrMF">
                     <node concept="1YBJjd" id="46cplYy1YGL" role="2Oq$k0">
                       <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
                     </node>
@@ -3867,7 +4025,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="46cplYy290c" role="2OEOjV">
+                        <node concept="2OqwBi" id="46cplYy290c" role="1urrMF">
                           <node concept="1YBJjd" id="46cplYy28N1" role="2Oq$k0">
                             <ref role="1YBMHb" node="46cplYy1TGI" resolve="lee" />
                           </node>
@@ -4032,7 +4190,7 @@
                                   <node concept="Xl_RD" id="53cOfDpd5Z7" role="2MkJ7o">
                                     <property role="Xl_RC" value="Multiple otherwise literals are not allowed" />
                                   </node>
-                                  <node concept="37vLTw" id="53cOfDpd6ik" role="2OEOjV">
+                                  <node concept="37vLTw" id="53cOfDpd6ik" role="1urrMF">
                                     <ref role="3cqZAo" node="53cOfDpd5JT" resolve="it" />
                                   </node>
                                 </node>
@@ -4063,7 +4221,7 @@
                           <node concept="Xl_RD" id="53cOfDpd9Zb" role="a7wSD">
                             <property role="Xl_RC" value="Otherwise literal should be used at the last position of all options" />
                           </node>
-                          <node concept="1YBJjd" id="53cOfDpda0G" role="2OEOjV">
+                          <node concept="1YBJjd" id="53cOfDpda0G" role="1urrMF">
                             <ref role="1YBMHb" node="53cOfDpd0AS" resolve="otherwiseLiteral" />
                           </node>
                         </node>
@@ -4111,7 +4269,7 @@
             <node concept="Xl_RD" id="53cOfDpd1C5" role="a7wSD">
               <property role="Xl_RC" value="Otherwise literal may not be used at this location" />
             </node>
-            <node concept="1YBJjd" id="53cOfDpd1DS" role="2OEOjV">
+            <node concept="1YBJjd" id="53cOfDpd1DS" role="1urrMF">
               <ref role="1YBMHb" node="53cOfDpd0AS" resolve="otherwiseLiteral" />
             </node>
           </node>
@@ -4467,7 +4625,7 @@
                             <node concept="Xl_RD" id="vVoQWC6haL" role="2MkJ7o">
                               <property role="Xl_RC" value="bounds must be the same precision" />
                             </node>
-                            <node concept="1YBJjd" id="vVoQWC6hbv" role="2OEOjV">
+                            <node concept="1YBJjd" id="vVoQWC6hbv" role="1urrMF">
                               <ref role="1YBMHb" node="vVoQWC58sV" resolve="be" />
                             </node>
                           </node>
@@ -4570,7 +4728,7 @@
                           <node concept="Xl_RD" id="1VmWkC1rFWV" role="2MkJ7o">
                             <property role="Xl_RC" value="can only work with numbers" />
                           </node>
-                          <node concept="1YBJjd" id="1VmWkC1rFXR" role="2OEOjV">
+                          <node concept="1YBJjd" id="1VmWkC1rFXR" role="1urrMF">
                             <ref role="1YBMHb" node="vVoQWC58sV" resolve="be" />
                           </node>
                         </node>
