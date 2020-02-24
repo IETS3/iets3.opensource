@@ -468,6 +468,29 @@
               </node>
             </node>
             <node concept="1g0IQG" id="5hullqu1KnL" role="1geGt4">
+              <node concept="3tD6jV" id="6EEZHsfdit$" role="3F10Kt">
+                <ref role="3tD7wE" to="reoo:5PDTdguqQmB" resolve="shade-color" />
+                <node concept="3sjG9q" id="6EEZHsfdit_" role="3tD6jU">
+                  <node concept="3clFbS" id="6EEZHsfditA" role="2VODD2">
+                    <node concept="3cpWs6" id="6EEZHsfditB" role="3cqZAp">
+                      <node concept="2ShNRf" id="6EEZHsfditC" role="3cqZAk">
+                        <node concept="1pGfFk" id="6EEZHsfditD" role="2ShVmc">
+                          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                          <node concept="3cmrfG" id="6EEZHsfditE" role="37wK5m">
+                            <property role="3cmrfH" value="220" />
+                          </node>
+                          <node concept="3cmrfG" id="6EEZHsfditF" role="37wK5m">
+                            <property role="3cmrfH" value="220" />
+                          </node>
+                          <node concept="3cmrfG" id="6EEZHsfditG" role="37wK5m">
+                            <property role="3cmrfH" value="220" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3hWdHu" id="5hullqu1KnM" role="3hTmz4">
                 <property role="Vb096" value="darkGray" />
               </node>
@@ -517,6 +540,7 @@
               <property role="1O74Pk" value="true" />
               <property role="39s7Ar" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" to="itrz:ub9nkyQsN2" resolve="iets3Identifier" />
             </node>
           </node>
         </node>

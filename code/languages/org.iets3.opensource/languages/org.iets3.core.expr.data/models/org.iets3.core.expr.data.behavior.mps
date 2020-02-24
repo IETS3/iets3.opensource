@@ -12,6 +12,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -479,6 +480,28 @@
         </node>
       </node>
       <node concept="17QB3L" id="cPLa7FudEG" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6EEZHsfkfhg">
+    <ref role="13h7C2" to="e9k1:cPLa7Fpiy9" resolve="DataRow" />
+    <node concept="13hLZK" id="6EEZHsfkfhh" role="13h7CW">
+      <node concept="3clFbS" id="6EEZHsfkfhi" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6EEZHsfkft0" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="6EEZHsfkftd" role="1B3o_S" />
+      <node concept="3clFbS" id="6EEZHsfkfte" role="3clF47">
+        <node concept="3clFbF" id="6EEZHsfkfDb" role="3cqZAp">
+          <node concept="2OqwBi" id="6EEZHsfkfR2" role="3clFbG">
+            <node concept="13iPFW" id="6EEZHsfkfD6" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6EEZHsfkg9e" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6EEZHsfkftf" role="3clF45" />
     </node>
   </node>
 </model>
