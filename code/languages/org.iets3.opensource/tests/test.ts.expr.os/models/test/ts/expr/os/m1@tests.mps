@@ -46,7 +46,6 @@
         <child id="5476670926298698900" name="outputNodes" index="2lJPY$" />
         <child id="6626913010124294914" name="migration" index="3ea0P7" />
       </concept>
-      <concept id="8578280453509464010" name="jetbrains.mps.lang.test.structure.NodeTypeSystemWarningCheckOperation" flags="ng" index="o5Tdl" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -3171,7 +3170,7 @@
                   <ref role="39XzEq" to="t4jv:6iJ_gQCtexd" />
                 </node>
               </node>
-              <node concept="o5Tdl" id="2pvC4WHgI2H" role="7EUXB" />
+              <node concept="29bkU" id="3K7BhJzT3mE" role="7EUXB" />
             </node>
           </node>
         </node>
@@ -14076,7 +14075,7 @@
                   <ref role="39XzEq" to="byea:5a_u3OyRzzJ" />
                 </node>
               </node>
-              <node concept="o5Tdl" id="2pvC4WHjSCC" role="7EUXB" />
+              <node concept="29bkU" id="3K7BhJzSD8K" role="7EUXB" />
             </node>
           </node>
         </node>
