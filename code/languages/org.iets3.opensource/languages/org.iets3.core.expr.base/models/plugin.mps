@@ -3,15 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -11715,16 +11715,40 @@
         </node>
         <node concept="3clFbJ" id="kxHAhaMR4t" role="3cqZAp">
           <node concept="3clFbS" id="kxHAhaMR4v" role="3clFbx">
-            <node concept="3cpWs6" id="4$QBvTqU1ev" role="3cqZAp">
-              <node concept="2OqwBi" id="4$QBvTqU4np" role="3cqZAk">
-                <node concept="37vLTw" id="4$QBvTqU4br" role="2Oq$k0">
-                  <ref role="3cqZAo" node="kxHAhaMVUt" resolve="overrider" />
+            <node concept="3cpWs8" id="1Miu7yW1UBh" role="3cqZAp">
+              <node concept="3cpWsn" id="1Miu7yW1UBi" role="3cpWs9">
+                <property role="TrG5h" value="overriddenType" />
+                <node concept="3Tqbb2" id="1Miu7yW1UpF" role="1tU5fm">
+                  <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
                 </node>
-                <node concept="2qgKlT" id="4$QBvTqU4D_" role="2OqNvi">
-                  <ref role="37wK5l" to="pbu6:kxHAhaMTEW" resolve="overrideType" />
-                  <node concept="37vLTw" id="4$QBvTqU4Mz" role="37wK5m">
-                    <ref role="3cqZAo" node="4$QBvTqTZPA" resolve="type" />
+                <node concept="2OqwBi" id="1Miu7yW1UBj" role="33vP2m">
+                  <node concept="37vLTw" id="1Miu7yW1UBk" role="2Oq$k0">
+                    <ref role="3cqZAo" node="kxHAhaMVUt" resolve="overrider" />
                   </node>
+                  <node concept="2qgKlT" id="1Miu7yW1UBl" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:331ScJ7Z_Ez" resolve="overrideTypeAtLocation" />
+                    <node concept="37vLTw" id="1Miu7yW1UBm" role="37wK5m">
+                      <ref role="3cqZAo" node="4$QBvTqTZPA" resolve="type" />
+                    </node>
+                    <node concept="37vLTw" id="1Miu7yW1UBn" role="37wK5m">
+                      <ref role="3cqZAo" node="4$QBvTqU0Hz" resolve="context" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1Miu7yW1V1x" role="3cqZAp">
+              <node concept="3clFbS" id="1Miu7yW1V1z" role="3clFbx">
+                <node concept="3cpWs6" id="4$QBvTqU1ev" role="3cqZAp">
+                  <node concept="37vLTw" id="1Miu7yW1UBo" role="3cqZAk">
+                    <ref role="3cqZAo" node="1Miu7yW1UBi" resolve="overriddenType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="1Miu7yW1VmH" role="3clFbw">
+                <node concept="10Nm6u" id="1Miu7yW1VoK" role="3uHU7w" />
+                <node concept="37vLTw" id="1Miu7yW1V86" role="3uHU7B">
+                  <ref role="3cqZAo" node="1Miu7yW1UBi" resolve="overriddenType" />
                 </node>
               </node>
             </node>

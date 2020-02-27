@@ -123,7 +123,7 @@
     <node concept="1TJgyj" id="1JOtRcapYu0" role="1TKVEi">
       <property role="IQ2ns" value="2014366269320980352" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="pp" />
+      <property role="20kJfa" value="path" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
     </node>
