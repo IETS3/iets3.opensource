@@ -596,7 +596,7 @@
         <node concept="3clFbS" id="5XaocLWKnzZ" role="3clFbx">
           <node concept="2MkqsV" id="5XaocLWKnE0" role="3cqZAp">
             <node concept="Xl_RD" id="5XaocLWKnEi" role="2MkJ7o">
-              <property role="Xl_RC" value="There is no unit to strip!" />
+              <property role="Xl_RC" value="There is no unit to strip" />
             </node>
             <node concept="1YBJjd" id="5XaocLWKnEU" role="1urrMF">
               <ref role="1YBMHb" node="5XaocLWKjTW" resolve="expression" />
@@ -806,7 +806,7 @@
               <node concept="3clFbS" id="1wGuEUwrqnm" role="1bW5cS">
                 <node concept="2MkqsV" id="1wGuEUwrqsy" role="3cqZAp">
                   <node concept="Xl_RD" id="1wGuEUwrqxT" role="2MkJ7o">
-                    <property role="Xl_RC" value="The specifier's type is already covered!" />
+                    <property role="Xl_RC" value="The specifier's type is already covered" />
                   </node>
                   <node concept="37vLTw" id="1wGuEUwrs0w" role="1urrMF">
                     <ref role="3cqZAo" node="1wGuEUwrqnn" resolve="it" />
@@ -911,7 +911,7 @@
                 <node concept="3clFbS" id="20xYXnqtdaw" role="3clFbx">
                   <node concept="2MkqsV" id="20xYXnqtdG8" role="3cqZAp">
                     <node concept="Xl_RD" id="20xYXnqtdGq" role="2MkJ7o">
-                      <property role="Xl_RC" value="The conversion expression's unit and the rule's target unit do not match!" />
+                      <property role="Xl_RC" value="The conversion expression's unit and the rule's target unit do not match" />
                     </node>
                     <node concept="2OqwBi" id="20xYXnqtdR3" role="1urrMF">
                       <node concept="1YBJjd" id="1wGuEUvYEHj" role="2Oq$k0">
@@ -1067,7 +1067,7 @@
                   <node concept="3clFbS" id="25BDdv8anlu" role="3clFbx">
                     <node concept="2MkqsV" id="20xYXnqti6M" role="3cqZAp">
                       <node concept="Xl_RD" id="20xYXnqtiV$" role="2MkJ7o">
-                        <property role="Xl_RC" value="A lazy conversion expression must not have a type with unit!" />
+                        <property role="Xl_RC" value="A lazy conversion expression must not have a type with unit" />
                       </node>
                       <node concept="2OqwBi" id="20xYXnqtibs" role="1urrMF">
                         <node concept="1YBJjd" id="1wGuEUvYGm$" role="2Oq$k0">
@@ -1100,7 +1100,7 @@
             <node concept="3clFbS" id="4V8dpOkahl2" role="3clFbx">
               <node concept="a7r0C" id="4V8dpOkajf9" role="3cqZAp">
                 <node concept="Xl_RD" id="4V8dpOkajfN" role="a7wSD">
-                  <property role="Xl_RC" value="Possible loss of precision (div before mul)!" />
+                  <property role="Xl_RC" value="Possible loss of precision (div before mul)" />
                 </node>
                 <node concept="2OqwBi" id="4V8dpOkajpm" role="1urrMF">
                   <node concept="1YBJjd" id="1wGuEUvYH0W" role="2Oq$k0">
@@ -1502,7 +1502,7 @@
             <node concept="3clFbS" id="2Jcs$lvwTek" role="3clFbx">
               <node concept="2MkqsV" id="2Jcs$lvwT$h" role="3cqZAp">
                 <node concept="Xl_RD" id="2Jcs$lvwT$A" role="2MkJ7o">
-                  <property role="Xl_RC" value="Self referencing convert expression!" />
+                  <property role="Xl_RC" value="Self referencing convert expression" />
                 </node>
                 <node concept="1YBJjd" id="2Jcs$lvwTDx" role="1urrMF">
                   <ref role="1YBMHb" node="1wGuEUvYexJ" resolve="specifier" />
@@ -1561,7 +1561,7 @@
         <node concept="3clFbS" id="yGiRIEW2SQ" role="3clFbx">
           <node concept="2MkqsV" id="yGiRIEWkAm" role="3cqZAp">
             <node concept="Xl_RD" id="yGiRIEWkAF" role="2MkJ7o">
-              <property role="Xl_RC" value="No matching conversion specifier can be found!" />
+              <property role="Xl_RC" value="No matching conversion specifier can be found" />
             </node>
             <node concept="1YBJjd" id="yGiRIEWkCy" role="1urrMF">
               <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
@@ -1608,7 +1608,7 @@
                 <node concept="liA8E" id="52UOzzPp0Rp" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="yGiRIEWwlX" role="37wK5m">
-                    <property role="Xl_RC" value="Multiple matching conversion specifiers have been found!" />
+                    <property role="Xl_RC" value="Multiple matching conversion specifiers have been found" />
                   </node>
                 </node>
               </node>
@@ -1719,7 +1719,7 @@
           <node concept="3clFbS" id="12tdV5AgivU" role="3eOfB_">
             <node concept="2MkqsV" id="12tdV5AgRtU" role="3cqZAp">
               <node concept="Xl_RD" id="12tdV5AgRu3" role="2MkJ7o">
-                <property role="Xl_RC" value="The conversion specifier must be set!" />
+                <property role="Xl_RC" value="The conversion specifier must be set" />
               </node>
               <node concept="1YBJjd" id="5Q6EZP6JBMZ" role="1urrMF">
                 <ref role="1YBMHb" node="4lYUAbuFAB" resolve="expression" />
@@ -2024,7 +2024,7 @@
               <node concept="3clFbS" id="6CnXAkqyQQa" role="9aQI4">
                 <node concept="2MkqsV" id="6CnXAkqyR2a" role="3cqZAp">
                   <node concept="Xl_RD" id="6CnXAkqyR2v" role="2MkJ7o">
-                    <property role="Xl_RC" value="The expression's type is not applicable for the specifier!" />
+                    <property role="Xl_RC" value="The expression's type is not applicable for the specifier" />
                   </node>
                   <node concept="2OqwBi" id="6CnXAkqyRfJ" role="1urrMF">
                     <node concept="1YBJjd" id="6CnXAkqyR6Y" role="2Oq$k0">

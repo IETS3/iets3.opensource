@@ -148,6 +148,9 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
+      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802790" name="nodeToReport_old" index="2OEOjV" />
+      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -3717,35 +3720,59 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbJ" id="7DTWJ$8l4iR" role="3cqZAp">
-                  <node concept="3clFbS" id="7DTWJ$8l4iT" role="3clFbx">
-                    <node concept="2MkqsV" id="7DTWJ$8l5tJ" role="3cqZAp">
-                      <node concept="3cpWs3" id="7DTWJ$8l6p5" role="2MkJ7o">
-                        <node concept="37vLTw" id="7DTWJ$8l6pc" role="3uHU7w">
-                          <ref role="3cqZAo" node="7DTWJ$8l3V_" resolve="prec" />
-                        </node>
-                        <node concept="Xl_RD" id="7DTWJ$8l5tS" role="3uHU7B">
-                          <property role="Xl_RC" value="target precision must be lower than " />
-                        </node>
+                <node concept="3clFbJ" id="49k4dbvQQqm" role="3cqZAp">
+                  <node concept="3clFbS" id="49k4dbvQQqo" role="3clFbx">
+                    <node concept="2MkqsV" id="49k4dbvQURc" role="3cqZAp">
+                      <node concept="Xl_RD" id="49k4dbvQURr" role="2MkJ7o">
+                        <property role="Xl_RC" value="attempting to change precision of an integer value" />
                       </node>
-                      <node concept="2ODE4t" id="7DTWJ$8l6y0" role="1urrC5">
-                        <ref role="2ODJFN" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
-                      </node>
-                      <node concept="1YBJjd" id="7DTWJ$8l6tx" role="1urrMF">
+                      <node concept="1YBJjd" id="49k4dbvQV32" role="2OEOjV">
                         <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2d3UOw" id="7DTWJ$8l54o" role="3clFbw">
-                    <node concept="37vLTw" id="7DTWJ$8l5fh" role="3uHU7w">
+                  <node concept="3clFbC" id="49k4dbvQRmh" role="3clFbw">
+                    <node concept="3cmrfG" id="49k4dbvQRND" role="3uHU7w">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="37vLTw" id="49k4dbvQQEh" role="3uHU7B">
                       <ref role="3cqZAo" node="7DTWJ$8l3V_" resolve="prec" />
                     </node>
-                    <node concept="2OqwBi" id="7DTWJ$8l4wb" role="3uHU7B">
-                      <node concept="1YBJjd" id="7DTWJ$8l4ng" role="2Oq$k0">
-                        <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
-                      </node>
-                      <node concept="3TrcHB" id="7DTWJ$8l5Z2" role="2OqNvi">
-                        <ref role="3TsBF5" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
+                  </node>
+                  <node concept="9aQIb" id="49k4dbvQSpA" role="9aQIa">
+                    <node concept="3clFbS" id="49k4dbvQSpB" role="9aQI4">
+                      <node concept="3clFbJ" id="7DTWJ$8l4iR" role="3cqZAp">
+                        <node concept="3clFbS" id="7DTWJ$8l4iT" role="3clFbx">
+                          <node concept="2MkqsV" id="1YAbhnaMEWr" role="3cqZAp">
+                            <node concept="3cpWs3" id="1YAbhnaMEWs" role="2MkJ7o">
+                              <node concept="37vLTw" id="1YAbhnaMEWt" role="3uHU7w">
+                                <ref role="3cqZAo" node="7DTWJ$8l3V_" resolve="prec" />
+                              </node>
+                              <node concept="Xl_RD" id="1YAbhnaMEWu" role="3uHU7B">
+                                <property role="Xl_RC" value="target precision must be lower than " />
+                              </node>
+                            </node>
+                            <node concept="2ODE4t" id="1YAbhnaMEWv" role="1urrC5">
+                              <ref role="2ODJFN" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
+                            </node>
+                            <node concept="1YBJjd" id="1YAbhnaMEWw" role="1urrMF">
+                              <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2d3UOw" id="7DTWJ$8l54o" role="3clFbw">
+                          <node concept="37vLTw" id="7DTWJ$8l5fh" role="3uHU7w">
+                            <ref role="3cqZAo" node="7DTWJ$8l3V_" resolve="prec" />
+                          </node>
+                          <node concept="2OqwBi" id="7DTWJ$8l4wb" role="3uHU7B">
+                            <node concept="1YBJjd" id="7DTWJ$8l4ng" role="2Oq$k0">
+                              <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
+                            </node>
+                            <node concept="3TrcHB" id="7DTWJ$8l5Z2" role="2OqNvi">
+                              <ref role="3TsBF5" to="5qo5:7DTWJ$8l5Ll" resolve="targetPrecision" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

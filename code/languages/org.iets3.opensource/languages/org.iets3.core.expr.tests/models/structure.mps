@@ -264,6 +264,9 @@
     <node concept="PrWs8" id="4$QBvTqSrx6" role="PzmwI">
       <ref role="PrY4T" to="hm2y:kxHAhaMPH7" resolve="ITypeOverridingContext" />
     </node>
+    <node concept="PrWs8" id="6vTsh3ZZp5j" role="PzmwI">
+      <ref role="PrY4T" node="59WscmUTdO4" resolve="ITestItemContainer" />
+    </node>
     <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/testsuite.png" />
     </node>
@@ -312,6 +315,11 @@
     </node>
     <node concept="PrWs8" id="4voDClFPjf3" role="PzmwI">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="1TJgyi" id="48NC6VzSNLv" role="1TKVEl">
+      <property role="IQ2nx" value="4770332828445654111" />
+      <property role="TrG5h" value="isIgnored" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1$THIv">

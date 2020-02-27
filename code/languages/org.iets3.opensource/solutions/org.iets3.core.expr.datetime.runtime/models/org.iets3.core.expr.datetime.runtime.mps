@@ -4,6 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -4419,8 +4420,8 @@
       </node>
       <node concept="3clFbS" id="4O9rw8aCZcy" role="3clF47">
         <node concept="3clFbF" id="4O9rw8aCZc_" role="3cqZAp">
-          <node concept="3nyPlj" id="4O9rw8aCZc$" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+          <node concept="Xl_RD" id="41xkdV7Z8Ps" role="3clFbG">
+            <property role="Xl_RC" value="[date range: empty]" />
           </node>
         </node>
       </node>
@@ -4667,6 +4668,208 @@
     <node concept="2tJIrI" id="64dkh69UxDi" role="jymVt" />
     <node concept="2tJIrI" id="64dkh69UxDm" role="jymVt" />
     <node concept="3Tm1VV" id="64dkh69UxBW" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4J4oiBB8Clj">
+    <property role="TrG5h" value="FromUptoHelper" />
+    <node concept="2tJIrI" id="4J4oiBB8CuC" role="jymVt" />
+    <node concept="2YIFZL" id="4J4oiBB8EnK" role="jymVt">
+      <property role="TrG5h" value="from" />
+      <node concept="3uibUv" id="4J4oiBB8Gva" role="3clF45">
+        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+      </node>
+      <node concept="3Tm1VV" id="4J4oiBB8EnN" role="1B3o_S" />
+      <node concept="3clFbS" id="4J4oiBB8EnO" role="3clF47">
+        <node concept="3cpWs8" id="5LVdhDvwfBT" role="3cqZAp">
+          <node concept="3cpWsn" id="5LVdhDvwfBU" role="3cpWs9">
+            <property role="TrG5h" value="endDate" />
+            <node concept="3uibUv" id="5LVdhDvwfyc" role="1tU5fm">
+              <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+            </node>
+            <node concept="2OqwBi" id="5LVdhDvwfBV" role="33vP2m">
+              <node concept="37vLTw" id="5LVdhDvwfBW" role="2Oq$k0">
+                <ref role="3cqZAo" node="4J4oiBB8F3l" resolve="range" />
+              </node>
+              <node concept="liA8E" id="5LVdhDvwfBX" role="2OqNvi">
+                <ref role="37wK5l" node="7khFtBHIiHR" resolve="end" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5LVdhDvwh33" role="3cqZAp">
+          <node concept="3clFbS" id="5LVdhDvwh35" role="3clFbx">
+            <node concept="3cpWs6" id="5LVdhDvwi0f" role="3cqZAp">
+              <node concept="2ShNRf" id="5LVdhDvwi0v" role="3cqZAk">
+                <node concept="HV5vD" id="5LVdhDvwi9T" role="2ShVmc">
+                  <ref role="HV5vE" node="4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5LVdhDvwhyl" role="3clFbw">
+            <node concept="37vLTw" id="5LVdhDvwh8g" role="2Oq$k0">
+              <ref role="3cqZAo" node="4J4oiBB8Fky" resolve="newStartDate" />
+            </node>
+            <node concept="liA8E" id="5LVdhDvwhVW" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.isAfter(java.time.chrono.ChronoLocalDate)" resolve="isAfter" />
+              <node concept="37vLTw" id="5LVdhDvwhWW" role="37wK5m">
+                <ref role="3cqZAo" node="5LVdhDvwfBU" resolve="endDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5LVdhDvx93v" role="3cqZAp">
+          <node concept="3clFbS" id="5LVdhDvx93w" role="3clFbx">
+            <node concept="3cpWs6" id="5LVdhDvx93x" role="3cqZAp">
+              <node concept="37vLTw" id="5LVdhDvx9rw" role="3cqZAk">
+                <ref role="3cqZAo" node="4J4oiBB8F3l" resolve="range" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5LVdhDvx93$" role="3clFbw">
+            <node concept="37vLTw" id="5LVdhDvx93_" role="2Oq$k0">
+              <ref role="3cqZAo" node="4J4oiBB8Fky" resolve="newStartDate" />
+            </node>
+            <node concept="liA8E" id="5LVdhDvx93A" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate)" resolve="isBefore" />
+              <node concept="2OqwBi" id="5LVdhDvx9lH" role="37wK5m">
+                <node concept="37vLTw" id="5LVdhDvx9hc" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4J4oiBB8F3l" resolve="range" />
+                </node>
+                <node concept="liA8E" id="5LVdhDvx9no" role="2OqNvi">
+                  <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5LVdhDvwfuZ" role="3cqZAp">
+          <node concept="2ShNRf" id="5LVdhDvwfv1" role="3cqZAk">
+            <node concept="1pGfFk" id="5LVdhDvwfv2" role="2ShVmc">
+              <ref role="37wK5l" node="7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
+              <node concept="37vLTw" id="5LVdhDvwgey" role="37wK5m">
+                <ref role="3cqZAo" node="4J4oiBB8Fky" resolve="newStartDate" />
+              </node>
+              <node concept="37vLTw" id="5LVdhDvwfBY" role="37wK5m">
+                <ref role="3cqZAo" node="5LVdhDvwfBU" resolve="endDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4J4oiBB8F3l" role="3clF46">
+        <property role="TrG5h" value="range" />
+        <node concept="3uibUv" id="4J4oiBB8F3k" role="1tU5fm">
+          <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4J4oiBB8Fky" role="3clF46">
+        <property role="TrG5h" value="newStartDate" />
+        <node concept="3uibUv" id="4J4oiBB8Fsl" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4J4oiBB8LQ9" role="jymVt" />
+    <node concept="2YIFZL" id="4J4oiBB8LvK" role="jymVt">
+      <property role="TrG5h" value="upto" />
+      <node concept="3uibUv" id="4J4oiBB8LvL" role="3clF45">
+        <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+      </node>
+      <node concept="3Tm1VV" id="4J4oiBB8LvM" role="1B3o_S" />
+      <node concept="3clFbS" id="4J4oiBB8LvN" role="3clF47">
+        <node concept="3cpWs8" id="5LVdhDvwrg8" role="3cqZAp">
+          <node concept="3cpWsn" id="5LVdhDvwrg9" role="3cpWs9">
+            <property role="TrG5h" value="beginDate" />
+            <node concept="3uibUv" id="5LVdhDvwrga" role="1tU5fm">
+              <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+            </node>
+            <node concept="2OqwBi" id="5LVdhDvwrgb" role="33vP2m">
+              <node concept="37vLTw" id="5LVdhDvwrgc" role="2Oq$k0">
+                <ref role="3cqZAo" node="4J4oiBB8Lwi" resolve="range" />
+              </node>
+              <node concept="liA8E" id="5LVdhDvwrXg" role="2OqNvi">
+                <ref role="37wK5l" node="7khFtBHIiHK" resolve="begin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5LVdhDvwrgn" role="3cqZAp">
+          <node concept="3clFbS" id="5LVdhDvwrgo" role="3clFbx">
+            <node concept="3cpWs6" id="5LVdhDvwrgp" role="3cqZAp">
+              <node concept="2ShNRf" id="5LVdhDvwrgq" role="3cqZAk">
+                <node concept="HV5vD" id="5LVdhDvwrgr" role="2ShVmc">
+                  <ref role="HV5vE" node="4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5LVdhDvwrgs" role="3clFbw">
+            <node concept="37vLTw" id="5LVdhDvwrgt" role="2Oq$k0">
+              <ref role="3cqZAo" node="4J4oiBB8Lwk" resolve="newEndDate" />
+            </node>
+            <node concept="liA8E" id="5LVdhDvwrgu" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate)" resolve="isBefore" />
+              <node concept="37vLTw" id="5LVdhDvwrgv" role="37wK5m">
+                <ref role="3cqZAo" node="5LVdhDvwrg9" resolve="beginDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5LVdhDvxrCv" role="3cqZAp">
+          <node concept="3clFbS" id="5LVdhDvxrCw" role="3clFbx">
+            <node concept="3cpWs6" id="5LVdhDvxrCx" role="3cqZAp">
+              <node concept="37vLTw" id="5LVdhDvxrZT" role="3cqZAk">
+                <ref role="3cqZAo" node="4J4oiBB8Lwi" resolve="range" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5LVdhDvxrC$" role="3clFbw">
+            <node concept="37vLTw" id="5LVdhDvxrC_" role="2Oq$k0">
+              <ref role="3cqZAo" node="4J4oiBB8Lwk" resolve="newEndDate" />
+            </node>
+            <node concept="liA8E" id="5LVdhDvxrCA" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.isAfter(java.time.chrono.ChronoLocalDate)" resolve="isAfter" />
+              <node concept="2OqwBi" id="5LVdhDvxrUx" role="37wK5m">
+                <node concept="37vLTw" id="5LVdhDvxrSF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4J4oiBB8Lwi" resolve="range" />
+                </node>
+                <node concept="liA8E" id="5LVdhDvxrVK" role="2OqNvi">
+                  <ref role="37wK5l" node="7khFtBHIiHR" resolve="end" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5LVdhDvwrgw" role="3cqZAp">
+          <node concept="2ShNRf" id="5LVdhDvwrgx" role="3cqZAk">
+            <node concept="1pGfFk" id="5LVdhDvwrgy" role="2ShVmc">
+              <ref role="37wK5l" node="7khFtBHHXIt" resolve="ArbitraryDateRangeValue" />
+              <node concept="37vLTw" id="5LVdhDvwrg$" role="37wK5m">
+                <ref role="3cqZAo" node="5LVdhDvwrg9" resolve="beginDate" />
+              </node>
+              <node concept="37vLTw" id="5LVdhDvwrgz" role="37wK5m">
+                <ref role="3cqZAo" node="4J4oiBB8Lwk" resolve="newEndDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4J4oiBB8Lwi" role="3clF46">
+        <property role="TrG5h" value="range" />
+        <node concept="3uibUv" id="4J4oiBB8Lwj" role="1tU5fm">
+          <ref role="3uigEE" node="7khFtBHIbg6" resolve="AbstractDateRangeValue" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4J4oiBB8Lwk" role="3clF46">
+        <property role="TrG5h" value="newEndDate" />
+        <node concept="3uibUv" id="4J4oiBB8Lwl" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4J4oiBB8CxA" role="jymVt" />
+    <node concept="2tJIrI" id="4J4oiBB8CxE" role="jymVt" />
+    <node concept="3Tm1VV" id="4J4oiBB8Clk" role="1B3o_S" />
   </node>
 </model>
 

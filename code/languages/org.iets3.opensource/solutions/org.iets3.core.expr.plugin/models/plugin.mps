@@ -4452,6 +4452,9 @@
       <node concept="tCFHf" id="4yQfyMjwKJW" role="ftvYc">
         <ref role="tCJdB" node="4yQfyMjvYR7" resolve="selectAllTraceNodeInCurrentTrace" />
       </node>
+      <node concept="tCFHf" id="2JfTTG8ivEn" role="ftvYc">
+        <ref role="tCJdB" node="2JfTTG8itTT" resolve="selectNextTraceNodeAndInspectSource" />
+      </node>
       <node concept="2a7GMi" id="4fb2DFBg_Fj" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="4fb2DFBg_Fo" role="2f5YQi">
@@ -6414,7 +6417,7 @@
   </node>
   <node concept="sE7Ow" id="4yQfyMjrpAh">
     <property role="TrG5h" value="selectNextTraceNodeInCurrentTrace" />
-    <property role="2uzpH1" value="Select next trace of this Node" />
+    <property role="2uzpH1" value="Trace: select next trace of this node" />
     <node concept="1DS2jV" id="4yQfyMjrpAi" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -6526,7 +6529,7 @@
   </node>
   <node concept="sE7Ow" id="4yQfyMjvYR7">
     <property role="TrG5h" value="selectAllTraceNodeInCurrentTrace" />
-    <property role="2uzpH1" value="Select all traces of this Node" />
+    <property role="2uzpH1" value="Trace: select all traces of this node" />
     <node concept="1DS2jV" id="4yQfyMjvYR8" role="1NuT2Z">
       <property role="TrG5h" value="ideaProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -8704,6 +8707,115 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="2JfTTG8itTT">
+    <property role="TrG5h" value="selectNextTraceNodeAndInspectSource" />
+    <property role="2uzpH1" value="Trace: select next trace and inspect source" />
+    <node concept="1DS2jV" id="2JfTTG8itTU" role="1NuT2Z">
+      <property role="TrG5h" value="ideaProject" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="2JfTTG8itTV" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="2JfTTG8itTW" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="2JfTTG8itTX" role="1oa70y" />
+    </node>
+    <node concept="2S4$dB" id="2JfTTG8itTY" role="1NuT2Z">
+      <property role="TrG5h" value="someNode" />
+      <node concept="3Tm6S6" id="2JfTTG8itTZ" role="1B3o_S" />
+      <node concept="1oajcY" id="2JfTTG8itU0" role="1oa70y" />
+      <node concept="3Tqbb2" id="2JfTTG8itU1" role="1tU5fm" />
+    </node>
+    <node concept="tnohg" id="2JfTTG8itU2" role="tncku">
+      <node concept="3clFbS" id="2JfTTG8itU3" role="2VODD2">
+        <node concept="3clFbF" id="2JfTTG8itU4" role="3cqZAp">
+          <node concept="2OqwBi" id="2JfTTG8itU5" role="3clFbG">
+            <node concept="2OqwBi" id="2JfTTG8itU6" role="2Oq$k0">
+              <node concept="2OqwBi" id="2JfTTG8itU7" role="2Oq$k0">
+                <node concept="2WthIp" id="2JfTTG8itU8" role="2Oq$k0" />
+                <node concept="1DTwFV" id="2JfTTG8itU9" role="2OqNvi">
+                  <ref role="2WH_rO" node="2JfTTG8itTU" resolve="ideaProject" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="2JfTTG8itUa" role="2OqNvi">
+                <ref role="LR4U5" to="pu3r:2jSY3BO3Y3t" resolve="TraceExplorer" />
+              </node>
+            </node>
+            <node concept="2XshWL" id="2JfTTG8itUb" role="2OqNvi">
+              <ref role="2WH_rO" to="pu3r:2JfTTG8dmB3" resolve="selectNextTraceForNodeInActiveTabAndInspect" />
+              <node concept="2OqwBi" id="2JfTTG8itUc" role="2XxRq1">
+                <node concept="2WthIp" id="2JfTTG8itUd" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2JfTTG8itUe" role="2OqNvi">
+                  <ref role="2WH_rO" node="2JfTTG8itTY" resolve="someNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="2JfTTG8itUg" role="tmbBb">
+      <node concept="3clFbS" id="2JfTTG8itUh" role="2VODD2">
+        <node concept="3clFbJ" id="2JfTTG8itUi" role="3cqZAp">
+          <node concept="3clFbS" id="2JfTTG8itUj" role="3clFbx">
+            <node concept="3cpWs6" id="2JfTTG8itUk" role="3cqZAp">
+              <node concept="3clFbT" id="2JfTTG8itUl" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2JfTTG8itUm" role="3clFbw">
+            <node concept="10Nm6u" id="2JfTTG8itUn" role="3uHU7w" />
+            <node concept="2OqwBi" id="2JfTTG8itUo" role="3uHU7B">
+              <node concept="2OqwBi" id="2JfTTG8itUp" role="2Oq$k0">
+                <node concept="2WthIp" id="2JfTTG8itUq" role="2Oq$k0" />
+                <node concept="1DTwFV" id="2JfTTG8itUr" role="2OqNvi">
+                  <ref role="2WH_rO" node="2JfTTG8itTU" resolve="ideaProject" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="2JfTTG8itUs" role="2OqNvi">
+                <ref role="LR4U5" to="pu3r:2jSY3BO3Y3t" resolve="TraceExplorer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2JfTTG8itUt" role="3cqZAp">
+          <node concept="3clFbS" id="2JfTTG8itUu" role="3clFbx">
+            <node concept="3cpWs6" id="2JfTTG8itUv" role="3cqZAp">
+              <node concept="3clFbT" id="2JfTTG8itUw" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2JfTTG8itUx" role="3clFbw">
+            <node concept="10Nm6u" id="2JfTTG8itUy" role="3uHU7w" />
+            <node concept="2OqwBi" id="2JfTTG8itUz" role="3uHU7B">
+              <node concept="1imeyB" id="2JfTTG8itU$" role="2OqNvi" />
+              <node concept="2OqwBi" id="2JfTTG8itU_" role="2Oq$k0">
+                <node concept="2OqwBi" id="2JfTTG8itUA" role="2Oq$k0">
+                  <node concept="2WthIp" id="2JfTTG8itUB" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="2JfTTG8itUC" role="2OqNvi">
+                    <ref role="2WH_rO" node="2JfTTG8itTU" resolve="ideaProject" />
+                  </node>
+                </node>
+                <node concept="LR4U6" id="2JfTTG8itUD" role="2OqNvi">
+                  <ref role="LR4U5" to="pu3r:2jSY3BO3Y3t" resolve="TraceExplorer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2JfTTG8itUE" role="3cqZAp">
+          <node concept="3clFbT" id="2JfTTG8itUF" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1QGGSu" id="2JfTTG8itUG" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/traceShowOne.png" />
     </node>
   </node>
 </model>
