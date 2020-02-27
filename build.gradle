@@ -63,7 +63,7 @@ def minor = "2"
 // Dependency versions
 ext.mpsVersion = '2019.2.4'
 
-def mbeddrVersion = "2019.2.22098.3bec968"
+def mbeddrVersion = "2019.2+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
