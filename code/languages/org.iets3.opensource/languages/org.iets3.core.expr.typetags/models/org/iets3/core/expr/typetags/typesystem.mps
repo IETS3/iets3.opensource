@@ -186,9 +186,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -1881,11 +1878,11 @@
                 <ref role="3TsBF5" to="tpd4:hfSilrU" resolve="errorText" />
               </node>
             </node>
-            <node concept="1YBJjd" id="6Gv16DNE6bM" role="2OEOjV">
-              <ref role="1YBMHb" node="6Gv16DNE3fN" resolve="e" />
-            </node>
             <node concept="AMVWg" id="5IOlOc8DcNO" role="lGtFl">
               <property role="TrG5h" value="RuntimeError" />
+            </node>
+            <node concept="1YBJjd" id="6Gv16DNE6bM" role="1urrMF">
+              <ref role="1YBMHb" node="6Gv16DNE3fN" resolve="e" />
             </node>
           </node>
         </node>

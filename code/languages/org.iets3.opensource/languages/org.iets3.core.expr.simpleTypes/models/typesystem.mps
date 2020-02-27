@@ -148,9 +148,6 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport_old" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -3726,7 +3723,7 @@
                       <node concept="Xl_RD" id="49k4dbvQURr" role="2MkJ7o">
                         <property role="Xl_RC" value="attempting to change precision of an integer value" />
                       </node>
-                      <node concept="1YBJjd" id="49k4dbvQV32" role="2OEOjV">
+                      <node concept="1YBJjd" id="49k4dbvQV32" role="1urrMF">
                         <ref role="1YBMHb" node="7DTWJ$8l0fR" resolve="ce" />
                       </node>
                     </node>

@@ -492,7 +492,7 @@
                 </node>
               </node>
               <node concept="3hWdHu" id="5hullqu1KnM" role="3hTmz4">
-                <property role="Vb096" value="darkGray" />
+                <property role="Vb096" value="fLJRk5B/darkGray" />
               </node>
               <node concept="3hShVS" id="5hullqu1KnN" role="3hTmz4">
                 <property role="3hSBKY" value="3" />
