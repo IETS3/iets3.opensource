@@ -1432,6 +1432,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4ZH31cjGRan" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4ZH31cjGRao" role="1B3o_S" />
+      <node concept="10P_77" id="4ZH31cjGRap" role="3clF45" />
+      <node concept="3clFbS" id="4ZH31cjGRaq" role="3clF47">
+        <node concept="3clFbF" id="4ZH31cjGRar" role="3cqZAp">
+          <node concept="3clFbT" id="4ZH31cjGRas" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="7NEp8pMMUwS" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -1590,6 +1604,32 @@
           </node>
           <node concept="BsUDl" id="5YygIlbiHGP" role="3clFbw">
             <ref role="37wK5l" node="5YygIlbih$m" resolve="allowUmlaute" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2pvC4WHgA30" role="3cqZAp">
+          <node concept="3clFbS" id="2pvC4WHgA32" role="3clFbx">
+            <node concept="3cpWs6" id="2pvC4WHgADN" role="3cqZAp">
+              <node concept="2OqwBi" id="2pvC4WHgAUg" role="3cqZAk">
+                <node concept="2OqwBi" id="2pvC4WHgAUh" role="2Oq$k0">
+                  <node concept="13iPFW" id="2pvC4WHgAUi" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2pvC4WHgAUj" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2pvC4WHgAUk" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                  <node concept="Xl_RD" id="2pvC4WHgAUl" role="37wK5m">
+                    <property role="Xl_RC" value="§" />
+                  </node>
+                  <node concept="Xl_RD" id="2pvC4WHgAUm" role="37wK5m">
+                    <property role="Xl_RC" value="P" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="BsUDl" id="2pvC4WHgAdK" role="3clFbw">
+            <ref role="37wK5l" node="4ZH31cjGRan" resolve="allowParagraph" />
           </node>
         </node>
         <node concept="3clFbJ" id="7NEp8pM2$K4" role="3cqZAp">

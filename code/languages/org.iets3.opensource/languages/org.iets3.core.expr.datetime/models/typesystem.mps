@@ -2091,5 +2091,125 @@
       <ref role="1YaFvo" to="mi3w:1RwPUjzgk0y" resolve="AbstractEarliestLastestExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5LVdhDvvyG1">
+    <property role="TrG5h" value="typeof_UpToOp" />
+    <property role="3GE5qa" value="range.cut" />
+    <node concept="3clFbS" id="5LVdhDvvyG2" role="18ibNy">
+      <node concept="1Z5TYs" id="5LVdhDvvyL0" role="3cqZAp">
+        <node concept="mw_s8" id="5LVdhDvvyL1" role="1ZfhKB">
+          <node concept="2pJPEk" id="5LVdhDvvyL2" role="mwGJk">
+            <node concept="2pJPED" id="5LVdhDvvyL3" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5LVdhDvvyL4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5LVdhDvvyL5" role="mwGJk">
+            <node concept="1YBJjd" id="5LVdhDvvyO8" role="1Z2MuG">
+              <ref role="1YBMHb" node="5LVdhDvvyG4" resolve="upToOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="5LVdhDvvyL7" role="3cqZAp">
+        <node concept="mw_s8" id="5LVdhDvvyL8" role="1ZfhKB">
+          <node concept="2pJPEk" id="5LVdhDvvyL9" role="mwGJk">
+            <node concept="2pJPED" id="5LVdhDvvyLa" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5LVdhDvvyLb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5LVdhDvvyLc" role="mwGJk">
+            <node concept="2OqwBi" id="5LVdhDvvyLd" role="1Z2MuG">
+              <node concept="1YBJjd" id="5LVdhDvvyOV" role="2Oq$k0">
+                <ref role="1YBMHb" node="5LVdhDvvyG4" resolve="upToOp" />
+              </node>
+              <node concept="3TrEf2" id="5LVdhDvvyLf" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:5LVdhDvvyES" resolve="date" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5LVdhDvvyG4" role="1YuTPh">
+      <property role="TrG5h" value="upToOp" />
+      <ref role="1YaFvo" to="mi3w:5LVdhDvvyER" resolve="UpToOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5LVdhDvvxVD">
+    <property role="TrG5h" value="typeof_FromOp" />
+    <property role="3GE5qa" value="range.cut" />
+    <node concept="3clFbS" id="5LVdhDvvxVE" role="18ibNy">
+      <node concept="1Z5TYs" id="5LVdhDvvy6$" role="3cqZAp">
+        <node concept="mw_s8" id="5LVdhDvvy7m" role="1ZfhKB">
+          <node concept="2pJPEk" id="5LVdhDvvy7c" role="mwGJk">
+            <node concept="2pJPED" id="5LVdhDvvy7x" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5LVdhDvvy6B" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5LVdhDvvxVK" role="mwGJk">
+            <node concept="1YBJjd" id="5LVdhDvvxXC" role="1Z2MuG">
+              <ref role="1YBMHb" node="5LVdhDvvxVG" resolve="fromOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="5LVdhDvvyDD" role="3cqZAp">
+        <node concept="mw_s8" id="5LVdhDvvyE8" role="1ZfhKB">
+          <node concept="2pJPEk" id="5LVdhDvvyE4" role="mwGJk">
+            <node concept="2pJPED" id="5LVdhDvvyEj" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:3nGzaxU$Pz8" resolve="DateType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5LVdhDvvyDG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5LVdhDvvy8g" role="mwGJk">
+            <node concept="2OqwBi" id="5LVdhDvvylm" role="1Z2MuG">
+              <node concept="1YBJjd" id="5LVdhDvvy8D" role="2Oq$k0">
+                <ref role="1YBMHb" node="5LVdhDvvxVG" resolve="fromOp" />
+              </node>
+              <node concept="3TrEf2" id="5LVdhDvvy$a" role="2OqNvi">
+                <ref role="3Tt5mk" to="mi3w:5LVdhDvvxT8" resolve="date" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5LVdhDvvxVG" role="1YuTPh">
+      <property role="TrG5h" value="fromOp" />
+      <ref role="1YaFvo" to="mi3w:5LVdhDvvwwu" resolve="FromOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="41xkdV7Z9BX">
+    <property role="TrG5h" value="typeof_EmptyRangeLiteral" />
+    <property role="3GE5qa" value="range.literals" />
+    <node concept="3clFbS" id="41xkdV7Z9BY" role="18ibNy">
+      <node concept="1Z5TYs" id="41xkdV7Zaa6" role="3cqZAp">
+        <node concept="mw_s8" id="41xkdV7Zaaq" role="1ZfhKB">
+          <node concept="2pJPEk" id="41xkdV7Zaam" role="mwGJk">
+            <node concept="2pJPED" id="41xkdV7Zaa_" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="41xkdV7Zaa9" role="1ZfhK$">
+          <node concept="1Z2H0r" id="41xkdV7Z9C4" role="mwGJk">
+            <node concept="1YBJjd" id="41xkdV7Za0N" role="1Z2MuG">
+              <ref role="1YBMHb" node="41xkdV7Z9C0" resolve="emptyRangeLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="41xkdV7Z9C0" role="1YuTPh">
+      <property role="TrG5h" value="emptyRangeLiteral" />
+      <ref role="1YaFvo" to="mi3w:41xkdV7Z9B0" resolve="EmptyRangeLiteral" />
+    </node>
+  </node>
 </model>
 

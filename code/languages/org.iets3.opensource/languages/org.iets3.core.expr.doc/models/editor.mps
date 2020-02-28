@@ -576,7 +576,7 @@
         </node>
         <node concept="2iRfu4" id="1sudaVNqvmk" role="2iSdaV" />
         <node concept="3F1sOY" id="1JOtRcapYu$" role="3EZMnx">
-          <ref role="1NtTu8" to="34lm:1JOtRcapYu0" resolve="pp" />
+          <ref role="1NtTu8" to="34lm:1JOtRcapYu0" resolve="path" />
         </node>
       </node>
     </node>
@@ -594,7 +594,7 @@
                   <node concept="2OqwBi" id="1JOtRcaq9RE" role="2Oq$k0">
                     <node concept="pncrf" id="1JOtRcaq9$m" role="2Oq$k0" />
                     <node concept="3TrEf2" id="1JOtRcaqau1" role="2OqNvi">
-                      <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="pp" />
+                      <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="path" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1JOtRcaqbU1" role="2OqNvi">

@@ -196,7 +196,7 @@
                     <ref role="1YBMHb" node="1sudaVNrKvK" resolve="spec" />
                   </node>
                   <node concept="3TrEf2" id="QXVryqAkVu" role="2OqNvi">
-                    <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="pp" />
+                    <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="path" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="QXVryqAlNL" role="2OqNvi">
