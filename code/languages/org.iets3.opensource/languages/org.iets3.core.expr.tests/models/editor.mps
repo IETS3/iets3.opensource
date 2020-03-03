@@ -6745,7 +6745,7 @@
     <node concept="3EZMnI" id="48NC6VzSWXj" role="2wV5jI">
       <node concept="3F0ifn" id="48NC6VzSX38" role="3EZMnx">
         <property role="3F0ifm" value="[ignored]" />
-        <ref role="1ERwB7" node="48NC6VzTc5r" resolve="deleteIngored" />
+        <ref role="1ERwB7" node="48NC6VzTc5r" resolve="deleteIgnored" />
         <node concept="Veino" id="48NC6VzT8gm" role="3F10Kt">
           <property role="Vb096" value="fLwANPp/orange" />
         </node>
@@ -6769,7 +6769,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="48NC6VzTc5r">
-    <property role="TrG5h" value="deleteIngored" />
+    <property role="TrG5h" value="deleteIgnored" />
     <ref role="1h_SK9" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
     <node concept="1hA7zw" id="48NC6VzTcmA" role="1h_SK8">
       <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />

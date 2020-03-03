@@ -2018,7 +2018,7 @@
       <node concept="3clFbS" id="48NC6VzT8Kp" role="2VODD2">
         <node concept="3clFbF" id="48NC6VzT96H" role="3cqZAp">
           <node concept="Xl_RD" id="48NC6VzT96G" role="3clFbG">
-            <property role="Xl_RC" value="Flag as [ignored]" />
+            <property role="Xl_RC" value="Toggle [ignored] flag" />
           </node>
         </node>
       </node>
