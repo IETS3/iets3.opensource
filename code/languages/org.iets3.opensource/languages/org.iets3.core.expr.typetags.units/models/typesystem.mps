@@ -2842,7 +2842,7 @@
   </node>
   <node concept="18kY7G" id="1JTgXSYQXiX">
     <property role="3GE5qa" value="conversion" />
-    <property role="TrG5h" value="CheckLogExpressionHasNoUnits" />
+    <property role="TrG5h" value="check_LogExpressionHasNoUnits" />
     <node concept="3clFbS" id="1JTgXSYQXiY" role="18ibNy">
       <node concept="2Mj0R9" id="1JTgXSYQXKZ" role="3cqZAp">
         <node concept="3fqX7Q" id="1JTgXSYRxtG" role="2MkoU_">
@@ -3005,6 +3005,86 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1JTgXSYRFrg" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="6q$NxWeKeoO">
+    <property role="3GE5qa" value="conversion" />
+    <property role="TrG5h" value="check_PowExpressionHasNoUnits" />
+    <node concept="3clFbS" id="6q$NxWeKeoP" role="18ibNy">
+      <node concept="2Mj0R9" id="6q$NxWeKeoQ" role="3cqZAp">
+        <node concept="3fqX7Q" id="6q$NxWeKeoR" role="2MkoU_">
+          <node concept="2YIFZM" id="6q$NxWeKeoS" role="3fr31v">
+            <ref role="1Pybhc" to="dntf:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+            <ref role="37wK5l" to="dntf:5pSqQr$Qyek" resolve="hasUnitSpecification" />
+            <node concept="2OqwBi" id="6q$NxWeKeoT" role="37wK5m">
+              <node concept="2OqwBi" id="6q$NxWeKeoU" role="2Oq$k0">
+                <node concept="1YBJjd" id="6q$NxWeKeoV" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6q$NxWeKep2" resolve="powerExpression" />
+                </node>
+                <node concept="3TrEf2" id="6q$NxWeKfGH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="6q$NxWeKeoX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6q$NxWeKeoY" role="2MkJ7o">
+          <property role="Xl_RC" value="A log power expression is not allowed to have units!" />
+        </node>
+        <node concept="2OqwBi" id="6q$NxWeKeoZ" role="1urrMF">
+          <node concept="1YBJjd" id="6q$NxWeKep0" role="2Oq$k0">
+            <ref role="1YBMHb" node="6q$NxWeKep2" resolve="powerExpression" />
+          </node>
+          <node concept="3TrEf2" id="6q$NxWeKfMP" role="2OqNvi">
+            <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6q$NxWeKep2" role="1YuTPh">
+      <property role="TrG5h" value="powerExpression" />
+      <ref role="1YaFvo" to="1qv1:4iu6t1eB654" resolve="PowerExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6q$NxWeKeZT">
+    <property role="3GE5qa" value="conversion" />
+    <property role="TrG5h" value="check_ProductLoopExpressionHasNoUnits" />
+    <node concept="3clFbS" id="6q$NxWeKeZU" role="18ibNy">
+      <node concept="2Mj0R9" id="6q$NxWeKeZV" role="3cqZAp">
+        <node concept="3fqX7Q" id="6q$NxWeKeZW" role="2MkoU_">
+          <node concept="2YIFZM" id="6q$NxWeKeZX" role="3fr31v">
+            <ref role="1Pybhc" to="dntf:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+            <ref role="37wK5l" to="dntf:5pSqQr$Qyek" resolve="hasUnitSpecification" />
+            <node concept="2OqwBi" id="6q$NxWeKeZY" role="37wK5m">
+              <node concept="2OqwBi" id="6q$NxWeKeZZ" role="2Oq$k0">
+                <node concept="1YBJjd" id="6q$NxWeKf00" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6q$NxWeKf07" resolve="productLoopExpression" />
+                </node>
+                <node concept="3TrEf2" id="6q$NxWeKf01" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="6q$NxWeKf02" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6q$NxWeKf03" role="2MkJ7o">
+          <property role="Xl_RC" value="A log product loop expression is not allowed to have units!" />
+        </node>
+        <node concept="2OqwBi" id="6q$NxWeKf04" role="1urrMF">
+          <node concept="1YBJjd" id="6q$NxWeKf05" role="2Oq$k0">
+            <ref role="1YBMHb" node="6q$NxWeKf07" resolve="productLoopExpression" />
+          </node>
+          <node concept="3TrEf2" id="6q$NxWeKf06" role="2OqNvi">
+            <ref role="3Tt5mk" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6q$NxWeKf07" role="1YuTPh">
+      <property role="TrG5h" value="productLoopExpression" />
+      <ref role="1YaFvo" to="1qv1:4iu6t1eB6zV" resolve="ProductLoopExpression" />
+    </node>
   </node>
 </model>
 
