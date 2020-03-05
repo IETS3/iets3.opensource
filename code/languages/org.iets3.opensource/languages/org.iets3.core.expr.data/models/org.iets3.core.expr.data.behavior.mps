@@ -15,6 +15,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -407,6 +408,34 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4_ZIgbn2GCR" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="4_ZIgbn2GCS" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2GCX" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2JoR" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2JoQ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4_ZIgbn2GCY" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4_ZIgbn2GD3" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="4_ZIgbn2GD4" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2GD9" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2GDe" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2Js5" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4_ZIgbn2GDa" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="cPLa7FtsME">
     <ref role="13h7C2" to="e9k1:cPLa7Ft09N" resolve="DataColOp" />
@@ -510,19 +539,33 @@
       </node>
       <node concept="17QB3L" id="6EEZHsfkftf" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="7uUpFYMOfsq" role="13h7CS">
+    <node concept="13i0hz" id="4_ZIgbn2LLd" role="13h7CS">
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="7uUpFYMOfsr" role="1B3o_S" />
-      <node concept="3clFbS" id="7uUpFYMOfsw" role="3clF47">
-        <node concept="3clFbF" id="7uUpFYMOgzI" role="3cqZAp">
-          <node concept="3clFbT" id="7uUpFYMOgzH" role="3clFbG">
+      <node concept="3Tm1VV" id="4_ZIgbn2LLe" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2LLf" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2LLg" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2LLh" role="3clFbG">
             <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="7uUpFYMOfsx" role="3clF45" />
+      <node concept="10P_77" id="4_ZIgbn2LLi" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4_ZIgbn2LLj" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="4_ZIgbn2LLk" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2LLl" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2LLm" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2LLn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4_ZIgbn2LLo" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7uUpFYMOkmx">
@@ -530,19 +573,33 @@
     <node concept="13hLZK" id="7uUpFYMOkmy" role="13h7CW">
       <node concept="3clFbS" id="7uUpFYMOkmz" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="7uUpFYMOkyo" role="13h7CS">
+    <node concept="13i0hz" id="4_ZIgbn2LoV" role="13h7CS">
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="7uUpFYMOkyp" role="1B3o_S" />
-      <node concept="3clFbS" id="7uUpFYMOkyu" role="3clF47">
-        <node concept="3clFbF" id="7uUpFYMOkAq" role="3cqZAp">
-          <node concept="3clFbT" id="7uUpFYMOkAp" role="3clFbG">
+      <node concept="3Tm1VV" id="4_ZIgbn2LoW" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2LoX" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2LoY" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2LoZ" role="3clFbG">
             <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="7uUpFYMOkyv" role="3clF45" />
+      <node concept="10P_77" id="4_ZIgbn2Lp0" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4_ZIgbn2Lp1" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="4_ZIgbn2Lp2" role="1B3o_S" />
+      <node concept="3clFbS" id="4_ZIgbn2Lp3" role="3clF47">
+        <node concept="3clFbF" id="4_ZIgbn2Lp4" role="3cqZAp">
+          <node concept="3clFbT" id="4_ZIgbn2Lp5" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4_ZIgbn2Lp6" role="3clF45" />
     </node>
   </node>
 </model>
