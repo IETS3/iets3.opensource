@@ -1,10 +1,6 @@
 # iets3.opensource
 
 ## Build instructions
-### Using Ant
-1. Go to `code/languages`
-2. Copy `build.properties.examples` to `build.properties` and adapt
-3. Run `ant` from `code/languages`
 
 ### Using Gradle
 If you just want to build the project, no prerequisites are required. Just run `./gradlew build` from the checkout
