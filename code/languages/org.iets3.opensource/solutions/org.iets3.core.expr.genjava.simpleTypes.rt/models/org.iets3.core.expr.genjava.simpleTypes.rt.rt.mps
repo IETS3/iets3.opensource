@@ -3020,6 +3020,47 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="2c8aTGPDGDd" role="jymVt">
+      <property role="TrG5h" value="roundHalfUp" />
+      <node concept="3clFbS" id="2c8aTGPDGDg" role="3clF47">
+        <node concept="3cpWs6" id="2c8aTGPDHDV" role="3cqZAp">
+          <node concept="1rXfSq" id="2c8aTGPDHF3" role="3cqZAk">
+            <ref role="37wK5l" node="5MvHQBSOipo" resolve="round" />
+            <node concept="37vLTw" id="2c8aTGPDHKQ" role="37wK5m">
+              <ref role="3cqZAo" node="2c8aTGPDGUG" resolve="value" />
+            </node>
+            <node concept="2OqwBi" id="2c8aTGPDHWO" role="37wK5m">
+              <node concept="37vLTw" id="2c8aTGPDHLE" role="2Oq$k0">
+                <ref role="3cqZAo" node="2c8aTGPDGVx" resolve="precision" />
+              </node>
+              <node concept="liA8E" id="2c8aTGPDI5m" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
+              </node>
+            </node>
+            <node concept="Rm8GO" id="2c8aTGPDIsv" role="37wK5m">
+              <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
+              <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2c8aTGPDGfa" role="1B3o_S" />
+      <node concept="3uibUv" id="2c8aTGPDGC$" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
+      </node>
+      <node concept="37vLTG" id="2c8aTGPDGUG" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="3uibUv" id="2c8aTGPDGUF" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2c8aTGPDGVx" role="3clF46">
+        <property role="TrG5h" value="precision" />
+        <node concept="3uibUv" id="2c8aTGPDHis" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="VGMJHc1opA" role="jymVt">
       <property role="TrG5h" value="truncate" />
       <property role="DiZV1" value="false" />
