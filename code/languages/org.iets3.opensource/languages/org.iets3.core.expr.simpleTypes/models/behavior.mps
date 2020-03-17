@@ -6032,5 +6032,45 @@
       <node concept="17QB3L" id="4399ITSBJQm" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="2c8aTGPDrNk">
+    <property role="3GE5qa" value="numeric.number.precision" />
+    <ref role="13h7C2" to="5qo5:2c8aTGPDrMS" resolve="RoundHalfUpRoundingMode" />
+    <node concept="13hLZK" id="2c8aTGPDrNl" role="13h7CW">
+      <node concept="3clFbS" id="2c8aTGPDrNm" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2c8aTGPDrNv" role="13h7CS">
+      <property role="TrG5h" value="process" />
+      <ref role="13i0hy" node="7DTWJ$8l$8B" resolve="process" />
+      <node concept="3Tm1VV" id="2c8aTGPDrNw" role="1B3o_S" />
+      <node concept="3clFbS" id="2c8aTGPDrN_" role="3clF47">
+        <node concept="3clFbF" id="2c8aTGPDrNE" role="3cqZAp">
+          <node concept="2OqwBi" id="2c8aTGPDrTt" role="3clFbG">
+            <node concept="37vLTw" id="2c8aTGPDrTu" role="2Oq$k0">
+              <ref role="3cqZAo" node="2c8aTGPDrNA" resolve="value" />
+            </node>
+            <node concept="liA8E" id="2c8aTGPDrTv" role="2OqNvi">
+              <ref role="37wK5l" to="xlxw:~BigDecimal.setScale(int,java.math.RoundingMode)" resolve="setScale" />
+              <node concept="BsUDl" id="2c8aTGPDrTw" role="37wK5m">
+                <ref role="37wK5l" node="7DTWJ$8lDMY" resolve="targetPrecision" />
+              </node>
+              <node concept="Rm8GO" id="2c8aTGPDrZ_" role="37wK5m">
+                <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
+                <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2c8aTGPDrNA" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="3uibUv" id="2c8aTGPDrNB" role="1tU5fm">
+          <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2c8aTGPDrNC" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+      </node>
+    </node>
+  </node>
 </model>
 

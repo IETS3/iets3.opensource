@@ -97,6 +97,7 @@
         <property id="1330041117646892912" name="max" index="2gteSD" />
         <property id="1330041117646892911" name="min" index="2gteSQ" />
       </concept>
+      <concept id="2524315536761142456" name="org.iets3.core.expr.simpleTypes.structure.RoundHalfUpRoundingMode" flags="ng" index="mFpsz" />
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
         <child id="1330041117646892920" name="range" index="2gteSx" />
         <child id="1330041117646892937" name="prec" index="2gteVg" />
@@ -1720,6 +1721,33 @@
         </node>
         <node concept="30bXRB" id="2YW1RBwO2dB" role="_fkuS">
           <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="3dYjL0" id="2c8aTGPPJQA" role="_fkp5" />
+      <node concept="_fkuZ" id="2c8aTGPPJSh" role="_fkp5">
+        <node concept="_fku$" id="2c8aTGPPJSi" role="_fkur" />
+        <node concept="1MaffS" id="2c8aTGPPJTn" role="_fkuY">
+          <property role="1MbqUG" value="0" />
+          <node concept="mFpsz" id="2c8aTGPPJTy" role="1Maf3p" />
+          <node concept="30bXRB" id="2c8aTGPPJTL" role="1MafeC">
+            <property role="30bXRw" value="0.5" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2c8aTGPPJUx" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2c8aTGPPJUJ" role="_fkp5">
+        <node concept="_fku$" id="2c8aTGPPJUK" role="_fkur" />
+        <node concept="1MaffS" id="2c8aTGPPJUL" role="_fkuY">
+          <property role="1MbqUG" value="0" />
+          <node concept="mFpsz" id="2c8aTGPPJUM" role="1Maf3p" />
+          <node concept="30bXRB" id="2c8aTGPPJUN" role="1MafeC">
+            <property role="30bXRw" value="0.4" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="2c8aTGPPJUO" role="_fkuS">
+          <property role="30bXRw" value="0" />
         </node>
       </node>
     </node>

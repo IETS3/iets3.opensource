@@ -458,5 +458,13 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2c8aTGPDrMS">
+    <property role="EcuMT" value="2524315536761142456" />
+    <property role="3GE5qa" value="numeric.number.precision" />
+    <property role="TrG5h" value="RoundHalfUpRoundingMode" />
+    <property role="34LRSv" value="round half up" />
+    <property role="R4oN_" value="mathematical rounding mode" />
+    <ref role="1TJDcQ" node="7DTWJ$8kg8g" resolve="RoundingMode" />
+  </node>
 </model>
 
