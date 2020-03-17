@@ -22,10 +22,15 @@
     <dependency reexport="false">2614fab6-e994-4127-9a5d-8c8cd7ba2833(test.in.expr.os)</dependency>
     <dependency reexport="false">8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)</dependency>
     <dependency reexport="false">5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1(org.iets3.core.expr.adt)</dependency>
+    <dependency reexport="false">5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)</dependency>
+    <dependency reexport="false">6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)</dependency>
+    <dependency reexport="false">f47b95d4-5e73-4c04-9204-18076950153b(com.mbeddr.mpsutil.compare)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:f47b95d4-5e73-4c04-9204-18076950153b:com.mbeddr.mpsutil.compare" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
     <language slang="l:1c897ba5-9d43-4035-ac7f-0306495743ac:com.mbeddr.mpsutil.interpreter.test" version="0" />
@@ -80,6 +85,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
+    <module reference="f47b95d4-5e73-4c04-9204-18076950153b(com.mbeddr.mpsutil.compare)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" version="0" />
     <module reference="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" version="0" />
@@ -97,6 +103,7 @@
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
     <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+    <module reference="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" version="0" />
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
@@ -114,6 +121,7 @@
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="0" />
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
     <module reference="0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b(org.iets3.core.expr.lambda.plugin)" version="0" />
+    <module reference="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)" version="0" />
     <module reference="dff61827-7f11-4bfe-aeb1-6491ed8a49b2(org.iets3.core.expr.metafunction.interpreter)" version="0" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="c008c84a-6d05-4b6f-82f0-5cb6c0231a11(org.iets3.core.expr.path.interpreter)" version="0" />
