@@ -21,6 +21,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -745,6 +746,22 @@
         </node>
       </node>
       <node concept="17QB3L" id="4HxogODR6FF" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6q$NxWg8fA4" role="13h7CS">
+      <property role="TrG5h" value="wrappedType" />
+      <ref role="13i0hy" to="kqnq:6bG6MAFRDvi" resolve="wrappedType" />
+      <node concept="3Tm1VV" id="6q$NxWg8fA5" role="1B3o_S" />
+      <node concept="3clFbS" id="6q$NxWg8fA8" role="3clF47">
+        <node concept="3cpWs6" id="6q$NxWg8igP" role="3cqZAp">
+          <node concept="2OqwBi" id="6q$NxWg8iur" role="3cqZAk">
+            <node concept="13iPFW" id="6q$NxWg8iha" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6q$NxWg8iMW" role="2OqNvi">
+              <ref role="3Tt5mk" to="w1hl:1xEzHAktP2T" resolve="baseType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6q$NxWg8fA9" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4HxogODTmV$">
