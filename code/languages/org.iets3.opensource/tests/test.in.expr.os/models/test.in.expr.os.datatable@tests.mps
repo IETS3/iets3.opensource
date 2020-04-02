@@ -17,6 +17,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="2390066428848651932" name="org.iets3.core.expr.base.structure.BangOp" flags="ng" index="wdKpt" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -71,6 +72,10 @@
       </concept>
     </language>
     <language id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data">
+      <concept id="512624657163648898" name="org.iets3.core.expr.data.structure.DataTableLookUp" flags="ng" index="3AhkFE">
+        <reference id="512624657163648901" name="col" index="3AhkFH" />
+        <child id="512624657163648903" name="arg" index="3AhkFJ" />
+      </concept>
       <concept id="231307155598475891" name="org.iets3.core.expr.data.structure.DataColOp" flags="ng" index="3Cgsri">
         <reference id="231307155598477016" name="col" index="3Cgs9T" />
       </concept>
@@ -91,6 +96,7 @@
         <child id="231307155597484623" name="value" index="3CkirI" />
       </concept>
       <concept id="231307155597462254" name="org.iets3.core.expr.data.structure.DataTable" flags="ng" index="3CkkTf">
+        <property id="3324695263690995252" name="allowLookup" index="sAwqe" />
         <child id="231307155597477158" name="dataCols" index="3Ckg67" />
         <child id="231307155597655796" name="rows" index="3CkFDl" />
       </concept>
@@ -107,6 +113,7 @@
     <property role="TrG5h" value="DataTable" />
     <node concept="3CkkTf" id="cPLa7FroL4" role="_iOnB">
       <property role="TrG5h" value="ExampleTable" />
+      <property role="sAwqe" value="true" />
       <node concept="3CkmCn" id="cPLa7FroL6" role="3Ckg67">
         <property role="TrG5h" value="val1" />
         <node concept="30bXR$" id="cPLa7FroL5" role="3CknON" />
@@ -266,6 +273,52 @@
         </node>
         <node concept="30bXRB" id="cPLa7FuF8s" role="_fkuS">
           <property role="30bXRw" value="5" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="stdmzxnajI" role="_fkp5">
+        <node concept="_fku$" id="stdmzxnajJ" role="_fkur" />
+        <node concept="1QScDb" id="stdmzxnaoG" role="_fkuY">
+          <node concept="3AhkFE" id="stdmzxnap5" role="1QScD9">
+            <ref role="3AhkFH" node="cPLa7FroL6" resolve="val1" />
+            <node concept="30bXRB" id="stdmzxnapE" role="3AhkFJ">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="3Ch18X" id="stdmzxnaox" role="30czhm">
+            <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="stdmzxnaqu" role="_fkuS">
+          <node concept="3CgUdp" id="stdmzxnar2" role="1QScD9">
+            <ref role="3CgUW3" node="cPLa7FroLb" resolve="keyA" />
+          </node>
+          <node concept="3Ch18X" id="stdmzxnaq8" role="30czhm">
+            <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
+          </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="2SzGbCMLQct" role="_fkp5">
+        <node concept="_fku$" id="2SzGbCMLQcu" role="_fkur" />
+        <node concept="30bXRB" id="2SzGbCMLQoC" role="_fkuS">
+          <property role="30bXRw" value="2" />
+        </node>
+        <node concept="1QScDb" id="2SzGbCMLQmA" role="_fkuY">
+          <node concept="3Cgsri" id="2SzGbCMLQnR" role="1QScD9">
+            <ref role="3Cgs9T" node="cPLa7FroL8" resolve="val2" />
+          </node>
+          <node concept="wdKpt" id="2SzGbCMLQlI" role="30czhm">
+            <node concept="1QScDb" id="2SzGbCMLQhK" role="30czhm">
+              <node concept="3AhkFE" id="2SzGbCMLQhL" role="1QScD9">
+                <ref role="3AhkFH" node="cPLa7FroL6" resolve="val1" />
+                <node concept="30bXRB" id="2SzGbCMLQhM" role="3AhkFJ">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+              <node concept="3Ch18X" id="2SzGbCMLQhN" role="30czhm">
+                <ref role="3Ch1V_" node="cPLa7FroL4" resolve="ExampleTable" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
