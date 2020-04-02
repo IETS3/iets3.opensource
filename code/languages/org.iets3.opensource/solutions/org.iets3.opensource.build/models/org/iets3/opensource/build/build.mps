@@ -12753,6 +12753,11 @@
           <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
         </node>
       </node>
+      <node concept="1SiIV0" id="4PRpvcZJQ0m" role="3bR37C">
+        <node concept="3bR9La" id="4PRpvcZJQ0n" role="1SiIV1">
+          <ref role="3bR37D" node="cPLa7FuMZR" resolve="org.iets3.core.expr.data" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="OJuIQp$d7j" role="3989C9">
       <property role="BnDLt" value="true" />
