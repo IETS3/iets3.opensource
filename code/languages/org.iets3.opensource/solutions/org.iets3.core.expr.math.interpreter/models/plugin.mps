@@ -2524,7 +2524,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQANOsk" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicusExpression" />
+      <ref role="qq9wM" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicus" />
       <node concept="3dA_Gj" id="M7eZQANRgs" role="3vQZUl">
         <node concept="9aQIb" id="M7eZQANRgu" role="3vcmbn">
           <node concept="3clFbS" id="M7eZQANRgw" role="9aQI4">
@@ -2559,7 +2559,7 @@
     </node>
     <node concept="qq9P1" id="M7eZQAPmBv" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicusExpresssion" />
+      <ref role="qq9wM" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicus" />
       <node concept="3dA_Gj" id="M7eZQAPsiy" role="3vQZUl">
         <node concept="9aQIb" id="M7eZQAPsi$" role="3vcmbn">
           <node concept="3clFbS" id="M7eZQAPsiA" role="9aQI4">
@@ -2594,7 +2594,7 @@
     </node>
     <node concept="qq9P1" id="1EoaTAz5v0p" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="1qv1:M7eZQBwOwF" resolve="ArcCosinusExpression" />
+      <ref role="qq9wM" to="1qv1:M7eZQBwOwF" resolve="ArcCosinus" />
       <node concept="3dA_Gj" id="1EoaTAz5zkE" role="3vQZUl">
         <node concept="9aQIb" id="1EoaTAz5zkG" role="3vcmbn">
           <node concept="3clFbS" id="1EoaTAz5zkI" role="9aQI4">
@@ -2623,6 +2623,216 @@
       <node concept="qpFDx" id="1EoaTAz5y0m" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
         <node concept="rxStX" id="1EoaTAz5ywq" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAz8kXO" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz8bOT" resolve="CosinusHyperbolicus" />
+      <node concept="3dA_Gj" id="1EoaTAz8umx" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAz8umz" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAz8um_" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAz8uQS" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAz8uQT" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAz8uQU" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAz8vby" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.cosh(double)" resolve="cosh" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAz8vbz" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAz8vb$" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAz8vb_" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAz8rgL" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAz8s1d" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAz8NPr" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz8K6a" resolve="ArcCosinusHyperbolicus" />
+      <node concept="3dA_Gj" id="1EoaTAz8U2X" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAz8U2Z" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAz8U31" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAz8Uzh" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAz8Uzi" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAz8Uzj" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAz9AQt" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.acosh(double)" resolve="acosh" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAz9AQu" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAz9AQv" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAz9AQw" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAz8QTR" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAz8RFB" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAz9Wag" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAz9PnQ" resolve="ArcSinusHyperbolicus" />
+      <node concept="3dA_Gj" id="1EoaTAza5KQ" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAza5KS" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAza5KU" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAza6Cu" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAza6hf" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAza6hg" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAza94a" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.asinh(double)" resolve="asinh" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAza94b" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAza94c" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAza94d" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAza2$m" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAza3ns" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAzbcFh" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzatSJ" resolve="ArcTangensHyperbolicus" />
+      <node concept="3dA_Gj" id="1EoaTAzbj1h" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAzbj1j" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAzbj1l" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAzbjxC" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAzbjxD" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAzbjxE" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAzbjxF" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.atanh(double)" resolve="atanh" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAzbjxG" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAzbjxH" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAzbjxI" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAzbfQu" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAzbgGe" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAzbGP2" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzbzti" resolve="ArcTangens" />
+      <node concept="3dA_Gj" id="1EoaTAzbNCY" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAzbND0" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAzbND2" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAzbO9k" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAzbO9l" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAzbO9m" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAzbOzm" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.atan(double)" resolve="atan" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAzbOzn" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAzbOzo" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAzbOzp" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAzbKiW" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAzbL8E" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1EoaTAzclDy" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1EoaTAzc5EL" resolve="ArcSinus" />
+      <node concept="3dA_Gj" id="1EoaTAzcwm_" role="3vQZUl">
+        <node concept="9aQIb" id="1EoaTAzcwmB" role="3vcmbn">
+          <node concept="3clFbS" id="1EoaTAzcwmD" role="9aQI4">
+            <node concept="3cpWs6" id="1EoaTAzcwQW" role="3cqZAp">
+              <node concept="2ShNRf" id="1EoaTAzcwQX" role="3cqZAk">
+                <node concept="1pGfFk" id="1EoaTAzcwQY" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="1EoaTAzcxip" role="37wK5m">
+                    <ref role="37wK5l" to="aoxt:~FastMath.asin(double)" resolve="asin" />
+                    <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                    <node concept="2OqwBi" id="1EoaTAzcxiq" role="37wK5m">
+                      <node concept="rqRoa" id="1EoaTAzcxir" role="2Oq$k0">
+                        <ref role="rqRob" to="1qv1:M7eZQBbq61" resolve="expr" />
+                      </node>
+                      <node concept="liA8E" id="1EoaTAzcxis" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1EoaTAzcsZX" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQBbq61" resolve="expr" />
+        <node concept="rxStX" id="1EoaTAzctR2" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>

@@ -320,7 +320,7 @@
   </node>
   <node concept="1TIwiD" id="M7eZQADw31">
     <property role="EcuMT" value="902756210919735489" />
-    <property role="TrG5h" value="TangensHyperbolicusExpression" />
+    <property role="TrG5h" value="TangensHyperbolicus" />
     <property role="34LRSv" value="tanh" />
     <property role="3GE5qa" value="trigonometric" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
@@ -328,7 +328,7 @@
   <node concept="1TIwiD" id="M7eZQAOIHc">
     <property role="EcuMT" value="902756210922679116" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="SinusHyperbolicusExpresssion" />
+    <property role="TrG5h" value="SinusHyperbolicus" />
     <property role="34LRSv" value="sinh" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
@@ -349,8 +349,50 @@
   <node concept="1TIwiD" id="M7eZQBwOwF">
     <property role="EcuMT" value="902756210934237227" />
     <property role="3GE5qa" value="trigonometric" />
-    <property role="TrG5h" value="ArcCosinusExpression" />
+    <property role="TrG5h" value="ArcCosinus" />
     <property role="34LRSv" value="acos" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz8bOT">
+    <property role="EcuMT" value="1916329580312968505" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="CosinusHyperbolicus" />
+    <property role="34LRSv" value="cosh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz8K6a">
+    <property role="EcuMT" value="1916329580313117066" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcCosinusHyperbolicus" />
+    <property role="34LRSv" value="acosh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz9PnQ">
+    <property role="EcuMT" value="1916329580313400822" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcSinusHyperbolicus" />
+    <property role="34LRSv" value="asinh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzatSJ">
+    <property role="EcuMT" value="1916329580313566767" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcTangensHyperbolicus" />
+    <property role="34LRSv" value="atanh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzbzti">
+    <property role="EcuMT" value="1916329580313851730" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcTangens" />
+    <property role="34LRSv" value="atan" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzc5EL">
+    <property role="EcuMT" value="1916329580313991857" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcSinus" />
+    <property role="34LRSv" value="asin" />
     <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
   </node>
 </model>
