@@ -297,5 +297,18 @@
     <property role="3GE5qa" value="rat" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="4SHkH$fnm2H">
+    <property role="EcuMT" value="5633249801129517229" />
+    <property role="TrG5h" value="SinusExpression" />
+    <property role="34LRSv" value="sin" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="4SHkH$fnm2I" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="5633249801129517230" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

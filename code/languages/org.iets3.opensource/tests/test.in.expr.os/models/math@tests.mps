@@ -81,6 +81,7 @@
       </concept>
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
+      <concept id="5115872837157054284" name="org.iets3.core.expr.simpleTypes.structure.RealType" flags="ng" index="30bXLL" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
@@ -1189,8 +1190,34 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="4SHkH$fo$rE" role="_iOnB" />
+    <node concept="1aga60" id="4SHkH$fo$EV" role="_iOnB">
+      <property role="TrG5h" value="sinus" />
+      <node concept="1ahQXy" id="4SHkH$fo$MK" role="1ahQWs">
+        <property role="TrG5h" value="a" />
+        <node concept="30bXLL" id="4SHkH$fBcDc" role="3ix9CU" />
+      </node>
+      <node concept="1afdae" id="4SHkH$fJD2h" role="1ahQXP">
+        <ref role="1afue_" node="4SHkH$fo$MK" resolve="a" />
+      </node>
+    </node>
     <node concept="_ixoA" id="642_vmCWuV8" role="_iOnB" />
-    <node concept="_ixoA" id="642_vmCWuVE" role="_iOnB" />
+    <node concept="_fkuM" id="4SHkH$fBct_" role="_iOnB">
+      <property role="TrG5h" value="testSinus" />
+      <node concept="_fkuZ" id="4SHkH$fBc_j" role="_fkp5">
+        <node concept="_fku$" id="4SHkH$fBc_k" role="_fkur" />
+        <node concept="1af_rf" id="4SHkH$fBc_L" role="_fkuY">
+          <ref role="1afhQb" node="4SHkH$fo$EV" resolve="sinus" />
+          <node concept="30bXRB" id="4SHkH$fBcDy" role="1afhQ5">
+            <property role="30bXRw" value="3.14" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="4SHkH$fJD3f" role="_fkuS">
+          <property role="30bXRw" value="3.14" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="4SHkH$fBclS" role="_iOnB" />
     <node concept="_fkuM" id="642_vmCWuWO" role="_iOnB">
       <property role="TrG5h" value="testPythagoras" />
       <node concept="_fkuZ" id="642_vmCWuXr" role="_fkp5">

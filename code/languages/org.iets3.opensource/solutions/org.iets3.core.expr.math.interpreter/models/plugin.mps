@@ -2418,6 +2418,45 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="4SHkH$fob5Y" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
+      <node concept="3dA_Gj" id="4SHkH$fodQ1" role="3vQZUl">
+        <node concept="9aQIb" id="4SHkH$fodQ3" role="3vcmbn">
+          <node concept="3clFbS" id="4SHkH$fodQ5" role="9aQI4">
+            <node concept="3cpWs8" id="4SHkH$folB$" role="3cqZAp">
+              <node concept="3cpWsn" id="4SHkH$folB_" role="3cpWs9">
+                <property role="TrG5h" value="doubleValue" />
+                <node concept="10P55v" id="4SHkH$foklr" role="1tU5fm" />
+                <node concept="2OqwBi" id="4SHkH$folBA" role="33vP2m">
+                  <node concept="rqRoa" id="4SHkH$folBB" role="2Oq$k0">
+                    <ref role="rqRob" to="1qv1:4SHkH$fnm2I" resolve="expr" />
+                  </node>
+                  <node concept="liA8E" id="4SHkH$folBC" role="2OqNvi">
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4SHkH$foqNu" role="3cqZAp">
+              <node concept="2YIFZM" id="4SHkH$fosRb" role="3cqZAk">
+                <ref role="37wK5l" to="wyt6:~Math.sin(double)" resolve="sin" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <node concept="37vLTw" id="4SHkH$fosRn" role="37wK5m">
+                  <ref role="3cqZAo" node="4SHkH$folB_" resolve="doubleValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="4SHkH$foemg" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:4SHkH$fnm2I" resolve="expr" />
+        <node concept="rxStX" id="4SHkH$foeQh" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
     <node concept="rvkaK" id="5mz5Tt_hwNe" role="qq9xK">
       <node concept="3uibUv" id="5mz5Tt_hxfY" role="r5wI3">
         <ref role="3uigEE" node="5mz5Tt_gaKE" resolve="BigRational" />
