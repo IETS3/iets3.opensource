@@ -828,6 +828,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4SHkH$fnmeE">
+    <property role="3GE5qa" value="trigonometric" />
     <ref role="13h7C2" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
     <node concept="13hLZK" id="4SHkH$fnmeF" role="13h7CW">
       <node concept="3clFbS" id="4SHkH$fnmeG" role="2VODD2" />
@@ -876,6 +877,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="M7eZQ_ZTDM">
+    <property role="3GE5qa" value="trigonometric" />
     <ref role="13h7C2" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
     <node concept="13hLZK" id="M7eZQ_ZTDN" role="13h7CW">
       <node concept="3clFbS" id="M7eZQ_ZTDO" role="2VODD2" />

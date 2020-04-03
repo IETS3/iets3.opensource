@@ -147,6 +147,15 @@
       <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosinusExpression" flags="ng" index="2DubMI">
         <child id="902756210908825428" name="expr" index="2DubMD" />
       </concept>
+      <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangensHyperbolicusExpression" flags="ng" index="2E8jGW">
+        <child id="902756210919735490" name="expr" index="2E8jGZ" />
+      </concept>
+      <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SinusHyperbolicusExpresssion" flags="ng" index="2Elt2L">
+        <child id="902756210922679117" name="expr" index="2Elt2K" />
+      </concept>
+      <concept id="902756210914953420" name="org.iets3.core.expr.math.structure.TangensExpression" flags="ng" index="2EQzcL">
+        <child id="902756210914953450" name="expr" index="2EQzcn" />
+      </concept>
       <concept id="6170801853434172271" name="org.iets3.core.expr.math.structure.RationalType" flags="ng" index="KTKjS" />
       <concept id="6170801853434532041" name="org.iets3.core.expr.math.structure.RatExpr" flags="ng" index="KUCtu">
         <child id="6170801853434532099" name="value" index="KUCqk" />
@@ -1225,32 +1234,12 @@
     </node>
     <node concept="1aga60" id="M7eZQAnci$" role="_iOnB">
       <property role="TrG5h" value="equalApprox" />
-      <node concept="30cPrO" id="M7eZQAncr0" role="1ahQXP">
-        <node concept="1afdae" id="M7eZQAncJX" role="30dEs_">
-          <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
-        </node>
-        <node concept="3YCzOX" id="M7eZQAnclE" role="30dEsF">
-          <node concept="1afdae" id="M7eZQAncIm" role="3YCpu7">
-            <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
-          </node>
-          <node concept="30dvUo" id="M7eZQAncoZ" role="3YCpu7">
-            <node concept="1afdae" id="M7eZQAncpW" role="30dEs_">
-              <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
-            </node>
-            <node concept="a1tT9" id="M7eZQAncn_" role="30dEsF">
-              <node concept="1afdae" id="M7eZQAncok" role="a0Cwb">
-                <ref role="1afue_" node="M7eZQAnckx" resolve="observer" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1ahQXy" id="M7eZQAnc_N" role="1ahQWs">
         <property role="TrG5h" value="expected" />
         <node concept="30bXLL" id="M7eZQAncBL" role="3ix9CU" />
       </node>
       <node concept="1ahQXy" id="M7eZQAnckx" role="1ahQWs">
-        <property role="TrG5h" value="observer" />
+        <property role="TrG5h" value="observed" />
         <node concept="30bXLL" id="M7eZQAnckQ" role="3ix9CU" />
       </node>
       <node concept="1ahQXy" id="M7eZQAnckY" role="1ahQWs">
@@ -1261,37 +1250,33 @@
         <node concept="OjmMv" id="M7eZQAneqY" role="1w35rA">
           <node concept="19SGf9" id="M7eZQAneqZ" role="OjmMu">
             <node concept="19SUe$" id="M7eZQAner0" role="19SJt6">
-              <property role="19SUeA" value="For testing apporximately due to rounding errors" />
+              <property role="19SUeA" value="For testing approximately due to rounding errors" />
             </node>
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1aga60" id="M7eZQA0RpP" role="_iOnB">
-      <property role="TrG5h" value="sinusFn" />
-      <node concept="1ahQXy" id="M7eZQA0RxH" role="1ahQWs">
-        <property role="TrG5h" value="a" />
-        <node concept="30bXLL" id="M7eZQA0RxZ" role="3ix9CU" />
-      </node>
-      <node concept="11s39O" id="M7eZQA0RVa" role="1ahQXP">
-        <node concept="1afdae" id="M7eZQA0RVw" role="11s39R">
-          <ref role="1afue_" node="M7eZQA0RxH" resolve="a" />
+      <node concept="30cPrO" id="M7eZQAwJtc" role="1ahQXP">
+        <node concept="1afdae" id="M7eZQAwJtd" role="30dEs_">
+          <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
+        </node>
+        <node concept="3YCzOX" id="M7eZQAwJte" role="30dEsF">
+          <node concept="a1tT9" id="M7eZQAwJtf" role="3YCpu7">
+            <node concept="30dvUo" id="M7eZQAwJtg" role="a0Cwb">
+              <node concept="1afdae" id="M7eZQAwJth" role="30dEs_">
+                <ref role="1afue_" node="M7eZQAnckx" resolve="observed" />
+              </node>
+              <node concept="1afdae" id="M7eZQAwJti" role="30dEsF">
+                <ref role="1afue_" node="M7eZQAnc_N" resolve="expected" />
+              </node>
+            </node>
+          </node>
+          <node concept="1afdae" id="M7eZQAwJtj" role="3YCpu7">
+            <ref role="1afue_" node="M7eZQAnckY" resolve="eps" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="1aga60" id="M7eZQAn9Ue" role="_iOnB">
-      <property role="TrG5h" value="cosinusFn" />
-      <node concept="2DubMI" id="M7eZQAna2U" role="1ahQXP">
-        <node concept="1afdae" id="M7eZQAna3e" role="2DubMD">
-          <ref role="1afue_" node="M7eZQAna2h" resolve="a" />
-        </node>
-      </node>
-      <node concept="1ahQXy" id="M7eZQAna2h" role="1ahQWs">
-        <property role="TrG5h" value="a" />
-        <node concept="30bXLL" id="M7eZQAna2z" role="3ix9CU" />
-      </node>
-    </node>
-    <node concept="_ixoA" id="M7eZQA0Rib" role="_iOnB" />
+    <node concept="_ixoA" id="M7eZQAPIU7" role="_iOnB" />
     <node concept="_fkuM" id="4SHkH$fBct_" role="_iOnB">
       <property role="TrG5h" value="testSinus" />
       <node concept="_fkuZ" id="M7eZQAndHm" role="_fkp5">
@@ -1340,7 +1325,61 @@
         </node>
         <node concept="2vmpnb" id="M7eZQAneA5" role="_fkuS" />
       </node>
-      <node concept="3dYjL0" id="M7eZQAne_J" role="_fkp5" />
+      <node concept="_fkuZ" id="M7eZQAwFSO" role="_fkp5">
+        <node concept="_fku$" id="M7eZQAwFSP" role="_fkur" />
+        <node concept="1af_rf" id="M7eZQAwFSQ" role="_fkuY">
+          <ref role="1afhQb" node="M7eZQAnci$" resolve="equalApprox" />
+          <node concept="30bXRB" id="M7eZQAwFSR" role="1afhQ5">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="2EQzcL" id="M7eZQAwG9F" role="1afhQ5">
+            <node concept="_emDc" id="M7eZQAwGd8" role="2EQzcn">
+              <ref role="_emDf" node="7BZzIqklH$B" resolve="pi" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="M7eZQAwFSW" role="1afhQ5">
+            <property role="30bXRw" value="0.002478752177" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="M7eZQAwFSX" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="M7eZQAE2$H" role="_fkp5">
+        <node concept="_fku$" id="M7eZQAE2$I" role="_fkur" />
+        <node concept="1af_rf" id="M7eZQAE2$J" role="_fkuY">
+          <ref role="1afhQb" node="M7eZQAnci$" resolve="equalApprox" />
+          <node concept="30bXRB" id="M7eZQAE2$K" role="1afhQ5">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="2E8jGW" id="M7eZQANHaG" role="1afhQ5">
+            <node concept="30bXRB" id="M7eZQANHey" role="2E8jGZ">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="M7eZQAE2$N" role="1afhQ5">
+            <property role="30bXRw" value="0.002478752177" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="M7eZQAE2$O" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="M7eZQAPIvu" role="_fkp5">
+        <node concept="_fku$" id="M7eZQAPIvv" role="_fkur" />
+        <node concept="1af_rf" id="M7eZQAPIvw" role="_fkuY">
+          <ref role="1afhQb" node="M7eZQAnci$" resolve="equalApprox" />
+          <node concept="30bXRB" id="M7eZQAPIvx" role="1afhQ5">
+            <property role="30bXRw" value="1.175201193644" />
+          </node>
+          <node concept="2Elt2L" id="M7eZQAPIGl" role="1afhQ5">
+            <node concept="30bXRB" id="M7eZQAPIKV" role="2Elt2K">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="M7eZQAPIv$" role="1afhQ5">
+            <property role="30bXRw" value="0.002478752177" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="M7eZQAPIv_" role="_fkuS" />
+      </node>
+      <node concept="3dYjL0" id="M7eZQAPIuR" role="_fkp5" />
     </node>
     <node concept="_ixoA" id="4SHkH$fBclS" role="_iOnB" />
     <node concept="_fkuM" id="642_vmCWuWO" role="_iOnB">

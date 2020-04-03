@@ -1808,6 +1808,7 @@
   </node>
   <node concept="1YbPZF" id="4SHkH$fnoTt">
     <property role="TrG5h" value="typeof_SinusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
     <node concept="3clFbS" id="4SHkH$fnoTu" role="18ibNy">
       <node concept="1Z5TYs" id="4SHkH$fnp6e" role="3cqZAp">
         <node concept="mw_s8" id="4SHkH$fnp6f" role="1ZfhKB">
@@ -1833,6 +1834,7 @@
   </node>
   <node concept="18kY7G" id="4SHkH$fnpD1">
     <property role="TrG5h" value="check_SinusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
     <node concept="3clFbS" id="4SHkH$fnpD2" role="18ibNy">
       <node concept="3clFbF" id="4SHkH$fnpD8" role="3cqZAp">
         <node concept="2YIFZM" id="4SHkH$fnpD9" role="3clFbG">
@@ -1868,6 +1870,7 @@
   </node>
   <node concept="1YbPZF" id="M7eZQ_ZSup">
     <property role="TrG5h" value="typeof_CosinusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
     <node concept="3clFbS" id="M7eZQ_ZSuq" role="18ibNy">
       <node concept="1Z5TYs" id="M7eZQ_ZSyJ" role="3cqZAp">
         <node concept="mw_s8" id="M7eZQ_ZSyK" role="1ZfhKB">
@@ -1893,6 +1896,7 @@
   </node>
   <node concept="18kY7G" id="M7eZQ_ZTcI">
     <property role="TrG5h" value="check_CosinusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
     <node concept="3clFbS" id="M7eZQ_ZTcJ" role="18ibNy">
       <node concept="3clFbF" id="M7eZQ_ZTcS" role="3cqZAp">
         <node concept="2YIFZM" id="M7eZQ_ZTcT" role="3clFbG">
@@ -1924,6 +1928,192 @@
     <node concept="1YaCAy" id="M7eZQ_ZTcL" role="1YuTPh">
       <property role="TrG5h" value="cosinusExpression" />
       <ref role="1YaFvo" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="M7eZQAng$t">
+    <property role="TrG5h" value="typeof_tangens" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQAng$u" role="18ibNy">
+      <node concept="1Z5TYs" id="M7eZQAngNy" role="3cqZAp">
+        <node concept="mw_s8" id="M7eZQAngNQ" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQAngNM" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQAngO1" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="M7eZQAngN_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="M7eZQAng_v" role="mwGJk">
+            <node concept="1YBJjd" id="M7eZQAngBn" role="1Z2MuG">
+              <ref role="1YBMHb" node="M7eZQAng$w" resolve="tangens" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQAng$w" role="1YuTPh">
+      <property role="TrG5h" value="tangens" />
+      <ref role="1YaFvo" to="1qv1:M7eZQAngzc" resolve="TangensExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="M7eZQAngOS">
+    <property role="TrG5h" value="check_tangens" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQAngOT" role="18ibNy">
+      <node concept="3clFbF" id="M7eZQAngX4" role="3cqZAp">
+        <node concept="2YIFZM" id="M7eZQAngX5" role="3clFbG">
+          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
+          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
+          <node concept="2OqwBi" id="M7eZQAngX6" role="37wK5m">
+            <node concept="1YBJjd" id="M7eZQAnh5_" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQAngOV" resolve="tangens" />
+            </node>
+            <node concept="3JvlWi" id="M7eZQAngX8" role="2OqNvi" />
+          </node>
+          <node concept="1YBJjd" id="M7eZQAnh9$" role="37wK5m">
+            <ref role="1YBMHb" node="M7eZQAngOV" resolve="tangens" />
+          </node>
+          <node concept="2OqwBi" id="M7eZQAngXa" role="37wK5m">
+            <node concept="2OqwBi" id="M7eZQAngXb" role="2Oq$k0">
+              <node concept="1YBJjd" id="M7eZQAnhfd" role="2Oq$k0">
+                <ref role="1YBMHb" node="M7eZQAngOV" resolve="tangens" />
+              </node>
+              <node concept="3TrEf2" id="M7eZQAnhsd" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:M7eZQAngzE" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="M7eZQAngXe" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQAngOV" role="1YuTPh">
+      <property role="TrG5h" value="tangens" />
+      <ref role="1YaFvo" to="1qv1:M7eZQAngzc" resolve="TangensExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="M7eZQADw4i">
+    <property role="TrG5h" value="typeof_TangensHyperbolicusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQADw4j" role="18ibNy">
+      <node concept="1Z5TYs" id="M7eZQADwfo" role="3cqZAp">
+        <node concept="mw_s8" id="M7eZQADwfG" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQADwfC" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQADwfR" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="M7eZQADwfr" role="1ZfhK$">
+          <node concept="1Z2H0r" id="M7eZQADw4y" role="mwGJk">
+            <node concept="1YBJjd" id="M7eZQADw6q" role="1Z2MuG">
+              <ref role="1YBMHb" node="M7eZQADw4l" resolve="tangensHyperbolicus" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQADw4l" role="1YuTPh">
+      <property role="TrG5h" value="tangensHyperbolicus" />
+      <ref role="1YaFvo" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicusExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="M7eZQADwgI">
+    <property role="TrG5h" value="check_TangensHyperbolicusExpression" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQADwgJ" role="18ibNy">
+      <node concept="3clFbF" id="M7eZQADwmv" role="3cqZAp">
+        <node concept="2YIFZM" id="M7eZQADwmw" role="3clFbG">
+          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
+          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
+          <node concept="2OqwBi" id="M7eZQADwmx" role="37wK5m">
+            <node concept="1YBJjd" id="M7eZQADwtD" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQADwgL" resolve="tangensHyperbolicus" />
+            </node>
+            <node concept="3JvlWi" id="M7eZQADwmz" role="2OqNvi" />
+          </node>
+          <node concept="1YBJjd" id="M7eZQADww9" role="37wK5m">
+            <ref role="1YBMHb" node="M7eZQADwgL" resolve="tangensHyperbolicus" />
+          </node>
+          <node concept="2OqwBi" id="M7eZQADwm_" role="37wK5m">
+            <node concept="2OqwBi" id="M7eZQADwmA" role="2Oq$k0">
+              <node concept="1YBJjd" id="M7eZQADwyF" role="2Oq$k0">
+                <ref role="1YBMHb" node="M7eZQADwgL" resolve="tangensHyperbolicus" />
+              </node>
+              <node concept="3TrEf2" id="M7eZQADwRS" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:M7eZQADw32" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="M7eZQADwmD" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQADwgL" role="1YuTPh">
+      <property role="TrG5h" value="tangensHyperbolicus" />
+      <ref role="1YaFvo" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicusExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="M7eZQAOIIt">
+    <property role="TrG5h" value="typeof_SinusHyperbolicusExpresssion" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQAOIIu" role="18ibNy">
+      <node concept="1Z5TYs" id="M7eZQAOIV8" role="3cqZAp">
+        <node concept="mw_s8" id="M7eZQAOIVs" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQAOIVo" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQAOIVB" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="M7eZQAOIVb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="M7eZQAOIIE" role="mwGJk">
+            <node concept="1YBJjd" id="M7eZQAOIKy" role="1Z2MuG">
+              <ref role="1YBMHb" node="M7eZQAOIIw" resolve="sinusHyperbolicus" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQAOIIw" role="1YuTPh">
+      <property role="TrG5h" value="sinusHyperbolicus" />
+      <ref role="1YaFvo" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicusExpresssion" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="M7eZQAOIWu">
+    <property role="TrG5h" value="check_SinusHyperbolicusExpresssion" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQAOIWv" role="18ibNy">
+      <node concept="3clFbF" id="M7eZQAOJ3A" role="3cqZAp">
+        <node concept="2YIFZM" id="M7eZQAOJ3B" role="3clFbG">
+          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
+          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
+          <node concept="2OqwBi" id="M7eZQAOJ3C" role="37wK5m">
+            <node concept="1YBJjd" id="M7eZQAOJc7" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQAOIWx" resolve="sinusHyperbolicus" />
+            </node>
+            <node concept="3JvlWi" id="M7eZQAOJ3E" role="2OqNvi" />
+          </node>
+          <node concept="1YBJjd" id="M7eZQAOJj5" role="37wK5m">
+            <ref role="1YBMHb" node="M7eZQAOIWx" resolve="sinusHyperbolicus" />
+          </node>
+          <node concept="2OqwBi" id="M7eZQAOJ3G" role="37wK5m">
+            <node concept="2OqwBi" id="M7eZQAOJ3H" role="2Oq$k0">
+              <node concept="1YBJjd" id="M7eZQAOJlB" role="2Oq$k0">
+                <ref role="1YBMHb" node="M7eZQAOIWx" resolve="sinusHyperbolicus" />
+              </node>
+              <node concept="3TrEf2" id="M7eZQAOJE9" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:M7eZQAOIHd" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="M7eZQAOJ3K" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQAOIWx" role="1YuTPh">
+      <property role="TrG5h" value="sinusHyperbolicus" />
+      <ref role="1YaFvo" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicusExpresssion" />
     </node>
   </node>
 </model>
