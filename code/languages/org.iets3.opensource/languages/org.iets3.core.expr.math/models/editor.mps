@@ -19,6 +19,7 @@
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -40,6 +41,9 @@
         <child id="6202297022026447496" name="canExecuteFunction" index="2jiSrf" />
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
@@ -909,174 +913,38 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="M7eZQ_k5ho">
+  <node concept="24kQdi" id="M7eZQBbq6V">
     <property role="3GE5qa" value="trigonometric" />
-    <ref role="1XX52x" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
-    <node concept="3EZMnI" id="M7eZQ_k5hq" role="2wV5jI">
-      <node concept="3F0ifn" id="M7eZQ_k5hx" role="3EZMnx">
-        <property role="3F0ifm" value="sin" />
-        <node concept="Vb9p2" id="M7eZQ_kADa" role="3F10Kt">
+    <ref role="1XX52x" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
+    <node concept="3EZMnI" id="M7eZQBbq72" role="2wV5jI">
+      <node concept="PMmxH" id="M7eZQBbq7o" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="1EoaTAz6smr" role="3F10Kt">
           <property role="Vbekb" value="g1_kEg4/ITALIC" />
         </node>
       </node>
-      <node concept="3F0ifn" id="M7eZQAlhLQ" role="3EZMnx">
+      <node concept="3F0ifn" id="M7eZQBbq75" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="M7eZQAlX_T" role="3F10Kt">
+        <node concept="11LMrY" id="M7eZQBbq76" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="11L4FC" id="M7eZQAmjkL" role="3F10Kt">
+        <node concept="11L4FC" id="M7eZQBbq77" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="M7eZQ_k5hB" role="3EZMnx">
-        <ref role="1NtTu8" to="1qv1:4SHkH$fnm2I" resolve="expr" />
+      <node concept="3F1sOY" id="M7eZQBbq78" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:M7eZQBbq61" resolve="expr" />
       </node>
-      <node concept="3F0ifn" id="M7eZQ_k5hJ" role="3EZMnx">
+      <node concept="3F0ifn" id="M7eZQBbq79" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="M7eZQAkW3v" role="3F10Kt">
+        <node concept="11L4FC" id="M7eZQBbq7a" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="11LMrY" id="M7eZQAmjkE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="M7eZQ_k5ht" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="M7eZQ_ZStK">
-    <property role="3GE5qa" value="trigonometric" />
-    <ref role="1XX52x" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
-    <node concept="3EZMnI" id="M7eZQAmD3H" role="2wV5jI">
-      <node concept="3F0ifn" id="M7eZQAmD3I" role="3EZMnx">
-        <property role="3F0ifm" value="cos" />
-        <node concept="Vb9p2" id="M7eZQAmD3J" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="M7eZQAmD3K" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="M7eZQAmD3L" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11L4FC" id="M7eZQAmD3M" role="3F10Kt">
+        <node concept="11LMrY" id="M7eZQBbq7b" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="M7eZQAmD3N" role="3EZMnx">
-        <ref role="1NtTu8" to="1qv1:M7eZQ_ZStk" resolve="expr" />
-      </node>
-      <node concept="3F0ifn" id="M7eZQAmD3O" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="M7eZQAmD3P" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="M7eZQAmD3Q" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="M7eZQAmD3R" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="M7eZQAngzC">
-    <property role="3GE5qa" value="trigonometric" />
-    <ref role="1XX52x" to="1qv1:M7eZQAngzc" resolve="TangensExpression" />
-    <node concept="3EZMnI" id="M7eZQAngzG" role="2wV5jI">
-      <node concept="3F0ifn" id="M7eZQAngzH" role="3EZMnx">
-        <property role="3F0ifm" value="tan" />
-        <node concept="Vb9p2" id="M7eZQAngzI" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="M7eZQAngzJ" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="M7eZQAngzK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11L4FC" id="M7eZQAngzL" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="M7eZQAngzM" role="3EZMnx">
-        <ref role="1NtTu8" to="1qv1:M7eZQAngzE" resolve="expr" />
-      </node>
-      <node concept="3F0ifn" id="M7eZQAngzN" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="M7eZQAngzO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="M7eZQAngzP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="M7eZQAngzQ" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="M7eZQADw3v">
-    <property role="3GE5qa" value="trigonometric" />
-    <ref role="1XX52x" to="1qv1:M7eZQADw31" resolve="TangensHyperbolicusExpression" />
-    <node concept="3EZMnI" id="M7eZQADw3x" role="2wV5jI">
-      <node concept="3F0ifn" id="M7eZQADw3y" role="3EZMnx">
-        <property role="3F0ifm" value="tanh" />
-        <node concept="Vb9p2" id="M7eZQADw3z" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="M7eZQADw3$" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="M7eZQADw3_" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11L4FC" id="M7eZQADw3A" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="M7eZQADw3B" role="3EZMnx">
-        <ref role="1NtTu8" to="1qv1:M7eZQADw32" resolve="expr" />
-      </node>
-      <node concept="3F0ifn" id="M7eZQADw3C" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="M7eZQADw3D" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="M7eZQADw3E" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="M7eZQADw3F" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="M7eZQAOIHE">
-    <property role="3GE5qa" value="trigonometric" />
-    <ref role="1XX52x" to="1qv1:M7eZQAOIHc" resolve="SinusHyperbolicusExpresssion" />
-    <node concept="3EZMnI" id="M7eZQAOIHG" role="2wV5jI">
-      <node concept="3F0ifn" id="M7eZQAOIHH" role="3EZMnx">
-        <property role="3F0ifm" value="sinh" />
-        <node concept="Vb9p2" id="M7eZQAOIHI" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="M7eZQAOIHJ" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="M7eZQAOIHK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11L4FC" id="M7eZQAOIHL" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="M7eZQAOIHM" role="3EZMnx">
-        <ref role="1NtTu8" to="1qv1:M7eZQAOIHd" resolve="expr" />
-      </node>
-      <node concept="3F0ifn" id="M7eZQAOIHN" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="M7eZQAOIHO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="M7eZQAOIHP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="M7eZQAOIHQ" role="2iSdaV" />
+      <node concept="2iRfu4" id="M7eZQBbq7c" role="2iSdaV" />
     </node>
   </node>
 </model>
