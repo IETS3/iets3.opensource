@@ -219,6 +219,9 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="2807135271607939856" name="org.iets3.core.expr.base.structure.OptionType" flags="ng" index="Uns6S">
+        <child id="2807135271607939857" name="baseType" index="Uns6T" />
+      </concept>
       <concept id="6481804410367607231" name="org.iets3.core.expr.base.structure.TrySuccessClause" flags="ng" index="2YtBXV">
         <child id="6481804410367607232" name="expr" index="2YtBW4" />
       </concept>
@@ -271,6 +274,9 @@
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="1801842150043102459" name="org.iets3.core.expr.tests.structure.OptExpression" flags="ng" index="2nD44o">
+        <child id="1801842150043102462" name="expr" index="2nD44t" />
+      </concept>
       <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
       <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
         <child id="543569365052056368" name="items" index="_fkp5" />
@@ -1863,6 +1869,41 @@
               </node>
               <node concept="2gteS_" id="77FPJvcLcpb" role="2gteVg">
                 <property role="2gteVv" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="72kx4$FpCQl" role="_iOnC">
+          <property role="TrG5h" value="k" />
+          <node concept="30cIq6" id="72kx4$FpCQm" role="2zPyp_">
+            <node concept="2nD44o" id="72kx4$FpDjz" role="30czhm">
+              <node concept="1YnStw" id="72kx4$FpCQn" role="2nD44t">
+                <node concept="CIsGf" id="72kx4$FpCQo" role="2c7tTI">
+                  <node concept="CIsvn" id="72kx4$FpCQp" role="CIi4h">
+                    <ref role="CIi3I" to="ku0a:5XaocLWHSS5" resolve="s" />
+                  </node>
+                </node>
+                <node concept="30bXRB" id="72kx4$FpCQq" role="1YnStB">
+                  <property role="30bXRw" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="Uns6S" id="72kx4$FpD7M" role="2zM23F">
+            <node concept="2c7tTJ" id="72kx4$FpCQr" role="Uns6T">
+              <node concept="CIsGf" id="72kx4$FpCQs" role="2c7tTI">
+                <node concept="CIsvn" id="72kx4$FpCQt" role="CIi4h">
+                  <ref role="CIi3I" to="ku0a:5XaocLWHSS5" resolve="s" />
+                </node>
+              </node>
+              <node concept="mLuIC" id="72kx4$FpCQu" role="2c7tTw">
+                <node concept="2gteSW" id="72kx4$FpCQv" role="2gteSx">
+                  <property role="2gteSQ" value="-10" />
+                  <property role="2gteSD" value="-10" />
+                </node>
+                <node concept="2gteS_" id="72kx4$FpCQw" role="2gteVg">
+                  <property role="2gteVv" value="0" />
+                </node>
               </node>
             </node>
           </node>
