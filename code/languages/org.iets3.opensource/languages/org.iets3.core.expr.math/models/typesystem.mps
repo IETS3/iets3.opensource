@@ -1809,47 +1809,25 @@
   <node concept="1YbPZF" id="4SHkH$fnoTt">
     <property role="TrG5h" value="typeof_SinusExpression" />
     <node concept="3clFbS" id="4SHkH$fnoTu" role="18ibNy">
-      <node concept="nvevp" id="4SHkH$fnp6c" role="3cqZAp">
-        <node concept="3clFbS" id="4SHkH$fnp6d" role="nvhr_">
-          <node concept="1Z5TYs" id="4SHkH$fnp6e" role="3cqZAp">
-            <node concept="mw_s8" id="4SHkH$fnp6f" role="1ZfhKB">
-              <node concept="3h4ouC" id="4SHkH$fnp6g" role="mwGJk">
-                <node concept="1YBJjd" id="4SHkH$fnqH8" role="3h4sjZ">
-                  <ref role="1YBMHb" node="4SHkH$fnoTw" resolve="sinusExpression" />
-                </node>
-                <node concept="2X3wrD" id="4SHkH$fnp6i" role="3h4u4a">
-                  <ref role="2X3Bk0" node="4SHkH$fnp6r" resolve="sinusExpressionType" />
-                </node>
-                <node concept="10Nm6u" id="4SHkH$fnp6j" role="3h4u2h" />
-              </node>
-            </node>
-            <node concept="mw_s8" id="4SHkH$fnp6k" role="1ZfhK$">
-              <node concept="1Z2H0r" id="4SHkH$fnp6l" role="mwGJk">
-                <node concept="1YBJjd" id="4SHkH$fnqI8" role="1Z2MuG">
-                  <ref role="1YBMHb" node="4SHkH$fnoTw" resolve="sinusExpression" />
-                </node>
-              </node>
+      <node concept="1Z5TYs" id="4SHkH$fnp6e" role="3cqZAp">
+        <node concept="mw_s8" id="4SHkH$fnp6f" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQA1g16" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQA1g53" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
             </node>
           </node>
         </node>
-        <node concept="1Z2H0r" id="4SHkH$fnp6n" role="nvjzm">
-          <node concept="2OqwBi" id="4SHkH$fnp6o" role="1Z2MuG">
-            <node concept="1YBJjd" id="4SHkH$fnqBn" role="2Oq$k0">
-              <ref role="1YBMHb" node="4SHkH$fnoTw" resolve="sinusExpression" />
-            </node>
-            <node concept="3TrEf2" id="4SHkH$fnp6q" role="2OqNvi">
-              <ref role="3Tt5mk" to="1qv1:4iu6t1eB97r" resolve="expr" />
+        <node concept="mw_s8" id="4SHkH$fnp6k" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4SHkH$fnp6l" role="mwGJk">
+            <node concept="1YBJjd" id="4SHkH$fnqI8" role="1Z2MuG">
+              <ref role="1YBMHb" node="4SHkH$fnoTw" resolve="sinus" />
             </node>
           </node>
-        </node>
-        <node concept="2X1qdy" id="4SHkH$fnp6r" role="2X0Ygz">
-          <property role="TrG5h" value="sinusExpressionType" />
-          <node concept="2jxLKc" id="4SHkH$fnp6s" role="1tU5fm" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="4SHkH$fnoTw" role="1YuTPh">
-      <property role="TrG5h" value="sinusExpression" />
+      <property role="TrG5h" value="sinus" />
       <ref role="1YaFvo" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
     </node>
   </node>
@@ -1874,8 +1852,8 @@
               <node concept="1YBJjd" id="4SHkH$fnqnt" role="2Oq$k0">
                 <ref role="1YBMHb" node="4SHkH$fnpD4" resolve="sinusExpression" />
               </node>
-              <node concept="3TrEf2" id="4SHkH$fnpDh" role="2OqNvi">
-                <ref role="3Tt5mk" to="1qv1:4iu6t1eB9SW" resolve="expr" />
+              <node concept="3TrEf2" id="M7eZQ_kX5R" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:4SHkH$fnm2I" resolve="expr" />
               </node>
             </node>
             <node concept="3JvlWi" id="4SHkH$fnpDi" role="2OqNvi" />
@@ -1886,6 +1864,66 @@
     <node concept="1YaCAy" id="4SHkH$fnpD4" role="1YuTPh">
       <property role="TrG5h" value="sinusExpression" />
       <ref role="1YaFvo" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="M7eZQ_ZSup">
+    <property role="TrG5h" value="typeof_CosinusExpression" />
+    <node concept="3clFbS" id="M7eZQ_ZSuq" role="18ibNy">
+      <node concept="1Z5TYs" id="M7eZQ_ZSyJ" role="3cqZAp">
+        <node concept="mw_s8" id="M7eZQ_ZSyK" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQAmDa3" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQAmDaS" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="M7eZQ_ZSyP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="M7eZQ_ZSyQ" role="mwGJk">
+            <node concept="1YBJjd" id="M7eZQ_ZSY7" role="1Z2MuG">
+              <ref role="1YBMHb" node="M7eZQ_ZSus" resolve="cosinus" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQ_ZSus" role="1YuTPh">
+      <property role="TrG5h" value="cosinus" />
+      <ref role="1YaFvo" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="M7eZQ_ZTcI">
+    <property role="TrG5h" value="check_CosinusExpression" />
+    <node concept="3clFbS" id="M7eZQ_ZTcJ" role="18ibNy">
+      <node concept="3clFbF" id="M7eZQ_ZTcS" role="3cqZAp">
+        <node concept="2YIFZM" id="M7eZQ_ZTcT" role="3clFbG">
+          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
+          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
+          <node concept="2OqwBi" id="M7eZQ_ZTcU" role="37wK5m">
+            <node concept="1YBJjd" id="M7eZQ_ZTcV" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQ_ZTcL" resolve="cosinusExpression" />
+            </node>
+            <node concept="3JvlWi" id="M7eZQ_ZTcW" role="2OqNvi" />
+          </node>
+          <node concept="1YBJjd" id="M7eZQ_ZTcX" role="37wK5m">
+            <ref role="1YBMHb" node="M7eZQ_ZTcL" resolve="cosinusExpression" />
+          </node>
+          <node concept="2OqwBi" id="M7eZQ_ZTcY" role="37wK5m">
+            <node concept="2OqwBi" id="M7eZQ_ZTcZ" role="2Oq$k0">
+              <node concept="1YBJjd" id="M7eZQ_ZTd0" role="2Oq$k0">
+                <ref role="1YBMHb" node="M7eZQ_ZTcL" resolve="cosinusExpression" />
+              </node>
+              <node concept="3TrEf2" id="M7eZQ_ZT_3" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:M7eZQ_ZStk" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="M7eZQ_ZTd2" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQ_ZTcL" role="1YuTPh">
+      <property role="TrG5h" value="cosinusExpression" />
+      <ref role="1YaFvo" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
     </node>
   </node>
 </model>

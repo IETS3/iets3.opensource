@@ -20,6 +20,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
+    <import index="aoxt" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.util(org.apache.commons/)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2424,26 +2425,31 @@
       <node concept="3dA_Gj" id="4SHkH$fodQ1" role="3vQZUl">
         <node concept="9aQIb" id="4SHkH$fodQ3" role="3vcmbn">
           <node concept="3clFbS" id="4SHkH$fodQ5" role="9aQI4">
-            <node concept="3cpWs8" id="4SHkH$folB$" role="3cqZAp">
-              <node concept="3cpWsn" id="4SHkH$folB_" role="3cpWs9">
-                <property role="TrG5h" value="doubleValue" />
-                <node concept="10P55v" id="4SHkH$foklr" role="1tU5fm" />
-                <node concept="2OqwBi" id="4SHkH$folBA" role="33vP2m">
-                  <node concept="rqRoa" id="4SHkH$folBB" role="2Oq$k0">
-                    <ref role="rqRob" to="1qv1:4SHkH$fnm2I" resolve="expr" />
-                  </node>
-                  <node concept="liA8E" id="4SHkH$folBC" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+            <node concept="3cpWs8" id="M7eZQ_vfC9" role="3cqZAp">
+              <node concept="3cpWsn" id="M7eZQ_vfCa" role="3cpWs9">
+                <property role="TrG5h" value="sin" />
+                <node concept="10P55v" id="M7eZQ_vdhu" role="1tU5fm" />
+                <node concept="2YIFZM" id="M7eZQ_vfCb" role="33vP2m">
+                  <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                  <ref role="37wK5l" to="aoxt:~FastMath.sin(double)" resolve="sin" />
+                  <node concept="2OqwBi" id="M7eZQA0tZx" role="37wK5m">
+                    <node concept="rqRoa" id="M7eZQA0tZy" role="2Oq$k0">
+                      <ref role="rqRob" to="1qv1:4SHkH$fnm2I" resolve="expr" />
+                    </node>
+                    <node concept="liA8E" id="M7eZQA0tZz" role="2OqNvi">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3cpWs6" id="4SHkH$foqNu" role="3cqZAp">
-              <node concept="2YIFZM" id="4SHkH$fosRb" role="3cqZAk">
-                <ref role="37wK5l" to="wyt6:~Math.sin(double)" resolve="sin" />
-                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                <node concept="37vLTw" id="4SHkH$fosRn" role="37wK5m">
-                  <ref role="3cqZAo" node="4SHkH$folB_" resolve="doubleValue" />
+              <node concept="2ShNRf" id="M7eZQ_vhKZ" role="3cqZAk">
+                <node concept="1pGfFk" id="M7eZQ_vj43" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="37vLTw" id="M7eZQ_vjo_" role="37wK5m">
+                    <ref role="3cqZAo" node="M7eZQ_vfCa" resolve="sin" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2453,6 +2459,50 @@
       <node concept="qpFDx" id="4SHkH$foemg" role="3vbI0w">
         <ref role="qpFD$" to="1qv1:4SHkH$fnm2I" resolve="expr" />
         <node concept="rxStX" id="4SHkH$foeQh" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="M7eZQA0z3Y" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+      <node concept="3dA_Gj" id="M7eZQA0_YN" role="3vQZUl">
+        <node concept="9aQIb" id="M7eZQA0_YP" role="3vcmbn">
+          <node concept="3clFbS" id="M7eZQA0_YR" role="9aQI4">
+            <node concept="3cpWs8" id="M7eZQA0Av2" role="3cqZAp">
+              <node concept="3cpWsn" id="M7eZQA0Av3" role="3cpWs9">
+                <property role="TrG5h" value="sin" />
+                <node concept="10P55v" id="M7eZQA0Av4" role="1tU5fm" />
+                <node concept="2YIFZM" id="M7eZQA0FKN" role="33vP2m">
+                  <ref role="1Pybhc" to="aoxt:~FastMath" resolve="FastMath" />
+                  <ref role="37wK5l" to="aoxt:~FastMath.cos(double)" resolve="cos" />
+                  <node concept="2OqwBi" id="M7eZQA0FKO" role="37wK5m">
+                    <node concept="rqRoa" id="M7eZQA0FKP" role="2Oq$k0">
+                      <ref role="rqRob" to="1qv1:M7eZQ_ZStk" resolve="expr" />
+                    </node>
+                    <node concept="liA8E" id="M7eZQA0FKQ" role="2OqNvi">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="M7eZQA0Av9" role="3cqZAp">
+              <node concept="2ShNRf" id="M7eZQA0Ava" role="3cqZAk">
+                <node concept="1pGfFk" id="M7eZQA0Avb" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="37vLTw" id="M7eZQA0Avc" role="37wK5m">
+                    <ref role="3cqZAo" node="M7eZQA0Av3" resolve="sin" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="M7eZQA0AHh" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:M7eZQ_ZStk" resolve="expr" />
+        <node concept="rxStX" id="M7eZQA0Bmw" role="rajlz">
           <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>

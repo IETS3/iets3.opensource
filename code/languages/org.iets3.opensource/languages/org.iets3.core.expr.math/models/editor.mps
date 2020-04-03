@@ -42,6 +42,9 @@
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -904,6 +907,72 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="M7eZQ_k5ho">
+    <ref role="1XX52x" to="1qv1:4SHkH$fnm2H" resolve="SinusExpression" />
+    <node concept="3EZMnI" id="M7eZQ_k5hq" role="2wV5jI">
+      <node concept="3F0ifn" id="M7eZQ_k5hx" role="3EZMnx">
+        <property role="3F0ifm" value="sin" />
+        <node concept="Vb9p2" id="M7eZQ_kADa" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="M7eZQAlhLQ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="M7eZQAlX_T" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="M7eZQAmjkL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="M7eZQ_k5hB" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:4SHkH$fnm2I" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="M7eZQ_k5hJ" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="M7eZQAkW3v" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="M7eZQAmjkE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="M7eZQ_k5ht" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="M7eZQ_ZStK">
+    <ref role="1XX52x" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+    <node concept="3EZMnI" id="M7eZQAmD3H" role="2wV5jI">
+      <node concept="3F0ifn" id="M7eZQAmD3I" role="3EZMnx">
+        <property role="3F0ifm" value="cos" />
+        <node concept="Vb9p2" id="M7eZQAmD3J" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="M7eZQAmD3K" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="M7eZQAmD3L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="M7eZQAmD3M" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="M7eZQAmD3N" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:M7eZQ_ZStk" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="M7eZQAmD3O" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="M7eZQAmD3P" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="M7eZQAmD3Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="M7eZQAmD3R" role="2iSdaV" />
     </node>
   </node>
 </model>

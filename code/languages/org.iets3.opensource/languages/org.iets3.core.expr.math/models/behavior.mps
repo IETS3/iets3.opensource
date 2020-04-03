@@ -31,6 +31,12 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -867,6 +873,57 @@
         </node>
       </node>
       <node concept="10P_77" id="4SHkH$fnnFZ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="M7eZQ_ZTDM">
+    <ref role="13h7C2" to="1qv1:M7eZQ_ZStj" resolve="CosinusExpression" />
+    <node concept="13hLZK" id="M7eZQ_ZTDN" role="13h7CW">
+      <node concept="3clFbS" id="M7eZQ_ZTDO" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="M7eZQ_ZTPK" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="M7eZQ_ZTPL" role="1B3o_S" />
+      <node concept="3clFbS" id="M7eZQ_ZTPY" role="3clF47">
+        <node concept="3clFbF" id="M7eZQ_ZU5c" role="3cqZAp">
+          <node concept="3cpWs3" id="M7eZQ_ZU5d" role="3clFbG">
+            <node concept="Xl_RD" id="M7eZQ_ZU5e" role="3uHU7w">
+              <property role="Xl_RC" value=")" />
+            </node>
+            <node concept="3cpWs3" id="M7eZQ_ZU5f" role="3uHU7B">
+              <node concept="Xl_RD" id="M7eZQ_ZU5g" role="3uHU7B">
+                <property role="Xl_RC" value="cos(" />
+              </node>
+              <node concept="2OqwBi" id="M7eZQ_ZU5h" role="3uHU7w">
+                <node concept="2OqwBi" id="M7eZQ_ZU5i" role="2Oq$k0">
+                  <node concept="13iPFW" id="M7eZQ_ZU5j" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="M7eZQ_ZU5k" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1qv1:M7eZQ_ZStk" resolve="expr" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="M7eZQ_ZU5l" role="2OqNvi">
+                  <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="M7eZQ_ZTPZ" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="M7eZQ_ZU$O" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <ref role="13i0hy" to="pbu6:3NBP8_O4e8l" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="M7eZQ_ZU$P" role="1B3o_S" />
+      <node concept="2AHcQZ" id="M7eZQ_ZU$Y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="3clFbS" id="M7eZQ_ZU$Z" role="3clF47">
+        <node concept="3clFbF" id="M7eZQ_ZURu" role="3cqZAp">
+          <node concept="3clFbT" id="M7eZQ_ZURt" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="M7eZQ_ZU_0" role="3clF45" />
     </node>
   </node>
 </model>
