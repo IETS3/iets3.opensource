@@ -696,7 +696,7 @@
   <node concept="3INDKC" id="3cUcim$6q3Z">
     <property role="TrG5h" value="AbstractLiteral_AddTags" />
     <node concept="A1WHr" id="3cUcim$6q40" role="AmTjC">
-      <ref role="2ZyFGn" to="hm2y:7halHeUzscN" resolve="PrimitiveLiteral" />
+      <ref role="2ZyFGn" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1Qtc8_" id="3cUcim$6q43" role="IW6Ez">
       <node concept="3cWJ9i" id="3cUcim$6q41" role="1Qtc8$">
