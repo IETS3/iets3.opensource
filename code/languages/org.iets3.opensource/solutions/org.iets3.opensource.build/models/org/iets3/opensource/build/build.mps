@@ -12653,6 +12653,11 @@
           <ref role="3bR37D" node="5wLtKNeSRQv" resolve="org.iets3.core.expr.math" />
         </node>
       </node>
+      <node concept="1SiIV0" id="2aG75lpLv6f" role="3bR37C">
+        <node concept="3bR9La" id="2aG75lpLv6g" role="1SiIV1">
+          <ref role="3bR37D" node="5IOlOc8uq2z" resolve="test.ts.expr.os" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
       <property role="BnDLt" value="true" />
