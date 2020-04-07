@@ -24,6 +24,7 @@
     <dependency reexport="false">cd87ddab-6434-448e-a011-1e1c898de18e(org.iets3.core.expr.statemachines)</dependency>
     <dependency reexport="false">4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68(org.iets3.core.expr.temporal)</dependency>
     <dependency reexport="false">289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)</dependency>
+    <dependency reexport="false">6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -147,6 +148,7 @@
     <module reference="8ba65567-1c8a-4983-beb8-0482324d7e44(org.iets3.core.expr.lambda.interpreter)" version="0" />
     <module reference="0495221f-9fd1-41d6-bf26-b3b8aeb7eb7b(org.iets3.core.expr.lambda.plugin)" version="0" />
     <module reference="847dec6c-8460-4c2a-9e6e-039d9d12e815(org.iets3.core.expr.lookup.interpreter)" version="0" />
+    <module reference="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)" version="0" />
     <module reference="b804a851-ecf0-4ad4-a0af-ae720b39191a(org.iets3.core.expr.math.interpreter)" version="0" />
     <module reference="2bd330e3-1cae-4049-bed7-7d39e93cece4(org.iets3.core.expr.messages.interpreter)" version="0" />
     <module reference="711a16d7-99e8-4e1d-b20c-99c0b7309cd8(org.iets3.core.expr.metafunction)" version="0" />

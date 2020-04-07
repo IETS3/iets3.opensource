@@ -400,8 +400,35 @@
   <node concept="1TIwiD" id="3C0hCYboTSS">
     <property role="EcuMT" value="4179418036532649528" />
     <property role="TrG5h" value="PolynomialExpression" />
-    <property role="34LRSv" value="@" />
+    <property role="34LRSv" value="polynom" />
     <ref role="1TJDcQ" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+  </node>
+  <node concept="1TIwiD" id="3iWt5efOhM1">
+    <property role="EcuMT" value="3800040087837809793" />
+    <property role="TrG5h" value="IntegralExpression" />
+    <property role="34LRSv" value="integral" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3iWt5efOwZ1" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lower" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872065" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3iWt5efOwZ2" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872066" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3iWt5efOwZ3" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872067" />
+      <ref role="20lvS9" node="3C0hCYboTSS" resolve="PolynomialExpression" />
+    </node>
   </node>
 </model>
 
