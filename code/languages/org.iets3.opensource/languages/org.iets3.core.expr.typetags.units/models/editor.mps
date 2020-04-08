@@ -25,6 +25,7 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="w1hl" ref="r:04b74a30-84ff-4d44-89e3-8084278f9c79(org.iets3.core.expr.typetags.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -86,9 +87,12 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="3738029991950788349" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Named" flags="ng" index="Q6S24" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -2175,6 +2179,61 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SygLIkPQOv">
+    <property role="3GE5qa" value="conversion" />
+    <ref role="1XX52x" to="b0gq:7SygLIkPJP$" resolve="ConvertToTarget" />
+    <node concept="3EZMnI" id="7SygLIkPQOx" role="2wV5jI">
+      <node concept="2iRfu4" id="7SygLIkPQOy" role="2iSdaV" />
+      <node concept="PMmxH" id="7SygLIkPQOE" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="7SygLIkPQOJ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="7SygLIkPScS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7SygLIkPScX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7SygLIkPSd7" role="3EZMnx">
+        <ref role="1NtTu8" to="b0gq:7SygLIkPQFC" resolve="targetUnit" />
+        <node concept="1sVBvm" id="7SygLIkPSd9" role="1sWHZn">
+          <node concept="3F0A7n" id="7SygLIkPSdn" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="4M31vJayoGp" resolve="UnitTag" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7SygLIkPSew" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7SygLIkPSeK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7SygLIkPSeP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2ECpYtcLTdi" role="6VMZX">
+      <node concept="2iRfu4" id="2ECpYtcLTdj" role="2iSdaV" />
+      <node concept="3F0ifn" id="2ECpYtcLTdm" role="3EZMnx">
+        <property role="3F0ifm" value="conversion specifier:" />
+        <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
+      </node>
+      <node concept="1iCGBv" id="2ECpYtcLTdr" role="3EZMnx">
+        <ref role="1NtTu8" to="b0gq:7SygLIkPQFD" resolve="conversionSpecifier" />
+        <node concept="1sVBvm" id="2ECpYtcLTdt" role="1sWHZn">
+          <node concept="3F0A7n" id="2ECpYtcLTdC" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
