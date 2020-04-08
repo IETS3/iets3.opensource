@@ -1544,9 +1544,6 @@
     <node concept="_ixoA" id="3iWt5egK2dj" role="_iOnB" />
     <node concept="_fkuM" id="3iWt5egK2FR" role="_iOnB">
       <property role="TrG5h" value="testIntegral" />
-      <node concept="3dYjL0" id="2aG75lpx2g_" role="_fkp5" />
-      <node concept="3dYjL0" id="2aG75lpx2iV" role="_fkp5" />
-      <node concept="3dYjL0" id="2aG75lpx2li" role="_fkp5" />
       <node concept="_fkuZ" id="2aG75lnOXxv" role="_fkp5">
         <node concept="_fku$" id="2aG75lnOXxw" role="_fkur" />
         <node concept="1af_rf" id="2aG75lnOXxY" role="_fkuY">
