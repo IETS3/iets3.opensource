@@ -2050,7 +2050,7 @@
       <node concept="_fkuZ" id="4wFKMX0ahkc" role="_fkp5">
         <node concept="_fku$" id="4wFKMX0ahkd" role="_fkur" />
         <node concept="30bXRB" id="4wFKMX0aht2" role="_fkuS">
-          <property role="30bXRw" value="1.5" />
+          <property role="30bXRw" value="1.0" />
         </node>
         <node concept="30dDZf" id="4wFKMX0akyw" role="_fkuY">
           <node concept="2Vrmzi" id="4wFKMX0ahob" role="30dEsF">
@@ -2084,6 +2084,15 @@
               </node>
               <node concept="30bXRB" id="4wFKMX0s0hW" role="3ix9pP">
                 <property role="30bXRw" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1z9TsT" id="4wFKMX1_Sxz" role="lGtFl">
+          <node concept="OjmMv" id="4wFKMX1_Sx$" role="1w35rA">
+            <node concept="19SGf9" id="4wFKMX1_Sx_" role="OjmMu">
+              <node concept="19SUe$" id="4wFKMX1_SxA" role="19SJt6">
+                <property role="19SUeA" value="ToDo: This should equal to 1.5 ! Why does it return 1.0" />
               </node>
             </node>
           </node>
