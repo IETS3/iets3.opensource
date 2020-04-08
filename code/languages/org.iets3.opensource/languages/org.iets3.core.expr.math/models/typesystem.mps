@@ -11,9 +11,9 @@
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="7xqi" ref="r:d2ff18ef-a6af-4ccc-bbe9-c907db320eae(org.iets3.core.expr.math.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="7xqi" ref="r:d2ff18ef-a6af-4ccc-bbe9-c907db320eae(org.iets3.core.expr.math.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -1565,8 +1565,8 @@
         </node>
       </node>
       <node concept="2pJPEk" id="50kkvMT07D2" role="3ciSnv">
-        <node concept="2pJPED" id="50kkvMT07To" role="2pJPEn">
-          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        <node concept="2pJPED" id="75H2zAHxY45" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
         </node>
       </node>
     </node>
@@ -1856,68 +1856,6 @@
     <node concept="1YaCAy" id="6q$NxWgdvf6" role="1YuTPh">
       <property role="TrG5h" value="fractionExpression" />
       <ref role="1YaFvo" to="1qv1:4iu6t1eAWP6" resolve="FractionExpression" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="M7eZQBbq7W">
-    <property role="TrG5h" value="typeof_TrigonometricExpression" />
-    <property role="3GE5qa" value="trigonometric" />
-    <node concept="3clFbS" id="M7eZQBbq7X" role="18ibNy">
-      <node concept="1Z5TYs" id="M7eZQBbqhS" role="3cqZAp">
-        <node concept="mw_s8" id="M7eZQBbqic" role="1ZfhKB">
-          <node concept="2pJPEk" id="M7eZQBbqi8" role="mwGJk">
-            <node concept="2pJPED" id="M7eZQBbqin" role="2pJPEn">
-              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="M7eZQBbqhV" role="1ZfhK$">
-          <node concept="1Z2H0r" id="M7eZQBbq83" role="mwGJk">
-            <node concept="1YBJjd" id="M7eZQBbq9V" role="1Z2MuG">
-              <ref role="1YBMHb" node="M7eZQBbq7Z" resolve="trigonometricExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="M7eZQBbq7Z" role="1YuTPh">
-      <property role="TrG5h" value="trigonometricExpression" />
-      <ref role="1YaFvo" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="M7eZQBbqjR">
-    <property role="TrG5h" value="check_TrigonometricExpression" />
-    <property role="3GE5qa" value="trigonometric" />
-    <node concept="3clFbS" id="M7eZQBbqjS" role="18ibNy">
-      <node concept="3clFbF" id="M7eZQBbqpX" role="3cqZAp">
-        <node concept="2YIFZM" id="M7eZQBbqpY" role="3clFbG">
-          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
-          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
-          <node concept="2OqwBi" id="M7eZQBbqpZ" role="37wK5m">
-            <node concept="1YBJjd" id="M7eZQBbquC" role="2Oq$k0">
-              <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
-            </node>
-            <node concept="3JvlWi" id="M7eZQBbqq1" role="2OqNvi" />
-          </node>
-          <node concept="1YBJjd" id="M7eZQBbq$D" role="37wK5m">
-            <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
-          </node>
-          <node concept="2OqwBi" id="M7eZQBbqq3" role="37wK5m">
-            <node concept="2OqwBi" id="M7eZQBbqq4" role="2Oq$k0">
-              <node concept="1YBJjd" id="M7eZQBbqBb" role="2Oq$k0">
-                <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
-              </node>
-              <node concept="3TrEf2" id="M7eZQBbVoQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="1qv1:M7eZQBbq61" resolve="expr" />
-              </node>
-            </node>
-            <node concept="3JvlWi" id="M7eZQBbqq7" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="M7eZQBbqjU" role="1YuTPh">
-      <property role="TrG5h" value="trigonometricExpression" />
-      <ref role="1YaFvo" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
     </node>
   </node>
   <node concept="18kY7G" id="3C0hCYbq2PZ">
@@ -2679,6 +2617,68 @@
     <node concept="1YaCAy" id="3iWt5eghXOP" role="1YuTPh">
       <property role="TrG5h" value="integralExpression" />
       <ref role="1YaFvo" to="1qv1:3iWt5efOhM1" resolve="IntegralExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="M7eZQBbqjR">
+    <property role="TrG5h" value="check_TrigonometricExpression" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQBbqjS" role="18ibNy">
+      <node concept="3clFbF" id="M7eZQBbqpX" role="3cqZAp">
+        <node concept="2YIFZM" id="M7eZQBbqpY" role="3clFbG">
+          <ref role="1Pybhc" node="6q$NxWgd429" resolve="MathTypesystemHelper" />
+          <ref role="37wK5l" node="6q$NxWgd7rp" resolve="ensureTypeIsNotNull" />
+          <node concept="2OqwBi" id="M7eZQBbqpZ" role="37wK5m">
+            <node concept="1YBJjd" id="M7eZQBbquC" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
+            </node>
+            <node concept="3JvlWi" id="M7eZQBbqq1" role="2OqNvi" />
+          </node>
+          <node concept="1YBJjd" id="M7eZQBbq$D" role="37wK5m">
+            <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
+          </node>
+          <node concept="2OqwBi" id="M7eZQBbqq3" role="37wK5m">
+            <node concept="2OqwBi" id="M7eZQBbqq4" role="2Oq$k0">
+              <node concept="1YBJjd" id="M7eZQBbqBb" role="2Oq$k0">
+                <ref role="1YBMHb" node="M7eZQBbqjU" resolve="trigonometricExpression" />
+              </node>
+              <node concept="3TrEf2" id="M7eZQBbVoQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="1qv1:M7eZQBbq61" resolve="expr" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="M7eZQBbqq7" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQBbqjU" role="1YuTPh">
+      <property role="TrG5h" value="trigonometricExpression" />
+      <ref role="1YaFvo" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="M7eZQBbq7W">
+    <property role="TrG5h" value="typeof_TrigonometricExpression" />
+    <property role="3GE5qa" value="trigonometric" />
+    <node concept="3clFbS" id="M7eZQBbq7X" role="18ibNy">
+      <node concept="1Z5TYs" id="M7eZQBbqhS" role="3cqZAp">
+        <node concept="mw_s8" id="M7eZQBbqic" role="1ZfhKB">
+          <node concept="2pJPEk" id="M7eZQBbqi8" role="mwGJk">
+            <node concept="2pJPED" id="M7eZQBbqin" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="M7eZQBbqhV" role="1ZfhK$">
+          <node concept="1Z2H0r" id="M7eZQBbq83" role="mwGJk">
+            <node concept="1YBJjd" id="M7eZQBbq9V" role="1Z2MuG">
+              <ref role="1YBMHb" node="M7eZQBbq7Z" resolve="trigonometricExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="M7eZQBbq7Z" role="1YuTPh">
+      <property role="TrG5h" value="trigonometricExpression" />
+      <ref role="1YaFvo" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
     </node>
   </node>
 </model>
