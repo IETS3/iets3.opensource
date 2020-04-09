@@ -25,7 +25,6 @@
     <dependency reexport="false">4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68(org.iets3.core.expr.temporal)</dependency>
     <dependency reexport="false">289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)</dependency>
     <dependency reexport="false">6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0(org.iets3.core.expr.math)</dependency>
-    <dependency reexport="false">cf55cddb-d431-4f2e-93f4-3a4305c63d12(test.ts.expr.os)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -179,7 +178,6 @@
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
     <module reference="4289e037-cc03-4bfe-bf89-2db268aec73a(org.iets3.core.expr.util.interpreter)" version="0" />
     <module reference="2614fab6-e994-4127-9a5d-8c8cd7ba2833(test.in.expr.os)" version="0" />
-    <module reference="cf55cddb-d431-4f2e-93f4-3a4305c63d12(test.ts.expr.os)" version="0" />
   </dependencyVersions>
 </solution>
 

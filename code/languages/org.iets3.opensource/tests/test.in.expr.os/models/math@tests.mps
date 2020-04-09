@@ -9,8 +9,6 @@
   </languages>
   <imports>
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
-    <import index="rthw" ref="r:ee5b1a89-4907-4bd7-bb79-ba99ef537bd3(test.ts.expr.os.unitsonly@tests)" />
-    <import index="1qv1" ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
