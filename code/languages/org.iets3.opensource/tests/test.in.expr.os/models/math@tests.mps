@@ -5,10 +5,13 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="-1" />
+    <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
+    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>
     <import index="63ih" ref="r:8b224ec5-7a3e-45b9-8341-eb73ff942246(org.iets3.core.expr.math.typesystem)" />
+    <import index="ku0a" ref="r:1881124b-7ac4-4b0f-a7dd-12953ac3263b(org.iets3.core.expr.typetags.units.si.units)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1414,7 +1417,7 @@
     <node concept="2zPypq" id="1EoaTAz8J2i" role="_iOnB">
       <property role="TrG5h" value="epsilon" />
       <node concept="30bXRB" id="1EoaTAz8J2j" role="2zPyp_">
-        <property role="30bXRw" value="0.002478752177" />
+        <property role="30bXRw" value="0.0001" />
       </node>
     </node>
     <node concept="_ixoA" id="M7eZQAPIU7" role="_iOnB" />
@@ -2210,32 +2213,6 @@
       </node>
     </node>
     <node concept="_ixoA" id="2aG75lojY0q" role="_iOnB" />
-    <node concept="2zPypq" id="3X5hdqO594t" role="_iOnB">
-      <property role="TrG5h" value="inti" />
-      <node concept="2Vrmzi" id="3X5hdqOo4$0" role="2zPyp_">
-        <node concept="30bXRB" id="3X5hdqOo4_q" role="2VrBIi">
-          <property role="30bXRw" value="2" />
-        </node>
-        <node concept="a1tim" id="3X5hdqOo4LK" role="2VrBIh">
-          <node concept="30bXRB" id="3X5hdqOo4Nl" role="a1tin">
-            <property role="30bXRw" value="9" />
-          </node>
-          <node concept="30bXRB" id="3X5hdqOo4OR" role="a1tiq">
-            <property role="30bXRw" value="3" />
-          </node>
-        </node>
-        <node concept="2LoXyR" id="3X5hdqOo4$6" role="2VrBIg">
-          <node concept="3ix9CS" id="3X5hdqOo4$7" role="3ix9CL">
-            <property role="TrG5h" value="it" />
-            <node concept="30bXLL" id="3X5hdqOo4$9" role="3ix9CU" />
-          </node>
-          <node concept="3ix4Yz" id="3X5hdqOo4Cp" role="3ix9pP">
-            <ref role="3ix4Yw" node="3X5hdqOo4$7" resolve="it" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="_ixoA" id="3X5hdqO58Qk" role="_iOnB" />
     <node concept="_fkuM" id="642_vmCWuWO" role="_iOnB">
       <property role="TrG5h" value="testPythagoras" />
       <node concept="_fkuZ" id="642_vmCWuXr" role="_fkp5">

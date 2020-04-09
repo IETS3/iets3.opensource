@@ -12993,6 +12993,11 @@
           <ref role="3bR37D" node="5wLtKNeSRQv" resolve="org.iets3.core.expr.math" />
         </node>
       </node>
+      <node concept="1SiIV0" id="7lvSX9dmzv2" role="3bR37C">
+        <node concept="3bR9La" id="7lvSX9dmzv3" role="1SiIV1">
+          <ref role="3bR37D" node="6n8rWbyXz_9" resolve="org.iets3.core.expr.typetags.units.si" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5kwEgmAh8J_" role="3989C9">
       <property role="BnDLt" value="true" />
