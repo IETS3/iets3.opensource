@@ -2674,6 +2674,38 @@
           </node>
         </node>
       </node>
+      <node concept="nvevp" id="3X5hdqOyWtb" role="3cqZAp">
+        <node concept="3clFbS" id="3X5hdqOyWtd" role="nvhr_">
+          <node concept="1ZobV4" id="3X5hdqOyXGK" role="3cqZAp">
+            <node concept="mw_s8" id="3X5hdqOyXHS" role="1ZfhKB">
+              <node concept="2pJPEk" id="3X5hdqOyXHO" role="mwGJk">
+                <node concept="2pJPED" id="3X5hdqOyXI3" role="2pJPEn">
+                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="3X5hdqOyXGN" role="1ZfhK$">
+              <node concept="2X3wrD" id="3X5hdqOyX$a" role="mwGJk">
+                <ref role="2X3Bk0" node="3X5hdqOyWth" resolve="exprType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="3X5hdqOyWY3" role="nvjzm">
+          <node concept="2OqwBi" id="3X5hdqOyXdt" role="1Z2MuG">
+            <node concept="1YBJjd" id="3X5hdqOyWY4" role="2Oq$k0">
+              <ref role="1YBMHb" node="M7eZQBbq7Z" resolve="trigonometricExpression" />
+            </node>
+            <node concept="3TrEf2" id="3X5hdqOyXuS" role="2OqNvi">
+              <ref role="3Tt5mk" to="1qv1:M7eZQBbq61" resolve="expr" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="3X5hdqOyWth" role="2X0Ygz">
+          <property role="TrG5h" value="exprType" />
+          <node concept="2jxLKc" id="3X5hdqOyWti" role="1tU5fm" />
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="M7eZQBbq7Z" role="1YuTPh">
       <property role="TrG5h" value="trigonometricExpression" />
