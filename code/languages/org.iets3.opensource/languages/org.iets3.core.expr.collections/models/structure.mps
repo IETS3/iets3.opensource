@@ -2,8 +2,8 @@
 <model ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -193,6 +193,9 @@
     <property role="TrG5h" value="IOrderedCollection" />
     <property role="3GE5qa" value="ordered" />
     <property role="EcuMT" value="7554398283339848519" />
+    <node concept="PrWs8" id="1SHQl3yge92" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:5WNmJ7DoRmx" resolve="ICollectionType" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUiHHJ">
     <property role="TrG5h" value="IOrderedCollectionOp" />
@@ -614,6 +617,9 @@
     <property role="EcuMT" value="890435239346753529" />
     <property role="R4oN_" value="sorts collection" />
     <ref role="1TJDcQ" node="6zmBjqUiwKw" resolve="NoArgCollectionOp" />
+    <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
+      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
     <node concept="1TJgyi" id="17Nm8oCo8O4" role="1TKVEl">
       <property role="TrG5h" value="order" />
       <property role="IQ2nx" value="890435239346753553" />
@@ -625,9 +631,6 @@
           <ref role="AX2Wp" node="Lrty7CKd06" resolve="SortOrder" />
         </node>
       </node>
-    </node>
-    <node concept="PrWs8" id="Lrty7CKd03" role="PzmwI">
-      <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
     </node>
   </node>
   <node concept="1TIwiD" id="6HHp2WnvluK">
@@ -1154,6 +1157,23 @@
       <ref role="PrY4T" node="thkha3aNEl" resolve="ISetOneArgOp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="twWOnQMGuT">
+    <property role="EcuMT" value="531692237848496057" />
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="ListPickOp" />
+    <property role="34LRSv" value="pick" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="twWOnQMH4e" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="twWOnQMHdg" role="1TKVEi">
+      <property role="IQ2ns" value="531692237848499024" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectorList" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
   <node concept="25R3W" id="17Nm8oCo8NN">
     <property role="TrG5h" value="SortOrder" />
     <property role="3GE5qa" value="ordered.numeric" />
@@ -1187,23 +1207,6 @@
       <property role="TrG5h" value="DESC" />
       <property role="3tVfz5" value="890435239346753550" />
       <ref role="2wpffI" node="Lrty7CKd0e" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="twWOnQMGuT">
-    <property role="EcuMT" value="531692237848496057" />
-    <property role="3GE5qa" value="list" />
-    <property role="TrG5h" value="ListPickOp" />
-    <property role="34LRSv" value="pick" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="twWOnQMH4e" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
-    </node>
-    <node concept="1TJgyj" id="twWOnQMHdg" role="1TKVEi">
-      <property role="IQ2ns" value="531692237848499024" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="selectorList" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
