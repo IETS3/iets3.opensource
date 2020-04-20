@@ -23,8 +23,8 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="gsp2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference.util(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
-    <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
-    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -8771,18 +8771,71 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="1ZobV4" id="1RwPUjzgAXt" role="3cqZAp">
-                      <node concept="mw_s8" id="1RwPUjzgBFY" role="1ZfhKB">
-                        <node concept="2YIFZM" id="5wDe8wA6zrz" role="mwGJk">
-                          <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
-                          <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-                          <node concept="10Nm6u" id="1RwPUjzgIyR" role="37wK5m" />
+                    <node concept="3clFbJ" id="6P2XQ7pvcc1" role="3cqZAp">
+                      <node concept="3clFbS" id="6P2XQ7pvcc3" role="3clFbx">
+                        <node concept="3cpWs8" id="6P2XQ7pvex$" role="3cqZAp">
+                          <node concept="3cpWsn" id="6P2XQ7pvex_" role="3cpWs9">
+                            <property role="TrG5h" value="wrappedType" />
+                            <node concept="3Tqbb2" id="6P2XQ7pverF" role="1tU5fm" />
+                            <node concept="2OqwBi" id="6P2XQ7pvexA" role="33vP2m">
+                              <node concept="1PxgMI" id="6P2XQ7pvexB" role="2Oq$k0">
+                                <node concept="chp4Y" id="6P2XQ7pvexC" role="3oSUPX">
+                                  <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+                                </node>
+                                <node concept="37vLTw" id="6P2XQ7px5JS" role="1m5AlR">
+                                  <ref role="3cqZAo" node="2ufoZQJ1aYf" resolve="elementSupertype" />
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="6P2XQ7pvexE" role="2OqNvi">
+                                <ref role="37wK5l" to="kqnq:6bG6MAFRDvi" resolve="wrappedType" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1ZobV4" id="6P2XQ7pvdjf" role="3cqZAp">
+                          <node concept="mw_s8" id="6P2XQ7pvdn0" role="1ZfhK$">
+                            <node concept="1Z2H0r" id="6P2XQ7pvdmW" role="mwGJk">
+                              <node concept="37vLTw" id="6P2XQ7pvexF" role="1Z2MuG">
+                                <ref role="3cqZAo" node="6P2XQ7pvex_" resolve="wrappedType" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="mw_s8" id="6P2XQ7pvf3P" role="1ZfhKB">
+                            <node concept="2YIFZM" id="6P2XQ7pvf3Q" role="mwGJk">
+                              <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
+                              <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                              <node concept="10Nm6u" id="6P2XQ7pvf3R" role="37wK5m" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="mw_s8" id="1RwPUjzgAXw" role="1ZfhK$">
-                        <node concept="1Z2H0r" id="1RwPUjzgAzB" role="mwGJk">
-                          <node concept="1YBJjd" id="1RwPUjzgADo" role="1Z2MuG">
-                            <ref role="1YBMHb" node="1RwPUjzgk2X" resolve="amme" />
+                      <node concept="2OqwBi" id="6P2XQ7pvcD9" role="3clFbw">
+                        <node concept="37vLTw" id="6P2XQ7pwKez" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2ufoZQJ1aYf" resolve="elementSupertype" />
+                        </node>
+                        <node concept="1mIQ4w" id="6P2XQ7pvcSO" role="2OqNvi">
+                          <node concept="chp4Y" id="6P2XQ7pvcYm" role="cj9EA">
+                            <ref role="cht4Q" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="9aQIb" id="6P2XQ7pvd7E" role="9aQIa">
+                        <node concept="3clFbS" id="6P2XQ7pvd7F" role="9aQI4">
+                          <node concept="1ZobV4" id="1RwPUjzgAXt" role="3cqZAp">
+                            <node concept="mw_s8" id="1RwPUjzgBFY" role="1ZfhKB">
+                              <node concept="2YIFZM" id="5wDe8wA6zrz" role="mwGJk">
+                                <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
+                                <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+                                <node concept="10Nm6u" id="1RwPUjzgIyR" role="37wK5m" />
+                              </node>
+                            </node>
+                            <node concept="mw_s8" id="1RwPUjzgAXw" role="1ZfhK$">
+                              <node concept="1Z2H0r" id="1RwPUjzgAzB" role="mwGJk">
+                                <node concept="1YBJjd" id="1RwPUjzgADo" role="1Z2MuG">
+                                  <ref role="1YBMHb" node="1RwPUjzgk2X" resolve="amme" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
