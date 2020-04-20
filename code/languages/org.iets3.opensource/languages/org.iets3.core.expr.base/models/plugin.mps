@@ -13055,5 +13055,88 @@
     </node>
     <node concept="3Tm1VV" id="7fc_nE_wvVJ" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="3NUSEp5xI6A">
+    <property role="3GE5qa" value="identConfig" />
+    <property role="TrG5h" value="IdentifierConfigurator" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="3NUSEp5xIaF" role="jymVt" />
+    <node concept="3clFb_" id="3NUSEp5xVog" role="jymVt">
+      <property role="TrG5h" value="allowUmlautsInIdentifiers" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="10P_77" id="3NUSEp5xVMB" role="3clF45" />
+      <node concept="3Tm1VV" id="3NUSEp5xVoj" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5xVok" role="3clF47" />
+      <node concept="37vLTG" id="6fmG8CYU4jm" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6fmG8CYU4jl" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3NUSEp5xVQM" role="jymVt" />
+    <node concept="3clFb_" id="3NUSEp5xVQi" role="jymVt">
+      <property role="TrG5h" value="allowParagraphsInIdentifiers" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="37vLTG" id="6fmG8CYU4kS" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6fmG8CYU4kT" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="3NUSEp5xVQj" role="3clF45" />
+      <node concept="3Tm1VV" id="3NUSEp5xVQk" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5xVQl" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="3NUSEp5xIaK" role="jymVt" />
+    <node concept="3Tm1VV" id="3NUSEp5xI6B" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="3NUSEp5xVSm">
+    <property role="TrG5h" value="identifierConfigurator" />
+    <property role="3GE5qa" value="identConfig" />
+    <node concept="3uibUv" id="3NUSEp5xVVA" role="luc8K">
+      <ref role="3uigEE" node="3NUSEp5xI6A" resolve="IdentifierConfigurator" />
+    </node>
+  </node>
+  <node concept="312cEu" id="3NUSEp5y2Ea">
+    <property role="3GE5qa" value="identConfig" />
+    <property role="TrG5h" value="DefaultIdentifierConfigurator" />
+    <node concept="2tJIrI" id="3NUSEp5y2Eb" role="jymVt" />
+    <node concept="3clFb_" id="3NUSEp5y2Je" role="jymVt">
+      <property role="TrG5h" value="allowUmlautsInIdentifiers" />
+      <node concept="37vLTG" id="6fmG8CYU4m0" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6fmG8CYU4m1" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="3NUSEp5y2Jf" role="3clF45" />
+      <node concept="3Tm1VV" id="3NUSEp5y2Jg" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5y2Ji" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5y2Jl" role="3cqZAp">
+          <node concept="3clFbT" id="3NUSEp5y2Jk" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3NUSEp5y2Jj" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6fmG8CYU27h" role="jymVt" />
+    <node concept="3clFb_" id="3NUSEp5y2Jm" role="jymVt">
+      <property role="TrG5h" value="allowParagraphsInIdentifiers" />
+      <node concept="37vLTG" id="6fmG8CYU4on" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6fmG8CYU4oo" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="3NUSEp5y2Jn" role="3clF45" />
+      <node concept="3Tm1VV" id="3NUSEp5y2Jo" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5y2Jq" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5y2Jt" role="3cqZAp">
+          <node concept="3clFbT" id="3NUSEp5y2Js" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3NUSEp5y2Jr" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3NUSEp5y2El" role="jymVt" />
+    <node concept="3Tm1VV" id="3NUSEp5y2Em" role="1B3o_S" />
+    <node concept="3uibUv" id="3NUSEp5y2Gt" role="1zkMxy">
+      <ref role="3uigEE" node="3NUSEp5xI6A" resolve="IdentifierConfigurator" />
+    </node>
+  </node>
 </model>
 
