@@ -54,6 +54,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -84,6 +85,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -2314,6 +2316,22 @@
         </node>
       </node>
       <node concept="10P_77" id="5YygIlbjlOX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6fmG8CYXVwE" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="6fmG8CYXVwF" role="1B3o_S" />
+      <node concept="3clFbS" id="6fmG8CYXVwK" role="3clF47">
+        <node concept="3clFbF" id="6fmG8CYY1T8" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYY1TQ" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6fmG8CYY1U0" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6fmG8CYXVwL" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6VjyfUYe1G0" role="13h7CS">
       <property role="13i0iv" value="false" />
