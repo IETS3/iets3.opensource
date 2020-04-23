@@ -19,6 +19,7 @@
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -41,7 +42,13 @@
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -226,6 +233,11 @@
       <concept id="8658283006837848169" name="de.itemis.mps.editor.math.notations.structure.DivisionEditor" flags="ng" index="jtDVG">
         <child id="8658283006838052215" name="lower" index="jiBfM" />
         <child id="8658283006838052220" name="upper" index="jiBfT" />
+      </concept>
+      <concept id="8658283006837848494" name="de.itemis.mps.editor.math.notations.structure.IntegralEditor" flags="ng" index="jtDWF">
+        <child id="5715455775463751814" name="lower" index="2QEq0S" />
+        <child id="5715455775463751812" name="body" index="2QEq0U" />
+        <child id="5715455775463751813" name="upper" index="2QEq0V" />
       </concept>
       <concept id="8658283006837840915" name="de.itemis.mps.editor.math.notations.structure.AbsEditor" flags="ng" index="jtFEm" />
       <concept id="5098456557380306602" name="de.itemis.mps.editor.math.notations.structure.SubscriptedFunctionEditor" flags="ng" index="2zEPQj">
@@ -903,6 +915,54 @@
         <node concept="11L4FC" id="5mz5Tt_ip4k" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="M7eZQBbq6V">
+    <property role="3GE5qa" value="trigonometric" />
+    <ref role="1XX52x" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
+    <node concept="3EZMnI" id="M7eZQBbq72" role="2wV5jI">
+      <node concept="PMmxH" id="M7eZQBbq7o" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="1EoaTAz6smr" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="M7eZQBbq75" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="M7eZQBbq76" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="M7eZQBbq77" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="M7eZQBbq78" role="3EZMnx">
+        <ref role="1NtTu8" to="1qv1:M7eZQBbq61" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="M7eZQBbq79" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="M7eZQBbq7a" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="M7eZQBbq7b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="M7eZQBbq7c" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3iWt5efOyI5">
+    <ref role="1XX52x" to="1qv1:3iWt5efOhM1" resolve="IntegralExpression" />
+    <node concept="jtDWF" id="4wFKMWZgPnD" role="2wV5jI">
+      <node concept="3F1sOY" id="4wFKMWZgPqI" role="2QEq0U">
+        <ref role="1NtTu8" to="1qv1:3iWt5efOwZ3" resolve="body" />
+      </node>
+      <node concept="3F1sOY" id="4wFKMWZgPwJ" role="2QEq0S">
+        <ref role="1NtTu8" to="1qv1:3iWt5efOwZ1" resolve="lower" />
+      </node>
+      <node concept="3F1sOY" id="4wFKMWZgPzK" role="2QEq0V">
+        <ref role="1NtTu8" to="1qv1:3iWt5efOwZ2" resolve="upper" />
       </node>
     </node>
   </node>

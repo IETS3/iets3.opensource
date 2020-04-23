@@ -9,6 +9,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
+    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -296,6 +297,137 @@
     <property role="34LRSv" value="rat" />
     <property role="3GE5qa" value="rat" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="4SHkH$fnm2H">
+    <property role="EcuMT" value="5633249801129517229" />
+    <property role="TrG5h" value="SinusExpression" />
+    <property role="34LRSv" value="sin" />
+    <property role="3GE5qa" value="trigonometric" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="M7eZQ_ZStj">
+    <property role="EcuMT" value="902756210908825427" />
+    <property role="TrG5h" value="CosinusExpression" />
+    <property role="34LRSv" value="cos" />
+    <property role="3GE5qa" value="trigonometric" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="M7eZQAngzc">
+    <property role="EcuMT" value="902756210914953420" />
+    <property role="TrG5h" value="TangensExpression" />
+    <property role="34LRSv" value="tan" />
+    <property role="3GE5qa" value="trigonometric" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="M7eZQADw31">
+    <property role="EcuMT" value="902756210919735489" />
+    <property role="TrG5h" value="TangensHyperbolicus" />
+    <property role="34LRSv" value="tanh" />
+    <property role="3GE5qa" value="trigonometric" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="M7eZQAOIHc">
+    <property role="EcuMT" value="902756210922679116" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="SinusHyperbolicus" />
+    <property role="34LRSv" value="sinh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="M7eZQBbV1s">
+    <property role="TrG5h" value="TrigonometricExpression" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="EcuMT" value="902756210928623998" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="M7eZQBbq61" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="902756210928624001" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="M7eZQBwOwF">
+    <property role="EcuMT" value="902756210934237227" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcCosinus" />
+    <property role="34LRSv" value="acos" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz8bOT">
+    <property role="EcuMT" value="1916329580312968505" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="CosinusHyperbolicus" />
+    <property role="34LRSv" value="cosh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz8K6a">
+    <property role="EcuMT" value="1916329580313117066" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcCosinusHyperbolicus" />
+    <property role="34LRSv" value="acosh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAz9PnQ">
+    <property role="EcuMT" value="1916329580313400822" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcSinusHyperbolicus" />
+    <property role="34LRSv" value="asinh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzatSJ">
+    <property role="EcuMT" value="1916329580313566767" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcTangensHyperbolicus" />
+    <property role="34LRSv" value="atanh" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzbzti">
+    <property role="EcuMT" value="1916329580313851730" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcTangens" />
+    <property role="34LRSv" value="atan" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="1EoaTAzc5EL">
+    <property role="EcuMT" value="1916329580313991857" />
+    <property role="3GE5qa" value="trigonometric" />
+    <property role="TrG5h" value="ArcSinus" />
+    <property role="34LRSv" value="asin" />
+    <ref role="1TJDcQ" node="M7eZQBbV1s" resolve="TrigonometricExpression" />
+  </node>
+  <node concept="1TIwiD" id="3C0hCYboTSS">
+    <property role="EcuMT" value="4179418036532649528" />
+    <property role="TrG5h" value="PolynomialExpression" />
+    <property role="34LRSv" value="polynom" />
+    <ref role="1TJDcQ" to="zzzn:6zmBjqUkws6" resolve="LambdaExpression" />
+  </node>
+  <node concept="1TIwiD" id="3iWt5efOhM1">
+    <property role="EcuMT" value="3800040087837809793" />
+    <property role="TrG5h" value="IntegralExpression" />
+    <property role="34LRSv" value="integral" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3iWt5efOwZ1" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lower" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872065" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3iWt5efOwZ2" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872066" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3iWt5efOwZ3" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3800040087837872067" />
+      <ref role="20lvS9" node="3C0hCYboTSS" resolve="PolynomialExpression" />
+    </node>
   </node>
 </model>
 
