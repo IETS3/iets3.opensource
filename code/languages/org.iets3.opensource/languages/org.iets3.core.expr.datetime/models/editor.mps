@@ -519,7 +519,7 @@
     <node concept="1WcQYu" id="7RGJ_88mQ0L" role="2wV5jI">
       <node concept="2ElW$n" id="7RGJ_88mQ0N" role="2El2Yn">
         <node concept="3cmrfG" id="7RGJ_88mQvL" role="2EmURo">
-          <property role="3cmrfH" value="1000" />
+          <property role="3cmrfH" value="1500" />
         </node>
       </node>
       <node concept="3EZMnI" id="7RGJ_88mQ0X" role="1LiK7o">
@@ -539,9 +539,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="11LMrY" id="4_qY3E4RiVl" role="3F10Kt">
-              <property role="VOm3f" value="true" />
             </node>
           </node>
         </node>

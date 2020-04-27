@@ -849,7 +849,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="memberType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7D7uZV2dYz2" resolve="RecordType" />
+      <ref role="20lvS9" node="3KgQFIke4um" resolve="IRecordType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cphKbKnRmi">
