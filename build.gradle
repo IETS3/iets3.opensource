@@ -129,13 +129,13 @@ wrapper {
 
 configurations {
     mps
-    mpsArtifacts
+    languageLibs
     junitAnt
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mpsArtifacts "com.mbeddr:platform:$mbeddrVersionSelector"
+    languageLibs "com.mbeddr:platform:$mbeddrVersionSelector"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
 
@@ -163,11 +163,11 @@ task resolveMps(type: Copy) {
     into "$buildDir/mps"
 }
 
-task resolveMpsArtifacts(type: Copy) {
+task resolveLanguageLibs(type: Copy) {
     from {
-        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+        configurations.languageLibs.resolve().collect { zipTree(it) }
     }
-    into artifactsDir
+    into "$buildDir/dependencies"
 }
 
 // Default arguments for ant scripts
@@ -186,7 +186,7 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -259,7 +259,7 @@ publishing {
             artifact packageLanguages
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
+                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
@@ -295,7 +295,7 @@ publishing {
 }
 
 task generateLibrariesXml(type: GenerateLibrariesXml) {
-    dependsOn resolveMpsArtifacts
+    dependsOn resolveLanguageLibs
     description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
     defaults rootProject.file('projectlibraries.properties')
     overrides rootProject.file('projectlibraries.overrides.properties')
@@ -304,7 +304,7 @@ task generateLibrariesXml(type: GenerateLibrariesXml) {
 
 task setup {
     dependsOn generateLibrariesXml
-    dependsOn resolveMpsArtifacts
+    dependsOn resolveLanguageLibs
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 

@@ -252,18 +252,21 @@
       </node>
     </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
+      <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="44RyrhrBqkL" role="398pKh">
         <ref role="398BVh" node="44RyrhrBozY" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="44RyrhrBqkV" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
+        <node concept="2Ry0Ak" id="5UIflox5Nbz" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5UIflox5Nb$" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="398rNT" id="1Y5vs7yJZkG" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform" />
+      <property role="TrG5h" value="dependencies.mbeddr.platform" />
       <node concept="398BVA" id="1Y5vs7yK03D" role="398pKh">
-        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="1Y5vs7yK0xO" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
@@ -330,7 +333,7 @@
     <node concept="2sgV4H" id="1Y5vs7yK2HP" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="1Y5vs7yK3FR" role="2JcizS">
-        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="mbeddr.artifacts.platform" />
+        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="dependencies.mbeddr.platform" />
       </node>
     </node>
     <node concept="2sgV4H" id="7eF9rfAnpzB" role="1l3spa">
@@ -12574,21 +12577,24 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5UIflox5Nad" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="5UIflox5Nae" role="398pKh">
+        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="5UIflox5Nbu" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5UIflox5Nbx" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="OJuIQp_r_l" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
+      <property role="TrG5h" value="iets3.artifacts.root" />
       <node concept="398BVA" id="OJuIQp_r_m" role="398pKh">
         <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
         <node concept="2Ry0Ak" id="OJuIQp_r_n" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="OJuIQp_rqy" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform" />
-      <node concept="398BVA" id="OJuIQp_rAi" role="398pKh">
-        <ref role="398BVh" node="OJuIQp_r_l" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="OJuIQp_rAj" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -13290,15 +13296,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
-      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
-      <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
-        <ref role="398BVh" node="OJuIQp_r_l" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="OJuIQpVvZ4" role="iGT6I">
-          <property role="2Ry0Am" value="org.iets3.opensource" />
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="OJuIQp_qh1" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="OJuIQp_qrx" role="2JcizS">
@@ -13307,8 +13304,11 @@
     </node>
     <node concept="2sgV4H" id="33r_JpYZmp_" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="33r_JpYZmrz" role="2JcizS">
-        <ref role="398BVh" node="OJuIQp_rqy" resolve="mbeddr.artifacts.platform" />
+      <node concept="398BVA" id="OJuIQp_rAi" role="2JcizS">
+        <ref role="398BVh" node="5UIflox5Nad" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="OJuIQp_rAj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="OJuIQq2vpw" role="1hWBAP">
@@ -13341,6 +13341,15 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+    <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
+      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
+        <ref role="398BVh" node="OJuIQp_r_l" resolve="iets3.artifacts.root" />
+        <node concept="2Ry0Ak" id="OJuIQpVvZ4" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
