@@ -118,7 +118,8 @@ ext.dependencyRepositories = [
     'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
-ext.artifactsDir = new File(rootDir, 'artifacts')
+// 'artifacts' is used in the generated ant scripts as build output directory
+ext.artifactsDir = new File(buildDir, 'artifacts')
 ext.incrementalBuild = !project.hasProperty("disableIncrementalBuild")
 
 
@@ -174,7 +175,7 @@ task resolveLanguageLibs(type: Copy) {
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'iets3.github.opensource.home'      : rootDir,
-        'build.dir'                         : rootDir,
+        'build.dir'                         : buildDir,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version
 ]
