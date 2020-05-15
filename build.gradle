@@ -199,12 +199,6 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
         def antTestScriptFile = file(it['script'])
         // patch heap size setting for tests execution
         antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-
-        // provide workaround for command-line length limitation under Windows (when forking junit process)
-        antTestScriptFile.text = antTestScriptFile.text
-                .replace('<sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />', '')
-                .replace('<sysproperty key="plugin.path" value="${mps.plugins.path.string}" />',
-                        '<env key="JAVA_TOOL_OPTIONS" value="-Dplugin.path=${mps.plugins.path.string} -Dmps.libraries=${mps.libraries.path.string}" />')
     }
     script "$buildDir/iets3.opensource.tests/build.xml"
     doLast {
