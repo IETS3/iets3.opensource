@@ -187,11 +187,11 @@ ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
-    script "$buildDir/iets3.opensource.allScripts/build-allScripts.xml"
+    script "$buildDir/scripts/build-allScripts.xml"
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
-    script "$buildDir/iets3.opensource/build.xml"
+    script "$buildDir/scripts/build-languages.xml"
 }
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
@@ -200,7 +200,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
         // patch heap size setting for tests execution
         antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
     }
-    script "$buildDir/iets3.opensource.tests/build.xml"
+    script "$buildDir/scripts/build-tests.xml"
     doLast {
         ant.taskdef(name: 'junitreport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',

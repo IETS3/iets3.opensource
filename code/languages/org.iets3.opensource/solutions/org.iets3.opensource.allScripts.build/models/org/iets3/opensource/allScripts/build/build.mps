@@ -138,7 +138,7 @@
   </registry>
   <node concept="1l3spW" id="5wLtKNeSRPl">
     <property role="TrG5h" value="org.iets3.opensource.allScripts.build" />
-    <property role="2DA0ip" value="../../../../../build/iets3.opensource.allScripts" />
+    <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="turDy" value="build-allScripts.xml" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
@@ -456,44 +456,6 @@
     </node>
     <node concept="10PD9b" id="5wLtKNeSRPm" role="10PD9s" />
     <node concept="3b7kt6" id="5wLtKNeSRPn" role="10PD9s" />
-    <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
-      <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="5wLtKNeT9Pe" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeTah3" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5wLtKNeTah6" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5wLtKNeTah9" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="5wLtKNeTahc" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="5wLtKNeTahf" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeTahi" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="3r1yjRrrcPM" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="3r1yjRrrd3H" role="2Ry0An">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
-                          <property role="2Ry0Am" value="Applications" />
-                          <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS 2017.1 EAP.app" />
-                            <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
-                              <property role="2Ry0Am" value="Contents" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="1Y5vs7yKdR8" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -501,6 +463,18 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="1Y5vs7yKdTX" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="71zSQigYR$Z" role="398pKh">
+        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="71zSQigYR_0" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="71zSQigYR_1" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
           </node>
         </node>
       </node>
@@ -516,19 +490,14 @@
     </node>
     <node concept="398rNT" id="5wLtKNeTaqD" role="1l3spd">
       <property role="TrG5h" value="iets3.os.home" />
-      <node concept="55IIr" id="5wLtKNeTarb" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeTarg" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5wLtKNeTarl" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5wLtKNeTarq" role="2Ry0An">
-              <property role="2Ry0Am" value="code" />
-              <node concept="2Ry0Ak" id="5wLtKNeTarv" role="2Ry0An">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="3HqKnf9K0kb" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.iets3.opensource" />
-                </node>
-              </node>
+      <node concept="398BVA" id="71zSQigZifz" role="398pKh">
+        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="71zSQigZifG" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="71zSQigZifH" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="71zSQigZifI" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.opensource" />
             </node>
           </node>
         </node>

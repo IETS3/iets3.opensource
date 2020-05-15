@@ -3,10 +3,10 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/org.iets3.opensource.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/org.iets3.opensource.allScripts.build" />
-  <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS 2017.1 EAP.app/Contents" />
   <property name="iets3.github.opensource.home" location="${basedir}/../.." />
+  <property name="mps.home" location="${iets3.github.opensource.home}/build/mps" />
   <property name="artifacts.root" location="${iets3.github.opensource.home}/artifacts" />
-  <property name="iets3.os.home" location="${basedir}/../../code/languages/org.iets3.opensource" />
+  <property name="iets3.os.home" location="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${artifacts.root}/com.mbeddr.platform" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -242,8 +242,8 @@
         <arg value="-ea" />
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="mps.home" path="${mps.home}" />
       <macro name="iets3.github.opensource.home" path="${iets3.github.opensource.home}" />
+      <macro name="mps.home" path="${mps.home}" />
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="iets3.os.home" path="${iets3.os.home}" />
     </generate>
