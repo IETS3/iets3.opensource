@@ -1,6 +1,8 @@
 import de.itemis.mps.gradle.*
 
-import java.time.LocalDateTime
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 
 
 //will pull the groovy classes/types from nexus to the classpath
@@ -234,6 +236,17 @@ task packageTests(type: Zip, dependsOn: buildAndRunTests) {
     include 'org.iets3.opensource.tests/**'
 }
 
+task buildDistroWithDependencies(type: RunAntScript, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-distro.xml"
+    targets 'clean', 'assemble'
+}
+
+task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependencies) {
+    archiveBaseName = 'org.iets3.opensource-with-dependencies'
+    from artifactsDir
+    include 'org.iets3.opensource.distro/**'
+}
+
 assemble.dependsOn packageAllScripts, packageLanguages, packageTests
 
 publishing {
@@ -311,18 +324,25 @@ task setup {
 
 defaultTasks 'buildLanguages'
 
-def releaseNotes = """Automated Nighly build from ${LocalDateTime.now() as String}."""
+def currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+def langLibDeps = project.configurations.languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies
+def depsList = langLibDeps.collect {"- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"}.join("\n")
+def releaseNotes = """Automated Nighly build from ${currentDate}.
+
+Includes dependencies:
+${depsList}
+"""
 
 github {
     owner = 'IETS3'
     repo = 'iets3.opensource'
     token = rootProject.findProperty('github.token') ?: 'empty'
-    tagName = 'nightly-release-' + version
+    tagName = 'nightly-' + version
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     name = 'Nighly Build ' + version
     body = releaseNotes
     prerelease = true
-    assets = packageLanguages.outputs.files
+    assets = packageDistroWithDependencies.outputs.files.collect {it.path}
 }
 
-githubRelease.dependsOn packageLanguages
+githubRelease.dependsOn packageDistroWithDependencies

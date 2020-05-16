@@ -92,7 +92,14 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
+        <reference id="5610619299013057365" name="target" index="3ygNvj" />
+        <child id="6789562173791401562" name="selectors" index="1juEy9" />
+      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904288051111" name="jetbrains.mps.build.structure.BuildFileExcludeSelector" flags="ng" index="3LWZYq">
+        <property id="5248329904288051112" name="pattern" index="3LWZYl" />
+      </concept>
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
         <child id="5248329904287794598" name="dir" index="3LXTmr" />
         <child id="5248329904287794679" name="selectors" index="3LXTna" />
@@ -13353,6 +13360,88 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+  </node>
+  <node concept="1l3spW" id="71zSQigYEMA">
+    <property role="2DA0ip" value="./../../../../../build/scripts" />
+    <property role="TrG5h" value="org.iets3.opensource.distro" />
+    <property role="turDy" value="build-distro.xml" />
+    <node concept="2sgV4H" id="2bcgdhPM$tb" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="2bcgdhPM$N3" role="2JcizS">
+        <ref role="398BVh" node="1SrKDS$4uhx" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="2bcgdhPM$N4" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="71zSQigYYRs" role="1l3spa">
+      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <node concept="398BVA" id="71zSQigYZ31" role="2JcizS">
+        <ref role="398BVh" node="1knOiTtMgKi" resolve="iets3.artifacts.root" />
+        <node concept="2Ry0Ak" id="4wNOE5wnpxc" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="71zSQigYQtG" role="1l3spd">
+      <property role="TrG5h" value="iets3.github.opensource.home" />
+      <node concept="55IIr" id="71zSQigYQtH" role="398pKh">
+        <node concept="2Ry0Ak" id="71zSQigYQtI" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="71zSQigYQtJ" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="71zSQigYNhV" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="71zSQigYR3K" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="71zSQigYNhZ" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="71zSQigYNi0" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1SrKDS$4uhx" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="1SrKDS$4uhy" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="4wNOE5wnpx1" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="4wNOE5wnpxa" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1knOiTtMgKi" role="1l3spd">
+      <property role="TrG5h" value="iets3.artifacts.root" />
+      <node concept="398BVA" id="1knOiTtMgKj" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="3hMKr_xL6xs" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="4wNOE5wnpx8" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="55IIr" id="71zSQigYEMB" role="auvoZ" />
+    <node concept="1l3spV" id="71zSQigYEMC" role="1l3spN">
+      <node concept="3ygNvl" id="2bcgdhPM$8Y" role="39821P">
+        <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
+        <node concept="3LWZYq" id="v8GFiCy0Tf" role="1juEy9">
+          <property role="3LWZYl" value="build.properties" />
+        </node>
+      </node>
+      <node concept="3ygNvl" id="2bcgdhPMxqs" role="39821P">
+        <ref role="3ygNvj" node="5wLtKNeSRRM" />
+      </node>
     </node>
   </node>
 </model>
