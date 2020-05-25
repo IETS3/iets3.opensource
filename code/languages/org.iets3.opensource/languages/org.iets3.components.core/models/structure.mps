@@ -1528,5 +1528,10 @@
       <ref role="2wpffI" node="siw10H0o$0" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4$W25$gwO5f">
+    <property role="EcuMT" value="5277102041993527631" />
+    <property role="3GE5qa" value="components.checker" />
+    <property role="TrG5h" value="IComponentCheckerProvider" />
+  </node>
 </model>
 
