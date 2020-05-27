@@ -14,12 +14,14 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -40,6 +42,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -61,6 +66,9 @@
     <node concept="PrWs8" id="cPLa7FrPwD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="7F9023_OGyY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="cPLa7FpckA" role="1TKVEi">
       <property role="IQ2ns" value="231307155597477158" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -74,6 +82,12 @@
       <property role="20kJfa" value="rows" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="cPLa7Fpiy9" resolve="DataRow" />
+    </node>
+    <node concept="1TJgyj" id="7F9023_OEld" role="1TKVEi">
+      <property role="IQ2ns" value="8847603084240790861" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultLookupColumn" />
+      <ref role="20lvS9" node="7F9023_OqBf" resolve="DataColDefRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="cPLa7FpaUQ">
@@ -191,15 +205,39 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7F9023_Orfu" role="1TKVEi">
+      <property role="IQ2ns" value="8847603084240729054" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="col" />
+      <ref role="20lvS9" node="7F9023_OqBf" resolve="DataColDefRef" />
+    </node>
     <node concept="1TJgyj" id="stdmzxm7Y5" role="1TKVEi">
       <property role="IQ2ns" value="512624657163648901" />
-      <property role="20kJfa" value="col" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="col_old" />
       <ref role="20lvS9" node="cPLa7FpaUQ" resolve="DataColDef" />
+      <node concept="asaX9" id="7F9023_Orfy" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="stdmzxm7Y3" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="PrWs8" id="7F9023_OrfB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7F9023_OqBf">
+    <property role="EcuMT" value="8847603084240726479" />
+    <property role="TrG5h" value="DataColDefRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7F9023_OqBg" role="1TKVEi">
+      <property role="IQ2ns" value="8847603084240726480" />
+      <property role="20kJfa" value="col" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="cPLa7FpaUQ" resolve="DataColDef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7F9023_OqBC">
+    <property role="EcuMT" value="8847603084240726504" />
+    <property role="TrG5h" value="IDataTableContext" />
   </node>
 </model>
 
