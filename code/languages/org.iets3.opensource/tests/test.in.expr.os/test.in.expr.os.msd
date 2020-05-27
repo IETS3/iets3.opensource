@@ -32,7 +32,6 @@
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
-    <language slang="l:1c897ba5-9d43-4035-ac7f-0306495743ac:com.mbeddr.mpsutil.interpreter.test" version="0" />
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
     <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />
     <language slang="l:3819ba36-98f4-49ac-b779-34f3a458c09b:com.mbeddr.mpsutil.varscope" version="0" />
@@ -53,7 +52,7 @@
     <language slang="l:5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1:org.iets3.core.expr.adt" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
     <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="5" />
-    <language slang="l:b25b8ad1-4d3d-4e45-8c78-72091b39fdda:org.iets3.core.expr.data" version="0" />
+    <language slang="l:b25b8ad1-4d3d-4e45-8c78-72091b39fdda:org.iets3.core.expr.data" version="1" />
     <language slang="l:cee4aa62-aca9-4f26-9602-75129cd457c9:org.iets3.core.expr.dataflow" version="0" />
     <language slang="l:289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998:org.iets3.core.expr.datetime" version="0" />
     <language slang="l:32190be6-23f7-4e17-aad4-fb739bb3569f:org.iets3.core.expr.doc" version="0" />
