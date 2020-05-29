@@ -13,7 +13,9 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" implicit="true" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -590,6 +592,48 @@
       <node concept="10P_77" id="3NUSEp5ykEP" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3NUSEp5ykH6">
+    <ref role="13h7C2" to="e9k1:cPLa7FpaUQ" resolve="DataColDef" />
+    <node concept="13i0hz" id="3NUSEp5ykHh" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="3NUSEp5ykHi" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5ykHj" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5ykHk" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYTZvW" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6fmG8CYU4Nq" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3NUSEp5ykHm" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3NUSEp5ykHn" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="3NUSEp5ykHo" role="1B3o_S" />
+      <node concept="3clFbS" id="3NUSEp5ykHp" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5ykHq" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYU00I" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6fmG8CYU557" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3NUSEp5ykHs" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="3NUSEp5ykH7" role="13h7CW">
+      <node concept="3clFbS" id="3NUSEp5ykH8" role="2VODD2" />
+    </node>
+  </node>
   <node concept="13h7C7" id="stdmzxr6jt">
     <ref role="13h7C2" to="e9k1:stdmzxm7Y2" resolve="DataTableLookUp" />
     <node concept="13hLZK" id="stdmzxr6ju" role="13h7CW">
@@ -652,48 +696,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="stdmzxr6jH" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="3NUSEp5ykH6">
-    <ref role="13h7C2" to="e9k1:cPLa7FpaUQ" resolve="DataColDef" />
-    <node concept="13i0hz" id="3NUSEp5ykHh" role="13h7CS">
-      <property role="TrG5h" value="allowUmlaute" />
-      <property role="2Ki8OM" value="true" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
-      <node concept="3Tm1VV" id="3NUSEp5ykHi" role="1B3o_S" />
-      <node concept="3clFbS" id="3NUSEp5ykHj" role="3clF47">
-        <node concept="3clFbF" id="3NUSEp5ykHk" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYTZvW" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <node concept="1fM9EW" id="6fmG8CYU4Nq" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3NUSEp5ykHm" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="3NUSEp5ykHn" role="13h7CS">
-      <property role="TrG5h" value="allowParagraph" />
-      <property role="2Ki8OM" value="true" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
-      <node concept="3Tm1VV" id="3NUSEp5ykHo" role="1B3o_S" />
-      <node concept="3clFbS" id="3NUSEp5ykHp" role="3clF47">
-        <node concept="3clFbF" id="3NUSEp5ykHq" role="3cqZAp">
-          <node concept="2YIFZM" id="6fmG8CYU00I" role="3clFbG">
-            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
-            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
-            <node concept="1fM9EW" id="6fmG8CYU557" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="3NUSEp5ykHs" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="3NUSEp5ykH7" role="13h7CW">
-      <node concept="3clFbS" id="3NUSEp5ykH8" role="2VODD2" />
     </node>
   </node>
 </model>
