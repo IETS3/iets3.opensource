@@ -1144,24 +1144,14 @@
             <ref role="1Busuk" node="49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2aG75loLbZ7" role="3bR37C">
-          <node concept="3bR9La" id="2aG75loLbZ8" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2aG75loLbZ9" role="3bR37C">
           <node concept="3bR9La" id="2aG75loLbZa" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4wFKMX0ARDI" role="3bR37C">
-          <node concept="3bR9La" id="4wFKMX0ARDJ" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:7EwXxVJguoA" resolve="de.itemis.mps.editor.math.notations" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4wFKMX0ARDK" role="3bR37C">
-          <node concept="3bR9La" id="4wFKMX0ARDL" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+        <node concept="1SiIV0" id="1xAVBiVNUY8" role="3bR37C">
+          <node concept="3bR9La" id="1xAVBiVNUY9" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
           </node>
         </node>
       </node>
@@ -2070,6 +2060,11 @@
         <node concept="1SiIV0" id="77FPJvcWcQQ" role="3bR37C">
           <node concept="3bR9La" id="77FPJvcWcQR" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1xAVBiVO9lu" role="3bR37C">
+          <node concept="3bR9La" id="1xAVBiVO9lv" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
           </node>
         </node>
       </node>
