@@ -164,6 +164,7 @@
       <concept id="4944417823362115313" name="org.iets3.core.expr.math.structure.LoopVarRef" flags="ng" index="a1vWx">
         <reference id="4944417823362115317" name="loop" index="a1vW_" />
       </concept>
+      <concept id="2223190514810433423" name="org.iets3.core.expr.math.structure.ToReal" flags="ng" index="2p$nhL" />
       <concept id="902756210908825427" name="org.iets3.core.expr.math.structure.CosinusExpression" flags="ng" index="2DubMI" />
       <concept id="902756210919735489" name="org.iets3.core.expr.math.structure.TangensHyperbolicus" flags="ng" index="2E8jGW" />
       <concept id="902756210922679116" name="org.iets3.core.expr.math.structure.SinusHyperbolicus" flags="ng" index="2Elt2L" />
@@ -1179,6 +1180,41 @@
           <property role="30bXRw" value="1.6" />
         </node>
       </node>
+      <node concept="_fkuZ" id="1VqmZU7jT5F" role="_fkp5">
+        <node concept="_fku$" id="1VqmZU7jT5G" role="_fkur" />
+        <node concept="1QScDb" id="1VqmZU7k0Mo" role="_fkuY">
+          <node concept="2p$nhL" id="1VqmZU7k0O9" role="1QScD9" />
+          <node concept="a1tim" id="1VqmZU7jT7N" role="30czhm">
+            <node concept="30bXRB" id="1VqmZU7jT86" role="a1tin">
+              <property role="30bXRw" value="3" />
+            </node>
+            <node concept="30bXRB" id="1VqmZU7jT8s" role="a1tiq">
+              <property role="30bXRw" value="7" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="1VqmZU7jTas" role="_fkuS">
+          <property role="30bXRw" value="0.4285714285714286" />
+        </node>
+      </node>
+      <node concept="3dYjL0" id="1VqmZU7k13T" role="_fkp5" />
+      <node concept="_fkuZ" id="1VqmZU7k0Vg" role="_fkp5">
+        <node concept="_fku$" id="1VqmZU7k0Vh" role="_fkur" />
+        <node concept="30bXRB" id="1VqmZU7k10_" role="_fkuS">
+          <property role="30bXRw" value="0.5" />
+        </node>
+        <node concept="1QScDb" id="1VqmZU7k3TD" role="_fkuY">
+          <node concept="2p$nhL" id="1VqmZU7k3Vq" role="1QScD9" />
+          <node concept="a1tim" id="1VqmZU7k0YB" role="30czhm">
+            <node concept="30bXRB" id="1VqmZU7k0YU" role="a1tin">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="1VqmZU7k11s" role="a1tiq">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="7BZzIqklFsh" role="_iOnB" />
     <node concept="_ixoA" id="7BZzIqklFzc" role="_iOnB" />
@@ -1217,7 +1253,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="7BZzIqko680" role="_fkuS">
-          <property role="30bXRw" value="3.1831927423" />
+          <property role="30bXRw" value="3.1831927423205475" />
         </node>
       </node>
       <node concept="_fkuZ" id="7BZzIqkoco6" role="_fkp5">

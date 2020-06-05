@@ -611,6 +611,52 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="1VqmZU7iTz5" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:1VqmZU7iMYf" resolve="ToReal" />
+      <node concept="3dA_Gj" id="1VqmZU7iTz6" role="3vQZUl">
+        <node concept="9aQIb" id="1VqmZU7iTz7" role="3vcmbn">
+          <node concept="3clFbS" id="1VqmZU7iTz8" role="9aQI4">
+            <node concept="3cpWs8" id="1VqmZU7iTz9" role="3cqZAp">
+              <node concept="3cpWsn" id="1VqmZU7iTza" role="3cpWs9">
+                <property role="TrG5h" value="v" />
+                <node concept="3uibUv" id="1VqmZU7iTzb" role="1tU5fm">
+                  <ref role="3uigEE" node="5mz5Tt_gaKE" resolve="BigRational" />
+                </node>
+                <node concept="10QFUN" id="1VqmZU7iTzc" role="33vP2m">
+                  <node concept="3EllGN" id="1VqmZU7iTzd" role="10QFUP">
+                    <node concept="2OqwBi" id="1VqmZU7iTze" role="3ElVtu">
+                      <node concept="oxGPV" id="1VqmZU7iTzf" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="1VqmZU7iTzg" role="2OqNvi">
+                        <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+                      </node>
+                    </node>
+                    <node concept="TvHiN" id="1VqmZU7iTzh" role="3ElQJh" />
+                  </node>
+                  <node concept="3uibUv" id="1VqmZU7iTzi" role="10QFUM">
+                    <ref role="3uigEE" node="5mz5Tt_gaKE" resolve="BigRational" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1VqmZU7iTzj" role="3cqZAp">
+              <node concept="2OqwBi" id="1VqmZU7iTzk" role="3cqZAk">
+                <node concept="37vLTw" id="1VqmZU7iTzl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1VqmZU7iTza" resolve="v" />
+                </node>
+                <node concept="liA8E" id="1VqmZU7iTzm" role="2OqNvi">
+                  <ref role="37wK5l" node="5mz5Tt_gb5X" resolve="decimalValue" />
+                  <node concept="10M0yZ" id="1VqmZU7j2hv" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="5mz5Tt_kgsX" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="1qv1:5mz5Tt_jL63" resolve="ToDecimalTarget" />
@@ -3446,6 +3492,24 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5mz5Tt_gaKX" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="1VqmZU7i1t8" role="jymVt">
+      <property role="TrG5h" value="FLOAT_PRECISION" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10Oyi0" id="1VqmZU7i1tb" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1VqmZU7i1ta" role="1B3o_S" />
+      <node concept="3cmrfG" id="1VqmZU7i7gn" role="33vP2m">
+        <property role="3cmrfH" value="8" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1VqmZU7i7$E" role="jymVt">
+      <property role="TrG5h" value="DOUBLE_PRECISION" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10Oyi0" id="1VqmZU7i7$F" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1VqmZU7i7$G" role="1B3o_S" />
+      <node concept="3cmrfG" id="1VqmZU7i7$H" role="33vP2m">
+        <property role="3cmrfH" value="16" />
+      </node>
     </node>
     <node concept="312cEg" id="5mz5Tt_gaKY" role="jymVt">
       <property role="TrG5h" value="num" />
@@ -7439,7 +7503,7 @@
     <node concept="3clFb_" id="5mz5Tt_gb5X" role="jymVt">
       <property role="TrG5h" value="decimalValue" />
       <node concept="37vLTG" id="5mz5Tt_gb5Y" role="3clF46">
-        <property role="TrG5h" value="scale" />
+        <property role="TrG5h" value="digits" />
         <property role="3TUv4t" value="true" />
         <node concept="10Oyi0" id="5mz5Tt_gb5Z" role="1tU5fm" />
       </node>
@@ -7450,7 +7514,7 @@
             <node concept="liA8E" id="5mz5Tt_gb64" role="2OqNvi">
               <ref role="37wK5l" node="5mz5Tt_gb5C" resolve="decimalValue" />
               <node concept="37vLTw" id="5mz5Tt_gb65" role="37wK5m">
-                <ref role="3cqZAo" node="5mz5Tt_gb5Y" resolve="scale" />
+                <ref role="3cqZAo" node="5mz5Tt_gb5Y" resolve="digits" />
               </node>
               <node concept="Rm8GO" id="5mz5Tt_ggj$" role="37wK5m">
                 <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -7474,8 +7538,8 @@
               <node concept="Xjq3P" id="5mz5Tt_gb6e" role="2Oq$k0" />
               <node concept="liA8E" id="5mz5Tt_gb6f" role="2OqNvi">
                 <ref role="37wK5l" node="5mz5Tt_gb5C" resolve="decimalValue" />
-                <node concept="3cmrfG" id="5mz5Tt_gb6g" role="37wK5m">
-                  <property role="3cmrfH" value="18" />
+                <node concept="37vLTw" id="1VqmZU7idiT" role="37wK5m">
+                  <ref role="3cqZAo" node="1VqmZU7i7$E" resolve="DOUBLE_PRECISION" />
                 </node>
                 <node concept="Rm8GO" id="5mz5Tt_gikg" role="37wK5m">
                   <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -7501,8 +7565,8 @@
               <node concept="Xjq3P" id="5mz5Tt_gb6q" role="2Oq$k0" />
               <node concept="liA8E" id="5mz5Tt_gb6r" role="2OqNvi">
                 <ref role="37wK5l" node="5mz5Tt_gb5C" resolve="decimalValue" />
-                <node concept="3cmrfG" id="5mz5Tt_gb6s" role="37wK5m">
-                  <property role="3cmrfH" value="8" />
+                <node concept="37vLTw" id="1VqmZU7igxt" role="37wK5m">
+                  <ref role="3cqZAo" node="1VqmZU7i1t8" resolve="FLOAT_PRECISION" />
                 </node>
                 <node concept="Rm8GO" id="5mz5Tt_giqr" role="37wK5m">
                   <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />

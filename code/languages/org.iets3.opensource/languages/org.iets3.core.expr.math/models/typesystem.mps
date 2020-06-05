@@ -1272,18 +1272,17 @@
     <property role="3GE5qa" value="rat" />
     <node concept="3clFbS" id="5mz5Tt_jQxO" role="18ibNy">
       <node concept="1Z5TYs" id="5mz5Tt_jQEM" role="3cqZAp">
-        <node concept="mw_s8" id="5mz5Tt_jQF6" role="1ZfhKB">
-          <node concept="2pJPEk" id="5mz5Tt_jQF2" role="mwGJk">
-            <node concept="2pJPED" id="5mz5Tt_jQFh" role="2pJPEn">
-              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
-            </node>
-          </node>
-        </node>
         <node concept="mw_s8" id="5mz5Tt_jQEP" role="1ZfhK$">
           <node concept="1Z2H0r" id="5mz5Tt_jQxU" role="mwGJk">
             <node concept="1YBJjd" id="5mz5Tt_jQya" role="1Z2MuG">
               <ref role="1YBMHb" node="5mz5Tt_jQxQ" resolve="toInteger" />
             </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1VqmZU7j5MW" role="1ZfhKB">
+          <node concept="2YIFZM" id="1VqmZU7j5QX" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:4kor_v$1qpx" resolve="createGenericIntegerType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
           </node>
         </node>
       </node>
@@ -2710,6 +2709,32 @@
     <node concept="1YaCAy" id="M7eZQBbq7Z" role="1YuTPh">
       <property role="TrG5h" value="trigonometricExpression" />
       <ref role="1YaFvo" to="1qv1:M7eZQBbV1s" resolve="TrigonometricExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1VqmZU7jdoc">
+    <property role="TrG5h" value="typeof_ToReal" />
+    <property role="3GE5qa" value="rat" />
+    <node concept="3clFbS" id="1VqmZU7jdod" role="18ibNy">
+      <node concept="1Z5TYs" id="1VqmZU7jfHb" role="3cqZAp">
+        <node concept="mw_s8" id="1VqmZU7jfHs" role="1ZfhKB">
+          <node concept="2YIFZM" id="1VqmZU7jfJ7" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+            <node concept="10Nm6u" id="1VqmZU7jncT" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="1VqmZU7jfHe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1VqmZU7jfwS" role="mwGJk">
+            <node concept="1YBJjd" id="1VqmZU7jfyK" role="1Z2MuG">
+              <ref role="1YBMHb" node="1VqmZU7jdof" resolve="toReal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1VqmZU7jdof" role="1YuTPh">
+      <property role="TrG5h" value="toReal" />
+      <ref role="1YaFvo" to="1qv1:1VqmZU7iMYf" resolve="ToReal" />
     </node>
   </node>
 </model>
