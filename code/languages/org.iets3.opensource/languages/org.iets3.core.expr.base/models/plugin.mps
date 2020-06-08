@@ -3019,7 +3019,7 @@
     </node>
     <node concept="Wx3nA" id="7Wa2sv3XSnr" role="jymVt">
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="DIV_ROUNDING" />
+      <property role="TrG5h" value="DEFAULT_ROUNDING" />
       <node concept="3Tm1VV" id="7kyIuXqex5i" role="1B3o_S" />
       <node concept="3uibUv" id="7Wa2sv3XSnp" role="1tU5fm">
         <ref role="3uigEE" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -3027,6 +3027,13 @@
       <node concept="Rm8GO" id="7Wa2sv3XSnq" role="33vP2m">
         <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
         <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
+      </node>
+      <node concept="z59LJ" id="6zU$Zuz6NV7" role="lGtFl">
+        <node concept="TZ5HA" id="6zU$Zuz6NV8" role="TZ5H$">
+          <node concept="1dT_AC" id="6zU$Zuz6NV9" role="1dT_Ay">
+            <property role="1dT_AB" value="Default rounding mode applied when converting decimals with infinite/undefined precision to decimals with INF_PREC" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2NHHcg2EXnw" role="jymVt" />

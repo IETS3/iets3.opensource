@@ -15,14 +15,12 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="1qv1" ref="r:c53b8bbc-6142-4787-a6e4-66310b772b37(org.iets3.core.expr.math.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="s2qo" ref="r:ab4665d9-6baf-4005-b8e4-87240839fe18(org.iets3.core.expr.math.interpreter.plugin)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="aoxt" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.util(org.apache.commons/)" />
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" />
-    <import index="7xqi" ref="r:d2ff18ef-a6af-4ccc-bbe9-c907db320eae(org.iets3.core.expr.math.plugin)" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -290,8 +288,12 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
@@ -645,11 +647,7 @@
                   <ref role="3cqZAo" node="1VqmZU7iTza" resolve="v" />
                 </node>
                 <node concept="liA8E" id="1VqmZU7iTzm" role="2OqNvi">
-                  <ref role="37wK5l" node="5mz5Tt_gb5X" resolve="decimalValue" />
-                  <node concept="10M0yZ" id="1VqmZU7j2hv" role="37wK5m">
-                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
-                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
-                  </node>
+                  <ref role="37wK5l" node="6zU$Zuz5UBV" resolve="realValue" />
                 </node>
               </node>
             </node>
@@ -2322,7 +2320,7 @@
               <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
             </node>
             <node concept="10M0yZ" id="4Yc4IDSC$5m" role="37wK5m">
-              <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DIV_ROUNDING" />
+              <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
               <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
             </node>
           </node>
@@ -7527,6 +7525,56 @@
       <node concept="3Tm1VV" id="5mz5Tt_gb67" role="1B3o_S" />
       <node concept="3uibUv" id="5mz5Tt_gb68" role="3clF45">
         <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6zU$Zuz5UBV" role="jymVt">
+      <property role="TrG5h" value="realValue" />
+      <node concept="3clFbS" id="6zU$Zuz5UBY" role="3clF47">
+        <node concept="3cpWs6" id="6zU$Zuz5UBZ" role="3cqZAp">
+          <node concept="2OqwBi" id="TA8umaJHwm" role="3cqZAk">
+            <node concept="2OqwBi" id="6zU$Zuz5UC0" role="2Oq$k0">
+              <node concept="Xjq3P" id="6zU$Zuz5UC1" role="2Oq$k0" />
+              <node concept="liA8E" id="6zU$Zuz5UC2" role="2OqNvi">
+                <ref role="37wK5l" node="5mz5Tt_gb5C" resolve="decimalValue" />
+                <node concept="10M0yZ" id="6zU$Zuz6aQN" role="37wK5m">
+                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                </node>
+                <node concept="10M0yZ" id="6zU$Zuz6WLS" role="37wK5m">
+                  <ref role="3cqZAo" to="oq0c:7Wa2sv3XSnr" resolve="DEFAULT_ROUNDING" />
+                  <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="TA8umaJLkN" role="2OqNvi">
+              <ref role="37wK5l" to="xlxw:~BigDecimal.stripTrailingZeros()" resolve="stripTrailingZeros" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6zU$Zuz5UC5" role="1B3o_S" />
+      <node concept="3uibUv" id="6zU$Zuz5UC6" role="3clF45">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+      </node>
+      <node concept="P$JXv" id="6zU$Zuz78p9" role="lGtFl">
+        <node concept="TZ5HA" id="6zU$Zuz78pa" role="TZ5H$">
+          <node concept="1dT_AC" id="6zU$Zuz78pb" role="1dT_Ay">
+            <property role="1dT_AB" value="Converts to BigDecimal (real type value) with framework default precision, using framework default rounding (s. InfHelper)." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="TA8umaJOTk" role="TZ5H$">
+          <node concept="1dT_AC" id="TA8umaJOTl" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="TA8umaJOTC" role="TZ5H$">
+          <node concept="1dT_AC" id="TA8umaJOTD" role="1dT_Ay">
+            <property role="1dT_AB" value="Trailing zeros will be stripped if necessary." />
+          </node>
+        </node>
+        <node concept="x79VA" id="6zU$Zuz78pc" role="3nqlJM">
+          <property role="x79VB" value="decimal value for real type computation" />
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="5mz5Tt_gb69" role="jymVt">
