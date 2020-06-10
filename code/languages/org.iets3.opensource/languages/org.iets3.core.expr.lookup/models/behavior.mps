@@ -123,6 +123,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
@@ -342,12 +345,14 @@
                 <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                 <node concept="2pJxcG" id="55lPkJGSEy$" role="2pJxcM">
                   <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                  <node concept="3cpWs3" id="55lPkJGSEy_" role="28ntcv">
-                    <node concept="Xl_RD" id="55lPkJGSEyA" role="3uHU7w">
-                      <property role="Xl_RC" value="" />
-                    </node>
-                    <node concept="37vLTw" id="55lPkJGSELk" role="3uHU7B">
-                      <ref role="3cqZAo" node="55lPkJGRnKF" resolve="rowHeaderVal" />
+                  <node concept="WxPPo" id="uuJ7IpZtv3" role="28ntcv">
+                    <node concept="3cpWs3" id="55lPkJGSEy_" role="WxPPp">
+                      <node concept="Xl_RD" id="55lPkJGSEyA" role="3uHU7w">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                      <node concept="37vLTw" id="55lPkJGSELk" role="3uHU7B">
+                        <ref role="3cqZAo" node="55lPkJGRnKF" resolve="rowHeaderVal" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -445,8 +450,10 @@
                     <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                     <node concept="2pJxcG" id="55lPkJGSDDS" role="2pJxcM">
                       <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                      <node concept="2GrUjf" id="55lPkJGSDOi" role="28ntcv">
-                        <ref role="2Gs0qQ" node="55lPkJGRp_c" resolve="v" />
+                      <node concept="WxPPo" id="uuJ7IpZtv4" role="28ntcv">
+                        <node concept="2GrUjf" id="55lPkJGSDOi" role="WxPPp">
+                          <ref role="2Gs0qQ" node="55lPkJGRp_c" resolve="v" />
+                        </node>
                       </node>
                     </node>
                   </node>

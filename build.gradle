@@ -57,13 +57,13 @@ if (project.hasProperty("forceCI")) {
 
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
-def major = "2019"
-def minor = "3"
+def major = "2020"
+def minor = "1"
 
 // Dependency versions
-ext.mpsVersion = '2019.3.4'
+ext.mpsVersion = '2020.1.1'
 
-def mbeddrVersion = "2019.3+"
+def mbeddrVersion = "2020.1+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can

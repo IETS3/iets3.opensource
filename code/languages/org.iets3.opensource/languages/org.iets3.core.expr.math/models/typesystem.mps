@@ -158,6 +158,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -796,16 +799,18 @@
                   <ref role="2pJxaS" to="5qo5:19PglA20qXW" resolve="NumberPrecSpec" />
                   <node concept="2pJxcG" id="5mz5Tt_jL_t" role="2pJxcM">
                     <ref role="2pJxcJ" to="5qo5:19PglA20qY6" resolve="prec" />
-                    <node concept="3cpWs3" id="5mz5Tt_jNci" role="28ntcv">
-                      <node concept="Xl_RD" id="5mz5Tt_jNcl" role="3uHU7w">
-                        <property role="Xl_RC" value="" />
-                      </node>
-                      <node concept="2OqwBi" id="5mz5Tt_jLL0" role="3uHU7B">
-                        <node concept="1YBJjd" id="5mz5Tt_jL_B" role="2Oq$k0">
-                          <ref role="1YBMHb" node="5mz5Tt_jL8c" resolve="toDecimalTarget" />
+                    <node concept="WxPPo" id="uuJ7IpZtv9" role="28ntcv">
+                      <node concept="3cpWs3" id="5mz5Tt_jNci" role="WxPPp">
+                        <node concept="Xl_RD" id="5mz5Tt_jNcl" role="3uHU7w">
+                          <property role="Xl_RC" value="" />
                         </node>
-                        <node concept="3TrcHB" id="5mz5Tt_jLY$" role="2OqNvi">
-                          <ref role="3TsBF5" to="1qv1:5mz5Tt_jL66" resolve="digits" />
+                        <node concept="2OqwBi" id="5mz5Tt_jLL0" role="3uHU7B">
+                          <node concept="1YBJjd" id="5mz5Tt_jL_B" role="2Oq$k0">
+                            <ref role="1YBMHb" node="5mz5Tt_jL8c" resolve="toDecimalTarget" />
+                          </node>
+                          <node concept="3TrcHB" id="5mz5Tt_jLY$" role="2OqNvi">
+                            <ref role="3TsBF5" to="1qv1:5mz5Tt_jL66" resolve="digits" />
+                          </node>
                         </node>
                       </node>
                     </node>

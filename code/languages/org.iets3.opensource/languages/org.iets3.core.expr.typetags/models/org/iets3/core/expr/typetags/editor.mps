@@ -2,7 +2,7 @@
 <model ref="r:92d50c8e-b748-4d10-be16-a16e598ca5a7(org.iets3.core.expr.typetags.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -18,6 +18,8 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
@@ -65,6 +67,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1630016958697286851" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_parameterObject" flags="ng" index="2ZBlsa" />
       <concept id="1630016958697057551" name="jetbrains.mps.lang.editor.structure.IMenuPartParameterized" flags="ng" index="2ZBHr6">
@@ -92,7 +95,6 @@
       <concept id="7291101478617127464" name="jetbrains.mps.lang.editor.structure.IExtensibleTransformationMenuPart" flags="ng" index="1joUw2">
         <child id="8954657570916349207" name="features" index="2jZA2a" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
@@ -511,20 +513,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="3p36aQ" id="5hPtIcZz0yH">
-    <ref role="aqKnT" to="w1hl:4HxogODTnzM" resolve="AbstractTaggedType" />
-  </node>
-  <node concept="3p36aQ" id="5hPtIcZz0yI">
-    <ref role="aqKnT" to="w1hl:4HxogODS05M" resolve="ErrorTag" />
-  </node>
-  <node concept="3p36aQ" id="52gSz9ipE3c">
-    <property role="3GE5qa" value="modifier" />
-    <ref role="aqKnT" to="w1hl:52gSz9ipE2r" resolve="AtLeastTag" />
-  </node>
-  <node concept="3p36aQ" id="52gSz9ipE3C">
-    <property role="3GE5qa" value="modifier" />
-    <ref role="aqKnT" to="w1hl:52gSz9ipE2s" resolve="AtMostTag" />
   </node>
   <node concept="24kQdi" id="52gSz9ipFsE">
     <property role="3GE5qa" value="modifier" />
@@ -965,6 +953,22 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="5hPtIcZz0yH">
+    <ref role="aqKnT" to="w1hl:4HxogODTnzM" resolve="AbstractTaggedType" />
+    <node concept="22hDWj" id="uuJ7IpZttZ" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="5hPtIcZz0yI">
+    <ref role="aqKnT" to="w1hl:4HxogODS05M" resolve="ErrorTag" />
+    <node concept="22hDWj" id="uuJ7IpZtu0" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="52gSz9ipE3c">
+    <ref role="aqKnT" to="w1hl:52gSz9ipE2r" resolve="AtLeastTag" />
+    <node concept="22hDWj" id="uuJ7IpZtu1" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="52gSz9ipE3C">
+    <ref role="aqKnT" to="w1hl:52gSz9ipE2s" resolve="AtMostTag" />
+    <node concept="22hDWj" id="uuJ7IpZtu2" role="22hAXT" />
   </node>
 </model>
 

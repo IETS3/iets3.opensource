@@ -2,9 +2,9 @@
 <model ref="r:d2ff18ef-a6af-4ccc-bbe9-c907db320eae(org.iets3.core.expr.math.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -17,7 +17,7 @@
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="3o3z" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.collect(de.q60.mps.libs/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
@@ -193,6 +193,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -821,7 +824,7 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="3C0hCYc92R7" role="2OqNvi">
+                          <node concept="liA8E" id="1xAVBiVNUCR" role="2OqNvi">
                             <ref role="37wK5l" to="33ny:~Collection.size()" resolve="size" />
                           </node>
                         </node>
@@ -887,8 +890,10 @@
                             <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                             <node concept="2pJxcG" id="2aG75lpC1i4" role="2pJxcM">
                               <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                              <node concept="Xl_RD" id="2aG75lpC1i5" role="28ntcv">
-                                <property role="Xl_RC" value="0" />
+                              <node concept="WxPPo" id="uuJ7IpZtv5" role="28ntcv">
+                                <node concept="Xl_RD" id="2aG75lpC1i5" role="WxPPp">
+                                  <property role="Xl_RC" value="0" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1100,8 +1105,10 @@
                         <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                         <node concept="2pJxcG" id="2aG75lpCuRB" role="2pJxcM">
                           <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                          <node concept="Xl_RD" id="2aG75lpCuRC" role="28ntcv">
-                            <property role="Xl_RC" value="1" />
+                          <node concept="WxPPo" id="uuJ7IpZtv6" role="28ntcv">
+                            <node concept="Xl_RD" id="2aG75lpCuRC" role="WxPPp">
+                              <property role="Xl_RC" value="1" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1176,8 +1183,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                       <node concept="2pJxcG" id="2aG75lpCsQ2" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                        <node concept="Xl_RD" id="2aG75lpCsQ3" role="28ntcv">
-                          <property role="Xl_RC" value="1" />
+                        <node concept="WxPPo" id="uuJ7IpZtv7" role="28ntcv">
+                          <node concept="Xl_RD" id="2aG75lpCsQ3" role="WxPPp">
+                            <property role="Xl_RC" value="1" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1226,8 +1235,10 @@
                         <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                         <node concept="2pJxcG" id="2aG75lpCtTd" role="2pJxcM">
                           <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                          <node concept="Xl_RD" id="2aG75lpCtTe" role="28ntcv">
-                            <property role="Xl_RC" value="1" />
+                          <node concept="WxPPo" id="uuJ7IpZtv8" role="28ntcv">
+                            <node concept="Xl_RD" id="2aG75lpCtTe" role="WxPPp">
+                              <property role="Xl_RC" value="1" />
+                            </node>
                           </node>
                         </node>
                       </node>

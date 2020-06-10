@@ -55,7 +55,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
@@ -612,7 +612,7 @@
     <node concept="2SaL7w" id="7xL5W4zpdhu" role="2ZfVeh">
       <node concept="3clFbS" id="7xL5W4zpdhv" role="2VODD2">
         <node concept="3SKdUt" id="7xL5W4zpiO_" role="3cqZAp">
-          <node concept="1PaTwC" id="7xL5W4zpiOA" role="3ndbpf">
+          <node concept="1PaTwC" id="7xL5W4zpiOA" role="1aUNEU">
             <node concept="3oM_SD" id="7xL5W4zpiOC" role="1PaTwD">
               <property role="3oM_SC" value="disabled" />
             </node>

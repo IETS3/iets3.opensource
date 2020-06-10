@@ -5,7 +5,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="f2abf2a6-552e-4906-ab58-930f9a79aff4" name="org.iets3.core.expr.genjava.contracts" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -236,7 +236,7 @@
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -2473,7 +2473,7 @@
       <node concept="30G5F_" id="lH$PuhxrlH" role="30HLyM">
         <node concept="3clFbS" id="lH$PuhxrlI" role="2VODD2">
           <node concept="3SKdUt" id="lH$PujDRy1" role="3cqZAp">
-            <node concept="1PaTwC" id="17Nm8oCo8_W" role="3ndbpf">
+            <node concept="1PaTwC" id="17Nm8oCo8_W" role="1aUNEU">
               <node concept="3oM_SD" id="17Nm8oCo8_X" role="1PaTwD">
                 <property role="3oM_SC" value="Used" />
               </node>
@@ -2553,7 +2553,7 @@
       <node concept="30G5F_" id="lH$Puhxtep" role="30HLyM">
         <node concept="3clFbS" id="lH$Puhxteq" role="2VODD2">
           <node concept="3SKdUt" id="lH$PujDRMQ" role="3cqZAp">
-            <node concept="1PaTwC" id="17Nm8oCo8A3" role="3ndbpf">
+            <node concept="1PaTwC" id="17Nm8oCo8A3" role="1aUNEU">
               <node concept="3oM_SD" id="17Nm8oCo8A4" role="1PaTwD">
                 <property role="3oM_SC" value="Used" />
               </node>

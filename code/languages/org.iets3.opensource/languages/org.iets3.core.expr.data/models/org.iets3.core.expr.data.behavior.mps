@@ -103,6 +103,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
         <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
@@ -161,8 +164,10 @@
                 <ref role="2pJxaS" to="e9k1:cPLa7FpaUQ" resolve="DataColDef" />
                 <node concept="2pJxcG" id="cPLa7FriZ4" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="cPLa7FriZ5" role="28ntcv">
-                    <property role="Xl_RC" value="val1" />
+                  <node concept="WxPPo" id="uuJ7IpZtu_" role="28ntcv">
+                    <node concept="Xl_RD" id="cPLa7FriZ5" role="WxPPp">
+                      <property role="Xl_RC" value="val1" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2pIpSj" id="cPLa7FriZ6" role="2pJxcM">
@@ -189,8 +194,10 @@
                 <ref role="2pJxaS" to="e9k1:cPLa7FpaUQ" resolve="DataColDef" />
                 <node concept="2pJxcG" id="cPLa7FrjO6" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="cPLa7FrjO7" role="28ntcv">
-                    <property role="Xl_RC" value="val2" />
+                  <node concept="WxPPo" id="uuJ7IpZtuA" role="28ntcv">
+                    <node concept="Xl_RD" id="cPLa7FrjO7" role="WxPPp">
+                      <property role="Xl_RC" value="val2" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2pIpSj" id="cPLa7FrjO8" role="2pJxcM">
@@ -250,8 +257,10 @@
                   <ref role="2pJxaS" to="e9k1:cPLa7Fpiy9" resolve="DataRow" />
                   <node concept="2pJxcG" id="cPLa7FrgE1" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="cPLa7Frh0a" role="28ntcv">
-                      <property role="Xl_RC" value="keyA" />
+                    <node concept="WxPPo" id="uuJ7IpZtuB" role="28ntcv">
+                      <node concept="Xl_RD" id="cPLa7Frh0a" role="WxPPp">
+                        <property role="Xl_RC" value="keyA" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="cPLa7Frhr2" role="2pJxcM">
@@ -324,8 +333,10 @@
                   <ref role="2pJxaS" to="e9k1:cPLa7Fpiy9" resolve="DataRow" />
                   <node concept="2pJxcG" id="cPLa7Frm01" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="cPLa7Frm02" role="28ntcv">
-                      <property role="Xl_RC" value="keyB" />
+                    <node concept="WxPPo" id="uuJ7IpZtuC" role="28ntcv">
+                      <node concept="Xl_RD" id="cPLa7Frm02" role="WxPPp">
+                        <property role="Xl_RC" value="keyB" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="cPLa7Frm03" role="2pJxcM">

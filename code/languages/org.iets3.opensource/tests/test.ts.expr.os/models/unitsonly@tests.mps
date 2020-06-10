@@ -10,7 +10,7 @@
     <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="-1" />
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="-1" />
     <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="-1" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="-1" />
@@ -381,6 +381,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -2587,8 +2590,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                       <node concept="2pJxcG" id="1JTgXSYOLdE" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                        <node concept="37vLTw" id="1JTgXSYOLdQ" role="28ntcv">
-                          <ref role="3cqZAo" node="1JTgXSYOKIz" resolve="expectedNumerator" />
+                        <node concept="WxPPo" id="uuJ7IpZtxU" role="28ntcv">
+                          <node concept="37vLTw" id="1JTgXSYOLdQ" role="WxPPp">
+                            <ref role="3cqZAo" node="1JTgXSYOKIz" resolve="expectedNumerator" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2599,8 +2604,10 @@
                       <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                       <node concept="2pJxcG" id="1JTgXSYOLeg" role="2pJxcM">
                         <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                        <node concept="37vLTw" id="1JTgXSYOLes" role="28ntcv">
-                          <ref role="3cqZAo" node="1JTgXSYOKNn" resolve="expectedDenominator" />
+                        <node concept="WxPPo" id="uuJ7IpZtxV" role="28ntcv">
+                          <node concept="37vLTw" id="1JTgXSYOLes" role="WxPPp">
+                            <ref role="3cqZAo" node="1JTgXSYOKNn" resolve="expectedDenominator" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2813,8 +2820,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="1JTgXSYOocx" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="1JTgXSYOocS" role="28ntcv">
-                          <property role="3cmrfH" value="3" />
+                        <node concept="WxPPo" id="uuJ7IpZtxW" role="28ntcv">
+                          <node concept="3cmrfG" id="1JTgXSYOocS" role="WxPPp">
+                            <property role="3cmrfH" value="3" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2933,8 +2942,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="1JTgXSYQU3T" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="1JTgXSYQU43" role="28ntcv">
-                          <property role="3cmrfH" value="2" />
+                        <node concept="WxPPo" id="uuJ7IpZtxX" role="28ntcv">
+                          <node concept="3cmrfG" id="1JTgXSYQU43" role="WxPPp">
+                            <property role="3cmrfH" value="2" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3060,8 +3071,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="1JTgXSYTOFU" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="1JTgXSYTOG4" role="28ntcv">
-                          <property role="3cmrfH" value="-1" />
+                        <node concept="WxPPo" id="uuJ7IpZtxY" role="28ntcv">
+                          <node concept="3cmrfG" id="1JTgXSYTOG4" role="WxPPp">
+                            <property role="3cmrfH" value="-1" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3095,8 +3108,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="1JTgXSYTOYq" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="1JTgXSYTOY$" role="28ntcv">
-                          <property role="3cmrfH" value="-1" />
+                        <node concept="WxPPo" id="uuJ7IpZtxZ" role="28ntcv">
+                          <node concept="3cmrfG" id="1JTgXSYTOY$" role="WxPPp">
+                            <property role="3cmrfH" value="-1" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3139,8 +3154,10 @@
                     <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                     <node concept="2pJxcG" id="6q$NxWf2Knd" role="2pJxcM">
                       <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                      <node concept="3cmrfG" id="6q$NxWf2Kne" role="28ntcv">
-                        <property role="3cmrfH" value="20" />
+                      <node concept="WxPPo" id="uuJ7IpZty0" role="28ntcv">
+                        <node concept="3cmrfG" id="6q$NxWf2Kne" role="WxPPp">
+                          <property role="3cmrfH" value="20" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -3208,8 +3225,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="6q$NxWf2JuA" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="6q$NxWf2JuM" role="28ntcv">
-                          <property role="3cmrfH" value="-10" />
+                        <node concept="WxPPo" id="uuJ7IpZty1" role="28ntcv">
+                          <node concept="3cmrfG" id="6q$NxWf2JuM" role="WxPPp">
+                            <property role="3cmrfH" value="-10" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3231,8 +3250,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="6q$NxWf2Jxf" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="6q$NxWf2Jxg" role="28ntcv">
-                          <property role="3cmrfH" value="10" />
+                        <node concept="WxPPo" id="uuJ7IpZty2" role="28ntcv">
+                          <node concept="3cmrfG" id="6q$NxWf2Jxg" role="WxPPp">
+                            <property role="3cmrfH" value="10" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3266,8 +3287,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="6q$NxWf2K6f" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="6q$NxWf2K6r" role="28ntcv">
-                          <property role="3cmrfH" value="10" />
+                        <node concept="WxPPo" id="uuJ7IpZty3" role="28ntcv">
+                          <node concept="3cmrfG" id="6q$NxWf2K6r" role="WxPPp">
+                            <property role="3cmrfH" value="10" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3289,8 +3312,10 @@
                       <ref role="2pJxaS" to="b0gq:7eOyx9r3kR6" resolve="IntegerExponent" />
                       <node concept="2pJxcG" id="6q$NxWf2K6E" role="2pJxcM">
                         <ref role="2pJxcJ" to="b0gq:7eOyx9r3kR7" resolve="value" />
-                        <node concept="3cmrfG" id="6q$NxWf2K6F" role="28ntcv">
-                          <property role="3cmrfH" value="-20" />
+                        <node concept="WxPPo" id="uuJ7IpZty4" role="28ntcv">
+                          <node concept="3cmrfG" id="6q$NxWf2K6F" role="WxPPp">
+                            <property role="3cmrfH" value="-20" />
+                          </node>
                         </node>
                       </node>
                     </node>
