@@ -142,6 +142,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -503,8 +506,10 @@
                               <ref role="2pJxaS" to="tuf9:6zaFu4oS_ac" resolve="FoundWordAssResult" />
                               <node concept="2pJxcG" id="6zaFu4oSJ0n" role="2pJxcM">
                                 <ref role="2pJxcJ" to="tuf9:6zaFu4oS_bz" resolve="position" />
-                                <node concept="37vLTw" id="6zaFu4oSJ70" role="28ntcv">
-                                  <ref role="3cqZAo" node="6zaFu4oSGXp" resolve="pos" />
+                                <node concept="WxPPo" id="uuJ7IpZtxc" role="28ntcv">
+                                  <node concept="37vLTw" id="6zaFu4oSJ70" role="WxPPp">
+                                    <ref role="3cqZAo" node="6zaFu4oSGXp" resolve="pos" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="6zaFu4oSJiP" role="2pJxcM">
@@ -587,8 +592,10 @@
                                   <ref role="2pJxaS" to="tuf9:6zaFu4oS_ac" resolve="FoundWordAssResult" />
                                   <node concept="2pJxcG" id="lp3OKvgbMl" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tuf9:6zaFu4oS_bz" resolve="position" />
-                                    <node concept="37vLTw" id="lp3OKvg$Pi" role="28ntcv">
-                                      <ref role="3cqZAo" node="lp3OKvgaSY" resolve="aliasPos" />
+                                    <node concept="WxPPo" id="uuJ7IpZtxd" role="28ntcv">
+                                      <node concept="37vLTw" id="lp3OKvg$Pi" role="WxPPp">
+                                        <ref role="3cqZAo" node="lp3OKvgaSY" resolve="aliasPos" />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="2pIpSj" id="lp3OKvgbMn" role="2pJxcM">
@@ -601,8 +608,10 @@
                                   </node>
                                   <node concept="2pJxcG" id="lp3OKvgbY5" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tuf9:lp3OKvg8mt" resolve="foundAlias" />
-                                    <node concept="37vLTw" id="lp3OKvgc3f" role="28ntcv">
-                                      <ref role="3cqZAo" node="lp3OKvgaNr" resolve="t" />
+                                    <node concept="WxPPo" id="uuJ7IpZtxe" role="28ntcv">
+                                      <node concept="37vLTw" id="lp3OKvgc3f" role="WxPPp">
+                                        <ref role="3cqZAo" node="lp3OKvgaNr" resolve="t" />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="2pIpSj" id="lp3OKvgbMq" role="2pJxcM">
