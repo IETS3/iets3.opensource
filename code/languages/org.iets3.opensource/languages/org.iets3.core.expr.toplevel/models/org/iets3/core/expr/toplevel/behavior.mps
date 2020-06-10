@@ -9192,7 +9192,7 @@
         <node concept="3clFbF" id="6WstIz8ML9X" role="3cqZAp">
           <node concept="3cpWs3" id="6WstIz8MLa0" role="3clFbG">
             <node concept="Xl_RD" id="6WstIz8MLa1" role="3uHU7B">
-              <property role="Xl_RC" value="isOneOf" />
+              <property role="Xl_RC" value="isIn" />
             </node>
             <node concept="2OqwBi" id="6WstIz8MLa2" role="3uHU7w">
               <node concept="2OqwBi" id="6WstIz8MLa3" role="2Oq$k0">
