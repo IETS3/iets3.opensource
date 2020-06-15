@@ -231,14 +231,6 @@
       <node concept="2iRfu4" id="3nGzaxURa4P" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3nGzaxUXsgf">
-    <property role="3GE5qa" value="range" />
-    <ref role="1XX52x" to="mi3w:3nGzaxUXsfN" resolve="DiscreteDateRangeType" />
-    <node concept="3F0ifn" id="3nGzaxUXsgh" role="2wV5jI">
-      <property role="3F0ifm" value="daterange" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3nGzaxUXsgI">
     <property role="3GE5qa" value="range.literals" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXsgj" resolve="YearRangeLiteral" />
@@ -261,27 +253,11 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="3nGzaxUXRjW">
-    <property role="3GE5qa" value="range.literals" />
-    <ref role="1XX52x" to="mi3w:3nGzaxUXNiV" resolve="YearRangeType" />
-    <node concept="3F0ifn" id="3nGzaxUXRjY" role="2wV5jI">
-      <property role="3F0ifm" value="year" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3nGzaxUXXmA">
     <property role="3GE5qa" value="range.toDate" />
     <ref role="1XX52x" to="mi3w:3nGzaxUXXmc" resolve="EndOp" />
     <node concept="3F0ifn" id="3nGzaxUXXmC" role="2wV5jI">
       <property role="3F0ifm" value="end" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1Mp62pP0lGR">
-    <property role="3GE5qa" value="range.literals" />
-    <ref role="1XX52x" to="mi3w:1Mp62pP0lGq" resolve="MonthRangeType" />
-    <node concept="3F0ifn" id="1Mp62pP0lGW" role="2wV5jI">
-      <property role="3F0ifm" value="month" />
-      <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
   <node concept="24kQdi" id="1Mp62pP0lNo">
@@ -508,8 +484,8 @@
   <node concept="24kQdi" id="7khFtBHJr35">
     <property role="3GE5qa" value="range" />
     <ref role="1XX52x" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
-    <node concept="3F0ifn" id="7khFtBHJr37" role="2wV5jI">
-      <property role="3F0ifm" value="period" />
+    <node concept="PMmxH" id="6_h5k3JBbBp" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
     </node>
   </node>
