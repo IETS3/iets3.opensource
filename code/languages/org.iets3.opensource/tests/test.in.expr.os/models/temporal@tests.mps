@@ -206,6 +206,9 @@
         <child id="5772589292323039890" name="pointInTime" index="FfN7M" />
         <child id="5772589292323039892" name="value" index="FfN7O" />
       </concept>
+      <concept id="1090788908805532637" name="org.iets3.core.expr.temporal.structure.WithinOp" flags="ng" index="2Pqm_A">
+        <child id="1090788908805532638" name="timespan" index="2Pqm__" />
+      </concept>
       <concept id="1083030003003582645" name="org.iets3.core.expr.temporal.structure.ReduceStrategySum" flags="ng" index="2X6tET" />
       <concept id="5177002969018979140" name="org.iets3.core.expr.temporal.structure.AlwaysExpression" flags="ng" index="YnbI1">
         <child id="5177002969018979144" name="value" index="YnbId" />
@@ -1525,6 +1528,7 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="WzgFIUG8Nj" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErc5g" role="_iOnB" />
     <node concept="_fkuM" id="7aRvJQErc5h" role="_iOnB">
       <property role="TrG5h" value="TestSlicing" />
@@ -1847,6 +1851,102 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="WzgFIUGaIk" role="_iOnB" />
+    <node concept="2zPypq" id="WzgFIUG9d8" role="_iOnB">
+      <property role="TrG5h" value="y" />
+      <node concept="1f6kyV" id="WzgFIUG9qi" role="2zPyp_">
+        <node concept="30bXRB" id="WzgFIUG9ri" role="1f6kyW">
+          <property role="30bXRw" value="2020" />
+        </node>
+      </node>
+    </node>
+    <node concept="2zPypq" id="WzgFIUGbyi" role="_iOnB">
+      <property role="TrG5h" value="val" />
+      <property role="0Rz4W" value="-1015962980" />
+      <node concept="FfN7I" id="WzgFIUGbyj" role="2zPyp_">
+        <node concept="FfN7L" id="WzgFIUGbyk" role="FfN64">
+          <node concept="30bXRB" id="WzgFIUGbyl" role="FfN7O">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="1fc2QT" id="WzgFIUGeo1" role="FfN7M">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="01" />
+            <property role="1fc2QW" value="01" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="WzgFIUGbyn" role="FfN64">
+          <node concept="1fc2QT" id="WzgFIUGl9X" role="FfN7M">
+            <property role="1fc2QY" value="2019" />
+            <property role="1fc2QX" value="02" />
+            <property role="1fc2QW" value="10" />
+          </node>
+          <node concept="30bXRB" id="WzgFIUGbyp" role="FfN7O">
+            <property role="30bXRw" value="20" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="WzgFIUHeOY" role="FfN64">
+          <node concept="1fc2QT" id="WzgFIUHeOZ" role="FfN7M">
+            <property role="1fc2QY" value="2020" />
+            <property role="1fc2QX" value="03" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="WzgFIUHeP0" role="FfN7O">
+            <property role="30bXRw" value="30" />
+          </node>
+        </node>
+        <node concept="FfN7L" id="WzgFIUGbyt" role="FfN64">
+          <node concept="1fc2QT" id="WzgFIUGxLg" role="FfN7M">
+            <property role="1fc2QY" value="2021" />
+            <property role="1fc2QX" value="03" />
+            <property role="1fc2QW" value="01" />
+          </node>
+          <node concept="30bXRB" id="WzgFIUGbyv" role="FfN7O">
+            <property role="30bXRw" value="40" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="WzgFIUGaVi" role="_iOnB" />
+    <node concept="_fkuM" id="WzgFIUGL7P" role="_iOnB">
+      <property role="TrG5h" value="within" />
+      <node concept="_fkuZ" id="WzgFIUGLl3" role="_fkp5">
+        <node concept="_fku$" id="WzgFIUGLl4" role="_fkur" />
+        <node concept="1QScDb" id="WzgFIUGLlS" role="_fkuY">
+          <node concept="2Pqm_A" id="WzgFIUGNV$" role="1QScD9">
+            <node concept="_emDc" id="WzgFIUGQxs" role="2Pqm__">
+              <ref role="_emDf" node="WzgFIUG9d8" resolve="y" />
+            </node>
+          </node>
+          <node concept="_emDc" id="WzgFIUGLlp" role="30czhm">
+            <ref role="_emDf" node="WzgFIUGbyi" resolve="val" />
+          </node>
+        </node>
+        <node concept="FfN7I" id="WzgFIUGT8b" role="_fkuS">
+          <node concept="FfN7L" id="WzgFIUGT8l" role="FfN64">
+            <node concept="1fc2QT" id="WzgFIUGT8k" role="FfN7M">
+              <property role="1fc2QY" value="2020" />
+              <property role="1fc2QX" value="01" />
+              <property role="1fc2QW" value="01" />
+            </node>
+            <node concept="30bXRB" id="WzgFIUGT9s" role="FfN7O">
+              <property role="30bXRw" value="20" />
+            </node>
+          </node>
+          <node concept="FfN7L" id="WzgFIUHpbO" role="FfN64">
+            <node concept="1fc2QT" id="WzgFIUHpbP" role="FfN7M">
+              <property role="1fc2QY" value="2020" />
+              <property role="1fc2QX" value="03" />
+              <property role="1fc2QW" value="01" />
+            </node>
+            <node concept="30bXRB" id="WzgFIUHpbQ" role="FfN7O">
+              <property role="30bXRw" value="30" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="WzgFIUGb8h" role="_iOnB" />
+    <node concept="_ixoA" id="WzgFIUGblh" role="_iOnB" />
     <node concept="_ixoA" id="7aRvJQErc5i" role="_iOnB" />
     <node concept="2zPypq" id="7aRvJQErc5j" role="_iOnB">
       <property role="TrG5h" value="date06" />

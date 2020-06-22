@@ -3639,5 +3639,58 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="WzgFIUiz31">
+    <property role="TrG5h" value="typeof_WithinOp" />
+    <property role="3GE5qa" value="reslice" />
+    <node concept="3clFbS" id="WzgFIUiz32" role="18ibNy">
+      <node concept="1Z5TYs" id="WzgFIUizCM" role="3cqZAp">
+        <node concept="mw_s8" id="WzgFIUizCN" role="1ZfhKB">
+          <node concept="1Z2H0r" id="WzgFIUizCO" role="mwGJk">
+            <node concept="2OqwBi" id="WzgFIUizCP" role="1Z2MuG">
+              <node concept="1YBJjd" id="WzgFIUizRr" role="2Oq$k0">
+                <ref role="1YBMHb" node="WzgFIUiz34" resolve="withinOp" />
+              </node>
+              <node concept="2qgKlT" id="WzgFIUizCR" role="2OqNvi">
+                <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="WzgFIUizCS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="WzgFIUizCT" role="mwGJk">
+            <node concept="1YBJjd" id="WzgFIUizLE" role="1Z2MuG">
+              <ref role="1YBMHb" node="WzgFIUiz34" resolve="withinOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="WzgFIUi_56" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="WzgFIUi_5U" role="1ZfhKB">
+          <node concept="2pJPEk" id="WzgFIUi_5Q" role="mwGJk">
+            <node concept="2pJPED" id="WzgFIUi_65" role="2pJPEn">
+              <ref role="2pJxaS" to="mi3w:7khFtBHJqPn" resolve="PeriodType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="WzgFIUi_59" role="1ZfhK$">
+          <node concept="1Z2H0r" id="WzgFIUizJk" role="mwGJk">
+            <node concept="2OqwBi" id="WzgFIUi$tI" role="1Z2MuG">
+              <node concept="1YBJjd" id="WzgFIUizWz" role="2Oq$k0">
+                <ref role="1YBMHb" node="WzgFIUiz34" resolve="withinOp" />
+              </node>
+              <node concept="3TrEf2" id="WzgFIUi$LF" role="2OqNvi">
+                <ref role="3Tt5mk" to="l462:WzgFIUiyJu" resolve="timespan" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="WzgFIUiz34" role="1YuTPh">
+      <property role="TrG5h" value="withinOp" />
+      <ref role="1YaFvo" to="l462:WzgFIUiyJt" resolve="WithinOp" />
+    </node>
+  </node>
 </model>
 

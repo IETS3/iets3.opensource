@@ -516,5 +516,19 @@
       <ref role="2wpffI" node="3nGzaxUt$07" />
     </node>
   </node>
+  <node concept="1TIwiD" id="WzgFIUiyJt">
+    <property role="EcuMT" value="1090788908805532637" />
+    <property role="3GE5qa" value="reslice" />
+    <property role="TrG5h" value="WithinOp" />
+    <property role="34LRSv" value="within" />
+    <ref role="1TJDcQ" node="50smQ1Vcw3K" resolve="AbstractTemporalOp" />
+    <node concept="1TJgyj" id="WzgFIUiyJu" role="1TKVEi">
+      <property role="IQ2ns" value="1090788908805532638" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="timespan" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

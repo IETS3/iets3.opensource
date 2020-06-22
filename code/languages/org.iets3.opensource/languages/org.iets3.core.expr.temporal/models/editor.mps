@@ -825,5 +825,33 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="WzgFIUiyUU">
+    <property role="3GE5qa" value="reslice" />
+    <ref role="1XX52x" to="l462:WzgFIUiyJt" resolve="WithinOp" />
+    <node concept="3EZMnI" id="WzgFIUiyUW" role="2wV5jI">
+      <node concept="2iRfu4" id="WzgFIUiyUX" role="2iSdaV" />
+      <node concept="3F0ifn" id="WzgFIUiyUY" role="3EZMnx">
+        <property role="3F0ifm" value="within" />
+      </node>
+      <node concept="3F0ifn" id="WzgFIUiyUZ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="WzgFIUiyV0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="WzgFIUiyV1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="WzgFIUiyVe" role="3EZMnx">
+        <ref role="1NtTu8" to="l462:WzgFIUiyJu" resolve="timespan" />
+      </node>
+      <node concept="3F0ifn" id="WzgFIUiyVf" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="WzgFIUiyVg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
