@@ -2782,6 +2782,17 @@
         <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
       </node>
     </node>
+    <node concept="312cEg" id="2ns1RQROtRn" role="jymVt">
+      <property role="TrG5h" value="coverage" />
+      <node concept="3Tm1VV" id="2ns1RQROtsL" role="1B3o_S" />
+      <node concept="3uibUv" id="2ns1RQROtMq" role="1tU5fm">
+        <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+      </node>
+      <node concept="2AHcQZ" id="2ns1RQRWQHP" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="10Nm6u" id="2ns1RQRWQTf" role="33vP2m" />
+    </node>
     <node concept="2tJIrI" id="ub9nkyOIgy" role="jymVt" />
     <node concept="3clFbW" id="ub9nkyOIi7" role="jymVt">
       <node concept="3cqZAl" id="ub9nkyOIi9" role="3clF45" />
