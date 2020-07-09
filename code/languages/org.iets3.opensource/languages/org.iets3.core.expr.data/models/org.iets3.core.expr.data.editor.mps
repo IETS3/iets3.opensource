@@ -5,6 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,6 +36,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -185,6 +187,17 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
+        <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
+        <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
+        <child id="1140524464360" name="cellLayout" index="2czzBy" />
+        <child id="6202678563380433923" name="query" index="sbcd9" />
+        <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
+      </concept>
+      <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
@@ -811,6 +824,36 @@
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" to="itrz:7D7uZV2g_XJ" resolve="iets3Type" />
+        </node>
+      </node>
+    </node>
+    <node concept="s8t4o" id="5fgqbVOZ7vB" role="6VMZX">
+      <property role="28Zw97" value="true" />
+      <ref role="28F8cf" to="e9k1:cPLa7Fpiy9" resolve="DataRow" />
+      <node concept="xShMh" id="5fgqbVOZ7vD" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="s8sZD" id="5fgqbVOZ7vE" role="sbcd9">
+        <node concept="3clFbS" id="5fgqbVOZ7vF" role="2VODD2">
+          <node concept="3clFbF" id="5fgqbVOZ7vG" role="3cqZAp">
+            <node concept="2OqwBi" id="5fgqbVOZ8Hg" role="3clFbG">
+              <node concept="2OqwBi" id="5fgqbVOZ7YJ" role="2Oq$k0">
+                <node concept="pncrf" id="5fgqbVOZ7Ih" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5P_DN2HI9c8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="e9k1:cPLa7Fs1QU" resolve="table" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="5P_DN2HIaf8" role="2OqNvi">
+                <ref role="3TtcxE" to="e9k1:cPLa7FpRVO" resolve="rows" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="5fgqbVOZ9Vi" role="2czzBy" />
+      <node concept="1yz3lS" id="5P_DN2HInKO" role="1yzFaX">
+        <node concept="3F0A7n" id="5P_DN2HInN5" role="2wV5jI">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
