@@ -1273,7 +1273,26 @@
           </node>
         </node>
         <node concept="30bXRB" id="3OpwUNI11O2" role="_fkuS">
-          <property role="30bXRw" value="3.0000000000000003" />
+          <property role="30bXRw" value="3.0000000000000000" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4ZUWxH0DWAq" role="_fkp5">
+        <node concept="_fku$" id="4ZUWxH0DWAr" role="_fkur" />
+        <node concept="30dDTi" id="4ZUWxH0DWBV" role="_fkuY">
+          <node concept="30bXRB" id="4ZUWxH0DWB5" role="30dEsF">
+            <property role="30bXRw" value="3.0" />
+          </node>
+          <node concept="a1tim" id="4ZUWxH0DWED" role="30dEs_">
+            <node concept="30bXRB" id="4ZUWxH0DWF9" role="a1tin">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="4ZUWxH0DWFG" role="a1tiq">
+              <property role="30bXRw" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="4ZUWxH0DWJV" role="_fkuS">
+          <property role="30bXRw" value="1.0" />
         </node>
       </node>
     </node>
