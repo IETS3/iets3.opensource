@@ -1572,8 +1572,8 @@
         </node>
       </node>
       <node concept="2pJPEk" id="50kkvMT07D2" role="3ciSnv">
-        <node concept="2pJPED" id="75H2zAHxY45" role="2pJPEn">
-          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+        <node concept="2pJPED" id="7w1s6DBu9cW" role="2pJPEn">
+          <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
         </node>
       </node>
     </node>

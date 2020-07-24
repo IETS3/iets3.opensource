@@ -2153,6 +2153,77 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="7w1s6DBtDix" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="1qv1:4iu6t1eB654" resolve="PowerExpression" />
+      <node concept="qpFDx" id="7w1s6DBtDiy" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+        <node concept="rxStX" id="7w1s6DBtDiz" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="7w1s6DBtDi$" role="3vbI0w">
+        <ref role="qpFD$" to="1qv1:4r1mNB_o5WJ" resolve="exponent" />
+        <node concept="rxStX" id="7w1s6DBtDi_" role="rajlz">
+          <ref role="rxSuV" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+        </node>
+      </node>
+      <node concept="3dA_Gj" id="7w1s6DBtDiA" role="3vQZUl">
+        <node concept="9aQIb" id="7w1s6DBtDiB" role="3vcmbn">
+          <node concept="3clFbS" id="7w1s6DBtDiC" role="9aQI4">
+            <node concept="3cpWs8" id="7w1s6DBtDiD" role="3cqZAp">
+              <node concept="3cpWsn" id="7w1s6DBtDiE" role="3cpWs9">
+                <property role="TrG5h" value="base" />
+                <node concept="3uibUv" id="7w1s6DBtDiF" role="1tU5fm">
+                  <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                </node>
+                <node concept="rqRoa" id="7w1s6DBtDiG" role="33vP2m">
+                  <ref role="rqRob" to="1qv1:4iu6t1eBdVy" resolve="expr" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7w1s6DBtDiH" role="3cqZAp">
+              <node concept="3cpWsn" id="7w1s6DBtDiI" role="3cpWs9">
+                <property role="TrG5h" value="exp" />
+                <node concept="3uibUv" id="7w1s6DBtJPG" role="1tU5fm">
+                  <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                </node>
+                <node concept="rqRoa" id="7w1s6DBtDiK" role="33vP2m">
+                  <ref role="rqRob" to="1qv1:4r1mNB_o5WJ" resolve="exponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7w1s6DBu1LQ" role="3cqZAp">
+              <node concept="2ShNRf" id="7w1s6DBu1Mz" role="3cqZAk">
+                <node concept="1pGfFk" id="7w1s6DBu5Jd" role="2ShVmc">
+                  <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                  <node concept="2YIFZM" id="7w1s6DBtYSI" role="37wK5m">
+                    <ref role="37wK5l" to="wyt6:~Math.pow(double,double)" resolve="pow" />
+                    <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                    <node concept="2OqwBi" id="7w1s6DBtQyu" role="37wK5m">
+                      <node concept="37vLTw" id="7w1s6DBtOTl" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7w1s6DBtDiE" resolve="base" />
+                      </node>
+                      <node concept="liA8E" id="7w1s6DBtS01" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7w1s6DBtZrD" role="37wK5m">
+                      <node concept="37vLTw" id="7w1s6DBtZ9P" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7w1s6DBtDiI" resolve="exp" />
+                      </node>
+                      <node concept="liA8E" id="7w1s6DBtZH8" role="2OqNvi">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.doubleValue()" resolve="doubleValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="qq9P1" id="1yW0h03PrW8" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="1qv1:4iu6t1eAWP6" resolve="FractionExpression" />
