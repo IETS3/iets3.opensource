@@ -162,9 +162,13 @@
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
+      <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
+      </concept>
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
@@ -197,9 +201,14 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -392,6 +401,29 @@
                 <node concept="30H73N" id="hSUyPgT" role="2Oq$k0" />
                 <node concept="2qgKlT" id="hSUyRco" role="2OqNvi">
                   <ref role="37wK5l" to="tpe5:hGB2z8L" resolve="getTestSet" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1KW_t94KHNV" role="2AJF6D">
+        <ref role="2AI5Lk" to="rjhg:~Ignore" resolve="Ignore" />
+        <node concept="1W57fq" id="1KW_t94KJDD" role="lGtFl">
+          <node concept="3IZrLx" id="1KW_t94KJDE" role="3IZSJc">
+            <node concept="3clFbS" id="1KW_t94KJDF" role="2VODD2">
+              <node concept="3clFbF" id="1KW_t94KJHQ" role="3cqZAp">
+                <node concept="2OqwBi" id="1KW_t94KLm8" role="3clFbG">
+                  <node concept="1PxgMI" id="1KW_t94KKPO" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="1KW_t94KKUY" role="3oSUPX">
+                      <ref role="cht4Q" to="av4b:78hTg1$THIw" resolve="AbstractTestItem" />
+                    </node>
+                    <node concept="30H73N" id="1KW_t94KJHP" role="1m5AlR" />
+                  </node>
+                  <node concept="3TrcHB" id="1KW_t94KRME" role="2OqNvi">
+                    <ref role="3TsBF5" to="av4b:48NC6VzSNLv" resolve="isIgnored" />
+                  </node>
                 </node>
               </node>
             </node>
