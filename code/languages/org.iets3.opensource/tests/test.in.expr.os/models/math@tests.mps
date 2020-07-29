@@ -2485,7 +2485,7 @@
           </node>
         </node>
         <node concept="30bXRB" id="7w1s6DBwblu" role="_fkuS">
-          <property role="30bXRw" value="2.6390158215457883983390274806879460811614990234375" />
+          <property role="30bXRw" value="2.6390158215457883" />
         </node>
       </node>
       <node concept="_fkuZ" id="7w1s6DBwrww" role="_fkp5">
