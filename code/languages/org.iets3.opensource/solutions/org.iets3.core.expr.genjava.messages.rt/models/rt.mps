@@ -174,6 +174,9 @@
       <node concept="3uibUv" id="4ZjVa_SLHrY" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
       </node>
+      <node concept="3uibUv" id="44k86jEVdax" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+      </node>
     </node>
     <node concept="2tJIrI" id="55imU6w9Xkk" role="jymVt" />
     <node concept="312cEu" id="55imU6w9SGl" role="jymVt">
@@ -275,6 +278,9 @@
       <node concept="3uibUv" id="55imU6w9SWq" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
       </node>
+      <node concept="3uibUv" id="44k86jEVdyw" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+      </node>
     </node>
     <node concept="2tJIrI" id="55imU6wacrY" role="jymVt" />
     <node concept="312cEu" id="55imU6wacHt" role="jymVt">
@@ -372,6 +378,9 @@
       <node concept="3Tm1VV" id="55imU6wacA8" role="1B3o_S" />
       <node concept="3uibUv" id="55imU6wacPC" role="EKbjA">
         <ref role="3uigEE" node="55imU6w9RYW" resolve="MessageKind" />
+      </node>
+      <node concept="3uibUv" id="44k86jEVdV_" role="EKbjA">
+        <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
       </node>
     </node>
     <node concept="2tJIrI" id="4ZjVa_SLHSt" role="jymVt" />
@@ -478,6 +487,9 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="55imU6w9XcW" role="1B3o_S" />
+    <node concept="3uibUv" id="44k86jEVwnX" role="EKbjA">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+    </node>
   </node>
   <node concept="312cEu" id="4NeJNX_xLh$">
     <property role="TrG5h" value="Message" />
@@ -1168,6 +1180,9 @@
       <node concept="2AHcQZ" id="65vXeyMqsio" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="3uibUv" id="44k86jEV8UF" role="EKbjA">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
     </node>
   </node>
 </model>
