@@ -108,7 +108,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -487,9 +489,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="55imU6w9XcW" role="1B3o_S" />
-    <node concept="3uibUv" id="44k86jEVwnX" role="EKbjA">
-      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
-    </node>
   </node>
   <node concept="312cEu" id="4NeJNX_xLh$">
     <property role="TrG5h" value="Message" />
@@ -1071,6 +1070,9 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="55imU6w9RLp" role="1B3o_S" />
+    <node concept="3uibUv" id="1pEigwJ6D4o" role="3HQHJm">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+    </node>
   </node>
   <node concept="312cEu" id="65vXeyMqhK2">
     <property role="TrG5h" value="ProgramLocation" />
