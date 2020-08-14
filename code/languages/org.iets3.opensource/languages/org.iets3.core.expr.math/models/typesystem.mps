@@ -729,8 +729,8 @@
       <node concept="1ZobV4" id="5mz5Tt_iq0D" role="3cqZAp">
         <node concept="mw_s8" id="5mz5Tt_iq11" role="1ZfhKB">
           <node concept="2pJPEk" id="5mz5Tt_iq0X" role="mwGJk">
-            <node concept="2pJPED" id="5mz5Tt_iq1c" role="2pJPEn">
-              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+            <node concept="2pJPED" id="lj2MdoO6TI" role="2pJPEn">
+              <ref role="2pJxaS" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
             </node>
           </node>
         </node>
