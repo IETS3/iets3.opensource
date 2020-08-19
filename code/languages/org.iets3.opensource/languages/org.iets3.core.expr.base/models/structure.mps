@@ -2114,5 +2114,29 @@
     <property role="EcuMT" value="5032482955834438679" />
     <property role="TrG5h" value="IAllowDotOnLeft" />
   </node>
+  <node concept="1TIwiD" id="3nVyItrZk9z">
+    <property role="EcuMT" value="3889855429449957987" />
+    <property role="TrG5h" value="HasValueOp" />
+    <property role="34LRSv" value="hasValue" />
+    <property role="3GE5qa" value="nix" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3nVyItrZk9$" role="PzmwI">
+      <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3nVyItrZBN9">
+    <property role="EcuMT" value="3889855429450038473" />
+    <property role="3GE5qa" value="nix" />
+    <property role="TrG5h" value="EmptyValue" />
+    <property role="34LRSv" value="empty" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="3nVyItrZBNa" role="1TKVEi">
+      <property role="IQ2ns" value="3889855429450038474" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+  </node>
 </model>
 
