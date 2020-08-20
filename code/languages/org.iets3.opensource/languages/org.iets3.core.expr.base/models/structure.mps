@@ -2123,6 +2123,9 @@
     <node concept="PrWs8" id="3nVyItrZk9$" role="PzmwI">
       <ref role="PrY4T" node="7NJy08a3O9a" resolve="IDotTarget" />
     </node>
+    <node concept="PrWs8" id="26cjRADiqCi" role="PzmwI">
+      <ref role="PrY4T" node="26cjRADipGQ" resolve="ITargetThatCanDealWithNix" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3nVyItrZBN9">
     <property role="EcuMT" value="3889855429450038473" />
@@ -2137,6 +2140,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="26cjRADipGQ">
+    <property role="EcuMT" value="2417394483940924214" />
+    <property role="3GE5qa" value="nix" />
+    <property role="TrG5h" value="ITargetThatCanDealWithNix" />
   </node>
 </model>
 
