@@ -178,8 +178,15 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -882,6 +889,10 @@
               </node>
             </node>
             <node concept="3cpWs6" id="4O9rw8aFSPl" role="3cqZAp">
+              <node concept="15s5l7" id="4ct6YAjLmYE" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The definition of some ancestor of INixValue classifier is not visible from this module&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/8421390612612470765]&quot;;" />
+                <property role="huDt6" value="Error: The definition of some ancestor of INixValue classifier is not visible from this module" />
+              </node>
               <node concept="2ZW3vV" id="4O9rw8aFSPn" role="3cqZAk">
                 <node concept="3uibUv" id="4O9rw8aFSPo" role="2ZW6by">
                   <ref role="3uigEE" to="2j0k:4O9rw8aCYPg" resolve="EmptyDateRangeValue" />
