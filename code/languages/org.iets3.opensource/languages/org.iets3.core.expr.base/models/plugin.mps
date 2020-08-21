@@ -335,6 +335,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
@@ -656,6 +657,13 @@
       </node>
       <node concept="2AHcQZ" id="zL6B4JnVIT" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="3iq6R$ZyJbu" role="lGtFl">
+      <node concept="TZ5HA" id="3iq6R$ZyJbv" role="TZ5H$">
+        <node concept="1dT_AC" id="3iq6R$ZyJbw" role="1dT_Ay">
+          <property role="1dT_AB" value="Represents 'none' value of an optional type." />
+        </node>
       </node>
     </node>
   </node>
@@ -13198,7 +13206,7 @@
     <property role="3GE5qa" value="primitiveTypes" />
     <node concept="2tJIrI" id="26cjRACVPUa" role="jymVt" />
     <node concept="3clFb_" id="26cjRACVOAj" role="jymVt">
-      <property role="TrG5h" value="supportNix" />
+      <property role="TrG5h" value="allowNix" />
       <property role="1EzhhJ" value="true" />
       <node concept="10P_77" id="26cjRACVPaf" role="3clF45" />
       <node concept="3Tm1VV" id="26cjRACVOAm" role="1B3o_S" />
@@ -13240,7 +13248,7 @@
       <ref role="3uigEE" node="26cjRACVMdy" resolve="NixHandler" />
     </node>
     <node concept="3clFb_" id="26cjRACVRCY" role="jymVt">
-      <property role="TrG5h" value="supportNix" />
+      <property role="TrG5h" value="allowNix" />
       <node concept="10P_77" id="26cjRACVRCZ" role="3clF45" />
       <node concept="3Tm1VV" id="26cjRACVRD0" role="1B3o_S" />
       <node concept="3clFbS" id="26cjRACVRD2" role="3clF47">

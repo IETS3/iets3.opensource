@@ -1098,9 +1098,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="3nVyItrZl1$">
-    <property role="3GE5qa" value="nix" />
-    <ref role="1M2myG" to="hm2y:3nVyItrZk9z" resolve="HasValueOp" />
-  </node>
 </model>
 
