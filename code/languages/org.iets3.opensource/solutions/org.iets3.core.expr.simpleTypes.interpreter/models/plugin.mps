@@ -869,7 +869,7 @@
     <node concept="lHU7p" id="3uupj5fnGqD" role="qq9xR" />
     <node concept="qq9P1" id="3UyUcqtmjQo" role="qq9xR">
       <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
+      <ref role="qq9wM" to="5qo5:3UyUcqtl81P" resolve="StringToIntTarget" />
       <node concept="3dA_Gj" id="3UyUcqtmp04" role="3vQZUl">
         <node concept="9aQIb" id="3UyUcqtmp05" role="3vcmbn">
           <node concept="3clFbS" id="3UyUcqtmp06" role="9aQI4">
@@ -2180,8 +2180,8 @@
                   <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
                   <node concept="2OqwBi" id="uGVYUijj5H" role="37wK5m">
                     <node concept="oxGPV" id="uGVYUijj39" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="uGVYUijjd3" role="2OqNvi">
-                      <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                    <node concept="2qgKlT" id="2oUyrt$SwFJ" role="2OqNvi">
+                      <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                     </node>
                   </node>
                 </node>

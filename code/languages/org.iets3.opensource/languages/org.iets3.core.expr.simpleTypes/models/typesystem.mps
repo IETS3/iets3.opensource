@@ -346,8 +346,8 @@
                   <node concept="1YBJjd" id="3p6$WoErP8r" role="2Oq$k0">
                     <ref role="1YBMHb" node="4rZeNQ6OhNR" resolve="l" />
                   </node>
-                  <node concept="3TrcHB" id="3p6$WoErPCD" role="2OqNvi">
-                    <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                  <node concept="2qgKlT" id="2oUyrt$Sr5Q" role="2OqNvi">
+                    <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                   </node>
                 </node>
               </node>

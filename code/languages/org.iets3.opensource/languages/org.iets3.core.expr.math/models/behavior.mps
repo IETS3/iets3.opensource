@@ -22,6 +22,7 @@
     <import index="e1fw" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.analysis.polynomials(org.apache.commons/)" />
     <import index="zl0b" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.analysis(org.apache.commons/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1380,8 +1381,8 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="3iWt5egCKvF" role="2OqNvi">
-                          <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                        <node concept="2qgKlT" id="2oUyrt$REP4" role="2OqNvi">
+                          <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                         </node>
                       </node>
                     </node>
@@ -1420,8 +1421,8 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="3iWt5egCQEs" role="2OqNvi">
-                          <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                        <node concept="2qgKlT" id="2oUyrt$RFiQ" role="2OqNvi">
+                          <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                         </node>
                       </node>
                     </node>

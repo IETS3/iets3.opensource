@@ -1123,6 +1123,16 @@
       <node concept="3Tm1VV" id="2q0DACtKs0c" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2q0DACtJfg1" role="jymVt" />
+    <node concept="3clFb_" id="2oUyrt$Q$EB" role="jymVt">
+      <property role="TrG5h" value="useCommaInsteadOfDotForDecimals" />
+      <node concept="10P_77" id="2oUyrt$QEPF" role="3clF45" />
+      <node concept="3Tm1VV" id="2oUyrt$Q$ED" role="1B3o_S" />
+      <node concept="3clFbS" id="2oUyrt$Q$EE" role="3clF47">
+        <node concept="3clFbF" id="2oUyrt$QEi0" role="3cqZAp">
+          <node concept="3clFbT" id="2oUyrt$QEhZ" role="3clFbG" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="2q0DACtJfgT" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>

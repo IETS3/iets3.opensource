@@ -1087,7 +1087,25 @@
       </node>
       <node concept="3Tqbb2" id="7rdMSLltmVa" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="3h73ZjtTUJo" role="jymVt" />
+    <node concept="2tJIrI" id="2oUyrt$QHfG" role="jymVt" />
+    <node concept="2YIFZL" id="2oUyrt$QKcQ" role="jymVt">
+      <property role="TrG5h" value="useCommaInsteadOfDotForDecimals" />
+      <node concept="3clFbS" id="2oUyrt$Q$EE" role="3clF47">
+        <node concept="3clFbF" id="2oUyrt$QHEZ" role="3cqZAp">
+          <node concept="2OqwBi" id="2oUyrt$QI8J" role="3clFbG">
+            <node concept="1rXfSq" id="2oUyrt$QHF1" role="2Oq$k0">
+              <ref role="37wK5l" node="2Qbt$1tTQn5" resolve="resolveMapper" />
+            </node>
+            <node concept="liA8E" id="2oUyrt$QI_C" role="2OqNvi">
+              <ref role="37wK5l" to="oq0c:2oUyrt$Q$EB" resolve="useCommaInsteadOfDotForDecimals" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2oUyrt$QEPF" role="3clF45" />
+      <node concept="3Tm1VV" id="2oUyrt$Q$ED" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2oUyrt$Tbp9" role="jymVt" />
     <node concept="2tJIrI" id="2Qbt$1tTQb0" role="jymVt" />
     <node concept="3Tm1VV" id="2Qbt$1tTQaI" role="1B3o_S" />
   </node>
