@@ -91,6 +91,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -354,7 +357,18 @@
                 <node concept="2YIFZM" id="3tudP_A1AIB" role="3clFbG">
                   <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String)" resolve="parseDouble" />
                   <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
-                  <node concept="1Wqviy" id="3tudP_A1AIC" role="37wK5m" />
+                  <node concept="2OqwBi" id="5OaiG59RXOA" role="37wK5m">
+                    <node concept="1Wqviy" id="3tudP_A1AIC" role="2Oq$k0" />
+                    <node concept="liA8E" id="5OaiG59RYna" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
+                      <node concept="1Xhbcc" id="5OaiG59RYzD" role="37wK5m">
+                        <property role="1XhdNS" value="," />
+                      </node>
+                      <node concept="1Xhbcc" id="5OaiG59S07N" role="37wK5m">
+                        <property role="1XhdNS" value="." />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3tudP___AaQ" role="3cqZAp">
@@ -453,11 +467,22 @@
           </node>
           <node concept="SfApY" id="3tudP___zEh" role="3cqZAp">
             <node concept="3clFbS" id="3tudP___zEj" role="SfCbr">
-              <node concept="3clFbF" id="3tudP_A1B3H" role="3cqZAp">
-                <node concept="2YIFZM" id="3tudP_A1B3J" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String)" resolve="parseDouble" />
+              <node concept="3clFbF" id="5OaiG59S0XV" role="3cqZAp">
+                <node concept="2YIFZM" id="5OaiG59S0XW" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
-                  <node concept="1Wqviy" id="3tudP_A1B3K" role="37wK5m" />
+                  <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String)" resolve="parseDouble" />
+                  <node concept="2OqwBi" id="5OaiG59S0XX" role="37wK5m">
+                    <node concept="1Wqviy" id="5OaiG59S0XY" role="2Oq$k0" />
+                    <node concept="liA8E" id="5OaiG59S0XZ" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
+                      <node concept="1Xhbcc" id="5OaiG59S0Y0" role="37wK5m">
+                        <property role="1XhdNS" value="," />
+                      </node>
+                      <node concept="1Xhbcc" id="5OaiG59S0Y1" role="37wK5m">
+                        <property role="1XhdNS" value="." />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3tudP___A01" role="3cqZAp">

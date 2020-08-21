@@ -3216,8 +3216,8 @@
               </node>
               <node concept="liA8E" id="19PglA24WSv" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
-                <node concept="Xl_RD" id="19PglA24WSw" role="37wK5m">
-                  <property role="Xl_RC" value="." />
+                <node concept="BsUDl" id="5OaiG59RCA7" role="37wK5m">
+                  <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                 </node>
               </node>
             </node>
@@ -3264,6 +3264,31 @@
       <node concept="37vLTG" id="19PglA24TrO" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="17QB3L" id="19PglA24TrN" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5OaiG59Ryx_" role="13h7CS">
+      <property role="TrG5h" value="delimiter" />
+      <node concept="3Tm1VV" id="5OaiG59RyxA" role="1B3o_S" />
+      <node concept="17QB3L" id="5OaiG59R_b5" role="3clF45" />
+      <node concept="3clFbS" id="5OaiG59RyxC" role="3clF47">
+        <node concept="3clFbJ" id="5OaiG59R_ql" role="3cqZAp">
+          <node concept="2YIFZM" id="5OaiG59R_Fn" role="3clFbw">
+            <ref role="37wK5l" to="xfg9:2oUyrt$QKcQ" resolve="useCommaInsteadOfDotForDecimals" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+          <node concept="3clFbS" id="5OaiG59R_qn" role="3clFbx">
+            <node concept="3cpWs6" id="5OaiG59R_L1" role="3cqZAp">
+              <node concept="Xl_RD" id="5OaiG59R_LD" role="3cqZAk">
+                <property role="Xl_RC" value="," />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5OaiG59R_Rz" role="3cqZAp">
+          <node concept="Xl_RD" id="5OaiG59R_Xu" role="3cqZAk">
+            <property role="Xl_RC" value="." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="19PglA24OAE" role="13h7CS">
@@ -4101,9 +4126,9 @@
                 <ref role="3cqZAo" node="7Wa2sv412RC" resolve="dottedNumber" />
               </node>
               <node concept="liA8E" id="7Wa2sv412R5" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.indexOf(int)" resolve="indexOf" />
-                <node concept="1Xhbcc" id="7Wa2sv412R6" role="37wK5m">
-                  <property role="1XhdNS" value="." />
+                <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
+                <node concept="BsUDl" id="5OaiG59REJD" role="37wK5m">
+                  <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                 </node>
               </node>
             </node>
@@ -4123,8 +4148,8 @@
                   </node>
                   <node concept="liA8E" id="7Wa2sv412Rf" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
-                    <node concept="Xl_RD" id="7Wa2sv427Km" role="37wK5m">
-                      <property role="Xl_RC" value="\\." />
+                    <node concept="BsUDl" id="5OaiG59RFvF" role="37wK5m">
+                      <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                     </node>
                   </node>
                 </node>
@@ -4193,8 +4218,8 @@
                           <ref role="3cqZAo" node="7Wa2sv412Ra" resolve="split" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="7Wa2sv41aie" role="3uHU7w">
-                        <property role="Xl_RC" value="." />
+                      <node concept="BsUDl" id="5OaiG59RGr5" role="3uHU7w">
+                        <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                       </node>
                     </node>
                   </node>
