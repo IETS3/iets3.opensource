@@ -109,6 +109,7 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
@@ -3215,7 +3216,7 @@
                 <ref role="3cqZAo" node="19PglA24TrO" resolve="value" />
               </node>
               <node concept="liA8E" id="19PglA24WSv" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
+                <ref role="37wK5l" to="wyt6:~String.indexOf(int)" resolve="indexOf" />
                 <node concept="BsUDl" id="5OaiG59RCA7" role="37wK5m">
                   <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                 </node>
@@ -3269,7 +3270,7 @@
     <node concept="13i0hz" id="5OaiG59Ryx_" role="13h7CS">
       <property role="TrG5h" value="delimiter" />
       <node concept="3Tm1VV" id="5OaiG59RyxA" role="1B3o_S" />
-      <node concept="17QB3L" id="5OaiG59R_b5" role="3clF45" />
+      <node concept="10Pfzv" id="5OaiG59WZH5" role="3clF45" />
       <node concept="3clFbS" id="5OaiG59RyxC" role="3clF47">
         <node concept="3clFbJ" id="5OaiG59R_ql" role="3cqZAp">
           <node concept="2YIFZM" id="5OaiG59R_Fn" role="3clFbw">
@@ -3278,15 +3279,15 @@
           </node>
           <node concept="3clFbS" id="5OaiG59R_qn" role="3clFbx">
             <node concept="3cpWs6" id="5OaiG59R_L1" role="3cqZAp">
-              <node concept="Xl_RD" id="5OaiG59R_LD" role="3cqZAk">
-                <property role="Xl_RC" value="," />
+              <node concept="1Xhbcc" id="5OaiG59X4Ix" role="3cqZAk">
+                <property role="1XhdNS" value="," />
               </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs6" id="5OaiG59R_Rz" role="3cqZAp">
-          <node concept="Xl_RD" id="5OaiG59R_Xu" role="3cqZAk">
-            <property role="Xl_RC" value="." />
+          <node concept="1Xhbcc" id="5OaiG59X31n" role="3cqZAk">
+            <property role="1XhdNS" value="." />
           </node>
         </node>
       </node>
@@ -4126,7 +4127,7 @@
                 <ref role="3cqZAo" node="7Wa2sv412RC" resolve="dottedNumber" />
               </node>
               <node concept="liA8E" id="7Wa2sv412R5" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
+                <ref role="37wK5l" to="wyt6:~String.indexOf(int)" resolve="indexOf" />
                 <node concept="BsUDl" id="5OaiG59REJD" role="37wK5m">
                   <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
                 </node>
@@ -4148,8 +4149,21 @@
                   </node>
                   <node concept="liA8E" id="7Wa2sv412Rf" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
-                    <node concept="BsUDl" id="5OaiG59RFvF" role="37wK5m">
-                      <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
+                    <node concept="3K4zz7" id="5OaiG59XtCR" role="37wK5m">
+                      <node concept="Xl_RD" id="5OaiG59XuCR" role="3K4E3e">
+                        <property role="Xl_RC" value="," />
+                      </node>
+                      <node concept="Xl_RD" id="5OaiG59Xvu$" role="3K4GZi">
+                        <property role="Xl_RC" value="\\." />
+                      </node>
+                      <node concept="3clFbC" id="5OaiG59Xr03" role="3K4Cdx">
+                        <node concept="1Xhbcc" id="5OaiG59XrTC" role="3uHU7w">
+                          <property role="1XhdNS" value="," />
+                        </node>
+                        <node concept="BsUDl" id="5OaiG59XpFu" role="3uHU7B">
+                          <ref role="37wK5l" node="5OaiG59Ryx_" resolve="delimiter" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
