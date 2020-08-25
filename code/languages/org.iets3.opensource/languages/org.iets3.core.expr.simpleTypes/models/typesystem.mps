@@ -4994,5 +4994,50 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="5bvGQanjPRk">
+    <property role="TrG5h" value="typeof_StringEndsWithTarget" />
+    <property role="3GE5qa" value="string" />
+    <node concept="3clFbS" id="5bvGQanjPRl" role="18ibNy">
+      <node concept="1Z5TYs" id="5bvGQanjPRm" role="3cqZAp">
+        <node concept="mw_s8" id="5bvGQanjPRn" role="1ZfhKB">
+          <node concept="2YIFZM" id="5bvGQanjPRo" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5bvGQanjPRp" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5bvGQanjPRq" role="mwGJk">
+            <node concept="1YBJjd" id="5bvGQanjPRr" role="1Z2MuG">
+              <ref role="1YBMHb" node="5bvGQanjPR$" resolve="ewt" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="5bvGQanjPRs" role="3cqZAp">
+        <node concept="mw_s8" id="5bvGQanjPRt" role="1ZfhKB">
+          <node concept="2YIFZM" id="5bvGQanjPRu" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdA" resolve="createStringType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5bvGQanjPRv" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5bvGQanjPRw" role="mwGJk">
+            <node concept="2OqwBi" id="5bvGQanjPRx" role="1Z2MuG">
+              <node concept="1YBJjd" id="5bvGQanjPRy" role="2Oq$k0">
+                <ref role="1YBMHb" node="5bvGQanjPR$" resolve="ewt" />
+              </node>
+              <node concept="3TrEf2" id="5bvGQanjPRz" role="2OqNvi">
+                <ref role="3Tt5mk" to="5qo5:5bvGQanjMKP" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5bvGQanjPR$" role="1YuTPh">
+      <property role="TrG5h" value="ewt" />
+      <ref role="1YaFvo" to="5qo5:5bvGQanjMKN" resolve="StringEndsWithTarget" />
+    </node>
+  </node>
 </model>
 
