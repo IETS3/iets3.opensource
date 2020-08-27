@@ -117,9 +117,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -315,18 +312,6 @@
         </node>
       </node>
       <node concept="2OqwBi" id="6b_jefnVvy0" role="3actZa">
-        <node concept="2OqwBi" id="6b_jefnVvy1" role="2Oq$k0">
-          <node concept="2YIFZM" id="6b_jefnVvy2" role="2Oq$k0">
-            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-          </node>
-          <node concept="liA8E" id="6b_jefnVvy3" role="2OqNvi">
-            <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-            <node concept="3VsKOn" id="6b_jefnVvy4" role="37wK5m">
-              <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-            </node>
-          </node>
-        </node>
         <node concept="liA8E" id="6b_jefnVvy5" role="2OqNvi">
           <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
           <node concept="1eOMI4" id="4vZ65iK4QIU" role="37wK5m">
@@ -344,6 +329,10 @@
               <node concept="3Tqbb2" id="4vZ65iK4QJ0" role="10QFUM" />
             </node>
           </node>
+        </node>
+        <node concept="2YIFZM" id="7qOtjYQNOzs" role="2Oq$k0">
+          <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
         </node>
       </node>
       <node concept="3uibUv" id="4vZ65iK3PvP" role="3GGxor">

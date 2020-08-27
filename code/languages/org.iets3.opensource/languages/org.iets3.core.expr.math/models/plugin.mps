@@ -20,7 +20,6 @@
     <import index="3o3z" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.collect(de.q60.mps.libs/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
   </imports>
   <registry>
@@ -147,9 +146,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
@@ -588,19 +584,9 @@
           </node>
         </node>
         <node concept="2OqwBi" id="1yW0h04D5$r" role="geM8N">
-          <node concept="2OqwBi" id="1yW0h04D3TY" role="2Oq$k0">
-            <node concept="2OqwBi" id="1yW0h04D3oY" role="2Oq$k0">
-              <node concept="gKNx_" id="1yW0h04D39Y" role="2Oq$k0" />
-              <node concept="liA8E" id="1yW0h04D3EH" role="2OqNvi">
-                <ref role="37wK5l" to="1ne1:5tr7YH$Uyow" resolve="getProject" />
-              </node>
-            </node>
-            <node concept="liA8E" id="1yW0h04D4GS" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
-              <node concept="3VsKOn" id="1yW0h04D4Ow" role="37wK5m">
-                <ref role="3VsUkX" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
-              </node>
-            </node>
+          <node concept="2YIFZM" id="3wY4OwVbd5m" role="2Oq$k0">
+            <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+            <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
           </node>
           <node concept="liA8E" id="1yW0h04D6ee" role="2OqNvi">
             <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
