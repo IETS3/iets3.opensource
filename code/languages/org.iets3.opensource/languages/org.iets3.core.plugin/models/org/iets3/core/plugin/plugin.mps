@@ -30,7 +30,6 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -211,9 +210,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -351,39 +347,23 @@
     <property role="280Iaj" value="true" />
     <property role="3aPfAI" value="6" />
     <node concept="2OqwBi" id="6b_jefnVuY0" role="37b278">
-      <node concept="2OqwBi" id="6b_jefnVuhy" role="2Oq$k0">
-        <node concept="2YIFZM" id="6b_jefnVutA" role="2Oq$k0">
-          <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-          <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-        </node>
-        <node concept="liA8E" id="6b_jefnVuHk" role="2OqNvi">
-          <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-          <node concept="3VsKOn" id="6b_jefnVuJs" role="37wK5m">
-            <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-          </node>
-        </node>
-      </node>
       <node concept="liA8E" id="6b_jefnVvpI" role="2OqNvi">
         <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
         <node concept="35c_gC" id="6b_jefnVutB" role="37wK5m">
           <ref role="35c_gD" to="4kwy:6LfBX8Ym0Cy" resolve="IETS3DummyIcon16" />
         </node>
       </node>
+      <node concept="2YIFZM" id="7qOtjYQNQiE" role="2Oq$k0">
+        <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+        <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
+      </node>
     </node>
     <node concept="14aYG3" id="6LfBX8YgRgl" role="14aYEy">
       <property role="TrG5h" value="specModel" />
       <node concept="2OqwBi" id="6b_jefnVvy0" role="3actZa">
-        <node concept="2OqwBi" id="6b_jefnVvy1" role="2Oq$k0">
-          <node concept="2YIFZM" id="6b_jefnVvy2" role="2Oq$k0">
-            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-          </node>
-          <node concept="liA8E" id="6b_jefnVvy3" role="2OqNvi">
-            <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-            <node concept="3VsKOn" id="6b_jefnVvy4" role="37wK5m">
-              <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-            </node>
-          </node>
+        <node concept="2YIFZM" id="7qOtjYQNOzs" role="2Oq$k0">
+          <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
+          <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
         </node>
         <node concept="liA8E" id="6b_jefnVvy5" role="2OqNvi">
           <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
@@ -396,23 +376,15 @@
         <property role="TrG5h" value="root" />
         <property role="38sH__" value="true" />
         <node concept="2OqwBi" id="6b_jefnVvF0" role="3actZa">
-          <node concept="2OqwBi" id="6b_jefnVvF1" role="2Oq$k0">
-            <node concept="2YIFZM" id="6b_jefnVvF2" role="2Oq$k0">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-            </node>
-            <node concept="liA8E" id="6b_jefnVvF3" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-              <node concept="3VsKOn" id="6b_jefnVvF4" role="37wK5m">
-                <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-              </node>
-            </node>
-          </node>
           <node concept="liA8E" id="6b_jefnVvF5" role="2OqNvi">
             <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
             <node concept="14b0Wr" id="6b_jefnVvSL" role="37wK5m">
               <ref role="14b0Uw" node="1ognOHjyj2a" resolve="root" />
             </node>
+          </node>
+          <node concept="2YIFZM" id="7qOtjYQNOAj" role="2Oq$k0">
+            <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+            <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
           </node>
         </node>
         <node concept="3Tqbb2" id="1ognOHjyvau" role="3GGxor">

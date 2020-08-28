@@ -179,9 +179,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
@@ -430,21 +427,13 @@
         </node>
         <node concept="geMak" id="3wHxcnxBQe5" role="3_Xtdj">
           <node concept="2OqwBi" id="6b_jefnVxCN" role="geM8N">
-            <node concept="2OqwBi" id="6b_jefnVxCO" role="2Oq$k0">
-              <node concept="2YIFZM" id="6b_jefnVxCP" role="2Oq$k0">
-                <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-              </node>
-              <node concept="liA8E" id="6b_jefnVxCQ" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="6b_jefnVxCR" role="37wK5m">
-                  <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                </node>
-              </node>
-            </node>
             <node concept="liA8E" id="6b_jefnVxCS" role="2OqNvi">
               <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
               <node concept="geSxg" id="6b_jefnVxCT" role="37wK5m" />
+            </node>
+            <node concept="2YIFZM" id="7qOtjYQNOzs" role="2Oq$k0">
+              <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+              <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
             </node>
           </node>
           <node concept="geMe5" id="3wHxcnxBQe6" role="geMea">
@@ -563,21 +552,13 @@
           </node>
           <node concept="geMak" id="5Zn2KFQQzNw" role="3_Xtdj">
             <node concept="2OqwBi" id="6b_jefnVuY0" role="geM8N">
-              <node concept="2OqwBi" id="6b_jefnVuhy" role="2Oq$k0">
-                <node concept="2YIFZM" id="6b_jefnVutA" role="2Oq$k0">
-                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                </node>
-                <node concept="liA8E" id="6b_jefnVuHk" role="2OqNvi">
-                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                  <node concept="3VsKOn" id="6b_jefnVuJs" role="37wK5m">
-                    <ref role="3VsUkX" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
-                  </node>
-                </node>
-              </node>
               <node concept="liA8E" id="6b_jefnVvpI" role="2OqNvi">
                 <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="getIconFor" />
                 <node concept="geSxg" id="6b_jefnVxyD" role="37wK5m" />
+              </node>
+              <node concept="2YIFZM" id="7qOtjYQNTOI" role="2Oq$k0">
+                <ref role="1Pybhc" to="xnls:~GlobalIconManager" resolve="GlobalIconManager" />
+                <ref role="37wK5l" to="xnls:~GlobalIconManager.getInstance()" resolve="getInstance" />
               </node>
             </node>
             <node concept="geMe5" id="5Zn2KFQQzN$" role="geMea">
