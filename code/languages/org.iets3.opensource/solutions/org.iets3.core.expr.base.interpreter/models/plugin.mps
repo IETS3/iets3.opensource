@@ -52,7 +52,6 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -1817,7 +1816,7 @@
                 </node>
               </node>
             </node>
-            <node concept="SfApY" id="5a_u3OzXYTV" role="3cqZAp">
+            <node concept="3J1_TO" id="5a_u3OzXYTV" role="3cqZAp">
               <node concept="3uVAMA" id="5a_u3OzXYUg" role="1zxBo5">
                 <node concept="XOnhg" id="5a_u3OzXYUh" role="1zc67B">
                   <property role="3TUv4t" value="false" />
@@ -1937,7 +1936,7 @@
                 </node>
               </node>
             </node>
-            <node concept="SfApY" id="6iJ_gQCkbZJ" role="3cqZAp">
+            <node concept="3J1_TO" id="6iJ_gQCkbZJ" role="3cqZAp">
               <node concept="3uVAMA" id="6iJ_gQCkbZM" role="1zxBo5">
                 <node concept="XOnhg" id="6iJ_gQCkbZO" role="1zc67B">
                   <property role="3TUv4t" value="false" />
