@@ -3295,6 +3295,42 @@
       </node>
       <node concept="17QB3L" id="5RRBXwZFZwX" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2nC94_dEQQo" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="2nC94_dEQQp" role="1B3o_S" />
+      <node concept="3clFbS" id="2nC94_dEQQq" role="3clF47">
+        <node concept="3clFbF" id="2nC94_dEQQr" role="3cqZAp">
+          <node concept="2YIFZM" id="2nC94_dEQQs" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="2nC94_dEQQt" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2nC94_dEQQu" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2nC94_dEQQv" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="2nC94_dEQQw" role="1B3o_S" />
+      <node concept="3clFbS" id="2nC94_dEQQx" role="3clF47">
+        <node concept="3clFbF" id="2nC94_dEQQy" role="3cqZAp">
+          <node concept="2YIFZM" id="2nC94_dEQQz" role="3clFbG">
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <node concept="1fM9EW" id="2nC94_dEQQ$" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2nC94_dEQQ_" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="69zaTr1N3Q9">
     <property role="3GE5qa" value="constant" />

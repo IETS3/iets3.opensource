@@ -9573,5 +9573,61 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="3nVyItrZkax">
+    <property role="TrG5h" value="typeof_HasValueOp" />
+    <property role="3GE5qa" value="nix" />
+    <node concept="3clFbS" id="3nVyItrZkay" role="18ibNy">
+      <node concept="1Z5TYs" id="3nVyItrZkYu" role="3cqZAp">
+        <node concept="mw_s8" id="3nVyItrZkYJ" role="1ZfhKB">
+          <node concept="2YIFZM" id="3nVyItrZl0q" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3nVyItrZkYx" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3nVyItrZkQI" role="mwGJk">
+            <node concept="1YBJjd" id="3nVyItrZkSA" role="1Z2MuG">
+              <ref role="1YBMHb" node="3nVyItrZka$" resolve="hasValueOp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nVyItrZka$" role="1YuTPh">
+      <property role="TrG5h" value="hasValueOp" />
+      <ref role="1YaFvo" to="hm2y:3nVyItrZk9z" resolve="HasValueOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3nVyItrZBOZ">
+    <property role="TrG5h" value="typeof_EmptyValue" />
+    <property role="3GE5qa" value="nix" />
+    <node concept="3clFbS" id="3nVyItrZBP0" role="18ibNy">
+      <node concept="1Z5TYs" id="3nVyItrZBWP" role="3cqZAp">
+        <node concept="mw_s8" id="3nVyItrZCny" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3nVyItrZCno" role="mwGJk">
+            <node concept="2OqwBi" id="3nVyItrZCxi" role="1Z2MuG">
+              <node concept="1YBJjd" id="3nVyItrZCo1" role="2Oq$k0">
+                <ref role="1YBMHb" node="3nVyItrZBP2" resolve="emptyValue" />
+              </node>
+              <node concept="3TrEf2" id="3nVyItrZCKl" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:3nVyItrZBNa" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3nVyItrZBWS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3nVyItrZBP6" role="mwGJk">
+            <node concept="1YBJjd" id="3nVyItrZBQY" role="1Z2MuG">
+              <ref role="1YBMHb" node="3nVyItrZBP2" resolve="emptyValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nVyItrZBP2" role="1YuTPh">
+      <property role="TrG5h" value="emptyValue" />
+      <ref role="1YaFvo" to="hm2y:3nVyItrZBN9" resolve="EmptyValue" />
+    </node>
+  </node>
 </model>
 
