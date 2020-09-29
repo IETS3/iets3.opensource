@@ -615,15 +615,27 @@
                                 <node concept="Xl_RD" id="1yM4vPkLU5d" role="3uHU7w">
                                   <property role="Xl_RC" value="" />
                                 </node>
-                                <node concept="2OqwBi" id="1yM4vPkLU5e" role="3uHU7B">
-                                  <node concept="37vLTw" id="1yM4vPkLU5f" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1yM4vPkLPq4" resolve="s" />
-                                  </node>
-                                  <node concept="liA8E" id="1yM4vPkLU5g" role="2OqNvi">
-                                    <ref role="37wK5l" to="xfg9:3nVyIts6HwG" resolve="get" />
-                                    <node concept="3cmrfG" id="1yM4vPkLU5h" role="37wK5m">
-                                      <property role="3cmrfH" value="0" />
+                                <node concept="2OqwBi" id="7OzGqLUHf_m" role="3uHU7B">
+                                  <node concept="1eOMI4" id="7OzGqLUHeAW" role="2Oq$k0">
+                                    <node concept="10QFUN" id="7OzGqLUHeAV" role="1eOMHV">
+                                      <node concept="2OqwBi" id="7OzGqLUHeAR" role="10QFUP">
+                                        <node concept="37vLTw" id="7OzGqLUHeAS" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1yM4vPkLPq4" resolve="s" />
+                                        </node>
+                                        <node concept="liA8E" id="7OzGqLUHeAT" role="2OqNvi">
+                                          <ref role="37wK5l" to="xfg9:3nVyIts6HwG" resolve="get" />
+                                          <node concept="3cmrfG" id="7OzGqLUHeAU" role="37wK5m">
+                                            <property role="3cmrfH" value="0" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3uibUv" id="7OzGqLUHeKg" role="10QFUM">
+                                        <ref role="3uigEE" node="5mz5Tt_gaKE" resolve="BigRational" />
+                                      </node>
                                     </node>
+                                  </node>
+                                  <node concept="liA8E" id="7OzGqLUHgji" role="2OqNvi">
+                                    <ref role="37wK5l" node="5mz5Tt_gb6G" resolve="intValue" />
                                   </node>
                                 </node>
                               </node>
