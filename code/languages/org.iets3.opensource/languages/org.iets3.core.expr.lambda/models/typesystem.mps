@@ -914,11 +914,21 @@
                           </node>
                         </node>
                         <node concept="TSZUe" id="kxHAhaUGnL" role="2OqNvi">
-                          <node concept="2OqwBi" id="kxHAhaUGnM" role="25WWJ7">
-                            <node concept="37vLTw" id="kxHAhaUI3T" role="2Oq$k0">
-                              <ref role="3cqZAo" node="252QIDyF82o" resolve="contextExprType" />
+                          <node concept="2OqwBi" id="4Uid4MjU6uG" role="25WWJ7">
+                            <node concept="1PxgMI" id="4Uid4MjU4Dy" role="2Oq$k0">
+                              <node concept="chp4Y" id="4Uid4MjU5jS" role="3oSUPX">
+                                <ref role="cht4Q" to="zzzn:6zmBjqUm7Mf" resolve="IShortLambdaContainer" />
+                              </node>
+                              <node concept="2OqwBi" id="4Uid4MjU2wn" role="1m5AlR">
+                                <node concept="1YBJjd" id="4Uid4MjU1op" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="6zmBjqUm84F" resolve="sle" />
+                                </node>
+                                <node concept="1mfA1w" id="4Uid4MjU3MJ" role="2OqNvi" />
+                              </node>
                             </node>
-                            <node concept="1$rogu" id="kxHAhaUGnS" role="2OqNvi" />
+                            <node concept="2qgKlT" id="4Uid4MjU7p9" role="2OqNvi">
+                              <ref role="37wK5l" to="5s8v:6zmBjqUm7MF" resolve="requiredType" />
+                            </node>
                           </node>
                         </node>
                       </node>
