@@ -153,7 +153,12 @@
       <concept id="8293738266739943650" name="org.iets3.core.expr.simpleTypes.structure.InterpolExprWord" flags="ng" index="2206Zw">
         <child id="8293738266739943651" name="expr" index="2206Zx" />
       </concept>
-      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
+      <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
+        <property id="1330041117646892934" name="prec" index="2gteVv" />
+      </concept>
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
+        <child id="1330041117646892937" name="prec" index="2gteVg" />
+      </concept>
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
@@ -1072,7 +1077,64 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="5CUQ8HxOXT" role="_iOnB" />
+    <node concept="2Ss9d8" id="5CUQ8HxPEi" role="_iOnB">
+      <property role="TrG5h" value="Point2" />
+      <node concept="2Ss9d7" id="5CUQ8HxQ0B" role="S5Trm">
+        <property role="TrG5h" value="x" />
+        <node concept="mLuIC" id="5CUQ8HxQ0H" role="2S399n">
+          <node concept="2gteS_" id="5CUQ8HxQ0Q" role="2gteVg">
+            <property role="2gteVv" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ss9d7" id="5CUQ8HxQ1q" role="S5Trm">
+        <property role="TrG5h" value="y" />
+        <node concept="mLuIC" id="5CUQ8HxQ1z" role="2S399n">
+          <node concept="2gteS_" id="5CUQ8HxQ1G" role="2gteVg">
+            <property role="2gteVv" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="5YygIlboZTl" role="_iOnB" />
+    <node concept="_fkuM" id="5CUQ8HxOBG" role="_iOnB">
+      <property role="TrG5h" value="recordWithDecimals" />
+      <node concept="_fkuZ" id="5CUQ8HyKN0" role="_fkp5">
+        <node concept="_fku$" id="5CUQ8HyKN1" role="_fkur" />
+        <node concept="30bXRB" id="5CUQ8HyKPt" role="_fkuY">
+          <property role="30bXRw" value="1.0" />
+        </node>
+        <node concept="30bXRB" id="5CUQ8HyKPM" role="_fkuS">
+          <property role="30bXRw" value="1" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="5CUQ8HxQ23" role="_fkp5">
+        <node concept="_fku$" id="5CUQ8HxQ24" role="_fkur" />
+        <node concept="2S399m" id="5CUQ8HxQ2h" role="_fkuY">
+          <node concept="2Ss9cW" id="5CUQ8HxQ2l" role="2S399n">
+            <ref role="2Ss9cX" node="5CUQ8HxPEi" resolve="Point2" />
+          </node>
+          <node concept="30bXRB" id="5CUQ8HxQ2_" role="2S399l">
+            <property role="30bXRw" value="1.0" />
+          </node>
+          <node concept="30bXRB" id="5CUQ8HxQ3J" role="2S399l">
+            <property role="30bXRw" value="2.0" />
+          </node>
+        </node>
+        <node concept="2S399m" id="5CUQ8HxQ4S" role="_fkuS">
+          <node concept="2Ss9cW" id="5CUQ8HxQ4W" role="2S399n">
+            <ref role="2Ss9cX" node="5CUQ8HxPEi" resolve="Point2" />
+          </node>
+          <node concept="30bXRB" id="5CUQ8HxQ6c" role="2S399l">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="30bXRB" id="5CUQ8HxQ6Z" role="2S399l">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="5YygIlbp005" role="_iOnB" />
     <node concept="_ixoA" id="4ptnK4jeq01" role="_iOnB" />
   </node>

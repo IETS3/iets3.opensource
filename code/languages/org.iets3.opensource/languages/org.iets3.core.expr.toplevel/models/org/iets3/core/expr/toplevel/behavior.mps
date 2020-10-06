@@ -6323,6 +6323,9 @@
         </node>
       </node>
     </node>
+    <node concept="13hLZK" id="67Y8mp$Hxsn" role="13h7CW">
+      <node concept="3clFbS" id="67Y8mp$Hxso" role="2VODD2" />
+    </node>
     <node concept="13i0hz" id="5YygIlbjUBp" role="13h7CS">
       <property role="TrG5h" value="allowUmlaute" />
       <property role="2Ki8OM" value="true" />
@@ -6340,9 +6343,6 @@
         </node>
       </node>
       <node concept="10P_77" id="5YygIlbjUBu" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="67Y8mp$Hxsn" role="13h7CW">
-      <node concept="3clFbS" id="67Y8mp$Hxso" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="3NUSEp5yeUF" role="13h7CS">
       <property role="TrG5h" value="allowParagraph" />
