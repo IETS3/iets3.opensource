@@ -21,6 +21,7 @@
     <import index="wthy" ref="r:a4614e23-a6b5-4dbe-9bc5-9ff1ecfd0a3a(org.iets3.core.expr.util.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
+    <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3378,14 +3379,18 @@
           </node>
           <node concept="3clFbS" id="6GGzMC67ztY" role="3clFbx">
             <node concept="3cpWs6" id="6GGzMC67ztZ" role="3cqZAp">
-              <node concept="2pJPEk" id="6GGzMC67zu0" role="3cqZAk">
-                <node concept="2pJPED" id="6GGzMC67zu1" role="2pJPEn">
-                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
-                  <node concept="2pJxcG" id="6GGzMC67zu2" role="2pJxcM">
-                    <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                    <node concept="37vLTw" id="6GGzMC67zu3" role="28ntcv">
-                      <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
+              <node concept="2OqwBi" id="2oUyrt_3jmX" role="3cqZAk">
+                <node concept="2ShNRf" id="2oUyrt_3ipi" role="2Oq$k0">
+                  <node concept="3zrR0B" id="2oUyrt_3j06" role="2ShVmc">
+                    <node concept="3Tqbb2" id="2oUyrt_3j08" role="3zrR0E">
+                      <ref role="ehGHo" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                     </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2oUyrt_3jEP" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:2oUyrt$Tg3c" resolve="set" />
+                  <node concept="37vLTw" id="2oUyrt_3kfr" role="37wK5m">
+                    <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
                   </node>
                 </node>
               </node>
@@ -3405,15 +3410,19 @@
             </node>
           </node>
           <node concept="3clFbS" id="6GGzMC65G20" role="3clFbx">
-            <node concept="3cpWs6" id="6GGzMC65G21" role="3cqZAp">
-              <node concept="2pJPEk" id="6GGzMC65G22" role="3cqZAk">
-                <node concept="2pJPED" id="6GGzMC65G23" role="2pJPEn">
-                  <ref role="2pJxaS" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
-                  <node concept="2pJxcG" id="6GGzMC65G24" role="2pJxcM">
-                    <ref role="2pJxcJ" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                    <node concept="37vLTw" id="6GGzMC65G25" role="28ntcv">
-                      <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
+            <node concept="3cpWs6" id="2oUyrt_3kNx" role="3cqZAp">
+              <node concept="2OqwBi" id="2oUyrt_3kNy" role="3cqZAk">
+                <node concept="2ShNRf" id="2oUyrt_3kNz" role="2Oq$k0">
+                  <node concept="3zrR0B" id="2oUyrt_3kN$" role="2ShVmc">
+                    <node concept="3Tqbb2" id="2oUyrt_3kN_" role="3zrR0E">
+                      <ref role="ehGHo" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
                     </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2oUyrt_3kNA" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:2oUyrt$Tg3c" resolve="set" />
+                  <node concept="37vLTw" id="2oUyrt_3kNB" role="37wK5m">
+                    <ref role="3cqZAo" node="6GGzMC65iRK" resolve="s" />
                   </node>
                 </node>
               </node>

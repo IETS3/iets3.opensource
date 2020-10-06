@@ -1032,7 +1032,7 @@
           <ref role="_emDf" node="7Wa2sv4685N" resolve="d4" />
         </node>
         <node concept="30bXRB" id="7kyIuXqzPgO" role="_fkuS">
-          <property role="30bXRw" value="0.5555555556" />
+          <property role="30bXRw" value="0.5555555555" />
         </node>
       </node>
       <node concept="_fkuZ" id="7kyIuXq$zo2" role="_fkp5">
@@ -1043,7 +1043,7 @@
           <ref role="_emDf" node="7Wa2sv468$A" resolve="d5" />
         </node>
         <node concept="30bXRB" id="7kyIuXq$zo5" role="_fkuS">
-          <property role="30bXRw" value="-0.5555555556" />
+          <property role="30bXRw" value="-0.5555555555" />
         </node>
       </node>
       <node concept="_fkuZ" id="7kyIuXq$BFY" role="_fkp5">
@@ -1081,7 +1081,7 @@
           <ref role="_emDf" node="7Wa2sv4cP$d" resolve="d9" />
         </node>
         <node concept="30bXRB" id="7kyIuXq$NJi" role="_fkuS">
-          <property role="30bXRw" value="-2.2522522523" />
+          <property role="30bXRw" value="-2.2522522522" />
         </node>
       </node>
       <node concept="3dYjL0" id="7kyIuXq$UeJ" role="_fkp5" />

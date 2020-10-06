@@ -346,8 +346,8 @@
                   <node concept="1YBJjd" id="3p6$WoErP8r" role="2Oq$k0">
                     <ref role="1YBMHb" node="4rZeNQ6OhNR" resolve="l" />
                   </node>
-                  <node concept="3TrcHB" id="3p6$WoErPCD" role="2OqNvi">
-                    <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
+                  <node concept="2qgKlT" id="2oUyrt$Sr5Q" role="2OqNvi">
+                    <ref role="37wK5l" to="b1h1:2oUyrt$QPvb" resolve="valueWithDotInsteadOfComma" />
                   </node>
                 </node>
               </node>
@@ -4814,7 +4814,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3UyUcqtl8l_">
-    <property role="TrG5h" value="typeof_StringParseIntTarget" />
+    <property role="TrG5h" value="typeof_StringToIntTarget" />
     <property role="3GE5qa" value="string" />
     <node concept="3clFbS" id="3UyUcqtl8lA" role="18ibNy">
       <node concept="1Z5TYs" id="3UyUcqtl91G" role="3cqZAp">
@@ -4836,7 +4836,7 @@
     </node>
     <node concept="1YaCAy" id="3UyUcqtl8lC" role="1YuTPh">
       <property role="TrG5h" value="spnt" />
-      <ref role="1YaFvo" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
+      <ref role="1YaFvo" to="5qo5:3UyUcqtl81P" resolve="StringToIntTarget" />
     </node>
   </node>
   <node concept="1YbPZF" id="4399ITSA5yW">
