@@ -2,7 +2,7 @@
 <model ref="r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
@@ -180,6 +180,7 @@
       </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
+        <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -193,6 +194,7 @@
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
+      <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -241,6 +243,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -495,6 +498,23 @@
     <node concept="1YaCAy" id="6eglc2$aivs" role="1YuTPh">
       <property role="TrG5h" value="act" />
       <ref role="1YaFvo" to="l462:50smQ1V8i89" resolve="TemporalType" />
+    </node>
+    <node concept="1xSnZT" id="6kkxerV_HEh" role="1xSnZW">
+      <node concept="3clFbS" id="6kkxerV_HEi" role="2VODD2">
+        <node concept="3clFbF" id="6kkxerV_HIm" role="3cqZAp">
+          <node concept="2OqwBi" id="6kkxerV_Jmp" role="3clFbG">
+            <node concept="2OqwBi" id="6kkxerV_I1l" role="2Oq$k0">
+              <node concept="1YBJjd" id="6kkxerV_IBK" role="2Oq$k0">
+                <ref role="1YBMHb" node="6eglc2$aiw0" resolve="exp" />
+              </node>
+              <node concept="3TrEf2" id="6kkxerV_IZC" role="2OqNvi">
+                <ref role="3Tt5mk" to="l462:50smQ1V8i8a" resolve="baseType" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6kkxerV_JVE" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="18kY7G" id="50smQ1Va0Ew">

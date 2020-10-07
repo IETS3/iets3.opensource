@@ -11,6 +11,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,6 +53,9 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1697,8 +1701,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="5azVK7Pl8BM" role="37wK5m">
-                    <property role="3cmrfH" value="10" />
+                  <node concept="10M0yZ" id="2oQlmR7HfeW" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="5azVK7Pl8BN" role="37wK5m">
                     <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -1756,8 +1761,9 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="1uB4LRlVB9Y" role="37wK5m">
-                    <property role="3cmrfH" value="10" />
+                  <node concept="10M0yZ" id="2oQlmR7HfId" role="37wK5m">
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVPCe" role="37wK5m">
                     <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
@@ -1820,8 +1826,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="1uB4LRlV_GI" role="37wK5m">
-                    <property role="3cmrfH" value="10" />
+                  <node concept="10M0yZ" id="2oQlmR7HfY7" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVQo_" role="37wK5m">
                     <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
@@ -1874,8 +1881,9 @@
                       <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="1uB4LRlVCBz" role="37wK5m">
-                    <property role="3cmrfH" value="10" />
+                  <node concept="10M0yZ" id="2oQlmR7HgtZ" role="37wK5m">
+                    <ref role="3cqZAo" to="oq0c:7Wa2sv3XRPP" resolve="INF_PREC" />
+                    <ref role="1PxDUh" to="oq0c:2NHHcg2EXna" resolve="InfHelper" />
                   </node>
                   <node concept="Rm8GO" id="1uB4LRlVR7Z" role="37wK5m">
                     <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />

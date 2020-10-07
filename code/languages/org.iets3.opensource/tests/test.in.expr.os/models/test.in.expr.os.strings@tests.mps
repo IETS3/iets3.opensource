@@ -101,7 +101,7 @@
       </concept>
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
-      <concept id="4513425716319387765" name="org.iets3.core.expr.simpleTypes.structure.StringParseIntTarget" flags="ng" index="2zXAyN" />
+      <concept id="4513425716319387765" name="org.iets3.core.expr.simpleTypes.structure.StringToIntTarget" flags="ng" index="2zXAyN" />
       <concept id="5880303268806840041" name="org.iets3.core.expr.simpleTypes.structure.StringStartsWithTarget" flags="ng" index="2_lWp3">
         <child id="842813880843519732" name="value" index="1gK00Q" />
       </concept>

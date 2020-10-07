@@ -260,6 +260,7 @@
     <property role="EcuMT" value="6170801853434902704" />
     <property role="TrG5h" value="AbstractRatTarget" />
     <property role="3GE5qa" value="rat" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5mz5Tt_jNyL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
@@ -428,6 +429,13 @@
       <property role="IQ2ns" value="3800040087837872067" />
       <ref role="20lvS9" node="3C0hCYboTSS" resolve="PolynomialExpression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1VqmZU7iMYf">
+    <property role="EcuMT" value="2223190514810433423" />
+    <property role="3GE5qa" value="rat" />
+    <property role="TrG5h" value="ToReal" />
+    <property role="34LRSv" value="toReal" />
+    <ref role="1TJDcQ" node="5mz5Tt_jNyK" resolve="AbstractRatTarget" />
   </node>
 </model>
 

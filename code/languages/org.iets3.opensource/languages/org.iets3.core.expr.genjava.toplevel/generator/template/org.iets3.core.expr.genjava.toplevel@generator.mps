@@ -393,9 +393,6 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
-        <child id="1138662048170" name="value" index="tz02z" />
-      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -3008,20 +3005,16 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="1s3ECkt3ZU_" role="3cqZAp">
-                    <node concept="2OqwBi" id="1s3ECkt41JG" role="3clFbG">
-                      <node concept="2OqwBi" id="1s3ECkt40jA" role="2Oq$k0">
-                        <node concept="37vLTw" id="1s3ECkt3ZUz" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1s3ECkt3YP8" resolve="result" />
-                        </node>
-                        <node concept="3TrcHB" id="1s3ECkt40Je" role="2OqNvi">
-                          <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                        </node>
+                  <node concept="3clFbF" id="2oUyrt$U0UA" role="3cqZAp">
+                    <node concept="2OqwBi" id="2oUyrt$U15R" role="3clFbG">
+                      <node concept="37vLTw" id="2oUyrt$U0U$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1s3ECkt3YP8" resolve="result" />
                       </node>
-                      <node concept="tyxLq" id="1s3ECkt422V" role="2OqNvi">
-                        <node concept="2YIFZM" id="1s3ECkt47pA" role="tz02z">
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
+                      <node concept="2qgKlT" id="2oUyrt$U1d5" role="2OqNvi">
+                        <ref role="37wK5l" to="b1h1:2oUyrt$Tg3c" resolve="set" />
+                        <node concept="2YIFZM" id="1s3ECkt47pA" role="37wK5m">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
                           <node concept="1LFfDK" id="1s3ECkt42te" role="37wK5m">
                             <node concept="3cmrfG" id="1s3ECkt42tf" role="1LF_Uc">
                               <property role="3cmrfH" value="0" />
@@ -3101,18 +3094,14 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="1s3ECkt48v2" role="3cqZAp">
-                    <node concept="2OqwBi" id="1s3ECkt48v3" role="3clFbG">
-                      <node concept="2OqwBi" id="1s3ECkt48v4" role="2Oq$k0">
-                        <node concept="37vLTw" id="1s3ECkt48v5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1s3ECkt48uX" resolve="result" />
-                        </node>
-                        <node concept="3TrcHB" id="1s3ECkt48v6" role="2OqNvi">
-                          <ref role="3TsBF5" to="5qo5:4rZeNQ6Oert" resolve="value" />
-                        </node>
+                  <node concept="3clFbF" id="2oUyrt$TWNO" role="3cqZAp">
+                    <node concept="2OqwBi" id="2oUyrt$TWZ5" role="3clFbG">
+                      <node concept="37vLTw" id="2oUyrt$TWNM" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1s3ECkt48uX" resolve="result" />
                       </node>
-                      <node concept="tyxLq" id="1s3ECkt48v7" role="2OqNvi">
-                        <node concept="2YIFZM" id="1s3ECkt48v8" role="tz02z">
+                      <node concept="2qgKlT" id="2oUyrt$TXJn" role="2OqNvi">
+                        <ref role="37wK5l" to="b1h1:2oUyrt$Tg3c" resolve="set" />
+                        <node concept="2YIFZM" id="1s3ECkt48v8" role="37wK5m">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                           <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
                           <node concept="1LFfDK" id="1s3ECkt48v9" role="37wK5m">
