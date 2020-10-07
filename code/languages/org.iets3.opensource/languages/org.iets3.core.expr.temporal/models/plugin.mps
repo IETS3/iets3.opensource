@@ -273,7 +273,7 @@
     <property role="TrG5h" value="TemporalOpsInterpreter" />
     <node concept="3Tm1VV" id="6AGD1sTq8oG" role="1B3o_S" />
     <node concept="2YIFZL" id="3rApyZ4I0bR" role="jymVt">
-      <property role="TrG5h" value="peform" />
+      <property role="TrG5h" value="perform" />
       <node concept="3uibUv" id="3rApyZ4I7Rz" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>

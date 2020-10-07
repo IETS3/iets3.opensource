@@ -15,7 +15,7 @@
     <use id="5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1" name="org.iets3.core.expr.adt" version="-1" />
     <use id="289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998" name="org.iets3.core.expr.datetime" version="-1" />
     <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
-    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="0" />
+    <use id="b25b8ad1-4d3d-4e45-8c78-72091b39fdda" name="org.iets3.core.expr.data" version="1" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports>

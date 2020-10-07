@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -3294,6 +3294,42 @@
         <node concept="3Tqbb2" id="5RRBXwZFZwW" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="5RRBXwZFZwX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2nC94_dEQQo" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="2nC94_dEQQp" role="1B3o_S" />
+      <node concept="3clFbS" id="2nC94_dEQQq" role="3clF47">
+        <node concept="3clFbF" id="2nC94_dEQQr" role="3cqZAp">
+          <node concept="2YIFZM" id="2nC94_dEQQs" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="2nC94_dEQQt" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2nC94_dEQQu" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2nC94_dEQQv" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="2nC94_dEQQw" role="1B3o_S" />
+      <node concept="3clFbS" id="2nC94_dEQQx" role="3clF47">
+        <node concept="3clFbF" id="2nC94_dEQQy" role="3cqZAp">
+          <node concept="2YIFZM" id="2nC94_dEQQz" role="3clFbG">
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <node concept="1fM9EW" id="2nC94_dEQQ$" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2nC94_dEQQ_" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="69zaTr1N3Q9">
@@ -9193,7 +9229,7 @@
         <node concept="3clFbF" id="6WstIz8ML9X" role="3cqZAp">
           <node concept="3cpWs3" id="6WstIz8MLa0" role="3clFbG">
             <node concept="Xl_RD" id="6WstIz8MLa1" role="3uHU7B">
-              <property role="Xl_RC" value="isOneOf" />
+              <property role="Xl_RC" value="isIn" />
             </node>
             <node concept="2OqwBi" id="6WstIz8MLa2" role="3uHU7w">
               <node concept="2OqwBi" id="6WstIz8MLa3" role="2Oq$k0">

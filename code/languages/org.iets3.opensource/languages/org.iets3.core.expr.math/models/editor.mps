@@ -18,8 +18,8 @@
     <import index="itrz" ref="r:80fb0853-eb3b-4e84-aebd-cc7fdb011d97(org.iets3.core.base.editor)" implicit="true" />
     <import index="boxz" ref="r:89e950b9-8c66-4fca-a5c0-614e0548d83a(org.iets3.core.expr.math.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -769,8 +769,8 @@
   <node concept="24kQdi" id="5mz5Tt_jQxl">
     <property role="3GE5qa" value="rat" />
     <ref role="1XX52x" to="1qv1:5mz5Tt_jQwU" resolve="ToInteger" />
-    <node concept="3F0ifn" id="5mz5Tt_jQxn" role="2wV5jI">
-      <property role="3F0ifm" value="toInt" />
+    <node concept="PMmxH" id="1VqmZU7jdoC" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="5mz5Tt_h1e9">
@@ -785,8 +785,8 @@
     <ref role="1XX52x" to="1qv1:5mz5Tt_jL63" resolve="ToDecimalTarget" />
     <node concept="3EZMnI" id="5mz5Tt_jL6A" role="2wV5jI">
       <node concept="2iRfu4" id="5mz5Tt_jL6B" role="2iSdaV" />
-      <node concept="3F0ifn" id="5mz5Tt_jL6z" role="3EZMnx">
-        <property role="3F0ifm" value="toDecimal" />
+      <node concept="PMmxH" id="1VqmZU7jneu" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="5mz5Tt_jL6N" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -964,6 +964,13 @@
       <node concept="3F1sOY" id="4wFKMWZgPzK" role="2QEq0V">
         <ref role="1NtTu8" to="1qv1:3iWt5efOwZ2" resolve="upper" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1VqmZU7jevu">
+    <property role="3GE5qa" value="rat" />
+    <ref role="1XX52x" to="1qv1:1VqmZU7iMYf" resolve="ToReal" />
+    <node concept="PMmxH" id="1VqmZU7jevz" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
