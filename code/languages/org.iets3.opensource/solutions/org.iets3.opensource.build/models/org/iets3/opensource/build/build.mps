@@ -2206,6 +2206,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7aAW5BPgQuB" role="3bR31x">
+          <node concept="3LXTmp" id="7aAW5BPgQuC" role="3rtmxm">
+            <node concept="3qWCbU" id="7aAW5BPgQuD" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7aAW5BPgQuE" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="7aAW5BPgQuF" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7aAW5BPgQuG" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.typetags.units.interpreter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5wdSIUgQCW5" role="2G$12L">
         <property role="BnDLt" value="true" />
