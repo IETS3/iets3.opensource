@@ -6132,7 +6132,7 @@
     <ref role="aqKnT" to="hm2y:5ElkanPUl_S" resolve="DocWordRef" />
     <node concept="1s_PAr" id="7cBI1LfPKRg" role="3ft7WO">
       <node concept="2kknPI" id="7cBI1LfPKRh" role="1s_PAo">
-        <ref role="2kkw0f" node="7cBI1LfPKRd" />
+        <ref role="2kkw0f" node="7cBI1LfPKRd" resolve="DocWordRef_SmartReference" />
       </node>
     </node>
     <node concept="2VfDsV" id="7cBI1LfPKRi" role="3ft7WO" />

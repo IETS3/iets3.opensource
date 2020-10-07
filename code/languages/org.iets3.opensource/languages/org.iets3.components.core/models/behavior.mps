@@ -974,7 +974,7 @@
                 <node concept="2qgKlT" id="3ijD2AiqgUT" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:79$zShlSHxZ" resolve="visibleContentsOfType" />
                   <node concept="37vLTw" id="3ijD2AiqgUU" role="37wK5m">
-                    <ref role="3cqZAo" node="5WV8nQbZt_x" />
+                    <ref role="3cqZAo" node="5WV8nQbZt_x" resolve="targetConcept" />
                   </node>
                 </node>
               </node>

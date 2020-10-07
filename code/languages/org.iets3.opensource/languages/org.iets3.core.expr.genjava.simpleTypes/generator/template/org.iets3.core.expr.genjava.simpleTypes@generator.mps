@@ -4460,7 +4460,7 @@
                       </node>
                       <node concept="1mIQ4w" id="qI8drZtvhJ" role="2OqNvi">
                         <node concept="chp4Y" id="qI8drZtvwb" role="cj9EA">
-                          <ref role="cht4Q" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
+                          <ref role="cht4Q" to="5qo5:3UyUcqtl81P" resolve="StringToIntTarget" />
                         </node>
                       </node>
                     </node>
@@ -4612,7 +4612,7 @@
               </node>
               <node concept="1mIQ4w" id="qI8drZtvQl" role="2OqNvi">
                 <node concept="chp4Y" id="qI8drZtBYM" role="cj9EA">
-                  <ref role="cht4Q" to="5qo5:3UyUcqtl81P" resolve="StringParseIntTarget" />
+                  <ref role="cht4Q" to="5qo5:3UyUcqtl81P" resolve="StringToIntTarget" />
                 </node>
               </node>
             </node>
