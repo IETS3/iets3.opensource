@@ -3298,20 +3298,20 @@
                             <ref role="3cqZAo" node="26cjRACHZpO" resolve="s" />
                           </node>
                           <node concept="liA8E" id="26cjRACHZpX" role="2OqNvi">
-                            <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                            <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                             <node concept="3cmrfG" id="26cjRACHZpY" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="26cjRACHZpZ" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="2OqwBi" id="26cjRACHZq0" role="37wK5m">
                             <node concept="37vLTw" id="26cjRACHZq1" role="2Oq$k0">
                               <ref role="3cqZAo" node="26cjRACHZpO" resolve="s" />
                             </node>
                             <node concept="liA8E" id="26cjRACHZq2" role="2OqNvi">
-                              <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                              <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                               <node concept="3cmrfG" id="26cjRACHZq3" role="37wK5m">
                                 <property role="3cmrfH" value="1" />
                               </node>
@@ -3387,20 +3387,20 @@
                             <ref role="3cqZAo" node="26cjRACHX6$" resolve="s" />
                           </node>
                           <node concept="liA8E" id="26cjRACHX6H" role="2OqNvi">
-                            <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                            <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                             <node concept="3cmrfG" id="26cjRACHX6I" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="26cjRACHX6J" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="2OqwBi" id="26cjRACHX6K" role="37wK5m">
                             <node concept="37vLTw" id="26cjRACHX6L" role="2Oq$k0">
                               <ref role="3cqZAo" node="26cjRACHX6$" resolve="s" />
                             </node>
                             <node concept="liA8E" id="26cjRACHX6M" role="2OqNvi">
-                              <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                              <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                               <node concept="3cmrfG" id="26cjRACHX6N" role="37wK5m">
                                 <property role="3cmrfH" value="1" />
                               </node>
@@ -3476,20 +3476,20 @@
                             <ref role="3cqZAo" node="26cjRACHVCV" resolve="s" />
                           </node>
                           <node concept="liA8E" id="26cjRACHVD4" role="2OqNvi">
-                            <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                            <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                             <node concept="3cmrfG" id="26cjRACHVD5" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="26cjRACHVD6" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="2OqwBi" id="26cjRACHVD7" role="37wK5m">
                             <node concept="37vLTw" id="26cjRACHVD8" role="2Oq$k0">
                               <ref role="3cqZAo" node="26cjRACHVCV" resolve="s" />
                             </node>
                             <node concept="liA8E" id="26cjRACHVD9" role="2OqNvi">
-                              <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                              <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                               <node concept="3cmrfG" id="26cjRACHVDa" role="37wK5m">
                                 <property role="3cmrfH" value="1" />
                               </node>
@@ -3568,20 +3568,20 @@
                             <ref role="3cqZAo" node="26cjRACHN2a" resolve="s" />
                           </node>
                           <node concept="liA8E" id="26cjRACHN2h" role="2OqNvi">
-                            <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                            <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                             <node concept="3cmrfG" id="26cjRACHN2i" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="26cjRACHN2j" role="2OqNvi">
-                          <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger)" resolve="compareTo" />
+                          <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal)" resolve="compareTo" />
                           <node concept="2OqwBi" id="26cjRACHN2k" role="37wK5m">
                             <node concept="37vLTw" id="26cjRACHN2l" role="2Oq$k0">
                               <ref role="3cqZAo" node="26cjRACHN2a" resolve="s" />
                             </node>
                             <node concept="liA8E" id="26cjRACHN2m" role="2OqNvi">
-                              <ref role="37wK5l" to="xfg9:3nVyIts7075" resolve="getBigI" />
+                              <ref role="37wK5l" to="xfg9:3nVyIts6Tw$" resolve="getBigD" />
                               <node concept="3cmrfG" id="26cjRACHN2n" role="37wK5m">
                                 <property role="3cmrfH" value="1" />
                               </node>
