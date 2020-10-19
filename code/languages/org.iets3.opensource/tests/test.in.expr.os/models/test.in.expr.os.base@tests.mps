@@ -1523,6 +1523,34 @@
         <node concept="2vmpnb" id="1MPB7epPmfv" role="_fkuS" />
       </node>
     </node>
+    <node concept="_ixoA" id="3gtdTOPqapW" role="_iOnB" />
+    <node concept="_fkuM" id="3gtdTOPqay7" role="_iOnB">
+      <property role="TrG5h" value="realComparison" />
+      <node concept="_fkuZ" id="3gtdTOPqaAh" role="_fkp5">
+        <node concept="_fku$" id="3gtdTOPqaAi" role="_fkur" />
+        <node concept="30d6GJ" id="3gtdTOPqaAY" role="_fkuY">
+          <node concept="30bXRB" id="3gtdTOPqaBw" role="30dEs_">
+            <property role="30bXRw" value="1.9" />
+          </node>
+          <node concept="30bXRB" id="3gtdTOPqaAx" role="30dEsF">
+            <property role="30bXRw" value="1.1" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="3gtdTOPqaDD" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3gtdTOPqaEK" role="_fkp5">
+        <node concept="_fku$" id="3gtdTOPqaEL" role="_fkur" />
+        <node concept="30d6GJ" id="3gtdTOPqaFH" role="_fkuY">
+          <node concept="30bXRB" id="3gtdTOPqaGf" role="30dEs_">
+            <property role="30bXRw" value="2.1" />
+          </node>
+          <node concept="30bXRB" id="3gtdTOPqaF6" role="30dEsF">
+            <property role="30bXRw" value="1.1" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="3gtdTOPqaIs" role="_fkuS" />
+      </node>
+    </node>
   </node>
   <node concept="_iOnU" id="6HHp2WmQLAT">
     <property role="TrG5h" value="binary_arith" />
