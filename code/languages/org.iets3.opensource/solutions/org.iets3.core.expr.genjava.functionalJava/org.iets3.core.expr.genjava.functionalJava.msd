@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.iets3.core.expr.genjava.functionalJava" uuid="708a03ad-8699-43c9-821a-6cd00b68e9f8" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/functionaljava_1.8-4.8-SNAPSHOT.jar" />
     </modelRoot>
