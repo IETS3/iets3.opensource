@@ -319,6 +319,12 @@
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1235746970280" name="jetbrains.mps.baseLanguage.closures.structure.CompactInvokeFunctionExpression" flags="nn" index="2Sg_IR">
+        <child id="1235746996653" name="function" index="2SgG2M" />
+      </concept>
+      <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
+        <child id="1199542457201" name="resultType" index="1ajl9A" />
+      </concept>
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -13739,6 +13745,101 @@
     </node>
     <node concept="2tJIrI" id="26cjRACVMfp" role="jymVt" />
     <node concept="3Tm1VV" id="26cjRACVMfq" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2O$zpZk7gkg">
+    <property role="3GE5qa" value="interpreter.reporter" />
+    <property role="TrG5h" value="ArithmeticErrorHelper" />
+    <node concept="2YIFZL" id="2O$zpZk7oX$" role="jymVt">
+      <property role="TrG5h" value="handleDivisionByZero" />
+      <node concept="3clFbS" id="2O$zpZk7oXB" role="3clF47">
+        <node concept="SfApY" id="2O$zpZk78xw" role="3cqZAp">
+          <node concept="3clFbS" id="2O$zpZk78xx" role="SfCbr">
+            <node concept="3cpWs6" id="2O$zpZk78xy" role="3cqZAp">
+              <node concept="2Sg_IR" id="2O$zpZk86WX" role="3cqZAk">
+                <node concept="37vLTw" id="2O$zpZk86WY" role="2SgG2M">
+                  <ref role="3cqZAo" node="2O$zpZk7zfM" resolve="arithmeticComputation" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="2O$zpZk78y2" role="TEbGg">
+            <node concept="3cpWsn" id="2O$zpZk78y3" role="TDEfY">
+              <property role="TrG5h" value="ae" />
+              <node concept="3uibUv" id="2O$zpZk78y4" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~ArithmeticException" resolve="ArithmeticException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="2O$zpZk78y5" role="TDEfX">
+              <node concept="YS8fn" id="2O$zpZk78y6" role="3cqZAp">
+                <node concept="2ShNRf" id="2O$zpZk78y7" role="YScLw">
+                  <node concept="1pGfFk" id="2O$zpZk78y8" role="2ShVmc">
+                    <ref role="37wK5l" node="2jL$v5BnAFT" resolve="ConstraintFailedException" />
+                    <node concept="10M0yZ" id="2O$zpZk78y9" role="37wK5m">
+                      <ref role="1PxDUh" node="3Y6fbK1oSAh" resolve="ConstraintFailedException" />
+                      <ref role="3cqZAo" node="4945UtRC2RH" resolve="PLAIN" />
+                    </node>
+                    <node concept="37vLTw" id="2O$zpZk87a2" role="37wK5m">
+                      <ref role="3cqZAo" node="2O$zpZk7zLq" resolve="valueThatCausesProblem" />
+                    </node>
+                    <node concept="37vLTw" id="2O$zpZk87yb" role="37wK5m">
+                      <ref role="3cqZAo" node="2O$zpZk7C3B" resolve="nodeWithError" />
+                    </node>
+                    <node concept="Xl_RD" id="2O$zpZk78yf" role="37wK5m">
+                      <property role="Xl_RC" value="division by zero" />
+                    </node>
+                    <node concept="2OqwBi" id="2O$zpZk87Yl" role="37wK5m">
+                      <node concept="37vLTw" id="2O$zpZk87Jj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2O$zpZk7C5M" resolve="eval" />
+                      </node>
+                      <node concept="2OwXpG" id="2O$zpZk888n" role="2OqNvi">
+                        <ref role="2Oxat5" to="2ahs:3FW9mgpuZs$" resolve="context" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2O$zpZk88uQ" role="37wK5m">
+                      <node concept="37vLTw" id="2O$zpZk88jK" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2O$zpZk7C5M" resolve="eval" />
+                      </node>
+                      <node concept="2OwXpG" id="2O$zpZk88Hd" role="2OqNvi">
+                        <ref role="2Oxat5" to="2ahs:3FW9mgpv01Q" resolve="trace" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2O$zpZk7n6V" role="1B3o_S" />
+      <node concept="3uibUv" id="2O$zpZk7oXo" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="2O$zpZk7zLq" role="3clF46">
+        <property role="TrG5h" value="valueThatCausesProblem" />
+        <node concept="3uibUv" id="2O$zpZk7zPn" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2O$zpZk7C3B" role="3clF46">
+        <property role="TrG5h" value="nodeWithError" />
+        <node concept="3Tqbb2" id="2O$zpZk7C3C" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2O$zpZk7C5M" role="3clF46">
+        <property role="TrG5h" value="eval" />
+        <node concept="3uibUv" id="2O$zpZk7Cdn" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:3FW9mgpuNnI" resolve="Evaluator" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2O$zpZk7zfM" role="3clF46">
+        <property role="TrG5h" value="arithmeticComputation" />
+        <node concept="1ajhzC" id="2O$zpZk7zEk" role="1tU5fm">
+          <node concept="3uibUv" id="2O$zpZk7zIi" role="1ajl9A">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2O$zpZk7gkh" role="1B3o_S" />
   </node>
 </model>
 
