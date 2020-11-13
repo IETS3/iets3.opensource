@@ -1413,6 +1413,9 @@
     <property role="3GE5qa" value="option" />
     <ref role="1XX52x" to="hm2y:2rOWEwsF5w0" resolve="IsSomeExpression" />
     <node concept="3EZMnI" id="2rOWEwsF5wt" role="2wV5jI">
+      <node concept="VPM3Z" id="5ye9uPrh4Eb" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
       <node concept="3F0ifn" id="2rOWEwsF5w$" role="3EZMnx">
         <property role="3F0ifm" value="isSome" />
         <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
@@ -1450,10 +1453,7 @@
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="2rOWEwsF5ww" role="2iSdaV" />
-      <node concept="VPM3Z" id="5ye9uPrh4Eb" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
+      <node concept="l2Vlx" id="rXSEDnMdCx" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2rOWEwsFyOA">
