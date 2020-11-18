@@ -248,7 +248,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
       <node concept="3Tm1VV" id="4tXyFaWwpjh" role="1B3o_S" />
       <node concept="3clFbS" id="4tXyFaWwpjm" role="3clF47" />
       <node concept="37vLTG" id="4tXyFaWwpjn" role="3clF46">
