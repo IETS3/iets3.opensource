@@ -482,48 +482,6 @@
           </node>
           <node concept="9aQIb" id="2s2qa7R0OUG" role="9aQIa">
             <node concept="3clFbS" id="2s2qa7R0OUH" role="9aQI4">
-              <node concept="3clFbF" id="4kpiU1vG1O2" role="3cqZAp">
-                <node concept="2OqwBi" id="4kpiU1vG1NZ" role="3clFbG">
-                  <node concept="10M0yZ" id="4kpiU1vG1O0" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="4kpiU1vG1O1" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="3cpWs3" id="4kpiU1vG5am" role="37wK5m">
-                      <node concept="2OqwBi" id="4kpiU1vG8pA" role="3uHU7w">
-                        <node concept="2OqwBi" id="4kpiU1vG5Jx" role="2Oq$k0">
-                          <node concept="37vLTw" id="4kpiU1vG5vm" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2s2qa7R0LJk" resolve="factory" />
-                          </node>
-                          <node concept="liA8E" id="4kpiU1vG7pI" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4kpiU1vG9lJ" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
-                        </node>
-                      </node>
-                      <node concept="3cpWs3" id="4kpiU1vG4jj" role="3uHU7B">
-                        <node concept="3cpWs3" id="4kpiU1vG32F" role="3uHU7B">
-                          <node concept="Xl_RD" id="4kpiU1vG23h" role="3uHU7B">
-                            <property role="Xl_RC" value="STF: found factory for concept " />
-                          </node>
-                          <node concept="2OqwBi" id="4kpiU1vG3ie" role="3uHU7w">
-                            <node concept="37vLTw" id="4kpiU1vG32Z" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7rOSrvnITgx" resolve="n" />
-                            </node>
-                            <node concept="2yIwOk" id="4kpiU1vG3RI" role="2OqNvi" />
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="4kpiU1vG4jB" role="3uHU7w">
-                          <property role="Xl_RC" value=": " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs6" id="XhdFKvXRue" role="3cqZAp">
                 <node concept="2OqwBi" id="XhdFKvXRug" role="3cqZAk">
                   <node concept="37vLTw" id="2s2qa7R0LJq" role="2Oq$k0">
