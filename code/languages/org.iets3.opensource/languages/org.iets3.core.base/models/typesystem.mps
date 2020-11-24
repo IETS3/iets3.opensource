@@ -204,7 +204,7 @@
     <property role="TrG5h" value="check_ICanRunCheckManually" />
     <property role="3GE5qa" value="adapter" />
     <node concept="3clFbS" id="2BX$1355fcm" role="18ibNy">
-      <node concept="1X3_iC" id="4MH81Y0UuMn" role="lGtFl">
+      <node concept="1X3_iC" id="7pGmjNvY8bF" role="lGtFl">
         <property role="3V$3am" value="statement" />
         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
         <node concept="3clFbF" id="3q2wVepy$u2" role="8Wnug">
@@ -215,12 +215,42 @@
             </node>
             <node concept="liA8E" id="3q2wVepy$u1" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="3q2wVepyTqZ" role="37wK5m">
-                <node concept="1YBJjd" id="3q2wVepyTr6" role="3uHU7w">
-                  <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
+              <node concept="3cpWs3" id="2NazPIlIH6$" role="37wK5m">
+                <node concept="2OqwBi" id="2NazPIlIHBc" role="3uHU7w">
+                  <node concept="1YBJjd" id="2NazPIlIH70" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
+                  </node>
+                  <node concept="2qgKlT" id="2NazPIlIITU" role="2OqNvi">
+                    <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
+                  </node>
                 </node>
-                <node concept="Xl_RD" id="3q2wVepy$J3" role="3uHU7B">
-                  <property role="Xl_RC" value="CHECKING RULE check_ICanRunCheckManually begin " />
+                <node concept="3cpWs3" id="2NazPIlICW$" role="3uHU7B">
+                  <node concept="3cpWs3" id="2NazPIlIA_7" role="3uHU7B">
+                    <node concept="3cpWs3" id="2NazPIlIyoD" role="3uHU7B">
+                      <node concept="3cpWs3" id="3q2wVepyTqZ" role="3uHU7B">
+                        <node concept="Xl_RD" id="3q2wVepy$J3" role="3uHU7B">
+                          <property role="Xl_RC" value="CHECKING RULE check_ICanRunCheckManually begin " />
+                        </node>
+                        <node concept="1YBJjd" id="3q2wVepyTr6" role="3uHU7w">
+                          <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2NazPIlIyoG" role="3uHU7w">
+                        <property role="Xl_RC" value=" mustBeRunMan=" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2NazPIlIB2D" role="3uHU7w">
+                      <node concept="1YBJjd" id="2NazPIlIA_n" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2BX$1355fco" resolve="icrm" />
+                      </node>
+                      <node concept="2qgKlT" id="2NazPIlICes" role="2OqNvi">
+                        <ref role="37wK5l" to="gdgh:3R3AIvumAZH" resolve="mustBeRunManually" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="2NazPIlICWB" role="3uHU7w">
+                    <property role="Xl_RC" value=" hasExistingRes=" />
+                  </node>
                 </node>
               </node>
             </node>

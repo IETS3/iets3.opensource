@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
@@ -684,43 +685,51 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="4Pi6J8Cbqv4" role="3cqZAp">
-                        <node concept="2OqwBi" id="4Pi6J8Cbqv5" role="3clFbG">
-                          <node concept="2OqwBi" id="4Pi6J8Cbqv6" role="2Oq$k0">
-                            <node concept="2YIFZM" id="4Pi6J8Cbqv7" role="2Oq$k0">
-                              <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
-                              <ref role="37wK5l" to="kvq8:2WlJ6VKOSU7" resolve="findAllInstances" />
+                      <node concept="3cpWs8" id="2NazPIlP$3P" role="3cqZAp">
+                        <node concept="3cpWsn" id="2NazPIlP$3Q" role="3cpWs9">
+                          <property role="TrG5h" value="rootECs" />
+                          <node concept="A3Dl8" id="2NazPIlPyWX" role="1tU5fm">
+                            <node concept="3uibUv" id="2NazPIlPyX0" role="A3Ik2">
+                              <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                             </node>
-                            <node concept="3zZkjj" id="4Pi6J8Cbqv8" role="2OqNvi">
-                              <node concept="1bVj0M" id="4Pi6J8Cbqv9" role="23t8la">
-                                <node concept="3clFbS" id="4Pi6J8Cbqva" role="1bW5cS">
-                                  <node concept="3clFbF" id="4Pi6J8Cbqvb" role="3cqZAp">
-                                    <node concept="3clFbC" id="4Pi6J8Cbqvc" role="3clFbG">
-                                      <node concept="2OqwBi" id="4Pi6J8Cbqvd" role="3uHU7B">
-                                        <node concept="2OqwBi" id="4Pi6J8Cbqve" role="2Oq$k0">
-                                          <node concept="37vLTw" id="4Pi6J8Cbqvf" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="4Pi6J8Cbqvj" resolve="it" />
-                                          </node>
-                                          <node concept="liA8E" id="4Pi6J8Cbqvg" role="2OqNvi">
-                                            <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell()" resolve="getRootCell" />
-                                          </node>
+                          </node>
+                          <node concept="2OqwBi" id="2NazPIlP$3R" role="33vP2m">
+                            <node concept="3zZkjj" id="2NazPIlP$3T" role="2OqNvi">
+                              <node concept="1bVj0M" id="2NazPIlP$3U" role="23t8la">
+                                <node concept="3clFbS" id="2NazPIlP$3V" role="1bW5cS">
+                                  <node concept="3clFbF" id="2NazPIlP$3W" role="3cqZAp">
+                                    <node concept="3clFbC" id="2NazPIlP$3X" role="3clFbG">
+                                      <node concept="2OqwBi" id="2NazPIlP$3Z" role="3uHU7B">
+                                        <node concept="37vLTw" id="2NazPIlP$40" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2NazPIlP$44" resolve="it" />
                                         </node>
-                                        <node concept="liA8E" id="4Pi6J8Cbqvh" role="2OqNvi">
-                                          <ref role="37wK5l" to="f4zo:~EditorCell.getSNode()" resolve="getSNode" />
+                                        <node concept="liA8E" id="2NazPIlRoYW" role="2OqNvi">
+                                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode()" resolve="getEditedNode" />
                                         </node>
                                       </node>
-                                      <node concept="37vLTw" id="4Pi6J8Cbqvi" role="3uHU7w">
+                                      <node concept="37vLTw" id="2NazPIlP$43" role="3uHU7w">
                                         <ref role="3cqZAo" node="4Pi6J8CbquR" resolve="cr" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="4Pi6J8Cbqvj" role="1bW2Oz">
+                                <node concept="Rh6nW" id="2NazPIlP$44" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="4Pi6J8Cbqvk" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="2NazPIlP$45" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>
+                            <node concept="2YIFZM" id="2NazPIlPVql" role="2Oq$k0">
+                              <ref role="37wK5l" to="kvq8:2WlJ6VKOSU7" resolve="findAllInstances" />
+                              <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="4Pi6J8Cbqv4" role="3cqZAp">
+                        <node concept="2OqwBi" id="4Pi6J8Cbqv5" role="3clFbG">
+                          <node concept="37vLTw" id="2NazPIlP$46" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2NazPIlP$3Q" resolve="rootECs" />
                           </node>
                           <node concept="2es0OD" id="4Pi6J8Cbqvl" role="2OqNvi">
                             <node concept="1bVj0M" id="4Pi6J8Cbqvm" role="23t8la">
