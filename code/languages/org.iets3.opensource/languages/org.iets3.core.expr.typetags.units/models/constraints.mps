@@ -587,5 +587,39 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1KUmgSFvSuo">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1M2myG" to="b0gq:7eOyx9r3jsZ" resolve="Unit" />
+    <node concept="1N5Pfh" id="1KUmgSFvSup" role="1Mr941">
+      <ref role="1N5Vy1" to="b0gq:1KUmgSFpwWq" resolve="dimension" />
+      <node concept="3dgokm" id="1KUmgSFvSut" role="1N6uqs">
+        <node concept="3clFbS" id="1KUmgSFvSuv" role="2VODD2">
+          <node concept="3clFbF" id="1Ovl2ivuHjR" role="3cqZAp">
+            <node concept="2YIFZM" id="1Ovl2ivuHol" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2YIFZM" id="1KUmgSFw73M" role="37wK5m">
+                <ref role="37wK5l" to="dntf:1KUmgSFw1bh" resolve="getVisibleDimensionFrom" />
+                <ref role="1Pybhc" to="dntf:6FK1Pb8y_co" resolve="ScopingHelper" />
+                <node concept="1eOMI4" id="1KUmgSFw73N" role="37wK5m">
+                  <node concept="3K4zz7" id="1KUmgSFw73O" role="1eOMHV">
+                    <node concept="2rP1CM" id="1KUmgSFw73P" role="3K4E3e" />
+                    <node concept="2OqwBi" id="1KUmgSFw73Q" role="3K4Cdx">
+                      <node concept="3kakTB" id="1KUmgSFw73R" role="2Oq$k0" />
+                      <node concept="3w_OXm" id="1KUmgSFw73S" role="2OqNvi" />
+                    </node>
+                    <node concept="2OqwBi" id="1KUmgSFw73T" role="3K4GZi">
+                      <node concept="3kakTB" id="1KUmgSFw73U" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="1KUmgSFw73V" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
