@@ -51,7 +51,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -180,7 +180,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -395,10 +395,10 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -947,7 +947,7 @@
                   <property role="TrG5h" value="expTypeSpec" />
                   <node concept="3rvAFt" id="7VMKIn_KAAm" role="1tU5fm">
                     <node concept="3Tqbb2" id="7VMKIn_KAAn" role="3rvQeY">
-                      <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                      <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                     </node>
                     <node concept="3uibUv" id="5pSqQr$QjRM" role="3rvSg0">
                       <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
@@ -967,7 +967,7 @@
                   <property role="TrG5h" value="toTypeSpec" />
                   <node concept="3rvAFt" id="7VMKIn_KAAv" role="1tU5fm">
                     <node concept="3Tqbb2" id="7VMKIn_KAAw" role="3rvQeY">
-                      <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                      <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                     </node>
                     <node concept="3uibUv" id="5Q6EZP5NzrP" role="3rvSg0">
                       <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
@@ -3473,7 +3473,7 @@
                     <property role="TrG5h" value="convertExpressionSourceUnitMap" />
                     <node concept="3rvAFt" id="yGiRIEVxwD" role="1tU5fm">
                       <node concept="3Tqbb2" id="yGiRIEVxwE" role="3rvQeY">
-                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP663Y4" role="3rvSg0">
                         <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
@@ -3496,7 +3496,7 @@
                     <property role="TrG5h" value="ruleSourceUnitMap" />
                     <node concept="3rvAFt" id="yGiRIEVxwM" role="1tU5fm">
                       <node concept="3Tqbb2" id="yGiRIEVxwN" role="3rvQeY">
-                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP664kl" role="3rvSg0">
                         <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
@@ -3529,7 +3529,7 @@
                     <property role="TrG5h" value="convertExpressionTargetUnitMap" />
                     <node concept="3rvAFt" id="6CnXAkqy_sD" role="1tU5fm">
                       <node concept="3Tqbb2" id="6CnXAkqy_sE" role="3rvQeY">
-                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP67Ggn" role="3rvSg0">
                         <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
@@ -3557,7 +3557,7 @@
                     <property role="TrG5h" value="ruleTargetUnitMap" />
                     <node concept="3rvAFt" id="6CnXAkqy_sO" role="1tU5fm">
                       <node concept="3Tqbb2" id="6CnXAkqy_sP" role="3rvQeY">
-                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnitLike" />
+                        <ref role="ehGHo" to="b0gq:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5Q6EZP67FUw" role="3rvSg0">
                         <ref role="3uigEE" to="dntf:5dSoB2LMRlC" resolve="Fraction" />
