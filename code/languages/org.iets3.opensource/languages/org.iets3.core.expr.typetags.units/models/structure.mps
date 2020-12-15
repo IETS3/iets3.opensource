@@ -16,6 +16,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -92,6 +95,11 @@
     <property role="R4oN_" value="Unit Definition" />
     <property role="EcuMT" value="8337440621611267903" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1KUmgSFpwWq" role="1TKVEi">
+      <property role="IQ2ns" value="2034036099103723290" />
+      <property role="20kJfa" value="dimension" />
+      <ref role="20lvS9" node="1KUmgSFpwWn" resolve="Quantity" />
+    </node>
     <node concept="1TJgyj" id="7eOyx9r3k4r" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="specification" />
@@ -102,6 +110,9 @@
       <property role="TrG5h" value="description" />
       <property role="IQ2nx" value="8337440621611269512" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="1KUmgSFpwWl" role="lGtFl">
+        <property role="YLQ7P" value="use dimensions" />
+      </node>
     </node>
     <node concept="PrWs8" id="7eOyx9r3k3q" role="PzmwI">
       <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
@@ -122,6 +133,9 @@
       <property role="IQ2ns" value="8337440621611297539" />
       <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
     </node>
+    <node concept="PrWs8" id="1KUmgSF_7Tb" role="PzmwI">
+      <ref role="PrY4T" node="1KUmgSF_6Qv" resolve="ISpecification" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3kR5">
     <property role="TrG5h" value="UnitReference" />
@@ -141,7 +155,7 @@
       <property role="20kJfa" value="unit" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8337440621611297532" />
-      <ref role="20lvS9" node="7eOyx9r3k3e" resolve="IUnit" />
+      <ref role="20lvS9" node="7eOyx9r3jsZ" resolve="Unit" />
     </node>
     <node concept="RPilO" id="7cBI1LfYpmP" role="lGtFl">
       <ref role="RPilL" node="7eOyx9r3qFW" resolve="unit" />
@@ -349,6 +363,21 @@
     <property role="EcuMT" value="9088900783727406010" />
     <property role="3GE5qa" value="conversion" />
     <property role="TrG5h" value="IConvertUnit" />
+  </node>
+  <node concept="1TIwiD" id="1KUmgSFpwWn">
+    <property role="EcuMT" value="2034036099103723287" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="Quantity" />
+    <property role="34LRSv" value="quantity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1KUmgSFpIfY" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1KUmgSF_6Qv">
+    <property role="EcuMT" value="2034036099106762143" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="ISpecification" />
   </node>
 </model>
 

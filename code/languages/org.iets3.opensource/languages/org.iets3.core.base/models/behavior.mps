@@ -1145,7 +1145,7 @@
               <property role="3oM_SC" value="problem" />
             </node>
             <node concept="3oM_SD" id="17Nm8oCo8uS" role="1PaTwD">
-              <property role="3oM_SC" value="ist" />
+              <property role="3oM_SC" value="is" />
             </node>
             <node concept="3oM_SD" id="17Nm8oCo8uT" role="1PaTwD">
               <property role="3oM_SC" value="that" />
