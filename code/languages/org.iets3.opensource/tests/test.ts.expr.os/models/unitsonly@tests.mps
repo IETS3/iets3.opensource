@@ -167,7 +167,6 @@
       <concept id="5185104661801317038" name="org.iets3.core.expr.typetags.units.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="624957442818070507" name="org.iets3.core.expr.typetags.units.structure.StripUnitExpression" flags="ng" index="2yh1Mg" />
       <concept id="8337440621611267903" name="org.iets3.core.expr.typetags.units.structure.Unit" flags="ng" index="CIrOH">
-        <property id="8337440621611269512" name="description" index="CIruq" />
         <reference id="2034036099103723290" name="dimension" index="Rn5ok" />
         <child id="8337440621611270427" name="specification" index="CIsG9" />
       </concept>
@@ -998,17 +997,14 @@
         <node concept="_ixoA" id="2JXkwhJhlUu" role="_iOnC" />
         <node concept="CIrOH" id="2JXkwhJhWCi" role="_iOnC">
           <property role="TrG5h" value="u1" />
-          <property role="CIruq" value="u1" />
           <ref role="Rn5ok" node="1KUmgSFvJZW" resolve="u1d" />
         </node>
         <node concept="CIrOH" id="2JXkwhJhWH5" role="_iOnC">
           <property role="TrG5h" value="u2" />
-          <property role="CIruq" value="u2" />
           <ref role="Rn5ok" node="1KUmgSFvJZX" resolve="u2d" />
         </node>
         <node concept="CIrOH" id="2JXkwhJhWIP" role="_iOnC">
           <property role="TrG5h" value="u3" />
-          <property role="CIruq" value="u3" />
           <ref role="Rn5ok" node="1KUmgSFvJZY" resolve="u3d" />
         </node>
         <node concept="_ixoA" id="2JXkwhJhWEZ" role="_iOnC" />
@@ -1062,7 +1058,6 @@
         <property role="TrG5h" value="Conversion_c" />
         <node concept="CIrOH" id="4UY$tRc1Vet" role="_iOnC">
           <property role="TrG5h" value="myMs" />
-          <property role="CIruq" value="myMillisecond" />
           <ref role="Rn5ok" node="1KUmgSFvJZT" resolve="myMillisecond" />
         </node>
         <node concept="TRoc0" id="4UY$tRc1Vbb" role="_iOnC">
@@ -1099,7 +1094,6 @@
         </node>
         <node concept="CIrOH" id="3FpaOZJSpOY" role="_iOnC">
           <property role="TrG5h" value="myC" />
-          <property role="CIruq" value="myCs" />
           <ref role="Rn5ok" node="1KUmgSFvJZV" resolve="myCs" />
         </node>
         <node concept="TRoc0" id="3FpaOZJSp$f" role="_iOnC">
@@ -1120,7 +1114,6 @@
         </node>
         <node concept="CIrOH" id="3FpaOZK6fQ9" role="_iOnC">
           <property role="TrG5h" value="squareMetre" />
-          <property role="CIruq" value="squareMetre" />
           <ref role="Rn5ok" node="1KUmgSFvJZU" resolve="squareMetred" />
         </node>
         <node concept="TRoc0" id="3FpaOZK6fSJ" role="_iOnC">
@@ -1517,12 +1510,10 @@
         <property role="TrG5h" value="Conversion_errors" />
         <node concept="CIrOH" id="6rhVuic9JQF" role="_iOnC">
           <property role="TrG5h" value="myMs" />
-          <property role="CIruq" value="myMillisecond" />
           <ref role="Rn5ok" node="1KUmgSFvJZZ" resolve="myMillisecond" />
         </node>
         <node concept="CIrOH" id="6rhVuic9JQT" role="_iOnC">
           <property role="TrG5h" value="myC" />
-          <property role="CIruq" value="myCs" />
           <ref role="Rn5ok" node="1KUmgSFvK00" resolve="myCs" />
         </node>
         <node concept="TRoc0" id="6rhVuic9JQU" role="_iOnC">
@@ -5697,27 +5688,22 @@
     <property role="TrG5h" value="UnitsAndConversions" />
     <node concept="CIrOH" id="2JXkwhJfMYw" role="_iOnC">
       <property role="TrG5h" value="mm" />
-      <property role="CIruq" value="millimetre" />
       <ref role="Rn5ok" node="1KUmgSFvJZN" resolve="millimetre" />
     </node>
     <node concept="CIrOH" id="2JXkwhJfNt9" role="_iOnC">
       <property role="TrG5h" value="dm" />
-      <property role="CIruq" value="decimetre" />
       <ref role="Rn5ok" node="1KUmgSFvJZS" resolve="decimetre" />
     </node>
     <node concept="CIrOH" id="2JXkwhJfQ5c" role="_iOnC">
       <property role="TrG5h" value="cm" />
-      <property role="CIruq" value="centimetre" />
       <ref role="Rn5ok" node="1KUmgSFvJZQ" resolve="centimetre" />
     </node>
     <node concept="CIrOH" id="2JXkwhJfWHv" role="_iOnC">
       <property role="TrG5h" value="percent" />
-      <property role="CIruq" value="percent" />
       <ref role="Rn5ok" node="1KUmgSFvJZR" resolve="percent" />
     </node>
     <node concept="CIrOH" id="5XaocLWIt6X" role="_iOnC">
       <property role="TrG5h" value="mps" />
-      <property role="CIruq" value="metre per second" />
       <ref role="Rn5ok" node="1KUmgSFvJZP" resolve="metre per second" />
       <node concept="CIsGf" id="5XaocLWIt7Y" role="CIsG9">
         <node concept="CIsvn" id="5XaocLWIt85" role="CIi4h">
@@ -5733,7 +5719,6 @@
     </node>
     <node concept="CIrOH" id="5XaocLWJ9Gy" role="_iOnC">
       <property role="TrG5h" value="acc" />
-      <property role="CIruq" value="acceleration" />
       <ref role="Rn5ok" node="1KUmgSFvJZO" resolve="acceleration" />
       <node concept="CIsGf" id="5XaocLWJadY" role="CIsG9">
         <node concept="CIsvn" id="5XaocLWJae5" role="CIi4h">
