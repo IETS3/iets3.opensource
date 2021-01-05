@@ -2146,5 +2146,9 @@
     <property role="3GE5qa" value="nix" />
     <property role="TrG5h" value="ITargetThatCanDealWithNix" />
   </node>
+  <node concept="PlHQZ" id="6xvNSEj6BMb">
+    <property role="EcuMT" value="7520958096812440715" />
+    <property role="TrG5h" value="IComplexTypeSupportsEquals" />
+  </node>
 </model>
 

@@ -10,22 +10,17 @@
   </languages>
   <imports>
     <import index="yjde" ref="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)" />
+    <import index="t4jv" ref="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
-        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
-      </concept>
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
         <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
-        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
-      </concept>
-      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -216,11 +211,7 @@
               <ref role="_emDf" node="5FFsEXIecfS" resolve="p1" />
             </node>
             <node concept="7CXmI" id="5FFsEXIfl6w" role="lGtFl">
-              <node concept="1TM$A" id="5FFsEXIflax" role="7EUXB">
-                <node concept="2PYRI3" id="5FFsEXIflie" role="3lydEf">
-                  <ref role="39XzEq" to="yjde:uZYoDOOM4k" />
-                </node>
-              </node>
+              <node concept="1TM$A" id="5FFsEXIflax" role="7EUXB" />
             </node>
           </node>
         </node>
@@ -228,11 +219,7 @@
           <property role="TrG5h" value="comp5" />
           <node concept="30cPrO" id="5FFsEXIflr_" role="2zPyp_">
             <node concept="7CXmI" id="5FFsEXIflrC" role="lGtFl">
-              <node concept="1TM$A" id="5FFsEXIflrD" role="7EUXB">
-                <node concept="2PYRI3" id="5FFsEXIflrE" role="3lydEf">
-                  <ref role="39XzEq" to="yjde:uZYoDOOM4k" />
-                </node>
-              </node>
+              <node concept="1TM$A" id="5FFsEXIflrD" role="7EUXB" />
             </node>
             <node concept="30bXRB" id="5FFsEXIflE0" role="30dEsF">
               <property role="30bXRw" value="5" />
@@ -301,11 +288,7 @@
               <property role="30bXRw" value="5" />
             </node>
             <node concept="7CXmI" id="6xvNSEiXYsU" role="lGtFl">
-              <node concept="1TM$A" id="6xvNSEiXYsV" role="7EUXB">
-                <node concept="2PYRI3" id="6xvNSEiXYAj" role="3lydEf">
-                  <ref role="39XzEq" to="yjde:uZYoDOOM4k" />
-                </node>
-              </node>
+              <node concept="1TM$A" id="6xvNSEiXYsV" role="7EUXB" />
             </node>
           </node>
         </node>
@@ -319,11 +302,7 @@
               <ref role="_emDf" node="5FFsEXIecfS" resolve="p1" />
             </node>
             <node concept="7CXmI" id="6xvNSEiXYGC" role="lGtFl">
-              <node concept="1TM$A" id="6xvNSEiXYGD" role="7EUXB">
-                <node concept="2PYRI3" id="6xvNSEiXYT9" role="3lydEf">
-                  <ref role="39XzEq" to="yjde:uZYoDOOM4k" />
-                </node>
-              </node>
+              <node concept="1TM$A" id="6xvNSEiXYGD" role="7EUXB" />
             </node>
           </node>
         </node>
