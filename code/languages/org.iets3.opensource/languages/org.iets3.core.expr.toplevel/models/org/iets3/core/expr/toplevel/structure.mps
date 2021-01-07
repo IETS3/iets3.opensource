@@ -1085,6 +1085,9 @@
     <node concept="PrWs8" id="6JZACDWI_Pm" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
     </node>
+    <node concept="PrWs8" id="6xvNSEj83KR" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3ijD2AhNGn5">
     <property role="EcuMT" value="3788552209995580869" />
