@@ -24,6 +24,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -46,6 +47,13 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -109,6 +117,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -448,6 +464,88 @@
               </node>
               <node concept="3clFbT" id="6WstIz8MKEx" role="37wK5m">
                 <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2KRUNf1kRP_">
+    <ref role="1M2myG" to="e9k1:2KRUNf1kRPn" resolve="EmptyInput" />
+    <node concept="9S07l" id="2KRUNf1kRXL" role="9Vyp8">
+      <node concept="3clFbS" id="2KRUNf1kRXM" role="2VODD2">
+        <node concept="3SKdUt" id="2KRUNf1m7lT" role="3cqZAp">
+          <node concept="1PaTwC" id="2KRUNf1m7lU" role="1aUNEU">
+            <node concept="3oM_SD" id="2KRUNf1m7nx" role="1PaTwD">
+              <property role="3oM_SC" value="DataRow" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7nR" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7oj" role="1PaTwD">
+              <property role="3oM_SC" value="cover" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7oK" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7oQ" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;wrap&quot;" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7pl" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7pD" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7pM" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7q8" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7qj" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7rQ" role="1PaTwD">
+              <property role="3oM_SC" value="typed" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7s3" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7sh" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7sG" role="1PaTwD">
+              <property role="3oM_SC" value="cell" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7sW" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7td" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2KRUNf1m7uQ" role="1PaTwD">
+              <property role="3oM_SC" value="datarow" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2KRUNf1kRY9" role="3cqZAp">
+          <node concept="22lmx$" id="2KRUNf1m6tl" role="3clFbG">
+            <node concept="2OqwBi" id="2KRUNf1m6I2" role="3uHU7w">
+              <node concept="nLn13" id="2KRUNf1m6uu" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="2KRUNf1m71d" role="2OqNvi">
+                <node concept="chp4Y" id="2KRUNf1m761" role="cj9EA">
+                  <ref role="cht4Q" to="e9k1:cPLa7FpcCS" resolve="DataCell" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2KRUNf1kS8P" role="3uHU7B">
+              <node concept="nLn13" id="2KRUNf1kRY8" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="2KRUNf1kSjq" role="2OqNvi">
+                <node concept="chp4Y" id="2KRUNf1kSpn" role="cj9EA">
+                  <ref role="cht4Q" to="e9k1:cPLa7Fpiy9" resolve="DataRow" />
+                </node>
               </node>
             </node>
           </node>

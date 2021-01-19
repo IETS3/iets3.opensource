@@ -272,5 +272,15 @@
       <ref role="20lvS9" node="cPLa7Fpiy9" resolve="DataRow" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2KRUNf1kRPn">
+    <property role="EcuMT" value="3186273868907248983" />
+    <property role="TrG5h" value="EmptyInput" />
+    <property role="R4oN_" value="value that is matched if the input is none" />
+    <property role="34LRSv" value="emptyInput" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="2KRUNf1m9jS" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+  </node>
 </model>
 
