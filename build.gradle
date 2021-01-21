@@ -60,10 +60,10 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2020"
-def minor = "2"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2020.2.3'
+ext.mpsVersion = '2020.3'
 
 def mbeddrVersion = "mps-2020.3+"
 
