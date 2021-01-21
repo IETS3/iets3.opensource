@@ -566,6 +566,9 @@
       <property role="IQ2ns" value="8355348994405084500" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="MNXm1ElbHv" role="PzmwI">
+      <ref role="PrY4T" node="MNXm1ElbHo" resolve="IEmptyLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEji_">
     <property role="3GE5qa" value="option" />
@@ -2140,11 +2143,24 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="MNXm1ElbHt" role="PzmwI">
+      <ref role="PrY4T" node="MNXm1ElbHo" resolve="IEmptyLiteral" />
+    </node>
   </node>
   <node concept="PlHQZ" id="26cjRADipGQ">
     <property role="EcuMT" value="2417394483940924214" />
     <property role="3GE5qa" value="nix" />
     <property role="TrG5h" value="ITargetThatCanDealWithNix" />
+  </node>
+  <node concept="PlHQZ" id="MNXm1ElbHo">
+    <property role="EcuMT" value="915344943735946072" />
+    <property role="TrG5h" value="IEmptyLiteral" />
+    <node concept="PrWs8" id="MNXm1ElbHp" role="PrDN$">
+      <ref role="PrY4T" node="6JZACDWQJu4" resolve="ILiteral" />
+    </node>
+    <node concept="t5JxF" id="MNXm1ElbHr" role="lGtFl">
+      <property role="t5JxN" value="Marker interface used to marke literals that at runtime evaluate to None/Nix." />
+    </node>
   </node>
 </model>
 

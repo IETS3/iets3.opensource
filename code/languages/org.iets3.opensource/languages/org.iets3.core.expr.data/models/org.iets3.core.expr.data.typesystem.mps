@@ -506,8 +506,8 @@
                                           </node>
                                         </node>
                                         <node concept="1mIQ4w" id="2KRUNf1mG36" role="2OqNvi">
-                                          <node concept="chp4Y" id="2KRUNf1mG37" role="cj9EA">
-                                            <ref role="cht4Q" to="e9k1:2KRUNf1kRPn" resolve="EmptyInput" />
+                                          <node concept="chp4Y" id="MNXm1Elemj" role="cj9EA">
+                                            <ref role="cht4Q" to="hm2y:MNXm1ElbHo" resolve="IEmptyLiteral" />
                                           </node>
                                         </node>
                                       </node>

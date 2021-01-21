@@ -278,8 +278,8 @@
     <property role="R4oN_" value="value that is matched if the input is none" />
     <property role="34LRSv" value="emptyInput" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="PrWs8" id="2KRUNf1m9jS" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    <node concept="PrWs8" id="MNXm1EqQbF" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:MNXm1ElbHo" resolve="IEmptyLiteral" />
     </node>
   </node>
 </model>
