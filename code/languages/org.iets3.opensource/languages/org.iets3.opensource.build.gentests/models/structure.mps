@@ -50,7 +50,7 @@
       <property role="IQ2ns" value="4604852045247358204" />
       <property role="20kJfa" value="testModules" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5tjl:3X9rC2XzJdH" resolve="BuildMpsLayout_TestModules" />
+      <ref role="20lvS9" to="5tjl:3X9rC2XzJdH" resolve="BuildAspect_MpsTestModules" />
     </node>
     <node concept="PrWs8" id="79dWhRIaSWI" role="PzmwI">
       <ref role="PrY4T" to="3ior:IFRVVI6zqz" resolve="BuildExternalDependency" />
