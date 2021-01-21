@@ -324,10 +324,23 @@ task setup {
 
 defaultTasks 'buildLanguages'
 
+def listMergedPRs = {
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'sh', './listMergedPRs.sh'
+        standardOutput = stdout
+    }
+    stdout.toString()
+}
+
 def currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+def prCommitsList = "${-> listMergedPRs().readLines().collect { line -> "- $line"}.join("\n")}"
 def langLibDeps = project.configurations.languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies
 def depsList = langLibDeps.collect {"- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"}.join("\n")
 def releaseNotes = """Automated Nighly build from ${currentDate}.
+
+Included pull requests since last Nightly build:
+${prCommitsList}
 
 Includes dependencies:
 ${depsList}
@@ -340,9 +353,14 @@ github {
     tagName = 'nightly-' + version
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     name = 'Nighly Build ' + version
-    body = releaseNotes
     prerelease = true
     assets = packageDistroWithDependencies.outputs.files.collect {it.path}
+}
+githubRelease.doFirst {
+    // do late body init to avoid executing listMergedPRs during config phase
+    github {
+        body = releaseNotes
+    }
 }
 
 githubRelease.dependsOn packageDistroWithDependencies
