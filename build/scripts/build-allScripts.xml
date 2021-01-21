@@ -3,12 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/org.iets3.opensource.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/org.iets3.opensource.allScripts.build" />
-  <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS 2017.1 EAP.app/Contents" />
   <property name="iets3.github.opensource.home" location="${basedir}/../.." />
-  <property name="artifacts.root" location="${iets3.github.opensource.home}/artifacts" />
-  <property name="iets3.os.home" location="${basedir}/../../code/languages/org.iets3.opensource" />
+  <property name="mps.home" location="${iets3.github.opensource.home}/build/mps" />
+  <property name="dependencies.root" location="${iets3.github.opensource.home}/build/dependencies" />
+  <property name="iets3.lang.opensource" location="${iets3.github.opensource.home}/code/languages/org.iets3.opensource" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.com.mbeddr.platform" location="${artifacts.root}/com.mbeddr.platform" />
+  <property name="artifacts.com.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -65,26 +65,26 @@
     </echoxml>
     <jar destfile="${build.layout}/org.iets3.opensource.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.iets3.opensource.build" />
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build" includes="icons/**, resources/**" />
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build" includes="icons/**, resources/**" />
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.iets3.opensource.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.build-models">
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/org.iets3.opensource.build-src.jar" duplicate="preserve">
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen">
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${iets3.os.home}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" prefix="module" />
+      <zipfileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.iets3.opensource.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/lib" />
     <copy todir="${build.layout}/lib">
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/lib" />
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib" />
     </copy>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
@@ -232,20 +232,20 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <chunk>
-        <module file="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" />
-        <module file="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" />
+        <module file="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" />
+        <module file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" />
       </chunk>
       <chunk>
-        <module file="${iets3.os.home}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" />
+        <module file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/org.iets3.opensource.build.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="mps.home" path="${mps.home}" />
       <macro name="iets3.github.opensource.home" path="${iets3.github.opensource.home}" />
-      <macro name="artifacts.root" path="${artifacts.root}" />
-      <macro name="iets3.os.home" path="${iets3.os.home}" />
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="dependencies.root" path="${dependencies.root}" />
+      <macro name="iets3.lang.opensource" path="${iets3.lang.opensource}" />
     </generate>
   </target>
   
@@ -256,35 +256,35 @@
   <target name="makeDependents" />
   
   <target name="java.compile.org.iets3.opensource.build" depends="java.compile.org.iets3.opensource.build.gentests.rt, fetchDependencies">
-    <mkdir dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
+    <mkdir dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.build" />
     <javac destdir="${build.tmp}/java/out/org.iets3.opensource.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
+        <path location="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt" />
-        <fileset file="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
+        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build">
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen">
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
   </target>
   
   <target name="java.compile.org.iets3.opensource.build.gentests" depends="fetchDependencies">
-    <mkdir dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/source_gen" />
+    <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.build.gentests" />
     <javac destdir="${build.tmp}/java/out/org.iets3.opensource.build.gentests" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/source_gen" />
+        <path location="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -331,19 +331,19 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build.gentests">
-      <fileset dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/source_gen">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
   </target>
   
   <target name="java.compile.org.iets3.opensource.build.gentests#01" depends="java.compile.org.iets3.opensource.build.gentests, fetchDependencies">
-    <mkdir dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
+    <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.build.gentests#01" />
     <javac destdir="${build.tmp}/java/out/org.iets3.opensource.build.gentests#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
+        <path location="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -389,38 +389,38 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build.gentests#01">
-      <fileset dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/generator/source_gen">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/generator/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
   </target>
   
   <target name="java.compile.org.iets3.opensource.build.gentests.rt" depends="fetchDependencies">
-    <mkdir dir="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
+    <mkdir dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt" />
     <javac destdir="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
+        <path location="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
+        <fileset file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/lib/takari-cpsuite-1.2.7.jar" />
         <fileset file="${artifacts.mps}/lib/hamcrest-core-1.3.jar" />
         <fileset file="${artifacts.mps}/lib/junit-4.12.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.iets3.opensource.build.gentests.rt">
-      <fileset dir="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/source_gen">
+      <fileset dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/source_gen" />
-    <delete dir="${iets3.os.home}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
-    <delete dir="${iets3.os.home}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
-    <delete dir="${iets3.os.home}/solutions/org.iets3.opensource.build/source_gen" />
+    <delete dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/source_gen" />
+    <delete dir="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/generator/source_gen" />
+    <delete dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/source_gen" />
+    <delete dir="${iets3.lang.opensource}/solutions/org.iets3.opensource.build/source_gen" />
   </target>
 </project>

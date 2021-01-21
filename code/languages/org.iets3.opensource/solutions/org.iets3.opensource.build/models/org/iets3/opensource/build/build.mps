@@ -27,7 +27,9 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW">
+        <child id="1688667350638517006" name="compressArgs" index="XX84c" />
+      </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -74,6 +76,7 @@
       </concept>
       <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
       <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
+        <property id="4915877860348071612" name="fileName" index="turDy" />
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
         <child id="4796668409958418110" name="scriptsDir" index="auvoZ" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
@@ -89,7 +92,14 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
+        <reference id="5610619299013057365" name="target" index="3ygNvj" />
+        <child id="6789562173791401562" name="selectors" index="1juEy9" />
+      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904288051111" name="jetbrains.mps.build.structure.BuildFileExcludeSelector" flags="ng" index="3LWZYq">
+        <property id="5248329904288051112" name="pattern" index="3LWZYl" />
+      </concept>
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
         <child id="5248329904287794598" name="dir" index="3LXTmr" />
         <child id="5248329904287794679" name="selectors" index="3LXTna" />
@@ -206,47 +216,10 @@
   </registry>
   <node concept="1l3spW" id="5wLtKNeSRPl">
     <property role="TrG5h" value="org.iets3.opensource" />
-    <property role="2DA0ip" value="../../../../../build/iets3.opensource" />
+    <property role="2DA0ip" value="../../../../../build/scripts" />
+    <property role="turDy" value="build-languages.xml" />
     <node concept="10PD9b" id="5wLtKNeSRPm" role="10PD9s" />
     <node concept="3b7kt6" id="5wLtKNeSRPn" role="10PD9s" />
-    <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
-      <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="5wLtKNeT9Pe" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeTah3" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5wLtKNeTah6" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5wLtKNeTah9" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="5wLtKNeTahc" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="5wLtKNeTahf" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeTahi" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="3r1yjRrrcPM" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="3r1yjRrrd3H" role="2Ry0An">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="3r1yjRrrd62" role="2Ry0An">
-                          <property role="2Ry0Am" value="Applications" />
-                          <node concept="2Ry0Ak" id="5$yCC4GB0v_" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPSfi 2017.1 EAP.app" />
-                            <node concept="2Ry0Ak" id="5$yCC4GB0w4" role="2Ry0An">
-                              <property role="2Ry0Am" value="Contents" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="44RyrhrBozY" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
       <node concept="55IIr" id="44RyrhrBozZ" role="398pKh">
@@ -258,46 +231,22 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-      <node concept="398BVA" id="44RyrhrBqkL" role="398pKh">
+    <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="71zSQigYR$Z" role="398pKh">
         <ref role="398BVh" node="44RyrhrBozY" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="44RyrhrBqkV" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="1Y5vs7yJZkG" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform" />
-      <node concept="398BVA" id="1Y5vs7yK03D" role="398pKh">
-        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="1Y5vs7yK0xO" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="1Y5vs7yK11W" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.allScripts" />
-      <node concept="398BVA" id="1Y5vs7yK1L2" role="398pKh">
-        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="1Y5vs7yK2fd" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.allScripts.build" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="4N7LxkPJKSm" role="1l3spd">
-      <property role="TrG5h" value="iets3.artifacts.root" />
-      <node concept="398BVA" id="4N7LxkPJKSn" role="398pKh">
-        <ref role="398BVh" node="44RyrhrBozY" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="4N7LxkPJKSo" role="iGT6I">
+        <node concept="2Ry0Ak" id="71zSQigYR_0" role="iGT6I">
           <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="71zSQigYR_1" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="398rNT" id="5wLtKNeTaqD" role="1l3spd">
       <property role="TrG5h" value="iets3.lang.opensource" />
       <node concept="398BVA" id="44RyrhrBoWI" role="398pKh">
-        <ref role="398BVh" node="44RyrhrBozY" resolve="iets3.github.opensource.home" />
+        <ref role="398BVh" node="44RyrhrBozY" />
         <node concept="2Ry0Ak" id="44RyrhrBoWR" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="44RyrhrBoWS" role="2Ry0An">
@@ -306,6 +255,27 @@
               <property role="2Ry0Am" value="org.iets3.opensource" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="44RyrhrBqkL" role="398pKh">
+        <ref role="398BVh" node="44RyrhrBozY" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="5UIflox5Nbz" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5UIflox5Nb$" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1Y5vs7yJZkG" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mbeddr.platform" />
+      <node concept="398BVA" id="1Y5vs7yK03D" role="398pKh">
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="1Y5vs7yK0xO" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -370,7 +340,7 @@
     <node concept="2sgV4H" id="1Y5vs7yK2HP" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="1Y5vs7yK3FR" role="2JcizS">
-        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="mbeddr.artifacts.platform" />
+        <ref role="398BVh" node="1Y5vs7yJZkG" resolve="dependencies.mbeddr.platform" />
       </node>
     </node>
     <node concept="2sgV4H" id="7eF9rfAnpzB" role="1l3spa">
@@ -12545,8 +12515,9 @@
     </node>
   </node>
   <node concept="1l3spW" id="OJuIQpzfqR">
-    <property role="2DA0ip" value="../../../../../build/iets3.opensource.tests" />
+    <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="TrG5h" value="org.iets3.opensource.tests" />
+    <property role="turDy" value="build-tests.xml" />
     <node concept="2igEWh" id="mfGoedf18r" role="1hWBAP">
       <property role="3UIfUI" value="6144" />
     </node>
@@ -12575,44 +12546,6 @@
         <ref role="m$_y1" to="al5i:NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
       </node>
     </node>
-    <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
-      <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="7Z_pmaBDZsm" role="398pKh">
-        <node concept="2Ry0Ak" id="7Z_pmaBDZsY" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="7Z_pmaBDZu9" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7Z_pmaBDZw8" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="7Z_pmaBDZx_" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="7Z_pmaBDZz4" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="7Z_pmaBDZ$_" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="7Z_pmaBDZA8" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="7Z_pmaBDZBH" role="2Ry0An">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="7Z_pmaBDZCU" role="2Ry0An">
-                          <property role="2Ry0Am" value="Applications" />
-                          <node concept="2Ry0Ak" id="7Z_pmaBDZEF" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS 2017.1.app" />
-                            <node concept="2Ry0Ak" id="7Z_pmaBDZFS" role="2Ry0An">
-                              <property role="2Ry0Am" value="Contents" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="1Y5vs7yKdR8" role="1l3spd">
       <property role="TrG5h" value="iets3.github.opensource.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -12624,8 +12557,20 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="OJuIQp_qpo" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="71zSQigYRXc" role="398pKh">
+        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="71zSQigYRXd" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="71zSQigYRXe" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="OJuIQp$deE" role="1l3spd">
-      <property role="TrG5h" value="iets3.lang.core" />
+      <property role="TrG5h" value="iets3.lang.opensource" />
       <node concept="398BVA" id="OJuIQp$deF" role="398pKh">
         <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
         <node concept="2Ry0Ak" id="OJuIQp$deG" role="iGT6I">
@@ -12639,21 +12584,27 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="OJuIQp_r_l" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-      <node concept="398BVA" id="OJuIQp_r_m" role="398pKh">
+    <node concept="398rNT" id="5UIflox5Nad" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="5UIflox5Nae" role="398pKh">
         <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="OJuIQp_r_n" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
+        <node concept="2Ry0Ak" id="5UIflox5Nbu" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5UIflox5Nbx" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="OJuIQp_rqy" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.artifacts.platform" />
-      <node concept="398BVA" id="OJuIQp_rAi" role="398pKh">
-        <ref role="398BVh" node="OJuIQp_r_l" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="OJuIQp_rAj" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
+    <node concept="398rNT" id="OJuIQp_r_l" role="1l3spd">
+      <property role="TrG5h" value="iets3.artifacts.root" />
+      <node concept="398BVA" id="OJuIQp_r_m" role="398pKh">
+        <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="PR4fnYmXGY" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="PR4fnYmXH1" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+          </node>
         </node>
       </node>
     </node>
@@ -12708,7 +12659,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="7235WRFl_SQ" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="7235WRFl_SU" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="7235WRFl_SV" role="2Ry0An">
@@ -12719,7 +12670,7 @@
         </node>
       </node>
       <node concept="398BVA" id="5b6pzZGWpQw" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="5b6pzZGWpQx" role="iGT6I">
           <property role="2Ry0Am" value="tests" />
           <node concept="2Ry0Ak" id="5b6pzZGWq3V" role="2Ry0An">
@@ -12756,7 +12707,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDG0" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDFH" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDFI" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="1RMC8GHIDFJ" role="2Ry0An">
@@ -12779,7 +12730,7 @@
       <property role="3LESm3" value="cf55cddb-d431-4f2e-93f4-3a4305c63d12" />
       <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
       <node concept="398BVA" id="5IOlOc8uO2y" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="5IOlOc8uVjg" role="iGT6I">
           <property role="2Ry0Am" value="tests" />
           <node concept="2Ry0Ak" id="5IOlOc8vteh" role="2Ry0An">
@@ -12838,7 +12789,7 @@
       <node concept="3rtmxn" id="5IOlOc8vvhm" role="3bR31x">
         <node concept="3LXTmp" id="5IOlOc8vvhn" role="3rtmxm">
           <node concept="398BVA" id="5IOlOc8vvho" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="5IOlOc8vvhp" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="5IOlOc8vvhq" role="2Ry0An">
@@ -12872,7 +12823,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="6q$NxWeKRIG" role="1HemKq">
           <node concept="398BVA" id="6q$NxWeKRIp" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="6q$NxWeKRIq" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="6q$NxWeKRIr" role="2Ry0An">
@@ -12925,7 +12876,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="$iFvHj1vst" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="$iFvHj1vsu" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="$iFvHj1vsv" role="2Ry0An">
@@ -12936,7 +12887,7 @@
         </node>
       </node>
       <node concept="398BVA" id="OJuIQp$dfn" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="OJuIQp$dfv" role="iGT6I">
           <property role="2Ry0Am" value="tests" />
           <node concept="2Ry0Ak" id="OJuIQp$df$" role="2Ry0An">
@@ -13020,7 +12971,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDGl" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDG2" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDG3" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="1RMC8GHIDG4" role="2Ry0An">
@@ -13053,7 +13004,7 @@
       <property role="3LESm3" value="5b2a22be-3ce2-4929-be5b-e39b8b142a74" />
       <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
       <node concept="398BVA" id="5kwEgmAh8LC" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="5kwEgmAh8QZ" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
           <node concept="2Ry0Ak" id="5kwEgmAh8SM" role="2Ry0An">
@@ -13070,7 +13021,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="59rcyU3GDmv" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="59rcyU3GDmw" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="59rcyU3GDmx" role="2Ry0An">
@@ -13086,7 +13037,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDGE" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDGn" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDGo" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="1RMC8GHIDGp" role="2Ry0An">
@@ -13114,7 +13065,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="5L_xiGQ8vhi" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="5L_xiGQ8vhj" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="5L_xiGQ8vhk" role="2Ry0An">
@@ -13125,7 +13076,7 @@
         </node>
       </node>
       <node concept="398BVA" id="48ZWgAGrv9H" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="48ZWgAGrvdj" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
           <node concept="2Ry0Ak" id="48ZWgAGrvgS" role="2Ry0An">
@@ -13157,7 +13108,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDGZ" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDGG" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDGH" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="1RMC8GHIDGI" role="2Ry0An">
@@ -13184,7 +13135,7 @@
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
           <node concept="398BVA" id="5L_xiGQ8vi3" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="5L_xiGQ8vi4" role="iGT6I">
               <property role="2Ry0Am" value="languages" />
               <node concept="2Ry0Ak" id="5L_xiGQ8vi5" role="2Ry0An">
@@ -13195,7 +13146,7 @@
         </node>
       </node>
       <node concept="398BVA" id="48ZWgAGrsrX" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="48ZWgAGrsxL" role="iGT6I">
           <property role="2Ry0Am" value="languages" />
           <node concept="2Ry0Ak" id="48ZWgAGrs$8" role="2Ry0An">
@@ -13225,7 +13176,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="1RMC8GHIDHG" role="1HemKq">
             <node concept="398BVA" id="1RMC8GHIDHm" role="3LXTmr">
-              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
               <node concept="2Ry0Ak" id="1RMC8GHIDHn" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="1RMC8GHIDHo" role="2Ry0An">
@@ -13256,7 +13207,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDHk" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDH1" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDH2" role="iGT6I">
               <property role="2Ry0Am" value="languages" />
               <node concept="2Ry0Ak" id="1RMC8GHIDH3" role="2Ry0An">
@@ -13279,7 +13230,7 @@
       <property role="3LESm3" value="0a68022c-4e89-4403-a717-1caf19c68980" />
       <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
       <node concept="398BVA" id="6xvglc6Duc5" role="3LF7KH">
-        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         <node concept="2Ry0Ak" id="6xvglc6DufD" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
           <node concept="2Ry0Ak" id="6xvglc6DuIZ" role="2Ry0An">
@@ -13313,7 +13264,7 @@
       <node concept="3rtmxn" id="4ToqgmJmVyU" role="3bR31x">
         <node concept="3LXTmp" id="4ToqgmJmVyV" role="3rtmxm">
           <node concept="398BVA" id="4ToqgmJmVyW" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="4ToqgmJmVyX" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="4ToqgmJmVyY" role="2Ry0An">
@@ -13338,7 +13289,7 @@
         <property role="1HemKv" value="true" />
         <node concept="3LXTmp" id="1RMC8GHIDI1" role="1HemKq">
           <node concept="398BVA" id="1RMC8GHIDHI" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.core" />
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
             <node concept="2Ry0Ak" id="1RMC8GHIDHJ" role="iGT6I">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="1RMC8GHIDHK" role="2Ry0An">
@@ -13355,15 +13306,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
-      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
-      <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
-        <ref role="398BVh" node="OJuIQp_r_l" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="OJuIQpVvZ4" role="iGT6I">
-          <property role="2Ry0Am" value="org.iets3.opensource" />
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="OJuIQp_qh1" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="OJuIQp_qrx" role="2JcizS">
@@ -13372,13 +13314,31 @@
     </node>
     <node concept="2sgV4H" id="33r_JpYZmp_" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="33r_JpYZmrz" role="2JcizS">
-        <ref role="398BVh" node="OJuIQp_rqy" resolve="mbeddr.artifacts.platform" />
+      <node concept="398BVA" id="OJuIQp_rAi" role="2JcizS">
+        <ref role="398BVh" node="5UIflox5Nad" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="OJuIQp_rAj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="OJuIQp$deC" role="1l3spa">
+      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <node concept="398BVA" id="OJuIQpVvYC" role="2JcizS">
+        <ref role="398BVh" node="OJuIQp_r_l" resolve="iets3.artifacts.root" />
+        <node concept="2Ry0Ak" id="OJuIQpVvZ4" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="OJuIQq2vpw" role="1hWBAP">
       <property role="TrG5h" value="tests" />
-      <node concept="24cAiW" id="1D8fMMrKjeD" role="24cAkG" />
+      <node concept="24cAiW" id="1D8fMMrKjeD" role="24cAkG">
+        <node concept="NbPM2" id="71zSQigZ6J1" role="XX84c">
+          <node concept="3Mxwew" id="71zSQigZ6J0" role="3MwsjC">
+            <property role="3MwjfP" value="true" />
+          </node>
+        </node>
+      </node>
       <node concept="22LTRM" id="OJuIQp_hdf" role="22LTRK">
         <ref role="22LTRN" node="OJuIQp$d7j" resolve="test.in.expr.os" />
       </node>
@@ -13400,6 +13360,88 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+  </node>
+  <node concept="1l3spW" id="71zSQigYEMA">
+    <property role="2DA0ip" value="./../../../../../build/scripts" />
+    <property role="TrG5h" value="org.iets3.opensource.distro" />
+    <property role="turDy" value="build-distro.xml" />
+    <node concept="2sgV4H" id="2bcgdhPM$tb" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="2bcgdhPM$N3" role="2JcizS">
+        <ref role="398BVh" node="1SrKDS$4uhx" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="2bcgdhPM$N4" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="71zSQigYYRs" role="1l3spa">
+      <ref role="1l3spb" node="5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <node concept="398BVA" id="71zSQigYZ31" role="2JcizS">
+        <ref role="398BVh" node="1knOiTtMgKi" resolve="iets3.artifacts.root" />
+        <node concept="2Ry0Ak" id="4wNOE5wnpxc" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="71zSQigYQtG" role="1l3spd">
+      <property role="TrG5h" value="iets3.github.opensource.home" />
+      <node concept="55IIr" id="71zSQigYQtH" role="398pKh">
+        <node concept="2Ry0Ak" id="71zSQigYQtI" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="71zSQigYQtJ" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="71zSQigYNhV" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="71zSQigYR3K" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="71zSQigYNhZ" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="71zSQigYNi0" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1SrKDS$4uhx" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="1SrKDS$4uhy" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="4wNOE5wnpx1" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="4wNOE5wnpxa" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1knOiTtMgKi" role="1l3spd">
+      <property role="TrG5h" value="iets3.artifacts.root" />
+      <node concept="398BVA" id="1knOiTtMgKj" role="398pKh">
+        <ref role="398BVh" node="71zSQigYQtG" resolve="iets3.github.opensource.home" />
+        <node concept="2Ry0Ak" id="3hMKr_xL6xs" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="4wNOE5wnpx8" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="55IIr" id="71zSQigYEMB" role="auvoZ" />
+    <node concept="1l3spV" id="71zSQigYEMC" role="1l3spN">
+      <node concept="3ygNvl" id="2bcgdhPM$8Y" role="39821P">
+        <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
+        <node concept="3LWZYq" id="v8GFiCy0Tf" role="1juEy9">
+          <property role="3LWZYl" value="build.properties" />
+        </node>
+      </node>
+      <node concept="3ygNvl" id="2bcgdhPMxqs" role="39821P">
+        <ref role="3ygNvj" node="5wLtKNeSRRM" />
+      </node>
     </node>
   </node>
 </model>
