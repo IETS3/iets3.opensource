@@ -19,6 +19,8 @@
     <import index="soq7" ref="r:4d48d56b-d670-4e5b-a763-2232bb0c4f2d(org.iets3.core.attributes.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
+    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
+    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -803,10 +805,57 @@
             </node>
             <node concept="1f$696" id="5mFzepP5cq7" role="1fxSsZ">
               <node concept="3clFbS" id="5mFzepP5cq8" role="2VODD2">
-                <node concept="3clFbF" id="5mFzepP5cVx" role="3cqZAp">
-                  <node concept="2OqwBi" id="5mFzepP5d9w" role="3clFbG">
-                    <node concept="3GLrbK" id="5mFzepP5cVw" role="2Oq$k0" />
-                    <node concept="q_SaT" id="5mFzepP5dKD" role="2OqNvi" />
+                <node concept="3SKdUt" id="1zkN3SNSX79" role="3cqZAp">
+                  <node concept="1PaTwC" id="1zkN3SNSX7a" role="1aUNEU">
+                    <node concept="3oM_SD" id="1zkN3SNSWTy" role="1PaTwD">
+                      <property role="3oM_SC" value="todo:" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWUq" role="1PaTwD">
+                      <property role="3oM_SC" value="this" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWUQ" role="1PaTwD">
+                      <property role="3oM_SC" value="fails!" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWY8" role="1PaTwD">
+                      <property role="3oM_SC" value="Could" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWYM" role="1PaTwD">
+                      <property role="3oM_SC" value="be" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWYT" role="1PaTwD">
+                      <property role="3oM_SC" value="a" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWZd" role="1PaTwD">
+                      <property role="3oM_SC" value="mps-bug" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSWZI" role="1PaTwD">
+                      <property role="3oM_SC" value="in" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSX9m" role="1PaTwD">
+                      <property role="3oM_SC" value="combination" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="1zkN3SNSXfQ" role="3cqZAp">
+                  <node concept="1PaTwC" id="1zkN3SNSXfR" role="1aUNEU">
+                    <node concept="3oM_SD" id="1zkN3SNSXfS" role="1PaTwD">
+                      <property role="3oM_SC" value="with" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSXgU" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSXgY" role="1PaTwD">
+                      <property role="3oM_SC" value="node-factory" />
+                    </node>
+                    <node concept="3oM_SD" id="1zkN3SNSXh3" role="1PaTwD">
+                      <property role="3oM_SC" value="&quot;mandatoryAttributesNodeFactory&quot;" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1zkN3SNSeaI" role="3cqZAp">
+                  <node concept="2OqwBi" id="1zkN3SNSequ" role="3clFbG">
+                    <node concept="3GLrbK" id="1zkN3SNSeaH" role="2Oq$k0" />
+                    <node concept="q_SaT" id="1zkN3SNSeNk" role="2OqNvi" />
                   </node>
                 </node>
               </node>
