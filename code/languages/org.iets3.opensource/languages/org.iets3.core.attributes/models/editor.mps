@@ -163,6 +163,10 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -179,6 +183,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -805,56 +812,38 @@
             </node>
             <node concept="1f$696" id="5mFzepP5cq7" role="1fxSsZ">
               <node concept="3clFbS" id="5mFzepP5cq8" role="2VODD2">
-                <node concept="3SKdUt" id="1zkN3SNSX79" role="3cqZAp">
-                  <node concept="1PaTwC" id="1zkN3SNSX7a" role="1aUNEU">
-                    <node concept="3oM_SD" id="1zkN3SNSWTy" role="1PaTwD">
-                      <property role="3oM_SC" value="todo:" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWUq" role="1PaTwD">
-                      <property role="3oM_SC" value="this" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWUQ" role="1PaTwD">
-                      <property role="3oM_SC" value="fails!" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWY8" role="1PaTwD">
-                      <property role="3oM_SC" value="Could" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWYM" role="1PaTwD">
-                      <property role="3oM_SC" value="be" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWYT" role="1PaTwD">
-                      <property role="3oM_SC" value="a" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWZd" role="1PaTwD">
-                      <property role="3oM_SC" value="mps-bug" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSWZI" role="1PaTwD">
-                      <property role="3oM_SC" value="in" />
-                    </node>
-                    <node concept="3oM_SD" id="1zkN3SNSX9m" role="1PaTwD">
-                      <property role="3oM_SC" value="combination" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="3SKdUt" id="1zkN3SNSXfQ" role="3cqZAp">
-                  <node concept="1PaTwC" id="1zkN3SNSXfR" role="1aUNEU">
-                    <node concept="3oM_SD" id="1zkN3SNSXfS" role="1PaTwD">
-                      <property role="3oM_SC" value="with" />
+                  <node concept="1PaTwC" id="4el_kGVNcwD" role="1aUNEU">
+                    <node concept="3oM_SD" id="4el_kGVNcwE" role="1PaTwD">
+                      <property role="3oM_SC" value="explicit" />
                     </node>
-                    <node concept="3oM_SD" id="1zkN3SNSXgU" role="1PaTwD">
-                      <property role="3oM_SC" value="the" />
+                    <node concept="3oM_SD" id="4el_kGVNcA7" role="1PaTwD">
+                      <property role="3oM_SC" value="cast" />
                     </node>
-                    <node concept="3oM_SD" id="1zkN3SNSXgY" role="1PaTwD">
-                      <property role="3oM_SC" value="node-factory" />
+                    <node concept="3oM_SD" id="4el_kGVNcAJ" role="1PaTwD">
+                      <property role="3oM_SC" value="required" />
                     </node>
-                    <node concept="3oM_SD" id="1zkN3SNSXh3" role="1PaTwD">
-                      <property role="3oM_SC" value="&quot;mandatoryAttributesNodeFactory&quot;" />
+                    <node concept="3oM_SD" id="4el_kGVNcAO" role="1PaTwD">
+                      <property role="3oM_SC" value="due" />
+                    </node>
+                    <node concept="3oM_SD" id="4el_kGVNcB6" role="1PaTwD">
+                      <property role="3oM_SC" value="to" />
+                    </node>
+                    <node concept="3oM_SD" id="4el_kGVNcBx" role="1PaTwD">
+                      <property role="3oM_SC" value="MPS-32979" />
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="1zkN3SNSeaI" role="3cqZAp">
                   <node concept="2OqwBi" id="1zkN3SNSequ" role="3clFbG">
-                    <node concept="3GLrbK" id="1zkN3SNSeaH" role="2Oq$k0" />
+                    <node concept="1eOMI4" id="4el_kGVLFfs" role="2Oq$k0">
+                      <node concept="10QFUN" id="4el_kGVLFft" role="1eOMHV">
+                        <node concept="3GLrbK" id="4el_kGVLFfr" role="10QFUP" />
+                        <node concept="3bZ5Sz" id="4el_kGVLFhw" role="10QFUM">
+                          <ref role="3bZ5Sy" to="138:3NBP8_OgMyV" resolve="IAttribute" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="q_SaT" id="1zkN3SNSeNk" role="2OqNvi" />
                   </node>
                 </node>
