@@ -179,6 +179,7 @@ def defaultScriptArgs = [
         'iets3.github.opensource.home'      : rootDir,
         'build.dir'                         : buildDir,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
+		'mps.ant.log'						: 'info',
         'version'                           : version
 ]
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
