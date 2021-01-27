@@ -179,9 +179,12 @@ def defaultScriptArgs = [
         'iets3.github.opensource.home'      : rootDir,
         'build.dir'                         : buildDir,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
-		'mps.ant.log'						: 'info',
         'version'                           : version
 ]
+if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
+    defaultScriptArgs.put('mps.ant.log', gradle.startParameter.logLevel.toString().toLowerCase())
+}
+
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
         project.files("$ext.jdk_home/lib/tools.jar")
 
