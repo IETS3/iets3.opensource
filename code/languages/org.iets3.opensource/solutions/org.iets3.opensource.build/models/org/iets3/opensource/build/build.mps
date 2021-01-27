@@ -5255,6 +5255,11 @@
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4MwjAOTXSug" role="3bR37C">
+          <node concept="3bR9La" id="4MwjAOTXSuh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396fH" role="2G$12L">
         <property role="BnDLt" value="true" />
