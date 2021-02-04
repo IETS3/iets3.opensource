@@ -23,14 +23,15 @@
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" />
+      </external-templates>
       <dependencies>
         <dependency reexport="false">3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)</dependency>
         <dependency reexport="false">798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">698a8d22-a104-47a0-ba8d-10e3ec237f13(jetbrains.mps.build.workflow)</dependency>
         <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
-        <dependency reexport="false" scope="design">46acce8c-467e-474a-98fc-a13494168c35(jetbrains.mps.build.mps.tests#4560297596904874237)</dependency>
         <dependency reexport="false">0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</dependency>
       </dependencies>
       <languageVersions>
@@ -64,7 +65,6 @@
         <module reference="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" version="0" />
         <module reference="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" version="0" />
         <module reference="3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)" version="0" />
-        <module reference="46acce8c-467e-474a-98fc-a13494168c35(jetbrains.mps.build.mps.tests#4560297596904874237)" version="0" />
         <module reference="698a8d22-a104-47a0-ba8d-10e3ec237f13(jetbrains.mps.build.workflow)" version="0" />
         <module reference="39d44af6-f60e-499c-a201-583451e7fad0(jetbrains.mps.build.workflow#2769948622284786808)" version="0" />
         <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />
@@ -75,22 +75,7 @@
         <module reference="8704ee59-3e8d-4640-84c6-2e9b99d45c88(org.iets3.opensource.build.gentests#01)" version="0" />
         <module reference="e70ad515-8ff0-4a50-8cb4-41406f14e348(org.iets3.opensource.build.gentests.rt)" version="0" />
       </dependencyVersions>
-      <mapping-priorities>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="8704ee59-3e8d-4640-84c6-2e9b99d45c88(org.iets3.opensource.build.gentests#01)" />
-            <external-mapping>
-              <all-local-mappings />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="46acce8c-467e-474a-98fc-a13494168c35(jetbrains.mps.build.mps.tests#4560297596904874237)" />
-            <external-mapping>
-              <all-local-mappings />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-      </mapping-priorities>
+      <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />

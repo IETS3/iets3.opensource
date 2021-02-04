@@ -12137,6 +12137,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="4CG20QXPPC5" role="3bR37C">
+            <node concept="3bR9La" id="4CG20QXPPC4" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6KjWX" resolve="jetbrains.mps.build.mps#3189788309732033979" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="3ZBI8Awh4C8" role="1E1XAP">
           <ref role="1E0d5P" node="3ZBI8Awh4ux" resolve="org.iets3.opensource.build.gentests.rt" />
