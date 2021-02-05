@@ -202,11 +202,6 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
 }
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
-    doFirst {
-        def antTestScriptFile = file(it['script'])
-        // patch heap size setting for tests execution
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-    }
     script "$buildDir/scripts/build-tests.xml"
     doLast {
         ant.taskdef(name: 'junitreport',
