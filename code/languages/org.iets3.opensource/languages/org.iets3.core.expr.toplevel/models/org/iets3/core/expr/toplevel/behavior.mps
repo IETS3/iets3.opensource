@@ -7131,7 +7131,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="addGenericDependecy" />
-      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericChunkDependency" />
+      <ref role="13i0hy" to="hwgx:94IdDK$n_l" resolve="addGenericDependecy" />
       <node concept="3Tm1VV" id="5VEHrQcW_Gd" role="1B3o_S" />
       <node concept="3clFbS" id="5VEHrQcW_Gi" role="3clF47">
         <node concept="3clFbF" id="5VEHrQcWCJp" role="3cqZAp">
@@ -7910,6 +7910,38 @@
         </node>
       </node>
       <node concept="17QB3L" id="7cphKbLzn0u" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6eDTw9T$Ts8" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="6eDTw9T$Ts9" role="1B3o_S" />
+      <node concept="3clFbS" id="6eDTw9T$Tse" role="3clF47">
+        <node concept="3clFbF" id="6eDTw9T_2Ce" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYTZvU" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6fmG8CYU6Dk" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6eDTw9T$Tsf" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6eDTw9T_2Hj" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="6eDTw9T_2Hk" role="1B3o_S" />
+      <node concept="3clFbS" id="6eDTw9T_2Hp" role="3clF47">
+        <node concept="3clFbF" id="6eDTw9T_2Pa" role="3cqZAp">
+          <node concept="2YIFZM" id="6eDTw9T_2Pb" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6eDTw9T_2Pc" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6eDTw9T_2Hq" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7cphKbL$4Nr">
