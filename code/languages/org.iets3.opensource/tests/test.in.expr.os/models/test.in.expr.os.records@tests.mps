@@ -2866,7 +2866,7 @@
           <node concept="OjmMv" id="2OBJGfQmDxP" role="1w35rA">
             <node concept="19SGf9" id="2OBJGfQmDxQ" role="OjmMu">
               <node concept="19SUe$" id="2OBJGfQmDxR" role="19SJt6">
-                <property role="19SUeA" value="left commented as it causes all generated java tests from this TestSuite not being executed/reported (as of MPS 2020.3)" />
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details" />
               </node>
             </node>
           </node>
@@ -3161,7 +3161,7 @@
           <node concept="OjmMv" id="2OBJGfQmFEZ" role="1w35rA">
             <node concept="19SGf9" id="2OBJGfQmFF0" role="OjmMu">
               <node concept="19SUe$" id="2OBJGfQmFF1" role="19SJt6">
-                <property role="19SUeA" value="left commented as it causes all generated java tests from this TestSuite not being executed/reported (as of MPS 2020.3)" />
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details " />
               </node>
             </node>
           </node>
