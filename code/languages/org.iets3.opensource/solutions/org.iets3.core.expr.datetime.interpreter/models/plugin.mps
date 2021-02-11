@@ -22,7 +22,6 @@
     <import index="2j0k" ref="r:a9ac3767-b241-4aa4-a973-d04bb5ce184c(org.iets3.core.expr.datetime.runtime)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2086,20 +2085,6 @@
                               </node>
                               <node concept="3uibUv" id="1M88FTOkcBR" role="10QFUM">
                                 <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="1M88FTOQwka" role="3cqZAp">
-                          <node concept="2OqwBi" id="1M88FTOQwk7" role="3clFbG">
-                            <node concept="10M0yZ" id="1M88FTOQwk8" role="2Oq$k0">
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                            </node>
-                            <node concept="liA8E" id="1M88FTOQwk9" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                              <node concept="Xl_RD" id="1M88FTOQwlc" role="37wK5m">
-                                <property role="Xl_RC" value="XXXXX" />
                               </node>
                             </node>
                           </node>

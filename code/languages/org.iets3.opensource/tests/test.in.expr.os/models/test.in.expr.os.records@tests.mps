@@ -236,6 +236,14 @@
         <child id="1249392911699129399" name="setters" index="3vSgwc" />
       </concept>
     </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -2826,7 +2834,7 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="1ucEILUeBLA" role="lGtFl">
+    <node concept="1X3_iC" id="2OBJGfQmE3U" role="lGtFl">
       <property role="3V$3am" value="contents" />
       <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
       <node concept="2zPypq" id="7$ajNzjKxIv" role="8Wnug">
@@ -2852,6 +2860,15 @@
         <node concept="Uns6S" id="7$ajNzjKyt3" role="2zM23F">
           <node concept="2Ss9cW" id="7$ajNzjKyt4" role="Uns6T">
             <ref role="2Ss9cX" node="1$1rueer6gn" resolve="D" />
+          </node>
+        </node>
+        <node concept="1z9TsT" id="2OBJGfQmDxO" role="lGtFl">
+          <node concept="OjmMv" id="2OBJGfQmDxP" role="1w35rA">
+            <node concept="19SGf9" id="2OBJGfQmDxQ" role="OjmMu">
+              <node concept="19SUe$" id="2OBJGfQmDxR" role="19SJt6">
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3117,7 +3134,7 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="1ucEILUhuYR" role="lGtFl">
+    <node concept="1X3_iC" id="2OBJGfQmHB_" role="lGtFl">
       <property role="3V$3am" value="contents" />
       <property role="3V$3ak" value="d441fba0-f46b-43cd-b723-dad7b65da615/543569365052711055/543569365052711058" />
       <node concept="2zPypq" id="7$ajNzjKFXG" role="8Wnug">
@@ -3138,6 +3155,15 @@
         <node concept="3iBYCm" id="7$ajNzjKGKt" role="2zM23F">
           <node concept="2Ss9cW" id="7$ajNzjKGKu" role="3iBWmK">
             <ref role="2Ss9cX" node="1$1rueeBi27" resolve="R" />
+          </node>
+        </node>
+        <node concept="1z9TsT" id="2OBJGfQmFEY" role="lGtFl">
+          <node concept="OjmMv" id="2OBJGfQmFEZ" role="1w35rA">
+            <node concept="19SGf9" id="2OBJGfQmFF0" role="OjmMu">
+              <node concept="19SUe$" id="2OBJGfQmFF1" role="19SJt6">
+                <property role="19SUeA" value="commented out as it causes all generated java tests from this TestSuite not being executed/reported,&#10;see https://github.com/IETS3/iets3.opensource/pull/430#issuecomment-777495124 for details " />
+              </node>
+            </node>
           </node>
         </node>
       </node>

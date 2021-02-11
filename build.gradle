@@ -60,12 +60,12 @@ if (project.hasProperty("forceCI")) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 def major = "2020"
-def minor = "2"
+def minor = "3"
 
 // Dependency versions
-ext.mpsVersion = '2020.2.3'
+ext.mpsVersion = '2020.3.1'
 
-def mbeddrVersion = "2020.2+"
+def mbeddrVersion = "2020.3+"
 
 // if building a against a special branch from mbeddr is required add the name here
 // the name is enough no trailing "." is required, also the plain name from git can
@@ -181,6 +181,10 @@ def defaultScriptArgs = [
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : version
 ]
+if (gradle.startParameter.logLevel.toString() != "LIFECYCLE") {
+    defaultScriptArgs.put('mps.ant.log', gradle.startParameter.logLevel.toString().toLowerCase())
+}
+
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
         project.files("$ext.jdk_home/lib/tools.jar")
 
@@ -198,11 +202,6 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
 }
 
 task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
-    doFirst {
-        def antTestScriptFile = file(it['script'])
-        // patch heap size setting for tests execution
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
-    }
     script "$buildDir/scripts/build-tests.xml"
     doLast {
         ant.taskdef(name: 'junitreport',
