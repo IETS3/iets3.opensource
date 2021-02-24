@@ -19,6 +19,8 @@
     <import index="ich0" ref="r:2c56c15d-9645-459e-8807-414df4bb772a(org.iets3.analysis.base.typesystem)" />
     <import index="juu2" ref="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -170,6 +172,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -662,6 +665,29 @@
       <node concept="37vLTG" id="5E4c7udFBCV" role="3clF46">
         <property role="TrG5h" value="checkName" />
         <node concept="17QB3L" id="5E4c7udFBCU" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7QODtLvTFnz" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="runManuallyAsync" />
+      <node concept="3Tm1VV" id="7QODtLvTFn$" role="1B3o_S" />
+      <node concept="3clFbS" id="7QODtLvTFnA" role="3clF47">
+        <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
+          <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
+            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncTaskSolving" />
+            <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="7QODtLvTGKt" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
+        <node concept="3uibUv" id="7QODtLvTGKu" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="7QODtLvTGKv" role="11_B2D">
+            <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="3a2FJuCndNb" role="13h7CS">
