@@ -197,10 +197,5 @@
       </node>
     </node>
   </node>
-  <node concept="PlHQZ" id="5gvxy1Yg72C">
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="ICanStoreCheckResultAsync" />
-    <property role="EcuMT" value="6061711097579204776" />
-  </node>
 </model>
 
