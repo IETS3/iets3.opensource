@@ -675,7 +675,7 @@
         <node concept="3clFbF" id="7QODtLvTGsE" role="3cqZAp">
           <node concept="2YIFZM" id="7QODtLvTGNW" role="3clFbG">
             <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
-            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncTaskSolving" />
+            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
             <node concept="13iPFW" id="7QODtLvTGNX" role="37wK5m" />
           </node>
         </node>
@@ -1354,6 +1354,35 @@
             <node concept="2qgKlT" id="7QODtLw3WTa" role="2OqNvi">
               <ref role="37wK5l" node="7rOSrvnGeUQ" resolve="run" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3NwcubmnBQ5" role="13h7CS">
+      <property role="TrG5h" value="runSolverAsync" />
+      <node concept="3Tm1VV" id="3NwcubmnBQ6" role="1B3o_S" />
+      <node concept="3clFbS" id="3NwcubmnBQ8" role="3clF47">
+        <node concept="3clFbF" id="3NwcubmnCHl" role="3cqZAp">
+          <node concept="2YIFZM" id="3NwcubmnCYw" role="3clFbG">
+            <ref role="37wK5l" to="hnhi:2BYqfe8vtxE" resolve="submitISolvable" />
+            <ref role="1Pybhc" to="hnhi:2f_Mi5mAhjh" resolve="AsyncSolverTaskExecutor" />
+            <node concept="13iPFW" id="3NwcubmnCYx" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3NwcubmnCT4" role="lGtFl">
+        <node concept="TZ5HA" id="3NwcubmnCT5" role="TZ5H$">
+          <node concept="1dT_AC" id="3NwcubmnCT6" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs the solver asynchronously. Error messages are automatically propagated after the run to the ISolvable." />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3NwcubmnCWl" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~CompletableFuture" resolve="CompletableFuture" />
+        <node concept="3uibUv" id="3NwcubmnCWm" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="3NwcubmnCWn" role="11_B2D">
+            <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
           </node>
         </node>
       </node>
