@@ -30,9 +30,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -128,9 +125,6 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -139,12 +133,6 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
-      </concept>
-      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
-        <child id="1224414456414" name="elementType" index="kMuH3" />
-      </concept>
-      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
-        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -156,29 +144,8 @@
   <node concept="312cEu" id="mhgVwvXRXN">
     <property role="TrG5h" value="CheckingWasBlockedResult" />
     <node concept="3Tm1VV" id="mhgVwvXRXO" role="1B3o_S" />
-    <node concept="3uibUv" id="mhgVwvXS07" role="EKbjA">
-      <ref role="3uigEE" to="gdgh:5JinICPcACI" resolve="IResultWithTargetNodes" />
-    </node>
-    <node concept="3clFb_" id="mhgVwvXS0i" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getMessageTargetNodes" />
-      <node concept="3Tm1VV" id="mhgVwvXS0k" role="1B3o_S" />
-      <node concept="A3Dl8" id="mhgVwvXS0l" role="3clF45">
-        <node concept="3Tqbb2" id="mhgVwvXS0m" role="A3Ik2" />
-      </node>
-      <node concept="3clFbS" id="mhgVwvXS0s" role="3clF47">
-        <node concept="3clFbF" id="mhgVwvXSoC" role="3cqZAp">
-          <node concept="2ShNRf" id="mhgVwvXSoD" role="3clFbG">
-            <node concept="kMnCb" id="mhgVwvXSoE" role="2ShVmc">
-              <node concept="3Tqbb2" id="mhgVwvXSoF" role="kMuH3" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="mhgVwvXS0t" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
+    <node concept="3uibUv" id="3NwcubmmGZZ" role="EKbjA">
+      <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
     </node>
     <node concept="3clFb_" id="mhgVwvXS0u" role="jymVt">
       <property role="1EzhhJ" value="false" />

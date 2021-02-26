@@ -14,10 +14,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
-        <child id="1224071154657" name="classifierType" index="0kSFW" />
-        <child id="1224071154656" name="expression" index="0kSFX" />
-      </concept>
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -98,9 +94,6 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
-      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
@@ -339,17 +332,12 @@
                                   <node concept="A3Dl8" id="2BX$1355wU0" role="1tU5fm">
                                     <node concept="3Tqbb2" id="2BX$1355wU1" role="A3Ik2" />
                                   </node>
-                                  <node concept="2EnYce" id="2BX$1355wU2" role="33vP2m">
-                                    <node concept="0kSF2" id="2BX$1355wU3" role="2Oq$k0">
-                                      <node concept="3uibUv" id="2BX$1355wU4" role="0kSFW">
-                                        <ref role="3uigEE" to="gdgh:5JinICPcACI" resolve="IResultWithTargetNodes" />
-                                      </node>
-                                      <node concept="37vLTw" id="4MH81Y0U9oP" role="0kSFX">
-                                        <ref role="3cqZAo" node="4MH81Y0U2EG" resolve="result" />
-                                      </node>
+                                  <node concept="2OqwBi" id="3NwcubmmL9e" role="33vP2m">
+                                    <node concept="37vLTw" id="4MH81Y0U9oP" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4MH81Y0U2EG" resolve="result" />
                                     </node>
-                                    <node concept="liA8E" id="2BX$1355wU6" role="2OqNvi">
-                                      <ref role="37wK5l" to="gdgh:5JinICPcAPp" resolve="getMessageTargetNodes" />
+                                    <node concept="liA8E" id="3NwcubmmL_0" role="2OqNvi">
+                                      <ref role="37wK5l" to="gdgh:2esy_3osjI9" resolve="targetNodes" />
                                     </node>
                                   </node>
                                 </node>
