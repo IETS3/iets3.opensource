@@ -32,6 +32,7 @@
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="xfg9" ref="r:ac28053f-2041-47f6-806b-ecfaca05a64a(org.iets3.core.expr.base.runtime.runtime)" />
+    <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
   </imports>
@@ -51,6 +52,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -5865,6 +5867,45 @@
       <node concept="3Tqbb2" id="5crSXMpS24" role="3clF45">
         <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4jTzL4SDZbZ">
+    <property role="3GE5qa" value="multidectab.expr.result" />
+    <ref role="13h7C2" to="kfo3:8XWEtdX_Yl" resolve="ResultColDef" />
+    <node concept="13hLZK" id="4jTzL4SDZc0" role="13h7CW">
+      <node concept="3clFbS" id="4jTzL4SDZc1" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4jTzL4SDZc2" role="13h7CS">
+      <property role="TrG5h" value="allowUmlaute" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:5YygIlbih$m" resolve="allowUmlaute" />
+      <node concept="3Tm1VV" id="4jTzL4SDZc3" role="1B3o_S" />
+      <node concept="3clFbS" id="4jTzL4SDZc8" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5yeOu" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYTZvU" role="3clFbG">
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <ref role="37wK5l" to="xfg9:3NUSEp5y9$n" resolve="allowUmlautsInIdentifiers" />
+            <node concept="1fM9EW" id="6fmG8CYU6Dk" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4jTzL4SDZc9" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4jTzL4SDZce" role="13h7CS">
+      <property role="TrG5h" value="allowParagraph" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="gdgh:4ZH31cjGRan" resolve="allowParagraph" />
+      <node concept="3Tm1VV" id="4jTzL4SDZcf" role="1B3o_S" />
+      <node concept="3clFbS" id="4jTzL4SDZck" role="3clF47">
+        <node concept="3clFbF" id="3NUSEp5yeUI" role="3cqZAp">
+          <node concept="2YIFZM" id="6fmG8CYU00G" role="3clFbG">
+            <ref role="37wK5l" to="xfg9:3NUSEp5yd8T" resolve="allowParagraphsInIdentifiers" />
+            <ref role="1Pybhc" to="xfg9:6fmG8CYTWg1" resolve="IdentifierConfiguratorAccess" />
+            <node concept="1fM9EW" id="6fmG8CYU6Ea" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4jTzL4SDZcl" role="3clF45" />
     </node>
   </node>
 </model>
