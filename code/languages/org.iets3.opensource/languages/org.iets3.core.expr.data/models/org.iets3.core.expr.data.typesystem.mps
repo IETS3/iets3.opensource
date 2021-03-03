@@ -489,7 +489,7 @@
                                         </node>
                                         <node concept="2OqwBi" id="2KRUNf1mG2Z" role="3uHU7B">
                                           <node concept="37vLTw" id="2KRUNf1mG30" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2KRUNf1mG38" resolve="row" />
+                                            <ref role="3cqZAo" node="2KRUNf1mG38" resolve="cell" />
                                           </node>
                                           <node concept="3TrEf2" id="2KRUNf1mG31" role="2OqNvi">
                                             <ref role="3Tt5mk" to="e9k1:cPLa7FpdsY" resolve="col" />
@@ -499,7 +499,7 @@
                                       <node concept="2OqwBi" id="2KRUNf1mG32" role="3uHU7B">
                                         <node concept="2OqwBi" id="2KRUNf1mG33" role="2Oq$k0">
                                           <node concept="37vLTw" id="2KRUNf1mG34" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2KRUNf1mG38" resolve="row" />
+                                            <ref role="3cqZAo" node="2KRUNf1mG38" resolve="cell" />
                                           </node>
                                           <node concept="3TrEf2" id="2KRUNf1mG35" role="2OqNvi">
                                             <ref role="3Tt5mk" to="e9k1:cPLa7Fpe9f" resolve="value" />
@@ -515,7 +515,7 @@
                                   </node>
                                 </node>
                                 <node concept="Rh6nW" id="2KRUNf1mG38" role="1bW2Oz">
-                                  <property role="TrG5h" value="row" />
+                                  <property role="TrG5h" value="cell" />
                                   <node concept="2jxLKc" id="2KRUNf1mG39" role="1tU5fm" />
                                 </node>
                               </node>

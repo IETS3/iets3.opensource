@@ -566,9 +566,6 @@
       <property role="IQ2ns" value="8355348994405084500" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="MNXm1ElbHv" role="PzmwI">
-      <ref role="PrY4T" node="MNXm1ElbHo" resolve="IEmptyLiteral" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsEji_">
     <property role="3GE5qa" value="option" />
