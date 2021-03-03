@@ -291,10 +291,6 @@
       <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
         <child id="3693790620639876319" name="text" index="2aEySw" />
       </concept>
-      <concept id="5667201763537739848" name="com.mbeddr.mpsutil.blutil.structure.LogExpr" flags="ng" index="sxT6M">
-        <property id="5667201763537739900" name="label" index="sxT66" />
-        <child id="5667201763537739902" name="expr" index="sxT64" />
-      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -2791,9 +2787,10 @@
                                         </node>
                                       </node>
                                       <node concept="3clFbS" id="3NwcubmgRS2" role="1zc67A">
-                                        <node concept="sxT6M" id="3NwcubmgRS3" role="3cqZAp">
-                                          <property role="sxT66" value="err" />
-                                          <node concept="37vLTw" id="3NwcubmgRS4" role="sxT64">
+                                        <node concept="RRSsy" id="4djWgu3LWhW" role="3cqZAp">
+                                          <property role="RRSoG" value="gZ5fh_4/error" />
+                                          <node concept="Xl_RD" id="4djWgu3LWhX" role="RRSoy" />
+                                          <node concept="37vLTw" id="4djWgu3LWhY" role="RRSow">
                                             <ref role="3cqZAo" node="3NwcubmgRRZ" resolve="e" />
                                           </node>
                                         </node>
@@ -2852,9 +2849,10 @@
                           </node>
                           <node concept="3uVAMA" id="3NwcubmgRSo" role="1zxBo5">
                             <node concept="3clFbS" id="3NwcubmgRSp" role="1zc67A">
-                              <node concept="sxT6M" id="3NwcubmgRSq" role="3cqZAp">
-                                <property role="sxT66" value="err" />
-                                <node concept="37vLTw" id="3NwcubmgRSr" role="sxT64">
+                              <node concept="RRSsy" id="4djWgu3LVXh" role="3cqZAp">
+                                <property role="RRSoG" value="gZ5fh_4/error" />
+                                <node concept="Xl_RD" id="4djWgu3LVXj" role="RRSoy" />
+                                <node concept="37vLTw" id="4djWgu3LW04" role="RRSow">
                                   <ref role="3cqZAo" node="3NwcubmgRSw" resolve="e" />
                                 </node>
                               </node>
