@@ -498,10 +498,10 @@
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
       </node>
       <node concept="m$_yC" id="5v$Gz_MWFBk" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
       </node>
       <node concept="m$_yC" id="gnL8pN4Hds" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
+        <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
       <node concept="m$_yC" id="491GPS97hLA" role="m$_yJ">
         <ref role="m$_y1" to="al5i:59sJF$9ugx_" resolve="com.mbeddr.mpsutil.spreferences" />
@@ -762,12 +762,12 @@
         </node>
         <node concept="1SiIV0" id="3DVmLHKBklL" role="3bR37C">
           <node concept="3bR9La" id="3DVmLHKBklM" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
+            <ref role="3bR37D" to="90a9:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
           </node>
         </node>
         <node concept="1SiIV0" id="1BCnb50lN_L" role="3bR37C">
           <node concept="3bR9La" id="1BCnb50lN_M" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:4Hbnsm4O7VL" resolve="com.mbeddr.mpsutil.editor.querylist" />
+            <ref role="3bR37D" to="90a9:4Hbnsm4O7VL" resolve="com.mbeddr.mpsutil.editor.querylist" />
           </node>
         </node>
         <node concept="1SiIV0" id="1BCnb50lN_N" role="3bR37C">
@@ -3708,7 +3708,7 @@
         </node>
         <node concept="1SiIV0" id="5a_u3OzLfro" role="3bR37C">
           <node concept="3bR9La" id="5a_u3OzLfrp" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2jlBy7bQp6P" resolve="com.mbeddr.mpsutil.treenotation.runtime" />
+            <ref role="3bR37D" to="90a9:2jlBy7bQp6P" resolve="com.mbeddr.mpsutil.treenotation.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="5a_u3OzLfrq" role="3bR37C">
@@ -3718,7 +3718,7 @@
         </node>
         <node concept="1SiIV0" id="5a_u3OzLfrs" role="3bR37C">
           <node concept="3bR9La" id="5a_u3OzLfrt" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
+            <ref role="3bR37D" to="90a9:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
           </node>
         </node>
         <node concept="1SiIV0" id="5a_u3OzLg0g" role="3bR37C">
