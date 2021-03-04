@@ -1085,6 +1085,9 @@
     <node concept="PrWs8" id="6JZACDWI_Pm" role="PrDN$">
       <ref role="PrY4T" to="hm2y:6JZACDWIq3Y" resolve="IReferenceableType" />
     </node>
+    <node concept="PrWs8" id="6xvNSEj83KR" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3ijD2AhNGn5">
     <property role="EcuMT" value="3788552209995580869" />
@@ -1169,7 +1172,7 @@
       <property role="IQ2ns" value="8006404979731136906" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="selectors" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
   </node>

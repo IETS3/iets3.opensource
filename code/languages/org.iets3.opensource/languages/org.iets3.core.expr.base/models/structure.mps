@@ -2148,6 +2148,13 @@
     <property role="3GE5qa" value="nix" />
     <property role="TrG5h" value="ITargetThatCanDealWithNix" />
   </node>
+  <node concept="1TIwiD" id="3tcv7J0pmjC">
+    <property role="EcuMT" value="3984696641266738408" />
+    <property role="3GE5qa" value="nix" />
+    <property role="TrG5h" value="EmptyType" />
+    <property role="34LRSv" value="emptytype" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
   <node concept="PlHQZ" id="MNXm1ElbHo">
     <property role="EcuMT" value="915344943735946072" />
     <property role="TrG5h" value="IEmptyLiteral" />
@@ -2158,12 +2165,9 @@
       <property role="t5JxN" value="Marker interface used to mark literals that at runtime evaluate to empty value." />
     </node>
   </node>
-  <node concept="1TIwiD" id="3tcv7J0pmjC">
-    <property role="EcuMT" value="3984696641266738408" />
-    <property role="3GE5qa" value="nix" />
-    <property role="TrG5h" value="EmptyType" />
-    <property role="34LRSv" value="emptytype" />
-    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  <node concept="PlHQZ" id="6xvNSEj6BMb">
+    <property role="EcuMT" value="7520958096812440715" />
+    <property role="TrG5h" value="IComplexTypeSupportsEquals" />
   </node>
 </model>
 
