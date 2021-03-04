@@ -26316,5 +26316,26 @@
       <node concept="3clFbS" id="3nVyItrZCNQ" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6xvNSEj6BMA">
+    <ref role="13h7C2" to="hm2y:6xvNSEj6BMb" resolve="IComplexTypeSupportsEquals" />
+    <node concept="13i0hz" id="6xvNSEj6BML" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isComparableTo" />
+      <node concept="3Tm1VV" id="6xvNSEj6BMM" role="1B3o_S" />
+      <node concept="10P_77" id="6xvNSEj6Gcz" role="3clF45" />
+      <node concept="3clFbS" id="6xvNSEj6BMO" role="3clF47">
+        <node concept="3clFbF" id="6xvNSEj6GeW" role="3cqZAp">
+          <node concept="3clFbT" id="6xvNSEj6GeV" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6xvNSEj6Gdf" role="3clF46">
+        <property role="TrG5h" value="other" />
+        <node concept="3Tqbb2" id="6xvNSEj6Gde" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6xvNSEj6BMB" role="13h7CW">
+      <node concept="3clFbS" id="6xvNSEj6BMC" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
