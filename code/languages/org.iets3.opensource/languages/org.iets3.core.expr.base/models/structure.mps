@@ -2137,7 +2137,6 @@
       <property role="IQ2ns" value="3889855429450038474" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="PrWs8" id="MNXm1ElbHt" role="PzmwI">
@@ -2158,6 +2157,13 @@
     <node concept="t5JxF" id="MNXm1ElbHr" role="lGtFl">
       <property role="t5JxN" value="Marker interface used to mark literals that at runtime evaluate to empty value." />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3tcv7J0pmjC">
+    <property role="EcuMT" value="3984696641266738408" />
+    <property role="3GE5qa" value="nix" />
+    <property role="TrG5h" value="EmptyType" />
+    <property role="34LRSv" value="emptytype" />
+    <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
   </node>
 </model>
 

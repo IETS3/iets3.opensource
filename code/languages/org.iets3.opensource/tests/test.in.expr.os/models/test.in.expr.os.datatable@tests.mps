@@ -31,9 +31,7 @@
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
-      <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI">
-        <child id="3889855429450038474" name="type" index="1I1voH" />
-      </concept>
+      <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI" />
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
@@ -489,9 +487,7 @@
           <node concept="wdKpt" id="2KRUNf1n5Bt" role="30czhm">
             <node concept="1QScDb" id="2KRUNf1n5rX" role="30czhm">
               <node concept="3AhkFE" id="2KRUNf1n5sy" role="1QScD9">
-                <node concept="1I1voI" id="2KRUNf1rBtV" role="3AhkFJ">
-                  <node concept="30bXR$" id="2KRUNf1rBxD" role="1I1voH" />
-                </node>
+                <node concept="1I1voI" id="2KRUNf1rBtV" role="3AhkFJ" />
               </node>
               <node concept="3Ch18X" id="2KRUNf1n5rN" role="30czhm">
                 <ref role="3Ch1V_" node="7F9023_N8Ey" resolve="WithDefault" />
@@ -515,9 +511,7 @@
             <ref role="3Ch1V_" node="7F9023_N8Ey" resolve="WithDefault" />
           </node>
         </node>
-        <node concept="1I1voI" id="2KRUNf1rIyP" role="_fkuS">
-          <node concept="30bXR$" id="2KRUNf1rIBk" role="1I1voH" />
-        </node>
+        <node concept="1I1voI" id="2KRUNf1rIyP" role="_fkuS" />
       </node>
     </node>
   </node>

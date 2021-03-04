@@ -296,9 +296,7 @@
       <concept id="3352322994211036342" name="org.iets3.core.expr.base.structure.OneOfTarget" flags="ng" index="1kPOiQ">
         <child id="3352322994211036351" name="values" index="1kPOiZ" />
       </concept>
-      <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI">
-        <child id="3889855429450038474" name="type" index="1I1voH" />
-      </concept>
+      <concept id="3889855429450038473" name="org.iets3.core.expr.base.structure.EmptyValue" flags="ng" index="1I1voI" />
       <concept id="3281846772293355652" name="org.iets3.core.expr.base.structure.CastExpression" flags="ng" index="1KhrV4">
         <child id="2396718651941969300" name="expr" index="12NKtY" />
         <child id="3281846772293355657" name="expectedType" index="1KhrV9" />
@@ -649,7 +647,6 @@
       <concept id="231307155597471414" name="org.iets3.core.expr.data.structure.DataColDef" flags="ng" index="3CkmCn">
         <child id="231307155597474194" name="type" index="3CknON" />
       </concept>
-      <concept id="3186273868907248983" name="org.iets3.core.expr.data.structure.EmptyInput" flags="ng" index="3Hp9p$" />
     </language>
     <language id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path">
       <concept id="7814222126786013807" name="org.iets3.core.expr.path.structure.PathElement" flags="ng" index="3o_JK">
@@ -15445,7 +15442,7 @@
             </node>
             <node concept="3CkgUp" id="MNXm1ErN0e" role="3Ckg_R">
               <ref role="3Ckhev" node="MNXm1ErN0q" resolve="val3" />
-              <node concept="3Hp9p$" id="MNXm1ErN0f" role="3CkirI" />
+              <node concept="1I1voI" id="3tcv7J0Gk0m" role="3CkirI" />
             </node>
           </node>
           <node concept="3CkeKC" id="MNXm1ErN0g" role="3CkFDl">
@@ -15464,9 +15461,7 @@
             </node>
             <node concept="3CkgUp" id="MNXm1ErN0l" role="3Ckg_R">
               <ref role="3Ckhev" node="MNXm1ErN0q" resolve="val3" />
-              <node concept="1I1voI" id="MNXm1ErN4w" role="3CkirI">
-                <node concept="30bdrU" id="MNXm1ErN4U" role="1I1voH" />
-              </node>
+              <node concept="1I1voI" id="MNXm1ErN4w" role="3CkirI" />
               <node concept="7CXmI" id="MNXm1ErN0n" role="lGtFl">
                 <node concept="1TM$A" id="MNXm1ErN0o" role="7EUXB">
                   <node concept="2PYRI3" id="MNXm1ErN0p" role="3lydEf">
@@ -15484,11 +15479,11 @@
             <property role="TrG5h" value="keyC" />
             <node concept="3CkgUp" id="MNXm1ErN0t" role="3Ckg_R">
               <ref role="3Ckhev" node="MNXm1ErN05" resolve="val1" />
-              <node concept="3Hp9p$" id="MNXm1ErN0u" role="3CkirI" />
+              <node concept="1I1voI" id="3tcv7J0Gk0r" role="3CkirI" />
             </node>
             <node concept="3CkgUp" id="MNXm1ErN0v" role="3Ckg_R">
               <ref role="3Ckhev" node="MNXm1ErN07" resolve="val2" />
-              <node concept="3Hp9p$" id="MNXm1ErN0w" role="3CkirI" />
+              <node concept="1I1voI" id="3tcv7J0Gk0w" role="3CkirI" />
             </node>
             <node concept="3CkgUp" id="MNXm1ErN0x" role="3Ckg_R">
               <ref role="3Ckhev" node="MNXm1ErN0q" resolve="val3" />
@@ -15532,10 +15527,10 @@
             </node>
             <node concept="3CkgUp" id="2KRUNf1n43H" role="3Ckg_R">
               <ref role="3Ckhev" node="2KRUNf1n43z" resolve="val2" />
-              <node concept="3Hp9p$" id="2KRUNf1n43I" role="3CkirI">
-                <node concept="7CXmI" id="2KRUNf1n45X" role="lGtFl">
-                  <node concept="1TM$A" id="2KRUNf1n4i1" role="7EUXB">
-                    <node concept="2PYRI3" id="3tcv7J0Q0H0" role="3lydEf">
+              <node concept="1I1voI" id="3tcv7J0Gk0B" role="3CkirI">
+                <node concept="7CXmI" id="3tcv7J0Gk9B" role="lGtFl">
+                  <node concept="1TM$A" id="3tcv7J0V6WQ" role="7EUXB">
+                    <node concept="2PYRI3" id="3tcv7J0V6WR" role="3lydEf">
                       <ref role="39XzEq" to="rpit:3tcv7J0Q0xB" />
                     </node>
                   </node>
